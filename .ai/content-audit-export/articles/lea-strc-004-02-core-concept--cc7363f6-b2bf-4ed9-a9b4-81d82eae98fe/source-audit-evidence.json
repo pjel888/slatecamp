@@ -21,11 +21,12 @@
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": false,
+    "safe_for_supabase_upload": true,
     "blockers": [],
     "warnings": [
       "No Supabase upload was run for Batch 161; this is a local-only production-line handoff."
-    ]
+    ],
+    "safe_for_question_apply": true
   },
   "raw_local_gate": {
     "status": "PASS",
@@ -136,5 +137,143 @@
     "source_boundary": "Checked local NSCP OCR page markdown under vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages.",
     "question_edit_support_status": "question_alignment_remediated",
     "prior_audit_path": ".ai/03_plans/final-second-audit/rolling-readonly-swarm/opencode-kimi-batches-161-163-nscp-pedagogy-depth-audit.md"
-  }
+  },
+  "batch_164_question_apply_gate": {
+    "status": "PASS",
+    "question_claim_count": 10,
+    "answer_key_changes": 0,
+    "note": "Added after final freeze dry-run: push-question apply gate requires per-question claims and safe_for_supabase_upload true. These claims mirror Batch 164 question-edits source_audit_support and do not expand source scope."
+  },
+  "claims": [
+    {
+      "claim_id": "batch-164-question-09f7ddea-f3f3-430e-99b0-42814f68e442",
+      "claim_text": "Batch 164 question remediation for question 09f7ddea-f3f3-430e-99b0-42814f68e442 / model ALE-STRC-004-02-009: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "09f7ddea-f3f3-430e-99b0-42814f68e442",
+      "model_id": "ALE-STRC-004-02-009",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-44451fd7-4e96-4176-a756-f13c6a87b1f8",
+      "claim_text": "Batch 164 question remediation for question 44451fd7-4e96-4176-a756-f13c6a87b1f8 / model ALE-STRC-004-02-007: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "44451fd7-4e96-4176-a756-f13c6a87b1f8",
+      "model_id": "ALE-STRC-004-02-007",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-7f1e7259-26ba-4411-b27c-46d5a4b319eb",
+      "claim_text": "Batch 164 question remediation for question 7f1e7259-26ba-4411-b27c-46d5a4b319eb / model ALE-STRC-004-02-005: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "7f1e7259-26ba-4411-b27c-46d5a4b319eb",
+      "model_id": "ALE-STRC-004-02-005",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-89d46074-1673-472b-a0d9-b6b7eb2d41ca",
+      "claim_text": "Batch 164 question remediation for question 89d46074-1673-472b-a0d9-b6b7eb2d41ca / model ALE-STRC-004-02-006: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "89d46074-1673-472b-a0d9-b6b7eb2d41ca",
+      "model_id": "ALE-STRC-004-02-006",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-9be09de7-ea4e-4128-9fb3-0267bb7997e9",
+      "claim_text": "Batch 164 question remediation for question 9be09de7-ea4e-4128-9fb3-0267bb7997e9 / model ALE-STRC-004-02-002: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "9be09de7-ea4e-4128-9fb3-0267bb7997e9",
+      "model_id": "ALE-STRC-004-02-002",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-b1599e60-b278-42b4-8f43-002a5f7df349",
+      "claim_text": "Batch 164 question remediation for question b1599e60-b278-42b4-8f43-002a5f7df349 / model ALE-STRC-004-02-008: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "b1599e60-b278-42b4-8f43-002a5f7df349",
+      "model_id": "ALE-STRC-004-02-008",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-d4d01df7-df76-464c-9424-b1d99104d2a5",
+      "claim_text": "Batch 164 question remediation for question d4d01df7-df76-464c-9424-b1d99104d2a5 / model ALE-STRC-004-02-001: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "d4d01df7-df76-464c-9424-b1d99104d2a5",
+      "model_id": "ALE-STRC-004-02-001",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-da6f9fdd-e385-467b-98d6-0d56fe57159a",
+      "claim_text": "Batch 164 question remediation for question da6f9fdd-e385-467b-98d6-0d56fe57159a / model ALE-STRC-004-02-004: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "da6f9fdd-e385-467b-98d6-0d56fe57159a",
+      "model_id": "ALE-STRC-004-02-004",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-efe5debd-0e8a-49cf-b666-715236dfccc0",
+      "claim_text": "Batch 164 question remediation for question efe5debd-0e8a-49cf-b666-715236dfccc0 / model ALE-STRC-004-02-003: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "efe5debd-0e8a-49cf-b666-715236dfccc0",
+      "model_id": "ALE-STRC-004-02-003",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-ff3dd962-75e0-4e37-a01e-58001e23d407",
+      "claim_text": "Batch 164 question remediation for question ff3dd962-75e0-4e37-a01e-58001e23d407 / model ALE-STRC-004-02-010: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "question_id": "ff3dd962-75e0-4e37-a01e-58001e23d407",
+      "model_id": "ALE-STRC-004-02-010",
+      "source_ids": [
+        "nscp-2015-section-208-4-4-seismic-zone-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0240.md:16-26 Section 208.4.4.1 divides the Philippines into Zone 2 and Zone 4 and Table 208-3 gives Z = 0.20 and 0.40.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    }
+  ]
 }

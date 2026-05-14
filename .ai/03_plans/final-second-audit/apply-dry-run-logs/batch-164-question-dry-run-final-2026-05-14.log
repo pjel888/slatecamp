@@ -1,0 +1,3750 @@
+=== DRY RUN 1 00f76274-9125-4e6c-8eae-473634d9511b ===
+{
+  "question_id": "00f76274-9125-4e6c-8eae-473634d9511b",
+  "attempted_at": "2026-05-14T15:03:13.826Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:4b0b7c543e9ec896ca3e588d8ffe29000f604e01e14435ec37cb337fb43b61a2",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:4b0b7c543e9ec896ca3e588d8ffe29000f604e01e14435ec37cb337fb43b61a2",
+  "expected_baseline_hash": "sha256:4b0b7c543e9ec896ca3e588d8ffe29000f604e01e14435ec37cb337fb43b61a2",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "00f76274-9125-4e6c-8eae-473634d9511b" --strict
+EXIT_CODE=0
+=== DRY RUN 2 0219dc35-4e33-4ce0-b077-c008de043af6 ===
+{
+  "question_id": "0219dc35-4e33-4ce0-b077-c008de043af6",
+  "attempted_at": "2026-05-14T15:03:14.527Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:4670f8b31695356bb63eb426ec9e997382a908a8943ef657f751de7ccb0d1edf",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:4670f8b31695356bb63eb426ec9e997382a908a8943ef657f751de7ccb0d1edf",
+  "expected_baseline_hash": "sha256:4670f8b31695356bb63eb426ec9e997382a908a8943ef657f751de7ccb0d1edf",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "0219dc35-4e33-4ce0-b077-c008de043af6" --strict
+EXIT_CODE=0
+=== DRY RUN 3 02b11a14-0f2e-41ee-82cf-2d83c09af0e2 ===
+{
+  "question_id": "02b11a14-0f2e-41ee-82cf-2d83c09af0e2",
+  "attempted_at": "2026-05-14T15:03:15.262Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:b79d0349d3a59d074920025a6ca6916eb19f6cb16c4c603e45842a1eb59afd70",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:b79d0349d3a59d074920025a6ca6916eb19f6cb16c4c603e45842a1eb59afd70",
+  "expected_baseline_hash": "sha256:b79d0349d3a59d074920025a6ca6916eb19f6cb16c4c603e45842a1eb59afd70",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "02b11a14-0f2e-41ee-82cf-2d83c09af0e2" --strict
+EXIT_CODE=0
+=== DRY RUN 4 02cea262-5a75-4808-86e3-051379a503c3 ===
+{
+  "question_id": "02cea262-5a75-4808-86e3-051379a503c3",
+  "attempted_at": "2026-05-14T15:03:15.766Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:e3e0b815225cd89920e947f929bc7c7547ddfd6f182c8c1c0fa48e07fb7bf216",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:e3e0b815225cd89920e947f929bc7c7547ddfd6f182c8c1c0fa48e07fb7bf216",
+  "expected_baseline_hash": "sha256:e3e0b815225cd89920e947f929bc7c7547ddfd6f182c8c1c0fa48e07fb7bf216",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "02cea262-5a75-4808-86e3-051379a503c3" --strict
+EXIT_CODE=0
+=== DRY RUN 5 05cd5a06-3183-4848-9b1f-f8cb6a36f581 ===
+{
+  "question_id": "05cd5a06-3183-4848-9b1f-f8cb6a36f581",
+  "attempted_at": "2026-05-14T15:03:16.172Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:adbfb25117eafdc394588af73874df66fb7b9f162220143547d8eb017167cd9b",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:adbfb25117eafdc394588af73874df66fb7b9f162220143547d8eb017167cd9b",
+  "expected_baseline_hash": "sha256:adbfb25117eafdc394588af73874df66fb7b9f162220143547d8eb017167cd9b",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "05cd5a06-3183-4848-9b1f-f8cb6a36f581" --strict
+EXIT_CODE=0
+=== DRY RUN 6 0863616e-8994-4ed6-91c7-e3b5684ed4a5 ===
+{
+  "question_id": "0863616e-8994-4ed6-91c7-e3b5684ed4a5",
+  "attempted_at": "2026-05-14T15:03:16.682Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:798c268327a0ce78b7db4dc07ee69d75afcfd22f43fdf7867f077205cda3867b",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:798c268327a0ce78b7db4dc07ee69d75afcfd22f43fdf7867f077205cda3867b",
+  "expected_baseline_hash": "sha256:798c268327a0ce78b7db4dc07ee69d75afcfd22f43fdf7867f077205cda3867b",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "0863616e-8994-4ed6-91c7-e3b5684ed4a5" --strict
+EXIT_CODE=0
+=== DRY RUN 7 09117f07-7332-47ae-94e9-75f9effee9f2 ===
+{
+  "question_id": "09117f07-7332-47ae-94e9-75f9effee9f2",
+  "attempted_at": "2026-05-14T15:03:16.982Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:47a877500aa342ccb63475f404af2aec851e7a94a5aed02860881472f2dc221d",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:47a877500aa342ccb63475f404af2aec851e7a94a5aed02860881472f2dc221d",
+  "expected_baseline_hash": "sha256:47a877500aa342ccb63475f404af2aec851e7a94a5aed02860881472f2dc221d",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "09117f07-7332-47ae-94e9-75f9effee9f2" --strict
+EXIT_CODE=0
+=== DRY RUN 8 09f7ddea-f3f3-430e-99b0-42814f68e442 ===
+{
+  "question_id": "09f7ddea-f3f3-430e-99b0-42814f68e442",
+  "attempted_at": "2026-05-14T15:03:17.389Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:0d0a3b64a4bafdf7caa6ff54a65cce7dd7a16af74efb3420682632f413d3703a",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:0d0a3b64a4bafdf7caa6ff54a65cce7dd7a16af74efb3420682632f413d3703a",
+  "expected_baseline_hash": "sha256:0d0a3b64a4bafdf7caa6ff54a65cce7dd7a16af74efb3420682632f413d3703a",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "09f7ddea-f3f3-430e-99b0-42814f68e442" --strict
+EXIT_CODE=0
+=== DRY RUN 9 0c2afd87-7afa-49e6-8974-3a2d224f1af2 ===
+{
+  "question_id": "0c2afd87-7afa-49e6-8974-3a2d224f1af2",
+  "attempted_at": "2026-05-14T15:03:17.693Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:377fda6dd4694e12d15dfa5a49dde564de586dd03dda32ce71e847180fcbbadb",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:377fda6dd4694e12d15dfa5a49dde564de586dd03dda32ce71e847180fcbbadb",
+  "expected_baseline_hash": "sha256:377fda6dd4694e12d15dfa5a49dde564de586dd03dda32ce71e847180fcbbadb",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "0c2afd87-7afa-49e6-8974-3a2d224f1af2" --strict
+EXIT_CODE=0
+=== DRY RUN 10 0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9 ===
+{
+  "question_id": "0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9",
+  "attempted_at": "2026-05-14T15:03:18.044Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:52ffaad42c5bfd834e2769013329a676ed75c356c35ec70076abe152f0a1d990",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:52ffaad42c5bfd834e2769013329a676ed75c356c35ec70076abe152f0a1d990",
+  "expected_baseline_hash": "sha256:52ffaad42c5bfd834e2769013329a676ed75c356c35ec70076abe152f0a1d990",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9" --strict
+EXIT_CODE=0
+=== DRY RUN 11 0d8debcf-c39f-428d-a756-cde40a1b307a ===
+{
+  "question_id": "0d8debcf-c39f-428d-a756-cde40a1b307a",
+  "attempted_at": "2026-05-14T15:03:18.370Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:c34e37a139ad25274d4dc11cb8635b496473c94469d43f356d2eecb53890359e",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:c34e37a139ad25274d4dc11cb8635b496473c94469d43f356d2eecb53890359e",
+  "expected_baseline_hash": "sha256:c34e37a139ad25274d4dc11cb8635b496473c94469d43f356d2eecb53890359e",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "0d8debcf-c39f-428d-a756-cde40a1b307a" --strict
+EXIT_CODE=0
+=== DRY RUN 12 0ec1aafb-068f-4811-914d-f028558b6227 ===
+{
+  "question_id": "0ec1aafb-068f-4811-914d-f028558b6227",
+  "attempted_at": "2026-05-14T15:03:18.743Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:97fbcde07f0bd239e65966eabe5244742cbcd8fe503d8397dbc2c80aa3469735",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:97fbcde07f0bd239e65966eabe5244742cbcd8fe503d8397dbc2c80aa3469735",
+  "expected_baseline_hash": "sha256:97fbcde07f0bd239e65966eabe5244742cbcd8fe503d8397dbc2c80aa3469735",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "0ec1aafb-068f-4811-914d-f028558b6227" --strict
+EXIT_CODE=0
+=== DRY RUN 13 136a9f76-4115-4c68-ac4a-aa015e09f5aa ===
+{
+  "question_id": "136a9f76-4115-4c68-ac4a-aa015e09f5aa",
+  "attempted_at": "2026-05-14T15:03:19.016Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:8d9afbe0b3f51a6c864d0dbf766ce326d795cb02a896824bdf29849ceb5f1e47",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:8d9afbe0b3f51a6c864d0dbf766ce326d795cb02a896824bdf29849ceb5f1e47",
+  "expected_baseline_hash": "sha256:8d9afbe0b3f51a6c864d0dbf766ce326d795cb02a896824bdf29849ceb5f1e47",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "136a9f76-4115-4c68-ac4a-aa015e09f5aa" --strict
+EXIT_CODE=0
+=== DRY RUN 14 16abc24a-8747-48b9-96f6-93da3d0b017b ===
+{
+  "question_id": "16abc24a-8747-48b9-96f6-93da3d0b017b",
+  "attempted_at": "2026-05-14T15:03:19.365Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:3d74954897877d4852db2c28a323d49d38d09f6cad96f2cec745c3424f4923f4",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:3d74954897877d4852db2c28a323d49d38d09f6cad96f2cec745c3424f4923f4",
+  "expected_baseline_hash": "sha256:3d74954897877d4852db2c28a323d49d38d09f6cad96f2cec745c3424f4923f4",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "16abc24a-8747-48b9-96f6-93da3d0b017b" --strict
+EXIT_CODE=0
+=== DRY RUN 15 18988e39-3d86-4bf3-8c1a-a3647ecc8366 ===
+{
+  "question_id": "18988e39-3d86-4bf3-8c1a-a3647ecc8366",
+  "attempted_at": "2026-05-14T15:03:20.043Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:37634d7172c4f7332d45d7617527c1b3d358d8d3f7c67f55dd689a0092455705",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:37634d7172c4f7332d45d7617527c1b3d358d8d3f7c67f55dd689a0092455705",
+  "expected_baseline_hash": "sha256:37634d7172c4f7332d45d7617527c1b3d358d8d3f7c67f55dd689a0092455705",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "18988e39-3d86-4bf3-8c1a-a3647ecc8366" --strict
+EXIT_CODE=0
+=== DRY RUN 16 1c85cd70-7225-435d-ba16-00c211e62b29 ===
+{
+  "question_id": "1c85cd70-7225-435d-ba16-00c211e62b29",
+  "attempted_at": "2026-05-14T15:03:20.339Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:2f5f11f1ff1485a091170ea69995cce9fa84401085d22e21d02a8942f815c29a",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:2f5f11f1ff1485a091170ea69995cce9fa84401085d22e21d02a8942f815c29a",
+  "expected_baseline_hash": "sha256:2f5f11f1ff1485a091170ea69995cce9fa84401085d22e21d02a8942f815c29a",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "1c85cd70-7225-435d-ba16-00c211e62b29" --strict
+EXIT_CODE=0
+=== DRY RUN 17 1dba5961-c1da-413b-82fe-fab5c4fc41fe ===
+{
+  "question_id": "1dba5961-c1da-413b-82fe-fab5c4fc41fe",
+  "attempted_at": "2026-05-14T15:03:20.666Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:986d7742f01d5349c5a475c4ac50b78f9e0e18b6c65ba98675329718df07d882",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:986d7742f01d5349c5a475c4ac50b78f9e0e18b6c65ba98675329718df07d882",
+  "expected_baseline_hash": "sha256:986d7742f01d5349c5a475c4ac50b78f9e0e18b6c65ba98675329718df07d882",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "1dba5961-c1da-413b-82fe-fab5c4fc41fe" --strict
+EXIT_CODE=0
+=== DRY RUN 18 1f1f7b09-f4f6-4de1-83b4-65859acf050d ===
+{
+  "question_id": "1f1f7b09-f4f6-4de1-83b4-65859acf050d",
+  "attempted_at": "2026-05-14T15:03:21.007Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:53700bc014af5185e73262947183ec084d2dda17d4b0de7af4cb8c9416d531ed",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:53700bc014af5185e73262947183ec084d2dda17d4b0de7af4cb8c9416d531ed",
+  "expected_baseline_hash": "sha256:53700bc014af5185e73262947183ec084d2dda17d4b0de7af4cb8c9416d531ed",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "1f1f7b09-f4f6-4de1-83b4-65859acf050d" --strict
+EXIT_CODE=0
+=== DRY RUN 19 21b3a069-8ad6-402b-9423-608071bdf1e6 ===
+{
+  "question_id": "21b3a069-8ad6-402b-9423-608071bdf1e6",
+  "attempted_at": "2026-05-14T15:03:21.271Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:6047939124b6d1897203f5f688c6208d62636af172cb85c5ea3772ae03a5b4a6",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:6047939124b6d1897203f5f688c6208d62636af172cb85c5ea3772ae03a5b4a6",
+  "expected_baseline_hash": "sha256:6047939124b6d1897203f5f688c6208d62636af172cb85c5ea3772ae03a5b4a6",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "21b3a069-8ad6-402b-9423-608071bdf1e6" --strict
+EXIT_CODE=0
+=== DRY RUN 20 27e3b467-5bed-4061-95f6-c8d7a8a85863 ===
+{
+  "question_id": "27e3b467-5bed-4061-95f6-c8d7a8a85863",
+  "attempted_at": "2026-05-14T15:03:21.664Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:3e9fe3a2249087f8c0109d148d78feaf6646657705b23d7c14d116f760e1a2e4",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:3e9fe3a2249087f8c0109d148d78feaf6646657705b23d7c14d116f760e1a2e4",
+  "expected_baseline_hash": "sha256:3e9fe3a2249087f8c0109d148d78feaf6646657705b23d7c14d116f760e1a2e4",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "27e3b467-5bed-4061-95f6-c8d7a8a85863" --strict
+EXIT_CODE=0
+=== DRY RUN 21 2b17803b-3aa6-4188-bbe2-8d88091f712e ===
+{
+  "question_id": "2b17803b-3aa6-4188-bbe2-8d88091f712e",
+  "attempted_at": "2026-05-14T15:03:22.017Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:ff351ffaf7168fc4b88cf5d7ed58effb35fad1ac5843b83cedbb1928aabacf02",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:ff351ffaf7168fc4b88cf5d7ed58effb35fad1ac5843b83cedbb1928aabacf02",
+  "expected_baseline_hash": "sha256:ff351ffaf7168fc4b88cf5d7ed58effb35fad1ac5843b83cedbb1928aabacf02",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "2b17803b-3aa6-4188-bbe2-8d88091f712e" --strict
+EXIT_CODE=0
+=== DRY RUN 22 31f01fa7-d997-4a9f-aff6-5762d82be418 ===
+{
+  "question_id": "31f01fa7-d997-4a9f-aff6-5762d82be418",
+  "attempted_at": "2026-05-14T15:03:22.297Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:b228f0cb29d71258b17f3150ebf594d44f17f3b923c576e6e7f3f5320736c7e5",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:b228f0cb29d71258b17f3150ebf594d44f17f3b923c576e6e7f3f5320736c7e5",
+  "expected_baseline_hash": "sha256:b228f0cb29d71258b17f3150ebf594d44f17f3b923c576e6e7f3f5320736c7e5",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "31f01fa7-d997-4a9f-aff6-5762d82be418" --strict
+EXIT_CODE=0
+=== DRY RUN 23 34def5c9-1623-4322-bd32-47636959a406 ===
+{
+  "question_id": "34def5c9-1623-4322-bd32-47636959a406",
+  "attempted_at": "2026-05-14T15:03:22.671Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:a9e47fa2a3c84924646168b7faf37eb2d3bfd2ed535e58bc9656701ab9eb2afd",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:a9e47fa2a3c84924646168b7faf37eb2d3bfd2ed535e58bc9656701ab9eb2afd",
+  "expected_baseline_hash": "sha256:a9e47fa2a3c84924646168b7faf37eb2d3bfd2ed535e58bc9656701ab9eb2afd",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "34def5c9-1623-4322-bd32-47636959a406" --strict
+EXIT_CODE=0
+=== DRY RUN 24 37b399b3-f04c-4d24-a3bd-7fe1fd2bc186 ===
+{
+  "question_id": "37b399b3-f04c-4d24-a3bd-7fe1fd2bc186",
+  "attempted_at": "2026-05-14T15:03:22.909Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:aba99a613ab4ecf002a9067206f4a2be1fa6aaad62b00d7f9b2d87d4e649397d",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:aba99a613ab4ecf002a9067206f4a2be1fa6aaad62b00d7f9b2d87d4e649397d",
+  "expected_baseline_hash": "sha256:aba99a613ab4ecf002a9067206f4a2be1fa6aaad62b00d7f9b2d87d4e649397d",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "37b399b3-f04c-4d24-a3bd-7fe1fd2bc186" --strict
+EXIT_CODE=0
+=== DRY RUN 25 3f4dce01-3e79-4f74-9005-118a14543cfe ===
+{
+  "question_id": "3f4dce01-3e79-4f74-9005-118a14543cfe",
+  "attempted_at": "2026-05-14T15:03:23.239Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:6ba468d1f4fe3958e1aec87461330aa0c2fd51ec94eba7e5e3b3dde5297f8785",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:6ba468d1f4fe3958e1aec87461330aa0c2fd51ec94eba7e5e3b3dde5297f8785",
+  "expected_baseline_hash": "sha256:6ba468d1f4fe3958e1aec87461330aa0c2fd51ec94eba7e5e3b3dde5297f8785",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "3f4dce01-3e79-4f74-9005-118a14543cfe" --strict
+EXIT_CODE=0
+=== DRY RUN 26 425007a6-69a2-4550-b17a-0e6e188d3bd6 ===
+{
+  "question_id": "425007a6-69a2-4550-b17a-0e6e188d3bd6",
+  "attempted_at": "2026-05-14T15:03:23.531Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:70a303c4ad7f5c298406b1ac0c9702e4cb7f0301044d95e2a1cb8ed26058aed5",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:70a303c4ad7f5c298406b1ac0c9702e4cb7f0301044d95e2a1cb8ed26058aed5",
+  "expected_baseline_hash": "sha256:70a303c4ad7f5c298406b1ac0c9702e4cb7f0301044d95e2a1cb8ed26058aed5",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "425007a6-69a2-4550-b17a-0e6e188d3bd6" --strict
+EXIT_CODE=0
+=== DRY RUN 27 44451fd7-4e96-4176-a756-f13c6a87b1f8 ===
+{
+  "question_id": "44451fd7-4e96-4176-a756-f13c6a87b1f8",
+  "attempted_at": "2026-05-14T15:03:23.884Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:c849dd41390d212cbdec9130de3092db9b252cdfa5d77c4d095061566e21c176",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:c849dd41390d212cbdec9130de3092db9b252cdfa5d77c4d095061566e21c176",
+  "expected_baseline_hash": "sha256:c849dd41390d212cbdec9130de3092db9b252cdfa5d77c4d095061566e21c176",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "44451fd7-4e96-4176-a756-f13c6a87b1f8" --strict
+EXIT_CODE=0
+=== DRY RUN 28 4864b616-2862-4dad-be1f-8b73baa8e983 ===
+{
+  "question_id": "4864b616-2862-4dad-be1f-8b73baa8e983",
+  "attempted_at": "2026-05-14T15:03:24.152Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:3bd2430e772fa2fff0731ea2a77ba65cb93452ecbec413e1f0b14bd8bdf4fd37",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:3bd2430e772fa2fff0731ea2a77ba65cb93452ecbec413e1f0b14bd8bdf4fd37",
+  "expected_baseline_hash": "sha256:3bd2430e772fa2fff0731ea2a77ba65cb93452ecbec413e1f0b14bd8bdf4fd37",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "4864b616-2862-4dad-be1f-8b73baa8e983" --strict
+EXIT_CODE=0
+=== DRY RUN 29 488b3c49-4af9-4d33-a76e-af7501a57702 ===
+{
+  "question_id": "488b3c49-4af9-4d33-a76e-af7501a57702",
+  "attempted_at": "2026-05-14T15:03:24.443Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:fa6272b2713aa80a29aa703ff1247446883ffec267895ed372270bc0ad24ab6c",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:fa6272b2713aa80a29aa703ff1247446883ffec267895ed372270bc0ad24ab6c",
+  "expected_baseline_hash": "sha256:fa6272b2713aa80a29aa703ff1247446883ffec267895ed372270bc0ad24ab6c",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "488b3c49-4af9-4d33-a76e-af7501a57702" --strict
+EXIT_CODE=0
+=== DRY RUN 30 56606db8-efb9-411c-b64a-49124c5a3756 ===
+{
+  "question_id": "56606db8-efb9-411c-b64a-49124c5a3756",
+  "attempted_at": "2026-05-14T15:03:24.868Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:c8958c5776dc534b7e8a1f418d3dbfbb8c8f06e7c681a1e2fb7453e03c8e8078",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:c8958c5776dc534b7e8a1f418d3dbfbb8c8f06e7c681a1e2fb7453e03c8e8078",
+  "expected_baseline_hash": "sha256:c8958c5776dc534b7e8a1f418d3dbfbb8c8f06e7c681a1e2fb7453e03c8e8078",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "56606db8-efb9-411c-b64a-49124c5a3756" --strict
+EXIT_CODE=0
+=== DRY RUN 31 5c74d1f9-f1fb-48ab-95f2-6be2ee361d52 ===
+{
+  "question_id": "5c74d1f9-f1fb-48ab-95f2-6be2ee361d52",
+  "attempted_at": "2026-05-14T15:03:25.204Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:c4be1c71e396939bb49ebaefca9003278e8688a958ebe7073f6b9e9ed6bae800",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:c4be1c71e396939bb49ebaefca9003278e8688a958ebe7073f6b9e9ed6bae800",
+  "expected_baseline_hash": "sha256:c4be1c71e396939bb49ebaefca9003278e8688a958ebe7073f6b9e9ed6bae800",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "5c74d1f9-f1fb-48ab-95f2-6be2ee361d52" --strict
+EXIT_CODE=0
+=== DRY RUN 32 60a71679-a95f-4b65-8ddd-36e05a2c0ed1 ===
+{
+  "question_id": "60a71679-a95f-4b65-8ddd-36e05a2c0ed1",
+  "attempted_at": "2026-05-14T15:03:25.699Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:dc0c4cb79710bee51f87dc9f83ad2ad2e362b04956d6a26ef389f71e57141fef",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:dc0c4cb79710bee51f87dc9f83ad2ad2e362b04956d6a26ef389f71e57141fef",
+  "expected_baseline_hash": "sha256:dc0c4cb79710bee51f87dc9f83ad2ad2e362b04956d6a26ef389f71e57141fef",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "60a71679-a95f-4b65-8ddd-36e05a2c0ed1" --strict
+EXIT_CODE=0
+=== DRY RUN 33 6500b2df-2855-4858-8d76-465959e042c7 ===
+{
+  "question_id": "6500b2df-2855-4858-8d76-465959e042c7",
+  "attempted_at": "2026-05-14T15:03:26.024Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:0edde4950e14e212a9c589fafb841207f7bd7026653c0ebe6f898c886e9d9506",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:0edde4950e14e212a9c589fafb841207f7bd7026653c0ebe6f898c886e9d9506",
+  "expected_baseline_hash": "sha256:0edde4950e14e212a9c589fafb841207f7bd7026653c0ebe6f898c886e9d9506",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "6500b2df-2855-4858-8d76-465959e042c7" --strict
+EXIT_CODE=0
+=== DRY RUN 34 662044b0-dc1e-437b-90c3-a62e6366324a ===
+{
+  "question_id": "662044b0-dc1e-437b-90c3-a62e6366324a",
+  "attempted_at": "2026-05-14T15:03:26.322Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:3c30fd9157b76195b77855c8fd375d9edf524e72f0f9e19201e5a2beab16f16c",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:3c30fd9157b76195b77855c8fd375d9edf524e72f0f9e19201e5a2beab16f16c",
+  "expected_baseline_hash": "sha256:3c30fd9157b76195b77855c8fd375d9edf524e72f0f9e19201e5a2beab16f16c",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "662044b0-dc1e-437b-90c3-a62e6366324a" --strict
+EXIT_CODE=0
+=== DRY RUN 35 68e4364f-84b2-4396-8a29-541ff0147809 ===
+{
+  "question_id": "68e4364f-84b2-4396-8a29-541ff0147809",
+  "attempted_at": "2026-05-14T15:03:26.694Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:2f79ccb14fd9a917f27718870c47aab118bff5fd95d23afc85aae59ba7e8a876",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:2f79ccb14fd9a917f27718870c47aab118bff5fd95d23afc85aae59ba7e8a876",
+  "expected_baseline_hash": "sha256:2f79ccb14fd9a917f27718870c47aab118bff5fd95d23afc85aae59ba7e8a876",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "68e4364f-84b2-4396-8a29-541ff0147809" --strict
+EXIT_CODE=0
+=== DRY RUN 36 6c765e0f-401b-4fa7-a331-0d6952b16166 ===
+{
+  "question_id": "6c765e0f-401b-4fa7-a331-0d6952b16166",
+  "attempted_at": "2026-05-14T15:03:27.003Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:8eba6da65b0004e7687301400ff408a6fb3f50c57e665af84a7c01b7ea0c71f9",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:8eba6da65b0004e7687301400ff408a6fb3f50c57e665af84a7c01b7ea0c71f9",
+  "expected_baseline_hash": "sha256:8eba6da65b0004e7687301400ff408a6fb3f50c57e665af84a7c01b7ea0c71f9",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "6c765e0f-401b-4fa7-a331-0d6952b16166" --strict
+EXIT_CODE=0
+=== DRY RUN 37 7ac3ba8b-5381-4299-ab78-4161de86e9b4 ===
+{
+  "question_id": "7ac3ba8b-5381-4299-ab78-4161de86e9b4",
+  "attempted_at": "2026-05-14T15:03:27.295Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:28f2c6e66b49f6afe154cfad38d9bb42fdeb876fb43b4cf183affabd90933db8",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:28f2c6e66b49f6afe154cfad38d9bb42fdeb876fb43b4cf183affabd90933db8",
+  "expected_baseline_hash": "sha256:28f2c6e66b49f6afe154cfad38d9bb42fdeb876fb43b4cf183affabd90933db8",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "7ac3ba8b-5381-4299-ab78-4161de86e9b4" --strict
+EXIT_CODE=0
+=== DRY RUN 38 7e3698a4-7da8-43e3-ad9d-1d9ef857020c ===
+{
+  "question_id": "7e3698a4-7da8-43e3-ad9d-1d9ef857020c",
+  "attempted_at": "2026-05-14T15:03:27.702Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:8755ff06adf9b98f07e41662b1abe4064dcd9151d9de021cca043642739580a0",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:8755ff06adf9b98f07e41662b1abe4064dcd9151d9de021cca043642739580a0",
+  "expected_baseline_hash": "sha256:8755ff06adf9b98f07e41662b1abe4064dcd9151d9de021cca043642739580a0",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "7e3698a4-7da8-43e3-ad9d-1d9ef857020c" --strict
+EXIT_CODE=0
+=== DRY RUN 39 7f1e7259-26ba-4411-b27c-46d5a4b319eb ===
+{
+  "question_id": "7f1e7259-26ba-4411-b27c-46d5a4b319eb",
+  "attempted_at": "2026-05-14T15:03:28.000Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:1bfe8c3451d55c4552d92b0a6a29ce25f0e3565054fa3fc0ccbc6dbe4824fadd",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:1bfe8c3451d55c4552d92b0a6a29ce25f0e3565054fa3fc0ccbc6dbe4824fadd",
+  "expected_baseline_hash": "sha256:1bfe8c3451d55c4552d92b0a6a29ce25f0e3565054fa3fc0ccbc6dbe4824fadd",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "7f1e7259-26ba-4411-b27c-46d5a4b319eb" --strict
+EXIT_CODE=0
+=== DRY RUN 40 7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7 ===
+{
+  "question_id": "7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7",
+  "attempted_at": "2026-05-14T15:03:28.415Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:9c05528efb7387a38154c6c47be981c46d2f0a38742bf8fefaf835063663e5f4",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:9c05528efb7387a38154c6c47be981c46d2f0a38742bf8fefaf835063663e5f4",
+  "expected_baseline_hash": "sha256:9c05528efb7387a38154c6c47be981c46d2f0a38742bf8fefaf835063663e5f4",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7" --strict
+EXIT_CODE=0
+=== DRY RUN 41 7f510800-98bb-49e7-a123-9d71257fca12 ===
+{
+  "question_id": "7f510800-98bb-49e7-a123-9d71257fca12",
+  "attempted_at": "2026-05-14T15:03:28.816Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:e03866e33cc8dbf0b2998755fe279e3a281dbe1195ced70731427a0fbb563493",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:e03866e33cc8dbf0b2998755fe279e3a281dbe1195ced70731427a0fbb563493",
+  "expected_baseline_hash": "sha256:e03866e33cc8dbf0b2998755fe279e3a281dbe1195ced70731427a0fbb563493",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "7f510800-98bb-49e7-a123-9d71257fca12" --strict
+EXIT_CODE=0
+=== DRY RUN 42 853c8d7f-7eb2-4c74-bf58-7b0f81ab978e ===
+{
+  "question_id": "853c8d7f-7eb2-4c74-bf58-7b0f81ab978e",
+  "attempted_at": "2026-05-14T15:03:29.145Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:a61b577ba0587457e7815081b715389ef38a84898b734dec3d9cdeb9365abfed",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:a61b577ba0587457e7815081b715389ef38a84898b734dec3d9cdeb9365abfed",
+  "expected_baseline_hash": "sha256:a61b577ba0587457e7815081b715389ef38a84898b734dec3d9cdeb9365abfed",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "853c8d7f-7eb2-4c74-bf58-7b0f81ab978e" --strict
+EXIT_CODE=0
+=== DRY RUN 43 89d46074-1673-472b-a0d9-b6b7eb2d41ca ===
+{
+  "question_id": "89d46074-1673-472b-a0d9-b6b7eb2d41ca",
+  "attempted_at": "2026-05-14T15:03:29.456Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:d90125aef5186c528ee6b5c872954b5ad85925524968f59b2e7ea906a71bd685",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:d90125aef5186c528ee6b5c872954b5ad85925524968f59b2e7ea906a71bd685",
+  "expected_baseline_hash": "sha256:d90125aef5186c528ee6b5c872954b5ad85925524968f59b2e7ea906a71bd685",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "89d46074-1673-472b-a0d9-b6b7eb2d41ca" --strict
+EXIT_CODE=0
+=== DRY RUN 44 94abda41-a060-4bbe-943a-2d981037bf9e ===
+{
+  "question_id": "94abda41-a060-4bbe-943a-2d981037bf9e",
+  "attempted_at": "2026-05-14T15:03:29.838Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:8d0f412bc60b68abbd055b4f0ad16d6e8d07fa65e9ea10499d82ffe4115183b5",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:8d0f412bc60b68abbd055b4f0ad16d6e8d07fa65e9ea10499d82ffe4115183b5",
+  "expected_baseline_hash": "sha256:8d0f412bc60b68abbd055b4f0ad16d6e8d07fa65e9ea10499d82ffe4115183b5",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "94abda41-a060-4bbe-943a-2d981037bf9e" --strict
+EXIT_CODE=0
+=== DRY RUN 45 961a0025-7d66-4687-a931-e9a1ac59e619 ===
+{
+  "question_id": "961a0025-7d66-4687-a931-e9a1ac59e619",
+  "attempted_at": "2026-05-14T15:03:30.228Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:0bf51e27c52e6480f9e0ca48f6de62e4d14b07c072c2308f2235efe82a13a573",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:0bf51e27c52e6480f9e0ca48f6de62e4d14b07c072c2308f2235efe82a13a573",
+  "expected_baseline_hash": "sha256:0bf51e27c52e6480f9e0ca48f6de62e4d14b07c072c2308f2235efe82a13a573",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "961a0025-7d66-4687-a931-e9a1ac59e619" --strict
+EXIT_CODE=0
+=== DRY RUN 46 9640e7ab-7532-4a85-b54e-683ffb2b9466 ===
+{
+  "question_id": "9640e7ab-7532-4a85-b54e-683ffb2b9466",
+  "attempted_at": "2026-05-14T15:03:30.493Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:2ac39970e14ce5ede986c18ef458a4c4001853b14b74d06baf8392b32ba695e2",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:2ac39970e14ce5ede986c18ef458a4c4001853b14b74d06baf8392b32ba695e2",
+  "expected_baseline_hash": "sha256:2ac39970e14ce5ede986c18ef458a4c4001853b14b74d06baf8392b32ba695e2",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "9640e7ab-7532-4a85-b54e-683ffb2b9466" --strict
+EXIT_CODE=0
+=== DRY RUN 47 96d4546c-eab8-4ac1-ac61-7ccfc81a797f ===
+{
+  "question_id": "96d4546c-eab8-4ac1-ac61-7ccfc81a797f",
+  "attempted_at": "2026-05-14T15:03:30.841Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:3f1e12d1bf91b92d588851382f242811ef13b13c5c08aaca14fe6697321e719c",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:3f1e12d1bf91b92d588851382f242811ef13b13c5c08aaca14fe6697321e719c",
+  "expected_baseline_hash": "sha256:3f1e12d1bf91b92d588851382f242811ef13b13c5c08aaca14fe6697321e719c",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "96d4546c-eab8-4ac1-ac61-7ccfc81a797f" --strict
+EXIT_CODE=0
+=== DRY RUN 48 99438c76-e9fc-4436-8ecf-208de1f1d5e1 ===
+{
+  "question_id": "99438c76-e9fc-4436-8ecf-208de1f1d5e1",
+  "attempted_at": "2026-05-14T15:03:31.282Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:190200c07a97c58c207bf7a2bc8d5aaafd35aeffece756381f98bcba6618c40a",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:190200c07a97c58c207bf7a2bc8d5aaafd35aeffece756381f98bcba6618c40a",
+  "expected_baseline_hash": "sha256:190200c07a97c58c207bf7a2bc8d5aaafd35aeffece756381f98bcba6618c40a",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "99438c76-e9fc-4436-8ecf-208de1f1d5e1" --strict
+EXIT_CODE=0
+=== DRY RUN 49 994be8d3-da40-4bef-adde-fa327cfe6cd1 ===
+{
+  "question_id": "994be8d3-da40-4bef-adde-fa327cfe6cd1",
+  "attempted_at": "2026-05-14T15:03:31.589Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:03a240bb9fca4255e7483942028566f5e93646f860f8fea6f4e912c2e4194efe",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:03a240bb9fca4255e7483942028566f5e93646f860f8fea6f4e912c2e4194efe",
+  "expected_baseline_hash": "sha256:03a240bb9fca4255e7483942028566f5e93646f860f8fea6f4e912c2e4194efe",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "994be8d3-da40-4bef-adde-fa327cfe6cd1" --strict
+EXIT_CODE=0
+=== DRY RUN 50 995484a4-d309-4bcf-85d9-73e0ecd04f1e ===
+{
+  "question_id": "995484a4-d309-4bcf-85d9-73e0ecd04f1e",
+  "attempted_at": "2026-05-14T15:03:31.912Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:75573b1d0b39e8483e8d8582343a8d2467e1b64228cce91567d9ed7baa06ae19",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:75573b1d0b39e8483e8d8582343a8d2467e1b64228cce91567d9ed7baa06ae19",
+  "expected_baseline_hash": "sha256:75573b1d0b39e8483e8d8582343a8d2467e1b64228cce91567d9ed7baa06ae19",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "995484a4-d309-4bcf-85d9-73e0ecd04f1e" --strict
+EXIT_CODE=0
+=== DRY RUN 51 9be09de7-ea4e-4128-9fb3-0267bb7997e9 ===
+{
+  "question_id": "9be09de7-ea4e-4128-9fb3-0267bb7997e9",
+  "attempted_at": "2026-05-14T15:03:32.251Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:5e14c99ab2473af29b3d9b314232709fc281724bf7b5018d2aeacf8ed0a1a971",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:5e14c99ab2473af29b3d9b314232709fc281724bf7b5018d2aeacf8ed0a1a971",
+  "expected_baseline_hash": "sha256:5e14c99ab2473af29b3d9b314232709fc281724bf7b5018d2aeacf8ed0a1a971",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "9be09de7-ea4e-4128-9fb3-0267bb7997e9" --strict
+EXIT_CODE=0
+=== DRY RUN 52 9c6a6587-1493-430c-9ae9-cad501989ed5 ===
+{
+  "question_id": "9c6a6587-1493-430c-9ae9-cad501989ed5",
+  "attempted_at": "2026-05-14T15:03:32.616Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:c7549d93a5a8237173c2dfaa8d5940872425bd513c0f337d86e27247ecb2fb5b",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:c7549d93a5a8237173c2dfaa8d5940872425bd513c0f337d86e27247ecb2fb5b",
+  "expected_baseline_hash": "sha256:c7549d93a5a8237173c2dfaa8d5940872425bd513c0f337d86e27247ecb2fb5b",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "9c6a6587-1493-430c-9ae9-cad501989ed5" --strict
+EXIT_CODE=0
+=== DRY RUN 53 a41a4a87-5b33-474c-8365-1e60d2ee225b ===
+{
+  "question_id": "a41a4a87-5b33-474c-8365-1e60d2ee225b",
+  "attempted_at": "2026-05-14T15:03:33.062Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:64995a46a524d68cdc2674ee5c708ae803e08a780e1968e4f11e1d647fa11377",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:64995a46a524d68cdc2674ee5c708ae803e08a780e1968e4f11e1d647fa11377",
+  "expected_baseline_hash": "sha256:64995a46a524d68cdc2674ee5c708ae803e08a780e1968e4f11e1d647fa11377",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "a41a4a87-5b33-474c-8365-1e60d2ee225b" --strict
+EXIT_CODE=0
+=== DRY RUN 54 a493ef1b-723a-4599-a71e-1fb1acad9228 ===
+{
+  "question_id": "a493ef1b-723a-4599-a71e-1fb1acad9228",
+  "attempted_at": "2026-05-14T15:03:33.464Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:d137972d3b39b387ed62bb9414a58ae123efa97644b96e567b8e8155dc8940fa",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:d137972d3b39b387ed62bb9414a58ae123efa97644b96e567b8e8155dc8940fa",
+  "expected_baseline_hash": "sha256:d137972d3b39b387ed62bb9414a58ae123efa97644b96e567b8e8155dc8940fa",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "a493ef1b-723a-4599-a71e-1fb1acad9228" --strict
+EXIT_CODE=0
+=== DRY RUN 55 a72c9aa8-a967-4b0f-8180-a9b3558261c6 ===
+{
+  "question_id": "a72c9aa8-a967-4b0f-8180-a9b3558261c6",
+  "attempted_at": "2026-05-14T15:03:33.891Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:389b43cfa04d36efbd9eec523dd77929d60a072288168c934a8e727df659cf9b",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:389b43cfa04d36efbd9eec523dd77929d60a072288168c934a8e727df659cf9b",
+  "expected_baseline_hash": "sha256:389b43cfa04d36efbd9eec523dd77929d60a072288168c934a8e727df659cf9b",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "a72c9aa8-a967-4b0f-8180-a9b3558261c6" --strict
+EXIT_CODE=0
+=== DRY RUN 56 a767d035-653c-4782-af2b-8d67e8796978 ===
+{
+  "question_id": "a767d035-653c-4782-af2b-8d67e8796978",
+  "attempted_at": "2026-05-14T15:03:34.220Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:4bde7e4097a4cf1c6d7d3df7ce96b1e421cff919931c910728ad404953434d45",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:4bde7e4097a4cf1c6d7d3df7ce96b1e421cff919931c910728ad404953434d45",
+  "expected_baseline_hash": "sha256:4bde7e4097a4cf1c6d7d3df7ce96b1e421cff919931c910728ad404953434d45",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "a767d035-653c-4782-af2b-8d67e8796978" --strict
+EXIT_CODE=0
+=== DRY RUN 57 a7ddfea1-6c8b-4cba-967e-f0662ac042a9 ===
+{
+  "question_id": "a7ddfea1-6c8b-4cba-967e-f0662ac042a9",
+  "attempted_at": "2026-05-14T15:03:34.516Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:b83b9acc1b58c27d17fc32929ddf5805a17fff99260c0ac7f61fe3f5c795788b",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:b83b9acc1b58c27d17fc32929ddf5805a17fff99260c0ac7f61fe3f5c795788b",
+  "expected_baseline_hash": "sha256:b83b9acc1b58c27d17fc32929ddf5805a17fff99260c0ac7f61fe3f5c795788b",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "a7ddfea1-6c8b-4cba-967e-f0662ac042a9" --strict
+EXIT_CODE=0
+=== DRY RUN 58 aa3e5e12-6f4d-460e-b251-da273a19e59c ===
+{
+  "question_id": "aa3e5e12-6f4d-460e-b251-da273a19e59c",
+  "attempted_at": "2026-05-14T15:03:34.947Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:16343e02893e16d8672e6df72aeb775dc00c8e0197e7efbb0411ffaeaeb6d0fc",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:16343e02893e16d8672e6df72aeb775dc00c8e0197e7efbb0411ffaeaeb6d0fc",
+  "expected_baseline_hash": "sha256:16343e02893e16d8672e6df72aeb775dc00c8e0197e7efbb0411ffaeaeb6d0fc",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "aa3e5e12-6f4d-460e-b251-da273a19e59c" --strict
+EXIT_CODE=0
+=== DRY RUN 59 aabd6070-7a57-439b-b95e-64c35c9c83fa ===
+{
+  "question_id": "aabd6070-7a57-439b-b95e-64c35c9c83fa",
+  "attempted_at": "2026-05-14T15:03:35.360Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:6435c9febaad3e8f5392253b69061e58851697cecd4ff46d8bd1fdae9a773f6c",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:6435c9febaad3e8f5392253b69061e58851697cecd4ff46d8bd1fdae9a773f6c",
+  "expected_baseline_hash": "sha256:6435c9febaad3e8f5392253b69061e58851697cecd4ff46d8bd1fdae9a773f6c",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "aabd6070-7a57-439b-b95e-64c35c9c83fa" --strict
+EXIT_CODE=0
+=== DRY RUN 60 ad388f32-8ec2-45d8-8a4f-1726da564759 ===
+{
+  "question_id": "ad388f32-8ec2-45d8-8a4f-1726da564759",
+  "attempted_at": "2026-05-14T15:03:35.690Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:26559527e5a0f445cd8710c2d5c938be91aeff4d54e711c129b7f8c78ca285dc",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:26559527e5a0f445cd8710c2d5c938be91aeff4d54e711c129b7f8c78ca285dc",
+  "expected_baseline_hash": "sha256:26559527e5a0f445cd8710c2d5c938be91aeff4d54e711c129b7f8c78ca285dc",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "ad388f32-8ec2-45d8-8a4f-1726da564759" --strict
+EXIT_CODE=0
+=== DRY RUN 61 b1599e60-b278-42b4-8f43-002a5f7df349 ===
+{
+  "question_id": "b1599e60-b278-42b4-8f43-002a5f7df349",
+  "attempted_at": "2026-05-14T15:03:36.082Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:6dfa61a422d28960ccf19297d70b88e5c28f2f02b60491f8982fa2a4a365c6cb",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:6dfa61a422d28960ccf19297d70b88e5c28f2f02b60491f8982fa2a4a365c6cb",
+  "expected_baseline_hash": "sha256:6dfa61a422d28960ccf19297d70b88e5c28f2f02b60491f8982fa2a4a365c6cb",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "b1599e60-b278-42b4-8f43-002a5f7df349" --strict
+EXIT_CODE=0
+=== DRY RUN 62 b38842a0-af75-4746-88ed-282a67f96db1 ===
+{
+  "question_id": "b38842a0-af75-4746-88ed-282a67f96db1",
+  "attempted_at": "2026-05-14T15:03:36.405Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:9dc9c63ea0d9bed9c203dc1a627e852fe6c41ddcf0e3c1952a27e330a4e21bd5",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:9dc9c63ea0d9bed9c203dc1a627e852fe6c41ddcf0e3c1952a27e330a4e21bd5",
+  "expected_baseline_hash": "sha256:9dc9c63ea0d9bed9c203dc1a627e852fe6c41ddcf0e3c1952a27e330a4e21bd5",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "b38842a0-af75-4746-88ed-282a67f96db1" --strict
+EXIT_CODE=0
+=== DRY RUN 63 b3958f33-180d-4bf5-b1fb-dc1c6c02857e ===
+{
+  "question_id": "b3958f33-180d-4bf5-b1fb-dc1c6c02857e",
+  "attempted_at": "2026-05-14T15:03:36.798Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:f33aafdfec15c5194911b4eae3dd23c5995080a1532a0607cf3ae6cba1ec73dc",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:f33aafdfec15c5194911b4eae3dd23c5995080a1532a0607cf3ae6cba1ec73dc",
+  "expected_baseline_hash": "sha256:f33aafdfec15c5194911b4eae3dd23c5995080a1532a0607cf3ae6cba1ec73dc",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "b3958f33-180d-4bf5-b1fb-dc1c6c02857e" --strict
+EXIT_CODE=0
+=== DRY RUN 64 b495ee57-be6f-4e97-a4bf-39ee822e7aa0 ===
+{
+  "question_id": "b495ee57-be6f-4e97-a4bf-39ee822e7aa0",
+  "attempted_at": "2026-05-14T15:03:37.290Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:f33c7435c309b9ae5c401ccbe1c09afa69531dba5661ffc4b79b10b719346785",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:f33c7435c309b9ae5c401ccbe1c09afa69531dba5661ffc4b79b10b719346785",
+  "expected_baseline_hash": "sha256:f33c7435c309b9ae5c401ccbe1c09afa69531dba5661ffc4b79b10b719346785",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "b495ee57-be6f-4e97-a4bf-39ee822e7aa0" --strict
+EXIT_CODE=0
+=== DRY RUN 65 b683dad1-83ca-4973-a6d2-dd80480182af ===
+{
+  "question_id": "b683dad1-83ca-4973-a6d2-dd80480182af",
+  "attempted_at": "2026-05-14T15:03:37.578Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:33ee2d19c1eec05fe8dbd0a3be6d0d430b43c90c3bcb81a7593fdb6309009121",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:33ee2d19c1eec05fe8dbd0a3be6d0d430b43c90c3bcb81a7593fdb6309009121",
+  "expected_baseline_hash": "sha256:33ee2d19c1eec05fe8dbd0a3be6d0d430b43c90c3bcb81a7593fdb6309009121",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "b683dad1-83ca-4973-a6d2-dd80480182af" --strict
+EXIT_CODE=0
+=== DRY RUN 66 c13d8387-d38a-47f1-99c3-42ca182f2081 ===
+{
+  "question_id": "c13d8387-d38a-47f1-99c3-42ca182f2081",
+  "attempted_at": "2026-05-14T15:03:37.955Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:a47aacb31b71adb2b8c2edd87a6d8de4b546c44df85f676d95bcf52ea9617013",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:a47aacb31b71adb2b8c2edd87a6d8de4b546c44df85f676d95bcf52ea9617013",
+  "expected_baseline_hash": "sha256:a47aacb31b71adb2b8c2edd87a6d8de4b546c44df85f676d95bcf52ea9617013",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "c13d8387-d38a-47f1-99c3-42ca182f2081" --strict
+EXIT_CODE=0
+=== DRY RUN 67 c1ed334c-bcb3-4322-b56a-a6add8b96b84 ===
+{
+  "question_id": "c1ed334c-bcb3-4322-b56a-a6add8b96b84",
+  "attempted_at": "2026-05-14T15:03:38.264Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:97eb73e90d93257d97b9072c7b8bc90b528dfd24e10daa33d30f9bc8c7cad4a4",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:97eb73e90d93257d97b9072c7b8bc90b528dfd24e10daa33d30f9bc8c7cad4a4",
+  "expected_baseline_hash": "sha256:97eb73e90d93257d97b9072c7b8bc90b528dfd24e10daa33d30f9bc8c7cad4a4",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "c1ed334c-bcb3-4322-b56a-a6add8b96b84" --strict
+EXIT_CODE=0
+=== DRY RUN 68 c503eb0a-79f5-4041-baa6-6ee79e9d1b7c ===
+{
+  "question_id": "c503eb0a-79f5-4041-baa6-6ee79e9d1b7c",
+  "attempted_at": "2026-05-14T15:03:38.690Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:4dfb700591a643600e6fb02b709578bafae919ff870930021b0040b427d3861b",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:4dfb700591a643600e6fb02b709578bafae919ff870930021b0040b427d3861b",
+  "expected_baseline_hash": "sha256:4dfb700591a643600e6fb02b709578bafae919ff870930021b0040b427d3861b",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "c503eb0a-79f5-4041-baa6-6ee79e9d1b7c" --strict
+EXIT_CODE=0
+=== DRY RUN 69 c5a6da5f-9d82-4137-a1ed-73a67cbc48b4 ===
+{
+  "question_id": "c5a6da5f-9d82-4137-a1ed-73a67cbc48b4",
+  "attempted_at": "2026-05-14T15:03:38.955Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:50767e0376f4ff173d7d12484150e7fc2d0338c1b4d521cd5a243a0ede8c2d21",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:50767e0376f4ff173d7d12484150e7fc2d0338c1b4d521cd5a243a0ede8c2d21",
+  "expected_baseline_hash": "sha256:50767e0376f4ff173d7d12484150e7fc2d0338c1b4d521cd5a243a0ede8c2d21",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "c5a6da5f-9d82-4137-a1ed-73a67cbc48b4" --strict
+EXIT_CODE=0
+=== DRY RUN 70 c7b1786e-3a56-45f4-b7c9-a2eae78515a4 ===
+{
+  "question_id": "c7b1786e-3a56-45f4-b7c9-a2eae78515a4",
+  "attempted_at": "2026-05-14T15:03:39.309Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:b9c2061b73b396f66aaf377d74f88b8217034ec845316dc8ae478ac5649e3523",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:b9c2061b73b396f66aaf377d74f88b8217034ec845316dc8ae478ac5649e3523",
+  "expected_baseline_hash": "sha256:b9c2061b73b396f66aaf377d74f88b8217034ec845316dc8ae478ac5649e3523",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "c7b1786e-3a56-45f4-b7c9-a2eae78515a4" --strict
+EXIT_CODE=0
+=== DRY RUN 71 d37a4ca3-16c9-415f-bfaf-4e22292d6998 ===
+{
+  "question_id": "d37a4ca3-16c9-415f-bfaf-4e22292d6998",
+  "attempted_at": "2026-05-14T15:03:39.624Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:7bc466d06cfa24e0dcc17079f7d9df0ec2baa9cd11a65a48c4bc1a48102f358c",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:7bc466d06cfa24e0dcc17079f7d9df0ec2baa9cd11a65a48c4bc1a48102f358c",
+  "expected_baseline_hash": "sha256:7bc466d06cfa24e0dcc17079f7d9df0ec2baa9cd11a65a48c4bc1a48102f358c",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "d37a4ca3-16c9-415f-bfaf-4e22292d6998" --strict
+EXIT_CODE=0
+=== DRY RUN 72 d4d01df7-df76-464c-9424-b1d99104d2a5 ===
+{
+  "question_id": "d4d01df7-df76-464c-9424-b1d99104d2a5",
+  "attempted_at": "2026-05-14T15:03:39.931Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:b260b003df4ae528c7b25562df36d62b5325a43975c658adac158809637f8cda",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:b260b003df4ae528c7b25562df36d62b5325a43975c658adac158809637f8cda",
+  "expected_baseline_hash": "sha256:b260b003df4ae528c7b25562df36d62b5325a43975c658adac158809637f8cda",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "d4d01df7-df76-464c-9424-b1d99104d2a5" --strict
+EXIT_CODE=0
+=== DRY RUN 73 d7192cdc-b9bb-4e30-b920-43d70262b701 ===
+{
+  "question_id": "d7192cdc-b9bb-4e30-b920-43d70262b701",
+  "attempted_at": "2026-05-14T15:03:40.306Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:97692d437e2f2efd0a245ce36ddd67dd8866222a89c2f6c6af4af0c0752a23e6",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:97692d437e2f2efd0a245ce36ddd67dd8866222a89c2f6c6af4af0c0752a23e6",
+  "expected_baseline_hash": "sha256:97692d437e2f2efd0a245ce36ddd67dd8866222a89c2f6c6af4af0c0752a23e6",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "d7192cdc-b9bb-4e30-b920-43d70262b701" --strict
+EXIT_CODE=0
+=== DRY RUN 74 d80bfbfb-532b-4cbe-83dd-742dd4e66ac3 ===
+{
+  "question_id": "d80bfbfb-532b-4cbe-83dd-742dd4e66ac3",
+  "attempted_at": "2026-05-14T15:03:40.622Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:fccaad9c9582ec2e4fcb1ef4231f0c52a705c84fec17f5734709b04b89d1b48d",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:fccaad9c9582ec2e4fcb1ef4231f0c52a705c84fec17f5734709b04b89d1b48d",
+  "expected_baseline_hash": "sha256:fccaad9c9582ec2e4fcb1ef4231f0c52a705c84fec17f5734709b04b89d1b48d",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "d80bfbfb-532b-4cbe-83dd-742dd4e66ac3" --strict
+EXIT_CODE=0
+=== DRY RUN 75 da6f9fdd-e385-467b-98d6-0d56fe57159a ===
+{
+  "question_id": "da6f9fdd-e385-467b-98d6-0d56fe57159a",
+  "attempted_at": "2026-05-14T15:03:40.966Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:445e174ca15f741344498bea1edab4c2625ed1fa4e7dc2627beb7a47f6023c6e",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:445e174ca15f741344498bea1edab4c2625ed1fa4e7dc2627beb7a47f6023c6e",
+  "expected_baseline_hash": "sha256:445e174ca15f741344498bea1edab4c2625ed1fa4e7dc2627beb7a47f6023c6e",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "da6f9fdd-e385-467b-98d6-0d56fe57159a" --strict
+EXIT_CODE=0
+=== DRY RUN 76 dc6455d2-06ab-438d-835d-01d050258c3f ===
+{
+  "question_id": "dc6455d2-06ab-438d-835d-01d050258c3f",
+  "attempted_at": "2026-05-14T15:03:41.240Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:b9a769ccc8dfccfc1cce91cd857ea5c4c3dc4f4e335c8453e2e5eb4fcf9b649f",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:b9a769ccc8dfccfc1cce91cd857ea5c4c3dc4f4e335c8453e2e5eb4fcf9b649f",
+  "expected_baseline_hash": "sha256:b9a769ccc8dfccfc1cce91cd857ea5c4c3dc4f4e335c8453e2e5eb4fcf9b649f",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "dc6455d2-06ab-438d-835d-01d050258c3f" --strict
+EXIT_CODE=0
+=== DRY RUN 77 e080685f-fe5e-42bf-86e1-5cbaa5663de9 ===
+{
+  "question_id": "e080685f-fe5e-42bf-86e1-5cbaa5663de9",
+  "attempted_at": "2026-05-14T15:03:41.630Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:865b8ce9073983694683e7b42a4765c7939a1cbe958b5f15d9e8a65491d42bf5",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:865b8ce9073983694683e7b42a4765c7939a1cbe958b5f15d9e8a65491d42bf5",
+  "expected_baseline_hash": "sha256:865b8ce9073983694683e7b42a4765c7939a1cbe958b5f15d9e8a65491d42bf5",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "e080685f-fe5e-42bf-86e1-5cbaa5663de9" --strict
+EXIT_CODE=0
+=== DRY RUN 78 e4a4c9d2-4019-4e22-8390-d377bf415d73 ===
+{
+  "question_id": "e4a4c9d2-4019-4e22-8390-d377bf415d73",
+  "attempted_at": "2026-05-14T15:03:41.998Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:963e3e1500651b624880a15f96bbf1643dbe240fe4ccf141e2a07e561c3ed424",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:963e3e1500651b624880a15f96bbf1643dbe240fe4ccf141e2a07e561c3ed424",
+  "expected_baseline_hash": "sha256:963e3e1500651b624880a15f96bbf1643dbe240fe4ccf141e2a07e561c3ed424",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "e4a4c9d2-4019-4e22-8390-d377bf415d73" --strict
+EXIT_CODE=0
+=== DRY RUN 79 e5179a2a-67ba-4c10-8218-82d980349bfb ===
+{
+  "question_id": "e5179a2a-67ba-4c10-8218-82d980349bfb",
+  "attempted_at": "2026-05-14T15:03:42.319Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:43b55fba5a59c1f163f049db38a15ae8d3123e073ae224e326d6e63a4c7fd350",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:43b55fba5a59c1f163f049db38a15ae8d3123e073ae224e326d6e63a4c7fd350",
+  "expected_baseline_hash": "sha256:43b55fba5a59c1f163f049db38a15ae8d3123e073ae224e326d6e63a4c7fd350",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "e5179a2a-67ba-4c10-8218-82d980349bfb" --strict
+EXIT_CODE=0
+=== DRY RUN 80 e89766e7-b8ff-4981-8d2c-e2a2cf599820 ===
+{
+  "question_id": "e89766e7-b8ff-4981-8d2c-e2a2cf599820",
+  "attempted_at": "2026-05-14T15:03:42.747Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:47bb30c9628f385f5a7f5f4829e231933efee6faefd1d2dfc974857bc266fe40",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:47bb30c9628f385f5a7f5f4829e231933efee6faefd1d2dfc974857bc266fe40",
+  "expected_baseline_hash": "sha256:47bb30c9628f385f5a7f5f4829e231933efee6faefd1d2dfc974857bc266fe40",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "e89766e7-b8ff-4981-8d2c-e2a2cf599820" --strict
+EXIT_CODE=0
+=== DRY RUN 81 e9538c8d-119a-4361-ac95-53d7a8747bc9 ===
+{
+  "question_id": "e9538c8d-119a-4361-ac95-53d7a8747bc9",
+  "attempted_at": "2026-05-14T15:03:43.040Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
+  "article_folder": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015--585425ad-355a-4180-b64b-a872115f39f6",
+  "exported_hash": "sha256:a75343a34194d96f645fe5d2924807f675116dce2bbe2129606fc34e20ef709a",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:a75343a34194d96f645fe5d2924807f675116dce2bbe2129606fc34e20ef709a",
+  "expected_baseline_hash": "sha256:a75343a34194d96f645fe5d2924807f675116dce2bbe2129606fc34e20ef709a",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "e9538c8d-119a-4361-ac95-53d7a8747bc9" --strict
+EXIT_CODE=0
+=== DRY RUN 82 eef31c78-687c-49cf-9d55-912d2a33df7a ===
+{
+  "question_id": "eef31c78-687c-49cf-9d55-912d2a33df7a",
+  "attempted_at": "2026-05-14T15:03:43.368Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "article_folder": "lea-strc-012-01-core-concept--f0790263-a20b-4d36-bebb-05474566cbce",
+  "exported_hash": "sha256:7be1779f09cf7e423aa2d699db42e2af8506e78372c98340bdcc8722cae07814",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:7be1779f09cf7e423aa2d699db42e2af8506e78372c98340bdcc8722cae07814",
+  "expected_baseline_hash": "sha256:7be1779f09cf7e423aa2d699db42e2af8506e78372c98340bdcc8722cae07814",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "eef31c78-687c-49cf-9d55-912d2a33df7a" --strict
+EXIT_CODE=0
+=== DRY RUN 83 efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b ===
+{
+  "question_id": "efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b",
+  "attempted_at": "2026-05-14T15:03:43.704Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:ebad436fa0161d3e86e7cea63a7b8b743a0b9d4c7bef34722fa8aa8b95d384e6",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:ebad436fa0161d3e86e7cea63a7b8b743a0b9d4c7bef34722fa8aa8b95d384e6",
+  "expected_baseline_hash": "sha256:ebad436fa0161d3e86e7cea63a7b8b743a0b9d4c7bef34722fa8aa8b95d384e6",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b" --strict
+EXIT_CODE=0
+=== DRY RUN 84 efe5debd-0e8a-49cf-b666-715236dfccc0 ===
+{
+  "question_id": "efe5debd-0e8a-49cf-b666-715236dfccc0",
+  "attempted_at": "2026-05-14T15:03:43.997Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:cc20fd6cbaa60c079477bed0c1fc38a47900d59e189a132df3a025c086d25b5f",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:cc20fd6cbaa60c079477bed0c1fc38a47900d59e189a132df3a025c086d25b5f",
+  "expected_baseline_hash": "sha256:cc20fd6cbaa60c079477bed0c1fc38a47900d59e189a132df3a025c086d25b5f",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "efe5debd-0e8a-49cf-b666-715236dfccc0" --strict
+EXIT_CODE=0
+=== DRY RUN 85 f03689fe-68c2-40c5-87f3-33d5b4a1397b ===
+{
+  "question_id": "f03689fe-68c2-40c5-87f3-33d5b4a1397b",
+  "attempted_at": "2026-05-14T15:03:44.315Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:fb250dffab7ac1338b7b8bcea62b9d369a48af683100233bfd43f10b2641a4e3",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:fb250dffab7ac1338b7b8bcea62b9d369a48af683100233bfd43f10b2641a4e3",
+  "expected_baseline_hash": "sha256:fb250dffab7ac1338b7b8bcea62b9d369a48af683100233bfd43f10b2641a4e3",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "f03689fe-68c2-40c5-87f3-33d5b4a1397b" --strict
+EXIT_CODE=0
+=== DRY RUN 86 f24e257f-ca78-467f-8719-2d28fe0d3722 ===
+{
+  "question_id": "f24e257f-ca78-467f-8719-2d28fe0d3722",
+  "attempted_at": "2026-05-14T15:03:44.603Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:5a9b54afeea51bcbf2227e7d1627eddaafa9d0ea31ad37ca2e353b11486a9bcf",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:5a9b54afeea51bcbf2227e7d1627eddaafa9d0ea31ad37ca2e353b11486a9bcf",
+  "expected_baseline_hash": "sha256:5a9b54afeea51bcbf2227e7d1627eddaafa9d0ea31ad37ca2e353b11486a9bcf",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "f24e257f-ca78-467f-8719-2d28fe0d3722" --strict
+EXIT_CODE=0
+=== DRY RUN 87 f7809040-5f36-445c-84b7-9a1dfa8bd4c8 ===
+{
+  "question_id": "f7809040-5f36-445c-84b7-9a1dfa8bd4c8",
+  "attempted_at": "2026-05-14T15:03:44.966Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "article_folder": "lea-strc-009-02-core-concept--047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "exported_hash": "sha256:55449d2eb249fe13b59ac78ca8635e4d48f7c5a3d95a23fd6109386adc00c3ea",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:55449d2eb249fe13b59ac78ca8635e4d48f7c5a3d95a23fd6109386adc00c3ea",
+  "expected_baseline_hash": "sha256:55449d2eb249fe13b59ac78ca8635e4d48f7c5a3d95a23fd6109386adc00c3ea",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "f7809040-5f36-445c-84b7-9a1dfa8bd4c8" --strict
+EXIT_CODE=0
+=== DRY RUN 88 f88b1cee-f81c-4809-b056-b2ab90d425e9 ===
+{
+  "question_id": "f88b1cee-f81c-4809-b056-b2ab90d425e9",
+  "attempted_at": "2026-05-14T15:03:45.273Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "article_folder": "lea-strc-007-03-core-concept--f122ad42-0858-4bb6-ac19-6a788bac4c43",
+  "exported_hash": "sha256:e22696451c9d0ae2e9f53687035e0e4ec4841b4fff0ec3ca6ff7be1c987901c3",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:e22696451c9d0ae2e9f53687035e0e4ec4841b4fff0ec3ca6ff7be1c987901c3",
+  "expected_baseline_hash": "sha256:e22696451c9d0ae2e9f53687035e0e4ec4841b4fff0ec3ca6ff7be1c987901c3",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "f88b1cee-f81c-4809-b056-b2ab90d425e9" --strict
+EXIT_CODE=0
+=== DRY RUN 89 f8fd0b57-119f-4584-a713-7cd5e2e340d2 ===
+{
+  "question_id": "f8fd0b57-119f-4584-a713-7cd5e2e340d2",
+  "attempted_at": "2026-05-14T15:03:45.573Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:056c8a135493cf18e6da65b84b93855792257a926aaf0f6205076ee1a3aaedfa",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:056c8a135493cf18e6da65b84b93855792257a926aaf0f6205076ee1a3aaedfa",
+  "expected_baseline_hash": "sha256:056c8a135493cf18e6da65b84b93855792257a926aaf0f6205076ee1a3aaedfa",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "f8fd0b57-119f-4584-a713-7cd5e2e340d2" --strict
+EXIT_CODE=0
+=== DRY RUN 90 ff3dd962-75e0-4e37-a01e-58001e23d407 ===
+{
+  "question_id": "ff3dd962-75e0-4e37-a01e-58001e23d407",
+  "attempted_at": "2026-05-14T15:03:45.947Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "article_folder": "lea-strc-004-02-core-concept--cc7363f6-b2bf-4ed9-a9b4-81d82eae98fe",
+  "exported_hash": "sha256:6ec195ed64cdb10884254a16722d07ad094a02dba74f006d05518c57e77f9da4",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:6ec195ed64cdb10884254a16722d07ad094a02dba74f006d05518c57e77f9da4",
+  "expected_baseline_hash": "sha256:6ec195ed64cdb10884254a16722d07ad094a02dba74f006d05518c57e77f9da4",
+  "stale_check_passed": true
+}
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "ff3dd962-75e0-4e37-a01e-58001e23d407" --strict
+EXIT_CODE=0

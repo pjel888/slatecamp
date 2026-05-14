@@ -1,0 +1,38 @@
+{
+  "question_id": "4864b616-2862-4dad-be1f-8b73baa8e983",
+  "attempted_at": "2026-05-14T15:03:24.152Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "article_folder": "lea-strc-009-01-core-concept--84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "exported_hash": "sha256:3bd2430e772fa2fff0731ea2a77ba65cb93452ecbec413e1f0b14bd8bdf4fd37",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:3bd2430e772fa2fff0731ea2a77ba65cb93452ecbec413e1f0b14bd8bdf4fd37",
+  "expected_baseline_hash": "sha256:3bd2430e772fa2fff0731ea2a77ba65cb93452ecbec413e1f0b14bd8bdf4fd37",
+  "stale_check_passed": true
+}

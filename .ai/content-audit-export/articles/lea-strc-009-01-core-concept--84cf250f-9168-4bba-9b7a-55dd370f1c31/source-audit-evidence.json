@@ -21,11 +21,12 @@
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": false,
+    "safe_for_supabase_upload": true,
     "blockers": [],
     "warnings": [
       "No Supabase upload was run for Batch 161; this is a local-only production-line handoff."
-    ]
+    ],
+    "safe_for_question_apply": true
   },
   "raw_local_gate": {
     "status": "PASS",
@@ -196,5 +197,143 @@
     "source_boundary": "Checked local NSCP OCR page markdown under vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages.",
     "question_edit_support_status": "question_alignment_remediated",
     "prior_audit_path": ".ai/03_plans/final-second-audit/rolling-readonly-swarm/opencode-kimi-batches-161-163-nscp-pedagogy-depth-audit.md"
-  }
+  },
+  "batch_164_question_apply_gate": {
+    "status": "PASS",
+    "question_claim_count": 10,
+    "answer_key_changes": 0,
+    "note": "Added after final freeze dry-run: push-question apply gate requires per-question claims and safe_for_supabase_upload true. These claims mirror Batch 164 question-edits source_audit_support and do not expand source scope."
+  },
+  "claims": [
+    {
+      "claim_id": "batch-164-question-136a9f76-4115-4c68-ac4a-aa015e09f5aa",
+      "claim_text": "Batch 164 question remediation for question 136a9f76-4115-4c68-ac4a-aa015e09f5aa / model ALE-STRC-009-01-002: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "136a9f76-4115-4c68-ac4a-aa015e09f5aa",
+      "model_id": "ALE-STRC-009-01-002",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-18988e39-3d86-4bf3-8c1a-a3647ecc8366",
+      "claim_text": "Batch 164 question remediation for question 18988e39-3d86-4bf3-8c1a-a3647ecc8366 / model ALE-STRC-009-01-004: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "18988e39-3d86-4bf3-8c1a-a3647ecc8366",
+      "model_id": "ALE-STRC-009-01-004",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-4864b616-2862-4dad-be1f-8b73baa8e983",
+      "claim_text": "Batch 164 question remediation for question 4864b616-2862-4dad-be1f-8b73baa8e983 / model ALE-STRC-009-01-003: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "4864b616-2862-4dad-be1f-8b73baa8e983",
+      "model_id": "ALE-STRC-009-01-003",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-60a71679-a95f-4b65-8ddd-36e05a2c0ed1",
+      "claim_text": "Batch 164 question remediation for question 60a71679-a95f-4b65-8ddd-36e05a2c0ed1 / model ALE-STRC-009-01-009: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "60a71679-a95f-4b65-8ddd-36e05a2c0ed1",
+      "model_id": "ALE-STRC-009-01-009",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-96d4546c-eab8-4ac1-ac61-7ccfc81a797f",
+      "claim_text": "Batch 164 question remediation for question 96d4546c-eab8-4ac1-ac61-7ccfc81a797f / model ALE-STRC-009-01-001: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "96d4546c-eab8-4ac1-ac61-7ccfc81a797f",
+      "model_id": "ALE-STRC-009-01-001",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-aabd6070-7a57-439b-b95e-64c35c9c83fa",
+      "claim_text": "Batch 164 question remediation for question aabd6070-7a57-439b-b95e-64c35c9c83fa / model ALE-STRC-009-01-005: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "aabd6070-7a57-439b-b95e-64c35c9c83fa",
+      "model_id": "ALE-STRC-009-01-005",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-c5a6da5f-9d82-4137-a1ed-73a67cbc48b4",
+      "claim_text": "Batch 164 question remediation for question c5a6da5f-9d82-4137-a1ed-73a67cbc48b4 / model ALE-STRC-009-01-006: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "c5a6da5f-9d82-4137-a1ed-73a67cbc48b4",
+      "model_id": "ALE-STRC-009-01-006",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-e4a4c9d2-4019-4e22-8390-d377bf415d73",
+      "claim_text": "Batch 164 question remediation for question e4a4c9d2-4019-4e22-8390-d377bf415d73 / model ALE-STRC-009-01-010: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "e4a4c9d2-4019-4e22-8390-d377bf415d73",
+      "model_id": "ALE-STRC-009-01-010",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-f24e257f-ca78-467f-8719-2d28fe0d3722",
+      "claim_text": "Batch 164 question remediation for question f24e257f-ca78-467f-8719-2d28fe0d3722 / model ALE-STRC-009-01-008: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "f24e257f-ca78-467f-8719-2d28fe0d3722",
+      "model_id": "ALE-STRC-009-01-008",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    },
+    {
+      "claim_id": "batch-164-question-f8fd0b57-119f-4584-a713-7cd5e2e340d2",
+      "claim_text": "Batch 164 question remediation for question f8fd0b57-119f-4584-a713-7cd5e2e340d2 / model ALE-STRC-009-01-007: proposed text/options/rationale/code_citation are source-supported by vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "question_id": "f8fd0b57-119f-4584-a713-7cd5e2e340d2",
+      "model_id": "ALE-STRC-009-01-007",
+      "source_ids": [
+        "nscp-2015-section-605-decay-termite-protection-b161"
+      ],
+      "locator": "vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:13-37 site preparation and wood support embedded in ground.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:39-57 under-floor clearance and access opening.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:59-94 plates, sills, posts, pedestals, and girder-end air space.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0870.md:96-113 under-floor ventilation requirements.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:3-16 wood-earth separation rule.; vitruvius-connection/002_Raw-Conversion-Layer/006-Structural/NSCP-2015-7th-Edition/pages/page-0871.md:35-42 treated-wood moisture content before covering.",
+      "status": "PASS",
+      "support_status": "question_alignment_remediated",
+      "answer_key_fields_changed": false
+    }
+  ]
 }

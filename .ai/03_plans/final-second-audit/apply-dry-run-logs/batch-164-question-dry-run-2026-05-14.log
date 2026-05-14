@@ -1,0 +1,85 @@
+=== DRY RUN 1 00f76274-9125-4e6c-8eae-473634d9511b ===
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "00f76274-9125-4e6c-8eae-473634d9511b" --strict
+{
+  "question_id": "00f76274-9125-4e6c-8eae-473634d9511b",
+  "attempted_at": "2026-05-14T14:58:52.037Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "article_folder": "lea-util-004-05-seismic-bracing-and-earthquake-resilience--1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "exported_hash": "sha256:4b0b7c543e9ec896ca3e588d8ffe29000f604e01e14435ec37cb337fb43b61a2",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": false,
+    "question_claim_found": true
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "is_assessment",
+    "model_id",
+    "options",
+    "practice_context",
+    "prompt_image_url",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:4b0b7c543e9ec896ca3e588d8ffe29000f604e01e14435ec37cb337fb43b61a2",
+  "expected_baseline_hash": "sha256:4b0b7c543e9ec896ca3e588d8ffe29000f604e01e14435ec37cb337fb43b61a2",
+  "stale_check_passed": true
+}
+=== DRY RUN 2 0219dc35-4e33-4ce0-b077-c008de043af6 ===
+$ bun scripts/content-audit/push-question-to-supabase.ts --dry-run --question-id "0219dc35-4e33-4ce0-b077-c008de043af6" --strict
+{
+  "question_id": "0219dc35-4e33-4ce0-b077-c008de043af6",
+  "attempted_at": "2026-05-14T14:58:53.938Z",
+  "dry_run": true,
+  "apply": false,
+  "pushed": false,
+  "blockers": [
+    "Remote question differs from exported/edit baseline; refusing stale push."
+  ],
+  "warnings": [
+    "Dry-run mode: no question mutation was performed."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "article_folder": "lea-strc-007-05-core-concept--f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "exported_hash": "sha256:4670f8b31695356bb63eb426ec9e997382a908a8943ef657f751de7ccb0d1edf",
+  "source_audit": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": false,
+    "question_claim_found": false
+  },
+  "proposed_field_names": [
+    "application_context",
+    "bloom_level",
+    "code_citation",
+    "correct_option_id",
+    "difficulty",
+    "difficulty_rating",
+    "discrimination_rating",
+    "explanation",
+    "model_id",
+    "options",
+    "practice_context",
+    "rationale",
+    "text"
+  ],
+  "remote_hash_before": "sha256:4670f8b31695356bb63eb426ec9e997382a908a8943ef657f751de7ccb0d1edf",
+  "expected_baseline_hash": "sha256:c3618e7c83ae54e2fe0a7aa02c5eabaa1d3b63d031200397e1196216063af41f",
+  "stale_check_passed": false
+}
+error: script "content-audit:push-question:dry-run" exited with code 1
