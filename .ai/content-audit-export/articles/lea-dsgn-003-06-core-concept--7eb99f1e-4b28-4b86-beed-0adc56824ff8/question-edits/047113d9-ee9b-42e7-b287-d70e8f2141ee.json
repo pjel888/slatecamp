@@ -2,121 +2,63 @@
   "question_id": "047113d9-ee9b-42e7-b287-d70e8f2141ee",
   "baseline_hash": "sha256:9ea66ebaee7ae1668a72bd614e02b04616660718bfbdd4bb3eeff5355c928357",
   "action": "replace",
-  "reason": "source-audited-article-batch-065-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes prior off-scope framing where present.",
-  "approved_by": "codex-local-first-batch-065",
-  "approved_at": "2026-05-11T23:18:00.000+08:00",
+  "reason": "source-audited-article-batch-138-local-first: residual local-first rewrite constrained to checked local source artifacts for Dormitories and Student Housing.",
+  "approved_by": "codex-local-first-source-audited-article-batch-138-local-first",
+  "approved_at": "2026-05-13T23:57:42.832Z",
   "source_audit_support": {
     "parent_article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
     "parent_article_slug": "lea-dsgn-003-06-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-    "checked_markdown_lines": [
-      "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128",
-      "PD 1096 RIRR DPWH Official refined markdown lines 1174-1190",
-      "PD 1096 RIRR DPWH Official refined markdown lines 1265-1272",
-      "PD 1096 RIRR DPWH Official refined markdown lines 1659-1667",
-      "PD 1096 RIRR DPWH Official refined markdown lines 1681-1698",
-      "PD 1096 RIRR DPWH Official refined markdown lines 1735-1736",
-      "RA 9514 RIRR refined markdown line 1435",
-      "RA 9514 RIRR refined markdown line 1628",
-      "RA 9514 RIRR refined markdown lines 1648-1650",
-      "RA 9514 RIRR refined markdown lines 1702 and 1807",
-      "RA 9514 RIRR refined markdown lines 2521-2591",
-      "RA 9514 RIRR refined markdown lines 3984-3994",
-      "RA 9514 RIRR refined markdown lines 4275-4303",
-      "RA 9514 RIRR refined markdown lines 5390-5476",
-      "RA 9514 RIRR refined markdown lines 6152-6200",
-      "PD 9514 Fire Code refined markdown lines 1599-1629",
-      "PD 9514 Fire Code refined markdown lines 1655-1719",
-      "PD 9514 Fire Code refined markdown line 2654",
-      "PD 9514 Fire Code refined markdown lines 2849-2855",
-      "PD 9514 Fire Code refined markdown lines 3644-3728"
-    ],
-    "checked_raw_pdf_pages": [
-      "PD 1096 RIRR DPWH Official raw PDF pages 47-48",
-      "PD 1096 RIRR DPWH Official raw PDF page 53",
-      "PD 1096 RIRR DPWH Official raw PDF page 57",
-      "PD 1096 RIRR DPWH Official raw PDF page 72",
-      "PD 1096 RIRR DPWH Official raw PDF pages 101-103",
-      "RA 9514 RIRR raw PDF page 64",
-      "RA 9514 RIRR raw PDF page 68",
-      "RA 9514 RIRR raw PDF pages 91-93",
-      "RA 9514 RIRR raw PDF page 142",
-      "RA 9514 RIRR raw PDF page 168",
-      "RA 9514 RIRR raw PDF page 171",
-      "RA 9514 RIRR raw PDF page 189",
-      "PD 9514 Fire Code raw PDF pages 57-63",
-      "PD 9514 Fire Code raw PDF page 111"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
     "checked_sources": [
       {
-        "source_id": "pd1096-rirr-2004-occupancy-mixed-facility-local-b065",
-        "label": "PD 1096 RIRR 2004 - occupancy classification for residential, institutional, business, industrial, storage, assembly, resort, school, hospital, restaurant, and parking/loading references",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction"
+        "source_id": "batch-138-lea-dsgn-003-06-core-concept-raw-source-capture",
+        "label": "Batch 138 raw source capture - Dormitories and Student Housing",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387"
       },
       {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "label": "RA 9514 Revised IRR 2019 - occupancy classification, mixed occupancy, assembly load, educational exits, hotel/dormitory protection, and storage egress",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "locator": "RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction"
-      },
-      {
-        "source_id": "pd9514-fire-code-life-safety-occupancy-local-b065",
-        "label": "Fire Code source family - general life-safety, occupancy, and egress requirements",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
-        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
-        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
-        "locator": "PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction"
+        "source_id": "batch-138-lea-dsgn-003-06-core-concept-refined-source-map",
+        "label": "Batch 138 refined source conversion - Dormitories and Student Housing",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 065 checked local raw-source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 138 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "For a dormitory with accommodations for fifteen or more guests, what alarm requirement is source-safe under RA 9514?",
+    "text": "A dormitory has accommodations for fifteen or more guests. Which Fire Code provision becomes relevant?",
     "options": [
       {
         "id": "a",
-        "text": "Provide an automatic fire detection and alarm system."
+        "text": "Automatic fire detection and alarm system for hotel/dormitory path."
       },
       {
         "id": "b",
-        "text": "Provide only a hand-held bell with no alarm system."
+        "text": "No alarm system because it is residential."
       },
       {
         "id": "c",
-        "text": "Omit alarms if exit signs are illuminated."
+        "text": "Only a heritage marker."
       },
       {
         "id": "d",
-        "text": "Use storage-occupancy alarm rules only."
+        "text": "Only a land-use market study."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "RA 9514 requires automatic fire detection and alarm for any hotel or dormitory having accommodations for fifteen or more guests.",
-    "explanation": "RA 9514 requires automatic fire detection and alarm for any hotel or dormitory having accommodations for fifteen or more guests.",
-    "code_citation": "RA 9514 refined markdown lines 5449-5457",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "bloom_level": "understand",
-    "application_context": "code_interpretation",
-    "practice_context": [
-      "occupancy classification",
-      "fire code review"
-    ],
-    "difficulty": 0.5,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false
-  }
+    "rationale": {
+      "a": "Automatic fire detection and alarm system for hotel/dormitory path. This stays inside the Batch 138 local source boundary for Dormitories and Student Housing.",
+      "b": "No alarm system because it is residential. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "c": "Only a heritage marker. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "d": "Only a land-use market study. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "correct": "Automatic fire detection and alarm system for hotel/dormitory path. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2.",
+      "takeaway": "For Dormitories and Student Housing, classify the question first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+    },
+    "explanation": "Automatic fire detection and alarm system for hotel/dormitory path. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+  },
+  "batch_question_template_index": 4
 }

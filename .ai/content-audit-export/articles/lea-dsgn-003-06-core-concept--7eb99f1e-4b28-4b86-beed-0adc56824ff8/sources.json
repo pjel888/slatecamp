@@ -1,93 +1,98 @@
 {
   "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d83de1a3f6bfe8167a0c979c3f33b3e9bef9e794a6d7bb7b9be5f85d89899331",
-  "source_count": 3,
+  "sources_hash": "sha256:50902cc12e9d9ffd0e9aeb0e14a2a4ee57a53c5739672a9c7e77bbe99cc3146e",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "pd1096-rirr-2004-occupancy-mixed-facility-local-b065",
-      "label": "PD 1096 RIRR 2004 - occupancy classification for residential, institutional, business, industrial, storage, assembly, resort, school, hospital, restaurant, and parking/loading references",
-      "authority": "DPWH official revised IRR local raw PDF conversion",
-      "source_type": "building_code_irr_pdf",
-      "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_id": "batch-138-lea-dsgn-003-06-core-concept-raw-source-capture",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "label": "Batch 138 raw source capture - Dormitories and Student Housing",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Dormitories and Student Housing; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-13T23:57:42.832Z",
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+      "local_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
       "checked_markdown_lines": [
-        "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1174-1190",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1265-1272",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1659-1667",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1681-1698",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1735-1736"
+        "PD 1096 RIRR 2004 - DPWH Official: The Code regulates use, occupancy, location, site, design, maintenance, and conversion. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Floor plans must identify rooms or functional spaces. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Buildings are classified according to use or character of occupancy. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Change of use must conform with the Code and IRR. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "RA 9514 Revised IRR 2019 - Fire Code: The Fire Code defines dormitories and classifies public museums/exhibition halls as assembly when gathering thresholds apply. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466",
+        "RA 9514 Revised IRR 2019 - Fire Code: Egress, exit lighting, emergency lighting, alarms, and sprinklers depend on occupancy and scale. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466",
+        "RA 9514 Revised IRR 2019 - Fire Code: Hotel and dormitory rooms need fire-resistance separation based on sprinkler protection. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466"
       ],
-      "checked_raw_pdf_pages": [
-        "PD 1096 RIRR DPWH Official raw PDF pages 47-48",
-        "PD 1096 RIRR DPWH Official raw PDF page 53",
-        "PD 1096 RIRR DPWH Official raw PDF page 57",
-        "PD 1096 RIRR DPWH Official raw PDF page 72",
-        "PD 1096 RIRR DPWH Official raw PDF pages 101-103"
+      "local_source_families": [
+        {
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "rawHash": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refinedHash": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+        },
+        {
+          "label": "RA 9514 Revised IRR 2019 - Fire Code",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+          "rawHash": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+          "refinedHash": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+          "checked_locator": "RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466"
+        }
       ],
-      "use": "primary local source for PD 1096 occupancy and parking/loading classification checks in Batch 065",
-      "local_source_checked": true
+      "local_audit_note": "Article and question claims cite only the local Batch 138 source capture/refined conversion boundary."
     },
     {
-      "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-      "label": "RA 9514 Revised IRR 2019 - occupancy classification, mixed occupancy, assembly load, educational exits, hotel/dormitory protection, and storage egress",
-      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
-      "source_type": "fire_code_irr_pdf",
-      "source_locator": "RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_id": "batch-138-lea-dsgn-003-06-core-concept-refined-source-map",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "label": "Batch 138 refined source conversion - Dormitories and Student Housing",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Dormitories and Student Housing.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-13T23:57:42.832Z",
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+      "local_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
       "checked_markdown_lines": [
-        "RA 9514 RIRR refined markdown line 1435",
-        "RA 9514 RIRR refined markdown line 1628",
-        "RA 9514 RIRR refined markdown lines 1648-1650",
-        "RA 9514 RIRR refined markdown lines 1702 and 1807",
-        "RA 9514 RIRR refined markdown lines 2521-2591",
-        "RA 9514 RIRR refined markdown lines 3984-3994",
-        "RA 9514 RIRR refined markdown lines 4275-4303",
-        "RA 9514 RIRR refined markdown lines 5390-5476",
-        "RA 9514 RIRR refined markdown lines 6152-6200"
+        "PD 1096 RIRR 2004 - DPWH Official: The Code regulates use, occupancy, location, site, design, maintenance, and conversion. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Floor plans must identify rooms or functional spaces. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Buildings are classified according to use or character of occupancy. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Change of use must conform with the Code and IRR. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "RA 9514 Revised IRR 2019 - Fire Code: The Fire Code defines dormitories and classifies public museums/exhibition halls as assembly when gathering thresholds apply. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466",
+        "RA 9514 Revised IRR 2019 - Fire Code: Egress, exit lighting, emergency lighting, alarms, and sprinklers depend on occupancy and scale. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466",
+        "RA 9514 Revised IRR 2019 - Fire Code: Hotel and dormitory rooms need fire-resistance separation based on sprinkler protection. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466"
       ],
-      "checked_raw_pdf_pages": [
-        "RA 9514 RIRR raw PDF page 64",
-        "RA 9514 RIRR raw PDF page 68",
-        "RA 9514 RIRR raw PDF pages 91-93",
-        "RA 9514 RIRR raw PDF page 142",
-        "RA 9514 RIRR raw PDF page 168",
-        "RA 9514 RIRR raw PDF page 171",
-        "RA 9514 RIRR raw PDF page 189"
+      "local_source_families": [
+        {
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "rawHash": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refinedHash": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+        },
+        {
+          "label": "RA 9514 Revised IRR 2019 - Fire Code",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+          "rawHash": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+          "refinedHash": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+          "checked_locator": "RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466"
+        }
       ],
-      "use": "primary local source for Fire Code classification, egress, alarm, sprinkler, educational, hotel/dormitory, assembly, storage, and mixed-occupancy checks in Batch 065",
-      "local_source_checked": true
-    },
-    {
-      "source_id": "pd9514-fire-code-life-safety-occupancy-local-b065",
-      "label": "Fire Code source family - general life-safety, occupancy, and egress requirements",
-      "authority": "Fire Code local raw PDF conversion",
-      "source_type": "fire_code_pdf",
-      "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
-      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
-      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
-      "checked_markdown_lines": [
-        "PD 9514 Fire Code refined markdown lines 1599-1629",
-        "PD 9514 Fire Code refined markdown lines 1655-1719",
-        "PD 9514 Fire Code refined markdown line 2654",
-        "PD 9514 Fire Code refined markdown lines 2849-2855",
-        "PD 9514 Fire Code refined markdown lines 3644-3728"
-      ],
-      "checked_raw_pdf_pages": [
-        "PD 9514 Fire Code raw PDF pages 57-63",
-        "PD 9514 Fire Code raw PDF page 111"
-      ],
-      "use": "supporting local source for general life-safety, occupancy classification, exits, warning systems, and egress checks in Batch 065",
-      "local_source_checked": true
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

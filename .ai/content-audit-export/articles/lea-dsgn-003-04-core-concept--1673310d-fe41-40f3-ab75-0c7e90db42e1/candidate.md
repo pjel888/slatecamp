@@ -1,38 +1,46 @@
-# BP 220 Housing Standards and Senior Residential Classification
+# Senior Living and Low-Income Housing: BP 220 and Occupancy Boundaries
 
 ## Board Exam Quick Check
 
-First identify the rule set. If the item asks for economic or socialized housing standards, start with BP 220. If the item asks how a senior facility is classified by building use, start with PD 1096 occupancy groups. Do not mix BP 220 lot standards with institutional nursing-home occupancy unless the question explicitly connects those facts.
+Do not mix three different issues: economic or socialized housing under BP 220, independent residential living under PD 1096, and senior care or nursing-home occupancy under PD 1096 institutional classification. The stem controls which path applies.
 
 ## What You Need to Know for the LEA
 
-BP 220 governs minimum standards for economic and socialized housing projects. The local raw-source check for this batch confirms these core values:
+BP 220 applies to economic and socialized housing projects. It sets minimum design standards for site suitability, project design, open space, community facilities, circulation, lot areas, and minimum dwelling floor area. The checked BP 220 source confirms 22 sqm as the minimum floor area for economic single-family dwelling and 18 sqm for socialized single-family dwelling.
 
-| Housing type | Economic lot area | Socialized lot area |
-| --- | ---: | ---: |
-| Single detached | 72 sqm | 64 sqm |
-| Duplex / single attached | 54 sqm | 48 sqm |
-| Row house | 36 sqm | 28 sqm |
+For lot-area questions, BP 220 values depend on the housing type and category. Single detached, duplex or single attached, and row house figures are not interchangeable. Non-saleable portions are not one fixed universal deduction; the source points to open space, circulation, community facilities, and parks/playgrounds requirements, with parks/playgrounds mandatory for projects of 1 hectare and above.
 
-For single-family dwellings, the minimum floor area is 22 sqm for economic housing and 18 sqm for socialized housing. This corrects the common exam-trap value that treats 24 sqm as the BP 220 economic floor area.
+For senior-living questions, PD 1096 classification depends on use. Independent residential units are not the same as nursing homes, homes for the aged, or care facilities. A senior housing project can therefore be a BP 220 computation, a residential occupancy item, or an institutional-care classification item depending on the facts.
 
-BP 220 does not set one fixed saleable-to-non-saleable ratio for every project. It requires the non-saleable portions needed for open space, circulation, community facilities, and parks/playgrounds, with parks/playgrounds mandatory for projects of 1 hectare and above. When a problem gives a net saleable area or a deduction percentage, use the stated problem assumption before applying the lot-area table.
+## Real World Scenario
 
-PD 1096 classifies buildings by use or character of occupancy. Independent dwelling units may fall under Group A or Group B depending on ownership, leasing, and number of occupants. Nursing homes, homes for the aged, and similar care facilities with more than five persons belong under Group D institutional occupancy. A senior housing problem is therefore not automatically a BP 220 lot-area problem or automatically a Group D problem; the use described in the stem controls.
+An LGU socialized-housing site includes small dwelling units, a neighborhood multipurpose area, pedestrian access, and several older residents. A source-safe answer uses BP 220 for economic or socialized housing standards and avoids calling the project a nursing home unless the stem says it provides care or houses aged residents in an institutional setting. If the project includes public-use facilities, accessibility and occupancy checks are handled separately.
 
-Accessibility dimensions in this local source family come from the BP 344 accessibility text reproduced in the official PD 1096 appendix: accessible parking slots have a minimum width of 3.70 m, ramps have a maximum gradient of 1:12, doors have a minimum clear width of 0.80 m, and accessible elevators have a minimum dimension of 1.10 m x 1.40 m.
+## Key Facts and Testable Items
 
-## How It Is Tested
+| Exam cue | Source-safe answer |
+| --- | --- |
+| Economic or socialized housing project | Start with BP 220. |
+| 22 sqm or 18 sqm floor-area choice | 22 sqm economic, 18 sqm socialized for single-family dwelling. |
+| Lot-area table | Match housing type and category; do not swap row house and detached values. |
+| Parks/playgrounds | Mandatory for projects 1 hectare and above. |
+| Senior care or home for the aged | Check PD 1096 institutional occupancy facts before applying BP 220. |
 
-- For BP 220 computations, multiply units by the correct lot area for the category and housing type.
-- For floor-area questions, use 22 sqm for economic housing and 18 sqm for socialized housing.
-- For senior-living questions, identify whether the described project is independent residential living, transient/multiple dwelling, or nursing/care occupancy.
-- For subdivision calculations, use any saleable-area assumption stated in the problem; do not invent a fixed deduction when the problem does not provide one.
+## How It Is Tested on the LEA
+
+Expect traps that use the right number in the wrong category. Identify the project type first, then match the housing type, lot area, floor area, open-space/community-facility requirement, or occupancy group.
 
 ## Common Mistakes
 
-- Using 24 sqm as the economic-housing floor-area minimum instead of 22 sqm.
-- Applying socialized row-house minimums to single detached or duplex units.
+- Using 24 sqm instead of the checked 22 sqm economic-housing floor area.
+- Applying socialized row-house minimums to single detached units.
 - Treating all senior housing as institutional care.
-- Assuming a fixed 70 percent saleable area in every BP 220 computation.
-- Using a monthly income threshold not stated in the checked local BP 220 source.
+- Inventing a fixed saleable-area percentage when the problem does not state one.
+
+## Key Terms
+
+**Economic Housing** - BP 220 housing category with its own minimum design values.
+
+**Socialized Housing** - BP 220 housing category with lower minimum values for qualified projects.
+
+**Institutional Care Occupancy** - A PD 1096 path for nursing homes, homes for the aged, and similar care facilities when the facts support it.

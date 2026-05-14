@@ -1,30 +1,30 @@
 {
   "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:849ecc949541eb71e976afdbc765c9b9e0783df86457bfe203e979e1be387c8d",
+  "linked_questions_hash": "sha256:b5fe83a45b104ae80f562af19e17243a81130543b365ebf695342a83da9170fe",
   "question_count": 10,
   "questions": [
     {
       "question_id": "188c051c-c50d-4244-a498-58551c2a4b8d",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "A hospital program organizes zones vertically: ambulatory care (ground floor), inpatient units (floors 2–5), intensive care and surgery (floors 6–8), and administrative offices (floors 9–10). Does this vertical stacking effectively apply zoning logic, or are there problems with this organization?",
+      "text": "A plan groups public waiting near the entrance, controlled consultation rooms beyond reception, and service storage away from patient circulation. What source-safe principle is being applied?",
       "options": [
         {
           "id": "a",
-          "text": "This is effective; vertical stacking minimizes horizontal circulation and maintains clear zone separation throughout the building, optimizing operational efficiency"
+          "text": "A fixed vertical hospital stack rule."
         },
         {
           "id": "b",
-          "text": "This creates problems; intensive care and surgery (service-intensive, restricted access) should be mid-building to serve multiple patient floors efficiently, not isolated at the top"
+          "text": "Functional zoning through access, privacy, service, and adjacency relationships."
         },
         {
           "id": "c",
-          "text": "This is ideal; administrative offices above clinical areas maintain oversight and management control, ensuring streamlined operations"
+          "text": "A legal rezoning approval."
         },
         {
           "id": "d",
-          "text": "This is inefficient; all medical functions should be on one floor to minimize vertical circulation and equipment movement, reducing logistical complexity"
+          "text": "A saleable-area calculation."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While separation is good, the specific arrangement isn't optimal.",
-        "c": "Administrative oversight doesn't require vertical positioning above clinical areas.",
-        "d": "Single-floor concentration eliminates the benefits of vertical separation.",
-        "correct": "Vertical stacking can work, but ICU and surgery (specialized, equipment-intensive, restricted access) should serve multiple inpatient floors efficiently. Placing them at the top isolates them from patients they serve. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location.",
-        "takeaway": "Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location."
+        "a": "A fixed vertical hospital stack rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Functional zoning through access, privacy, service, and adjacency relationships. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "c": "A legal rezoning approval. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "A saleable-area calculation. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Functional zoning through access, privacy, service, and adjacency relationships. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": "While separation is good, the specific arrangement isn't optimal. Administrative oversight doesn't require vertical positioning above clinical areas. Single-floor concentration eliminates the benefits of vertical separation. Vertical stacking can work, but ICU and surgery (specialized, equipment-intensive, restricted access) should serve multiple inpatient floors efficiently. Placing them at the top isolates them from patients they serve. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location.",
-      "code_citation": null,
+      "explanation": "Functional zoning through access, privacy, service, and adjacency relationships. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -53,30 +55,33 @@
       "model_id": "ALE-THEO-009-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T15:00:17.43292+00:00",
-      "content_hash": "sha256:731dd091b2ff78726bf1e87a9be3153f9df872e165f3f346cf6e4d566e37f72c"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:58dd3d91ae8487047ee5eac05d0df5f16981ceb115b6552b703be119bed089c5",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "dd37f9ef-1b66-481d-8b06-52b2abfa191c",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "In a mixed-use building with ground-floor retail and residential units above, the program states that mechanical equipment rooms must be separated from residential units to minimize noise transmission. Which zoning strategy and buffer approach best addresses this adjacency problem?",
+      "text": "When should a candidate shift from functional zoning logic to PD 1096 occupancy classification?",
       "options": [
         {
           "id": "a",
-          "text": "Distribute mechanical rooms throughout the building adjacent to each use they serve, accepting minor noise impacts as a trade-off for convenience"
+          "text": "When the plan shows arrows."
         },
         {
           "id": "b",
-          "text": "Locate mechanical rooms in the basement or rooftop; ensure residential units are stacked vertically above retail without mechanical proximity"
+          "text": "When the stem asks for building use or character of occupancy."
         },
         {
           "id": "c",
-          "text": "Place mechanical rooms on residential floors, separated by thick walls and acoustic treatment; locate retail separately to minimize interference"
+          "text": "When a room is near an entrance."
         },
         {
           "id": "d",
-          "text": "Consolidate retail and mechanical together to reduce the number of separate zones, simplifying maintenance and operational logistics"
+          "text": "When the question mentions bubble diagrams."
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This violates the undesirable (X) adjacency requirement between mechanical and residential.",
-        "c": "Placing mechanical on residential floors increases noise impact despite wall treatment.",
-        "d": "Consolidating retail and mechanical creates different problems; retail already conflicts with residential without adding mechanical noise.",
-        "correct": "Mechanical rooms belong in service zones (basement or rooftop). Residential units stack above, with retail at ground level. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces.",
-        "takeaway": "This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces."
+        "a": "When the plan shows arrows. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "When the stem asks for building use or character of occupancy. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "c": "When a room is near an entrance. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "When the question mentions bubble diagrams. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "When the stem asks for building use or character of occupancy. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": "This violates the undesirable (X) adjacency requirement between mechanical and residential. Placing mechanical on residential floors increases noise impact despite wall treatment. Consolidating retail and mechanical creates different problems; retail already conflicts with residential without adding mechanical noise. Mechanical rooms belong in service zones (basement or rooftop). Residential units stack above, with retail at ground level. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces.",
-      "code_citation": null,
+      "explanation": "When the stem asks for building use or character of occupancy. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -105,30 +112,33 @@
       "model_id": "ALE-THEO-009-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T15:00:17.605338+00:00",
-      "content_hash": "sha256:4bb80eace20eac12952723888aedf1a70d9be4fd84d43bae7520830936547e03"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:bdf6ac97107af64d6c39c5d606dbb57dc067f3d385009f8d7ab92e4066bc273e",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "def18a61-47ba-426b-b327-ec2c1358b57d",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "What is the primary purpose of functional zoning in space planning?",
+      "text": "Which statement best separates interior functional zoning from legal zoning?",
       "options": [
         {
           "id": "a",
-          "text": "To comply with municipal zoning regulations regarding land-use classifications and density controls"
+          "text": "They are the same because both use zones."
         },
         {
           "id": "b",
-          "text": "To organize interior building spaces into operational domains based on access control, use type, and activity intensity"
+          "text": "Functional zoning organizes spaces; legal zoning or land-use compliance comes from the applicable regulatory path."
         },
         {
           "id": "c",
-          "text": "To calculate floor area ratio (FAR) and site development density for regulatory compliance"
+          "text": "Functional zoning overrides the zoning ordinance."
         },
         {
           "id": "d",
-          "text": "To establish parking requirements and transportation infrastructure needs for the development"
+          "text": "Legal zoning is only a furniture-layout issue."
         }
       ],
       "correct_option_id": "b",
@@ -137,14 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Municipal zoning is external; functional zoning is internal building organization.",
-        "c": "FAR is a density calculation; it's a consequence of zoning strategy but not its primary purpose.",
-        "d": "Parking and transportation are separate planning functions from functional zoning.",
-        "correct": "Functional zoning organizes spaces into public, semi-public, private, and service zones. This is distinct from land-use zoning and determines how users, staff, and goods move through the building and which activities are adjacent or separated.",
-        "takeaway": "This is distinct from land-use zoning and determines how users, staff, and goods move through the building and which activities are adjacent or separated."
+        "a": "They are the same because both use zones. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Functional zoning organizes spaces; legal zoning or land-use compliance comes from the applicable regulatory path. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "c": "Functional zoning overrides the zoning ordinance. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Legal zoning is only a furniture-layout issue. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Functional zoning organizes spaces; legal zoning or land-use compliance comes from the applicable regulatory path. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Functional zoning organizes spaces; legal zoning or land-use compliance comes from the applicable regulatory path. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -157,30 +169,33 @@
       "model_id": "ALE-THEO-009-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3f4ba37793fac1fb5c851ca87761ee06db79bb048ce5ce41902a8a4509a78740"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:2c6f7582e51337353a3fa21efde79fd9cc39720d7fb47d7fa485e41b8f1e75ca",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "196c3551-9f2a-4522-81e4-7ee463c3542e",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "A retail building layout places the checkout counter at the rear of the store, adjacent to the stockroom. Customers must walk through the entire retail floor to exit. What zoning and circulation inefficiency does this create?",
+      "text": "A stem asks which spaces should be separated because of noise, privacy, or service movement. What is the safest first move?",
       "options": [
         {
           "id": "a",
-          "text": "Customers are forced to see the entire inventory, potentially increasing sales through exposure, but this may also lead to congestion and reduced shopping comfort."
+          "text": "Compute a fixed FAR value."
         },
         {
           "id": "b",
-          "text": "The stockroom adjacency creates operational efficiency by minimizing staff walking distance, yet it may compromise customer service speed and accessibility."
+          "text": "Select the tallest building form."
         },
         {
           "id": "c",
-          "text": "Customers may become lost or disoriented, reducing confidence and satisfaction; checkout should be near the exit to facilitate rapid departure after purchase"
+          "text": "Analyze adjacency and performance requirements before choosing the layout."
         },
         {
           "id": "d",
-          "text": "This layout complies with code egress requirements by creating a single circulation pathway, although it may not optimize customer flow or emergency evacuation."
+          "text": "Classify the entire project as assembly."
         }
       ],
       "correct_option_id": "c",
@@ -189,14 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While customers see inventory, this benefit is secondary to circulation efficiency.",
-        "b": "Staff efficiency doesn't justify poor customer circulation; retail layout should prioritize customer flow.",
-        "d": "Code egress requires exits but does not mandate this specific configuration; zoning principles suggest different positioning.",
-        "correct": "Checkout near the exit allows customers to leave immediately after purchase. Rear-located checkout forces customers to navigate the entire store and slows customer throughput. This is a circulation inefficiency and reduces customer satisfaction. Stockroom should be semi-public or service zone, not customer-facing.",
-        "takeaway": "Stockroom should be semi-public or service zone, not customer-facing."
+        "a": "Compute a fixed FAR value. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Select the tallest building form. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Analyze adjacency and performance requirements before choosing the layout. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "d": "Classify the entire project as assembly. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Analyze adjacency and performance requirements before choosing the layout. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Analyze adjacency and performance requirements before choosing the layout. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +226,33 @@
       "model_id": "ALE-THEO-009-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4120caf00b96ef84025fd18a43c48d97b65fcb38a5d56428990f2524e4824992"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:408cbd1b2be8384d83b6b22d507deff1aa7a430b7ce120fc7ce2c2b05aed1ab4",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "20b08fc9-e37c-46e8-82e5-9b826188e2e7",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "A downtown mixed-use tower includes ground-floor retail, office floors 2–10, and residential floors 11–15. The retail and office tenants have separate entries and elevators (excellent separation). However, the residential elevator bank is located adjacent to the office elevator lobby, and residents must pass through the office lobby to access restrooms or outdoor spaces. Does this zoning and circulation strategy have problems, and what would you recommend?",
+      "text": "Why are complete room or functional-space labels important in PD 1096 permit drawings?",
       "options": [
         {
           "id": "a",
-          "text": "Mixing residential and office circulation is intentional to encourage community building and cross-use interaction, fostering a vibrant mixed-use environment"
+          "text": "They replace occupancy classification."
         },
         {
           "id": "b",
-          "text": "This is adequate; while not ideal, residents can tolerate passing through office lobbies for access to common amenities, as long as security measures are in place"
+          "text": "They guarantee the project has no code review."
         },
         {
           "id": "c",
-          "text": "This creates zoning conflict; residential semi-public spaces (elevators, corridors, amenities) should not require traversing office zone; separate residential lobby, restrooms, and outdoor access should be designed to isolate residential from office circulation"
+          "text": "They support clear identification of the spaces being designed and regulated."
         },
         {
           "id": "d",
-          "text": "The problem is unsolvable in mixed-use towers; some overlap between office and residential is inevitable and acceptable, given the constraints of urban development"
+          "text": "They remove the need for source checking."
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Planned interaction (shared café, lobby) is different from forced navigation through one zone to reach another.",
-        "b": "While residents might 'tolerate' it, requiring office zone passage violates zoning logic and compromises residential independence.",
-        "d": "Mixed-use does create complexity, but proper zoning design can minimize overlap; this problem is solvable through better space organization.",
-        "correct": "Residential and office zones have different operational patterns, security requirements, and occupancy types. If residents must pass through office lobbies for basic amenities, zoning separation has failed. The program should ensure residential has independent access to elevators, restrooms, and outdoor space without office zone traversal. This requires either separate restrooms/amenities on residential floors or a shared semi-public zone that doesn't require office lobby passage.",
-        "takeaway": "This requires either separate restrooms/amenities on residential floors or a shared semi-public zone that doesn't require office lobby passage."
+        "a": "They replace occupancy classification. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "They guarantee the project has no code review. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "They support clear identification of the spaces being designed and regulated. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "d": "They remove the need for source checking. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "They support clear identification of the spaces being designed and regulated. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "They support clear identification of the spaces being designed and regulated. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -261,30 +283,33 @@
       "model_id": "ALE-THEO-009-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:71d28ba71854e8572e61622666fd66f98628b2863890b420dfb64397c3dedaec"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:4c1d8038cd07b128bf5e3b3e2e947fbd9c5848a847f1dd31d403583365048948",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "03340d2d-31aa-4d7e-ba97-f9841c3879c3",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "Which of the following best describes a public zone in a building?",
+      "text": "A question describes public, semi-private, private, and service zones but gives no code classification issue. What answer scope fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Interior areas accessible to authorized persons only, controlled through reception or badge systems to ensure security"
+          "text": "Apply a building-height formula."
         },
         {
           "id": "b",
-          "text": "Service and infrastructure spaces designed for maintenance accessibility rather than occupant comfort, often located away from public view"
+          "text": "Treat it as a certificate of occupancy change."
         },
         {
           "id": "c",
-          "text": "Spaces accessible to all visitors and customers without restriction, typically located at entries near parking and transit"
+          "text": "Use source-safe programming and adjacency reasoning."
         },
         {
           "id": "d",
-          "text": "Areas accessible only to building staff and employees, often requiring special access permissions"
+          "text": "Use a heritage-conservation rule."
         }
       ],
       "correct_option_id": "c",
@@ -293,14 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This describes semi-public zones with access control.",
-        "b": "This describes service zones.",
-        "d": "This describes private zones or employee-restricted areas.",
-        "correct": "Public zones are accessible to all visitors without restriction. They include lobbies, retail spaces, public restrooms, and are located for visibility and access. They require clear wayfinding and comfortable conditions.",
-        "takeaway": "They require clear wayfinding and comfortable conditions."
+        "a": "Apply a building-height formula. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Treat it as a certificate of occupancy change. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Use source-safe programming and adjacency reasoning. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "d": "Use a heritage-conservation rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Use source-safe programming and adjacency reasoning. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Use source-safe programming and adjacency reasoning. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -313,30 +340,33 @@
       "model_id": "ALE-THEO-009-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:04ff14718c85b0f1faeef6780b399b6a0ad820e418183e92c6eb0f1c23df6960"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:21245ba52947de6125c399366998f50fd6cf843eaa432d206933dd758d4ea86c",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "a9b4d635-7bbf-451b-bc39-d044c1c5ee2f",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "What is a buffer space in the context of functional zoning?",
+      "text": "Which answer is least source-safe for a functional zoning item?",
       "options": [
         {
           "id": "a",
-          "text": "An undersized vestibule used for code compliance in egress pathways, often leading to congestion during emergency evacuations"
+          "text": "Separating public and controlled areas."
         },
         {
           "id": "b",
-          "text": "A parking area separating the building from the surrounding neighborhood, providing a visual and physical barrier to reduce noise and enhance privacy"
+          "text": "Checking whether the stem asks for occupancy."
         },
         {
           "id": "c",
-          "text": "A storage area for temporary holding of materials or equipment, ensuring that operational spaces remain uncluttered and efficient"
+          "text": "Using adjacency for plan relationships."
         },
         {
           "id": "d",
-          "text": "A transition zone (hallway, mechanical room, restroom) between incompatible uses providing separation and acoustic/visual privacy"
+          "text": "Claiming every hospital must place operating rooms on a fixed floor without a cited source."
         }
       ],
       "correct_option_id": "d",
@@ -345,14 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Vestibules serve egress; buffer spaces serve zone separation primarily.",
-        "b": "Parking areas are not buffer spaces in zoning terminology.",
-        "c": "Storage areas serve different functions; they're not specifically designed as zone transitions.",
-        "correct": "Buffer spaces provide transition between incompatible zones. For example, a wall of bathrooms or mechanical rooms between a public retail area and semi-public office spaces. They reduce noise transmission, prevent visual intrusion, and manage operational conflicts.",
-        "takeaway": "They reduce noise transmission, prevent visual intrusion, and manage operational conflicts."
+        "a": "Separating public and controlled areas. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Checking whether the stem asks for occupancy. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Using adjacency for plan relationships. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Claiming every hospital must place operating rooms on a fixed floor without a cited source. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "correct": "Claiming every hospital must place operating rooms on a fixed floor without a cited source. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Claiming every hospital must place operating rooms on a fixed floor without a cited source. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +397,33 @@
       "model_id": "ALE-THEO-009-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c037c7c1c950e1852e40072d335034cb0a5e98bbeec0a2a0d2feb052e0041ab9"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:fe56e3fd57511bddd0a8510b90684d6cf232491f19490fd777726769041e3b67",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "f2555048-4739-4750-95c4-e1be44f37a22",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "In a hotel, guests enter through the main lobby (public zone), staff utilize separate circulation to reach employee areas (semi-public zone), and loading occurs at the rear service entrance (service zone). This design separates three circulation flows. What is the primary benefit of this separation strategy?",
+      "text": "A site-planning item asks for functional basis as one factor. Which source family supports that framing?",
       "options": [
         {
           "id": "a",
-          "text": "It prevents operational conflicts; guest experience is not disrupted by staff movement or delivery trucks"
+          "text": "RA 9266 IRR site planning and urban design language."
         },
         {
           "id": "b",
-          "text": "It allows staff to access guest areas whenever necessary without formal security protocols, which could compromise security"
+          "text": "Only an imported real-estate manual."
         },
         {
           "id": "c",
-          "text": "It reduces the total floor area required for circulation, which is not typically the case"
+          "text": "Only a marketing brochure."
         },
         {
           "id": "d",
-          "text": "It eliminates the need for interior signage and wayfinding systems, which is not accurate"
+          "text": "Only a construction estimate."
         }
       ],
       "correct_option_id": "a",
@@ -397,14 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Separation achieves the opposite; it restricts staff access to guest areas, protecting guest privacy.",
-        "c": "Separation may increase circulation area; efficiency is not the primary goal.",
-        "d": "Signage is still necessary; separation doesn't eliminate wayfinding needs.",
-        "correct": "Separated circulation prevents guests from encountering staff activity, seeing service operations, or navigating through loading areas. This maintains guest experience quality and prevents operational conflicts (delivery trucks blocking guest access, staff presence reducing guest privacy).",
-        "takeaway": "This maintains guest experience quality and prevents operational conflicts (delivery trucks blocking guest access, staff presence reducing guest privacy)."
+        "a": "RA 9266 IRR site planning and urban design language. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "b": "Only an imported real-estate manual. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Only a marketing brochure. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Only a construction estimate. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "RA 9266 IRR site planning and urban design language. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "RA 9266 IRR site planning and urban design language. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -417,30 +454,33 @@
       "model_id": "ALE-THEO-009-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:22ba60449cb92eaf4189a0f3d2c5a04b8aa6eb0665d9c7f26b30f11ae61192ff"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:cfb74926964ac91292fbfc4c3ee25fae0737c1b3497b710146cb81e9feede875",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "91aca2d0-cf49-4ee3-bd54-352d2dc91fbe",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "A designer proposes a residential building with public lobbies on two different sides (north and south), semi-public elevator corridors on each floor, and private residential units distributed across the floor plates. Is this zoning strategy coherent, and why or why not?",
+      "text": "What should happen when a functional layout question includes a change-of-use fact?",
       "options": [
         {
           "id": "a",
-          "text": "Yes; this strategy maximizes natural light and ventilation by distributing public access points symmetrically, which can enhance the overall environmental quality of the building"
+          "text": "Ignore the change because rooms are labeled."
         },
         {
           "id": "b",
-          "text": "No; residential buildings should have only one entry point for security and operational control, ensuring that access is monitored and managed effectively"
+          "text": "Treat the drawing as a legal zoning map."
         },
         {
           "id": "c",
-          "text": "Yes; multiple public entries improve accessibility and allow residents to choose preferred routes, which can be beneficial for convenience and emergency egress"
+          "text": "Use the same answer as a pure adjacency item."
         },
         {
           "id": "d",
-          "text": "This creates zoning confusion; multiple public lobbies serve different purposes; if both serve residents, having two public entries compromises security; if one is public and one is private, the distinction should be clear in the design and program"
+          "text": "Check PD 1096 change-of-use and occupancy conformance rather than answering from layout alone."
         }
       ],
       "correct_option_id": "d",
@@ -449,14 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Light and ventilation benefits don't override security and zoning clarity requirements.",
-        "b": "One entry is not required; multiple entries can work if they serve distinct functions (resident vs. service, for example).",
-        "c": "Multiple entries for residents (same user group) undermine security; this assumes the lobbies serve the same function.",
-        "correct": "Two lobbies must serve distinct functions clearly. If both serve residents, they undermine access control and security. If one serves residents and one serves commercial/shared uses, this should be explicit in program and design. Ambiguity about zone boundaries and access creates operational and safety problems. The program should clarify what each public zone serves.",
-        "takeaway": "The program should clarify what each public zone serves."
+        "a": "Ignore the change because rooms are labeled. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Treat the drawing as a legal zoning map. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Use the same answer as a pure adjacency item. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Check PD 1096 change-of-use and occupancy conformance rather than answering from layout alone. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "correct": "Check PD 1096 change-of-use and occupancy conformance rather than answering from layout alone. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Check PD 1096 change-of-use and occupancy conformance rather than answering from layout alone. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -469,30 +511,33 @@
       "model_id": "ALE-THEO-009-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:093f1103518c029cea7d4745ae1e26d42f3171070c5524a8c01dbdcc66408bbb"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:7e88ce05ff365f4a865a9f9ef81fc2dd4efd60077ade866ac6f546ae212db6d9",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     },
     {
       "question_id": "aa6e8d0e-1856-49bc-8d83-ab45d167bea1",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "In a suburban office park, each building is surrounded by parking, with delivery trucks accessing the same parking area as employee and visitor vehicles. What zoning and circulation problem could result from this strategy?",
+      "text": "What is the practical exam rule for functional zoning?",
       "options": [
         {
           "id": "a",
-          "text": "Employee cars and delivery trucks occupy the same lot, creating conflicts; visitor experience is compromised by service vehicle presence; valet parking may be necessary"
+          "text": "Classify the question type first: adjacency, occupancy, or legal zoning."
         },
         {
           "id": "b",
-          "text": "Shared parking reduces total land consumption and cost, improving site efficiency, but may lead to congestion"
+          "text": "Always choose the most symmetrical plan."
         },
         {
           "id": "c",
-          "text": "Shared parking is best practice for suburban office parks; separation would waste land, though it may improve safety"
+          "text": "Always put all services at the top floor."
         },
         {
           "id": "d",
-          "text": "Office workers benefit from seeing operational activity; transparency improves employee morale, though it may distract from work"
+          "text": "Always answer from architectural style."
         }
       ],
       "correct_option_id": "a",
@@ -501,14 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While cost efficiency matters, it doesn't justify poor operational performance.",
-        "c": "Suburban sites often have space for separation; separation is preferable where feasible.",
-        "d": "Employees don't benefit from seeing loading activity; this isn't a benefit but a cost.",
-        "correct": "Service zone (loading) should be separated from public parking. Delivery trucks queuing, maneuvering, or loading next to visitor parking creates congestion, operational conflicts, and poor first impressions. Service circulation should be independent.",
-        "takeaway": "Service circulation should be independent."
+        "a": "Classify the question type first: adjacency, occupancy, or legal zoning. This stays inside the Batch 138 local source boundary for Functional zoning.",
+        "b": "Always choose the most symmetrical plan. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Always put all services at the top floor. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Always answer from architectural style. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Classify the question type first: adjacency, occupancy, or legal zoning. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+        "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Classify the question type first: adjacency, occupancy, or legal zoning. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,8 +568,11 @@
       "model_id": "ALE-THEO-009-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7238d6a9570ba0ede22b76bc40d2d3b7cac0fa13a736fb7d476b11b14a4e0c4f"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:acdacda2d36fe191fec4d003c1bed9cc7f74f4328657c9db706a3458693093c1",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "source_notes": "Functional zoning is treated as a programming, adjacency, and use-classification task, not as an unsupported hospital-planning formula."
     }
   ]
 }

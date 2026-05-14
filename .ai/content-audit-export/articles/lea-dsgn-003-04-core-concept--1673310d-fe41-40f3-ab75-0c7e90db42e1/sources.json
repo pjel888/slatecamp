@@ -1,56 +1,98 @@
 {
   "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:b53e48b6f9228fe366694692556959ac7e9687181b3f955eabcd0d812a387e71",
-  "source_count": 4,
+  "sources_hash": "sha256:16493065275427d437e34dd0cecc275272d8575418c48a17d152b6dc38e9d16d",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "bp220-revised-irr-2008-b071",
+      "source_id": "batch-138-lea-dsgn-003-04-core-concept-raw-source-capture",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
-      "label": "BP 220 Revised IRR 2008 - Economic and Socialized Housing Standards",
+      "label": "Batch 138 raw source capture - Senior Living and Low-Income Housing",
       "url": null,
-      "source_type": "primary_law_irr_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-071-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf; raw_pdf_sha256=sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md; refined_markdown_sha256=sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1; checked_locator=BP 220 refined markdown lines 227-231, 235-264, 291-306, and 420-465; raw PDF pages 6, 20-21, and 24-25 checked by local PyMuPDF extraction",
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Senior Living and Low-Income Housing; includes checked local source family hashes and refined conversion locators.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-12T01:00:34+08:00",
-      "updated_at": "2026-05-12T01:00:34+08:00"
+      "created_at": "2026-05-13T23:57:42.832Z",
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md",
+      "local_sha256": "sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7",
+      "checked_markdown_lines": [
+        "BP 220 Revised IRR 2008: BP 220 applies to economic and socialized housing projects and sets minimum design standards. Locator: BP 220 refined markdown lines 107-127, 147-177, 231-237, 254-293, 422-459, 600-634, and 743-745",
+        "BP 220 Revised IRR 2008: Non-saleable areas include open space, circulation, community facilities, and parks/playgrounds when required. Locator: BP 220 refined markdown lines 107-127, 147-177, 231-237, 254-293, 422-459, 600-634, and 743-745",
+        "BP 220 Revised IRR 2008: Minimum lot and floor areas are category-specific and should not be mixed across housing types. Locator: BP 220 refined markdown lines 107-127, 147-177, 231-237, 254-293, 422-459, 600-634, and 743-745",
+        "PD 1096 RIRR 2004 - DPWH Official: The Code regulates use, occupancy, location, site, design, maintenance, and conversion. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Floor plans must identify rooms or functional spaces. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Buildings are classified according to use or character of occupancy. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Change of use must conform with the Code and IRR. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+      ],
+      "local_source_families": [
+        {
+          "label": "BP 220 Revised IRR 2008",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+          "rawHash": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+          "refinedHash": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
+          "checked_locator": "BP 220 refined markdown lines 107-127, 147-177, 231-237, 254-293, 422-459, 600-634, and 743-745"
+        },
+        {
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "rawHash": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refinedHash": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 138 source capture/refined conversion boundary."
     },
     {
-      "source_id": "pd1096-rirr-2004-b071",
+      "source_id": "batch-138-lea-dsgn-003-04-core-concept-refined-source-map",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
-      "label": "PD 1096 2004 Revised IRR - National Building Code",
+      "label": "Batch 138 refined source conversion - Senior Living and Low-Income Housing",
       "url": null,
-      "source_type": "primary_law_irr_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-071-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction",
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Senior Living and Low-Income Housing.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-12T01:00:34+08:00",
-      "updated_at": "2026-05-12T01:00:34+08:00"
-    },
-    {
-      "source_id": "pd957-irr-subdivision-condominium-b071",
-      "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
-      "label": "PD 957 IRR - Subdivision and Condominium Standards",
-      "url": null,
-      "source_type": "primary_law_irr_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-071-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf; raw_pdf_sha256=sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md; refined_markdown_sha256=sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b; checked_locator=PD 957 IRR refined markdown lines 151-161, 213-224, and 258-302; raw PDF pages 11-14 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 2,
-      "created_at": "2026-05-12T01:00:34+08:00",
-      "updated_at": "2026-05-12T01:00:34+08:00"
-    },
-    {
-      "source_id": "bp344-accessibility-appendix-b071",
-      "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
-      "label": "BP 344 accessibility provisions as reproduced in the PD 1096 official appendix",
-      "url": null,
-      "source_type": "accessibility_law_appendix_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-071-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
-      "is_verified": true,
-      "sort_order": 3,
-      "created_at": "2026-05-12T01:00:34+08:00",
-      "updated_at": "2026-05-12T01:00:34+08:00"
+      "created_at": "2026-05-13T23:57:42.832Z",
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md",
+      "local_sha256": "sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7",
+      "checked_markdown_lines": [
+        "BP 220 Revised IRR 2008: BP 220 applies to economic and socialized housing projects and sets minimum design standards. Locator: BP 220 refined markdown lines 107-127, 147-177, 231-237, 254-293, 422-459, 600-634, and 743-745",
+        "BP 220 Revised IRR 2008: Non-saleable areas include open space, circulation, community facilities, and parks/playgrounds when required. Locator: BP 220 refined markdown lines 107-127, 147-177, 231-237, 254-293, 422-459, 600-634, and 743-745",
+        "BP 220 Revised IRR 2008: Minimum lot and floor areas are category-specific and should not be mixed across housing types. Locator: BP 220 refined markdown lines 107-127, 147-177, 231-237, 254-293, 422-459, 600-634, and 743-745",
+        "PD 1096 RIRR 2004 - DPWH Official: The Code regulates use, occupancy, location, site, design, maintenance, and conversion. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Floor plans must identify rooms or functional spaces. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Buildings are classified according to use or character of occupancy. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Change of use must conform with the Code and IRR. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+      ],
+      "local_source_families": [
+        {
+          "label": "BP 220 Revised IRR 2008",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+          "rawHash": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+          "refinedHash": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
+          "checked_locator": "BP 220 refined markdown lines 107-127, 147-177, 231-237, 254-293, 422-459, 600-634, and 743-745"
+        },
+        {
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "rawHash": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refinedHash": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

@@ -1,0 +1,190 @@
+{
+  "batch_id": "source-audited-article-batch-138-local-first",
+  "generated_at": "2026-05-14T00:00:36.363Z",
+  "baseline_commit": "1510e188f",
+  "branch": "3dlab-gray-viewport-bg",
+  "status": "passed_local_validation_git_handoff_pending",
+  "selection": {
+    "selected_clusters": [
+      {
+        "cluster_id": "lea-theo-009-04-core-concept",
+        "slug": "lea-theo-009-04-core-concept",
+        "title": "Functional zoning",
+        "category": "Theory",
+        "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md"
+      },
+      {
+        "cluster_id": "lea-theo-009-05-core-concept",
+        "slug": "lea-theo-009-05-core-concept",
+        "title": "Mixed-use developments",
+        "category": "Theory",
+        "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md"
+      },
+      {
+        "cluster_id": "lea-dsgn-003-04-core-concept",
+        "slug": "lea-dsgn-003-04-core-concept",
+        "title": "Senior Living and Low-Income Housing",
+        "category": "Design",
+        "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md"
+      },
+      {
+        "cluster_id": "lea-dsgn-003-06-core-concept",
+        "slug": "lea-dsgn-003-06-core-concept",
+        "title": "Dormitories and Student Housing",
+        "category": "Design",
+        "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md"
+      },
+      {
+        "cluster_id": "lea-dsgn-004-05-core-concept",
+        "slug": "lea-dsgn-004-05-core-concept",
+        "title": "Museums and cultural facilities",
+        "category": "Design",
+        "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "linked_question_count": 10,
+        "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md",
+        "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md"
+      }
+    ],
+    "blocked_clusters": [
+      {
+        "cluster_id": "lea-theo-008-02-core-concept",
+        "title": "Articulation of form",
+        "status": "blocked_carried_forward_from_batch_137",
+        "reason": "Batch 137 found local-source gaps for the required claim scope; not used for Batch 138."
+      },
+      {
+        "cluster_id": "lea-theo-008-03-core-concept",
+        "title": "Transformation of form",
+        "status": "blocked_carried_forward_from_batch_137",
+        "reason": "Batch 137 found local-source gaps for the required claim scope; not used for Batch 138."
+      }
+    ],
+    "residual_queue_exhausted": false,
+    "note": "After Batch 137 ended at lea-theo-009-03, Batch 138 selected the two remaining sourceable Theory bundles lea-theo-009-04 and lea-theo-009-05, then filled to five with sourceable non-history Design bundles."
+  },
+  "excluded_dirty_paths": [
+    ".ai/00_performance",
+    ".ai/00_system/DOCS_SOURCE_OF_TRUTH.md",
+    ".ai/README.md",
+    ".ai/content-audit-export/sync-state.json",
+    ".hermes/skills",
+    ".ai/00_system/philip-ux-ui-calibration.md",
+    "old unrelated content-roundtrip run dirs"
+  ],
+  "validations": {
+    "compose_diff_validate_passed": true,
+    "ui_block_validation_passed": true,
+    "scoped_json_parse_passed": true,
+    "marker_source_gap_scan_passed": true,
+    "source_hash_checks_passed": true,
+    "question_edit_count_passed": true,
+    "stale_compose_error_scan_passed": true,
+    "targeted_tests_passed": true,
+    "scoped_git_diff_check_passed": true
+  },
+  "articles": [
+    {
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "cluster_id": "lea-theo-009-04-core-concept",
+      "slug": "lea-theo-009-04-core-concept",
+      "title": "Functional zoning",
+      "category": "Theory",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-04-core-concept--bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:e126a925d3d5e0eed7d8a8348930bcd98e7812afb5e174ea71781d781c8aee15",
+      "candidate_hash": "sha256:e126a925d3d5e0eed7d8a8348930bcd98e7812afb5e174ea71781d781c8aee15",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    },
+    {
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "cluster_id": "lea-theo-009-05-core-concept",
+      "slug": "lea-theo-009-05-core-concept",
+      "title": "Mixed-use developments",
+      "category": "Theory",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-05-core-concept--a1df237f-7291-4549-93bd-e7ed43f27107",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:027afbaa19deab22ec3550771eb19d1adfc3d84bd96cf31f01202d8b9a89d43b",
+      "candidate_hash": "sha256:027afbaa19deab22ec3550771eb19d1adfc3d84bd96cf31f01202d8b9a89d43b",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    },
+    {
+      "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
+      "cluster_id": "lea-dsgn-003-04-core-concept",
+      "slug": "lea-dsgn-003-04-core-concept",
+      "title": "Senior Living and Low-Income Housing",
+      "category": "Design",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-003-04-core-concept--1673310d-fe41-40f3-ab75-0c7e90db42e1",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:aabb78ed3657ceeb526c3526a35d67a37baf9eeafc762bb94edbc58bf3c44a8c",
+      "candidate_hash": "sha256:aabb78ed3657ceeb526c3526a35d67a37baf9eeafc762bb94edbc58bf3c44a8c",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    },
+    {
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "cluster_id": "lea-dsgn-003-06-core-concept",
+      "slug": "lea-dsgn-003-06-core-concept",
+      "title": "Dormitories and Student Housing",
+      "category": "Design",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:653aff1285f339bded4d7c4491afb65685aedcc8e5ab075193dafa1ca9b61b33",
+      "candidate_hash": "sha256:653aff1285f339bded4d7c4491afb65685aedcc8e5ab075193dafa1ca9b61b33",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    },
+    {
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "cluster_id": "lea-dsgn-004-05-core-concept",
+      "slug": "lea-dsgn-004-05-core-concept",
+      "title": "Museums and cultural facilities",
+      "category": "Design",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:2328a378075dd21427dcf500d72ed469acc234041589dee18006f2453bed4c49",
+      "candidate_hash": "sha256:2328a378075dd21427dcf500d72ed469acc234041589dee18006f2453bed4c49",
+      "source_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md",
+      "source_capture_hash": "sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7",
+      "refined_source_map_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md",
+      "refined_source_map_hash": "sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "real_world_scenario_status": "added_source_safe",
+      "diff_safe_to_push": true
+    }
+  ],
+  "stage_paths_file": ".ai/03_plans/batch-138-git-handoff-stage-paths.txt"
+}

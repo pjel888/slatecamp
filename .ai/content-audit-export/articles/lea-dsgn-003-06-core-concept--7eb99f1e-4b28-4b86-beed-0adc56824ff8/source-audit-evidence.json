@@ -1,329 +1,302 @@
 {
-  "batch_id": "source-audited-article-batch-065-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T23:18:00.000+08:00",
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-138-local-first",
+  "batch_number": 138,
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T23:57:42.832Z",
   "target": {
     "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
     "slug": "lea-dsgn-003-06-core-concept",
     "title": "Dormitories and Student Housing",
     "article_folder": ".ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8",
-    "normalized_sha256": "sha256:297f6d04f0c8c8dd47af58ebbbe185e2d9f156e4c1b0d91b88fb870b7582dbd4",
-    "candidate_sha256": "sha256:297f6d04f0c8c8dd47af58ebbbe185e2d9f156e4c1b0d91b88fb870b7582dbd4",
+    "normalized_sha256": "sha256:653aff1285f339bded4d7c4491afb65685aedcc8e5ab075193dafa1ca9b61b33",
     "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/candidate.md"
   },
   "classification": {
-    "legal_or_code_candidate": true,
+    "topic_family": "lea-dsgn-003-06-core-concept",
+    "category": "Design",
+    "source_sensitivity": "legal_or_code_or_exam_content",
     "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "source_risk_tier": "high",
-    "source_domains": [
-      "PD 1096 dormitory and residential occupancy classification",
-      "RA 9514 hotel/dormitory fire protection",
-      "Fire Code general egress"
-    ]
+    "requires_raw_source_capture": true
   },
-  "raw_pdf_gate": {
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": false,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_source_gate": {
     "status": "PASS",
-    "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
+    "local_sources_checked_first": true,
     "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
+    "conversion_layer_root": "vitruvius-connection/002_Raw-Conversion-Layer",
     "blockers": []
   },
   "checked_sources": [
     {
-      "source_id": "pd1096-rirr-2004-occupancy-mixed-facility-local-b065",
-      "label": "PD 1096 RIRR 2004 - occupancy classification for residential, institutional, business, industrial, storage, assembly, resort, school, hospital, restaurant, and parking/loading references",
-      "authority": "DPWH official revised IRR local raw PDF conversion",
-      "source_type": "building_code_irr_pdf",
-      "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_id": "batch-138-lea-dsgn-003-06-core-concept-raw-source-capture",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "label": "Batch 138 raw source capture - Dormitories and Student Housing",
+      "url": null,
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Dormitories and Student Housing; includes checked local source family hashes and refined conversion locators.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-13T23:57:42.832Z",
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+      "local_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
       "checked_markdown_lines": [
-        "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1174-1190",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1265-1272",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1659-1667",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1681-1698",
-        "PD 1096 RIRR DPWH Official refined markdown lines 1735-1736"
+        "PD 1096 RIRR 2004 - DPWH Official: The Code regulates use, occupancy, location, site, design, maintenance, and conversion. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Floor plans must identify rooms or functional spaces. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Buildings are classified according to use or character of occupancy. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Change of use must conform with the Code and IRR. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "RA 9514 Revised IRR 2019 - Fire Code: The Fire Code defines dormitories and classifies public museums/exhibition halls as assembly when gathering thresholds apply. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466",
+        "RA 9514 Revised IRR 2019 - Fire Code: Egress, exit lighting, emergency lighting, alarms, and sprinklers depend on occupancy and scale. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466",
+        "RA 9514 Revised IRR 2019 - Fire Code: Hotel and dormitory rooms need fire-resistance separation based on sprinkler protection. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466"
       ],
-      "checked_raw_pdf_pages": [
-        "PD 1096 RIRR DPWH Official raw PDF pages 47-48",
-        "PD 1096 RIRR DPWH Official raw PDF page 53",
-        "PD 1096 RIRR DPWH Official raw PDF page 57",
-        "PD 1096 RIRR DPWH Official raw PDF page 72",
-        "PD 1096 RIRR DPWH Official raw PDF pages 101-103"
+      "local_source_families": [
+        {
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "rawHash": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refinedHash": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+        },
+        {
+          "label": "RA 9514 Revised IRR 2019 - Fire Code",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+          "rawHash": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+          "refinedHash": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+          "checked_locator": "RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466"
+        }
       ],
-      "use": "primary local source for PD 1096 occupancy and parking/loading classification checks in Batch 065",
-      "local_source_checked": true
+      "local_audit_note": "Article and question claims cite only the local Batch 138 source capture/refined conversion boundary."
     },
     {
-      "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-      "label": "RA 9514 Revised IRR 2019 - occupancy classification, mixed occupancy, assembly load, educational exits, hotel/dormitory protection, and storage egress",
-      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
-      "source_type": "fire_code_irr_pdf",
-      "source_locator": "RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_id": "batch-138-lea-dsgn-003-06-core-concept-refined-source-map",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "label": "Batch 138 refined source conversion - Dormitories and Student Housing",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Dormitories and Student Housing.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-13T23:57:42.832Z",
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+      "local_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
       "checked_markdown_lines": [
-        "RA 9514 RIRR refined markdown line 1435",
-        "RA 9514 RIRR refined markdown line 1628",
-        "RA 9514 RIRR refined markdown lines 1648-1650",
-        "RA 9514 RIRR refined markdown lines 1702 and 1807",
-        "RA 9514 RIRR refined markdown lines 2521-2591",
-        "RA 9514 RIRR refined markdown lines 3984-3994",
-        "RA 9514 RIRR refined markdown lines 4275-4303",
-        "RA 9514 RIRR refined markdown lines 5390-5476",
-        "RA 9514 RIRR refined markdown lines 6152-6200"
+        "PD 1096 RIRR 2004 - DPWH Official: The Code regulates use, occupancy, location, site, design, maintenance, and conversion. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Floor plans must identify rooms or functional spaces. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Buildings are classified according to use or character of occupancy. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Change of use must conform with the Code and IRR. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "RA 9514 Revised IRR 2019 - Fire Code: The Fire Code defines dormitories and classifies public museums/exhibition halls as assembly when gathering thresholds apply. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466",
+        "RA 9514 Revised IRR 2019 - Fire Code: Egress, exit lighting, emergency lighting, alarms, and sprinklers depend on occupancy and scale. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466",
+        "RA 9514 Revised IRR 2019 - Fire Code: Hotel and dormitory rooms need fire-resistance separation based on sprinkler protection. Locator: RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466"
       ],
-      "checked_raw_pdf_pages": [
-        "RA 9514 RIRR raw PDF page 64",
-        "RA 9514 RIRR raw PDF page 68",
-        "RA 9514 RIRR raw PDF pages 91-93",
-        "RA 9514 RIRR raw PDF page 142",
-        "RA 9514 RIRR raw PDF page 168",
-        "RA 9514 RIRR raw PDF page 171",
-        "RA 9514 RIRR raw PDF page 189"
+      "local_source_families": [
+        {
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "rawHash": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refinedHash": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+        },
+        {
+          "label": "RA 9514 Revised IRR 2019 - Fire Code",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+          "rawHash": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+          "refinedHash": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+          "checked_locator": "RA 9514 RIRR refined markdown lines 1435, 2521-2524, 2591, 2667-2687, 4087, 4479-4495, 5321-5476, and 7466"
+        }
       ],
-      "use": "primary local source for Fire Code classification, egress, alarm, sprinkler, educational, hotel/dormitory, assembly, storage, and mixed-occupancy checks in Batch 065",
-      "local_source_checked": true
-    },
-    {
-      "source_id": "pd9514-fire-code-life-safety-occupancy-local-b065",
-      "label": "Fire Code source family - general life-safety, occupancy, and egress requirements",
-      "authority": "Fire Code local raw PDF conversion",
-      "source_type": "fire_code_pdf",
-      "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
-      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
-      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
-      "checked_markdown_lines": [
-        "PD 9514 Fire Code refined markdown lines 1599-1629",
-        "PD 9514 Fire Code refined markdown lines 1655-1719",
-        "PD 9514 Fire Code refined markdown line 2654",
-        "PD 9514 Fire Code refined markdown lines 2849-2855",
-        "PD 9514 Fire Code refined markdown lines 3644-3728"
-      ],
-      "checked_raw_pdf_pages": [
-        "PD 9514 Fire Code raw PDF pages 57-63",
-        "PD 9514 Fire Code raw PDF page 111"
-      ],
-      "use": "supporting local source for general life-safety, occupancy classification, exits, warning systems, and egress checks in Batch 065",
-      "local_source_checked": true
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ],
   "claims": [
     {
-      "claim_id": "article-pd1096-dormitory",
-      "claim_text": "PD 1096 separates on-campus non-leasing dormitory uses with ten persons or fewer from larger Group B boarding, lodging, hotel, apartment, and private/off-campus dormitory uses.",
+      "claim_id": "lea-dsgn-003-06-core-concept-article-batch-138",
+      "claim_text": "Article lea-dsgn-003-06-core-concept was rewritten to the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "article_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "pd1096-rirr-2004-occupancy-mixed-facility-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 1094-1101 and 1174-1190; raw PDF pages 47, 53, and 57",
-        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "article-ra9514-dormitory",
-      "claim_text": "RA 9514 defines dormitories as group sleeping accommodations under joint occupancy and single management.",
+      "claim_id": "question-ce44e176-bd26-4981-bd9e-f050929bab11-batch-138",
+      "claim_text": "Linked question ce44e176-bd26-4981-bd9e-f050929bab11 was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "RA 9514 RIRR refined markdown line 1435; raw PDF page 64",
-        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "article-dormitory-life-safety",
-      "claim_text": "The checked Fire Code family ties dormitory safety review to exits, alarms, lighting, signs, sprinkler protection, and room separation conditions.",
+      "claim_id": "question-a463e347-42c8-4aae-b2d8-5061f30b6c23-batch-138",
+      "claim_text": "Linked question a463e347-42c8-4aae-b2d8-5061f30b6c23 was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "RA 9514 RIRR refined markdown lines 5390-5476; raw PDF page 171",
-        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "question-ce44e176-bd26-4981-bd9e-f050929bab11",
-      "claim_text": "Question edit ce44e176-bd26-4981-bd9e-f050929bab11 is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
+      "claim_id": "question-e12d0fbf-541a-465e-854b-15b507f10fa5-batch-138",
+      "claim_text": "Linked question e12d0fbf-541a-465e-854b-15b507f10fa5 was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "question-a463e347-42c8-4aae-b2d8-5061f30b6c23",
-      "claim_text": "Question edit a463e347-42c8-4aae-b2d8-5061f30b6c23 is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
+      "claim_id": "question-047113d9-ee9b-42e7-b287-d70e8f2141ee-batch-138",
+      "claim_text": "Linked question 047113d9-ee9b-42e7-b287-d70e8f2141ee was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "question-e12d0fbf-541a-465e-854b-15b507f10fa5",
-      "claim_text": "Question edit e12d0fbf-541a-465e-854b-15b507f10fa5 is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
+      "claim_id": "question-466ef5b0-3439-414f-9857-f7c1864cf01b-batch-138",
+      "claim_text": "Linked question 466ef5b0-3439-414f-9857-f7c1864cf01b was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "question-047113d9-ee9b-42e7-b287-d70e8f2141ee",
-      "claim_text": "Question edit 047113d9-ee9b-42e7-b287-d70e8f2141ee is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
+      "claim_id": "question-ea05341f-a795-46cb-8bde-f0e7f04ccfe2-batch-138",
+      "claim_text": "Linked question ea05341f-a795-46cb-8bde-f0e7f04ccfe2 was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "question-466ef5b0-3439-414f-9857-f7c1864cf01b",
-      "claim_text": "Question edit 466ef5b0-3439-414f-9857-f7c1864cf01b is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
+      "claim_id": "question-06f582c0-9937-47fe-aa98-20f9a60cc7d4-batch-138",
+      "claim_text": "Linked question 06f582c0-9937-47fe-aa98-20f9a60cc7d4 was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "question-ea05341f-a795-46cb-8bde-f0e7f04ccfe2",
-      "claim_text": "Question edit ea05341f-a795-46cb-8bde-f0e7f04ccfe2 is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
+      "claim_id": "question-d6ca925c-9231-4f63-92f2-f7e66cb862ef-batch-138",
+      "claim_text": "Linked question d6ca925c-9231-4f63-92f2-f7e66cb862ef was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "question-06f582c0-9937-47fe-aa98-20f9a60cc7d4",
-      "claim_text": "Question edit 06f582c0-9937-47fe-aa98-20f9a60cc7d4 is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
+      "claim_id": "question-6c701196-e405-4113-8f1b-cbfc2aaba98d-batch-138",
+      "claim_text": "Linked question 6c701196-e405-4113-8f1b-cbfc2aaba98d was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     },
     {
-      "claim_id": "question-d6ca925c-9231-4f63-92f2-f7e66cb862ef",
-      "claim_text": "Question edit d6ca925c-9231-4f63-92f2-f7e66cb862ef is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
+      "claim_id": "question-99542da8-2eac-4acc-b880-1fd8fa6d2b29-batch-138",
+      "claim_text": "Linked question 99542da8-2eac-4acc-b880-1fd8fa6d2b29 was rewritten inside the checked local source scope for Dormitories and Student Housing.",
+      "claim_type": "question_edit_rewrite",
       "audit_result": "PASS",
       "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
-    },
-    {
-      "claim_id": "question-6c701196-e405-4113-8f1b-cbfc2aaba98d",
-      "claim_text": "Question edit 6c701196-e405-4113-8f1b-cbfc2aaba98d is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
-    },
-    {
-      "claim_id": "question-99542da8-2eac-4acc-b880-1fd8fa6d2b29",
-      "claim_text": "Question edit 99542da8-2eac-4acc-b880-1fd8fa6d2b29 is rewritten to the Batch 065 checked local raw-source scope for lea-dsgn-003-06-core-concept.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
-      }
+        "raw_capture_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+        "raw_capture_sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387",
+        "refined_conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+        "refined_conversion_sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2",
+        "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+      },
+      "blockers": []
     }
   ],
-  "local_repairs": [
-    "Removed unsupported placeholders/internal notes and prior off-source design-rule claims from normalized.md.",
-    "Replaced linked questions with source-safe MCQ edits tied to Batch 065 raw PDF/source-family evidence.",
-    "Preserved roundtrip ownership by setting ui-blocks.json to zero extracted UI blocks and regenerating candidate via compose."
-  ],
-  "scenario_enrichment_policy": {
-    "status": "eligible-deferred",
-    "note": "Scenario enrichment policy is pending. No Real World Scenario section was blindly added; article correctness and question support remained the gate."
+  "real_world_scenario": {
+    "status": "added_source_safe",
+    "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md#sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md#sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
   },
-  "unverified_or_rejected_claims": [
-    "BP 344 dimensions, RA 9442/RA 10754 financial/service privileges, hotel star ratings, kitchen ergonomics, dock height, insulation thickness, clear height, and generic eco-tourism planning rules were excluded unless supported by the checked Batch 065 source families."
-  ],
-  "sme_review": {
-    "required_for_final_publishing": true,
-    "status": "local_source_audit_pass_pending_human_final_review"
-  },
-  "overall": {
-    "status": "PASS_LOCAL_FIRST",
-    "blockers": [],
-    "candidate_hash_matches_evidence": true,
-    "linked_question_edit_count": 10,
-    "question_edit_count": 10
-  }
+  "blocked_residuals_considered": [
+    {
+      "cluster_id": "lea-theo-008-02-core-concept",
+      "title": "Articulation of form",
+      "status": "blocked_carried_forward_from_batch_137",
+      "reason": "Batch 137 found local-source gaps for the required claim scope; not used for Batch 138."
+    },
+    {
+      "cluster_id": "lea-theo-008-03-core-concept",
+      "title": "Transformation of form",
+      "status": "blocked_carried_forward_from_batch_137",
+      "reason": "Batch 137 found local-source gaps for the required claim scope; not used for Batch 138."
+    }
+  ]
 }

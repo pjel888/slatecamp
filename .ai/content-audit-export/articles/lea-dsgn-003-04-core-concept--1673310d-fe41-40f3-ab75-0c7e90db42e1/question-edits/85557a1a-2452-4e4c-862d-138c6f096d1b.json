@@ -2,116 +2,63 @@
   "question_id": "85557a1a-2452-4e4c-862d-138c6f096d1b",
   "baseline_hash": "sha256:815728cae1e0fe7ab6ecb3f19c1911bc90b54a8260a47d13814fbe0300a5b3e8",
   "action": "replace",
-  "reason": "source-audited-article-batch-071-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or stale article claims where present.",
-  "approved_by": "codex-local-first-batch-071",
-  "approved_at": "2026-05-12T01:00:34+08:00",
+  "reason": "source-audited-article-batch-138-local-first: residual local-first rewrite constrained to checked local source artifacts for Senior Living and Low-Income Housing.",
+  "approved_by": "codex-local-first-source-audited-article-batch-138-local-first",
+  "approved_at": "2026-05-13T23:57:42.832Z",
   "source_audit_support": {
     "parent_article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
     "parent_article_slug": "lea-dsgn-003-04-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "BP 220 refined markdown lines 227-231, 235-264, 291-306, and 420-465; raw PDF pages 6, 20-21, and 24-25 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction; PD 957 IRR refined markdown lines 151-161, 213-224, and 258-302; raw PDF pages 11-14 checked by local PyMuPDF extraction; PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
-    "checked_markdown_lines": [
-      "BP 220 lines 227-231",
-      "BP 220 lines 235-264",
-      "BP 220 lines 291-306",
-      "BP 220 lines 420-465",
-      "PD 1096 lines 1088-1120",
-      "PD 1096 lines 1174-1212",
-      "PD 1096 lines 6113-6201"
-    ],
-    "checked_raw_pdf_pages": [
-      "BP 220 raw PDF pages 6, 20-21, and 24-25",
-      "PD 1096 raw PDF pages 47, 292, and 295",
-      "PD 957 IRR raw PDF pages 11-14"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
     "checked_sources": [
       {
-        "source_id": "bp220-revised-irr-2008-b071",
-        "label": "BP 220 Revised IRR 2008 - Economic and Socialized Housing Standards",
-        "source_type": "primary_law_irr_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
-        "source_locator": "BP 220 refined markdown lines 227-231, 235-264, 291-306, and 420-465; raw PDF pages 6, 20-21, and 24-25 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
-        "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1"
+        "source_id": "batch-138-lea-dsgn-003-04-core-concept-raw-source-capture",
+        "label": "Batch 138 raw source capture - Senior Living and Low-Income Housing",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md",
+        "sha256": "sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7"
       },
       {
-        "source_id": "pd1096-rirr-2004-b071",
-        "label": "PD 1096 2004 Revised IRR - National Building Code",
-        "source_type": "primary_law_irr_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
-      },
-      {
-        "source_id": "pd957-irr-subdivision-condominium-b071",
-        "label": "PD 957 IRR - Subdivision and Condominium Standards",
-        "source_type": "primary_law_irr_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md",
-        "source_locator": "PD 957 IRR refined markdown lines 151-161, 213-224, and 258-302; raw PDF pages 11-14 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
-        "refined_markdown_sha256": "sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b"
-      },
-      {
-        "source_id": "bp344-accessibility-appendix-b071",
-        "label": "BP 344 accessibility provisions as reproduced in the PD 1096 official appendix",
-        "source_type": "accessibility_law_appendix_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+        "source_id": "batch-138-lea-dsgn-003-04-core-concept-refined-source-map",
+        "label": "Batch 138 refined source conversion - Senior Living and Low-Income Housing",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md",
+        "sha256": "sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 071 checked local raw-source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 138 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "What minimum saleable lot area is needed for 300 BP 220 economic single-detached units?",
+    "text": "What should a candidate do when a BP 220 problem gives a saleable-area assumption?",
     "options": [
       {
         "id": "a",
-        "text": "16,200 sqm"
+        "text": "Use the stated assumption and then apply the correct BP 220 table values."
       },
       {
         "id": "b",
-        "text": "18,000 sqm"
+        "text": "Replace it with a memorized universal deduction."
       },
       {
         "id": "c",
-        "text": "21,600 sqm"
+        "text": "Ignore the stated assumption."
       },
       {
         "id": "d",
-        "text": "28,800 sqm"
+        "text": "Classify the project as institutional."
       }
     ],
-    "correct_option_id": "c",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
+    "correct_option_id": "a",
     "rationale": {
-      "a": "Incorrect. This option changes the source rule, value, or condition.",
-      "b": "Incorrect. This option changes the source rule, value, or condition.",
-      "c": "Correct. This option follows the checked local raw-source evidence.",
-      "d": "Incorrect. This option changes the source rule, value, or condition.",
-      "correct": "Economic single-detached units use 72 sqm per lot. 300 x 72 sqm = 21,600 sqm.",
-      "takeaway": "Use the local raw-source condition before applying the rule."
+      "a": "Use the stated assumption and then apply the correct BP 220 table values. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+      "b": "Replace it with a memorized universal deduction. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "c": "Ignore the stated assumption. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "d": "Classify the project as institutional. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "correct": "Use the stated assumption and then apply the correct BP 220 table values. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
     },
-    "explanation": "Economic single-detached units use 72 sqm per lot. 300 x 72 sqm = 21,600 sqm.",
-    "code_citation": "BP 220 refined markdown lines 227-231, 235-264, 291-306, and 420-465; raw PDF pages 6, 20-21, and 24-25 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction; PD 957 IRR refined markdown lines 151-161, 213-224, and 258-302; raw PDF pages 11-14 checked by local PyMuPDF extraction; PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
-    "bloom_level": "apply",
-    "application_context": "code_interpretation",
-    "practice_context": [
-      "source-audited-local-first-batch-071"
-    ],
-    "difficulty": 0.55,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false
-  }
+    "explanation": "Use the stated assumption and then apply the correct BP 220 table values. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
+  },
+  "batch_question_template_index": 6
 }

@@ -1,30 +1,30 @@
 {
   "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3d1431267c29c8f75404e615d89749b9570424b3e94e8d72b06c307e8f4cc0ea",
+  "linked_questions_hash": "sha256:b7f9a3e989722d51f40f0bec09dd6faede71277723c159dcfc5dad914d947dac",
   "question_count": 10,
   "questions": [
     {
       "question_id": "22890f63-7cf6-465e-97f5-14391be65452",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "A museum gallery stores 500-year-old textiles. According to NCCA conservation standards, what is the recommended lighting level and critical environmental parameter?",
+      "text": "A city museum is in a declared heritage building. Which source path should be checked first for conservation constraints?",
       "options": [
         {
           "id": "a",
-          "text": "200 lux; temperature 15–20°C, which may not be suitable for all textile types"
+          "text": "Only a retail store rule."
         },
         {
           "id": "b",
-          "text": "50 lux maximum, UV-free; humidity 45–55% RH with ±5% daily stability"
+          "text": "RA 10066 heritage conservation and agency/LGU coordination."
         },
         {
           "id": "c",
-          "text": "150 lux; humidity range 30–70%, which is too broad for sensitive materials"
+          "text": "Only a BP 220 lot table."
         },
         {
           "id": "d",
-          "text": "300 lux; temperature 24°C, potentially causing deterioration over time"
+          "text": "Only a bedroom-alarm rule."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "200 lux is too high for ancient textiles; will cause fading.",
-        "c": "Humidity range is too broad; causes dimensional instability.",
-        "d": "Lighting and temperature are both too high for long-term conservation.",
-        "correct": "Textiles are 'highly sensitive' to light. NCCA standards limit them to 50 lux and strictly UV-free. Humidity must be stable (45-55%) as fluctuations cause fiber stress.",
-        "takeaway": "Sensitive textiles: 50 lux max, 0 UV, 50% RH ±5%."
+        "a": "Only a retail store rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "RA 10066 heritage conservation and agency/LGU coordination. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "c": "Only a BP 220 lot table. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Only a bedroom-alarm rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "RA 10066 heritage conservation and agency/LGU coordination. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": "200 lux is too high for ancient textiles; will cause fading. Humidity range is too broad; causes dimensional instability. Lighting and temperature are both too high for long-term conservation. Textiles are 'highly sensitive' to light. NCCA standards limit them to 50 lux and strictly UV-free. Humidity must be stable (45-55%) as fluctuations cause fiber stress. Sensitive textiles: 50 lux max, 0 UV, 50% RH ±5%.",
-      "code_citation": "NCCA Conservation Guidelines",
+      "explanation": "RA 10066 heritage conservation and agency/LGU coordination. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,33 @@
       "model_id": "ALE-DSGN-004-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-05-06T14:56:46.144845+00:00",
-      "content_hash": "sha256:b79cbb144f147e48d95b1df4bf4802f9c3abdeaae7edadddb306c469abee2cdb"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:ed7b488d4e124657f6c11e7ca0e8239230305ab679a982dfc1b5c028ff004214",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "56d33dea-ed9e-48bc-a331-6bac8cf69231",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "Why is the occupant load for museum galleries (2.8 sqm/person) denser than general retail (18.6 sqm/person)?",
+      "text": "A museum gallery is used for public gathering of fifty or more persons. Which Fire Code classification cue applies?",
       "options": [
         {
           "id": "a",
-          "text": "Museums are Group H Assembly, requiring higher capacity, which is a classification that affects design and safety standards"
+          "text": "Single-family residential."
         },
         {
           "id": "b",
-          "text": "Gallery visitors tend to cluster at specific artifacts (concentrated occupancy) rather than being dispersed across shelves/racks."
+          "text": "Assembly occupancy."
         },
         {
           "id": "c",
-          "text": "Retail spaces have higher fire loads, necessitating more stringent safety measures and lower occupancy"
+          "text": "Economic housing."
         },
         {
           "id": "d",
-          "text": "It is to ensure the building satisfies parking requirements, which are calculated based on occupancy"
+          "text": "A-2 school dormitory."
         }
       ],
       "correct_option_id": "b",
@@ -83,14 +88,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Museums are Group A-2, not H.",
-        "c": "Fire load refers to fuel, not people density.",
-        "d": "Parking is calculated by the Building Code (PD 1096), not the Fire Code (RA 9514).",
-        "correct": "The Fire Code acknowledges that exhibition viewing is a stationary/clustered activity, requiring a denser factor (2.8) to ensure egress safety for 'pockets' of high density.",
-        "takeaway": "Factors reflect human behavior: Clustering (Museums/2.8) vs. Dispersion (Retail/18.6)."
+        "a": "Single-family residential. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Assembly occupancy. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "c": "Economic housing. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "A-2 school dormitory. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Assembly occupancy. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "explanation": "Assembly occupancy. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +108,33 @@
       "model_id": "ALE-DSGN-004-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1d2c11676c566a12afc9ed4ef872ce31c7da4f73e06487501d5f42977f4b2f65"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:2dc318214d96c4e481c81261ea41ba44df7ea6076224fb1f41054fbd46a10975",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "576558b2-20f3-499f-9207-85507686db83",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "In a 'comb' gallery layout, the central corridor is 5.0 m wide and the branching galleries are 3.5 m wide. Identify the circulation hierarchy.",
+      "text": "Which PD 1096 clue supports museum classification work?",
       "options": [
         {
           "id": "a",
-          "text": "Central spine is primary (min 3.0 m); Galleries are secondary (min 1.8 m)."
+          "text": "The occupancy tables list museums, exhibition halls, art galleries, and cultural centers in context-specific paths."
         },
         {
           "id": "b",
-          "text": "Both are primary (min 3.0 m), which suggests equal importance in circulation but does not reflect typical design hierarchy"
+          "text": "PD 1096 never mentions museums."
         },
         {
           "id": "c",
-          "text": "Central spine is primary (min 1.2 m); Galleries are tertiary (min 0.9 m), indicating a less significant role for galleries"
+          "text": "Museums are always parking structures."
         },
         {
           "id": "d",
-          "text": "Central spine is secondary; Galleries are primary, which is unusual as central corridors typically serve as main circulation routes"
+          "text": "Museums are always BP 220 projects."
         }
       ],
       "correct_option_id": "a",
@@ -133,13 +143,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Gallery branches are rarely sized the same as the main spine due to lower traffic volume.",
-        "c": "Widths are too narrow for museum standards.",
-        "correct": "In planning, the main traffic artery (spine) is Primary, while dead-end galleries or branches are Secondary. Standards require wider clearance for primary bi-directional flow.",
-        "takeaway": "Spine (Primary) = 3.0 m; Branches (Secondary) = 1.8 m."
+        "a": "The occupancy tables list museums, exhibition halls, art galleries, and cultural centers in context-specific paths. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "b": "PD 1096 never mentions museums. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Museums are always parking structures. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Museums are always BP 220 projects. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "The occupancy tables list museums, exhibition halls, art galleries, and cultural centers in context-specific paths. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "Architectural Design Standards",
+      "explanation": "The occupancy tables list museums, exhibition halls, art galleries, and cultural centers in context-specific paths. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -150,30 +163,33 @@
       "model_id": "ALE-DSGN-004-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a9e758a8771a171efe6509b2aefe40d37a60684a918fa95a946c97595b7444c9"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:039658ad77919570214799bdd0b7fcc772a86cd4b4ef6477f983d3d640074574",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "46cc4ed2-9964-4d1a-9777-6798a7410d00",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "A multi-story museum has an occupant load of 893. If the egress consists of stairs, what is the required total exit width and is an available width of 4.6 m compliant under RA 9514 (2019 IRR)?",
+      "text": "A museum has an exhibit room, lecture room, storage, and conservation workroom. What is the safest answer strategy?",
       "options": [
         {
           "id": "a",
-          "text": "Required=6,787 mm; Available=4,600 mm; NON-COMPLIANT"
+          "text": "Classify and test each space by its actual use and hazard."
         },
         {
           "id": "b",
-          "text": "Required=4,465 mm; Available=4,600 mm; COMPLIANT"
+          "text": "Use one rule for the whole building without reading the spaces."
         },
         {
           "id": "c",
-          "text": "Required=5,115 mm; Available=4,600 mm; NON-COMPLIANT"
+          "text": "Treat storage as an exhibit room."
         },
         {
           "id": "d",
-          "text": "Required=6,787 mm; Available=4,600 mm; COMPLIANT (3 exits used)"
+          "text": "Ignore the lecture room occupant load."
         }
       ],
       "correct_option_id": "a",
@@ -182,14 +198,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Uses the 'Level' factor (5.0 mm), which is only for ramps/corridors/doors.",
-        "c": "Calculation error.",
-        "d": "Having 3 exits satisfies the 'quantity' of exits (min. 3 for 501-1,000 persons) but the aggregate width is still insufficient.",
-        "correct": "For stairs, the factor is 7.6 mm/person. Calculation: 893 × 7.6 = 6,786.8 mm (6.79 m). Available 4.6 m < 6.79 m. Non-compliant.",
-        "takeaway": "Stair Egress Factor = 7.6 mm/person. Total width must be met regardless of exit count."
+        "a": "Classify and test each space by its actual use and hazard. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "b": "Use one rule for the whole building without reading the spaces. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Treat storage as an exhibit room. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Ignore the lecture room occupant load. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Classify and test each space by its actual use and hazard. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "RA 9514 2019 IRR Section 10.2.5.2",
+      "explanation": "Classify and test each space by its actual use and hazard. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -200,30 +218,33 @@
       "model_id": "ALE-DSGN-004-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7961bb1b414e3d8cba8ab5d74b0133d0f091818604a0821daae0d2ef992feda6"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:9792095e072cbd7c856209a9757886b3275deb82c96f158c4f5248c0ba0f9f49",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "fda41152-4719-4593-b403-239d26829af9",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "Under PD 1096, what occupancy group classification applies to a museum that charges admission for public gallery access?",
+      "text": "Which statement about RA 10066 is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Group E (Business/Mercantile), which includes establishments primarily engaged in retail or service"
+          "text": "It sets every museum gallery temperature."
         },
         {
           "id": "b",
-          "text": "Group A-2 (Residential/Institutional branch libraries and museums)"
+          "text": "It supports protection, conservation, promotion, and stewardship of cultural heritage."
         },
         {
           "id": "c",
-          "text": "Group H (Assembly/Public Gathering), typically for large venues like theaters and stadiums"
+          "text": "It replaces all egress rules."
         },
         {
           "id": "d",
-          "text": "Group C (Education and Recreation), which covers schools and recreational facilities"
+          "text": "It makes all cultural buildings exempt from permits."
         }
       ],
       "correct_option_id": "b",
@@ -232,14 +253,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Group E is for commercial retail; museums are institutional/exhibition spaces regardless of fees.",
-        "c": "Group H is for assembly with fixed seating or high-density stages (stadiums, theaters).",
-        "d": "Group C is strictly for educational institutions (Schools, Colleges, Day-care).",
-        "correct": "PD 1096 Rule VII Table VII.1 explicitly classifies museums and branch libraries as Group A Division 2. This is a common board exam trap where students confuse it with Group C (Schools).",
-        "takeaway": "Museum = Group A-2. School = Group C."
+        "a": "It sets every museum gallery temperature. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "It supports protection, conservation, promotion, and stewardship of cultural heritage. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "c": "It replaces all egress rules. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "It makes all cultural buildings exempt from permits. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "It supports protection, conservation, promotion, and stewardship of cultural heritage. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Rule VII Table VII.1",
+      "explanation": "It supports protection, conservation, promotion, and stewardship of cultural heritage. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -250,30 +273,33 @@
       "model_id": "ALE-DSGN-004-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d324626d2472ca87ef346a81956a4701aba245c36e0031e35602af749462c12b"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:65e7a188d99532c4b79fe26f38f2fab096b007522b0f7e2fd0637f725213f130",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "d83cb31e-d7ce-4ca2-840c-8a6e52c11416",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "A museum's non-public artifact storage room is 300 sqm. Using RA 9514 (2019 IRR), how should the occupant load for this specific space be calculated?",
+      "text": "A museum support room stores combustible supplies. Which checked source path matters?",
       "options": [
         {
           "id": "a",
-          "text": "300 sqm ÷ 2.8 = 107 occupants"
+          "text": "Only the title of the exhibit."
         },
         {
           "id": "b",
-          "text": "300 sqm ÷ 18.6 = 16 occupants"
+          "text": "Only the curatorial theme."
         },
         {
           "id": "c",
-          "text": "300 sqm ÷ 27.9 = 11 occupants"
+          "text": "RA 9514 hazardous-area separation and protection."
         },
         {
           "id": "d",
-          "text": "Excluded from building occupant load as it is non-public."
+          "text": "Only the exterior color."
         }
       ],
       "correct_option_id": "c",
@@ -282,14 +308,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect; applies gallery density to storage.",
-        "b": "Incorrect; applies residential factor.",
-        "d": "Incorrect; all areas contribute to the 'Total Occupant Load' of the building, though non-public support areas have very low densities.",
-        "correct": "RA 9514 2019 IRR Section 10.2.1.2 mandates that every part of the building be calculated by its function. Storage areas use a factor of 27.9 sqm/person (gross).",
-        "takeaway": "Storage Occupant Load Factor = 27.9 sqm/person."
+        "a": "Only the title of the exhibit. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Only the curatorial theme. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "RA 9514 hazardous-area separation and protection. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "d": "Only the exterior color. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "RA 9514 hazardous-area separation and protection. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "explanation": "RA 9514 hazardous-area separation and protection. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -300,30 +328,33 @@
       "model_id": "ALE-DSGN-004-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2e01606a8434743b298932a24f49aa143e1a7cdd6fca8bc7fa4987c4ee6d6427"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:90e69c171a306430eb4ade20d39e52f9d942e0263a299f347a1f9b3e933a02aa",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "01597131-2a97-4a01-99a6-7caa6cbcbd3b",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "What is the minimum recommended width for a primary circulation aisle in a museum gallery to allow for bi-directional traffic and viewing?",
+      "text": "Why can public access still have limits in a heritage museum?",
       "options": [
         {
           "id": "a",
-          "text": "1.2 m"
+          "text": "The public can never enter cultural property."
         },
         {
           "id": "b",
-          "text": "1.8 m"
+          "text": "Access rules replace fire safety."
         },
         {
           "id": "c",
-          "text": "3.0 m"
+          "text": "RA 10066 allows public access subject to reasonable conservation, maintenance, and schedule controls."
         },
         {
           "id": "d",
-          "text": "2.0 m"
+          "text": "Only donors can inspect the site."
         }
       ],
       "correct_option_id": "c",
@@ -332,14 +363,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Minimum for standard corridors, but inadequate for gallery viewing depth.",
-        "b": "Minimum for secondary aisles where viewing is one-sided or traffic is low.",
-        "d": "Minimum for general public corridors but lacks optimal viewing clearances.",
-        "correct": "Architectural design standards (Neufert/Time-Saver) recommend 3.0 m for primary aisles. This allows ~1.5 m of viewing space on each side without blocking a 1.2 m - 1.5 m central through-traffic lane.",
-        "takeaway": "Primary Gallery Aisle = 3.0 m; Secondary Aisle = 1.8 m."
+        "a": "The public can never enter cultural property. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Access rules replace fire safety. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "RA 10066 allows public access subject to reasonable conservation, maintenance, and schedule controls. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "d": "Only donors can inspect the site. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "RA 10066 allows public access subject to reasonable conservation, maintenance, and schedule controls. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "Architectural Design Standards (Gallery Planning)",
+      "explanation": "RA 10066 allows public access subject to reasonable conservation, maintenance, and schedule controls. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -350,30 +383,33 @@
       "model_id": "ALE-DSGN-004-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dd1f4326079951e3af6acbb6526d2d1fd87b89996f24736396e56f7f9cc723fe"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:72cad7029ac1f39b5378afd9a9d26a55fb28234023cf18dc9275d5bffbbf66bb",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "7e9c9f02-6699-4b60-8e98-449086541a45",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "A museum gallery covers 4,000 sqm (gross). Using RA 9514 (2019 IRR) Table 10.2.7.3.1, calculate the occupant load for the gallery.",
+      "text": "What makes a museum question overclaimed?",
       "options": [
         {
           "id": "a",
-          "text": "215 occupants"
+          "text": "Checking assembly occupancy."
         },
         {
           "id": "b",
-          "text": "1,429 occupants"
+          "text": "Adding exhibit-area ratios, climate-control rules, or planning formulas outside the checked source boundary."
         },
         {
           "id": "c",
-          "text": "870 occupants"
+          "text": "Checking heritage conservation status."
         },
         {
           "id": "d",
-          "text": "2,857 occupants"
+          "text": "Checking hazardous support spaces."
         }
       ],
       "correct_option_id": "b",
@@ -382,14 +418,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Uses the wrong factor (~18.6 sqm) intended for general residential.",
-        "c": "Uses the factor for concentrated standing (approx 4.6 sqm).",
-        "d": "Uses the factor for concentrated assembly (approx 1.4 sqm).",
-        "correct": "RA 9514 Table 10.2.7.3.1 (2019) factor for 'Exhibits' is 2.8 sqm/person (gross). 4,000 sqm ÷ 2.8 = 1,428.57, rounded up to 1,429.",
-        "takeaway": "Exhibition Space Factor = 2.8 sqm per person."
+        "a": "Checking assembly occupancy. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Adding exhibit-area ratios, climate-control rules, or planning formulas outside the checked source boundary. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "c": "Checking heritage conservation status. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Checking hazardous support spaces. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Adding exhibit-area ratios, climate-control rules, or planning formulas outside the checked source boundary. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "explanation": "Adding exhibit-area ratios, climate-control rules, or planning formulas outside the checked source boundary. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -400,30 +438,33 @@
       "model_id": "ALE-DSGN-004-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:af7a4db98d4e0106fe117626786e1ebeb224c19ee7cab24bf054c2f02c7d6e3a"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:e744c91ceb9d6cdd456bd0b8e78c71e98b2d2b20facdfdc214cdb0c59d1a439e",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "2037c278-7f67-4dfb-9e53-26a2ab5c3a4f",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "A museum has 4,000 sqm of galleries and 600 sqm of storage. Calculate the Total Building Occupant Load for egress design.",
+      "text": "A small branch museum is incidental to a residential or mixed-use building. What should the candidate do?",
       "options": [
         {
           "id": "a",
-          "text": "1,429 occupants"
+          "text": "Always classify it as the largest assembly group."
         },
         {
           "id": "b",
-          "text": "1,451 occupants"
+          "text": "Use the actual stem facts to decide whether it is accessory, assembly, institutional, or another occupancy path."
         },
         {
           "id": "c",
-          "text": "1,643 occupants"
+          "text": "Ignore the occupancy because it is cultural."
         },
         {
           "id": "d",
-          "text": "2,000 occupants"
+          "text": "Apply a dormitory rule."
         }
       ],
       "correct_option_id": "b",
@@ -432,14 +473,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Omits the storage staff occupancy.",
-        "c": "Uses the dense gallery factor for the storage area.",
-        "d": "Calculation error.",
-        "correct": "1. Gallery: 4,000 ÷ 2.8 = 1,429. 2. Storage: 600 ÷ 27.9 = 21.5 ≈ 22. Total = 1,429 + 22 = 1,451 occupants.",
-        "takeaway": "Sum all occupancies using their respective factors (2.8 for galleries, 27.9 for storage)."
+        "a": "Always classify it as the largest assembly group. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Use the actual stem facts to decide whether it is accessory, assembly, institutional, or another occupancy path. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "c": "Ignore the occupancy because it is cultural. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Apply a dormitory rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Use the actual stem facts to decide whether it is accessory, assembly, institutional, or another occupancy path. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "RA 9514 2019 IRR Section 10.2.1.2",
+      "explanation": "Use the actual stem facts to decide whether it is accessory, assembly, institutional, or another occupancy path. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -450,30 +493,33 @@
       "model_id": "ALE-DSGN-004-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1f98dd1ca4e6e85263ea37635929b3ff50f13053a160fd3a7e6529cebde36255"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:f05ceb76f23073c16e60122947bf967b3f1d7668af1f1fd18c0834d052baca90",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     },
     {
       "question_id": "552f6056-2871-48a2-870c-6dd412f519a6",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
       "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "A museum storage room fluctuations from 45% RH to 52% RH in 12 hours. Evaluate compliance with NCCA stability standards.",
+      "text": "What is the exam sequence for museums and cultural facilities?",
       "options": [
         {
           "id": "a",
-          "text": "COMPLIANT; remains within 45–55% range and does not exceed daily tolerance limits."
+          "text": "Start with a souvenir-shop assumption."
         },
         {
           "id": "b",
-          "text": "NON-COMPLIANT; fluctuation of 7% exceeds the ±5% daily tolerance."
+          "text": "Check heritage status, classify occupancy, test assembly egress/alarms, and separate hazardous support spaces."
         },
         {
           "id": "c",
-          "text": "COMPLIANT; ±10% variation is allowed for non-organic items stored in climate-controlled vaults."
+          "text": "Use BP 220 socialized housing values."
         },
         {
           "id": "d",
-          "text": "COMPLIANT; textiles are only affected by temperature, not RH, so humidity variance is irrelevant."
+          "text": "Answer from style alone."
         }
       ],
       "correct_option_id": "b",
@@ -482,14 +528,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "End-points are in range, but the rate of change is too high.",
-        "c": "Inaccurate; ±10% is dangerous for almost all artifacts.",
-        "d": "Textiles are hygroscopic; RH is their primary threat for dimensional damage.",
-        "correct": "Stability is more important than the absolute value. NCCA limits daily swings to ±5% RH to prevent the physical expansion/contraction of sensitive organic fibers.",
-        "takeaway": "Stability Rule: RH must not swing more than ±5% in a 24-hour cycle."
+        "a": "Start with a souvenir-shop assumption. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Check heritage status, classify occupancy, test assembly egress/alarms, and separate hazardous support spaces. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+        "c": "Use BP 220 socialized housing values. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Answer from style alone. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Check heritage status, classify occupancy, test assembly egress/alarms, and separate hazardous support spaces. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+        "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       },
-      "explanation": null,
-      "code_citation": "NCCA Standards",
+      "explanation": "Check heritage status, classify occupancy, test assembly egress/alarms, and separate hazardous support spaces. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [],
@@ -500,8 +548,11 @@
       "model_id": "ALE-DSGN-004-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4248602196dd6d9b8ea686bff526999bac40b40adad512bfa01a61616093d011"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:f101e171c55e9efcf791679defc1f8b7ec2320d270c7056480db39927e3bbe40",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
+      "source_notes": "Museum and cultural-facility claims are limited to heritage-conservation scope, occupancy classification, assembly life safety, and public-access boundaries."
     }
   ]
 }

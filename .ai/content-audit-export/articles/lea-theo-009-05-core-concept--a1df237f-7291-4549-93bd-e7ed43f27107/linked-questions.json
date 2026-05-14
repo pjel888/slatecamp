@@ -1,30 +1,30 @@
 {
   "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:296a1b391c6b04f01dab0db26b49c78a7e1fadc431471cc34f0ae802cc13e0f7",
+  "linked_questions_hash": "sha256:2c61bc5f9b3ccf6405dc92d727c9aa51eb2c312472aa0f0cea1e910b67e1c863",
   "question_count": 10,
   "questions": [
     {
       "question_id": "dbd3fac4-a900-4772-bf0b-d6cd00a5365a",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "A mixed-use development on a 60,000 SF urban site is programmed as a 10-story podium-tower. Ground floors 1–3 are retail (70,000 NSF); floors 4–10 are office (140,000 NSF). If the total GBA is calculated as 300,000 SF, what is the floor area ratio (FAR)?",
+      "text": "A PUD proposal combines housing, retail, open space, and community services. What should the candidate check first?",
       "options": [
         {
           "id": "a",
-          "text": "FAR = 3.0"
+          "text": "A fixed podium-tower formula."
         },
         {
           "id": "b",
-          "text": "FAR = 7.5"
+          "text": "Only the facade material."
         },
         {
           "id": "c",
-          "text": "FAR = 10.0"
+          "text": "Only the developer brand."
         },
         {
           "id": "d",
-          "text": "FAR = 5.0"
+          "text": "The uses, site suitability, zoning alignment, and land-use allocation before form assumptions."
         }
       ],
       "correct_option_id": "d",
@@ -33,13 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "FAR = 3.0 would result from 180,000 GBA; recheck calculation.",
-        "b": "FAR = 7.5 would result from 450,000 GBA; too high for this project.",
-        "c": "FAR = 10.0 would result from 600,000 GBA; double the stated GBA.",
-        "correct": "FAR = Total GBA ÷ Site Area = 300,000 SF ÷ 60,000 SF = 5.0. FAR of 5.0 indicates high-density urban development; FAR ranges 8–12 in dense city centers, 4–6 in mid-density urban, 1–2 in suburban contexts."
+        "a": "A fixed podium-tower formula. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Only the facade material. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Only the developer brand. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "The uses, site suitability, zoning alignment, and land-use allocation before form assumptions. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "correct": "The uses, site suitability, zoning alignment, and land-use allocation before form assumptions. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": "FAR = 3.0 would result from 180,000 GBA; recheck calculation. FAR = 7.5 would result from 450,000 GBA; too high for this project. FAR = 10.0 would result from 600,000 GBA; double the stated GBA. FAR = Total GBA ÷ Site Area = 300,000 SF ÷ 60,000 SF = 5.0. FAR of 5.0 indicates high-density urban development; FAR ranges 8–12 in dense city centers, 4–6 in mid-density urban, 1–2 in suburban contexts.",
-      "code_citation": null,
+      "explanation": "The uses, site suitability, zoning alignment, and land-use allocation before form assumptions. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -52,30 +55,33 @@
       "model_id": "ale-theo-009-05-q05",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T15:46:05.730835+00:00",
-      "content_hash": "sha256:2633e9580d2ec38a17af3f307976f390c1a80eb26aeb8deb045e4e86abb99501"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:b57d2cdbe2257f652a5d48798b4162b155afcdecd91329bc5c884a746b035d45",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "142509a3-4f94-49c4-8ae8-b87768def2ee",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "In a mixed-use tower, retail hours are 7 AM–10 PM; office hours are 7 AM–6 PM weekdays; residential occupancy is 24/7. What operational challenges does this programming create, and how should they be managed?",
+      "text": "Which statement about mixed-use is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "No challenges; each occupancy type is independent; separate hours reduce overlap and conflict, ensuring smooth operation without additional management"
+          "text": "Mixed-use always requires four basement levels."
         },
         {
           "id": "b",
-          "text": "Loading, trash collection, and HVAC must accommodate retail operating past office hours; these systems must be scheduled and isolated to avoid residential disturbance during night hours"
+          "text": "PUD guidance supports integrated residential, commercial, recreational, and other uses when planned and regulated properly."
         },
         {
           "id": "c",
-          "text": "Residents will be disturbed by retail activity every night; this is unavoidable in mixed-use towers, and requires soundproofing and strategic scheduling to mitigate impact"
+          "text": "Mixed-use is only allowed as a shopping mall."
         },
         {
           "id": "d",
-          "text": "Separate elevators eliminate all operational conflicts; no additional programming is needed, as each function operates independently without interference"
+          "text": "Mixed-use removes the need for occupancy classification."
         }
       ],
       "correct_option_id": "b",
@@ -84,13 +90,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Different hours create timing conflicts for building systems; these must be coordinated.",
-        "c": "Careful programming and design can minimize disturbance; it's not simply unavoidable.",
-        "d": "Separate elevators address circulation conflicts but not operational system scheduling.",
-        "correct": "Building systems (loading, service, mechanical) must run during retail hours (until 10 PM), but residents occupy 24/7. The program must specify: loading dock hours (restrict to 6 AM–9 PM weekdays); trash collection timing (avoid peak residential sleep hours); mechanical operations (24-hour capacity for residential HVAC while supporting retail operating hours)."
+        "a": "Mixed-use always requires four basement levels. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "PUD guidance supports integrated residential, commercial, recreational, and other uses when planned and regulated properly. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "c": "Mixed-use is only allowed as a shopping mall. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Mixed-use removes the need for occupancy classification. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "PUD guidance supports integrated residential, commercial, recreational, and other uses when planned and regulated properly. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PUD guidance supports integrated residential, commercial, recreational, and other uses when planned and regulated properly. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -103,30 +112,33 @@
       "model_id": "ale-theo-009-05-q06",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7ab41004a3b1b22832b552a7f97d2a2ac272dcf3508dad4c6da781dc76c8a8dd"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:08f54e32f04028db839d631eaec3a99c86cd9eba56f6e17c7e204a2f2c47cb7b",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "20ebf1c8-0815-4691-8154-c621de17272a",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "What is the primary distinction between horizontal and vertical mixed-use development?",
+      "text": "A question asks whether an old building can shift from residential to commercial use. Which control matters?",
       "options": [
         {
           "id": "a",
-          "text": "Horizontal mixed-use is multi-story; vertical mixed-use is single-story, which is a common misconception"
+          "text": "A design-trend preference."
         },
         {
           "id": "b",
-          "text": "Horizontal mixes uses side-by-side typically on the same level; vertical stacks incompatible uses on different floors"
+          "text": "PD 1096 change-of-use and occupancy conformance."
         },
         {
           "id": "c",
-          "text": "Horizontal is a pedestrian-oriented development; vertical requires automobile access, often due to zoning constraints"
+          "text": "A bubble diagram alone."
         },
         {
           "id": "d",
-          "text": "Horizontal requires more parking; vertical requires less parking due to shared facilities and integrated design"
+          "text": "An assumed market premium."
         }
       ],
       "correct_option_id": "b",
@@ -135,13 +147,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Both horizontal and vertical can be multi-story; the distinction is about arrangement direction.",
-        "c": "Pedestrian orientation relates to urban context, not the arrangement strategy itself.",
-        "d": "Parking relates to development intensity, not the mixing strategy.",
-        "correct": "Horizontal mixed-use arranges distinct programs side-by-side (e.g., retail shops, dining, entertainment on a single floor). Vertical mixed-use stacks programs on different levels (e.g., retail ground floor, office above, residential higher). Each configuration presents different spatial and circulation challenges."
+        "a": "A design-trend preference. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "PD 1096 change-of-use and occupancy conformance. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "c": "A bubble diagram alone. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "An assumed market premium. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "PD 1096 change-of-use and occupancy conformance. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 change-of-use and occupancy conformance. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -154,30 +169,33 @@
       "model_id": "ale-theo-009-05-q01",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:39a9ec1f57c496eee4969ae7e126a380f57ed623733d131174b68cc95624769b"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:246b0fba3b77758ebbafef151412dac0bcfc08ff72bef129ea4c359c712afb39",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "f83a4cc7-d827-4b82-8ced-1272a46814f3",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "A mixed-use development has shared basement parking for retail customers, office workers, and residents. Peak parking demand occurs at: retail (mid-day, 2–4 hours); office (8 AM–6 PM, 8 hours); residential (evening/night, overnight). What is the advantage of this shared parking arrangement, and what risk must the program address?",
+      "text": "What does the 15-minute-city cue usually point to in the checked PUD source?",
       "options": [
         {
           "id": "a",
-          "text": "Shared parking reduces total spaces required because demand peaks don't overlap; the program must ensure separate management and valet systems prevent conflicts"
+          "text": "Access to daily needs through compact, walkable, mixed-use planning."
         },
         {
           "id": "b",
-          "text": "Shared parking is impossible; each occupancy type must have separate parking areas and entry points to avoid any potential conflicts"
+          "text": "A mandatory building shape."
         },
         {
           "id": "c",
-          "text": "Shared parking reduces cost; no additional programming is needed beyond standard lot design, which simplifies the development process"
+          "text": "A required facade style."
         },
         {
           "id": "d",
-          "text": "Shared parking increases conflicts; separate parking for each use is always preferable even if it requires additional site area, ensuring no overlap in usage"
+          "text": "A single occupancy group."
         }
       ],
       "correct_option_id": "a",
@@ -186,13 +204,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Shared parking can work when peaks don't overlap; this is a viable programming strategy.",
-        "c": "Shared parking requires careful operational programming; assuming 'standard design' ignores the management complexity.",
-        "d": "While separate parking simplifies operations, it's not always preferable; shared parking is legitimate if programmed carefully.",
-        "correct": "Staggered demand allows shared parking in mixed-use: retail peaks mid-day; office peaks during business hours; residential peaks evening/night. Shared basement reduces total spaces (saving land and cost). However, the program must specify separate management, potential dynamic allocation systems, and operational protocols to prevent resident complaints about daytime congestion or customer confusion."
+        "a": "Access to daily needs through compact, walkable, mixed-use planning. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "b": "A mandatory building shape. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "A required facade style. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "A single occupancy group. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Access to daily needs through compact, walkable, mixed-use planning. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Access to daily needs through compact, walkable, mixed-use planning. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -205,30 +226,33 @@
       "model_id": "ale-theo-009-05-q08",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:11dfbbc1adf9a8a86a57e0437d590c70e2a1f4db601efc2e5a270029f6fc4299"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:03db4a8cb3840821f0434470842075c330e95bba20f45ba6b94abc616009e328",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "e8d946c1-00dc-4e42-8853-06b0aac919b2",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "What is the primary purpose of circulation separation in mixed-use buildings?",
+      "text": "Which is the safest answer when a mixed-use stem gives no parking or FAR rule?",
       "options": [
         {
           "id": "a",
-          "text": "To prevent functional conflicts between distinct occupancy types by providing separate elevators, lobbies, and entry points"
+          "text": "Do not invent a number; answer from the provided source-controlled planning or occupancy issue."
         },
         {
           "id": "b",
-          "text": "To reduce total building circulation area and decrease construction cost, which is not the primary goal"
+          "text": "Apply a memorized parking ratio."
         },
         {
           "id": "c",
-          "text": "To increase building perimeter and maximize frontage for retail tenants, which is not typically a consideration"
+          "text": "Assume all parking is illegal."
         },
         {
           "id": "d",
-          "text": "To simplify wayfinding and signage by limiting the number of public areas, which is not the main purpose"
+          "text": "Ignore the stated uses."
         }
       ],
       "correct_option_id": "a",
@@ -237,13 +261,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Separation may increase circulation area; cost reduction is not the primary goal.",
-        "c": "Perimeter activation is a building design strategy, not a circulation separation purpose.",
-        "d": "Separation typically requires more wayfinding, not less.",
-        "correct": "Separate circulation (elevators, lobbies, entries) for retail customers, office workers, and residents prevents conflicts: customers don't encounter residential security checkpoints; residents don't navigate retail crowds; office workers don't traverse public shopping areas. This maintains each group's operational independence."
+        "a": "Do not invent a number; answer from the provided source-controlled planning or occupancy issue. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "b": "Apply a memorized parking ratio. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Assume all parking is illegal. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Ignore the stated uses. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Do not invent a number; answer from the provided source-controlled planning or occupancy issue. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Do not invent a number; answer from the provided source-controlled planning or occupancy issue. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -256,30 +283,33 @@
       "model_id": "ale-theo-009-05-q03",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:489db7c7320a67a1d1c4879f80a357674654f18f9a2c20346bbae9f0409fe4eb"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:ae7fe8b3776306e6b00883038d7024fa90e66539191c7ee05625e9ae1f51a511",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "a0e8b92f-2abf-44d3-9232-6e4f781b405f",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "The podium-tower typology is characteristic of contemporary urban development in Asian cities. Which building elements define this typology?",
+      "text": "A site-selection item asks for residential and commercial demand. Which source path supports that?",
       "options": [
         {
           "id": "a",
-          "text": "A tower set on a plaza with parking garage in the basement only, which limits the use of above-ground space"
+          "text": "A fire alarm table."
         },
         {
           "id": "b",
-          "text": "A low-rise podium (typically 2–5 stories) with ground-level retail and civic functions, and a high-rise tower above containing office or residential"
+          "text": "The PUD guideline market-demand and site-selection criteria."
         },
         {
           "id": "c",
-          "text": "A single integrated structure with no height variation or functional separation, which is not typical of the podium-tower typology"
+          "text": "A museum conservation rule."
         },
         {
           "id": "d",
-          "text": "A residential base with commercial tower above, which reverses the typical podium-tower arrangement"
+          "text": "A structural load table."
         }
       ],
       "correct_option_id": "b",
@@ -288,13 +318,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Podium-towers have basement parking but this alone doesn't define the form.",
-        "c": "Single integrated structures are not podium-towers; the typology requires distinct base and top.",
-        "d": "Podium-tower mixes uses; this doesn't specify the correct arrangement (retail/civic below, office/residential above).",
-        "correct": "The podium-tower has a low-rise base activating street frontage and public space, with a high-rise tower above. This typology maximizes ground-level activation and urban vitality while achieving density and economic return in the tower. It's dominant in Manila and other Asian cities."
+        "a": "A fire alarm table. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "The PUD guideline market-demand and site-selection criteria. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "c": "A museum conservation rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "A structural load table. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "The PUD guideline market-demand and site-selection criteria. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The PUD guideline market-demand and site-selection criteria. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -307,30 +340,33 @@
       "model_id": "ale-theo-009-05-q02",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:442e235772f8bfb6a0abd1c31440ec6510880ff90f18179cfa1fbfc1e6e402c5"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:8f3d1b7ec84c871b7bcaac81e4341162ad3a3694fa105d3a484809a892def482",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "81895dd8-26b7-40aa-9da9-225de4372c3c",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "A mixed-use program includes: 100,000 NSF retail (efficiency factor 0.70), 150,000 NSF office (efficiency factor 0.80), 120,000 NSF residential (efficiency factor 0.75), and 50,000 SF parking (as built). Calculate total GBA.",
+      "text": "Why is mixed-use not one automatic PD 1096 classification?",
       "options": [
         {
           "id": "a",
-          "text": "540,357 GSF"
+          "text": "Each building or space may have its own use or character of occupancy."
         },
         {
           "id": "b",
-          "text": "620,000 GSF"
+          "text": "Because PD 1096 has no occupancies."
         },
         {
           "id": "c",
-          "text": "420,000 GSF"
+          "text": "Because mixed-use is only a zoning slogan."
         },
         {
           "id": "d",
-          "text": "480,000 GSF"
+          "text": "Because all uses become residential."
         }
       ],
       "correct_option_id": "a",
@@ -339,13 +375,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This overestimates; verify efficiency factors and their application.",
-        "c": "This underestimates GBA; efficiency factors must be applied correctly.",
-        "d": "This underestimates; recheck calculations for each use type.",
-        "correct": "Retail GBA = 100,000 ÷ 0.70 = 142,857 SF. Office GBA = 150,000 ÷ 0.80 = 187,500 SF. Residential GBA = 120,000 ÷ 0.75 = 160,000 SF. Parking = 50,000 SF (as-built, not divided). Total = 142,857 + 187,500 + 160,000 + 50,000 = 540,357 SF."
+        "a": "Each building or space may have its own use or character of occupancy. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "b": "Because PD 1096 has no occupancies. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Because mixed-use is only a zoning slogan. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Because all uses become residential. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Each building or space may have its own use or character of occupancy. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Each building or space may have its own use or character of occupancy. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -358,30 +397,33 @@
       "model_id": "ale-theo-009-05-q04",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3b60d47e961a07c5d34669ba702d876dd67a17cfb7b0e8d97049cc57d5078088"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:740dca7a5c89f4059533550b096362eff235b474e36478cea73690ff69d1aba9",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "657c7ba8-2ba9-4c79-a49b-d7a745b2a439",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "A nightclub is proposed for the ground floor of a residential tower. A designer argues that excellent acoustic isolation and sound-absorbing materials will allow this adjacency. Is this argument sufficient, and why or why not?",
+      "text": "Which planning step fits a mixed-use PUD before implementation?",
       "options": [
         {
           "id": "a",
-          "text": "No; the tower should not include residential at all if ground-floor commercial includes nightclub, as this violates zoning laws and residential comfort standards"
+          "text": "Choose a logo color."
         },
         {
           "id": "b",
-          "text": "Yes; nightclubs are common ground-floor uses; this is normal mixed-use development practice, provided that all local ordinances are strictly followed"
+          "text": "Assume universal commercial dominance."
         },
         {
           "id": "c",
-          "text": "Yes; modern acoustic technology can sufficiently isolate noise so residents are unaffected, assuming all materials meet the highest industry standards"
+          "text": "Skip regulatory review."
         },
         {
           "id": "d",
-          "text": "No; nightclubs operating at 105–108 dB require separation beyond acoustic treatment; residential below nightclubs violates building code and practical standards; nightclub should be relocated to a separate building or lower basement level"
+          "text": "Check zoning, land-use plans, stakeholders, site conditions, and market needs."
         }
       ],
       "correct_option_id": "d",
@@ -390,13 +432,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Residential can coexist with commercial if uses are compatible and properly separated; mixed-use isn't inherently problematic.",
-        "b": "While ground-floor retail is common, nightclubs specifically create noise conflicts that make them inappropriate for residential adjacency.",
-        "c": "Modern acoustics help but cannot overcome the fundamental conflict; separation is more effective than treatment.",
-        "correct": "Nightclub noise (105+ dB) is extreme; acoustic treatment alone cannot achieve adequate isolation for residential rest. Code typically requires separation or prohibition. incompatible uses must be separated; nightclub below residential violates program logic and is unacceptable even with treatment. Relocation to separate building or basement (isolated from residential) is proper solution."
+        "a": "Choose a logo color. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Assume universal commercial dominance. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Skip regulatory review. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Check zoning, land-use plans, stakeholders, site conditions, and market needs. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "correct": "Check zoning, land-use plans, stakeholders, site conditions, and market needs. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": "Residential can coexist with commercial if uses are compatible and properly separated; mixed-use isn't inherently problematic. While ground-floor retail is common, nightclubs specifically create noise conflicts that make them inappropriate for residential adjacency. Modern acoustics help but cannot overcome the fundamental conflict; separation is more effective than treatment. Nightclub noise (105+ dB) is extreme; acoustic treatment alone cannot achieve adequate isolation for residential rest. Code typically requires separation or prohibition. incompatible uses must be separated; nightclub below residential violates program logic and is unacceptable even with treatment. Relocation to separate building or basement (isolated from residential) is proper solution.",
-      "code_citation": null,
+      "explanation": "Check zoning, land-use plans, stakeholders, site conditions, and market needs. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "analyze",
       "application_context": "design_application",
       "practice_context": [
@@ -409,30 +454,33 @@
       "model_id": "ale-theo-009-05-q07",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-05-06T15:46:05.870645+00:00",
-      "content_hash": "sha256:2fc8584b5a71615d66c69b51486fc10307feb4d7ffe6b99a2b02986939c0eed2"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:e8d4fd0ca693bc58b5a7b5a6e68c737d934d9ab46770a9d5e7fbd839a7e8d892",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "d8b9d1ea-7e7e-4297-86e7-4484c68a58ad",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "A Manila mixed-use development proposal includes: 100,000 SF retail podium, 200,000 SF office tower, and 150,000 SF residential tower on a 40,000 SF lot. Calculate the FAR. Is this development density appropriate for an urban context, and what programming considerations should be addressed?",
+      "text": "What makes a mixed-use answer overclaimed?",
       "options": [
         {
           "id": "a",
-          "text": "FAR = 11.25; appropriate for dense urban context; programming must carefully address circulation separation, noise conflicts between retail and residential, parking integration, and service access to avoid operational chaos"
+          "text": "Adding exact development rules or market outcomes not present in the local source family."
         },
         {
           "id": "b",
-          "text": "FAR = 5.0; appropriate but underutilizes the site; could accommodate additional program elements such as green spaces or community facilities to enhance livability."
+          "text": "Identifying compatible uses."
         },
         {
           "id": "c",
-          "text": "FAR = 12.5; too dense; the site cannot support this intensity; reduce program scope or increase site area to comply with zoning regulations and ensure adequate infrastructure support."
+          "text": "Checking land-use allocation."
         },
         {
           "id": "d",
-          "text": "FAR = 8.75; appropriate for urban Manila; standard mixed-use programming will suffice, but additional considerations for pedestrian flow and public transport access may be beneficial."
+          "text": "Classifying occupancies."
         }
       ],
       "correct_option_id": "a",
@@ -441,13 +489,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "FAR calculations and program scope assessment are correct, but density is not necessarily underutilized.",
-        "c": "FAR of 8.75 is not excessive for Manila urban context; it's within appropriate range.",
-        "d": "While density is appropriate, 'standard programming will suffice' ignores the complexity at this intensity.",
-        "correct": "FAR = 450,000 SF ÷ 40,000 SF = 11.25. This is appropriate for dense urban Manila (FAR 8–12 typical). However, this intensity requires sophisticated programming: separate circulation (retail entry separate from residential/office); retail-residential noise mitigation; service circulation (loading, trash, mechanical) independent from public/residential; parking integrated without creating conflicts. Standard programming is insufficient."
+        "a": "Adding exact development rules or market outcomes not present in the local source family. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "b": "Identifying compatible uses. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Checking land-use allocation. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Classifying occupancies. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Adding exact development rules or market outcomes not present in the local source family. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Adding exact development rules or market outcomes not present in the local source family. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -460,30 +511,33 @@
       "model_id": "ale-theo-009-05-q09",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a58d2981e9d5b6856e1f95d79088218355e4d1503504bb57290afa32d9390822"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:7173ff8fc188c015a68a0da50ce181332fbd910be739a625e0810704c79dae3a",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     },
     {
       "question_id": "e4812aa2-b0a6-48e7-92ca-0fe09a65c929",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "A mixed-use tower program specifies three occupancy types, each with distinct operating hours and user profiles. The programmer must develop a zoning strategy and circulation plan. Which approach best integrates programming and zoning principles for the specific requirements?",
+      "text": "A neighborhood PUD is described as compact and walkable with amenities near residents. What is the best source-safe reading?",
       "options": [
         {
           "id": "a",
-          "text": "Arrange functions horizontally (retail ground, office side wing, residential opposite wing); minimize vertical circulation; share common lobbies to enhance user interaction"
+          "text": "It is automatically code-compliant in every building."
         },
         {
           "id": "b",
-          "text": "Integrate all uses in a single open-plan structure to encourage community interaction and reduce duplication of facilities, promoting a cohesive environment"
+          "text": "It is only a marketing description with no planning meaning."
         },
         {
           "id": "c",
-          "text": "Horizontally separate uses on the same level to maximize visual integration; assume good signage will guide users to appropriate areas, reducing confusion"
+          "text": "It eliminates the need for site analysis."
         },
         {
           "id": "d",
-          "text": "Combine all functions vertically (retail ground, office middle, residential top); separate elevator banks; restrict inter-occupancy circulation through access control"
+          "text": "The design aligns with PUD mixed-use and 15-minute-city principles if zoning and implementation checks also pass."
         }
       ],
       "correct_option_id": "d",
@@ -492,13 +546,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Horizontal arrangement on limited-height site increases walking distances and doesn't achieve the separations needed for distinct occupancies.",
-        "b": "Open-plan integration violates the separation principles necessary for mixed-use with conflicting uses.",
-        "c": "Horizontal integration and shared lobbies create mixing rather than separation; signage doesn't solve functional conflicts.",
-        "correct": "Vertical stacking (retail-office-residential) with separate elevator banks addresses: distinct operating hours (retail late, residential 24/7); user separation (customers don't encounter residents); services (retail service separate from residential). Access control at each elevator entry ensures operational independence. This is the strategy described as dominant in Asian mixed-use urban development."
+        "a": "It is automatically code-compliant in every building. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "It is only a marketing description with no planning meaning. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "It eliminates the need for site analysis. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "The design aligns with PUD mixed-use and 15-minute-city principles if zoning and implementation checks also pass. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+        "correct": "The design aligns with PUD mixed-use and 15-minute-city principles if zoning and implementation checks also pass. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+        "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The design aligns with PUD mixed-use and 15-minute-city principles if zoning and implementation checks also pass. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -511,8 +568,11 @@
       "model_id": "ale-theo-009-05-q10",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:025d35a181e9d4553ed83a15ca862c2ff19d474968c9d06f03591a88c7363def"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:793ccecd2aea6d6c20c582b8add2c4451ec89b7488979f52b5ea53a309d99914",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_notes": "Mixed-use is handled through PUD land-use integration, site suitability, implementation, and code-facing use classification."
     }
   ]
 }

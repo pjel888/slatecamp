@@ -2,74 +2,63 @@
   "question_id": "a9b4d635-7bbf-451b-bc39-d044c1c5ee2f",
   "baseline_hash": "sha256:c037c7c1c950e1852e40072d335034cb0a5e98bbeec0a2a0d2feb052e0041ab9",
   "action": "replace",
-  "reason": "source-audited-article-batch-076-local-first aligned linked question with checked local raw PDF/source evidence for lea-theo-009-04-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-076",
-  "approved_at": "2026-05-12T03:12:00.000+08:00",
+  "reason": "source-audited-article-batch-138-local-first: residual local-first rewrite constrained to checked local source artifacts for Functional zoning.",
+  "approved_by": "codex-local-first-source-audited-article-batch-138-local-first",
+  "approved_at": "2026-05-13T23:57:42.832Z",
   "source_audit_support": {
     "parent_article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
     "parent_article_slug": "lea-theo-009-04-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76 and 128-142; PD 1096 RIRR refined markdown lines 560-570, 1088-1155, and 5760-5783",
-    "checked_markdown_lines": [
-      "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by local PyMuPDF extraction",
-      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction",
-      "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498",
     "checked_sources": [
       {
-        "source_id": "design-process-b076",
-        "label": "Design Process",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "raw_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
-        "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by local PyMuPDF extraction"
+        "source_id": "batch-138-lea-theo-009-04-core-concept-raw-source-capture",
+        "label": "Batch 138 raw source capture - Functional zoning",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md",
+        "sha256": "sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db"
       },
       {
-        "source_id": "ra9266-irr-b076",
-        "label": "RA 9266 IRR - Architecture Act of 2004",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "pd1096-rirr-b076",
-        "label": "PD 1096 RIRR 2004 - DPWH Official",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+        "source_id": "batch-138-lea-theo-009-04-core-concept-refined-source-map",
+        "label": "Batch 138 refined source conversion - Functional zoning",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md",
+        "sha256": "sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 076 local raw-source-audited functional_zoning scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 138 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "What should programming do before layout decisions are fixed?",
+    "text": "Which answer is least source-safe for a functional zoning item?",
     "options": [
       {
         "id": "a",
-        "text": "Gather, organize, analyze, interpret and present information relevant to the design project."
+        "text": "Separating public and controlled areas."
       },
       {
         "id": "b",
-        "text": "Select final paint colors only."
+        "text": "Checking whether the stem asks for occupancy."
       },
       {
         "id": "c",
-        "text": "Issue the certificate of occupancy."
+        "text": "Using adjacency for plan relationships."
       },
       {
         "id": "d",
-        "text": "Compute permit fees from a fixed table."
+        "text": "Claiming every hospital must place operating rooms on a fixed floor without a cited source."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The Design Process source describes programming as information gathering and analysis for a design project.",
-    "explanation": "The Design Process source describes programming as information gathering and analysis for a design project.",
-    "code_citation": "Design Process; RA 9266 IRR; PD 1096 RIRR"
-  }
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "Separating public and controlled areas. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "b": "Checking whether the stem asks for occupancy. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "c": "Using adjacency for plan relationships. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "d": "Claiming every hospital must place operating rooms on a fixed floor without a cited source. This stays inside the Batch 138 local source boundary for Functional zoning.",
+      "correct": "Claiming every hospital must place operating rooms on a fixed floor without a cited source. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+      "takeaway": "For Functional zoning, classify the question first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
+    },
+    "explanation": "Claiming every hospital must place operating rooms on a fixed floor without a cited source. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-04-core-concept.source-capture.md#sha256:6ccc3072e71f3c66ed9c4ce485d6da880d3d197c6b5fd52d7ac5573f770118db; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-04-core-concept.refined.md#sha256:75fa1b8ba355a31a1fdc0239dee0710477dd8235fccbd06d45b905097d674498"
+  },
+  "batch_question_template_index": 7
 }

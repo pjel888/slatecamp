@@ -2,99 +2,63 @@
   "question_id": "576558b2-20f3-499f-9207-85507686db83",
   "baseline_hash": "sha256:a9e758a8771a171efe6509b2aefe40d37a60684a918fa95a946c97595b7444c9",
   "action": "replace",
-  "reason": "source-audited-article-batch-063-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale unsupported framing where present.",
-  "approved_by": "codex-local-first-batch-063",
-  "approved_at": "2026-05-11T21:58:00.000+08:00",
+  "reason": "source-audited-article-batch-138-local-first: residual local-first rewrite constrained to checked local source artifacts for Museums and cultural facilities.",
+  "approved_by": "codex-local-first-source-audited-article-batch-138-local-first",
+  "approved_at": "2026-05-13T23:57:42.832Z",
   "source_audit_support": {
     "parent_article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
     "parent_article_slug": "lea-dsgn-004-05-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text; RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text; PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
-    "checked_markdown_lines": [
-      "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
-      "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272",
-      "RA 9514 RIRR refined markdown lines 1463-1544",
-      "RA 9514 RIRR refined markdown lines 2266-2313",
-      "RA 9514 RIRR refined markdown lines 2515-2532",
-      "RA 9514 RIRR refined markdown lines 2665-2728",
-      "RA 9514 RIRR refined markdown lines 3982-4210",
-      "RA 9514 RIRR refined markdown lines 4273-4360",
-      "PD 9514 Fire Code refined markdown lines 1599-1629"
-    ],
-    "checked_raw_pdf_pages": [
-      "PD 1096 RIRR DPWH Official raw PDF pages 47-70",
-      "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138",
-      "PD 9514 Fire Code raw PDF pages 57-58"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3",
     "checked_sources": [
       {
-        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
-        "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text"
+        "source_id": "batch-138-lea-dsgn-004-05-core-concept-raw-source-capture",
+        "label": "Batch 138 raw source capture - Museums and cultural facilities",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md",
+        "sha256": "sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7"
       },
       {
-        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
-        "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text"
-      },
-      {
-        "source_id": "pd9514-fire-code-life-safety-local-b063",
-        "label": "Fire Code source family - life-safety and egress general requirements",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
-        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
-        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
-        "locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text"
+        "source_id": "batch-138-lea-dsgn-004-05-core-concept-refined-source-map",
+        "label": "Batch 138 refined source conversion - Museums and cultural facilities",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md",
+        "sha256": "sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 063 checked local raw-source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 138 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "What occupant-load factor applies to an exhibit room under the checked assembly rule?",
+    "text": "Which PD 1096 clue supports museum classification work?",
     "options": [
       {
         "id": "a",
-        "text": "1.4 square meters per person for less concentrated use such as an exhibit room."
+        "text": "The occupancy tables list museums, exhibition halls, art galleries, and cultural centers in context-specific paths."
       },
       {
         "id": "b",
-        "text": "0.01 square meter per person for all galleries."
+        "text": "PD 1096 never mentions museums."
       },
       {
         "id": "c",
-        "text": "One person per storage cabinet."
+        "text": "Museums are always parking structures."
       },
       {
         "id": "d",
-        "text": "No occupant load is calculated for exhibits."
+        "text": "Museums are always BP 220 projects."
       }
     ],
     "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "RA 9514 identifies exhibit rooms as less concentrated assembly use at 1.4 m2 per person.",
-    "explanation": "RA 9514 identifies exhibit rooms as less concentrated assembly use at 1.4 m2 per person.",
-    "code_citation": "RA 9514 refined markdown lines 3984-3990",
-    "bloom_level": "understand",
-    "application_context": "code_interpretation",
-    "practice_context": [
-      "occupancy classification",
-      "fire code review"
-    ],
-    "difficulty": 0.5,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false
-  }
+    "rationale": {
+      "a": "The occupancy tables list museums, exhibition halls, art galleries, and cultural centers in context-specific paths. This stays inside the Batch 138 local source boundary for Museums and cultural facilities.",
+      "b": "PD 1096 never mentions museums. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "c": "Museums are always parking structures. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "d": "Museums are always BP 220 projects. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "correct": "The occupancy tables list museums, exhibition halls, art galleries, and cultural centers in context-specific paths. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+      "takeaway": "For Museums and cultural facilities, classify the question first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
+    },
+    "explanation": "The occupancy tables list museums, exhibition halls, art galleries, and cultural centers in context-specific paths. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-004-05-core-concept.source-capture.md#sha256:71dfc1a37c8b8194474b60f6a46e69d9f5bf6791a341359d1e5ba8704bc896c7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-004-05-core-concept.refined.md#sha256:8929f92bc6ebb557a1d10fe6aff6cd62c88f7bf53eb6a4cd49379e9ba82372a3"
+  },
+  "batch_question_template_index": 3
 }

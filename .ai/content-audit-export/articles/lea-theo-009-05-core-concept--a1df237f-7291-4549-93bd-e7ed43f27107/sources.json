@@ -1,44 +1,118 @@
 {
   "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4b73b3fbf7b496a154b93e72619c3618ef0f42de4b28feadcdd1ed09b6d6ab8c",
-  "source_count": 3,
+  "sources_hash": "sha256:ae298ade9443d639bc657bb43eff5d0bd34099618d00ed1baa73edb9000e0ca4",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "pd1096-rirr-2004-dpwh-b075",
+      "source_id": "batch-138-lea-theo-009-05-core-concept-raw-source-capture",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
-      "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+      "label": "Batch 138 raw source capture - Mixed-use developments",
       "url": null,
-      "source_type": "primary_law_irr_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-075-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; raw PDF pages 19, 38, 47, and 280 checked by local PyMuPDF extraction",
+      "source_type": "local_source_capture",
+      "description": "Local raw-source-layer capture for Mixed-use developments; includes checked local source family hashes and refined conversion locators.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-12T02:55:00.000+08:00",
-      "updated_at": "2026-05-12T02:55:00.000+08:00"
+      "created_at": "2026-05-13T23:57:42.832Z",
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md",
+      "local_sha256": "sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d",
+      "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d",
+      "checked_markdown_lines": [
+        "HLURB-DHSUD Guidelines on New Towns and Planned Unit Development: The guidelines frame new towns and PUDs around land-use allocation, zoning, urban design, and implementation. Locator: PUD Guidelines refined markdown lines 35-37, 457-460, 519-543, 612-640, 833-847, 1019-1106, and 1324-1356",
+        "HLURB-DHSUD Guidelines on New Towns and Planned Unit Development: PUD mixed-use strategies integrate residential, commercial, recreational, and other uses for walkable communities. Locator: PUD Guidelines refined markdown lines 35-37, 457-460, 519-543, 612-640, 833-847, 1019-1106, and 1324-1356",
+        "HLURB-DHSUD Guidelines on New Towns and Planned Unit Development: Site selection and market demand checks precede final development assumptions. Locator: PUD Guidelines refined markdown lines 35-37, 457-460, 519-543, 612-640, 833-847, 1019-1106, and 1324-1356",
+        "PD 1096 RIRR 2004 - DPWH Official: The Code regulates use, occupancy, location, site, design, maintenance, and conversion. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Floor plans must identify rooms or functional spaces. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Buildings are classified according to use or character of occupancy. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Change of use must conform with the Code and IRR. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "RA 9266 IRR - Architecture Act of 2004: Architectural practice includes planning, layouting, utilization of spaces, space planning, and building programming. Locator: RA 9266 IRR refined markdown lines 70-74, 465, and 499-509",
+        "RA 9266 IRR - Architecture Act of 2004: Site planning and urban design are tested on functional as well as aesthetic and socio-psychological bases. Locator: RA 9266 IRR refined markdown lines 70-74, 465, and 499-509"
+      ],
+      "local_source_families": [
+        {
+          "label": "HLURB-DHSUD Guidelines on New Towns and Planned Unit Development",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.pdf",
+          "rawHash": "sha256:684281f89b73974b098349995fe4994267c8e1934bdc36e623fc0f8501f05ac0",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.md",
+          "refinedHash": "sha256:9b4258a714988c70630731ec4270580fa70e8d0d6add4c8ab1625a00ba0cff47",
+          "checked_locator": "PUD Guidelines refined markdown lines 35-37, 457-460, 519-543, 612-640, 833-847, 1019-1106, and 1324-1356"
+        },
+        {
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "rawHash": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refinedHash": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+        },
+        {
+          "label": "RA 9266 IRR - Architecture Act of 2004",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+          "rawHash": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+          "refinedHash": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "checked_locator": "RA 9266 IRR refined markdown lines 70-74, 465, and 499-509"
+        }
+      ],
+      "local_audit_note": "Article and question claims cite only the local Batch 138 source capture/refined conversion boundary."
     },
     {
-      "source_id": "ra9266-irr-architecture-act-b075",
+      "source_id": "batch-138-lea-theo-009-05-core-concept-refined-source-map",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
-      "label": "RA 9266 IRR - Architecture Act of 2004",
+      "label": "Batch 138 refined source conversion - Mixed-use developments",
       "url": null,
-      "source_type": "primary_law_irr_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-075-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf; raw_pdf_sha256=sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md; refined_markdown_sha256=sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0; checked_locator=RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction",
+      "source_type": "local_refined_conversion",
+      "description": "Refined local conversion and claim-boundary map for Mixed-use developments.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-12T02:55:00.000+08:00",
-      "updated_at": "2026-05-12T02:55:00.000+08:00"
-    },
-    {
-      "source_id": "design-process-programming-b075",
-      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
-      "label": "Design Process",
-      "url": null,
-      "source_type": "primary_course_pdf",
-      "description": "Local raw PDF source audited for source-audited-article-batch-075-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf; raw_pdf_sha256=sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md; refined_markdown_sha256=sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80; checked_locator=Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction",
-      "is_verified": true,
-      "sort_order": 2,
-      "created_at": "2026-05-12T02:55:00.000+08:00",
-      "updated_at": "2026-05-12T02:55:00.000+08:00"
+      "created_at": "2026-05-13T23:57:42.832Z",
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md",
+      "local_sha256": "sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
+      "upstream_capture_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md",
+      "upstream_capture_sha256": "sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d",
+      "checked_markdown_lines": [
+        "HLURB-DHSUD Guidelines on New Towns and Planned Unit Development: The guidelines frame new towns and PUDs around land-use allocation, zoning, urban design, and implementation. Locator: PUD Guidelines refined markdown lines 35-37, 457-460, 519-543, 612-640, 833-847, 1019-1106, and 1324-1356",
+        "HLURB-DHSUD Guidelines on New Towns and Planned Unit Development: PUD mixed-use strategies integrate residential, commercial, recreational, and other uses for walkable communities. Locator: PUD Guidelines refined markdown lines 35-37, 457-460, 519-543, 612-640, 833-847, 1019-1106, and 1324-1356",
+        "HLURB-DHSUD Guidelines on New Towns and Planned Unit Development: Site selection and market demand checks precede final development assumptions. Locator: PUD Guidelines refined markdown lines 35-37, 457-460, 519-543, 612-640, 833-847, 1019-1106, and 1324-1356",
+        "PD 1096 RIRR 2004 - DPWH Official: The Code regulates use, occupancy, location, site, design, maintenance, and conversion. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Floor plans must identify rooms or functional spaces. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Buildings are classified according to use or character of occupancy. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "PD 1096 RIRR 2004 - DPWH Official: Change of use must conform with the Code and IRR. Locator: PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916",
+        "RA 9266 IRR - Architecture Act of 2004: Architectural practice includes planning, layouting, utilization of spaces, space planning, and building programming. Locator: RA 9266 IRR refined markdown lines 70-74, 465, and 499-509",
+        "RA 9266 IRR - Architecture Act of 2004: Site planning and urban design are tested on functional as well as aesthetic and socio-psychological bases. Locator: RA 9266 IRR refined markdown lines 70-74, 465, and 499-509"
+      ],
+      "local_source_families": [
+        {
+          "label": "HLURB-DHSUD Guidelines on New Towns and Planned Unit Development",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.pdf",
+          "rawHash": "sha256:684281f89b73974b098349995fe4994267c8e1934bdc36e623fc0f8501f05ac0",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.md",
+          "refinedHash": "sha256:9b4258a714988c70630731ec4270580fa70e8d0d6add4c8ab1625a00ba0cff47",
+          "checked_locator": "PUD Guidelines refined markdown lines 35-37, 457-460, 519-543, 612-640, 833-847, 1019-1106, and 1324-1356"
+        },
+        {
+          "label": "PD 1096 RIRR 2004 - DPWH Official",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "rawHash": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refinedHash": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_locator": "PD 1096 RIRR refined markdown lines 75-85, 566-570, 762, 921-923, 1092-1149, 1174-1201, and 2916"
+        },
+        {
+          "label": "RA 9266 IRR - Architecture Act of 2004",
+          "rawPath": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+          "rawHash": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refinedPath": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+          "refinedHash": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "checked_locator": "RA 9266 IRR refined markdown lines 70-74, 465, and 499-509"
+        }
+      ],
+      "local_audit_note": "Refined conversion is a derived locator and claim-boundary map, not a substitute for the local raw capture."
     }
   ]
 }

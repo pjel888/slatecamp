@@ -11,25 +11,40 @@
   "reviewer_comments": null,
   "created_at": "2026-03-23T19:26:55.976686+00:00",
   "created_by": null,
-  "updated_at": "2026-05-06T09:56:27.045338+00:00",
-  "updated_by": null,
-  "updated_note": null,
+  "updated_at": "2026-05-13T23:57:42.832Z",
+  "updated_by": "codex-local-first-source-audited-article-batch-138-local-first",
+  "updated_note": "Source-audited local-first Batch 138 article and linked-question rewrite; claims cite local captured source artifacts.",
   "content_hash": "sha256:1d1d6c9dbba96d661c4e501c8673ccf8a538eb50b1a3b4541ffdef171d8e6c53",
   "original_content_hash": "sha256:1d1d6c9dbba96d661c4e501c8673ccf8a538eb50b1a3b4541ffdef171d8e6c53",
-  "normalized_content_hash": "sha256:297f6d04f0c8c8dd47af58ebbbe185e2d9f156e4c1b0d91b88fb870b7582dbd4",
-  "candidate_content_hash": "sha256:297f6d04f0c8c8dd47af58ebbbe185e2d9f156e4c1b0d91b88fb870b7582dbd4",
+  "normalized_content_hash": "sha256:653aff1285f339bded4d7c4491afb65685aedcc8e5ab075193dafa1ca9b61b33",
+  "candidate_content_hash": "sha256:653aff1285f339bded4d7c4491afb65685aedcc8e5ab075193dafa1ca9b61b33",
   "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "linked_questions_hash": "sha256:9dba1cac01b17b6660261d045e0a14e43a211c21685d25f1811587021177d0cd",
-  "sources_hash": "sha256:d83de1a3f6bfe8167a0c979c3f33b3e9bef9e794a6d7bb7b9be5f85d89899331",
+  "linked_questions_hash": "sha256:5e19fc6964b9697f8006f558f2527af640500233f85078063c6e3d232fbd7d06",
+  "sources_hash": "sha256:50902cc12e9d9ffd0e9aeb0e14a2a4ee57a53c5739672a9c7e77bbe99cc3146e",
   "hash_algorithm": "sha256",
   "exported_at": "2026-05-09T17:02:07.271Z",
   "export_run_id": "content-roundtrip-2026-05-09T17-00-40-180Z-3b84f8b2",
   "export_version": "content-roundtrip-v1",
   "source_table": "wiki_articles",
-  "source_count": 3,
+  "source_count": 2,
   "linked_question_count": 10,
   "taxonomy_node_count": 1,
   "taxonomy_count": 1,
   "parser_status": "passed",
-  "content_complexity": "plain_markdown"
+  "content_complexity": "plain_markdown",
+  "source_verification_status": "source_audited_local_first",
+  "source_verification_batch": "source-audited-article-batch-138-local-first",
+  "source_audit_date": "2026-05-13",
+  "source_reference_count": 2,
+  "real_world_scenario_status": "added_source_safe",
+  "local_source_artifacts": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-06-core-concept.source-capture.md",
+      "sha256": "sha256:bb4caa79871cea4b0e8dee91019c19efa7e2704cef2747b00f73c60a452ca387"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-06-core-concept.refined.md",
+      "sha256": "sha256:6488d04f6d40cc15d468b112c74626ef38102403dd38903cb1b77f3a306015c2"
+    }
+  ]
 }

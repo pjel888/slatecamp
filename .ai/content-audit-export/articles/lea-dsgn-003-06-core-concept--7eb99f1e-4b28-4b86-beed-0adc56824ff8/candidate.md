@@ -1,25 +1,44 @@
-# Dormitories and Student Housing: Source-Safe Code Framing
+# Dormitories and Student Housing: Occupancy and Fire-Safety Boundaries
 
-## Source Scope
+## Board Exam Quick Check
 
-This local-first revision is limited to the checked PD 1096 RIRR, RA 9514 Revised IRR 2019, and Fire Code source-family excerpts recorded for Batch 065. Prior room-area schedules, star-rating references, and unsupported formula questions are not carried forward unless the checked source family supports them.
+Classify the sleeping accommodation before applying any room, egress, alarm, or sprinkler rule. A small on-campus dormitory, a private off-campus dormitory, a boarding or lodging house, and a hotel-like transient facility do not use the same answer path.
 
-## LEA Anchor
+## What You Need to Know for the LEA
 
-Classify the sleeping accommodation first, then test fire and egress requirements against the actual occupancy, occupant count, management model, height, and fire protection.
+PD 1096 places on-campus school dormitories for exclusive non-leasing occupants not exceeding ten persons in Division A-2. It treats multiple dwellings such as boarding or lodging houses, hotels, apartments, row houses, convents, monasteries, and similar buildings accommodating more than ten persons as Group B. Its matrix separately lists private or off-campus dormitories under Division B-1 and student housing under the institutional context when the facts support that path.
 
-## Occupancy Classification
+RA 9514 defines dormitories as group sleeping accommodations for persons who are not members of the same family group, in one room or closely associated rooms, under joint occupancy and single management. For hotels and dormitories, the checked Fire Code provisions address illumination, emergency lighting, exit signs, alarm systems, sprinkler protection by storey height, room separation, hazardous-area separation, and regular fire exit drills.
 
-PD 1096 places on-campus school dormitories and military or police barracks/dormitories in Division A-2 when they are residential buildings for exclusive non-leasing occupants not exceeding ten persons. The same source separately treats multiple dwellings such as boarding or lodging houses, hotels, apartment buildings, and similar buildings accommodating more than ten persons as Group B; its occupancy matrix also lists private or off-campus dormitories under Division B-1.
+## Real World Scenario
 
-RA 9514 defines dormitories as group sleeping accommodations for persons who are not members of the same family group, in one room or a series of closely associated rooms, under joint occupancy and single management.
+A university leases a nearby four-storey building for student rooms, common study areas, laundry, and a ground-floor lobby. A source-safe answer first decides whether it is on-campus A-2 or private/off-campus B-1. It then checks RA 9514 hotel/dormitory provisions for exit illumination, emergency lighting, alarm system, sprinkler trigger, room separation, and hazardous-area protection rather than using unsupported bedroom-size or star-rating claims.
 
-## Fire and Life Safety Checks
+## Key Facts and Testable Items
 
-For hotels and dormitories, the checked RA 9514 provisions require illuminated exit signs and emergency lighting in the listed areas, automatic fire detection and alarm for accommodations for fifteen or more guests, manual fire alarm for fewer than fifteen guests, and sprinkler protection for hotels and dormitories with four storeys or more. Guest or dormitory room separations depend on whether the building is protected throughout by an approved supervised sprinkler system.
+| Exam cue | Source-safe answer |
+| --- | --- |
+| On-campus school dormitory, not over 10 persons | PD 1096 Division A-2 cue. |
+| Private or off-campus dormitory | PD 1096 Division B-1 cue. |
+| Group sleeping, joint occupancy, single management | RA 9514 dormitory definition. |
+| 15 or more guests | Automatic fire detection and alarm for hotel/dormitory path. |
+| Four storeys or more | Approved supervised sprinkler system for hotel/dormitory path. |
 
-The Fire Code source family also requires exits of the kind, number, location, and capacity appropriate to the building, considering occupancy character, number of persons, fire protection, height, and type of construction.
+## How It Is Tested on the LEA
 
-## Exam Use
+Questions usually hide the classification trigger in one phrase: on-campus, private/off-campus, guest count, more than ten persons, four storeys, or sleeping rooms under single management. Read that phrase before choosing the rule.
 
-A source-safe answer avoids applying hotel, accessibility, or planning assumptions to every dormitory. For LEA review, ask: Is it on-campus and ten persons or fewer, a larger/private dormitory, or another residential/hotel form? Then apply the matching fire-protection and egress checks from the Fire Code source family.
+## Common Mistakes
+
+- Applying hotel rules to every student housing item without classification.
+- Treating all dormitories as A-2 even when they are private or off-campus.
+- Ignoring fire alarm, sprinkler, separation, and exit-sign triggers.
+- Using unsupported room-area schedules not present in the checked source boundary.
+
+## Key Terms
+
+**Dormitory** - Group sleeping accommodation under joint occupancy and single management.
+
+**Division A-2 Dormitory Cue** - On-campus school dormitory for exclusive non-leasing occupants not exceeding ten persons.
+
+**Division B-1 Dormitory Cue** - Private or off-campus dormitory, or broader multiple-dwelling context.

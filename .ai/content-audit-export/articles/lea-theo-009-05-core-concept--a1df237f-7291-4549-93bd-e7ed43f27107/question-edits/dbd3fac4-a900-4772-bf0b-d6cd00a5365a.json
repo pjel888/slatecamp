@@ -2,74 +2,63 @@
   "question_id": "dbd3fac4-a900-4772-bf0b-d6cd00a5365a",
   "baseline_hash": "sha256:2633e9580d2ec38a17af3f307976f390c1a80eb26aeb8deb045e4e86abb99501",
   "action": "replace",
-  "reason": "source-audited-article-batch-075-local-first aligned linked question with checked local raw PDF/source evidence for lea-theo-009-05-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-075",
-  "approved_at": "2026-05-12T02:55:00.000+08:00",
+  "reason": "source-audited-article-batch-138-local-first: residual local-first rewrite constrained to checked local source artifacts for Mixed-use developments.",
+  "approved_by": "codex-local-first-source-audited-article-batch-138-local-first",
+  "approved_at": "2026-05-13T23:57:42.832Z",
   "source_audit_support": {
     "parent_article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
     "parent_article_slug": "lea-theo-009-05-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; raw PDF pages 19, 38, 47, and 280 checked by local PyMuPDF extraction; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; raw PDF pages 19, 38, 47, and 280 checked by local PyMuPDF extraction",
-      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction",
-      "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction"
-    ],
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461",
     "checked_sources": [
       {
-        "source_id": "pd1096-rirr-2004-dpwh-b075",
-        "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; raw PDF pages 19, 38, 47, and 280 checked by local PyMuPDF extraction"
+        "source_id": "batch-138-lea-theo-009-05-core-concept-raw-source-capture",
+        "label": "Batch 138 raw source capture - Mixed-use developments",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md",
+        "sha256": "sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d"
       },
       {
-        "source_id": "ra9266-irr-architecture-act-b075",
-        "label": "RA 9266 IRR - Architecture Act of 2004",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
-        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
-        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction"
-      },
-      {
-        "source_id": "design-process-programming-b075",
-        "label": "Design Process",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "raw_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
-        "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction"
+        "source_id": "batch-138-lea-theo-009-05-core-concept-refined-source-map",
+        "label": "Batch 138 refined source conversion - Mixed-use developments",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md",
+        "sha256": "sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 075 local raw-source-audited article scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten to the Batch 138 local source artifact boundary while preserving the answer key."
   },
   "proposed": {
-    "text": "What is the safest first move in a mixed-use LEA question?",
+    "text": "A PUD proposal combines housing, retail, open space, and community services. What should the candidate check first?",
     "options": [
       {
         "id": "a",
-        "text": "Assume a podium-tower solution."
+        "text": "A fixed podium-tower formula."
       },
       {
         "id": "b",
-        "text": "Classify each use or character of occupancy."
+        "text": "Only the facade material."
       },
       {
         "id": "c",
-        "text": "Calculate FAR without checking any rule."
+        "text": "Only the developer brand."
       },
       {
         "id": "d",
-        "text": "Use one shared lobby for all users."
+        "text": "The uses, site suitability, zoning alignment, and land-use allocation before form assumptions."
       }
     ],
-    "correct_option_id": "b",
-    "rationale": "PD 1096 RIRR identifies proposed buildings according to use or character of occupancy.",
-    "explanation": "PD 1096 RIRR identifies proposed buildings according to use or character of occupancy.",
-    "code_citation": "PD 1096 RIRR"
-  }
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "A fixed podium-tower formula. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "b": "Only the facade material. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "c": "Only the developer brand. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+      "d": "The uses, site suitability, zoning alignment, and land-use allocation before form assumptions. This stays inside the Batch 138 local source boundary for Mixed-use developments.",
+      "correct": "The uses, site suitability, zoning alignment, and land-use allocation before form assumptions. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+      "takeaway": "For Mixed-use developments, classify the question first and stay inside the checked local source families.",
+      "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
+    },
+    "explanation": "The uses, site suitability, zoning alignment, and land-use allocation before form assumptions. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461.",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-138/lea-theo-009-05-core-concept.source-capture.md#sha256:bb15ba9c2018e74786208af7794ec90c49fd4748d5549e55cc6f0c15c62fa73d; vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-138/lea-theo-009-05-core-concept.refined.md#sha256:9e0030fdf9a87cdced506ddb8e695188d7912ccf9b5ed3c05da9cf2a704d0461"
+  },
+  "batch_question_template_index": 1
 }

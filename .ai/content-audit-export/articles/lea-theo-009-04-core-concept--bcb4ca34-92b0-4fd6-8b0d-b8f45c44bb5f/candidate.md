@@ -1,70 +1,48 @@
+# Functional Zoning: Source-Safe Programming and Use Classification
+
 ## Board Exam Quick Check
 
-For functional-zoning questions, first ask whether the item is testing design organization or a legal occupancy/zoning classification. Use the question stem to separate programming and adjacency logic from PD 1096 occupancy groups or land-use terms.
+For functional zoning questions, first ask what the stem is testing. If it asks for room relationships, use programming and adjacency logic. If it asks for legal use or character of occupancy, shift to PD 1096 classification. If it asks for land-use or zoning approval, check the local land-use or zoning ordinance path rather than inventing a diagram rule.
 
 ## What You Need to Know for the LEA
 
-The checked Design Process source supports a source-safe view of functional zoning through programming and concept formation. Architectural programming is the orderly definition of the architectural problem, the articulation of project requirements, and the gathering, organizing, analyzing, interpreting, and presenting of information relevant to a design project. A concept is a statement of ideal relationships among elements under the architect's control, including form, material, texture, color, and adjacency.
+Functional zoning groups spaces by use, access, privacy, service need, hazard, and relationship to other spaces. The checked Design Process source supports this as a programming and concept task: analyze the existing state, define the future state, set performance requirements, and translate them into guidelines. It also treats a concept as an ideal set of relationships among design elements, including adjacency.
 
-RA 9266 IRR places architectural and operational planning, space planning, building programming, and architectural layouting within the practice of architecture. It also identifies architectural floor plans and schedules as architectural documents.
+RA 9266 IRR places planning, architectural layouting, utilization of spaces, space planning, and building programming inside architectural practice. PD 1096 RIRR then supplies the code-facing distinction: building permit drawings identify rooms or functional spaces, while legal classification depends on use or character of occupancy.
 
-PD 1096 RIRR is the control point when the item asks for code classification. It classifies buildings by use or character of occupancy, and its architectural-document requirements call for floor plans showing complete identification of rooms or functional spaces. Accessibility provisions also require planning for reachability, usability, orientation, safety, workability, and efficiency.
+## Real World Scenario
 
-## Learning Goal
-
-- Distinguish functional zoning as design organization from legal occupancy or land-use classification.
-- Use programming, adjacency, room identification, and circulation/accessibility cues to evaluate layout logic.
-- Avoid adding unverified zone labels unless the exam item or checked source provides the classification basis.
-
-## Core Concept
-
-Functional zoning is best treated here as a design-organization method: group functions so the project requirements, adjacencies, circulation, and room identities are legible. The source-audited basis is not a fixed four-zone taxonomy. The safer answer is to read the program and identify how spaces should relate.
-
-| Exam cue | Source-safe interpretation |
-| --- | --- |
-| Architectural programming | Define the problem and project requirements before arranging spaces. |
-| Concept or adjacency | State the intended relationships among spaces or elements. |
-| Floor plan review | Check whether rooms and functional spaces are completely identified. |
-| Code classification | Use PD 1096 occupancy groups when the item asks for legal use/occupancy. |
-| Accessibility or circulation | Check reachability, usability, orientation, safety, workability, and efficiency. |
-
-A good zoning answer therefore starts from evidence in the stem: entry sequence, room identities, adjacency needs, user routes, service routes, accessibility needs, and occupancy or use classification if the code is involved.
+A barangay health center has waiting, consultation, records, staff, storage, toilet, and service areas. A source-safe zoning answer groups public waiting near entry, keeps consultation and records controlled, and keeps service/storage from crossing patient flow. If the exam asks whether the project is a clinic, office, assembly space, or another occupancy, the answer must move from adjacency logic to PD 1096 use classification.
 
 ## Key Facts and Testable Items
 
-| Source anchor | LEA takeaway |
+| Exam cue | Source-safe answer |
 | --- | --- |
-| Design Process - programming | Organize information before proposing physical layout. |
-| Design Process - concept | Adjacency is one of the relationships a concept can control. |
-| RA 9266 IRR | Space planning, building programming, and architectural layouting are within architectural practice. |
-| PD 1096 RIRR | Floor plans must identify rooms or functional spaces. |
-| PD 1096 RIRR accessibility provisions | Orientation, safety, usability, and workability matter in planning. |
+| Relationship, proximity, privacy, or flow | Use programming and adjacency logic. |
+| Room names on a permit drawing | PD 1096 expects complete identification of rooms or functional spaces. |
+| Building use or character of occupancy | Use PD 1096 occupancy classification. |
+| Site or urban design basis | Use functional, aesthetic, and socio-psychological planning bases from RA 9266 IRR. |
+| Land-use approval or zoning ordinance | Do not substitute interior functional zoning for legal zoning. |
 
-## How It's Tested on the LEA
+## How It Is Tested on the LEA
 
-Expect scenario questions that ask whether a layout matches the program. The correct answer usually identifies the controlling cue: adjacency, circulation, room identity, accessibility, or occupancy classification.
-
-If the question uses terms such as residential, business, mercantile, institutional, or assembly, check whether it has shifted from functional zoning to PD 1096 occupancy classification. Do not answer with a design-preference rule when the item asks for a code classification.
+Expect stems that mix a plan diagram with code words. A good answer separates design zoning from legal classification: adjacency solves how spaces relate, while occupancy and land-use controls solve how the building is regulated.
 
 ## Common Mistakes
 
-- Treating functional zoning as the same thing as land-use zoning.
-- Answering with a memorized public/private/service taxonomy when the question actually provides a different program basis.
-- Ignoring room labels and functional-space identification on floor plans.
-- Applying accessibility or occupancy rules only after the layout has already been judged.
+- Treating every vertical stack or bubble diagram as automatically correct.
+- Calling functional zoning a legal zoning approval.
+- Ignoring access, privacy, service, and hazard relationships.
+- Applying hospital, mall, or school formulas that are not in the checked source family.
 
 ## Key Terms
 
-**Architectural Programming** - The problem-seeking and information-organizing stage before design decisions are fixed.
+**Functional Zoning** - Grouping spaces by use and relationship so circulation, privacy, service, and operations are coherent.
 
-**Adjacency** - A relationship among spaces or elements that may be controlled by the design concept.
+**Adjacency** - The source-safe relationship between spaces that should be near, separated, or controlled.
 
-**Functional Space** - A room or area identified by use on the architectural floor plan.
-
-**Occupancy Classification** - The PD 1096 use/character classification, separate from design zoning.
-
-**Translation Guideline** - A design guideline derived from concepts and performance requirements.
+**Use or Character of Occupancy** - The PD 1096 classification path for code-facing use questions.
 
 ## Related Articles
 
-See also **lea-theo-009-01-core-concept**, **lea-theo-009-02-core-concept**, **lea-theo-009-03-core-concept**, and **lea-theo-009-05-core-concept**.
+See also: **lea-theo-009-01-core-concept**, **lea-theo-009-02-core-concept**, **lea-theo-009-03-core-concept**, and **lea-theo-009-05-core-concept**.

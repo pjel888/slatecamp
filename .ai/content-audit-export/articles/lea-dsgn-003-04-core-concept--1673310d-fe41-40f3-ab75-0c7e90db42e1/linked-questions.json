@@ -1,30 +1,30 @@
 {
   "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:573d3064df2f5b04237180ebc59c1a685ffcddc3ecfc59bd5381aa01eafb0f0f",
+  "linked_questions_hash": "sha256:a4f342640b54460ef3b49eb31798dc9bc8ab267f0b9f71396a756d5ee256041d",
   "question_count": 10,
   "questions": [
     {
       "question_id": "77fc51d2-6e60-4381-a8b4-4932e2ddb6f6",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "Which of the following correctly distinguishes BP 220 socialized vs. economic housing by target income?",
+      "text": "A problem asks for the minimum floor area of an economic single-family dwelling under BP 220. What value should be used?",
       "options": [
         {
           "id": "a",
-          "text": "Socialized ≤ 50k PHP/month; Economic 50k–100k PHP/month"
+          "text": "18 sqm."
         },
         {
           "id": "b",
-          "text": "Socialized ≤ 70k PHP/month; Economic 70k–120k PHP/month"
+          "text": "22 sqm."
         },
         {
           "id": "c",
-          "text": "Socialized ≤ 100k PHP/month; Economic > 100k PHP/month"
+          "text": "24 sqm."
         },
         {
           "id": "d",
-          "text": "Both categories serve incomes ≤ 60k PHP/month"
+          "text": "A value invented from PD 1096."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Understates both thresholds",
-        "c": "Overstates the economic housing upper limit; also confuses with middle-income categories",
-        "d": "Incorrectly combines both categories into one income bracket",
-        "correct": "BP 220 Revised IRR Rule II Sec. 3 defines socialized housing for families with gross annual income ≤ P200,000; economic housing P200,001–P4,000,000 annually",
-        "takeaway": "Socialized = ≤70k/month; Economic = 70k–120k/month. These income brackets determine lot and floor area minimums."
+        "a": "18 sqm. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "22 sqm. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "c": "24 sqm. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "A value invented from PD 1096. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "22 sqm. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Section 3 (Definition of Terms)",
+      "explanation": "22 sqm. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,33 @@
       "model_id": "ALE-DSGN-003-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:da39e5529afe4111018f887f82d4ef5475d03240d26e4fc035ee8e40a04432bd"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:72ae38dad6d8be2c8c8d9726f24c087268e9e2ce55264cf7f5b0b59e746c9ea7",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "00cb318b-18e1-4c2e-8185-553adef0aa2a",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "A 4-hectare socialized row house housing project in Manila proposes 1,200 units. What is the minimum total lot area required to comply with BP 220?",
+      "text": "A socialized single-family dwelling floor-area item asks for the BP 220 minimum. What is the source-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "28,800 sqm"
+          "text": "22 sqm."
         },
         {
           "id": "b",
-          "text": "86,400 sqm"
+          "text": "36 sqm."
         },
         {
           "id": "c",
-          "text": "33,600 sqm"
+          "text": "18 sqm."
         },
         {
           "id": "d",
-          "text": "40,000 sqm"
+          "text": "A fixed saleable-area percentage."
         }
       ],
       "correct_option_id": "c",
@@ -83,14 +88,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Miscalculation: confuses the minimum per unit (28 sqm) with number of units",
-        "b": "This applies if using the socialized single detached standard (64 sqm) instead of row house (28 sqm)",
-        "d": "This is the total site area, not the minimum lot requirement",
-        "correct": "BP 220 socialized row house = 28 sqm/unit. 1,200 units × 28 sqm = 33,600 sqm required. Available 40,000 sqm (4 hectares) ≥ 33,600 sqm ✓",
-        "takeaway": "For row house computation: Total units × 28 sqm/unit = minimum lot area. Always check housing type to select the right minimum."
+        "a": "22 sqm. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "36 sqm. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "18 sqm. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "d": "A fixed saleable-area percentage. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "18 sqm. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Section 4; PD 957 Section 31",
+      "explanation": "18 sqm. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +108,33 @@
       "model_id": "ALE-DSGN-003-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7d80b532c113b628b0669c2f579ae4ba33cb2007be3fef68263eb24c8616eb09"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:76d51144d9bd6b861eb18459f3f82434ef16b94d60598bde57b5959f397dd9ae",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "3257f6fc-473b-4123-ab80-f3bfb35df4b1",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "Under BP 220 Revised IRR Table 7, what is the minimum lot area for a socialized housing single detached unit?",
+      "text": "A senior apartment project provides independent dwelling units and no care services. What is the safest first classification move?",
       "options": [
         {
           "id": "a",
-          "text": "28 sqm"
+          "text": "Automatically classify it as a nursing home."
         },
         {
           "id": "b",
-          "text": "64 sqm"
+          "text": "Treat it as a residential/housing question unless the stem adds institutional care facts."
         },
         {
           "id": "c",
-          "text": "72 sqm"
+          "text": "Ignore BP 220 if the residents are older."
         },
         {
           "id": "d",
-          "text": "48 sqm"
+          "text": "Use a museum occupancy rule."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +143,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "28 sqm is the minimum lot area for socialized row houses per Table 7, not single detached (64 sqm) (ERR-DSGN: confusing housing types).",
-        "c": "72 sqm is the minimum for ECONOMIC single detached, not socialized. Students commonly confuse these two categories.",
-        "d": "48 sqm is the minimum for socialized DUPLEX/SINGLE ATTACHED units, not single detached.",
-        "correct": "BP 220 Revised IRR Table 7 specifies 64 sqm minimum lot area for socialized housing single detached units.",
-        "takeaway": "Socialized SD = 64 sqm; Economic SD = 72 sqm. The 72 sqm value is economic, NOT socialized. Always check category AND housing type."
+        "a": "Automatically classify it as a nursing home. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Treat it as a residential/housing question unless the stem adds institutional care facts. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "c": "Ignore BP 220 if the residents are older. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Use a museum occupancy rule. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Treat it as a residential/housing question unless the stem adds institutional care facts. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Section 4",
+      "explanation": "Treat it as a residential/housing question unless the stem adds institutional care facts. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +163,33 @@
       "model_id": "ALE-DSGN-003-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:585a21bc6ff10f41918e6ab8a875f11ef88f6aff89168f77096c081f69dafd69"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:983ff6efd54392c5ef315d99ccc78a2116af081d5ba39c727c881d2fc685deae",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "19d6a9cd-70d8-40ee-a3fa-47bf2e83240a",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "A senior living facility in Cebu develops 300 economic housing units (BP 220) on a 3.5-hectare site. Calculate the net buildable area available if 25% of the site is allocated to roads and amenities.",
+      "text": "Which BP 220 mistake is most common in lot-area questions?",
       "options": [
         {
           "id": "a",
-          "text": "22,500 sqm"
+          "text": "Checking the category first."
         },
         {
           "id": "b",
-          "text": "26,250 sqm"
+          "text": "Swapping values across detached, duplex, attached, and row-house types."
         },
         {
           "id": "c",
-          "text": "18,000 sqm"
+          "text": "Reading the housing type in the stem."
         },
         {
           "id": "d",
-          "text": "35,000 sqm"
+          "text": "Separating socialized from economic housing."
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +198,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This omits the calculation—27.5% of site incorrectly calculated",
-        "c": "This subtracts 50% instead of 25%",
-        "d": "This is gross site area, not accounting for roads/amenities deduction",
-        "correct": "Net buildable = 35,000 sqm × (1 − 0.25) = 35,000 × 0.75 = 26,250 sqm available for housing blocks",
-        "takeaway": "Always deduct roads and common amenities (typically 20–30%) from gross site area before computing unit count or lot requirement compliance."
+        "a": "Checking the category first. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Swapping values across detached, duplex, attached, and row-house types. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "c": "Reading the housing type in the stem. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Separating socialized from economic housing. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Swapping values across detached, duplex, attached, and row-house types. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Section 4; PD 957 Section 31",
+      "explanation": "Swapping values across detached, duplex, attached, and row-house types. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +218,33 @@
       "model_id": "ALE-DSGN-003-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bb6fb735c45c1dd7ad68147b010e510f7179a2e2a5ec6f637e0527fa39d552c1"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:43980b2b633d6f8d152585da0da65505c185fe1d8e934f4b64e1626a807ab6a5",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "6b61726b-4917-4228-a1d7-530b705343f1",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "A developer purchases a 3-hectare site in Pasig for socialized row house housing. After excluding 30% for roads and common spaces, how many units can be developed while maintaining BP 220 compliance?",
+      "text": "For projects of 1 hectare and above, what BP 220 open-space item becomes mandatory?",
       "options": [
         {
           "id": "a",
-          "text": "Approximately 980 units"
+          "text": "A private clubhouse for every unit."
         },
         {
           "id": "b",
-          "text": "Approximately 750 units"
+          "text": "Parks and playgrounds."
         },
         {
           "id": "c",
-          "text": "Approximately 500 units"
+          "text": "A commercial podium."
         },
         {
           "id": "d",
-          "text": "Approximately 1,500 units"
+          "text": "A fixed 70 percent saleable area."
         }
       ],
       "correct_option_id": "b",
@@ -233,14 +253,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Miscalculation; ~980 would require a larger site or misapplication of deduction.",
-        "c": "Too low; assumes a 2-hectare site (20,000 sqm × 0.70 = 14,000 ÷ 28 = 500 units) instead of 3-hectare.",
-        "d": "Overstates density; would require lot area < 28 sqm or a much larger site.",
-        "correct": "Net buildable = 30,000 sqm × 0.70 = 21,000 sqm. Units = 21,000 ÷ 28 sqm/lot = 750 units ✓. This maintains BP 220 compliance (28 sqm minimum lot for socialized row house).",
-        "takeaway": "Row house density: (Gross site × net% buildable) ÷ 28 sqm/unit. For 3 hectares at 70% buildable: 21,000 ÷ 28 = 750 units."
+        "a": "A private clubhouse for every unit. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Parks and playgrounds. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "c": "A commercial podium. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "A fixed 70 percent saleable area. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Parks and playgrounds. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Section 4; PD 957 Section 31",
+      "explanation": "Parks and playgrounds. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +273,33 @@
       "model_id": "ALE-DSGN-003-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:497ef726fa5a77a92821d838157df5e1585a32dbcea5422a2e7536b2dfa53444"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:d04783ae22a2a38549764e6205216bc684ecb6f4c6b1959389e237e56ea2d4a3",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "85557a1a-2452-4e4c-862d-138c6f096d1b",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "For the senior living project above (300 economic single detached units, 26,250 sqm buildable), verify BP 220 compliance. Which statement is correct?",
+      "text": "What should a candidate do when a BP 220 problem gives a saleable-area assumption?",
       "options": [
         {
           "id": "a",
-          "text": "300 units × 72 sqm/lot = 21,600 sqm required; project is compliant (21,600 < 26,250 sqm available)"
+          "text": "Use the stated assumption and then apply the correct BP 220 table values."
         },
         {
           "id": "b",
-          "text": "300 units × 72 sqm/lot = 21,600 sqm required; project is compliant because site is 35,000 sqm gross"
+          "text": "Replace it with a memorized universal deduction."
         },
         {
           "id": "c",
-          "text": "300 units × 22 sqm/floor = 6,600 sqm required; project is compliant with margin for amenities"
+          "text": "Ignore the stated assumption."
         },
         {
           "id": "d",
-          "text": "Economic housing requires 64 sqm per lot, so 300 × 64 = 19,200 sqm is required"
+          "text": "Classify the project as institutional."
         }
       ],
       "correct_option_id": "a",
@@ -283,14 +308,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While the calculation is correct, the reasoning is wrong — compliance must be checked against NET buildable area (after roads/amenities deduction), not gross site area",
-        "c": "Confuses floor area (22 sqm economic) with lot area (72 sqm economic SD); lot area determines site density, not floor area alone",
-        "d": "64 sqm applies to SOCIALIZED single detached, not economic; confuses the two categories",
-        "correct": "BP 220 economic SD = 72 sqm/unit (lot area per Table 7). 300 × 72 = 21,600 sqm required. 21,600 < 26,250 sqm buildable = compliant.",
-        "takeaway": "Compliance uses NET buildable area (after roads/amenities), and LOT area minimums (not floor area) determine unit count feasibility. Economic SD = 72 sqm lot."
+        "a": "Use the stated assumption and then apply the correct BP 220 table values. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "b": "Replace it with a memorized universal deduction. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Ignore the stated assumption. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Classify the project as institutional. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Use the stated assumption and then apply the correct BP 220 table values. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Section 4",
+      "explanation": "Use the stated assumption and then apply the correct BP 220 table values. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +328,33 @@
       "model_id": "ALE-DSGN-003-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:815728cae1e0fe7ab6ecb3f19c1911bc90b54a8260a47d13814fbe0300a5b3e8"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:19b0d0b6a66209e09cfc237fbe31cea63fe994e53afc54a4add6a4079fc2b6f3",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "d69665e2-afa0-4a09-a0ee-782a6bc5d631",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "A 1.5-hectare socialized single detached housing project has an average unit floor area of 28 sqm. Calculate the gross density (occupants per hectare) assuming 5 occupants per unit.",
+      "text": "Which description points to PD 1096 Group D rather than a simple BP 220 housing computation?",
       "options": [
         {
           "id": "a",
-          "text": "Approximately 1,042 persons/hectare"
+          "text": "An independent row-house development."
         },
         {
           "id": "b",
-          "text": "Approximately 781 persons/hectare"
+          "text": "A home for the aged or similar care facility accommodating more than five persons."
         },
         {
           "id": "c",
-          "text": "Approximately 1,390 persons/hectare"
+          "text": "A single detached economic-housing unit."
         },
         {
           "id": "d",
-          "text": "Approximately 500 persons/hectare"
+          "text": "A pedestrian pathwalk in socialized housing."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +363,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Miscalculates unit count; may use 48 sqm/lot (duplex) instead of 64 sqm (SD)",
-        "c": "Uses row house standard (28 sqm) resulting in ~357 units/hectare × 5 = 1,785 persons/hectare (wrong housing type)",
-        "d": "Severely undercounts; may confuse with parking density or other metric",
-        "correct": "Units per hectare = 10,000 sqm ÷ 64 sqm/lot ≈ 156 units/hectare. Density = 156 × 5 occupants ≈ 781 persons/hectare",
-        "takeaway": "Density = (10,000 ÷ lot minimum) × occupants per unit. For socialized SD: (10,000 ÷ 64) × 5 ≈ 781 persons/hectare gross."
+        "a": "An independent row-house development. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "A home for the aged or similar care facility accommodating more than five persons. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "c": "A single detached economic-housing unit. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "A pedestrian pathwalk in socialized housing. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "A home for the aged or similar care facility accommodating more than five persons. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Section 4; RA 9514 Table 3.1-2",
+      "explanation": "A home for the aged or similar care facility accommodating more than five persons. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +383,33 @@
       "model_id": "ALE-DSGN-003-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:421bcc594ac8652b2459afb3189884e65e50ead4c27966879bea0c024f0a3e6b"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:0bb555622fdc1b349213f27fb4cad8b6a8fb311cc987c7255024e8e0abe15496",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "eba40c7c-3992-48b2-b894-2be05707f959",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "A developer proposes a mixed-income project: 500 socialized SD units (64 sqm/lot) and 200 economic SD units (72 sqm/lot), plus 35% of site for roads/amenities. What minimum total site area (in hectares) is required?",
+      "text": "Why should BP 220 and senior-care occupancy not be merged automatically?",
       "options": [
         {
           "id": "a",
-          "text": "4.62 hectares"
+          "text": "They are the same source."
         },
         {
           "id": "b",
-          "text": "7.08 hectares"
+          "text": "BP 220 governs economic/socialized housing standards, while care occupancy depends on PD 1096 use facts."
         },
         {
           "id": "c",
-          "text": "3.85 hectares"
+          "text": "BP 220 cancels all occupancy rules."
         },
         {
           "id": "d",
-          "text": "6.15 hectares"
+          "text": "Senior residents always make a project institutional."
         }
       ],
       "correct_option_id": "b",
@@ -383,14 +418,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Underestimates; may only count socialized lots without economic or misapply the 35% deduction",
-        "c": "Significantly underestimates; may use row house minimums (28 sqm) instead of SD (64 sqm) for socialized",
-        "d": "Close but may use net area instead of gross or miscalculate one component",
-        "correct": "Socialized SD required: 500 × 64 = 32,000 sqm. Economic SD required: 200 × 72 = 14,400 sqm. Total net lot area = 46,400 sqm. Roads/amenities = 35% of gross, so buildable = 65%. Gross site = 46,400 ÷ 0.65 = 71,385 sqm ≈ 7.14 hectares. Closest option: 7.08 hectares.",
-        "takeaway": "Mixed-income site: (socialized units × socialized lot) + (economic units × economic lot) = net buildable. Divide by (1 − road%) for gross site. Socialized SD = 64 sqm; Economic SD = 72 sqm."
+        "a": "They are the same source. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "BP 220 governs economic/socialized housing standards, while care occupancy depends on PD 1096 use facts. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "c": "BP 220 cancels all occupancy rules. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Senior residents always make a project institutional. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "BP 220 governs economic/socialized housing standards, while care occupancy depends on PD 1096 use facts. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Sections 4; PD 957 Section 31",
+      "explanation": "BP 220 governs economic/socialized housing standards, while care occupancy depends on PD 1096 use facts. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +438,33 @@
       "model_id": "ALE-DSGN-003-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9cd703c45e01b216acdd754b1c4a60fe64c32e97dbe08e9d07f57572a0543d35"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:f5c68122fd7874179ef5237aed7c18f293fa2e635eebda269bfb51d75bb41db2",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "e0f2175f-53e6-4af6-9a93-316b9a719b51",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "What is the minimum floor area per unit for both socialized and economic housing under BP 220?",
+      "text": "A BP 220 problem asks for non-saleable portions. Which answer scope is safest?",
       "options": [
         {
           "id": "a",
-          "text": "Socialized = 18 sqm; Economic = 22 sqm"
+          "text": "Open space, circulation, community facilities, and parks/playgrounds where required."
         },
         {
           "id": "b",
-          "text": "Socialized = 28 sqm; Economic = 72 sqm, which is typically required for larger family units"
+          "text": "Only landscaping chosen by the designer."
         },
         {
           "id": "c",
-          "text": "Both = 30 sqm, as mandated for mixed-use developments"
+          "text": "Only parking stalls for shoppers."
         },
         {
           "id": "d",
-          "text": "Socialized = 22 sqm; Economic = 42 sqm, often applied in urban redevelopment zones"
+          "text": "Only air-conditioning equipment."
         }
       ],
       "correct_option_id": "a",
@@ -433,14 +473,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Confuses LOT area minimums (28 sqm row house lot, 72 sqm economic SD lot) with FLOOR area minimums.",
-        "c": "Oversimplifies and does not match BP 220 standards.",
-        "d": "These are commonly cited incorrect values; 22 sqm is actually the economic floor area, and 42 sqm does not appear in the official IRR floor area table.",
-        "correct": "BP 220 Revised IRR specifies minimum FLOOR area: Socialized = 18 sqm; Economic = 22 sqm per single-family dwelling unit.",
-        "takeaway": "Floor area: Socialized = 18 sqm; Economic = 22 sqm. Do NOT confuse with lot area (64/48/28 socialized; 72/54/36 economic)."
+        "a": "Open space, circulation, community facilities, and parks/playgrounds where required. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "b": "Only landscaping chosen by the designer. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "c": "Only parking stalls for shoppers. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Only air-conditioning equipment. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Open space, circulation, community facilities, and parks/playgrounds where required. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "BP 220 Section 4",
+      "explanation": "Open space, circulation, community facilities, and parks/playgrounds where required. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +493,33 @@
       "model_id": "ALE-DSGN-003-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:283a1c09432573090bf654ec8c918a5639568313c7ef1db9e2bc256862b8da9a"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:49066804358a43a4a917ac308019453bad6a3ede6c70033a3fc6ce1b5d00ed8e",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     },
     {
       "question_id": "43ccd40f-f087-4a65-8a88-b1c92fdb9217",
       "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
       "topic_id": "25e7b710-7d03-468e-a2a8-d7e7e4fd9cc5",
-      "text": "Under PD 1096, what occupancy group classification applies to a multi-unit senior residential facility where each unit is individually owned?",
+      "text": "What is the exam sequence for this cluster?",
       "options": [
         {
           "id": "a",
-          "text": "Group A-1 (single-family), typically used for detached homes"
+          "text": "Answer from resident age alone."
         },
         {
           "id": "b",
-          "text": "Group A-2 (multi-family residential)"
+          "text": "Identify housing category, housing type, project scale, then any separate occupancy or accessibility issue."
         },
         {
           "id": "c",
-          "text": "Group D (institutional), which is generally for hospitals and similar facilities"
+          "text": "Use the largest number in every table."
         },
         {
           "id": "d",
-          "text": "Group B (hotel/dormitory), often applied to transient accommodations"
+          "text": "Skip source classification because the project is residential."
         }
       ],
       "correct_option_id": "b",
@@ -483,14 +528,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "A-1 applies to single-family detached structures, not multi-unit residential",
-        "c": "Group D (institutional) applies to facilities with resident care staff (nursing homes with 24/7 care); owner-occupied multi-family = A-2",
-        "d": "Group B (transient hotel/dormitory) applies when units are not permanently occupied by same residents",
-        "correct": "PD 1096 Section 303 classifies multi-family residences as Group A-2. Individual ownership of residential units = A-2, regardless of occupant age",
-        "takeaway": "Multi-family residential = Group A-2 per PD 1096, even for seniors. Group D requires licensed institutional care with resident staff."
+        "a": "Answer from resident age alone. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "b": "Identify housing category, housing type, project scale, then any separate occupancy or accessibility issue. This stays inside the Batch 138 local source boundary for Senior Living and Low-Income Housing.",
+        "c": "Use the largest number in every table. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "d": "Skip source classification because the project is residential. is not the best answer because it either uses the wrong source path or adds a claim not supported by the Batch 138 local source boundary.",
+        "correct": "Identify housing category, housing type, project scale, then any separate occupancy or accessibility issue. The answer is supported by vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+        "takeaway": "For Senior Living and Low-Income Housing, classify the question first and stay inside the checked local source families.",
+        "source_boundary": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4"
       },
-      "explanation": null,
-      "code_citation": "PD 1096 Section 303 (Occupancy Classification)",
+      "explanation": "Identify housing category, housing type, project scale, then any separate occupancy or accessibility issue. Supported by the Batch 138 local source boundary: vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4.",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,8 +548,11 @@
       "model_id": "ALE-DSGN-003-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:149a023ea0bf39cc95f4342c2925e0ff661c21c79fa237b9918db79b99fe3823"
+      "updated_at": "2026-05-13T23:57:42.832Z",
+      "content_hash": "sha256:9043f02a0f5ca9a297b5d73b51904578d9487bfe9f5e5cd0c7708305c638478b",
+      "source_verification_status": "source_audited_local_first",
+      "source_reference": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/source-map-batch-138/lea-dsgn-003-04-core-concept.source-capture.md#sha256:097d8cf0e60464963e60047e1c86c8f6f8ed431f2e1fd35b453a8b9bce6e09e7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/source-map-batch-138/lea-dsgn-003-04-core-concept.refined.md#sha256:886953836236ab6534d3fd2d8a21a6957bc5c2e655543df9c3b4aaf23836bea4",
+      "source_notes": "The article separates BP 220 economic/socialized housing standards from PD 1096 residential or institutional occupancy questions for senior care."
     }
   ]
 }
