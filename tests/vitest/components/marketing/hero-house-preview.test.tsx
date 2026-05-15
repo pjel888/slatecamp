@@ -48,6 +48,9 @@ vi.mock('@/lib/audio/feedbackSounds', () => ({
 }))
 
 import {
+  HERO_LOT_CAMERA_FOV,
+  HERO_LOT_CAMERA_POSITION,
+  HERO_LOT_STAGE_CLASS,
   HeroHousePreview,
   LOT_MODEL_GROUP_POSITION,
   SETBACK_GRID_STEP_METERS,
@@ -56,6 +59,15 @@ import {
 } from '@/components/marketing/hero/HeroHousePreview'
 
 describe('HeroHousePreview setback geometry', () => {
+  it('gives the hero lot model a non-clipping camera and visible stage', () => {
+    expect(HERO_LOT_STAGE_CLASS).toContain('overflow-visible')
+    expect(HERO_LOT_STAGE_CLASS).not.toContain('overflow-hidden')
+    expect(HERO_LOT_STAGE_CLASS).not.toContain('mask-image')
+    expect(HERO_LOT_STAGE_CLASS).toContain('inset-x-[-24%]')
+    expect(HERO_LOT_CAMERA_FOV).toBeGreaterThanOrEqual(27)
+    expect(HERO_LOT_CAMERA_POSITION[2]).toBeGreaterThanOrEqual(7.8)
+  })
+
   it('uses a half-meter grid and keeps front/rear colors ahead of side colors', () => {
     const plan = getSetbackGridPlan({ front: 4.5, side: 2, rear: 2 })
 
@@ -126,6 +138,11 @@ describe('HeroHousePreview', () => {
     render(<HeroHousePreview />)
 
     const quizCard = screen.getByLabelText(/R-1 setback quiz modal/i)
+    const modelStage = screen.getByTestId('hero-lot-model-stage')
+    expect(modelStage.className).toContain('overflow-visible')
+    expect(modelStage.className).toContain('inset-x-[-24%]')
+    expect(modelStage.className).not.toContain('overflow-hidden')
+    expect(modelStage.className).not.toContain('mask-image')
     expect(quizCard.className).toContain('bg-slate-100/[0.18]')
     expect(quizCard.className).toContain('p-0')
     expect(quizCard.className).toContain('backdrop-blur-[10px]')

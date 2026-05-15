@@ -14,6 +14,9 @@ const SECONDARY_NAV_LINKS = [
   { href: ROUTES.contact, routeHref: ROUTES.contact, label: 'Contact' },
 ] as const
 
+const LANDING_SHELL_CLASS =
+  'mx-auto w-full max-w-[1200px] 2xl:max-w-[1440px] [@media(width>=1920px)]:max-w-[1760px] [@media(width>=2560px)]:max-w-[2200px] [@media(width>=3200px)]:max-w-[2600px]'
+
 export async function MarketingNav({
   activeRoute = '/',
   logoScrollsToTop = false,
@@ -66,7 +69,7 @@ export async function MarketingNav({
   return (
     <header className={headerClass}>
       <div className={primaryNavClass}>
-        <div className='mx-auto flex h-14 max-w-[1200px] items-center justify-between'>
+        <div className={`${LANDING_SHELL_CLASS} flex h-14 items-center justify-between`}>
           <div className='flex items-center'>
             {logoScrollsToTop ? (
               <a href='#top' className='inline-flex items-center'>
@@ -131,7 +134,7 @@ export async function MarketingNav({
 
       {showSecondaryNav ? (
         <nav className={secondaryNavClass} aria-label='Primary landing navigation'>
-          <div className='mx-auto flex h-20 max-w-[1200px] items-center justify-center overflow-hidden'>
+          <div className={`${LANDING_SHELL_CLASS} flex h-20 items-center justify-center overflow-hidden`}>
             <div
               className={cn(
                 'flex min-w-max items-center gap-1 rounded-sm border px-2 py-2 text-[13px] backdrop-blur-xl',

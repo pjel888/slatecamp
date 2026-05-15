@@ -181,6 +181,42 @@ describe('landing page marketing surface', () => {
     expect(screen.queryByText(/SRS/i)).not.toBeInTheDocument()
   })
 
+  it('uses a responsive landing shell for large-monitor hero composition', () => {
+    const heroSource = readFileSync(
+      join(process.cwd(), 'src/components/marketing/HeroSection.tsx'),
+      'utf8',
+    )
+    const navSource = readFileSync(
+      join(process.cwd(), 'src/components/marketing/MarketingNav.tsx'),
+      'utf8',
+    )
+
+    expect(heroSource).toContain('2xl:max-w-[1440px]')
+    expect(heroSource).toContain('[@media(width>=1920px)]:max-w-[1760px]')
+    expect(heroSource).toContain('[@media(width>=2560px)]:max-w-[2200px]')
+    expect(heroSource).toContain('[@media(width>=3200px)]:max-w-[2600px]')
+    expect(heroSource).toContain(
+      '2xl:grid-cols-[minmax(0,760px)_minmax(460px,620px)]',
+    )
+    expect(heroSource).toContain(
+      '[@media(width>=1920px)]:grid-cols-[minmax(0,820px)_minmax(520px,760px)]',
+    )
+    expect(heroSource).toContain(
+      '[@media(width>=2560px)]:grid-cols-[minmax(0,920px)_minmax(680px,940px)]',
+    )
+    expect(heroSource).toContain(
+      '[@media(width>=3200px)]:grid-cols-[minmax(0,1040px)_minmax(760px,1120px)]',
+    )
+    expect(heroSource).toContain('2xl:max-w-[620px]')
+    expect(heroSource).toContain('[@media(width>=1920px)]:max-w-[760px]')
+    expect(heroSource).toContain('[@media(width>=2560px)]:max-w-[940px]')
+    expect(heroSource).toContain('[@media(width>=3200px)]:max-w-[1120px]')
+    expect(navSource).toContain('2xl:max-w-[1440px]')
+    expect(navSource).toContain('[@media(width>=1920px)]:max-w-[1760px]')
+    expect(navSource).toContain('[@media(width>=2560px)]:max-w-[2200px]')
+    expect(navSource).toContain('[@media(width>=3200px)]:max-w-[2600px]')
+  })
+
   it('renders indexed product paths instead of card-first feature pillars', () => {
     render(<BentoFeatureGrid />)
 

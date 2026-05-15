@@ -69,6 +69,10 @@ const CURB_THICKNESS = 0.022
 const ROAD_MARKING_THICKNESS = 0.003
 const MODEL_ROTATION_SPEED = 0.11
 export const LOT_MODEL_GROUP_POSITION: Vector3Tuple = [0, 0.08, 0]
+export const HERO_LOT_CAMERA_POSITION: Vector3Tuple = [4.25, 5.85, 7.8]
+export const HERO_LOT_CAMERA_FOV = 27
+export const HERO_LOT_STAGE_CLASS =
+  'absolute inset-x-[-24%] bottom-[calc(var(--hero-slider-stack-height)+0.5rem)] top-[calc(var(--hero-question-card-height)+0.75rem)] overflow-visible'
 
 export interface SetbackValues {
   front: number
@@ -865,7 +869,7 @@ const LotScene = ({
 }) => (
   <>
     <SceneInvalidator rotationPlaying={rotationPlaying} />
-    <PerspectiveCamera makeDefault position={[3.28, 4.92, 6.05]} fov={24} onUpdate={(camera) => camera.lookAt(0, 0, 0)} />
+    <PerspectiveCamera makeDefault position={HERO_LOT_CAMERA_POSITION} fov={HERO_LOT_CAMERA_FOV} onUpdate={(camera) => camera.lookAt(0, 0, 0)} />
     <ambientLight intensity={1.18} />
     <directionalLight position={[2.2, 3.4, 4.2]} intensity={0.92} color={LOT_COLORS.surface} />
     <directionalLight position={[-2.4, 1.8, 1.6]} intensity={0.28} color={LOT_COLORS.surfaceSoft} />
@@ -1123,7 +1127,7 @@ export const HeroHousePreview = () => {
       {webGLAvailable === null ? null : (
         <div
           data-testid='hero-lot-model-stage'
-          className='absolute inset-x-[-14%] bottom-[var(--hero-slider-stack-height)] top-[calc(var(--hero-question-card-height)+0.25rem)] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent_0%,black_8%,black_92%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_8%,black_92%,transparent_100%)]'
+          className={HERO_LOT_STAGE_CLASS}
         >
           {webGLAvailable && !reducedMotion ? (
             <WebGLErrorBoundary fallback={<LotUnavailableFallback />}>
