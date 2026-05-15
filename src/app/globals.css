@@ -297,6 +297,20 @@
     @apply mb-4 last:mb-0 max-w-[72ch];
   }
 
+  &.wiki-article-columns {
+    @apply xl:columns-2 2xl:columns-2;
+    column-gap: 2.25rem;
+  }
+
+  &.wiki-article-columns :where(p, ul, ol):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply max-w-none;
+    break-inside: avoid;
+  }
+
+  &.wiki-article-columns :where(h1, h2, h3, h4, blockquote, pre, table, hr, .not-prose):not(:where([class~="not-prose"] *)) {
+    break-inside: avoid;
+  }
+
   & :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
     @apply font-semibold;
   }
