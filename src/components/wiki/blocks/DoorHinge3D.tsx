@@ -2,7 +2,7 @@
 
 import React, { Suspense, useMemo } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { Bounds, ContactShadows, Environment, Html, OrbitControls, RoundedBox } from '@react-three/drei'
+import { Bounds, ContactShadows, OrbitControls, RoundedBox } from '@react-three/drei'
 import * as THREE from 'three'
 
 type HingeType =
@@ -141,16 +141,6 @@ function CountersinkRing({ position, radius = 0.082 }: { position: [number, numb
   )
 }
 
-function LeafLabel({ children, position }: { children: React.ReactNode; position: [number, number, number] }) {
-  return (
-    <Html position={position} center className="pointer-events-none select-none">
-      <span className="rounded-full border border-slate-200 bg-white/85 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.12em] text-slate-500 shadow-sm">
-        {children}
-      </span>
-    </Html>
-  )
-}
-
 function Screw({
   position,
   radius = 0.055,
@@ -165,7 +155,7 @@ function Screw({
       {head === 'countersunk' && <CountersinkRing position={[0, 0, -0.002]} radius={radius * 1.22} />}
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         {head === 'countersunk' ? (
-          <coneGeometry args={[radius * 1.18, radius * 0.42, 0.03, 32]} />
+          <coneGeometry args={[radius * 1.18, 0.03, 32]} />
         ) : (
           <sphereGeometry args={[radius, 24, 10, 0, Math.PI * 2, 0, Math.PI / 2]} />
         )}
@@ -297,8 +287,6 @@ function StandardButt({ type, definition }: { type: HingeType; definition: Hinge
           </mesh>
         </group>
       )}
-      {type === 'ball-bearing' && <LeafLabel position={[0.42, 1.08, 0.35]}>bearing collars</LeafLabel>}
-      {type === 'loose-pin' && <LeafLabel position={[0.42, 1.42, 0.34]}>raised pin</LeafLabel>}
       {bearingPositions.map((y) => (
         <group key={y} position={[0, y, 0.08]}>
           <mesh rotation={[0, 0, Math.PI / 2]}>
@@ -361,7 +349,6 @@ function PivotHinge({ definition }: { definition: HingeDefinition }) {
         <cylinderGeometry args={[0.028, 0.028, 2.04, 32]} />
         <meshStandardMaterial color="#0f172a" metalness={0.7} roughness={0.35} />
       </mesh>
-      <LeafLabel position={[0.42, 0, 0.44]}>pivot axis</LeafLabel>
     </group>
   )
 }
@@ -407,7 +394,6 @@ function ConcealedHinge({ definition }: { definition: HingeDefinition }) {
       ))}
       <Screw position={[-0.48, 0.34, 0.145]} radius={0.038} />
       <Screw position={[0.48, -0.34, 0.145]} radius={0.038} />
-      <LeafLabel position={[0, 0.63, 0.34]}>hidden linkage</LeafLabel>
     </group>
   )
 }
@@ -422,7 +408,6 @@ function ParliamentHinge({ definition }: { definition: HingeDefinition }) {
       <RoundedPlate position={[0.22, 0, 0.02]} width={0.42} height={1.52} depth={0.045} color="#a78bfa" radius={0.035} />
       <Knuckles height={1.7} count={5} color={definition.accentColor} />
       <PinBar height={1.8} color={definition.accentColor} />
-      <LeafLabel position={[0.52, 0.92, 0.34]}>wide throw</LeafLabel>
     </group>
   )
 }
@@ -445,7 +430,6 @@ function StrapHinge({ definition }: { definition: HingeDefinition }) {
       {[-0.46, -0.12, 0.28, 0.66].map((x) => <Screw key={x} position={[x, 0, 0.09]} radius={0.06} head="round" />)}
       <Screw position={[-0.66, 0.38, 0.09]} radius={0.055} head="round" />
       <Screw position={[-0.66, -0.38, 0.09]} radius={0.055} head="round" />
-      <LeafLabel position={[0.3, 0.42, 0.32]}>face strap</LeafLabel>
     </group>
   )
 }
@@ -468,10 +452,10 @@ function Scene({ type }: { type: HingeType }) {
   return (
     <>
       <color attach="background" args={['#f8fafc']} />
-      <ambientLight intensity={0.72} />
-      <directionalLight position={[2.5, 3.5, 4]} intensity={1.25} />
-      <directionalLight position={[-3, 2, -2]} intensity={0.38} />
-      <Environment preset="studio" />
+      <ambientLight intensity={0.78} />
+      <directionalLight position={[2.5, 3.5, 4]} intensity={1.35} />
+      <directionalLight position={[-3, 2, -2]} intensity={0.42} />
+      <pointLight position={[0, 1.8, 2.5]} intensity={0.45} />
       <Bounds fit clip observe margin={1.35}>
         <group rotation={[0.08, -0.36, 0]}>
           <HingeModel type={type} />
@@ -492,11 +476,6 @@ function Scene({ type }: { type: HingeType }) {
         minPolarAngle={0.35}
         maxPolarAngle={Math.PI / 1.72}
       />
-      <Html position={[0, -1.46, 0]} center className="pointer-events-none select-none">
-        <span className="rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-slate-500 shadow-sm">
-          orbit · limited zoom · pan
-        </span>
-      </Html>
     </>
   )
 }
