@@ -38,6 +38,12 @@ Exam shortcut: if the user sees, touches, or operates it on the finished door, i
 
 </Tip>
 
+<RevealBlock prompt="Recall check: before revealing, decide whether a visible door hinge is finishing hardware or rough hardware." label="Reveal the classification" blurRadius={8}>
+
+A visible door hinge belongs to **finishing hardware** because it is exposed, selected for coordinated appearance, and operated as part of the completed door assembly. Rough hardware is normally concealed or constructional, such as nails, bolts, rods, and hidden fasteners.
+
+</RevealBlock>
+
 Source: Salvan, *Architectural Building Materials*, hardware section, raw PDF p. 173.
 
 ## The Door Hardware Set
@@ -138,6 +144,13 @@ Source: BCI, Door Hinges 8.18. Source: Salvan, full-surface hinge, raw PDF p. 17
 A **loose-joint hinge** allows the door to be lifted off the vertical pin without unscrewing the hinge. Salvan describes it as having two knuckles, one with a vertical pin that fits into a corresponding hole in the other.
 
 This is useful when the door or panel must be removable for access, maintenance, or furniture-like construction. The exam trap is to confuse it with a loose-pin hinge. A loose-pin hinge separates by removing the pin; a loose-joint hinge separates by lifting one hinge member off the fixed pin.
+
+<RevealBlock prompt="Recall check: loose-pin or loose-joint? Say the removal action before revealing." label="Reveal the hinge distinction" blurRadius={8}>
+
+- **Loose-pin hinge:** separate the leaves by removing the pin.
+- **Loose-joint hinge:** separate the members by lifting one part off the fixed vertical pin.
+
+</RevealBlock>
 
 Source: Salvan, loose-joint hinge, raw PDF p. 177.
 
@@ -312,6 +325,8 @@ Do not write “Grade 1 hinge is required” or “BHMA requires this door hardw
 
 Supplementary source status: BHMA/ANSI-BHMA public standards overview and manufacturer technical literature should be verified by URL before final learner-facing publication.
 
+<ElaborativeInterrogation promptId="door-hardware-catalog-vs-code" question="Why should a product catalog or foreign hardware standard be treated differently from a Philippine legal requirement in an LEA-style question?" type="open" placeholder="Write the difference between vocabulary/specification guidance and governing code authority." revealText="A catalog or foreign standard can help identify hardware vocabulary, grades, finishes, mounting options, and performance language. It does not automatically create a Philippine legal requirement. If the question asks for a code requirement, the answer must come from the governing Philippine code, fire-safety rule, accessibility source, project specification, or source named in the problem." options='[]' />
+
 ## Accessibility, Egress, and Fire-Door Cautions
 
 Door hardware can affect accessibility, emergency egress, and fire/life-safety performance. Treat these as coordination issues, not decoration.
@@ -349,29 +364,7 @@ A second coordination issue appears in the coastal environment. If the restauran
 
 ## Common Exam Traps
 
-### Trap 1: Treating a hinge as any metal part on a door
-
-A hinge specifically supports and turns the door. A lockset secures it. A closer returns it. A panic device releases it. A stop limits movement. Name the function before choosing the term.
-
-### Trap 2: Confusing loose-pin and loose-joint hinges
-
-A loose-pin hinge separates by removing the pin. A loose-joint hinge separates by lifting one part off the vertical pin. Both can help with removal, but the mechanism is different.
-
-### Trap 3: Confusing spring hinges with door closers
-
-Spring hinges provide spring return. Door closers are hydraulic or pneumatic devices that control closing more deliberately. If the question mentions reducing shock, quiet closing, surface-mounted/concealed closer mechanisms, or coordination of paired leaves, it is pointing to closers rather than ordinary spring hinges.
-
-### Trap 4: Assuming panic hardware is universal
-
-Panic hardware is associated with emergency egress doors in certain occupancies and conditions. Do not specify it for every door unless the governing code condition requires it.
-
-### Trap 5: Thinking “finish” means decorative only
-
-Finishing hardware is exposed and often contributes to appearance, but it still performs a technical function. Hinges, locks, pulls, closers, and plates are not ornaments; they make the door assembly work.
-
-### Trap 6: Treating a product catalog as a code
-
-Manufacturer catalogs and standards overviews are useful for vocabulary, options, and performance concepts. They are not automatically legal requirements for a Philippine project. If the question asks for a code requirement, use the governing code source, not a brand guide.
+<WikiMistakeList mistakes='[{"mistake":"Treating a hinge as any metal part on a door","correction":"A hinge supports and turns the door. A lockset secures it. A closer returns it. A panic device releases it. A stop limits movement.","context":"Name the function before choosing the term. Door hardware questions usually reward action-based recognition, not memorized shopping-list vocabulary."},{"mistake":"Confusing loose-pin and loose-joint hinges","correction":"Loose-pin means the pin is removed. Loose-joint means one hinge member is lifted off a fixed vertical pin.","context":"Both can help with door or panel removal, but the mechanism is different. The verb in the question is the clue: remove the pin versus lift off the member."},{"mistake":"Confusing spring hinges with door closers","correction":"A spring hinge provides spring return. A door closer is a hydraulic or pneumatic device that controls closing more deliberately.","context":"If the question mentions reducing shock, quiet closing, closer arms, concealed/surface closers, or sequencing paired leaves, it is pointing to a closer rather than an ordinary spring hinge."},{"mistake":"Assuming panic hardware is universal","correction":"Panic hardware is associated with emergency egress doors in certain occupancies and conditions, not every door.","context":"Do not specify panic hardware from habit. If the question asks for a requirement, check the governing code condition or the source named in the problem."},{"mistake":"Thinking finish means decorative only","correction":"Finishing hardware is exposed, but it still performs technical work: support, latching, locking, pulling, closing, protection, and sealing.","context":"The word finishing tells you the item is visible or touchable in the completed work. It does not mean ornamental or optional."},{"mistake":"Treating a product catalog as a code","correction":"Manufacturer catalogs and standards overviews are vocabulary and specification aids, not automatic Philippine legal mandates.","context":"If the question asks for a code requirement, use the governing Philippine source, project specification, or source named in the problem, not a brand guide by default."}]' />
 
 ## Quick Recall Drill
 
