@@ -1,0 +1,15 @@
+test_id,rule_id,input_context,input_values,expected_status,expected_message,notes
+PARK-STD-WIDTH-BELOW,PARK-PD1096-STD-STALL,standard_90_deg,"slot_width_m=2.40; slot_length_m=5.00",FORMULA_ISSUE,width below pending minimum,Threshold TBD until raw source approved
+PARK-STD-WIDTH-AT,PARK-PD1096-STD-STALL,standard_90_deg,"slot_width_m=2.50; slot_length_m=5.00",CALCULATION_OK,at pending minimum,Only if source confirms 2.50m x 5.00m
+PARK-STD-LENGTH-BELOW,PARK-PD1096-STD-STALL,standard_90_deg,"slot_width_m=2.50; slot_length_m=4.90",FORMULA_ISSUE,length below pending minimum,Threshold TBD until raw source approved
+PARK-PARALLEL-AT,PARK-PD1096-PARALLEL,parallel,"slot_width_m=2.15; slot_length_m=6.00",CALCULATION_OK,at pending parallel minimum,Confirm source family
+PARK-AISLE-90-BELOW,PARK-PD1096-AISLE-90,standard_90_deg,"aisle_width_m=5.90; circulation=two_way",FORMULA_ISSUE,aisle below pending minimum,Do not show source-backed violation until approved
+PARK-BP344-COUNT-25,PARK-BP344-ACCESSIBLE-COUNT,accessible_parking,"total_spaces=25; accessible_spaces=1",CALCULATION_OK,accessible count meets pending table,Verify Table A.6.1 exact row
+PARK-BP344-COUNT-26-LOW,PARK-BP344-ACCESSIBLE-COUNT,accessible_parking,"total_spaces=26; accessible_spaces=1",FORMULA_ISSUE,accessible count below pending table,Expected required count TBD by source table
+PARK-BP344-GEOM-CONFLICT,PARK-BP344-ACCESSIBLE-GEOM,accessible_parking,"stall_width_m=3.70; stall_length_m=5.00; access_aisle_m=TBD",REVIEW,accessible geometry conflict unresolved,Blocks implementation until BP344 dimension conflict resolved
+PARK-BP220-RATIO-8,PARK-BP220-RATIO,bp220_multifamily,"living_units=8; parking_slots=1",CALCULATION_OK,one slot per eight units if source confirms,Raw locator required
+PARK-BP220-RATIO-9-LOW,PARK-BP220-RATIO,bp220_multifamily,"living_units=9; parking_slots=1",REVIEW,rounding/fraction rule needs source interpretation,Do not assume ceiling until verified
+PARK-BP220-OFFSITE-100,PARK-BP220-OFFSITE,bp220_condominium,"offsite_distance_m=100",CALCULATION_OK,at pending distance limit,Verify wording: not 100m away vs not more than 100m
+PARK-BP220-OFFSITE-101,PARK-BP220-OFFSITE,bp220_condominium,"offsite_distance_m=101",FORMULA_ISSUE,exceeds pending distance limit,Only after locator ready
+PARK-LGU-STRICTER,PARK-LGU-OVERLAY,local_overlay,"national_required=10; local_required=12; provided=11",REVIEW,local stricter overlay controls only if selected,Needs actual ordinance source
+PARK-SOURCE-PENDING-LABEL,PARK-BP344-ACCESSIBLE-COUNT,source_pending_ui,"total_spaces=25; accessible_spaces=1; source_status=SOURCE_PENDING",CALCULATION_OK,no COMPLIANT label,Regression test must prevent COMPLIANT/VIOLATION leakage
