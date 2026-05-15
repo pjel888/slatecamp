@@ -349,27 +349,27 @@ A second coordination issue appears in the coastal environment. If the restauran
 
 ## Common Exam Traps
 
-### Trap 1 — Treating a hinge as any metal part on a door
+### Trap 1: Treating a hinge as any metal part on a door
 
 A hinge specifically supports and turns the door. A lockset secures it. A closer returns it. A panic device releases it. A stop limits movement. Name the function before choosing the term.
 
-### Trap 2 — Confusing loose-pin and loose-joint hinges
+### Trap 2: Confusing loose-pin and loose-joint hinges
 
 A loose-pin hinge separates by removing the pin. A loose-joint hinge separates by lifting one part off the vertical pin. Both can help with removal, but the mechanism is different.
 
-### Trap 3 — Confusing spring hinges with door closers
+### Trap 3: Confusing spring hinges with door closers
 
 Spring hinges provide spring return. Door closers are hydraulic or pneumatic devices that control closing more deliberately. If the question mentions reducing shock, quiet closing, surface-mounted/concealed closer mechanisms, or coordination of paired leaves, it is pointing to closers rather than ordinary spring hinges.
 
-### Trap 4 — Assuming panic hardware is universal
+### Trap 4: Assuming panic hardware is universal
 
 Panic hardware is associated with emergency egress doors in certain occupancies and conditions. Do not specify it for every door unless the governing code condition requires it.
 
-### Trap 5 — Thinking “finish” means decorative only
+### Trap 5: Thinking “finish” means decorative only
 
 Finishing hardware is exposed and often contributes to appearance, but it still performs a technical function. Hinges, locks, pulls, closers, and plates are not ornaments; they make the door assembly work.
 
-### Trap 6 — Treating a product catalog as a code
+### Trap 6: Treating a product catalog as a code
 
 Manufacturer catalogs and standards overviews are useful for vocabulary, options, and performance concepts. They are not automatically legal requirements for a Philippine project. If the question asks for a code requirement, use the governing code source, not a brand guide.
 
