@@ -100,6 +100,8 @@ Board trap: do not confuse the hinge name with the door type. A flush door, pane
 
 Source: Salvan, butt hinge, raw PDF p. 177. Source: BCI, Door Hinges 8.18.
 
+<DoorHinge3D type="butt" />
+
 ### Fixed-Pin, Loose-Pin, and Security-Pin Hinges
 
 A **fixed-pin hinge** has the pin fastened permanently in place. A **loose-pin hinge** has a removable pin that allows the two hinge leaves to be separated, so the door can be removed more easily.
@@ -109,6 +111,8 @@ The difference is not the door swing. The difference is whether the pin can be r
 Modern hardware catalogs often use related vocabulary such as **non-removable pin** or security hinge. Treat those as specification/security terms, not as separate basic movement categories unless the question gives the term directly.
 
 Source: Salvan, fixed-pin and loose-pin hinge entries, raw PDF p. 177. Source: BCI, Door Hinges 8.18. Supplementary industry vocabulary: Hager and McKinney hinge product literature, to be verified before learner-facing specification use.
+
+<DoorHinge3D type="loose-pin" />
 
 ### Full-Mortise, Half-Mortise, Half-Surface, and Full-Surface Hinges
 
@@ -145,6 +149,8 @@ For the LEA, use this as applied vocabulary. If a question says the door is heav
 
 Supplementary source status: industry/manufacturer vocabulary; verify exact product claims before specification use.
 
+<DoorHinge3D type="ball-bearing" />
+
 ### Spring Hinge
 
 A **spring hinge** contains one or more springs that help return the door after opening. Salvan identifies spring hinges as acting in one direction or in both directions. BCI describes spring hinges as having coiled springs in the barrels for closing a door automatically.
@@ -154,6 +160,8 @@ A **single-acting spring hinge** assists return in one swing direction. A **doub
 Board trap: a spring hinge is not the same as a full door closer. A door closer is usually a hydraulic or pneumatic device that controls closing action more deliberately. A spring hinge provides spring return but does not necessarily give the same controlled closing performance.
 
 Source: Salvan, spring hinges, raw PDF p. 181. Source: BCI, Door Hinges 8.18.
+
+<DoorHinge3D type="spring" />
 
 ### Double-Acting Hinge
 
@@ -173,6 +181,8 @@ Industry catalogs often distinguish **center-hung**, **offset**, and **intermedi
 
 Source: Salvan, pivot hinge and vertical spring pivot hinge, raw PDF pp. 181–183. Source: BCI, Door Hinges 8.18. Supplementary industry vocabulary: door-control/pivot manufacturer literature, to be verified before detailed specification use.
 
+<DoorHinge3D type="pivot" />
+
 ### Piano / Continuous Hinge
 
 A **piano hinge**, also called a continuous hinge in many specifications, is a long, narrow hinge running the full length of the two joined surfaces. Instead of carrying the door on two or three separated hinges, the load is distributed continuously along the edge.
@@ -180,6 +190,8 @@ A **piano hinge**, also called a continuous hinge in many specifications, is a l
 Use it for cabinet lids, access panels, long doors, or conditions where continuous support and alignment matter. For exam purposes, the word **piano** is the giveaway: long, narrow, full-length hinge.
 
 Source: BCI, Door Hinges 8.18.
+
+<DoorHinge3D type="continuous" />
 
 ### Invisible / Concealed Hinge
 
@@ -189,6 +201,8 @@ Use it where the design intent is a clean, flush, hidden-joint appearance. In a 
 
 Source: BCI, Door Hinges 8.18.
 
+<DoorHinge3D type="concealed" />
+
 ### Parliament, Wide-Throw, Swing-Clear, and Olive-Knuckle Hinges
 
 BCI identifies **parliament hinges** as having T-shaped leaves and a protruding knuckle so that a door can stand away from the wall when fully opened. It identifies **olive-knuckle hinges** as hinges with a single pivoting joint and an oval-shaped knuckle. Salvan also records the paumelle/olive-knuckle vocabulary.
@@ -196,6 +210,10 @@ BCI identifies **parliament hinges** as having T-shaped leaves and a protruding 
 Modern hardware vocabulary also uses terms such as **wide-throw** and **swing-clear** for hinges that help move the door leaf farther from the frame or opening line. These terms are useful for recognition, but they should be checked against the actual manufacturer detail before being used in a specification.
 
 Source: BCI, Door Hinges 8.18. Source: Salvan, paumelle and olive-knuckle hinge entries, raw PDF p. 181. Supplementary industry vocabulary: manufacturer hinge literature, to be verified before specification use.
+
+<DoorHinge3D type="parliament" />
+
+<DoorHinge3D type="strap" />
 
 ## Hinge Recognition Matrix
 
@@ -408,8 +426,7 @@ Suggested hinge set for v1:
 7. Invisible / concealed hinge.
 8. Parliament / wide-throw or strap/T hinge as advanced recognition.
 
-<!-- Enable after the 3D module is registered. -->
-<!-- <Lab3DWidget moduleId="door-hinge-types" caption="Orbit each hinge type and identify the pivot axis, leaves, and door movement." /> -->
+The article embeds compact 3D study canvases beside the hinge families instead of sending the learner to the full 3D Lab. Each model is intentionally simple: orbit, limited zoom, and light panning only. The task is visual recognition, not code compliance simulation.
 
 ## Linked-Question Bridge
 

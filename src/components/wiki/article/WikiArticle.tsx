@@ -46,6 +46,7 @@ import { WikiTableTabs } from '../blocks/WikiTableTabs'
 import { WikiPre } from '../blocks/WikiPre'
 import { GenericBlock, SPP206RefServices, SPP207RefServices } from '../blocks/GenericBlock'
 import { ArticleMedia } from '../blocks/ArticleMedia'
+import { DoorHinge3D } from '../blocks/DoorHinge3D'
 
 interface WikiArticleProps {
   article: WikiArticleType
@@ -218,6 +219,7 @@ const WIKI_COMPONENTS = {
 
   // Article media — images, carousels, YouTube embeds, video, embeds
   ArticleMedia,
+  DoorHinge3D,
 }
 
 export const getArticleHeadings = (article: WikiArticleType): TocHeading[] => {

@@ -65,6 +65,7 @@ export const REGISTERED_WIKI_COMPONENTS: ReadonlySet<string> = new Set([
   'WikiReference',
   'Mermaid',
   'ArticleMedia',
+  'DoorHinge3D',
 
   // Generic passthrough (AI-hallucinated or legacy component names)
   'ConflictMatrix',
@@ -134,6 +135,7 @@ export const BLOCK_WIKI_COMPONENTS: ReadonlySet<string> = new Set([
  */
 export const SELF_CLOSING_WIKI_COMPONENTS: ReadonlySet<string> = new Set([
   'ArticleMedia',
+  'DoorHinge3D',
   'WikiTableTabs',
   'WikiReference',
   'Mermaid',
