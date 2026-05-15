@@ -2,7 +2,7 @@
 
 import React, { Suspense, useMemo } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { Bounds, ContactShadows, Html, OrbitControls } from '@react-three/drei'
+import { Bounds, ContactShadows, Environment, Html, OrbitControls, RoundedBox } from '@react-three/drei'
 import * as THREE from 'three'
 
 type HingeType =
@@ -86,6 +86,71 @@ const PIN = '#374151'
 const DOOR = '#e5e7eb'
 const FRAME = '#d1d5db'
 
+const BRUSH_LINES = '#f8fafc'
+
+function SteelMaterial({
+  color = DEFAULT_LEAF,
+  roughness = 0.34,
+  metalness = 0.72,
+  opacity = 1,
+}: {
+  color?: string
+  roughness?: number
+  metalness?: number
+  opacity?: number
+}) {
+  return (
+    <meshStandardMaterial
+      color={color}
+      roughness={roughness}
+      metalness={metalness}
+      transparent={opacity < 1}
+      opacity={opacity}
+    />
+  )
+}
+
+function RoundedPlate({
+  position = [0, 0, 0],
+  width,
+  height,
+  depth = 0.06,
+  color = DEFAULT_LEAF,
+  radius = 0.035,
+}: {
+  position?: [number, number, number]
+  width: number
+  height: number
+  depth?: number
+  color?: string
+  radius?: number
+}) {
+  return (
+    <RoundedBox args={[width, height, depth]} radius={radius} smoothness={6} position={position}>
+      <SteelMaterial color={color} />
+    </RoundedBox>
+  )
+}
+
+function CountersinkRing({ position, radius = 0.082 }: { position: [number, number, number]; radius?: number }) {
+  return (
+    <mesh position={position} rotation={[Math.PI / 2, 0, 0]}>
+      <torusGeometry args={[radius, radius * 0.08, 12, 36]} />
+      <meshStandardMaterial color="#f1f5f9" roughness={0.24} metalness={0.75} />
+    </mesh>
+  )
+}
+
+function LeafLabel({ children, position }: { children: React.ReactNode; position: [number, number, number] }) {
+  return (
+    <Html position={position} center className="pointer-events-none select-none">
+      <span className="rounded-full border border-slate-200 bg-white/85 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.12em] text-slate-500 shadow-sm">
+        {children}
+      </span>
+    </Html>
+  )
+}
+
 function Screw({
   position,
   radius = 0.055,
@@ -97,6 +162,7 @@ function Screw({
 }) {
   return (
     <group position={position}>
+      {head === 'countersunk' && <CountersinkRing position={[0, 0, -0.002]} radius={radius * 1.22} />}
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         {head === 'countersunk' ? (
           <coneGeometry args={[radius * 1.18, radius * 0.42, 0.03, 32]} />
@@ -143,7 +209,7 @@ function FineGrooves({ width, height }: { width: number; height: number }) {
       {[-0.3, 0, 0.3].map((y) => (
         <mesh key={y} position={[0, y * height, 0]}>
           <boxGeometry args={[width * 0.76, 0.007, 0.006]} />
-          <meshStandardMaterial color="#94a3b8" roughness={0.5} metalness={0.2} transparent opacity={0.45} />
+          <meshStandardMaterial color={BRUSH_LINES} roughness={0.5} metalness={0.2} transparent opacity={0.42} />
         </mesh>
       ))}
     </group>
@@ -153,14 +219,10 @@ function FineGrooves({ width, height }: { width: number; height: number }) {
 function Leaf({ x = 0, width = 0.72, height = 1.8, color = DEFAULT_LEAF }: { x?: number; width?: number; height?: number; color?: string }) {
   return (
     <group position={[x, 0, 0]}>
-      <mesh>
-        <boxGeometry args={[width, height, 0.055]} />
-        <meshStandardMaterial color={color} roughness={0.42} metalness={0.58} />
-      </mesh>
-      <mesh position={[0, 0, 0.034]}>
-        <boxGeometry args={[width * 0.9, height * 0.9, 0.012]} />
-        <meshStandardMaterial color="#cbd5e1" roughness={0.55} metalness={0.28} transparent opacity={0.34} />
-      </mesh>
+      <RoundedPlate width={width} height={height} depth={0.058} color={color} radius={0.04} />
+      <RoundedBox args={[width * 0.9, height * 0.9, 0.012]} radius={0.025} smoothness={4} position={[0, 0, 0.034]}>
+        <meshStandardMaterial color="#cbd5e1" roughness={0.5} metalness={0.32} transparent opacity={0.36} />
+      </RoundedBox>
       <EdgeBevel width={width} height={height} />
       <FineGrooves width={width} height={height} />
       <Screw position={[-width * 0.24, height * 0.28, 0.045]} />
@@ -207,14 +269,8 @@ function Knuckles({ height = 1.9, count = 5, color = PIN }: { height?: number; c
 function DoorFrameReference() {
   return (
     <group position={[0, 0, -0.09]}>
-      <mesh position={[-0.66, 0, 0]}>
-        <boxGeometry args={[0.08, 2.25, 0.05]} />
-        <meshStandardMaterial color={FRAME} roughness={0.85} metalness={0.02} />
-      </mesh>
-      <mesh position={[0.66, 0, 0]}>
-        <boxGeometry args={[0.08, 2.25, 0.05]} />
-        <meshStandardMaterial color={DOOR} roughness={0.85} metalness={0.02} />
-      </mesh>
+      <RoundedPlate position={[-0.66, 0, 0]} width={0.08} height={2.25} depth={0.05} color={FRAME} radius={0.018} />
+      <RoundedPlate position={[0.66, 0, 0]} width={0.08} height={2.25} depth={0.05} color={DOOR} radius={0.018} />
     </group>
   )
 }
@@ -241,6 +297,8 @@ function StandardButt({ type, definition }: { type: HingeType; definition: Hinge
           </mesh>
         </group>
       )}
+      {type === 'ball-bearing' && <LeafLabel position={[0.42, 1.08, 0.35]}>bearing collars</LeafLabel>}
+      {type === 'loose-pin' && <LeafLabel position={[0.42, 1.42, 0.34]}>raised pin</LeafLabel>}
       {bearingPositions.map((y) => (
         <group key={y} position={[0, y, 0.08]}>
           <mesh rotation={[0, 0, Math.PI / 2]}>
@@ -282,18 +340,9 @@ function SpringHinge({ definition }: { definition: HingeDefinition }) {
 function PivotHinge({ definition }: { definition: HingeDefinition }) {
   return (
     <group>
-      <mesh position={[0, 0, -0.06]}>
-        <boxGeometry args={[1.15, 2.05, 0.06]} />
-        <meshStandardMaterial color={DOOR} roughness={0.9} />
-      </mesh>
-      <mesh position={[0, -1.14, 0.02]}>
-        <boxGeometry args={[0.82, 0.12, 0.32]} />
-        <meshStandardMaterial color={definition.accentColor} metalness={0.6} roughness={0.34} />
-      </mesh>
-      <mesh position={[0, 1.14, 0.02]}>
-        <boxGeometry args={[0.82, 0.12, 0.32]} />
-        <meshStandardMaterial color={definition.accentColor} metalness={0.6} roughness={0.34} />
-      </mesh>
+      <RoundedPlate position={[0, 0, -0.06]} width={1.15} height={2.05} depth={0.06} color={DOOR} radius={0.035} />
+      <RoundedPlate position={[0, -1.14, 0.02]} width={0.82} height={0.12} depth={0.32} color={definition.accentColor} radius={0.035} />
+      <RoundedPlate position={[0, 1.14, 0.02]} width={0.82} height={0.12} depth={0.32} color={definition.accentColor} radius={0.035} />
       {[-0.28, 0.28].map((x) => (
         <React.Fragment key={x}>
           <Screw position={[x, -1.14, 0.19]} />
@@ -312,6 +361,7 @@ function PivotHinge({ definition }: { definition: HingeDefinition }) {
         <cylinderGeometry args={[0.028, 0.028, 2.04, 32]} />
         <meshStandardMaterial color="#0f172a" metalness={0.7} roughness={0.35} />
       </mesh>
+      <LeafLabel position={[0.42, 0, 0.44]}>pivot axis</LeafLabel>
     </group>
   )
 }
@@ -337,14 +387,8 @@ function ContinuousHinge({ definition }: { definition: HingeDefinition }) {
 function ConcealedHinge({ definition }: { definition: HingeDefinition }) {
   return (
     <group>
-      <mesh position={[-0.48, 0, -0.04]}>
-        <boxGeometry args={[0.45, 1.25, 0.08]} />
-        <meshStandardMaterial color={FRAME} roughness={0.85} />
-      </mesh>
-      <mesh position={[0.48, 0, -0.04]}>
-        <boxGeometry args={[0.45, 1.25, 0.08]} />
-        <meshStandardMaterial color={DOOR} roughness={0.85} />
-      </mesh>
+      <RoundedPlate position={[-0.48, 0, -0.04]} width={0.45} height={1.25} depth={0.08} color={FRAME} radius={0.04} />
+      <RoundedPlate position={[0.48, 0, -0.04]} width={0.45} height={1.25} depth={0.08} color={DOOR} radius={0.04} />
       <mesh position={[-0.48, 0.34, 0.08]}>
         <cylinderGeometry args={[0.22, 0.22, 0.06, 48]} />
         <meshStandardMaterial color={definition.accentColor} roughness={0.48} metalness={0.42} />
@@ -353,14 +397,8 @@ function ConcealedHinge({ definition }: { definition: HingeDefinition }) {
         <cylinderGeometry args={[0.22, 0.22, 0.06, 48]} />
         <meshStandardMaterial color={definition.accentColor} roughness={0.48} metalness={0.42} />
       </mesh>
-      <mesh position={[0, 0.12, 0.1]} rotation={[0, 0, -0.42]}>
-        <boxGeometry args={[0.82, 0.11, 0.06]} />
-        <meshStandardMaterial color="#64748b" metalness={0.6} roughness={0.35} />
-      </mesh>
-      <mesh position={[0, -0.12, 0.1]} rotation={[0, 0, 0.42]}>
-        <boxGeometry args={[0.82, 0.11, 0.06]} />
-        <meshStandardMaterial color="#475569" metalness={0.6} roughness={0.35} />
-      </mesh>
+      <group rotation={[0, 0, -0.42]}><RoundedPlate position={[0, 0.12, 0.1]} width={0.82} height={0.11} depth={0.06} color="#64748b" radius={0.025} /></group>
+      <group rotation={[0, 0, 0.42]}><RoundedPlate position={[0, -0.12, 0.1]} width={0.82} height={0.11} depth={0.06} color="#475569" radius={0.025} /></group>
       {[[-0.2, 0.24], [0.2, -0.24], [0, 0]].map(([x, y]) => (
         <mesh key={`${x}-${y}`} position={[x, y, 0.145]}>
           <sphereGeometry args={[0.045, 24, 16]} />
@@ -369,6 +407,7 @@ function ConcealedHinge({ definition }: { definition: HingeDefinition }) {
       ))}
       <Screw position={[-0.48, 0.34, 0.145]} radius={0.038} />
       <Screw position={[0.48, -0.34, 0.145]} radius={0.038} />
+      <LeafLabel position={[0, 0.63, 0.34]}>hidden linkage</LeafLabel>
     </group>
   )
 }
@@ -379,16 +418,11 @@ function ParliamentHinge({ definition }: { definition: HingeDefinition }) {
       <DoorFrameReference />
       <Leaf x={-0.56} width={0.52} height={1.6} />
       <Leaf x={0.56} width={0.52} height={1.6} />
-      <mesh position={[-0.22, 0, 0.02]}>
-        <boxGeometry args={[0.42, 1.52, 0.045]} />
-        <meshStandardMaterial color="#a78bfa" roughness={0.5} metalness={0.35} />
-      </mesh>
-      <mesh position={[0.22, 0, 0.02]}>
-        <boxGeometry args={[0.42, 1.52, 0.045]} />
-        <meshStandardMaterial color="#a78bfa" roughness={0.5} metalness={0.35} />
-      </mesh>
+      <RoundedPlate position={[-0.22, 0, 0.02]} width={0.42} height={1.52} depth={0.045} color="#a78bfa" radius={0.035} />
+      <RoundedPlate position={[0.22, 0, 0.02]} width={0.42} height={1.52} depth={0.045} color="#a78bfa" radius={0.035} />
       <Knuckles height={1.7} count={5} color={definition.accentColor} />
       <PinBar height={1.8} color={definition.accentColor} />
+      <LeafLabel position={[0.52, 0.92, 0.34]}>wide throw</LeafLabel>
     </group>
   )
 }
@@ -396,18 +430,9 @@ function ParliamentHinge({ definition }: { definition: HingeDefinition }) {
 function StrapHinge({ definition }: { definition: HingeDefinition }) {
   return (
     <group>
-      <mesh position={[0.2, 0, -0.06]}>
-        <boxGeometry args={[1.6, 1.7, 0.055]} />
-        <meshStandardMaterial color={DOOR} roughness={0.9} />
-      </mesh>
-      <mesh position={[-0.66, 0, 0.03]}>
-        <boxGeometry args={[0.28, 1.35, 0.08]} />
-        <meshStandardMaterial color={definition.accentColor} roughness={0.45} metalness={0.5} />
-      </mesh>
-      <mesh position={[0.04, 0, 0.035]}>
-        <boxGeometry args={[1.22, 0.2, 0.075]} />
-        <meshStandardMaterial color={definition.accentColor} roughness={0.42} metalness={0.55} />
-      </mesh>
+      <RoundedPlate position={[0.2, 0, -0.06]} width={1.6} height={1.7} depth={0.055} color={DOOR} radius={0.035} />
+      <RoundedPlate position={[-0.66, 0, 0.03]} width={0.28} height={1.35} depth={0.08} color={definition.accentColor} radius={0.035} />
+      <RoundedPlate position={[0.04, 0, 0.035]} width={1.22} height={0.2} depth={0.075} color={definition.accentColor} radius={0.05} />
       <mesh position={[0.72, 0, 0.035]} rotation={[0, 0, Math.PI / 4]}>
         <boxGeometry args={[0.34, 0.34, 0.075]} />
         <meshStandardMaterial color={definition.accentColor} roughness={0.42} metalness={0.55} />
@@ -420,6 +445,7 @@ function StrapHinge({ definition }: { definition: HingeDefinition }) {
       {[-0.46, -0.12, 0.28, 0.66].map((x) => <Screw key={x} position={[x, 0, 0.09]} radius={0.06} head="round" />)}
       <Screw position={[-0.66, 0.38, 0.09]} radius={0.055} head="round" />
       <Screw position={[-0.66, -0.38, 0.09]} radius={0.055} head="round" />
+      <LeafLabel position={[0.3, 0.42, 0.32]}>face strap</LeafLabel>
     </group>
   )
 }
@@ -442,9 +468,10 @@ function Scene({ type }: { type: HingeType }) {
   return (
     <>
       <color attach="background" args={['#f8fafc']} />
-      <ambientLight intensity={0.75} />
-      <directionalLight position={[2.5, 3.5, 4]} intensity={1.35} />
-      <directionalLight position={[-3, 2, -2]} intensity={0.35} />
+      <ambientLight intensity={0.72} />
+      <directionalLight position={[2.5, 3.5, 4]} intensity={1.25} />
+      <directionalLight position={[-3, 2, -2]} intensity={0.38} />
+      <Environment preset="studio" />
       <Bounds fit clip observe margin={1.35}>
         <group rotation={[0.08, -0.36, 0]}>
           <HingeModel type={type} />
