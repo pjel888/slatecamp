@@ -3,16 +3,16 @@
  * normalize-distractors.ts
  *
  * Fixes the psychometric flaw where the correct answer is almost always the
- * longest option. Uses Claude to expand distractors (wrong answers) so the
- * correct answer is no longer conspicuously longest.
+ * longest option. Uses the configured AI provider to expand distractors
+ * (wrong answers) so the correct answer is no longer conspicuously longest.
  *
  * Run:      bun scripts/normalize-distractors.ts
  * Dry run:  bun scripts/normalize-distractors.ts --dry-run
  * Limited:  bun scripts/normalize-distractors.ts --limit 25
  */
 
+import { getAIProvider } from "../src/lib/ai/provider";
 import { createClient } from "@supabase/supabase-js";
-import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
 
@@ -52,10 +52,7 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!,
   { auth: { autoRefreshToken: false, persistSession: false } }
 );
-
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY!,
-});
+const aiProvider = getAIProvider();
 
 // ─── System Prompt ──────────────────────────────────────────────────────────────
 
@@ -392,19 +389,13 @@ async function callLLM(
 ): Promise<NormalizedQuestion[]> {
   const payload = JSON.stringify(questions, null, 2);
 
-  const response = await openai.chat.completions.create({
-    model: "gpt-4o",
-    max_tokens: 12000,
+  let rawText = await aiProvider.generateCompletion(payload, {
+    systemPrompt: SYSTEM_PROMPT,
+    maxTokens: 12000,
     temperature: 0,
-    messages: [
-      { role: "system", content: SYSTEM_PROMPT },
-      { role: "user", content: payload },
-    ],
   });
 
-  let rawText = response.choices[0]?.message?.content ?? "";
-
-  // Strip markdown code fences if present (GPT-4o wraps JSON in ```json ... ```)
+  // Strip markdown code fences if present (some providers wrap JSON in ```json ... ```)
   rawText = rawText.replace(/^```(?:json)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
 
   let parsed: NormalizedQuestion[];
@@ -486,7 +477,7 @@ async function run() {
       continue;
     }
 
-    // Dry-run: log diagnostics without calling Claude
+    // Dry-run: log diagnostics without calling the configured AI provider
     if (DRY_RUN) {
       for (const pq of promptBatch) {
         const correctLen = pq.options[pq.answer].length;
@@ -503,7 +494,7 @@ async function run() {
       continue;
     }
 
-    // Live run: call Claude and validate
+    // Live run: call the configured AI provider and validate
     let attempt = 0;
     let success = false;
     const batchOriginalMap = new Map(batch.map((q) => [q.question_id, q]));

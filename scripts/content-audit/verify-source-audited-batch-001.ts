@@ -1,6 +1,6 @@
 import { createContentAuditSupabaseClient, sha256Json } from './lib'
 import { createHash } from 'node:crypto'
-import { readFileSync, existsSync, writeFileSync, readdirSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 
 const articleIds = ['5a8ca807-31d5-4a32-933a-c6b83517c6de','16bb270e-6887-4bbe-a62e-eace6c4d3fdb','ae4bdc43-1451-4aa5-8c12-65283f4bbdfd']

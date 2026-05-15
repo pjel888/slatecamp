@@ -51,15 +51,6 @@ if (demoAuthEnabled) {
 env.NEXT_PUBLIC_SUPABASE_ANON_KEY ??= 'ci-anon-key'
 env.NEXT_PUBLIC_SUPABASE_URL ??= 'https://hrpdwqurngnyajuhbkdg.supabase.co'
 
-const localStorageFile =
-  env.PLAYWRIGHT_LOCALSTORAGE_FILE ?? '.next/playwright-node-localstorage.json'
-const localStorageNodeOption = `--localstorage-file=${localStorageFile}`
-env.NODE_OPTIONS = env.NODE_OPTIONS?.trim()
-  ? env.NODE_OPTIONS.includes('--localstorage-file')
-    ? env.NODE_OPTIONS
-    : `${env.NODE_OPTIONS} ${localStorageNodeOption}`
-  : localStorageNodeOption
-
 const nextBin =
   process.platform === 'win32'
     ? './node_modules/.bin/next.cmd'

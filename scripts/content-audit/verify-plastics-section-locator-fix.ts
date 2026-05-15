@@ -14,6 +14,7 @@ const questionId = 'a1eaf1c8-47ba-4a12-97a4-72dbda1dd150'
 const folder = join(process.cwd(), '.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33')
 const candidate = readFileSync(join(folder, 'candidate.md'), 'utf8')
 const candidateHash = 'sha256:' + createHash('sha256').update(candidate).digest('hex')
+
 loadEnvLocal()
 const supabase = createContentAuditSupabaseClient()
 const { data: article, error: articleError } = await supabase.from('wiki_articles').select('article_id,content,updated_at').eq('article_id', articleId).maybeSingle()

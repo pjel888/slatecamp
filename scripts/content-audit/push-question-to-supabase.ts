@@ -3,13 +3,16 @@ import { existsSync } from 'node:fs'
 import { mkdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import {
+  ArticleMetadata,
   createContentAuditSupabaseClient,
   discoverArticleDirs,
+  evaluateSourceAuditGate,
   nowIso,
   parseArgs,
   readSourceAuditEvidence,
   resolveExportRoot,
   sha256Json,
+  sourceAuditIncludesQuestionOrModel,
   writeJson,
 } from './lib'
 
@@ -94,18 +97,34 @@ async function main() {
   if (!edit.reason) (report.warnings as string[]).push('question edit has no reason field.')
   if (!edit.approved_by || !edit.approved_at) (report.warnings as string[]).push('question edit is missing approved_by/approved_at review metadata.')
   const sourceAudit = readSourceAuditEvidence(located.articleDir)
-  const sourceAuditHasQuestion = sourceAudit?.claims?.some((claim) => {
-    const claimText = `${claim.claim_id ?? ''} ${claim.claim_text ?? ''}`
-    return claimText.includes(questionId) || claimText.includes(String(located.exportedQuestion.model_id ?? ''))
-  }) === true
+  const articleMetadataPath = path.join(located.articleDir, 'article-metadata.json')
+  const candidatePath = path.join(located.articleDir, 'candidate.md')
+  const articleMetadata = existsSync(articleMetadataPath)
+    ? JSON.parse(await readFile(articleMetadataPath, 'utf-8')) as ArticleMetadata
+    : null
+  const articleCandidate = existsSync(candidatePath)
+    ? await readFile(candidatePath, 'utf-8')
+    : null
+  const parentSourceAuditGate = articleMetadata && articleCandidate != null
+    ? evaluateSourceAuditGate({ evidence: sourceAudit, metadata: articleMetadata, candidate: articleCandidate, apply: options.apply === true })
+    : null
+  const sourceAuditHasQuestion = sourceAuditIncludesQuestionOrModel({
+    evidence: sourceAudit,
+    questionId,
+    modelId: located.exportedQuestion.model_id,
+  })
   report.source_audit = {
     source_audit_status: sourceAudit?.overall?.source_audit_status ?? null,
     safe_for_supabase_upload: sourceAudit?.overall?.safe_for_supabase_upload ?? null,
     question_claim_found: sourceAuditHasQuestion,
+    parent_gate_blockers: parentSourceAuditGate?.blockers ?? [],
+    parent_gate_warnings: parentSourceAuditGate?.warnings ?? [],
   }
   if (options.apply === true) {
     if (!sourceAudit) (report.blockers as string[]).push('Missing source-audit-evidence.json in parent article folder; question edits require raw-source audit before apply.')
-    else if (sourceAudit.overall?.source_audit_status !== 'PASS' || sourceAudit.overall.safe_for_supabase_upload !== true) (report.blockers as string[]).push('Parent source-audit-evidence.json is not PASS/safe_for_supabase_upload.')
+    else if (!articleMetadata) (report.blockers as string[]).push('Parent article-metadata.json is missing; cannot verify source-audit freshness before question apply.')
+    else if (articleCandidate == null) (report.blockers as string[]).push('Parent candidate.md is missing; cannot verify source-audit freshness before question apply.')
+    else if (parentSourceAuditGate && parentSourceAuditGate.blockers.length > 0) (report.blockers as string[]).push(...parentSourceAuditGate.blockers.map((blocker) => `Parent source-audit gate: ${blocker}`))
     else if (!sourceAuditHasQuestion) (report.blockers as string[]).push('Parent source-audit-evidence.json does not include this question/model_id in audited claims.')
   }
   if (edit.status === 'duplicate') {

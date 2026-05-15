@@ -1,0 +1,125 @@
+{
+  "artifact_type": "source-audit-evidence.PARKED",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T13:18:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
+    "slug": "lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic",
+    "title": "Multiple of Direct Personnel Expense MDPE the Formula Components",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/candidate.md",
+    "candidate_sha256": null,
+    "normalized_sha256": "sha256:67d1725e6ea68a0a694bc51291420789a09d18d1491c1ea4728af0b6b2281d62",
+    "linked_questions_sha256": "sha256:70a48927a420f1f7ef3d782111c283d57cf54240c08d7c8ec724573bb8cc8efc"
+  },
+  "classification": {
+    "content_type": "professional_practice_compensation_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": []
+  },
+  "raw_sources": [
+    {
+      "key": "uap_spp_2010_compilation",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "pages_checked": [18, 19]
+    }
+  ],
+  "gate_results": {
+    "compose": "PARKED: Auto-compose blocked by unresolved placeholders ui_0001, ui_0002, ui_0003, ui_0004.",
+    "validate": "PARKED: validation reported unresolved placeholders ui_0001 through ui_0004; candidate.md is absent.",
+    "push_dry_run": "PARKED: dry-run push stopped before Supabase fetch because auto-compose failed on the same unresolved placeholders.",
+    "supabase_mutation": "not_attempted"
+  },
+  "raw_pdf_evidence_obtained": [
+    {
+      "claim": "SPP 202 recognizes Multiple of Direct Personnel Expenses as one compensation method for Regular Design Services.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_page": 18,
+      "source_locator": "SPP Document 202, Section 5.2 Multiple of Direct Personnel Expenses",
+      "evidence_excerpt": "Compensation for Regular Design Services may be based on one or more of the following: 5.1 Percentage (%) of Project Construction Cost (PCC) ... 5.2 Multiple of Direct Personnel Expenses."
+    },
+    {
+      "claim": "The SPP formula is based on technical service costs multiplied by a multiplier for overhead and profit.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_page": 18,
+      "source_locator": "SPP Document 202, Section 5.2 Multiple of Direct Personnel Expenses",
+      "evidence_excerpt": "The computation is made by adding all costs of technical services (man hours x rate) and then multiplying it by a multiplier to cover overhead and profit."
+    },
+    {
+      "claim": "The checked source gives a multiplier range of 1.5 to 2.5, not the article's 2.0 to 3.5 range.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_page": 18,
+      "source_locator": "SPP Document 202, Section 5.2 Multiple of Direct Personnel Expenses",
+      "evidence_excerpt": "The multiplier ranges from 1.5 to 2.5 depending on the office set-up, overhead and experience of the Architect and the complexity of the Project."
+    },
+    {
+      "claim": "The formula variables are defined in the source.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_page": 19,
+      "source_locator": "SPP Document 202, Section 5.2 Formula",
+      "evidence_excerpt": "Direct cost = AN + CN + TN Fee = Direct Cost x M Total Cost of Service charged to Client = Fee + R."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "CMP006-BLOCKER-001",
+      "severity": "critical",
+      "type": "compose_blocker",
+      "finding": "candidate.md cannot be generated because normalized.md references ui_0001, ui_0002, ui_0003, and ui_0004 but the current ui-block mapping does not resolve those placeholders."
+    },
+    {
+      "id": "CMP006-BLOCKER-002",
+      "severity": "critical",
+      "type": "unsupported_multiplier_range",
+      "finding": "The article and linked questions state Philippine MDPE multipliers typically range from 2.0 to 3.5 and include a 2.8 specialized-facility prompt. The checked raw SPP 202 source states 1.5 to 2.5."
+    },
+    {
+      "id": "CMP006-BLOCKER-003",
+      "severity": "high",
+      "type": "unsupported_formula_detail",
+      "finding": "The article defines DPE using salary plus benefits such as PAG-IBIG, PhilHealth, and SSS, and gives a fully-loaded annual-hours calculation. These may be professionally plausible, but they are not stated in the checked raw SPP 202 formula text."
+    },
+    {
+      "id": "CMP006-BLOCKER-004",
+      "severity": "high",
+      "type": "ui_block_content_risk",
+      "finding": "Preserved UI blocks contain a fee-computation tip with unrelated group-rate claims and a malformed KeyValues block. These are learner-facing legal/fee claims and cannot be carried into a PASS candidate without separate source support and UI repair."
+    },
+    {
+      "id": "CMP006-BLOCKER-005",
+      "severity": "medium",
+      "type": "empty_source_bundle",
+      "finding": "sources.json has source_count 0."
+    }
+  ],
+  "linked_question_audit": {
+    "status": "PARKED_NOT_FULLY_AUDITED",
+    "question_ids_observed": [
+      "784da871-b661-4bd9-95e6-41cc531a2eaf",
+      "a91d6194-2330-405d-b263-11e8c40f1ff2",
+      "ee7b5d76-e3f1-4ed8-9bcc-35a5bbf02119",
+      "381f5ac2-0e39-4b39-b2ff-63bfd8fec2e3",
+      "e39f2cd6-f73e-4bbb-9fe9-8d48085e3375",
+      "4093f3c5-3cb0-410d-800f-d1db186ecd9d",
+      "20e23ea7-ac46-488c-b73b-22901d78d063",
+      "344f3bfb-3dfc-4a00-aff4-11475a4b67d3",
+      "9e391e7d-a5b9-4447-8ff9-f3b5b8e8e775",
+      "2dfa755c-6509-4f8f-a5b6-8c7861f07b84"
+    ],
+    "finding": "Question edits were not created because the source-confirmed multiplier range contradicts current article/question claims."
+  },
+  "overall": {
+    "source_audit_status": "PARKED",
+    "safe_for_supabase_upload": false,
+    "next_required_action": "Resolve UI blocks, normalize MDPE values to the raw 1.5-2.5 source range or provide a stronger raw source, then regenerate candidate.md."
+  }
+}

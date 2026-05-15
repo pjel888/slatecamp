@@ -1,5 +1,6 @@
 'use server'
 
+import { getAIProvider } from '@/lib/ai/provider'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { revalidateDashboardCacheTags } from './cache-tags'
 
@@ -73,7 +74,7 @@ export const submitTeachBack = async (params: {
   // Get criteria for this topic
   const criteria = await getTeachBackCriteria(params.topicId)
 
-  // Evaluate via Claude API
+  // Evaluate via the configured AI provider
   const evaluation = await evaluateTeachBack({
     topicName: params.topicName,
     studentResponse: params.studentResponse,
@@ -144,7 +145,7 @@ export const submitRevision = async (
 }
 
 /**
- * AI evaluation of teach-back response using Claude API.
+ * AI evaluation of teach-back response using the configured AI provider.
  * Temperature 0.0 — no creativity, pure assessment.
  */
 const evaluateTeachBack = async (params: {
@@ -178,34 +179,14 @@ Output JSON only, no markdown:
 }`
 
   try {
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': process.env.ANTHROPIC_API_KEY || '',
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 1024,
+    const text = await getAIProvider().generateCompletion(
+      `Student's explanation:\n\n${studentResponse}`,
+      {
+        systemPrompt,
+        maxTokens: 1024,
         temperature: 0.0,
-        system: systemPrompt,
-        messages: [
-          {
-            role: 'user',
-            content: `Student's explanation:\n\n${studentResponse}`,
-          },
-        ],
-      }),
-    })
-
-    if (!response.ok) {
-      console.error('[teach-back] API error:', response.status)
-      return fallbackEvaluation()
-    }
-
-    const data = await response.json()
-    const text = data.content?.[0]?.text || ''
+      }
+    )
 
     // Parse JSON from response
     const jsonMatch = text.match(/\{[\s\S]*\}/)

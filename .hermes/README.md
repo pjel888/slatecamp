@@ -17,3 +17,5 @@ Hermes should inspect before acting, prefer verifiable repository facts over ass
 ## Files intentionally excluded
 
 This pack does not include `.env`, `auth.json`, real API keys, session history, logs, cache files, checkpoints, or provider credentials.
+
+Developer AI provider stance: Codex-first with GPT-5.5 where available. Hermes should use `openai-codex` when acting as coordinator. OpenCode/OpenCode Go, Command Code, and Kimi remain optional worker lanes. OpenRouter belongs to app/runtime learner/user AI through `src/lib/ai/provider.ts`, not the default developer-agent path. See `docs/17-codex-developer-ai.md`.

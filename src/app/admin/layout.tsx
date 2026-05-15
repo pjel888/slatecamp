@@ -7,6 +7,8 @@ import { AdminShell } from './_components/AdminShell'
 import { getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
 import { headers } from 'next/headers'
 
+export const dynamic = 'force-dynamic'
+
 export default async function AdminLayout({
   children,
 }: {

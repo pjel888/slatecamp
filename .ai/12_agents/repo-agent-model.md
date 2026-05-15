@@ -1,6 +1,6 @@
 # Repo Agent Model
 
-**Last Updated:** 2026-04-17
+**Last Updated:** 2026-05-09
 
 ## Hierarchy
 
@@ -21,7 +21,7 @@
 3. Update the local `AGENTS.md` whenever structure, workflows, or key file references drift.
 4. Avoid blind global edits; trace callers, consumers, and dependencies first.
 5. Keep documentation and operational state in sync with implementation reality.
-6. Use verified companion AI CLIs, especially Kimi Code, when they materially improve review quality, planning depth, or parallel read-only analysis. Codex remains responsible for final edits and verification.
+6. Use the verified AI bench when it materially improves review quality, planning depth, implementation throughput, or parallel read-only analysis: Codex/GPT-5.5 for primary builds and developer-agent work; OpenCode/OpenCode Go and Command Code for external CLI work; Kimi for long-context synthesis. Keep OpenRouter in the app/runtime learner/user AI boundary, not the default developer-agent boundary. The orchestrating agent remains responsible for final edits, validation, and claims.
 
 ## Handoff rules
 

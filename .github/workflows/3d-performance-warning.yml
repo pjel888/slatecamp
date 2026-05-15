@@ -7,6 +7,8 @@ on:
       - 'src/features/3d-lab/**'
       - '.ai/00_performance/**'
       - 'scripts/playwright-web-server.ts'
+      - 'scripts/playwright-run.ts'
+      - 'tsconfig.json'
       - 'package.json'
       - 'bun.lock'
   push:
@@ -18,6 +20,8 @@ on:
       - 'src/features/3d-lab/**'
       - '.ai/00_performance/**'
       - 'scripts/playwright-web-server.ts'
+      - 'scripts/playwright-run.ts'
+      - 'tsconfig.json'
       - 'package.json'
       - 'bun.lock'
   workflow_dispatch:
@@ -91,8 +95,10 @@ jobs:
           name: 3d-performance-warning-artifacts
           path: |
             .ai/00_performance/results/3d_lab_*.json
+            .ai/00_performance/results/demo_auth_build_result.json
             .ai/00_performance/results/dev_server_memory_profile_loop5-built-auth-3d-pass-*.json
             .ai/00_performance/logs/3d-lab-built-auth-repeat.log
+            .ai/00_performance/logs/demo-auth-build.log
             .ai/00_performance/playwright/3d-test-output
             .ai/00_performance/playwright/3d-html-report
           if-no-files-found: warn

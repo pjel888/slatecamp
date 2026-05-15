@@ -23,6 +23,7 @@ import {
   scanComponentInventory,
   sha256,
   shouldExportChangedArticle,
+  sourceAuditIncludesQuestionOrModel,
   updateArticleSyncState,
   updateArticleContentIfUnchanged,
 } from './lib'
@@ -207,6 +208,41 @@ describe('content-audit push safety', () => {
       apply: true,
     })
     expect(staleGate.blockers.join('\n')).toContain('candidate_sha256 does not match')
+
+    const missingIdentityGate = evaluateSourceAuditGate({
+      evidence: { ...passingEvidence, target: { candidate_sha256: sha256(candidate) } },
+      metadata: meta,
+      candidate,
+      apply: true,
+    })
+    expect(missingIdentityGate.blockers.join('\n')).toContain('target.article_id is missing or does not match')
+  })
+
+  test('question source audit matching ignores empty model ids and supports legacy verified claim scopes', () => {
+    const evidence = {
+      claims: [
+        {
+          claim_id: 'claim-1',
+          claim_text: 'This claim is unrelated to the edited question.',
+          audit_result: 'PASS',
+        },
+      ],
+      verified_major_claims: [
+        {
+          claim: 'Ramp landing interval verified against raw BP 344 PDF.',
+          scope: 'article and linked question q-verified',
+          status: 'verified',
+        },
+      ],
+      overall: {
+        source_audit_status: 'PASS',
+        safe_for_supabase_upload: true,
+      },
+    }
+
+    expect(sourceAuditIncludesQuestionOrModel({ evidence, questionId: 'q-missing', modelId: null })).toBe(false)
+    expect(sourceAuditIncludesQuestionOrModel({ evidence, questionId: 'q-verified', modelId: null })).toBe(true)
+    expect(sourceAuditIncludesQuestionOrModel({ evidence, questionId: 'q-missing', modelId: 'claim-1' })).toBe(true)
   })
 
   test('placeholder parsing accepts current ui ids and legacy block ids', () => {
