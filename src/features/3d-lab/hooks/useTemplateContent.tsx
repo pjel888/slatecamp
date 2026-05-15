@@ -7,6 +7,10 @@ import { GenericControlPanel } from '@/features/3d-lab/components/templates/Gene
 import { ComplianceReportPanel } from '@/features/3d-lab/components/templates/ComplianceReportPanel'
 import { StairwayWorkbenchLeftPanel } from '@/features/3d-lab/components/templates/StairwayWorkbenchPanels'
 import {
+  ParkingLotRequirementsLeftPanel,
+  ParkingLotRequirementsRightPanel,
+} from '@/features/3d-lab/components/templates/ParkingLotRequirementsPanels'
+import {
   SourceCompliancePanel,
   SourceComplianceStatusBar,
 } from '@/features/3d-lab/components/templates/SourceCompliancePanel'
@@ -312,6 +316,39 @@ export const useTemplateContent = (
                   useStore={useStore}
                 />
               ) : undefined,
+            },
+          }
+        }
+
+        // ── Parking Lot Requirements special path ──
+        // Hidden source-gated QA module. Uses the no-scroll two-inspector
+        // workbench pattern from stairway, but keeps parking checks in tabs and
+        // fails closed for unresolved PD1096 aisle / BP220 table rules.
+        if (cfg.id === 'parking-lot-requirements') {
+          return {
+            shellConfig: {
+              ...shellConfig,
+              leftSidebar: { width: 384, title: cfg.title, mobileTabLabel: 'Controls' },
+              rightSidebar: { width: 384, title: '', mobileTabLabel: 'Results' },
+            },
+            capabilities,
+            content: {
+              canvasContent: canvasWrapper(
+                <ParametricSceneRenderer
+                  config={{ ...cfg, showHumanScale: false }}
+                  useStore={useStore}
+                  hideOverlays
+                />,
+                {
+                  lightingPreset: 'clinical',
+                },
+              ),
+              leftSidebarContent: (
+                <ParkingLotRequirementsLeftPanel useStore={useStore} />
+              ),
+              rightSidebarContent: (
+                <ParkingLotRequirementsRightPanel useStore={useStore} />
+              ),
             },
           }
         }

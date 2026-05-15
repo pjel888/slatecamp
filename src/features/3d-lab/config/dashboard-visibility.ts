@@ -14,4 +14,5 @@ export const DASHBOARD_VISIBLE_IDS: ReadonlySet<string> = new Set([
   'calculator-flooring',
   'unified-wall-configurator',
   'bp344-accessible-route-ramp',
+  'parking-lot-requirements',
 ])

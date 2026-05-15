@@ -16,6 +16,16 @@ export const cat16Modules: ModuleRegistryEntry[] = [
     description: "Carport model: max 3.20m height, solid walls max 1.50m, perforated blocks required above per PD 1096 Rule VII §708.",
   },
   {
+    id: "parking-lot-requirements",
+    title: "Parking Lot Requirements",
+    templateType: "parametric",
+    subject: "pd-1096",
+    categoryId: "SITE_DEV",
+    launchPhase: 3,
+    status: "ready",
+    description: "Dashboard QA workbench for source-gated Philippine parking requirements across PD 1096, BP 344, BP 220, PD 957, RA 9514, and optional LGU overlays.",
+  },
+  {
     id: "parking-layout",
     title: "Parking Layout",
     templateType: "floorplan",
