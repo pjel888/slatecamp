@@ -53,13 +53,13 @@ Turbopack production build treated Tailwind arbitrary URL classes as module impo
 - `/images/dashboard/Dashboard-BG-Image.png`
 - `/images/dashboard/Dock-Lake-BG-Image.png`
 
-The files exist under `public/images/dashboard/`, but generated CSS resolution failed when using `bg-[url(...)]`.
+The files exist under `public/images/dashboard/`, but generated CSS resolution failed when using the Tailwind arbitrary background URL utility with an ellipsis placeholder.
 
-Fixed by moving those two background-image declarations to inline `style={{ backgroundImage: 'url(...)' }}` while preserving the Tailwind layout/cover/position/opacity classes.
+Fixed by moving those two background-image declarations to inline React style props while preserving the Tailwind layout/cover/position/opacity classes.
 
 ### 3. Build-cache contamination fix
 
-Earlier safe `.next` cache backups were placed under `.ai/tmp/`. Tailwind/Next scanned those old generated artifacts and reintroduced stale `bg-[url(...)]` classes even after source files were fixed.
+Earlier safe `.next` cache backups were placed under `.ai/tmp/`. Tailwind/Next scanned those old generated artifacts and reintroduced stale arbitrary background URL utilities even after source files were fixed.
 
 Moved old `.next.backup-*` directories and the current `.next` out of the repository to:
 
