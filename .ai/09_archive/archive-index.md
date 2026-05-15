@@ -1,10 +1,11 @@
 # Archive Index
 
-**Last Updated:** 2026-05-13
+**Last Updated:** 2026-05-15
 
 ## Current archive surfaces
 - `.ai/09_archive/store/` — preserved historical initiative docs
 - `.ai/09_archive/store/2026-05-13-li-vizcode-3d-learning-consolidation-inputs/` — preserved source input folders for the active LI/VizCode 3D learning master plan at `.ai/03_plans/2026-05-13-li-vizcode-3d-learning-master-plan/`
+- `.ai/03_plans/preserved/2026-05-15-content-supabase-closure/` — preserved loose plan artifacts from the content/Supabase closure and git-finalization handoff period
 - `.ai/06_specs/deep/archive/` — deep legacy doc/spec archives
 - `.ai/09_archive/` — stable archive policy and index surface for the new taxonomy
 - `.ai/10_state/legacy-state/` — preserved legacy human-readable state notes
@@ -25,6 +26,14 @@ The following source folders were consolidated into `.ai/03_plans/2026-05-13-li-
 Archived location:
 
 - `.ai/09_archive/store/2026-05-13-li-vizcode-3d-learning-consolidation-inputs/`
+
+## 2026-05-15 content/Supabase closure plan preservation
+
+Loose `.ai/03_plans` artifacts from content/Supabase closure work were moved into:
+
+- `.ai/03_plans/preserved/2026-05-15-content-supabase-closure/`
+
+The preserved pack contains a README and `MOVE_MANIFEST.tsv` mapping original paths to new paths.
 
 ## Entrypoint rule
 

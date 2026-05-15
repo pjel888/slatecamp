@@ -2,8 +2,8 @@
 
 **Do NOT trust stale memory.** Read this file before answering any question about the repo.
 **Path:** `/.ai/00_system/slatecamp-authoritative-reference.md`
-**Last verified:** 2026-05-09
-**Branch:** `content-roundtrip-system`
+**Last verified:** 2026-05-15
+**Branch:** `3dlab-gray-viewport-bg`
 
 ---
 
@@ -27,7 +27,7 @@ Previous name: ALE (Architecture Licensure Examination). **All code, docs, and c
 
 ## 3. `.ai/` Directory Structure (Current)
 
-Numbered-only top-level taxonomy. 14 folders + flat docs.
+Numbered-first top-level taxonomy with flat docs and a small set of documented legacy/scripted exceptions.
 
 | Folder | Role | Key Contents |
 |--------|------|-------------|
@@ -35,20 +35,25 @@ Numbered-only top-level taxonomy. 14 folders + flat docs.
 | `00_system/` | **POLICY LAYER** — read first | `ai-folder-canonical-map.md`, `repo-map.md`, `ENVIRONMENT_CONTRACT.md`, `VALIDATION_MATRIX.md`, `CODEX_ENABLEMENT_GUIDE.md`, `architecture-map.md`, `structure-map.md`, `DATA_BOUNDARY_MAP.md`, `ROUTE_SURFACE_MAP.md`, `REPO_METRICS_METHOD.md`, `DOCS_SOURCE_OF_TRUTH.md`, `documentation-governance.md`, `naming-conventions.md`, `principles.md`, `workflow.md`, `audit-standards.md`, `system-boundaries.md`, `baseline-agents-list.md`, `baseline-markdown-list.md`, `baseline-scope.md`, `cleanup-scope-baseline.md`, `AGENTS_INVENTORY.md` |
 | `01_roadmap/` | Current roadmap & phase tracking | |
 | `02_audits/` | Active audit registry | |
-| `03_plans/` | Active plans + `preserved/` | |
+| `03_plans/` | Active plans + `preserved/` | `ai-folder-organization/`, `content-editorial-pipeline-2026-05-05/`, `final-second-audit/`, `preserved/2026-05-15-content-supabase-closure/` |
 | `04_tasks/` | Follow-up task packs | |
 | `05_logs/` | Human-readable logs + `legacy-changelog-2026-04-06.md` | |
 | `06_specs/` | **Spec surface** | `README.md`, `backend-system-map.md`, `client-server-boundary-rules.md`, `data-flow-map.md`, `documentation-surface-map.md`, `feature-inventory.md`, `frontend-execution-model.md`, `performance-standards.md`, `route-inventory.md` **+** `deep/` (corpus) |
 | `06_specs/deep/` | Deep reference/spec corpus | `00-meta/`, `01-product/`, `02-architecture/`, `03-design/`, `04-development/`, `05-reference/`, `archive/`, `portal/` |
 | `07_experiments/` | Experiment notes | |
 | `08_prompts/` | Active prompt library + `legacy/` | |
-| `09_archive/` | Archive entrypoint + `store/` | |
+| `09_archive/` | Archive entrypoint + `store/` | `archive-index.md`, `archive-policy.md`, `store/` |
 | `10_state/` | Human-readable state + `legacy-state/`, `legacy-state-root/`, `legacy-runtime/` | |
 | `11_skills/` | Skill governance + `payloads/` | |
 | `12_agents/` | Agent governance + `payloads/` | `agent-governance-audit.md`, `agent-hierarchy-map.md`, `agent-system-map.md`, `agent-update-plan.md`, `repo-agent-model.md` |
-| `13_research/` | Research packs | `3D-Lab-Audit-And-UXUI-Improvement/`, `slatecamp-content-roundtrip-docs/` |
+| `13_research/` | Research packs | `slatecamp-content-roundtrip-docs/`, landing/brand/competitive research packs, `3D-Lab-Audit-And-UXUI-Improvement/` |
 | `14_fact_checking/` | Fact-checking records | `flags/`, tracker files, scripts |
 | `15_content_optimization/` | Content optimization | `batch-tracker.md`, `final-audit-report.md`, `release-readiness-report.md`, etc. |
+| `16_source_packs/` | Source pack pipeline | source pack trackers and validation artifacts |
+| `17_article_improvement/` | Article improvement pipeline | article improvement jobs, reports, and validation artifacts |
+| `18_question_improvement/` | Question improvement pipeline | question improvement jobs, reports, and validation artifacts |
+| `19_controlled_apply/` | Controlled apply pipeline | local apply/rollback evidence |
+| `20_content_publish/` | Content publish pipeline | publish readiness and handoff evidence |
 
 **Flat `.ai/` docs (not in numbered folders):** `AGENTS.md`, `api-and-server.md`, `api-surface.md`, `app-audit.md`, `architecture.md`, `audit_questions.py`, `audit-log.md`, `cleanup-execution-log.md`, `cleanup-plan.md`, `codebase-map.md`, `content-audit-export/`, `data-model.md`, `data-models.md`, `db-cleanup-deferred.md`, `deep_audit.py`, `deferred-integrations.md`, `developer-workflow.md`, `do-not-maintain.md`, `environment.md`, `features.md`, `final-launch-readiness.md`, `integrations.md`, `ip-inventory.md`, `known-gaps.md`, `known-issues.md`, `launch-cutline.md`, `legacy-retirement-plan.md`, `mcp.json`, `prelaunch-readiness.md`, `project-overview.md`, `README.md`, `risk-register.md`, `routes.md`, `security.md`, `settings.json`, `testing-and-quality.md`, `testing.md`, `ui-design-system.md`
 

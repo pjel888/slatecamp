@@ -22,6 +22,7 @@
 | Current repo state | `.ai/10_state/current-state.md` |
 | Deep reference/spec corpus | `.ai/06_specs/deep/` |
 | Archive policy and preserved history entrypoint | `.ai/09_archive/` |
+| Content round-trip generated workspace | `.ai/content-audit-export/README.md` |
 | Codex shared skills | `.agents/skills/` |
 | Project-local Codex skill mirrors | `.codex/skills/` |
 

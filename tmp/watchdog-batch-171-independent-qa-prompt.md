@@ -7,7 +7,7 @@ Read and cross-check these files:
 - .ai/content-audit-export/source-audited-article-batch-171-local-first-report.md
 - .ai/content-audit-export/source-audited-article-batch-171-local-first-ledger.json
 - .ai/content-audit-export/source-audited-article-batch-171-local-first-scoped-checks.json
-- .ai/03_plans/batch-171-git-handoff-stage-paths.txt
+- .ai/03_plans/preserved/2026-05-15-content-supabase-closure/git-handoff-stage-lists/batch-171-git-handoff-stage-paths.txt
 - latest git log/status as needed
 
 Hard constraints:

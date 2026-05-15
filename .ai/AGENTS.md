@@ -9,10 +9,11 @@ This file governs the `.ai/` subtree unless a deeper `AGENTS.md` overrides it.
 ## Current subtree reality
 `.ai/` is the repository's operational intelligence layer.
 It currently contains:
-- numbered operational folders (`00_*` through `13_*`)
+- numbered operational folders (`00_*` through `20_*`)
 - numbered canonical folders plus numbered preserved subfolders
 - deep reference docs under `.ai/06_specs/deep/`
 - repo-wide audits, plans, roadmap, state, task, and agent-model documents
+- scripted/generated content round-trip workspace at `.ai/content-audit-export/`
 
 ## Canonical roles inside `.ai`
 - `.ai/` = operational brain
@@ -20,6 +21,7 @@ It currently contains:
 - `.ai/09_archive/` and preserved archive areas = historical context, not deletion bins
 - `.ai/10_state/` = current operational assessment
 - `.ai/12_agents/` = repo agent-model docs
+- `.ai/content-audit-export/` = active/generated content round-trip workspace; organize with indexes first and do not move `articles/` without script-path validation
 - `.ai/00_system/ai-folder-canonical-map.md` = canonical routing map for numbered vs unnumbered `.ai` surfaces
 - `.ai/00_system/CODEX_ENABLEMENT_GUIDE.md` = Codex-facing startup and interpretation guide
 - `.ai/00_system/CODEX_SKILLS_MAP.md` = relationship between `.ai` and `.agents/skills`

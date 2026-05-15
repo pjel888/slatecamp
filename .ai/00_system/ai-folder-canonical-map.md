@@ -6,7 +6,7 @@ The canonical project intelligence root is `.ai/`.
 
 The intended active structure is numbered-first. New durable project-management, audit, plan, state, prompt, agent, skill, archive, research, fact-checking, and content-optimization material should be placed under the numbered folders listed below.
 
-As of 2026-05-05, the live tree still contains a small set of unnumbered workstream/back-up folders created by older tool runs. They are tolerated legacy exceptions until a human-approved archive cleanup, but they are not preferred locations for new work.
+As of 2026-05-15, the live tree still contains a small set of unnumbered workstream/back-up folders created by older tool runs plus one active scripted content-export workspace. They are tolerated exceptions until a dedicated cleanup pass can either archive them or validate and update all script references.
 
 ## Top-level canonical folders
 
@@ -29,20 +29,28 @@ As of 2026-05-05, the live tree still contains a small set of unnumbered workstr
 | `13_research/` | research packs | current research shelf |
 | `14_fact_checking/` | article/content fact-checking trackers and reports | active curriculum QA workstream |
 | `15_content_optimization/` | article optimization batches, release notes, and trackers | active until live content push is complete |
+| `16_source_packs/` | source pack pipeline and promoted source-pack artifacts | active content QA workstream |
+| `17_article_improvement/` | article improvement pipeline outputs and trackers | active content QA workstream |
+| `18_question_improvement/` | question improvement pipeline outputs and trackers | active content QA workstream |
+| `19_controlled_apply/` | controlled local apply/rollback evidence | active content QA workstream |
+| `20_content_publish/` | content publish readiness and handoff evidence | active content QA workstream |
 
 ## Known unnumbered legacy exceptions pending cleanup
 
 These folders exist in the live tree but should not be used for new canonical work unless a human explicitly decides otherwise:
 
 - `articlemedia-fix-v2-backups/`
-- `content-audit-export/`
+- `archive/`
+- `content-audit-export/` — active/generated scripted workspace; do not move `articles/` without validating `scripts/content-audit/*`, `.ai/scripts/*`, and package-script references
 - `content-inspection-swarm/`
 - `final-content-completion/`
 - `fix-articlemedia-backups/`
 - `scripts/`
+- `tmp/` — local generated residue; currently not canonical and should not be promoted without review
 - `wiki-mdx-render-debug/`
 - `wiki-ui-audit/`
 - `__pycache__/`
+- `16_source_packs_draft/` — draft source-pack staging area pending merge/archive decision
 
 Recommended action: archive or merge these during a dedicated `.ai` cleanup sprint. Do not delete without human review because some contain generated artifacts/backups from previous remediation runs.
 
@@ -62,6 +70,7 @@ Recommended action: archive or merge these during a dedicated `.ai` cleanup spri
 | preserved legacy rules | `00_system/legacy-rules/` |
 | preserved legacy changelog | `05_logs/legacy-changelog-2026-04-06.md` |
 | archived database rollback/manual repair SQL | `09_archive/store/DB_ROLLBACKS/` |
+| preserved content/Supabase closure plans | `03_plans/preserved/2026-05-15-content-supabase-closure/` |
 
 ## Source-of-truth policy
 
@@ -78,6 +87,12 @@ Recommended action: archive or merge these during a dedicated `.ai` cleanup spri
 - `.ai/10_state/current-state.md` = current truth / human-readable project state
 - `.ai/14_fact_checking/` = current fact-checking evidence
 - `.ai/15_content_optimization/` = current content optimization evidence until live push is complete
+- `.ai/16_source_packs/` = current source pack evidence
+- `.ai/17_article_improvement/` = current article improvement evidence
+- `.ai/18_question_improvement/` = current question improvement evidence
+- `.ai/19_controlled_apply/` = current local controlled-apply evidence
+- `.ai/20_content_publish/` = current content publish evidence
+- `.ai/content-audit-export/` = generated/scripted content round-trip workspace; use indexes before moving files
 - `.omx/` = local runtime state only, never canonical repository truth
 
 Broad `.ai` archive movements and large docs diffs require human semantic review before commit/release.
@@ -94,6 +109,11 @@ Broad `.ai` archive movements and large docs diffs require human semantic review
 - New agent payload: `12_agents/payloads/`
 - New fact-checking tracker/report: `14_fact_checking/`
 - New content optimization tracker/report: `15_content_optimization/`
+- New source pack tracker/report: `16_source_packs/`
+- New article improvement tracker/report: `17_article_improvement/`
+- New question improvement tracker/report: `18_question_improvement/`
+- New controlled-apply tracker/report: `19_controlled_apply/`
+- New content publish tracker/report: `20_content_publish/`
 
 ## Anti-drift rule
 

@@ -1,6 +1,7 @@
 # `.ai` Operational Intelligence Workspace
 
 **Last audit:** 2026-05-09
+**Last organization pass:** 2026-05-15
 **Purpose:** This `.ai` directory is SlateCamp's operational intelligence layer. It contains current-state documentation, historical context, plans, audits, specs, performance work, and agent guidance.
 
 ---
@@ -83,17 +84,17 @@ Preserved operational folders with historical and active content:
 | `00_performance/` | Performance scripts, Playwright perf configs, benchmarks | Active |
 | `01_roadmap/` | Current phase, milestone tracker, feature status map | Active |
 | `02_audits/` | Historical and recent audit reports (35 files) | Historical/Active |
-| `03_plans/` | Implementation plans, cleanup plans, landing plans (51 files) | Active |
+| `03_plans/` | Active plans plus preserved/superseded plan artifacts; loose closure artifacts archived 2026-05-15 | Active |
 | `04_tasks/` | Task checklists (sparse; superseded by `TASKS.md`) | Superseded |
 | `05_logs/` | Execution logs and run records (19 files) | Historical |
 | `06_specs/` | Deep reference specs, feature inventory, architecture docs | Active |
 | `07_experiments/` | Experimental work context | Preserved |
 | `08_prompts/` | Prompt system documentation | Active |
-| `09_archive/` | Archive policy and historical content | Active |
+| `09_archive/` | Archive policy, index, and historical content store | Active |
 | `10_state/` | Operational state assessments | Active |
 | `11_skills/` | Agent skill documentation | Active |
 | `12_agents/` | Agent model documentation | Active |
-| `13_research/` | Research artifacts (UX, market, competitive) | Active |
+| `13_research/` | Research artifacts and labeled research packs (UX, market, competitive, roundtrip docs) | Active |
 | `14_fact_checking/` | Content fact-checking pipeline | Active |
 | `15_content_optimization/` | Content optimization tools | Active |
 | `16_source_packs/` | Source pack pipeline | Active |
@@ -103,6 +104,14 @@ Preserved operational folders with historical and active content:
 | `20_content_publish/` | Content publishing pipeline | Active |
 
 Use `.ai/00_system/ai-folder-canonical-map.md` for the full historical routing of numbered vs unnumbered surfaces.
+
+### Scripted/Generated Exceptions
+
+| Path | Role | Status |
+|------|------|--------|
+| `content-audit-export/` | Content round-trip export workspace; `articles/` corpus and run artifacts | Active/generated; do not move article corpus without script-path validation |
+| `archive/` | Legacy compatibility archive from 2026-05-09 | Preserved |
+| `tmp/` | Local generated residue; currently untracked | Do not promote unless explicitly needed |
 
 ---
 
