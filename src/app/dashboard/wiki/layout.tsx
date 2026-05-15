@@ -3,7 +3,11 @@ import React, { Suspense } from 'react'
 import WikiLoading from './loading'
 import { LearnLayout } from '@/components/layouts/category/LearnLayout'
 
-export default function WikiPageLayout({ children }: { children: React.ReactNode }) {
+export default function WikiPageLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <LearnLayout
       hero={{

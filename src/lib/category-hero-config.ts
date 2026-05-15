@@ -101,44 +101,38 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   // Learn
   [ROUTES.dashboard.wiki]: {
     subtitle: 'Knowledge Wiki',
-    description:
-      'Authoritative LEA guide mapped to the exam syllabus.',
+    description: 'Authoritative LEA guide mapped to the exam syllabus.',
   },
   [ROUTES.dashboard.notes]: {
     subtitle: 'Notes',
-    description:
-      'Your study notebook linked to articles and quiz questions.',
+    description: 'Your study notebook linked to articles and quiz questions.',
   },
   [ROUTES.dashboard.codeUpdates]: {
     subtitle: 'Code Updates',
-    description:
-      'Latest building code changes that may appear on the exam.',
+    description: 'Latest building code changes that may appear on the exam.',
   },
   // Explore
   [ROUTES.lab.root]: {
     subtitle: '3D Lab',
-    description:
-      'Explore architectural concepts in interactive 3D.',
+    description: 'Explore architectural concepts in interactive 3D.',
   },
   [ROUTES.dashboard.studio]: {
     subtitle: 'Studio Mode',
-    description: 'Your creative workspace for architectural design exploration.',
+    description:
+      'Your creative workspace for architectural design exploration.',
   },
   // Practice
   [ROUTES.dashboard.quiz]: {
     subtitle: 'Quiz',
-    description:
-      'Guided study, timed practice, and full exam simulation.',
+    description: 'Guided study, timed practice, and full exam simulation.',
   },
   [ROUTES.dashboard.camptrails]: {
     subtitle: 'Camp Trail',
-    description:
-      'Daily study prescription calibrated to your exam date.',
+    description: 'Daily study prescription calibrated to your exam date.',
   },
   [ROUTES.dashboard.flash]: {
     subtitle: 'LEA Numbers Flash',
-    description:
-      'Critical LEA numbers. Tap a category to begin.',
+    description: 'Critical LEA numbers. Tap a category to begin.',
   },
   [ROUTES.dashboard.areaC]: {
     subtitle: 'Design: Development Controls',
@@ -147,8 +141,7 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   },
   [ROUTES.dashboard.cramCard]: {
     subtitle: 'Cram Card',
-    description:
-      'Quick-reference flash cards for last-minute exam review.',
+    description: 'Quick-reference flash cards for last-minute exam review.',
   },
   [ROUTES.dashboard.daeMode]: {
     subtitle: 'DAE Maintenance Mode',
@@ -157,8 +150,7 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   // Data
   [ROUTES.dashboard.analytics]: {
     subtitle: 'Analytics',
-    description:
-      'Track progress, identify weak areas, measure LEA readiness.',
+    description: 'Track progress, identify weak areas, measure LEA readiness.',
   },
   [ROUTES.dashboard.professional]: {
     subtitle: 'Professional Reference',
@@ -187,8 +179,9 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
  * Returns null if the path is not a category page.
  */
 export function getCategoryHero(pathname: string): HeaderHeroProps | null {
-  const match = CATEGORY_HERO_MAP.find(({ pathPrefix }) =>
-    pathname === pathPrefix || pathname.startsWith(pathPrefix + '/'),
+  const match = CATEGORY_HERO_MAP.find(
+    ({ pathPrefix }) =>
+      pathname === pathPrefix || pathname.startsWith(pathPrefix + '/'),
   )
   if (!match) return null
 
@@ -201,7 +194,9 @@ export function getCategoryHero(pathname: string): HeaderHeroProps | null {
 
   // For sub-paths (e.g. /dashboard/wiki/some-article), try to find a matching override.
   // Walk upward through prefixes.
-  const sortedPrefixes = Object.keys(HERO_OVERRIDES).sort((a, b) => b.length - a.length)
+  const sortedPrefixes = Object.keys(HERO_OVERRIDES).sort(
+    (a, b) => b.length - a.length,
+  )
   for (const prefix of sortedPrefixes) {
     if (pathname.startsWith(prefix) || pathname.startsWith(prefix + '/')) {
       return { ...match.hero, ...HERO_OVERRIDES[prefix] }
