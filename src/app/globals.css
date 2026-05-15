@@ -4,6 +4,11 @@
 @import '../components/graphics/gradients.css';
 @import '../components/graphics/patterns.css';
 
+@source not "../../.ai";
+@source not "../../tmp";
+@source not "../../coverage";
+@source not "../../scripts/backups";
+
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));

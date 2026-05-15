@@ -33,6 +33,9 @@ import {
   BP220_MAX_RISER_HEIGHT_MM,
   BP220_MIN_TREAD_DEPTH_MM,
   BP220_MIN_WIDTH_MM,
+  BP344_STAIR_CITATION,
+  BP344_MAX_RISER_HEIGHT_MM,
+  BP344_MIN_TREAD_DEPTH_MM,
   BP344_MIN_ACCESSIBLE_WIDTH_MM,
   BP344_HANDRAIL_UPPER_HEIGHT_MM,
   RA9514_MAX_RISER_HEIGHT_MM,
@@ -291,6 +294,7 @@ const computeDimensionStatus = (
 export const computeRiserCompliance = (
   riserHeight: number,
   isBP220: boolean,
+  isAccessible: boolean,
   isExit: boolean,
 ): ComplianceResult => {
   const pd1096: PerLawEvaluation = !isBP220
@@ -314,6 +318,17 @@ export const computeRiserCompliance = (
         citation: 'BP 220 IRR · DHSUD',
       }
     : passEval('BP 220 IRR · DHSUD')
+
+  const bp344: PerLawEvaluation = isAccessible
+    ? {
+        applies: true,
+        passes: riserHeight <= BP344_MAX_RISER_HEIGHT_MM,
+        limit: BP344_MAX_RISER_HEIGHT_MM,
+        actual: riserHeight,
+        message: `BP 344: Maximum accessible stair riser height is ${BP344_MAX_RISER_HEIGHT_MM} mm`,
+        citation: BP344_STAIR_CITATION,
+      }
+    : passEval(BP344_STAIR_CITATION)
 
   const ra9514: PerLawEvaluation = isExit
     ? {
@@ -347,7 +362,7 @@ export const computeRiserCompliance = (
   return {
     pd1096,
     bp220,
-    bp344: passEval('BP 344 IRR · DPWH'),
+    bp344,
     ra9514,
     conflicts,
   }
@@ -356,6 +371,7 @@ export const computeRiserCompliance = (
 export const computeTreadCompliance = (
   treadDepth: number,
   isBP220: boolean,
+  isAccessible: boolean,
   isExit: boolean,
 ): ComplianceResult => {
   const pd1096: PerLawEvaluation = !isBP220
@@ -380,6 +396,17 @@ export const computeTreadCompliance = (
       }
     : passEval('BP 220 IRR · DHSUD')
 
+  const bp344: PerLawEvaluation = isAccessible
+    ? {
+        applies: true,
+        passes: treadDepth >= BP344_MIN_TREAD_DEPTH_MM,
+        limit: BP344_MIN_TREAD_DEPTH_MM,
+        actual: treadDepth,
+        message: `BP 344: Minimum accessible stair tread depth is ${BP344_MIN_TREAD_DEPTH_MM} mm`,
+        citation: BP344_STAIR_CITATION,
+      }
+    : passEval(BP344_STAIR_CITATION)
+
   const ra9514: PerLawEvaluation = isExit
     ? {
         applies: true,
@@ -394,7 +421,7 @@ export const computeTreadCompliance = (
   return {
     pd1096,
     bp220,
-    bp344: passEval('BP 344 IRR · DPWH'),
+    bp344,
     ra9514,
     conflicts: [],
   }
@@ -448,9 +475,9 @@ export const computeWidthCompliance = (
         limit: BP344_MIN_ACCESSIBLE_WIDTH_MM,
         actual: width,
         message: `BP 344: Min accessible stair width is ${BP344_MIN_ACCESSIBLE_WIDTH_MM} mm`,
-        citation: 'BP 344 IRR · DPWH',
+        citation: BP344_STAIR_CITATION,
       }
-    : passEval('BP 344 IRR · DPWH')
+    : passEval(BP344_STAIR_CITATION)
 
   const ra9514: PerLawEvaluation = isExit
     ? {
@@ -520,9 +547,9 @@ export const computeHandrailCompliance = (
         limit: BP344_HANDRAIL_UPPER_HEIGHT_MM,
         actual: handrailHeight,
         message: `BP 344: Primary handrail must be at ${BP344_HANDRAIL_UPPER_HEIGHT_MM} mm (lower rail at 700 mm shown in 3D)`,
-        citation: 'BP 344 IRR · DPWH',
+        citation: BP344_STAIR_CITATION,
       }
-    : passEval('BP 344 IRR · DPWH')
+    : passEval(BP344_STAIR_CITATION)
 
   return {
     pd1096,
@@ -586,12 +613,16 @@ const computeInternationalDeltas = (
 ): InternationalComparisonDelta[] => {
   const phRiserLimit = riserStatus.activeLawKey === 'bp220'
     ? BP220_MAX_RISER_HEIGHT_MM
-    : riserStatus.activeLawKey === 'ra9514'
+    : isAccessible
+      ? BP344_MAX_RISER_HEIGHT_MM
+      : riserStatus.activeLawKey === 'ra9514'
       ? RA9514_MAX_RISER_HEIGHT_MM
       : PD1096_MAX_RISER_HEIGHT_MM
   const phTreadLimit = treadStatus.activeLawKey === 'bp220'
     ? BP220_MIN_TREAD_DEPTH_MM
-    : treadStatus.activeLawKey === 'ra9514'
+    : isAccessible
+      ? BP344_MIN_TREAD_DEPTH_MM
+      : treadStatus.activeLawKey === 'ra9514'
       ? RA9514_MIN_TREAD_DEPTH_MM
       : PD1096_MIN_TREAD_DEPTH_MM
   const phHandrailLimit = isAccessible
@@ -618,7 +649,7 @@ const computeInternationalDeltas = (
       ibcValue: IBC_MAX_RISER_HEIGHT_MM,
       adaValue: ADA_MAX_RISER_HEIGHT_MM,
       ircValue: IRC_MAX_RISER_HEIGHT_MM,
-      phLaw: riserStatus.activeLawKey ? LAW_LABELS[riserStatus.activeLawKey] : 'PD 1096',
+      phLaw: isAccessible ? 'BP 344' : riserStatus.activeLawKey ? LAW_LABELS[riserStatus.activeLawKey] : 'PD 1096',
     },
     {
       dimension: 'treadDepth',
@@ -626,7 +657,7 @@ const computeInternationalDeltas = (
       ibcValue: IBC_MIN_TREAD_DEPTH_MM,
       adaValue: ADA_MIN_TREAD_DEPTH_MM,
       ircValue: IRC_MIN_TREAD_DEPTH_MM,
-      phLaw: treadStatus.activeLawKey ? LAW_LABELS[treadStatus.activeLawKey] : 'PD 1096',
+      phLaw: isAccessible ? 'BP 344' : treadStatus.activeLawKey ? LAW_LABELS[treadStatus.activeLawKey] : 'PD 1096',
     },
     {
       dimension: 'headroom',
@@ -717,8 +748,8 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
   const landingRequired = actualTotalRise > maxVerticalRise
 
   // Compliance evaluations
-  const riserCompliance = computeRiserCompliance(riserHeight, isBP220, isExitStair)
-  const treadCompliance = computeTreadCompliance(treadDepth, isBP220, isExitStair)
+  const riserCompliance = computeRiserCompliance(riserHeight, isBP220, isAccessibleRoute, isExitStair)
+  const treadCompliance = computeTreadCompliance(treadDepth, isBP220, isAccessibleRoute, isExitStair)
   const widthCompliance = computeWidthCompliance(stairWidth, isBP220, isAccessibleRoute, isExitStair, isHighOccupancy, isResidential)
   const headroomCompliance = computeHeadroomCompliance(headroom)
   const handrailCompliance = computeHandrailCompliance(handrailHeight, isBP220, isAccessibleRoute)

@@ -59,7 +59,7 @@ const LAWS: Record<string, LawMeta> = {
   bp344: {
     label: 'BP 344 — Accessibility',
     shortLabel: 'BP 344',
-    description: 'Accessibility Law checks for stairs that form part of an accessible route. In this module, it highlights dimensions that affect usability, especially clear stair width and handrail height.',
+    description: 'Accessibility Law checks for stairs that form part of an accessible route. In this module, it highlights accessible stair proportions, clear stair width, and dual handrail height.',
     color: '#D97706',
     priority: 3,
     isActive: (p) => p.isAccessibleRoute === true || p.isAccessibleRoute === 'true',
@@ -102,7 +102,9 @@ const REQUIREMENT_LABELS: Record<string, { description: string; value: string }>
   'bp220-max-riser': { description: 'Riser height', value: '≤ 250 mm' },
   'bp220-min-tread': { description: 'Tread depth', value: '≥ 200 mm' },
   'bp220-min-width': { description: 'Clear width', value: '≥ 600 mm' },
-  'bp344-min-width': { description: 'Accessible stair width', value: '≥ 1,200 mm' },
+  'bp344-max-riser': { description: 'Accessible stair riser', value: '≤ 150 mm' },
+  'bp344-min-tread': { description: 'Accessible stair tread', value: '≥ 300 mm' },
+  'bp344-min-width': { description: 'Accessible stair width', value: '≥ 1,500 mm' },
   'bp344-handrail-upper': { description: 'Upper handrail height', value: '900 mm' },
 }
 
@@ -404,11 +406,9 @@ export const ComplianceReportPanel = memo(function ComplianceReportPanel({
       const activeCount = evs.filter((e) => e.active).length
       groups.push({ prefix, meta, violations: evs, activeCount, applicable })
     }
-    groups.sort((a, b) => {
-      if (a.prefix === 'bp344') return 1
-      if (b.prefix === 'bp344') return -1
-      return b.violations.length - a.violations.length || b.meta.priority - a.meta.priority
-    })
+    groups.sort((a, b) =>
+      b.violations.length - a.violations.length || b.meta.priority - a.meta.priority
+    )
 
     // Conflicts use original params (they depend on actual project config)
     const conflictViolations: EvaluatedViolation[] = conflictRules

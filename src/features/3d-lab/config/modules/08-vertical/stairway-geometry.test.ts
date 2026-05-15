@@ -98,9 +98,9 @@ describe('stairway geometry validation', () => {
 
   test('passing physical stair assembly uses one gray color for treads, risers, landings, and railings', () => {
     const geometry = buildGeometry({
-      stairWidth: 1200,
-      riserHeight: 180,
-      treadDepth: 250,
+      stairWidth: 1500,
+      riserHeight: 150,
+      treadDepth: 300,
       handrailHeight: 900,
       headroom: 2100,
       treadMaterial: 'wood',
@@ -129,7 +129,7 @@ describe('stairway geometry validation', () => {
 
   test('violating physical stair parts turn red while unrelated parts stay gray', () => {
     const geometry = buildGeometry({
-      stairWidth: 1200,
+      stairWidth: 1500,
       riserHeight: 190,
       treadDepth: 190,
       handrailHeight: 950,
@@ -152,11 +152,11 @@ describe('stairway geometry validation', () => {
     expect(landing.color).toBe(STAIR_MODEL_COLOR)
   })
 
-  test('model turns risers red for any law-card failure, including RA 9514 even when exit-stair toggle is off', () => {
+  test('model turns risers red for any law-card riser failure even when accessible toggle is off', () => {
     const geometry = buildGeometry({
-      riserHeight: 185,
-      treadDepth: 250,
-      stairWidth: 1200,
+      riserHeight: 175,
+      treadDepth: 300,
+      stairWidth: 1500,
       handrailHeight: 900,
       isExitStair: false,
       isAccessibleRoute: false,
@@ -169,6 +169,25 @@ describe('stairway geometry validation', () => {
     expect(riser.color).toBe(CODE_VIOLATION_COLOR)
     expect(tread.color).toBe(STAIR_MODEL_COLOR)
     expect(handrail.color).toBe(STAIR_MODEL_COLOR)
+  })
+
+  test('BP 344 tread failure turns treads red through the shared parallel failure path', () => {
+    const geometry = buildGeometry({
+      stairWidth: 1500,
+      riserHeight: 150,
+      treadDepth: 280,
+      handrailHeight: 900,
+      headroom: 2100,
+      isAccessibleRoute: false,
+      isExitStair: false,
+      numRisers: 12,
+    })
+
+    const tread = geometry.find((instruction) => instruction.id === 'tread-0')!
+    const riser = geometry.find((instruction) => instruction.id === 'riser-0')!
+
+    expect(tread.color).toBe(CODE_VIOLATION_COLOR)
+    expect(riser.color).toBe(STAIR_MODEL_COLOR)
   })
 
   test('width violation turns the stair body red without adding width-gap planes', () => {
@@ -198,9 +217,9 @@ describe('stairway geometry validation', () => {
 
   test('vertical-rise violation turns the whole stair body red including treads, risers, and landings', () => {
     const geometry = buildGeometry({
-      riserHeight: 180,
-      treadDepth: 280,
-      stairWidth: 1200,
+      riserHeight: 150,
+      treadDepth: 300,
+      stairWidth: 1500,
       handrailHeight: 900,
       headroom: 2100,
       numRisers: 21,

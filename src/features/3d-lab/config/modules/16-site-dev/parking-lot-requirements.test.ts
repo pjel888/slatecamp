@@ -1,8 +1,10 @@
 import { describe, expect, test } from 'bun:test'
 import {
   computeParkingGridLayout,
+  computeParkingSlotBreakdown,
   evaluateParkingChecks,
   getParkingRequirementTypology,
+  PARKING_SLOT_COLORS,
   parkingLotRequirementsConfig,
   parkingRequirementTypologies,
   parkingStallMinimums,
@@ -57,7 +59,7 @@ describe('parking lot requirements source-gated module', () => {
     expect(bp220Rule?.check({ totalStalls: 10, livingUnits: 80 })).toBe(false)
   })
 
-  test('encodes RA 11697 EV parking as an included total-slot subset', () => {
+  test('encodes RA 11697 EV parking as a separate slot requirement', () => {
     expect(requiredEvParkingSlots(0)).toBe(0)
     expect(requiredEvParkingSlots(19)).toBe(0)
     expect(requiredEvParkingSlots(20)).toBe(1)
@@ -81,9 +83,46 @@ describe('parking lot requirements source-gated module', () => {
     expect(atThreshold.requiredAccessible).toBe(1)
     expect(atThreshold.requiredEvSlots).toBe(1)
 
+    const geometry = parkingLotRequirementsConfig.geometry({
+      typology: 'office-condominium-large',
+      basisValue: 1400,
+    })
+    const standardSlots = geometry.filter((instruction) => /^parking-slot-\d+$/.test(instruction.id))
+    const pwdSlots = geometry.filter((instruction) => /^pwd-parking-slot-\d+$/.test(instruction.id))
+    const evSlots = geometry.filter((instruction) => /^ev-parking-slot-\d+$/.test(instruction.id))
+
+    expect(standardSlots.length + pwdSlots.length + evSlots.length).toBe(22)
+    expect(standardSlots.length).toBe(20)
+    expect(pwdSlots.length).toBe(1)
+    expect(evSlots.length).toBe(1)
+    expect(standardSlots.every((instruction) => instruction.color === PARKING_SLOT_COLORS.standard)).toBe(true)
+    expect(pwdSlots.every((instruction) => instruction.color === PARKING_SLOT_COLORS.accessible)).toBe(true)
+    expect(evSlots.every((instruction) => instruction.color === PARKING_SLOT_COLORS.ev)).toBe(true)
+
     const sourceRule = parkingLotRequirementsConfig.sourceTruth?.sourceRules.find((rule) => rule.source_rule_id === 'PARK-RA11697-EV-COUNT')
     expect(sourceRule?.section_locator).toContain('Section 17')
     expect(sourceRule?.normalized_rule).toContain('5% of total parking slots')
+  })
+
+  test('computes the displayed total as parking slots plus accessible and EV slots', () => {
+    expect(computeParkingSlotBreakdown(20, 1, 1)).toEqual({
+      total: 22,
+      base: 20,
+      accessible: 1,
+      ev: 1,
+    })
+    expect(computeParkingSlotBreakdown(1, 1, 1)).toEqual({
+      total: 3,
+      base: 1,
+      accessible: 1,
+      ev: 1,
+    })
+    expect(computeParkingSlotBreakdown(0, 1, 1)).toEqual({
+      total: 0,
+      base: 0,
+      accessible: 0,
+      ev: 0,
+    })
   })
 
   test('keeps the default parameter surface calculator-first only', () => {
@@ -213,7 +252,7 @@ describe('parking lot requirements source-gated module', () => {
     expect(Math.max(pwdLayout.width / pwdLayout.depth, pwdLayout.depth / pwdLayout.width)).toBeLessThan(1.6)
   })
 
-  test('geometry renders PWD slots as part of the total required-slot count', () => {
+  test('geometry renders law-colored parking, PWD, and EV slots inside the total required-slot count', () => {
     const geometry = parkingLotRequirementsConfig.geometry({
       typology: 'office-condominium-large',
       basisValue: 18000,
@@ -221,22 +260,51 @@ describe('parking lot requirements source-gated module', () => {
 
     const standardSlots = geometry.filter((instruction) => /^parking-slot-\d+$/.test(instruction.id))
     const pwdSlots = geometry.filter((instruction) => /^pwd-parking-slot-\d+$/.test(instruction.id))
-    const normalMaxX = Math.max(...standardSlots.map((instruction) => instruction.position[0] + instruction.args[0] / 2))
-    const pwdMinX = Math.min(...pwdSlots.map((instruction) => instruction.position[0] - instruction.args[0] / 2))
+    const evSlots = geometry.filter((instruction) => /^ev-parking-slot-\d+$/.test(instruction.id))
+    const allSlots = [...standardSlots, ...pwdSlots, ...evSlots]
+    const slotLines = geometry.filter((instruction) => /-line-\d+$/.test(instruction.id))
+    const normalMinZ = Math.min(...standardSlots.map((instruction) => instruction.position[2] - instruction.args[2] / 2))
+    const pwdMaxZ = Math.max(...pwdSlots.map((instruction) => instruction.position[2] + instruction.args[2] / 2))
+    const pwdMaxX = Math.max(...pwdSlots.map((instruction) => instruction.position[0] + instruction.args[0] / 2))
+    const evMinX = Math.min(...evSlots.map((instruction) => instruction.position[0] - instruction.args[0] / 2))
+    const evMaxZ = Math.max(...evSlots.map((instruction) => instruction.position[2] + instruction.args[2] / 2))
+    const minSlotBottomY = Math.min(...allSlots.map((instruction) => instruction.position[1] - instruction.args[1] / 2))
+    const maxSlotTopY = Math.max(...allSlots.map((instruction) => instruction.position[1] + instruction.args[1] / 2))
+    const minLineBottomY = Math.min(...slotLines.map((instruction) => instruction.position[1] - instruction.args[1] / 2))
 
     expect(geometry.some((instruction) => instruction.id === 'parking-grid-slab')).toBe(false)
-    expect(standardSlots.length + pwdSlots.length).toBe(258)
-    expect(standardSlots.length).toBe(251)
+    expect(standardSlots.length + pwdSlots.length + evSlots.length).toBe(278)
+    expect(standardSlots.length).toBe(258)
     expect(pwdSlots.length).toBe(7)
-    expect(pwdMinX - normalMaxX).toBeGreaterThanOrEqual(3.99)
+    expect(evSlots.length).toBe(13)
+    expect(allSlots.every((instruction) => instruction.args[1] === 0.12)).toBe(true)
+    expect(minSlotBottomY).toBeGreaterThan(0)
+    expect(minLineBottomY).toBeGreaterThan(maxSlotTopY)
+    expect(normalMinZ - Math.max(pwdMaxZ, evMaxZ)).toBeGreaterThanOrEqual(2.99)
+    expect(evMinX - pwdMaxX).toBeGreaterThanOrEqual(2.99)
+    expect(standardSlots.every((instruction) => instruction.color === PARKING_SLOT_COLORS.standard)).toBe(true)
     expect(pwdSlots.every((instruction) => instruction.args[0] === 4 && instruction.args[2] === 5)).toBe(true)
-    expect(pwdSlots.every((instruction) => instruction.color === '#facc15')).toBe(true)
+    expect(pwdSlots.every((instruction) => instruction.color === PARKING_SLOT_COLORS.accessible)).toBe(true)
     expect(pwdSlots.every((instruction) => instruction.material === 'basic')).toBe(true)
+    expect(evSlots.every((instruction) => instruction.args[0] === 2.5 && instruction.args[2] === 5)).toBe(true)
+    expect(evSlots.every((instruction) => instruction.color === PARKING_SLOT_COLORS.ev)).toBe(true)
+    expect(evSlots.every((instruction) => instruction.material === 'basic')).toBe(true)
     expect(geometry.some((instruction) => instruction.id.includes('walkway'))).toBe(false)
     expect(geometry.some((instruction) => instruction.id.includes('passage'))).toBe(false)
     expect(geometry.some((instruction) => instruction.id.includes('accessible-marker'))).toBe(false)
     expect(geometry.some((instruction) => instruction.id.includes('car'))).toBe(false)
     expect(geometry.some((instruction) => instruction.id.includes('aisle'))).toBe(false)
     expect(geometry.some((instruction) => instruction.id.includes('ra9514'))).toBe(false)
+  })
+
+  test('uses BP 220 amber for the base slot group when the selected project type is BP 220', () => {
+    const geometry = parkingLotRequirementsConfig.geometry({
+      typology: 'bp220-multifamily',
+      basisValue: 160,
+    })
+    const standardSlots = geometry.filter((instruction) => /^parking-slot-\d+$/.test(instruction.id))
+
+    expect(standardSlots.length).toBe(20)
+    expect(standardSlots.every((instruction) => instruction.color === PARKING_SLOT_COLORS.bp220)).toBe(true)
   })
 })

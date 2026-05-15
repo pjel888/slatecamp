@@ -120,11 +120,49 @@ describe('computeStairState — preset validation', () => {
     expect(anyLawFailsDimension({ ...baseParams, handrailHeight: 950 }, 'handrailHeight')).toBe(true)
     expect(anyLawFailsDimension({ ...baseParams, numRisers: 21 }, 'verticalRise')).toBe(true)
 
-    expect(anyLawFailsDimension({ ...baseParams, riserHeight: 175 }, 'riserHeight')).toBe(false)
+    expect(anyLawFailsDimension({ ...baseParams, riserHeight: 150 }, 'riserHeight')).toBe(false)
     expect(anyLawFailsDimension({ ...baseParams, treadDepth: 300 }, 'treadDepth')).toBe(false)
-    expect(anyLawFailsDimension({ ...baseParams, stairWidth: 1200 }, 'stairWidth')).toBe(false)
+    expect(anyLawFailsDimension({ ...baseParams, stairWidth: 1500 }, 'stairWidth')).toBe(false)
     expect(anyLawFailsDimension({ ...baseParams, headroom: 2100 }, 'headroom')).toBe(false)
     expect(anyLawFailsDimension({ ...baseParams, handrailHeight: 900 }, 'handrailHeight')).toBe(false)
+  })
+
+  test('BP 344 accessible stair riser, tread, and width limits are first-class law checks', () => {
+    const failing = computeStairState({
+      projectType: 'commercial',
+      isAccessibleRoute: true,
+      isExitStair: false,
+      stairWidth: 1200,
+      riserHeight: 175,
+      treadDepth: 280,
+      handrailHeight: 900,
+      numRisers: 12,
+    })
+
+    expect(failing.riserCompliance.bp344.applies).toBe(true)
+    expect(failing.riserCompliance.bp344.passes).toBe(false)
+    expect(failing.riserCompliance.bp344.limit).toBe(150)
+    expect(failing.treadCompliance.bp344.applies).toBe(true)
+    expect(failing.treadCompliance.bp344.passes).toBe(false)
+    expect(failing.treadCompliance.bp344.limit).toBe(300)
+    expect(failing.widthCompliance.bp344.applies).toBe(true)
+    expect(failing.widthCompliance.bp344.passes).toBe(false)
+    expect(failing.widthCompliance.bp344.limit).toBe(1500)
+
+    const passing = computeStairState({
+      projectType: 'commercial',
+      isAccessibleRoute: true,
+      isExitStair: false,
+      stairWidth: 1500,
+      riserHeight: 150,
+      treadDepth: 300,
+      handrailHeight: 900,
+      numRisers: 12,
+    })
+
+    expect(passing.riserCompliance.bp344.passes).toBe(true)
+    expect(passing.treadCompliance.bp344.passes).toBe(true)
+    expect(passing.widthCompliance.bp344.passes).toBe(true)
   })
 
   test('Standard House preset: no riser/tread violations', () => {
@@ -217,7 +255,8 @@ describe('computeStairState — preset validation', () => {
     const handrailDelta = state.internationalDeltas.find((delta) => delta.dimension === 'handrailHeight')
     const verticalRiseDelta = state.internationalDeltas.find((delta) => delta.dimension === 'verticalRise')
 
-    expect(riserDelta?.phLaw).toBe('RA 9514')
+    expect(riserDelta?.phLaw).toBe('BP 344')
+    expect(riserDelta?.phValue).toBe(150)
     expect(widthDelta?.phLaw).toBe('BP 344')
     expect(handrailDelta?.phLaw).toBe('BP 344')
     expect(verticalRiseDelta?.phLaw).toBe('RA 9514')

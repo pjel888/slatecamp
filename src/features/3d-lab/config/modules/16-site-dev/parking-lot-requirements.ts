@@ -4,9 +4,20 @@ type ParamValue = number | boolean | string
 
 type ParkingParams = Record<string, ParamValue>
 
-const STANDARD_SLOT_COLOR = '#cbd5e1'
-const PWD_SLOT_COLOR = '#facc15'
-const SLOT_LINE_COLOR = '#64748b'
+export const PARKING_LAW_COLORS = {
+  PD_1096: '#4A7FAD',
+  BP_220: '#F5A623',
+  BP_344: '#D97706',
+  RA_11697: '#0F766E',
+} as const
+
+export const PARKING_SLOT_COLORS = {
+  standard: PARKING_LAW_COLORS.PD_1096,
+  bp220: PARKING_LAW_COLORS.BP_220,
+  accessible: PARKING_LAW_COLORS.BP_344,
+  ev: PARKING_LAW_COLORS.RA_11697,
+  line: '#64748b',
+} as const
 
 export const PARKING_SOURCE_STATUSES = {
   LOCATED: 'LOCATED_NEEDS_SME_REVIEW',
@@ -273,6 +284,21 @@ export function requiredParkingSlotsForTypology(typologyId: string, basisValue: 
   return Math.ceil(basisValue / typology.per)
 }
 
+export function computeParkingSlotBreakdown(requiredParkingSlots: number, requiredAccessibleSlots: number, requiredEvSlots: number) {
+  const base = Math.max(0, Math.ceil(requiredParkingSlots))
+  if (base === 0) return { total: 0, base: 0, accessible: 0, ev: 0 }
+
+  const accessible = Math.max(0, Math.ceil(requiredAccessibleSlots))
+  const ev = Math.max(0, Math.ceil(requiredEvSlots))
+
+  return {
+    total: base + accessible + ev,
+    base,
+    accessible,
+    ev,
+  }
+}
+
 export function evaluateParkingChecks(params: ParkingParams) {
   const typologyId = String(params.typology ?? 'office-condominium-large')
   const selectedTypology = getParkingRequirementTypology(typologyId) ?? parkingRequirementTypologies[0]
@@ -343,6 +369,16 @@ type ParkingGridLayout = {
   depth: number
 }
 
+type ParkingSlotGroup = {
+  prefix: string
+  label: string
+  layout: ParkingGridLayout
+  color: string
+  opacity: number
+  material: GeometryInstruction['material']
+  lineOpacity: number
+}
+
 export function computeParkingGridLayout(count: number, slotWidth: number, slotDepth: number, gap: number): ParkingGridLayout {
   const safeCount = Math.max(0, Math.ceil(count))
   if (safeCount === 0) {
@@ -374,40 +410,93 @@ function geometry(params: ParkingParams): GeometryInstruction[] {
   const totalRequiredSlots = Math.max(0, checks.requiredParkingSlots)
   if (totalRequiredSlots === 0) return []
 
-  const pwdSlotCount = Math.min(totalRequiredSlots, Math.max(0, checks.requiredAccessible))
-  const normalSlotCount = Math.max(0, totalRequiredSlots - pwdSlotCount)
+  const slotBreakdown = computeParkingSlotBreakdown(totalRequiredSlots, checks.requiredAccessible, checks.requiredEvSlots)
+  const normalSlotCount = slotBreakdown.base
+  const pwdSlotCount = slotBreakdown.accessible
+  const evSlotCount = slotBreakdown.ev
   const standardSlotW = 2.5
   const pwdSlotW = 4
   const slotD = 5
   const gap = 0.32
+  const slotFloorClearance = 0.012
+  const slotHeight = 0.12
+  const slotCenterY = slotFloorClearance + slotHeight / 2
+  const lineHeight = 0.014
+  const lineCenterY = slotFloorClearance + slotHeight + lineHeight / 2 + 0.01
+  const standardSlotColor = checks.selectedTypology.sourceRuleId === 'PARK-BP220-RATIO' ? PARKING_SLOT_COLORS.bp220 : PARKING_SLOT_COLORS.standard
   const normalLayout = computeParkingGridLayout(normalSlotCount, standardSlotW, slotD, gap)
   const pwdLayout = computeParkingGridLayout(pwdSlotCount, pwdSlotW, slotD, gap)
-  const groupGap = normalLayout.count > 0 && pwdLayout.count > 0 ? 4 : 0
-  const normalCenterX = -(pwdLayout.width + groupGap) / 2
-  const pwdCenterX = (normalLayout.width + groupGap) / 2
+  const evLayout = computeParkingGridLayout(evSlotCount, standardSlotW, slotD, gap)
+  const groupGap = 3
   const inst: GeometryInstruction[] = []
 
-  const addSlotGrid = (kind: 'normal' | 'pwd', layout: ParkingGridLayout, centerX: number, color: string) => {
+  const baseSlotGroup: ParkingSlotGroup = {
+    prefix: 'parking-slot',
+    label: checks.selectedTypology.sourceRuleId === 'PARK-BP220-RATIO' ? 'BP 220 required parking slot' : 'PD 1096 required parking slot',
+    layout: normalLayout,
+    color: standardSlotColor,
+    opacity: 0.78,
+    material: 'standard',
+    lineOpacity: 0.1,
+  }
+  const specialSlotGroups: ParkingSlotGroup[] = [
+    {
+      prefix: 'pwd-parking-slot',
+      label: 'BP 344 accessible parking slot',
+      layout: pwdLayout,
+      color: PARKING_SLOT_COLORS.accessible,
+      opacity: 1,
+      material: 'basic' as const,
+      lineOpacity: 0.26,
+    },
+    {
+      prefix: 'ev-parking-slot',
+      label: 'RA 11697 EV parking slot',
+      layout: evLayout,
+      color: PARKING_SLOT_COLORS.ev,
+      opacity: 0.96,
+      material: 'basic' as const,
+      lineOpacity: 0.22,
+    },
+  ].filter((group) => group.layout.count > 0)
+
+  const addSlotGrid = (group: ParkingSlotGroup, centerX: number, centerZ: number) => {
+    const { layout } = group
     if (layout.count <= 0) return
 
     const startX = centerX - layout.width / 2 + layout.slotWidth / 2
-    const startZ = -layout.depth / 2 + layout.slotDepth / 2
+    const startZ = centerZ - layout.depth / 2 + layout.slotDepth / 2
 
     for (let i = 0; i < layout.count; i += 1) {
       const col = i % layout.columns
       const row = Math.floor(i / layout.columns)
       const x = startX + col * (layout.slotWidth + layout.gap)
       const z = startZ + row * (layout.slotDepth + layout.gap)
-      const prefix = kind === 'pwd' ? 'pwd-parking-slot' : 'parking-slot'
-      const label = kind === 'pwd' ? 'PWD required parking slot' : 'Required parking slot'
 
-      addBox(inst, `${prefix}-${i + 1}`, [x, 0.025, z], [layout.slotWidth, 0.05, layout.slotDepth], color, label, kind === 'pwd' ? 1 : 0.78, kind === 'pwd' ? 'basic' : 'standard')
-      addBox(inst, `${prefix}-line-${i + 1}`, [x, 0.065, z], [layout.slotWidth + 0.04, 0.012, layout.slotDepth + 0.04], SLOT_LINE_COLOR, undefined, kind === 'pwd' ? 0.26 : 0.1)
+      addBox(inst, `${group.prefix}-${i + 1}`, [x, slotCenterY, z], [layout.slotWidth, slotHeight, layout.slotDepth], group.color, group.label, group.opacity, group.material)
+      addBox(inst, `${group.prefix}-line-${i + 1}`, [x, lineCenterY, z], [layout.slotWidth + 0.04, lineHeight, layout.slotDepth + 0.04], PARKING_SLOT_COLORS.line, undefined, group.lineOpacity)
     }
   }
 
-  addSlotGrid('normal', normalLayout, normalCenterX, STANDARD_SLOT_COLOR)
-  addSlotGrid('pwd', pwdLayout, pwdCenterX, PWD_SLOT_COLOR)
+  const hasBaseSlots = baseSlotGroup.layout.count > 0
+  const hasSpecialSlots = specialSlotGroups.length > 0
+  const specialRowWidth = specialSlotGroups.reduce((sum, group) => sum + group.layout.width, 0) + Math.max(0, specialSlotGroups.length - 1) * groupGap
+  const specialRowDepth = specialSlotGroups.reduce((depth, group) => Math.max(depth, group.layout.depth), 0)
+  const totalDepth = (hasBaseSlots ? baseSlotGroup.layout.depth : 0) + (hasBaseSlots && hasSpecialSlots ? groupGap : 0) + (hasSpecialSlots ? specialRowDepth : 0)
+  const specialCenterZ = hasSpecialSlots ? -totalDepth / 2 + specialRowDepth / 2 : 0
+  const baseCenterZ = hasBaseSlots ? totalDepth / 2 - baseSlotGroup.layout.depth / 2 : 0
+
+  if (hasBaseSlots) {
+    addSlotGrid(baseSlotGroup, 0, baseCenterZ)
+  }
+
+  const specialCenterX = hasBaseSlots ? Math.min(6, baseSlotGroup.layout.width / 3) : 0
+  let cursorX = specialCenterX - specialRowWidth / 2
+  for (const group of specialSlotGroups) {
+    const centerX = cursorX + group.layout.width / 2
+    addSlotGrid(group, centerX, specialCenterZ)
+    cursorX += group.layout.width + groupGap
+  }
 
   return inst
 }

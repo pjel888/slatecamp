@@ -43,6 +43,9 @@ import {
   PD1096_MIN_WIDTH_RESIDENTIAL_MM,
   BP220_MAX_RISER_HEIGHT_MM,
   BP220_MIN_WIDTH_MM,
+  BP344_STAIR_CITATION,
+  BP344_MAX_RISER_HEIGHT_MM,
+  BP344_MIN_TREAD_DEPTH_MM,
   RA9514_MAX_RISER_HEIGHT_MM,
   BLONDEL_COMFORT_MIN_MM,
   BLONDEL_COMFORT_MAX_MM,
@@ -121,6 +124,7 @@ const createComplianceViolationRule = ({
   lawKey,
   position,
   severity = 'error',
+  codeCitation,
 }: {
   id: string
   field: string
@@ -128,6 +132,7 @@ const createComplianceViolationRule = ({
   lawKey: StairLawKey
   position?: (params: StairParams) => [number, number, number]
   severity?: 'error' | 'warning' | 'info'
+  codeCitation?: string
 }): ViolationRule => ({
   id,
   field,
@@ -137,7 +142,7 @@ const createComplianceViolationRule = ({
     return Boolean(lawStatus?.applies && !lawStatus.passes)
   },
   message: `${LAW_LABELS[lawKey]}: ${DIMENSION_MESSAGES[dimension]} is outside the active requirement`,
-  codeCitation: LAW_LABELS[lawKey],
+  codeCitation: codeCitation ?? LAW_LABELS[lawKey],
   severity,
   position,
 })
@@ -220,7 +225,7 @@ const parameters: ParameterDef[] = [
     min: 500,
     max: 1500,
     step: 25,
-    default: 1200,
+    default: 1500,
     unit: 'mm',
     group: 'Stair Geometry',
   },
@@ -231,7 +236,7 @@ const parameters: ParameterDef[] = [
     min: 100,
     max: 300,
     step: 5,
-    default: 175,
+    default: 150,
     unit: 'mm',
     group: 'Stair Geometry',
   },
@@ -989,10 +994,27 @@ const violations: ViolationRule[] = [
   // ═══════════════════════════════════════════════════════════════════════════
 
   createComplianceViolationRule({
+    id: 'bp344-max-riser',
+    field: 'riserHeight',
+    dimension: 'riserHeight',
+    lawKey: 'bp344',
+    codeCitation: BP344_STAIR_CITATION,
+    position: (p) => [-(mm(p.stairWidth) / 2) - 0.14, mm(p.riserHeight) / 2, 0],
+  }),
+  createComplianceViolationRule({
+    id: 'bp344-min-tread',
+    field: 'treadDepth',
+    dimension: 'treadDepth',
+    lawKey: 'bp344',
+    codeCitation: BP344_STAIR_CITATION,
+    position: (p) => [0, mm(p.riserHeight) + 0.07, mm(p.treadDepth) / 2],
+  }),
+  createComplianceViolationRule({
     id: 'bp344-min-width',
     field: 'stairWidth',
     dimension: 'stairWidth',
     lawKey: 'bp344',
+    codeCitation: BP344_STAIR_CITATION,
     position: (p) => [0, -0.12, mm(p.treadDepth) / 2],
   }),
   createComplianceViolationRule({
@@ -1000,6 +1022,7 @@ const violations: ViolationRule[] = [
     field: 'handrailHeight',
     dimension: 'handrailHeight',
     lawKey: 'bp344',
+    codeCitation: BP344_STAIR_CITATION,
     position: (p) => {
       const mid = Math.floor(num(p.numRisers) / 2)
       return [
@@ -1197,14 +1220,14 @@ const annotations: AnnotationDef[] = [
     id: 'riser-height',
     label: 'Riser Height',
     description: 'Vertical distance between consecutive treads',
-    codeCitation: 'PD 1096 / BP 220',
+    codeCitation: `PD 1096 / BP 220 / BP 344 (${BP344_MAX_RISER_HEIGHT_MM} mm max when accessible)`,
     position: (p) => [-(mm(p.stairWidth) / 2) - 0.12, mm(p.riserHeight) / 2, 0],
   },
   {
     id: 'tread-depth',
     label: 'Tread Depth',
     description: 'Horizontal depth of a single tread (exclusive of nosing)',
-    codeCitation: 'PD 1096 / BP 220',
+    codeCitation: `PD 1096 / BP 220 / BP 344 (${BP344_MIN_TREAD_DEPTH_MM} mm min when accessible)`,
     position: (p) => [0, mm(p.riserHeight) + 0.08, 0],
   },
   {

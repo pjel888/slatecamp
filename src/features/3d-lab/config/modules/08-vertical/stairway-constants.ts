@@ -27,12 +27,15 @@ export const BP220_MIN_WIDTH_MM = 600               // BP 220 IRR · DHSUD
 
 // ──────────────────────────────────────────────────────────────────────────────
 // BP 344 — Accessibility Law
-// Source: BP 344 IRR · DPWH
+// Source: BP 344 2024 Revised IRR, Appendix A, A.10 Stairs
 // ──────────────────────────────────────────────────────────────────────────────
-export const BP344_MIN_ACCESSIBLE_WIDTH_MM = 1200   // BP 344 IRR · DPWH
-export const BP344_HANDRAIL_UPPER_HEIGHT_MM = 900   // BP 344 IRR · DPWH
-export const BP344_HANDRAIL_LOWER_HEIGHT_MM = 700   // BP 344 IRR · DPWH
-export const BP344_HANDRAIL_EXTENSION_MM = 300      // BP 344 IRR · DPWH
+export const BP344_STAIR_CITATION = 'BP 344 2024 Revised IRR, Appendix A, A.10 Stairs'
+export const BP344_MAX_RISER_HEIGHT_MM = 150        // BP 344 2024 Revised IRR, Appendix A, A.10 Stairs
+export const BP344_MIN_TREAD_DEPTH_MM = 300         // BP 344 2024 Revised IRR, Appendix A, A.10 Stairs
+export const BP344_MIN_ACCESSIBLE_WIDTH_MM = 1500   // BP 344 2024 Revised IRR, Appendix A, A.10 Stairs
+export const BP344_HANDRAIL_UPPER_HEIGHT_MM = 900   // BP 344 2024 Revised IRR, Appendix A, A.10 Stairs
+export const BP344_HANDRAIL_LOWER_HEIGHT_MM = 700   // BP 344 2024 Revised IRR, Appendix A, A.10 Stairs
+export const BP344_HANDRAIL_EXTENSION_MM = 300      // BP 344 2024 Revised IRR, Appendix A, A.10 Stairs
 
 // ──────────────────────────────────────────────────────────────────────────────
 // RA 9514 — Fire Code of the Philippines
