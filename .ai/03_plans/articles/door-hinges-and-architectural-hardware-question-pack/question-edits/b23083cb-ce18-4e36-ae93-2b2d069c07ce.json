@@ -1,0 +1,50 @@
+{
+  "question_id": "b23083cb-ce18-4e36-ae93-2b2d069c07ce",
+  "action": "add_new",
+  "reason": "New linked question for Door Hinges and Architectural Hardware article assessment bridge.",
+  "parent_article_id": "NEW_ARTICLE_DOOR_HINGES_ARCHITECTURAL_HARDWARE_TBD",
+  "parent_article_slug": "door-hinges-and-architectural-hardware",
+  "topic_id": "00000000-0000-0000-0003-000000000088",
+  "objective": "Classify hardware by function before naming the part.",
+  "source_audit_support": {
+    "support_status": "source_safe_textbook_construction_reference",
+    "source_locator": "Salvan, Architectural Building Materials, hardware section raw PDF p. 173; hinge section raw PDF pp. 177, 181-183. Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "claim_boundary": "Construction terminology and hardware-selection concepts only; not presented as Philippine legal/code mandate unless separately governed by applicable codes/specifications."
+  },
+  "proposed": {
+    "text": "A board item describes a door part that carries the door leaf and determines the axis about which the leaf swings. Which hardware family is being tested?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hinge or pivot"
+      },
+      {
+        "id": "b",
+        "text": "Strike plate"
+      },
+      {
+        "id": "c",
+        "text": "Threshold"
+      },
+      {
+        "id": "d",
+        "text": "Kick plate"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "summary": "A hinge or pivot supports the leaf and defines the swing axis.",
+      "explanation": "Hinges and pivots are support-and-movement hardware. A strike receives a latch or bolt, a threshold treats the sill transition/seal, and a kick plate protects the lower face of the door.",
+      "takeaway": "Ask first: does the part carry, secure, close, operate, protect, or seal the door?"
+    },
+    "explanation": "A hinge or pivot supports the leaf and defines the swing axis.",
+    "code_citation": "Salvan, Architectural Building Materials, hardware section raw PDF p. 173; hinge section raw PDF pp. 177, 181-183. Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "bloom_level": "understand",
+    "difficulty": 0.45,
+    "practice_context": [
+      "door_hardware",
+      "building_materials_and_construction",
+      "lea_board_review"
+    ]
+  }
+}

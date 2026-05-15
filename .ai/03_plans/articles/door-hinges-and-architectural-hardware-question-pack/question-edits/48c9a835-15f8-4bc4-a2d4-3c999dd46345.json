@@ -1,0 +1,50 @@
+{
+  "question_id": "48c9a835-15f8-4bc4-a2d4-3c999dd46345",
+  "action": "add_new",
+  "reason": "New linked question for Door Hinges and Architectural Hardware article assessment bridge.",
+  "parent_article_id": "NEW_ARTICLE_DOOR_HINGES_ARCHITECTURAL_HARDWARE_TBD",
+  "parent_article_slug": "door-hinges-and-architectural-hardware",
+  "topic_id": "00000000-0000-0000-0003-000000000088",
+  "objective": "Match hinge type to service condition.",
+  "source_audit_support": {
+    "support_status": "source_safe_textbook_construction_reference",
+    "source_locator": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "claim_boundary": "Construction terminology and hardware-selection concepts only; not presented as Philippine legal/code mandate unless separately governed by applicable codes/specifications."
+  },
+  "proposed": {
+    "text": "A heavy, frequently used commercial door needs smoother movement and better wear resistance than a light residential bedroom door. Which hinge choice best fits the condition?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ball-bearing hinge"
+      },
+      {
+        "id": "b",
+        "text": "Decorative strap hinge only"
+      },
+      {
+        "id": "c",
+        "text": "Loose-pin hinge selected only for removability"
+      },
+      {
+        "id": "d",
+        "text": "Plain cabinet catch"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "summary": "Ball-bearing hinges reduce friction and suit heavier or higher-use swing doors.",
+      "explanation": "The article distinguishes the ball-bearing hinge by its bearing collars/low-friction movement. Strap hinges may be decorative or used for gates/large leaves, but the described need is smoother high-use rotation. A loose-pin hinge emphasizes removability, not high-cycle wear resistance. A cabinet catch is not a support hinge.",
+      "takeaway": "Heavy/frequent swing + smoother operation = ball-bearing hinge."
+    },
+    "explanation": "Ball-bearing hinges reduce friction and suit heavier or higher-use swing doors.",
+    "code_citation": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "bloom_level": "apply",
+    "difficulty": 0.55,
+    "practice_context": [
+      "door_hardware",
+      "building_materials_and_construction",
+      "lea_board_review"
+    ]
+  }
+}

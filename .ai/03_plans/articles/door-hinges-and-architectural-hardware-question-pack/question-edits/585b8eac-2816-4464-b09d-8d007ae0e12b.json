@@ -1,0 +1,50 @@
+{
+  "question_id": "585b8eac-2816-4464-b09d-8d007ae0e12b",
+  "action": "add_new",
+  "reason": "New linked question for Door Hinges and Architectural Hardware article assessment bridge.",
+  "parent_article_id": "NEW_ARTICLE_DOOR_HINGES_ARCHITECTURAL_HARDWARE_TBD",
+  "parent_article_slug": "door-hinges-and-architectural-hardware",
+  "topic_id": "00000000-0000-0000-0003-000000000088",
+  "objective": "Distinguish loose-pin hinges from fixed-pin or security-oriented choices.",
+  "source_audit_support": {
+    "support_status": "source_safe_textbook_construction_reference",
+    "source_locator": "Salvan, Architectural Building Materials, hardware section raw PDF p. 173; hinge section raw PDF pp. 177, 181-183. Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "claim_boundary": "Construction terminology and hardware-selection concepts only; not presented as Philippine legal/code mandate unless separately governed by applicable codes/specifications."
+  },
+  "proposed": {
+    "text": "A maintenance plan requires a door leaf to be removable without unscrewing the hinge leaves from the frame and door. Which hinge feature directly answers that requirement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Removable loose pin"
+      },
+      {
+        "id": "b",
+        "text": "Continuous barrel running full height"
+      },
+      {
+        "id": "c",
+        "text": "Panic bar across the exit side"
+      },
+      {
+        "id": "d",
+        "text": "Weatherstripping at the stop"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "summary": "A loose-pin hinge allows the pin to be removed so the leaf can be lifted away while the leaves remain fastened.",
+      "explanation": "The requirement is removability of the door leaf, not egress release, sealing, or full-height load distribution. The hinge pin is the decisive feature.",
+      "takeaway": "When the stem says removable leaf without unscrewing, look for loose pin."
+    },
+    "explanation": "A loose-pin hinge allows the pin to be removed so the leaf can be lifted away while the leaves remain fastened.",
+    "code_citation": "Salvan, Architectural Building Materials, hardware section raw PDF p. 173; hinge section raw PDF pp. 177, 181-183. Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "bloom_level": "apply",
+    "difficulty": 0.48,
+    "practice_context": [
+      "door_hardware",
+      "building_materials_and_construction",
+      "lea_board_review"
+    ]
+  }
+}

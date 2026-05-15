@@ -1,0 +1,50 @@
+{
+  "question_id": "78c5bc1e-9430-4e85-875b-e1e60377af38",
+  "action": "add_new",
+  "reason": "New linked question for Door Hinges and Architectural Hardware article assessment bridge.",
+  "parent_article_id": "NEW_ARTICLE_DOOR_HINGES_ARCHITECTURAL_HARDWARE_TBD",
+  "parent_article_slug": "door-hinges-and-architectural-hardware",
+  "topic_id": "00000000-0000-0000-0003-000000000088",
+  "objective": "Apply hardware-selection factors.",
+  "source_audit_support": {
+    "support_status": "source_safe_textbook_construction_reference",
+    "source_locator": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "claim_boundary": "Construction terminology and hardware-selection concepts only; not presented as Philippine legal/code mandate unless separately governed by applicable codes/specifications."
+  },
+  "proposed": {
+    "text": "An architect is selecting hardware for exterior doors of a coastal resort exposed to salt air. Which selection factor from the article should receive special attention?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Material/finish durability and resistance to weather or corrosive exposure"
+      },
+      {
+        "id": "b",
+        "text": "Only whether the hinge name is familiar from review notes"
+      },
+      {
+        "id": "c",
+        "text": "Only whether the hardware is the cheapest available item"
+      },
+      {
+        "id": "d",
+        "text": "Only whether the door has a decorative panel design"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "summary": "Hardware selection must account for durability and exposure to weather or corrosive conditions.",
+      "explanation": "The article adapts BCI’s selection factors to Philippine practice: function, mounting condition, material/finish, durability, and exposure matter. Salt air is a corrosion condition, so material and finish are not cosmetic afterthoughts.",
+      "takeaway": "Exposure changes hardware selection; coastal conditions make material and finish a performance issue."
+    },
+    "explanation": "Hardware selection must account for durability and exposure to weather or corrosive conditions.",
+    "code_citation": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "bloom_level": "analyze",
+    "difficulty": 0.6,
+    "practice_context": [
+      "door_hardware",
+      "building_materials_and_construction",
+      "lea_board_review"
+    ]
+  }
+}

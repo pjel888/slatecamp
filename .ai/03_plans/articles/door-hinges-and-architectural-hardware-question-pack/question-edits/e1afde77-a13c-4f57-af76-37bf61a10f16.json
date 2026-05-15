@@ -1,0 +1,50 @@
+{
+  "question_id": "e1afde77-a13c-4f57-af76-37bf61a10f16",
+  "action": "add_new",
+  "reason": "New linked question for Door Hinges and Architectural Hardware article assessment bridge.",
+  "parent_article_id": "NEW_ARTICLE_DOOR_HINGES_ARCHITECTURAL_HARDWARE_TBD",
+  "parent_article_slug": "door-hinges-and-architectural-hardware",
+  "topic_id": "00000000-0000-0000-0003-000000000088",
+  "objective": "Distinguish pivot hinges from butt hinges.",
+  "source_audit_support": {
+    "support_status": "source_safe_textbook_construction_reference",
+    "source_locator": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "claim_boundary": "Construction terminology and hardware-selection concepts only; not presented as Philippine legal/code mandate unless separately governed by applicable codes/specifications."
+  },
+  "proposed": {
+    "text": "A large door is detailed to rotate from points at the floor and head rather than from knuckles fixed along the jamb edge. Which support type is most likely intended?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pivot hinge or pivot set"
+      },
+      {
+        "id": "b",
+        "text": "Butt hinge"
+      },
+      {
+        "id": "c",
+        "text": "Kick plate"
+      },
+      {
+        "id": "d",
+        "text": "Mortise lockset"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "summary": "Pivot hardware shifts the turning support to top and bottom pivot points instead of relying on jamb-edge knuckles.",
+      "explanation": "The stem describes the axis and bearing points. Butt hinges are mounted along the jamb edge. Kick plates protect the lower face. A mortise lockset secures/latches the door.",
+      "takeaway": "If the axis is at floor/head pivot points, answer pivot—not ordinary butt hinge."
+    },
+    "explanation": "Pivot hardware shifts the turning support to top and bottom pivot points instead of relying on jamb-edge knuckles.",
+    "code_citation": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "bloom_level": "apply",
+    "difficulty": 0.55,
+    "practice_context": [
+      "door_hardware",
+      "building_materials_and_construction",
+      "lea_board_review"
+    ]
+  }
+}
