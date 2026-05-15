@@ -54,7 +54,6 @@ import {
   BP344_GHOST_RAIL_RADIUS_M,
   BP344_GHOST_OPACITY,
   BP344_GHOST_OFFSET_M,
-  WIDTH_DEFICIT_OPACITY,
   HEADROOM_PLANE_OPACITY,
   HEADROOM_PASS_COLOR,
   CODE_VIOLATION_COLOR,
@@ -514,10 +513,11 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
   // a physical dimension, the corresponding model part turns universal red.
   const parallelFailures = computeParallelDimensionFailures(rawParams)
   const verticalRiseViol = parallelFailures.verticalRise
-  const rColor = parallelFailures.riserHeight || verticalRiseViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.RISER
-  const tColor = parallelFailures.treadDepth || verticalRiseViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.TREAD
-  const landingColor = verticalRiseViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.LANDING
-  const wColor = parallelFailures.stairWidth ? CODE_VIOLATION_COLOR : null
+  const stairBodyWidthViol = parallelFailures.stairWidth
+  const stairBodyViol = verticalRiseViol || stairBodyWidthViol
+  const rColor = parallelFailures.riserHeight || stairBodyViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.RISER
+  const tColor = parallelFailures.treadDepth || stairBodyViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.TREAD
+  const landingColor = stairBodyViol ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.LANDING
   const headViol = parallelFailures.headroom
   const hrColor = parallelFailures.handrailHeight ? CODE_VIOLATION_COLOR : NEUTRAL_COLORS.HANDRAIL
   const stepTopHeights = computeStepTopHeightsMeters(state)
@@ -530,7 +530,6 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
   const railRun = Math.abs(joinContract.topJoinZ - joinContract.bottomJoinZ)
   const railRise = Math.max(totalRise - rH, 0)
   const strAngle = Math.atan2(railRise, Math.max(railRun, tD))
-  const strCZ = (joinContract.firstTreadCenterZ + joinContract.lastTreadCenterZ) / 2
 
   const g: GeometryInstruction[] = []
 
@@ -715,28 +714,7 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
     }
   }
 
-  // ── 8. Width deficit indicator planes ─────────────────────────────────────
-  if (wColor) {
-    const deficit = state.widthDeficit / 1000 // mm to meters
-    if (deficit > 0) {
-      for (const s of [-1, 1] as const) {
-        g.push({
-          id: `width-gap-${s < 0 ? 'L' : 'R'}`,
-          type: 'box',
-          position: [s * (sW / 2 + deficit / 4), totalRise / 2, strCZ],
-          args: [deficit / 2, totalRise, totalRun + tD],
-          color: wColor,
-          opacity: WIDTH_DEFICIT_OPACITY,
-          transparent: true,
-          material: 'basic',
-          depthWrite: false,
-          cameraFitExclude: true,
-        })
-      }
-    }
-  }
-
-  // ── 9. International Comparison Ghost Geometry (IBC overlay) ────────────────
+  // ── 8. International Comparison Ghost Geometry (IBC overlay) ────────────────
   // When comparison mode is active, show ghost treads/risers at IBC dimensions.
   if (bool(rawParams.compareMode)) {
     const ibcRiserH = IBC_MAX_RISER_HEIGHT_MM / 1000  // 178mm in meters
@@ -1404,13 +1382,13 @@ export const stairwayConfigurator: ParametricSceneConfig = {
   annotations,
   presets: ALL_PRESETS,
   camera: {
-    // Default module view: NW-framed perspective. Orientation buttons (NW/NE/etc.)
-    // only rotate the current projection; they must not force isometric mode.
+    // Default module view: NW-framed perspective. The NW preset rotates the
+    // current projection without forcing the orthographic isometric mode.
     position: [-8, 6, 8],
     target: [0, 1, 0],
     fov: 35,
     zoomToFit: { position: [-8, 6, 8], target: [0, 1, 0], zoom: 50 },
-    resetPreset: 'perspective',
+    resetPreset: 'iso-nw',
   },
   contextScenario:
     "You're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.",

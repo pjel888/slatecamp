@@ -34,11 +34,11 @@ describe('useViewportShellStore camera commands', () => {
 
     store.snapToPreset('iso-ne')
     store.snapToPreset('iso')
-    const orthographicState = useViewportShellStore.getState()
+    const isoState = useViewportShellStore.getState()
 
-    expect(orthographicState.selectedCameraPreset).toBe('iso-ne')
-    expect(orthographicState.cameraCommandPreset).toBe('iso')
-    expect(orthographicState.projectionMode).toBe('orthographic')
+    expect(isoState.selectedCameraPreset).toBe('iso-ne')
+    expect(isoState.cameraCommandPreset).toBe('iso')
+    expect(isoState.projectionMode).toBe('perspective')
 
     store.snapToPreset('perspective')
     const perspectiveState = useViewportShellStore.getState()
@@ -103,10 +103,10 @@ describe('useViewportShellStore camera commands', () => {
     expect(state.cameraCommandPreset).toBe('zoom-delta')
     expect(state.cameraZoomDelta).toBe(12)
     expect(state.cameraCommandId).toBe(firstCommandId + 1)
-    expect(state.projectionMode).toBe('orthographic')
+    expect(state.projectionMode).toBe('perspective')
   })
 
-  test('manual camera movement clears active preset without leaving orthographic mode', () => {
+  test('manual camera movement clears active preset without changing projection mode', () => {
     const store = useViewportShellStore.getState()
 
     store.snapToPreset('iso')
@@ -116,13 +116,13 @@ describe('useViewportShellStore camera commands', () => {
     expect(state.selectedCameraPreset).toBe(null)
     expect(state.cameraCommandPreset).toBe(null)
     expect(state.manualOrbit).toBe(true)
-    expect(state.projectionMode).toBe('orthographic')
+    expect(state.projectionMode).toBe('perspective')
   })
 
   test('zoom commands preserve projection mode after manual orthographic movement', () => {
     const store = useViewportShellStore.getState()
 
-    store.snapToPreset('iso')
+    store.setProjectionMode('orthographic')
     store.markManualOrbit()
     store.snapToPreset('zoom-in')
 

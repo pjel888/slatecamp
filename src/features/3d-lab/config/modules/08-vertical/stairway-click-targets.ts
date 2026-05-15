@@ -76,13 +76,6 @@ export const STAIRWAY_CLICK_TARGETS: ClickTarget[] = [
     description: 'Handrail extension 300 mm beyond first and last step (BP 344)',
   },
   {
-    idPattern: 'width-gap-*',
-    elementName: 'Width Deficit',
-    dimensionKey: 'stairWidth',
-    unit: 'mm',
-    description: 'Gap showing how much wider the stair must be to meet the strictest applicable minimum',
-  },
-  {
     idPattern: 'compare-ibc-*',
     elementName: 'IBC Comparison',
     dimensionKey: 'stairWidth',

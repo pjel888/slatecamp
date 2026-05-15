@@ -30,7 +30,7 @@ describe('stairway geometry validation', () => {
     expect(camera.position[2]).toBeGreaterThan(0)
     expect(camera.target?.[1]).toBeGreaterThan(0)
     expect(camera.fov).toBeLessThanOrEqual(35)
-    expect(camera.resetPreset).toBe('perspective')
+    expect(camera.resetPreset).toBe('iso-nw')
     expect(camera.zoomToFit?.position).toEqual(camera.position)
     expect(camera.zoomToFit?.target).toEqual(camera.target)
     expect(camera.zoomToFit?.zoom).toBeGreaterThan(0)
@@ -129,7 +129,7 @@ describe('stairway geometry validation', () => {
 
   test('violating physical stair parts turn red while unrelated parts stay gray', () => {
     const geometry = buildGeometry({
-      stairWidth: 900,
+      stairWidth: 1200,
       riserHeight: 190,
       treadDepth: 190,
       handrailHeight: 950,
@@ -168,6 +168,31 @@ describe('stairway geometry validation', () => {
 
     expect(riser.color).toBe(CODE_VIOLATION_COLOR)
     expect(tread.color).toBe(STAIR_MODEL_COLOR)
+    expect(handrail.color).toBe(STAIR_MODEL_COLOR)
+  })
+
+  test('width violation turns the stair body red without adding width-gap planes', () => {
+    const geometry = buildGeometry({
+      stairWidth: 900,
+      riserHeight: 175,
+      treadDepth: 300,
+      handrailHeight: 900,
+      isAccessibleRoute: false,
+      isExitStair: false,
+      isHighOccupancy: false,
+    })
+
+    const tread = geometry.find((instruction) => instruction.id === 'tread-0')!
+    const riser = geometry.find((instruction) => instruction.id === 'riser-0')!
+    const bottomLanding = geometry.find((instruction) => instruction.id === 'base-platform')!
+    const topLanding = geometry.find((instruction) => instruction.id === 'top-landing')!
+    const handrail = geometry.find((instruction) => instruction.id === 'handrail-L')!
+
+    expect(geometry.some((instruction) => instruction.id.startsWith('width-gap-'))).toBe(false)
+    expect(tread.color).toBe(CODE_VIOLATION_COLOR)
+    expect(riser.color).toBe(CODE_VIOLATION_COLOR)
+    expect(bottomLanding.color).toBe(CODE_VIOLATION_COLOR)
+    expect(topLanding.color).toBe(CODE_VIOLATION_COLOR)
     expect(handrail.color).toBe(STAIR_MODEL_COLOR)
   })
 

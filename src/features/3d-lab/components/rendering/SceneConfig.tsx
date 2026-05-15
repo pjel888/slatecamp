@@ -52,6 +52,8 @@ export interface SceneConfigProps {
   lightingPreset?: LightingPreset
   /** Disable SceneBase (ground, fog, tone mapping). Default: false */
   disableSceneBase?: boolean
+  /** Show atmospheric fog. Default: false because fog hides large site models when zooming out. */
+  showFog?: boolean
   /** Shared camera preset contract for reset/snap/fit commands. */
   cameraControls?: ThreeDLabCameraControlConfig
   /** Override canvas clear color. Default: undefined (uses SceneBase) */
@@ -449,6 +451,7 @@ export const SceneConfig = ({
   disableLighting = false,
   lightingPreset,
   disableSceneBase = false,
+  showFog = false,
   cameraControls,
   clearColor,
   flat = false,
@@ -622,7 +625,7 @@ export const SceneConfig = ({
       {!disableLighting && <StudioLighting preset={lightingPreset} />}
 
       {/* Scene environment (ground, fog, tone mapping) */}
-      {!disableSceneBase && <SceneBase showGround={showGround} />}
+      {!disableSceneBase && <SceneBase showGround={showGround} showFog={showFog} />}
 
       {/* Clear color / tone mapping overrides (only when explicitly set) */}
       {(clearColor != null || flat) && (

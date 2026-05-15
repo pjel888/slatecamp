@@ -77,7 +77,6 @@ export const HANDRAIL_RADIUS_M = 0.02
 export const BP344_GHOST_RAIL_RADIUS_M = 0.015
 export const BP344_GHOST_OPACITY = 0.4
 export const BP344_GHOST_OFFSET_M = 0.03
-export const WIDTH_DEFICIT_OPACITY = 0.15
 export const HEADROOM_PLANE_OPACITY = 0.5
 export const HEADROOM_PASS_COLOR = '#dbeafe'        // Light blue — headroom plane when passing
 export const CODE_VIOLATION_COLOR = '#DC2626'       // Universal red — active code/legal violation
