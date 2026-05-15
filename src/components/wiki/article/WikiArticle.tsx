@@ -58,7 +58,7 @@ interface WikiArticleProps {
 }
 
 const WIKI_PROSE_CLASS_NAME =
-  'prose prose-wiki wiki-article-columns dark:prose-invert'
+  'prose prose-wiki wiki-article-expanded dark:prose-invert'
 
 function getHeadingText(children: React.ReactNode): string {
   return React.Children.toArray(children)
