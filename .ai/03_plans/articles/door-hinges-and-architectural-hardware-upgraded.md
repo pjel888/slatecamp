@@ -403,31 +403,6 @@ Manufacturer catalogs and standards overviews are useful for vocabulary, options
 
 <InlineQuiz question="A service door must swing both ways and return toward the closed position after staff pass through from either side. Which hardware family is being tested?" options='[{"text":"Double-acting spring hinge","is_correct":true},{"text":"Panic hardware","is_correct":false},{"text":"Kick plate","is_correct":false},{"text":"Cylinder lock","is_correct":false}]' rationale="The clues are two-way swing and spring return. Panic hardware is about emergency release; a kick plate protects the door face; a cylinder lock is a lockset family." />
 
-## 3D Interaction Plan for SlateCamp
-
-This article is a strong candidate for a light 3D widget because hinge types are spatial. The learner does not need a full code-compliance simulator. The useful interaction is simply: orbit the model, see the pivot axis, and compare the movement principle.
-
-Recommended first-pass 3D scope:
-
-- One orbitable comparison module rather than many separate canvases.
-- Neutral gray door leaf and frame fragments.
-- Highlighted hinge or pivot axis in SlateCamp accent color.
-- Labels for leaf, jamb, pin/axis, mortise/surface condition, and swing direction.
-- Optional motion toggle later, but not required for v1.
-
-Suggested hinge set for v1:
-
-1. Butt / full-mortise hinge.
-2. Full-surface hinge.
-3. Loose-pin / loose-joint comparison.
-4. Spring / double-acting hinge.
-5. Pivot / floor hinge.
-6. Piano / continuous hinge.
-7. Invisible / concealed hinge.
-8. Parliament / wide-throw or strap/T hinge as advanced recognition.
-
-The article embeds compact 3D study canvases beside the hinge families instead of sending the learner to the full 3D Lab. Each model is intentionally simple: orbit, limited zoom, and light panning only. The task is visual recognition, not code compliance simulation.
-
 ## Linked-Question Bridge
 
 After reading this article, a learner should be able to answer questions that ask:
