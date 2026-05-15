@@ -83,16 +83,70 @@ const HINGE_DEFINITIONS: Record<HingeType, HingeDefinition> = {
 const DEFAULT_LEAF = '#9ca3af'
 const DARK_EDGE = '#475569'
 const PIN = '#374151'
-const SCREW = '#1f2937'
 const DOOR = '#e5e7eb'
 const FRAME = '#d1d5db'
 
-function Screw({ position }: { position: [number, number, number] }) {
+function Screw({
+  position,
+  radius = 0.055,
+  head = 'countersunk',
+}: {
+  position: [number, number, number]
+  radius?: number
+  head?: 'countersunk' | 'round'
+}) {
   return (
-    <mesh position={position} rotation={[Math.PI / 2, 0, 0]}>
-      <cylinderGeometry args={[0.055, 0.055, 0.018, 24]} />
-      <meshStandardMaterial color={SCREW} roughness={0.65} metalness={0.35} />
-    </mesh>
+    <group position={position}>
+      <mesh rotation={[Math.PI / 2, 0, 0]}>
+        {head === 'countersunk' ? (
+          <coneGeometry args={[radius * 1.18, radius * 0.42, 0.03, 32]} />
+        ) : (
+          <sphereGeometry args={[radius, 24, 10, 0, Math.PI * 2, 0, Math.PI / 2]} />
+        )}
+        <meshStandardMaterial color="#334155" roughness={0.42} metalness={0.62} />
+      </mesh>
+      <mesh position={[0, 0.002, 0.016]} rotation={[0, 0, Math.PI / 8]}>
+        <boxGeometry args={[radius * 1.5, radius * 0.18, 0.008]} />
+        <meshStandardMaterial color="#0f172a" roughness={0.5} metalness={0.3} />
+      </mesh>
+    </group>
+  )
+}
+
+function EdgeBevel({ width, height }: { width: number; height: number }) {
+  const edgeColor = '#e2e8f0'
+  return (
+    <group position={[0, 0, 0.038]}>
+      <mesh position={[0, height / 2 - 0.018, 0]}>
+        <boxGeometry args={[width * 0.94, 0.018, 0.014]} />
+        <meshStandardMaterial color={edgeColor} roughness={0.45} metalness={0.35} />
+      </mesh>
+      <mesh position={[0, -height / 2 + 0.018, 0]}>
+        <boxGeometry args={[width * 0.94, 0.018, 0.014]} />
+        <meshStandardMaterial color={edgeColor} roughness={0.45} metalness={0.35} />
+      </mesh>
+      <mesh position={[width / 2 - 0.018, 0, 0]}>
+        <boxGeometry args={[0.018, height * 0.94, 0.014]} />
+        <meshStandardMaterial color={edgeColor} roughness={0.45} metalness={0.35} />
+      </mesh>
+      <mesh position={[-width / 2 + 0.018, 0, 0]}>
+        <boxGeometry args={[0.018, height * 0.94, 0.014]} />
+        <meshStandardMaterial color={edgeColor} roughness={0.45} metalness={0.35} />
+      </mesh>
+    </group>
+  )
+}
+
+function FineGrooves({ width, height }: { width: number; height: number }) {
+  return (
+    <group position={[0, 0, 0.043]}>
+      {[-0.3, 0, 0.3].map((y) => (
+        <mesh key={y} position={[0, y * height, 0]}>
+          <boxGeometry args={[width * 0.76, 0.007, 0.006]} />
+          <meshStandardMaterial color="#94a3b8" roughness={0.5} metalness={0.2} transparent opacity={0.45} />
+        </mesh>
+      ))}
+    </group>
   )
 }
 
@@ -101,12 +155,14 @@ function Leaf({ x = 0, width = 0.72, height = 1.8, color = DEFAULT_LEAF }: { x?:
     <group position={[x, 0, 0]}>
       <mesh>
         <boxGeometry args={[width, height, 0.055]} />
-        <meshStandardMaterial color={color} roughness={0.48} metalness={0.5} />
+        <meshStandardMaterial color={color} roughness={0.42} metalness={0.58} />
       </mesh>
       <mesh position={[0, 0, 0.034]}>
-        <boxGeometry args={[width * 0.92, height * 0.92, 0.01]} />
-        <meshStandardMaterial color="#cbd5e1" roughness={0.6} metalness={0.25} transparent opacity={0.28} />
+        <boxGeometry args={[width * 0.9, height * 0.9, 0.012]} />
+        <meshStandardMaterial color="#cbd5e1" roughness={0.55} metalness={0.28} transparent opacity={0.34} />
       </mesh>
+      <EdgeBevel width={width} height={height} />
+      <FineGrooves width={width} height={height} />
       <Screw position={[-width * 0.24, height * 0.28, 0.045]} />
       <Screw position={[width * 0.24, height * 0.28, 0.045]} />
       <Screw position={[-width * 0.24, -height * 0.28, 0.045]} />
@@ -117,10 +173,20 @@ function Leaf({ x = 0, width = 0.72, height = 1.8, color = DEFAULT_LEAF }: { x?:
 
 function PinBar({ height = 1.95, radius = 0.075, color = PIN }: { height?: number; radius?: number; color?: string }) {
   return (
-    <mesh rotation={[0, 0, Math.PI / 2]} position={[0, 0, 0.08]}>
-      <cylinderGeometry args={[radius, radius, height, 36]} />
-      <meshStandardMaterial color={color} roughness={0.35} metalness={0.65} />
-    </mesh>
+    <group>
+      <mesh rotation={[0, 0, Math.PI / 2]} position={[0, 0, 0.08]}>
+        <cylinderGeometry args={[radius, radius, height, 48]} />
+        <meshStandardMaterial color={color} roughness={0.28} metalness={0.74} />
+      </mesh>
+      <mesh position={[0, height / 2 + 0.035, 0.08]} rotation={[0, 0, Math.PI / 2]}>
+        <cylinderGeometry args={[radius * 1.18, radius * 1.18, 0.045, 48]} />
+        <meshStandardMaterial color="#111827" roughness={0.32} metalness={0.7} />
+      </mesh>
+      <mesh position={[0, -height / 2 - 0.035, 0.08]} rotation={[0, 0, Math.PI / 2]}>
+        <cylinderGeometry args={[radius * 1.08, radius * 1.08, 0.032, 48]} />
+        <meshStandardMaterial color="#111827" roughness={0.32} metalness={0.7} />
+      </mesh>
+    </group>
   )
 }
 
@@ -130,8 +196,8 @@ function Knuckles({ height = 1.9, count = 5, color = PIN }: { height?: number; c
     <group position={[0, -height / 2 + segment / 2, 0.08]}>
       {Array.from({ length: count }, (_, index) => (
         <mesh key={index} position={[0, index * segment, 0]} rotation={[0, 0, Math.PI / 2]}>
-          <cylinderGeometry args={[0.095, 0.095, segment * 0.74, 32]} />
-          <meshStandardMaterial color={index % 2 === 0 ? color : '#64748b'} roughness={0.38} metalness={0.7} />
+          <cylinderGeometry args={[0.102, 0.102, segment * 0.74, 48]} />
+          <meshStandardMaterial color={index % 2 === 0 ? color : '#64748b'} roughness={0.32} metalness={0.76} />
         </mesh>
       ))}
     </group>
@@ -164,16 +230,28 @@ function StandardButt({ type, definition }: { type: HingeType; definition: Hinge
       <Knuckles color={accent} />
       <PinBar color={type === 'loose-pin' ? '#78350f' : PIN} />
       {type === 'loose-pin' && (
-        <mesh position={[0, 1.13, 0.08]} rotation={[0, 0, Math.PI / 2]}>
-          <cylinderGeometry args={[0.14, 0.14, 0.08, 32]} />
-          <meshStandardMaterial color="#92400e" roughness={0.45} metalness={0.45} />
-        </mesh>
+        <group>
+          <mesh position={[0, 1.32, 0.08]} rotation={[0, 0, Math.PI / 2]}>
+            <cylinderGeometry args={[0.045, 0.045, 0.42, 32]} />
+            <meshStandardMaterial color="#92400e" roughness={0.32} metalness={0.65} />
+          </mesh>
+          <mesh position={[0, 1.56, 0.08]} rotation={[0, 0, Math.PI / 2]}>
+            <cylinderGeometry args={[0.15, 0.15, 0.075, 40]} />
+            <meshStandardMaterial color="#92400e" roughness={0.4} metalness={0.55} />
+          </mesh>
+        </group>
       )}
       {bearingPositions.map((y) => (
-        <mesh key={y} position={[0, y, 0.08]} rotation={[0, 0, Math.PI / 2]}>
-          <torusGeometry args={[0.105, 0.018, 12, 36]} />
-          <meshStandardMaterial color="#e5e7eb" roughness={0.22} metalness={0.8} />
-        </mesh>
+        <group key={y} position={[0, y, 0.08]}>
+          <mesh rotation={[0, 0, Math.PI / 2]}>
+            <torusGeometry args={[0.122, 0.018, 16, 48]} />
+            <meshStandardMaterial color="#f8fafc" roughness={0.18} metalness={0.9} />
+          </mesh>
+          <mesh rotation={[0, 0, Math.PI / 2]}>
+            <cylinderGeometry args={[0.132, 0.132, 0.026, 48]} />
+            <meshStandardMaterial color="#cbd5e1" roughness={0.22} metalness={0.82} transparent opacity={0.45} />
+          </mesh>
+        </group>
       ))}
     </group>
   )
@@ -183,10 +261,20 @@ function SpringHinge({ definition }: { definition: HingeDefinition }) {
   return (
     <group>
       <StandardButt type="spring" definition={definition} />
-      <mesh position={[0, 0, 0.08]} rotation={[0, 0, Math.PI / 2]}>
-        <torusKnotGeometry args={[0.105, 0.012, 92, 8, 3, 9]} />
-        <meshStandardMaterial color="#f59e0b" roughness={0.28} metalness={0.55} />
+      <mesh position={[0, 0, 0.115]} rotation={[0, 0, Math.PI / 2]}>
+        <cylinderGeometry args={[0.15, 0.15, 1.48, 48]} />
+        <meshStandardMaterial color="#d97706" roughness={0.34} metalness={0.62} transparent opacity={0.42} />
       </mesh>
+      <mesh position={[0, 0, 0.15]} rotation={[0, 0, Math.PI / 2]}>
+        <torusKnotGeometry args={[0.145, 0.012, 128, 8, 3, 11]} />
+        <meshStandardMaterial color="#fbbf24" roughness={0.24} metalness={0.65} />
+      </mesh>
+      {[-0.42, 0, 0.42].map((y) => (
+        <mesh key={y} position={[0, y, 0.28]} rotation={[Math.PI / 2, 0, 0]}>
+          <cylinderGeometry args={[0.018, 0.018, 0.022, 16]} />
+          <meshStandardMaterial color="#451a03" roughness={0.45} metalness={0.4} />
+        </mesh>
+      ))}
     </group>
   )
 }
@@ -199,20 +287,30 @@ function PivotHinge({ definition }: { definition: HingeDefinition }) {
         <meshStandardMaterial color={DOOR} roughness={0.9} />
       </mesh>
       <mesh position={[0, -1.14, 0.02]}>
-        <boxGeometry args={[0.7, 0.08, 0.28]} />
-        <meshStandardMaterial color={definition.accentColor} metalness={0.55} roughness={0.36} />
+        <boxGeometry args={[0.82, 0.12, 0.32]} />
+        <meshStandardMaterial color={definition.accentColor} metalness={0.6} roughness={0.34} />
       </mesh>
       <mesh position={[0, 1.14, 0.02]}>
-        <boxGeometry args={[0.7, 0.08, 0.28]} />
-        <meshStandardMaterial color={definition.accentColor} metalness={0.55} roughness={0.36} />
+        <boxGeometry args={[0.82, 0.12, 0.32]} />
+        <meshStandardMaterial color={definition.accentColor} metalness={0.6} roughness={0.34} />
       </mesh>
+      {[-0.28, 0.28].map((x) => (
+        <React.Fragment key={x}>
+          <Screw position={[x, -1.14, 0.19]} />
+          <Screw position={[x, 1.14, 0.19]} />
+        </React.Fragment>
+      ))}
       <mesh position={[0, -1.02, 0.17]}>
-        <cylinderGeometry args={[0.11, 0.11, 0.18, 32]} />
-        <meshStandardMaterial color={PIN} metalness={0.7} roughness={0.3} />
+        <cylinderGeometry args={[0.12, 0.12, 0.22, 48]} />
+        <meshStandardMaterial color={PIN} metalness={0.76} roughness={0.26} />
       </mesh>
       <mesh position={[0, 1.02, 0.17]}>
-        <cylinderGeometry args={[0.11, 0.11, 0.18, 32]} />
-        <meshStandardMaterial color={PIN} metalness={0.7} roughness={0.3} />
+        <cylinderGeometry args={[0.12, 0.12, 0.22, 48]} />
+        <meshStandardMaterial color={PIN} metalness={0.76} roughness={0.26} />
+      </mesh>
+      <mesh position={[0, 0, 0.12]}>
+        <cylinderGeometry args={[0.028, 0.028, 2.04, 32]} />
+        <meshStandardMaterial color="#0f172a" metalness={0.7} roughness={0.35} />
       </mesh>
     </group>
   )
@@ -222,8 +320,14 @@ function ContinuousHinge({ definition }: { definition: HingeDefinition }) {
   return (
     <group scale={[0.78, 1.18, 1]}>
       <DoorFrameReference />
-      <Leaf x={-0.34} width={0.58} height={2.35} />
-      <Leaf x={0.34} width={0.58} height={2.35} />
+      <Leaf x={-0.34} width={0.5} height={2.35} />
+      <Leaf x={0.34} width={0.5} height={2.35} />
+      {Array.from({ length: 7 }, (_, i) => -0.9 + i * 0.3).map((y) => (
+        <React.Fragment key={y}>
+          <Screw position={[-0.34, y, 0.046]} radius={0.042} />
+          <Screw position={[0.34, y + 0.15, 0.046]} radius={0.042} />
+        </React.Fragment>
+      ))}
       <Knuckles height={2.45} count={13} color={definition.accentColor} />
       <PinBar height={2.52} radius={0.055} />
     </group>
@@ -257,6 +361,14 @@ function ConcealedHinge({ definition }: { definition: HingeDefinition }) {
         <boxGeometry args={[0.82, 0.11, 0.06]} />
         <meshStandardMaterial color="#475569" metalness={0.6} roughness={0.35} />
       </mesh>
+      {[[-0.2, 0.24], [0.2, -0.24], [0, 0]].map(([x, y]) => (
+        <mesh key={`${x}-${y}`} position={[x, y, 0.145]}>
+          <sphereGeometry args={[0.045, 24, 16]} />
+          <meshStandardMaterial color="#0f172a" metalness={0.62} roughness={0.35} />
+        </mesh>
+      ))}
+      <Screw position={[-0.48, 0.34, 0.145]} radius={0.038} />
+      <Screw position={[0.48, -0.34, 0.145]} radius={0.038} />
     </group>
   )
 }
@@ -292,16 +404,22 @@ function StrapHinge({ definition }: { definition: HingeDefinition }) {
         <boxGeometry args={[0.28, 1.35, 0.08]} />
         <meshStandardMaterial color={definition.accentColor} roughness={0.45} metalness={0.5} />
       </mesh>
-      <mesh position={[0.08, 0, 0.035]}>
-        <boxGeometry args={[1.16, 0.2, 0.075]} />
-        <meshStandardMaterial color={definition.accentColor} roughness={0.45} metalness={0.5} />
+      <mesh position={[0.04, 0, 0.035]}>
+        <boxGeometry args={[1.22, 0.2, 0.075]} />
+        <meshStandardMaterial color={definition.accentColor} roughness={0.42} metalness={0.55} />
       </mesh>
       <mesh position={[0.72, 0, 0.035]} rotation={[0, 0, Math.PI / 4]}>
-        <boxGeometry args={[0.28, 0.28, 0.075]} />
-        <meshStandardMaterial color={definition.accentColor} roughness={0.45} metalness={0.5} />
+        <boxGeometry args={[0.34, 0.34, 0.075]} />
+        <meshStandardMaterial color={definition.accentColor} roughness={0.42} metalness={0.55} />
+      </mesh>
+      <mesh position={[0.86, 0, 0.036]}>
+        <coneGeometry args={[0.15, 0.32, 4]} />
+        <meshStandardMaterial color={definition.accentColor} roughness={0.42} metalness={0.55} />
       </mesh>
       <PinBar height={1.44} color={PIN} />
-      {[-0.36, 0.24, 0.72].map((x) => <Screw key={x} position={[x, 0, 0.09]} />)}
+      {[-0.46, -0.12, 0.28, 0.66].map((x) => <Screw key={x} position={[x, 0, 0.09]} radius={0.06} head="round" />)}
+      <Screw position={[-0.66, 0.38, 0.09]} radius={0.055} head="round" />
+      <Screw position={[-0.66, -0.38, 0.09]} radius={0.055} head="round" />
     </group>
   )
 }
