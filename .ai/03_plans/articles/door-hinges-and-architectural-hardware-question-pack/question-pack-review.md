@@ -2,7 +2,7 @@
 
 Status: draft add-new question pack for new article.
 Question count: 12 (minimum requested: 10).
-Recommended taxonomy: Building Materials and Construction → Finishing and Specialty Works → Hardware, Flooring, and Ceiling Systems.
+Recommended taxonomy: ALE-MATL → Hardware, Joints & Fasteners → Door hardware (remote node c3996fe0-682a-43b0-adba-b829bb78b40e).
 
 ## Q1. Classify hardware by function before naming the part.
 A board item describes a door part that carries the door leaf and determines the axis about which the leaf swings. Which hardware family is being tested?
