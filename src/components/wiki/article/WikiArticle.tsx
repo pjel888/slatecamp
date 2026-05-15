@@ -7,6 +7,7 @@ import {
   createHeadingIdTracker,
   createMdxFallbackSource,
   extractHeadings,
+  repairSlatecampUiBlockPlaceholdersForRender,
   sanitizeMDX,
   injectEIPrompts,
 } from '@/lib/wiki-markdown'
@@ -240,7 +241,9 @@ export const compileWikiArticleWithRenderer = async ({
     .replace(/\[EI\][\s\S]*?\[\/EI\]/g, '')
     .replace(/<!--[\s\S]*?-->/g, '')
 
-  const processedContent = injectEIPrompts(cleaned, eiPrompts)
+  const processedContent = repairSlatecampUiBlockPlaceholdersForRender(
+    injectEIPrompts(cleaned, eiPrompts)
+  )
   if (containsSlatecampUiBlockPlaceholder(processedContent)) {
     throw new Error('Raw SLATECAMP_UI_BLOCK placeholders detected in article content. Content must be repaired before rendering.')
   }
@@ -293,7 +296,9 @@ export const WikiArticle = async ({
     .replace(/\[EI\][\s\S]*?\[\/EI\]/g, '')
     .replace(/<!--[\s\S]*?-->/g, '')
   
-  const processedContent = injectEIPrompts(cleaned, eiPrompts)
+  const processedContent = repairSlatecampUiBlockPlaceholdersForRender(
+    injectEIPrompts(cleaned, eiPrompts)
+  )
   sanitizeMDX(processedContent)
 
   let mdxContent = null

@@ -12,6 +12,50 @@ export function containsSlatecampUiBlockPlaceholder(source?: string | null): boo
   return /\[SLATECAMP_UI_BLOCK:[^\]]+\]/.test(source)
 }
 
+/**
+ * Convert legacy SlateCamp UI block sentinels that still exist in Supabase
+ * article content into safe MDX before rendering.
+ *
+ * The source-of-truth roundtrip stores real components in candidate.md, but
+ * older remote rows can still contain preserved placeholder summaries such as:
+ *
+ * [SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+ * - Props: id="...", caption=true, ...
+ * [/SLATECAMP_UI_BLOCK]
+ *
+ * Render-time repair avoids mutating Supabase while preventing a single stale
+ * placeholder from taking down the article page. Complex props are dropped
+ * rather than guessed because arrays/objects often caused MDX parser failures.
+ */
+export function repairSlatecampUiBlockPlaceholdersForRender(source: string): string {
+  if (!source) return ''
+
+  return source.replace(
+    /\[SLATECAMP_UI_BLOCK:[^\]]*component="([A-Z][A-Za-z0-9]*)"[^\]]*\]([\s\S]*?)\[\/SLATECAMP_UI_BLOCK\]/g,
+    (_match, componentName: string, body: string) => {
+      if (!REGISTERED_WIKI_COMPONENTS.has(componentName)) return ''
+      if (componentName !== 'ArticleMedia') return ''
+
+      const propsMatch = body.match(/^-\s*Props:\s*(.+)$/m)
+      if (!propsMatch) return ''
+
+      const rawProps = propsMatch[1].trim()
+      if (!rawProps || rawProps === '(none detected)' || rawProps === '(none)') return ''
+      if (/[{}\[\]]/.test(rawProps)) return ''
+
+      const allowedProps = new Set(['id', 'layout', 'type', 'status', 'alt', 'caption', 'suggestedAsset', 'placementIntent'])
+      const attrs: string[] = []
+      for (const [, name, value] of Array.from(rawProps.matchAll(/([A-Za-z_$][\w$-]*)\s*=\s*"([^"]*)"/g))) {
+        if (!allowedProps.has(name)) continue
+        attrs.push(`${name}=${JSON.stringify(value)}`)
+      }
+
+      if (attrs.length === 0) return ''
+      return `<ArticleMedia ${attrs.join(' ')} />`
+    }
+  ).replace(/\[SLATECAMP_UI_BLOCK:[^\]]+\][\s\S]*?(?:\[\/SLATECAMP_UI_BLOCK\]|$)/g, '')
+}
+
 // --- Table of contents (server-safe) ---
 
 export interface TocHeading {
@@ -185,7 +229,9 @@ export function sanitizeMDX(content: string): string {
     .replace(/(<[A-Z][a-zA-Z0-9]*\s+[^>]*?)\s*\\[ \t]*\n\s*(\/?>|[a-zA-Z])/g, '$1 $2')
 
     // 3. Escape raw "<" characters that look like tags but aren't (e.g. "a < b")
-    .replace(/<([0-9=])/g, '&lt;$1')
+    .replace(/<([0-9=\-])/g, '&lt;$1')
+    .replace(/<\s+([a-z])/g, '&lt; $1')
+    .replace(/<br>/g, '<br />')
 
   return result
 }
@@ -271,6 +317,9 @@ export function createMdxFallbackSource(content: string): string {
 
       // Known registered component — PRESERVE it (don't strip, don't skip)
       if (REGISTERED_WIKI_COMPONENTS.has(componentName)) {
+        if (/=\s*(?:\[|\\|[-])/.test(trimmed) || /\{\s*\[/.test(trimmed)) {
+          continue
+        }
         fallbackLines.push(line)
         continue
       }
@@ -343,6 +392,11 @@ export function createMdxFallbackSource(content: string): string {
 
   // Restore known escaped components
   result = result.replace(/\x00KNOWN_ESCAPED_([^>]*?)\x01/g, '<$1>')
+
+  result = result
+    .replace(/<([0-9=\-])/g, '&lt;$1')
+    .replace(/<\s+([a-z])/g, '&lt; $1')
+    .replace(/<br>/g, '<br />')
 
   // Collapse excessive blank lines
   result = result.replace(/\n{3,}/g, '\n\n')
