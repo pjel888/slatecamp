@@ -15,6 +15,7 @@
 | Agent-readable visual identity and design tokens | `DESIGN.md` |
 | Implemented CSS/Tailwind design tokens | `src/app/globals.css` |
 | Deep design-system reference | `.ai/06_specs/deep/03-design/001-design-system.md` |
+| Philip UX/UI execution calibration | `.ai/00_system/philip-ux-ui-calibration.md` |
 | Codex design-system behavior | `.codex/skills/slatecamp-design-system-engineer/SKILL.md` |
 | Skill payload design-system mirror | `.ai/11_skills/payloads/slatecamp-design-system-engineer/SKILL.md` |
 | Current repo findings | `.ai/10_state/findings-register.md` |
@@ -68,6 +69,11 @@ Update `.ai/06_specs/deep/03-design/001-design-system.md` when:
 
 Update `src/app/globals.css` when:
 - implemented Tailwind CSS 4 variables or CSS custom properties change
+
+Update `.ai/00_system/philip-ux-ui-calibration.md` when:
+- Philip gives durable UX/UI taste corrections
+- recurring SlateCamp visual standards change
+- grid, uniformity, evidence, or 3D Lab calibration rules need refinement
 
 Update `.codex/skills/slatecamp-design-system-engineer/SKILL.md` when:
 - SlateCamp design-system doctrine or visual decision rules change

@@ -8,14 +8,16 @@
 ## Recommended Reading Order (for new agents)
 
 1. **PROJECT_CONTEXT.md** — What this project is, who it's for, current stage
-2. **ARCHITECTURE.md** — Technical architecture, request flow, boundaries, risks
-3. **IMPLEMENTATION_STATUS.md** — Feature-by-feature implementation evidence
-4. **ROADMAP.md** — Current priorities: Now/Next/Later
-5. **TASKS.md** — Execution-level task list with acceptance criteria
-6. **TECH_DEBT.md** — Known technical debt and risks by severity
-7. **DECISIONS.md** — Confirmed decisions, assumptions, open questions
-8. **AGENT_INSTRUCTIONS.md** — How to work safely in this repo
-9. **AUDIT_REPORT.md** — What was audited and what changed (this pass)
+2. **.ai/00_system/DOCS_SOURCE_OF_TRUTH.md** — Where canonical docs live by job
+3. **.ai/00_system/philip-ux-ui-calibration.md** — Philip's UX/UI calibration: uniformity, grids, visual evidence
+4. **ARCHITECTURE.md** — Technical architecture, request flow, boundaries, risks
+5. **IMPLEMENTATION_STATUS.md** — Feature-by-feature implementation evidence
+6. **ROADMAP.md** — Current priorities: Now/Next/Later
+7. **TASKS.md** — Execution-level task list with acceptance criteria
+8. **TECH_DEBT.md** — Known technical debt and risks by severity
+9. **DECISIONS.md** — Confirmed decisions, assumptions, open questions
+10. **AGENT_INSTRUCTIONS.md** — How to work safely in this repo
+11. **AUDIT_REPORT.md** — What was audited and what changed (this pass)
 
 ---
 
@@ -31,6 +33,7 @@
 | `TECH_DEBT.md` | Technical debt and risks by severity | 2026-05-09 |
 | `DECISIONS.md` | Confirmed decisions, assumptions, open questions | 2026-05-09 |
 | `AGENT_INSTRUCTIONS.md` | Agent handoff and safe-work instructions | 2026-05-09 |
+| `.ai/00_system/philip-ux-ui-calibration.md` | Philip's UX/UI calibration: uniformity, grids, visual evidence standards | 2026-05-13 |
 | `AUDIT_REPORT.md` | This audit's file review, findings, and recommendations | 2026-05-09 |
 | `project-overview.md` | Previous audit counts and overview (2026-04-29) | 2026-04-29 |
 | `features.md` | Feature inventory with status, routes, and file paths | 2026-04-29 |
