@@ -67,12 +67,12 @@ bun run perf:3d:gates     # 3D Lab performance gates
 
 ### .ai/ Reading Order
 1. `PROJECT_CONTEXT.md` — What this project is
-2. `ARCHITECTURE.md` — How it's built
-3. `IMPLEMENTATION_STATUS.md` — What's done
-4. `ROADMAP.md` — Where we're going
-5. `TASKS.md` — What to work on
-6. `TECH_DEBT.md` — Known problems
-7. `DECISIONS.md` — Why things are this way
+2. `06_specs/architecture--spec--v3.md` — How it's built
+3. `10_state/implementation-status--state--v2.md` — What's done
+4. `01_roadmap/roadmap--state--v1.md` — Where we're going
+5. `04_tasks/tasks--state--v1.md` — What to work on
+6. `10_state/tech-debt--state--v1.md` — Known problems
+7. `10_state/decisions--state--v1.md` — Why things are this way
 8. `AGENT_INSTRUCTIONS.md` — This file
 
 ### Source Code Entry Points

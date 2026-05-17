@@ -48,7 +48,7 @@ LEA candidates need structured, comprehensive exam preparation across multiple s
 
 ## What Has Already Been Built
 
-See `IMPLEMENTATION_STATUS.md` for the full evidence-based inventory. Broadly:
+See `10_state/implementation-status--state--v2.md` for the full evidence-based inventory. Broadly:
 
 - ✅ All 27 documented features have implementation evidence
 - ✅ 128 page routes, 12 API route handlers
@@ -61,7 +61,7 @@ See `IMPLEMENTATION_STATUS.md` for the full evidence-based inventory. Broadly:
 
 ## What Is Still Missing
 
-See `ROADMAP.md` for prioritized items. Key gaps:
+See `01_roadmap/roadmap--state--v1.md` for prioritized items. Key gaps:
 
 - [ ] Supabase verification target and migration replay
 - [ ] Regenerated Supabase types from verified schema

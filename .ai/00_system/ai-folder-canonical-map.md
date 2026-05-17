@@ -6,7 +6,7 @@ The canonical project intelligence root is `.ai/`.
 
 The intended active structure is numbered-first. New durable project-management, audit, plan, state, prompt, agent, skill, archive, research, fact-checking, and content-optimization material should be placed under the numbered folders listed below.
 
-As of 2026-05-15, the live tree still contains a small set of unnumbered workstream/back-up folders created by older tool runs plus one active scripted content-export workspace. They are tolerated exceptions until a dedicated cleanup pass can either archive them or validate and update all script references.
+As of 2026-05-17, the `.ai/` cleanup pass is complete. The tree now contains only numbered folders plus four documented top-level exceptions. See below for the resolved exception list.
 
 ## Top-level canonical folders
 
@@ -35,24 +35,31 @@ As of 2026-05-15, the live tree still contains a small set of unnumbered workstr
 | `19_controlled_apply/` | controlled local apply/rollback evidence | active content QA workstream |
 | `20_content_publish/` | content publish readiness and handoff evidence | active content QA workstream |
 
-## Known unnumbered legacy exceptions pending cleanup
+## Top-level exceptions (resolved 2026-05-17)
 
-These folders exist in the live tree but should not be used for new canonical work unless a human explicitly decides otherwise:
+These four folders remain at `.ai/` top level with documented justification:
 
-- `articlemedia-fix-v2-backups/`
-- `archive/`
-- `content-audit-export/` — active/generated scripted workspace; do not move `articles/` without validating `scripts/content-audit/*`, `.ai/scripts/*`, and package-script references
-- `content-inspection-swarm/`
-- `final-content-completion/`
-- `fix-articlemedia-backups/`
-- `scripts/`
-- `tmp/` — local generated residue; currently not canonical and should not be promoted without review
-- `wiki-mdx-render-debug/`
-- `wiki-ui-audit/`
-- `__pycache__/`
-- `16_source_packs_draft/` — draft source-pack staging area pending merge/archive decision
+| Folder | Justification | Status |
+|--------|--------------|--------|
+| `content-audit-export/` | Active scripted workspace; `scripts/content-audit/*` and `.ai/scripts/*` reference this path directly | Active — do not move without script-path validation |
+| `16_source_packs_draft/` | Draft source-pack staging area; `scripts/content-audit/*` reference this path directly | Active — do not move without script-path validation |
+| `scripts/` | Utility Python scripts for content operations | Active — verify references before relocating |
+| `tmp/` | Local generated residue; currently not canonical | Do not promote without review |
 
-Recommended action: archive or merge these during a dedicated `.ai` cleanup sprint. Do not delete without human review because some contain generated artifacts/backups from previous remediation runs.
+### Archived exceptions (moved to `09_archive/store/` 2026-05-17)
+
+The following unnumbered folders were archived:
+- `articlemedia-fix-v2-backups/` → `09_archive/store/articlemedia-fix-v2-backups/`
+- `archive/` → merged into `09_archive/store/2026-05-09/`
+- `content-inspection-swarm/` → `09_archive/store/content-inspection-swarm/`
+- `final-content-completion/` → `09_archive/store/final-content-completion/`
+- `fix-articlemedia-backups/` → `09_archive/store/fix-articlemedia-backups/`
+- `wiki-mdx-render-debug/` → `09_archive/store/wiki-mdx-render-debug/`
+- `wiki-ui-audit/` → `09_archive/store/wiki-ui-audit/`
+
+### Deleted exceptions (2026-05-17)
+
+- `__pycache__/` — Python bytecode cache, regenerable
 
 ## Numbered subfolders that carry preserved or specialized material
 
@@ -115,8 +122,22 @@ Broad `.ai` archive movements and large docs diffs require human semantic review
 - New controlled-apply tracker/report: `19_controlled_apply/`
 - New content publish tracker/report: `20_content_publish/`
 
+## Naming conventions
+
+All `.ai` files and folders MUST follow the naming conventions defined in `00_system/naming-conventions.md`.
+
+**Quick reference:**
+- Time-bound artifacts: `YYYY-MM-DD--topic--type--descriptor.ext` (e.g., `2026-05-07--landing--review--final-claude.md`)
+- Ongoing canonical docs: `topic--type--vN.ext` (e.g., `architecture--spec--v3.md`)
+- Generated artifacts: `topic--batch-NNN.generated.ext`
+- Active plan/audit package folders: `YYYY-MM-DD--topic--purpose/`
+- Ongoing topic folders: `topic--purpose/`
+- Fixed type vocabulary: `plan`, `audit`, `spec`, `report`, `log`, `review`, `state`, `map`, `guide`, `policy`, `tracker`, `brief`, `checklist`, `inventory`
+- All lowercase, no underscores (except top-level numbered folders), double-dash `--` between major segments
+
 ## Anti-drift rule
 
 Do not introduce new unnumbered top-level `.ai` content folders.
+Do not create files that violate the naming conventions.
 If preserved legacy material is needed, add it under the appropriate numbered parent.
 If an unnumbered legacy folder must remain temporarily, list it in this map and add a cleanup recommendation instead of hiding it.

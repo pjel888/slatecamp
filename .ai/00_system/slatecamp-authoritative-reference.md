@@ -2,7 +2,7 @@
 
 **Do NOT trust stale memory.** Read this file before answering any question about the repo.
 **Path:** `/.ai/00_system/slatecamp-authoritative-reference.md`
-**Last verified:** 2026-05-15
+**Last verified:** 2026-05-17 (post-reorg)
 **Branch:** `3dlab-gray-viewport-bg`
 
 ---
@@ -55,7 +55,15 @@ Numbered-first top-level taxonomy with flat docs and a small set of documented l
 | `19_controlled_apply/` | Controlled apply pipeline | local apply/rollback evidence |
 | `20_content_publish/` | Content publish pipeline | publish readiness and handoff evidence |
 
-**Flat `.ai/` docs (not in numbered folders):** `AGENTS.md`, `api-and-server.md`, `api-surface.md`, `app-audit.md`, `architecture.md`, `audit_questions.py`, `audit-log.md`, `cleanup-execution-log.md`, `cleanup-plan.md`, `codebase-map.md`, `content-audit-export/`, `data-model.md`, `data-models.md`, `db-cleanup-deferred.md`, `deep_audit.py`, `deferred-integrations.md`, `developer-workflow.md`, `do-not-maintain.md`, `environment.md`, `features.md`, `final-launch-readiness.md`, `integrations.md`, `ip-inventory.md`, `known-gaps.md`, `known-issues.md`, `launch-cutline.md`, `legacy-retirement-plan.md`, `mcp.json`, `prelaunch-readiness.md`, `project-overview.md`, `README.md`, `risk-register.md`, `routes.md`, `security.md`, `settings.json`, `testing-and-quality.md`, `testing.md`, `ui-design-system.md`
+**`.ai/` root files (entrypoints):** `AGENTS.md`, `AGENT_INSTRUCTIONS.md`, `PROJECT_CONTEXT.md`, `README.md`
+
+**Docs organized in numbered folders:** See individual folder READMEs and the canonical map at `00_system/ai-folder-canonical-map.md`. Key active docs include:
+- `06_specs/architecture--spec--v3.md`, `06_specs/api-and-server--spec--v2.md`, `06_specs/data-models--spec--v2.md`, etc.
+- `10_state/implementation-status--state--v2.md`, `10_state/tech-debt--state--v1.md`, `10_state/decisions--state--v1.md`
+- `01_roadmap/roadmap--state--v1.md`, `04_tasks/tasks--state--v1.md`
+- `02_audits/` for audit reports, `03_plans/` for plans, `05_logs/` for logs
+
+**Naming conventions:** See `00_system/naming-conventions.md`. All active files follow `YYYY-MM-DD--topic--type--descriptor.ext` (time-bound) or `topic--type--vN.ext` (ongoing canonical docs).
 
 ## 4. Mirror Directories
 

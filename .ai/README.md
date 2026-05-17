@@ -1,116 +1,119 @@
 # `.ai` Operational Intelligence Workspace
 
-**Last audit:** 2026-05-09
-**Last organization pass:** 2026-05-15
+**Last audit:** 2026-05-17
+**Last organization pass:** 2026-05-17
 **Purpose:** This `.ai` directory is SlateCamp's operational intelligence layer. It contains current-state documentation, historical context, plans, audits, specs, performance work, and agent guidance.
+
+---
+
+## Naming Conventions
+
+All `.ai` files and folders follow the naming conventions defined in `00_system/naming-conventions.md`.
+
+**Quick reference:**
+- **Time-bound artifacts:** `YYYY-MM-DD--topic--type--descriptor.ext`
+- **Ongoing canonical docs:** `topic--type--vN.ext`
+- **Type vocabulary:** `plan`, `audit`, `spec`, `report`, `log`, `review`, `state`, `map`, `guide`, `policy`, `tracker`, `brief`, `checklist`, `inventory`
+- **All lowercase, double-dash `--` between major segments, single-dash `-` within segments**
+- **No underscores in filenames** (except top-level numbered folders: `00_system/`, `03_plans/`, etc.)
 
 ---
 
 ## Recommended Reading Order (for new agents)
 
-1. **PROJECT_CONTEXT.md** — What this project is, who it's for, current stage
-2. **.ai/00_system/DOCS_SOURCE_OF_TRUTH.md** — Where canonical docs live by job
-3. **.ai/00_system/philip-ux-ui-calibration.md** — Philip's UX/UI calibration: uniformity, grids, visual evidence
-4. **ARCHITECTURE.md** — Technical architecture, request flow, boundaries, risks
-5. **IMPLEMENTATION_STATUS.md** — Feature-by-feature implementation evidence
-6. **ROADMAP.md** — Current priorities: Now/Next/Later
-7. **TASKS.md** — Execution-level task list with acceptance criteria
-8. **TECH_DEBT.md** — Known technical debt and risks by severity
-9. **DECISIONS.md** — Confirmed decisions, assumptions, open questions
-10. **AGENT_INSTRUCTIONS.md** — How to work safely in this repo
-11. **AUDIT_REPORT.md** — What was audited and what changed (this pass)
+1. `PROJECT_CONTEXT.md` — What this project is, who it's for, current stage
+2. `00_system/DOCS_SOURCE_OF_TRUTH.md` — Where canonical docs live by job
+3. `00_system/naming-conventions.md` — File and folder naming rules
+4. `00_system/philip-ux-ui-calibration.md` — Philip's UX/UI calibration: uniformity, grids, visual evidence
+5. `06_specs/architecture--spec--v3.md` — Technical architecture, request flow, boundaries, risks
+6. `10_state/implementation-status--state--v2.md` — Feature-by-feature implementation evidence
+7. `01_roadmap/roadmap--state--v1.md` — Current priorities: Now/Next/Later
+8. `04_tasks/tasks--state--v1.md` — Execution-level task list with acceptance criteria
+9. `10_state/tech-debt--state--v1.md` — Known technical debt and risks by severity
+10. `10_state/decisions--state--v1.md` — Confirmed decisions, assumptions, open questions
+11. `AGENT_INSTRUCTIONS.md` — How to work safely in this repo
+12. `02_audits/2026-05-09--repo--audit--full.md` — What was audited and what changed
 
 ---
 
-## Current Canonical Docs (root-level `.ai/`)
+## Current Canonical Docs
 
-| Document | Purpose | Last Updated |
-|----------|---------|-------------|
-| `PROJECT_CONTEXT.md` | Concise project overview for developers/agents | 2026-05-09 |
-| `ARCHITECTURE.md` | Technical architecture with diagrams | 2026-05-09 |
-| `IMPLEMENTATION_STATUS.md` | Feature-by-feature implementation status with evidence | 2026-05-09 |
-| `ROADMAP.md` | Prioritized roadmap: Now/Next/Later | 2026-05-09 |
-| `TASKS.md` | Execution-level task list from roadmap | 2026-05-09 |
-| `TECH_DEBT.md` | Technical debt and risks by severity | 2026-05-09 |
-| `DECISIONS.md` | Confirmed decisions, assumptions, open questions | 2026-05-09 |
-| `AGENT_INSTRUCTIONS.md` | Agent handoff and safe-work instructions | 2026-05-09 |
-| `.ai/00_system/philip-ux-ui-calibration.md` | Philip's UX/UI calibration: uniformity, grids, visual evidence standards | 2026-05-13 |
-| `AUDIT_REPORT.md` | This audit's file review, findings, and recommendations | 2026-05-09 |
-| `project-overview.md` | Previous audit counts and overview (2026-04-29) | 2026-04-29 |
-| `features.md` | Feature inventory with status, routes, and file paths | 2026-04-29 |
-| `routes.md` | Complete App Router page route map | 2026-05-01 |
-| `api-and-server.md` | API route handlers and server action inventory | 2026-04-29 |
-| `data-models.md` | Schema table/entity inventory (76 tables) | 2026-04-29 |
-| `ip-inventory.md` | IP-relevant implementation inventory | 2026-04-29 |
-| `testing.md` | Testing stack, commands, and file inventory | 2026-04-29 |
-| `environment.md` | Environment variable inventory (no secrets) | 2026-04-29 |
-| `integrations.md` | External service/library integration inventory | 2026-04-29 |
-| `ui-design-system.md` | Design-system and UI architecture notes | 2026-04-29 |
-| `security.md` | Auth, access control, privacy, and security notes | 2026-04-29 |
-| `codebase-map.md` | Folder/file map for future agents | 2026-04-29 |
-| `audit-log.md` | Previous audit logs and methodology | 2026-04-29 |
-| `known-issues.md` | Current gaps, risks, and follow-ups | 2026-04-29 |
-| `risk-register.md` | Risk tracking with IDs, owners, classifications | 2026-04-30 |
-| `cleanup-plan.md` | Pre-launch cleanup plans (A/B/C) | 2026-04-29 |
-| `cleanup-execution-log.md` | Plan B execution log | 2026-04-29 |
-| `launch-cutline.md` | Launch scope decisions (keep/defer/remove) | 2026-04-29 |
-| `legacy-retirement-plan.md` | 40+ legacy items cataloged for retirement | 2026-04-29 |
-| `prelaunch-readiness.md` | Comprehensive pre-launch assessment | 2026-04-29 |
-| `final-launch-readiness.md` | Post-Plan-B launch readiness snapshot | 2026-04-29 |
-| `deferred-integrations.md` | PayRex, LemonSqueezy, AI provider status | 2026-04-29 |
-| `db-cleanup-deferred.md` | LemonSqueezy schema cleanup tracking | 2026-04-29 |
-| `do-not-maintain.md` | Items explicitly excluded from maintenance | 2026-04-29 |
-
-### Compatibility Mirrors
-These files point to canonical docs above and are preserved to avoid broken references:
-
-| Mirror | Points To |
-|--------|-----------|
-| `api-surface.md` | `api-and-server.md` |
-| `data-model.md` | `data-models.md` |
-| `testing-and-quality.md` | `testing.md` |
-| `known-gaps.md` | `known-issues.md` |
-| `app-audit.md` | `prelaunch-readiness.md` |
+| Document | Location | Purpose | Last Updated |
+|----------|----------|---------|-------------|
+| `PROJECT_CONTEXT.md` | `.ai/` root | Concise project overview for developers/agents | 2026-05-09 |
+| `architecture--spec--v3.md` | `06_specs/` | Technical architecture with diagrams | 2026-05-09 |
+| `implementation-status--state--v2.md` | `10_state/` | Feature-by-feature implementation status with evidence | 2026-05-09 |
+| `roadmap--state--v1.md` | `01_roadmap/` | Prioritized roadmap: Now/Next/Later | 2026-05-09 |
+| `tasks--state--v1.md` | `04_tasks/` | Execution-level task list from roadmap | 2026-05-09 |
+| `tech-debt--state--v1.md` | `10_state/` | Technical debt and risks by severity | 2026-05-09 |
+| `decisions--state--v1.md` | `10_state/` | Confirmed decisions, assumptions, open questions | 2026-05-09 |
+| `AGENT_INSTRUCTIONS.md` | `.ai/` root | Agent handoff and safe-work instructions | 2026-05-09 |
+| `2026-05-09--repo--audit--full.md` | `02_audits/` | 2026-05-09 audit: file review, findings, recommendations | 2026-05-09 |
+| `project-overview--spec--v2.md` | `06_specs/` | Previous audit counts and overview (2026-04-29) | 2026-04-29 |
+| `features--inventory--v2.md` | `06_specs/` | Feature inventory with status, routes, and file paths | 2026-04-29 |
+| `routes--map--v2.md` | `06_specs/` | Complete App Router page route map | 2026-05-01 |
+| `api-and-server--spec--v2.md` | `06_specs/` | API route handlers and server action inventory | 2026-04-29 |
+| `data-models--spec--v2.md` | `06_specs/` | Schema table/entity inventory (76 tables) | 2026-04-29 |
+| `ip-inventory--spec--v1.md` | `06_specs/` | IP-relevant implementation inventory | 2026-04-29 |
+| `testing--spec--v2.md` | `06_specs/` | Testing stack, commands, and file inventory | 2026-04-29 |
+| `environment--spec--v2.md` | `06_specs/` | Environment variable inventory (no secrets) | 2026-04-29 |
+| `integrations--spec--v2.md` | `06_specs/` | External service/library integration inventory | 2026-04-29 |
+| `ui-design-system--spec--v2.md` | `06_specs/` | Design-system and UI architecture notes | 2026-04-29 |
+| `security--spec--v2.md` | `06_specs/` | Auth, access control, privacy, and security notes | 2026-04-29 |
+| `codebase-map--spec--v2.md` | `06_specs/` | Folder/file map for future agents | 2026-04-29 |
+| `2026-04-29--repo--log--audit.md` | `05_logs/` | Previous audit logs and methodology | 2026-04-29 |
+| `known-issues--state--v1.md` | `10_state/` | Current gaps, risks, and follow-ups | 2026-04-29 |
+| `risk-register--state--v1.md` | `10_state/` | Risk tracking with IDs, owners, classifications | 2026-04-30 |
+| `2026-04-29--cleanup--plan--prelaunch.md` | `03_plans/` | Pre-launch cleanup plans (A/B/C) | 2026-04-29 |
+| `2026-04-29--cleanup--log--execution.md` | `05_logs/` | Plan B execution log | 2026-04-29 |
+| `2026-04-29--launch--plan--cutline.md` | `03_plans/` | Launch scope decisions (keep/defer/remove) | 2026-04-29 |
+| `2026-04-29--legacy--plan--retirement.md` | `03_plans/` | 40+ legacy items cataloged for retirement | 2026-04-29 |
+| `2026-04-29--launch--audit--prelaunch-readiness.md` | `02_audits/` | Comprehensive pre-launch assessment | 2026-04-29 |
+| `2026-04-29--launch--audit--final-readiness.md` | `02_audits/` | Post-Plan-B launch readiness snapshot | 2026-04-29 |
+| `2026-04-29--integrations--audit--deferred.md` | `02_audits/` | PayRex, LemonSqueezy, AI provider status | 2026-04-29 |
+| `2026-04-29--db--plan--cleanup-deferred.md` | `03_plans/` | LemonSqueezy schema cleanup tracking | 2026-04-29 |
+| `do-not-maintain--policy--v1.md` | `00_system/` | Items explicitly excluded from maintenance | 2026-04-29 |
+| `developer-workflow--guide--v1.md` | `00_system/` | Developer workflow and conventions | 2026-05-09 |
+| `content-excellence--goal--v1.md` | `15_content_optimization/` | Content excellence targets and standards | 2026-05-09 |
+| `naming-conventions.md` | `00_system/` | File and folder naming convention system | 2026-05-17 |
 
 ---
 
 ## Numbered Taxonomy
 
-Preserved operational folders with historical and active content:
-
 | Folder | Purpose | Status |
 |--------|---------|--------|
-| `00_system/` | System docs, validation contracts, Codex guides, architecture maps | Active |
-| `00_performance/` | Performance scripts, Playwright perf configs, benchmarks | Active |
-| `01_roadmap/` | Current phase, milestone tracker, feature status map | Active |
-| `02_audits/` | Historical and recent audit reports (35 files) | Historical/Active |
-| `03_plans/` | Active plans plus preserved/superseded plan artifacts; loose closure artifacts archived 2026-05-15 | Active |
-| `04_tasks/` | Task checklists (sparse; superseded by `TASKS.md`) | Superseded |
-| `05_logs/` | Execution logs and run records (19 files) | Historical |
-| `06_specs/` | Deep reference specs, feature inventory, architecture docs | Active |
+| `00_system/` | System docs, naming conventions, validation contracts, Codex guides, runbooks | Active |
+| `00_performance/` | Performance scripts, Playwright perf configs, benchmarks, audits | Active |
+| `01_roadmap/` | Current phase, milestone tracker, feature status map, roadmap state | Active |
+| `02_audits/` | Audit reports organized by topic (supabase, cleanup, code-quality, architecture, admin, docs) | Active |
+| `03_plans/` | Active plans in topic subfolders plus preserved/superseded plan artifacts | Active |
+| `04_tasks/` | Task state (sparse; superseded by `01_roadmap/`) | Superseded |
+| `05_logs/` | Execution logs and run records | Historical |
+| `06_specs/` | Operational specs, feature inventory, architecture docs; `deep/` = deep reference corpus | Active |
 | `07_experiments/` | Experimental work context | Preserved |
-| `08_prompts/` | Prompt system documentation | Active |
-| `09_archive/` | Archive policy, index, and historical content store | Active |
-| `10_state/` | Operational state assessments | Active |
-| `11_skills/` | Agent skill documentation | Active |
-| `12_agents/` | Agent model documentation | Active |
-| `13_research/` | Research artifacts and labeled research packs (UX, market, competitive, roundtrip docs) | Active |
-| `14_fact_checking/` | Content fact-checking pipeline | Active |
-| `15_content_optimization/` | Content optimization tools | Active |
-| `16_source_packs/` | Source pack pipeline | Active |
-| `17_article_improvement/` | Article improvement pipeline | Active |
-| `18_question_improvement/` | Question improvement pipeline | Active |
-| `19_controlled_apply/` | Controlled content application | Active |
-| `20_content_publish/` | Content publishing pipeline | Active |
+| `08_prompts/` | Prompt system documentation; `legacy/` = preserved prompt artifacts | Active |
+| `09_archive/` | Archive policy, index, and historical content store; `store/` = preserved archives | Active |
+| `10_state/` | Operational state assessments, risk register, tech debt, decisions | Active |
+| `11_skills/` | Agent skill documentation; `payloads/` = live skill payloads | Active |
+| `12_agents/` | Agent model documentation; `payloads/` = live agent payloads | Active |
+| `13_research/` | Research artifacts and labeled research packs (UX, market, competitive) | Active |
+| `14_fact_checking/` | Content fact-checking pipeline, trackers, reports, and scripts | Active |
+| `15_content_optimization/` | Content optimization pipeline, batch trackers, release reports | Active |
+| `16_source_packs/` | Source pack pipeline — manifests, packs, reports, validation | Active |
+| `17_article_improvement/` | Article improvement pipeline — diffs, jobs, outputs, reports | Active |
+| `18_question_improvement/` | Question improvement pipeline — diffs, jobs, outputs, reports, generated artifacts | Active |
+| `19_controlled_apply/` | Controlled content application — backups, logs, reports | Active |
+| `20_content_publish/` | Content publishing pipeline — publish-ready batches, diffs, backups | Active |
 
-Use `.ai/00_system/ai-folder-canonical-map.md` for the full historical routing of numbered vs unnumbered surfaces.
+Use `00_system/ai-folder-canonical-map.md` for the full routing of numbered vs unnumbered surfaces.
 
-### Scripted/Generated Exceptions
+### Top-Level Exceptions
 
 | Path | Role | Status |
 |------|------|--------|
-| `content-audit-export/` | Content round-trip export workspace; `articles/` corpus and run artifacts | Active/generated; do not move article corpus without script-path validation |
-| `archive/` | Legacy compatibility archive from 2026-05-09 | Preserved |
+| `content-audit-export/` | Content round-trip export workspace; `articles/` corpus and run artifacts | Active/generated; do not move without script-path validation |
+| `scripts/` | Utility Python scripts for content operations | Active; verify script references before relocating |
 | `tmp/` | Local generated residue; currently untracked | Do not promote unless explicitly needed |
 
 ---
@@ -120,9 +123,23 @@ Use `.ai/00_system/ai-folder-canonical-map.md` for the full historical routing o
 - **Codebase is source of truth.** Docs are hypotheses until verified against code.
 - **Do not copy secrets into docs.** Document variable names only.
 - **Date time-sensitive counts and validation claims.**
+- **Follow naming conventions.** See `00_system/naming-conventions.md` for the complete specification.
 - **Update README.md and relevant `.ai/` docs together** when product/architecture/routes change.
 - **Prefer additive, non-destructive updates.** Mark historical/superseded material clearly.
 - **Audit before editing.** Do not update state, roadmap, or audit docs from assumption.
+- **No new unnumbered top-level folders.** Use the numbered taxonomy or archive under `09_archive/store/`.
+
+---
+
+## .ai/ Organization Pass (2026-05-17)
+
+This pass reorganized `.ai/` following the naming conventions and folder taxonomy:
+
+- **Naming conventions** established in `00_system/naming-conventions.md` — all active files renamed to `topic--type--vN.ext` (ongoing) or `YYYY-MM-DD--topic--type--descriptor.ext` (time-bound)
+- **Root cleanup:** 33 markdown files moved from `.ai/` root into appropriate numbered folders; 5 compatibility redirects deleted; 6 non-markdown files relocated
+- **`03_plans/`** loose files grouped into dated topic subfolders
+- **Unnumbered exception folders** archived into `09_archive/store/` — only `content-audit-export/`, `scripts/`, and `tmp/` remain as top-level exceptions
+- **Other numbered folders** (`02_audits/`, `00_performance/`, `14_fact_checking/`, `18_question_improvement/`) polished with loose files grouped into subfolders
 
 ---
 
@@ -137,11 +154,11 @@ The current launch stance is **payment-free and live-AI-provider-free**. Key dec
 
 ---
 
-## This Audit (2026-05-09)
+## Previous Audit (2026-05-09)
 
 New files created to provide a structured entry point for future agents:
-- `PROJECT_CONTEXT.md`, `ARCHITECTURE.md` (updated), `IMPLEMENTATION_STATUS.md`
-- `ROADMAP.md`, `TASKS.md`, `TECH_DEBT.md`, `DECISIONS.md`
-- `AGENT_INSTRUCTIONS.md`, `AUDIT_REPORT.md`
+- `PROJECT_CONTEXT.md`, `06_specs/architecture--spec--v3.md` (updated), `10_state/implementation-status--state--v2.md`
+- `01_roadmap/roadmap--state--v1.md`, `04_tasks/tasks--state--v1.md`, `10_state/tech-debt--state--v1.md`, `10_state/decisions--state--v1.md`
+- `AGENT_INSTRUCTIONS.md`, `02_audits/2026-05-09--repo--audit--full.md`
 
-No existing files were deleted. The archive directory `.ai/archive/2026-05-09/` was created for future archival needs. Active docs with stale counts (`project-overview.md`) were marked with superseded banners showing current verified counts alongside historical values.
+No existing files were deleted. The archive directory `09_archive/store/2026-05-09/` was created for future archival needs. Active docs with stale counts were marked with superseded banners showing current verified counts alongside historical values.
