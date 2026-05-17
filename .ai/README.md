@@ -113,6 +113,7 @@ Use `00_system/ai-folder-canonical-map.md` for the full routing of numbered vs u
 | Path | Role | Status |
 |------|------|--------|
 | `content-audit-export/` | Content round-trip export workspace; `articles/` corpus and run artifacts | Active/generated; do not move without script-path validation |
+| `16_source_packs_draft/` | Draft source-pack staging area; scripts reference this path directly | Active; do not move without script-path validation |
 | `scripts/` | Utility Python scripts for content operations | Active; verify script references before relocating |
 | `tmp/` | Local generated residue; currently untracked | Do not promote unless explicitly needed |
 
@@ -135,7 +136,7 @@ Use `00_system/ai-folder-canonical-map.md` for the full routing of numbered vs u
 
 This pass reorganized `.ai/` following the naming conventions and folder taxonomy:
 
-- **Naming conventions** established in `00_system/naming-conventions.md` — all active files renamed to `topic--type--vN.ext` (ongoing) or `YYYY-MM-DD--topic--type--descriptor.ext` (time-bound)
+- **Naming conventions** established in `00_system/naming-conventions.md` — new files must follow the convention; existing entrypoint files (PROJECT_CONTEXT.md, AGENT_INSTRUCTIONS.md, etc.) retain original names for discoverability
 - **Root cleanup:** 33 markdown files moved from `.ai/` root into appropriate numbered folders; 5 compatibility redirects deleted; 6 non-markdown files relocated
 - **`03_plans/`** loose files grouped into dated topic subfolders
 - **Unnumbered exception folders** archived into `09_archive/store/` — only `content-audit-export/`, `scripts/`, and `tmp/` remain as top-level exceptions

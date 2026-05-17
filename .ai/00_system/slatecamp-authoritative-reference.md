@@ -10,7 +10,7 @@
 ## 1. Identity
 
 **SlateCamp** — Philippine **Licensure Examination for Architects (LEA)** prep platform.
-Pre-launch MVP. Next.js 16.1.6 App Router. Supabase PostgreSQL. Bun-first.
+Pre-launch MVP. Next.js 16 App Router. Supabase PostgreSQL. Bun-first.
 
 Previous name: ALE (Architecture Licensure Examination). **All code, docs, and content have been migrated to LEA.**
 
@@ -63,7 +63,7 @@ Numbered-first top-level taxonomy with flat docs and a small set of documented l
 - `01_roadmap/roadmap--state--v1.md`, `04_tasks/tasks--state--v1.md`
 - `02_audits/` for audit reports, `03_plans/` for plans, `05_logs/` for logs
 
-**Naming conventions:** See `00_system/naming-conventions.md`. All active files follow `YYYY-MM-DD--topic--type--descriptor.ext` (time-bound) or `topic--type--vN.ext` (ongoing canonical docs).
+**Naming conventions:** See `00_system/naming-conventions.md`. New files must follow `YYYY-MM-DD--topic--type--descriptor.ext` (time-bound) or `topic--type--vN.ext` (ongoing canonical docs). Some existing active files (PROJECT_CONTEXT.md, AGENT_INSTRUCTIONS.md, etc.) retain their original names as documented entrypoints.
 
 ## 4. Mirror Directories
 
@@ -147,7 +147,7 @@ Other: `dev`, `dev:turbo`, `build`, `lint`, `type-check` (check), `db:seed`, `de
 
 ## 9. Known Drift / Ambiguity
 
-- `Bun-first` docs vs dual-lockfile reality (yarn.lock also present)
+- `Bun-first` docs (package-lock.json has been deprecated; bun.lock is canonical)
 - Server-first conventions vs broad client-heavy surfaces
 - `.omx/` state vs `.ai/10_state/` vs `10_state/legacy-state`
 - AGENTS.md has minimal persona; CLAUDE.md has full persona — not harmonized
