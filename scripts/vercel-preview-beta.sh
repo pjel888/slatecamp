@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# SlateCamp Vercel preview helper.
+# Uses the repo-pinned Vercel CLI through `bunx vercel@54.1.0` when no global `vercel` binary exists.
 # Requires either an authenticated `vercel login` session or VERCEL_TOKEN in the shell.
 # Does not set secrets and does not deploy production.
 
-if ! command -v vercel >/dev/null 2>&1; then
-  echo "Vercel CLI is not installed. Install with: npm i -g vercel" >&2
+VERCEL_CMD=(bunx vercel@54.1.0)
+if command -v vercel >/dev/null 2>&1; then
+  VERCEL_CMD=(vercel)
+elif ! command -v bunx >/dev/null 2>&1; then
+  echo "Bun/bunx is required to run the repo-pinned Vercel CLI." >&2
   exit 1
 fi
 
@@ -16,9 +19,9 @@ if [[ -n "${VERCEL_TOKEN:-}" ]]; then
 fi
 
 if [[ ${#TOKEN_ARGS[@]} -gt 0 ]]; then
-  AUTH_CHECK=(vercel whoami "${TOKEN_ARGS[@]}")
+  AUTH_CHECK=("${VERCEL_CMD[@]}" whoami "${TOKEN_ARGS[@]}")
 else
-  AUTH_CHECK=(vercel whoami)
+  AUTH_CHECK=("${VERCEL_CMD[@]}" whoami)
 fi
 
 if ! "${AUTH_CHECK[@]}" >/dev/null 2>&1; then
@@ -35,7 +38,7 @@ export NEXT_PUBLIC_PAYMENTS_ENABLED=false
 
 echo "Creating payment-free beta preview deployment..."
 if [[ ${#TOKEN_ARGS[@]} -gt 0 ]]; then
-  vercel deploy "${TOKEN_ARGS[@]}"
+  "${VERCEL_CMD[@]}" deploy "${TOKEN_ARGS[@]}"
 else
-  vercel deploy
+  "${VERCEL_CMD[@]}" deploy
 fi

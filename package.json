@@ -155,7 +155,12 @@
     "content-audit:rebaseline-snapshot": "bun scripts/content-audit/build-supabase-rebaseline-snapshot.ts",
     "content-audit:rebaseline-snapshot-validate": "bun scripts/content-audit/validate-supabase-rebaseline-snapshot.ts",
     "content-audit:admin-audit-rebaseline-migration": "bun scripts/content-audit/build-admin-audit-rebaseline-migration.ts",
-    "content-audit:admin-audit-rebaseline-validate": "bun scripts/content-audit/validate-admin-audit-rebaseline-migration.ts"
+    "content-audit:admin-audit-rebaseline-validate": "bun scripts/content-audit/validate-admin-audit-rebaseline-migration.ts",
+    "vercel:login": "bunx vercel@54.1.0 login",
+    "vercel:link": "bunx vercel@54.1.0 link",
+    "vercel:whoami": "bunx vercel@54.1.0 whoami",
+    "vercel:env:pull": "bunx vercel@54.1.0 env pull .env.vercel.local",
+    "vercel": "bunx vercel@54.1.0"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
