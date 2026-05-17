@@ -3,32 +3,35 @@ name: 3D Performance Warning Gates
 on:
   pull_request:
     paths:
-      - 'src/app/dashboard/3d-lab/**'
-      - 'src/features/3d-lab/**'
-      - '.ai/00_performance/**'
-      - 'scripts/playwright-web-server.ts'
-      - 'scripts/playwright-run.ts'
-      - 'tsconfig.json'
-      - 'package.json'
-      - 'bun.lock'
+      - "src/app/dashboard/3d-lab/**"
+      - "src/features/3d-lab/**"
+      - ".ai/00_performance/**"
+      - "scripts/playwright-web-server.ts"
+      - "scripts/playwright-run.ts"
+      - "tsconfig.json"
+      - "package.json"
+      - "bun.lock"
   push:
     branches:
       - main
       - master
     paths:
-      - 'src/app/dashboard/3d-lab/**'
-      - 'src/features/3d-lab/**'
-      - '.ai/00_performance/**'
-      - 'scripts/playwright-web-server.ts'
-      - 'scripts/playwright-run.ts'
-      - 'tsconfig.json'
-      - 'package.json'
-      - 'bun.lock'
+      - "src/app/dashboard/3d-lab/**"
+      - "src/features/3d-lab/**"
+      - ".ai/00_performance/**"
+      - "scripts/playwright-web-server.ts"
+      - "scripts/playwright-run.ts"
+      - "tsconfig.json"
+      - "package.json"
+      - "bun.lock"
   workflow_dispatch:
 
 concurrency:
   group: 3d-performance-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   warning-gates:
