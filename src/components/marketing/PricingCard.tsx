@@ -15,13 +15,24 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
     <span className='text-[11px] font-medium uppercase tracking-[0.15em] text-muted-foreground'>
       {tier.tierName}
     </span>
-    <p className='mt-1 text-[13px] text-foreground/70'>{tier.targetAudience}</p>
+    <p className='mt-1 text-[18px] font-semibold leading-tight text-foreground'>
+      {tier.subtitle}
+    </p>
+    <p className='mt-2 text-[13px] leading-relaxed text-foreground/70'>
+      {tier.targetAudience}
+    </p>
 
     <div className='mt-5'>
       {tier.originalPrice && (
         <s className='block text-[13px] text-muted-foreground'>{tier.originalPrice}</s>
       )}
-      <span className='text-[40px] font-semibold leading-none text-foreground'>
+      <span
+        className={`font-semibold leading-none text-foreground ${
+          tier.price.toLowerCase().includes('contact')
+            ? 'text-[30px] tracking-[-0.02em]'
+            : 'text-[40px]'
+        }`}
+      >
         {tier.price}
       </span>
       {tier.priceSubtext && (

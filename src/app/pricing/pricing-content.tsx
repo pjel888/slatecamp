@@ -1,64 +1,80 @@
 'use client'
 
 import { useEffect } from 'react'
-import Link from 'next/link'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-import { Button } from '@/components/ui/button'
 import { trackEvent } from '@/lib/analytics'
 import { PricingCard } from '@/components/marketing/PricingCard'
-import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
-import { ROUTES } from '@/lib/routes'
 import {
-  INDIVIDUAL_TIERS,
-  EDUCATIONAL_TIERS,
-  ENTERPRISE_TIERS,
+  CORPORATE_TIERS,
+  INSTITUTIONAL_TIERS,
+  PROFESSIONAL_TIERS,
+  STUDENT_GRADUATE_TIERS,
 } from '@/lib/constants/pricing'
 
 const TABS = [
-  { value: 'individuals', label: 'For Individuals' },
-  { value: 'educational', label: 'For Students & Teachers' },
-  { value: 'enterprise', label: 'For Organizations' },
+  { value: 'students-graduates', label: 'Students/Graduate' },
+  { value: 'professionals', label: 'Professionals' },
+  { value: 'institutional', label: 'Institutional' },
+  { value: 'corporate', label: 'Corporate' },
 ] as const
+
+const TAB_DETAILS = {
+  'students-graduates': {
+    eyebrow: 'LEA review access',
+    description:
+      'For architecture students, graduates, and board exam takers who need notes, code explainers, quizzes, 3D visuals, and clearer next steps.',
+    tiers: STUDENT_GRADUATE_TIERS,
+    gridClass: 'grid-cols-1 gap-6 lg:grid-cols-3',
+  },
+  professionals: {
+    eyebrow: 'Practice reference',
+    description:
+      'For licensed architects, apprentices, and small studios using SlateCamp as a field guide for code, specification, and spatial review.',
+    tiers: PROFESSIONAL_TIERS,
+    gridClass: 'mx-auto max-w-[520px] grid-cols-1 gap-6',
+  },
+  institutional: {
+    eyebrow: 'School and cohort licenses',
+    description:
+      'For schools, review groups, and academic partners that want organized cohort access, instructor visibility, and structured onboarding.',
+    tiers: INSTITUTIONAL_TIERS,
+    gridClass: 'mx-auto max-w-[860px] grid-cols-1 gap-6 md:grid-cols-2',
+  },
+  corporate: {
+    eyebrow: 'Partner seats with scholarship access',
+    description:
+      'Corporate seats help teams use SlateCamp while funding access for partner schools, students, and board exam takers who apply for scholarship access.',
+    tiers: CORPORATE_TIERS,
+    gridClass: 'mx-auto max-w-[720px] grid-cols-1 gap-6',
+  },
+} as const
 
 export const PricingContent = () => {
   useEffect(() => { trackEvent({ event_name: 'upgrade_page_viewed' }) }, [])
 
-  if (!FEATURE_PAYMENTS_ENABLED) {
-    return (
-      <div className="mx-auto max-w-[1200px] text-center py-20">
-        <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-foreground">
-          Free Access
-        </h1>
-        <p className="mx-auto mt-4 max-w-md text-base text-muted-foreground">
-          Currently available starter surfaces are free while billing is disabled. Start exploring now.
-        </p>
-        <Button asChild className="mt-8">
-          <Link href={ROUTES.dashboard.root}>Go to Dashboard</Link>
-        </Button>
-      </div>
-    )
-  }
-
   return (
     <div className="mx-auto max-w-[1200px]">
       <div className="text-center">
+        <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-primary">
+          SlateCamp access plans
+        </span>
         <h1
-          className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-foreground"
+          className="mt-3 text-[clamp(2rem,5vw,3.5rem)] font-semibold text-foreground"
         >
-          Simple, transparent pricing
+          Pricing for learners, schools, and partners
         </h1>
         <p
-          className='font-instrument-serif mx-auto mt-4 max-w-md text-[20px] italic leading-snug text-muted-foreground'
+          className='font-instrument-serif mx-auto mt-4 max-w-2xl text-[20px] italic leading-snug text-muted-foreground'
         >
-          Choose the plan that fits your goals.
+          Choose the SlateCamp access path that fits the way you study, teach, practice, or support future architects.
         </p>
       </div>
 
-      <Tabs defaultValue="individuals" className="mt-14">
+      <Tabs defaultValue="students-graduates" className="mt-14">
         <div className="flex justify-center">
           <TabsList
             variant="line"
-            className="h-auto gap-6 border-b border-border pb-px"
+            className="h-auto flex-wrap justify-center gap-x-6 gap-y-2 border-b border-border pb-px"
           >
             {TABS.map(({ value, label }) => (
               <TabsTrigger
@@ -72,48 +88,39 @@ export const PricingContent = () => {
           </TabsList>
         </div>
 
-        <TabsContent value="individuals">
-          <div className="mt-3 mb-8 text-center">
-            <p className="text-[13px] text-muted-foreground">
-              For architecture students and active board-season learners.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {INDIVIDUAL_TIERS.map((tier) => (
-              <PricingCard key={tier.id} tier={tier} />
-            ))}
-          </div>
-        </TabsContent>
+        {TABS.map(({ value }) => {
+          const detail = TAB_DETAILS[value]
 
-        {/* VIEW 2 — Educational */}
-        <TabsContent value="educational">
-          <div className="mt-3 mb-8 text-center">
-            <p className="text-[13px] text-muted-foreground">
-              For universities and academic cohorts. Volume pricing, instructor
-              dashboards, and custom content tools.
-            </p>
-          </div>
-          <div className="mx-auto grid max-w-[800px] grid-cols-1 gap-6 sm:grid-cols-2">
-            {EDUCATIONAL_TIERS.map((tier) => (
-              <PricingCard key={tier.id} tier={tier} />
-            ))}
-          </div>
-        </TabsContent>
-
-        {/* VIEW 3 — Enterprise */}
-        <TabsContent value="enterprise">
-          <div className="mt-3 mb-8 text-center">
-            <p className="text-[13px] text-muted-foreground">
-              For material suppliers and architectural firms looking to reach
-              the next generation of licensed architects.
-            </p>
-          </div>
-          <div className="mx-auto grid max-w-[800px] grid-cols-1 gap-6 sm:grid-cols-2">
-            {ENTERPRISE_TIERS.map((tier) => (
-              <PricingCard key={tier.id} tier={tier} />
-            ))}
-          </div>
-        </TabsContent>
+          return (
+            <TabsContent key={value} value={value}>
+              <div className="mt-5 mb-8 text-center">
+                <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-primary/80">
+                  {detail.eyebrow}
+                </p>
+                <p className="mx-auto mt-2 max-w-2xl text-[13px] leading-relaxed text-muted-foreground">
+                  {detail.description}
+                </p>
+              </div>
+              {value === 'corporate' && (
+                <div className="mx-auto mb-6 max-w-[720px] rounded-2xl border border-primary/20 bg-primary/[0.04] p-5 text-left shadow-sm">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
+                    1 paid seat = 1 scholarship seat
+                  </p>
+                  <p className="mt-2 text-[14px] leading-relaxed text-foreground/80">
+                    Every corporate seat purchased funds one scholarship seat for
+                    partner-school learners and qualified students or board exam
+                    takers who apply for access to all SlateCamp features.
+                  </p>
+                </div>
+              )}
+              <div className={`grid ${detail.gridClass}`}>
+                {detail.tiers.map((tier) => (
+                  <PricingCard key={tier.id} tier={tier} />
+                ))}
+              </div>
+            </TabsContent>
+          )
+        })}
       </Tabs>
     </div>
   )

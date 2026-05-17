@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { INDIVIDUAL_TIERS } from '@/lib/constants/pricing'
+import { CORPORATE_TIERS, INDIVIDUAL_TIERS } from '@/lib/constants/pricing'
 import { PricingCard } from './PricingCard'
 
 const meta = {
@@ -40,8 +40,8 @@ export const HighlightedTier: Story = {
   },
 }
 
-export const EnterpriseTier: Story = {
+export const CorporateTier: Story = {
   args: {
-    tier: INDIVIDUAL_TIERS[4],
+    tier: CORPORATE_TIERS[0],
   },
 }
