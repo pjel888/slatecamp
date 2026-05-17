@@ -96,8 +96,8 @@ These features were found by code-review-graph community analysis but are NOT do
 | Feature modules | 556 files | `src/features/` |
 | Database tables | 76 | `DATABASE_SCHEMA.sql` |
 | Migrations | 101 | `ls supabase/migrations/*.sql \| wc -l` (verified 2026-05-09) |
-| Features (documented) | 27 | `.ai/features.md` |
-| IP-relevant items | 16 | `.ai/ip-inventory.md` |
+| Features (documented) | 27 | `.ai/06_specs/features--inventory--v2.md` |
+| IP-relevant items | 16 | `.ai/06_specs/ip-inventory--spec--v1.md` |
 | Test files | 88 | `find src -name "*.test.ts" -o -name "*.test.tsx" \| wc -l` (verified 2026-05-09) |
 | Story files | 113 | `find . -name "*.stories.tsx" \| wc -l` (verified 2026-05-09) |
 | Playwright E2E specs | 13 | `e2e/` directory |

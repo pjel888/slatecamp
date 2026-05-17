@@ -4,7 +4,7 @@ This folder records scoped organization passes for the `.ai/` operational intell
 
 ## Current pass
 
-- `2026-05-15-content-supabase-closure-organization-plan.md`
+- `2026-05-17-content-supabase-closure-organization-plan.md`
 
 ## Rules
 
