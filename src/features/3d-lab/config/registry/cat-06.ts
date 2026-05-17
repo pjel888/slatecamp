@@ -76,6 +76,17 @@ export const cat06Modules: ModuleRegistryEntry[] = [
     description: "Multi-room floor plan with lux level targets per space type (drafting 750, office 300–500, corridor 100–200) per PEC Rule 9.50.4.",
   },
   {
+    id: "lighting-room-simulator",
+    title: "Lighting Room Simulator",
+    templateType: "parametric",
+    subject: "lighting-design",
+    categoryId: "ELECTRICAL",
+    launchPhase: 2,
+    codeRef: "DOE Table 3.1 · PGBC Table 11 · Source pending QA",
+    status: "ready",
+    description: "3D lighting lab where lumens, wattage, beam angle, color temperature, mounting height, and room area visibly change the room light result.",
+  },
+  {
     id: "lighting-layout",
     title: "Lighting Layout",
     templateType: "floorplan",
