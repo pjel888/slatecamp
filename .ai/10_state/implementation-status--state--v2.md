@@ -76,7 +76,7 @@ These features were found by code-review-graph community analysis but are NOT do
 | Area / Feature | Status | Evidence | Notes | Recommended Action |
 |---|---|---|---|---|
 | Offline quiz support | Implemented (undocumented) | `src/lib/quiz/offline/db.ts` — IndexedDB via `idb`; queues pending answers, caches sessions, retry with stale cleanup | Not mentioned anywhere. code-review-graph detected community | Document; verify end-to-end |
-| Rate limiting | Implemented | `src/lib/rate-limit.ts`; `src/lib/rate-limit.test.ts` (10 tests) | Used by AI endpoints. Not in architecture docs | Add to ARCHITECTURE.md |
+| Rate limiting | Implemented | `src/lib/rate-limit.ts`; `src/lib/rate-limit.test.ts` (10 tests) | Used by AI endpoints. Not in architecture docs | Add to `06_specs/architecture--spec--v3.md` |
 | Area C calculator engine | Implemented | `src/lib/area-c-calculations.ts` — AMBF, TGFA, PSO, occupant load, parking, travel distance, exit width | Philippine building code calculations. Documented in routes but not as a standalone feature | Note in features |
 | Wiki markdown pipeline | Implemented | `src/lib/wiki-markdown.ts` — slugify, heading ID tracking, reading time, MDX normalization, EI prompt injection | Sophisticated content rendering pipeline | Document in architecture |
 

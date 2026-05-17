@@ -51,7 +51,7 @@
 
 | Area | Issue | Severity | Evidence | Impact | Recommended Fix |
 |------|-------|----------|----------|--------|-----------------|
-| Docs | Compatibility mirrors need cleanup | Low | `api-surface.md`, `data-model.md`, `testing-and-quality.md`, `known-gaps.md` are compatibility pointers | Extra files; navigation confusion | Delete after confirming no remaining references |
+| Docs | Compatibility mirrors removed | Low | `api-surface.md`, `data-model.md`, `testing-and-quality.md`, `known-gaps.md`, `app-audit.md` were deleted 2026-05-17 | Extra files; navigation confusion | ✅ Deleted in .ai/ organization pass |
 | Docs | Storybook placeholder baseline noisy | Low | `bun run check:storybook` reports many cleaned/removed baseline files | Confusing output | Simplify or empty baseline |
 | Code | Stale developer API reference | Low | `src/lib/developer/api-reference-data.ts` references `/api/debug-taxonomy` which doesn't exist | Incorrect API documentation | Remove or mark historical |
 | Code | `__pycache__` artifact tracked in git | Low | `.codex/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-311.pyc` is tracked | Commit hygiene | Remove from tracking; add to `.gitignore` |
