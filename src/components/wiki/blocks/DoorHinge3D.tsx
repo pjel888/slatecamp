@@ -76,7 +76,6 @@ const BARREL = '#9eacba'
 const SCREW = '#8796a6'
 const OUTLINE = '#526274'
 const HARDWARE = LEAF
-const BACKPLANE = LEAF
 const CANVAS_BG = '#0f4c81'
 
 function Mat({ color = HARDWARE }: { color?: string }) {
@@ -139,7 +138,12 @@ function DiskFront({
         <Mat color={color} />
         <Edges color={OUTLINE} threshold={20} />
       </mesh>
-      <Box position={[0, 0, 0.018]} size={[radius * 1.45, radius * 0.18, 0.012]} color={SCREW} />
+      <mesh position={[0, 0, 0.014]} rotation={[Math.PI / 2, 0, 0]}>
+        <ringGeometry args={[radius * 0.58, radius * 0.94, 28]} />
+        <meshStandardMaterial color="#6f7f90" roughness={0.88} metalness={0.05} side={THREE.DoubleSide} />
+      </mesh>
+      <Box position={[0, 0, 0.022]} size={[radius * 1.45, radius * 0.16, 0.012]} color="#5e6d7d" />
+      <Box position={[0, 0, 0.024]} size={[radius * 0.16, radius * 1.45, 0.012]} color="#5e6d7d" />
     </group>
   )
 }
@@ -162,47 +166,64 @@ function KnuckleSet({ height = 1.85, count = 5, radius = 0.08, color = BARREL }:
     <group>
       <CylinderY radius={radius * 0.55} height={height + 0.08} color={SCREW} />
       {Array.from({ length: count }, (_, index) => (
-        <CylinderY
-          key={index}
-          position={[0, -height / 2 + segment / 2 + index * segment, 0.015]}
-          radius={radius}
-          height={segment * 0.76}
-          color={index % 2 === 0 ? color : BODY}
-        />
+        <group key={index} position={[0, -height / 2 + segment / 2 + index * segment, 0.015]}>
+          <CylinderY
+            radius={radius}
+            height={segment * 0.76}
+            color={index % 2 === 0 ? color : BODY}
+          />
+          <Box
+            position={[index % 2 === 0 ? -radius * 1.18 : radius * 1.18, 0, -0.01]}
+            size={[radius * 1.45, segment * 0.56, 0.04]}
+            color={index % 2 === 0 ? BODY : LEAF}
+          />
+        </group>
       ))}
+      <CylinderY position={[0, height / 2 + 0.065, 0.015]} radius={radius * 0.72} height={0.06} color={SCREW} />
+      <CylinderY position={[0, -height / 2 - 0.065, 0.015]} radius={radius * 0.72} height={0.06} color={SCREW} />
     </group>
   )
 }
 
 function ButtFamily({ type }: { type: HingeType }) {
+  const bridgeYs = [-0.62, 0, 0.62]
+  const movingBridgeYs = [-0.31, 0.31]
+
   return (
     <group>
-      <HingeLeaf x={-0.33} />
-      <HingeLeaf x={0.33} />
-      <Box position={[-0.11, 0, 0.022]} size={[0.22, 1.72, 0.052]} color={BODY} />
-      <Box position={[0.11, 0, 0.022]} size={[0.22, 1.72, 0.052]} color={BODY} />
+      <HingeLeaf x={-0.38} width={0.5} />
+      <HingeLeaf x={0.38} width={0.5} />
+      {bridgeYs.map((y) => <Box key={`fixed-${y}`} position={[-0.12, y, 0.035]} size={[0.22, 0.26, 0.052]} color={BODY} />)}
+      {movingBridgeYs.map((y) => <Box key={`moving-${y}`} position={[0.12, y, 0.035]} size={[0.22, 0.28, 0.052]} color={LEAF} />)}
       <KnuckleSet color={BARREL} />
 
       {type === 'loose-pin' && (
         <group>
-          <CylinderY position={[0, 1.18, 0.04]} radius={0.045} height={0.42} color={LEAF} />
-          <CylinderY position={[0, 1.43, 0.04]} radius={0.13} height={0.08} color={LEAF} />
+          <CylinderY position={[0, 1.17, 0.04]} radius={0.04} height={0.36} color={LEAF} />
+          <CylinderY position={[0, 1.4, 0.04]} radius={0.12} height={0.07} color={LEAF} />
+          <mesh position={[0, 1.48, 0.04]} rotation={[Math.PI / 2, 0, 0]}>
+            <torusGeometry args={[0.12, 0.012, 10, 28]} />
+            <Mat color={SCREW} />
+          </mesh>
         </group>
       )}
 
       {type === 'ball-bearing' && [-0.56, 0, 0.56].map((y) => (
         <group key={y} position={[0, y, 0.08]}>
-          <CylinderY radius={0.12} height={0.045} color={BODY} />
-          <CylinderY radius={0.075} height={0.055} color={BARREL} />
+          <CylinderY radius={0.13} height={0.04} color={BODY} />
+          <CylinderY radius={0.095} height={0.052} color={LEAF} />
+          {[-0.055, 0, 0.055].map((x) => <mesh key={x} position={[x, 0, 0.055]}><sphereGeometry args={[0.018, 12, 8]} /><Mat color={SCREW} /></mesh>)}
         </group>
       ))}
 
       {type === 'spring' && (
         <group position={[0, 0, 0.12]}>
           <CylinderY radius={0.14} height={1.55} color={BARREL} />
-          {Array.from({ length: 8 }, (_, i) => (
-            <Box key={i} position={[0, -0.68 + i * 0.195, 0.145]} size={[0.34, 0.022, 0.024]} color={SCREW} />
+          {Array.from({ length: 11 }, (_, i) => (
+            <Box key={i} position={[0, -0.72 + i * 0.145, 0.155]} size={[0.34, 0.018, 0.024]} color={SCREW} />
           ))}
+          <CylinderY position={[0, 0.86, 0.12]} radius={0.105} height={0.08} color={LEAF} />
+          <CylinderY position={[0, -0.86, 0.12]} radius={0.105} height={0.08} color={LEAF} />
         </group>
       )}
     </group>
@@ -212,16 +233,22 @@ function ButtFamily({ type }: { type: HingeType }) {
 function PivotHinge() {
   return (
     <group>
-      <Box position={[0.12, 0, -0.05]} size={[0.84, 1.9, 0.06]} color={BACKPLANE} />
-      <Box position={[0.12, -1.03, 0.02]} size={[0.86, 0.18, 0.16]} color={BODY} />
-      <Box position={[0.12, 1.03, 0.02]} size={[0.86, 0.18, 0.16]} color={BODY} />
-      <CylinderY position={[-0.28, 0, 0.06]} radius={0.035} height={2.05} color={SCREW} />
-      <CylinderY position={[-0.28, -0.9, 0.12]} radius={0.14} height={0.16} color={BARREL} />
-      <CylinderY position={[-0.28, 0.9, 0.12]} radius={0.14} height={0.16} color={BARREL} />
-      {[-0.12, 0.34].map((x) => (
+      <Box position={[0.1, 0, -0.02]} size={[0.54, 1.72, 0.055]} color={LEAF} />
+      <Box position={[-0.33, -1.0, 0.035]} size={[0.88, 0.22, 0.12]} color={BODY} />
+      <Box position={[-0.33, 1.0, 0.035]} size={[0.88, 0.22, 0.12]} color={BODY} />
+      <CylinderY position={[-0.66, 0, 0.09]} radius={0.026} height={2.18} color={SCREW} />
+      <CylinderY position={[-0.66, -1.0, 0.13]} radius={0.145} height={0.19} color={BARREL} />
+      <CylinderY position={[-0.66, 1.0, 0.13]} radius={0.145} height={0.19} color={BARREL} />
+      <CylinderY position={[-0.66, -0.78, 0.105]} radius={0.075} height={0.24} color={BODY} />
+      <CylinderY position={[-0.66, 0.78, 0.105]} radius={0.075} height={0.24} color={BODY} />
+      <Box position={[-0.43, -1.0, 0.08]} size={[0.34, 0.11, 0.075]} color={BODY} />
+      <Box position={[-0.43, 1.0, 0.08]} size={[0.34, 0.11, 0.075]} color={BODY} />
+      <Box position={[-0.66, -1.18, 0.035]} size={[0.46, 0.16, 0.06]} color={LEAF} />
+      <Box position={[-0.66, 1.18, 0.035]} size={[0.46, 0.16, 0.06]} color={LEAF} />
+      {[-0.42, 0.04].map((x) => (
         <React.Fragment key={x}>
-          <DiskFront position={[x, -1.03, 0.12]} radius={0.045} />
-          <DiskFront position={[x, 1.03, 0.12]} radius={0.045} />
+          <DiskFront position={[x, -0.96, 0.14]} radius={0.045} />
+          <DiskFront position={[x, 0.96, 0.14]} radius={0.045} />
         </React.Fragment>
       ))}
     </group>
@@ -243,20 +270,32 @@ function ContinuousHinge() {
 function ConcealedHinge() {
   return (
     <group>
-      <Box position={[-0.58, 0, -0.04]} size={[0.4, 1.2, 0.06]} color={LEAF} />
-      <Box position={[0.58, 0, -0.04]} size={[0.4, 1.2, 0.06]} color={BACKPLANE} />
-      <mesh position={[-0.58, 0, 0.05]} rotation={[Math.PI / 2, 0, 0]}>
-        <cylinderGeometry args={[0.25, 0.25, 0.08, 40]} />
-        <Mat color={LEAF} />
+      <Box position={[-0.62, 0, -0.04]} size={[0.38, 1.12, 0.06]} color={LEAF} />
+      <Box position={[0.62, 0, -0.04]} size={[0.42, 0.92, 0.06]} color={BODY} />
+      <mesh position={[-0.58, 0, 0.045]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.3, 0.3, 0.075, 44]} />
+        <Mat color={BODY} />
         <Edges color={OUTLINE} threshold={20} />
       </mesh>
-      <mesh position={[0.58, 0, 0.05]} rotation={[Math.PI / 2, 0, 0]}>
-        <cylinderGeometry args={[0.18, 0.18, 0.08, 40]} />
-        <Mat color={LEAF} />
-        <Edges color={OUTLINE} threshold={20} />
+      <mesh position={[-0.58, 0, 0.072]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.225, 0.225, 0.03, 44]} />
+        <Mat color="#7f8da0" />
       </mesh>
-      <group rotation={[0, 0, -0.35]}><Box position={[0, 0.13, 0.1]} size={[0.9, 0.12, 0.05]} color={LEAF} /></group>
-      <group rotation={[0, 0, 0.35]}><Box position={[0, -0.13, 0.1]} size={[0.9, 0.12, 0.05]} color={LEAF} /></group>
+      <mesh position={[-0.58, 0, 0.088]}>
+        <torusGeometry args={[0.22, 0.02, 12, 44]} />
+        <Mat color={LEAF} />
+      </mesh>
+      <mesh position={[-0.58, 0, 0.094]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.14, 0.14, 0.016, 36]} />
+        <Mat color={BARREL} />
+      </mesh>
+      <Box position={[0.58, 0, 0.055]} size={[0.3, 0.58, 0.07]} color={LEAF} />
+      <Box position={[0.58, 0.24, 0.1]} size={[0.22, 0.08, 0.055]} color={BARREL} />
+      <Box position={[0.58, -0.24, 0.1]} size={[0.22, 0.08, 0.055]} color={BARREL} />
+      <group rotation={[0, 0, -0.32]}><Box position={[0, 0.13, 0.1]} size={[0.9, 0.075, 0.045]} color={LEAF} /></group>
+      <group rotation={[0, 0, 0.32]}><Box position={[0, -0.13, 0.12]} size={[0.9, 0.075, 0.045]} color={BARREL} /></group>
+      <CylinderY position={[-0.16, 0.33, 0.13]} radius={0.055} height={0.24} color={BARREL} />
+      <CylinderY position={[0.16, -0.33, 0.13]} radius={0.055} height={0.24} color={BARREL} />
       {[[-0.58, 0], [0.58, 0], [0, 0.24], [0, -0.24]].map(([x, y]) => <DiskFront key={`${x}-${y}`} position={[x, y, 0.12]} radius={0.04} />)}
     </group>
   )
@@ -265,14 +304,17 @@ function ConcealedHinge() {
 function ParliamentHinge() {
   return (
     <group>
-      <Box position={[-0.78, 0, -0.06]} size={[0.16, 1.65, 0.05]} color={LEAF} />
-      <Box position={[0.78, 0, -0.06]} size={[0.16, 1.65, 0.05]} color={BACKPLANE} />
-      <Box position={[-0.43, 0, 0.02]} size={[0.56, 1.45, 0.055]} color={LEAF} />
-      <Box position={[0.43, 0, 0.02]} size={[0.56, 1.45, 0.055]} color={LEAF} />
-      <Box position={[-0.15, 0, 0.05]} size={[0.32, 1.35, 0.06]} color={BODY} />
-      <Box position={[0.15, 0, 0.05]} size={[0.32, 1.35, 0.06]} color={BODY} />
-      <KnuckleSet height={1.65} count={5} radius={0.075} color={BARREL} />
-      {[-0.43, 0.43].flatMap((x) => [0.43, -0.43].map((y) => <DiskFront key={`${x}-${y}`} position={[x, y, 0.09]} radius={0.045} />))}
+      <Box position={[-0.95, 0, -0.05]} size={[0.18, 1.68, 0.055]} color={LEAF} />
+      <Box position={[0.95, 0, -0.05]} size={[0.18, 1.68, 0.055]} color={LEAF} />
+      <Box position={[-0.58, 0, 0.015]} size={[0.62, 1.42, 0.055]} color={LEAF} />
+      <Box position={[0.58, 0, 0.015]} size={[0.62, 1.42, 0.055]} color={LEAF} />
+      <Box position={[-0.28, 0, 0.075]} size={[0.36, 1.18, 0.07]} color={BODY} />
+      <Box position={[0.28, 0, 0.075]} size={[0.36, 1.18, 0.07]} color={BODY} />
+      <Box position={[-0.06, 0.48, 0.11]} size={[0.2, 0.16, 0.075]} color={BODY} />
+      <Box position={[0.06, -0.48, 0.11]} size={[0.2, 0.16, 0.075]} color={LEAF} />
+      <KnuckleSet height={1.65} count={5} radius={0.082} color={BARREL} />
+      {[-0.95, 0.95].flatMap((x) => [0.48, -0.48].map((y) => <DiskFront key={`${x}-${y}`} position={[x, y, 0.005]} radius={0.043} />))}
+      {[-0.56, 0.56].flatMap((x) => [0.32, -0.32].map((y) => <DiskFront key={`throw-${x}-${y}`} position={[x, y, 0.08]} radius={0.04} />))}
     </group>
   )
 }
@@ -280,12 +322,16 @@ function ParliamentHinge() {
 function StrapHinge() {
   return (
     <group>
-      <Box position={[0.18, 0, -0.08]} size={[1.65, 1.45, 0.05]} color={LEAF} />
-      <Box position={[-0.62, 0, 0.02]} size={[0.26, 1.15, 0.07]} color={LEAF} />
-      <Box position={[0.08, 0, 0.03]} size={[1.25, 0.22, 0.07]} color={LEAF} />
-      <Box position={[0.72, 0, 0.03]} size={[0.32, 0.32, 0.07]} color={LEAF} />
-      <CylinderY position={[-0.78, 0, 0.08]} radius={0.075} height={1.25} color={BARREL} />
-      {[-0.62, -0.2, 0.22, 0.62].map((x) => <DiskFront key={x} position={[x, 0, 0.09]} radius={0.055} />)}
+      <Box position={[-0.62, 0, 0.02]} size={[0.24, 1.18, 0.06]} color={LEAF} />
+      <Box position={[-0.36, 0, 0.035]} size={[0.22, 0.34, 0.075]} color={BODY} />
+      <Box position={[0.1, 0, 0.03]} size={[1.22, 0.16, 0.055]} color={LEAF} />
+      <Box position={[0.52, 0.105, 0.033]} size={[0.5, 0.12, 0.052]} color={LEAF} />
+      <Box position={[0.52, -0.105, 0.033]} size={[0.5, 0.12, 0.052]} color={LEAF} />
+      <Box position={[0.84, 0, 0.034]} size={[0.26, 0.24, 0.055]} color={LEAF} />
+      <CylinderY position={[-0.78, 0, 0.08]} radius={0.07} height={1.28} color={BARREL} />
+      <CylinderY position={[-0.78, 0.38, 0.09]} radius={0.08} height={0.24} color={BODY} />
+      <CylinderY position={[-0.78, -0.38, 0.09]} radius={0.08} height={0.24} color={BODY} />
+      {[-0.52, -0.1, 0.32, 0.7].map((x) => <DiskFront key={x} position={[x, 0, 0.085]} radius={0.05} />)}
       {[0.35, -0.35].map((y) => <DiskFront key={y} position={[-0.62, y, 0.09]} radius={0.055} />)}
     </group>
   )

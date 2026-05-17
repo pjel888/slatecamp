@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "record_id": "rec_create-a-recognition-grade-architectural-butt-hi_20260516_074918_697657_49211ad4",
+  "status": "success",
+  "urdf_path": "model.urdf",
+  "warnings": [
+    {
+      "code": "warning",
+      "message": "Overlaps detected but allowed by justification: 2 overlaps across 1 part pair(s)."
+    }
+  ],
+  "checks_run": [
+    "compile_urdf"
+  ],
+  "overlap_allowances": [],
+  "metrics": {
+    "compile_level": "full",
+    "validation_level": "full",
+    "fingerprint_inputs": {
+      "model_py_sha256": "da90a9a00f4ca3638d5795bb656a4e009beafeb74ba23aedc8d55a9b789cb785",
+      "sdk_fingerprint": null
+    },
+    "materialization_fingerprint": "e27f6ad39843bbcffa3465cbc1bde59a959262f77261109eec6e99d858c76c8c",
+    "model_py_mtime_ns": 1778918199678948779,
+    "model_py_size_bytes": 6069,
+    "materialization_status": "available",
+    "visual_mesh_bytes": 0,
+    "visual_mesh_file_count": 0,
+    "compile_elapsed_seconds": 0.027111040999443503
+  },
+  "signal_bundle": {
+    "status": "success",
+    "summary": "status=success failures=0 warnings=0 notes=3\nCompile passed cleanly.",
+    "signals": [
+      {
+        "severity": "note",
+        "kind": "allowed_overlap",
+        "code": "NOTE_ALLOWED_OVERLAP",
+        "summary": "Overlap findings were allowed by justification.",
+        "details": "Overlaps detected but allowed by justification: 2 overlaps across 1 part pair(s).",
+        "blocking": false,
+        "source": "tests",
+        "group": "qc",
+        "check_name": null,
+        "dedupe_key": "20f11d247a4ca6d6fabab57ca0c810f3b742f19d"
+      },
+      {
+        "severity": "note",
+        "kind": "allowed_overlap",
+        "code": "NOTE_ALLOWED_OVERLAP",
+        "summary": "Overlap allowance declared.",
+        "details": "allow_overlap('door_leaf', 'frame_leaf'), elem_a='continuous_hinge_pin_visible_core', elem_b='door_alternating_knuckle_1': The continuous hinge pin intentionally passes through the moving leaf's upper barrel.",
+        "blocking": false,
+        "source": "tests",
+        "group": "qc",
+        "check_name": null,
+        "dedupe_key": "4b7f91d9a6c63ec92ea39f4747a896c38a7edfc7"
+      },
+      {
+        "severity": "note",
+        "kind": "allowed_overlap",
+        "code": "NOTE_ALLOWED_OVERLAP",
+        "summary": "Overlap allowance declared.",
+        "details": "allow_overlap('door_leaf', 'frame_leaf'), elem_a='continuous_hinge_pin_visible_core', elem_b='door_alternating_knuckle_2': The continuous hinge pin intentionally passes through the moving leaf's lower barrel.",
+        "blocking": false,
+        "source": "tests",
+        "group": "qc",
+        "check_name": null,
+        "dedupe_key": "60cc308cb57d5ac6176e0ba68e3fa952904564a1"
+      }
+    ]
+  }
+}

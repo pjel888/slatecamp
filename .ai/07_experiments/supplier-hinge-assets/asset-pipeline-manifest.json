@@ -1,0 +1,14 @@
+{
+  "asset_pipeline": "supplier-hinge-assets",
+  "status": "source-research-started",
+  "production_component": "src/components/wiki/blocks/DoorHinge3D.tsx remains procedural until supplier GLB passes QA",
+  "downloaded_references": [
+    "bommer-3029-double-acting-spring-hinge.pdf",
+    "mckinney-ta714-ta314-template.pdf",
+    "stanley-2060r-spring-hinge.pdf",
+    "pemko-fmhd-continuous-hinge-template.pdf",
+    "dormakaba-904990-355-floor-pivot-installation.pdf"
+  ],
+  "first_conversion_recommendation": "pivot using dormakaba 355.5 floor pivot installation sheet",
+  "qa_gate": "must beat current procedural model in no-label recognition QA"
+}
