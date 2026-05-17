@@ -139,7 +139,7 @@ This pass reorganized `.ai/` following the naming conventions and folder taxonom
 - **Naming conventions** established in `00_system/naming-conventions.md` — new files must follow the convention; existing entrypoint files (PROJECT_CONTEXT.md, AGENT_INSTRUCTIONS.md, etc.) retain original names for discoverability
 - **Root cleanup:** 33 markdown files moved from `.ai/` root into appropriate numbered folders; 5 compatibility redirects deleted; 6 non-markdown files relocated
 - **`03_plans/`** loose files grouped into dated topic subfolders
-- **Unnumbered exception folders** archived into `09_archive/store/` — only `content-audit-export/`, `scripts/`, and `tmp/` remain as top-level exceptions
+- **Unnumbered exception folders** archived into `09_archive/store/` — only `content-audit-export/`, `16_source_packs_draft/`, `scripts/`, and `tmp/` remain as top-level exceptions
 - **Other numbered folders** (`02_audits/`, `00_performance/`, `14_fact_checking/`, `18_question_improvement/`) polished with loose files grouped into subfolders
 
 ---

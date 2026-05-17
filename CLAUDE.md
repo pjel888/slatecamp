@@ -207,7 +207,7 @@ bun run check:entitlements
 ## Command rules
 1. Do not invent commands.
 2. Do not claim a script exists unless it exists in `package.json` or as an actual executable workflow.
-3. Do not assume a top-level `test` script exists — **it currently does not**.
+3. Verify commands against `package.json`; the top-level `test` script runs `bun test src/`.
 4. If documenting a script, inspect the source and/or the `package.json` entry first.
 
 ---
@@ -424,7 +424,7 @@ over deletion of historical material.
 As of the 2026-04-16 repo intelligence refresh, major risks are:
 1. documentation drift across `README.md`, `.ai`, `.ai/06_specs/deep`, and `AGENTS.md`
 2. large surface area making shallow audits misleading
-3. no single canonical top-level `test` script
+3. top-level `test` script runs `bun test src/` — verify it covers the intended scope
 4. missing centralized environment contract / `.env.example`
 5. maintenance-sensitive counts and operational claims drifting over time
 

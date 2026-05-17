@@ -528,7 +528,7 @@ Prior audits observed names in local env files that are not referenced by curren
 
 ## Pre-launch Readiness / Cleanup Status
 
-A pre-launch cleanup analysis was added on 2026-04-29. The recommended default is **Plan B — Recommended pre-launch cleanup**: protect the core learner loop and admin content operations, remove pre-launch legacy compatibility paths, consolidate duplicate route families, hide/defer optional experiments, and choose a single payment/AI stance before launch. Detailed plans live in `.ai/03_plans/`. See specific plan subfolders: `2026-04-29--launch--audit--prelaunch-readiness.md` (pre-launch assessment), `2026-04-29--cleanup--plan--prelaunch.md` (cleanup plans), `2026-04-29--legacy--plan--retirement.md` (legacy retirement), `2026-04-29--launch--plan--cutline.md` (launch scope), and `.ai/10_state/risk-register--state--v1.md` (risk tracking). Also see `.ai/00_system/do-not-maintain--policy--v1.md`.
+A pre-launch cleanup analysis was added on 2026-04-29. The recommended default is **Plan B — Recommended pre-launch cleanup**: protect the core learner loop and admin content operations, remove pre-launch legacy compatibility paths, consolidate duplicate route families, hide/defer optional experiments, and choose a single payment/AI stance before launch. Detailed plans live in `.ai/03_plans/`. See specific plan subfolders: `general--launch/` (launch scope), `general--cleanup/` (cleanup plans), `general--codebase/` (legacy retirement), `02_audits/2026-04-29--launch--audit--prelaunch-readiness.md` (pre-launch assessment). Also see `.ai/10_state/risk-register--state--v1.md` (risk tracking) and `.ai/00_system/do-not-maintain--policy--v1.md`.
 
 ## Known Issues and Gaps
 | Issue/GAP | Evidence | Severity | Recommended action |

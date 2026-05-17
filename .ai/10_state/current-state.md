@@ -81,9 +81,9 @@ These remain future roadmap items unless a future PR deliberately reintroduces p
 
 ## Active source-of-truth references
 
-- Full audit: `.ai/02_audits/CODEBASE_AUDIT_REPORT_2026_05_05.md`
-- Schema remediation/static review: `.ai/02_audits/SCHEMA_SOURCE_OF_TRUTH_REMEDIATION_2026_05_05.md`
-- Supabase verification attempt: `.ai/02_audits/SUPABASE_VERIFICATION_TARGET_MIGRATION_REPLAY_TYPE_REGENERATION_REPORT_2026_05_05.md`
+- Full audit: `.ai/02_audits/code-quality/CODEBASE_AUDIT_REPORT_2026_05_05.md`
+- Schema remediation/static review: `.ai/02_audits/supabase/SCHEMA_SOURCE_OF_TRUTH_REMEDIATION_2026_05_05.md`
+- Supabase verification attempt: `.ai/02_audits/supabase/SUPABASE_VERIFICATION_TARGET_MIGRATION_REPLAY_TYPE_REGENERATION_REPORT_2026_05_05.md`
 - Supabase verification runbook: `.ai/00_system/SUPABASE_VERIFICATION_RUNBOOK.md`
 - Active roadmap: `.ai/01_roadmap/current-phase.md`
 

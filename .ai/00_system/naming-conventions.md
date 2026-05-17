@@ -127,6 +127,14 @@ These names are required by tooling and are exempt from the convention:
 - `mcp.json`
 - `settings.json`
 
+### Exceptions (Active Entrypoint Docs)
+
+These files remain in `.ai/` root as deliberate entrypoints for human and agent discoverability:
+- `PROJECT_CONTEXT.md` — what this project is
+- `AGENT_INSTRUCTIONS.md` — how to work safely in this repo
+
+These are exempt from the naming convention because their root-level placement is the discovery mechanism.
+
 ### Exceptions (Numbered Sequences)
 
 `00_performance/` uses a numbered file sequence (`00_inventory.md` through `41_*.md`). This is a deliberate exception for that folder's internal structure. New performance files should follow the main convention.
