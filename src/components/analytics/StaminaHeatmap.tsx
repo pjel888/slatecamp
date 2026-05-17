@@ -8,6 +8,7 @@ import type { StaminaHeatmapData } from '@/lib/actions/analytics/chart-data'
 
 interface Props {
   data: StaminaHeatmapData
+  variant?: 'default' | 'compact'
 }
 
 const CELL_SIZE = 12
@@ -35,31 +36,32 @@ const buildCoaching = (data: StaminaHeatmapData): { text: string; variant: 'warn
   }
 }
 
-export const StaminaHeatmap = ({ data }: Props) => {
+export const StaminaHeatmap = ({ data, variant = 'default' }: Props) => {
+  const isCompact = variant === 'compact'
   const coaching = buildCoaching(data)
   const gridWidth = data.maxQuestions * (CELL_SIZE + CELL_GAP)
 
   return (
-    <Card className="border-border bg-card p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full overflow-hidden">
       <RichInfoPopover
         title="Session Stamina Heatmap"
         description="Each row is a session (most recent on top). Green = correct, red = incorrect, gray = skipped. Patterns reveal fatigue points."
       />
-      <CardHeader className="p-2 pt-1">
+      <CardHeader className={isCompact ? 'p-1.5 pt-1' : 'p-2 pt-1'}>
         <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
           Session Stamina Heatmap
         </CardTitle>
       </CardHeader>
-      <CardContent className="p-2 pt-0">
+      <CardContent className={isCompact ? 'p-1.5 pt-0 min-h-0' : 'p-2 pt-0'}>
         {data.rows.length === 0 ? (
           <ChartEmptyState
             title="No session data"
             description="Complete a few drill sessions to see your stamina heatmap."
-            height="h-[340px]"
+            height={isCompact ? 'h-full' : 'h-[340px]'}
           />
         ) : (
           <>
-            <div className="overflow-x-auto">
+            <div className={isCompact ? 'max-h-[210px] overflow-auto' : 'overflow-x-auto'}>
               {/* Column headers */}
               <div className="flex items-end mb-1 ml-[72px]">
                 {data.maxQuestions > 0 && Array.from({ length: Math.ceil(data.maxQuestions / 5) }, (_, i) => {
@@ -105,6 +107,7 @@ export const StaminaHeatmap = ({ data }: Props) => {
                       const symbolColor = cell.result === 'skipped' ? '#6B7280' : '#FFFFFF'
                       return (
                         <g key={colIdx}>
+                          <title>{`Q${colIdx + 1}: ${cell.result}`}</title>
                           <rect
                             x={cellX}
                             y={0}
@@ -113,9 +116,7 @@ export const StaminaHeatmap = ({ data }: Props) => {
                             rx={2}
                             fill={CELL_COLORS[cell.result]}
                             opacity={cell.result === 'skipped' ? 0.5 : 0.85}
-                          >
-                            <title>Q{colIdx + 1}: {cell.result}</title>
-                          </rect>
+                          />
                           <text
                             x={cellX + CELL_SIZE / 2}
                             y={CELL_SIZE / 2 + 3}
@@ -147,7 +148,7 @@ export const StaminaHeatmap = ({ data }: Props) => {
             </div>
 
             {/* Legend */}
-            <div className="flex gap-3 px-1 mt-2">
+            <div className={isCompact ? 'flex flex-wrap gap-2 px-1 mt-1' : 'flex gap-3 px-1 mt-2'}>
               {(['correct', 'incorrect', 'skipped'] as const).map(result => (
                 <div key={result} className="flex items-center gap-1">
                   <div

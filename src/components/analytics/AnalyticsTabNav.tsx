@@ -1,36 +1,42 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { useSearchParams } from 'next/navigation'
 import { cn } from '@/lib/utils'
-import { ROUTES } from '@/lib/routes'
-
-const TABS = [
-  { href: ROUTES.dashboard.analytics, label: 'Overview', exact: true },
-  { href: ROUTES.dashboard.analyticsAdvanced, label: 'Deep Insights', exact: false },
-] as const
+import {
+  ANALYTICS_TABS,
+  getAnalyticsTabHref,
+  getAnalyticsTabId,
+} from '@/lib/analytics/tabs'
 
 export const AnalyticsTabNav = () => {
-  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const activeTab = getAnalyticsTabId(searchParams.get('tab'))
 
   return (
-    <nav className="flex gap-1 border-b border-border mb-2" aria-label="Analytics sections">
-      {TABS.map((tab) => {
-        const isActive = tab.exact
-          ? pathname === tab.href
-          : pathname.startsWith(tab.href)
+    <nav
+      className="flex shrink-0 items-end overflow-x-auto border-b border-border px-1 pt-1"
+      aria-label="Analytics sections"
+      data-analytics-primary-nav
+      data-analytics-tab-strip
+    >
+      {ANALYTICS_TABS.map((tab) => {
+        const isActive = activeTab === tab.id
         return (
           <Link
-            key={tab.href}
-            href={tab.href}
+            key={tab.id}
+            href={getAnalyticsTabHref(tab.id)}
+            aria-label={tab.label}
+            aria-current={isActive ? 'page' : undefined}
             className={cn(
-              'px-3 py-2 text-sm font-medium transition-colors duration-150 ease-out border-b-2 -mb-px',
+              'relative inline-flex h-10 shrink-0 items-center justify-center rounded-t-md border px-3 text-sm font-semibold transition-colors duration-150 ease-out focus-visible:z-20 sm:px-4',
               isActive
-                ? 'border-primary text-primary'
-                : 'border-transparent text-muted-foreground hover:text-foreground',
+                ? 'z-10 -mb-px border-border border-b-card bg-card text-foreground shadow-xs'
+                : 'border-transparent border-b-border bg-muted/40 text-muted-foreground hover:border-border hover:bg-muted hover:text-foreground',
             )}
+            data-analytics-tab-link={tab.id}
           >
-            {tab.label}
+            <span>{tab.shortLabel}</span>
           </Link>
         )
       })}

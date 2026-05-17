@@ -14,6 +14,7 @@ import { ROUTES } from '@/lib/routes'
 
 interface SubjectMasteryCardProps {
   data: SubjectMastery[]
+  variant?: 'default' | 'compact'
 }
 
 // ── Mastery color constants ──────────────────────────────────────────────────
@@ -131,9 +132,11 @@ const OUTER_RADIUS = 88
 const RadialHeatmap = ({
   data,
   animated,
+  compact = false,
 }: {
   data: SubjectMastery[]
   animated: boolean
+  compact?: boolean
 }) => {
   const [hovered, setHovered] = useState<number | null>(null)
   const count = data.length
@@ -226,7 +229,7 @@ const RadialHeatmap = ({
                   textAnchor='middle'
                   dominantBaseline='central'
                   fill={isHovered ? 'var(--foreground)' : 'var(--muted-foreground)'}
-                  fontSize={8}
+                  fontSize={compact ? 7 : 8}
                   fontWeight={isHovered ? 600 : 400}
                   style={{ transition: 'fill 150ms ease-out' }}
                 >
@@ -278,10 +281,14 @@ const RadialHeatmap = ({
 
 // ── Main component ───────────────────────────────────────────────────────────
 
-export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
+export const SubjectMasteryCard = ({
+  data,
+  variant = 'default',
+}: SubjectMasteryCardProps) => {
   const [animated, setAnimated] = useState(false)
   const hasData = data.some((d) => d.questionsAnswered > 0 || (d.nodesEncountered && d.nodesEncountered > 0))
   const abovePassing = data.filter((d) => d.mastery >= 70).length
+  const isCompact = variant === 'compact'
 
   useEffect(() => {
     const timer = setTimeout(() => setAnimated(true), 50)
@@ -289,9 +296,18 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
   }, [])
 
   return (
-    <div className='grid grid-rows-3 bg-card rounded-md overflow-hidden h-full p-2 gap-2'>
+    <div
+      className={
+        isCompact
+          ? 'grid h-full min-h-0 grid-cols-[minmax(210px,0.85fr)_minmax(0,1.15fr)] gap-2 overflow-hidden rounded-md bg-card p-2 max-lg:grid-cols-1 max-lg:grid-rows-[minmax(0,0.95fr)_minmax(0,1.05fr)]'
+          : 'grid grid-rows-3 bg-card rounded-md overflow-hidden h-full p-2 gap-2'
+      }
+    >
       {/* ── Radial heatmap section ──────────────────────────────────── */}
-      <div className='rounded-md bg-muted border border-border-design p-3 flex flex-col min-h-0'>
+      <div className={isCompact
+        ? 'rounded-md bg-muted border border-border-design p-2 flex flex-col min-h-0 overflow-hidden'
+        : 'rounded-md bg-muted border border-border-design p-3 flex flex-col min-h-0'
+      }>
         <div className='flex items-center gap-1.5 mb-0.5'>
           <Tooltip>
             <TooltipTrigger asChild>
@@ -305,7 +321,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             </TooltipContent>
           </Tooltip>
         </div>
-        <p className='text-[11px] text-text-tertiary mb-1'>
+        <p className={isCompact ? 'text-[10px] text-text-tertiary mb-1' : 'text-[11px] text-text-tertiary mb-1'}>
           Hover a wedge to see your score
         </p>
 
@@ -328,22 +344,28 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             </Link>
           </div>
         ) : (
-          <div className='w-full max-w-[200px] mx-auto shrink-0'>
-            <RadialHeatmap data={data} animated={animated} />
+          <div className={isCompact ? 'w-full max-w-[168px] mx-auto min-h-0 flex-1' : 'w-full max-w-[200px] mx-auto shrink-0'}>
+            <RadialHeatmap data={data} animated={animated} compact={isCompact} />
           </div>
         )}
       </div>
 
       {/* ── Subject breakdown bars ──────────────────────────────────── */}
-      <div className='row-span-2 rounded-md bg-muted border border-border-design p-3 flex flex-col min-h-0 overflow-hidden'>
+      <div className={isCompact
+        ? 'rounded-md bg-muted border border-border-design p-2 flex flex-col min-h-0 overflow-hidden'
+        : 'row-span-2 rounded-md bg-muted border border-border-design p-3 flex flex-col min-h-0 overflow-hidden'
+      }>
         <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2 shrink-0'>
           [ Breakdown ]
         </h4>
-        <p className='text-[11px] text-text-tertiary mb-2'>
+        <p className={isCompact ? 'text-[10px] text-text-tertiary mb-1' : 'text-[11px] text-text-tertiary mb-2'}>
           Your mastery per subject area
         </p>
 
-        <div className='flex flex-col flex-1 min-h-0 justify-evenly'>
+        <div className={isCompact
+          ? 'flex flex-col flex-1 min-h-0 justify-evenly gap-0.5 overflow-hidden'
+          : 'flex flex-col flex-1 min-h-0 justify-evenly'
+        }>
           {!hasData ? (
             <div className="space-y-4 opacity-50">
               {[1, 2, 3, 4, 5].map((i) => (
@@ -365,14 +387,23 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
               return (
                 <div key={item.subject}>
                   <div className='flex items-center justify-between'>
-                    <span className='text-xs font-medium text-text-primary truncate pr-2'>
+                    <span className={isCompact
+                      ? 'text-[11px] font-medium text-text-primary truncate pr-2'
+                      : 'text-xs font-medium text-text-primary truncate pr-2'
+                    }>
                       {item.subject}
                     </span>
-                    <span className='text-xs font-semibold text-text-primary tabular-nums shrink-0'>
+                    <span className={isCompact
+                      ? 'text-[11px] font-semibold text-text-primary tabular-nums shrink-0'
+                      : 'text-xs font-semibold text-text-primary tabular-nums shrink-0'
+                    }>
                       {clamped}%
                     </span>
                   </div>
-                  <div className='h-1 w-full bg-card rounded-full overflow-hidden border border-border-design'>
+                  <div className={isCompact
+                    ? 'h-0.5 w-full bg-card rounded-full overflow-hidden border border-border-design'
+                    : 'h-1 w-full bg-card rounded-full overflow-hidden border border-border-design'
+                  }>
                     <div
                       className='h-full rounded-full'
                       style={{
@@ -383,7 +414,10 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
                     />
                   </div>
                   <span
-                    className='text-[11px] font-medium block leading-tight'
+                    className={isCompact
+                      ? 'text-[10px] font-medium block leading-tight'
+                      : 'text-[11px] font-medium block leading-tight'
+                    }
                     style={{ color: barColor === MASTERY_COLORS.unexplored ? 'var(--muted-foreground)' : barColor }}
                   >
                     {label}
@@ -395,7 +429,10 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         </div>
 
         {/* Footer */}
-        <div className='pt-2 border-t border-border-design flex items-center justify-between shrink-0'>
+        <div className={isCompact
+          ? 'pt-1 border-t border-border-design flex items-center justify-between shrink-0'
+          : 'pt-2 border-t border-border-design flex items-center justify-between shrink-0'
+        }>
           <p className='text-[11px] text-text-tertiary'>
             {hasData
               ? `${abovePassing} of ${data.length} above passing`

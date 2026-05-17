@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/tooltip'
 import { Card } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
-import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { EmptyState } from '@/components/shared/empty-state'
 import { cn } from '@/lib/utils'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -34,6 +34,7 @@ export interface TimelineHeatmapRow {
 interface TimelineHeatmapProps {
   rows: TimelineHeatmapRow[]
   weekLabels: string[]
+  variant?: 'default' | 'compact'
 }
 
 // ─── Color helpers ────────────────────────────────────────────────────────────
@@ -108,8 +109,13 @@ const LABEL_W = 180
 const ROW_GAP = 2
 const COL_GAP = 2
 
-export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
-  const [range, setRange] = useState<TimeRange>('8w')
+export function TimelineHeatmap({
+  rows,
+  weekLabels,
+  variant = 'default',
+}: TimelineHeatmapProps) {
+  const isCompact = variant === 'compact'
+  const [range, setRange] = useState<TimeRange>(isCompact ? '4w' : '8w')
   const weekCount = getWeekCount(range)
 
   // Slice to the selected range (most recent N weeks)
@@ -145,28 +151,35 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
 
   if (rows.length === 0 || weekLabels.length === 0) {
     return (
-      <ChartEmptyState
+      <EmptyState
+        variant="card"
         title="No study activity yet"
         description="Your study timeline will appear after your first drill session."
-        height="h-[140px]"
+        className={isCompact ? 'p-2' : 'p-4'}
       />
     )
   }
 
   return (
-    <Card className="border-border bg-card p-3 relative">
+    <Card className={cn(
+      'border-border bg-card relative h-full overflow-hidden',
+      isCompact ? 'p-2' : 'p-3',
+    )}>
       <RichInfoPopover
         title="Study Timeline"
         description="Each row is a subject. Each column is a week. Darker cells = more questions answered. Hover for accuracy breakdown."
       />
 
       {/* Header */}
-      <div className="flex items-start justify-between mb-3">
+      <div className={cn(
+        'flex items-start justify-between',
+        isCompact ? 'mb-1.5 gap-2' : 'mb-3',
+      )}>
         <div>
           <h3 className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-text-2">
             Study Timeline
           </h3>
-          <p className="text-xs text-ink-tertiary mt-0.5">
+          <p className={cn('text-ink-tertiary mt-0.5', isCompact ? 'text-[11px]' : 'text-xs')}>
             Weekly activity by subject
           </p>
         </div>
@@ -178,7 +191,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
               key={opt.value}
               onClick={() => setRange(opt.value)}
               className={cn(
-                'px-2.5 py-1 text-[11px] font-medium transition-colors duration-150',
+                'px-2 py-1 text-[11px] font-medium transition-colors duration-150',
                 range === opt.value
                   ? 'bg-camp-cobalt text-white'
                   : 'bg-card text-ink-secondary hover:bg-primary-50',
@@ -191,7 +204,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
       </div>
 
       {/* Heatmap grid */}
-      <div className="overflow-x-auto scrollbar-thin">
+      <div className="min-h-0 overflow-x-auto scrollbar-thin">
         <div style={{ minWidth: LABEL_W + gridW + 16 }}>
           {/* Week column headers */}
           <div className="flex" style={{ paddingLeft: LABEL_W }}>
@@ -291,7 +304,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
           </div>
 
           {/* Legend */}
-          <div className="mt-3 flex items-center justify-end gap-1.5">
+          <div className={cn('flex items-center justify-end gap-1.5', isCompact ? 'mt-1.5' : 'mt-3')}>
             <span className="text-[11px] text-ink-tertiary select-none">Less</span>
             {([0, 1, 2, 3, 4] as Level[]).map((lvl) => (
               <div
