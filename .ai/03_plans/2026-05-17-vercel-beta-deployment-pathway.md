@@ -66,6 +66,8 @@ Checked local Vercel CLI:
 - `vercel project ls` failed with `No existing credentials found`
 - Repo has `vercel.json` with cron definitions already present
 - No `.vercel/project.json` project link exists in the repo root
+- Added `.env.vercel.example` as the payment-free beta environment checklist.
+- Added `scripts/vercel-preview-beta.sh` and `bun run deploy:preview:beta` as a safe preview deploy helper. It refuses to deploy unless Vercel auth and project linking are present, exports `NEXT_PUBLIC_PAYMENTS_ENABLED=false`, and never deploys production.
 
 This means Git-connected Vercel setup still requires Philip's Vercel login/OAuth or a token supplied outside the repo.
 

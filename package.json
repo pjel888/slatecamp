@@ -44,6 +44,7 @@
     "inspect:ui": "bun scripts/inspect-ui.ts",
     "test:visual": "bunx playwright test e2e/visual-login.spec.ts --project=chromium",
     "validate:release": "bun run type-check && bun run lint && bun run check:entitlements && bun audit && bun run build && bun run test:e2e:prod && bun run test:e2e:auth-demo && bun run test:e2e:auth-demo:learning && bun run test:e2e:auth-demo:wiki && bun run test:e2e:auth-demo:restricted && bun run test:e2e:auth-demo:portals && bun run test:e2e:auth-demo:3d-lab && bun run test:e2e:auth-demo:admin-content-admin && bun run test:e2e:auth-demo:admin-sme-reviewer && bun run test:e2e:auth-demo:admin-developer && bun run test:e2e:auth-demo:ceo-portal",
+    "deploy:preview:beta": "scripts/vercel-preview-beta.sh",
     "db:seed": "bun scripts/seed.ts",
     "bones:build": "boneyard-js build http://localhost:3000/dashboard --out ./src/bones",
     "perf:environment": "bun .ai/00_performance/scripts/environment.mjs",
