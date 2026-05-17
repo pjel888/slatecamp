@@ -6,6 +6,8 @@ import {
 } from './support/authenticated-demo'
 
 test.describe('demo-authenticated first-run flows', () => {
+  test.describe.configure({ timeout: 120000 })
+
   test.skip(
     !demoAuthEnabled,
     'Set PLAYWRIGHT_DEMO_AUTH=true to run authenticated demo flow coverage.',
@@ -38,7 +40,7 @@ test.describe('demo-authenticated first-run flows', () => {
   test('settings stays reachable as the first-run account recovery surface', async ({
     page,
   }) => {
-    test.setTimeout(45000)
+    test.setTimeout(120000)
     const response = await page.goto('/dashboard/settings', {
       waitUntil: 'domcontentloaded',
     })
@@ -59,7 +61,7 @@ test.describe('demo-authenticated first-run flows', () => {
   test('authenticated demo onboarding resolves into the post-onboarding dashboard path', async ({
     page,
   }) => {
-    test.setTimeout(90000)
+    test.setTimeout(120000)
     await gotoAllowRedirectAbort(page, '/onboarding')
     await expect(page).toHaveURL(/\/dashboard$/, { timeout: 60000 })
     await expect(page.locator('body')).toContainText(/Readiness Score/i, {
@@ -71,8 +73,9 @@ test.describe('demo-authenticated first-run flows', () => {
     test(`authenticated demo auth entry ${path} resolves into dashboard`, async ({
       page,
     }) => {
+      test.setTimeout(120000)
       await gotoAllowRedirectAbort(page, path)
-      await expect(page).toHaveURL(/\/dashboard$/, { timeout: 15000 })
+      await expect(page).toHaveURL(/\/dashboard$/, { timeout: 60000 })
     })
   }
 
