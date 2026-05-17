@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-05-14T14:33:13.969Z",
+  "timestamp": "2026-05-17T04:13:05.499Z",
   "final": true,
   "mode": "dev-server",
-  "command": "./node_modules/.bin/next dev --port 3217",
-  "rootPid": 70684,
+  "command": "./node_modules/.bin/next dev --port 3327",
+  "rootPid": 89412,
   "label": "dev-server",
   "sampleIntervalMs": 1000,
   "summary": {
     "sampleCount": 2,
-    "maxRssKiB": 184400,
+    "maxRssKiB": 199728,
     "lastRssKiB": 0,
     "maxProcessCount": 2,
     "lastProcessCount": 0
@@ -16,33 +16,33 @@
   "warnings": [],
   "samples": [
     {
-      "timestamp": "2026-05-14T14:33:13.225Z",
-      "elapsedMs": 1067,
-      "rootPid": 70684,
+      "timestamp": "2026-05-17T04:13:04.524Z",
+      "elapsedMs": 1048,
+      "rootPid": 89412,
       "processCount": 2,
-      "rssKiB": 184400,
-      "vszKiB": 890441024,
+      "rssKiB": 199728,
+      "vszKiB": 890437696,
       "topProcesses": [
         {
-          "pid": 70685,
-          "ppid": 70684,
-          "rssKiB": 123504,
-          "vszKiB": 445870032,
+          "pid": 89414,
+          "ppid": 89412,
+          "rssKiB": 125024,
+          "vszKiB": 445870512,
           "command": "next-server (v16.2.3)"
         },
         {
-          "pid": 70684,
-          "ppid": 70683,
-          "rssKiB": 60896,
-          "vszKiB": 444570992,
+          "pid": 89412,
+          "ppid": 89408,
+          "rssKiB": 74704,
+          "vszKiB": 444567184,
           "command": "node"
         }
       ]
     },
     {
-      "timestamp": "2026-05-14T14:33:13.969Z",
-      "elapsedMs": 1810,
-      "rootPid": 70684,
+      "timestamp": "2026-05-17T04:13:05.485Z",
+      "elapsedMs": 2009,
+      "rootPid": 89412,
       "processCount": 0,
       "rssKiB": 0,
       "vszKiB": 0,
