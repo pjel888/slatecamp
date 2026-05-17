@@ -1,5 +1,7 @@
 # Findings Register
 
+**Note:** This register was created before the 2026-05-17 .ai/ reorganization. Some evidence paths and plan references may point to pre-reorg locations. See `../00_system/ai-folder-canonical-map.md` for current routing. A dedicated reconciliation pass is needed to verify each finding against the live tree.
+
 Status values: `open`, `planned`, `validated`, `deferred`
 
 | ID | Area | Title | Severity | Priority | Confidence | Evidence | Root cause | Impact | Recommended plan reference | Status |

@@ -1,5 +1,7 @@
 # Cleanup Findings Register
 
+**Note:** This register was created before the 2026-05-17 .ai/ reorganization and the Plan B cleanup. Some evidence paths and referenced files may no longer exist. See `../00_system/ai-folder-canonical-map.md` for current routing. A dedicated reconciliation pass is needed to verify each finding against the live tree.
+
 Status values: `open`, `planned`, `validated`, `deferred`
 
 | Finding ID | Area | Title | Severity | Priority | Confidence | Evidence paths | Problem | Root cause | Impact if left alone | Recommended cleanup plan reference | Status |

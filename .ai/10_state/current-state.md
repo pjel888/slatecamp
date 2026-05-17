@@ -55,7 +55,7 @@ The application-layer P0 remediation is validated. The full validation gate pass
 
 1. Safe non-production Supabase verification target is unavailable.
 2. Docker was unavailable in the last verification environment.
-3. `supabase/config.toml` is missing.
+3. `supabase/config.toml` exists but has not been verified for production readiness.
 4. The 101 active migrations have not been replay-verified locally or in staging.
 5. AI audit restriction migration has not been DB-verified:
    - `supabase/migrations/20260505145349_restrict_ai_audit_admin_access.sql`
