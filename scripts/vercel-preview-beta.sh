@@ -37,8 +37,9 @@ fi
 export NEXT_PUBLIC_PAYMENTS_ENABLED=false
 
 echo "Creating payment-free beta preview deployment..."
+DEPLOY_ARGS=(deploy --archive=tgz --target=preview)
 if [[ ${#TOKEN_ARGS[@]} -gt 0 ]]; then
-  "${VERCEL_CMD[@]}" deploy "${TOKEN_ARGS[@]}"
+  "${VERCEL_CMD[@]}" "${DEPLOY_ARGS[@]}" "${TOKEN_ARGS[@]}"
 else
-  "${VERCEL_CMD[@]}" deploy
+  "${VERCEL_CMD[@]}" "${DEPLOY_ARGS[@]}"
 fi
