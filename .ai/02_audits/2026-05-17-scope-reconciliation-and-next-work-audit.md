@@ -1,9 +1,9 @@
 # Scope Reconciliation and Next Work Audit — 2026-05-17
 
-**Status:** Read-only reconciliation report; no source remediation performed.  
-**Repo:** `/Users/philiplewis/slatecamp`  
-**Branch:** `fix/wiki-article-render-failure`  
-**Audit time:** 2026-05-17 12:08 PST  
+**Status:** Read-only reconciliation report; no source remediation performed.
+**Repo:** `/Users/philiplewis/slatecamp`
+**Branch:** `fix/wiki-article-render-failure`
+**Audit time:** 2026-05-17 12:08 PST
 **Canonical destination:** `.ai/02_audits/` per `.ai/00_system/ai-folder-canonical-map.md`.
 
 ---

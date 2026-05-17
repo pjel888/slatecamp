@@ -1,6 +1,6 @@
 # Lighting Room Simulator Implementation Evidence
 
-Date: 2026-05-15 UTC  
+Date: 2026-05-15 UTC
 Status: hidden-QA implementation complete; learner legal release remains source-gated.
 
 ## Implemented Surface
