@@ -16,136 +16,183 @@ export interface PricingTier {
   ctaHref: string
 }
 
-// ─── VIEW 1: FOR INDIVIDUALS / REVIEWERS ─────────────────────────────────────
+// ─── VIEW 1: STUDENTS / GRADUATES ─────────────────────────────────────────────
 
-export const INDIVIDUAL_TIERS: PricingTier[] = [
+export const STUDENT_GRADUATE_TIERS: PricingTier[] = [
   {
-    id: 'free',
-    tierName: 'Free',
-    subtitle: 'The Starter Atlas',
-    targetAudience: '1st to 4th-year architecture students',
+    id: 'student-free',
+    tierName: 'Trailhead',
+    subtitle: 'Free starter camp',
+    targetAudience: 'Architecture students beginning their LEA review trail',
     price: '₱0',
-    priceSubtext: 'Ad-Supported',
-    hook: 'Build the habit before exam day.',
+    priceSubtext: '/ month',
+    hook: 'Start the map, try the basics, and build the review habit.',
     features: [
-      'Unlimited access to the Wiki',
-      'Quiz (basic feedback quizzing)',
-    ],
-    limits: [
-      'No analytics',
-      'No saved review schedule',
-      'No 3D Lab',
-      'No AI Tutor',
+      'Architecture wiki and code explainers',
+      'Starter quiz access with basic answer feedback',
+      'Selected visual explainers and sample tools',
+      'Upgrade when you need schedules, deeper analytics, and 3D Lab access',
     ],
     highlighted: false,
-    ctaLabel: 'Start Free',
+    ctaLabel: 'Start at Trailhead',
     ctaHref: '/register',
   },
   {
-    id: 'pro',
-    tierName: 'Pro',
-    subtitle: 'The Atlas Workspace',
-    targetAudience: 'Architecture students and board-season learners',
+    id: 'student-pro',
+    tierName: 'Basecamp',
+    subtitle: 'Board-season workspace',
+    targetAudience: 'Graduates and LEA takers who want the full review workspace',
     price: '₱499',
     priceSubtext: '/ month',
-    hook: 'Organize resources, visuals, and practice in one place.',
+    hook: 'Set up camp with notes, visuals, quizzes, and next steps in one calmer place.',
     features: [
+      'Everything in Trailhead',
       'Ad-free atlas workspace',
-      'Saved review schedule',
-      '3D Lab access — interactive visual models',
-      'Personal Notes Workspace',
+      'Saved review schedule and personal notes',
+      '3D Lab access for visual code and planning topics',
+      'Progress and weak-topic signals for what to revisit',
     ],
     highlighted: true,
-    ctaLabel: 'Go Pro',
+    ctaLabel: 'Enter Basecamp',
     ctaHref: '/register',
   },
   {
-    id: 'prime',
-    tierName: 'Prime',
-    subtitle: 'Guided Readiness',
-    targetAudience: 'Learners who want deeper diagnostics',
+    id: 'student-prime',
+    tierName: 'Summit Atlas',
+    subtitle: 'Guided readiness',
+    targetAudience: 'Board exam takers who want deeper diagnostics and guidance',
     price: '₱999',
     priceSubtext: '/ month',
-    hook: 'More signals for what to repair next.',
+    hook: 'Climb with a clearer map of what is still weak before mock exams expose it.',
     features: [
-      'Everything in Pro',
-      'Readiness map — weak-topic guidance',
-      'Timed Quiz — exam-style pacing',
-      'AI Tutor (Basic) — 10k monthly tokens',
+      'Everything in Basecamp',
+      'Readiness map with subject and weak-topic guidance',
+      'Timed Quiz for exam-style pacing',
+      'AI Tutor Basic for guided explanations and review prompts',
+      'More detailed review signals after practice sessions',
     ],
     highlighted: false,
-    ctaLabel: 'Go Prime',
+    ctaLabel: 'Open Summit Atlas',
     ctaHref: '/register',
   },
-  {
-    id: 'institutional',
-    tierName: 'Institutional',
-    subtitle: 'The "Professional Edge"',
-    targetAudience: 'Licensed Architects & Firms',
-    price: '₱1499',
-    priceSubtext: '/ month',
-    hook: 'Your pocket reference for professional practice.',
-    features: [
-      'Everything in Prime',
-      'Unlimited AI Tutor — ask complex code & spec questions',
-      'Advanced Spatial Tools — 3D setback calculators',
-    ],
-    highlighted: false,
-    ctaLabel: 'Go Institutional',
-    ctaHref: '/register',
-  },
-  {
-    id: 'enterprise',
-    tierName: 'Enterprise',
-    subtitle: 'The "Ecosystem Partner"',
-    targetAudience: 'Organizations & large teams',
-    price: 'Custom',
-    priceSubtext: 'Annual Contract',
-    hook: 'Full platform access for your organization.',
-    features: [
-      'Everything in Institutional',
-      'Dedicated account management',
-      'Custom integrations & API access',
-      'Priority support & SLA',
-    ],
-    highlighted: false,
-    ctaLabel: 'Contact Sales',
-    ctaHref: '/contact',
-  },
+
 ]
 
-// ─── VIEW 2: FOR STUDENTS / TEACHERS (EDUCATIONAL) ───────────────────────────
+export const STUDENT_GRADUATE_ANNUAL_TIERS: PricingTier[] = STUDENT_GRADUATE_TIERS.map((tier) => {
+  if (tier.id === 'student-pro') {
+    return {
+      ...tier,
+      id: 'student-pro-annual',
+      price: '₱4,990',
+      originalPrice: '₱5,988',
+      priceSubtext: '/ year',
+      hook: 'Set your board-season basecamp for the year and save compared with monthly access.',
+      features: [
+        ...tier.features,
+        'Annual access priced for a full review season',
+      ],
+    }
+  }
 
-export const EDUCATIONAL_TIERS: PricingTier[] = [
+  if (tier.id === 'student-prime') {
+    return {
+      ...tier,
+      id: 'student-prime-annual',
+      price: '₱9,990',
+      originalPrice: '₱11,988',
+      priceSubtext: '/ year',
+      hook: 'Keep the Summit Atlas open across mock exams, review cycles, and final repair passes.',
+      features: [
+        ...tier.features,
+        'Annual access for longer review arcs and retakers',
+      ],
+    }
+  }
+
+  return {
+    ...tier,
+    id: 'student-free-annual',
+    priceSubtext: 'always free',
+    hook: 'Start the map for free, then upgrade when your review season needs a fuller camp.',
+  }
+})
+
+// Legacy export for existing consumers / stories.
+export const INDIVIDUAL_TIERS = STUDENT_GRADUATE_TIERS
+
+// ─── VIEW 2: PROFESSIONALS ────────────────────────────────────────────────────
+
+export const PROFESSIONAL_TIERS: PricingTier[] = [
   {
-    id: 'edu-pro',
-    tierName: 'Educational — Pro',
-    subtitle: 'The "Cohort License"',
-    targetAudience: 'Universities & academic cohorts',
+    id: 'professional-reference',
+    tierName: 'Field Atlas',
+    subtitle: 'Practice reference',
+    targetAudience: 'Licensed architects, apprentices, and small studios',
+    price: '₱1,499',
+    priceSubtext: '/ month',
+    hook: 'Use SlateCamp as a field guide for code, specification, and spatial checks in practice.',
+    features: [
+      'Everything in Summit Atlas',
+      'Advanced 3D Lab and spatial calculators',
+      'Unlimited AI Tutor for code, planning, and specification questions',
+      'Professional notes workspace for recurring references',
+      'Useful for quick internal refreshers, not a substitute for signed professional judgment',
+    ],
+    highlighted: true,
+    ctaLabel: 'Open Field Atlas',
+    ctaHref: '/register',
+  },
+
+]
+
+export const PROFESSIONAL_ANNUAL_TIERS: PricingTier[] = PROFESSIONAL_TIERS.map((tier) => ({
+  ...tier,
+  id: 'professional-reference-annual',
+  price: '₱14,990',
+  originalPrice: '₱17,988',
+  priceSubtext: '/ year',
+  hook: 'Keep a Field Atlas available for recurring code, specification, and spatial checks all year.',
+  features: [
+    ...tier.features,
+    'Annual practice-reference access for studios and recurring project checks',
+  ],
+}))
+
+// ─── VIEW 3: INSTITUTIONAL ────────────────────────────────────────────────────
+
+export const INSTITUTIONAL_TIERS: PricingTier[] = [
+  {
+    id: 'institutional-cohort',
+    tierName: 'Campus Basecamp',
+    subtitle: 'Cohort license',
+    targetAudience: 'Architecture schools, review groups, and academic cohorts',
     price: '₱1,440',
     originalPrice: '₱1,800',
-    priceSubtext: '/ seat / cycle (Min. 50 seats)',
-    hook: 'Give your cohort clearer learning signals.',
+    priceSubtext: '/ seat / cycle · min. 50 seats',
+    hook: 'Give a whole cohort the same organized camp map, practice path, and visual tools.',
     features: [
-      'Full Pro access for all enrolled students',
-      'Instructor Dashboard — view aggregate batch weak points to adjust live lectures',
+      'Full Basecamp access for enrolled learners',
+      'Instructor dashboard for aggregate weak-topic visibility',
+      'Cohort onboarding and access coordination',
+      'Useful beside studio, lectures, review-center sessions, books, and mentors',
     ],
     highlighted: false,
     ctaLabel: 'Contact Sales',
     ctaHref: '/contact',
   },
   {
-    id: 'edu-institutional',
-    tierName: 'Educational — Institutional',
-    subtitle: 'The "Digital Curriculum Partner"',
-    targetAudience: 'Academic partners and institutional teams',
+    id: 'institutional-partner',
+    tierName: 'Atlas Partner',
+    subtitle: 'Digital curriculum partner',
+    targetAudience: 'Schools and review organizations that need deeper platform support',
     price: 'Custom',
-    priceSubtext: 'Volume Pricing + Setup Fee',
-    hook: 'A structured digital practice and resource workspace.',
+    priceSubtext: 'volume pricing + setup',
+    hook: 'Build a structured atlas layer around your own teaching flow.',
     features: [
-      'Everything in Educational — Pro',
-      `Co-Branding ("${siteConfig.name} powered by [Your Name]")`,
-      'Question Builder — instructors add their own questions and assignments',
+      'Everything in Campus Basecamp',
+      `Co-branding options such as "${siteConfig.name} powered by [Your School]"`,
+      'Question Builder for instructor-authored practice and assignments',
+      'Custom onboarding, cohort reporting, and support cadence',
     ],
     highlighted: true,
     ctaLabel: 'Contact Sales',
@@ -153,43 +200,33 @@ export const EDUCATIONAL_TIERS: PricingTier[] = [
   },
 ]
 
-// ─── VIEW 3: FOR ORGANIZATIONS (ENTERPRISE) ──────────────────────────────────
+// Legacy export for existing consumers.
+export const EDUCATIONAL_TIERS = INSTITUTIONAL_TIERS
 
-export const ENTERPRISE_TIERS: PricingTier[] = [
+// ─── VIEW 4: CORPORATE ────────────────────────────────────────────────────────
+
+export const CORPORATE_TIERS: PricingTier[] = [
   {
-    id: 'enterprise-pro',
-    tierName: 'Enterprise — Pro',
-    subtitle: 'The "Brand Sponsor"',
-    targetAudience: 'Construction material suppliers and product teams',
-    price: 'Custom',
-    priceSubtext: 'High-Ticket Monthly Retainer',
-    hook: 'Support architecture learners with relevant educational placements.',
+    id: 'corporate-partner',
+    tierName: 'Summit Sponsor',
+    subtitle: 'Access + scholarship seats',
+    targetAudience: 'Architecture firms, AEC teams, suppliers, and industry partners',
+    price: 'Contact for pricing',
+    hook: 'Equip your team and sponsor the next climbers on the SlateCamp trail.',
     features: [
-      'Native, seamless ad placements within the Free tier',
-      '3D Lab Product Placement — sponsored plumbing/structural systems with catalog links',
-    ],
-    highlighted: false,
-    ctaLabel: 'Contact Sales',
-    ctaHref: '/contact',
-  },
-  {
-    id: 'enterprise-institutional',
-    tierName: 'Enterprise — Institutional',
-    subtitle: 'The "Ecosystem & Recruitment Partner"',
-    targetAudience: 'Top-tier architectural & engineering firms',
-    price: 'Custom',
-    priceSubtext: 'Annual Contract',
-    hook: 'Connect with opt-in architecture learners and professionals.',
-    features: [
-      'Everything in Enterprise — Pro',
-      'Recruitment Pipeline — opt-in interest forms with clear consent boundaries',
-      'Corporate Training Mode — internal code-compliance & specification tooling',
+      'Full SlateCamp access for purchased team or partner seats',
+      'For every paid seat bought, SlateCamp grants 1 scholarship seat',
+      'Scholarship seats go to partner schools plus students and board exam takers who apply for access',
+      'Scholarship recipients receive access to all SlateCamp features during the approved scholarship period',
+      'Optional corporate training mode for internal code, specification, and product-learning workflows',
+      'Clear consent boundaries for any recruitment, sponsorship, or brand-placement programs',
     ],
     highlighted: true,
-    ctaLabel: 'Contact Sales',
+    ctaLabel: 'Contact for Pricing',
     ctaHref: '/contact',
   },
 ]
 
 // Legacy re-export for any components that still reference ORGANIZATION_TIERS
-export const ORGANIZATION_TIERS = [...EDUCATIONAL_TIERS, ...ENTERPRISE_TIERS]
+export const ENTERPRISE_TIERS = CORPORATE_TIERS
+export const ORGANIZATION_TIERS = [...INSTITUTIONAL_TIERS, ...CORPORATE_TIERS]

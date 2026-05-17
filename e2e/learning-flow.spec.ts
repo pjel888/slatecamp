@@ -3,6 +3,7 @@ import {
   authenticatedDemoTest as test,
   demoAuthEnabled,
 } from './support/authenticated-demo'
+import { dragSliderToSubmit } from './support/quiz-gestures'
 
 test.describe('demo-auth learning flow', () => {
   test.skip(
@@ -11,25 +12,25 @@ test.describe('demo-auth learning flow', () => {
   )
 
   const selectAllDemoSubjects = async (page: Page) => {
-    await page.getByRole('button', { name: /Add All/i }).click()
-    const targetingText = page.getByText(/Targeting 2 subjects/i)
-
-    try {
-      await expect(targetingText).toBeVisible({ timeout: 10_000 })
-      return
-    } catch {
-      for (const subjectName of [/Building Code/i, /Structures/i]) {
-        const subjectButton = page.getByRole('button', { name: subjectName })
-        if ((await subjectButton.getAttribute('aria-pressed')) !== 'true') {
-          await subjectButton.click({ force: true })
-        }
-      }
-    }
-
-    await expect(targetingText).toBeVisible({ timeout: 10_000 })
+    await page.getByRole('button', { name: /Add all/i }).click()
+    await expect(page.getByText(/Subjects selected/i)).toBeVisible({ timeout: 10_000 })
+    await expect(page.getByText(/^2$/).first()).toBeVisible({ timeout: 10_000 })
   }
 
-  test('canceling a ready but unentered session does not create a resume CTA', async ({
+  const openQuizBuilder = async (page: Page) => {
+    await expect(
+      page.getByRole('heading', { name: /Choose a quiz mode/i }),
+    ).toBeVisible({ timeout: 30_000 })
+    const buildQuizButton = page.getByRole('button', { name: /Build quiz/i })
+    const box = await buildQuizButton.boundingBox()
+    if (!box) throw new Error('Build quiz button is not visible')
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2)
+    await expect(
+      page.getByRole('heading', { name: /Build SlateCamp Quiz/i }),
+    ).toBeVisible({ timeout: 30_000 })
+  }
+
+  test('quiz builder opens and returns to mode selection without starting a session', async ({
     page,
   }) => {
     test.setTimeout(90000)
@@ -41,29 +42,12 @@ test.describe('demo-auth learning flow', () => {
     await expect(
       page.getByRole('navigation', { name: 'Main navigation' }),
     ).toBeVisible({ timeout: 30_000 })
-    await expect(
-      page.getByRole('heading', { name: /Configure your quiz/i }),
-    ).toBeVisible()
-
-    await page.waitForTimeout(5000)
-    await selectAllDemoSubjects(page)
-    await page.getByLabel(/Slide to start quiz/i).press('Enter')
+    await openQuizBuilder(page)
+    await page.getByRole('button', { name: /^Close$/ }).click()
 
     await expect(
-      page.getByRole('heading', { name: /Quiz Ready/i }),
-    ).toBeVisible({ timeout: 20000 })
-    await page.getByRole('button', { name: /^Cancel$/ }).click()
-
-    await expect(
-      page.getByRole('heading', { name: /Configure your quiz/i }),
-    ).toBeVisible()
-    await page.reload({ waitUntil: 'domcontentloaded' })
-    await expect(
-      page.getByRole('heading', { name: /Configure your quiz/i }),
-    ).toBeVisible()
-    await expect(
-      page.getByRole('link', { name: /Resume quiz/i }),
-    ).toHaveCount(0)
+      page.getByRole('heading', { name: /Choose a quiz mode/i }),
+    ).toBeVisible({ timeout: 10_000 })
   })
 
   test('quiz hub launches a custom session and supports one answer submission', async ({
@@ -79,21 +63,11 @@ test.describe('demo-auth learning flow', () => {
     await expect(
       page.getByRole('navigation', { name: 'Main navigation' }),
     ).toBeVisible({ timeout: 30_000 })
-    await expect(
-      page.getByRole('heading', { name: /Build mastery with one focused quiz/i }),
-    ).toBeVisible()
-    await expect(
-      page.getByRole('heading', { name: /Configure your quiz/i }),
-    ).toBeVisible()
+    await openQuizBuilder(page)
 
     await page.waitForTimeout(5000)
     await selectAllDemoSubjects(page)
-    await page.getByLabel(/Slide to start quiz/i).press('Enter')
-
-    await expect(
-      page.getByRole('heading', { name: /Quiz Ready/i }),
-    ).toBeVisible({ timeout: 20000 })
-    await page.getByRole('button', { name: /Enter Quiz/i }).click()
+    await dragSliderToSubmit(page, page.getByTestId('quiz-start-slider'))
 
     await expect(page).toHaveURL(/\/dashboard\/quiz\/session\//, {
       timeout: 60000,
@@ -101,12 +75,15 @@ test.describe('demo-auth learning flow', () => {
     await expect(
       page.getByRole('heading', { name: /Question 1/i }),
     ).toBeVisible({ timeout: 30000 })
-    await expect(page.getByLabel(/Slide to submit/i)).toBeVisible({
+    await expect(page.getByTestId('quiz-submit-slider')).toBeVisible({
       timeout: 30000,
     })
 
     await page.getByRole('radio', { name: /Option A:/ }).check({ force: true })
-    await page.getByLabel(/Slide to submit/i).press('Enter')
+    await expect(page.getByRole('radio', { name: /Option A:/ })).toBeChecked()
+    await dragSliderToSubmit(page, page.getByTestId('quiz-submit-slider'), {
+      waitForLabel: /Checking your answer|Answer checked/i,
+    })
 
     await expect(
       page.getByRole('button', { name: /^Next question$|^See results$/ }).first(),

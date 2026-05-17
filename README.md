@@ -55,7 +55,7 @@ Internal developer AI is a separate local-tooling boundary: SlateCamp developer 
 
 
 ## Complete Route Map
-The current App Router surface has **118 `page.tsx` routes** after restoring Quiz under the dashboard shell plus the prior tools/calculators consolidation. Redirect-only legacy pages removed or converted in this pass include `/settings`, `/test-3d`, `/admin/wiki`, `/dashboard/heatmap`, `/dashboard/trail`, `/dashboard/trails`, `/dashboard/settings/billing`, `/dashboard/settings/developer`, the former `/calculators/*` pages, and `/quiz/*` redirect wrappers; `/dashboard/quiz` is now the canonical quiz hub and `/tools` is the canonical public utility namespace. See `.ai/routes.md` for layout/loading/error-boundary inventories.
+The current App Router surface has **118 `page.tsx` routes** after restoring Quiz under the dashboard shell plus the prior tools/calculators consolidation. Redirect-only legacy pages removed or converted in this pass include `/settings`, `/test-3d`, `/admin/wiki`, `/dashboard/heatmap`, `/dashboard/trail`, `/dashboard/trails`, `/dashboard/settings/billing`, `/dashboard/settings/developer`, the former `/calculators/*` pages, and `/quiz/*` redirect wrappers; `/dashboard/quiz` is now the canonical quiz hub and `/tools` is the canonical public utility namespace. See `.ai/06_specs/routes--map--v2.md` for layout/loading/error-boundary inventories.
 
 | Route | Type | File | Access | Purpose | Key Features | Data/API Dependencies | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -188,7 +188,7 @@ The current App Router server surface has **11 route handlers** under `src/app`.
 | /api/webhooks/payrex | POST | src/app/api/webhooks/payrex/route.ts | PayRex billing webhook. | POST raw body with PayRex signature header. | JSON receipt/idempotency/error. | Signature verification; payments flag. | user_subscriptions and processed_webhook_events. | PAYREX_WEBHOOK_SECRET |
 | /auth/callback | GET | src/app/auth/callback/route.ts | Supabase OAuth/email callback; exchanges code and validates safe relative `next`. | GET query `code`, `next`, optional UTM/source params. | Redirect to next/dashboard/login error. | Public callback; demo redirects without exchange. | Supabase auth, UTM attribution, analytics event. | — |
 
-Server actions and query modules live primarily in `src/lib/actions/` and `src/lib/queries/`; the detailed generated inventory is maintained in `.ai/api-and-server.md`.
+Server actions and query modules live primarily in `src/lib/actions/` and `src/lib/queries/`; the detailed generated inventory is maintained in `.ai/06_specs/api-and-server--spec--v2.md`.
 
 ## Tech Stack
 
@@ -219,7 +219,7 @@ Server actions and query modules live primarily in `src/lib/actions/` and `src/l
 
 ## Data Models and Domain Entities
 
-The schema snapshot is `DATABASE_SCHEMA.sql`; migrations live under `supabase/migrations/` (92 SQL files). The audit found 76 schema tables. The README lists every table at a concise level; `.ai/data-models.md` includes field counts and representative fields for every table.
+The schema snapshot is `DATABASE_SCHEMA.sql`; migrations live under `supabase/migrations/` (92 SQL files). The audit found 76 schema tables. The README lists every table at a concise level; `.ai/06_specs/data-models--spec--v2.md` includes field counts and representative fields for every table.
 
 ### Domain families
 
@@ -316,7 +316,7 @@ The schema snapshot is `DATABASE_SCHEMA.sql`; migrations live under `supabase/mi
 | `processed_webhook_events` | Operations/notifications | Webhook idempotency ledger by provider/event/type. |
 | `user_question_states` | Quiz/mastery/readiness | Per-user/per-question rollup of last seen/correct and aggregate attempts/time. |
 
-See `.ai/data-models.md` for representative fields, relationship notes, and implementation pointers.
+See `.ai/06_specs/data-models--spec--v2.md` for representative fields, relationship notes, and implementation pointers.
 
 
 ## Authentication and Access Control
@@ -353,7 +353,7 @@ Removed/deferred: LemonSqueezy runtime code, webhook route, test, dependency, an
 
 ## IP-Relevant / Proprietary Implementations
 
-This is an implementation inventory only, not a legal conclusion. See `.ai/ip-inventory.md` for full details.
+This is an implementation inventory only, not a legal conclusion. See `.ai/06_specs/ip-inventory--spec--v1.md` for full details.
 
 
 | IP-Relevant Item | Category | Status | Key Files | Why It Matters |
@@ -389,7 +389,7 @@ This is an implementation inventory only, not a legal conclusion. See `.ai/ip-in
 | Audit verification | This documentation audit ran inventory generation, `bun run test` (623 pass / 0 fail across 74 files), `bun run type-check` (pass), `bun run lint` (pass), `bun run check:storybook` (pass), `bun run design:lint` (0 errors / 10 warnings), and `git diff --check` (pass). `bun run build` was attempted but refused to start because an existing Next dev server process was alive. |
 
 
-Key commands: `bun run type-check`, `bun run lint`, `bun run test`, `bun run test:e2e:smoke`, `bun run build`, `bun run design:lint`. See `.ai/testing.md` for full test inventory.
+Key commands: `bun run type-check`, `bun run lint`, `bun run test`, `bun run test:e2e:smoke`, `bun run build`, `bun run design:lint`. See `.ai/06_specs/testing--spec--v2.md` for full test inventory.
 
 
 ## Development Setup
@@ -528,7 +528,7 @@ Prior audits observed names in local env files that are not referenced by curren
 
 ## Pre-launch Readiness / Cleanup Status
 
-A pre-launch cleanup analysis was added on 2026-04-29. The recommended default is **Plan B — Recommended pre-launch cleanup**: protect the core learner loop and admin content operations, remove pre-launch legacy compatibility paths, consolidate duplicate route families, hide/defer optional experiments, and choose a single payment/AI stance before launch. Detailed plans live in `.ai/prelaunch-readiness.md`, `.ai/cleanup-plan.md`, `.ai/legacy-retirement-plan.md`, `.ai/do-not-maintain.md`, `.ai/launch-cutline.md`, and `.ai/risk-register.md`.
+A pre-launch cleanup analysis was added on 2026-04-29. The recommended default is **Plan B — Recommended pre-launch cleanup**: protect the core learner loop and admin content operations, remove pre-launch legacy compatibility paths, consolidate duplicate route families, hide/defer optional experiments, and choose a single payment/AI stance before launch. Detailed plans live in `.ai/03_plans/`. See specific plan subfolders: `general--launch/` (launch scope), `general--cleanup/` (cleanup plans), `general--codebase/` (legacy retirement), `02_audits/2026-04-29--launch--audit--prelaunch-readiness.md` (pre-launch assessment). Also see `.ai/10_state/risk-register--state--v1.md` (risk tracking) and `.ai/00_system/do-not-maintain--policy--v1.md`.
 
 ## Known Issues and Gaps
 | Issue/GAP | Evidence | Severity | Recommended action |
@@ -538,7 +538,7 @@ A pre-launch cleanup analysis was added on 2026-04-29. The recommended default i
 | Route surface is still broad | Current route count is 105 after shim removal; CEO/developer/studio/professional/pods/result-day/DAE surfaces remain gated/internal/optional rather than deleted. | Medium | Product/founder cutline decision before final public launch nav polish. |
 | Live AI provider behavior deferred | `/api/ai/*` routes support provider-backed paths through `src/lib/ai/provider.ts`; launch-facing quiz AI helper UI is disabled in `src/components/quiz-v2/FeedbackPanel.tsx`. | Deferred post-launch for public learner AI | Do not require OpenRouter/OpenAI/Anthropic app-runtime keys for current learner-facing launch. When learner/user AI is enabled, OpenRouter is the preferred app/runtime provider. Developer AI remains Codex-first. |
 | Full release/performance matrix not fully run | Core commands passed (`test`, `type-check`, `lint`, `check:storybook`, `design:lint`, `build`, `test:e2e:prod`, `check:entitlements`, `perf:3d:gates`), but full `test:e2e`, `validate:release`, and `perf:all` were intentionally not run in this cleanup pass. | Medium | Run the full matrix before release if time/CI capacity allows. |
-| Pre-existing dirty source changes remain outside this cleanup | Dirty provenance logged in `.ai/cleanup-execution-log.md` before source edits. | Medium | Review landing/sidebar/3D Lab pre-existing diffs separately before commit. |
+| Pre-existing dirty source changes remain outside this cleanup | Dirty provenance logged in `.ai/05_logs/2026-04-29--cleanup--log--execution.md` before source edits. | Medium | Review landing/sidebar/3D Lab pre-existing diffs separately before commit. |
 
 ## Important Files and Directories
 
@@ -558,23 +558,24 @@ A pre-launch cleanup analysis was added on 2026-04-29. The recommended default i
 
 ## Documentation / AI Context
 
-Current root `.ai` docs generated/updated by this audit:
+Current `.ai` docs:
 
-- `.ai/project-overview.md`
-- `.ai/features.md`
-- `.ai/routes.md`
-- `.ai/architecture.md`
-- `.ai/api-and-server.md`
-- `.ai/data-models.md`
-- `.ai/ip-inventory.md`
-- `.ai/testing.md`
-- `.ai/environment.md`
-- `.ai/integrations.md`
-- `.ai/ui-design-system.md`
-- `.ai/security.md`
-- `.ai/known-issues.md`
-- `.ai/codebase-map.md`
-- `.ai/audit-log.md`
+- `.ai/06_specs/project-overview--spec--v2.md`
+- `.ai/06_specs/features--inventory--v2.md`
+- `.ai/06_specs/routes--map--v2.md`
+- `.ai/06_specs/architecture--spec--v3.md`
+- `.ai/06_specs/api-and-server--spec--v2.md`
+- `.ai/06_specs/data-models--spec--v2.md`
+- `.ai/06_specs/ip-inventory--spec--v1.md`
+- `.ai/06_specs/testing--spec--v2.md`
+- `.ai/06_specs/environment--spec--v2.md`
+- `.ai/06_specs/integrations--spec--v2.md`
+- `.ai/06_specs/ui-design-system--spec--v2.md`
+- `.ai/06_specs/security--spec--v2.md`
+- `.ai/10_state/known-issues--state--v1.md`
+- `.ai/06_specs/codebase-map--spec--v2.md`
+- `.ai/05_logs/2026-04-29--repo--log--audit.md`
+- See `.ai/README.md` for full numbered-folder inventory and naming conventions.
 
 ## Last Audit
 

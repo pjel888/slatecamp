@@ -1,0 +1,50 @@
+{
+  "question_id": "c27332ae-e3c0-4911-83c4-7c092693c2f2",
+  "action": "add_new",
+  "reason": "New linked question for Door Hinges and Architectural Hardware article assessment bridge.",
+  "parent_article_id": "NEW_ARTICLE_DOOR_HINGES_ARCHITECTURAL_HARDWARE_TBD",
+  "parent_article_slug": "door-hinges-and-architectural-hardware",
+  "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+  "objective": "Classify protection and operation hardware.",
+  "source_audit_support": {
+    "support_status": "source_safe_textbook_construction_reference",
+    "source_locator": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "claim_boundary": "Construction terminology and hardware-selection concepts only; not presented as Philippine legal/code mandate unless separately governed by applicable codes/specifications."
+  },
+  "proposed": {
+    "text": "A school corridor door has a metal plate on the lower face to resist scuffs and impact from foot traffic and cleaning equipment. Which hardware item is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Kick plate"
+      },
+      {
+        "id": "b",
+        "text": "Strike"
+      },
+      {
+        "id": "c",
+        "text": "Threshold"
+      },
+      {
+        "id": "d",
+        "text": "Cylinder"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "summary": "A kick plate protects the lower part of the door leaf from impact and wear.",
+      "explanation": "The function in the stem is surface protection. A strike receives a latch; a threshold treats the floor/sill transition; a cylinder is part of lock operation/security.",
+      "takeaway": "Lower-face protection from scuffs = kick plate."
+    },
+    "explanation": "A kick plate protects the lower part of the door leaf from impact and wear.",
+    "code_citation": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "bloom_level": "understand",
+    "difficulty": 0.38,
+    "practice_context": [
+      "door_hardware",
+      "building_materials_and_construction",
+      "lea_board_review"
+    ]
+  }
+}

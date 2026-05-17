@@ -6,8 +6,10 @@ Status rules:
 - `IDEA` = requested but not scoped.
 - `RESEARCH` = source inventory and standards comparison in progress.
 - `PLANNING` = PRD/readiness/audit docs drafted.
+- `DOC_READY` = planning pack is complete enough to guide implementation, but code may still be blocked by named gates.
+- `CODE_NO_GO` = code should not start until the named pre-code gates are resolved, even if the documentation pack is otherwise ready.
 - `SOURCE_LOCATOR_READY` = every code/legal value has raw source path, hash, section/page locator, and extracted quote.
-- `CONDITIONAL_GO` = can start hidden QA implementation only; learner release remains blocked.
+- `CONDITIONAL_GO` = can start hidden QA implementation only; learner release still requires SME/source release gates.
 - `NO_GO` = implementation should not start.
 - `BUILT_QA` = hidden/dashboard QA implementation exists but source/compliance is fail-closed.
 - `LEARNER_READY` = source-approved, tested, reviewed, and release-gated.
@@ -20,6 +22,7 @@ Master rule: Blender/Three.js geometry is never the legal truth. Source cards, f
 |---|---|---|---|---|---|---|
 | `parking-lot-requirements` | Parking Lot Requirements Compliance Tool | Site Development / Accessibility / Building Code | PLANNING | PD 1096, BP 344, BP 220, PD 957, RA 9514, LGU ordinances, international parking geometry references | `.ai/03_plans/3d-modules/parking-lot-requirements/` | No code yet. Hidden QA only after source locator gate. |
 | `stairway-code-compliance` | Stairway Code Compliance | Vertical Circulation | BUILT_QA / active improvement | PD 1096, BP 220, BP 344, RA 9514 | `.ai/03_plans/stairway-code-compliance-model-upgrade/` and existing code docs | Existing module; use as pattern, not as source authority. |
+| `lighting-room-simulator` | Lighting Room Simulator | Electrical / Illumination | CONDITIONAL_GO | DOE Energy Code, Philippine Green Building Code, RA 9514 Fire Code, PD 1096 Rule VIII, PEC deferred until primary locator, pedagogical lamp efficacy references | `.ai/03_plans/3d-modules/lighting-room-simulator/` | Hidden QA implementation may start with fail-closed source labels. Learner release remains blocked until SME approval; do not show PEC as a source-backed card until a primary locator is added. |
 | TBD | Next 3D module | TBD | IDEA | TBD | TBD | Do not implement until a row and folder are created here. |
 
 ## Standard folder contract for each new 3D module
@@ -37,13 +40,17 @@ Each module folder should contain:
 10. `09-conflict-register.md` — conflicts, precedence, and interpretation checklist.
 11. `10-source-card-schema-and-approval.md` — source card schema and approval workflow.
 12. `11-mvp-v0-scope.md` — narrowed first hidden QA scope.
+13. `12-learner-ux-blueprint.md` — learner personas, first-run journey, mobile IA, and feedback copy.
+14. `13-implementation-handoff-spec.md` — later build contract with file ownership and acceptance criteria.
+15. Optional bridge specs for non-standard modules, such as renderer architecture or formula contracts.
 
 ## Shared acceptance criteria for all compliance modules
 
 - Fail closed when source cards are pending.
 - Show `CALCULATION OK`, `FORMULA ISSUE`, or `REVIEW` during source-pending QA; never show `COMPLIANT` or `VIOLATION` as source-backed labels until approved.
-- Use universal red for failing physical dimensions across DOM controls and 3D geometry.
+- Use destructive red only for source-approved functional non-compliance or true system errors. Source-pending review states use warning/neutral styling.
 - Keep sidebars compact and low-scroll on 13-inch MacBook-class displays.
 - Keep legal/code explanations in DOM panels, not only inside the canvas.
 - Maintain stable preset IDs before any Wiki/Quiz deep links are created.
 - Require independent review before implementation handoff.
+- For modules whose learning mechanism depends on live lighting, simulation, animation, physics, or custom renderer behavior, add an architecture bridge before code starts. Do not assume the generic parametric geometry renderer can carry those behaviors.

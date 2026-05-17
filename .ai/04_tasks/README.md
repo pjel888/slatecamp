@@ -11,4 +11,4 @@ Use this folder for actionable task breakdowns, punchlists, execution packets, q
 
 ## Current gap
 
-~~There is no active task packet set in this folder right now.~~ **Resolved 2026-05-09:** The canonical task list is now `.ai/TASKS.md`. This folder is preserved for task artifacts, checklists, and punchlists. New task work should start at `.ai/TASKS.md`.
+~~There is no active task packet set in this folder right now.~~ **Resolved 2026-05-17:** The canonical task list is now `tasks--state--v1.md`. This folder is preserved for task artifacts, checklists, and punchlists. New task work should start at `tasks--state--v1.md`.

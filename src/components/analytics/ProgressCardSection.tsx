@@ -5,9 +5,15 @@ const ProgressCard = dynamic(
   () => import('@/components/analytics/ProgressCard').then((m) => m.ProgressCard),
 )
 
-export const ProgressCardSection = async () => {
+interface ProgressCardSectionProps {
+  variant?: 'default' | 'compact'
+}
+
+export const ProgressCardSection = async ({
+  variant = 'default',
+}: ProgressCardSectionProps) => {
   const result = await getMonthlyReport()
   if (result.error) throw new Error(result.error)
   if (!result.data) return null
-  return <ProgressCard report={result.data} />
+  return <ProgressCard report={result.data} variant={variant} />
 }

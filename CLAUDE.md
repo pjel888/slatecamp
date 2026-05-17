@@ -207,7 +207,7 @@ bun run check:entitlements
 ## Command rules
 1. Do not invent commands.
 2. Do not claim a script exists unless it exists in `package.json` or as an actual executable workflow.
-3. Do not assume a top-level `test` script exists — **it currently does not**.
+3. Verify commands against `package.json`; the top-level `test` script runs `bun test src/`.
 4. If documenting a script, inspect the source and/or the `package.json` entry first.
 
 ---
@@ -424,7 +424,7 @@ over deletion of historical material.
 As of the 2026-04-16 repo intelligence refresh, major risks are:
 1. documentation drift across `README.md`, `.ai`, `.ai/06_specs/deep`, and `AGENTS.md`
 2. large surface area making shallow audits misleading
-3. no single canonical top-level `test` script
+3. top-level `test` script runs `bun test src/` — verify it covers the intended scope
 4. missing centralized environment contract / `.env.example`
 5. maintenance-sensitive counts and operational claims drifting over time
 
@@ -473,7 +473,7 @@ It must not become a stale parallel universe.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **slatecamp** (32729 symbols, 53416 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **slatecamp** (33005 symbols, 53970 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 

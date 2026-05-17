@@ -1,0 +1,50 @@
+{
+  "question_id": "eaabf6f7-bb08-472e-853d-c5648f2d7d1e",
+  "action": "add_new",
+  "reason": "New linked question for Door Hinges and Architectural Hardware article assessment bridge.",
+  "parent_article_id": "NEW_ARTICLE_DOOR_HINGES_ARCHITECTURAL_HARDWARE_TBD",
+  "parent_article_slug": "door-hinges-and-architectural-hardware",
+  "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+  "objective": "Distinguish finishing hardware from rough hardware.",
+  "source_audit_support": {
+    "support_status": "source_safe_textbook_construction_reference",
+    "source_locator": "Salvan, Architectural Building Materials, hardware section raw PDF p. 173; hinge section raw PDF pp. 177, 181-183.",
+    "claim_boundary": "Construction terminology and hardware-selection concepts only; not presented as Philippine legal/code mandate unless separately governed by applicable codes/specifications."
+  },
+  "proposed": {
+    "text": "Which set is best classified as finishing hardware rather than rough hardware?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hinges, locksets, pulls, plates, and catches visible on the finished door"
+      },
+      {
+        "id": "b",
+        "text": "Nails, spikes, concealed rods, and construction screws buried in the work"
+      },
+      {
+        "id": "c",
+        "text": "Reinforcing bars, form ties, and embedded anchor bolts inside concrete"
+      },
+      {
+        "id": "d",
+        "text": "Temporary bracing, layout strings, and scaffold clamps used only during construction"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "summary": "Finishing hardware is exposed and both functional and visible.",
+      "explanation": "The article follows Salvan’s distinction: finishing hardware includes visible/touchable items such as hinges, locks, catches, pulls, and plates; rough hardware is normally hidden or constructional.",
+      "takeaway": "If the occupant sees, touches, or operates it on the finished door, think finishing hardware."
+    },
+    "explanation": "Finishing hardware is exposed and both functional and visible.",
+    "code_citation": "Salvan, Architectural Building Materials, hardware section raw PDF p. 173; hinge section raw PDF pp. 177, 181-183.",
+    "bloom_level": "understand",
+    "difficulty": 0.4,
+    "practice_context": [
+      "door_hardware",
+      "building_materials_and_construction",
+      "lea_board_review"
+    ]
+  }
+}

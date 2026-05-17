@@ -10,9 +10,10 @@ This `docs/` directory is currently a **bridge surface**, not the primary deep d
 
 ## Where to go next
 - Operational state: `../.ai/10_state/current-state.md`
-- Repo-wide audit: `../.ai/02_audits/master-audit.md`
+- Repo-wide audit: `../.ai/02_audits/2026-05-09--repo--audit--full.md`
 - Repo map: `../.ai/00_system/repo-map.md`
 - `.ai` canonical map: `../.ai/00_system/ai-folder-canonical-map.md`
+- Naming conventions: `../.ai/00_system/naming-conventions.md`
 - Codex and companion AI CLI guidance: `../.ai/00_system/CODEX_ENABLEMENT_GUIDE.md`
 - Design-system contract: `../DESIGN.md`
 - Implemented design tokens: `../src/app/globals.css`

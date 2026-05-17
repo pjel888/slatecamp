@@ -64,12 +64,16 @@ const buildCoaching = (data: ForgettingCurveData): { text: string; variant: 'war
 
 export const ForgettingCurves = ({ data }: Props) => {
   const colors = useChartColors()
-  const coaching = buildCoaching(data)
+  const topics = Array.from(
+    new Map(data.topics.map((topic) => [topic.topicId, topic])).values(),
+  )
+  const uniqueData = { ...data, topics }
+  const coaching = buildCoaching(uniqueData)
 
   // Build merged dataset for multi-line chart
   const mergedData = Array.from({ length: 31 }, (_, day) => {
     const point: Record<string, number> = { daysSince: day }
-    for (const topic of data.topics) {
+    for (const topic of topics) {
       const curvePoint = topic.curve.find(c => c.daysSince === day)
       point[topic.topicId] = curvePoint?.recall ?? 0
     }
@@ -77,7 +81,7 @@ export const ForgettingCurves = ({ data }: Props) => {
   })
 
   return (
-    <Card className="border-border bg-card p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full gap-1">
       <RichInfoPopover
         title="Memory Decay Curves"
         description="Estimated recall percentage over time per topic. The dashed line at 70% marks the optimal review threshold. Topics crossing it sooner need earlier review."
@@ -88,7 +92,7 @@ export const ForgettingCurves = ({ data }: Props) => {
         </CardTitle>
       </CardHeader>
       <CardContent className="p-2 pt-0">
-        {data.topics.length === 0 ? (
+        {topics.length === 0 ? (
           <ChartEmptyState
             title="No retention data"
             description="Forgetting curves appear after revisiting topics over time."
@@ -96,9 +100,17 @@ export const ForgettingCurves = ({ data }: Props) => {
           />
         ) : (
           <>
-            <div className="h-[220px]">
-              <div role="img" aria-label="Memory retention curves chart showing estimated recall decay over time per topic">
-              <ResponsiveContainer width="100%" height="100%">
+            <div className="h-[170px]">
+              <div
+                role="img"
+                aria-label="Memory retention curves chart showing estimated recall decay over time per topic"
+                className="h-full min-h-0 w-full min-w-0"
+              >
+              <ResponsiveContainer
+                width="100%"
+                height="100%"
+                initialDimension={{ width: 1, height: 1 }}
+              >
                 <LineChart data={mergedData} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
                   <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
                   <XAxis
@@ -124,9 +136,9 @@ export const ForgettingCurves = ({ data }: Props) => {
                     strokeWidth={1.5}
                     label={{ value: `${data.reviewThreshold}% threshold`, position: 'right', fontSize: 10, fill: colors.mutedForeground }}
                   />
-                  {data.topics.map(topic => (
+                  {topics.map((topic, index) => (
                     <Line
-                      key={topic.topicId}
+                      key={`${topic.topicId}-line-${index}`}
                       type="monotone"
                       dataKey={topic.topicId}
                       name={topic.topicName}
@@ -143,8 +155,8 @@ export const ForgettingCurves = ({ data }: Props) => {
             </div>
             {/* Legend */}
             <div className="flex flex-wrap gap-x-3 gap-y-1 px-1 mt-1">
-              {data.topics.map(t => (
-                <div key={t.topicId} className="flex items-center gap-1">
+              {topics.map((t, index) => (
+                <div key={`${t.topicId}-legend-${index}`} className="flex items-center gap-1">
                   <div className="h-2 w-2 rounded-full" style={{ backgroundColor: t.color }} />
                   <span className="text-[11px] truncate max-w-[120px]" style={{ color: colors.textSecondary }}>
                     {t.topicName}

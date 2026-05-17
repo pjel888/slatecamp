@@ -2,10 +2,14 @@
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { getScoreColor } from '@/components/shared/score-display'
 import type { TopicIntelligenceCard } from '@/lib/actions/analytics/get-topic-intelligence-data'
+import { cn } from '@/lib/utils'
 
 interface Props {
   data: TopicIntelligenceCard[]
+  heightClassName?: string
+  variant?: 'default' | 'compact'
 }
 
 const RECOMMENDATION_LABELS: Record<string, { label: string; variant: 'default' | 'secondary' | 'outline' }> = {
@@ -22,17 +26,13 @@ const ERROR_LABELS: Record<string, string> = {
 }
 
 const MasteryBar = ({ pct }: { pct: number }) => {
-  const color =
-    pct >= 70
-      ? 'bg-success'
-      : pct >= 40
-        ? 'bg-warning'
-        : 'bg-destructive'
-
   return (
     <div className="w-full h-1.5 rounded-full bg-muted overflow-hidden" role="presentation">
       <div
-        className={`h-full rounded-full transition-all duration-200 ease-out ${color}`}
+        className={cn(
+          'h-full rounded-full transition-all duration-200 ease-out',
+          getScoreColor(pct).bg,
+        )}
         style={{ width: `${pct}%` }}
       />
     </div>
@@ -45,25 +45,38 @@ const formatDate = (iso: string | null): string => {
   return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short' })
 }
 
-export const TopicIntelligenceCards = ({ data }: Props) => {
+export const TopicIntelligenceCards = ({
+  data,
+  heightClassName = 'h-[400px]',
+  variant = 'default',
+}: Props) => {
+  const isCompact = variant === 'compact'
+
   return (
     <div
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 h-[400px] overflow-y-auto"
+      className={cn(
+        'grid min-h-0 grid-cols-1 overflow-y-auto pr-1 sm:grid-cols-2 lg:grid-cols-3',
+        isCompact ? 'gap-2' : 'gap-3',
+        heightClassName,
+      )}
       role="list"
       aria-label="Topic intelligence cards for weakest topics"
     >
-      {data.map((card) => {
+      {data.map((card, index) => {
         const rec = RECOMMENDATION_LABELS[card.recommendation] ?? {
           label: card.recommendation,
           variant: 'outline' as const,
         }
         return (
           <Card
-            key={card.topicId}
-            className="border-border bg-card p-3 flex flex-col gap-2"
+            key={`${card.topicId}-${card.recommendation}-${index}`}
+            className={cn(
+              'border-border bg-card flex flex-col',
+              isCompact ? 'gap-1.5 p-2' : 'gap-2 p-3',
+            )}
             role="listitem"
           >
-            <CardContent className="p-0 flex flex-col gap-2">
+            <CardContent className={cn('p-0 flex flex-col', isCompact ? 'gap-1.5' : 'gap-2')}>
               <p className="text-xs font-semibold text-foreground leading-snug line-clamp-2">
                 {card.topicName}
               </p>

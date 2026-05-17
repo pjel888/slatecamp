@@ -1,6 +1,6 @@
 # Archive Store Index
 
-**Indexed:** 2026-05-15
+**Indexed:** 2026-05-17
 
 `.ai/09_archive/store/` is the large historical content store. Start with `.ai/09_archive/archive-index.md` for routing, then use this file for store-level orientation.
 
@@ -15,6 +15,19 @@
 | `store/2026-04-16-repo-intelligence-pass/` | 80 | Preserved repo-intelligence pass artifacts. |
 | `store/SUPERSEDED/` | 52 | Superseded historical material. |
 | `store/DB_ROLLBACKS/` | 12 | Archived rollback/manual repair SQL; not forward migrations. |
+
+## 2026-05-17 .ai/ Organization Pass — New Store Entries
+
+The following were archived to `store/` during the .ai/ cleanup pass:
+- `store/articlemedia-fix-v2-backups/`
+- `store/fix-articlemedia-backups/`
+- `store/content-inspection-swarm/`
+- `store/final-content-completion/`
+- `store/wiki-mdx-render-debug/`
+- `store/wiki-ui-audit/`
+- `store/misc-artifacts/`
+- `store/stairway-audit-images/`
+- `store/2026-05-09/` (merged from former unnumbered `archive/`)
 
 ## 2026-05-15 Decision
 

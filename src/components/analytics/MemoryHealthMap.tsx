@@ -39,9 +39,9 @@ export function MemoryHealthMap({ data }: Props) {
         ) : (
           <>
             <div className="flex flex-wrap gap-1">
-              {sorted.map(item => (
+              {sorted.map((item, index) => (
                 <div
-                  key={item.topicId}
+                  key={`${item.topicId}-${item.status}-${index}`}
                   title={`Last seen ${item.daysSince}d ago · ~${item.estimatedRetention}% estimated retention`}
                   className={cn(
                     'flex items-center gap-1 px-1.5 py-0.5 rounded-full border text-[11px] font-medium cursor-default',

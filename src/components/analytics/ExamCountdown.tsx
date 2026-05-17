@@ -4,7 +4,7 @@ import { Target, Warning, ArrowUp, ArrowDown, Minus } from '@phosphor-icons/reac
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
-import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { EmptyState } from '@/components/shared/empty-state'
 import { cn } from '@/lib/utils'
 import { getScoreColor } from '@/components/shared/score-display'
 import type { ExamCountdownData } from '@/lib/actions/analytics/chart-data'
@@ -38,10 +38,11 @@ export const ExamCountdown = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {!hasExamDate ? (
-          <ChartEmptyState
+          <EmptyState
+            variant="card"
             title="Exam date not set"
             description="Set your exam date in settings to see your countdown."
-            height="h-[220px]"
+            className="p-2"
           />
         ) : (
           <div className="flex flex-col gap-3">

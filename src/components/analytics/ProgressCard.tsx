@@ -9,6 +9,7 @@ import type { ProgressReport } from '@/lib/actions/progress-report/generate'
 
 interface Props {
   report: ProgressReport | null
+  variant?: 'default' | 'compact'
 }
 
 const formatMinutes = (mins: number): string => {
@@ -24,7 +25,9 @@ const formatPeriod = (start: string, end: string): string => {
   return `${s.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - ${e.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`
 }
 
-export const ProgressCard = ({ report }: Props) => {
+export const ProgressCard = ({ report, variant = 'default' }: Props) => {
+  const isCompact = variant === 'compact'
+
   if (!report) {
     return (
       <ChartEmptyState
@@ -72,42 +75,42 @@ export const ProgressCard = ({ report }: Props) => {
 
   return (
     <Card className="border-border bg-card p-0 relative overflow-hidden">
-      <div className="p-4">
+      <div className={isCompact ? 'p-3' : 'p-4'}>
         {/* Header */}
-        <div className="flex items-center justify-between mb-3">
+        <div className={isCompact ? 'mb-2 flex items-center justify-between' : 'mb-3 flex items-center justify-between'}>
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
               Monthly Progress
             </p>
-            <p className="text-xs text-text-secondary mt-0.5">
+            <p className={isCompact ? 'mt-0.5 text-[11px] text-text-secondary' : 'mt-0.5 text-xs text-text-secondary'}>
               {formatPeriod(report.period.start, report.period.end)}
             </p>
           </div>
-          <span className="text-[10px] font-bold text-muted-foreground tracking-wider uppercase">
+          <span className={isCompact ? 'text-[9px] font-bold uppercase tracking-wider text-muted-foreground' : 'text-[10px] font-bold text-muted-foreground tracking-wider uppercase'}>
             SlateCamp
           </span>
         </div>
 
         {/* Metrics Grid */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className={isCompact ? 'grid grid-cols-2 gap-2' : 'grid grid-cols-2 gap-3'}>
           {/* Questions Answered */}
-          <div className="rounded-md bg-surface-light px-3 py-2.5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+          <div className={isCompact ? 'rounded-md bg-surface-light px-2 py-1.5' : 'rounded-md bg-surface-light px-3 py-2.5'}>
+            <p className={isCompact ? 'text-[9px] font-bold uppercase tracking-wider text-muted-foreground' : 'text-[10px] font-bold uppercase tracking-wider text-muted-foreground'}>
               Questions
             </p>
-            <p className="text-lg font-extrabold text-foreground tabular-nums mt-0.5">
+            <p className={isCompact ? 'mt-0.5 text-base font-extrabold tabular-nums text-foreground' : 'text-lg font-extrabold text-foreground tabular-nums mt-0.5'}>
               {report.questionsAnswered.toLocaleString()}
             </p>
           </div>
 
           {/* Readiness Score Change */}
-          <div className="rounded-md bg-surface-light px-3 py-2.5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+          <div className={isCompact ? 'rounded-md bg-surface-light px-2 py-1.5' : 'rounded-md bg-surface-light px-3 py-2.5'}>
+            <p className={isCompact ? 'text-[9px] font-bold uppercase tracking-wider text-muted-foreground' : 'text-[10px] font-bold uppercase tracking-wider text-muted-foreground'}>
               Readiness
             </p>
             <div className="flex items-center gap-1 mt-0.5">
               <span
-                className={`text-lg font-extrabold tabular-nums ${
+                className={`${isCompact ? 'text-base' : 'text-lg'} font-extrabold tabular-nums ${
                   rsDirection === 'up'
                     ? 'text-success'
                     : rsDirection === 'down'
@@ -132,29 +135,29 @@ export const ProgressCard = ({ report }: Props) => {
           </div>
 
           {/* Topics Improved */}
-          <div className="rounded-md bg-surface-light px-3 py-2.5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+          <div className={isCompact ? 'rounded-md bg-surface-light px-2 py-1.5' : 'rounded-md bg-surface-light px-3 py-2.5'}>
+            <p className={isCompact ? 'text-[9px] font-bold uppercase tracking-wider text-muted-foreground' : 'text-[10px] font-bold uppercase tracking-wider text-muted-foreground'}>
               Topics Improved
             </p>
-            <p className="text-lg font-extrabold text-foreground tabular-nums mt-0.5">
+            <p className={isCompact ? 'mt-0.5 text-base font-extrabold tabular-nums text-foreground' : 'text-lg font-extrabold text-foreground tabular-nums mt-0.5'}>
               {report.nodesImproved}
             </p>
           </div>
 
           {/* Study Time */}
-          <div className="rounded-md bg-surface-light px-3 py-2.5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+          <div className={isCompact ? 'rounded-md bg-surface-light px-2 py-1.5' : 'rounded-md bg-surface-light px-3 py-2.5'}>
+            <p className={isCompact ? 'text-[9px] font-bold uppercase tracking-wider text-muted-foreground' : 'text-[10px] font-bold uppercase tracking-wider text-muted-foreground'}>
               Study Time
             </p>
-            <p className="text-lg font-extrabold text-foreground tabular-nums mt-0.5">
+            <p className={isCompact ? 'mt-0.5 text-base font-extrabold tabular-nums text-foreground' : 'text-lg font-extrabold text-foreground tabular-nums mt-0.5'}>
               {formatMinutes(report.studyMinutes)}
             </p>
           </div>
         </div>
 
         {/* Sessions */}
-        <div className="mt-3 rounded-md bg-primary-50 px-3 py-2 flex items-center justify-between">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-primary">
+        <div className={isCompact ? 'mt-2 flex items-center justify-between rounded-md bg-primary-50 px-2 py-1.5' : 'mt-3 rounded-md bg-primary-50 px-3 py-2 flex items-center justify-between'}>
+          <p className={isCompact ? 'text-[9px] font-bold uppercase tracking-wider text-primary' : 'text-[10px] font-bold uppercase tracking-wider text-primary'}>
             Sessions Completed
           </p>
           <p className="text-sm font-extrabold text-primary tabular-nums">
@@ -164,6 +167,7 @@ export const ProgressCard = ({ report }: Props) => {
       </div>
 
       {/* Actions */}
+      {!isCompact && (
       <CardContent className="px-4 pb-3 pt-0 flex gap-2">
         <button
           type="button"
@@ -184,6 +188,7 @@ export const ProgressCard = ({ report }: Props) => {
           </button>
         )}
       </CardContent>
+      )}
     </Card>
   )
 }

@@ -1,0 +1,605 @@
+<robot name="architectural_butt_hinge">
+  <material name="satin_galvanized_leaf">
+    <color rgba="0.68 0.73 0.78 1" />
+    </material>
+  <material name="darker_pin_and_knuckles">
+    <color rgba="0.48 0.55 0.62 1" />
+    </material>
+  <material name="recessed_screw_heads">
+    <color rgba="0.56 0.62 0.68 1" />
+    </material>
+  <material name="dark_screw_recesses">
+    <color rgba="0.18 0.23 0.28 1" />
+    </material>
+  <link name="frame_leaf">
+    <visual name="frame_rectangular_leaf_plate">
+      <origin xyz="0 -0.288 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.44 1.2" />
+        </geometry>
+      <material name="satin_galvanized_leaf">
+        <color rgba="0.68 0.73 0.78 1" />
+        </material>
+      </visual>
+    <visual name="continuous_hinge_pin_visible_core">
+      <geometry>
+        <cylinder radius="0.02" length="1.305" />
+        </geometry>
+      <material name="darker_pin_and_knuckles">
+        <color rgba="0.48 0.55 0.62 1" />
+        </material>
+      </visual>
+    <visual name="frame_alternating_knuckle_1">
+      <origin xyz="0 0 0.5" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.22" />
+        </geometry>
+      <material name="darker_pin_and_knuckles">
+        <color rgba="0.48 0.55 0.62 1" />
+        </material>
+      </visual>
+    <visual name="frame_leaf_to_knuckle_bridge_1">
+      <origin xyz="0 -0.053 0.5" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.2024" />
+        </geometry>
+      <material name="satin_galvanized_leaf">
+        <color rgba="0.68 0.73 0.78 1" />
+        </material>
+      </visual>
+    <visual name="frame_alternating_knuckle_2">
+      <geometry>
+        <cylinder radius="0.048" length="0.22" />
+        </geometry>
+      <material name="darker_pin_and_knuckles">
+        <color rgba="0.48 0.55 0.62 1" />
+        </material>
+      </visual>
+    <visual name="frame_leaf_to_knuckle_bridge_2">
+      <origin xyz="0 -0.053 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.2024" />
+        </geometry>
+      <material name="satin_galvanized_leaf">
+        <color rgba="0.68 0.73 0.78 1" />
+        </material>
+      </visual>
+    <visual name="frame_alternating_knuckle_3">
+      <origin xyz="0 0 -0.5" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.22" />
+        </geometry>
+      <material name="darker_pin_and_knuckles">
+        <color rgba="0.48 0.55 0.62 1" />
+        </material>
+      </visual>
+    <visual name="frame_leaf_to_knuckle_bridge_3">
+      <origin xyz="0 -0.053 -0.5" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.2024" />
+        </geometry>
+      <material name="satin_galvanized_leaf">
+        <color rgba="0.68 0.73 0.78 1" />
+        </material>
+      </visual>
+    <visual name="top_pin_cap">
+      <origin xyz="0 0 0.66" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.032" length="0.02" />
+        </geometry>
+      <material name="darker_pin_and_knuckles">
+        <color rgba="0.48 0.55 0.62 1" />
+        </material>
+      </visual>
+    <visual name="bottom_pin_cap">
+      <origin xyz="0 0 -0.66" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.032" length="0.02" />
+        </geometry>
+      <material name="darker_pin_and_knuckles">
+        <color rgba="0.48 0.55 0.62 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_1_head">
+      <origin xyz="0.015 -0.408 0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      <material name="recessed_screw_heads">
+        <color rgba="0.56 0.62 0.68 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_1_slot_a">
+      <origin xyz="0.016 -0.408 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_1_slot_b">
+      <origin xyz="0.017 -0.408 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_2_head">
+      <origin xyz="0.015 -0.168 0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      <material name="recessed_screw_heads">
+        <color rgba="0.56 0.62 0.68 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_2_slot_a">
+      <origin xyz="0.016 -0.168 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_2_slot_b">
+      <origin xyz="0.017 -0.168 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_3_head">
+      <origin xyz="0.015 -0.408 -0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      <material name="recessed_screw_heads">
+        <color rgba="0.56 0.62 0.68 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_3_slot_a">
+      <origin xyz="0.016 -0.408 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_3_slot_b">
+      <origin xyz="0.017 -0.408 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_4_head">
+      <origin xyz="0.015 -0.168 -0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      <material name="recessed_screw_heads">
+        <color rgba="0.56 0.62 0.68 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_4_slot_a">
+      <origin xyz="0.016 -0.168 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="frame_countersunk_screw_4_slot_b">
+      <origin xyz="0.017 -0.168 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <collision name="frame_rectangular_leaf_plate">
+      <origin xyz="0 -0.288 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.44 1.2" />
+        </geometry>
+      </collision>
+    <collision name="continuous_hinge_pin_visible_core">
+      <geometry>
+        <cylinder radius="0.02" length="1.305" />
+        </geometry>
+      </collision>
+    <collision name="frame_alternating_knuckle_1">
+      <origin xyz="0 0 0.5" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.22" />
+        </geometry>
+      </collision>
+    <collision name="frame_leaf_to_knuckle_bridge_1">
+      <origin xyz="0 -0.053 0.5" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.2024" />
+        </geometry>
+      </collision>
+    <collision name="frame_alternating_knuckle_2">
+      <geometry>
+        <cylinder radius="0.048" length="0.22" />
+        </geometry>
+      </collision>
+    <collision name="frame_leaf_to_knuckle_bridge_2">
+      <origin xyz="0 -0.053 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.2024" />
+        </geometry>
+      </collision>
+    <collision name="frame_alternating_knuckle_3">
+      <origin xyz="0 0 -0.5" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.22" />
+        </geometry>
+      </collision>
+    <collision name="frame_leaf_to_knuckle_bridge_3">
+      <origin xyz="0 -0.053 -0.5" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.2024" />
+        </geometry>
+      </collision>
+    <collision name="top_pin_cap">
+      <origin xyz="0 0 0.66" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.032" length="0.02" />
+        </geometry>
+      </collision>
+    <collision name="bottom_pin_cap">
+      <origin xyz="0 0 -0.66" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.032" length="0.02" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_1_head">
+      <origin xyz="0.015 -0.408 0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_1_slot_a">
+      <origin xyz="0.016 -0.408 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_1_slot_b">
+      <origin xyz="0.017 -0.408 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_2_head">
+      <origin xyz="0.015 -0.168 0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_2_slot_a">
+      <origin xyz="0.016 -0.168 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_2_slot_b">
+      <origin xyz="0.017 -0.168 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_3_head">
+      <origin xyz="0.015 -0.408 -0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_3_slot_a">
+      <origin xyz="0.016 -0.408 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_3_slot_b">
+      <origin xyz="0.017 -0.408 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_4_head">
+      <origin xyz="0.015 -0.168 -0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_4_slot_a">
+      <origin xyz="0.016 -0.168 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      </collision>
+    <collision name="frame_countersunk_screw_4_slot_b">
+      <origin xyz="0.017 -0.168 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      </collision>
+    </link>
+  <link name="door_leaf">
+    <visual name="door_rectangular_leaf_plate">
+      <origin xyz="0 0.288 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.44 1.2" />
+        </geometry>
+      <material name="satin_galvanized_leaf">
+        <color rgba="0.68 0.73 0.78 1" />
+        </material>
+      </visual>
+    <visual name="door_alternating_knuckle_1">
+      <origin xyz="0 0 0.25" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.2" />
+        </geometry>
+      <material name="darker_pin_and_knuckles">
+        <color rgba="0.48 0.55 0.62 1" />
+        </material>
+      </visual>
+    <visual name="door_leaf_to_knuckle_bridge_1">
+      <origin xyz="0 0.053 0.25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.184" />
+        </geometry>
+      <material name="satin_galvanized_leaf">
+        <color rgba="0.68 0.73 0.78 1" />
+        </material>
+      </visual>
+    <visual name="door_alternating_knuckle_2">
+      <origin xyz="0 0 -0.25" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.2" />
+        </geometry>
+      <material name="darker_pin_and_knuckles">
+        <color rgba="0.48 0.55 0.62 1" />
+        </material>
+      </visual>
+    <visual name="door_leaf_to_knuckle_bridge_2">
+      <origin xyz="0 0.053 -0.25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.184" />
+        </geometry>
+      <material name="satin_galvanized_leaf">
+        <color rgba="0.68 0.73 0.78 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_1_head">
+      <origin xyz="0.015 0.168 0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      <material name="recessed_screw_heads">
+        <color rgba="0.56 0.62 0.68 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_1_slot_a">
+      <origin xyz="0.016 0.168 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_1_slot_b">
+      <origin xyz="0.017 0.168 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_2_head">
+      <origin xyz="0.015 0.408 0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      <material name="recessed_screw_heads">
+        <color rgba="0.56 0.62 0.68 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_2_slot_a">
+      <origin xyz="0.016 0.408 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_2_slot_b">
+      <origin xyz="0.017 0.408 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_3_head">
+      <origin xyz="0.015 0.168 -0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      <material name="recessed_screw_heads">
+        <color rgba="0.56 0.62 0.68 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_3_slot_a">
+      <origin xyz="0.016 0.168 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_3_slot_b">
+      <origin xyz="0.017 0.168 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_4_head">
+      <origin xyz="0.015 0.408 -0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      <material name="recessed_screw_heads">
+        <color rgba="0.56 0.62 0.68 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_4_slot_a">
+      <origin xyz="0.016 0.408 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <visual name="door_countersunk_screw_4_slot_b">
+      <origin xyz="0.017 0.408 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      <material name="dark_screw_recesses">
+        <color rgba="0.18 0.23 0.28 1" />
+        </material>
+      </visual>
+    <collision name="door_rectangular_leaf_plate">
+      <origin xyz="0 0.288 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.44 1.2" />
+        </geometry>
+      </collision>
+    <collision name="door_alternating_knuckle_1">
+      <origin xyz="0 0 0.25" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.2" />
+        </geometry>
+      </collision>
+    <collision name="door_leaf_to_knuckle_bridge_1">
+      <origin xyz="0 0.053 0.25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.184" />
+        </geometry>
+      </collision>
+    <collision name="door_alternating_knuckle_2">
+      <origin xyz="0 0 -0.25" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.2" />
+        </geometry>
+      </collision>
+    <collision name="door_leaf_to_knuckle_bridge_2">
+      <origin xyz="0 0.053 -0.25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.0324 0.075 0.184" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_1_head">
+      <origin xyz="0.015 0.168 0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_1_slot_a">
+      <origin xyz="0.016 0.168 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_1_slot_b">
+      <origin xyz="0.017 0.168 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_2_head">
+      <origin xyz="0.015 0.408 0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_2_slot_a">
+      <origin xyz="0.016 0.408 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_2_slot_b">
+      <origin xyz="0.017 0.408 0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_3_head">
+      <origin xyz="0.015 0.168 -0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_3_slot_a">
+      <origin xyz="0.016 0.168 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_3_slot_b">
+      <origin xyz="0.017 0.168 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_4_head">
+      <origin xyz="0.015 0.408 -0.38" rpy="0 1.5708 0" />
+      <geometry>
+        <cylinder radius="0.03" length="0.01" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_4_slot_a">
+      <origin xyz="0.016 0.408 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.045 0.004" />
+        </geometry>
+      </collision>
+    <collision name="door_countersunk_screw_4_slot_b">
+      <origin xyz="0.017 0.408 -0.38" rpy="0 0 0" />
+      <geometry>
+        <box size="0.01 0.004 0.045" />
+        </geometry>
+      </collision>
+    </link>
+  <joint name="revolute_swing_about_continuous_pin" type="revolute">
+    <parent link="frame_leaf" />
+    <child link="door_leaf" />
+    <axis xyz="0 0 1" />
+    <limit effort="12" velocity="1.5" lower="-0.1" upper="1.7" />
+    </joint>
+  </robot>

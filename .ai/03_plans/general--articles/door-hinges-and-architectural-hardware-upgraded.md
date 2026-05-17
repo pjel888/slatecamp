@@ -1,0 +1,357 @@
+# Door Hinges and Architectural Hardware
+
+## Learning Goal
+
+After studying this article, you should be able to identify the main door-hardware families, distinguish the major hinge types by movement and mounting condition, and select the correct hardware family for a drawing, specification, or board-exam situation.
+
+<Note>
+
+This article is a construction-vocabulary study guide, not a statement of Philippine legal requirements. General textbooks, manufacturer guides, and trade references may inform the internal drafting process, but learner-facing legal authority should come from the applicable Philippine law, code, rule, official government source, or project specification.
+
+</Note>
+
+
+## Why This Matters on the LEA
+
+Door hardware questions look small, but they test whether you can read a door as a working assembly. A door is not only a leaf in an opening. It needs hardware to swing, close, latch, lock, protect finishes, resist weather, and allow safe use. The usual exam trap is to memorize names without knowing the action: a butt hinge turns a leaf from the jamb edge; a pivot shifts the turning axis; panic hardware releases an exit door by pressure on a horizontal bar; a closer returns the leaf to the closed position.
+
+For board review, sort hardware by function before memorizing names:
+
+- **Support and movement:** hinges, pivots, tracks, guides.
+- **Security and latching:** locksets, latches, bolts, strikes, cylinders, dead bolts.
+- **Closing and egress:** closers, panic hardware, coordinators.
+- **Operation and protection:** pulls, push plates, kick plates, stops, holders, bumpers.
+- **Sealing and threshold conditions:** thresholds and weatherstripping.
+## Finishing Hardware vs Rough Hardware
+
+**Hardware** means metal products used in construction, including bolts, hinges, locks, and related fittings. The first useful distinction is between finishing hardware and rough hardware.
+
+**Finishing hardware** is exposed and has both function and appearance. It includes visible and touchable parts used with doors, windows, and cabinets: hinges, locks, catches, pulls, plates, and similar items. Because it is visible, finishing hardware belongs in both technical coordination and architectural finish selection.
+
+**Rough hardware** is normally concealed or constructional. Rough hardware includes bolts, nails, screws, spikes, rods, and other concealed metal fittings intended to be hidden in the work. These are not chosen for decorative effect. They are chosen for fastening, anchoring, or support.
+
+<Tip>
+
+Exam shortcut: if the user sees, touches, or operates it on the finished door, it is usually finishing hardware. If it is buried, concealed, or used mainly to fasten construction, it is usually rough hardware.
+
+</Tip>
+
+<RevealBlock prompt="Recall check: before revealing, decide whether a visible door hinge is finishing hardware or rough hardware." label="Reveal the classification" blurRadius={8}>
+
+A visible door hinge belongs to **finishing hardware** because it is exposed, selected for coordinated appearance, and operated as part of the completed door assembly. Rough hardware is normally concealed or constructional, such as nails, bolts, rods, and hidden fasteners.
+
+</RevealBlock>
+## The Door Hardware Set
+
+A complete door hardware set is a coordinated group of parts, not a random list of accessories. A complete finish door hardware set may include locksets, hinges, closers, panic hardware, push and pull bars or plates, kick plates, stops, holders, bumpers, thresholds, weatherstripping, tracks, and guides.
+
+When selecting hardware, use these practical selection factors:
+
+- Function and ease of operation.
+- Whether the item is recessed or surface-mounted.
+- Material, finish, texture, and color.
+- Durability for the expected frequency of use.
+- Exposure to weather or corrosive conditions.
+
+That last point matters in Philippine practice. A coastal school, beach resort, or public market near salt air may justify more corrosion-resistant hardware than an interior residential bedroom door. The exam version is simpler: match the hardware to the door's function, use, exposure, and required operation.
+## Hardware Families at a Glance
+
+<ComparisonTable>
+
+| Hardware family | Primary job | What the examiner may describe | Common wrong answer |
+|---|---|---|---|
+| Hinge / pivot | Carries the door and defines its turning axis | Door swings from jamb edge, top/bottom pivot, full-length support | Calling every metal part a hinge |
+| Lockset | Provides a manufactured locking/latching assembly | Knobs, levers, cylinder, faceplate, mortise or bored preparation | Saying “knob” when the complete assembly is meant |
+| Latch / bolt / strike | Holds or secures the leaf at the frame | Latchbolt engages receiving plate; dead bolt projects for security | Confusing strike with lockset |
+| Closer | Returns door to closed position and controls movement | Surface-mounted, concealed, hydraulic/pneumatic, quiet closing | Confusing with spring hinge |
+| Panic hardware | Releases an egress door by pressure on a horizontal bar | Emergency exit door, push bar across interior face | Treating an ordinary push plate as panic hardware |
+| Plates / pulls / stops | Enables operation and protects surfaces | Kick plate, push plate, pull bar, bumper, holder | Calling protection hardware decorative only |
+| Threshold / weatherstripping | Controls bottom/edge transition and sealing | Air, water, dust, sound, floor transition | Treating sealing hardware as part of the lock |
+
+</ComparisonTable>
+
+## Hinge Fundamentals
+
+A **hinge** is a movable joint that attaches, supports, and turns a door about a pivot. In basic construction terms, it is usually understood as two leaves or plates joined by a pin or knuckle assembly that supports the door and connects it to its frame, allowing the door to swing open or closed.
+
+The basic anatomy is:
+
+- **Leaf / plate:** the flat metal plate fastened to the door or frame.
+- **Knuckle / barrel:** the rolled cylindrical portion along the hinge edge.
+- **Pin:** the rod through the knuckles that creates the turning axis.
+- **Mortise:** the recess cut into the door or jamb so the hinge leaf sits flush.
+- **Jamb leaf and door leaf:** the two sides of the hinge, one on the frame and one on the door.
+
+The board-exam skill is not to draw every screw. The skill is to know how the door is carried, where the turning axis is located, and whether the hardware is mortised, surface-mounted, continuous, concealed, spring-assisted, or pivoted.
+## Main Hinge Types
+
+### Butt Hinge
+
+A **butt hinge** is the standard door hinge. It has two rectangular metal leaves joined by a pin and is secured to the abutting surfaces of the door and jamb. In common door construction, each leaf is usually mortised so the door can close neatly with only the knuckle visible at the edge.
+
+Use it when the door is a normal side-hinged swinging door and there is no special requirement for concealed action, double swing, full-length support, or center pivoting.
+
+Board trap: do not confuse the hinge name with the door type. A flush door, panel door, and metal door may all use butt hinges depending on the frame and specification.
+<DoorHinge3D type="butt" />
+
+### Fixed-Pin, Loose-Pin, and Security-Pin Hinges
+
+A **fixed-pin hinge** has the pin fastened permanently in place. A **loose-pin hinge** has a removable pin that allows the two hinge leaves to be separated, so the door can be removed more easily.
+
+The difference is not the door swing. The difference is whether the pin can be removed. In security-sensitive situations, removable pins may be inappropriate on the exposed side of a door unless the hinge has a security feature. the construction reference notes that self-locking pins that cannot be removed when the door is closed are also available.
+
+Modern hardware catalogs often use related vocabulary such as **non-removable pin** or security hinge. Treat those as specification/security terms, not as separate basic movement categories unless the question gives the term directly.
+<DoorHinge3D type="loose-pin" />
+
+### Full-Mortise, Half-Mortise, Half-Surface, and Full-Surface Hinges
+
+These terms describe **how the hinge leaves are mounted**.
+
+<ComparisonTable>
+
+| Mounting term | Door-side condition | Frame-side condition | What to remember |
+|---|---|---|---|
+| Full-mortise hinge | Door leaf mortised | Jamb/frame leaf mortised | Cleanest conventional door-edge condition; only knuckle is prominent when closed |
+| Half-mortise hinge | One leaf mortised into door | Other leaf surface-mounted to frame | One side recessed, one side exposed |
+| Half-surface hinge | One leaf surface-mounted to door face | Other leaf mortised into frame | Door face shows a surface leaf |
+| Full-surface hinge | Door leaf surface-mounted | Frame leaf surface-mounted | Both leaves visible on adjacent faces |
+
+</ComparisonTable>
+
+Use this family of terms when the question asks about installation condition, not swing direction. A full-mortise hinge and a full-surface hinge can both be side-hinged; the difference is how the leaves meet the door and frame.
+### Loose-Joint Hinge
+
+A **loose-joint hinge** allows the door to be lifted off the vertical pin without unscrewing the hinge. the construction reference describes it as having two knuckles, one with a vertical pin that fits into a corresponding hole in the other.
+
+This is useful when the door or panel must be removable for access, maintenance, or furniture-like construction. The exam trap is to confuse it with a loose-pin hinge. A loose-pin hinge separates by removing the pin; a loose-joint hinge separates by lifting one hinge member off the fixed pin.
+
+<RevealBlock prompt="Recall check: loose-pin or loose-joint? Say the removal action before revealing." label="Reveal the hinge distinction" blurRadius={8}>
+
+- **Loose-pin hinge:** separate the leaves by removing the pin.
+- **Loose-joint hinge:** separate the members by lifting one part off the fixed vertical pin.
+
+</RevealBlock>
+### Plain-Bearing and Ball-Bearing Hinges
+
+A **plain-bearing hinge** relies on the hinge knuckles bearing directly against each other. A **ball-bearing hinge** uses bearing elements to reduce friction in heavier or more frequently used doors. This distinction is common in manufacturer literature and hardware schedules because door weight and traffic frequency affect hinge selection.
+
+For the LEA, use this as applied vocabulary. If a question says the door is heavy or frequently used and asks for a more durable hinge construction, ball-bearing vocabulary may be relevant. Do not invent a required load rating unless the source or manufacturer table gives it.
+<DoorHinge3D type="ball-bearing" />
+
+### Spring Hinge
+
+A **spring hinge** contains one or more springs that help return the door after opening. the construction reference identifies spring hinges as acting in one direction or in both directions. the construction reference describes spring hinges as having coiled springs in the barrels for closing a door automatically.
+
+A **single-acting spring hinge** assists return in one swing direction. A **double-acting spring hinge** allows the door to swing in either direction and is commonly associated with restaurant, hospital, or kitchen doors where hands may be occupied and traffic moves both ways.
+
+Board trap: a spring hinge is not the same as a full door closer. A door closer is usually a hydraulic or pneumatic device that controls closing action more deliberately. A spring hinge provides spring return but does not necessarily give the same controlled closing performance.
+<DoorHinge3D type="spring" />
+
+### Double-Acting Hinge
+
+A **double-acting hinge** permits a door to swing in both directions. the construction reference notes that double-acting hinges are usually fitted with springs to bring the door back to the closed position after opening.
+
+Use it for doors that must be pushed open from either side, such as service doors between kitchen and dining areas. Do not use it as a generic answer for all high-traffic doors. Some high-traffic doors need closers, panic devices, automatic operators, or sliding systems instead.
+### Pivot Hinge and Floor Hinge
+
+A **pivot hinge** turns the door about a pivot axis rather than relying on a conventional side-jamb hinge barrel. the construction reference defines the pivot as the axle or pin about which a door or window rotates. A vertical spring pivot hinge may be mortised into the heel of the door, with the door fastened to the floor and door head with pivots.
+
+the construction reference identifies **floor hinges** as hardware used with a mortise pivot at the door head to allow a door to swing in either direction; they may include a closer mechanism. This makes pivot/floor hinge assemblies common in heavier or more refined entrance doors, especially where the hardware is intended to be concealed or visually minimized.
+
+Industry catalogs often distinguish **center-hung**, **offset**, and **intermediate** pivots. The simple recognition rule is this: locate the axis. If the rotation is controlled by top and bottom pivot points instead of a conventional jamb-edge hinge barrel, the assembly belongs to the pivot family.
+<DoorHinge3D type="pivot" />
+
+### Piano / Continuous Hinge
+
+A **piano hinge**, also called a continuous hinge in many specifications, is a long, narrow hinge running the full length of the two joined surfaces. Instead of carrying the door on two or three separated hinges, the load is distributed continuously along the edge.
+
+Use it for cabinet lids, access panels, long doors, or conditions where continuous support and alignment matter. For exam purposes, the word **piano** is the giveaway: long, narrow, full-length hinge.
+<DoorHinge3D type="continuous" />
+
+### Invisible / Concealed Hinge
+
+An **invisible hinge** uses flat plates rotating about a central pin, with shoulders mortised into the door edge and frame so that the hinge is concealed when the door is closed.
+
+Use it where the design intent is a clean, flush, hidden-joint appearance. In a board question, associate concealed hinges with visual integration, not with panic egress or self-closing behavior unless another hardware item provides that function.
+<DoorHinge3D type="concealed" />
+
+### Parliament, Wide-Throw, Swing-Clear, and Olive-Knuckle Hinges
+
+the construction reference identifies **parliament hinges** as having T-shaped leaves and a protruding knuckle so that a door can stand away from the wall when fully opened. It identifies **olive-knuckle hinges** as hinges with a single pivoting joint and an oval-shaped knuckle. the construction reference also records the paumelle/olive-knuckle vocabulary.
+
+Modern hardware vocabulary also uses terms such as **wide-throw** and **swing-clear** for hinges that help move the door leaf farther from the frame or opening line. These terms are useful for recognition, but they should be checked against the actual manufacturer detail before being used in a specification.
+<DoorHinge3D type="parliament" />
+
+<DoorHinge3D type="strap" />
+
+## Hinge Recognition Matrix
+
+<ComparisonTable>
+
+| If the question describes... | Likely hardware term | Why |
+|---|---|---|
+| Two rectangular leaves joined by a pin at the door edge | Butt hinge | Standard side-hinged swinging-door condition |
+| Pin can be removed to separate leaves | Loose-pin hinge | Removal happens by taking out the pin |
+| Door can be lifted off a fixed vertical pin | Loose-joint hinge | Removal happens by lifting the hinge member |
+| Both leaves recessed into door and jamb | Full-mortise hinge | Mounting condition, not swing type |
+| Both leaves visible on the surface | Full-surface hinge | Surface mounting on both sides |
+| Spring return in the barrel | Spring hinge | Closing action is spring-assisted |
+| Door swings both ways | Double-acting hinge | Movement is two-direction swing |
+| Axis is at floor/head pivots | Pivot / floor hinge | Rotation is not a normal jamb-edge barrel |
+| Long hinge runs nearly full door or panel length | Piano / continuous hinge | Support is continuous along edge |
+| Hinge disappears when door is closed | Invisible / concealed hinge | Design intent is hidden hardware |
+| Door clears wall trim or projects away from wall | Parliament / wide-throw family | Knuckle or throw geometry moves the leaf outward |
+
+</ComparisonTable>
+
+## Other Door Hardware Families
+
+### Locksets
+
+A **lockset** is a complete manufactured lock assembly. the construction reference describes it as a complete locking system with the locking mechanism and accessories such as knobs, escutcheons, and plates. the construction reference groups major lockset types into mortise locks, unit/integral locks, and cylinder locks.
+
+- **Mortise lock:** housed in a mortise cut into the door edge; the mechanism is covered on both sides, with visible faceplate, knobs/levers, cylinder, and trim.
+- **Unit / integral lock:** fitted into a prepared door edge condition and combines some security advantages of mortise locks with installation economy.
+- **Cylinder lock:** housed within bored holes at right angles, one through the lock stile and one in the door edge.
+
+Board trap: a lockset is not only the knob. It includes the locking mechanism and associated trim.
+### Latches, Bolts, Strikes, and Stops
+
+A **latch** holds the door closed without necessarily locking it. A **dead bolt** projects a solid bolt for security. A **strike** is the receiving plate or keeper on the frame side where the latch or bolt engages. A **door stop** limits movement so the door, wall, or adjacent finish is not damaged.
+
+These items are small, but they are frequently where specification coordination fails. A lock without a properly aligned strike will not latch. A heavy door without a stop may damage the wall. A bolt without correct receiving hardware does not secure anything.
+### Panic Hardware
+
+**Panic hardware** is a door-latching assembly that disengages when pressure is applied to a horizontal bar across the interior face of an emergency exit door. the construction reference notes that the push bar spans the interior face of the door at waist height and should extend across at least one-half of the width of the door leaf on which it is installed.
+
+Use this term for egress doors where occupants must be able to release the latch quickly by pushing, especially under crowd or emergency conditions. Do not claim panic hardware is required for every door. the construction reference states that building codes require panic hardware on emergency egress doors in certain occupancies; the applicable building code controls the exact requirement.
+### Door Closers and Coordinators
+
+A **door closer** is a hydraulic or pneumatic device that automatically closes a door quickly but quietly. the construction reference explains that closers reduce the shock a large, heavy, or heavily used door would transmit to the frame, hardware, and surrounding wall.
+
+Closers may be:
+
+- Surface-mounted at the door head or top jamb.
+- Concealed within the door head or frame.
+- Mounted on the push side or pull side.
+- Concealed within the floor construction for some glass entrance doors.
+
+A **coordinator** is used on a pair of doors so the inactive leaf closes before the active leaf. This matters where the latching sequence must be controlled.
+
+Industry guides often use closer terms such as **sweep speed**, **latching speed**, **backcheck**, **regular arm**, **parallel arm**, and **top-jamb mount**. Those terms are useful for reading product data, but the exact adjustment and application depend on the closer model and the governing code or specification.
+### Push Plates, Pulls, Kick Plates, Stops, Holders, Bumpers, Thresholds, and Weatherstripping
+
+These items make the door usable and durable.
+
+- **Push plate:** protects the face of a push-side door from hand wear.
+- **Pull handle / pull bar:** gives the user a graspable element for pulling.
+- **Kick plate:** protects the lower door surface from feet, carts, and wheelchair footrests.
+- **Stop / holder / bumper:** controls the door's limit of travel or holds it open where appropriate.
+- **Threshold:** covers or forms the transition at the bottom of the opening.
+- **Weatherstripping:** helps seal against air, water, dust, or sound transmission, depending on the assembly.
+- **Track and guide:** controls sliding or rolling door movement.
+
+Board trap: these are not decorative afterthoughts. They are part of the door's performance.
+
+Source: the construction reference, Door Hardware 8.17.
+
+## Performance, Standards, and Hardware Schedules
+
+In professional specifications, hardware is usually described through a **hardware schedule**: a coordinated list of each door opening and the hardware set assigned to it. The schedule normally coordinates the door, frame, handing, hinges or pivots, lockset, latch/bolt/strike, closer, stop, plates, threshold, weatherstripping, and special requirements such as access control or fire-rated assembly coordination.
+
+Industry sources such as BHMA / ANSI-BHMA use performance vocabulary such as hardware grades, certified products, and standards families. For a learner, the important concept is not to memorize a foreign catalog table. The important concept is that hardware is specified by function, durability, test/performance class, finish, handing, mounting condition, and compatibility with the door and frame.
+
+<Warn>
+
+Do not write “Grade 1 hinge is required” or “BHMA requires this door hardware” unless the project specification, governing code, or verified source says so. For this SlateCamp article, BHMA and manufacturer sources are supplementary vocabulary only.
+
+</Warn>
+<ElaborativeInterrogation promptId="door-hardware-catalog-vs-code" question="Why should a product catalog or foreign hardware standard be treated differently from a Philippine legal requirement in an LEA-style question?" type="open" placeholder="Write the difference between vocabulary/specification guidance and governing code authority." revealText="A catalog or foreign standard can help identify hardware vocabulary, grades, finishes, mounting options, and performance language. It does not automatically create a Philippine legal requirement. If the question asks for a code requirement, the answer must come from the governing Philippine code, fire-safety rule, accessibility source, project specification, or source named in the problem." options='[]' />
+
+## Accessibility, Egress, and Fire-Door Cautions
+
+Door hardware can affect accessibility, emergency egress, and fire/life-safety performance. Treat these as coordination issues, not decoration.
+
+A door serving an accessible route may need hardware that is usable without tight grasping, pinching, or twisting; lever-type hardware is commonly used for this reason. Thresholds, opening force, closer speed, and maneuvering clearance can also affect whether a door is usable. Because accessibility rules are jurisdiction-specific, do not import U.S. ADA wording into a Philippine project without checking the applicable Philippine source.
+
+An emergency exit door may require specific release hardware depending on occupancy, occupant load, and egress condition. Panic hardware is not the same as an ordinary push plate. A fire-rated door is not just a rated leaf; the frame, hardware, closer, latch, seals, labels, and installation must work as an assembly.
+
+<Note>
+
+Exam discipline: if the question is about **recognition**, answer by function. If the question is about **legal requirement**, answer only from the governing code or source named in the problem.
+
+</Note>
+
+## How to Choose the Correct Hinge or Hardware in an Exam Question
+
+Use this sequence:
+
+1. **Name the door movement.** Is the leaf side-hinged, double-swinging, pivoting, sliding, folding, or rolling?
+2. **Identify the user action.** Push, pull, latch, lock, release for egress, close automatically, hold open, or protect the leaf?
+3. **Check visibility and installation.** Mortised, surface-mounted, concealed, full-length, or exposed?
+4. **Check traffic and exposure.** High-use public door, residential interior door, coastal exterior opening, service/kitchen door, emergency exit, or cabinet/access panel?
+5. **Check coordination constraints.** Accessibility, egress, fire rating, security, weather, corrosion, access control, and door/frame material.
+6. **Choose the hardware family.** Hinge, pivot, closer, panic device, lockset, plate, stop, threshold, weatherstripping, track, or guide.
+
+Do not jump from the word “door” to “butt hinge.” A door may need a hinge, pivot, track, closer, lockset, panic device, kick plate, threshold, and weatherstripping in the same opening.
+
+## Real-World Application
+
+Suppose an architect is reviewing the hardware schedule for a small restaurant renovation in Cebu City. The dining-room doors are ordinary side-hinged wood doors, the kitchen service door is pushed through constantly from both sides, the main glass entrance must close without slamming, and the rear exit is part of the emergency egress path.
+
+The architect should not specify one generic hinge for all four conditions. The dining-room doors may use ordinary butt hinges and locksets suitable to their function. The kitchen service door suggests a double-acting spring hinge because staff may pass through while carrying trays or supplies. The glass entrance may need a closer or floor-concealed closer depending on the door system. The rear exit should be checked against the applicable building and fire-code requirements before specifying panic hardware, because panic devices are occupancy- and egress-condition dependent.
+
+A second coordination issue appears in the coastal environment. If the restaurant is near sea air, finish and material selection matter. A plated interior-grade hinge may corrode faster than expected. The architect should coordinate the hardware finish, door material, frame preparation, closer mount, threshold, and weatherstripping with the actual exposure and the supplier's technical data. The practical lesson is that hardware selection is not a last-minute shopping list. It is where architecture, security, durability, accessibility, and life safety meet.
+
+## Common Exam Traps
+
+<WikiMistakeList mistakes='[{"mistake":"Treating a hinge as any metal part on a door","correction":"A hinge supports and turns the door. A lockset secures it. A closer returns it. A panic device releases it. A stop limits movement.","context":"Name the function before choosing the term. Door hardware questions usually reward action-based recognition, not memorized shopping-list vocabulary."},{"mistake":"Confusing loose-pin and loose-joint hinges","correction":"Loose-pin means the pin is removed. Loose-joint means one hinge member is lifted off a fixed vertical pin.","context":"Both can help with door or panel removal, but the mechanism is different. The verb in the question is the clue: remove the pin versus lift off the member."},{"mistake":"Confusing spring hinges with door closers","correction":"A spring hinge provides spring return. A door closer is a hydraulic or pneumatic device that controls closing more deliberately.","context":"If the question mentions reducing shock, quiet closing, closer arms, concealed/surface closers, or sequencing paired leaves, it is pointing to a closer rather than an ordinary spring hinge."},{"mistake":"Assuming panic hardware is universal","correction":"Panic hardware is associated with emergency egress doors in certain occupancies and conditions, not every door.","context":"Do not specify panic hardware from habit. If the question asks for a requirement, check the governing code condition or the source named in the problem."},{"mistake":"Thinking finish means decorative only","correction":"Finishing hardware is exposed, but it still performs technical work: support, latching, locking, pulling, closing, protection, and sealing.","context":"The word finishing tells you the item is visible or touchable in the completed work. It does not mean ornamental or optional."},{"mistake":"Treating a product catalog as a code","correction":"Manufacturer catalogs and standards overviews are vocabulary and specification aids, not automatic Philippine legal mandates.","context":"If the question asks for a code requirement, use the governing Philippine source, project specification, or source named in the problem, not a brand guide by default."}]' />
+
+## Quick Recall Drill
+
+1. What hinge type has two rectangular leaves joined by a pin?
+   **Butt hinge.**
+
+2. What hinge runs the full length of the joined surfaces?
+   **Piano / continuous hinge.**
+
+3. What hinge allows a door to swing in either direction?
+   **Double-acting hinge.**
+
+4. What hardware automatically closes a door and reduces shock to the frame?
+   **Door closer.**
+
+5. What device releases an emergency exit door when a horizontal bar is pressed?
+   **Panic hardware.**
+
+6. What lockset type is housed in a mortise cut into the door edge?
+   **Mortise lock.**
+
+7. What term describes the receiving plate where a latch or bolt engages?
+   **Strike.**
+
+8. What hardware protects the lower face of a door from impact?
+   **Kick plate.**
+
+<InlineQuiz question="A door hardware schedule says a door leaf must be removable for maintenance by lifting it off a fixed vertical pin. Which hinge vocabulary best matches the description?" options='[{"text":"Loose-pin hinge","is_correct":false},{"text":"Loose-joint hinge","is_correct":true},{"text":"Piano hinge","is_correct":false},{"text":"Door closer","is_correct":false}]' rationale="A loose-joint hinge separates by lifting the hinge member off the vertical pin. A loose-pin hinge separates by removing the pin itself." />
+
+<InlineQuiz question="A service door must swing both ways and return toward the closed position after staff pass through from either side. Which hardware family is being tested?" options='[{"text":"Double-acting spring hinge","is_correct":true},{"text":"Panic hardware","is_correct":false},{"text":"Kick plate","is_correct":false},{"text":"Cylinder lock","is_correct":false}]' rationale="The clues are two-way swing and spring return. Panic hardware is about emergency release; a kick plate protects the door face; a cylinder lock is a lockset family." />
+
+## Linked-Question Bridge
+
+After reading this article, a learner should be able to answer questions that ask:
+
+- Which hardware supports and turns a side-hinged door?
+- Which hinge type is continuous along the full edge?
+- Which hinge allows two-way swing?
+- Which hardware releases an exit door through a horizontal push bar?
+- Which hardware closes a heavy or frequently used door without slamming?
+- Which component receives a latch or bolt?
+- Which term describes a complete manufactured lock assembly?
+- Which protective hardware belongs at the lower door face?
+
+## Source Note
+
+This article is written as a SlateCamp study guide for LEA review. It synthesizes general architectural hardware vocabulary, common construction usage, and exam-oriented distinctions. Non-legal textbooks, manufacturer literature, and trade references may have informed the internal drafting process, but they are not presented here as learner-facing authorities.
+
+For legal or code-based topics, SlateCamp cites the applicable Philippine law, code, rule, or official government source directly. This hinge article is a construction-vocabulary article, not a statement of Philippine legal requirements.

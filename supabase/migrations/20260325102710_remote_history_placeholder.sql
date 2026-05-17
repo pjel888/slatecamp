@@ -1,0 +1,3 @@
+-- Remote migration history placeholder for SlateCamp Supabase reconciliation.
+-- Version 20260325102710 exists in the linked Supabase migration history, but the original SQL file is not present in this repository.
+-- Intentionally empty: preserves CLI lineage without replaying unknown historical DDL.

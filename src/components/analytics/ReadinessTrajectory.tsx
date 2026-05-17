@@ -11,7 +11,6 @@ import {
 import { cn } from '@/lib/utils'
 import { useChartColors } from '@/hooks/useChartColors'
 import { getScoreColor } from '@/components/shared/score-display'
-import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import type { ReadinessTrajectoryPoint } from '@/lib/actions/analytics'
 
 interface Props {
@@ -28,7 +27,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
   const delta = previousScore ? Math.abs(Math.round(currentScore - previousScore)) : 0
 
   return (
-    <Card className="border-border bg-card p-2 relative">
+    <Card className="border-border bg-card p-2 relative gap-1">
       <RichInfoPopover title="Readiness Trajectory" description="Your composite readiness score over time. The green line is the passing threshold." />
       <CardHeader className="p-2 pt-1">
         <div className="flex items-start justify-between">
@@ -66,11 +65,12 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length < 2 ? (
-          <ChartEmptyState
-            title="No readiness data yet"
-            description="Complete a few quizzes to see your readiness trajectory."
-            height="h-[220px]"
-          />
+          <div className="flex min-h-[72px] flex-col items-center justify-center rounded-md border border-dashed border-border/50 bg-card px-2 py-1 text-center">
+            <p className="text-xs font-medium text-foreground">No readiness data yet</p>
+            <p className="mt-0.5 max-w-48 text-[11px] leading-snug text-muted-foreground">
+              Complete a few quizzes to see your readiness trajectory.
+            </p>
+          </div>
         ) : (
           <div className="h-[120px]">
             <div role="img" aria-label="Readiness score trajectory chart showing progress over time">

@@ -2,9 +2,9 @@
 
 **Last Updated:** 2026-05-05
 **Current source:**
-- `.ai/02_audits/CODEBASE_AUDIT_REPORT_2026_05_05.md`
-- `.ai/02_audits/SCHEMA_SOURCE_OF_TRUTH_REMEDIATION_2026_05_05.md`
-- `.ai/02_audits/SUPABASE_VERIFICATION_TARGET_MIGRATION_REPLAY_TYPE_REGENERATION_REPORT_2026_05_05.md`
+- `.ai/02_audits/code-quality/CODEBASE_AUDIT_REPORT_2026_05_05.md`
+- `.ai/02_audits/supabase/SCHEMA_SOURCE_OF_TRUTH_REMEDIATION_2026_05_05.md`
+- `.ai/02_audits/supabase/SUPABASE_VERIFICATION_TARGET_MIGRATION_REPLAY_TYPE_REGENERATION_REPORT_2026_05_05.md`
 
 ## Current status as of 2026-05-05
 
@@ -55,7 +55,7 @@ The application-layer P0 remediation is validated. The full validation gate pass
 
 1. Safe non-production Supabase verification target is unavailable.
 2. Docker was unavailable in the last verification environment.
-3. `supabase/config.toml` is missing.
+3. `supabase/config.toml` exists but has not been verified for production readiness.
 4. The 101 active migrations have not been replay-verified locally or in staging.
 5. AI audit restriction migration has not been DB-verified:
    - `supabase/migrations/20260505145349_restrict_ai_audit_admin_access.sql`
@@ -81,9 +81,9 @@ These remain future roadmap items unless a future PR deliberately reintroduces p
 
 ## Active source-of-truth references
 
-- Full audit: `.ai/02_audits/CODEBASE_AUDIT_REPORT_2026_05_05.md`
-- Schema remediation/static review: `.ai/02_audits/SCHEMA_SOURCE_OF_TRUTH_REMEDIATION_2026_05_05.md`
-- Supabase verification attempt: `.ai/02_audits/SUPABASE_VERIFICATION_TARGET_MIGRATION_REPLAY_TYPE_REGENERATION_REPORT_2026_05_05.md`
+- Full audit: `.ai/02_audits/code-quality/CODEBASE_AUDIT_REPORT_2026_05_05.md`
+- Schema remediation/static review: `.ai/02_audits/supabase/SCHEMA_SOURCE_OF_TRUTH_REMEDIATION_2026_05_05.md`
+- Supabase verification attempt: `.ai/02_audits/supabase/SUPABASE_VERIFICATION_TARGET_MIGRATION_REPLAY_TYPE_REGENERATION_REPORT_2026_05_05.md`
 - Supabase verification runbook: `.ai/00_system/SUPABASE_VERIFICATION_RUNBOOK.md`
 - Active roadmap: `.ai/01_roadmap/current-phase.md`
 

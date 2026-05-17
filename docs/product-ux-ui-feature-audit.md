@@ -9,15 +9,15 @@ This root `docs/` file is intentionally reduced to a bridge pointer so it does n
 Use these files for current launch readiness and cleanup state:
 
 - `README.md`
-- `.ai/final-launch-readiness.md`
-- `.ai/launch-cutline.md`
-- `.ai/routes.md`
-- `.ai/features.md`
-- `.ai/deferred-integrations.md`
-- `.ai/db-cleanup-deferred.md`
-- `.ai/risk-register.md`
-- `.ai/known-issues.md`
-- `.ai/cleanup-execution-log.md`
+- `.ai/02_audits/2026-04-29--launch--audit--final-readiness.md`
+- `.ai/03_plans/general--launch/2026-04-29--launch--plan--cutline.md`
+- `.ai/06_specs/routes--map--v2.md`
+- `.ai/06_specs/features--inventory--v2.md`
+- `.ai/02_audits/2026-04-29--integrations--audit--deferred.md`
+- `.ai/03_plans/general--cleanup/2026-04-29--db--plan--cleanup-deferred.md`
+- `.ai/10_state/risk-register--state--v1.md`
+- `.ai/10_state/known-issues--state--v1.md`
+- `.ai/05_logs/2026-04-29--cleanup--log--execution.md`
 
 ## Current launch stance
 

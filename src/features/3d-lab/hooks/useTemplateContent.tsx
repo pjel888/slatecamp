@@ -7,6 +7,11 @@ import { GenericControlPanel } from '@/features/3d-lab/components/templates/Gene
 import { ComplianceReportPanel } from '@/features/3d-lab/components/templates/ComplianceReportPanel'
 import { StairwayWorkbenchLeftPanel } from '@/features/3d-lab/components/templates/StairwayWorkbenchPanels'
 import {
+  LightingRoomChecksPanel,
+  LightingRoomLeftPanel,
+  LightingRoomStatusBar,
+} from '@/features/3d-lab/components/templates/LightingRoomPanels'
+import {
   ParkingLotRequirementsLeftPanel,
   ParkingLotRequirementsRightPanel,
 } from '@/features/3d-lab/components/templates/ParkingLotRequirementsPanels'
@@ -76,6 +81,11 @@ const AnimatedSequenceScene = dynamic(
 
 const WallConfiguratorRenderer = dynamic(
   () => import('@/features/3d-lab/templates/WallConfiguratorRenderer').then((m) => m.WallConfiguratorRenderer),
+  { ssr: false },
+)
+
+const LightingRoomScene = dynamic(
+  () => import('@/features/3d-lab/components/templates/LightingRoomScene').then((m) => m.LightingRoomScene),
   { ssr: false },
 )
 
@@ -316,6 +326,41 @@ export const useTemplateContent = (
                   useStore={useStore}
                 />
               ) : undefined,
+            },
+          }
+        }
+
+        // ── Lighting Room Simulator special path ──
+        // Module-specific scene owns its live point/spot light behavior. Studio
+        // lighting is disabled so learners see only the authored teaching light.
+        if (cfg.id === 'lighting-room-simulator') {
+          return {
+            shellConfig: {
+              ...shellConfig,
+              leftSidebar: { width: 320, title: cfg.title, mobileTabLabel: 'Controls' },
+              rightSidebar: { width: 386, title: 'Review', mobileTabLabel: 'Review' },
+              statusBar: true,
+            },
+            capabilities,
+            content: {
+              canvasContent: canvasWrapper(
+                <LightingRoomScene useStore={useStore} />,
+                {
+                  showGround: false,
+                  disableLighting: true,
+                  clearColor: '#f5f1e8',
+                  flat: false,
+                },
+              ),
+              leftSidebarContent: (
+                <LightingRoomLeftPanel useStore={useStore} />
+              ),
+              rightSidebarContent: (
+                <LightingRoomChecksPanel useStore={useStore} />
+              ),
+              statusBarContent: (
+                <LightingRoomStatusBar useStore={useStore} />
+              ),
             },
           }
         }

@@ -7,6 +7,7 @@ import {
   createHeadingIdTracker,
   createMdxFallbackSource,
   extractHeadings,
+  repairSlatecampUiBlockPlaceholdersForRender,
   sanitizeMDX,
   injectEIPrompts,
 } from '@/lib/wiki-markdown'
@@ -45,6 +46,8 @@ import { WikiTableTabs } from '../blocks/WikiTableTabs'
 import { WikiPre } from '../blocks/WikiPre'
 import { GenericBlock, SPP206RefServices, SPP207RefServices } from '../blocks/GenericBlock'
 import { ArticleMedia } from '../blocks/ArticleMedia'
+import { DoorHinge3D } from '../blocks/DoorHinge3D'
+import { SourceList, SourceQuote, SourceRef } from '../blocks/SourceReference'
 
 interface WikiArticleProps {
   article: WikiArticleType
@@ -55,7 +58,7 @@ interface WikiArticleProps {
 }
 
 const WIKI_PROSE_CLASS_NAME =
-  'prose prose-wiki dark:prose-invert'
+  'prose prose-wiki wiki-article-expanded dark:prose-invert'
 
 function getHeadingText(children: React.ReactNode): string {
   return React.Children.toArray(children)
@@ -217,6 +220,10 @@ const WIKI_COMPONENTS = {
 
   // Article media — images, carousels, YouTube embeds, video, embeds
   ArticleMedia,
+  DoorHinge3D,
+  SourceRef,
+  SourceQuote,
+  SourceList,
 }
 
 export const getArticleHeadings = (article: WikiArticleType): TocHeading[] => {
@@ -240,7 +247,9 @@ export const compileWikiArticleWithRenderer = async ({
     .replace(/\[EI\][\s\S]*?\[\/EI\]/g, '')
     .replace(/<!--[\s\S]*?-->/g, '')
 
-  const processedContent = injectEIPrompts(cleaned, eiPrompts)
+  const processedContent = repairSlatecampUiBlockPlaceholdersForRender(
+    injectEIPrompts(cleaned, eiPrompts)
+  )
   if (containsSlatecampUiBlockPlaceholder(processedContent)) {
     throw new Error('Raw SLATECAMP_UI_BLOCK placeholders detected in article content. Content must be repaired before rendering.')
   }
@@ -293,7 +302,9 @@ export const WikiArticle = async ({
     .replace(/\[EI\][\s\S]*?\[\/EI\]/g, '')
     .replace(/<!--[\s\S]*?-->/g, '')
   
-  const processedContent = injectEIPrompts(cleaned, eiPrompts)
+  const processedContent = repairSlatecampUiBlockPlaceholdersForRender(
+    injectEIPrompts(cleaned, eiPrompts)
+  )
   sanitizeMDX(processedContent)
 
   let mdxContent = null

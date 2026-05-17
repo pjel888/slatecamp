@@ -1,7 +1,7 @@
 # Environment Contract
 
 **Status:** Current after 2026-05-09 OpenRouter provider integration pass.
-**Canonical detailed inventory:** `.ai/environment.md`.
+**Canonical detailed inventory:** `.ai/06_specs/environment--spec--v2.md`.
 
 Current launch is payment-free and public/learner live-AI-provider-free. LemonSqueezy is no longer a runtime launch integration. Do not require `LEMONSQUEEZY_*`, `PAYREX_*`, app-runtime `OPENROUTER_API_KEY`, `OPENAI_API_KEY`, or `ANTHROPIC_API_KEY` variables for the current learner-facing launch unless a future PR deliberately reintroduces paid/live-AI behavior.
 

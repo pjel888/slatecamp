@@ -24,4 +24,4 @@ This file remains useful as a historical overlay explanation, but the canonical 
 
 ## Important note
 
-The numbered folders are an **organizational overlay**, not a destructive migration. The legacy/source paths remain valid until a future human-approved consolidation decides otherwise.
+The numbered folders are the canonical organizational structure. Legacy paths from before the 2026-05-17 org pass may no longer be valid. Most former `.ai/` root-level files have been moved into numbered folders with updated names per the naming conventions in `naming-conventions.md`. See `ai-folder-canonical-map.md` for current routing.

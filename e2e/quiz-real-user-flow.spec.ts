@@ -9,11 +9,12 @@ import {
 
 const noQuestionsServerMessage =
   'No questions found. Try widening your selection or changing difficulty.'
+const emptyPoolDiagnosticMessage = '[intelligent-routing] Empty pool after all fallbacks'
 
 async function selectSubject(page: Page, name: string | RegExp, selectedCount: number) {
-  const configurator = page.getByTestId('quiz-configurator')
+  const configurator = page.getByRole('dialog', { name: /Build SlateCamp Quiz/i })
   await expect(configurator).toBeVisible({ timeout: 60_000 })
-  const subjectOption = configurator.getByTestId('quiz-subject-option').filter({ hasText: name })
+  const subjectOption = configurator.getByRole('button', { name, exact: typeof name === 'string' })
   await subjectOption.evaluate((element) => {
     element.scrollIntoView({ block: 'center', inline: 'center' })
   })
@@ -30,10 +31,10 @@ async function selectSubject(page: Page, name: string | RegExp, selectedCount: n
     await subjectOption.press('Enter')
     await page.waitForTimeout(150)
   }
-  await expect(subjectOption, `selected subject count target ${selectedCount}`).toHaveAttribute(
-    'aria-pressed',
-    'true',
-  )
+  await expect(
+    page.getByText(new RegExp(`Subjects selected|${selectedCount} subject`, 'i')),
+    `selected subject count target ${selectedCount}`,
+  ).toBeVisible({ timeout: 10_000 })
 }
 
 async function openQuiz(page: Page) {
@@ -44,7 +45,14 @@ async function openQuiz(page: Page) {
 
   expect(response?.ok(), '/dashboard/quiz should return 2xx').toBe(true)
   await expect(
-    page.getByRole('heading', { name: /Configure your quiz/i }),
+    page.getByRole('heading', { name: /Choose a quiz mode/i }),
+  ).toBeVisible({ timeout: 60_000 })
+  const buildQuizButton = page.getByRole('button', { name: /Build quiz/i })
+  const box = await buildQuizButton.boundingBox()
+  if (!box) throw new Error('Build quiz button is not visible')
+  await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2)
+  await expect(
+    page.getByRole('heading', { name: /Build SlateCamp Quiz/i }),
   ).toBeVisible({ timeout: 60_000 })
 }
 
@@ -75,17 +83,11 @@ test.describe('real seeded quiz session flow', () => {
     await expect(page.locator('body')).not.toContainText(noQuestionsServerMessage, {
       timeout: 5_000,
     })
-    await expect(
-      page.getByRole('heading', { name: /Quiz Ready/i }),
-    ).toBeVisible({ timeout: 30_000 })
-    await expect(page.getByText(/3 questions queued across/i)).toBeVisible()
-    await page.getByTestId('quiz-enter-session').click()
-
     await expect(page).toHaveURL(/\/dashboard\/quiz\/session\//, {
       timeout: 60_000,
     })
 
-    for (const questionNumber of [1, 2, 3]) {
+    for (const questionNumber of QUIZ_REAL_SEED.questionIds.map((_, index) => index + 1)) {
       await expect(page.getByTestId('quiz-current-question')).toContainText(
         new RegExp(`Question ${questionNumber}\\b`, 'i'),
         { timeout: 30_000 },
@@ -105,16 +107,12 @@ test.describe('real seeded quiz session flow', () => {
         page.locator('[role="status"]').filter({ hasText: /Correct|Not quite/i }),
       ).toBeVisible({ timeout: 30_000 })
 
-      if (questionNumber < 3) {
+      if (questionNumber < QUIZ_REAL_SEED.questionIds.length) {
         await page.getByRole('button', { name: /^Next question$/i }).first().click()
       }
     }
 
     await page.getByRole('button', { name: /^See results$/i }).first().click()
-    await expect(page.getByTestId('quiz-results-loading')).toBeVisible({ timeout: 5_000 })
-    await expect(page.getByText(/Final answer saved/i)).toBeVisible()
-    await expect(page.getByText(/Results dashboard next/i)).toBeVisible()
-
     await expect(page).toHaveURL(/\/dashboard\/quiz\/session\/[^/]+\/results/, {
       timeout: 60_000,
     })
@@ -131,9 +129,9 @@ test.describe('real seeded quiz session flow', () => {
     await expect(page.locator('body')).not.toContainText(noQuestionsServerMessage, {
       timeout: 5_000,
     })
-    await expect(
-      page.getByRole('heading', { name: /Quiz Ready/i }),
-    ).toBeVisible({ timeout: 30_000 })
+    await expect(page).toHaveURL(/\/dashboard\/quiz\/session\//, {
+      timeout: 60_000,
+    })
   })
 
   test('shows a recoverable error when selected filters have no matching questions', async ({
@@ -153,12 +151,18 @@ test.describe('real seeded quiz session flow', () => {
     await expect(page.locator('body')).toContainText(noQuestionsServerMessage, {
       timeout: 30_000,
     })
-    expect(consoleErrors.some((message) => message.includes(noQuestionsServerMessage))).toBe(true)
+    expect(
+      consoleErrors.every(
+        (message) =>
+          message.includes(noQuestionsServerMessage) ||
+          message.includes(emptyPoolDiagnosticMessage),
+      ),
+    ).toBe(true)
 
     await selectSubject(page, QUIZ_REAL_SEED.subjectName, 2)
     await dragSliderToSubmit(page, page.getByTestId('quiz-start-slider'))
-    await expect(
-      page.getByRole('heading', { name: /Quiz Ready/i }),
-    ).toBeVisible({ timeout: 30_000 })
+    await expect(page).toHaveURL(/\/dashboard\/quiz\/session\//, {
+      timeout: 60_000,
+    })
   })
 })

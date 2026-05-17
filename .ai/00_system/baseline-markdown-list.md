@@ -1,5 +1,7 @@
 ## Baseline Markdown Files
 
+**Note:** This file is a historical snapshot from before the 2026-05-17 .ai/ reorganization pass. Many paths listed here no longer reflect the current .ai/ tree. See `ai-folder-canonical-map.md` for current routing.
+
 - `.ai/00_performance/README.md`
 - `.ai/00_performance/current-performance-risk-register.md`
 - `.ai/00_performance/loading-and-responsiveness-audit.md`

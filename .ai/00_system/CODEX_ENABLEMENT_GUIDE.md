@@ -20,38 +20,34 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 
 ### General repository orientation
 
-- `.ai/02_audits/CODEX_ENABLEMENT_AUDIT.md`
+- `.ai/02_audits/admin/CODEX_ENABLEMENT_AUDIT.md`
 - `.ai/10_state/current-state.md`
 - `.ai/10_state/findings-register.md`
 
 ### `/admin` work
 
 - `src/app/admin/AGENTS.md`
-- `.ai/02_audits/ADMIN_SURFACE_AUDIT.md`
-- `.ai/03_plans/ADMIN_SURFACE_PLAN.md`
+- `.ai/02_audits/admin/ADMIN_SURFACE_AUDIT.md`
+- `.ai/03_plans/general--surface-plans/admin-surface--plan--v1.md`
 - `.ai/00_system/ROUTE_SURFACE_MAP.md`
 - `.ai/00_system/VALIDATION_MATRIX.md`
 
 ### `/developer` work
 
 - `src/app/developer/AGENTS.md`
-- `.ai/02_audits/DEVELOPER_SURFACE_AUDIT.md`
-- `.ai/03_plans/DEVELOPER_SURFACE_PLAN.md`
+- `.ai/02_audits/admin/DEVELOPER_SURFACE_AUDIT.md`
+- `.ai/03_plans/general--surface-plans/developer-surface--plan--v1.md`
 - `.ai/00_system/ROUTE_SURFACE_MAP.md`
 
 ### Data, auth, or Supabase work
 
-- `supabase/AGENTS.md`
-- `src/lib/AGENTS.md`
-- `.ai/00_system/DATA_BOUNDARY_MAP.md`
 - `.ai/00_system/ENVIRONMENT_CONTRACT.md`
-- `.ai/00_system/VALIDATION_MATRIX.md`
 
 ### Docs or AGENTS work
 
 - `.ai/00_system/DOCS_SOURCE_OF_TRUTH.md`
-- `.ai/02_audits/AGENTS_AND_DOCS_AUDIT.md`
-- `.ai/03_plans/DOCS_AND_AGENTS_HARDENING_PLAN.md`
+- `.ai/02_audits/docs/AGENTS_AND_DOCS_AUDIT.md`
+- `.ai/03_plans/general--docs-and-agents/docs-and-agents-hardening--plan--v1.md`
 
 ### Design-system or UI styling work
 

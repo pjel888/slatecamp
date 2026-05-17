@@ -74,8 +74,16 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
           />
         ) : (
           <div className="w-full h-[260px]">
-            <div role="img" aria-label="Subject mastery radar chart showing coverage across LEA exam subject areas">
-            <ResponsiveContainer width="100%" height="100%">
+            <div
+              role="img"
+              aria-label="Subject mastery radar chart showing coverage across LEA exam subject areas"
+              className="h-full min-h-0 w-full min-w-0"
+            >
+            <ResponsiveContainer
+              width="100%"
+              height="100%"
+              initialDimension={{ width: 1, height: 1 }}
+            >
               <RadarChart cx="50%" cy="50%" outerRadius="75%" data={data}>
                 <PolarGrid stroke={colors.gridStroke} strokeWidth={1} />
                 <PolarAngleAxis

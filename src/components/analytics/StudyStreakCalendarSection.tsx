@@ -5,10 +5,16 @@ const StudyStreakCalendar = dynamic(
   () => import('@/components/analytics/StudyStreakCalendar').then(m => m.StudyStreakCalendar),
 )
 
-export const StudyStreakCalendarSection = async () => {
+interface StudyStreakCalendarSectionProps {
+  variant?: 'default' | 'compact'
+}
+
+export const StudyStreakCalendarSection = async ({
+  variant = 'default',
+}: StudyStreakCalendarSectionProps) => {
   const result = await getStudyActivity()
   if (result.error) throw new Error(result.error)
   const now = new Date()
   const monthLabel = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
-  return <StudyStreakCalendar data={result.data} monthLabel={monthLabel} />
+  return <StudyStreakCalendar data={result.data} monthLabel={monthLabel} variant={variant} />
 }

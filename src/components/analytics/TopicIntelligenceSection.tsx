@@ -9,7 +9,15 @@ const TopicIntelligenceCards = dynamic(
     ),
 )
 
-export const TopicIntelligenceSection = async () => {
+interface TopicIntelligenceSectionProps {
+  heightClassName?: string
+  variant?: 'default' | 'compact'
+}
+
+export const TopicIntelligenceSection = async ({
+  heightClassName = 'h-[400px]',
+  variant = 'default',
+}: TopicIntelligenceSectionProps) => {
   const result = await getTopicIntelligenceData()
   if (result.error) throw new Error(result.error)
 
@@ -18,10 +26,16 @@ export const TopicIntelligenceSection = async () => {
       <ChartEmptyState
         title="No topic intelligence yet"
         description="Topic intelligence appears after answering questions across multiple topics."
-        height="h-[400px]"
+        height={heightClassName}
       />
     )
   }
 
-  return <TopicIntelligenceCards data={result.data} />
+  return (
+    <TopicIntelligenceCards
+      data={result.data}
+      heightClassName={heightClassName}
+      variant={variant}
+    />
+  )
 }

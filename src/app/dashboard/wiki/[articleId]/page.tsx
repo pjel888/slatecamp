@@ -254,7 +254,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
           <div className='flex-1'>
             <div
               className={cn(
-                'max-w-4xl mx-auto p-2',
+                'max-w-5xl mx-auto p-2',
                 isMinimal && 'px-4 py-6 max-w-none',
               )}
             >
@@ -316,7 +316,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
           {/* Prev/Next — sticky to the bottom, always visible. Hidden in print. */}
           {!isMinimal && (
             <div className='shrink-0 border-t border-border bg-background print:hidden'>
-              <div className='max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground'>
+              <div className='max-w-5xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground'>
                 {siblings.prev ? (
                   <Link
                     href={ROUTES.wiki.article(siblings.prev.article_id || '')}
