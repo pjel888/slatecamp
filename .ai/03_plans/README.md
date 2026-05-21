@@ -11,6 +11,7 @@ Active planning entrypoint. All loose plan files have been grouped into topic su
 ## Current Active Entry Points
 
 - `2026-05-13--li-vizcode--3d-learning-master-plan/` is the active consolidated plan package for LI, VizCode competitive response, 3D Lab hotspot learning, source-truth gates, UX/UI learning paths, implementation sequencing, QA, and release gates.
+- `2026-05-21--article-3d-generation-toolchain/` is the active plan for article-embedded 3D generation using text-to-cad for exact/source-backed geometry and Hyper3D/Rodin, Pixal3D, TRELLIS.2, and Blender only for provenance-gated visual assets.
 - `content-editorial-pipeline-2026-05-05/` is the active comprehensive plan pack for source-grounded AI-assisted article/question editing, fact ledgers, validators, pilot benchmarks, and `/admin/ai-audit` integration. Several scripts reference this path directly.
 - `final-second-audit/` preserves the live closure/readiness aggregation from the final content/Supabase pass.
 - `auth-status-feature-flag-cleanup/` is the preparation-only plan package for high-risk auth/status/feature-flag compatibility cleanup.

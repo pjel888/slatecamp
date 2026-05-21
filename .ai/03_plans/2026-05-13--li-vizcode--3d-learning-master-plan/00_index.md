@@ -23,6 +23,7 @@ The source folders are valuable evidence, but they should no longer be used as c
 5. Every student-facing code claim must resolve to a source card, locator, formula/test seed where applicable, and review evidence.
 6. VizCode PH is a competitive product signal only. It is not a source of legal, code, or educational truth.
 7. The active product surface starts inside 3D Lab, including a future coverage view, not a new top-level navigation item.
+8. New article/3D Lab assets should follow `.ai/03_plans/2026-05-21--article-3d-generation-toolchain/README.md`: `text-to-cad` for exact/source-backed geometry; Hyper3D/Rodin, Pixal3D, TRELLIS.2, and Blender only for provenance-gated visual assets.
 
 ## Document Inventory
 
