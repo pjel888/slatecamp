@@ -16,6 +16,8 @@ Status rules:
 
 Master rule: Blender/Three.js geometry is never the legal truth. Source cards, formula tests, and SME review define truth.
 
+Shared asset-generation rule: for exact/source-backed geometry, prefer `text-to-cad`/parametric CAD and preserve auditable STEP + inspect facts before web GLB export. Hyper3D/Rodin, Pixal3D, and TRELLIS.2 may only provide provenance-gated visual candidates. See `.ai/03_plans/2026-05-21--article-3d-generation-toolchain/README.md`.
+
 ## Module matrix
 
 | Module ID | Working title | Category | Current status | Primary law/source families | Planning folder | Implementation posture |

@@ -100,6 +100,7 @@ Build a source-grounded, roundtrip-safe editorial pipeline where AI proposes imp
 3. Every component insertion must use the actual SlateCamp component registry.
 4. Every article edit must pass compose, diff, validation, and dry-run before apply.
 5. High-risk and critical content creates review packets or PRs, not automatic publishes.
+6. Article-embedded 3D visuals must follow `.ai/03_plans/2026-05-21--article-3d-generation-toolchain/README.md`: `text-to-cad` for source-backed geometry; AI 3D tools only for provenance-gated illustrations.
 
 ## Phase 0.5A.3 / 0.5B Generated Reconciliation Artifacts
 
