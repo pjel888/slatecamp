@@ -40,6 +40,18 @@ bun run build             # Production build
 bun run check:entitlements # Entitlement legacy usage check
 ```
 
+### Supabase Verification Protocol
+
+For any Supabase, RLS, migration, RPC, grant, policy, database-client, server-action, or query change, read and follow `.ai/00_system/supabase-change--protocol--v1.md` before editing.
+
+Minimum expectations:
+- Capture Supabase Advisor and lint baselines before SQL work when linked access is available.
+- Treat advisor warnings as acceptance criteria, not optional cleanup.
+- New public tables need RLS plus intentional policies; do not disable RLS to silence warnings.
+- SECURITY DEFINER functions need callsite review, fixed grants, and advisor verification.
+- Validate migrations with lint, dry-run, and rollback smoke before live apply.
+- After any live apply, rerun advisors/lint and record remaining warning names in an `.ai/02_audits/` note.
+
 ### Context-Dependent (Safe in Dev, Verify Before Running in CI/Prod)
 ```bash
 bun run test:e2e:smoke    # Quick Playwright smoke tests

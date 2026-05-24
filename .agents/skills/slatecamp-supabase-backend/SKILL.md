@@ -247,6 +247,8 @@ const supabase = createClient(
 
 ## Migrations
 
+Before writing or reviewing a migration, follow `.ai/00_system/supabase-change--protocol--v1.md`. Supabase Advisor/lint findings are part of the migration acceptance criteria.
+
 ### Naming Convention
 ```
 YYYYMMDD_HHmm_description.sql
@@ -255,10 +257,14 @@ YYYYMMDD_HHmm_description.sql
 
 ### Migration Rules
 1. Every schema change is a migration file — no direct SQL in production
-2. Migrations are additive — never drop columns (add `_deprecated` suffix first)
-3. New NOT NULL columns always have DEFAULT values
-4. Index every foreign key column
-5. Test migration on local Supabase before applying to production
+2. Capture Supabase Advisor/lint baselines before SQL work when linked access is available
+3. Every new public table has RLS plus explicit policies; never disable RLS to silence warnings
+4. SECURITY DEFINER functions require callsite review, fixed search path/grants, and post-change advisor verification
+5. Migrations are additive — never drop columns (add `_deprecated` suffix first)
+6. New NOT NULL columns always have DEFAULT values
+7. Index every foreign key column
+8. Test migration on local/staging Supabase before applying to production
+9. Validate with Supabase lint, dry-run, rollback smoke, and post-apply advisor checks per `.ai/00_system/supabase-change--protocol--v1.md`
 
 ### Index Strategy
 ```sql

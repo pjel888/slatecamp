@@ -17,10 +17,11 @@ Use for auth changes, permission checks, secrets handling, external integrations
 ## Procedure
 
 1. Identify trust boundaries.
-2. Inspect server-side enforcement and data access controls.
-3. Check input validation, output handling, and logging.
-4. Look for sensitive values in code, configs, docs, or logs.
-5. Recommend fixes by severity.
+2. For Supabase/database work, load `.ai/00_system/supabase-change--protocol--v1.md` and treat advisor/lint findings as acceptance criteria.
+3. Inspect server-side enforcement and data access controls.
+4. Check input validation, output handling, and logging.
+5. Look for sensitive values in code, configs, docs, or logs.
+6. Recommend fixes by severity.
 
 ## Rule
 

@@ -41,7 +41,11 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 
 ### Data, auth, or Supabase work
 
+- `.ai/00_system/supabase-change--protocol--v1.md` — mandatory for any Supabase/migration/RLS/RPC/grant/client-access change
 - `.ai/00_system/ENVIRONMENT_CONTRACT.md`
+- `.ai/00_system/DATA_BOUNDARY_MAP.md`
+- `.ai/00_system/SUPABASE_VERIFICATION_RUNBOOK.md`
+- Supabase Advisor and lint findings are acceptance criteria: capture baselines before editing and rerun after live apply
 
 ### Docs or AGENTS work
 

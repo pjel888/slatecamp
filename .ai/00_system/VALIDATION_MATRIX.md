@@ -133,7 +133,11 @@ scripts.
 
 ### Supabase / data boundaries
 
-- verify schema claims against `DATABASE_SCHEMA.sql` plus relevant recent migrations
+- load `.ai/00_system/supabase-change--protocol--v1.md` before any Supabase, RLS, migration, RPC, grant, or Supabase-client access change
+- verify schema claims against `DATABASE_SCHEMA.sql` plus relevant recent migrations and live metadata when linked access is available
+- capture Supabase Advisor and lint baselines before editing: `bunx supabase db advisors --linked --output json` and `bunx supabase db lint --linked`
+- validate SQL changes with `bunx supabase db push --dry-run --linked` and a rollback smoke test before any live apply
+- after live apply, rerun advisors/lint and record remaining warning names; do not claim completion if new warnings were introduced
 - use non-destructive inspection first
 - do not run reset/drop scripts casually
 
