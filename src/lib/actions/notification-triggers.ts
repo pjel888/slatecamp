@@ -1,6 +1,13 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createServiceClient, getUser } from '@/lib/supabase/server'
+
+const ensureCurrentUser = async (userId: string) => {
+  const { data: { user } } = await getUser()
+  if (!user || user.id !== userId) {
+    throw new Error('Unauthorized notification target')
+  }
+}
 
 /**
  * Create a score_change notification when readiness score moves.
@@ -13,8 +20,9 @@ export const triggerScoreChangeNotification = async (
   topicName: string,
 ) => {
   if (previousScore === newScore) return
+  await ensureCurrentUser(userId)
 
-  const supabase = await createClient()
+  const supabase = await createServiceClient()
   await supabase.rpc('create_notification', {
     p_user_id: userId,
     p_type: 'score_change',
@@ -48,6 +56,8 @@ export const triggerZoneTransitionNotification = async (
   previousScore: number,
   newScore: number,
 ) => {
+  await ensureCurrentUser(userId)
+
   const prevZone = getZone(previousScore)
   const newZone = getZone(newScore)
   if (!prevZone || !newZone || prevZone.zone === newZone.zone) return
@@ -58,7 +68,7 @@ export const triggerZoneTransitionNotification = async (
       ? 'Great progress — keep building momentum.'
       : 'A dip is normal. Focus on your weakest areas.'
 
-  const supabase = await createClient()
+  const supabase = await createServiceClient()
   await supabase.rpc('create_notification', {
     p_user_id: userId,
     p_type: 'zone_transition',
