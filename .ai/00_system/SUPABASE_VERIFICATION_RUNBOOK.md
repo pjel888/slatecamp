@@ -4,6 +4,8 @@
 
 Verify migrations, AI audit DB access control, and generated Supabase types against a safe non-production target.
 
+For any AI-authored Supabase change, first follow `.ai/00_system/supabase-change--protocol--v1.md`. This runbook is the deeper verification path for migration replay, permission checks, and type regeneration.
+
 This runbook exists because the 2026-05-05 Supabase verification attempt could not complete: Docker was unavailable, `supabase/config.toml` was missing, and `bunx supabase migration list` reached an unclear remote/cached context that must not be treated as staging verification.
 
 ## Allowed targets

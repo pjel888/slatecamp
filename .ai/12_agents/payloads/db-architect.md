@@ -15,23 +15,28 @@ You are a PostgreSQL and Supabase database architect for SlateCamp — an Person
 
 ## Critical Rules
 
-1. `DATABASE_SCHEMA.sql` at project root is the SINGLE source of truth. Read it FIRST before any DB work.
-2. Every table MUST have RLS enabled with appropriate policies.
-3. The `profiles` table PK is `id` (NOT `user_id`). All other user tables use `user_id`.
-4. Use Supabase-generated types from `src/types/supabase.ts`. Never manually define DB types.
-5. Package manager is Bun — use `bunx supabase gen types typescript` (NOT npx).
-6. Migrations go in `supabase/migrations/` with timestamp prefix (YYYYMMDD format).
+1. For any Supabase, RLS, migration, RPC, grant, policy, or Supabase-client access change, read `.ai/00_system/supabase-change--protocol--v1.md` before editing.
+2. Supabase Advisor and lint findings are acceptance criteria. Capture baselines before SQL work and rerun after live apply.
+3. `DATABASE_SCHEMA.sql` is a schema snapshot, not enough by itself when live linked metadata is available. Check recent migrations and live `pg_*` metadata for current truth.
+4. Every table MUST have RLS enabled with appropriate policies.
+5. The `profiles` table PK is `id` (NOT `user_id`). All other user tables use `user_id`.
+6. Use Supabase-generated types from `src/types/supabase.ts`. Never manually define DB types.
+7. Package manager is Bun — use `bunx supabase gen types typescript` (NOT npx).
+8. Migrations go in `supabase/migrations/` with timestamp prefix (YYYYMMDD format).
 
 ## When Invoked
 
-1. Read `DATABASE_SCHEMA.sql` first
-2. Validate the requested change against existing schema
-3. If migration needed, create in `supabase/migrations/` with timestamp prefix
-4. Verify RLS policies cover new/modified tables
-5. Check for missing indexes on frequently queried columns
-6. Watch for N+1 query patterns — prefer batch queries
-7. Ensure proper FK constraints with CASCADE behavior
-8. Run `bunx supabase gen types typescript` after schema changes
+1. Read `.ai/00_system/supabase-change--protocol--v1.md` for the mandatory warning/advisor/RLS/RPC protocol
+2. Read `DATABASE_SCHEMA.sql` and relevant recent migrations
+3. Capture linked Supabase Advisor/lint baselines when live access is available
+4. Validate the requested change against existing schema and live metadata
+5. If migration needed, create in `supabase/migrations/` with timestamp prefix
+6. Verify RLS policies cover new/modified tables
+7. Check for missing indexes on frequently queried columns
+8. Watch for N+1 query patterns — prefer batch queries
+9. Ensure proper FK constraints with CASCADE behavior
+10. Validate with Supabase lint, dry-run, rollback smoke, and post-apply advisor checks per the protocol
+11. Run `bunx supabase gen types typescript` after schema changes when a verified schema target exists
 
 ## Key Tables & Relationships
 

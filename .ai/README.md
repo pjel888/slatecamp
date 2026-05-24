@@ -48,6 +48,7 @@ All `.ai` files and folders follow the naming conventions defined in `00_system/
 | `tech-debt--state--v1.md` | `10_state/` | Technical debt and risks by severity | 2026-05-09 |
 | `decisions--state--v1.md` | `10_state/` | Confirmed decisions, assumptions, open questions | 2026-05-09 |
 | `AGENT_INSTRUCTIONS.md` | `.ai/` root | Agent handoff and safe-work instructions | 2026-05-09 |
+| `.ai/00_system/supabase-change--protocol--v1.md` | `00_system/` | Mandatory protocol for Supabase migrations, RLS, RPCs, grants, advisor baselines, validation, and post-apply checks | 2026-05-24 |
 | `2026-05-09--repo--audit--full.md` | `02_audits/` | 2026-05-09 audit: file review, findings, recommendations | 2026-05-09 |
 | `project-overview--spec--v2.md` | `06_specs/` | Previous audit counts and overview (2026-04-29) | 2026-04-29 |
 | `features--inventory--v2.md` | `06_specs/` | Feature inventory with status, routes, and file paths | 2026-04-29 |

@@ -83,6 +83,7 @@ The following unnumbered folders were archived:
 
 - `README.md` = repository entrypoint
 - `.ai/00_system/` = policy, placement rules, and operational runbooks
+- `.ai/00_system/supabase-change--protocol--v1.md` = mandatory AI-agent protocol for Supabase migrations, RLS, grants, RPCs, Supabase clients, advisor baselines, validation, and post-apply warning checks
 - `.ai/00_system/SUPABASE_VERIFICATION_RUNBOOK.md` = operational runbook for safe Supabase migration replay, AI audit DB permission checks, and generated type regeneration
 - `.ai/01_roadmap/current-phase.md` = active roadmap/phase state
 - `.ai/02_audits/` = home for audit, reconciliation, remediation, and release-readiness reports

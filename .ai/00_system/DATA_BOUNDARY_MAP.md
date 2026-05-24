@@ -43,9 +43,17 @@ Key files:
 - `src/lib/supabase/admin.ts`
 - `src/lib/supabase/middleware.ts`
 
+Mandatory protocol:
+- Any Supabase, RLS, migration, RPC, grant, policy, or Supabase-client access change must follow `.ai/00_system/supabase-change--protocol--v1.md`.
+- Supabase Advisor findings are acceptance criteria, not optional cleanup.
+- Agents must capture advisor/lint baselines before SQL work and rerun advisors/lint after live apply.
+- New public tables require explicit RLS and policies; backend-only ledgers should use service-role-only policies, not disabled RLS.
+- SECURITY DEFINER functions require callsite review, fixed grants, and advisor verification before completion.
+
 Observed risks:
 - dev impersonation and service-role bypass logic is present
 - runtime authority differs between browser, server, admin/service, and middleware contexts
+- schema truth requires live metadata plus migrations; `DATABASE_SCHEMA.sql` alone may drift
 
 ## Auth and entitlements
 
