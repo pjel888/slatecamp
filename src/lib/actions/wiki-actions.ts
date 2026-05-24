@@ -2,7 +2,7 @@
 
 // wiki-actions: taxonomy tree + article data for wiki sidebar
 import { cache } from 'react'
-import { createClient, createStaticClient } from "@/lib/supabase/server";
+import { createClient, createServiceClient, createStaticClient } from "@/lib/supabase/server";
 import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
 import { getCachedTaxonomyTreeByDiscipline } from "./cached-queries";
@@ -402,9 +402,10 @@ export async function resolveArticleAndNode(
 ): Promise<{ article: WikiArticle | null; node: TaxonomyNode | null }> {
   const start = performance.now()
   const supabase = await createStaticClient()
+  const rpcClient = await createServiceClient()
 
   // Try single-roundtrip RPC first (replaces 2-4 sequential queries)
-  const { data: rpcResult, error: rpcError } = await supabase.rpc('get_article_with_node', { p_slug: slug })
+  const { data: rpcResult, error: rpcError } = await rpcClient.rpc('get_article_with_node', { p_slug: slug })
 
   if (!rpcError && rpcResult) {
     const result = rpcResult as { article: WikiArticle | null; node: TaxonomyNode | null }

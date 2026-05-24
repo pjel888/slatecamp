@@ -4,7 +4,7 @@
  * without the 'use server' serialization boundary.
  */
 
-import { createClient } from '@/lib/supabase/server'
+import { createClient, createServiceClient, getUser } from '@/lib/supabase/server'
 
 export interface QueryResult<T> {
   data: T | null
@@ -37,7 +37,10 @@ export const fetchNextQuestion = async (params: {
   targetP?: number
 }): Promise<QueryResult<NextQuestion>> => {
   try {
-    const supabase = await createClient()
+    const { data: { user } } = await getUser()
+    if (!user || user.id !== params.userId) return { data: null, error: 'Unauthorized' }
+
+    const supabase = await createServiceClient()
     const { data, error } = await supabase.rpc('select_next_item', {
       p_user_id: params.userId,
       p_session_id: params.sessionId,

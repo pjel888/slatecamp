@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createClient, createServiceClient } from '@/lib/supabase/server'
 import type { DashboardPageData } from '@/types/dashboard'
 import type { NotificationType } from '@/types/notifications'
 import { ROUTES } from '@/lib/routes'
@@ -93,9 +93,11 @@ export const syncDashboardNotifications = async (
     })
   }
 
-  // Insert via create_notification RPC (handles preferences + daily cap)
+  // Insert via service-role RPC (handles preferences + daily cap) so the
+  // SECURITY DEFINER function is not exposed to signed-in users via PostgREST.
+  const notificationClient = await createServiceClient()
   for (const n of inserts) {
-    const { error } = await supabase.rpc('create_notification', {
+    const { error } = await notificationClient.rpc('create_notification', {
       p_user_id: n.user_id,
       p_type: n.type,
       p_title: n.title,

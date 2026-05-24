@@ -4,7 +4,7 @@
  * without the 'use server' serialization boundary.
  */
 
-import { createClient } from '@/lib/supabase/server'
+import { createServiceClient, getUser } from '@/lib/supabase/server'
 
 export interface QueryResult<T> {
   data: T | null
@@ -29,7 +29,10 @@ export interface SrsCard {
 
 export const fetchReviewDueCount = async (userId: string): Promise<QueryResult<number>> => {
   try {
-    const supabase = await createClient()
+    const { data: { user } } = await getUser()
+    if (!user || user.id !== userId) return { data: null, error: 'Unauthorized' }
+
+    const supabase = await createServiceClient()
     const { data, error } = await supabase.rpc('get_review_due_count', {
       p_user_id: userId,
     })
@@ -50,7 +53,10 @@ export const fetchReviewDeck = async (
   limit = 20,
 ): Promise<QueryResult<SrsCard[]>> => {
   try {
-    const supabase = await createClient()
+    const { data: { user } } = await getUser()
+    if (!user || user.id !== userId) return { data: null, error: 'Unauthorized' }
+
+    const supabase = await createServiceClient()
     const { data, error } = await supabase.rpc('get_review_deck', {
       p_user_id: userId,
       p_limit: limit,

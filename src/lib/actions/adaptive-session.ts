@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createServiceClient, getUser } from '@/lib/supabase/server'
 
 export const selectNextAdaptiveQuestion = async (
   userId: string,
@@ -9,7 +9,10 @@ export const selectNextAdaptiveQuestion = async (
   topicId?: string,
 ) => {
   try {
-    const supabase = await createClient()
+    const { data: { user } } = await getUser()
+    if (!user || user.id !== userId) throw new Error('Unauthorized')
+
+    const supabase = await createServiceClient()
     const { data, error } = await supabase.rpc('select_next_item', {
       p_user_id: userId,
       p_session_id: sessionId,
