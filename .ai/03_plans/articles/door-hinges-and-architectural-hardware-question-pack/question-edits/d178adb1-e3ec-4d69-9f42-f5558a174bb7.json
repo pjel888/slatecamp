@@ -1,0 +1,50 @@
+{
+  "question_id": "d178adb1-e3ec-4d69-9f42-f5558a174bb7",
+  "action": "add_new",
+  "reason": "New linked question for Door Hinges and Architectural Hardware article assessment bridge.",
+  "parent_article_id": "NEW_ARTICLE_DOOR_HINGES_ARCHITECTURAL_HARDWARE_TBD",
+  "parent_article_slug": "door-hinges-and-architectural-hardware",
+  "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+  "objective": "Identify lockset as an assembly rather than a single knob.",
+  "source_audit_support": {
+    "support_status": "source_safe_textbook_construction_reference",
+    "source_locator": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "claim_boundary": "Construction terminology and hardware-selection concepts only; not presented as Philippine legal/code mandate unless separately governed by applicable codes/specifications."
+  },
+  "proposed": {
+    "text": "A drawing note points to the manufactured assembly that includes the latch mechanism, trim, cylinder or operating parts, and faceplate. What is the best term?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lockset"
+      },
+      {
+        "id": "b",
+        "text": "Kick plate"
+      },
+      {
+        "id": "c",
+        "text": "Weatherstrip"
+      },
+      {
+        "id": "d",
+        "text": "Hinge leaf"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "summary": "A lockset is the coordinated locking/latching assembly, not just the visible knob or lever.",
+      "explanation": "The article warns against naming only the visible operating part when the complete assembly is meant. A kick plate protects the lower door, weatherstrip seals gaps, and a hinge leaf is one plate of a hinge.",
+      "takeaway": "When the stem means the whole lock/latch assembly, answer lockset—not knob."
+    },
+    "explanation": "A lockset is the coordinated locking/latching assembly, not just the visible knob or lever.",
+    "code_citation": "Ching, Building Construction Illustrated, 5th ed., Door Hardware 8.17, Door Hinges 8.18, Door Locksets 8.19, Panic Hardware & Closers 8.20.",
+    "bloom_level": "understand",
+    "difficulty": 0.46,
+    "practice_context": [
+      "door_hardware",
+      "building_materials_and_construction",
+      "lea_board_review"
+    ]
+  }
+}
