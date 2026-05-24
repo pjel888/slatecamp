@@ -76,7 +76,42 @@ A reviewer flagged possible regressions if broad SELECT/runtime policies were no
 - `wiki_ei_prompts`: `eip_select_all` remains.
 - Owner duplicate tables retain newer authenticated owner policies (`readiness_score_snapshots_*`, `user_node_mastery_*`, `user_trail_*`, `war_*`, `wb_*`).
 
-## Remaining non-SQL / deferred warnings
+## Post-apply verification
+
+Commands run after live apply:
+
+```bash
+bunx supabase db push --linked
+bunx supabase db lint --linked
+bunx supabase db advisors --linked --output json
+bunx supabase migration list --linked
+```
+
+Results:
+
+- `db push --linked`: PASS; migration `20260524010000` applied to remote.
+- `db lint --linked`: PASS, no schema errors.
+- Advisors after live apply: 15 WARN, down from 78 WARN before this pass.
+- `multiple_permissive_policies`: 0 remaining, down from 53.
+- `authenticated_security_definer_function_executable`: 14 remaining, down from 24.
+- `auth_leaked_password_protection`: 1 remaining.
+- Migration list confirms `20260524010000` exists locally and remotely.
+
+## Remaining non-SQL / intentionally deferred warnings
 
 - `auth_leaked_password_protection`: hosted Supabase Auth dashboard setting, not SQL.
-- Some authenticated SECURITY DEFINER RPC warnings may remain intentionally where authenticated execution is part of the app contract or where the function is used as an RLS helper.
+- 14 authenticated SECURITY DEFINER RPC warnings remain intentionally because authenticated execution is part of the app contract or the function is an RLS/admin helper:
+  - `can_review_content`
+  - `check_user_admin_role`
+  - `create_notification`
+  - `get_article_with_node`
+  - `get_fallback_questions`
+  - `get_review_deck`
+  - `get_review_due_count`
+  - `get_unseen_questions`
+  - `has_admin_role`
+  - `is_ceo_or_super_admin`
+  - `is_super_admin`
+  - `select_next_item`
+  - `submit_quiz_answer_v2`
+  - `update_theta`
