@@ -18,7 +18,7 @@ export async function generateTestSessions(count: number) {
 
   // Rate limiting
   const rateLimitKey = `generate-test-sessions:${user.id}`
-  const rateLimit = checkRateLimit(rateLimitKey)
+  const rateLimit = await checkRateLimit(rateLimitKey)
   if (!rateLimit.allowed) {
     throw new Error(`Rate limit exceeded. Try again in ${rateLimit.retryAfter} seconds.`)
   }
@@ -59,7 +59,7 @@ export async function generateTestOrg() {
 
   // Rate limiting
   const rateLimitKey = `generate-test-org:${user.id}`
-  const rateLimit = checkRateLimit(rateLimitKey)
+  const rateLimit = await checkRateLimit(rateLimitKey)
   if (!rateLimit.allowed) {
     throw new Error(`Rate limit exceeded. Try again in ${rateLimit.retryAfter} seconds.`)
   }
