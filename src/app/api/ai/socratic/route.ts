@@ -1,26 +1,14 @@
 import { NextResponse } from 'next/server'
+import { z } from 'zod'
 import { createClient } from '@/lib/supabase/server'
 import { getAIProvider } from '@/lib/ai/provider'
 import { isDemoMode } from '@/lib/demo/config'
 import { checkRateLimit } from '@/lib/rate-limit'
+import { parseAiBody } from '@/lib/ai/route-validation'
 
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
-
-interface ConversationMessage {
-  role: 'assistant' | 'user'
-  content: string
-}
-
-interface SocraticRequest {
-  questionText: string
-  selectedAnswer: string
-  correctAnswer: string
-  topicName: string
-  topicId: string
-  conversationHistory: ConversationMessage[]
-}
 
 interface SocraticResponse {
   message: string
@@ -29,11 +17,35 @@ interface SocraticResponse {
   sources: string[]
 }
 
+// `MAX_TURNS` is referenced by the schema below; declared first to avoid TDZ.
+const MAX_TURNS = 5
+
+// Runtime validation for the request body. The previous code cast the body
+// to an ad-hoc interface without validation, then indexed
+// `body.conversationHistory.length` — a malformed payload would have thrown
+// at that access. Now it's validated upfront with bounded string lengths
+// (every field flows into a model prompt, so length caps also bound cost).
+const SocraticRequestSchema = z.object({
+  questionText: z.string().min(1).max(8000),
+  selectedAnswer: z.string().min(1).max(4000),
+  correctAnswer: z.string().min(1).max(4000),
+  topicName: z.string().max(500).optional().default(''),
+  topicId: z.string().max(200).optional().default(''),
+  conversationHistory: z
+    .array(
+      z.object({
+        role: z.enum(['assistant', 'user']),
+        content: z.string().max(4000),
+      }),
+    )
+    .max(MAX_TURNS + 2)
+    .optional()
+    .default([]),
+})
+
 // ---------------------------------------------------------------------------
 // Constants
 // ---------------------------------------------------------------------------
-
-const MAX_TURNS = 5
 
 const DEMO_RESPONSES: string[] = [
   'That is a common misconception. Think about what happens when you apply this principle to a real structure. What factor determines the load distribution in this case? [Source: structural-analysis]',
@@ -99,7 +111,9 @@ const extractSources = (text: string): string[] => {
 export const POST = async (request: Request) => {
   // Demo mode — return canned responses
   if (isDemoMode()) {
-    const body = (await request.json()) as SocraticRequest
+    const parsed = await parseAiBody(request, SocraticRequestSchema)
+    if (parsed.ok === false) return parsed.response
+    const body = parsed.data
     const turnNumber = body.conversationHistory.length + 1
     const clampedTurn = Math.min(turnNumber, MAX_TURNS)
     const demoMessage = DEMO_RESPONSES[clampedTurn - 1] ?? DEMO_RESPONSES[DEMO_RESPONSES.length - 1]
@@ -123,7 +137,7 @@ export const POST = async (request: Request) => {
   }
 
   // Rate limiting
-  const rateLimit = checkRateLimit(`ai_socratic_${user.id}`)
+  const rateLimit = await checkRateLimit(`ai_socratic_${user.id}`)
   if (!rateLimit.allowed) {
     return NextResponse.json(
       { error: 'Rate limit exceeded. Please wait before sending another message.' },
@@ -132,15 +146,10 @@ export const POST = async (request: Request) => {
   }
 
   // Parse and validate request
-  const body = (await request.json()) as SocraticRequest
+  const parsed = await parseAiBody(request, SocraticRequestSchema)
+  if (parsed.ok === false) return parsed.response
+  const body = parsed.data
   const { questionText, selectedAnswer, correctAnswer, topicName, conversationHistory } = body
-
-  if (!questionText || !selectedAnswer || !correctAnswer) {
-    return NextResponse.json(
-      { error: 'questionText, selectedAnswer, and correctAnswer are required' },
-      { status: 400 },
-    )
-  }
 
   const turnNumber = conversationHistory.length + 1
 
