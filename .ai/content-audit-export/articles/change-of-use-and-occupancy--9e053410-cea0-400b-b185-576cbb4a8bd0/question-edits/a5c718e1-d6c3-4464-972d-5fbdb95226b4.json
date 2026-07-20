@@ -2,9 +2,9 @@
   "question_id": "a5c718e1-d6c3-4464-972d-5fbdb95226b4",
   "baseline_hash": "sha256:c29a22e8d4ea8b829c630049f438b9ef4279ef23c58f436081fd48f9e174f4dd",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What documents are tied to the IRR Certificate of Occupancy process?",
+    "text": "What NBC form is used to apply for a change of occupancy under PD 1096?",
     "options": [
       {
         "id": "a",
-        "text": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process."
+        "text": "NBC Form No. B-1 (Building Permit Application), typically used for new constructions"
       },
       {
         "id": "b",
-        "text": "O"
+        "text": "NBC Form No. B-5 (Fencing Permit), which is unrelated to occupancy changes"
       },
       {
         "id": "c",
-        "text": "n"
+        "text": "NBC Form No. B-12 (Application for Change of Use or Occupancy)"
       },
       {
         "id": "d",
-        "text": "l"
+        "text": "NBC Form No. B-7 (Demolition Permit), applicable when structures are to be removed"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process. This is supported by Only a hydrant-location sketch is required..",
-    "explanation": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process. The cited local source family controls this item: Only a hydrant-location sketch is required..",
-    "code_citation": "Only a FLAR computation is required."
+    "correct_option_id": "c",
+    "rationale": "Mnemonic: 'B-12 for Change' — the form number B-12 corresponds to the number of letters in 'change of use' if you count creatively (or simply: B-12 is the Change of Use form). Option A (B-1) is the most common distractor — it is the new construction permit application, not the change-of-use form.",
+    "explanation": null,
+    "code_citation": null
   }
 }

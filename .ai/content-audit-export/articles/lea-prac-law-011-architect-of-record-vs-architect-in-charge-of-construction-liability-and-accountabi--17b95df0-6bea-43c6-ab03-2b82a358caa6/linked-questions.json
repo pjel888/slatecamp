@@ -39,8 +39,8 @@
         "correct": "Civil Code Art. 1723 and RA 9266 IRR distinguish liabilities: AoR for design (plans), AiCC for construction supervision ensuring compliance.",
         "takeaway": "AiCC construction defect liability: solidary (joint and several) with the contractor."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR and Civil Code Article 1723 PDF/refined markdown locators for AoR/AiCC role split, signing/sealing responsibility, and collapse-liability cause allocation.",
+      "code_citation": "RA 9266 IRR Sections 3(2), 20, and 32; Civil Code Article 1723",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,7 +51,7 @@
       "model_id": "ALE-PRAC-LAW-011-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.943412+00:00",
       "content_hash": "sha256:99a3cf01f1d3ddc15cd5a4ec62a5a54f2fa2124a23ab8fd4636fd71f22aa24aa"
     },
     {
@@ -89,8 +89,8 @@
         "correct": "Article 1723 establishes strict liability for design defects, meaning the AoR cannot escape liability by blaming contractor deviations. Design defects attach to the architect regardless of execution issues.",
         "takeaway": "AoR design defect liability: strict; cannot be escaped by claiming contractor deviation; design failures are AoR's responsibility."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR and Civil Code Article 1723 PDF/refined markdown locators for AoR/AiCC role split, signing/sealing responsibility, and collapse-liability cause allocation.",
+      "code_citation": "RA 9266 IRR Sections 3(2), 20, and 32; Civil Code Article 1723",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,7 +101,7 @@
       "model_id": "ALE-PRAC-LAW-011-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.937843+00:00",
       "content_hash": "sha256:59cbc0c5653270a38e632323c87ebb48f411b9dfc1cbd551e3ca7f2c988bedbd"
     },
     {
@@ -139,8 +139,8 @@
         "correct": "The AiCC's liability is measured against a standard of reasonable diligence: a competent architect exercising ordinary professional care should have detected the material substitution. Failure to maintain adequate site presence and perform inspections constitutes negligence.",
         "takeaway": "AiCC supervision standard: reasonably diligent architect should detect material defects; inadequate site presence = liability for construction defects."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR and Civil Code Article 1723 PDF/refined markdown locators for AoR/AiCC role split, signing/sealing responsibility, and collapse-liability cause allocation.",
+      "code_citation": "RA 9266 IRR Sections 3(2), 20, and 32; Civil Code Article 1723",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,7 +151,7 @@
       "model_id": "ALE-PRAC-LAW-011-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.936725+00:00",
       "content_hash": "sha256:414cc49a18a28b2d2ad975652361f140232e7b2ab1839e4019859478792a45d4"
     },
     {
@@ -189,8 +189,8 @@
         "correct": "Article 1723 imposes strict liability on the architect who drew the plans for defects in those plans and specifications, independent of contractor performance or timing of discovery.",
         "takeaway": "AoR strict liability: defects in plans and specifications (design defects), regardless of contractor performance."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR and Civil Code Article 1723 PDF/refined markdown locators for AoR/AiCC role split, signing/sealing responsibility, and collapse-liability cause allocation.",
+      "code_citation": "RA 9266 IRR Sections 3(2), 20, and 32; Civil Code Article 1723",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +201,30 @@
       "model_id": "ALE-PRAC-LAW-011-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.941814+00:00",
       "content_hash": "sha256:afd0da1b94d5cc446a70cfaa97c6be75ad14e942710008f5a23e6699f5eb72c0"
     },
     {
       "question_id": "216f9a84-8df2-4183-86e4-58279e229b60",
       "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
       "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
-      "text": "How does the distinction between AoR and AiCC liability inform an architect's risk management strategy regarding professional liability insurance?",
+      "text": "How should an architect manage responsibility when the facts may involve both Architect-of-Record and Architect-in-Charge of Construction duties?",
       "options": [
         {
           "id": "a",
-          "text": "A single liability policy is sufficient to cover both roles, simplifying the insurance process"
+          "text": "Treat the two role labels as interchangeable once construction begins"
         },
         {
           "id": "b",
-          "text": "Separate policies for design and construction supervision phases may be advisable, with different limits reflecting different risk profiles"
+          "text": "Define and document whether the architect is accepting design-document responsibility, construction-supervision responsibility, or both"
         },
         {
           "id": "c",
-          "text": "Professional liability insurance is unnecessary if the architect limits site visits, reducing exposure to risk"
+          "text": "Assume the contractor alone answers for all construction-stage defects"
         },
         {
           "id": "d",
-          "text": "Liability insurance covering only design phase is sufficient because construction liability rests solely with the contractor, minimizing the architect's responsibility"
+          "text": "Assume the professional seal eliminates Article 1723 exposure"
         }
       ],
       "correct_option_id": "b",
@@ -251,7 +251,7 @@
       "model_id": "ALE-PRAC-LAW-011-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.939476+00:00",
       "content_hash": "sha256:acd160468193add0bff96e5967af29b0ce9b74b439db1ab4bb3c2255abba8a16"
     },
     {
@@ -289,8 +289,8 @@
         "correct": "The AoR/AiCC distinction creates clear accountability: AoR is liable for design quality; AiCC is liable (solidarily with contractor) for construction execution. This dual accountability ensures professionals at each phase maintain high standards to protect public safety.",
         "takeaway": "Liability protection mechanism: AoR accountable for design; AiCC accountable for construction execution; dual accountability protects public."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR and Civil Code Article 1723 PDF/refined markdown locators for AoR/AiCC role split, signing/sealing responsibility, and collapse-liability cause allocation.",
+      "code_citation": "RA 9266 IRR Sections 3(2), 20, and 32; Civil Code Article 1723",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,30 +301,30 @@
       "model_id": "ALE-PRAC-LAW-011-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.941011+00:00",
       "content_hash": "sha256:f01ed6b9b2dc8ee096b94fe2663bf33d7123987d1b4e13e86671b7c5f73a0d19"
     },
     {
       "question_id": "96b17f48-0186-4a9a-8cf3-e2fa79120826",
       "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
       "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
-      "text": "Can one architect serve as both Architect-of-Record and Architect-in-Charge of Construction on the same project?",
+      "text": "What is the liability effect if the same registered architect signs as Architect-of-Record and also accepts Architect-in-Charge of Construction supervision duties on the same project?",
       "options": [
         {
           "id": "a",
-          "text": "No, the law requires two different architects for these roles to ensure separation of responsibilities"
+          "text": "The construction role replaces the Architect-of-Record responsibility for design documents"
         },
         {
           "id": "b",
-          "text": "Yes, if the architect is willing to assume both design and construction supervision liability"
+          "text": "The architect may face the responsibilities attached to each role actually accepted: design documents as AOR and construction supervision as AiCC"
         },
         {
           "id": "c",
-          "text": "Yes, but only for residential projects valued below 5 million pesos, as specified by local regulations"
+          "text": "RA 9266 requires two different architects for the roles in every case"
         },
         {
           "id": "d",
-          "text": "No, because the roles require different professional skills and expertise, which cannot be combined"
+          "text": "The contractor alone becomes responsible for both design and construction defects"
         }
       ],
       "correct_option_id": "b",
@@ -351,30 +351,30 @@
       "model_id": "ALE-PRAC-LAW-011-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.944190+00:00",
       "content_hash": "sha256:9e1722a5a4e7b3ac2120c4799100642b332c9f089e3af52671f06603e23dd353"
     },
     {
       "question_id": "fc4a4042-8ab7-465a-a6f5-a224a45e0e88",
       "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
       "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
-      "text": "Architect A prepared all design documents for a shopping mall and selead the plans (serving as AoR). Architect B supervised construction (serving as AiCC). During construction, the contractor used inferior concrete that was not detected during inspections. One year after completion, structural cracking appears. Who bears liability?",
+      "text": "Architect A prepared and sealed the architectural design documents as Architect-of-Record. Architect B supervised construction as Architect-in-Charge of Construction. During construction, the contractor used inferior concrete that was not detected during supervision, and the edifice later collapsed. Who is the source-backed liability focus for that construction defect?",
       "options": [
         {
           "id": "a",
-          "text": "Only Architect B and the contractor, solidarily, as they were responsible for construction oversight and material quality"
+          "text": "Only Architect A, because every collapse is automatically a design-document defect"
         },
         {
           "id": "b",
-          "text": "Only Architect A for approving inadequate specifications, although the issue arose from construction practices"
+          "text": "Only the contractor, because professional supervision never creates solidary liability"
         },
         {
           "id": "c",
-          "text": "Both Architect B and the contractor, solidarily (Architect A has no liability for this construction defect)"
+          "text": "The contractor and Architect B may be solidarily liable if defective supervision contributed; Architect A is not liable unless the plans or specifications were defective"
         },
         {
           "id": "d",
-          "text": "All three parties equally, which does not accurately reflect the roles and responsibilities during construction"
+          "text": "All parties are always equally liable regardless of the cause of collapse"
         }
       ],
       "correct_option_id": "c",
@@ -401,7 +401,7 @@
       "model_id": "ALE-PRAC-LAW-011-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.938707+00:00",
       "content_hash": "sha256:62158b79b9dd6e45285c063fce4496c32505ac148bf7a531a57c03bf65b0f456"
     },
     {
@@ -439,8 +439,8 @@
         "correct": "RA 9266 Section 3(b) defines the AiCC as the licensed architect directly and professionally responsible and liable for construction supervision, ensuring contractor work conforms to plans, specifications, and contract documents.",
         "takeaway": "Architect-in-Charge of Construction: supervises construction and ensures contractor compliance with plans and specifications."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR and Civil Code Article 1723 PDF/refined markdown locators for AoR/AiCC role split, signing/sealing responsibility, and collapse-liability cause allocation.",
+      "code_citation": "RA 9266 IRR Sections 3(2), 20, and 32; Civil Code Article 1723",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,7 +451,7 @@
       "model_id": "ALE-PRAC-LAW-011-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.942629+00:00",
       "content_hash": "sha256:416ba154fd25a78362e7dadd353c8bb5456f08e89d6441a3d401fbb47efe0e37"
     },
     {
@@ -489,8 +489,8 @@
         "correct": "RA 9266 Section 3(a) defines the Architect-of-Record as the licensed architect directly and professionally responsible for the total design of the project and who assumes civil liability for the plans, specifications, and contract documents she has signed and sealed.",
         "takeaway": "Architect-of-Record: responsible for total design; assumes civil liability for plans and sealed documents."
       },
-      "explanation": null,
-      "code_citation": "Civil Code Art. 1723",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR and Civil Code Article 1723 PDF/refined markdown locators for AoR/AiCC role split, signing/sealing responsibility, and collapse-liability cause allocation.",
+      "code_citation": "RA 9266 IRR Section 3(2)(a)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [],
@@ -501,7 +501,7 @@
       "model_id": "ALE-PRAC-LAW-011-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.940245+00:00",
       "content_hash": "sha256:065695e1f41b672c016eb162d1388e81e637635a2d33e2387f4981a4a877f1d7"
     }
   ]

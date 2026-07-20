@@ -22,5 +22,53 @@
       "detailing-column-ties",
       "detailing-hooks"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Why should this batch avoid restoring complete volumetric hoop equations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The source proves hoops are decorative only."
+      },
+      {
+        "id": "b",
+        "text": "Volumetric reinforcement is never structural."
+      },
+      {
+        "id": "c",
+        "text": "The local capture has missing equation symbols, so exact equation use must come from the applicable complete source."
+      },
+      {
+        "id": "d",
+        "text": "All equation values can be invented from memory."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "The source proves hoops are decorative only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "b": "Volumetric reinforcement is never structural. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "c": "The local capture has missing equation symbols, so exact equation use must come from the applicable complete source. This stays inside the Batch 146 local source boundary for Column Ties and Transverse Confinement.",
+      "d": "All equation values can be invented from memory. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "correct": "The local capture has missing equation symbols, so exact equation use must come from the applicable complete source. Supported by detailing-column-ties.",
+      "takeaway": "For Column Ties and Transverse Confinement, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-column-ties",
+      "checked_sources": [
+        "detailing-column-ties",
+        "detailing-hooks"
+      ]
+    },
+    "explanation": "The local capture has missing equation symbols, so exact equation use must come from the applicable complete source. Supported by the Batch 146 local source boundary: detailing-column-ties.",
+    "code_citation": "detailing-column-ties",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-007-04-004"
   }
 }

@@ -158,23 +158,23 @@
       "question_id": "4b2b462f-75a5-4c20-b446-fc1c564f5335",
       "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
       "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
-      "text": "A structural engineer is asked to sign structural drawings based on the architect's design. The engineer identifies that the architect's specified floor-to-floor heights are insufficient to accommodate the required structural depth, creating a structural conflict. The architect insists the design is finalized and refuses to modify the heights. What is the engineer's professional obligation?",
+      "text": "A conflict appears between architectural floor-to-floor heights and the space required by another discipline before final contract documents are issued. What is the source-backed professional response?",
       "options": [
         {
           "id": "a",
-          "text": "The engineer must sign the drawings as requested, since the architect is the lead designer and the engineer's role is limited to structural calculations only"
+          "text": "Issue the documents as-is because contract documents are read separately"
         },
         {
           "id": "b",
-          "text": "The engineer should refuse to sign the documents and should document the structural inadequacy in writing to the architect and owner"
+          "text": "Coordinate and resolve the conflict before finalizing or signing documents that depend on the unresolved information"
         },
         {
           "id": "c",
-          "text": "The engineer may sign the drawings if the engineer notes the conflict in the specifications as a disclaimer appended to the structural drawings"
+          "text": "Let the contractor redesign the conflict after bidding without written clarification"
         },
         {
           "id": "d",
-          "text": "The engineer should modify the structural design to fit the architect's space without notification to the architect or the project owner"
+          "text": "Ignore the conflict if each professional signs a separate sheet"
         }
       ],
       "correct_option_id": "b",
@@ -201,7 +201,7 @@
       "model_id": "ALE-PRAC-LAW-016-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.941548+00:00",
       "content_hash": "sha256:318033708dd0fcf37efea714a874627fbbf5482b409e3965499f5051f5e28b22"
     },
     {
@@ -258,7 +258,7 @@
       "question_id": "211f8944-0730-48ee-8827-4fd27f5fbf35",
       "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
       "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
-      "text": "An architect received drawing sets from a design firm in another country for a building to be constructed in the Philippines. The architect made minor edits to adapt the drawings to Philippine site conditions and signed and selead them as the responsible architect. What professional and legal issue results from this action?",
+      "text": "An architect received substantially complete architectural drawing sets from another design firm, made only minor site edits, and then signed and sealed them as the responsible architect. What professional and legal issue results?",
       "options": [
         {
           "id": "a",
@@ -301,30 +301,30 @@
       "model_id": "ALE-PRAC-LAW-016-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.936779+00:00",
       "content_hash": "sha256:cdcc9a8085a01ddbae20c28c2dd4bd001ef2a1b7358d4fec9cbee123489e11e8"
     },
     {
       "question_id": "a05686b5-2d67-484a-b577-b643f7bb041c",
       "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
       "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
-      "text": "An electrical engineer signed and selead electrical system drawings that were later found to contain errors in circuit sizing that violated the National Electrical Code. A contractor relied on the drawings to purchase materials and install the system. When the non-compliance was discovered during inspection, the engineer disclaimed responsibility by stating that the contractor should have caught the error. What is the professional and legal result?",
+      "text": "An architect signed and sealed architectural documents that were later found to contain an obvious code-related document error. The architect says the contractor should have caught the error during construction. What is the source-backed result?",
       "options": [
         {
           "id": "a",
-          "text": "The engineer is not responsible; the contractor had the obligation to verify code compliance, which is a common misconception about professional responsibility"
+          "text": "The architect is not responsible because the contractor must verify every professional document"
         },
         {
           "id": "b",
-          "text": "The engineer is responsible; the signature and seal certify personal responsibility for the document's accuracy and code compliance, and a reasonable professional should have caught obvious code violations"
+          "text": "The architect remains responsible for architectural documents issued under the architect's seal and authorized signature"
         },
         {
           "id": "c",
-          "text": "Both the engineer and contractor share equal responsibility, which oversimplifies the legal implications of professional certification"
+          "text": "Responsibility depends only on whether contractor insurance covers correction costs"
         },
         {
           "id": "d",
-          "text": "The engineer is responsible only if the contractor's insurance does not cover the correction costs, which misrepresents the engineer's professional obligations"
+          "text": "The seal transfers all document responsibility to the owner"
         }
       ],
       "correct_option_id": "b",
@@ -351,30 +351,30 @@
       "model_id": "ALE-PRAC-LAW-016-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.940804+00:00",
       "content_hash": "sha256:8f6f5cd31ca5270d8e67f446e740deac13dcc19a609e981894df095720e424b4"
     },
     {
       "question_id": "8c035b01-26a5-443c-a161-5264981e503f",
       "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
       "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
-      "text": "A registered mechanical engineer is asked to prepare and sign mechanical drawings. The structural engineer has not yet finalized the structural design, so the mechanical engineer cannot determine how to route the ductwork around the structural elements. What is the appropriate professional response?",
+      "text": "Another discipline cannot finalize its work because a coordinated contract-document issue remains unresolved. What should happen before signatures and final issuance?",
       "options": [
         {
           "id": "a",
-          "text": "The mechanical engineer should prepare and sign the drawings based on assumptions about the structural design"
+          "text": "The discipline should sign based on assumptions and let the contractor resolve conflicts later"
         },
         {
           "id": "b",
-          "text": "The mechanical engineer should refuse to sign any documents until the structural design is finalized and coordination can be achieved"
+          "text": "The discipline should sign preliminary documents as final if a disclaimer is added"
         },
         {
           "id": "c",
-          "text": "The mechanical engineer may sign the drawings and note in the specifications that the designs are preliminary pending structural coordination"
+          "text": "No coordination is needed if each professional signs independently"
         },
         {
           "id": "d",
-          "text": "The mechanical engineer should request that the architect coordinate the designs before requesting signatures"
+          "text": "The project team should coordinate and clarify the documents before final signatures are requested"
         }
       ],
       "correct_option_id": "d",
@@ -401,7 +401,7 @@
       "model_id": "ALE-PRAC-LAW-016-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.939528+00:00",
       "content_hash": "sha256:5657f686613bbef44c28aa89603d95c4972f1613467bbc7d5916021e9a5733ef"
     },
     {
@@ -458,26 +458,26 @@
       "question_id": "f10783fa-c9df-4598-bd4d-4669a43c974a",
       "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
       "topic_id": "5e327a9c-9f77-4e91-ac8c-0975835d801a",
-      "text": "Who is responsible for signing and sealing structural and foundation drawings?",
+      "text": "Which professional may sign and seal architectural drawings, specifications, and other architectural documents under RA 9266?",
       "options": [
         {
           "id": "a",
-          "text": "Registered Licensed Architect, provided they have additional certification in structural design"
+          "text": "The client's project representative"
         },
         {
           "id": "b",
-          "text": "Any licensed engineer, regardless of specialization, as long as they are registered"
+          "text": "A registered and licensed architect acting within the architectural scope"
         },
         {
           "id": "c",
-          "text": "Registered Licensed Structural or Civil Engineer"
+          "text": "The contractor's project manager"
         },
         {
           "id": "d",
-          "text": "The contractor's project manager, if they hold a relevant engineering degree"
+          "text": "Any registered professional on the project, regardless of discipline"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
@@ -501,7 +501,7 @@
       "model_id": "ALE-PRAC-LAW-016-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.938175+00:00",
       "content_hash": "sha256:835dff9350d18768bd843376840f272b56b12982fe75b0279d26c2df026a9fdb"
     }
   ]

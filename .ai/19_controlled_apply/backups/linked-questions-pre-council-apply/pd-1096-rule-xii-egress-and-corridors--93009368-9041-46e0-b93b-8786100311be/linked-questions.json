@@ -1,0 +1,1812 @@
+{
+  "article_id": "93009368-9041-46e0-b93b-8786100311be",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:804862abcee35efc097b3023b7e41021ef606c30d8f30ac31948e4a589043267",
+  "question_count": 41,
+  "questions": [
+    {
+      "question_id": "b94d88fe-2d7a-4196-a267-2ed21166a4b6",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect proposes a 4-storey office building with one exit stairway serving a floor plate that is 52 m deep (measured to the farthest point of the floor from the stair). The building has a complete automatic sprinkler system. Under PD 1096, is this configuration code-compliant with respect to exit travel distance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No — a 4-storey building always requires two exit stairs regardless of sprinkler status, as per the general safety requirements"
+        },
+        {
+          "id": "b",
+          "text": "No — 52 m exceeds the maximum permitted exit travel distance of 45 m even with sprinklers, which is a critical safety consideration"
+        },
+        {
+          "id": "c",
+          "text": "Yes — the presence of a sprinkler system extends the maximum exit travel distance to 60 m, making the 52 m distance compliant"
+        },
+        {
+          "id": "d",
+          "text": "Yes — exit travel distance limits only apply to buildings exceeding 6 storeys, according to specific building code exceptions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The sprinkler bonus of 15 m (45 m → 60 m) is a key design enabler. This allows deeper floor plates without additional stairs — a significant architectural and economic benefit.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c657d02f122bec9392d67c1825981a7dc77a5b57d3220a893c3f8c20e2e2442"
+    },
+    {
+      "question_id": "43d29823-78d1-4e63-9a8b-82f8f3c36e26",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In a building with a complete automatic sprinkler system, the maximum permitted exit travel distance under PD 1096 Rule XII, Sec. 1207 + Sec. 1212 is extended to how many meters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 m"
+        },
+        {
+          "id": "b",
+          "text": "60 m"
+        },
+        {
+          "id": "c",
+          "text": "75 m"
+        },
+        {
+          "id": "d",
+          "text": "45 m (sprinklers do not affect travel distance)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The sprinkler bonus is a key architectural tool. A 52 m floor plate is non-compliant without sprinklers (exceeds 45 m) but compliant with them (within 60 m). This trade-off can eliminate the need for a second staircase.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b0e30a3b252cb47b99b425a83ca5de7d062ceea2e2fbce82a11fe4e37ebfa135"
+    },
+    {
+      "question_id": "a21f58c8-e06e-409c-b5a4-47cca8fa9803",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214.3, projection room exit doorways must comply with which of the following requirements?",
+      "options": [
+        {
+          "id": "sp-006-a",
+          "text": "Minimum 2 doorways, each ≥ 900 mm wide × 2,000 mm high, swinging inward, with panic hardware"
+        },
+        {
+          "id": "sp-006-b",
+          "text": "Minimum 2 doorways, each ≥ 750 mm wide × 2,000 mm high, self-closing 3/4-hour, swinging outward, with no latches"
+        },
+        {
+          "id": "sp-006-c",
+          "text": "Minimum 2 doorways, each ≥ 900 mm wide × 2,100 mm high, self-closing 1-hour, swinging outward, with deadbolt locks"
+        },
+        {
+          "id": "sp-006-d",
+          "text": "Minimum 1 doorway, ≥ 900 mm wide × 2,000 mm high, with self-closing 1-hour fire assembly"
+        }
+      ],
+      "correct_option_id": "sp-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The no-latch rule is critical for life safety — in an emergency, panicked occupants must be able to push through without operating any hardware. The outward swing maximizes egress speed. The 1/3 perimeter separation between exits ensures that a fire affecting one exit does not simultaneously block the other.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0fdc3db6a8ca877364d9dec1daf791e907b7470dfc84edbce699a2d26d391717"
+    },
+    {
+      "question_id": "05cdddaf-5afc-4a92-9ee8-77ae4e0f039e",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A projection room has three projectors. Per PD 1096, Rule XII, Section 1214, what is the minimum required floor area, and how many exits are required?",
+      "options": [
+        {
+          "id": "sp-013-a",
+          "text": "14.00 m²; 1 exit, which may be acceptable for rooms with limited occupancy"
+        },
+        {
+          "id": "sp-013-b",
+          "text": "14.00 m²; 2 exits separated by ≥ 1/3 of the room perimeter"
+        },
+        {
+          "id": "sp-013-c",
+          "text": "17.50 m²; 2 exits of any separation distance, allowing for flexible room layout"
+        },
+        {
+          "id": "sp-013-d",
+          "text": "10.50 m²; 2 exits separated by ≥ 1/3 of the room perimeter, ensuring compliance with safety regulations"
+        }
+      ],
+      "correct_option_id": "sp-013-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 7 + 3.50 per machine formula and the 2-exit + 1/3 perimeter separation requirement must both be satisfied simultaneously. For 3 projectors, the 14.00 m² floor area is non-negotiable, and the two exits must be separated by at least 1/3 of the room's perimeter — not just any two exits.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:acd33d9f1af9bd14e5b56b4c082ed04b2d87386496a23172e41f5c806a94065c"
+    },
+    {
+      "question_id": "c10602af-9c10-4fd7-ab69-11543cc447bb",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A structural engineer proposes a minimum design roof wind load of 95 kg/m² for a school building in a low-wind-hazard municipality. Per PD 1096, Rule XII, Section 1206, is this compliant?",
+      "options": [
+        {
+          "id": "vo-007-a",
+          "text": "Yes — local wind hazard surveys may reduce the minimum below 120 kg/m², provided they are approved by the local building official"
+        },
+        {
+          "id": "vo-007-b",
+          "text": "No — the minimum is 150 kg/m² for educational occupancies, as specified in the national building code"
+        },
+        {
+          "id": "vo-007-c",
+          "text": "No — Section 1206 requires a minimum of 120 kg/m² regardless of location or occupancy type"
+        },
+        {
+          "id": "vo-007-d",
+          "text": "Yes — Section 1206 applies only to buildings taller than 3 storeys, allowing flexibility for smaller structures"
+        }
+      ],
+      "correct_option_id": "vo-007-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This provision reflects the Philippines' national vulnerability to typhoons. Even buildings in nominally 'low-wind' areas must resist at least 120 kg/m² — a baseline protection against under-designed roofs in typhoon years. The NSCP wind maps may require substantially more in actual typhoon corridors.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:75c74334f03744e392700b5f7a0367fe1f116fc5f3b56c166c33c0adb7e444ea"
+    },
+    {
+      "question_id": "007d351d-ba15-4143-be50-6ffc8d4ed1d9",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A rectangular floor measures 20 m by 30 m. What is the minimum separation distance between two required exits under PD 1096 Rule XII?",
+      "options": [
+        {
+          "id": "A",
+          "text": "15 m"
+        },
+        {
+          "id": "B",
+          "text": "18 m"
+        },
+        {
+          "id": "C",
+          "text": "20 m"
+        },
+        {
+          "id": "D",
+          "text": "25 m"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Perimeter = 2 × (20 + 30) = 100 m. Minimum separation = 1/5 × 100 m = 20 m. The 1/5 perimeter rule applies directly. A common trap is to use 1/2 diagonal: diagonal = √(20² + 30²) = √1300 ≈ 36.06 m; 1/2 diagonal ≈ 18 m — close but wrong.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4ccf2c652f5cfa2d94245fa75fae8c9bdd79866f0097d611a79b925b33b88555"
+    },
+    {
+      "question_id": "85258bfa-601e-4f5c-b994-79a79db4fe72",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1207(2)(c), what is the minimum separation distance between two required exits?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Not less than one-half of the diagonal of the area served, ensuring adequate separation for safety."
+        },
+        {
+          "id": "B",
+          "text": "Not less than one-fifth of the perimeter of the area served, measured in a straight line"
+        },
+        {
+          "id": "C",
+          "text": "Not less than 10 meters regardless of building dimensions, which is a simplified but incorrect guideline."
+        },
+        {
+          "id": "D",
+          "text": "Not less than one-third of the building perimeter, which is not a standard requirement."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(2)(c), if only two exits are required, they shall be placed a distance apart of not less than one-fifth (1/5) of the perimeter of the area served, measured in a straight line between exits. The 1/2 diagonal rule belongs to IBC and RA 9514 (Fire Code) — NOT PD 1096. This is a critical exam trap.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7ced1429ccc7449a8c90868a0128bd044845f98038145cfbdf62368640bd1d7c"
+    },
+    {
+      "question_id": "1431af42-5cb8-4a4a-a32f-822e900c0543",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(4), what is the maximum permitted length of a dead-end corridor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3.00 m"
+        },
+        {
+          "id": "B",
+          "text": "6.00 m"
+        },
+        {
+          "id": "C",
+          "text": "10.00 m"
+        },
+        {
+          "id": "D",
+          "text": "15.00 m"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(4), the maximum dead-end corridor length is 6.00 m. Dead-end corridors are dangerous because occupants who enter them have no alternate route if the path to the exit is blocked by fire or smoke. The 6.00 m limit is short enough that a dead end is quickly evident.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:df70415e4855f35aee91d99c7eb8e26f4278fb921fa5ec65aedee9a66b679023"
+    },
+    {
+      "question_id": "941890ff-315e-4f97-b66d-d90b8e96a8e2",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(5), what is the minimum stairway width for a stair serving more than 50 persons?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.90 m"
+        },
+        {
+          "id": "B",
+          "text": "1.00 m"
+        },
+        {
+          "id": "C",
+          "text": "1.10 m"
+        },
+        {
+          "id": "D",
+          "text": "1.20 m"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(5), stairs serving more than 50 persons require a minimum width of 1.10 m. Stairs serving 50 persons or fewer require 0.90 m, and private stairs serving fewer than 10 occupants require 0.75 m. Handrails may reduce width by up to 100 mm.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c6ab5a213f1f8235ba2b26475f3b3a1f77dff054054d7937eaf4eb297556818"
+    },
+    {
+      "question_id": "699350f0-8b02-478b-9576-2c1234b38393",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A 4-storey office building has 500 sq.m per floor. Occupant load per floor is 54 persons. What is the total exit width required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.327 m, calculated based on the minimum width per person as per standard safety regulations"
+        },
+        {
+          "id": "B",
+          "text": "0.90 m, which is a typical minimum width for exits in smaller buildings"
+        },
+        {
+          "id": "C",
+          "text": "0.327 m per exit, assuming multiple exits are provided to distribute the load"
+        },
+        {
+          "id": "D",
+          "text": "1.80 m minimum total (with 2 exits)"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Total exit width = 54 ÷ 165 = 0.327 m. However, per Sec. 1207(2)(b), minimum clear width per exit door is 0.90 m. With 2 exits, minimum total width = 1.80 m. The calculated width of 0.327 m is below the minimum per-exit threshold, so practical design requires at least 1.80 m total.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:821a2c2ee5b05937a8f5c21e4f9c4fbe20dbdbb996973754513351c798a3decd"
+    },
+    {
+      "question_id": "7c1cab2a-0c6f-4a67-8023-8de9305b96e1",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(2)(b), what is the formula for computing total exit width?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Occupant Load multiplied by 165 = total exit width in meters"
+        },
+        {
+          "id": "B",
+          "text": "Occupant Load divided by 165 = total exit width in meters"
+        },
+        {
+          "id": "C",
+          "text": "Floor Area divided by 100 = total exit width in meters"
+        },
+        {
+          "id": "D",
+          "text": "Occupant Load divided by 50 = total exit width in meters"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The exit width formula is: Total Exit Width (m) = Occupant Load ÷ 165. The divisor 165 is a capacity factor representing persons per meter of clear exit width. When exit width is computed at a level through which occupants from adjacent storeys pass, stacking percentages are added: 50% from the first adjacent storey above and 25% from storeys beyond.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f1270e39bc946e4244b1ae101382d2e748bad87662b85bbe2fe1d99b90ec2a6e"
+    },
+    {
+      "question_id": "c04cdd00-9cd5-45d9-83f4-f60dfb5df37f",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1207, floors above the 1st storey with an occupant load exceeding how many persons require at least two exits?",
+      "options": [
+        {
+          "id": "A",
+          "text": "More than 50 occupants"
+        },
+        {
+          "id": "B",
+          "text": "More than 30 occupants"
+        },
+        {
+          "id": "C",
+          "text": "More than 10 occupants"
+        },
+        {
+          "id": "D",
+          "text": "More than 5 occupants"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096, Rule XII states that floors above the 1st storey having an occupant load of more than 10 persons shall have at least 2 exits. This is the general rule that triggers multiple exit requirements regardless of other conditions.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:935ceb406f3dc033b7e34782356cf9ad7c822614a83c0bca67dfcdb899744cfb"
+    },
+    {
+      "question_id": "e47bd3ed-4135-4739-8b27-672c3cbbeea0",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An existing 3rd-floor office has 8 occupants. Per PD 1096 Rule XII, how many exits are required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 exit, because occupant load is below 10"
+        },
+        {
+          "id": "B",
+          "text": "2 exits, because the space is above the 2nd storey"
+        },
+        {
+          "id": "C",
+          "text": "2 exits, because any office above 1st storey requires 2 exits regardless of occupant load"
+        },
+        {
+          "id": "D",
+          "text": "3 exits, because this is above the 2nd storey"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(2)(a), floors above the 2nd storey require at least 2 exits regardless of occupant load. The 3rd-floor office has 8 occupants — below the >10 trigger — but the 'above 2nd storey' condition independently requires 2 exits. This is a common trap: the occupant-load threshold applies to floors above 1st storey, but the 'above 2nd storey' rule overrides it.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f44057537e699d5b358e385c9973845183cfb8a6709a9a07bf2c6f1fc398621"
+    },
+    {
+      "question_id": "36a540ed-67e9-4611-bca5-307a6697e81a",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A basement storage room with 7 occupants is used for purposes other than service. Per PD 1096 Rule XII, how many exits are required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 exit, because occupant load is below 10, which is the threshold for requiring additional exits"
+        },
+        {
+          "id": "B",
+          "text": "2 exits, because basements used for other than service use require 2 exits regardless of occupant load"
+        },
+        {
+          "id": "C",
+          "text": "3 exits, because basements require the same exit count as floors above 2nd storey, which is a common misconception"
+        },
+        {
+          "id": "D",
+          "text": "1 exit, because storage rooms are exempt from exit requirements, although this exemption is often misunderstood"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(2)(a), basements and cellars used for other than service use require at least 2 exits regardless of occupant load. A storage room used beyond pure service purposes triggers this requirement. The >10 occupant load rule is separate from the basement rule.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4576ae6712f55451c4e56180759bd05110890b5ee66ed42ae817e254e470bab"
+    },
+    {
+      "question_id": "4d3b5484-f685-46c5-91fe-0f8b0d84d9a5",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(2)(d), what is the maximum travel distance to a required exit in an unsprinklered building and in a sprinklered building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "45 m unsprinklered; 60 m sprinklered"
+        },
+        {
+          "id": "B",
+          "text": "30 m unsprinklered; 60 m sprinklered"
+        },
+        {
+          "id": "C",
+          "text": "60 m unsprinklered; 45 m sprinklered"
+        },
+        {
+          "id": "D",
+          "text": "45 m for both, regardless of sprinkler system"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(2)(d): maximum travel distance is 45.00 m for buildings without a full sprinkler system and 60.00 m for buildings with complete automatic sprinklers. The sprinkler system buys additional time for evacuation by slowing fire growth.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7272b2e967a23dad4358569a01e0a1df127c108793e2a909cc23b5163df8a7c8"
+    },
+    {
+      "question_id": "9de725fa-7692-442d-a54f-7fea1729d514",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(7), what is the minimum net floor area per person for a dispersal area serving non-ambulatory occupants in a horizontal exit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.30 sq.m/person"
+        },
+        {
+          "id": "B",
+          "text": "1.90 sq.m/person"
+        },
+        {
+          "id": "C",
+          "text": "2.80 sq.m/person"
+        },
+        {
+          "id": "D",
+          "text": "3.25 sq.m/person"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(7), the dispersal area net floor area is 0.30 sq.m/person for ambulatory occupants and 1.90 sq.m/person for non-ambulatory occupants. Non-ambulatory occupants (hospital patients on beds, wheelchair users) require significantly more space for evacuation via horizontal exit.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:419044bb084cd89b214cb1b29a82cc0644f88b69b2f87490a9c7f06ef926c23a"
+    },
+    {
+      "question_id": "ddc6191f-795e-4713-b980-f7cf6f4d3e2c",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(4), what is the minimum corridor width for all occupancies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.10 m for all occupancies"
+        },
+        {
+          "id": "B",
+          "text": "1.80 m for educational, 2.40 m for institutional"
+        },
+        {
+          "id": "C",
+          "text": "1.40 m for assembly, 1.10 m for others"
+        },
+        {
+          "id": "D",
+          "text": "2.00 m for all occupancies"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 Sec. 1207(4) states that every corridor or exit balcony shall not be less than 1.10 m in width. There are NO occupancy-specific widths in Section 1207. Numbers like 1.80 m for Educational or 2.40 m for Institutional come from other codes (Fire Code, BP 344, etc.) — NOT PD 1096. This is a critical trap on the ALE.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f011d5fc3a111295169d9ed6e251dd1613b3556b06eae82aa81ef63f428b7d7"
+    },
+    {
+      "question_id": "de571a32-7c95-4243-9ed7-ffd924f8adb1",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(2)(a), a mezzanine exceeds what area or dimension before it requires at least two stairways to the adjacent floor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Area exceeding 100 sq.m or dimension exceeding 15.00 m"
+        },
+        {
+          "id": "B",
+          "text": "Area exceeding 185 sq.m or dimension exceeding 18.00 m"
+        },
+        {
+          "id": "C",
+          "text": "Area exceeding 250 sq.m or dimension exceeding 20.00 m"
+        },
+        {
+          "id": "D",
+          "text": "Area exceeding 150 sq.m or dimension exceeding 12.00 m"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(2)(a), mezzanines exceeding 185 sq.m in area OR 18.00 m in greatest dimension require at least 2 stairways to the adjacent floor. Large mezzanines behave like partial floors and cannot rely on a single stair as a safe egress route.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b173304912b5fbf1d2da269b3b6011ab0dc410c37126aa90a918bb1e1b98a596"
+    },
+    {
+      "question_id": "eaabb6ac-60df-48d4-b529-a6f102080f32",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(5), what are the maximum riser height and minimum tread depth for an exit stair?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum riser: 200 mm; Minimum tread: 250 mm"
+        },
+        {
+          "id": "B",
+          "text": "Maximum riser: 180 mm; Minimum tread: 280 mm"
+        },
+        {
+          "id": "C",
+          "text": "Maximum riser: 220 mm; Minimum tread: 250 mm"
+        },
+        {
+          "id": "D",
+          "text": "Maximum riser: 200 mm; Minimum tread: 220 mm"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(5), the maximum riser height is 200 mm and the minimum tread depth is 250 mm. Maximum variation in risers per flight is 5 mm, and maximum variation in treads per flight is also 5 mm. These dimensions are based on human gait; sudden variations create trip hazards.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12051edacf3814e6ea15f060c472d8684dd3805863149356fee5629a8e926765"
+    },
+    {
+      "question_id": "f981a7a6-3af2-4230-82f0-feeb0fa682df",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(3), what is the minimum clear width of a required exit door?",
+      "options": [
+        {
+          "id": "A",
+          "text": "800 mm"
+        },
+        {
+          "id": "B",
+          "text": "900 mm"
+        },
+        {
+          "id": "C",
+          "text": "1,000 mm"
+        },
+        {
+          "id": "D",
+          "text": "700 mm"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(3), the minimum clear width of a required exit door is 900 mm. This allows two adults or one wheelchair user with assistance to pass through simultaneously. The minimum clear width when the door is opened to 90 degrees is 700 mm.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7bc25d2db9c43bf3cb55407dd9dfa00212bb93bde240e4c94be490b4f953e62d"
+    },
+    {
+      "question_id": "ab1aacfd-ef7f-451a-a0bd-75a225f9f4a2",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1207(3), in which direction must the required exit door swing when serving 50 or more occupants?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Inward, which is generally not recommended for safety reasons in high-occupancy scenarios"
+        },
+        {
+          "id": "B",
+          "text": "Outward, in the direction of exit travel"
+        },
+        {
+          "id": "C",
+          "text": "Either direction, at the occupant's discretion, which is not compliant with safety regulations for large groups"
+        },
+        {
+          "id": "D",
+          "text": "Horizontally sliding, which is not typically allowed for emergency exits due to potential obstructions"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1207(3), doors serving 50 or more occupants must swing outward in the direction of exit travel. Outward swing uses crowd pressure to help open the door instead of trapping people against it during emergency evacuation.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f107b71ae559374670417ab5e75fc614f77e49a13da3e7e46625767d007e70d"
+    },
+    {
+      "question_id": "cc8c8e3f-ebcf-48f8-aed2-a15512af915d",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1202, two required exits must be separated by what minimum distance to prevent both from being blocked by a single fire event?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least one-half of the diagonal dimension of the floor area served"
+        },
+        {
+          "id": "b",
+          "text": "At least one-fifth (1/5) of the perimeter of the floor area served"
+        },
+        {
+          "id": "c",
+          "text": "At least one-third (1/3) of the longest dimension of the floor area"
+        },
+        {
+          "id": "d",
+          "text": "At least 9.00 m measured in a straight line between exit door centerlines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1202 requires exit separation of at least 1/5 of the perimeter of the floor area served — not the diagonal. The diagonal-based rule (1/2 diagonal) is from US building codes and is a common exam distractor. The 1/5 perimeter rule is specific to PD 1096.",
+      "explanation": "The 1/5 perimeter versus 1/2 diagonal distinction is one of the highest-frequency traps on the LEA. US-trained candidates consistently select the diagonal rule. PD 1096 uses the perimeter rule, which produces different minimum distances for non-square floors.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1202",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:173f8b9f12ca06bf40dc5410ca7548b47c601ba96da9faf85f2ed60e0a74ce3b"
+    },
+    {
+      "question_id": "b2437050-323e-4f0d-89ef-b029a6a39cbb",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1204, when must an exit door swing outward in the direction of exit travel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whenever the room serves more than 10 occupants regardless of occupancy type or storey"
+        },
+        {
+          "id": "b",
+          "text": "Whenever the occupant load served by the door is 50 or more persons"
+        },
+        {
+          "id": "c",
+          "text": "Only when the door opens directly onto a public street or exterior sidewalk"
+        },
+        {
+          "id": "d",
+          "text": "Only for assembly and institutional occupancies; offices and storage are exempted"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1204 requires exit doors to swing outward (in the direction of exit travel) when serving an occupant load of 50 or more persons. Below 50 persons inward swinging is permitted. The 50-person threshold applies universally — it is not limited to assembly or institutional uses.",
+      "explanation": "The outward-swing rule at 50 persons prevents crowd crush against a door that would swing into a crowd. The threshold is 50 — not 10, not 100. Any answer suggesting occupancy-type restrictions is incorrect.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2df1fc517549512074236162e410a5353502f54f778f01e087bc6b240bc3fc13"
+    },
+    {
+      "question_id": "81280da5-cea6-42ab-b936-d71039e551c4",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A sprinklered assembly hall has an occupant load of 480 persons. The most remote point is 55 m from the nearest exit. Under PD 1096 Rule XII, is this travel distance compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-compliant; the 45 m travel distance limit applies regardless of sprinkler protection"
+        },
+        {
+          "id": "b",
+          "text": "Compliant; the 60 m travel distance limit for sprinklered buildings is not exceeded by 55 m"
+        },
+        {
+          "id": "c",
+          "text": "Non-compliant; assembly occupancies have a 30 m special travel limit regardless of sprinklers"
+        },
+        {
+          "id": "d",
+          "text": "Compliant; travel distance limits apply only to buildings with more than 500 occupants"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 Rule XII sets travel distance at 45 m for unsprinklered buildings and 60 m for sprinklered buildings. At 55 m, the hall is below the 60 m sprinklered limit and is therefore compliant. The 480-person occupant load is below the 500-person threshold for a third exit but does not affect the travel distance calculation.",
+      "explanation": "The 45 m / 60 m travel distance rule is a two-value paired fact. Sprinkler protection allows the longer 60 m travel distance because suppression delays fire growth, giving occupants more time to reach exits.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1202",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a2f6618dbe924d953fc2efe11d263e7a2e7eefdc509526fb40999595f235ef24"
+    },
+    {
+      "question_id": "eb4bf4a8-9422-47c5-9568-786be2863934",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1205, what are the minimum stair widths for: (a) a stair serving more than 50 persons, and (b) a private stair serving fewer than 10 persons?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) more than 50 persons: 1.10 m minimum; (b) fewer than 10 persons private stair: 0.75 m minimum"
+        },
+        {
+          "id": "b",
+          "text": "(a) more than 50 persons: 1.20 m minimum; (b) fewer than 10 persons private stair: 0.90 m minimum"
+        },
+        {
+          "id": "c",
+          "text": "(a) more than 50 persons: 0.90 m minimum; (b) fewer than 10 persons private stair: 0.60 m minimum"
+        },
+        {
+          "id": "d",
+          "text": "(a) more than 50 persons: 1.50 m minimum; (b) fewer than 10 persons private stair: 0.75 m minimum"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1205 establishes a three-tier stair width scale: stairs serving more than 50 persons require 1.10 m; stairs serving 10–50 persons require 0.90 m; private stairs serving fewer than 10 persons require a minimum of 0.75 m. The 1.10 m stair width matches the corridor minimum, ensuring no bottleneck at the stair entry.",
+      "explanation": "The three stair width tiers (>50: 1.10 m; 10-50: 0.90 m; <10 private: 0.75 m) must be memorized as a set. The most commonly tested pair is the >50 and private stair endpoints, which bracket the middle value at 0.90 m.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1205",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:35bc7dbf2db58ed3bc5e2cace78fbe1a230461544a07b87297eb7fe1f2d0cab4"
+    },
+    {
+      "question_id": "4986c4ed-1d6c-4112-9e7c-20bd19255d14",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1205, what is the maximum rise of a stair flight between landings, the maximum riser height, and the minimum tread depth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum rise 3.00 m; maximum riser 175 mm; minimum tread 280 mm"
+        },
+        {
+          "id": "b",
+          "text": "Maximum rise 3.60 m; maximum riser 200 mm; minimum tread 250 mm"
+        },
+        {
+          "id": "c",
+          "text": "Maximum rise 4.20 m; maximum riser 200 mm; minimum tread 300 mm"
+        },
+        {
+          "id": "d",
+          "text": "Maximum rise 3.60 m; maximum riser 250 mm; minimum tread 200 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1205 sets: maximum rise between landings = 3.60 m; maximum individual riser height = 200 mm; minimum tread depth = 250 mm. Exceeding 3.60 m between landings creates fatigue and disorientation during emergency egress. The 200 mm riser and 250 mm tread are the dimensional limits that define a safely climbable stair.",
+      "explanation": "The three stair dimension values (3.60 m between landings, 200 mm riser max, 250 mm tread min) are frequently tested together as a set. Confusing riser and tread values (swapping 200/250) is the most common error.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1205",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:49ef36390c35cd7259cdc922e1a216694efc78cd4db3dab2cf33af6795ace999"
+    },
+    {
+      "question_id": "8027fdf3-92ce-457b-a35c-6a6941be181b",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A hospital horizontal exit separates a ward housing 40 non-ambulatory patients from a refuge area. Under PD 1096 Rule XII, Sec. 1206, what minimum floor area must the refuge side provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12.0 sq.m — based on 0.30 sq.m per ambulatory person applied to all patient types"
+        },
+        {
+          "id": "b",
+          "text": "40.0 sq.m — based on 1.00 sq.m per person as a general refuge standard"
+        },
+        {
+          "id": "c",
+          "text": "76.0 sq.m — based on 1.90 sq.m per non-ambulatory person required by Sec. 1206"
+        },
+        {
+          "id": "d",
+          "text": "112.0 sq.m — based on 2.80 sq.m per bedridden patient for full bed clearance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1206 requires 1.90 sq.m per person for non-ambulatory patients in horizontal exit refuge areas. For 40 non-ambulatory patients: 40 × 1.90 = 76.0 sq.m minimum. The ambulatory standard is 0.30 sq.m per person. Non-ambulatory patients require the larger area for wheelchairs, stretchers, and staff maneuvering.",
+      "explanation": "The 0.30 / 1.90 sq.m paired values are the two horizontal exit area factors. Non-ambulatory patients (Group D Div. 2) are the primary scenario for the 1.90 figure. Confusing the two values produces severely undersized refuge areas in hospital egress design.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1206",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e8be9c8ad733016f795f4d5671a51d9b395fba770a5e82876995aa7a89883812"
+    },
+    {
+      "question_id": "f3502bc4-898a-44d2-943b-fb78f1f2a02d",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An auditorium has a computed occupant load of 650 persons. Under PD 1096 Rule XII, Sec. 1202, how many exits are required, and what is the minimum aggregate exit width using the Code's exit width formula?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 exits; aggregate exit width = 650 ÷ 165 ≈ 3.94 width units because OL is under 1,000"
+        },
+        {
+          "id": "b",
+          "text": "4 exits; aggregate exit width = 650 ÷ 165 ≈ 3.94 width units because OL exceeds 500"
+        },
+        {
+          "id": "c",
+          "text": "3 exits; aggregate exit width = 650 ÷ 165 ≈ 3.94 width units — OL 650 is in the 500–999 bracket"
+        },
+        {
+          "id": "d",
+          "text": "3 exits; aggregate exit width = 650 ÷ 300 ≈ 2.17 width units per the Code's assembly formula"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "OL = 650 places the building in the 500–999 bracket, requiring 3 exits (4 exits required only when OL ≥ 1,000). Minimum aggregate exit width = OL ÷ 165 = 650 ÷ 165 ≈ 3.94 exit width units, distributed across the 3 required exits. The divisor is always 165 — there is no special assembly formula.",
+      "explanation": "This question tests both the exit count brackets (2 exits for OL ≤ 499 above 1st floor; 3 exits for OL 500–999; 4 exits for OL ≥ 1,000) and the exit width formula (OL ÷ 165). OL 650 sits firmly in the 3-exit bracket and exposes the 4-exit threshold error common among candidates.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1202",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:238d47c01daf54885554274f2922fe24c498beabd58ce04189975e7fc85d8c6a"
+    },
+    {
+      "question_id": "0aba2574-6975-476c-befc-c556ec7d7a9d",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An office floor has a gross floor area of 930 sq.m. Using PD 1096 Rule XII, Table XII.1 (office: 9.30 sq.m/person), what is the computed occupant load and minimum number of exits required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OL = 100 persons; 1 exit is sufficient because the occupant load is below the 300-person threshold"
+        },
+        {
+          "id": "b",
+          "text": "OL = 100 persons; 2 exits required because any floor above the first storey must have at least 2 exits"
+        },
+        {
+          "id": "c",
+          "text": "OL = 100 persons; 3 exits required because the occupant load exceeds the 50-person threshold"
+        },
+        {
+          "id": "d",
+          "text": "OL = 93 persons; 2 exits required because the occupant load exceeds 10 persons above the first storey"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "OL = 930 ÷ 9.30 = 100 persons. The Code requires a minimum of 2 exits for any floor above the first storey regardless of occupant load. With OL = 100, only 2 exits are needed — 3 exits require OL 500–999; 4 exits require OL ≥ 1,000. The floor is above the first storey, so 2 exits are mandatory.",
+      "explanation": "The two-step calculation — divide area by unit area, then apply exit bracket rules — is the core egress calculation on the LEA. The trap is assuming OL alone governs exit count; the floor-above-first-storey rule mandates 2 exits even at OL = 1.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1201–1202, Table XII.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b017ff6a799b587c7b2d36729adc27dc6979d0cf3e43658f00a088f6996affe"
+    },
+    {
+      "question_id": "02245869-6264-4895-a3e8-f2f63b742923",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Table XII.1, what is the occupant load unit area for a classroom (educational occupancy)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.65 sq.m per person — the same as an auditorium with fixed seating"
+        },
+        {
+          "id": "b",
+          "text": "1.80 sq.m per person — the standard unit area for classroom educational use"
+        },
+        {
+          "id": "c",
+          "text": "3.70 sq.m per person — for general office use and business occupancy"
+        },
+        {
+          "id": "d",
+          "text": "9.30 sq.m per person — for open-plan office and administrative areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table XII.1 assigns 1.80 sq.m per person for classrooms. The auditorium value (0.65) applies to assembly with fixed or movable seating. Office space is 9.30 sq.m per person. The classroom value reflects higher occupant density than offices but lower than assembly spaces.",
+      "explanation": "Knowing Table XII.1 unit areas by occupancy type is a direct recall task. The most commonly tested values are: auditorium 0.65, classroom 1.80, office 9.30, warehouse 28.00, and aircraft hangar 46.50 sq.m per person.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1201, Table XII.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:570ce3e357bf13f3107e73361c245ba02164e19068b2c49e97bd4eaaec42ca2a"
+    },
+    {
+      "question_id": "b1b1cefa-97c9-4cb7-a172-a647fe91406e",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1207, what is the minimum clear width of corridors serving all occupancies covered by that section?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.90 m — the minimum width for private residential corridors and short stair flights"
+        },
+        {
+          "id": "b",
+          "text": "1.10 m — the Code-prescribed minimum corridor width for all occupancies under Sec. 1207"
+        },
+        {
+          "id": "c",
+          "text": "1.20 m — the standard minimum for pedestrian walkways under construction protection"
+        },
+        {
+          "id": "d",
+          "text": "1.50 m — required only for institutional occupancies with non-ambulatory patients"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1207 prescribes a single minimum corridor width of 1.10 m for all occupancies within its scope. There are no sub-category variations — 1.10 m applies universally. The 0.90 m figure is the minimum door clear width, not the corridor width.",
+      "explanation": "The single universal minimum (1.10 m) is frequently confused with stair widths or door widths. Sec. 1207 sets no occupancy-specific corridor variations — any answer listing different widths for different occupancies is incorrect.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1207",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.401336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9a0b5198974eed62665e9f18becce40fddcca62fb062813ab2326c8a81737703"
+    },
+    {
+      "question_id": "05caa86a-1fb8-4ed8-ace8-01b32eceab13",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Table XII.1, what is the occupant load unit area for a classroom (educational occupancy)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.65 sq.m per person — the same as an auditorium with fixed seating"
+        },
+        {
+          "id": "b",
+          "text": "1.80 sq.m per person — the standard unit area for classroom educational use"
+        },
+        {
+          "id": "c",
+          "text": "3.70 sq.m per person — for general office use and business occupancy"
+        },
+        {
+          "id": "d",
+          "text": "9.30 sq.m per person — for open-plan office and administrative areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table XII.1 assigns 1.80 sq.m per person for classrooms. The auditorium value (0.65) applies to assembly with fixed or movable seating. Office space is 9.30 sq.m per person. The classroom value reflects higher occupant density than offices but lower than assembly spaces.",
+      "explanation": "Knowing Table XII.1 unit areas by occupancy type is a direct recall task. The most commonly tested values are: auditorium 0.65, classroom 1.80, office 9.30, warehouse 28.00, and aircraft hangar 46.50 sq.m per person.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1201, Table XII.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cc1bf879ce50089cf123109c246c038f12274577529a020755ba13e8078d6bb5"
+    },
+    {
+      "question_id": "d8b1a410-d6b0-4690-aca4-a41027f40d21",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An office floor has a gross floor area of 930 sq.m. Using PD 1096 Rule XII, Table XII.1 (office: 9.30 sq.m/person), what is the computed occupant load and minimum number of exits required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OL = 100 persons; 1 exit is sufficient because the occupant load is below the 300-person threshold"
+        },
+        {
+          "id": "b",
+          "text": "OL = 100 persons; 2 exits required because any floor above the first storey must have at least 2 exits"
+        },
+        {
+          "id": "c",
+          "text": "OL = 100 persons; 3 exits required because the occupant load exceeds the 50-person threshold"
+        },
+        {
+          "id": "d",
+          "text": "OL = 93 persons; 2 exits required because the occupant load exceeds 10 persons above the first storey"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "OL = 930 ÷ 9.30 = 100 persons. The Code requires a minimum of 2 exits for any floor above the first storey regardless of occupant load. With OL = 100, only 2 exits are needed — 3 exits require OL 500–999; 4 exits require OL ≥ 1,000. The floor is above the first storey, so 2 exits are mandatory.",
+      "explanation": "The two-step calculation — divide area by unit area, then apply exit bracket rules — is the core egress calculation on the LEA. The trap is assuming OL alone governs exit count; the floor-above-first-storey rule mandates 2 exits even at OL = 1.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1201–1202, Table XII.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6eff2458a7fff1678612bf2df17d5a38cd0f61a99aa2c5ad7b8418f0581b16f7"
+    },
+    {
+      "question_id": "be639848-bd4a-4e28-bd40-447a96b044a3",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1207, what is the minimum clear width of corridors serving all occupancies covered by that section?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.90 m — the minimum width for private residential corridors and short stair flights"
+        },
+        {
+          "id": "b",
+          "text": "1.10 m — the Code-prescribed minimum corridor width for all occupancies under Sec. 1207"
+        },
+        {
+          "id": "c",
+          "text": "1.20 m — the standard minimum for pedestrian walkways under construction protection"
+        },
+        {
+          "id": "d",
+          "text": "1.50 m — required only for institutional occupancies with non-ambulatory patients"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1207 prescribes a single minimum corridor width of 1.10 m for all occupancies within its scope. There are no sub-category variations — 1.10 m applies universally. The 0.90 m figure is the minimum door clear width, not the corridor width.",
+      "explanation": "The single universal minimum (1.10 m) is frequently confused with stair widths or door widths. Sec. 1207 sets no occupancy-specific corridor variations — any answer listing different widths for different occupancies is incorrect.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1207",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7ea0acf65adbfc15f08f08645a7b351e2a1624d6ac38aab0c56111e73ca869ed"
+    },
+    {
+      "question_id": "c42f11cd-a803-4559-aa36-05aa9567cb5d",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1202, two required exits must be separated by what minimum distance to prevent both from being blocked by a single fire event?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least one-half of the diagonal dimension of the floor area served"
+        },
+        {
+          "id": "b",
+          "text": "At least one-fifth (1/5) of the perimeter of the floor area served"
+        },
+        {
+          "id": "c",
+          "text": "At least one-third (1/3) of the longest dimension of the floor area"
+        },
+        {
+          "id": "d",
+          "text": "At least 9.00 m measured in a straight line between exit door centerlines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1202 requires exit separation of at least 1/5 of the perimeter of the floor area served — not the diagonal. The diagonal-based rule (1/2 diagonal) is from US building codes and is a common exam distractor. The 1/5 perimeter rule is specific to PD 1096.",
+      "explanation": "The 1/5 perimeter versus 1/2 diagonal distinction is one of the highest-frequency traps on the LEA. US-trained candidates consistently select the diagonal rule. PD 1096 uses the perimeter rule, which produces different minimum distances for non-square floors.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1202",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e8f7f4d1f7b9ae2de5fdcb20f68098387566f16408d95829c95b6111bb6a228"
+    },
+    {
+      "question_id": "f7781f1f-d9a9-490e-a4a2-2d19c6102e46",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1204, when must an exit door swing outward in the direction of exit travel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whenever the room serves more than 10 occupants regardless of occupancy type or storey"
+        },
+        {
+          "id": "b",
+          "text": "Whenever the occupant load served by the door is 50 or more persons"
+        },
+        {
+          "id": "c",
+          "text": "Only when the door opens directly onto a public street or exterior sidewalk"
+        },
+        {
+          "id": "d",
+          "text": "Only for assembly and institutional occupancies; offices and storage are exempted"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1204 requires exit doors to swing outward (in the direction of exit travel) when serving an occupant load of 50 or more persons. Below 50 persons inward swinging is permitted. The 50-person threshold applies universally — it is not limited to assembly or institutional uses.",
+      "explanation": "The outward-swing rule at 50 persons prevents crowd crush against a door that would swing into a crowd. The threshold is 50 — not 10, not 100. Any answer suggesting occupancy-type restrictions is incorrect.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a081af99290e4549e872c07af2e4ce96b4d44b7ec52b17aecda771e6d0c938aa"
+    },
+    {
+      "question_id": "c7352230-d819-437f-a5d8-774dd0332c29",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A sprinklered assembly hall has an occupant load of 480 persons. The most remote point is 55 m from the nearest exit. Under PD 1096 Rule XII, is this travel distance compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-compliant; the 45 m travel distance limit applies regardless of sprinkler protection"
+        },
+        {
+          "id": "b",
+          "text": "Compliant; the 60 m travel distance limit for sprinklered buildings is not exceeded by 55 m"
+        },
+        {
+          "id": "c",
+          "text": "Non-compliant; assembly occupancies have a 30 m special travel limit regardless of sprinklers"
+        },
+        {
+          "id": "d",
+          "text": "Compliant; travel distance limits apply only to buildings with more than 500 occupants"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 Rule XII sets travel distance at 45 m for unsprinklered buildings and 60 m for sprinklered buildings. At 55 m, the hall is below the 60 m sprinklered limit and is therefore compliant. The 480-person occupant load is below the 500-person threshold for a third exit but does not affect the travel distance calculation.",
+      "explanation": "The 45 m / 60 m travel distance rule is a two-value paired fact. Sprinkler protection allows the longer 60 m travel distance because suppression delays fire growth, giving occupants more time to reach exits.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1202",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:225f77a0ed5d1baa8b2334b1c6854eae4fb2884cda691deba4384049e7da2570"
+    },
+    {
+      "question_id": "43fe7501-c90d-45f5-a2a8-db7e5d024236",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1205, what are the minimum stair widths for: (a) a stair serving more than 50 persons, and (b) a private stair serving fewer than 10 persons?",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) more than 50 persons: 1.10 m minimum; (b) fewer than 10 persons private stair: 0.75 m minimum"
+        },
+        {
+          "id": "b",
+          "text": "(a) more than 50 persons: 1.20 m minimum; (b) fewer than 10 persons private stair: 0.90 m minimum"
+        },
+        {
+          "id": "c",
+          "text": "(a) more than 50 persons: 0.90 m minimum; (b) fewer than 10 persons private stair: 0.60 m minimum"
+        },
+        {
+          "id": "d",
+          "text": "(a) more than 50 persons: 1.50 m minimum; (b) fewer than 10 persons private stair: 0.75 m minimum"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1205 establishes a three-tier stair width scale: stairs serving more than 50 persons require 1.10 m; stairs serving 10–50 persons require 0.90 m; private stairs serving fewer than 10 persons require a minimum of 0.75 m. The 1.10 m stair width matches the corridor minimum, ensuring no bottleneck at the stair entry.",
+      "explanation": "The three stair width tiers (>50: 1.10 m; 10-50: 0.90 m; <10 private: 0.75 m) must be memorized as a set. The most commonly tested pair is the >50 and private stair endpoints, which bracket the middle value at 0.90 m.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1205",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8fe120f5e33c42efb97731e24987a1de80d4a330f00319c3daec1a2f1b70103a"
+    },
+    {
+      "question_id": "50fa34b7-2ea8-4706-b040-3b6c1eb3e695",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1205, what is the maximum rise of a stair flight between landings, the maximum riser height, and the minimum tread depth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum rise 3.00 m; maximum riser 175 mm; minimum tread 280 mm"
+        },
+        {
+          "id": "b",
+          "text": "Maximum rise 3.60 m; maximum riser 200 mm; minimum tread 250 mm"
+        },
+        {
+          "id": "c",
+          "text": "Maximum rise 4.20 m; maximum riser 200 mm; minimum tread 300 mm"
+        },
+        {
+          "id": "d",
+          "text": "Maximum rise 3.60 m; maximum riser 250 mm; minimum tread 200 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1205 sets: maximum rise between landings = 3.60 m; maximum individual riser height = 200 mm; minimum tread depth = 250 mm. Exceeding 3.60 m between landings creates fatigue and disorientation during emergency egress. The 200 mm riser and 250 mm tread are the dimensional limits that define a safely climbable stair.",
+      "explanation": "The three stair dimension values (3.60 m between landings, 200 mm riser max, 250 mm tread min) are frequently tested together as a set. Confusing riser and tread values (swapping 200/250) is the most common error.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1205",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bad796c3d32374ea27f170153a0d91b98db5cebb390a6bb3a2a216c15f68282b"
+    },
+    {
+      "question_id": "200d6637-6c88-4bd1-9588-a777bb0712ae",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A hospital horizontal exit separates a ward housing 40 non-ambulatory patients from a refuge area. Under PD 1096 Rule XII, Sec. 1206, what minimum floor area must the refuge side provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12.0 sq.m — based on 0.30 sq.m per ambulatory person applied to all patient types"
+        },
+        {
+          "id": "b",
+          "text": "40.0 sq.m — based on 1.00 sq.m per person as a general refuge standard"
+        },
+        {
+          "id": "c",
+          "text": "76.0 sq.m — based on 1.90 sq.m per non-ambulatory person required by Sec. 1206"
+        },
+        {
+          "id": "d",
+          "text": "112.0 sq.m — based on 2.80 sq.m per bedridden patient for full bed clearance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1206 requires 1.90 sq.m per person for non-ambulatory patients in horizontal exit refuge areas. For 40 non-ambulatory patients: 40 × 1.90 = 76.0 sq.m minimum. The ambulatory standard is 0.30 sq.m per person. Non-ambulatory patients require the larger area for wheelchairs, stretchers, and staff maneuvering.",
+      "explanation": "The 0.30 / 1.90 sq.m paired values are the two horizontal exit area factors. Non-ambulatory patients (Group D Div. 2) are the primary scenario for the 1.90 figure. Confusing the two values produces severely undersized refuge areas in hospital egress design.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1206",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:034cf6ee766d0a1cb4dd8f39a4d34a72aee4d2e11c8494de829de821d9b0cb28"
+    },
+    {
+      "question_id": "0eefbd9f-5fa4-428a-b70d-43c9396ffae6",
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An auditorium has a computed occupant load of 650 persons. Under PD 1096 Rule XII, Sec. 1202, how many exits are required, and what is the minimum aggregate exit width using the Code's exit width formula?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 exits; aggregate exit width = 650 ÷ 165 ≈ 3.94 width units because OL is under 1,000"
+        },
+        {
+          "id": "b",
+          "text": "4 exits; aggregate exit width = 650 ÷ 165 ≈ 3.94 width units because OL exceeds 500"
+        },
+        {
+          "id": "c",
+          "text": "3 exits; aggregate exit width = 650 ÷ 165 ≈ 3.94 width units — OL 650 is in the 500–999 bracket"
+        },
+        {
+          "id": "d",
+          "text": "3 exits; aggregate exit width = 650 ÷ 300 ≈ 2.17 width units per the Code's assembly formula"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "OL = 650 places the building in the 500–999 bracket, requiring 3 exits (4 exits required only when OL ≥ 1,000). Minimum aggregate exit width = OL ÷ 165 = 650 ÷ 165 ≈ 3.94 exit width units, distributed across the 3 required exits. The divisor is always 165 — there is no special assembly formula.",
+      "explanation": "This question tests both the exit count brackets (2 exits for OL ≤ 499 above 1st floor; 3 exits for OL 500–999; 4 exits for OL ≥ 1,000) and the exit width formula (OL ÷ 165). OL 650 sits firmly in the 3-exit bracket and exposes the 4-exit threshold error common among candidates.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1202",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:54.160341+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:30fa5ab634c22e5e34517213e768016eff987042bee194f7a3d656799abc8529"
+    }
+  ]
+}

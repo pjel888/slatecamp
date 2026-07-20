@@ -22,5 +22,53 @@
       "detailing-rebar",
       "detailing-concrete"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "What is the purpose of a standard hook?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To reduce concrete cover to zero."
+      },
+      {
+        "id": "b",
+        "text": "To anchor reinforcement through a specified bend and extension."
+      },
+      {
+        "id": "c",
+        "text": "To remove clear spacing requirements."
+      },
+      {
+        "id": "d",
+        "text": "To replace all stirrups in beams."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "To reduce concrete cover to zero. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "To anchor reinforcement through a specified bend and extension. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+      "c": "To remove clear spacing requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "To replace all stirrups in beams. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "To anchor reinforcement through a specified bend and extension. Supported by detailing-rebar.",
+      "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-rebar",
+      "checked_sources": [
+        "detailing-rebar",
+        "detailing-concrete"
+      ]
+    },
+    "explanation": "To anchor reinforcement through a specified bend and extension. Supported by the Batch 144 local source boundary: detailing-rebar.",
+    "code_citation": "detailing-rebar",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-02-008"
   }
 }

@@ -8,37 +8,37 @@
       "question_id": "c1c7d9be-ff6a-42f4-90a2-a4d284a671a2",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "According to PHIVOLCS guidelines, what is the minimum setback distance required from an active fault trace for inhabited structures?",
+      "text": "Why are ecological studies part of site planning under the CLUP source family?",
       "options": [
         {
           "id": "a",
-          "text": "3 meters, same as PD 1067 stream easements"
+          "text": "They provide natural, physical, biodiversity, drainage, and hazard data for land-use decisions."
         },
         {
           "id": "b",
-          "text": "5 meters minimum setback"
+          "text": "They are optional decoration after zoning approval."
         },
         {
           "id": "c",
-          "text": "20 meters, same as PD 1067 river easements"
+          "text": "They replace all legal controls."
         },
         {
           "id": "d",
-          "text": "No setback required if the structure is earthquake-resistant"
+          "text": "They apply only to building color selection."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student confuses fault setback with water body easement distance",
-        "b": "PHIVOLCS requires a 5-meter minimum setback from active fault traces—this is a seismic hazard standard, not a water-based easement.",
-        "c": "Student conflates different setback standards",
-        "d": "Student incorrectly assumes engineering design eliminates locational hazard",
-        "correct": "PHIVOLCS requires a 5-meter minimum setback from active fault traces—this is a seismic hazard standard, not a water-based easement.",
-        "takeaway": "Fault setback (5m) is different from water easements (3m, 20m, 40m)."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": null,
       "code_citation": "LEA-PLAN-004-02: Seismic and Geological Hazards section; VERIFIED_REFERENCE.md PART 4.5",
@@ -52,44 +52,44 @@
       "model_id": "ALE-PLAN-004-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.124492+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.895817+00:00",
       "content_hash": "sha256:880b9f560c8562db77284325b1968723f8dfe23e6e5348944f45fe0dfa036ce8"
     },
     {
       "question_id": "d185d088-5eb0-4b4d-8516-c1f161939d58",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "A site planner is analyzing a hillside lot and observes seepage (groundwater emerging from the slope), tilted tree trunks, and bare soil patches. What does this combination of indicators suggest about the site's geotechnical condition?",
+      "text": "Which source-safe strategy manages and reuses stormwater while reducing impacts on rivers and creeks?",
       "options": [
         {
           "id": "a",
-          "text": "The slope is stable and suitable for development with minimal site preparation, as these features are typical of well-drained areas"
+          "text": "Water-sensitive urban design."
         },
         {
           "id": "b",
-          "text": "The slope shows signs of saturation and past movement; it is prone to landsliding and unsuitable for unmitigated development"
+          "text": "Open dumping."
         },
         {
           "id": "c",
-          "text": "These are natural weathering features with no implications for site planning, indicating a stable geological environment"
+          "text": "Unmapped infill."
         },
         {
           "id": "d",
-          "text": "The site requires only standard drainage design and can be developed normally, assuming typical construction practices"
+          "text": "Exclusive car storage."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student fails to recognize instability indicators",
-        "b": "Seepage + tilted trees + bare soil patches = classic signs of slope instability; groundwater is lubricating the slope and past slides have occurred.",
-        "c": "Student discounts geomorphological evidence of hazard",
-        "d": "Student underestimates slope stability risk",
-        "correct": "Seepage + tilted trees + bare soil patches = classic signs of slope instability; groundwater is lubricating the slope and past slides have occurred.",
-        "takeaway": "Seepage + tree tilt + bare patches = landslide risk; requires stabilization."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": "Student fails to recognize instability indicators Seepage + tilted trees + bare soil patches = classic signs of slope instability; groundwater is lubricating the slope and past slides have occurred. Student discounts geomorphological evidence of hazard Student underestimates slope stability risk Seepage + tilted trees + bare soil patches = classic signs of slope instability; groundwater is lubricating the slope and past slides have occurred. Seepage + tree tilt + bare patches = landslide risk; requires stabilization.",
       "code_citation": "LEA-PLAN-004-02: Slope Stability and Landslide Risk section",
@@ -103,30 +103,30 @@
       "model_id": "ALE-PLAN-004-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-05-06T15:53:12.6419+00:00",
+      "updated_at": "2026-07-20T01:13:27.890702+00:00",
       "content_hash": "sha256:dca1c0de223db8cc630bf723c6b6ed01110a15b831837666250708c476d14f14"
     },
     {
       "question_id": "e19af50d-a770-4172-af26-1e37810bc0a5",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "Why are wetlands important considerations in site planning for flood-prone areas, particularly in the Philippines?",
+      "text": "What is the safest planning response to a site beside a river or stream?",
       "options": [
         {
           "id": "a",
-          "text": "Wetlands absorb and gradually release floodwater, reducing peak flood heights and downstream flooding risk"
+          "text": "Check PD 1067 waterway easements and keep required public-use easement areas clear."
         },
         {
           "id": "b",
-          "text": "Wetlands prevent all flooding and are therefore suitable for dense residential development"
+          "text": "Assume the entire bank can be built over."
         },
         {
           "id": "c",
-          "text": "Wetlands are no longer ecologically important in developed areas and can be converted to settlement"
+          "text": "Ignore water bodies if the lot is private."
         },
         {
           "id": "d",
-          "text": "Wetlands are irrelevant to site planning and should be assessed only in environmental impact statements"
+          "text": "Use parking demand as the only criterion."
         }
       ],
       "correct_option_id": "a",
@@ -135,12 +135,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Wetlands provide ecosystem services including flood buffering, biodiversity support, and water purification—these are site planning considerations, not just environmental concerns.",
-        "b": "Student undervalues ecological ecosystem services in urban context",
-        "c": "Student separates ecological assessment from site planning",
-        "d": "Student separates ecological assessment from site planning",
-        "correct": "Wetlands provide ecosystem services including flood buffering, biodiversity support, and water purification—these are site planning considerations, not just environmental concerns.",
-        "takeaway": "Wetlands are hydrological and ecological assets; preserve them in site design."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": "Wetlands provide ecosystem services including flood buffering, biodiversity support, and water purification—these are site planning considerations, not just environmental concerns. Student undervalues ecological ecosystem services in urban context Student separates ecological assessment from site planning Student separates ecological assessment from site planning Wetlands provide ecosystem services including flood buffering, biodiversity support, and water purification—these are site planning considerations, not just environmental concerns. Wetlands are hydrological and ecological assets; preserve them in site design.",
       "code_citation": "LEA-PLAN-004-02: Wetlands and Water Bodies section",
@@ -154,44 +154,44 @@
       "model_id": "ALE-PLAN-004-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-05-06T15:53:12.812212+00:00",
+      "updated_at": "2026-07-20T01:13:27.895015+00:00",
       "content_hash": "sha256:fe3698d5a5509aefac24f4bbc0541ea7d18cbc06076ff6277cd98ece03860960"
     },
     {
       "question_id": "f15f1ece-d9ab-4f7a-a884-0d9344ddf3b9",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "A proposed mixed-use development is planned for a 4-hectare site in Quezon City. The site analysis reveals: (1) the site slopes toward an estero 300 meters downslope; (2) the water table is 2 meters below grade during the dry season and rises to near-surface during monsoon; (3) the site borders a small protected mangrove area to the west; and (4) the 25-year flood elevation is 0.8 meters above current site grade. The planner must determine if this site is ecologically and hydrologically feasible for mixed-use development. Which of the following represents the most comprehensive analysis?",
+      "text": "Which law is directly relevant to sewerage, septage, and water-quality management areas?",
       "options": [
         {
           "id": "a",
-          "text": "The mangrove constraint alone makes the site unsuitable; recommend site abandonment, as the ecological impact would be too significant to mitigate effectively"
+          "text": "RA 9275 Clean Water Act."
         },
         {
           "id": "b",
-          "text": "Development is feasible if buildings are elevated above the 25-year flood level, impervious surfaces are minimized to maintain infiltration, the mangrove is preserved as a buffer for both flood absorption and habitat protection, and a geotechnical investigation addresses foundation design in high water table conditions"
+          "text": "RA 9003 only."
         },
         {
           "id": "c",
-          "text": "The flood risk is too great; elevate all structures 5 meters above grade and fill the surrounding site to create developable land, ensuring that all potential water ingress points are sealed"
+          "text": "RA 7160 only."
         },
         {
           "id": "d",
-          "text": "Ground water and flooding are engineering problems, not planning constraints; proceed with standard site development and let the engineer address hazards during design, assuming that all necessary adjustments can be made post-construction"
+          "text": "UAP Code of Ethics."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student treats single constraint as total prohibition",
-        "b": "Comprehensive analysis integrates flood elevation, water table, and mangrove preservation—development is feasible with design adaptations that respect all constraints simultaneously.",
-        "c": "Student adopts expensive mitigation without considering alternatives or ecological impacts",
-        "d": "Student defers ecological and hydrological analysis to design phase",
-        "correct": "Comprehensive analysis integrates flood elevation, water table, and mangrove preservation—development is feasible with design adaptations that respect all constraints simultaneously.",
-        "takeaway": "Integrate flood, water table, and ecological constraints; adapt design accordingly."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": null,
       "code_citation": "LEA-PLAN-004-02: Flood Zones, Wetlands, Soil and Geotechnical Conditions sections",
@@ -205,44 +205,44 @@
       "model_id": "ALE-PLAN-004-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.896611+00:00",
       "content_hash": "sha256:148b7c48b9ff6f1868311b72e322b93dfa9ec5c53181d937e23be7abe9ff9a4e"
     },
     {
       "question_id": "4d0d2cae-edcc-42b1-8646-e5385c794848",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "A site planner analyzes a proposed 3-hectare commercial development in Marikina and discovers that the site is adjacent to a mangrove wetland. The planner also notes that Marikina is in a flood-prone area with historical 25-year flood elevation 1.2 meters above the site's current grade. What does this combination of ecological and hydrological conditions suggest for preliminary site strategy?",
+      "text": "Which law is directly relevant to local solid-waste plans, segregation, and waste diversion?",
       "options": [
         {
           "id": "a",
-          "text": "The site is unsuitable for any development due to the presence of nearby mangroves, which are protected by environmental regulations"
+          "text": "RA 9003 Ecological Solid Waste Management Act."
         },
         {
           "id": "b",
-          "text": "The site should be developed on the portion closest to the mangrove to benefit from its flood absorption; ground-level housing is appropriate, provided that flood mitigation measures are implemented"
+          "text": "PD 1067 only."
         },
         {
           "id": "c",
-          "text": "The site has significant flood risk; development should elevate sensitive uses above the 25-year flood level, preserve or restore the mangrove for flood buffering, and potentially integrate detention areas on the site"
+          "text": "RA 9275 only."
         },
         {
           "id": "d",
-          "text": "Mangrove preservation is an environmental concern, not a site planning concern; commercial development can proceed at grade level, assuming standard flood precautions are in place"
+          "text": "RA 9266 IRR only."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student treats adjacent wetlands as absolute development prohibition",
-        "b": "Student inverts the relationship between proximity to wetland and flood safety",
-        "c": "Mangrove + flood hazard = design for elevation, wetland preservation, and site detention—integrated response to overlapping ecological and hydrological constraints.",
-        "d": "Student separates ecological functions from site planning strategy",
-        "correct": "Mangrove + flood hazard = design for elevation, wetland preservation, and site detention—integrated response to overlapping ecological and hydrological constraints.",
-        "takeaway": "Preserve wetlands and elevate development; integrate natural and built responses."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": "Student treats adjacent wetlands as absolute development prohibition Student inverts the relationship between proximity to wetland and flood safety Mangrove + flood hazard = design for elevation, wetland preservation, and site detention—integrated response to overlapping ecological and hydrological constraints. Student separates ecological functions from site planning strategy Mangrove + flood hazard = design for elevation, wetland preservation, and site detention—integrated response to overlapping ecological and hydrological constraints. Preserve wetlands and elevate development; integrate natural and built responses.",
       "code_citation": "LEA-PLAN-004-02: Flood Zones and Flood Risk; Wetlands and Water Bodies sections",
@@ -256,44 +256,44 @@
       "model_id": "ALE-PLAN-004-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-05-06T15:53:13.085023+00:00",
+      "updated_at": "2026-07-20T01:13:27.893409+00:00",
       "content_hash": "sha256:70841f9cd011303ec10092b63d032c04b1ee53d5495dad24e0e2faf4ffab4901"
     },
     {
       "question_id": "cc206a09-e238-4e27-b439-7c8fc14b34fe",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "A site planner is preparing a comprehensive ecological analysis for a proposed 10-hectare residential development in a barangay near a river. The site contains degraded secondary growth, slopes of 10–20 degrees (moderate), and the river runs along the southern boundary. During preliminary ecological assessment, the planner identifies three overlapping constraints: (1) PD 1067 easement from the river (planner must determine applicable distance based on hydrologic surveys showing river width of approximately 7 meters); (2) presence of bird species that migrate through the site seasonally; and (3) high groundwater table (1.5 meters below grade in dry season). The planner must decide how to integrate these findings into a preliminary development strategy that respects ecological limits while testing feasibility. Which approach most appropriately balances ecological integrity with development feasibility?",
+      "text": "What does a slope/drainage/bodies-of-water data requirement tell the site planner?",
       "options": [
         {
           "id": "a",
-          "text": "Recommend abandoning the site because all three constraints make development impossible, which is a conservative approach but may not consider innovative solutions"
+          "text": "Physical constraints must be mapped before allocating land uses or placing buildings."
         },
         {
           "id": "b",
-          "text": "Ignore the migratory bird habitat because it is a seasonal use, not permanent; focus only on the PD 1067 easement (20 meters for a 7-meter river) and foundation design for high water table; this narrows constraints to manageable levels, though it may overlook ecological impacts"
+          "text": "The site can be designed without base maps."
         },
         {
           "id": "c",
-          "text": "Document all three constraints, establish a 20-meter no-build zone from the river per PD 1067, identify development zones outside the easement and outside seasonal bird-use areas, design for high water table with appropriate foundations, and recommend preservation of riparian vegetation and some degraded areas as connectivity corridors—feasibility depends on whether the reduced developable area meets the project's economic requirements"
+          "text": "Only facade style matters."
         },
         {
           "id": "d",
-          "text": "The migratory birds and river easement are environmental concerns requiring a full EIA; site planning cannot proceed without DENR's ECC approval, which is a necessary step for compliance"
+          "text": "Drainage is unrelated to land use."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student conflates overlapping constraints with total prohibition",
-        "b": "Student dismisses ecological constraints as less important than physical buildability",
-        "c": "Comprehensive site planning documents all constraints, respects easements and habitat, and identifies reduced developable areas while testing economic viability—this is responsible planning.",
-        "d": "Student conflates site planning's responsibility (to note ecological constraints) with DENR's responsibility (to conduct EIA and issue ECC)",
-        "correct": "Comprehensive site planning documents all constraints, respects easements and habitat, and identifies reduced developable areas while testing economic viability—this is responsible planning.",
-        "takeaway": "Integrate all constraints; identify reduced but viable development zones; assess feasibility."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": null,
       "code_citation": "LEA-PLAN-004-02: Entire article (Watershed, Flood Zones, Wetlands, Biodiversity, Slope Stability, Soil, Seismic, EIA/ECC)",
@@ -307,30 +307,30 @@
       "model_id": "ALE-PLAN-004-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.897414+00:00",
       "content_hash": "sha256:3a83694edad2612976eb1d5241dbfc58154f7f81397652034797c293dd765158"
     },
     {
       "question_id": "06f6f1ad-d189-4c01-b6bd-e8a66b114a35",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "In site planning, what is the distinction between noting that a site is in an Environmentally Critical Area (ECA) versus conducting a full Environmental Impact Assessment (EIA)?",
+      "text": "Which ecological design idea is supported by the DHSUD resilient urban design guidelines?",
       "options": [
         {
           "id": "a",
-          "text": "Site planning identifies that the site is in an ECA and flags the need for EIA; the full EIA is conducted by environmental specialists and results in an ECC from DENR"
+          "text": "Nature-based solutions and green infrastructure can address water, climate, disaster, and biodiversity concerns."
         },
         {
           "id": "b",
-          "text": "Site planning must conduct the full EIA and prepare the ECC application, ensuring all environmental impacts are thoroughly assessed"
+          "text": "All vegetation should be removed before planning."
         },
         {
           "id": "c",
-          "text": "ECAs and EIAs are the same thing and site planners handle both comprehensively, which may lead to confusion in regulatory compliance"
+          "text": "Open spaces have no resilience role."
         },
         {
           "id": "d",
-          "text": "If a site is in an ECA, site planning is impossible and the site must be abandoned, which may not be a feasible approach for all projects"
+          "text": "Wastewater can be ignored if streets are wide."
         }
       ],
       "correct_option_id": "a",
@@ -339,12 +339,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Site planning notes constraints (ECA designation); DENR specialists conduct full EIA and issue ECC. These are ALE-PLAN-004-02 vs. ALE-PLAN-005-03 roles.",
-        "b": "Student conflates site planning's role with DENR's role (ERR-PLAN-021 context)",
-        "c": "Student conflates designation with assessment process",
-        "d": "Student treats ECA designation as absolute prohibition",
-        "correct": "Site planning notes constraints (ECA designation); DENR specialists conduct full EIA and issue ECC. These are ALE-PLAN-004-02 vs. ALE-PLAN-005-03 roles.",
-        "takeaway": "Planners flag ECAs; DENR conducts EIA and issues ECC."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": null,
       "code_citation": "LEA-PLAN-004-02: Environmental Impact Assessment (EIA) and ECC section; ERROR_REGISTRY.md ERR-PLAN-021",
@@ -358,44 +358,44 @@
       "model_id": "ALE-PLAN-004-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.891714+00:00",
       "content_hash": "sha256:fb2a5c8e2eff0b61d9ccf1f480306370c80de28de1795aaf3012efde4291ad93"
     },
     {
       "question_id": "2381b7a4-77f5-423e-8931-26d7bd3b09a7",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "During site analysis for a proposed school in a rural municipality, the planner documents that the site is located on a slope, with soil test results showing soft clay to a depth of 15 meters. The planner's geotechnical consultant recommends piled foundations. What is the site planner's appropriate response in the preliminary site analysis phase?",
+      "text": "A development proposal near a creek creates more runoff and directs it untreated to the waterway. What concern is most source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Reject the site because soft clay soils are unsuitable for any construction, regardless of the foundation type proposed"
+          "text": "Stormwater and water-quality impact must be addressed through drainage and water-sensitive planning."
         },
         {
           "id": "b",
-          "text": "Document the soft clay condition, note the specialist recommendation for piled foundations, and flag this as a cost and complexity constraint—feasibility depends on the client's budget and timeline"
+          "text": "The issue is only architectural style."
         },
         {
           "id": "c",
-          "text": "Ignore the geotechnical findings and proceed with standard shallow foundations; the engineer will resolve any issues during design"
+          "text": "It is always allowed if the building is small."
         },
         {
           "id": "d",
-          "text": "The soft clay is an environmental constraint; require an ECA assessment before site planning proceeds to ensure compliance with environmental regulations"
+          "text": "It is unrelated to RA 9275."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student treats adverse soil conditions as absolute prohibition",
-        "b": "Site planners document geotechnical conditions and note specialist recommendations; this informs feasibility assessment without rejecting the site outright.",
-        "c": "Student defers critical geotechnical data from site analysis to design phase",
-        "d": "Student conflates geotechnical hazard with environmental criticality",
-        "correct": "Site planners document geotechnical conditions and note specialist recommendations; this informs feasibility assessment without rejecting the site outright.",
-        "takeaway": "Document soil conditions and specialist recommendations; assess feasibility impact."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": "Student treats adverse soil conditions as absolute prohibition Site planners document geotechnical conditions and note specialist recommendations; this informs feasibility assessment without rejecting the site outright. Student defers critical geotechnical data from site analysis to design phase Student conflates geotechnical hazard with environmental criticality Site planners document geotechnical conditions and note specialist recommendations; this informs feasibility assessment without rejecting the site outright. Document soil conditions and specialist recommendations; assess feasibility impact.",
       "code_citation": "LEA-PLAN-004-02: Soil and Geotechnical Conditions section",
@@ -409,30 +409,30 @@
       "model_id": "ALE-PLAN-004-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-05-06T15:53:13.319977+00:00",
+      "updated_at": "2026-07-20T01:13:27.894200+00:00",
       "content_hash": "sha256:97433d726c3be857600f2b1ffa0b082a2395a939a5218fef520e575af716a0fc"
     },
     {
       "question_id": "17ec5efc-a394-4c40-a41c-3ae68ee3d329",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "A proposed residential development is planned for a barangay that borders a river. The river is approximately 8 meters wide. The site planner must assess PD 1067 (Water Code) constraints on the development. Based on the river width, what is the relevant easement distance, and what is the site planner's responsibility in site analysis?",
+      "text": "A residential development is planned for a barangay that borders a river. The site is in an AGRICULTURAL area. Under PD 1067 (Water Code of the Philippines), Article 51, what public-use easement applies along the river bank, and what may not be built within that zone?",
       "options": [
         {
           "id": "a",
-          "text": "The easement is 3 meters because all rivers require a 3-meter setback; the site planner enforces this setback in the site plan"
+          "text": "3-meter easement; no permanent structures of any kind may be built within the zone."
         },
         {
           "id": "b",
-          "text": "The easement is 20 meters (for rivers ≥6m wide); the site planner documents this constraint in the site analysis and marks it as no-build; full legal enforcement belongs to the permitting stage and ALE-PLAN-005-03"
+          "text": "20-meter easement; no permanent structures of any kind may be built within the zone."
         },
         {
           "id": "c",
-          "text": "The easement distance varies year-to-year with water flow and cannot be determined in site planning, which complicates long-term development strategies"
+          "text": "40-meter easement; the entire zone must be fenced off from any public access."
         },
         {
           "id": "d",
-          "text": "PD 1067 easements are environmental law and not relevant to physical site planning analysis, though they may impact legal compliance"
+          "text": "No easement applies because the river is less than 10 meters wide."
         }
       ],
       "correct_option_id": "b",
@@ -441,12 +441,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student applies the smaller easement distance regardless of river width classification",
-        "b": "PD 1067 specifies 20m easement for rivers ≥6m wide; site planners note this constraint; legal enforcement is ALE-PLAN-005-03 scope.",
-        "c": "Student misunderstands that easement distance is fixed by law, not variable with hydrology",
-        "d": "Student separates regulatory constraints from site planning",
-        "correct": "PD 1067 specifies 20m easement for rivers ≥6m wide; site planners note this constraint; legal enforcement is ALE-PLAN-005-03 scope.",
-        "takeaway": "Planners flag PD 1067 easements; lawyers enforce them at permitting stage."
+        "a": "Wrong. 3 meters is the easement in URBAN areas, not agricultural.",
+        "b": "Correct. PD 1067 Article 51 establishes a 20-meter public-use easement in AGRICULTURAL areas along banks of rivers and streams (and shores of seas and lakes). The same article prohibits building structures of any kind within the zone.",
+        "c": "Wrong. 40 meters applies only in FOREST areas, not agricultural. Fencing-off public access is not required; the easement is for public use (recreation, navigation, flotage, fishing, salvage).",
+        "d": "Wrong. PD 1067 Article 51 does not condition the easement on river width; it is conditioned on land classification (urban/agricultural/forest).",
+        "correct": "PD 1067 Article 51: along banks of rivers and streams and shores of seas and lakes, the public-use easement is 3 m in urban areas, 20 m in agricultural areas, and 40 m in forest areas. For an agricultural-area river, the easement is 20 meters and no structures may be built within it.",
+        "takeaway": "PD 1067 easements are determined by LAND CLASSIFICATION, not by water-body width. Site planners must check whether the site is urban, agricultural, or forest before applying the 3/20/40 m rule."
       },
       "explanation": null,
       "code_citation": "LEA-PLAN-004-02: Wetlands and Water Bodies section; VERIFIED_REFERENCE.md PART 4.4; ERROR_REGISTRY.md ERR-PLAN-015",
@@ -460,44 +460,44 @@
       "model_id": "ALE-PLAN-004-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.892589+00:00",
       "content_hash": "sha256:7a5ecb7c26dd4f2016c5bf4b13762cd42d31fff9045b6a81bb12d4b167e3410c"
     },
     {
       "question_id": "32f06512-bb25-4776-b009-38e38d15965a",
       "article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
       "topic_id": "7dbadfd4-9889-4b9e-984d-8d107bee6e66",
-      "text": "In coastal areas following the post-Typhoon Yolanda National Zoning Framework (2014), what is the no-build zone distance from mean high tide?",
+      "text": "Why should solid-waste facilities be considered during site planning?",
       "options": [
         {
           "id": "a",
-          "text": "20 meters"
+          "text": "RA 9003 requires local solid-waste planning, segregation, diversion, and safe facility considerations."
         },
         {
           "id": "b",
-          "text": "40 meters from mean high tide"
+          "text": "Waste management begins only after occupancy."
         },
         {
           "id": "c",
-          "text": "5 meters (same as fault setback)"
+          "text": "Waste facilities never affect land use."
         },
         {
           "id": "d",
-          "text": "No restriction; coastal development is permitted at any distance"
+          "text": "Only private landscaping determines waste flow."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student confuses the coastal no-build zone with PD 1067 river easement",
-        "b": "Post-Haiyan coastal protection requires 40-meter no-build zone from mean high tide to provide evacuation space and reduce storm surge risk.",
-        "c": "Student conflates coastal hazard zone with seismic setback",
-        "d": "Student is unfamiliar with post-disaster coastal regulation",
-        "correct": "Post-Haiyan coastal protection requires 40-meter no-build zone from mean high tide to provide evacuation space and reduce storm surge risk.",
-        "takeaway": "Coastal no-build = 40m (post-Yolanda); different from fault (5m) and river (3/20/40m per type) setbacks."
+        "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+        "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+        "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+        "takeaway": "Anchor the answer to the checked local source family before choosing the option."
       },
       "explanation": null,
       "code_citation": "LEA-PLAN-004-02: Seismic and Geological Hazards section; VERIFIED_REFERENCE.md PART 4.5",
@@ -511,7 +511,7 @@
       "model_id": "ALE-PLAN-004-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.333335+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.889431+00:00",
       "content_hash": "sha256:554cbdcad42ba2e80fb43b5846302e6f7390a965d6ebb7ccf2cbd5d1bc9e26c5"
     }
   ]

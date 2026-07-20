@@ -8,36 +8,33 @@
       "question_id": "9794bfb2-7c51-4fa9-9681-3987cc91b01d",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "An architect discloses a commission arrangement to the client in writing and allows the client to prohibit the supplier's participation or require competitive bids. However, the commission still creates financial incentive favoring the supplier. Is this arrangement ethical?",
+      "text": "A supplier commission is disclosed to the client, but the architect keeps the commission. What is the source-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "Yes; disclosure and client choice fully cure the conflict, ensuring transparency and client empowerment"
+          "text": "Do not treat disclosure as an automatic cure; the checked source favors client-only compensation and avoids supplier returns creating reciprocal frame of mind"
         },
         {
           "id": "b",
-          "text": "Ethically defensible if disclosed and consented, but ethically questionable because the financial incentive contradicts claims of merit-based recommendation; best practice is to avoid commissions or structure them so architect benefits only if client does"
+          "text": "Always ethical once disclosed"
         },
         {
           "id": "c",
-          "text": "No; commissions are never ethical regardless of disclosure, as they inherently compromise the architect's impartiality"
+          "text": "Always required by UAP"
         },
         {
           "id": "d",
-          "text": "Yes, only if the commission percentage is 5% or less, which is considered a negligible influence on decision-making"
+          "text": "Unrelated to ethics"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Disclosure and consent improve the arrangement but don't eliminate the underlying financial conflict.",
-        "c": "Commissions are permissible with proper disclosure; the issue is the objectivity test.",
-        "d": "Percentage is not the determining factor; the issue is whether the architect can claim merit-based recommendation while having financial incentive.",
-        "correct": "Disclosure and consent improve the arrangement but don't eliminate the problem: the architect's financial bias contradicts claims of objectivity.",
-        "takeaway": "Disclosed commissions are ethically defensible but remain ethically questionable; best practice is avoiding commissions or structuring them so both parties benefit equally."
+        "correct": "The checked source is stricter than a disclosure-cure rule.",
+        "takeaway": "The checked source is stricter than a disclosure-cure rule."
       },
       "explanation": "Disclosure and consent improve the arrangement but don't eliminate the underlying financial conflict. Commissions are permissible with proper disclosure; the issue is the objectivity test. Percentage is not the determining factor; the issue is whether the architect can claim merit-based recommendation while having financial incentive. Disclosure and consent improve the arrangement but don't eliminate the problem: the architect's financial bias contradicts claims of objectivity. Disclosed commissions are ethically defensible but remain ethically questionable; best practice is avoiding commissions or structuring them so both parties benefit equally.",
       "code_citation": "RA 9266 IRR Article IV Canon 3 Rule 3.04",
@@ -51,43 +48,40 @@
       "model_id": "ALE-PRAC-ETH-012-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-05-06T16:21:47.89511+00:00",
+      "updated_at": "2026-07-20T01:13:29.067911+00:00",
       "content_hash": "sha256:5d6339c0bb4a725073cd4622404a204428b85b792332e050dc77be196a22f73f"
     },
     {
       "question_id": "2063e4be-3358-499d-9bbd-13c447cd3f91",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "A building material supplier offers volume discounts based on the amount of material specified. The architect discloses the discount structure to the client and documents that cost savings flow to the client through reduced material prices. Is this arrangement ethical?",
+      "text": "What is the permitted treatment of a market discount under Section 4-b?",
       "options": [
         {
           "id": "a",
-          "text": "No; volume discounts are always kickbacks, regardless of transparency or client benefit"
+          "text": "Accept only as a market discount credited to the client"
         },
         {
           "id": "b",
-          "text": "Yes; the arrangement satisfies ethical requirements: client is informed of discount structure, client benefits through lower costs, recommendation is merit-based (competitive pricing), and architect incentive aligns with client benefit (cost reduction)"
+          "text": "Keep as hidden architect income"
         },
         {
           "id": "c",
-          "text": "Only if the architect doesn't personally benefit from the discount, ensuring that all savings are passed directly to the client without any intermediary deductions"
+          "text": "Split secretly with the contractor"
         },
         {
           "id": "d",
-          "text": "Only if the client is given price quotes from competing suppliers, ensuring that the discount is genuinely competitive and not a disguised form of favoritism"
+          "text": "Use it to avoid specifications"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Volume discounts are not kickbacks if disclosed and the client benefits.",
-        "c": "The architect can benefit from the discount structure; the key is that the client benefits equally or more.",
-        "d": "Best practice suggests competitive bids; the arrangement is ethically defensible without them if disclosure is clear.",
-        "correct": "Disclosed volume discounts are ethical; they align the architect's incentive with client benefit (cost reduction), and client receives the savings.",
-        "takeaway": "Transparent volume discounts that flow to the client are ethical because the architect's incentive aligns with cost reduction benefiting the client."
+        "correct": "Section 4-b allows market discount credited to the client.",
+        "takeaway": "Section 4-b allows market discount credited to the client."
       },
       "explanation": null,
       "code_citation": "RA 9266 IRR Article IV Canon 4",
@@ -101,43 +95,40 @@
       "model_id": "ALE-PRAC-ETH-012-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.072102+00:00",
       "content_hash": "sha256:a0821421659e40df5c63af2d9530560c8d94dbf4b768510dd08e5df788b39b29"
     },
     {
       "question_id": "c8b976b8-3a7a-49b4-9ba9-db28fdd03951",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "An architect maintains a referral arrangement with a structural engineer: the engineer pays the architect $500 per project as a referral fee. The architect doesn't disclose this to clients. What is the problem?",
+      "text": "A structural engineer pays the architect a referral fee for every client referred. What source issue is most direct?",
       "options": [
         {
           "id": "a",
-          "text": "The referral fee is too small to constitute a conflict, as it does not significantly influence the architect's professional judgment"
+          "text": "Other returns from an interested source beyond the client fee"
         },
         {
           "id": "b",
-          "text": "The undisclosed fee biases the architect's judgment about which engineer is 'best-qualified,' disadvantaging competing engineers and potentially harming the client"
+          "text": "A required public advertisement"
         },
         {
           "id": "c",
-          "text": "Referral fees between professionals are always permissible, provided they are disclosed and agreed upon by all parties involved"
+          "text": "A CPD provider credit"
         },
         {
           "id": "d",
-          "text": "The engineer is the actual beneficiary, so the architect's conflict is secondary and does not impact the client's interests"
+          "text": "A Board appointment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Fee size is irrelevant; even small payments create financial incentive affecting judgment.",
-        "c": "Referral fees are permissible only with full client disclosure and consent.",
-        "d": "The architect's incentive to recommend the paying engineer is the problem; the architect's judgment is compromised.",
-        "correct": "Undisclosed referral fees create incentive to recommend the paying consultant regardless of merit; the client may not receive the best-qualified consultant.",
-        "takeaway": "Undisclosed referral fees between consultants bias the architect's judgment in selecting 'best-qualified' subconsultants."
+        "correct": "Section 2-h bars other returns from interested sources.",
+        "takeaway": "Section 2-h bars other returns from interested sources."
       },
       "explanation": null,
       "code_citation": "RA 9266 IRR Article IV Canon 3 (subconsultants) and Canon 4",
@@ -151,43 +142,40 @@
       "model_id": "ALE-PRAC-ETH-012-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.069667+00:00",
       "content_hash": "sha256:5a3cbd8fbac4bb6a3b86dac710ae1e5cd408634a21935165504701135d7708c5"
     },
     {
       "question_id": "418fe8a3-e45c-44a1-a6d5-551e90580eaf",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "A contractor offers an architect a $50,000 'consulting fee' in exchange for directing projects to the contractor and influencing client selection. What is this arrangement?",
+      "text": "A contractor offers a consulting fee for directing clients toward that contractor. Which test applies?",
       "options": [
         {
           "id": "a",
-          "text": "A legitimate consulting arrangement for project management services, provided all parties are informed and agree to the terms"
+          "text": "Whether it tends to place the architect under moral obligation"
         },
         {
           "id": "b",
-          "text": "A prohibited kickback using euphemistic labeling; the architect receives payment for biasing business toward the contractor without client disclosure or consent"
+          "text": "Whether it is called consulting"
         },
         {
           "id": "c",
-          "text": "A permissible fee-sharing arrangement if both parties agree and the client is informed of the arrangement"
+          "text": "Whether it is paid after completion only"
         },
         {
           "id": "d",
-          "text": "An acceptable arrangement if the architect discloses only the fact that a relationship exists, without detailing the financial aspects"
+          "text": "Whether the contractor likes the design"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "True consulting is for work performed; this payment is for directing business, not providing services.",
-        "c": "Both parties' agreement doesn't cure the violation; the client (who pays and suffers harm) is unaware.",
-        "d": "Partial disclosure doesn't cure a kickback; the full financial arrangement must be disclosed to the client.",
-        "correct": "Disguised kickbacks using false labels (like 'consulting fee') remain kickbacks; the arrangement exchanges cash for biased client recommendation without disclosure.",
-        "takeaway": "Kickbacks disguised as consulting fees, rebates, or other labels remain prohibited; the true nature is payment for biased referral."
+        "correct": "Section 3-d controls contractor/subcontractor aid, gifts, commissions, or favors.",
+        "takeaway": "Section 3-d controls contractor/subcontractor aid, gifts, commissions, or favors."
       },
       "explanation": null,
       "code_citation": "RA 9266 IRR Article IV Canon 3 Rule 3.04",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-ETH-012-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.074089+00:00",
       "content_hash": "sha256:83c0816e90cb54ad578fa22511c25f2fe6f5a398762616c0acaa3709d7877fd7"
     },
     {
       "question_id": "cd0086ea-52b8-46c9-9046-d2311ba8387d",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "A curtain wall supplier offers an architect a 15% commission on all curtain wall systems specified in projects. The architect accepts without disclosing to clients. What is the ethical violation?",
+      "text": "A material supplier offers free engineering support only if its product is specified. What should the architect consider?",
       "options": [
         {
           "id": "a",
-          "text": "The commission percentage is too low to be considered a significant ethical concern"
+          "text": "Whether the service is accompanied by an obligation detrimental to client interest or professional opinion"
         },
         {
           "id": "b",
-          "text": "The undisclosed commission creates financial incentive that may bias the architect toward higher-cost systems, causing client harm without client knowledge"
+          "text": "Whether the service has a nice brochure"
         },
         {
           "id": "c",
-          "text": "Supplier commissions are never acceptable regardless of disclosure, as they inherently compromise professional integrity"
+          "text": "Whether the architect can hide it"
         },
         {
           "id": "d",
-          "text": "The architect must have the supplier's written approval before accepting the commission, ensuring all parties are informed"
+          "text": "Whether it replaces the contract"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Percentage is irrelevant; the problem is non-disclosure creating bias.",
-        "c": "Commissions are permissible with disclosure and consent; the issue is the kickback structure.",
-        "d": "Supplier agreement is irrelevant; the architect must disclose to the client, who controls the decision.",
-        "correct": "Undisclosed commissions compromise judgment by creating financial bias; the client pays inflated prices while benefiting the architect, violating duty of candor.",
-        "takeaway": "Undisclosed supplier commissions are prohibited kickbacks because the architect's financial incentive biases recommendation away from the client's benefit."
+        "correct": "Section 4-a controls supplier technical services.",
+        "takeaway": "Section 4-a controls supplier technical services."
       },
       "explanation": "Percentage is irrelevant; the problem is non-disclosure creating bias. Commissions are permissible with disclosure and consent; the issue is the kickback structure. Supplier agreement is irrelevant; the architect must disclose to the client, who controls the decision. Undisclosed commissions compromise judgment by creating financial bias; the client pays inflated prices while benefiting the architect, violating duty of candor. Undisclosed supplier commissions are prohibited kickbacks because the architect's financial incentive biases recommendation away from the client's benefit.",
       "code_citation": "RA 9266 IRR Article IV Canon 4 (Rule 4.01-4.03)",
@@ -251,43 +236,40 @@
       "model_id": "ALE-PRAC-ETH-012-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-05-06T16:21:48.018184+00:00",
+      "updated_at": "2026-07-20T01:13:29.072766+00:00",
       "content_hash": "sha256:4d5fb5a636f806b99eafe4136597df9d1f44e69c258f54bbaf0be82c6413eb5e"
     },
     {
       "question_id": "905d8e38-c30f-470c-bbe8-a1412475183b",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "An architect enters into a cost-sharing arrangement with a structural engineer where the fee-share is credited to the client's project cost, reducing the client's total fees. The architect discloses this in the engagement letter. Is this arrangement ethical?",
+      "text": "What is the common problem in hidden referral fees and supplier commissions?",
       "options": [
         {
           "id": "a",
-          "text": "No; any fee-sharing arrangement is suspect and may lead to conflicts of interest unless fully transparent"
+          "text": "They create returns from interested sources and may bias professional judgment away from client interest"
         },
         {
           "id": "b",
-          "text": "Yes; the arrangement satisfies all ethical requirements: client is informed, client benefits (fee reduction), recommendation is merit-based, and documented consent exists"
+          "text": "They improve client transparency"
         },
         {
           "id": "c",
-          "text": "Only if the architect discloses the specific dollar amount of the fee-share, ensuring full transparency and client understanding"
+          "text": "They are required to renew PRC ID"
         },
         {
           "id": "d",
-          "text": "Only if the engineer's firm is client-approved, which ensures that the client has control over the selection of consultants"
+          "text": "They are the same as sworn charges"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Fee-sharing is not inherently problematic; it's ethical if properly structured and disclosed.",
-        "c": "Disclosing the arrangement is sufficient; the specific amount need not be published.",
-        "d": "Engineer approval is not required; client disclosure and benefit are the ethical safeguards.",
-        "correct": "This arrangement is ethical because it satisfies all requirements: full transparency, client benefit, merit-based selection, and documented consent.",
-        "takeaway": "Disclosed cost-sharing where the fee reduction flows to the client is an ethical arrangement."
+        "correct": "Sections 2-h, 3-d, and 4-b support this problem.",
+        "takeaway": "Sections 2-h, 3-d, and 4-b support this problem."
       },
       "explanation": null,
       "code_citation": "RA 9266 IRR Article IV Canon 4",
@@ -301,43 +283,40 @@
       "model_id": "ALE-PRAC-ETH-012-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.070517+00:00",
       "content_hash": "sha256:a2c090589af1ec1ab7b3efe79dd31c73a84b807d4e229049aa4635d754c61283"
     },
     {
       "question_id": "34c8613d-3874-49de-964b-82fe709a428d",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "What is the common ethical problem shared by all prohibited kickback scenarios?",
+      "text": "What should Batch 113 avoid restoring for ETH-012?",
       "options": [
         {
           "id": "a",
-          "text": "The dollar amount involved is large, which can lead to significant financial discrepancies"
+          "text": "RA 3019 criminal consequences without a checked local anti-graft source"
         },
         {
           "id": "b",
-          "text": "The client is unaware of and did not consent to the financial arrangement; the architect's judgment is compromised by incentive; benefits flow to the architect, not the client"
+          "text": "Client-only compensation"
         },
         {
           "id": "c",
-          "text": "Kickbacks only involve contractors, not suppliers, which is a misunderstanding of the issue"
+          "text": "Client-credited market discounts"
         },
         {
           "id": "d",
-          "text": "The arrangement must involve written contract terms, which is not always the case in practice"
+          "text": "Moral obligation language"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Dollar amount is not the defining factor; small hidden payments are equally prohibited.",
-        "c": "Kickbacks can involve any third party—contractors, suppliers, referral sources, or financiers.",
-        "d": "Verbal kickback arrangements are equally prohibited; the form doesn't matter.",
-        "correct": "All kickbacks share: non-disclosure to client, compromised judgment through financial incentive, and architect benefit without client benefit.",
-        "takeaway": "Kickbacks share three elements: lack of client disclosure, compromised judgment, and architect profit without client benefit."
+        "correct": "The anti-graft consequences were not checked in this batch source packet.",
+        "takeaway": "The anti-graft consequences were not checked in this batch source packet."
       },
       "explanation": null,
       "code_citation": "RA 9266 IRR Article IV Canons 3-4",
@@ -351,43 +330,40 @@
       "model_id": "ALE-PRAC-ETH-012-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.066700+00:00",
       "content_hash": "sha256:b8150579b105208baf7cf66b1b33963f0fe52c33458f44be2c431ceede256812"
     },
     {
       "question_id": "73790153-4b1a-452a-9c9c-665f06c5ea78",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "What is the fundamental ethical principle governing referral fees and supplier commissions?",
+      "text": "Which statement best distinguishes a client-credit discount from a kickback risk?",
       "options": [
         {
           "id": "a",
-          "text": "Architects may receive fees from any third party recommending their services, provided there is no conflict of interest"
+          "text": "A client-credit discount flows to the client; a kickback/referral fee benefits the architect from an interested source"
         },
         {
           "id": "b",
-          "text": "The client's interest must prevail; the architect may only accept compensation from third parties if the client is informed, consents, and the recommendation is merit-based"
+          "text": "Both are hidden architect income"
         },
         {
           "id": "c",
-          "text": "All commission arrangements are inherently unethical, as they may compromise professional integrity"
+          "text": "Both are always mandatory"
         },
         {
           "id": "d",
-          "text": "Referral arrangements are ethical if the third party benefits and the client is not adversely affected"
+          "text": "Both are unrelated to client interest"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Third-party payments create conflicts requiring disclosure; undisclosed arrangements are kickbacks.",
-        "c": "Commissions are permissible with proper disclosure and consent; they're prohibited only if undisclosed.",
-        "d": "Third-party benefit is irrelevant; the architect's duty is to the client, not the vendor.",
-        "correct": "Client interests must prevail; third-party compensation is ethical only with client disclosure, written consent, merit-based selection, and client benefit.",
-        "takeaway": "Third-party commissions and referral fees require: full client disclosure, written consent, merit-based selection, and client benefit."
+        "correct": "The UAP source allows market discounts only when credited to the client and bars outside returns.",
+        "takeaway": "The UAP source allows market discounts only when credited to the client and bars outside returns."
       },
       "explanation": null,
       "code_citation": "RA 9266 IRR Article IV (Code of Ethical Conduct) or UAP SPP Document 208",
@@ -401,43 +377,40 @@
       "model_id": "ALE-PRAC-ETH-012-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.073428+00:00",
       "content_hash": "sha256:a6e2cc7da710c625107c5b1267a50e04d5082fad37d9aa216130a0b2e6e7303d"
     },
     {
       "question_id": "a1bb23ae-f705-4595-8b48-26a7e6a84a59",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "A contractor offers a cash rebate to an architect based on the volume of material a building purchaser buys through the architect's recommendation. The architect doesn't disclose the rebate to the client or contractor. What is the consequence?",
+      "text": "What should the architect do if a business interest affects the client interest?",
       "options": [
         {
           "id": "a",
-          "text": "The rebate is a bonus for good work and needs no disclosure, as long as it does not exceed 5% of the total project cost"
+          "text": "Inform the client"
         },
         {
           "id": "b",
-          "text": "The undisclosed rebate is a prohibited kickback; if public funding is involved, it may violate anti-kickback statutes creating criminal liability beyond professional discipline"
+          "text": "Conceal it because disclosure is never relevant"
         },
         {
           "id": "c",
-          "text": "Rebates are always permissible in construction, provided they are documented in the project ledger"
+          "text": "Only tell the supplier"
         },
         {
           "id": "d",
-          "text": "The architect can use rebates if they are disclosed only after the project completes, ensuring transparency in financial dealings"
+          "text": "Use it to avoid fees"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Rebates for good work are still financial incentives requiring disclosure; they're not bonuses for merit.",
-        "c": "Rebates are permissible only with full disclosure and client consent.",
-        "d": "Late disclosure doesn't cure a kickback; disclosure must occur before the decision-influencing payments begin.",
-        "correct": "Undisclosed rebates are kickbacks; if public funds are involved, they violate anti-kickback statutes creating criminal liability, license suspension, and civil penalties.",
-        "takeaway": "Undisclosed rebates are prohibited kickbacks; public funding creates additional criminal liability under anti-kickback statutes."
+        "correct": "Section 2-i requires informing the client of affecting business interests.",
+        "takeaway": "Section 2-i requires informing the client of affecting business interests."
       },
       "explanation": null,
       "code_citation": "RA 9266 IRR Art. IV Canon 4; RA 3019 (Anti-Graft)",
@@ -451,43 +424,40 @@
       "model_id": "ALE-PRAC-ETH-012-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.068808+00:00",
       "content_hash": "sha256:0fc206c886963708e512a09133b0e1e36688c6278128bba903a6fec38a556207"
     },
     {
       "question_id": "d2ae36fb-dcf9-48cc-b980-a669cc97c0c5",
       "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
       "topic_id": "2bea60b2-8f4c-4d65-99cd-21d5bb863b33",
-      "text": "What distinguishes a permitted cost-sharing arrangement from a prohibited kickback?",
+      "text": "What is the safest model answer for a disclosed commission from a product supplier?",
       "options": [
         {
           "id": "a",
-          "text": "Kickbacks are larger dollar amounts; cost-sharing is smaller, typically involving minor expenses shared among parties"
+          "text": "Disclosure may be relevant, but the checked source still bars supplier benefits that create reciprocal frame of mind and keeps market discounts credited to the client"
         },
         {
           "id": "b",
-          "text": "Cost-sharing requires full client disclosure, client benefit (fee credit flows to client), merit-based selection, and documented consent; kickbacks lack these protections"
+          "text": "Disclosure always makes it fully ethical"
         },
         {
           "id": "c",
-          "text": "Cost-sharing is only permissible with government projects, provided they meet specific regulatory guidelines"
+          "text": "The commission must be hidden"
         },
         {
           "id": "d",
-          "text": "The terms are synonymous; there is no legal distinction, although some jurisdictions may interpret them differently"
+          "text": "The client should pay the supplier directly to hide the issue"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Dollar amount is irrelevant; the critical difference is disclosure and client benefit.",
-        "c": "Permitted arrangements exist in both private and public work; government projects have additional anti-kickback statutes.",
-        "d": "The distinction is fundamental—one protects clients through transparency, the other exploits lack of information.",
-        "correct": "Permitted arrangements require disclosure, client benefit, merit-based recommendation, and documented consent; kickbacks lack these protections and bias judgment.",
-        "takeaway": "The difference: permitted arrangements require disclosure, client benefit, and consent; kickbacks are undisclosed payments that bias judgment."
+        "correct": "Batch 113 narrows the answer to the checked UAP source rather than a broad consent-cure rule.",
+        "takeaway": "Batch 113 narrows the answer to the checked UAP source rather than a broad consent-cure rule."
       },
       "explanation": null,
       "code_citation": "UAP SPP Document 208 or RA 9266 IRR Art. IV Canons 3-4",
@@ -501,7 +471,7 @@
       "model_id": "ALE-PRAC-ETH-012-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.071254+00:00",
       "content_hash": "sha256:f03e12700bb3ba557754816c30c293794a93607b4c14f7d490dfe3e672cc78d8"
     }
   ]

@@ -2,9 +2,9 @@
   "question_id": "2fac9aaa-6ede-4866-aadd-6a36f8d58925",
   "baseline_hash": "sha256:d20ee05f5344d695fb8289db299bb67bbea428b7a0a36b6581689a6491284cc6",
   "action": "replace",
-  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for law-qa-deck-ra-7277-9442-10754.",
-  "approved_by": "codex-local-source-audit-batch-089",
-  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "cd893cd9-7427-4093-bc07-edabf41a6cd7",
     "parent_article_slug": "law-qa-deck-ra-7277-9442-10754",
@@ -48,28 +48,28 @@
     "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
   },
   "proposed": {
-    "text": "Under the 2024 BP 344 IRR, what is the default maximum accessible ramp gradient before special-case length checks?",
+    "text": "Tracing the penalty evolution across the PWD law amendments, what is the current maximum criminal fine under the most recent law (RA 10754) for violations of PWD privileges and accessibility provisions?",
     "options": [
       {
         "id": "A",
-        "text": "1:8"
+        "text": "₱50,000 — the original BP 344 penalty, still in effect as the primary accessibility enforcement fine, despite subsequent amendments"
       },
       {
         "id": "B",
-        "text": "1:12"
+        "text": "₱100,000 — the RA 7277 Sec. 46 penalty, which superseded the original BP 344 fine, reflecting an increase in enforcement measures"
       },
       {
         "id": "C",
-        "text": "1:15"
+        "text": "₱200,000 — the RA 9442 amendment penalty, updated in 2007 to address inflation and increased enforcement needs"
       },
       {
         "id": "D",
-        "text": "1:20"
+        "text": "₱300,000 — the RA 10754 maximum, the current controlling standard with up to 6 years imprisonment"
       }
     ],
     "correct_option_id": "D",
-    "rationale": "The 2024 BP 344 IRR states that accessible ramp gradient should not be steeper than 1:20, with steeper gradients treated as special cases by length.",
-    "explanation": "The 2024 BP 344 IRR states that accessible ramp gradient should not be steeper than 1:20, with steeper gradients treated as special cases by length.",
-    "code_citation": "BP 344 2024 IRR, Accessible Ramps"
+    "rationale": "The current maximum criminal fine is ₱300,000 under RA 10754, combined with up to 6 years imprisonment — the most recent amendment controls. The penalty evolution: BP 344 original = ₱50,000 (no jail term); RA 7277 Sec. 46 = ₱100,000 + 6 months to 2 years; RA 9442 amendment = ₱200,000 + 6 months to 6 years; RA 10754 amendment = ₱300,000 + up to 6 years. The most recent law (RA 10754, 2016) controls. The ₱50,000 original BP 344 penalty is the most common distractor — it is frequently offered as an answer because candidates remember seeing it in BP 344, not realizing it has been superseded.",
+    "explanation": "This question tests the penalty progression across all four laws and requires candidates to select the highest (RA 10754) as the current controlling standard.",
+    "code_citation": "RA 10754; RA 9442; RA 7277"
   }
 }

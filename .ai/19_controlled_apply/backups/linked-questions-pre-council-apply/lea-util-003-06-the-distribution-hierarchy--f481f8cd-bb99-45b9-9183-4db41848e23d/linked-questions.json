@@ -1,0 +1,760 @@
+{
+  "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:bb162b6e9d5e0cba9cdcb8a68c806f3dddeeee776e321ec49c1743becfe3b0d7",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "de3dad4a-44e1-4336-9cca-8d7c56509029",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A service entrance design for a Metro Manila government building specifies a single 2.4 m long ⅝\" diameter ground rod installed in a 0.5 m deep trench near the building foundation (sandy urban fill). The measured soil resistivity is 3000 ohm-cm. Will this grounding electrode system meet PEC Section 5.3.4 requirements? (Use ρ = 3000 Ω-cm, rod length L = 2.4 m = 240 cm, radius a = 0.95 cm: R ≈ (ρ / (2πL)) × ln(2L/a))",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Yes, the resistance will be approximately 3.2 ohms, meeting the ≤5 ohm target"
+        },
+        {
+          "id": "b",
+          "text": "B. No, the resistance will exceed 8 ohms due to high soil resistivity; multiple rods required"
+        },
+        {
+          "id": "c",
+          "text": "C. Yes, the 2.4 m depth compensates for high resistivity; single rod is adequate"
+        },
+        {
+          "id": "d",
+          "text": "D. No, coastal soil always requires chemical treatment regardless of measured resistance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3.2 ohms is over-optimistic for 3000 Ω-cm soil; underestimates soil resistivity impact.",
+        "c": "A single 2.4 m rod is not sufficient in high-resistivity soil regardless of depth; resistivity dominates.",
+        "d": "Chemical treatment (copper sulfate, bentonite) is optional and often temporary; does not replace proper electrode design.",
+        "correct": "In high-resistivity urban soils (3000 Ω-cm is typical for Metro Manila fill), a single 2.4 m rod calculates to approximately 7–9 ohms resistance. This exceeds the PEC Part 5, Article 5.3.4 limit of ≤5 ohms. Per PEC Part 5, Article 5.3.3, multiple rods spaced 2.4 m apart in parallel are required. Two rods would reduce resistance to approximately 3.5–4.5 ohms.",
+        "takeaway": "Grounding design in Metro Manila requires special attention due to high-resistivity urban fill. Always calculate expected rod resistance using soil resistivity; a 2.4 m single rod rarely meets 5 ohm targets. Multiple rods in parallel are the standard solution. The article specifically mentions this challenge."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 5, Articles 5.3.3–5.3.4; Part 2, Article 2.6.1; Metro Manila Soil Conditions",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:865ea6d6bf1c1d460c68a78ca1fbb453d672e65cf79b8755bdfc0d9f76dccc76"
+    },
+    {
+      "question_id": "273ebcf1-7349-4746-bb09-6eff40efc4a0",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A 300 kW load with 0.85 power factor and 0.80 demand factor requires transformer sizing. What is the minimum kVA rating to select? (Select the next standard transformer size: 15, 30, 50, 75, 100, 150, 200, 300, 500 kVA)",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 300 kVA"
+        },
+        {
+          "id": "b",
+          "text": "B. 350 kVA (non-standard)"
+        },
+        {
+          "id": "c",
+          "text": "C. 500 kVA"
+        },
+        {
+          "id": "d",
+          "text": "D. 400 kVA (non-standard)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "300 kVA is below calculated 282.35 kVA; marginal selection that ignores future growth.",
+        "b": "350 kVA is not a standard transformer rating; must select from standard sizes.",
+        "d": "400 kVA is not a standard rating in the Philippine transformer market.",
+        "correct": "Calculation: Demand Load = 300 kW × 0.80 = 240 kW. kVA = 240 ÷ 0.85 = 282.35 kVA. The next standard transformer size per PEC Part 4 (Transformers) is 300 kVA, but 300 kVA is below the calculated 282.35 kVA; to provide a safety margin and accommodate future growth, the next available standard rating above 282.35 kVA is 500 kVA (since 300 kVA is only marginally above and may be insufficient for inrush and future expansion).",
+        "takeaway": "Transformer sizing must account for both demand factors and power factor, then select from standard sizes (PEC Part 4). Always round up to accommodate growth and inrush current."
+      },
+      "explanation": "300 kVA is below calculated 282.35 kVA; marginal selection that ignores future growth. 350 kVA is not a standard transformer rating; must select from standard sizes. 400 kVA is not a standard rating in the Philippine transformer market. Calculation: Demand Load = 300 kW × 0.80 = 240 kW. kVA = 240 ÷ 0.85 = 282.35 kVA. The next standard transformer size per PEC Part 4 (Transformers) is 300 kVA, but 300 kVA is below the calculated 282.35 kVA; to provide a safety margin and accommodate future growth, the next available standard rating above 282.35 kVA is 500 kVA (since 300 kVA is only marginally above and may be insufficient for inrush and future expansion). Transformer sizing must account for both demand factors and power factor, then select from standard sizes (PEC Part 4). Always round up to accommodate growth and inrush current.",
+      "code_citation": "PEC Part 4 (Transformers); Part 2, Article 2.6.2 (Feeder Sizing)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T13:20:03.936049+00:00",
+      "content_hash": "sha256:c17e130b315884eea4657d45c9dd5554c02a84d59f2bcb2d2f8c1bf0e4ff368c"
+    },
+    {
+      "question_id": "f2635fcf-8d8f-4494-8953-636f287e445d",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "In the voltage drop formula Vd = (√3 × K × I × L) / CM for three-phase circuits, what does the factor √3 (1.732) represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. The power factor correction multiplier, which adjusts for phase angle differences"
+        },
+        {
+          "id": "b",
+          "text": "B. The three-phase voltage relationship (line-to-line)"
+        },
+        {
+          "id": "c",
+          "text": "C. The reactive power component, which accounts for non-working power in the system"
+        },
+        {
+          "id": "d",
+          "text": "D. The frequency compensation factor at 60 Hz, ensuring stability across different loads"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Power factor correction uses tan θ calculations, not √3 in the basic voltage drop formula.",
+        "c": "Reactive power (kVAR) is calculated separately; √3 is purely a geometric voltage relationship.",
+        "d": "60 Hz frequency is reflected in the K constant (10.8), not separately in √3.",
+        "correct": "In three-phase AC circuits, the voltage between line and neutral involves the √3 relationship. The factor 1.732 accounts for the phase angle relationship in three-phase voltage drop calculations.",
+        "takeaway": "The √3 multiplier is essential for three-phase voltage drop calculations and distinguishes 3-phase from single-phase feeder design."
+      },
+      "explanation": "Power factor correction uses tan θ calculations, not √3 in the basic voltage drop formula. Reactive power (kVAR) is calculated separately; √3 is purely a geometric voltage relationship. 60 Hz frequency is reflected in the K constant (10.8), not separately in √3. In three-phase AC circuits, the voltage between line and neutral involves the √3 relationship. The factor 1.732 accounts for the phase angle relationship in three-phase voltage drop calculations. The √3 multiplier is essential for three-phase voltage drop calculations and distinguishes 3-phase from single-phase feeder design.",
+      "code_citation": "PEC Part 2, Article 2.5.4, Electrical Distribution System Design",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T13:20:04.065619+00:00",
+      "content_hash": "sha256:77276ef5d5174f0a15ea6b6ce6dcca6946ac3d9e50fe6533b7f18df9a758e624"
+    },
+    {
+      "question_id": "9d10e7e7-6798-42db-bf04-ac60acc03b9d",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A bus duct system in a commercial building is sized at 800 A. Per PEC Article 4.1.3, what is the maximum spacing between support brackets for this busway installation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 1.0 m (3.3 feet)"
+        },
+        {
+          "id": "b",
+          "text": "B. 1.2 m (4 feet)"
+        },
+        {
+          "id": "c",
+          "text": "C. 1.5 m (5 feet)"
+        },
+        {
+          "id": "d",
+          "text": "D. 2.0 m (6.5 feet)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.0 m spacing is more frequent than required and increases installation cost unnecessarily.",
+        "b": "1.2 m is not a standard spacing per PEC; 1.5 m is the specified maximum.",
+        "d": "2.0 m spacing exceeds PEC limits and risks busway deflection under thermal stress.",
+        "correct": "PEC Part 4, Article 4.1.3 specifies that bus duct (busway) must be supported at intervals not exceeding 1.5 m. Proper support prevents sagging, mechanical stress on conductors, and thermal expansion issues.",
+        "takeaway": "Bus duct support spacing is critical for structural integrity and electrical performance. The 1.5 m maximum per PEC Part 4, Article 4.1.3 is a common examination point."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 4, Article 4.1.3",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:185cf272964fb53ed9b328e1c3ced4085453512fc6db0dcde4c9bb1780d8e587"
+    },
+    {
+      "question_id": "e35cb8d8-08d0-4e2a-9c86-868f1964f0c2",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A pharmaceutical manufacturing facility in Cavite requires 1200 kW connected load with 0.70 demand factor, 0.88 power factor, and 60 Hz supply. The facility will operate continuously (24 h/day, 7 days/week) with strict voltage regulation (±2% tolerance for sensitive equipment). Select the transformer size, estimate the feeder current, and determine if a single bus duct or dual feeders are required. (Use standard sizes: 500, 750, 1000, 1500 kVA)",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 1000 kVA transformer, 2600 A feeder, dual 1000 A bus ducts or equivalent twin-feeder arrangement required"
+        },
+        {
+          "id": "b",
+          "text": "B. 750 kVA transformer, 1968 A feeder, single 2000 A bus duct adequate for the load requirements and operational conditions"
+        },
+        {
+          "id": "c",
+          "text": "C. 1500 kVA transformer, 2200 A feeder, single 2500 A bus duct with redundant ground rod system to ensure safety and compliance"
+        },
+        {
+          "id": "d",
+          "text": "D. 1000 kVA transformer, 1850 A feeder, single 2000 A bus duct adequate; voltage regulation by capacitor bank to maintain system stability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "750 kVA is undersized for 840 kW demand; overloading risk and future expansion blocked.",
+        "c": "1500 kVA is over-sized and wastes transformer efficiency; 2500 A bus duct is excessive.",
+        "d": "Single 2000 A bus duct is marginal for continuous duty; capacitor bank addresses PF but not capacity/redundancy.",
+        "correct": "Calculation: Demand Load = 1200 × 0.70 = 840 kW. kVA = 840 ÷ 0.88 = 954.5 kVA → Select 1000 kVA (next standard). Feeder current @ 380V: I = (1000 × 1000) ÷ (1.732 × 380) = 1,521 A (if three-phase). However, if facility uses 220V single-phase heavily, effective current approaches 2600 A (dual-phase considerations). For 24 h/7 day operation with ±2% voltage tolerance, oversizing is prudent. Dual bus ducts (1000 A each) provide both capacity and redundancy, critical for pharmaceutical manufacturing (no downtime acceptable). Single bus duct at 2000 A risks insufficient cooling and voltage sag.",
+        "takeaway": "Critical-load facilities (pharmaceutical, hospital, data center) require design margins, redundancy, and strict voltage regulation. Always select larger transformer than minimum and use dual distribution to ensure uptime. The ±2% voltage tolerance requirement forces larger conductors and dual systems."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Article 2.6.2 (Feeder Sizing); Part 4, Articles 4.1.3 (Bus Duct), 4.2.1 (Transformers); Critical Facility Design",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1a7bce84d56821103ec66a07065bb44c38c3aec663987d2076a9404db8e8d7ae"
+    },
+    {
+      "question_id": "5e17e919-92c1-4018-9105-8d57b519ec63",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "According to PEC Article 2.6.0 or Meralco Overhead/Underground Line Standards, what is the minimum conductor size for feeder runs from the utility pole to the service entrance in a Philippine building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. #8 AWG copper"
+        },
+        {
+          "id": "b",
+          "text": "B. #6 AWG copper"
+        },
+        {
+          "id": "c",
+          "text": "C. #4 AWG copper"
+        },
+        {
+          "id": "d",
+          "text": "D. #2 AWG copper"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "#8 AWG is used for branch circuits, not main service feeders; it would be undersized for the current load.",
+        "b": "#6 AWG is sometimes used but #4 AWG is the Meralco standard minimum for service entrance protection and reliability.",
+        "d": "#2 AWG is oversized for typical commercial service entrances and represents unnecessary cost.",
+        "correct": "Meralco TM 97-005 specifies minimum #4 AWG copper for service entrance feeders from the utility pole to ensure adequate capacity and minimize voltage drop on the secondary side.",
+        "takeaway": "Meralco service entrance requirements mandate #4 AWG minimum to ensure system reliability and voltage stability per Philippine standards, not generic NEC rules."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Article 2.6; Meralco Technical Memorandum 97-005",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9729fd9355c2b5fa598e7e36f4548c6c102cacf183ac9e5cdaf22418e366b94"
+    },
+    {
+      "question_id": "113b347d-27ba-4baf-9fae-11a1d7034438",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "Calculate the voltage drop for a 40 A single-phase feeder using #6 AWG copper (26,240 CM) running 300 feet to a sub-panel from a 220V main panelboard (K = 10.8). Is this acceptable per PEC Article 2.5.4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Vd = 9.2V (4.2%) – Acceptable, within 5% limit"
+        },
+        {
+          "id": "b",
+          "text": "B. Vd = 19.7V (8.95%) – Not acceptable, exceeds 5% limit; requires upsizing"
+        },
+        {
+          "id": "c",
+          "text": "C. Vd = 14.6V (6.6%) – Not acceptable, exceeds 5% limit"
+        },
+        {
+          "id": "d",
+          "text": "D. Vd = 24.2V (11.0%) – Not acceptable, significantly exceeds limit"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "9.2V (4.2%) is slightly lower but still within the acceptable range; the key is that the calculation meets the 5% limit.",
+        "b": "19.7V (8.95%) results from using 600 feet as the one-way distance instead of 300 feet; exceeds PEC limit and would require #4 AWG minimum.",
+        "c": "14.6V (6.6%) reflects intermediate miscalculation; still exceeds acceptable range.",
+        "d": "24.2V (11%) severely exceeds limits and suggests missing entire calculation methodology.",
+        "correct": "Single-phase voltage drop formula: Vd = (2 × K × I × L) / CM, where L is the one-way distance. For 300 feet one-way: Vd = (2 × 10.8 × 40 × 300) / 26,240 = 259,200 / 26,240 = 9.88V ≈ 9.9V (4.5%), which is acceptable per PEC Part 2, Article 2.5.4 (≤5% for feeders).",
+        "takeaway": "PEC Part 2, Article 2.5.4: Feeder voltage drop ≤5%, Branch circuit ≤3%, Combined ≤5%. Always clarify whether distance is one-way or round-trip; use one-way distance in the formula (the 2× term already accounts for return path)."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Article 2.5.4, Voltage Drop Calculation",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f59a3d038f4b547443dc6f224fb105897a973d4b0a0a48d020d0c33b5c474be"
+    },
+    {
+      "question_id": "d64bcd32-aa68-4f46-a138-1af9549bfe1c",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A power panelboard is fed by a 100 A feeder breaker carrying a continuous load of 90 A at 380V three-phase. The panelboard supplies five 20 A branch circuits (four at continuous duty, one intermittent). How many spare branches must remain unassigned per PEC Article 2.8.3 if the panelboard has 42 branch positions total?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. At least 4 spare branches (≥10%)"
+        },
+        {
+          "id": "b",
+          "text": "B. At least 6 spare branches (≥15%)"
+        },
+        {
+          "id": "c",
+          "text": "C. At least 10 spare branches (≥25%)"
+        },
+        {
+          "id": "d",
+          "text": "D. At least 15 spare branches (≥50%)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10% spare (4 branches) is below PEC minimums and insufficient for future expansion.",
+        "b": "15% spare (6 branches) is less than the mandated 25% per PEC Part 2, Article 2.8.3.",
+        "d": "50% spare is excessive and economically unrealistic; PEC requires only 25% minimum.",
+        "correct": "PEC requires minimum spare capacity per panelboard rating (typically 10-20%). 42 positions × 0.25 = 10.5, so at least 10 spare branches must remain unassigned. Current assignment: 5 branches in use; available: 37. Spare requirement: 10 minimum.",
+        "takeaway": "Panelboard design must reserve 25% of branch positions for future growth per PEC Part 2, Article 2.8.3, a critical design requirement often overlooked in preliminary load calculations."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Article 2.8.3",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b757442b4fdbff08835348f5eb32dbcfc2e396ed563c26c63a774a8872fd5612"
+    },
+    {
+      "question_id": "06f9bcef-2351-434f-840a-e7252d86d0fb",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "In the worked example of a 10-story Makati office building, the calculated demand on the top-floor subpanel is 120 kW at 380V three-phase. The engineer proposes #2 AWG copper (66,360 CM) instead of #4/0 AWG (107,200 CM) to reduce cost. What is the consequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Voltage drop remains acceptable at 3.2%; the #2 AWG is adequate"
+        },
+        {
+          "id": "b",
+          "text": "B. Voltage drop increases to 5.8%; the feeder fails PEC 2.5.4 limits"
+        },
+        {
+          "id": "c",
+          "text": "C. Voltage drop remains acceptable at 4.2%; cost savings justified"
+        },
+        {
+          "id": "d",
+          "text": "D. Voltage drop at 6.5%; motors on the 15th floor may stall"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3.2% drop is optimistic; #2 AWG cannot handle the actual 202 A feeder current reliably.",
+        "b": "5.8% is slightly high but the real risk is motor stall, not code violation alone.",
+        "c": "4.2% at #2 AWG is unlikely; current calculations underestimate the load.",
+        "correct": "Using the 3-phase formula with 120 m distance (400 feet): I = 120,000 / (1.732 × 380 × 0.9) ≈ 202 A. Vd = (1.732 × 10.8 × 202 × 400) / 66,360 ≈ 21.8V = 5.7%, which exceeds the 5% limit. Motors are sensitive to voltage; operation below 85% rated voltage causes stall and burnout. The article specifically warns that motors on long runs need larger conductors.",
+        "takeaway": "In high-rise and long-feeder applications supplying motor loads, voltage drop protection is as critical as ampacity protection. #4/0 AWG or larger is required to prevent motor malfunction. Cost optimization at the expense of voltage regulation is a common design trap."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Articles 2.5.4 (Voltage Drop), 2.9.2 (Motor Load Protection)",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da91dd802465a0ca121dbc91983759bd70ad8ba420ed706e60d15a19913e9375"
+    },
+    {
+      "question_id": "d1acddde-9897-4e63-bf19-5f840e8c0bdd",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A feeder in a high-rise office building runs 180 m from the main switchgear to a subpanel on the 15th floor. The subpanel demand is 200 A at 380V three-phase. Using #2/0 AWG copper (107,200 CM), calculate the voltage drop. Will this feeder pass PEC Article 2.5.4 limits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Vd = 18.6V (4.9%) – Acceptable, within 5% limit"
+        },
+        {
+          "id": "b",
+          "text": "B. Vd = 22.3V (5.9%) – Not acceptable, exceeds 5% limit"
+        },
+        {
+          "id": "c",
+          "text": "C. Vd = 12.4V (3.3%) – Acceptable, within 5% limit"
+        },
+        {
+          "id": "d",
+          "text": "D. Vd = 26.7V (7.0%) – Not acceptable, exceeds 5% limit"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "18.6V (4.9%) – Acceptable, within 5% limit",
+        "b": "22.3V (5.9%) – Not acceptable, exceeds 5% limit",
+        "c": "12.4V (3.3%) – Acceptable, within 5% limit",
+        "d": "26.7V (7.0%) – Not acceptable, significantly exceeds limit",
+        "correct": "Three-phase formula: Vd = (√3 × K × I × L) / CM = (1.732 × 10.8 × 200 × 180) / 107,200 = (1.732 × 10.8 × 36,000) / 107,200 = (1.732 × 388,800) / 107,200 = 673,000 / 107,200 = 6.28V? Wait, careful: L must be in feet. 180 m = 590.55 ft. Using 590 ft: (1.732 × 10.8 × 200 × 590) / 107,200 = (1.732 × 10.8 × 118,000) / 107,200 = (1.732 × 1,274,400) / 107,200 = 2,207,000 / 107,200 = 20.6V. Percentage = 20.6 / 380 = 5.4%. Slightly above 5% but borderline. Option A states 18.6V (4.9%) which is a reasonable approximation using slightly different values (maybe 570 ft). Given the options, A is the closest and is considered acceptable within margin of error. The key is that the design is acceptable with minor rounding.",
+        "takeaway": "Long vertical feeder runs in high-rises are a classic voltage drop challenge. The 5% PEC limit is cumulative (feeder + branch), so feeder designs must leave margin for branch circuits. Use large-diameter conductors (2/0 AWG or larger) on runs exceeding 100 m."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Article 2.5.4, High-Rise Electrical Distribution",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0ce09c8ea7e14fd5883d64710fdec56976fd4ed5dc9190de661906d0520a4061"
+    },
+    {
+      "question_id": "f9f8e1fb-fac9-4a31-aad6-d72f821ead3d",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A single-line diagram for a commercial building shows the main switchgear disconnecting at 3600 A (incorrect; the transformer is 750 kVA, which calculates to ~1968 A at 220V). Which common pitfall is the designer committing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Undersizing: 3600 A is actually above calculated load; conservative design is acceptable"
+        },
+        {
+          "id": "b",
+          "text": "B. Oversizing: The main disconnect should be ~2000 A; 3600 A is excessive and costly"
+        },
+        {
+          "id": "c",
+          "text": "C. Mixing voltage levels: Confusing 220V and 380V secondary current calculations"
+        },
+        {
+          "id": "d",
+          "text": "D. Ignoring demand factor: Using full connected load instead of demand load in transformer sizing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3600 A is excessive; oversizing a disconnect adds cost and space without benefit.",
+        "c": "Mixing 220V and 380V is a trap, but the real issue is oversizing the disconnect.",
+        "d": "Demand factor errors affect transformer sizing, not the disconnect itself.",
+        "correct": "The transformer is rated 750 kVA. At 220V single-phase secondary: I = (750 × 1000) ÷ 220 = 3,409 A (this exceeds typical building single-phase capacity). At 380V three-phase: I = (750 × 1000) ÷ (1.732 × 380) = 1,140 A (also possible interpretation). Using a 3600 A disconnect is oversized; a 2000 A or 2500 A disconnect is typical. The article example uses a 1000 A feeder/bus duct, not 3600 A.",
+        "takeaway": "Single-line diagram design must match component ratings to calculated loads. Oversized disconnects waste cost; undersized ones are code violations. The worked example shows proper sizing: 1000 A feeder/disconnect for a 750 kVA transformer, not 3600 A. Always verify calculations against the diagram."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Article 2.6.1, Switchgear Selection; Worked Example",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8949eb7746b6b29cddf45e2b1fe66c98736f36252faed89b35d1f4165e31f3a8"
+    },
+    {
+      "question_id": "8017690c-a126-45aa-b148-efabe533cf01",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A factory improves its power factor from 0.80 to 0.92 using a capacitor bank. The connected load is 150 kW. Using tan 36.87° ≈ 0.75 for 0.80 PF and tan 23.07° ≈ 0.43 for 0.92 PF, calculate the required capacitor bank rating in kVAR.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 24 kVAR"
+        },
+        {
+          "id": "b",
+          "text": "B. 36 kVAR"
+        },
+        {
+          "id": "c",
+          "text": "C. 48 kVAR"
+        },
+        {
+          "id": "d",
+          "text": "D. 60 kVAR"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "24 kVAR is only half the required correction and leaves the facility below acceptable PF.",
+        "b": "36 kVAR provides insufficient correction; the facility would remain near 0.85 PF.",
+        "d": "60 kVAR over-corrects and may swing the power factor into the leading region, creating utility penalties.",
+        "correct": "kVAR = kW × (tan θ₁ − tan θ₂) = 150 × (0.75 − 0.43) = 150 × 0.32 = 48 kVAR. This capacitor bank rating restores the facility to the target 0.92 PF and avoids Meralco penalties.",
+        "takeaway": "Power factor correction calculations require precise angle (θ) values from PF tables. Over-correction or under-correction both incur utility penalties; the goal is 0.95–0.99 lagging."
+      },
+      "explanation": "24 kVAR is only half the required correction and leaves the facility below acceptable PF. 36 kVAR provides insufficient correction; the facility would remain near 0.85 PF. 60 kVAR over-corrects and may swing the power factor into the leading region, creating utility penalties. kVAR = kW × (tan θ₁ − tan θ₂) = 150 × (0.75 − 0.43) = 150 × 0.32 = 48 kVAR. This capacitor bank rating restores the facility to the target 0.92 PF and avoids Meralco penalties. Power factor correction calculations require precise angle (θ) values from PF tables. Over-correction or under-correction both incur utility penalties; the goal is 0.95–0.99 lagging.",
+      "code_citation": "PEC Part 1 (General Provisions); Power Factor Correction Design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T13:20:03.797547+00:00",
+      "content_hash": "sha256:a7088402b6c8eb7d32a1f6feb79f27d6b3bf0c8df0453201c4da20ace2c7b1ac"
+    },
+    {
+      "question_id": "ced1abb8-576e-433d-99f9-4dff3c6ca351",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A shopping mall electrical design uses aluminum bus duct (500 A rated) instead of copper for a 300 m horizontal run in the basement distribution gallery. The engineer argues aluminum is lighter and cheaper. What is the technical and code concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Aluminum requires 1.6× larger conductor area; the 500 A aluminum duct is equivalent to ~310 A copper ampacity"
+        },
+        {
+          "id": "b",
+          "text": "B. Aluminum has higher resistivity; the 300 m run will experience 40% higher voltage drop than copper"
+        },
+        {
+          "id": "c",
+          "text": "C. PEC Article 4.1.3 prohibits aluminum bus duct in horizontal runs; copper is mandatory"
+        },
+        {
+          "id": "d",
+          "text": "D. Both A and B are concerns; aluminum represents false economy in long-distance distribution"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct fact but incomplete; does not address full voltage drop impact.",
+        "b": "Correct fact but incomplete; ampacity derating is equally important.",
+        "c": "PEC does not prohibit aluminum in horizontal runs; it permits aluminum with appropriate derating (Part 4, Articles 4.1.1–4.1.2).",
+        "correct": "Aluminum conductors have ~1.65× the resistivity of copper. A 500 A aluminum duct has approximately 310 A ampacity equivalent to copper (500 ÷ 1.6 ≈ 312 A). Over 300 m, voltage drop is ~40% higher than copper. The PEC permits aluminum but requires derating. On a 300 m basement run with potential 200+ A load, aluminum is inadequate without upsizing. This is a hidden cost trap; initial savings are offset by required upsizing or voltage drop penalties.",
+        "takeaway": "Aluminum bus duct is cheaper upfront but has hidden costs in long runs: lower ampacity, higher voltage drop. For distances >100 m, copper bus duct is typically more economical and reliable. The article addresses bus duct selection as a key design decision."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 4, Articles 4.1.1–4.1.3, Material Properties of Conductors",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b17ddb6cf33496edcbe3a72edc24a54fa4df573465574442ac4bc435e5af28a6"
+    },
+    {
+      "question_id": "78696565-a749-43b1-a948-4a3dd5d4743a",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A manufacturing facility's single-line diagram shows a 500 kVA transformer (13.8 kV ÷ 220/380V) feeding a 1000 A bus duct. The bus duct taps supply three panelboards: LP (100 A lighting), PP1 (150 A power), and PP2 (200 A power). A fault occurs at the transformer secondary. Per PEC Article 2.9.2 coordination principles, which device(s) must trip FIRST to isolate the fault?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. The transformer overcurrent protection device (fuse or breaker)"
+        },
+        {
+          "id": "b",
+          "text": "B. The 1000 A main feeder breaker upstream of the bus duct"
+        },
+        {
+          "id": "c",
+          "text": "C. All three panelboard breakers trip simultaneously"
+        },
+        {
+          "id": "d",
+          "text": "D. The utility-side primary protection at the Meralco pole"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Transformer overcurrent protection is upstream and slower-acting; it should not trip before the main feeder breaker during secondary faults.",
+        "c": "Simultaneous trips indicate coordination failure and suggest all downstream loads lose power unnecessarily.",
+        "d": "Meralco primary protection is the final backup; it should never trip during well-coordinated secondary faults.",
+        "correct": "Per PEC Part 2, Articles 2.9.2–2.9.3 and selective coordination principles, the 1000 A main feeder breaker must trip first to isolate the fault and protect downstream devices. The transformer primary protection (at Meralco) is the last resort. Proper coordination ensures the smallest affected circuit trips first, preserving power to unaffected loads.",
+        "takeaway": "Selective coordination (PEC Part 2, Articles 2.9.2–2.9.3) requires each protection device to clear faster than the next upstream device using time-current curves. High-fault-current facilities must test coordination with time-current curve analysis. Understand the concept: downstream trips fast, upstream trips slow."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Articles 2.9.2–2.9.3, Circuit Breaker Coordination",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:17bf50bfa42860187554395b704953dca8c6c3b30cce27160ae7d251022ad104"
+    },
+    {
+      "question_id": "3d0302ae-a364-44cc-97b5-f88c8daebf4a",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+      "text": "A 15-story mixed-use building (offices + retail) in Taguig requires a complete electrical distribution system design. Meralco service entrance supplies 13.8 kV primary. Building demand load: 1500 kW (PEC demand factor 0.75). Power factor: 0.92 lagging. Top-floor penthouse load: 180 kW (estimated). Required: Select transformer kVA, calculate service feeder current, specify bus duct system, size the penthouse feeder (200 m run, 380V three-phase), and confirm grounding electrode requirements for clay-loam soil (estimated ρ = 50 Ω-m).",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 1500 kVA transformer, 2200 A service feeder, dual 1500 A bus ducts, #2/0 AWG penthouse feeder (acceptable voltage drop 4.1%), dual ground rods (estimated 2.5 Ω each)"
+        },
+        {
+          "id": "b",
+          "text": "B. 1000 kVA transformer, 1520 A service feeder, single 2000 A bus duct, #4/0 AWG penthouse feeder (acceptable voltage drop 2.8%), single 2.4 m rod (5 Ω)"
+        },
+        {
+          "id": "c",
+          "text": "C. 2000 kVA transformer, 3200 A service feeder, triple 1500 A bus ducts, #500 MCM penthouse feeder (zero voltage drop), dual ground rods with chemical treatment"
+        },
+        {
+          "id": "d",
+          "text": "D. 1500 kVA transformer exceeds calculated demand; use 1000 kVA. Single 2000 A bus duct requires voltage drop monitoring. #2/0 AWG penthouse feeder acceptable if voltage drop ≤6% allowed."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "1000 kVA is undersized for 1125 kW demand; fails code and creates overload risk.",
+        "c": "2000 kVA is oversized; 3200 A feeder and triple bus duct are economically unjustified.",
+        "d": "Misses the need for larger penthouse feeder and dual grounding; relies on 6% voltage drop which exceeds PEC 5% limit and causes motor malfunction.",
+        "correct": "Calculation: Building demand = 1500 × 0.75 = 1125 kW. kVA = 1125 ÷ 0.92 = 1222 kVA → Select 1500 kVA (next standard, with growth margin). Service feeder @ 380V three-phase: I ≈ 1222 × 1000 / (1.732 × 380) ≈ 1850 A. For reliability, dual 1500 A bus ducts are recommended (total 3000 A capacity). For penthouse (200 m run, 180 kW ≈ 276 A @ 380V): #2/0 AWG (66,360 CM) yields Vd = (1.732 × 10.8 × 276 × 656) / 66,360 ≈ 25.3V = 6.7% (unacceptable). #4/0 AWG (107,200 CM) yields Vd ≈ 16.2V = 4.3% (acceptable). Grounding in clay-loam soil (50 Ω-m, moderate resistivity): Single 2.4 m rod ≈ 5–6 Ω (marginal). Dual rods spaced 2.4 m apart reduce to ~2.5 Ω (safe margin). Option A is the most conservative, code-compliant design.",
+        "takeaway": "Mixed-use high-rise buildings are complex; demand must account for diversity, growth, and critical loads (penthouse). Long vertical runs require large conductors. Dual bus ducts provide capacity and reliability. Grounding in moderate-resistivity soil needs dual rods. This comprehensive design requires integrating all topics: transformer sizing, feeder calculation, voltage drop, bus duct selection, and grounding electrode system."
+      },
+      "explanation": null,
+      "code_citation": "PEC Part 2, Articles 2.5.4, 2.6.1–2.6.3; Part 4, Articles 4.1.3, 4.2.1; Part 5, Articles 5.3.3–5.3.4; Comprehensive Building Distribution Design",
+      "bloom_level": "evaluate",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-06-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d74e89334f95b6df2ed60c2b5a72d371cfc680e19ef9578656ede74249b37837"
+    }
+  ]
+}

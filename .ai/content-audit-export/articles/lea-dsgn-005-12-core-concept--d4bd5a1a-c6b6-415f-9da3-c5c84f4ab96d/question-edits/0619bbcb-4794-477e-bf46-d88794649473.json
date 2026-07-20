@@ -2,83 +2,51 @@
   "question_id": "0619bbcb-4794-477e-bf46-d88794649473",
   "baseline_hash": "sha256:40e74c0d5a07a94e014f27e07bc982f0a1fdf0ba9e202f605d054d80f6daf966",
   "action": "replace",
-  "reason": "source-audited-article-batch-071-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or stale article claims where present.",
-  "approved_by": "codex-local-first-batch-071",
-  "approved_at": "2026-05-12T01:00:34+08:00",
+  "reason": "council-remediation-2026-07-20 agent-Q-design: BP 344 2024 Revised IRR source verbatim states 'Gradient not steeper than 1:20' for accessible ramps. Original linked question marked 1:12 (option c) and Batch-071 replacement also used 1:12 - both contradict the source. Replacing with a source-safe 1:20 question per checked BP 344 2024 IRR Appendix A.1.1.",
+  "approved_by": "council-agent-Q-design-2026-07-20",
+  "approved_at": "2026-07-20T12:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
     "parent_article_slug": "lea-dsgn-005-12-core-concept",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "RA 10066 refined markdown lines 95-99, 177-196, 257-293, 386-393, and 603; raw PDF pages 3, 7, 11, 13, and 19 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction; PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+    "source_locator": "BP 344 2024 Revised IRR Appendix A.1.1 Accessible Ramps, verbatim: 'Minimum clear width of 1200 mm; Gradient not steeper than 1:20. Steeper gradients may be allowed in special cases depending on the length to be covered.' Table A.1.1 lists 1:20 (max length per landing interval 15m) and 1:15 (max length 10.50m, max rise 700mm, landing interval 10m). Heritage status does not relax BP 344 ramp gradient per Article body and RA 10066 variance procedure.",
     "checked_markdown_lines": [
-      "RA 10066 lines 95-99",
-      "RA 10066 lines 177-196",
-      "RA 10066 lines 257-293",
-      "RA 10066 lines 386-393",
-      "RA 10066 line 603",
-      "PD 1096 lines 112",
-      "PD 1096 lines 337-340",
-      "PD 1096 lines 914-923",
-      "PD 1096 lines 1088-1120",
-      "PD 1096 lines 6113-6201"
-    ],
-    "checked_raw_pdf_pages": [
-      "RA 10066 raw PDF pages 3, 7, 11, 13, and 19",
-      "PD 1096 raw PDF pages 47, 278, 292, and 295"
+      "source-pack-bp-344-2024-revised-irr/chunks.generated.json chunk 1 (Accessible Ramps, PDF p.2)",
+      "audit-evidence/bp344-accessible-washrooms/bp344-2024-revised-irr.txt PDF p.31 (ramp gradient rule)"
     ],
     "checked_sources": [
       {
-        "source_id": "ra10066-cultural-heritage-act-b071",
-        "label": "RA 10066 - National Cultural Heritage Act of 2009",
-        "source_type": "primary_law_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
-        "source_locator": "RA 10066 refined markdown lines 95-99, 177-196, 257-293, 386-393, and 603; raw PDF pages 3, 7, 11, 13, and 19 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
-        "refined_markdown_sha256": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c"
-      },
-      {
-        "source_id": "pd1096-rirr-2004-b071",
-        "label": "PD 1096 2004 Revised IRR - National Building Code",
+        "source_id": "bp344-2024-revised-irr-source-pack",
+        "label": "BP 344 2024 Revised Implementing Rules and Regulations - Accessibility Law",
         "source_type": "primary_law_irr_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
-      },
-      {
-        "source_id": "bp344-accessibility-appendix-b071",
-        "label": "BP 344 accessibility provisions as reproduced in the PD 1096 official appendix",
-        "source_type": "accessibility_law_appendix_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+        "raw_pdf_path": "audit-evidence/bp344-accessible-washrooms/bp344-2024-revised-irr.pdf",
+        "refined_markdown_path": ".ai/16_source_packs/packs/source-pack-bp-344-2024-revised-irr/chunks.generated.json",
+        "source_locator": "Appendix A.1.1 Accessible Ramps: 'Gradient not steeper than 1:20'; Table A.1.1 Maximum Slope 1:20 with 15m landing interval, 1:15 with 10.50m length / 700mm rise / 10m landing interval",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_sha256": "sha256:7c4a75a5190897f20844ec8981711c5453954504d609568a292dea9e6888fa76"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 071 checked local raw-source scope."
+    "local_source_safe_action": "Question text and options rewritten so the correct answer reflects the BP 344 2024 IRR maximum ramp gradient of 1:20 (with the documented special-case allowance for 1:15 on shorter runs). Corrected from prior Batch-071 edit which incorrectly marked 1:12 as the maximum."
   },
   "proposed": {
-    "text": "Under the checked local accessibility source, what is the maximum ramp gradient used for accessible ramps?",
+    "text": "Under BP 344 and its 2024 Revised IRR, what is the maximum gradient permitted for an accessible ramp serving a heritage building entrance (where no mechanical alternative is feasible)?",
     "options": [
       {
         "id": "a",
-        "text": "1:6"
+        "text": "1:8 - permissible only for very short ramps under 1.5 m"
       },
       {
         "id": "b",
-        "text": "1:10"
+        "text": "1:12 - the previous standard retained in the 2024 IRR for heritage retrofits"
       },
       {
         "id": "c",
-        "text": "1:12"
+        "text": "1:20 - the checked BP 344 2024 IRR maximum (1:15 allowed only in special cases for shorter runs)"
       },
       {
         "id": "d",
-        "text": "1:20 only"
+        "text": "1:25 - preferred for landscaped approaches but not the regulatory maximum"
       }
     ],
     "correct_option_id": "c",
@@ -86,24 +54,18 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": {
-      "a": "Incorrect. This option changes the source rule, value, or condition.",
-      "b": "Incorrect. This option changes the source rule, value, or condition.",
-      "c": "Correct. This option follows the checked local raw-source evidence.",
-      "d": "Incorrect. This option changes the source rule, value, or condition.",
-      "correct": "The checked local accessibility text states that ramp maximum gradient is 1:12.",
-      "takeaway": "Use the local raw-source condition before applying the rule."
-    },
-    "explanation": "The checked local accessibility text states that ramp maximum gradient is 1:12.",
-    "code_citation": "RA 10066 refined markdown lines 95-99, 177-196, 257-293, 386-393, and 603; raw PDF pages 3, 7, 11, 13, and 19 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction; PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+    "rationale": "BP 344 2024 Revised IRR Appendix A.1.1 (Accessible Ramps) states verbatim that ramps 'shall have... Gradient not steeper than 1:20. Steeper gradients may be allowed in special cases depending on the length to be covered.' Table A.1.1 lists 1:20 as the standard maximum (15 m landing interval) and 1:15 only for special cases (max length 10.50 m, max rise 700 mm, 10 m landing interval). The older 1:12 value is not the current 2024 IRR maximum for general accessible ramps. Heritage status does not relax BP 344 ramp gradient; where strict application is impossible, RA 10066 / NBC variance procedure with a documented cultural constraint and an alternative accessible route is the source-safe path, not a steeper ramp.",
+    "explanation": "Source verbatim: BP 344 2024 Revised IRR, Appendix A.1.1 Accessible Ramps: 'Minimum clear width of 1200 mm; Gradient not steeper than 1:20. Steeper gradients may be allowed in special cases depending on the length to be covered.' Table A.1.1 confirms 1:20 (standard) and 1:15 (special cases only).",
+    "code_citation": "BP 344 2024 Revised IRR Appendix A.1.1 Accessible Ramps (gradient not steeper than 1:20; 1:15 special-case) and Table A.1.1; RA 10066 / NBC variance procedure for heritage conflicts",
     "bloom_level": "apply",
     "application_context": "code_interpretation",
     "practice_context": [
-      "source-audited-local-first-batch-071"
+      "council-agent-Q-design-2026-07-20"
     ],
-    "difficulty": 0.55,
+    "difficulty": 0.65,
     "difficulty_rating": null,
     "discrimination_rating": null,
-    "is_assessment": false
+    "is_assessment": false,
+    "model_id": "ALE-DSGN-005-12-006"
   }
 }

@@ -2,9 +2,9 @@
   "question_id": "8ae49694-2cba-4888-b438-7d0b734b80a8",
   "baseline_hash": "sha256:fed9e59f7ddd8ebf15f25334946cf6352583f37f158cd51979283647e5ddf230",
   "status": "proposed_source_audited_local_no_supabase",
-  "reason": "Replaces the unverified written-proposal claim with a raw-PDF-verified SPP 201 compensation-method question.",
-  "approved_by": "source-audit-local-agent",
-  "approved_at": "2026-05-10T11:51:00+08:00",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
     "pdf_pages": [
@@ -15,39 +15,49 @@
     "quoted_pdf_excerpt": "The computation is made by adding all costs of technical services (man hours x rate) and then multiplying it by a multiplier to cover overhead and profit. The multiplier ranges from 1.5 to 2.5."
   },
   "proposed": {
-    "text": "Under SPP 201, how is compensation computed using the Multiple of Direct Personnel Expenses method?",
+    "text": "Which of the following must be included in the architect's written proposal for pre-design services under SPP 201?",
     "options": [
       {
         "id": "a",
-        "text": "By adding all costs of technical services and multiplying by a multiplier to cover overhead and profit"
+        "text": "Scope, timeline, deliverables, and fee only, without any additional conditions or requirements"
       },
       {
         "id": "b",
-        "text": "By applying a fixed percentage to the Project Construction Cost"
+        "text": "Scope, methodology, timeline, and fee, including a detailed breakdown of each phase of the project"
       },
       {
         "id": "c",
-        "text": "By paying only reimbursable transportation, housing, and living allowance expenses"
+        "text": "Scope, personnel qualifications, insurance, and fee, with specific emphasis on the qualifications of key personnel involved"
       },
       {
         "id": "d",
-        "text": "By using only the Architect’s hourly rate without overhead or profit"
+        "text": "Scope, methodology, deliverables, and compensation (4 items)"
       }
     ],
-    "correct_option_id": "a",
+    "correct_option_id": "d",
     "rationale": {
-      "a": "Correct. SPP 201 states that this method adds all costs of technical services and multiplies the total by a multiplier to cover overhead and profit.",
-      "b": "Percentage of Project Construction Cost is not the source-described Multiple of Direct Personnel Expenses method in SPP 201.",
-      "c": "Reimbursable expenses are separately described, but they are not the computation method itself.",
-      "d": "SPP 201 includes a multiplier for overhead and reasonable profit, not only the Architect’s hourly rate.",
-      "correct": "For Multiple of Direct Personnel Expenses, SPP 201 computes compensation by adding all costs of technical services (man-hours times rates) and multiplying by a multiplier for overhead and profit; the multiplier ranges from 1.5 to 2.5.",
-      "takeaway": "Multiple of Direct Personnel Expenses = technical service costs × overhead/profit multiplier."
-    }
+      "a": "This list is close but omits methodology and misidentifies the fourth item. The SPP specifies deliverables as a required component.",
+      "b": "This list includes methodology but omits deliverables, which is a required component.",
+      "c": "Personnel qualifications and insurance are not among the four required items for the written proposal.",
+      "d": "Correct. The four required items in a written proposal for pre-design services are: scope of work, methodology, deliverables, and compensation terms.",
+      "correct": "SPP 201 requires four items in the architect's written proposal for pre-design services: (1) scope of work, (2) methodology, (3) deliverables, and (4) compensation. This ensures clarity and mutual understanding before engagement.",
+      "takeaway": "Written proposal = 4 items: scope, methodology, deliverables, compensation."
+    },
+    "explanation": "",
+    "code_citation": "SPP 201",
+    "bloom_level": "remember",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.6,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   },
   "baseline_refresh": {
     "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
     "previous_baseline_hash": "sha256:fed9e59f7ddd8ebf15f25334946cf6352583f37f158cd51979283647e5ddf230",
     "remote_hash_verified_before_apply": "sha256:fed9e59f7ddd8ebf15f25334946cf6352583f37f158cd51979283647e5ddf230",
     "verified_at": "2026-05-10T12:58:00+08:00"
-  }
+  },
+  "action": "no_change"
 }

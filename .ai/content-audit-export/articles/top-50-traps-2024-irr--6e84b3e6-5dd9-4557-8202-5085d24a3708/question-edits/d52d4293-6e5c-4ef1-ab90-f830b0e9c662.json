@@ -1,10 +1,10 @@
 {
   "question_id": "d52d4293-6e5c-4ef1-ab90-f830b0e9c662",
   "baseline_hash": "sha256:79f75541e2b47209744e8d756c8deca10e2a7f2c55be03ec8b23c9d471e7c0d3",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
     "parent_article_slug": "top-50-traps-2024-irr",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "What is the minimum riser and tread rule for accessible stairs in the checked 2024 BP 344 IRR text?",
+    "text": "According to Trap #40?, what are the two values that examinees frequently swap when describing the tactile warning strip specification — and which value is the depth versus the setback?",
     "options": [
       {
-        "id": "a",
-        "text": "Riser not more than 150 mm and tread not less than 300 mm"
+        "id": "A",
+        "text": "Depth = 300 mm; setback = 600 mm from the hazard edge — the strip is narrow and placed well back"
       },
       {
-        "id": "b",
-        "text": "Riser not more than 200 mm and tread not less than 250 mm"
+        "id": "B",
+        "text": "Depth = 600 mm; setback = 300 mm from the hazard edge — the strip is wide and placed close to the hazard"
       },
       {
-        "id": "c",
-        "text": "Riser not more than 100 mm and tread not less than 400 mm"
+        "id": "C",
+        "text": "Depth = 600 mm; setback = 600 mm from the hazard edge — both dimensions are equal for simplicity"
       },
       {
-        "id": "d",
-        "text": "Riser not more than 180 mm and tread not less than 280 mm"
+        "id": "D",
+        "text": "Depth = 300 mm; setback = 300 mm from the hazard edge — both dimensions match for easy recall"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "The checked stair provision uses 150 mm maximum riser and 300 mm minimum tread.",
-    "explanation": "The checked stair provision uses 150 mm maximum riser and 300 mm minimum tread.",
-    "code_citation": "BP 344 2024 IRR, accessible stairs",
-    "bloom_level": "apply",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Top 50 Traps: 2024 IRR",
-      "LEA Accessibility Code Review"
-    ],
+    "correct_option_id": "B",
+    "rationale": {
+      "summary": "Trap #40: depth = 600 mm (the strip itself); setback = 300 mm (how far back from the hazard it is placed).",
+      "explanation": "Trap #40 in the article describes this as the most-swapped pair of numbers in tactile specification. The tactile warning strip is 600 mm deep — meaning the strip occupies 600 mm of floor space measured perpendicular to the hazard. The near edge of the strip is placed 300 mm back from the hazard edge (stair nosing, ramp top, platform edge). The 300 mm setback ensures the user's foot detects the tactile warning before the leading foot reaches the drop. Selecting 300 mm as the depth is the documented wrong answer.",
+      "common_misconceptions": [
+        "Selecting depth = 300 mm — 300 mm is the setback distance, not the strip depth",
+        "Treating both values as equivalent or interchangeable — they measure completely different things"
+      ]
+    },
+    "explanation": "Tactile strip: 600 mm deep (the strip), 300 mm setback (from the hazard). Exam trap: these two numbers are frequently swapped.",
+    "code_citation": "BP 344 IRR App. B; Trap #40",
+    "bloom_level": "remember",
+    "application_context": null,
+    "practice_context": [],
     "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-top-50-traps-2024-irr-019"
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

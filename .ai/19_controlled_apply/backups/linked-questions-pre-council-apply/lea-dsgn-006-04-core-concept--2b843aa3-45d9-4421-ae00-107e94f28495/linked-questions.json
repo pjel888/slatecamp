@@ -1,0 +1,550 @@
+{
+  "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:d82f6590f58e2636394de4a54b77cf3d008d152954bac1e1b6fdec4e087c564e",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1b406df1-e535-48e9-bff9-75bca966f422",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A warehouse facility is being designed for general storage. What is the correct occupancy group classification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group F (industrial), which includes facilities used for manufacturing and processing"
+        },
+        {
+          "id": "b",
+          "text": "Group F Div 1 (industrial - moderate hazard)"
+        },
+        {
+          "id": "c",
+          "text": "Group E (mercantile/office), typically used for retail and business operations"
+        },
+        {
+          "id": "d",
+          "text": "Group A (residential), which is designated for living accommodations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Common error: Group F is industrial/manufacturing. Warehouse (storage) = Group G. The distinction affects occupancy density calculations significantly.",
+        "b": "Correct: Warehouse = Group G (storage). This low-occupancy classification allows efficient egress design and reduced parking requirements.",
+        "c": "Group E is mercantile/office retail. Warehouses are not mercantile; they are storage facilities.",
+        "d": "Group A is residential. No connection to warehouse function.",
+        "correct": "Warehouses are Group F Div 1 occupancies (industrial - moderate hazard storage); PD 1096 Section 701 Table 7-1F. This classification is essential for determining occupant load, egress requirements, and parking standards. See ERR-DSGN-003.",
+        "takeaway": "ERR-DSGN-003: Warehouse ≠ Group F. Warehouse = Group G (storage/hazardous). This is the most frequently tested occupancy classification error on the ALE."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Section 3.3 Group G Occupancies; ERR-DSGN-003",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "occupancy groups",
+        "NBCP classification"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4063a327181e2abb243a2b0c12217f159c81b07a4a7f4965ceb29b135f463e14"
+    },
+    {
+      "question_id": "452057aa-4670-4fba-aded-12f3b6185a3b",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A warehouse with a gross floor area of 12,000 square meters must calculate its occupant load for fire egress design. Using the Group G occupancy standard of 1 person per 46.5 sqm, what is the maximum occupant load for this warehouse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "120 persons"
+        },
+        {
+          "id": "b",
+          "text": "258 persons"
+        },
+        {
+          "id": "c",
+          "text": "1,200 persons"
+        },
+        {
+          "id": "d",
+          "text": "2,580 persons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Significantly under-calculates; 120 assumes 1 per 100 sqm, not warehouse standard.",
+        "b": "Correct: 12,000 ÷ 46.5 = 258 persons. This occupant load determines exit width and egress requirements.",
+        "c": "Over-calculates by factor of ~5; 1,200 assumes 1 per 10 sqm (assembly/high-density).",
+        "d": "Significantly over-calculates; 2,580 assumes 1 per 4.6 sqm (standing-room assembly).",
+        "correct": "Occupant load = GFA ÷ density = 12,000 sqm ÷ 46.5 sqm/person = 258 persons (rounded). This low density reflects warehouse low-occupancy nature.",
+        "takeaway": "Warehouse occupant load formula: GFA ÷ 46.5 sqm/person. At 12,000 sqm, this yields ~258 persons for fire egress calculation. This low-occupancy classification is a key advantage of Group G designation."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Group G Occupant Load Standards; Fire Egress Requirements",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [
+        "occupancy load calculation",
+        "fire code compliance"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a1216cd5788bbcd8b4f66618872d918b4f00671257a6307dce42f9af39be126f"
+    },
+    {
+      "question_id": "7fc31aa9-f228-4c5a-8593-84738ec7284b",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A warehouse facility has a gross floor area (GFA) of 8,000 square meters. Based on Group G parking standards, how many parking spaces are required (minimum)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 spaces"
+        },
+        {
+          "id": "b",
+          "text": "8 spaces"
+        },
+        {
+          "id": "c",
+          "text": "40 spaces"
+        },
+        {
+          "id": "d",
+          "text": "80 spaces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Under-calculates; 4 spaces assumes 1 per 2,000 sqm, not the standard 1 per 1,000 sqm.",
+        "b": "Correct: 8,000 sqm ÷ 1,000 sqm/space = 8 spaces. Warehouse parking is the lowest ratio across occupancy types.",
+        "c": "Over-calculates; 40 spaces would be 1 per 200 sqm, more appropriate for higher-occupancy facilities.",
+        "d": "Significantly over-calculates; 80 spaces would be 1 per 100 sqm, far exceeding warehouse density.",
+        "correct": "Parking spaces (Group F) = GFA ÷ 500 sqm per space (typical industrial) = 8,000 ÷ 1,000 = 8 spaces minimum.",
+        "takeaway": "Warehouse parking minimum = 1 space per 1,000 sqm GFA. This is the lowest parking ratio across building types, reflecting low occupancy. Formula: spaces = GFA ÷ 1,000."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Parking Standards for Group G Occupancies",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [
+        "parking standards",
+        "GFA calculations"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9afc1623a83b8d5d9d97784e305aa51b1d8b1fec6b8981812cce5aa4d397614"
+    },
+    {
+      "question_id": "bbb8afbe-eadf-4a18-87d5-2c45b7f237fe",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A design brief specifies a warehouse facility with a total GFA of 15,000 sqm, standard clear height of 6.0m, and three loading docks. Calculate: (1) the maximum occupant load using Group G standards, (2) minimum parking spaces required, and (3) total loading dock door width if each door is 3.6m wide. Which answer set is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Occupant load: 323 persons; Parking: 15 spaces; Dock door width: 10.8m"
+        },
+        {
+          "id": "b",
+          "text": "Occupant load: 257 persons; Parking: 12 spaces; Dock door width: 7.2m"
+        },
+        {
+          "id": "c",
+          "text": "Occupant load: 323 persons; Parking: 15 spaces; Dock door width: 7.2m"
+        },
+        {
+          "id": "d",
+          "text": "Occupant load: 257 persons; Parking: 10 spaces; Dock door width: 10.8m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct: 15,000 ÷ 46.5 = 323 persons; 15,000 ÷ 1,000 = 15 spaces; 3 × 3.6 = 10.8m dock width.",
+        "b": "Occupancy and parking are under-calculated; dock width is under-calculated (7.2m ≠ 3 × 3.6m).",
+        "c": "Occupancy and parking are correct, but dock width is incorrect (7.2m suggests only 2 docks at 3.6m each).",
+        "d": "Occupancy and parking calculations are incorrect; dock width is correct by coincidence (10.8m).",
+        "correct": "Occupant load: 15,000 sqm ÷ 46.5 sqm/person = 323 persons. Parking: 15,000 sqm ÷ 1,000 sqm/space = 15 spaces. Dock door width: 3 docks × 3.6m/dock = 10.8m total. All three calculations use the warehouse standards directly.",
+        "takeaway": "Multi-part warehouse calculation: (1) Occupant load = GFA ÷ 46.5, (2) Parking = GFA ÷ 1,000, (3) Dock width = number of docks × 3.6m. All three are independent formulas using the same GFA. Precision across all three is required for complete compliance."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Group G Warehouse Standards; Occupancy Load and Parking Requirements",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [
+        "occupancy load",
+        "parking standards",
+        "loading dock design"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:975233f470ec9d45f968fe9bf412346c3f123b14e1fe63dca58390f7da3086ea"
+    },
+    {
+      "question_id": "290ac1bf-bb11-4762-b1bd-140da0cc21fe",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "What is the occupant load density for a warehouse (Group G occupancy)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 person per 9.3 square meters"
+        },
+        {
+          "id": "b",
+          "text": "1 person per 23 square meters"
+        },
+        {
+          "id": "c",
+          "text": "1 person per 93 square meters"
+        },
+        {
+          "id": "d",
+          "text": "1 person per 100 square meters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1 person/9.3 sqm is office (Group E) occupancy density, much higher than warehouse.",
+        "b": "1 person/23 sqm is intermediate density; warehouses are lower.",
+        "c": "Correct: 1 person per 46.5 sqm for Group G (warehouse/storage). Lowest occupancy density except for some industrial uses.",
+        "d": "Over-estimates the low-density standard; warehouses don't use 1/100 sqm ratios.",
+        "correct": "Warehouse occupant load density = 1 person per 46.5 sqm. This reflects low personnel presence and primarily automated/occasional operations.",
+        "takeaway": "Warehouse occupancy load = 1 person per 46.5 sqm. This low-occupancy classification allows efficient egress design. Do not confuse with office (9.3 sqm/person)."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Group G Occupant Load Standards",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "occupancy density",
+        "occupant load formula"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b54ed15120b2905449f550096f522aa2f18b2e5bccbb49ae1b53805b62443b4"
+    },
+    {
+      "question_id": "16b0137a-1696-485f-a092-968f7765309b",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A loading dock for a warehouse must have a door opening. The standard minimum dimensions for a loading dock door are:",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.0m wide × 4.0m high"
+        },
+        {
+          "id": "b",
+          "text": "3.6m wide × 4.5m high"
+        },
+        {
+          "id": "c",
+          "text": "4.0m wide × 4.0m high"
+        },
+        {
+          "id": "d",
+          "text": "4.5m wide × 5.0m high"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Under-sized; does not accommodate full semi-trailer width.",
+        "b": "Correct: 3.6m W × 4.5m H is the standard for loading dock doors.",
+        "c": "4.0m × 4.0m resembles apparatus bay or pedestrian door; not the dock standard.",
+        "d": "Over-sized; unnecessarily increases structural loading and door mechanism cost.",
+        "correct": "Loading dock door standard: 3.6m wide × 4.5m high. This accommodates standard semi-trailer doors and pallet jacks.",
+        "takeaway": "Loading dock door = 3.6m W × 4.5m H standard. This matches semi-trailer door dimensions. Also note: loading dock height = 1,200mm (platform level), separate from door height."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Warehouse Design Standards; Loading Dock Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [
+        "loading dock standards",
+        "truck interface"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed85389f0837c33bdc94f5f0be19c376043f17b322a4cf2562a03250bee60538"
+    },
+    {
+      "question_id": "aee63288-6cfe-4e8b-8362-195a41132834",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A cold storage facility must accommodate perishable goods at multiple temperature zones. Rank the following temperature zones from coldest to warmest and identify the primary storage use for each:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Blast freezer −25°C (rapid cooling), Frozen −18°C (long-term), Chiller +2°C (perishables), Cool +10°C (controlled)"
+        },
+        {
+          "id": "b",
+          "text": "Frozen −18°C (rapid cooling), Chiller +2°C (long-term), Cool +10°C (perishables), Standard +20°C (controlled)"
+        },
+        {
+          "id": "c",
+          "text": "Blast freezer −30°C (long-term), Frozen −15°C (rapid cooling), Chiller 0°C (perishables), Cool +8°C (controlled)"
+        },
+        {
+          "id": "d",
+          "text": "Chiller −5°C (rapid cooling), Frozen +5°C (long-term), Cool +15°C (perishables), Standard +25°C (controlled)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct: All four zones at correct temperatures and use cases. −25°C blast, −18°C frozen, +2°C chiller, +10°C cool.",
+        "b": "Sequence error: Confuses blast freezer with frozen storage; incorrect temperatures (+20°C is ambient, not a cold storage zone).",
+        "c": "Temperature errors: Blast freezer is −25°C (not −30°C), Frozen is −18°C (not −15°C), Chiller is +2°C (not 0°C).",
+        "d": "Completely incorrect: Temperatures are too high and out of sequence. Cool +15°C is not a cold storage zone.",
+        "correct": "Cold chain zones (coldest to warmest): Blast freezer −25°C for rapid temperature reduction, Frozen −18°C for long-term preservation, Chiller +2°C for perishables (dairy, meats, vegetables), Cool +10°C for controlled temperature goods. Each requires independent HVAC and insulation.",
+        "takeaway": "Cold chain zones: Blast −25°C (rapid), Frozen −18°C (long-term), Chiller +2°C (perishable), Cool +10°C (controlled). Each zone requires separate HVAC, insulation (150–200mm polyurethane), and vapor barriers. Precision in temperature is critical for product quality and code compliance."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Cold Storage Design Standards; Warehouse Design Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "thermal zoning",
+        "temperature-controlled storage"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a1826774d76762beb3e59bc9f74c316dd98a33c40e6fe4453f404a329412629e"
+    },
+    {
+      "question_id": "e744b934-8f7e-4a21-b86e-bb4056f2793b",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A standard warehouse facility requires a minimum clear height (floor-to-soffit distance) of:",
+      "options": [
+        {
+          "id": "a",
+          "text": "4.5 meters"
+        },
+        {
+          "id": "b",
+          "text": "5.0 meters"
+        },
+        {
+          "id": "c",
+          "text": "6.0 meters"
+        },
+        {
+          "id": "d",
+          "text": "7.5 meters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Under-sized; insufficient for standard pallet racking and equipment movement.",
+        "b": "Under-sized; 5.0m limits racking configuration options.",
+        "c": "Correct: 6.0m minimum clear height for standard warehouse design.",
+        "d": "Over-sized for standard warehouses; 7.5m and above are high-bay configurations (9.0–12.0m).",
+        "correct": "Standard warehouse clear height minimum = 6.0 meters. This unobstructed vertical distance accommodates racking systems, forklifts, and material handling equipment.",
+        "takeaway": "Warehouse clear height: 6.0m minimum (standard), 9.0–12.0m (high-bay). Clear height is unobstructed floor-to-soffit distance, critical for storage system design."
+      },
+      "explanation": null,
+      "code_citation": "Industry standard (no PD 1096 minimum)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "clear height",
+        "storage design"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7dfeb283abeae0054a6aeeba43563b996059512db66060360369e5607078b49f"
+    },
+    {
+      "question_id": "9080ec81-fa7e-4a50-bae4-e50476bc33cd",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A cold storage facility design must specify insulation thickness for cold chain zones to prevent heat infiltration and condensation. Typical polyurethane insulation thickness for cold storage is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "50–75 millimeters"
+        },
+        {
+          "id": "b",
+          "text": "100–150 millimeters"
+        },
+        {
+          "id": "c",
+          "text": "150–200 millimeters"
+        },
+        {
+          "id": "d",
+          "text": "250–300 millimeters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Insufficient; 50–75mm allows excessive heat infiltration and condensation risk.",
+        "b": "Marginal: 100–150mm is on the lower end; 150mm minimum is more reliable for tropical climates.",
+        "c": "Correct: 150–200mm polyurethane standard for cold storage thermal insulation and vapor control.",
+        "d": "Over-specifies; 250–300mm adds cost without proportional thermal benefit and increases wall thickness.",
+        "correct": "Cold storage polyurethane insulation standard: 150–200mm thickness. This provides adequate thermal resistance for temperature differential between zones while managing condensation through vapor barriers.",
+        "takeaway": "Cold storage insulation: 150–200mm polyurethane standard. Must include vapor barriers to prevent condensation. Proper insulation thickness is critical for energy efficiency (tropical heat load) and product preservation."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Cold Storage Design Standards; Building Science Insulation Guidelines",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "insulation standards",
+        "vapor barriers",
+        "thermal control"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eba3d55eacaf5235732338f75aedad02cfe6f85c8439cc2b0bf89cae7dcd1bdb"
+    },
+    {
+      "question_id": "c501176a-ff38-4a6b-a312-01c73f75e8bc",
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "topic_id": "34acf4b8-22ec-4076-9c16-f4881db7feb6",
+      "text": "A warehouse design proposal specifies a loading dock height of 900 millimeters. Is this compliant with warehouse loading dock standards? If not, what is the correct height?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 900mm is acceptable for most truck types, especially those with lower bed heights."
+        },
+        {
+          "id": "b",
+          "text": "No, 900mm is the standard accessible door height. Loading dock height should be 1,200mm to match truck bed height."
+        },
+        {
+          "id": "c",
+          "text": "No, loading docks must be at least 1,500mm high for safe forklift operation, ensuring compatibility with high-bed trucks."
+        },
+        {
+          "id": "d",
+          "text": "Yes, 900mm matches the height of standard warehouse shelving, which is often used for manual loading operations."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "No: 900mm is insufficient. It creates an unacceptable step between dock and truck bed.",
+        "b": "Correct: Loading dock height = 1,200mm (truck bed interface). 900mm is accessible door height, different standard.",
+        "c": "Over-specifies: 1,500mm is excessive for loading dock platform height.",
+        "d": "Incorrect: Shelf height is design-dependent; loading dock height is standardized at 1,200mm for truck interface.",
+        "correct": "Loading dock height = 1,200mm standard. This aligns with truck bed height. 900mm is the accessible door clearance (door height), not dock height. Confusing these creates incompatibility with vehicles.",
+        "takeaway": "Loading dock height = 1,200mm (truck bed alignment). Do not confuse with accessible door height = 900mm. These are two separate dimensions in warehouse design."
+      },
+      "explanation": null,
+      "code_citation": "Industry standard (no PD 1096 requirement)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "loading dock standards",
+        "truck interface specifications"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-006-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4b89aea0f8be4894d8a75a2bacbba8ce5a2dcb3fe2e6f975caf4d8f27629b6bc"
+    }
+  ]
+}

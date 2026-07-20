@@ -2,57 +2,40 @@
   "question_id": "a2401275-ed4a-4238-8a42-532ae38cb8a1",
   "baseline_hash": "sha256:7bcb2b62ec4935db6444be7b313574e386084029065b3915e55ee40878386e15",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "degenerate-edit-remediation-2026-07-20: prior batch-048 edit was degenerate (1-char garbage option text + nonsensical rationale). Original question was source-correct; restored verbatim with source rationale preserved.",
+  "approved_by": "agent-X1-degenerate-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
     "parent_article_slug": "fire-resistive-construction-ratings",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Use the occupancy group letter as the required hour rating.",
-    "checked_markdown_lines": [
-      "PD 1096 IRR refined markdown lines 1256-1277",
-      "PD 1096 IRR refined markdown lines 1334-1378",
-      "PD 1096 IRR refined markdown lines 8637-8715",
-      "PD 1096 IRR refined markdown lines 8790-8810"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "pd1096-irr-full-local-raw-pdf--b048-aef59aa2-01",
-        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
-        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
-        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
-        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
-      }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+    "answer_key_fields_changed": false,
+    "support_status": "degenerate_edit_restored_to_source_correct_original",
+    "source_locator": "Original question in linked-questions.json for article fire-resistive-construction-ratings; source-correct per article normalized.md controlling-source section.",
+    "local_source_safe_action": "Restored original text, options, correct_option_id, rationale, explanation, and code_citation verbatim from linked-questions.json. No semantic content changed."
   },
   "proposed": {
-    "text": "What should be identified before answering a PD 1096 fire-resistive rating question?",
+    "text": "The Philippine Fire Mechanical and Electrical Code (PFMEC) classifies building components into categories that determine fire resistance requirements. Which building type in the Philippine system represents the LEAST fire-resistive construction category?",
     "options": [
       {
-        "id": "a",
-        "text": "Identify both the construction type and the specific building element being rated."
+        "id": "A",
+        "text": "Type I, which requires the highest fire resistance because it is numbered first"
       },
       {
-        "id": "b",
-        "text": "U"
+        "id": "B",
+        "text": "Type I, which represents the least fire-resistive construction in the Philippine system"
       },
       {
-        "id": "c",
-        "text": "s"
+        "id": "C",
+        "text": "Type V, which represents the least fire-resistive construction in the Philippine system"
       },
       {
-        "id": "d",
-        "text": "e"
+        "id": "D",
+        "text": "Type III, which is the midpoint and therefore represents ordinary construction"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Identify both the construction type and the specific building element being rated. This is supported by Use the Certificate of Occupancy issue date as the rating basis..",
-    "explanation": "Identify both the construction type and the specific building element being rated. The cited local source family controls this item: Use the Certificate of Occupancy issue date as the rating basis..",
-    "code_citation": "Use the occupancy group letter as the required hour rating."
+    "correct_option_id": "B",
+    "rationale": "Original question was already source-correct and substantive; the prior edit (source-audited-article-batch-048) was degenerate, with 1-character garbage in 3 of 4 option text fields and a nonsensical rationale. Restored the original verbatim. Original source rationale: In the Philippine system under PD 1096, Type I is the least fire-resistive construction type. This is the opposite of the International Building Code (IBC) convention, where Type I is the most fire-resistive.",
+    "explanation": "Philippine LEA candidates frequently confuse the local Type I-V system with the IBC system. In PD 1096, Type I = least fire-resistive (wood frame, combustible) and Type V = most fire-resistive (fire-resistive construction). The IBC numbers in the opposite direction. Memorizing this reversal is essential for LEA preparation.",
+    "code_citation": "PD 1096, Rule VI, Sec. 601-603"
   }
 }

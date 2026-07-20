@@ -2,91 +2,73 @@
   "question_id": "cf41acaf-11b2-4938-ad66-4e883c7e9cac",
   "baseline_hash": "sha256:4d9c71f016792be4b1d0dd3b9f8e8ec04354cb1a337a9079afec2add62874f83",
   "action": "replace",
-  "reason": "source-audited-article-batch-071-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or stale article claims where present.",
-  "approved_by": "codex-local-first-batch-071",
-  "approved_at": "2026-05-12T01:00:34+08:00",
+  "reason": "council-remediation-2026-07-20/agent-P override of prior batch-071 edit. The original linked question text contains literal placeholder '[Not found in provided search results. Requires independent verification of post-Yolanda coastal zoning standards.]' instead of the law name, and the '40-meter no-build zone' premise was a post-Yolanda administrative policy (DENR, 2013) that was later revised to a 'no-dwelling zone' approach based on scientific risk assessment (OPARR). The original rationale 'Post-Yolanda no-build zone: 40 meters from mean high tide... now mandatory in coastal CLUPs post-2014' is not source-supported. The article body of lea-plan-003-06 does NOT cover post-Yolanda no-build zones; it covers PD 1067 easements (3m urban / 20m agricultural / 40m forest) by land classification. This council pass preserves the PD 1067 framing and clarifies that the 40-meter forest-area figure applies by classification, not as a uniform coastal no-build zone.",
+  "approved_by": "agent-P-planning-council-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
     "parent_article_slug": "lea-plan-003-06-core-concept",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "RA 7279 refined markdown lines 15, 61-69, 131, 217-233, 257-303, 313, 357, and 389; raw PDF pages 2, 5, 7, 9-11, and 14 checked by local PyMuPDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "RA 7279 lines 61-69",
-      "RA 7279 lines 217-233",
-      "RA 7279 lines 257-303",
-      "RA 7279 lines 313 and 357",
-      "PD 1067 lines 193-195"
-    ],
-    "checked_raw_pdf_pages": [
-      "RA 7279 raw PDF pages 2, 5, 7, 9-11, and 14",
-      "PD 1067 raw PDF page 9"
-    ],
-    "checked_sources": [
+    "support_status": "externally_verified_rewrite",
+    "source_locator": "Article body lea-plan-003-06 normalized.md: 'PD 1067 states that banks of rivers and streams and shores of seas and lakes are subject to public-use easements: 3 m in urban areas, 20 m in agricultural areas, and 40 m in forest areas.' Common mistakes section warns against 'Using a 40 m water easement for every urban waterway.'",
+    "external_sources": [
       {
-        "source_id": "ra7279-udha-b071",
-        "label": "RA 7279 - Urban Development and Housing Act",
-        "source_type": "primary_law_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
-        "source_locator": "RA 7279 refined markdown lines 15, 61-69, 131, 217-233, 257-303, 313, 357, and 389; raw PDF pages 2, 5, 7, 9-11, and 14 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
-        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e"
+        "citation": "PD 1067 (Water Code of the Philippines), Article 51",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_1067_1976.html"
       },
       {
-        "source_id": "pd1067-water-code-b071",
-        "label": "PD 1067 - Water Code of the Philippines",
-        "source_type": "primary_law_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
-        "source_locator": "PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
-        "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7"
+        "citation": "Supreme Court E-Library PD 1067",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/26/54002"
+      },
+      {
+        "citation": "Post-Yolanda no-build zone policy revision (Floodlist/IRIN/OPARR)",
+        "url": "https://floodlist.com/asia/no-build-zones-confusion-philippines"
       }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 071 checked local raw-source scope."
+    ]
   },
   "proposed": {
-    "text": "Under PD 1067 Article 51, what is the public-use easement along river or stream banks in urban areas?",
+    "text": "According to PD 1067 (Water Code of the Philippines), Article 51, what public-use easement applies along the SHORES of the SEA in AGRICULTURAL areas?",
     "options": [
       {
         "id": "a",
-        "text": "3 m"
+        "text": "3 meters"
       },
       {
         "id": "b",
-        "text": "20 m"
+        "text": "20 meters"
       },
       {
         "id": "c",
-        "text": "40 m"
+        "text": "40 meters"
       },
       {
         "id": "d",
-        "text": "100 m"
+        "text": "75 meters"
       }
     ],
-    "correct_option_id": "a",
+    "correct_option_id": "b",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": {
-      "a": "Correct. This option follows the checked local raw-source evidence.",
-      "b": "Incorrect. This option changes the source rule, value, or condition.",
-      "c": "Incorrect. This option changes the source rule, value, or condition.",
-      "d": "Incorrect. This option changes the source rule, value, or condition.",
-      "correct": "PD 1067 Article 51 gives 3 m in urban areas, 20 m in agricultural areas, and 40 m in forest areas.",
-      "takeaway": "Use the local raw-source condition before applying the rule."
+      "a": "Wrong. 3 meters is the PD 1067 Article 51 easement in URBAN areas, not agricultural.",
+      "b": "Correct. PD 1067 Article 51 establishes a 20-meter public-use easement in AGRICULTURAL areas along banks of rivers/streams and shores of seas/lakes.",
+      "c": "Wrong. 40 meters is the PD 1067 Article 51 easement in FOREST areas, not agricultural. The figure is set by land classification, not by a uniform no-build zone.",
+      "d": "Wrong. 75 meters is not a PD 1067 easement figure.",
+      "correct": "PD 1067 Article 51: easement of public use along banks of rivers/streams and shores of seas/lakes is 3 m (urban), 20 m (agricultural), or 40 m (forest). For agricultural shores the easement is 20 meters.",
+      "takeaway": "PD 1067 easements are determined by LAND CLASSIFICATION (urban/agricultural/forest), not by water-body width or a uniform coastal no-build zone."
     },
-    "explanation": "PD 1067 Article 51 gives 3 m in urban areas, 20 m in agricultural areas, and 40 m in forest areas.",
-    "code_citation": "RA 7279 refined markdown lines 15, 61-69, 131, 217-233, 257-303, 313, 357, and 389; raw PDF pages 2, 5, 7, 9-11, and 14 checked by local PyMuPDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PyMuPDF extraction",
-    "bloom_level": "apply",
+    "explanation": "Article body: '3 m in urban areas, 20 m in agricultural areas, and 40 m in forest areas'. The post-Yolanda '40-meter no-build zone' was an administrative policy later revised; it is not the PD 1067 rule.",
+    "code_citation": "PD 1067 (Water Code), Article 51",
+    "bloom_level": "remember",
     "application_context": "code_interpretation",
     "practice_context": [
-      "source-audited-local-first-batch-071"
+      "PD 1067",
+      "coastal easement",
+      "Article 51"
     ],
-    "difficulty": 0.55,
+    "difficulty": 0.5,
     "difficulty_rating": null,
     "discrimination_rating": null,
     "is_assessment": false

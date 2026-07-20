@@ -1,97 +1,76 @@
 {
   "question_id": "b7780e3e-9362-44c8-9c2e-82c530c4d3f2",
-  "baseline_hash": "sha256:68567936e69c26eb617d6e867c7e4526106cde707daaf09bb5f29bede3c11b63",
+  "baseline_hash": "sha256:20c76c55ec2473aa79c9c67396bc29cdadcfc1055f82326ba2e524e6d0be6208",
   "action": "replace",
-  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-plan-003-01-what-you-need-to-know-for-the-lea.",
-  "approved_by": "codex-local-source-audit-batch-021",
-  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "reason": "council-remediation-2026-07-20/agent-P override. The currently linked question's marked-correct option B ('3 meters') and rationale ('RA 7279 designates areas within 3 meters of esteros as danger zones where occupants may be evicted without permanent resettlement being required first') are factually wrong on two counts: (1) RA 7279 does NOT specify a 3-meter distance threshold for danger areas; the 3-meter figure derives from PD 1067's urban easement. RA 7279 Section 28 lists danger areas by type (esteros, riverbanks, shorelines, etc.) without a numeric setback. (2) RA 7279 does NOT waive relocation in danger areas; Section 29 requires LGUs with NHA to provide relocation with basic services and livelihood access. The article body of lea-plan-003-01 explicitly excludes 'eviction-distance rules' from its scope and the article body of lea-plan-003-06 confirms relocation is required.",
+  "approved_by": "agent-P-planning-council-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
     "parent_article_slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "PD 957 IRR, BP 220 Revised IRR, and RA 7279 housing provisions checked from local raw PDFs",
-    "checked_markdown_lines": [
-      "PD 957 refined markdown lines 100-240",
-      "BP 220 refined markdown lines 130-560",
-      "RA 7279 refined markdown lines 70-190"
-    ],
-    "checked_sources": [
+    "support_status": "externally_verified_rewrite",
+    "source_locator": "RA 7279 Section 28 (lists danger areas by type, no numeric setback) and Section 29 (LGU + NHA relocation duty); PD 1067 Article 51 (3m urban easement is a separate Water Code rule, not an RA 7279 danger-area threshold). Article body lea-plan-003-01 normalized.md last paragraph: 'Do not import... eviction-distance rules unless a separately audited source is provided.'",
+    "external_sources": [
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.pdf",
-        "sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
-        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
-        "locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+        "citation": "RA 7279 Sections 28 and 29 (UDHA)",
+        "url": "https://www.officialgazette.gov.ph/1992/03/24/republic-act-no-7279/"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.md",
-        "sha256": "sha256:5a118e6b9e678d495ffac7a715d08deb0787e5905105fe25b9847cb226af7080",
-        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
-        "locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+        "citation": "DHSUD RA 7279 full text",
+        "url": "https://dhsud.gov.ph/wp-content/uploads/Laws_Issuances/01_Laws/RA_7279.pdf"
       },
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
-        "sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
-        "source_id": "bp220-revised-irr-2008-local",
-        "locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
-        "sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
-        "source_id": "bp220-revised-irr-2008-local",
-        "locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
-      },
-      {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
-        "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
-        "source_id": "ra7279-urban-development-housing-act-local",
-        "locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
-        "sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
-        "source_id": "ra7279-urban-development-housing-act-local",
-        "locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
+        "citation": "PD 1067 Article 51",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_1067_1976.html"
       }
-    ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    ]
   },
   "proposed": {
-    "text": "Under the checked BP 220 source, which basic-needs sequence belongs in the design-standard reasoning?",
+    "text": "Which of the following areas is listed as a DANGER AREA under RA 7279 (Urban Development and Housing Act), Section 28, where eviction may be lawful?",
     "options": [
       {
         "id": "a",
-        "text": "Color, furniture, branding, lighting, and signage"
+        "text": "Esteros, railroad tracks, garbage dumps, riverbanks, shorelines, waterways, and other public places where occupation poses danger to life and property."
       },
       {
         "id": "b",
-        "text": "Water, movement and circulation, storm drainage, waste disposal, park or playground, and power"
+        "text": "Any private residential subdivision built before 1992, regardless of physical hazard."
       },
       {
         "id": "c",
-        "text": "Parking, leasing, marketing, escrow, and turnover"
+        "text": "Any land within 50 kilometers of an active fault line, with no other condition."
       },
       {
         "id": "d",
-        "text": "Air-conditioning, elevators, concierge, and retail frontage"
+        "text": "Any land owned by a government-owned or controlled corporation, regardless of hazard."
       }
     ],
-    "correct_option_id": "b",
+    "correct_option_id": "a",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "BP 220 lists basic settlement needs beginning with water, movement and circulation, storm drainage, waste disposal, park or playground, and power.",
-    "explanation": "These needs frame minimum standards for economic and socialized housing.",
-    "code_citation": "BP 220 refined markdown lines 130-150",
-    "bloom_level": "apply",
+    "rationale": {
+      "a": "Correct. RA 7279 Section 28 lists danger areas by type: esteros, railroad tracks, garbage dumps, riverbanks, shorelines, waterways, and other public places where the occupation poses danger to life and property. The statute does not specify a numeric setback; specific distances come from other codes (e.g., PD 1067 easements).",
+      "b": "Wrong. RA 7279 does not classify all pre-1992 subdivisions as danger areas.",
+      "c": "Wrong. RA 7279 does not impose a 50-kilometer fault-line buffer. Fault setbacks come from PHIVOLCS guidance (5-meter minimum) and CLUP integration, not from RA 7279.",
+      "d": "Wrong. Government ownership alone does not make land a danger area under RA 7279; the listed physical hazards do.",
+      "correct": "RA 7279 Section 28 enumerates danger areas by physical type. Numeric setback distances are not in RA 7279 itself; they come from related codes such as PD 1067. Section 28 safeguards and Section 29 relocation still apply even in danger-area evictions.",
+      "takeaway": "Do not attach a '3-meter' figure to RA 7279 danger areas. RA 7279 lists danger areas by type; numeric easements come from PD 1067 (Water Code) and other codes."
+    },
+    "explanation": "Article body lea-plan-003-01: 'Do not import... eviction-distance rules unless a separately audited source is provided.' RA 7279 Section 28 lists danger areas by type; PD 1067 supplies numeric easements by land classification.",
+    "code_citation": "RA 7279 Section 28; PD 1067 Article 51",
+    "bloom_level": "remember",
     "application_context": "code_interpretation",
     "practice_context": [
-      "housing law",
-      "bp220"
+      "RA 7279",
+      "danger areas",
+      "eviction"
     ],
-    "difficulty": 0.66,
-    "is_assessment": false,
-    "model_id": "BATCH-021-housing-003"
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
   }
 }

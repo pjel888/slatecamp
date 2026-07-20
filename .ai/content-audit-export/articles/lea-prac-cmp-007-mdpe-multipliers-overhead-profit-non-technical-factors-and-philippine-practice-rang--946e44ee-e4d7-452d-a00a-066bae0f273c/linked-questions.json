@@ -8,36 +8,37 @@
       "question_id": "6c238891-06d7-40cc-b7e3-dd87d108937d",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "Which MDPE multiplier range is appropriate for straightforward projects such as single-family residences in Philippine practice?",
+      "text": "Which MDPE multiplier range is supported by the checked SPP 202 source?",
       "options": [
         {
           "id": "a",
-          "text": "1.5–1.8"
+          "text": "1.5 to 2.5"
         },
         {
           "id": "b",
-          "text": "2.0–2.3"
+          "text": "2.7 to 3.2"
         },
         {
           "id": "c",
-          "text": "2.7–3.2"
+          "text": "3.2 to 3.5"
         },
         {
           "id": "d",
-          "text": "3.2–3.5"
+          "text": "3.5 to 4.0"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Understates multiplier range for even straightforward projects; 1.5–1.8 would likely not cover adequate overhead and profit.",
-        "c": "Overstates for straightforward projects; 2.7–3.2 applies to complex projects like high-rises.",
-        "d": "Significantly overstates; 3.2–3.5 applies to exceptionally complex or high-risk projects.",
-        "correct": "Straightforward projects (single-family residences, small commercial structures) typically use multipliers of 2.0–2.3 in Philippine architecture practice.",
-        "takeaway": "Straightforward projects (single-family, small commercial): multiplier = 2.0–2.3; defined scope, experienced clients, uncomplicated delivery."
+        "a": "The checked SPP 202 source states that the multiplier ranges from 1.5 to 2.5.",
+        "b": "This exceeds the checked source range.",
+        "c": "This exceeds the checked source range.",
+        "d": "This exceeds the checked source range.",
+        "correct": "The checked SPP 202 source states that the multiplier ranges from 1.5 to 2.5.",
+        "takeaway": "For Batch 105, do not use broader unsupported practice ranges."
       },
       "explanation": "Understates multiplier range for even straightforward projects; 1.5–1.8 would likely not cover adequate overhead and profit. Overstates for straightforward projects; 2.7–3.2 applies to complex projects like high-rises. Significantly overstates; 3.2–3.5 applies to exceptionally complex or high-risk projects. Straightforward projects (single-family residences, small commercial structures) typically use multipliers of 2.0–2.3 in Philippine architecture practice. Straightforward projects (single-family, small commercial): multiplier = 2.0–2.3; defined scope, experienced clients, uncomplicated delivery.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -51,44 +52,38 @@
       "model_id": "ALE-PRAC-CMP-007-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T16:21:47.253138+00:00",
+      "updated_at": "2026-07-20T01:13:28.934074+00:00",
       "content_hash": "sha256:f6427a6651499502a7a57d79f914995bf607f59670b72d6eee66dc0c379ae064"
     },
     {
       "question_id": "c345f793-1b09-4d19-9f2d-e045303bff54",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "What is the typical multiplier range for complex projects such as high-rise office buildings in Philippine practice?",
+      "text": "What is the source-backed MDPE multiplier range per SPP 202 Sec 5.2?",
       "options": [
         {
           "id": "a",
-          "text": "1.8–2.0"
+          "text": "1.0-1.4"
         },
         {
           "id": "b",
-          "text": "2.0–2.3"
+          "text": "1.5-2.5 per SPP 202 Sec 5.2"
         },
         {
           "id": "c",
-          "text": "2.7–3.2"
+          "text": "2.7-3.2"
         },
         {
           "id": "d",
-          "text": "3.5–4.0"
+          "text": "3.5-4.0"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Understates for high-rise complexity; 1.8–2.0 is appropriate for straightforward projects.",
-        "b": "Understates for high-rise complexity; 2.0–2.3 is appropriate for straightforward to moderate projects.",
-        "d": "Overstates; 3.5–4.0 exceeds the typical Philippine practice range and may price the architect out of competitive bidding.",
-        "correct": "Complex projects (high-rises, specialized facilities, institutional buildings) typically use multipliers of 2.7–3.2 in current Philippine architecture practice.",
-        "takeaway": "Complex projects (high-rises, specialized facilities): multiplier = 2.7–3.2; significant regulatory, structural, or coordination complexity."
-      },
+      "rationale": "SPP Document 202, Section 5.2 states that the MDPE multiplier ranges from 1.5 to 2.5, depending on office setup, overhead, the Architect's experience, and project complexity. The article body explicitly warns not to treat 2.8, 3.0, or 3.5 as source-backed MDPE multipliers; 2.7-3.2 is an exam trap. Source: PRBoA SPP 202 Sec 5.2 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
       "explanation": "Understates for high-rise complexity; 1.8–2.0 is appropriate for straightforward projects. Understates for high-rise complexity; 2.0–2.3 is appropriate for straightforward to moderate projects. Overstates; 3.5–4.0 exceeds the typical Philippine practice range and may price the architect out of competitive bidding. Complex projects (high-rises, specialized facilities, institutional buildings) typically use multipliers of 2.7–3.2 in current Philippine architecture practice. Complex projects (high-rises, specialized facilities): multiplier = 2.7–3.2; significant regulatory, structural, or coordination complexity.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -101,43 +96,44 @@
       "model_id": "ALE-PRAC-CMP-007-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T16:21:46.835131+00:00",
+      "updated_at": "2026-07-20T01:13:28.926808+00:00",
       "content_hash": "sha256:285e25c0ac3b1f91a4806ca32f4cb741789b2bb173b327e38e9f309ae58dfa74"
     },
     {
       "question_id": "79672571-9965-4604-b18d-9f4a18aa978b",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "What does firm overhead typically include?",
+      "text": "Which factor does SPP 202 identify as affecting the multiplier within the 1.5 to 2.5 range?",
       "options": [
         {
           "id": "a",
-          "text": "Only architect salaries, excluding any other operational costs"
+          "text": "Office setup, overhead, Architect experience, and project complexity"
         },
         {
           "id": "b",
-          "text": "Office rent, utilities, insurance, equipment depreciation, administrative staff, and professional memberships"
+          "text": "The Owner preferred paint color"
         },
         {
           "id": "c",
-          "text": "Only consultant fees, which are separate from other overhead costs"
+          "text": "The contractor bid bond amount only"
         },
         {
           "id": "d",
-          "text": "Only project-specific travel costs, not general travel expenses"
+          "text": "The number of parking slots only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Architect salaries are Direct Personnel Expense, not overhead; overhead is the cost of maintaining the firm infrastructure.",
-        "c": "Consultant fees retained as independent contractors are not overhead; they are separate project costs or part of the multiplier if embedded.",
-        "d": "Project-specific travel is a project cost, often included in non-technical factors or handled separately; it is not firm overhead.",
-        "correct": "Overhead includes fixed costs (office rent, insurance, licensing) and variable costs (supplies, software licenses, communications) required to operate the architecture firm.",
-        "takeaway": "Overhead (40–70% of DPE) covers: rent, utilities, insurance, equipment depreciation, admin staff, memberships, software, supplies, continuing education."
+        "a": "SPP 202 says the multiplier depends on office setup, overhead, Architect experience, and project complexity.",
+        "b": "This is not in the checked multiplier language.",
+        "c": "This is not the stated multiplier factor.",
+        "d": "This is not the stated multiplier factor.",
+        "correct": "SPP 202 says the multiplier depends on office setup, overhead, Architect experience, and project complexity.",
+        "takeaway": "Use the source factors rather than invented adjustment tables."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -151,30 +147,30 @@
       "model_id": "ALE-PRAC-CMP-007-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.931391+00:00",
       "content_hash": "sha256:434ed66a657197f2ace8da593227e22a2c6ab2913c612d7e5caeb54806a139e2"
     },
     {
       "question_id": "e8d5bd9e-79ea-460b-9487-c2e0050fdd80",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "An architect proposes MDPE with estimated DPE of 3 million pesos, using a multiplier of 2.8, resulting in an 8.4 million peso fee. The estimated PCC is 150 million pesos. What is the effective percentage, and how does this compare to a Group 3 percentage-of-PCC approach?",
+      "text": "An architect proposes MDPE with estimated DPE of PHP 3,000,000, using a source-backed multiplier of 2.0 (within the SPP 202 Sec 5.2 range of 1.5-2.5), resulting in a PHP 6,000,000 fee. The estimated PCC is PHP 150,000,000. What is the effective percentage, and how does this compare to a Group 3 percentage-of-PCC approach?",
       "options": [
         {
           "id": "a",
-          "text": "5.6% effective; below Group 3's 7% base rate, making MDPE more economical for the architect"
+          "text": "4.0% effective; below Group 3's base rate, making MDPE more economical for the architect on this scope"
         },
         {
           "id": "b",
-          "text": "5.6% effective; above Group 3's 7% base rate, making percentage-of-PCC more favorable"
+          "text": "4.0% effective; above Group 3's base rate, making percentage-of-PCC more favorable"
         },
         {
           "id": "c",
-          "text": "8.4% effective; exceeds Group 3's 7% base rate by 1.4%, making MDPE appropriate"
+          "text": "6.0% effective; exceeds Group 3's base rate, making MDPE inappropriate"
         },
         {
           "id": "d",
-          "text": "28% effective; excessive and inappropriate for any project group, indicating a calculation error"
+          "text": "20% effective; excessive and inappropriate for any project group, indicating a calculation error"
         }
       ],
       "correct_option_id": "a",
@@ -182,13 +178,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Reverses the comparison; 5.6% is below 7%, not above it.",
-        "c": "Miscalculates effective percentage as 8.4% (confusing total fee with effective percentage); correct calculation is 8.4M ÷ 150M = 5.6%.",
-        "d": "Incorrectly calculates 28% (perhaps 2.8 × 10 or similar error); correct calculation is 5.6%.",
-        "correct": "Effective percentage = 8.4 million ÷ 150 million = 5.6%. This is below Group 3's base DAEDS rate of 7%, meaning the MDPE fee is more economical for the architect than the percentage-of-PCC method would be for this project classification.",
-        "takeaway": "MDPE vs. percentage-of-PCC comparison: calculate effective % = (DPE × multiplier) ÷ PCC; compare to the appropriate group rate to determine which method is more favorable."
-      },
+      "rationale": "Fee = DPE x M = PHP 3,000,000 x 2.0 = PHP 6,000,000. Effective percentage = 6,000,000 / 150,000,000 = 4.0%. The multiplier 2.0 is within the SPP 202 Sec 5.2 range of 1.5-2.5; 2.8 is not source-backed and must not be used. Source: SPP 202 Sec 5.2 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "analyze",
@@ -201,44 +191,38 @@
       "model_id": "ALE-PRAC-CMP-007-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.925456+00:00",
       "content_hash": "sha256:892bf0b47cfe93192ee03588346a575cad8941e35e9dd17d58059c19dd3de89e"
     },
     {
       "question_id": "e5b1465f-86fe-4e33-a1a6-bbe6c557d297",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "What is the typical overhead multiplier component range for Philippine architecture firms?",
+      "text": "SPP 202 Sec 5.2 states the MDPE multiplier ranges from 1.5 to 2.5. Which statement about how the multiplier is broken down is source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "1.0–1.2"
+          "text": "SPP 202 gives only the total multiplier range of 1.5-2.5; it does not publish an overhead sub-range such as 1.4-1.7"
         },
         {
           "id": "b",
-          "text": "1.4–1.7"
+          "text": "SPP 202 fixes the overhead component at 1.4-1.7 of direct personnel cost"
         },
         {
           "id": "c",
-          "text": "1.8–2.0"
+          "text": "SPP 202 mandates a 0.30 profit add-on plus a 0.15 non-technical add-on"
         },
         {
           "id": "d",
-          "text": "2.0–2.5"
+          "text": "SPP 202 decomposes the multiplier into equal overhead and profit halves of 1.25 each"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Understates overhead; 1.0–1.2 would only represent 0–20% of DPE, insufficient for typical firm operations.",
-        "c": "Overstates overhead; 1.8–2.0 would represent 80–100% of DPE, beyond the typical 40–70% range.",
-        "d": "Significantly overstates; 2.0–2.5 would represent more than 100% of DPE, which is excessive for overhead alone.",
-        "correct": "Typical overhead represents 40–70% of direct personnel cost in Filipino architecture firms, translating to an overhead multiplier component of 1.4–1.7.",
-        "takeaway": "Overhead component = 1.4–1.7 (from 40–70% of DPE); emerging/lean firms use 1.3–1.4, large firms use 1.6–1.7."
-      },
+      "rationale": "SPP Document 202, Section 5.2 gives only the total multiplier range of 1.5-2.5, with qualitative factors (office setup, overhead, the Architect's experience, project complexity). It does not decompose the multiplier into an overhead sub-range of 1.4-1.7 or any other fixed sub-components; such decompositions are exam traps. Source: SPP 202 Sec 5.2 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
       "explanation": "Understates overhead; 1.0–1.2 would only represent 0–20% of DPE, insufficient for typical firm operations. Overstates overhead; 1.8–2.0 would represent 80–100% of DPE, beyond the typical 40–70% range. Significantly overstates; 2.0–2.5 would represent more than 100% of DPE, which is excessive for overhead alone. Typical overhead represents 40–70% of direct personnel cost in Filipino architecture firms, translating to an overhead multiplier component of 1.4–1.7. Overhead component = 1.4–1.7 (from 40–70% of DPE); emerging/lean firms use 1.3–1.4, large firms use 1.6–1.7.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "understand",
@@ -251,44 +235,38 @@
       "model_id": "ALE-PRAC-CMP-007-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T16:21:46.973308+00:00",
+      "updated_at": "2026-07-20T01:13:28.932418+00:00",
       "content_hash": "sha256:da6e5471091e418cedbca242fb6991cd216f6242c6ab4267c6ae40dc8f3cdb11"
     },
     {
       "question_id": "5cf56df2-5967-4f67-98ab-d325ee7011c0",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "How should an architect adjust the base multiplier for a project with innovative design and high regulatory complexity?",
+      "text": "How should an architect select an MDPE multiplier for a project with innovative design and high regulatory complexity, per SPP 202 Sec 5.2?",
       "options": [
         {
           "id": "a",
-          "text": "Reduce the multiplier to make the fee more competitive, potentially sacrificing profit margins"
+          "text": "Select a multiplier within the source-backed 1.5-2.5 range, moving higher for greater overhead, experience, or complexity; SPP 202 lists qualitative factors and does not publish add-on amounts"
         },
         {
           "id": "b",
-          "text": "Add 0.1–0.3 for innovation and 0.1–0.2 for regulatory complexity to the base multiplier"
+          "text": "Add 0.1-0.3 for innovation and 0.1-0.2 for regulatory complexity to the base multiplier"
         },
         {
           "id": "c",
-          "text": "Use the base multiplier without adjustment; complexity is already covered, ensuring standard profitability"
+          "text": "Use a fixed multiplier of 2.8 for all innovative projects"
         },
         {
           "id": "d",
-          "text": "Double the base multiplier regardless of project factors, which may lead to client resistance"
+          "text": "Always use the lowest multiplier (1.5) regardless of complexity, to stay competitive"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Underprices complex projects by reducing multiplier; competitive pressure should not override cost recovery and fair compensation.",
-        "c": "Ignores project-specific factors; base multiplier assumes straightforward scope, so complexity requires upward adjustment.",
-        "d": "Doubles the multiplier without proportionality; specific adjustments (0.1–0.3 total) are more appropriate than doubling.",
-        "correct": "Project-specific adjustments include adding 0.1–0.3 for innovative design and 0.1–0.2 for high regulatory complexity to prevent underpricing of demanding projects.",
-        "takeaway": "Multiplier adjustments: innovation +0.1–0.3, regulatory complexity +0.1–0.2, phased delivery +0.1–0.2, demanding clients +0.1–0.2, geographic dispersion +0.1–0.15."
-      },
+      "rationale": "SPP Document 202, Section 5.2 states the MDPE multiplier ranges from 1.5 to 2.5 and lists only qualitative factors (office setup, overhead, the Architect's experience, project complexity). It does NOT publish a +0.1-0.3 innovation adjustment, a +0.1-0.2 regulatory adjustment, or any fixed add-on schedule. Such add-ons are exam traps. Source: SPP 202 Sec 5.2 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -301,30 +279,30 @@
       "model_id": "ALE-PRAC-CMP-007-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.927796+00:00",
       "content_hash": "sha256:d97cdbcdd8868a0da479a407cd2068baeb7bac5b08592746e2d291745717dbcd"
     },
     {
       "question_id": "330e717d-6e2f-42e1-835e-d6de97657b7f",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "If a firm has calculated overhead at 60% of direct personnel cost and targets 25% profit margin, what multiplier components result?",
+      "text": "Which option is an unsupported multiplier adjustment rule for this article?",
       "options": [
         {
           "id": "a",
-          "text": "1.6 overhead + 0.25 profit = 1.85"
+          "text": "Increase by 0.1 to 0.3 for innovation and 0.1 to 0.2 for regulatory complexity"
         },
         {
           "id": "b",
-          "text": "1.6 overhead + 0.6 profit = 2.2"
+          "text": "Use 1.5 to 2.5 depending on office setup, overhead, experience, and project complexity"
         },
         {
           "id": "c",
-          "text": "1.6 overhead + 0.4 profit = 2.0"
+          "text": "Define M as overhead and reasonable profit"
         },
         {
           "id": "d",
-          "text": "0.6 overhead + 0.25 profit = 0.85"
+          "text": "Disclose the rates and multiplier before agreement"
         }
       ],
       "correct_option_id": "a",
@@ -333,11 +311,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Confuses profit margin with a percentage that would be multiplied differently; 25% profit is 0.25, not 0.6.",
-        "c": "Treats 25% profit as 40% by unclear rounding or calculation; 25% profit is precisely 0.25 as a multiplier component.",
-        "d": "Confuses 60% (the overhead percentage) with 0.6 (a multiplier component); 60% = 1.6 multiplier, not 0.6.",
-        "correct": "Overhead of 60% translates to multiplier component of 1.6. Profit margin of 25% translates to component of 0.25. Total = 1.85 (before adding non-technical factors).",
-        "takeaway": "60% overhead = 1.6 multiplier; 25% profit = 0.25 multiplier; together = 1.85 (non-technical factors add 0.1–0.25 more)."
+        "a": "The checked source does not provide fixed decimal add-ons for innovation or regulatory complexity.",
+        "b": "This follows the checked source wording.",
+        "c": "This follows the formula definition.",
+        "d": "This follows the checked source wording.",
+        "correct": "The checked source does not provide fixed decimal add-ons for innovation or regulatory complexity.",
+        "takeaway": "The source gives qualitative factors and a 1.5 to 2.5 range."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -351,44 +330,38 @@
       "model_id": "ALE-PRAC-CMP-007-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.933258+00:00",
       "content_hash": "sha256:3e1eb3e54079fdcdbbb3f639e3a910dc870400b41f3eadb6b4c78fbf67f30bbd"
     },
     {
       "question_id": "1b739814-7580-462e-83d4-7f4aca631188",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "A firm estimates its overhead at 55% of direct personnel cost and targets 30% profit. Non-technical factors are estimated at 15%. What is the total multiplier?",
+      "text": "A firm agrees an MDPE multiplier of 2.0 (within the SPP 202 Sec 5.2 range of 1.5-2.5) on a direct personnel cost of PHP 900,000. What is the Fee before reimbursables?",
       "options": [
         {
           "id": "a",
-          "text": "1.55"
+          "text": "PHP 450,000"
         },
         {
           "id": "b",
-          "text": "2.0"
+          "text": "PHP 900,000"
         },
         {
           "id": "c",
-          "text": "2.15"
+          "text": "PHP 1,800,000"
         },
         {
           "id": "d",
-          "text": "2.5"
+          "text": "PHP 2,000,000 (from a 1.55 + 0.30 + 0.15 decomposition)"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Calculates only the overhead component (1.55), omitting profit and non-technical factors.",
-        "c": "Calculates 1.55 + 0.30 + 0.30 (incorrect profit calculation) = 2.15; misplaces non-technical factor.",
-        "d": "Overstates by 0.5; this may confuse percentage with different multiplier components or use incorrect arithmetic.",
-        "correct": "Overhead: 55% = 1.55 multiplier component; Profit: 30% = 0.30 component; Non-technical: 15% = 0.15 component. Total = 1.55 + 0.30 + 0.15 = 2.0.",
-        "takeaway": "Multiplier decomposition: overhead 1.55 + profit 0.30 + non-technical 0.15 = 2.0; typical for straightforward to moderate projects."
-      },
+      "rationale": "SPP 202 Sec 5.2 gives the total multiplier range of 1.5-2.5 and does NOT decompose it into 1.55 overhead + 0.30 profit + 0.15 non-technical; that decomposition is an exam trap the article body rejects. Fee = DPE x M = PHP 900,000 x 2.0 = PHP 1,800,000 before reimbursables. Source: SPP 202 Sec 5.2 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
       "explanation": "Calculates only the overhead component (1.55), omitting profit and non-technical factors. Calculates 1.55 + 0.30 + 0.30 (incorrect profit calculation) = 2.15; misplaces non-technical factor. Overstates by 0.5; this may confuse percentage with different multiplier components or use incorrect arithmetic. Overhead: 55% = 1.55 multiplier component; Profit: 30% = 0.30 component; Non-technical: 15% = 0.15 component. Total = 1.55 + 0.30 + 0.15 = 2.0. Multiplier decomposition: overhead 1.55 + profit 0.30 + non-technical 0.15 = 2.0; typical for straightforward to moderate projects.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -401,43 +374,44 @@
       "model_id": "ALE-PRAC-CMP-007-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T16:21:47.110113+00:00",
+      "updated_at": "2026-07-20T01:13:28.930480+00:00",
       "content_hash": "sha256:31425c161f761794115aba35d68d1850def9077c13961f1384c6a61fef97bf11"
     },
     {
       "question_id": "2e5a5502-1f77-4d4d-a09d-e0f3e5bbaef0",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "How should an architect present the MDPE multiplier to a client to maximize acceptance?",
+      "text": "Which statement is source-safe about MDPE and creative design?",
       "options": [
         {
           "id": "a",
-          "text": "State the multiplier without explanation; clients do not need to understand it, which is a risky approach"
+          "text": "MDPE is source-limited to non-creative work because creative design value cannot be measured merely by time spent"
         },
         {
           "id": "b",
-          "text": "Compare the multiplier to other firms' multipliers, which may not provide a full context for its calculation"
+          "text": "MDPE is mandatory for all creative design work"
         },
         {
           "id": "c",
-          "text": "Present the multiplier as derived from documented overhead percentage, reasonable profit target aligned with project risk, and non-technical project factors"
+          "text": "Creative design is excluded from professional service value"
         },
         {
           "id": "d",
-          "text": "Explain that the multiplier is fixed by SPP 202 standards and cannot be negotiated, which may not be entirely accurate"
+          "text": "Creative design is always paid as contractor profit"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Lacks transparency and invites client skepticism; explained fees are more readily accepted.",
-        "b": "Shifts focus to competitive comparison rather than cost-based justification; clients prefer understanding the architect's own cost structure.",
-        "d": "Incorrectly implies SPP 202 fixes multipliers when it only provides ranges; multipliers are negotiated based on firm and project specifics.",
-        "correct": "Transparent MDPE proposals should document the multiplier as derived from firm overhead, profit targets, and project-specific non-technical factors. This approach helps clients understand the fee basis and increases acceptance.",
-        "takeaway": "Present multiplier justification: show overhead % + profit target + project-specific factors; shifts discussion from 'Is 2.8 reasonable?' to 'Do these costs match actual requirements?'"
+        "a": "SPP 202 says MDPE applies to non-creative work and does not account for creative work because design value cannot be measured by time spent.",
+        "b": "The checked source says MDPE does not account for creative work.",
+        "c": "The source does not devalue creative design.",
+        "d": "Contractor profit is unrelated to this Architect compensation method.",
+        "correct": "SPP 202 says MDPE applies to non-creative work and does not account for creative work because design value cannot be measured by time spent.",
+        "takeaway": "This limitation explains why MDPE is not universal."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -451,44 +425,38 @@
       "model_id": "ALE-PRAC-CMP-007-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.928683+00:00",
       "content_hash": "sha256:d905bcddc39622b6f9a1b4ac5d6e37902bab264316216ff5dc391c106f37c9a2"
     },
     {
       "question_id": "04d1074d-a52a-4812-8150-5fa13dee221b",
       "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
       "topic_id": "cb048764-c6ca-439a-bf3e-a862d066562f",
-      "text": "What are the three primary components of an MDPE multiplier?",
+      "text": "Per SPP 202 Sec 5.2, how is the MDPE multiplier M defined?",
       "options": [
         {
           "id": "a",
-          "text": "Salary, benefits, and taxes"
+          "text": "M is the multiplier to account for overhead and reasonable profit, ranging from 1.5 to 2.5"
         },
         {
           "id": "b",
-          "text": "Overhead, profit, and non-technical factors"
+          "text": "M is a three-component framework of overhead, profit, and non-technical factors"
         },
         {
           "id": "c",
-          "text": "Direct costs, indirect costs, and contingency"
+          "text": "M is the reimbursable expense added after the fee"
         },
         {
           "id": "d",
-          "text": "Consulting fees, management fees, and travel expenses"
+          "text": "M is a fixed statutory multiplier of 3.0 for all projects"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses DPE components (salary and benefits) with multiplier components; salary and benefits are the base DPE, not part of the multiplier.",
-        "c": "Uses cost accounting terminology that does not align with MDPE multiplier structure.",
-        "d": "Focuses on project deliverables rather than the firm-level costs and profit that the multiplier covers.",
-        "correct": "MDPE multiplier components are: overhead (fixed and variable costs of operating the firm), profit (reasonable return on investment), and non-technical factors (project management, coordination, administrative costs beyond direct design).",
-        "takeaway": "MDPE multiplier breaks down as: overhead (1.4–1.7 for 40–70% of DPE) + profit (0.3–0.7 for 15–35% margin) + non-technical (0.2–0.5 for 10–25% of effort)."
-      },
+      "rationale": "SPP Document 202, Section 5.2 defines M as the multiplier used to account for overhead and reasonable profit, with a source-backed range of 1.5 to 2.5 and qualitative factors (office setup, overhead, Architect's experience, project complexity). SPP 202 does NOT define a three-component (overhead + profit + non-technical) framework; that framework is an exam trap. Source: SPP 202 Sec 5.2 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "remember",
@@ -501,7 +469,7 @@
       "model_id": "ALE-PRAC-CMP-007-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.929525+00:00",
       "content_hash": "sha256:8c8bf4baac72e222440c0dc3faddf107887816405225f559c64f71f306112f6c"
     }
   ]

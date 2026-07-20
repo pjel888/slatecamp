@@ -1,10 +1,10 @@
 {
   "question_id": "6250c528-080c-4288-a507-99d0eab1ffcf",
   "baseline_hash": "sha256:8bda36d85fc9b695c15ff29f445bf2af7de9cdc797e5289dd53363552cea94b9",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
     "parent_article_slug": "top-50-traps-2024-irr",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "What is the minimum riser and tread rule for accessible stairs in the checked 2024 BP 344 IRR text?",
+    "text": "What is the maximum ramp run between landings under BP 344 Philippine standard, and how does this differ from the U.S. ADA figure that is commonly misapplied?",
     "options": [
       {
-        "id": "a",
-        "text": "Riser not more than 150 mm and tread not less than 300 mm"
+        "id": "A",
+        "text": "Philippines: 9000 mm maximum; U.S. ADA: 10500 mm — the Philippine standard is more restrictive"
       },
       {
-        "id": "b",
-        "text": "Riser not more than 200 mm and tread not less than 250 mm"
+        "id": "B",
+        "text": "Philippines: 10500 mm maximum; U.S. ADA: 9000 mm — the Philippine standard allows longer runs"
       },
       {
-        "id": "c",
-        "text": "Riser not more than 100 mm and tread not less than 400 mm"
+        "id": "C",
+        "text": "Philippines: 7500 mm maximum; U.S. ADA: 9000 mm — both standards require landings more frequently than most reviewers teach"
       },
       {
-        "id": "d",
-        "text": "Riser not more than 180 mm and tread not less than 280 mm"
+        "id": "D",
+        "text": "Philippines: 10500 mm maximum; U.S. ADA: 10500 mm — both standards use the same maximum ramp run length"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "The checked stair provision uses 150 mm maximum riser and 300 mm minimum tread.",
-    "explanation": "The checked stair provision uses 150 mm maximum riser and 300 mm minimum tread.",
-    "code_citation": "BP 344 2024 IRR, accessible stairs",
-    "bloom_level": "apply",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Top 50 Traps: 2024 IRR",
-      "LEA Accessibility Code Review"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-top-50-traps-2024-irr-004"
+    "correct_option_id": "B",
+    "rationale": {
+      "summary": "Trap #2: Philippines (BP 344) allows 10500 mm maximum ramp run; U.S. ADA uses 9000 mm.",
+      "explanation": "Trap #2 in the article. Philippine BP 344 IRR specifies a maximum ramp run of 10,500 mm (10.5 m) before a rest landing is required. U.S. ADA specifies 9,000 mm (9 m). Philippine reviewers often incorrectly cite the ADA figure of 9 m. The Philippine standard actually allows longer runs than ADA. This is counterintuitive — many assume the Philippine standard would be equal or more restrictive, but the 10.5 m figure is the correct Philippine value.",
+      "common_misconceptions": [
+        "Using the ADA's 9000 mm figure as the Philippine standard — BP 344 specifies the longer 10500 mm",
+        "Assuming Philippine standards are always more restrictive than ADA — the ramp run maximum is actually more permissive"
+      ]
+    },
+    "explanation": "Philippines: 10500 mm max ramp run (not the ADA's 9000 mm) — a frequently misapplied foreign standard.",
+    "code_citation": "BP 344 IRR, Ramps section; Trap #2",
+    "bloom_level": "remember",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.75,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

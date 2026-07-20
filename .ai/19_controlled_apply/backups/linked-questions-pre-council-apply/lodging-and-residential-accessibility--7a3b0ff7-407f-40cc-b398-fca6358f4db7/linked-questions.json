@@ -1,0 +1,810 @@
+{
+  "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:68acb7b6eec16504cd06795c5d3851980189538add8ff66675f512eec52cee25",
+  "question_count": 16,
+  "questions": [
+    {
+      "question_id": "7b43399b-8303-4658-8b42-def83d33a673",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Lodging and Residential Accessibility\", if a project requires 620 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "620 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "620 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "620 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "620 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 620 mm as the requirement. Context: s silent. The guest — a Deaf traveler — cannot hear the smoke alarm. The bed is ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:10.93151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c9ee30ced85dadb36421cadf25ad72254bf2cfde028737305430a9474efede99"
+    },
+    {
+      "question_id": "0f94cee0-177b-4f10-ba6e-cf1303fefaf3",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The mnemonic \"FIRE\" presented in \"Lodging and Residential Accessibility\" helps remember:",
+      "options": [
+        {
+          "id": "A",
+          "text": "FIRE"
+        },
+        {
+          "id": "C",
+          "text": "An outdated standard no longer in use"
+        },
+        {
+          "id": "D",
+          "text": "A different concept from another subject area"
+        },
+        {
+          "id": "E",
+          "text": "A trap commonly tested on the ALE"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The mnemonic \"FIRE\" was specifically designed to help remember FIRE.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:10.93151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dcceb1cf666720a489d8702d0f4bfcd758dab206ee2afa40acc621e7d6f873a1"
+    },
+    {
+      "question_id": "bac24e47-273e-45b9-a925-b7b5db529244",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "BP 344 Section 17.8 specifies visual fire alarm strobes for accessible guest rooms. Which combination of specifications is entirely correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Red lens, minimum 3 flashes per second, minimum 2 candelas, word 'FIRE' on lens"
+        },
+        {
+          "id": "B",
+          "text": "White lens, maximum 3 flashes per second, minimum 2 candelas, word 'FIRE' on lens"
+        },
+        {
+          "id": "C",
+          "text": "White lens, minimum 5 flashes per second, minimum 2 candelas, word 'ALARM' on lens"
+        },
+        {
+          "id": "D",
+          "text": "Clear lens, maximum 3 flashes per second, minimum 5 candelas, word 'FIRE' on lens"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 17.8: white lens, ≤3 flashes/sec, ≥2 candelas, 'FIRE' on lens.",
+        "explanation": "BP 344 2024 IRR Section 17.8 specifies all four parameters: (1) white lens — not red, which is counterintuitive since fire equipment is traditionally red; (2) maximum 3 flashes per second — a ceiling, not a minimum, to prevent triggering photosensitive epilepsy; (3) minimum 2 candelas luminous intensity; and (4) the word 'FIRE' visible on the lens to distinguish it from notification lights.",
+        "common_misconceptions": [
+          "Assuming the lens is red because fire equipment is traditionally red — it is white for maximum contrast",
+          "Confusing 'maximum 3 flashes/sec' with 'minimum 3 flashes/sec' — exceeding 3 Hz risks epileptic seizures"
+        ]
+      },
+      "explanation": "All four strobe parameters must be recalled exactly: white lens, ≤3 Hz, ≥2 candelas, 'FIRE' label.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.8",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e3d24ef64772bfe1bd9405123589ef3cf36609f444a90e6183955172533c73c"
+    },
+    {
+      "question_id": "f060aa7d-88d0-4768-870f-235be6a50c85",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An accessible guest room has a bed that is 550 mm from the floor to the top of the mattress. Under BP 344 Section 17.5, which statement correctly evaluates this bed height?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bed complies because 550 mm falls within the acceptable transfer height range for wheelchair users"
+        },
+        {
+          "id": "B",
+          "text": "The bed does not comply because the maximum allowed bed height is 500 mm above finished floor"
+        },
+        {
+          "id": "C",
+          "text": "The bed does not comply because the minimum bed height is 600 mm to allow clearance below the frame"
+        },
+        {
+          "id": "D",
+          "text": "The bed complies because BP 344 only regulates bed width, not bed height, in accessible rooms"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 Sec. 17.5 caps bed height at 500 mm; 550 mm exceeds this limit.",
+        "explanation": "BP 344 2024 IRR Section 17.5 sets the maximum bed height at 500 mm from the floor to the top of the mattress. This is calibrated to the average wheelchair seat height of 480–520 mm, enabling a lateral slide transfer from wheelchair to bed without lifting body weight. A bed at 550 mm is 50 mm above the maximum, constituting a violation.",
+        "common_misconceptions": [
+          "Assuming 550 mm is within an acceptable tolerance range — the code sets a hard maximum of 500 mm",
+          "Believing BP 344 regulates width rather than height for accessible room beds"
+        ]
+      },
+      "explanation": "500 mm is the hard maximum bed height enabling wheelchair lateral transfer; 550 mm is a clear violation.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.5",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b826e5a5b0cd4fd84c55fc7a875f788bafd427cfe8f9038833432d5d262b712b"
+    },
+    {
+      "question_id": "1e4c4919-8a77-4283-8338-4a255786c6d7",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A 60-room government-owned hotel is being designed. What is the minimum number of accessible guest rooms required under the BP 344 2024 IRR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 accessible rooms, applying the 2024 IRR's flat 2% rate for all lodging facilities"
+        },
+        {
+          "id": "B",
+          "text": "3 accessible rooms, calculated at the old tiered formula of 1 per 50 rooms"
+        },
+        {
+          "id": "C",
+          "text": "6 accessible rooms, calculated at the 10% rate for government-owned properties"
+        },
+        {
+          "id": "D",
+          "text": "4 accessible rooms, applying the 5% rate for publicly operated facilities"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Government-owned lodging requires 10% accessible rooms: 10% × 60 = 6.",
+        "explanation": "BP 344 2024 IRR Section 17 establishes two distinct quotas: 2% for private lodging and 10% for government-owned lodging. For a 60-room government hotel: 60 × 10% = 6 accessible rooms. This higher standard reflects the public trust obligation of government to model and demonstrate accessibility consistent with RA 7277's mandate on state responsibility.",
+        "common_misconceptions": [
+          "Applying the private hotel rate (2%) to a government facility — the correct rate is 10%",
+          "Using the old tiered formula instead of the 2024 IRR flat percentage"
+        ]
+      },
+      "explanation": "Government-owned lodging requires 10% accessible rooms; 10% of 60 = 6 rooms required.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2699aab2d00547e17586ad1f38d0e218591f1a2436a98230db1fe14c1f863c93"
+    },
+    {
+      "question_id": "e5aea3cc-7654-4fcf-852b-6e6d688f26e2",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A Deaf guest cannot be learted by the building fire alarm. Beyond visual strobe alarms, what additional device does BP 344 Section 17.10 specifically require in accessible guest rooms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A flashing doorbell light connected to the room notification system"
+        },
+        {
+          "id": "B",
+          "text": "A vibrating pillow or bed alarm connected to the building fire alarm system"
+        },
+        {
+          "id": "C",
+          "text": "A secondary audible alarm at 90 decibels minimum within the sleeping area"
+        },
+        {
+          "id": "D",
+          "text": "A tactile paging device clipped to the guest's personal belongings"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 17.10 requires a vibrating pillow or bed alarm for Deaf guests.",
+        "explanation": "BP 344 2024 IRR Section 17.10 requires a vibrating pillow or bed alarm connected to the building fire alarm system, specifically to serve Deaf and hard-of-hearing guests who may not respond to audible alarms or even visual strobes while asleep. Visual strobes serve waking Deaf users; the vibrating alarm serves sleeping Deaf users. Both must coexist in the same accessible room.",
+        "common_misconceptions": [
+          "Assuming visual strobe alarms alone satisfy the requirement for Deaf guests — vibrating alarms are also required",
+          "Confusing room door notification systems with fire alarm systems"
+        ]
+      },
+      "explanation": "Visual strobes serve waking Deaf users; vibrating pillow/bed alarms serve sleeping Deaf users — both are required.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.10",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6832aecc325054c40172517c0b0ca3a2c791e22c4081a42c547b8e871e747125"
+    },
+    {
+      "question_id": "1dda5f6b-650b-4c36-b4a6-925e43529790",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 Section 17.4, electrical outlets in accessible guest rooms must be installed at a minimum height above finished floor. What is that minimum height, and why?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm AFF minimum, to keep outlets below the standard wheelchair armrest height"
+        },
+        {
+          "id": "B",
+          "text": "600 mm AFF minimum, to align with the standard forward-reach zone for seated users"
+        },
+        {
+          "id": "C",
+          "text": "450 mm AFF minimum, placing outlets above floor level within the seated reach range"
+        },
+        {
+          "id": "D",
+          "text": "750 mm AFF minimum, consistent with accessible counter and table surface heights"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 17.4 requires electrical outlets at minimum 450 mm AFF.",
+        "explanation": "BP 344 2024 IRR Section 17.4 sets the minimum electrical outlet height at 450 mm AFF. This places outlets above floor level (prohibiting floor-level installations) while remaining within the seated forward-reach range of a wheelchair user. Outlets at 300 mm AFF would require the user to bend dangerously forward; outlets at 600 mm or higher begin to push beyond the comfortable lower reach zone for some users.",
+        "common_misconceptions": [
+          "Confusing outlet height (450 mm min) with hanger rack height (1200 mm) or bed height (500 mm max)",
+          "Selecting 300 mm AFF, which is explicitly prohibited as it places outlets at effectively floor level"
+        ]
+      },
+      "explanation": "450 mm AFF keeps outlets above floor level while remaining within seated wheelchair reach range.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.4",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c5457ddba548d9f37aabd55d4fddfb34f4c453a51428ebc0f73d5eff050eccfc"
+    },
+    {
+      "question_id": "5c6c5865-1f90-471f-a8d0-6dd17d29813c",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A 300-room private hotel was built under the old BP 344 IRR. How many accessible rooms were required under the old tiered formula, and how many are required under the 2024 IRR? Which law requires more?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Old IRR: 5 rooms; 2024 IRR: 6 rooms — the 2024 IRR requires more accessible rooms"
+        },
+        {
+          "id": "B",
+          "text": "Old IRR: 4 rooms; 2024 IRR: 6 rooms — the 2024 IRR requires more accessible rooms"
+        },
+        {
+          "id": "C",
+          "text": "Old IRR: 6 rooms; 2024 IRR: 4 rooms — the old IRR was more restrictive for large hotels"
+        },
+        {
+          "id": "D",
+          "text": "Old IRR: 4 rooms; 2024 IRR: 4 rooms — both rules yield the same result for 300-room hotels"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Old IRR: 3 + (150/100 = 1.5→1) = 4; 2024 IRR: 300 × 2% = 6. The 2024 IRR requires more.",
+        "explanation": "Under the old tiered formula: 3 rooms for the first 150 rooms + 1 for the next 150 (150/100 = 1.5, round to 1) = 4 rooms. Under the 2024 IRR flat 2% rate: 300 × 0.02 = 6 rooms. For large hotels, the 2024 IRR consistently demands more accessible rooms than the old tiered formula because the old formula's rate dropped below 2% for hotels over 150 rooms.",
+        "common_misconceptions": [
+          "Rounding 150/100 = 1.5 up to 2 additional rooms for a total of 5 — the standard rounding for the old formula gives 1 additional room",
+          "Assuming the two formulas always yield similar results — they diverge significantly for large hotels"
+        ]
+      },
+      "explanation": "Old IRR yields 4 rooms for a 300-room hotel; 2024 IRR yields 6 rooms — the new law is more demanding at scale.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17; BP 344 Old IRR",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b61d1074b55359910a1a21dab81277019332912e6905127a70bcc6196ecac188"
+    },
+    {
+      "question_id": "2e9d07d9-1424-4b4b-9d5d-fac65f8e09e4",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 Section 17.2 and 17.3, where must light switches in accessible guest rooms be located?",
+      "options": [
+        {
+          "id": "A",
+          "text": "At 900 mm AFF and 300 mm from the latch side of the door frame"
+        },
+        {
+          "id": "B",
+          "text": "At 1200 mm AFF and 200 mm from the latch side of the door frame"
+        },
+        {
+          "id": "C",
+          "text": "At 1200 mm AFF and 200 mm from the hinge side of the door frame"
+        },
+        {
+          "id": "D",
+          "text": "At 1000 mm AFF and 400 mm from the latch side of the door frame"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Switches: 1200 mm AFF (Sec. 17.2) and 200 mm from the latch side (Sec. 17.3).",
+        "explanation": "BP 344 2024 IRR specifies two distinct requirements for accessible light switches: height at 1200 mm AFF (Section 17.2) and lateral position at 200 mm from the latch side of the door frame (Section 17.3). The latch side — not the hinge side — is the operative reference. This placement ensures the switch is reachable when a wheelchair user approaches from the corridor and simultaneously turns the door handle.",
+        "common_misconceptions": [
+          "Confusing the latch side with the hinge side as the positioning reference",
+          "Selecting 900 mm AFF, which applies to other reach-range standards, not light switches"
+        ]
+      },
+      "explanation": "Switches at 1200 mm AFF positioned 200 mm from the latch side allow simultaneous door operation and switching.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.2–17.3",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0c6d9082cee4549a66f0ce52756938bf0348dda6e74f162cf6a2c273d3352370"
+    },
+    {
+      "question_id": "c3a684e7-000f-4fd2-95f1-4f86cb08272f",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under the BP 344 2024 IRR, what percentage of total guest rooms in a private hotel must be accessible?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1% of total guest rooms, as mandated by the original BP 344 accessibility provisions"
+        },
+        {
+          "id": "B",
+          "text": "2% of total guest rooms, as a flat percentage under the 2024 IRR revision"
+        },
+        {
+          "id": "C",
+          "text": "5% of total guest rooms, reflecting the strengthened 2024 IRR requirements"
+        },
+        {
+          "id": "D",
+          "text": "10% of total guest rooms, consistent with the government-owned facility standard"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The 2024 IRR mandates 2% of total guest rooms for private hotels.",
+        "explanation": "BP 344 2024 IRR Section 17 sets a flat rate of 2% of total guest rooms for private lodging establishments. The old IRR used a tiered formula (1 per 50 up to 150 rooms, then +1 per 100 above), but the 2024 revision replaced this with the simpler 2% flat rate. The 10% figure applies exclusively to government-owned lodging facilities.",
+        "common_misconceptions": [
+          "Confusing the private hotel quota (2%) with the government-owned facility quota (10%)",
+          "Applying the old tiered formula instead of the 2024 flat percentage"
+        ]
+      },
+      "explanation": "The 2024 IRR replaced the old tiered formula with a simple 2% flat rate for private hotels.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:66a17cf4d3d1735660975f9a1b80cccdc4ddd546389956e6eac61daf2a680871"
+    },
+    {
+      "question_id": "5248ad1a-be30-495a-a1e0-649c4d03ce2f",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A wheelchair-level peephole is required in accessible guest rooms under BP 344. At what height above finished floor must this peephole be installed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "800 mm AFF, which is the standard wheelchair eye-level height"
+        },
+        {
+          "id": "B",
+          "text": "1200 mm AFF, consistent with the reach range for light switches"
+        },
+        {
+          "id": "C",
+          "text": "1000 mm AFF, to serve a seated wheelchair user's line of sight"
+        },
+        {
+          "id": "D",
+          "text": "1500 mm AFF, which is the standard standing eye-level height"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The accessible peephole is at 1000 mm AFF under Sec. 17.1.",
+        "explanation": "BP 344 2024 IRR Section 17.1 requires the lower (wheelchair-accessible) peephole at 1000 mm above finished floor. The standard peephole for standing users is approximately 1500 mm, which is unusable by a seated wheelchair user. The 1000 mm height corresponds to seated eye level. This is a frequently tested distinction on the ALE.",
+        "common_misconceptions": [
+          "Confusing the standard standing peephole height (1500 mm) with the accessible peephole height (1000 mm)",
+          "Selecting 1200 mm, which is the light switch height, not the peephole height"
+        ]
+      },
+      "explanation": "The accessible peephole at 1000 mm serves wheelchair users; the standard peephole at ~1500 mm is too high for seated use.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f308c53ba1ee13d9023706d1148d7d2f89fe475b4d8e505da44f7c436a808f6"
+    },
+    {
+      "question_id": "cc055513-8fad-4a90-b627-9bc3dd3d4d23",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect reviews an accessible hotel room and finds: round door knobs, a standard peephole at 1500 mm, outlets at 300 mm AFF, and a bed at 550 mm height. Evaluating against BP 344 Sec. 17, how many distinct violations are present?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One violation — only the bed height exceeds the 500 mm maximum, which is a critical factor in accessibility compliance"
+        },
+        {
+          "id": "B",
+          "text": "Two violations — round knobs and the bed height are the only non-compliant elements, as these directly affect usability for individuals with disabilities"
+        },
+        {
+          "id": "C",
+          "text": "Four violations — round knobs, peephole height, outlet height, and bed height each violate distinct provisions"
+        },
+        {
+          "id": "D",
+          "text": "Three violations — round knobs, outlet height, and bed height fail; peephole height is not regulated under the specific provisions of BP 344"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "All four elements violate distinct BP 344 Sec. 17 provisions — four separate violations.",
+        "explanation": "Each element violates a distinct provision: (1) Round door knobs violate Sec. 17.1 — lever handles are required. (2) Peephole at 1500 mm violates Sec. 17.1 — the accessible peephole must be at 1000 mm. (3) Outlets at 300 mm AFF violate Sec. 17.4 — the minimum is 450 mm. (4) Bed at 550 mm violates Sec. 17.5 — the maximum is 500 mm. Every one of these four elements constitutes an independently cited violation.",
+        "common_misconceptions": [
+          "Assuming peephole height is not regulated — BP 344 Sec. 17.1 explicitly requires a lower peephole at 1000 mm",
+          "Treating the violations as overlapping rather than independently provisionable"
+        ]
+      },
+      "explanation": "Each item — door hardware, peephole, outlet height, bed height — is regulated by a separate subsection of Sec. 17.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.1, 17.4, 17.5",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.657483+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:406c3c20a27f242ad18354340b45e52fbbd7ce43a40de49b3eedb5453436f9e2"
+    },
+    {
+      "question_id": "fa70010c-4c5f-4dfd-97f5-65b204deac4b",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect reviews an accessible hotel room and finds: round door knobs, a standard peephole at 1500 mm, outlets at 300 mm AFF, and a bed at 550 mm height. Evaluating against BP 344 Sec. 17, how many distinct violations are present?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One violation — only the bed height exceeds the 500 mm maximum, which is a critical factor for accessibility"
+        },
+        {
+          "id": "B",
+          "text": "Two violations — round knobs and the bed height are the only non-compliant elements, affecting usability"
+        },
+        {
+          "id": "C",
+          "text": "Four violations — round knobs, peephole height, outlet height, and bed height each violate distinct provisions"
+        },
+        {
+          "id": "D",
+          "text": "Three violations — round knobs, outlet height, and bed height fail; peephole height is not regulated under BP 344"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "All four elements violate distinct BP 344 Sec. 17 provisions — four separate violations.",
+        "explanation": "Each element violates a distinct provision: (1) Round door knobs violate Sec. 17.1 — lever handles are required. (2) Peephole at 1500 mm violates Sec. 17.1 — the accessible peephole must be at 1000 mm. (3) Outlets at 300 mm AFF violate Sec. 17.4 — the minimum is 450 mm. (4) Bed at 550 mm violates Sec. 17.5 — the maximum is 500 mm. Every one of these four elements constitutes an independently cited violation.",
+        "common_misconceptions": [
+          "Assuming peephole height is not regulated — BP 344 Sec. 17.1 explicitly requires a lower peephole at 1000 mm",
+          "Treating the violations as overlapping rather than independently provisionable"
+        ]
+      },
+      "explanation": "Each item — door hardware, peephole, outlet height, bed height — is regulated by a separate subsection of Sec. 17.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.1, 17.4, 17.5",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.103613+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5ef7755baf482b169e299d4ead6a31a75ba7b847f3ccef3f2eff106ac2931caf"
+    },
+    {
+      "question_id": "6a1749f8-d09b-4e26-8209-88bd7c277387",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A Deaf guest cannot be learted by the building fire alarm. Beyond visual strobe alarms, what additional device does BP 344 Section 17.10 specifically require in accessible guest rooms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A flashing doorbell light connected to the room notification system"
+        },
+        {
+          "id": "B",
+          "text": "A vibrating pillow or bed alarm connected to the building fire alarm system"
+        },
+        {
+          "id": "C",
+          "text": "A secondary audible alarm at 90 decibels minimum within the sleeping area"
+        },
+        {
+          "id": "D",
+          "text": "A tactile paging device clipped to the guest's personal belongings"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 17.10 requires a vibrating pillow or bed alarm for Deaf guests.",
+        "explanation": "BP 344 2024 IRR Section 17.10 requires a vibrating pillow or bed alarm connected to the building fire alarm system, specifically to serve Deaf and hard-of-hearing guests who may not respond to audible alarms or even visual strobes while asleep. Visual strobes serve waking Deaf users; the vibrating alarm serves sleeping Deaf users. Both must coexist in the same accessible room.",
+        "common_misconceptions": [
+          "Assuming visual strobe alarms alone satisfy the requirement for Deaf guests — vibrating alarms are also required",
+          "Confusing room door notification systems with fire alarm systems"
+        ]
+      },
+      "explanation": "Visual strobes serve waking Deaf users; vibrating pillow/bed alarms serve sleeping Deaf users — both are required.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.10",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.103613+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04e75c32187613b7570e982aafdee88b8f28b9edf4dacae48fc185d8734df7a7"
+    },
+    {
+      "question_id": "bda17bc4-51fc-425f-ae4c-ad6e31391af1",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 Section 17.4, electrical outlets in accessible guest rooms must be installed at a minimum height above finished floor. What is that minimum height, and why?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm AFF minimum, to keep outlets below the standard wheelchair armrest height"
+        },
+        {
+          "id": "B",
+          "text": "600 mm AFF minimum, to align with the standard forward-reach zone for seated users"
+        },
+        {
+          "id": "C",
+          "text": "450 mm AFF minimum, placing outlets above floor level within the seated reach range"
+        },
+        {
+          "id": "D",
+          "text": "750 mm AFF minimum, consistent with accessible counter and table surface heights"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 17.4 requires electrical outlets at minimum 450 mm AFF.",
+        "explanation": "BP 344 2024 IRR Section 17.4 sets the minimum electrical outlet height at 450 mm AFF. This places outlets above floor level (prohibiting floor-level installations) while remaining within the seated forward-reach range of a wheelchair user. Outlets at 300 mm AFF would require the user to bend dangerously forward; outlets at 600 mm or higher begin to push beyond the comfortable lower reach zone for some users.",
+        "common_misconceptions": [
+          "Confusing outlet height (450 mm min) with hanger rack height (1200 mm) or bed height (500 mm max)",
+          "Selecting 300 mm AFF, which is explicitly prohibited as it places outlets at effectively floor level"
+        ]
+      },
+      "explanation": "450 mm AFF keeps outlets above floor level while remaining within seated wheelchair reach range.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.4",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.103613+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:570b96a861761b95368e1be9fcf7314b70d510dbe776ac06205978b8df613fa5"
+    },
+    {
+      "question_id": "19e69176-b560-44cc-ae99-461a91f9f530",
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A 300-room private hotel was built under the old BP 344 IRR. How many accessible rooms were required under the old tiered formula, and how many are required under the 2024 IRR? Which law requires more?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Old IRR: 5 rooms; 2024 IRR: 6 rooms — the 2024 IRR requires more accessible rooms"
+        },
+        {
+          "id": "B",
+          "text": "Old IRR: 4 rooms; 2024 IRR: 6 rooms — the 2024 IRR requires more accessible rooms"
+        },
+        {
+          "id": "C",
+          "text": "Old IRR: 6 rooms; 2024 IRR: 4 rooms — the old IRR was more restrictive for large hotels"
+        },
+        {
+          "id": "D",
+          "text": "Old IRR: 4 rooms; 2024 IRR: 4 rooms — both rules yield the same result for 300-room hotels"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Old IRR: 3 + (150/100 = 1.5→1) = 4; 2024 IRR: 300 × 2% = 6. The 2024 IRR requires more.",
+        "explanation": "Under the old tiered formula: 3 rooms for the first 150 rooms + 1 for the next 150 (150/100 = 1.5, round to 1) = 4 rooms. Under the 2024 IRR flat 2% rate: 300 × 0.02 = 6 rooms. For large hotels, the 2024 IRR consistently demands more accessible rooms than the old tiered formula because the old formula's rate dropped below 2% for hotels over 150 rooms.",
+        "common_misconceptions": [
+          "Rounding 150/100 = 1.5 up to 2 additional rooms for a total of 5 — the standard rounding for the old formula gives 1 additional room",
+          "Assuming the two formulas always yield similar results — they diverge significantly for large hotels"
+        ]
+      },
+      "explanation": "Old IRR yields 4 rooms for a 300-room hotel; 2024 IRR yields 6 rooms — the new law is more demanding at scale.",
+      "code_citation": "BP 344 2024 IRR, Sec. 17; BP 344 Old IRR",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.103613+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ff34c199a45512d699bf850ef0dcdbb351159959b9dea6d39700963b4ae49b3"
+    }
+  ]
+}

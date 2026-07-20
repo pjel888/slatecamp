@@ -2,9 +2,9 @@
   "question_id": "4e161f47-ed20-4813-bbd7-d4c884aea051",
   "baseline_hash": "sha256:82f04b268f7c44d64056157e7fdfe332a4025c72e39e4d48f63c56cf818e294a",
   "action": "replace",
-  "reason": "source-audited-article-batch-123-local-first source-maps lea-hist-008-03a-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
-  "approved_by": "codex-local-source-audit-batch-123",
-  "approved_at": "2026-05-14T01:06:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
     "parent_article_slug": "lea-hist-008-03a-core-concept",
@@ -35,55 +35,28 @@
     "new_source_map_phase": true
   },
   "proposed": {
-    "question_id": "4e161f47-ed20-4813-bbd7-d4c884aea051",
-    "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
-    "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
     "text": "In what year did Le Corbusier formulate the Five Points of Architecture?",
     "options": [
       {
         "id": "a",
-        "text": "1920"
+        "text": "1920 — too early; predates the mature formulation of the Five Points"
       },
       {
         "id": "b",
-        "text": "1927"
+        "text": "1927 — the year Le Corbusier formulated the Five Points of Architecture"
       },
       {
         "id": "c",
-        "text": "1929"
+        "text": "1929 — not the source-cited year for the Five Points formulation"
       },
       {
         "id": "d",
-        "text": "1932"
+        "text": "1932 — too late; the Five Points were already formulated"
       }
     ],
     "correct_option_id": "b",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": {
-      "a": "1920 does not match the source-safe Le Corbusier cue in the linked article.",
-      "c": "1929 does not match the source-safe Le Corbusier cue in the linked article.",
-      "d": "1932 does not match the source-safe Le Corbusier cue in the linked article.",
-      "correct": "1927 matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931.",
-      "takeaway": "For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors."
-    },
+    "rationale": "1927 matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. [A]: 1920 does not match the source-safe Le Corbusier cue in the linked article. [C]: 1929 does not match the source-safe Le Corbusier cue in the linked article. [D]: 1932 does not match the source-safe Le Corbusier cue in the linked article.",
     "explanation": "1927 matches the Batch 123 local source anchors for Le Corbusier, the 1927 Five Points, reinforced-concrete frame logic, and Villa Savoye 1928-1931. For Le Corbusier questions, keep the Five Points, Villa Savoye, Modulor, Ronchamp, Unite, and Chandigarh as distinct anchors.",
-    "code_citation": null,
-    "bloom_level": "remember",
-    "application_context": "recall",
-    "practice_context": [
-      "ID"
-    ],
-    "difficulty": 0.5,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false,
-    "model_id": "ALE-HIST-008-03A-001",
-    "prompt_image_url": null,
-    "created_at": "2026-03-23T19:27:25.729652+00:00",
-    "updated_at": "2026-05-14T01:06:00.000+08:00",
-    "content_hash": "sha256:82f04b268f7c44d64056157e7fdfe332a4025c72e39e4d48f63c56cf818e294a"
+    "code_citation": null
   }
 }

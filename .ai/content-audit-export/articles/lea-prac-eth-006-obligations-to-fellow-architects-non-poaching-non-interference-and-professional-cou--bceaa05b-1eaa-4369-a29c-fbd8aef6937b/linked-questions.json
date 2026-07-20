@@ -8,36 +8,33 @@
       "question_id": "3c37ce65-ddb9-402a-8161-761296c04b0d",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "Under the Architect's Code of Ethical Conduct, which statement regarding injurious conduct is accurate?",
+      "text": "Which statement about injurious conduct is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Only knowingly false statements constitute prohibited injurious conduct; truthful statements are always permissible, provided they are made in good faith"
+          "text": "The architect should not knowingly injure falsely or maliciously another architect reputation, prospects, or practice"
         },
         {
           "id": "b",
-          "text": "Truthful statements about a competitor's prior errors represent legitimate professional discussion; false or exaggerated statements constitute prohibited injurious conduct"
+          "text": "All criticism is banned even when truthful and constructive"
         },
         {
           "id": "c",
-          "text": "Any negative statement about a competitor's professional reputation violates Rule 7.5, regardless of truth, as it may harm professional relationships"
+          "text": "False injury is allowed if it wins a commission"
         },
         {
           "id": "d",
-          "text": "Injurious conduct applies only to public statements; private criticism is not covered, unless it is shared beyond the intended private audience"
+          "text": "The rule applies only to suppliers"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While false statements are prohibited, truthful statements about errors are permissible; the standard is not absolute prohibition of all negative commentary. [cite: 582]",
-        "c": "The prohibition covers false or exaggerated statements, not all negative statements; truthful professional discussion is permitted. [cite: 582]",
-        "d": "Rule 7.5 applies to conduct that injures reputation, prospects, or practice; the scope extends beyond only public statements. [cite: 523, 569]",
-        "correct": "Rule 7.5 (formerly Section 5-g) prohibits 'maliciously, directly or indirectly' injuring the professional reputation of another architect. Truthful professional evaluation is permitted, but false or exaggerated claims are prohibited. [cite: 523, 569, 582]",
-        "takeaway": "Rule 7.5 prohibits false or malicious statements; truthful professional discussion about competitor errors is permitted for legitimate review. [cite: 523, 582]"
+        "correct": "Section 5-g is limited to knowing, false, or malicious injury.",
+        "takeaway": "Section 5-g is limited to knowing, false, or malicious injury."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.5; RA 9266 Section 23",
@@ -51,43 +48,40 @@
       "model_id": "ALE-PRAC-ETH-006-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.589362+00:00",
       "content_hash": "sha256:82a3710720f877efc1f2d4c5119bba0c41fd5e0b0745bd3cec948845278e8ce4"
     },
     {
       "question_id": "3f2cba45-3bc0-47a1-80b5-e19d635a0e18",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "An architect discovers that the original designer of a building renovation is still actively practicing. Which sequence of actions best satisfies the Code's takeover obligations?",
+      "text": "Before undertaking a commission previously assigned to another architect, what does Section 5-e require?",
       "options": [
         {
           "id": "a",
-          "text": "Accept the owner's preference, notify the original architect afterward, and request confirmation of employment termination, ensuring all parties are informed"
+          "text": "Written notification plus determination that the original employment has terminated and been duly compensated"
         },
         {
           "id": "b",
-          "text": "Decline the project entirely rather than contact the competing architect, avoiding any potential conflict of interest"
+          "text": "Only a lower fee proposal"
         },
         {
           "id": "c",
-          "text": "Contact the original architect in writing, request documentation of employment termination with the owner, and confirm compensation settlement before proceeding"
+          "text": "Only a verbal call to the owner"
         },
         {
           "id": "d",
-          "text": "Proceed with the project since the owner clearly intends to change architects, satisfying the requirement without further action"
+          "text": "No action if the project is urgent"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Notification after acceptance does not satisfy the sequential requirement; notification must precede engagement assumption. [cite: 550]",
-        "b": "Declining is not required; the architect must follow the Rule 7.3 sequence to determine if the engagement is permissible. [cite: 550]",
-        "d": "Owner preference does not satisfy the formal Rule 7.3 requirements; the architect must execute the proper notification and documentation sequence. [cite: 550]",
-        "correct": "Rule 7.3 requires written notification first, then conclusive determination of employment termination, and finally verification of compensation completion. [cite: 523, 535, 550]",
-        "takeaway": "Rule 7.3 requires formal written notification to the original architect with documented termination and compensation verification before engagement. [cite: 550]"
+        "correct": "Section 5-e requires notice, termination, and compensation resolution.",
+        "takeaway": "Section 5-e requires notice, termination, and compensation resolution."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.3; RA 9266 Section 23",
@@ -101,43 +95,40 @@
       "model_id": "ALE-PRAC-ETH-006-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.587823+00:00",
       "content_hash": "sha256:62c8ac6c6df4b0f91cbb30d068beb57a28aac2d5d164ceb495b8452219a0a3d6"
     },
     {
       "question_id": "8fc4caed-7300-4425-b013-f3b901f57a76",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "An architect performs 35% of renovation work on a structure where 65% of the original design remains in place. A client asks the architect to claim equal design credit in marketing materials. What should the architect do?",
+      "text": "If a new architect performs renovation while the original mass and design are substantially maintained, what should public claims do?",
       "options": [
         {
           "id": "a",
-          "text": "Grant the request since the renovation work is substantial enough to justify equal credit"
+          "text": "Limit the claim to the extent of work done to the structure"
         },
         {
           "id": "b",
-          "text": "Claim primary credit for the renovation work while acknowledging the original design exists"
+          "text": "Claim complete authorship of the original building"
         },
         {
           "id": "c",
-          "text": "Decline the request and limit public marketing to the 35% contribution actually performed"
+          "text": "Use an unsupported fixed percentage formula"
         },
         {
           "id": "d",
-          "text": "Claim ownership of the original design percentage if the original architect cannot be located"
+          "text": "Avoid notifying the original architect"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Substantial renovation work does not justify equal credit; proportional credit assignment is the mandatory standard under Rule 7.4. [cite: 582]",
-        "b": "Primary credit cannot be claimed for minority contribution; the percentage of work performed determines credit limitations. [cite: 582]",
-        "d": "Inability to locate a predecessor does not permit ownership claims of their work; this would be a direct violation of Rule 7.4. [cite: 533]",
-        "correct": "Rule 7.4 requires that credit match actual contribution. Claiming equal credit when only performing 35% of the work violates the requirement for proportional credit assignment. [cite: 533, 582]",
-        "takeaway": "Credit claims must match actual contribution percentage; substantial work does not justify primary or equal credit with the original designer. [cite: 582]"
+        "correct": "Section 5-f supports limiting claims to actual work done.",
+        "takeaway": "Section 5-f supports limiting claims to actual work done."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.4; RA 9266 Section 23",
@@ -151,43 +142,40 @@
       "model_id": "ALE-PRAC-ETH-006-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.587117+00:00",
       "content_hash": "sha256:ef91d67910be633051c9eea6d1749ea4b57936dbecef615891d15c1fab925eb8"
     },
     {
       "question_id": "999f0705-6283-4f33-976c-3df679bfcd31",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "An architect is designing additions to a historic building originally designed by a colleague. Under Article VI, Rule 7.4, what credit may the architect claim if 75% of the original floor area remains unchanged?",
+      "text": "How should exact percentage-credit questions be handled in Batch 112?",
       "options": [
         {
           "id": "a",
-          "text": "The architect may claim primary design credit since the project received substantial new additions"
+          "text": "Rewrite them to the source-supported rule: limit claims to the extent of actual work done"
         },
         {
           "id": "b",
-          "text": "The architect may claim equal partnership credit with the original designer for the entire project"
+          "text": "Invent a percentage formula"
         },
         {
           "id": "c",
-          "text": "The architect must limit public claims to only the 25% of work actually new or substantially modified"
+          "text": "Use the owner preferred percentage"
         },
         {
           "id": "d",
-          "text": "The architect may omit mention of the original architect to avoid confusion among clients"
+          "text": "Delete the previous architect from the scenario"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Substantial original design retention requires proportional credit limitation, not a primary credit claim. [cite: 582]",
-        "b": "Rule 7.4 prohibits claiming the works of others as one's own; credit must be proportional to actual contribution. [cite: 582]",
-        "d": "The Code requires honoring the work of other architects; omission of a predecessor's credit violates professional ethical standards. [cite: 523, 533]",
-        "correct": "Rule 7.4 (formerly Section 5-f) states: 'Credit shall only be for the specific work he has done.' With 75% of the original design maintained, credit is limited to the 25% new work performed. [cite: 533, 582]",
-        "takeaway": "Credit claims must be proportional to actual contribution; an architect cannot claim work done by a predecessor. [cite: 533, 582]"
+        "correct": "The checked source gives a qualitative claim-limitation rule, not a formula.",
+        "takeaway": "The checked source gives a qualitative claim-limitation rule, not a formula."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.4; RA 9266 Section 23",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-ETH-006-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.585511+00:00",
       "content_hash": "sha256:0c07c9bda87bc9fd74971805a5225d4d632978218f19d76187605a2490bdfaa6"
     },
     {
       "question_id": "77b369b6-b629-47a0-bff2-5ad10c50dfa8",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "An architect completes 40% of a renovation project. Marketing materials on the firm's website describe 'our design approach' for the entire building without specifically mentioning the original architect. Is this a violation?",
+      "text": "What does Section 5-c say about commissions still in negotiation with another architect?",
       "options": [
         {
           "id": "a",
-          "text": "No violation occurred; the owner's satisfaction demonstrates compliance with professional standards, as long as the client agrees"
+          "text": "They are protected if known to be previously endowed to another architect"
         },
         {
           "id": "b",
-          "text": "Yes, because proportional credit assignment requires specifying the architect's 40% contribution and distinguishing the original work"
+          "text": "They may always be poached"
         },
         {
           "id": "c",
-          "text": "No violation because the architect performed substantial work exceeding 25% of the project, which is a common industry threshold"
+          "text": "They belong to suppliers"
         },
         {
           "id": "d",
-          "text": "Violation occurs only if the original architect objects to the marketing language used, which is rare"
+          "text": "They eliminate compensation"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Client satisfaction does not override ethical requirements; credit representation must align with actual contribution regardless of satisfaction. [cite: 582]",
-        "c": "Substantial work does not eliminate the requirement for proportional credit assignment; the contribution must be accurately represented. [cite: 582]",
-        "d": "The violation occurs through the misrepresentation itself; a predecessor's objection is not required to establish a violation of Rule 7.4. [cite: 582]",
-        "correct": "Rule 7.4 states that an architect must not claim the works of another as his own. Marketing language that implies responsibility for the entire building violates the requirement for proportional credit assignment. [cite: 533, 582]",
-        "takeaway": "Marketing language must clearly reflect proportional contribution; using 'our design' for work done by others violates credit attribution requirements. [cite: 582]"
+        "correct": "Section 5-c covers endowed commissions whether agreed upon or still in negotiation.",
+        "takeaway": "Section 5-c covers endowed commissions whether agreed upon or still in negotiation."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.4; RA 9266 Section 23",
@@ -251,43 +236,40 @@
       "model_id": "ALE-PRAC-ETH-006-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.588541+00:00",
       "content_hash": "sha256:372e2ca4d95c89a6a084a7f9dbc6eb6b9c4d88d88f8db480bcd24c202920dacf"
     },
     {
       "question_id": "289f3ba1-701f-4679-87ca-221e79094490",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "Under the Architect's Code of Ethical Conduct (Article VI), when may an architect pursue a commission previously offered to another architect?",
+      "text": "When may an architect pursue a commission previously offered to another architect?",
       "options": [
         {
           "id": "a",
-          "text": "Immediately, since the competing architect may decline the work, and the client may prefer a different approach"
+          "text": "Only after satisfying the source-supported notice, termination, and compensation conditions"
         },
         {
           "id": "b",
-          "text": "The prohibition is absolute; the architect cannot pursue such a commission under any circumstances"
+          "text": "Immediately if the new fee is cheaper"
         },
         {
           "id": "c",
-          "text": "Only if the original architect has been practicing fewer than five years and lacks the necessary experience"
+          "text": "Whenever the owner says not to notify anyone"
         },
         {
           "id": "d",
-          "text": "After notifying the competing architect verbally of intent to pursue the work, and ensuring no conflict of interest exists"
+          "text": "Only by using paid advertisements"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The Code does not permit immediate pursuit based on potential declination; the prohibition covers all methods and circumstances. [cite: 535]",
-        "c": "Duration of prior practice does not create an exception to the non-poaching prohibition. [cite: 535]",
-        "d": "Verbal notification does not satisfy or overcome the absolute prohibition established by Rule 7.1. [cite: 535]",
-        "correct": "Rule 7.1 (formerly Section 5-c) establishes an absolute prohibition on seeking commissions previously endowed to another architect. The Code states: 'He shall not seek a commission on which another Architect has been or is being employed.' [cite: 522, 535]",
-        "takeaway": "Non-poaching under the Code is an absolute prohibition with no exceptions based on circumstances or architect tenure. [cite: 535]"
+        "correct": "Section 5-e supplies the takeover conditions.",
+        "takeaway": "Section 5-e supplies the takeover conditions."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.1; RA 9266 Section 23",
@@ -301,43 +283,40 @@
       "model_id": "ALE-PRAC-ETH-006-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.584207+00:00",
       "content_hash": "sha256:31ff00441d1f1d33aabee9a1ebe5e6851267bd2e93d8f66828ef1723d637e83e"
     },
     {
       "question_id": "ef7f6bf9-a270-4a1b-a7fd-ed8669343a72",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "Regarding the 'takeover' of a project, what is the critical difference between notification and the complete Rule 7.3 obligation?",
+      "text": "What is the critical difference between notification and the complete Section 5-e obligation?",
       "options": [
         {
           "id": "a",
-          "text": "Notification is synonymous with the complete obligation; there is no additional requirement, as the process is considered fulfilled upon initial communication"
+          "text": "Notification is one requirement; the architect must also determine termination and due compensation"
         },
         {
           "id": "b",
-          "text": "Notification is the first step, but Rule 7.3 also demands determination of employment termination and verification of compensation completion"
+          "text": "Notification alone replaces compensation"
         },
         {
           "id": "c",
-          "text": "Notification satisfies the requirement only if delivered by certified mail, ensuring receipt by the intended party"
+          "text": "Termination is irrelevant"
         },
         {
           "id": "d",
-          "text": "Notification is sufficient if delivered to the original architect's last known address, provided it is accompanied by a formal acknowledgment of receipt"
+          "text": "The requirement applies only to contractors"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The Code refutes this; notification is the first step, not the entire obligation. [cite: 550]",
-        "c": "The method of delivery is not the defining factor; the execution of all three sequential steps is what fulfills the obligation. [cite: 550]",
-        "d": "Delivery does not complete the obligation; verification of termination and compensation completion remain required. [cite: 550]",
-        "correct": "Notification is only the first of three sequential steps mandated by Rule 7.3. The architect must also verify the predecessor's contract has been terminated and that they have been paid for services. [cite: 523, 535, 550]",
-        "takeaway": "Rule 7.3's three sequential steps must be fully executed; notification is merely the first of three required confirmations. [cite: 550]"
+        "correct": "Section 5-e has more than a notice requirement.",
+        "takeaway": "Section 5-e has more than a notice requirement."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.3; RA 9266 Section 23",
@@ -351,43 +330,40 @@
       "model_id": "ALE-PRAC-ETH-006-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.586337+00:00",
       "content_hash": "sha256:63b26c3cab759507c6482332f8480dca87c1d961e8a526ca387b9afbf1dda0b7"
     },
     {
       "question_id": "3eae681f-aafe-47ab-a487-d32ffb07c686",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "An architect is approached to design a major renovation of a 1905 landmark building. The original architect is deceased. According to Article VI, Rule 7.4, what is the architect's obligation?",
+      "text": "A new architect is hired for additions to a building previously designed by another architect. What is the source-safe first concern?",
       "options": [
         {
           "id": "a",
-          "text": "The architect may proceed since the original architect is deceased and the obligation cannot be fulfilled, allowing for creative freedom"
+          "text": "Notify the previous architect of the contemplated project"
         },
         {
           "id": "b",
-          "text": "The architect must still preserve or restore as much of the original design as possible and document the effort to identify the original designer's estate"
+          "text": "Claim full original authorship"
         },
         {
           "id": "c",
-          "text": "The architect should modify substantial portions of the original design to demonstrate independent contribution, showcasing their own design philosophy"
+          "text": "Use a supplier discount"
         },
         {
           "id": "d",
-          "text": "The obligation to notify applies only when the original architect is living and actively practicing, ensuring respect for the original creator's ongoing work"
+          "text": "Offer a free preliminary sketch to win the work"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Deceased status does not eliminate the preservation obligation; cultural stewardship continues as a professional duty. [cite: 570]",
-        "c": "Preservation is required; extensive modification for the sake of demonstrating independent contribution violates the heritage preservation duty. [cite: 570, 582]",
-        "d": "The preservation obligation extends to the work itself and the predecessor's legacy as part of professional stewardship. [cite: 570]",
-        "correct": "Rule 7.4 emphasizes architectural heritage preservation: 'he shall... preserve or restore as much of the original design as possible.' This professional stewardship obligation applies regardless of whether the original architect is living. [cite: 570, 582]",
-        "takeaway": "Heritage preservation obligation continues beyond the original architect's lifetime; conservation of design elements is a professional duty. [cite: 570, 582]"
+        "correct": "Section 5-f requires notice for additions, rehabilitation, or remodeling.",
+        "takeaway": "Section 5-f requires notice for additions, rehabilitation, or remodeling."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.4; RA 9266 Section 23",
@@ -401,43 +377,40 @@
       "model_id": "ALE-PRAC-ETH-006-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.591451+00:00",
       "content_hash": "sha256:9ff3a3436d4759fe8615db3a2a9acd7da3af5ab4c0995382f90fb69aef0ba854"
     },
     {
       "question_id": "831e3646-d71e-4263-88e8-87bc73789bb1",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "An architect learns that a competitor designed a building renovation 20 years ago, but the original architect is now retired. What must the architect do before accepting a new commission for the same building?",
+      "text": "If the original architect has retired, what should this batch avoid claiming without more source?",
       "options": [
         {
           "id": "a",
-          "text": "Proceed with the design since the original architect is retired and unavailable, assuming no further obligations"
+          "text": "Detailed due-diligence mechanics beyond the Section 5-f notice rule"
         },
         {
           "id": "b",
-          "text": "The architect must still attempt to notify the original architect and determine their engagement status"
+          "text": "That Section 5-f concerns successor work"
         },
         {
           "id": "c",
-          "text": "Notify only the current property owner and disclose the original architect's identity in marketing, ensuring transparency"
+          "text": "That claims should be limited to actual work"
         },
         {
           "id": "d",
-          "text": "Conduct only routine maintenance work to avoid any obligation to the original designer, minimizing potential conflicts"
+          "text": "That false malicious injury is barred"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Retirement status does not eliminate the notification obligation or prior design involvement responsibility. [cite: 535]",
-        "c": "Owner notification alone does not satisfy Rule 7.3; the original architect must be notified directly. [cite: 535]",
-        "d": "The scope of work does not eliminate the ethical obligation to research and notify regarding prior design involvement. [cite: 535]",
-        "correct": "Rule 7.3 and Rule 7.4 apply to any prior design involvement. Retirement does not extinguish the obligation to attempt notification and verify termination of the previous professional relationship. [cite: 523, 535]",
-        "takeaway": "Code obligations to prior architects persist regardless of time elapsed or retirement status. [cite: 535]"
+        "correct": "The checked source gives the notice rule but not detailed mechanics for retirement or death scenarios.",
+        "takeaway": "The checked source gives the notice rule but not detailed mechanics for retirement or death scenarios."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.3; RA 9266 Section 23",
@@ -451,43 +424,40 @@
       "model_id": "ALE-PRAC-ETH-006-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.590761+00:00",
       "content_hash": "sha256:1212daf2368aafa0879e4e24c518e15608b3e3270c25f7ff4696703c9b0615bc"
     },
     {
       "question_id": "fc9c8b45-c99f-40f2-8ca2-8e0df0ae22a2",
       "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
       "topic_id": "10f43ce1-dfc8-4f87-85da-de6be7577311",
-      "text": "The Code of Ethical Conduct requires three sequential confirmations before an architect may assume engagement on a project previously handled by another architect. Which sequence is correct?",
+      "text": "Which sequence best matches Section 5-e?",
       "options": [
         {
           "id": "a",
-          "text": "Verify termination, notify original architect, confirm compensation completion, ensuring all contractual obligations are met"
+          "text": "Written notice, determine original employment termination, determine due compensation"
         },
         {
           "id": "b",
-          "text": "Confirm compensation completion, written notification, verify termination, and ensure all parties are informed"
+          "text": "Undercut fee, advertise, sign finished drawings"
         },
         {
           "id": "c",
-          "text": "Written notification to the original architect, conclusive determination of employment termination, and verification of compensation completion"
+          "text": "Accept supplier gift, certify payment, hide discount"
         },
         {
           "id": "d",
-          "text": "Notify client of prior architect's work, request original architect's written permission, complete the engagement, and ensure compliance with ethical standards"
+          "text": "Guarantee cost, ignore scope, avoid arbitration"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Verification cannot precede notification; written notice must be initiated first according to Rule 7.3. [cite: 550]",
-        "b": "The sequence omits the critical element of conclusively determining employment termination and places compensation completion first. [cite: 550]",
-        "d": "Rule 7.3 requires actions involving the original architect directly, not just client notification or simple 'permission.' [cite: 535]",
-        "correct": "Rule 7.3 (formerly Section 5-e) requires a sequential process: notification first, then verification of termination, then proof of compensation completion. [cite: 523, 535, 550]",
-        "takeaway": "Rule 7.3 imposes three sequential steps in order: written notification, employment termination verification, and compensation settlement confirmation. [cite: 550]"
+        "correct": "Section 5-e supports that sequence.",
+        "takeaway": "Section 5-e supports that sequence."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct, Article VI, Rule 7.3; RA 9266 Section 23",
@@ -501,7 +471,7 @@
       "model_id": "ALE-PRAC-ETH-006-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.590076+00:00",
       "content_hash": "sha256:e28e7ffabc2f56363a524bd46224a693c4d3e26a508e76c08666cbb8733f56ec"
     }
   ]

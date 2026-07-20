@@ -1,0 +1,508 @@
+{
+  "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:5ce152ab515d327e3853d61e8589af42fe5884f630958cf493fd54e587719e99",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1df3290c-a3f3-4e14-8a6e-37c37601ef6e",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "According to SPP Doc 209, what ethical responsibility do international consultants have regarding Philippine practice standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consultants must acknowledge local regulatory requirements, cultural contexts, and building code compliance while maintaining professional integrity"
+        },
+        {
+          "id": "b",
+          "text": "International consultants are exempt from Philippine building codes if their home country standards are more advanced, allowing them to apply superior methodologies"
+        },
+        {
+          "id": "c",
+          "text": "SPP Doc 209 does not address ethical conduct in consulting arrangements, leaving it to the discretion of the consulting parties"
+        },
+        {
+          "id": "d",
+          "text": "Consultants may disregard local practice standards if they conflict with international methodologies, provided they document the rationale for such decisions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "All work on Philippine projects must comply with Philippine building codes regardless of home country standards.",
+        "c": "SPP Doc 209 establishes professional ethical standards for consulting conduct and international-Filipino team relationships.",
+        "d": "Professional integrity requires aligning international methodologies with local regulatory and cultural contexts.",
+        "correct": "SPP Doc 209 establishes that international consultants must respect Philippine regulatory frameworks, building codes, and professional practice standards while bringing specialized expertise. This ethical requirement ensures compliance with local requirements while enabling knowledge transfer and prevents imposition of foreign standards that may not align with local conditions and regulations.",
+        "takeaway": "International consultants must respect Philippine codes and regulations while sharing expertise."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f6d64c268b075c26c31d0a9a852c7778f76cebc5e125363e6274729a9516bccb"
+    },
+    {
+      "question_id": "74785634-59af-4a3a-9fe0-accbc9c28235",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "In SPP Doc 209, how do review consulting and development consulting differ in their primary objectives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Review consulting addresses quality assurance and technical compliance, while development consulting focuses on professional training and methodology transfer"
+        },
+        {
+          "id": "b",
+          "text": "Review consulting and development consulting serve identical purposes and can be used interchangeably, which is a misconception"
+        },
+        {
+          "id": "c",
+          "text": "Review consulting is permanent while development consulting is always temporary, which oversimplifies their roles"
+        },
+        {
+          "id": "d",
+          "text": "Development consulting is only applicable to academic institutions, not professional practice, which is incorrect"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 209 establishes distinct consulting types serving different but complementary professional purposes.",
+        "c": "Duration (permanent vs. temporary) depends on organizational needs, not type designation per SPP Doc 209.",
+        "d": "Development consulting serves professional architectural practices; it is not limited to academic contexts.",
+        "correct": "SPP Doc 209 delineates two complementary consulting types with distinct objectives: review consulting ensures quality assurance and technical compliance throughout projects, identifying gaps and maintaining professional standards; development consulting focuses on long-term professional development, methodology transfer, and capacity building through structured mentoring and training. Both contribute to capability strengthening but through different mechanisms.",
+        "takeaway": "Review consulting = quality assurance; development consulting = professional training and methodology transfer."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b596a9e1bad4048f5886df551c2bfcd4166cc7b2bce1dfba41334128c13d0f62"
+    },
+    {
+      "question_id": "78444811-6e06-41b6-900e-62ddbd1e66cd",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "In SPP Doc 209, how do consulting services contribute to strengthening national architectural capability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Through mentoring relationships, knowledge transfer on specialized methodologies, and professional development creating long-term institutional capacity"
+        },
+        {
+          "id": "b",
+          "text": "By requiring all Filipino architects to work exclusively with international consultants, thereby limiting local expertise development"
+        },
+        {
+          "id": "c",
+          "text": "Through mandatory licensing examinations administered by foreign professionals, which do not necessarily align with local practice standards"
+        },
+        {
+          "id": "d",
+          "text": "By eliminating specialized architectural disciplines from Philippine practice, which could reduce the diversity of skills available"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "PACS establishes consulting as supportive engagement with Filipino leadership, not exclusive dependency relationships.",
+        "c": "Professional licensing remains a regulatory function distinct from consulting service standards.",
+        "d": "PACS supports access to specialized expertise, not elimination of architectural disciplines.",
+        "correct": "SPP Doc 209 emphasizes that consulting services strengthen national capability through direct mentoring, documented knowledge transfer of specialized methodologies, and collaborative professional development between international consultants and Filipino teams. This structured approach builds institutional learning and long-term professional capacity beyond individual projects.",
+        "takeaway": "Mentoring, methodology transfer, and collaborative development create sustainable national architectural capacity."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c95afdfdd95cbee869d84c51b395039287b2ce92b628fc0bde3570c508d7652"
+    },
+    {
+      "question_id": "0dafc31c-192d-48be-87b2-daa2a11ce3e9",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "What compensation methods are established in SPP Doc 209 for consulting services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Methods include hourly rates, project-based fixed fees, percentage of construction cost, or hybrid arrangements aligned with international standards and local economic conditions"
+        },
+        {
+          "id": "b",
+          "text": "SPP Doc 209 mandates that all consulting services must use a single fixed fee regardless of engagement type, project complexity, or duration of professional involvement"
+        },
+        {
+          "id": "c",
+          "text": "Consulting compensation is determined exclusively by supply and demand with no professional guidelines or standardized fee schedules established by the profession"
+        },
+        {
+          "id": "d",
+          "text": "International consultants should not receive compensation beyond travel expenses according to SPP Doc 209, as local counterparts bear the primary professional obligation"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 209 establishes flexible frameworks recognizing that different engagement types require different compensation structures.",
+        "c": "While market factors influence compensation, SPP Doc 209 establishes professional guidelines ensuring fair valuation.",
+        "d": "SPP Doc 209 recognizes consultant professional contributions warrant appropriate compensation beyond travel costs.",
+        "correct": "SPP Doc 209 establishes flexible compensation frameworks recognizing diverse consulting engagement types and economic realities. Acceptable methods include hourly rates (for time-limited advisory services), project-based fixed fees (for defined scope), percentage-of-construction-cost arrangements (for design-intensive projects), and hybrid models combining multiple methods. This flexibility aligns with international consulting practice while accommodating Philippine economic conditions.",
+        "takeaway": "Multiple compensation methods (hourly, fixed fee, percentage, hybrid) accommodate diverse PACS engagement types."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:71488a0b08b0a3a40231d32ca3a9f59ccec145933a5f387c45767528425a60d9"
+    },
+    {
+      "question_id": "3005606d-8682-4445-85eb-ec2648a50401",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "How do the knowledge transfer mechanisms in SPP Doc 209 consulting services advance broader professional goals in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Through mentoring, collaborative project work, and documented methodologies that establish foundations for ongoing relationships and strengthen Filipino architect capability at institutional and individual levels"
+        },
+        {
+          "id": "b",
+          "text": "Knowledge transfer is discouraged to maintain competitive advantages for international consultants, ensuring that local professionals remain dependent on foreign expertise"
+        },
+        {
+          "id": "c",
+          "text": "SPP Doc 209 views knowledge transfer as a secondary concern compared to project delivery timelines, prioritizing speed over skill development"
+        },
+        {
+          "id": "d",
+          "text": "Consulting services deliberately prevent Filipino architects from accessing advanced international methodologies, thereby limiting their professional growth and exposure"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 209 establishes knowledge transfer as the core mechanism for advancing national professional capability.",
+        "c": "Knowledge transfer is prioritized alongside project delivery; both objectives are integrated in PACS framework.",
+        "d": "SPP Doc 209 explicitly enables Filipino access to international expertise and advanced professional methodologies.",
+        "correct": "SPP Doc 209 positions knowledge transfer as the defining purpose of professional consulting services. Through structured mentoring relationships, collaborative project engagement where Filipino teams participate in substantive work, and documented transfer of specialized methodologies, consulting services create lasting professional development. This multi-level approach—building individual architect competency while establishing institutional methodologies—advances both immediate project quality and long-term national architectural capability.",
+        "takeaway": "Mentoring + collaborative work + documented methods create sustainable professional and institutional advancement."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:09d2f34e11ac91e06f80eecefe4c773349dca76dacd9a665d958b13d32e92baa"
+    },
+    {
+      "question_id": "7e3de747-0f6d-49f1-badc-3628f30242a7",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "What is the distinction between full engagement consulting and advisory consulting in SPP Doc 209?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full engagement places international consultants in primary design roles with Filipino teams supporting, while advisory consulting involves periodic expert review and technical guidance"
+        },
+        {
+          "id": "b",
+          "text": "Full engagement consulting is limited to small projects while advisory consulting is only for large projects, ensuring appropriate resource allocation"
+        },
+        {
+          "id": "c",
+          "text": "There is no functional difference between these consulting arrangement types, as both aim to provide expert guidance"
+        },
+        {
+          "id": "d",
+          "text": "Full engagement consulting requires no Filipino team participation at all, which may lead to a lack of local context in project execution"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 209 does not restrict engagement types by project size; selection depends on project needs and knowledge transfer objectives.",
+        "c": "SPP Doc 209 clearly differentiates engagement types by scope, intensity, and knowledge transfer mechanisms.",
+        "d": "PACS mandates meaningful Filipino team participation in all consulting arrangements to ensure capacity development.",
+        "correct": "SPP Doc 209 establishes distinct consulting arrangements: full engagement places international consultants in substantive design leadership roles with Filipino teams as active partners, facilitating intensive knowledge transfer; advisory consulting involves periodic expert consultation and technical guidance without full-time engagement. Each type serves different project needs and knowledge transfer objectives.",
+        "takeaway": "Full engagement = primary design role + mentoring; advisory = periodic expert guidance."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a839ffac5f05d575c0803ef8662067b1e13fb0cc4db573c18c4379fa8753003f"
+    },
+    {
+      "question_id": "b434b587-956b-4a06-9f82-20bcdef27695",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "What specific qualifications does SPP Doc 209 require for professional consultants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Significant experience in specialized areas, proven track records, language proficiency, and understanding of Philippine building codes and regulations"
+        },
+        {
+          "id": "b",
+          "text": "SPP Doc 209 specifies that any licensed architect can serve as an international consultant without further qualification, which is a common misconception"
+        },
+        {
+          "id": "c",
+          "text": "Consulting qualifications are determined exclusively by portfolio size rather than expertise depth, which can lead to misinterpretations"
+        },
+        {
+          "id": "d",
+          "text": "International consultants do not need to meet any specific qualification standards, which is often misunderstood"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 209 goes beyond basic licensure; it requires specialized expertise and demonstrated competency in relevant areas.",
+        "c": "Experience depth and proven competency in specific areas define qualifications, not merely portfolio extent.",
+        "d": "SPP Doc 209 establishes specific qualification standards to ensure consultant capability and effective knowledge transfer.",
+        "correct": "SPP Doc 209 establishes rigorous qualification requirements for professional consultants: demonstrated significant experience and track record in relevant specialized areas, technical expertise sufficient for the engagement scope, language competency for effective communication and knowledge transfer with Filipino teams, and comprehensive understanding of Philippine building codes, regulations, and local practice contexts. These standards protect project quality and ensure effective mentoring.",
+        "takeaway": "PACS requires consultants with proven expertise, local knowledge, and communication capability."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4de2fdf983ea25e8405f46bcb4895384a4161f193b1e5fcf2c8a2dfd05e95e76"
+    },
+    {
+      "question_id": "ff764f9e-d0b3-480d-a35e-ec283775bf3e",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "According to SPP Doc 209, how does consulting service documentation support institutional development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Documentation of methodologies, processes, and technical decisions enables structured knowledge transfer and long-term institutional learning"
+        },
+        {
+          "id": "b",
+          "text": "SPP Doc 209 states that documentation is unnecessary in consulting arrangements, as verbal agreements suffice."
+        },
+        {
+          "id": "c",
+          "text": "Documentation should be kept strictly confidential and not shared with Filipino team members, to protect proprietary information."
+        },
+        {
+          "id": "d",
+          "text": "Only the international consultant retains documentation; Filipino teams should not have access to ensure data security."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 209 recognizes documentation as foundational to knowledge transfer and institutional learning objectives.",
+        "c": "SPP Doc 209 mandates documentation sharing with Filipino teams; withholding defeats the knowledge transfer purpose.",
+        "d": "Shared ownership of documented knowledge ensures sustained institutional capacity per SPP Doc 209.",
+        "correct": "SPP Doc 209 emphasizes that comprehensive documentation of consulting methodologies, technical processes, and decision-making frameworks is essential to achieving institutional development goals. Shared documentation creates permanent institutional knowledge, enabling continued application of learned methodologies beyond individual consultant engagement and supporting sustainable capacity growth within Filipino teams and organizations.",
+        "takeaway": "Documentation of methods and processes creates permanent institutional knowledge beyond consultant engagement."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e4c0f839ca971462160459c0d64146ef880ce28bc35e68fd8890f16c9145f4ea"
+    },
+    {
+      "question_id": "226c0498-e69f-4a48-a0e3-0ab75f0bf3f6",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "According to SPP Doc 209, what is the primary rationale for professional architectural consulting services in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To address competition from international consultants while enabling knowledge transfer and professional development for Filipino architects"
+        },
+        {
+          "id": "b",
+          "text": "To replace local architects with international professionals on all major projects, ensuring global standards"
+        },
+        {
+          "id": "c",
+          "text": "To eliminate the need for Philippine building code compliance, thereby reducing project costs"
+        },
+        {
+          "id": "d",
+          "text": "To reduce architectural fees by importing cheaper consulting services, which may not adhere to local standards"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 209 promotes qualified Filipino architects as leaders; international consultants support and transfer knowledge, not replace.",
+        "c": "PACS does not exempt projects from Philippine building codes; compliance remains mandatory for all work.",
+        "d": "PACS establishes professional standards for consultant qualifications and compensation; cost reduction is not the driving principle.",
+        "correct": "SPP Doc 209 complements professional regulatory laws (PRLs) like RA 9266 and PRBoA/IAPoA advisories on foreign consultants, directing government agencies to prioritize qualified Filipino PCAs. The document addresses the influx of foreign consultants and unqualified consulting entities by establishing standards that strengthen national architectural capability through mentoring and knowledge transfer while ensuring qualified professionals lead major projects.",
+        "takeaway": "PACS standards enable Filipino architect development while managing international consultant engagement."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ac981a501b4963f6da91a612dd30469936bc6fc1cb0eb270b3ef45f9fc68ffba"
+    },
+    {
+      "question_id": "36ce1dc0-e047-4a92-bf53-4c9952322e94",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "topic_id": "8e095f84-8da1-4a57-846c-61f9b914830f",
+      "text": "What historical context does SPP Doc 209 reference regarding consulting services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PRBoA/IAPoA advisories and guidelines on selection of foreign consultants and Standard Guidelines on Consultancy and Consulting Services"
+        },
+        {
+          "id": "b",
+          "text": "Executive Order 123 from 1970 establishing architectural consulting standards, which were later revised in 1985 to include international practices"
+        },
+        {
+          "id": "c",
+          "text": "The 1972 ASEAN Architectural Conference on International Practice, which set the stage for regional collaboration in architectural services"
+        },
+        {
+          "id": "d",
+          "text": "Philippine Constitution Article 14 on Professional Services, which outlines the framework for professional practice in the country"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The specific LOI 1000 (1980) and Standard Guidelines are SPP Doc 209's authoritative historical references, not Executive Order 123.",
+        "c": "While ASEAN conferences have architectural significance, SPP Doc 209's direct historical citations are LOI 1000 and consultancy guidelines.",
+        "d": "The Constitution provides general professional framework; SPP Doc 209's specific historical authority stems from LOI 1000 and consultancy guidelines.",
+        "correct": "SPP Doc 209 explicitly roots its consulting services framework in Letter of Instruction No. 1000 (March 20, 1980), which mandated government priority for Filipino professionals, and references Standard Guidelines on Consultancy and Consulting Services. This historical foundation establishes the document's policy rationale and regulatory context for professional consulting practice.",
+        "takeaway": "LOI 1000 (1980) and Standard Guidelines on Consultancy establish PACS's historical and policy foundation."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 209",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-011-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c40b1629046df1e05379b28a0644b55c18c164fe387fbeda9ff2b92ee35686f"
+    }
+  ]
+}

@@ -2,9 +2,9 @@
   "question_id": "50b61152-ae0d-4d8b-8434-894e12cd3c2d",
   "baseline_hash": "sha256:a09f911fa9b36a833e94b291058c9055e9daff3740013c35d6bed98bc30ea9fd",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "How does RA 9514 connect to occupancy clearance?",
+    "text": "What is the specific NBC form number used to initiate a formal change of use or occupancy application under PD 1096?",
     "options": [
       {
         "id": "a",
-        "text": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance."
+        "text": "NBC Form No. B-05 — Application for Building Permit"
       },
       {
         "id": "b",
-        "text": "R"
+        "text": "NBC Form No. B-12 — Application for Change of Use or Occupancy"
       },
       {
         "id": "c",
-        "text": "A"
+        "text": "NBC Form No. B-09 — Certificate of Completion and Occupancy"
       },
       {
         "id": "d",
-        "text": " "
+        "text": "NBC Form No. B-17 — Application for Demolition Permit"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance. This is supported by RA 9514 uses only the GFA-to-TGFA conversion table..",
-    "explanation": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance. The cited local source family controls this item: RA 9514 uses only the GFA-to-TGFA conversion table..",
-    "code_citation": "RA 9514 removes the Building Official from occupancy review."
+    "correct_option_id": "b",
+    "rationale": "The official form for initiating a change of use or occupancy application is NBC Form No. B-12. This is a distinct form from the standard building permit application (B-05) and is specific to occupancy reclassification requests. Submitting the wrong form does not initiate the proper review process under Sec. 702.",
+    "explanation": "NBC Form B-12 is the entry point for all change-of-use applications. Knowing form numbers is a direct recall item in LEA examinations. B-12 → Change of Use; B-05 → Building Permit; B-09 → CO application.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702; NBC Form B-12"
   }
 }

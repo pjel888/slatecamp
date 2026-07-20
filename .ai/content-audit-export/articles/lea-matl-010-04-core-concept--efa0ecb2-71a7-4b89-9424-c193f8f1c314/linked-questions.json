@@ -8,37 +8,31 @@
       "question_id": "7dcace62-ba6c-4dd7-81c8-3a2e46d5e9fe",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "A structure requires: 30 pieces of 2×4×8, 20 pieces of 2×6×10, and 15 pieces of 1×8×12. How many total board feet are needed with a 10% waste allowance?",
+      "text": "What is a board foot in Fajardo?",
       "options": [
         {
           "id": "a",
-          "text": "458 BF"
+          "text": "One square foot by one inch thick"
         },
         {
           "id": "b",
-          "text": "528 BF"
+          "text": "One cubic meter of concrete"
         },
         {
           "id": "c",
-          "text": "555 BF"
+          "text": "One kilogram of tie wire"
         },
         {
           "id": "d",
-          "text": "612 BF"
+          "text": "One square meter of CHB"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "458 BF results from insufficient waste factor or calculation error.",
-        "c": "555 BF may result from using an incorrect waste factor or rounding error.",
-        "d": "612 BF results from over-estimating waste or miscalculation.",
-        "correct": "2×4×8: (2 × 4 × 8) ÷ 12 = 5.33 BF per board. 30 × 5.33 = 160 BF. 2×6×10: 10 BF per board. 20 × 10 = 200 BF. 1×8×12: (1 × 8 × 12) ÷ 12 = 8 BF per board. 15 × 8 = 120 BF. Total base: 160 + 200 + 120 = 480 BF. With 10% waste: 480 × 1.10 = 528 BF.",
-        "takeaway": "For multiple sizes: calculate board feet for each size, sum, then apply waste factor."
-      },
+      "rationale": "Fajardo defines one board foot as one square foot by one inch thick.",
       "explanation": "458 BF results from insufficient waste factor or calculation error. 555 BF may result from using an incorrect waste factor or rounding error. 612 BF results from over-estimating waste or miscalculation. 2×4×8: (2 × 4 × 8) ÷ 12 = 5.33 BF per board. 30 × 5.33 = 160 BF. 2×6×10: 10 BF per board. 20 × 10 = 200 BF. 1×8×12: (1 × 8 × 12) ÷ 12 = 8 BF per board. 15 × 8 = 120 BF. Total base: 160 + 200 + 120 = 480 BF. With 10% waste: 480 × 1.10 = 528 BF. For multiple sizes: calculate board feet for each size, sum, then apply waste factor.",
       "code_citation": "Complex lumber estimation",
       "bloom_level": "analyze",
@@ -51,44 +45,38 @@
       "model_id": "ALE-MATL-010-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-05-06T15:55:59.196588+00:00",
+      "updated_at": "2026-07-20T01:13:28.198111+00:00",
       "content_hash": "sha256:bc07ea9981c39a51de9c75c6d0832d57193305251c581160924197ad868e1e5b"
     },
     {
       "question_id": "1149e2f7-5dcb-42e6-9193-7890719e1474",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "What is the volume of one board foot in cubic inches?",
+      "text": "How many cubic inches are in one board foot?",
       "options": [
         {
           "id": "a",
-          "text": "96 cubic inches"
-        },
-        {
-          "id": "b",
-          "text": "120 cubic inches"
-        },
-        {
-          "id": "c",
           "text": "144 cubic inches"
         },
         {
+          "id": "b",
+          "text": "12 cubic inches"
+        },
+        {
+          "id": "c",
+          "text": "53 cubic inches"
+        },
+        {
           "id": "d",
-          "text": "192 cubic inches"
+          "text": "1,950 cubic inches"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "96 cubic inches is 8 × 12; would be a different unit.",
-        "b": "120 cubic inches is close but does not match the standard definition.",
-        "d": "192 cubic inches is 1.33 × the standard; would over-estimate.",
-        "correct": "One board foot = 1 inch (thick) × 12 inches (wide) × 12 inches (long) = 144 cubic inches.",
-        "takeaway": "One board foot is 144 cubic inches. This is the fundamental definition."
-      },
+      "rationale": "Fajardo states that one board foot is equivalent to 144 cubic inches.",
       "explanation": "96 cubic inches is 8 × 12; would be a different unit. 120 cubic inches is close but does not match the standard definition. 192 cubic inches is 1.33 × the standard; would over-estimate. One board foot = 1 inch (thick) × 12 inches (wide) × 12 inches (long) = 144 cubic inches. One board foot is 144 cubic inches. This is the fundamental definition.",
       "code_citation": "Standard lumber measurement definition",
       "bloom_level": "remember",
@@ -101,44 +89,38 @@
       "model_id": "ALE-MATL-010-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-05-06T15:55:59.075141+00:00",
+      "updated_at": "2026-07-20T01:13:28.191162+00:00",
       "content_hash": "sha256:eb450f2bd15309bb0ba3d8dd8dc2b6782d5afa45c1eecde1c7bc9926e241bbb1"
     },
     {
       "question_id": "abb4b97c-967a-43bb-98a0-d6d8308888a9",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "Lumber is quoted at 850 pesos per board foot. A project requires 250 board feet. What is the total material cost, and how many 2×6×12 boards does this equivleant to?",
+      "text": "Which unit is used for lumber thickness and width in Fajardo board-foot work?",
       "options": [
         {
           "id": "a",
-          "text": "212,500 pesos; 17 boards"
+          "text": "Inches"
         },
         {
           "id": "b",
-          "text": "212,500 pesos; 21 boards"
+          "text": "Meters"
         },
         {
           "id": "c",
-          "text": "212,500 pesos; 25 boards"
+          "text": "Kilograms"
         },
         {
           "id": "d",
-          "text": "212,500 pesos; 29 boards"
+          "text": "Liters"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "17 boards results from dividing 250 by a higher value.",
-        "c": "25 boards results from 250 ÷ 10 (incorrect per-board value).",
-        "d": "29 boards results from 250 ÷ 8.6 (wrong calculation).",
-        "correct": "Cost: 250 BF × 850 pesos/BF = 212,500 pesos. Board feet per 2×6×12: (2 × 6 × 12) ÷ 12 = 12 BF per board. Number of boards: 250 ÷ 12 = 20.83 ≈ 21 boards.",
-        "takeaway": "Cost = board feet × price per BF. To convert board feet to equivalent boards of a specific size, divide by that size's board feet."
-      },
+      "rationale": "Fajardo states thickness and width are expressed in inches.",
       "explanation": null,
       "code_citation": "Lumber cost estimation",
       "bloom_level": "analyze",
@@ -151,7 +133,7 @@
       "model_id": "ALE-MATL-010-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.194936+00:00",
       "content_hash": "sha256:aeda0da11aaa06d9cea2cf9b14af515207f212e114bab519e96db04819923ea1"
     },
     {
@@ -162,19 +144,19 @@
       "options": [
         {
           "id": "a",
-          "text": "160 BF"
+          "text": "160 BF — result of an incorrect per-piece multiplier of 3.2"
         },
         {
           "id": "b",
-          "text": "200 BF"
+          "text": "200 BF — the correct total (4 BF/piece × 50 pieces) for 1×6×8 lumber"
         },
         {
           "id": "c",
-          "text": "240 BF"
+          "text": "240 BF — result of omitting the ÷12 step in the board-foot formula"
         },
         {
           "id": "d",
-          "text": "400 BF"
+          "text": "400 BF — result of using board length as the direct multiplier"
         }
       ],
       "correct_option_id": "b",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "160 BF results from 50 × 3.2 (incorrect per-piece calculation).",
-        "c": "240 BF results from 50 × 4.8 or (1 × 6 × 8) without division.",
-        "d": "400 BF results from 50 × 8 (using length as multiplier).",
-        "correct": "BF per piece: (1 × 6 × 8) ÷ 12 = 48 ÷ 12 = 4 BF per board. Total: 50 boards × 4 BF/board = 200 BF.",
-        "takeaway": "Calculate board feet per piece first, then multiply by quantity."
-      },
+      "rationale": "BF per piece: (1 × 6 × 8) ÷ 12 = 48 ÷ 12 = 4 BF per board. Total: 50 boards × 4 BF/board = 200 BF. [A]: 160 BF results from 50 × 3.2 (incorrect per-piece calculation). [C]: 240 BF results from 50 × 4.8 or (1 × 6 × 8) without division. [D]: 400 BF results from 50 × 8 (using length as multiplier).",
       "explanation": "160 BF results from 50 × 3.2 (incorrect per-piece calculation). 240 BF results from 50 × 4.8 or (1 × 6 × 8) without division. 400 BF results from 50 × 8 (using length as multiplier). BF per piece: (1 × 6 × 8) ÷ 12 = 48 ÷ 12 = 4 BF per board. Total: 50 boards × 4 BF/board = 200 BF. Calculate board feet per piece first, then multiply by quantity.",
       "code_citation": "Standard lumber measurement",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-MATL-010-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-05-06T15:55:59.326338+00:00",
+      "updated_at": "2026-07-20T01:13:28.197329+00:00",
       "content_hash": "sha256:9a4f989320d1e295c4ef379257f7e8b0ff82d46737550bc62ebbb31a57f90bb0"
     },
     {
       "question_id": "b3ec4c0d-9b83-46a8-b0ae-caafc8e5bdd0",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "A project requires 100 linear meters of 2×4 lumber. Assuming standard 8-foot boards and no waste, how many board feet are needed? (1 meter ≈ 3.28 feet)",
+      "text": "What is the board-foot formula when length is in feet?",
       "options": [
         {
           "id": "a",
-          "text": "109 BF"
+          "text": "T x W x L / 12"
         },
         {
           "id": "b",
-          "text": "145 BF"
+          "text": "T x W x L / 53"
         },
         {
           "id": "c",
-          "text": "218 BF"
+          "text": "Area x 12.5"
         },
         {
           "id": "d",
-          "text": "327 BF"
+          "text": "Volume x mixture class"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "109 BF results from using 2 × 4 × 100 meters without proper unit conversion.",
-        "b": "145 BF results from an incomplete calculation.",
-        "d": "327 BF is too high; may result from using the total length without the formula.",
-        "correct": "100 meters × 3.28 ft/m = 328 feet total. Each 2×4×8 board = 5.33 BF and covers 8 feet. Total BF = (328 ÷ 8) × 5.33 = 41 boards × 5.33 = 218.5 BF ≈ 218 BF. Alternatively: BF = (2 × 4 × 328) ÷ 12 = 2,624 ÷ 12 = 218.67 BF.",
-        "takeaway": "Convert all length measurements to feet, then apply the standard formula BF = (T × W × L) ÷ 12."
-      },
+      "rationale": "Fajardo divides the product of thickness, width, and length by 12.",
       "explanation": null,
       "code_citation": "Lumber measurement with metric conversion",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-MATL-010-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.193425+00:00",
       "content_hash": "sha256:7ec9191f2b625307caad50078e6d56f37f9d385ddf6b64421671c4f7efc396fd"
     },
     {
       "question_id": "d14ca8de-df19-443f-9592-09655035f811",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "Calculate the board feet for one piece of 2×4×8 (2 inches thick, 4 inches wide, 8 feet long).",
+      "text": "What is the total board foot of 5 pieces of 2 in x 6 in x 14 ft lumber?",
       "options": [
         {
           "id": "a",
-          "text": "4 BF, calculated by multiplying the dimensions and dividing by 12"
+          "text": "70 board feet"
         },
         {
           "id": "b",
-          "text": "5.33 BF"
+          "text": "14 board feet"
         },
         {
           "id": "c",
-          "text": "6.67 BF, assuming a different standard of measurement"
+          "text": "420 board feet"
         },
         {
           "id": "d",
-          "text": "8 BF, based on incorrect assumptions about the dimensions"
+          "text": "12 board feet"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "4 BF results from (2 × 4 × 6) ÷ 12 (using 6 feet instead of 8).",
-        "c": "6.67 BF results from (2 × 4 × 10) ÷ 12 (using 10 feet instead of 8).",
-        "d": "8 BF results from (2 × 4 × 12) ÷ 12 (using 12 feet instead of 8).",
-        "correct": "BF = (2 × 4 × 8) ÷ 12 = 64 ÷ 12 = 5.33 BF.",
-        "takeaway": "A standard 2×4×8 board = 5.33 BF. Memorize this as an anchor value."
-      },
+      "rationale": "5 x 2 x 6 x 14 / 12 = 70 board feet.",
       "explanation": null,
       "code_citation": "Standard lumber measurement",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-MATL-010-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.195846+00:00",
       "content_hash": "sha256:05c71455252dfc2242ffda7d4f549e6038f182498e0a17213e8f0df4e2a4548a"
     },
     {
       "question_id": "e8780f64-13e6-4356-bf14-b60730a3b372",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "A contractor purchases formwork lumber: 100 pieces of 1×6×8 at 425 pesos per piece, and 50 pieces of 2×4×10 at 400 pesos per piece. Calculate the total cost of all lumber.",
+      "text": "What must be done first if lumber dimensions are given in metric units?",
       "options": [
         {
           "id": "a",
-          "text": "39,300 pesos"
+          "text": "Convert measurements before solving board feet"
         },
         {
           "id": "b",
-          "text": "45,500 pesos"
+          "text": "Ignore length"
         },
         {
           "id": "c",
-          "text": "62,500 pesos"
+          "text": "Use the CHB area factor"
         },
         {
           "id": "d",
-          "text": "58,200 pesos"
+          "text": "Use tie wire kilograms"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "39,300 pesos results from incomplete calculation.",
-        "b": "45,500 pesos is lower estimate.",
-        "d": "58,200 pesos may result from using incorrect board feet or rounding.",
-        "correct": "1×6×8: 100 pieces × 425 pesos/piece = 42,500 pesos. 2×4×10: 50 pieces × 400 pesos/piece = 20,000 pesos. Total = 42,500 + 20,000 = 62,500 pesos.",
-        "takeaway": "Multi-part lumber cost: (pieces₁ × price₁ per piece) + (pieces₂ × price₂ per piece) + ..."
-      },
+      "rationale": "Fajardo notes metric measurements should be converted before solving board feet.",
       "explanation": null,
       "code_citation": "Comprehensive lumber cost estimation",
       "bloom_level": "analyze",
@@ -351,44 +309,38 @@
       "model_id": "ALE-MATL-010-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.198875+00:00",
       "content_hash": "sha256:557b48caaf369c0e773c21309e40c6bf13ca14668db639abe64d05df574c574e"
     },
     {
       "question_id": "0eeee30e-3276-4334-99ca-c941a3fb78bb",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "The formula for board feet when thickness and width are in inches and length is in feet is ___.",
+      "text": "When paying by board foot, what is multiplied by the agreed price?",
       "options": [
         {
           "id": "a",
-          "text": "BF = (T × W × L) ÷ 144"
+          "text": "Total board feet"
         },
         {
           "id": "b",
-          "text": "BF = (T × W × L) ÷ 12"
+          "text": "Only the number of pieces"
         },
         {
           "id": "c",
-          "text": "BF = (T + W + L) ÷ 12"
+          "text": "Only the wall height"
         },
         {
           "id": "d",
-          "text": "BF = T × W × L"
+          "text": "Only the cement-bag count"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "BF = (T × W × L) ÷ 144 is used only if ALL three dimensions (including length) are in inches.",
-        "c": "BF = (T + W + L) ÷ 12 uses addition instead of multiplication; incorrect.",
-        "d": "BF = T × W × L without division gives cubic units, not board feet.",
-        "correct": "When T (inches) × W (inches) × L (feet), the formula is BF = (T × W × L) ÷ 12. The ÷ 12 accounts for converting feet to inches (1 foot = 12 inches).",
-        "takeaway": "Always use BF = (T × W × L) ÷ 12 when thickness and width are in inches and length is in feet."
-      },
+      "rationale": "Fajardo states board-foot payment uses total board feet times the agreed price.",
       "explanation": null,
       "code_citation": "Standard lumber measurement",
       "bloom_level": "remember",
@@ -401,30 +353,30 @@
       "model_id": "ALE-MATL-010-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.196574+00:00",
       "content_hash": "sha256:2d83230707532d60d2620e96710c491df5666c2ef35345a5268da8fc0d0bc3b7"
     },
     {
       "question_id": "334d282d-5724-4aac-8f9d-1590bb664c15",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "What is the difference in board feet between a 2×4×12 board and a 2×4×10 board?",
+      "text": "What common mistake occurs when the number of pieces is omitted?",
       "options": [
         {
           "id": "a",
-          "text": "1.33 BF"
+          "text": "The total board feet is understated"
         },
         {
           "id": "b",
-          "text": "1.67 BF"
+          "text": "The formula becomes more accurate"
         },
         {
           "id": "c",
-          "text": "2.0 BF"
+          "text": "The length changes to meters automatically"
         },
         {
           "id": "d",
-          "text": "3.33 BF"
+          "text": "The lumber becomes CHB"
         }
       ],
       "correct_option_id": "a",
@@ -432,14 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.33 BF is the correct difference.",
-        "b": "1.67 BF results from a rounding error.",
-        "c": "2.0 BF may result from using an incorrect formula.",
-        "d": "3.33 BF is too high.",
-        "correct": "2×4×12: (2 × 4 × 12) ÷ 12 = 8 BF. 2×4×10: (2 × 4 × 10) ÷ 12 = 6.67 BF. Difference: 8 – 6.67 = 1.33 BF.",
-        "takeaway": "When comparing two boards: calculate BF for each, then subtract. The difference is proportional to the difference in length."
-      },
+      "rationale": "The number of pieces is part of the total board-foot calculation.",
       "explanation": "1.33 BF is the correct difference. 1.67 BF results from a rounding error. 2.0 BF may result from using an incorrect formula. 3.33 BF is too high. 2×4×12: (2 × 4 × 12) ÷ 12 = 8 BF. 2×4×10: (2 × 4 × 10) ÷ 12 = 6.67 BF. Difference: 8 – 6.67 = 1.33 BF. When comparing two boards: calculate BF for each, then subtract. The difference is proportional to the difference in length.",
       "code_citation": "Standard lumber measurement",
       "bloom_level": "apply",
@@ -452,44 +397,38 @@
       "model_id": "ALE-MATL-010-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-05-06T15:55:59.446837+00:00",
+      "updated_at": "2026-07-20T01:13:28.192562+00:00",
       "content_hash": "sha256:5bfb9fd5a1fd1f6d53c146f7aeb871519342b95d777eb4ebf4a92fa7aae97a6c"
     },
     {
       "question_id": "0bb9d502-efaf-40cd-b345-6e187141c748",
       "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
       "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
-      "text": "How many board feet are in one piece of 2×6×10 lumber?",
+      "text": "Why should the /144 form not be used when length is already in feet?",
       "options": [
         {
           "id": "a",
-          "text": "8 BF"
+          "text": "It would divide by 12 too much for the mixed-unit formula"
         },
         {
           "id": "b",
-          "text": "10 BF"
+          "text": "It would add hook lengths"
         },
         {
           "id": "c",
-          "text": "12 BF"
+          "text": "It would count hollow blocks"
         },
         {
           "id": "d",
-          "text": "15 BF"
+          "text": "It would classify adhesives"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "8 BF results from (2 × 4 × 12) ÷ 12 (wrong dimensions).",
-        "c": "12 BF results from (2 × 6 × 12) ÷ 12 (using 12 feet instead of 10).",
-        "d": "15 BF results from an incorrect formula or calculation.",
-        "correct": "BF = (2 × 6 × 10) ÷ 12 = 120 ÷ 12 = 10 BF.",
-        "takeaway": "A standard 2×6×10 board = 10 BF. Another anchor value for quick reference."
-      },
+      "rationale": "Fajardo uses /12 when thickness and width are inches and length is feet.",
       "explanation": null,
       "code_citation": "Board foot = 144 cu in (US standard, used in PH construction)",
       "bloom_level": "apply",
@@ -502,7 +441,7 @@
       "model_id": "ALE-MATL-010-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.194188+00:00",
       "content_hash": "sha256:54a4abd11f1762eaa86af55819db64fec83690b008785300b56c38503591e0c1"
     }
   ]

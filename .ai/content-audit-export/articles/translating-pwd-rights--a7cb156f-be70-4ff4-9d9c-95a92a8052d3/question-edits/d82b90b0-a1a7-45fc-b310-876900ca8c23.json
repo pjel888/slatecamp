@@ -2,50 +2,47 @@
   "question_id": "d82b90b0-a1a7-45fc-b310-876900ca8c23",
   "baseline_hash": "sha256:5d746c39e763e4214debf3e9faeae4aee5521951010e4db6df76614ec6d114dc",
   "action": "replace",
-  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
-  "approved_by": "codex-local-first-batch-040",
-  "approved_at": "2026-05-11T14:04:00+08:00",
+  "reason": "council-remediation-2026-07-20 (Agent H apply): corrects CONFIRMED_ERROR — WC seat height is 450 mm (not 460 mm), so the grab bar AFF height is 450 + 300 = 750 mm (not 760 mm). Source verbatim: 'The height of toilet seat shall be 450 mm.' (BP 344 2024 Revised IRR, PDF p.37 line 1199) and 'Both grab bars shall be installed 300 mm high from the top of the toilet seat to the top of the grab bars.' (PDF p.36 lines 1153-1154). Normalizes bare 'Sec. 6' citation to Appendix form. Supersedes the prior batch-040 topic-swap placeholder which replaced this grab-bar question with an unrelated door-clear-space question.",
+  "approved_by": "agent-h-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+00:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-040-local-first",
+    "batch_id": "council-remediation-2026-07-20-bp344-numeric",
     "checked_sources": [
       {
-        "source_id": "bp-344-2024-rirr-ncda-local",
-        "label": "BP 344 2024 Revised IRR - NCDA",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_id": "bp-344-2024-revised-irr",
+        "label": "BP 344 2024 Revised IRR (supplementary verbatim text)",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/audit-evidence/bp344-accessible-washrooms/bp344-2024-revised-irr.txt",
         "checked_markdown_lines": [
-          "BP 344 2024 IRR refined markdown lines 36-70",
-          "BP 344 2024 IRR refined markdown lines 198-224",
-          "BP 344 2024 IRR refined markdown lines 228-305",
-          "BP 344 2024 IRR refined markdown lines 770-850"
+          "BP 344 2024 Revised IRR line 1199 (PDF p.37): 'The height of toilet seat shall be 450 mm.'",
+          "BP 344 2024 Revised IRR lines 1153-1154 (PDF p.36): 'Both grab bars shall be installed 300 mm high from the top of the toilet seat to the top of the grab bars.'"
         ]
       }
     ],
-    "citation": "BP 344 2024 Revised IRR, Doors"
+    "citation": "BP 344 2024 Revised IRR, Appendix A (Accessible Toilet Cubicles), PDF p.36-37 lines 1153-1154, 1199"
   },
   "proposed": {
-    "text": "What minimum clear level space must be provided before and extending beyond a door?",
+    "text": "An architect is designing a grab bar for the side wall of an accessible WC cubicle. The WC seat height is 450 mm AFF. At what height above finished floor should the horizontal grab bar be mounted?",
     "options": [
       {
-        "id": "b040-a7cb-08-a",
-        "text": "1800 mm by 1800 mm"
+        "id": "A",
+        "text": "900 mm AFF — matching the lever handle and handrail height standard"
       },
       {
-        "id": "b040-a7cb-08-b",
-        "text": "900 mm by 900 mm"
+        "id": "B",
+        "text": "300 mm AFF — as stated in the BP 344 grab bar specification"
       },
       {
-        "id": "b040-a7cb-08-c",
-        "text": "1200 mm by 1200 mm"
+        "id": "C",
+        "text": "750 mm AFF — 300 mm above the 450 mm WC seat height"
       },
       {
-        "id": "b040-a7cb-08-d",
-        "text": "1500 mm by 1500 mm"
+        "id": "D",
+        "text": "760 mm AFF — 300 mm above a 460 mm WC seat height"
       }
     ],
-    "correct_option_id": "b040-a7cb-08-a",
-    "rationale": "Correct answer: 1800 mm by 1800 mm. This is directly supported by BP 344 2024 Revised IRR, Doors.",
-    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Doors.",
-    "code_citation": "BP 344 2024 Revised IRR, Doors"
+    "correct_option_id": "C",
+    "rationale": "Correct answer: C — 750 mm AFF. The WC seat is 450 mm AFF and the grab bar sits 300 mm above the seat top, so 450 + 300 = 750 mm AFF. Source verbatim: 'The height of toilet seat shall be 450 mm.' (BP 344 2024 Revised IRR, PDF p.37 line 1199) and 'Both grab bars shall be installed 300 mm high from the top of the toilet seat to the top of the grab bars.' (PDF p.36 lines 1153-1154). Option D uses the erroneous 460 mm seat height, which is not in the source.",
+    "explanation": "BP 344 2024 Revised IRR sets the WC seat height at 450 mm AFF (Appendix A, PDF p.37 line 1199) and requires both the fixed L-type and flip-up grab bars to be installed 300 mm above the top of the toilet seat (PDF p.36 lines 1153-1154). Therefore the grab bar AFF height = 450 + 300 = 750 mm. The 460 mm / 760 mm figures are not in the source and are the documented errors being corrected. The most common trap is reading '300 mm' as the absolute AFF height rather than as the offset above the seat.",
+    "code_citation": "BP 344 2024 Revised IRR, Appendix A (Accessible Toilet Cubicles), items on grab bar and seat height (PDF p.36-37 lines 1153-1154, 1199)"
   }
 }

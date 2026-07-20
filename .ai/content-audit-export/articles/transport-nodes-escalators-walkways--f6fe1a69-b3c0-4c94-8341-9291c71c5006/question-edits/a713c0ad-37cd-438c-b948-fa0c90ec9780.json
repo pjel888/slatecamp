@@ -2,9 +2,9 @@
   "question_id": "a713c0ad-37cd-438c-b948-fa0c90ec9780",
   "baseline_hash": "sha256:d884c0dab250ad1277cde8524ec4c931f5bd421ffae5c16a43d1bb73f794bcfa",
   "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
     "parent_article_slug": "transport-nodes-escalators-walkways",
@@ -23,41 +23,28 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "What is the maximum escalator inclination in the audited 2024 BP 344 IRR text?",
+    "text": "In an accessible transit station, directional tactile bars form a continuous accessible path. To which destination points must this tactile path connect, according to BP 344?",
     "options": [
       {
-        "id": "a",
-        "text": "30 degrees"
+        "id": "A",
+        "text": "Drop-offs, ticketing, and emergency exits only — other routes use ISA signage instead, which may not provide full accessibility"
       },
       {
-        "id": "b",
-        "text": "45 degrees"
+        "id": "B",
+        "text": "Drop-offs, main entrance, and platform boarding zones only, which may not cover all necessary areas for accessibility"
       },
       {
-        "id": "c",
-        "text": "1:20"
+        "id": "C",
+        "text": "Elevator lobbies and platform boarding zones only, with warning domes at all other hazards, ensuring safety but not full connectivity"
       },
       {
-        "id": "d",
-        "text": "1:15"
+        "id": "D",
+        "text": "Drop-offs, security, ticketing, ticket gates, stairs, escalators, elevators, and platform boarding zones"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "The checked escalator provisions set maximum inclination at 30 degrees.",
-    "explanation": "The checked escalator provisions set maximum inclination at 30 degrees.",
-    "code_citation": "BP 344 2024 IRR, escalators and passenger conveyances",
-    "bloom_level": "remember",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Transport Nodes, Escalators, and Walkways",
-      "LEA Accessibility and Transport Design"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-transport-nodes-escalators-walkways-012"
+    "correct_option_id": "D",
+    "rationale": "The tactile path must link all key station nodes: drop-offs, security, ticketing, gates, stairs, escalators, elevators, and boarding zones. BP 344 requires directional tactile bars to form a continuous route linking every functional node a transit passenger must navigate — from drop-off and entrance through security, ticketing, and gates to vertical circulation and the platform. Partial networks (only entrance-to-platform or only elevator lobbies) leave visually impaired users unable to independently navigate the station.",
+    "explanation": "The tactile path must be a complete network linking all functional station nodes per BP 344.",
+    "code_citation": null
   }
 }

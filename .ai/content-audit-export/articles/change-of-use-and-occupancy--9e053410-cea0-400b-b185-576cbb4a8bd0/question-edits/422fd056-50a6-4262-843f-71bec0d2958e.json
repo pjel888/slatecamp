@@ -2,9 +2,9 @@
   "question_id": "422fd056-50a6-4262-843f-71bec0d2958e",
   "baseline_hash": "sha256:c01485e1a1286a320c73b3c60917c4f2e4df52b961db56c89571410e2092de7e",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "Which occupancy group under Section 701 covers accessory uses such as private garages, carports, sheds, fences over 1.80 meters, tanks, and towers?",
+    "text": "Who has the SOLE authority to approve or deny a change of occupancy application under PD 1096?",
     "options": [
       {
         "id": "a",
-        "text": "Group J covers accessory occupancies."
+        "text": "The building owner or architect may self-certify the change"
       },
       {
         "id": "b",
-        "text": "G"
+        "text": "The Building Official"
       },
       {
         "id": "c",
-        "text": "r"
+        "text": "The City Mayor"
       },
       {
         "id": "d",
-        "text": "o"
+        "text": "The BFP (Bureau of Fire Protection)"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Group J covers accessory occupancies. This is supported by Group F covers all carports regardless of use..",
-    "explanation": "Group J covers accessory occupancies. The cited local source family controls this item: Group F covers all carports regardless of use..",
-    "code_citation": "Group D covers all private garages."
+    "correct_option_id": "b",
+    "rationale": "Self-certification is not permitted under any provision of PD 1096 for changes of occupancy. The Building Official's authority is absolute for this process. Option C (Mayor) confuses administrative governance with building code enforcement. Option D (BFP) handles fire safety but not occupancy classification.",
+    "explanation": null,
+    "code_citation": null
   }
 }

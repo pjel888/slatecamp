@@ -1,0 +1,758 @@
+{
+  "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:c3564f6a3d84258549bc524f8be7e193befb11676f3696507bc67495431ed7c8",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "bb031494-1d9c-4f02-9fc6-3aa9325af3c0",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "A 15-story mixed-use building in the Philippines will have a shopping mall on floors 1–5. The architect proposes only escalators for vertical transportation between mall levels. What accessibility and building code violations result from this design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No violation; escalators are sufficient if they are wide enough (1000 mm) and equipped with handrails on both sides"
+        },
+        {
+          "id": "b",
+          "text": "BP 344 violation only; at least one accessible elevator must be provided regardless of escalator capacity"
+        },
+        {
+          "id": "c",
+          "text": "Minor violation; elevators required only for upper residential floors (6–15) unless the total floor area exceeds 10,000 sqm"
+        },
+        {
+          "id": "d",
+          "text": "Compliant if handrail heights and emergency stops meet PD 1096 standards, provided the escalators are also equipped with audible signals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Escalator width is irrelevant to accessibility compliance; escalators cannot substitute for elevators under BP 344.",
+        "c": "Residential floors also require accessible vertical transportation, but the violation occurs at the mall level itself where public accessibility is mandated.",
+        "d": "Handrail and emergency stop compliance is necessary but insufficient; the fundamental requirement for an accessible elevator is independent of these features.",
+        "correct": "BP 344 explicitly mandates at least one accessible elevator in all public buildings. Escalators and moving walks do NOT count toward accessible vertical transportation requirements. An escalator-only design for the mall floors violates accessibility law regardless of width or speed.",
+        "takeaway": "BP 344 compliance requires accessible elevator provision in addition to escalators in any public building; escalators are supplementary, not substitute, vertical transportation."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Accessibility: BP 344 and Vertical Transportation' section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:126367138387709e17a2608c89760693d36e4f5a85515b92b812eabe17c6e7bd"
+    },
+    {
+      "question_id": "d11894bb-862f-401c-af49-0a85a4ed50c5",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "An escalator floor opening penetrates a 2-hour fire-rated floor assembly. The building is a single-tenant office (not a high-rise). Which fire protection strategy is most appropriate, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sprinkler curtain only; it is less expensive and adequate for low-rise office buildings, providing sufficient protection"
+        },
+        {
+          "id": "b",
+          "text": "Rolling shutter only; it provides complete compartmentalization and is suitable regardless of building height, ensuring compliance with fire codes"
+        },
+        {
+          "id": "c",
+          "text": "Either sprinkler curtain or rolling shutter is acceptable; choice depends on building compartmentalization strategy and local authority requirements"
+        },
+        {
+          "id": "d",
+          "text": "No active protection required; the fire-rated floor assembly is sufficient if the escalator enclosure is fireproofed, meeting minimum safety standards"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While sprinkler curtains are less expensive, they provide a soft barrier (spray curtain). High-rise buildings typically prefer rolling shutters for complete sealing; the building type influences the choice.",
+        "b": "Rolling shutters are effective but not mandatory; sprinkler curtains are acceptable per code, and cost-benefit analysis may favor the spray approach in some circumstances.",
+        "d": "Active fire protection systems are mandatory at floor penetrations; passive fireproofing of the escalator structure alone does not satisfy PD 1096 requirements.",
+        "correct": "PD 1096 permits either sprinkler curtain or rolling shutter at escalator floor openings. The choice depends on the building's compartmentalization strategy, height, tenancy, and local authority preferences. Both systems must activate within 30 seconds and be tested quarterly.",
+        "takeaway": "Escalator floor opening fire protection is flexible between two approved methods (sprinkler curtain or rolling shutter); selection depends on compartmentalization strategy and building-specific factors."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Fire Protection: Escalator Floor Openings' section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:53180da885941c4430710aa7bfae49c358aad6289001962b104d66df0465799e"
+    },
+    {
+      "question_id": "9e245b4c-642a-4c53-ae0e-5da0c725bbcc",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "A 1000 mm escalator at 0.5 m/s is projected to carry 5,500 passengers/hour during peak periods. If demand increases and a second identical escalator is installed, what is the total system capacity, and what factors could limit this theoretical maximum?",
+      "options": [
+        {
+          "id": "a",
+          "text": "11,000 persons/hour with no limiting factors, assuming perfect conditions and no external disruptions"
+        },
+        {
+          "id": "b",
+          "text": "11,000 persons/hour maximum theoretical; actual throughput limited by landing congestion, dwell time, and step spacing geometry"
+        },
+        {
+          "id": "c",
+          "text": "7,500 persons/hour; the second escalator reduces individual capacity by interference effects, which are common in high-traffic areas"
+        },
+        {
+          "id": "d",
+          "text": "6,750 persons/hour per unit; two units operate at reduced speed to prevent overloading, which is a common safety measure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 11,000 is the theoretical maximum, real-world factors significantly reduce actual throughput; ignoring these limitations leads to undersized floor areas.",
+        "c": "Interference effects between units do not reduce individual capacity; the issue is in landing area design and passenger flow management, not the escalators themselves.",
+        "d": "Operating at reduced speed would lower total capacity; the standard design assumes full speed operation for both units.",
+        "correct": "Two identical escalators can theoretically deliver 11,000 persons/hour (2 × 5,500). However, actual throughput is limited by landing congestion, passenger dwell time on steps, step spacing geometry, and balancing passenger loads between units.",
+        "takeaway": "Escalator capacity calculations must account for landing area dimensions, passenger distribution, and dwell times; theoretical capacity requires proper architectural integration."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Passenger Capacity' section",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:37cfc2d93a287c87f99fd0f065812e651a9d374d24c6143e4d0ee44170565581"
+    },
+    {
+      "question_id": "80b5dd09-7852-4765-b5b6-bd7d771a1caa",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "A dumbwaiter in a hospital serves multiple floors, transporting meal trays and light medical supplies. What is the typical maximum load capacity and operating speed for building-integrated dumbwaiters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200–300 kg maximum load at 0.8 m/s speed, which is suitable for larger installations"
+        },
+        {
+          "id": "b",
+          "text": "50–100 kg maximum load at 0.5 m/s typical speed"
+        },
+        {
+          "id": "c",
+          "text": "25–50 kg maximum load at 1.0 m/s speed, which is faster than typical installations"
+        },
+        {
+          "id": "d",
+          "text": "500 kg maximum load at 0.25 m/s speed, which is not typical for dumbwaiters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "200–300 kg loads and 0.8 m/s speeds exceed dumbwaiter specifications; these loads require dedicated freight elevators.",
+        "c": "25–50 kg is below typical dumbwaiter capacity; 1.0 m/s is excessive speed for precision food/document delivery.",
+        "d": "500 kg capacity is appropriate for freight elevators, not dumbwaiters; the speed is also too slow for practical food service.",
+        "correct": "Dumbwaiters are designed for light freight (documents, food, small packages) with typical capacity of 50–100 kg and operating speed of 0.5 m/s. They are much smaller and slower than passenger elevators.",
+        "takeaway": "Dumbwaiters are light-duty freight systems with 50–100 kg capacity and 0.5 m/s speed; they serve as supplementary transport for documents and meals, not heavy materials."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Dumbwaiters' section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d1e15123bfb038f59d2e58c9d653287b5600968d59a8f17a8153a7b64499d87d"
+    },
+    {
+      "question_id": "c4812c99-1489-410e-9115-c72127ed9448",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "What is the standard operating speed for escalators in most commercial applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.35 m/s"
+        },
+        {
+          "id": "b",
+          "text": "0.5 m/s"
+        },
+        {
+          "id": "c",
+          "text": "0.75 m/s"
+        },
+        {
+          "id": "d",
+          "text": "1.0 m/s"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.35 m/s is slower than standard; typically used only in specialized low-speed applications.",
+        "c": "0.75 m/s exceeds the maximum permitted speed of 0.65 m/s and would violate PD 1096 safety requirements.",
+        "d": "1.0 m/s is far beyond code limits and would create dangerous conditions for passenger ingress/egress.",
+        "correct": "0.5 m/s is the standard design velocity for escalators in most commercial, retail, and transportation facilities, balancing throughput with passenger safety and handrail synchronization.",
+        "takeaway": "Standard escalator speed of 0.5 m/s is the baseline for capacity and safety calculations; maximum speed is 0.65 m/s only in specific high-capacity installations."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Operating Speed' section",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:220ed54c78a285e3a3fb7bc2b36696f6b18efd5b625b0eb4e5f4944902412bbd"
+    },
+    {
+      "question_id": "18961be2-9280-4199-b18c-8e87bf427c14",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "Why do international standards (EN 115-1) allow escalators up to 35° inclination (vs. 30° standard) only in specific circumstances?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To increase passenger capacity by steepening the angle, which can be beneficial in high-traffic areas"
+        },
+        {
+          "id": "b",
+          "text": "When structural or headroom constraints require steeper angles; steeper designs need stronger balustrades and emergency mechanisms"
+        },
+        {
+          "id": "c",
+          "text": "To reduce the width of the escalator footprint, allowing for more efficient use of space in compact environments"
+        },
+        {
+          "id": "d",
+          "text": "Because 35° is inherently safer than 30° for passenger egress, providing a more comfortable ride"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Steeper angles do not increase capacity; they affect step geometry and may reduce throughput due to safety constraints.",
+        "c": "Inclination angle does not directly reduce footprint; footprint depends on rise height and angle together; a steeper angle with the same rise creates a shorter run but higher structural loads.",
+        "d": "30° is actually safer than 35° for passenger egress; 35° is permitted only as an exception when the 30° standard cannot be achieved.",
+        "correct": "PD 1096 permits 35° inclination only when structural or headroom limitations make the standard 30° angle impossible. Steeper angles increase forces on safety systems and require reinforced handrails, balustrades, and emergency stop mechanisms.",
+        "takeaway": "Inclination limits directly impact handrail synchronization, emergency egress pathways, and structural robustness; 35° is a necessary exception, not a preferred design."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Inclination and Rise' section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e8c80fe4c53047b3d0b54108d88a054fe2c4b2ef36f7c1f245500584c996b51"
+    },
+    {
+      "question_id": "324002cc-686c-480f-92b1-73ea92126a6c",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "What are the three standard escalator step widths per international manufacturer specifications (e.g. EN 115, Schindler)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "500 mm, 700 mm, 900 mm"
+        },
+        {
+          "id": "b",
+          "text": "600 mm, 800 mm, 1000 mm"
+        },
+        {
+          "id": "c",
+          "text": "650 mm, 850 mm, 1050 mm"
+        },
+        {
+          "id": "d",
+          "text": "600 mm, 750 mm, 1000 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "500 mm and 700 mm are not standard widths in international escalator specifications.",
+        "c": "650 mm and 850 mm fall outside ISO standard dimensions; manufacturers do not use these intermediate widths.",
+        "d": "750 mm is not a standard width; the three standards are 600, 800, and 1000 mm.",
+        "correct": "ISO 4287:2010 establishes three standard widths: 600 mm (24 inches) for lower-traffic areas, 800 mm (32 inches) as most common in retail/transportation, and 1000 mm (40 inches) for high-traffic transit stations.",
+        "takeaway": "Standard escalator step widths are fixed at 600, 800, and 1000 mm to ensure compatibility with safety systems, handrail designs, and capacity calculations across different applications."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Standard Dimensions' section",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f86000eb8ddb38eb6ee3432aecbfe2f1fddef63b17bb8d116c5929c4ec52b96c"
+    },
+    {
+      "question_id": "bee7cf46-7744-4c1e-996b-8127526de640",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "An escalator operates at 0.65 m/s (maximum speed) with 1000 mm width. How does this affect the design requirements compared to a 0.5 m/s installation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No design changes; speed affects only throughput, not safety systems, which remain consistent across different operational speeds"
+        },
+        {
+          "id": "b",
+          "text": "Enhanced safety systems required including stronger handrail drive and guardrail reinforcement"
+        },
+        {
+          "id": "c",
+          "text": "Wider step spacing required to accommodate the higher velocity, ensuring passenger safety and comfort during transit"
+        },
+        {
+          "id": "d",
+          "text": "The balustrade height must be increased by 200 mm minimum to prevent accidental falls and ensure compliance with updated safety standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Speed directly affects safety system robustness; higher velocities generate greater passenger momentum and require stronger barriers.",
+        "c": "Step spacing is determined by inclination angle and handrail geometry, not operating speed; width adjustment is not the solution.",
+        "d": "Balustrade height is fixed at handrail standard (0.90–1.10 m) regardless of speed; other structural reinforcement is needed instead.",
+        "correct": "Maximum speed installations (0.65 m/s) require enhanced safety systems because faster passenger movement increases forces on handrails, balustrades, and emergency stopping mechanisms. These installations need reinforced designs.",
+        "takeaway": "Maximum speed escalators (0.65 m/s) demand enhanced safety systems and structural reinforcement; this affects motor sizing, control systems, and emergency response capability."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Operating Speed' section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:359e935ddf8345d32c35dbce909a728d98a4beb62f241f10321db02a7f5139af"
+    },
+    {
+      "question_id": "86c2e9b2-8233-4d05-9f83-6a6123fb0834",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "Moving walks in a major airport terminal are operating at maximum design inclination. What additional safety features must be implemented beyond horizontal moving walk standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduced speed to 0.35 m/s and standard handrail height, ensuring passenger safety"
+        },
+        {
+          "id": "b",
+          "text": "Reinforced balustrades, anti-slip surfaces, and enhanced emergency stopping protocols"
+        },
+        {
+          "id": "c",
+          "text": "Wider steps (1200 mm) and double handrails on each side, providing additional support"
+        },
+        {
+          "id": "d",
+          "text": "Automatic passenger detection and speed reduction when occupancy exceeds 50%, enhancing safety"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Speed reduction is not the primary solution; anti-slip surfaces and reinforced barriers are the standard requirements for inclined moving walks.",
+        "c": "Standard moving walk widths (typically 0.6–1.0 m) are adequate; 1200 mm is not a standard width, and double handrails are not required.",
+        "d": "Occupancy-based speed reduction is a modern VFD feature but not the specific safety requirement for inclined moving walks; physical barrier reinforcement is primary.",
+        "correct": "Moving walks above 12° maximum inclination require reinforced balustrades, anti-slip surfaces, and enhanced emergency stopping protocols. At or near the 12° limit, all these features are necessary to prevent passenger slipping and ensure safe egress.",
+        "takeaway": "Inclined moving walks at maximum 12° require robust passive safety features including reinforced barriers and anti-slip treads, plus enhanced emergency protocols per EN 115-1."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Inclination Limits' section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.011714+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bcc4a7b61362e60ea92c2c16f2777d40bdc2d40eac031d7883a26411bae699e9"
+    },
+    {
+      "question_id": "fee3c36c-989a-4a9f-8ac4-fe9399c87b13",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "A facilities manager must budget for annual escalator maintenance and certification. Under ASME A17.1 / EN 115-1, what certifications and testing must occur at least annually?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Emergency stop button functional testing only; no third-party certification required unless specified by local regulations"
+        },
+        {
+          "id": "b",
+          "text": "Third-party certification by accredited testing organization; certification documents must be posted and retained minimum 3 years"
+        },
+        {
+          "id": "c",
+          "text": "Manufacturer inspection only; facility manager testing is sufficient for compliance with basic safety standards"
+        },
+        {
+          "id": "d",
+          "text": "Quarterly fire protection system testing; annual certification is optional unless mandated by the authority having jurisdiction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Emergency stop testing is required but separate from mandatory third-party certification; the code explicitly requires external certification.",
+        "c": "Manufacturer inspection is part of maintenance but does not satisfy the requirement for independent third-party certification.",
+        "d": "Fire protection testing is quarterly; it does not replace the annual third-party certification requirement.",
+        "correct": "ASME A17.1 / EN 115-1 mandates annual third-party certification of all escalators and moving walks by accredited testing organizations. Certification documents must be posted at landing areas and retained for a minimum of 3 years as proof of compliance.",
+        "takeaway": "Annual third-party escalator certification by accredited organizations is a non-negotiable requirement; documents must be posted and archived for regulatory compliance."
+      },
+      "explanation": null,
+      "code_citation": "ASME A17.1 / EN 115-1, 'Annual Certification'",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.710387+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5f8c182d1c0ed02f389809045974533f5617f7a28598e8373cef1840cb1866dd"
+    },
+    {
+      "question_id": "28c18317-7373-497a-a4cd-ed0bcd826d94",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "A building owner compares two escalator specifications for a new shopping center: Option A (800 mm, 0.5 m/s, 30° standard) vs. Option B (1000 mm, 0.65 m/s, 35° maximum). What are the implications of choosing Option B?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Option B provides 50% higher capacity with minimal additional cost; always preferred for commercial projects"
+        },
+        {
+          "id": "b",
+          "text": "Option B provides higher theoretical capacity but requires enhanced safety systems, higher motor power (kW), stronger structural support, and increased maintenance complexity due to maximum design limits"
+        },
+        {
+          "id": "c",
+          "text": "Option B reduces energy consumption by using maximum inclination; it is more efficient than Option A"
+        },
+        {
+          "id": "d",
+          "text": "Option B is identical in safety profile to Option A; the choice depends only on aesthetic preferences"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Higher capacity comes with trade-offs; it is not automatically 'always preferred' without considering infrastructure costs, maintenance burden, and structural capacity.",
+        "c": "Steeper inclination (35°) increases energy consumption by lifting passengers at a sharper angle; it does not reduce power draw.",
+        "d": "Option B and Option A have substantially different safety profiles due to speed and inclination differences; aesthetics are irrelevant to this fundamental design choice.",
+        "correct": "Option B (1000 mm, 0.65 m/s, 35°) leverages maximum design parameters across all dimensions. This delivers higher capacity but demands enhanced safety systems (reinforced balustrades, stronger emergency stops), larger motors (estimated 30–45 kW vs. 15–30 kW for Option A), heavier structural loads, and more intensive maintenance due to operating at design limits.",
+        "takeaway": "Selecting maximum-specification escalators (Option B) maximizes throughput but increases capital cost, motor sizing, structural demands, and maintenance liability; design choice must align with budget and operational capacity."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, multiple sections ('Passenger Capacity', 'Operating Speed', 'Inclination and Rise')",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.710387+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:501a34f7452900587be0cc70cb6ab4aa278ddf5ddaca4ca75efaedfb84c4ad14"
+    },
+    {
+      "question_id": "e28aec6d-29d4-45bf-b067-f3e80ad48515",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "What is the required functional test interval for escalator emergency stop buttons under ASME A17.1 / EN 115-1 maintenance protocols?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Daily testing before facility opening"
+        },
+        {
+          "id": "b",
+          "text": "Weekly testing by maintenance personnel"
+        },
+        {
+          "id": "c",
+          "text": "Every 30 days functional testing"
+        },
+        {
+          "id": "d",
+          "text": "Quarterly inspection and annual certification only"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Daily testing is excessively frequent and operationally impractical; 30-day intervals balance safety assurance with maintenance efficiency.",
+        "b": "Weekly testing exceeds the standard requirements; the code specifies 30-day intervals, not weekly.",
+        "d": "Quarterly and annual inspections are separate maintenance tasks; emergency stop button functional testing must occur every 30 days specifically.",
+        "correct": "ASME A17.1 / EN 115-1 requires functional testing of emergency stop buttons every 30 days to ensure rapid response capability in emergencies. This regular interval confirms that buttons are accessible and mechanically responsive.",
+        "takeaway": "Emergency stop buttons on escalators require 30-day functional testing as a core maintenance requirement to ensure immediate availability in emergency situations."
+      },
+      "explanation": null,
+      "code_citation": "ASME A17.1 / EN 115-1, 'Maintenance and Inspection Requirements'",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.710387+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:91ebf9d229fd771678a9d2a7dcbf674eb89ec174de5ab90951b7c00c06e997f8"
+    },
+    {
+      "question_id": "99555610-8ce9-412f-8f31-1df93453df74",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "A hospital design includes a service escalator (non-public, staff use only) connecting laundry and central materials floors. The architect proposes eliminating the accessible elevator serving this area to save cost, replacing it with a staff-only escalator. Under BP 344 and PD 1096, what is the correct analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acceptable; staff elevators are exempt from BP 344 accessibility requirements, and escalators are permitted in service areas where public access is restricted"
+        },
+        {
+          "id": "b",
+          "text": "Violation of BP 344; accessibility requirements apply to all staff work areas. Escalators do not satisfy accessibility mandates regardless of public vs. staff use. An accessible elevator is mandatory."
+        },
+        {
+          "id": "c",
+          "text": "Acceptable if emergency stop buttons are provided at all service area entrances, ensuring safety compliance"
+        },
+        {
+          "id": "d",
+          "text": "Compliant only if the escalator is designated 'emergency-use-only' in the hospital's safety plan, which must be approved by relevant authorities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "BP 344 makes no distinction between public and staff areas; all work areas must be accessible to persons with disabilities. The 'staff-only' designation does not exempt the area from accessibility requirements.",
+        "c": "Emergency stop compliance is necessary but insufficient; it does not address the fundamental accessibility requirement for elevator provision.",
+        "d": "Designating the escalator as 'emergency-use-only' does not change the fact that it is not an accessible vertical transportation system. BP 344 mandates elevators, not escalators.",
+        "correct": "BP 344 accessibility requirements apply to all work areas where staff perform their duties, not only public spaces. Staff members may include those with mobility disabilities. Escalators cannot substitute for accessible elevators under any circumstance (public or staff use). An accessible elevator must be provided regardless of usage designation.",
+        "takeaway": "BP 344 applies to all building areas (public and staff); escalators cannot replace accessible elevators in any context. Staff work areas require the same accessible vertical transportation as public areas."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Accessibility: BP 344 and Vertical Transportation' section",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.710387+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aa8a9416b830204b4d9a945f3b57015548665fc14c1cd594ec59b03c40cd1706"
+    },
+    {
+      "question_id": "17029527-5eb6-4d33-ad62-a17b985a7181",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "Pneumatic tube systems in a hospital mail room operate at typical carrier velocity of 6–8 m/s. What pressure range is standard for these systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10–20 kPa"
+        },
+        {
+          "id": "b",
+          "text": "40–80 kPa"
+        },
+        {
+          "id": "c",
+          "text": "100–150 kPa"
+        },
+        {
+          "id": "d",
+          "text": "200+ kPa"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10–20 kPa is too low to achieve the required carrier velocity and throughput for building systems.",
+        "c": "100–150 kPa exceeds building pneumatic tube standards; such pressures are used in industrial or high-speed specialty systems.",
+        "d": "200+ kPa is dangerous for building-integrated systems and could damage documents and small packages.",
+        "correct": "Pneumatic tube systems in buildings operate at 40–80 kPa (typical design pressure) with carrier velocity of 6–8 m/s. This pressure range balances rapid transit with safety for document and small package transport.",
+        "takeaway": "Standard pneumatic tube pressure of 40–80 kPa delivers 6–8 m/s carrier velocity suitable for mail, documents, and light packages in hospitals, offices, and retail facilities."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Pneumatic Tube Systems' section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.710387+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:03cbce93f58c1bc7ef186264e48923b3d4108c16e4bf67dfe180477bfe47f9dd"
+    },
+    {
+      "question_id": "df959a5e-3b3a-4d22-8000-5d0c65800618",
+      "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+      "topic_id": "8807fba7-a2a4-43dd-b0e5-5e57fc3befea",
+      "text": "A shopping mall escalator with VFD (variable frequency drive) currently consumes 25 kWh/day during standard operating hours. If the building installs motion sensors and low-traffic speed reduction, and standby consumption drops from 10% to 6% of rated power, what is the approximate annual energy savings in kWh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "912 kWh/year (4% reduction × 365 days)"
+        },
+        {
+          "id": "b",
+          "text": "1,460 kWh/year (estimated 20% overall reduction based on standby optimization)"
+        },
+        {
+          "id": "c",
+          "text": "2,920 kWh/year (40% reduction per article example)"
+        },
+        {
+          "id": "d",
+          "text": "Cannot be determined without motor rated power specifications"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Simple percentage reduction ignores that the 4% applies to rated motor power, not total daily consumption; the math oversimplifies the relationship.",
+        "b": "While 20% overall reduction is plausible, it cannot be directly calculated from the given standby change without motor power rating.",
+        "c": "The article states VFDs achieve 20–40% daily energy reduction compared to fixed-speed equipment, but the specific scenario here (standby-only optimization) requires more detailed analysis.",
+        "correct": "Calculating annual savings requires knowing the motor's rated power (kW) to determine the baseline consumption and apply the 4% reduction (10% to 6% standby). The question provides daily consumption in kWh but not the rated motor power. The article states annual savings of PHP 150,000–300,000 for typical installations, but this translates to actual kWh only with motor specifications.",
+        "takeaway": "Energy savings calculations require full specifications (rated motor power, daily operation hours, mode distribution); the article provides typical ranges (PHP 150k–300k annually, 20–40% reduction) but scenario-specific savings need detailed engineering analysis."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-002-07.mdx, 'Energy Consumption and Standby Modes' section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-002-07-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:59.710387+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:01a48655e353f36657a89e0e29c00084e673e44089666bc7de1d16ead063d022"
+    }
+  ]
+}

@@ -8,36 +8,37 @@
       "question_id": "ee97d4e4-50a8-4c93-a8ed-0397f4c26b6a",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "Which cost category is explicitly excluded from Project Construction Cost (PCC)?",
+      "text": "Which cost category is expressly excluded from Project Construction Cost (PCC) under SPP Document 202 Section 7.17?",
       "options": [
         {
           "id": "a",
-          "text": "Mechanical and electrical systems"
+          "text": "Mechanical and electrical building systems"
         },
         {
           "id": "b",
-          "text": "Structural elements and site work"
+          "text": "The Architect, Engineer, and Specialist Consultant fees"
         },
         {
           "id": "c",
-          "text": "Architect fees and consultant fees"
+          "text": "Fire protection and alarm systems"
         },
         {
           "id": "d",
-          "text": "Contractor labor and materials"
+          "text": "Materials and labor for installation"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mechanical and electrical systems are core components of PCC.",
-        "b": "Structural elements and site work are included in PCC.",
-        "d": "Contractor labor and materials are the foundation of PCC.",
-        "correct": "Architect fees and consultant fees for structural engineering, MEP design, or specialized consulting are explicitly excluded from PCC.",
-        "takeaway": "All professional fees (architect, structural engineer, MEP, cost estimator, sustainability consultants) are excluded from PCC—they are separate cost categories."
+        "a": "These building systems are listed within PCC when planned and designed for the project.",
+        "b": "SPP 202 Section 7.17 excludes the fees of the Architect, Engineer, and Specialist Consultants from PCC.",
+        "c": "These systems are listed within PCC when part of the completed building.",
+        "d": "Materials and labor for installation are expressly part of PCC.",
+        "correct": "SPP 202 Section 7.17 excludes the fees of the Architect, Engineer, and Specialist Consultants from PCC.",
+        "takeaway": "PCC is the completed-building construction cost base, not a container for professional fees."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -51,43 +52,44 @@
       "model_id": "ALE-PRAC-CMP-003-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.093657+00:00",
       "content_hash": "sha256:6268f3c3ddfdd689530cbdaaa2827e7c03b204bd7f38cfff87be2490e40243ad"
     },
     {
       "question_id": "c6907bc2-8c8b-4654-b167-7d65484931b7",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "What is the typical accuracy range for cost estimates at the end of Design Development?",
+      "text": "Which item is included in PCC when it is planned and designed by the Architect or consultants?",
       "options": [
         {
           "id": "a",
-          "text": "±25–35% accuracy"
+          "text": "The Architect fee being computed from PCC"
         },
         {
           "id": "b",
-          "text": "±15–20% accuracy"
+          "text": "Construction inspector salaries"
         },
         {
           "id": "c",
-          "text": "±5–10% accuracy"
+          "text": "The completed building systems indicated in the plans and specifications"
         },
         {
           "id": "d",
-          "text": "Absolutely precise; no variance allowed"
+          "text": "Owner financing cost for the project site"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "±25–35% is the accuracy range for Schematic Design.",
-        "c": "±5–10% applies to completed Contract Documents when specifications are fully detailed.",
-        "d": "No cost estimate is absolutely precise during the design phases.",
-        "correct": "By Design Development, cost estimate accuracy typically improves to ±15–20%. This reflects normal uncertainty in construction cost estimation before detailed specifications are completed.",
-        "takeaway": "Design Development cost estimates have ±15–20% accuracy—tighter than Schematic Design (±25–35%) but looser than completed Contract Documents (±5-10%)."
+        "a": "The Architect fee is excluded from PCC.",
+        "b": "Construction inspector salaries are excluded from PCC.",
+        "c": "SPP 202 Section 7.17 includes building systems and items indicated in the Architect and consultant plans, designs, drawings, and specifications.",
+        "d": "Financing cost belongs outside PCC; project development cost is broader than PCC.",
+        "correct": "SPP 202 Section 7.17 includes building systems and items indicated in the Architect and consultant plans, designs, drawings, and specifications.",
+        "takeaway": "Classify the item by whether it is part of the completed building work."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines / General Practice Standards",
@@ -101,43 +103,44 @@
       "model_id": "ALE-PRAC-CMP-003-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.096908+00:00",
       "content_hash": "sha256:03c7faf1833c3edbc7716472ea37457ee70688b802a9d2c4de7cef9055f5601d"
     },
     {
       "question_id": "42b2e06c-d7f8-448e-a673-ec5acd552597",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "Which of the following is included in Project Construction Cost (PCC)?",
+      "text": "Why does PCC matter in percentage-of-PCC compensation?",
       "options": [
         {
           "id": "a",
-          "text": "Architect fees and consultant fees, which are typically calculated as a percentage of the total project cost"
+          "text": "It is the construction-cost base to which the percentage fee is applied"
         },
         {
           "id": "b",
-          "text": "Land acquisition costs and site acquisition costs, including legal fees and taxes associated with the purchase"
+          "text": "It fixes the contractor profit margin"
         },
         {
           "id": "c",
-          "text": "All building structural elements, mechanical systems, and site work"
+          "text": "It replaces all Owner-Architect payment milestones"
         },
         {
           "id": "d",
-          "text": "Owner contingency reserves and financing costs, which cover unexpected expenses and interest rates during construction"
+          "text": "It includes land, permits, utilities, and financing cost"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Architect and consultant fees are explicitly excluded from PCC; they are professional services costs, not construction costs.",
-        "b": "Land acquisition and site acquisition costs are explicitly excluded from PCC; they are pre-construction property costs.",
-        "d": "Owner contingency reserves and financing costs are explicitly excluded from PCC; contingency reserves protect the owner against construction cost escalation, and financing is a financial cost, not a construction cost.",
-        "correct": "PCC includes all building structural elements, exterior envelope, interior construction, mechanical and electrical systems, site work including grading, drainage, paving, landscaping, and utility connections.",
-        "takeaway": "PCC covers all construction (structure, envelope, systems, finishes) and site work—everything the contractor builds—but not design fees, land, or owner reserves."
+        "a": "The SPP states that percentage compensation is based on PCC and defines PCC as the completed-building construction cost.",
+        "b": "PCC does not set contractor profit by itself.",
+        "c": "Payment milestones are handled separately in the Owner-Architect Agreement.",
+        "d": "Those broader items belong to project development cost, not PCC.",
+        "correct": "The SPP states that percentage compensation is based on PCC and defines PCC as the completed-building construction cost.",
+        "takeaway": "Do not confuse PCC with the Owner total project budget."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -151,43 +154,44 @@
       "model_id": "ALE-PRAC-CMP-003-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.091891+00:00",
       "content_hash": "sha256:c1bfcb4502764cfe74b339f92cc7572781987b43911cff5f5e07317da5273d5d"
     },
     {
       "question_id": "a64d2971-b0e2-4678-bfcb-ade7501b5dc4",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "What is the primary purpose of Project Construction Cost (PCC) in architect fee calculation?",
+      "text": "If the Owner furnishes material below market cost, how should that material be treated for PCC?",
       "options": [
         {
           "id": "a",
-          "text": "To determine the owner's total budget allocation, including contingencies and allowances"
+          "text": "Exclude it entirely because the Owner supplied it"
         },
         {
           "id": "b",
-          "text": "To serve as the financial basis for calculating architect fees under percentage-of-cost methods"
+          "text": "Use only the discounted purchase amount"
         },
         {
           "id": "c",
-          "text": "To establish the contractor's profit margin, which is typically a separate consideration"
+          "text": "Compute the material and labor on current fair market value"
         },
         {
           "id": "d",
-          "text": "To calculate the cost of land acquisition, which is not directly related to construction costs"
+          "text": "Add the Architect fee to offset the discount"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Confuses PCC with the owner's total project budget; PCC excludes architect fees, consultant fees, land costs, and contingency reserves—components that are part of the total budget.",
-        "c": "Confuses PCC with contractor profit; PCC includes contractor overhead and profit as construction cost, but its purpose is not to establish profit levels—it is the fee calculation basis.",
-        "d": "Confuses PCC with land acquisition; land acquisition costs are explicitly excluded from PCC.",
-        "correct": "PCC serves as the financial basis for calculating architect fees under percentage-of-cost compensation methods. The fee percentage applied to PCC directly determines the architect's compensation.",
-        "takeaway": "PCC is the defined construction cost (excluding architect fees, land, and contingencies) to which the fee percentage is applied for compensation calculation."
+        "a": "SPP 202 does not exclude owner-furnished material simply because the Owner supplied it.",
+        "b": "SPP 202 rejects an artificially low amount when market value is higher.",
+        "c": "SPP 202 Section 7.17 says owner-furnished labor or material below market cost is still computed on current fair market value.",
+        "d": "Professional fees are excluded from the PCC base.",
+        "correct": "SPP 202 Section 7.17 says owner-furnished labor or material below market cost is still computed on current fair market value.",
+        "takeaway": "The fair-market rule prevents an artificial reduction of the construction-cost base."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -201,43 +205,44 @@
       "model_id": "ALE-PRAC-CMP-003-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.096124+00:00",
       "content_hash": "sha256:f82979c4ed6d98f33f38b67702ee9db706eee79c40ac6f44f1d3a900b20b89be"
     },
     {
       "question_id": "dd7fe46d-6918-4a30-a8f9-26e165bb188a",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "Under SPP Document 202, when is the final Project Construction Cost (PCC) — upon which the final percentage-based Architect's fee is computed — typically established?",
+      "text": "Which statement best distinguishes PCC from Project Development Cost?",
       "options": [
         {
           "id": "a",
-          "text": "During the Schematic Design phase, when initial cost estimates are prepared for client review"
+          "text": "PCC includes professional fees and site acquisition cost"
         },
         {
           "id": "b",
-          "text": "At the end of the Design Development phase, after detailed design and cost analysis are completed"
+          "text": "PCC is narrower; Project Development Cost includes construction plus professional fees, permits, utilities, land, and cost of money"
         },
         {
           "id": "c",
-          "text": "Upon the awarding of the construction contract or completion of construction"
+          "text": "Both terms have the same scope under SPP 202"
         },
         {
           "id": "d",
-          "text": "Before the signing of the Owner-Architect Agreement, based on preliminary budget discussions"
+          "text": "Project Development Cost excludes construction cost"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Only an initial SPPCC estimate is available at Schematic Design, not the final PCC.",
-        "b": "The SPPCC is updated at Design Development, but it is still an estimate. The final actual PCC is established later.",
-        "d": "PCC cannot be established before design begins. The contract establishes the fee percentage, not the final PCC amount.",
-        "correct": "Per SPP Doc 202, while a Statement of Probable Project Construction Cost (SPPCC) is prepared during design phases, the final PCC is determined upon the awarding of the construction contract to the winning bidder, or upon actual completion of construction.",
-        "takeaway": "SPPCC is an estimate during design; the final PCC used for final fee settlement is the actual cost determined at bidding or construction completion."
+        "a": "Those broader items are not all PCC.",
+        "b": "SPP 202 defines Project Development Cost as broader than PCC because it includes construction plus professional fees, permits, utilities, land, cost of money, and similar items.",
+        "c": "The SPP defines Project Development Cost separately from PCC.",
+        "d": "Project Development Cost includes construction cost plus other items.",
+        "correct": "SPP 202 defines Project Development Cost as broader than PCC because it includes construction plus professional fees, permits, utilities, land, cost of money, and similar items.",
+        "takeaway": "Use PCC for the completed-building construction base; use Project Development Cost for the broader owner-side project cost concept."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -251,30 +256,30 @@
       "model_id": "ALE-PRAC-CMP-003-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.095247+00:00",
       "content_hash": "sha256:5c0790022b40e89e3dcc654b8d6afa247c970a74ff30a698a8aa5051ce45acd7"
     },
     {
       "question_id": "f16dd1cf-cf8d-455e-a76d-041a3d632051",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "A project has an estimated construction cost of 50 million pesos. The owner establishes a 10 million peso contingency reserve for cost overruns. What amount should be used as the SPPCC basis for progressive fee calculation at this phase?",
+      "text": "Which source-backed statement about cost estimates is safest?",
       "options": [
         {
           "id": "a",
-          "text": "40 million pesos (excluding the contingency)"
+          "text": "The Architect guarantees every SPPCC amount"
         },
         {
           "id": "b",
-          "text": "50 million pesos (the construction cost estimate)"
+          "text": "The Architect does not guarantee SPPCC or cost estimates because labor, material, and bidding costs are outside the Architect control"
         },
         {
           "id": "c",
-          "text": "60 million pesos (including the contingency)"
+          "text": "Design Development estimates are always within a fixed percentage band"
         },
         {
           "id": "d",
-          "text": "The contingency does not affect PCC calculation"
+          "text": "Contract Documents estimates are always exact"
         }
       ],
       "correct_option_id": "b",
@@ -283,11 +288,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Subtracts the contingency from the cost estimate, confusing contingency reserves with deductible items.",
-        "c": "Adds the contingency to the cost estimate, treating contingency as part of PCC when contingency reserves are explicitly excluded from PCC.",
-        "d": "While correct that contingency does not increase PCC, this option is less precise than stating the correct 50 million peso amount.",
-        "correct": "Owner contingency reserves for construction cost overruns are excluded from PCC. The fee calculation uses the 50 million peso construction cost estimate.",
-        "takeaway": "Use the construction cost estimate (50 million) for fee calculations; contingency reserves are excluded because they cover owner risk, not anticipated construction costs."
+        "a": "UAP Document 401-402 Article 9 says the Architect does not guarantee estimate accuracy.",
+        "b": "UAP Document 401-402 Article 9 states that the Architect does not guarantee SPPCC or cost estimate accuracy because cost factors are outside the Architect control.",
+        "c": "The checked source does not provide fixed estimate accuracy bands.",
+        "d": "The checked source rejects guaranteed accuracy.",
+        "correct": "UAP Document 401-402 Article 9 states that the Architect does not guarantee SPPCC or cost estimate accuracy because cost factors are outside the Architect control.",
+        "takeaway": "Avoid unsourced accuracy bands unless a source is attached."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -301,43 +307,44 @@
       "model_id": "ALE-PRAC-CMP-003-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.092771+00:00",
       "content_hash": "sha256:98f5a9b0461339ff6f8d16f2c8393b437d078cb58ac0b1cbae8f46af803c06cc"
     },
     {
       "question_id": "bada848b-412c-4b7e-b547-f033d081f2aa",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "A project includes specialized laboratory equipment with a cost of 5 million pesos. During cost estimating, the contractor's estimate does not include this specialized cost. How should the architect respond?",
+      "text": "When the Schematic Design phase is completed, what cost document is submitted under the checked SPP/Agreement language?",
       "options": [
         {
           "id": "a",
-          "text": "Accept the estimate as provided; specialized systems are always excluded from PCC, and this is standard practice"
+          "text": "Statement of Probable Project Construction Cost based on current cost parameters"
         },
         {
           "id": "b",
-          "text": "Verify that the cost estimator comprehensively includes all project scope, including specialized system costs"
+          "text": "Final Project Construction Cost based on completion records"
         },
         {
           "id": "c",
-          "text": "Reduce the architect's fee to account for the missing cost, ensuring budget alignment"
+          "text": "A guaranteed bid price"
         },
         {
           "id": "d",
-          "text": "Request the owner to pay the specialized cost separately, as it falls outside the standard contract scope"
+          "text": "A land acquisition budget"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Contradicts the framework entirely; specialized systems are included in PCC, not excluded.",
-        "c": "Reducing fees is not appropriate; if the cost estimate omits specialist items, the estimate itself is incomplete and must be corrected.",
-        "d": "Requesting separate owner payment shifts responsibility; if specialized costs are within scope, they should be in the cost estimate that determines PCC.",
-        "correct": "Projects incorporating specialized systems should ensure these costs are included in the cost estimator's scope. The architect should verify that cost estimates comprehensively include all project scope, including specialized systems.",
-        "takeaway": "Specialized systems (laboratory equipment, theater systems, food service) must be explicitly verified in cost estimates—they are included in PCC, not excluded."
+        "a": "The SPP and UAP Document 401-402 both describe an SPPCC submitted during early design service stages.",
+        "b": "Final PCC is not established at schematic design.",
+        "c": "The source says probable cost, not guaranteed bid price.",
+        "d": "Land acquisition is outside PCC.",
+        "correct": "The SPP and UAP Document 401-402 both describe an SPPCC submitted during early design service stages.",
+        "takeaway": "SPPCC is a probable construction-cost statement, not a guarantee."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -351,43 +358,44 @@
       "model_id": "ALE-PRAC-CMP-003-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.097672+00:00",
       "content_hash": "sha256:21cd454c28acdde95db89a9e35bdb3429c2aa022b49028c1941417fd30350528"
     },
     {
       "question_id": "14616f99-a597-44f2-9bc4-2a22675aa078",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "If the final construction bid (winning bid) is lower than the Statement of Probable Project Construction Cost (SPPCC) prepared during the Contract Documents phase, what typically occurs with the architect's percentage-of-cost fee under SPP 202?",
+      "text": "Which item should not be added to PCC when computing the Architect fee base?",
       "options": [
         {
           "id": "a",
-          "text": "The fee automatically decreases proportionally because it is ultimately based on the actual PCC (winning bid)."
+          "text": "Elevators planned and designed for the project"
         },
         {
           "id": "b",
-          "text": "The fee remains fixed to the SPPCC estimate from the Design Development phase, regardless of the final bid outcome"
+          "text": "Mechanical equipment indicated in the plans"
         },
         {
           "id": "c",
-          "text": "The fee increases to compensate for the lower construction cost, which is not a standard practice under typical contract terms"
+          "text": "Construction inspector salaries"
         },
         {
           "id": "d",
-          "text": "The architect refunds the entire fee to the owner, which is not a standard contractual obligation"
+          "text": "Architectural interiors planned by the Architect"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Incorrectly assumes the fee remains fixed to an estimate. Under SPP 202, progressive billings are based on estimates, but final settlement is based on the actual winning bid or final cost.",
-        "c": "Contradicts the framework entirely; percentage-based fees decrease if the base cost decreases.",
-        "d": "The architect does not refund the entire fee, but the final billing will reconcile any overpayments if the progressive billings exceeded the final percentage-based fee.",
-        "correct": "Under standard SPP 202 percentage-of-PCC methods, the architect's fee adjusts to the actual construction cost. If the final bid is lower, the actual PCC is lower, and therefore the proportional fee decreases accordingly.",
-        "takeaway": "In a strict Percentage of PCC contract, the fee rides the actual cost up and down. The SPPCC is merely a guide for progressive billing until the actual PCC is established."
+        "a": "Elevators are listed within PCC when part of the project.",
+        "b": "Mechanical equipment is listed within PCC.",
+        "c": "SPP 202 Section 7.17 excludes salaries of construction inspectors from PCC.",
+        "d": "Architectural interiors planned and designed by the Architect are part of PCC.",
+        "correct": "SPP 202 Section 7.17 excludes salaries of construction inspectors from PCC.",
+        "takeaway": "The exclusion list is as important as the inclusion list."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -401,43 +409,44 @@
       "model_id": "ALE-PRAC-CMP-003-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.094495+00:00",
       "content_hash": "sha256:fdeef6392b525635994c874aff5b0b2a1d9edee30dfa1ee17238b245bd59bef7"
     },
     {
       "question_id": "ac4629c9-78cf-4e2a-9c61-2f9cba6b9c57",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "For a multi-building development project with four distinct buildings of different types and sizes, how should PCC be calculated for fee determination?",
+      "text": "At completion, what does UAP Document 401-402 say the Owner furnishes to the Architect?",
       "options": [
         {
           "id": "a",
-          "text": "A single aggregate PCC for all four buildings combined, which simplifies the calculation process but may not reflect individual building complexities"
+          "text": "Two copies of the summary of all construction labor, services, materials, equipment, fixtures, and items used for completion"
         },
         {
           "id": "b",
-          "text": "PCC calculated separately for each building based on individual characteristics, unless the contract specifies aggregate calculation"
+          "text": "A waiver of the Architect fee"
         },
         {
           "id": "c",
-          "text": "Only the largest building's cost is used for fee calculation, which may not account for the unique features of smaller buildings"
+          "text": "A new SPPCC replacing all previous agreements"
         },
         {
           "id": "d",
-          "text": "The average cost per building divided among all four, which assumes uniformity in building design and construction"
+          "text": "The Architect personal tax return"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Assumes automatic aggregate calculation when the framework states that individual buildings should be calculated separately unless the contract specifies otherwise.",
-        "c": "Uses only the largest building, ignoring the other three buildings' construction costs.",
-        "d": "Averages cost across buildings, losing the individual complexity and cost basis for each building's fee calculation.",
-        "correct": "For developments with multiple buildings, PCC calculation addresses each building separately unless the contract specifies aggregate calculation. Different building types and complexities warrant individual PCC calculations.",
-        "takeaway": "Multi-building projects calculate PCC building-by-building (or phase-by-phase) unless the contract explicitly specifies single aggregate calculation."
+        "a": "UAP Document 401-402 Article 10 requires the Owner to furnish records and a completion summary of construction costs/items.",
+        "b": "The source does not require a waiver of the Architect fee.",
+        "c": "The completion record is not a new SPPCC replacing the contract.",
+        "d": "The source discusses project cost records, not tax returns.",
+        "correct": "UAP Document 401-402 Article 10 requires the Owner to furnish records and a completion summary of construction costs/items.",
+        "takeaway": "Cost records support final project cost reconciliation."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -451,30 +460,30 @@
       "model_id": "ALE-PRAC-CMP-003-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.098394+00:00",
       "content_hash": "sha256:892d77bdfb080c3627ce3b9108b192290d830f3c8eae206a1599645bd2f9e4c9"
     },
     {
       "question_id": "b85121c9-dece-4221-b3a1-9335ed7b27b2",
       "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
       "topic_id": "48c45751-77cd-4677-a60b-a5b50befcede",
-      "text": "During Design Development, the architect provides a Statement of Probable Project Construction Cost (SPPCC) of 80 million pesos. The project is successfully bid and constructed for a final actual PCC of 95 million pesos. Under standard SPP 202 percentage-of-PCC compensation, what happens to the architect's fee?",
+      "text": "A board item lists land, professional fees, permits, utilities, and cost of money. Which source term best fits that broader basket?",
       "options": [
         {
           "id": "a",
-          "text": "The fee remains strictly based on the 80 million peso SPPCC estimate, regardless of final costs"
+          "text": "Project Construction Cost only"
         },
         {
           "id": "b",
-          "text": "The fee proportionally increases because the final compensation is based on the actual final PCC of 95 million pesos."
+          "text": "Project Development Cost"
         },
         {
           "id": "c",
-          "text": "The fee must be waived if the cost exceeds the estimate, which is not a standard practice"
+          "text": "Construction inspector salary exclusion"
         },
         {
           "id": "d",
-          "text": "The architect is penalized for the 15 million peso variance, which is not typically enforced"
+          "text": "MDPE multiplier"
         }
       ],
       "correct_option_id": "b",
@@ -483,11 +492,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrectly assumes the fee is locked to the interim estimate. The 80 million SPPCC is merely used for progressive billing during the design phase.",
-        "c": "Fees are not waived; the architect's compensation scales with the actual cost of the structure built.",
-        "d": "Cost estimates are probable figures. Cost overruns due to market conditions or final bidding do not result in a penalty to the architect's fee under the standard SPP 202 percentage method.",
-        "correct": "Per SPP Doc 202, the architect's final fee is based on the final actual Project Construction Cost (PCC). If the actual PCC comes in at 95 million pesos, the percentage fee is applied to this 95 million, meaning the overall fee increases.",
-        "takeaway": "SPPCC is an estimate for progressive billing; the final reconciliation of fees is always based on the actual, final PCC (unless the project is deferred, in which case the final SPPCC is used)."
+        "a": "PCC is narrower and excludes professional fees.",
+        "b": "SPP 202 Section 7.18 defines Project Development Cost as including construction plus professional fees, permits, utilities, land, and cost of money.",
+        "c": "This describes an exclusion, not the whole basket.",
+        "d": "MDPE is a compensation method, not the broader project cost basket.",
+        "correct": "SPP 202 Section 7.18 defines Project Development Cost as including construction plus professional fees, permits, utilities, land, and cost of money.",
+        "takeaway": "When land and financing appear, the question is usually broader than PCC."
       },
       "explanation": null,
       "code_citation": "SPP Document 202 (Regular Design Services)",
@@ -501,7 +511,7 @@
       "model_id": "ALE-PRAC-CMP-003-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.090767+00:00",
       "content_hash": "sha256:24cc7d2f947b2ad62d4444cbcf1836733a472d150c621c2398db2ac0dad7d382"
     }
   ]

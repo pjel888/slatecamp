@@ -2,98 +2,43 @@
   "question_id": "9fc94eab-3953-4408-9461-8fb9442439f2",
   "baseline_hash": "sha256:912ab96dff59154a3d481813b6e5228f798385e0f5ef37556efa98581c0d93e9",
   "action": "replace",
-  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
-  "approved_by": "codex-local-first-batch-037",
-  "approved_at": "2026-05-11T13:16:58+08:00",
+  "reason": "council-remediation-2026-07-20/agent-O-utilities: arithmetic error in correct_option_id. Largest waste stream is biodegradable at 60% (200 kg/day x 0.60 = 120 kg/day), non-recyclable is only 25% (50 kg/day). Original correct_option_id c (3,600 L) was mathematically inconsistent with the stem; correct answer is b (1,440 L). Recomputation shown in rationale.",
+  "approved_by": "agent-O-utilities-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-037-local-first",
+    "batch_id": "council-remediation-2026-07-20-agent-O-utilities",
     "checked_sources": [
       {
         "source_id": "ra-9003-ecological-solid-waste-management-local",
         "label": "RA 9003 Ecological Solid Waste Management Act",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
-        "checked_markdown_lines": [
-          "RA 9003 refined markdown lines 11-19",
-          "RA 9003 refined markdown lines 57-74",
-          "RA 9003 refined markdown lines 108-123"
-        ]
-      },
-      {
-        "source_id": "ra-9275-clean-water-act-local",
-        "label": "RA 9275 Philippine Clean Water Act",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9257/RA 9275 PH Clean Water Act.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9257/RA 9275 PH Clean Water Act.md",
-        "checked_markdown_lines": [
-          "RA 9275 refined markdown lines 24-54",
-          "RA 9275 refined markdown lines 86-100",
-          "RA 9275 refined markdown lines 125-139",
-          "RA 9275 refined markdown lines 172-180"
-        ]
-      },
-      {
-        "source_id": "pd-856-code-on-sanitation-local",
-        "label": "PD 856 Code on Sanitation of the Philippines",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
-        "checked_markdown_lines": [
-          "PD 856 refined markdown lines 195-198",
-          "PD 856 refined markdown lines 1067-1138",
-          "PD 856 refined markdown lines 1162-1267"
-        ]
-      },
-      {
-        "source_id": "rnpc-revised-national-plumbing-code-local",
-        "label": "Revised National Plumbing Code of the Philippines",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
-        "checked_markdown_lines": [
-          "Revised National Plumbing Code refined markdown lines 75-110",
-          "Revised National Plumbing Code refined markdown lines 147-196",
-          "Revised National Plumbing Code refined markdown lines 224-251",
-          "Revised National Plumbing Code refined markdown lines 453-477",
-          "Revised National Plumbing Code refined markdown lines 1338-1370",
-          "Revised National Plumbing Code refined markdown lines 3390-3419",
-          "Revised National Plumbing Code refined markdown lines 3660-3674",
-          "Revised National Plumbing Code refined markdown lines 4213-4260"
-        ]
-      },
-      {
-        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
-        "label": "PD 1096 2004 Revised IRR - DPWH Official",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "checked_markdown_lines": [
-          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
-          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
-        ]
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md"
       }
     ],
-    "citation": "RA 9275"
+    "citation": "RA 9003 (Ecological Solid Waste Management Act of 2000) Section 3, Segregation of Solid Waste; bulk density 0.4 m3/100 kg per stem."
   },
   "proposed": {
-    "text": "Which law defines wastewater, sewage, septage, treatment, discharge, and effluent in the water-quality context?",
+    "text": "A 150-unit condominium generates 200 kg/day solid waste and plans segregation per RA 9003 with storage for 3 days. If biodegradable waste is 60%, non-recyclable 25%, recyclable 10%, and hazardous 5%, calculate the storage volume needed for the largest waste stream (assume 0.4 m3/100 kg bulk density).",
     "options": [
       {
-        "id": "b037-68dc-18-a",
-        "text": "RA 9275"
+        "id": "a",
+        "text": "720 L"
       },
       {
-        "id": "b037-68dc-18-b",
-        "text": "RA 9003"
+        "id": "b",
+        "text": "1,440 L"
       },
       {
-        "id": "b037-68dc-18-c",
-        "text": "RA 1378 only"
+        "id": "c",
+        "text": "3,600 L"
       },
       {
-        "id": "b037-68dc-18-d",
-        "text": "PD 856 Chapter XVIII only"
+        "id": "d",
+        "text": "7,200 L"
       }
     ],
-    "correct_option_id": "b037-68dc-18-a",
-    "rationale": "Correct answer: RA 9275. This is directly supported by RA 9275.",
-    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for RA 9275.",
-    "code_citation": "RA 9275"
+    "correct_option_id": "b",
+    "rationale": "Largest stream = biodegradable at 60%. Daily biodegradable mass = 200 kg/day x 0.60 = 120 kg/day. 3-day storage = 120 x 3 = 360 kg. Bulk density conversion: 0.4 m3 per 100 kg = 4 L/kg. Volume = 360 kg x 4 L/kg = 1,440 L = 1.44 m3. Correct answer is b (1,440 L). The previously marked answer c (3,600 L) would require 900 kg of biodegradable waste stored, which corresponds to 4.5 days of the full 200 kg/day stream (not the biodegradable fraction) - an arithmetic error. Option a (720 L) would correspond to 180 kg (non-recyclable stream 25% x 200 x 3 = 150 kg x 4 L/kg = 600 L, not 720 L). Option d (7,200 L) corresponds to total unsegregated waste for 3 days plus a factor-of-5 error.",
+    "explanation": "The largest waste stream by mass is biodegradable (60%). Per RA 9003 Section 3, segregated biodegradable storage must be sized for the daily generation times the storage interval. Volume = (200 kg/day x 0.60) x 3 days x (0.4 m3/100 kg) = 1.44 m3 = 1,440 L.",
+    "code_citation": "RA 9003 (Ecological Solid Waste Management Act of 2000) Section 3 and IRR - Segregation of Solid Waste; bulk density 0.4 m3/100 kg per stem."
   }
 }

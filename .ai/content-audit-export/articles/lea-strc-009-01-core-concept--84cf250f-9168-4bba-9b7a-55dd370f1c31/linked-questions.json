@@ -8,23 +8,23 @@
       "question_id": "136a9f76-4115-4c68-ac4a-aa015e09f5aa",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "A Dao timber beam is specified for a structure with occasional water splash. What limitation applies?",
+      "text": "What does NSCP Section 605.2 require for wood embedded in the ground or in direct earth contact when it supports permanent structures?",
       "options": [
         {
           "id": "a",
-          "text": "Dao resists decay but not termites; it is unsuitable for splash zones without treatment."
+          "text": "It shall be treated wood unless continuously below the ground waterline or submerged in fresh water."
         },
         {
           "id": "b",
-          "text": "Dao has no resistance classification and must be treated for any durability, especially in environments with high humidity."
+          "text": "It may be untreated if it is hidden by concrete."
         },
         {
           "id": "c",
-          "text": "Dao is adequate because it resists decay; splash water does not attract termites, making it a viable option for such conditions."
+          "text": "It requires only a paint coating."
         },
         {
           "id": "d",
-          "text": "Dao sapwood must be completely removed before use to prevent any potential decay or insect infestation."
+          "text": "It is allowed only for temporary structures."
         }
       ],
       "correct_option_id": "a",
@@ -33,11 +33,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Incorrect: Dao IS in the classification table with decay resistance.",
-        "d": "Incorrect logic. Even if decay resistance exists, termite risk is real in Philippine regions.",
-        "correct": "Dao is decay-resistant only. Splash zones carry both fungal decay risk AND termite risk in tropical climates. Dao lacks termite protection.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.2 requires treated wood for wood embedded in the ground or in direct earth contact supporting permanent structures, unless continuously below the ground waterline or submerged in fresh water.",
+        "takeaway": "Ground-contact support is a treatment trigger in Section 605.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: It shall be treated wood unless continuously below the ground waterline or submerged in fresh water.",
+        "b": "Not selected: It may be untreated if it is hidden by concrete.",
+        "c": "Not selected: It requires only a paint coating.",
+        "d": "Not selected: It is allowed only for temporary structures."
       },
       "explanation": null,
       "code_citation": "NatCor durability classification; Philippine Forestry Code Section 111",
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-009-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.830171+00:00",
       "content_hash": "sha256:8d9afbe0b3f51a6c864d0dbf766ce326d795cb02a896824bdf29849ceb5f1e47"
     },
     {
       "question_id": "f24e257f-ca78-467f-8719-2d28fe0d3722",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "A timber specification states: 'Narra heartwood, maximum 3% sapwood per edge.' Is this specification _more restrictive_ or _less restrictive_ than NatCor standards?",
+      "text": "How deep must stumps and roots be removed below ground in the building area under Section 605.1?",
       "options": [
         {
           "id": "a",
-          "text": "More restrictive. NatCor allows up to 5%; this spec reduces the limit to 3%."
+          "text": "At least 300 mm below the ground surface."
         },
         {
           "id": "b",
-          "text": "Less restrictive. NatCor allows only heartwood; this spec permits any sapwood."
+          "text": "At least 100 mm below the ground surface."
         },
         {
           "id": "c",
-          "text": "Equivalent. NatCor uses a 3–5% range with no fixed maximum."
+          "text": "At least 75 mm below the ground surface."
         },
         {
           "id": "d",
-          "text": "Not comparable. Sapwood limits apply only to treated timber, not heartwood."
+          "text": "Only flush with the ground surface."
         }
       ],
       "correct_option_id": "a",
@@ -83,11 +85,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "NatCor explicitly permits up to 5%; it does not prohibit sapwood.",
-        "d": "NatCor does not specify a variable range; 5% is the threshold.",
-        "correct": "NatCor permits 5% sapwood (on linear dimension) as the maximum when heartwood ≥90% per face. A 3% limit is stricter, reducing acceptable sapwood to improve durability margin.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.1 requires all stumps and roots to be removed at least 300 mm below the ground surface in the building area.",
+        "takeaway": "Site preparation starts with the 300 mm stump-and-root removal rule.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: At least 300 mm below the ground surface.",
+        "b": "Not selected: At least 100 mm below the ground surface.",
+        "c": "Not selected: At least 75 mm below the ground surface.",
+        "d": "Not selected: Only flush with the ground surface."
       },
       "explanation": null,
       "code_citation": "NatCor Section 3.2; specification engineering best practices",
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-009-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.827008+00:00",
       "content_hash": "sha256:5a9b54afeea51bcbf2227e7d1627eddaafa9d0ea31ad37ca2e353b11486a9bcf"
     },
     {
       "question_id": "c5a6da5f-9d82-4137-a1ed-73a67cbc48b4",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "A structural designer substitutes Yakal for a specified Narra timber in a ground-contact foundation beam. What compliance issue arises?",
+      "text": "If wood joists are closer than 450 mm to exposed ground in a crawlspace, what must the floor assembly use?",
       "options": [
         {
           "id": "a",
-          "text": "Yakal has documented decay resistance but lacks dual (decay+termite) classification equivalent to Narra for ground-contact without treatment."
+          "text": "Approved wood of natural resistance to decay or treated wood."
         },
         {
           "id": "b",
-          "text": "Yakal is listed as a decay-resistant alternative and is acceptable as a direct substitution, provided it meets all other structural requirements."
+          "text": "Only larger joists, with no material condition."
         },
         {
           "id": "c",
-          "text": "Yakal resists termites better than Narra but is weaker in bending; the design must be strengthened to compensate for this."
+          "text": "Only metal fasteners, with no wood condition."
         },
         {
           "id": "d",
-          "text": "The substitution is valid as long as the same allowable stress values are maintained, which may require additional verification."
+          "text": "No special protection."
         }
       ],
       "correct_option_id": "a",
@@ -133,11 +137,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Yakal does not appear in the NatCor durability schedule at any resistance level.",
-        "d": "Strength properties and durability are independent. Maintaining stress values does not satisfy durability requirements.",
-        "correct": "Yakal is NOT in the NatCor durability classification table. It may have strength, but durability claims without explicit standard approval are non-compliant. Ground-contact use requires explicit classification.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.3 requires the floor assembly to use approved naturally resistant wood or treated wood when joists are closer than 450 mm to exposed ground.",
+        "takeaway": "The 450 mm joist clearance is a protection trigger.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: Approved wood of natural resistance to decay or treated wood.",
+        "b": "Not selected: Only larger joists, with no material condition.",
+        "c": "Not selected: Only metal fasteners, with no wood condition.",
+        "d": "Not selected: No special protection."
       },
       "explanation": null,
       "code_citation": "NatCor Section 3.2; Philippine Building Code compliance requirements",
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-009-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.828656+00:00",
       "content_hash": "sha256:50767e0376f4ff173d7d12484150e7fc2d0338c1b4d521cd5a243a0ede8c2d21"
     },
     {
       "question_id": "4864b616-2862-4dad-be1f-8b73baa8e983",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "Identify the resistance profile of Tangile timber in structural use.",
+      "text": "When under-floor clearance rules require access, what minimum unobstructed access opening is source-supported?",
       "options": [
         {
           "id": "a",
-          "text": "Decay resistant, termite susceptible"
+          "text": "450 mm by 600 mm"
         },
         {
           "id": "b",
-          "text": "Termite resistant, decay susceptible"
+          "text": "300 mm by 300 mm"
         },
         {
           "id": "c",
-          "text": "Both decay and termite resistant"
+          "text": "150 mm by 450 mm"
         },
         {
           "id": "d",
-          "text": "Neither decay nor termite resistant; treatment always required"
+          "text": "900 mm by 900 mm"
         }
       ],
       "correct_option_id": "a",
@@ -183,11 +189,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Tangile is NOT termite-resistant.",
-        "d": "Tangile IS decay-resistant.",
-        "correct": "Tangile is classified as decay-resistant only. It shares the profile of Dao: good fungal durability, zero termite protection.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.3 requires a minimum 450 mm by 600 mm opening when the under-floor area must be accessible.",
+        "takeaway": "Under-floor clearance rules include an access-opening requirement.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: 450 mm by 600 mm",
+        "b": "Not selected: 300 mm by 300 mm",
+        "c": "Not selected: 150 mm by 450 mm",
+        "d": "Not selected: 900 mm by 900 mm"
       },
       "explanation": null,
       "code_citation": "NatCor Durability Classification Schedule",
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-009-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.826042+00:00",
       "content_hash": "sha256:3bd2430e772fa2fff0731ea2a77ba65cb93452ecbec413e1f0b14bd8bdf4fd37"
     },
     {
       "question_id": "60a71679-a95f-4b65-8ddd-36e05a2c0ed1",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "A design team discovers that specified Narra is in short supply and proposes chemically treating Dao timber instead. Evaluate this substitution strategy.",
+      "text": "What does Section 605.4 generally require for foundation plates, sills, and sleepers on concrete or masonry slabs in direct contact with earth?",
       "options": [
         {
           "id": "a",
-          "text": "Valid. Treated Dao will provide both decay and termite resistance equivalent to untreated Narra when properly applied."
+          "text": "Any untreated lumber is acceptable."
         },
         {
           "id": "b",
-          "text": "Invalid. NatCor prohibits substitution of treated timber; only naturally durable species are permitted for ground-contact use, ensuring long-term performance."
+          "text": "Only a larger member size is required."
         },
         {
           "id": "c",
-          "text": "Valid for decay, but termite protection depends on treatment type and application depth; verify treatment compliance with Philippine Building Code."
+          "text": "They shall be treated wood marked or branded by an approved agency."
         },
         {
           "id": "d",
-          "text": "Partially valid. Treatment adds decay resistance but cannot guarantee the long-term termite immunity of naturally durable species, which is critical for structural integrity."
+          "text": "They are outside the wood-protection section."
         }
       ],
       "correct_option_id": "c",
@@ -233,11 +241,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Treatment is effective, but 'equivalent' requires specific verification of treatment type, retention levels (kg/m³), and penetration depth—not automatic.",
-        "b": "NatCor does not prohibit treated timber; it recognizes treatment as a valid durability strategy when natural durability is insufficient.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Chemical treatment can add both decay and termite protection to Dao, making it functionally equivalent to untreated Narra IF the treatment specification (e.g., copper-based, boron salts, oil-borne preservatives) is appropriate for the hazard class and application depth is verified per PD1096 Rule VIII Section 809 (Wood) or FPRDI treatment standards or equivalent.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.4 generally requires treated wood, marked or branded by an approved agency, for foundation plates, sills, and sleepers in the listed contact conditions.",
+        "takeaway": "Section 605.4 is a treatment-and-marking rule for foundation wood in direct-contact conditions.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: Any untreated lumber is acceptable.",
+        "b": "Not selected: Only a larger member size is required.",
+        "c": "Selected: They shall be treated wood marked or branded by an approved agency.",
+        "d": "Not selected: They are outside the wood-protection section."
       },
       "explanation": null,
       "code_citation": "Philippine Building Code Section 2401; NatCor Section 3.3 (treated timber provisions); ASEAN TCS 4-2019",
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-009-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.831740+00:00",
       "content_hash": "sha256:dc0c4cb79710bee51f87dc9f83ad2ad2e362b04956d6a26ef389f71e57141fef"
     },
     {
       "question_id": "f8fd0b57-119f-4584-a713-7cd5e2e340d2",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "A Kamagong beam is placed in a brackish estuary environment subject to saltwater splash and submerged daily cycles. What design approach is necessary?",
+      "text": "For columns and posts on exposed floors, decks, water-splash locations, or basements, what pedestal projection is source-supported unless resistant or treated wood is used?",
       "options": [
         {
           "id": "a",
-          "text": "Kamagong's natural dual resistance (decay + termites) is sufficient for this marine exposure; no additional treatment is required."
+          "text": "At least 100 mm above exposed earth and 10 mm above finish floor."
         },
         {
           "id": "b",
-          "text": "Even Kamagong's heartwood will gradually degrade under saltwater exposure; protective coating or concrete encasement should be specified."
+          "text": "At least 200 mm above exposed earth or at least 25 mm above finish floor level."
         },
         {
           "id": "c",
-          "text": "Kamagong is unsuitable for saltwater; only treated softwood is acceptable, especially in environments with high salinity and tidal fluctuations."
+          "text": "Exactly 600 mm above all surfaces."
         },
         {
           "id": "d",
-          "text": "Kamagong resists organic decay but not salt crystallization damage; structural monitoring intervals should be specified, particularly during seasonal changes."
+          "text": "No pedestal projection is required."
         }
       ],
       "correct_option_id": "b",
@@ -283,11 +293,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Terrestrial durability ≠ marine durability. Saltwater environments exceed the scope of NatCor resistance classification.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "Kamagong IS durable in terrestrial harsh environments; marine exposure is a separate class of hazard.",
-        "correct": "NatCor classification covers terrestrial decay (fungi) and termites only, not salt-water-induced crystallization, corrosion-cell mechanisms, or extended submersion. Kamagong heartwood will eventually deteriorate under continuous saltwater exposure despite high natural durability.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.5 requires the pedestal to project at least 200 mm above exposed earth or at least 25 mm above finish floor level.",
+        "takeaway": "Section 605.5 uses different pedestal projection thresholds for exposed earth and finished floors.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: At least 100 mm above exposed earth and 10 mm above finish floor.",
+        "b": "Selected: At least 200 mm above exposed earth or at least 25 mm above finish floor level.",
+        "c": "Not selected: Exactly 600 mm above all surfaces.",
+        "d": "Not selected: No pedestal projection is required."
       },
       "explanation": null,
       "code_citation": "NatCor Section 3.2 (terrestrial classification scope); ASEAN TCS 4-2019; ISO 12944 marine durability standards",
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-009-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.829420+00:00",
       "content_hash": "sha256:056c8a135493cf18e6da65b84b93855792257a926aaf0f6205076ee1a3aaedfa"
     },
     {
       "question_id": "96d4546c-eab8-4ac1-ac61-7ccfc81a797f",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "Which Philippine timber species provide BOTH decay and termite resistance without chemical treatment?",
+      "text": "What air space is required for wood girder ends entering masonry or concrete walls unless approved resistant or treated wood is used?",
       "options": [
         {
           "id": "a",
-          "text": "Narra and Kamagong"
+          "text": "15 mm on tops, sides, and ends."
         },
         {
           "id": "b",
-          "text": "Narra and Dao"
+          "text": "5 mm at the bottom only."
         },
         {
           "id": "c",
-          "text": "Tangile and Kamagong"
+          "text": "5 mm on one side only."
         },
         {
           "id": "d",
-          "text": "Yakal and Molave"
+          "text": "No air space is mentioned."
         }
       ],
       "correct_option_id": "a",
@@ -333,11 +345,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Dao has decay resistance only; it offers NO termite protection.",
-        "d": "Kamagong is correct, but Tangile has decay resistance only.",
-        "correct": "Narra, Kamagong, and Molave have documented natural resistance to both decay and termites per FPRDI and forestry standards. This is the foundational durability pair in Philippine timber standards.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.6 requires a 15 mm air space on tops, sides, and ends unless approved resistant or treated wood is used.",
+        "takeaway": "Girder-end protection is checked by the 15 mm air-space rule.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: 15 mm on tops, sides, and ends.",
+        "b": "Not selected: 5 mm at the bottom only.",
+        "c": "Not selected: 5 mm on one side only.",
+        "d": "Not selected: No air space is mentioned."
       },
       "explanation": null,
       "code_citation": "FPRDI Timber Durability Classification or Philippine Wood Handbook",
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-009-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.830962+00:00",
       "content_hash": "sha256:3f1e12d1bf91b92d588851382f242811ef13b13c5c08aaca14fe6697321e719c"
     },
     {
       "question_id": "aabd6070-7a57-439b-b95e-64c35c9c83fa",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "Explain why heartwood is essential for decay and termite resistance, while sapwood is not.",
+      "text": "What minimum under-floor ventilation net area does Section 605.7 require before any allowed reduction?",
       "options": [
         {
           "id": "a",
-          "text": "Heartwood contains extractive compounds that inhibit fungal and insect colonization; sapwood is nutrient-rich and vulnerable to both."
+          "text": "Not less than 0.07 m2 for each 10 m2 of under-floor area."
         },
         {
           "id": "b",
-          "text": "Heartwood is older and therefore harder; sapwood is newer and softer, making it more susceptible to environmental damage and pest infestation"
+          "text": "Not less than 0.01 m2 for each 10 m2."
         },
         {
           "id": "c",
-          "text": "Heartwood is chemically treated in the tree; sapwood is left untreated and lacks the natural protective compounds found in heartwood"
+          "text": "Exactly one opening per room, regardless of area."
         },
         {
           "id": "d",
-          "text": "Sapwood naturally repels moisture; heartwood absorbs it and must be treated, which is a misconception as heartwood is naturally more resistant"
+          "text": "No ventilation if a crawlspace is accessible."
         }
       ],
       "correct_option_id": "a",
@@ -383,11 +397,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Hardness is unrelated to resistance; mechanical strength and durability are distinct properties.",
-        "d": "Trees do not chemically treat their own sapwood; the distinction is biological extractive accumulation.",
-        "correct": "Extractives (natural antimicrobial compounds such as tannins and terpenoids) concentrate in the heartwood as the tree ages. Sapwood lacks these and is nutritionally attractive to decomposers and insects.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.7 requires openings with net area not less than 0.07 m2 for each 10 m2 of under-floor area before the listed reduction condition.",
+        "takeaway": "Under-floor ventilation is an area-ratio threshold.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: Not less than 0.07 m2 for each 10 m2 of under-floor area.",
+        "b": "Not selected: Not less than 0.01 m2 for each 10 m2.",
+        "c": "Not selected: Exactly one opening per room, regardless of area.",
+        "d": "Not selected: No ventilation if a crawlspace is accessible."
       },
       "explanation": null,
       "code_citation": "ASEAN TCS 4-2019 Section 3.1; Forest Products Research and Development Institute (FPRDI) durability studies",
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-009-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.824613+00:00",
       "content_hash": "sha256:6435c9febaad3e8f5392253b69061e58851697cecd4ff46d8bd1fdae9a773f6c"
     },
     {
       "question_id": "e4a4c9d2-4019-4e22-8390-d377bf415d73",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "A foundation beam specification requires 'durable timber suitable for continuous soil contact in high-termite-pressure regions.' Which of the following satisfies this requirement without additional treatment?",
+      "text": "Under Section 605.8, what is required for wood used in permanent construction and located nearer than 150 mm to earth?",
       "options": [
         {
           "id": "a",
-          "text": "Narra heartwood or Kamagong heartwood, with sapwood ≤5% per edge and ≥90% heartwood per face."
+          "text": "Treated wood or wood of natural resistance to decay."
         },
         {
           "id": "b",
-          "text": "Dao or Tangile heartwood, with full sapwood removal and protective membrane applied to all surfaces for enhanced durability."
+          "text": "Untreated wood if painted."
         },
         {
           "id": "c",
-          "text": "Any Philippine hardwood listed in the timber grades table, provided allowable stresses are verified and documented in compliance reports."
+          "text": "Any species if the member is concealed."
         },
         {
           "id": "d",
-          "text": "Treated Yakal with third-party durability certification, ensuring compliance with local building codes and standards."
+          "text": "Only a larger section size."
         }
       ],
       "correct_option_id": "a",
@@ -433,11 +449,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "Dao and Tangile lack termite resistance; even with full sapwood removal, they remain susceptible.",
-        "d": "Grading tables address strength, not durability. A species in the grades table may have no durability classification.",
-        "correct": "Only Narra and Kamagong provide natural dual resistance (decay + termites) with the sapwood acceptance rule built into the standard. This satisfies the requirement without additional measures.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.8 requires treated wood or wood of natural resistance to decay for permanent wood located nearer than 150 mm to earth.",
+        "takeaway": "The checked wood-earth separation threshold is 150 mm.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: Treated wood or wood of natural resistance to decay.",
+        "b": "Not selected: Untreated wood if painted.",
+        "c": "Not selected: Any species if the member is concealed.",
+        "d": "Not selected: Only a larger section size."
       },
       "explanation": null,
       "code_citation": "NatCor Durability Classification Schedule; Philippine Building Code Section 2402; ASEAN TCS 4-2019",
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-009-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.832532+00:00",
       "content_hash": "sha256:963e3e1500651b624880a15f96bbf1643dbe240fe4ccf141e2a07e561c3ed424"
     },
     {
       "question_id": "18988e39-3d86-4bf3-8c1a-a3647ecc8366",
       "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
       "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
-      "text": "A Narra timber piece shows sapwood on one edge representing 7% of the piece length, with heartwood comprising 93% of each face. Is this acceptable for ground-contact structural use?",
+      "text": "When pressure-treated wood is used in enclosed locations where drying in service cannot readily occur, what moisture content is required before it is covered?",
       "options": [
         {
           "id": "a",
-          "text": "Yes. Sapwood is within the 5% tolerance and each face shows ≥90% heartwood."
+          "text": "28 percent or less"
         },
         {
           "id": "b",
-          "text": "No. Any visible sapwood disqualifies the piece for ground-contact use."
+          "text": "22 percent or less"
         },
         {
           "id": "c",
-          "text": "Yes, but only if the sapwood is sealed with a protective coating."
+          "text": "16 percent or less"
         },
         {
           "id": "d",
-          "text": "No. The 7% sapwood exceeds the allowable 5% threshold."
+          "text": "19 percent or less"
         }
       ],
       "correct_option_id": "d",
@@ -483,11 +501,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option is incorrect. Review the correct answer above.",
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "correct": "NatCor permits sapwood only if it is ≤5% on linear dimension. Here, 7% sapwood exceeds the 5% threshold. Despite 93% heartwood per face meeting the 90% rule, the 7% sapwood on the edge disqualifies the piece for ground-contact use.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 605.10 requires moisture content of 19 percent or less before the wood is covered.",
+        "takeaway": "The checked moisture threshold for covered treated wood is 19 percent or less.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: 28 percent or less",
+        "b": "Not selected: 22 percent or less",
+        "c": "Not selected: 16 percent or less",
+        "d": "Selected: 19 percent or less"
       },
       "explanation": null,
       "code_citation": "FPRDI or forestry standards sapwood provisions; ASEAN TCS 4-2019",
@@ -501,7 +521,7 @@
       "model_id": "ALE-STRC-009-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.827910+00:00",
       "content_hash": "sha256:37634d7172c4f7332d45d7617527c1b3d358d8d3f7c67f55dd689a0092455705"
     }
   ]

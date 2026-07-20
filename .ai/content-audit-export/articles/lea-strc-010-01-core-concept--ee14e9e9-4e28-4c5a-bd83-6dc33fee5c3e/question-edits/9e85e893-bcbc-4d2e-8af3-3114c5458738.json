@@ -23,5 +23,53 @@
       "masonry-lecture-terms-chb",
       "bsi-masonry-walls"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "In concrete hollow block masonry, which definition of a cell stays inside the local source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The horizontal surface where units lie in a course."
+      },
+      {
+        "id": "b",
+        "text": "A complete layer of masonry units."
+      },
+      {
+        "id": "c",
+        "text": "A cell or core is one of the hollow voids within a CHB unit."
+      },
+      {
+        "id": "d",
+        "text": "A steel bolted point connection."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "The horizontal surface where units lie in a course. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "b": "A complete layer of masonry units. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "c": "A cell or core is one of the hollow voids within a CHB unit. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+      "d": "A steel bolted point connection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "correct": "A cell or core is one of the hollow voids within a CHB unit. Supported by masonry-lecture-terms-chb; bsi-masonry-walls.",
+      "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "masonry-lecture-terms-chb; bsi-masonry-walls",
+      "checked_sources": [
+        "masonry-lecture-terms-chb",
+        "bsi-masonry-walls"
+      ]
+    },
+    "explanation": "A cell or core is one of the hollow voids within a CHB unit. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb; bsi-masonry-walls.",
+    "code_citation": "masonry-lecture-terms-chb; bsi-masonry-walls",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-010-01-003"
   }
 }

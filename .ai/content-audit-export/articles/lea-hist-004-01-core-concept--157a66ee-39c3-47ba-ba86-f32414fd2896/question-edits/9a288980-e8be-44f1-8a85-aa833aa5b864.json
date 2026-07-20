@@ -2,9 +2,9 @@
   "question_id": "9a288980-e8be-44f1-8a85-aa833aa5b864",
   "baseline_hash": "sha256:720c5667b9633b6f1ba1d29de161d3a133e397ac10aa264d786f3298e77f7125",
   "action": "replace",
-  "reason": "source-audited-article-batch-120-local-first source-maps lea-hist-004-01-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
-  "approved_by": "codex-local-source-audit-batch-120",
-  "approved_at": "2026-05-13T23:34:16.492+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
     "parent_article_slug": "lea-hist-004-01-core-concept",
@@ -59,55 +59,28 @@
     "new_source_map_phase": true
   },
   "proposed": {
-    "question_id": "9a288980-e8be-44f1-8a85-aa833aa5b864",
-    "article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
-    "topic_id": "7706f350-25af-4f03-986e-50fa74ff49e0",
     "text": "A monumental vaulted recessed portal or gateway, typically framed by a four-centered arch and common in Persian and Central Asian Islamic architecture, is called an:",
     "options": [
       {
         "id": "a",
-        "text": "Qibla"
+        "text": "Qibla — the wall oriented toward Mecca, not a portal"
       },
       {
         "id": "b",
-        "text": "Iwan"
+        "text": "Iwan — the monumental vaulted recessed four-centered-arch portal"
       },
       {
         "id": "c",
-        "text": "Mihrab"
+        "text": "Mihrab — the niche in the qibla wall, not a gateway"
       },
       {
         "id": "d",
-        "text": "Muezzin"
+        "text": "Muezzin — the person who calls to prayer, not an architectural element"
       }
     ],
     "correct_option_id": "b",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": {
-      "a": "This option conflicts with the Batch 120 source map for Islamic architecture or overstates the supported claim.",
-      "c": "This option conflicts with the Batch 120 source map for Islamic architecture or overstates the supported claim.",
-      "d": "This option conflicts with the Batch 120 source map for Islamic architecture or overstates the supported claim.",
-      "correct": "Iwan matches the local source capture and refined source-map anchors for Islamic architecture.",
-      "takeaway": "Islamic architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits."
-    },
-    "explanation": "Iwan matches the local source capture and refined source-map anchors for Islamic architecture. Islamic architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits.",
-    "code_citation": null,
-    "bloom_level": "remember",
-    "application_context": "recall",
-    "practice_context": [
-      "ID"
-    ],
-    "difficulty": 0.5,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false,
-    "model_id": "ALE-HIST-004-01-008",
-    "prompt_image_url": null,
-    "created_at": "2026-03-23T19:27:24.126756+00:00",
-    "updated_at": "2026-05-06T12:49:09.86902+00:00",
-    "content_hash": "sha256:720c5667b9633b6f1ba1d29de161d3a133e397ac10aa264d786f3298e77f7125"
+    "rationale": "The article defines the iwan as 'a vaulted recessed portal or gateway, typically framed by a four-centered arch; common in Persian and Central Asian Islamic architecture.' [A]: Qibla is the wall or direction toward Mecca, not a portal or gateway. [C]: Mihrab is the niche in the qibla wall, not a gateway. [D]: Muezzin is the person who calls to prayer from the minaret, not an architectural element.",
+    "explanation": "Qibla is the wall or direction toward Mecca, not a portal or gateway. Mihrab is the niche in the qibla wall, not a gateway. Muezzin is the person who calls to prayer from the minaret, not an architectural element. The article defines the iwan as 'a vaulted recessed portal or gateway, typically framed by a four-centered arch; common in Persian and Central Asian Islamic architecture.' The article defines the iwan as 'a vaulted recessed portal or gateway, typically framed by a four-centered arch; common in Persian and Central Asian Islamic architecture.'.",
+    "code_citation": null
   }
 }

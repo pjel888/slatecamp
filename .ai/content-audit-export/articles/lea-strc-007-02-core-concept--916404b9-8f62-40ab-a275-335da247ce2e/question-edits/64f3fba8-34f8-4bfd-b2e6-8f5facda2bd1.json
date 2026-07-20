@@ -21,5 +21,52 @@
     "checked_sources": [
       "detailing-hooks"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "For 19 mm to 25 mm stirrup or tie bars using a 90-deg bend, what extension is captured?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At least 2 bar diameters."
+      },
+      {
+        "id": "b",
+        "text": "At least 12 bar diameters at the free end."
+      },
+      {
+        "id": "c",
+        "text": "At least 4 bar diameters and not less than 65 mm."
+      },
+      {
+        "id": "d",
+        "text": "No extension when concrete cover is adequate."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "At least 2 bar diameters. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "b": "At least 12 bar diameters at the free end. This stays inside the Batch 146 local source boundary for Standard Hooks, Bend Diameters, and Seismic Hook Closure.",
+      "c": "At least 4 bar diameters and not less than 65 mm. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "d": "No extension when concrete cover is adequate. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "correct": "At least 12 bar diameters at the free end. Supported by detailing-hooks.",
+      "takeaway": "For Standard Hooks, Bend Diameters, and Seismic Hook Closure, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-hooks",
+      "checked_sources": [
+        "detailing-hooks"
+      ]
+    },
+    "explanation": "At least 12 bar diameters at the free end. Supported by the Batch 146 local source boundary: detailing-hooks.",
+    "code_citation": "detailing-hooks",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-007-02-007"
   }
 }

@@ -8,37 +8,31 @@
       "question_id": "69601865-90d4-4bf4-b753-0d43f8281b54",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "If a project is terminated for convenience during Design Development, how is the architect's compensation typically calculated?",
+      "text": "Which older proforma fact appears in UAP Document 401-402?",
       "options": [
         {
           "id": "a",
-          "text": "The architect receives the full fee regardless of completion status, ensuring financial stability for the firm"
+          "text": "Contract Documents Phase is treated as eighty-five percent of the Architect's work in that proforma."
         },
         {
           "id": "b",
-          "text": "The architect receives zero compensation as no construction has occurred, reflecting the project's incomplete status"
+          "text": "The Architect never owns instruments of service."
         },
         {
           "id": "c",
-          "text": "The architect receives 15% (SD) + 20% (DD) = 35% of the total agreed-upon fee plus consultant costs, based on the phase-completion method"
+          "text": "Every owner-architect dispute is a contractor payment bond claim."
         },
         {
           "id": "d",
-          "text": "The architect receives compensation only for work the Owner approves and accepts, which may include partial payments for completed phases"
+          "text": "The agreement is a design-build contract."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Overstates architect entitlement; the owner pays only for work completed (SD and DD phases), not the full fee.",
-        "b": "Eliminates all compensation; design services prior to construction have full compensable value—construction doesn't begin before DD or CD.",
-        "d": "Conditions payment on subjective acceptance; the phase-based calculation is objective and doesn't depend on owner approval of specific work quality.",
-        "correct": "If the project is terminated during Design Development, the architect receives the proportional fee for completed phases: 15% for SD + 20% for DD = 35% of the total agreed-upon fee, plus any consultant costs incurred.",
-        "takeaway": "Termination during DD entitles architect to 35% of fee (15% SD + 20% DD) plus consultant costs regardless of acceptance."
-      },
+      "rationale": "The 401-402 proforma records an eighty-five-percent contract-documents value, which must not be blended silently with SPP 202 ninety percent.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CTR-003-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.560741+00:00",
       "content_hash": "sha256:81dbfb4c25c2767af32626aa5228743a5f18ec14d12868b4552f5e64c478f19e"
     },
     {
       "question_id": "7fddbbb9-df88-4fe2-903e-8c499d93472b",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "What is the key difference between suspension and termination of the Owner-Architect agreement?",
+      "text": "Under UAP Document 301, how much written notice is tied to the Contractor's right to suspend work or terminate the construction contract?",
       "options": [
         {
           "id": "a",
-          "text": "Suspension is permanent; termination is temporary, which is contrary to typical contract practices"
+          "text": "Fifteen days written notice to the Owner and Architect."
         },
         {
           "id": "b",
-          "text": "Suspension pauses work without ending the relationship; termination ends the relationship, with compensation limited to work performed before termination"
+          "text": "Five days written notice to PRC only."
         },
         {
           "id": "c",
-          "text": "Suspension requires the architect to continue paying consultant fees; termination does not, which can affect project budgeting"
+          "text": "No notice because the Architect decides alone."
         },
         {
           "id": "d",
-          "text": "Termination requires written notice; suspension may be verbal, although this is not standard practice"
+          "text": "Six months automatic notice."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Reverses the permanence; suspension is temporary and may be extended or resumed, while termination is permanent.",
-        "c": "Misattributes cost responsibility; the owner bears extended overhead and consultant costs for suspensions beyond 30 days, not the architect.",
-        "d": "Confuses documentation requirements; both suspension and termination should be documented in writing to establish procedures and protect both parties.",
-        "correct": "Suspension allows the Owner to pause architectural work without terminating the agreement; termination ends the relationship and limits compensation to work performed before the termination date.",
-        "takeaway": "Suspension pauses the contract; termination ends it and locks compensation to work completed through termination date."
-      },
+      "rationale": "UAP Document 301 schedule of time limits lists fifteen days written notice for contractor suspension or termination.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-003-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.563244+00:00",
       "content_hash": "sha256:1c991b0fa23123031a2fd53c6b6f8bb91b2e672b668159ff1827cffc7b1999fc"
     },
     {
       "question_id": "ee28fd65-0762-4b87-9b23-3860512a1198",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "If the architect is terminated for cause due to negligent design (e.g., omitting a code-required system), how may this affect the architect's compensation?",
+      "text": "If construction suspension exceeds six months under the checked SPP 202 wording, what happens to the fee for remaining works?",
       "options": [
         {
           "id": "a",
-          "text": "The Owner must still pay in full, as negligence claims are separate from compensation disputes, unless otherwise specified in the contract"
+          "text": "It is doubled."
         },
         {
           "id": "b",
-          "text": "The architect's compensation may be reduced or offset by the Owner's damages claim for the cost of remedying the design defect"
+          "text": "It is automatically waived."
         },
         {
           "id": "c",
-          "text": "The architect's compensation is automatically doubled as a penalty, reflecting the severity of the negligence"
+          "text": "It becomes a contractor guarantee bond."
         },
         {
           "id": "d",
-          "text": "The Owner must pay a penalty to the architect for finding the error, as stipulated in the contract's dispute resolution clause"
+          "text": "It becomes a CPD credit unit."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignores negligence damages; the agreement expressly permits offsetting owner damages against architect compensation.",
-        "c": "Imposes punitive multiplier without contractual basis; damages are calculated as actual cost to remedy, not arbitrary penalty.",
-        "d": "Reverses responsibility; the owner has no obligation to pay for discovering architect errors—the owner pursues recovery of remediation costs.",
-        "correct": "Upon termination for cause, the architect is entitled to compensation for services rendered and consultant fees incurred up to the termination date, less any damages the Owner sustained from the breach; if the breach involves negligence in design, the Owner's damages may offset or exceed the architect's unpaid fees.",
-        "takeaway": "Termination for cause due to design negligence allows the owner to offset damages (cost of remedying defects) against unpaid architect fees."
-      },
+      "rationale": "SPP 202 states that when suspension exceeds six months, the fee for remaining works is doubled.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-003-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.566290+00:00",
       "content_hash": "sha256:73aa1139157ab05d330233230de5a9ef189173437d3165ac7cb1fb003a474413"
     },
     {
       "question_id": "3429796b-c3c1-41e4-b7e3-100ee5f3e0c5",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "During Construction Administration, may the architect independently suspend or terminate the construction contract without the Owner's involvement?",
+      "text": "What is the first source-safe step in a suspension or termination question?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the architect has authority to suspend or terminate if the contractor fails to comply with specifications, but this is rarely exercised without consultation"
+          "text": "Identify whether the question is about the Owner-Architect service relationship or the Owner-Contractor construction contract."
         },
         {
           "id": "b",
-          "text": "No, the architect's role is to certify compliance and recommend suspension or termination to the Owner, but the Owner makes the final decision and takes that action"
+          "text": "Assume every notice period comes from CIAP Document 102."
         },
         {
           "id": "c",
-          "text": "Yes, but only for safety-related violations, which must be documented thoroughly to justify the action"
+          "text": "Use only the article title to determine the remedy."
         },
         {
           "id": "d",
-          "text": "The architect must obtain unanimous consent from all consultants before recommending suspension, ensuring all parties agree on the course of action"
+          "text": "Treat the Architect as the contractor in every scenario."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Overstates architect authority; the architect's role is to certify and recommend, not to unilaterally suspend or terminate contractor.",
-        "c": "Allows architect unilateral action in limited scope; even safety violations must be reported to owner with recommendation—owner decides action.",
-        "d": "Imposes unnecessary requirement; consultant consent is not required for architect to recommend suspension to owner.",
-        "correct": "The architect may recommend suspension or termination of the contractor relationship to the Owner, but the architect does not have authority to suspend or terminate the construction contract independently. The Owner makes the final decision to suspend or terminate.",
-        "takeaway": "Architect recommends contractor suspension/termination; Owner makes the final decision and executes the action."
-      },
+      "rationale": "The batch separates SPP 202/401-402 owner-architect fee consequences from UAP 301/CIAP construction-contract remedies.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-003-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.567009+00:00",
       "content_hash": "sha256:108a0fed4ecab9ecf5e980ab7e38927186bcaff1db6cdb01486c209863884050"
     },
     {
       "question_id": "5472e0b1-2f33-4275-95ef-bc5bb0d61a65",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "If the Owner suspends services for 45 days, who bears the cost of the architect's overhead and consultant fees during the suspension period?",
+      "text": "Under SPP 202, what happens when the Architect's work is abandoned or suspended?",
       "options": [
         {
           "id": "a",
-          "text": "The architect must absorb all overhead costs as part of professional practice, which can impact profitability"
+          "text": "The Owner pays for services rendered corresponding to the amount due at the stage reached."
         },
         {
           "id": "b",
-          "text": "The Owner reimburses only the architect's out-of-pocket consultant fees, not overhead, unless otherwise specified"
+          "text": "The Architect automatically loses all compensation."
         },
         {
           "id": "c",
-          "text": "The agreement should specify: typically, if suspension exceeds 30 days, the Owner reimburses overhead costs or extends the contract timeline to allow the architect to recover costs"
+          "text": "The contractor receives the Architect's fee."
         },
         {
           "id": "d",
-          "text": "Consultants must suspend their billing during the same period, which can affect their cash flow"
+          "text": "The PRC sets the fee after construction."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Improperly penalizes architect for owner-directed suspension; suspension is the owner's discretionary act, and extended costs should be borne by the owner.",
-        "b": "Underpays for extended suspension; after 30 days, overhead costs (not just consultant fees) are typically reimbursable as the suspension becomes owner-imposed resource drain.",
-        "d": "Incorrectly obligates consultant behavior; consultants' billing is between architect and consultant; the owner addresses overhead recovery with the architect.",
-        "correct": "The architect is not obligated to absorb overhead costs or continue paying consultants during suspension; such costs are borne by the Owner if suspension extends beyond 30 days, typically recovered through a separate facilities charge or extension of the overall contract timeline.",
-        "takeaway": "Suspensions exceeding 30 days entitle the architect to recover overhead costs either as a fee or through timeline extension."
-      },
+      "rationale": "SPP 202 states the stage-based payment rule for abandoned or suspended Architect work.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-003-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.564730+00:00",
       "content_hash": "sha256:267e94deeb4e62a609cc33145955424a4664b82c554be5ce46a45d402cb42ca8"
     },
     {
       "question_id": "65402ffd-06b0-42ed-84c4-ebf01813547a",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "Termination for cause requires what procedural safeguard before the Owner can end the agreement?",
+      "text": "Which SPP 202 fact applies when the Owner fails to implement prepared plans and documents?",
       "options": [
         {
           "id": "a",
-          "text": "Immediate termination upon the Owner's decision without any prior notice or opportunity for the architect to address the issues raised"
+          "text": "The Architect is entitled to compensation corresponding to ninety percent of the Architect's fee."
         },
         {
           "id": "b",
-          "text": "Written notice specifying the breach and a cure period (typically 10-30 days) during which the architect may remedy the issue"
+          "text": "The Architect is limited to five percent only."
         },
         {
           "id": "c",
-          "text": "Agreement from the contractor that the architect is at fault, which must be documented and signed by all parties involved in the project"
+          "text": "The Owner pays only if a contractor posts a bond."
         },
         {
           "id": "d",
-          "text": "Approval from the architect's professional liability insurance carrier, ensuring that any potential claims are preemptively addressed"
+          "text": "The Architect receives no compensation because no building exists."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Eliminates contractual due process; immediate termination violates the architect's right to cure a claimed breach.",
-        "c": "Misplaces responsibility; contractor agreement is irrelevant to owner-architect disputes; the owner and architect resolve cause terminations.",
-        "d": "Imposes external requirement; insurance carrier approval is not a contractual prerequisite to termination—it is the owner's and architect's agreement matter.",
-        "correct": "Termination for cause requires written notice specifying the breach and a cure period (typically 10 to 30 days) during which the architect may remedy the breach before termination becomes effective.",
-        "takeaway": "Termination for cause requires written notice and 10-30 day cure period before effective termination."
-      },
+      "rationale": "The checked SPP 202 source treats completed detailed design and contract documents as ninety percent of the work.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-003-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.565449+00:00",
       "content_hash": "sha256:3343a149f0a81f86d94dedf6cda920997463856a6ddfc49157a14d551a0cb9b9"
     },
     {
       "question_id": "a651c35c-6242-4ab9-904e-9a07d1962f90",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "Does the architect's 10-year liability period under Civil Code Article 1723 terminate when the Owner-Architect agreement is suspended or terminated?",
+      "text": "Under UAP Document 301, what is one listed owner termination route for construction-contract default?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, suspension or termination eliminates the architect's liability for design defects, effectively ending any further obligations"
+          "text": "After fifteen days written notice to the Contractor or surety for listed contractor defaults."
         },
         {
           "id": "b",
-          "text": "No, the architect's liability for defective design continues under Article 1723 for 15 years from completion of the work, independent of agreement termination"
+          "text": "Immediate Architect-only termination without Owner action."
         },
         {
           "id": "c",
-          "text": "The liability period is reduced to 5 years upon termination, provided that the termination is mutually agreed upon and documented"
+          "text": "Termination by CPD provider accreditation."
         },
         {
           "id": "d",
-          "text": "Liability exists only during the active period of the agreement, unless otherwise specified in a separate contractual clause"
+          "text": "Termination because design development started."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrectly eliminates statutory liability; Article 1723 creates liability separate from and beyond the agreement.",
-        "c": "Shortens statutory period without authority; Article 1723 establishes 15 years; termination does not reduce it.",
-        "d": "Conflates contract status with statute; Article 1723 liability accrues from completion and runs for 15 years regardless of contract activity status.",
-        "correct": "The architect's liability for defective design is not eliminated by termination; it continues under Article 1723 for 15 years from completion of the work, regardless of whether the agreement was suspended or terminated.",
-        "takeaway": "Civil Code Article 1723 establishes a 10-year liability period for architects from completion independent of contract termination—agreement end does not shield architect from defect claims."
-      },
+      "rationale": "The UAP 301 schedule lists Owner termination after fifteen days written notice for specified contractor defaults.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-003-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.563993+00:00",
       "content_hash": "sha256:b2706005b19a371e0fdcf4e52db1e64cbf04764139c38fd03ba246fbe7afa4fa"
     },
     {
       "question_id": "bda5c914-aa4d-482e-84f8-f939cf9f656f",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "If the Owner terminates the architect after receipt of documents but before paying the final invoice, what options may the architect pursue?",
+      "text": "Which CIAP Document 102 termination-without-cause fact is source-backed?",
       "options": [
         {
           "id": "a",
-          "text": "The architect has no recourse; compensation is forfeited upon termination, which is a risk inherent in the profession"
+          "text": "Upon fifteen days written notice, the Owner may abandon the work and terminate the Contract, with payment for executed work and reasonable termination expenses."
         },
         {
           "id": "b",
-          "text": "The architect may file a lien on the project property (if permitted by agreement) or pursue collection through litigation, depending on whether the agreement waives lien rights"
+          "text": "The Owner must pay no executed work."
         },
         {
           "id": "c",
-          "text": "The architect must immediately recover the documents from the Owner, ensuring that no unauthorized use occurs"
+          "text": "The Architect alone terminates the construction contract."
         },
         {
           "id": "d",
-          "text": "The architect is entitled to twice the unpaid amount as a penalty, which serves as a deterrent against non-payment"
+          "text": "The contractor must renew CPD units first."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Eliminates all remedies; the architect retains rights to pursue unpaid compensation—termination does not erase debt.",
-        "c": "Seizes documents as leverage; document recovery is the architect's obligation regardless of payment—this is a separate dispute.",
-        "d": "Imposes unwarranted penalty; damages are actual unpaid fees plus costs of collection, not doubled amounts without agreement basis.",
-        "correct": "If the Owner fails to pay the architect during or after suspension/termination, the architect may file a lien on the project property (if the Owner is real estate owner and the architect has provided direct labor or materials) or pursue collection through litigation, depending on whether the agreement waives lien rights.",
-        "takeaway": "Unpaid architect fees may be recovered via lien (if permitted) or litigation; the agreement clarifies whether lien rights are available."
-      },
+      "rationale": "CIAP 102 provides termination without cause upon fifteen days written notice with payment consequences.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-003-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.561698+00:00",
       "content_hash": "sha256:53d0695bde48f9b0e7735d81b35ef9bc72b3b382a8836b2d802ba8aa84322296"
     },
     {
       "question_id": "c28b31e4-7e35-45f1-a479-85c79d85e093",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "Upon termination (for cause or convenience), what is the architect's primary obligation regarding project documents?",
+      "text": "Which answer is unsafe for this article?",
       "options": [
         {
           "id": "a",
-          "text": "The architect retains all original documents until the Owner pays in full, ensuring that all financial obligations are met before any transfer occurs"
+          "text": "Importing UAP 301 or CIAP owner-contractor notice periods into an owner-architect fee question without checking the governing document."
         },
         {
           "id": "b",
-          "text": "The architect delivers all drawings, specifications, consultant reports, permits, and design work to the Owner or successor architect to enable project continuation"
+          "text": "Using SPP 202 for abandoned Architect work."
         },
         {
           "id": "c",
-          "text": "The architect is required to complete the design before transferring documents, unless the termination agreement specifies otherwise"
+          "text": "Using CIAP 102 for private construction-contract suspension."
         },
         {
           "id": "d",
-          "text": "The architect must guarantee that all delivered documents are free from defects, providing a warranty period for any discovered issues"
+          "text": "Separating SPP 202 from UAP Document 301."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Uses document retention as leverage for payment; the agreement requires document delivery regardless of payment status (payment disputes are separate).",
-        "c": "Prevents document transfer indefinitely; the documents must be delivered even if incomplete to allow successor architect to complete the design.",
-        "d": "Overstates warranty; the architect does not warrant that work in progress is complete or defect-free—a successor architect assumes responsibility for corrections.",
-        "correct": "Upon termination, the architect's primary obligation is to transition all project information to the Owner or successor architect, including all original and reproducible copies of drawings, specifications, consultant reports, permits, submittals, and correspondence.",
-        "takeaway": "Upon termination, the architect must immediately deliver all documents and design work to the owner or successor to enable project continuation."
-      },
+      "rationale": "The main risk is mixing source families and assigning the wrong remedy to the wrong contract relationship.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CTR-003-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.559404+00:00",
       "content_hash": "sha256:8da54e9dad5066ade69d951ec0b7fb4b660cecb6f6ff5376c790afb9c65afa35"
     },
     {
       "question_id": "b19a0192-c08d-4b5c-a66c-d2b0f8ee6c5c",
       "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
       "topic_id": "df89c2d6-547d-4fbd-82e2-f7ee7afce295",
-      "text": "If suspension extends beyond 12 months, what professional obligation may the architect incur upon resumption of work?",
+      "text": "What does CIAP Document 102 allow the Owner to do without cause?",
       "options": [
         {
           "id": "a",
-          "text": "The architect has no obligation to update the design regardless of time elapsed, as the original contract terms remain binding"
+          "text": "Suspend the work or a portion for not more than an aggregate fifteen days by written notice, with adjustment rules."
         },
         {
           "id": "b",
-          "text": "The architect must charge double the original fee for all subsequent work, as a penalty for project delay"
+          "text": "Suspend work indefinitely without contractor consent and without adjustment."
         },
         {
           "id": "c",
-          "text": "Building codes and professional standards may have changed; the architect may be entitled to additional compensation for updating specifications and designs to current code and standard requirements"
+          "text": "Cancel the Architect's PRC license."
         },
         {
           "id": "d",
-          "text": "The entire design must be redone from scratch at no additional cost, as a gesture of goodwill"
+          "text": "Convert all design services into reimbursables."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignores professional duty; after 12+ months, design must be updated to current codes—the architect cannot use obsolete standards.",
-        "b": "Imposes arbitrary multiplier; additional fees are calculated based on actual code update effort, not a fixed multiplier.",
-        "d": "Overstates scope; the design need not be completely redone—only updated to reflect code changes and standard updates since suspension began.",
-        "correct": "If more than 12 months pass after suspension, professional standards and local codes may have changed, requiring design updates before resuming; the architect should be entitled to additional compensation for incorporating code changes and updating specifications even if the project scope is unchanged.",
-        "takeaway": "After 12-month suspension, building codes may have changed; architect can charge additional fees to update designs to current code before resumption."
-      },
+      "rationale": "CIAP 102 states the Owner may suspend without cause for not more than an aggregate fifteen days and provides adjustment consequences.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-003-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.562494+00:00",
       "content_hash": "sha256:3227ca64da7704aff346689c526cbc341fd9b8d636f5eecd63477de58ac04ac0"
     }
   ]

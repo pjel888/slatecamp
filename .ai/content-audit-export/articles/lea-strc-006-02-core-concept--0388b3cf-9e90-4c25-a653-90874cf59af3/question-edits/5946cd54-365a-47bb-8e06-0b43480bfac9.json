@@ -22,5 +22,53 @@
       "detailing-rebar",
       "detailing-concrete"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "How should ordinary rust on reinforcement be treated in an exam-safe answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All rust always requires immediate demolition."
+      },
+      {
+        "id": "b",
+        "text": "Rust proves the bar needs no cover."
+      },
+      {
+        "id": "c",
+        "text": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired."
+      },
+      {
+        "id": "d",
+        "text": "Rust eliminates the need for inspection."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "All rust always requires immediate demolition. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Rust proves the bar needs no cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "c": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+      "d": "Rust eliminates the need for inspection. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired. Supported by detailing-rebar.",
+      "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-rebar",
+      "checked_sources": [
+        "detailing-rebar",
+        "detailing-concrete"
+      ]
+    },
+    "explanation": "It is not automatically disqualifying if dimensions and weight remain acceptable and bond is not impaired. Supported by the Batch 144 local source boundary: detailing-rebar.",
+    "code_citation": "detailing-rebar",
+    "bloom_level": "apply",
+    "application_context": "calculation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-02-007"
   }
 }

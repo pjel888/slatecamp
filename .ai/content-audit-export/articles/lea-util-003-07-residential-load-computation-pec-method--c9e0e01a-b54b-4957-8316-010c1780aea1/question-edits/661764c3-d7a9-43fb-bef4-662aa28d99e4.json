@@ -2,70 +2,48 @@
   "question_id": "661764c3-d7a9-43fb-bef4-662aa28d99e4",
   "baseline_hash": "sha256:f5b390f682fe6cee43bc74dc833b08658923fe7f44d985d54bd1b652bdf8c42d",
   "action": "replace",
-  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
-  "approved_by": "codex-local-first-batch-041",
-  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent G ERROR G1 / Q6): marked-correct '4,600 VA' failed arithmetic. Recomputed total connected load: lighting 600 sqm x 1 VA/sqm = 600 VA; 10 receptacles x 180 VA = 1,800 VA; one 2 kW three-phase motor = 2,000 VA. Total = 600 + 1,800 + 2,000 = 4,400 VA. Restores the original warehouse connected-load question with the corrected answer.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "c9e0e01a-b54b-4957-8316-010c1780aea1",
     "parent_article_slug": "lea-util-003-07-residential-load-computation-pec-method",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358 | Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190",
-    "checked_markdown_lines": [
-      "Phil Electrical Code refined markdown lines 1721-1770",
-      "Phil Electrical Code refined markdown lines 2125-2138",
-      "Phil Electrical Code refined markdown lines 2202-2237",
-      "Phil Electrical Code refined markdown lines 2253-2311",
-      "Phil Electrical Code refined markdown lines 2337-2358",
-      "Electrical Layout and Estimate refined markdown lines 53-68",
-      "Electrical Layout and Estimate refined markdown lines 3260-3350",
-      "Electrical Layout and Estimate refined markdown lines 2153-2190"
-    ],
+    "support_status": "council_verified_fact_check",
+    "source_locator": "PEC 220.12 general lighting unit load (warehouse = 1 VA/sqm); PEC receptacle load at 180 VA each; motor at nameplate VA.",
     "checked_sources": [
       {
         "source_id": "pec-2017-local-phil-electrical-code",
         "label": "Philippine Electrical Code local raw PDF",
         "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
-        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
-        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
-        "locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358"
-      },
-      {
-        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
-        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
-        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
-        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
-        "locator": "Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190"
+        "locator": "PEC 220.12 general lighting unit loads; receptacle load 180 VA each; motor nameplate load."
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+    "local_source_safe_action": "Corrected marked-correct option from '4,600 VA' to '4,400 VA' (council-recomputed value, matching Agent G)."
   },
   "proposed": {
-    "text": "What does the checked feeder sizing rule require for continuous load?",
+    "text": "A warehouse (600 sqm) requires lighting load per PEC 220.12 (warehouse = 1 VA/sqm). The warehouse also has 10 receptacles at 180 VA each and one 2 kW three-phase motor for material handling. What is the total connected load before demand factors?",
     "options": [
       {
         "id": "a",
-        "text": "Add 125 percent of the continuous load to the noncontinuous load basis."
+        "text": "3,800 VA"
       },
       {
         "id": "b",
-        "text": "Ignore continuous load completely."
+        "text": "4,000 VA"
       },
       {
         "id": "c",
-        "text": "Use 25 percent of all load only."
+        "text": "4,400 VA"
       },
       {
         "id": "d",
-        "text": "Size by room name only."
+        "text": "4,600 VA"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The checked PEC feeder rule uses noncontinuous load plus 125 percent of continuous load.",
-    "explanation": "The checked PEC feeder rule uses noncontinuous load plus 125 percent of continuous load.",
-    "code_citation": "PEC feeder sizing provisions"
+    "correct_option_id": "c",
+    "rationale": "Connected load = lighting + receptacles + motor (no demand factor applied). Lighting = 600 sqm x 1 VA/sqm = 600 VA. Receptacles = 10 x 180 VA = 1,800 VA. Motor = 2 kW = 2,000 VA. Total = 600 + 1,800 + 2,000 = 4,400 VA. The original '4,600 VA' answer over-counted by 200 VA. Source: PEC 220.12 (general lighting unit load) and receptacle/motor nameplate provisions.",
+    "explanation": "Total connected load = 600 + 1,800 + 2,000 = 4,400 VA before any demand factor.",
+    "code_citation": "PEC 220.12 (general lighting unit load); PEC receptacle and motor nameplate provisions"
   }
 }

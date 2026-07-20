@@ -1,0 +1,518 @@
+{
+  "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:e05a5ac1d5bb87025f6c22debc0a5ab553606a6ae6cddd50ca17a9f6afa45fd6",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "7d52c209-7976-4e9c-af75-928b59e96447",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "Under RA 7279, what constitutes a 'danger area' where informal settlers can be evicted?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any area with structures older than 10 years, as older structures may pose safety risks"
+        },
+        {
+          "id": "b",
+          "text": "Any slum where average income is below the poverty line, indicating economic vulnerability"
+        },
+        {
+          "id": "c",
+          "text": "Esteros, railroad tracks, garbage dumps, riverbanks, shorelines, waterways, under bridges, power easements, and other public places (specific setback distances derive from PD 1067 and other codes, not RA 7279 itself)"
+        },
+        {
+          "id": "d",
+          "text": "Urban areas declared 'blighted' by the city mayor, which may be subject to redevelopment plans"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Age is not a RA 7279 danger criterion.",
+        "b": "Poverty is not a hazard criterion; slums exist across income levels.",
+        "c": "RA 7279 explicitly identifies danger areas based on physical hazards: 3m from esteros/streams (PD 1067 water easement), 50m from railroad (train hazard), under bridges, power easements, active faults (PHIVOLCS). These are objective spatial criteria.",
+        "d": "Blighted area (RA 7279 definition) is distinct from danger area. Blighted areas permit expropriation but don't automatically permit danger-area eviction.",
+        "correct": "RA 7279 explicitly identifies danger areas based on physical hazards: 3m from esteros/streams (PD 1067 water easement), 50m from railroad (train hazard), under bridges, power easements, active faults (PHIVOLCS). These are objective spatial criteria.",
+        "takeaway": "RA 7279 danger areas: 3m esteros, 50m railroad, under bridges, power easements, fault zones."
+      },
+      "explanation": null,
+      "code_citation": "RA 7279, Section 2(f)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.02411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8e824cedfc3813988ed4038886b0ef14b5a08824e0743da154d9a09e861f142f"
+    },
+    {
+      "question_id": "cf41acaf-11b2-4938-ad66-4e883c7e9cac",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "The [Not found in provided search results. Requires independent verification of post-Yolanda coastal zoning standards.] introduced coastal no-build zones to constrain informal settlement expansion in high-risk areas. What is the imposed setback distance from mean high tide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 meters"
+        },
+        {
+          "id": "b",
+          "text": "30 meters"
+        },
+        {
+          "id": "c",
+          "text": "20 meters"
+        },
+        {
+          "id": "d",
+          "text": "50 meters"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Post-Yolanda no-build zone: 40 meters from mean high tide. This is a hazard-based land-use constraint now mandatory in coastal CLUPs post-2014.",
+        "b": "Incorrect distance.",
+        "c": "Insufficient setback per post-Yolanda standard.",
+        "d": "More restrictive than post-Yolanda (though some high-hazard zones may use 50m).",
+        "correct": "Post-Yolanda no-build zone: 40 meters from mean high tide. This is a hazard-based land-use constraint now mandatory in coastal CLUPs post-2014.",
+        "takeaway": "Post-Yolanda coastal no-build: 40m from mean high tide. Now mandatory CLUP constraint."
+      },
+      "explanation": null,
+      "code_citation": "Post-Yolanda National Zoning Framework (2014)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4d9c71f016792be4b1d0dd3b9f8e8ec04354cb1a337a9079afec2add62874f83"
+    },
+    {
+      "question_id": "fdf309a2-e5ad-44d5-9eb6-675aa63ea0a5",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "Under RA 7279, what distinguishes an 'adequate resettlement site' from a simple temporary relocation area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adequate site has permanent utilities; temporary area has emergency supplies only, which are not sustainable long-term"
+        },
+        {
+          "id": "b",
+          "text": "Adequate site must be accessible to livelihood opportunities, schools, clinics, with utilities; temporary area is for emergency-only displacement"
+        },
+        {
+          "id": "c",
+          "text": "Adequate site must be on government land; temporary area may be on private land, subject to availability"
+        },
+        {
+          "id": "d",
+          "text": "Adequate site requires community consent; temporary area is government-directed without such requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both have permanent utilities; the distinction is broader (livelihood, services access).",
+        "b": "RA 7279 'adequate' = permanent solution with livelihood access, services (schools/clinics), utilities, minimum 24 sq.m. Temporary emergency relocation (e.g., during disaster) is different; RA 7279 requires permanent adequacy.",
+        "c": "Adequate sites can be on private or public land (expropriable).",
+        "d": "RA 7279 requires community participation in relocation planning (not purely government-directed).",
+        "correct": "RA 7279 'adequate' = permanent solution with livelihood access, services (schools/clinics), utilities, minimum 24 sq.m. Temporary emergency relocation (e.g., during disaster) is different; RA 7279 requires permanent adequacy.",
+        "takeaway": "RA 7279 adequate site: permanent + livelihood + services + utilities + 24 sq.m. min."
+      },
+      "explanation": null,
+      "code_citation": "RA 7279, Section 2(g)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bde1d462882288eba09749b185d15fe4aa434885792ba8337128853492c6e096"
+    },
+    {
+      "question_id": "e7dc5b84-1a93-4aba-a58d-7d4abe4d1204",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "An informal settlement is located on a flood-prone riverbank. What are the THREE requirements under RA 7279 for any eviction to proceed legally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30-day notice only (sufficient for flood-risk areas) with no additional requirements for resettlement or compensation"
+        },
+        {
+          "id": "b",
+          "text": "30-day notice AND community survey AND LGU approval, ensuring that all stakeholders are informed and have agreed to the terms"
+        },
+        {
+          "id": "c",
+          "text": "Mayor's declaration AND 60-day notice AND payment of relocation assistance, which includes financial support for affected families to move to a safer location"
+        },
+        {
+          "id": "d",
+          "text": "[Clarify: Court order requirement applies to non-danger-area evictions per RA 7279 Section 28(c); danger area evictions may proceed under Section 28(a) with 30-day notice but without court order requirement. Resettlement site requirement applies only to non-danger areas per Section 29.]"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incomplete; all three requirements apply unless in designated danger area.",
+        "b": "Community survey is good practice but not a statutory RA 7279 requirement.",
+        "c": "Mayor's declaration alone is insufficient; court order required; 60 days exceeds RA 7279 (30 days).",
+        "d": "RA 7279 ALL THREE must be met for non-danger-area eviction: (1) written 30-day notice, (2) court order (Writ of Demolition from RTC), (3) certified adequate resettlement site available BEFORE eviction. Flood-proneness is not a 'danger area' per RA 7279; it requires relocation.",
+        "correct": "RA 7279 ALL THREE must be met for non-danger-area eviction: (1) written 30-day notice, (2) court order (Writ of Demolition from RTC), (3) certified adequate resettlement site available BEFORE eviction. Flood-proneness is not a 'danger area' per RA 7279; it requires relocation.",
+        "takeaway": "RA 7279 eviction: 30-day notice + court order + certified resettlement site (all 3 required)."
+      },
+      "explanation": null,
+      "code_citation": "RA 7279, Section 8",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b68f05e1872a7496aa67046daf7772535102be6c972c162f92ad66f2d13bca1"
+    },
+    {
+      "question_id": "6a467a4e-50f0-49c4-8b60-81259222e122",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "What is the minimum floor area standard for an adequate resettlement site under RA 7279?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 sq.m., which is considered the absolute minimum for basic living conditions"
+        },
+        {
+          "id": "b",
+          "text": "[Unverified in provided search results. Requires citation to RA 7279 Section 2(g) or implementing rules to confirm 24 sq.m. standard.]"
+        },
+        {
+          "id": "c",
+          "text": "22 sq.m., providing slightly more space than the minimum to accommodate basic amenities"
+        },
+        {
+          "id": "d",
+          "text": "30 sq.m., offering a more generous space allocation for improved living standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Below RA 7279 minimum.",
+        "b": "RA 7279 adequate resettlement site: minimum 24 sq.m. floor area per unit. This is distinct from BP 220 socialized housing (22 sq.m.) — RA 7279 set a slightly higher standard for resettlement adequacy.",
+        "c": "BP 220 socialized housing standard; not RA 7279 resettlement minimum.",
+        "d": "Exceeds minimum requirement.",
+        "correct": "RA 7279 adequate resettlement site: minimum 24 sq.m. floor area per unit. This is distinct from BP 220 socialized housing (22 sq.m.) — RA 7279 set a slightly higher standard for resettlement adequacy.",
+        "takeaway": "RA 7279 adequate resettlement: 24 sq.m. minimum floor area + livelihood + services access."
+      },
+      "explanation": null,
+      "code_citation": "RA 7279, Section 2(g)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e61a54669b2f806915baa143be26fe96b567cd64124750555e4690b430606a8"
+    },
+    {
+      "question_id": "3d759df0-102f-4b3f-bc24-63bd2af73f18",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "Occupants in an informal settlement 5 meters from an estero are threatened with eviction. What is their legal right regarding relocation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are entitled to government-provided relocation to a certified adequate resettlement site, ensuring their safety and compliance with housing laws."
+        },
+        {
+          "id": "b",
+          "text": "They have no legal protections; eviction can proceed immediately without notice, which may lead to human rights concerns and legal challenges."
+        },
+        {
+          "id": "c",
+          "text": "[Requires verification against full RA 7279 Section 28-29 text to confirm whether danger area occupants are explicitly exempt from relocation obligations]"
+        },
+        {
+          "id": "d",
+          "text": "They must relocate themselves at their own cost within 30 days, which may not be feasible for all affected families."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Danger area = NO relocation obligation (though notice still required).",
+        "b": "ERR-PLAN-012: All RA 7279 evictions require 30-day notice, even in danger areas.",
+        "c": "Danger area occupants (within 3m of esteros) can be evicted BUT are not entitled to government relocation. However, the 30-day notice requirement still applies. The distinction: non-danger areas = notice + relocation; danger areas = notice only.",
+        "d": "Relocation is government responsibility if required; not a self-funded obligation.",
+        "correct": "Danger area occupants (within 3m of esteros) can be evicted BUT are not entitled to government relocation. However, the 30-day notice requirement still applies. The distinction: non-danger areas = notice + relocation; danger areas = notice only.",
+        "takeaway": "Danger area distinction: eviction allowed but NO relocation obligation. Notice still required (30 days)."
+      },
+      "explanation": null,
+      "code_citation": "RA 7279, Section 2(f), Section 8",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aafde42af924e0dd4839013c3e75b775b5c170c8c777cd1f4134ff7948672366"
+    },
+    {
+      "question_id": "3dec93e4-0a04-4dca-9ef9-8cd19d2ce1ff",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "Which statement best captures the policy shift from pre-1992 to post-RA 7279 approaches to informal settlements in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From demolition-based displacement toward in-situ upgrading and community-centered solutions, with relocation as a last resort"
+        },
+        {
+          "id": "b",
+          "text": "From community rights protection to aggressive demolition-relocation, prioritizing urban redevelopment"
+        },
+        {
+          "id": "c",
+          "text": "From government-built housing to purely private market subdivision provision, reducing public sector involvement"
+        },
+        {
+          "id": "d",
+          "text": "From land tenure security to temporary emergency shelter only, focusing on immediate relief"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "RA 7279 (1992) fundamentally shifted policy from mass demolition (pre-1992) toward community rights, in-situ upgrading (SHFC-CMP), and relocation only as last resort. This was a major paradigm change.",
+        "b": "Opposite of actual direction; RA 7279 protected rights.",
+        "c": "RA 7279 still emphasizes government production; market role is supplementary.",
+        "d": "RA 7279 emphasizes permanent solutions, not temporary shelter.",
+        "correct": "RA 7279 (1992) fundamentally shifted policy from mass demolition (pre-1992) toward community rights, in-situ upgrading (SHFC-CMP), and relocation only as last resort. This was a major paradigm change.",
+        "takeaway": "RA 7279 paradigm shift: demolition → in-situ upgrading. Community rights priority."
+      },
+      "explanation": null,
+      "code_citation": "RA 7279 Legislative History; Philippine Housing Policy Evolution",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:77272a1f60329977511e60b31ac5a76f6d1a5049889c08bfc784586099938a4f"
+    },
+    {
+      "question_id": "4c7aa89a-4ba9-4efc-8ca6-9d9324eac1b6",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "The Community Mortgage Program (SHFC-CMP) serves as the primary mechanism for in-situ settlement upgrading by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demolishing informal structures and rebuilding formal housing, which can lead to displacement and loss of community ties"
+        },
+        {
+          "id": "b",
+          "text": "Registering informal land as government property for lease to communities, providing a temporary solution without ownership rights"
+        },
+        {
+          "id": "c",
+          "text": "Providing direct grants to informal settlers for self-improvement, encouraging individual responsibility for housing upgrades"
+        },
+        {
+          "id": "d",
+          "text": "Enabling community organizations to collectively mortgage land to acquire ownership while preserving the existing settlement"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CMP finances land acquisition, not structure replacement.",
+        "b": "CMP transfers ownership to community; not government lease.",
+        "c": "CMP is a mortgage program; not a direct grant program.",
+        "d": "CMP's mechanism: community organization secures a single mortgage (not individual buyers) to purchase land. Community stays in place; collective tenure formalized; upgrades follow. This is the operationalization of in-situ upgrading.",
+        "correct": "CMP's mechanism: community organization secures a single mortgage (not individual buyers) to purchase land. Community stays in place; collective tenure formalized; upgrades follow. This is the operationalization of in-situ upgrading.",
+        "takeaway": "CMP = collective community mortgaging to formalize tenure + enable in-situ upgrading."
+      },
+      "explanation": null,
+      "code_citation": "SHFC Community Mortgage Program Guidelines",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca54e605655f9ef15392ccfc4786d8b01cdbd1ed4005a1c6362a53bc21b7431d"
+    },
+    {
+      "question_id": "83b51fb9-2cea-4e69-9d56-0227cc5689b6",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "What is the PRIMARY advantage of in-situ settlement upgrading compared to relocation-based approaches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In-situ is always cheaper than relocation, reducing initial costs significantly"
+        },
+        {
+          "id": "b",
+          "text": "In-situ preserves livelihood networks, community institutions, and social capital; reduces economic and social disruption"
+        },
+        {
+          "id": "c",
+          "text": "In-situ does not require formal planning or infrastructure investment, allowing for immediate implementation"
+        },
+        {
+          "id": "d",
+          "text": "In-situ eliminates the need for government housing subsidy, freeing up public funds for other uses"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Costs may be comparable; primary benefit is not cost but community preservation.",
+        "b": "In-situ's strength: communities stay in place; existing livelihood (vendors, artisans, trades), schools, clinics, social networks preserved. Relocation breaks all of this and often causes economic collapse.",
+        "c": "In-situ requires significant planning and infrastructure (water, sanitation, roads); relocation also requires planning.",
+        "d": "Both require government support/subsidy.",
+        "correct": "In-situ's strength: communities stay in place; existing livelihood (vendors, artisans, trades), schools, clinics, social networks preserved. Relocation breaks all of this and often causes economic collapse.",
+        "takeaway": "In-situ = community continuity + livelihood preservation. Relocation = economic/social disruption."
+      },
+      "explanation": null,
+      "code_citation": "RA 7279 Policy Framework; SHFC-CMP Experience",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d33ec17ecdf0834b5ef73b691c2979f230a4e0ae42d091a5ebaff1943c8467c"
+    },
+    {
+      "question_id": "9f6b111c-400f-49c5-a14e-155506af0d2c",
+      "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+      "topic_id": "17f30d32-88d3-4fad-9eec-19fd562b0601",
+      "text": "An informal settlement occupies a 2-hectare site within an active fault zone (per PHIVOLCS). Under RA 7279, what is the primary planning challenge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The settlement must be upgraded in place with seismic-resistant infrastructure, ensuring safety for all residents"
+        },
+        {
+          "id": "b",
+          "text": "The settlement is automatically declared a blighted area requiring wholesale demolition, which may displace residents"
+        },
+        {
+          "id": "c",
+          "text": "Occupants can be evicted without relocation rights but still require 30-day notice before evacuation"
+        },
+        {
+          "id": "d",
+          "text": "The site requires only environmental impact assessment before any intervention, simplifying the process"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "In-situ upgrade is not appropriate for active fault hazard; relocation is necessary.",
+        "b": "Blighted area ≠ danger area; different concepts.",
+        "c": "Active fault zone = danger area. Occupants can be evicted (30-day notice required) but government has NO relocation obligation. This is the key danger-area distinction: hazard removal takes priority over relocation provision.",
+        "d": "EIA is important but secondary to hazard removal.",
+        "correct": "Active fault zone = danger area. Occupants can be evicted (30-day notice required) but government has NO relocation obligation. This is the key danger-area distinction: hazard removal takes priority over relocation provision.",
+        "takeaway": "Active fault = danger area. Eviction allowed, relocation NOT required."
+      },
+      "explanation": null,
+      "code_citation": "RA 7279, Section 2(f); PHIVOLCS Active Fault Zones",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.30354+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4207b01417a4f3f8fe664fc858be85ee7d7469e3239d1ed0d47eb7986a945a6d"
+    }
+  ]
+}

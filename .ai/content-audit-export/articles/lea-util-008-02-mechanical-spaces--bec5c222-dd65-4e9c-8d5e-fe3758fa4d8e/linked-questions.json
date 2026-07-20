@@ -8,37 +8,31 @@
       "question_id": "70f7a37d-ede5-4af5-8780-3d0fa845c1ac",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A 20-story residential building in Metro Manila requires rooftop mechanical equipment including two 200-ton cooling towers, exhaust fan stack, supply air intake louver, and equipment access. 's guidance, estimate the total rooftop mechanical equipment area allocation.",
+      "text": "For electrical rooms, which checked PEC rule family is most important to preserve?",
       "options": [
         {
           "id": "a",
-          "text": "50–75 m² (towers + louvers only), excluding any additional space for maintenance pathways"
+          "text": "Working space, headroom, illumination, and required access around equipment."
         },
         {
           "id": "b",
-          "text": "100–150 m² (towers, louvers, fan stack, clearances, maintenance access)"
+          "text": "A decorative room name that replaces clear working space."
         },
         {
           "id": "c",
-          "text": "150–200 m² (includes solar panel future staging), allowing for potential expansion of renewable energy systems"
+          "text": "Storage shelves in front of service equipment."
         },
         {
           "id": "d",
-          "text": "250+ m² (extensive rooftop penthouse required), which may include additional amenities or storage"
+          "text": "Foreign ducts and piping placed freely above switchgear."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "50–75 m² ignores exhaust discharge clearance (3 m separation), sound attenuation, and maintenance access zones.",
-        "c": "150–200 m² approaches guidelines; acceptable for conservative design with future solar integration.",
-        "d": "250+ m² is excessive for residential; applies to large office towers with multiple redundant systems.",
-        "correct": "Two 200-ton cooling towers: ~14 m² × 2 = 28 m² base + 1.5 m perimeter clearance = ~50 m² combined. Supply air intake louver: 2 m × 1.5 m. Return/exhaust discharge: 1.5 m × 1.5 m (3 m separation from intake). Sound attenuation enclosure: 0.5 m depth. Total: 100–150 m² including vibration isolation, maintenance aisles, and equipment positioning per article guidance on rooftop allocation.",
-        "takeaway": "20-story residential rooftop: 100–150 m² mechanical allocation; dual 200-ton towers + intake/exhaust louvers + sound attenuation + 1.5 m clearances + maintenance aisles."
-      },
+      "rationale": "The checked PEC family requires electrical working space, headroom, illumination, and related access clearances.",
       "explanation": null,
       "code_citation": "Article: Section Rooftop Equipment Areas (Cooling Tower, Exhaust Fan, Intake Louvers)",
       "bloom_level": "apply",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-008-02-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.241516+00:00",
       "content_hash": "sha256:aeeb715546743400c0d62b9514219dcb5c923a290858af70d48451bcdcf3dade"
     },
     {
       "question_id": "cab59c18-3ef4-4dbc-a75f-5b4fa1942d8c",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A luxury 5-star hotel development (35 floors, 18,000 m² GFA) requires enhanced mechanical redundancy (dual chiller plant), fire protection (sprinkler + standpipe + fire pump redundancy), specialized kitchen exhaust, laundry wastewater, and onsite treatment. What MEPF space percentage should the project budget per hospitality industry standards?",
+      "text": "Which coordination decision is source-safe for service equipment rooms?",
       "options": [
         {
           "id": "a",
-          "text": "8.0–9.0% (office standard; hospitality is similar, but may require adjustments for specific systems)"
+          "text": "Keep foreign pipes and ducts out of dedicated electrical equipment space where the PEC requires protection."
         },
         {
           "id": "b",
-          "text": "10.0–12.0% (high-rise office allocation, which may not account for all hospitality-specific needs)"
+          "text": "Use service-equipment rooms as general plumbing chases."
         },
         {
           "id": "c",
-          "text": "11.0–13.0% of GFA (hospitality allocation with redundancy and specialized systems)"
+          "text": "Let future maintenance access depend only on removable furniture."
         },
         {
           "id": "d",
-          "text": "14.0–16.0% (excessive; only healthcare requires this, due to its unique operational demands)"
+          "text": "Prioritize ceiling concealment over equipment clearances."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "8.0–9.0% is office allocation; hospitality demands higher redundancy and specialized systems.",
-        "b": "10.0–12.0% is high-rise office standard; insufficient for hotel redundancy and kitchen/laundry infrastructure.",
-        "d": "14.0–16.0% exceeds hospitality requirement; reserved for healthcare facilities with critical-care systems.",
-        "correct": "Hospitality (hotel, resort) allocates 11.0–13.0% per article table: '5.0% (Mechanical) + 2.0% (Electrical) + 2.0% (Plumbing/FP) + 2.0% (Other) = 11.0–13.0%'. Luxury hotels require: dual chiller redundancy (5–6% mechanical), dual fire pump systems (2.0% plumbing/fire), kitchen grease trap + laundry wastewater treatment (elevated plumbing %), specialized exhaust (kitchen, laundry, loading dock). For 18,000 m²: 1,980–2,340 m² MEPF space.",
-        "takeaway": "Luxury hotel (35 floors, 18,000 m²): budget 11.0–13.0% MEPF = 1,980–2,340 m²; includes dual mechanical redundancy, fire protection redundancy, kitchen/laundry wastewater, specialized exhaust."
-      },
+      "rationale": "The checked PEC family restricts foreign systems near service equipment and switchgear and requires coordinated working space.",
       "explanation": null,
       "code_citation": "Article: Section Space Allocation Rules of Thumb (Hospitality row); PD 1096 + ASHRAE hospitality standards",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-008-02-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.234923+00:00",
       "content_hash": "sha256:ca68240b59ab683a97b87f0563b2e279df4bc3fab7d827b94565740e7c614c82"
     },
     {
       "question_id": "a7479862-87c6-4dad-aa9b-f3441e07eee0",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A 45-floor high-rise office tower in BGC is designed with 25,000 m² GFA. The MEP engineer must determine total MEPF space allocation and verify compliance with PD 1096 efficiency benchmarks. Based on GFA allocation table, what total percentage and gross area should be budgeted?",
+      "text": "Which mechanical-space planning idea is supported by the checked Salvan utilities family?",
       "options": [
         {
           "id": "a",
-          "text": "8.0–9.0% of GFA (2,000–2,250 m²) for mid-rise profile"
+          "text": "Plan for access, maintenance, ventilation, expansion, and noise control around utility equipment."
         },
         {
           "id": "b",
-          "text": "10.0–12.0% of GFA (2,500–3,000 m²) for high-rise office, per table"
+          "text": "Use leftover space after architectural rooms are finalized."
         },
         {
           "id": "c",
-          "text": "12.0–14.0% of GFA (3,000–3,500 m²) to include excess redundancy"
+          "text": "Treat equipment rooms as storage rooms by default."
         },
         {
           "id": "d",
-          "text": "14.0–16.0% of GFA (3,500–4,000 m²) for healthcare-level safety"
+          "text": "Avoid ventilation because mechanical rooms are not occupied."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "8.0–9.0% applies to mid-rise office (15–30 floors), not 45-floor high-rise tower.",
-        "c": "12.0–14.0% exceeds high-rise office requirement; appropriate for hospitality or mixed-use with higher redundancy demands.",
-        "d": "14.0–16.0% is healthcare facility allocation; inappropriate for pure office tower.",
-        "correct": "High-rise office (30+ floors) allocates 10.0–12.0% of GFA per article table: 'High-rise office (30+ floors): 4.5% (Mechanical) + 2.0% (Electrical) + 1.5% (Plumbing/FP) + 2.0% (Other/Shafts) = 10.0–12.0%'. For 25,000 m² GFA: 2,500–3,000 m² MEPF space. BGC commercial standards confirm this allocation.",
-        "takeaway": "45-floor high-rise office (25,000 m² GFA): allocate 10.0–12.0% MEPF = 2,500–3,000 m²; breakdown: 4.5% mechanical + 2.0% electrical + 1.5% plumbing/fire + 2.0% shafts/corridors."
-      },
+      "rationale": "The checked Salvan family emphasizes access, maintenance, ventilation, expandability, and noise considerations for utility equipment spaces.",
       "explanation": null,
       "code_citation": "Article: Section Space Allocation Rules of Thumb (GFA percentage table for high-rise office)",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-008-02-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.240636+00:00",
       "content_hash": "sha256:8a7ebd483af65076cd52d5df5a5719c51e04b3433b0f0601adc1eb2cb6579cac"
     },
     {
       "question_id": "f7047a3f-69bd-4b13-a6d8-167ce0d7e16a",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "An MEP design team is evaluating early coordination milestones for a 40-floor commercial tower. Per Design Coordination Checklist, which of the following sequences is INCORRECT and creates highest risk of late cost/schedule impact?",
+      "text": "For HVAC plant rooms, which DOE energy-design principle is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Month 2: Define MEPF core spaces (mechanical penthouse, shafts) → Month 3: Select chiller type (centrifugal vs. screw) and confirm floor-to-floor height → Month 4: Finalize electrical transformer sizing and MDB location"
+          "text": "Size systems close to calculated loads and use controls or staging such as multiple chillers where appropriate."
         },
         {
           "id": "b",
-          "text": "Month 4: Confirm chiller sizing → Month 5: Finalize generator size and fuel autonomy per PD 1096 → Month 6: Begin ductwork layout (affects ceiling plenum validation)"
+          "text": "Always oversize the plant without a load calculation."
         },
         {
           "id": "c",
-          "text": "Month 3: Electrical load calculation completed → Month 4: Transformer kVA and cable tray sizing determined → Month 5: MDB location locked → Month 6: Ductwork/plenum coordination begins"
+          "text": "Remove controls so all equipment runs continuously."
         },
         {
           "id": "d",
-          "text": "Month 5Fire code review reveals RA 9514 sprinkler/standpipe requirements... PD 1096/RA 9514 compliance timingh 6: Piping riser routing and pump room sizing revised → Month 7: Coordinate with structural for riser shaft conflicts"
+          "text": "Ignore part-load operation in building systems."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Sequence 1 is correct: early core definition (Month 2) → chiller type selection (Month 3) → electrical sizing (Month 4).",
-        "b": "Sequence 2 is correct: chiller finalized (Month 4) → generator sizing (Month 5) → ductwork layout (Month 6).",
-        "c": "Sequence 4 is correct: electrical load/transformer (Months 3–4) → MDB location (Month 5) → plenum coordination (Month 6) proceeds logically.",
-        "correct": "Mechanical system selection early... decided before core layout' (Month 2–3) and 'Building Code Compliance... PD 1058 environmental discharge standards confirmed' (Month 3 schematic). Delaying fire code review to Month 5 (after ductwork layout) creates riser routing conflicts, forces plenum compression to fit standpipe/sprinkler, and necessitates structural coordination changes in DD phase. Per checklist: 'changes late in design (DD/CD phases) become expensive.' Sequence 3 violates early coordination principle and creates high redesign risk.",
-        "takeaway": "High-risk MEP sequence: delaying fire code review (PD 1058) to Month 5+ after mechanical/electrical layout. Correct: Month 2–3 schematic must confirm PD 1096/1058 requirements, core dimensions, chiller/generator/fire system sizes. Late code discovery forces expensive DD/CD rework and schedule slippage."
-      },
+      "rationale": "The checked DOE family addresses design loads, system sizing close to load, part-load strategies, multiple chiller units, controls, and VSDs.",
       "explanation": null,
       "code_citation": "Article: Section Design Coordination Checklist; PD 1096 + PD 1058 compliance timing",
       "bloom_level": "analyze",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-008-02-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.238651+00:00",
       "content_hash": "sha256:59eb474da26ccbd04688f5c69c13feec0a2558cd98f6a8b324a7593996ce229b"
     },
     {
       "question_id": "44faa384-9d5f-4390-9f68-12689170d8ec",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "What is the minimum clear height required for a mechanical room housing a chiller, AHU units, and associated pump/piping manifolds per PD 1096 and Philippine design standards?",
+      "text": "For electrical rooms, which checked PEC rule family is most important to preserve?",
       "options": [
         {
           "id": "a",
-          "text": "2.5 m, which is sufficient for basic equipment but may not accommodate larger installations"
+          "text": "Working space, headroom, illumination, and required access around equipment."
         },
         {
           "id": "b",
-          "text": "3.0 m, providing adequate space for standard maintenance and operational activities"
+          "text": "A decorative room name that replaces clear working space."
         },
         {
           "id": "c",
-          "text": "3.5–4.0 m"
+          "text": "Storage shelves in front of service equipment."
         },
         {
           "id": "d",
-          "text": "4.5–5.0 m, ensuring ample clearance for oversized equipment and future upgrades"
+          "text": "Foreign ducts and piping placed freely above switchgear."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.5 m is insufficient for large HVAC equipment and violates PD 1096 accessibility requirements.",
-        "b": "3.0 m applies to electrical rooms (switchgear/cable depth), not mechanical equipment with overhead service needs.",
-        "d": "4.5–5.0 m exceeds typical requirements and increases floor-to-floor height unnecessarily.",
-        "correct": "Mechanical rooms require 3.5–4.0 m clear height to allow vertical access above chiller and AHU units for service, replacement, and roof-level equipment coordination. The article states: 'Mechanical room clear height: 3.5–4.0 m' (allows access above chiller and AHU units).",
-        "takeaway": "Mechanical room height: 3.5–4.0 m minimum; enables equipment service, replacement via overhead hoisting, and coordination with rooftop penthouse."
-      },
+      "rationale": "The checked PEC family requires electrical working space, headroom, illumination, and related access clearances.",
       "explanation": null,
       "code_citation": "Article: Section Horizontal Distribution (Distribution Ceiling Heights)",
       "bloom_level": "remember",
@@ -251,44 +221,38 @@
       "model_id": "ALE-UTIL-008-02-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.239753+00:00",
       "content_hash": "sha256:a4594088b3164eca64f3427930bcef30e91a7567c793352ff8bbcec011bec01f"
     },
     {
       "question_id": "21b03789-4220-4d00-9483-4250cfa17d55",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "During schematic design, an architect proposes a 28-floor mixed residential/office tower (20,000 m² GFA) with a floor-to-floor height of 3.9 m. The MEP consultant specifies: 1.0 m ceiling plenum, 0.3 m floor structure + finishes. The architect challenges the plenum depth as excessive. Based on ASHRAE and Philippine practice, what is the design risk?",
+      "text": "Which coordination decision is source-safe for service equipment rooms?",
       "options": [
         {
           "id": "a",
-          "text": "No risk; 1.0 m plenum is adequate for all modern office towers, including those with complex HVAC systems"
+          "text": "Keep foreign pipes and ducts out of dedicated electrical equipment space where the PEC requires protection."
         },
         {
           "id": "b",
-          "text": "Low risk; residential zones can operate at 0.8 m plenum; office reduced to 1.0 m as compromise, balancing cost and functionality"
+          "text": "Use service-equipment rooms as general plumbing chases."
         },
         {
           "id": "c",
-          "text": "High risk; 1.0 m plenum creates coordination conflicts (supply duct 0.6–0.8 m + return/cable/pipe cannot fit). Standard office requires 1.2–1.5 m; reducing to 1.0 m forces ductwork compression or floor-to-floor increase to 4.2–4.5 m."
+          "text": "Let future maintenance access depend only on removable furniture."
         },
         {
           "id": "d",
-          "text": "No coordination risk; modern low-profile HVAC systems eliminate plenum depth needs, allowing for flexible design"
+          "text": "Prioritize ceiling concealment over equipment clearances."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.0 m is borderline; acceptable only for residential with distributed load and tight coordination.",
-        "b": "Compromise between residential (0.8 m) and office (1.2 m) creates neither space adequately; invites change orders late in design.",
-        "d": "Low-profile HVAC (displacement ventilation, underfloor systems) exist but add cost, complexity, and aren't standard Philippine practice.",
-        "correct": "The article explicitly states: 'Standard office: 1.0–1.2 m (allows 0.6–0.8 m duct + 0.3–0.4 m clearance for cable, pipe, diffusers)'. At 1.0 m, supply duct (0.6–0.8 m) leaves minimal clearance (0.2–0.4 m) for return duct (0.3–0.4 m), cable trays, plumbing, sprinkler piping. This creates collision risks, forcing: (1) ductwork compression (increased velocity/noise), (2) floor-to-floor height increase to 4.2–4.5 m (negating savings), or (3) distributed AHU systems (higher operating cost). Office standard is 1.2–1.5 m per ASHRAE and Philippine BGC/Makati practice.",
-        "takeaway": "28-floor mixed tower plenum risk: 1.0 m is inadequate for office zones. Standard: 1.2–1.5 m office; 0.8–1.0 m residential. Reducing below 1.0 m office forces floor-to-floor height increase or ductwork redesign; resolve in schematic phase to avoid cost overruns in DD/CD."
-      },
+      "rationale": "The checked PEC family restricts foreign systems near service equipment and switchgear and requires coordinated working space.",
       "explanation": null,
       "code_citation": "Article: Section Horizontal Distribution (Ceiling Plenum Depth); ASHRAE Fundamentals; Philippine commercial practice (BGC/Makati standards)",
       "bloom_level": "analyze",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-008-02-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.235892+00:00",
       "content_hash": "sha256:e779cad3243010437e67c1b366dd167e6002fec037ad601e820e7aedee4921bf"
     },
     {
       "question_id": "29f9b215-45f4-4bf1-878f-35e8c9dd8b6b",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "An elevator machine room for a high-rise residential tower must be located and sized. Per current Philippine architectural practice and PD 1096, where is the machine room typically positioned, and what minimum space allocation is needed?",
+      "text": "Which mechanical-space planning idea is supported by the checked Salvan utilities family?",
       "options": [
         {
           "id": "a",
-          "text": "Basement level; 2.0 m × 2.5 m (5 m²) per elevator, ensuring easy access for maintenance and emergency services"
+          "text": "Plan for access, maintenance, ventilation, expansion, and noise control around utility equipment."
         },
         {
           "id": "b",
-          "text": "Rooftop adjacent to penthouse; 3.0 m × 3.5 m per elevator, providing optimal space for equipment and noise isolation"
+          "text": "Use leftover space after architectural rooms are finalized."
         },
         {
           "id": "c",
-          "text": "Mid-building on mechanical floor; varies by elevator system (traction vs. hydraulic), allowing for centralized control and reduced travel distance"
+          "text": "Treat equipment rooms as storage rooms by default."
         },
         {
           "id": "d",
-          "text": "Basement or adjacent to shaft; space determined by traction machine, control panel, and roping geometry"
+          "text": "Avoid ventilation because mechanical rooms are not occupied."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.0 m × 2.5 m (5 m²) severely undersizes traction machine footprint and violates access requirements.",
-        "b": "Rooftop machine rooms are outdated; modern towers use basement or mid-level placement for better load distribution and noise isolation.",
-        "c": "Mid-building mechanical floor placement conflicts with core/shaft alignment and adds unnecessary complexity.",
-        "correct": "Elevator machine rooms are located either in basement or adjacent to shaft (modern roped traction systems). Space depends on system type: traction machines require ~3.0–3.5 m length × 2.5–3.0 m width per elevator; hydraulic systems require less. Fire-rated enclosure and 1.2 m access door are required by local building code (fire separation) and manufacturer standards; clearances are governed by elevator equipment dimensions and roping geometry (ASME A17.1). The article addresses shaft cross-sections but elevator rooms are coordinated as part of core planning.",
-        "takeaway": "Elevator machine room: basement or shaft-adjacent location; 3.0–3.5 m × 2.5–3.0 m footprint typical for traction systems; fire-rated enclosure, 1.2 m access door, and clearances per manufacturer and ASME A17.1."
-      },
+      "rationale": "The checked Salvan family emphasizes access, maintenance, ventilation, expandability, and noise considerations for utility equipment spaces.",
       "explanation": null,
       "code_citation": "Article: Vertical Distribution context; manufacturer standards (OTIS/KONE), ASME A17.1",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-008-02-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.228287+00:00",
       "content_hash": "sha256:9b337d09844e9d4eae1ea6ec31a5cc2a1dbf86726acb2219b27b7329c6889450"
     },
     {
       "question_id": "30884f4c-f5e4-4542-87d0-34e78a90caa1",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A plumbing riser in an office tower must accommodate cold water supply, hot water return, waste stacks, and vent stacks for approximately 4–5 toilet groups. Per typical Philippine commercial practice, what minimum cross-sectional chase dimensions are required?",
+      "text": "For HVAC plant rooms, which DOE energy-design principle is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "0.6 m (W) × 0.5 m (H)"
+          "text": "Size systems close to calculated loads and use controls or staging such as multiple chillers where appropriate."
         },
         {
           "id": "b",
-          "text": "0.8 m (W) × 0.6 m (H)"
+          "text": "Always oversize the plant without a load calculation."
         },
         {
           "id": "c",
-          "text": "1.0 m (W) × 0.8 m (H)"
+          "text": "Remove controls so all equipment runs continuously."
         },
         {
           "id": "d",
-          "text": "1.5 m (W) × 1.2 m (H)"
+          "text": "Ignore part-load operation in building systems."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.6 m × 0.5 m is undersized for dual plumbing stacks and violates slope requirements for waste drainage.",
-        "b": "0.8 m × 0.6 m fits single waste stack + supply; insufficient for dual waste + vent + hot water return coordination.",
-        "d": "1.5 m × 1.2 m is oversized and wastes valuable floor space for typical office towers.",
-        "correct": "Plumbing risers require 1.0 m width (cold/hot water pipes + waste/vent stacks) × 0.8 m height. Article states: 'Total chase cross-section: 1.0 m (W) × 0.8 m (H) per riser set (accommodates 1–2 waste stacks plus supply/return and vent).' This spacing enables code-compliant slope, isolation valves at floors, and future service access.",
-        "takeaway": "Plumbing riser: 1.0 m × 0.8 m per riser set; accommodates 1–2 waste stacks, cold/hot water, vent; typical spacing = 1 riser per 1,500 m² floor plate."
-      },
+      "rationale": "The checked DOE family addresses design loads, system sizing close to load, part-load strategies, multiple chiller units, controls, and VSDs.",
       "explanation": null,
       "code_citation": "Article: Section Vertical Distribution (Plumbing Risers)",
       "bloom_level": "understand",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-008-02-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.233950+00:00",
       "content_hash": "sha256:c35c7f4432c4b6e31415ab3d7d3c7b7c029b86f3be1103be6692ce8178536564"
     },
     {
       "question_id": "382066cf-e515-4f0e-9719-061b8e42d297",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A service corridor connecting mechanical rooms, electrical vault, and fire pump room in a basement must meet PD 1096 accessibility standards. What minimum corridor width is required to permit equipment carts, maintenance personnel, and emergency egress?",
+      "text": "For electrical rooms, which checked PEC rule family is most important to preserve?",
       "options": [
         {
           "id": "a",
-          "text": "0.9 m (minimum aisle width per PEC), which is often insufficient for larger equipment"
+          "text": "Working space, headroom, illumination, and required access around equipment."
         },
         {
           "id": "b",
-          "text": "1.2 m (standard door width for cart rollout), allowing for basic equipment movement"
+          "text": "A decorative room name that replaces clear working space."
         },
         {
           "id": "c",
-          "text": "1.5 m (two-way personnel traffic + emergency egress)"
+          "text": "Storage shelves in front of service equipment."
         },
         {
           "id": "d",
-          "text": "2.0 m (safety buffer for equipment movement), ensuring ample space for all activities"
+          "text": "Foreign ducts and piping placed freely above switchgear."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.9 m applies to internal cable tray aisles in electrical risers, not connecting corridors.",
-        "b": "1.2 m is the individual door width standard; corridor must exceed door width for two-way flow.",
-        "d": "2.0 m exceeds code requirements and wastes valuable basement area.",
-        "correct": "Service corridors connecting utility rooms require minimum 1.5 m width per PD 1096 accessibility standards. This accommodates two-way personnel movement, equipment cart passage, and emergency egress. Article references 1.5 m front access space for chiller servicing and 1.2 m door width for equipment entry, implying 1.5 m corridor is standard for interconnected basement utility zones.",
-        "takeaway": "Service corridor minimum: 1.5 m width per PD 1096; enables two-way personnel movement, equipment cart passage (wheeled access), emergency egress from utility rooms."
-      },
+      "rationale": "The checked PEC family requires electrical working space, headroom, illumination, and related access clearances.",
       "explanation": null,
       "code_citation": "Article: Section Service Corridors and Access; PD 1096 accessibility requirements",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-008-02-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.237747+00:00",
       "content_hash": "sha256:349e093f9473257809755140828d7c298dd03e086265f9e50d1f491b4e3bc7d4"
     },
     {
       "question_id": "93a5675e-7bbf-4026-9379-76875d6009db",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A telecommunications/data center room in a 25-floor office tower must accommodate equipment racks, cable termination panels, cooling units, and UPS batteries. What minimum room footprint and height are appropriate per industry standards adapted to Philippine buildings?",
+      "text": "Which coordination decision is source-safe for service equipment rooms?",
       "options": [
         {
           "id": "a",
-          "text": "2.0 m × 2.5 m × 2.8 m height (5 m² floor, compact) suitable for single-rack installations only"
+          "text": "Keep foreign pipes and ducts out of dedicated electrical equipment space where the PEC requires protection."
         },
         {
           "id": "b",
-          "text": "3.0 m × 4.0 m × 3.2 m height (12 m² floor, standard) with space for two equipment racks"
+          "text": "Use service-equipment rooms as general plumbing chases."
         },
         {
           "id": "c",
-          "text": "4.0 m × 5.0 m × 3.5 m height (20 m² floor, large redundancy) for enterprise-grade installations"
+          "text": "Let future maintenance access depend only on removable furniture."
         },
         {
           "id": "d",
-          "text": "Varies by rack count; typically 1.5 m² per 8–10 equipment racks plus 1.5 m aisle"
+          "text": "Prioritize ceiling concealment over equipment clearances."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.0 m × 2.5 m fits only 2–3 compact racks; insufficient for mid-rise building's connectivity demands.",
-        "b": "3.0 m × 4.0 m (12 m²) accommodates ~10–15 racks; adequate for small office; undersizes mid-rise telecom growth.",
-        "c": "4.0 m × 5.0 m (20 m²) is reasonable large deployment; some towers allocate 20–30 m² for redundant systems.",
-        "correct": "Telecom/data room sizing is driven by equipment load. Industry standard: 1.5 m² per 8–10 standard 19\" equipment racks + dedicated 1.5 m hot/cold aisle separation. For 25-floor office, typical allocation is 15–25 m² (2–3 rack rows × 4–5 m depth × 3.0–3.5 m height). Cooling and UPS integration require open ceiling (plenum access) per ASHRAE server room standards.",
-        "takeaway": "Telecom room: flexible sizing (1.5 m² per 8–10 racks); standard mid-rise: 15–20 m²; requires 3.0–3.5 m height, dedicated cooling, UPS integration, fire-rated enclosure per PD 1096."
-      },
+      "rationale": "The checked PEC family restricts foreign systems near service equipment and switchgear and requires coordinated working space.",
       "explanation": null,
       "code_citation": "Article: Building Utilities coordination; industry best practice for Philippine commercial standards",
       "bloom_level": "understand",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-008-02-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.236824+00:00",
       "content_hash": "sha256:d59ac2ffee2cb70c58ff5c36a015d3ee5227b8916c5f46644bc12eb1a157baf7"
     },
     {
       "question_id": "9c8fc197-88d3-464d-b82d-f9f09baac76e",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A 500-ton rooftop cooling tower for a large office building requires operational clearance zones. What minimum clearance distances must be maintained around the tower intake and exhaust discharge per typical design practice?",
+      "text": "Which mechanical-space planning idea is supported by the checked Salvan utilities family?",
       "options": [
         {
           "id": "a",
-          "text": "1.0 m intake clearance; 1.0 m exhaust separation, ensuring minimal obstruction to airflow"
+          "text": "Plan for access, maintenance, ventilation, expansion, and noise control around utility equipment."
         },
         {
           "id": "b",
-          "text": "2.0 m intake clearance; 2.0 m exhaust separation, which is standard for most installations"
+          "text": "Use leftover space after architectural rooms are finalized."
         },
         {
           "id": "c",
-          "text": "3–4 m intake clearance; 3 m lateral separation between fresh air intake and exhaust discharge"
+          "text": "Treat equipment rooms as storage rooms by default."
         },
         {
           "id": "d",
-          "text": "6–8 m intake; 6 m exhaust (Philippine tropical climate requires larger buffers to accommodate high humidity levels)"
+          "text": "Avoid ventilation because mechanical rooms are not occupied."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.0 m clearances create short-circuit recirculation of hot discharge air into fresh intake, degrading chiller performance.",
-        "b": "2.0 m is insufficient to prevent thermal stratification and intake fouling in equatorial Philippine climate.",
-        "d": "6–8 m exceeds design practice standards and consumes excessive rooftop area without performance benefit.",
-        "correct": "Cooling tower intake requires 3–4 m clear space for air discharge zone; exhaust louver must be separated 3 m laterally from fresh air intake per ASHRAE and article guidance: 'Intake side: 3–4 m clear (for air discharge zone)... 1.5 m maintenance access... Return/exhaust discharge: separated from fresh air intake by 3 m lateral distance'.",
-        "takeaway": "Cooling tower clearances: 3–4 m intake (air discharge zone) + 1.5 m perimeter maintenance access; 3 m minimum lateral separation intake/exhaust to prevent recirculation."
-      },
+      "rationale": "The checked Salvan family emphasizes access, maintenance, ventilation, expandability, and noise considerations for utility equipment spaces.",
       "explanation": null,
       "code_citation": "Article: Section Rooftop Equipment Areas (Cooling Tower Installation); ASHRAE Fundamentals",
       "bloom_level": "understand",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-008-02-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.232843+00:00",
       "content_hash": "sha256:f507d2e3d5cee18d626d93fc19df11abdd8f0f9afe705d575bdaf1f7a8b92a09"
     },
     {
       "question_id": "9f4e6354-3487-49b6-8e6c-f208f30b0565",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A provincial hospital outside Metro Manila requires onsite water storage (no reliable municipal supply), elevated rooftop tank, ground-level suction tank, and booster pump station. Per PD 1096 and Bureau of Health guidelines, what total basement footprint should be allocated for water storage infrastructure?",
+      "text": "For HVAC plant rooms, which DOE energy-design principle is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "40–60 m² (single suction tank only), which may not suffice for larger facilities"
+          "text": "Size systems close to calculated loads and use controls or staging such as multiple chillers where appropriate."
         },
         {
           "id": "b",
-          "text": "80–150 m² (dual-tank arrangement: suction + discharge, pump station, isolation valves)"
+          "text": "Always oversize the plant without a load calculation."
         },
         {
           "id": "c",
-          "text": "150–200 m² (includes treatment plant and pressure regulation equipment), ensuring comprehensive water management"
+          "text": "Remove controls so all equipment runs continuously."
         },
         {
           "id": "d",
-          "text": "200+ m² (over-designed; municipal supply is common), potentially leading to unnecessary costs"
+          "text": "Ignore part-load operation in building systems."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "40–60 m² accommodates only single storage tank; insufficient for two-tier water supply system required in provincial locations.",
-        "c": "150–200 m² includes treatment plant; appropriate if hospital requires secondary treatment beyond storage.",
-        "d": "200+ m² is excessive; applies only to large healthcare complexes with integrated wastewater treatment.",
-        "correct": "Ground-level suction tank (50–100 m³): 7 m × 6 m × 2.5 m depth = 42–48 m² per tank. Discharge tank: similar footprint. Pump station + isolation valves + pressure gauges + coordination: ~15–20 m². Total basement water storage: 80–150 m² per article guidance: 'Ground-level storage (for pressure tank booster system)... Basement footprint: 8 m × 6 m (including pump station, isolation valves, pressure gauges)'.",
-        "takeaway": "Provincial hospital water storage: 80–150 m² basement allocation; dual-tank arrangement (suction + discharge), pump station, isolation/pressure valves, gravity distribution to rooftop tank."
-      },
+      "rationale": "The checked DOE family addresses design loads, system sizing close to load, part-load strategies, multiple chiller units, controls, and VSDs.",
       "explanation": null,
       "code_citation": "Article: Section Basement and Podium Utilities (Water Storage Tanks)",
       "bloom_level": "apply",
@@ -601,30 +529,30 @@
       "model_id": "ALE-UTIL-008-02-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.231715+00:00",
       "content_hash": "sha256:db3810d33b9b220cb82df7faf1d2ab4340a1d2ff7a15a51ff22559014d386e4c"
     },
     {
       "question_id": "4164d682-0344-49ca-b71a-2bd3a3cf1a1f",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "A structural engineer proposes eliminating a full basement level for utility systems in a 32-floor tower, arguing that rooftop and distributed floor mechanical can serve the building. 's coverage of basement utility needs, what critical infrastructure would be lost?",
+      "text": "For electrical rooms, which checked PEC rule family is most important to preserve?",
       "options": [
         {
           "id": "a",
-          "text": "Water storage tanks; fire pump suction tank; STP (if no municipal sewage); generator fuel storage; waste holding area. Loss forces rooftop-only water (unreliable pressure), compromises fire protection suction, eliminates secondary wastewater treatment."
+          "text": "Working space, headroom, illumination, and required access around equipment."
         },
         {
           "id": "b",
-          "text": "Only non-essential mechanical penthouse equipment; all critical systems can relocate to rooftop, ensuring that essential services are maintained"
+          "text": "A decorative room name that replaces clear working space."
         },
         {
           "id": "c",
-          "text": "Nothing critical; modern distributed systems eliminate basement utility needs, as they are designed to be flexible and adaptable"
+          "text": "Storage shelves in front of service equipment."
         },
         {
           "id": "d",
-          "text": "Minor storage areas; structural floor recapture more valuable than utility allocation, as space efficiency is prioritized over traditional utility placement"
+          "text": "Foreign ducts and piping placed freely above switchgear."
         }
       ],
       "correct_option_id": "a",
@@ -632,13 +560,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Rooftop-only mechanical is insufficient for dual-pump fire protection, large water storage (structural loading), and 750 kW generator fuel (safety hazard at height).",
-        "c": "Distributed rooftop systems sacrifice redundancy and create code compliance violations (fire pump suction, wastewater treatment).",
-        "d": "Structural floor recapture (~500–800 m²) is minor vs. losing fire safety, water reliability, environmental compliance.",
-        "correct": "The article extensively documents basement/pfire pump suction tank (feeds fire system per RA 9514 Sec 10.2.6.7), ... water storage tanks (50–100 m³ suction + 20–40 m³ rooftop elevated) per local water district standards/NBC practice, (2) fire pump suction tank (feeds fire system per PD 1058), (3) STP if no municipal sewage (common in provincial Philippines), (4) generator fuel storage (750 kW gen requires 6–9 m³ per 8-hour autonomy), (5) waste holding enclosure (5–8 m³ for 3–5 day storage). Eliminating basement forces all onto rooftop, creating: water pressure loss (rooftop tank gravity-fed only), fire pump suction starvation, STP/environmental code violation, fuel hazard on rooftop (safety/insurance issue), waste odor/pest control failure.",
-        "takeaway": "Basement utilities critical for 32-floor tower: water storage (dual-tank redundancy per PD 1096), fire pump suction, STP (if rural), generator fuel (8-hour autonomy per PD 1096), waste holding. Eliminating basement violates PD 1096/1058, compromises fire safety, and forces unsafe rooftop fuel storage."
-      },
+      "rationale": "The checked PEC family requires electrical working space, headroom, illumination, and related access clearances.",
       "explanation": null,
       "code_citation": "Article: Section Basement and Podium Utilities (comprehensive coverage of water, STP, waste, generator requirements)",
       "bloom_level": "analyze",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-008-02-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.226678+00:00",
       "content_hash": "sha256:d1341449e9814a0543bc0ec499ce219a4a1518d3c7324a629a3bfc026095bcf5"
     },
     {
       "question_id": "7a9b2cf5-7ef9-4bdd-9202-a0bc1f99f182",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "According to PD 1096 and Philippine commercial building practice, what is the typical minimum gross floor area (GFA) percentage allocated for mechanical spaces (chiller plant, AHU rooms, pump rooms) in a mid-rise office building (15–30 floors)?",
+      "text": "Which coordination decision is source-safe for service equipment rooms?",
       "options": [
         {
           "id": "a",
-          "text": "1.5–2.0% of GFA"
+          "text": "Keep foreign pipes and ducts out of dedicated electrical equipment space where the PEC requires protection."
         },
         {
           "id": "b",
-          "text": "2.5–3.0% of GFA"
+          "text": "Use service-equipment rooms as general plumbing chases."
         },
         {
           "id": "c",
-          "text": "3.5–4.5% of GFA"
+          "text": "Let future maintenance access depend only on removable furniture."
         },
         {
           "id": "d",
-          "text": "5.0–6.0% of GFA"
+          "text": "Prioritize ceiling concealment over equipment clearances."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.5–2.0% is insufficient for mid-rise buildings with central chiller plants and full HVAC redundancy; applies only to lightweight, single-system buildings.",
-        "b": "2.5–3.0% applies primarily to low-rise office (5–10 floors) without central chilling or with partial distributed systems.",
-        "d": "5.0–6.0% exceeds mid-rise requirements; more typical for high-rise (30+ floors) or healthcare facilities requiring redundancy.",
-        "correct": "Mid-rise office buildings allocate 3.5–4.5% of GFA for mechanical systems. This encompasses centrifugal chillers, AHU units with coils, pump assemblies, ductwork headers, vibration isolation infrastructure, and required maintenance clearances (1.5 m front access per PD 1096). The article explicitly states 3.5% for mid-rise offices in the GFA allocation table.",
-        "takeaway": "Mid-rise office mechanical allocation: 3.5–4.5% GFA; varies with chiller type (screw vs. centrifugal), system redundancy, and floor-plate size."
-      },
+      "rationale": "The checked PEC family restricts foreign systems near service equipment and switchgear and requires coordinated working space.",
       "explanation": null,
       "code_citation": "Article: MEPF Space Requirements (Section: Space Allocation Rules of Thumb); PD 1096",
       "bloom_level": "remember",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-008-02-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.229471+00:00",
       "content_hash": "sha256:0eb438187af33524469a092977248c2426ce576d04828e4a30f0466dac29b757"
     },
     {
       "question_id": "66fcc9be-1302-46d2-bc12-be8b3961c6b3",
       "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
       "topic_id": "6e49a1d0-6850-4e30-ad68-2f81f6146360",
-      "text": "An electrical riser shaft in a 30-floor office tower must accommodate main cable trays for power distribution, backup/secondary trays, and grounding conductors. Per PEC and ASHRAE coordination practice, what is the typical electrical riser cross-sectional footprint per floor?",
+      "text": "Which mechanical-space planning idea is supported by the checked Salvan utilities family?",
       "options": [
         {
           "id": "a",
-          "text": "0.8 m (W) × 0.6 m (H) = 0.48 m²"
+          "text": "Plan for access, maintenance, ventilation, expansion, and noise control around utility equipment."
         },
         {
           "id": "b",
-          "text": "1.2 m (W) × 1.0 m (H) = 1.2 m²"
+          "text": "Use leftover space after architectural rooms are finalized."
         },
         {
           "id": "c",
-          "text": "1.8 m (W) × 1.2 m (H) = 2.16 m²"
+          "text": "Treat equipment rooms as storage rooms by default."
         },
         {
           "id": "d",
-          "text": "2.0 m (W) × 1.5 m (H) = 3.0 m²"
+          "text": "Avoid ventilation because mechanical rooms are not occupied."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.8 m × 0.6 m undersizes capacity for dual cable trays and violates PD 1096 maintenance access (0.9 m aisle width).",
-        "c": "1.8 m × 1.2 m is oversized for standard mid-rise buildings; appropriate only for very large floor plates (>3,000 m²) requiring triple redundancy.",
-        "d": "2.0 m × 1.5 m exceeds typical requirements and wastes valuable floor area.",
-        "correct": "Electrical risers typically measure 1.2 m width (main tray 0.6 m + backup tray 0.4 m + grounding/conduits 0.2 m) × 1.0 m height. Article states: 'Total riser footprint per floor: 1.2 m × 1.0 m (1.2 m²)'. PD 1096 requires 0.9 m minimum aisle width within risers for cable termination and maintenance.",
-        "takeaway": "Electrical riser: 1.2 m × 1.0 m footprint (1.2 m²) per floor; maintains 0.9 m aisle width per PD 1096; accommodate main/backup trays, grounding, future growth."
-      },
+      "rationale": "The checked Salvan family emphasizes access, maintenance, ventilation, expandability, and noise considerations for utility equipment spaces.",
       "explanation": null,
       "code_citation": "Article: Section Vertical Distribution (Electrical Cable Trays and Power Riser)",
       "bloom_level": "understand",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-008-02-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.230682+00:00",
       "content_hash": "sha256:908454f4bb59be38e4a172316a7f185181485a7d3872f08d0c274b0b690b8d8e"
     }
   ]

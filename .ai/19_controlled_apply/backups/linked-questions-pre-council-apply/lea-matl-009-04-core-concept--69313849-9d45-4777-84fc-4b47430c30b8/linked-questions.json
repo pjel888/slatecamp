@@ -1,0 +1,508 @@
+{
+  "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:8e2a745f4fe8e170660a5614e02121061cf3523eb31216a3562e066e15c777ab",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "600a1d75-e652-421e-955e-82e0a2b50009",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "According to ASTM C143, what is being measured in a slump test of fresh concrete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The vertical distance from the top of the slump cone to the displaced original center of the top surface of the slumped concrete, indicating consistency and workability"
+        },
+        {
+          "id": "b",
+          "text": "The compressive strength of the concrete at 28 days, which is not directly measured by the slump test"
+        },
+        {
+          "id": "c",
+          "text": "The air content of the fresh concrete mixture, which requires a different testing method"
+        },
+        {
+          "id": "d",
+          "text": "The water-cement ratio of the concrete, which is calculated rather than directly measured in a slump test"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Compressive strength is measured by cylinder testing per ASTM C39.",
+        "c": "Air content is measured per ASTM C173 or C231.",
+        "d": "Water-cement ratio is a mix design parameter, not a field test result.",
+        "correct": "Slump test per ASTM C143 measures workability and consistency. A slump cone is filled, lifted vertically, and the vertical distance (in inches) from the original height to the highest point of the slumped concrete is measured, reported to the nearest 1/4 inch. Typical ranges: 1-2 inches (stiff), 3-4 inches (medium), 6-7 inches (fluid). [Note: ASTM C143/C143M-12 provides both inch-pound and SI units; each system is used independently.]",
+        "takeaway": "Slump is a workability indicator tested on fresh concrete at the point of delivery or placement. High slump = fluid concrete (may indicate excess water and reduced strength). Low slump = stiff concrete (placement difficulty)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C143/C143M-20 Standard Test Method for Slump",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.009533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8307c9b7573c6423db8bbbe12e0ca35aa31f0706904fdca58a0321c21aa8e21f"
+    },
+    {
+      "question_id": "4f42cbff-fab0-442c-921d-f52f47778ac2",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "A paint product submittal includes: (1) color sample on specified substrate, (2) performance data sheet (gloss, durability), but omits: (1) MSDS (Material Safety Data Sheet), (2) surface preparation instructions, (3) VOC (Volatile Organic Compound) content documentation. What is the architect's response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reject with 'Revise and resubmit.' The submittal is incomplete. MSDS is required for worker safety (regulatory requirement), surface preparation is critical for adhesion and durability, and VOC content is required for compliance with building environmental standards (LEED, Philippine Green Building Code). The contractor must provide all documentation before approval."
+        },
+        {
+          "id": "b",
+          "text": "Approve the submittal as presented; MSDS and prep instructions are contractor responsibilities, and VOC content can be verified later"
+        },
+        {
+          "id": "c",
+          "text": "Approve conditionally, with a note that the contractor must provide missing documents during construction, ensuring compliance"
+        },
+        {
+          "id": "d",
+          "text": "Request samples only; other documentation can be provided later, as it is not immediately critical"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "MSDS and prep instructions are not optional; they are regulatory requirements and workmanship essentials.",
+        "c": "Conditional approval does not ensure that contractor will provide documentation; 'Revise and resubmit' is more effective.",
+        "d": "Submittal review is a pre-construction document control function; delaying submittal items into construction creates field confusion.",
+        "correct": "Complete submittals include: performance data, color samples, MSDS (workplace safety and environmental), surface preparation instructions (workmanship quality), and environmental compliance documentation (VOC, sustainability). Omitting any of these creates gaps in quality control and regulatory compliance. The architect must require complete submittals before approval.",
+        "takeaway": "Submittal completeness is critical. A complete submittal includes: product description, performance data, samples, MSDS, installation/surface preparation instructions, and environmental/safety certifications. Never approve incomplete submittals."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat Division 01 33 00: Submittal Procedures; Philippine Green Building Code (PGBC); RA 9266 (Architecture Act of 2004) Professional Responsibility; Architectural Quality Control Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:243ee1d98d45c12af7255ebb01d7aba531d1918f7bdb460381b659d495f7c843"
+    },
+    {
+      "question_id": "f913b597-9521-47df-81ba-2cd55c79d666",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "A waterproofing specification for a Philippine commercial building (tropical climate, high humidity) requires installation of a liquid-applied waterproofing membrane. The specification omits a requirement for a waterproofing mock-up prior to full-scale application. Is this omission appropriate? Why or why not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, this omission is inappropriate for tropical Philippine construction. Waterproofing is critical in humid climates, and mock-ups allow verification of: (1) adhesion to substrate, (2) coverage thickness, (3) seam/overlap integrity, (4) protection against fungal growth. A 3m x 3m mock-up should be installed and inspected before proceeding with full-scale application. For Philippine projects, waterproofing mock-ups are best practice due to persistent moisture conditions."
+        },
+        {
+          "id": "b",
+          "text": "Yes, the omission is appropriate; mock-ups are too costly and unnecessary, especially when using well-established waterproofing systems with proven track records."
+        },
+        {
+          "id": "c",
+          "text": "Mock-ups are required only for experimental materials, not standard membranes, unless specified by the project architect or engineer for quality assurance purposes."
+        },
+        {
+          "id": "d",
+          "text": "Tropical construction does not warrant additional waterproofing precautions, as standard practices are typically sufficient to handle the climate's challenges."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Mock-up costs are minimal; waterproofing failure costs are severe.",
+        "c": "Mock-ups apply to all waterproofing systems, not only experimental ones.",
+        "d": "Tropical construction requires enhanced waterproofing measures, not fewer.",
+        "correct": "Philippine tropical construction faces persistent moisture exposure (typhoons, monsoons, high humidity, salt spray in coastal areas). Waterproofing failures are costly and difficult to remediate. Mock-ups allow early identification of adhesion problems, coverage gaps, or fungal resistance deficiencies before full-scale application. This is professional best practice for Philippine climates. The cost of a small mock-up is minor compared to remediation costs.",
+        "takeaway": "For Philippine construction, waterproofing mock-ups are best practice and should be required in specifications. This demonstrates professional attention to tropical durability concerns."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 (National Building Code) Rule VIII (Light and Ventilation) and moisture protection requirements; Philippine Green Building Code (PGBC) durability standards for tropical climates; RA 9514 (Fire Code) moisture and humidity control; Architectural Best Practice for Tropical Construction",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9fffb752d7f4883461d8d153957d73d5341a89a91380f93f7addff530a4a141"
+    },
+    {
+      "question_id": "b15cdf83-db52-4574-a5aa-ec13a7f88cf9",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "A concrete project requires 28-day design strength of 28 MPa. Test results for a placement are: 28-day cylinder test result = 26 MPa. The specification states: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' Is this result acceptable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The result is marginally acceptable. 90 percent of 28 MPa = 25.2 MPa. The test result of 26 MPa exceeds the 90 percent minimum (25.2 MPa) but falls below the design strength target (28 MPa). If this is part of multiple test sets, the average must also meet 28 MPa. If it is a single test set, it is marginally acceptable with documented justification. The architect should require either: (1) confirmation that it's part of a larger set averaging 28 MPa or higher, or (2) core boring to verify in-situ strength."
+        },
+        {
+          "id": "b",
+          "text": "The result is not acceptable; it fails the 28 MPa requirement, which is a strict interpretation of the specification"
+        },
+        {
+          "id": "c",
+          "text": "The result is fully acceptable because it exceeds 90 percent, which overlooks the requirement for the average to meet 28 MPa"
+        },
+        {
+          "id": "d",
+          "text": "The result must be rejected and the concrete removed, which is an extreme measure without considering all factors"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Failing the full 28 MPa target is a violation unless additional tests average to 28 MPa.",
+        "c": "Meeting the 90 percent minimum does not guarantee acceptance; the specification likely requires both the minimum tolerance and average criteria.",
+        "d": "Removing concrete at 26 MPa is extreme if in-situ strength (verified by coring) proves adequate.",
+        "correct": "The acceptance criteria provide a minimum tolerance (90 percent) for individual outliers, but the design strength target (28 MPa) applies to the average. A single test at 26 MPa is below target but above the 90 percent minimum, creating a marginal condition. Acceptance depends on whether this is part of a set. The architect should verify by requesting statistical analysis or in-situ testing (core boring per ASTM C42).",
+        "takeaway": "Understand the two-tier acceptance criteria: individual tests ≥ 90 percent of design strength, AND the average ≥ design strength. A marginal individual result requires verification before acceptance."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C39; ACI 318-19; NSCP Concrete Testing Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4b169aec0eee054f2117de2a8277dcd3a2b3a8109effa3d772f5028a535b4b19"
+    },
+    {
+      "question_id": "1fcb89ff-7d50-419e-855d-23e05aef748b",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "According to DPWH Project Quality Assurance guidelines, what is the minimum testing frequency for concrete cylinder compression testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One set of cylinders (2 cylinders) per 50 cubic meters of concrete placed, or per 200 linear meters of structural element, whichever is more frequent"
+        },
+        {
+          "id": "b",
+          "text": "One set per 100 cubic meters, ensuring adequate sampling for quality assurance"
+        },
+        {
+          "id": "c",
+          "text": "One set per 200 cubic meters, which may not provide sufficient data for quality control"
+        },
+        {
+          "id": "d",
+          "text": "One set per day regardless of volume, which may not align with project-specific requirements"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Less frequent testing (100 or 200 m3) does not meet DPWH minimums.",
+        "c": "Daily testing is sometimes more frequent than volume-based, but the 50 m3 / 200 lm rule is standard.",
+        "d": "Daily testing frequency may be excessive and costly, though some projects require it.",
+        "correct": "[REQUIRES VERIFICATION] DPWH Volume III Standard Specifications Section [SPECIFIC SECTION NUMBER NEEDED] establish a testing frequency of minimum 1 set per 50 m3 or per 200 lm of structural element (columns, beams, walls), whichever is more frequent. [Note: This claim is not supported by the provided search results and must be cross-referenced against actual DPWH Volume III documentation.] This ensures statistical coverage of all concrete placements.",
+        "takeaway": "DPWH testing frequencies are more stringent than typical ACI 318 minimums. For DPWH projects, always reference DPWH Standard Specifications Volume III for testing schedules."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Standard Specifications Volume III, 2019 Edition; Schedule of Minimum Test Requirements",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:646df8143774db4b3c158a3b98e06a940dc0feabec238a4067be591fd345ee79"
+    },
+    {
+      "question_id": "ce588630-7c72-4cbc-807e-8aefdf71ebf4",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "A Philippine architect must develop a concrete specification for a DPWH-funded public hospital. The specification must address: (1) slump testing frequency and acceptance, (2) cylinder compression testing frequency and acceptance criteria, (3) coordination with DPWH requirements (which may differ from ACI 318), (4) third-party laboratory requirements (ISO accreditation), (5) Job Control Form (JCF) documentation. Draft the outline of Part 1: General requirements for concrete quality control.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Part 1: General for Concrete should specify: (1) Slump per ASTM C143: 75-100 mm range, tested every 100 m3 or daily per DPWH requirements, with acceptance that batch is rejected if outside range. (2) Cylinder Compression per ASTM C39: 1 set per 50 m3 or 200 lm (whichever more frequent), cured per ASTM C31, 28-day testing with acceptance that average ≥ design strength and individual tests ≥ 90 percent of design strength. (3) Coordination: 'For DPWH-funded projects, DPWH Volume III Standard Specifications apply; if DPWH and ACI 318 requirements differ, the more stringent requirement governs.' (4) Laboratory: 'Testing performed by ISO 17025-accredited third-party laboratory independent of contractor.' (5) Documentation: 'All tests recorded on Job Control Forms (JCF) prepared per DPWH format; JCFs submitted to Engineer's Representative weekly.' This comprehensive approach ensures regulatory compliance, quality control, and DPWH accountability."
+        },
+        {
+          "id": "b",
+          "text": "Part 1 should specify only slump and compressive strength ranges without testing frequency, leaving other details to be determined later."
+        },
+        {
+          "id": "c",
+          "text": "Part 1 should defer all testing details to the contractor's discretion, allowing flexibility in meeting project requirements."
+        },
+        {
+          "id": "d",
+          "text": "Part 1 should reference ACI 318 only, without acknowledging DPWH differences, which may lead to compliance issues."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Omitting frequency and acceptance creates ambiguity and disputes.",
+        "c": "Contractor discretion undermines quality control; the architect defines standards.",
+        "d": "ACI 318 alone is insufficient for DPWH projects; DPWH specifications must be integrated.",
+        "correct": "A comprehensive Part 1: General for DPWH concrete work must address: testing methods (ASTM standards), frequency (volume-based), acceptance criteria (strength targets and tolerances), regulatory coordination (DPWH supersedes ACI if more stringent), laboratory qualifications (ISO accreditation), and documentation (JCFs). This demonstrates professional specification development and ensures DPWH compliance.",
+        "takeaway": "Comprehensive quality control specifications for DPWH projects require integration of: ASTM testing standards, DPWH requirements, laboratory qualifications, and documentation procedures. This is an advanced specification task tested on the ALE for architects working on government projects."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Project Quality Assurance Guidebook; ASTM C143, C39; ACI 318-19; RA 9266 (Architecture Act of 2004) Section 36 (Scope of Architectural Services); CSI MasterFormat Division 01 33 00 (Submittal Procedures) and Division 03 30 00 (Cast-in-Place Concrete)",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8f0f31cffb7b05ea9081de2ef4d3d1c80006c480cb329499ea68fde68ebe31d1"
+    },
+    {
+      "question_id": "727f8889-ee12-4dfa-a3cc-7faf4458a987",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "A shop drawing for structural steel connections shows bolts with 30 mm edge distance. The specification requires a minimum edge distance of 32 mm per AISC standards. How should the architect respond?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reject the shop drawing with comment 'Revise and resubmit.' Edge distance of 30 mm violates specification. The drawing must be corrected to show 32 mm or greater edge distance before approval and fabrication."
+        },
+        {
+          "id": "b",
+          "text": "Approve the drawing with a note requesting recheck in the field to ensure compliance with all relevant standards and specifications."
+        },
+        {
+          "id": "c",
+          "text": "Approve the drawing as-is; 30 mm is close enough to 32 mm, assuming no critical load conditions are present."
+        },
+        {
+          "id": "d",
+          "text": "Request that the structural engineer verify field compliance and provide a written confirmation of adequacy."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Field recheck does not address design inadequacy; the drawing must be corrected before fabrication.",
+        "c": "Professional tolerances (AISC standards) are not discretionary; 32 mm is required.",
+        "d": "The engineer reviews the drawing; if it violates the specification, the architect (designer's representative) must reject it.",
+        "correct": "Shop drawings must conform to specifications before approval. A 2 mm deficiency in edge distance violates the specification and may create prying tension or local buckling. The architect does not approve shop drawings with non-conformances; the stamp should state 'Revise and resubmit' with specific corrections required.",
+        "takeaway": "Shop drawings are approval documents. Non-conformances must be corrected before the drawing is stamped 'Approved.' Never approve a drawing with deficiencies, even if marginal. Use 'Revise and resubmit' for any non-conformance."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat Division 01 33 00: Submittal Procedures; Philippine Architectural Practice Standards per RA 9266 (Architecture Act of 2004) - Professional Responsibility for Design Documentation and Quality Control",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d276ec64c96ee24b5bfd8583e73fbe8f5f8338d3543740632212156f7c5c832"
+    },
+    {
+      "question_id": "fbd22e3d-b4ef-431d-aefe-6fcf8072ffda",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "A slump test of concrete returns a result of 155 mm, but the specification requires 75-100 mm. The contractor wants to proceed with placement. What is the correct action and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reject the concrete batch. Slump of 155 mm is too high, indicating excess water in the mix. High-slump concrete has reduced strength and durability. The contractor must either (1) adjust the mix by reducing water or adding aggregate and retesting, or (2) obtain a new batch."
+        },
+        {
+          "id": "b",
+          "text": "Accept the concrete because slump higher than specified is acceptable, provided that additional measures are taken to ensure structural integrity."
+        },
+        {
+          "id": "c",
+          "text": "Request retesting with a different slump cone, ensuring that the testing procedure adheres to standard protocols to verify accuracy."
+        },
+        {
+          "id": "d",
+          "text": "Accept the concrete with a change order to reduce the design strength requirement, allowing for adjustments in structural calculations."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Slump higher than specified is not acceptable; it indicates a different mix design than specified.",
+        "c": "Retesting with a different cone doesn't address the underlying problem (excess water in mix).",
+        "d": "Reducing design strength to accept non-conforming concrete violates the specification and is not acceptable.",
+        "correct": "Slump outside the specified range (too high or too low) indicates mix non-conformance. High slump indicates excess water, which reduces strength and durability. The specified range (75-100 mm) represents the intended workability for the application. Placement with slump 155 mm may lead to: (1) reduced compressive strength, (2) potential segregation, (3) durability issues. The batch must be rejected and corrected or replaced.",
+        "takeaway": "Slump tests outside the specified range are rejectable. The contractor must correct the mix (adjust water, aggregate, or both) and retest. This is a critical quality control point."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C143 Slump Test; Concrete Quality Control",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9736a8e8db541a3b44bd195c14cde1129b5b371c743d52a29ff2ba39467912bb"
+    },
+    {
+      "question_id": "0dc0d098-4ea9-4f84-98b7-f3662a00f5d8",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "A concrete placement of 380 cubic meters is to be tested per DPWH requirements of '1 set per 50 m3.' How many test sets are required and how many individual cylinders?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sets: 380 / 50 = 7.6, round up to 8 sets. Individual cylinders: 8 sets x 2 cylinders per set = 16 cylinders."
+        },
+        {
+          "id": "b",
+          "text": "Sets: 8; Cylinders: 8 (one per set), assuming a simplified testing protocol not typically used"
+        },
+        {
+          "id": "c",
+          "text": "Sets: 4; Cylinders: 8, based on an incorrect interpretation of the testing frequency"
+        },
+        {
+          "id": "d",
+          "text": "Sets: 16; Cylinders: 32, which would be required if the testing frequency were doubled for additional safety"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "One cylinder per set is insufficient; two cylinders per set are standard for statistical validity.",
+        "c": "Incorrect set calculation; 380 / 50 = 7.6, not 4.",
+        "d": "Doubling the sets (incorrect) and doubling cylinders.",
+        "correct": "Testing frequency: 380 m3 ÷ 50 m3/set = 7.6 sets; round up to 8 sets. Each set consists of 2 cylinders (per ASTM C31 standard practice, one cylinder tested at 7 days, one at 28 days, or both at 28 days). Total cylinders: 8 sets × 2 = 16 cylinders.",
+        "takeaway": "Always calculate testing frequency by dividing total volume by testing interval, rounding up. Each set = 2 cylinders. Total cylinders = (number of sets) × 2. This is a fundamental calculation tested on the ALE."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Project Quality Assurance; ASTM C31 Field Curing Practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5f7a02427e938dea728d87b9c235ce2c05abf2544267f7749bf2fb7507859d0e"
+    },
+    {
+      "question_id": "d42c3032-e75f-45e9-97cb-e61e5bc6bcac",
+      "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+      "topic_id": "9731c657-9504-47c7-89cc-0ed39c2691a9",
+      "text": "According to ASTM C39, what is the standard test specimen size for concrete compressive strength testing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cylinder: 150 mm diameter, 300 mm height"
+        },
+        {
+          "id": "b",
+          "text": "Cylinder: 100 mm diameter, 200 mm height, which is used for smaller scale testing."
+        },
+        {
+          "id": "c",
+          "text": "Cube: 100 mm x 100 mm x 100 mm, typically used for non-standard testing scenarios."
+        },
+        {
+          "id": "d",
+          "text": "Cube: 150 mm x 150 mm x 150 mm, which is not the standard size for ASTM C39 testing."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Non-standard sizes require correction factors.",
+        "c": "Cubic specimens are used in other standards (e.g., European practice) but not ASTM C39.",
+        "d": "Larger cubes are non-standard.",
+        "correct": "ASTM C39 specifies standard cylinders of 150 mm (6 inches) diameter and 300 mm (12 inches) height. These are the reference specimens for strength testing and comparison. Some standards allow alternative sizes (e.g., 100 mm diameter), but results must be corrected to standard size equivalency.",
+        "takeaway": "The 150 mm x 300 mm cylinder is the reference specimen for ASTM C39. Memorize this dimension; it's tested on the ALE."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C39/C39M-21 Standard Test Method for Compressive Strength of Cylindrical Concrete Specimens",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.246409+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c2477716c7fba78a9adc559d4e0776908d42872ca48fc0955b5dd908dbb66964"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "question_id": "0161cbf0-c8cc-4130-92af-aa9d72060818",
   "baseline_hash": "sha256:e05704658bb8916b76373a9dac9d612c7fd0d60c4baee6563b766e7849c46fe0",
-  "action": "replace",
-  "reason": "source-audited-article-batch-101-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-005-foreign-architects-in-the-philippines.",
-  "approved_by": "codex-local-source-audit-batch-101",
-  "approved_at": "2026-05-13T10:20:00+08:00",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
     "parent_article_slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
@@ -58,34 +58,41 @@
     "batch_id": "source-audited-article-batch-101-local-first"
   },
   "proposed": {
-    "text": "Which supporting detail is source-backed for a temporary permit application?",
+    "text": "How does the requirement for a Filipino counterpart affect fee collection by foreign architects?",
     "options": [
       {
         "id": "a",
-        "text": "A marketing award list only"
+        "text": "Foreign architects collect fees directly from clients, bypassing local regulations and ensuring full control over their earnings"
       },
       {
         "id": "b",
-        "text": "Identification of the Filipino counterpart and current professional credentials"
+        "text": "All compensation flows through the Filipino counterpart or employing firm"
       },
       {
         "id": "c",
-        "text": "A social media portfolio only"
+        "text": "Fees are paid directly to the Board, which distributes them according to a predetermined schedule and ensures compliance with local laws"
       },
       {
         "id": "d",
-        "text": "A client promise to supervise the work"
+        "text": "Foreign architects cannot receive compensation under any circumstance, as local laws prohibit direct payment to non-Filipino entities"
       }
     ],
     "correct_option_id": "b",
-    "rationale": "The permit application requires the Filipino counterpart information and professional credential support.",
-    "explanation": "Batch 101 source-audited rewrite: The permit application requires the Filipino counterpart information and professional credential support.",
-    "code_citation": "raw markdown lines 672-691, 782-824; refined markdown lines 7-19, 68-83, 108-123, 140-152, 186-193, 393-403; raw markdown lines 128-132, 293-297, 1854-1857",
-    "application_context": "professional_practice_source_audit",
-    "practice_context": [
-      "professional practice",
-      "source-audited batch 101"
-    ],
-    "model_id": "BATCH-101-lea-prac-frm-005-foreign-architects-in-the-philippines-005"
+    "rationale": {
+      "a": "Violates the counterpart requirement—direct fee collection bypasses Filipino professional oversight.",
+      "c": "Attributes false intermediary role—the Board does not manage fee distribution.",
+      "d": "Overstates restriction—foreign architects do receive compensation, but indirectly through Filipino firms.",
+      "correct": "Foreign architects cannot collect professional fees directly; compensation flows through Filipino counterparts or employing firms for professional oversight.",
+      "takeaway": "Foreign architects receive compensation only through their Filipino counterpart or employer—direct billing to clients is prohibited."
+    },
+    "explanation": "",
+    "code_citation": "RA 9266",
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.9,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-PRAC-FRM-005-010"
   }
 }

@@ -2,9 +2,9 @@
   "question_id": "e015d560-a07f-4a1f-b8bc-dafab81572f1",
   "baseline_hash": "sha256:251dfb54b47481085be0089bf1621a651147a4c7198c65dcae79249a3ee80c9e",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What does Section 702 require when a change places a building in a different division or group?",
+    "text": "Under the IEBC Chapter 10 (USA), what is the approach to change of occupancy compared to PD 1096 Sec. 702?",
     "options": [
       {
         "id": "a",
-        "text": "The building must comply with the Code requirements for that new division or group."
+        "text": "The IEBC allows any change of occupancy without compliance as long as it is less hazardous, which can lead to potential safety risks if not properly evaluated"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "The IEBC requires compliance with new occupancy standards (or an approved alternative method) regardless of direction of hazard change"
       },
       {
         "id": "c",
-        "text": "h"
+        "text": "The IEBC and PD 1096 use identical change-of-occupancy procedures, ensuring consistency across different jurisdictions"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "The IEBC does not address change of occupancy, leaving it to local codes and regulations to determine the necessary procedures"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The building must comply with the Code requirements for that new division or group. This is supported by The change is approved by reducing corridor width..",
-    "explanation": "The building must comply with the Code requirements for that new division or group. The cited local source family controls this item: The change is approved by reducing corridor width..",
-    "code_citation": "The change is approved by adding a dry standpipe only."
+    "correct_option_id": "b",
+    "rationale": "This comparative question tests understanding of the key policy difference: PH's 'less hazardous' standard is uniquely pragmatic for a country with a large stock of aging buildings. The IEBC's approach is more rigorous — full compliance or a scored evaluation, regardless of hazard direction. This distinction is a frequent ALE comparative analysis topic.",
+    "explanation": null,
+    "code_citation": null
   }
 }

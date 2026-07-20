@@ -8,37 +8,31 @@
       "question_id": "b52aef0e-bf29-4862-8504-1043690499dc",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "How do mansard roofs and domes both serve shelter, yet through different structural and formal strategies?",
+      "text": "In source-audited theory, what is the basis for classifying buildings by human need?",
       "options": [
         {
           "id": "a",
-          "text": "Mansard roofs shed water efficiently; domes shed water poorly and require central drainage, especially in regions with high rainfall"
+          "text": "The activities and needs the building serves."
         },
         {
           "id": "b",
-          "text": "Mansard roofs are decorative elements; domes are purely structural, often used in monumental architecture to symbolize grandeur"
+          "text": "The color of the facade."
         },
         {
           "id": "c",
-          "text": "Both use pitched slopes to prevent water pooling; both use arches to distribute loads, although domes achieve this through a continuous curved surface"
+          "text": "The contractor delivery method."
         },
         {
           "id": "d",
-          "text": "Mansard roofs create additional attic space; domes create open interior space by spanning large openings without interior columns"
+          "text": "The number of drawing sheets."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Domes (like Pantheon) shed water effectively through slope; the comparison is false.",
-        "b": "Both are highly functional structural elements, not decorative.",
-        "c": "Domes use curvature and load distribution (outward/downward), not pitched water-shedding slopes like mansards.",
-        "correct": "Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct.",
-        "takeaway": "Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct."
-      },
+      "rationale": "The activities and needs the building serves. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": "Domes (like Pantheon) shed water effectively through slope; the comparison is false. Both are highly functional structural elements, not decorative. Domes use curvature and load distribution (outward/downward), not pitched water-shedding slopes like mansards. Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct. Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -53,44 +47,38 @@
       "model_id": "ALE-THEO-002-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-05-06T12:03:34.407759+00:00",
+      "updated_at": "2026-07-20T01:13:22.501032+00:00",
       "content_hash": "sha256:25f86f32852d2c9ad2fee16ee9c159d7d9eda0d55d82d379a9ed885ab3fbed90"
     },
     {
       "question_id": "3bda1e21-1685-4e01-a715-cf7a8de8688c",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "A cortile is best defined as:",
+      "text": "Which answer best separates human-need classification from code classification?",
       "options": [
         {
           "id": "a",
-          "text": "A covered walkway with columns supporting a roof, protecting circulation from weather"
+          "text": "Human-need classification asks what activity or need the building supports."
         },
         {
           "id": "b",
-          "text": "A public civic square surrounded by important buildings and serving as gathering space"
+          "text": "Human-need classification is the same as fire-resistive construction type."
         },
         {
           "id": "c",
-          "text": "An internal courtyard surrounded by covered arcaded walkways on all four sides"
+          "text": "Human-need classification depends only on legal occupancy labels."
         },
         {
           "id": "d",
-          "text": "A raised platform in a church from which the clergy delivers sermons"
+          "text": "Human-need classification ignores users."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "That is an arcade or portico—a circulation element, not a complete courtyard system.",
-        "b": "That is a piazza—a public external civic square, not an internal palace courtyard.",
-        "d": "That is a pulpit—a church element unrelated to courtyards.",
-        "correct": "A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space.",
-        "takeaway": "A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space."
-      },
+      "rationale": "Human-need classification asks what activity or need the building supports. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": "That is an arcade or portico—a circulation element, not a complete courtyard system. That is a piazza—a public external civic square, not an internal palace courtyard. That is a pulpit—a church element unrelated to courtyards. A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space. A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space.",
       "code_citation": null,
       "bloom_level": "remember",
@@ -105,44 +93,38 @@
       "model_id": "ALE-THEO-002-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-05-06T12:03:36.19485+00:00",
+      "updated_at": "2026-07-20T01:13:22.498227+00:00",
       "content_hash": "sha256:6d04da5ca36872b17d380c6ee675f08fa6107dd3969ba5a8cda054bc049da714"
     },
     {
       "question_id": "4db989c7-3aea-4d33-aef7-f9576d9a8bd3",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "A balustrade serves which primary function in architectural design?",
+      "text": "Why do different building types arise according to this topic?",
       "options": [
         {
           "id": "a",
-          "text": "Directing water runoff and protecting building edges from weather damage, especially in areas with heavy rainfall"
+          "text": "Different human activities call for different accompanying structures."
         },
         {
           "id": "b",
-          "text": "Preventing falls along stairs and balconies while providing visual transparency and elegance"
+          "text": "All activities need the same building type."
         },
         {
           "id": "c",
-          "text": "Protecting a building's structure from lateral wind forces, which is crucial in high-wind zones"
+          "text": "Only ornament determines building type."
         },
         {
           "id": "d",
-          "text": "Providing shade and controlling solar heat gain in tropical climates, which helps in reducing cooling loads"
+          "text": "Building type is unrelated to use."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "That is the function of roof overhangs, gutters, and fascias, not balustrades.",
-        "c": "Structural bracing resists wind; balustrades are safety railings.",
-        "d": "Shading devices and louvers control solar gain; balustrades are railings.",
-        "correct": "A balustrade is composed of small vertical spindles (balusters) supporting a handrail, preventing falls while maintaining visual transparency and often communicating status and refinement through design.",
-        "takeaway": "A balustrade is composed of small vertical spindles (balusters) supporting a handrail, preventing falls while maintaining visual transparency and often communicating status and refinement through design."
-      },
+      "rationale": "Different human activities call for different accompanying structures. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "remember",
@@ -157,44 +139,38 @@
       "model_id": "ALE-THEO-002-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.501905+00:00",
       "content_hash": "sha256:cb5ba74e8e228668b93bdf8daf0772b51e87505cab765971f3e5139f913b8e58"
     },
     {
       "question_id": "77ada63b-b941-424c-bb47-08e999b3b5ff",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "Which of these pairs correctly distinguishes between piazza and cortile?",
+      "text": "What is the safest LEA approach to a building-by-need question?",
       "options": [
         {
           "id": "a",
-          "text": "Cortile serves private functions; piazza serves only ceremonial purposes, often in urban settings"
+          "text": "Identify the need or activity being served before choosing the type."
         },
         {
           "id": "b",
-          "text": "Cortile is internal with arcaded surrounds; piazza is external civic gathering space"
+          "text": "Choose the option with the longest code citation."
         },
         {
           "id": "c",
-          "text": "Piazza has covered walkways; cortile is entirely open to sky, allowing for natural light"
+          "text": "Pick the most decorative style."
         },
         {
           "id": "d",
-          "text": "Piazza is internal and palace-specific; cortile is external and public, often found in residential areas"
+          "text": "Ignore the user group."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Both serve multiple functions; piazza certainly serves commercial and social functions, not only ceremony.",
-        "c": "Incorrect—cortile is surrounded by arcaded covered walkways; piazza is open to sky.",
-        "d": "Reversed—piazza is the external public element; cortile is the internal palace element.",
-        "correct": "This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco).",
-        "takeaway": "This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco)."
-      },
+      "rationale": "Identify the need or activity being served before choosing the type. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": "Both serve multiple functions; piazza certainly serves commercial and social functions, not only ceremony. Incorrect—cortile is surrounded by arcaded covered walkways; piazza is open to sky. Reversed—piazza is the external public element; cortile is the internal palace element. This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco). This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco).",
       "code_citation": null,
       "bloom_level": "remember",
@@ -209,30 +185,30 @@
       "model_id": "ALE-THEO-002-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-05-06T12:03:30.670994+00:00",
+      "updated_at": "2026-07-20T01:13:22.506144+00:00",
       "content_hash": "sha256:cc1836438bc2ef6eba6cdf773436a7e5fee07de739a8bbe454d0699908b0eb04"
     },
     {
       "question_id": "30f34bc4-098b-44b7-bba3-d3ea6ee6fa69",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "How do the four primary human needs (shelter, circulation, environmental control, structure) relate to architectural elements in an actual building design?",
+      "text": "In source-audited theory, what is the basis for classifying buildings by human need?",
       "options": [
         {
           "id": "a",
-          "text": "Most elements serve multiple needs simultaneously; a wall provides shelter, structure, and environmental control at once"
+          "text": "The activities and needs the building serves."
         },
         {
           "id": "b",
-          "text": "These needs are addressed separately—shelter elements, then circulation, then environmental control added later, ensuring each aspect is independently optimized"
+          "text": "The color of the facade."
         },
         {
           "id": "c",
-          "text": "Each element serves only one need; design is simplified by single-purpose elements, which can lead to more efficient construction processes"
+          "text": "The contractor delivery method."
         },
         {
           "id": "d",
-          "text": "Shelter and circulation are primary; environmental control and structure are secondary concerns, often considered only after the main design is complete"
+          "text": "The number of drawing sheets."
         }
       ],
       "correct_option_id": "a",
@@ -240,13 +216,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Elements are designed simultaneously to address multiple needs, not sequentially added.",
-        "c": "This oversimplifies; actual design requires elements serving multiple functions.",
-        "d": "All four needs are equally important and integrated.",
-        "correct": "Every architectural element is multifunctional: walls enclose space (shelter), support loads (structure), control weather/light (environmental control), and define circulation paths. Design excellence comes from integrating all four needs simultaneously.",
-        "takeaway": "Design excellence comes from integrating all four needs simultaneously."
-      },
+      "rationale": "The activities and needs the building serves. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": "Elements are designed simultaneously to address multiple needs, not sequentially added. This oversimplifies; actual design requires elements serving multiple functions. All four needs are equally important and integrated. Every architectural element is multifunctional: walls enclose space (shelter), support loads (structure), control weather/light (environmental control), and define circulation paths. Design excellence comes from integrating all four needs simultaneously. Design excellence comes from integrating all four needs simultaneously.",
       "code_citation": null,
       "bloom_level": "analyze",
@@ -261,44 +231,38 @@
       "model_id": "ALE-THEO-002-01-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-05-06T12:03:32.430778+00:00",
+      "updated_at": "2026-07-20T01:13:22.502784+00:00",
       "content_hash": "sha256:06e5940f31165c0dba0caccc0dbdbcf5e6c9495654399c6de2535f66af765de3"
     },
     {
       "question_id": "b26b6881-a570-410c-bfd2-743872506172",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "How do shell structures and domes both serve structural and shelter functions, yet through different geometric principles?",
+      "text": "Which answer best separates human-need classification from code classification?",
       "options": [
         {
           "id": "a",
-          "text": "Shells distribute loads along curved paths; domes distribute loads vertically only, which limits their application in certain structural scenarios"
+          "text": "Human-need classification asks what activity or need the building supports."
         },
         {
           "id": "b",
-          "text": "Domes are hemispherical only; shells can be any curved geometry, allowing for more diverse architectural expressions"
+          "text": "Human-need classification is the same as fire-resistive construction type."
         },
         {
           "id": "c",
-          "text": "Shells are thin and curved, gaining strength through curvature; domes are massive and heavy, requiring thick walls"
+          "text": "Human-need classification depends only on legal occupancy labels."
         },
         {
           "id": "d",
-          "text": "Shells require interior columns for support; domes span without interior supports, making them ideal for large open spaces"
+          "text": "Human-need classification ignores users."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Domes also distribute loads outward and downward, not just vertically.",
-        "b": "Both dome and shell are curved geometries; domes are a specific type of vault/shell.",
-        "d": "Neither requires interior columns—both span through curved geometry.",
-        "correct": "Shells gain structural efficiency through curvature (like eggshell strength), allowing thin material; domes also use curvature to span openings but are often thicker. Both use curved form, but shells exemplify economy through curvature's thinness.",
-        "takeaway": "Both use curved form, but shells exemplify economy through curvature's thinness."
-      },
+      "rationale": "Human-need classification asks what activity or need the building supports. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -313,30 +277,30 @@
       "model_id": "ALE-THEO-002-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.504484+00:00",
       "content_hash": "sha256:2a9ebf620342570bba6ee5bab13ea9848832bd9620491f8885adae7a3949fdf7"
     },
     {
       "question_id": "4ec523c4-078a-4cc7-876b-f79972285e54",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "PD 1096 requires stair riser heights maximum 200 mm and minimum 100 mm. A designer proposes a 200 mm riser. This complies with code dimensional requirements but may violate which other requirement?",
+      "text": "Why do different building types arise according to this topic?",
       "options": [
         {
           "id": "a",
-          "text": "Accessibility and safe, ergonomic stepping for users of varying ages and abilities"
+          "text": "Different human activities call for different accompanying structures."
         },
         {
           "id": "b",
-          "text": "Fire safety standards requiring emergency stair capacity and minimum tread depth ratios"
+          "text": "All activities need the same building type."
         },
         {
           "id": "c",
-          "text": "Structural adequacy of the stair stringers to support concentrated loading at midspan"
+          "text": "Only ornament determines building type."
         },
         {
           "id": "d",
-          "text": "Ceiling headroom above the stairs as measured from the nosing to the soffit above"
+          "text": "Building type is unrelated to use."
         }
       ],
       "correct_option_id": "a",
@@ -344,13 +308,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Fire codes concern stair width, handrails, and egress capacity, not specifically riser height.",
-        "c": "Structural adequacy is not determined by riser height alone.",
-        "d": "Headroom is regulated separately; excessive riser height doesn't directly violate headroom requirements.",
-        "correct": "While 200 mm riser complies with PD 1096 dimensional max (Rule VIII Sec 808.1), taller risers may challenge ergonomic comfort for some users per general accessibility principles (not specific BP 344 regulation).",
-        "takeaway": "While 200 mm riser complies with PD 1096 dimensional max (Rule VIII Sec 808.1), taller risers may challenge ergonomic comfort for some users per general accessibility principles (not specific BP 344 regulation)."
-      },
+      "rationale": "Different human activities call for different accompanying structures. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -365,44 +323,38 @@
       "model_id": "ALE-THEO-002-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.505307+00:00",
       "content_hash": "sha256:0777b71b9cb17c3c236a3c03e831243e8989f6152ab85dca8ba2add60fc72939"
     },
     {
       "question_id": "ef6f21c7-eed0-4da6-a9e5-c5daafa36b93",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "The Palazzo Farnese exemplifies which specific architectural element through its use of columns extending through multiple stories?",
+      "text": "What is the safest LEA approach to a building-by-need question?",
       "options": [
         {
           "id": "a",
-          "text": "Mansard roof form, which is unrelated to columnar design"
+          "text": "Identify the need or activity being served before choosing the type."
         },
         {
           "id": "b",
-          "text": "Fenestration arrangement, typically referring to window placement rather than column use"
+          "text": "Choose the option with the longest code citation."
         },
         {
           "id": "c",
-          "text": "Colossal order (giant order)"
+          "text": "Pick the most decorative style."
         },
         {
           "id": "d",
-          "text": "Cortile organization, which pertains to courtyard layout rather than columnar elements"
+          "text": "Ignore the user group."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Palazzo Farnese does not feature a mansard roof; it has a flat top.",
-        "b": "While Palazzo Farnese has fenestration, it is not defined by window arrangement.",
-        "d": "The cortile is the internal courtyard; colossal order is the external facade element.",
-        "correct": "Palazzo Farnese demonstrates colossal order—giant columns or pilasters spanning two or three stories, creating visual unity and monumentality across the tall facade.",
-        "takeaway": "Palazzo Farnese demonstrates colossal order—giant columns or pilasters spanning two or three stories, creating visual unity and monumentality across the tall facade."
-      },
+      "rationale": "Identify the need or activity being served before choosing the type. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "remember",
@@ -417,44 +369,38 @@
       "model_id": "ALE-THEO-002-01-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.500132+00:00",
       "content_hash": "sha256:d6cb04e613a7cdeeebea5e3323039efe3efe62d86b91916055dbcadad6b99599"
     },
     {
       "question_id": "c7f8268e-4ac0-4de7-b3ec-12d3e1ed7f69",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "Which architectural element is defined as the organized system of windows in a building facade that controls light, views, and thermal gain?",
+      "text": "In source-audited theory, what is the basis for classifying buildings by human need?",
       "options": [
         {
           "id": "a",
-          "text": "Vestibule, which is typically an anteroom or small foyer leading into a larger space, often used to reduce heat loss"
+          "text": "The activities and needs the building serves."
         },
         {
           "id": "b",
-          "text": "Louver, a series of angled slats or fins that allow light and air to pass through while blocking direct sunlight and rain, often used in ventilation systems"
+          "text": "The color of the facade."
         },
         {
           "id": "c",
-          "text": "Fenestration"
+          "text": "The contractor delivery method."
         },
         {
           "id": "d",
-          "text": "Portico, a structure consisting of a roof supported by columns at regular intervals, typically attached as a porch to a building entrance"
+          "text": "The number of drawing sheets."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "A vestibule is a transition space between exterior and interior, not a window arrangement.",
-        "b": "Louvers are horizontal or vertical slats that block sunlight while permitting air circulation—a component within fenestration strategy, not the overall window system.",
-        "d": "A portico is a covered entrance with a colonnade, not a window system.",
-        "correct": "Fenestration is precisely the planned organization and design of windows in a facade, controlling daylighting, views, thermal gain/loss, ventilation, and security characteristics.",
-        "takeaway": "Fenestration is precisely the planned organization and design of windows in a facade, controlling daylighting, views, thermal gain/loss, ventilation, and security characteristics."
-      },
+      "rationale": "The activities and needs the building serves. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "remember",
@@ -469,44 +415,38 @@
       "model_id": "ALE-THEO-002-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.496928+00:00",
       "content_hash": "sha256:166138edbefbba9622371a8b3a11e17f63cff475e0ca7d4b85eaa1f5f81be91d"
     },
     {
       "question_id": "89a429b7-0b31-4483-bdd3-9ff1fe7af716",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "A tropical building requires protection from intense afternoon sun while maintaining airflow. Which element would best serve this environmental control function?",
+      "text": "Which answer best separates human-need classification from code classification?",
       "options": [
         {
           "id": "a",
-          "text": "Large, fully exposed window openings for maximum ventilation, which may lead to excessive heat gain and glare during peak sun hours"
+          "text": "Human-need classification asks what activity or need the building supports."
         },
         {
           "id": "b",
-          "text": "Small, high windows only on the north facade, minimizing direct sunlight but potentially limiting cross-ventilation"
+          "text": "Human-need classification is the same as fire-resistive construction type."
         },
         {
           "id": "c",
-          "text": "Deep windows with external louvers angled to block direct sun"
+          "text": "Human-need classification depends only on legal occupancy labels."
         },
         {
           "id": "d",
-          "text": "Completely solid walls with minimal openings, providing maximum sun protection but severely restricting natural ventilation"
+          "text": "Human-need classification ignores users."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Large exposed openings admit excessive solar heat in tropical climates, creating thermal discomfort despite ventilation.",
-        "b": "High north-facing windows provide minimal solar control and only one direction of ventilation; insufficient for active tropical cooling.",
-        "d": "Solid walls would prevent the ventilation critical to tropical comfort; this contradicts environmental control strategy.",
-        "correct": "Deep windows with external louvers provide environmental control: louvers block direct sunlight while angled slats permit air circulation and light to penetrate—ideal for tropical climates requiring both cooling and natural light.",
-        "takeaway": "Deep windows with external louvers provide environmental control: louvers block direct sunlight while angled slats permit air circulation and light to penetrate—ideal for tropical climates requiring both cooling and natural light."
-      },
+      "rationale": "Human-need classification asks what activity or need the building supports. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -521,44 +461,38 @@
       "model_id": "ALE-THEO-002-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.507161+00:00",
       "content_hash": "sha256:1c3486362b8bacf094947e2c95ce63aa96ea5410eef1384d0783d977c6d9573b"
     },
     {
       "question_id": "6e077e5c-3cec-4fd9-8b60-2017fb3f00d1",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "Which architectural element provides a transitional space buffering temperature changes and weather between the exterior and interior?",
+      "text": "Why do different building types arise according to this topic?",
       "options": [
         {
           "id": "a",
-          "text": "Arcade, typically open on one or more sides, providing a sheltered walkway but not fully enclosed"
+          "text": "Different human activities call for different accompanying structures."
         },
         {
           "id": "b",
-          "text": "Vestibule"
+          "text": "All activities need the same building type."
         },
         {
           "id": "c",
-          "text": "Corridor, often enclosed and used for circulation within a building, not typically for buffering exterior conditions"
+          "text": "Only ornament determines building type."
         },
         {
           "id": "d",
-          "text": "Portico, an exterior feature with a roof supported by columns, offering some protection but not fully enclosed"
+          "text": "Building type is unrelated to use."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "An arcade is an open covered walkway, not a temperature-buffering enclosed transition.",
-        "c": "A corridor is an interior circulation space, not a weather/temperature buffer between exterior and interior.",
-        "d": "A portico is a covered entrance with columns; it does not enclose temperature transitional space.",
-        "correct": "A vestibule is specifically a transition space controlling temperature, protecting from direct weather, and marking arrival into the building interior.",
-        "takeaway": "A vestibule is specifically a transition space controlling temperature, protecting from direct weather, and marking arrival into the building interior."
-      },
+      "rationale": "Different human activities call for different accompanying structures. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "remember",
@@ -573,44 +507,38 @@
       "model_id": "ALE-THEO-002-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.503643+00:00",
       "content_hash": "sha256:b25482ada3bce7cf4b9e77785c51765c0434b783c18e289c6b8a4bb2e0925435"
     },
     {
       "question_id": "dcc60bc7-d9cb-471c-b54a-f95a36ab7ef4",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "In a 20-story office building, elevator shafts serve which combined functions that make them more than simple circulation components?",
+      "text": "What is the safest LEA approach to a building-by-need question?",
       "options": [
         {
           "id": "a",
-          "text": "Vertical transportation and HVAC system distribution, providing both movement and climate control within the building"
+          "text": "Identify the need or activity being served before choosing the type."
         },
         {
           "id": "b",
-          "text": "Vertical movement and emergency egress for evacuation, although elevators are typically not used during emergencies"
+          "text": "Choose the option with the longest code citation."
         },
         {
           "id": "c",
-          "text": "Vertical circulation and structural bracing of the building's core against lateral forces"
+          "text": "Pick the most decorative style."
         },
         {
           "id": "d",
-          "text": "Vertical transportation and aesthetic landmark visibility from exterior, enhancing the building's visual identity"
+          "text": "Ignore the user group."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "HVAC systems typically run separately; elevator shafts are not primary HVAC distribution.",
-        "b": "Stairs are the required emergency egress; elevators are not emergency evacuation devices.",
-        "d": "While shafts may be visible, their primary non-circulation function is structural, not aesthetic.",
-        "correct": "Elevator shafts provide vertical circulation (functional purpose) and often contain bracing elements that resist lateral winds and seismic forces, strengthening the building's structural system.",
-        "takeaway": "Elevator shafts provide vertical circulation (functional purpose) and often contain bracing elements that resist lateral winds and seismic forces, strengthening the building's structural system."
-      },
+      "rationale": "Identify the need or activity being served before choosing the type. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -625,44 +553,38 @@
       "model_id": "ALE-THEO-002-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.508019+00:00",
       "content_hash": "sha256:d72e58ec452b91590fecb6124adab463b27455c4b0413587c352d155544c609d"
     },
     {
       "question_id": "df265b55-38ec-48da-a497-d4b411de462c",
       "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
       "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-      "text": "In Philippine tropical architecture, which combination of elements would be most appropriate for responding to the hot, humid climate with seasonal monsoon rains?",
+      "text": "In source-audited theory, what is the basis for classifying buildings by human need?",
       "options": [
         {
           "id": "a",
-          "text": "Enclosed interior courtyards, minimal external openings, underground spaces, which are less effective in humid climates"
+          "text": "The activities and needs the building serves."
         },
         {
           "id": "b",
-          "text": "Large fixed windows, massive concrete walls, flat roofs, which can trap heat and are not ideal for monsoon rains"
+          "text": "The color of the facade."
         },
         {
           "id": "c",
-          "text": "Deep eaves, operable louvers, natural ventilation, elevated foundations, steep roof pitch"
+          "text": "The contractor delivery method."
         },
         {
           "id": "d",
-          "text": "Small windows, thick insulating walls, pitched roofs, which are more suited to temperate climates"
+          "text": "The number of drawing sheets."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Interior courtyards work in some climates but don't address monsoon flooding or the need for external shade and ventilation.",
-        "b": "Large fixed windows overheat tropical buildings; flat roofs pool water in monsoon climates.",
-        "d": "Small windows and thick walls suit cold climates; attic space (pitched roofs) serves no function in tropical year-round warmth.",
-        "correct": "Philippine vernacular responds to tropical climate through: deep eaves (weather protection), louvers (sun/monsoon control with ventilation), natural ventilation (essential in humidity), elevated foundations (flood/moisture protection), and steep roofs (rapid water drainage from monsoons).",
-        "takeaway": "Philippine vernacular responds to tropical climate through: deep eaves (weather protection), louvers (sun/monsoon control with ventilation), natural ventilation (essential in humidity), elevated foundations (flood/moisture protection), and steep roofs (rapid water drainage from monsoons)."
-      },
+      "rationale": "The activities and needs the building serves. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -677,7 +599,7 @@
       "model_id": "ALE-THEO-002-01-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.499210+00:00",
       "content_hash": "sha256:b9a2b40692dc169e902f3bfc844723579853e1ca88f9513d1099447e44da33a5"
     }
   ]

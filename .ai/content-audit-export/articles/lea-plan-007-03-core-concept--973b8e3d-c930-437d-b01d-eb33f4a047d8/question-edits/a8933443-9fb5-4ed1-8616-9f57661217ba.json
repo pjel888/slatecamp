@@ -2,9 +2,9 @@
   "question_id": "a8933443-9fb5-4ed1-8616-9f57661217ba",
   "baseline_hash": "sha256:20eacf021732041372edc6ebe46ebf3d26ad6d63d699d304a76760af75545a31",
   "action": "replace",
-  "reason": "source-audited-article-batch-086-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-007-03-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-086",
-  "approved_at": "2026-05-12T09:30:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
     "parent_article_slug": "lea-plan-007-03-core-concept",
@@ -48,32 +48,28 @@
     "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 086 local raw-source-audited housing_finance_institutions scope."
   },
   "proposed": {
-    "text": "Which institution does EO 90 identify as the major government home mortgage institution?",
+    "text": "How does the secondary mortgage market (operated by NHMFC) enable continuous housing loan availability?",
     "options": [
       {
         "id": "a",
-        "text": "NHMFC"
+        "text": "It limits the number of loans primary lenders can issue, ensuring that only the most qualified applicants receive funding, thereby maintaining a stable financial environment"
       },
       {
         "id": "b",
-        "text": "GSIS"
+        "text": "It guarantees that all housing loans will be paid without default, providing a safety net for lenders and encouraging them to issue more loans"
       },
       {
         "id": "c",
-        "text": "NHA"
+        "text": "It purchases loans from primary lenders (Pag-IBIG, banks), replenishing their capital so they can originate new loans"
       },
       {
         "id": "d",
-        "text": "HLURB"
+        "text": "It replaces primary lenders entirely and becomes the sole source of housing finance, centralizing the loan process under one entity"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "EO 90 identifies the National Home Mortgage Finance Corporation as the major government home mortgage institution.",
-    "explanation": "EO 90 identifies the National Home Mortgage Finance Corporation as the major government home mortgage institution.",
-    "code_citation": "EO 90 - NGO for Shelter Program; RA 11201 IRR - DHSUD Act Implementing Rules; RA 7160 - The Local Government Code",
-    "bloom_level": "understand",
-    "application_context": "source_audited_local_first_batch_086",
-    "practice_context": [],
-    "difficulty": 0.55
+    "correct_option_id": "c",
+    "rationale": "NHMFC buys loans from primary lenders, converting those loans into investment instruments. This returns capital to the lender, enabling them to issue new loans rather than waiting for repayment. This recycling mechanism is essential for loan availability. [A]: Secondary market increases lending capacity, not limits it. [B]: NHMFC does not guarantee loan repayment; it is a purchaser of loans. [C]: NHMFC buys loans from primary lenders, converting those loans into investment instruments. This returns capital to the lender, enabling them to issue new loans rather than waiting for repayment. This recycling mechanism is essential for loan availability. [D]: NHMFC complements primary lenders; it does not replace them.",
+    "explanation": "Secondary market increases lending capacity, not limits it. NHMFC does not guarantee loan repayment; it is a purchaser of loans. NHMFC buys loans from primary lenders, converting those loans into investment instruments. This returns capital to the lender, enabling them to issue new loans rather than waiting for repayment. This recycling mechanism is essential for loan availability. NHMFC complements primary lenders; it does not replace them. NHMFC buys loans from primary lenders, converting those loans into investment instruments. This returns capital to the lender, enabling them to issue new loans rather than waiting for repayment. This recycling mechanism is essential for loan availability. Secondary mortgage market = capital recycling mechanism enabling continuous lending.",
+    "code_citation": "NHMFC documentation, secondary mortgage market theory"
   }
 }

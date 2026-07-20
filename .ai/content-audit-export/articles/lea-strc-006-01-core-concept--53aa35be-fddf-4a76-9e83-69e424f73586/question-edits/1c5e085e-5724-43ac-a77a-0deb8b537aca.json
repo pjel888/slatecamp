@@ -22,5 +22,53 @@
       "detailing-concrete",
       "bsi-concrete"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "What must be true about reinforcement before concrete is placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It may float freely as long as the plan notes show steel."
+      },
+      {
+        "id": "b",
+        "text": "It must be accurately positioned and adequately supported."
+      },
+      {
+        "id": "c",
+        "text": "It should be removed until the concrete hardens."
+      },
+      {
+        "id": "d",
+        "text": "It needs no relation to cover or spacing."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It may float freely as long as the plan notes show steel. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "It must be accurately positioned and adequately supported. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+      "c": "It should be removed until the concrete hardens. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "It needs no relation to cover or spacing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "It must be accurately positioned and adequately supported. Supported by detailing-concrete.",
+      "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-concrete",
+      "checked_sources": [
+        "detailing-concrete",
+        "bsi-concrete"
+      ]
+    },
+    "explanation": "It must be accurately positioned and adequately supported. Supported by the Batch 144 local source boundary: detailing-concrete.",
+    "code_citation": "detailing-concrete",
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-01-003"
   }
 }

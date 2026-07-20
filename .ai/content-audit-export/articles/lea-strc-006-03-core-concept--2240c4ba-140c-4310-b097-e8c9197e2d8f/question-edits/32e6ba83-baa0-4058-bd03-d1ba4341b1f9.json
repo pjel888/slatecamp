@@ -24,5 +24,54 @@
       "fundamentals-strength",
       "detailing-flexural"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Why is tension reinforcement placed in reinforced concrete flexural members?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To remove all compression from the section."
+      },
+      {
+        "id": "b",
+        "text": "To replace concrete cover."
+      },
+      {
+        "id": "c",
+        "text": "To resist tensile force and help control cracking where concrete is weak in tension."
+      },
+      {
+        "id": "d",
+        "text": "To make support anchorage unnecessary."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "To remove all compression from the section. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "To replace concrete cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "c": "To resist tensile force and help control cracking where concrete is weak in tension. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+      "d": "To make support anchorage unnecessary. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "To resist tensile force and help control cracking where concrete is weak in tension. Supported by bsi-bending; fundamentals-strength.",
+      "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-bending; fundamentals-strength",
+      "checked_sources": [
+        "bsi-bending",
+        "fundamentals-strength",
+        "detailing-flexural"
+      ]
+    },
+    "explanation": "To resist tensile force and help control cracking where concrete is weak in tension. Supported by the Batch 144 local source boundary: bsi-bending; fundamentals-strength.",
+    "code_citation": "bsi-bending; fundamentals-strength",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-03-009"
   }
 }

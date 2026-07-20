@@ -1,10 +1,10 @@
 {
   "question_id": "27db2b54-35a6-47ed-8252-f568be0d059f",
   "baseline_hash": "sha256:15a50d54641202fc1bac5fb34ff3c099e79818730c54488a3a3d002f919401a8",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
     "parent_article_slug": "transport-nodes-escalators-walkways",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "What is the maximum speed for escalators or passenger conveyances in the checked BP 344 text?",
+    "text": "An architect places warning tactile domes along a transit platform. BP 344 specifies the domes must be a 600 mm deep field set parallel to and at a specific distance from the platform edge. What is that distance?",
     "options": [
       {
-        "id": "a",
-        "text": "30 m per minute"
+        "id": "A",
+        "text": "150 mm away from the platform edge, parallel to the edge along its full length"
       },
       {
-        "id": "b",
-        "text": "20 m per minute"
+        "id": "B",
+        "text": "600 mm away from the platform edge, parallel to the edge along its full length"
       },
       {
-        "id": "c",
-        "text": "45 m per minute"
+        "id": "C",
+        "text": "300 mm away from the platform edge, parallel to the edge along its full length"
       },
       {
-        "id": "d",
-        "text": "60 m per minute"
+        "id": "D",
+        "text": "500 mm away from the platform edge, parallel to the edge along its full length"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "The source sets the maximum speed at 30 m per minute.",
-    "explanation": "The source sets the maximum speed at 30 m per minute.",
-    "code_citation": "BP 344 2024 IRR, escalators and passenger conveyances",
-    "bloom_level": "remember",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Transport Nodes, Escalators, and Walkways",
-      "LEA Accessibility and Transport Design"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-transport-nodes-escalators-walkways-009"
+    "correct_option_id": "C",
+    "rationale": {
+      "summary": "Warning tactile domes: 600 mm deep field, placed 300 mm from the platform edge.",
+      "explanation": "The 600 mm deep tactile dome field is placed 300 mm back from the platform edge — this is the same 600/300 rule applied at escalator entries. The 300 mm setback gives a user approaching the edge a 300 mm safety buffer after detecting the tactile warning before reaching the drop. Placing domes at 600 mm from the edge creates an excessively large exclusion zone and is not the specified distance.",
+      "common_misconceptions": [
+        "Swapping depth and setback: placing the domes 600 mm from the edge with a 300 mm field",
+        "Using 150 mm or 500 mm setback distances not found in BP 344"
+      ]
+    },
+    "explanation": "Warning tactile domes at platform edges: 600 mm deep field, set 300 mm from the edge per BP 344.",
+    "code_citation": "BP 344 Appendix A",
+    "bloom_level": "apply",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.75,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

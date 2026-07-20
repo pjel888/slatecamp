@@ -22,5 +22,53 @@
       "detailing-column-ties",
       "detailing-hooks"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "For special transverse reinforcement, what spacing limit is captured?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spacing is not more than one-quarter of the minimum member dimension nor 100 mm."
+      },
+      {
+        "id": "b",
+        "text": "Spacing is not more than the full member dimension only."
+      },
+      {
+        "id": "c",
+        "text": "Spacing is always the same as ordinary non-seismic tie spacing."
+      },
+      {
+        "id": "d",
+        "text": "Spacing has no maximum if hooks are 135 deg."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Spacing is not more than one-quarter of the minimum member dimension nor 100 mm. This stays inside the Batch 146 local source boundary for Column Ties and Transverse Confinement.",
+      "b": "Spacing is not more than the full member dimension only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "c": "Spacing is always the same as ordinary non-seismic tie spacing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "d": "Spacing has no maximum if hooks are 135 deg. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "correct": "Spacing is not more than one-quarter of the minimum member dimension nor 100 mm. Supported by detailing-column-ties.",
+      "takeaway": "For Column Ties and Transverse Confinement, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-column-ties",
+      "checked_sources": [
+        "detailing-column-ties",
+        "detailing-hooks"
+      ]
+    },
+    "explanation": "Spacing is not more than one-quarter of the minimum member dimension nor 100 mm. Supported by the Batch 146 local source boundary: detailing-column-ties.",
+    "code_citation": "detailing-column-ties",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-007-04-005"
   }
 }

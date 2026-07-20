@@ -8,37 +8,31 @@
       "question_id": "ba306410-605d-422b-a815-5f4f493fa86a",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "According to UAP Document 301, the contractor's one-year Guarantee Bond period begins running from which date?",
+      "text": "Under CIAP Document 102, what percentage is tied to substantial completion?",
       "options": [
         {
           "id": "a",
-          "text": "From the contract commencement date, which is often misunderstood as the start of the bond period"
+          "text": "95% of the work"
         },
         {
           "id": "b",
-          "text": "From the date of Final Completion when all work is finished, ensuring all contractual obligations are met"
+          "text": "50% of the contract only"
         },
         {
           "id": "c",
-          "text": "From the date of final acceptance/completion of the work"
+          "text": "10% retention"
         },
         {
           "id": "d",
-          "text": "From the date the owner first occupies the project, which is a common misconception"
+          "text": "15% performance bond"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "b": "Incorrect. The guarantee period runs from Substantial Completion, not Final Completion. This distinction is crucial because Final Completion may occur months later, yet the guarantee countdown begins earlier.",
-        "d": "Incorrect. While owner occupancy typically follows Substantial Completion, the guarantee period date is established by architect certification of Substantial Completion, not the actual occupancy date.",
-        "correct": "UAP Document 301 defines the Contractor Guarantee Bond (30% of contract price) as running for one year from the date of final acceptance/completion of the work. This establishes Substantial Completion as the critical milestone for warranty period commencement.",
-        "takeaway": "The contractor's one-year Guarantee Bond period begins from the date of Substantial Completion per UAP Document 301 Section 33, not from Final Completion."
-      },
+      "rationale": "CIAP Document 102 uses ninety-five percent completion plus the normal-use condition.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CTR-017-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.906822+00:00",
       "content_hash": "sha256:ce2cfb767df1857affd9c96eed25dce2df903d24d70cffdb4378a1d7445fb3cf"
     },
     {
       "question_id": "08f01615-ad4e-4e4c-8ab0-51df28aa7a05",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "The architect is preparing to issue the Certificate of Final Completion. At this point, which of the following is true?",
+      "text": "What must also be true under the CIAP substantial-completion test?",
       "options": [
         {
           "id": "a",
-          "text": "The contractor's Guarantee Bond is ending because Final Completion has been reached"
+          "text": "Remaining work must not prevent normal use of the completed portion"
         },
         {
           "id": "b",
-          "text": "The contractor's Guarantee Bond period runs from the date of final acceptance/completion, which occurs at or near Final Completion certification"
+          "text": "The contractor must have no punch-list items at all"
         },
         {
           "id": "c",
-          "text": "The contractor's one-year Guarantee Bond began when Substantial Completion was certified and is now nearing its end"
+          "text": "The building permit must be newly issued"
         },
         {
           "id": "d",
-          "text": "Both Substantial and Final Completion certifications trigger separate one-year guarantee periods"
+          "text": "The architect's fee must be fully paid"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "b": "Incorrect. The language is confusing. The guarantee period began at Substantial Completion and runs forward one year from that date. If Final Completion is months after Substantial Completion, the guarantee period is not 'nearing its end' but has already been running for those months.",
-        "d": "Incorrect. Only one Guarantee Bond period exists, and it runs from Substantial Completion. Final Completion does not trigger a separate or additional warranty period.",
-        "correct": "The Guarantee Bond period runs from Substantial Completion, not Final Completion. By the time Final Completion is certified, the guarantee period may be several months underway and approaching its one-year expiration date. Final Completion does not reset or extend the guarantee period; it merely marks the end of punch list work and the architect's final inspection.",
-        "takeaway": "The one-year Guarantee Bond period began running from the earlier Substantial Completion date and continues unchanged at Final Completion—Final Completion does not reset or extend the warranty period."
-      },
+      "rationale": "Substantial completion depends on usability, not only percentage.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-017-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.900851+00:00",
       "content_hash": "sha256:3a20db729a8323aee07e30fe9c01a5a47d6c8ebf6760064fbec551330cb5293d"
     },
     {
       "question_id": "090046f3-3afe-4725-9bbe-76b0fafa3cca",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "What is the primary difference between Substantial Completion and Final Completion in terms of the architect's certification authority?",
+      "text": "What is source-safe about owner use of completed portions before all work is complete?",
       "options": [
         {
           "id": "a",
-          "text": "Substantial Completion requires owner approval; Final Completion does not, which can lead to disputes over project status"
+          "text": "Use does not automatically accept nonconforming work"
         },
         {
           "id": "b",
-          "text": "Substantial Completion is certified when occupancy-readiness is established; Final Completion is certified when all work and punch list items are completed"
+          "text": "Use cancels all defects automatically"
         },
         {
           "id": "c",
-          "text": "Substantial Completion is issued by the engineer; Final Completion is issued by the architect, which reflects their respective roles in the project"
+          "text": "Use replaces all contract documents"
         },
         {
           "id": "d",
-          "text": "Substantial Completion is based on owner satisfaction; Final Completion is based on contract time and cost, which are critical metrics for project success"
+          "text": "Use creates a new professional license"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. The architect certifies both milestones under standard contracts. The engineer may provide technical verification of some items, but the architect issues the certificates.",
-        "d": "Incorrect. Both certifications are based on work completion and status, not on owner satisfaction (subjective) or contract cost/time (administrative).",
-        "correct": "The architect's certification basis differs for each milestone. Substantial Completion is certified based on the objective criterion of whether the work has progressed sufficiently that the owner can occupy and use the project for its intended purpose. Final Completion is certified when all remaining work, including punch list items and defect corrections, is finished and documented.",
-        "takeaway": "Substantial Completion is certified when occupancy-readiness is established despite remaining punch list items; Final Completion is certified when all work and corrections are completed."
-      },
+      "rationale": "CIAP Document 102 allows use but does not deem it acceptance of incomplete or nonconforming work.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-017-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.904816+00:00",
       "content_hash": "sha256:6437dbeb615b88b9add709c300503d0faa3ef38f13cb02c73cc868be8ef3c29e"
     },
     {
       "question_id": "88eb0507-8a5b-494c-96a8-78d2c4211ca7",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "A contractor completes all construction work by the contract completion date and requests Final Completion certification. The architect has inspected the work and issued a Certificate of Substantial Completion on that same date. The contract requires payment of liquidated damages of 0.1% per day for delays past the completion date. What is the contractor's exposure for liquidated damages?",
+      "text": "What happens if a written acknowledgement date conflicts with actual substantial completion under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "The contractor owes liquidated damages for each day of delay from the contract start date, which is a misunderstanding of the contract terms."
+          "text": "The document date is not controlling if earlier substantial completion is shown, subject to the source exception"
         },
         {
           "id": "b",
-          "text": "Zero, because Substantial Completion was achieved on the contract completion date, and delay damages end at Substantial Completion"
+          "text": "The document always controls in every case"
         },
         {
           "id": "c",
-          "text": "The contractor owes liquidated damages until Final Completion is certified, regardless of Substantial Completion date, which could lead to disputes over contract interpretation."
+          "text": "The contractor loses all rights immediately"
         },
         {
           "id": "d",
-          "text": "The contractor owes liquidated damages prorated to the percentage of work remaining, which is not typically how liquidated damages are calculated."
+          "text": "The OBO issues the payment certificate"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Liquidated damages do not extend to Final Completion. Final Completion involves correcting defects, which is a separate obligation, typically with a deadline stated in the punch list or final completion requirements.",
-        "d": "Incorrect. Liquidated damages are assessed on delay in achieving Substantial Completion, not on percentage of remaining work.",
-        "correct": "Liquidated damages for delay under standard construction contracts end at Substantial Completion, not Final Completion. If Substantial Completion is achieved by the contract completion date, the contractor incurs no delay damages. The punch list and Final Completion phase are a separate performance period with different risk allocation.",
-        "takeaway": "Liquidated damages for delay end at Substantial Completion—if Substantial Completion is achieved by the contract date, zero delay damages are owed regardless of Final Completion timing."
-      },
+      "rationale": "The source says the certificate date is not controlling if substantial completion occurred earlier, unless accepted without timely written exceptions.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-017-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.899546+00:00",
       "content_hash": "sha256:e1e484917de862bbf404f399443d1caa65e88e6bf7ddf9a240f02d31bb046e34"
     },
     {
       "question_id": "56fafee3-4eb6-4f64-81d9-3d6fd0580cc9",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "After Substantial Completion certification, a defect is discovered in mechanical systems that requires significant rework. This defect was not visible during the architect's inspection and is now discovered during the owner's use of the building. Can this defect be addressed under the contractor's Guarantee Bond rather than requiring immediate correction as a punch list item?",
+      "text": "When must the owner provide the punch list under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "No, all defects must be corrected before Substantial Completion certification is issued, regardless of their visibility during inspection"
+          "text": "Not later than 30 days from substantial completion"
         },
         {
           "id": "b",
-          "text": "Yes, defects discovered after Substantial Completion within the one-year Guarantee Bond period fall under warranty coverage, not punch list correction"
+          "text": "Before notice to proceed"
         },
         {
           "id": "c",
-          "text": "Only if the owner accepts the defect in writing and claims it later under insurance, which must be filed within a specific timeframe"
+          "text": "After one year from final payment only"
         },
         {
           "id": "d",
-          "text": "No, mechanical defects are the architect's responsibility, not the contractor's, unless specified otherwise in the contract"
+          "text": "Only after a design competition"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Owner acceptance or insurance does not change the contractor's warranty obligation. The guarantee bond is the contractor's direct liability mechanism.",
-        "d": "Incorrect. Mechanical defects are the contractor's responsibility as they relate to equipment and workmanship quality. The architect supervises and certifies; the contractor performs and guarantees.",
-        "correct": "The Guarantee Bond period (one year from Substantial Completion per UAP Document 301) is expressly designed to address defects in materials, equipment, and workmanship discovered after Substantial Completion. If a defect is latent and discovered after Substantial Completion, it is warranty work, not punch list work. The contractor is liable to correct it under the guarantee bond within the one-year period.",
-        "takeaway": "Defects discovered after Substantial Completion within the one-year Guarantee Bond period are warranty work covered by the contractor's guarantee—not punch list correction obligations."
-      },
+      "rationale": "The owner issues the punch list or lists within thirty days from substantial completion.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-017-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.902585+00:00",
       "content_hash": "sha256:81ee7e2daf54ad5947a4465f754c708ab46bcf5dfb6e2ef0074680cafc9f6a7d"
     },
     {
       "question_id": "91f69cee-e84e-4e73-9b06-aceb2acb28cc",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "At the Substantial Completion milestone, which party assumes responsibility for insurance of the building and liability for damage to the work?",
+      "text": "How long is the CIAP Period of Making Good of Known Defects?",
       "options": [
         {
           "id": "a",
-          "text": "The contractor retains full responsibility until Final Completion, ensuring all contractual obligations are met"
+          "text": "Not more than 30 calendar days from receipt of the last allowed punch-list item"
         },
         {
           "id": "b",
-          "text": "The owner assumes responsibility for insurance and risk at Substantial Completion, though contractor remains liable for punch list work"
+          "text": "Exactly one year from final payment"
         },
         {
           "id": "c",
-          "text": "Responsibility is shared equally between owner and contractor until all work is completed, which is a rare but possible arrangement"
+          "text": "Five working days after FSIC"
         },
         {
           "id": "d",
-          "text": "The architect assumes responsibility as the supervising professional, although this is not typically the case in standard contracts"
+          "text": "Three months after final payment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Risk and responsibility do not remain shared; they shift at Substantial Completion. Shared responsibility would create ambiguity and expose both parties to uninsured loss.",
-        "d": "Incorrect. The architect is neither the insured party nor assumes liability for the building. Insurance responsibility rests with the owner and contractor based on possession and control.",
-        "correct": "At Substantial Completion, the owner's right to occupy the project is established, and responsibility for insurance and maintenance of the building shifts to the owner. The contractor retains liability for completing punch list items and correcting defects discovered during the remaining work period until Final Completion, but does not retain property risk or general maintenance responsibility.",
-        "takeaway": "At Substantial Completion, the owner assumes responsibility for insurance and building maintenance, while the contractor remains liable for punch list work and defects until Final Completion."
-      },
+      "rationale": "The CIAP period is not more than thirty calendar days from receipt of the last allowed punch-list item.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-017-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.903335+00:00",
       "content_hash": "sha256:11c0e47b74be7f286801c0922e81f7f09039b527101f6447f8d24546bb7c97b2"
     },
     {
       "question_id": "998d1415-bc87-4bcb-ad4f-0f18b3f7fb5f",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "How should the architect document the distinction between Substantial Completion and Final Completion to protect all parties?",
+      "text": "What is the liquidated-damages boundary after substantial completion under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "Issue a single certificate naming both milestones and the dates they occur, ensuring clarity and legal compliance"
+          "text": "No liquidated damages for delay accrue after substantial completion"
         },
         {
           "id": "b",
-          "text": "Issue separate written certifications for each milestone, clearly specifying the date of Substantial Completion and a later date for Final Completion"
+          "text": "Liquidated damages double after substantial completion"
         },
         {
           "id": "c",
-          "text": "Document only Substantial Completion; Final Completion is implied when all work is done, simplifying the process"
+          "text": "Liquidated damages become the architect's fee"
         },
         {
           "id": "d",
-          "text": "Issue a single final certificate at project end that retroactively dates Substantial Completion, which may lead to disputes"
+          "text": "Liquidated damages are paid to the OBO"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Final Completion must be explicitly documented, not implied. Without written certification, disputes arise about whether punch list items were actually completed and when.",
-        "d": "Incorrect. The Substantial Completion date must be documented contemporaneously when the milestone is reached, not retroactively at project end. Retroactive dating destroys the reliability of the Guarantee Bond commencement date.",
-        "correct": "The architect must issue separate, clearly dated written certifications for Substantial Completion and Final Completion. The Substantial Completion date is critical because it starts the one-year Guarantee Bond period and sets liquidated damages end date. A single combined certificate creates ambiguity and potential disputes over which date applies for warranty and damage calculation purposes.",
-        "takeaway": "The architect must issue separate written certifications for Substantial Completion and Final Completion with clearly specified dates to establish the warranty period start date and protect all parties."
-      },
+      "rationale": "The source stops delay liquidated damages after substantial completion.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-017-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.904087+00:00",
       "content_hash": "sha256:8e8cc23965beca5b68712e65c848bc4a28221960b9c6c59b95ea21707a4cdee3"
     },
     {
       "question_id": "ea7fd27e-9d8f-4b7a-9ab8-d58320592e1e",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "The contractor has completed 95% of the work at a residential project. Several punch list items remain: two interior door frames require adjustment, paint touch-ups are needed in three rooms, and hardware installation is incomplete on cabinet doors. The owner is ready to move in and begin furniture installation. Can the architect issue a Certificate of Substantial Completion?",
+      "text": "Which threshold belongs to UAP Document 301 in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "No, because all defects must be corrected before any certificate can be issued, ensuring that the project meets all contractual obligations without pending issues"
+          "text": "Not less than 98% of the contract amount, with remaining work minor"
         },
         {
           "id": "b",
-          "text": "Yes, because the owner can occupy and use the space for its intended purpose despite the remaining minor items"
+          "text": "Exactly 95% of the work"
         },
         {
           "id": "c",
-          "text": "Only if the contractor agrees in writing to complete all items within 14 days, and this agreement is notarized to ensure compliance"
+          "text": "Ten percent retention"
         },
         {
           "id": "d",
-          "text": "No, because the architect must wait until Final Completion when all work is done, including all minor and major punch list items"
+          "text": "Fifteen percent payment bond"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "The architect's certification authority does not require contractor consent—it is based on objective occupancy readiness. The contractor must complete punch items by a specified deadline, not as a condition of certification.",
-        "d": "Misunderstands timing. Substantial Completion precedes Final Completion chronologically. The architect certifies Substantial Completion when the work reaches occupancy readiness, then Final Completion later when all items are done.",
-        "correct": "Substantial Completion is defined as the stage when work has progressed sufficiently that the owner can occupy or use the project for its intended purpose, despite minor items remaining. The test is occupancy readiness, not perfection. Door adjustments, paint touch-ups, and hardware installation are typical punch list items that do not prevent occupancy.",
-        "takeaway": "Substantial Completion is certified when the owner can occupy and use the project for its intended purpose despite remaining punch list items—the criterion is occupancy readiness, not perfection."
-      },
+      "rationale": "UAP Document 301 uses a different threshold from CIAP, so the source must be named.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-017-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.905520+00:00",
       "content_hash": "sha256:e665bc7675bb4ed7727ba671bfbe2a29bc279ce5c9d1b75e25839321c2130d82"
     },
     {
       "question_id": "e8c0f76e-bd41-4162-9e9a-25d9a4964f1c",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "The contractor has completed all work. A review of the punch list reveals three remaining items: resetting door hardware (estimated 4 hours), painting a 10-square-meter wall section (estimated 8 hours), and replacing a cracked light fixture (estimated 2 hours). The owner wishes to occupy the space. Has the threshold for Substantial Completion been met?",
+      "text": "What should an LEA answer avoid when comparing CIAP and UAP substantial completion?",
       "options": [
         {
           "id": "a",
-          "text": "No, because any outstanding work disqualifies Substantial Completion certification, regardless of its impact on occupancy"
+          "text": "Mixing the 95% CIAP threshold and 98% UAP threshold without naming the source"
         },
         {
           "id": "b",
-          "text": "Yes, because these minor items do not prevent the owner from occupying and using the space for its intended purpose"
+          "text": "Reading the source named in the question"
         },
         {
           "id": "c",
-          "text": "Only if the total punch list work does not exceed 20 hours of labor, which is not a standard threshold"
+          "text": "Separating substantial and final completion"
         },
         {
           "id": "d",
-          "text": "Only if the owner signs a waiver accepting the incomplete work, which is not typically required"
+          "text": "Checking whether the remaining work prevents normal use"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. No labor-hour threshold for punch list items is specified in contracts. The criterion is whether occupancy is prevented, not work hours.",
-        "d": "Incorrect. Owner consent is not required for the architect to certify Substantial Completion. The architect's determination is based on objective occupancy readiness, not subjective owner waiver.",
-        "correct": "The test for Substantial Completion is occupancy readiness and usability for the intended purpose, not perfection or zero outstanding items. Minor items such as door hardware adjustment, wall painting, and light fixture replacement do not prevent the owner from occupying residential space. These are typical punch list items to be completed after Substantial Completion.",
-        "takeaway": "The threshold for Substantial Completion is occupancy readiness for the intended purpose—minor items remaining (hardware adjustment, painting, fixtures) do not prevent certification."
-      },
+      "rationale": "The two checked sources use different wording and thresholds.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CTR-017-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.901812+00:00",
       "content_hash": "sha256:19d49071d4dea8d3680a4662ac09208af12f046e4d838ded9e5a9738a8a49083"
     },
     {
       "question_id": "fea1b4b4-82f6-4cd9-adec-156b5b0fa190",
       "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
       "topic_id": "79c55eff-8d7b-488f-ba82-8324266014fd",
-      "text": "The architect discovers a structural defect in a completed floor slab one week after issuing the Certificate of Substantial Completion. The contractor has not yet begun Final Completion punch list work. Can the contractor be required to correct this structural defect before the Guarantee Bond period ends?",
+      "text": "A project is usable at 95% completion but still has punch-list corrections. What is the source-safe CIAP conclusion?",
       "options": [
         {
           "id": "a",
-          "text": "No, because the architect has already certified Substantial Completion, and the contractor's obligation to perform has ended, unless otherwise specified in the contract"
+          "text": "It may be substantially complete while punch-list correction remains a separate close-out obligation"
         },
         {
           "id": "b",
-          "text": "Yes, the contractor remains liable to correct the defect either as part of punch list work or under the one-year Guarantee Bond period"
+          "text": "It can never be substantially complete until every minor item is done"
         },
         {
           "id": "c",
-          "text": "Yes, but only if the defect appears on the official punch list before Final Completion certification, and the architect provides written notice"
+          "text": "It automatically has a Certificate of Occupancy"
         },
         {
           "id": "d",
-          "text": "No, because structural defects are the owner's responsibility after occupancy, unless the defect is due to contractor negligence"
+          "text": "It cancels all owner rights"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Defects do not require punch list notation to trigger contractor warranty liability. The Guarantee Bond covers defects discovered within one year from Substantial Completion, whether or not they were itemized on a punch list.",
-        "d": "Incorrect. Structural defects are not owner responsibility post-occupancy. The contractor's Guarantee Bond expressly covers defects in materials, equipment, and workmanship discovered during the warranty period.",
-        "correct": "The contractor's obligation extends beyond Substantial Completion in two ways: (1) the contractor must complete punch list items before Final Completion, and (2) the contractor is liable under the one-year Guarantee Bond period for defects discovered during this warranty period. A structural defect is a warranty claim under the guarantee bond, not a mere punch list item. The contractor must correct it.",
-        "takeaway": "The contractor remains liable for defects discovered within one year from Substantial Completion under the Guarantee Bond, regardless of whether defects appear on the punch list."
-      },
+      "rationale": "CIAP separates substantial completion from punch-list correction and known-defect work.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-017-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.906174+00:00",
       "content_hash": "sha256:3389121e9be68665b63a880556fc113dd59ae11f1b73d1be8d145adfe9eeaa87"
     }
   ]

@@ -2,65 +2,40 @@
   "question_id": "7862044d-ec3f-4930-a490-523b0f93a752",
   "baseline_hash": "sha256:ed9f86db218a855d4a5a9a63c06fee4c9648d23c7b27362ef96ba018009eddbe",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "degenerate-edit-remediation-2026-07-20: prior batch-048 edit was degenerate (1-char garbage option text + nonsensical rationale). Original question was source-correct; restored verbatim with source rationale preserved.",
+  "approved_by": "agent-X1-degenerate-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
     "parent_article_slug": "pd-1096-rule-vii-area-metrics",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "FLAR is the minimum corridor width for required exits.",
-    "checked_markdown_lines": [
-      "PD 1096 IRR refined markdown lines 3009-3138",
-      "PD 1096 IRR refined markdown lines 3750-3825",
-      "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
-        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
-        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
-        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
-        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
-      },
-      {
-        "source_id": "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02",
-        "label": "PD 1096 Rules 7 and 8 - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/Rule 7 _ 8.pdf",
-        "sha256": "sha256:3fd01acd4ec7f37dbff97dba72c107502b46a05f59803df9973dfea62907a55d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/Rule 7 _ 8.md",
-        "refined_markdown_sha256": "sha256:b09a20f30c11dffd69d4a2a11e941d4ed42ad13d539ff0ca194ddb762dced634",
-        "locator": "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
-      }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+    "answer_key_fields_changed": false,
+    "support_status": "degenerate_edit_restored_to_source_correct_original",
+    "source_locator": "Original question in linked-questions.json for article pd-1096-rule-vii-area-metrics; source-correct per article normalized.md controlling-source section.",
+    "local_source_safe_action": "Restored original text, options, correct_option_id, rationale, explanation, and code_citation verbatim from linked-questions.json. No semantic content changed."
   },
   "proposed": {
-    "text": "Which statement best describes FLAR in the Rule VII building-bulk guideline?",
+    "text": "A 500 sq.m. Basic R-2 lot without firewall is to be developed to maximum allowed limits per Table VIII.1. What is the AMBF (Allowable Maximum Building Footprint) in square meters?",
     "options": [
       {
         "id": "a",
-        "text": "FLAR is the primary or initial determinant of building bulk and supports the GFA calculation."
+        "text": "225 sq.m. — 45% of 500 sq.m., applying the TOSL percentage as the building footprint"
       },
       {
         "id": "b",
-        "text": "F"
+        "text": "275 sq.m. — 55% of 500 sq.m., applying the PSO for Basic R-2 without firewall"
       },
       {
         "id": "c",
-        "text": "L"
+        "text": "300 sq.m. — 60% of 500 sq.m., applying the PSO for Basic R-2 with firewall"
       },
       {
         "id": "d",
-        "text": "A"
+        "text": "425 sq.m. — 85% of 500 sq.m., applying the MACA percentage as the building footprint"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "FLAR is the primary or initial determinant of building bulk and supports the GFA calculation. This is supported by FLAR is the fire-resistance period for construction type..",
-    "explanation": "FLAR is the primary or initial determinant of building bulk and supports the GFA calculation. The cited local source family controls this item: FLAR is the fire-resistance period for construction type..",
-    "code_citation": "FLAR is the minimum corridor width for required exits."
+    "correct_option_id": "b",
+    "rationale": "Original question was already source-correct and substantive; the prior edit (source-audited-article-batch-048) was degenerate, with 1-character garbage in 3 of 4 option text fields and a nonsensical rationale. Restored the original verbatim. Original source rationale: AMBF = TLA x PSO. For Basic R-2 without firewall (Table VIII.1): PSO = 55%. AMBF = 500 x 0.55 = 275 sq.m. Option A confuses TOSL (45%) with PSO. Option C uses the firewall PSO (60%) for a project without firewall. Option D confuses MACA (85%) with PSO — MACA covers both building and paving, not just the building footprint.",
+    "explanation": "AMBF = TLA x PSO. PSO is a percentage; AMBF is the actual area in sq.m. Basic R-2 without firewall: PSO=55%, so AMBF = 500 x 0.55 = 275 sq.m. The common trap is using MACA (85%) instead of PSO (55%) to compute AMBF. MACA governs total hard coverage (building + paving), not the building footprint alone.",
+    "code_citation": "PD 1096, Rule VIII, Sec. 803.3; Table VIII.1"
   }
 }

@@ -8,23 +8,23 @@
       "question_id": "2b5a3d97-e04e-4e67-bad4-0ba0e0ce15d6",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "What is the key difference between a perspective drawing and an axonometric drawing?",
+      "text": "Under RA 9266 IRR, a perspective drawing is what?",
       "options": [
         {
           "id": "a",
-          "text": "Perspective has vanishing points where receding lines converge; axonometric has no vanishing points and receding lines remain parallel"
+          "text": "An architectural document/instrument of service."
         },
         {
           "id": "b",
-          "text": "Perspective is 2D while axonometric is 3D, providing different visual representations of spatial relationships"
+          "text": "A contractor payroll record."
         },
         {
           "id": "c",
-          "text": "Axonometric is used for buildings while perspective is used for interiors, reflecting their respective strengths in visual communication"
+          "text": "A land-title certificate."
         },
         {
           "id": "d",
-          "text": "There is no significant difference; the terms are interchangeable, though this is a common misconception"
+          "text": "An occupancy group."
         }
       ],
       "correct_option_id": "a",
@@ -32,14 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct. You identified the critical distinction between these projection types.",
-        "b": "Incorrect. Both are 2D representations of 3D space; neither is inherently 2D or 3D.",
-        "c": "Incorrect. Both are used for buildings and interiors depending on the communication goal.",
-        "d": "Incorrect. These are distinct projection types with different properties and uses.",
-        "correct": "Perspective and axonometric are fundamentally different projection types. Perspective mimics human vision with vanishing points; axonometric is a parallel projection with parallel receding lines. Axonometric is useful for technical accuracy; perspective is more intuitive for spatial communication.",
-        "takeaway": "Use perspective for spatial communication and client presentations (more intuitive). Use axonometric (or orthographic) for technical documentation where dimensions and true relationships must be verified."
-      },
+      "rationale": "RA 9266 IRR lists perspective drawings among architectural documents.",
       "explanation": null,
       "code_citation": "Ching (2016), Sections 2.4–2.6",
       "bloom_level": "understand",
@@ -52,45 +45,38 @@
       "model_id": "ALE-DSGN-011-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.090804+00:00",
       "content_hash": "sha256:28eecc770895d003d22d312f1b027cb9ee25b96ddfa9c172dc4ce4af40f06946"
     },
     {
       "question_id": "2cd15ca4-4f89-4ef9-941e-509052824530",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "A designer is presenting a tall commercial building to city planning officials. Which combination of drawing types would best support the presentation by showing both spatial design intent and regulatory compliance?",
+      "text": "What does PD 1096 RIRR require for the perspective in building plans?",
       "options": [
         {
           "id": "a",
-          "text": "A 2VP street-level perspective alone is sufficient; it shows the building in context, providing a realistic view"
+          "text": "A perspective at convenient scale from bird's-eye or eye-level vantage point."
         },
         {
           "id": "b",
-          "text": "Axonometric drawings alone are best; they show the building clearly without distortion, aiding in understanding spatial relationships"
+          "text": "Only a three-point perspective."
         },
         {
           "id": "c",
-          "text": "Perspective for spatial communication combined with orthographic views (site plan, elevations, sections) for code compliance verification and dimensional accuracy"
+          "text": "Only a furniture catalog image."
         },
         {
           "id": "d",
-          "text": "A bird's eye view 3VP perspective showing the entire site and context, offering a comprehensive overview"
+          "text": "No visual drawing."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. Officials need orthographic views to verify code compliance; perspective alone is insufficient.",
-        "b": "Incorrect. Axonometric lacks the intuitive spatial communication of perspective.",
-        "c": "Correct. You identified the necessary combination of visualization types for complete communication.",
-        "d": "Incorrect. While a bird's eye view provides context, it is not the best primary view for street-level building understanding.",
-        "correct": "A complete presentation includes both perspective (for spatial intent and client communication) and orthographic views (for technical accuracy, code compliance, and regulatory review). Planning officials need to verify setbacks, heights, and dimensional compliance—all done with orthographic views—while stakeholders appreciate the perspective for spatial understanding.",
-        "takeaway": "Always pair perspective with orthographic documentation. Perspective engages stakeholders; orthographic views ensure regulatory compliance and construction clarity. Both are necessary for professional presentations."
-      },
+      "rationale": "PD 1096 RIRR names bird's-eye or eye-level perspective as part of architectural documents.",
       "explanation": null,
       "code_citation": "Professional presentation standards",
       "bloom_level": "analyze",
@@ -103,45 +89,38 @@
       "model_id": "ALE-DSGN-011-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.091993+00:00",
       "content_hash": "sha256:e031fcdce297ba794638d7e36d59314c705f5350efe5644ab4f965a20c498f53"
     },
     {
       "question_id": "3393b4df-eb40-46dd-bbe3-cb795143e92a",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "In a 2VP perspective of a building, the left facade recedes to a vanishing point on the left side of the horizon line, and the right facade recedes to a vanishing point on the right. If the observer moves to the left (laterally), how will the perspective change?",
+      "text": "Can a perspective alone verify dimensions and code compliance?",
       "options": [
         {
           "id": "a",
-          "text": "The vanishing points will move farther apart on the horizon line, altering the perspective view"
+          "text": "No. Use coordinated plans, elevations, sections, schedules and specifications for technical verification."
         },
         {
           "id": "b",
-          "text": "The vanishing points will move closer together; the right VP will move right and the left VP will move left"
+          "text": "Yes, if it is attractive."
         },
         {
           "id": "c",
-          "text": "The vanishing points remain fixed; only the viewer's perception changes, maintaining the original perspective"
+          "text": "Yes, if it has shadows."
         },
         {
           "id": "d",
-          "text": "The left facade will become more prominent and the right facade will recede more steeply, changing the visual balance"
+          "text": "Yes, if it is colored."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. The VPs move away from each other as one facade becomes more frontal and the other more receded.",
-        "b": "Correct. You understood how station point movement affects VP locations.",
-        "c": "Incorrect. Vanishing point positions change relative to the observer's station point.",
-        "d": "Incorrect. While the left facade becomes more prominent, the vanishing point behavior is more specific: the left VP moves left (away from center), and the right VP moves right.",
-        "correct": "As the observer moves left, the viewing angle changes. The left facade becomes more frontal (less receded), so its vanishing point moves farther left; the right facade becomes more receded, so its VP moves farther right. The two VPs move *away* from each other in the direction of the observer's movement.",
-        "takeaway": "Vanishing points are not fixed in space; they change with the observer's position (station point). Moving the station point closer to the building's corner brings the two VPs closer together and toward the center. This is how perspective composition is controlled."
-      },
+      "rationale": "Perspective communicates form, but technical verification requires the rest of the drawing/document set.",
       "explanation": "Incorrect. The VPs move away from each other as one facade becomes more frontal and the other more receded. Correct. You understood how station point movement affects VP locations. Incorrect. Vanishing point positions change relative to the observer's station point. Incorrect. While the left facade becomes more prominent, the vanishing point behavior is more specific: the left VP moves left (away from center), and the right VP moves right. As the observer moves left, the viewing angle changes. The left facade becomes more frontal (less receded), so its vanishing point moves farther left; the right facade becomes more receded, so its VP moves farther right. The two VPs move *away* from each other in the direction of the observer's movement. Vanishing points are not fixed in space; they change with the observer's position (station point). Moving the station point closer to the building's corner brings the two VPs closer together and toward the center. This is how perspective composition is controlled.",
       "code_citation": "Ching (2016), Perspective construction principles",
       "bloom_level": "apply",
@@ -154,45 +133,38 @@
       "model_id": "ALE-DSGN-011-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-05-06T14:56:45.802008+00:00",
+      "updated_at": "2026-07-20T01:13:25.095736+00:00",
       "content_hash": "sha256:96717275d539b0cba2ff63b57615c5501f710318cb0bf1df0ef1cdfa85151d3d"
     },
     {
       "question_id": "5346357d-7895-42ea-bfed-656179c3db6d",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "Can accurate dimensions (length, width, height) be reliably extracted from a perspective drawing for code compliance verification?",
+      "text": "Which drawing is the better source for room or functional-space identification?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, perspective drawings preserve scale and can be used for dimensional verification, which is a common misconception"
+          "text": "Scaled floor plan."
         },
         {
           "id": "b",
-          "text": "No, perspective distorts distances due to vanishing points; orthographic views (plan, elevation, section) must be used for accurate dimensions"
+          "text": "Perspective alone."
         },
         {
           "id": "c",
-          "text": "Yes, but only if the scale bar is clearly marked on the perspective, which is rarely the case"
+          "text": "Marketing poster."
         },
         {
           "id": "d",
-          "text": "Dimensions can be extracted from perspective using specialized measurement techniques, though this is not standard practice"
+          "text": "Contractor invoice."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. Perspective does not preserve true scale for all elements; only orthographic views do.",
-        "b": "Correct. You understand that perspective is for communication, not dimensional accuracy.",
-        "c": "Incorrect. Even with a scale bar, perspective distortion prevents reliable dimension extraction.",
-        "d": "Incorrect. Perspective inherently distorts dimensions; specialized techniques cannot overcome this fundamental property.",
-        "correct": "Perspective drawings inherently distort dimensions due to vanishing point convergence. Objects appear smaller with distance, and parallel edges converge. Accurate dimensions must be extracted from orthographic views (plan, elevation, section), which are true to scale and show parallel edges as parallel.",
-        "takeaway": "Use perspective for spatial communication and presentations. Use orthographic (plan, elevation, section) for code compliance verification, dimensional accuracy, and construction documentation. Always provide both types of drawings in a complete design package."
-      },
+      "rationale": "PD 1096 RIRR calls for scaled floor plans showing rooms or functional spaces.",
       "explanation": null,
       "code_citation": "Drawing standards; technical documentation principles",
       "bloom_level": "analyze",
@@ -205,45 +177,38 @@
       "model_id": "ALE-DSGN-011-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.092964+00:00",
       "content_hash": "sha256:b4671a2411fadf2776eb1fae485ae857871d7f1957d08e877fae1115b9215494"
     },
     {
       "question_id": "41ec46bc-da0b-460c-b01c-1a052d3c737b",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "A perspective drawing of a building corner shows the left facade receding to VP-Left at coordinates (50 mm, 150 mm) on the drawing, and the right facade receding to VP-Right at (200 mm, 150 mm). Both vanishing points are at the same vertical height (150 mm). What can you infer about the observer's position and eye level?",
+      "text": "Which answer best describes the role of perspective in the permit/document set?",
       "options": [
         {
           "id": "a",
-          "text": "The observer is positioned at a high elevation, looking down at the building, which may affect the perception of scale"
+          "text": "It communicates the proposed building visually as part of the architectural documents."
         },
         {
           "id": "b",
-          "text": "The observer is at ground level, looking up at the building, which can exaggerate vertical proportions"
+          "text": "It replaces all specifications."
         },
         {
           "id": "c",
-          "text": "The observer is at eye level (approximately human height, 1.5 m above finished grade), as both VPs lie on the same horizontal horizon line"
+          "text": "It determines the permit fee by itself."
         },
         {
           "id": "d",
-          "text": "The observer's eye level cannot be determined from vanishing point positions alone, as additional context is needed"
+          "text": "It is unrelated to architectural practice."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. An elevated bird's eye view would have the VPs lower on the drawing (horizon line below the center).",
-        "b": "Incorrect. A worm's eye view (looking up) would show vertical edges converging upward to a third VP above the horizon.",
-        "c": "Correct. You inferred the eye level from the horizon line defined by the VPs.",
-        "d": "Incorrect. VP positions directly indicate the horizon line position and therefore the observer's eye level.",
-        "correct": "Both vanishing points at the same vertical height (150 mm) indicate they lie on the same horizontal line, which is the horizon line. The horizon line represents the observer's eye level. If both VPs are at the same height, the observer is at a standard level view, approximately human eye height (1.5 m).",
-        "takeaway": "The vertical position of vanishing points on the drawing corresponds to the observer's eye level. VPs at the vertical center = human eye level. VPs lower on the page = elevated viewpoint. VPs higher on the page = depressed (low) viewpoint."
-      },
+      "rationale": "The checked sources treat perspective as part of architectural documentation.",
       "explanation": null,
       "code_citation": "Perspective geometry and construction principles",
       "bloom_level": "analyze",
@@ -256,45 +221,38 @@
       "model_id": "ALE-DSGN-011-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.096630+00:00",
       "content_hash": "sha256:f9a149115fdcbb4b9d95ce01e2ebb9698b84a46e79be43000e5adc875a453cba"
     },
     {
       "question_id": "621b2177-a0f5-488e-aec4-e2d91ecdb740",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "A perspective drawing shows a building viewed from a street corner, with two visible facades receding at angles to the left and right. The edges of both facades converge toward two distinct points on the horizon line. What type of perspective is this?",
+      "text": "Which vantage points are source-backed in PD 1096 RIRR?",
       "options": [
         {
           "id": "a",
-          "text": "One-point perspective (1VP)"
+          "text": "Bird's-eye view and eye level."
         },
         {
           "id": "b",
-          "text": "Two-point perspective (2VP)"
+          "text": "Only worm's-eye view."
         },
         {
           "id": "c",
-          "text": "Three-point perspective (3VP)"
+          "text": "Only interior one-point view."
         },
         {
           "id": "d",
-          "text": "Axonometric perspective"
+          "text": "Only axonometric view."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. 1VP has one vanishing point and is used for frontal views where one face is parallel to the picture plane.",
-        "b": "Correct. You identified the 2VP configuration correctly.",
-        "c": "Incorrect. 3VP would include a third (vertical) vanishing point, making vertical lines converge as well.",
-        "d": "Incorrect. Axonometric is not a true perspective; receding lines remain parallel and do not converge.",
-        "correct": "Two visible building facades with two vanishing points on the horizon line define 2VP perspective. This is the standard view for showing a building corner and is the most common exterior perspective type in architectural practice.",
-        "takeaway": "2VP perspective is most common for building exterior views. Count the vanishing points on the horizon line: one point = 1VP, two points = 2VP. This is a quick identification method."
-      },
+      "rationale": "PD 1096 RIRR names bird's-eye and eye-level vantage points.",
       "explanation": "Incorrect. 1VP has one vanishing point and is used for frontal views where one face is parallel to the picture plane. Correct. You identified the 2VP configuration correctly. Incorrect. 3VP would include a third (vertical) vanishing point, making vertical lines converge as well. Incorrect. Axonometric is not a true perspective; receding lines remain parallel and do not converge. Two visible building facades with two vanishing points on the horizon line define 2VP perspective. This is the standard view for showing a building corner and is the most common exterior perspective type in architectural practice. 2VP perspective is most common for building exterior views. Count the vanishing points on the horizon line: one point = 1VP, two points = 2VP. This is a quick identification method.",
       "code_citation": "Ching (2016)",
       "bloom_level": "remember",
@@ -307,45 +265,38 @@
       "model_id": "ALE-DSGN-011-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-05-06T14:56:45.918143+00:00",
+      "updated_at": "2026-07-20T01:13:25.097382+00:00",
       "content_hash": "sha256:878d6a4b0978f7ccb559aab4aebb3e5d77dc2e8e6d2fd1f4cd6675f39ed2b1eb"
     },
     {
       "question_id": "2d141d4d-7297-478a-9b45-eb77ec01b0d4",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "A 3VP perspective of a tall building shows the left and right facades receding to two vanishing points on the horizon line, and the vertical edges of the building receding upward to a third vanishing point above the horizon line. What viewing condition creates this effect?",
+      "text": "What should you avoid if the question does not provide drawing-theory support?",
       "options": [
         {
           "id": "a",
-          "text": "The observer is at eye level at the base of the building, viewing it directly"
+          "text": "Over-answering with one-point/two-point/three-point taxonomy."
         },
         {
           "id": "b",
-          "text": "The observer is positioned far above the building, looking down (bird's eye view)"
+          "text": "Checking the source-backed document role."
         },
         {
           "id": "c",
-          "text": "The observer is at ground level looking up at the building (worm's eye view)"
+          "text": "Using the permit-document list."
         },
         {
           "id": "d",
-          "text": "The observer is positioned at the building's corner on the opposite side"
+          "text": "Coordinating drawings."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. Eye-level view produces 2VP perspective (left and right facades converge on the horizon).",
-        "b": "Incorrect. A bird's eye view has a third VP *below* the horizon line, not above.",
-        "c": "Correct. You identified the worm's eye view creating 3VP perspective with vertical convergence.",
-        "d": "Incorrect. This would also produce 2VP (unless the viewpoint is elevated or depressed).",
-        "correct": "When viewing a tall building from ground level, looking upward, the vertical edges appear to converge toward a point above the horizon line. This creates a third vanishing point. The view emphasizes height and can create a dramatic effect but introduces distortion that may not always appear realistic.",
-        "takeaway": "3VP perspective with upward convergence = looking up at a tall object from ground level (worm's eye). This is used for dramatic effect but can appear distorted. Use 2VP perspective for most architectural presentations unless dramatic height emphasis is the goal."
-      },
+      "rationale": "The source-backed issue in this batch is documentation and vantage point, not full projection theory.",
       "explanation": "Incorrect. Eye-level view produces 2VP perspective (left and right facades converge on the horizon). Incorrect. A bird's eye view has a third VP *below* the horizon line, not above. Correct. You identified the worm's eye view creating 3VP perspective with vertical convergence. Incorrect. This would also produce 2VP (unless the viewpoint is elevated or depressed). When viewing a tall building from ground level, looking upward, the vertical edges appear to converge toward a point above the horizon line. This creates a third vanishing point. The view emphasizes height and can create a dramatic effect but introduces distortion that may not always appear realistic. 3VP perspective with upward convergence = looking up at a tall object from ground level (worm's eye). This is used for dramatic effect but can appear distorted. Use 2VP perspective for most architectural presentations unless dramatic height emphasis is the goal.",
       "code_citation": "Ching (2016)",
       "bloom_level": "apply",
@@ -358,45 +309,38 @@
       "model_id": "ALE-DSGN-011-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-05-06T14:56:46.033806+00:00",
+      "updated_at": "2026-07-20T01:13:25.098115+00:00",
       "content_hash": "sha256:e62ecd73778878e02b354235843de9508d2af43b914ae624038621e0cf2d31d7"
     },
     {
       "question_id": "741ca33b-add8-49ac-994e-7336e2b589a9",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "A designer is preparing a presentation for a client showing a new building. The designer wants to communicate spatial relationships and human-sclea interaction with the street. Which perspective type and viewpoint would be most appropriate?",
+      "text": "Which document group should accompany a perspective for construction verification?",
       "options": [
         {
           "id": "a",
-          "text": "2VP perspective from a bird's eye view (elevated viewpoint above the building), which may not effectively convey human-scale interaction"
+          "text": "Plans, elevations, sections, schedules and specifications."
         },
         {
           "id": "b",
-          "text": "2VP perspective from street level (eye level ≈1.5 m above finished grade), looking at the building corner from the opposite side of the street"
+          "text": "A perspective only."
         },
         {
           "id": "c",
-          "text": "1VP perspective from directly in front of the building's main facade, providing a straightforward view but limited spatial context"
+          "text": "A social-media image only."
         },
         {
           "id": "d",
-          "text": "Axonometric drawing showing the building in plan view with equal emphasis on all sides, which may not highlight street-level interactions"
+          "text": "A cost table only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. An elevated bird's eye view is better for site planning or context but does not communicate human-scale street experience.",
-        "b": "Correct. You selected the viewpoint that best communicates pedestrian experience and spatial relationships.",
-        "c": "Incorrect. A frontal 1VP view shows only one facade and limited depth; corner view (2VP) is more informative.",
-        "d": "Incorrect. Axonometric from plan view is technical and does not convey spatial experience or human interaction.",
-        "correct": "A street-level 2VP perspective (human eye height, viewing from across the street) shows the building in context, emphasizes pedestrian-scale interaction, and is most intuitive for client communication. The corner view (2VP) shows multiple facades and spatial relationship to the street.",
-        "takeaway": "For design presentations to clients and stakeholders, use 2VP perspective at street level (human eye height). This is the most intuitive viewpoint for spatial understanding and emotional response to design."
-      },
+      "rationale": "PD 1096 RIRR and RA 9266 IRR place perspective within a broader architectural-document set.",
       "explanation": null,
       "code_citation": "Architectural practice; presentation standards",
       "bloom_level": "apply",
@@ -409,45 +353,38 @@
       "model_id": "ALE-DSGN-011-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.098925+00:00",
       "content_hash": "sha256:96a4d4d05c38f218db4ee4db30b15014cff0d803ecf798b5dc23e3a56401d239"
     },
     {
       "question_id": "b7342d6c-c31c-4215-b26c-37a52422f787",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "In a perspective drawing, what does the horizon line represent?",
+      "text": "When signed and sealed, perspective drawings fall under what professional rule?",
       "options": [
         {
           "id": "a",
-          "text": "The edge of the ground plane where it meets the building, often used as a reference for elevation"
+          "text": "Architectural-document responsibility under RA 9266 IRR."
         },
         {
           "id": "b",
-          "text": "The observer's eye level; all vanishing points in 1VP and 2VP perspectives lie on this line"
+          "text": "No professional responsibility."
         },
         {
           "id": "c",
-          "text": "The base line of the building foundation, crucial for establishing the ground level"
+          "text": "Contractor-only liability."
         },
         {
           "id": "d",
-          "text": "An arbitrary line used for composition; its height does not affect the perspective, but it can guide visual balance"
+          "text": "Land-use zoning only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. The horizon line is not the ground edge; it is the eye-level line in the observer's vision.",
-        "b": "Correct. You understand the horizon line as the eye-level reference in perspective.",
-        "c": "Incorrect. The building's foundation base is separate from the horizon line, which is defined by the observer's eye height.",
-        "d": "Incorrect. The horizon line position critically determines vanishing point locations and the perspective appearance.",
-        "correct": "The horizon line is the horizontal line representing the observer's eye level. In 1VP and 2VP perspectives, all vanishing points are located on the horizon line. Moving the horizon line up or down changes the eye level and the resulting perspective image.",
-        "takeaway": "The horizon line = observer's eye level ≈ 1.5 m above finished ground (typical human eye height). All 1VP and 2VP vanishing points must lie on this line."
-      },
+      "rationale": "Architectural documents issued under seal carry architect-of-record responsibility.",
       "explanation": null,
       "code_citation": "Ching (2016), Sections 2.4–2.6",
       "bloom_level": "remember",
@@ -460,30 +397,30 @@
       "model_id": "ALE-DSGN-011-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.093878+00:00",
       "content_hash": "sha256:007586188f23b88ba21bde4dda9563d44c989763cbf7f6e917cb0b77856b6138"
     },
     {
       "question_id": "9b322207-7a48-4c48-b653-5eb50edbaa6e",
       "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
       "topic_id": "adf87263-2940-45aa-9cad-bad5f4c4263f",
-      "text": "A one-point perspective shows an interior corridor view looking straight ahead. The front wall of the corridor is parallel to the picture plane. Where is the vanishing point located?",
+      "text": "Which answer is source-safe for a planning-official presentation?",
       "options": [
         {
           "id": "a",
-          "text": "At the center of the horizon line, directly in front of the observer's viewpoint"
+          "text": "Use perspective for visual communication and technical drawings for verification."
         },
         {
           "id": "b",
-          "text": "In the upper left corner of the drawing, which is a common misconception in perspective drawing"
+          "text": "Use perspective alone for all compliance decisions."
         },
         {
           "id": "c",
-          "text": "At the bottom of the drawing where the floor and walls converge, often misunderstood in perspective analysis"
+          "text": "Use only a cost estimate."
         },
         {
           "id": "d",
-          "text": "1VP perspectives do not have a vanishing point; all lines remain parallel, which is incorrect for this type of perspective"
+          "text": "Use only a room schedule without plans."
         }
       ],
       "correct_option_id": "a",
@@ -491,14 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct. You understand 1VP vanishing point placement.",
-        "b": "Incorrect. The vanishing point is on the horizon line, typically at the center of the view, not in a corner.",
-        "c": "Incorrect. The convergence of floor and walls toward a center point illustrates where the vanishing point is, but the VP itself is on the horizon line.",
-        "d": "Incorrect. 1VP perspectives by definition have one vanishing point; all receding lines converge to it.",
-        "correct": "In 1VP, the single vanishing point lies on the horizon line at the center of the observer's direct line of sight. Receding parallel lines (corridor walls, floor, ceiling edges) all converge toward this central point.",
-        "takeaway": "In 1VP perspective: look for the point at the center of the horizon line where all receding lines converge. This point is the vanishing point. A corridor, street, or hallway viewed straight-on is a classic 1VP composition."
-      },
+      "rationale": "Perspective communicates design intent; technical drawings and specifications verify requirements.",
       "explanation": null,
       "code_citation": "Ching (2016)",
       "bloom_level": "understand",
@@ -511,7 +441,7 @@
       "model_id": "ALE-DSGN-011-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.094770+00:00",
       "content_hash": "sha256:b8d2f2e9b4d44a1d65b42b1dcb836a779f44b597044d5537f54d1080e90c70ae"
     }
   ]

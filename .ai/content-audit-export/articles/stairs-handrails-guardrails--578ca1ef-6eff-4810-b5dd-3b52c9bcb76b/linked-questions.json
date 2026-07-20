@@ -8,31 +8,31 @@
       "question_id": "cb55b274-b204-48c1-90f0-bcb56780e44c",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Based on the specifications in \"Stairs Handrails Guardrails\", if a project requires 1.20 m, what is the correct interpretation?",
+      "text": "What must be provided where staircases occur along an accessible route?",
       "options": [
         {
-          "id": "A",
-          "text": "1.20 m is the minimum/standard requirement"
+          "id": "a",
+          "text": "Complementary ramps, lifts, or escalators."
         },
         {
-          "id": "B",
-          "text": "1.20 m is the maximum permitted value"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "1.20 m applies only to specific conditions"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "1.20 m is an approximate value subject to interpretation"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 1.20 m as the requirement. Context: 1200‑mm width, 1800‑mm landings”**, the text now describes **1.00 m as minimum, ...",
+      "rationale": "The checked local source supports: Complementary ramps, lifts, or escalators.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:11.659998+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.067127+00:00",
       "content_hash": "sha256:dae82ec2d49d785cde3ca371b8b2f192fb54a2955fef13e1144a687a5ca1d51c"
     },
     {
       "question_id": "ee6daee0-0d6d-4545-bfa8-278a0bc1a63d",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "At the top and bottom of an accessible ramp or stair, handrails must extend horizontally beyond the run. What is the required horizontal extension length per BP 344 IRR?",
+      "text": "What tactile warning depth is required at stairs in the checked BP 344 source?",
       "options": [
         {
-          "id": "A",
-          "text": "150 mm horizontal extension at both the top and bottom of each ramp and stair run"
+          "id": "a",
+          "text": "600 mm."
         },
         {
-          "id": "B",
-          "text": "300 mm horizontal extension at the top; the bottom follows the slope before going horizontal"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "450 mm horizontal extension at both ends, returning to a wall, post, or floor surface"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "600 mm horizontal extension at both ends, matching the tactile warning strip depth"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Top extension: 300 mm horizontal. Bottom extension: 300 mm plus the slope run, then horizontal — returning to wall/post.",
-        "explanation": "BP 344 IRR requires handrail extensions at both ends of ramps and stairs. At the top: a minimum 300 mm horizontal extension beyond the top riser or ramp end. At the bottom: the handrail continues along the slope (following the ramp or stair angle) for a distance beyond the last riser/ramp end, then provides a 300 mm horizontal portion — so the total bottom extension is more than 300 mm flat. Both extensions must return to a wall, post, or floor to eliminate snag-prone open ends. The 300 mm horizontal portion is the key measurement to memorize.",
-        "common_misconceptions": [
-          "Treating top and bottom extensions as identical flat 300 mm segments — the bottom extension includes a sloped portion before the horizontal 300 mm",
-          "Selecting 600 mm, which is the tactile strip depth — handrail extensions are 300 mm, not 600 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: 600 mm.",
       "explanation": "Handrail extension: 300 mm horizontal at top; at bottom: slope run + 300 mm horizontal, returning to wall/post.",
       "code_citation": "BP 344 IRR, Handrails section",
       "bloom_level": "remember",
@@ -96,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.048950+00:00",
       "content_hash": "sha256:d0bf47b04a0881f1afb017154986a0cbb6a087f3b71f8c0ae28c4269c731db44"
     },
     {
       "question_id": "d758f4aa-de6e-4ea4-97ce-02d449cddabb",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A handrail grip diameter specification appears in BP 344 IRR. What is the required outside diameter range for accessible handrails and grab bars intended for full grip?",
+      "text": "Where are stair warning tactile blocks installed?",
       "options": [
         {
-          "id": "A",
-          "text": "25–32 mm outside diameter, matching standard plumbing pipe dimensions"
+          "id": "a",
+          "text": "300 mm before hazardous areas and at top, bottom, and intermediate landings."
         },
         {
-          "id": "B",
-          "text": "38–45 mm outside diameter, with 40–50 mm wall clearance for mounting"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "50–65 mm outside diameter, providing a more generous grip for weaker users"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "20–38 mm outside diameter, the international standard range for grip rails"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 IRR: handrail outside diameter 38–45 mm; wall clearance 40–50 mm.",
-        "explanation": "BP 344 IRR specifies that handrails and grab bars intended for full grip should have an outside diameter of approximately 38–45 mm — large enough for a secure grip without requiring the fingers to fully encircle the rail, and small enough for users with limited hand strength to hold. The mounting clearance from the wall must be 40–50 mm, preventing the hand from being jammed against the wall surface during use. This diameter range applies to both ramp/stair handrails and toilet grab bars.",
-        "common_misconceptions": [
-          "Selecting 25–32 mm as a handrail range — that is a plumbing pipe dimension, not the BP 344 accessible handrail standard",
-          "Selecting 50–65 mm as a more generous grip — larger diameters actually reduce grip effectiveness for users with weak hands"
-        ]
-      },
+      "rationale": "The checked local source supports: 300 mm before hazardous areas and at top, bottom, and intermediate landings.",
       "explanation": "BP 344 grip diameter: 38–45 mm outside diameter; 40–50 mm wall clearance — both apply to handrails and grab bars.",
       "code_citation": "BP 344 IRR, Handrails section",
       "bloom_level": "remember",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.055715+00:00",
       "content_hash": "sha256:e30326939cf8d3c5bbe6bd743409984dc270cbe396fc7e221d9ee74d9e260c47"
     },
     {
       "question_id": "1ffb0f0b-bc52-4294-b5ef-f654bf35297c",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A compliant accessible vertical core in a public multi-storey building integrates a ramp, an accessible stair, and an elevator. Which combination of clear turning space dimensions is correct for the elevator lobby and the ramp landing?",
+      "text": "What clear width applies to accessible staircases in BP 344?",
       "options": [
         {
-          "id": "A",
-          "text": "Elevator lobby: 1200 × 1400 mm (matching the elevator car interior); ramp landing: 1800 mm length"
+          "id": "a",
+          "text": "1.50 m."
         },
         {
-          "id": "B",
-          "text": "Elevator lobby: 1500–1800 mm clear turning space; ramp landing: 1500–1800 mm length at top/bottom"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "Elevator lobby: 900 × 1200 mm (matching the elevator door clear width and depth); ramp landing: 1200 mm"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "Elevator lobby: 2400 × 2400 mm minimum; ramp landing: 2000 mm minimum for turn-around clearance"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Elevator lobby: 1500–1800 mm clear turning space; ramp landings: 1500–1800 mm at top/bottom per BP 344.",
-        "explanation": "BP 344 IRR specifies that the wheelchair turn is made in the elevator lobby — not inside the car (the car at 1200 × 1400 mm is too small for a turning circle). The lobby must provide 1500–1800 mm clear turning space. Ramp landings at top, bottom, and intermediate points must be 1500–1800 mm in the direction of travel (BP 344 reviewer range). The 1200 × 1400 mm dimension describes the elevator car interior, not the lobby. The lobby serves as the turning space that the small car cannot provide.",
-        "common_misconceptions": [
-          "Confusing elevator car dimensions (1200 × 1400 mm) with lobby turning space — the car is too small for turning; the lobby provides that space",
-          "Selecting 2400 × 2400 mm as the lobby size — that is larger than needed; 1500–1800 mm turning space is the standard"
-        ]
-      },
+      "rationale": "The checked local source supports: 1.50 m.",
       "explanation": "Elevator turning happens in the lobby (1500–1800 mm), not the car. Ramp landings are also 1500–1800 mm at top/bottom.",
       "code_citation": "BP 344 IRR, Elevators; Ramps sections",
       "bloom_level": "apply",
@@ -198,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.052072+00:00",
       "content_hash": "sha256:b046376a2f030a43a75a8dfc42e4e23978fe40f7616a6a436c5172fa378f8cf6"
     },
     {
       "question_id": "4f30a561-0186-4599-a319-8901c186fe2f",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible staircase has a tactile warning strip at the top landing. A site review finds the strip is 600 mm deep but placed directly at the stair nosing edge with no setback. Under BP 344 IRR, is this compliant?",
+      "text": "How often are accessible stair landings provided under the checked BP 344 source?",
       "options": [
         {
-          "id": "A",
-          "text": "Yes — the 600 mm depth is correct and placing the strip at the nosing edge ensures maximum warning proximity"
+          "id": "a",
+          "text": "At intervals of 3 m or less where rest is appropriate."
         },
         {
-          "id": "B",
-          "text": "No — the strip must be installed 300 mm back from the stair edge so the user encounters it before reaching the drop"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "No — the strip must be 300 mm deep and placed 600 mm back from the stair edge"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "Yes — for stairs at landings, the tactile strip may be placed at the nosing edge since the landing is already level"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Non-compliant: the 600 mm depth is correct but the 300 mm setback from the stair edge is missing.",
-        "explanation": "BP 344 IRR specifies: tactile warning strip depth = 600 mm, and the strip must be installed 300 mm before (back from) the hazard edge. The purpose of the 300 mm setback is to ensure the visually impaired user's feet contact the tactile warning before the leading foot reaches the stair edge — providing a step's worth of advance notice. Placing the strip flush with the nosing eliminates this advance warning and the user's first foot on the tactile strip would already be at the edge of the drop. The depth (600 mm) is correct but the 300 mm setback is missing — the installation fails.",
-        "common_misconceptions": [
-          "Swapping depth and setback: 300 mm is the setback distance, not the depth — 600 mm is the depth",
-          "Believing flush placement is acceptable because it is technically at the hazard — the setback is mandatory to provide advance notice"
-        ]
-      },
+      "rationale": "The checked local source supports: At intervals of 3 m or less where rest is appropriate.",
       "explanation": "Both depth (600 mm) and setback (300 mm back from edge) are required — the depth is correct but the missing setback makes this non-compliant.",
       "code_citation": "BP 344 IRR, Tactile Surfaces section",
       "bloom_level": "apply",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.066059+00:00",
       "content_hash": "sha256:dfffdc93dd88067538f0b9a11c99835a5fbc91897d3692619bcb9ffd95cc8710"
     },
     {
       "question_id": "cfd1aa3b-243b-480e-806c-a1e893aea8c0",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 IRR specifies the maximum vertical rise between stair landings for accessible staircases, which is more restrictive than the PD 1096 general stair standard. What are these two values?",
+      "text": "What is the minimum accessible stair landing depth?",
       "options": [
         {
-          "id": "A",
-          "text": "BP 344 accessible stairs: 3.0 m maximum vertical rise; PD 1096 general stairs: 3.6 m maximum"
+          "id": "a",
+          "text": "Equivalent to the clear width of the stair and not less than 1500 mm."
         },
         {
-          "id": "B",
-          "text": "BP 344 accessible stairs: 3.6 m maximum vertical rise; PD 1096 general stairs: 4.0 m maximum"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "BP 344 accessible stairs: 2.4 m maximum vertical rise; PD 1096 general stairs: 3.0 m maximum"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "BP 344 accessible stairs: 4.0 m maximum vertical rise; PD 1096 general stairs: 3.6 m maximum"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 accessible stairs: 3.0 m max vertical rise between landings; PD 1096 general stairs: 3.6 m.",
-        "explanation": "PD 1096 IRR Rule XII allows a maximum vertical distance of 3.6 m between successive stair landings for general stairs. BP 344 is more restrictive for accessible staircases, capping the vertical rise between landings at 3.0 m. This means accessible stairs require more frequent landings — a rest point every 3.0 m of vertical climb, compared to 3.6 m for standard stairs. On the ALE, whenever the question specifies an 'accessible staircase,' use the BP 344 standard of 3.0 m.",
-        "common_misconceptions": [
-          "Applying the PD 1096 3.6 m landing interval to accessible stairs — BP 344 requires the more restrictive 3.0 m",
-          "Swapping the two values — BP 344 is always the stricter of the two standards for accessible design"
-        ]
-      },
+      "rationale": "The checked local source supports: Equivalent to the clear width of the stair and not less than 1500 mm.",
       "explanation": "PD 1096 allows 3.6 m between landings; BP 344 accessible stairs require a landing every 3.0 m — more restrictive.",
       "code_citation": "BP 344 IRR, Stairs section; PD 1096 Rule XII",
       "bloom_level": "analyze",
@@ -300,45 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.069292+00:00",
       "content_hash": "sha256:ea4cf336f98625a572f5fdb86890fa1d9ae63a1878a19dceeeeba313e72e372d"
     },
     {
       "question_id": "5e91345a-9382-4fb3-8a16-ccbcb2f500e8",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under PD 1096 Rule XII, the maximum headroom clearance above the stair tread nosing line is set at a minimum. What is this clearance, and where is it measured?",
+      "text": "What handrail heights apply on BP 344 accessible ramps and stairs?",
       "options": [
         {
-          "id": "A",
-          "text": "1800 mm minimum, measured vertically from the tread nosing to the soffit or overhead obstruction, ensuring compliance with local building codes"
+          "id": "a",
+          "text": "900 mm and 700 mm."
         },
         {
-          "id": "B",
-          "text": "2000 mm minimum, measured vertically from the tread nosing line to the ceiling or overhead obstruction"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "2200 mm minimum, consistent with the projecting sign clearance requirement from BP 344, which is a different standard altogether"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "2400 mm minimum, matching the maximum ATM signage mounting height from BP 344, which is unrelated to stair headroom"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 requires minimum 2000 mm vertical headroom measured from the tread nosing line to any overhead obstruction.",
-        "explanation": "PD 1096 IRR Rule XII specifies a minimum headroom clearance of 2000 mm, measured vertically from the line connecting tread nosings to the underside of any overhead obstruction (ceiling, beam, or soffit). This is a life-safety provision ensuring that occupants of normal stature can traverse stairs without striking their heads. The 2200 mm dimension applies to BP 344 projecting sign clearance — a different standard for a different element. The 2000 mm headroom and 2200 mm sign clearance are frequently tested together as a close-number pair.",
-        "common_misconceptions": [
-          "Selecting 2200 mm as the stair headroom — that is the BP 344 projecting sign clearance, not stair headroom",
-          "Measuring headroom from the step surface (tread flat) rather than the nosing line — the nosing line is the reference"
-        ]
-      },
+      "rationale": "The checked local source supports: 900 mm and 700 mm.",
       "explanation": "PD 1096 stair headroom: 2000 mm from nosing line. Trap: 2200 mm is BP 344 projecting sign clearance — different standard.",
       "code_citation": "PD 1096 Rule XII",
       "bloom_level": "remember",
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.050701+00:00",
       "content_hash": "sha256:3a526962c74422773dc465609de6a1b7b887f8d00887ca9eeaf1f78f3c4bab2c"
     },
     {
       "question_id": "4110f2f1-0865-4fbf-8ebb-c5db64c027e4",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "PD 1096 governs stair geometry as the life-safety baseline, while BP 344 provides the accessibility overlay. For a building that must meet both, what is the correct design approach when the two codes conflict?",
+      "text": "What horizontal handrail extension applies at ramp and stair ends?",
       "options": [
         {
-          "id": "A",
-          "text": "PD 1096 always takes precedence because it is an older law and governs all building construction, which is a common misunderstanding"
+          "id": "a",
+          "text": "300 mm."
         },
         {
-          "id": "B",
-          "text": "Both codes must be satisfied simultaneously; BP 344 adds accessibility requirements on top of PD 1096 life-safety baseline"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "BP 344 always takes precedence because accessibility law supersedes the National Building Code for public buildings, which is not always the case"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "The architect may choose whichever code is easier to comply with on a case-by-case basis for each stair, though this approach may lead to non-compliance"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 = life-safety baseline; BP 344 = accessibility overlay. Both must be satisfied; neither supersedes the other.",
-        "explanation": "The exam mindset for accessible vertical circulation is: PD 1096 sets the life-safety baseline (stair rise/run geometry, exit widths, landing frequency at 3.6 m, enclosure ratings, headroom). BP 344 adds an accessibility overlay that is often more restrictive (dual handrails at 700/900 mm, landing frequency at 3.0 m, tactile warning strips, ramp requirements). When a building must be accessible, every stair and ramp must satisfy both codes simultaneously. The more restrictive of the two provisions governs when they cover the same element — this is not a choice.",
-        "common_misconceptions": [
-          "Treating PD 1096 and BP 344 as alternative choices — both apply simultaneously to accessible buildings",
-          "Believing BP 344 supersedes PD 1096 — neither supersedes the other; both create independent minimum standards"
-        ]
-      },
+      "rationale": "The checked local source supports: 300 mm.",
       "explanation": "Both codes apply simultaneously: PD 1096 sets life-safety minimums; BP 344 overlays accessibility requirements — the stricter governs.",
       "code_citation": "BP 344 IRR; PD 1096",
       "bloom_level": "understand",
@@ -402,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.053304+00:00",
       "content_hash": "sha256:d4b7a79c0e1242a54507962790d7506ae2d6ead3a091849fdb4f42a336c90e1a"
     },
     {
       "question_id": "9c3ac627-e051-4148-80db-b2e77bef0c71",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 IRR, when a ramp or stair is more than 750 mm above adjacent grade, what type of protective element must be installed and at what minimum height?",
+      "text": "When does a protection railing of at least 1100 mm apply?",
       "options": [
         {
-          "id": "A",
-          "text": "A guardrail at 900 mm minimum, consistent with the upper accessible handrail height"
+          "id": "a",
+          "text": "When stairs, ramps, balconies, landings, or porches are more than 750 mm above adjacent grade."
         },
         {
-          "id": "B",
-          "text": "A guardrail at 1000 mm minimum, the general fall-protection threshold used in BP 344"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "A protective railing at 1100 mm minimum, installed in addition to the accessible handrails"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "A guardrail at 1200 mm minimum, matching the accessible ramp and stair clear width dimension"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344: protective railings at 1100 mm minimum when drop exceeds 750 mm — installed in addition to the 700/900 mm accessible handrails.",
-        "explanation": "BP 344 IRR specifies that where ramps, stairs, balconies, or landings are more than 750 mm above adjacent grade, protective railings (guards) must be installed at a minimum height of 1100 mm. This is a separate requirement from the accessible handrails at 700 mm and 900 mm. The guard at 1100 mm prevents falls over the edge; the handrails at 700/900 mm provide gripping support during ambulation. Both must coexist when the drop exceeds 750 mm. The 1100 mm guard height also cross-references PD 1096 guardrail requirements.",
-        "common_misconceptions": [
-          "Treating the 900 mm upper handrail as sufficient for fall protection at high edges — 900 mm is a grip rail, not a guard",
-          "Applying the 1100 mm guard height as a replacement for the 700/900 mm handrails — guards and handrails serve different functions"
-        ]
-      },
+      "rationale": "The checked local source supports: When stairs, ramps, balconies, landings, or porches are more than 750 mm above adjacent grade.",
       "explanation": "1100 mm guard = fall protection at drops >750 mm. This is separate from and additional to the 700/900 mm accessible handrails.",
       "code_citation": "BP 344 IRR, Protective Railings section",
       "bloom_level": "understand",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.071368+00:00",
       "content_hash": "sha256:b4d4f951e5a9e8222a4b9227d047fa470c3497a68d7a3fb9d4c5c1f7f7de198e"
     },
     {
       "question_id": "517c3e8d-83fd-41d2-921a-592b0f972bee",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible staircase under BP 344 requires dual handrails at two heights. What are those two heights measured from the finished tread surface?",
+      "text": "What PD 1096 stair width applies when occupant load is more than 50?",
       "options": [
         {
-          "id": "A",
-          "text": "700 mm and 900 mm above the finished tread surface on both sides of the stair"
+          "id": "a",
+          "text": "Not less than 1.10 m."
         },
         {
-          "id": "B",
-          "text": "800 mm and 1000 mm above the tread nosing line, per PD 1096 general stair requirements"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "800 mm and 900 mm above the finished tread surface, the PD 1096 standard applied to accessible stairs"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "750 mm and 1000 mm above the tread surface, matching the accessible counter and guard rail heights"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 accessible stairs: dual handrails at 700 mm and 900 mm above the finished surface.",
-        "explanation": "BP 344 IRR specifies that accessible staircases (and ramps) require handrails on both sides at two heights: 700 mm (lower rail for children, people of shorter stature, and seated transfer) and 900 mm (upper rail for ambulant adults). This dual-height system is a BP 344 accessibility overlay. PD 1096 general stair handrails are specified in a single band of 800–900 mm above the nosing — a different standard that applies to non-accessible general stairs only. When accessibility is in question on the ALE, always use 700 mm and 900 mm.",
-        "common_misconceptions": [
-          "Citing 800–900 mm (PD 1096 range) for accessible stairs — that range applies to general, non-accessible stairs only",
-          "Treating the two BP 344 heights as alternatives rather than simultaneous requirements — both rails must be present"
-        ]
-      },
+      "rationale": "The checked local source supports: Not less than 1.10 m.",
       "explanation": "Most-tested conflict: BP 344 accessible stairs = 700 mm + 900 mm dual rails; PD 1096 general stairs = 800–900 mm single band.",
       "code_citation": "BP 344 IRR, Stairs/Handrails section",
       "bloom_level": "remember",
@@ -504,45 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.064979+00:00",
       "content_hash": "sha256:1faafc5a64450d6c25ef56d579c981c2dfc223fc8f34542731be1a95e1bf7c32"
     },
     {
       "question_id": "445ad081-1028-4cf0-8b7c-e31679ec219a",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under PD 1096 Rule XII, on which sides of a stairway must handrails be provided, and when must an intermediate handrail be added?",
+      "text": "What PD 1096 stair width may apply when occupant load is 50 or less?",
       "options": [
         {
-          "id": "A",
-          "text": "Handrails on both sides always; an intermediate rail when stair width exceeds 3.00 m, approximately equally spaced"
+          "id": "a",
+          "text": "900 mm."
         },
         {
-          "id": "B",
-          "text": "Handrail on one side only for stairs up to 2.00 m wide; both sides for stairs wider than 2.00 m, unless otherwise specified by local amendments"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "Handrails on both sides only when the stair is an exit stair; single-side handrails for interior stairs, except in residential buildings"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "Handrails on both sides always; an intermediate rail when stair width exceeds 2.00 m, ensuring compliance with safety standards"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096: handrails required on each side; intermediate handrail added when stair width exceeds approximately 3.00 m.",
-        "explanation": "PD 1096 Rule XII requires handrails on each side of all required stairways. When the stair width exceeds approximately 3.00 m, at least one intermediate handrail must be added, positioned approximately equally spaced across the stair width. This ensures no user is more than about 1.5 m from a handrail. This PD 1096 baseline applies to all stairs; BP 344 then adds the dual-height (700/900 mm) requirement specifically for accessible stairs, and requires handrails on both sides regardless of width.",
-        "common_misconceptions": [
-          "Selecting 2.00 m as the intermediate handrail trigger — PD 1096 uses approximately 3.00 m as the threshold",
-          "Limiting handrail requirements to exit stairs only — PD 1096 requires handrails on both sides of all required stairways"
-        ]
-      },
+      "rationale": "The checked local source supports: 900 mm.",
       "explanation": "PD 1096: both sides always; intermediate rail when width exceeds ~3.00 m. BP 344 adds the 700/900 mm dual-height overlay.",
       "code_citation": "PD 1096 Rule XII",
       "bloom_level": "remember",
@@ -555,45 +485,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.489743+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.068199+00:00",
       "content_hash": "sha256:e17dd2867fb4488693b6a5cde7f354122df5939c8f220c13b4dec3aaa2e17a35"
     },
     {
       "question_id": "e63d310f-6be5-4e75-9ab2-56c6b35006a4",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under PD 1096 Rule XII, the maximum headroom clearance above the stair tread nosing line is set at a minimum. What is this clearance, and where is it measured?",
+      "text": "What PD 1096 width may apply to private stairways serving occupant load less than 10?",
       "options": [
         {
-          "id": "A",
-          "text": "1800 mm minimum, measured vertically from the tread nosing to the soffit or overhead obstruction, ensuring safe passage"
+          "id": "a",
+          "text": "750 mm."
         },
         {
-          "id": "B",
-          "text": "2000 mm minimum, measured vertically from the tread nosing line to the ceiling or overhead obstruction"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "2200 mm minimum, consistent with the projecting sign clearance requirement from BP 344, which is a different standard"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "2400 mm minimum, matching the maximum ATM signage mounting height from BP 344, unrelated to stair design"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 requires minimum 2000 mm vertical headroom measured from the tread nosing line to any overhead obstruction.",
-        "explanation": "PD 1096 IRR Rule XII specifies a minimum headroom clearance of 2000 mm, measured vertically from the line connecting tread nosings to the underside of any overhead obstruction (ceiling, beam, or soffit). This is a life-safety provision ensuring that occupants of normal stature can traverse stairs without striking their heads. The 2200 mm dimension applies to BP 344 projecting sign clearance — a different standard for a different element. The 2000 mm headroom and 2200 mm sign clearance are frequently tested together as a close-number pair.",
-        "common_misconceptions": [
-          "Selecting 2200 mm as the stair headroom — that is the BP 344 projecting sign clearance, not stair headroom",
-          "Measuring headroom from the step surface (tread flat) rather than the nosing line — the nosing line is the reference"
-        ]
-      },
+      "rationale": "The checked local source supports: 750 mm.",
       "explanation": "PD 1096 stair headroom: 2000 mm from nosing line. Trap: 2200 mm is BP 344 projecting sign clearance — different standard.",
       "code_citation": "PD 1096 Rule XII",
       "bloom_level": "remember",
@@ -606,45 +529,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.062771+00:00",
       "content_hash": "sha256:faa70f6bb740b4d49834ff9b0bae1efc4edeb3271d7ef13584ba49bb3fb888bd"
     },
     {
       "question_id": "e5a3a35c-13d2-4d3f-8188-3abbc7f95d2d",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under PD 1096 Rule XII, on which sides of a stairway must handrails be provided, and when must an intermediate handrail be added?",
+      "text": "What is the maximum stair riser under the checked PD 1096 provision?",
       "options": [
         {
-          "id": "A",
-          "text": "Handrails on both sides always; an intermediate rail when stair width exceeds 3.00 m, approximately equally spaced"
+          "id": "a",
+          "text": "200 mm."
         },
         {
-          "id": "B",
-          "text": "Handrail on one side only for stairs up to 2.00 m wide; both sides for stairs wider than 2.00 m, ensuring safety and compliance"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "Handrails on both sides only when the stair is an exit stair; single-side handrails for interior stairs, unless otherwise specified"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "Handrails on both sides always; an intermediate rail when stair width exceeds 2.00 m, to maintain accessibility standards"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096: handrails required on each side; intermediate handrail added when stair width exceeds approximately 3.00 m.",
-        "explanation": "PD 1096 Rule XII requires handrails on each side of all required stairways. When the stair width exceeds approximately 3.00 m, at least one intermediate handrail must be added, positioned approximately equally spaced across the stair width. This ensures no user is more than about 1.5 m from a handrail. This PD 1096 baseline applies to all stairs; BP 344 then adds the dual-height (700/900 mm) requirement specifically for accessible stairs, and requires handrails on both sides regardless of width.",
-        "common_misconceptions": [
-          "Selecting 2.00 m as the intermediate handrail trigger — PD 1096 uses approximately 3.00 m as the threshold",
-          "Limiting handrail requirements to exit stairs only — PD 1096 requires handrails on both sides of all required stairways"
-        ]
-      },
+      "rationale": "The checked local source supports: 200 mm.",
       "explanation": "PD 1096: both sides always; intermediate rail when width exceeds ~3.00 m. BP 344 adds the 700/900 mm dual-height overlay.",
       "code_citation": "PD 1096 Rule XII",
       "bloom_level": "remember",
@@ -657,45 +573,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.058114+00:00",
       "content_hash": "sha256:503e53e39ff1af10efeb7828026afc749ec77f1d35492b34567f7251fac826f5"
     },
     {
       "question_id": "8ddecc74-d4bc-4bae-86e4-36f319a2b208",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 IRR, when a ramp or stair is more than 750 mm above adjacent grade, what type of protective element must be installed and at what minimum height?",
+      "text": "What is the minimum stair run under the checked PD 1096 provision?",
       "options": [
         {
-          "id": "A",
-          "text": "A guardrail at 900 mm minimum, consistent with the upper accessible handrail height"
+          "id": "a",
+          "text": "250 mm."
         },
         {
-          "id": "B",
-          "text": "A guardrail at 1000 mm minimum, the general fall-protection threshold used in BP 344"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "A protective railing at 1100 mm minimum, installed in addition to the accessible handrails"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "A guardrail at 1200 mm minimum, matching the accessible ramp and stair clear width dimension"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344: protective railings at 1100 mm minimum when drop exceeds 750 mm — installed in addition to the 700/900 mm accessible handrails.",
-        "explanation": "BP 344 IRR specifies that where ramps, stairs, balconies, or landings are more than 750 mm above adjacent grade, protective railings (guards) must be installed at a minimum height of 1100 mm. This is a separate requirement from the accessible handrails at 700 mm and 900 mm. The guard at 1100 mm prevents falls over the edge; the handrails at 700/900 mm provide gripping support during ambulation. Both must coexist when the drop exceeds 750 mm. The 1100 mm guard height also cross-references PD 1096 guardrail requirements.",
-        "common_misconceptions": [
-          "Treating the 900 mm upper handrail as sufficient for fall protection at high edges — 900 mm is a grip rail, not a guard",
-          "Applying the 1100 mm guard height as a replacement for the 700/900 mm handrails — guards and handrails serve different functions"
-        ]
-      },
+      "rationale": "The checked local source supports: 250 mm.",
       "explanation": "1100 mm guard = fall protection at drops >750 mm. This is separate from and additional to the 700/900 mm accessible handrails.",
       "code_citation": "BP 344 IRR, Protective Railings section",
       "bloom_level": "understand",
@@ -708,45 +617,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.063882+00:00",
       "content_hash": "sha256:790167b0d24b1c9e6b9449d479930eaa4d15538f5146ce8127074c6e1261b6d3"
     },
     {
       "question_id": "60365ebe-02f3-4d1f-afae-421c884a5801",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 IRR specifies the maximum vertical rise between stair landings for accessible staircases, which is more restrictive than the PD 1096 general stair standard. What are these two values?",
+      "text": "What required stairway headroom is given by PD 1096?",
       "options": [
         {
-          "id": "A",
-          "text": "BP 344 accessible stairs: 3.0 m maximum vertical rise; PD 1096 general stairs: 3.6 m maximum"
+          "id": "a",
+          "text": "Not less than 2.00 m."
         },
         {
-          "id": "B",
-          "text": "BP 344 accessible stairs: 3.6 m maximum vertical rise; PD 1096 general stairs: 4.0 m maximum"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "BP 344 accessible stairs: 2.4 m maximum vertical rise; PD 1096 general stairs: 3.0 m maximum"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "BP 344 accessible stairs: 4.0 m maximum vertical rise; PD 1096 general stairs: 3.6 m maximum"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 accessible stairs: 3.0 m max vertical rise between landings; PD 1096 general stairs: 3.6 m.",
-        "explanation": "PD 1096 IRR Rule XII allows a maximum vertical distance of 3.6 m between successive stair landings for general stairs. BP 344 is more restrictive for accessible staircases, capping the vertical rise between landings at 3.0 m. This means accessible stairs require more frequent landings — a rest point every 3.0 m of vertical climb, compared to 3.6 m for standard stairs. On the ALE, whenever the question specifies an 'accessible staircase,' use the BP 344 standard of 3.0 m.",
-        "common_misconceptions": [
-          "Applying the PD 1096 3.6 m landing interval to accessible stairs — BP 344 requires the more restrictive 3.0 m",
-          "Swapping the two values — BP 344 is always the stricter of the two standards for accessible design"
-        ]
-      },
+      "rationale": "The checked local source supports: Not less than 2.00 m.",
       "explanation": "PD 1096 allows 3.6 m between landings; BP 344 accessible stairs require a landing every 3.0 m — more restrictive.",
       "code_citation": "BP 344 IRR, Stairs section; PD 1096 Rule XII",
       "bloom_level": "analyze",
@@ -759,45 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.059340+00:00",
       "content_hash": "sha256:3699dcbf3d0c6e52629ef0b866e5e97c7f0ed87e6a70a963c974d212eb07f287"
     },
     {
       "question_id": "2c55027e-d0ed-4b55-aa0e-399aa91d46eb",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "At the top and bottom of an accessible ramp or stair, handrails must extend horizontally beyond the run. What is the required horizontal extension length per BP 344 IRR?",
+      "text": "When must an exit door swing in the direction of exit travel?",
       "options": [
         {
-          "id": "A",
-          "text": "150 mm horizontal extension at both the top and bottom of each ramp and stair run"
+          "id": "a",
+          "text": "When serving hazardous areas or an occupant load of 50 or more."
         },
         {
-          "id": "B",
-          "text": "300 mm horizontal extension at the top; the bottom follows the slope before going horizontal"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "450 mm horizontal extension at both ends, returning to a wall, post, or floor surface"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "600 mm horizontal extension at both ends, matching the tactile warning strip depth"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Top extension: 300 mm horizontal. Bottom extension: 300 mm plus the slope run, then horizontal — returning to wall/post.",
-        "explanation": "BP 344 IRR requires handrail extensions at both ends of ramps and stairs. At the top: a minimum 300 mm horizontal extension beyond the top riser or ramp end. At the bottom: the handrail continues along the slope (following the ramp or stair angle) for a distance beyond the last riser/ramp end, then provides a 300 mm horizontal portion — so the total bottom extension is more than 300 mm flat. Both extensions must return to a wall, post, or floor to eliminate snag-prone open ends. The 300 mm horizontal portion is the key measurement to memorize.",
-        "common_misconceptions": [
-          "Treating top and bottom extensions as identical flat 300 mm segments — the bottom extension includes a sloped portion before the horizontal 300 mm",
-          "Selecting 600 mm, which is the tactile strip depth — handrail extensions are 300 mm, not 600 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: When serving hazardous areas or an occupant load of 50 or more.",
       "explanation": "Handrail extension: 300 mm horizontal at top; at bottom: slope run + 300 mm horizontal, returning to wall/post.",
       "code_citation": "BP 344 IRR, Handrails section",
       "bloom_level": "remember",
@@ -810,45 +705,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.060513+00:00",
       "content_hash": "sha256:f08892298c64d49bf671d6570d099057faa27ae3d09bee16b22679aaeb3bcf69"
     },
     {
       "question_id": "a84b3445-674d-41cf-b86f-2da27c065277",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A handrail grip diameter specification appears in BP 344 IRR. What is the required outside diameter range for accessible handrails and grab bars intended for full grip?",
+      "text": "How must required exit doors open from the inside?",
       "options": [
         {
-          "id": "A",
-          "text": "25–32 mm outside diameter, matching standard plumbing pipe dimensions"
+          "id": "a",
+          "text": "Without a key or special knowledge or effort."
         },
         {
-          "id": "B",
-          "text": "38–45 mm outside diameter, with 40–50 mm wall clearance for mounting"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "50–65 mm outside diameter, providing a more generous grip for weaker users"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "20–38 mm outside diameter, the international standard range for grip rails"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 IRR: handrail outside diameter 38–45 mm; wall clearance 40–50 mm.",
-        "explanation": "BP 344 IRR specifies that handrails and grab bars intended for full grip should have an outside diameter of approximately 38–45 mm — large enough for a secure grip without requiring the fingers to fully encircle the rail, and small enough for users with limited hand strength to hold. The mounting clearance from the wall must be 40–50 mm, preventing the hand from being jammed against the wall surface during use. This diameter range applies to both ramp/stair handrails and toilet grab bars.",
-        "common_misconceptions": [
-          "Selecting 25–32 mm as a handrail range — that is a plumbing pipe dimension, not the BP 344 accessible handrail standard",
-          "Selecting 50–65 mm as a more generous grip — larger diameters actually reduce grip effectiveness for users with weak hands"
-        ]
-      },
+      "rationale": "The checked local source supports: Without a key or special knowledge or effort.",
       "explanation": "BP 344 grip diameter: 38–45 mm outside diameter; 40–50 mm wall clearance — both apply to handrails and grab bars.",
       "code_citation": "BP 344 IRR, Handrails section",
       "bloom_level": "remember",
@@ -861,45 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.056914+00:00",
       "content_hash": "sha256:7c778530ca4b688d582bfb277430debd064723d1f7d19bb4529a8df8cdd53ed0"
     },
     {
       "question_id": "1f8f6764-16d1-40d1-a3bc-dec64b569285",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A compliant accessible vertical core in a public multi-storey building integrates a ramp, an accessible stair, and an elevator. Which combination of clear turning space dimensions is correct for the elevator lobby and the ramp landing?",
+      "text": "What minimum installed exit door width appears in the checked PD 1096 provision?",
       "options": [
         {
-          "id": "A",
-          "text": "Elevator lobby: 1200 × 1400 mm (matching the elevator car interior); ramp landing: 1800 mm length"
+          "id": "a",
+          "text": "900 mm."
         },
         {
-          "id": "B",
-          "text": "Elevator lobby: 1500–1800 mm clear turning space; ramp landing: 1500–1800 mm length at top/bottom"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "Elevator lobby: 900 × 1200 mm (matching the elevator door clear width and depth); ramp landing: 1200 mm"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "Elevator lobby: 2400 × 2400 mm minimum; ramp landing: 2000 mm minimum for turn-around clearance"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Elevator lobby: 1500–1800 mm clear turning space; ramp landings: 1500–1800 mm at top/bottom per BP 344.",
-        "explanation": "BP 344 IRR specifies that the wheelchair turn is made in the elevator lobby — not inside the car (the car at 1200 × 1400 mm is too small for a turning circle). The lobby must provide 1500–1800 mm clear turning space. Ramp landings at top, bottom, and intermediate points must be 1500–1800 mm in the direction of travel (BP 344 reviewer range). The 1200 × 1400 mm dimension describes the elevator car interior, not the lobby. The lobby serves as the turning space that the small car cannot provide.",
-        "common_misconceptions": [
-          "Confusing elevator car dimensions (1200 × 1400 mm) with lobby turning space — the car is too small for turning; the lobby provides that space",
-          "Selecting 2400 × 2400 mm as the lobby size — that is larger than needed; 1500–1800 mm turning space is the standard"
-        ]
-      },
+      "rationale": "The checked local source supports: 900 mm.",
       "explanation": "Elevator turning happens in the lobby (1500–1800 mm), not the car. Ramp landings are also 1500–1800 mm at top/bottom.",
       "code_citation": "BP 344 IRR, Elevators; Ramps sections",
       "bloom_level": "apply",
@@ -912,45 +793,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.070356+00:00",
       "content_hash": "sha256:279abed53a3375de2239e935756c55eebab9a6fc8a49c9a7faccea7a33e11727"
     },
     {
       "question_id": "5c5b86c9-4343-4229-a1bb-3c2916120941",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible staircase has a tactile warning strip at the top landing. A site review finds the strip is 600 mm deep but placed directly at the stair nosing edge with no setback. Under BP 344 IRR, is this compliant?",
+      "text": "What minimum corridor or exterior exit balcony width is required under PD 1096?",
       "options": [
         {
-          "id": "A",
-          "text": "Yes — the 600 mm depth is correct and placing the strip at the nosing edge ensures maximum warning proximity"
+          "id": "a",
+          "text": "1.10 m."
         },
         {
-          "id": "B",
-          "text": "No — the strip must be installed 300 mm back from the stair edge so the user encounters it before reaching the drop"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "No — the strip must be 300 mm deep and placed 600 mm back from the stair edge"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "Yes — for stairs at landings, the tactile strip may be placed at the nosing edge since the landing is already level"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Non-compliant: the 600 mm depth is correct but the 300 mm setback from the stair edge is missing.",
-        "explanation": "BP 344 IRR specifies: tactile warning strip depth = 600 mm, and the strip must be installed 300 mm before (back from) the hazard edge. The purpose of the 300 mm setback is to ensure the visually impaired user's feet contact the tactile warning before the leading foot reaches the stair edge — providing a step's worth of advance notice. Placing the strip flush with the nosing eliminates this advance warning and the user's first foot on the tactile strip would already be at the edge of the drop. The depth (600 mm) is correct but the 300 mm setback is missing — the installation fails.",
-        "common_misconceptions": [
-          "Swapping depth and setback: 300 mm is the setback distance, not the depth — 600 mm is the depth",
-          "Believing flush placement is acceptable because it is technically at the hazard — the setback is mandatory to provide advance notice"
-        ]
-      },
+      "rationale": "The checked local source supports: 1.10 m.",
       "explanation": "Both depth (600 mm) and setback (300 mm back from edge) are required — the depth is correct but the missing setback makes this non-compliant.",
       "code_citation": "BP 344 IRR, Tactile Surfaces section",
       "bloom_level": "apply",
@@ -963,45 +837,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.061651+00:00",
       "content_hash": "sha256:a1814cf66da4db495b28583af1665cbd62b6c1e278090d59505404eefcb5cc95"
     },
     {
       "question_id": "86b3deab-8d65-4ac7-af8e-865c7275a9e4",
       "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "PD 1096 governs stair geometry as the life-safety baseline, while BP 344 provides the accessibility overlay. For a building that must meet both, what is the correct design approach when the two codes conflict?",
+      "text": "What is the correct first step in a stair question?",
       "options": [
         {
-          "id": "A",
-          "text": "PD 1096 always takes precedence because it is an older law and governs all building construction, ensuring safety"
+          "id": "a",
+          "text": "Decide whether the issue is accessibility under BP 344 or general egress under PD 1096."
         },
         {
-          "id": "B",
-          "text": "Both codes must be satisfied simultaneously; BP 344 adds accessibility requirements on top of PD 1096 life-safety baseline"
+          "id": "b",
+          "text": "Use a furniture layout as the stair rule."
         },
         {
-          "id": "C",
-          "text": "BP 344 always takes precedence because accessibility law supersedes the National Building Code for public buildings, ensuring compliance"
+          "id": "c",
+          "text": "Ignore occupant load and accessible route requirements."
         },
         {
-          "id": "D",
-          "text": "The architect may choose whichever code is easier to comply with on a case-by-case basis for each stair, allowing flexibility"
+          "id": "d",
+          "text": "Delete handrails wherever space is tight."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 = life-safety baseline; BP 344 = accessibility overlay. Both must be satisfied; neither supersedes the other.",
-        "explanation": "The exam mindset for accessible vertical circulation is: PD 1096 sets the life-safety baseline (stair rise/run geometry, exit widths, landing frequency at 3.6 m, enclosure ratings, headroom). BP 344 adds an accessibility overlay that is often more restrictive (dual handrails at 700/900 mm, landing frequency at 3.0 m, tactile warning strips, ramp requirements). When a building must be accessible, every stair and ramp must satisfy both codes simultaneously. The more restrictive of the two provisions governs when they cover the same element — this is not a choice.",
-        "common_misconceptions": [
-          "Treating PD 1096 and BP 344 as alternative choices — both apply simultaneously to accessible buildings",
-          "Believing BP 344 supersedes PD 1096 — neither supersedes the other; both create independent minimum standards"
-        ]
-      },
+      "rationale": "The checked local source supports: Decide whether the issue is accessibility under BP 344 or general egress under PD 1096.",
       "explanation": "Both codes apply simultaneously: PD 1096 sets life-safety minimums; BP 344 overlays accessibility requirements — the stricter governs.",
       "code_citation": "BP 344 IRR; PD 1096",
       "bloom_level": "understand",
@@ -1014,7 +881,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.24898+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.054518+00:00",
       "content_hash": "sha256:628505d4c5c5da202f33ae52ee95530d576f735f17182e878056f8675cfaeff4"
     }
   ]

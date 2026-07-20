@@ -76,7 +76,7 @@ Richard Sennett's *The Craftsman* (2008) theorizes that participatory design rec
 
 Contemporary social architecture increasingly addresses **systemic inequities**—how design perpetuates or ameliorates class, racial, and gendered injustices.
 
-**Housing as Fundamental Right**: Architecture for displaced populations, informal settlers, and economically marginalized communities treats housing not as commodity but as human right. Leajandro Aravena's Elemental (Chile) designs housing that is intentionally incomplete—half-built structures that families can expand and customize according to resources and needs. This reflects both pragmatic resource constraints and philosophical position: **the community, not the professional, determines final form**. The architecture provides framework (utilities, structure, public space); families provide labor and vision.
+**Housing as Fundamental Right**: Architecture for displaced populations, informal settlers, and economically marginalized communities treats housing not as commodity but as human right. Alejandro Aravena's Elemental (Chile) designs housing that is intentionally incomplete—half-built structures that families can expand and customize according to resources and needs. This reflects both pragmatic resource constraints and philosophical position: **the community, not the professional, determines final form**. The architecture provides framework (utilities, structure, public space); families provide labor and vision.
 
 **Gentrification and Displacement Resistance**: Where neighborhoods face displacement through development, social architecture shifts from improvement-focused (which can trigger gentrification) to community-controlled development ensuring existing residents benefit. This requires political-economic interventions beyond architecture—community land trusts, anti-displacement covenants, community-controlled developer selection.
 
@@ -96,7 +96,7 @@ This is more radical than typical participation—it is **design control by the 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Indigenous sovereignty in design represents decolonial principle: communities with millennia of place-based knowledge are not "lacking expertise" but are holders of epistemic authority equivleant to or exceeding professional training. This shift requires professionals to relinquish authority positioning, not merely "involve" Indigenous peoples in professionally-led processes. True decolonial design inverts the hierarchy: Indigenous community leads, professionals support.
+- Text: Indigenous sovereignty in design represents decolonial principle: communities with millennia of place-based knowledge are not "lacking expertise" but are holders of epistemic authority equivalent to or exceeding professional training. This shift requires professionals to relinquish authority positioning, not merely "involve" Indigenous peoples in professionally-led processes. True decolonial design inverts the hierarchy: Indigenous community leads, professionals support.
 [/SLATECAMP_UI_BLOCK]
 
 **Slum Upgrading and Incremental Development**

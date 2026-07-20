@@ -8,37 +8,31 @@
       "question_id": "26996369-ef0d-4889-bc14-ac3f2055aa84",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "The formula for calculating rebar weight per meter is ___.",
+      "text": "In Fajardo, what must be added when estimating reinforcing bar length?",
       "options": [
         {
           "id": "a",
-          "text": "D ÷ 162.5"
+          "text": "Hook, bend, and splice allowances"
         },
         {
           "id": "b",
-          "text": "(D × 2) ÷ 162.5"
+          "text": "Paint coverage only"
         },
         {
           "id": "c",
-          "text": "D² ÷ 162.5"
+          "text": "Board foot volume only"
         },
         {
           "id": "d",
-          "text": "D ÷ 160"
+          "text": "Contact cement area only"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "D ÷ 162.5 is linear, not quadratic; would significantly under‑estimate weight.",
-        "b": "(D × 2) ÷ 162.5 is a linear approximation; incorrect.",
-        "d": "D ÷ 160 is a linear approximation with a different constant; incorrect.",
-        "correct": "The standard formula is Weight per meter (kg/m) = D² ÷ 162.5, where D is diameter in millimeters. This accounts for steel density (7,850 kg/m³) and cross-sectional area.",
-        "takeaway": "Always use D² (diameter squared) in the numerator. The denominator is 162.5, not 160 or other approximations."
-      },
+      "rationale": "Fajardo states that hook, bend, and splice lengths must be considered.",
       "explanation": null,
       "code_citation": "NSCP 2015, ASTM A615-21",
       "bloom_level": "remember",
@@ -51,44 +45,38 @@
       "model_id": "ALE-MATL-010-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.269467+00:00",
       "content_hash": "sha256:6232610dca6ae6b53f72d4a766081aa9849c0bea6836b5ff8577a73e107e44c5"
     },
     {
       "question_id": "398dcdd1-e031-4e2d-b883-ce5027be7ac5",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "Calculate the weight per meter of 16 mm rebar using the formula D² ÷ 162.5.",
+      "text": "Under direct counting, what is counted for CHB reinforcement?",
       "options": [
         {
           "id": "a",
-          "text": "1.21 kg/m"
+          "text": "Vertical and horizontal reinforcements from the plan"
         },
         {
           "id": "b",
-          "text": "1.37 kg/m"
+          "text": "Paint cans by surface color"
         },
         {
           "id": "c",
-          "text": "1.58 kg/m"
+          "text": "Door hinges by leaf count"
         },
         {
           "id": "d",
-          "text": "1.97 kg/m"
+          "text": "Lumber board feet only"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.21 kg/m results from using (12)² ÷ 162.5 (12 mm bar, not 16 mm).",
-        "b": "1.37 kg/m is an intermediate error or miscalculation.",
-        "d": "1.97 kg/m results from using (20)² ÷ 162.5 (20 mm bar, not 16 mm).",
-        "correct": "(16)² ÷ 162.5 = 256 ÷ 162.5 = 1.575 kg/m ≈ 1.58 kg/m.",
-        "takeaway": "Use the formula precisely: D² ÷ 162.5. For 16 mm, (16)² = 256, then 256 ÷ 162.5 = 1.58 kg/m."
-      },
+      "rationale": "Fajardo says direct counting counts vertical and horizontal reinforcements individually.",
       "explanation": null,
       "code_citation": "NSCP 2015, ASTM A615-21",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-MATL-010-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.264109+00:00",
       "content_hash": "sha256:ab1b721bec31f224374b4542ccf5a4b295762f77cfffb4a82906d94e8f5cc264"
     },
     {
       "question_id": "c473d66d-10bf-4ec4-a560-dae936025ea5",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "The unit weight of rebar steel is ___.",
+      "text": "In direct counting, where is reinforcement length determined?",
       "options": [
         {
           "id": "a",
-          "text": "7,200 kg/m³"
+          "text": "From the elevation"
         },
         {
           "id": "b",
-          "text": "7,500 kg/m³"
+          "text": "From paint coverage tables"
         },
         {
           "id": "c",
-          "text": "7,850 kg/m³"
+          "text": "From window operation type"
         },
         {
           "id": "d",
-          "text": "8,000 kg/m³"
+          "text": "From adhesive package form"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "7,200 kg/m³ is too low; would under‑estimate weight.",
-        "b": "7,500 kg/m³ is close but is not the standard value.",
-        "d": "8,000 kg/m³ is slightly high; may be used for heavier alloys.",
-        "correct": "Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5).",
-        "takeaway": "Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations."
-      },
+      "rationale": "Fajardo states the length is determined from the elevation.",
       "explanation": "7,200 kg/m³ is too low; would under‑estimate weight. 7,500 kg/m³ is close but is not the standard value. 8,000 kg/m³ is slightly high; may be used for heavier alloys. Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5). Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations.",
       "code_citation": "ASTM A615-21, NSCP 2015",
       "bloom_level": "remember",
@@ -151,30 +133,30 @@
       "model_id": "ALE-MATL-010-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-05-06T15:00:16.062635+00:00",
+      "updated_at": "2026-07-20T01:13:25.270123+00:00",
       "content_hash": "sha256:e83b84c771ed112c3f8f9a511c234fe21c9effb5ff3e9f2707a30dad3d11eb38"
     },
     {
       "question_id": "417874e2-b48c-48e8-ae1f-061292580f92",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "A contractor estimates 80 meters of 25 mm rebar at a market price of 55 pesos per kilogram. Calculate the material cost.",
+      "text": "Why does Fajardo recommend selecting commercial bar lengths carefully?",
       "options": [
         {
           "id": "a",
-          "text": "16,720 pesos"
+          "text": "To minimize unwanted cuts"
         },
         {
           "id": "b",
-          "text": "17,380 pesos"
+          "text": "To change concrete into paint"
         },
         {
           "id": "c",
-          "text": "18,700 pesos"
+          "text": "To remove the need for spacing"
         },
         {
           "id": "d",
-          "text": "20,240 pesos"
+          "text": "To avoid counting bars"
         }
       ],
       "correct_option_id": "a",
@@ -182,14 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "16,720 pesos is the closest correct cost.",
-        "b": "17,380 pesos results from a slightly higher weight estimate.",
-        "c": "18,700 pesos may come from using 85 m length or a different formula.",
-        "d": "20,240 pesos is too high.",
-        "correct": "Weight per meter: (25)² ÷ 162.5 = 625 ÷ 162.5 = 3.846 kg/m. Total weight: 80 m × 3.846 kg/m = 307.68 kg. Cost: 307.68 kg × 55 pesos/kg = 16,922.4 pesos ≈ 16,720 pesos (closest option; rounding differences may occur from using a slightly different constant).",
-        "takeaway": "Cost estimation: (length × kg/m) × unit price = total cost. Always calculate weight first, then multiply by price per kg."
-      },
+      "rationale": "Fajardo emphasizes choosing lengths that reduce unwanted offcuts.",
       "explanation": null,
       "code_citation": "NSCP 2015, Philippine market practice",
       "bloom_level": "analyze",
@@ -202,44 +177,38 @@
       "model_id": "ALE-MATL-010-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.268801+00:00",
       "content_hash": "sha256:5ef5016f6f153dc7fb9ab1e6bf26b1b940fda0f405e9af88c0bb355b5578e488"
     },
     {
       "question_id": "9d97479e-548c-42c8-bbe4-db841a0053ad",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "Standard rebar supplied in the Philippines comes in lengths of ___.",
+      "text": "Which commercial length is efficient for five 1.20 m cuts per bar?",
       "options": [
         {
           "id": "a",
-          "text": "6 meters"
+          "text": "6.00 m"
         },
         {
           "id": "b",
-          "text": "9 meters"
+          "text": "5.00 m"
         },
         {
           "id": "c",
-          "text": "12 meters"
+          "text": "7.50 m"
         },
         {
           "id": "d",
-          "text": "15 meters"
+          "text": "8.00 m"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "6 meters is half the standard; not a typical supply length.",
-        "b": "9 meters is not standard in Philippine practice.",
-        "d": "15 meters is longer than standard and less common.",
-        "correct": "Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan).",
-        "takeaway": "Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines."
-      },
+      "rationale": "A 6.00 m bar divides evenly into five 1.20 m cuts.",
       "explanation": "6 meters is half the standard; not a typical supply length. 9 meters is not standard in Philippine practice. 15 meters is longer than standard and less common. Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan). Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines.",
       "code_citation": "Philippine construction practice, Pag‑asa Steel, Capitol Steel",
       "bloom_level": "apply",
@@ -252,44 +221,38 @@
       "model_id": "ALE-MATL-010-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-05-06T15:00:16.239659+00:00",
+      "updated_at": "2026-07-20T01:13:25.262950+00:00",
       "content_hash": "sha256:197c0fa3c02ac2bb917bee7d15ff8af442170e9370063a86f128825bfb658b08"
     },
     {
       "question_id": "30bcd44a-2b02-4b63-baef-081e2dee8d79",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "A beam requires 240 meters of 20 mm rebar with a lap splice factor of 1.35. The market price is 21.4 pesos per kilogram. How many 12‑meter bars must be ordered, and what is the total material cost?",
+      "text": "What does No. 16 GI tie wire do in Fajardo?",
       "options": [
         {
           "id": "a",
-          "text": "23 bars, 12,935 pesos"
+          "text": "Secures steel bars in their designed position"
         },
         {
           "id": "b",
-          "text": "27 bars, 17,055 pesos"
+          "text": "Measures board foot volume"
         },
         {
           "id": "c",
-          "text": "28 bars, 17,710 pesos"
+          "text": "Seals concrete pores"
         },
         {
           "id": "d",
-          "text": "32 bars, 20,630 pesos"
+          "text": "Classifies adhesives"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "23 bars and 12,935 pesos is too low; would correspond to a shorter length or lower price.",
-        "c": "28 bars and 17,710 pesos results from rounding up bars without adjusting waste factor.",
-        "d": "32 bars and 20,630 pesos is over‑estimated.",
-        "correct": "Total length with waste: 240 m × 1.35 = 324 m. Number of bars: 324 m ÷ 12 m/bar = 27 bars (exact). Weight per meter of 20 mm: (20)² ÷ 162.5 = 400 ÷ 162.5 = 2.462 kg/m. Total weight: 324 m × 2.462 kg/m = 797.7 kg. Cost: 797.7 kg × 21.4 pesos/kg = 17,055 pesos (rounded).",
-        "takeaway": "Multi‑step: (1) apply waste factor to length, (2) calculate bars needed (round up to nearest whole bar if not exact), (3) calculate weight, (4) multiply by price."
-      },
+      "rationale": "Fajardo describes tie wire as securing bars in position.",
       "explanation": null,
       "code_citation": "NSCP 2015, site practice",
       "bloom_level": "analyze",
@@ -302,44 +265,38 @@
       "model_id": "ALE-MATL-010-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.265877+00:00",
       "content_hash": "sha256:1accf6193b2fe947eb08707bcd52e8c7c27e568c9714317bff882b5c08e2cbdd"
     },
     {
       "question_id": "a789e742-11f3-44cd-bfd3-7fb74fb126ff",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "A slab requires 600 meters of 20 mm rebar. How many standard 12-meter bars are needed?",
+      "text": "How is tie wire ordered in Fajardo?",
       "options": [
         {
           "id": "a",
-          "text": "48 bars"
+          "text": "By kilogram or roll"
         },
         {
           "id": "b",
-          "text": "50 bars"
+          "text": "By board foot"
         },
         {
           "id": "c",
-          "text": "52 bars"
+          "text": "By cubic meter of concrete"
         },
         {
           "id": "d",
-          "text": "60 bars"
+          "text": "By number of window sashes"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "48 bars results from dividing 600 by 12.5 or miscalculating.",
-        "c": "52 bars results from including a small waste factor (600 × 1.04) or rounding.",
-        "d": "60 bars results from dividing 600 by 10 m/bar (non‑standard length).",
-        "correct": "Number of bars = 600 m ÷ 12 m/bar = 50 bars (exact).",
-        "takeaway": "Standard bar length in the Philippines is 12 meters. Divide total length by 12, then round up if needed."
-      },
+      "rationale": "Fajardo says tie wire is ordered by kilograms or roll, not by feet or meter length.",
       "explanation": null,
       "code_citation": "Philippine construction practice",
       "bloom_level": "apply",
@@ -352,30 +309,30 @@
       "model_id": "ALE-MATL-010-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.267435+00:00",
       "content_hash": "sha256:9c9b0a6302b7d24cdda482af79f6f19eb955d8bfa106e20802dbc2a27a829ac7"
     },
     {
       "question_id": "ae859939-6844-4739-bed7-06f724ebace0",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "A column requires mixed rebar: 200 m of 20 mm, 300 m of 16 mm, and 150 m of 12 mm. Calculate total weight.",
+      "text": "What conversion does Fajardo give for No. 16 GI tie wire?",
       "options": [
         {
           "id": "a",
-          "text": "1,101 kg"
+          "text": "About 53 meters per kilogram"
         },
         {
           "id": "b",
-          "text": "1,287 kg"
+          "text": "12.5 pieces per square meter"
         },
         {
           "id": "c",
-          "text": "1,516 kg"
+          "text": "144 cubic inches per board foot"
         },
         {
           "id": "d",
-          "text": "1,904 kg"
+          "text": "0.10 m per 4 inches only"
         }
       ],
       "correct_option_id": "a",
@@ -383,14 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1,101 kg is the correct total (rounded to nearest integer).",
-        "b": "1,287 kg may result from using different rounding or weight factors.",
-        "c": "1,516 kg may include a waste factor (approx. 1.38 × base).",
-        "d": "1,904 kg is significantly over‑estimated.",
-        "correct": "20 mm: 200 m × (20² ÷ 162.5) = 200 × (400 ÷ 162.5) = 200 × 2.4615 = 492.3 kg. 16 mm: 300 m × (256 ÷ 162.5) = 300 × 1.5754 = 472.6 kg. 12 mm: 150 m × (144 ÷ 162.5) = 150 × 0.8862 = 132.9 kg. Total = 492.3 + 472.6 + 132.9 = 1,097.8 kg ≈ 1,101 kg.",
-        "takeaway": "For multiple bar sizes: calculate weight for each size separately, then sum. Formula: (length₁ × kg/m₁) + (length₂ × kg/m₂) + ..."
-      },
+      "rationale": "Fajardo gives approximately 53 meters per kilogram for No. 16 GI tie wire.",
       "explanation": null,
       "code_citation": "NSCP 2015",
       "bloom_level": "analyze",
@@ -403,7 +353,7 @@
       "model_id": "ALE-MATL-010-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.265014+00:00",
       "content_hash": "sha256:be495a761ac5badca2498100997802b5958d92e90f6501037aaf698584943201"
     },
     {
@@ -414,19 +364,19 @@
       "options": [
         {
           "id": "a",
-          "text": "264 kg"
+          "text": "264 kg — result of using 10 mm rebar (0.61 kg/m × 400 m)"
         },
         {
           "id": "b",
-          "text": "352 kg"
+          "text": "352 kg — the correct total weight (0.886 kg/m × 400 m) for 12 mm rebar"
         },
         {
           "id": "c",
-          "text": "440 kg"
+          "text": "440 kg — result of rounding the unit weight up to 0.90 kg/m"
         },
         {
           "id": "d",
-          "text": "528 kg"
+          "text": "528 kg — result of using 16 mm rebar (1.58 kg/m × 400 m)"
         }
       ],
       "correct_option_id": "b",
@@ -434,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "264 kg results from using 10 mm rebar (0.61 kg/m × 400 m).",
-        "c": "440 kg results from using 0.90 kg/m (rounding up), which introduces error.",
-        "d": "528 kg results from using 16 mm rebar (1.58 kg/m × 400 m).",
-        "correct": "Weight per meter: (12)² ÷ 162.5 = 144 ÷ 162.5 = 0.886 kg/m. Total: 400 m × 0.886 kg/m = 354.4 kg ≈ 354 kg. The closest option is 352 kg (using the common approximation 144 ÷ 162 = 0.889 kg/m, giving 355.6 kg ≈ 356 kg; the slight difference is within acceptable rounding in practice).",
-        "takeaway": "Calculate weight per meter first (use D² ÷ 162.5), then multiply by total length. Always use the precise formula value."
-      },
+      "rationale": "Weight per meter: (12)² ÷ 162.5 = 144 ÷ 162.5 = 0.886 kg/m. Total: 400 m × 0.886 kg/m = 354.4 kg ≈ 354 kg. The closest option is 352 kg (using the common approximation 144 ÷ 162 = 0.889 kg/m, giving 355.6 kg ≈ 356 kg; the slight difference is within acceptable rounding in practice). [A]: 264 kg results from using 10 mm rebar (0.61 kg/m × 400 m). [C]: 440 kg results from using 0.90 kg/m (rounding up), which introduces error. [D]: 528 kg results from using 16 mm rebar (1.58 kg/m × 400 m).",
       "explanation": null,
       "code_citation": "NSCP 2015",
       "bloom_level": "apply",
@@ -453,44 +397,38 @@
       "model_id": "ALE-MATL-010-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.266693+00:00",
       "content_hash": "sha256:1680e3645c9650e64b1cffd7ef9a2cbb0b5a83cbc6215bbd5c3e188a6e5edf22"
     },
     {
       "question_id": "48572569-c418-4246-adc1-6524c3ed3004",
       "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
       "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
-      "text": "Design drawings specify 350 meters of 16 mm rebar. A splice waste factor of 1.40 is applied (40% extra length for lap splices). Calculate the total weight.",
+      "text": "Which common CHB reinforcement diameters does Fajardo mention?",
       "options": [
         {
           "id": "a",
-          "text": "553 kg"
+          "text": "10 mm, 12 mm, or 16 mm"
         },
         {
           "id": "b",
-          "text": "639 kg"
+          "text": "2d, 6d, and 60d nails"
         },
         {
           "id": "c",
-          "text": "774 kg"
+          "text": "1 L, 4 L, and 20 L cans"
         },
         {
           "id": "d",
-          "text": "882 kg"
+          "text": "2 in, 6 in, and 14 ft lumber only"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "553 kg results from forgetting the waste factor (350 × 1.58 = 553).",
-        "b": "639 kg results from using 1.30 waste factor instead of 1.40 (350 × 1.30 × 1.58).",
-        "d": "882 kg results from using both 1.40 waste and an incorrect weight per meter (20 mm instead of 16 mm).",
-        "correct": "Total length with waste: 350 m × 1.40 = 490 m. Weight per meter: (16)² ÷ 162.5 = 256 ÷ 162.5 = 1.575 kg/m ≈ 1.58 kg/m. Total weight: 490 m × 1.58 kg/m = 774.2 kg ≈ 774 kg.",
-        "takeaway": "Apply splice waste factor to LENGTH first, then calculate weight. Order: length × waste factor × kg/m."
-      },
+      "rationale": "Fajardo lists 10 mm, 12 mm, and 16 mm as common CHB reinforcement sizes.",
       "explanation": null,
       "code_citation": "NSCP 2015, site practice",
       "bloom_level": "apply",
@@ -503,7 +441,7 @@
       "model_id": "ALE-MATL-010-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.268116+00:00",
       "content_hash": "sha256:1596f678381ff2eb4d5698c8e9e2bf8144553758dc21491a6ec717bbcc1cd9d3"
     }
   ]

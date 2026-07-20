@@ -2,9 +2,9 @@
   "question_id": "b945c913-9d0f-4977-852a-038e9bfa8690",
   "baseline_hash": "sha256:254ae03b8f2303729520a50eac81e9d5f0f3cfc439e6bc30b5e82b87a28c8340",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What documents are tied to the IRR Certificate of Occupancy process?",
+    "text": "After a successful change of use application is approved and all conditions are met, what specific document does the Building Official issue to authorize the new occupancy?",
     "options": [
       {
         "id": "a",
-        "text": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process."
+        "text": "A Certificate of Occupancy updated to reflect the new use classification"
       },
       {
         "id": "b",
-        "text": "O"
+        "text": "An amended Building Permit that incorporates the new use into the original permit record"
       },
       {
         "id": "c",
-        "text": "n"
+        "text": "A Certificate of Occupancy — a separate instrument specific to approved occupancy changes"
       },
       {
         "id": "d",
-        "text": "l"
+        "text": "A Zoning Compliance Certificate issued jointly by the BO and the local planning office"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process. This is supported by Only a hydrant-location sketch is required..",
-    "explanation": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process. The cited local source family controls this item: Only a hydrant-location sketch is required..",
-    "code_citation": "Only a FLAR computation is required."
+    "correct_option_id": "c",
+    "rationale": "Under PD 1096, the specific document issued upon approval of a change of use application is the CERTIFICATE OF USE — distinct from the Certificate of Occupancy issued for new construction. The Certificate of Occupancy is the instrument that legally authorizes the new occupancy classification. While a new CO (per Sec. 309.9) is also required, the intermediate authorization document specifically issued for the change process is the Certificate of Occupancy.",
+    "explanation": "Certificate of USE (change process) vs Certificate of OCCUPANCY (new construction). Both are issued by the Building Official but serve different purposes and apply to different scenarios. Confusing these two is a common exam error.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

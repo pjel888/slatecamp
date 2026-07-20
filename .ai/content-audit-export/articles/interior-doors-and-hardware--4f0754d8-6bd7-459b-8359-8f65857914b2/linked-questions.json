@@ -8,31 +8,31 @@
       "question_id": "d7bde472-39ce-419a-9f6e-c50ac904370d",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Based on the specifications in \"Interior Doors and Hardware\", if a project requires 900 mm, what is the correct interpretation?",
+      "text": "What minimum clear width applies to all doors under BP 344?",
       "options": [
         {
-          "id": "A",
-          "text": "900 mm is the minimum/standard requirement"
+          "id": "a",
+          "text": "900 mm"
         },
         {
-          "id": "B",
-          "text": "900 mm is the maximum permitted value"
+          "id": "b",
+          "text": "600 mm"
         },
         {
-          "id": "C",
-          "text": "900 mm applies only to specific conditions"
+          "id": "c",
+          "text": "1200 mm"
         },
         {
-          "id": "D",
-          "text": "900 mm is an approximate value subject to interpretation"
+          "id": "d",
+          "text": "4000 mm"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 900 mm as the requirement. Context: *900 mm**\r 2. Min clear width, double-leaf → **1,800 mm**\r 3. Handle height → **...",
+      "rationale": "BP 344 states all doors shall have a minimum clear width of 900 mm.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:10.43889+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.424617+00:00",
       "content_hash": "sha256:cff36593c3c18b705688c12c779b32bf64cbb276c0cb39058d9cc2ff686de113"
     },
     {
       "question_id": "15370262-8327-4cdc-aebb-114fd16c3daf",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A guest room in an accessible hotel lodge has a standard round-knob door handle centered at 1,050 mm AFF and a secondary peephole at 1,500 mm AFF. Under BP 344 (2024 IRR), how many violations are present?",
+      "text": "What minimum clear width applies to double-leaf doors?",
       "options": [
         {
-          "id": "A",
-          "text": "Zero — round knobs are permitted if centered at 900–1,100 mm AFF, and the peephole height is acceptable under certain conditions"
+          "id": "a",
+          "text": "1800 mm"
         },
         {
-          "id": "B",
-          "text": "One — only the handle type is wrong; the peephole height is correct according to the latest amendments"
+          "id": "b",
+          "text": "900 mm"
         },
         {
-          "id": "C",
-          "text": "Two — the handle type (round knob prohibited) and the secondary peephole height (must be 1,000 mm) are both non-compliant"
+          "id": "c",
+          "text": "1200 mm"
         },
         {
-          "id": "D",
-          "text": "Two — the handle height (must be exactly 900 mm) and the secondary peephole height are both non-compliant, requiring adjustments to meet standards"
+          "id": "d",
+          "text": "1500 mm"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Two violations: round knobs are prohibited under BP 344 (lever handles required); the secondary peephole for wheelchair users must be at 1,000 mm, not 1,500 mm.",
-        "explanation": "BP 344 (2024 IRR) Appendix A requires: (1) lever handles or vertical pulls — round knobs require tight grasping/twisting and are prohibited; (2) the secondary peephole for wheelchair users must be at 1,000 mm AFF (Sec. 17.1) — not 1,500 mm, which is too high for a seated user. The handle height at 1,050 mm, while slightly above the 900 mm centered standard, is a secondary issue — the type (round knob) is the primary violation regardless of height. The secondary peephole at 1,500 mm is 500 mm too high for a wheelchair user.",
-        "common_misconceptions": [
-          "Assuming round knobs are acceptable if at the right height",
-          "Applying the 1,500 mm general sign center height to the accessible peephole"
-        ]
-      },
+      "rationale": "BP 344 requires 1800 mm minimum clear width for double-leaf doors.",
       "explanation": "This multi-violation analysis question tests handle type prohibition (no round knobs) and the 1,000 mm wheelchair peephole height simultaneously.",
       "code_citation": "BP 344 2024 IRR, Appendix A; Sec. 17.1",
       "bloom_level": "analyze",
@@ -96,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.423925+00:00",
       "content_hash": "sha256:872469fc7cb654b7ba29f9987d3ced5ab0e8833bcea6604f8a6cfa97709ed2fe"
     },
     {
       "question_id": "1130e277-ec08-4a85-8491-51cfb8216510",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 (2024 IRR), what is the required height range for kick plates on accessible door hardware, and on which doors are they required?",
+      "text": "How are door clear openings measured?",
       "options": [
         {
-          "id": "A",
-          "text": "150–300 mm height band; required on all interior doors throughout the building"
+          "id": "a",
+          "text": "From the face of a fully open door at 90 degrees and the door jamb"
         },
         {
-          "id": "B",
-          "text": "300–400 mm height band; required on major circulation route doors"
+          "id": "b",
+          "text": "From the outside wall finish only"
         },
         {
-          "id": "C",
-          "text": "400–600 mm height band; required on all fire-rated and exterior accessible doors"
+          "id": "c",
+          "text": "From the ceiling line"
         },
         {
-          "id": "D",
-          "text": "300–400 mm height band; required only on accessible toilet room doors"
+          "id": "d",
+          "text": "From the center of the hinge only"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Kick plates are 300–400 mm high and required on major circulation route doors.",
-        "explanation": "BP 344 (2024 IRR) Appendix A specifies kick plates in the 300–400 mm height band on major circulation route doors. The kick plate protects the door from damage by wheelchair footrests and footplates — without it, doors on high-traffic accessible routes deteriorate rapidly. The 300–400 mm zone aligns with the typical height of wheelchair footrests. The 400–600 mm range applies to toilet emergency call buttons — a different element at a different height.",
-        "common_misconceptions": [
-          "Confusing the 300–400 mm kick plate band with the 400–600 mm toilet emergency call button band",
-          "Limiting kick plates to toilet room doors rather than all major circulation routes"
-        ]
-      },
+      "rationale": "The source measures clear openings from the face of a fully open 90-degree door and the jamb.",
       "explanation": "This question tests the kick plate height range (300–400 mm) and application scope (major circulation routes) — both of which are tested independently on the LEA.",
       "code_citation": "BP 344 2024 IRR, Appendix A, General Provisions",
       "bloom_level": "remember",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.420920+00:00",
       "content_hash": "sha256:50b41f933332ddc462e90dfa8113522bc3c3fbd885499128e7a99ba671bd3731"
     },
     {
       "question_id": "c3166efd-1bb9-4213-984c-8de234d0c7c7",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 (2024 IRR), which direction must an accessible dressing room door swing, and what is the primary safety reason for this requirement?",
+      "text": "What clear level space is required before and beyond a door?",
       "options": [
         {
-          "id": "A",
-          "text": "Inward — so the door creates a privacy barrier that can be controlled by the occupant from inside"
+          "id": "a",
+          "text": "1800 mm x 1800 mm"
         },
         {
-          "id": "B",
-          "text": "Outward — so rescuers can open the door even if the occupant has collapsed against it on the inside"
+          "id": "b",
+          "text": "900 mm x 1200 mm"
         },
         {
-          "id": "C",
-          "text": "Sliding — so wheelchair users are not obstructed by a swinging door leaf during transfer"
+          "id": "c",
+          "text": "400 mm x 600 mm"
         },
         {
-          "id": "D",
-          "text": "Either direction — BP 344 does not specify swing direction, only that 900 mm clear width is maintained"
+          "id": "d",
+          "text": "No clear level space"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Dressing room doors must swing outward — if the occupant collapses inside, rescuers can still open the door.",
-        "explanation": "BP 344 (2024 IRR) Appendix A / Sec. 13 requires accessible dressing room doors to swing outward. This is a safety requirement: if a person with a disability collapses inside the dressing room, an inward-swinging door could be blocked by their body, trapping them and preventing rescue. An outward swing allows the door to open freely regardless of whether someone has fallen against the inside face. This rule also prevents the door from striking a person who is transferring from a wheelchair.",
-        "common_misconceptions": [
-          "Assuming privacy considerations determine swing direction",
-          "Thinking sliding doors satisfy the dressing room requirement without a specific code basis"
-        ]
-      },
+      "rationale": "BP 344 requires a minimum clear level space of 1800 mm x 1800 mm before and beyond a door.",
       "explanation": "This question tests the outward-swing requirement for dressing room doors — a safety provision rooted in emergency egress logic, not just accessibility.",
       "code_citation": "BP 344 2024 IRR, Appendix A; Sec. 13",
       "bloom_level": "understand",
@@ -198,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.421675+00:00",
       "content_hash": "sha256:00ac5da193feea4641c27481a4ec6728ed65ad8b435977412b129f1ea3efee7f"
     },
     {
       "question_id": "af9e6998-ec28-4114-bcc0-20522f0c8350",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 (2024 IRR) Appendix A, what is the minimum width of the vision panel in an accessible door leaf, and what purpose does it serve?",
+      "text": "What corridor-side exception applies when a door opens onto but not into a corridor?",
       "options": [
         {
-          "id": "A",
-          "text": "50 mm minimum width — provides a narrow slit for emergency identification through the door"
+          "id": "a",
+          "text": "Minimum 1500 mm corridor width"
         },
         {
-          "id": "B",
-          "text": "100 mm minimum width — allows approaching persons to see each other before the door swings open"
+          "id": "b",
+          "text": "No corridor width"
         },
         {
-          "id": "C",
-          "text": "150 mm minimum width — the standard for all vision panels to comply with fire code glazing limits"
+          "id": "c",
+          "text": "Only 450 mm"
         },
         {
-          "id": "D",
-          "text": "200 mm minimum width — matching the minimum door identification sign dimension for consistency"
+          "id": "d",
+          "text": "Exactly 5000 mm"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Vision panels must be minimum 100 mm wide — wide enough to see an approaching person, accounting for the lower eye level of wheelchair users.",
-        "explanation": "BP 344 (2024 IRR) Appendix A requires the vision panel (glazed window in a door leaf) to be at least 100 mm wide. A wheelchair user's eye level is approximately 1,100–1,300 mm AFF — lower than a standing person. A narrow panel must still be visible from this seated height. The panel allows people on both sides to see each other before the door swings and prevents collision. The 100 mm width is a minimum — wider panels are acceptable and preferred.",
-        "common_misconceptions": [
-          "Confusing the 100 mm vision panel width with the 200 mm door identification sign size",
-          "Assuming any small glazed opening satisfies the vision panel requirement"
-        ]
-      },
+      "rationale": "BP 344 allows a 1500 mm minimum corridor width on the corridor side in this condition.",
       "explanation": "This question tests the 100 mm vision panel minimum width and its functional purpose — a factual detail often confused with other 100 mm or 200 mm dimensions in BP 344.",
       "code_citation": "BP 344 2024 IRR, Appendix A, General Provisions",
       "bloom_level": "remember",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.418393+00:00",
       "content_hash": "sha256:7f48170f23bf80f0c092db0e472d6d83154e64ab7c4faa812b7adf6ff3566959"
     },
     {
       "question_id": "4159492e-1b30-48af-969e-c4eafe87e76f",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 (2024 IRR), sensory room doors have two specific requirements not shared by standard accessible doors. What are they?",
+      "text": "What opening force limit applies to interior door closer devices?",
       "options": [
         {
-          "id": "A",
-          "text": "Must swing outward and must have a 150 mm vision panel — matching dressing room door standards, which are designed for privacy and accessibility"
+          "id": "a",
+          "text": "Not more than 2.0 kg"
         },
         {
-          "id": "B",
-          "text": "Must have no threshold and must be easy to open — addressing the needs of persons with cognitive and sensory disabilities"
+          "id": "b",
+          "text": "Not more than 20 kg"
         },
         {
-          "id": "C",
-          "text": "Must have automatic operation and must be equipped with a panic bar for emergency egress, ensuring quick and safe evacuation"
+          "id": "c",
+          "text": "At least 10 kg"
         },
         {
-          "id": "D",
-          "text": "Must swing inward and must have a 1,200 mm clear width — wider than the standard 900 mm accessible door, to accommodate larger mobility devices"
+          "id": "d",
+          "text": "No force limit for interior door closers"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Sensory room doors must have no threshold and be easy to open — both requirements address the needs of persons with cognitive, autism-spectrum, and sensory processing conditions.",
-        "explanation": "BP 344 (2024 IRR) Appendix A specifies two unique requirements for sensory room doors: (1) no threshold — even a small threshold can be a sensory or physical barrier for persons with autism spectrum conditions or anxiety; (2) easy to open hardware — persons experiencing sensory overload or panic need to exit without struggling with latches or heavy opening force. These requirements go beyond the standard 900 mm clear width and lever handle rules to address a specific population's needs. The outward swing requirement applies to dressing rooms, not sensory rooms.",
-        "common_misconceptions": [
-          "Applying the dressing room outward-swing requirement to sensory rooms",
-          "Assuming sensory rooms need only the standard 900 mm width and lever handle"
-        ]
-      },
+      "rationale": "Interior door closer devices must not require more than 2.0 kg of opening force, subject to listed exceptions.",
       "explanation": "This question tests the two special sensory room door requirements — no threshold and easy-to-open hardware — which are distinct from all other door provisions in BP 344.",
       "code_citation": "BP 344 2024 IRR, Appendix A, General Provisions",
       "bloom_level": "remember",
@@ -300,46 +265,39 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.423156+00:00",
       "content_hash": "sha256:2bf6cf03b86d37300f4ca2a00463d65000f05dbabd488e4fc9168b9b495c2f83"
     },
     {
       "question_id": "9f32d4cf-9823-43f4-94d6-f49e80239659",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 (2024 IRR), frameless full-height glass doors must have high-contrast markings within a specific height zone. What is this zone and why are both the lower and upper limits significant?",
+      "text": "Which doors are listed for swing-out use?",
       "options": [
         {
-          "id": "A",
-          "text": "600–1,200 mm AFF — spanning from floor-level cane detection up to wheelchair user eye level, ensuring visibility for all users"
+          "id": "a",
+          "text": "Storage rooms, closets, toilets, and accessible restroom stalls"
         },
         {
-          "id": "B",
-          "text": "900–1,500 mm AFF — covering both the seated wheelchair user's eye level and the standing adult's lower field of vision"
+          "id": "b",
+          "text": "Only exterior gates"
         },
         {
-          "id": "C",
-          "text": "1,000–1,800 mm AFF — spanning from the mirror bottom edge to the dressing room ISA height, providing comprehensive coverage"
+          "id": "c",
+          "text": "Only elevator doors"
         },
         {
-          "id": "D",
-          "text": "1,200–2,000 mm AFF — covering the full eye-level range for all adult users from seated to standing, maximizing accessibility"
+          "id": "d",
+          "text": "Only glass walls"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Glass door markings must span 900–1,500 mm AFF — the lower limit serves seated users; the upper limit ensures visibility at standing eye level.",
-        "explanation": "BP 344 (2024 IRR) Appendix A General Provisions requires high-contrast markings on frameless glass doors between 900 mm and 1,500 mm AFF. The lower limit (900 mm) ensures the marking is within the wheelchair user's primary field of view (seated eye level approximately 1,100–1,300 mm AFF, but the band starts below this for early detection). The upper limit (1,500 mm) brings the marking into the lower visual field of standing adults. Both limits are significant: the lower bound prevents floor-level confusion; the upper bound ensures standing visibility.",
-        "common_misconceptions": [
-          "Specifying only the upper limit (1,500 mm) and ignoring the 900 mm lower limit",
-          "Applying the general sign center maximum (1,500 mm) as a single point instead of a marking band"
-        ]
-      },
-      "explanation": "This question tests the glass door marking zone (900–1,500 mm) and the rationlea for both limits — frequently tested because candidates often remember only the 1,500 mm upper bound.",
+      "rationale": "BP 344 lists storage rooms, closets, toilets, and accessible restroom stalls for swing-out doors.",
+      "explanation": "This question tests the glass door marking zone (900–1,500 mm) and the rationale for both limits — frequently tested because candidates often remember only the 1,500 mm upper bound.",
       "code_citation": "BP 344 2024 IRR, Appendix A, General Provisions",
       "bloom_level": "understand",
       "application_context": null,
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.417472+00:00",
       "content_hash": "sha256:2bbcedbefc03176392e49b60b577106b0dbb30ae72447a37a9210a6bc1ddf03c"
     },
     {
       "question_id": "0afefe9e-6d53-43b4-90f1-37e13d8b36e7",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 (2024 IRR) Appendix A, what is the minimum clear width for a single-leaf accessible door, and how is this dimension measured?",
+      "text": "What sweep timing is required for swing doors?",
       "options": [
         {
-          "id": "A",
-          "text": "900 mm nominal door leaf width, measured across the door leaf itself before installation"
+          "id": "a",
+          "text": "At least 4 seconds from 70 degrees open to approximately 12 degrees"
         },
         {
-          "id": "B",
-          "text": "900 mm clear passage width, measured face of door at 90 degrees to the door jamb"
+          "id": "b",
+          "text": "Instant closing"
         },
         {
-          "id": "C",
-          "text": "900 mm rough opening width, measured between the structural framing members"
+          "id": "c",
+          "text": "One second only"
         },
         {
-          "id": "D",
-          "text": "900 mm centerline width, measured from the centerline of one jamb to the centerline of the other"
+          "id": "d",
+          "text": "No sweep timing"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The 900 mm is the clear passage width measured face-of-door at 90° to the jamb — not the nominal leaf size.",
-        "explanation": "BP 344 (2024 IRR) Appendix A specifies 900 mm as the minimum clear width of a single-leaf accessible door, measured with the door leaf open to 90° from the jamb, face to face across the clear opening. A 900 mm door leaf in a standard frame with 35–45 mm thickness typically yields only 855–870 mm clear passage — not 900 mm. A leaf of approximately 950–965 mm is usually needed to achieve the 900 mm clear requirement. This measurement method is the primary exam trap.",
-        "common_misconceptions": [
-          "Assuming a 900 mm door leaf provides 900 mm clear passage",
-          "Measuring the rough opening or centerline instead of the face-to-face clear passage"
-        ]
-      },
+      "rationale": "The source requires 4 seconds or more from 70 degrees open to approximately 12 degrees.",
       "explanation": "This question tests the critical distinction between nominal door leaf width and the actual 900 mm clear passage requirement — the most common door specification trap.",
       "code_citation": "BP 344 2024 IRR, Appendix A, General Provisions",
       "bloom_level": "understand",
@@ -402,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.419246+00:00",
       "content_hash": "sha256:0976a707d4da73b298fd72fd0e8dd5df5590f9038c70b6625466a7c6a96d448a"
     },
     {
       "question_id": "521fecfb-45be-4a27-bff5-e216b8aa42b1",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A door threshold is 10 mm high with a square-edged profile. Under BP 344 (2024 IRR), what must be done to make it compliant?",
+      "text": "What must accessible door hardware avoid?",
       "options": [
         {
-          "id": "A",
-          "text": "Nothing — 10 mm is below the 12 mm maximum and requires no modification under current regulations"
+          "id": "a",
+          "text": "Wrist action, tight grasping, pinching, or fine finger manipulation"
         },
         {
-          "id": "B",
-          "text": "The threshold must be beveled — thresholds between 6 mm and 12 mm must be beveled; a flat 10 mm threshold is non-compliant"
+          "id": "b",
+          "text": "Lever operation"
         },
         {
-          "id": "C",
-          "text": "The threshold must be removed entirely — any threshold above 6 mm is prohibited under BP 344, regardless of other factors"
+          "id": "c",
+          "text": "Visibility"
         },
         {
-          "id": "D",
-          "text": "The threshold must be painted in a contrasting color — a visual cue is sufficient for thresholds below 12 mm, according to some interpretations"
+          "id": "d",
+          "text": "Reachability"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "A 10 mm threshold must be beveled — it is within the 6–12 mm range where beveling is mandatory; a flat profile is non-compliant even below 12 mm.",
-        "explanation": "BP 344 (2024 IRR) Appendix A establishes three threshold rules: (1) ≤6 mm — flush or minimal bevel acceptable; (2) 6–12 mm — must be beveled; (3) >12 mm — not permitted. A 10 mm square-edged threshold fails because it is in the 6–12 mm range and must be beveled. The bevel prevents wheelchair front casters from catching on the abrupt edge. Height alone is not sufficient — the profile must also comply.",
-        "common_misconceptions": [
-          "Assuming any threshold below 12 mm is automatically compliant regardless of profile",
-          "Believing thresholds above 6 mm must be removed rather than beveled"
-        ]
-      },
+      "rationale": "BP 344 bars hardware that requires wrist action, tight grasping, pinching, or fine finger manipulation.",
       "explanation": "This question tests the three-tier threshold rule — the bevel requirement for 6–12 mm thresholds is frequently missed when candidates only focus on the 12 mm maximum height.",
       "code_citation": "BP 344 2024 IRR, Appendix A, General Provisions",
       "bloom_level": "apply",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.420085+00:00",
       "content_hash": "sha256:06b9e83d9cf1471f1e26568b255f1ee58e73f81e9fa4e21ee789677729bedd92"
     },
     {
       "question_id": "009d63ff-3edb-45d2-9e47-9b689e7c45ef",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A fire exit consists of a double-leaf door with two 900 mm leaves. Under BP 344 (2024 IRR), what is the required minimum combined clear width for this double-leaf door?",
+      "text": "At what height are handles, pulls, latches, and lever locksets centered?",
       "options": [
         {
-          "id": "A",
-          "text": "900 mm — opening one leaf is sufficient since it meets the single-leaf minimum"
+          "id": "a",
+          "text": "900 mm above floor finish"
         },
         {
-          "id": "B",
-          "text": "1,200 mm — one and a third times the single-leaf standard for emergency egress"
+          "id": "b",
+          "text": "300 mm above floor finish"
         },
         {
-          "id": "C",
-          "text": "1,500 mm — matching the accessible stair clear width for consistent accessible egress"
+          "id": "c",
+          "text": "1500 mm above floor finish"
         },
         {
-          "id": "D",
-          "text": "1,800 mm combined clear width, measured with both leaves open at 90 degrees"
+          "id": "d",
+          "text": "2200 mm above floor finish"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Double-leaf doors require 1,800 mm combined clear width — both leaves measured together at 90°.",
-        "explanation": "BP 344 (2024 IRR) Appendix A requires double-leaf doors to provide 1,800 mm combined clear width, measured with both leaves open at 90°. This is not simply 2 × 900 mm of nominal leaf size — each leaf must contribute to achieving the 1,800 mm clear passage. The 1,800 mm double-leaf standard is part of the '1800 Club' of BP 344 wheelchair maneuvering dimensions.",
-        "common_misconceptions": [
-          "Assuming that opening one 900 mm leaf satisfies the accessible door requirement",
-          "Using nominal leaf dimensions instead of measured clear passage"
-        ]
-      },
+      "rationale": "BP 344 centers these door controls at 900 mm above floor finish.",
       "explanation": "This question tests the double-leaf door requirement — 1,800 mm combined clear width — and distinguishes it from the 900 mm single-leaf standard.",
       "code_citation": "BP 344 2024 IRR, Appendix A, General Provisions",
       "bloom_level": "remember",
@@ -504,45 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.416273+00:00",
       "content_hash": "sha256:b1c5aae7ae431e4a2fed84ad75c8e2ee0d7cf5e41674f5a1b71366c10b87485c"
     },
     {
       "question_id": "b01378e9-f196-4916-ac27-7022c1ce0e7c",
       "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An architect's client instructs them to replace all accessible door lever handles with decorative round knobs throughout a commercial building to match a heritage design aesthetic. Under BP 344 and RA 9266, what must the architect do?",
+      "text": "What kick-plate height applies along major circulation routes?",
       "options": [
         {
-          "id": "A",
-          "text": "Comply with the client's instruction — clients have final design authority, and the architect can note the accessibility concern in writing, though this may not absolve liability"
+          "id": "a",
+          "text": "300 mm to 400 mm"
         },
         {
-          "id": "B",
-          "text": "Propose a compromise — use round knobs on non-accessible routes and lever handles only on designated accessible routes, ensuring compliance where necessary"
+          "id": "b",
+          "text": "50 mm to 100 mm"
         },
         {
-          "id": "C",
-          "text": "Refuse to sign and seal plans with round knobs — BP 344 compliance is mandatory and non-waivable; the architect's seal certifies compliance with all applicable laws"
+          "id": "c",
+          "text": "900 mm to 1200 mm"
         },
         {
-          "id": "D",
-          "text": "Submit to the Building Official for a variance — heritage aesthetic may justify an exception to BP 344 hardware requirements, though approval is not guaranteed"
+          "id": "d",
+          "text": "No kick plates"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The architect must refuse — BP 344 compliance is non-waivable, and signing non-compliant plans exposes the architect to professional and criminal liability under RA 9266.",
-        "explanation": "Under BP 344 and RA 9266 (Architecture Act of 2004), an architect's signature and seal is a certification of compliance with all applicable laws, including BP 344. Round knobs violate BP 344 because they require tight grasping and twisting — prohibited for accessible door hardware. If a client instructs the architect to specify non-compliant hardware, the architect must: (1) inform the client in writing that BP 344 is non-waivable; (2) refuse to sign and seal non-compliant plans; (3) if the client insists, withdraw from the project. The architect's obligation runs to the public and PWDs, not only to the client.",
-        "common_misconceptions": [
-          "Assuming the client's design authority overrides mandatory accessibility standards",
-          "Believing a heritage aesthetic creates a variance pathway for accessible hardware requirements"
-        ]
-      },
+      "rationale": "BP 344 requires durable kick plates at 300 mm to 400 mm high along major circulation routes.",
       "explanation": "This evaluation question tests professional ethics under RA 9266 — the architect's non-delegable duty to refuse to seal non-compliant plans, regardless of client instructions.",
       "code_citation": "BP 344 2024 IRR, Appendix A; RA 9266, Sec. 33",
       "bloom_level": "evaluate",
@@ -555,7 +485,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.055326+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.422403+00:00",
       "content_hash": "sha256:6bb736fcbc02f9c5a828f4580e11fdc682184c6e58e74912d5cf0b58c8ddc473"
     }
   ]

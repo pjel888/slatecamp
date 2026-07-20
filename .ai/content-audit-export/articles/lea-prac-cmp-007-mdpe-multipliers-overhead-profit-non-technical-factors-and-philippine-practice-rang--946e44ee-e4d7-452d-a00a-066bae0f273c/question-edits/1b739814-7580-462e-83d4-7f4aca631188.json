@@ -2,52 +2,28 @@
   "question_id": "1b739814-7580-462e-83d4-7f4aca631188",
   "baseline_hash": "sha256:31425c161f761794115aba35d68d1850def9077c13961f1384c6a61fef97bf11",
   "action": "replace",
-  "reason": "source-audited-article-batch-105-local-first refreshed linked professional-practice question against current local raw PDF/source anchors for lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
-  "approved_by": "codex-local-source-audit-batch-105",
-  "approved_at": "2026-05-13T12:52:00+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent F ERROR F1 / Q7): original marked-correct answer built the multiplier from a 1.55 overhead + 0.30 profit + 0.15 non-technical decomposition. SPP 202 Sec 5.2 rejects this decomposition; the source gives only the total 1.5-2.5 range with qualitative factors.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
     "parent_article_slug": "lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges",
     "parent_article_title": "MDPE Multipliers Overhead Profit Non Technical Factors",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
+    "support_status": "council_verified_fact_check",
+    "source_locator": "SPP Document 202, Section 5.2 (refined markdown lines 419-435): the source gives the total multiplier range of 1.5-2.5 and does not decompose it into overhead/profit/non-technical sub-components.",
     "checked_sources": [
       {
-        "source_id": "uap-standards-professional-practice2-local",
-        "label": "UAP Standards of Professional Practice - compiled SPP source",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
-        "checked_markdown_lines": [
-          "Standards of Professional Practice2 refined markdown lines 419-435",
-          "SPP 201 refined markdown lines 165-188 and 192-193"
-        ]
-      },
-      {
-        "source_id": "uap-spp-201-local",
-        "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
-        "checked_markdown_lines": [
-          "Standards of Professional Practice2 refined markdown lines 419-435",
-          "SPP 201 refined markdown lines 165-188 and 192-193"
-        ]
+        "source_id": "uap-spp-202-sec-5-2",
+        "label": "PRBoA SPP for Philippine Architects - SPP Document 202, Section 5.2",
+        "path": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf",
+        "locator": "SPP Document 202, Section 5.2: total multiplier range 1.5-2.5; no overhead/profit/non-technical sub-component schedule."
       }
     ],
-    "local_source_safe_action": "Batch 105 refreshed question text, options, answer key, rationale, explanation, and code citation to the audited article scope."
+    "local_source_safe_action": "Removed the 1.55+0.30+0.15 decomposition; rewrote the question so the multiplier is selected within the source-backed 1.5-2.5 range and the fee is computed as DPE x M."
   },
   "proposed": {
-    "text": "A direct cost of PHP 900,000 is multiplied by M = 2.0. What is the Fee before reimbursables?",
+    "text": "A firm agrees an MDPE multiplier of 2.0 (within the SPP 202 Sec 5.2 range of 1.5-2.5) on a direct personnel cost of PHP 900,000. What is the Fee before reimbursables?",
     "options": [
       {
         "id": "a",
@@ -63,19 +39,12 @@
       },
       {
         "id": "d",
-        "text": "PHP 2,900,000"
+        "text": "PHP 2,000,000 (from a 1.55 + 0.30 + 0.15 decomposition)"
       }
     ],
     "correct_option_id": "c",
-    "rationale": {
-      "a": "This divides by 2.0 instead of multiplying.",
-      "b": "This omits the multiplier.",
-      "c": "Fee = Direct Cost x M, so PHP 900,000 x 2.0 = PHP 1,800,000 before reimbursables.",
-      "d": "This adds an unsupported amount.",
-      "correct": "Fee = Direct Cost x M, so PHP 900,000 x 2.0 = PHP 1,800,000 before reimbursables.",
-      "takeaway": "The formula is direct cost times multiplier."
-    },
-    "explanation": "Fee = Direct Cost x M, so PHP 900,000 x 2.0 = PHP 1,800,000 before reimbursables. The formula is direct cost times multiplier.",
-    "code_citation": "UAP Standards of Professional Practice refined markdown lines 427-435"
+    "rationale": "SPP 202 Sec 5.2 gives the total multiplier range of 1.5-2.5 and does NOT decompose it into 1.55 overhead + 0.30 profit + 0.15 non-technical; that decomposition is an exam trap the article body rejects. Fee = DPE x M = PHP 900,000 x 2.0 = PHP 1,800,000 before reimbursables. Source: SPP 202 Sec 5.2 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
+    "explanation": "Fee = DPE x M with a source-backed M within 1.5-2.5. The 1.55+0.30+0.15 decomposition is not source-backed.",
+    "code_citation": "SPP Document 202, Section 5.2; PRBoA SPP for Philippine Architects"
   }
 }

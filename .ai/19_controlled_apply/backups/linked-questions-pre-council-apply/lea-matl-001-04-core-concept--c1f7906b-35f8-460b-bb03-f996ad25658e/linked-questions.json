@@ -1,0 +1,508 @@
+{
+  "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:904d28f067e2a0d119a69079eed18d47461c542f443706b20b53db8f5e2a7e6e",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "9bb6d2db-1746-4fe3-a6b8-3be6ed0b05c3",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "Pressure-treated lumber uses a ___ and ___ cycle to force preservative deep into the wood, achieving superior penetration compared to brush or spray application.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vacuum; high-pressure injection"
+        },
+        {
+          "id": "b",
+          "text": "heat; compression, which is less effective than the correct method"
+        },
+        {
+          "id": "c",
+          "text": "forced air; submersion, a method not typically used for deep penetration"
+        },
+        {
+          "id": "d",
+          "text": "steam; chemical soak, which is an alternative but less common method"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Heat and compression describe thermal modification, not pressure treatment.",
+        "c": "Forced air and submersion describe dip treatment, which is less effective than pressure treatment.",
+        "d": "Steam and soak describe kiln drying or surface treatment, not pressure treatment.",
+        "correct": "Pressure treatment uses a vacuum phase (extracting air from the wood) followed by a high-pressure phase (100—200 psi) to inject preservative solution deep into the lumber.",
+        "takeaway": "Pressure treatment is a two-phase process: vacuum + high-pressure injection. This is more effective than any single-phase method."
+      },
+      "explanation": "Heat and compression describe thermal modification, not pressure treatment. Forced air and submersion describe dip treatment, which is less effective than pressure treatment. Steam and soak describe kiln drying or surface treatment, not pressure treatment. Pressure treatment uses a vacuum phase (extracting air from the wood) followed by a high-pressure phase (100—200 psi) to inject preservative solution deep into the lumber. Pressure treatment is a two-phase process: vacuum + high-pressure injection. This is more effective than any single-phase method.",
+      "code_citation": "AWPA Standard U1; NSCP 2015 Section 2401",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:42:46.366858+00:00",
+      "content_hash": "sha256:406d02dc16b7ef46dc3b3766f93312872cf55d4bc7cfb10011287fb195c6209f"
+    },
+    {
+      "question_id": "ba0a4eec-eb69-4f69-8101-f3099602271b",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "Air drying of wood in the tropical Philippines typically achieves a final moisture content of ___%, which is higher than the optimal building range of ___—___% due to year-round warmth and humidity.",
+      "options": [
+        {
+          "id": "a",
+          "text": "18—20; 12 to 15"
+        },
+        {
+          "id": "b",
+          "text": "12—15; 18 to 20"
+        },
+        {
+          "id": "c",
+          "text": "25—30; 12 to 15"
+        },
+        {
+          "id": "d",
+          "text": "8—10; 15 to 20"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This reverses the values; air-drying does not reach 12—15% in tropical climates.",
+        "c": "25—30% is too wet; air-dried wood does not reach this in the Philippines without standing water.",
+        "d": "8—10% is overly dry and would be achieved only with kiln drying, not air drying.",
+        "correct": "Air-drying reaches equilibrium moisture content (EMC) determined by local climate. The Philippines' high relative humidity prevents wood from drying below 18—20% without kiln treatment. Optimal building moisture is 12—15%, so kiln drying is preferred.",
+        "takeaway": "Air drying in tropical Philippines is insufficient for optimal strength and durability; kiln drying is necessary to reach target moisture content below 15%."
+      },
+      "explanation": "This reverses the values; air-drying does not reach 12—15% in tropical climates. 25—30% is too wet; air-dried wood does not reach this in the Philippines without standing water. 8—10% is overly dry and would be achieved only with kiln drying, not air drying. Air-drying reaches equilibrium moisture content (EMC) determined by local climate. The Philippines' high relative humidity prevents wood from drying below 18—20% without kiln treatment. Optimal building moisture is 12—15%, so kiln drying is preferred. Air drying in tropical Philippines is insufficient for optimal strength and durability; kiln drying is necessary to reach target moisture content below 15%.",
+      "code_citation": "NSCP 2015 Section 2401 (moisture considerations); AWPA U1 treatment standards (dry lumber requirement)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T15:42:46.534279+00:00",
+      "content_hash": "sha256:1ececcfdfb4478aa2a740454514499b1d95fa29ea698e504d651bab405bdae80"
+    },
+    {
+      "question_id": "335de0f4-6231-4e1b-b844-fe6518654f3b",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "A specification for a residential deck in the Philippines requires UC3A (exterior above-ground) lumber. The designer specifies borate-treated softwood with galvanized fasteners. Is this adequate, and why or why not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No; borate treatments are UC1 only (interior dry); UC3A above-ground exposure requires pressure-treated copper-based preservative (ACQ or CA-B)."
+        },
+        {
+          "id": "b",
+          "text": "Yes; borate-treated lumber is adequate for any exterior application if fasteners are galvanized, although this may not meet all durability standards"
+        },
+        {
+          "id": "c",
+          "text": "No; only hardwoods such as narra or molave are suitable for deck applications, as they provide superior resistance to environmental factors"
+        },
+        {
+          "id": "d",
+          "text": "Yes; UC3A does not require preservative treatment, so borate is acceptable, provided the design does not demand high durability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Borate is insufficient; copper-based preservatives are required for UC3A.",
+        "c": "UC3A does require preservative treatment in tropical climates; NSCP 2015 mandates treatment for exterior exposure.",
+        "d": "Native hardwoods are excellent for decks but must be pressure-treated or regularly finished/sealed; borate treatment is still insufficient.",
+        "correct": "AWPA UC3A specifies exterior above-ground use: roof over-hangs, uncovered porches, siding. Borate is UC1 only because it leaches rapidly in wet environments. Even UC3A (not in soil contact) receives rainwater and morning dew in tropical Philippines. Copper-based pressure-treated preservative (ACQ or CA-B) is required to prevent decay and termite attack.",
+        "takeaway": "Match preservative to use category: UC1=borate, UC3/UC4=copper-based pressure treatment. Do not mix categories; borate is never acceptable for exterior applications."
+      },
+      "explanation": "Borate is insufficient; copper-based preservatives are required for UC3A. UC3A does require preservative treatment in tropical climates; NSCP 2015 mandates treatment for exterior exposure. Native hardwoods are excellent for decks but must be pressure-treated or regularly finished/sealed; borate treatment is still insufficient. AWPA UC3A specifies exterior above-ground use: roof over-hangs, uncovered porches, siding. Borate is UC1 only because it leaches rapidly in wet environments. Even UC3A (not in soil contact) receives rainwater and morning dew in tropical Philippines. Copper-based pressure-treated preservative (ACQ or CA-B) is required to prevent decay and termite attack. Match preservative to use category: UC1=borate, UC3/UC4=copper-based pressure treatment. Do not mix categories; borate is never acceptable for exterior applications.",
+      "code_citation": "AWPA Standard U1 Use Category definitions; NSCP 2015 Section 2401.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T15:42:46.788989+00:00",
+      "content_hash": "sha256:4b1906a9f83b8e2abefefc40ba1da8674859f29650befbba4ce6d1f060f45195"
+    },
+    {
+      "question_id": "45179220-d3ca-4186-b9b4-d3f19bf52029",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "A specification calls for ACQ-treated lumber in an exterior deck application. The designer specifies standard galvanized steel deck screws (ASTM A 153 Class A). Is this adequate, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No; ACQ is approximately 5 times more corrosive to steel than CCA. Class D galvanized (hot-dipped) or stainless steel is required."
+        },
+        {
+          "id": "b",
+          "text": "Yes; galvanized fasteners are adequate for all treated wood applications, regardless of the specific treatment chemicals used"
+        },
+        {
+          "id": "c",
+          "text": "No; ACQ-treated wood requires no metal fasteners—only screws glued with polyurethane, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Yes; standard galvanized is equivalent to Class D galvanized, which is a misunderstanding of the ASTM standards"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Galvanized fasteners are necessary but Class A is insufficient for ACQ-treated wood.",
+        "c": "Structural fasteners cannot be glued; bolted and screwed connections require mechanical fasteners.",
+        "d": "Class A and Class D galvanizing are significantly different in thickness and durability; Class D is hot-dipped (thick), Class A is electroplated (thin).",
+        "correct": "ACQ's alkaline copper compound accelerates corrosion of standard galvanized coatings. ASTM A 153 Class D (hot-dipped galvanized) provides thicker coating (50—70 microns) compared to Class A (5—10 microns). Stainless steel (316 or 316L) is preferred for maximum durability.",
+        "takeaway": "ACQ requires high-quality fasteners: ASTM A 153 Class D galvanized minimum, stainless preferred. Never use standard galvanized or uncoated steel with ACQ."
+      },
+      "explanation": null,
+      "code_citation": "AWPA U1 Standard; ASTM A 153 specifications; NSCP 2015 Section 2401.4",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8e43b11e12a344215bd891fe7664e4168b2971ae3a2a4892dfdbf09ee0943f8d"
+    },
+    {
+      "question_id": "553bc2c6-b97e-43ce-af85-34ea7d24aaac",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "Which of the following statements best describes the difference between borate-treated wood and copper-azole (CA-B) treated wood in terms of suitable applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Borate is suitable only for interior, always-dry applications; copper-azole is suitable for exterior and ground-contact applications."
+        },
+        {
+          "id": "b",
+          "text": "Borate and copper-azole are equivalent in durability and can be used interchangeably, although this is not recommended"
+        },
+        {
+          "id": "c",
+          "text": "Borate is superior for ground contact because it does not leach, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Copper-azole is only suitable for above-ground exterior applications, not interior, due to its chemical composition"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "They differ significantly in application scope; the first answer is correct.",
+        "c": "Borates leach readily in wet conditions; they are not equivalent to copper-based preservatives.",
+        "d": "Copper-azole can be used in interior applications if exterior durability is desired; it is not restricted.",
+        "correct": "Borates (sodium tetraborate pentahydrate) are water-soluble and leach out in wet environments; they are AWPA UC1 only (interior, dry). Copper-azole is insoluble and suitable for UC3 (exterior above-ground) and UC4 (ground-contact), making it versatile.",
+        "takeaway": "Borate = interior only (UC1). Copper-based preservatives (ACQ, CA-B, CA-C) = exterior and ground contact (UC3, UC4)."
+      },
+      "explanation": null,
+      "code_citation": "AWPA Standard U1; NSCP 2015 Section 2401",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ef24f82a1783f4161c21a8a173290489196e8898ef3f47b1eadc7d8564e23f52"
+    },
+    {
+      "question_id": "69ef4dc0-5b31-4643-85cd-ab0d423d60c1",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "CCA (Chromated Copper Arsenate) is now restricted or banned in many countries, including the Philippines, for residential applications. Which of the following is the primary reason?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arsenic content poses environmental and health risks, especially for children's play structures."
+        },
+        {
+          "id": "b",
+          "text": "CCA does not protect against termites in tropical climates, which can lead to structural failures over time"
+        },
+        {
+          "id": "c",
+          "text": "CCA-treated wood becomes brittle and fails after 10 years, making it unsuitable for long-term applications"
+        },
+        {
+          "id": "d",
+          "text": "CCA is more expensive than modern alternatives, which offer similar protection with fewer health risks"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "CCA is very effective against termites; tropical protection is not the issue.",
+        "c": "CCA does not become brittle; wood durability is not the concern.",
+        "d": "Cost was not the primary driver of restriction; health and environmental risk was.",
+        "correct": "CCA contains arsenic as the active insecticide component. Arsenic is a known carcinogen; leaching and human contact (particularly children ingesting soil or handling untreated cut ends) triggered restrictions in the U.S. (2004) and elsewhere.",
+        "takeaway": "Know why CCA was restricted: arsenic toxicity in residential use, especially for children's contact and food-handling areas."
+      },
+      "explanation": null,
+      "code_citation": "AWPA U1 Standard; U.S. EPA consumer product restrictions (2004); NSCP 2015 Section 2401",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:75036eff3ad712300338073a116763158be395c8fdab7f6bce9e993ab2bef991"
+    },
+    {
+      "question_id": "53bde6d5-a918-4d90-9f0f-7d88dd9b7019",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "A residential foundation beam requires UC4A treatment (ground contact). The builder plans to reuse 5-year-old ACQ-treated lumber from a demolition site without verification of original treatment retention. What is the primary concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treatment retention may have diminished over 5 years due to surface leaching, and the original retention level is unknown; new pressure-treated lumber with documented AWPA compliance is required for ground contact."
+        },
+        {
+          "id": "b",
+          "text": "All ACQ-treated lumber is identical regardless of age; reuse is acceptable if the wood appears sound, assuming no visible damage"
+        },
+        {
+          "id": "c",
+          "text": "ACQ-treated wood is not suitable for ground contact and must be replaced with CCA-treated wood, which offers better durability"
+        },
+        {
+          "id": "d",
+          "text": "Five years is the maximum service life for ACQ-treated wood; the wood must be discarded, as it no longer meets safety standards"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Treatment retention is not identical across all lumber; documentation is essential.",
+        "c": "CCA is restricted for residential use; ACQ is the modern standard. The issue is not ACQ's suitability but verification of retention.",
+        "d": "Five years is not the maximum service life; ACQ-treated wood can serve 20—50+ years if treated and maintained properly.",
+        "correct": "Preservative retention can decrease over decades due to surface leaching and weathering. Without a mill report or independent testing (AWPA in-grade inspection), the designer cannot verify that the lumber still meets UC4A retention requirements (0.6 lb/ft³ for ACQ). For critical applications (ground contact, foundation), new lumber with documented retention is required.",
+        "takeaway": "Never assume treatment adequacy from appearance alone. Ground-contact applications require documented mill reports or in-grade inspection to verify retention levels."
+      },
+      "explanation": null,
+      "code_citation": "AWPA Standard U1 and QS (Quality Standard); NSCP 2015 Section 2401.2 (documentation requirements)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fffa945cda4d163e2011a5475fc7d1517120ac0c38ea435272819319bf019401"
+    },
+    {
+      "question_id": "b559b57d-4c91-43b2-8fd5-645f8d2e6a0c",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "An exterior beam in a Philippine building is built from kiln-dried, unfinished narra wood (a native hardwood). After 3 years, decay fungi have colonized the surface. Which of the following is the most likely cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The wood lacks a protective finish and moisture-sealing coat; unfinished wood absorbs rain moisture, creating conditions favorable for fungal growth despite kiln-drying."
+        },
+        {
+          "id": "b",
+          "text": "Narra wood cannot resist decay and must be replaced with treated softwood, which is more resistant to the humid climate"
+        },
+        {
+          "id": "c",
+          "text": "Kiln-dried wood does not resist decay; only pressure-treated lumber is decay-resistant, especially in tropical environments"
+        },
+        {
+          "id": "d",
+          "text": "The Philippines' climate is too humid for any unfinished wood, treated or not, making it unsuitable for exterior use without additional protection"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Narra is a premium hardwood; the issue is lack of finish, not wood quality.",
+        "c": "Kiln-dried native hardwoods resist decay better than green wood; pressure treatment is preferred for ground contact but not necessary for above-ground exposed timber if finished properly.",
+        "d": "The Philippines' humidity does not make all unfinished wood fail immediately; proper finish application (paint, sealant every 3—5 years) maintains protection.",
+        "correct": "Kiln-drying reduces initial moisture content to 12—15%, which inhibits fungal growth initially. However, tropical rainfall and humidity quickly re-saturate unfinished wood. Without paint, stain, or sealant, the wood absorbs moisture and becomes conducive to fungal colonization. A finish coat is essential for long-term protection.",
+        "takeaway": "Kiln drying is a prerequisite for construction-grade wood, but it is not a substitute for finish coatings in tropical climates. Maintenance and repainting are essential."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401 (wood design, durability requirements); ACI 308 (climate considerations in tropical regions)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:66d3278b5933ce253fde82f72fb1942667ad887f7b462af500ab17d7e04af670"
+    },
+    {
+      "question_id": "c7dc5393-47d7-49a3-823b-86d87662523c",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "Which of the following is the primary reason that brush application of preservative is not accepted as a complete treatment method for structural lumber in ground-contact applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Brush application provides only thin surface penetration (less than 1/4 inch), leaving the interior wood unprotected against decay and insects."
+        },
+        {
+          "id": "b",
+          "text": "Brush application dries too quickly and causes wood checking, leading to potential structural weaknesses over time"
+        },
+        {
+          "id": "c",
+          "text": "Brush preservatives are more expensive than pressure-treated lumber, making them a less cost-effective option for large projects"
+        },
+        {
+          "id": "d",
+          "text": "Brush application is adequate but requires re-application every year, increasing maintenance efforts and costs"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Brush application does not cause checking (improper drying does); this is not the structural concern.",
+        "c": "Cost is secondary to durability; code requirements mandate adequate penetration.",
+        "d": "Annual re-application is not practical for structural lumber buried in soil; deep penetration from pressure treatment is required.",
+        "correct": "Decay and insects (termites, beetles) can penetrate 1/4 inch in months, reaching unprotected interior wood. Ground contact and soil contact expose the wood to constant wetness and biological attack. Only pressure treatment (achieving deep penetration of 0.5—1.5 inches or more) provides reliable long-term protection.",
+        "takeaway": "Brush, spray, and dip treatments are surface treatments only. For ground contact and deep structural protection, pressure treatment (AWPA U1) is required."
+      },
+      "explanation": "Brush application does not cause checking (improper drying does); this is not the structural concern. Cost is secondary to durability; code requirements mandate adequate penetration. Annual re-application is not practical for structural lumber buried in soil; deep penetration from pressure treatment is required. Decay and insects (termites, beetles) can penetrate 1/4 inch in months, reaching unprotected interior wood. Ground contact and soil contact expose the wood to constant wetness and biological attack. Only pressure treatment (achieving deep penetration of 0.5—1.5 inches or more) provides reliable long-term protection. Brush, spray, and dip treatments are surface treatments only. For ground contact and deep structural protection, pressure treatment (AWPA U1) is required.",
+      "code_citation": "AWPA Standard U1; NSCP 2015 Section 2401.3 (preservative-treated lumber criteria)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T15:42:46.661425+00:00",
+      "content_hash": "sha256:b583ca521f2c164ace589fec29c2f1cbc963a9a8caf382742c0513cbd67132d5"
+    },
+    {
+      "question_id": "26506e81-fa69-47ae-929a-c198620ea2a4",
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "topic_id": "4284290a-1e15-4b93-843f-534c6410f9bc",
+      "text": "Which of the following wood-decay organisms is most common in Philippine construction and can reduce structural timbers to hollow shells within 2—3 years if untreated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Subterranean termites, which build mudtubes from soil and attack structural wood"
+        },
+        {
+          "id": "b",
+          "text": "Wood-decay fungi, which colonize surface layers slowly, typically requiring high moisture levels"
+        },
+        {
+          "id": "c",
+          "text": "Powder-post beetles, which are confined to softwoods and rarely cause significant structural damage"
+        },
+        {
+          "id": "d",
+          "text": "Marine borers, which are limited to coastal waterfront structures and do not affect inland buildings"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Fungi decay wood but more slowly; termites are the faster and more destructive threat.",
+        "c": "Powder-post beetles are present but less common than termites and less destructive.",
+        "d": "Marine borers are coastal concerns; subterranean termites are ubiquitous.",
+        "correct": "Subterranean termites (Isoptera) are the primary structural threat in the Philippines. They build mudtubes from soil to wood and consume cellulose rapidly, causing catastrophic failure. Other organisms (fungi, powder-post beetles, marine borers) are secondary concerns or limited in scope.",
+        "takeaway": "In Philippine construction, termite protection (pressure-treated preservatives, barriers, inspection) is the top priority."
+      },
+      "explanation": null,
+      "code_citation": "DENR timber protection guidelines; NSCP 2015 Section 2401 (decay protection requirements)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b29012d345db6cbcb7d174fa57555a29dc68bd184876da6b0ad193420813e4c2"
+    }
+  ]
+}

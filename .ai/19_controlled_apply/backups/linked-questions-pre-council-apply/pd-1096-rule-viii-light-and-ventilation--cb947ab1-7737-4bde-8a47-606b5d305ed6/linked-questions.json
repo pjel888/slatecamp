@@ -1,0 +1,1152 @@
+{
+  "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4877799c750d9e5fb7cc74f71d4bdf2c8629104b9e18fdd768563e99608eb23b",
+  "question_count": 26,
+  "questions": [
+    {
+      "question_id": "fe6797d2-c711-45df-9490-12c8332bb9dc",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per Sec. 810, if a ventilation skylight is used in place of a required window, the glass area of the skylight must be:",
+      "options": [
+        {
+          "id": "A",
+          "text": "At least 10% of the floor area of the room"
+        },
+        {
+          "id": "B",
+          "text": "Not less than the glass area of the window(s) it replaces"
+        },
+        {
+          "id": "C",
+          "text": "At least 1.00 sq.m. regardless of the window size"
+        },
+        {
+          "id": "D",
+          "text": "Half the area of the window it replaces, since skylights admit more light"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 810 is a substitution test — the skylight must provide at least equivalent light-transmitting area to the window it replaces. The skylight may not provide less light or ventilation than the window it substitutes for. If equivalent openable area cannot be achieved through a skylight, 'approved artificial ventilation of equivalent effectiveness' may be used, but the burden of proof rests on the design professional.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:653db422ad069d1b71ebbc74aeca2c5e4ae335ca922013c87aa88de42bc384fd"
+    },
+    {
+      "question_id": "c2a1c833-81bb-458c-96a1-b169aa084667",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "For a ventilation skylight per Sec. 810, the net free area of the movable sash or louver must be at least equal to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The total glass area of the skylight itself, including any fixed panels that do not open"
+        },
+        {
+          "id": "B",
+          "text": "The required openable area of the window(s) it replaces"
+        },
+        {
+          "id": "C",
+          "text": "10% of the room's floor area, calculated based on the net usable space excluding built-in furniture"
+        },
+        {
+          "id": "D",
+          "text": "0.30 sq.m. as a code minimum, which applies regardless of the room's size or function"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 810 requires that the movable sash or louver in the skylight provide a net free area not less than the openable area that was required for the replaced window. The free (openable) area of the skylight must match the ventilation capacity of the original window — glass area and free area are separately governed requirements.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a71b90b30896537d9758df1346e99d7d67e1cad816f407e4c34ba281704433c8"
+    },
+    {
+      "question_id": "5afd2ad4-ba08-4f5f-8702-8cd2810b4c77",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per Sec. 811-a, which of the following types of rooms requires artificial ventilation regardless of whether they have direct access to exterior openings or windows?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Residential kitchens in single-family dwellings"
+        },
+        {
+          "id": "B",
+          "text": "Public toilet rooms in commercial buildings"
+        },
+        {
+          "id": "C",
+          "text": "Industrial or heating equipment rooms"
+        },
+        {
+          "id": "D",
+          "text": "General office rooms in office buildings"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 811-a explicitly requires artificial ventilation for rooms housing industrial or heating equipment regardless of other ventilation available. The rationale: such rooms generate heat, combustion products, and pollutant loads that require mechanical extraction — natural ventilation cannot reliably handle the peak loads from equipment operation. This requirement supplements, not replaces, any other applicable ventilation standards.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a91f80f54014fdd8006b93161aff6293c07ecda859ca306238478bb35131900b"
+    },
+    {
+      "question_id": "c97510b9-bac7-4744-baaf-fabc8166e9e6",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 808, which of the following statements about the window free area requirement is correct?",
+      "options": [
+        {
+          "id": "lv-010-a",
+          "text": "Only the gross window size (frame included) counts toward the 10% requirement, which is calculated based on the total floor area of the room."
+        },
+        {
+          "id": "lv-010-b",
+          "text": "Only the free opening area (net area excluding frames, fixed mullions, and non-operable portions) counts toward the 10% requirement"
+        },
+        {
+          "id": "lv-010-c",
+          "text": "Grilles that block airflow do not reduce the effective free area, provided they are decorative and do not exceed 50% coverage."
+        },
+        {
+          "id": "lv-010-d",
+          "text": "The 10% rule applies only to habitable rooms, not to any room without artificial ventilation, unless specified otherwise by local amendments."
+        }
+      ],
+      "correct_option_id": "lv-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "A window with decorative iron grilles, thick frames, and fixed louvered panels might have a gross size of 1.50 sq.m but a free opening of only 0.60 sq.m. The 0.60 sq.m is what counts for ventilation compliance. Architects must specify operable, unobstructed window area — not just nominal opening dimensions.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e9ccd87df328a7b48d2b0f185320d4c3036bf63886961ef62b3a9a3cb983eff"
+    },
+    {
+      "question_id": "a655cff8-15f3-4c6f-bca9-75bc48f4d5ec",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 808, what is the absolute minimum free area for windows in a room without artificial ventilation, and how does this interact with the percentage-based calculation?",
+      "options": [
+        {
+          "id": "lv-014-a",
+          "text": "1.00 sq.m minimum; the percentage-based calculation always governs regardless of the minimum, ensuring compliance with ventilation standards"
+        },
+        {
+          "id": "lv-014-b",
+          "text": "1.00 sq.m minimum; if the computed 10% of floor area is less than 1.00 sq.m, use 1.00 sq.m instead"
+        },
+        {
+          "id": "lv-014-c",
+          "text": "0.50 sq.m minimum; if the computed 10% of floor area is less than 0.50 sq.m, use 0.50 sq.m instead, which is often the case in smaller rooms"
+        },
+        {
+          "id": "lv-014-d",
+          "text": "2.00 sq.m minimum; no percentage-based calculation applies, making it a straightforward requirement for all room sizes"
+        }
+      ],
+      "correct_option_id": "lv-014-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The absolute minimum (1.00 sq.m) is the floor, not the target. For a 25.00 sq.m bedroom, 10% × 25.00 = 2.50 sq.m > 1.00 sq.m → use 2.50 sq.m. The 1.00 sq.m only kicks in for very small rooms where 10% of floor area falls below it.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8750aa75aa4cba1c7d46472e682111968b7e5e09b189652bc04e2bbfd70497e6"
+    },
+    {
+      "question_id": "8f52ddf9-4582-4c78-aee0-ca1ac351ad0c",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule IX, Sec. 905, under what condition must public dining rooms without artificial ventilation be screened?",
+      "options": [
+        {
+          "id": "A",
+          "text": "All public dining rooms regardless of ventilation type must be screened to ensure compliance with health and safety standards, preventing the entry of pests and maintaining air quality."
+        },
+        {
+          "id": "B",
+          "text": "Public dining rooms without artificial ventilation must be properly screened"
+        },
+        {
+          "id": "C",
+          "text": "Only dining rooms larger than 50 sq.m require screening, as smaller spaces are considered less susceptible to ventilation issues and pest intrusion."
+        },
+        {
+          "id": "D",
+          "text": "Only ground-floor dining rooms need to be screened, as they are more exposed to external environmental factors compared to upper floors."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule IX, Sec. 905, dining rooms for public use that are without artificial ventilation shall be properly screened. The requirement applies specifically to naturally ventilated public dining spaces to prevent fly-borne contamination.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.033224+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:909763c7410a01696cfa78d10ee7fd85ec0daf9963801a7a188c99da8151ed40"
+    },
+    {
+      "question_id": "13ae9baa-7b7b-4c6a-8bce-afb61b0d637f",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 808, windows required for light and ventilation must open to which of the following? Which answer is INCORRECT?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A court, yard, public street, or alley where air and light can freely enter"
+        },
+        {
+          "id": "b",
+          "text": "A qualifying roofed porch that abuts an open space with ceiling height ≥ 2.70 m and ≥ 65% open on the longer side"
+        },
+        {
+          "id": "c",
+          "text": "An enclosed interior corridor between rooms, provided it is air-conditioned"
+        },
+        {
+          "id": "d",
+          "text": "An open watercourse abutting the property where air and light can freely reach the opening"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "An enclosed interior corridor — even if air-conditioned — does not constitute a valid opening for required windows under Sec. 808. Windows must open to a court, yard, public street, alley, open watercourse, or a qualifying roofed porch. A window that faces only an enclosed interior corridor provides no path for outdoor air and natural light and therefore cannot satisfy the natural ventilation and light requirements of Rule VIII.",
+      "explanation": "This question tests the evaluative skill of identifying non-compliance. Options A, B, and D are all valid configurations under Sec. 808. Option C is the distractor: air conditioning does not substitute for a valid outdoor opening under the natural ventilation provisions of Rule VIII.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 808 (2004 IRR)",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0747e97bca988abc88b48a86ab3ec894b4c099a3e9557b982643da1c244aa8f2"
+    },
+    {
+      "question_id": "0a849610-08d5-4911-82fe-8b4a06f64a4d",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A naturally ventilated master bedroom is 25.00 sq.m; its en-suite bathroom is 4.00 sq.m. Under PD 1096 Rule VIII, Sec. 808, what are the minimum required free window areas for each room?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.20 sq.m"
+        },
+        {
+          "id": "b",
+          "text": "Bedroom: 1.00 sq.m; Bathroom: 0.24 sq.m"
+        },
+        {
+          "id": "c",
+          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.24 sq.m"
+        },
+        {
+          "id": "d",
+          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.40 sq.m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Bedroom: 10% of 25.00 = 2.50 sq.m, which exceeds the 1.00 sq.m absolute minimum, so 2.50 sq.m governs. Bathroom: IRR practice applies 5% rule — 5% of 4.00 = 0.20 sq.m; compare to 0.24 sq.m minimum free area — use the more restrictive 0.24 sq.m. The '240 sq. millimeters' in the printed IRR is a known unit error; professional and PRBoA-annotated practice treats this as 0.24 sq.m.",
+      "explanation": "Two rules apply together here: (1) the 5% rule for bathrooms vs. the 10% general rule; (2) the absolute minimum floor of 0.24 sq.m. Because 0.24 sq.m > 0.20 sq.m computed, the absolute minimum governs. Only the free opening area counts — deduct frames, fixed mullions, and non-operable portions.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 808 (2004 IRR) / PRBoA annotated IRR",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ef29cb74e1c144e476385a6f13511e1670d12c9c456512c2ba35f90a7de1fb0"
+    },
+    {
+      "question_id": "82a2f551-c3f9-44dd-a97e-d92f7f49e05c",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 806, what are the minimum floor areas and minimum least dimensions for rooms for human habitation, kitchens, and bathrooms/toilets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Habitable: 6.00 sq.m / 2.00 m; Kitchen: 3.00 sq.m / 1.50 m; Bath: 1.20 sq.m / 0.90 m"
+        },
+        {
+          "id": "b",
+          "text": "Habitable: 5.00 sq.m / 2.00 m; Kitchen: 2.50 sq.m / 1.20 m; Bath: 1.00 sq.m / 0.80 m"
+        },
+        {
+          "id": "c",
+          "text": "Habitable: 6.00 sq.m / 2.50 m; Kitchen: 3.00 sq.m / 1.50 m; Bath: 1.50 sq.m / 1.00 m"
+        },
+        {
+          "id": "d",
+          "text": "Habitable: 8.00 sq.m / 2.50 m; Kitchen: 4.00 sq.m / 2.00 m; Bath: 1.50 sq.m / 1.20 m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 806, the minimum room sizes are: rooms for human habitation (sleeping/living) — 6.00 sq.m floor area, 2.00 m least dimension; kitchens — 3.00 sq.m floor area, 1.50 m least dimension; bath and toilet — 1.20 sq.m floor area, 0.90 m least dimension. The mnemonic '6–3–1.2 / 2–1.5–0.9' (area / least dimension) encodes all six values.",
+      "explanation": "The least dimension requirement prevents 'corridor rooms' that technically meet area minimums but are functionally unusable. A 6.00 sq.m room that is 0.50 m × 12.00 m meets area but fails the 2.00 m least dimension requirement.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 806 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b29a437c23577ff26685ca1fbf42a41c7fc2a4e28b4bfd46d1b1fe0dc3f3d2ea"
+    },
+    {
+      "question_id": "e40268c9-de75-4811-8344-416f1f46c4b6",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 805, what are the minimum ceiling heights for rooms with natural ventilation, rooms with artificial ventilation, and mezzanine floors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Natural: 2.70 m; Artificial: 2.40 m; Mezzanine: 1.80 m clear above and below"
+        },
+        {
+          "id": "b",
+          "text": "Natural: 2.40 m; Artificial: 2.70 m; Mezzanine: 1.50 m clear above and below"
+        },
+        {
+          "id": "c",
+          "text": "Natural: 2.70 m; Artificial: 2.70 m; Mezzanine: 1.80 m clear above and below"
+        },
+        {
+          "id": "d",
+          "text": "Natural: 2.50 m; Artificial: 2.40 m; Mezzanine: 2.00 m clear above and below"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 805: rooms with natural ventilation require 2.70 m minimum ceiling height on all floors; rooms with artificial ventilation require 2.40 m; mezzanine floors require 1.80 m clear height above and below. The higher minimum for naturally ventilated rooms reflects the need for adequate air-exchange volume through stack effect. You cannot apply the lower 2.40 m standard to naturally ventilated rooms.",
+      "explanation": "The mezzanine double-check trap: 1.80 m clear must be verified both above and below the mezzanine floor. Checking only the upper clearance is insufficient. A mezzanine with 1.80 m above but 1.50 m below is non-compliant.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 805 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2809f6c66b0ca908edef15a5ad2b1746389f5c0f7734fdd3d4dc668035aa8648"
+    },
+    {
+      "question_id": "aebc577f-0d76-44e0-b8fa-8d24cb7802a6",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 807, what is the minimum air space per person for school rooms, workshops/factories/offices, and habitable sleeping rooms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "School: 3.00 cu.m; Workshop/office: 12.00 cu.m; Habitable: 14.00 cu.m"
+        },
+        {
+          "id": "b",
+          "text": "School: 5.00 cu.m; Workshop/office: 15.00 cu.m; Habitable: 20.00 cu.m"
+        },
+        {
+          "id": "c",
+          "text": "School: 3.00 cu.m; Workshop/office: 10.00 cu.m; Habitable: 12.00 cu.m"
+        },
+        {
+          "id": "d",
+          "text": "School: 4.00 cu.m; Workshop/office: 12.00 cu.m; Habitable: 16.00 cu.m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 807, the minimum air space per person is: school rooms — 3.00 cu.m; workshops, factories, and offices — 12.00 cu.m; habitable rooms (sleeping/living) — 14.00 cu.m. Mnemonic: '3–12–14: School, Work, Home.' School rooms have the smallest requirement because students occupy them for defined short periods; habitable rooms have the largest because occupants spend extended overnight hours in them.",
+      "explanation": "Worked example: a 60 sq.m school room at 3.00 m ceiling = 180 cu.m volume. Maximum occupancy = 180 / 3.00 = 60 students. If ceiling is 2.70 m, volume = 162 cu.m, maximum = 162 / 3.00 = 54 students. The air space calculation determines maximum legal occupancy.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ff8101274f0c580b35cf54a7fa11cefa36e78828d1ca13f5d7c503107cb9c95"
+    },
+    {
+      "question_id": "d92e0195-f2d3-451e-8262-859fe95d87fe",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 808, a window may open into a roofed porch instead of directly to a yard or street. Which THREE conditions must ALL be satisfied?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porch abuts an open space; porch ceiling height ≥ 2.70 m; at least 65% of the longer side is open and unobstructed"
+        },
+        {
+          "id": "b",
+          "text": "Porch abuts a property line; porch ceiling height ≥ 2.40 m; at least 50% of the longer side is open and unobstructed"
+        },
+        {
+          "id": "c",
+          "text": "Porch abuts an open space; porch ceiling height ≥ 2.70 m; at least 50% of the longer side is open and unobstructed"
+        },
+        {
+          "id": "d",
+          "text": "Porch abuts an open space; porch ceiling height ≥ 2.40 m; at least 65% of the longer side is open and unobstructed"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 808, windows may open to a roofed porch only when ALL three conditions are met: (1) the porch abuts a court, yard, public street, alley, or open watercourse; (2) porch ceiling height is at least 2.70 m; (3) at least 65% of the longer side of the porch is open and unobstructed. Failing any single condition invalidates the exception.",
+      "explanation": "The 65% open rule ensures the porch functions as a genuine outdoor buffer with adequate air movement, not merely as a transitional enclosed space. The 2.70 m ceiling matches the natural-ventilation minimum, reinforcing that the porch must act like an outdoor condition.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 808 (2004 IRR)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9929b8bb6a85b39f7ef02cb0c6dcd9703ae43620637dfaa5d8482ac766c8a8d"
+    },
+    {
+      "question_id": "3a5d8ae5-f700-4f41-a3bc-b98e76999733",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 804, what are the minimum horizontal dimension of any court and the minimum width of a passageway to an inner court?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum court dimension: 1.20 m; minimum passageway: 0.90 m"
+        },
+        {
+          "id": "b",
+          "text": "Minimum court dimension: 2.00 m; minimum passageway: 1.20 m"
+        },
+        {
+          "id": "c",
+          "text": "Minimum court dimension: 2.00 m; minimum passageway: 0.90 m"
+        },
+        {
+          "id": "d",
+          "text": "Minimum court dimension: 1.50 m; minimum passageway: 1.20 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 804, the minimum horizontal dimension of any court is 2.00 m, and the minimum width of a passageway to an inner court is 1.20 m. A court less than 2.00 m in its least dimension is non-compliant even if its total area appears adequate. The least dimension control is explicit. The alternative to a passageway is access via a door through one or more rooms.",
+      "explanation": "The minimum court dimension trap: a court that is 3.00 m × 1.80 m has sufficient area but fails the 2.00 m least-dimension requirement. Always check the smallest span of the court against the 2.00 m minimum.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 804 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:78933975a68bb35c4693b4262f25de3dc605f260cf267616265dc9ef93a8ac61"
+    },
+    {
+      "question_id": "b18ab986-cdd8-4f4a-b580-198883189606",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 809, what are the minimum cross-sectional area and minimum least dimension required for a vent shaft?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.00 sq.m per meter of height (never less than 1.00 sq.m total); least dimension 600 mm"
+        },
+        {
+          "id": "b",
+          "text": "0.30 sq.m per meter of height (never less than 0.30 sq.m total); least dimension 300 mm"
+        },
+        {
+          "id": "c",
+          "text": "2.00 sq.m per meter of height (never less than 2.00 sq.m total); least dimension 900 mm"
+        },
+        {
+          "id": "d",
+          "text": "1.00 sq.m per meter of height (never less than 1.00 sq.m total); least dimension 300 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809, the minimum cross-sectional area of a vent shaft is 1.00 sq.m per meter of shaft height, but never less than 1.00 sq.m total. The minimum least dimension of the shaft is 600 mm. Air ducts within the shaft have smaller minimums: 0.30 sq.m cross-sectional area and 300 mm least dimension, with the duct outlet at least 300 mm above street or court level.",
+      "explanation": "Vent shafts scale with building height: a 10-storey building requires a minimum 10.00 sq.m shaft cross-section (1.00 sq.m × 10 m height), but never less than 1.00 sq.m even for single-storey applications. The 600 mm least dimension prevents shafts that are too narrow to be effective or maintainable.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 809 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a2e4df2924bc3bf8a63d5fd590bbd30532c22f6a03eb353ed9a8fd16ead004fc"
+    },
+    {
+      "question_id": "36cbd85d-043d-44ca-ae30-c7b23284bde2",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A factory floor measures 20 m × 15 m with a 4.00 m ceiling. Under PD 1096 Rule VIII, Sec. 807, what is the maximum number of workers that may legally occupy this space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 workers — based on 12 cu.m per person for workshops and factories"
+        },
+        {
+          "id": "b",
+          "text": "85 workers — based on 14 cu.m per person for habitable rooms"
+        },
+        {
+          "id": "c",
+          "text": "60 workers — based on 3 cu.m per person for school rooms"
+        },
+        {
+          "id": "d",
+          "text": "300 workers — based on 4 cu.m per person for general occupancies"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Factory floor area = 20 × 15 = 300 sq.m. Volume = 300 × 4.00 = 1,200 cu.m. Per Sec. 807, workshops and factories require 12.00 cu.m per person. Maximum occupancy = 1,200 / 12 = 100 workers. The habitable-room standard of 14 cu.m (Answer B) does not apply to factory floors; the school-room standard of 3 cu.m (Answer C) applies only to classrooms.",
+      "explanation": "The mnemonic '3–12–14: School, Work, Home' makes it easy to select the right multiplier. For any industrial floor, always use 12 cu.m/person. Volume = floor area × ceiling height, then divide by the applicable air space standard.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807 (2004 IRR)",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a56fc499d94eb74689e63e668fd7b06046768f18c1d275724fe6fec40a253cd4"
+    },
+    {
+      "question_id": "d95e6c0d-3baa-4d32-9b89-52abb04cd745",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 808, eaves, canopies, awnings, and similar projecting elements over required window openings must be at what minimum distance from side and rear property lines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least 300 mm from side and rear property lines"
+        },
+        {
+          "id": "b",
+          "text": "At least 600 mm from side and rear property lines"
+        },
+        {
+          "id": "c",
+          "text": "At least 750 mm from side and rear property lines"
+        },
+        {
+          "id": "d",
+          "text": "At least 1,200 mm from side and rear property lines"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 808, projecting elements such as eaves, canopies, awnings, and media aguas over required window openings must be at least 750 mm from side and rear property lines. This clearance ensures the projecting overhang does not block light and ventilation reaching neighboring properties and prevents the overhang from effectively sealing off the required window opening.",
+      "explanation": "The 750 mm figure is specific to this provision and is easy to confuse with the 600 mm court passageway width (Sec. 804) or the 300 mm air duct least dimension (Sec. 809). Context matters: the 750 mm setback controls projecting elements above required windows, not the window opening dimensions themselves.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 808 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:04.125075+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0572e0ebc45477a78062b45c3e0a2176d80d8201f32cbef0cc36404cab308cf"
+    },
+    {
+      "question_id": "3cb906cb-87d9-4da8-8354-ceb5ce3580cb",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 809, what are the minimum cross-sectional area and minimum least dimension required for a vent shaft?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.00 sq.m per meter of height (never less than 1.00 sq.m total); least dimension 600 mm"
+        },
+        {
+          "id": "b",
+          "text": "0.30 sq.m per meter of height (never less than 0.30 sq.m total); least dimension 300 mm"
+        },
+        {
+          "id": "c",
+          "text": "2.00 sq.m per meter of height (never less than 2.00 sq.m total); least dimension 900 mm"
+        },
+        {
+          "id": "d",
+          "text": "1.00 sq.m per meter of height (never less than 1.00 sq.m total); least dimension 300 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 809, the minimum cross-sectional area of a vent shaft is 1.00 sq.m per meter of shaft height, but never less than 1.00 sq.m total. The minimum least dimension of the shaft is 600 mm. Air ducts within the shaft have smaller minimums: 0.30 sq.m cross-sectional area and 300 mm least dimension, with the duct outlet at least 300 mm above street or court level.",
+      "explanation": "Vent shafts scale with building height: a 10-storey building requires a minimum 10.00 sq.m shaft cross-section (1.00 sq.m × 10 m height), but never less than 1.00 sq.m even for single-storey applications. The 600 mm least dimension prevents shafts that are too narrow to be effective or maintainable.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 809 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:130c6584a30244725fbe67f84fd90f5cb634d40cef8502366bc1365d710a7e2f"
+    },
+    {
+      "question_id": "be9d0912-4dac-4c4c-a0c1-e44251d5cf4c",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 807, what is the minimum air space per person for school rooms, workshops/factories/offices, and habitable sleeping rooms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "School: 3.00 cu.m; Workshop/office: 12.00 cu.m; Habitable: 14.00 cu.m"
+        },
+        {
+          "id": "b",
+          "text": "School: 5.00 cu.m; Workshop/office: 15.00 cu.m; Habitable: 20.00 cu.m"
+        },
+        {
+          "id": "c",
+          "text": "School: 3.00 cu.m; Workshop/office: 10.00 cu.m; Habitable: 12.00 cu.m"
+        },
+        {
+          "id": "d",
+          "text": "School: 4.00 cu.m; Workshop/office: 12.00 cu.m; Habitable: 16.00 cu.m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 807, the minimum air space per person is: school rooms — 3.00 cu.m; workshops, factories, and offices — 12.00 cu.m; habitable rooms (sleeping/living) — 14.00 cu.m. Mnemonic: '3–12–14: School, Work, Home.' School rooms have the smallest requirement because students occupy them for defined short periods; habitable rooms have the largest because occupants spend extended overnight hours in them.",
+      "explanation": "Worked example: a 60 sq.m school room at 3.00 m ceiling = 180 cu.m volume. Maximum occupancy = 180 / 3.00 = 60 students. If ceiling is 2.70 m, volume = 162 cu.m, maximum = 162 / 3.00 = 54 students. The air space calculation determines maximum legal occupancy.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a17068ac5291ae7f3b13651acecf9525167a04983b43c35eda0fe24b7c16ad99"
+    },
+    {
+      "question_id": "3f144559-c6ba-4832-8b39-bf397649a0a6",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A factory floor measures 20 m × 15 m with a 4.00 m ceiling. Under PD 1096 Rule VIII, Sec. 807, what is the maximum number of workers that may legally occupy this space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 workers — based on 12 cu.m per person for workshops and factories"
+        },
+        {
+          "id": "b",
+          "text": "85 workers — based on 14 cu.m per person for habitable rooms"
+        },
+        {
+          "id": "c",
+          "text": "60 workers — based on 3 cu.m per person for school rooms"
+        },
+        {
+          "id": "d",
+          "text": "300 workers — based on 4 cu.m per person for general occupancies"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Factory floor area = 20 × 15 = 300 sq.m. Volume = 300 × 4.00 = 1,200 cu.m. Per Sec. 807, workshops and factories require 12.00 cu.m per person. Maximum occupancy = 1,200 / 12 = 100 workers. The habitable-room standard of 14 cu.m (Answer B) does not apply to factory floors; the school-room standard of 3 cu.m (Answer C) applies only to classrooms.",
+      "explanation": "The mnemonic '3–12–14: School, Work, Home' makes it easy to select the right multiplier. For any industrial floor, always use 12 cu.m/person. Volume = floor area × ceiling height, then divide by the applicable air space standard.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807 (2004 IRR)",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e69ff42bbb84c6e39af26122fdba9e5dd8edeb5fb3bfdb9ef7abcec608bb41f8"
+    },
+    {
+      "question_id": "b1afffa7-66b7-4bd9-9521-1fd231b0e642",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 808, windows required for light and ventilation must open to which of the following? Which answer is INCORRECT?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A court, yard, public street, or alley where air and light can freely enter"
+        },
+        {
+          "id": "b",
+          "text": "A qualifying roofed porch that abuts an open space with ceiling height ≥ 2.70 m and ≥ 65% open on the longer side"
+        },
+        {
+          "id": "c",
+          "text": "An enclosed interior corridor between rooms, provided it is air-conditioned"
+        },
+        {
+          "id": "d",
+          "text": "An open watercourse abutting the property where air and light can freely reach the opening"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "An enclosed interior corridor — even if air-conditioned — does not constitute a valid opening for required windows under Sec. 808. Windows must open to a court, yard, public street, alley, open watercourse, or a qualifying roofed porch. A window that faces only an enclosed interior corridor provides no path for outdoor air and natural light and therefore cannot satisfy the natural ventilation and light requirements of Rule VIII.",
+      "explanation": "This question tests the evaluative skill of identifying non-compliance. Options A, B, and D are all valid configurations under Sec. 808. Option C is the distractor: air conditioning does not substitute for a valid outdoor opening under the natural ventilation provisions of Rule VIII.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 808 (2004 IRR)",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd94bdf7b3bfbdabbe54c368173079c42caa74f2c9bc47f0ee5f826d0938afb6"
+    },
+    {
+      "question_id": "d7afe88a-6212-4702-b2a1-41362f39d5a9",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 805, what are the minimum ceiling heights for rooms with natural ventilation, rooms with artificial ventilation, and mezzanine floors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Natural: 2.70 m; Artificial: 2.40 m; Mezzanine: 1.80 m clear above and below"
+        },
+        {
+          "id": "b",
+          "text": "Natural: 2.40 m; Artificial: 2.70 m; Mezzanine: 1.50 m clear above and below"
+        },
+        {
+          "id": "c",
+          "text": "Natural: 2.70 m; Artificial: 2.70 m; Mezzanine: 1.80 m clear above and below"
+        },
+        {
+          "id": "d",
+          "text": "Natural: 2.50 m; Artificial: 2.40 m; Mezzanine: 2.00 m clear above and below"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 805: rooms with natural ventilation require 2.70 m minimum ceiling height on all floors; rooms with artificial ventilation require 2.40 m; mezzanine floors require 1.80 m clear height above and below. The higher minimum for naturally ventilated rooms reflects the need for adequate air-exchange volume through stack effect. You cannot apply the lower 2.40 m standard to naturally ventilated rooms.",
+      "explanation": "The mezzanine double-check trap: 1.80 m clear must be verified both above and below the mezzanine floor. Checking only the upper clearance is insufficient. A mezzanine with 1.80 m above but 1.50 m below is non-compliant.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 805 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:609cc9339bee8e83e4eac822a339d903dae76be072320375399589fe5e446ca2"
+    },
+    {
+      "question_id": "2a37d3ea-e799-45cb-9ddc-93711a6e5792",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 806, what are the minimum floor areas and minimum least dimensions for rooms for human habitation, kitchens, and bathrooms/toilets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Habitable: 6.00 sq.m / 2.00 m; Kitchen: 3.00 sq.m / 1.50 m; Bath: 1.20 sq.m / 0.90 m"
+        },
+        {
+          "id": "b",
+          "text": "Habitable: 5.00 sq.m / 2.00 m; Kitchen: 2.50 sq.m / 1.20 m; Bath: 1.00 sq.m / 0.80 m"
+        },
+        {
+          "id": "c",
+          "text": "Habitable: 6.00 sq.m / 2.50 m; Kitchen: 3.00 sq.m / 1.50 m; Bath: 1.50 sq.m / 1.00 m"
+        },
+        {
+          "id": "d",
+          "text": "Habitable: 8.00 sq.m / 2.50 m; Kitchen: 4.00 sq.m / 2.00 m; Bath: 1.50 sq.m / 1.20 m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 806, the minimum room sizes are: rooms for human habitation (sleeping/living) — 6.00 sq.m floor area, 2.00 m least dimension; kitchens — 3.00 sq.m floor area, 1.50 m least dimension; bath and toilet — 1.20 sq.m floor area, 0.90 m least dimension. The mnemonic '6–3–1.2 / 2–1.5–0.9' (area / least dimension) encodes all six values.",
+      "explanation": "The least dimension requirement prevents 'corridor rooms' that technically meet area minimums but are functionally unusable. A 6.00 sq.m room that is 0.50 m × 12.00 m meets area but fails the 2.00 m least dimension requirement.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 806 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e8d4978f794e6263dd3b911380de558ab482fc5dd25fff4eee8c6c6a1e800f2"
+    },
+    {
+      "question_id": "5923d4fc-f08a-40cc-881d-bebdb6c045eb",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A naturally ventilated master bedroom is 25.00 sq.m; its en-suite bathroom is 4.00 sq.m. Under PD 1096 Rule VIII, Sec. 808, what are the minimum required free window areas for each room?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.20 sq.m"
+        },
+        {
+          "id": "b",
+          "text": "Bedroom: 1.00 sq.m; Bathroom: 0.24 sq.m"
+        },
+        {
+          "id": "c",
+          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.24 sq.m"
+        },
+        {
+          "id": "d",
+          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.40 sq.m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Bedroom: 10% of 25.00 = 2.50 sq.m, which exceeds the 1.00 sq.m absolute minimum, so 2.50 sq.m governs. Bathroom: IRR practice applies 5% rule — 5% of 4.00 = 0.20 sq.m; compare to 0.24 sq.m minimum free area — use the more restrictive 0.24 sq.m. The '240 sq. millimeters' in the printed IRR is a known unit error; professional and PRBoA-annotated practice treats this as 0.24 sq.m.",
+      "explanation": "Two rules apply together here: (1) the 5% rule for bathrooms vs. the 10% general rule; (2) the absolute minimum floor of 0.24 sq.m. Because 0.24 sq.m > 0.20 sq.m computed, the absolute minimum governs. Only the free opening area counts — deduct frames, fixed mullions, and non-operable portions.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 808 (2004 IRR) / PRBoA annotated IRR",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:83dec438c7503ab8c1a4bcb88c1966b12ae5efd44bd5d3f4f086b0cec736588f"
+    },
+    {
+      "question_id": "117c97d6-06cf-4e24-8529-f1e40582c741",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 808, eaves, canopies, awnings, and similar projecting elements over required window openings must be at what minimum distance from side and rear property lines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least 300 mm from side and rear property lines"
+        },
+        {
+          "id": "b",
+          "text": "At least 600 mm from side and rear property lines"
+        },
+        {
+          "id": "c",
+          "text": "At least 750 mm from side and rear property lines"
+        },
+        {
+          "id": "d",
+          "text": "At least 1,200 mm from side and rear property lines"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 808, projecting elements such as eaves, canopies, awnings, and media aguas over required window openings must be at least 750 mm from side and rear property lines. This clearance ensures the projecting overhang does not block light and ventilation reaching neighboring properties and prevents the overhang from effectively sealing off the required window opening.",
+      "explanation": "The 750 mm figure is specific to this provision and is easy to confuse with the 600 mm court passageway width (Sec. 804) or the 300 mm air duct least dimension (Sec. 809). Context matters: the 750 mm setback controls projecting elements above required windows, not the window opening dimensions themselves.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 808 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f6d339b255364f8503fa49dc223288e55f0453a3d44a339aa8b3ae624559711"
+    },
+    {
+      "question_id": "b5e815cc-ce69-4f5e-bec3-030f31db9773",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 808, a window may open into a roofed porch instead of directly to a yard or street. Which THREE conditions must ALL be satisfied?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porch abuts an open space; porch ceiling height ≥ 2.70 m; at least 65% of the longer side is open and unobstructed"
+        },
+        {
+          "id": "b",
+          "text": "Porch abuts a property line; porch ceiling height ≥ 2.40 m; at least 50% of the longer side is open and unobstructed"
+        },
+        {
+          "id": "c",
+          "text": "Porch abuts an open space; porch ceiling height ≥ 2.70 m; at least 50% of the longer side is open and unobstructed"
+        },
+        {
+          "id": "d",
+          "text": "Porch abuts an open space; porch ceiling height ≥ 2.40 m; at least 65% of the longer side is open and unobstructed"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 808, windows may open to a roofed porch only when ALL three conditions are met: (1) the porch abuts a court, yard, public street, alley, or open watercourse; (2) porch ceiling height is at least 2.70 m; (3) at least 65% of the longer side of the porch is open and unobstructed. Failing any single condition invalidates the exception.",
+      "explanation": "The 65% open rule ensures the porch functions as a genuine outdoor buffer with adequate air movement, not merely as a transitional enclosed space. The 2.70 m ceiling matches the natural-ventilation minimum, reinforcing that the porch must act like an outdoor condition.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 808 (2004 IRR)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc8426d173adc1ef23af7dd0172a124230cda0d0568ec643abcc42376fd0af00"
+    },
+    {
+      "question_id": "13217960-3ab8-4546-832e-80a178334bd2",
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Sec. 804, what are the minimum horizontal dimension of any court and the minimum width of a passageway to an inner court?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum court dimension: 1.20 m; minimum passageway: 0.90 m"
+        },
+        {
+          "id": "b",
+          "text": "Minimum court dimension: 2.00 m; minimum passageway: 1.20 m"
+        },
+        {
+          "id": "c",
+          "text": "Minimum court dimension: 2.00 m; minimum passageway: 0.90 m"
+        },
+        {
+          "id": "d",
+          "text": "Minimum court dimension: 1.50 m; minimum passageway: 1.20 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Sec. 804, the minimum horizontal dimension of any court is 2.00 m, and the minimum width of a passageway to an inner court is 1.20 m. A court less than 2.00 m in its least dimension is non-compliant even if its total area appears adequate. The least dimension control is explicit. The alternative to a passageway is access via a door through one or more rooms.",
+      "explanation": "The minimum court dimension trap: a court that is 3.00 m × 1.80 m has sufficient area but fails the 2.00 m least-dimension requirement. Always check the smallest span of the court against the 2.00 m minimum.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 804 (2004 IRR)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.895961+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:47d15aaecc5ae19f8b0f8682d80edad55a8669840a43106803ddc751f01d9988"
+    }
+  ]
+}

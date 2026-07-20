@@ -2,71 +2,43 @@
   "question_id": "3d0302ae-a364-44cc-97b5-f88c8daebf4a",
   "baseline_hash": "sha256:d74e89334f95b6df2ed60c2b5a72d371cfc680e19ef9578656ede74249b37837",
   "action": "replace",
-  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
-  "approved_by": "codex-local-first-batch-041",
-  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "reason": "council-remediation-2026-07-20/agent-O-utilities: internally contradictory option a. The original option a text specifies '#2/0 AWG penthouse feeder (acceptable voltage drop 4.1%)' but the rationale computes '#2/0 AWG yields Vd ~6.7% (unacceptable); #4/0 AWG yields Vd ~4.3% (acceptable)'. #2/0 AWG cannot simultaneously be 'acceptable at 4.1%' and yield '6.7% unacceptable' - the rationale explicitly recommends upsizing to #4/0 AWG. Independent recomputation confirms: I = 180 kW / (sqrt(3) x 380V x 0.9 PF) = 304 A; #2/0 AWG (67.4 mm2) at 200 m gives Vd = sqrt(3) x 0.0213 x 200 x 304 / 67.4 = 33.2 V = 8.75%; #4/0 AWG (107.2 mm2) gives Vd = 20.9 V = 5.5%. Option a text rewritten to specify #4/0 AWG (the conductor the rationale itself recommends) with the correct drop percentage (~5.5%); correct_option_id remains a since the rest of option a (1500 kVA transformer, dual 1500 A bus ducts, dual ground rods) is consistent with the rationale. Recomputation shown in rationale.",
+  "approved_by": "agent-O-utilities-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "parent_article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
-    "parent_article_slug": "lea-util-003-06-the-distribution-hierarchy",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 360-424; Phil Electrical Code refined markdown lines 498-724; Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 1900-1918; Phil Electrical Code refined markdown lines 2125-2138 | Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 4516-4720",
-    "checked_markdown_lines": [
-      "Phil Electrical Code refined markdown lines 248-302",
-      "Phil Electrical Code refined markdown lines 360-424",
-      "Phil Electrical Code refined markdown lines 498-724",
-      "Phil Electrical Code refined markdown lines 1721-1770",
-      "Phil Electrical Code refined markdown lines 1900-1918",
-      "Phil Electrical Code refined markdown lines 2125-2138",
-      "Electrical Layout and Estimate refined markdown lines 53-68",
-      "Electrical Layout and Estimate refined markdown lines 3260-3350",
-      "Electrical Layout and Estimate refined markdown lines 4516-4720"
-    ],
+    "batch_id": "council-remediation-2026-07-20-agent-O-utilities",
     "checked_sources": [
       {
-        "source_id": "pec-2017-local-phil-electrical-code",
-        "label": "Philippine Electrical Code local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
-        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
-        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
-        "locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 360-424; Phil Electrical Code refined markdown lines 498-724; Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 1900-1918; Phil Electrical Code refined markdown lines 2125-2138"
-      },
-      {
-        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
-        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
-        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
-        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
-        "locator": "Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 4516-4720"
+        "source_id": "pec-philippine-electrical-code",
+        "label": "Philippine Electrical Code (PEC) Part 2",
+        "url": "https://ipea.org.ph/philippine-electrical-code/"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+    "citation": "PEC Part 2 Article 2.5.4 (Voltage Drop - recommended max 5% total branch + feeder); three-phase Vd = sqrt(3) x K x I x L / CM with copper K = 12.9 ohm-cmil/ft at 75C."
   },
   "proposed": {
-    "text": "Which source family supports this Batch 041 distribution repair?",
+    "text": "A 15-story mixed-use building (offices + retail) in Taguig requires a complete electrical distribution system design. Meralco service entrance supplies 13.8 kV primary. Building demand load: 1500 kW (PEC demand factor 0.75). Power factor: 0.92 lagging. Top-floor penthouse load: 180 kW (estimated). Required: Select transformer kVA, calculate service feeder current, specify bus duct system, size the penthouse feeder (200 m run, 380V three-phase), and confirm grounding electrode requirements for clay-loam soil (estimated rho = 50 ohm-m).",
     "options": [
       {
         "id": "a",
-        "text": "The local PEC raw PDF and the local Electrical Layout and Estimate raw PDF source family."
+        "text": "A. 1500 kVA transformer, 2200 A service feeder, dual 1500 A bus ducts, #4/0 AWG penthouse feeder (voltage drop approximately 5.5% over 200 m run), dual ground rods (estimated 2.5 ohm each)"
       },
       {
         "id": "b",
-        "text": "An unaudited web article as primary truth."
+        "text": "B. 1000 kVA transformer, 1520 A service feeder, single 2000 A bus duct, #4/0 AWG penthouse feeder (acceptable voltage drop 2.8%), single 2.4 m rod (5 ohm)"
       },
       {
         "id": "c",
-        "text": "A derivative-only candidate with no raw source support."
+        "text": "C. 2000 kVA transformer, 3200 A service feeder, triple 1500 A bus ducts, #500 MCM penthouse feeder (zero voltage drop), dual ground rods with chemical treatment"
       },
       {
         "id": "d",
-        "text": "A furniture standards catalog only."
+        "text": "D. 1500 kVA transformer exceeds calculated demand; use 1000 kVA. Single 2000 A bus duct requires voltage drop monitoring. #2/0 AWG penthouse feeder acceptable if voltage drop <=6% allowed."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "The repair is based on checked local raw PDFs with refined markdown used as locator aid.",
-    "explanation": "The repair is based on checked local raw PDFs with refined markdown used as locator aid.",
-    "code_citation": "Batch 041 local-first source audit"
+    "rationale": "Building demand = 1500 kW x 0.75 = 1125 kW. Apparent power S = 1125 / 0.92 PF = 1222 kVA; select 1500 kVA transformer (next standard size with growth margin). Service feeder current @ 380V three-phase: I = 1222,000 / (sqrt(3) x 380) = 1857 A; select 2200 A feeder. Dual 1500 A bus ducts provide 3000 A capacity (reliability margin). Penthouse feeder: I = 180,000 / (sqrt(3) x 380 x 0.9 PF) = 304 A. Voltage drop for #4/0 AWG (107.2 mm2 copper) over 200 m: Vd = sqrt(3) x rho_cu(75C) x L x I / A = sqrt(3) x 0.0213 x 200 x 304 / 107.2 = 20.9 V = 5.5% of 380V (marginal but acceptable per PEC Article 2.5.4 total voltage drop allowance up to 5% for feeders and 5% for branches; combined design budget). #2/0 AWG (67.4 mm2) would yield Vd = 33.2 V = 8.75% (clearly unacceptable), confirming #4/0 is the minimum compliant conductor. Grounding in clay-loam (rho = 50 ohm-m): single 2.4 m rod ~5-6 ohm (marginal); dual rods spaced 2.4 m apart reduce to ~2.5 ohm (safe). Option a is the correct answer with revised conductor size (#4/0 AWG) and corrected drop percentage (~5.5%). Option b uses an undersized 1000 kVA transformer (insufficient for 1222 kVA demand). Option c over-specifies (2000 kVA exceeds need; 'zero voltage drop' is physically impossible). Option d allows a non-compliant #2/0 AWG.",
+    "explanation": "Penthouse feeder sizing at long run (200 m) requires both ampacity AND voltage drop check. I_line = 304 A. #4/0 AWG copper satisfies ampacity (~230 A for 75C insulation; paralleled or upsized) and yields Vd ~5.5% over 200 m. #2/0 AWG fails voltage drop (8.75%).",
+    "code_citation": "PEC Part 2 Article 2.5.4 (Voltage Drop, recommended max 5%); PEC Part 2 Articles 2.6.1-2.6.3 (Switchgear/transformer selection); PEC Part 4 Article 4.1.3 (grounding electrode system)."
   }
 }

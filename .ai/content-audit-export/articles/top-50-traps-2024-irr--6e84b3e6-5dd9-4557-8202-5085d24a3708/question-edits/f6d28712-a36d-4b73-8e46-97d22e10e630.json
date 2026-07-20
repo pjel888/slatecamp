@@ -2,9 +2,9 @@
   "question_id": "f6d28712-a36d-4b73-8e46-97d22e10e630",
   "baseline_hash": "sha256:7bc16124fb06c272783b8bbf9f289a83f752d4ecbeeb8146d6a721ef564ba2f7",
   "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
     "parent_article_slug": "top-50-traps-2024-irr",
@@ -23,41 +23,28 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "Which item cannot be part of a BP 344 accessible route?",
+    "text": "An exam question asks for the minimum ramp landing length under BP 344. A student answers 1500 mm because that is the stair landing and approach clear floor dimension. According to Trap #3, is the student correct?",
     "options": [
       {
-        "id": "a",
-        "text": "Turnstile or escalator"
+        "id": "A",
+        "text": "Yes — 1500 mm is the correct ramp landing length, consistent across both ramp landings and stair landings"
       },
       {
-        "id": "b",
-        "text": "Doorway"
+        "id": "B",
+        "text": "No — ramp landings are 1800 mm; 1500 mm applies to stair landings and approach clear floor areas, not ramp landings"
       },
       {
-        "id": "c",
-        "text": "Clear floor space"
+        "id": "C",
+        "text": "No — ramp landings must be 2000 mm to provide enough space for a wheelchair to fully clear the slope"
       },
       {
-        "id": "d",
-        "text": "Ramp"
+        "id": "D",
+        "text": "Yes — 1500 mm applies to both ramp and stair landings since BP 344 uses a single landing standard"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "BP 344 excludes turnstiles, revolving doors, escalators, stairways, steps, and impediments from the accessible route.",
-    "explanation": "BP 344 excludes turnstiles, revolving doors, escalators, stairways, steps, and impediments from the accessible route.",
-    "code_citation": "BP 344 2024 IRR, accessible route definition",
-    "bloom_level": "analyze",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Top 50 Traps: 2024 IRR",
-      "LEA Accessibility Code Review"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-top-50-traps-2024-irr-020"
+    "correct_option_id": "B",
+    "rationale": "Trap #3: ramp landings = 1800 mm; stair landings and approach clear floors = 1500 mm. These are different. Trap #3 in the article. BP 344 specifies ramp landings (at top, bottom, and intermediate points) at 1800 mm in length. Stair landings and approach clear floor areas use 1500 mm. The ALE frequently places both dimensions in the same question to exploit this confusion. The mnemonic from the article's summary table: 'Ramp landing vs. stair landing → Ramp = 1800 mm; Stair = 1500 mm.' The student's answer of 1500 mm is the wrong dimension applied to the wrong element.",
+    "explanation": "Classic pair: ramp landing = 1800 mm; stair landing / approach clear floor = 1500 mm. Never swap these.",
+    "code_citation": "BP 344 IRR, Ramps section; Trap #3"
   }
 }

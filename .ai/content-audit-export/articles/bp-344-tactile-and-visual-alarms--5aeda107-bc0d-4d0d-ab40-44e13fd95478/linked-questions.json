@@ -8,31 +8,31 @@
       "question_id": "f3fa6643-5347-480c-bb92-51befc4be31f",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Based on the specifications in \"BP 344 Tactile and Visual Alarms\", if a project requires 300 mm, what is the correct interpretation?",
+      "text": "Where should audio, visual, and tactile directional signage be located?",
       "options": [
         {
-          "id": "A",
-          "text": "300 mm is the minimum/standard requirement"
+          "id": "a",
+          "text": "At points conveniently seen, heard, and felt by persons with disabilities"
         },
         {
-          "id": "B",
-          "text": "300 mm is the maximum permitted value"
+          "id": "b",
+          "text": "Only behind service doors"
         },
         {
-          "id": "C",
-          "text": "300 mm applies only to specific conditions"
+          "id": "c",
+          "text": "Only on the roof"
         },
         {
-          "id": "D",
-          "text": "300 mm is an approximate value subject to interpretation"
+          "id": "d",
+          "text": "Only inside staff rooms"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 300 mm as the requirement. Context: g.**\r    - Instead of “600 mm before hazards” generically, I aligned it with **“...",
+      "rationale": "BP 344 requires signage at points conveniently seen, heard, and felt.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:08.200181+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.911076+00:00",
       "content_hash": "sha256:aa168b4739da5e46535e111c50f029c45c5c0d2d7d110bc5e425cb3f7e6904ea"
     },
     {
       "question_id": "44a4311e-e622-4087-923d-e736094eb0f6",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR, tactile paths must lead to accessible toilets along the accessible route. Per Section A.7.11.viii, where are warning tactile blocks placed at accessible toilet approaches?",
+      "text": "What minimum luminance contrast applies to general signage from surroundings?",
       "options": [
         {
-          "id": "A",
-          "text": "Warning blocks are placed at the toilet door threshold, spanning the full door width so wheelchair users know the door is ahead"
+          "id": "a",
+          "text": "30 percent"
         },
         {
-          "id": "B",
-          "text": "Warning blocks are placed at the corridor junction nearest the accessible toilet, directing users to turn toward the facility"
+          "id": "b",
+          "text": "5 percent"
         },
         {
-          "id": "C",
-          "text": "Warning blocks are placed inside the accessible toilet cubicle at 600 mm from the toilet bowl to alert visually impaired users of the fixture location"
+          "id": "c",
+          "text": "90 percent only"
         },
         {
-          "id": "D",
-          "text": "Warning blocks are placed 300 mm in front of the tactile information map at the toilet entrance or exit"
+          "id": "d",
+          "text": "No contrast"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Warning blocks 300 mm in front of the tactile information map at the toilet entrance/exit (A.7.11.viii)",
-        "explanation": "Section A.7.11.viii specifies that the tactile path leads to accessible toilets along the accessible route, terminating at a tactile information map at the toilet entrance or exit. Warning tactile blocks are placed 300 mm in front of that map — the same 300 mm setback pattern used at all destination points throughout A.7.11. The tactile information map itself communicates the toilet's layout and amenities. Warning blocks before the map signal 'you have arrived at a destination point — assess before proceeding.'",
-        "common_misconceptions": [
-          "Placing warning blocks at the door threshold instead of 300 mm before the tactile information map",
-          "Placing warning blocks at corridor junctions — those positions use directional or positional blocks, not warning blocks"
-        ]
-      },
+      "rationale": "BP 344 requires signage to use minimum luminance contrast of 30 percent from surroundings.",
       "explanation": "Tests accessible toilet tactile path termination — warning blocks before the tactile information map at 300 mm setback.",
       "code_citation": "BP 344 2024 IRR, Appendix A, Sec A.7.11.viii",
       "bloom_level": "apply",
@@ -96,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.915317+00:00",
       "content_hash": "sha256:bac2b73aae6d5091bc585c12a55e183ab6211224627821ca76942352bba3dc46"
     },
     {
       "question_id": "35261eda-1bfd-4e22-ac31-f54fbe56448d",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR Appendix A Table A.7.2, all three types of tactile floor blocks share the same plan dimensions. What are those dimensions, and what raised element shape distinguishes warning tactile blocks from directional tactile blocks?",
+      "text": "What must signage for public rooms and safety routes include?",
       "options": [
         {
-          "id": "A",
-          "text": "All blocks: 300 mm × 300 mm; warning blocks use 35 mm diameter truncated domes in a square grid; directional blocks use 34 mm wide parallel raised bars"
+          "id": "a",
+          "text": "Tactile symbols, letters, or numbers and Braille where required"
         },
         {
-          "id": "B",
-          "text": "All blocks: 600 mm × 600 mm; warning blocks use truncated cones; directional blocks use parallel grooves recessed into the surface"
+          "id": "b",
+          "text": "Only printed small text"
         },
         {
-          "id": "C",
-          "text": "All blocks: 300 mm × 300 mm; warning blocks use parallel raised bars; directional blocks use truncated domes — the shapes are the reverse of common convention"
+          "id": "c",
+          "text": "Only decorative icons"
         },
         {
-          "id": "D",
-          "text": "Warning blocks: 600 mm × 300 mm; directional blocks: 300 mm × 300 mm — warning blocks are wider to give more reaction time before a hazard"
+          "id": "d",
+          "text": "No tactile information"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "All tactile blocks are 300 × 300 mm (Table A.7.2); warning = 35 mm dome in square grid; directional = 34 mm wide parallel bars",
-        "explanation": "Table A.7.2 specifies that all three types of tactile blocks share the same 300 mm × 300 mm plan size. Warning tactile blocks use truncated domes of 35 mm diameter arranged in a square grid pattern — the dome shape communicates 'stop and assess.' Directional tactile blocks use parallel raised bars of 34 mm width — the bar shape communicates 'go this way.' All raised elements are 5 mm high regardless of type. The mnemonic 'Dots = Danger, Bars = Direction' distinguishes the two.",
-        "common_misconceptions": [
-          "Reversing the shapes — thinking bars mean warning and domes mean direction",
-          "Using 600 mm as the block size — 300 × 300 mm is the correct plan dimension for all block types"
-        ]
-      },
+      "rationale": "BP 344 requires tactile symbols/letters/numbers and Braille in these signs.",
       "explanation": "Tests the foundational block dimensions and shape distinctions from Table A.7.2.",
       "code_citation": "BP 344 2024 IRR, Appendix A, Table A.7.2",
       "bloom_level": "remember",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.910093+00:00",
       "content_hash": "sha256:ecba96f3876ae2c1ad52989d5d462a22a966232431837652cc107bece899f3c9"
     },
     {
       "question_id": "847853b4-e9a6-4940-bc5d-909decb1abb4",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR Appendix A Sections A.1.2.i and A.7.11.vii, how are tactile warning blocks placed at the top, bottom, and intermediate landings of accessible ramps?",
+      "text": "Why are tactile floor surfaces provided?",
       "options": [
         {
-          "id": "A",
-          "text": "600 mm depth strips installed at the center of each landing only — the landing center is the point of highest hazard as users may step off unexpectedly"
+          "id": "a",
+          "text": "To guide people with visual disabilities"
         },
         {
-          "id": "B",
-          "text": "300 mm depth strips installed at the very edge of the top and bottom landings only — intermediate landings do not require tactile warning as users are already aware they are on the ramp"
+          "id": "b",
+          "text": "To mark private staff areas only"
         },
         {
-          "id": "C",
-          "text": "600 mm depth strips installed 300 mm before hazardous areas or intended stops at the top, bottom, and intermediate landings, spanning the full ramp width"
+          "id": "c",
+          "text": "To replace all signs"
         },
         {
-          "id": "D",
-          "text": "600 mm depth strips installed flush with the ramp nosing at top and bottom — no setback distance is prescribed; the strip begins at the first point of level change"
+          "id": "d",
+          "text": "To reduce room size"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "600 mm depth, placed 300 mm before hazardous areas, at top/bottom/intermediate landings, spanning full width (A.1.2.i, A.7.11.vii)",
-        "explanation": "The 2024 IRR specifies warning tactile blocks at 600 mm depth installed 300 mm before the hazardous area or intended stop — at the top, bottom, and intermediate landings of ramps, spanning the full width. The 300 mm setback from the hazard gives the user reaction time to stop before reaching the drop-off or ramp start. This 300 mm setback applies consistently across ramps, stairs, escalators, and elevator approaches. The depth is 600 mm (the block zone), not the setback distance.",
-        "common_misconceptions": [
-          "Confusing the 600 mm depth of the warning block zone with the 300 mm setback distance from the hazard — these are two different measurements",
-          "Omitting intermediate landing tactile strips — all three landing positions (top, bottom, intermediate) require warning blocks"
-        ]
-      },
+      "rationale": "BP 344 states tactile floor surfaces guide people with visual disabilities.",
       "explanation": "Tests the ramp tactile warning placement — 600 mm depth, 300 mm setback, full width, all three landing positions.",
       "code_citation": "BP 344 2024 IRR, Appendix A, Sec A.1.2.i, A.7.11.vii",
       "bloom_level": "apply",
@@ -198,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.917878+00:00",
       "content_hash": "sha256:a532e103bc3fd7edeb192a854eed8a2fe75197419aaa5131776709180720a12d"
     },
     {
       "question_id": "fdf42db6-781b-4ffc-99fc-c07be1ad24d8",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR Appendix A Section A.7.11.vi, how are tactile warning blocks placed at the approach to an escalator, and what is the depth and setback specification?",
+      "text": "How far clear from tripping hazards and confusing elements should tactile floor surfaces be?",
       "options": [
         {
-          "id": "A",
-          "text": "300 mm depth strips installed immediately at the escalator metal landing plate edge, spanning the full width of the escalator"
+          "id": "a",
+          "text": "At least 600 mm"
         },
         {
-          "id": "B",
-          "text": "600 mm depth strips installed at the foot of the approach only — escalator exits do not require tactile warning because users are already in motion"
+          "id": "b",
+          "text": "At least 50 mm"
         },
         {
-          "id": "C",
-          "text": "300 mm depth strips installed 600 mm before the escalator metal landing plate — the depth and setback values are reversed for escalators compared to ramps and stairs"
+          "id": "c",
+          "text": "At least 3000 mm"
         },
         {
-          "id": "D",
-          "text": "600 mm depth strips installed 300 mm before the escalator metal landing plate, spanning the full width of the escalator"
+          "id": "d",
+          "text": "No clearance"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "600 mm depth, 300 mm before the escalator metal landing plate, spanning full width (A.7.11.vi)",
-        "explanation": "Section A.7.11.vi uses the same depth-and-setback pattern as ramps and stairs: 600 mm depth of warning blocks, placed 300 mm before the escalator metal landing plate, spanning the full width of the escalator. The consistency of the 600 mm / 300 mm pair across all hazard types (ramps, stairs, escalators, elevator control panels) is a deliberate design principle — users learn one tactile warning language that applies everywhere. The 300 mm setback is the reaction time buffer before the hazard begins.",
-        "common_misconceptions": [
-          "Reversing the depth (300 mm) and setback (600 mm) values — it is 600 mm depth placed 300 mm before the hazard",
-          "Omitting escalator tactile warning at the exit side — both approach and termination points require warning blocks"
-        ]
-      },
+      "rationale": "BP 344 states a minimum clear width of 600 mm away from hazards and confusing elements.",
       "explanation": "Tests escalator tactile warning specifications — consistent with the 600/300 pattern used throughout A.7.11.",
       "code_citation": "BP 344 2024 IRR, Appendix A, Sec A.7.11.vi",
       "bloom_level": "remember",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.912876+00:00",
       "content_hash": "sha256:d20222140421b99a4f82c9416bd4c48bdadcafb3956bf32715edec664f8619f0"
     },
     {
       "question_id": "f4bde46f-92ab-48f9-ba53-1b3f2a87675a",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR Appendix A Section A.7.11.v, how does the tactile path serve elevator access, and where are warning blocks placed relative to the elevator control panel in the waiting lobby?",
+      "text": "What luminance contrast applies to tactile floor surfaces from adjacent floor finishes?",
       "options": [
         {
-          "id": "A",
-          "text": "The tactile path leads to the elevator door; warning blocks are placed at the door threshold spanning the full door width so users know when they have reached the car opening"
+          "id": "a",
+          "text": "50 percent minimum"
         },
         {
-          "id": "B",
-          "text": "The tactile path leads to the Braille-equipped control panel in the waiting lobby; warning blocks are installed 300 mm before the control panel"
+          "id": "b",
+          "text": "10 percent maximum"
         },
         {
-          "id": "C",
-          "text": "The tactile path terminates at the elevator lobby center; warning blocks at the center point indicate equidistance from all elevator doors in multi-car configurations"
+          "id": "c",
+          "text": "No contrast"
         },
         {
-          "id": "D",
-          "text": "The tactile path leads to the call button only; no warning blocks are used at elevator approaches since the door itself provides the tactile transition cue"
+          "id": "d",
+          "text": "Only blue color"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Tactile path leads to the Braille-equipped lobby control panel; warning blocks 300 mm before the panel (A.7.11.v)",
-        "explanation": "Section A.7.11.v specifies that the tactile path must prioritize leading to elevators (the preferred vertical access for PWDs). The path terminates in front of the Braille-equipped control panel in the waiting lobby, with warning tactile blocks installed 300 mm before the control panel. This 300 mm setback is consistent with the universal setback distance used at all hazard/destination points. The elevator tactile path is prioritized over paths to escalators or stairs because elevators are the primary accessible vertical route.",
-        "common_misconceptions": [
-          "Placing warning blocks at the door threshold instead of 300 mm before the lobby control panel",
-          "Treating the elevator door itself as the tactile path terminus — the path leads to the lobby control panel, not the door"
-        ]
-      },
+      "rationale": "BP 344 requires 50 percent minimum luminance contrast.",
       "explanation": "Tests the elevator-specific tactile path routing and the control panel setback requirement.",
       "code_citation": "BP 344 2024 IRR, Appendix A, Sec A.7.11.v",
       "bloom_level": "apply",
@@ -300,45 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.908265+00:00",
       "content_hash": "sha256:932817372fa69be2ade4e352dbd28ae78f6e43f7f3686efdc3f9999706a64f1b"
     },
     {
       "question_id": "06cfafd5-f5e8-4a00-aed3-809db03483a6",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "The BP 344 2024 IRR Appendix A defines three types of tactile blocks — directional, warning, and positional. What is the specific function of positional tactile blocks, and how do their raised elements differ from warning blocks?",
+      "text": "What depth applies to warning tactile blocks?",
       "options": [
         {
-          "id": "A",
-          "text": "Positional blocks indicate imminent hazards ahead; they use 35 mm diameter domes in a square grid, identical to warning blocks but in a different color"
+          "id": "a",
+          "text": "600 mm"
         },
         {
-          "id": "B",
-          "text": "Positional blocks mark the safe path along an accessible route; they use the same 34 mm raised bars as directional blocks but oriented perpendicular to travel"
+          "id": "b",
+          "text": "150 mm"
         },
         {
-          "id": "C",
-          "text": "Positional blocks indicate possible changes in walking direction at junctions; they use 23 mm diameter domes in a staggered pattern, smaller than the 35 mm warning domes"
+          "id": "c",
+          "text": "900 mm"
         },
         {
-          "id": "D",
-          "text": "Positional blocks indicate building entrances and key amenities; they use 40 mm diameter domes in a diagonal pattern for maximum tactile distinctiveness"
+          "id": "d",
+          "text": "2200 mm"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Positional blocks indicate possible direction changes at junctions; 23 mm domes in staggered pattern — smaller than warning block's 35 mm domes in square grid",
-        "explanation": "Table A.7.2 defines three block types. Positional tactile blocks are placed at junctions where the path direction may change, indicating to the user that a decision point is ahead. Their raised elements are truncated domes of 23 mm diameter in a staggered pattern — smaller than warning block domes (35 mm in a square grid) and different in arrangement. This three-way distinction (directional bars, warning domes in square grid, positional domes in staggered pattern) was added in the 2024 IRR and represents an update from older two-type references.",
-        "common_misconceptions": [
-          "Thinking only two types of tactile blocks exist (warning and directional) — the 2024 IRR adds positional as a third distinct type",
-          "Confusing positional domes (23 mm, staggered) with warning domes (35 mm, square grid) — size and grid pattern both differ"
-        ]
-      },
+      "rationale": "BP 344 states warning tactile blocks have a depth of 600 mm.",
       "explanation": "Tests the 2024 addition of positional tactile blocks as a third type distinct from warning and directional blocks.",
       "code_citation": "BP 344 2024 IRR, Appendix A, Table A.7.2",
       "bloom_level": "remember",
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.913784+00:00",
       "content_hash": "sha256:e381d3ab441993b580de568e9c1ec7218734009fbe15f3df11c10cd9c7795ad3"
     },
     {
       "question_id": "cd1a2205-3f90-4afb-ad3e-0e8529ad148b",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A designer specifies tactile floor strips with 40 mm dome elements in a square grid at ramp landings, with only 35% luminance contrast from the adjacent floor finish. Which element is non-compliant and what is the correct specification?",
+      "text": "What setback is used for warning tactile blocks near hazards or target objects?",
       "options": [
         {
-          "id": "A",
-          "text": "Both are non-compliant: dome diameter should be 35 mm (not 40 mm) per Table A.7.2; luminance contrast should be minimum 50% (not 35%) per Section A.7.2.e"
+          "id": "a",
+          "text": "300 mm"
         },
         {
-          "id": "B",
-          "text": "Only the contrast is non-compliant: 35% is below the 50% minimum; 40 mm dome diameter is within the acceptable tolerance range of ±5 mm from the 35 mm standard"
+          "id": "b",
+          "text": "1200 mm"
         },
         {
-          "id": "C",
-          "text": "Only the dome size is non-compliant: 40 mm exceeds the 35 mm maximum; 35% contrast satisfies the 30% minimum required for tactile surfaces"
+          "id": "c",
+          "text": "1800 mm"
         },
         {
-          "id": "D",
-          "text": "Both are non-compliant: dome diameter should be 23 mm per Table A.7.2 for all warning domes; luminance contrast should be minimum 50% per Section A.7.2.e"
+          "id": "d",
+          "text": "No setback"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Both non-compliant: warning domes must be exactly 35 mm dia (Table A.7.2), not 40 mm; luminance contrast must be minimum 50% (A.7.2.e), not 35%",
-        "explanation": "Table A.7.2 specifies warning tactile dome diameter as 35 mm in a square grid pattern — 40 mm is larger than specified and there is no ±5 mm tolerance stated in the code. Section A.7.2.e requires a minimum 50% luminance contrast between tactile blocks and the adjacent floor; 35% falls below this threshold. The 30% contrast figure applies to floor-wall transitions and gratings, not to tactile warning blocks. Both elements must be corrected. Note: 23 mm domes are for positional blocks, not warning blocks.",
-        "common_misconceptions": [
-          "Applying the 30% contrast limit to tactile warning blocks — 30% is for general floor/wall transitions; tactile blocks require 50%",
-          "Confusing 23 mm positional domes with the 35 mm warning domes — both are valid BP 344 dimensions but for different block types"
-        ]
-      },
+      "rationale": "BP 344 states a 300 mm setback.",
       "explanation": "Multi-element compliance check combining dome dimensions and contrast requirements — highest difficulty in this set.",
       "code_citation": "BP 344 2024 IRR, Appendix A, Table A.7.2; Sec A.7.2.e",
       "bloom_level": "evaluate",
@@ -402,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.914571+00:00",
       "content_hash": "sha256:b484bf3672ddd332e7e1a0669762eb02bae5429f5e0806ad4b1ef55e7685dfe6"
     },
     {
       "question_id": "14330dfe-cd58-487e-912a-dbfab23a7319",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "The BP 344 2024 IRR Appendix A identifies the locations where tactile surfaces are required along accessible routes. Which of the following lists correctly represents locations mandated under Section A.7.11?",
+      "text": "What signal must an accessible toilet emergency call bell emit?",
       "options": [
         {
-          "id": "A",
-          "text": "Fire exit stairs and ramps only — tactile surfaces are restricted to emergency egress elements to avoid confusing users in non-emergency circulation areas"
+          "id": "a",
+          "text": "An audible or visible alarm signal"
         },
         {
-          "id": "B",
-          "text": "Accessible toilets and elevators only — these are the primary destinations for PWDs and therefore the only locations where full tactile path systems are mandated"
+          "id": "b",
+          "text": "Only a silent log"
         },
         {
-          "id": "C",
-          "text": "Building entrances and parking areas only — tactile paths are required only for the exterior approach to the building; interior tactile requirements are advisory"
+          "id": "c",
+          "text": "Only a decorative light"
         },
         {
-          "id": "D",
-          "text": "Stairways, escalators, elevators, ramps, pedestrian-vehicle intersections, entrances, ticket counters, accessible toilets, ATMs, transit platforms, and tactile information maps"
+          "id": "d",
+          "text": "No signal"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Mandated at stairways (not fire exits), escalators, elevators, ramps (not fire/curb/pool ramps), pedestrian crossings, pathways, entrances, ticket counters, accessible toilets, ATMs, transit platforms, and tactile information maps (A.7.11)",
-        "explanation": "Section A.7.11 and related items list the required tactile surface locations on primary pedestrian accessible routes: stairways (other than fire-exit stairs), escalators, elevators, ramps (other than fire-exit, curb, and swimming-pool ramps), pedestrian-vehicle intersections, pathways, entrances, ticket counters and gates, accessible toilets, ATMs and kiosks, transit platforms, and tactile information maps. The exclusion of fire-exit stairs and curb ramps from the list is itself testable. Tactile path requirements extend throughout accessible routes, not just to specific destinations.",
-        "common_misconceptions": [
-          "Limiting tactile requirements to only elevators and toilets — the mandate covers a broad list of route elements",
-          "Including fire-exit stairs in the required locations — fire-exit stairs are explicitly excluded from tactile path requirements in A.7.11"
-        ]
-      },
+      "rationale": "BP 344 requires an audible or visible alarm signal.",
       "explanation": "Tests the full list of mandated tactile surface locations — including the notable exclusions (fire-exit stairs, curb ramps).",
       "code_citation": "BP 344 2024 IRR, Appendix A, Sec A.7.11",
       "bloom_level": "understand",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.917170+00:00",
       "content_hash": "sha256:8021d263d990f6a619b8786bb8ce42750660d1c1c2dd36dc0734a73454aeb369"
     },
     {
       "question_id": "a023e9f0-dbdb-41c9-a9ca-618fb7325498",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR Section 8.7.b, where exactly must Braille characters be positioned relative to elevator control buttons inside the car?",
+      "text": "Where must audio and visual alarm systems be installed under the fire alarm provision?",
       "options": [
         {
-          "id": "A",
-          "text": "Below each button — Braille is read bottom-to-top in the Philippine standard, so placing it below the button matches the natural reading direction"
+          "id": "a",
+          "text": "On all floors in compliance with the latest Fire Code"
         },
         {
-          "id": "B",
-          "text": "To the left of each button — consistent with the convention that tactile labels precede the control they identify in the direction of reading"
+          "id": "b",
+          "text": "Only in parking areas"
         },
         {
-          "id": "C",
-          "text": "To the right of each button — following the left-to-right reading convention so the Braille label follows the button in the natural reading sequence"
+          "id": "c",
+          "text": "Only outside the site"
         },
         {
-          "id": "D",
-          "text": "Above each button — placed above so the user reads the label before reaching down to press the control"
+          "id": "d",
+          "text": "Only at the owner office"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Braille is positioned to the LEFT of each elevator button (Sec 8.7.b)",
-        "explanation": "Section 8.7.b specifies that Braille characters must be located to the left of each elevator control button. This is distinct from the Braille floor level indicators on the door jambs (Sec 8.7.c), which are at 1200 mm AFF on both jambs. The left-of-button placement is a specific, testable detail that distinguishes thorough code knowledge from surface familiarity. Both button Braille and jamb Braille are independently required.",
-        "common_misconceptions": [
-          "Placing Braille above or below buttons — the code specifies the left side",
-          "Thinking jamb Braille and button Braille are the same requirement — they are two separate provisions at different locations and heights"
-        ]
-      },
+      "rationale": "BP 344 states audio and visual alarms shall be installed on all floors in compliance with the Fire Code.",
       "explanation": "Tests the specific left-of-button Braille placement — a precise detail from Sec 8.7.b.",
       "code_citation": "BP 344 2024 IRR, Sec 8.7.b",
       "bloom_level": "remember",
@@ -504,45 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.912036+00:00",
       "content_hash": "sha256:8d9011b8d19966005bc16fee5c6c5e34a9ab3c7acc1293048b7171b95cc4bc4e"
     },
     {
       "question_id": "0d65dd1e-bced-42a4-a96e-734b204742a2",
       "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR Appendix A Section A.7.2.e, what is the minimum luminance contrast required between tactile floor warning blocks and the adjacent floor finish, and how does this differ from the contrast applied to general floor-to-wall distinctions?",
+      "text": "What standard is referenced for audible and visible evacuation notification signals?",
       "options": [
         {
-          "id": "A",
-          "text": "Tactile blocks: minimum 30% luminance contrast; floor-to-wall transitions: minimum 50% — tactile blocks are less critical because they are detectable by touch, not sight"
+          "id": "a",
+          "text": "NFPA 72 or another approved means determined by the Fire Marshal"
         },
         {
-          "id": "B",
-          "text": "Tactile blocks: minimum 50% luminance contrast; floor-to-wall transitions: also 50% — both elements use the same contrast standard for universal accessibility, ensuring consistency"
+          "id": "b",
+          "text": "A contractor memo only"
         },
         {
-          "id": "C",
-          "text": "Tactile blocks: minimum 70% luminance contrast; floor-to-wall transitions: minimum 30% — tactile blocks carry the highest contrast requirement in the entire BP 344 standard, emphasizing their importance"
+          "id": "c",
+          "text": "A furniture catalog"
         },
         {
-          "id": "D",
-          "text": "Tactile blocks: minimum 50% luminance contrast; floor-to-wall transitions: minimum 30% — tactile blocks require higher contrast because they must be visible to low-vision users as well as detectable by touch"
+          "id": "d",
+          "text": "No standard or approval"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Tactile warning blocks: minimum 50% luminance contrast (A.7.2.e); general floor-to-wall and gratings: minimum 30% — higher contrast for tactile blocks to serve low-vision users",
-        "explanation": "Section A.7.2.e specifies that tactile floor surfaces must have a minimum 50% luminance contrast from adjacent floor finishes. The 30% contrast figure applies to general floor-wall distinctions, gratings versus surrounding floor, and other visual elements — not to the tactile blocks themselves. Tactile blocks serve both totally blind users (through touch) and low-vision users (through visual contrast), hence the higher 50% requirement. The article explicitly flags the '50% vs 30% trap' for ALE candidates.",
-        "common_misconceptions": [
-          "Applying 30% contrast to tactile blocks — 30% is for general floor transitions and gratings, not for the tactile block surfaces themselves",
-          "Using 70% as the tactile block standard — the requirement is 50%, not higher"
-        ]
-      },
+      "rationale": "BP 344 references NFPA 72 or other approved notification means subject to Fire Marshal approval.",
       "explanation": "Tests the 50% vs 30% contrast trap — explicitly called out in the article as an LEA pitfall.",
       "code_citation": "BP 344 2024 IRR, Appendix A, Sec A.7.2.e",
       "bloom_level": "analyze",
@@ -555,7 +485,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.685167+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.916169+00:00",
       "content_hash": "sha256:6131ea85b622a105c9fc67aaf8c9a005dd36572a01633024a8cc903f24240025"
     }
   ]

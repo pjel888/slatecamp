@@ -8,37 +8,31 @@
       "question_id": "38b20dde-4fbc-40e4-9899-e6bba8cbe035",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "What is a legitimate ground for calling a performance bond?",
+      "text": "How does UAP Document 301 define a performance bond?",
       "options": [
         {
           "id": "a",
-          "text": "The contractor's bid price was higher than expected, which is not a valid reason for calling a performance bond."
+          "text": "Security furnished by the contractor and surety to guarantee execution of the work according to the contract"
         },
         {
           "id": "b",
-          "text": "The contractor's failure to commence work within specified time or suspension of work without authorization"
+          "text": "A bond that releases all liens after final payment"
         },
         {
           "id": "c",
-          "text": "The owner changed the project budget, which does not justify calling a performance bond."
+          "text": "An invitation to make bidder proposals"
         },
         {
           "id": "d",
-          "text": "The engineer made a design change, which is not a contractor's fault and thus not a valid ground."
+          "text": "A policy for a consulting architect's malpractice coverage"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses pricing dissatisfaction with performance default; high bids are not grounds for bond call.",
-        "c": "Budget changes by Owner are not contractor defaults; they do not justify bond call.",
-        "d": "Design changes are Owner-initiated, not contractor defaults; they do not justify bond call.",
-        "correct": "Legitimate grounds for bond call are material breaches: failure to start work timely, unauthorized work suspension, failure to maintain schedule, or project abandonment.",
-        "takeaway": "Bond call requires material breach: failure to start, unauthorized suspension, or abandonment."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 488-492. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": "Confuses pricing dissatisfaction with performance default; high bids are not grounds for bond call. Budget changes by Owner are not contractor defaults; they do not justify bond call. Design changes are Owner-initiated, not contractor defaults; they do not justify bond call. Legitimate grounds for bond call are material breaches: failure to start work timely, unauthorized work suspension, failure to maintain schedule, or project abandonment. Bond call requires material breach: failure to start, unauthorized suspension, or abandonment.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CTR-010-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-05-06T13:20:03.402277+00:00",
+      "updated_at": "2026-07-20T01:13:23.616190+00:00",
       "content_hash": "sha256:cfdec13c5c9c022f652c899e9d176234a710a74a503692f2ff7deb7efe8fa113"
     },
     {
       "question_id": "9f3402fb-2784-4dd1-a705-0454bc9fb7be",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "What must the owner do before calling the performance bond?",
+      "text": "Under CIAP Document 102, what performance bond amount is required before signing the contract?",
       "options": [
         {
           "id": "a",
-          "text": "Nothing; the owner may call the bond at any time without any prior notice or conditions"
+          "text": "15% of the contract amount"
         },
         {
           "id": "b",
-          "text": "Provide formal notice to the contractor specifying the default and allow reasonable opportunity to remedy within the notice period"
+          "text": "100% of the contract amount"
         },
         {
           "id": "c",
-          "text": "Obtain permission from the surety first, ensuring all parties are informed and agree"
+          "text": "5% of the bid amount"
         },
         {
           "id": "d",
-          "text": "Replace the contractor immediately, bypassing any formal procedures or notifications"
+          "text": "The exact value of unpaid liens only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes unilateral Owner action; procedural requirements protect both Contractor and Surety rights.",
-        "c": "Inverts the process; Owner calls the bond, which then informs the Surety.",
-        "d": "Confuses remedies; notice and cure opportunity are required before replacement decisions.",
-        "correct": "Owner must provide formal written notice specifying the default and allow 7-14 days for contractor remedy before calling the bond.",
-        "takeaway": "Before bond call: give formal written notice and allow 7-14 days to cure the default."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-010-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.613604+00:00",
       "content_hash": "sha256:2ec4f7b38f03954d6cca35dd17891fc8151104a9a2be058e7ab4b3cdfd91240b"
     },
     {
       "question_id": "343cc065-9c3a-4278-8a0c-b8fb45001e0d",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "Why is thorough documentation of contractor default essential before calling a performance bond?",
+      "text": "When does CIAP Document 102 require the contractor to furnish the performance bond?",
       "options": [
         {
           "id": "a",
-          "text": "It is simply a formality with no practical importance, often overlooked in urgent situations"
+          "text": "Prior to signing the contract"
         },
         {
           "id": "b",
-          "text": "The surety has the right to investigate and contest the call; incomplete documentation may result in denial"
+          "text": "After final payment only"
         },
         {
           "id": "c",
-          "text": "Documentation is only needed for the architect's records, serving no legal purpose"
+          "text": "After one year of occupancy"
         },
         {
           "id": "d",
-          "text": "It delays the process unnecessarily, potentially causing project setbacks"
+          "text": "Only after arbitration starts"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Minimizes importance; documentation is critical to surviving Surety challenges.",
-        "c": "Understates importance; documentation is essential for Surety claim validation.",
-        "d": "Wrongly suggests documentation delays; proper procedure requires documentation regardless.",
-        "correct": "Surety may contest the bond call if grounds are insufficient or procedures were not followed; thorough documentation supports Owner's claim.",
-        "takeaway": "Surety can contest inadequately documented claims; thorough documentation protects the Owner's recovery."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-010-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.611581+00:00",
       "content_hash": "sha256:20e52dcbc1814ac1c11f878c4636a2a1f8aad13eac2072b6ad682478e713cdda"
     },
     {
       "question_id": "4487ced3-34c9-4331-b336-3b29aba82574",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "How does the surety's conduct of due diligence before issuing a bond protect the owner?",
+      "text": "What does the CIAP performance bond secure?",
       "options": [
         {
           "id": "a",
-          "text": "It does not protect the owner in any way, as the bond is primarily for the contractor's benefit"
+          "text": "Faithful performance of the contractor's work"
         },
         {
           "id": "b",
-          "text": "It ensures the contractor has financial capacity and creditworthiness, reducing risk of default"
+          "text": "Payment of the owner's insurance premiums"
         },
         {
           "id": "c",
-          "text": "It guarantees the contractor will never face financial difficulty, which is an unrealistic expectation"
+          "text": "Architect ownership of drawings"
         },
         {
           "id": "d",
-          "text": "It allows the surety to set the contract price, which is not typically within their purview"
+          "text": "The right to accept the highest bidder"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly denies protection; surety vetting provides meaningful assurance of contractor viability.",
-        "c": "Assumes unlimited protection; due diligence reduces risk but does not eliminate it.",
-        "d": "Confuses surety role; surety does not set contract price, only assesses contractor credibility.",
-        "correct": "Surety's pre-bond investigation of contractor finances and track record assesses capacity to perform, reducing default risk.",
-        "takeaway": "Surety's due diligence screens contractor financial capacity and track record, reducing default risk."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-010-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.614263+00:00",
       "content_hash": "sha256:cd85ea060de04e59b1e6181ff00425e69f75c03ae1fbe1c92f6db59173624d3a"
     },
     {
       "question_id": "4fb31612-442e-4de5-8ebf-b89a1f4936d0",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "What is the primary purpose of a performance bond in a construction contract?",
+      "text": "Until when do the performance and payment bonds remain in effect under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "To protect the contractor's profit margin, ensuring financial stability throughout the project"
+          "text": "Until replaced by the contractor's guarantee bond"
         },
         {
           "id": "b",
-          "text": "To guarantee that the contractor will execute the work in compliance with contract terms"
+          "text": "Only until bid opening"
         },
         {
           "id": "c",
-          "text": "To set the contract price, providing a clear financial framework for the project"
+          "text": "Only until the first progress billing"
         },
         {
           "id": "d",
-          "text": "To assign work to subcontractors, facilitating the distribution of tasks among various parties"
+          "text": "Only until a subcontract is approved"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes bond protects contractor profit; bond protects Owner against contractor default.",
-        "c": "Confuses bond with contract price; bond is a financial guarantee, separate from pricing.",
-        "d": "Bond does not address subcontracting; it guarantees contractor performance of work.",
-        "correct": "A performance bond guarantees the contractor's commitment to complete all work according to specifications and contract terms.",
-        "takeaway": "Performance Bond guarantees contractor completion of work per contract specifications."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-010-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.612936+00:00",
       "content_hash": "sha256:c7a51da78f09c72211f92a0635ab6520a74c89994b79a05795490d844508bda5"
     },
     {
       "question_id": "d34b1926-bae4-4535-a89c-7899e624f61a",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "Which three parties are involved in a performance bond relationship?",
+      "text": "Who provides the guarantee for contractor bonds under UAP Document 301?",
       "options": [
         {
           "id": "a",
-          "text": "Owner, contractor, and engineer, which is a common misconception"
+          "text": "The surety"
         },
         {
           "id": "b",
-          "text": "Owner, contractor, and subcontractor, which is incorrect as subcontractors are not directly involved"
+          "text": "The building official"
         },
         {
           "id": "c",
-          "text": "Owner (obligee), contractor (principal), and surety (guarantor)"
+          "text": "The lowest bidder"
         },
         {
           "id": "d",
-          "text": "Contractor, subcontractor, and surety, which does not include the obligee"
+          "text": "The Board of Architecture"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Substitutes Engineer for Surety; the surety, not Engineer, guarantees performance.",
-        "b": "Substitutes Subcontractor for Surety; the surety company, not Subcontractor, issues the guarantee.",
-        "d": "Omits Owner; the Owner is the beneficiary (obligee) of the bond guarantee.",
-        "correct": "A performance bond creates a three-party relationship with the owner as obligee, contractor as principal, and surety as guarantor.",
-        "takeaway": "Three parties: Owner (obligee), Contractor (principal), Surety (guarantor)."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 488-492. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-010-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.615558+00:00",
       "content_hash": "sha256:5519546f8518b6dd4c493bf927df6a1adf29ed3c0ac6b7984feba64af339ffc6"
     },
     {
       "question_id": "7e5679e8-f4dc-47bc-967d-be1eb13dd00f",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "What happens to the bond amount if change orders increase the contract price?",
+      "text": "What happens to a bond if the covered work or obligation has not been completely performed under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "The bond amount remains the same regardless of contract changes, as it is fixed at the time of contract signing"
+          "text": "The bond continues to have force and effect beyond the stated effectivity period"
         },
         {
           "id": "b",
-          "text": "The bond amount may need to be increased to maintain protective value at the new contract total"
+          "text": "The bond automatically becomes void"
         },
         {
           "id": "c",
-          "text": "The surety automatically refunds the difference, ensuring the bond reflects the original contract value"
+          "text": "The owner loses all recourse immediately"
         },
         {
           "id": "d",
-          "text": "Change orders cannot occur if a performance bond is in place, as they would invalidate the bond terms"
+          "text": "The bond converts into a bid bulletin"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes bond is fixed; without increase, coverage becomes inadequate as contract value rises.",
-        "c": "Confuses bond administration; surety does not refund; Owner requests increased bond coverage.",
-        "d": "Falsely assumes change orders are prohibited; change orders are permitted and trigger bond review.",
-        "correct": "To maintain adequate protection, the bond amount may require increase when contract modifications significantly raise the total contract value.",
-        "takeaway": "Performance Bond amount may increase with change orders to maintain proportional coverage."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 823-832. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-010-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.609693+00:00",
       "content_hash": "sha256:3309f1603083ac63696d07ce89a2c5c2aa00b43487e84ac4795cb9e98eb51d95"
     },
     {
       "question_id": "8d634057-738c-41d8-8f27-06f80e79feb5",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "What is a typical performance bond amount expressed as a percentage of the contract price?",
+      "text": "Under CIAP Document 102, when can the owner retain recourse against a bond?",
       "options": [
         {
           "id": "a",
-          "text": "10% to 25%, depending on the project's risk profile and the contractor's creditworthiness"
+          "text": "Until it is cancelled and returned, replaced with reserved rights, or the owner issues unconditional acceptance"
         },
         {
           "id": "b",
-          "text": "50% to 100%, commonly 100% of the contract price"
+          "text": "Only before the contract is signed"
         },
         {
           "id": "c",
-          "text": "150% to 200%, which is rarely used due to excessive cost implications"
+          "text": "Only before any work starts"
         },
         {
           "id": "d",
-          "text": "Only a fixed amount regardless of contract price, which is not standard practice"
+          "text": "Only if the bidder advertisement says so"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Understates typical amounts; 10%-25% is too low for adequate coverage.",
-        "c": "Overstates typical amounts; 150%-200% exceeds standard practice.",
-        "d": "Ignores the percentage relationship; bond amounts are typically tied to contract value.",
-        "correct": "Standard practice requires performance bonds at 50% to 100% of contract value, with 100% being the most common requirement.",
-        "takeaway": "Standard Performance Bond = 50%-100% of contract price, typically 100%."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 823-832. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-010-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.610782+00:00",
       "content_hash": "sha256:cfdca1dda2ff91c381c83df66254e23778515308c02af5fca5848471c9376fd4"
     },
     {
       "question_id": "5b2613aa-3be5-41e4-8d89-ed36ddba7b2a",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "What is the surety's liability limited to when the performance bond is called?",
+      "text": "Which distinction is source-safe for the performance bond and payment bond?",
       "options": [
         {
           "id": "a",
-          "text": "The full cost of completing all work regardless of actual expense, ensuring project completion at any cost"
+          "text": "The performance bond secures faithful work performance; the payment bond covers obligations to workers, subcontractors, and suppliers"
         },
         {
           "id": "b",
-          "text": "The bond amount; if completion costs exceed the bond, the surety is not obligated to pay the excess"
+          "text": "Both bonds are advertisements for bidders"
         },
         {
           "id": "c",
-          "text": "Double the contract price, providing a significant financial cushion for unforeseen expenses"
+          "text": "The performance bond pays only unpaid suppliers"
         },
         {
           "id": "d",
-          "text": "Only the contractor's profit amount, which limits the surety's financial exposure"
+          "text": "The payment bond guarantees design liability"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes unlimited surety liability; the bond amount is the maximum exposure.",
-        "c": "Invents a double-price liability rule; liability is limited to bond amount stated in contract.",
-        "d": "Confuses contractor profit with surety liability; surety covers completion costs within the bond.",
-        "correct": "Surety liability is capped at the bond amount; costs exceeding the bond amount are Owner's responsibility.",
-        "takeaway": "Surety liability capped at bond amount; Owner bears excess costs above the bond."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CTR-010-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.612263+00:00",
       "content_hash": "sha256:88cffe6f95c08a6de04b44e52c592af166b0e04f37ff89fdd5015bfa5d8b5167"
     },
     {
       "question_id": "17bc3333-8e02-4cd7-bbe2-f27f45493f30",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
       "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "What options are available to the surety after a performance bond is called?",
+      "text": "Which amount should be used for this article's CIAP Document 102 performance-bond question?",
       "options": [
         {
           "id": "a",
-          "text": "The surety must immediately pay the full bond amount to the owner"
+          "text": "15% of the contract amount"
         },
         {
           "id": "b",
-          "text": "The surety may allow work to continue under supervision, pay for a replacement contractor, or negotiate a settlement"
+          "text": "50% to 100% by default"
         },
         {
           "id": "c",
-          "text": "The surety must terminate all further work on the project, ensuring no additional liabilities are incurred"
+          "text": "A fixed peso amount unrelated to contract value"
         },
         {
           "id": "d",
-          "text": "The surety automatically reimburses the contractor, which may not cover all incurred costs or liabilities"
+          "text": "The amount of the owner's optional insurance"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Assumes automatic immediate payment; Surety evaluates the claim and may pursue remedies first.",
-        "c": "Assumes project termination; Surety may choose to continue work if feasible.",
-        "d": "Wrongly reimburses contractor; Surety acts in Owner's interest to minimize its own liability.",
-        "correct": "Upon bond call, the surety has discretion to pursue various remedies: continuing work with supervision, arranging completion, or negotiating settlement.",
-        "takeaway": "Surety has options: allow supervised continuation, arrange replacement contractor, or negotiate settlement."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-010-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.614924+00:00",
       "content_hash": "sha256:43cdfc8ae562f2b064c9f9725d6fa1d324dd9927448eeb0eedeede64f7435784"
     }
   ]

@@ -1,32 +1,24 @@
 {
-  "batch": 153,
-  "batch_id": "source-audited-batch-153-local-first",
-  "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
-  "cluster_id": "lea-matl-008-02",
   "question_id": "34066ba1-043c-468e-9c14-e1da001cbfb3",
-  "status": "rewritten_source_audited",
-  "before_hash": "sha256:5714c57fd4e76292e888e2c9b201221c2396f52d08ef0be506017aa447429bbe",
-  "after_hash": "sha256:c61f287c516ac06b6aec3377d8b62788c9b2308f71caa2e44f1720155a44c994",
   "baseline_hash": "sha256:5714c57fd4e76292e888e2c9b201221c2396f52d08ef0be506017aa447429bbe",
-  "correct_answer_preserved": true,
-  "source_ids": [
-    "bci-5e-structural-joints-b153"
-  ],
-  "reason": "Batch 153 local-first rewrite aligned to fixed reservation manifest and source boundary.",
+  "action": "replace",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "proposed": {
     "text": "BCI gives which example of a point connector?",
     "options": [
       {
         "id": "a",
-        "text": "Glue"
+        "text": "Glue — an adhesive film/bond, not the BCI point-connector example"
       },
       {
         "id": "b",
-        "text": "Bolt"
+        "text": "Bolt — the BCI example of a point connector (through-hole with mating nut)"
       },
       {
         "id": "c",
-        "text": "Weld"
+        "text": "Weld — a fused joint, not the BCI point-connector example"
       },
       {
         "id": "d",
@@ -34,36 +26,8 @@
       }
     ],
     "correct_option_id": "b",
-    "rationale": {
-      "a": "Glue is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-      "b": "Bolt This is the source-supported answer inside the Batch 153 local-first source boundary.",
-      "c": "Weld is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-      "d": "Backer rod is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-      "correct": "Bolt Supported by bci-5e-structural-joints-b153.",
-      "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
-      "source_boundary": "bci-5e-structural-joints-b153",
-      "checked_sources": [
-        "bci-5e-structural-joints-b153"
-      ]
-    },
+    "rationale": "Bolt Supported by bci-5e-structural-joints-b153. [A]: Glue is not the best answer because it changes the source-backed concept or adds an unsupported claim. [B]: Bolt This is the source-supported answer inside the Batch 153 local-first source boundary. [C]: Weld is not the best answer because it changes the source-backed concept or adds an unsupported claim. [D]: Backer rod is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
     "explanation": null,
-    "code_citation": "Local source boundary: BCI refined markdown lines 2147-2152.",
-    "application_context": "source_audited_local_first",
-    "practice_context": [
-      "batch-153-local-first",
-      "bci-5e-structural-joints-b153"
-    ]
-  },
-  "rationale": {
-    "a": "Glue is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-    "b": "Bolt This is the source-supported answer inside the Batch 153 local-first source boundary.",
-    "c": "Weld is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-    "d": "Backer rod is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-    "correct": "Bolt Supported by bci-5e-structural-joints-b153.",
-    "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
-    "source_boundary": "bci-5e-structural-joints-b153",
-    "checked_sources": [
-      "bci-5e-structural-joints-b153"
-    ]
+    "code_citation": "Local source boundary: BCI refined markdown lines 2147-2152."
   }
 }

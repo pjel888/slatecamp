@@ -1,0 +1,508 @@
+{
+  "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:77e84c7c770b435e3ee400c6f7d7ab842ad7b7abb15984c7fb1326f8cf63cf39",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "9580414f-ad76-4b2d-a852-4b7c19fa2ff5",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "According to SPP 202, how is the schedule of progress payments for the architect’s professional fees determined?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mandated as fixed percentages for all projects by the PRC"
+        },
+        {
+          "id": "b",
+          "text": "Established through the Owner-Architect Agreement"
+        },
+        {
+          "id": "c",
+          "text": "Determined by the total duration of the construction phase"
+        },
+        {
+          "id": "d",
+          "text": "Set by the contractor's billing cycle"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Professional fees are no longer mandated as fixed minimums; they are negotiable and contractual.",
+        "c": "The design phase payment schedule is tied to design deliverables, not construction duration.",
+        "d": "The architect's fee is independent of the contractor's billing and is governed by the agreement with the Owner.",
+        "correct": "SPP 202 specifies that the Manner of Payment and the Schedule of Fees are established in the Owner-Architect Agreement. While the SPP provides a recommended breakdown, the specific percentages are contractual and vary by project (UAP SPP Doc 202, Section 7).",
+        "takeaway": "The schedule of payments for architectural services is a matter of contract between the Owner and the Architect."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:135ab0030048b982efea6f04d2e74a5b8e31d89a8c4ac1d4a41bbb4f74ce5193"
+    },
+    {
+      "question_id": "2368b427-2c32-4c05-afd9-93669c3784c3",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "According to SPP 202, what type of specifications are prepared during Design Development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Final, comprehensive technical specifications that include all necessary details for construction"
+        },
+        {
+          "id": "b",
+          "text": "Preliminary outline specifications fixing and illustrating the size and character of systems"
+        },
+        {
+          "id": "c",
+          "text": "Detailed procurement specifications that outline the exact materials and methods to be used"
+        },
+        {
+          "id": "d",
+          "text": "Contractor method statements that describe the procedures and processes for construction tasks"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Comprehensive technical specifications are prepared during Contract Documents.",
+        "c": "Detailed procurement specifications are developed in later phases.",
+        "d": "Contractor method statements are not architect deliverables.",
+        "correct": "Outline specifications are prepared during Design Development, fixing and illustrating the size and character of the entire project in terms of materials and systems (SPP Doc 202).",
+        "takeaway": "Design Development produces outline specifications, not final specs."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:19e2484c563566e276c5713f131e401d9ef2d54939658a5b80060efb0c301e53"
+    },
+    {
+      "question_id": "6b5d9dca-db8b-4cec-b250-e931c5fa3bb9",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "A Design Development deliverable includes a diagrammatic layout of construction systems. What is the strategic purpose of this document?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To provide decoration for the presentation, enhancing the visual appeal of the design proposal"
+        },
+        {
+          "id": "b",
+          "text": "To show how building components and systems integrate together"
+        },
+        {
+          "id": "c",
+          "text": "To eliminate the need for engineering consultants, thereby reducing project costs"
+        },
+        {
+          "id": "d",
+          "text": "To serve as the final construction documents, which are used for actual building construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Diagrammatic layouts serve functional coordination purposes.",
+        "c": "Diagrams inform consultant coordination; consultants are still needed.",
+        "d": "Diagrammatic layouts are not final construction documents.",
+        "correct": "The diagrammatic layout shows how building components integrate, communicating system integration strategy to inform coordination decisions (SPP Doc 202).",
+        "takeaway": "System diagrams communicate integration strategy for coordination."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:957536018805f2a374754957ee5ba3b6c9cb062279d37d63cd924640ee89a1e8"
+    },
+    {
+      "question_id": "cfeb04fb-2ece-431d-88ee-03f7b069765c",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "An updated Statement of Probable Project Construction Cost is submitted during Design Development. How does this differ from the schematic estimate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The updated estimate is less detailed than the schematic estimate, focusing only on major cost categories without itemized breakdowns."
+        },
+        {
+          "id": "b",
+          "text": "The updated estimate reflects refinements in scope, requirements, or market conditions discovered during design development"
+        },
+        {
+          "id": "c",
+          "text": "The updated estimate is final and cannot change, as it is considered a binding document once submitted."
+        },
+        {
+          "id": "d",
+          "text": "The updated estimate ignores market changes, assuming static conditions from the initial project proposal."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The updated estimate should be more detailed, not less.",
+        "c": "Cost estimates are updated again during Contract Documents phase.",
+        "d": "Cost estimates incorporate current market conditions.",
+        "correct": "An updated Statement of Probable Project Construction Cost is submitted reflecting refinements in scope, requirements, or market conditions discovered during Design Development work (SPP Doc 202).",
+        "takeaway": "Design Development cost estimates reflect refined scope and conditions."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c9d222ae97b1a450d221631b9cecc7b9b441d059ea0b7c76c224c1ba03e237e1"
+    },
+    {
+      "question_id": "fb13250c-124b-4177-bf8d-d78efb9521c1",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "Under SPP 202, what governs the cumulative amount of professional fees paid to an architect upon the completion of the Design Development Phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A fixed 35% cumulative fee mandated by the UAP, which is a common misconception about fee structures"
+        },
+        {
+          "id": "b",
+          "text": "The specific payment terms and percentage of work progress defined in the Owner-Architect Agreement"
+        },
+        {
+          "id": "c",
+          "text": "The total value of the building permit fees paid to the city, which is unrelated to professional fees"
+        },
+        {
+          "id": "d",
+          "text": "The number of consultants involved in the project, which does not directly determine the architect's fees"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 35% is a traditional cumulative progress target, it is not a legally fixed mandate for all contracts.",
+        "c": "Permit fees are administrative costs and do not govern the architect's professional fee schedule.",
+        "d": "Consultant numbers do not directly determine the cumulative percentage of the architect's fee.",
+        "correct": "SPP 202 (Section 7) specifies that progress payments are made as deliverables for each phase are completed, based on the percentage of work accomplished as stipulated in the contract (Owner-Architect Agreement).",
+        "takeaway": "Progress payments are tied to the completion of specific deliverables defined in the contract."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:086be869a030902b085c0799b274d19775b535e1d5c2bcef08e8ab9b3de22f93"
+    },
+    {
+      "question_id": "d79637aa-ca9f-4f0c-8d03-f84469ed30d6",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "What is the primary purpose of Design Development according to SPP 202?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To create the final working drawings for construction, which is actually part of the construction document phase"
+        },
+        {
+          "id": "b",
+          "text": "To translate approved schematic design into detailed drawings and specifications ready for contract document preparation"
+        },
+        {
+          "id": "c",
+          "text": "To obtain building permits, which is not the main focus of design development"
+        },
+        {
+          "id": "d",
+          "text": "To select contractors for the project, which is typically done after design development"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Final working drawings are prepared during Contract Documents phase.",
+        "c": "Building permits are obtained during Contract Documents phase.",
+        "d": "Contractors are selected during Bidding Assistance phase.",
+        "correct": "Design Development builds upon the approved schematic design to produce detailed drawings, outline specifications, and updated cost estimates, preparing the foundation for contract documents (SPP Doc 202).",
+        "takeaway": "Design Development translates schematics into detailed technical documents."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:425125cacffa7b122ea9cca626a01f2269aaca2ef784ad246cda3aa2d9b17706"
+    },
+    {
+      "question_id": "894832a4-d749-4ddf-a846-cbfbd257f358",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "Comparing Schematic Design and Design Development under SPP 202, why does the latter phase generally involve more intensive professional resources and effort?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design Development is less technical than Schematic Design, which is incorrect as it involves more technical detail"
+        },
+        {
+          "id": "b",
+          "text": "Design Development requires substantial technical development, intensive consultant coordination, and the production of detailed drawings and outline specifications"
+        },
+        {
+          "id": "c",
+          "text": "Design Development focus solely on the building's aesthetic appearance, which is a misconception as it involves more than aesthetics"
+        },
+        {
+          "id": "d",
+          "text": "The number of design iterations is always fewer in Design Development, which is not necessarily true"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Design Development is more technical and detailed than Schematic Design.",
+        "c": "While aesthetics are refined, the phase is primarily characterized by technical and system integration.",
+        "d": "Coordination complexity often leads to more revisions, not fewer.",
+        "correct": "Design Development requires transitioning from conceptual schematics to technical integration, involving more complex coordination among multiple disciplines and the production of more detailed technical documents (SPP Doc 202).",
+        "takeaway": "Design Development's scope reflects greater technical and coordination depth."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26bd1c17fe0403c342a8b980c69faf3c14984219b8939c9fb49a625a0d82e542"
+    },
+    {
+      "question_id": "f8b295be-7910-4182-b5aa-fdf2b74f7823",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "The architect acts as the lead professional during Design Development. What is the architect's coordination responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect approves consultant work without review, trusting their expertise implicitly"
+        },
+        {
+          "id": "b",
+          "text": "The architect coordinates all disciplines to ensure systems integrate effectively with the architectural design"
+        },
+        {
+          "id": "c",
+          "text": "The architect leaves coordination entirely to consultants, assuming they will manage all interdisciplinary conflicts"
+        },
+        {
+          "id": "d",
+          "text": "The architect eliminates the need for consultant services by handling all technical aspects personally"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lead coordination requires active review and integration direction.",
+        "c": "The architect maintains primary coordination responsibility.",
+        "d": "The architect coordinates consultant work, not eliminates it.",
+        "correct": "The architect acts as the lead professional coordinating all disciplines to achieve an integrated solution where systems effectively integrate with architectural design (SPP Doc 202).",
+        "takeaway": "Architect leads coordination for integrated system design."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:787e2adc8a49951731d24f67e2043f6fcb513cea966434f61c359bf8b168575e"
+    },
+    {
+      "question_id": "77fc4f6b-0296-4dfe-9645-419cc9b16afc",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "Which of the following is NOT listed as a Design Development deliverable in SPP 202?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plans, elevations, and sections"
+        },
+        {
+          "id": "b",
+          "text": "Outline specifications for materials and systems"
+        },
+        {
+          "id": "c",
+          "text": "Diagrammatic layout of construction systems"
+        },
+        {
+          "id": "d",
+          "text": "Final bid analysis and contractor evaluation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Plans, elevations, sections are core Design Development drawings.",
+        "b": "Outline specifications are prepared during Design Development.",
+        "c": "Diagrammatic construction layout is a Design Development deliverable.",
+        "correct": "Bid analysis and contractor evaluation occur during Bidding Assistance phase, not Design Development (SPP Doc 202).",
+        "takeaway": "Design Development produces technical drawings and outline specs."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7884624538e1e0543d679645b67f049436d619fe7aa8f9f7cb75de7ecba73b26"
+    },
+    {
+      "question_id": "9d6ee24f-c1d2-4973-b302-7e507998d72c",
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "topic_id": "3c5ccc15-ac9d-40a9-9fb7-aca15e5bed7f",
+      "text": "Design Development requires coordination among the architect and engineering consultants. Why is this coordination particularly critical during this phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consultants are only required during Design Development, making their input crucial at this stage"
+        },
+        {
+          "id": "b",
+          "text": "Systems must be refined from schematic concepts into coordinated technical designs that integrate effectively"
+        },
+        {
+          "id": "c",
+          "text": "Coordination is required only to reduce architect fees, which can lead to cost savings for the client"
+        },
+        {
+          "id": "d",
+          "text": "Design Development involves less coordination than schematic design, allowing for more flexibility in design changes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Consultants work throughout design; coordination intensity varies.",
+        "c": "Coordination ensures quality; it's necessary regardless of fee structure.",
+        "d": "Design Development typically involves more coordination than Schematic Design.",
+        "correct": "Design Development typically sees the greatest amount of consultant coordination as structural, mechanical, electrical, and plumbing systems must be refined from schematic concepts into coordinated technical designs (SPP Doc 202).",
+        "takeaway": "Design Development requires intense system coordination integration."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-006-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5843b15b95ac80352ab1001a1bb06c460b50ea21008cdebd545b6a69379458f1"
+    }
+  ]
+}

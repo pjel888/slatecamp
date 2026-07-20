@@ -1,10 +1,10 @@
 {
   "question_id": "2eeff351-44c9-4787-9b83-43d28d63b562",
   "baseline_hash": "sha256:118fd7ddcf8f8244e18b182fb876b92a67b6719f43621fd9297f39018273b02e",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
     "parent_article_slug": "transport-nodes-escalators-walkways",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "Where are escalator tactile warning strips placed under the checked BP 344 source?",
+    "text": "Under BP 344 IRR, what is the goal for the vertical relationship between a transit platform edge and the floor of the transit vehicle at boarding?",
     "options": [
       {
-        "id": "a",
-        "text": "300 mm before the floor plates at both ends"
+        "id": "A",
+        "text": "The platform may be up to 150 mm below the vehicle floor, bridged by a portable ramp on request"
       },
       {
-        "id": "b",
-        "text": "At the center of the escalator only"
+        "id": "B",
+        "text": "The platform shall be level with the transit vehicle floor, with horizontal and vertical gaps minimized"
       },
       {
-        "id": "c",
-        "text": "Only on the upward escalator"
+        "id": "C",
+        "text": "The platform shall be 25 mm above the vehicle floor to prevent water ingress from the track area"
       },
       {
-        "id": "d",
-        "text": "600 mm after the handrail end"
+        "id": "D",
+        "text": "The platform shall be at least 300 mm above the vehicle floor to reduce the boarding step height"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "BP 344 requires tactile warning strips 600 mm deep and 300 mm before the floor plates at both ends.",
-    "explanation": "BP 344 requires tactile warning strips 600 mm deep and 300 mm before the floor plates at both ends.",
-    "code_citation": "BP 344 2024 IRR, escalators and passenger conveyances",
-    "bloom_level": "analyze",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Transport Nodes, Escalators, and Walkways",
-      "LEA Accessibility and Transport Design"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-transport-nodes-escalators-walkways-008"
+    "correct_option_id": "B",
+    "rationale": {
+      "summary": "BP 344 IRR requires boarding platforms to be level with the transit vehicle floor, avoiding noticeable gaps.",
+      "explanation": "The BP 344 IRR explicitly states that 'boarding platforms shall be leveled with the finished floor of the transit vehicles, avoiding noticeable horizontal and vertical gaps.' Any unavoidable gap must be minimized and mitigated with ramps or gap fillers — a portable ramp is a mitigation, not an acceptable design solution. Level boarding eliminates the step that prevents wheelchair users from self-boarding.",
+      "common_misconceptions": [
+        "Accepting a 150 mm gap bridged by a portable ramp as a compliant design solution",
+        "Confusing the ±25 mm level boarding tolerance (from the Translating PWD Rights article) with a 25 mm step height"
+      ]
+    },
+    "explanation": "BP 344 IRR requires platform and vehicle floor to be level — gaps must be minimized, not designed around.",
+    "code_citation": "BP 344 IRR",
+    "bloom_level": "understand",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

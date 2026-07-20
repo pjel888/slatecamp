@@ -1,0 +1,518 @@
+{
+  "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9553ff506e491f8b850db2742a08cae9d6cc4f8760845f84f7a306ca3cf9cd5b",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "eca07b68-831d-4dcc-94cb-fb5404b194ad",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A site plan shows contour lines with a 1-meter vertical interval. Across a horizontal distance of 10 meters on the map (at map scale), the contour lines span from elevation 100m to elevation 102m. What does this spacing indicate about the site terrain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The terrain is steep; closely-spaced contours indicate rapid elevation change over a short distance"
+        },
+        {
+          "id": "b",
+          "text": "The terrain is flat; the contours span only 2 meters vertically, suggesting minimal slope"
+        },
+        {
+          "id": "c",
+          "text": "The terrain is gently sloping; the contour spacing indicates a modest elevation change over distance"
+        },
+        {
+          "id": "d",
+          "text": "The contour spacing does not indicate slope; other mapping data is needed to determine terrain characteristics"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Closely-spaced contours indicate steep terrain, but this example shows 2m over 10m = moderate slope.",
+        "b": "The vertical span (2m) does not directly indicate flatness; what matters is spacing (10m). A 2m change over 10m is a 20% slope.",
+        "c": "Contour spacing indicates slope steepness. If 2 meters of vertical elevation occurs over 10 meters of horizontal distance, the slope is gentle (2/10 = 20% = moderate). Widely-spaced contours indicate gentle slopes; closely-spaced contours indicate steep slopes.",
+        "d": "Contour spacing IS the primary slope indicator on topographic maps.",
+        "correct": "Contour spacing indicates slope steepness. If 2 meters of vertical elevation occurs over 10 meters of horizontal distance, the slope is gentle (2/10 = 20% = moderate). Widely-spaced contours indicate gentle slopes; closely-spaced contours indicate steep slopes.",
+        "takeaway": "Contour spacing determines slope: close spacing = steep; wide spacing = gentle."
+      },
+      "explanation": null,
+      "code_citation": "Topographic Map Interpretation",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:45201f601189aa05bd17fd2a4b7b6b415e67780a37040be9c6cdfc68ef1bcf79"
+    },
+    {
+      "question_id": "b3a3d4d3-91da-4262-a83c-2d07b67c1df5",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A sloped residential site has an average grade of 20% (1V:5H slope). The site design proposes to create a building platform using bench cut and fill grading. What is the primary geotechnical and environmental consideration for this slope gradient?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20% slope is too steep; development cannot proceed without significant risk mitigation measures and environmental impact assessments"
+        },
+        {
+          "id": "b",
+          "text": "20% slope is moderate; bench cuts and retaining walls are necessary to create stable building pads; compaction of fill must be verified"
+        },
+        {
+          "id": "c",
+          "text": "20% slope is gentle; development can proceed with minimal grading intervention, assuming no additional environmental constraints"
+        },
+        {
+          "id": "d",
+          "text": "Slope gradient does not affect grading design; standard site preparation is sufficient, provided that all local regulations are met"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "20% is buildable with proper grading; it does not prohibit development.",
+        "b": "A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity.",
+        "c": "20% is not gentle (gentle is < 10%); significant grading is required.",
+        "d": "Slope directly determines grading strategy, cost, and geotechnical requirements.",
+        "correct": "A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity.",
+        "takeaway": "Slope determines grading approach: < 10% = minimal; 10–25% = bench cuts + walls; > 25% = specialized design required."
+      },
+      "explanation": "20% is buildable with proper grading; it does not prohibit development. A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity. 20% is not gentle (gentle is < 10%); significant grading is required. Slope directly determines grading strategy, cost, and geotechnical requirements. A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity. Slope determines grading approach: < 10% = minimal; 10–25% = bench cuts + walls; > 25% = specialized design required.",
+      "code_citation": "Slope Analysis and Grading Design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-05-06T15:39:28.209238+00:00",
+      "content_hash": "sha256:6fb33bb3012f17f1e04ecb31d39ce4626e88d746d36cf89c9d1a3517e9da2ff0"
+    },
+    {
+      "question_id": "84cc8f1a-a228-4114-9721-127f1920617d",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A site plan shows two adjacent properties: Property A has widely-spaced contour lines (10-meter intervals on map representing ~5 meters actual elevation change per 200 meters horizontal); Property B has tightly-spaced contour lines (1-meter intervals representing ~2 meters elevation change per 10 meters horizontal). Which property presents greater grading challenges, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Property A is more challenging; widely-spaced contours always indicate steep terrain, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Property B is more challenging; closely-spaced contours indicate steep (25%+) slopes requiring bench cuts, retaining walls, and geotechnical analysis"
+        },
+        {
+          "id": "c",
+          "text": "Both properties have equal grading difficulty; contour spacing does not affect development complexity, which is incorrect"
+        },
+        {
+          "id": "d",
+          "text": "Property A is steeper because the elevation change (10 meters) is larger than Property B (2 meters), which oversimplifies the analysis"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Widely-spaced contours indicate gentle slopes, not steep. Property A is actually easy to grade.",
+        "b": "Property A: 5m rise ÷ 200m = 2.5% slope = very gentle. Property B: 2m rise ÷ 10m = 20% slope = moderate-to-steep. Closely-spaced contours (Property B) indicate steeper terrain, requiring specialized grading design. Absolute elevation change is less important than the ratio of rise to distance.",
+        "c": "Contour spacing directly determines slope steepness and grading difficulty.",
+        "d": "Absolute elevation change (10m vs. 2m) is misleading; slope ratio (rise:distance) determines difficulty. Property A's 10m change over 200m = gentle.",
+        "correct": "Property A: 5m rise ÷ 200m = 2.5% slope = very gentle. Property B: 2m rise ÷ 10m = 20% slope = moderate-to-steep. Closely-spaced contours (Property B) indicate steeper terrain, requiring specialized grading design. Absolute elevation change is less important than the ratio of rise to distance.",
+        "takeaway": "Contour spacing (not absolute elevation range) determines slope. Closely-spaced contours = steep slope = complex grading."
+      },
+      "explanation": null,
+      "code_citation": "Topographic Analysis and Slope Steepness Determination",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f54df0c9d4b15a8cb913fef6ae8000e23e030c78c185463ff7fbbf5ccbe57eab"
+    },
+    {
+      "question_id": "13df5cfd-1d37-42a4-a103-2d03cb89ba54",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A site has a natural slope of 25% (1V:4H). The proposed grading design creates cut slopes at 1V:2H (50% slope) and fill slopes at 1V:2.5H (40% slope). What is the primary geotechnical concern with these designed slopes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The designed slopes are shallower than the natural slope; they are geotechnically sound, requiring no additional stabilization measures"
+        },
+        {
+          "id": "b",
+          "text": "The cut slope (1V:2H) is steeper than the natural angle of repose (~30–35°); it may require stabilization (soil nails, shotcrete) or failure of slopes could occur"
+        },
+        {
+          "id": "c",
+          "text": "Fill slopes are always stable; no concern exists, as they naturally compact over time without intervention"
+        },
+        {
+          "id": "d",
+          "text": "The designed slopes match the natural slope; they are inherently stable, posing no risk of erosion or collapse"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The cut slope is steeper than natural repose; this is a concern.",
+        "b": "Angle of repose (natural stable slope angle) is typically 30–35° for soil (tan⁻¹(1/2) ≈ 26.6°, so 1V:2H = 50% slope ≈ 26.6° is borderline). Cut slopes at 1V:2H are steep; they may be unstable without reinforcement. Fill slopes at 1V:2.5H (≈22°) are gentler and more stable.",
+        "c": "Fill slopes can fail if not properly compacted or if drainage is poor; stability is not guaranteed.",
+        "d": "Natural slope is 25% (≈14°); designed cut slope is 50% (≈26.6°) — steeper and riskier.",
+        "correct": "Angle of repose (natural stable slope angle) is typically 30–35° for soil (tan⁻¹(1/2) ≈ 26.6°, so 1V:2H = 50% slope ≈ 26.6° is borderline). Cut slopes at 1V:2H are steep; they may be unstable without reinforcement. Fill slopes at 1V:2.5H (≈22°) are gentler and more stable.",
+        "takeaway": "Cut slopes steeper than angle of repose (~30–35°) require stabilization. Fill slopes must be compacted and drained to ensure stability."
+      },
+      "explanation": "The cut slope is steeper than natural repose; this is a concern. Angle of repose (natural stable slope angle) is typically 30–35° for soil (tan⁻¹(1/2) ≈ 26.6°, so 1V:2H = 50% slope ≈ 26.6° is borderline). Cut slopes at 1V:2H are steep; they may be unstable without reinforcement. Fill slopes at 1V:2.5H (≈22°) are gentler and more stable. Fill slopes can fail if not properly compacted or if drainage is poor; stability is not guaranteed. Natural slope is 25% (≈14°); designed cut slope is 50% (≈26.6°) — steeper and riskier. Angle of repose (natural stable slope angle) is typically 30–35° for soil (tan⁻¹(1/2) ≈ 26.6°, so 1V:2H = 50% slope ≈ 26.6° is borderline). Cut slopes at 1V:2H are steep; they may be unstable without reinforcement. Fill slopes at 1V:2.5H (≈22°) are gentler and more stable. Cut slopes steeper than angle of repose (~30–35°) require stabilization. Fill slopes must be compacted and drained to ensure stability.",
+      "code_citation": "Geotechnical Slope Stability Analysis",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-05-06T15:39:27.422584+00:00",
+      "content_hash": "sha256:df949342a39bb206059aca55d88daf2c7f09119b99c7715b2ddc7c29aba7b87a"
+    },
+    {
+      "question_id": "2a23df1a-b984-4e54-9618-ef95b6efabb1",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A developer proposes a residential subdivision on terrain with an average slope of 35% (1V:2.9H). Contour analysis shows variation from 10% to 40% slope across the site. A geotechnical report recommends slope stabilization on any area exceeding 25% slope. What is the appropriate site design response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proceed with standard grading; a 35% average slope is within acceptable range for residential development, assuming standard erosion control measures are implemented"
+        },
+        {
+          "id": "b",
+          "text": "Identify areas with slope > 25% (steeper areas); design bench cuts and/or retaining walls in these zones; conduct detailed slope stability analysis; ensure adequate drainage and erosion control"
+        },
+        {
+          "id": "c",
+          "text": "The site is too steep; development cannot proceed without significant alteration to the natural terrain"
+        },
+        {
+          "id": "d",
+          "text": "Reduce the proposed density to minimize grading, but do not modify slope design, maintaining the natural landscape as much as possible"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Standard grading is insufficient for 35% average slope; specialized design is needed per geotechnical recommendations.",
+        "b": "A 35% average slope is challenging but buildable with appropriate design. The geotechnical recommendation to stabilize slopes > 25% should be followed: bench cuts, retaining walls, compaction, and drainage in steep areas. Detailed slope stability analysis and erosion control planning are required.",
+        "c": "35% average is steep but buildable with proper engineering; this is not a prohibition.",
+        "d": "Density reduction may help, but it does not address slope stability; engineering design is the primary response.",
+        "correct": "A 35% average slope is challenging but buildable with appropriate design. The geotechnical recommendation to stabilize slopes > 25% should be followed: bench cuts, retaining walls, compaction, and drainage in steep areas. Detailed slope stability analysis and erosion control planning are required.",
+        "takeaway": "High-slope sites require engineering design: bench cuts, retaining walls, geotechnical analysis, drainage. Density reduction is supplementary."
+      },
+      "explanation": "Standard grading is insufficient for 35% average slope; specialized design is needed per geotechnical recommendations. A 35% average slope is challenging but buildable with appropriate design. The geotechnical recommendation to stabilize slopes > 25% should be followed: bench cuts, retaining walls, compaction, and drainage in steep areas. Detailed slope stability analysis and erosion control planning are required. 35% average is steep but buildable with proper engineering; this is not a prohibition. Density reduction may help, but it does not address slope stability; engineering design is the primary response. A 35% average slope is challenging but buildable with appropriate design. The geotechnical recommendation to stabilize slopes > 25% should be followed: bench cuts, retaining walls, compaction, and drainage in steep areas. Detailed slope stability analysis and erosion control planning are required. High-slope sites require engineering design: bench cuts, retaining walls, geotechnical analysis, drainage. Density reduction is supplementary.",
+      "code_citation": "Slope Analysis and Grading Design; Geotechnical Engineering",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-05-06T15:39:27.682784+00:00",
+      "content_hash": "sha256:4fe64ea3d370d006c6c4abac4f6fa00262871baafe26267a1bd21a2f83080f36"
+    },
+    {
+      "question_id": "f271ca3b-a5e7-4227-94a8-806ce27e1de5",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A site plan for a residential development on sloped terrain shows contour lines that are very closely spaced (contour interval 1 meter, spacing on map = 5 mm at map scale, representing ~2.5 meters actual ground distance). What is the approximate slope percentage of this terrain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5% (very gentle slope, suitable for most types of construction without significant grading)"
+        },
+        {
+          "id": "b",
+          "text": "25% (moderate slope, buildable with some grading, but may require retaining walls)"
+        },
+        {
+          "id": "c",
+          "text": "40% (steep slope, requiring bench cuts or specialized grading)"
+        },
+        {
+          "id": "d",
+          "text": "50% or greater (very steep; limited buildability, often necessitating extensive engineering solutions)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5% would require ~20 meters of horizontal distance per 1-meter vertical — widely spaced contours.",
+        "b": "25% would require ~4 meters of horizontal distance per 1-meter vertical.",
+        "c": "Contour spacing: 1-meter vertical interval over ~2.5-meter horizontal distance. Slope = (1 ÷ 2.5) × 100 = 40%. This is steep terrain requiring bench cuts, retaining walls, or geotechnical analysis.",
+        "d": "50%+ would require even closer contour spacing (< 2m horizontal per 1m vertical).",
+        "correct": "Contour spacing: 1-meter vertical interval over ~2.5-meter horizontal distance. Slope = (1 ÷ 2.5) × 100 = 40%. This is steep terrain requiring bench cuts, retaining walls, or geotechnical analysis.",
+        "takeaway": "Very closely spaced contours = steep slope = requires specialized grading (bench cuts, retaining walls, stability analysis)."
+      },
+      "explanation": null,
+      "code_citation": "Contour Spacing and Slope Analysis",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:09f097ff32629a5bd3fb82333d7487707af7abb56cd949de2b4b165c21182d6a"
+    },
+    {
+      "question_id": "dcdd6fa1-2af9-4acd-a9db-97f65d66e19c",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A site slopes upward at a gradient of 1 vertical meter for every 3 horizontal meters (1V:3H ratio). What is this slope expressed as a percentage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3% (1 ÷ 3)"
+        },
+        {
+          "id": "b",
+          "text": "33% (1 ÷ 3 × 100)"
+        },
+        {
+          "id": "c",
+          "text": "25% (1 ÷ 4 × 100)"
+        },
+        {
+          "id": "d",
+          "text": "300% (3 ÷ 1 × 100)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3% omits the × 100 multiplier; slope is always expressed as a percentage.",
+        "b": "Slope percentage = (rise ÷ horizontal distance) × 100. For 1V:3H: (1 ÷ 3) × 100 = 33.3%. This is a moderate-to-steep slope, suitable for residential development with bench cuts or retaining walls.",
+        "c": "25% would be 1V:4H, not 1V:3H.",
+        "d": "300% inverts the ratio; rise is always divided by run, not the reverse.",
+        "correct": "Slope percentage = (rise ÷ horizontal distance) × 100. For 1V:3H: (1 ÷ 3) × 100 = 33.3%. This is a moderate-to-steep slope, suitable for residential development with bench cuts or retaining walls.",
+        "takeaway": "Slope percentage = (rise ÷ run) × 100. 1V:3H = 33% slope = moderate-steep terrain."
+      },
+      "explanation": "3% omits the × 100 multiplier; slope is always expressed as a percentage. Slope percentage = (rise ÷ horizontal distance) × 100. For 1V:3H: (1 ÷ 3) × 100 = 33.3%. This is a moderate-to-steep slope, suitable for residential development with bench cuts or retaining walls. 25% would be 1V:4H, not 1V:3H. 300% inverts the ratio; rise is always divided by run, not the reverse. Slope percentage = (rise ÷ horizontal distance) × 100. For 1V:3H: (1 ÷ 3) × 100 = 33.3%. This is a moderate-to-steep slope, suitable for residential development with bench cuts or retaining walls. Slope percentage = (rise ÷ run) × 100. 1V:3H = 33% slope = moderate-steep terrain.",
+      "code_citation": "Slope Calculation Methods",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-05-06T15:39:27.816753+00:00",
+      "content_hash": "sha256:b264ebf7c1346345cd7417cb27ea91bf8e7b85c391ebaf0e446c23dd46f1bb16"
+    },
+    {
+      "question_id": "78f36bc7-f55b-43d4-aa7f-a1d3f3c0a455",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A topographic map shows a site with elevation ranging from 100m at the lower boundary to 130m at the upper boundary, spanning a horizontal distance of 300 meters. The proposed development plan includes bench cuts at the 110m, 115m, 120m, and 125m elevation contours to create building platforms. What is the site's average slope, and what does the bench cut strategy accomplish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Average slope = 10% (30m rise ÷ 300m distance); bench cuts reduce visible cut/fill volume and create level building pads"
+        },
+        {
+          "id": "b",
+          "text": "Average slope = 30m elevation (100m to 130m); bench cuts are unnecessary grading, which may increase costs"
+        },
+        {
+          "id": "c",
+          "text": "Average slope = 3% (10m ÷ 300m); bench cuts increase grading cost, potentially affecting budget"
+        },
+        {
+          "id": "d",
+          "text": "Average slope cannot be calculated from elevation range alone; bench cut strategy is undefined, leading to potential design issues"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Average slope = (130m − 100m) ÷ 300m × 100 = 10% slope. Bench cuts at intermediate elevations create level building pads, reduce excavation volume on steep sections, and allow development across the sloped site by breaking it into buildable steps.",
+        "b": "30m is the vertical elevation range, not the slope percentage; bench cuts are practical for 10% slopes.",
+        "c": "3% would be 9m rise over 300m, not 30m.",
+        "d": "Slope can be calculated from elevation range and horizontal distance; bench cuts clearly serve to create level pads.",
+        "correct": "Average slope = (130m − 100m) ÷ 300m × 100 = 10% slope. Bench cuts at intermediate elevations create level building pads, reduce excavation volume on steep sections, and allow development across the sloped site by breaking it into buildable steps.",
+        "takeaway": "Average slope = rise ÷ run × 100. Bench cuts create level building pads and reduce grading volume on sloped sites."
+      },
+      "explanation": null,
+      "code_citation": "Slope Calculation; Bench Cut Grading Strategy",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd0969750bd704c23bcc8305034bfd143301a86d1a75e4e901539323c16eb46b"
+    },
+    {
+      "question_id": "fb9ad2bb-81e5-470c-b132-e449227cd15b",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A proposed residential subdivision on a sloped site requires cut-and-fill grading. The site has 10,000 cubic meters of earth available for excavation. The design calls for 8,000 cubic meters of compacted fill. What is implied about the fill material balance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Excavated material exceeds fill needs after compaction; 2,000 cubic meters of spoil remains, which may be used for landscaping or disposed of"
+        },
+        {
+          "id": "b",
+          "text": "Excavated material exceeds fill needs; 2,000 cubic meters of spoil remains, which may be used for landscaping or disposed of, depending on site requirements and environmental regulations."
+        },
+        {
+          "id": "c",
+          "text": "Additional fill material (borrow) must be imported; 10,000 cubic meters of excavation is insufficient, requiring careful planning to source additional material."
+        },
+        {
+          "id": "d",
+          "text": "Cut and fill are 1:1 equivalent; excavated material exactly equals fill requirement, simplifying the grading process and minimizing costs."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Excavated soil does not compact at 1:1 ratio. Uncompacted excavation (~10,000 cu.m.) becomes compacted fill (~8,000 cu.m.) when properly compacted on-site. The difference (2,000 cu.m.) accounts for compaction efficiency. Remaining uncompacted spoil must be managed.",
+        "b": "Similar reasoning to (a); the issue is compaction efficiency, not excess excavation.",
+        "c": "If excavation provides enough material for compacted fill after accounting for compaction losses, borrow is not needed.",
+        "d": "Cut and fill are NOT 1:1; soil compacts to smaller volume when placed as fill.",
+        "correct": "Excavated soil does not compact at 1:1 ratio. Uncompacted excavation (~10,000 cu.m.) becomes compacted fill (~8,000 cu.m.) when properly compacted on-site. The difference (2,000 cu.m.) accounts for compaction efficiency. Remaining uncompacted spoil must be managed.",
+        "takeaway": "Compacted fill volume < excavated volume. Uncompacted spoil balance must be planned (disposal, reuse, or landscaping)."
+      },
+      "explanation": "Excavated soil does not compact at 1:1 ratio. Uncompacted excavation (~10,000 cu.m.) becomes compacted fill (~8,000 cu.m.) when properly compacted on-site. The difference (2,000 cu.m.) accounts for compaction efficiency. Remaining uncompacted spoil must be managed. Similar reasoning to (a); the issue is compaction efficiency, not excess excavation. If excavation provides enough material for compacted fill after accounting for compaction losses, borrow is not needed. Cut and fill are NOT 1:1; soil compacts to smaller volume when placed as fill. Excavated soil does not compact at 1:1 ratio. Uncompacted excavation (~10,000 cu.m.) becomes compacted fill (~8,000 cu.m.) when properly compacted on-site. The difference (2,000 cu.m.) accounts for compaction efficiency. Remaining uncompacted spoil must be managed. Compacted fill volume < excavated volume. Uncompacted spoil balance must be planned (disposal, reuse, or landscaping).",
+      "code_citation": "Grading and Fill Compaction Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-05-06T15:39:27.953188+00:00",
+      "content_hash": "sha256:d04331d0952b537b74ad9725df93cbfe71c082cbc4581f81de32b5d96a353f52"
+    },
+    {
+      "question_id": "953513e5-8e59-4813-baab-85f0bf06d819",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A proposed development site is adjacent to a creek protected by PD 1067 (Water Code). The creek is 4 meters wide. According to PD 1067, what easement setback must be maintained from the creek edge, and how does this constraint affect site grading?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3-meter easement; no permanent structures or fill placement within 3 meters of creek edge"
+        },
+        {
+          "id": "b",
+          "text": "20-meter easement; no structures within 20 meters; grading is restricted in this zone"
+        },
+        {
+          "id": "c",
+          "text": "40-meter easement; the development cannot use any area within 40 meters of the creek"
+        },
+        {
+          "id": "d",
+          "text": "No easement required; creeks < 6 meters wide do not have protection under PD 1067"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PD 1067 specifies: streams and rivers < 6 meters wide = 3-meter easement. A 4-meter-wide creek requires 3-meter setback. No permanent structures, fill, or grading allowed within this easement.",
+        "b": "20-meter easement applies to rivers and streams ≥ 6 meters wide — not applicable here.",
+        "c": "40-meter applies to lakes and seashores — not applicable to creeks.",
+        "d": "PD 1067 explicitly protects all streams, including those < 6m wide, with 3m easement.",
+        "correct": "PD 1067 specifies: streams ≤3m wide = 3m easement; >3m up to 50m wide = 20m easement. A 4m-wide creek requires 20m setback. No permanent structures, fill, or grading allowed within this easement.",
+        "takeaway": "PD 1067 easements: 3m (small streams), 20m (larger rivers), 40m (lakes/sea). Easements constrain grading and fill placement."
+      },
+      "explanation": null,
+      "code_citation": "PD 1067 (Water Code of the Philippines); Water Body Easements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:405d5663b16181358650a80ff0fd606c9ae3c7d89b5cf9aa76bf3aea156378a5"
+    }
+  ]
+}

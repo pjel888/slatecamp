@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct FLAR value but incorrect reasoning (R-2 range is 1.5–2.5, but this problem specifies 2.0 limit, which is stricter or specific to this zoning condition).",
-        "c": "Wrong FLAR value; 4×320÷800 ≠ 2.0.",
-        "d": "Wrong FLAR value; miscalculation or confusion with different lot size.",
-        "correct": "TGFA = 4×320 = 1,280 sqm. FLAR = 1,280÷800 = 1.60. Limit is 2.0, so 1.60 < 2.0 ✓ compliant.",
-        "takeaway": "FLAR = TGFA ÷ TLA. Compare result against zoning limit. In this case, 1.60 < 2.0, so design is compliant."
-      },
+      "rationale": "PD 1096 supports the AMBF, PSO, FLAR, BHL, and TGFA workflow. Exact zoning values are local ordinance or problem-stated inputs, so the explanation should show the formula and avoid presenting practice-review values as universal code.",
       "explanation": "Correct FLAR value but incorrect reasoning (R-2 range is 1.5–2.5, but this problem specifies 2.0 limit, which is stricter or specific to this zoning condition). Wrong FLAR value; 4×320÷800 ≠ 2.0. Wrong FLAR value; miscalculation or confusion with different lot size. TGFA = 4×320 = 1,280 sqm. FLAR = 1,280÷800 = 1.60. Limit is 2.0, so 1.60 < 2.0 ✓ compliant. FLAR = TGFA ÷ TLA. Compare result against zoning limit. In this case, 1.60 < 2.0, so design is compliant.",
       "code_citation": "NBC Chapter 12 FLAR Verification",
       "bloom_level": "apply",
@@ -51,7 +45,7 @@
       "model_id": "ALE-DSGN-007-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-05-06T11:25:48.211871+00:00",
+      "updated_at": "2026-07-20T01:13:22.224464+00:00",
       "content_hash": "sha256:be81560e62d8ce00d3cd5ef6e48e0dce2ebe476f8f79344e1d23affd2b853c8b"
     },
     {
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Irrelevant; building shape does not change FLAR calculation.",
-        "c": "Measurement point does not affect FLAR logic.",
-        "d": "FLAR applies to all zones, though limits vary.",
-        "correct": "FLAR (e.g., 9.0–12.0 in C-3) is a ratio cap that prevents the architect from stacking unlimited floors, even if height allows. In C-3, a small lot multiplied by high floor count quickly violates FLAR. BHL alone would suggest more floors than FLAR permits.",
-        "takeaway": "FLAR = TGFA ÷ TLA is a density ceiling. In commercial zones with large FLAR (9.0–34.0), it may still restrict smaller lots. Always check FLAR as a binding constraint."
-      },
+      "rationale": "PD 1096 supports the AMBF, PSO, FLAR, BHL, and TGFA workflow. Exact zoning values are local ordinance or problem-stated inputs, so the explanation should show the formula and avoid presenting practice-review values as universal code.",
       "explanation": "Irrelevant; building shape does not change FLAR calculation. Measurement point does not affect FLAR logic. FLAR applies to all zones, though limits vary. FLAR (e.g., 9.0–12.0 in C-3) is a ratio cap that prevents the architect from stacking unlimited floors, even if height allows. In C-3, a small lot multiplied by high floor count quickly violates FLAR. BHL alone would suggest more floors than FLAR permits. FLAR = TGFA ÷ TLA is a density ceiling. In commercial zones with large FLAR (9.0–34.0), it may still restrict smaller lots. Always check FLAR as a binding constraint.",
       "code_citation": "NBC Chapter 12 Zoning Principles",
       "bloom_level": "apply",
@@ -101,7 +89,7 @@
       "model_id": "ALE-DSGN-007-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-05-06T11:25:50.227045+00:00",
+      "updated_at": "2026-07-20T01:13:22.220948+00:00",
       "content_hash": "sha256:9c35463b50e8823e25f8b584342eaf071c83ab29b741794051b1164d7e502933"
     },
     {
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Starts with floors before establishing AMBF; incomplete verification.",
-        "c": "Reverses causal order; TGFA must be calculated from components, not starting point.",
-        "d": "Puts FLAR check first; violates logical design flow and may lead to conflicts.",
-        "correct": "The logical sequence: (1) AMBF = TLA×PSO%, (2) floors = BHL÷3.0m (round down), (3) TGFA = AMBF×floors, (4) verify FLAR = TGFA÷TLA against zoning limit. If FLAR exceeded, recalculate floors downward.",
-        "takeaway": "Always follow: PSO% → AMBF → BHL floor count → TGFA → FLAR check. If FLAR fails, reduce floors and recalculate TGFA."
-      },
+      "rationale": "PD 1096 supports the AMBF, PSO, FLAR, BHL, and TGFA workflow. Exact zoning values are local ordinance or problem-stated inputs, so the explanation should show the formula and avoid presenting practice-review values as universal code.",
       "explanation": null,
       "code_citation": "NBC Chapter 12 Procedural Guidelines",
       "bloom_level": "apply",
@@ -151,7 +133,7 @@
       "model_id": "ALE-DSGN-007-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.226055+00:00",
       "content_hash": "sha256:c0647ec6a5905bdca06d15fed2934ad0a2ca3da820792dc75b1856b63f74cf91"
     },
     {
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses FLAR with ceiling height; FLAR is area-based, not height-based.",
-        "c": "They are related but distinct: AMBF feeds into TGFA; FLAR constrains TGFA.",
-        "d": "They are fundamentally connected through TGFA.",
-        "correct": "AMBF = TLA × PSO% (single floor's allowable footprint). TGFA = AMBF × floors. FLAR = TGFA ÷ TLA is the ratio of total built area to lot size. In high-density zones, FLAR limits (e.g., max 3.0 for R-3) cap the ratio, which—multiplied by TLA—gives max TGFA. This often restricts floor count below what BHL would permit. FLAR is 'binding' when: FLAR-derived TGFA < BHL-derived TGFA, forcing the designer to reduce floors. Always check FLAR as a constraint.",
-        "takeaway": "FLAR acts as a density ceiling. Compare BHL-max-floors with FLAR-max-floors; use the smaller. FLAR is binding when it forces fewer floors than BHL suggests."
-      },
+      "rationale": "PD 1096 supports the AMBF, PSO, FLAR, BHL, and TGFA workflow. Exact zoning values are local ordinance or problem-stated inputs, so the explanation should show the formula and avoid presenting practice-review values as universal code.",
       "explanation": null,
       "code_citation": "NBC Chapter 12 Zoning Principles",
       "bloom_level": "analyze",
@@ -201,18 +177,18 @@
       "model_id": "ALE-DSGN-007-07-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.221865+00:00",
       "content_hash": "sha256:af9c6485c27ccf0cb7b08777629c89bb3b6a389d1acc3766b6232c1bdbbd6859"
     },
     {
       "question_id": "d403f5e5-5678-484a-b599-cb97b6d35385",
       "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
       "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
-      "text": "A 400 sqm R-1 residential lot (BHL=10m, FLAR=1.0–1.5) has ISA=8%, USA=20%. Calculate MACA% (Maximum Accessibility Area).",
+      "text": "A 400 sqm R-1 residential lot has problem-stated PSO = 50%, ISA = 8%, and USA = 20%. Calculate MACA% (Maximum Allowable Construction Area).",
       "options": [
         {
           "id": "a",
-          "text": "50% (R-1 PSO only)"
+          "text": "50% (PSO only)"
         },
         {
           "id": "b",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Omits ISA component; incomplete.",
-        "c": "Incorrectly includes USA; USA is not part of MACA.",
-        "d": "Omits PSO; uses only service areas.",
-        "correct": "No standard MACA formula in NBC; buildable area = PSO% only.. MACA does NOT include USA (unoccupied service area). It represents the combined buildable + interior service footprint as a percentage.",
-        "takeaway": "MACA = PSO% + ISA%. It is always a percentage, never in sqm. USA is separate and does not contribute to MACA."
-      },
+      "rationale": "PD 1096 IRR defines MACA as PSO + ISA and specifically excludes USA. Therefore MACA = 50% + 8% = 58%.",
       "explanation": null,
       "code_citation": "NBC Chapter 12 Zoning Calculations",
       "bloom_level": "apply",
@@ -251,30 +221,30 @@
       "model_id": "ALE-DSGN-007-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.223644+00:00",
       "content_hash": "sha256:c502eaed30bbd892cedeb9acf626b6426dec2a9b7cdc4cd57723e4f97cec84f3"
     },
     {
       "question_id": "859d5142-6fc7-4f71-bde6-cf91404c644e",
       "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
       "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
-      "text": "A 500 sqm R-2 lot in a 1.5–2.5 FLAR zone has a 15m BHL. What is the maximum TGFA you can build?",
+      "text": "Given a 500 sqm R-2 lot, a problem-stated AMBF of 325 sqm, a 15 m BHL, 3.0 m floor-to-floor height, and a 2.5 FLAR cap, what source-safe TGFA result follows?",
       "options": [
         {
           "id": "a",
-          "text": "1,250 sqm (5 floors × 250 sqm) based on maximum FLAR applied to the full lot area"
+          "text": "1,250 sqm, because max FLAR alone is always fully buildable"
         },
         {
           "id": "b",
-          "text": "975 sqm (3 floors of 325 sqm footprint, limited by FLAR)"
+          "text": "975 sqm: BHL allows 5 floors, but the 2.5 FLAR cap allows only 3 full 325 sqm floors"
         },
         {
           "id": "c",
-          "text": "1,500 sqm (5 floors of 300 sqm) using maximum BHL and full lot coverage"
+          "text": "1,500 sqm, because BHL controls over FLAR"
         },
         {
           "id": "d",
-          "text": "975 sqm (2 floors, conservative estimate) based on minimum FLAR interpretation"
+          "text": "650 sqm, because only 2 floors are allowed"
         }
       ],
       "correct_option_id": "b",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignores PSO% in AMBF calculation; uses raw lot area instead of allowable footprint.",
-        "c": "Uses BHL without checking FLAR constraint; assumes all 5 floors are buildable.",
-        "d": "Too conservative; does not apply FLAR properly.",
-        "correct": "AMBF = 500 × 0.70 = 350 sqm. BHL allows 15÷3 = 5 floors → TGFA = 325×5 = 1,625 sqm. But FLAR = 1,625÷500 = 3.25 exceeds max 2.5. Recalculate: max TGFA = 500×2.5 = 1,250 sqm → floors = 1,250÷325 = 3.85 → 3 floors max → TGFA = 325×3 = 975 sqm (Remove note; recalculate with correct PSO=70%: TGFA=1,050 sqm (no option matches) at 3 floors, FLAR-constrained). [Correction: recalculate: max TGFA from FLAR = 500×2.5 = 1,250; floors = 1,250÷325 = 3.84, round down 3; final TGFA = 325×3 = 975.]",
-        "takeaway": "FLAR acts as a binding constraint. Always recalculate floors when FLAR exceeded. Maximum buildable TGFA = TLA × max FLAR; then divide by AMBF to get permitted floors."
-      },
+      "rationale": "PD 1096 supports the AMBF/BHL/FLAR/TGFA workflow; the exact AMBF is treated as a problem-stated local zoning input. Max TGFA by FLAR is 500 x 2.5 = 1,250 sqm; 1,250 / 325 = 3.84, so only 3 full floors fit: 975 sqm.",
       "explanation": null,
       "code_citation": "NBC Chapter 12 Site Development, NSCB AO 14",
       "bloom_level": "remember",
@@ -301,30 +265,30 @@
       "model_id": "ALE-DSGN-007-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.227525+00:00",
       "content_hash": "sha256:30b7a968153a74d01df182fbbfa34e2ce91be3e81099f6bf494a3a4d9690b0fe"
     },
     {
       "question_id": "fee22955-47bf-4b8b-835f-0be2fb9b1437",
       "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
       "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
-      "text": "Your R-3 lot is 1,200 sqm, BHL=21m, FLAR limit 3.0. Calculate maximum floors, AMBF, and final TGFA. (R-3 PSO=65%)",
+      "text": "Your R-3 lot is 1,200 sqm with a problem-stated AMBF of 864 sqm, BHL = 21 m, 3.0 m floor-to-floor height, and FLAR limit = 3.0. Calculate maximum floors and final TGFA.",
       "options": [
         {
           "id": "a",
-          "text": "7 floors, AMBF=864 sqm, TGFA=6,048 sqm (exceeds FLAR limit of 3.0)"
+          "text": "7 floors, AMBF = 864 sqm, TGFA = 6,048 sqm, which exceeds the FLAR limit"
         },
         {
           "id": "b",
-          "text": "6 floors, AMBF=864 sqm, TGFA=5,184 sqm (exceeds FLAR limit)"
+          "text": "6 floors, AMBF = 864 sqm, TGFA = 5,184 sqm, which still exceeds the FLAR limit"
         },
         {
           "id": "c",
-          "text": "4 floors, AMBF=864 sqm, TGFA=3,456 sqm (compliant: FLAR=2.88)"
+          "text": "4 floors, AMBF = 864 sqm, TGFA = 3,456 sqm, compliant with FLAR = 2.88"
         },
         {
           "id": "d",
-          "text": "7 floors, AMBF=1,200 sqm, TGFA=8,400 sqm"
+          "text": "7 floors, AMBF = 1,200 sqm, TGFA = 8,400 sqm"
         }
       ],
       "correct_option_id": "c",
@@ -332,13 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Does not recalculate for FLAR violation; leaves design non-compliant.",
-        "b": "Still exceeds FLAR limit; does not iterate correctly.",
-        "d": "Wrong AMBF; uses full lot area instead of PSO% footprint.",
-        "correct": "AMBF = 1,200×0.72 = 864 sqm. BHL: 21÷3.0 = 7 floors. Tentative TGFA = 864×7 = 6,048 sqm. FLAR = 6,048÷1,200 = 5.04, exceeds 3.0 limit. Recalculate: max TGFA = 1,200×3.0 = 3,600 sqm. Floors = 3,600÷864 = 4.17, round down to 4 floors. Final TGFA = 864×4 = 3,456 sqm, FLAR = 3,456÷1,200 = 2.88 ✓ (within 3.0 limit).",
-        "takeaway": "When BHL-derived TGFA exceeds FLAR, recalculate max TGFA from FLAR limit, divide by AMBF to get compliant floor count."
-      },
+      "rationale": "BHL permits 21 / 3 = 7 floors, but 7 x 864 = 6,048 sqm and FLAR = 5.04. The FLAR cap is 1,200 x 3.0 = 3,600 sqm; 3,600 / 864 = 4.17, so 4 full floors are compliant at 3,456 sqm.",
       "explanation": null,
       "code_citation": "NBC Chapter 12 FLAR Reconciliation",
       "bloom_level": "analyze",
@@ -351,30 +309,30 @@
       "model_id": "ALE-DSGN-007-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.222730+00:00",
       "content_hash": "sha256:22829e2492a1d35cc46b8712a8bcb4ab0acbe3d7618205225b6628be39c1a652"
     },
     {
       "question_id": "5c4f9e3d-3f64-4f69-9501-9be7ef2d88fb",
       "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
       "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
-      "text": "A C-2 commercial lot is 1,000 sqm, FLAR limit is 12.0, BHL is 50m. With 3.0m floor-to-floor, how many floors can you build? (C-2 PSO = 80%)",
+      "text": "A C-2 commercial lot is 1,000 sqm with FLAR limit 12.0, BHL 50 m, 3.0 m floor-to-floor height, and a problem-stated AMBF of 750 sqm. How many complete floors fit both constraints?",
       "options": [
         {
           "id": "a",
-          "text": "16 floors (50m ÷ 3.0m = 16.67, round down)"
+          "text": "16 floors: BHL gives 16 full floors and 16 x 750 = 12,000 sqm, exactly at FLAR 12.0"
         },
         {
           "id": "b",
-          "text": "14 floors (limited by FLAR: max TGFA = 12,000 sqm ÷ 750 AMBF)"
+          "text": "14 floors because C-2 lots always use a lower national FLAR"
         },
         {
           "id": "c",
-          "text": "12 floors (conservative FLAR calculation)"
+          "text": "12 floors as a conservative default"
         },
         {
           "id": "d",
-          "text": "8 floors (both constraints limit to this)"
+          "text": "8 floors because both constraints always halve the BHL result"
         }
       ],
       "correct_option_id": "a",
@@ -382,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Incorrect; the calculation yields 16 floors, not 14. Option b miscounts.",
-        "c": "Arbitrary rounding; does not use actual FLAR formula.",
-        "d": "Too conservative; does not reflect actual constraints.",
-        "correct": "AMBF = 1,000×0.75 = 750 sqm. From BHL: 50÷3 = 16.67 → 16 floors possible. Max TGFA from FLAR = 1,000×12 = 12,000 sqm. Floors = 12,000÷750 = 16 floors. Both constraints allow 16 floors. Verify: TGFA = 750×16 = 12,000, FLAR = 12,000÷1,000 = 12.0 ✓ compliant. Answer is 16 floors.",
-        "takeaway": "Compare BHL-derived floors with FLAR-derived floors. The smaller number governs. In this case, both yield 16 floors."
-      },
+      "rationale": "BHL permits floor(50/3) = 16 full floors. With the problem-stated AMBF of 750 sqm, 16 floors produce 12,000 sqm TGFA, which equals the stated FLAR cap of 1,000 x 12.0.",
       "explanation": null,
       "code_citation": "NBC Chapter 12, Zoning Ordinance",
       "bloom_level": "apply",
@@ -401,7 +353,7 @@
       "model_id": "ALE-DSGN-007-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.226812+00:00",
       "content_hash": "sha256:ca4bca7497f3dc97e1bcdede41eb207b7fd327f4a628d5778d9b081c86503bd1"
     },
     {
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "TGFA = TLA × FLAR is a check, not a calculation method (should derive TGFA first, then verify FLAR against it).",
-        "c": "Dividing by floors is not needed; you multiply by floors.",
-        "d": "Division is wrong direction.",
-        "correct": "The formula TLA × PSO% × floors is a shorthand that works only if you recognize PSO% as the per-floor fraction. Correct form: AMBF = TLA × PSO%, then TGFA = AMBF × floors. This separation clarifies that AMBF is a single floor's allowable footprint, then multiplied by floor count. Shorthand form TLA × PSO% × floors conflates these steps and is error ERR-DSGN-007.",
-        "takeaway": "ERR-DSGN-007: Never use TGFA = TLA × PSO% × floors without breaking into AMBF first. Correct: AMBF = TLA × PSO%; TGFA = AMBF × floors."
-      },
+      "rationale": "PD 1096 supports the AMBF, PSO, FLAR, BHL, and TGFA workflow. Exact zoning values are local ordinance or problem-stated inputs, so the explanation should show the formula and avoid presenting practice-review values as universal code.",
       "explanation": null,
       "code_citation": "ERR-DSGN-007, NBC Chapter 12",
       "bloom_level": "analyze",
@@ -451,7 +397,7 @@
       "model_id": "ALE-DSGN-007-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.225249+00:00",
       "content_hash": "sha256:9a6c1dd040bc7f207c700d17449a7ba1559889ffd0a355e634684e18d044a12c"
     },
     {
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Uses division instead of multiplication; incorrect formula.",
-        "b": "Conflates footprint with total GFA; ignores PSO%.",
-        "d": "Unrelated metric (maintenance floor); wrong formula.",
-        "correct": "AMBF = Allowable Building Footprint, the portion of the lot you can occupy. Formula: AMBF = TLA × PSO%. For R-2 (PSO=70%), a 600 sqm lot yields AMBF = 600×0.70 = 420 sqm.",
-        "takeaway": "AMBF is always PSO% of the lot. This single-floor footprint becomes the basis for calculating TGFA when multiplied by number of floors."
-      },
+      "rationale": "PD 1096 supports the AMBF, PSO, FLAR, BHL, and TGFA workflow. Exact zoning values are local ordinance or problem-stated inputs, so the explanation should show the formula and avoid presenting practice-review values as universal code.",
       "explanation": "Uses division instead of multiplication; incorrect formula. Conflates footprint with total GFA; ignores PSO%. Unrelated metric (maintenance floor); wrong formula. AMBF = Allowable Building Footprint, the portion of the lot you can occupy. Formula: AMBF = TLA × PSO%. For R-2 (PSO=70%), a 600 sqm lot yields AMBF = 600×0.70 = 420 sqm. AMBF is always PSO% of the lot. This single-floor footprint becomes the basis for calculating TGFA when multiplied by number of floors.",
       "code_citation": "Local Zoning Ordinance + PD 1096 Rule VII",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-DSGN-007-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-05-06T11:25:51.264381+00:00",
+      "updated_at": "2026-07-20T01:13:22.219497+00:00",
       "content_hash": "sha256:42f93463ebd2ff588b7bdf12d95329f4fc2aeb55663a0db5d689bd52fa4e1b68"
     }
   ]

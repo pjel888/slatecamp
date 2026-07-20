@@ -8,38 +8,31 @@
       "question_id": "398fa0b8-e054-4587-a9c3-e54ae47a5536",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "Under RA 7160 (Local Government Code), all municipalities and cities must prepare a Comprehensive Land Use Plan. What is the required planning horizon for this plan?",
+      "text": "Which statement is source-safe under RA 7160 Section 20(c)?",
       "options": [
         {
           "id": "a",
-          "text": "5 years"
+          "text": "LGUs prepare CLUPs enacted through zoning ordinances as primary bases for future land use."
         },
         {
           "id": "b",
-          "text": "10 years"
+          "text": "RA 7160 says DHSUD writes every LGU CLUP."
         },
         {
           "id": "c",
-          "text": "15 years"
+          "text": "RA 7160 abolishes zoning ordinances."
         },
         {
           "id": "d",
-          "text": "20 years"
+          "text": "RA 7160 makes CLUPs private developer documents."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5 years is too short and not the legal requirement.",
-        "b": "RA 7160 mandates that CLUPs cover a 10-year planning horizon. This is the foundational legal requirement tested on every ALE. ERR-PLAN-029 flags the common mistake of saying 5 years.",
-        "c": "15 years exceeds the RA 7160 mandate.",
-        "d": "20 years exceeds the RA 7160 mandate.",
-        "correct": "CLUPs typically cover a 10-year planning horizon per planning standards and guidance (DHSUD/HLURB guidelines). While RA 7160 Section 20(c) mandates CLUPs be prepared and enacted through zoning ordinances, the specific 10-year duration is established in planning guidelines rather than explicit statutory text. Verify the exact statutory source before claiming it is a direct RA 7160 mandate. ERR-PLAN-029 flags the common mistake of saying 5 years.",
-        "takeaway": "CLUP = 10-year plan. This is non-negotiable under RA 7160. Always cite the law and the timeframe together."
-      },
+      "rationale": "RA 7160 Section 20(c) requires LGUs to prepare CLUPs enacted through zoning ordinances.",
       "explanation": null,
       "code_citation": "Key Provisions; Core Concept",
       "bloom_level": "remember",
@@ -52,45 +45,38 @@
       "model_id": "ALE-PLAN-001-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:30.889344+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.087805+00:00",
       "content_hash": "sha256:579931277149da4888418fa00bf79f16264ebf25c9cdcba605962a43702846a6"
     },
     {
       "question_id": "f9e6cc84-4323-4342-9247-248d0b939719",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "A municipal zoning ordinance must be adopted before it becomes legally binding on development projects. Which body has the authority to adopt a zoning ordinance in the Philippines?",
+      "text": "Who enacts a city or municipal CLUP into a zoning ordinance under EO 72?",
       "options": [
         {
           "id": "a",
-          "text": "The Mayor or City/Municipal Administrator, who oversees the implementation of local policies and regulations"
+          "text": "The Sangguniang Panlungsod or Sangguniang Bayan, as applicable."
         },
         {
           "id": "b",
-          "text": "The Planning Office or Planning Department, responsible for drafting and recommending zoning plans"
+          "text": "The mayor acting alone."
         },
         {
           "id": "c",
-          "text": "The Sanggunian (city/municipal council), then signed by the Mayor"
+          "text": "The planning office acting alone."
         },
         {
           "id": "d",
-          "text": "The DHSUD (Department of Human Settlements and Urban Development), which provides guidelines but does not adopt local ordinances"
+          "text": "The project applicant."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The Mayor cannot unilaterally adopt a zoning ordinance; legislative action is required.",
-        "b": "The Planning Office prepares the ordinance but does not have adoption authority.",
-        "c": "Zoning ordinances must be adopted by the Sanggunian (Sangguniang Bayan for municipalities, Sangguniang Panlungsod for cities) as a legislative act, then signed by the Mayor. This is NOT an executive decision alone — it requires legislative action. ERR-PLAN-030 flags the common mistake of thinking the Mayor signs it into effect unilaterally.",
-        "d": "DHSUD reviews the CLUP for national conformity but does not adopt local zoning ordinances.",
-        "correct": "Zoning ordinances must be adopted by the Sanggunian (Sangguniang Bayan for municipalities, Sangguniang Panlungsod for cities) as a legislative act, then signed by the Mayor. This is NOT an executive decision alone — it requires legislative action. ERR-PLAN-030 flags the common mistake of thinking the Mayor signs it into effect unilaterally.",
-        "takeaway": "ZONING ORDINANCE = SANGGUNIAN (legislature) ADOPTS. Mayor signs after legislative passage. This is a critical separation of powers in Philippine LGU planning. ERR-PLAN-030 is a high-frequency error."
-      },
+      "rationale": "EO 72 states the city or municipal CLUP is submitted to the Sanggunian for enactment into a zoning ordinance.",
       "explanation": null,
       "code_citation": "Core Concept; Key Provisions; ERROR_REGISTRY ERR-PLAN-030",
       "bloom_level": "understand",
@@ -103,45 +89,38 @@
       "model_id": "ALE-PLAN-001-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.080058+00:00",
       "content_hash": "sha256:f450ea785f3e0ccb005f572df4e201c56a14ce2da90ddae87c88b3316e665d83"
     },
     {
       "question_id": "a50c19e5-a0e3-4cf4-881e-355558d429dd",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "A municipality's CLUP allocates a specific area for residential use and specifies that residential zones must have a minimum lot size of 200 sq.m. and a minimum road width of 8 meters. In what legal document are these specific regulatory requirements legally enforceable?",
+      "text": "What is the planning office role in the CLUP process?",
       "options": [
         {
           "id": "a",
-          "text": "The land use map of the CLUP, which visually represents zoning allocations but lacks enforceability."
+          "text": "Provide technical support, data, mapping, and analysis for the local planning process."
         },
         {
           "id": "b",
-          "text": "The zoning ordinance adopted by the Sanggunian"
+          "text": "Replace the Sanggunian as lawmaker."
         },
         {
           "id": "c",
-          "text": "The DHSUD-approved CLUP document, which provides guidelines but not enforceable regulations."
+          "text": "Issue national planning standards."
         },
         {
           "id": "d",
-          "text": "The Mayor's executive order implementing the CLUP, which outlines administrative actions but not legal mandates."
+          "text": "Approve all provincial CLUPs by itself."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Land use maps show zones but don't specify density or setback requirements.",
-        "b": "The zoning ordinance is the legal document that specifies enforceable density, lot size, and infrastructure requirements. When a developer seeks a permit, compliance is checked against the zoning ordinance, not the CLUP document itself. The zoning ordinance translates the CLUP's vision into specific legal requirements.",
-        "c": "The DHSUD-approved CLUP is the strategic document; it's not the enforcement mechanism.",
-        "d": "Executive orders lack the legislative force of ordinances for land use regulation.",
-        "correct": "The zoning ordinance is the legal document that specifies enforceable density, lot size, and infrastructure requirements. When a developer seeks a permit, compliance is checked against the zoning ordinance, not the CLUP document itself. The zoning ordinance translates the CLUP's vision into specific legal requirements.",
-        "takeaway": "CLUP ≠ zoning ordinance. CLUP = strategic vision → ZONING ORDINANCE = legal enforcement tool. The ordinance specifies the lot sizes, setbacks, uses that developers must follow."
-      },
+      "rationale": "EO 72 and RPS place technical support in the planning/technical component.",
       "explanation": null,
       "code_citation": "Core Concept; Key Provisions",
       "bloom_level": "apply",
@@ -154,45 +133,38 @@
       "model_id": "ALE-PLAN-001-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.086398+00:00",
       "content_hash": "sha256:adb2b9dc071111b2ef9b5a86db23d5077e11050c032a4e6f04e2ea4b5fb4a545"
     },
     {
       "question_id": "fa82b171-d7d6-42b4-b6d5-e34d9075bee7",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "Which government agency reviews local government unit (LGU) Comprehensive Land Use Plans for conformity with national policies and standards?",
+      "text": "What is the safest source-backed description of DHSUD in CLUP matters?",
       "options": [
         {
           "id": "a",
-          "text": "Department of Interior and Local Government (DILG), which oversees local governance but not land use planning"
+          "text": "DHSUD sets standards, provides technical assistance, participates in review, and monitors CLUP/ZO implementation under transferred functions."
         },
         {
           "id": "b",
-          "text": "Department of Environment and Natural Resources (DENR), focusing on environmental regulations rather than land use plans"
+          "text": "DHSUD is the local Sanggunian."
         },
         {
           "id": "c",
-          "text": "DHSUD (Department of Human Settlements and Urban Development)"
+          "text": "DHSUD prepares every CLUP without LGU input."
         },
         {
           "id": "d",
-          "text": "Bureau of Local Government Supervision (BLGS), which provides oversight but not direct review of land use plans"
+          "text": "DHSUD has no land-use planning role."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "DILG handles LGU administration and governance, not CLUP technical review.",
-        "b": "DENR handles environmental impact assessments and environmental regulations.",
-        "c": "DHSUD (created by RA 11201 in 2019, formerly HLURB) reviews and approves LGU CLUPs for conformity with national standards. This is a critical agency function tested on the ALE. ERR-PLAN-017 identifies the mistake of saying HLURB (which no longer exists).",
-        "d": "BLGS does administrative oversight but not CLUP technical conformity review.",
-        "correct": "Search results confirm HLURB (Housing and Land Use Regulatory Board) reviewed CLUPs under OP Executive Order No. 72 (1993). However, the search results do NOT confirm that DHSUD (created 2019) is the current reviewing agency or that it inherited HLURB's CLUP review function. Verify current DHSUD authority for CLUP review against RA 11201 and DHSUD organizational orders. This is a critical agency function tested on the ALE. ERR-PLAN-017 identifies the mistake of saying HLURB (which no longer exists).",
-        "takeaway": "DHSUD (not HLURB, not HUDCC) reviews CLUPs. Created in 2019. Always say 'DHSUD (formerly HLURB)' on first mention to indicate the institutional change."
-      },
+      "rationale": "RA 11201 and its IRR transfer land-use planning and monitoring functions to DHSUD.",
       "explanation": null,
       "code_citation": "Key Provisions; Philippine Context",
       "bloom_level": "understand",
@@ -205,45 +177,38 @@
       "model_id": "ALE-PLAN-001-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.084662+00:00",
       "content_hash": "sha256:ae6ae9f48a853882ec3193d14feb1b83b41a42d064fc60c3a65240cfa9695f6f"
     },
     {
       "question_id": "8117e399-2b8a-4fb5-a392-13851a585442",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "Analyzing CLUP implementation, why is the distinction between the CLUP document and the zoning ordinance critical for understanding how planning policies become enforceable?",
+      "text": "Which statement about the CLUP horizon avoids an unsupported statutory claim?",
       "options": [
         {
           "id": "a",
-          "text": "The CLUP is prepared by planners but the zoning ordinance is prepared by engineers, ensuring technical rigor and compliance"
+          "text": "Planning guidance treats the CLUP as long-term and uses at least 10-year projections; do not claim RA 7160 itself states the exact 10-year term."
         },
         {
           "id": "b",
-          "text": "The CLUP is the vision document that sets goals; the zoning ordinance is the legal regulatory tool that specifies enforceable requirements developers must follow"
+          "text": "RA 7160 explicitly says every CLUP is exactly 10 years and reviewed every 3 years."
         },
         {
           "id": "c",
-          "text": "The CLUP is approved by the Mayor but the zoning ordinance requires DHSUD approval, ensuring hierarchical control and oversight"
+          "text": "CLUPs are always one-year plans."
         },
         {
           "id": "d",
-          "text": "The CLUP applies to private property while the zoning ordinance applies only to public land, which affects jurisdiction"
+          "text": "There is no planning horizon concept in CLUP guidance."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Both CLUP and zoning ordinance are prepared by planners; the distinction is not about who prepares them.",
-        "b": "The CLUP is the strategic planning framework that answers 'what do we want to become?' The zoning ordinance is the legal mechanism that translates the CLUP into specific, enforceable regulations — permitted uses, density, setbacks, infrastructure standards. When a developer applies for a permit, compliance is checked against the zoning ordinance. Without this distinction, CLUPs would be aspirational documents with no enforcement mechanism.",
-        "c": "Both CLUP and zoning ordinance are adopted by the Sanggunian; this is not the distinction.",
-        "d": "Both CLUP and zoning ordinance apply to private development; they're not separated by public/private distinction.",
-        "correct": "The CLUP is the strategic planning framework that answers 'what do we want to become?' The zoning ordinance is the legal mechanism that translates the CLUP into specific, enforceable regulations — permitted uses, density, setbacks, infrastructure standards. When a developer applies for a permit, compliance is checked against the zoning ordinance. Without this distinction, CLUPs would be aspirational documents with no enforcement mechanism.",
-        "takeaway": "CLUP = WHAT (strategic goals, allocation of zones). ZONING ORDINANCE = HOW (specific legal requirements, enforcement mechanism). This is the foundation of planning implementation."
-      },
+      "rationale": "The 10-year framing is supported by planning guides, while RA 7160 supplies the CLUP and zoning mandate.",
       "explanation": null,
       "code_citation": "Core Concept; Key Provisions",
       "bloom_level": "analyze",
@@ -256,45 +221,38 @@
       "model_id": "ALE-PLAN-001-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.087112+00:00",
       "content_hash": "sha256:072465c038d64a63fe071e5c2f16b01a12c9a5c3bed189265622bae4818b2f6e"
     },
     {
       "question_id": "b2dd222a-e2ba-498a-8a16-a315e1d07085",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "According to RA 10587 (Environmental Planning Act, 2013), which licensed professional has statutory mandate for comprehensive land use planning?",
+      "text": "What is the legal implementation tool of the CLUP?",
       "options": [
         {
           "id": "a",
-          "text": "Architects (licensed under RA 9266), who may contribute to planning but do not have the statutory mandate"
+          "text": "The zoning ordinance."
         },
         {
           "id": "b",
-          "text": "Civil Engineers (PE license), who focus on infrastructure but are not primarily responsible for comprehensive land use planning"
+          "text": "A private concept sketch."
         },
         {
           "id": "c",
-          "text": "Environmental Planners (licensed profession)"
+          "text": "A sales brochure."
         },
         {
           "id": "d",
-          "text": "Urban Designers (certified specialization), who may influence planning but lack statutory authority"
+          "text": "A mayoral campaign promise."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Architects may practice urban planning under RA 9266 but do not have the formal CLUP mandate.",
-        "b": "Civil Engineers handle infrastructure but lack statutory planning mandate.",
-        "c": "Environmental Planners, licensed under RA 10587 (2013), have statutory mandate for comprehensive land use planning including CLUPs. While architects and engineers may contribute, the formal responsibility belongs to licensed Environmental Planners.",
-        "d": "Urban designers contribute but lack statutory CLUP mandate.",
-        "correct": "CANNOT VERIFY: Search results provided do not reference RA 10587 or Environmental Planners. The search results focus on RA 7160 (LGC) and DHSUD/HLURB agency roles but do not identify which licensed profession has statutory CLUP mandate. This answer requires independent verification against RA 10587 and RA 9266 (Architecture Act) to confirm. While architects and engineers may contribute, the formal responsibility belongs to licensed Environmental Planners.",
-        "takeaway": "ENVIRONMENTAL PLANNER = statutory profession for CLUPs (RA 10587, 2013). This is a distinct professional distinction tested on the ALE."
-      },
+      "rationale": "RA 7160 and RPS connect CLUP implementation to the zoning ordinance.",
       "explanation": null,
       "code_citation": "Core Concept; Philippine Context",
       "bloom_level": "apply",
@@ -307,45 +265,38 @@
       "model_id": "ALE-PLAN-001-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.082989+00:00",
       "content_hash": "sha256:fa3cdf98500271610a37015a625fe05f1be1286e2824694f9207a06fc60293ca"
     },
     {
       "question_id": "76b17f88-6aa7-45ef-8b54-3de538fc9f78",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "The CLUP is a strategic planning document allocating land to specific uses. Which of the following is the primary legal tool that implements the CLUP's land use policies?",
+      "text": "Which body reviews component city and municipal CLUPs under RA 7160 provincial authority?",
       "options": [
         {
           "id": "a",
-          "text": "The executive development program"
+          "text": "The province reviews component city and municipal CLUPs and zoning ordinances."
         },
         {
           "id": "b",
-          "text": "The infrastructure master plan"
+          "text": "A private homeowners association."
         },
         {
           "id": "c",
-          "text": "The zoning ordinance"
+          "text": "The project architect alone."
         },
         {
           "id": "d",
-          "text": "The sectoral development plans"
+          "text": "The barangay treasurer alone."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Development programs are operational, not regulatory implementation.",
-        "b": "Infrastructure plans are sectoral tools but not the primary legal implementation mechanism.",
-        "c": "The zoning ordinance is the primary legal implementation tool of the CLUP. It translates the CLUP's land use vision into specific regulatory requirements — permitted uses per zone, density limits, setbacks, height restrictions, infrastructure standards. When a developer applies for a permit, it is checked against the zoning ordinance.",
-        "d": "Sectoral plans (housing, transportation) support but do not implement the CLUP's land use allocation.",
-        "correct": "The zoning ordinance is the primary legal implementation tool of the CLUP. It translates the CLUP's land use vision into specific regulatory requirements — permitted uses per zone, density limits, setbacks, height restrictions, infrastructure standards. When a developer applies for a permit, it is checked against the zoning ordinance.",
-        "takeaway": "CLUP = strategic vision (what do we want?). ZONING ORDINANCE = legal implementation (here's the law that makes it happen). These are distinct — the ordinance is what's enforceable."
-      },
+      "rationale": "RA 7160 gives the province review authority over component city and municipal CLUPs and zoning ordinances.",
       "explanation": null,
       "code_citation": "Core Concept; Key Provisions",
       "bloom_level": "understand",
@@ -358,45 +309,38 @@
       "model_id": "ALE-PLAN-001-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.081202+00:00",
       "content_hash": "sha256:0e4c9e3b0d64aec2bbe09f851fcf3158e196c55f831ccb357238f4bf7c333d8e"
     },
     {
       "question_id": "68756176-3163-4918-bfbb-87968372535a",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "A municipality is conducting its 3-year CLUP midterm review. Which of the following best describes what a midterm review entails versus a complete CLUP remake?",
+      "text": "Which statement correctly separates political and technical planning roles?",
       "options": [
         {
           "id": "a",
-          "text": "A midterm review is a complete rewrite of all CLUP components with a new planning horizon, which is necessary for adapting to rapid urban changes"
+          "text": "The technical component supplies analysis; the Sanggunian/local political component makes policy and legislative decisions."
         },
         {
           "id": "b",
-          "text": "A midterm review is a full re-assessment and potential update of specific policies while maintaining the overall 10-year framework"
+          "text": "The technical component alone enacts ordinances."
         },
         {
           "id": "c",
-          "text": "A midterm review is a cursory administrative check with no substantive changes, ensuring compliance with existing regulations"
+          "text": "The Sanggunian only draws maps."
         },
         {
           "id": "d",
-          "text": "A midterm review is only for municipalities that have not updated their zoning ordinance, focusing on aligning local plans with regional strategies"
+          "text": "No political decision is involved in CLUP adoption."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "A complete remake would be a full CLUP revision, not a midterm review.",
-        "b": "The 3-year midterm review is a substantive but not total reassessment. It examines whether the CLUP's policies remain valid, updates specific zones or policies if conditions have changed, integrates new laws (e.g., new RA 10121 DRRM requirements), but does not discard the overall 10-year vision.",
-        "c": "Midterm reviews are substantive, not cursory administrative checks.",
-        "d": "Midterm reviews occur regardless of zoning ordinance status.",
-        "correct": "The 3-year midterm review is a substantive but not total reassessment. It examines whether the CLUP's policies remain valid, updates specific zones or policies if conditions have changed, integrates new laws (e.g., new RA 10121 DRRM requirements), but does not discard the overall 10-year vision.",
-        "takeaway": "3-YEAR MIDTERM REVIEW = UPDATE (adjust specific policies). NOT REMAKE (complete rewrite). The 10-year framework remains; specific policies are revisited and adjusted as needed."
-      },
+      "rationale": "RPS 2008 distinguishes the political and technical planning components.",
       "explanation": null,
       "code_citation": "Core Concept; Key Provisions",
       "bloom_level": "analyze",
@@ -409,45 +353,38 @@
       "model_id": "ALE-PLAN-001-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.083781+00:00",
       "content_hash": "sha256:ea080061108cb1fa6ce0979c9da85e66601bc64508b14bb3a06b1629668a3597"
     },
     {
       "question_id": "31b63fb8-f469-433f-85f2-3b63992af4f7",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "According to RA 7160, how often must a Comprehensive Land Use Plan be reviewed and updated?",
+      "text": "What must situation analysis in CLUP preparation address under the HLURB Guidebook?",
       "options": [
         {
           "id": "a",
-          "text": "Every year, which is not typically feasible for comprehensive plans"
+          "text": "Baseline data, sectoral/thematic studies, consultations, and projections for future land-use needs."
         },
         {
           "id": "b",
-          "text": "Every 2 years, which allows for regular updates but may not capture all changes"
+          "text": "Only exterior color choices."
         },
         {
           "id": "c",
-          "text": "Every 3 years (midterm review)"
+          "text": "Only a single landowner interview."
         },
         {
           "id": "d",
-          "text": "Every 5 years, which is a standard interval for comprehensive reviews"
+          "text": "Only permit fees."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Annual updates are too frequent for strategic planning.",
-        "b": "Every 2 years is not the legal requirement.",
-        "c": "RA 7160 mandates a 3-year midterm review cycle. The CLUP is a 10-year plan, but it is revisited every 3 years to adjust for changing conditions. This is a critical detail tested on the ALE. ERR-PLAN-029 identifies 5 years as the common mistake.",
-        "d": "Students confuse the 3-year midterm review cycle (RA 7160 CLUP requirement) with 5-year planning periods (SIP plans, development programs, or infrastructure cycles). This is ERR-PLAN-029.",
-        "correct": "The CLUP is a 10-year plan. While midterm reviews are a planning best practice, the search results provided do not explicitly cite RA 7160 section mandating a specific 3-year review cycle. Verify against official RA 7160 text or DHSUD guidelines before confirming this as a statutory requirement. This is a critical detail tested on the ALE. ERR-PLAN-029 identifies 5 years as the common mistake.",
-        "takeaway": "CLUP = 10-year plan with 3-year MIDTERM REVIEW. Not annual, not 5-year updates. The 3-year cycle is about adjusting the plan, not remaking it."
-      },
+      "rationale": "The Guidebook treats situation analysis as technical and participatory, with sectoral/thematic studies and projections.",
       "explanation": null,
       "code_citation": "Key Provisions; Core Concept; ERROR_REGISTRY ERR-PLAN-029",
       "bloom_level": "remember",
@@ -460,45 +397,38 @@
       "model_id": "ALE-PLAN-001-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.082159+00:00",
       "content_hash": "sha256:dc26829108c70b6c34c219333303fb66b756ab52b60fa70ebd92c178379518de"
     },
     {
       "question_id": "ee3cd0a3-02f6-473b-bef3-e92fd450ed15",
       "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
       "topic_id": "67544cda-4fea-4b42-b7d3-38cfae7b2acd",
-      "text": "A city is preparing its CLUP and must integrate requirements from multiple Philippine laws and policies. Which of the following is NOT a mandatory integration requirement for CLUPs?",
+      "text": "A question asks which document controls enforceable permitted uses on a site. What is the best answer?",
       "options": [
         {
           "id": "a",
-          "text": "RA 7279 (UDHA) — balanced housing for socialized units"
+          "text": "The adopted zoning ordinance implementing the CLUP."
         },
         {
           "id": "b",
-          "text": "RA 10121 (DRRM) — mainstreaming disaster risk reduction"
+          "text": "The broad CLUP vision statement alone."
         },
         {
           "id": "c",
-          "text": "PD 1067 (Water Code) — water body easement distances"
+          "text": "The mayor’s oral instruction."
         },
         {
           "id": "d",
-          "text": "PD 1010 (Industrial Accidents) — workplace safety standards"
+          "text": "A nonbinding classroom diagram."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RA 7279 balanced housing is mandatory for CLUPs.",
-        "b": "RA 10121 DRRM mainstreaming is mandatory for CLUPs.",
-        "c": "PD 1067 water body easements are mandatory for CLUPs.",
-        "d": "PD 1010 is a workplace safety decree, not a land use planning requirement. Mandatory CLUP integrations include balanced housing (RA 7279), disaster risk (RA 10121), water body protection (PD 1067), and environmental compliance (PD 1586). Workplace safety is an employer responsibility, not a CLUP component.",
-        "correct": "PD 1010 is a workplace safety decree, not a land use planning requirement. Search results confirm RA 7279 (UDHA) and PD 1067 (Water Code) are relevant to CLUPs. RA 10121 (DRRM) is mentioned in the question but not in search results. PD 1586 (Environmental Impact Assessment) is NOT cited in search results as a mandatory CLUP integration. Verify which laws are explicitly mandated for CLUP integration in RA 7160 Section 20(c) and DHSUD guidelines. Workplace safety is an employer responsibility, not a CLUP component.",
-        "takeaway": "CLUP INTEGRATION = RA 7279, RA 10121, PD 1067, PD 1586 (ENVIRO). NOT workplace safety laws. Know which laws CLUPs must integrate."
-      },
+      "rationale": "The zoning ordinance is the enforceable implementation tool.",
       "explanation": null,
       "code_citation": "Core Concept; Philippine Context",
       "bloom_level": "apply",
@@ -511,7 +441,7 @@
       "model_id": "ALE-PLAN-001-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.085673+00:00",
       "content_hash": "sha256:da11a0ce598cde48cf8e69c357b264c2b8120051847ea2931a58acbf33461ef5"
     }
   ]

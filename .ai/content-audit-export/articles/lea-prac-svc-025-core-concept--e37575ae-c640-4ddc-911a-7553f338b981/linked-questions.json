@@ -8,23 +8,23 @@
       "question_id": "a619ef8b-eef4-4492-9747-7e43a8cd78e5",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "An architect is preparing the contract scope for AI Services on a major office tower. The contract states the architect will provide: (1) space planning and stacking diagrams, (2) furniture and fixture specifications, (3) bid assistance, (4) shop drawing review, and (5) site landscape master planning. Which item creates a scope violation under SPP 203.1?",
+      "text": "Under the checked SPP 203 source, how should Architectural Interiors be classified?",
       "options": [
         {
           "id": "a",
-          "text": "Site landscape master planning—this is exterior work and falls outside AI Services scope"
+          "text": "A specialized architectural service."
         },
         {
           "id": "b",
-          "text": "Space planning—this is too simple for a major office tower, which requires more detailed architectural design"
+          "text": "A regular design phase under SPP 202."
         },
         {
           "id": "c",
-          "text": "Shop drawing review—this requires separate MEP consultant approval, as it involves technical expertise beyond architectural scope"
+          "text": "A construction management service under SPP 204-B."
         },
         {
           "id": "d",
-          "text": "All items are properly within AI Services scope if documented in the contract, provided they align with the client's project requirements"
+          "text": "A building permit procedure."
         }
       ],
       "correct_option_id": "a",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Space planning (Section 2.3.1) is core AI scope regardless of project scale. Complexity increases fee but does not remove the service from scope.",
-        "c": "Shop drawing review for interior finishes and specifications (Section 2.3.4) is an enumerated AI service. MEP shop drawings for engineering systems are distinct.",
-        "d": "Contract language alone cannot expand scope beyond SPP 203.1 boundaries. Landscape master planning violates the interior-only limitation regardless of contractual inclusion.",
-        "correct": "SPP 203.1 Sections 2.3.1–2.3.6 enumerate AI scope as interior/enclosed work only: space plans, furniture layout, AI component specs, bid assistance, material approval, billing review, and final inspection. Site landscape master planning is exterior work governed by SPP 203.4 (SDP). Including it in an AI contract creates a scope violation because AI is strictly interior.",
-        "takeaway": "Landscape and site planning are exterior work—never include them in an AI Services contract."
-      },
+      "rationale": "The checked SPP 203 list includes Architectural Interiors under specialized architectural services.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1, Sections 2.3.1–2.3.6",
       "bloom_level": "analyze",
@@ -51,30 +45,30 @@
       "model_id": "ALE-PRAC-SVC-025-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.848027+00:00",
       "content_hash": "sha256:63ff6750d1b80ea717fb60d7aff2bd7d0bcb3a036f84a8d133ee1534e552638c"
     },
     {
       "question_id": "f2e10745-9758-4a7a-b9f3-13ac49198615",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "Under SPP 203, Architectural Interior (AI) Services are defined as the detailed planning and design of which areas of a building?",
+      "text": "Which service position is source-supported for Architectural Interiors under SPP 203?",
       "options": [
         {
           "id": "a",
-          "text": "Indoor and enclosed areas, including architectural laying out of all building engineering systems"
+          "text": "Working in dual capacity as Architect-of-Record and Consulting Architect for Architectural Interiors services."
         },
         {
           "id": "b",
-          "text": "Exterior and interior design combined, including site planning and landscape architecture, offering a holistic approach"
+          "text": "Working only as a building official."
         },
         {
           "id": "c",
-          "text": "Only furniture and fixtures selection, excluding building systems, focusing on aesthetics"
+          "text": "Working as the contractor without any architectural service role."
         },
         {
           "id": "d",
-          "text": "Structural and mechanical engineering design of all building systems, integrating technical aspects"
+          "text": "Working as a jury member for a design competition."
         }
       ],
       "correct_option_id": "a",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Exterior and site planning are outside AI Services scope. AI is strictly interior/enclosed. Landscape and exterior design fall under different SPP categories such as SPP 203.4 for SDP.",
-        "c": "AI scope includes far more than furniture: spatial planning, material specifications (finishes, partitions, doors, hardware), systems coordination, bid assistance, and final inspection.",
-        "d": "Engineering design is explicitly excluded from the cost base and is handled by specialist consultants, not the architect providing AI Services.",
-        "correct": "SPP 203, Section 203.1 defines AI Services as the detailed planning and design of indoor and enclosed areas of any proposed building, including retrofit, renovation, rehabilitation, or expansion work, and including the architectural laying out of all building engineering systems within those spaces. This definition is grounded in RA 9266, Sections 3(4)(g) and 14(3).",
-        "takeaway": "AI = All Interior, No Exterior—and it includes full building systems coordination within enclosed spaces."
-      },
+      "rationale": "SPP 203 identifies the dual-capacity position for Architectural Interiors services.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1; RA 9266 Sec. 3(4)(g)",
       "bloom_level": "remember",
@@ -101,30 +89,30 @@
       "model_id": "ALE-PRAC-SVC-025-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.848757+00:00",
       "content_hash": "sha256:cc77f0d856191e14b799031d353b62d54b782a40eada395b16164a264fda5c79"
     },
     {
       "question_id": "4ed0a819-7024-4e11-89c0-65d6c0477b91",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "Why does SPP 203.1 exclude engineering and specialist consultant fees from the cost base used to calculate AI Services compensation?",
+      "text": "A project has a separate Architect-of-Record and engages another architect only for interiors. Which SPP 203 position best matches the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Because AI compensation should reflect the architect's interior design work only, not the work of other professionals whose fees are separately contracted"
+          "text": "Consulting Architect for Architectural Interiors services only."
         },
         {
           "id": "b",
-          "text": "Because engineering fees are always higher than AI fees and would distort the calculation, leading to an inaccurate representation of costs"
+          "text": "Professional Advisor for an ADC."
         },
         {
           "id": "c",
-          "text": "Because SPP 203.1 does not recognize engineering as a legitimate professional service, which is a misconception about the scope of architectural practice"
+          "text": "Construction Supervision Group member."
         },
         {
           "id": "d",
-          "text": "Because the architect is prohibited from coordinating with engineering consultants on AI projects, which is a misunderstanding of professional collaboration"
+          "text": "Owner representative for bidding only."
         }
       ],
       "correct_option_id": "a",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "The exclusion is based on scope delineation, not fee magnitude. Engineering fees may be larger or smaller depending on the project.",
-        "c": "SPP 203 fully recognizes engineering as a professional service; the exclusion is about correctly isolating the AI compensation base, not delegitimizing other professions.",
-        "d": "The architect coordinates extensively with engineering consultants on AI projects (systems layout is within AI scope). The fee exclusion is about compensation calculation, not about prohibiting collaboration.",
-        "correct": "SPP 203.1 Section 4.1 bases AI compensation on the cost of AI work specifically—interior finishes, furniture, built-ins, fixtures, and specifications. Engineering and specialist consultant fees represent separate professional scopes contracted independently. Including them would inflate the AI cost base and misrepresent the architect's scope of interior work.",
-        "takeaway": "AI fee base excludes engineering fees because compensation must reflect the architect's own interior scope, not other professionals' work."
-      },
+      "rationale": "The checked SPP 203 source includes consulting-architect-only Architectural Interiors service.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1, Section 4.1",
       "bloom_level": "understand",
@@ -151,30 +133,30 @@
       "model_id": "ALE-PRAC-SVC-025-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.851018+00:00",
       "content_hash": "sha256:704aad56e4a99b78ef9d27e0ae21c5fc6fa10ec7489d781d0f758e8335a03ce8"
     },
     {
       "question_id": "a77d240a-08e7-4389-ae31-8f740ad9242a",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "The cost of AI work for a renovation project is estimated at PHP 8 million. This figure includes the architect's design scope plus structural engineer consultation (PHP 400,000) and MEP engineer consultation (PHP 600,000). What is the correct cost base for calculating the AI Services fee?",
+      "text": "Which item belongs to the checked SPP 203 specialized services list?",
       "options": [
         {
           "id": "a",
-          "text": "PHP 7 million (excluding engineering and specialist consultant fees)"
+          "text": "Acoustic Design."
         },
         {
           "id": "b",
-          "text": "PHP 8 million (as stated, including all consultant fees)"
+          "text": "Certificate of Occupancy issuance."
         },
         {
           "id": "c",
-          "text": "PHP 8.6 million (including a 7.5% markup for coordination, which is a standard practice in some firms to cover additional administrative costs)"
+          "text": "Zoning clearance filing."
         },
         {
           "id": "d",
-          "text": "PHP 9 million (rounding up to the nearest whole million, which is sometimes done for ease of financial reporting and budgeting purposes)"
+          "text": "Civil Code Article 1723 liability."
         }
       ],
       "correct_option_id": "a",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Including the PHP 1M in engineering fees violates SPP 203.1 Section 4.1, which excludes these from the AI cost base.",
-        "c": "There is no 7.5% markup provision in SPP 203. Consultant fees are simply excluded from the cost base, not marked up.",
-        "d": "Rounding is arbitrary and incorrect. The cost base is computed by subtracting excluded fees from the stated amount.",
-        "correct": "SPP 203.1 Section 4.1 explicitly excludes engineering and specialist consultant fees from the cost of AI work base. The structural engineer fee (PHP 400,000) and MEP engineer fee (PHP 600,000) total PHP 1,000,000, which must be subtracted: PHP 8,000,000 – PHP 1,000,000 = PHP 7,000,000.",
-        "takeaway": "Engineering fees and specialist consultant fees are always excluded—they reduce the AI cost base."
-      },
+      "rationale": "Acoustic Design appears in the same checked specialized-services source block.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1, Section 4.1",
       "bloom_level": "apply",
@@ -201,30 +177,30 @@
       "model_id": "ALE-PRAC-SVC-025-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.852437+00:00",
       "content_hash": "sha256:20926568e4b2e1cef1a5f756913724fafcca9024d62425ea7f055576987c7868"
     },
     {
       "question_id": "393a1da5-b6a8-4bfb-86db-3bd138350df1",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "An architect claims that AI Services fall under SPP 208 (Architectural Design Competition) because interior design requires creative and innovative problem-solving. Evaluate this claim.",
+      "text": "Which item belongs to the checked SPP 203 specialized services list?",
       "options": [
         {
           "id": "a",
-          "text": "The claim is incorrect. SPP 208 covers design competitions only; AI Services are regulated under SPP 203, Section 203.1"
+          "text": "Architectural Lighting Layout and Design."
         },
         {
           "id": "b",
-          "text": "The claim is partially correct—complex AI projects may be treated as SPP 208 competitions, depending on the project's scope"
+          "text": "Bidding bond computation."
         },
         {
           "id": "c",
-          "text": "SPP 208 and SPP 203.1 both cover interior design but use different fee structures, which can lead to confusion"
+          "text": "Construction permit inspection by the building official."
         },
         {
           "id": "d",
-          "text": "Interior design is typically SPP 208 unless the project is very small, in which case different regulations apply"
+          "text": "ADC jury deliberation procedure."
         }
       ],
       "correct_option_id": "a",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "No amount of project complexity changes an AI service engagement into a design competition. SPP 208 is exclusively for competitions, regardless of interior design complexity.",
-        "c": "SPP 203.1 and SPP 208 are entirely distinct service categories. SPP 208 does not regulate standard interior design services in any capacity.",
-        "d": "Project size does not determine whether work falls under SPP 203.1 or SPP 208. All standard AI Services use SPP 203.1 regardless of scale.",
-        "correct": "SPP 208 is exclusively the standard for Architectural Design Competitions—organized competitive selection processes for design solutions. It has no connection to standard AI service delivery. AI Services are regulated under SPP 203, Section 203.1, which governs the professional service of detailed interior planning and design.",
-        "takeaway": "SPP 208 = Competitions only. SPP 203.1 = Standard AI Services. Never confuse them."
-      },
+      "rationale": "The checked SPP 203 list includes Architectural Lighting Layout and Design.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1; SPP Doc 208",
       "bloom_level": "apply",
@@ -251,30 +221,30 @@
       "model_id": "ALE-PRAC-SVC-025-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.850270+00:00",
       "content_hash": "sha256:0c7269f79e23628364128b10fa9d642cd76cc6f34f34bba8cc8199e32af69064"
     },
     {
       "question_id": "bd0d9e4e-63ec-43cf-b7c7-c77ff0f85857",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "An architect is asked to assess whether a 20% fee rate for AI Services on a luxury hotel interior renovation project is defensible under the 1979 UAP Doc 203 reference guidelines. What is the valid basis for this rate?",
+      "text": "Which answer should be avoided in this repaired cluster unless a separate verified source is supplied?",
       "options": [
         {
           "id": "a",
-          "text": "The reference range is 12–20% depending on complexity; a luxury hotel with extensive custom finishes and systems integration justifies the higher rate"
+          "text": "A fixed percentage fee claim for Architectural Interiors."
         },
         {
           "id": "b",
-          "text": "The rate must always be exactly 15% per 1979 UAP Doc 203; 20% violates the standard, which is strictly enforced for all project types"
+          "text": "Architectural Interiors is a specialized architectural service."
         },
         {
           "id": "c",
-          "text": "Luxury projects automatically qualify for a 25% minimum rate regardless of scope, as they involve higher levels of detail and customization"
+          "text": "The architect may serve in dual capacity for Architectural Interiors services."
         },
         {
           "id": "d",
-          "text": "AI Services fees are determined entirely by client budget, not by reference guidelines, allowing for flexibility in negotiation"
+          "text": "The architect may serve only as Consulting Architect for Architectural Interiors services."
         }
       ],
       "correct_option_id": "a",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "The 15% is the reference rate, not a fixed ceiling. The 1979 UAP Doc 203 establishes a range of 12–20% to accommodate varying complexity levels.",
-        "c": "The maximum of the range is 20%, not 25%. No project type automatically qualifies for rates beyond the established range.",
-        "d": "While negotiation is part of practice, SPP 203.1 Section 4.1 anchors fees to reference guidelines and complexity factors, not client budget alone.",
-        "correct": "The 1979 UAP Doc 203 specifies a 15% reference rate with a range of 12–20% depending on project complexity. A luxury hotel interior renovation with extensive custom finishes, specialized materials, bespoke furniture, and complex systems integration represents the high end of the complexity spectrum, justifying the 20% rate within the established range.",
-        "takeaway": "Standard = 15%. Complex/detailed interiors = up to 20%. Simple/standard finishes = down to 12%."
-      },
+      "rationale": "The local audit verified classification and manner of service, not a fixed fee percentage.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1, Section 4.1; 1979 UAP Doc 203",
       "bloom_level": "analyze",
@@ -301,30 +265,30 @@
       "model_id": "ALE-PRAC-SVC-025-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.847273+00:00",
       "content_hash": "sha256:9ed5e0a111b73da03e5d5cdc0fccb90b1a988ac177376da079b47791ffa0baa9"
     },
     {
       "question_id": "c2b6d57d-40da-4196-a7e3-1be2dd5f856f",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "An architect is engaged to design the interior finishes and systems for a commercial building, while a different architect serves as the Architect-of-Record for the overall structure. What is the first architect's role in the AI Services delivery model?",
+      "text": "Which pair correctly matches the checked SPP 203 Architectural Interiors service positions?",
       "options": [
         {
           "id": "a",
-          "text": "Consulting Architect (CA) Only—providing AI services while the other architect remains AoR"
+          "text": "Dual capacity as Architect-of-Record and Consulting Architect, or Consulting Architect only."
         },
         {
           "id": "b",
-          "text": "Architect-of-Record (AoR) for the entire project, which is not applicable in this scenario"
+          "text": "Owner and jury member, or technical advisor only."
         },
         {
           "id": "c",
-          "text": "Dual Capacity, serving as both AoR and CA for AI, which is a rare arrangement"
+          "text": "Building official and zoning administrator, or fire marshal only."
         },
         {
           "id": "d",
-          "text": "Junior architect with no independent professional responsibility, typically under supervision"
+          "text": "Contractor only, or supplier only."
         }
       ],
       "correct_option_id": "a",
@@ -332,13 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "If another architect is AoR for the overall structure, this architect cannot simultaneously hold the AoR designation for the same project.",
-        "c": "Dual Capacity means one architect holds both AoR and CA roles; here, the roles are split between two architects, making it CA Only.",
-        "d": "A Consulting Architect for AI carries full professional responsibility for interior design and documentation per RA 9266. The CA role is not subordinate.",
-        "correct": "SPP 203.1 establishes two manners of providing AI Services. When another architect already serves as AoR for the overall project, the interior architect operates in the CA Only capacity—providing AI services under a separate engagement while the AoR retains overall project responsibility. This is the standard model for specialized interior architecture firms.",
-        "takeaway": "CA Only applies when AI responsibility is held by a specialist separate from the project AoR."
-      },
+      "rationale": "The checked SPP 203 source gives these two positions for Architectural Interiors services.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1; RA 9266 Sec. 14(3)",
       "bloom_level": "understand",
@@ -351,30 +309,30 @@
       "model_id": "ALE-PRAC-SVC-025-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.845181+00:00",
       "content_hash": "sha256:25ed1d34f033db480883215e94f178b109c51ce48deeb6a07026c0670f7135b4"
     },
     {
       "question_id": "93b1ae06-0615-4715-9d36-14a1d00c6d2e",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "In the Dual Capacity model for AI Services, an architect acts as both the Architect-of-Record and the Consulting Architect for interior work. This typically results in how many separate fee arrangements?",
+      "text": "Which source-safe citation should this local question cluster use for Architectural Interiors classification?",
       "options": [
         {
           "id": "a",
-          "text": "One unified fee covering both roles"
+          "text": "SPP Document 203."
         },
         {
           "id": "b",
-          "text": "Two separate fees—one for AoR responsibility and one for CA responsibility"
+          "text": "SPP Document 208."
         },
         {
           "id": "c",
-          "text": "Two fees that are always equal in amount"
+          "text": "SPP Document 204-A."
         },
         {
           "id": "d",
-          "text": "No fee is charged in Dual Capacity mode"
+          "text": "SPP Document 207."
         }
       ],
       "correct_option_id": "a",
@@ -382,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Dual Capacity means unified service delivery under one contract. The two roles do not generate separate fee arrangements.",
-        "c": "Fee structure is determined by the compensation method (percentage of AI cost per Section 4.1), not by splitting fees equally between roles.",
-        "d": "Dual Capacity services are fully billable under SPP 203, Section 4.1. Professional services always command compensation.",
-        "correct": "Under SPP 203.1, when the architect serves in Dual Capacity (both AoR and CA for AI), the engagement is unified. There is one comprehensive contract and one fee structure that covers the integrated service delivery, not separate AoR and CA invoices.",
-        "takeaway": "Dual Capacity = one architect, two roles, one unified fee."
-      },
+      "rationale": "The verified classification comes from SPP 203.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1; SPP 203, Section 4.1",
       "bloom_level": "understand",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-SVC-025-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.849510+00:00",
       "content_hash": "sha256:4e8f6b5cc4ce94e1d4350597aef8ba46140cc82ac446d3029959bb6e992b70fc"
     },
     {
       "question_id": "fa2fecb1-8863-4366-ab64-ff53b5693dc5",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "Which of the following is NOT part of the scope of Architectural Interior Services per SPP 203 Sections 2.3.1–2.3.6?",
+      "text": "A question asks whether Architectural Interiors is part of SPP 203 specialized architectural services. What is the source-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "Space plans, stacking diagrams, and area computations"
+          "text": "Yes, it is listed as a specialized architectural service."
         },
         {
           "id": "b",
-          "text": "Exterior facade design and landscape site planning"
+          "text": "No, it is only a construction bond requirement."
         },
         {
           "id": "c",
-          "text": "Material samples review and shop drawing approval"
+          "text": "No, it is only an ADC secretariat role."
         },
         {
           "id": "d",
-          "text": "Bid assistance and final inspection of AI works"
+          "text": "No, it is only a post-occupancy permit."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Space planning (Section 2.3.1) is core AI scope—includes spatial organization, stacking diagrams, and dimensional studies.",
-        "c": "Material samples and shop drawings (Section 2.3.4) are explicitly listed in the SPP 203.1 scope.",
-        "d": "Bid assistance (Section 2.3.3) and final inspection (Section 2.3.6) are both enumerated AI services.",
-        "correct": "Exterior facade design and landscape site planning are entirely outside the scope of AI Services under SPP 203.1. AI is defined as the detailed planning and design of indoor and enclosed areas only. Landscape work falls under SPP 203.4 (SDP), and exterior design is part of the base architectural service under SPP 202.",
-        "takeaway": "Exterior and landscape work are entirely outside AI scope—AI is interior-only."
-      },
+      "rationale": "The checked SPP 203 list includes Architectural Interiors.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1, Sections 2.3.1–2.3.6",
       "bloom_level": "remember",
@@ -451,30 +397,30 @@
       "model_id": "ALE-PRAC-SVC-025-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.851754+00:00",
       "content_hash": "sha256:5602af4cd034ca511cf9a0c5fcb4cf23052754445e26a3f75e31db274f1d8e62"
     },
     {
       "question_id": "33b10e86-83aa-4c54-9b91-d93ff661e97d",
       "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
       "topic_id": "78ab99ea-af30-4082-94d3-8a38d9d0fddb",
-      "text": "A 10,000 m² mixed-use building has a total Project Construction Cost (PCC) of PHP 120 million. The interior finishes, furniture, and systems are estimated to cost PHP 15 million. Using the standard 15% rate from SPP 203 Section 4 (Compensation based on Cost of AI Work, percentage per guidelines), what is the architect's fee for AI Services?",
+      "text": "Which topic is outside the repaired source scope for this Architectural Interiors cluster?",
       "options": [
         {
           "id": "a",
-          "text": "PHP 2.25 million (15% of PHP 15 million)"
+          "text": "Unverified compensation computations."
         },
         {
           "id": "b",
-          "text": "PHP 18 million (15% of PHP 120 million)"
+          "text": "Architectural Interiors as a specialized service."
         },
         {
           "id": "c",
-          "text": "PHP 1.5 million (10% of PHP 15 million)"
+          "text": "Consulting Architect for Architectural Interiors only."
         },
         {
           "id": "d",
-          "text": "PHP 1.8 million (15% of PHP 12 million)"
+          "text": "Dual capacity as Architect-of-Record and Consulting Architect."
         }
       ],
       "correct_option_id": "a",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "This applies the 15% rate to total PCC (PHP 120M)—a critical error. AI compensation uses only the cost of AI work, not the entire project construction cost.",
-        "c": "The standard reference rate is 15%, not 10%. While the range is 12–20% depending on complexity, the baseline reference is 15%.",
-        "d": "This uses an incorrect cost base of PHP 12 million instead of the stated PHP 15 million cost of AI work.",
-        "correct": "SPP 203.1 Section 4.1 specifies compensation as a percentage of the cost of AI work. The cost of AI work is PHP 15 million (interior finishes, furniture, systems). The 1979 UAP Doc 203 reference rate of 15% yields: PHP 15,000,000 × 0.15 = PHP 2,250,000. The total PCC of PHP 120 million is irrelevant to this calculation.",
-        "takeaway": "AI fee = Cost of AI Work × Rate. Never use Total PCC. Always isolate the interior-specific cost base."
-      },
+      "rationale": "The repair keeps the cluster to classification and manner-of-service facts verified in SPP 203.",
       "explanation": null,
       "code_citation": "SPP Doc 203, Section 203.1, Section 4.1; 1979 UAP Doc 203",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-SVC-025-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.846386+00:00",
       "content_hash": "sha256:e0ee1223419477c4dd26348ee6631cedf331daee153bb78dc4705cf95f5c3b85"
     }
   ]

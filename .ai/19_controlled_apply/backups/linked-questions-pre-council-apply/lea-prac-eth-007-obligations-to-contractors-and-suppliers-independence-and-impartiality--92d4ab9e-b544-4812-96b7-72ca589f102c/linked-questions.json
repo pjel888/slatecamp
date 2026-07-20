@@ -1,0 +1,508 @@
+{
+  "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:97b9502934d8f612db02d8eb7bdaab973305b4188a73e81d1f690b42f6f84d52",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2ff5b9df-3d2e-42aa-a409-4f51dbf406e2",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "What standard determines whether an architect has violated Code Section 3-d's prohibition on gifts and commissions from contractors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The objective monetary value of the benefit; only high-value gifts create moral obligation, which is assessed based on market value and potential influence"
+        },
+        {
+          "id": "b",
+          "text": "The architect's subjective feeling of indebtedness or moral obligation, regardless of the benefit's objective value"
+        },
+        {
+          "id": "c",
+          "text": "Whether the benefit is accepted during project execution; benefits after project completion are permissible, provided they do not influence future projects"
+        },
+        {
+          "id": "d",
+          "text": "The contractor's explicit statement that no reciprocal obligation is expected, which must be documented in writing to avoid conflicts of interest"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The standard is subjective (feeling of indebtedness), not objective value; a modest gift can create prohibited moral obligation.",
+        "c": "Section 3-d applies to benefits at any time, not only during project execution; the architect's impartiality standard is ongoing.",
+        "d": "The contractor's disclaimer does not cure the potential for moral obligation; the architect's subjective feeling controls.",
+        "correct": "The phrase 'tend to place him under any kind of moral obligation' establishes a subjective standard. The test asks whether the architect would feel indebted or under obligation—not whether the benefit has objective monetary value.'",
+        "takeaway": "Section 3-d's gift prohibition applies if the architect would feel indebted, regardless of objective value or contractor's stated intent."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Section 3-d; RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a3909470130f39eb95a4e5ec42cb5a272c744a6cb305a161b533b400b7c17e37"
+    },
+    {
+      "question_id": "d1cb71cf-000b-4308-b705-588edc3e3d62",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "Under Code Section 3, the architect serves what dual function in relation to contractors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sole advocate for the client with no obligation to the contractor, ensuring client interests are prioritized"
+        },
+        {
+          "id": "b",
+          "text": "Fair safeguard of contractor interests while serving the client, requiring absolute impartiality"
+        },
+        {
+          "id": "c",
+          "text": "Representative of the contractor's financial interests within the project budget, ensuring cost efficiency"
+        },
+        {
+          "id": "d",
+          "text": "Administrator of contractor penalties and default enforcement, maintaining project compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Section 3 explicitly establishes safeguard of contractor interests; the architect is not solely an advocate for the client.",
+        "c": "The architect's role is neither representative of contractor interests nor financial advocacy; it is impartial administration.",
+        "d": "While contract administration involves enforcement authority, the architect's primary role is maintaining impartiality, not penalty administration.",
+        "correct": "Code Section 3 establishes the architect as a fair safeguard of contractor interests while serving the client. This dual responsibility creates tension... This balance demands complete impartiality.'",
+        "takeaway": "Code Section 3 requires architects to maintain absolute impartiality as fair safeguards of both client and contractor interests."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Section 3; RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d21c8f1e93e56678332207cd7b597669f8544c4d1687668d0e5a234b9eb23c26"
+    },
+    {
+      "question_id": "215b49ad-ce9c-4843-a3d6-bb1124cf7cea",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "An architect must certify payment to a contractor based on construction document specifications compliance. The architect accepted free engineering services from this contractor on a prior project. The current work appears specification-compliant but presents ambiguities in interpretation. How should the architect approach payment certification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Certify payment based on the most favorable interpretation to reciprocate the prior services, which could raise ethical concerns"
+        },
+        {
+          "id": "b",
+          "text": "Deny payment certification entirely to avoid any appearance of favoritism, ensuring impartiality in the process"
+        },
+        {
+          "id": "c",
+          "text": "Either recuse from payment certification or ensure the specification interpretation applied to this contractor is identical to standards applied to other contractors"
+        },
+        {
+          "id": "d",
+          "text": "Certify payment using the most strict interpretation to demonstrate impartiality overcoming prior services, maintaining professional integrity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Favorable interpretation would constitute the prohibited bias created by prior services.",
+        "b": "Recusal is one option, but applying identical standards to all contractors is equally valid.",
+        "d": "Strict interpretation applied only to this contractor would constitute prohibited retaliatory bias.",
+        "correct": "Payment certification impartiality — Contract document clarity requires the architect certify payment based on specifications compliance, not on prior gifts or services. Bias in payment certification violates both Section 3-a and 3-d.' The appropriate response is either recusal or application of identical standards to all contractors.",
+        "takeaway": "Payment certification must apply identical specification interpretation standards to all contractors; prior services require either recusal or strict impartiality."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Sections 3-a and 3-d; RA 9266",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:30151981756bae0343f1b78902978c60df67d8221f6b02d1ed1df17c8538f2b6"
+    },
+    {
+      "question_id": "e4c7ecba-d157-4e3d-bac3-e339b60ac20c",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "In a competitive bid process, Contractor A previously provided the architect with free design consultation services. Contractor B has submitted the lowest compliant bid. Under Code Section 3-d, how must the architect evaluate these bids?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Award to Contractor A to reciprocate the prior design services benefit"
+        },
+        {
+          "id": "b",
+          "text": "Award to Contractor B based on lowest compliant bid; the architect must recuse from Contractor A's bid evaluation due to prior relationship"
+        },
+        {
+          "id": "c",
+          "text": "Apply identical contract interpretation standards to both bids regardless of prior services; if the same standards produce a different winner, award accordingly"
+        },
+        {
+          "id": "d",
+          "text": "Request that Contractor A reduce their bid to match Contractor B as compensation for the previous services"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reciprocating with contract award would constitute the prohibited favor resulting from prior gifts.",
+        "c": "While identical standards apply, the prior service relationship creates appearance of bias; recusal is the appropriate response.",
+        "d": "Using competitive process to obtain price concessions based on prior services violates Code Section 3-d principles.",
+        "correct": "A contractor who provided gifts or services in previous projects has purchased, in effect, favorable consideration in bid evaluation... The architect must recuse from evaluating Contractor A's bid due to the prior gift/service relationship. Contractor B's compliant lowest bid should be awarded.'",
+        "takeaway": "Architects must recuse from bid evaluation involving contractors from whom prior services were accepted to avoid appearance of favorable bias."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Section 3-d; RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4ecdf09b42bd5b11e5ab149e4d9a03aec86cae1af51c6cd9ce2e0e5b012f3dd3"
+    },
+    {
+      "question_id": "6097f8ef-9ea1-41f4-95e4-83195b35d11d",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "A contractor provides free project management software (valued at $5,000) to an architect for use on a $2 million project, claiming the offer requires no reciprocal consideration. Under Code Section 3-d, has the architect violated the prohibition on gifts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No violation occurred because the software benefit is small relative to project value, which may not consider ethical implications"
+        },
+        {
+          "id": "b",
+          "text": "No violation occurred because the contractor disclaimed expectation of reciprocal obligation, which does not eliminate perceived influence"
+        },
+        {
+          "id": "c",
+          "text": "Yes, violation occurs because the benefit creates moral obligation regardless of the percentage of project cost"
+        },
+        {
+          "id": "d",
+          "text": "The architect may accept the software if the entire value is disclosed to the client, ensuring transparency and client approval"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proportion to project value is irrelevant; any benefit creating indebtedness violates Section 3-d.",
+        "b": "The contractor's disclaimer does not overcome the architect's subjective feeling of indebtedness.",
+        "d": "Client disclosure does not remedy the moral obligation created by the architect's indebtedness to the contractor.",
+        "correct": "The article's ALE test point states: 'A contractor offers free project management software subscription valued at $5,000. Despite the modest percentage of the $2 million project cost, acceptance violates Section 3-d because the benefit creates moral obligation.'",
+        "takeaway": "Section 3-d prohibits gifts regardless of size or contractor disclaimers; any benefit creating moral obligation is prohibited."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Section 3-d; RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8c67ce45c857bacdf813fd8688f06a8c234017fcf57506b042605fbe7252c614"
+    },
+    {
+      "question_id": "7031488b-005f-4395-8d0a-76df392a5889",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "A structural steel supplier offers free structural engineering analysis to support the architect's design specifications. Under Code Section 4-a, what is the architect's obligation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the free analysis since the supplier has technical expertise and will ensure design quality, provided no conflict of interest arises"
+        },
+        {
+          "id": "b",
+          "text": "Accept the analysis only if the client has explicitly authorized the relationship and all parties agree to the terms"
+        },
+        {
+          "id": "c",
+          "text": "Reject such arrangements unless the client explicitly authorizes and the architect independently verifies conclusions"
+        },
+        {
+          "id": "d",
+          "text": "Accept freely provided technical services as normal supplier relationships with no independence concerns, unless otherwise specified by the client"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Free analysis creates implicit expectation of favorable specification; the architect's independence is compromised.",
+        "b": "While client authorization is needed, the architect must also independently verify conclusions; authorization alone is insufficient.",
+        "d": "Free technical services create detrimental obligation contrary to client interests; these are not normal relationships.",
+        "correct": "The article addresses this scenario: 'An architect who has accepted gifts or commissions from a contractor or material supplier cannot credibly claim impartial judgment... The architect's independence requires rejecting such arrangements unless the client explicitly authorizes the relationship and understands the technical services' origin.' Additionally: 'When manufacturer provides free technical analysis, the architect must independently verify conclusions before specification adoption.'",
+        "takeaway": "Section 4-a requires architects reject manufacturer-provided free services unless client explicitly authorizes and architect independently verifies conclusions."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Section 4-a; RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bf16371d76484d980abdca1687c4dabf3294587d6a12b311a94c7999f19417ba"
+    },
+    {
+      "question_id": "7a9d4cfb-7fc1-457e-92dc-b4f6d75aad00",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "A material supplier offers the architect a 15% volume discount on all specifications for a $5 million project. Under Code Section 4-b, how must the architect handle this discount?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect may retain the discount as compensation for negotiating favorable terms, provided it is disclosed to the client"
+        },
+        {
+          "id": "b",
+          "text": "The architect must reject all discounts to avoid appearance of bias, ensuring transparency and fairness in all transactions"
+        },
+        {
+          "id": "c",
+          "text": "The architect must credit the full 15% discount to the client through reduced cost estimates"
+        },
+        {
+          "id": "d",
+          "text": "The architect may retain half the discount and pass half to the client, as long as both parties agree to this arrangement"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Personal retention of discount violates Section 4-b; the full benefit must be credited to the client.",
+        "b": "Section 4-b permits acceptance of market discounts; the requirement is credit to the client, not total rejection.",
+        "d": "Partial retention by the architect violates the requirement to credit the full discount to the client.",
+        "correct": "The article explicitly states: 'The architect cannot personally retain the benefit... The architect must pass the full 10% saving to the client through reduced cost estimates. The architect's role includes negotiating favorable terms for the client, and accepting the discount credit serves the client's interest.'",
+        "takeaway": "Code Section 4-b permits material discounts only if the architect credits the full amount to the client; no personal retention is permitted."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Section 4-b; RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9808f3fb43404204d0a519977ea5b28f71a922b574ecc76fde6b1523178bcb10"
+    },
+    {
+      "question_id": "7db0b242-4918-4bf2-8284-f36a194f0719",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "An architect receives a gift from a sub-contractor on one project and must now evaluate the same sub-contractor's proposal on a different project two years later. The architect believes sufficient time has passed to overcome any bias from the prior gift. Is this reasoning consistent with Code Section 3-d?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, time passage eliminates the indebtedness created by the gift; the architect is now impartial, assuming no further interactions"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only if the architect explicitly discloses the prior gift to the current project client, ensuring transparency"
+        },
+        {
+          "id": "c",
+          "text": "No, a contractor who provided gifts in previous projects creates a continuing appearance of favoritism in all subsequent projects regardless of time elapsed"
+        },
+        {
+          "id": "d",
+          "text": "No, but the architect may accept the sub-contractor's proposal if the architect applies stricter evaluation standards than applied to other bidders, ensuring fairness"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Time passage does not eliminate the continuing appearance of bias established by prior gifts.",
+        "b": "Disclosure alone does not remedy the appearance of bias that continuing across all projects.",
+        "d": "Applying stricter standards to this contractor would constitute retaliatory bias; recusal is the appropriate response.",
+        "correct": "The article addresses this misconception directly: 'Third, architects sometimes assume past relationships do not affect present projects. In reality, a contractor who provided services in previous projects creates a continuing appearance of favoritism in all subsequent projects. The impartiality standard applies cumulatively across all work.'",
+        "takeaway": "Prior gifts create continuing appearance of bias across all subsequent projects; time passage does not eliminate the prohibition."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Section 3-d; RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b391b90e8d6dd37aba51e3f429f95fd8755ee0626a1a037b51b2c3a7df468099"
+    },
+    {
+      "question_id": "b4dd359c-ce6e-4f7f-9a2c-aa1c74ba09a2",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "between prohibited services and permitted material discounts. Which statement accurately reflects this distinction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Free engineering consultation and material volume discounts are equivalent benefits; both are prohibited unless explicitly stated in the contract"
+        },
+        {
+          "id": "b",
+          "text": "Free professional services create quid pro quo expectation and moral obligation; material discounts are normal commercial transactions permissible if credited to client"
+        },
+        {
+          "id": "c",
+          "text": "Material discounts are prohibited unless they exceed 10% of project value, while services are always permitted under specific conditions"
+        },
+        {
+          "id": "d",
+          "text": "Both services and discounts require client authorization to be permissible, ensuring transparency and mutual agreement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article establishes a categorical distinction; free services and material discounts are not equivalent.",
+        "c": "Percentage thresholds are not part of the distinction; the distinction is based on type of benefit (service vs. discount).",
+        "d": "Material discounts require client credit, not authorization; services generally require rejection even with client authorization unless very specific conditions are met.",
+        "correct": "The article explicitly states: 'Second, some architects conflate free professional services with market discounts. Accepting a 5% discount on materials (credited to client) is categorically different from accepting free design consultation. Services create quid pro quo expectation; material discounts are normal commercial transactions.'",
+        "takeaway": "Free services create prohibited quid pro quo expectations; material discounts are normal commerce if fully credited to client—these are categorically different."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Sections 3-d and 4-b; RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6e2b1d9069940a9e404d8cdfda953272189c1744bf1506b113a65cfda3dd6532"
+    },
+    {
+      "question_id": "b115192d-3fd5-4d21-b052-b4e2fae2ca56",
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "topic_id": "a31b3f0e-383b-4c43-b2b2-8133b1953811",
+      "text": "misconceptions about the scope of 'moral obligation.' What does the Code consider the controlling standard—architect's actual bias or appearance of bias?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Actual bias only; if the architect sincerely intends to remain fair, prior gifts do not create problems"
+        },
+        {
+          "id": "b",
+          "text": "Appearance of bias only; even well-intentioned architects cannot overcome psychological bias created by indebtedness"
+        },
+        {
+          "id": "c",
+          "text": "The architect may choose whether to apply the actual or appearance standard based on circumstances"
+        },
+        {
+          "id": "d",
+          "text": "Bias is measured by the contractor's actual expectation of reciprocity, not the architect's perception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The appearance of bias standard governs; sincere intention to remain fair does not overcome Code prohibition.",
+        "c": "The appearance of bias standard is mandatory, not optional; architects cannot choose the application standard.",
+        "d": "The architect's perception of indebtedness controls, not the contractor's expectation; this is the subjective standard established by Section 3-d.",
+        "correct": "The article explicitly states: 'Professional ethics require eliminating both actual bias and the appearance of bias. The stricter standard—appearance of bias—governs architectural conduct.' Also: 'The Code prohibits gifts not because architects lack integrity but because even well-intentioned architects cannot overcome psychological bias created by indebtedness.'",
+        "takeaway": "Code applies the appearance of bias standard; even sincere intentions cannot overcome psychological bias from prior gifts or services."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200, Sections 3-d and 4-a; RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-007-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ea0cccc261ccaa080481f31491cd63a66b37cebd05cde230a9a2e846d507935b"
+    }
+  ]
+}

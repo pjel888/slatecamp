@@ -1,0 +1,508 @@
+{
+  "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6393e15e9affcb53d392ca25610798cce7f8e61c71a555e2d8d77f6cc42f3573",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "995484a4-d309-4bcf-85d9-73e0ecd04f1e",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "Which exposure category applies to a site located in flat, undeveloped agricultural land with scattered trees?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exposure A (smooth terrain)"
+        },
+        {
+          "id": "b",
+          "text": "Exposure B (moderate roughness)"
+        },
+        {
+          "id": "c",
+          "text": "Exposure C (open terrain)"
+        },
+        {
+          "id": "d",
+          "text": "Exposure D (urban development)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Exposure C is defined for open terrain with occasional obstructions—grassland, scattered trees, and undeveloped land all fall into this category.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.2.2; IBC 2021 26.7.2",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:75573b1d0b39e8483e8d8582343a8d2467e1b64228cce91567d9ed7baa06ae19"
+    },
+    {
+      "question_id": "662044b0-dc1e-437b-90c3-a62e6366324a",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "A building has a mean roof height of 20 meters and a rectangular plan dimension of 30 m × 40 m. Is this a low-rise building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; mean roof height of 20 m satisfies the ≤18 m criterion"
+        },
+        {
+          "id": "b",
+          "text": "No; mean roof height of 20 m exceeds the 18 m limit"
+        },
+        {
+          "id": "c",
+          "text": "Yes; the 30 × 40 m plan is large enough to qualify"
+        },
+        {
+          "id": "d",
+          "text": "Cannot determine without knowing exposure category"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Low-rise requires mean roof height ≤60 ft (18.3 m) AND mean roof height ≤ least horizontal dimension. At 20 m (65.6 ft), this building exceeds the 60 ft limit, so it fails the first condition and is not low-rise.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.2.1; IBC 2021 26.2",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3c30fd9157b76195b77855c8fd375d9edf524e72f0f9e19201e5a2beab16f16c"
+    },
+    {
+      "question_id": "56606db8-efb9-411c-b64a-49124c5a3756",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "A building has all external walls fitted with louvers and vents that total 85% of wall area. What is this building classified as?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enclosed building"
+        },
+        {
+          "id": "b",
+          "text": "Open building"
+        },
+        {
+          "id": "c",
+          "text": "Partially enclosed building"
+        },
+        {
+          "id": "d",
+          "text": "Semi-enclosed building (non-standard)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "An open building has all external walls at least 80% open. 85% exceeds the 80% threshold for all walls, so this building is open.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.2.1; IBC 2021 26.2",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c8958c5776dc534b7e8a1f418d3dbfbb8c8f06e7c681a1e2fb7453e03c8e8078"
+    },
+    {
+      "question_id": "1f1f7b09-f4f6-4de1-83b4-65859acf050d",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "The basic wind speed V is defined as which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The maximum wind gust ever recorded at a site, typically measured during extreme weather events"
+        },
+        {
+          "id": "b",
+          "text": "The 3-second peak gust speed at 10 meters above ground in Exposure C terrain"
+        },
+        {
+          "id": "c",
+          "text": "The average hourly wind velocity measured in open terrain, used for general climatological assessments"
+        },
+        {
+          "id": "d",
+          "text": "The 1-minute sustained wind speed at ground level, often used in maritime and aviation contexts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Basic wind speed is precisely defined as a 3-second gust speed at 10 m height in Exposure C. This is the reference hazard level used to derive all site-specific and height-adjusted wind pressures.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 207.1; IBC 2021 26.2",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:53700bc014af5185e73262947183ec084d2dda17d4b0de7af4cb8c9416d531ed"
+    },
+    {
+      "question_id": "853c8d7f-7eb2-4c74-bf58-7b0f81ab978e",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "An engineer must select a wind load procedure for a 22 m tall industrial building in Exposure B with a 28 m × 28 m square footprint. The measured fundamental frequency is 1.3 Hz. Explain which procedure applies and justify your classification decisions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "General wind procedure (not low-rise); not low-rise (22 m > 18 m); not flexible (1.3 Hz > 1 Hz and 22 < 4×28=112)"
+        },
+        {
+          "id": "b",
+          "text": "Low-rise procedure; low-rise building; not flexible; all conditions satisfied, including height and frequency parameters"
+        },
+        {
+          "id": "c",
+          "text": "Dynamic procedure; low-rise building but frequency threshold requires dynamic analysis due to specific site conditions"
+        },
+        {
+          "id": "d",
+          "text": "Dynamic procedure; not low-rise; height exceeds 4 × least dimension (22 > 7), necessitating a more complex analysis"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Mean roof height 22 m > 18 m, so NOT low-rise (low-rise requires ≤18 m AND ≤ least dimension). Frequency 1.3 Hz > 1 Hz and height ratio 22 ÷ 28 = 0.79, which is << 4, so NOT flexible. Neither low-rise nor flexible criteria are met, therefore a general procedure (non-simplified) applies; simplified low-rise procedure does not apply.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.2.1, 207.3, 207.4; IBC 2021 26.2, 26.3",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a61b577ba0587457e7815081b715389ef38a84898b734dec3d9cdeb9365abfed"
+    },
+    {
+      "question_id": "c13d8387-d38a-47f1-99c3-42ca182f2081",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "A tall office tower in an urban downtown area has a height of 85 m and a plan dimension of 25 m × 25 m. Calculate the height-to-least-dimension ratio and determine if flexibility criteria are triggered.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ratio 3.4; not flexible (3.4 < 4)"
+        },
+        {
+          "id": "b",
+          "text": "Ratio 3.4; flexible because height exceeds 50 m absolute"
+        },
+        {
+          "id": "c",
+          "text": "Ratio 2.8; requires frequency measurement to determine flexibility"
+        },
+        {
+          "id": "d",
+          "text": "Ratio 3.4; flexible because structure is in Exposure B urban terrain"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Height-to-least-dimension = 85 ÷ 25 = 3.4. The flexible threshold is height > 4 × least dimension, i.e., 100 m. Since 85 m < 100 m, this criterion is not triggered. Unless the natural frequency is < 1 Hz, dynamic analysis is not required by geometry alone.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.2.1; ASCE 7-22 26.2",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a47aacb31b71adb2b8c2edd87a6d8de4b546c44df85f676d95bcf52ea9617013"
+    },
+    {
+      "question_id": "eef31c78-687c-49cf-9d55-912d2a33df7a",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "Which of the following conditions indicates a flexible structure that requires dynamic wind analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mean roof height 22 m, plan 30 m × 30 m, natural frequency 1.2 Hz, which is often considered borderline for dynamic analysis"
+        },
+        {
+          "id": "b",
+          "text": "Height 45 m, plan 10 m × 10 m (height = 4.5 × least dimension), natural frequency 0.8 Hz"
+        },
+        {
+          "id": "c",
+          "text": "Height 15 m, plan 40 m × 40 m, natural frequency 1.5 Hz, typically not requiring dynamic analysis unless other factors are present"
+        },
+        {
+          "id": "d",
+          "text": "All buildings over 30 m tall, regardless of frequency, a generalization not supported by structural codes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Flexible structure is triggered by frequency < 1 Hz OR height > 4 × least horizontal dimension. Option B: frequency 0.8 Hz < 1 Hz ✓ and height 45 m > 4 × 10 m (40 m) ✓. Both conditions are met.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.2.1; ASCE 7-22 26.2",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7be1779f09cf7e423aa2d699db42e2af8506e78372c98340bdcc8722cae07814"
+    },
+    {
+      "question_id": "a41a4a87-5b33-474c-8365-1e60d2ee225b",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "A mixed-use building has a south wall that is 75% open (storefronts) and a north wall that is 92% open (ventilation louvers). What is the building classification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open building"
+        },
+        {
+          "id": "b",
+          "text": "Enclosed building"
+        },
+        {
+          "id": "c",
+          "text": "Partially enclosed building"
+        },
+        {
+          "id": "d",
+          "text": "The classification depends on interior air volume"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Partially enclosed means some external walls are ≥80% open while others are <80% open. South wall 75% < 80% and north wall 92% ≥ 80%. Because not all walls meet the ≥80% criterion, this is partially enclosed.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.2.1; IBC 2021 26.2",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:64995a46a524d68cdc2674ee5c708ae803e08a780e1968e4f11e1d647fa11377"
+    },
+    {
+      "question_id": "1dba5961-c1da-413b-82fe-fab5c4fc41fe",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "The annual probability of exceedance for basic wind speed is 0.02. What does this correspond to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A 20-year mean recurrence interval"
+        },
+        {
+          "id": "b",
+          "text": "A 50-year mean recurrence interval"
+        },
+        {
+          "id": "c",
+          "text": "A 100-year mean recurrence interval"
+        },
+        {
+          "id": "d",
+          "text": "A 2% safety factor on all wind pressures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "An annual probability of 0.02 means a 1 in 50 chance each year, which is equivalent to a 50-year mean recurrence interval (1 ÷ 0.02 = 50).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.1; ASCE 7-22 26.5.1",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:986d7742f01d5349c5a475c4ac50b78f9e0e18b6c65ba98675329718df07d882"
+    },
+    {
+      "question_id": "6500b2df-2855-4858-8d76-465959e042c7",
+      "article_id": "f0790263-a20b-4d36-bebb-05474566cbce",
+      "topic_id": "da507bc3-c3f0-47b3-a9f6-dfe51a5cf495",
+      "text": "A warehouse with a mean roof height of 12 m has a square plan of 50 m × 50 m. Is this a low-rise building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; all conditions are satisfied (12 m ≤ 18 m and 12 m ≤ 50 m)"
+        },
+        {
+          "id": "b",
+          "text": "No; the plan is too large for low-rise classification, as it exceeds typical low-rise area limits"
+        },
+        {
+          "id": "c",
+          "text": "No; the height is too close to the 18 m limit, which may require additional structural considerations"
+        },
+        {
+          "id": "d",
+          "text": "Cannot determine without site-specific wind speed data, which could affect structural classification"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Low-rise requires mean roof height ≤18 m AND ≤ least horizontal dimension. Here: 12 m ≤ 18 m ✓ and 12 m ≤ 50 m ✓. Both conditions are satisfied, so this is a low-rise building.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBCP 2015 207.2.1; IBC 2021 26.2",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-012-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0edde4950e14e212a9c589fafb841207f7bd7026653c0ebe6f898c886e9d9506"
+    }
+  ]
+}

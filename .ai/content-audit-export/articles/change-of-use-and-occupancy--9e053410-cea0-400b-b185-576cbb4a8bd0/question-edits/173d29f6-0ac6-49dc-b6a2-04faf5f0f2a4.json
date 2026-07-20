@@ -2,9 +2,9 @@
   "question_id": "173d29f6-0ac6-49dc-b6a2-04faf5f0f2a4",
   "baseline_hash": "sha256:a9777f51e44bcfc6c7c7838c3633873739b48d2dddabe3c4790c824f9da5de60",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What additional certificate rule applies after a Certificate of Occupancy has been issued?",
+    "text": "Which official has SOLE authority under PD 1096 to approve or deny a change of use and occupancy application?",
     "options": [
       {
         "id": "a",
-        "text": "Other Certificates of Occupancy may be issued due to changes in use, whether partly or wholly, if the new use conforms with the Code and IRR."
+        "text": "The DPWH Regional Director for all changes involving buildings of more than three storeys"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "The local Sangguniang Bayan or Sangguniang Panlungsod through a zoning resolution"
       },
       {
         "id": "c",
-        "text": "h"
+        "text": "The Building Official of the jurisdiction where the building is located"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "A joint committee of the BO, BFP Chief, and local health officer for changes involving public use"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Other Certificates of Occupancy may be issued due to changes in use, whether partly or wholly, if the new use conforms with the Code and IRR. This is supported by A certificate is replaced by a fire pump test..",
-    "explanation": "Other Certificates of Occupancy may be issued due to changes in use, whether partly or wholly, if the new use conforms with the Code and IRR. The cited local source family controls this item: A certificate is replaced by a fire pump test..",
-    "code_citation": "A certificate becomes unnecessary after the first tenant."
+    "correct_option_id": "c",
+    "rationale": "Sec. 702 vests sole authority for approving or denying change of use applications in the Building Official of the jurisdiction. This authority is not shared with DPWH regional offices, local legislative bodies, or inter-agency committees for standard occupancy changes. The BO applies the Code requirements to determine compliance and exercises the approval authority independently.",
+    "explanation": "The BO = sole authority for occupancy change approvals. This mirrors the BO's authority for building permits (Sec. 301) and certificates of occupancy (Sec. 309). The BO is the single point of accountability for all building Code enforcement decisions at the local level.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

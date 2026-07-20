@@ -8,37 +8,31 @@
       "question_id": "126cf925-15bb-437b-9dcb-cdfaf8431319",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "Per PD 1096 and BP 344 accessibility requirements, what is the minimum interior width of an elevator car door opening?",
+      "text": "Which set of factors belongs in source-safe elevator selection?",
       "options": [
         {
           "id": "a",
-          "text": "A: 0.7 m"
+          "text": "Service quality, economics, and architectural integration of lobbies, shafts, and machine rooms."
         },
         {
           "id": "b",
-          "text": "B: 0.8 m"
+          "text": "Cab color, lobby artwork, and advertising placement only."
         },
         {
           "id": "c",
-          "text": "C: 0.9 m"
+          "text": "Only the number of cars, regardless of interval."
         },
         {
           "id": "d",
-          "text": "D: 1.0 m"
+          "text": "Only the motor brand and finish schedule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.7 m is too narrow for emergency stretcher access or wheelchair entry; fails BP 344 compliance.",
-        "c": "0.9 m exceeds the minimum requirement; typical office cars are 0.85 m.",
-        "d": "1.0 m is wider than code minimum; unnecessary cost without proportional benefit.",
-        "correct": "PD 1096 specifies minimum door width of 0.8 m to accommodate wheelchair passage per BP 344 accessibility provisions.",
-        "takeaway": "Door width is a critical accessibility checkpoint; 0.8 m minimum ensures BP 344 compliance for all Philippine buildings."
-      },
+      "rationale": "Service quality, economics, and architectural integration of lobbies, shafts, and machine rooms. This answer matches Salvan Utilities 2 refined markdown lines 13429-13437.",
       "explanation": null,
       "code_citation": "BP 344 2024 IRR Section 4.2.4 (Accessible Elevators)",
       "bloom_level": "remember",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-002-08-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.710387+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.171684+00:00",
       "content_hash": "sha256:7732deb49872d8242110f257a78fed031be533ae70596bea4af5503b5613e815"
     },
     {
       "question_id": "ec76bf0e-858f-4b18-a6e2-013a9fb995c1",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "In elevator traffic analysis, what is the typical assumed peak-hour occupancy diversity factor for office buildings during the critical morning arrival period?",
+      "text": "What are the checked service-quality criteria for elevator traffic analysis?",
       "options": [
         {
           "id": "a",
-          "text": "A: 70%"
+          "text": "Paint durability, shaft wallpaper, and door color."
         },
         {
           "id": "b",
-          "text": "B: 75%"
+          "text": "Interval and waiting time, handling capacity, and travel time."
         },
         {
           "id": "c",
-          "text": "C: 85%"
+          "text": "Only maximum rated speed."
         },
         {
           "id": "d",
-          "text": "D: 95%"
+          "text": "Only the number of elevator buttons."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "70% is conservative and yields oversized elevator systems; underestimates actual peak demand.",
-        "b": "75% is mid-range but industry practice favors 85% as the realistic peak for office buildings per ASHRAE guidance.",
-        "d": "95% approaches theoretical maximum; assumes all building occupants arrive within 15 minutes, which is unrealistic.",
-        "correct": "An 85% diversity factor reflects the typical maximum occupancy during the 15-minute morning arrival peak; not all tenants arrive simultaneously.",
-        "takeaway": "The 85% peak factor balances realistic occupancy patterns with system reliability; this is the benchmark for Philippine office design per ASHRAE 26.1."
-      },
+      "rationale": "Interval and waiting time, handling capacity, and travel time. This answer matches Salvan Utilities 2 refined markdown lines 13431-13437.",
       "explanation": null,
       "code_citation": "ASHRAE 26.1 (Performance Criteria); industry standard for elevator traffic analysis",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-002-08-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.710387+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.164315+00:00",
       "content_hash": "sha256:8b5d330a1017a52e0353a96792fd9b7b0849e51da408d9c85af9ec93bcd3d5ee"
     },
     {
       "question_id": "4ed36f80-0e18-4383-8042-3bf9389ef5c4",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "Under PD 1096, what is the minimum number of elevators required for a 13-story Philippine office building?",
+      "text": "What does interval mean in lobby dispatch analysis?",
       "options": [
         {
           "id": "a",
-          "text": "A: One elevator of 1,000 kg capacity, which may not suffice for high occupant loads"
+          "text": "The distance between guide rails."
         },
         {
           "id": "b",
-          "text": "B: Two elevators; additional units based on building height and occupant load"
+          "text": "The machine-room floor area."
         },
         {
           "id": "c",
-          "text": "C: Three elevators minimum for all buildings above 12 stories, ensuring adequate service levels"
+          "text": "The average time between car departures from the lobby."
         },
         {
           "id": "d",
-          "text": "D: Four elevators; one per 5 stories, which may exceed typical requirements for such buildings"
+          "text": "The door opening width measured in meters."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "One elevator may be acceptable for buildings up to 12 stories, but for 13+ stories, industry best practice typically requires at least two.",
-        "c": "Three elevators is not a blanket requirement; the minimum is determined by occupant load and traffic analysis.",
-        "d": "The four-elevator rule (one per 5 stories) is not a code requirement; elevator count derives from occupant load and traffic analysis.",
-        "correct": "Per PD 1096, elevators are required for buildings above five stories. For buildings 13 stories and above, industry standards (ASHRAE 26.1) and accessibility requirements typically result in a minimum of two elevators, with additional elevators determined by building height and occupant load calculations.",
-        "takeaway": "Industry best practice establishes a threshold at 13 stories for dual-elevator minimum; design engineers determine actual count via traffic analysis."
-      },
+      "rationale": "The average time between car departures from the lobby. This answer matches Salvan Utilities 2 refined markdown lines 13437-13445.",
       "explanation": null,
       "code_citation": "PD 1096 Rule VII Sec 701; BP 344; ASHRAE 26.1",
       "bloom_level": "remember",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-002-08-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.710387+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.166717+00:00",
       "content_hash": "sha256:9d1e05515084a481ceee44de6587088ff8889278b2814cd033d4c3eda9fc262d"
     },
     {
       "question_id": "f9faccaf-cf7e-4615-9e08-45226866734a",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "A hydraulic elevator in a Philippine mid-rise building is limited to a maximum speed of what value per PD 1096?",
+      "text": "Which statement best describes handling capacity?",
       "options": [
         {
           "id": "a",
-          "text": "A: 0.5 m/s"
+          "text": "It is independent of car capacity."
         },
         {
           "id": "b",
-          "text": "B: 1.0 m/s"
+          "text": "It depends only on cab interior finish."
         },
         {
           "id": "c",
-          "text": "C: 1.5 m/s"
+          "text": "It is the same for every occupancy type."
         },
         {
           "id": "d",
-          "text": "D: 2.0 m/s"
+          "text": "It is governed by car passenger load and the interval at which cars serve the lobby."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.5 m/s is slower than the ASME A17.1 maximum; overconservative and increases RTT unnecessarily.",
-        "c": "1.5 m/s exceeds hydraulic design capabilities and ASME A17.1 guidance; only traction systems achieve this speed.",
-        "d": "2.0 m/s is in the high-rise traction range; hydraulic systems cannot safely operate at this speed.",
-        "correct": "ASME A17.1 limits hydraulic elevators to 1.0 m/s maximum, reflecting pressure limitations and safety margins for fluid-driven systems.",
-        "takeaway": "Hydraulic speed ceiling (1.0 m/s) is a hard constraint from ASME A17.1 driving elevator type selection for Philippine buildings ≤6 stories; traction is needed for faster requirements."
-      },
+      "rationale": "It is governed by car passenger load and the interval at which cars serve the lobby. This answer matches Salvan Utilities 2 refined markdown lines 13461-13535.",
       "explanation": null,
       "code_citation": "ASME A17.1; engineering practice",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-002-08-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.710387+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.175283+00:00",
       "content_hash": "sha256:b041c6be7b4cf49a1bccfb5a33195e7e3937b9389dd500af5b507f9a9db0c34d"
     },
     {
       "question_id": "ed877b20-1120-4de2-a159-6b1132156fa6",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "A design engineer calculates RTT by assuming average stops = 100% of total building floors (every elevator visits every floor). A peer reviewer flags this as unrealistic for a 25-story building. Why is the 60% stops assumption (standard in ASHRAE guidance) more accurate for traffic analysis?",
+      "text": "Why must elevator traffic analysis be coordinated with building space?",
       "options": [
         {
           "id": "a",
-          "text": "A: 60% is mandated by PD 1096 and cannot be deviated; 100% violates the code, leading to inefficient elevator operation"
+          "text": "Pit depth, hoistway dimensions, overhead clearance, penthouse size, loads, and machine-room needs affect the design."
         },
         {
           "id": "b",
-          "text": "B: In reality, not all elevators serve all floors during a 5-minute interval; express elevators skip lower floors, and local cars don't reach the roof. 60% reflects statistically weighted average stop distribution."
+          "text": "Traffic analysis has no effect on sections or structure."
         },
         {
           "id": "c",
-          "text": "C: 100% stops would be correct for emergency evacuations but inappropriate for normal traffic analysis, as it overestimates elevator usage"
+          "text": "Machine rooms are only tenant storage areas."
         },
         {
           "id": "d",
-          "text": "D: The difference between 60% and 100% is negligible (< 5%) and doesn't affect final elevator count, though it may impact efficiency"
+          "text": "Hoistway dimensions are chosen after finishes are installed."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "PD 1096 does not prescribe a specific stops percentage; ASHRAE 26.1 recommends 60% as industry best practice.",
-        "c": "Emergency evacuation uses different analysis; not relevant to traffic design.",
-        "d": "For tall buildings, the difference is significant: 25 floors × 60% = 15 stops vs. 25 stops, affecting RTT by 40%+.",
-        "correct": "High-rise buildings use a mix of express (skip lower) and local (stop lower/middle) cars; a single elevator doesn't service all 25 floors equally during peak. The 60% assumption reflects this diversity. For a 25-floor building, average stops ≈ 15 floors per trip, not 25. Using 100% stops inflates RTT artificially, overstating elevator count.",
-        "takeaway": "The 60% stops rule is a traffic-weighted, realistic simplification avoiding overcalculation; essential for high-rise accuracy and cost-effective design."
-      },
+      "rationale": "Pit depth, hoistway dimensions, overhead clearance, penthouse size, loads, and machine-room needs affect the design. This answer matches Salvan Utilities 2 refined markdown lines 15087-15100.",
       "explanation": null,
       "code_citation": "RTT Formula (Section 2); ASHRAE 26.1 Guidance; Common Design Mistakes (Article Section)",
       "bloom_level": "analyze",
@@ -251,30 +221,30 @@
       "model_id": "ALE-UTIL-002-08-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.176322+00:00",
       "content_hash": "sha256:d3d1ec97e8b5c19b363f084f8221691983f7c756c44732140970b3104e2044c9"
     },
     {
       "question_id": "d6907778-6d86-419c-840f-96cbd3847de6",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "During construction, a Philippine building authority (Barangay Building Official) challenges the elevator design, demanding that a 15-story office building have at least 4 elevators (one per 4 stories) instead of the calculated 3 elevators (from interval/HC analysis). The engineer's design shows INT = 38 s and HC = 14.2%. How should the engineer respond?",
+      "text": "Which set of factors belongs in source-safe elevator selection?",
       "options": [
         {
           "id": "a",
-          "text": "A: Agree immediately; the 'one per 4 stories' rule is implicit in PD 1096 and must be followed, despite the analysis"
+          "text": "Cab color, lobby artwork, and advertising placement only."
         },
         {
           "id": "b",
-          "text": "B: Provide the detailed calculation (interval, HC) demonstrating that 3 elevators meet PD 1096 minimum standards and exceed ASHRAE performance targets; escalate to Building Official (City/Municipal level) if needed."
+          "text": "Service quality, economics, and architectural integration of lobbies, shafts, and machine rooms."
         },
         {
           "id": "c",
-          "text": "C: Add a 4th elevator as a compromise without recalculating; assume added redundancy, which may not be necessary"
+          "text": "Only the number of cars, regardless of interval."
         },
         {
           "id": "d",
-          "text": "D: Reduce elevator speed to 1.5 m/s to increase RTT, making the interval slightly worse so a 4th elevator 'appears' necessary, which is not a recommended practice"
+          "text": "Only the motor brand and finish schedule."
         }
       ],
       "correct_option_id": "b",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The 'one per 4 stories' is a rule of thumb, not PD 1096 mandate; compliance is via interval/HC.",
-        "c": "Accepting a compromise without technical justification introduces unnecessary cost and sets a precedent for future disputes.",
-        "d": "Intentionally degrading design to justify added equipment is unethical and wasteful.",
-        "correct": "PD 1096 does not impose a 'one per X stories' rule; requirements are based on occupant load and industry standards (ASHRAE 26.1) for interval and handling capacity. An engineer must defend the design with calculations and reference standards (ASHRAE 26.1, ASME A17.1). If the Building Official insists, the issue escalates to the supervising authority (City Engineer or MMDA in metro Manila). Arbitrary rules unsupported by code must be challenged professionally.",
-        "takeaway": "Philippine building approval relies on technical documentation; engineers must advocate for evidence-based design and escalate disputes beyond local officials to higher authority (Building Code Administration)."
-      },
+      "rationale": "Service quality, economics, and architectural integration of lobbies, shafts, and machine rooms. This answer matches Salvan Utilities 2 refined markdown lines 13429-13437.",
       "explanation": null,
       "code_citation": "Professional Practice in Building Code Compliance; ASHRAE 26.1 and ASME A17.1 standards",
       "bloom_level": "evaluate",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-002-08-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.174361+00:00",
       "content_hash": "sha256:255e82a1ae5f6b750895b80b818a9c0c4b567c33e680aff57289c3f4c89f848f"
     },
     {
       "question_id": "a65b5987-ff5f-4d60-a98a-e96f7906d772",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "A 20-story metro Manila commercial tower has a complex occupancy: 15,000 m² office (upper 15 floors) + 3,000 m² retail (ground + mezzanine). Office peak = 85%; retail peak = 70%. Building design specifies separate elevator groups: 5 standard traction elevators for office (speed 2.5 m/s), and 2 slower hydraulic elevators for retail/parking (speed 1.0 m/s). Why is this segregated approach rational despite higher installation cost?",
+      "text": "What are the checked service-quality criteria for elevator traffic analysis?",
       "options": [
         {
           "id": "a",
-          "text": "A: Hydraulic elevators are cheaper to operate; cost savings offset higher upfront investment, making them a viable long-term solution"
+          "text": "Paint durability, shaft wallpaper, and door color."
         },
         {
           "id": "b",
-          "text": "B: Separate systems allow independent RTT/HC optimization for each occupancy type, avoiding compromise; faster office service prevents retail traffic from degrading office interval."
+          "text": "Only maximum rated speed."
         },
         {
           "id": "c",
-          "text": "C: PD 1096 mandates separate elevator systems for mixed-use buildings, ensuring compliance with local building regulations"
+          "text": "Interval and waiting time, handling capacity, and travel time."
         },
         {
           "id": "d",
-          "text": "D: Hydraulic elevators are required for retail access under BP 344 accessibility rules, which prioritize accessibility over speed"
+          "text": "Only the number of elevator buttons."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Operational costs may differ, but that's not the primary design driver; traffic analysis performance is.",
-        "c": "PD 1096 does not mandate separate systems; this is an engineering choice, not a code requirement.",
-        "d": "Both elevator types can meet BP 344; hydraulic is not required for accessibility.",
-        "correct": "Office and retail have different peak factors (85% vs. 70%), occupant loads, and acceptable intervals. A single elevator system serving both would require compromise: either office interval suffers (if sized for retail) or retail HC becomes unacceptable (if optimized for office). Segregation allows each system to meet its specific performance target independently.",
-        "takeaway": "Mixed-occupancy buildings benefit from segregated elevator strategies to decouple traffic analysis and prevent one occupancy type from degrading service to another. Common in Philippine metro Manila mixed-use towers."
-      },
+      "rationale": "Interval and waiting time, handling capacity, and travel time. This answer matches Salvan Utilities 2 refined markdown lines 13431-13437.",
       "explanation": null,
       "code_citation": "Example 2: Mixed-Use Building Design (Article Computational Example); Inverse Computation & Iterative Design (Section)",
       "bloom_level": "analyze",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-002-08-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.170769+00:00",
       "content_hash": "sha256:f6095cbc5096f9e074e3ef296217628f662799ee8ee179faed1df9180c28ba61"
     },
     {
       "question_id": "0871a9ae-d954-46ee-9878-a88e156e1a32",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "A 16-story mixed-use building (office + retail) has RTT = 150 s. Design engineer must choose between (1) 5 standard 1,000 kg elevators, or (2) 4 elevators with 2 units upgraded to 1,250 kg (16 persons) and 2 remaining at 1,000 kg (13 persons). Peak population = 2,100 persons. Calculate HC for each option; which is more cost-effective?",
+      "text": "What does interval mean in lobby dispatch analysis?",
       "options": [
         {
           "id": "a",
-          "text": "A: Option 1 (5 std) HC = 14.5%; Option 2 (mixed) HC = 13.1%; Option 1 better due to higher handling capacity"
+          "text": "The distance between guide rails."
         },
         {
           "id": "b",
-          "text": "B: Option 1 (5 std) HC = 13.8%; Option 2 (mixed) HC = 14.9%; Option 2 better (fewer elevators)"
+          "text": "The machine-room floor area."
         },
         {
           "id": "c",
-          "text": "C: Option 1 (5 std) HC = 11.2%; Option 2 (mixed) HC = 12.6%; both marginal, hybrid preferred for flexibility"
+          "text": "The door opening width measured in meters."
         },
         {
           "id": "d",
-          "text": "D: Options equal in HC; choose Option 1 for standardization of maintenance and replacement parts inventory"
+          "text": "The average time between car departures from the lobby."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Reverses HC results; Option 2 achieves higher HC with fewer units.",
-        "c": "Overstates HC values; calculations don't support these percentages.",
-        "d": "Ignores HC difference; in practice, mixed-capacity design offers cost savings.",
-        "correct": "Trips/5 min = 300/150 = 2.0. Option 1: HC = (300 × 13 × 2.0) / 2,100 = 7,800 / 2,100 = 3.71 × 0.85 ≈ 13.8%. Option 2 (avg capacity = (2×16 + 2×13)/4 = 14.5 persons): HC = (300 × 14.5 × 2.0) / 2,100 = 8,700 / 2,100 = 4.14 × 0.85 ≈ 14.9%. Mixed design with 4 elevators exceeds 12% minimum with lower count.",
-        "takeaway": "Selective car-capacity upgrades are a cost-effective alternative to adding whole elevators; common retrofit strategy in Philippine mid-rise projects."
-      },
+      "rationale": "The average time between car departures from the lobby. This answer matches Salvan Utilities 2 refined markdown lines 13437-13445.",
       "explanation": null,
       "code_citation": "Handling Capacity Calculation; Inverse Design & Iterative Methodology (Article Section)",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-002-08-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.169798+00:00",
       "content_hash": "sha256:d5f3b266cf114fcf30b22c2e3b4cbad5f440d5d097f3c6cda197ac796767c5f5"
     },
     {
       "question_id": "afe7c89e-7337-4b8a-abaf-c50431b74823",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "In the RTT formula, which component typically accounts for 40–60% of the total Round Trip Time in a dense office building?",
+      "text": "Which statement best describes handling capacity?",
       "options": [
         {
           "id": "a",
-          "text": "A: Travel time (2H/V) including acceleration and deceleration phases"
+          "text": "It is governed by car passenger load and the interval at which cars serve the lobby."
         },
         {
           "id": "b",
-          "text": "B: Door opening/closing time (t_s), which may vary with door type and automation level"
+          "text": "It is independent of car capacity."
         },
         {
           "id": "c",
-          "text": "C: Dwell and passenger transfer time at stops (t_d + t_c)"
+          "text": "It depends only on cab interior finish."
         },
         {
           "id": "d",
-          "text": "D: Building structural delays and vibration damping, which can be significant in older structures"
+          "text": "It is the same for every occupancy type."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Travel time (2H/V) is significant but usually 30–40% of RTT; becomes smaller proportion in buildings with many stops.",
-        "b": "Door opening/closing (t_s ≈ 9 s) is roughly 8–15% of RTT; not dominant.",
-        "d": "Structural delays are not a standard RTT component; vibration damping is transparent to traffic analysis.",
-        "correct": "In dense office buildings with many intermediate stops, dwell (door open) + transfer time (passenger movement) dominates RTT, often exceeding 40–60% of total cycle time.",
-        "takeaway": "Dense stop patterns inflate dwell/transfer time—a key design sensitivity for office buildings; overlooking this leads to underestimated RTT and inadequate elevator count."
-      },
+      "rationale": "It is governed by car passenger load and the interval at which cars serve the lobby. This answer matches Salvan Utilities 2 refined markdown lines 13461-13535.",
       "explanation": null,
       "code_citation": "RTT Formula Breakdown (ASHRAE 26.1); Computational Example 1 (Article Section)",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-002-08-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.167879+00:00",
       "content_hash": "sha256:077b6b10c6c64d5d2ece1c9062865e23f5a0068f422457d99ccfabae3e58d2d5"
     },
     {
       "question_id": "bf53e055-9095-4086-9014-77cf1e18d6af",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "An office building design with 6 elevators yields an RTT of 110 s and an interval of 18.3 s. This is significantly better than the target 30 s interval. However, HC calculation reveals only 10.8%, below the 12% minimum. What is the primary reason for the interval-HC mismatch, and which adjustment addresses it directly?",
+      "text": "Why must elevator traffic analysis be coordinated with building space?",
       "options": [
         {
           "id": "a",
-          "text": "A: RTT is incorrectly calculated; the low HC indicates faster travel time, so reduce speed to 1.5 m/s and recalculate to ensure accuracy"
+          "text": "Traffic analysis has no effect on sections or structure."
         },
         {
           "id": "b",
-          "text": "B: Building peak population was underestimated during design; recalculate population with updated floor area data to reflect actual usage"
+          "text": "Pit depth, hoistway dimensions, overhead clearance, penthouse size, loads, and machine-room needs affect the design."
         },
         {
           "id": "c",
-          "text": "C: Car capacity is insufficient (standard 1,000 kg ≈ 13 persons); upgrade 2–3 cars to 1,250 kg to increase HC without changing interval."
+          "text": "Machine rooms are only tenant storage areas."
         },
         {
           "id": "d",
-          "text": "D: Interval of 18.3 s is too aggressive; increase RTT by slowing elevators, which will reduce trips/5 min and improve HC by balancing load"
+          "text": "Hoistway dimensions are chosen after finishes are installed."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Reducing speed worsens the interval (increases RTT) and compounds the problem; incorrect diagnosis.",
-        "b": "If population was severely underestimated, HC would be calculated at lower peak; problem identification should precede design adjustment.",
-        "d": "Increasing RTT (slowing elevators) worsens interval and trips/5 min; reduces HC further.",
-        "correct": "Interval and HC are independent metrics: INT = RTT/N_e (frequency of arrival), while HC = (300 × CC × trips) / Population (capacity per unit time). Excellent interval with poor HC means the cars arriving frequently carry too few persons. Upgrading car capacity directly increases HC without changing frequency/interval.",
-        "takeaway": "Interval and HC are decoupled design variables; engineers often achieve excellent interval but inadequate capacity; selective car upgrades are the targeted solution."
-      },
+      "rationale": "Pit depth, hoistway dimensions, overhead clearance, penthouse size, loads, and machine-room needs affect the design. This answer matches Salvan Utilities 2 refined markdown lines 15087-15100.",
       "explanation": null,
       "code_citation": "Interval vs. Handling Capacity Independence; Advanced Design Example (Article Section)",
       "bloom_level": "apply",
@@ -501,30 +441,30 @@
       "model_id": "ALE-UTIL-002-08-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.168843+00:00",
       "content_hash": "sha256:1f524e4077bddd0e39d95f95205df57b2dab0c8c68fb793ba9f23f261c6a248d"
     },
     {
       "question_id": "5c9d756a-dfef-4752-bf89-ec7631a84b90",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "A 6-story Philippine office building has 4,800 m² total area and elevator speed of 1.0 m/s (hydraulic). Floor-to-floor height is 3.6 m, and average stops in RTT analysis = 3 stops. Dwell + transfer per stop = 9.5 s. Door time = 9 s. Calculate RTT.",
+      "text": "Which set of factors belongs in source-safe elevator selection?",
       "options": [
         {
           "id": "a",
-          "text": "A: RTT ≈ 46 seconds"
+          "text": "Cab color, lobby artwork, and advertising placement only."
         },
         {
           "id": "b",
-          "text": "B: RTT ≈ 63 seconds"
+          "text": "Only the number of cars, regardless of interval."
         },
         {
           "id": "c",
-          "text": "C: RTT ≈ 80.7 seconds"
+          "text": "Service quality, economics, and architectural integration of lobbies, shafts, and machine rooms."
         },
         {
           "id": "d",
-          "text": "D: RTT ≈ 95 seconds"
+          "text": "Only the motor brand and finish schedule."
         }
       ],
       "correct_option_id": "c",
@@ -532,13 +472,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "46 s omits stop time entirely (incomplete formula); only counts travel + door time.",
-        "b": "63 s significantly underestimates; may result from omitting one stop dwell or using incorrect travel formula.",
-        "d": "95 s overestimates; may assume 5+ stops or higher total height.",
-        "correct": "RTT = 2(height to top)/V + stops × (t_d + t_c) + t_s. Height = 6 stories × 3.6 m = 21.6 m. Travel time (round-trip) = 2(21.6)/1.0 = 43.2 s. Stop time = 3 stops × 9.5 s/stop = 28.5 s. Door time = 9 s. Total RTT = 43.2 + 28.5 + 9 = 80.7 seconds. This exceeds the 25–40 second acceptance criterion for office buildings, indicating this 6-story hydraulic system may create excessive wait times.",
-        "takeaway": "Hydraulic elevators at 1.0 m/s with multiple stops produce RTT of ~81 s for 6-story buildings; designers must verify this meets 40-second maximum for office occupancies or specify multiple cars."
-      },
+      "rationale": "Service quality, economics, and architectural integration of lobbies, shafts, and machine rooms. This answer matches Salvan Utilities 2 refined markdown lines 13429-13437.",
       "explanation": null,
       "code_citation": "RTT Calculation Formula per ASHRAE 26.1; Example methodology in article",
       "bloom_level": "apply",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-002-08-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.161109+00:00",
       "content_hash": "sha256:2ce0c6dd5512beb1d5b7bc90d325da4ead1ce67623fb55e1d845beaa05b83528"
     },
     {
       "question_id": "1f9eac26-bf76-45fe-a56d-0c591061829f",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "An 8-story residential building has 240 dwelling units with an average household occupancy of 4 persons per unit. Assuming 70% peak-hour diversity (lower than office), calculate the peak population for elevator traffic analysis.",
+      "text": "What are the checked service-quality criteria for elevator traffic analysis?",
       "options": [
         {
           "id": "a",
-          "text": "A: 480 persons"
+          "text": "Paint durability, shaft wallpaper, and door color."
         },
         {
           "id": "b",
-          "text": "B: 576 persons"
+          "text": "Only maximum rated speed."
         },
         {
           "id": "c",
-          "text": "C: 672 persons"
+          "text": "Only the number of elevator buttons."
         },
         {
           "id": "d",
-          "text": "D: 960 persons"
+          "text": "Interval and waiting time, handling capacity, and travel time."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "480 persons assumes 50% diversity; too conservative for residential.",
-        "b": "576 persons uses 60% diversity; between typical residential (70%) and office (85%).",
-        "d": "960 persons is full occupancy; no diversity factor applied; unrealistic for traffic analysis.",
-        "correct": "Total occupant load = 240 units × 4 persons/unit = 960 persons. Peak (70% diversity) = 960 × 0.70 = 672 persons. Residential demand is lower and less synchronized than office (85% diversity), reflecting staggered arrival and departure patterns.",
-        "takeaway": "Residential peak factors (70%) are lower than office (85%) due to distributed occupancy patterns and flexible arrival times; misapplying office factors inflates elevator count."
-      },
+      "rationale": "Interval and waiting time, handling capacity, and travel time. This answer matches Salvan Utilities 2 refined markdown lines 13431-13437.",
       "explanation": null,
       "code_citation": "PD 1096 Occupant Load (Residential); ASHRAE 26.1 diversity factor for residential",
       "bloom_level": "apply",
@@ -601,30 +529,30 @@
       "model_id": "ALE-UTIL-002-08-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.165495+00:00",
       "content_hash": "sha256:5b830ac2533ac0d83a3b7a9ee1d889b474956da46ce363ac37d9384594e71eaf"
     },
     {
       "question_id": "d1738665-265d-4d64-af2e-2de61f6a64ea",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "A 12-story office building is designed with 4 elevators at 2.0 m/s, RTT = 100 s, peak population = 1,500 persons, yielding HC = 12.4% (acceptable). A delay causes the contractor to substitute slower 1.75 m/s elevators, increasing RTT to 115 s (15% increase). Assuming peak population and peak factor remain fixed, what is the impact on interval and HC?",
+      "text": "What does interval mean in lobby dispatch analysis?",
       "options": [
         {
           "id": "a",
-          "text": "A: Interval increases to 28.75 s (acceptable); HC decreases to 10.8% (now unacceptable)"
+          "text": "The average time between car departures from the lobby."
         },
         {
           "id": "b",
-          "text": "B: Interval decreases to 25 s (excellent); HC increases to 14.3% (improved), suggesting a better performance"
+          "text": "The distance between guide rails."
         },
         {
           "id": "c",
-          "text": "C: Interval stays 25 s (independent of speed); HC unaffected, maintaining the original design parameters"
+          "text": "The machine-room floor area."
         },
         {
           "id": "d",
-          "text": "D: Both interval and HC improve; 1.75 m/s is preferred for this building due to enhanced efficiency"
+          "text": "The door opening width measured in meters."
         }
       ],
       "correct_option_id": "a",
@@ -632,13 +560,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Interval improves; HC improves as well—both metrics move favorably (false).",
-        "c": "Interval stays constant; ignores RTT increase; incorrect.",
-        "d": "Slower speed is worse; HC drops significantly, now below 12% minimum.",
-        "correct": "Original INT = 100/4 = 25 s. New INT = 115/4 = 28.75 s (still acceptable for office). Original trips/5 min = 300/100 = 3.0. New trips = 300/115 = 2.61. Original HC = (300 × 13 × 3.0)/1,500 = 12.4%. New HC = (300 × 13 × 2.61)/1,500 = 10.8%. RTT increase directly reduces trips/5 min and HC, worsening capacity even as interval remains acceptable.",
-        "takeaway": "Speed downgrade is a latent risk during procurement; engineers must verify HC remains ≥12% after any RTT changes. A 15% RTT increase yields ~2% HC reduction."
-      },
+      "rationale": "The average time between car departures from the lobby. This answer matches Salvan Utilities 2 refined markdown lines 13437-13445.",
       "explanation": null,
       "code_citation": "RTT Sensitivity Analysis; Speed Impact on Interval & HC (Advanced Design Section)",
       "bloom_level": "analyze",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-002-08-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.173486+00:00",
       "content_hash": "sha256:0e7b077af1b861520ce5bec9a3ea6096603a99c3a6ae1fe07a9073098eafb769"
     },
     {
       "question_id": "677c6cb9-ab39-43f9-9f46-7507da6183fc",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "A 10-story residential building (240 units, 4 persons/unit, 70% peak) has been designed with 2 elevators (RTT = 90 s). Interval = 45 s and HC = 13.8%, both acceptable. Post-construction, the building adds a penthouse floor (+1 floor) and converts 40 units to shared office space (changing 40 units from residential 4 persons to 8 persons/office). Recalculate peak population and determine if the 2-elevator design remains valid. What recommendation would you make?",
+      "text": "Which statement best describes handling capacity?",
       "options": [
         {
           "id": "a",
-          "text": "A: New peak = 1,152 persons; HC drops to 9.8%; inadequate—add a 3rd elevator."
+          "text": "It is independent of car capacity."
         },
         {
           "id": "b",
-          "text": "B: New peak = 1,040 persons; HC = 11.2%; marginally acceptable but risky for high-occupancy days."
+          "text": "It is governed by car passenger load and the interval at which cars serve the lobby."
         },
         {
           "id": "c",
-          "text": "C: New peak = 960 persons; HC = 13.1%; design remains valid; 1-floor addition has negligible impact."
+          "text": "It depends only on cab interior finish."
         },
         {
           "id": "d",
-          "text": "D: Building occupancy unchanged (total units 240); only floor height increases; design remains valid."
+          "text": "It is the same for every occupancy type."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Overestimates peak population; applies 85% to all residents, not just offices.",
-        "c": "Underestimates impact; 11.2% HC is below acceptable and unreliable.",
-        "d": "Ignores the unit-type conversion; office space has higher occupancy than residential, increasing peak significantly.",
-        "correct": "Original: 240 units × 4 persons/unit = 960 persons. Peak = 960 × 0.70 = 672 persons. After: 200 residential units × 4 + 40 office units × 8 = 800 + 320 = 1,120 persons. Peak (blended) ≈ 200×4×0.70 + 40×8×0.85 (office factor) = 560 + 272 = 832 persons (~1,040 conservative estimate with lower residential diversity). Original HC = (300 × 13 × 3.33) / 672 ≈ 13.8%. New HC = (300 × 13 × 3.33) / 1,040 ≈ 9.0% (assuming RTT unchanged). Below 12% minimum; 3rd elevator required.",
-        "takeaway": "Post-construction modifications (conversion, occupancy changes) trigger traffic re-analysis; a design valid before changes may fail after. Always recalculate HC and interval when building use changes."
-      },
+      "rationale": "It is governed by car passenger load and the interval at which cars serve the lobby. This answer matches Salvan Utilities 2 refined markdown lines 13461-13535.",
       "explanation": null,
       "code_citation": "Traffic Analysis Sensitivity; Inverse Problem & Design Modifications (Article Section)",
       "bloom_level": "evaluate",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-002-08-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.062001+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.172597+00:00",
       "content_hash": "sha256:a6bc1e7b1c92e4cbafc1333a2a9dc0eb13454aa70592a23cbee43e14715a7f92"
     },
     {
       "question_id": "c03c533e-357d-40f9-9f1a-eb7b54b96950",
       "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
       "topic_id": "202db985-47a6-4104-baf2-450e2d073dea",
-      "text": "A design engineer is sizing elevators for a 30-story Makati office tower (18,000 m² office, 85% peak). Initial calculation yields 8 elevators at 2.5 m/s, RTT = 160 s, HC = 12.1% (minimal margin). The developer asks: 'Can we save cost by using 1.75 m/s elevators instead?' Show your reasoning for the engineer's response.",
+      "text": "Why must elevator traffic analysis be coordinated with building space?",
       "options": [
         {
           "id": "a",
-          "text": "A: Speed downgrade increases RTT by ~25% to 200 s; HC drops to ~9.7%; design fails. Recommend keeping 2.5 m/s or adding a 9th elevator."
+          "text": "Traffic analysis has no effect on sections or structure."
         },
         {
           "id": "b",
-          "text": "B: Speed reduction saves operating energy; HC impact is negligible (< 1%); proceed with 1.75 m/s and 8 elevators, as the cost savings are substantial"
+          "text": "Machine rooms are only tenant storage areas."
         },
         {
           "id": "c",
-          "text": "C: Downgrading speed reduces RTT, improving HC to 15.2%; cost savings are significant without performance loss, making it a viable option"
+          "text": "Pit depth, hoistway dimensions, overhead clearance, penthouse size, loads, and machine-room needs affect the design."
         },
         {
           "id": "d",
-          "text": "D: Both speeds are equivalent per ASME A17.1; choice is purely aesthetic; use 1.75 m/s for cost control, as it aligns with project budget constraints"
+          "text": "Hoistway dimensions are chosen after finishes are installed."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Operating energy savings exist but don't justify compromised performance; not the primary constraint.",
-        "c": "Speed downgrade increases RTT and worsens HC; inverse of the claim.",
-        "d": "ASME and PD 1096 do not treat speeds as equivalent; speed choice is a critical design variable.",
-        "correct": "Speed reduction 2.5 → 1.75 m/s decreases elevator speed by 30%, increasing RTT proportionally (approximately 25–30%). New RTT ≈ 160 × 1.30 = 208 s. Trips/5 min: original 300/160 = 1.875; new = 300/208 = 1.44. HC scales with trips: new HC ≈ 12.1% × (1.44/1.875) = 12.1% × 0.77 ≈ 9.3% (below 12%). Design fails. Recommendation: retain 2.5 m/s, add 9th elevator (HC ≈ 13.6%), or accept risk.",
-        "takeaway": "Cost pressure must not override performance compliance; HC sensitivity to speed is severe (~1% speed change ≈ 1% HC impact). Always recalculate before downgrading."
-      },
+      "rationale": "Pit depth, hoistway dimensions, overhead clearance, penthouse size, loads, and machine-room needs affect the design. This answer matches Salvan Utilities 2 refined markdown lines 15087-15100.",
       "explanation": null,
       "code_citation": "RTT Sensitivity Analysis; Speed Impact & Inverse Design; Example 2 Remediation Strategy (Article Section)",
       "bloom_level": "evaluate",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-002-08-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.163049+00:00",
       "content_hash": "sha256:3c81f199481181347d4ad20ace9f042ad39f85d3527e2618ad198763af7dd0da"
     }
   ]

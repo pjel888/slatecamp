@@ -1,0 +1,508 @@
+{
+  "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:31e431812b86baf51c1320013b0a57b85684e3cbf9af16f8bcaa7258da748ba1",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "174bfeeb-cf2f-478f-821a-856a565ac2ae",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "Why is maintaining confidentiality of bid information until award critical?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It helps the architect negotiate lower prices by leveraging undisclosed bid information"
+        },
+        {
+          "id": "b",
+          "text": "It prevents discrimination against certain bidders, ensuring a fair and unbiased selection process"
+        },
+        {
+          "id": "c",
+          "text": "Disclosing bid values or recommendations before award creates legal liability and undermines fair procurement"
+        },
+        {
+          "id": "d",
+          "text": "It allows the owner time to change evaluation criteria, which can affect the fairness of the bidding process"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly suggests confidentiality aids negotiation; bids are sealed and fixed, not negotiable.",
+        "b": "Inverts the relationship; confidentiality supports fairness, but the core issue is legal liability.",
+        "d": "Wrongly suggests post-bid changes to criteria; criteria are fixed before bidding to ensure fairness.",
+        "correct": "Premature disclosure of bid information violates procurement transparency principles and exposes the architect and owner to legal challenges.",
+        "takeaway": "Confidentiality until award protects procurement integrity and prevents legal liability from bid protests."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3320e58c35754d8609f836fa35ee55c16fae5ed377102eea218c7d93877f2dd6"
+    },
+    {
+      "question_id": "443fe14f-3642-4f1e-a5a8-82ae2f807495",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "Who has the final authority to award the contract?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect"
+        },
+        {
+          "id": "b",
+          "text": "The owner"
+        },
+        {
+          "id": "c",
+          "text": "The lowest bidder"
+        },
+        {
+          "id": "d",
+          "text": "The engineer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses advisory recommendation with final decision; Architect's role is to recommend, not decide.",
+        "c": "Assumes lowest bidder automatically wins; Owner makes final selection based on evaluation criteria.",
+        "d": "Misidentifies the decision-maker; Engineer may consult but does not have award authority.",
+        "correct": "The owner makes the final contract award decision, though the owner typically follows the architect's recommendation.",
+        "takeaway": "Owner has final contract award authority, independent of Architect's recommendation."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b1e956d42e88b63f85ace22ac89f46ddaed047602515b8dbb6eca77ef6ec1f0c"
+    },
+    {
+      "question_id": "cf781362-9e6f-4e39-acb8-1647796c7631",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What are non-responsive bids and how should they be handled?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bids from contractors with no experience; they should be encouraged to resubmit after gaining relevant experience"
+        },
+        {
+          "id": "b",
+          "text": "Bids that fail to meet mandatory requirements; they should typically be rejected during evaluation"
+        },
+        {
+          "id": "c",
+          "text": "Bids submitted late; they should be accepted if feasible, provided they meet all other criteria"
+        },
+        {
+          "id": "d",
+          "text": "Bids with prices below the engineer's estimate; they should be automatically awarded unless there are concerns about feasibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses inexperience with non-responsiveness; non-responsiveness refers to failure to meet contract terms.",
+        "c": "Treats timing issue as non-responsiveness; late bids are rejected for deadline violation, not non-responsiveness.",
+        "d": "Reverses the logic; below-estimate prices are not grounds for automatic award or special treatment.",
+        "correct": "Non-responsive bids do not meet the contract's mandatory requirements and are typically rejected to maintain procurement integrity.",
+        "takeaway": "Non-responsive bids fail mandatory requirements and are rejected; they're not evaluated competitively."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a88d4f1c660773f95bdadfdd07ea6698e288a7370d6345c3dc0aa16b228d4166"
+    },
+    {
+      "question_id": "d2435813-0af3-4fd6-950f-6103d6e980a6",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What should the architect do if recommending a higher-priced proposal over a lower bidder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simply accept the lowest bid without explanation, as it is the most cost-effective option"
+        },
+        {
+          "id": "b",
+          "text": "Justify the recommendation clearly based on established evaluation criteria"
+        },
+        {
+          "id": "c",
+          "text": "Keep the justification confidential from the owner, to avoid potential conflicts"
+        },
+        {
+          "id": "d",
+          "text": "Revise the evaluation criteria to support the higher bid, ensuring it aligns with project goals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assumes lowest bid must always be selected; evaluation criteria may justify higher-priced bids.",
+        "c": "Wrongly conceals the rationale; Owner must understand the justification for non-lowest-bid selections.",
+        "d": "Fundamentally undermines integrity; Architect must apply fixed pre-bid criteria, not revise them post-bid.",
+        "correct": "When selecting a proposal other than the lowest bid, the architect must provide clear justification based on the pre-established evaluation framework.",
+        "takeaway": "Non-lowest bid recommendations require clear written justification based on pre-established criteria."
+      },
+      "explanation": "Assumes lowest bid must always be selected; evaluation criteria may justify higher-priced bids. Wrongly conceals the rationale; Owner must understand the justification for non-lowest-bid selections. Fundamentally undermines integrity; Architect must apply fixed pre-bid criteria, not revise them post-bid. When selecting a proposal other than the lowest bid, the architect must provide clear justification based on the pre-established evaluation framework. Non-lowest bid recommendations require clear written justification based on pre-established criteria.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T15:09:25.350721+00:00",
+      "content_hash": "sha256:54db3261e19a5f4c09c359e801689e3e960a07090a12023c1a16d3363fd2d2ea"
+    },
+    {
+      "question_id": "9124c3a1-056f-41c9-b9ba-6a437ce67af1",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "Under what circumstances may the architect recommend a proposal other than the lowest bid without violating professional standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect never recommends anything but the lowest bid, as it is the most cost-effective option"
+        },
+        {
+          "id": "b",
+          "text": "When the lowest bid fails to meet technical requirements or when superior qualifications or methodology justify the higher price based on pre-established evaluation criteria"
+        },
+        {
+          "id": "c",
+          "text": "When the architect personally prefers the higher-priced bidder's approach, which is subjective and not typically justified"
+        },
+        {
+          "id": "d",
+          "text": "Only if the owner initially requested the higher price, which is rare and usually not aligned with standard practices"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly assumes lowest bid requirement; evaluation criteria may validly prioritize quality, experience, or capability.",
+        "c": "Uses personal preference, not objective criteria; recommendations must be justified by pre-established evaluation framework.",
+        "d": "Requires owner pre-approval; Architect autonomously makes recommendation based on established evaluation criteria.",
+        "correct": "The architect may recommend a higher-priced bid if the evaluation criteria—established before bid opening—support selection based on technical merit, qualifications, or methodology.",
+        "takeaway": "Higher-priced bids may be recommended when pre-established criteria support selection on technical merit or qualifications."
+      },
+      "explanation": "Incorrectly assumes lowest bid requirement; evaluation criteria may validly prioritize quality, experience, or capability. Uses personal preference, not objective criteria; recommendations must be justified by pre-established evaluation framework. Requires owner pre-approval; Architect autonomously makes recommendation based on established evaluation criteria. The architect may recommend a higher-priced bid if the evaluation criteria—established before bid opening—support selection based on technical merit, qualifications, or methodology. Higher-priced bids may be recommended when pre-established criteria support selection on technical merit or qualifications.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T15:09:25.486333+00:00",
+      "content_hash": "sha256:02905a83e06368396ea117ea48cdb588e2e4784f4b4ce0cc5c80e5d9f02ed8b8"
+    },
+    {
+      "question_id": "ff9641df-b72b-429e-bde7-e91122852770",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What is a key responsibility of the architect before bids are opened?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To predict which bidder will submit the lowest price, based on historical data and market trends."
+        },
+        {
+          "id": "b",
+          "text": "To establish a clear evaluation framework ensuring consistency across all submissions"
+        },
+        {
+          "id": "c",
+          "text": "To communicate privately with each bidder about evaluation criteria, ensuring transparency and fairness."
+        },
+        {
+          "id": "d",
+          "text": "To determine the contract price in advance, considering all potential variables and contingencies."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Impossibly assumes price prediction; Architect establishes evaluation methodology, not price forecasts.",
+        "c": "Violates fairness by allowing selective disclosure; all bidders must have equal information.",
+        "d": "Wrongly assumes contract price is predetermined; price is determined through competitive bidding.",
+        "correct": "The architect must establish evaluation criteria before opening bids to ensure fair and consistent assessment of all proposals.",
+        "takeaway": "Pre-bid evaluation framework establishes fair, transparent criteria applied equally to all bidders."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9bced19709d7f5ae082087fcd1b4299ebc44934e2ba3dfce07d71f640469ef1f"
+    },
+    {
+      "question_id": "1689a555-7d79-4bb4-8179-6db9174c0a3a",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What should the architect document regarding the bid evaluation process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the final recommendation, excluding any intermediate evaluations or discussions"
+        },
+        {
+          "id": "b",
+          "text": "All proposals, evaluation methodology, scoring analysis, and justification for the recommendation"
+        },
+        {
+          "id": "c",
+          "text": "Only the prices of all bids, without any additional context or analysis"
+        },
+        {
+          "id": "d",
+          "text": "Information about bidders who submitted proposals but were not recommended, including reasons for their exclusion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical supporting documentation; methodology and analysis justify the recommendation.",
+        "c": "Captures only financial data; documentation must include technical scores, qualifications, and compliance findings.",
+        "d": "Focuses only on rejected bidders; documentation must include all submissions and scoring data.",
+        "correct": "Complete documentation of evaluation records demonstrates compliance with fair procurement practices and protects against bid protests.",
+        "takeaway": "Comprehensive documentation of all proposals, methodology, scoring, and justification protects against protest."
+      },
+      "explanation": "Omits critical supporting documentation; methodology and analysis justify the recommendation. Captures only financial data; documentation must include technical scores, qualifications, and compliance findings. Focuses only on rejected bidders; documentation must include all submissions and scoring data. Complete documentation of evaluation records demonstrates compliance with fair procurement practices and protects against bid protests. Comprehensive documentation of all proposals, methodology, scoring, and justification protects against protest.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T15:09:25.622054+00:00",
+      "content_hash": "sha256:b1c8768ea016e571db2aa1a0146853a83ac40d2cf87371e8d8584351cb905182"
+    },
+    {
+      "question_id": "3c59790f-1023-4ec7-baf0-c3d766f4bed1",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What is the primary role of the architect during the bid evaluation process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To make the final contract award decision, which is typically reserved for the client or owner"
+        },
+        {
+          "id": "b",
+          "text": "To assess proposals against established evaluation criteria and recommend the most advantageous bidder"
+        },
+        {
+          "id": "c",
+          "text": "To negotiate the contract price with all bidders, ensuring the best financial outcome for the project"
+        },
+        {
+          "id": "d",
+          "text": "To serve as the contractor's representative, which is not a typical role for the architect"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses architect's advisory role with final decision authority; Owner (not Architect) makes the contract award.",
+        "c": "Wrongly assigns negotiation authority to Architect; Architect evaluates fixed bids, does not negotiate price.",
+        "d": "Reverses the Architect's role; Architect works for the Owner, not the Contractor.",
+        "correct": "The architect evaluates bids objectively and makes a recommendation, but the owner retains final decision-making authority on contract award.",
+        "takeaway": "Architect recommends the most advantageous proposal; Owner makes the final award decision."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:81aed3e969892afd1c1d99f5aab2eefac69fbae9ef15bdaa7e9a9ae67d96392b"
+    },
+    {
+      "question_id": "0457399f-ff59-4441-a4f5-b6f7195eb1c7",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What is the relationship between the notification of award and the formal contract execution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are the same document with identical legal effect, meaning the notification itself constitutes binding acceptance under Philippine procurement law"
+        },
+        {
+          "id": "b",
+          "text": "The notification is issued by the owner after accepting the architect's recommendation and formally communicates intent to execute the contract with the selected bidder"
+        },
+        {
+          "id": "c",
+          "text": "The notification is issued by the contractor to the owner as a formal expression of willingness to undertake the project scope at the tendered price"
+        },
+        {
+          "id": "d",
+          "text": "The notification occurs only after the contract is fully executed and paid, serving merely as a record of the completed procurement transaction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Conflates Award notification with contract execution; they are sequential but distinct documents.",
+        "c": "Reverses direction; Owner notifies Contractor of award, not vice versa.",
+        "d": "Places Award after execution; Award precedes and conditions contract execution.",
+        "correct": "The notification of award formally communicates the owner's decision to execute the contract with the selected contractor, representing the transition from bid phase to contract phase.",
+        "takeaway": "Notice of Award is the Owner's formal notification before contract execution; it signals intent, not completion."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e206589dcc550bf291aa3fe04948b6a74c68886d0152fd6a57f96f4da93386d"
+    },
+    {
+      "question_id": "aef53a47-1122-49f6-a57f-202173f50fe4",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What must be included in a comprehensive bid evaluation framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the financial offer from each bidder, as it is the primary determinant of project cost."
+        },
+        {
+          "id": "b",
+          "text": "Financial evaluation, technical evaluation, contractor qualifications, and compliance assessment based on clear criteria"
+        },
+        {
+          "id": "c",
+          "text": "The personal references of each bidder's manager, which may provide insight into their professional reputation."
+        },
+        {
+          "id": "d",
+          "text": "Preference for bidders geographically closest to the project, which can reduce logistical challenges and costs."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Oversimplifies by focusing only on price; multi-criteria evaluation considers qualifications, methodology, and capability.",
+        "c": "Introduces irrelevant personal information; evaluation focuses on professional qualifications and project experience.",
+        "d": "Applies arbitrary geographic preference; evaluation criteria must be objective and documented in advance.",
+        "correct": "A proper evaluation framework examines financial viability, technical capability, contractor experience, and compliance with contract specifications.",
+        "takeaway": "Evaluation considers price, technical merit, qualifications, and compliance with contract requirements."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f97bacb02358fb43ff677b73daa648bfae613c9822340305fb2428f0a5d0292f"
+    }
+  ]
+}

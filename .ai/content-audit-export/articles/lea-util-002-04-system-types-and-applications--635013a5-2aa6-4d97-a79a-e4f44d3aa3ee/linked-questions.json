@@ -8,37 +8,31 @@
       "question_id": "b08e9bbb-d487-4826-85c8-ca15809b5b48",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "An HVAC designer is specifying a split-type system for a 400 m² south-facing office in Makati (high solar exposure). The quick-estimate method (500 BTU/hr per m² commercial) yields 200,000 BTU/hr = 16.7 TR base load. However, the designer estimates an additional 30% solar gain factor due to south-facing glazing (source: ASHRAE solar load). Calculate the adjusted cooling load in TR and determine if the specified 18 TR system is adequate, considering a 10% oversizing allowance per PD 1058.",
+      "text": "Which starting point is source-safe for HVAC system selection under the checked DOE family?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Determine cooling loads using accepted methods and local design conditions before selecting equipment."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Select equipment first, then calculate loads only if space remains."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Use the same tonnage for every building of the same height."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "Base selection only on the color of the outdoor unit."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "18 TR is adequate; solar gain factor is already embedded in 500 BTU/hr per m² commercial estimate.",
-        "b": "Adjusted load = 19.2 TR (error: applied solar factor as additive 16.7 + 2.5 instead of multiplicative × 1.30).",
-        "d": "Adjusted load = 28 TR; recommend upgrading to 35 TR system (error: doubled the solar adjustment to 60%, excessive and unsubstantiated).",
-        "correct": "Step 1: Base load = 400 m² × 500 BTU/hr per m² = 200,000 BTU/hr = 16.7 TR (1 TR = 12,000 BTU/hr). Step 2: Solar gain adjustment = +30% = 16.7 TR × 1.30 = 21.7 TR design load. Step 3: PD 1058 recommends 10–20% oversizing allowance for part-load efficiency and future expansion. At lower end (10%), specify 21.7 × 1.10 = 23.9 TR ≈ 24 TR recommended. Step 4: Evaluation: 18 TR is UNDERSIZED by 5.9 TR (25% shortfall vs. 24 TR recommendation). Result: Inadequate system; will struggle in peak summer (35°C+ outdoors), cycling continuously, poor dehumidification in high-humidity periods. Recommend upgrading to 25–30 TR split-type (two 12.5–15 TR units) or single 24 TR VRF outdoor unit. Source: ALE-UTIL-002-04 quick estimate + solar adjustment; PD 1058 Section 3.2 oversizing guidance.",
-        "takeaway": "South-facing buildings in tropical climate require explicit solar gain adjustment (+20–40% per ASHRAE solar load tables); combined with PD 1058 oversizing (10–20%), total adjustment can reach 40–60% above quick-estimate base, significantly affecting system selection—undersizing by 20–25% is common design error leading to inadequate cooling and humidity control."
-      },
+      "rationale": "The checked DOE family directs designers to use accepted load-calculation methods and indoor/outdoor design conditions.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Cooling Load Estimation; ASHRAE 90.1 solar gain factors; PD 1058 Section 3.2 oversizing allowance",
       "bloom_level": "analyze",
@@ -51,30 +45,30 @@
       "model_id": "ALE-UTIL-002-04-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.838337+00:00",
       "content_hash": "sha256:a9061a920b56bc5c2281314fdb003b2c18a516ccb9dc64a3a3aed304c30b46fc"
     },
     {
       "question_id": "f84628ed-5627-410a-aae1-51947dbcd81a",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A MEP design firm is documenting HVAC commissioning procedures for a new VRF system (80 TR total, 4 × 20 TR outdoor units, 20 indoor units, 150 m refrigerant line, R-32 charge 2.1 kg per outdoor unit) in a 6-story Pasay office tower. Per PD 1096 Rule VII Section 704 and ASHRAE 378, what are the THREE MANDATORY commissioning steps that must occur BEFORE system handover to the building owner? Specify test parameters, acceptance criteria, and explain why each step is critical for Philippine tropical operation.",
+      "text": "Which DOE sizing principle best fits large central HVAC plants?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Size close to the calculated load and consider multiple units or staging for part-load operation."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Oversize all chillers because part-load operation is not a design concern."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Ignore future load reductions from envelope and lighting measures."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "Operate all chillers continuously regardless of demand."
         }
       ],
       "correct_option_id": "a",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Only visual inspection of all joints, connections, and insulation wrapping is required; PD 1096 commissioning is limited to aesthetic/installation verification (incorrect—visual inspection alone misses pinhole leaks, internal moisture, and latent performance; PD 1096 Rule VII Section 704 explicitly mandates testing).",
-        "c": "Charge verification and visual inspection are sufficient; leak testing and performance rating are optional 'value-add' steps for premium projects, not mandatory in PD 1096 (incorrect—PD 1096 Section 704 lists testing as mandatory; leak test and performance rating are required for compliance, not optional).",
-        "d": "Three steps are: (1) Site documentation review (check purchase orders, submittals, O&M manuals), (2) Electrical safety inspection (verify 220V/60Hz supply, breaker sizing, grounding), (3) Refrigerant type confirmation (ensure R-32, not R-410A mixed in). Thermal commissioning (charge, leak, performance tests) is delegated to manufacturer's field service team post-handover (incorrect—PD 1096 and ASHRAE 378 place charge, leak, and performance commissioning on MEP contractor (field engineer) before handover; manufacturer field service is for warranty/training only, not primary commissioning responsibility; electrical/documentation checks are supporting, not primary commissioning steps).",
-        "correct": "THREE MANDATORY COMMISSIONING STEPS (PD 1096 Rule VII Section 704; ASHRAE 378):\n\n1. REFRIGERANT CHARGE VERIFICATION (Mandatory Step 1)\nTest: Weigh actual refrigerant charge in each outdoor unit against manufacturer nameplate specification (per ASHRAE 378 or equivalent blow-down recovery procedure).\nAcceptance Criteria: Charge within ±10% of nameplate (e.g., 2.1 kg nameplate ±0.21 kg = 1.89–2.31 kg actual).\nWhy Critical for Tropical Operation: R-32 in Philippines operates at high ambient (32–34°C). Undercharge (<1.89 kg) reduces cooling capacity and increases compressor discharge temperature, risking oil breakdown and bearing failure in weeks. Overcharge (>2.31 kg) elevates system pressure beyond relief valve settings, risking compressor damage and A2L flammability hazard (charge exceeds PD 1058 Section 7.2 safety limits without secondary containment). Tropical high-humidity (70–90% RH) accelerates refrigerant moisture ingress if system not sealed; charge verification confirms no air/moisture contamination.\n\n2. REFRIGERANT LINESET LEAK TEST (Mandatory Step 2)\nTest: Pressure decay test per ASHRAE 378 (pressurize lineset to 1.5× design pressure with dry nitrogen, measure pressure drop over 15 minutes; also acceptable: electronic trace gas detection with ultrasonic or infrared probe at all joints).\nAcceptance Criteria: Pressure decay <0.5 bar per minute (equivalent to <3 grams refrigerant loss per year). No leaks detected at joints, coil connections, or vibration-prone bends.\nWhy Critical for Tropical Operation: Tropical humidity (80% RH) and salt-spray (coastal areas) accelerate copper lineset corrosion externally; internal moisture ingress causes acid formation, sludge buildup, and compressor bearing seizure. 150 m lineset in 6-story tower has ~30–40 joint connections (indoor-to-outdoor runs per floor, distributed lines). A single pinhole leak (0.1 mm) on suction line loses 1–2 kg refrigerant in 6–12 months undetected, gradually degrading cooling; PD 1096 requires pressure test before refrigerant charge to isolate mechanical integrity from thermal/electrical issues.\n\n3. PERFORMANCE RATING TEST (Mandatory Step 3)\nTest: Operate system at design conditions (outdoor ambient 33°C ±1°C, indoor 28°C setpoint, 50% loading minimum), measure: (a) Cooling output (BTU/hr, TR), (b) Input power (kW), (c) calculated COP, (d) condensate drain rate (L/hr), (e) compressor discharge temperature, (f) suction line temperature drop at indoor coil (indicates superheat, latent control).\nAcceptance Criteria: (1) Cooling output ≥95% of rated capacity; (2) COP ≥3.6 (≥95% of 3.8 nameplate, accounting ±3% measurement variance); (3) Condensate drain functional, measured rate ≥0.5 L/hr (confirms latent capacity); (4) Suction line superheat 8–15°C above dew point (indicates proper latent control, prevents coil freeze at part-load); (5) Compressor discharge <60°C (normal operation; >65°C indicates overcharge or valve issue).\nWhy Critical for Tropical Operation: Philippine buildings operate in 70–90% RH, 32–34°C ambient continuous. A VRF system undersized by 5–10% in cooling capacity (measured 90% of rated) is masked during commissioning at partial load; once occupied, system struggles in peak load (35°C+ outdoors, high occupancy), cycling continuously, failing to maintain 24°C setpoint or 50–60% RH (mold, condensation risk). Latent control test (superheat measurement, condensate rate verification) is often omitted in Philippine practice but critical in tropical climate; undersized latent capacity (superheat >20°C, drain rate <0.5 L/hr) results in insufficient dehumidification, 70%+ indoor RH, and mold within 3–6 months. Compressor discharge temperature >65°C indicates A2L R-32 system overpressurization (charge/control fault), dangerous in confined spaces (flammability risk per ISO 5149 A2L protocol).\n\nSummary: Charge verification → Lineset leak test → Performance rating test are sequential (logical order): First verify refrigerant integrity (charge weigh-in), confirm system sealed (pressure decay), then validate thermal/latent performance under load. Omitting any step risks: (1) No charge verification: Silent refrigerant loss over months; (2) No leak test: Lineset pinhole discovered after occupancy, water damage; (3) No performance test: Undersized cooling/latent capacity discovered too late, mold/occupant complaints domino effect in tropical climate.\n\nSource: PD 1096 Rule VII Section 704; ASHRAE 378 Refrigerant Leak Detection Standard; ALE-UTIL-002-04 Module Commissioning Checklist.",
-        "takeaway": "PD 1096 Rule VII Section 704 and ASHRAE 378 mandatory commissioning for tropical VRF systems: (1) Charge verification (±10% of nameplate) protects against undercharge/overcharge in high-ambient operation; (2) Lineset leak test (pressure decay <0.5 bar/min) ensures system sealed against tropical moisture/corrosion ingress; (3) Performance rating (COP ≥3.6, superheat 8–15°C, drain rate ≥0.5 L/hr) validates latent cooling and dehumidification critical for 70–90% RH Philippines. Omitting any step risks silent refrigerant loss, mold growth, or occupant comfort failure post-handover."
-      },
+      "rationale": "The DOE guideline discusses sizing close to load, considering load reductions, using multiple chiller units, and managing part-load operation.",
       "explanation": null,
       "code_citation": "PD 1096 Rule VII Section 704; ASHRAE 378; LEA-UTIL-002-04 Module Commissioning Checklist",
       "bloom_level": "analyze",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-002-04-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.840496+00:00",
       "content_hash": "sha256:17d3643d6873d7c89490f033bbae49ec53a220916f67be2740c23ebb4adccf41"
     },
     {
       "question_id": "50fd5833-bf12-4c70-b2e4-70188902e3cf",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A VRF system (rated 3.8 COP at design load 25°C outdoor, 28°C indoor) is operating at 50% capacity in tropical climate with 25°C outdoor ambient. ASHRAE data shows VRF COP increases to 4.2 at 50% part-load. Compare energy consumption vs. a split-type system (rated 3.2 COP, no part-load improvement) operating the same cooling output. What is the annual energy savings percentage for the VRF system?",
+      "text": "What source-safe role do controls and VSDs play in HVAC selection?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "They support energy-efficient operation through monitoring, variable-speed fans, pumps, and zone controls where appropriate."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "They replace the need for load calculations."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "They are forbidden for HVAC systems in buildings."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "They apply only to architectural finishes."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5% savings (error: assumed split-type COP also improves to 3.5 at part-load, only 50% of VRF improvement).",
-        "b": "15% savings (error: used average COP improvement (3.8+4.2)/2 = 4.0 for both systems, ignoring split-type fixed 3.2).",
-        "d": "35% savings (error: incorrectly doubled the difference: (4.2 − 3.2) ÷ 3.2 = 31%, then rounded up excessively).",
-        "correct": "Step 1: For 100 TR cooling output at 50% load = 50 TR actual output. Step 2: VRF input at 50% = 50 TR ÷ 4.2 COP = 11.9 TR input ≈ 42 kW. Step 3: Split-type input at same 50 TR = 50 TR ÷ 3.2 COP = 15.6 TR input ≈ 55 kW. Step 4: Energy ratio = VRF 42 kW ÷ Split 55 kW = 0.764 = 23.6% SAVINGS for VRF. VRF superiority at part-load is critical in tropical climate where buildings operate below design capacity most of the year (intermittent occupancy, weather-dependent loads). This part-load advantage justifies VRF premium capital cost (~₱48,000/TR vs. ₱35,000/TR split) with 5–8 year payback. Source: ALE-UTIL-002-04 VRF section; ASHRAE part-load efficiency standards.",
-        "takeaway": "VRF part-load COP advantage (4.2 vs. 3.2 split at 50% load) yields ~24% seasonal energy savings in tropical intermittent-cooling climate; this efficiency gain is primary economic driver for VRF selection in medium-to-large buildings."
-      },
+      "rationale": "The checked DOE family supports monitoring/control, fan VSDs, pumping control, and zone/duct control as part of HVAC energy design.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module VRF Systems section; ASHRAE efficiency data; tropical climate operation patterns",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-002-04-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.837291+00:00",
       "content_hash": "sha256:fa80f9cc6709aa2fe893afd3fcbc889fd390b61420607ce4ef20939ed8755fb1"
     },
     {
       "question_id": "4b714ff0-dac0-4f73-8bef-4d8ff6bc5c89",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A retrofit project is converting a 1,500 m² commercial building from aging R-22 split-type systems to new R-32 mini-VRF units. Philippine regulations specify that R-32 (A2L classification) charge size ≤2 kg per 220V residential unit WITHOUT secondary containment (per PD 1058 Section 7.2). The specified mini-VRF outdoor unit is rated 12 TR capacity and requires 3.2 kg R-32 charge per manufacturer nameplate. Identify the constraint and recommend a solution.",
+      "text": "Which LEA statement is source-safe when comparing room units and central systems?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Room units can serve limited rooms, while central chilled-water and air-handling systems suit larger coordinated building loads."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Window units are always the correct choice for every building scale."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Central cooling never needs air handling or chilled-water coordination."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "The system type is independent of load, scale, and operation."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "No constraint; R-32 charge limits do not apply to commercial buildings >500 m², only residential units.",
-        "c": "Constraint resolved by reducing operating pressure 15% below nameplate; this keeps charge in liquid phase, reducing flammability risk without containment cost (incorrect—reducing pressure changes phase but does not reduce absolute mass charge).",
-        "d": "Install the 3.2 kg charge without containment; A2L flammability is negligible at <3.5 kg (incorrect—PD 1058 ≤2 kg limit is strict regulatory requirement, no exceptions without containment).",
-        "correct": "Constraint: 12 TR mini-VRF unit requires 3.2 kg R-32 charge, but PD 1058 limits residential/commercial 220V systems to 2 kg without secondary containment (per A2L flammability safety protocol, ISO 5149). The 3.2 kg charge exceeds the 2 kg limit by 1.2 kg. Solutions: (1) Install secondary containment system (sealed pan with automatic shut-off valve in case of leak) per ISO 5149 Annex H, allowing charge up to ~5 kg; estimated cost ₱25,000–40,000 per unit, OR (2) Specify a smaller outdoor unit (8–10 TR) with lower charge requirement (1.8–2.0 kg), accepting slightly reduced cooling capacity and requiring 2 outdoor units instead of 1 (adds cost but avoids containment infrastructure). Recommended approach: For 1,500 m² building (750 TR typical load), split into dual 10 TR VRF outdoor units (20 TR total) with secondary containment on each unit (~₱80,000 total containment cost). This maintains capacity, complies with PD 1058, and provides redundancy (one unit failure does not halt entire building cooling). Source: PD 1058 Section 7.2 R-32 flammability safety; ISO 5149 A2L charge limits and containment requirements.",
-        "takeaway": "R-32 A2L flammability constraints significantly impact commercial retrofit projects; ≤2 kg charge without containment limits mini-VRF to ~8–10 TR capacity; larger installations require secondary containment (cost ~₱25–40K/unit) or segmentation into multiple smaller units—design trade-offs between capital cost, system reliability, and regulatory compliance."
-      },
+      "rationale": "The checked Salvan family discusses window or through-the-wall room units and central cooling with chilled water and air-handling coordination.",
       "explanation": null,
       "code_citation": "PD 1058 Section 7.2; ISO 5149 A2L Flammability Safety Standard; LEA-UTIL-002-04 Refrigerant Standards and Phaseout section",
       "bloom_level": "analyze",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-002-04-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.835149+00:00",
       "content_hash": "sha256:d6688be45f33f54967c3a6b4a2794bcf1fdc1ad41d6bf7845e75f49237922415"
     },
     {
       "question_id": "baefce67-c8ea-40b6-bc7c-ce21d6852989",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A centrifugal chiller is being sized for a 10-story office building in Makati with total cooling load of 200 TR. The chiller is rated at 4.8 COP (full-load design condition). Calculate annual electrical energy consumption if the building operates 10 hours/day, 250 days/year, assuming 70% average part-load capacity utilization over the year.",
+      "text": "Which starting point is source-safe for HVAC system selection under the checked DOE family?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Determine cooling loads using accepted methods and local design conditions before selecting equipment."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Select equipment first, then calculate loads only if space remains."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Use the same tonnage for every building of the same height."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "Base selection only on the color of the outdoor unit."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "150 MWh (error: assumed 100% load factor and 8 hr/day instead of 10 hr/day with 70% utilization).",
-        "b": "320 MWh (error: used 4.8 COP as multiplier instead of divisor, inflating result).",
-        "c": "420 MWh (error: compounded 70% load factor twice, calculating 200 TR × 70% = 140 TR as input power).",
-        "correct": "Step 1: Full-load cooling capacity = 200 TR × 12,000 BTU/hr × (70% load factor) = 1,680,000 BTU/hr effective = 492 kW. Step 2: Full-load input power at 4.8 COP = 492 kW ÷ 4.8 = 102.5 kW. Step 3: Annual operating hours = 10 hr/day × 250 days = 2,500 hr/year. Step 4: Annual energy = 102.5 kW × 2,500 hr = 256.25 MWh ≈ 256 MWh. Alternative approach: 200 TR = 200 × 3.517 kW = 703.4 kW input at full load; at 70% = 492.4 kW × 2,500 hr ÷ 4.8 COP adjustment is redundant; direct calculation: 492.4 kW × 2,500 = 1,231 MWh. Recalculating with proper approach: 200 TR × 12,000 BTU/hr = 2,400,000 BTU/hr = 703.4 kW cooling output at full load. At 70% load = 492.4 kW cooling output. Input = 492.4 ÷ 4.8 = 102.5 kW. Annual = 102.5 × 2,500 = 256.25 MWh. Source: ASHRAE energy calculation standards.",
-        "takeaway": "Chiller annual energy estimation requires separating cooling output (TR × 12,000 BTU/hr) from electrical input (COP division), accounting for part-load utilization factor (70% in this case) representing typical office seasonal operation (lower load in cooler months, higher in peak summer)."
-      },
+      "rationale": "The checked DOE family directs designers to use accepted load-calculation methods and indoor/outdoor design conditions.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Chilled Water Systems section; ASHRAE Fundamentals Handbook energy calculations",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-UTIL-002-04-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.830892+00:00",
       "content_hash": "sha256:4f109c8caf167462149655e84692e15086922748369884b7febdb246c4e21f1b"
     },
     {
       "question_id": "4c64749f-c1ce-4479-b8c3-8d30e8d0527b",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A residential split-type unit (3 TR, COP 3.2) operates 6 hr/day, 365 days/year. Current electricity rate is ₱14/kWh. A more efficient VRF unit (equivleant 3 TR, COP 3.8) costs ₱150,000 additional capital investment. Calculate the simple payback period (years) for upgrading to VRF based on annual energy savings alone.",
+      "text": "Which DOE sizing principle best fits large central HVAC plants?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Size close to the calculated load and consider multiple units or staging for part-load operation."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Oversize all chillers because part-load operation is not a design concern."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Ignore future load reductions from envelope and lighting measures."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "Operate all chillers continuously regardless of demand."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "3.5 years (error: divided capital cost by monthly savings ₱1,717, not annual ₱20,600).",
-        "c": "10 years (error: underestimated energy difference; used COP difference (3.8 − 3.2) ÷ 3.2 = 18.75% savings instead of actual 21% savings).",
-        "d": "5.2 years (error: used wrong efficiency ratio; compared 3.8 ÷ 3.2 = 1.1875 as multiplier, not divisor).",
-        "correct": "Step 1: Cooling output = 3 TR × 12,000 BTU/hr = 36,000 BTU/hr = 10.55 kW. Step 2: Current split-type annual energy = 10.55 kW ÷ 3.2 COP × 6 hr × 365 = 7.2 MWh/year × ₱14,000/MWh = ₱100,800/year. Step 3: VRF annual energy = 10.55 kW ÷ 3.8 COP × 6 × 365 = 5.7 MWh/year × ₱14,000 = ₱80,200/year. Step 4: Annual savings = ₱100,800 − ₱80,200 = ₱20,600/year. Step 5: Simple payback = ₱150,000 capital ÷ ₱20,600 annual savings = 7.3 years ≈ 7.5 years. This is typical for residential VRF upgrade scenarios. Source: ALE-UTIL-002-04 Module energy cost examples.",
-        "takeaway": "VRF payback calculation: Energy savings = (Cooling output ÷ Old COP − Cooling output ÷ New COP) × Annual operating hours × Electricity rate; payback ~7–8 years typical for residential units, justifying upgrade in medium-to-long-term ownership scenarios."
-      },
+      "rationale": "The DOE guideline discusses sizing close to load, considering load reductions, using multiple chiller units, and managing part-load operation.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module energy cost example; Philippine electricity tariff averaging ₱12–15/kWh",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-002-04-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.842428+00:00",
       "content_hash": "sha256:5ff9dbca54da6acee3dee1a8635f1b15b20cd75b347c9e67d17838afc962a8dd"
     },
     {
       "question_id": "520b4771-7f25-464f-9304-e039cd2f9cb5",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A 3-story hotel annex in Iloilo City (tropical inland, 75–80% RH, no mechanical ventilation) is designed with chilled water system (30 TR centrifugal chiller, water-cooled condenser fed by single cooling tower). The fan-coil units are distributed across 3 floors with 50 m of condensate drain piping. Indoor design condition: 24°C, 55% RH target. Outdoor design: 32°C, 80% RH. Calculate the condensation rate (L/hr) if latent load is estimated at 8 kW, and specify the minimum condensate drain slope per PD 1058 to prevent backup and mold growth.",
+      "text": "What source-safe role do controls and VSDs play in HVAC selection?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "They support energy-efficient operation through monitoring, variable-speed fans, pumps, and zone controls where appropriate."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "They replace the need for load calculations."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "They are forbidden for HVAC systems in buildings."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "They apply only to architectural finishes."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Condensation rate = 1.5 L/hr (error: used 5.3 MJ/kg latent heat, double the actual ~2.45 MJ/kg).",
-        "b": "Condensation rate = 6.5 L/hr, minimum slope 1:200 (error: underestimated latent heat and overestimated permissible slope; 1:200 slopes to 25 cm over 50 m, inadequate for tropical humidity and mold prevention).",
-        "d": "Condensation rate = 12 L/hr (error: incorrectly assumed 8 kW converts directly to 8 L/hr without latent heat enthalpy division), slope 1:50 (excessive and impractical).",
-        "correct": "Step 1: Latent load = 8 kW (moisture removal energy). Step 2: Water latent heat of vaporization ≈ 2.45 MJ/kg at room temperature. Step 3: Condensation rate = 8 kW ÷ 2.45 MJ/kg = 8,000 J/s ÷ 2.45 × 10⁶ J/kg ≈ 3.3 kg/hr ≈ 3.3 L/hr (density water ≈ 1 kg/L). Step 4: For practical design, add 25–30% surge margin (coil cold-start condensation burst, high-humidity transients): 3.3 × 1.25 = 4.1 L/hr ≈ 5 L/hr minimum design capacity. Step 5: Condensate drain slope per PD 1058 Section 6.3: minimum ≥1:100 (1 cm drop per meter). For 50 m horizontal run: 50 m × (1 cm ÷ 100 cm) = 50 m × 0.01 = 0.5 m = 50 cm minimum elevation drop over the 50 m run. Install secondary drain pan (25 mm depth minimum) beneath all coils; P-trap at drain outlet to prevent backflow and siphoning. Iloilo high-humidity (75–80%) elevates mold risk; slope <1:100 results in ponding, biofilm growth, and drain blockage within 3–6 months. Source: PD 1058 Section 6.3 Tropical Climate Drainage; ALE-UTIL-002-04 Tropical Climate Considerations.",
-        "takeaway": "Tropical chilled water condensate drainage requires: (1) precise latent load to condensation rate conversion (÷ 2.45 MJ/kg latent heat), (2) PD 1058 minimum 1:100 slope (10 mm/meter) with 25% surge margin for coil burst transients, (3) secondary pan under all coils in 75%+ RH zones; failure to meet these specs results in drain blockage, mold growth, and water damage within 6 months in Philippine climate."
-      },
+      "rationale": "The checked DOE family supports monitoring/control, fan VSDs, pumping control, and zone/duct control as part of HVAC energy design.",
       "explanation": null,
       "code_citation": "PD 1058 Section 6.3; LEA-UTIL-002-04 Module Tropical Climate Considerations; ASHRAE psychrometric calculations",
       "bloom_level": "analyze",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-002-04-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.826290+00:00",
       "content_hash": "sha256:12cd69aa02f65e16305ad4807c1b1093aeb35ebf440fbe4ce23ee427262d7143"
     },
     {
       "question_id": "274ef48a-9dc8-40c8-9f47-96918b9b84bb",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A commercial office (400 m², 40 occupants, 20 kW equipment load, outdoor 33°C, indoor setpoint 24°C) requires load sizing. Calculate the sensible load from occupants using ASHRAE 62.1 (100 W/person office activity) and determine total sensible load including envelope + equipment.",
+      "text": "Which LEA statement is source-safe when comparing room units and central systems?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Room units can serve limited rooms, while central chilled-water and air-handling systems suit larger coordinated building loads."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Window units are always the correct choice for every building scale."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Central cooling never needs air handling or chilled-water coordination."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "The system type is independent of load, scale, and operation."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Sensible = 4 kW (error: counted only occupant load, ignoring envelope and equipment).",
-        "c": "Sensible = 112 kW (error: miscalculated envelope as 400 m² × 600 BTU/hr per m² and double-counted occupants).",
-        "d": "Sensible = 45 kW (error: used 400 BTU/hr per m² residential rate instead of 500 BTU/hr per m² commercial).",
-        "correct": "Step 1: Envelope sensible load = 400 m² × 500 BTU/hr per m² (commercial, source: ASHRAE 90.1) ÷ 3.412 ≈ 58.5 kW. Step 2: Occupant sensible load = 40 persons × 100 W/person (office activity, source: ASHRAE 62.1 Table 6.2.2.1) = 4 kW. Step 3: Equipment load = 20 kW (given). Step 4: Total sensible = 58.5 + 4 + 20 = 82.5 kW ≈ 83 kW. This calculation excludes latent load (occupant moisture, infiltration); latent would be ~24 kW (30–40% of sensible for tropical climate), bringing total to ~107 kW ≈ 30 TR. Source: ALE-UTIL-002-04 Module Inverse Computation section; ASHRAE 62.1 Table 6.2.2.1.",
-        "takeaway": "Commercial sensible load breakdown: envelope (~58%), occupants (~5%), equipment (~24%) sum to total sensible; must add latent load separately (30–40% of sensible in tropical climate) for complete cooling load sizing."
-      },
+      "rationale": "The checked Salvan family discusses window or through-the-wall room units and central cooling with chilled water and air-handling coordination.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Inverse Computation section; ASHRAE 62.1 Table 6.2.2.1; ASHRAE 90.1 Annex A",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-002-04-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.839373+00:00",
       "content_hash": "sha256:2c7e02b61daac35ca5002d6275dac6ad7a988e3420e91649cfe3dcbf871615c1"
     },
     {
       "question_id": "797db3fb-3617-4001-a5ec-5fee5c21a4a5",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A MEP engineer is comparing three HVAC system options for a 8,000 m² medium-high-rise office building in Cebu City (coastal salt-spray, 200 km/h typhoon risk, continuous occupancy 18 hr/day). Cooling load estimate: 600 TR. System options: (A) Split-type 12 units at 50 TR (₱35,000/TR capital), COP 3.2; (B) VRF 4 outdoor units at 150 TR (₱50,000/TR capital), COP 3.8; (C) Chilled water centrifugal chiller 600 TR (₱65,000/TR capital), COP 4.5 with 2 cooling towers. Calculate 10-year life-cycle cost (capital + energy, 80% annual utilization, ₱13/kWh electricity rate, 8,760 hr/yr). Account for typhoon resilience constraints (coastal salt-spray protection adds: split +₱2,000/unit, VRF +₱15,000/system, chiller cooling tower +₱500,000 structural hardening). Which system provides best economic and operational fit for this coastal high-rise application?",
+      "text": "Which starting point is source-safe for HVAC system selection under the checked DOE family?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Determine cooling loads using accepted methods and local design conditions before selecting equipment."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Select equipment first, then calculate loads only if space remains."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Use the same tonnage for every building of the same height."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "Base selection only on the color of the outdoor unit."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Option A (Split-type) best choice: Lowest capital (₱21M), simplest installation, no specialized technician training needed; coastal salt-spray protection cost (₱2K/unit) is minimal vs. VRF (₱15K). (Incorrect reasoning: underestimates energy cost dominance over 10-year horizon; ₱602M energy >> ₱15K VRF protection premium. Also fails COP 3.8 requirement and typhoon resilience with 12 outdoor units.)",
-        "c": "Option C (Chilled water) best choice: Lowest 10-year LCC ₱422.5M, highest COP 4.5, most efficient for 24/7 continuous operation. Coastal cooling tower protection (₱500K upfront) is one-time capital, recovers via 17-year operational life, not just 10 years. (Incorrect reasoning: Overlooks cooling tower structural vulnerability at 200 km/h typhoon wind (louver failure, vibration damage risk despite hardening); ignores ₱150K+/year water-side maintenance cost (corrosion, biofouling) that compounds over 10 years to ₱1.5M (not included in ₱422.5M LCC baseline). Phased commissioning impossible for chiller (8-12 month delay, occupancy revenue loss ₱2–5M assuming ₱250K/month occupancy rent × 6–10 month delay window).",
-        "d": "Option D (Hybrid VRF + Chiller): Best of both worlds—VRF for offices (COP 3.8), chiller for back-of-house (COP 4.5), total blended COP ~4.0. Phased commissioning possible, maximum zoning flexibility. Capital ₱30M (VRF 300 TR) + ₱13.5M (chiller 200 TR) = ₱43.5M. Annual energy ≈ (300 × 3.8 + 200 × 4.5) COP blended 4.0 = 3,289 MWh × ₱13K = ₱42.8M/yr. 10-year LCC ₱43.5M + ₱428M = ₱471.5M (better than VRF-only ₱509M). (Reasoning error: Hybrid does offer marginally better LCC and phased commissioning, but introduces dual-system complexity: separate refrigerant leak testing, water-side corrosion protection, control system integration (linking VRF and chiller setpoint logic adds ₱300–500K engineering cost + 2-month commissioning delay). Cooling tower still required for chiller, reintroducing salt-spray vulnerability. For 8,000 m² hotel, 75% of cooling load (offices, guest rooms) serves from VRF (no heating need), only 25% (kitchen, back-of-house) benefits from chiller water-side dehumidification. Marginal LCC gain (₱509M − ₱471.5M = ₱37.5M over 10 yr = ₱3.75M/yr) does not justify 30% increase in commissioning complexity and risk.)",
-        "correct": "LIFE-CYCLE COST ANALYSIS (10-year horizon):\n\nOPTION A (Split-type, 12 × 50 TR):\nCapital: 600 TR × ₱35,000 + (12 units × ₱2,000 coastal protection) = ₱21M + ₱24,000 = ₱21.024M\nAnnual energy: 600 TR × 3.517 kW/TR × 8,760 hr × 80% utilization ÷ 3.2 COP = 4,629 MWh × ₱13,000/MWh = ₱60.2M/yr\n10-year energy: ₱602M\n10-year total LCC: ₱21.024M + ₱602M = ₱623M\nConstraints: (1) 12 outdoor units create aesthetic clutter on 8-story tower; (2) Coastal salt-spray requires stainless-steel coil protection (aluminum fins corrode 3–5 years); (3) Phased commissioning impossible without load imbalancing; (4) Typhoon risk: 12 outdoor units × multiple mount points = complex tie-down (failure risk if any unit loosens); (5) COP 3.2 fails Philippine minimum standard (≥3.8 for large commercial per EELS equivalent SEER 13 requirement).\n\nOPTION B (VRF, 4 × 150 TR outdoor):\nCapital: 600 TR × ₱50,000 + ₱15,000 coastal protection = ₱30M + ₱15K = ₱30.015M\nAnnual energy: 600 TR × 3.517 kW/TR × 8,760 × 80% ÷ 3.8 COP = 3,689 MWh × ₱13,000 = ₱47.9M/yr\n10-year energy: ₱479M\n10-year total LCC: ₱30.015M + ₱479M = ₱509M\nAdvantages: (1) Meets COP ≥3.8 energy efficiency target (SEER 13 equivalent); (2) Only 4 outdoor units (2 per rooftop section in 4-story envelope) simplify typhoon tie-down to building frame; (3) Phased commissioning: Install 1 outdoor unit/year, add indoor units incrementally (load diversity ~95% allows 3 of 4 units to supply full demand if needed); (4) Coastal protection ₱15K per system (stainless casing, copper coil coating, enhanced vibration isolators) is 1/33 cost of chiller tower hardening; (5) Refrigerant line length 150 m limit accommodates 8-story height (~60 m vertical + 100 m horizontal distribution); (6) Zone-level dehumidification per floor maintains 50–60% RH target even during high-humidity (75–80%) coastal periods; (7) Part-load COP improvement (4.2 at 50% load) capitalizes on intermittent occupancy (18 hr/day = 75% utilization factor means 25% of hours operate below design load, yielding seasonal blended COP ~4.0 vs. nameplate 3.8).\n\nOPTION C (Chilled Water, Centrifugal 600 TR):\nCapital: 600 TR × ₱65,000 + ₱500K tower hardening = ₱39M + ₱0.5M = ₱39.5M\nAnnual energy: 600 TR × 3.517 kW/TR × 8,760 × 80% ÷ 4.5 COP = 2,948 MWh × ₱13,000 = ₱38.3M/yr\n10-year energy: ₱383M\n10-year total LCC: ₱39.5M + ₱383M = ₱422.5M (LOWEST 10-year cost)\nAdvantages: (1) Highest COP 4.5 (40% above split, 18% above VRF); (2) Centralized mechanical room reduces outdoor aesthetic impact; (3) Excellent scalability for future expansion (add chiller capacity incrementally). Disadvantages: (1) Coastal salt-spray threatens cooling tower louvers (aluminum corrodes 3–5 years; structural hardening ₱500K mandates stainless tower, yearly maintenance ₱100–150K to descale and inhibit corrosion); (2) Condensate drainage complexity: 8-story building, 60+ fan-coil units with piping runs >150 m vertically+horizontally; secondary drain pans under ALL coils required in 80% RH Cebu climate (adds ₱200–300K piping/pan cost); (3) Water-side treatment (biocide, corrosion inhibitor) ₱50–80K annually to prevent fouling in tropical high-humidity environment; (4) Phased commissioning blocked: Chiller loop must be complete and pressure-tested before partial operation (cannot install 1 floor at a time). (5) Cooling tower placement conflict: 2 large towers (4×8 m each = 64 m² footprint) on 8-story tower roof (~30×30 m) crowd HVAC, elevator, comms equipment; coastal wind >200 km/h stresses tower structure despite hardening (estimated structural failure risk 2–3% per 10 years, source: ASHRAE coastal resilience studies). (6) Commissioning timeline 4–6 months (design, procurement, installation, pressure testing, performance verification) vs. 8–12 months for VRF phased commissioning; upfront delays impact occupancy revenue.\n\nFINAL ECONOMIC RANKING (10-year LCC):\n1. Chilled water: ₱422.5M (lowest energy cost, but highest capital + maintenance risk)\n2. VRF: ₱509M (mid-range, best operational fit)\n3. Split-type: ₱623M (highest energy cost, lowest capital)\n\nFINAL RECOMMENDATION: Option B (VRF) is optimal for Cebu coastal high-rise:\n- Satisfies Philippine energy efficiency mandate (COP 3.8 ≥ SEER 13 standard)\n- LCC ₱509M only 20% higher than chiller (₱422.5M) but avoids cooling tower corrosion risk (₱150K+ annual maintenance in salt-spray)\n- Phased 3-year commissioning matches typical hotel phased occupancy (fit-out by floor)\n- Typhoon resilience: 4 outdoor units with simplified tie-down vs. 12 split units or exposed cooling towers\n- Coastal protection cost (₱15K vs. ₱500K tower hardening) scales economically\n- Part-load efficiency (4.2 COP at 50% load) leverages intermittent 18 hr/day occupancy pattern\n- Zone-level humidity control critical for Cebu high-humidity (75–80%) guest comfort\n\nChiller alternative justified only if: (1) building footprint supports 2 large cooling towers without wind exposure (requires <50 km distance from coast or elevated protected location), (2) owner commits to ₱150K+/year water-side maintenance budget, (3) new construction permits full 6-month commissioning delay, (4) future expansion to ≥1,200 TR total load justified (chiller scalability advantage).\n\nSource: ALE-UTIL-002-04 Module Selection Decision Matrix; ASHRAE LCC methodology; Philippine coastal HVAC resilience standards (PD 1096 Rule VIII; NSCP 2015 Chapter 207 Wind Loads); Cebu City salt-spray durability data.",
-        "takeaway": "Coastal high-rise HVAC selection trade-off: Chilled water offers lowest energy cost (COP 4.5, 10-yr LCC ₱422.5M) but introduces typhoon/salt-spray maintenance burden (₱150K+/year water-side care, cooling tower structural risk); VRF balances energy efficiency (COP 3.8, 10-yr LCC ₱509M, only 20% premium vs. chiller) with coastal resilience (compact outdoor units, simple tie-down, minimal maintenance, phased commissioning for hotel occupancy phases). Best choice for risk-averse developers: VRF (Option B) due to lower operational/maintenance risk and typhoon resilience; reserved for owner-operators willing to commit ₱150K+/year maintenance: Chilled water (Option C)."
-      },
+      "rationale": "The checked DOE family directs designers to use accepted load-calculation methods and indoor/outdoor design conditions.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Selection Decision Matrix; ASHRAE LCC Methodology (90.1 Appendix G); PD 1058 Sections 5, 8; Philippine coastal HVAC resilience; Meralco tariff ₱12–15/kWh (used ₱13/kWh)",
       "bloom_level": "analyze",
@@ -451,30 +397,30 @@
       "model_id": "ALE-UTIL-002-04-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.843409+00:00",
       "content_hash": "sha256:101e7619092679d3fc013101bdc36c0401f607a51f349bdcb8b7025e3d42b236"
     },
     {
       "question_id": "8259316c-56bc-41ad-a426-657bb61ee231",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A 100 m² residential unit (Quezon City, no mechanical ventilation) has sensible cooling load 45 kW and latent load 12 kW (from occupancy and infiltration in tropical 80% RH ambient). The indoor target is 50% RH. Calculate the minimum condensate drain capacity (L/hr) required if the latent load fully converts to condensation on the indoor coil.",
+      "text": "Which DOE sizing principle best fits large central HVAC plants?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Size close to the calculated load and consider multiple units or staging for part-load operation."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Oversize all chillers because part-load operation is not a design concern."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Ignore future load reductions from envelope and lighting measures."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "Operate all chillers continuously regardless of demand."
         }
       ],
       "correct_option_id": "a",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "0.5 L/hr (error: assumed latent load represents 0.5% of sensible, not accounting for explicit 12 kW latent specification).",
-        "c": "15 L/hr (error: doubled the latent load due to safety factor misinterpretation).",
-        "d": "25 L/hr (error: incorrectly converted 12 kW directly to liters without considering water enthalpy; 12 kW ≠ 12 L/hr).",
-        "correct": "Latent load of 12 kW represents energy required to remove water vapor from indoor air. Water phase-change enthalpy (latent heat of vaporization) ≈ 2.45 MJ/kg at room temperature. Condensation rate = 12 kW ÷ 2.45 MJ/kg = 12,000 J/s ÷ 2.45 × 10⁶ J/kg ≈ 4.9 kg/hr of water removed. Density of water ≈ 1 kg/L, so condensation ≈ 4.9 L/hr minimum. In practice, specify 6–8 L/hr drain capacity to account for coil inefficiencies, surge during startup, and safety margin. Drain line must slope ≥1:80 (1/8 unit vertical in 10 units horizontal) per PD 1058 Rule VIII Section 811(e). Source: ALE-UTIL-002-04 Tropical Climate Considerations; ASHRAE humid climate design.",
-        "takeaway": "Latent load conversion to condensate rate requires dividing thermal energy (kW) by water latent heat (~2.45 MJ/kg); specify drain capacity 50% higher than calculated minimum for tropical climate redundancy and coil surge protection."
-      },
+      "rationale": "The DOE guideline discusses sizing close to load, considering load reductions, using multiple chiller units, and managing part-load operation.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Tropical Climate Considerations; PD 1058 Section 6.3; ASHRAE Fundamentals Handbook psychrometrics",
       "bloom_level": "apply",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-002-04-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.828332+00:00",
       "content_hash": "sha256:f3ecbbad3679399ab8b7db6320d302005f30c5a4c9617983dec9aad85edddbae"
     },
     {
       "question_id": "5bb7abe7-fa3b-4910-98c1-df7d1b0b9648",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A 6-story commercial building (3,600 m² total, 4 units per floor) in Davao City (coastal salt-spray zone, 180 km/h wind) requires outdoor unit tie-down design. Each split-type unit weighs 80 kg. Specify: (1) minimum vibration isolator rating (force in Newtons) assuming 1.5× equipment weight margin, (2) structural bracing attachment (floor, roof, or building frame).",
+      "text": "What source-safe role do controls and VSDs play in HVAC selection?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "They support energy-efficient operation through monitoring, variable-speed fans, pumps, and zone controls where appropriate."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "They replace the need for load calculations."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "They are forbidden for HVAC systems in buildings."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "They apply only to architectural finishes."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Isolator 500 N/unit, attach to roof membrane with stainless steel straps; coastal salt-spray requires marine-grade coatings only.",
-        "b": "Isolator 2,000 N/unit (overly conservative), attach to flexible roof frames to absorb wind vibration.",
-        "d": "Isolator 600 N/unit, attach to rooftop PVC conduit runs; conduit provides sufficient structural bracing for 180 km/h wind.",
-        "correct": "Step 1: Equipment weight force = 80 kg × 9.81 m/s² = 785 N. Step 2: Vibration isolator rating (1.5× margin) = 785 N × 1.5 = 1,177 N ≈ 1,200 N minimum per unit. For 4 units per floor = 4 × 1,200 N = 4,800 N total isolator capacity required. Step 3: Structural attachment per PD 1058 Section 5.3: Mount to building frame (not roof membrane alone) using anchor bolts or structural steel bracing to columns/beams. Typhoon Category 5 (200 km/h) requires rigid tie-down; roof-only mounting risks uplift and cascading unit failure. Source: PD 1058 Section 5.3; ALE-UTIL-002-04 Tropical Climate Considerations Outdoor Unit Placement.",
-        "takeaway": "Typhoon-resilient outdoor unit bracing requires: (1) vibration isolators rated ≥1.5× equipment weight, (2) attachment to building structural frame (not roof membrane), (3) stainless steel fasteners in coastal salt-spray zones per ASHRAE durability standards."
-      },
+      "rationale": "The checked DOE family supports monitoring/control, fan VSDs, pumping control, and zone/duct control as part of HVAC energy design.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Tropical Climate Considerations; PD 1058 Section 5.3; ASHRAE Equipment Durability Standards",
       "bloom_level": "apply",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-002-04-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.836235+00:00",
       "content_hash": "sha256:2e218e8f7e4bf57a61e6b5da39b2d076665d27a083d8098d44ec3965035af92b"
     },
     {
       "question_id": "dd898370-88d9-40d8-a6b0-17b3bf163f3e",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A package (rooftop) air conditioning unit is being specified for a 250 m² small retail shop in Quezon City. What is the typical EER range for package units, and why are they less efficient than split-type systems at part-load operation?",
+      "text": "Which LEA statement is source-safe when comparing room units and central systems?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Room units can serve limited rooms, while central chilled-water and air-handling systems suit larger coordinated building loads."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Window units are always the correct choice for every building scale."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Central cooling never needs air handling or chilled-water coordination."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "The system type is independent of load, scale, and operation."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Package units have 12–15 EER, equivalent to split systems; rooftop location improves cooling efficiency due to better air circulation.",
-        "c": "Package units achieve 6–8 EER only because the condenser is exposed to typhoons; no inherent efficiency disadvantage vs. split systems.",
-        "d": "Package units are actually more efficient than split systems (14+ EER) because single-unit design eliminates refrigerant line losses; part-load efficiency is identical to split type.",
-        "correct": "Typical package unit EER is 9–12 EER (MEPS 8.6 minimum, market average >10) (COP 2.8–3.2, source: Energy Efficiency Labeling Scheme). Package units operate at fixed capacity with on/off cycling, lacking modulation capability; at part-load conditions (e.g., 50% load), the compressor cycles on/off rather than throttling efficiently like VRF systems (which can vary capacity continuously). This on/off cycling wastes energy during off periods and reduces overall seasonal efficiency. Source: ALE-UTIL-002-04 Package Units section.",
-        "takeaway": "Package (rooftop) units trade efficiency for simplicity; EER 8–11 is acceptable for small buildings with predictable loads but unsuitable for tropical climate where part-load operation dominates."
-      },
+      "rationale": "The checked Salvan family discusses window or through-the-wall room units and central cooling with chilled water and air-handling coordination.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Package (Rooftop) Units section; Energy Efficiency Labeling Scheme",
       "bloom_level": "remember",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-002-04-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.829690+00:00",
       "content_hash": "sha256:98f60387350a30482c81aea45c36b3842f5af48b737c54157a211e72730d43d4"
     },
     {
       "question_id": "57ad3d12-893b-4a04-8873-f02b583cf79f",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "Window-type and mini-split air conditioning units are rated for 0.5–2 TR capacity. For which of the following applications are these units BEST suited in the Philippine context?",
+      "text": "Which starting point is source-safe for HVAC system selection under the checked DOE family?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Determine cooling loads using accepted methods and local design conditions before selecting equipment."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Select equipment first, then calculate loads only if space remains."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Use the same tonnage for every building of the same height."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "Base selection only on the color of the outdoor unit."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Window units are ideal for medium office buildings (500–1,000 m²) because they require no outdoor condenser installation.",
-        "b": "Mini-splits are recommended for large residential complexes (>500 m²) as the primary cooling system due to lowest upfront cost.",
-        "d": "Window/mini-split units should replace split-type systems in all residential applications because they occupy less indoor space.",
-        "correct": "Window and mini-split units (0.5–2 TR) are best for small rooms, temporary spaces, and supplementary cooling in hard-to-reach zones where a full split or VRF system cannot be economically justified. Example: a 15 m² server closet, a single guest room in a hotel, or a temporary office annex. They should NOT be specified as primary cooling for buildings >100 m² or continuous-occupancy spaces. Source: ALE-UTIL-002-04 Module Window-Type and Mini-Split Units section.",
-        "takeaway": "Window and mini-split units are supplementary, not primary, cooling solutions; best reserved for spot cooling, small rooms, or temporary facilities."
-      },
+      "rationale": "The checked DOE family directs designers to use accepted load-calculation methods and indoor/outdoor design conditions.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Window-Type and Mini-Split Units section",
       "bloom_level": "understand",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-002-04-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.833984+00:00",
       "content_hash": "sha256:ba60758771da1fad3568be3e40d7146c125487139377abc7a5cae75d85199cc0"
     },
     {
       "question_id": "bfd3ab3c-f843-429c-ac27-64eae9e037e5",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "An existing split-type system using R-22 refrigerant is operating in a 15-year-old office building in Cebu City. The unit needs servicing due to a slow refrigerant leak. According to Philippine phaseout regulations (PD 1058 and RA 8749), what is the correct action for an HVAC technician?",
+      "text": "Which DOE sizing principle best fits large central HVAC plants?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "Size close to the calculated load and consider multiple units or staging for part-load operation."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "Oversize all chillers because part-load operation is not a design concern."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "Ignore future load reductions from envelope and lighting measures."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "Operate all chillers continuously regardless of demand."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Retrofit the system immediately with R-410A refrigerant; R-22 leaks are critical emergency warranting urgent replacement.",
-        "b": "Switch to R-32 refrigerant by adding 2 kg to boost pressure; R-32 is compatible with R-22 systems if properly charged.",
-        "d": "Continue operating with R-22 indefinitely; the 2040 deadline allows servicing existing systems until that date with any available refrigerant.",
-        "correct": "R-22 is banned from manufacture and import since 2015 in developed countries; Philippines phase-out deadline is 2040 per RA 8749 (Ozone Layer Protection Act). For existing R-22 systems, servicing with recovered/recycled refrigerant is permitted as a temporary measure until system replacement. Do NOT retrofit with R-32 or R-410A without manufacturer approval and system redesign (oil type incompatibility, charge amounts differ). Recommended action: Repair the leak with recovered R-22 (if available through licensed recovery contractor), or schedule system replacement with R-32 split unit (~₱40,000–50,000 per TR). New systems must NOT use R-22. Source: ALE-UTIL-002-04 Refrigerant Standards section; RA 8749 Ozone Layer Protection Act.",
-        "takeaway": "R-22 servicing for existing systems uses recovered/recycled refrigerant only; retrofitting with newer refrigerants requires manufacturer approval and system redesign. Plan replacement with R-32 (recommended standard) within 5–10 years before R-22 supply dries up."
-      },
+      "rationale": "The DOE guideline discusses sizing close to load, considering load reductions, using multiple chiller units, and managing part-load operation.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module Refrigerant Standards section; RA 8749 Ozone Layer Protection Act; PD 1058",
       "bloom_level": "apply",
@@ -701,30 +617,30 @@
       "model_id": "ALE-UTIL-002-04-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.832045+00:00",
       "content_hash": "sha256:e5fe71b6e66a8dbd0e68c64b07c8ba053d2da4c404443fee4c4417071ea77fed"
     },
     {
       "question_id": "80802b77-1d96-4717-a8e3-ed05716fb21e",
       "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
       "topic_id": "c5d6475d-5ff2-4601-aa87-2b540f7ff66b",
-      "text": "A VRF system (80 TR total capacity, installed in a 5-story Makati office building, outdoor ambient 33°C, indoor setpoint 24°C) is rated at 3.8 COP (design full-load condition). During a cooler day (28°C outdoor), the system operates at 40% capacity and achieves measured COP of 4.6 (per manufacturer part-load rating). Calculate the percentage improvement in COP at part-load (28°C, 40% load) vs. design condition (33°C, 100% load), and explain why this seasonal variation matters for tropical climate energy efficiency.",
+      "text": "What source-safe role do controls and VSDs play in HVAC selection?",
       "options": [
         {
           "id": "a",
-          "text": "A"
+          "text": "They support energy-efficient operation through monitoring, variable-speed fans, pumps, and zone controls where appropriate."
         },
         {
           "id": "b",
-          "text": "B"
+          "text": "They replace the need for load calculations."
         },
         {
           "id": "c",
-          "text": "C"
+          "text": "They are forbidden for HVAC systems in buildings."
         },
         {
           "id": "d",
-          "text": "D"
+          "text": "They apply only to architectural finishes."
         }
       ],
       "correct_option_id": "a",
@@ -732,13 +648,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "15% COP improvement (error: calculated (4.6 − 3.8) ÷ 4.6 = 17%, swapped denominator).",
-        "c": "COP worsens by 8% at part-load; high outdoor temperature (33°C vs. 28°C) dominates efficiency (incorrect physics: cooler outdoor improves efficiency, not degrades).",
-        "d": "COP improvement is negligible (~3%); VRF part-load advantage is marketing hype; Philippine climate lacks sufficient seasonal variation to benefit from modulation.",
-        "correct": "Step 1: Design condition COP = 3.8 (33°C outdoor, 100% load). Step 2: Part-load condition COP = 4.6 (28°C outdoor, 40% load). Step 3: COP improvement = (4.6 − 3.8) ÷ 3.8 × 100% = 0.8 ÷ 3.8 × 100% = 21.1% ≈ 21% COP gain. Why matters: Philippine climate 70–90% RH year-round with outdoor temps ranging 25–34°C. Systems operate at <100% load ~70–80% of the year (cool months May–Oct, intermittent peak loads). This part-load COP advantage (21% in this scenario) compounds across the 8–10 month cooler season, delivering 15–20% average annual energy savings vs. systems with flat COP (split-type, package units). For 80 TR system at 3.8 COP design, annual energy consumption assuming 60% average seasonal load factor, 2,500 operating hrs/year: Output 80 TR × 12,000 × 0.6 × 2,500 hr = 1,440 million BTU/yr = 422 MWh; Input 422 ÷ 4.0 (blended seasonal COP, account 30% time at full-load 3.8 COP + 70% part-load 4.3 COP average) ≈ 105.5 MWh/yr vs. flat-COP system 422 ÷ 3.8 = 111 MWh/yr. Savings ≈ 5.5 MWh/yr × ₱12,500/MWh = ₱68,750/year. Over 8-year payback horizon, VRF capital premium (~₱48,000/TR vs. ₱35,000/TR = ₱1.04M additional) recovers via cumulative energy savings. Source: ALE-UTIL-002-04 VRF Systems section; ASHRAE part-load performance data; tropical seasonal operation patterns.",
-        "takeaway": "VRF part-load efficiency gain (15–25% vs. design condition) is substantial and materializes across 6–8 cooler months in tropical Philippines; this seasonal compounding is primary driver of VRF life-cycle cost advantage over fixed-COP systems (split, package, chiller operating at constant capacity)."
-      },
+      "rationale": "The checked DOE family supports monitoring/control, fan VSDs, pumping control, and zone/duct control as part of HVAC energy design.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-04 Module VRF Systems section; ASHRAE part-load efficiency standards; tropical climate seasonal load patterns",
       "bloom_level": "analyze",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-002-04-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.841467+00:00",
       "content_hash": "sha256:eec28b10077a8cb05916fc05f3be209725d70db130e87e754e4037dd293c4c24"
     }
   ]

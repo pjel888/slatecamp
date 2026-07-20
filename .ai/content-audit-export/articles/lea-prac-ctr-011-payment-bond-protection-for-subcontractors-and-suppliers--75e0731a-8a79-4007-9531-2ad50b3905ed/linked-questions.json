@@ -8,37 +8,31 @@
       "question_id": "1ffc2323-4b6c-4ae9-9c1b-b5780eb4e11d",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "What is a typical payment bond amount as a percentage of the contract price?",
+      "text": "How does UAP Document 301 define a payment bond?",
       "options": [
         {
           "id": "a",
-          "text": "5% to 10%, which is standard for ensuring contractor performance and financial security"
+          "text": "Security furnished by the contractor and surety as a guarantee that obligations arising from the contract will be paid"
         },
         {
           "id": "b",
-          "text": "50% to 100%, commonly 100% of the contract price"
+          "text": "Security for accepting the lowest bidder"
         },
         {
           "id": "c",
-          "text": "200% of the contract price, which is an exaggerated figure not typically used in standard contracts"
+          "text": "A one-year guarantee of workmanship after posting"
         },
         {
           "id": "d",
-          "text": "fixed dollar amount regardless of contract value, which is not a common practice in bond requirements"
+          "text": "An architect's intellectual property document"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Understates typical amounts; 5%-10% is too low to cover payment obligations.",
-        "c": "Overstates typical amounts; 200% exceeds standard bonding practice.",
-        "d": "Ignores the percentage relationship; bond amounts are tied to contract value.",
-        "correct": "Payment bonds typically equal 50%-100% of contract value, most commonly 100%, matching the Performance Bond standard.",
-        "takeaway": "Standard Payment Bond = 50%-100% of contract price, typically 100%."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 488-493. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CTR-011-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.663146+00:00",
       "content_hash": "sha256:65f3323475966a579910fb4c3a34109681e414afc33e8c12fc8d664562a80f59"
     },
     {
       "question_id": "683f4ccd-3a99-4811-9ff3-5794ee444a09",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "Can a contractor breach the payment bond without breaching the performance bond simultaneously?",
+      "text": "Under CIAP Document 102, what amount is the bond covering contractor obligations to workers, subcontractors, and suppliers?",
       "options": [
         {
           "id": "a",
-          "text": "No, both bonds are breached whenever any default occurs, as they are typically linked in contract terms"
+          "text": "15% of the contract amount"
         },
         {
           "id": "b",
-          "text": "Yes, the contractor may fail to pay subcontractors while continuing work satisfactorily, or may fail to complete work while paying all invoices"
+          "text": "100% of the contract amount"
         },
         {
           "id": "c",
-          "text": "No, the performance bond automatically covers payment obligations, ensuring all financial aspects are secured"
+          "text": "A fixed amount set by the Civil Code"
         },
         {
           "id": "d",
-          "text": "Payment bonds and performance bonds are identical instruments with the same triggers, making separate breaches impossible"
+          "text": "The amount of final retention only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes mutual triggering; the bonds address entirely separate obligations.",
-        "c": "Wrongly suggests Performance Bond covers payment; each bond addresses distinct contractor duties.",
-        "d": "Wrongly treats bonds as identical; they have separate purposes and can be breached independently.",
-        "correct": "The bonds address different obligations; contractor can fail payment while completing work, or vice versa.",
-        "takeaway": "Bonds are independent: Contractor can breach Payment Bond (non-payment) while meeting Performance Bond (completion), or conversely."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-011-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.661748+00:00",
       "content_hash": "sha256:d3d66904280dbcc4bb530e212699dcb5c963a2139a117a06dc619eb9f00b4c57"
     },
     {
       "question_id": "a09de9b1-fa7f-4633-be75-e387f29e6e2a",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "How can a subcontractor present a claim against the payment bond?",
+      "text": "Which obligation is specifically connected to the payment bond in CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "By suing the contractor first and waiting for the outcome, which can be a lengthy and uncertain process"
+          "text": "Obligations to workers, subcontractors, and suppliers"
         },
         {
           "id": "b",
-          "text": "By filing a claim directly with the surety following procedures in the bond documents, typically within 60-90 days of last furnishing labor or materials"
+          "text": "Owner optional insurance coverage"
         },
         {
           "id": "c",
-          "text": "Only through the original contract parties, which limits the subcontractor's direct recourse options"
+          "text": "Acceptance of the highest bidder"
         },
         {
           "id": "d",
-          "text": "By requesting the owner to pay them directly, which is not typically allowed under standard contract terms"
+          "text": "Architect seal registration"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly requires Contractor lawsuit first; payment bond provides direct claim against surety.",
-        "c": "Unnecessarily restricts to original parties; bond creates direct relationship with surety.",
-        "d": "Owner cannot unilaterally pay subcontractors; surety determination is required.",
-        "correct": "Subcontractors file claims directly with the surety per bond procedures, within required notice periods, bypassing the contractor.",
-        "takeaway": "Subcontractors file payment claims directly with surety within 60-90 days of last work; no need to sue Contractor."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-011-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.664434+00:00",
       "content_hash": "sha256:3fdb04794dfc92bd9f8b69d5e4590d104b45bdf2e0d9558a2243573df01dabf7"
     },
     {
       "question_id": "5d897763-bf5b-4753-84fd-205341fbd88b",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "How should the payment bond amount be adjusted if significant change orders increase the contract value?",
+      "text": "What may the owner deduct from payments under CIAP Document 102 Article 22.03?",
       "options": [
         {
           "id": "a",
-          "text": "The payment bond amount should never change, regardless of any modifications to the contract value or scope"
+          "text": "Substantiated and unpaid claims by subcontractors and suppliers"
         },
         {
           "id": "b",
-          "text": "The bond may need adjustment to maintain adequate protective coverage for the increased total cost"
+          "text": "The architect's professional indemnity premium"
         },
         {
           "id": "c",
-          "text": "The change order replaces the need for a payment bond, eliminating the requirement for any bond adjustments"
+          "text": "The bid bulletin value"
         },
         {
           "id": "d",
-          "text": "Only the surety can decide if adjustment is necessary, based on their assessment of the project's financial risk"
+          "text": "All future change orders without basis"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes fixed bond; increased scope requires proportionally increased coverage.",
-        "c": "Wrongly suggests change orders eliminate bond need; additional work increases payment obligations.",
-        "d": "Wrongly assigns sole discretion to surety; Owner/Architect assess adequacy of coverage.",
-        "correct": "Bond amount may require adjustment when change orders significantly increase contract value to maintain protection.",
-        "takeaway": "Payment Bond amount may increase with change orders to cover expanded payment obligations."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 637-641. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-011-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.663797+00:00",
       "content_hash": "sha256:c25b5049e66f130f4eaaf907892fe1ca88de6d6c766244e32eb81552d58f76a7"
     },
     {
       "question_id": "6c10b078-e2ee-45f1-be50-fa56a2df3808",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "What is the primary purpose of a payment bond?",
+      "text": "What must the contractor do regarding workmen, materials, equipment, taxes, and withholdings?",
       "options": [
         {
           "id": "a",
-          "text": "To guarantee the contractor completes all work on schedule, ensuring timely project delivery and adherence to deadlines"
+          "text": "Pay or remit them promptly as required by CIAP Document 102"
         },
         {
           "id": "b",
-          "text": "To guarantee payment of all obligations arising from the contract, protecting subcontractors and suppliers"
+          "text": "Defer all payments until one year after completion"
         },
         {
           "id": "c",
-          "text": "To set the contract price for the project, establishing a fixed budget that cannot be altered without mutual agreement"
+          "text": "Transfer them to the architect's liability insurance"
         },
         {
           "id": "d",
-          "text": "To authorize the engineer to approve change orders, allowing for modifications in the project scope as necessary"
+          "text": "Treat them as bid documents"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses Payment Bond with Performance Bond; Payment Bond guarantees payment, not completion.",
-        "c": "Confuses bond with pricing; payment bond does not set contract price, only guarantees payment.",
-        "d": "Wrongly assigns change-order authority to bond; bond does not authorize change orders.",
-        "correct": "The payment bond guarantees that subcontractors, suppliers, and laborers will be paid for work performed and materials supplied.",
-        "takeaway": "Payment Bond protects subcontractors and suppliers against non-payment by the contractor."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 651-652. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-011-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.665066+00:00",
       "content_hash": "sha256:063e252f776dd0219b7d358f1f88661cae315d90ebc8eb8fdf7bc306b2282f6c"
     },
     {
       "question_id": "cf2c9c53-05a0-4af4-862d-ea4a80bbea96",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "How do payment and performance bonds differ in their protective scope?",
+      "text": "What must happen to liens as a condition to final payment or release of retention?",
       "options": [
         {
           "id": "a",
-          "text": "They serve identical purposes and provide the same protection, which is a common misconception among contractors"
+          "text": "The contractor must release the work from legal liens arising from unpaid subcontractor or supplier claims"
         },
         {
           "id": "b",
-          "text": "The performance bond guarantees work completion and quality, while the payment bond guarantees payment of all contract obligations to subcontractors and suppliers"
+          "text": "The owner must accept every supplier claim without proof"
         },
         {
           "id": "c",
-          "text": "The payment bond guarantees work completion, which is often misunderstood by project stakeholders"
+          "text": "The performance bond must become a bid bond"
         },
         {
           "id": "d",
-          "text": "Performance bonds protect subcontractors and payment bonds protect the owner, although this is not always the case in practice"
+          "text": "The architect must waive Article 1723 liability"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly conflates the two bonds; they address entirely different contractor defaults.",
-        "c": "Confuses Payment Bond with Performance Bond; Payment guarantees payment, not work completion.",
-        "d": "Reverses the beneficiaries; Performance protects Owner, Payment protects subcontractors/suppliers.",
-        "correct": "Performance and Payment bonds serve distinct purposes: Performance guarantees completion; Payment guarantees payment obligations.",
-        "takeaway": "Performance Bond = completion guarantee; Payment Bond = payment guarantee to subcontractors and suppliers."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 846-858. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-011-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.659318+00:00",
       "content_hash": "sha256:373789723b471fbf8f923a08c9b531cdf4c2c064a70ff241b22482d48c14ca1a"
     },
     {
       "question_id": "36f7de4b-e3e8-4f14-b5ce-2c1d51a162b1",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "Who benefits most directly from a payment bond?",
+      "text": "If claims remain unpaid when the lien statement is made, what does CIAP Document 102 require?",
       "options": [
         {
           "id": "a",
-          "text": "The contractor's insurance company, which may be involved in underwriting the bond but does not directly benefit from its execution"
+          "text": "An indemnity bond equal to the amount of the unpaid claims"
         },
         {
           "id": "b",
-          "text": "The project owner only, who is protected against non-payment issues but does not directly receive funds from the bond"
+          "text": "A new invitation to bid"
         },
         {
           "id": "c",
-          "text": "Subcontractors, suppliers, and laborers who furnish work and materials"
+          "text": "A professional indemnity insurance policy for the architect"
         },
         {
           "id": "d",
-          "text": "The engineer or architect only, who may have indirect benefits but are not the primary beneficiaries"
+          "text": "A cancellation of all bonds"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses with insurance company; payment bond is surety guarantee, not insurance.",
-        "b": "Wrongly limits to Owner; Owner benefits from Performance Bond, not Payment Bond.",
-        "d": "Architect/Engineer are not primary beneficiaries; they verify work but don't file payment claims.",
-        "correct": "Subcontractors, suppliers, and laborers directly benefit from payment bond protection, as they can claim against the surety if unpaid.",
-        "takeaway": "Payment Bond protects Subcontractors, Suppliers, and Laborers against contractor non-payment."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 846-858. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-011-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.658229+00:00",
       "content_hash": "sha256:e32b596514dd618576f953681a9efff07ebf6a1301c166a22fb727f47cd1c3d7"
     },
     {
       "question_id": "3cc11497-e261-4ca8-91bf-e9f5d25ee862",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "Why is the architect's record-keeping important in payment bond claims?",
+      "text": "What may the owner require before approving a subcontract under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "It has no importance in payment bond claims, as the surety handles all investigations independently"
+          "text": "That the subcontractor obtain the same bonds and insurance coverage required of the contractor"
         },
         {
           "id": "b",
-          "text": "The architect's certificates and records can support claimants' evidence of work completion and payment entitlement"
+          "text": "That the subcontractor become the owner"
         },
         {
           "id": "c",
-          "text": "It allows the architect to deny payment to subcontractors, which is not a standard practice"
+          "text": "That the subcontractor issue the architect's seal"
         },
         {
           "id": "d",
-          "text": "It replaces the need for the surety to investigate claims, which is not accurate as the surety still performs due diligence"
+          "text": "That the supplier replace the bid bulletin"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Minimizes importance; Architect records are valuable claim evidence.",
-        "c": "Inverts the purpose; Architect's records support, not deny, legitimate payment claims.",
-        "d": "Wrongly assumes documentation replaces investigation; surety still investigates, but documentation aids evaluation.",
-        "correct": "Architect's payment certificates and project records serve as supporting evidence for subcontractor payment bond claims.",
-        "takeaway": "Architect's documentation and certificates support claimants' proof of work completion and payment entitlement."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 855-858. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-011-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.662456+00:00",
       "content_hash": "sha256:f748653b9efc1d76a92bbff770c84465940d82a53c360fcf7cfba9e029e5be51"
     },
     {
       "question_id": "bd4f1758-900a-4ce4-a125-0e3ba56947f4",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "What evidence must a claimant typically provide when filing a payment bond claim?",
+      "text": "Which distinction is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Only a verbal statement to the surety, which is generally insufficient without accompanying documentation"
+          "text": "Payment bond covers payment obligations; performance bond covers faithful performance of the work"
         },
         {
           "id": "b",
-          "text": "Documentation proving the unpaid obligation, including evidence of work performed or materials supplied"
+          "text": "Payment bond controls bidder advertisements; performance bond controls professional liability insurance"
         },
         {
           "id": "c",
-          "text": "A guarantee from the owner that payment is owed, which must be notarized and submitted with the claim"
+          "text": "Both bonds cover only design errors"
         },
         {
           "id": "d",
-          "text": "Permission from the contractor to file the claim, along with a written statement of the circumstances leading to the claim"
+          "text": "Guarantee bond and payment bond are identical in timing and purpose"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes verbal sufficiency; surety requires documentation to evaluate claims.",
-        "c": "Wrongly requires Owner guarantee; documentation of the work itself proves the obligation.",
-        "d": "Wrongly requires Contractor permission; bond allows direct claim independent of Contractor consent.",
-        "correct": "Claimants must provide documentation such as invoices, delivery records, and work completion evidence to support payment bond claims.",
-        "takeaway": "Payment claim requires documented proof of work/materials supplied and unpaid obligation."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 488-493; CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CTR-011-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.660245+00:00",
       "content_hash": "sha256:00edf58b4f3aa7f499a1a659544b010ec2f18957e0d67d76b27b68f1ddf69e07"
     },
     {
       "question_id": "bb1fa652-fc3e-4e6b-ad64-abb2b1dde598",
       "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
       "topic_id": "4d4a6838-d39d-4b89-b1d7-08bb1b204a93",
-      "text": "What is the surety's liability capped at under the payment bond?",
+      "text": "Which answer should be rejected in a payment-bond item?",
       "options": [
         {
           "id": "a",
-          "text": "There is no liability cap; the surety is responsible for all claims regardless of the bond amount"
+          "text": "A claim that the payment bond is mainly the owner's completion-risk bond"
         },
         {
           "id": "b",
-          "text": "The bond amount; if total valid claims exceed the bond, the surety must distribute funds proportionally"
+          "text": "A claim that the payment bond covers payment obligations from the contract"
         },
         {
           "id": "c",
-          "text": "Double the contract price, but only if specified in the bond agreement"
+          "text": "A claim that unpaid subcontractor or supplier claims matter to payment controls"
         },
         {
           "id": "d",
-          "text": "Only the amount of the contractor's profit, unless otherwise stated in the contract"
+          "text": "A claim that liens can affect final payment or retention release"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes unlimited surety liability; bond amount is the maximum exposure.",
-        "c": "Invents double-price rule; surety liability limited to bond amount only.",
-        "d": "Confuses contractor profit with surety obligation; surety pays all valid payment claims within bond limit.",
-        "correct": "Surety liability is capped at the bond amount; if claims exceed this, proportional distribution among claimants occurs.",
-        "takeaway": "Surety liability capped at bond amount; excess claims distributed pro-rata among claimants."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 637-652 and 846-858. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-011-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.661004+00:00",
       "content_hash": "sha256:c225d9da56c064087848c1bd1010448760df614fa5e7d3fbf3233ed43b6faff4"
     }
   ]

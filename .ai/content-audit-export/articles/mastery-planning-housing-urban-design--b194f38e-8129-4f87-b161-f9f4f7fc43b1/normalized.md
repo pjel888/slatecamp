@@ -35,17 +35,17 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: When you encounter a planning question on the LEA, your first move should be to identify the sclea it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the sclea focuses your recall.
+- Text: When you encounter a planning question on the LEA, your first move should be to identify the scale it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the scale focuses your recall.
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: When you encounter a planning question on the LEA, your first move should be to identify the sclea it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the sclea focuses your recall.
+- Text: When you encounter a planning question on the LEA, your first move should be to identify the scale it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the scale focuses your recall.
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
-- Text: When you encounter a planning question on the LEA, your first move should be to identify the sclea it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the sclea focuses your recall.
+- Text: When you encounter a planning question on the LEA, your first move should be to identify the scale it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the scale focuses your recall.
 
 ## Site Analysis → Urban Planning: The Upward Chain
 
@@ -124,7 +124,7 @@ Bioclimatic design at building scale (Environmental Design) and urban scale (Pla
 [SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Environmental Impact Assessment (EIA), required under PD 1586, operates across scleas — from the site (direct impacts) to the regional (cumulative and downstream impacts). Understanding EIA as a multi
+- Text: Environmental Impact Assessment (EIA), required under PD 1586, operates across scales — from the site (direct impacts) to the regional (cumulative and downstream impacts). Understanding EIA as a multi
 [/SLATECAMP_UI_BLOCK]
 ## Related Articles
 

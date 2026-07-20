@@ -2,70 +2,48 @@
   "question_id": "56093fda-9f27-483b-a526-efcac8952184",
   "baseline_hash": "sha256:6d1008eac2ac8cd20e896e1e0e7bdc49375ccc2e472083ad01e50ec3e7e21654",
   "action": "replace",
-  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
-  "approved_by": "codex-local-first-batch-041",
-  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent G ERROR G1 / Q10): marked-correct '21,360 VA' failed arithmetic; the model-generated rationale itself admitted the connected-load sum equals 18,360 VA. Recomputed total connected load: lighting 180 sqm x 2 VA/sqm = 360 VA; 3 small appliance circuits x 1,500 VA = 4,500 VA; 1 laundry circuit = 1,500 VA; water heater = 3,500 VA; air conditioner = 2,200 VA; 35 outlets x 180 VA = 6,300 VA. Total = 360 + 4,500 + 1,500 + 3,500 + 2,200 + 6,300 = 18,360 VA. Restores the original connected-load question with the corrected answer.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "c9e0e01a-b54b-4957-8316-010c1780aea1",
     "parent_article_slug": "lea-util-003-07-residential-load-computation-pec-method",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358 | Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190",
-    "checked_markdown_lines": [
-      "Phil Electrical Code refined markdown lines 1721-1770",
-      "Phil Electrical Code refined markdown lines 2125-2138",
-      "Phil Electrical Code refined markdown lines 2202-2237",
-      "Phil Electrical Code refined markdown lines 2253-2311",
-      "Phil Electrical Code refined markdown lines 2337-2358",
-      "Electrical Layout and Estimate refined markdown lines 53-68",
-      "Electrical Layout and Estimate refined markdown lines 3260-3350",
-      "Electrical Layout and Estimate refined markdown lines 2153-2190"
-    ],
+    "support_status": "council_verified_fact_check",
+    "source_locator": "PEC 220.12 general lighting (residential 2 VA/sqm basis used in the scenario); small appliance branch circuits 1,500 VA each; laundry branch circuit 1,500 VA; appliance/motor nameplate loads; receptacle load 180 VA each.",
     "checked_sources": [
       {
         "source_id": "pec-2017-local-phil-electrical-code",
         "label": "Philippine Electrical Code local raw PDF",
         "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
-        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
-        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
-        "locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358"
-      },
-      {
-        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
-        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
-        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
-        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
-        "locator": "Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190"
+        "locator": "PEC 220.12 general lighting; small appliance / laundry branch circuits; receptacle load 180 VA each."
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+    "local_source_safe_action": "Corrected marked-correct option from '21,360 VA' to '18,360 VA' (council-recomputed value, matching Agent G)."
   },
   "proposed": {
-    "text": "Which item is included in the source-safe residential method?",
+    "text": "A residential dwelling (180 sqm) has: lighting (2 VA/sqm), 3 small appliance circuits (1,500 VA each), 1 laundry circuit (1,500 VA), water heater (3,500 VA), air conditioner (2,200 VA), and 35 convenience outlets (180 VA each). Calculate the total connected load.",
     "options": [
       {
         "id": "a",
-        "text": "General lighting load from the applicable PEC table."
+        "text": "17,660 VA"
       },
       {
         "id": "b",
-        "text": "A made-up square-meter shortcut not checked in the source."
+        "text": "18,360 VA"
       },
       {
         "id": "c",
-        "text": "A web-only demand factor without raw PDF support."
+        "text": "20,660 VA"
       },
       {
         "id": "d",
-        "text": "A structural live-load table."
+        "text": "21,360 VA"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The checked PEC provisions include lighting-load table use for occupancy calculations.",
-    "explanation": "The checked PEC provisions include lighting-load table use for occupancy calculations.",
-    "code_citation": "PEC lighting-load provisions"
+    "correct_option_id": "b",
+    "rationale": "Connected load = sum of all loads at nameplate/unit values. Lighting = 180 x 2 = 360 VA. Small appliance = 3 x 1,500 = 4,500 VA. Laundry = 1,500 VA. Water heater = 3,500 VA. Air conditioner = 2,200 VA. Outlets = 35 x 180 = 6,300 VA. Total = 360 + 4,500 + 1,500 + 3,500 + 2,200 + 6,300 = 18,360 VA. The original '21,360 VA' answer inflated the outlet count; the model-generated rationale itself admitted the sum equals 18,360 VA. Source: PEC 220.12 general lighting and branch-circuit/receptacle load provisions.",
+    "explanation": "Total connected load = 360 + 4,500 + 1,500 + 3,500 + 2,200 + 6,300 = 18,360 VA.",
+    "code_citation": "PEC 220.12 (general lighting); PEC small appliance/laundry branch circuit and receptacle load provisions"
   }
 }

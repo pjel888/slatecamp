@@ -1,0 +1,517 @@
+{
+  "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b761a66626cb246ee3b9239e7e3bd3488c38f653df66b666eb70bad76056f29a",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "a545ca8a-6136-4d9c-b4ed-461e28499d28",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "A day care facility requires child-scaled toilet and lavatory fixtures. According to DSWD standards, what is the correct height for a child toilet seat (WC)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "150 mm (very low)"
+        },
+        {
+          "id": "b",
+          "text": "250–300 mm"
+        },
+        {
+          "id": "c",
+          "text": "400 mm (adult standard)"
+        },
+        {
+          "id": "d",
+          "text": "600 mm (elevated)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "150 mm is too low for any age group.",
+        "b": "250–300 mm is the recognized child toilet seat height for day care.",
+        "c": "400 mm is adult standard, inappropriate for children; creates unsafety.",
+        "d": "600 mm is far too high for children; would require step stools, creating hazard.",
+        "correct": "Child toilet seat height = 250–300 mm per DSWD standard. This accommodates toddlers and preschoolers without foot dangling.",
+        "takeaway": "Child toilet seat height = 250–300 mm. Adult = 400 mm. This distinction is critical for child safety."
+      },
+      "explanation": null,
+      "code_citation": "DSWD Standard",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:822e87cb8024b717505be43467e62119b86d119618fbc2f3d454679cbc5422c9"
+    },
+    {
+      "question_id": "5230cee3-186c-4538-b67a-bade07aa2ff7",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "A day care exit corridor must accommodate 75 children during emergency evacuation. According to PD 1096 Rule X Table X-3, what is the minimum required exit width?",
+      "options": [
+        {
+          "id": "a",
+          "text": "375 mm (5.0 mm per child)"
+        },
+        {
+          "id": "b",
+          "text": "420 mm (5.6 mm per child)"
+        },
+        {
+          "id": "c",
+          "text": "600 mm (8.0 mm per child)"
+        },
+        {
+          "id": "d",
+          "text": "750 mm (10.0 mm per child)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "375 mm uses an incorrect coefficient.",
+        "b": "420 mm (0.42 m) is the mathematically correct minimum based on the 5.6 mm/person standard for doors and corridors.",
+        "c": "600 mm uses the 8.0 mm coefficient, which is reserved for stairs, not corridors/doors.",
+        "d": "750 mm exceeds the minimum requirement.",
+        "correct": "Per Table X-3 of PD 1096 Rule X, exit components (other than stairs) for Group C have a width coefficient of 5.6 mm per person. 75 children × 5.6 mm = 420 mm.",
+        "takeaway": "Exit width (corridors/doors) = occupants × 5.6 mm/person per Rule X. For 75 children: 75 × 5.6 = 420 mm."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule X Table X-3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fd1e2fb5f502b5e1fba06b0407ebdc8c7c2ecf4e699e5c4f257afe1d8707e08e"
+    },
+    {
+      "question_id": "518525dd-c631-46b0-b238-f1c54b822fd9",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "A day care facility design includes child-scaled hand-washing lavatories. According to DSWD standards, what is the correct height for a child lavatory (sink)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300–400 mm"
+        },
+        {
+          "id": "b",
+          "text": "550–600 mm"
+        },
+        {
+          "id": "c",
+          "text": "750–800 mm (adult standard)"
+        },
+        {
+          "id": "d",
+          "text": "900 mm (elevated counter)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "300–400 mm is too low and would require crawling position.",
+        "b": "550–600 mm is the recognized child lavatory height for day care.",
+        "c": "750–800 mm is adult standard, too high for children; creates accessibility barrier.",
+        "d": "900 mm is commercial counter height, not for children.",
+        "correct": "Child lavatory height = 550–600 mm per DSWD standard. This enables reach and independent hand-washing for preschoolers.",
+        "takeaway": "Child lavatory height = 550–600 mm. Adult = 800 mm. Proper scaling ensures independence and safety."
+      },
+      "explanation": null,
+      "code_citation": "DSWD Standard",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ce1898ab0f2d545aa5cf6227c6951eca5e36d99afe0ee575486b90fa2425cfe2"
+    },
+    {
+      "question_id": "df4372ae-00e7-4361-b8a1-897a0990fe31",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "Day care centers and kindergartens are classified under which occupancy group according to PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group B (Hotel/Dormitory/Residential)"
+        },
+        {
+          "id": "b",
+          "text": "Group C (Education/Recreation)"
+        },
+        {
+          "id": "c",
+          "text": "Group D (Institutional)"
+        },
+        {
+          "id": "d",
+          "text": "Group E (Business/Mercantile)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group B is residential/dormitory. Day care is NOT overnight residential; it is daytime education.",
+        "c": "Group D is institutional with custodial care (hospitals, jails). Day care provides education/care supervision, not custodial institution-level care.",
+        "d": "Group E is business/mercantile. Day care is educational.",
+        "correct": "Day care centers and kindergartens are classified as Group C (education and recreation) per PD 1096 Rule VII. They are educational facilities, not residential or institutional custodial care.",
+        "takeaway": "Day care = Group C (education/recreation). Not Group B or D."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 701(c)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fd1511bce4f10669438125a380129cccaadb4aa3512dfce62f109ca6291226de"
+    },
+    {
+      "question_id": "213d1772-928c-41c6-ba08-edd1d644ad03",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "A day care center has activity areas accommodating 50 children during morning class. According to PD 1096 Rule X, how many emergency exits are required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One exit (sufficient for daytime activities)"
+        },
+        {
+          "id": "b",
+          "text": "Two exits (required at 50+ occupancy)"
+        },
+        {
+          "id": "c",
+          "text": "Three exits (day care requirement)"
+        },
+        {
+          "id": "d",
+          "text": "Four exits (per child safety standard)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "One exit is only permitted for occupant loads below 50 in Group C.",
+        "b": "50 occupants is the threshold where a second exit becomes mandatory per PD 1096 Rule X.",
+        "c": "Three exits are only required for occupant loads exceeding 500.",
+        "d": "Four exits are required for occupant loads exceeding 1000.",
+        "correct": "PD 1096 Rule X Section 1007 mandates that every floor or portion thereof with an occupant load of 50 to 500 shall have at least two exits.",
+        "takeaway": "Occupancy threshold = 50 persons. At 50+ = 2 exits required. Day care is subject to Rule X of the 2004 IRR."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule X Section 1007",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c46be6d2aa37233dbe0b27411b005160e3efcc27cfe9e2915b76c743b50c596"
+    },
+    {
+      "question_id": "bf6db197-6370-4537-be78-499270c51a05",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "A day care center has 120 sqm of indoor activity/learning space. According to DSWD standards, what is the minimum required outdoor play area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 sqm (one-third of indoor), which is sufficient for basic outdoor activities"
+        },
+        {
+          "id": "b",
+          "text": "60 sqm (one-half of indoor), providing ample space for various play equipment"
+        },
+        {
+          "id": "c",
+          "text": "120 sqm (equal to indoor activity area)"
+        },
+        {
+          "id": "d",
+          "text": "180 sqm (1.5× indoor area), allowing for extensive outdoor play options"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "40 sqm (one-third) is insufficient; code requires equality, not reduction.",
+        "b": "60 sqm (one-half) is below requirement.",
+        "c": "120 sqm equals indoor activity area. Meets DSWD standard.",
+        "d": "180 sqm exceeds requirement; 120 sqm is adequate.",
+        "correct": "Outdoor play area must equal or exceed indoor activity area per DSWD standard. 120 sqm indoor = 120 sqm outdoor minimum.",
+        "takeaway": "Outdoor play area = indoor activity area (sqm for sqm). For 120 sqm indoor = 120 sqm outdoor minimum."
+      },
+      "explanation": null,
+      "code_citation": "DSWD Standard",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:409ce5479c0312d620af17cd1b30884f269bb04901dfa755e0e9fc05d7bf50f5"
+    },
+    {
+      "question_id": "bf3fd263-379e-4411-b6cd-a6053491f4d9",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "A day care facility wants to accommodate 40 children in structured activity/learning. According to DSWD standards, what is the minimum number of activity rooms required, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One 60 sqm room (40 × 1.5 sqm/child), assuming no additional space is needed for other activities"
+        },
+        {
+          "id": "b",
+          "text": "Two rooms: 25 children in 37.5 sqm + 15 children in 22.5 sqm (respecting 25-child maximum per room)"
+        },
+        {
+          "id": "c",
+          "text": "Two rooms: 20 children each at 30 sqm per room (equal distribution), which allows for flexibility in room usage"
+        },
+        {
+          "id": "d",
+          "text": "Three rooms regardless of area (one per 15 children), to ensure smaller group sizes for better supervision"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Single 60 sqm room violates the hard 25-child-per-room limit, even if total area is adequate.",
+        "b": "Respects 25-child maximum while accommodating 40 total. Complies with all DSWD standards.",
+        "c": "Two equal 30 sqm rooms (20 children each) works but is not the only acceptable solution; could use 25+15 distribution.",
+        "d": "Three rooms unnecessary if area is sufficient; two rooms can accommodate 40 with proper distribution.",
+        "correct": "DSWD mandates maximum 25 children per activity room. 40 children require minimum 2 rooms: one with 25 children (37.5 sqm) + one with 15 children (22.5 sqm).",
+        "takeaway": "Activity room: 1.5 sqm/child AND max 25 children per room (hard limit). Both constraints must be satisfied."
+      },
+      "explanation": null,
+      "code_citation": "DSWD Standard",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4022f78216ebccc9777124983ad9f316f880c813998903f45e9946554e61c52b"
+    },
+    {
+      "question_id": "c3eb78f5-a672-49cb-96cf-3c9d7117857a",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "According to DSWD standards, what is the minimum floor area required for an activity room accommodating 20 children?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 sqm (1 sqm per child)"
+        },
+        {
+          "id": "b",
+          "text": "25 sqm (1.25 sqm per child)"
+        },
+        {
+          "id": "c",
+          "text": "30 sqm (1.5 sqm per child)"
+        },
+        {
+          "id": "d",
+          "text": "40 sqm (2 sqm per child)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "20 sqm (1 sqm/child) is insufficient; DSWD standard is 1.5 sqm/child.",
+        "b": "25 sqm (1.25 sqm/child) is below standard.",
+        "c": "30 sqm (1.5 sqm/child) meets DSWD requirement.",
+        "d": "40 sqm exceeds minimum; 30 sqm is adequate.",
+        "correct": "Activity room = 1.5 sqm per child per DSWD standard. 20 children × 1.5 = 30 sqm minimum.",
+        "takeaway": "Activity room = 1.5 sqm per child. For 20 children = 30 sqm minimum."
+      },
+      "explanation": null,
+      "code_citation": "DSWD Standard",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:406fd9d4b47b9525652ccd0d409a3da09f911ee9e8d2c3fe1896c5947a0f08e3"
+    },
+    {
+      "question_id": "37b2a605-60e5-4ead-bfd4-e3711fe23534",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "A day care nap room is designed for 18 children sleeping. According to DSWD standards, what is the minimum required floor area for the nap room?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 sqm (0.5 sqm per child)"
+        },
+        {
+          "id": "b",
+          "text": "16.2 sqm (0.9 sqm per child)"
+        },
+        {
+          "id": "c",
+          "text": "21.6 sqm (1.2 sqm per child)"
+        },
+        {
+          "id": "d",
+          "text": "27 sqm (1.5 sqm per child)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "9 sqm (0.5 sqm/child) is dangerously undersized; violates DSWD standard.",
+        "b": "16.2 sqm (0.9 sqm/child) meets lower bound of DSWD standard (0.9–1.2 sqm).",
+        "c": "21.6 sqm (1.2 sqm/child) also acceptable; uses upper bound of range.",
+        "d": "27 sqm (1.5 sqm/child) exceeds standard; activity room rate applied incorrectly.",
+        "correct": "Nap room = 0.9–1.2 sqm per child per DSWD standard. Using lower limit (0.9): 18 × 0.9 = 16.2 sqm.",
+        "takeaway": "Nap room = 0.9–1.2 sqm per child. For 18 children = 16.2–21.6 sqm. Lower density than activity rooms."
+      },
+      "explanation": null,
+      "code_citation": "DSWD Standard",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:172d6d71fa58c126f992bad9bde72bf966d011993ee76ad639c1b274368dcc47"
+    },
+    {
+      "question_id": "88535d91-3f11-4137-ac0f-42ddad0d7c7b",
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "topic_id": "849055e7-63c4-447f-b037-4ea5a2c5466a",
+      "text": "A two-story day care facility has 100 sqm of activity space on the ground floor and 80 sqm on the second floor. What is the total minimum outdoor play area required by DSWD standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 sqm (matching smaller floor)"
+        },
+        {
+          "id": "b",
+          "text": "100 sqm (matching largest floor)"
+        },
+        {
+          "id": "c",
+          "text": "180 sqm (sum of both floors)"
+        },
+        {
+          "id": "d",
+          "text": "270 sqm (1.5× total indoor area)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "80 sqm is insufficient; must account for both floors' combined activity area.",
+        "b": "100 sqm underestimates; must include second-floor activity (80 sqm).",
+        "c": "180 sqm equals total indoor activity area (100 + 80). Meets DSWD requirement.",
+        "d": "270 sqm exceeds requirement; 180 sqm is adequate.",
+        "correct": "Outdoor play area must equal or exceed TOTAL indoor activity area (sum of all floors). 100 + 80 = 180 sqm indoor = 180 sqm outdoor minimum.",
+        "takeaway": "Outdoor play area = total indoor activity area (all floors combined). For multi-story facilities, sum all activity areas first."
+      },
+      "explanation": null,
+      "code_citation": "DSWD Standard",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-07-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.444056+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:76500ca88a171f905e175503abe4a469fed9c4760f8158fb777dd0888dab284a"
+    }
+  ]
+}

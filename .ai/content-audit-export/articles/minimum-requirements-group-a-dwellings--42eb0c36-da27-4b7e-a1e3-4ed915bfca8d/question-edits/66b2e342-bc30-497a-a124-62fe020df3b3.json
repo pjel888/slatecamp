@@ -1,25 +1,44 @@
 {
   "question_id": "66b2e342-bc30-497a-a124-62fe020df3b3",
   "baseline_hash": "sha256:dd97db179db3687337ae56c564f3fb916018827508e9b60ebbc18b252f80d79e",
-  "reason": "Batch 010 local source audit aligned linked question 66b2e342-bc30-497a-a124-62fe020df3b3 with the repaired Minimum Requirements Group A Dwellings article and verified PD 1096 raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-010",
-  "approved_at": "2026-05-10T10:55:01.585+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited Rule XII Sec. 1202.2.n trench exits, which is off-scope for a Group A dwellings article (Rule VII Sec. 708 and Rule VIII Sec. 805-811). Replaced with a Sec. 708 setback question directly supported by the article.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-    "source_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
-    "checked_markdown_lines": [
-      "2046-2108",
-      "2659-2693"
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "section_locator": "Rule VII / Section 708 Group A Dwellings (setback)"
+      }
     ],
-    "parent_article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
-    "parent_article_slug": "minimum-requirements-group-a-dwellings",
-    "answer_key_fields_changed": false
+    "citation": "PD 1096 2004 Revised IRR, Rule VII, Section 708"
   },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
-    "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VII Section 708 with Rule VIII Sections 805 through 808 for light, ventilation, ceiling heights, room sizes, air space, and window openings. This local edit adds source context only and does not change answer-key fields."
+    "text": "Under PD 1096 Rule VII Section 708, what minimum setback from the side and rear property lines must a Group A dwelling observe, in addition to the percent-of-site-occupancy and the Civil Code easements of light and view?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At least 2.00 m from every property line"
+      },
+      {
+        "id": "b",
+        "text": "At least 1.00 m from every property line"
+      },
+      {
+        "id": "c",
+        "text": "At least 3.00 m from every property line"
+      },
+      {
+        "id": "d",
+        "text": "At least 1.50 m from every property line"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Section 708 requires a Group A dwelling to be set back at least 2.00 m from every property line. This minimum does not override the larger Civil Code easements of light and view, which apply on top of any code setback.",
+    "explanation": "The 2.00 m setback is the PD 1096 minimum; it is layered with the 90 percent / 80 percent maximum lot occupancy and with any applicable easement from the Civil Code. The largest of the applicable distances governs.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII, Section 708"
   }
 }

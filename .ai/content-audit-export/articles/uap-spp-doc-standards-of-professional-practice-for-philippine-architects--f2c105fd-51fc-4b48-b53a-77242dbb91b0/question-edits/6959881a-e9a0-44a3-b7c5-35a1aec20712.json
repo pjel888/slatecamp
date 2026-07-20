@@ -1,28 +1,49 @@
 {
   "question_id": "6959881a-e9a0-44a3-b7c5-35a1aec20712",
   "baseline_hash": "sha256:b143daf61b3eac93dab60adec4f46ece26eb02964d066e795ac24453cd4b6e9e",
-  "reason": "Batch 092 local-first source audit aligned linked question 6959881a-e9a0-44a3-b7c5-35a1aec20712 with the repaired UAP SPP: General Standards article and verified local raw-source support. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-092",
-  "approved_at": "2026-05-12T17:41:23.000+08:00",
+  "action": "replace",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent F ERROR F3 / Q6): the marked-correct answer asserted a fabricated backronym 'Standards of Professional Practice Coordinating Committee' for SPPCC. Per SPP 202, SPPCC means 'Statement of Probable Project Construction Cost'. Flipped the marked-correct option to the SPP 202 definition. (Council brief labelled this Q5; it is Q6 in array order, identifiable by the SPPCC stem.)",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-    "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-    "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-    "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-    "source_locator": "SPP 200",
-    "checked_markdown_lines": [
-      "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
-    ],
     "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
     "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
-    "answer_key_fields_changed": false,
-    "local_source_checked": true,
-    "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review"
+    "answer_key_fields_changed": true,
+    "support_status": "council_verified_fact_check",
+    "source_locator": "SPP Document 202: 'SPPCC means Statement of Probable Project Construction Cost.' Article body line 24 and 'SPPCC in Regular Design Services' section.",
+    "checked_sources": [
+      {
+        "source_id": "uap-spp-202-sppcc",
+        "label": "PRBoA SPP for Philippine Architects - SPP Document 202",
+        "path": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf",
+        "locator": "SPP Document 202: SPPCC means Statement of Probable Project Construction Cost."
+      }
+    ],
+    "local_source_safe_action": "Flipped marked-correct option from the fabricated backronym 'Standards of Professional Practice Coordinating Committee' to the SPP 202 definition 'Statement of Probable Project Construction Cost'."
   },
   "proposed": {
-    "code_citation": "SPP 200",
-    "explanation": "SPPCC stands for Standards of Professional Practice Coordinating Committee. This committee was responsible for drafting, reviewing, and coordinating all SPP documents in the 2010 series."
+    "text": "What does the acronym SPPCC stand for under the UAP SPP framework?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Statement of Probable Project Construction Cost"
+      },
+      {
+        "id": "b",
+        "text": "Standards of Professional Practice Coordinating Committee"
+      },
+      {
+        "id": "c",
+        "text": "Standards of Professional Practice Compliance Council"
+      },
+      {
+        "id": "d",
+        "text": "Standards of Professional Practice Certification Commission"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Per SPP Document 202, SPPCC means Statement of Probable Project Construction Cost. The Architect prepares or updates the SPPCC during the design phases, but the SPP warns that such estimates have only a certain degree of accuracy because the Architect does not control labor, materials, and competitive bidding factors; the SPPCC is an estimate, not a guaranteed construction cost. 'Standards of Professional Practice Coordinating Committee' is a fabricated backronym and is an exam trap. Source: PRBoA SPP 202 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
+    "explanation": "SPPCC = Statement of Probable Project Construction Cost per SPP 202, not a 'Coordinating Committee' backronym.",
+    "code_citation": "SPP Document 202; PRBoA SPP for Philippine Architects"
   }
 }

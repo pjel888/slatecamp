@@ -1,0 +1,523 @@
+{
+  "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:985caaa426641340bebd8ba5b3dabcb9902b75232a8790b345c1bef1b0b893c3",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "d719bc95-d918-479e-9de7-d47e9f362eac",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A detention basin is designed to temporarily store stormwater runoff during a 10-year rainfall event. What is the primary purpose of this design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To permanently eliminate stormwater runoff from the site, ensuring no downstream impact"
+        },
+        {
+          "id": "b",
+          "text": "To eliminate the need for downstream drainage infrastructure by capturing all runoff"
+        },
+        {
+          "id": "c",
+          "text": "To prevent any water from leaving the site, maintaining complete retention"
+        },
+        {
+          "id": "d",
+          "text": "To temporarily store water and release it slowly, reducing peak flows to downstream receiving waters and providing time for sediment settling"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Detention is temporary; it does not eliminate runoff permanently.",
+        "b": "Detention works in conjunction with downstream infrastructure, not as a replacement.",
+        "c": "Detention releases water gradually; it is not permanent storage.",
+        "d": "Detention basins reduce peak stormwater flow by temporarily storing water and releasing it at a controlled rate over time. This decreases flooding risk downstream and provides settling time for sediment removal, improving water quality.",
+        "correct": "Detention basins reduce peak stormwater flow by temporarily storing water and releasing it at a controlled rate over time. This decreases flooding risk downstream and provides settling time for sediment removal, improving water quality.",
+        "takeaway": "Detention = temporary storage that reduces peak flows and improves water quality through settling."
+      },
+      "explanation": "Detention is temporary; it does not eliminate runoff permanently. Detention works in conjunction with downstream infrastructure, not as a replacement. Detention releases water gradually; it is not permanent storage. Detention basins reduce peak stormwater flow by temporarily storing water and releasing it at a controlled rate over time. This decreases flooding risk downstream and provides settling time for sediment removal, improving water quality. Detention basins reduce peak stormwater flow by temporarily storing water and releasing it at a controlled rate over time. This decreases flooding risk downstream and provides settling time for sediment removal, improving water quality. Detention = temporary storage that reduces peak flows and improves water quality through settling.",
+      "code_citation": "Stormwater Management Principles",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-05-06T15:09:23.059246+00:00",
+      "content_hash": "sha256:f1409e46a7958cf25ae03926557a8f4063aab88d656e38a37902e0885f42aa46"
+    },
+    {
+      "question_id": "a141d674-2791-4af3-bcf5-514e3c96a92c",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A site has poor soil infiltration capacity (clay soil with low permeability). Stormwater retention through soil infiltration is not feasible. What is the most appropriate alternative drainage strategy for this constrained site?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Install permeable pavement, which will infiltrate despite poor soil conditions, which is not effective in clay soils"
+        },
+        {
+          "id": "b",
+          "text": "Design a retention pond with a constructed underdrain system (perforated pipe) to slowly release stored water, supplemented by evaporation and vegetation uptake"
+        },
+        {
+          "id": "c",
+          "text": "Use only gray infrastructure (concrete detention basins and pipes); green infrastructure is not viable, which overlooks potential hybrid solutions"
+        },
+        {
+          "id": "d",
+          "text": "Discharge all stormwater directly to municipal drainage; the site is not responsible for on-site management, which is not compliant with sustainable practices"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Permeable pavement still requires soil infiltration capacity; poor soil defeats the purpose.",
+        "b": "Poor soil infiltration limits traditional retention ponds. A retention pond with constructed underdrain (engineered slow release) can still function, supplemented by evapotranspiration (vegetation uptake and evaporation). This achieves on-site retention despite poor soil.",
+        "c": "Green infrastructure (rain gardens, vegetated swales) can work on clay soils if designed with drainage layers.",
+        "d": "On-site retention is preferred over burdening municipal systems; site design must accommodate drainage constraints.",
+        "correct": "Poor soil infiltration limits traditional retention ponds. A retention pond with constructed underdrain (engineered slow release) can still function, supplemented by evapotranspiration (vegetation uptake and evaporation). This achieves on-site retention despite poor soil.",
+        "takeaway": "Poor soil infiltration requires engineered solutions: underdrains, evapotranspiration, or hybrid detention+retention with slow release."
+      },
+      "explanation": "Permeable pavement still requires soil infiltration capacity; poor soil defeats the purpose. Poor soil infiltration limits traditional retention ponds. A retention pond with constructed underdrain (engineered slow release) can still function, supplemented by evapotranspiration (vegetation uptake and evaporation). This achieves on-site retention despite poor soil. Green infrastructure (rain gardens, vegetated swales) can work on clay soils if designed with drainage layers. On-site retention is preferred over burdening municipal systems; site design must accommodate drainage constraints. Poor soil infiltration limits traditional retention ponds. A retention pond with constructed underdrain (engineered slow release) can still function, supplemented by evapotranspiration (vegetation uptake and evaporation). This achieves on-site retention despite poor soil. Poor soil infiltration requires engineered solutions: underdrains, evapotranspiration, or hybrid detention+retention with slow release.",
+      "code_citation": "Stormwater Design for Constrained Soil Conditions",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-05-06T15:09:23.329837+00:00",
+      "content_hash": "sha256:26f39f68bd311901e263b77b9bd7463c491b743c0ceddccb0a8070d29753a51a"
+    },
+    {
+      "question_id": "8a6fd370-1393-458c-bb3f-d1e46433ed3b",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A proposed residential development in a flood-prone area intends to reduce stormwater runoff by 30% through site design modifications. Which approach most directly achieves this goal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increasing the detention basin size to store more water temporarily, which can help manage peak flow rates"
+        },
+        {
+          "id": "b",
+          "text": "Reducing impervious surfaces (parking, pavement) and increasing permeable surfaces (green space, permeable pavement), allowing more rainfall to infiltrate on-site"
+        },
+        {
+          "id": "c",
+          "text": "Installing larger diameter stormwater pipes to convey runoff faster, potentially increasing downstream flooding risks"
+        },
+        {
+          "id": "d",
+          "text": "Elevating buildings to allow water to flow beneath them, which may not directly reduce runoff but can mitigate flood damage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Larger detention stores more but doesn't reduce total runoff volume generated.",
+        "b": "Reducing impervious surfaces directly decreases runoff generation. Permeable pavements and green space have lower runoff coefficients (0.3–0.5) vs. concrete (0.9), so replacing hard surfaces with pervious ones reduces volume generated at the source.",
+        "c": "Larger pipes move runoff faster; they don't reduce volume generated.",
+        "d": "Elevation does not reduce runoff; it allows water passage but doesn't eliminate volume.",
+        "correct": "Reducing impervious surfaces directly decreases runoff generation. Permeable pavements and green space have lower runoff coefficients (0.3–0.5) vs. concrete (0.9), so replacing hard surfaces with pervious ones reduces volume generated at the source.",
+        "takeaway": "Runoff reduction = reduce impervious surfaces + increase permeable surfaces. Source reduction is more effective than end-of-pipe storage."
+      },
+      "explanation": null,
+      "code_citation": "Stormwater Runoff Reduction Strategies",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fec2e6a1c39c8921c4bca2796b359b672f8bf7824c01d25e6898a9361e4233d3"
+    },
+    {
+      "question_id": "4f9dc04a-2d2c-4e2c-aa34-4160a14758ca",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A coastal development site experiences both riverine flooding (upland areas) and tidal/storm surge flooding (lower elevations near the sea). RA 10121 mandates DRRM mainstreaming into site planning. What integrated stormwater and resilience strategy addresses both flood hazards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Install retention ponds only in upland areas; sea-level flooding is a national-level issue beyond site design scope, thus requiring government intervention"
+        },
+        {
+          "id": "b",
+          "text": "Elevate all buildings to avoid tidal flooding; stormwater drainage design is unchanged, assuming that existing systems are adequate for all conditions"
+        },
+        {
+          "id": "c",
+          "text": "Design tiered retention/detention: upper-site basins for riverine runoff; lower-site retention with elevation and tidal valve systems to manage seawater backflow; maintain mangrove buffer and vegetated margins for natural wave attenuation"
+        },
+        {
+          "id": "d",
+          "text": "Discharge all stormwater to the sea; coastal areas naturally manage runoff, relying on natural processes to handle excess water"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Site design can address both hazards; mainstreaming requires integration.",
+        "b": "Elevation alone doesn't prevent inundation from combined sources; drainage design is integral.",
+        "c": "RA 10121 mainstreaming requires site design that addresses multiple hazards. Tiered retention (upstream for river runoff), elevated lower areas, tidal backflow prevention, and natural buffers (mangroves, vegetation) provide comprehensive resilience to both riverine and coastal flooding.",
+        "d": "Uncontrolled discharge worsens coastal flooding; site design must mitigate.",
+        "correct": "RA 10121 mainstreaming requires site design that addresses multiple hazards. Tiered retention (upstream for river runoff), elevated lower areas, tidal backflow prevention, and natural buffers (mangroves, vegetation) provide comprehensive resilience to both riverine and coastal flooding.",
+        "takeaway": "DRRM mainstreaming for multi-hazard sites = tiered retention + elevation + backflow prevention + natural buffers."
+      },
+      "explanation": null,
+      "code_citation": "Integrated Flood Resilience Design; RA 10121 Mainstreaming",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:434561a359d912229ebbd1bff52709228fd1731d158dff1ea53b8f835eeb4aa6"
+    },
+    {
+      "question_id": "398161dd-fbb8-4452-b5cd-d2c2f0e66d9a",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A site plan shows a retention pond designed to permanently hold stormwater runoff. What is the key advantage of a retention system compared to a detention system for a flood-prone site?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retention ponds eliminate stormwater runoff from exiting the site (either through infiltration or permanent storage), preventing downstream flooding entirely"
+        },
+        {
+          "id": "b",
+          "text": "Retention ponds cost less to construct and maintain than detention ponds, although this can vary based on site-specific conditions and design requirements"
+        },
+        {
+          "id": "c",
+          "text": "Retention ponds require no maintenance because water remains permanently in place, which is a misconception as regular inspection and sediment removal are necessary"
+        },
+        {
+          "id": "d",
+          "text": "Retention ponds are suitable for all sites, regardless of soil infiltration capacity, but this is not true for areas with high groundwater levels or poor soil conditions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Retention basins are superior for flood-prone areas because they eliminate runoff leaving the site (through infiltration into soil or permanent pooling). Detention only delays runoff; retention prevents it from burdening downstream infrastructure.",
+        "b": "Cost varies; retention is not necessarily cheaper than detention.",
+        "c": "Retention ponds require maintenance (vegetation, sediment removal, spillway repair).",
+        "d": "Retention requires adequate soil infiltration; clay soils limit infiltration capacity.",
+        "correct": "Retention basins are superior for flood-prone areas because they eliminate runoff leaving the site (through infiltration into soil or permanent pooling). Detention only delays runoff; retention prevents it from burdening downstream infrastructure.",
+        "takeaway": "Retention = on-site storage/infiltration = no downstream runoff = optimal for flood-prone areas."
+      },
+      "explanation": null,
+      "code_citation": "Stormwater Detention vs. Retention Comparison",
+      "bloom_level": "understand",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:99e719a1360f01360595146f2d045e02cddde5ba14f0845b11948b47ad51ad50"
+    },
+    {
+      "question_id": "e383b3ac-5e29-4e73-918b-b1dea76bcb9f",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A commercial building's roof and surrounding pavement cover 80% of a 1-hectare (10,000 sq.m.) site. The remaining 20% is landscaped green space. For a 100mm rainfall event, approximately how much stormwater runoff is generated if impervious surfaces have a runoff coefficient of 0.9 and pervious surfaces have a runoff coefficient of 0.3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "900 cubic meters"
+        },
+        {
+          "id": "b",
+          "text": "1,000 cubic meters"
+        },
+        {
+          "id": "c",
+          "text": "720 cubic meters"
+        },
+        {
+          "id": "d",
+          "text": "600 cubic meters"
+        },
+        {
+          "id": "e",
+          "text": "780 cubic meters"
+        }
+      ],
+      "correct_option_id": "e",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "900 cu.m. calculates impervious area only (8,000 sq.m. × 0.1m × 0.9) and incorrectly adds a portion of pervious runoff.",
+        "b": "1,000 assumes maximum runoff from full site with no infiltration.",
+        "c": "720 cu.m. accounts only for impervious surfaces, ignoring the pervious contribution.",
+        "d": "600 cu.m. underestimates the impervious contribution.",
+        "e": "Runoff = (Rainfall depth) × (Impervious area × coefficient) + (Pervious area × coefficient). Rainfall = 100mm = 0.1m. Impervious: 8,000 sq.m. × 0.1m × 0.9 = 720 cu.m. Pervious: 2,000 sq.m. × 0.1m × 0.3 = 60 cu.m. Total = 780 cu.m.",
+        "correct": "Runoff = (Rainfall depth) × (Impervious area × coefficient) + (Pervious area × coefficient). Rainfall = 100mm = 0.1m. Impervious: 8,000 sq.m. × 0.1m × 0.9 = 720 cu.m. Pervious: 2,000 sq.m. × 0.1m × 0.3 = 60 cu.m. Total = 780 cu.m.",
+        "takeaway": "Runoff volume = Rainfall × (impervious area × coefficient + pervious area × coefficient). Higher impervious % = more runoff. Always include both contributions."
+      },
+      "explanation": null,
+      "code_citation": "Stormwater Runoff Calculation Using Runoff Coefficients",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b8f345c7ce575c29971e0035bba1ae447e620b206c461262eb455dbdc3c7535"
+    },
+    {
+      "question_id": "ae600be3-91b7-4889-b4a6-876cd098a99d",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A mixed-use development project proposes: (1) 60% impervious (buildings, pavement), (2) 30% green roofs on buildings, and (3) 10% ground-level permeable pavement. How does the green roof component contribute to stormwater management and overall site resilience?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Green roofs increase runoff by adding weight to the roof structure, which can lead to structural concerns"
+        },
+        {
+          "id": "b",
+          "text": "Green roofs are purely aesthetic; they do not contribute to stormwater management, which is a common misconception"
+        },
+        {
+          "id": "c",
+          "text": "Green roofs eliminate all stormwater runoff from the building, making ground-level drainage unnecessary, which is an overstatement"
+        },
+        {
+          "id": "d",
+          "text": "Green roofs reduce runoff by intercepting rainfall before it reaches ground-level drainage; additionally, they provide insulation, extend roof life, and create habitat"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Green roofs add weight but don't increase runoff; they reduce it by interception and retention.",
+        "b": "Green roofs are functional stormwater management, not merely aesthetic.",
+        "c": "Green roofs reduce but don't eliminate runoff; ground-level drainage is still required for larger events.",
+        "d": "Green roofs intercept and retain rainfall in growing media, reducing runoff from the roof. They also improve building insulation (reducing energy demand), extend roof membrane life, improve air quality, and provide habitat. They are multifunctional SuDS components.",
+        "correct": "Green roofs intercept and retain rainfall in growing media, reducing runoff from the roof. They also improve building insulation (reducing energy demand), extend roof membrane life, improve air quality, and provide habitat. They are multifunctional SuDS components.",
+        "takeaway": "Green roofs = stormwater reduction + energy efficiency + habitat + aesthetics. Multifunctional design is preferable."
+      },
+      "explanation": null,
+      "code_citation": "Green Infrastructure Co-Benefits",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bbcb7f3f8c263d864a95509b654336d2fd2839f8b2a6b76a3c9a279526101564"
+    },
+    {
+      "question_id": "db829fb1-825c-4e02-bb21-4cb5c5c88c1d",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A site plan for a residential development in a flooding-prone area integrates multiple stormwater management features: (1) reduced impervious surfaces (40% vs. typical 65%), (2) retention ponds covering 5% of site area, (3) permeable pavement in parking areas, (4) rain gardens, and (5) a bioretention swlea adjacent to the property boundary. What does this comprehensive approach exemplify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SuDS/green infrastructure mainstreaming into site design, addressing runoff reduction at source, managing volume through retention, improving quality through filtration, and providing co-benefits (habitat, aesthetics, resilience)"
+        },
+        {
+          "id": "b",
+          "text": "Excessive stormwater design that increases cost without proportional benefit, potentially leading to budget overruns"
+        },
+        {
+          "id": "c",
+          "text": "Redundant systems; only retention ponds are necessary for flood-prone sites, simplifying the design process"
+        },
+        {
+          "id": "d",
+          "text": "Compliance with municipal regulations without consideration of environmental or resilience outcomes, focusing solely on legal requirements"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This represents integrated SuDS design: runoff reduction at source (permeable surfaces, green roofs), volume management (retention, detention), quality improvement (bioretention, swales), and resilience co-benefits (habitat, groundwater recharge, aesthetics). It exemplifies contemporary best practice.",
+        "b": "Comprehensive design is cost-effective over project lifecycle and provides resilience; it is not excessive.",
+        "c": "Retention alone is passive; combining source reduction, retention, and treatment is more effective.",
+        "d": "Compliance alone doesn't require this level of integration; this design exceeds minimum, providing resilience.",
+        "correct": "This represents integrated SuDS design: runoff reduction at source (permeable surfaces, green roofs), volume management (retention, detention), quality improvement (bioretention, swales), and resilience co-benefits (habitat, groundwater recharge, aesthetics). It exemplifies contemporary best practice.",
+        "takeaway": "Comprehensive SuDS = source reduction + volume management + quality treatment + resilience co-benefits. This is contemporary best practice."
+      },
+      "explanation": null,
+      "code_citation": "Integrated SuDS Design and Best Practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e7223da80baf218cce8d7eb6473bb81837414f99dba1a6525f2526dd6e128243"
+    },
+    {
+      "question_id": "22e3df46-cbdf-41bd-88a5-473d414ee7f3",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A rain garden (bioretention area) is incorporated into a commercial site design. What are the dual benefits of this green infrastructure component?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provides landscaping aesthetics only; stormwater management still requires separate gray infrastructure, which must be designed to handle peak flow conditions"
+        },
+        {
+          "id": "b",
+          "text": "Increases property value without affecting stormwater management, as it does not contribute to runoff reduction or water quality improvement"
+        },
+        {
+          "id": "c",
+          "text": "Reduces stormwater quantity (infiltration) and improves water quality (filtration through soil and vegetation)"
+        },
+        {
+          "id": "d",
+          "text": "Replaces the need for all other drainage infrastructure on the site, eliminating the requirement for traditional stormwater systems"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Rain gardens ARE stormwater management; they supplement or replace gray infrastructure.",
+        "b": "Aesthetics are a co-benefit; primary function is stormwater management.",
+        "c": "Rain gardens are SuDS components that address both quantity (infiltration reduces runoff) and quality (vegetation and soil layers filter pollutants like sediment, oil, nutrients). They are multifunctional green infrastructure.",
+        "d": "Rain gardens are typically combined with other infrastructure for comprehensive site drainage.",
+        "correct": "Rain gardens are SuDS components that address both quantity (infiltration reduces runoff) and quality (vegetation and soil layers filter pollutants like sediment, oil, nutrients). They are multifunctional green infrastructure.",
+        "takeaway": "Green infrastructure (rain gardens, permeable pavement, swales) = quantity control + quality improvement + aesthetics."
+      },
+      "explanation": "Rain gardens ARE stormwater management; they supplement or replace gray infrastructure. Aesthetics are a co-benefit; primary function is stormwater management. Rain gardens are SuDS components that address both quantity (infiltration reduces runoff) and quality (vegetation and soil layers filter pollutants like sediment, oil, nutrients). They are multifunctional green infrastructure. Rain gardens are typically combined with other infrastructure for comprehensive site drainage. Rain gardens are SuDS components that address both quantity (infiltration reduces runoff) and quality (vegetation and soil layers filter pollutants like sediment, oil, nutrients). They are multifunctional green infrastructure. Green infrastructure (rain gardens, permeable pavement, swales) = quantity control + quality improvement + aesthetics.",
+      "code_citation": "Sustainable Drainage Systems (SuDS) Benefits",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-05-06T15:09:23.191804+00:00",
+      "content_hash": "sha256:29765b9c5b4ce595e828eafd8f6311eada7b5d8f2b2383ea4550d3989e9bb3fa"
+    },
+    {
+      "question_id": "2e126bdb-bbc4-4877-a2e4-1060852b537c",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A high-density residential development adjacent to a river is proposed. Stormwater runoff from roofs and pavement will discharge to the river. According to RA 9275 (Philippine Clean Water Act), what requirement applies to this discharge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The developer may discharge stormwater directly to the river without treatment; rivers naturally filter runoff, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "The developer must implement stormwater treatment (filtration, settling, or bioretention) before discharge to meet RA 9275 water quality standards"
+        },
+        {
+          "id": "c",
+          "text": "Treatment is optional if a detention pond temporarily stores the runoff, which is often misunderstood as a complete solution"
+        },
+        {
+          "id": "d",
+          "text": "RA 9275 applies only to sewage, not to stormwater runoff, which is a frequent misinterpretation of the law"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Rivers do not treat runoff adequately; RA 9275 requires site-level treatment.",
+        "b": "RA 9275 mandates treatment of wastewater (including stormwater from commercial/high-density residential) before discharge to water bodies. Untreated runoff contains sediment, oil, heavy metals, and nutrients that violate water quality standards.",
+        "c": "Detention provides settling but may not achieve full RA 9275 compliance; treatment (bioretention, SuDS) is required.",
+        "d": "RA 9275 covers both wastewater and stormwater runoff quality.",
+        "correct": "RA 9275 mandates treatment of wastewater (including stormwater from commercial/high-density residential) before discharge to water bodies. Untreated runoff contains sediment, oil, heavy metals, and nutrients that violate water quality standards.",
+        "takeaway": "RA 9275 mandates stormwater treatment (via SuDS or other mechanisms) from commercial and high-density residential developments."
+      },
+      "explanation": null,
+      "code_citation": "RA 9275 (Philippine Clean Water Act)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f4756e2b4bd93b87be01c9d7f96a2c51ff418cc1448a66fbe17dcc732643b01d"
+    }
+  ]
+}

@@ -8,36 +8,37 @@
       "question_id": "665207a1-f773-4be3-9866-16d87239264c",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "When a site plan shows setbacks of 4m (front), 2m (sides), and 6m (rear) on a rectangular lot 60m wide × 50m deep, which statement correctly describes how these setbacks define the buildable envelope?",
+      "text": "What does PD 1096 require a site development plan to show?",
       "options": [
         {
           "id": "a",
-          "text": "Setbacks establish a rectangular area inside the lot boundary; total area reduction is the sum of all setback depths, which must be calculated to ensure compliance with zoning regulations"
+          "text": "Technical description, boundaries, orientation, building position, access/driveways, and existing public utilities/services."
         },
         {
           "id": "b",
-          "text": "Setbacks create a smaller rectangle by reducing width by (2m + 2m sides) and depth by (4m + 6m); buildable width = 56m, depth = 40m"
+          "text": "Only interior furniture."
         },
         {
           "id": "c",
-          "text": "Only front and rear setbacks apply to depth; side setbacks do not reduce the buildable area when both sides are equal, which is a common misconception"
+          "text": "Only a rendered perspective."
         },
         {
           "id": "d",
-          "text": "Setback restrictions apply only to perimeter buildings; interior buildings have no setback requirement, which is incorrect for most zoning laws"
+          "text": "Only a color schedule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While conceptually correct, this does not provide the specific calculation; answer b is more complete.",
-        "c": "Side setbacks absolutely reduce buildable width; both sides must be deducted.",
-        "d": "Setback restrictions apply uniformly to all buildable structures on the lot.",
-        "correct": "Setbacks reduce all dimensions: width = 60 - 2 - 2 = 56m (from both side setbacks), depth = 50 - 4 - 6 = 40m (from front and rear). The buildable envelope = 56 × 40 = 2,240 m² rectangle.",
-        "takeaway": "Each setback distance is subtracted from the corresponding lot dimension. Buildable dimensions = lot width - (left setback + right setback) and lot depth - (front setback + rear setback)."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked PD 1096 text lists those site development plan contents.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "National Building Code; LEA-DSGN-001-04",
@@ -51,43 +52,44 @@
       "model_id": "ALE-DSGN-012-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.528176+00:00",
       "content_hash": "sha256:629849b88b54258877d0d6831078343efff5af4fcf5c58ba4af3fa5dec6ea27c"
     },
     {
       "question_id": "03562e6d-5967-483c-a96f-4223b3c75b46",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "For a 1,500 m² residential lot zoned with PSO of 50% and maximum 4 floors, what is the Total Gross Floor Area (TGFA)?",
+      "text": "Which BCI site-plan item is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "2,500 m²"
+          "text": "North arrow and scale of drawing."
         },
         {
           "id": "b",
-          "text": "3,000 m²"
+          "text": "A memorized PD 957 open-space percentage without source."
         },
         {
           "id": "c",
-          "text": "3,500 m²"
+          "text": "A fixed river setback from memory."
         },
         {
           "id": "d",
-          "text": "4,000 m²"
+          "text": "A guaranteed height bonus."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This results from treating PSO as 50% of area × 4 floors = 1,500 × 0.5 × 4 ÷ 2.5, which is incorrect.",
-        "c": "This uses an incorrect PSO percentage or intermediate calculation.",
-        "d": "This assumes 50% of lot × 4 = 3,000, then adds error.",
-        "correct": "AMBF = 1,500 × 0.50 = 750 m². TGFA = AMBF × floors = 750 × 4 = 3,000 m². This is the correct formula sequence.",
-        "takeaway": "TGFA = (TLA × PSO) × floors. First calculate AMBF, then multiply by permitted floors. Avoid multiplying TLA by PSO by floors directly (ERR-DSGN-007)."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source lists north arrow and scale among site-plan information.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "National Building Code; Development Control Formula",
@@ -101,30 +103,30 @@
       "model_id": "ALE-DSGN-012-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.533128+00:00",
       "content_hash": "sha256:8d7fd581db1076f48f37372c88861046031769a0ae06c823e820dba4689050ac"
     },
     {
       "question_id": "4248d05a-0bac-4226-a852-3973cab23c4a",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "A rectangular commercial lot (75m × 60m) has mandatory setbacks: 5m (front), 3m (both sides), 4m (rear). Calculate: (a) buildable envelope dimensions, (b) net buildable footprint area.",
+      "text": "How should setbacks be handled in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "(a) Width 69m × Depth 51m; (b) 3,519 m²"
+          "text": "Show and apply setbacks supplied by the source or problem; do not invent unchecked values."
         },
         {
           "id": "b",
-          "text": "(a) Width 69m × Depth 48m; (b) 3,312 m²"
+          "text": "Always use one universal setback."
         },
         {
           "id": "c",
-          "text": "(a) Width 75m × Depth 51m; (b) 3,825 m² (ignores width reduction)"
+          "text": "Ignore setbacks if the site is rectangular."
         },
         {
           "id": "d",
-          "text": "(a) Width 68m × Depth 51m; (b) 3,468 m²"
+          "text": "Replace setbacks with facade color."
         }
       ],
       "correct_option_id": "a",
@@ -133,11 +135,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Uses incorrect depth (48m instead of 51m); miscalculates area.",
-        "c": "Ignores side setback reduction; width remains 75m (error).",
-        "d": "Subtracts only one side setback (68m width); incomplete calculation.",
-        "correct": "Width: 75 - 3 - 3 = 69m. Depth: 60 - 5 - 4 = 51m. Area: 69 × 51 = 3,519 m². This buildable envelope is the rectangle within which structures must fit, respecting all setback requirements.",
-        "takeaway": "Setbacks reduce buildable envelope on all dimensions: width = lot width − (left setback + right setback); depth = lot depth − (front setback + rear setback). Calculate carefully for all four sides. The resulting buildable area is the rectangle where the structure must fit."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The source-safe protocol avoids unsupported numeric zoning claims.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "National Building Code; LEA-DSGN-001-04",
@@ -151,43 +154,44 @@
       "model_id": "ALE-DSGN-012-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.530841+00:00",
       "content_hash": "sha256:54a318dda3cfc22ba2fe3959308ee9e048a95c5492ee7c65104f0bfe1e21ea45"
     },
     {
       "question_id": "866e2c38-43dd-4773-b0e1-a44100981cf0",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "A residential lot measures 2,000 m² with front, side, and rear setbacks of 3m, 2m (both), and 5m respectively. If the lot is 50m wide and 40m deep, what is the approximate buildable footprint area before applying PSO limits?",
+      "text": "What should be shown for existing/adjoining buildings under the checked PD 1096 text?",
       "options": [
         {
           "id": "a",
-          "text": "1,200 m²"
+          "text": "Existing buildings within and adjoining the lot, with distances between proposed and existing buildings indicated."
         },
         {
           "id": "b",
-          "text": "1,364 m²"
+          "text": "Only building names."
         },
         {
           "id": "c",
-          "text": "1,500 m²"
+          "text": "Only interior finishes."
         },
         {
           "id": "d",
-          "text": "1,800 m²"
+          "text": "Nothing if a perspective exists."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This assumes larger setback deductions or calculation error.",
-        "c": "This ignores some setback reductions.",
-        "d": "This only subtracts the rear setback and one side setback.",
-        "correct": "After subtracting setbacks (3m front, 2m sides, 5m rear), the buildable width = 50 - 2 - 2 = 46m, and depth = 40 - 3 - 5 = 32m. Area = 46 × 32 = 1,472 m². Option (b) 1,364 m² is the closest available, though the 108 m² discrepancy (7.3%) suggests either: (1) the question intends approximate answers, or (2) there is an unstated constraint (e.g., additional easement or safety margin). Clarify the source of this variance or recalculate to match an option exactly.",
-        "takeaway": "Setbacks reduce buildable envelope on all sides; subtract all applicable distances before determining maximum footprint."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "PD 1096 requires existing/adjoining structures and distances to be shown.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "National Building Code; LEA-DSGN-001-04",
@@ -201,43 +205,44 @@
       "model_id": "ALE-DSGN-012-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.530024+00:00",
       "content_hash": "sha256:bfb956a148abb97b09a4cabb9eebe2b93c38b35a0bfb0ccb1fa323f0ebc5043e"
     },
     {
       "question_id": "9a5ff707-3761-4d6f-babb-669c39db469d",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "Why is understanding the relationship between zoning regulations (PSO, FLAR, BHL) and site planning fundamentally important in the early design phases?",
+      "text": "Which site-plan data supports elevation control?",
       "options": [
         {
           "id": "a",
-          "text": "These regulations determine the maximum buildable area and floor count, defining the project's feasibility and financial viability"
+          "text": "Benchmarks that establish reference points for location and elevations of new construction."
         },
         {
           "id": "b",
-          "text": "They are bureaucratic constraints to be navigated but have minimal impact on architectural design"
+          "text": "Paint swatches."
         },
         {
           "id": "c",
-          "text": "Understanding them allows designers to avoid costly design changes late in the development process"
+          "text": "Furniture labels."
         },
         {
           "id": "d",
-          "text": "Both (a) and (c)"
+          "text": "Door hardware sets only."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "True but incomplete; benefits extend beyond just determining maximum area.",
-        "b": "This is dangerously incorrect; zoning shapes the entire project scope.",
-        "c": "True; early understanding prevents costly late changes.",
-        "correct": "Zoning regulations (PSO, FLAR, BHL) directly determine: (1) how much area can be built (feasibility/economics), (2) the density and form of the project (architectural character), (3) the parking and open space requirements (site planning constraints). Understanding these early prevents wasted design iterations, ensures financial viability, and enables informed decisions on lot selection, partnership structuring, and timeline. Ignoring them leads to redesigns, cost overruns, and missed opportunities.",
-        "takeaway": "Zoning analysis is not a compliance checkbox—it is a strategic design tool. Integrate zoning constraints into site planning during conceptual design to unlock maximum value and avoid rework."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked BCI source lists benchmarks for location and elevation.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Zoning & Site Planning Best Practices; LEA-DSGN-001-04",
@@ -251,30 +256,30 @@
       "model_id": "ALE-DSGN-012-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.534595+00:00",
       "content_hash": "sha256:fee17826a33b864d4f02eb68b60a8c4e6f4070c79feab2a3ba9d1484c57d3002"
     },
     {
       "question_id": "83c00e95-6bb7-40dd-8c62-da903ddf6796",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "A subdivision of 10,000 m² must allocate open space per PD 957. If utility easements consume 300 m², what net area remains for development after open space and easement reservation?",
+      "text": "A problem gives setbacks of 5 m, 3 m, 3 m, and 4 m. What may you do?",
       "options": [
         {
           "id": "a",
-          "text": "6,700 m²"
+          "text": "Calculate buildable area from the given values, while citing the problem data as the source of the numbers."
         },
         {
           "id": "b",
-          "text": "7,000 m²"
+          "text": "Replace them with a different memorized table."
         },
         {
           "id": "c",
-          "text": "7,300 m²"
+          "text": "Ignore the rear setback."
         },
         {
           "id": "d",
-          "text": "9,700 m²"
+          "text": "Assume all setbacks are zero."
         }
       ],
       "correct_option_id": "a",
@@ -283,11 +288,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This subtracts only open space (7,000 m²), forgetting easement impact.",
-        "c": "This assumes easements are deducted differently or open space calculated incorrectly.",
-        "d": "This only accounts for easements and ignores open space mandate.",
-        "correct": "PD 957 requires 30% open space: 10,000 × 0.30 = 3,000 m². After subtracting easements (300 m²), net area = 10,000 - 3,000 - 300 = 6,700 m².",
-        "takeaway": "Open space requirement (30%) is applied to gross area first, then utility easements are deducted from remaining buildable area. Both reduce net developable land."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "Problem-given values may be used; unsupported external values should not be invented.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 957; Utility Easement Standards",
@@ -301,43 +307,44 @@
       "model_id": "ALE-DSGN-012-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.533859+00:00",
       "content_hash": "sha256:cf7fb220c4a1e2c86d4f72563bb81ec127eb29cb874a6ea4c0f1e6eaf08dd9d1"
     },
     {
       "question_id": "b59d932c-860c-4316-a719-06cf79f6ce81",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "A site plan shows a river on the eastern boundary. Per PD 1067, what is the minimum setback distance required from the riverbank for building placement?",
+      "text": "Which access information belongs in site development planning?",
       "options": [
         {
           "id": "a",
-          "text": "6 meters"
+          "text": "Existing or proposed access roads, driveways, adjacent streets, alleys, and rights-of-way."
         },
         {
           "id": "b",
-          "text": "12 meters"
+          "text": "Only ceiling heights."
         },
         {
           "id": "c",
-          "text": "20 meters"
+          "text": "Only furniture counts."
         },
         {
           "id": "d",
-          "text": "30 meters"
+          "text": "Only wall paint."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is only the direct river buffer; the full easement setback is larger.",
-        "b": "This represents the sum but does not reflect the additional easement requirement.",
-        "d": "This exceeds the standard requirement unless locally mandated.",
-        "correct": "PD 1067 Section 49 establishes a 3m easement from the riverbank (for public use/irrigation). For building development, a 20m setback from the riverbank is typically required in residential/commercial zones. The 6m reference is not standard under PD 1067; verify local ordinance. Correct answer (c) 20m reflects the development setback, not a cumulative 26m buffer.",
-        "takeaway": "PD 1067 establishes a dual buffer: 6m minimum from water + 20m setback from bank. Always verify local environmental regulations for additional restrictions."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "PD 1096 and BCI site-plan sources include access roads, driveways, streets, and rights-of-way.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1067 (Water Code of the Philippines)",
@@ -351,43 +358,44 @@
       "model_id": "ALE-DSGN-012-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.531615+00:00",
       "content_hash": "sha256:8383efff21523a00561e8f76415e75ca7796745237d27d5b28bc5b7473c6d423"
     },
     {
       "question_id": "c38bbc3a-dab9-4d3f-be64-ea714ddd85e8",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "A site development plan must integrate a 3m utility easement corridor, 30% open space (PD 957), and 50% PSO zoning on a 5,000 m² lot. Rank the order in which these constraints are typically applied when determining net buildable area.",
+      "text": "Why coordinate utilities on the site development plan?",
       "options": [
         {
           "id": "a",
-          "text": "Apply PSO first, then deduct open space, then subtract easement"
+          "text": "Utilities affect building placement, access, easements, service routes, and construction feasibility."
         },
         {
           "id": "b",
-          "text": "Deduct open space and easement from gross area, then apply PSO to remainder"
+          "text": "Utilities are unrelated to the site."
         },
         {
           "id": "c",
-          "text": "Apply PSO to gross area, then deduct open space and easement separately"
+          "text": "Utilities appear only after occupancy."
         },
         {
           "id": "d",
-          "text": "All constraints are applied simultaneously; order does not matter"
+          "text": "Utilities replace legal boundaries."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This inverts the proper sequence; PSO applies to the buildable envelope after public/utility dedications.",
-        "c": "This omits easement deduction before applying PSO.",
-        "d": "Order absolutely matters; applying constraints in the wrong sequence can underestimate or overestimate buildable area.",
-        "correct": "Correct sequence: (1) Start with gross area (10,000 m²), (2) deduct open space (30% = 3,000 m²) and easement (300 m²), leaving 6,700 m² net developable area. The question asks for 'net area remains for development' (answer a: 6,700 m²), NOT the AMBF after applying PSO (which would be 3,350 m²). Do not apply PSO in this question; it asks only for net area after public/utility dedications. If PSO were applied, the result would be 3,350 m², but that is not what the question asks.",
-        "takeaway": "Deduct public and utility obligations (open space, easements) from gross area first, then apply zoning density (PSO) to the remaining area. This preserves both public interest and individual site development rights."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked PD 1096 source includes public utilities/services in the site development plan.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 957; National Building Code; LEA-DSGN-001-04",
@@ -401,30 +409,30 @@
       "model_id": "ALE-DSGN-012-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.532376+00:00",
       "content_hash": "sha256:293983ab9b7b144968f3f0aa9dcef697db04dd545c703a244fcfc8eb055079b2"
     },
     {
       "question_id": "84fd3f5f-372f-4b21-b8cd-f6a243912bee",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "A commercial site must comply with an 8-story height limit, 60% PSO, and a 3,000 m² lot. [If ERR-DSGN-006 is a known error correction in the question bank, define it in a glossary or footnote for student reference.] If the resulting TGFA is 14,400 m², what net floor area is available on each floor after accounting for common areas (stairs, corridors, mechanical) consuming 10% of gross?",
+      "text": "What is the safest response to mixed zoning/easement/open-space calculations without sources?",
       "options": [
         {
           "id": "a",
-          "text": "1,620 m² per floor"
+          "text": "Ask for controlling values or use only values supplied by the problem."
         },
         {
           "id": "b",
-          "text": "1,700 m² per floor"
+          "text": "Invent every missing value."
         },
         {
           "id": "c",
-          "text": "1,800 m² per floor"
+          "text": "Use the largest number only."
         },
         {
           "id": "d",
-          "text": "1,900 m² per floor"
+          "text": "Ignore all constraints."
         }
       ],
       "correct_option_id": "a",
@@ -433,11 +441,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This would result from a 5.6% common area deduction; not the stated 10%.",
-        "c": "This is the gross floor area per level; it ignores common area deduction.",
-        "d": "This exceeds gross floor area; calculation error.",
-        "correct": "TGFA per floor = 14,400 ÷ 8 = 1,800 m². After deducting 10% for common areas: 1,800 × 0.90 = 1,620 m². This represents the net usable floor area available for tenant or occupant use.",
-        "takeaway": "Gross per-floor area minus common area percentage = net usable area. Common areas (stairs, mechanical, corridors) are always subtracted from gross floor area to determine rentable or saleable space. Typical range: 10–20% of gross."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The local-first protocol avoids unchecked legal/numeric claims.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "National Building Code; Development Control Formula",
@@ -451,43 +460,44 @@
       "model_id": "ALE-DSGN-012-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.529172+00:00",
       "content_hash": "sha256:34926022d6d045f44247f3d376daeaf281536494fb8696668c4db6dfb284c6ea"
     },
     {
       "question_id": "41815c18-c8a8-40f0-82e0-7f8e81dd1be2",
       "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
       "topic_id": "2535f611-08e7-4446-924d-6b585d2cc22f",
-      "text": "When designing site access for a residential development, which of the following correctly represents the relationship between road hierarchy and pedestrian/vehicle integration?",
+      "text": "What is the core purpose of a site development plan?",
       "options": [
         {
           "id": "a",
-          "text": "Major arterials (10m) should carry all site traffic; local roads only serve parking, which minimizes congestion on main thoroughfares"
+          "text": "Coordinate the proposed building with the lot, access, utilities, existing/adjoining structures, and site constraints."
         },
         {
           "id": "b",
-          "text": "Major arterials connect to collector roads (8m), which feed local roads (6m) that serve individual parcels"
+          "text": "Serve only as a marketing image."
         },
         {
           "id": "c",
-          "text": "Local roads should connect directly to arterials to minimize traffic distance, reducing travel time within the development"
+          "text": "Replace all engineering drawings."
         },
         {
           "id": "d",
-          "text": "Pedestrian paths follow vehicular roads; no separate pedestrian hierarchy needed, as shared spaces are more efficient"
+          "text": "Show only room furniture."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This misunderstands road function; local roads are essential for site-scale distribution.",
-        "c": "Direct arterial access increases traffic conflict and violates hierarchy principles.",
-        "d": "Pedestrian paths must be separate, safe, and independently accessible (per BP 344 accessibility standards).",
-        "correct": "Road hierarchy (per PD 957 Subdivision Code and local traffic engineering standards) follows a pyramid: major arterials → collector roads → local roads. BP 220 addresses minimum lot/floor areas and setbacks for socialized housing, not road hierarchy. This structure distributes traffic incrementally and allows site parcels to connect safely via local roads.",
-        "takeaway": "Road hierarchy ensures traffic flows from high-volume arterials through progressively smaller collectors to local roads. Pedestrian circulation must be independent and accessible."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked sources define site development as coordinated placement and site information.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "BP 220; Traffic Engineering Principles",
@@ -501,7 +511,7 @@
       "model_id": "ALE-DSGN-012-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.625791+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.526869+00:00",
       "content_hash": "sha256:f8e6130287a608064b4e479566f15e6040e9e1dc7b8ed44c5784c88aede5fb81"
     }
   ]

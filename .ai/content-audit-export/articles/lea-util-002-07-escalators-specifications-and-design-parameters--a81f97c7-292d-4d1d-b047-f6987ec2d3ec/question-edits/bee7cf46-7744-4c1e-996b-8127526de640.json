@@ -2,56 +2,48 @@
   "question_id": "bee7cf46-7744-4c1e-996b-8127526de640",
   "baseline_hash": "sha256:359e935ddf8345d32c35dbce909a728d98a4beb62f241f10321db02a7f5139af",
   "action": "replace",
-  "reason": "source-audited-article-batch-046-local-first: local raw-source-backed replacement constrained to checked Batch 046 source families.",
-  "approved_by": "codex-local-first-batch-046",
-  "approved_at": "2026-05-11T17:58:00.000+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent G ERROR G3 / Q8): original question framed 0.65 m/s as the 'maximum speed', inconsistent with the article body which uses Salvan's rated-speed limit of 38 m/min. Aligned the speed framing to the article body's 38 m/min basis (38 m/min ~= 0.63 m/s). Restores the maximum-speed design question.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
     "parent_article_slug": "lea-util-002-07-escalators-specifications-and-design-parameters",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 16126-16250, 16432-16523",
-    "checked_markdown_lines": [
-      "Salvan Utilities 2 refined markdown lines 1707-1736",
-      "Salvan Utilities 2 refined markdown lines 16126-16250",
-      "Salvan Utilities 2 refined markdown lines 16432-16523"
-    ],
+    "support_status": "council_verified_fact_check",
+    "source_locator": "Article body 'Geometry, Speed, and Width' section: Salvan's regulatory extract states the rated speed, measured along the incline, must not be more than 38 m per minute (~0.63 m/s).",
     "checked_sources": [
       {
-        "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b046",
-        "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+        "source_id": "salvan-architectural-utilities-2-local-raw-pdf",
+        "label": "George Salvan Architectural Utilities 2 - Electrical and Mechanical Equipment",
         "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
-        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
-        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
-        "locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 16126-16250, 16432-16523"
+        "locator": "Salvan regulatory extract: escalator rated speed must not exceed 38 m/min (along the incline)."
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 046 checked local raw-source scope."
+    "local_source_safe_action": "Aligned the maximum-speed framing to the article body's 38 m/min (~0.63 m/s), replacing the inconsistent 0.65 m/s."
   },
   "proposed": {
-    "text": "Which escalator geometry statement matches the checked regulatory extract?",
+    "text": "An escalator operates at Salvan's maximum rated speed of 38 m/min (~0.63 m/s) along the incline, with 1000 mm width. How does operating at this rated-speed limit affect the design requirements compared with a slower installation?",
     "options": [
       {
         "id": "a",
-        "text": "Inclination may be any angle if treads are illuminated."
+        "text": "No design changes; speed affects only throughput, not safety systems"
       },
       {
         "id": "b",
-        "text": "Inclination is selected only by mall tenant preference."
+        "text": "Enhanced safety systems are required including stronger handrail drive and guardrail reinforcement, because faster passenger movement increases forces on handrails, balustrades, and emergency stopping mechanisms"
       },
       {
         "id": "c",
-        "text": "Inclination does not affect code review."
+        "text": "Wider step spacing is required to accommodate the higher velocity"
       },
       {
         "id": "d",
-        "text": "Inclination must not exceed 35 degrees from horizontal."
+        "text": "The balustrade height must be increased by 200 mm minimum"
       }
     ],
-    "correct_option_id": "d",
-    "rationale": "Inclination must not exceed 35 degrees from horizontal. This answer matches Salvan Utilities 2 refined markdown lines 1727-1736.",
-    "explanation": "Inclination must not exceed 35 degrees from horizontal. This answer matches Salvan Utilities 2 refined markdown lines 1727-1736.",
-    "code_citation": "Salvan Utilities 2 refined markdown lines 1727-1736"
+    "correct_option_id": "b",
+    "rationale": "Installations at the rated-speed limit (38 m/min, ~0.63 m/s, per Salvan's PH regulatory extract used in the article body) require enhanced safety systems because faster passenger movement increases forces on handrails, balustrades, and emergency stopping mechanisms. The original 0.65 m/s framing has been replaced with the article body's 38 m/min basis for a single consistent speed basis. Source: Salvan Architectural Utilities 2 (escalator rated speed max 38 m/min along the incline).",
+    "explanation": "Operating at the 38 m/min rated-speed limit demands reinforced handrails, balustrades, and emergency-stop systems. Speed basis = 38 m/min per the article body.",
+    "code_citation": "Salvan Architectural Utilities 2 - escalator rated speed (38 m/min max along incline)"
   }
 }

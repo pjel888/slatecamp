@@ -8,37 +8,37 @@
       "question_id": "61f8acf9-e047-4376-a838-5629f183ecc6",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "A detail marker shown as a circled number (e.g., ⊙ 3) is placed on an elevation drawing. What is the purpose of this symbol?",
+      "text": "What is the main purpose of a detail marker on an architectural drawing?",
       "options": [
         {
           "id": "a",
-          "text": "To indicate a room number in the building, which is not the typical use of a detail marker"
+          "text": "To show where a larger-scale detail can be found"
         },
         {
           "id": "b",
-          "text": "To reference an enlarged detail drawing; the detail will be titled 'Detail 3' and drawn at a larger scale to show construction methods and material assembly"
+          "text": "To replace all dimensions"
         },
         {
           "id": "c",
-          "text": "To show the location of a mechanical system component, which is not the purpose of this symbol"
+          "text": "To identify the project owner"
         },
         {
           "id": "d",
-          "text": "To mark windows or doors that require special ordering, which is not the standard use of a detail marker"
+          "text": "To set the north direction"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. Room numbers are noted separately, not with detail markers.",
-        "b": "Correct. You understand detail markers as references to enlarged construction details.",
-        "c": "Incorrect. Mechanical components are noted with specific mechanical symbols, not detail markers.",
-        "d": "Incorrect. Special ordering notes are annotations or schedules, not detail markers.",
-        "correct": "Detail markers are references to enlarged detail drawings. A detail marker on a plan or elevation (e.g., ⊙ 3) corresponds to a detail drawing labeled 'Detail 3', typically drawn at 1:20 or 1:10 scale to show construction assembly, material connections, and detailing that cannot be clearly shown at the overall drawing scale.",
-        "takeaway": "When you see a detail marker on a drawing, locate the corresponding detail drawing to understand the construction assembly at that location. Details are essential for contractors to understand exactly how materials connect and are assembled."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "A detail marker directs the reader from the plan, section, or elevation to a larger-scale detail.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": "Incorrect. Room numbers are noted separately, not with detail markers. Correct. You understand detail markers as references to enlarged construction details. Incorrect. Mechanical components are noted with specific mechanical symbols, not detail markers. Incorrect. Special ordering notes are annotations or schedules, not detail markers. Detail markers are references to enlarged detail drawings. A detail marker on a plan or elevation (e.g., ⊙ 3) corresponds to a detail drawing labeled 'Detail 3', typically drawn at 1:20 or 1:10 scale to show construction assembly, material connections, and detailing that cannot be clearly shown at the overall drawing scale. When you see a detail marker on a drawing, locate the corresponding detail drawing to understand the construction assembly at that location. Details are essential for contractors to understand exactly how materials connect and are assembled.",
       "code_citation": "Architectural drawing conventions",
@@ -52,30 +52,30 @@
       "model_id": "ALE-DSGN-011-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-05-06T13:20:03.159252+00:00",
+      "updated_at": "2026-07-20T01:13:23.605616+00:00",
       "content_hash": "sha256:1e79a716da66a0eda2ce53479e240dda8076819d65ee62ebb31809bc742fb443"
     },
     {
       "question_id": "d7ff630d-006c-4a1a-80b4-d7ab3a0c0014",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "An architectural drawing set includes a legend defining all symbols used. A floor plan uses symbols not found in the legend. What concern does this raise?",
+      "text": "A plan uses several undefined symbols. What is the best source-safe critique?",
       "options": [
         {
           "id": "a",
-          "text": "No concern; architects can use any symbols they choose as long as the drawing intent is clear, which is not a best practice"
+          "text": "Undefined symbols are acceptable if they look familiar."
         },
         {
           "id": "b",
-          "text": "High concern; undefined symbols create ambiguity and are difficult for builders and inspectors to interpret; all symbols must be defined in a legend"
+          "text": "Symbols must be coordinated with a legend, schedule, notes, or specifications so reviewers and builders can interpret them."
         },
         {
           "id": "c",
-          "text": "Minor concern; the contractor can request clarification if needed, though this can delay the project"
+          "text": "Only electrical symbols need legends."
         },
         {
           "id": "d",
-          "text": "The symbols may be standard and do not require definition, which can lead to misunderstandings"
+          "text": "The title block can replace every symbol definition."
         }
       ],
       "correct_option_id": "b",
@@ -84,12 +84,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. Symbols must be standardized and defined; undefined symbols create misunderstandings.",
-        "b": "Correct. You recognized the importance of comprehensive symbol definition.",
-        "c": "Incorrect. Requiring contractor clarification on undefined symbols is a professional error that can lead to mistakes.",
-        "d": "Incorrect. Even standard symbols should be briefly defined in a legend to ensure clarity.",
-        "correct": "Architectural drawings must include a legend defining all symbols. Undefined symbols create confusion and may lead to construction errors, delays, and code violations. A clear legend ensures that all parties (contractors, inspectors, engineers) understand the drawing intent without ambiguity.",
-        "takeaway": "Always include a legend on drawing sheets that defines all symbols, abbreviations, and material notations. This is a professional requirement and ensures drawing clarity and construction accuracy."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "The checked drawing requirements rely on marks, schedules, details, materials, and labels to communicate clearly.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": "Incorrect. Symbols must be standardized and defined; undefined symbols create misunderstandings. Correct. You recognized the importance of comprehensive symbol definition. Incorrect. Requiring contractor clarification on undefined symbols is a professional error that can lead to mistakes. Incorrect. Even standard symbols should be briefly defined in a legend to ensure clarity. Architectural drawings must include a legend defining all symbols. Undefined symbols create confusion and may lead to construction errors, delays, and code violations. A clear legend ensures that all parties (contractors, inspectors, engineers) understand the drawing intent without ambiguity. Always include a legend on drawing sheets that defines all symbols, abbreviations, and material notations. This is a professional requirement and ensures drawing clarity and construction accuracy.",
       "code_citation": "Professional drawing standards; AIA guidelines",
@@ -103,44 +103,44 @@
       "model_id": "ALE-DSGN-011-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-05-06T13:20:03.284651+00:00",
+      "updated_at": "2026-07-20T01:13:23.608650+00:00",
       "content_hash": "sha256:0d32d6317b89df98355a48dc6f84e7fc2717ab321f1cf94910f56ebab92fd784"
     },
     {
       "question_id": "07a7f56b-61b7-4377-92fc-50283e74869b",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "On an architectural floor plan, a door is shown with a single arc extending from one edge of the opening. What does this arc represent?",
+      "text": "In a floor plan, what does a door arc primarily communicate?",
       "options": [
         {
           "id": "a",
-          "text": "The frame of the door (the border around the opening), which is typically made of wood or metal"
+          "text": "The path and direction of the door leaf swing"
         },
         {
           "id": "b",
-          "text": "The direction the door swings when opening; it shows the path of the door leaf in plan"
+          "text": "The window sill height"
         },
         {
           "id": "c",
-          "text": "The thickness of the door leaf (1.5 inches or 40 mm), which is standard for most interior doors"
+          "text": "The fire rating of the wall"
         },
         {
           "id": "d",
-          "text": "A decorative symbol indicating a specialty door, often used in high-end residential projects"
+          "text": "The number of storeys"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. The door frame is the solid lines at the opening edge; the arc represents the leaf movement.",
-        "b": "Correct. You understand the door swing symbol and its importance for space planning.",
-        "c": "Incorrect. The thickness of the door leaf is not shown by the swing arc; the arc shows movement direction.",
-        "d": "Incorrect. Door swings are standardized, not decorative.",
-        "correct": "The arc in the door symbol shows the swing direction and the space the door occupies when open. This is critical information for furniture layout, clearance planning, and egress design. A door swinging into a hallway blocks the hall; one swinging into a room keeps the hall clear.",
-        "takeaway": "Always read door swing direction carefully on plans. A door swinging incorrectly can block egress or create space conflicts. Single-swing doors show one arc; double-swing doors (accordion, barn) show two arcs."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "The door arc is a drawing convention for the door leaf swing path.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Architectural drawing conventions",
@@ -154,30 +154,30 @@
       "model_id": "ALE-DSGN-011-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.603229+00:00",
       "content_hash": "sha256:d519d93d6692b66009c453fbc59df0312f22d2a2eb58d05f301f183e0401cbbf"
     },
     {
       "question_id": "71ca302a-8527-45c6-8897-94c3218c801f",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "An elevation drawing shows a window schedule at the bottom listing: 'Window Type A: 1200 mm W × 1500 mm H, Double-hung, Aluminum frame'. On the elevation, these windows are marked with a label 'A'. What is the architect communicating?",
+      "text": "A window tag \"A\" appears on the elevation. What should the reviewer check next?",
       "options": [
         {
           "id": "a",
-          "text": "All windows labeled 'A' on the elevation match the specifications in the schedule; they have identical dimensions, type, and frame material"
+          "text": "The window schedule for type, dimensions, material, and number of sets"
         },
         {
           "id": "b",
-          "text": "The window schedule is optional; the label 'A' is sufficient to identify the window, even if the schedule is not consulted"
+          "text": "The plumbing riser diagram only"
         },
         {
           "id": "c",
-          "text": "Each window labeled 'A' might have different dimensions; the schedule shows only one example, which may not represent all instances"
+          "text": "The site boundary bearing only"
         },
         {
           "id": "d",
-          "text": "Window schedules are outdated; modern practice uses detailed specifications on the elevation drawing itself, eliminating the need for separate schedules"
+          "text": "The fire hydrant location only"
         }
       ],
       "correct_option_id": "a",
@@ -186,12 +186,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct. You understand schedules as specifications for all components labeled with a letter or number.",
-        "b": "Incorrect. A schedule is essential; labels alone are insufficient without specifications.",
-        "c": "Incorrect. A schedule establishes that all windows with the same label are identical.",
-        "d": "Incorrect. Schedules are current practice and necessary for clear communication.",
-        "correct": "A window schedule is essential documentation. When multiple windows are labeled 'A', they are all identical to the specifications shown in the schedule (1200 mm W × 1500 mm H, double-hung, aluminum). This standardizes components, reduces costs, and aids construction coordination.",
-        "takeaway": "Schedules (doors, windows, finishes, hardware) are critical architectural documentation. They standardize components and allow the elevation to show placement clearly while the schedule shows detailed specifications. Always cross-reference labels on drawings with schedule entries."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "PD 1096 drawing requirements include schedules of doors and windows with types, marks, dimensions, materials, and number of sets.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Architectural documentation standards",
@@ -205,44 +205,44 @@
       "model_id": "ALE-DSGN-011-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.604842+00:00",
       "content_hash": "sha256:55fefd7c92aedb292b6edd7395bbb8c5ee43d77c3c467b001b9b436fd11d85c2"
     },
     {
       "question_id": "f92e7919-cd82-4796-9faa-a30eadc63eb8",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "A floor plan shows a stairwell with parallel lines indicating treads, and an arrow pointing upward labeled '12R'. What does '12R' represent?",
+      "text": "On a stair plan, what does the notation \"12R\" normally indicate?",
       "options": [
         {
           "id": "a",
-          "text": "12 risers (vertical steps); the stair rises through 12 story levels"
+          "text": "Twelve roof drains"
         },
         {
           "id": "b",
-          "text": "12 runs (treads); the horizontal length of the stair, which is measured from the first to the last tread in a continuous sequence"
+          "text": "Twelve risers"
         },
         {
           "id": "c",
-          "text": "12 feet rise; the total vertical height, calculated from the base to the topmost point of the stairwell structure"
+          "text": "Twelve storeys"
         },
         {
           "id": "d",
-          "text": "12 revolutions; the stair spirals 12 times around a central axis, creating a complex helical form"
+          "text": "Twelve meters of road"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct. You identified 'R' as risers and understood the notation correctly.",
-        "b": "Incorrect. 'R' stands for risers (vertical), not runs/treads (horizontal). Treads are typically denoted 'T' or counted as one less than risers.",
-        "c": "Incorrect. '12R' indicates 12 steps, not a measurement in feet. The actual vertical height depends on the riser height (typically 150–190 mm).",
-        "d": "Incorrect. Spiral stairs are noted differently; this is a straight or standard stair with 12 risers.",
-        "correct": "In stair notation, 'R' means risers (vertical steps). '12R' indicates 12 risers, meaning the stair ascends through 12 vertical steps. This is essential information for understanding the stair's vertical reach and for coordination with floor heights. (Note: 12 risers typically correspond to 11 treads, as the top floor surface acts as the final step.)",
-        "takeaway": "Always note the number of risers on stairs. This, combined with the riser height, determines the total vertical rise. A standard riser is 150–190 mm; 12 risers ≈ 1800–2280 mm vertical rise (approximately one story)."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "In stair notation, R refers to risers; it is not a storey count.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Stair notation conventions; NBC accessibility standards",
@@ -256,30 +256,30 @@
       "model_id": "ALE-DSGN-011-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.601146+00:00",
       "content_hash": "sha256:dc01ba50e0b2ecf6807cd8a61d30e1f91fa17b4eacba736205fd4c303cfe1afe"
     },
     {
       "question_id": "3c199d9d-a9b8-4efe-aebf-58f19701a4c8",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "In a section drawing, a building exterior wall is shown with multiple layers: a dotted pattern (foundation), diagonal hatching at 45°, a wavy pattern, and diagonal lines at a steeper angle. Which layer is most likely the masonry wall?",
+      "text": "A section hatch is not defined in the legend or notes. What is the safest interpretation?",
       "options": [
         {
           "id": "a",
-          "text": "The dotted pattern (foundation)"
+          "text": "Assume it is masonry in every project."
         },
         {
           "id": "b",
-          "text": "The diagonal hatching at 45°"
+          "text": "Treat it as undefined until confirmed by legend, schedule, note, or specification."
         },
         {
           "id": "c",
-          "text": "The wavy pattern"
+          "text": "Ignore it because hatches are decorative."
         },
         {
           "id": "d",
-          "text": "The diagonal lines at a steeper angle"
+          "text": "Use it as a substitute for dimensions."
         }
       ],
       "correct_option_id": "b",
@@ -288,12 +288,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. Dotted pattern indicates concrete, not masonry.",
-        "b": "Correct. You identified the standard masonry hatching convention.",
-        "c": "Incorrect. Wavy pattern indicates insulation (thermal or acoustic).",
-        "d": "Incorrect. Steeper diagonal lines typically indicate wood framing.",
-        "correct": "The standard architectural convention is: diagonal hatching at 45° = masonry (brick, concrete block). The dotted pattern is concrete (foundation), wavy = insulation, and steep diagonal = wood framing. These are the standard notations used across architectural drawings.",
-        "takeaway": "Memorize standard hatching patterns: concrete=dots, masonry=45° diagonals, insulation=wavy, wood=steep diagonals, steel=cross-hatching. These appear consistently on architectural sections and details."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "Material hatching is a convention that must be coordinated with legends, schedules, notes, or specifications.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Architectural hatching conventions; Ching (2015)",
@@ -307,44 +307,44 @@
       "model_id": "ALE-DSGN-011-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.604031+00:00",
       "content_hash": "sha256:4d4f27d4be6b5c64934c45a5da22d4030dba165aa4562a54f3df0f4ef39ff0e5"
     },
     {
       "question_id": "c4b71c60-c172-4157-9311-df3089987971",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "A floor plan shows a wall with a dashed or dotted line pattern, and a leader line with annotation '2-HR Fire Wall'. What does this symbol communicate?",
+      "text": "A wall is tagged \"2-HR\" on a plan. What does that note communicate most directly?",
       "options": [
         {
           "id": "a",
-          "text": "The wall is temporary and will be removed later, which is not typically indicated by a fire rating"
+          "text": "A two-hour fire-resistance performance note to coordinate with code and specifications"
         },
         {
           "id": "b",
-          "text": "The wall must resist fire for 2 hours; it is fire-rated per NBC and must be constructed with specific materials and detailing"
+          "text": "A wall that is exactly two meters high"
         },
         {
           "id": "c",
-          "text": "The wall is made of a special 2-hour material, brand-named '2-HR', which is a misunderstanding of the annotation"
+          "text": "A two-hinge rule for doors"
         },
         {
           "id": "d",
-          "text": "The wall separates two floors and must be analyzed for sound transmission, which is unrelated to fire rating"
+          "text": "A two-room apartment label"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. Fire-rated walls are permanent features required by code, not temporary.",
-        "b": "Correct. You understood fire-rating notation as a regulatory requirement, not a material name.",
-        "c": "Incorrect. '2-HR' is a fire-rating duration (hours of resistance), not a product brand name.",
-        "d": "Incorrect. While fire walls do provide sound isolation, the notation refers to fire resistance, not sound transmission class (STC).",
-        "correct": "'2-HR Fire Wall' notation indicates the wall must achieve a 2-hour fire-rating per NBC fire safety standards. This requires specific construction: typically concrete or masonry with fire-rated insulation, sealed penetrations, and fireproofing of structural members. This is a regulatory requirement for compartmentalization and life safety.",
-        "takeaway": "Fire-rating notations are mandatory regulatory requirements. '1-HR' = 1 hour of fire resistance; '2-HR' = 2 hours. These walls require special construction and must be clearly identified and detailed on drawings for contractor understanding."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "A 2-HR tag is a performance notation, not a geometric dimension.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Fire Safety; fire-rating standards",
@@ -358,44 +358,44 @@
       "model_id": "ALE-DSGN-011-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.607135+00:00",
       "content_hash": "sha256:85831cc507a39ee86117732c48ff6f030eaea08f730555363ad34ba96d551c2a"
     },
     {
       "question_id": "af91097a-3d3a-4e1a-855b-ffb64f9fd043",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "A section drawing shows a steel beam with cross-hatching (perpendicular diagonal lines). What material does this hatching indicate?",
+      "text": "A drawing uses cross-hatching for a structural member, but no legend is provided. What should the candidate answer?",
       "options": [
         {
           "id": "a",
-          "text": "Steel (structural metal); cross-hatching is the standard convention for steel in architectural sections"
+          "text": "Cross-hatching always means steel in every legal context."
         },
         {
           "id": "b",
-          "text": "Concrete reinforced with steel, typically used in structural elements like beams and columns"
+          "text": "The material must be confirmed by the legend, notes, schedule, or specifications before relying on it."
         },
         {
           "id": "c",
-          "text": "Wood framing exposed to weather, which requires specific treatment to prevent decay"
+          "text": "The hatch controls even when the structural notes disagree."
         },
         {
           "id": "d",
-          "text": "Insulation with a vapor barrier, often used in exterior walls to control moisture"
+          "text": "The material cannot be shown in section."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct. You identified the steel hatching convention correctly.",
-        "b": "Incorrect. Reinforced concrete is shown with concrete hatching (dots), with rebar noted separately if needed.",
-        "c": "Incorrect. Exposed wood is shown with steep single diagonal lines, not cross-hatching.",
-        "d": "Incorrect. Insulation is shown with wavy lines or diagonal lines, not cross-hatching.",
-        "correct": "Cross-hatching (perpendicular diagonal lines, typically one set at 45° right and another at 45° left) is the standard convention for steel in architectural drawings. This distinguishes steel from masonry (single 45° diagonals) and wood (steep single diagonals).",
-        "takeaway": "Master the hatching conventions: steel=cross-hatching (×), masonry=45° single diagonals (\\\\\\), wood=steep diagonals, concrete=dots (···), insulation=wavy (~). These appear consistently in sections and details."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "The source-safe answer is to confirm symbols against coordinated drawing documentation, not to treat one hatch as universally controlling.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Architectural hatching standards; Ramsey & Sleeper (2007)",
@@ -409,44 +409,44 @@
       "model_id": "ALE-DSGN-011-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.607897+00:00",
       "content_hash": "sha256:ed26d2d8b2d933a91d10377862cf028e0183892ba0aeb8b7d4114c5dd052b40e"
     },
     {
       "question_id": "ddf458aa-01c2-4dbb-aef4-11009717c2a8",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "On a floor plan, a section cut is shown as a heavy line crossing the building from left to right, with arrows pointing upward at both ends and labeled 'Section A-A'. What does this notation tell you?",
+      "text": "What do arrows on a section cut line communicate?",
       "options": [
         {
           "id": "a",
-          "text": "A detail drawing of the left side of the building must be referenced, particularly focusing on structural elements and architectural features."
+          "text": "The direction in which the section is viewed"
         },
         {
           "id": "b",
-          "text": "A vertical cross-section will be drawn, viewing from the direction the arrows point; the section elevation will be labeled 'Section A-A'"
+          "text": "The required parking count"
         },
         {
           "id": "c",
-          "text": "The building must be divided into sections labeled A and A for structural analysis, which is a standard practice in complex architectural designs."
+          "text": "The property tax class"
         },
         {
           "id": "d",
-          "text": "An architectural detail at scale 1:10 exists for this location, providing insight into specific construction techniques and material usage."
+          "text": "The door hardware brand"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. Section cuts create vertical section views, not detail drawings (though a detail may be referenced separately).",
-        "b": "Correct. You understand section cut notation and can identify where the corresponding section drawing will be.",
-        "c": "Incorrect. Sections labeled A-A are not structural divisions; they are cross-sectional views for architectural documentation.",
-        "d": "Incorrect. Section cuts reference section elevations (vertical slices), not detail drawings, though a detail might exist at another location.",
-        "correct": "A section cut line with arrows and letter labels indicates that a vertical section (cross-section) drawing exists. The arrows show the viewing direction; you look perpendicular to the cut line in the direction the arrow points. The resulting section elevation is labeled with matching letters (A-A in this case).",
-        "takeaway": "When you see a section cut on a plan, always locate the corresponding section drawing (usually on the same sheet or a referenced sheet). The letter labels match: 'Section A-A' on the plan corresponds to 'Section A-A' elevation drawing."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "A section cut line with arrows identifies the cut location and viewing direction.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Architectural drawing conventions; section notation",
@@ -460,44 +460,44 @@
       "model_id": "ALE-DSGN-011-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.602252+00:00",
       "content_hash": "sha256:6657a59c1a5d3d0def96f5529a4e689a1bab2ab811459c90b7879d071ba3b8b7"
     },
     {
       "question_id": "ea10a83d-bee7-4d26-b771-5029c1d87e88",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "A section detail shows an exterior wall with the following layers from outside to inside: (1) wavy-patterned insulation, (2) diagonal-hatched masonry, (3) concrete foundation with dotted pattern. What concern exists in this material assembly?",
+      "text": "A wall assembly question asks about moisture protection, but the drawing shows only a hatch with no detail. What is the safest answer?",
       "options": [
         {
           "id": "a",
-          "text": "No concern; this is a standard exterior wall assembly in tropical climates, designed to optimize thermal performance and moisture control"
+          "text": "Infer the entire assembly from the hatch alone."
         },
         {
           "id": "b",
-          "text": "Concern: The insulation is placed on the outside of the masonry, which is correct for moisture control; this assembly is appropriate for preventing thermal bridging"
+          "text": "Refer to the larger-scale detail, schedule, notes, and specifications before assigning the assembly."
         },
         {
           "id": "c",
-          "text": "Critical concern: Insulation on the outside of the masonry exterior will trap moisture between the masonry and insulation, leading to deterioration"
+          "text": "Ignore the detail marker if present."
         },
         {
           "id": "d",
-          "text": "Concern: The dotted pattern indicates concrete; concrete is not suitable for tropical humidity, as it may lead to cracking and structural issues"
+          "text": "Use the same assembly for every wall in the building."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. This assembly is not standard and creates moisture problems.",
-        "b": "Incorrect. Placing insulation on the outside of masonry without proper drainage is problematic in tropical humidity.",
-        "c": "Correct. You identified the critical moisture management error in this assembly.",
-        "d": "Incorrect. Concrete foundations are appropriate; the issue is the insulation-masonry interface.",
-        "correct": "The material sequence from outside to inside is problematic: if insulation (wavy pattern) is on the *outside* of masonry, water will be trapped between the masonry (which absorbs moisture) and the insulation, leading to mold growth, deterioration, and structural failure. Correct practice places insulation on the *inside* of the masonry (warm side) so moisture can dry outward, or uses external insulation with proper drainage and vapor management.",
-        "takeaway": "In tropical climates with high humidity, moisture management is critical. Place insulation on the warm (inside) side of walls or use external insulation with continuous air barriers and drainage. Never trap absorbent masonry between exterior weather and interior insulation."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "Complex assemblies should be read from coordinated details, notes, schedules, and specifications, not from a hatch alone.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Building science; tropical climate design; material assembly best practices",
@@ -511,7 +511,7 @@
       "model_id": "ALE-DSGN-011-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.606378+00:00",
       "content_hash": "sha256:41fad3c2b8fc22e2982a7b565ae4356c5603b176f00f04a84cf75110553ec9cf"
     }
   ]

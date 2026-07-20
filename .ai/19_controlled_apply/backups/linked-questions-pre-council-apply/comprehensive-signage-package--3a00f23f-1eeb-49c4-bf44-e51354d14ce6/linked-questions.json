@@ -1,0 +1,606 @@
+{
+  "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:df888fdd94a80f74ac7a00d2884e794f3b3c077def1f8ae44642349c5665b0cc",
+  "question_count": 12,
+  "questions": [
+    {
+      "question_id": "7598672f-1882-4c4d-9552-177d94010326",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The mnemonic \"FIRE\" presented in \"Comprehensive Signage Package\" helps remember:",
+      "options": [
+        {
+          "id": "A",
+          "text": "An outdated standard no longer in use"
+        },
+        {
+          "id": "C",
+          "text": "A different concept from another subject area, which is unrelated to the mnemonic's intended purpose"
+        },
+        {
+          "id": "A",
+          "text": "ISA signs are mounted on poles at 600 × 600 mm in a custom teal color (similar to Pantone 279). Door signs are 150 × 150 mm. Braille is Grade 1, embos"
+        },
+        {
+          "id": "E",
+          "text": "A trap commonly tested on the ALE, often misleading candidates who are not familiar with the specific content"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The mnemonic \"FIRE\" was specifically designed to help remember ISA signs are mounted on poles at 600 × 600 mm in a custom teal color (similar to Pantone 279). Door signs are 150 × 150 mm. Braille is Grade 1, embossed at 0.8 mm depth. A tactile map is placed on Level 2 near the elevator lobby. Tactile map letters are 30 mm tall with 100 mm pictogram borders. A projecting wayfinding sign is mounted with its bottom at 2100 mm AFF. The dressing room ISA is at 1500 mm on center..",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:09.424389+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5ace2380c1e7ce274bd1b0fa0f8c6cabcd5a0eec273c28cc0d4396056e10f17c"
+    },
+    {
+      "question_id": "2bfdad4b-75b6-48fa-8dab-2268fd597ef3",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Comprehensive Signage Package\", if a project requires 600 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "600 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "600 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "600 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "600 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 600 mm as the requirement. Context: -------|----------------|\r | **Pantone 279** | ISA color (UN Blue) |\r | **600 × ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:09.424389+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7223361c8d15f07988492a328aa08a432b026fcca58c643fa0348392b670870c"
+    },
+    {
+      "question_id": "8922a0c0-af20-431f-b8c3-4a1180eec8f8",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "According to BP 344 (2024 IRR), what Braille grade and minimum embossing depth are required for accessible signage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grade 1 (uncontracted) Braille, minimum 0.5 mm embossed depth"
+        },
+        {
+          "id": "B",
+          "text": "Grade 1 (uncontracted) Braille, minimum 1 mm embossed depth"
+        },
+        {
+          "id": "C",
+          "text": "Grade 2 (contracted) Braille, minimum 1 mm embossed depth"
+        },
+        {
+          "id": "D",
+          "text": "Grade 2 (contracted) Braille, minimum 2 mm embossed depth"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires Grade 2 Braille at minimum 1 mm embossing depth.",
+        "explanation": "Grade 2 (contracted) Braille is the standard for Filipino Braille readers — it uses contractions like shorthand, making it faster to read. The 1 mm minimum depth ensures tactile detectability, as dots below 0.6–0.8 mm are undetectable by many readers. Grade 1 (uncontracted, letter-for-letter) is explicitly not the required standard.",
+        "common_misconceptions": [
+          "Assuming Grade 1 Braille is acceptable for accessible signs",
+          "Confusing the minimum 1 mm depth with higher values like 2 mm or 3 mm"
+        ]
+      },
+      "explanation": "This question tests two simultaneous facts — the Braille grade and the embossing depth — both of which are commonly confused.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9ec8a9db4cb19f4d5db5f35f728bc2b42cd6733c928b7477622b851fef00250"
+    },
+    {
+      "question_id": "b06e8d2e-915b-40dd-b1ca-5fdff72c4669",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "According to BP 344 (2024 IRR) Table A.7, what is the minimum letter height for signage viewed at a distance of 7 meters?",
+      "options": [
+        {
+          "id": "A",
+          "text": "30 mm — the minimum for interior door identification signs at close range"
+        },
+        {
+          "id": "B",
+          "text": "60 mm — the minimum for signage read at up to 7 meters viewing distance"
+        },
+        {
+          "id": "C",
+          "text": "100 mm — the minimum to ensure readability across typical lobby widths"
+        },
+        {
+          "id": "D",
+          "text": "500 mm — the standard for all exterior accessible route signage"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Table A.7 specifies 60 mm minimum letter height at 7 m viewing distance.",
+        "explanation": "BP 344 (2024 IRR) Appendix A, Sec. 7 (Table A.7) establishes a linear relationship between viewing distance and letter height. The two anchor values are: 60 mm at 7 m and 500 mm at 50 m. For exam purposes, memorize both anchors — examiners test the 7 m and 50 m values as direct recall.",
+        "common_misconceptions": [
+          "Confusing the 60 mm letter height with door sign dimensions",
+          "Applying the 500 mm value (for 50 m) to shorter viewing distances"
+        ]
+      },
+      "explanation": "This question tests recall of the Table A.7 anchor values — 60 mm at 7 m and 500 mm at 50 m.",
+      "code_citation": "BP 344 2024 IRR, Appendix A, Sec. 7, Table A.7",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:50c550f1ed8d1ca6d972c102e151307a5a991c29380f8d70014044b49be4b4ff"
+    },
+    {
+      "question_id": "2f48a7a0-11a9-40af-9ffb-855ebdf41d93",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), what is the maximum height above finished floor for ATM and kiosk signage panels, and under which section is this specified?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1,500 mm AFF — the same as the general sign mounting standard in Sec. 5"
+        },
+        {
+          "id": "B",
+          "text": "2,200 mm AFF — the same clearance required for projecting overhead signs"
+        },
+        {
+          "id": "C",
+          "text": "2,400 mm AFF — the maximum instructional signage height at ATMs, per Sec. 12.10"
+        },
+        {
+          "id": "D",
+          "text": "1,800 mm AFF — aligned with the dressing room ISA mounting height in Sec. 13.4"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "ATM/kiosk signage maximum is 2,400 mm AFF under Sec. 12.10.",
+        "explanation": "BP 344 (2024 IRR) Sec. 12.10 specifies that ATM and kiosk instructional signage panels must not exceed 2,400 mm AFF. This is a reach-range ceiling — the top of the signage panel must be reachable and readable. The 2,400 mm cap is distinct from the 2,200 mm projecting sign safety clearance: one is a maximum readable height, the other is a minimum safety buffer.",
+        "common_misconceptions": [
+          "Confusing the 2,400 mm ATM signage maximum with the 2,200 mm projecting sign clearance minimum",
+          "Applying the general 1,500 mm sign center standard to ATM instructional panels"
+        ]
+      },
+      "explanation": "This question distinguishes between three confusable overhead heights: 1,500 mm (general sign center), 2,200 mm (projecting sign clearance), and 2,400 mm (ATM signage maximum).",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.10",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a7af0306cb8605be7fcf15f58e3f6d2061270b2e079ce169b0b08022542adc04"
+    },
+    {
+      "question_id": "0ce834a6-c997-4275-8d90-c1e2db7ff3d0",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR) Section 13.4, at what height must the ISA be mounted at an accessible dressing room entrance, and how does this differ from general sign mounting?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1,500 mm on center AFF — the same as all other accessible signs throughout the building, ensuring uniformity and compliance"
+        },
+        {
+          "id": "B",
+          "text": "1,800 mm on center AFF — higher than the 1,500 mm general mounting height to serve as a visible beacon across a retail floor"
+        },
+        {
+          "id": "C",
+          "text": "1,200 mm on center AFF — lower than standard to align with wheelchair user eye level, enhancing accessibility"
+        },
+        {
+          "id": "D",
+          "text": "2,000 mm on center AFF — at ceiling level to avoid obstruction by merchandise displays, which is not a standard practice"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The dressing room ISA is at 1,800 mm on center — 300 mm higher than the general 1,500 mm standard.",
+        "explanation": "BP 344 (2024 IRR), Sec. 13.4 specifies the dressing room ISA at 1,800 mm on center to finished floor level. General signs are mounted at maximum 1,500 mm center AFF. The 1,800 mm height positions the dressing room ISA as a directional beacon visible from across a retail floor — it is a conspicuous locator, not a close-reading sign. This deliberate exception is frequently tested.",
+        "common_misconceptions": [
+          "Assuming the dressing room ISA uses the same 1,500 mm standard as all other signs",
+          "Confusing the 1,800 mm dressing room ISA height with the 1,800 mm wheelchair turning space dimension"
+        ]
+      },
+      "explanation": "This question tests the deliberate exception in Sec. 13.4 — the dressing room ISA at 1,800 mm vs. the general 1,500 mm — a direct LEA trap.",
+      "code_citation": "BP 344 2024 IRR, Sec. 13.4",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e409902a9e61bfb351fbca4c53297f2713cdc8980113cbbbbb59c9ca7dc97fad"
+    },
+    {
+      "question_id": "04f69414-1157-4553-9f83-e18a202d4aae",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A frameless full-height glass door has no markings. To comply with BP 344 (2024 IRR), where must the high-contrast marking band be applied?",
+      "options": [
+        {
+          "id": "A",
+          "text": "At floor level only (0–300 mm AFF) to alert cane users approaching from below"
+        },
+        {
+          "id": "B",
+          "text": "At 1,500–2,000 mm AFF, within the standing adult's primary field of vision"
+        },
+        {
+          "id": "C",
+          "text": "Between 900 mm and 1,500 mm AFF, visible from both seated and standing eye levels"
+        },
+        {
+          "id": "D",
+          "text": "At 1,200 mm AFF centerline only, as a single stripe across the full door width"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Glass door markings must span the 900–1,500 mm AFF zone.",
+        "explanation": "BP 344 (2024 IRR) Appendix A General Provisions requires high-contrast markings on frameless glass doors between 900 mm and 1,500 mm AFF. This range covers both the seated wheelchair user's eye level (approximately 1,100–1,300 mm) and the standing adult's lower field of vision. Both limits matter — the lower bound prevents floor-level confusion; the upper bound ensures visibility. The marking must be visible from both sides of the glass.",
+        "common_misconceptions": [
+          "Assuming only the 1,500 mm upper limit matters, not the 900 mm lower limit",
+          "Specifying a single stripe at one height instead of a band covering the full 900–1,500 mm range"
+        ]
+      },
+      "explanation": "This question tests knowledge of the glass door marking zone — a range with both a lower and upper limit, both of which are testable.",
+      "code_citation": "BP 344 2024 IRR, Appendix A General Provisions",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05ea7f3ead03292db40cb89ef1759fc026fee03d7fe4e89af87d769a26f5afda"
+    },
+    {
+      "question_id": "8220a4b6-1f45-4953-8ea1-b1631d64ce3c",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A building designer specifies a projecting wayfinding sign with its bottom surface at 2,050 mm above finished floor level. Under BP 344 (2024 IRR), is this compliant, and why?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Non-compliant — projecting signs must have a minimum of 2,200 mm vertical clearance below the sign to the floor"
+        },
+        {
+          "id": "B",
+          "text": "Compliant — the 2,000 mm minimum headroom standard from PD 1096 is satisfied by this height, which is often misunderstood as the only requirement"
+        },
+        {
+          "id": "C",
+          "text": "Non-compliant — projecting signs must be fully recessed into the wall with no overhead protrusion, which is a common misinterpretation"
+        },
+        {
+          "id": "D",
+          "text": "Compliant — 2,050 mm exceeds the 2,000 mm minimum required for overhead projections, but does not meet the specific BP 344 requirement"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires 2,200 mm minimum clearance below projecting signs, not 2,000 mm.",
+        "explanation": "BP 344 (2024 IRR) requires a minimum of 2,200 mm of vertical clearance below any projecting sign. A sign bottom at 2,050 mm provides only 2,050 mm of clearance — 150 mm short of the 2,200 mm requirement. This 200 mm buffer above a tall person's head (approximately 1,900–2,000 mm) prevents collision. The 2,000 mm headroom in PD 1096 is for stairs/ramps — not for projecting signs.",
+        "common_misconceptions": [
+          "Applying the 2,000 mm PD 1096 headroom standard to projecting signs",
+          "Confusing the 2,200 mm projecting sign clearance with the 2,400 mm ATM signage maximum"
+        ]
+      },
+      "explanation": "This scenario question tests application of the projecting sign clearance rule and the common trap of substituting the PD 1096 headroom standard.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:80893c5a99dfd124c2ed0dbd66d1dff69c1a8de16bbe5febb7f687f261b2f84b"
+    },
+    {
+      "question_id": "89367ddf-c050-48b0-9829-62fee58a4de3",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An accessibility auditor finds that a building's tactile map is located near the second-floor elevator lobby, tactile letter height is 30 mm, and the pictogram border is 100 mm wide. How many of these three elements violate BP 344 (2024 IRR)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zero violations — all three elements meet the minimum standards, which is incorrect as there are violations present"
+        },
+        {
+          "id": "B",
+          "text": "One violation — only the tactile map location is incorrect, which is not the only issue"
+        },
+        {
+          "id": "C",
+          "text": "Two violations — the letter height and pictogram border are both undersized, which is partially correct but not complete"
+        },
+        {
+          "id": "D",
+          "text": "Three violations — the location, letter height, and pictogram border all fail BP 344 requirements"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "All three elements violate BP 344: location must be near entries, letters must be 50 mm, pictogram border must be 150 mm.",
+        "explanation": "BP 344 (2024 IRR) requires: (1) tactile maps located near building entries — not on upper floors; (2) raised letter height of 50 mm minimum — 30 mm is insufficient; (3) pictogram border of 150 mm — 100 mm is undersized. All three are non-compliant. This scenario mirrors the Protégé Effect Challenge in the article.",
+        "common_misconceptions": [
+          "Assuming tactile maps can be placed near any elevator, not specifically near building entries",
+          "Underestimating how specific the 50 mm letter height and 150 mm border requirements are"
+        ]
+      },
+      "explanation": "This analysis question bundles three distinct tactile map requirements and tests whether candidates can identify all three simultaneously.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e777ea9e6c2ce88feaa9398b079323ca335f3a2e6c20e183d7ebd3c4411a063"
+    },
+    {
+      "question_id": "3c35f23d-d558-4810-bbc4-3ba760a47e2a",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR) Section 5, what is the required color of the International Symbol of Access (ISA) used on pole-mounted accessibility signs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pantone 279 (UN Blue), displayed as a white wheelchair symbol on a blue field"
+        },
+        {
+          "id": "B",
+          "text": "Pantone 300 (Royal Blue), displayed as a white symbol on a dark blue field"
+        },
+        {
+          "id": "C",
+          "text": "Pantone 285 (Process Blue), displayed as a white symbol on a medium blue field"
+        },
+        {
+          "id": "D",
+          "text": "Any high-contrast blue shade that provides luminance contrast with the background"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The ISA color is specifically Pantone 279 (UN Blue), not a generic blue.",
+        "explanation": "BP 344 (2024 IRR), Sec. 5 specifies Pantone 279 (UN Blue) as the mandatory ISA color. This specific Pantone number ensures global recognition — the same color used internationally. Generic 'blue' or similar Pantone numbers are not compliant.",
+        "common_misconceptions": [
+          "Assuming any shade of blue is acceptable for the ISA",
+          "Confusing Pantone 279 with similar-looking Pantone numbers like 300 or 285"
+        ]
+      },
+      "explanation": "This question tests recall of the specific Pantone number for the ISA color — a frequently tested trap since the exam will not accept generic 'blue.'",
+      "code_citation": "BP 344 2024 IRR, Sec. 5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ec86fb21a67784e5a4ab88de827a4d7a11a8685bfe970a2f96ff538fc11153bc"
+    },
+    {
+      "question_id": "5398cb0d-74f5-4b00-853b-2814a8176b8d",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What are the required dimensions of a pole-mounted ISA sign under BP 344 (2024 IRR)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "400 mm × 400 mm, mounted at eye level of a standing adult, ensuring visibility and accessibility"
+        },
+        {
+          "id": "B",
+          "text": "600 mm × 600 mm, mounted on a pole at the accessible facility entrance"
+        },
+        {
+          "id": "C",
+          "text": "500 mm × 500 mm, mounted at 1,500 mm above finished floor level, providing clear visibility"
+        },
+        {
+          "id": "D",
+          "text": "200 mm × 200 mm, mounted at 900 mm above finished floor level, suitable for low-visibility areas"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Pole-mounted ISA signs must be 600 mm × 600 mm.",
+        "explanation": "BP 344 (2024 IRR), Sec. 5 specifies that the pole-mounted ISA sign is 600 mm × 600 mm. This is distinct from door identification plates (200 × 200 mm minimum). The larger pole-mounted size provides visibility from a distance at facility entrances.",
+        "common_misconceptions": [
+          "Confusing the 600 × 600 mm pole sign with the 200 × 200 mm door identification sign",
+          "Assuming a smaller size is adequate for pole-mounted signs"
+        ]
+      },
+      "explanation": "This question tests recall of the specific ISA pole sign dimensions and distinguishes them from door sign dimensions.",
+      "code_citation": "BP 344 2024 IRR, Sec. 5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d7c72b68fa8e4a9706cd1cdad548a2f8bb378d1848df7f5fc2bf57ebb0ca05de"
+    },
+    {
+      "question_id": "f9d3ca05-c92b-400a-b6db-325a7e74e7c8",
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under RA 7277, what is the legal basis for requiring buildings to provide accessible signage, and what does this mean for buildings that have accessibility features but no signage directing PWDs to them?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RA 7277 protects the right to information and equal access; a building with inaccessible or absent signage denies PWDs functional equal access even if physical features exist"
+        },
+        {
+          "id": "B",
+          "text": "RA 7277 only mandates physical infrastructure; signage is regulated separately by local ordinance and does not fall under the Magna Carta framework"
+        },
+        {
+          "id": "C",
+          "text": "RA 7277 requires signage only in government buildings; private commercial establishments are exempt from the signage mandate"
+        },
+        {
+          "id": "D",
+          "text": "RA 7277 mandates signage only for emergency evacuation routes; wayfinding to accessible toilets and parking is governed by BP 344 alone"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "RA 7277 protects equal access — absent signage renders accessible features functionally useless, violating the law's intent.",
+        "explanation": "RA 7277 establishes the right of PWDs to information and equal participation. Signage is the bridge between physical provision and actual use — if an accessible toilet exists but there is no ISA directing a blind visitor to it, the provision is functionally denied. The article emphasizes that signage is not merely decorative compliance; it is the operationalization of the rights RA 7277 guarantees. RA 9442 further reinforces non-discrimination in access.",
+        "common_misconceptions": [
+          "Assuming that installing physical accessible features satisfies RA 7277 even without signage",
+          "Believing RA 7277 only applies to government buildings or only to physical infrastructure"
+        ]
+      },
+      "explanation": "This evaluation question tests whether candidates understand signage as the functional link between legal rights and practical access — not just a technical compliance item.",
+      "code_citation": "RA 7277; RA 9442",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.253984+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:28e98567fd9d26f105f563eccc3c244a949b7168d577fea02e419b07e2b8d959"
+    }
+  ]
+}

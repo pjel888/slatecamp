@@ -1,0 +1,508 @@
+{
+  "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a5b318c7fc09788df0910b6d45db40a12e793d8b1765806703c247064366889d",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "e3543d1e-ee81-4d1e-bfda-6cc4da93acab",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What does a contractor's application for payment typically include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only a request for a specific dollar amount, without any supporting documentation or breakdown of costs"
+        },
+        {
+          "id": "b",
+          "text": "Descriptions of completed work, supporting documentation, and cost claimed for each item"
+        },
+        {
+          "id": "c",
+          "text": "Only the contractor's statement that work is complete, which does not provide sufficient detail for verification"
+        },
+        {
+          "id": "d",
+          "text": "Lists of all future work to be performed, which are not relevant to the current payment application"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Oversimplifies applications; they must include detailed work descriptions and supporting documentation, not just an amount.",
+        "c": "Confuses claims with minimal support; applications must include supporting documentation substantiating the work and costs claimed.",
+        "d": "Contradicts the purpose; applications describe past work performed, not future work to be done.",
+        "correct": "Applications for payment include detailed work descriptions, invoices, and documentation supporting the costs claimed.",
+        "takeaway": "Applications for payment must detail the work performed with supporting documentation like invoices and subcontractor receipts."
+      },
+      "explanation": "Oversimplifies applications; they must include detailed work descriptions and supporting documentation, not just an amount. Confuses claims with minimal support; applications must include supporting documentation substantiating the work and costs claimed. Contradicts the purpose; applications describe past work performed, not future work to be done. Applications for payment include detailed work descriptions, invoices, and documentation supporting the costs claimed. Applications for payment must detail the work performed with supporting documentation like invoices and subcontractor receipts.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T14:40:21.30263+00:00",
+      "content_hash": "sha256:b28b0a5dc1e6219a8f165cb93604fcac9aab345e8bbf0df8b31292c7437a6c3a"
+    },
+    {
+      "question_id": "20dbf2ae-a1a5-4080-b88e-e8fc4d0dc8d5",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "Why is withholding unjustified certification problematic for the architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It has no consequences whatsoever, as the architect's decision is final and cannot be contested"
+        },
+        {
+          "id": "b",
+          "text": "It can expose the architect to claims for wrongful payment denial"
+        },
+        {
+          "id": "c",
+          "text": "It automatically terminates the contractor's employment, leading to potential legal disputes and project delays"
+        },
+        {
+          "id": "d",
+          "text": "It has the same effect as justified withholding, making it a neutral action in terms of project impact"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Significantly underestimates consequences; unjustified withholding creates tort liability for the architect.",
+        "c": "Misidentifies consequences; unjustified withholding creates architect liability, not automatic contract termination.",
+        "d": "Contradicts legal distinction; unjustified withholding exposes the architect to liability, while justified withholding does not.",
+        "correct": "Arbitrary or unjustified withholding of certification exposes the architect to liability for wrongful denial of earned payment.",
+        "takeaway": "Arbitrary withholding of justified certification creates architect liability for wrongful payment denial to the contractor."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9cdbb1233033fadd178f9ccf475446a3593b29461050378d7ed15729cb4ca627"
+    },
+    {
+      "question_id": "f546e7b8-90e7-4cf1-a505-2c9259c63fcc",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What must the architect verify before issuing a certificate of payment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only that the contractor has submitted an application, without needing to check the work quality"
+        },
+        {
+          "id": "b",
+          "text": "That the work has been completed to required standard and complies with contract specifications"
+        },
+        {
+          "id": "c",
+          "text": "That the contractor's profit is reasonable, based on industry standards and project scope"
+        },
+        {
+          "id": "d",
+          "text": "That all change orders have been approved, ensuring no discrepancies in the project scope"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses passive receipt with active verification; the architect must inspect and verify work quality, not merely accept applications.",
+        "c": "Misunderstands the architect's role; profit assessment is a financial matter, not a work quality verification function.",
+        "d": "Change order status is separate from payment certification for completed work; the architect certifies what was done, not what was authorized.",
+        "correct": "The architect must inspect work and verify that it meets contract specifications before certifying payment entitlement.",
+        "takeaway": "Before issuing a certificate, the architect must inspect the work and verify it meets contract specifications through site inspection."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff2437361325ffd2fb33271529f91d8b0264ca2fca7a356e2628c111a5d77b72"
+    },
+    {
+      "question_id": "3c07682e-a078-4ca3-a916-5dfbb6f42023",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What legal weight does the architect's certification of payment completion carry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It has no legal significance whatsoever, which is incorrect as it does have implications"
+        },
+        {
+          "id": "b",
+          "text": "It creates a statement of fact that work is complete, creating estoppel preventing the owner from later denying work completion"
+        },
+        {
+          "id": "c",
+          "text": "It is merely advisory with no binding effect, which is not true as it has legal implications"
+        },
+        {
+          "id": "d",
+          "text": "It is only relevant if the owner agrees with the certification, which is not accurate as it holds legal weight regardless"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Underestimates legal significance; courts have held the certification creates estoppel, not mere opinion.",
+        "c": "Confuses function with advisory input; the certification is a binding statement of fact with legal consequences.",
+        "d": "Misunderstands estoppel; the certification's legal weight applies regardless of owner agreement—that's why it's called estoppel.",
+        "correct": "The architect's certification is a statement of fact with legal weight; courts have recognized it creates estoppel against denial of work completion.",
+        "takeaway": "The architect's certification creates legal estoppel that prevents the owner from later denying the work was complete."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc6c97217e41fb369c31c23fe34d1c22874f44ca2458ea4d25c6dcb61ac2e1d9"
+    },
+    {
+      "question_id": "3c0b0a93-0e30-4c01-bd89-d8331dc8a556",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "Under what circumstance can estoppel from the architect's certification be overcome?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It can never be overcome under any circumstances, as the architect's certification is final and binding on all parties"
+        },
+        {
+          "id": "b",
+          "text": "If the architect issued the certification in bad faith or lacked clear authority to certify that particular work"
+        },
+        {
+          "id": "c",
+          "text": "Only if the owner disagrees with it and files a formal written protest within the contractual dispute resolution period"
+        },
+        {
+          "id": "d",
+          "text": "Only if the contractor requests it through a change order supported by documented evidence of defective work conditions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overstates estoppel strength; bad faith and lack of authority are recognized exceptions to estoppel protection.",
+        "c": "Owner disagreement alone does not overcome estoppel; the owner must show bad faith or lack of authority.",
+        "d": "Contractor requests do not overcome estoppel; only bad faith or authority limitations do.",
+        "correct": "Estoppel from certification does not apply if the certification was issued in bad faith or the architect lacked authority to certify.",
+        "takeaway": "Estoppel from certification fails if the architect acted in bad faith or lacked authority—these are the only exceptions."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:85f83a0ac895e67b026705f97907d6aa893eb4dd46b47f9adbd84e103144aad1"
+    },
+    {
+      "question_id": "b8321ab2-4e49-4f52-bcca-631759c29122",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What is the primary purpose of the architect's Certificate of Payment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To set the final project budget, which is not typically the role of this certificate"
+        },
+        {
+          "id": "b",
+          "text": "To formally certify that the contractor has satisfactorily performed work and is entitled to payment"
+        },
+        {
+          "id": "c",
+          "text": "To authorize change orders, which are separate from payment certifications"
+        },
+        {
+          "id": "d",
+          "text": "To determine the contractor's fee percentage, which is usually established in the contract"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses the certificate with budget control; the certificate verifies work completion, not budget setting.",
+        "c": "Misattributes authority; change orders are separate authorizations, not the certificate's purpose.",
+        "d": "Confuses the certificate with fee arrangement; it certifies work performance, not contractor profit levels.",
+        "correct": "The Certificate of Payment is the architect's formal certification verifying that completed work meets contract standards and the contractor deserves payment.",
+        "takeaway": "The Certificate of Payment is the architect's gate-keeper function certifying that the contractor has performed work to contract standard."
+      },
+      "explanation": null,
+      "code_citation": "UAP Docs 301/302",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6ac6fad9761f013462038d289fa1da347a43922d26354d499ad43e028f13faa"
+    },
+    {
+      "question_id": "eefff249-36bc-4122-8e6c-2f298d231850",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What liability exposure does the architect face from prematurely issuing a final certificate when defects remain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No liability exposure, which is a misconception as liability often arises from oversight"
+        },
+        {
+          "id": "b",
+          "text": "Claims for damages resulting from incomplete work or overlooked defects discovered after certification"
+        },
+        {
+          "id": "c",
+          "text": "Loss of professional license automatically, although this is not typically automatic without a formal review process"
+        },
+        {
+          "id": "d",
+          "text": "Termination of the contract exclusively, which overlooks other potential legal consequences"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Significantly underestimates liability; premature certification creates substantial damage claims from defective work.",
+        "c": "Confuses potential consequences; license loss is not automatic—liability for damages is the primary exposure.",
+        "d": "Misidentifies the remedy; the consequence is architect liability for damages, not merely contract termination.",
+        "correct": "Premature final certification when defects remain unexposed creates architect liability for damages from the defective or incomplete work.",
+        "takeaway": "Premature final certification when defects remain exposes the architect to claims for damages from the incomplete or defective work."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca01c592a6e95390ee1653f6433bc11dbb69a8b5263870715a119a5495357521"
+    },
+    {
+      "question_id": "72bfeb1d-764b-44d1-96dd-4dc329c48eaf",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What percentage is typically retained by the owner from certified payments as security?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1% to 2%"
+        },
+        {
+          "id": "b",
+          "text": "10%"
+        },
+        {
+          "id": "c",
+          "text": "15% to 20%"
+        },
+        {
+          "id": "d",
+          "text": "No retention is typical"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates typical retention; UAP Doc 301 requires 10% retention.",
+        "c": "Overstates typical retention; 15–20% exceeds standard practice and would create excessive contractor cash flow strain.",
+        "d": "Contradicts standard practice; retention is standard in most construction contracts to ensure completion and defect remediation.",
+        "correct": "Retention of 5% to 10% of certified payments is standard practice to secure contractor completion and quality compliance.",
+        "takeaway": "Typical retention is 5 to 10 percent of certified payments, held until final completion as security for contractor performance."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3c4dcbed9acb3192bdb70d9e5c82da81d3cc31af179fdb34eda9e2182a256a80"
+    },
+    {
+      "question_id": "4f30c6ed-7563-4a9b-bffd-d84764beb7bc",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "How do interim and final certificates of payment differ in legal effect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They have identical legal effect, providing assurance of payment to contractors"
+        },
+        {
+          "id": "b",
+          "text": "Interim certificates are subject to revision if defects emerge, while final certification is more definitive and releases retention"
+        },
+        {
+          "id": "c",
+          "text": "Interim certificates are final and cannot be changed, ensuring payment security"
+        },
+        {
+          "id": "d",
+          "text": "Final certificates have no legal significance, serving only as a formality"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fails to distinguish the critical difference; interim and final certificates have different legal weight and permanence.",
+        "c": "Reverses the legal reality; interim certificates are provisional and subject to revision, not final and unchangeable.",
+        "d": "Understates final certificate significance; final certificates are conclusive statements with major legal consequences.",
+        "correct": "Interim certificates may be revised if defects are found; final certification is more conclusive and typically releases retention money.",
+        "takeaway": "Interim certificates are subject to revision if defects emerge; final certificates are more conclusive and release retention."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e895477a790ac85f9008aef5fa0b507345d944bb35335d85569cc00b4a735a00"
+    },
+    {
+      "question_id": "efed3b74-382f-4a53-b007-851f4dd2e60e",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What is a valid ground for the architect to withhold certification of payment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect dislikes the contractor personally, which is not a professional or contractual basis for withholding payment"
+        },
+        {
+          "id": "b",
+          "text": "Failure to meet quality specifications or inadequate progress according to contract schedule"
+        },
+        {
+          "id": "c",
+          "text": "The owner decided to reduce the project scope, which does not affect the contractor's right to payment for work completed"
+        },
+        {
+          "id": "d",
+          "text": "The architect wishes to delay all payments indefinitely, which is not permissible under standard contract terms"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Personal feelings are not valid grounds; withholding must be based on work quality or contract compliance, not subjective likes.",
+        "c": "Owner decisions about scope are not architect certification grounds; the architect certifies based on actual work performance to contract terms.",
+        "d": "Indefinite delay is bad faith; the architect must withhold for specific, legitimate deficiency reasons and specify required corrections.",
+        "correct": "The architect may withhold certification for legitimate reasons including quality deficiencies, schedule delays, or contract noncompliance.",
+        "takeaway": "The architect can only withhold certification based on work quality or contract compliance issues, not personal preferences."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:869c8736d4add3510cad3e32637b4440d3e02c677796e6d6d97fb51b039bb36f"
+    }
+  ]
+}

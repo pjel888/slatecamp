@@ -21,5 +21,52 @@
     "checked_sources": [
       "bsi-steel-members"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "A compression member is described as slender. What source-backed failure concern should be checked before accepting the member?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only water penetration through a masonry cavity."
+      },
+      {
+        "id": "b",
+        "text": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity."
+      },
+      {
+        "id": "c",
+        "text": "Only the color of shop primer."
+      },
+      {
+        "id": "d",
+        "text": "Only the number of courses in a masonry bond."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Only water penetration through a masonry cavity. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "b": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+      "c": "Only the color of shop primer. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "d": "Only the number of courses in a masonry bond. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "correct": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity. Supported by bsi-steel-members.",
+      "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-steel-members",
+      "checked_sources": [
+        "bsi-steel-members"
+      ]
+    },
+    "explanation": "Lateral buckling from compressive stress acting on a slender portion with insufficient lateral rigidity. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+    "code_citation": "bsi-steel-members",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-008-01-004"
   }
 }

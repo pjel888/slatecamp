@@ -22,5 +22,53 @@
       "detailing-rebar",
       "detailing-concrete"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Why are deformed bars used in reinforced concrete?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They eliminate the need for concrete cover."
+      },
+      {
+        "id": "b",
+        "text": "Their surface shape improves bond between steel and concrete."
+      },
+      {
+        "id": "c",
+        "text": "They replace all hooks and anchorage."
+      },
+      {
+        "id": "d",
+        "text": "They are used only for drawing symbols."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "They eliminate the need for concrete cover. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Their surface shape improves bond between steel and concrete. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+      "c": "They replace all hooks and anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "They are used only for drawing symbols. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Their surface shape improves bond between steel and concrete. Supported by detailing-rebar.",
+      "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-rebar",
+      "checked_sources": [
+        "detailing-rebar",
+        "detailing-concrete"
+      ]
+    },
+    "explanation": "Their surface shape improves bond between steel and concrete. Supported by the Batch 144 local source boundary: detailing-rebar.",
+    "code_citation": "detailing-rebar",
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.9,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-02-010"
   }
 }

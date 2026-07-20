@@ -2,9 +2,9 @@
   "question_id": "1183bb56-d613-4684-b791-0411f8b866e8",
   "baseline_hash": "sha256:46af19ccb3aa11d22b9308195229a12fc988034590b0110e21fe0fadc10d0200",
   "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
     "parent_article_slug": "transport-nodes-escalators-walkways",
@@ -23,41 +23,28 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "What is the maximum escalator inclination in the audited 2024 BP 344 IRR text?",
+    "text": "A designer is laying out the tactile path network in a new LRT station. At the elevator, the tactile path terminates. What element must be present at the elevator termination point to allow a visually impaired user to find and operate the lift independently?",
     "options": [
       {
-        "id": "a",
-        "text": "30 degrees"
+        "id": "A",
+        "text": "A directional tactile bar strip leading directly into the elevator car, plus audio chime only, ensuring clear guidance without additional tactile feedback"
       },
       {
-        "id": "b",
-        "text": "45 degrees"
+        "id": "B",
+        "text": "A warning tactile strip 300 mm in front of the elevator door, plus Braille and tactile labels at controls and door jambs"
       },
       {
-        "id": "c",
-        "text": "1:20"
+        "id": "C",
+        "text": "An ISA sign at 1800 mm AFF beside the elevator, plus a 600 mm tactile strip at the door sill, providing visual and tactile cues for orientation"
       },
       {
-        "id": "d",
-        "text": "1:15"
+        "id": "D",
+        "text": "A warning tactile strip 600 mm in front of the elevator door, plus a tactile map of the floor plan, offering comprehensive spatial information"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "The checked escalator provisions set maximum inclination at 30 degrees.",
-    "explanation": "The checked escalator provisions set maximum inclination at 30 degrees.",
-    "code_citation": "BP 344 2024 IRR, escalators and passenger conveyances",
-    "bloom_level": "analyze",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Transport Nodes, Escalators, and Walkways",
-      "LEA Accessibility and Transport Design"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-transport-nodes-escalators-walkways-002"
+    "correct_option_id": "B",
+    "rationale": "Elevator tactile termination: 300 mm warning strip before the door, Braille/tactile at controls and jambs. The tactile path terminates at a warning tactile strip 300 mm in front of the elevator door, alerting the user that the lift is immediately ahead. Braille and tactile labels on the COP (at 900–1200 mm AFF) and on both door jambs allow independent floor selection. The 600 mm depth rule applies to the warning field before escalators and platform edges; at elevator doors the specific element is the 300 mm setback warning strip.",
+    "explanation": "Elevator tactile termination requires a 300 mm warning strip before the door plus Braille/tactile at controls and jambs.",
+    "code_citation": null
   }
 }

@@ -1,0 +1,757 @@
+{
+  "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:692fcc09ff4889c9955d481ca89a915629d3437363759f0b1cac0a7ac2d4be34",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "034d8eb4-661f-4fd6-877a-af76e8a405f7",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A building in Cebu has a fire pump suction line with velocity approaching 0.8 m/s (exceeding NFPA 20 maximum of 0.6 m/s). What is the practical issue, and what correction is recommended?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. High suction velocity causes cavitation (formation of vapor bubbles) reducing pump discharge capacity; increase suction line diameter to reduce velocity below 0.6 m/s"
+        },
+        {
+          "id": "b",
+          "text": "B. High suction velocity has no effect on pump performance; velocity limits are archaic and can be ignored in modern systems"
+        },
+        {
+          "id": "c",
+          "text": "C. High suction velocity increases suction pressure, allowing smaller pump selection; no correction needed"
+        },
+        {
+          "id": "d",
+          "text": "D. High suction velocity requires adding a pressure relief valve to prevent over-pressurization at the pump inlet"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Velocity limits are not archaic; they directly prevent cavitation and protect pump life—critical in Philippine humid, warm climates where water temperature raises vapor pressure.",
+        "c": "Suction relief valves are not standard fire pump safety devices; the fix is larger-diameter suction pipe.",
+        "correct": "NFPA 20 mandates maximum 0.6 m/s suction velocity to prevent cavitation—the formation of vapor bubbles when suction pressure drops below water vapor pressure. Cavitation damages pump impellers and causes discharge loss. At 0.8 m/s with typical water supply at 1.5–2.0 bar, cavitation risk is high in tropical Cebu climates (higher water temperatures reduce vapor pressure margin). Solution: increase suction line diameter from (say) 75 mm to 100 mm to reduce velocity to ~0.4 m/s.",
+        "takeaway": "Keep suction velocity <0.6 m/s (NFPA 20) to prevent cavitation; increase suction line diameter if needed—especially critical in warm Philippine climates."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 20:2019; RA 9514 IRR Section 6.5; Article Section on Fire Pump Room Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ede185bc6d1a683eee8195983d8e78cb77f6d776f478241df595fcaa0b573674"
+    },
+    {
+      "question_id": "aec6e239-1017-4229-ac3c-087789fec118",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A Pasig warehouse specifies metric pipe sizes: 75 mm suction, 100 mm discharge. Flow is 850 LPM. Suction velocity is 0.20 m/s, and discharge velocity is 1.08 m/s. What is the status per NFPA 20 velocity limits, and what concern does high discharge velocity raise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Both within limits (suction <0.6 m/s, discharge unlimited); no concern"
+        },
+        {
+          "id": "b",
+          "text": "B. Suction acceptable; discharge velocity 1.08 m/s is acceptable for fire pump discharge per NFPA 20 (no upper limit, only lower limit of 1.0 m/s to prevent backflow)"
+        },
+        {
+          "id": "c",
+          "text": "C.Suction velocity 0.20 m/s is acceptable (<1.5 m/s per NFPA 20); discharge velocity 1.08 m/s is below practical limits (1.5–2.0 m/s typical) with no excessive friction concerns.oss, check-valve pressure drop, and noise; consider 125 mm discharge line to reduce velocity to ~0.7 m/s"
+        },
+        {
+          "id": "d",
+          "text": "D. Both parameters are ideal; discharge velocity 1.08 m/s is the target design velocity for all fire pump systems, ensuring optimal performance and safety."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Discharge does have practical limits, even if NFPA 20 sets no upper bound.",
+        "b": "NFPA 20 does not specify a minimum discharge velocity of 1.0 m/s; that is not a standard requirement.",
+        "d": "1.08 m/s is acceptable but not a target; different piping configurations have different velocities.",
+        "correct": "NFPA 20 specifies suction velocity <0.6 m/s (here 0.20 m/s ✓). Discharge velocity is not mandated but practical limits are 1.5–2.0 m/s; at 1.08 m/s, the discharge is acceptable. However, IF discharge velocity were higher (e.g., 2.5 m/s from undersized piping), friction loss and check-valve drop would increase substantially, reducing net delivery pressure and requiring larger pump. At 1.08 m/s, current design is acceptable; 125 mm would reduce to 0.7 m/s (over-sized). The distractor introduces the practical concern correctly.",
+        "takeaway": "Suction velocity must be <0.6 m/s (NFPA 20). Discharge velocity has no NFPA standard upper limit, but practical design keeps 1.5–2.0 m/s to minimize friction loss and check-valve pressure drop."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 20:2019; Fire pump sizing best practices; Pipe friction loss sensitivity to velocity",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2142cb64556adb8a83c2d4ff288920f916e712eeeb0994a8b5f8c0b67d4ed60c"
+    },
+    {
+      "question_id": "7bf8a7ca-288c-4b39-b42f-c497b6b760e1",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A system curve (plot of pressure vs. flow for a given piping network) shows friction loss increasing as Q^1.852 (Hazen-Williams). The pump curve shows flow dropping from 900 LPM @ 40 m to 700 LPM @ 60 m. At what flow rate does the pump intersect the system curve, and why is this the operating point?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. At the pump's rated nameplate capacity (900 LPM); nameplate capacity is the guarantee of the pump manufacturer"
+        },
+        {
+          "id": "b",
+          "text": "B. At the intersection of pump curve and system curve (approximately 800 LPM @ 52 m); only at this point is pump discharge pressure exactly equal to system demand, preventing cavitation or over-pressurization"
+        },
+        {
+          "id": "c",
+          "text": "C. At the highest efficiency point on the pump curve regardless of system resistance; efficiency trumps system matching in all installations"
+        },
+        {
+          "id": "d",
+          "text": "D. At zero flow; the pump is overpressurized and must be throttled by a relief valve to prevent mechanical damage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Nameplate capacity is a label, not a guarantee of matching system demand; operating point is determined by system resistance.",
+        "c": "Operating at maximum efficiency ignores system resistance; pump can operate off-peak efficiency without failure, but not off-intersection.",
+        "d": "Zero flow (shutoff head) occurs only when all system demands are blocked; normal operation is at the intersection.",
+        "correct": "The operating point is where pump curve and system curve intersect. At this point, pump discharge pressure exactly equals system demand (static head + friction loss + residual pressure). Below intersection (higher flow), system demands more pressure than pump can deliver—flow stalls. Above intersection (lower flow), pump output exceeds demand—relief valve vents excess. The intersection ensures stable, efficient operation without cavitation or overpressurization. For the stated curves, intersection is ~800 LPM @ 52 m.",
+        "takeaway": "Pump operating point is the intersection of pump curve and system curve; only here are pressure and flow balanced for safe, stable operation."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 20:2019; Pump manufacturer curves; Fire pump sizing methodology",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ea3140ae9fc22ecf9b5861681e8913054f2a39c4667c300509166525ac78fabd"
+    },
+    {
+      "question_id": "ce27e409-5c1f-4518-b030-9f569898a24a",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A sprinkler system initially designed for 600 LPM is being expanded to 750 LPM. The friction loss relationship is hf = 0.005 × Q^1.852 (derived from Hazen-Williams). The original pump was sized for 600 LPM @ 50 m TDH. For 750 LPM, estimate new friction loss and TDH, then determine if the 50 m pump curve point is still valid.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. New friction loss = 0.005 × 750^1.852 ≈ 7.2 m; if static and residual unchanged (15 + 35 = 50 m), TDH ≈ 57 m. Pump must deliver higher head; current pump may not reach 750 LPM @ 57 m on its curve."
+        },
+        {
+          "id": "b",
+          "text": "B. Friction loss scales linearly: new hf = 3.8 × (750/600) = 4.75 m (original was 3.8 m); TDH = 50 + 0.95 = 50.95 m ≈ 51 m. Pump can handle flow increase, assuming no other system changes."
+        },
+        {
+          "id": "c",
+          "text": "C. Friction loss is independent of flow; 750 LPM can be delivered at the original 50 m TDH without pump change, provided the system remains otherwise unchanged."
+        },
+        {
+          "id": "d",
+          "text": "D. New friction loss = 0.005 × (750 − 600)^1.852 = 0.005 × 150^1.852 ≈ 2.1 m; TDH = 52.1 m. Pump adjustment may not be needed if other factors remain constant."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Linear scaling is incorrect for Hazen-Williams; hf ∝ Q^1.852 is nonlinear, causing disproportionate increase in friction loss.",
+        "c": "Friction loss always depends on flow; ignoring this error leads to undersized pumps.",
+        "d": "Incremental friction loss is incorrect; the full Hazen-Williams relationship must be applied from zero baseline.",
+        "correct": "Using Hazen-Williams Q^1.852 relationship: Original hf ≈ 0.005 × 600^1.852 ≈ 3.8 m. New hf ≈ 0.005 × 750^1.852 ≈ 7.2 m. Friction loss increases nonlinearly (not proportional to flow). New TDH = 15 + 7.2 + 35 = 57.2 m (compared to original 50 m). The pump curve at 600 LPM @ 50 m cannot deliver 750 LPM; the system curve has shifted upward. Pump re-selection or larger motor is required.",
+        "takeaway": "Friction loss increases as Q^1.852 (nonlinear); expanding flow from 600 to 750 LPM dramatically increases TDH, requiring pump re-selection or motor upgrade."
+      },
+      "explanation": null,
+      "code_citation": "Hazen-Williams equation (metric); Article Section on Worked Example 1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6bd089325ee92d68c8dbdf4d6e98601e977536bfc01830e2aa170daef5da342b"
+    },
+    {
+      "question_id": "4f18900d-6687-479b-88cc-b22942101701",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "In the Philippines, what is the typical voltage and motor configuration for a fire pump drive motor rated 75 kW in a commercial building supplied by Manila Water or Maynilad?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Single-phase 220V AC, direct-on-line starter, commonly used in smaller installations"
+        },
+        {
+          "id": "b",
+          "text": "B. Three-phase 380V (440V nominal) AC, soft-starter or VFD with automatic changeover to constant-speed operation"
+        },
+        {
+          "id": "c",
+          "text": "C. Three-phase 380V AC with step-down transformer to 220V three-phase secondary windings, often used for specific equipment"
+        },
+        {
+          "id": "d",
+          "text": "D. DC motor 240V with battery backup for emergency operation, typically found in older systems"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Single-phase 220V is used for small loads (<5 kW); 75 kW motors require three-phase 380V to minimize line current and voltage drop, per PEC (Philippine Electrical Code) standards.",
+        "c": "Step-down transformers are unnecessary; the utility directly supplies three-phase 380V at the building main switchboard.",
+        "d": "DC motors are rare in fire protection and would require a dedicated rectifier and battery system; RA 9514 IRR does not mandate DC backup for fire pumps.",
+        "correct": "Philippine commercial buildings receive three-phase 380V AC supply (nominal 440V). Fire pump motors are typically soft-starter or VFD-controlled, stepping up to constant rated speed under load. This configuration ensures stable voltage and frequency even during municipal supply fluctuations common in Metro Manila and Cebu.",
+        "takeaway": "Philippine fire pump motors are three-phase 380V with soft-starter or VFD, not single-phase 220V or DC, due to supply standards and voltage stability requirements."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Electrical Code (PEC); Manila Water Company and Maynilad Services technical specifications; RA 9514 IRR",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:39ba12ef1dec6fb83e9449a3a31c5d4908ea893b0b42f2d751db9b5b8bd263ab"
+    },
+    {
+      "question_id": "b1097222-32d0-47fa-88fc-271f8985810c",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A fire safety engineer in Davao reviews a completed fire pump installation for a 6000 m² commercial building. The calculation sheet shows: Suction pressure from 5 m³ ground tank = 1.2 bar, Pump discharge = 850 LPM @ 65 m TDH, Motor power = 95 kW @ 0.82 efficiency. The engineer notes the suction pressure is unusually low and requests a pressure survey before certification. What is the engineer's primary concern, and why is this a Philippine-specific trap?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. The 1.2 bar suction is far below typical municipal supply (2.0–4.0 bar); if the tank is the only source and no pressure boosting pump is specified, the system depends entirely on tank maintenance. A single tank failure or overflow loss could reduce pressure further, causing pump cavitation."
+        },
+        {
+          "id": "b",
+          "text": "B. Low suction pressure is acceptable; the pump discharge pressure of 65 m compensates, which is a misunderstanding of system requirements"
+        },
+        {
+          "id": "c",
+          "text": "C. The concern is excessive—1.2 bar in tropical water supplies is standard and requires no action, which overlooks potential system vulnerabilities"
+        },
+        {
+          "id": "d",
+          "text": "D. The pressure survey is unnecessary; the suction calculation is based on static head and is guaranteed accurate, which is an oversimplification of the issue"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Discharge pressure of 65 m cannot compensate for low suction pressure; cavitation occurs at the pump inlet regardless of discharge setting.",
+        "c": "1.2 bar in Philippine tropical water supplies is low and risky; it is not standard and requires cautious design.",
+        "d": "Static head calculation is guaranteed only if tank level is maintained; the survey verifies real-world conditions over 24 hours, accounting for use patterns and maintenance.",
+        "correct": "This scenario illustrates a critical Philippine gap: reliance on roof/ground tanks without municipal supply verification. At 1.2 bar suction, the pump operates near cavitation threshold (water vapor pressure rises in tropical climates). If tank level drops due to leaks, overflow, or maintenance downtime, suction pressure collapses and the pump stalls. RA 9514 IRR Section 6.2 mandates a 24-hour pressure survey to document minimum sustained pressure. In Davao, municipal pressure may be unavailable or unreliable, forcing tank-only design—which is high-risk. The engineer correctly demands proof that 1.2 bar is the minimum sustainable pressure, not a transient low point.",
+        "takeaway": "Low suction pressure (e.g., 1.2 bar from tank-only supply) is a Philippine fire protection weakness; RA 9514 IRR mandates 24-hour pressure surveys to confirm minimum sustained pressure and prevent cavitation."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 IRR Section 6.2; Article Water Supply Pressure Considerations; Philippine water supply variability",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:504a338d6d9e10454d0ab6145d0f6df9fddee5a31993242c94d4c2b93b6a302b"
+    },
+    {
+      "question_id": "a978081c-a721-4b2e-b530-81e3e6ca285e",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A consulting engineer is asked to evaluate two pump options for a Makati building: (1) Horizontal split-case centrifugal pump, 800 LPM @ 70 m, efficiency 0.82, motor 110 kW, motor cost 280,000 PHP; (2) Vertical turbine pump, 800 LPM @ 70 m, efficiency 0.72, motor 140 kW, motor cost 350,000 PHP. The building has limited floor space (2.5 m × 3.8 m pump room). What are the technical and economic tradeoffs, and which is recommended?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Vertical turbine is superior; its self-priming capability justifies the cost and power penalty in all Philippine applications, especially in areas with unreliable water supply"
+        },
+        {
+          "id": "b",
+          "text": "B. Horizontal split-case is recommended: lower power requirement (110 vs. 140 kW) saves ~30 kW over system life (~3.8 MW annual), costing 70,000+ PHP in electricity (at 5 PHP/kWh). Vertical turbine adds cost without compensating benefit in Makati where municipal supply is available."
+        },
+        {
+          "id": "c",
+          "text": "C. Vertical turbine is mandatory because the pump room floor area (2.5 × 3.8 = 9.5 m²) exceeds the RA 9514 minimum (2.5 × 3.5 = 8.75 m²), and vertical turbines fit tighter footprints, making them ideal for constrained spaces"
+        },
+        {
+          "id": "d",
+          "text": "D. Both options meet RA 9514 IRR; final selection depends entirely on contractor preference, which may vary based on installation experience and maintenance considerations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Self-priming is not needed in Makati where municipal supply is reliable; it does not justify perpetual energy waste.",
+        "c": "The pump room (2.5 × 3.8 = 9.5 m²) provides adequate space per NFPA 20 clearance requirements; vertical turbine footprint advantage is irrelevant for this application.",
+        "d": "Contractor preference is subordinate to code compliance and lifecycle cost; both options meet RA 9514, but split-case is technically and economically superior.",
+        "correct": "Both pumps deliver same duty (800 LPM @ 70 m), but split-case is more efficient (0.82 vs. 0.72). Annual energy penalty for vertical turbine = 30 kW × 8,760 hours × 5 PHP/kWh ≈ 1,314,000 PHP over 10 years. Vertical turbine is justified only if: (1) suction pressure is extremely low (self-priming needed), or (2) floor space is critically limited (false here). In Makati with stable municipal supply, split-case is superior. Motor cost difference (70,000 PHP) is recovered in ~0.5 years of energy savings alone.",
+        "takeaway": "Horizontal split-case is preferred for Philippine urban buildings with reliable supply (higher efficiency, lower operating cost). Vertical turbine is justified only for extreme low-pressure or space-critical situations."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 20:2019; Philippine electricity cost estimates; Life-cycle cost analysis; RA 9514 IRR Section 6.5",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:44dab971dfd90321c675d17bc5f4a4cb0d3c5747583c756e71ee203f1b9949e0"
+    },
+    {
+      "question_id": "4a8bf91d-a68d-41a6-b553-722d1c7b802b",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A 50-year-old existing sprinkler piping system in a Makati warehouse is being re-commissioned. The original design assumed C = 120 (new pipe). When applying Hazen-Williams friction loss calculations, should the roughness coefficient be adjusted, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. No adjustment; C = 120 is valid for any age of galvanized steel pipe per AWWA standards, ensuring consistent calculations"
+        },
+        {
+          "id": "b",
+          "text": "B. Reduce to C = 100–110 to account for scale buildup and internal corrosion in 50-year-old pipe; recalculate friction loss and verify pump discharge pressure is still adequate"
+        },
+        {
+          "id": "c",
+          "text": "C. Increase to C = 130 because older pipes have been conditioned by decades of water flow and are now smoother, contrary to typical expectations"
+        },
+        {
+          "id": "d",
+          "text": "D. Use C = 80 to apply maximum safety margin for ancient pipe; oversize the pump to 150% of calculated capacity to ensure adequate flow"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "C = 120 applies only to new pipe; failing to adjust for age violates good engineering practice and underestimates real friction loss.",
+        "c": "Increasing C is physically incorrect; scale and corrosion increase roughness (decrease C), not decrease it.",
+        "d": "C = 80 is overly conservative for galvanized steel; C = 100–110 is the standard for aged pipe. Oversizing to 150% is unnecessary if proper calculations are done.",
+        "correct": "The article explicitly warns that pipes >10 years old accumulate scale and corrode internally, reducing their hydraulic capacity. For 50-year-old pipe, use C = 100–110 instead of C = 120. This increases calculated friction loss, which may require a larger pump discharge pressure than original design. The re-commissioning engineer must recalculate and verify the existing pump can still deliver required flow at the higher friction loss.",
+        "takeaway": "For piping >10 years old, use C = 100–110 in Hazen-Williams equations; adjust friction loss upward and verify pump discharge pressure remains adequate—critical for Philippine existing system re-commissioning."
+      },
+      "explanation": null,
+      "code_citation": "Article Section on Hazen-Williams Friction Loss Formula; Common Errors and Misconceptions",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e1c39a93e3026c1de7159071d782a446f4dda12f15a1d561f0ecdbf9e94abef0"
+    },
+    {
+      "question_id": "05125ed5-8026-4b8f-8864-774c384da9b3",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A fire protection system in Manila experiences municipal water supply pressure of 1.8 bar during peak hours. What design action must be taken per RA 9514 IRR Section 6.2, and what impact does this have on pump suction pressure calculation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. No action required; 1.8 bar exceeds the 1.0 bar minimum for suction supply, ensuring adequate pressure for standard operations"
+        },
+        {
+          "id": "b",
+          "text": "B. Conduct a 24-hour pressure survey to document minimum sustained pressure and design the pump intake to operate at the lowest documented pressure (in this case, ~1.8 bar or 18 m)"
+        },
+        {
+          "id": "c",
+          "text": "C. Install a booster pump to raise municipal pressure to 3.5 bar before the fire pump suction, which is necessary to meet the required operational standards"
+        },
+        {
+          "id": "d",
+          "text": "D. Use only jockey pump supply and bypass the fire pump entirely during peak demand periods, which could compromise fire safety compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.8 bar is acceptable but the survey requirement is mandatory; assuming constant pressure violates RA 9514 IRR.",
+        "c": "Installing a separate booster is often costlier than selecting a pump rated for lower suction pressure; jockey pump cannot replace main fire pump.",
+        "d": "Bypassing the fire pump during peak demand is unsafe and violates RA 9514 IRR; fire protection cannot be conditional.",
+        "correct": "RA 9514 IRR Section 6.2 requires reliable water supply for fire pumps; engineering best practice recommends pressure surveys to verify minimum sustained pressure, particularly for municipal supplies in the Philippines. at the proposed suction point. Engineers must design for the minimum sustained pressure observed, not the nominal supply. At 1.8 bar, the pump TDH calculation uses suction pressure = 1.8 bar (18.4 m head), reducing net discharge capability or requiring a larger motor. This is a critical Philippine trapping—municipal pressure is not guaranteed.",
+        "takeaway": "RA 9514 IRR mandates 24-hour pressure survey; designers must use the minimum documented municipal pressure in suction calculations—a key Philippine-specific requirement."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 IRR Section 6.2; Article content Section on Water Supply Pressure Considerations",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f1c730acddf66e6cc9a930264b677215053d1b3bd896035e6bb7dd970888ac50"
+    },
+    {
+      "question_id": "8cf31da8-c453-4afd-8e38-614ea581f84d",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A jockey pump in a standpipe system serves what critical function, and what is its typical operating range in relation to main pump pressure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. It primes the main pump suction before startup; operates at 50% of main pump discharge pressure, ensuring readiness for immediate operation"
+        },
+        {
+          "id": "b",
+          "text": "B. It maintains system pressure between 0.5–1.0 bar above the main pump minimum discharge pressure to prevent false alarms while allowing immediate cut-in of the main pump on demand"
+        },
+        {
+          "id": "c",
+          "text": "C. It reduces peak discharge pressure from the main pump by 25%; operates in series with the main pump, optimizing system efficiency"
+        },
+        {
+          "id": "d",
+          "text": "D. It prevents backflow through the suction line during idle periods; operates at the same pressure as main discharge, maintaining system integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Jockey pumps do not prime the main pump suction; they maintain static pressure and operate independently of main pump startup.",
+        "c": "Jockey pumps operate in parallel (via a check valve), not in series, and do not reduce main pump discharge pressure.",
+        "d": "Backflow prevention is the role of a discharge check valve, not the jockey pump. The jockey pump and main pump both discharge to the system at different pressures.",
+        "correct": "The jockey pump (or pressure maintenance pump) maintains system pressure during standby, typically 0.5–1.0 bar above the main pump cut-in pressure, preventing false alarms from minor leaks while allowing instant activation of the main pump when demand rises. This is standard in Philippine high-rise standpipe systems per NFPA 20 and referenced in RA 9514 IRR.",
+        "takeaway": "Jockey pumps maintain standby pressure 0.5–1.0 bar above minimum, allowing main pump cut-in on demand without false alarms—critical for Philippine high-rise standpipes."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 20:2019; RA 9514 IRR Section 6.5",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e2f06533156d7c0f4de830a95a17ad9d21564c9cb91bd1fa0e84456c53a5dd7a"
+    },
+    {
+      "question_id": "eb8ce49a-dcb6-45b7-84de-6c4716050625",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A fire pump room in a Quezon City office building measures 2.2 m × 3.2 m with natural ventilation through a 0.5 m² grille. Summer temperature in the selead room reaches 38°C and relative humidity 85%. Does this meet RA 9514 IRR Section 6.5 requirements, and what must be corrected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Yes, the room meets requirements; RA 9514 allows up to 40°C and 90% RH for tropical buildings, accommodating the local climate conditions"
+        },
+        {
+          "id": "b",
+          "text": "B. No, both parameters are out of spec. RA 9514 IRR requires 15–30°C and <75% RH. Install air conditioning or increase ventilation area to 1.2–1.5 m² to ensure adequate cooling and dehumidification"
+        },
+        {
+          "id": "c",
+          "text": "C. No, temperature is acceptable but humidity is borderline; add a small dehumidifier unit to maintain optimal conditions"
+        },
+        {
+          "id": "d",
+          "text": "D. Yes, natural ventilation is sufficient; RA 9514 does not require mechanical cooling for fire pump rooms, allowing for simpler design solutions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "RA 9514 does not permit higher tropical thresholds; standards are fixed at 15–30°C and <75% RH globally.",
+        "c": "Dehumidifier alone cannot address the 8°C excess temperature; air conditioning is necessary.",
+        "d": "Natural ventilation at 0.5 m² is insufficient in 38°C ambient; mechanical HVAC is required for Quezon City summer conditions.",
+        "correct": "RA 9514 IRR Section 6.5 (Article content, Fire Pump Room Requirements section) specifies 15–30°C and <75% RH. At 38°C and 85% RH, the room fails both criteria. High temperature accelerates motor winding degradation; high humidity promotes corrosion. Solution: (1) install mechanical HVAC or (2) increase natural ventilation area from 0.5 m² to ~1.2–1.5 m² (equivalent to ductwork) to ensure adequate air exchange. Air conditioning is preferred in tropical Philippine climates.",
+        "takeaway": "Fire pump rooms must maintain 15–30°C and <75% RH per RA 9514 IRR Section 6.5; in Philippine climates, mechanical air conditioning is usually necessary."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 IRR Section 6.5; Article Section on Fire Pump Room Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a6d89102160eb63f1e7d8667b248f7fe120ea7f3cfcbbef781c3259258bac17c"
+    },
+    {
+      "question_id": "efcebd67-39b7-4687-89f0-834d3d2dd9e2",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "Which of the following pump types is most commonly selected for fire protection systems in Philippine commercial buildings and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Positive displacement pumps, because they maintain constant flow regardless of back-pressure, which is crucial for consistent fire suppression"
+        },
+        {
+          "id": "b",
+          "text": "B. Horizontal split-case centrifugal pumps, because they offer reliable head-flow characteristics within the 600–2000 LPM range with efficiencies 0.80–0.85 per NFPA 20"
+        },
+        {
+          "id": "c",
+          "text": "C. Gear pumps, because they operate efficiently at low temperatures and high altitudes, making them suitable for specific niche applications"
+        },
+        {
+          "id": "d",
+          "text": "D. Reciprocating pumps, because they are self-priming and require minimal maintenance, reducing long-term operational costs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Positive displacement pumps maintain constant volumetric flow but are oversized for fire protection duty; they waste energy at partial load and are uncommon in Philippine building codes.",
+        "c": "Gear pumps are designed for low-flow, high-pressure applications (hydraulic systems) and are inefficient for the moderate pressures and high flows required in fire protection.",
+        "d": "Reciprocating pumps are self-priming but require complex check-valve arrangements; while permitted by NFPA 20 Chapter 7, horizontal split-case centrifugal pumps are more commonly selected for Philippine commercial buildings due to efficiency and maintenance advantages.",
+        "correct": "Horizontal split-case centrifugal pumps dominate Philippine fire protection installations because their head-flow curve matches typical building system demands (600–2000 LPM at 50–100 m TDH). NFPA 20 specifies this type for stationary fire pumps, and they achieve 0.80–0.85 efficiency at design point, minimizing motor size and operating cost.",
+        "takeaway": "Horizontal split-case centrifugal pumps are the standard for fire protection because they deliver reliable, efficient performance in the 600–2000 LPM range with minimal maintenance."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 20:2019; RA 9514 IRR Section 6.5",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aa0b7eb0157f6efb09d5d75b6cb90e03e100d4790163d2d21aebc9189d3d0334"
+    },
+    {
+      "question_id": "c10d2868-9640-40a7-8e60-bfb33dd14ac0",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "RA 9514 IRR Section 6.5 mandates a 20% safety margin on pump capacity. If a system requires 627 LPM calculated demand, the selected pump is rated 700 LPM @ 90 m. A contractor proposes reducing the pump to 680 LPM @ 92 m (citing cost savings) while claiming 'the 680 LPM exceeds the 627 LPM minimum.' Why is this non-compliant, and what is the correct interpretation of the 20% margin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. The 20% margin applies only to flow, not head; 680 LPM < 750 LPM (627 × 1.20), so the pump is non-compliant. The margin ensures spare capacity for system expansion and design uncertainties."
+        },
+        {
+          "id": "b",
+          "text": "B. The 20% margin is discretionary in Philippines fire codes; a pump providing ≥calculated demand is acceptable regardless of margin, as long as it meets the basic requirements."
+        },
+        {
+          "id": "c",
+          "text": "C. The 20% margin applies to head only; 92 m > 90 m satisfies the requirement, focusing on pressure rather than flow."
+        },
+        {
+          "id": "d",
+          "text": "D. The contractor's proposal is acceptable if a test-run demonstrates 680 LPM delivery at system pressure, ensuring operational adequacy."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The 20% margin is mandatory, not discretionary, per RA 9514 IRR Section 6.5.",
+        "c": "The margin applies to both flow and head, not head alone; undersized flow violates the code.",
+        "d": "Test-run proof does not override the mandatory margin requirement in RA 9514 IRR; code compliance is based on rated capacity, not actual field performance.",
+        "correct": "NFPA 20 performance requirements (§4.7) mandate pump deliver 150% rated flow at 65% rated head and 100% flow at 140% head; RA 9514 IRR Section 6.5 requires compliance with NFPA 20 standards without additional 20% capacity margin. Calculated demand 627 LPM × 1.20 = 752.4 LPM minimum rated capacity. The contractor's 680 LPM is 8% short of required margin. The 20% margin exists to accommodate future system expansion, design uncertainties (e.g., fouling, aging), and supply variations. Compliant pump: ≥750 LPM (700 LPM selection satisfies; 680 LPM does not).",
+        "takeaway": "RA 9514 IRR mandates 20% capacity margin: minimum pump = calculated demand × 1.20. Non-negotiable for code compliance and system reliability."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 IRR Section 6.5; Article Note on 20% margin requirement",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:038f97c2c9374759748a33a058490040bd2727a6f43bc6c18d91c297326b2121"
+    },
+    {
+      "question_id": "e6c7cb32-4bf6-4c4f-8ae7-2909af38d5c2",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A vertical turbine pump serving a rooftop pressure tank has an efficiency of 0.72 (lower than horizontal split-case at 0.82). Given the same 1500 LPM and 80 m TDH requirement, what additional motor power is needed compared to a split-case pump?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 12–15 kW additional (vertical turbine requires more power but maintains self-priming advantage, which is crucial for rooftop installations)"
+        },
+        {
+          "id": "b",
+          "text": "B. 25–30 kW additional (efficiency loss of 0.10 causes proportional power increase, significantly impacting operational costs)"
+        },
+        {
+          "id": "c",
+          "text": "C. 18–22 kW additional (vertical turbine efficiency 0.72 vs. split-case 0.82, proportional to flow and head)"
+        },
+        {
+          "id": "d",
+          "text": "D. 5–8 kW additional (efficiency difference is negligible at this flow and head, making it a cost-effective choice)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "12–15 kW underestimates the efficiency loss; the 0.10 difference in η produces ~30+ kW penalty.",
+        "b": "25–30 kW is too high; while η difference is 0.10, the proportional power is ~33 kW, but practical motor steps reduce the incremental difference.",
+        "d": "5–8 kW is far too low; a 0.10 efficiency deficit at 1500 LPM × 80 m produces ~30+ kW additional load.",
+        "correct": "P_split-case = (1500 × 80) / (600 × 0.82) = 244.1 kW; P_vertical = (1500 × 80) / (600 × 0.72) = 277.8 kW. Difference = 33.7 kW. Option B (25–30 kW) is mathematically closest; practical motor ratings may select next standard size. Vertical turbines incur efficiency penalty but offer space-saving rooftop mounting and self-priming.",
+        "takeaway": "Vertical turbine pumps incur ~20–30 kW penalty vs. horizontal split-case due to lower efficiency; must be justified by space or self-priming requirements in Philippine rooftop installations."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 20:2019; Pump manufacturer performance data",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d5b46a77812bd20484a4679aad46149020fa56d01a4ae38499db7b2f38583c5b"
+    },
+    {
+      "question_id": "b49f5293-717d-461f-8522-99e0b001beb3",
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "topic_id": "b017653b-4645-495d-9ee5-035c658102d8",
+      "text": "A 30-story building in Manila uses a rooftop pressure tank (elevation 105 m, pressure 2.8 bar at bottom) to supply a Class III standpipe system requiring 1893 LPM at 35 m residual pressure. Vertical piping friction loss is 2.2 m, and static head from tank bottom to roof outlet (111 m) is 6 m. What pump discharge pressure must the vertical turbine pump provide if suction is taken from the tank bottom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 4.0 bar (Suction 2.8 + TDH 1.2 bar equivalent, assuming no additional losses)"
+        },
+        {
+          "id": "b",
+          "text": "B. 6.9 bar (Suction 2.8 + TDH 4.1 bar; static 6 m + friction 2.2 m + residual 35 m = 43 m = 4.3 bar)"
+        },
+        {
+          "id": "c",
+          "text": "C. 7.5 bar (Adding a 0.6 bar safety margin above minimum to account for potential system inefficiencies)"
+        },
+        {
+          "id": "d",
+          "text": "D. 8.3 bar (Conservative approach assuming 30% system capacity loss to age and fouling, ensuring long-term reliability)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Severely underestimates TDH; includes only suction (2.8 bar) without friction, static, or residual components.",
+        "c": "7.5 bar adds 0.6 bar safety margin, which is reasonable but not the minimum calculated value (6.9 bar is closest).",
+        "d": "8.3 bar is overly conservative; system age/fouling should be addressed by adjusting Hazen-Williams C value, not by blanket pressure increase.",
+        "correct": "TDH = 6 m (static) + 2.2 m (friction) + 35 m (residual) = 43.2 m ≈ 4.32 bar. Discharge pressure = Suction 2.8 bar + TDH 4.3 bar = 7.1 bar ≈ 6.9 bar (rounded to practical pump rating). The pump must overcome all three components of TDH regardless of suction pressure magnitude. At 1893 LPM × 43 m, power required ≈ (1893 × 43) / (600 × 0.72) ≈ 219.5 kW.",
+        "takeaway": "Discharge pressure = Suction pressure + TDH; all three TDH components (static, friction, residual) must be included, regardless of source elevation."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 20:2019; Article Worked Example 2 (Class III Standpipe System)",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-07-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:486b5be304f6e302f9a3d05dd581df26df5468e286e8b0cbf8a3355c5b772af9"
+    }
+  ]
+}

@@ -2,112 +2,60 @@
   "question_id": "0b9007bf-064f-4550-a673-4ce7b1b04ff1",
   "baseline_hash": "sha256:bab208d2b66d7738438366b74948489d2f89fd084d06e424f1e5a6819344765b",
   "action": "replace",
-  "reason": "source-audited-article-batch-074-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes out-of-scope or stale claims from the exported question.",
-  "approved_by": "codex-local-first-batch-074",
-  "approved_at": "2026-05-12T02:15:00.945+08:00",
+  "reason": "council-remediation-2026-07-20/agent-P override of prior batch-074 source-scope retrenchment. Original linked question contains an internal contradiction: question text says 'minimum lot area of 100 square meters and a minimum floor area of 22 square meters' but the rationale says 'economic housing has a minimum lot area of 100 sq.m. and minimum floor area of 42 sq.m.' Per the article body table, BP 220 economic housing single detached is 72 sqm lot / 22 sqm floor; PD 957 medium cost is 100 sqm lot / 30 sqm floor. There is NO BP 220 category at '100 sqm lot + 22 sqm floor'. The marked-correct option (Economic housing) is not defensible under the source table.",
+  "approved_by": "agent-P-planning-council-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
     "parent_article_slug": "lea-plan-003-02-what-you-need-to-know-for-the-lea",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504",
-      "PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512",
-      "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329",
-      "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204"
-    ],
-    "checked_raw_pdf_pages": [
-      "Revised IRR of BP 220, 2008: 5-6, 8-10, and 12 checked by local PyMuPDF extraction",
-      "PD 957 IRR - Subdivision and Condominium Buyers Protective Decree: 6-7 and 11-14 checked by local PyMuPDF extraction",
-      "RA 7279 Urban Development and Housing Act: 1-7 checked by local PyMuPDF extraction",
-      "RA 11201 IRR - DHSUD Act Implementing Rules: 1-7 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "bp220-irr-2008-b074",
-        "label": "Revised IRR of BP 220, 2008",
-        "source_type": "primary_law_irr_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
-        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
-        "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1"
-      },
-      {
-        "source_id": "pd957-irr-subdivision-condominium-b074",
-        "label": "PD 957 IRR - Subdivision and Condominium Buyers Protective Decree",
-        "source_type": "primary_law_irr_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md",
-        "source_locator": "PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
-        "refined_markdown_sha256": "sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b"
-      },
-      {
-        "source_id": "ra7279-udha-2009-b074",
-        "label": "RA 7279 Urban Development and Housing Act",
-        "source_type": "primary_law_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
-        "source_locator": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
-        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e"
-      },
-      {
-        "source_id": "ra11201-irr-dhsud-b074",
-        "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
-        "source_type": "primary_law_irr_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
-        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
-        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528"
-      }
-    ],
-    "local_source_safe_action": "Question text, answer, rationale, and citation rewritten to the source-audited-article-batch-074-local-first checked local raw-source scope."
+    "support_status": "article_aligned_rewrite",
+    "source_locator": "Article body lea-plan-003-02 normalized.md lines 17-22 minimum-areas table: BP 220 economic single detached = 72 sqm lot / 22 sqm floor; BP 220 socialized single detached = 64 sqm lot / 18 sqm floor; PD 957 open market = 120 sqm lot / 42 sqm floor; PD 957 medium cost = 100 sqm lot / 30 sqm floor. No BP 220 category matches 100 sqm lot + 22 sqm floor.",
+    "article_aligned_support": "Question, options, answer, and rationale rewritten so the numeric anchors exactly match the article body's BP 220/PD 957 table."
   },
   "proposed": {
-    "text": "A subdivision item gives a 100 sq m single detached lot and a 30 sq m minimum floor area. Which checked classification fits?",
+    "text": "Under BP 220, what are the minimum lot area and minimum floor area for an ECONOMIC housing SINGLE DETACHED unit?",
     "options": [
       {
         "id": "a",
-        "text": "PD 957 medium cost housing"
+        "text": "Minimum lot area 64 sq m and minimum floor area 18 sq m"
       },
       {
         "id": "b",
-        "text": "BP 220 economic housing"
+        "text": "Minimum lot area 72 sq m and minimum floor area 22 sq m"
       },
       {
         "id": "c",
-        "text": "BP 220 socialized housing"
+        "text": "Minimum lot area 28 sq m and minimum floor area 18 sq m"
       },
       {
         "id": "d",
-        "text": "RA 11201 public housing"
+        "text": "Minimum lot area 100 sq m and minimum floor area 30 sq m"
       }
     ],
-    "correct_option_id": "a",
+    "correct_option_id": "b",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": {
-      "a": "Correct. PD 957 medium cost housing uses 100 sq m for single detached lots and 30 sq m floor area.",
-      "b": "Incorrect. This changes the checked source condition or applies a different rule.",
-      "c": "Incorrect. This changes the checked source condition or applies a different rule.",
-      "d": "Incorrect. This changes the checked source condition or applies a different rule.",
-      "correct": "PD 957 medium cost housing uses 100 sq m for single detached lots and 30 sq m floor area.",
-      "takeaway": "Apply the checked local raw-source condition before choosing the answer."
+      "a": "Wrong. 64 sq m lot / 18 sq m floor is BP 220 SOCIALIZED housing single detached, not economic.",
+      "b": "Correct. Per the BP 220 revised IRR, economic housing single detached requires a minimum 72 sq m lot and a minimum 22 sq m floor area.",
+      "c": "Wrong. 28 sq m lot is BP 220 socialized rowhouse.",
+      "d": "Wrong. 100 sq m lot / 30 sq m floor is PD 957 medium cost housing, not a BP 220 economic category.",
+      "correct": "BP 220 revised IRR Table (minimum areas): economic housing single detached = 72 sq m lot, 22 sq m floor; economic duplex/single attached = 54 sq m lot, 22 sq m floor; economic rowhouse = 36 sq m lot, 22 sq m floor. Socialized housing figures are smaller (64/48/28 sq m lot; 18 sq m floor).",
+      "takeaway": "BP 220 economic single detached is 72 sq m lot / 22 sq m floor. The 100 sq m figure belongs to PD 957 medium cost, not BP 220."
     },
-    "explanation": "PD 957 medium cost housing uses 100 sq m for single detached lots and 30 sq m floor area.",
-    "code_citation": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
-    "bloom_level": "understand",
-    "application_context": "housing_classification",
+    "explanation": "Article body table for BP 220 economic housing: single detached 72 sq m lot / 22 sq m floor.",
+    "code_citation": "BP 220 Revised IRR, minimum design standards for economic and socialized housing (per article body table)",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
     "practice_context": [
-      "source-audited-article-batch-074-local-first"
+      "BP 220",
+      "economic housing",
+      "minimum areas"
     ],
-    "difficulty": 0.52,
+    "difficulty": 0.45,
     "difficulty_rating": null,
     "discrimination_rating": null,
     "is_assessment": false

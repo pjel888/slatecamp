@@ -21,5 +21,52 @@
     "checked_sources": [
       "bsi-steel-members"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Why does flange width matter in the local steel member source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It sets the number of masonry courses."
+      },
+      {
+        "id": "b",
+        "text": "It replaces all allowable-stress checks."
+      },
+      {
+        "id": "c",
+        "text": "Increasing steel beam flange width increases resistance to lateral buckling."
+      },
+      {
+        "id": "d",
+        "text": "It proves the bolt grade without inspection."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "It sets the number of masonry courses. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "b": "It replaces all allowable-stress checks. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "c": "Increasing steel beam flange width increases resistance to lateral buckling. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+      "d": "It proves the bolt grade without inspection. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "correct": "Increasing steel beam flange width increases resistance to lateral buckling. Supported by bsi-steel-members.",
+      "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-steel-members",
+      "checked_sources": [
+        "bsi-steel-members"
+      ]
+    },
+    "explanation": "Increasing steel beam flange width increases resistance to lateral buckling. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+    "code_citation": "bsi-steel-members",
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-008-01-009"
   }
 }

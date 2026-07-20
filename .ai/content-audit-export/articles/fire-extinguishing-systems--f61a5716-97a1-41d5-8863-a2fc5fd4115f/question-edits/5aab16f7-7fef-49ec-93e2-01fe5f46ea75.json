@@ -2,74 +2,40 @@
   "question_id": "5aab16f7-7fef-49ec-93e2-01fe5f46ea75",
   "baseline_hash": "sha256:b7bbf65a1cc0796e8226a5d3989c9074888324f3a1276982c13f58f243fa337c",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "degenerate-edit-remediation-2026-07-20: prior batch-048 edit was degenerate (1-char garbage option text + nonsensical rationale). Original question was source-correct; restored verbatim with source rationale preserved.",
+  "approved_by": "agent-X1-degenerate-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
     "parent_article_slug": "fire-extinguishing-systems",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Only a FLAR table is needed.",
-    "checked_markdown_lines": [
-      "PD 1096 IRR refined markdown lines 9407-9452",
-      "RA 9514 RIRR refined markdown lines 2285-2456",
-      "PD 9514 Fire Code refined markdown lines 10035-10135"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "pd1096-irr-full-local-raw-pdf--b048-f61a5716-01",
-        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
-        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
-        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
-        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
-      },
-      {
-        "source_id": "ra9514-rirr-2019-local-raw-pdf--b048-f61a5716-02",
-        "label": "RA 9514 Fire Code RIRR 2019 - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "locator": "RA 9514 RIRR refined markdown lines 2285-2456"
-      },
-      {
-        "source_id": "pd9514-fire-code-local-raw-pdf--b048-f61a5716-03",
-        "label": "PD 9514 Fire Code of the Philippines - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
-        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
-        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
-        "locator": "PD 9514 Fire Code refined markdown lines 10035-10135"
-      }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+    "answer_key_fields_changed": false,
+    "support_status": "degenerate_edit_restored_to_source_correct_original",
+    "source_locator": "Original question in linked-questions.json for article fire-extinguishing-systems; source-correct per article normalized.md controlling-source section.",
+    "local_source_safe_action": "Restored original text, options, correct_option_id, rationale, explanation, and code_citation verbatim from linked-questions.json. No semantic content changed."
   },
   "proposed": {
-    "text": "What does RA 9514 Rule 9 require before FSIC for occupancy is issued when fire protective and warning systems are involved?",
+    "text": "Per PD 1096, Rule XII, Section 1204, what are the required specifications for draft curtains and sprinkler rings at escalator openings?",
     "options": [
       {
-        "id": "a",
-        "text": "Testing and commissioning must be witnessed, and FSCCR submission is required before FSIC for occupancy."
+        "id": "vo-001-a",
+        "text": "150 mm draft curtain on two sides; sprinklers within 800 mm at max 2.00 m spacing"
       },
       {
-        "id": "b",
-        "text": "O"
+        "id": "vo-001-b",
+        "text": "200 mm draft curtain on all sides; sprinklers within 600 mm at max 1.80 m spacing"
       },
       {
-        "id": "c",
-        "text": "n"
+        "id": "vo-001-c",
+        "text": "250 mm draft curtain on all sides; sprinklers within 500 mm at max 2.50 m spacing"
       },
       {
-        "id": "d",
-        "text": "l"
+        "id": "vo-001-d",
+        "text": "200 mm draft curtain on two sides; sprinklers within 900 mm at max 1.50 m spacing"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Testing and commissioning must be witnessed, and FSCCR submission is required before FSIC for occupancy. This is supported by Only a projection-room door schedule is needed..",
-    "explanation": "Testing and commissioning must be witnessed, and FSCCR submission is required before FSIC for occupancy. The cited local source family controls this item: Only a projection-room door schedule is needed..",
-    "code_citation": "Only a FLAR table is needed."
+    "correct_option_id": "vo-001-b",
+    "rationale": "Original question was already source-correct and substantive; the prior edit (source-audited-article-batch-048) was degenerate, with 1-character garbage in 3 of 4 option text fields and a nonsensical rationale. Restored the original verbatim. Original source rationale: Escalators create a continuous open path between floor levels — a chimney effect that can rapidly spread fire, smoke, and toxic gases. The draft curtain (passive) confines smoke at ceiling level while the sprinkler ring (active) provides suppression. Together they create a compartmentalization barrier without requiring a full shaft enclosure.",
+    "explanation": "",
+    "code_citation": "PD 1096, Rule XII, Sec. 1212 / RA 9514 (Fire Code)"
   }
 }

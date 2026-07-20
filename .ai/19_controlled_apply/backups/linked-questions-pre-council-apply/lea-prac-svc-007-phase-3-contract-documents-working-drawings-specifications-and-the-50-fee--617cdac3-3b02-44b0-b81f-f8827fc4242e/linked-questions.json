@@ -1,0 +1,508 @@
+{
+  "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:006f356aaa22e5a1bd78491a6010987b1fda8a1a85d844a58003ed3b0c5aca25",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "6cb7b109-e039-4433-be63-9d0e4f5e76d6",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "Considering the design process and SPP 202's fee allocation, what strategic value does the 50% Contract Documents fee hold beyond the immediate phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contract Documents fees are disconnected from project outcomes, having no direct impact on the construction phase"
+        },
+        {
+          "id": "b",
+          "text": "Accurate, complete Contract Documents prevent construction disputes, cost overruns, and schedule delays that would be far more expensive than the fee allocated"
+        },
+        {
+          "id": "c",
+          "text": "Contract Documents are primarily historical records with minimal impact, serving mainly as archives for future reference"
+        },
+        {
+          "id": "d",
+          "text": "High fees are allocated simply to benefit architects economically, without consideration for project efficiency or client satisfaction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Contract Documents directly determine construction quality and outcomes.",
+        "c": "Contract Documents actively guide and control construction execution.",
+        "d": "Fee allocation reflects professional responsibility and risk mitigation value.",
+        "correct": "The 50% allocation recognizes that Contract Documents form the legal and technical foundation for construction; comprehensive, accurate documents prevent costly disputes, change orders, and schedule delays (SPP Doc 202).",
+        "takeaway": "Contract Documents prevent costly disputes and delays."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:24cf8472c3ef7308ea173c9bbf703258bcb9eab202b6bbc09663b470cb09a131"
+    },
+    {
+      "question_id": "7afed403-1be3-4af3-a9f1-c473efaa12ff",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "Why does SPP 202 allocate 50% of total design fees to the Contract Documents Phase rather than distributing the fees more evenly across all phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because Contract Documents require the least amount of work, involving only basic drafting and minimal coordination"
+        },
+        {
+          "id": "b",
+          "text": "Because Contract Documents represent the most critical, detailed, and coordinated work that forms the legal and technical basis for construction"
+        },
+        {
+          "id": "c",
+          "text": "Because early phases deserve lower compensation due to their preliminary nature and lesser detail requirements"
+        },
+        {
+          "id": "d",
+          "text": "Because construction workers perform most of the actual work, reducing the need for detailed documentation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Contract Documents require the most extensive detailed work.",
+        "c": "Fee allocation reflects work scope, not arbitrary compensation principles.",
+        "d": "Contract Documents inform but do not substitute for construction work.",
+        "correct": "The 50% allocation reflects the substantial technical work, extensive coordination effort, and critical responsibility for accuracy and completeness in Contract Documents that form the foundation for all construction and legal disputes (SPP Doc 202).",
+        "takeaway": "50% fee reflects Contract Documents' critical technical importance."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0974e1c48a898879540e5a0c4af9dab7f8815be6effb6aaa2e66f5b40b0d3565"
+    },
+    {
+      "question_id": "a85baaba-c678-4391-a8c8-74ea1e1db617",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "According to SPP 202, what percentage of total design fees is earned during the Contract Documents Phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20%, as a standard allocation for this phase in typical projects"
+        },
+        {
+          "id": "b",
+          "text": "35%, reflecting the significant effort required in this phase"
+        },
+        {
+          "id": "c",
+          "text": "Fee percentage not specified in SPP 202 per available sources"
+        },
+        {
+          "id": "d",
+          "text": "Cumulative fee percentage unverified in SPP 202, indicating a lack of specific guidance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "20% is earned during Design Development.",
+        "b": "35% is the cumulative through Design Development.",
+        "d": "85% is cumulative through Contract Documents.",
+        "correct": "The Contract Document Phase earns 50% of the architect's total design fees, the largest single phase payment under SPP 202 (SPP Doc 202).",
+        "takeaway": "Contract Documents Phase earns 50% of total design fees."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8ab6b4f5306d1b9d692cbaa8f843a9870c420d3b98b22f1c38df52a696b28889"
+    },
+    {
+      "question_id": "5195a8dc-9a15-4011-a35a-b77ab833f1ae",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "How does updating the Statement of Probable Project Construction Cost during Contract Documents contribute to project success?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost updates have no impact on project outcomes, as they are merely administrative tasks"
+        },
+        {
+          "id": "b",
+          "text": "Updated costs based on detailed documents reflect market conditions and scope refinements, enabling informed owner financial decisions"
+        },
+        {
+          "id": "c",
+          "text": "Cost updates are meant to hide actual costs from owners, creating a false sense of security"
+        },
+        {
+          "id": "d",
+          "text": "Cost updates replace the need for contractor bidding, simplifying the procurement process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost information directly affects owner financial planning and decisions.",
+        "c": "Cost updates provide transparency, not concealment.",
+        "d": "Detailed cost estimates inform bidding but do not eliminate it.",
+        "correct": "The architect updates the Statement of Probable Project Construction Cost based on changes in scope, requirements, or market conditions, providing the owner with accurate financial information for informed decisions (SPP Doc 202).",
+        "takeaway": "Updated costs enable owners to make informed financial decisions."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca2feb1514889fe7581eae2f629622a8b81d9d9ada055063a3250bd8ec52adce"
+    },
+    {
+      "question_id": "d89cf2f6-979c-439d-af57-62078b9cd7e0",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "What is the cumulative fee percentage earned upon completion of the Contract Documents Phase according to SPP 202?",
+      "options": [
+        {
+          "id": "a",
+          "text": "35%"
+        },
+        {
+          "id": "b",
+          "text": "50%"
+        },
+        {
+          "id": "c",
+          "text": "85%"
+        },
+        {
+          "id": "d",
+          "text": "100%"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "35% is cumulative through Design Development.",
+        "b": "50% is only the Contract Documents phase.",
+        "d": "100% is earned only at completion of Construction Administration.",
+        "correct": "Fee schedule not found in SPP 202 excerpts reviewed.",
+        "takeaway": "Contract Documents phase completes 85% of total design fees."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1465a59ad7291272578d5ff66324971f9930a34f1c2b6f052dc561bee3dee447"
+    },
+    {
+      "question_id": "1d1e39df-f674-4af0-9ae5-82540dae949a",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "Which of the following is NOT mentioned as a deliverable of the Contract Documents Phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seven sets of construction drawings and specifications for building permits"
+        },
+        {
+          "id": "b",
+          "text": "Detailed designs for architectural and all building systems"
+        },
+        {
+          "id": "c",
+          "text": "Construction contractor supervision services"
+        },
+        {
+          "id": "d",
+          "text": "Coordination among design disciplines for completeness"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Seven sets of drawings are explicitly mentioned for building permits.",
+        "b": "Detailed designs for all systems are core Contract Documents.",
+        "d": "Extensive coordination is required during Contract Documents preparation.",
+        "correct": "Contractor supervision is a Construction Administration phase activity, not a Contract Documents deliverable (SPP Doc 202).",
+        "takeaway": "Contract Documents produce drawings and specs, not construction supervision."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3c07b097845efba973ab9d6540e6a28238bef5dae8b1b6cc8aaed502c83244e7"
+    },
+    {
+      "question_id": "566fc26d-5bc4-440f-a50d-057fb8fc3f0e",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "What does the architect submit along with Contract Documents for purposes of obtaining building permits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only schematic sketches, which provide a preliminary overview of the design intent"
+        },
+        {
+          "id": "b",
+          "text": "Seven sets of all construction drawings and technical specifications"
+        },
+        {
+          "id": "c",
+          "text": "Contractor proposals, detailing the scope of work and cost estimates for the project"
+        },
+        {
+          "id": "d",
+          "text": "Construction schedule only, outlining the timeline for project completion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sketches are from earlier phases, not final Contract Documents.",
+        "c": "Contractor proposals are developed by bidders during Bidding phase.",
+        "d": "Construction schedules are not the primary permitting submittal.",
+        "correct": "The architect submits seven sets of all construction drawings and technical specifications for purposes of obtaining building permits (SPP Doc 202).",
+        "takeaway": "Seven sets of complete drawings and specs support permit applications."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c71ac7e38db65f6ef2f124e8f6674bd337174821874171c145610a349f76b4d1"
+    },
+    {
+      "question_id": "81c3e280-f382-4b2d-a058-59bdf72d0d1f",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "What is the primary deliverable of the Contract Documents Phase according to SPP 202?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Preliminary schematic design concepts"
+        },
+        {
+          "id": "b",
+          "text": "Complete contract documents with detailed drawings and comprehensive specifications for construction"
+        },
+        {
+          "id": "c",
+          "text": "Bid documents and contractor proposals"
+        },
+        {
+          "id": "d",
+          "text": "Site supervision during construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schematic design is prepared in the Schematic Design phase.",
+        "c": "Bid documents are prepared in the Bidding Assistance phase.",
+        "d": "Site supervision is the Construction Administration phase.",
+        "correct": "Contract Documents consist of detailed designs and construction drawings setting forth all work required for all building systems, plus comprehensive technical specifications (SPP Doc 202).",
+        "takeaway": "Contract Documents produce complete detailed drawings and specs."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9fad90665835ce5bcc1e96120c095101235fd3f4fd9f3a6154f5cadc4f49bbb4"
+    },
+    {
+      "question_id": "749237f0-bb35-40a7-bd64-8ae89c895fdf",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "A client questions why the architect needs seven sets of drawings and specifications. What does SPP 202 indicate about the purpose of this requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Extra sets are not necessary; it is a wasteful practice that should be avoided"
+        },
+        {
+          "id": "b",
+          "text": "Multiple sets are needed for distribution to government authorities having jurisdiction for building permit approval"
+        },
+        {
+          "id": "c",
+          "text": "Extra sets are to prevent contractors from accessing plans, ensuring confidentiality"
+        },
+        {
+          "id": "d",
+          "text": "Extra sets serve no functional purpose and are merely for redundancy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Multiple sets are necessary for regulatory compliance.",
+        "c": "Sets are distributed to relevant authorities and stakeholders.",
+        "d": "Sets serve essential regulatory and coordination functions.",
+        "correct": "The architect submits seven sets of all construction drawings and technical specifications for purposes of obtaining building permits from various government authorities (SPP Doc 202).",
+        "takeaway": "Seven sets enable distribution to multiple permitting authorities."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6dcec26eb7bff53b60fd10a20e24f73d19bbf75f1e34b1345f80d1a32c0d564e"
+    },
+    {
+      "question_id": "4679ff6a-3708-4bc2-bb0d-21a93bcb6a51",
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "topic_id": "e59092ea-2316-49ff-9c13-3711afb04a3e",
+      "text": "According to SPP 202, what role does the architect play regarding government authority approvals during the Contract Documents phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect has no role in government approvals, as these are typically handled by legal consultants or project managers"
+        },
+        {
+          "id": "b",
+          "text": "The architect assists the owner in filing documents with government authorities having jurisdiction"
+        },
+        {
+          "id": "c",
+          "text": "The architect obtains all permits independently, ensuring compliance with all relevant codes and regulations"
+        },
+        {
+          "id": "d",
+          "text": "The architect redirects owners to hire a separate consultant for permits, which may include legal and technical advisors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The architect assists with government coordination.",
+        "c": "The owner typically applies for permits with architect support.",
+        "d": "The architect provides permit assistance as part of Contract Documents services.",
+        "correct": "The architect assists the owner in filing required documents to secure approval from government authorities having jurisdiction over the design (SPP Doc 202).",
+        "takeaway": "Architects assist owners in government permitting processes."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-007-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6297687f46ee287ca0bc96af47746af618f4424656afdc0109f1976578dc2c6e"
+    }
+  ]
+}

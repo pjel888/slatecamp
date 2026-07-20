@@ -8,31 +8,31 @@
       "question_id": "9b2ccd47-6e9d-46d7-8531-e4760135cde1",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Based on the specifications in \"Widths & Slopes\", if a project requires 1200 mm, what is the correct interpretation?",
+      "text": "What is the minimum clear width of an accessible ramp under the checked BP 344 source?",
       "options": [
         {
-          "id": "A",
-          "text": "1200 mm is the minimum/standard requirement"
+          "id": "a",
+          "text": "1200 mm."
         },
         {
-          "id": "B",
-          "text": "1200 mm is the maximum permitted value"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "1200 mm applies only to specific conditions"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "1200 mm is an approximate value subject to interpretation"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 1200 mm as the requirement. Context: :2]\r \r ---\r \r ## 5. Quick Memory Grid\r \r ```text\r RAMP WIDTH (accessible)     → ...",
+      "rationale": "The checked local source supports: 1200 mm.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:12.706149+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.636923+00:00",
       "content_hash": "sha256:1bb531420b717b60c9986025ba6ece3b3b715146e55ca461533e25699249c271"
     },
     {
       "question_id": "5717e947-91cf-4cd0-b4ca-85796983369a",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A ramp designer uses the formula: Run = Rise × Slope Ratio. A ramp has a 700 mm rise and a 1:15 slope. What is the computed run length, and what does this verify?",
+      "text": "When an accessible ramp is longer than 10.50 m, what landing condition is source-safe?",
       "options": [
         {
-          "id": "A",
-          "text": "Run = 700 ÷ 15 = 46.7 mm — the slope ratio is inverted in the formula"
+          "id": "a",
+          "text": "Provide intermediate landings with a minimum length of 1800 mm."
         },
         {
-          "id": "B",
-          "text": "Run = 700 × 15 = 10,500 mm (10.5 m) — verifying the BP 344 maximum run for a 1:15 slope"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "Run = 700 × 15 = 10,500 mm (10.5 m) — verifying the BP 344 maximum run for a 1:20 slope"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "Run = 700 × 20 = 14,000 mm (14.0 m) — the correct formula uses the reciprocal slope"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "700 mm rise × 15 (slope ratio denominator) = 10,500 mm run — confirming the 1:15 maximum.",
-        "explanation": "The article explicitly demonstrates this formula: Rise × Slope Ratio = Run. For 1:15: 700 × 15 = 10,500 mm = 10.5 m. This is the maximum run for the 1:15 slope tier. Option C uses the same correct calculation but wrongly attributes it to 1:20 — 1:20 has no stated run limit in the table, only the 15.0 m landing interval.",
-        "common_misconceptions": [
-          "Dividing rise by slope ratio instead of multiplying — always multiply: rise × ratio denominator = run",
-          "Attributing the 10.5 m result to the 1:20 slope rather than the 1:15 slope"
-        ]
-      },
+      "rationale": "The checked local source supports: Provide intermediate landings with a minimum length of 1800 mm.",
       "explanation": "Formula: Run = Rise × Slope Ratio; 700 × 15 = 10,500 mm — the BP 344 maximum run for 1:15 slope.",
       "code_citation": "BP 344 Appendix A Table A.1.1",
       "bloom_level": "apply",
@@ -96,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.650810+00:00",
       "content_hash": "sha256:2340c905f86d3a08c319d27f724df5bb9e82f970315760f01b3705d278134fdf"
     },
     {
       "question_id": "1008d795-548f-4735-b76a-0bc4c4d5a047",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "From the quick memory grid in 'Widths & Slopes', which two ramp slope values are stated for new accessible construction, and how does the cross gradient of a sidewalk relate to these?",
+      "text": "What level area is required at the upper and lower ends of a ramp?",
       "options": [
         {
-          "id": "A",
-          "text": "1:20 preferred and 1:15 maximum for new ramps; cross gradient of sidewalks is limited to the much stricter 1:100"
+          "id": "a",
+          "text": "A level area not less than 1800 mm."
         },
         {
-          "id": "B",
-          "text": "1:15 preferred and 1:12 maximum for new ramps; cross gradient of sidewalks matches the 1:15 ramp maximum"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "1:20 preferred and 1:15 maximum for new ramps; cross gradient of sidewalks also follows the 1:20 preferred slope"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "1:20 preferred and 1:12 maximum for new ramps; cross gradient of sidewalks is limited to 1:50"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "New ramps: 1:20 preferred, 1:15 maximum; sidewalk cross gradient is far stricter at 1:100.",
-        "explanation": "The memory grid clearly lists 1:20 preferred and 1:15 maximum for new accessible ramps, and separately lists cross gradient (sidewalk) at 1:100. The 1:100 cross gradient is much flatter than both ramp slopes because a cross slope on a walking surface continuously pushes a wheelchair sideways rather than backward, making even a modest cross slope more fatiguing and difficult to control than an equivalent longitudinal slope.",
-        "common_misconceptions": [
-          "Assuming cross gradient follows the same 1:20 limit as longitudinal ramp slope — cross gradient is governed by the stricter 1:100",
-          "Treating 1:12 as the new-work ramp maximum — the maximum for new construction is 1:15; 1:12 is the absolute maximum for constrained conditions"
-        ]
-      },
+      "rationale": "The checked local source supports: A level area not less than 1800 mm.",
       "explanation": "New ramps: 1:20 preferred / 1:15 max; sidewalk cross gradient is stricter at 1:100 per BP 344.",
       "code_citation": "BP 344 Appendix A; Appendix B",
       "bloom_level": "analyze",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.639159+00:00",
       "content_hash": "sha256:1808b884921fb1ec4761203b35864fe0a2cccad2368e75f1d090408aa76a6e71"
     },
     {
       "question_id": "02f12692-30d5-427e-8af2-a57f81b536d6",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A building accessibility review finds a ramp with: slope 1:15, run 10.5 m, 1800 mm top and bottom landings, 100 mm edge protection, dual handrails at 700 mm and 900 mm, and 1200 mm clear width. Which assessment is correct?",
+      "text": "What handrail heights are used for accessible ramps and stairs in the checked BP 344 source?",
       "options": [
         {
-          "id": "A",
-          "text": "Non-compliant — 1800 mm landings are insufficient; the minimum landing length is 2000 mm"
+          "id": "a",
+          "text": "700 mm and 900 mm above the ramp or stair."
         },
         {
-          "id": "B",
-          "text": "Non-compliant — the 1:15 slope exceeds the 1:20 maximum for all new accessible ramps"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "Fully compliant — all five elements meet or exceed BP 344 Appendix A requirements"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "Non-compliant — dual handrails must be at 750 mm and 950 mm, not 700 mm and 900 mm"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "All elements comply: 1:15 is the new-work maximum, 10.5 m matches the maximum run, 1800 mm landings are correct, 100 mm edge protection is correct, 700/900 mm handrails are correct, 1200 mm width is correct.",
-        "explanation": "Every dimension in the ramp description matches a BP 344 Appendix A specification exactly: 1:15 slope (maximum for new work), 10.5 m run (the maximum run for 1:15), 1800 mm landings (correct for top, bottom, and intermediate), 100 mm edge protection (minimum), 700 and 900 mm handrails (both heights required), 1200 mm clear width (minimum). Option B incorrectly treats 1:20 as the absolute maximum — it is preferred, not mandatory.",
-        "common_misconceptions": [
-          "Treating 1:20 as the absolute maximum and rejecting 1:15 as non-compliant — 1:20 is preferred but 1:15 is permitted as the maximum for new construction",
-          "Expecting 2000 mm landings — BP 344 specifies 1800 mm for all ramp landings"
-        ]
-      },
+      "rationale": "The checked local source supports: 700 mm and 900 mm above the ramp or stair.",
       "explanation": "All five ramp elements comply with BP 344 Appendix A — 1:15 is a valid new-work slope, not a violation.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "evaluate",
@@ -198,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.656755+00:00",
       "content_hash": "sha256:322f3051538a04fca8e056bc310114b67cb76fad99c44f48d1eeaabec29f7563"
     },
     {
       "question_id": "58acf34a-a3d7-4813-9689-9830476d111d",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "PD 1096 states that 'a ramp conforming to the provisions of the Code may be used as an exit' and that 'the width of ramps shall be as required for corridors.' When a ramp is on an accessible route, which standard governs the minimum width?",
+      "text": "What is the required handrail extension at the ends of ramps and stairs?",
       "options": [
         {
-          "id": "A",
-          "text": "Either standard may be used at the designer's discretion, provided it is documented"
+          "id": "a",
+          "text": "A 300 mm horizontal extension."
         },
         {
-          "id": "B",
-          "text": "PD 1096 governs because it is the National Building Code and overrides BP 344"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "The corridor width under PD 1096 governs; BP 344 applies only to dedicated accessibility features"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "BP 344 governs with a minimum of 1200 mm — more stringent than PD 1096 for accessible routes"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "When a ramp is on an accessible route, BP 344's 1200 mm minimum governs — it is more stringent than PD 1096's corridor minimum.",
-        "explanation": "PD 1096 defers ramp width to the corridor requirement but does not give an accessible-route minimum width in the relevant excerpt. BP 344, as the dedicated accessibility standard, provides the specific 1200 mm minimum for accessible route ramps. When BP 344 and PD 1096 conflict, the more stringent standard for accessibility governs. This integration principle is explicitly stated in the article.",
-        "common_misconceptions": [
-          "Thinking PD 1096 as the National Building Code overrides BP 344 — for accessibility, BP 344 is the governing standard",
-          "Applying PD 1096's general corridor minimum when it is smaller than BP 344's 1200 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: A 300 mm horizontal extension.",
       "explanation": "On accessible routes, BP 344's 1200 mm ramp minimum governs — it is more stringent than PD 1096's corridor width.",
       "code_citation": "BP 344 Appendix A; PD 1096",
       "bloom_level": "analyze",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.652022+00:00",
       "content_hash": "sha256:38de3c42eb1cf46f611dfe47395f09240d5c3e415f8ccf6d6dffb1714d65c2c6"
     },
     {
       "question_id": "66dd1b43-5520-4d31-840a-a38bf10eef86",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix A Table A.1.1 lists two slope tiers for accessible ramps in new work. What is the preferred slope, and at what interval must landings be provided for that slope?",
+      "text": "What minimum raised edge height is given for accessible ramps?",
       "options": [
         {
-          "id": "A",
-          "text": "1:20 preferred slope; landings required every 15.0 m"
+          "id": "a",
+          "text": "100 mm."
         },
         {
-          "id": "B",
-          "text": "1:15 preferred slope; landings required every 15.0 m"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "1:20 preferred slope; landings required every 10.5 m"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "1:12 preferred slope; landings required every 12.0 m"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "1:20 is the preferred slope; landings every 15.0 m per BP 344 Table A.1.1.",
-        "explanation": "BP 344 Table A.1.1 assigns 1:20 as the preferred (gentler) ramp slope, with the longer 15.0 m landing interval. The 1:15 is the maximum slope for new work, paired with the shorter 10.5 m run and 700 mm rise limits. Understanding which interval pairs with which slope is the most frequently tested ramp question.",
-        "common_misconceptions": [
-          "Applying the 10.5 m interval to the 1:20 slope — 10.5 m belongs to the steeper 1:15 slope",
-          "Treating 1:12 as a preferred slope — it is the absolute maximum, only used under space constraints"
-        ]
-      },
+      "rationale": "The checked local source supports: 100 mm.",
       "explanation": "1:20 preferred slope with 15.0 m landing interval per BP 344 Table A.1.1.",
       "code_citation": "BP 344 Appendix A Table A.1.1",
       "bloom_level": "remember",
@@ -300,45 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.653164+00:00",
       "content_hash": "sha256:545e7699bb141d670aaf9e56b796bd831ac4da2fe031b899535c0212b8e9f34b"
     },
     {
       "question_id": "9e4d0d9e-460a-47eb-bb19-ac33ea1cc310",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible route includes a 22-metre-long exterior walkway. Under BP 344 Appendix B, what rest/turn space provisions must the designer provide along this walkway?",
+      "text": "When are handrails required for accessible ramps because of change in grade?",
       "options": [
         {
-          "id": "A",
-          "text": "Two rest/turn spaces — one at 10 m and one at 20 m, because the interval is 10 m not 12 m, which is a common misconception"
+          "id": "a",
+          "text": "For changes in grade higher than 170 mm."
         },
         {
-          "id": "B",
-          "text": "No rest/turn spaces — 22 m is below the 25 m threshold before rest spaces are triggered, which is a misunderstanding of the code"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "At least 1 rest/turn space (minimum 1800 mm clear) within the 22 m run — one every 12 m maximum means one space is needed between the two ends"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "One rest/turn space of minimum 1500 mm clear — the 22 m run requires one space at midpoint, which is not compliant with the actual requirements"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "22 m walkway exceeds the 12 m maximum interval — at least one 1800 mm rest/turn space is required between the two ends.",
-        "explanation": "With a 12 m maximum interval between rest/turn spaces, a 22 m walkway cannot be traversed without a rest space. From the start (0 m), the first rest space must occur by 12 m. From there to the end (22 m) is 10 m, which is within the next 12 m interval — so one rest space is sufficient. The rest/turn space must have a minimum clear dimension of 1800 mm. There is no 25 m threshold — the rule applies whenever the walkway is 'lengthy or busy.'",
-        "common_misconceptions": [
-          "Assuming a threshold distance (such as 25 m) before rest spaces are required — the 12 m maximum interval applies to any lengthy walkway",
-          "Using 1500 mm as the rest/turn space minimum — the required minimum is 1800 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: For changes in grade higher than 170 mm.",
       "explanation": "22 m walkway requires at least 1 rest/turn space (1800 mm clear) since 22 m exceeds the 12 m maximum interval.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "apply",
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.640595+00:00",
       "content_hash": "sha256:f604a13a87f08c99e01106d2845697fd33c74f1f3ce452a549128406af9c16f2"
     },
     {
       "question_id": "4c4ac490-3277-4124-813a-fba1b2ce71da",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible ramp at 1:15 slope has a total run of 8.4 m with no intermediate landing. Is this compliant under BP 344, and what is the corresponding vertical rise?",
+      "text": "What protection railing height applies where stairs, ramps, balconies, landings, or porches are more than 750 mm above adjacent grade?",
       "options": [
         {
-          "id": "A",
-          "text": "Non-compliant — the 1:15 slope requires landings every 7.5 m regardless of total run"
+          "id": "a",
+          "text": "1100 mm minimum."
         },
         {
-          "id": "B",
-          "text": "Compliant — 8.4 m run is within the 10.5 m maximum; the corresponding rise is 560 mm"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "Compliant — 8.4 m run is within the 10.5 m maximum; the corresponding rise is 700 mm"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "Non-compliant — only 1:20 slope is permitted for accessible ramps in new construction"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "8.4 m run at 1:15 is compliant (under 10.5 m max); rise = 8400 ÷ 15 = 560 mm.",
-        "explanation": "The formula is rise = run ÷ slope ratio. At 1:15: rise = 8400 ÷ 15 = 560 mm. This is below the 700 mm rise limit and the run is below the 10.5 m run limit — so the ramp is compliant with no intermediate landing needed. Option C incorrectly states the rise as 700 mm (which would correspond to the maximum 10.5 m run, not 8.4 m).",
-        "common_misconceptions": [
-          "Calculating rise as run × slope ratio (8.4 × 15 = 126 m) — the correct formula is rise = run ÷ slope ratio",
-          "Assuming 700 mm rise for all 1:15 ramps — 700 mm is the maximum, not the rise for every run length"
-        ]
-      },
+      "rationale": "The checked local source supports: 1100 mm minimum.",
       "explanation": "8.4 m run at 1:15 is compliant; rise = 8400 ÷ 15 = 560 mm (below 700 mm maximum).",
       "code_citation": "BP 344 Appendix A Table A.1.1",
       "bloom_level": "apply",
@@ -402,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.647063+00:00",
       "content_hash": "sha256:2219a6f66636def1a3c4eedc3aba3281446dd19426ed0f13664babde63744ac3"
     },
     {
       "question_id": "7e590635-10e1-42c2-adbc-8d80b11a14fc",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Ramp edge protection is required under BP 344 Appendix A. What is the minimum height of the raised edge on both sides of an accessible ramp?",
+      "text": "What is the maximum cross gradient for dropped sidewalks?",
       "options": [
         {
-          "id": "A",
-          "text": "75 mm minimum raised edge on both open sides of the ramp"
+          "id": "a",
+          "text": "1:100 or 1 percent."
         },
         {
-          "id": "B",
-          "text": "50 mm minimum raised edge on both open sides of the ramp"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "150 mm minimum raised edge on both open sides of the ramp"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "100 mm minimum raised edge on both open sides of the ramp"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ramp edge protection minimum height: 100 mm raised edge on both sides per BP 344 Appendix A.",
-        "explanation": "The 100 mm raised curb on both open sides of the ramp prevents wheelchair casters and crutch tips from slipping off the ramp edge. It functions as a physical guide as well as fall protection. Anything less than 100 mm is too low to reliably catch a wheel veering toward the edge.",
-        "common_misconceptions": [
-          "Using 50 mm as the edge protection height — this is too low to function effectively",
-          "Applying edge protection only to one side — both open sides must have the raised edge"
-        ]
-      },
+      "rationale": "The checked local source supports: 1:100 or 1 percent.",
       "explanation": "Ramp edge protection: 100 mm minimum raised edge on both sides per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "remember",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.662458+00:00",
       "content_hash": "sha256:59ed679c87075c8013cc6157410411c491ddf0707061f459b08485d86ac0cc19"
     },
     {
       "question_id": "2b46ae08-25b5-4813-a16c-7c8a5a07ad41",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix B specifies that the longitudinal gradient of accessible sidewalks should be 'kept as level as possible.' What is the ideal maximum longitudinal slope stated?",
+      "text": "When should dropped sidewalks be used instead of curb ramps?",
       "options": [
         {
-          "id": "A",
-          "text": "Not steeper than 1:20 (5%) wherever possible"
+          "id": "a",
+          "text": "When a curb ramp would obstruct or reduce the required sidewalk/walkway width or turning area."
         },
         {
-          "id": "B",
-          "text": "Not steeper than 1:15 (6.67%) wherever possible"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "Not steeper than 1:12 (8.33%) wherever possible"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "Not steeper than 1:50 (2%) wherever possible"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Accessible sidewalk longitudinal gradient: ideally not steeper than 1:20 (5%) per BP 344 Appendix B.",
-        "explanation": "The guideline matches the preferred ramp slope (1:20) as the outer limit for regular walking surfaces. Surfaces steeper than 1:20 begin to require the same handrail and landing provisions as ramps. The 1:50 figure is the cross-gradient maximum for some route contexts, not the longitudinal gradient limit.",
-        "common_misconceptions": [
-          "Using 1:50 as the longitudinal gradient limit — 1:50 is related to cross gradients in some standards, not the longitudinal limit here",
-          "Using 1:15 as the sidewalk slope guideline — 1:15 is the maximum ramp slope for new work, not the sidewalk guideline"
-        ]
-      },
+      "rationale": "The checked local source supports: When a curb ramp would obstruct or reduce the required sidewalk/walkway width or turning area.",
       "explanation": "Accessible sidewalk longitudinal gradient: ideally not steeper than 1:20 (5%) per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "understand",
@@ -504,45 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.659112+00:00",
       "content_hash": "sha256:e96adf05ee5c3c875beb014c3ec9ba8f1b610a5e3a1cd6ed24a7ac1ecf6270f9"
     },
     {
       "question_id": "f6d3b69c-1cf4-4904-a94d-4fc7fe16f2d2",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix A specifies handrail heights on accessible ramps and the required horizontal extension at each end. What are the two handrail heights and the extension length?",
+      "text": "At loading bays for persons with disabilities, what is the minimum curb ramp width?",
       "options": [
         {
-          "id": "A",
-          "text": "700 mm and 900 mm above the ramp surface; 150 mm horizontal extension at both upper and lower ends"
+          "id": "a",
+          "text": "900 mm."
         },
         {
-          "id": "B",
-          "text": "750 mm and 1000 mm above the ramp surface; 300 mm horizontal extension at upper end only"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "700 mm and 900 mm above the ramp surface; 300 mm horizontal extension at both upper and lower ends"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "700 mm and 900 mm above the ramp surface; 300 mm horizontal extension at upper end only"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ramp handrails: 700 mm and 900 mm above surface; 300 mm horizontal extension at both ends.",
-        "explanation": "The dual-height ramp handrail (700 mm lower, 900 mm upper) mirrors the stair handrail heights to provide an ergonomic grip for users of different statures and strength levels. The 300 mm horizontal extension at both the upper and lower ends gives users a stable grip while transitioning onto and off the ramp slope. The extension must be at both ends — providing it only at the upper end leaves the lower transition unprotected.",
-        "common_misconceptions": [
-          "Providing the 300 mm extension at the upper end only — both upper and lower ends require the extension",
-          "Using 150 mm as the extension — 300 mm is required per BP 344 Appendix A"
-        ]
-      },
+      "rationale": "The checked local source supports: 900 mm.",
       "explanation": "Ramp handrails at 700 mm and 900 mm above surface; 300 mm horizontal extension at both ends per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "remember",
@@ -555,45 +485,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.530229+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.644692+00:00",
       "content_hash": "sha256:348e0fa615d26fa2187b2370eacdb589b568de4f189cf6808ecf7060b96e4d96"
     },
     {
       "question_id": "5b6d3db1-7092-4da2-9212-6a0a034b6e55",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A building accessibility review finds a ramp with: slope 1:15, run 10.5 m, 1800 mm top and bottom landings, 100 mm edge protection, dual handrails at 700 mm and 900 mm, and 1200 mm clear width. Which assessment is correct?",
+      "text": "What is the steepest permitted curb ramp gradient in the checked BP 344 source?",
       "options": [
         {
-          "id": "A",
-          "text": "Non-compliant — 1800 mm landings are insufficient; the minimum landing length is 2000 mm"
+          "id": "a",
+          "text": "1:15."
         },
         {
-          "id": "B",
-          "text": "Non-compliant — the 1:15 slope exceeds the 1:20 maximum for all new accessible ramps"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "Fully compliant — all five elements meet or exceed BP 344 Appendix A requirements"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "Non-compliant — dual handrails must be at 750 mm and 950 mm, not 700 mm and 900 mm"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "All elements comply: 1:15 is the new-work maximum, 10.5 m matches the maximum run, 1800 mm landings are correct, 100 mm edge protection is correct, 700/900 mm handrails are correct, 1200 mm width is correct.",
-        "explanation": "Every dimension in the ramp description matches a BP 344 Appendix A specification exactly: 1:15 slope (maximum for new work), 10.5 m run (the maximum run for 1:15), 1800 mm landings (correct for top, bottom, and intermediate), 100 mm edge protection (minimum), 700 and 900 mm handrails (both heights required), 1200 mm clear width (minimum). Option B incorrectly treats 1:20 as the absolute maximum — it is preferred, not mandatory.",
-        "common_misconceptions": [
-          "Treating 1:20 as the absolute maximum and rejecting 1:15 as non-compliant — 1:20 is preferred but 1:15 is permitted as the maximum for new construction",
-          "Expecting 2000 mm landings — BP 344 specifies 1800 mm for all ramp landings"
-        ]
-      },
+      "rationale": "The checked local source supports: 1:15.",
       "explanation": "All five ramp elements comply with BP 344 Appendix A — 1:15 is a valid new-work slope, not a violation.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "evaluate",
@@ -606,45 +529,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.661417+00:00",
       "content_hash": "sha256:16a7e333ba5331e06347a3c7f93834ce2c98bbe35170aee4006dfe9bc5a3dd79"
     },
     {
       "question_id": "9e5421f9-b245-4e35-a000-a6c4954234ea",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible route includes a 22-metre-long exterior walkway. Under BP 344 Appendix B, what rest/turn space provisions must the designer provide along this walkway?",
+      "text": "Where possible, what running gradient should sidewalks and walkways not exceed?",
       "options": [
         {
-          "id": "A",
-          "text": "Two rest/turn spaces — one at 10 m and one at 20 m, because the interval is 10 m not 12 m, which is a common misconception"
+          "id": "a",
+          "text": "1:20 or 5 percent."
         },
         {
-          "id": "B",
-          "text": "No rest/turn spaces — 22 m is below the 25 m threshold before rest spaces are triggered, which is a misunderstanding of the code"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "At least 1 rest/turn space (minimum 1800 mm clear) within the 22 m run — one every 12 m maximum means one space is needed between the two ends"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "One rest/turn space of minimum 1500 mm clear — the 22 m run requires one space at midpoint, which is not compliant with the actual requirements"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "22 m walkway exceeds the 12 m maximum interval — at least one 1800 mm rest/turn space is required between the two ends.",
-        "explanation": "With a 12 m maximum interval between rest/turn spaces, a 22 m walkway cannot be traversed without a rest space. From the start (0 m), the first rest space must occur by 12 m. From there to the end (22 m) is 10 m, which is within the next 12 m interval — so one rest space is sufficient. The rest/turn space must have a minimum clear dimension of 1800 mm. There is no 25 m threshold — the rule applies whenever the walkway is 'lengthy or busy.'",
-        "common_misconceptions": [
-          "Assuming a threshold distance (such as 25 m) before rest spaces are required — the 12 m maximum interval applies to any lengthy walkway",
-          "Using 1500 mm as the rest/turn space minimum — the required minimum is 1800 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: 1:20 or 5 percent.",
       "explanation": "22 m walkway requires at least 1 rest/turn space (1800 mm clear) since 22 m exceeds the 12 m maximum interval.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "apply",
@@ -657,45 +573,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.660177+00:00",
       "content_hash": "sha256:d5dc5c67a7508ad7ec26ed37e653a662c95b555ba9e68d453cf711c74fca7f42"
     },
     {
       "question_id": "9eecd114-629a-4025-ac67-cba4d031804e",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Ramp edge protection is required under BP 344 Appendix A. What is the minimum height of the raised edge on both sides of an accessible ramp?",
+      "text": "What is the maximum sidewalk or walkway cross gradient?",
       "options": [
         {
-          "id": "A",
-          "text": "75 mm minimum raised edge on both open sides of the ramp"
+          "id": "a",
+          "text": "1:100 or 1 percent."
         },
         {
-          "id": "B",
-          "text": "50 mm minimum raised edge on both open sides of the ramp"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "150 mm minimum raised edge on both open sides of the ramp"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "100 mm minimum raised edge on both open sides of the ramp"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ramp edge protection minimum height: 100 mm raised edge on both sides per BP 344 Appendix A.",
-        "explanation": "The 100 mm raised curb on both open sides of the ramp prevents wheelchair casters and crutch tips from slipping off the ramp edge. It functions as a physical guide as well as fall protection. Anything less than 100 mm is too low to reliably catch a wheel veering toward the edge.",
-        "common_misconceptions": [
-          "Using 50 mm as the edge protection height — this is too low to function effectively",
-          "Applying edge protection only to one side — both open sides must have the raised edge"
-        ]
-      },
+      "rationale": "The checked local source supports: 1:100 or 1 percent.",
       "explanation": "Ramp edge protection: 100 mm minimum raised edge on both sides per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "remember",
@@ -708,45 +617,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.645887+00:00",
       "content_hash": "sha256:f466944e5aa037c5312ec9397ff8c1d19b249afa9a5587198019eb5be7e57d48"
     },
     {
       "question_id": "5128b254-e801-49f7-ac85-6643190bf9fa",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix A Table A.1.1 lists two slope tiers for accessible ramps in new work. What is the preferred slope, and at what interval must landings be provided for that slope?",
+      "text": "What is the minimum width for sidewalks, walkways, and pathways?",
       "options": [
         {
-          "id": "A",
-          "text": "1:20 preferred slope; landings required every 15.0 m"
+          "id": "a",
+          "text": "1500 mm."
         },
         {
-          "id": "B",
-          "text": "1:15 preferred slope; landings required every 15.0 m"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "1:20 preferred slope; landings required every 10.5 m"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "1:12 preferred slope; landings required every 12.0 m"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "1:20 is the preferred slope; landings every 15.0 m per BP 344 Table A.1.1.",
-        "explanation": "BP 344 Table A.1.1 assigns 1:20 as the preferred (gentler) ramp slope, with the longer 15.0 m landing interval. The 1:15 is the maximum slope for new work, paired with the shorter 10.5 m run and 700 mm rise limits. Understanding which interval pairs with which slope is the most frequently tested ramp question.",
-        "common_misconceptions": [
-          "Applying the 10.5 m interval to the 1:20 slope — 10.5 m belongs to the steeper 1:15 slope",
-          "Treating 1:12 as a preferred slope — it is the absolute maximum, only used under space constraints"
-        ]
-      },
+      "rationale": "The checked local source supports: 1500 mm.",
       "explanation": "1:20 preferred slope with 15.0 m landing interval per BP 344 Table A.1.1.",
       "code_citation": "BP 344 Appendix A Table A.1.1",
       "bloom_level": "remember",
@@ -759,45 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.643304+00:00",
       "content_hash": "sha256:214adcd5169af6843ef78c26502b5dc16c20d3448513fccc9cb4f7a62154ed5a"
     },
     {
       "question_id": "e96eb7f0-6813-4c35-b781-37123932c59d",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible ramp at 1:15 slope has a total run of 8.4 m with no intermediate landing. Is this compliant under BP 344, and what is the corresponding vertical rise?",
+      "text": "Where two wheelchairs must pass, what minimum route width is required?",
       "options": [
         {
-          "id": "A",
-          "text": "Non-compliant — the 1:15 slope requires landings every 7.5 m regardless of total run"
+          "id": "a",
+          "text": "1800 mm."
         },
         {
-          "id": "B",
-          "text": "Compliant — 8.4 m run is within the 10.5 m maximum; the corresponding rise is 560 mm"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "Compliant — 8.4 m run is within the 10.5 m maximum; the corresponding rise is 700 mm"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "Non-compliant — only 1:20 slope is permitted for accessible ramps in new construction"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "8.4 m run at 1:15 is compliant (under 10.5 m max); rise = 8400 ÷ 15 = 560 mm.",
-        "explanation": "The formula is rise = run ÷ slope ratio. At 1:15: rise = 8400 ÷ 15 = 560 mm. This is below the 700 mm rise limit and the run is below the 10.5 m run limit — so the ramp is compliant with no intermediate landing needed. Option C incorrectly states the rise as 700 mm (which would correspond to the maximum 10.5 m run, not 8.4 m).",
-        "common_misconceptions": [
-          "Calculating rise as run × slope ratio (8.4 × 15 = 126 m) — the correct formula is rise = run ÷ slope ratio",
-          "Assuming 700 mm rise for all 1:15 ramps — 700 mm is the maximum, not the rise for every run length"
-        ]
-      },
+      "rationale": "The checked local source supports: 1800 mm.",
       "explanation": "8.4 m run at 1:15 is compliant; rise = 8400 ÷ 15 = 560 mm (below 700 mm maximum).",
       "code_citation": "BP 344 Appendix A Table A.1.1",
       "bloom_level": "apply",
@@ -810,45 +705,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.657839+00:00",
       "content_hash": "sha256:470b830c238331a41dcb756e1b7e4fd001e5405ad788d06ba6e9396142a406d7"
     },
     {
       "question_id": "0536e414-fdf0-416d-82e5-c7516f46c6ad",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix A specifies handrail heights on accessible ramps and the required horizontal extension at each end. What are the two handrail heights and the extension length?",
+      "text": "What should be checked when a route has a change in level?",
       "options": [
         {
-          "id": "A",
-          "text": "700 mm and 900 mm above the ramp surface; 150 mm horizontal extension at both upper and lower ends"
+          "id": "a",
+          "text": "Whether a ramp, dropped sidewalk, curb ramp, elevator, or mechanical device serves the change."
         },
         {
-          "id": "B",
-          "text": "750 mm and 1000 mm above the ramp surface; 300 mm horizontal extension at upper end only"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "700 mm and 900 mm above the ramp surface; 300 mm horizontal extension at both upper and lower ends"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "700 mm and 900 mm above the ramp surface; 300 mm horizontal extension at upper end only"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ramp handrails: 700 mm and 900 mm above surface; 300 mm horizontal extension at both ends.",
-        "explanation": "The dual-height ramp handrail (700 mm lower, 900 mm upper) mirrors the stair handrail heights to provide an ergonomic grip for users of different statures and strength levels. The 300 mm horizontal extension at both the upper and lower ends gives users a stable grip while transitioning onto and off the ramp slope. The extension must be at both ends — providing it only at the upper end leaves the lower transition unprotected.",
-        "common_misconceptions": [
-          "Providing the 300 mm extension at the upper end only — both upper and lower ends require the extension",
-          "Using 150 mm as the extension — 300 mm is required per BP 344 Appendix A"
-        ]
-      },
+      "rationale": "The checked local source supports: Whether a ramp, dropped sidewalk, curb ramp, elevator, or mechanical device serves the change.",
       "explanation": "Ramp handrails at 700 mm and 900 mm above surface; 300 mm horizontal extension at both ends per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "remember",
@@ -861,45 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.649648+00:00",
       "content_hash": "sha256:46fea9bf35faf5ab9eddd0bb5296028778bc6b97fc74ea142bcf9de2082bbe71"
     },
     {
       "question_id": "0b778124-7584-4a91-8468-c609b8d9a48e",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "PD 1096 states that 'a ramp conforming to the provisions of the Code may be used as an exit' and that 'the width of ramps shall be as required for corridors.' When a ramp is on an accessible route, which standard governs the minimum width?",
+      "text": "What minimum illumination level applies to accessible routes?",
       "options": [
         {
-          "id": "A",
-          "text": "Either standard may be used at the designer's discretion, provided it is documented"
+          "id": "a",
+          "text": "100 lux."
         },
         {
-          "id": "B",
-          "text": "PD 1096 governs because it is the National Building Code and overrides BP 344"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "The corridor width under PD 1096 governs; BP 344 applies only to dedicated accessibility features"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "BP 344 governs with a minimum of 1200 mm — more stringent than PD 1096 for accessible routes"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "When a ramp is on an accessible route, BP 344's 1200 mm minimum governs — it is more stringent than PD 1096's corridor minimum.",
-        "explanation": "PD 1096 defers ramp width to the corridor requirement but does not give an accessible-route minimum width in the relevant excerpt. BP 344, as the dedicated accessibility standard, provides the specific 1200 mm minimum for accessible route ramps. When BP 344 and PD 1096 conflict, the more stringent standard for accessibility governs. This integration principle is explicitly stated in the article.",
-        "common_misconceptions": [
-          "Thinking PD 1096 as the National Building Code overrides BP 344 — for accessibility, BP 344 is the governing standard",
-          "Applying PD 1096's general corridor minimum when it is smaller than BP 344's 1200 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: 100 lux.",
       "explanation": "On accessible routes, BP 344's 1200 mm ramp minimum governs — it is more stringent than PD 1096's corridor width.",
       "code_citation": "BP 344 Appendix A; PD 1096",
       "bloom_level": "analyze",
@@ -912,45 +793,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.648384+00:00",
       "content_hash": "sha256:6a6ed513a1fcad1d26710401c030cea2c4637deb4f24eed7ffa74c2a0dd95af4"
     },
     {
       "question_id": "3a4b3933-18b3-4615-b6e4-650b482149ad",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A ramp designer uses the formula: Run = Rise × Slope Ratio. A ramp has a 700 mm rise and a 1:15 slope. What is the computed run length, and what does this verify?",
+      "text": "What must obstacles and protrusions not do to the accessible route?",
       "options": [
         {
-          "id": "A",
-          "text": "Run = 700 ÷ 15 = 46.7 mm — the slope ratio is inverted in the formula"
+          "id": "a",
+          "text": "They must not reduce the required clear width."
         },
         {
-          "id": "B",
-          "text": "Run = 700 × 15 = 10,500 mm (10.5 m) — verifying the BP 344 maximum run for a 1:15 slope"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "Run = 700 × 15 = 10,500 mm (10.5 m) — verifying the BP 344 maximum run for a 1:20 slope"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "Run = 700 × 20 = 14,000 mm (14.0 m) — the correct formula uses the reciprocal slope"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "700 mm rise × 15 (slope ratio denominator) = 10,500 mm run — confirming the 1:15 maximum.",
-        "explanation": "The article explicitly demonstrates this formula: Rise × Slope Ratio = Run. For 1:15: 700 × 15 = 10,500 mm = 10.5 m. This is the maximum run for the 1:15 slope tier. Option C uses the same correct calculation but wrongly attributes it to 1:20 — 1:20 has no stated run limit in the table, only the 15.0 m landing interval.",
-        "common_misconceptions": [
-          "Dividing rise by slope ratio instead of multiplying — always multiply: rise × ratio denominator = run",
-          "Attributing the 10.5 m result to the 1:20 slope rather than the 1:15 slope"
-        ]
-      },
+      "rationale": "The checked local source supports: They must not reduce the required clear width.",
       "explanation": "Formula: Run = Rise × Slope Ratio; 700 × 15 = 10,500 mm — the BP 344 maximum run for 1:15 slope.",
       "code_citation": "BP 344 Appendix A Table A.1.1",
       "bloom_level": "apply",
@@ -963,45 +837,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.642032+00:00",
       "content_hash": "sha256:52e9846dd56b67521bfaedb7c5c8ba620cc29217029fdcd87f847b513edefb42"
     },
     {
       "question_id": "41bb2a2e-9aee-403a-8202-c67af2778dd6",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "From the quick memory grid in 'Widths & Slopes', which two ramp slope values are stated for new accessible construction, and how does the cross gradient of a sidewalk relate to these?",
+      "text": "What minimum headroom applies to sidewalks and walkways?",
       "options": [
         {
-          "id": "A",
-          "text": "1:20 preferred and 1:15 maximum for new ramps; cross gradient of sidewalks is limited to the much stricter 1:100"
+          "id": "a",
+          "text": "2200 mm."
         },
         {
-          "id": "B",
-          "text": "1:15 preferred and 1:12 maximum for new ramps; cross gradient of sidewalks matches the 1:15 ramp maximum"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "1:20 preferred and 1:15 maximum for new ramps; cross gradient of sidewalks also follows the 1:20 preferred slope"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "1:20 preferred and 1:12 maximum for new ramps; cross gradient of sidewalks is limited to 1:50"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "New ramps: 1:20 preferred, 1:15 maximum; sidewalk cross gradient is far stricter at 1:100.",
-        "explanation": "The memory grid clearly lists 1:20 preferred and 1:15 maximum for new accessible ramps, and separately lists cross gradient (sidewalk) at 1:100. The 1:100 cross gradient is much flatter than both ramp slopes because a cross slope on a walking surface continuously pushes a wheelchair sideways rather than backward, making even a modest cross slope more fatiguing and difficult to control than an equivalent longitudinal slope.",
-        "common_misconceptions": [
-          "Assuming cross gradient follows the same 1:20 limit as longitudinal ramp slope — cross gradient is governed by the stricter 1:100",
-          "Treating 1:12 as the new-work ramp maximum — the maximum for new construction is 1:15; 1:12 is the absolute maximum for constrained conditions"
-        ]
-      },
+      "rationale": "The checked local source supports: 2200 mm.",
       "explanation": "New ramps: 1:20 preferred / 1:15 max; sidewalk cross gradient is stricter at 1:100 per BP 344.",
       "code_citation": "BP 344 Appendix A; Appendix B",
       "bloom_level": "analyze",
@@ -1014,45 +881,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.654431+00:00",
       "content_hash": "sha256:ee2aa9215562977e3fc4dda85fd3bd248bca01904dc64620252365763b0f5ff5"
     },
     {
       "question_id": "f0d0998b-8f89-41c0-b69d-245d3dc534af",
       "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix B specifies that the longitudinal gradient of accessible sidewalks should be 'kept as level as possible.' What is the ideal maximum longitudinal slope stated?",
+      "text": "What clear distance is required between bollards along accessible routes?",
       "options": [
         {
-          "id": "A",
-          "text": "Not steeper than 1:20 (5%) wherever possible"
+          "id": "a",
+          "text": "900 mm minimum, and they must not be linked by chain or rope."
         },
         {
-          "id": "B",
-          "text": "Not steeper than 1:15 (6.67%) wherever possible"
+          "id": "b",
+          "text": "Use the wall finish schedule instead."
         },
         {
-          "id": "C",
-          "text": "Not steeper than 1:12 (8.33%) wherever possible"
+          "id": "c",
+          "text": "Ignore the accessible route requirement."
         },
         {
-          "id": "D",
-          "text": "Not steeper than 1:50 (2%) wherever possible"
+          "id": "d",
+          "text": "Use an unchecked internet summary as the controlling rule."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Accessible sidewalk longitudinal gradient: ideally not steeper than 1:20 (5%) per BP 344 Appendix B.",
-        "explanation": "The guideline matches the preferred ramp slope (1:20) as the outer limit for regular walking surfaces. Surfaces steeper than 1:20 begin to require the same handrail and landing provisions as ramps. The 1:50 figure is the cross-gradient maximum for some route contexts, not the longitudinal gradient limit.",
-        "common_misconceptions": [
-          "Using 1:50 as the longitudinal gradient limit — 1:50 is related to cross gradients in some standards, not the longitudinal limit here",
-          "Using 1:15 as the sidewalk slope guideline — 1:15 is the maximum ramp slope for new work, not the sidewalk guideline"
-        ]
-      },
+      "rationale": "The checked local source supports: 900 mm minimum, and they must not be linked by chain or rope.",
       "explanation": "Accessible sidewalk longitudinal gradient: ideally not steeper than 1:20 (5%) per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "understand",
@@ -1065,7 +925,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.391661+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.655552+00:00",
       "content_hash": "sha256:d0f5a32cb3a6ea43d7cfa7db72dbbe607039ad8af4d23f518699e691a3b86d24"
     }
   ]

@@ -8,37 +8,31 @@
       "question_id": "e86621e9-a1b5-4220-9a4b-9c97af8a165b",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "How does release of retention before the defects liability period expires affect the owner's position?",
+      "text": "Retention under CIAP Document 102 is deducted from what?",
       "options": [
         {
           "id": "a",
-          "text": "It has no impact on the owner's leverage or protection, as the contract terms remain unchanged"
+          "text": "Progress payments computed from completed work"
         },
         {
           "id": "b",
-          "text": "The owner loses financial leverage to compel the contractor to remedy defects discovered after retention release"
+          "text": "The architect's professional fee"
         },
         {
           "id": "c",
-          "text": "It guarantees all defects have been identified and corrected, which is not typically the case"
+          "text": "The certificate of occupancy fee"
         },
         {
           "id": "d",
-          "text": "It extends the defects liability period automatically, which is not a standard contractual outcome"
+          "text": "The performance bond premium"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Understates the impact; early release significantly weakens the owner's ability to compel warranty work.",
-        "c": "Incorrect assumption; early retention release does not guarantee all defects are identified; defects commonly emerge throughout the warranty year.",
-        "d": "Retention release does not extend the liability period; the one-year defects period runs regardless of retention status.",
-        "correct": "Early retention release before the warranty period expires eliminates the owner's practical leverage to compel contractor remediation of subsequently discovered defects.",
-        "takeaway": "Releasing retention before the defects liability period ends loses the owner's leverage to force warranty defect repairs."
-      },
+      "rationale": "It is deducted from progress payments computed from completed work, not from fees, permits, or bond premiums.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -51,7 +45,7 @@
       "model_id": "ALE-PRAC-CTR-015-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.716656+00:00",
       "content_hash": "sha256:d46170f03f3ca580f80aae88ec92954b51c2aa4e4e24bbacb2eec38434147195"
     },
     {
@@ -62,11 +56,11 @@
       "options": [
         {
           "id": "a",
-          "text": "1% to 2%"
+          "text": "1% to 2% — understates standard retention; provides minimal leverage"
         },
         {
           "id": "b",
-          "text": "5% to 10%"
+          "text": "5% to 10% — the standard retention range used in construction contracts"
         },
         {
           "id": "c",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Understates typical retention; 1–2% provides minimal leverage; standard practice is 5–10%.",
-        "c": "Overstates typical retention; 15–25% would create undue contractor hardship and exceeds standard practice.",
-        "d": "Contradicts standard practice; retention is standard in virtually all construction contracts.",
-        "correct": "Retention rates of 5% to 10% of contract payments are standard industry practice.",
-        "takeaway": "Standard retention is 5 to 10 percent of certified payments throughout the project."
-      },
+      "rationale": "Retention rates of 5% to 10% of contract payments are standard industry practice. [A]: Understates typical retention; 1–2% provides minimal leverage; standard practice is 5–10%. [C]: Overstates typical retention; 15–25% would create undue contractor hardship and exceeds standard practice. [D]: Contradicts standard practice; retention is standard in virtually all construction contracts.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-015-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.714433+00:00",
       "content_hash": "sha256:5e30a7183a175ec57c3d206900ec69dc66fd64c911a152e143632fe2b125a6b3"
     },
     {
       "question_id": "0d635def-b57b-4259-a862-07e8c26943ec",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "What timing strategy is common for release of retention in two tranches?",
+      "text": "When does the checked source stop further retention on later progress billings?",
       "options": [
         {
           "id": "a",
-          "text": "All retention is released immediately after substantial completion, without any further conditions"
+          "text": "When 50% of the contract has been accomplished"
         },
         {
           "id": "b",
-          "text": "Partial release at substantial completion and full release after the one-year defects liability period expires"
+          "text": "When the building permit is issued"
         },
         {
           "id": "c",
-          "text": "Retention is never released until the contractor leaves the site, ensuring all obligations are met"
+          "text": "When the contractor submits the first billing"
         },
         {
           "id": "d",
-          "text": "One lump-sum release three years after project completion, regardless of any outstanding issues"
+          "text": "When the architect signs the design contract"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Releases retention too early; the owner loses leverage for warranty defect remediation if all retention is released at substantial completion.",
-        "c": "Overstates retention holding; holding until site departure is excessive and contrary to standard practice.",
-        "d": "Misplaces the release trigger; retention is released based on defects liability period completion, not a three-year timeline.",
-        "correct": "Many contracts provide partial retention release at substantial completion and final release after defects liability period and warranty work completion.",
-        "takeaway": "Two-tranche release: partial at substantial completion, final release after the one-year defects liability period expires."
-      },
+      "rationale": "The stopping point is fifty percent contract accomplishment; it is not tied to permit issuance or design-contract signing.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-015-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.715860+00:00",
       "content_hash": "sha256:a0b090c2bd51de91efede3085b80d808d497258cd8dd79506118d7c90466c8e5"
     },
     {
       "question_id": "b4cd6732-ed16-4c23-8917-21d96ad66f8e",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "What is the primary condition for release of retention money to the contractor?",
+      "text": "Which statement is source-safe about final payment under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "The owner decides the contractor needs the money"
+          "text": "Final payment does not include retention money"
         },
         {
           "id": "b",
-          "text": "Satisfactory completion of all work to contract specifications"
+          "text": "Final payment always includes automatic retention release"
         },
         {
           "id": "c",
-          "text": "The contractor's agreement to accept less than the full amount"
+          "text": "Final payment is the architect's professional fee"
         },
         {
           "id": "d",
-          "text": "Automatic release after 12 months regardless of completion status"
+          "text": "Final payment replaces the guarantee bond"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Owner preference is not a condition; release depends on objective work completion verification.",
-        "c": "Contractor agreement to reduced payment is not a release condition; retention must be released in full upon completion.",
-        "d": "Automatic time-based release contradicts the security function; retention is released based on completion verification, not timing.",
-        "correct": "Retention is released when the architect verifies that all work is complete, punch-list items are corrected, and the project is ready for final acceptance.",
-        "takeaway": "Retention is released only when the architect verifies all work is complete and punch-list items are corrected."
-      },
+      "rationale": "CIAP defines final payment separately and states it does not include retention money.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-015-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.711191+00:00",
       "content_hash": "sha256:92ab44e01f9a216bac2350e2dd350416136f8490fa7d7bd48c6377b1ef6d784b"
     },
     {
       "question_id": "4b862b03-7a93-4886-aedb-bf4097dde4d6",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "What issue arises regarding interest on retained funds and how is it typically addressed?",
+      "text": "What condition is tied to retention release in CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "Interest calculations are required on all retained funds without exception, ensuring fair compensation for the contractor"
+          "text": "Posting of the contractor's guarantee bond"
         },
         {
           "id": "b",
-          "text": "Some contracts require the owner to pay contractor interest on retention; others are silent, resulting in interest-free use of the contractor's funds by the owner"
+          "text": "Issuance of the design proposal"
         },
         {
           "id": "c",
-          "text": "Interest on retention is prohibited by law, preventing any financial gain from retained funds"
+          "text": "Selection of the bid method"
         },
         {
           "id": "d",
-          "text": "The owner must pay interest only if the contractor specifically requests it during project execution, which is often overlooked"
+          "text": "Approval of the architect's fee schedule"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Overstates the requirement; interest is negotiable, not mandatory on all contracts.",
-        "c": "Contradicts contractual freedom; parties can agree on interest provisions or omit them entirely.",
-        "d": "Shifts burden to contractor; interest should be negotiated upfront in contract terms, not requested later.",
-        "correct": "Interest on retention is a negotiable contract item; contracts vary on whether the owner must compensate the contractor for use of withheld funds.",
-        "takeaway": "Interest on retention is a contract negotiation point; some contracts require it, others are silent, letting the owner use the contractor's money interest-free."
-      },
+      "rationale": "The checked CIAP release rule ties retention release to the contractor's guarantee bond.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-015-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.713627+00:00",
       "content_hash": "sha256:d080c92f9b2f8446e1afe8d8d67b8e020ac48b735451413f2b300f08b3e57cc1"
     },
     {
       "question_id": "b785cc8e-66da-47e9-96f0-b334b8c2fee9",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "Why is retention particularly important during the defects liability period?",
+      "text": "Which unpaid-claim issue can block final payment or retention release under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "It has no special significance during the warranty period, as it is not typically enforced by the client"
+          "text": "Unreleased liens from unpaid subcontractor or supplier claims"
         },
         {
           "id": "b",
-          "text": "Held retention provides leverage to compel the contractor to remedy defects discovered during the one-year warranty period"
+          "text": "A missing design competition board"
         },
         {
           "id": "c",
-          "text": "Retention is not used during the defects liability period, as it is released immediately after project completion"
+          "text": "A new zoning classification unrelated to the contract"
         },
         {
           "id": "d",
-          "text": "Defects cannot emerge during the defects liability period, as all issues are resolved prior to this phase"
+          "text": "A different architect's preferred title block"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Understates retention's importance; it's critical during the defects period to enforce warranty work.",
-        "c": "Contradicts standard practice; retention is specifically held through the defects period for warranty enforcement.",
-        "d": "Ignores the purpose of the defects period; defects regularly emerge during the warranty year and require contractor remediation.",
-        "correct": "Retention held during the defects liability period provides contractor incentive to promptly correct warranty defects discovered during that year.",
-        "takeaway": "Retention held during the defects liability period gives the owner leverage to compel the contractor to fix warranty defects."
-      },
+      "rationale": "CIAP Document 102 connects final payment and retention release to lien releases, receipts, sworn statements, or an indemnity bond.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-015-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.717538+00:00",
       "content_hash": "sha256:bfd4cf23df4762f26eadbdc2946c75abe6b8b3910ae7686e3067f6f9020ca172"
     },
     {
       "question_id": "e71b2c7e-b47f-40da-bf31-5ba625e350fd",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "What is the primary purpose of retention money held by the owner?",
+      "text": "What does the CIAP time-limit table say about retention release?",
       "options": [
         {
           "id": "a",
-          "text": "To increase the owner's cash position, providing financial flexibility during the project"
+          "text": "It is released not later than 60 days from substantial completion upon posting the contractor's guarantee bond"
         },
         {
           "id": "b",
-          "text": "To serve as security for contractor performance and as a fund to remedy defects or complete incomplete work"
+          "text": "It is released before the first progress billing"
         },
         {
           "id": "c",
-          "text": "To reduce the total contract price, effectively lowering the project's financial burden"
+          "text": "It is never released if there are no liens"
         },
         {
           "id": "d",
-          "text": "To pay the architect's fees, ensuring that design services are compensated"
+          "text": "It is paid to the architect as a professional fee"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses the purpose with a business benefit; retention is security for project completion, not general cash management.",
-        "c": "Misunderstands retention's role; it's not a price reduction but a holdback from earned payments as security.",
-        "d": "Retention is contractor security, not architect compensation; it's withheld from contractor payments, not from other budgets.",
-        "correct": "Retention provides financial leverage for contractor performance, security against default, and funds to complete incomplete work if the contractor fails.",
-        "takeaway": "Retention is security held by the owner to ensure contractor completion and to cover costs if the contractor defaults."
-      },
+      "rationale": "The table summarizes retention release as not later than sixty days from substantial completion upon guarantee-bond posting.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-015-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.712906+00:00",
       "content_hash": "sha256:80014bbf98a743e4f4deadb477b591013e6c667bcf652aac3c1c88f48cd34f5c"
     },
     {
       "question_id": "9a4e13b8-4062-4d41-b3af-1d2bfcce0556",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "What is the owner's fiduciary obligation regarding retained funds?",
+      "text": "How should a question handle the CIAP and UAP release rules?",
       "options": [
         {
           "id": "a",
-          "text": "The owner can use retention for any purpose, including personal expenses, without any legal repercussions"
+          "text": "Name the governing document before applying the release timing"
         },
         {
           "id": "b",
-          "text": "The owner must account for and manage retained funds properly; the funds belong to the contractor and cannot be commingled with owner operating funds"
+          "text": "Treat both documents as identical in all wording"
         },
         {
           "id": "c",
-          "text": "Retention funds automatically become the owner's property, allowing unrestricted use"
+          "text": "Ignore the source because both are government permits"
         },
         {
           "id": "d",
-          "text": "The owner has no obligation regarding how retention is used, providing complete freedom in fund allocation"
+          "text": "Use the architect's preference instead of contract text"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Misunderstands fiduciary duty; retained funds are contractor money held in trust, not owner funds for discretionary use.",
-        "c": "Contradicts ownership; retention funds belong to the contractor and must be returned upon project completion.",
-        "d": "Ignores fiduciary duty; the owner has significant obligations to account for and protect retained contractor funds.",
-        "correct": "Retained funds are the contractor's money held in trust; the owner must account for them separately and use them only for project-related security purposes.",
-        "takeaway": "Retention funds are held in trust for the contractor and must be kept separate from the owner's operating funds."
-      },
+      "rationale": "The release wording differs, so the answer must identify the governing source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-015-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.712060+00:00",
       "content_hash": "sha256:b6070a22dae61a32450ba203db62ac8a5c33b16904c80ae46315d5dfab6cef7b"
     },
     {
       "question_id": "b743bdab-88b6-4299-8356-595aba3a576e",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "What does the architect's payment certificate identify regarding retention?",
+      "text": "A contractor requests full retention release while supplier lien releases are missing. What is the source-safe response?",
       "options": [
         {
           "id": "a",
-          "text": "Only the certified payment amount; retention is hidden from the contractor, ensuring confidentiality"
+          "text": "Do not release solely on request; check lien-release or indemnity-bond requirements"
         },
         {
           "id": "b",
-          "text": "The total certified amount, the retention deduction, and the amount actually due for disbursement"
+          "text": "Release automatically because retention is never security"
         },
         {
           "id": "c",
-          "text": "Only the retention amount; the certified work amount is not shown to prevent disputes"
+          "text": "Pay the architect instead"
         },
         {
           "id": "d",
-          "text": "Payment certificates do not address retention, focusing solely on progress payments"
+          "text": "Convert the request into a building permit"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Violates transparency; the certificate must explicitly show retention so the contractor understands what is being withheld.",
-        "c": "Creates confusion; the certificate must show the certified work amount and the retention deduction separately.",
-        "d": "Ignores the certificate's function; retention accounting is essential to the architect's certificate.",
-        "correct": "The architect's certificate explicitly identifies both certified payment and the retention percentage deducted, ensuring transparency.",
-        "takeaway": "The architect's certificate shows the certified amount, retention deduction, and net amount due—ensuring all parties understand the breakdown."
-      },
+      "rationale": "CIAP Document 102 makes lien protection a condition around final payment and retention release.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CTR-015-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.715145+00:00",
       "content_hash": "sha256:cd76e5a40f47bd6e63ba906d181a9f91cd712ab0836e809cb2eedf9e92486ffc"
     },
     {
       "question_id": "e4035947-d642-46ea-9a7e-930e4b7d8f46",
       "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
       "topic_id": "bdb17358-68b3-44e6-a5ec-baa6a63cf34b",
-      "text": "How is retention money calculated from monthly certified payments?",
+      "text": "Under UAP Document 301, when is retained money released?",
       "options": [
         {
           "id": "a",
-          "text": "fixed dollar amount set at contract execution, regardless of monthly variations"
+          "text": "Within three months after the date of final payment"
         },
         {
           "id": "b",
-          "text": "The specified retention percentage is deducted from each monthly certified amount"
+          "text": "Within five working days after FSIC issuance"
         },
         {
           "id": "c",
-          "text": "Only one lump-sum retention calculation at project end, which simplifies accounting"
+          "text": "On the seventh day after notice to proceed"
         },
         {
           "id": "d",
-          "text": "Retention is determined at the owner's discretion each month, allowing flexibility"
+          "text": "Only after a design competition ends"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Misunderstands calculation; retention is a percentage of each payment, not a fixed dollar amount set upfront.",
-        "c": "Contradicts the ongoing process; retention is deducted from each payment, accumulating over time, not calculated once.",
-        "d": "Gives the owner excessive discretion; retention is calculated at a fixed contract-specified percentage, not owner discretion.",
-        "correct": "Retention is calculated as the specified percentage of each monthly or periodic payment, accumulating throughout the project.",
-        "takeaway": "Retention is calculated as a fixed percentage deducted from each monthly certified payment and accumulates throughout the project."
-      },
+      "rationale": "UAP Document 301 has its own release wording: within three months after final payment.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-015-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.709501+00:00",
       "content_hash": "sha256:c26c4983c422055ea15f18c1da6c1b911cd4801a493b0edf948c9c99d4c0a1c1"
     }
   ]

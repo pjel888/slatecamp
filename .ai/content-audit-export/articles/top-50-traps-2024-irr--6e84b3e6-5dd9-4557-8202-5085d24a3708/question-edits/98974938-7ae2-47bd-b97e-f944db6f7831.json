@@ -1,10 +1,10 @@
 {
   "question_id": "98974938-7ae2-47bd-b97e-f944db6f7831",
   "baseline_hash": "sha256:04b4127dd3cc9b4ac2de6ac1a1983fc1fe014e491e471d9db8bf7dddf5d6091b",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
     "parent_article_slug": "top-50-traps-2024-irr",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "Which accessible parking count applies for 1001 or more total parking spaces?",
+    "text": "According to Trap #12 in the Top 50 Traps article, what is the maximum riser height for accessible stairs under BP 344, and how does this differ from the PD 1096 general stair maximum?",
     "options": [
       {
-        "id": "a",
-        "text": "20 plus 1 for each 100 or fraction over 1000"
+        "id": "A",
+        "text": "BP 344 accessible stairs: 175 mm maximum riser; PD 1096 general stairs: 200 mm maximum"
       },
       {
-        "id": "b",
-        "text": "2 percent of total spaces only"
+        "id": "B",
+        "text": "BP 344 accessible stairs: 150 mm maximum riser; PD 1096 general stairs: 200 mm maximum"
       },
       {
-        "id": "c",
-        "text": "9 accessible spaces total"
+        "id": "C",
+        "text": "BP 344 accessible stairs: 150 mm maximum riser; PD 1096 general stairs: 180 mm maximum"
       },
       {
-        "id": "d",
-        "text": "1 accessible space for every 25 spaces"
+        "id": "D",
+        "text": "BP 344 accessible stairs: 200 mm maximum riser; PD 1096 general stairs: 250 mm maximum"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "For 1001 or more total spaces, the 2024 BP 344 table requires 20 plus 1 for each 100 or fraction over 1000.",
-    "explanation": "For 1001 or more total spaces, the 2024 BP 344 table requires 20 plus 1 for each 100 or fraction over 1000.",
-    "code_citation": "BP 344 2024 IRR, accessible parking table",
-    "bloom_level": "apply",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Top 50 Traps: 2024 IRR",
-      "LEA Accessibility Code Review"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-top-50-traps-2024-irr-013"
+    "correct_option_id": "B",
+    "rationale": {
+      "summary": "Trap #12: BP 344 accessible stairs cap riser at 150 mm; PD 1096 general stairs allow up to 200 mm.",
+      "explanation": "Trap #12 in the article. PD 1096 allows risers up to 200 mm for general occupancy stairs. BP 344 is more restrictive for accessible stairs, capping risers at 150 mm. The lower riser height reduces the step height demand on persons with mobility impairments, reducing the energy and muscle force required per step. On the ALE, whenever the question specifies 'accessible staircase,' the BP 344 maximum of 150 mm is the correct answer — not the PD 1096 value of 200 mm.",
+      "common_misconceptions": [
+        "Applying PD 1096's 200 mm maximum to accessible stairs — BP 344 is more restrictive at 150 mm",
+        "Selecting 175 mm as a middle ground — there is no middle value; the two standards are 150 mm (BP 344) and 200 mm (PD 1096)"
+      ]
+    },
+    "explanation": "Accessible stair riser: 150 mm max (BP 344); general stair riser: 200 mm max (PD 1096) — BP 344 is always more restrictive.",
+    "code_citation": "BP 344 IRR, Stairs section; Trap #12",
+    "bloom_level": "remember",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.65,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

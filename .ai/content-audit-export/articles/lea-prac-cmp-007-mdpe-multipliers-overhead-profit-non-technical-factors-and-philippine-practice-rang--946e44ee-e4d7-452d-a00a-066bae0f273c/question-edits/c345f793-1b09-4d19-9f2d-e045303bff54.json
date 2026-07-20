@@ -2,80 +2,49 @@
   "question_id": "c345f793-1b09-4d19-9f2d-e045303bff54",
   "baseline_hash": "sha256:285e25c0ac3b1f91a4806ca32f4cb741789b2bb173b327e38e9f309ae58dfa74",
   "action": "replace",
-  "reason": "source-audited-article-batch-105-local-first refreshed linked professional-practice question against current local raw PDF/source anchors for lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
-  "approved_by": "codex-local-source-audit-batch-105",
-  "approved_at": "2026-05-13T12:52:00+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent F ERROR F1 / Q2): marked-correct option '2.7-3.2' for the typical MDPE multiplier range is an exam trap the article body explicitly warns against. SPP 202 Sec 5.2 supports only 1.5-2.5. Restores the original multiplier-range question with the corrected answer.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
     "parent_article_slug": "lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges",
     "parent_article_title": "MDPE Multipliers Overhead Profit Non Technical Factors",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
+    "support_status": "council_verified_fact_check",
+    "source_locator": "SPP Document 202, Section 5.2 (refined markdown lines 419-435): multiplier ranges from 1.5 to 2.5.",
     "checked_sources": [
       {
-        "source_id": "uap-standards-professional-practice2-local",
-        "label": "UAP Standards of Professional Practice - compiled SPP source",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
-        "checked_markdown_lines": [
-          "Standards of Professional Practice2 refined markdown lines 419-435",
-          "SPP 201 refined markdown lines 165-188 and 192-193"
-        ]
-      },
-      {
-        "source_id": "uap-spp-201-local",
-        "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "Standards of Professional Practice2 refined markdown lines 419-435; SPP 201 refined markdown lines 165-188 and 192-193",
-        "checked_markdown_lines": [
-          "Standards of Professional Practice2 refined markdown lines 419-435",
-          "SPP 201 refined markdown lines 165-188 and 192-193"
-        ]
+        "source_id": "uap-spp-202-sec-5-2",
+        "label": "PRBoA SPP for Philippine Architects - SPP Document 202, Section 5.2",
+        "path": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf",
+        "locator": "SPP Document 202, Section 5.2: MDPE multiplier ranges from 1.5 to 2.5."
       }
     ],
-    "local_source_safe_action": "Batch 105 refreshed question text, options, answer key, rationale, explanation, and code citation to the audited article scope."
+    "local_source_safe_action": "Corrected marked-correct option from '2.7-3.2' (an exam trap) to '1.5-2.5 per SPP 202 Sec 5.2'; cited SPP 202 Sec 5.2 in the rationale."
   },
   "proposed": {
-    "text": "What does the MDPE multiplier cover according to the formula language?",
+    "text": "What is the source-backed MDPE multiplier range per SPP 202 Sec 5.2?",
     "options": [
       {
         "id": "a",
-        "text": "Overhead and reasonable profit"
+        "text": "1.0-1.4"
       },
       {
         "id": "b",
-        "text": "Land acquisition and permits"
+        "text": "1.5-2.5 per SPP 202 Sec 5.2"
       },
       {
         "id": "c",
-        "text": "The final contractor retention"
+        "text": "2.7-3.2"
       },
       {
         "id": "d",
-        "text": "Only statutory employee benefits"
+        "text": "3.5-4.0"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": {
-      "a": "The formula defines M as the multiplier to account for overhead and reasonable profit.",
-      "b": "Land and permits are not the stated M variable.",
-      "c": "Contractor retention is unrelated to M.",
-      "d": "The source defines M more broadly as overhead and reasonable profit.",
-      "correct": "The formula defines M as the multiplier to account for overhead and reasonable profit.",
-      "takeaway": "The source does not break M into unsourced sub-components."
-    },
-    "explanation": "The formula defines M as the multiplier to account for overhead and reasonable profit. The source does not break M into unsourced sub-components.",
-    "code_citation": "UAP Standards of Professional Practice refined markdown lines 427-435"
+    "correct_option_id": "b",
+    "rationale": "SPP Document 202, Section 5.2 states that the MDPE multiplier ranges from 1.5 to 2.5, depending on office setup, overhead, the Architect's experience, and project complexity. The article body explicitly warns not to treat 2.8, 3.0, or 3.5 as source-backed MDPE multipliers; 2.7-3.2 is an exam trap. Source: PRBoA SPP 202 Sec 5.2 (https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.4-2010-SPP-for-PH-Architects.pdf).",
+    "explanation": "SPP Document 202, Section 5.2 states that the MDPE multiplier ranges from 1.5 to 2.5. Higher 'practice ranges' such as 2.7-3.2 are not supported by the checked SPP 202 source.",
+    "code_citation": "SPP Document 202, Section 5.2; PRBoA SPP for Philippine Architects"
   }
 }

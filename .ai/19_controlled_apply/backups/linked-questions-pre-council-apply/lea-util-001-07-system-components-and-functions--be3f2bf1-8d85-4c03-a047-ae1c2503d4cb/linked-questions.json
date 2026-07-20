@@ -1,0 +1,758 @@
+{
+  "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:7850cabb8921380739a87949653434555483812e6ac2d9372614b125241795fc",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "6c7e99a5-0174-46d6-b3d6-9fa0132e1753",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A commercial restaurant in Makati City has a 3-compartment sink (6 DFU), two pre-rinse spray stations (3 DFU each), a dishwasher (3 DFU), and a floor drain (3 DFU) in the kitchen. The municipal sewer is 18 meters away. Per Philippine standards, what drainage system is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "75mm kitchen waste line → 100mm grease trap → building sewer; no other treatment required, ensuring basic compliance with local regulations"
+        },
+        {
+          "id": "b",
+          "text": "50mm individual drains → 100mm combined line → minimum 200-liter grease trap → building sewer at 45° angle; PD 1096 compliant, meeting all necessary standards"
+        },
+        {
+          "id": "c",
+          "text": "100mm kitchen branch → minimum 400-liter grease trap → building sewer at 45° angle with 1.5m depth and cleanouts; PD 1096 and municipal code compliance verified"
+        },
+        {
+          "id": "d",
+          "text": "Kitchen drains may combine into 50mm line → 100-liter grease trap → standard building sewer connection, providing a simplified solution"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "75mm is undersized for the load; grease trap size (implied 100L) is far too small for commercial kitchen; ignores PD 1096 requirements.",
+        "b": "50mm cannot accommodate 18 DFU (exceeds capacity); 200-liter trap is marginal for commercial use and requires weekly pumping.",
+        "d": "50mm is undersized; 100-liter trap is inadequate for commercial kitchen; violates PD 1096 sizing requirements.",
+        "correct": "Commercial kitchen drainage in the Philippines requires: kitchen load (18 DFU total) → 100mm minimum branch; grease trap capacity per municipal ordinance and PD 1096 requirements (commercial sizing varies); building sewer to public sewer at 45° per RNPC Section 313; buried at 1.5m depth minimum; cleanouts at required intervals. This is a comprehensive commercial installation.",
+        "takeaway": "Commercial kitchens in the Philippines require oversized grease traps (400+ liters) and compliant building sewers; understand the difference between residential (10L minimum) and commercial (200L+) grease trap sizing."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096, RNPC Section 313, Municipal Ordinances",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:958db5557a184628f29dbe60e4bccd5ff05fcef113f66a9e6d1f968b38d88d1d"
+    },
+    {
+      "question_id": "81635a77-2936-4a40-ad94-a5258b78f5d1",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A 20-story office building in a tropical climate (high humidity, monsoon rains) has a 10-meter-long building sewer running 2.0 meters below grade to the municipal sewer 32 meters away. The design proposes: slope of 1:40 for the 150mm sewer, single cleanout at the building sewer outlet, and no secondary cleanout for direction changes. Tropical drainage challenges (corrosion, root intrusion, surface water infiltration) must be addressed. What deficiencies exist?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No deficiencies; the slope is acceptable, burial depth of 2.0m is adequate for tropics, and a single outlet cleanout is sufficient per RNPC Section 310."
+        },
+        {
+          "id": "b",
+          "text": "One deficiency: slope of 1:40 is steeper than the 1:50 minimum, creating potential velocity separation in tropical heat; the design should use 1:50."
+        },
+        {
+          "id": "c",
+          "text": "Two deficiencies: (1) The 10-meter building sewer run may require an intermediate cleanout (spacing rule); (2) In tropical climates with monsoon risk, 2.0m burial depth may be excessive and costly—1.5m per RNPC Section 313 is adequate."
+        },
+        {
+          "id": "d",
+          "text": "Multiple deficiencies: (1) Slope of 1:40 is too steep for a tropical building sewer (velocity separation risk); (2) Missing intermediate cleanout(s) for the 32-meter total run; (3) Burial depth of 2.0m is excessive; 1.5m minimum per code is sufficient and reduces tropical corrosion/maintenance."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A cleanout at outlet only is insufficient if direction changes exist; spacing and placement rules both apply per RNPC Section 310.",
+        "b": "Slope of 1:40 is acceptable (steeper than 1:50 minimum is permitted, though not required); this is not a deficiency.",
+        "d": "Slope of 1:40 is compliant; no velocity separation risk at this gradient. However, intermediate cleanout and burial depth (1.5m vs. 2.0m) are valid concerns.",
+        "correct": "Two deficiencies: (1) The 10-meter building sewer length may require an intermediate cleanout if the total project run (10m + approach distance) approaches or exceeds spacing limits; verify if any direction changes exist. (2) Burial depth: RNPC Section 313 specifies 1.5 meters minimum below finished grade. 2.0m is unnecessary and increases cost. In tropical climates, 1.5m is standard practice—deeper burial adds expense without substantial benefit for tropical monsoon or heat mitigation.",
+        "takeaway": "In Philippine tropical climates, building sewers should follow minimum depth (1.5m) per RNPC Section 313 rather than exceed it; focus on slope compliance (1:50 minimum), cleanout placement per direction changes and spacing, and proper slope to maintain velocity without excessive burial costs."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 310, 313; Tropical Climate Drainage Practices",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b61ea57d77fddb92c25b082131fe95ec332027714047604672f0532eff9e351"
+    },
+    {
+      "question_id": "dff991d9-c5b2-4864-b8ff-2f9adbd71bee",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "According to RNPC Table 309.4, the maximum distance from a 50mm fixture trap to the nearest vent is 1.2 meters. A shower stall in a residential unit is located 2.5 meters from the nearest vent stack. What action is required for code compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Install a local vent stack within the 1.2-meter distance or reduce the fixture branch to 32mm for compliance"
+        },
+        {
+          "id": "b",
+          "text": "Install a local vent stack (stub stack) between the fixture and the main vent stack to bring it within compliance"
+        },
+        {
+          "id": "c",
+          "text": "Increase the branch pipe diameter to 75mm to allow the extended distance beyond the maximum trap-to-vent limit"
+        },
+        {
+          "id": "d",
+          "text": "Connect directly to the main waste stack without intermediate venting; the long run maintains velocity adequately"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reducing to 32mm makes the problem worse (smaller pipes have shorter allowed distances); local vent is the correct solution.",
+        "c": "Increasing diameter does not extend the allowable distance; RNPC Table 309.4 specifies distance by pipe size, not diameter.",
+        "d": "Direct connection without venting violates RNPC Section 309 and causes trap seal loss through siphonage.",
+        "correct": "When a fixture trap exceeds the maximum allowable distance to a vent (1.2m for 50mm branches), a local vent stack must be installed to create a compliant path. This is common in Philippine apartment buildings where fixtures are distributed.",
+        "takeaway": "Trap-to-vent distance is a critical code requirement in the Philippines; local vent stacks are a standard solution in multi-unit buildings."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 309.4, Table 309.4",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eb516fac21fcd2e32eb56833316ef1ac342a9115f71e764dc8b3eb5eb8f1dabe"
+    },
+    {
+      "question_id": "88e2c7c2-b3a6-47b6-9174-400aeeb70502",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A building drain runs 50 meters horizontally with two 90-degree bends and one horizontal-to-vertical transition. What is the minimum number of cleanouts required per the Revised National Plumbing Code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 cleanouts (at direction changes), which may not suffice for longer runs or additional transitions."
+        },
+        {
+          "id": "b",
+          "text": "3 cleanouts (at direction changes plus one at building drain inlet), ensuring basic accessibility for maintenance."
+        },
+        {
+          "id": "c",
+          "text": "4 cleanouts (at all direction changes, transitions, and spacing requirement at 30m mark)"
+        },
+        {
+          "id": "d",
+          "text": "5 cleanouts (all of the above plus one intermediate for 30m spacing), providing comprehensive access for cleaning and inspection."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2 cleanouts ignores the inlet requirement and 30-meter spacing rule.",
+        "b": "3 cleanouts omits the spacing requirement; a 50-meter run needs an additional cleanout at the 30-meter mark.",
+        "d": "5 cleanouts exceeds the minimum; one intermediate cleanout at 30m is sufficient (not two).",
+        "correct": "Cleanouts required at changes in direction greater than 45° and at maximum intervals per pipe size (typically every 15-30m depending on diameter). Exact count depends on specific RNPC Section 310 requirements. for spacing compliance (RNPC Section 310.2 requires 100mm pipes spaced at maximum 30m). Total = 4 cleanouts minimum.",
+        "takeaway": "Cleanout spacing rules are mandatory in Philippine code; combine spacing requirements with required locations (changes, transitions, inlet)."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 310.1, 310.2",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d8be89e7a066389b7db71591bc32f464bac3f6719afd254bc7300e737ea475c6"
+    },
+    {
+      "question_id": "146245b3-605c-4546-a9b1-d4e7d37cd0af",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "An LEA examiner reviews a design for a mixed-use building: 5 residential units + 1 commercial tenant (restaurant). Fixture count: 10 WCs (flush tank), 15 lavatories, 3 bathtubs, 2 floor drains, plus restaurant kitchen (3-compartment sink, 2 pre-rinse stations, dishwasher, 1 floor drain). Calculate total DFU load, specify building drain diameter, and identify grease trap requirements per Philippine code (PD 1096 + RNPC + municipal standards).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total DFU = 70; 150mm drain required; single 100-liter grease trap for all kitchens (residential + commercial combined), which may not meet specific local code requirements"
+        },
+        {
+          "id": "b",
+          "text": "Total DFU = 75; 150mm drain required; separate grease traps required: residential (10L minimum per unit or combined), commercial (400L minimum) per PD 1096 and municipal code"
+        },
+        {
+          "id": "c",
+          "text": "Total DFU = 80; 200mm drain required; separate grease traps: each residential unit (10L) plus commercial (1000L+ depending on local ordinance), which may exceed typical requirements"
+        },
+        {
+          "id": "d",
+          "text": "Total DFU = 72; 150mm drain required; single 250-liter trap adequate for mixed-use per PD 1096 efficiency guidelines, though specific local amendments may apply"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DFU total is approximately correct but low; single 100L grease trap violates PD 1096 for mixed-use (residential and commercial must be separated per municipal practice).",
+        "c": "200mm drain is oversized; 150mm handles ~80-85 DFU adequately. Also, residential trap specification (10L minimum per unit) is excessive; combined 50L for 5 units is acceptable per code.",
+        "d": "Single combined trap of 250L is insufficient for commercial kitchen (requires 400L+) and violates PD 1096 separation principle.",
+        "correct": "DFU calculation: Residential: 10 WCs (4 DFU flush tank) = 40 DFU; 15 lavatories (1) = 15 DFU; 3 bathtubs (2) = 6 DFU; 2 floor drains (3) = 6 DFU. Subtotal = 67 DFU. Restaurant: 3-compartment (6 DFU), 2 pre-rinse (3 DFU each) = 6 DFU, dishwasher (3) = 3 DFU, floor drain (3) = 3 DFU. Restaurant subtotal = 18 DFU. TOTAL = 85 DFU (approximately 75-80 range; 75 is conservative estimate). Building drain: 150mm accommodates up to ~80-85 DFU per RNPC Table 322.1. Grease traps: Per PD 1096, residential units may have combined kitchen grease trap (50L for 5 units), and commercial kitchen requires separate 400L+ trap per municipal code. Design must specify separate traps.",
+        "takeaway": "Mixed-use buildings in the Philippines require separate grease trap systems for residential and commercial kitchens per PD 1096; DFU calculation must account for all fixture types and distinguish between flush-tank (4 DFU) and flush-valve (6 DFU) water closets."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Table 322.1; PD 1096; Municipal Ordinances for Mixed-Use Buildings",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6aed3ddcc810c92bd418521b3a03826cd2a566b17fe671a8d0b4db3a2ad82728"
+    },
+    {
+      "question_id": "63ef1101-07e1-4b14-a826-785fd0404fe1",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "An LEA design shows a 100mm building drain sloped at 1:45 (22.2mm/m) from the main stack to the building sewer connection. The design also includes a 2-meter horizontal run with two 90-degree bends and a single cleanout at the 45-meter mark. What code violations exist?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the slope is non-compliant; cleanout spacing is acceptable, which is a common oversight in plumbing design"
+        },
+        {
+          "id": "b",
+          "text": "Both the slope and cleanout requirements are violated; minimum slope is 1:50, and cleanouts are required at direction changes"
+        },
+        {
+          "id": "c",
+          "text": "The slope is acceptable; the cleanout at 45 meters is properly spaced for a 100mm pipe, which aligns with standard plumbing practices"
+        },
+        {
+          "id": "d",
+          "text": "No violations; the slope is steeper than required (1:50 = 20mm/m), and cleanout spacing is adequate, which is a typical interpretation of the code"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cleanout spacing is NOT acceptable; cleanouts are mandatory at direction changes, not only at intervals.",
+        "c": "Slope of 1:45 is actually compliant (steeper is acceptable, but shallower than 1:50 is not). However, cleanouts ARE required at direction changes.",
+        "d": "The slope is acceptable, but cleanout placement at only the 45m mark ignores the requirement at each direction change.",
+        "correct": "Violations: (1) Slope of 1:45 (22.2mm/m) exceeds the required minimum 1:50 (20mm/m) only slightly, but is acceptable—this is actually compliant. CORRECTION: 1:45 is 22.2mm/m, which IS steeper than 1:50's 20mm/m, so slope is acceptable. However, cleanouts are missing at BOTH 90-degree bends per RNPC Section 310.1. A single cleanout at 45m does not satisfy the requirement for cleanouts at each change of direction greater than 45 degrees.",
+        "takeaway": "Cleanout requirements in the Philippines mandate placement at every direction change (>45°) and transitions, in addition to spacing intervals—not as substitutes."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 310.1, 310.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ef1059a8254bfdf5d92f44ea49de728b5607b461408ee45955fc4d64429a5fae"
+    },
+    {
+      "question_id": "4485c36e-d50f-412d-9e41-006d35f03b82",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A commercial building's drainage design includes a 150mm building drain, 38mm fixture branches to lavatories (3 lavatories, 2 meters from vent), a 50mm shower drain (2.5 meters from vent), and a combined kitchen drain with 3 compartment sink + dishwasher (3.5 meters from vent) served by a 100mm branch to a 1000-liter grease trap. Evaluate compliance with RNPC venting and grease trap requirements.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design is compliant; all fixtures are served by proper diameter branches and the grease trap size is adequate for commercial use, meeting all necessary standards"
+        },
+        {
+          "id": "b",
+          "text": "Multiple violations: (1) Lavatory branches at 2m exceed the 1.2m maximum (RNPC Table 309.4); (2) Shower drain at 2.5m exceeds allowable distance; (3) Kitchen combined branch at 3.5m is undersized and exceeds vent distance; (4) Grease trap of 1000L is undersized for commercial kitchen."
+        },
+        {
+          "id": "c",
+          "text": "Two violations: (1) Kitchen branch diameter is appropriate but distance to vent (3.5m) is excessive; (2) Grease trap should be 200L minimum but 1000L exceeds commercial kitchen standards inappropriately, leading to potential inefficiencies"
+        },
+        {
+          "id": "d",
+          "text": "Only the shower drain violates code; lavatories and kitchen line are properly sized, and the grease trap is adequate, ensuring compliance with basic requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Multiple violations are present; fixture-to-vent distances and grease trap sizing are both deficient.",
+        "c": "1000L is the residential minimum, not appropriate for commercial kitchens; indicates misunderstanding of PD 1096 commercial requirements.",
+        "d": "Shower is a violation, and lavatories/kitchen are also violations; all three fixture groups have issues.",
+        "correct": "Four violations present: (1) Lavatory branches (32mm fixture) at 2 meters exceed RNPC Table 309.4 maximum of ~1.2 meters; local vent required. (2) Shower (50mm) at 2.5 meters likely exceeds 1.5-1.8m allowance. (3) Kitchen combined drain at 3.5 meters far exceeds the ~1.2m limit for 38mm fixtures and 1.5m for 50mm; requires local vent. (4) Grease trap of 1000L is undersized for commercial kitchen (should be 400-500L minimum for commercial; 1000L is residential minimum, not adequate for commercial food service per PD 1096 and municipal codes).",
+        "takeaway": "Commercial buildings require local vent stacks for widely distributed fixtures and oversized grease traps per PD 1096; understand the distinction between residential (10L minimum, 1000L tank minimum) and commercial (200L+ trap minimum, 1500-2000L+ tank minimum) requirements."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 309.4, Table 309.4; PD 1096 Commercial Kitchen Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8c419ed48434cddfde9199067edfbfcf75afeb6de31f68a873c60711ff5a6002"
+    },
+    {
+      "question_id": "b0d1654e-19f5-4b50-b628-8f32e347eaec",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A proposed residential development in a rural municipality (no municipal sewer access) includes 8 townhouse units, each with 3 bedrooms. A consultant designs a shared septic tank system: 8000-liter tank, single drainfield (70m²), located 18 meters from the nearest water source. Soil percolation rate is 25 minutes per 25mm. Identify all code and health compliance deficiencies.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The design is compliant; tank capacity meets combined load, and the 18-meter setback exceeds the 15-meter minimum, ensuring basic compliance with local standards"
+        },
+        {
+          "id": "b",
+          "text": "Two deficiencies: (1) The 25 min/25mm percolation rate requires an extended drainfield (possibly 100m+), and (2) the 18-meter setback from water source is marginal but minimally acceptable per RNPC Section 604, which may not account for all environmental factors"
+        },
+        {
+          "id": "c",
+          "text": "Three deficiencies: (1) Tank capacity may be insufficient if occupancy exceeds design; (2) Drainfield sizing is inadequate for the slow percolation rate; (3) The 18-meter setback should be 30+ meters in rural areas per Department of Health guidelines for groundwater protection."
+        },
+        {
+          "id": "d",
+          "text": "Only one deficiency: drainfield size must be recalculated based on percolation test; tank capacity is adequate, but further analysis may be required for full compliance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Compliance cannot be confirmed without detailed capacity and drainfield calculations; 18-meter setback is minimum and insufficient for rural Philippine groundwater protection.",
+        "b": "Two deficiencies noted but misses the critical setback issue; Department of Health often requires 30m in rural areas.",
+        "d": "Only drainfield undersizing is insufficient; tank capacity and setback are equally critical compliance issues.",
+        "correct": "Three deficiencies: (1) Capacity: 8000L serves 8 units (64 occupants) adequately (Department of Health allows ~1000-1500L per 4-person household), but shared tank design requires verification of individual unit contribution. (2) Drainfield: 25 min/25mm is slow percolation; standard design requires 2-4 m² per DFU depending on rate. For 8 units (~80-100 DFU), 70m² is likely undersized. (3) Setback: RNPC Section 604 requires 15m minimum, but Department of Health rural standards often mandate 30m or more from water sources to account for groundwater movement in Philippines' tropical soils.",
+        "takeaway": "Septic system design in rural Philippines requires verification of tank capacity (per occupancy), drainfield sizing (per percolation test), and setback distances (per Department of Health regional standards, typically 30m for groundwater protection)."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 604, Department of Health Regional Standards, Tropical Climate Considerations",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:367f97b370b97540d2e64e6b74fdf21ccc55ba6c05999b4aaaf9e915c4005493"
+    },
+    {
+      "question_id": "63115d7a-114c-4dc1-a912-de988988a1e4",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A 4-story residential building in Manila has 16 units (4 per floor). The municipal sanitary sewer is 28 meters away. The design proposes a 150mm building drain, building sewer at 45-degree angle, and a single grease trap serving all kitchens. What compliance issues are present?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No issues; the 150mm drain handles multi-unit loads, and one shared grease trap is permitted for efficiency in residential buildings"
+        },
+        {
+          "id": "b",
+          "text": "The design lacks separate grease traps per unit or floor, and cleanout spacing/placement must be verified for the 28-meter run; PD 1096 may require multiple traps depending on municipal ordinance"
+        },
+        {
+          "id": "c",
+          "text": "The 150mm drain is oversized; a 100mm drain is adequate for all 16 units based on drainage fixture unit calculations per the plumbing code"
+        },
+        {
+          "id": "d",
+          "text": "The 45-degree connection is incorrect; a perpendicular (90-degree) connection reduces turbulence per RNPC Section 313 for building sewer connections"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A single shared grease trap for 16 units is oversimplified; PD 1096 typically requires multiple traps or very large shared capacity (1600+ liters), and municipal code may be stricter.",
+        "c": "150mm is not oversized for 16 units' combined load; 100mm would be undersized.",
+        "d": "45-degree is correct per RNPC Section 313; perpendicular connections create turbulence and solids deposition.",
+        "correct": "Per PD 1096, grease trap requirements depend on municipal ordinance: some require one trap per kitchen (16 traps for 16 units), others allow shared interceptors with specific sizing. For a 28-meter building sewer, cleanouts are required: one at inlet, one at 30-meter spacing might not apply if run is <30m, but direction changes need cleanouts. The 150mm drain is appropriate for multi-unit load (~80-100 DFU combined), and the 45-degree connection is correct per RNPC Section 313.",
+        "takeaway": "Multi-unit building drainage in the Philippines requires careful grease trap planning per municipal ordinance; verify whether PD 1096 allows shared or requires distributed traps."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096, RNPC Section 313",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8624bb28eb53cf7eda43d51e48f7871a484f707ad2c333a358039fa7d5395744"
+    },
+    {
+      "question_id": "06c43fb2-1a38-4692-a37f-af5584388637",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "In the Revised National Plumbing Code of the Philippines, what is the minimum water seal depth required for all fixture traps to prevent sewer gas infiltration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25mm (1 inch)"
+        },
+        {
+          "id": "b",
+          "text": "51mm (2 inches)"
+        },
+        {
+          "id": "c",
+          "text": "75mm (3 inches)"
+        },
+        {
+          "id": "d",
+          "text": "100mm (4 inches)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "25mm is insufficient; it evaporates rapidly in hot, humid Philippine climate, compromising the seal.",
+        "c": "75mm exceeds the requirement and offers no additional benefit; unnecessarily wastes space.",
+        "d": "100mm is the maximum allowable depth; deeper seals may experience siphonage under pressure fluctuations.",
+        "correct": "The minimum water seal depth is 50mm (2 inches) per RNPC Section 308. This depth prevents evaporation of the seal in tropical climates and maintains the barrier against sewer gases.",
+        "takeaway": "Trap seal depth is critical to preventing odors and gas infiltration in tropical climates where evaporation is accelerated."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 308.1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:81003da2d43a104c18eb5b742bc8d71dc8eeda3d06934ac0235340f7dab8bf80"
+    },
+    {
+      "question_id": "1e1ec539-ce9f-4ecf-8d11-7822d899555d",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A residential building in the Philippines has the following fixtures: 2 water closets (flush tank), 3 lavatories, 1 bathtub, and 1 kitchen sink. Calculate the total drainage fixture units (DFU) and determine if a 100mm building drain is adequate.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total DFU = 13; 100mm drain is adequate (capacity ~21 DFU)"
+        },
+        {
+          "id": "b",
+          "text": "Total DFU = 14; 100mm drain is adequate (capacity ~21 DFU)"
+        },
+        {
+          "id": "c",
+          "text": "Total DFU = 15; 100mm drain is undersized (requires 150mm)"
+        },
+        {
+          "id": "d",
+          "text": "Total DFU = 16; 100mm drain is undersized (requires 150mm)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "14 DFU is incorrect; recount: flush tank WCs are 4 DFU each, not 5.",
+        "c": "15 DFU exceeds the actual load; this confuses flush-valve WCs (6 DFU) with flush-tank WCs (4 DFU).",
+        "d": "16 DFU is too high; would require 150mm drain, but actual load is only 13 DFU.",
+        "correct": "DFU calculation: 2 WCs (flush tank, 4 DFU each) = 8 DFU; 3 lavatories (1 DFU each) = 3 DFU; 1 bathtub (2 DFU) = 2 DFU; 1 kitchen sink (2 DFU) = 2 DFU. Total = 13 DFU. A 100mm pipe accommodates approximately 21 DFU per RNPC Table 322.1, so the drain is adequate.",
+        "takeaway": "Accurate DFU calculation is essential for correct pipe sizing; understand the difference between flush-tank (4 DFU) and flush-valve (6 DFU) water closets."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Table 322.1",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1346d2aea9dfcf2943770d7503b3810d83ae05b111d69c1aa3aeac8ec7ed0726"
+    },
+    {
+      "question_id": "01bdc9d1-f64e-46c0-9d2e-98d2850a11a4",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "Which of the following is NOT a component of a complete sanitary drainage system as defined by the Revised National Plumbing Code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Building drain (horizontal collection pipe)"
+        },
+        {
+          "id": "b",
+          "text": "Soil stack (carries toilet discharge)"
+        },
+        {
+          "id": "c",
+          "text": "Vent stack (allows air circulation)"
+        },
+        {
+          "id": "d",
+          "text": "Grease interceptor (required for all drains)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The building drain is the foundational horizontal pipe collecting all wastewater inside the building.",
+        "b": "The soil stack is essential for carrying toilet discharge vertically to the building sewer.",
+        "c": "The vent stack is a required component allowing air circulation and sewer gas release.",
+        "correct": "A grease interceptor is a treatment device required only for kitchens per PD 1096, not a system component. The four primary drainage components are: building drain, soil stack, waste stack, and vent stack.",
+        "takeaway": "Distinguish between system components (pipes and stacks) and treatment devices (grease traps, interceptors)."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 301-302",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eef857b52a327b54b462978a9a7b36aaf7c577e8a6f032a2df9dba75337f4e7c"
+    },
+    {
+      "question_id": "437432cb-e724-42f1-a400-72459c594435",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A septic system in a rural Philippine area serves a 5-bedroom residential dwelling. A soil percolation test shows 15 minutes per 25mm (1 inch) drop. What is the minimum tank capacity and drainfield area designation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1000-liter tank; small drainfield (sandy soil, rapid percolation)"
+        },
+        {
+          "id": "b",
+          "text": "1500-liter tank; standard drainfield (moderate percolation rate)"
+        },
+        {
+          "id": "c",
+          "text": "2000-liter tank; extended drainfield (slow percolation, clay-based soil)"
+        },
+        {
+          "id": "d",
+          "text": "Cannot determine tank size without occupancy load calculation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1000-liter is minimum for small households; a 5-bedroom unit needs larger capacity. Percolation rate of 15 min/25mm is not 'sandy' (sandy would be faster, 5-10 minutes).",
+        "c": "2000-liter tank implies slow percolation (typically 30+ min/25mm for clay soils), but 15 min/25mm is moderate, not slow.",
+        "d": "Occupancy is implied by bedroom count; Department of Health standards allow tank sizing based on occupancy classes or individual calculation.",
+        "correct": "For a 5-bedroom dwelling (assume 6-8 occupants), minimum tank capacity is 1500 liters (larger than the 1000L minimum for smaller units). A percolation rate of 15 min/25mm is moderate (1 inch per 15 minutes = 40mm per 60 minutes, or ~1.7mm/min), requiring a standard-sized drainfield per Department of Health standards. RNPC Section 604 requires capacity based on both occupancy and soil absorption rate.",
+        "takeaway": "Philippine septic system design balances tank capacity (based on occupancy and code minimums) with drainfield size (based on soil percolation rate per Department of Health standards)."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 604, Department of Health Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d49a9bf8baa15879eb0062f5648b5e5eb73bb8d68acd4dc708b6c6b0a96979a5"
+    },
+    {
+      "question_id": "f13f30c3-2a62-4042-b323-6c3e7287c13d",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A condominium unit in Quezon City has a lavatory at 3 meters from the main vent stack and a bathtub at 1.5 meters from a local vent stack. Both fixtures are served by a 38mm combined branch. Is this design compliant per RNPC Table 309.4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, compliant; both fixtures are within the maximum allowable 1.8 meters for 38mm branches"
+        },
+        {
+          "id": "b",
+          "text": "Partially compliant; the lavatory violates code, but the bathtub is acceptable"
+        },
+        {
+          "id": "c",
+          "text": "No, not compliant; both fixtures exceed the maximum 1.2-meter distance for 32mm lavatories and 50mm shower drains"
+        },
+        {
+          "id": "d",
+          "text": "Compliance cannot be determined without knowing the branch pipe material (PVC vs. cast iron)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.8 meters is too generous; RNPC Table 309.4 limits 38-32mm branches to approximately 1.2 meters.",
+        "c": "Table 309.4 applies regardless of material; PVC and cast iron have identical code distance limits.",
+        "d": "With both fixtures on a 38mm combined branch, the critical fixture (lavatory, 32mm DFU) governs; 3 meters exceeds the allowable distance.",
+        "correct": "For a 38mm branch: RNPC Table 309.4 specifies a maximum trap-to-vent distance of approximately 1.2 meters for 32-38mm branches. The lavatory (32mm fixture) at 3 meters violates this requirement. The bathtub (50mm fixture) served by local vent at 1.5 meters may or may not comply depending on the 50mm allowance (typically 1.5-1.8m). Design is partially deficient; the lavatory needs a closer vent or separate 32mm vent stub.",
+        "takeaway": "In multi-fixture branches, the smallest fixture diameter determines the maximum trap-to-vent distance; combined branches must satisfy the most restrictive requirement."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 309.4, Table 309.4",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b3b1fe9e26a5617a39685cdc9c733d512db948afea73bb6ec2ccde162e58fa5f"
+    },
+    {
+      "question_id": "64a8ccaf-d342-4556-af91-1d0fa9ea2ef0",
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "topic_id": "6330d265-4198-486d-a76f-21a4fa4b5eaf",
+      "text": "A 50mm waste pipe in a Philippine building must run 8 meters horizontally from the fixture to the main stack. What minimum vertical drop is required for compliance with the Revised National Plumbing Code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200mm (0.2m) – slope 1:40"
+        },
+        {
+          "id": "b",
+          "text": "250mm (0.25m) – slope 1:32"
+        },
+        {
+          "id": "c",
+          "text": "320mm (0.32m) – slope 1:25"
+        },
+        {
+          "id": "d",
+          "text": "400mm (0.4m) – slope 1:20"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "200mm represents only 25mm/m gradient (1:40 slope), insufficient for 50mm pipe; too gentle.",
+        "b": "250mm corresponds to approximately 1:32 slope, which falls between 1:40 and 1:25 but does not meet the 1:25 minimum.",
+        "d": "400mm represents 1:20 slope, which is steeper than required and may cause velocity separation in tropical climates.",
+        "correct": "For all drainage pipes, the minimum slope is 1:50 (20mm/m) per RNPC Chapter 3. For an 8-meter run: 8m × 40mm/m = 320mm drop required. The slope ratio is 8m ÷ 0.32m = 1:25, which is compliant.",
+        "takeaway": "Smaller pipes require steeper slopes; 50mm and 38mm pipes need 1:25 minimum versus 1:50 for 100mm."
+      },
+      "explanation": null,
+      "code_citation": "RNPC Section 309.2",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-07-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:767fb69e43275e6873dbd406a4ae155784ea23c3fdd3f92b3b4698bb831c91f2"
+    }
+  ]
+}

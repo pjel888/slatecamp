@@ -2,9 +2,9 @@
   "question_id": "1e80ef50-0b77-4a4a-b890-d5ef4527adfc",
   "baseline_hash": "sha256:3cb95250bee70d352dc3b1f85da24509ed1142ae3d8e7c941f532339c4e6743a",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "Which occupancy group under Section 701 covers accessory uses such as private garages, carports, sheds, fences over 1.80 meters, tanks, and towers?",
+    "text": "Under PD 1096, what are the two specific criteria used to evaluate whether a change of occupancy triggers the 'more hazardous' compliance pathway?",
     "options": [
       {
         "id": "a",
-        "text": "Group J covers accessory occupancies."
+        "text": "Construction cost of the proposed renovation and the age of the existing building"
       },
       {
         "id": "b",
-        "text": "G"
+        "text": "Life risk to occupants and fire risk associated with the proposed new use"
       },
       {
         "id": "c",
-        "text": "r"
+        "text": "Proximity to adjacent structures and the occupant load of the proposed new use"
       },
       {
         "id": "d",
-        "text": "o"
+        "text": "Structural rating of the building and the zoning classification of the lot"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Group J covers accessory occupancies. This is supported by Group F covers all carports regardless of use..",
-    "explanation": "Group J covers accessory occupancies. The cited local source family controls this item: Group F covers all carports regardless of use..",
-    "code_citation": "Group D covers all private garages."
+    "correct_option_id": "b",
+    "rationale": "Sec. 702 specifies that the determination of whether a change constitutes a more or less hazardous reclassification is based on two criteria: LIFE RISK (the risk of injury or death to the occupants) and FIRE RISK (the probability and severity of fire in the new use). Both factors must be considered together. Construction cost, building age, and structural rating are not the evaluative criteria under Sec. 702.",
+    "explanation": "LIFE RISK + FIRE RISK = the dual criteria. These map directly to the two primary safety concerns that building codes are designed to address: protecting occupants from structural/panic hazards (life risk) and from fire (fire risk).",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

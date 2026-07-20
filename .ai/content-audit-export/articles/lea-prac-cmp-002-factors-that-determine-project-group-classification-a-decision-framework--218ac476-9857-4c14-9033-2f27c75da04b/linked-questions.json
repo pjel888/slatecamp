@@ -8,23 +8,23 @@
       "question_id": "33bf82ff-c215-461b-a25e-9a6a8a9ddcde",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "What MEP scope would you expect in a Group 5 monumental building or civic facility?",
+      "text": "How should MEP scope affect classification under this local-source article?",
       "options": [
         {
           "id": "a",
-          "text": "Basic forced-air ventilation and standard electrical distribution, which are minimal requirements"
+          "text": "It automatically makes the project Group 5"
         },
         {
           "id": "b",
-          "text": "Chilled water plants, variable frequency drives, and building automation systems"
+          "text": "It may be relevant only if it supports a source-based complexity and group-description rationale"
         },
         {
           "id": "c",
-          "text": "Zone-controlled HVAC with emergency backup and comprehensive plumbing, ensuring operational efficiency"
+          "text": "It is never considered"
         },
         {
           "id": "d",
-          "text": "No mechanical systems required, which is atypical for such facilities"
+          "text": "It replaces PCC"
         }
       ],
       "correct_option_id": "b",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Describes Group 1–2 simple systems (basic forced-air ventilation and standard distribution), not the specialized systems required for Group 5 monumental facilities.",
-        "c": "Describes moderate residential or commercial systems, which are less complex than the specialized MEP scope appropriate for Group 5 civic and monumental structures.",
-        "d": "Contradicts the classification entirely; all monumental buildings require sophisticated mechanical and electrical systems.",
-        "correct": "Group 5 (Monumental Buildings and Facilities — government buildings, convention centers, public facilities) requires sophisticated MEP systems including chilled water plants, variable frequency drives, and building automation systems appropriate to their scale and importance as landmark structures.",
-        "takeaway": "Group 5 monumental buildings demand specialized MEP systems (chilled water, VFDs, building automation) commensurate with their civic significance and complexity."
-      },
+      "rationale": "The source supports complexity and constraints, not an automatic MEP escalation rule.",
       "explanation": "Describes Group 1–2 simple systems (basic forced-air ventilation and standard distribution), not the specialized systems required for Group 5 monumental facilities. Describes moderate residential or commercial systems, which are less complex than the specialized MEP scope appropriate for Group 5 civic and monumental structures. Contradicts the classification entirely; all monumental buildings require sophisticated mechanical and electrical systems. Group 5 (Monumental Buildings and Facilities — government buildings, convention centers, public facilities) requires sophisticated MEP systems including chilled water plants, variable frequency drives, and building automation systems appropriate to their scale and importance as landmark structures. Group 5 monumental buildings demand specialized MEP systems (chilled water, VFDs, building automation) commensurate with their civic significance and complexity.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CMP-002-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T13:17:33.168734+00:00",
+      "updated_at": "2026-07-20T01:13:23.481363+00:00",
       "content_hash": "sha256:6460277ef1f68162a2872ed1e4bf2bc67f24a6f35f045dde791dbb7c7e7900f1"
     },
     {
       "question_id": "a657c11f-3570-47d7-be21-18ba9722e580",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "A project requires specialized consultants for theater systems, acoustics, IT infrastructure, and security systems. How does this influence classification?",
+      "text": "How should specialized consultants influence classification?",
       "options": [
         {
           "id": "a",
-          "text": "Consultant breadth and depth directly correlate with lower classification, as more consultants imply a simpler project scope"
+          "text": "Consultant count alone decides the group"
         },
         {
           "id": "b",
-          "text": "The number of consultants is irrelevant to classification, as classification is determined solely by project size and budget"
+          "text": "Consultants may evidence complexity, but the final group must still match the source descriptions"
         },
         {
           "id": "c",
-          "text": "Requiring numerous specialized consultants indicates higher classification"
+          "text": "They always make the project Group 10"
         },
         {
           "id": "d",
-          "text": "Consultant requirements only matter for Group 1 projects, which are defined by specific criteria unrelated to consultant involvement"
+          "text": "They remove the architect’s classification role"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Reverses the relationship; breadth of specialist consultants indicates higher, not lower, classification.",
-        "b": "Contradicts the framework which explicitly states that consultant coordination and integration of specialized expertise merit higher classification.",
-        "d": "Incorrectly limits consultant impact to Group 1; consultant breadth and depth influence classification across all groups—simple projects require few consultants, complex ones require many specialized experts.",
-        "correct": "The breadth and depth of consultant coordination directly correlates with classification level. Projects requiring numerous specialized consultants merit higher classification than those requiring only basic structural and MEP consultants.",
-        "takeaway": "The number and specialization of required consultants (theater systems, acoustics, IT, security, etc.) directly drive higher classification due to increased design coordination and integration complexity."
-      },
+      "rationale": "The classification rationale must connect facts to source group descriptions.",
       "explanation": "Reverses the relationship; breadth of specialist consultants indicates higher, not lower, classification. Contradicts the framework which explicitly states that consultant coordination and integration of specialized expertise merit higher classification. Incorrectly limits consultant impact to Group 1; consultant breadth and depth influence classification across all groups—simple projects require few consultants, complex ones require many specialized experts. The breadth and depth of consultant coordination directly correlates with classification level. Projects requiring numerous specialized consultants merit higher classification than those requiring only basic structural and MEP consultants. The number and specialization of required consultants (theater systems, acoustics, IT, security, etc.) directly drive higher classification due to increased design coordination and integration complexity.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CMP-002-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T13:17:33.411464+00:00",
+      "updated_at": "2026-07-20T01:13:23.487516+00:00",
       "content_hash": "sha256:a684c0d2ed6461c0bb342fbc06d9d453c1cb166c85f0bbd773343625fcaf7c36"
     },
     {
       "question_id": "52118bd4-2c56-44d0-864c-cd79a726ca29",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "How does structural system complexity influence project classification?",
+      "text": "What is the source-safe way to treat structural complexity?",
       "options": [
         {
           "id": "a",
-          "text": "It has no impact; classification depends only on building type and not on structural complexity"
+          "text": "As a possible complexity factor that must be tied to the source group descriptions"
         },
         {
           "id": "b",
-          "text": "Simple conventional structures support lower groups; sophisticated systems indicate higher classification"
+          "text": "As automatic Group 9"
         },
         {
           "id": "c",
-          "text": "All structural systems are classified identically regardless of complexity or design"
+          "text": "As irrelevant in all cases"
         },
         {
           "id": "d",
-          "text": "Only buildings over 10 stories are affected by structural complexity, which is a rare consideration"
+          "text": "As a substitute for a fee computation"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignores the explicit statement that structural sophistication 'profoundly influences classification' and treats building type as the sole determinant.",
-        "c": "Contradicts the framework which explicitly distinguishes between simple conventional structures and sophisticated systems like post-tensioned concrete, steel moment frames, and innovative systems.",
-        "d": "Incorrectly limits structural complexity impact to tall buildings, missing that a low-rise building with innovative or challenging foundations (waterfront, seismic zone, difficult soil) elevates classification equally.",
-        "correct": "Structural sophistication profoundly influences classification. Simple cast-in-place concrete or light steel framing support lower groups, while sophisticated systems (post-tensioned concrete, steel moment frames, innovative systems) and site-specific structural challenges indicate higher classification.",
-        "takeaway": "Structural system sophistication—from simple cast-in-place to post-tensioned, moment frames, or seismic-resistant design—is a major classification driver independent of building height."
-      },
+      "rationale": "Complexity matters, but the source descriptions still control classification.",
       "explanation": "Ignores the explicit statement that structural sophistication 'profoundly influences classification' and treats building type as the sole determinant. Contradicts the framework which explicitly distinguishes between simple conventional structures and sophisticated systems like post-tensioned concrete, steel moment frames, and innovative systems. Incorrectly limits structural complexity impact to tall buildings, missing that a low-rise building with innovative or challenging foundations (waterfront, seismic zone, difficult soil) elevates classification equally. Structural sophistication profoundly influences classification. Simple cast-in-place concrete or light steel framing support lower groups, while sophisticated systems (post-tensioned concrete, steel moment frames, innovative systems) and site-specific structural challenges indicate higher classification. Structural system sophistication—from simple cast-in-place to post-tensioned, moment frames, or seismic-resistant design—is a major classification driver independent of building height.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CMP-002-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T13:17:33.657671+00:00",
+      "updated_at": "2026-07-20T01:13:23.480084+00:00",
       "content_hash": "sha256:3030c7a42fc4a8d1c23dd48a15723c7afc9aae171db22377c3ed73aa95118ad1"
     },
     {
       "question_id": "bb2a60b9-b14a-4c65-a9a2-0ffd95ef8d4f",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "Which factor serves as the initial classification anchor in SPP 202?",
+      "text": "What should anchor the initial classification decision?",
       "options": [
         {
           "id": "a",
-          "text": "Project construction cost"
+          "text": "The source group descriptions and the project facts"
         },
         {
           "id": "b",
-          "text": "Client's requested fee"
+          "text": "The highest desired fee"
         },
         {
           "id": "c",
-          "text": "Building type"
+          "text": "A contractor preference"
         },
         {
           "id": "d",
-          "text": "Geographic location"
+          "text": "A marketing label"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses cost as the anchor when cost is actually an input that results from classification—classification determines the fee percentage, which is then applied to cost.",
-        "b": "Uses subjective client-desired fee instead of objective technical classification; the architect determines classification independently and then justifies the resulting fee to the client.",
-        "d": "Geographic location influences structural and regulatory factors but is not itself the initial classification anchor; building type serves that role.",
-        "correct": "Building type serves as the primary indicator and initial classification anchor, organizing projects hierarchically from simple residential through exceptionally complex specialized structures.",
-        "takeaway": "Building type is the starting point for classification; all other factors (structure, MEP, site, regulatory, delivery) then elevate or confirm that baseline group."
-      },
+      "rationale": "Classification starts with source group definitions and facts.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "remember",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CMP-002-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.485351+00:00",
       "content_hash": "sha256:29cafec0ca5aaf3b43231650d44614adcf64cd97849b75321dce293e242e81cf"
     },
     {
       "question_id": "208ac63a-5803-4309-9578-56d789f32f51",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "How would a fast-track project delivery method influence classification decisions?",
+      "text": "How should fast-track delivery be treated?",
       "options": [
         {
           "id": "a",
-          "text": "It would lower the classification due to compressed schedule, potentially compromising quality and increasing risk of non-compliance with building codes"
+          "text": "As an automatic group change"
         },
         {
           "id": "b",
-          "text": "It has no effect on classification; only building type matters, regardless of the delivery method or project timeline"
+          "text": "As a schedule/service condition to document, not a group change unless tied to a source classification rule"
         },
         {
           "id": "c",
-          "text": "It would elevate classification due to intensive coordination and phased delivery requirements"
+          "text": "As no contract issue"
         },
         {
           "id": "d",
-          "text": "It would automatically place the project in Group 10, which is reserved for projects with unique scheduling and coordination challenges"
+          "text": "As proof of Group 10"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrectly assumes compressed schedule lowers classification; in fact, fast-track's intensive coordination and phased overlap increase classification.",
-        "b": "Treats delivery method as irrelevant when the framework explicitly states that delivery method influences classification; Design-Bid-Build differs fundamentally from Design-Build or CM at Risk.",
-        "d": "Overgeneralizes by assigning Group 10 automatically; fast-track elevates classification within the appropriate range for the project type, but does not guarantee Group 10.",
-        "correct": "Fast-track projects demand intensive coordination, phased delivery, and value engineering involvement that elevate classification. Delivery method significantly influences classification decisions alongside building type and technical factors.",
-        "takeaway": "Fast-track delivery method elevates classification because it requires overlapping design-construction phases, intensive coordination, and risk management beyond standard sequential Design-Bid-Build."
-      },
+      "rationale": "Fast-track can affect management and service scope, but the checked source does not make it an automatic group trigger.",
       "explanation": "Incorrectly assumes compressed schedule lowers classification; in fact, fast-track's intensive coordination and phased overlap increase classification. Treats delivery method as irrelevant when the framework explicitly states that delivery method influences classification; Design-Bid-Build differs fundamentally from Design-Build or CM at Risk. Overgeneralizes by assigning Group 10 automatically; fast-track elevates classification within the appropriate range for the project type, but does not guarantee Group 10. Fast-track projects demand intensive coordination, phased delivery, and value engineering involvement that elevate classification. Delivery method significantly influences classification decisions alongside building type and technical factors. Fast-track delivery method elevates classification because it requires overlapping design-construction phases, intensive coordination, and risk management beyond standard sequential Design-Bid-Build.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CMP-002-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T13:17:33.289354+00:00",
+      "updated_at": "2026-07-20T01:13:23.482277+00:00",
       "content_hash": "sha256:684488cb8d4effa2f664d54a724bfaa88a793dbd2c4e09d02d0f258c5f142db7"
     },
     {
       "question_id": "9570c45b-dc07-4688-8e45-5ea02aee716d",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "Which regulatory scenario would elevate project classification?",
+      "text": "How should a regulatory-heavy project be classified?",
       "options": [
         {
           "id": "a",
-          "text": "Standard occupancy classification with predictable code paths, which simplifies the approval process"
+          "text": "By matching facts to complexity and group descriptions, not by assuming automatic escalation"
         },
         {
           "id": "b",
-          "text": "Single-family residence with no special requirements, typically involving straightforward compliance"
+          "text": "Always Group 1"
         },
         {
           "id": "c",
-          "text": "High-hazard use with extensive variance applications and multiple permitting agencies"
+          "text": "Always Group 10"
         },
         {
           "id": "d",
-          "text": "Basic commercial structure with standard compliance, generally involving minimal regulatory hurdles"
+          "text": "Never classified"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Describes straightforward code compliance that supports baseline or lower classification, not elevation.",
-        "b": "Describes the simplest regulatory scenario (single-family with no special requirements); no elevation factors present.",
-        "d": "Describes basic commercial compliance following standard code paths; this does not trigger regulatory complexity elevation.",
-        "correct": "Regulatory complexity elevates classification. Projects requiring special occupancy classification, high-hazard uses, extensive variance applications, coordination with multiple permitting agencies, heritage conservation compliance, or specialized standards indicate elevated classification.",
-        "takeaway": "High-hazard occupancy, special classifications, multiple variance applications, and coordination with multiple permitting agencies are regulatory drivers that elevate classification."
-      },
+      "rationale": "Regulatory constraints can inform complexity, but classification still needs source-based reasoning.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CMP-002-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.484605+00:00",
       "content_hash": "sha256:3d6bd87c49ba665da7a15139eb2ac33b04db5bee09e334b1b62b97c7306c8e01"
     },
     {
       "question_id": "92095836-45a2-4c09-a22a-e3181dfddf58",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "When should an architect document classification rationlea with the client?",
+      "text": "Why document the classification rationale with the client?",
       "options": [
         {
           "id": "a",
-          "text": "Only if the client disagrees with the proposed fee, which can lead to negotiations and adjustments"
+          "text": "To connect project facts, group selection, PCC, and compensation method before fee computation"
         },
         {
           "id": "b",
-          "text": "Classification should remain confidential between the architect and their consultant team, to protect proprietary methodologies"
+          "text": "To avoid using sources"
         },
         {
           "id": "c",
-          "text": "In proposals and contracts to establish clarity, manage expectations, and provide foundation for discussion if scope changes occur"
+          "text": "To guarantee final bid price"
         },
         {
           "id": "d",
-          "text": "After the contract is signed during the design phase, which might be too late for effective communication"
+          "text": "To delete the agreement"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Treats documentation as reactive (only if client disagrees) when it should be proactive in every proposal to establish transparency and prevent disputes.",
-        "b": "Keeps classification confidential, preventing the client from understanding fee justification and eliminating the foundation for reclassification discussion if scope changes occur.",
-        "d": "Documents classification too late (after signing); explanations in proposals and contracts are necessary upfront to establish clarity and manage expectations before commitment.",
-        "correct": "Classification decisions should be clearly documented in proposals and contracts. Architects should briefly explain the classification rationale, demonstrating transparent fee determination. This practice establishes clarity, manages expectations, and provides foundation for reclassification discussion if scope changes.",
-        "takeaway": "Document classification rationale in the proposal and contract upfront to establish transparent fee justification and enable discussion of scope-change reclassification."
-      },
+      "rationale": "A documented rationale connects classification to fee basis and avoids later disputes.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "analyze",
@@ -351,30 +309,30 @@
       "model_id": "ALE-PRAC-CMP-002-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.486078+00:00",
       "content_hash": "sha256:8e40477bb8ceb9e28c4e6cc8be06ea73fa92fe6556261520975caaed9a8ea343"
     },
     {
       "question_id": "f6f9df08-b99c-4046-a8dd-106de86dd562",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "What is the primary approach to project classification under SPP 202?",
+      "text": "What is the primary approach to SPP 202 classification?",
       "options": [
         {
           "id": "a",
-          "text": "Application of a single dominant criterion, such as project size or complexity, to streamline decision-making"
+          "text": "Pick the most profitable group first"
         },
         {
           "id": "b",
-          "text": "Systematic evaluation of multiple interconnected factors"
+          "text": "Classify by degree of complexity and creative skill within technical, functional, economic, and aesthetic constraints"
         },
         {
           "id": "c",
-          "text": "Construction cost alone, which simplifies the classification process but may overlook other critical aspects"
+          "text": "Use only building height"
         },
         {
           "id": "d",
-          "text": "Client preference and budget, which can vary significantly and affect project scope and classification"
+          "text": "Use only owner prestige"
         }
       ],
       "correct_option_id": "b",
@@ -382,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Treats classification as dependent on only one criterion, ignoring the interconnected factors (structural complexity, MEP scope, site conditions, regulatory environment, and delivery method) that all influence the final decision.",
-        "c": "Confuses construction cost with project classification; while cost correlates with complexity, the two are distinct—classification determines the appropriate fee percentage to apply to cost, not the reverse.",
-        "d": "Relies on subjective client preference rather than objective technical assessment of building type, structural systems, MEP scope, site conditions, and regulatory environment.",
-        "correct": "Project classification requires systematic evaluation of multiple interconnected factors including building type, structural complexity, MEP scope, site conditions, regulatory environment, and project delivery context rather than reliance on a single criterion.",
-        "takeaway": "SPP 202 classification requires assessing multiple factors together, not any single criterion in isolation."
-      },
+      "rationale": "This is the source-safe classification framework.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "remember",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CMP-002-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.483072+00:00",
       "content_hash": "sha256:ca633291dda2cf553828c69041e0c6a4847957e1b0d4aa6a2ae34ba8faaf5305"
     },
     {
       "question_id": "b49f9483-fe1d-41fb-8a0b-e9e08ed85c17",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "Which site condition would elevate a project's classification?",
+      "text": "How should difficult site conditions affect classification?",
       "options": [
         {
           "id": "a",
-          "text": "Typical urban site with standard soil and conventional utility access, which does not require specialized construction techniques"
+          "text": "They may inform complexity and constraints, but they do not automatically change group without source-based rationale"
         },
         {
           "id": "b",
-          "text": "Steep slopes, difficult geology, or waterfront location requiring specialized foundations"
+          "text": "They always make Group 8"
         },
         {
           "id": "c",
-          "text": "Flat site with easy access to utilities, minimizing construction challenges and costs"
+          "text": "They always make Group 10"
         },
         {
           "id": "d",
-          "text": "Single building on uncomplicated terrain, allowing for straightforward construction processes"
+          "text": "They eliminate professional fees"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Describes standard site conditions that support baseline or lower classification, not elevation.",
-        "c": "Describes ideal site conditions (flat, utilities accessible) that support lower classification, not elevation.",
-        "d": "Describes simple site scenarios with no constraints; elevation requires challenging conditions like slopes, difficult geology, or specialized foundation requirements.",
-        "correct": "Challenging site conditions such as steep slopes, difficult geology, poor soil bearing capacity, waterfront locations requiring specialized foundations, contaminated sites, or constrained site access elevate classification.",
-        "takeaway": "Geotechnical challenges—slopes, poor bearing capacity, waterfront conditions, contamination—force higher classification due to design complexity and specialist coordination."
-      },
+      "rationale": "The source supports constraints and complexity, not a standalone site-condition shortcut.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "understand",
@@ -451,30 +397,30 @@
       "model_id": "ALE-PRAC-CMP-002-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.486792+00:00",
       "content_hash": "sha256:c12bd00bd197365fe6929c223dd77f476362da5f50e1f372fdb90eed3bab2348"
     },
     {
       "question_id": "2f2ecb04-20fd-4de5-8f3d-b0e08c588c97",
       "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
       "topic_id": "1923d58b-09ec-4c17-931d-cc63b0af6041",
-      "text": "You are classifying a 4-story mixed-use building with innovative facade systems, LEED certification requirements, challenging site access, and coordination with six specialized consultants. What classification approach is most appropriate?",
+      "text": "How should a mixed-use building with an innovative facade and special consultants be classified?",
       "options": [
         {
           "id": "a",
-          "text": "Group 4 based primarily on the 4-story height, without considering the complexity factors of mixed-use programming or sustainability requirements"
+          "text": "Automatically Group 5"
         },
         {
           "id": "b",
-          "text": "Group 5 as a baseline for mixed-use with elevation to Group 6 or 7 due to innovation, sustainability, site constraints, and specialist coordination"
+          "text": "By identifying use, complexity, constraints, and any special group description before choosing a group"
         },
         {
           "id": "c",
-          "text": "Group 2 because it is not a high-rise and the building height alone determines classification regardless of project complexity factors"
+          "text": "Automatically Group 6"
         },
         {
           "id": "d",
-          "text": "Group 10 regardless of other factors, as the presence of LEED certification requirements automatically elevates classification to the highest tier"
+          "text": "No classification needed"
         }
       ],
       "correct_option_id": "b",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Uses building height (4 stories) as the sole criterion, ignoring the innovation, LEED requirements, site constraints, and six specialized consultants that demand elevation.",
-        "c": "Vastly underclassifies a complex mixed-use project; Group 2 applies to simple residential, not projects with innovative facade, sustainability certification, and extensive consultant coordination.",
-        "d": "Automatically assigns the highest group regardless of actual complexity; Group 10 applies to exceptionally specialized projects, not all multi-factor scenarios.",
-        "correct": "This project exhibits characteristics of multiple groups: mixed-use suggests Group 5 baseline; innovative design, sustainability requirements, challenging site access, and extensive specialist coordination elevate classification to Group 6 or 7. Synthesis of all factors is essential.",
-        "takeaway": "Synthesize all factors (building type baseline, innovation, sustainability, site challenges, specialist count) to determine elevation; this 4-story mixed-use elevates from Group 5 baseline to Group 6–7."
-      },
+      "rationale": "Source-safe classification requires facts tied to source group descriptions.",
       "explanation": "Uses building height (4 stories) as the sole criterion, ignoring the innovation, LEED requirements, site constraints, and six specialized consultants that demand elevation. Vastly underclassifies a complex mixed-use project; Group 2 applies to simple residential, not projects with innovative facade, sustainability certification, and extensive consultant coordination. Automatically assigns the highest group regardless of actual complexity; Group 10 applies to exceptionally specialized projects, not all multi-factor scenarios. This project exhibits characteristics of multiple groups: mixed-use suggests Group 5 baseline; innovative design, sustainability requirements, challenging site access, and extensive specialist coordination elevate classification to Group 6 or 7. Synthesis of all factors is essential. Synthesize all factors (building type baseline, innovation, sustainability, site challenges, specialist count) to determine elevation; this 4-story mixed-use elevates from Group 5 baseline to Group 6–7.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "analyze",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CMP-002-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T13:17:33.535497+00:00",
+      "updated_at": "2026-07-20T01:13:23.483846+00:00",
       "content_hash": "sha256:750a247266bc00069e4bd935920e1bd265f45d80411b09ce46bbb5bf4618dd39"
     }
   ]

@@ -8,37 +8,31 @@
       "question_id": "9f5159c0-ddd7-494a-a31d-b8b3819dafef",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "In a fire alarm system, what is the primary purpose of Notification Appliance Circuits (NACs)?",
+      "text": "Where does RA 9514 place manual fire alarm boxes in source-safe terms?",
       "options": [
         {
           "id": "a",
-          "text": "To monitor detector status and transmit polling signals to addressable devices, ensuring system integrity"
+          "text": "In the natural path of escape near exits, readily accessible, unobstructed, and visible."
         },
         {
           "id": "b",
-          "text": "To communicate alarm state and deliver power to sirens, strobes, and voice speakers that notify occupants"
+          "text": "Hidden in service cabinets for aesthetics."
         },
         {
           "id": "c",
-          "text": "To establish the connection between the FACP and a central station monitoring service, maintaining constant communication"
+          "text": "Only in private offices."
         },
         {
           "id": "d",
-          "text": "To form a backup loop in the event the primary SLC circuit opens, providing redundancy"
+          "text": "Only beside mechanical equipment."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This describes SLC (Signaling Line Circuit) function, not NAC function.",
-        "c": "This describes the monitoring transmission pathway, not NACs.",
-        "d": "NACs are separate from SLC circuits and do not provide backup loop redundancy.",
-        "correct": "NACs are the output circuits from the FACP that supply both signaling and power to notification appliances (sirens, strobes, voice devices). They translate alarm conditions into occupant-facing notifications.",
-        "takeaway": "NACs are output circuits for notifications; SLCs are input circuits for device status. Both are required for a functioning fire alarm system."
-      },
+      "rationale": "RA 9514 states that manual fire alarm boxes are placed in the natural path of escape near exits and must be accessible, unobstructed, and visible.",
       "explanation": "This describes SLC (Signaling Line Circuit) function, not NAC function. This describes the monitoring transmission pathway, not NACs. NACs are separate from SLC circuits and do not provide backup loop redundancy. NACs are the output circuits from the FACP that supply both signaling and power to notification appliances (sirens, strobes, voice devices). They translate alarm conditions into occupant-facing notifications. NACs are output circuits for notifications; SLCs are input circuits for device status. Both are required for a functioning fire alarm system.",
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Notification Appliance Circuits (NACs)'",
       "bloom_level": "remember",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-005-03-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-05-06T15:39:32.52094+00:00",
+      "updated_at": "2026-07-20T01:13:27.065328+00:00",
       "content_hash": "sha256:998214b2980ad9f0829f809714e7c5d2108296872d7fcfc7e5a813fb61f74c38"
     },
     {
       "question_id": "bcd0b2fb-8b63-416a-bb22-466235f94a08",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "According to NFPA 72, what is the key difference between conventional and addressable fire alarm systems in terms of system response to a detector activation?",
+      "text": "What is required when a required fire alarm system is out of service for more than four hours in a twenty-four-hour period?",
       "options": [
         {
           "id": "a",
-          "text": "Conventional systems pinpoint the exact detector location; addressable systems only identify the zone, which is contrary to typical system capabilities."
+          "text": "Notify the C/MFM within twenty-four hours and assign fire watch until restored."
         },
         {
           "id": "b",
-          "text": "Conventional systems identify only the zone where the detector is located; addressable systems pinpoint the specific device address and location"
+          "text": "Ignore the condition if the building is occupied."
         },
         {
           "id": "c",
-          "text": "Conventional systems use loop-type wiring; addressable systems use only radial wiring, which is not a standard practice in system design."
+          "text": "Turn off all exit signs."
         },
         {
           "id": "d",
-          "text": "Conventional systems transmit to central station; addressable systems transmit only to a local annunciator, which is a misunderstanding of system operations."
+          "text": "Replace the fire alarm with ordinary doorbells."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This reverses the correct relationship; conventional has poor granularity.",
-        "c": "Wiring topology (loop vs. radial) is independent of conventional vs. addressable; both can use either.",
-        "d": "Transmission to central station is independent of whether the system is conventional or addressable.",
-        "correct": "Addressable systems assign unique addresses to each device and display the specific detector address (e.g., '3B-West Hallway') upon activation. Conventional systems group detectors by zone and display only the zone number.",
-        "takeaway": "Addressable systems provide superior device-level granularity; conventional systems offer lower cost but limited diagnostic detail."
-      },
+      "rationale": "RA 9514 requires C/MFM notification within twenty-four hours and fire watch until the fire alarm system is returned to service.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Signaling Protocols: Conventional vs. Addressable'",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-005-03-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.069438+00:00",
       "content_hash": "sha256:f379aefb0741a5934d9e6c05c8f878d4a2086e27222628c1e27086f418369b5e"
     },
     {
       "question_id": "fff8a986-9edf-4059-aaf5-ec8107648d2d",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A 20-story office building in Metro Manila has three SLC circuits, each capable of addressing 200 devices. The engineer discovers that each floor has 50 detectors. Which circuit topology (Class A or Class B) should be used, and why?",
+      "text": "Which set of fire alarm initiation means is listed by RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "Class B on all circuits, because 50 detectors per floor fits within a single circuit capacity and costs less than Class A, making it a cost-effective solution"
+          "text": "Manual initiation, automatic detection, and extinguishing-system operation."
         },
         {
           "id": "b",
-          "text": "Class A on vertical riser SLC circuits and Class B on individual floor branches, because the riser must survive a single fault but branch circuits can be isolated"
+          "text": "Paint color, signage, and furniture arrangement."
         },
         {
           "id": "c",
-          "text": "Class A on all circuits, to ensure maximum redundancy and compliance with high-rise evacuation requirements, providing the highest level of safety"
+          "text": "Only verbal reports."
         },
         {
           "id": "d",
-          "text": "Class B radial circuits only, as NFPA 72 prohibits loop topology in buildings over 20 stories, ensuring compliance with fire safety standards"
+          "text": "Only sprinkler pipe size."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While Class B is cheaper, the vertical riser serving all floors must survive a single fault; using Class B on the riser risks system-wide failure.",
-        "c": "Class A provides better redundancy but costs more; the design is driven by risk profile, not a mandatory code requirement for all circuits.",
-        "d": "NFPA 72 has no prohibition based on building height; choice depends on occupancy classification and risk assessment.",
-        "correct": "A common Philippine design practice uses Class A (loop) for critical vertical risers that serve multiple floors, ensuring that a single fault does not disable the entire system. Floor-level branches can use Class B (radial) because their scope is limited and a fault affects only one floor's devices.",
-        "takeaway": "Hybrid topology (Class A for critical paths, Class B for branches) balances cost, reliability, and code compliance in high-rise buildings."
-      },
+      "rationale": "RA 9514 lists manual initiation, automatic detection, and extinguishing-system operation as fire alarm initiation means.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Sections 'Circuit Classes and Signaling Architecture' and 'Class A vs. Class B in Philippine Buildings'",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-005-03-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.071219+00:00",
       "content_hash": "sha256:94531385422b6e2c7db3866cbf9fd1ee94a78f428a60d21856883a7ccbc76e6d"
     },
     {
       "question_id": "6a34e087-3453-4c20-ac65-24c6df86916a",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A data center in the Philippines requires redundancy for fire alarm detection. The design includes a single vertical SLC circuit with 300 addressable detectors distributed across 12 floors. An engineer proposes splitting this into two separate SLC circuits, with 150 detectors on each circuit, to reduce the impact of a single SLC failure. Under NFPA 72, what is the most significant advantage of this redundancy strategy?",
+      "text": "How does RA 9514 connect sprinkler water flow to alarm initiation?",
       "options": [
         {
           "id": "a",
-          "text": "It reduces the total number of detectors needed for the building, lowering equipment cost, which is beneficial for budget constraints"
+          "text": "Water flow equal to or greater than flow from a single automatic sprinkler operates an alarm initiation device."
         },
         {
           "id": "b",
-          "text": "It ensures that if one SLC circuit fails or becomes corrupted, the building retains detection capability for half the facility, preventing total loss of fire detection in the data center"
+          "text": "Water flow is never connected to alarms."
         },
         {
           "id": "c",
-          "text": "It eliminates the need for Class A loop circuits, reducing installation complexity and potential points of failure"
+          "text": "Water flow only affects plumbing records."
         },
         {
           "id": "d",
-          "text": "It allows the FACP to operate on a lower capacity panel, reducing power supply requirements and overall energy consumption"
+          "text": "Water flow silences all notification devices."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Redundant circuits add cost, not reduce it; they improve reliability, not quantity.",
-        "c": "Separate SLC circuits do not eliminate the need for Class A loops in critical paths.",
-        "d": "Panel capacity depends on total devices; splitting circuits does not reduce this requirement.",
-        "correct": "Splitting a single high-capacity SLC into two circuits provides fault tolerance. If one circuit fails (open, short, or addressing error), the other circuit continues to detect fires in its zone. Total loss of detection is prevented. This is a best practice in critical facilities and is mentioned in the article's design considerations section.",
-        "takeaway": "Redundant SLC circuits are a best-practice design for critical facilities, providing fault tolerance and ensuring continuity of fire detection even if one circuit is compromised."
-      },
+      "rationale": "RA 9514 requires a sprinkler-system alarm initiation device to operate when water flow is equal to or greater than flow from a single automatic sprinkler.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Design Considerations and Best Practices' (Redundancy for Critical Facilities)",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-005-03-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.061490+00:00",
       "content_hash": "sha256:00aff711644f21159ab6f99277638a7333be2d32793600292284d4ebd7742766"
     },
     {
       "question_id": "700c104d-4ce2-4155-a3a9-37e191e08eb7",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A fire alarm system integrates with a building's access control system so that upon fire alarm activation, all interior security doors unlock to allow rapid egress. This integration is routed through the FACP via a hardwired relay output or network connection. What is the critical safety requirement that must be ensured before this integration is implemented?",
+      "text": "What does Salvan identify as a fire alarm control panel function?",
       "options": [
         {
           "id": "a",
-          "text": "The access control system must have a separate battery backup with a 24-hour standby rating to ensure functionality during power outages"
+          "text": "Furnish power, receive initiating-device signals, transmit signals, and supervise circuitry."
         },
         {
           "id": "b",
-          "text": "The FACP must continuously send a 'heartbeat' signal to the access control system to verify that the connection is active and healthy"
+          "text": "Store cleaning supplies."
         },
         {
           "id": "c",
-          "text": "The access control system must acknowledge receipt of the door-unlock command and report its status back to the FACP for logging; a failure of the door unlock must be annunciated at the fire command center"
+          "text": "Compute room air changes only."
         },
         {
           "id": "d",
-          "text": "The access control system must use encrypted communication to prevent unauthorized door unlock commands from external networks, ensuring security"
+          "text": "Select kitchen hood styles."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The FACP typically supplies backup power to the access control interface; separate battery is not a requirement.",
-        "b": "Heartbeat signals are helpful for diagnostics but do not replace the requirement to verify actual door unlock execution.",
-        "d": "Encryption is beneficial for network security but is not a life-safety requirement; loss of a door unlock command must be detected and annunciated regardless of encryption.",
-        "correct": "Per NFPA 72 and the article's discussion of BMS integration, all integrated systems must acknowledge commands and report status back to the FACP. If doors fail to unlock (mechanical jamming, loss of signal, power failure), the FACP must annunciate the failure at the fire command center so responders are alerted and can use alternative methods.",
-        "takeaway": "Integrated building systems must provide command acknowledgment and failure notification to the FACP to ensure that critical safety actions (door unlock, elevator recall) are verified and any failures are alarmed."
-      },
+      "rationale": "Salvan defines the control unit or fire alarm panel as furnishing power, receiving initiating-device signals, transmitting signals, and supervising circuitry.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Integration with Building Management Systems (BMS) and Automated Controls'",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-UTIL-005-03-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.070360+00:00",
       "content_hash": "sha256:384d85cc56052fe44fe5c2a4c69c3396247d155a53d1763085bcfc67054077e9"
     },
     {
       "question_id": "7363062a-0803-4bb5-a504-a4c5a0311150",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "In the Philippines, fire alarm cable must maintain a minimum separation from 220V power conduit. Under what circumstances is this minimum separation requirement waived?",
+      "text": "Where does RA 9514 place manual fire alarm boxes in source-safe terms?",
       "options": [
         {
           "id": "a",
-          "text": "When the fire alarm cable is of FPL rating and the power cable is standard UTP, which is not typically used for power distribution"
+          "text": "In the natural path of escape near exits, readily accessible, unobstructed, and visible."
         },
         {
           "id": "b",
-          "text": "When both the fire alarm cable and power cable are enclosed in rigid metal conduit (RMC), providing electromagnetic shielding"
+          "text": "Hidden in service cabinets for aesthetics."
         },
         {
           "id": "c",
-          "text": "When the power voltage is reduced to 110V or lower, which is considered a low voltage and less likely to cause interference"
+          "text": "Only in private offices."
         },
         {
           "id": "d",
-          "text": "When the fire alarm system is addressable rather than conventional, assuming advanced systems have built-in interference mitigation"
+          "text": "Only beside mechanical equipment."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Cable rating affects fire performance but does not eliminate the need for separation or shielding.",
-        "c": "Reduced voltage does not change the EMI risk or separation requirements.",
-        "d": "System architecture (conventional vs. addressable) is independent of wiring separation requirements.",
-        "correct": "Per NFPA 72 Section 29.8, when fire alarm and power cables must share the same raceway, both must be enclosed in rigid metal conduit (RMC). The metal shielding provides equivalent protection to physical separation.",
-        "takeaway": "RMC enclosure is the approved workaround for situations where the 2-inch separation cannot be achieved, such as in building cores and tight conduit runs."
-      },
+      "rationale": "RA 9514 states that manual fire alarm boxes are placed in the natural path of escape near exits and must be accessible, unobstructed, and visible.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Circuit Wiring and Fire-Rated Cable Requirements'",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-005-03-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.066331+00:00",
       "content_hash": "sha256:b3eee72a04f7bde8d526b3a5f64b1f850bdb3bcd9ed45b492954053f6b695631"
     },
     {
       "question_id": "6cdd4175-6894-4abb-93e5-bf2bea50adaf",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A strobe light (visual alarm) in a Philippine fire alarm system must meet NFPA 72 Section 18.5.6 flash-rate requirements. What is the required flash rate for strobes in general building areas and at exits?",
+      "text": "What is required when a required fire alarm system is out of service for more than four hours in a twenty-four-hour period?",
       "options": [
         {
           "id": "a",
-          "text": "0.5–1.0 Hz in general areas; 2–3 Hz at exits for higher visibility"
+          "text": "Notify the C/MFM within twenty-four hours and assign fire watch until restored."
         },
         {
           "id": "b",
-          "text": "1–2 Hz in general areas; 1–2 Hz at exits (same throughout the building)"
+          "text": "Ignore the condition if the building is occupied."
         },
         {
           "id": "c",
-          "text": "2–4 Hz in general areas; 4–6 Hz at exits to draw attention to egress routes"
+          "text": "Turn off all exit signs."
         },
         {
           "id": "d",
-          "text": "Continuously illuminated (no flashing) per RA 9514 Section 4.3 for buildings over 24.5 meters"
+          "text": "Replace the fire alarm with ordinary doorbells."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Higher flash rates at exits are not required by code; the uniform rate is sufficient.",
-        "c": "Flash rates higher than 2 Hz can cause seizure risk and are not code-approved.",
-        "d": "Strobes must flash per NFPA 72; RA 9514 mandates strobes in buildings over 24.5 meters, not continuous illumination.",
-        "correct": "NFPA 72 Section 18.4.6 specifies a uniform flash rate of 1–2 Hz for all areas including general spaces and exits. A consistent flash rate is less confusing and easier for occupants to recognize across the building.",
-        "takeaway": "Strobe flash rates are standardized at 1–2 Hz throughout the building for consistency and safety. Faster rates create seizure risk and confusion."
-      },
+      "rationale": "RA 9514 requires C/MFM notification within twenty-four hours and fire watch until the fire alarm system is returned to service.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Notification Appliance Circuits (NACs)'",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-005-03-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.064295+00:00",
       "content_hash": "sha256:60cef5dd169d63a6d6246324246599de37f8504080a1f7f57f5fbf2635eb7b5c"
     },
     {
       "question_id": "8998f4c6-c7b0-4841-82e9-61c445e5a274",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "In the Philippines, buildings over 24.5 meters in height are required by RA 9514 Section 4.2 to provide radio coverage for firefighter communication during emergencies. Which of the following is NOT an approved method to achieve this requirement?",
+      "text": "Which set of fire alarm initiation means is listed by RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "Install a distributed antenna system (DAS) with copper cable and small antennas on each floor corridor to amplify firefighter radios"
+          "text": "Manual initiation, automatic detection, and extinguishing-system operation."
         },
         {
           "id": "b",
-          "text": "Locate the fire command center on the ground floor with a direct phone line to the fire department and an FACP annunciator panel"
+          "text": "Paint color, signage, and furniture arrangement."
         },
         {
           "id": "c",
-          "text": "Install rooftop cellular boosters to improve external cell signal reception by firefighters"
+          "text": "Only verbal reports."
         },
         {
           "id": "d",
-          "text": "Provide isolated radio repeaters on each floor connected to an external antenna system"
+          "text": "Only sprinkler pipe size."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "DAS is explicitly approved and commonly used in Philippine high-rise buildings.",
-        "b": "Fire command center with direct phone is explicitly approved and is an alternative to DAS.",
-        "d": "Isolated floor-based repeaters can be part of a comprehensive radio system but are less common than DAS in Philippine buildings.",
-        "correct": "RA 9514 Section 4.2.1.7 requires radio coverage (DAS approved); Section 4.2.1.6 separately requires fire command center. Cellular boosters are not listed as an approved method; boosters amplify consumer cell signals but do not support dedicated firefighter radio frequencies or provide the reliability required for emergency use.",
-        "takeaway": "RA 9514 requires either DAS or fire command center connectivity for high-rise radio coverage; consumer cellular boosters are not approved for this life-safety function."
-      },
+      "rationale": "RA 9514 lists manual initiation, automatic detection, and extinguishing-system operation as fire alarm initiation means.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Emergency Responder Communications' (Two-Way Radio Coverage)",
       "bloom_level": "understand",
@@ -401,30 +353,30 @@
       "model_id": "ALE-UTIL-005-03-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.073743+00:00",
       "content_hash": "sha256:e31ad47bac7e7070b9f20089d332c787476e667341257f92f26a151a98945eb4"
     },
     {
       "question_id": "95f788fd-e41b-47b7-9f86-a95c6c84afb8",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A Philippine hospital fire alarm system includes both a primary and secondary FACP cross-connected for redundancy. During a fire alarm on the 5th floor, the primary FACP fails. What must happen automatically to prevent the system from losing detection and notification capability?",
+      "text": "How does RA 9514 connect sprinkler water flow to alarm initiation?",
       "options": [
         {
           "id": "a",
-          "text": "The secondary FACP assumes automatic control of all SLC circuits, NAC circuits, and monitoring transmission via automatic switchover relays"
+          "text": "Water flow equal to or greater than flow from a single automatic sprinkler operates an alarm initiation device."
         },
         {
           "id": "b",
-          "text": "The secondary FACP becomes active only after a security officer manually presses a 'switchover' button on the annunciator panel"
+          "text": "Water flow is never connected to alarms."
         },
         {
           "id": "c",
-          "text": "Both FACPs transmit the alarm signal independently to two separate central stations to ensure at least one receives the signal"
+          "text": "Water flow only affects plumbing records."
         },
         {
           "id": "d",
-          "text": "The fire alarm system automatically reverts to a simplified conventional mode until the primary FACP is repaired"
+          "text": "Water flow silences all notification devices."
         }
       ],
       "correct_option_id": "a",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Manual switchover introduces delay and human error risk during an active emergency, defeating the purpose of redundancy.",
-        "c": "Dual transmission to separate central stations causes confusion and doubles response overhead without improving safety.",
-        "d": "Reverting to conventional mode is not a standard design practice and would degrade the system's diagnostic capability.",
-        "correct": "Per best practice in critical facilities, switchover must be automatic and hardwired (relay-based) to ensure continuity without human intervention. Manual switchover creates delay risk during active emergency; dual transmission causes confusion; reverting to conventional mode would lose device granularity.",
-        "takeaway": "Automatic switchover in redundant FACP designs is critical for uninterrupted fire detection and notification in high-availability facilities such as hospitals."
-      },
+      "rationale": "RA 9514 requires a sprinkler-system alarm initiation device to operate when water flow is equal to or greater than flow from a single automatic sprinkler.",
       "explanation": "Manual switchover introduces delay and human error risk during an active emergency, defeating the purpose of redundancy. Dual transmission to separate central stations causes confusion and doubles response overhead without improving safety. Reverting to conventional mode is not a standard design practice and would degrade the system's diagnostic capability. Per best practice in critical facilities, switchover must be automatic and hardwired (relay-based) to ensure continuity without human intervention. Manual switchover creates delay risk during active emergency; dual transmission causes confusion; reverting to conventional mode would lose device granularity. Automatic switchover in redundant FACP designs is critical for uninterrupted fire detection and notification in high-availability facilities such as hospitals.",
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Design Considerations and Best Practices' (Redundancy)",
       "bloom_level": "analyze",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-005-03-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-05-06T15:39:32.656657+00:00",
+      "updated_at": "2026-07-20T01:13:27.075342+00:00",
       "content_hash": "sha256:13fedae2d694275d5eead9f6bed241a26f168a67bcf3e33ef258ab253ede8500"
     },
     {
       "question_id": "cf4a2210-32a0-4d01-b016-604f580930c9",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A conventional fire alarm system in a small Philippine building has five manual pull stations, each connected to a separate zone input on the FACP. When one pull station is activated, what information is displayed on the FACP annunciator panel?",
+      "text": "What does Salvan identify as a fire alarm control panel function?",
       "options": [
         {
           "id": "a",
-          "text": "'Manual Station 4 - North Hallway' with exact device location, including floor and room number"
+          "text": "Furnish power, receive initiating-device signals, transmit signals, and supervise circuitry."
         },
         {
           "id": "b",
-          "text": "'Zone 4 Manual' with the zone number, but not the specific station or location within that zone"
+          "text": "Store cleaning supplies."
         },
         {
           "id": "c",
-          "text": "'Building Alarm - Evacuate Now' with no zone information, requiring manual verification of the alarm source"
+          "text": "Compute room air changes only."
         },
         {
           "id": "d",
-          "text": "'Manual Alarm Detected - Location Unknown' and a prompt to check all pull stations, which can delay response time"
+          "text": "Select kitchen hood styles."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This describes addressable-system behavior; conventional systems do not pinpoint specific device addresses.",
-        "c": "This describes addressable systems; conventional systems do not provide 'Location Unknown' uncertainty.",
-        "d": "Conventional systems do not require responders to check multiple stations; they identify the zone.",
-        "correct": "Conventional systems display the zone number and type of device (in this case, manual station) but not the specific device or its location. The responder must know which stations are in Zone 4 or use building knowledge to locate them. This is the limitation of conventional architecture.",
-        "takeaway": "Conventional systems display zone-level information; addressable systems display device-level information. This difference is fundamental to system design and determines response granularity."
-      },
+      "rationale": "Salvan defines the control unit or fire alarm panel as furnishing power, receiving initiating-device signals, transmitting signals, and supervising circuitry.",
       "explanation": "This describes addressable-system behavior; conventional systems do not pinpoint specific device addresses. This describes addressable systems; conventional systems do not provide 'Location Unknown' uncertainty. Conventional systems do not require responders to check multiple stations; they identify the zone. Conventional systems display the zone number and type of device (in this case, manual station) but not the specific device or its location. The responder must know which stations are in Zone 4 or use building knowledge to locate them. This is the limitation of conventional architecture. Conventional systems display zone-level information; addressable systems display device-level information. This difference is fundamental to system design and determines response granularity.",
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Signaling Protocols: Conventional vs. Addressable' (Conventional Systems)",
       "bloom_level": "understand",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-005-03-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-05-06T15:39:32.913931+00:00",
+      "updated_at": "2026-07-20T01:13:27.072083+00:00",
       "content_hash": "sha256:22b5af9c177c926fe5ada368dbdfadc5ba1edf6b71bcd3db3bebcee94bb67fde"
     },
     {
       "question_id": "71be8b09-fc96-479a-a6cd-4c6dd8f1500d",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A fire alarm system in a high-rise building uses a central Fire Command Center (FCC) with an FACP annunciator panel. The FCC's phone line to the fire department and the panel's ground connection are both bonded to the building's main electrical service entrance per NFPA 72. However, the building's generator (used during power outages) is grounded to a separate ground rod installed on the opposite side of the site. What risk does this create for fire alarm operation, and what is the correct remediation?",
+      "text": "Where does RA 9514 place manual fire alarm boxes in source-safe terms?",
       "options": [
         {
           "id": "a",
-          "text": "The generator will overload the fire alarm UPS; solution: install a larger battery backup system to handle the increased load during generator operation"
+          "text": "In the natural path of escape near exits, readily accessible, unobstructed, and visible."
         },
         {
           "id": "b",
-          "text": "A ground potential difference develops between the FACP ground and generator frame, creating noise on low-voltage SLC circuits and potentially causing false alarms or signal loss; solution: bond the generator ground to the same point as the FACP ground (main service entrance)"
+          "text": "Hidden in service cabinets for aesthetics."
         },
         {
           "id": "c",
-          "text": "The fire alarm system will switch to battery mode prematurely when the generator activates; solution: reprogram the FACP to recognize generator operation as a valid power source, ensuring seamless transition"
+          "text": "Only in private offices."
         },
         {
           "id": "d",
-          "text": "The generator frequency (60 Hz) will interfere with FACP polling logic; solution: install a frequency converter between the generator and the FACP to mitigate interference"
+          "text": "Only beside mechanical equipment."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Generator power does not overload the UPS; UPS sizing is independent of grounding issues.",
-        "c": "Generator frequency is standard 60 Hz and does not need conversion; FACP polling is not frequency-dependent.",
-        "d": "The FACP should recognize generator output as normal AC power; manual programming is not required.",
-        "correct": "Per NFPA 72 Section 12.7, all equipment (main service, generator, FACP, UPS) must bond to a single-point ground at the main service entrance. A separate generator ground creates ground potential difference (voltage offset), injecting noise into sensitive low-voltage SLC circuits. This is a leading cause of detector polling failures and false alarms in Philippine installations.",
-        "takeaway": "Single-point grounding at the main service entrance is mandatory for all building systems to prevent ground loops and noise in fire alarm circuits. Generator grounding is a common oversight in Philippine installations."
-      },
+      "rationale": "RA 9514 states that manual fire alarm boxes are placed in the natural path of escape near exits and must be accessible, unobstructed, and visible.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Circuit Wiring and Fire-Rated Cable Requirements' (Grounding and Bonding)",
       "bloom_level": "analyze",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-005-03-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.074548+00:00",
       "content_hash": "sha256:116658b8df0d735a05a302ef25754ea08e2d0caff6bf4b24e9a26b397bf2cd43"
     },
     {
       "question_id": "ff975d4c-bed4-4689-804c-87fc940779c0",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "During fire alarm system commissioning in a Philippine building, the engineer tests the transmission of an alarm signal to the central station using a SIA (Subscriber Interface Adapter) connected to an analog telephone line. The test alarm is transmitted, but the central station does not acknowledge receipt within 60 seconds. Per NFPA 72 Section 26.3, what action must the FACP automatically execute?",
+      "text": "What is required when a required fire alarm system is out of service for more than four hours in a twenty-four-hour period?",
       "options": [
         {
           "id": "a",
-          "text": "The FACP must switch to a cellular data connection to retransmit the signal immediately, ensuring redundancy in communication paths."
+          "text": "Notify the C/MFM within twenty-four hours and assign fire watch until restored."
         },
         {
           "id": "b",
-          "text": "The FACP must retransmit the alarm signal at 90 seconds if no acknowledgment is received, and continue retransmitting until acknowledged"
+          "text": "Ignore the condition if the building is occupied."
         },
         {
           "id": "c",
-          "text": "The FACP must disable the SIA and lock out the monitoring path until a technician manually resets the interface, to prevent false alarms."
+          "text": "Turn off all exit signs."
         },
         {
           "id": "d",
-          "text": "The FACP must sound a local audible alarm and wait for manual confirmation before attempting retransmission, to ensure human oversight."
+          "text": "Replace the fire alarm with ordinary doorbells."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The FACP does not automatically switch transmission methods; SIA should attempt retransmission on the same line unless specifically programmed otherwise.",
-        "c": "Disabling the monitoring path on timeout defeats the purpose of redundancy; retransmission is required.",
-        "d": "Local alarms and manual confirmation are not standard NFPA 72 procedures for monitoring transmission failures.",
-        "correct": "NFPA 72 Section 26.6.3.1 requires supervisory signals every 60s max, trouble retry after 90s; alarm transmission retries per communicator protocol. The system continues retransmitting until the central station acknowledges or the alarm is manually reset.",
-        "takeaway": "Automatic retransmission per NFPA 72 ensures that if the initial signal is missed, the central station receives subsequent attempts. This is a critical reliability feature for off-site monitoring."
-      },
+      "rationale": "RA 9514 requires C/MFM notification within twenty-four hours and fire watch until the fire alarm system is returned to service.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Central Station Monitoring and Emergency Communication'",
       "bloom_level": "analyze",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-005-03-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.072922+00:00",
       "content_hash": "sha256:6ccd1578dacfac7c601668f63b9bea3c0f1617d2aad280996e44c1b2a02a173d"
     },
     {
       "question_id": "4323bba3-b5b7-4402-b442-e67e2965ffe0",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A voice evacuation system in a 15-story office building is programmed to announce different messages based on the fire detection zone. A fire is detected on the 7th floor; the system is configured to announce to floors 6–9 and the ground floor (assembly area). What is the primary advantage of this zone-level message strategy over a building-wide announcement?",
+      "text": "Which set of fire alarm initiation means is listed by RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "It reduces transmission bandwidth and saves money on speaker amplifiers, which is a minor consideration compared to safety."
+          "text": "Manual initiation, automatic detection, and extinguishing-system operation."
         },
         {
           "id": "b",
-          "text": "It allows the system to provide targeted instructions (e.g., 'Use the west stairwell') to evacuation zones while preventing unnecessary alarm announcements in unaffected areas, reducing panic and confusion"
+          "text": "Paint color, signage, and furniture arrangement."
         },
         {
           "id": "c",
-          "text": "It complies with NFPA 72 requirements; building-wide announcements are prohibited in buildings over 15 stories, which is a misinterpretation of the code."
+          "text": "Only verbal reports."
         },
         {
           "id": "d",
-          "text": "It enables the voice system to prioritize the alarm floor, ensuring messages are delivered faster, which is a secondary benefit rather than the primary advantage."
+          "text": "Only sprinkler pipe size."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Cost savings are a secondary benefit; the primary safety advantage is reducing panic and confusion.",
-        "c": "NFPA 72 does not prohibit building-wide announcements; zone-specific is best practice, not a code mandate.",
-        "d": "Zone selection does not affect message delivery speed; transmission is equally fast for any zone configuration.",
-        "correct": "Zone-specific voice evacuation per NFPA 72 Section 24 allows targeted guidance and prevents building-wide panic. Occupants in unaffected zones are not alarmed by unnecessary announcements, reducing confusion and exit congestion. Floors 6–9 can be instructed to evacuate; floor 5 and below are notified but may remain in place depending on building procedures.",
-        "takeaway": "Zone-level voice evacuation is a best practice for multi-story buildings, enabling life-safety-enhancing targeted instructions while preventing unnecessary alarm in unaffected areas."
-      },
+      "rationale": "RA 9514 lists manual initiation, automatic detection, and extinguishing-system operation as fire alarm initiation means.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Mass Notification Systems (MNS) and Voice Evacuation'",
       "bloom_level": "analyze",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-005-03-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.067517+00:00",
       "content_hash": "sha256:141c81070e3445efa5a48f5de8f7871fc128b1744cf5b5896422388946d49967"
     },
     {
       "question_id": "8608c8fa-9190-4378-b0af-5bbf17fdd7e5",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A multi-story office building's FACP power supply is a 16-amp circuit at 220V supplied from the building's main panel. The NAC circuits serving audible and visual alarms are calculated to draw 3 amps at full alarm condition. A Mass Notification System (MNS) with voice evacuation requires an additional 1.5 amps during alarm activation. Which statement best describes the power supply constraint and recommended solution?",
+      "text": "How does RA 9514 connect sprinkler water flow to alarm initiation?",
       "options": [
         {
           "id": "a",
-          "text": "The total alarm load (4.5 amps) is within the 16-amp capacity; no upgrade is needed, assuming no additional loads are added"
+          "text": "Water flow equal to or greater than flow from a single automatic sprinkler operates an alarm initiation device."
         },
         {
           "id": "b",
-          "text": "The 16-amp supply cannot support simultaneous activation of all NAC circuits and the MNS; a dedicated UPS or power expansion module is required to prevent appliances from operating at reduced voltage"
+          "text": "Water flow is never connected to alarms."
         },
         {
           "id": "c",
-          "text": "The FACP should disable the voice evacuation system if NAC load exceeds 8 amps to conserve power, ensuring critical systems remain operational"
+          "text": "Water flow only affects plumbing records."
         },
         {
           "id": "d",
-          "text": "The 220V Philippine power standard provides sufficient headroom; 16 amps can safely deliver 8 amps of simultaneous load, assuming no other systems are drawing power"
+          "text": "Water flow silences all notification devices."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Superficial capacity analysis misses transient peaks, future load growth, and the need for headroom per NFPA design practices.",
-        "c": "Disabling voice evacuation during alarm would defeat the purpose of integrated communications; the solution is to expand power, not remove capability.",
-        "d": "The 220V standard does not provide special headroom; current limitations are absolute regardless of voltage.",
-        "correct": "While 4.5 amps appears to fit within 16 amps, NFPA requirements and best practice dictate accounting for peak transient loads, battery charging during standby, and future expansion. A 16-amp supply may not sustain simultaneous NAC + MNS activation reliably; a dedicated UPS or power expansion module ensures adequate supply and prevents voltage sag that would reduce appliance output.",
-        "takeaway": "Power supply sizing must account for simultaneous peak loads and provide design margin; undersized supplies cause appliance failures during alarm, compromising life safety."
-      },
+      "rationale": "RA 9514 requires a sprinkler-system alarm initiation device to operate when water flow is equal to or greater than flow from a single automatic sprinkler.",
       "explanation": "Superficial capacity analysis misses transient peaks, future load growth, and the need for headroom per NFPA design practices. Disabling voice evacuation during alarm would defeat the purpose of integrated communications; the solution is to expand power, not remove capability. The 220V standard does not provide special headroom; current limitations are absolute regardless of voltage. While 4.5 amps appears to fit within 16 amps, NFPA requirements and best practice dictate accounting for peak transient loads, battery charging during standby, and future expansion. A 16-amp supply may not sustain simultaneous NAC + MNS activation reliably; a dedicated UPS or power expansion module ensures adequate supply and prevents voltage sag that would reduce appliance output. Power supply sizing must account for simultaneous peak loads and provide design margin; undersized supplies cause appliance failures during alarm, compromising life safety.",
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Notification Appliance Circuits (NACs)' (NAC Load Calculations warning box)",
       "bloom_level": "analyze",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-005-03-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-05-06T15:39:32.784489+00:00",
+      "updated_at": "2026-07-20T01:13:27.068437+00:00",
       "content_hash": "sha256:000059922eccebd6a159af4a9bde662c8d67f8ae8b9e89ee8360b7b4223e8bba"
     },
     {
       "question_id": "2730480c-ceec-472f-9164-2fca6afb8941",
       "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
       "topic_id": "359fa6cc-83cd-497d-b62b-b80398e11e08",
-      "text": "A 12-story hotel in Cebu uses water flow switches on each floor to integrate the sprinkler system with the fire alarm. How many separate addressable device addresses must be assigned to the water flow switches, and why?",
+      "text": "What does Salvan identify as a fire alarm control panel function?",
       "options": [
         {
           "id": "a",
-          "text": "One address per floor (12 addresses total), because all sprinkler zones feed into one common alarm signal, simplifying the monitoring process"
+          "text": "Furnish power, receive initiating-device signals, transmit signals, and supervise circuitry."
         },
         {
           "id": "b",
-          "text": "One address for the entire sprinkler system (1 address), since the water flow is coordinated centrally, reducing the need for multiple addresses"
+          "text": "Store cleaning supplies."
         },
         {
           "id": "c",
-          "text": "One address per water flow switch (12 addresses total), because each sprinkler zone requires an independent device address and status monitoring per RA 9514 Section 2.3.2"
+          "text": "Compute room air changes only."
         },
         {
           "id": "d",
-          "text": "Water flow switches are not addressable devices; they are hardwired only to a dedicated relay output on the FACP, which does not require individual addressing"
+          "text": "Select kitchen hood styles."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Each floor's sprinkler system is independent; one shared address would prevent zone-level status monitoring.",
-        "b": "Central coordination does not eliminate the need for individual device addresses; each zone must be monitored.",
-        "d": "Modern addressable systems integrate water flow switches as devices on the SLC; hardwiring is not the current practice for multi-zone systems.",
-        "correct": "Per the article and RA 9514 Section 2.3.2, each sprinkler zone's water flow switch is assigned a unique addressable device address. This allows the FACP to monitor each zone independently and verify that water flow (and hence sprinkler activation) is coordinated with fire alarm notification for that specific zone.",
-        "takeaway": "Water flow switches in addressable fire alarm systems are individual addressable devices, enabling zone-by-zone sprinkler and alarm coordination."
-      },
+      "rationale": "Salvan defines the control unit or fire alarm panel as furnishing power, receiving initiating-device signals, transmitting signals, and supervising circuitry.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-03.mdx, Section 'Wiring Strategies in Dense Urban Buildings' (Sprinkler Water Flow Switches)",
       "bloom_level": "apply",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-005-03-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.063175+00:00",
       "content_hash": "sha256:c9a2686d375e87f82f33bba4cfeebbb59b3339deb37be4844bf924524f8671c0"
     }
   ]

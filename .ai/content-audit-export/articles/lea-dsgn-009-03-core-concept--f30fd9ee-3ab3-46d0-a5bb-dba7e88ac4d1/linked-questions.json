@@ -8,36 +8,37 @@
       "question_id": "1b4ebef4-e13b-4222-a029-08e695dd3352",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "A designer proposes a small bathroom space of 8 m² with 2.7 m ceiling height. The bathroom will use mechanical exhaust ventilation. What is the minimum required exhaust rate per PD 1096?",
+      "text": "A room has no artificial ventilation. What is the source-safe PD 1096 window-opening check?",
       "options": [
         {
           "id": "a",
-          "text": "50 m³/hour (based on 2 ACH)"
+          "text": "Total free opening area at least 10 percent of floor area, with a minimum of 1.00 sqm, opening to an allowed exterior/open space condition."
         },
         {
           "id": "b",
-          "text": "216 m³/hour (based on 10 ACH)"
+          "text": "Exactly 4 ACH for every occupancy."
         },
         {
           "id": "c",
-          "text": "272 m³/hour (based on 12.5 ACH)"
+          "text": "No window is needed if the ceiling is painted white."
         },
         {
           "id": "d",
-          "text": "No requirement; bathrooms do not need ventilation."
+          "text": "Only a decorative transom is required."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "2 ACH is insufficient for a bathroom; odors and moisture will not be adequately removed.",
-        "c": "12.5 ACH exceeds the 10 ACH requirement.",
-        "d": "Bathrooms have specific ventilation requirements per code for health and comfort.",
-        "correct": "Bathrooms and toilets require 10 ACH minimum per PD 1096 Section 809 for odor and moisture removal. Required exhaust = 8 m² × 2.7 m × 10 ACH = 216 m³/hour.",
-        "takeaway": "Toilet/bathroom = 10 ACH. This is higher than offices (4–6 ACH) because odor and moisture must be removed quickly. Another high-risk category to memorize."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "PD 1096 sets the 10 percent floor-area rule and minimum 1.00 sqm for rooms without artificial ventilation.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 809",
@@ -51,43 +52,44 @@
       "model_id": "ALE-DSGN-009-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.271219+00:00",
       "content_hash": "sha256:301f8ef781b5aa7c15e360800cbf31b9a92ac1e7d873fe8e0c01a30b062c426c"
     },
     {
       "question_id": "8739e93a-3096-4a05-8f25-d31039dca3a0",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "What is the minimum required air change rate (ACH) for a hospital operating room per PD 1096?",
+      "text": "For a toilet, bath, laundry, or similar room, what source-safe window-area rule was checked?",
       "options": [
         {
           "id": "a",
-          "text": "6 ACH, which is often considered insufficient for maintaining sterile conditions"
+          "text": "Not less than one-twentieth of the floor area under the checked PD 1096 text."
         },
         {
           "id": "b",
-          "text": "10 ACH, a rate that may be suitable for other types of rooms but not for operating rooms"
+          "text": "Exactly the same as a hospital operating room ACH."
         },
         {
           "id": "c",
-          "text": "15–20 ACH"
+          "text": "Always 15 ACH regardless of source."
         },
         {
           "id": "d",
-          "text": "8 ACH, which is below the recommended standard for operating rooms"
+          "text": "No opening requirement if a door has louvers."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "6 ACH is appropriate for general hospital wards, not operating rooms.",
-        "b": "10 ACH is insufficient for OR requirements.",
-        "d": "8 ACH is lower than the operating room minimum.",
-        "correct": "PD 1096 Section 809 specifies PD 1096 does not specify ACH by room type for ORs; use per-person rates per Section 811(b)(4). This high rate is necessary to remove surgical aerosols, blood particulates, and other biohazards. Additionally, operating rooms require positive pressure (room pressure slightly above hallway) to prevent infiltration of contaminated hallway air.",
-        "takeaway": "Operating room = 15–20 ACH (highest standard). This is a critical distinction from regular hospitals (6 ACH). The higher rate and positive pressure control make OR the most stringent ventilation requirement in typical buildings."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked PD 1096 text states a one-twentieth floor-area rule for these rooms.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 809",
@@ -101,30 +103,30 @@
       "model_id": "ALE-DSGN-009-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.275692+00:00",
       "content_hash": "sha256:de50d0d106c97d608fcb43dda5a3146c60d8b8e54506cd2c3577cfd4febcbab8"
     },
     {
       "question_id": "026dbd32-132a-4f04-bae8-2c07d077502a",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "A classroom has a floor area of 250 m² and floor-to-ceiling height of 3.3 m. The design specification is 6 ACH. Calculate the required fresh air volume for this space.",
+      "text": "Which ceiling-height statement is source-safe for habitable rooms under the checked PD 1096 text?",
       "options": [
         {
           "id": "a",
-          "text": "4,950 m³/hour"
+          "text": "Artificial ventilation: not less than 2.40 m; natural ventilation: not less than 2.70 m."
         },
         {
           "id": "b",
-          "text": "5,400 m³/hour"
+          "text": "Every storey must be exactly 3.00 m floor-to-floor."
         },
         {
           "id": "c",
-          "text": "6,600 m³/hour"
+          "text": "No ceiling-height rule applies if windows are large."
         },
         {
           "id": "d",
-          "text": "8,250 m³/hour"
+          "text": "Only roof pitch controls ceiling height."
         }
       ],
       "correct_option_id": "a",
@@ -133,11 +135,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "5,400 m³/hour would be 250 × 3.3 × 6.5 ACH; slightly high but close.",
-        "c": "6,600 m³/hour would be 250 × 3.3 × 8 ACH; this would use the upper bound of classroom ACH (8), not the specified 6.",
-        "d": "8,250 m³/hour is excessive for a classroom.",
-        "correct": "Fresh air volume = 250 m² × 3.3 m × 6 ACH = 4,950 m³/hour per PD 1096 Section 809 (classroom ventilation requirement is 5–8 ACH; this design uses 6 ACH, within range).",
-        "takeaway": "This calculation reinforces the formula. Pay close attention to floor area, ceiling height, and the specific ACH (not a range, but the design value specified)."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source distinguishes artificial and natural ventilation ceiling-height minimums.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 809",
@@ -151,43 +154,44 @@
       "model_id": "ALE-DSGN-009-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.274920+00:00",
       "content_hash": "sha256:94979ead21d86dab901034784f74987367c59d30deffc88e59e5562857466be8"
     },
     {
       "question_id": "374bfab9-9c6b-423d-bc50-190154227392",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "A hospital operating room is 60 m² with 3.5 m ceiling height and a 18 ACH specification with positive pressure and HEPA filtration. An HVAC engineer proposes an air handling unit that supplies 3,500 m³/hour fresh air. Is this adequate?",
+      "text": "What is the checked PD 1096 vent-shaft minimum?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, 3,500 m³/hour exceeds the OR minimum."
+          "text": "Horizontal area at least 1.00 sqm per meter of shaft height, never less than 1.00 sqm, with least dimension at least 600 mm."
         },
         {
           "id": "b",
-          "text": "No, the minimum requirement is 3,780 m³/hour (60 × 3.5 × 18)."
+          "text": "Any narrow slot is acceptable."
         },
         {
           "id": "c",
-          "text": "No, OR requirements are 15 ACH, not 18; a lower capacity would suffice."
+          "text": "A shaft is required only for offices."
         },
         {
           "id": "d",
-          "text": "Yes, as long as the system includes HEPA filtration and positive pressure control."
+          "text": "A 150 mm pipe always satisfies the rule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "3,500 m³/hour is less than 3,780 m³/hour; it does not exceed the requirement.",
-        "c": "The specification states 18 ACH, not 15. The design must meet the specified (or required) rate, not a lower minimum.",
-        "d": "HEPA filtration and positive pressure are necessary but do not reduce the ACH requirement. All three factors (volume, filtration, pressure) must be satisfied simultaneously.",
-        "correct": "Required OR volume = 60 m² × 3.5 m × 18 ACH = 3,780 m³/hour. The proposed 3,500 m³/hour is insufficient by 280 m³/hour. The shortfall may compromise surgical aerosol removal and positive pressure maintenance.",
-        "takeaway": "Operating room is unforgiving. Every component—volume, filtration, pressure—must be correctly specified and maintained. An undersized fan (3,500 vs. 3,780 m³/hour) is a design error."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "PD 1096 gives both area and least-dimension checks for vent shafts.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 809",
@@ -201,43 +205,44 @@
       "model_id": "ALE-DSGN-009-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.276512+00:00",
       "content_hash": "sha256:aabac8a64559dfe9ce94b8bc1fd568b294a8931b75fc5658a596f14de7ea94d3"
     },
     {
       "question_id": "c8f0d129-879c-4191-a08b-bd342722c463",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "A designer is evaluating two ventilation strategies for a small office (150 m², 3.0 m ceiling height): Strategy A uses mechanical ventilation with 5 ACH; Strategy B uses 100% natural ventilation (operable windows only). According to PD 1096, what is the primary design consideration for Strategy B?",
+      "text": "What is the checked minimum for an air duct or intake opening to a street or court?",
       "options": [
         {
           "id": "a",
-          "text": "Natural ventilation provides better air quality than mechanical; no concern, as it inherently meets all health standards"
+          "text": "Unobstructed cross-sectional area not less than 0.30 sqm and minimum dimension of 300 mm."
         },
         {
           "id": "b",
-          "text": "Natural ventilation must achieve 5 ACH through windows; the space must have operable window area ≥ 5% of floor area."
+          "text": "A purely symbolic grille on the elevation."
         },
         {
           "id": "c",
-          "text": "Natural ventilation is not permitted for offices; mechanical is mandatory due to strict air quality regulations"
+          "text": "A 50 mm gap under the door."
         },
         {
           "id": "d",
-          "text": "Natural ventilation requires no calculation; it depends on climate and window placement, which are assumed to be optimal"
+          "text": "A 1.50 m corridor width."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Natural ventilation quality depends on outdoor air quality and building design. In urban areas with high pollution, mechanical filtration may be superior.",
-        "c": "Natural ventilation is permitted and preferred in low-rise buildings and tropical climates. It is energy-efficient and occupant-preferred.",
-        "d": "While climate and placement matter greatly, the code specifies a minimum opening size (5% floor area). Design must meet this baseline.",
-        "correct": "Strategy B requires operable window area ≥ 5% of floor area (1:20 ratio) per PD 1096 Section 809. For 150 m², this is 7.5 m² of operable windows minimum. Additionally, the design must ensure cross-ventilation or stack effect to achieve the desired ACH (in this case, approximately 4–5 ACH is typical for natural ventilation in tropical climates with wind). Natural ventilation is effective but less controllable than mechanical systems.",
-        "takeaway": "Natural ventilation is a valid strategy but must satisfy the 1:20 operable window requirement. The effectiveness depends on building orientation, window placement (cross-ventilation), and outdoor wind patterns. For tropical Philippines, natural ventilation is often the preferred baseline with mechanical backup for peak loads."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked PD 1096 text states the 0.30 sqm and 300 mm dimensions for ducts or intakes.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 809",
@@ -251,43 +256,44 @@
       "model_id": "ALE-DSGN-009-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.272339+00:00",
       "content_hash": "sha256:4c2f35ba962434fac87ac98a18683c79b9b104d1239c8bc52b02e45af7922586"
     },
     {
       "question_id": "cb9d1ef1-2a57-4d02-bfcc-2c5df4ef7c28",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "A hospital has a general ward space of 200 m² with 3.0 m ceiling height. A proposed mechanical ventilation system will supply 3,600 m³/hour of fresh air. Is this adequate per PD 1096?",
+      "text": "When does the checked PD 1096 text require artificial ventilation for equipment rooms?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, 3,600 m³/hour exceeds the minimum for a hospital ward."
+          "text": "For rooms or spaces housing industrial or heating equipment to prevent excessive hot or polluted air."
         },
         {
           "id": "b",
-          "text": "No, the minimum requirement is 3,600 m³/hour (exactly adequate, assuming 6 ACH)."
+          "text": "Only after a tenant complains."
         },
         {
           "id": "c",
-          "text": "No, the minimum requirement is higher (approximately 4,800 m³/hour for 8 ACH)."
+          "text": "Only for naturally ventilated bedrooms."
         },
         {
           "id": "d",
-          "text": "Yes, hospital wards have no specific ACH requirement if mechanical ventilation is used."
+          "text": "Only when a building has more than four elevations."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While technically adequate, the answer is misleading; 3,600 m³/hour exactly meets the requirement, not exceeds it.",
-        "c": "8 ACH would yield 4,800 m³/hour, but hospital wards are specified at 6 ACH, not 8 (which is classroom level).",
-        "d": "Hospital wards have a specific requirement: 6 ACH per PD 1096, regardless of mechanical or natural ventilation.",
-        "correct": "Hospital ward requirement = 6 ACH per PD 1096 Section 809. Required volume = 200 m² × 3.0 m × 6 ACH = 3,600 m³/hour. The proposed system supplies exactly 3,600 m³/hour, which is adequate (technically sufficient, though not exceeded).",
-        "takeaway": "Hospital ward ≠ operating room. Ward = 6 ACH (routine patient care), OR = 15–20 ACH (sterile surgical environment). This distinction is frequently tested."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "PD 1096 requires artificial means of ventilation for rooms or spaces housing industrial or heating equipment.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 809",
@@ -301,43 +307,44 @@
       "model_id": "ALE-DSGN-009-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.278773+00:00",
       "content_hash": "sha256:593a5db47e7dc0c48f19d7fdac821d39d27595f4b27060d06f9e039ccf3add6e"
     },
     {
       "question_id": "f10bb46e-247e-4795-aa3c-cbaa9f0c7db5",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "A restaurant kitchen has a floor area of 120 m² and floor-to-ceiling height of 3.0 m. According to RA 9514, what is the minimum required fresh air volume for this space?",
+      "text": "A problem supplies 6 ACH for a room. What is the correct calculation method?",
       "options": [
         {
           "id": "a",
-          "text": "1,800 m³/hour"
+          "text": "Floor area multiplied by ceiling height gives room volume; room volume multiplied by ACH gives air volume per hour."
         },
         {
           "id": "b",
-          "text": "3,600 m³/hour"
+          "text": "Floor area divided by window count."
         },
         {
           "id": "c",
-          "text": "5,400 m³/hour"
+          "text": "Ceiling height multiplied by facade width only."
         },
         {
           "id": "d",
-          "text": "7,200 m³/hour"
+          "text": "ACH cannot be calculated from supplied room volume."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1,800 m³/hour would be 5 ACH—insufficient for a kitchen (needs 15 ACH).",
-        "b": "3,600 m³/hour would be 10 ACH—less than the 15 ACH kitchen requirement.",
-        "d": "7,200 m³/hour would be 20 ACH—excessive for a standard kitchen (20 ACH is reserved for operating rooms).",
-        "correct": "Kitchen exhaust requirement = 10 ACH per PD 1096 Section 811(b)(2) for artificial ventilation. Fresh air volume = floor area × ceiling height × ACH = 120 m² × 3.0 m × 15 ACH = 5,400 m³/hour.",
-        "takeaway": "The formula is: Volume (m³/hour) = Floor area (m²) × Ceiling height (m) × ACH. For kitchens, ACH = 15. Memorize this calculation pattern; it appears multiple times on the ALE."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "ACH arithmetic is valid when the ACH value is supplied; the audit avoids claiming unchecked minimum ACH values.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "RA 9514 Section 701",
@@ -351,44 +358,44 @@
       "model_id": "ALE-DSGN-009-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.273298+00:00",
       "content_hash": "sha256:879ec9dda74ea1010aa3e3d8d386a356e60bb6a671d4c0adf4aba823fb9cd5a8"
     },
     {
       "question_id": "e82cd0e5-fed5-43b8-9eea-4e94bd17a44e",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "Compare three space types in a mixed-use building: (A) office 500 m² with 3.0 m height, (B) restaurant kitchen 100 m² with 3.5 m height, (C) hospital ward 300 m² with 3.2 m height. Rank these spaces by their required fresh air volume (from highest to lowest), assuming code minimum ACH for each.",
+      "text": "Why were hospital operating-room ACH claims removed from this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Office (7,500 m³/hr) > Kitchen (5,250 m³/hr) > Hospital ward (5,760 m³/hr)"
+          "text": "They were not supported by the checked local source packet for this article."
         },
         {
           "id": "b",
-          "text": "Kitchen (5,250 m³/hr) > Hospital ward (5,760 m³/hr) > Office (7,500 m³/hr)"
+          "text": "Operating rooms do not need ventilation."
         },
         {
           "id": "c",
-          "text": "Kitchen (5,250 m³/hr) = Hospital ward (5,760 m³/hr) < Office (7,500 m³/hr)"
+          "text": "PD 1096 repeals all health requirements."
         },
         {
           "id": "d",
-          "text": "Office (7,500 m³/hr) > Hospital ward (5,760 m³/hr) > Kitchen (5,250 m³/hr)"
+          "text": "The topic is only about facade color."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The ranking is correct, but the office volume should be higher than hospital ward.",
-        "b": "Kitchen should be lowest, not middle.",
-        "c": "Kitchen and hospital ward are not equal; kitchen is lower volume.",
-        "d": "Correct ranking and volumes. This demonstrates that total fresh air requirement depends on both ACH (space type hazard) and floor area (occupancy load).",
-        "correct": "Calculations: Office = 500 × 3.0 × 5 ACH = 7,500 m³/hr (using 5 as mid-range of 4–6 ACH). Hospital ward = 300 × 3.2 × 6 ACH = 5,760 m³/hr. Kitchen = 100 × 3.5 × 15 ACH = 5,250 m³/hr. Ranking: 7,500 > 5,760 > 5,250. The office has the largest total volume despite lower ACH because it has the largest floor area. The kitchen has the highest ACH but smallest floor area, yielding the lowest total volume.",
-        "takeaway": "This question tests synthesis: combining occupancy type (ACH) with geometric scale (floor area) to determine total ventilation load. Large low-ACH spaces can require more total air than small high-ACH spaces. Designers must consider both factors when sizing HVAC systems."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The local-first protocol removes unsupported specialist claims unless their source packet is checked.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 809, RA 9514 Section 701",
@@ -402,43 +409,44 @@
       "model_id": "ALE-DSGN-009-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.274152+00:00",
       "content_hash": "sha256:7ed1f8d083500f95fea9a5f6d183e908bffb001859ccb16358ceb76851c5d0d4"
     },
     {
       "question_id": "f16ce4d4-fe14-4537-9763-45af1afd4e4e",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "According to PD 1096, what is the minimum natural ventilation opening requirement (in terms of floor area) for a space that relies on natural ventilation?",
+      "text": "Which review sequence is source-safe for natural ventilation?",
       "options": [
         {
           "id": "a",
-          "text": "2% of floor area, which is typically insufficient for spaces requiring significant air exchange"
+          "text": "Identify room use, confirm no artificial ventilation, calculate required opening area, and verify the opening discharges to an allowed condition."
         },
         {
           "id": "b",
-          "text": "5% of floor area (1:20 ratio)"
+          "text": "Choose an arbitrary ACH and ignore windows."
         },
         {
           "id": "c",
-          "text": "10% of floor area (1:10 ratio), ensuring adequate air flow and compliance with health standards"
+          "text": "Check only paint reflectance."
         },
         {
           "id": "d",
-          "text": "15% of floor area, often used in designs prioritizing maximum natural ventilation and energy efficiency"
+          "text": "Start with furniture layout and stop there."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "2% is too low; insufficient for natural ventilation effectiveness.",
-        "c": "10% (1:10 ratio) is the requirement for daylighting, not ventilation. Note: these are separate metrics.",
-        "d": "15% exceeds typical code requirements.",
-        "correct": "PD 1096 Rule VIII Section 804(c) specifies a minimum of 1/20 of floor area must be operable window area for natural ventilation. This opening size provides sufficient fresh air exchange through natural stack effect and wind-driven ventilation.",
-        "takeaway": "Remember: 1:10 for light (daylighting), 1:20 for ventilation (natural opening). These are distinct metrics and often appear together on the ALE."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked PD 1096 rule ties natural ventilation to opening area and allowed exterior/open space conditions.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 809",
@@ -452,43 +460,44 @@
       "model_id": "ALE-DSGN-009-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.278024+00:00",
       "content_hash": "sha256:4145633354ff1c732679c2505aba32a32e4d8c3f44611db764317da7020297a9"
     },
     {
       "question_id": "5b95661b-26d6-48ee-82c8-2a7932a9b1ee",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
       "topic_id": "48141e55-aac6-4183-bd18-b98e27235fcb",
-      "text": "What is the minimum required air change rate (ACH) for a standard office space per PD 1096?",
+      "text": "What is the best summary of source-safe IAQ work in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "2–3 ACH, which is typically used for residential spaces rather than office environments"
+          "text": "Use PD 1096 Rule VIII checks first, then use ACH only when the value is supplied or sourced."
         },
         {
           "id": "b",
-          "text": "3 ACH minimum"
+          "text": "Memorize generic ACH values without citations."
         },
         {
           "id": "c",
-          "text": "8–10 ACH, often applied in specialized industrial settings requiring higher ventilation"
+          "text": "Treat all occupancies as identical."
         },
         {
           "id": "d",
-          "text": "12–15 ACH, suitable for laboratory or cleanroom environments with stringent air quality needs"
+          "text": "Replace all ventilation checks with a green label."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "2–3 ACH is too low for occupied spaces; CO₂ and odors accumulate.",
-        "c": "8–10 ACH is excessive for standard offices and increases energy consumption unnecessarily.",
-        "d": "12–15 ACH is reserved for high-risk or high-load spaces (kitchens, operating rooms).",
-        "correct": "PD 1096 Section 811(b)(1) specifies minimum 3 ACH for office spaces. This range is sufficient to remove CO₂ buildup and typical indoor pollutants in occupied office environments.",
-        "takeaway": "Office = 4–6 ACH. This is baseline. Any space with higher occupancy or contamination risk will have higher requirements."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The article anchors IAQ to checked PD 1096 requirements and avoids unsupported ACH shortcuts.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1096 Section 811",
@@ -502,7 +511,7 @@
       "model_id": "ALE-DSGN-009-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.555548+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.277277+00:00",
       "content_hash": "sha256:9a88ce1bc5b03c4183fdc8f7007cc39a822a6648f09945ef733fa4628fed5b5d"
     }
   ]

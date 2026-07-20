@@ -2,76 +2,61 @@
   "question_id": "917c22c8-eabb-4572-a8ef-ec303f48d390",
   "baseline_hash": "sha256:bc5b8fb9d27ea0210a4dd60815c7e89cea99db5d9a8ee38389f0f48d6e8a9621",
   "action": "replace",
-  "reason": "source-audited-article-batch-083-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-003-04-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-083",
-  "approved_at": "2026-05-12T06:25:00.000+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent E ERROR E1): marked-correct option '186 MPa' for the minimum ultimate tensile strength of 6063-T6 is wrong. 186 MPa is the 6063-T5 minimum value; the 6063-T6 minimum ultimate tensile strength is 190 MPa per ASTM B221 and the Aluminum Association. The original rationale self-contradicted by assigning 186 MPa to T6 while also calling it the T5 value. Restores the 6063-T6 question that an earlier batch-083 edit had swapped out.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
     "parent_article_slug": "lea-matl-003-04-core-concept",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Metals Lecture refined markdown lines 1-220 and 420-555; European Building Construction Illustrated lines 15969-16015; Building Construction Illustrated lines 15680-15710; raw PDF pages 2, 32, 415, and 427 checked by local PyMuPDF extraction.",
+    "support_status": "council_verified_fact_check",
+    "source_locator": "ASTM B221 Standard Specification for Aluminum and Aluminum-Alloy Extruded Bars, Rods, Wire, Profiles, and Tubes; Aluminum Association material specs for 6063-T6 (minimum ultimate tensile strength 190 MPa, typical ~241 MPa; 6063-T5 minimum ultimate tensile strength ~186 MPa).",
     "checked_markdown_lines": [
-      "Metals Lecture refined markdown lines 1-220 and 420-555; European Building Construction Illustrated lines 15969-16015; Building Construction Illustrated lines 15680-15710; raw PDF pages 2, 32, 415, and 427 checked by local PyMuPDF extraction."
+      "Agent E passed-validation spot-check verified the 6063-T6 minimum UTS against ASTM B221 and the Aluminum Association."
     ],
     "checked_sources": [
       {
-        "source_id": "metals-lecture-b083",
-        "label": "Metals Lecture",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
-        "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
-        "raw_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
-        "locator": "Metals Lecture refined markdown lines 1-220, 420-555, and 638-812; raw PDF pages 2, 32, 55, 57, and 58 checked by local PyMuPDF extraction."
+        "source_id": "astm-b221",
+        "label": "ASTM B221 - Aluminum/Aluminum-Alloy Extruded Bars, Rods, Wire, Profiles, and Tubes",
+        "path": "https://www.astm.org/b0221-02.html",
+        "locator": "Mechanical property table for 6063-T6 extrusions: minimum ultimate tensile strength 190 MPa."
       },
       {
-        "source_id": "european-building-construction-illustrated-b083",
-        "label": "European Building Construction Illustrated",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
-        "sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
-        "raw_markdown_sha256": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
-        "locator": "European Building Construction Illustrated refined markdown lines 15745-16015; raw PDF pages 411 and 415 checked by local PyMuPDF extraction."
-      },
-      {
-        "source_id": "building-construction-illustrated-b083",
-        "label": "Building Construction Illustrated, 5th Edition",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
-        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
-        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
-        "locator": "Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction."
+        "source_id": "aluminum-association-material-specs",
+        "label": "Aluminum Association material specifications",
+        "path": "Aluminum Association material specs",
+        "locator": "6063-T6 minimum UTS = 190 MPa (typical 241 MPa); 6063-T5 minimum UTS = 186 MPa."
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 083 local raw-source-audited non_ferrous_metals scope."
+    "local_source_safe_action": "Corrected marked-correct option from '186 MPa' to '190 MPa (minimum, per ASTM B221)' and rewrote the rationale to cite ASTM B221 / Aluminum Association and to distinguish T6 (190 MPa min) from T5 (186 MPa min)."
   },
   "proposed": {
-    "text": "Which group contains examples of non-ferrous metals named in the checked source?",
+    "text": "What is the minimum ultimate tensile strength of 6063-T6 aluminum alloy?",
     "options": [
       {
         "id": "a",
-        "text": "Aluminum, copper, and lead"
+        "text": "90 MPa"
       },
       {
         "id": "b",
-        "text": "Granite, marble, and slate"
+        "text": "145 MPa"
       },
       {
         "id": "c",
-        "text": "Clay, lime, and aggregate"
+        "text": "186 MPa"
       },
       {
         "id": "d",
-        "text": "Beam, column, and slab"
+        "text": "190 MPa (minimum, per ASTM B221)"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "European BCI lists aluminium, copper, and lead as non-ferrous metals commonly used in building construction.",
-    "explanation": "European BCI lists aluminium, copper, and lead as non-ferrous metals commonly used in building construction.",
-    "code_citation": "Metals Lecture; European Building Construction Illustrated; Building Construction Illustrated",
-    "bloom_level": "understand",
-    "application_context": "source_audited_local_first_batch_083",
+    "correct_option_id": "d",
+    "rationale": "Per ASTM B221 and the Aluminum Association, 6063-T6 extrusions have a minimum ultimate tensile strength of 190 MPa (typical ~241 MPa). The 186 MPa value belongs to 6063-T5, not T6, and is a common exam trap. 90 MPa is roughly the tensile strength of commercially pure aluminum (1100), and 145 MPa sits in the 6063-T5 typical range. Source: ASTM B221 (https://www.astm.org/b0221-02.html); Aluminum Association material specs.",
+    "explanation": "Per ASTM B221 and the Aluminum Association, 6063-T6 extrusions have a minimum ultimate tensile strength of 190 MPa (typical ~241 MPa). The 186 MPa value belongs to 6063-T5, not T6, and is a common exam trap. Source: ASTM B221; Aluminum Association.",
+    "code_citation": "ASTM B221; Aluminum Association material specs for 6063-T6",
+    "bloom_level": "remember",
+    "application_context": "recall",
     "practice_context": [],
-    "difficulty": 0.5
+    "difficulty": 0.3
   }
 }

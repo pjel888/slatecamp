@@ -1,11 +1,45 @@
 {
   "question_id": "a7870827-248f-4086-9b36-b0031ca7a13d",
   "baseline_hash": "sha256:14c837c9c0c12b8970943e7d88724f338139e1ac086b0d250e42966a6a16da12",
-  "reason": "Batch 008 local source audit aligned linked question a7870827-248f-4086-9b36-b0031ca7a13d with the repaired Location on Property and Exterior Walls article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-008",
-  "approved_at": "2026-05-10T18:13:43+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited Section 1607 plastic skylight on a flat commercial roof, which is off-scope for an article limited to PD 1096 Rule VII Sec. 704 (Location on Property and Exterior Walls). Replaced with a Sec. 704-grounded question on protected exterior-wall opening percentage per storey.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "chunk_id": "source-pack-pd-1096-irr-chunk-0001",
+        "section_locator": "Rule VII / Section 704.1 Location on Property"
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704"
+  },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
-    "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft."
+    "text": "Under PD 1096 Rule VII, Section 704, when an exterior wall opening requires protection, what is the maximum percentage of the total wall area in any storey that may be occupied by protected openings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "25 percent of the wall area in that storey"
+      },
+      {
+        "id": "b",
+        "text": "33 percent of the wall area in that storey"
+      },
+      {
+        "id": "c",
+        "text": "50 percent of the wall area in that storey"
+      },
+      {
+        "id": "d",
+        "text": "75 percent of the wall area in that storey"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "Section 704 limits the sum of protected openings in an exterior wall in any storey to a maximum of 50 percent of the total wall area in that storey. The wall-area basis is per storey, not the whole building.",
+    "explanation": "The 50 percent limit applies only to protected openings and only when the other location and fire-resistance conditions are satisfied. It is not a blanket permission to open any wall.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704"
   }
 }

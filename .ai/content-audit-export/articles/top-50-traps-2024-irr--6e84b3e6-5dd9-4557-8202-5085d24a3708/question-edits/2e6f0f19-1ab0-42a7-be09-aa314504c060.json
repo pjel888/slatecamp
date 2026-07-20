@@ -2,9 +2,9 @@
   "question_id": "2e6f0f19-1ab0-42a7-be09-aa314504c060",
   "baseline_hash": "sha256:cb4b91c26bf61edb408a20306273a1fb77265cefc07a6afb8ab6c8ea08bc44a5",
   "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
     "parent_article_slug": "top-50-traps-2024-irr",
@@ -23,41 +23,28 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "Which item cannot be part of a BP 344 accessible route?",
+    "text": "Trap #46 addresses vertical clearance for accessible parking. What minimum vertical clearance must accessible parking spaces provide, and why does this differ from standard parking clearance?",
     "options": [
       {
-        "id": "a",
-        "text": "Turnstile or escalator"
+        "id": "A",
+        "text": "2100 mm minimum — the same as standard parking, since accessible spaces do not require additional clearance"
       },
       {
-        "id": "b",
-        "text": "Doorway"
+        "id": "B",
+        "text": "2200 mm minimum — 100 mm more than standard parking, to allow a person standing beside the car to open the door fully"
       },
       {
-        "id": "c",
-        "text": "Clear floor space"
+        "id": "C",
+        "text": "2300 mm minimum — required exclusively for accessible spaces to accommodate raised-roof vans"
       },
       {
-        "id": "d",
-        "text": "Ramp"
+        "id": "D",
+        "text": "2500 mm minimum — providing generous clearance for all vehicle types used by PWDs, including high-roof vans"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "BP 344 excludes turnstiles, revolving doors, escalators, stairways, steps, and impediments from the accessible route.",
-    "explanation": "BP 344 excludes turnstiles, revolving doors, escalators, stairways, steps, and impediments from the accessible route.",
-    "code_citation": "BP 344 2024 IRR, accessible route definition",
-    "bloom_level": "apply",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Top 50 Traps: 2024 IRR",
-      "LEA Accessibility Code Review"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-top-50-traps-2024-irr-010"
+    "correct_option_id": "C",
+    "rationale": "Trap #46: accessible parking requires 2300 mm minimum vertical clearance — exclusively for raised-roof vans. Trap #46 in the article. Standard parking structures typically provide 2100–2200 mm vertical clearance. BP 344 IRR requires a minimum of 2300 mm vertical clearance specifically at accessible parking spaces to accommodate raised-roof vans (wheelchair-accessible vehicles with elevated rooflines). This is not required throughout the entire parking structure — only at the accessible spaces. An accessible parking level at 2100 mm standard clearance would physically prevent raised-roof van access to the only spaces intended for the users who need them most.",
+    "explanation": "Accessible parking: 2300 mm min vertical clearance (vs. standard 2100 mm) — raised-roof vans require the additional headroom.",
+    "code_citation": "BP 344 IRR, Parking section; Trap #46"
   }
 }

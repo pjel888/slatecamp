@@ -1,97 +1,76 @@
 {
   "question_id": "94ce568e-aef9-4b01-9517-0da5e088d45f",
-  "baseline_hash": "sha256:0c12f313575251c4e9cc687370e76f80b423434f66933d072eeb10a03d1f1133",
+  "baseline_hash": "sha256:8e6525f80eee2d0ab258d0a5660f8a2eeed36bb3a5014bdc32eb9b58ede752b2",
   "action": "replace",
-  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-plan-003-01-what-you-need-to-know-for-the-lea.",
-  "approved_by": "codex-local-source-audit-batch-021",
-  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "reason": "council-remediation-2026-07-20/agent-P override. The currently linked question's marked-correct option B claims 'the 30-day notice may be waived and resettlement is not required' for danger-zone occupants. This is factually wrong: RA 7279 Section 28 requires notice (at least 30 days) and consultation for ALL evictions involving underprivileged and homeless citizens, including danger-area occupants, and Section 29 requires LGUs with NHA to provide relocation. The fabricated '3-meter danger zone threshold' is also not in RA 7279 (it derives from PD 1067's urban easement).",
+  "approved_by": "agent-P-planning-council-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
     "parent_article_slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "PD 957 IRR, BP 220 Revised IRR, and RA 7279 housing provisions checked from local raw PDFs",
-    "checked_markdown_lines": [
-      "PD 957 refined markdown lines 100-240",
-      "BP 220 refined markdown lines 130-560",
-      "RA 7279 refined markdown lines 70-190"
-    ],
-    "checked_sources": [
+    "support_status": "externally_verified_rewrite",
+    "source_locator": "RA 7279 Sections 28 (procedural safeguards) and 29 (LGU + NHA relocation duty). PD 1067 Article 51 supplies the 3m urban easement separately. Article body lea-plan-003-01 normalized.md last paragraph: 'Do not import... eviction-distance rules unless a separately audited source is provided.'",
+    "external_sources": [
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.pdf",
-        "sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
-        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
-        "locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+        "citation": "RA 7279 Sections 28 and 29 (UDHA)",
+        "url": "https://www.officialgazette.gov.ph/1992/03/24/republic-act-no-7279/"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.md",
-        "sha256": "sha256:5a118e6b9e678d495ffac7a715d08deb0787e5905105fe25b9847cb226af7080",
-        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
-        "locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+        "citation": "DILG Memorandum Circular No. 2010-134 (relocation prior to eviction/demolition)",
+        "url": "https://dilg.gov.ph/PDF_File/issuances/memo_circulars/DILG-Memo_Circular-201178-212e8b4ad3.pdf"
       },
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
-        "sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
-        "source_id": "bp220-revised-irr-2008-local",
-        "locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
-        "sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
-        "source_id": "bp220-revised-irr-2008-local",
-        "locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
-      },
-      {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
-        "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
-        "source_id": "ra7279-urban-development-housing-act-local",
-        "locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
-        "sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
-        "source_id": "ra7279-urban-development-housing-act-local",
-        "locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
+        "citation": "PD 1067 Article 51",
+        "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_1067_1976.html"
       }
-    ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    ]
   },
   "proposed": {
-    "text": "Which item is NOT one of the checked RA 7279 socialized-housing beneficiary criteria?",
+    "text": "An informal settler community occupies the banks of an estero, an area listed as a danger area under RA 7279. The LGU initiates eviction. Which statement correctly describes the procedural requirements?",
     "options": [
       {
         "id": "a",
-        "text": "Must be a Filipino citizen"
+        "text": "Eviction may proceed immediately without notice because the area is a danger zone."
       },
       {
         "id": "b",
-        "text": "Must be underprivileged and homeless"
+        "text": "Notice and other Section 28 safeguards may be waived because the area is a danger zone."
       },
       {
         "id": "c",
-        "text": "Must not own real property"
+        "text": "Danger-area listing permits eviction, but RA 7279 Section 28 safeguards (including at least 30-day notice, consultation on resettlement, presence of LGU officials) and Section 29 relocation duties still apply."
       },
       {
         "id": "d",
-        "text": "Must have paid two years of installments"
+        "text": "Danger-area occupants lose all RA 7279 rights and must self-relocate at their own expense."
       }
     ],
-    "correct_option_id": "d",
+    "correct_option_id": "c",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The checked RA 7279 criteria do not include a two-year installment-payment threshold.",
-    "explanation": "That unsupported buyer-cancellation concept was removed because its raw source was not audited.",
-    "code_citation": "RA 7279 refined markdown lines 167-179",
-    "bloom_level": "apply",
+    "rationale": {
+      "a": "Wrong. Even danger-area evictions require notice and the other Section 28 safeguards.",
+      "b": "Wrong. The Section 28 safeguards are not waived by danger-area status. Notice, consultation, presence of officials, and adequate relocation remain mandatory.",
+      "c": "Correct. RA 7279 Section 28 lists occupancy of danger areas as one of the lawful grounds for eviction, but the same section prescribes procedural safeguards (at least 30 days notice, consultation on resettlement, presence of LGU officials, proper identification, regular hours/good weather, limits on heavy equipment, proper police uniforms, and adequate relocation). Section 29 obliges LGUs, with the NHA, to provide relocation sites with basic services and livelihood access.",
+      "d": "Wrong. RA 7279 does not strip danger-area occupants of all rights; relocation duty rests on the LGU and NHA, not on the occupants.",
+      "correct": "RA 7279 Section 28 + Section 29: danger-area status permits eviction but does NOT waive the procedural safeguards or the government's relocation obligation.",
+      "takeaway": "Do not waive notice or resettlement for danger-area occupants. The RA 7279 framework requires safeguards plus LGU/NHA relocation in all evictions of underprivileged and homeless citizens."
+    },
+    "explanation": "Article body lea-plan-003-01 explicitly excludes 'eviction-distance rules' from its scope; the statutory framework in RA 7279 Sections 28-29 requires safeguards and relocation regardless of danger-area status.",
+    "code_citation": "RA 7279 Sections 28 and 29",
+    "bloom_level": "understand",
     "application_context": "code_interpretation",
     "practice_context": [
-      "housing law",
-      "ra7279"
+      "RA 7279",
+      "danger areas",
+      "eviction safeguards"
     ],
-    "difficulty": 0.66,
-    "is_assessment": false,
-    "model_id": "BATCH-021-housing-009"
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
   }
 }

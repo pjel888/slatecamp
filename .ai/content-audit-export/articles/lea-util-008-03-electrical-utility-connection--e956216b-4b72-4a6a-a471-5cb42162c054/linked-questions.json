@@ -8,37 +8,31 @@
       "question_id": "1d8db920-dec8-4a55-89d4-f89578ee0edc",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A tight urban lot in Manila is zoned for mixed-use development. The site plan shows electrical easement (1.5 m corridor), water main easement (1.5 m corridor), sewer easement (2.0 m corridor), and telecommunications easement (1.0 m corridor) all overlapping due to space constraints. What design constraint does easement restriction impose, and what is the required mitigation action?",
+      "text": "What should be coordinated first with the local electric utility?",
       "options": [
         {
           "id": "a",
-          "text": "Easements reduce buildable floor area but do not restrict excavation or vertical construction; developer may proceed with foundation design as planned, provided that all utility lines are clearly marked and protected"
+          "text": "Service entrance point, service run, service voltage, metering location, and utilization voltage."
         },
         {
           "id": "b",
-          "text": "Easements restrict building placement, excavation, and tree planting within corridor zones without utility company authorization; early coordination meeting with Meralco, Manila Water/Maynilad, MWSS, PLDT, and Globe required to confirm easement locations per Land Registration Authority guidelines (2020)"
+          "text": "Interior paint color and furniture layout only."
         },
         {
           "id": "c",
-          "text": "Overlapping easements on tight lots require abandonment of one utility service; water supply typically abandoned in favor of electrical and telecommunications, which are considered more critical for urban development"
+          "text": "Room reverberation time only."
         },
         {
           "id": "d",
-          "text": "Easement corridors may be stacked vertically if conduits are separated by fireproofing material; horizontal clearance restrictions do not apply to multi-level structures, allowing for innovative design solutions"
+          "text": "Card-reader PIN length only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignores deed restrictions on easement zones; unauthorized excavation or structural placement violates property code and utility agreements.",
-        "c": "Incorrectly suggests abandoning water service; all utilities are essential. Multi-source utilities provide resilience, not options for selective abandonment.",
-        "d": "Vertical stacking does not eliminate horizontal separation requirements; fireproofing is insufficient remedy. Conduit routing must comply with minimum horizontal separation distances regardless of vertical arrangement.",
-        "correct": "Property Rights Code and Land Registration Authority guidelines restrict building and excavation within easement zones. Early pre-design coordination meetings with all utilities are critical to confirm feasible routing and confirm easement locations before committing to site plan.",
-        "takeaway": "Easement conflicts on constrained urban sites require early utility coordination with written confirmations of easement locations and routing feasibility before design finalization to avoid costly redesigns."
-      },
+      "rationale": "Service entrance point, service run, service voltage, metering location, and utilization voltage. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Utility Easements and Right-of-Way section",
       "bloom_level": "analyze",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-008-03-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.983128+00:00",
       "content_hash": "sha256:5dfc34272a5946bbc9d6f04204c2311f585251eb723b28ff6defe3814f449f17"
     },
     {
       "question_id": "35873514-26be-410d-b3c3-8567ae29c6ca",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A 25-story office tower requires a 250 kW electrical load. The developer applied for Meralco service during design phase (month 0). Construction is estimated to complete in month 18. Based on typical lead times in Meralco Service Policy (2023), in which construction month should transformer pad/vault construction be scheduled?",
+      "text": "Which information belongs on PEC electrical location and site plans?",
       "options": [
         {
           "id": "a",
-          "text": "Month 2; transformer installation must begin immediately after load approval to avoid critical path delays, ensuring no interruptions in the construction timeline"
+          "text": "Service drop, service equipment, nearest utility pole, meter location, service entrance conductors and conduits, and clearances."
         },
         {
           "id": "b",
-          "text": "Month 5; application processing (5–8 weeks) plus load survey (2–3 weeks) completed; transformer pad construction should proceed after site fill completion to coordinate with Meralco installation crew"
+          "text": "Only architectural perspective views."
         },
         {
           "id": "c",
-          "text": "Month 12; transformer pad construction should occur late in project to minimize site occupation time by Meralco crews, reducing potential site congestion"
+          "text": "Only acoustic fabric colors."
         },
         {
           "id": "d",
-          "text": "Month 15; transformer installation immediately before final inspection to ensure equipment is energized only during occupancy testing phase, aligning with project commissioning"
+          "text": "Only PV payback assumptions."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Attempting transformer installation before load approval and site preparation is impractical and creates coordination conflicts.",
-        "c": "Delaying to month 12 risks final inspection delays if transformer is not energized and tested; late scheduling may conflict with occupancy milestones.",
-        "d": "Month 15 timing for transformer installation is too late; does not allow adequate testing and troubleshooting before occupancy.",
-        "correct": "Meralco lead time is 5–8 weeks for commercial application processing plus 2–3 weeks for load survey = approximately 2–3 months. Transformer pad constructed after excavation/fill (month 3–4) with installation starting month 4–5. This aligns with typical structural phase timing.",
-        "takeaway": "Coordination of utility lead times with construction schedule requires reverse-scheduling from occupancy date; pad preparation timing must allow Meralco installation crews adequate access and completion window."
-      },
+      "rationale": "Service drop, service equipment, nearest utility pole, meter location, service entrance conductors and conduits, and clearances. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Utility Application Process and Lead Times section",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-008-03-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.997340+00:00",
       "content_hash": "sha256:dea787bcefe9bfbae7d5a203f1b5c0df9fdd3f4850d7f177522b7b4574e4db1b"
     },
     {
       "question_id": "201db60a-4a97-47f1-875a-bec084a9bde0",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "What is the critical difference between Manila Water/Maynilad water service lateral sizing for a 30-unit residential building versus a 120-unit commercial condominium building?",
+      "text": "What working-space rule is source-safe for service equipment?",
       "options": [
         {
           "id": "a",
-          "text": "30-unit building uses 25 mm maximum; 120-unit building uses 50 mm minimum; both require pressure tanks for adequate flow, which is a common requirement for maintaining water pressure"
+          "text": "Provide access and working space, with width at least equipment width or 750 mm, whichever is greater."
         },
         {
           "id": "b",
-          "text": "30-unit building uses 19–25 mm copper or PVC pipe; 120-unit building uses 50–75 mm copper or PVC pipe to accommodate higher peak demand per Manila Water Technical Requirements (2023)"
+          "text": "Use the space for storage if the door can still close."
         },
         {
           "id": "c",
-          "text": "Both buildings use same 25 mm service lateral; the 120-unit building compensates with dual meter installations and pressure boosters, which is a strategy to manage higher demand"
+          "text": "Set all switchboards directly behind fixed furniture."
         },
         {
           "id": "d",
-          "text": "Sizing depends on floor elevation only; residential and commercial occupancy are not distinguishing factors per MWSS code, which is a misunderstanding of the code's application"
+          "text": "Measure only the ceiling color above the panel."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrectly conflates sizing with requirement for pressure tanks; tanks are optional based on pressure availability, not lateral diameter.",
-        "c": "Undersizes commercial building demand; suggests dual meters as workaround when single appropriately-sized lateral is standard practice.",
-        "d": "Ignores occupancy type and density, which are primary factors in demand-based lateral sizing per water utility engineering standards.",
-        "correct": "Manila Water Technical Requirements (2023) explicitly size laterals based on occupancy load: 19–25 mm for residential up to 50 units; 50–75 mm for commercial buildings exceeding 50 units. Sizing reflects peak demand patterns.",
-        "takeaway": "Service lateral sizing directly impacts system pressure, flow capacity, and utility approval timelines; proper sizing during design prevents capacity shortfalls and costly retrofits."
-      },
+      "rationale": "Provide access and working space, with width at least equipment width or 750 mm, whichever is greater. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Water Supply Connection section",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-008-03-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.996497+00:00",
       "content_hash": "sha256:920bae5ea4a95e3ea6955f56468c711fcf0b7a3b088a20f9aaa193ccc9c3acd9"
     },
     {
       "question_id": "906391d3-0a38-432a-870d-d098bdd69c1e",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "During the construction phase, a project manager is scheduling utility connections for a mixed-use development. The structural frame is completed; final building finishes and occupancy are planned for 12 weeks. In what sequence should utility lateral installations be coordinated based on standard construction phases?",
+      "text": "What does premises wiring include under the checked PEC definition?",
       "options": [
         {
           "id": "a",
-          "text": "All utility laterals (water, sewer, gas, telecommunications) should be installed simultaneously during final finishing phase to expedite occupancy, which may lead to site congestion and coordination issues"
+          "text": "Power, lighting, control, and signal circuit wiring from the service point or source to outlets."
         },
         {
           "id": "b",
-          "text": "Transformer pad construction after site excavation, water and sewer laterals during rough excavation, conduit during structural phase, final connections during occupancy phase per ALE-UTIL-008-03 coordination guidance"
+          "text": "Only exterior landscaping lines."
         },
         {
           "id": "c",
-          "text": "Telecommunications conduit installed first to reserve best routing; electrical transformer and laterals second; water and sewer last before final inspection, which may not align with standard construction practices"
+          "text": "Only non-electrical furniture systems."
         },
         {
           "id": "d",
-          "text": "Utility installations should be deferred until after building occupancy to avoid construction delays and site congestion, which is not a standard practice"
+          "text": "Only acoustical wall panels."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Simultaneous installation during finishing phase creates congestion, delays building completion, and prevents proper testing before occupancy.",
-        "c": "Prioritizes telecommunications without considering structural dependencies; water and sewer require foundation/excavation coordination that occurs earlier in construction sequence.",
-        "d": "Deferring utilities post-occupancy is impractical, unsafe, and violates building codes requiring utilities at occupancy.",
-        "correct": "The sequencing follows construction logic: transformer pad after fill completion, water/sewer laterals during rough excavation, service entrance room framing before final connections. This sequence minimizes conflicts and allows parallel activities.",
-        "takeaway": "Coordination timing must align with construction sequence phases to minimize rework and optimize schedule while ensuring regulatory compliance at each inspection stage."
-      },
+      "rationale": "Power, lighting, control, and signal circuit wiring from the service point or source to outlets. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Coordination During Design and Construction section",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-008-03-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.988990+00:00",
       "content_hash": "sha256:b5b9e5d3c47f4d3cc40a8e8f69334e34e6ed922fd7729bced8dbf9dd21a452a3"
     },
     {
       "question_id": "b9419883-0cbb-4284-888c-1d599ae785a7",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A building design accommodates both Manila Gas piped natural gas service (high-pressure inlet 8 bar) and backup LPG bulk tank supply. How must the regulator and meter systems be configured to safely isolate gas supplies and prevent interflow?",
+      "text": "Why reserve electrical equipment spaces early?",
       "options": [
         {
           "id": "a",
-          "text": "Single regulator downstream of both sources; manifold valve combines flows at meter inlet for simplified operation, reducing installation complexity"
+          "text": "Switchboards, emergency equipment spaces, electrical closets, and panel areas need coordinated architectural space and access."
         },
         {
           "id": "b",
-          "text": "Separate meter and regulator for each gas source with check valves to prevent reverse flow; each source piped to common appliance line with pressure relief valve monitoring combined output"
+          "text": "Because all equipment can be moved after occupancy."
         },
         {
           "id": "c",
-          "text": "Piped natural gas installed at low pressure (20 mbar); LPG tank pressure reduced to match via identical regulator setting; single meter measures combined consumption, ensuring accurate billing"
+          "text": "Because utility coordination is unrelated to the plans."
         },
         {
           "id": "d",
-          "text": "Manila Gas supply priority only; LPG tank isolated by solenoid valve active only when main pressure drops below 5 bar; single regulator and meter for appliance delivery, maintaining system efficiency"
+          "text": "Because signal systems never need space."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Single regulator cannot safely manage different gas types and pressure sources; manifold without check valves permits dangerous interflow and pressure instability.",
-        "c": "Piping identical regulators for different fuel types at different source pressures is unsafe; natural gas and LPG have different regulator specifications per Manila Gas standards.",
-        "d": "Solenoid-based switching creates hazards and lacks redundant pressure control; does not comply with dual-supply safety requirements in Manila Gas or PD 1571 standards.",
-        "correct": "Safety codes (PD 1571, Manila Gas Standards 2022) require separate metering and pressure control for each fuel source with non-return check valves to prevent cross-contamination. Combined output monitored by pressure relief valve ensures system safety.",
-        "takeaway": "Dual-fuel gas supply requires separate, dedicated infrastructure for each source with multiple safety devices to prevent cross-contamination and ensure regulatory compliance during dual-fuel operation."
-      },
+      "rationale": "Switchboards, emergency equipment spaces, electrical closets, and panel areas need coordinated architectural space and access. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Gas Supply Infrastructure section",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-UTIL-008-03-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.990932+00:00",
       "content_hash": "sha256:bba00858c0ace123c539c985bb6cf50260bece845b4dca7bd2d9d4989eded3de"
     },
     {
       "question_id": "f8ced8ba-5edd-4765-863e-853a333c4d9a",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "Which Philippine regulatory code or standard governs the installation and safety requirements for piped natural gas service in buildings?",
+      "text": "What should be coordinated first with the local electric utility?",
       "options": [
         {
           "id": "a",
-          "text": "Bureau of Fire Protection Code (BFP Code 2020); covers all gas supply types including LPG and natural gas, with specific sections on emergency procedures"
+          "text": "Service entrance point, service run, service voltage, metering location, and utilization voltage."
         },
         {
           "id": "b",
-          "text": "PD 1571 Liquefied Petroleum Gas Safety Code (1978) adapted for piped gas; Manila Gas Safety Standards (2022) for piped natural gas service requirements"
+          "text": "Interior paint color and furniture layout only."
         },
         {
           "id": "c",
-          "text": "National Electrical Code (NEC) alone; gas service falls under electrical code jurisdiction for metering and pressure regulation, ensuring compliance with electrical safety standards"
+          "text": "Room reverberation time only."
         },
         {
           "id": "d",
-          "text": "MWSS Code (2008); covers all utility connections including sewerage, water, and gas, with detailed guidelines for installation and maintenance"
+          "text": "Card-reader PIN length only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "BFP Code covers fire safety aspects but does not address pressure regulation, meter sizing, or appliance connection standards specific to piped gas systems.",
-        "c": "NEC focuses on electrical safety; gas service has separate code authority and technical standards not addressed by electrical codes.",
-        "d": "MWSS Code addresses sewerage and water; gas infrastructure governed by different authorities (PD 1571, BFP, and Manila Gas).",
-        "correct": "PD 1571 provides safety framework adapted for piped gas; Manila Gas Safety Standards (2022) specify technical requirements for natural gas service, meter rooms, pressure regulation, and appliance connections.",
-        "takeaway": "Understanding applicable safety and technical standards for each utility is essential for proper design, permitting, and compliance verification."
-      },
+      "rationale": "Service entrance point, service run, service voltage, metering location, and utilization voltage. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Gas Supply Infrastructure section",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-008-03-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.992014+00:00",
       "content_hash": "sha256:6b685cb09421d4f20156293a7a0e38b6e39d2bc4a3ec9363687b254247508227"
     },
     {
       "question_id": "145d2f61-4b09-421d-9e13-082675486e66",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "What is the standard installation location for a Meralco electrical metering cabinet in relation to building structure and finished grade level?",
+      "text": "Which information belongs on PEC electrical location and site plans?",
       "options": [
         {
           "id": "a",
-          "text": "Mounted on building interior wall at height 0.6 m above floor for ease of meter reader access, which is not standard practice for exterior accessibility"
+          "text": "Service drop, service equipment, nearest utility pole, meter location, service entrance conductors and conduits, and clearances."
         },
         {
           "id": "b",
-          "text": "Located at property line or building face, between 1.2–1.8 m above finished ground level, accessible to Meralco personnel per Meralco Installation Standards (2023)"
+          "text": "Only architectural perspective views."
         },
         {
           "id": "c",
-          "text": "Installed at ground level (0.0 m) to allow direct ground connection of service lateral without overhead conduit routing, which is not compliant with standard height requirements"
+          "text": "Only acoustic fabric colors."
         },
         {
           "id": "d",
-          "text": "Positioned 2.5 m above finished grade on building facade to protect from moisture and unauthorized access, although this height exceeds typical accessibility standards"
+          "text": "Only PV payback assumptions."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Interior wall location does not provide Meralco meter reader access without building entry authorization; outside wall placement is standard.",
-        "c": "Ground level installation creates drainage and safety hazards; minimum 1.2 m height is mandatory for accessibility and equipment protection.",
-        "d": "Excessive height (2.5 m) makes meter reading difficult and is not specified by Meralco standards; reduces accessibility without corresponding safety benefit.",
-        "correct": "Meralco Installation Standards (2023) specify metering cabinet placement at property line or building face between 1.2–1.8 m above finished ground level. This height accommodates meter reader ergonomics and visibility.",
-        "takeaway": "Specific meter cabinet height requirements are critical for utility operations; non-compliance may result in Meralco refusal to energize service and project occupancy delays."
-      },
+      "rationale": "Service drop, service equipment, nearest utility pole, meter location, service entrance conductors and conduits, and clearances. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Electrical Utility Connection section",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-008-03-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.984615+00:00",
       "content_hash": "sha256:bb780f2ef5c3edcd5d1066b01006c6b93b3d0473f0c1904e945229430727b13c"
     },
     {
       "question_id": "29f18069-dc27-4ba3-91fe-ea9231c5864f",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A project site plan shows water main, electrical conduit, and gas line running parallel beneath the loading area. The electrical and gas lines must cross the sewer line. What are the required separation distances for: (1) electrical and sewer parallel run, and (2) electrical and gas parallel run per design codes?",
+      "text": "What working-space rule is source-safe for service equipment?",
       "options": [
         {
           "id": "a",
-          "text": "(1) 0.3 m horizontal, (2) 0.5 m horizontal; both measured center-to-center per PD 1067, ensuring minimal interference"
+          "text": "Provide access and working space, with width at least equipment width or 750 mm, whichever is greater."
         },
         {
           "id": "b",
-          "text": "(1) 0.5 m horizontal, (2) 0.3 m horizontal with gas in protective rigid conduit if closer; both per PD 1067 and NEC standards"
+          "text": "Use the space for storage if the door can still close."
         },
         {
           "id": "c",
-          "text": "(1) 1.5 m horizontal, (2) 0.5 m horizontal; electrical prioritized above sewer and gas per utility code hierarchy, which is not standard practice"
+          "text": "Set all switchboards directly behind fixed furniture."
         },
         {
           "id": "d",
-          "text": "(1) 0.5 m horizontal, (2) 1.5 m horizontal; sewer and gas require greater separation due to contamination and safety risk, which is a common misconception"
+          "text": "Measure only the ceiling color above the panel."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Reverses separation distances; undersizes sewer separation which requires more protection from electromagnetic interference.",
-        "c": "Oversizes both separations; prioritizes sewer over gas without proper technical justification; site constraints often require tighter spacing.",
-        "d": "Incorrectly emphasizes sewer-gas separation over electrical-gas separation; electrical EMI is primary concern for gas line integrity.",
-        "correct": "MWSS Standards (2021) and NEC specify 0.5 m separation between electrical and sewer; PD 1067 and NEC standards specify 0.3 m for electrical and gas lines (gas in conduit if closer). These prevent EMI and safety hazards.",
-        "takeaway": "Proper separation distances prevent cross-contamination, electromagnetic interference, and maintenance access issues; verification by consulting engineer required in utility coordination plans."
-      },
+      "rationale": "Provide access and working space, with width at least equipment width or 750 mm, whichever is greater. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Site Utilities Layout and Separation Distances section",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-008-03-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.988017+00:00",
       "content_hash": "sha256:02bc9523af477475a4ce8eaf6489f991642562d4fdf94fe7d5fc5143f21825a8"
     },
     {
       "question_id": "8edd38cb-b494-470e-b357-2641cb994486",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "What is the primary function of a backflow preventer in a building's water supply connection, and which standard mandates its installation?",
+      "text": "What does premises wiring include under the checked PEC definition?",
       "options": [
         {
           "id": "a",
-          "text": "Reduces water pressure at the meter to prevent burst pipes; mandated by Bureau of Fire Protection Code, ensuring safety in high-pressure scenarios."
+          "text": "Power, lighting, control, and signal circuit wiring from the service point or source to outlets."
         },
         {
           "id": "b",
-          "text": "Prevents contaminated water from flowing back into the public water main; mandated by PD 1067 Water Code and current MWSS standards"
+          "text": "Only exterior landscaping lines."
         },
         {
           "id": "c",
-          "text": "Filters sediment from incoming water before it reaches the building supply; optional enhancement per MWSS design recommendations, often used in areas with high sediment levels."
+          "text": "Only non-electrical furniture systems."
         },
         {
           "id": "d",
-          "text": "Measures water consumption for billing purposes; required by all water distribution companies nationwide to ensure accurate billing and resource management."
+          "text": "Only acoustical wall panels."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses backflow prevention with pressure regulation; pressure is managed by separate regulators, not backflow preventers.",
-        "c": "Incorrectly identifies filtration as primary function; while filters may be part of system, the critical function is preventing backflow contamination.",
-        "d": "Confuses meter function with backflow prevention; meters measure flow, while backflow preventers ensure one-directional water flow.",
-        "correct": "Backflow preventers protect public health by preventing cross-contamination of the water main. PD 1067 and MWSS Code mandate installation immediately downstream of the meter with annual inspection.",
-        "takeaway": "Understanding backflow prevention requirements is critical for compliance with public health regulations during service entrance design and operation."
-      },
+      "rationale": "Power, lighting, control, and signal circuit wiring from the service point or source to outlets. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Water Supply Connection section",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-008-03-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.989967+00:00",
       "content_hash": "sha256:f2ef2c2543921e7a7d5e72312343e4e1db153890b493897960194f23b8c9530c"
     },
     {
       "question_id": "3a1be750-9d48-4e28-84d8-063a46d88f3a",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A 15-story commercial building requires electrical, water, gas, and telecommunications services. According to PD 1096 (National Building Code of the Philippines, 2004 Revised IRR) and standard practice, what is the typical minimum area of the consolidated service entrance room, and what is a critical design constraint regarding ventilation?",
+      "text": "Why reserve electrical equipment spaces early?",
       "options": [
         {
           "id": "a",
-          "text": "2.0 m × 2.0 m minimum; shared HVAC with office floors above is acceptable if separate ducting routes are provided, ensuring compliance with ventilation standards"
+          "text": "Switchboards, emergency equipment spaces, electrical closets, and panel areas need coordinated architectural space and access."
         },
         {
           "id": "b",
-          "text": "2.5 m × 3.0 m minimum for buildings up to 20 stories; electrical service rooms cannot share ventilation with occupied spaces per Rule VII (PD 1096) and safety standards"
+          "text": "Because all equipment can be moved after occupancy."
         },
         {
           "id": "c",
-          "text": "3.0 m × 4.0 m minimum; gas and electrical equipment may share the same room if separated by non-combustible partition, adhering to fire safety regulations"
+          "text": "Because utility coordination is unrelated to the plans."
         },
         {
           "id": "d",
-          "text": "2.0 m × 3.0 m minimum; telecommunications MDF must have separate room but water, gas, and electrical can be consolidated, provided safety protocols are followed"
+          "text": "Because signal systems never need space."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Violates critical separation requirements between electrical and occupied spaces; shared HVAC creates cross-contamination risk.",
-        "c": "Incorrectly permits gas and electrical consolidation in single room; safety codes require separate, dedicated gas meter rooms with independent ventilation per PD 1096 and RA 9514.",
-        "d": "Undersizes room and incorrectly permits consolidation of telecommunications with utilities; separate MDF room prevents electromagnetic interference.",
-        "correct": "Typical consolidated service entrance rooms are sized 2.5 m × 3.0 m for buildings up to 20 stories to accommodate metering, isolation valves, and panels. Rule VII of PD 1096 prohibits sharing ventilation between electrical rooms and occupied spaces to prevent air quality and safety issues; dedicated exhaust is required.",
-        "takeaway": "Service entrance room consolidation must balance efficiency with strict separation requirements for safety, compliance, and equipment longevity."
-      },
+      "rationale": "Switchboards, emergency equipment spaces, electrical closets, and panel areas need coordinated architectural space and access. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Service Entrance Room Design section",
       "bloom_level": "apply",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-008-03-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.992974+00:00",
       "content_hash": "sha256:7b71c7eeb5ef9ff9ae25b7b6737f6584a38a14f0cc1470f2e023ef5171ad7f34"
     },
     {
       "question_id": "f6caea19-6b54-4e31-a2f0-87c8f8dec3bd",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A developer is evaluating two sites for a 200-unit residential project in Metro Manila. Site A has confirmed load availability (200 kW) from Meralco and Manila Water service with 6-week total lead time. Site B has available Meralco load (250 kW) but Manila Water cannot confirm water service availability—requires 3-week lot survey before load assessment. Given typical lead times in Meralco (10–16 weeks) and Manila Water (6–9 weeks), what is the comparative utility connection risk, and what pre-design action mitigates the Site B risk?",
+      "text": "What should be coordinated first with the local electric utility?",
       "options": [
         {
           "id": "a",
-          "text": "Site B has no additional risk; water survey delay is absorbed within typical 6–9 week Manila Water lead time; project may proceed without contingency planning"
+          "text": "Service entrance point, service run, service voltage, metering location, and utilization voltage."
         },
         {
           "id": "b",
-          "text": "Site B has critical path risk: if survey reveals insufficient capacity or extension required, total water service lead time extends to 9+ weeks. Request written load availability letter from both Meralco and Manila Water during pre-design phase per Meralco Service Policy (2023); confirms feasibility before design commitment"
+          "text": "Interior paint color and furniture layout only."
         },
         {
           "id": "c",
-          "text": "Site A is riskier due to lower Meralco load (200 kW vs 250 kW at Site B); water service availability is secondary concern for residential occupancy planning"
+          "text": "Room reverberation time only."
         },
         {
           "id": "d",
-          "text": "Survey delays are routine for Manila Water; Site B risk is acceptable because post-occupancy water service connection is permitted during initial lease-up period per MWSS Code"
+          "text": "Card-reader PIN length only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Underestimates survey risk; capacity constraints discovered in week 3 of survey delay the rest of lead time sequence, creating schedule risk in construction phase.",
-        "c": "Load (kW) is secondary to availability confirmation; sufficient load does not guarantee service capacity; actual service confirmation is required.",
-        "d": "Post-occupancy water service is not permitted; building cannot legally occupy without finalized water connection per MWSS Code (2008) and building code compliance.",
-        "correct": "Pre-design load availability letters (valid 1 year per Meralco policy) confirm both utilities can serve the site before design finalization. Site B survey uncertainty could add weeks to total lead time if capacity issues or extensions are discovered late in design phase.",
-        "takeaway": "Early load availability confirmation from utilities is critical risk management tool; written letters from Meralco and Manila Water/Maynilad should be obtained before design finalization to prevent schedule impact from late-stage capacity discoveries."
-      },
+      "rationale": "Service entrance point, service run, service voltage, metering location, and utilization voltage. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Coordination During Design and Construction section",
       "bloom_level": "analyze",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-008-03-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.993885+00:00",
       "content_hash": "sha256:bd016a0dffb0367315de85819cf42ce82ef32ed09651016b537113b469153035"
     },
     {
       "question_id": "b5bad62b-902b-4d7a-a2b6-4a7f8eb97777",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A building project experiences a 4-week delay in water service lateral installation due to right-of-way conflicts with existing sewer main. The delay cascades to water meter installation and backflow preventer certification. According to MWSS and Manila Water procedures, what is the consequence for final occupancy approval, and what mitigation action restores schedule?",
+      "text": "Which information belongs on PEC electrical location and site plans?",
       "options": [
         {
           "id": "a",
-          "text": "Water service delay does not affect occupancy approval; temporary potable water can be supplied from municipal trucks until service is operational, provided that the trucks are certified by the local health department"
+          "text": "Service drop, service equipment, nearest utility pole, meter location, service entrance conductors and conduits, and clearances."
         },
         {
           "id": "b",
-          "text": "Building cannot legally occupy without finalized water service connection and certified backflow preventer per current MWSS standards and PD 1096; expedited coordination with Manila Water for 48-hour re-surveying and inspector availability can compress recovery to 1 week"
+          "text": "Only architectural perspective views."
         },
         {
           "id": "c",
-          "text": "Water service installation is non-critical for initial occupancy phase; complete water service can be finalized post-occupancy during building operation without code violation, assuming alternative water sources are available"
+          "text": "Only acoustic fabric colors."
         },
         {
           "id": "d",
-          "text": "Right-of-way conflicts require permanent design redesign of sewer main location; water service will remain non-functional indefinitely until municipal infrastructure modifications, which may take several months to plan and execute"
+          "text": "Only PV payback assumptions."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Temporary water supply is not acceptable for permanent occupancy; building code requires connection to public utility with proper backflow certification.",
-        "c": "Water service is critical infrastructure; deferring to post-occupancy violates building codes and MWSS requirements for completed connections before occupancy.",
-        "d": "Right-of-way conflicts are typically resolved through relocation of proposed lateral route, not permanent design failure; re-surveying and alternative routing usually resolves conflicts.",
-        "correct": "MWSS Code (2008) and NBC require operational water service and certified backflow preventer for occupancy approval. Expedited coordination with utility inspector for priority scheduling and 48-hour turnaround survey/inspection can compress recovery timeline.",
-        "takeaway": "Understanding critical path dependencies for utility approvals and having contingency coordination procedures with utility inspectors is essential for schedule recovery in final construction phases."
-      },
+      "rationale": "Service drop, service equipment, nearest utility pole, meter location, service entrance conductors and conduits, and clearances. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Utility Application Process and Lead Times section",
       "bloom_level": "analyze",
@@ -601,30 +529,30 @@
       "model_id": "ALE-UTIL-008-03-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.987006+00:00",
       "content_hash": "sha256:421b19a09da05950d898255ed0d26999b5c29fe2a40dcd3dcb918cb78d276756"
     },
     {
       "question_id": "9a0a682a-2d15-4b6d-93c9-fe632a287de6",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A telecommunications designer is planning fiber-optic entry for a 30-story commercial tower. PLDT service will enter via a wall conduit to a MDF room located on the 2nd floor, approximately 80 m from the street network terminal. Per NTC Telecommunications Code (2016) and PLDT Building Integration Manual (2023), what is the critical ground bonding requirement for the cable entry conduit system, and why is it essential?",
+      "text": "What working-space rule is source-safe for service equipment?",
       "options": [
         {
           "id": "a",
-          "text": "Conduit requires copper bonding to building lightning protection system to ground all induced EMI voltages; prevents transient overvoltage damage to telecom equipment per NTC EM Manual (2015)"
+          "text": "Provide access and working space, with width at least equipment width or 750 mm, whichever is greater."
         },
         {
           "id": "b",
-          "text": "Conduit bonding is optional for indoor installations; lightning protection applies only to roof-mounted antenna systems outside buildings, which are more susceptible to lightning strikes"
+          "text": "Use the space for storage if the door can still close."
         },
         {
           "id": "c",
-          "text": "Conduit must be grounded to electrical service entrance ground to create unified grounding network; prevents cross-current flow during high-current electrical faults, ensuring safety"
+          "text": "Set all switchboards directly behind fixed furniture."
         },
         {
           "id": "d",
-          "text": "Bonding requirement applies only if cable length exceeds 50 m; shorter conduit runs do not require ground-to-building-frame bonding per NTC standards, simplifying installation"
+          "text": "Measure only the ceiling color above the panel."
         }
       ],
       "correct_option_id": "a",
@@ -632,13 +560,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Bonding is mandatory for all conduit entries regardless of building height or antenna presence; lightning induction occurs on long cable runs external to building.",
-        "c": "Separate bonding to electrical service can create fault current loops; telecom systems should bond independently to building steel frame to avoid coupling with electrical faults.",
-        "d": "Length-based exemptions do not apply; any outdoor conduit run (including short entry runs) is susceptible to lightning induction and requires protective bonding.",
-        "correct": "NTC EM Manual (2015) and PLDT standards require ground-to-building-frame bonds on conduit systems to dissipate lightning-induced voltages. This protects sensitive telecom equipment from transient overvoltages that can damage interconnected devices.",
-        "takeaway": "Proper ground bonding of telecommunications entry conduits is critical for equipment protection and system reliability; coordination with structural and electrical design is required during design phase."
-      },
+      "rationale": "Provide access and working space, with width at least equipment width or 750 mm, whichever is greater. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Telecommunications Infrastructure section",
       "bloom_level": "analyze",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-008-03-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.994771+00:00",
       "content_hash": "sha256:20690ca40205d7235a3b43b7fd4697e673b7afa73ad129afbc4dbfcf0991366e"
     },
     {
       "question_id": "296a1efe-0fa6-4d7f-8f86-746ef39cb598",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "A building sewerage system design includes a 150 mm diameter building sewer with 1.5% slope connecting to public MWSS main. The connection point includes a cleanout pit at the property line. According to PD 1096 (National Building Code, 2004 Revised IRR) and PD 1067 (Water Code), what critical requirement must be verified at the cleanout pit location to ensure compliance?",
+      "text": "What does premises wiring include under the checked PEC definition?",
       "options": [
         {
           "id": "a",
-          "text": "Cleanout pit must be located exclusively within building property; public sewer access creates liability issues for property owner, which is a common misconception"
+          "text": "Power, lighting, control, and signal circuit wiring from the service point or source to outlets."
         },
         {
           "id": "b",
-          "text": "Cleanout pit must have inspection access for MWSS personnel; minimum dimensions and drainage provisions must permit scope insertion and cleaning equipment deployment per PD 1096 (Rule X on Sewerage)"
+          "text": "Only exterior landscaping lines."
         },
         {
           "id": "c",
-          "text": "Cleanout pit depth must match public sewer main invert depth to prevent siphoning action during peak flow; minimum 2.0 m depth required, which is not a standard requirement"
+          "text": "Only non-electrical furniture systems."
         },
         {
           "id": "d",
-          "text": "Cleanout pit is optional if building sewer is larger than 100 mm diameter; design slope of 1.5% eliminates sediment accumulation without inspection access, which is incorrect"
+          "text": "Only acoustical wall panels."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Cleanout at property boundary is standard to allow utility access for inspection and maintenance; does not create liability if properly designed and maintained.",
-        "c": "While depth coordination may be useful, minimum invert differential is not the controlling requirement; access for maintenance is primary concern per building code.",
-        "d": "Cleanout is mandatory regardless of diameter per PD 1096 Rule X; design slope does not eliminate debris accumulation in sewer laterals; regular maintenance requires inspection access.",
-        "correct": "Rule X (Sewerage) of PD 1096 requires cleanout installation at property line with adequate access for inspection and cleaning equipment. MWSS must be able to access and maintain the connection point; pit must allow scope insertion and cleaning tools.",
-        "takeaway": "Cleanout pit design must prioritize access for utility inspection and maintenance equipment; MWSS access requirements drive pit location and minimum dimension requirements."
-      },
+      "rationale": "Power, lighting, control, and signal circuit wiring from the service point or source to outlets. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Sewerage Connection section",
       "bloom_level": "apply",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-008-03-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.985835+00:00",
       "content_hash": "sha256:36f098171d4a1af0e762eb50068dc9174354dc14f56bb41ffadae08bf7e9de61"
     },
     {
       "question_id": "55fd3d8e-98fe-4809-9ee2-92fdb1418cc3",
       "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
       "topic_id": "30efefb4-701f-422b-878b-f2788935f6ea",
-      "text": "In the Philippines, which utility companies provide water supply services in Metro Manila's eastern and western zones respectively?",
+      "text": "Why reserve electrical equipment spaces early?",
       "options": [
         {
           "id": "a",
-          "text": "Maynilad serves eastern zones; Manila Water serves western zones"
+          "text": "Switchboards, emergency equipment spaces, electrical closets, and panel areas need coordinated architectural space and access."
         },
         {
           "id": "b",
-          "text": "Manila Water serves eastern zones; Maynilad serves western zones"
+          "text": "Because all equipment can be moved after occupancy."
         },
         {
           "id": "c",
-          "text": "MWSS serves both zones; private utilities provide supplemental service only"
+          "text": "Because utility coordination is unrelated to the plans."
         },
         {
           "id": "d",
-          "text": "Meralco provides water alongside electrical service in both zones"
+          "text": "Because signal systems never need space."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Reverses the service area assignments; common confusion among practitioners new to Philippine infrastructure.",
-        "c": "Confuses MWSS (sewerage authority) with water distribution service providers; MWSS focuses on sewerage and does not provide potable water.",
-        "d": "Incorrectly assigns Meralco (electrical) as water provider; Meralco exclusively provides electrical service.",
-        "correct": "Manila Water Company serves eastern Metro Manila; Maynilad Water Services serves western zones. This is foundational knowledge for utility coordination in ALE-UTIL-008-03.",
-        "takeaway": "Correct identification of regional water utility assignments is essential for early coordination during design phase to confirm service availability."
-      },
+      "rationale": "Switchboards, emergency equipment spaces, electrical closets, and panel areas need coordinated architectural space and access. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-03.mdx, Water Supply Connection section",
       "bloom_level": "remember",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-008-03-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.995633+00:00",
       "content_hash": "sha256:01e989d20c66fcb432dfd54af66eee6b88d5db226f3b363e21ecf075ff62fe1a"
     }
   ]

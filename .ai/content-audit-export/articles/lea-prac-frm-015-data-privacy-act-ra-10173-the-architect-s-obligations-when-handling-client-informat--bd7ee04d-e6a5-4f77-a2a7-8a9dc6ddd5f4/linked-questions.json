@@ -8,23 +8,23 @@
       "question_id": "0d15139e-2466-46f8-9dee-32b80ba2a1c1",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "What is the primary purpose of RA 10173 (Data Privacy Act of 2012)?",
+      "text": "What is the source-safe Batch 103 answer to a question asking for RA 10173's exact purpose?",
       "options": [
         {
           "id": "a",
-          "text": "To regulate architectural design, ensuring compliance with national standards and codes"
+          "text": "State an exact statutory purpose from memory"
         },
         {
           "id": "b",
-          "text": "To protect personal information in the hands of public and private organizations"
+          "text": "Defer the exact statutory purpose until a local raw RA 10173 source is available"
         },
         {
           "id": "c",
-          "text": "To control construction practices, focusing on safety and sustainability"
+          "text": "Use RA 9266 as if it were the Data Privacy Act text"
         },
         {
           "id": "d",
-          "text": "To license architects, maintaining professional standards and accountability"
+          "text": "Ignore privacy because architects only prepare drawings"
         }
       ],
       "correct_option_id": "b",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses data privacy law with design regulation; RA 10173 governs information protection, not architectural aesthetics or design standards.",
-        "c": "Confuses data privacy law with building construction standards; RA 10173 addresses information security, not construction methods or quality.",
-        "d": "Confuses data privacy law with professional licensing; RA 10173 is enforced by the National Privacy Commission, not the Board of Architecture.",
-        "correct": "RA 10173 protects personal information in the hands of both public and private sector organizations.",
-        "takeaway": "RA 10173 is a data privacy law that applies to architects as they handle sensitive client and occupant information."
-      },
+      "rationale": "No local raw Data Privacy Act source was found, so exact RA 10173 wording is preserved for final-depth source acquisition.",
       "explanation": null,
       "code_citation": "RA 10173",
       "bloom_level": "remember",
@@ -51,30 +45,30 @@
       "model_id": "ALE-PRAC-FRM-015-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.996861+00:00",
       "content_hash": "sha256:ab7c57b7f4d39e4700dd6ee7bd5f89b3238acd52f3de3abe83819ff81bd47239"
     },
     {
       "question_id": "76bc7791-11c8-4a05-8248-f089d964385f",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "What is the distinction between the architect's copyright in design and client confidential information?",
+      "text": "What is the source-supported distinction between architect copyright and client confidential information?",
       "options": [
         {
           "id": "a",
-          "text": "There is no distinction; both are considered part of the intellectual property shared between parties"
+          "text": "Architect copyright gives unrestricted publication rights to all client data"
         },
         {
           "id": "b",
-          "text": "Copyright extends to design expression (plans, drawings) but not to client's underlying operational data or business information"
+          "text": "The architect may hold rights in instruments of service, but client information still needs agreement and privacy controls before disclosure"
         },
         {
           "id": "c",
-          "text": "Client owns all copyright, including any derivative works created by the architect during the project"
+          "text": "Client information cancels all architect document rights"
         },
         {
           "id": "d",
-          "text": "Neither party has any rights unless explicitly stated in a contractual agreement"
+          "text": "All drawings become public once issued for bidding"
         }
       ],
       "correct_option_id": "b",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Fails to distinguish between copyright (architect's design) and confidentiality (client's business information)—they are separate legal rights.",
-        "c": "Incorrectly awards all copyright to client; architects retain copyright to their creative design work and drawings.",
-        "d": "Denies both parties legitimate rights; architects have copyright in their design expressions and clients have ownership of their confidential business information.",
-        "correct": "Architects retain copyright to design expression (drawings, specifications), but the client retains ownership of confidential operational, financial, and facility requirement information disclosed during the engagement.",
-        "takeaway": "Architects own the design copyright but must keep client operational data confidential—these are separate intellectual property categories."
-      },
+      "rationale": "RA 9266 supports architectural document ownership controls, not unrestricted disclosure of client information.",
       "explanation": null,
       "code_citation": "RA 10173, Sections 3 and 12; Copyright provisions",
       "bloom_level": "apply",
@@ -101,30 +89,30 @@
       "model_id": "ALE-PRAC-FRM-015-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.998148+00:00",
       "content_hash": "sha256:13af46c23e620da9c85bcfab11c201f63cabbd7751cec643c705faf272070453"
     },
     {
       "question_id": "3f1df9da-d814-47df-89f6-38523f232295",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "When might an architectural firm be required to appoint a Data Protection Officer (DPO) under RA 10173?",
+      "text": "How should a DPO requirement question be handled in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Never; DPOs are not required for architects, regardless of data processing activities"
+          "text": "Invent a universal DPO requirement for every architect"
         },
         {
           "id": "b",
-          "text": "When the firm processes large-scale or sensitive personal data of occupants, tenants, employees, or building users"
+          "text": "Treat exact DPO triggers as final-depth source-needed until RA 10173 or NPC primary text is added"
         },
         {
           "id": "c",
-          "text": "Only if the firm has more than 100 employees, which is a threshold for mandatory DPO appointment"
+          "text": "Say no architectural firm can ever need privacy governance"
         },
         {
           "id": "d",
-          "text": "Only if the government mandates it, which is unlikely unless specific regulations are enacted"
+          "text": "Use the UAP SPP as a substitute for NPC rules"
         }
       ],
       "correct_option_id": "b",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrectly assumes architects are exempt; if an architectural firm processes significant personal data, DPO appointment may be legally required under RA 10173.",
-        "c": "Uses wrong criterion; DPO requirement is based on the scale and sensitivity of data processing, not employee headcount.",
-        "d": "Incorrectly waits for external mandate; firms should self-assess whether they process large-scale personal data and proactively appoint a DPO if requirements are met.",
-        "correct": "RA 10173 Section 16 requires designating an accountable person; NPC IRR may require DPO for certain large-scale processing. Architectural firms handling extensive occupant or tenant information should assess whether appointment is necessary.",
-        "takeaway": "Large architectural firms processing extensive occupant, tenant, or employee data may be required to appoint a DPO to demonstrate RA 10173 compliance."
-      },
+      "rationale": "The checked source packet does not contain the local Data Privacy Act or NPC source needed for exact DPO mechanics.",
       "explanation": null,
       "code_citation": "RA 10173, Section 16",
       "bloom_level": "analyze",
@@ -151,30 +133,30 @@
       "model_id": "ALE-PRAC-FRM-015-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.001522+00:00",
       "content_hash": "sha256:74a098d451918d577bc02e16dd341ff966193b937f2301cdc10ef7788ee53830"
     },
     {
       "question_id": "38810729-f489-4041-b4b0-7224232ccea6",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "What does the principle of 'purpose limitation' require?",
+      "text": "What practical purpose-control should an architect put in the agreement?",
       "options": [
         {
           "id": "a",
-          "text": "Data can be used for any purpose, which contradicts the principle of purpose limitation."
+          "text": "Collect all client information for any future marketing use"
         },
         {
           "id": "b",
-          "text": "Data collected for one purpose cannot be used for another without consent"
+          "text": "State why project information is collected and limit use to agreed project purposes unless further permission is given"
         },
         {
           "id": "c",
-          "text": "Purpose does not matter in data handling, which is a misunderstanding of data protection principles."
+          "text": "Share all project data with any consultant without controls"
         },
         {
           "id": "d",
-          "text": "Only the government has purpose limitations, which is incorrect as it applies to all data controllers."
+          "text": "Treat photographs as public once design work starts"
         }
       ],
       "correct_option_id": "b",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Misses the core restriction of purpose limitation; data use is strictly tied to the original stated purpose unless new consent is obtained.",
-        "c": "Denies the existence of purpose limitation; this principle is central to RA 10173 and restricts how data may be used.",
-        "d": "Incorrectly limits purpose limitation to government only; RA 10173 applies this principle to both public and private organizations including architects.",
-        "correct": "Purpose limitation requires that personal data collected for a specific stated purpose (e.g., emergency egress planning) cannot be repurposed without the data subject's consent.",
-        "takeaway": "Purpose limitation means occupant information collected for building safety cannot be used for marketing without new consent."
-      },
+      "rationale": "The source-safe article turns professional responsibility into agreement controls without claiming exact statutory wording.",
       "explanation": null,
       "code_citation": "RA 10173, Section 12",
       "bloom_level": "understand",
@@ -201,30 +177,30 @@
       "model_id": "ALE-PRAC-FRM-015-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.999935+00:00",
       "content_hash": "sha256:cbbe405e30fe7cc0b79b1ca5cd06efd1a3716863c9c7087265d25f42f4c70391"
     },
     {
       "question_id": "5b552362-80b7-4d25-b944-19dee75abd48",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "What does 'reasonable security' for architectural data protection typically include?",
+      "text": "What does reasonable handling of sensitive architectural project data include in this local pass?",
       "options": [
         {
           "id": "a",
-          "text": "No specific measures are needed, as general security practices suffice for most architectural firms"
+          "text": "Posting all drawings online for recognition"
         },
         {
           "id": "b",
-          "text": "Limiting access, encrypting sensitive files, securing physical documents, requiring confidentiality agreements, and maintaining access logs"
+          "text": "Access limits, sharing limits, retention rules, and written permission for non-project use"
         },
         {
           "id": "c",
-          "text": "Only posting a privacy notice, which serves as a basic level of data protection"
+          "text": "Sending full clinic access plans to unrelated bidders"
         },
         {
           "id": "d",
-          "text": "Only purchasing insurance, which provides financial protection against data breaches"
+          "text": "Letting software vendors reuse client data by default"
         }
       ],
       "correct_option_id": "b",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Dangerous misunderstanding; RA 10173 requires reasonable security measures proportionate to data sensitivity and breach risk.",
-        "c": "Insufficient safeguard; a privacy notice alone does not prevent unauthorized access, disclosure, or data theft.",
-        "d": "False economy; insurance provides post-breach compensation but does not prevent breaches; reasonable security must include active protective measures.",
-        "correct": "Reasonable security includes proportionate measures such as limiting access to authorized personnel, encrypting digital files, securing physical files, requiring confidentiality agreements, and maintaining audit logs.",
-        "takeaway": "Reasonable security for architectural data requires multiple layers—access controls, encryption, physical security, staff agreements, and audit trails—not just notification or insurance."
-      },
+      "rationale": "These are source-safe professional controls tied to agreement and document-use boundaries.",
       "explanation": null,
       "code_citation": "RA 10173, Section 13",
       "bloom_level": "apply",
@@ -251,30 +221,30 @@
       "model_id": "ALE-PRAC-FRM-015-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.999085+00:00",
       "content_hash": "sha256:5b036bce5f456aff5bfa32bb602c890faa611e67a9574da147165ccf28ba8a59"
     },
     {
       "question_id": "3c6f915c-f707-489d-85eb-1c5f5aa01149",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "Who enforces compliance with RA 10173?",
+      "text": "Who enforces RA 10173 according to this local-first batch?",
       "options": [
         {
           "id": "a",
-          "text": "Board of Architecture, which typically oversees professional conduct and standards within the architectural field"
+          "text": "The RA 9266 IRR alone names the NPC enforcement process"
         },
         {
           "id": "b",
-          "text": "National Privacy Commission (NPC)"
+          "text": "The batch does not answer exact enforcement mechanics without local RA 10173 or NPC source text"
         },
         {
           "id": "c",
-          "text": "Commission on Audit, responsible for auditing government funds and ensuring financial accountability"
+          "text": "The contractor always enforces privacy law"
         },
         {
           "id": "d",
-          "text": "Department of Trade and Industry, which focuses on trade regulations and consumer protection"
+          "text": "The client waives all enforcement by hiring an architect"
         }
       ],
       "correct_option_id": "b",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses data privacy enforcement with architectural practice regulation; the Board of Architecture licenses architects but the NPC enforces privacy law.",
-        "c": "Confuses data privacy with financial auditing; the Commission on Audit oversees government spending, not private sector data protection.",
-        "d": "Confuses data privacy with trade and industry regulation; the DTI promotes business development, not privacy compliance.",
-        "correct": "The National Privacy Commission (NPC) enforces RA 10173 and has authority to issue administrative fines and directives.",
-        "takeaway": "The NPC is the sole enforcement agency for data privacy violations under RA 10173."
-      },
+      "rationale": "Exact enforcement details need the missing primary Data Privacy Act or NPC source packet.",
       "explanation": null,
       "code_citation": "RA 10173, Sections 7 and 28",
       "bloom_level": "remember",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-FRM-015-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.003927+00:00",
       "content_hash": "sha256:8fd7b665b0ca24848d5ec80040f6e989d7c05405e8671cc1421b9eef7c522aef"
     },
     {
       "question_id": "84858022-97cd-4cb9-8cc7-c8caff6f9655",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "Within what timeframe must a data controller notify the NPC and affected individuals of a personal data breach?",
+      "text": "How should breach-notification timeframe questions be treated before local RA 10173 source acquisition?",
       "options": [
         {
           "id": "a",
-          "text": "30 days, allowing for comprehensive investigation and preparation of notification materials"
+          "text": "Memorize a number from the old question even without source"
         },
         {
           "id": "b",
-          "text": "14 days, providing a balance between urgency and thoroughness in breach response"
+          "text": "Defer exact deadlines and avoid publishing an unsupported number"
         },
         {
           "id": "c",
-          "text": "72 hours of discovery"
+          "text": "Use the building permit period as the breach deadline"
         },
         {
           "id": "d",
-          "text": "1 year, which is impractical for timely response and mitigation of potential harm"
+          "text": "Assume no notification can ever be required"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Too lenient; 30 days exceeds the 72-hour requirement and risks greater harm to affected individuals.",
-        "b": "Too lenient; 14 days still exceeds the 72-hour requirement, creating unnecessary delay in notifying those whose data is compromised.",
-        "d": "Far too lenient; a one-year delay for breach notification violates RA 10173 and exposes the architect to NPC penalties and civil liability.",
-        "correct": "RA 10173 Section 20(f) requires breach notification without undue delay and, where feasible, not later than 72 hours after discovery (to NPC per IRR). Without undue delay and, where feasible, not later than 72 hours (to NPC per IRR).",
-        "takeaway": "A data breach involving client or occupant information must be reported to the NPC and affected parties within 72 hours—not 30 days, 14 days, or delayed a year."
-      },
+      "rationale": "The old linked question asked for an exact timeframe that is not supported by the checked local source packet.",
       "explanation": null,
       "code_citation": "RA 10173, Section 21",
       "bloom_level": "understand",
@@ -351,30 +309,30 @@
       "model_id": "ALE-PRAC-FRM-015-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.004712+00:00",
       "content_hash": "sha256:71f3190b3c848d5b58098521fddd9f91cb9f573e84a3f650d515a255bf35acf8"
     },
     {
       "question_id": "4a77eeb0-6ab9-4a8b-ba90-1ab82e59baed",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "What are the two primary roles an architect may play under RA 10173?",
+      "text": "What source-safe roles can an architect identify when handling project information?",
       "options": [
         {
           "id": "a",
-          "text": "Only investor and contractor, focusing on financial and construction aspects"
+          "text": "Automatic NPC officer for every project"
         },
         {
           "id": "b",
-          "text": "Personal Information Controller (PIC) deciding purpose of processing, or Personal Information Processor (PIP) processing on behalf of a PIC"
+          "text": "Collector, custodian, sharer, and document author under the agreement, while exact RA 10173 roles remain source-needed"
         },
         {
           "id": "c",
-          "text": "Only data collector, responsible for gathering information without processing"
+          "text": "Unrestricted owner of all client information"
         },
         {
           "id": "d",
-          "text": "Only regulatory inspector, ensuring compliance with building codes and standards"
+          "text": "No responsibility for project information after schematic design"
         }
       ],
       "correct_option_id": "b",
@@ -382,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Misidentifies architect roles in privacy law; investor/contractor are not defined privacy roles under RA 10173.",
-        "c": "Oversimplifies architect responsibilities to collection only; architects both collect and decide how data is processed (PIC role) or process at client direction (PIP role).",
-        "d": "Confuses architect with government inspector; architects do not have regulatory inspection authority under RA 10173.",
-        "correct": "Architects act as PICs when deciding how to collect and use occupant data (e.g., emergency egress lists), or as PIPs when processing data at the client's direction.",
-        "takeaway": "Architects have dual roles under RA 10173—deciding data purposes as a PIC or processing data on behalf of clients as a PIP."
-      },
+      "rationale": "This answer keeps the article inside professional-practice and agreement controls.",
       "explanation": null,
       "code_citation": "RA 10173, Sections 3 and 4",
       "bloom_level": "understand",
@@ -401,30 +353,30 @@
       "model_id": "ALE-PRAC-FRM-015-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.003163+00:00",
       "content_hash": "sha256:18f3e409c10790d4e147082907d13bdd3fb577ca511d59cd11658d254ed2ed9b"
     },
     {
       "question_id": "66e0a196-5ef9-4cf2-9fa2-606bc088cd87",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "Describe the practical compliance measures architects should implement to meet RA 10173 obligations.",
+      "text": "What compliance measures should architects implement before exact RA 10173 details are restored?",
       "options": [
         {
           "id": "a",
-          "text": "No measures are required, as RA 10173 does not apply to architectural practices unless specified by a legal advisor"
+          "text": "Rely only on verbal client consent forever"
         },
         {
           "id": "b",
-          "text": "Maintain data inventory, draft privacy notices, obtain written consent, implement confidentiality agreements, encrypt files, restrict access, maintain audit trails, securely dispose of information, have a breach plan, and provide staff training"
+          "text": "Document collection purpose, access, consultant sharing, retention, and permission for portfolio or award use"
         },
         {
           "id": "c",
-          "text": "Only store data digitally, ensuring that all physical copies are destroyed to prevent unauthorized access"
+          "text": "Publish project photos unless someone complains"
         },
         {
           "id": "d",
-          "text": "Share all information with contractors, provided they sign a non-disclosure agreement and comply with data protection policies"
+          "text": "Delete all project records immediately after design development"
         }
       ],
       "correct_option_id": "b",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Dangerously false; RA 10173 imposes affirmative obligations on all organizations handling personal data, including architects.",
-        "c": "Incomplete and risky; digital-only storage lacks the physical security measures (locked cabinets, restricted access) needed for reasonable security and creates unnecessary cyber risk.",
-        "d": "Contradicts purpose limitation and access control; sharing information with contractors violates RA 10173 unless specifically authorized by data subjects and documented in agreements.",
-        "correct": "A comprehensive compliance program includes data inventory, privacy notices, written consent processes, confidentiality agreements, file encryption, access restrictions, audit logs, secure disposal, breach response procedures, and staff training.",
-        "takeaway": "RA 10173 compliance requires a documented system with ten core elements—inventory, notice, consent, confidentiality, encryption, access control, logging, secure disposal, breach planning, and staff training."
-      },
+      "rationale": "The measures are practical agreement controls supported by the professional document context.",
       "explanation": null,
       "code_citation": "RA 10173, Section 19",
       "bloom_level": "analyze",
@@ -451,30 +397,30 @@
       "model_id": "ALE-PRAC-FRM-015-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.000772+00:00",
       "content_hash": "sha256:77e07823f730c5d5e228255b76cfdd32c27e52a6e503d5c1187d5dd86815fb15"
     },
     {
       "question_id": "f2eb38af-dd91-476c-822a-4efc0f2c3166",
       "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
       "topic_id": "6729bd8f-192c-4ea6-84c0-5d2dd02b1bde",
-      "text": "When an architect uses project information for case studies or award submissions, what must happen first?",
+      "text": "When may an architect use project information for case studies or award submissions?",
       "options": [
         {
           "id": "a",
-          "text": "Nothing; the architect always owns the information, allowing unrestricted use"
+          "text": "Whenever the architect created the drawings"
         },
         {
           "id": "b",
-          "text": "Clarification in the service agreement about permitted uses and obtaining client consent for any confidential information disclosed"
+          "text": "When the agreement or a later written permission allows that non-project use"
         },
         {
           "id": "c",
-          "text": "Only photographing the finished building is allowed, with no other information shared"
+          "text": "Whenever the client logo is removed"
         },
         {
           "id": "d",
-          "text": "The architect can use any information without limitation, as long as it is for professional purposes"
+          "text": "Whenever the project has received a permit"
         }
       ],
       "correct_option_id": "b",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignores client confidentiality rights; while architects own design copyright, client operational data and business information belong to the client and require permission to disclose.",
-        "c": "Too restrictive on architect's rights and too permissive on information use; agreements should clarify what uses are permitted beyond just photographing the building.",
-        "d": "Violates purpose limitation; using project information for purposes beyond the original engagement (e.g., marketing or awards) without consent breaches RA 10173.",
-        "correct": "Service agreements must clarify what information is confidential and what uses the architect may make of project information; client consent is required for any confidential information in case studies or award submissions.",
-        "takeaway": "Before publishing project case studies or award submissions, architects must obtain client consent and distinguish between owned design copyright and confidential client operational data."
-      },
+      "rationale": "Architect document rights do not automatically authorize public use of client-sensitive project information.",
       "explanation": null,
       "code_citation": "RA 10173, Section 12",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-FRM-015-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.002378+00:00",
       "content_hash": "sha256:5b928c8be6f4886686b328b383e75f8b2ccffcae94933e9def4a054fc9953c84"
     }
   ]

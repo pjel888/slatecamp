@@ -1,0 +1,542 @@
+{
+  "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:173a89b972859b8ef10685dca88152d291103bd89515e0d637deab51fc40cf9d",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1bfc06d1-9500-464e-8a11-7ea5d5d52626",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "A city Planning Office is responsible for monitoring zoning violations—e.g., residential encroachment into commercial zones. Which ordinance authorizes this enforcement role?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The CLUP ordinance alone is sufficient for enforcement, providing a comprehensive framework for land use management"
+        },
+        {
+          "id": "b",
+          "text": "National law (RA 7160) directly authorizes Planning Office enforcement without a local ordinance, ensuring uniform application across municipalities"
+        },
+        {
+          "id": "c",
+          "text": "The Mayor's executive order on planning, which outlines specific enforcement procedures and responsibilities"
+        },
+        {
+          "id": "d",
+          "text": "The Zoning Ordinance, which specifies permitted uses, setbacks, and violations for each zone"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CLUP is strategic; zoning ordinance is the enforceable regulatory tool.",
+        "b": "RA 7160 requires local zoning ordinances; authority is not directly from national law.",
+        "c": "Mayor may issue directives, but ordinance authority is required for enforcement.",
+        "d": "Zoning ordinances are the enforceable implementation tools. They specify what uses are permitted in each zone, what violates the zone, penalties, and procedures. The Planning Office enforces based on zoning ordinance authority.",
+        "correct": "Zoning ordinances are the enforceable implementation tools. They specify what uses are permitted in each zone, what violates the zone, penalties, and procedures. The Planning Office enforces based on zoning ordinance authority.",
+        "takeaway": "Zoning ordinance = enforcement authority for Planning Office and Building Official."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "zoning ordinance role",
+        "enforcement authority",
+        "Planning Office function"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:90581c227a0b68a8a49da8d1fff9beb57220ea90dedf6b785029b6e2405ecc21"
+    },
+    {
+      "question_id": "1e01b376-c351-48b6-995e-24077aaf1e86",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "A municipality's Planning Office has prepared a draft CLUP for Sanggunian approval. What must happen before the CLUP can become fully effective and binding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only Sanggunian approval is needed; DHSUD involvement is optional, as local government units have the autonomy to implement their plans"
+        },
+        {
+          "id": "b",
+          "text": "The Sanggunian must pass an ordinance approving the CLUP; then DHSUD must review and approve it for national conformity"
+        },
+        {
+          "id": "c",
+          "text": "Only DHSUD approval is needed; Sanggunian legislative action is unnecessary, streamlining the process for faster implementation"
+        },
+        {
+          "id": "d",
+          "text": "The Mayor must sign an executive order—no legislative ordinance is required, allowing for swift enactment of the CLUP"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DHSUD approval is mandatory; it ensures national policy conformity.",
+        "b": "CLUP approval requires two separate steps: (1) Sanggunian legislative ordinance (local adoption), and (2) DHSUD national approval (conformity with national policies). Both are required under RA 7160 and RA 11201.",
+        "c": "Sanggunian legislative adoption is required for local legal effect.",
+        "d": "Mayor's signature comes after Sanggunian ordinance passage—not instead of it.",
+        "correct": "CLUP approval requires two separate steps: (1) Sanggunian legislative ordinance (local adoption), and (2) Review by provincial or national authority for conformity with national standards. Per EO 72 Section 2(a), review powers are devolved to the Sangguniang Panlalawigan (provincial level) for component cities/municipalities, subject to national standards and guidelines prescribed by HLRB.",
+        "takeaway": "CLUP effectiveness = Sanggunian adoption + DHSUD approval."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160, RA 11201",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22969f5f7dacf8e3ea2421f2e614b649f3b4f078a7a57859b926519b07cfb04f"
+    },
+    {
+      "question_id": "a99c514c-70d8-4f43-bd6c-f7c3992cf2df",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "A developer proposes a 15-story commercial building in a zone designated for maximum 5-story buildings under the city's zoning ordinance. Which body should review and reject this proposal as non-compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The City Planning Office and Building Official—who enforce local zoning ordinance compliance"
+        },
+        {
+          "id": "b",
+          "text": "DHSUD—the national authority over all zoning decisions, although local compliance is primarily enforced by city officials"
+        },
+        {
+          "id": "c",
+          "text": "The Mayor—who can override zoning rules for strategic projects, but typically only with council approval and public consultation"
+        },
+        {
+          "id": "d",
+          "text": "The national police—who handle zoning violations as criminal matters, which is incorrect as zoning is a civil regulatory issue"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Local zoning ordinances are enforced at the local level by the Planning Office (technical review) and Building Official (permit authority). The proposal violates the zoning height limit and should be rejected unless the developer seeks a variance or the Sanggunian amends the ordinance.",
+        "b": "DHSUD approves CLUPs nationally but does not review individual projects locally.",
+        "c": "The Mayor cannot unilaterally override zoning—that would require Sanggunian legislative action to amend the ordinance.",
+        "d": "Zoning violations are civil/administrative, not criminal.",
+        "correct": "Local zoning ordinances are enforced at the local level by the Planning Office (technical review) and Building Official (permit authority). The proposal violates the zoning height limit and should be rejected unless the developer seeks a variance or the Sanggunian amends the ordinance.",
+        "takeaway": "Local zoning enforcement = Planning Office + Building Official (not national oversight)."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "zoning enforcement",
+        "local authority",
+        "compliance review"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ad60a0a58056874d92afe06462413d901d0ac4704ca633fac6c16410996ba0ca"
+    },
+    {
+      "question_id": "69ce0420-d6f9-4d56-aae6-c715a5fb22ad",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "Which of the following accurately describes the sequence of CLUP-related processes in a local government unit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DHSUD approves → Planning Office prepares → Sanggunian adopts → Mayor signs, ensuring all legal and procedural requirements are met"
+        },
+        {
+          "id": "b",
+          "text": "Mayor adopts zoning → Planning Office prepares CLUP → DHSUD reviews, which may lead to revisions before final approval"
+        },
+        {
+          "id": "c",
+          "text": "Planning Office prepares → Sanggunian adopts → DHSUD approves → Zoning ordinance follows from approved CLUP"
+        },
+        {
+          "id": "d",
+          "text": "Sanggunian prepares CLUP → Planning Office reviews → DHSUD approves, with potential for public consultation at each stage"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DHSUD approval comes after Sanggunian adoption, not before.",
+        "b": "Zoning follows CLUP approval, not precedes it.",
+        "c": "The correct sequence: Planning Office prepares the CLUP (technical work) → Sanggunian adopts it as an ordinance (local legislative approval) → DHSUD reviews and approves for national conformity (national oversight) → Zoning ordinance is then adopted to implement the approved CLUP.",
+        "d": "Planning Office prepares; Sanggunian adopts (not the reverse).",
+        "correct": "The correct sequence: Planning Office prepares the CLUP (technical work) → Sanggunian adopts it as an ordinance (local legislative approval) → DHSUD reviews and approves for national conformity (national oversight) → Zoning ordinance is then adopted to implement the approved CLUP.",
+        "takeaway": "Prepare (Planning) → Adopt (Sanggunian) → Approve (DHSUD) → Implement (Zoning ordinance)."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160, RA 11201",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "process sequence",
+        "CLUP process",
+        "institutional roles"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:adee3761f6c6509647ea17530748a2c6811a5a2b2d8e0a970cebf6eaf3c5786e"
+    },
+    {
+      "question_id": "8c5f5f93-48c8-4985-b86e-0ef35799c76e",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "Which body has the authority to adopt a zoning ordinance that implements a city's Comprehensive Land Use Plan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Mayor acting alone, exercising executive power to enforce zoning regulations without legislative approval"
+        },
+        {
+          "id": "b",
+          "text": "The City Planning Office, responsible for drafting and recommending zoning ordinances but lacking legislative authority"
+        },
+        {
+          "id": "c",
+          "text": "The Sangguniang Panlungsod (city council) through legislative ordinance"
+        },
+        {
+          "id": "d",
+          "text": "DHSUD, which oversees housing and urban development policies but does not directly legislate zoning ordinances"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mayor signs zoning ordinances but does not adopt them unilaterally—legislative authority is required.",
+        "b": "Planning Office drafts zoning but does not adopt it legislatively.",
+        "c": "Zoning ordinances are legislative instruments—they must be adopted by the Sanggunian (legislative body). For cities, this is the Sangguniang Panlungsod. The Mayor signs after passage, but legislative adoption is required for legal effect.",
+        "d": "DHSUD approves CLUPs nationally but does not adopt local zoning ordinances.",
+        "correct": "Zoning ordinances are legislative instruments—they must be adopted by the Sanggunian (legislative body). For cities, this is the Sangguniang Panlungsod. The Mayor signs after passage, but legislative adoption is required for legal effect.",
+        "takeaway": "Zoning ordinance adoption = Sanggunian (legislative). Mayor signs (executive endorsement)."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9bff0f94fd970f29bf60e4be4d598f3cf8b5b5eb50ac5d4a87cdd88dee96a2c"
+    },
+    {
+      "question_id": "c764310a-7d4c-43b0-992f-fd3d691c0cf1",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "What role does the Planning Office play in the enforcement of zoning regulations once a zoning ordinance is in effect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Planning Office monitors development proposals, assists with building permit review, and reports violations to enforcement officials"
+        },
+        {
+          "id": "b",
+          "text": "The Planning Office has no enforcement role—enforcement is purely DHSUD's responsibility, which includes all legal actions"
+        },
+        {
+          "id": "c",
+          "text": "The Planning Office makes all zoning decisions unilaterally without legal oversight or community input"
+        },
+        {
+          "id": "d",
+          "text": "The Planning Office only prepares plans; enforcement is handled by the Mayor alone, who has the final authority"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Planning Office is the technical arm—it reviews development applications against zoning standards, provides advice to the Building Official on permit issuance, and identifies violations. The Building Official and Barangay officials carry out formal enforcement (penalties, demolition orders).",
+        "b": "DHSUD does not enforce local zoning; that is the LGU's responsibility.",
+        "c": "Zoning decisions follow ordinance standards; Planning Office advises, not dictates.",
+        "d": "Mayor directs policy; Planning Office and Building Official execute enforcement.",
+        "correct": "The Planning Office is the technical arm—it reviews development applications against zoning standards, provides advice to the Building Official on permit issuance, and identifies violations. The Building Official and Barangay officials carry out formal enforcement (penalties, demolition orders).",
+        "takeaway": "Planning Office = technical support for zoning enforcement; Building Official = formal enforcement authority."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "enforcement mechanisms",
+        "Planning Office function",
+        "institutional roles"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3fd4782df380a42d973b1ab79822979fb8fb7787cee886b7aff066765c0c3877"
+    },
+    {
+      "question_id": "4290af97-cf03-418b-b705-2479a50ff817",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "What is the relationship between a CLUP and the zoning ordinance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The CLUP and zoning ordinance are identical documents serving the same purpose, with no distinction in their application"
+        },
+        {
+          "id": "b",
+          "text": "The CLUP is national; the zoning ordinance is purely local with no connection to national planning, except where federal guidelines are explicitly referenced"
+        },
+        {
+          "id": "c",
+          "text": "The zoning ordinance is prepared first; the CLUP is prepared afterward as documentation, ensuring all local plans align with the broader vision"
+        },
+        {
+          "id": "d",
+          "text": "The CLUP is the broad 10-year plan; the zoning ordinance is the legal implementation tool that translates the CLUP into enforceable land use regulations"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They are related but distinct—CLUP is strategic plan; zoning is regulatory ordinance.",
+        "b": "Both have national-local linkage: CLUP approved by DHSUD (national conformity); zoning adopted by Sanggunian (local implementation).",
+        "c": "CLUP is prepared first; zoning ordinance is based on the approved CLUP.",
+        "d": "The CLUP is the comprehensive plan (10-year horizon, multisectoral, strategic). The zoning ordinance is the primary regulatory implementation mechanism—it specifies zones, permitted uses, height limits, and enforcement procedures based on the CLUP vision.",
+        "correct": "The CLUP is the comprehensive plan (10-year horizon, multisectoral, strategic). The zoning ordinance is the primary regulatory implementation mechanism—it specifies zones, permitted uses, height limits, and enforcement procedures based on the CLUP vision.",
+        "takeaway": "CLUP (strategy) → Zoning ordinance (regulation/enforcement)."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05f32ee71c645b11c56472aa490b6394aa7928ab15e9fe2d2342cabe9cebbccf"
+    },
+    {
+      "question_id": "a4438b0f-b2b9-4be9-a9cc-22dc27282756",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "A municipality has not updated its CLUP since 2015. Under RA 7160, how frequently must the CLUP be reviewed and updated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every year—CLUPs are annual documents, which ensures they remain current with rapid urban changes"
+        },
+        {
+          "id": "b",
+          "text": "Every 3 years for midterm review; the full plan horizon is 10 years"
+        },
+        {
+          "id": "c",
+          "text": "Every 10 years only—CLUPs are static long-term plans, reflecting stable development goals"
+        },
+        {
+          "id": "d",
+          "text": "Never—once a CLUP is approved, it remains effective indefinitely, unless revoked by a higher authority"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CLUPs are not annual; they are medium-to-long-term plans.",
+        "b": "RA 7160 mandates a 10-year CLUP with a 3-year midterm review. This municipality is overdue for a midterm review (2015 + 3 = 2018, and it is now past 2018).",
+        "c": "While the full plan is 10 years, a 3-year review is required midterm.",
+        "d": "CLUPs must be periodically reviewed and updated.",
+        "correct": "RA 7160 establishes a 10-year CLUP planning horizon. [Note: The 3-year midterm review requirement is not explicitly cited in the provided search results and should be verified against the full text of RA 7160 or RA 11201.] This municipality is overdue for a midterm review (2015 + 3 = 2018, and it is now past 2018).",
+        "takeaway": "CLUP = 10-year plan with 3-year midterm review cycle."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160, RA 11201",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CLUP planning horizon",
+        "review frequency",
+        "RA 7160 compliance"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e68b614616f9de950a4d0078b4125b85b1a6d640b9281996b8d47cfab0346a67"
+    },
+    {
+      "question_id": "99973ce3-d930-4bf1-a94f-dc0b1ca4a8bb",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "Which local government body has the primary responsibility for preparing a Comprehensive Land Use Plan (CLUP)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Sanggunian (city or municipal council), which provides legislative oversight and approval"
+        },
+        {
+          "id": "b",
+          "text": "The Planning Office (LGU's technical planning arm)"
+        },
+        {
+          "id": "c",
+          "text": "The Mayor's Office (executive leadership), which sets strategic priorities and ensures implementation"
+        },
+        {
+          "id": "d",
+          "text": "DHSUD (national government), which provides guidelines and oversight but not direct preparation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sanggunian adopts the CLUP ordinance after preparation, but does not prepare it.",
+        "b": "The LGU's Planning Office is the technical arm responsible for CLUP preparation—data collection, analysis, stakeholder consultation, and drafting. The Sanggunian adopts it legislatively; DHSUD approves it nationally.",
+        "c": "Mayor's Office provides executive direction; Planning Office does the technical work.",
+        "d": "DHSUD approves CLUP conformity with national standards; LGU prepares.",
+        "correct": "The City/Municipal Development Council (CDC/MDC) initiates CLUP formulation in consultation with community sectors. The Planning and Development Coordinator (PDC) and technical planning staff provide support services. While the Planning Office may be involved in technical work, the CDC/MDC is the policy-recommending body that initiates the process per EO 72 Section 1. The Sanggunian adopts it legislatively; DHSUD approves it nationally.",
+        "takeaway": "CLUP preparation = Planning Office (technical). Adoption = Sanggunian. Approval = DHSUD."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d9be3d6e6c4bfdb3b6e9628f81b250fb873c2fc91efb7c748b3410581ccd2eb8"
+    },
+    {
+      "question_id": "a4b8742d-0d05-4830-ba11-d8a8d1cfccf9",
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "topic_id": "460cc085-51ac-4c87-b2bb-eaeb87cf55c6",
+      "text": "How does the decentralization of planning authority to LGUs under RA 7160 create both opportunities and challenges for Philippine land use governance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decentralization eliminates all national planning standards—each LGU operates entirely independently, without any need for coordination"
+        },
+        {
+          "id": "b",
+          "text": "Decentralization centralizes all power in the Mayor—the Sanggunian and Planning Office have no role, effectively sidelining other stakeholders"
+        },
+        {
+          "id": "c",
+          "text": "LGUs can tailor planning to local contexts (opportunity) but require national oversight (DHSUD approval) to prevent conflicting regional impacts (challenge)"
+        },
+        {
+          "id": "d",
+          "text": "Decentralization has no meaningful effect on governance—national government retains full control, rendering local plans ineffective"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DHSUD approval ensures national standards are maintained.",
+        "b": "Sanggunian legislative authority and Planning Office technical work are distributed; Mayor does not monopolize.",
+        "c": "RA 7160 empowers LGUs to prepare locally-tailored CLUPs (opportunity—recognition of local contexts), but DHSUD must approve CLUPs for national conformity (institutional check—ensuring watershed protection, agricultural preservation, inter-regional coordination). This is deliberate checks-and-balances.",
+        "d": "RA 7160 fundamentally shifted authority from national government to LGUs.",
+        "correct": "RA 7160 empowers LGUs to prepare locally-tailored CLUPs (opportunity—recognition of local contexts), but DHSUD must approve CLUPs for national conformity (institutional check—ensuring watershed protection, agricultural preservation, inter-regional coordination). This is deliberate checks-and-balances.",
+        "takeaway": "RA 7160 decentralization: local authority (LGU) + national oversight (DHSUD) = checks and balance."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160, EO 72",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "decentralization theory",
+        "national-local coordination",
+        "institutional design"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:28d14b77f1315b6d185714851a91845b8c1c9bd9c8fc198ea13f1030471f4071"
+    }
+  ]
+}

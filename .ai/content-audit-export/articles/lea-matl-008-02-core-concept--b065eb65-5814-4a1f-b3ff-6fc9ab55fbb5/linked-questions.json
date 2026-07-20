@@ -128,15 +128,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Glue"
+          "text": "Glue — an adhesive film/bond, not the BCI point-connector example"
         },
         {
           "id": "b",
-          "text": "Bolt"
+          "text": "Bolt — the BCI example of a point connector (through-hole with mating nut)"
         },
         {
           "id": "c",
-          "text": "Weld"
+          "text": "Weld — a fused joint, not the BCI point-connector example"
         },
         {
           "id": "d",
@@ -148,18 +148,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Glue is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-        "b": "Bolt This is the source-supported answer inside the Batch 153 local-first source boundary.",
-        "c": "Weld is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-        "d": "Backer rod is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-        "correct": "Bolt Supported by bci-5e-structural-joints-b153.",
-        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
-        "source_boundary": "bci-5e-structural-joints-b153",
-        "checked_sources": [
-          "bci-5e-structural-joints-b153"
-        ]
-      },
+      "rationale": "Bolt Supported by bci-5e-structural-joints-b153. [A]: Glue is not the best answer because it changes the source-backed concept or adds an unsupported claim. [B]: Bolt This is the source-supported answer inside the Batch 153 local-first source boundary. [C]: Weld is not the best answer because it changes the source-backed concept or adds an unsupported claim. [D]: Backer rod is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
       "explanation": null,
       "code_citation": "Local source boundary: BCI refined markdown lines 2147-2152.",
       "bloom_level": "understand",
@@ -175,7 +164,7 @@
       "model_id": "ALE-MATL-008-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.589759+00:00",
       "content_hash": "sha256:c61f287c516ac06b6aec3377d8b62788c9b2308f71caa2e44f1720155a44c994"
     },
     {

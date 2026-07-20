@@ -8,37 +8,31 @@
       "question_id": "110355c2-1a90-4f36-ba9e-a9ed15bd6b8e",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "Why is the distinction between design defects and execution defects important for the guarantee bond?",
+      "text": "How does UAP Document 301 define the guarantee bond?",
       "options": [
         {
           "id": "a",
-          "text": "There is no practical distinction between the two, as both can impact the project's overall quality and performance"
+          "text": "Security guaranteeing the quality of materials, installed equipment, and workmanship performed by the contractor"
         },
         {
           "id": "b",
-          "text": "Design defects are excluded because they result from the architect's design, not the contractor's execution, while the guarantee bond covers execution defects only"
+          "text": "Security guaranteeing bidder acceptance of a future contract"
         },
         {
           "id": "c",
-          "text": "Execution defects are always covered regardless of their cause, ensuring that the contractor is held accountable for all construction-related issues"
+          "text": "Insurance for foreign architects under a temporary permit"
         },
         {
           "id": "d",
-          "text": "Both types are always equally covered by the guarantee bond, providing comprehensive protection against any form of defect"
+          "text": "A payment bond for all supplier invoices only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly conflates the two; the distinction determines whether Contractor or Architect bears responsibility.",
-        "c": "Wrongly assumes blanket execution coverage; excluded execution defects (Owner-caused, wear) are still excluded.",
-        "d": "Wrongly treats both as covered; design defects are explicitly excluded from Guarantee Bond.",
-        "correct": "Guarantee Bond covers Contractor's execution defects but excludes design defects, which are Architect's responsibility.",
-        "takeaway": "Guarantee Bond scope: covers execution defects; excludes design defects (Architect's responsibility)."
-      },
+      "rationale": "Correct because it follows UAP Document 301 line 493. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": "Wrongly conflates the two; the distinction determines whether Contractor or Architect bears responsibility. Wrongly assumes blanket execution coverage; excluded execution defects (Owner-caused, wear) are still excluded. Wrongly treats both as covered; design defects are explicitly excluded from Guarantee Bond. Guarantee Bond covers Contractor's execution defects but excludes design defects, which are Architect's responsibility. Guarantee Bond scope: covers execution defects; excludes design defects (Architect's responsibility).",
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CTR-012-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-05-06T15:55:58.225681+00:00",
+      "updated_at": "2026-07-20T01:13:28.120171+00:00",
       "content_hash": "sha256:721c77b1a8fb07dc50379fa1c6b49e647a16b5df02cc57f9a4c86fe6ceee6fca"
     },
     {
       "question_id": "17fe5f8c-c0d3-4cfc-a851-af5beb974412",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "What is the primary purpose of the guarantee bond in a construction contract?",
+      "text": "Under CIAP Document 102, what replaces the performance and payment bonds for release purposes?",
       "options": [
         {
           "id": "a",
-          "text": "To guarantee the contractor completes the work on schedule"
+          "text": "A guarantee bond posted by the contractor"
         },
         {
           "id": "b",
-          "text": "To guarantee payment of all contractor invoices"
+          "text": "A bid bulletin"
         },
         {
           "id": "c",
-          "text": "To protect the owner against defects in materials, equipment, and workmanship that emerge after substantial completion"
+          "text": "An advertisement for bidders"
         },
         {
           "id": "d",
-          "text": "To set the final contract price, ensuring budget adherence and financial predictability"
+          "text": "The architect's seal"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses Guarantee Bond with Performance Bond; Performance guarantees completion, Guarantee covers post-completion quality.",
-        "b": "Confuses Guarantee Bond with Payment Bond; Payment guarantees invoice payment to subcontractors.",
-        "d": "Confuses bond with pricing; Guarantee Bond does not set contract price.",
-        "correct": "Guarantee Bond extends contractor liability for quality beyond completion, protecting Owner against latent defects discovered within the guarantee period.",
-        "takeaway": "Guarantee Bond protects Owner against quality defects emerging after Substantial Completion."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-821. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Document 301, General Conditions",
       "bloom_level": "remember",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-012-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.126483+00:00",
       "content_hash": "sha256:6e68baed64dd5ca230cd3f0eb5a8fa01b83d3c5e21a948734006fd7c802dd336"
     },
     {
       "question_id": "43268bb2-5c35-4305-bbd7-1857e5c7660c",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "Who bears responsibility for defects caused by the owner's improper maintenance of the completed work?",
+      "text": "What is the CIAP Document 102 amount basis for the guarantee bond?",
       "options": [
         {
           "id": "a",
-          "text": "The contractor under the guarantee bond, which covers defects regardless of maintenance issues"
+          "text": "An amount equivalent to the retention released to the contractor"
         },
         {
           "id": "b",
-          "text": "The surety alone, as they underwrite the contractor's performance and are liable for all defects"
+          "text": "A fixed 100% of the contract amount"
         },
         {
           "id": "c",
-          "text": "The owner, as maintenance and proper use are the owner's responsibility"
+          "text": "A bid bond of 1% to 5%"
         },
         {
           "id": "d",
-          "text": "The architect, who oversees the project and ensures all aspects are maintained post-completion"
+          "text": "A policy deductible chosen by the architect"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assigns to Contractor; maintenance-caused damage is Owner's responsibility.",
-        "b": "Wrongly assigns to Surety; Surety liability follows same exclusions as Contractor liability.",
-        "d": "Wrongly assigns to Architect; Architect is not responsible for post-completion maintenance.",
-        "correct": "Defects from Owner's failure to follow maintenance instructions are excluded from Guarantee Bond; Owner bears this responsibility.",
-        "takeaway": "Owner maintains responsibility for defects caused by Owner's improper maintenance or failure to follow instructions."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-821. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-012-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.123861+00:00",
       "content_hash": "sha256:8edb7fec74ed769c504f67d2bb9e6b4f2770eb57ff3c5a2800b96d2de1c0b098"
     },
     {
       "question_id": "5cffd4f4-a033-458e-802f-ad6da75e6832",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "What is an example of a defect covered by the guarantee bond?",
+      "text": "What is the CIAP Document 102 guarantee-bond period?",
       "options": [
         {
           "id": "a",
-          "text": "Damage caused by the owner's improper maintenance after completion, which is typically excluded from coverage"
+          "text": "One year from the date of posting"
         },
         {
           "id": "b",
-          "text": "Normal wear and tear from regular use, which is not considered a defect under the bond terms"
+          "text": "Fifteen years from bid opening"
         },
         {
           "id": "c",
-          "text": "Cracks in concrete slabs or paint delamination discovered within the one-year period"
+          "text": "Sixty days from advertisement"
         },
         {
           "id": "d",
-          "text": "Defects in the architect's design of the structure, which may require separate professional liability coverage"
+          "text": "Only until the first progress payment"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Owner's improper maintenance is an excluded cause; Owner bears responsibility for maintenance-caused damage.",
-        "b": "Normal wear is excluded; Guarantee Bond covers defects in workmanship and materials, not normal use deterioration.",
-        "d": "Design defects excluded; Guarantee Bond covers execution defects, not problems with the Architect's design.",
-        "correct": "Concrete cracks and paint failure are workmanship/material defects covered by Guarantee Bond if discovered within one-year period.",
-        "takeaway": "Covered defects include material/workmanship failures like concrete cracks, paint failure discovered in guarantee period."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-821. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-012-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.127110+00:00",
       "content_hash": "sha256:b19ae359b8ede28104c16b9e2b35ba6a30a1a6be9fcfab5879544e61a982588d"
     },
     {
       "question_id": "5dca4420-8949-4767-85cd-033ca6e1e140",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "What types of defects are excluded from guarantee bond coverage?",
+      "text": "What does the CIAP guarantee bond guarantee?",
       "options": [
         {
           "id": "a",
-          "text": "Only structural defects, which are considered outside the scope of guarantee bond coverage"
+          "text": "Acceptable quality of materials and workmanship installed under the contract"
         },
         {
           "id": "b",
-          "text": "Design defects, normal wear and tear, damage from acts of God, and defects caused by owner's misuse"
+          "text": "That the owner must select the lowest bidder"
         },
         {
           "id": "c",
-          "text": "All mechanical equipment defects, as these are typically covered under separate warranties"
+          "text": "That all design documents may be copied freely"
         },
         {
           "id": "d",
-          "text": "Defects in paint and sealants only, as these are minor and often excluded from major coverage"
+          "text": "That no lien release is needed"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly limits exclusions to structural defects; exclusions are broader and include design, wear, and Owner misuse.",
-        "c": "Wrongly assumes all mechanical defects are excluded; mechanical defects in workmanship/materials are covered.",
-        "d": "Wrongly suggests only finish defects excluded; exclusions include design, wear, and Owner-caused damage broadly.",
-        "correct": "Guarantee Bond excludes design defects (Architect responsibility), normal deterioration, environmental damage, and Owner-caused damage.",
-        "takeaway": "Excluded: design defects, normal wear/tear, acts of God, Owner misuse; covered: execution/material defects."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-821. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-012-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.121515+00:00",
       "content_hash": "sha256:0ed9f9b45d485c8d7c0c626c795c8b4696fd96aff31b14e6ff4aa5377a832692"
     },
     {
       "question_id": "126f3641-38fe-402a-95a8-b41680762e85",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "How are defects concelead by finishing work treated under the guarantee bond?",
+      "text": "If a material or workmanship defect develops within the guarantee period, what must the contractor do?",
       "options": [
         {
           "id": "a",
-          "text": "They are automatically excluded from coverage, unless explicitly stated otherwise in the contract terms"
+          "text": "Make repairs and corrective work at exclusive expense and commence within five days after written notice"
         },
         {
           "id": "b",
-          "text": "They remain the contractor's responsibility if discovered during the guarantee period, even if not visible at substantial completion"
+          "text": "Wait until final payment is reissued before acting"
         },
         {
           "id": "c",
-          "text": "They can only be claimed if discovered before the drywall is installed, which is unlikely once finishing is complete"
+          "text": "Refer the matter only to the bidder advertisement"
         },
         {
           "id": "d",
-          "text": "They transfer to the subcontractor's responsibility, provided the subcontractor's work is directly related to the defect"
+          "text": "Make the architect pay the surety premium"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes automatic exclusion; concealment doesn't disqualify coverage if discovered within period.",
-        "c": "Invents a timing requirement; the critical date is discovery within the guarantee period, not when finishing occurred.",
-        "d": "Wrongly transfers to subcontractor; primary responsibility remains with Contractor.",
-        "correct": "Concealed defects discovered during the guarantee period are covered, even if hidden at Substantial Completion (example: structural defects under drywall).",
-        "takeaway": "Concealed defects discovered within guarantee period are covered, even if hidden at Substantial Completion."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 815-821. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-012-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.122444+00:00",
       "content_hash": "sha256:7906da5a588aa5c5aa68b93c125fd94ed07eb15eb48926ab8616e1fd62cb0603"
     },
     {
       "question_id": "580c220c-0eec-4d85-916c-5260620cb6a7",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "When does the one-year guarantee period begin?",
+      "text": "Which source says the guarantee remedies do not prejudice Civil Code rights?",
       "options": [
         {
           "id": "a",
-          "text": "From the date the contract is signed, marking the official start of the project timeline"
+          "text": "CIAP Document 102 Article 32.06"
         },
         {
           "id": "b",
-          "text": "From the date of final payment to the contractor, which signifies the completion of all contractual obligations"
+          "text": "BP 344 Appendix A"
         },
         {
           "id": "c",
-          "text": "From the date of substantial completion of the work"
+          "text": "PD 1096 Rule VIII"
         },
         {
           "id": "d",
-          "text": "From the date the project is first occupied, indicating the start of the building's operational phase"
+          "text": "RA 9514 Fire Code"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Uses contract signing date; guarantee period is tied to completion, not contract execution.",
-        "b": "Uses final payment date; guarantee period is tied to Substantial Completion, not final payment.",
-        "d": "Uses occupancy date; Substantial Completion and occupancy are distinct milestones.",
-        "correct": "Guarantee period begins from Substantial Completion, when Architect certifies the work is sufficiently complete for Owner's use.",
-        "takeaway": "Guarantee period begins at Substantial Completion, not contract signing or payment."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 815-821. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-012-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.124536+00:00",
       "content_hash": "sha256:dcff0782d0a3d510edb3874f0fe4505a61361c485209ae380ae312c742786d5b"
     },
     {
       "question_id": "e171905d-7ae5-4c25-96a5-9650daa778d7",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "What happens to the guarantee bond when the one-year defects liability period expires?",
+      "text": "What does Civil Code Article 1723 address in this batch context?",
       "options": [
         {
           "id": "a",
-          "text": "The bond automatically renews for another year, which is not standard practice."
+          "text": "Fifteen-year liability for building collapse due to specified defects or contract violations"
         },
         {
           "id": "b",
-          "text": "The surety must continue providing coverage indefinitely, which is a misunderstanding."
+          "text": "One-year guarantee bond posting only"
         },
         {
           "id": "c",
-          "text": "The guarantee bond is released and the surety is discharged from further obligation"
+          "text": "Bid bulletin issuance before bidding"
         },
         {
           "id": "d",
-          "text": "The owner can extend the period unilaterally, which is not typically allowed."
+          "text": "Subcontract approval forms"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Assumes automatic renewal; the bond expires at one year unless specifically extended by contract.",
-        "b": "Wrongly assumes indefinite coverage; the bond terminates at the end of the one-year period.",
-        "d": "Wrongly permits unilateral extension; Owner cannot unilaterally extend the bond period.",
-        "correct": "Upon one-year expiration, Guarantee Bond is released and Surety's liability ceases; Architect typically issues release certificate.",
-        "takeaway": "At end of 1-year period, Guarantee Bond expires and Surety is discharged; Owner loses recourse."
-      },
+      "rationale": "Correct because it follows Civil Code Article 1723 line 349. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-012-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.125848+00:00",
       "content_hash": "sha256:07353e05b7a6f2b25b8fd176e62d38ebb602470773e12895be02510b9a35fd89"
     },
     {
       "question_id": "4cd00f3c-80fc-45e5-bac2-e3958205a3ec",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "What is the standard duration of the defects liability period?",
+      "text": "Which distinction is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "6 months from substantial completion"
+          "text": "Guarantee bond covers contract materials and workmanship; Civil Code Article 1723 separately addresses collapse liability"
         },
         {
           "id": "b",
-          "text": "1 year from substantial completion"
+          "text": "Guarantee bond and bid bond are the same instrument"
         },
         {
           "id": "c",
-          "text": "2 years from substantial completion"
+          "text": "Civil Code Article 1723 sets the bid-bond amount"
         },
         {
           "id": "d",
-          "text": "5 years from project handover"
+          "text": "Guarantee bond is the owner's professional indemnity policy"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Understates standard duration; six months is shorter than the standard one-year period.",
-        "c": "Overstates standard duration; two years exceeds the standard one-year obligation.",
-        "d": "Confuses handover timing; period runs from Substantial Completion, not project handover date.",
-        "correct": "Defects liability period is typically one year from Substantial Completion in many standard construction contracts.",
-        "takeaway": "Standard defects liability period = 1 year from Substantial Completion."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-821; Civil Code Article 1723 line 349. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CTR-012-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.123162+00:00",
       "content_hash": "sha256:6402652c8640f64b8c5780d02754384264d7f85e2eb211fab247d70f97b0cb90"
     },
     {
       "question_id": "94643169-bd6f-40cc-8015-0bf19127dbf4",
       "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
       "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
-      "text": "What is the owner's responsibility regarding defect notification during the guarantee period?",
+      "text": "What should an exam answer avoid when this article names CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "The owner has no obligation to notify the contractor of defects, as the contractor is expected to identify and rectify issues independently"
+          "text": "Replacing the one-year-from-posting rule with a different period not stated by the named source"
         },
         {
           "id": "b",
-          "text": "The owner must diligently identify and report defects to the contractor during the guarantee period to preserve the right to claim them against the bond"
+          "text": "Stating that materials and workmanship are part of the guarantee"
         },
         {
           "id": "c",
-          "text": "The owner may report defects years after the guarantee period ends, relying on the contractor's goodwill for resolution"
+          "text": "Recognizing the owner's retained legal rights"
         },
         {
           "id": "d",
-          "text": "Defects automatically transfer to a new bond if not reported within 6 months, ensuring continuous coverage without owner intervention"
+          "text": "Separating guarantee bond from payment bond"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly removes Owner's obligation; prompt notification protects claim and gives Contractor remedy chance.",
-        "c": "Wrongly permits delayed notice; defects reported after period expires may be unenforceable.",
-        "d": "Invents automatic transfer rule; defects not timely reported are lost unless specifically provided in contract.",
-        "correct": "Owner must promptly report defects discovered during guarantee period to preserve claims and give Contractor cure opportunity.",
-        "takeaway": "Owner must diligently identify and report defects during guarantee period to preserve bond claims."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 813-821. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-012-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.125204+00:00",
       "content_hash": "sha256:46e3a1e4658bd7f1862248f0277ccf82a9e753623f8f6d9adb9a7e367cc728d6"
     }
   ]

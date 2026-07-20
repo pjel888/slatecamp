@@ -1,11 +1,45 @@
 {
   "question_id": "477e44ee-af37-4bd2-8477-c3fc8223f552",
   "baseline_hash": "sha256:5f569f05c1dee6357399f042d9aeedcf598ce80efa7c596a5eed819847563bad",
-  "reason": "Batch 008 local source audit aligned linked question 477e44ee-af37-4bd2-8477-c3fc8223f552 with the repaired Location on Property and Exterior Walls article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-008",
-  "approved_at": "2026-05-10T18:13:43+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited Rule II Sec. 215 IRR Category 1(f) plumb-line test (masonry stability) which is off-scope for an article limited to PD 1096 Rule VII Sec. 704 (Location on Property and Exterior Walls). Replaced with a Sec. 704-grounded question on the basic location rule.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "chunk_id": "source-pack-pd-1096-irr-chunk-0001",
+        "section_locator": "Rule VII / Section 704.1 Location on Property"
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704.1(a)"
+  },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
-    "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft."
+    "text": "Under PD 1096 Rule VII, Section 704(1)(a), no building may be constructed unless it has what minimum relationship to a public space, yard, or street?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It must front directly on a public street on its main facade only"
+      },
+      {
+        "id": "b",
+        "text": "It must adjoin or have direct access to a public space, yard, or street on at least one of its sides"
+      },
+      {
+        "id": "c",
+        "text": "It must adjoin a public space on at least two opposite sides"
+      },
+      {
+        "id": "d",
+        "text": "It must have frontage on a public street equal to at least half of its perimeter"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Section 704(1)(a) is the basic location rule: no building shall be constructed unless it adjoins or has direct access to a public space, yard, or street on at least one of its sides. Direct frontage on a public street is not required; access through an easement or yard is sufficient.",
+    "explanation": "This is the first filter for location questions under Section 704. Confirm the one-side access/frontage relationship before measuring openings, projections, or fire-resistance distances.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704.1(a)"
   }
 }

@@ -8,37 +8,31 @@
       "question_id": "b9495b6d-1d17-4d15-96d9-26d7ba7669a3",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "What documentation should an architect provide when transitioning a partial services engagement to another architect?",
+      "text": "Which statement keeps abandonment compensation source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Only the final drawings; other documentation is the next architect's responsibility, unless otherwise agreed upon"
+          "text": "Payment follows services already rendered and the amount due at the reached stage."
         },
         {
           "id": "b",
-          "text": "Complete Design Development drawings, specifications, consultant coordination documentation, site investigation reports, cost estimates, program documentation, and design notes"
+          "text": "Payment is always zero if no building is completed."
         },
         {
           "id": "c",
-          "text": "No documentation is necessary; the next architect starts from scratch, allowing for a fresh perspective"
+          "text": "Payment is always the final project construction cost."
         },
         {
           "id": "d",
-          "text": "Only a brief summary of design decisions; detailed documentation is confidential, protecting intellectual property"
+          "text": "Payment is decided only by the general contractor."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Inadequate; handoff requires comprehensive documentation beyond drawings.",
-        "c": "Inefficient; comprehensive handoff prevents redesign of completed work.",
-        "d": "Incorrectly treats design documentation as confidential; client owns the work product.",
-        "correct": "Comprehensive handoff documentation facilitates continuity and allows the next architect to proceed efficiently. The first architect should provide complete Design Development deliverables, consultant information, and design rationale.",
-        "takeaway": "Comprehensive handoff (drawings, specs, consultants, site data, cost estimates, program, design rationale) enables the next architect to proceed efficiently."
-      },
+      "rationale": "SPP 202 frames abandonment as payment for rendered services at the stage reached.",
       "explanation": "Inadequate; handoff requires comprehensive documentation beyond drawings. Inefficient; comprehensive handoff prevents redesign of completed work. Incorrectly treats design documentation as confidential; client owns the work product. Comprehensive handoff documentation facilitates continuity and allows the next architect to proceed efficiently. The first architect should provide complete Design Development deliverables, consultant information, and design rationale. Comprehensive handoff (drawings, specs, consultants, site data, cost estimates, program, design rationale) enables the next architect to proceed efficiently.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CMP-013-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-05-06T13:14:19.368014+00:00",
+      "updated_at": "2026-07-20T01:13:22.828309+00:00",
       "content_hash": "sha256:34bfa3cf072b11b0520214d544bd093bb772d1db4319e665f5a1a5629d26e6d8"
     },
     {
       "question_id": "4e8e2315-e8a0-48f7-a51b-3e8a404eb418",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "What key provisions should a contract establish to protect the architect's interests regarding abandonment and partial services?",
+      "text": "Why is an owner-ordered change after approval not treated as unpaid basic work?",
       "options": [
         {
           "id": "a",
-          "text": "The contract need not address abandonment; it is an uncommon occurrence, which is a risky assumption for any professional agreement"
+          "text": "SPP 202 requires payment for extra time, resources, drafting, or office expenses caused by the approved-output change."
         },
         {
           "id": "b",
-          "text": "Milestone-based compensation percentages, payment for completed phases at abandonment, reimbursable expense coverage, change order procedures, and handoff documentation requirements"
+          "text": "Because every design change is always free until construction starts."
         },
         {
           "id": "c",
-          "text": "Only the total project fee; all other details are negotiated if abandonment occurs, which leaves the architect vulnerable to financial loss"
+          "text": "Because only the contractor may charge for changes."
         },
         {
           "id": "d",
-          "text": "The contract should guarantee that the client will not abandon the project, which is an unrealistic expectation in contract law"
+          "text": "Because changes after approval cancel the earlier fee schedule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Underestimates risk; abandonment occurs frequently enough to warrant proactive contracting.",
-        "c": "Leaves protection to post-abandonment negotiation; proactive contract language is essential.",
-        "d": "Guarantees are impossible; contracts must specify compensation if abandonment occurs.",
-        "correct": "Contracts should establish clear abandonment and partial services provisions: milestone compensation percentages, payment for completed phases, reimbursable expense coverage, change order handling, and documentation handoff requirements. This protects the architect and sets clear client expectations.",
-        "takeaway": "Protective abandonment provisions include: SPP 202 percentages, payment-on-completion, expense coverage, change order procedures, and handoff documentation."
-      },
+      "rationale": "The source expressly makes post-approval owner changes compensable as extra time, resources, drafting, or office expenses.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "analyze",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CMP-013-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.828978+00:00",
       "content_hash": "sha256:aaeca2e7a135ec610968988b41480ccda85c5002dee6e9fd0d5692630ccf14a8"
     },
     {
       "question_id": "1b51cc24-afc0-4de5-9b00-a316a3efd908",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "When a project is abandoned, what happens to reimbursable expenses the architect advanced on the client's behalf?",
+      "text": "Under SPP 202, what is the source-safe fee rule when the Architect's work is abandoned or suspended in part?",
       "options": [
         {
           "id": "a",
-          "text": "The architect absorbs all reimbursable expenses as a loss, which can significantly impact their financial stability"
+          "text": "The Owner pays for services rendered corresponding to the amount due at the stage reached."
         },
         {
           "id": "b",
-          "text": "Reimbursable expenses are due and payable regardless of project abandonment because they are actual costs incurred"
+          "text": "All architect compensation is forfeited."
         },
         {
           "id": "c",
-          "text": "Reimbursable expenses are forgiven if the project fails to proceed, as a gesture of goodwill towards the client"
+          "text": "The Architect automatically receives more than 100 percent of the fee."
         },
         {
           "id": "d",
-          "text": "Only reimbursable expenses related to completed work are due; others are forgiven, depending on the terms of the contract"
+          "text": "The building official sets the professional fee after abandonment."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrectly absorbs client-authorized costs; the client should reimburse.",
-        "c": "Falsely forgives expenses; client authorization obligates reimbursement.",
-        "d": "Incorrectly conditions reimbursement on work completion; all authorized expenses are reimbursable.",
-        "correct": "Reimbursable expenses are legitimate project costs that the architect advanced on the client's behalf. The client should reimburse actual expenses regardless of project abandonment, as the costs were incurred with client authorization.",
-        "takeaway": "Reimbursable expenses are due at abandonment even if the project doesn't proceed; they represent actual client-authorized costs."
-      },
+      "rationale": "SPP 202 ties payment to services rendered and the stage reached when work is abandoned or suspended.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CMP-013-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.826105+00:00",
       "content_hash": "sha256:b12a6db50f8629e3e5e20889fe0dc969cc50f8e91a9c31bccd9a61e9fd24b03f"
     },
     {
       "question_id": "a07c4e2d-238f-4ba5-8ec5-92da896901e0",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "If a project is abandoned after the Design Development phase is complete, what percentage of the total SPP 202 fee has the architect earned?",
+      "text": "Under the checked SPP 202 wording, what happens if suspension of construction exceeds six months?",
       "options": [
         {
           "id": "a",
-          "text": "15% (Schematic Design only), which does not account for the Design Development phase"
+          "text": "The fee for the remaining works is doubled."
         },
         {
           "id": "b",
-          "text": "20% (Design Development only), which ignores the Schematic Design phase"
+          "text": "The owner-architect agreement is automatically void."
         },
         {
           "id": "c",
-          "text": "35% (Schematic Design 15% + Design Development 20%)"
+          "text": "The contractor receives the Architect's fee."
         },
         {
           "id": "d",
-          "text": "85% (all phases except Construction Administration), which overstates the completed work"
+          "text": "All remaining services become reimbursables only."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Calculates only Schematic Design; Design Development is also completed and compensated.",
-        "b": "Calculates only Design Development; Schematic Design percentage is also earned.",
-        "d": "Incorrectly includes Contract Documents (50%); Design Development completion is only 35%.",
-        "correct": "The architect receives compensation for completed design phases. Abandonment after Design Development completion means Schematic Design (15%) + Design Development (20%) = 35% of the total fee.",
-        "takeaway": "At abandonment, the architect receives fees based on completed phases: 15% (SchD) + 20% (DD) + 50% (CD) + 5% (Bid) + 10% (CA) based on where work stopped."
-      },
+      "rationale": "The six-month rule in the checked source doubles the fee for remaining works.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "remember",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CMP-013-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.829634+00:00",
       "content_hash": "sha256:21d30bad0cce1e8f56589014c24ec3235f6c2322238cfdbef27e33ec3defcb15"
     },
     {
       "question_id": "752886ac-ee1c-458b-b278-62a4e9b87142",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "If an architect is retained for Design Development services only (taking over from another architect who completed Schematic Design), what percentage of the SPP 202 total fee represents fair compensation?",
+      "text": "What must an LEA answer identify before computing an abandonment-related fee consequence?",
       "options": [
         {
           "id": "a",
-          "text": "15% (Schematic Design rate)"
+          "text": "The service stage reached at suspension or abandonment."
         },
         {
           "id": "b",
-          "text": "20% (Design Development only rate)"
+          "text": "The contractor's preferred construction method."
         },
         {
           "id": "c",
-          "text": "35% (Assuming Schematic Design is automatically included)"
+          "text": "The date of PRC registration renewal."
         },
         {
           "id": "d",
-          "text": "100% (full fee regardless of which phases are included)"
+          "text": "The number of bidders invited to tender."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "15% is the allocation for the Schematic Design phase, not Design Development.",
-        "c": "35% would be correct if the architect were contracted for both Schematic Design and Design Development, but the question specifies Design Development services only.",
-        "d": "100% represents the full regular design services fee, not a partial service.",
-        "correct": "If an architect is engaged strictly for the Design Development phase, compensation is based solely on the phase executed, which is 20% of the total fee under SPP 202.",
-        "takeaway": "Design Development alone is 20% of the total architectural fee under standard SPP 202 phase breakdowns."
-      },
+      "rationale": "The source-safe calculation starts with the amount due at the stage of suspension or abandonment.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "understand",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CMP-013-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.825233+00:00",
       "content_hash": "sha256:1871e15e50881d1a09f99897e8e091a171a9d802f0eaeac253dffd22cee345be"
     },
     {
       "question_id": "c4b97a1f-a0b0-4708-b5de-829f58b3a1b2",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "How should a contract distinguish between project suspension (temporary halt) and project abandonment (permanent discontinuation)?",
+      "text": "A client approves drawings, then asks for a different layout before permit filing. Which cost category does SPP 202 support?",
       "options": [
         {
           "id": "a",
-          "text": "The contract need not distinguish; both are treated identically, which can lead to legal ambiguities"
+          "text": "Additional payment for extra time, resources, drafting, or other office expenses."
         },
         {
           "id": "b",
-          "text": "Clear language specifying that suspension is temporary with expected resumption, while abandonment is permanent, with differing compensation consequences"
+          "text": "A free revision because the project has not been built."
         },
         {
           "id": "c",
-          "text": "Suspension and abandonment are the same; no distinction is necessary, which is a common misconception"
+          "text": "A payment bond claim against subcontractors."
         },
         {
           "id": "d",
-          "text": "Only abandonment requires contract specification; suspension is assumed, which may not protect all parties involved"
+          "text": "A public bidding addendum only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Identical treatment ignores different compensation implications.",
-        "c": "Falsely suggests equivalence; suspension and abandonment have different implications.",
-        "d": "Suspension requires specification too; both need clear contractual definition.",
-        "correct": "Clear contract language distinguishing suspension (temporary with expected resumption) from abandonment (permanent discontinuation) protects both parties. Compensation consequences differ: suspension may involve retainer fees for maintained availability; abandonment triggers payment for completed work.",
-        "takeaway": "Distinguish suspension (temporary, architect maintains readiness) from abandonment (permanent, architect paid for completed phases)."
-      },
+      "rationale": "Post-approval owner-ordered changes are separately compensable under the checked source.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CMP-013-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.824104+00:00",
       "content_hash": "sha256:662215d4882629f6dec1e10dfe895075bd3236c2b2e091df270cd2b04a7d1d76"
     },
     {
       "question_id": "f534ecad-7cc0-46f9-8959-4aa73544b522",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "What is partial services architecture engagement?",
+      "text": "Which fact distinguishes non-implementation compensation from ordinary early-stage abandonment?",
       "options": [
         {
           "id": "a",
-          "text": "An incomplete engagement where the architect doesn't finish the contracted work, leading to potential disputes"
+          "text": "The Architect has prepared the plans, designs, specifications, and construction documents that SPP 202 treats as ninety percent of the work."
         },
         {
           "id": "b",
-          "text": "A client engagement limited to specific phases (such as Design Development only, excluding Contract Documents and Construction Administration)"
+          "text": "The contractor has posted a guarantee bond."
         },
         {
           "id": "c",
-          "text": "A project that is partially funded by the client, affecting the scope of services provided"
+          "text": "The owner has hired a resident inspector."
         },
         {
           "id": "d",
-          "text": "An engagement where the architect only provides some of the required deliverables, based on client agreement"
+          "text": "The project is located within 50 kilometers of the office."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses incomplete/abandoned engagement with deliberate partial services.",
-        "c": "Describes funding issues, not partial services engagement structure.",
-        "d": "Describes incomplete delivery; partial services is intentional limited scope.",
-        "correct": "Partial services is a legitimate engagement where the client contracts for specific phases only. A client might retain an architect for Schematic Design and Design Development only, planning to engage another architect for subsequent phases.",
-        "takeaway": "Partial services is intentional limited-scope engagement (SchD only, or SchD+DD) where the client will engage another architect for later phases."
-      },
+      "rationale": "The non-implementation rule turns on completed plans and documents, not on contractor bond or travel-distance facts.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CMP-013-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.830288+00:00",
       "content_hash": "sha256:047f91634bb28d28322232824651fd978ad08a995679b875d719955c1c039cb5"
     },
     {
       "question_id": "ec126b09-3536-450b-9eb2-9f6d1fff38c6",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "What is an abandoned project in architecture practice?",
+      "text": "What is unsafe in an answer about fees for abandoned projects?",
       "options": [
         {
           "id": "a",
-          "text": "A project where the architect leaves the project before it is complete, often due to unresolved disputes or financial issues"
+          "text": "Claiming a full or punitive fee without checking the reached stage and source condition."
         },
         {
           "id": "b",
-          "text": "A project where the client discontinues the project before completion"
+          "text": "Using the stage reached to determine compensation."
         },
         {
           "id": "c",
-          "text": "A project that continues but without client funding, leading to potential delays and incomplete work"
+          "text": "Recognizing the ninety-percent non-implementation rule for completed plans and documents."
         },
         {
           "id": "d",
-          "text": "A project that is redesigned by a different architect, usually after the original design fails to meet client expectations"
+          "text": "Separating post-approval changes from basic work."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Describes architect withdrawal; abandonment is client-initiated discontinuation.",
-        "c": "Describes funding failure; abandonment is project discontinuation.",
-        "d": "Describes design reassignment; abandonment is project discontinuation.",
-        "correct": "An abandoned project is one where the client discontinues the project before completion. The client may abandon at various points: during Schematic Design, Design Development, after Contract Documents, or during construction.",
-        "takeaway": "Abandonment is client-initiated project discontinuation at any phase; the architect retains fees earned for completed work."
-      },
+      "rationale": "The source supports stage-based compensation and specific conditions; it does not create a blanket punitive fee.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "remember",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CMP-013-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.830926+00:00",
       "content_hash": "sha256:fb6bb1e5b173e18f43c348c8652b5ddc7371f16601aa7afca560e85409ffab42"
     },
     {
       "question_id": "2b904ff5-b69f-4401-95df-dced47049557",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "An architect completes Contract Documents and is not contracted to provide Construction Administration. The client manages construction independently. What is this engagement type and what fee applies?",
+      "text": "If the Owner does not implement plans and contract documents prepared by the Architect, what compensation does the checked SPP 202 source support?",
       "options": [
         {
           "id": "a",
-          "text": "Abandoned project; the architect receives 50% (Contract Documents only), reflecting the partial completion of services"
+          "text": "Compensation corresponding to ninety percent of the Architect's fee."
         },
         {
           "id": "b",
-          "text": "Partial services (Design only); the architect receives 85% (Schematic through Contract Documents)"
+          "text": "No compensation because no contractor started work."
         },
         {
           "id": "c",
-          "text": "The architect must provide Construction Administration at no additional cost, as it is considered part of the standard service package"
+          "text": "A fixed five percent fee regardless of the stage reached."
         },
         {
           "id": "d",
-          "text": "The contract is incomplete and must be renegotiated to clarify the scope and fee structure"
+          "text": "A doubled full fee without reference to construction suspension."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mischaracterizes as abandonment; this is intentional partial services.",
-        "c": "Incorrectly obligates unpaid Construction Administration; contract limits scope.",
-        "d": "Contract is complete as written; it deliberately excludes Construction Administration.",
-        "correct": "This is partial services (Design only, without Construction Administration). The architect receives 85% of SPP 202 total fee for Schematic Design (15%) + Design Development (20%) + Contract Documents (50%).",
-        "takeaway": "Design-only partial services = 85% of full fee (SchD 15% + DD 20% + CD 50%); Construction Administration 10% is intentionally excluded."
-      },
+      "rationale": "The checked source states that completed detailed design and contract documents represent ninety percent of the Architect's work, and non-implementation supports that corresponding compensation.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "apply",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CMP-013-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.826852+00:00",
       "content_hash": "sha256:f439f7d1ee7e5b979f3a7d49c08229c7bb991990f5805aa8833b17196dc52271"
     },
     {
       "question_id": "91b21745-b280-49c1-b3a9-b9c52c892622",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
       "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "A project is abandoned after Contract Documents completion. The architect has incurred 500,000 pesos in reimbursable expenses (consultant fees, site investigation, permits). The total design fee is 3 million pesos. What total amount should the client pay?",
+      "text": "When construction is carried out in different periods and the Architect's construction-phase burden increases, what happens to construction-phase charges?",
       "options": [
         {
           "id": "a",
-          "text": "2.55 million pesos (85% of 3 million design fee only; reimbursable expenses are forgiven, which is a common practice in some contractual agreements)"
+          "text": "They are adjusted proportionately for the services rendered during the construction phase."
         },
         {
           "id": "b",
-          "text": "3.05 million pesos (85% of design fee = 2.55 million + reimbursable expenses = 0.5 million)"
+          "text": "They are automatically erased."
         },
         {
           "id": "c",
-          "text": "3 million pesos (full design fee; reimbursable expenses are separate and must be settled independently)"
+          "text": "They become a contractor bond premium."
         },
         {
           "id": "d",
-          "text": "2.5 million pesos (50% of design fee as a compromise, which might be negotiated in cases of mutual agreement to terminate)"
+          "text": "They become a fixed honorarium unrelated to remaining work."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Includes design fees correctly (85%) but incorrectly forgives reimbursable expenses.",
-        "c": "Incorrectly applies full fees when only 85% are earned at Contract Documents completion.",
-        "d": "Underestimates phase percentage (85% earned, not 50%) and omits reimbursable expenses.",
-        "correct": "At abandonment after Contract Documents, the architect receives 85% of design fee (Schematic 15% + Design Development 20% + Contract Documents 50%) = 2.55 million pesos. Additionally, reimbursable expenses (0.5 million) are due and payable. Total = 3.05 million pesos.",
-        "takeaway": "At abandonment, architect receives: (applicable phase percentages × total fee) + all reimbursable expenses incurred."
-      },
+      "rationale": "SPP 202 states that construction-phase charges are adjusted proportionately when different construction periods increase the Architect's burden.",
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "analyze",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CMP-013-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.827607+00:00",
       "content_hash": "sha256:9a6f79d64037bc86fe9f3b2554a5410db4206bf9e31f2522d09f49bdf07a97a7"
     }
   ]

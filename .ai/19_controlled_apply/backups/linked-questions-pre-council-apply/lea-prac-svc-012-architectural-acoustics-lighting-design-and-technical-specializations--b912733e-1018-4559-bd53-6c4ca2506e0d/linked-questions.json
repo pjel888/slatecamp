@@ -1,0 +1,508 @@
+{
+  "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:cddeac778f4fde1f166167dc6768ae44d9145c024bcf674aacd14cce65c74168",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "53445e63-acfb-4a3f-a3ba-388720f67116",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "Why are the services in SPP 203 considered 'Specialized' compared to the services in SPP 202?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because they are optional and never required for a project, allowing for flexibility in service offerings"
+        },
+        {
+          "id": "b",
+          "text": "Because they require expertise beyond the normal scope of basic architectural design"
+        },
+        {
+          "id": "c",
+          "text": "Because they can only be performed by foreign architects, which is a misconception"
+        },
+        {
+          "id": "d",
+          "text": "Because they do not require a license to perform, which is not accurate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They may be essential depending on the complexity of the project (e.g., a concert hall requires acoustics).",
+        "c": "Local licensed architects are encouraged to specialize in these fields.",
+        "d": "Most specialized services within the practice of architecture still require a license and professional liability.",
+        "correct": "SPP 203 describes these as services that require higher technical knowledge or specific training that is not part of the 'Regular Design Services' scope.",
+        "takeaway": "Specialized services provide deeper expertise for specific technical or planning needs."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:add41519085ac615fd1bad507eda56ada2cc5a4c9abd1ec9f0a1a3d466f07084"
+    },
+    {
+      "question_id": "21051feb-3e54-40ec-a27d-672697596090",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "Which service involves investigating the causes of structural failures or building-related disputes for legal proceedings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Building Testing and Commissioning"
+        },
+        {
+          "id": "b",
+          "text": "Forensic Architecture"
+        },
+        {
+          "id": "c",
+          "text": "Facilities Maintenance Support"
+        },
+        {
+          "id": "d",
+          "text": "Building Environment Certification"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Commissioning (203.11) is about ensuring systems work as designed before handover.",
+        "c": "Maintenance support (203.9) is for post-occupancy building upkeep.",
+        "d": "Certification (203.12) refers to rating systems like LEED or BERDE.",
+        "correct": "SPP 203.13 defines Forensic Architecture as the service of investigating building failures, moisture penetration, and other issues for use in legal or administrative cases.",
+        "takeaway": "Forensic Architecture is the investigative and legal side of architectural expertise."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5ce1f2814daf364021060c35015819bafe6ae717e25f4d35097e493ad6812cd3"
+    },
+    {
+      "question_id": "614b45c3-91ee-4eab-ab31-181b077f9fbf",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "What is included in the scope of Architectural Lighting Layout and Design Services under SPP 203.2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The manufacturing of specialized light fixtures, which is typically outside the scope of architectural services."
+        },
+        {
+          "id": "b",
+          "text": "The layout and design of lighting for both indoor and outdoor applications"
+        },
+        {
+          "id": "c",
+          "text": "The payment of the building's monthly electricity bills, which is a financial responsibility of the owner."
+        },
+        {
+          "id": "d",
+          "text": "The installation of high-voltage power lines, which requires specialized electrical engineering expertise."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architects design layouts; they do not manufacture fixtures.",
+        "c": "Utility payments are administrative/operational and not part of design services.",
+        "d": "Power line installation is the responsibility of electrical engineers and utility companies.",
+        "correct": "SPP 203.2 defines this service as preparing drawings and specifications for lighting layout, design, and control for indoor and outdoor applications.",
+        "takeaway": "Lighting services cover the design and control of light for all areas of the project."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3e6698ae9de308515dd82b280b875e02fa4610909f010a1687c52e0046ffa2ed"
+    },
+    {
+      "question_id": "1695f6e9-857b-476e-9825-7a671c13996c",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "If a project involves the preservation of a building of significant cultural and national importance, which service under SPP 203 is most applicable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Building Information Modeling (BIM), which focuses on digital representation and management of building data"
+        },
+        {
+          "id": "b",
+          "text": "Historic and Cultural Heritage Conservation and Planning"
+        },
+        {
+          "id": "c",
+          "text": "Security Evaluation and Planning, ensuring the protection of assets and people through strategic design"
+        },
+        {
+          "id": "d",
+          "text": "Architectural Graphics, which involves the creation of visual representations for design communication"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "BIM (203.14) is a technology for building lifecycle management.",
+        "c": "Security (203.7) focuses on protecting people and property from threats.",
+        "d": "Graphics (203.10) involves signage and visual displays.",
+        "correct": "SPP 203.6 covers Historic and Cultural Heritage Conservation, which involves specialized research and planning for landmark structures.",
+        "takeaway": "Preservation of heritage sites requires specific expertise in conservation and heritage planning."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:79119a8a74c2933760f3e2aa53f64323da5967bee1fef564d7bb103722b75745"
+    },
+    {
+      "question_id": "5fc485ae-8c6b-4196-a57b-e18c21d8bbaa",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "Under the General Notes of SPP 203, what are the two ways an Architect may provide Specialized Architectural Services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As a licensed contractor or as a material supplier, providing both design and construction services"
+        },
+        {
+          "id": "b",
+          "text": "As the Architect-of-Record or as a Consulting Architect, ensuring compliance with all relevant codes and standards"
+        },
+        {
+          "id": "c",
+          "text": "As the Specialist themselves or by coordinating with a Specialist"
+        },
+        {
+          "id": "d",
+          "text": "As a government inspector or a private developer, overseeing project implementation and compliance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architects under SPP 203 act in a professional service capacity, not as contractors or suppliers.",
+        "b": "While related, SPP 203 specifically highlights the 'Specialist' relationship.",
+        "d": "These are external roles not defined as the primary methods of providing services in SPP 203.",
+        "correct": "SPP 203 specifies that the Architect may perform the services if they have the expertise, or they may act as the lead professional coordinating with a separate Specialist.",
+        "takeaway": "Architects can either be the expert themselves or manage the experts in a coordinated design team."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c2716a40e9a15443747a54641e795d15df29a428d4231e9398bd6e23e090c41"
+    },
+    {
+      "question_id": "a5b92750-8d63-4321-a3ff-85ca017b3b4e",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "What is the recommended method of compensation for Specialized Architectural Services according to SPP 203?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Included for free in the Architect's Basic Services, which is a common misunderstanding"
+        },
+        {
+          "id": "b",
+          "text": "Negotiated through various methods such as percentage of cost, lump sum, or hourly rates"
+        },
+        {
+          "id": "c",
+          "text": "Always fixed at 1% of the project cost, which simplifies budgeting but may not reflect service complexity"
+        },
+        {
+          "id": "d",
+          "text": "Paid only through a barter of goods and services, which is rarely practiced in modern contracts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Specialized services are additional to the Basic Design Services defined in SPP 202.",
+        "c": "While percentages are used, they are not 'fixed' at 1% for all 20 categories.",
+        "d": "Barter is not a recognized professional fee method in the SPP.",
+        "correct": "SPP 203 General Notes mention that compensation can be based on a percentage of the cost of the work, lump sum, or time-based (hourly) fees.",
+        "takeaway": "Specialized services are paid separately from basic services and allow for flexible negotiation."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:87821344fd1f194feb946dbb9c63c7803258613a129ef0c0781dee44f293bbcc"
+    },
+    {
+      "question_id": "c10e5add-6408-4c7d-9e7c-89fb0017b442",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "What is the primary objective of Building Environmental Certification under SPP 203.12?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To certify that a building is safe from fire hazards, ensuring compliance with safety regulations"
+        },
+        {
+          "id": "b",
+          "text": "To assist in placing the building under a rating system for sustainable or 'green' design"
+        },
+        {
+          "id": "c",
+          "text": "To certify that a building has paid all its local taxes, confirming financial compliance"
+        },
+        {
+          "id": "d",
+          "text": "To provide a certificate of occupancy, allowing legal use of the building"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fire safety is part of general building code compliance and specialized fire protection services.",
+        "c": "Taxes are financial/legal matters, not architectural services.",
+        "d": "Certificate of Occupancy is issued by the Office of the Building Official (OBO).",
+        "correct": "SPP 203.12 states the Architect assists in the rating of a building using environmental systems (like LEED, BERDE, or GBCP).",
+        "takeaway": "Environmental certification focuses on sustainability and green building standards."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f5dec51572bcb9f69152740fd7cdfa4f661038ebc8fe33ec8ec8a562679dd0b7"
+    },
+    {
+      "question_id": "d7bee01c-0d5f-464d-8c67-02b3a086a4fc",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "Which specialized service under SPP 203 involves the planning of the site to maximize the utilization of land for a project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comprehensive Development Planning, which includes broader regional considerations"
+        },
+        {
+          "id": "b",
+          "text": "Site Development Planning (SDP) Services"
+        },
+        {
+          "id": "c",
+          "text": "Space Planning, which focuses on interior layouts rather than site utilization"
+        },
+        {
+          "id": "d",
+          "text": "Forensic Architecture, which is unrelated to site planning"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CDP is a larger scale planning service involving social and economic factors.",
+        "c": "Space planning (203.15) focuses on interior arrangements.",
+        "d": "Forensic architecture involves investigating building failures and legal disputes.",
+        "correct": "SPP 203.3 describes SDP as services focused on the space/land around and between buildings to maximize usage.",
+        "takeaway": "SDP focuses on site utilization and the relationship between buildings and their surrounding land."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:90c6bb2fc8d27d149601481249d0bfa7b89e6eed69a91208c3acfe38753fc3bc"
+    },
+    {
+      "question_id": "e366f3d0-0b5b-40e9-9791-652a1d76b832",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "How does Physical Planning differ from Site Development Planning under SPP 203?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Physical Planning involves interior furniture layout, which is not typically part of site development"
+        },
+        {
+          "id": "b",
+          "text": "Physical Planning refers to the planning of land within and surrounding a site, including subdivision and urban design"
+        },
+        {
+          "id": "c",
+          "text": "There is no difference between the two in SPP 203, as both terms are used interchangeably in some contexts"
+        },
+        {
+          "id": "d",
+          "text": "Physical Planning is exclusively for structural retrofitting, focusing on the reinforcement of existing structures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Interior layout is Space Planning (203.15).",
+        "c": "They are listed as separate service categories (203.3 vs 203.4).",
+        "d": "Retrofitting is part of general architectural services or maintenance support.",
+        "correct": "SPP 203.4 defines Site and Physical Planning as land planning within and surrounding a site, including subdivision, master development, and urban design.",
+        "takeaway": "Physical Planning covers larger scales like subdivisions and urban design compared to building-specific SDP."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d8f709f7e4a027878f30c8130505e0c479a15d29a48678491430eaa896c1e2a8"
+    },
+    {
+      "question_id": "33ce8f73-1908-4b48-b6f9-ec295230325a",
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "topic_id": "9c2e87bf-76da-4506-b4fa-74f42b74c0f9",
+      "text": "According to SPP Doc 203, what is the primary responsibility of an Architect providing Acoustic Design Services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To install audio-visual equipment and sound reinforcement hardware, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "To prepare drawings and specifications for acoustic treatment, sound control, absorption, and insulation"
+        },
+        {
+          "id": "c",
+          "text": "To conduct medical hearing tests for building occupants, which is outside the scope of architectural services"
+        },
+        {
+          "id": "d",
+          "text": "To exclusively manage the structural engineering of the building, which is not related to acoustics"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "SPP 203 focuses on design and specifications, not the physical installation of hardware.",
+        "c": "Medical testing is outside the scope of architectural specialized services.",
+        "d": "Structural engineering is a separate engineering discipline, though coordinated with acoustics.",
+        "correct": "SPP 203.1 states that the Architect prepares drawings and specifications for acoustic design and treatment, sound control, reinforcement, absorption, reflectance, and insulation.",
+        "takeaway": "Acoustic Design Services involve the technical preparation of documents for sound control and treatment."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Doc 203",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-012-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:875d69e6ba7b019466ba3fb757fd7f36f3ce5bff9e0c7f669eadb95000217578"
+    }
+  ]
+}

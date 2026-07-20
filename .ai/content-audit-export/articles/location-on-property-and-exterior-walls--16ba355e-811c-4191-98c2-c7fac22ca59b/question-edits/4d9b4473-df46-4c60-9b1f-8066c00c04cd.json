@@ -1,11 +1,45 @@
 {
   "question_id": "4d9b4473-df46-4c60-9b1f-8066c00c04cd",
   "baseline_hash": "sha256:5bde9f769ada51454b5fe33b9924d3d82108632f740de2fda00aecf525d34de9",
-  "reason": "Batch 008 local source audit aligned linked question 4d9b4473-df46-4c60-9b1f-8066c00c04cd with the repaired Location on Property and Exterior Walls article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-008",
-  "approved_at": "2026-05-10T18:13:43+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited Section 1604 plastic-glazed openings, which is off-scope for an article limited to PD 1096 Rule VII Sec. 704 (Location on Property and Exterior Walls). Replaced with a Sec. 704-grounded question on treating multiple buildings on the same property as one building.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "chunk_id": "source-pack-pd-1096-irr-chunk-0001",
+        "section_locator": "Rule VII / Section 704.1 Location on Property"
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704"
+  },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
-    "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft."
+    "text": "Under PD 1096 Rule VII, Section 704, two or more buildings on the same property may be treated as one building only if which condition is met?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All buildings share the same occupancy group and construction type, and abut one another along a common firewall"
+      },
+      {
+        "id": "b",
+        "text": "Their aggregate area does not exceed the allowable floor area for a single building, and the most restrictive occupancy and construction requirements are applied"
+      },
+      {
+        "id": "c",
+        "text": "They are located on separately titled lots that are consolidated by permit for the sole purpose of parking"
+      },
+      {
+        "id": "d",
+        "text": "They have identical heights and footprints, and each is provided with independent means of egress"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Section 704 allows two or more buildings on the same property to be treated as one building only if their aggregate area is within the allowable floor area for a single building; where occupancy groups or construction types differ, the most restrictive requirements govern.",
+    "explanation": "The assumed-property-line concept still applies to courts and walls facing another building; the consolidation rule is the exception and is constrained by the single-building area cap.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704"
   }
 }

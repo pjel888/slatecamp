@@ -8,37 +8,31 @@
       "question_id": "c064ad24-3fcd-4f16-8ce5-9e9a19b48169",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "If an Owner requests 3D renderings and detailed cost estimating during Design Development, what is the architect's proper response?",
+      "text": "Which Owner-funded input is source-backed by 401-402?",
       "options": [
         {
           "id": "a",
-          "text": "Include the work in Basic Services without additional charge, as these are standard design activities typically expected in the industry"
+          "text": "Site information, surveys, tests, and required specialty services are Owner responsibilities when needed."
         },
         {
           "id": "b",
-          "text": "Provide the work and bill at the standard CA hourly rate, ensuring fair compensation for additional effort"
+          "text": "The Architect must personally finance all soil tests."
         },
         {
           "id": "c",
-          "text": "Issue a written notice identifying these as Additional Services, estimate the cost, and request written authorization before proceeding"
+          "text": "The contractor must pay the Architect's income tax."
         },
         {
           "id": "d",
-          "text": "Refuse to provide the services as they exceed the scope of architectural practice, maintaining focus on core responsibilities"
+          "text": "The PRC supplies the project survey."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Treats Additional Services as included; renderings and detailed cost estimating beyond CD requirements are expressly listed as Additional Services requiring separate authorization.",
-        "b": "Applies wrong rate and ignores authorization requirement; Additional Services require written authorization and are typically billed at a rate different from CA hourly rate.",
-        "d": "Inappropriately refuses to perform services; renderings and estimating are within architectural practice; the issue is whether they are authorized as Additional Services, not whether the architect may provide them.",
-        "correct": "When the Owner requests work that appears to be Additional Services, the architect should immediately notify the Owner in writing, identifying the service, estimating the cost or hourly commitment, and requesting authorization before proceeding.",
-        "takeaway": "Before providing unrequested Additional Services, the architect must issue written notice identifying scope, estimating cost, and requesting written authorization."
-      },
+      "rationale": "The owner-responsibility section requires the Owner to provide or pay for project information, tests, and required specialty services.",
       "explanation": "Treats Additional Services as included; renderings and detailed cost estimating beyond CD requirements are expressly listed as Additional Services requiring separate authorization. Applies wrong rate and ignores authorization requirement; Additional Services require written authorization and are typically billed at a rate different from CA hourly rate. Inappropriately refuses to perform services; renderings and estimating are within architectural practice; the issue is whether they are authorized as Additional Services, not whether the architect may provide them. When the Owner requests work that appears to be Additional Services, the architect should immediately notify the Owner in writing, identifying the service, estimating the cost or hourly commitment, and requesting authorization before proceeding. Before providing unrequested Additional Services, the architect must issue written notice identifying scope, estimating cost, and requesting written authorization.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CTR-002-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-05-06T16:21:04.352929+00:00",
+      "updated_at": "2026-07-20T01:13:28.876354+00:00",
       "content_hash": "sha256:bfb6f111529303ef66a858a2966125dd1379c2ab28d6b8e774414c8763e7d897"
     },
     {
       "question_id": "28811d5b-307d-4299-9c9c-68e9c18c513a",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "Why does the Owner-Architect agreement need to specify whether consultant fees are included in the architectural fee or reimbursed as direct expenses?",
+      "text": "Under SPP 202, what is required when the Architect renders additional services?",
       "options": [
         {
           "id": "a",
-          "text": "To determine whether the consultants are licensed professionals, which may affect their eligibility for certain project roles"
+          "text": "Additional compensation is required."
         },
         {
           "id": "b",
-          "text": "To establish the consultant's liability to the Owner, ensuring accountability for their work and adherence to project standards"
+          "text": "The work becomes free if requested by the Owner."
         },
         {
           "id": "c",
-          "text": "To prevent disputes over whether consultant costs are part of the architectural fee, affecting the total project design cost to the Owner"
+          "text": "The contractor pays the Architect directly."
         },
         {
           "id": "d",
-          "text": "To eliminate the architect's obligation to coordinate consultant work, potentially reducing the architect's scope of responsibility"
+          "text": "The service is converted to a guarantee bond."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Misidentifies relevance; consultant licensing does not depend on how their fees are treated in the architect-owner agreement.",
-        "b": "Confuses scope clarification with liability allocation; specifying fee treatment does not establish consultant liability, which is a separate contractual matter.",
-        "d": "Reverses the effect; clarifying fee treatment does not eliminate the architect's obligation to coordinate consultant work—it only clarifies how that cost is invoiced.",
-        "correct": "The agreement must specify whether consultant fees (structural, mechanical, electrical) are included in the architectural fee or reimbursed as direct expenses, preventing disputes over whether those costs are part of the lump-sum fee or billed separately.",
-        "takeaway": "The agreement must clarify whether consultant fees are included in the architectural fee or charged as reimbursable expenses to prevent cost surprises."
-      },
+      "rationale": "SPP 202 states that additional services require additional compensation.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-002-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.878484+00:00",
       "content_hash": "sha256:71e1c3f44541803416bf3cd29d7c4deeb4998a46f9a0552fb86b8eb9620efa47"
     },
     {
       "question_id": "1aa2e99f-b3fa-4ba3-8373-2c7d7d185291",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "If the Owner-Architect agreement does not specify what triggers 'completion' of Schematic Design, what risk does this create?",
+      "text": "Which phase is part of the checked basic services structure?",
       "options": [
         {
           "id": "a",
-          "text": "The contractor will not be able to bid on the project, which is unlikely as bidding typically occurs after design phases"
+          "text": "Design Development Phase."
         },
         {
           "id": "b",
-          "text": "The architect may be asked to continue revising the concept indefinitely while the Owner withholds approval and payment, creating dispute over when the phase ends and advance to DD occurs"
+          "text": "Guarantee bond posting."
         },
         {
           "id": "c",
-          "text": "The Owner must immediately proceed to DD whether or not the architect's work is acceptable, which is not a standard practice"
+          "text": "CPD provider accreditation."
         },
         {
           "id": "d",
-          "text": "The consultant fees will automatically double, which is not a typical consequence of undefined phase completion"
+          "text": "Contractor bankruptcy adjudication."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses design phase with bidding; contractor bidding is a separate issue from establishing when SD is complete.",
-        "c": "Inverts the risk; without completion criteria, the owner may withhold approval, not force premature advance to DD.",
-        "d": "Introduces unrelated consequence; consultant fee doubling does not result from undefined phase completion.",
-        "correct": "Absent clear phase definitions, the architect may be asked to continue revising or developing work indefinitely while the Owner withholds approval and payment. The agreement should establish what triggers 'completion' of each phase to prevent indefinite work and payment disputes.",
-        "takeaway": "Without defined completion criteria, the architect risks unlimited revisions while payment is withheld pending approval."
-      },
+      "rationale": "The 401-402 agreement lists design development as one of the Architect's basic services.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-002-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.877778+00:00",
       "content_hash": "sha256:e4cc9a7eb90b5ec13f40430d5a4f6a5b893e4c47e1c24d1b7f4ac34760c413d7"
     },
     {
       "question_id": "8228ce1d-a60e-47bc-9038-9e2a4a7ffdf3",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "Which of the following is NOT typically included in Basic Services under the standard Owner-Architect agreement?",
+      "text": "Which service is excluded by the checked 401-402 agreement notes?",
       "options": [
         {
           "id": "a",
-          "text": "Preparation of Construction Documents and submission for permits, which is a fundamental part of the architect's responsibilities"
+          "text": "Full-time Construction Supervision."
         },
         {
           "id": "b",
-          "text": "Site visits during Construction Administration for general observation of contractor compliance, ensuring adherence to design intent"
+          "text": "Schematic design studies."
         },
         {
           "id": "c",
-          "text": "Detailed energy modeling and LEED compliance documentation prepared beyond CD requirements"
+          "text": "Design development drawings."
         },
         {
           "id": "d",
-          "text": "Preliminary site analysis and schematic design studies, which lay the groundwork for the design process"
+          "text": "Contract documents services."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses Additional Services with Basic Services; preparing construction documents and permit submissions are core Basic Services across all projects.",
-        "b": "Misidentifies the scope of CA; site visits for general observation and contractor compliance verification are part of standard CA, not Additional Services.",
-        "d": "Assigns a listed Additional Service to Basic Services; preliminary site analysis and schematic design studies are explicitly identified as Basic Services.",
-        "correct": "Energy modeling and LEED compliance documentation prepared beyond CD requirements is specifically listed as an Additional Service, not included in Basic Services unless explicitly defined in the agreement.",
-        "takeaway": "Detailed energy modeling and LEED compliance documentation beyond what CD requires are Additional Services billable separately."
-      },
+      "rationale": "The 401-402 notes say the agreement does not cover Fulltime Construction Supervision.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-002-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.874668+00:00",
       "content_hash": "sha256:2a611638b6597b6faed4d6376b096846fea733f496ecefcdb7fa10f5705c3170"
     },
     {
       "question_id": "4a10ba09-3f01-447e-9bf6-0d5069470067",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "The standard allocation of the architect's effort across Basic Services phases (SD=15%, DD=20%, CD=50%, Bidding=5%, CA=10%) serves what primary purpose?",
+      "text": "Which presentation-related service is separately paid under the checked source when necessary and approved?",
       "options": [
         {
           "id": "a",
-          "text": "To determine which phase requires the most client involvement, ensuring that the client is adequately prepared for each stage of the project"
+          "text": "Scale models, 3D models, or walkthrough presentations."
         },
         {
           "id": "b",
-          "text": "To establish the timeline for project completion, providing a clear schedule for all stakeholders involved in the project"
+          "text": "A PRC professional ID card."
         },
         {
           "id": "c",
-          "text": "To allocate the architect's fee proportionally so that compensation at each phase corresponds to effort and enables fair settlement if work is suspended"
+          "text": "The contractor's guarantee warranty."
         },
         {
           "id": "d",
-          "text": "To identify which phases require consultant involvement, allowing for efficient coordination and integration of external expertise"
+          "text": "A bid bond supplied by the contractor."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses effort allocation with client decision-making; the phase percentages govern architect effort and fee distribution, not client involvement timing.",
-        "b": "Misattributes purpose to schedule; the effort percentages do not establish project timeline—they allocate fee across phases regardless of duration.",
-        "d": "Incorrectly links phase percentages to consultant needs; the effort allocation proportions apply to the architect's work, and consultant involvement is addressed separately in the agreement.",
-        "correct": "The standard effort allocation across the five phases (SD 15%, DD 20%, CD 50%, Bidding 5%, CA 10%) establishes the architect's fee distribution, enabling proportional compensation recovery if work is suspended or terminated early.",
-        "takeaway": "The phase effort percentages (CD=50%, DD=20%, etc.) allocate the total fee to ensure fair payment if the project is suspended before completion."
-      },
+      "rationale": "SPP 202 treats scale models, 3D models, and walkthrough presentations as separately paid with Owner approval and coordination fee.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-002-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.873722+00:00",
       "content_hash": "sha256:6796c50cee718df6df196cd07eaa6c0ccacabdf613e5c7556211a8e5faa42e4a"
     },
     {
       "question_id": "4e9bc666-2915-4637-9645-3f6ad3bb6308",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "During Construction Administration, the architect provides weekly site visits as specified in the agreement. Is the architect responsible for full-time supervision of the contractor's work methods and labor?",
+      "text": "When does SPP 202 allow per diem plus travel and living expenses to be charged to the Owner?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the architect's site visits constitute full-time supervision, which is a misunderstanding of the architect's role"
+          "text": "When the Architect or authorized representative must perform services beyond 50.0 kilometers from the established office."
         },
         {
           "id": "b",
-          "text": "No, the architect's site visits are for general observation and verification of conformity to contract documents; the contractor remains responsible for work methods, quality control, and labor supervision"
+          "text": "Whenever the project is in the same building as the Architect's office."
         },
         {
           "id": "c",
-          "text": "Yes, but only during the first and last weeks of the project, which is not a standard practice in construction administration"
+          "text": "Only when a contractor default occurs."
         },
         {
           "id": "d",
-          "text": "No, the architect has no responsibility for the contractor's performance, which oversimplifies the architect's oversight duties"
+          "text": "Only after final payment to the contractor."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Exceeds architect authority; periodic site visits do not constitute full-time supervision—the contractor remains responsible for day-to-day work direction.",
-        "c": "Misidentifies frequency of responsibility; the architect's responsibility for verification is ongoing, not limited to project start and end.",
-        "d": "Eliminates architect oversight; the architect has responsibility to verify contractor conformity to documents, even if not responsible for directing work methods.",
-        "correct": "The architect's site visits during CA are limited to general observation and verification that the contractor's work conforms to the contract documents. Site visits do not constitute full-time inspection or supervision of construction methods; that responsibility remains with the contractor.",
-        "takeaway": "Architect site visits verify conformity to documents; contractor retains responsibility for work methods, quality control, and labor supervision."
-      },
+      "rationale": "The source sets a 50.0-kilometer distance trigger for per diem plus travel and living expenses.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-002-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.872814+00:00",
       "content_hash": "sha256:0b4d4542a5e8d18c18c88fef8941fa633ce26538648e995329ac184ac9eef2a5"
     },
     {
       "question_id": "444c77cd-9fb9-4b00-90f3-9fdd35bffa98",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "When Additional Services are billed on an hourly basis, why does the agreement need to specify the hourly rate separately from the rate implied by Basic Services?",
+      "text": "How are acoustic or illumination specialists treated in the checked SPP 202 source?",
       "options": [
         {
           "id": "a",
-          "text": "Because Additional Services are always more complex and warrant higher compensation, especially when involving specialized tasks"
+          "text": "They are recommended by the Architect for Owner approval, paid separately by the Owner, and subject to a coordination fee."
         },
         {
           "id": "b",
-          "text": "Because the hourly rate for Additional Services is typically higher to account for overhead and profit, and the rate for open-ended work differs from the rate for lump-sum services"
+          "text": "They are always included in the Architect's basic fee without coordination fee."
         },
         {
           "id": "c",
-          "text": "Because Additional Services are only available to premium clients who require exclusive attention and tailored solutions"
+          "text": "They replace the Architect as the owner's representative."
         },
         {
           "id": "d",
-          "text": "Because the architect's overtime rate must be 1.5 times the standard rate, which is a standard industry practice for extended hours"
+          "text": "They are paid only from contractor retention."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Oversimplifies; not all Additional Services are more complex; the rate difference reflects billing method (hourly vs. lump-sum) and overhead allocation.",
-        "c": "Introduces irrelevant factor; rate specification is a business issue, not a client classification matter.",
-        "d": "Imposes inapplicable rule; architects do not follow overtime multipliers like laborers; the rate difference reflects business allocation, not overtime factors.",
-        "correct": "The hourly rate for Additional Services is usually higher than the effective hourly rate implied by the lump-sum Basic Services fee, to account for the architect's overhead and profit. Additionally, rates for open-ended services differ from rates for fixed-fee services.",
-        "takeaway": "Additional Services hourly rates are typically higher than the implied Basic Services rate to cover overhead and profit on non-fixed-fee work."
-      },
+      "rationale": "The source lists specialist services as separately paid services with Owner approval and a coordination fee.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-002-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.871173+00:00",
       "content_hash": "sha256:2d457016048db37a1713195f1909e425032b98d0e0262fbd244d0e2d6f3c8085"
     },
     {
       "question_id": "78b7b1dc-6ccd-480d-9601-e0118b0f18b3",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "If the Owner adds a significant new wing to the project during Design Development, what action must the architect take to establish entitlement to additional compensation?",
+      "text": "Who pays for extra sets of contract documents under SPP 202?",
       "options": [
         {
           "id": "a",
-          "text": "Continue the work and invoice the added hours to the next monthly progress billing, assuming prior agreement"
+          "text": "The Owner."
         },
         {
           "id": "b",
-          "text": "Issue a written change order identifying the scope addition, estimating the additional effort (typically 10-50% depending on timing and impact), and requesting authorization before proceeding"
+          "text": "The PRC Board automatically."
         },
         {
           "id": "c",
-          "text": "Subtract the value of the added scope from the next CA invoice, which may not be contractually valid"
+          "text": "The lowest bidder only."
         },
         {
           "id": "d",
-          "text": "Reduce the final Construction Administration phase work proportionally to offset the additional DD effort, potentially affecting project quality"
+          "text": "The Architect without compensation in all cases."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Proceeds without authorization; invoicing added hours without prior change order authorization creates disputes over scope and whether the work was directed.",
-        "c": "Inverts the remedy; the architect should request additional compensation for scope additions, not reduce invoices for scope additions.",
-        "d": "Inappropriately offsets phases; the architect should request proportional additional fee for the added wing, not absorb it by reducing CA work.",
-        "correct": "If the Owner adds scope during design, the architect is entitled to additional compensation for redesign effort, documented through a formal change order identifying the scope addition, estimating additional effort (typically 10-50% depending on timing and comprehensiveness), and requesting authorization before proceeding.",
-        "takeaway": "Scope additions require a written change order estimating additional effort and obtaining authorization before the architect proceeds with redesign work."
-      },
+      "rationale": "SPP 202 says the Owner pays the Architect for additional sets of contract documents.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-002-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.879124+00:00",
       "content_hash": "sha256:234b7717610bbeea1fd9ce00c0d4902b873ba2768bf6ae1c794f4870c7b1299a"
     },
     {
       "question_id": "7e642bcb-a967-49cc-9f62-de7e052edd84",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "If the Owner requests an Additional Service (e.g., post-construction defect investigation) but the architect provides it without written authorization or documentation of the scope, what is the likely outcome?",
+      "text": "What is the source-safe treatment of owner-ordered changes after approval?",
       "options": [
         {
           "id": "a",
-          "text": "The architect is automatically entitled to payment at the standard hourly rate, as the service was provided in good faith"
+          "text": "The Owner pays for extra time, resources, drafting, or other office expenses."
         },
         {
           "id": "b",
-          "text": "The architect has no recourse to payment, as the service was not authorized in writing and may be deemed part of the architect's Construction Administration warranty obligation"
+          "text": "They are always absorbed into the basic fee."
         },
         {
           "id": "c",
-          "text": "The Owner must pay double the normal hourly rate as a penalty for not providing written authorization"
+          "text": "They are illegal once schematic design is complete."
         },
         {
           "id": "d",
-          "text": "The entire Design and CA contract is terminated automatically, as unauthorized services breach contract terms"
+          "text": "They are payable only as CPD credits."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Overstates architect entitlement; lack of written authorization creates dispute risk and may result in the work being deemed included in Basic Services.",
-        "c": "Imposes unjustified penalty; the issue is whether payment is due at all, not penalty rates.",
-        "d": "Overstates contractual consequence; failure to document one service does not terminate the entire contract relationship.",
-        "correct": "Many disputes arise because the architect provides unrequested services or assumes they are included in Basic Services when the Owner did not authorize them or expect them to be covered. Without written documentation of authorization, the architect may have no recourse to payment, as the work may be deemed part of CA warranty obligations.",
-        "takeaway": "Unauthorized Additional Services without written documentation typically result in no payment entitlement, as they may be deemed warranty obligations."
-      },
+      "rationale": "SPP 202 makes post-approval owner changes separately compensable.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -451,30 +397,30 @@
       "model_id": "ALE-PRAC-CTR-002-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.877079+00:00",
       "content_hash": "sha256:f98d0321098c2e8af7cac15f0f8bc4798249861bf259be5595dd19e348dfa3d3"
     },
     {
       "question_id": "ab08f9ca-2834-4afd-89e7-c8875c520df4",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
       "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "What distinguishes reimbursable expenses from consultant fees in the typical Owner-Architect agreement?",
+      "text": "Which answer best separates basic from extra work?",
       "options": [
         {
           "id": "a",
-          "text": "Reimbursable expenses include travel and printing; consultant fees are for structural and mechanical design work and are handled separately"
+          "text": "Check whether the task is a listed basic phase duty, additional service, separately paid service, reimbursable, or excluded service."
         },
         {
           "id": "b",
-          "text": "Both are identical and distinguished only by when they are invoiced, which can lead to confusion in financial management and project accounting"
+          "text": "Treat every client request as free basic work."
         },
         {
           "id": "c",
-          "text": "Consultant fees are included in Basic Services; reimbursable expenses are Additional Services, often requiring separate approval and documentation"
+          "text": "Treat every site visit as a contractor bond issue."
         },
         {
           "id": "d",
-          "text": "Reimbursable expenses are limited to 15% of the architectural fee; consultant fees have no limit, allowing for flexibility in project budgeting"
+          "text": "Use only the article title and ignore the service source."
         }
       ],
       "correct_option_id": "a",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Conflates distinct categories; expenses and consultant fees are different types of costs handled differently in agreements and invoices.",
-        "c": "Inverts the distinction; consultant fees are typically reimbursable, not included in Basic Services fee, while reimbursable expenses are cost pass-throughs.",
-        "d": "Introduces false limitation; reimbursable expenses are not capped at a percentage, and consultant fees are capped only if specified in the agreement.",
-        "correct": "Reimbursable expenses include travel, printing, model making, and permit applications—billable at actual cost plus markup (typically 15-20%). Consultant fees for structural, mechanical, and electrical design are handled separately, either included in the architectural fee or reimbursed as direct expenses per agreement.",
-        "takeaway": "Reimbursable expenses are out-of-pocket costs (travel, printing); consultant fees are separate professional services (structural, mechanical, electrical design)."
-      },
+      "rationale": "The source-safe approach classifies the task by source category before answering.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-002-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.875614+00:00",
       "content_hash": "sha256:006db3dd21fbe891b78d5c4a788c9072e33d6fe3f2b280ac15ed4b9cc5450f70"
     }
   ]

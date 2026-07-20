@@ -8,23 +8,23 @@
       "question_id": "01cbd203-5490-4c8c-acab-8a7467a1a6b3",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "Structural clay brick (ASTM C62 Grade SW) has a minimum compressive strength of 3,000 psi (20.7 MPa) average, which is ___ than concrete hollow block (ASTM C90).",
+      "text": "Which description best matches masonry in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "3,000 psi (20.7 MPa); higher"
+          "text": "Built-up construction using clay, concrete, or stone units laid in mortar or plain concrete"
         },
         {
           "id": "b",
-          "text": "2,000 psi (13.8 MPa); equal"
+          "text": "Only cast-in-place reinforced concrete"
         },
         {
           "id": "c",
-          "text": "1,500 psi (10.3 MPa); lower"
+          "text": "Only lumber measured in board feet"
         },
         {
           "id": "d",
-          "text": "2,500 psi (17.2 MPa); slightly lower"
+          "text": "Only earthwork grid calculation"
         }
       ],
       "correct_option_id": "a",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "2,000 psi is C90 concrete block minimum, not clay brick.",
-        "c": "1,500 psi is below both standards.",
-        "d": "2,500 psi is below the 3,000 psi clay brick minimum.",
-        "correct": "ASTM C62 clay brick minimum is 3,000 psi (20.7 MPa) average, compared to 2,000 psi (13.8 MPa) for C90 concrete blocks. Clay brick is stronger due to high-temperature firing.",
-        "takeaway": "Know the strength ranking: Clay brick (3,000 psi) > Concrete block C90 (2,000 psi) > Non-loadbearing C129 (600 psi)."
-      },
+      "rationale": "The Masonry Lecture defines masonry as built-up construction using clay, concrete, or stone units laid in mortar or plain concrete.",
       "explanation": "2,000 psi is C90 concrete block minimum, not clay brick. 1,500 psi is below both standards. 2,500 psi is below the 3,000 psi clay brick minimum. ASTM C62 clay brick minimum is 3,000 psi (20.7 MPa) average, compared to 2,000 psi (13.8 MPa) for C90 concrete blocks. Clay brick is stronger due to high-temperature firing. Know the strength ranking: Clay brick (3,000 psi) > Concrete block C90 (2,000 psi) > Non-loadbearing C129 (600 psi).",
       "code_citation": "ASTM C62 Standard; ASTM C90 Standard",
       "bloom_level": "understand",
@@ -51,30 +45,30 @@
       "model_id": "ALE-MATL-002-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-05-06T15:46:04.190885+00:00",
+      "updated_at": "2026-07-20T01:13:27.777166+00:00",
       "content_hash": "sha256:e713d5f1767745227c7a19d2681e894f2f59668fc7474fdf92e69a89f3d28ada"
     },
     {
       "question_id": "def5f431-b411-4612-8e71-1545d12ea15d",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "In Philippine construction, why are concrete hollow blocks (CHB) preferred over clay brick despite clay brick having higher compressive strength?",
+      "text": "What is a bed in masonry terminology?",
       "options": [
         {
           "id": "a",
-          "text": "CHB is significantly less expensive (approximately 1/2 to 1/3 the cost), lighter, and easier to lay, making it economical for residential and commercial projects."
+          "text": "The horizontal layer of mortar on which masonry units are laid"
         },
         {
           "id": "b",
-          "text": "CHB has higher compressive strength than clay brick, which is a common misconception due to its widespread use in local construction practices"
+          "text": "A vertical wall section one unit thick"
         },
         {
           "id": "c",
-          "text": "Clay brick is not available in the Philippines, except in limited quantities for specialized projects, making it less practical for widespread use"
+          "text": "A brick laid with its short end exposed"
         },
         {
           "id": "d",
-          "text": "CHB provides better fire resistance than clay brick, although this is often debated among construction professionals"
+          "text": "A pressure-treatment cycle"
         }
       ],
       "correct_option_id": "a",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Clay brick is stronger (3,000 psi vs. 2,000 psi for CHB); cost and convenience drive the preference.",
-        "c": "Clay brick is available in the Philippines but limited supply and high cost restrict use.",
-        "d": "Fire resistance is comparable; both are excellent; this is not the distinguishing factor.",
-        "correct": "CHB dominates the Philippine market due to lower cost (2—3 times cheaper than clay brick), lower weight (easier handling), faster laying (larger units), and adequate strength for typical loads. Clay brick is reserved for heritage restoration, high-end projects, and applications requiring superior durability.",
-        "takeaway": "Understand the market dynamics: CHB is the economical choice; clay brick is the premium choice for durability and aesthetics."
-      },
+      "rationale": "A bed is the horizontal mortar layer receiving the masonry units.",
       "explanation": null,
       "code_citation": "Philippine masonry market analysis; NSCP 2015 Section 2402",
       "bloom_level": "understand",
@@ -101,30 +89,30 @@
       "model_id": "ALE-MATL-002-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.779364+00:00",
       "content_hash": "sha256:f7469af5b7babe468cd5cc3562b21814baee9ee8d27f33cf5033415fdb433121"
     },
     {
       "question_id": "67e8e28f-4a02-4167-be96-70518fb531da",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "A wall is specified using 8 × 8 × 16 inch concrete hollow blocks with a compressive strength of 12 MPa. The design requires minimum 13.1 MPa. Is this block adequate?",
+      "text": "What is a course in masonry terminology?",
       "options": [
         {
           "id": "a",
-          "text": "No; the block compressive strength (12 MPa) is below the NSCP 2015 requirement (13.1 MPa)."
+          "text": "A horizontal layer of masonry units"
         },
         {
           "id": "b",
-          "text": "Yes; 12 MPa is approximately equivalent to 13.1 MPa and is acceptable, assuming minor deviations are permissible under specific conditions"
+          "text": "A board-foot formula"
         },
         {
           "id": "c",
-          "text": "No; but the block can be upgraded by adding steel reinforcement, which may compensate for the lower compressive strength"
+          "text": "A surface wood preservative"
         },
         {
           "id": "d",
-          "text": "Yes; NSCP 2015 allows 12 MPa for 8-inch blocks, provided that additional structural measures are implemented"
+          "text": "A point connector"
         }
       ],
       "correct_option_id": "a",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "While 12 and 13.1 are close, code compliance is binary; 12 MPa does not meet 13.1 MPa requirement.",
-        "c": "Reinforcement does not increase the unit compressive strength; it adds tensile capacity only.",
-        "d": "NSCP 2015 allows 13.1 MPa minimum for all loadbearing blocks, not 12 MPa.",
-        "correct": "NSCP 2015 Section 2402.1 specifies minimum net area compressive strength of 13.1 MPa (1900 psi) for loadbearing blocks, matching ASTM C90. A 12 MPa block is 0.9 MPa short and is not acceptable without redesign (thicker wall, higher-strength block, or reduced load).",
-        "takeaway": "Always verify actual block compressive strength against code minimum. Small shortfalls (0.5—1 MPa) may require specification of a higher-strength unit or change to design."
-      },
+      "rationale": "A course is a horizontal layer of masonry units.",
       "explanation": null,
       "code_citation": "NSCP 2015 Section 2402.1",
       "bloom_level": "apply",
@@ -151,30 +133,30 @@
       "model_id": "ALE-MATL-002-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.781144+00:00",
       "content_hash": "sha256:c1d03c616cf379f421cb0f82131b481d8cd7a5a4a2a2f452b5c62bac8ff8cfa3"
     },
     {
       "question_id": "c763453d-1805-43f9-8b01-98056b1724cc",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "Efflorescence on concrete masonry surfaces is caused by ___ and is controlled through ___.",
+      "text": "What is a wythe?",
       "options": [
         {
           "id": "a",
-          "text": "mineral salt deposits migrating to surfaces; proper drainage and joint sealing"
+          "text": "A vertical section of wall one masonry unit thick"
         },
         {
           "id": "b",
-          "text": "freeze-thaw cycles; air entrainment to prevent surface scaling"
+          "text": "A 50 ft x 50 ft earthwork grid"
         },
         {
           "id": "c",
-          "text": "mortar joint failure; reinforcement to enhance structural integrity"
+          "text": "A piece of lumber 1 inch by 12 inches by 1 foot"
         },
         {
           "id": "d",
-          "text": "unit cracking; pressure grouting to restore surface continuity"
+          "text": "A kiln-drying chamber"
         }
       ],
       "correct_option_id": "a",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Freeze-thaw is not a cause in tropical Philippines; efflorescence occurs without frost.",
-        "c": "Mortar joint failure is not the cause; efflorescence indicates moisture flow, not joint failure.",
-        "d": "Cracking is not the cause; efflorescence can occur in uncracked units.",
-        "correct": "Efflorescence is white mineral deposits (calcium carbonate, sodium sulfate) that migrate through the unit with moisture and evaporate on the surface. Prevention requires good drainage and sealed joints to limit moisture penetration.",
-        "takeaway": "Efflorescence is aesthetic but indicates excess moisture. It does not reduce structural capacity but signals drainage or waterproofing deficiency."
-      },
+      "rationale": "A wythe is a vertical section of masonry wall one unit thick.",
       "explanation": "Freeze-thaw is not a cause in tropical Philippines; efflorescence occurs without frost. Mortar joint failure is not the cause; efflorescence indicates moisture flow, not joint failure. Cracking is not the cause; efflorescence can occur in uncracked units. Efflorescence is white mineral deposits (calcium carbonate, sodium sulfate) that migrate through the unit with moisture and evaporate on the surface. Prevention requires good drainage and sealed joints to limit moisture penetration. Efflorescence is aesthetic but indicates excess moisture. It does not reduce structural capacity but signals drainage or waterproofing deficiency.",
       "code_citation": "NSCP 2015 Section 2402 (masonry design); moisture management",
       "bloom_level": "understand",
@@ -201,30 +177,30 @@
       "model_id": "ALE-MATL-002-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-05-06T15:46:04.061972+00:00",
+      "updated_at": "2026-07-20T01:13:27.784145+00:00",
       "content_hash": "sha256:5cd2651128dfe10ec891545a9d2663ac178c090f2ad2bcc074f2844abc70371d"
     },
     {
       "question_id": "a35b7d04-f43d-4be9-9b56-4c8319a303f1",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "ASTM C90 specifies a minimum net area compressive strength of ___ psi (___ MPa) for loadbearing concrete masonry units.",
+      "text": "Which description identifies a stretcher?",
       "options": [
         {
           "id": "a",
-          "text": "1,900 psi (13.1 MPa)"
+          "text": "A unit laid lengthwise so the long face is exposed in the wall"
         },
         {
           "id": "b",
-          "text": "1,200 psi (8.3 MPa)"
+          "text": "A unit laid so the short end is exposed through the wall thickness"
         },
         {
           "id": "c",
-          "text": "3,000 psi (20.7 MPa)"
+          "text": "A layer of mortar only"
         },
         {
           "id": "d",
-          "text": "600 psi (4.1 MPa)"
+          "text": "A pressure-treated timber"
         }
       ],
       "correct_option_id": "a",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "1,200 psi (8.3 MPa) is too low; this would apply to lower-quality non-structural units.",
-        "c": "3,000 psi (20.7 MPa) is the minimum for clay brick (ASTM C62), not concrete blocks.",
-        "d": "600 psi (4.1 MPa) is the minimum for ASTM C129 non-loadbearing units, not loadbearing.",
-        "correct": "ASTM C90 loadbearing units must achieve minimum 1,900 psi (13.1 MPa) net area compressive strength. NSCP 2015 Section 2402 specifies a minimum of 13.1 MPa for loadbearing CMU, matching ASTM C90.",
-        "takeaway": "Know the strength hierarchy: ASTM C90 loadbearing = 2,000 psi; ASTM C129 non-loadbearing = 600 psi; ASTM C62 clay brick = 3,000 psi."
-      },
+      "rationale": "A stretcher shows the long face lengthwise in the wall.",
       "explanation": null,
       "code_citation": "ASTM C90 Standard Specification; NSCP 2015 Section 2402",
       "bloom_level": "understand",
@@ -251,30 +221,30 @@
       "model_id": "ALE-MATL-002-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.780264+00:00",
       "content_hash": "sha256:1e1288792398834f798adeb809e17e4d0b96a5e14f2fbbb1b23c34722ee11cf7"
     },
     {
       "question_id": "380b3089-940d-47f7-b48c-b528f386e767",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "In the Philippines, the standard concrete hollow block size is ___ inches nominal (or ___ mm).",
+      "text": "Which description identifies a header?",
       "options": [
         {
           "id": "a",
-          "text": "8 × 8 × 16 (200 × 200 × 400 mm)"
+          "text": "A unit laid so the short end is exposed and the unit extends through wall thickness"
         },
         {
           "id": "b",
-          "text": "6 × 8 × 16 (150 × 200 × 400 mm)"
+          "text": "A unit laid only lengthwise with its long face exposed"
         },
         {
           "id": "c",
-          "text": "4 × 4 × 8 (100 × 100 × 200 mm)"
+          "text": "A board-foot unit"
         },
         {
           "id": "d",
-          "text": "10 × 10 × 20 (250 × 250 × 500 mm)"
+          "text": "A termite shield"
         }
       ],
       "correct_option_id": "a",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "6 × 8 × 16 is used for lighter loads but less common than 8 × 8 × 16.",
-        "c": "4 × 4 × 8 is too small for typical masonry walls in the Philippines.",
-        "d": "10 × 10 × 20 is not standard in the Philippines; dimensions are incorrect.",
-        "correct": "The 8 × 8 × 16 inch (200 × 200 × 400 mm) block is the most common conventional size in Philippine construction for loadbearing and infill applications.",
-        "takeaway": "Know the standard Philippine block: 8 × 8 × 16 inches or 200 × 200 × 400 mm. This is the baseline for all calculations."
-      },
+      "rationale": "A header is laid with the short end exposed and extends through the wall thickness.",
       "explanation": null,
       "code_citation": "Philippine masonry standards; NSCP 2015 Section 2402",
       "bloom_level": "understand",
@@ -301,30 +265,30 @@
       "model_id": "ALE-MATL-002-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.783483+00:00",
       "content_hash": "sha256:a892c49bdb19e1611e7d231956dfbb9442483751741edce0aa6f2ea30e78c000"
     },
     {
       "question_id": "ad4ef841-1bc2-4966-8f3c-5ae2a802c92e",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "A 6-course load-bearing CHB wall (8 × 8 × 16 inch blocks) supports a tributary load of 20 kips per linear foot. Each block has a net area of 90 sq in. and compressive strength of 14 MPa. Is the wall adequate?",
+      "text": "Which set matches the checked standard CHB sizes?",
       "options": [
         {
           "id": "a",
-          "text": "No; the load exceeds the allowable based on unit compressive strength and wall configuration; detailed calculation using f′m is required."
+          "text": "100, 150, or 200 mm thick x 200 mm high x 400 mm long"
         },
         {
           "id": "b",
-          "text": "Yes; 14 MPa exceeds the 13.1 MPa requirement, ensuring structural integrity under specified conditions"
+          "text": "50, 75, or 100 mm thick x 100 mm high x 200 mm long"
         },
         {
           "id": "c",
-          "text": "Yes; 6 courses always provide adequate support for 20 kips/ft, assuming uniform load distribution"
+          "text": "1 in thick x 12 in wide x 1 ft long"
         },
         {
           "id": "d",
-          "text": "No; only 8-inch blocks can support loads of this magnitude, according to standard engineering practices"
+          "text": "150 sq ft and 475 sq ft end areas"
         }
       ],
       "correct_option_id": "a",
@@ -332,13 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Unit strength conformance is necessary but not sufficient for wall design.",
-        "c": "Six courses is a very short wall; adequacy depends on detailed capacity calculation, not course count.",
-        "d": "8-inch blocks are appropriate, but capacity is not guaranteed by unit size alone.",
-        "correct": "While 14 MPa exceeds the minimum unit strength, the wall capacity depends on masonry compressive strength (f′m), which is lower (25—50% of unit strength), wall height, slenderness ratio, and eccentricity. A simple unit strength check is insufficient; the problem requires calculation of wall capacity using f′m and NSCP 2015 provisions.",
-        "takeaway": "Unit compressive strength is a minimum requirement, not a direct measure of wall capacity. Always perform detailed design calculations using f′m, slenderness ratios, and eccentricity per NSCP 2015 Section 2402."
-      },
+      "rationale": "The Masonry Lecture gives standard CHB sizes as 100, 150, or 200 mm thick, 200 mm high, and 400 mm long.",
       "explanation": null,
       "code_citation": "NSCP 2015 Section 2402.5 (masonry wall design); wall capacity calculations",
       "bloom_level": "apply",
@@ -351,30 +309,30 @@
       "model_id": "ALE-MATL-002-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.782788+00:00",
       "content_hash": "sha256:72a911e8048dc4ebd2e1354c7636f679059ceec68a4f96c3a514cf086f7d82dd"
     },
     {
       "question_id": "c6479943-b466-4b23-a902-b6f1cb292817",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "The compressive strength of masonry (f′m) is typically ___ to ___% of the individual unit compressive strength due to mortar joint weakness and bonding variability.",
+      "text": "According to the checked lecture, where is 100 mm CHB appropriate?",
       "options": [
         {
           "id": "a",
-          "text": "60 to 80"
+          "text": "Interior partitions where weather tightness is not required"
         },
         {
           "id": "b",
-          "text": "75 to 100"
+          "text": "All exterior load-bearing walls without verification"
         },
         {
           "id": "c",
-          "text": "100 to 150"
+          "text": "Lumber decking measured in board feet"
         },
         {
           "id": "d",
-          "text": "10 to 20"
+          "text": "Earthwork fill grids"
         }
       ],
       "correct_option_id": "a",
@@ -382,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "If f′m equaled unit strength, mortar joints would not be a controlling factor; this is incorrect.",
-        "c": "f′m cannot exceed unit strength; this range is impossible.",
-        "d": "10—20% is too low; actual f′m is higher, typically 30—40% for typical units and mortars.",
-        "correct": "Masonry compressive strength (f′m) is controlled by the weaker mortar joint and unit-to-mortar bonding, which is typically 25—50% of unit strength. NSCP 2015 Table 2402.3.1 provides f′m values based on unit strength and mortar type.",
-        "takeaway": "Never assume masonry strength equals unit strength. Always use NSCP 2015 Table 2402.3.1 to determine f′m from unit strength and mortar type."
-      },
+      "rationale": "The checked lecture limits 100 mm CHB to interior partitions where weather tightness is not required.",
       "explanation": null,
       "code_citation": "NSCP 2015 Section 2402.3.1; masonry design principles",
       "bloom_level": "understand",
@@ -401,30 +353,30 @@
       "model_id": "ALE-MATL-002-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.781971+00:00",
       "content_hash": "sha256:9e0655c7337b2fac173d859f5165d26ee9993cfcc24ead706e1660bff263fd24"
     },
     {
       "question_id": "1d4f94c0-97a0-4541-ae03-978b7f05fef0",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "A concrete hollow block has a net area compressive strength of 15 MPa and a gross area compressive strength of 9 MPa. What is the approximate void percentage?",
+      "text": "Which materials are identified for concrete hollow blocks in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "40%"
+          "text": "Water, Portland cement, and aggregate"
         },
         {
           "id": "b",
-          "text": "10%"
+          "text": "Only clay and lime"
         },
         {
           "id": "c",
-          "text": "60%"
+          "text": "Only timber and glue"
         },
         {
           "id": "d",
-          "text": "25%"
+          "text": "Only steel and asphalt"
         }
       ],
       "correct_option_id": "a",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "10% would imply very dense concrete, not typical for hollow blocks.",
-        "c": "60% void is too high; most hollow blocks are 40—50% void.",
-        "d": "25% void is lower than typical for standard CHB.",
-        "correct": "Net area strength ÷ Gross area strength = Solid percentage. 9 ÷ 15 = 0.6 = 60% solid, which means 40% void. This is typical for hollow blocks.",
-        "takeaway": "Understand the relationship: (Gross strength / Net strength) = Solid percentage. If net is 1.67× gross, voids are approximately 40%."
-      },
+      "rationale": "The checked CHB source lists water, Portland cement, and aggregate as the basic materials.",
       "explanation": "10% would imply very dense concrete, not typical for hollow blocks. 60% void is too high; most hollow blocks are 40—50% void. 25% void is lower than typical for standard CHB. Net area strength ÷ Gross area strength = Solid percentage. 9 ÷ 15 = 0.6 = 60% solid, which means 40% void. This is typical for hollow blocks. Understand the relationship: (Gross strength / Net strength) = Solid percentage. If net is 1.67× gross, voids are approximately 40%.",
       "code_citation": "ASTM C90 compressive strength testing methods",
       "bloom_level": "apply",
@@ -451,30 +397,30 @@
       "model_id": "ALE-MATL-002-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-05-06T15:46:04.355817+00:00",
+      "updated_at": "2026-07-20T01:13:27.778360+00:00",
       "content_hash": "sha256:3ef337da4954d88129617a09830557822df8f080b5f0a89345bd270d20c72ae5"
     },
     {
       "question_id": "320af392-aa3a-437d-81dd-e87e461b6931",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "Which of the following best describes the difference between ASTM C90 and ASTM C129 concrete masonry units?",
+      "text": "Which brick bond alternates courses of stretchers and headers?",
       "options": [
         {
           "id": "a",
-          "text": "C90 is for loadbearing applications with minimum 2,000 psi strength; C129 is for non-loadbearing applications with minimum 600 psi strength."
+          "text": "English bond"
         },
         {
           "id": "b",
-          "text": "C90 is for non-loadbearing; C129 is for loadbearing, which is contrary to typical usage and requires careful consideration"
+          "text": "Flemish bond"
         },
         {
           "id": "c",
-          "text": "C90 and C129 are equivalent; either can be used interchangeably, although this is a common misconception"
+          "text": "Herringbone bond"
         },
         {
           "id": "d",
-          "text": "C90 is clay brick; C129 is concrete block, which is a fundamental misunderstanding of the material classifications"
+          "text": "Board-foot bond"
         }
       ],
       "correct_option_id": "a",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "This reverses the designations; C90 is loadbearing, not C129.",
-        "c": "The standards serve different purposes and have different strength requirements; they cannot be substituted.",
-        "d": "C90 and C129 are both concrete blocks; C62 is clay brick.",
-        "correct": "C90 (loadbearing) requires 2,000 psi minimum and is used for structural walls and load-bearing columns. C129 (non-loadbearing) requires only 600 psi and is used for partitions and non-structural infill. They are not interchangeable.",
-        "takeaway": "C90 = loadbearing (2,000 psi), C129 = non-loadbearing (600 psi). Never substitute non-loadbearing units in structural walls."
-      },
+      "rationale": "English bond alternates stretcher and header courses. Flemish bond alternates headers and stretchers in the same course.",
       "explanation": null,
       "code_citation": "ASTM C90 and C129 standards; NSCP 2015 Section 2402",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-MATL-002-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.784814+00:00",
       "content_hash": "sha256:2df7a5ec7c7fbfa0d2a818f9e6c6bc42743bf34ad7b8ad5a501cee846c8a1dfc"
     }
   ]

@@ -2,9 +2,9 @@
   "question_id": "afdb8cb6-0f7a-4959-9223-8da62de659e3",
   "baseline_hash": "sha256:f83b3f785484569704c4a5ee9b5118e17b4f5e5bd421015613b1ccbd41b95cb4",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What does Section 702 require when a change places a building in a different division or group?",
+    "text": "A building owner begins operating a new use in an existing building after only filing NBC Form B-12, without waiting for inspection or certificate issuance. Under PD 1096, which statement best describes the legal position?",
     "options": [
       {
         "id": "a",
-        "text": "The building must comply with the Code requirements for that new division or group."
+        "text": "Filing B-12 constitutes constructive notice and authorizes provisional occupancy pending final approval, allowing temporary use"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "The change of use is unauthorized; the building is being operated in violation of PD 1096 until the Certificate of Occupancy is issued"
       },
       {
         "id": "c",
-        "text": "h"
+        "text": "The owner is protected from enforcement action once B-12 is filed, as the BO's review is administrative only, not regulatory"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "The BO may only act after 30 days; the owner may operate in the interim without legal consequence, assuming compliance"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The building must comply with the Code requirements for that new division or group. This is supported by The change is approved by reducing corridor width..",
-    "explanation": "The building must comply with the Code requirements for that new division or group. The cited local source family controls this item: The change is approved by reducing corridor width..",
-    "code_citation": "The change is approved by adding a dry standpipe only."
+    "correct_option_id": "b",
+    "rationale": "Filing Form B-12 initiates the application process — it does not authorize the new use. Under Sec. 702, a change of use is only legally effective after the building conforms to Code requirements AND the Certificate of Occupancy is issued. Operating the new use before the Certificate of Occupancy is issued violates the Code, exposes the owner to administrative and criminal penalties, and exposes occupants to unverified safety risks.",
+    "explanation": "Application filing ≠ authorization. The Certificate of Occupancy is the legal instrument that authorizes the new use — not the B-12 form. This is analogous to starting construction before a building permit is issued.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

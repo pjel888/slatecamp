@@ -8,36 +8,33 @@
       "question_id": "137470a9-eef4-444f-85e5-fe80bee37c5d",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "The contract specifies that claims must be submitted within 30 days of the event triggering the claim. A contractor performs extra work on March 15 and submits a claim for reimbursement on May 1 (47 days later), without explanation for the delay in submission. What is the likely outcome?",
+      "text": "Under CIAP Document 102 Article 20.08, when must the contractor give written notice for a claim for extra cost?",
       "options": [
         {
           "id": "a",
-          "text": "The claim should be considered on its merits because the contractor can reimburse later in the project, provided the owner agrees to the delay"
+          "text": "Within fifteen days after receipt of the instruction, drawings, or specifications involving a change"
         },
         {
           "id": "b",
-          "text": "The claim is waived for failure to meet the 30-day submission deadline, unless the contractor can demonstrate excusable reason for the late submission"
+          "text": "Only after final payment"
         },
         {
           "id": "c",
-          "text": "The claim is valid if the contractor can prove the costs were actually incurred, regardless of submission timing, as long as the owner is notified"
+          "text": "Within fifteen years after completion"
         },
         {
           "id": "d",
-          "text": "The deadline applies only if the owner explicitly objects to late submission, which must be documented in writing"
+          "text": "Only after the owner files arbitration"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Proof of costs is necessary but not sufficient; the claim must also be submitted timely per contract requirement.",
-        "d": "Incorrect. The deadline operates automatically; the owner is not required to object to enforce it.",
-        "correct": "Claim submission deadlines in construction contracts are strictly enforced. Claims submitted after the contract-specified deadline (30 days) are typically waived, unless the contractor can demonstrate an excusable reason (e.g., architect promised to process the claim despite the delay, or the owner misled the contractor about the deadline).",
-        "takeaway": "Claims submitted after the contract deadline are waived unless the contractor demonstrates excusable delay (e.g., architect promise or owner misrepresentation about the deadline)."
+        "correct": "CIAP Document 102 requires written notice within fifteen days after receipt of the instruction, drawings, or specifications involving a change.",
+        "takeaway": "CIAP Document 102 requires written notice within fifteen days after receipt of the instruction, drawings, or specifications involving a change."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -51,43 +48,40 @@
       "model_id": "ALE-PRAC-CTR-020-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.245499+00:00",
       "content_hash": "sha256:a040f57ba66d74d54977ac094cf1c525f24fd3e647a793d3d48062453be6be4c"
     },
     {
       "question_id": "a5e70859-01e1-4bed-bce3-cf1b8df713b0",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "A contractor submits a claim for schedule extension due to alleged delay caused by the owner's failure to provide site access for 30 days. To substantiate this delay claim, what four elements must the contractor document?",
+      "text": "If delay is attributable to owner-supplied materials or delayed owner decisions, when is written notice required under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "The delay event, the number of calendar days, owner liability, and the financial impact of the delay"
+          "text": "Within fifteen days after recognition of the delay"
         },
         {
           "id": "b",
-          "text": "Owner acknowledgment in writing, contractor's formal claim letter, delay calculations, and architect approval, which may not be required"
+          "text": "Only after the whole project is completed"
         },
         {
           "id": "c",
-          "text": "The delay event, proof the delay was not contractor's fault, the number of calendar days of delay, and the contractor's entitlement to extension under the contract"
+          "text": "Only if the owner admits fault"
         },
         {
           "id": "d",
-          "text": "Project schedule, as-built schedule, delay amount, and claim submittal date, without necessarily proving owner liability"
+          "text": "Never, because delay claims are automatic"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "b": "Incorrect. Owner acknowledgment and architect approval are not required elements of a delay claim; documentation of the four core elements is what is needed.",
-        "d": "Incorrect. Schedule documents may support the delay calculation, but the four elements are more fundamental than simply comparing schedules.",
-        "correct": "A delay claim requires proof of four distinct elements: (1) the event causing delay (owner failure to provide access), (2) proof the delay was not the contractor's responsibility, (3) the actual calendar days of delay, and (4) the contractor's contractual entitlement to time extension (and potentially associated costs). All four elements must be documented for the claim to succeed.",
-        "takeaway": "Delay claims require four elements: the delay event, proof it was not contractor-caused, the number of calendar days delayed, and the contractor's contractual entitlement to extension."
+        "correct": "CIAP Document 102 requires written notice within fifteen days after recognition of owner-attributable delay.",
+        "takeaway": "CIAP Document 102 requires written notice within fifteen days after recognition of owner-attributable delay."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -101,30 +95,30 @@
       "model_id": "ALE-PRAC-CTR-020-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.243975+00:00",
       "content_hash": "sha256:f78e9cff6ecfdeec881694fda9bbfb1e4601dc3f5475e71b2b690b87724f0f01"
     },
     {
       "question_id": "dc876255-b1ad-496a-ad5a-248b5f3f71ac",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "A contractor claims delay due to 'rainy season disruptions' and requests a schedule extension of 45 cleandar days. To substantiate this claim, what must the contractor provide?",
+      "text": "Which situation is the express exception to giving extra-cost notice before proceeding?",
       "options": [
         {
           "id": "a",
-          "text": "Weather records showing days of rain, correspondence with the architect about weather impact, and evidence that the delay was not contractor-caused"
+          "text": "Emergency endangering life or property"
         },
         {
           "id": "b",
-          "text": "Only a note in the site logbook mentioning weather conditions, without any additional supporting documentation or verification from third parties"
+          "text": "The contractor prefers speed"
         },
         {
           "id": "c",
-          "text": "The contractor's assertion that weather caused delay, with no further documentation or corroborative evidence from meteorological data"
+          "text": "The owner is absent from a site meeting"
         },
         {
           "id": "d",
-          "text": "A claim submitted to an insurance company for weather-related losses, which does not directly address the construction schedule impact"
+          "text": "The work is aesthetically important"
         }
       ],
       "correct_option_id": "a",
@@ -133,11 +127,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Incorrect. A logbook note is minimal documentation; detailed weather records and correspondence are required.",
-        "c": "Incorrect. Assertion without substantiation is not a valid claim.",
-        "d": "Incorrect. Insurance claims are separate from construction contract claims and do not substitute for contract claim documentation.",
-        "correct": "The contractor claiming delay due to rainy season must document: (1) actual weather records (rainfall data, number of rain days), (2) contemporaneous correspondence with the architect showing that weather impacted the work, (3) evidence that the contractor was not at fault for the delay (i.e., the weather conditions were unforeseen or unavoidable), and (4) the connection between the weather and the schedule delay. Assertion alone is insufficient.",
-        "takeaway": "Weather delay claims require weather records (rainfall data), correspondence with architect about impact, evidence it was unforeseen, and proof of schedule connection—assertion alone is insufficient."
+        "correct": "The checked provisions recognize an emergency endangering life or property as the exception.",
+        "takeaway": "The checked provisions recognize an emergency endangering life or property as the exception."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -151,43 +142,40 @@
       "model_id": "ALE-PRAC-CTR-020-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.243064+00:00",
       "content_hash": "sha256:e0e8e790d164388fec14814a9a1df613b3cf78ae698cc0ff6014a07ea1008f8d"
     },
     {
       "question_id": "4f094fb5-ee08-43b4-9c53-315ef51dbe2a",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "A contractor claims that a change order resulted in additional costs due to unforeseen site conditions (unstable soil). The contractor's claim states 'costs were significant' but provides no invoices, labor records, or cost documentation. What should the architect do?",
+      "text": "When extra work is valued by actual direct cost under CIAP Document 102, what must the contractor present?",
       "options": [
         {
           "id": "a",
-          "text": "Recommend approval of the claim based on the contractor's assertion of difficulties encountered, assuming the contractor's reputation for honesty"
+          "text": "A correct cost account with vouchers and supporting documents"
         },
         {
           "id": "b",
-          "text": "Request detailed cost documentation (invoices, time records, labor costs, material receipts) before evaluating the claim"
+          "text": "Only a verbal estimate"
         },
         {
           "id": "c",
-          "text": "Deny the claim because the contractor provided no substantiation, and the contract requires documentation for all claims"
+          "text": "Only a photograph of the work"
         },
         {
           "id": "d",
-          "text": "Approve a partial claim based on the architect's estimate of reasonable additional costs, considering typical industry standards for such conditions"
+          "text": "A final payment receipt only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Rather than deny outright, the architect should request documentation. Only if the contractor cannot provide it should the claim be denied.",
-        "d": "Incorrect. The architect cannot substitute its estimate for the contractor's actual costs. Documented actual costs are the standard.",
-        "correct": "The architect's role in claim review includes demanding documentation before recommendation. If the contractor provides no cost substantiation, the architect must request detailed invoices, time records, and cost evidence. Without documentation, the architect cannot responsibly recommend claim approval.",
-        "takeaway": "The architect must request detailed cost documentation (invoices, time records, labor and material receipts) before evaluating a claim—assertion alone is insufficient."
+        "correct": "CIAP Document 102 requires a correct account of direct cost with vouchers and supporting documents.",
+        "takeaway": "CIAP Document 102 requires a correct account of direct cost with vouchers and supporting documents."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-CTR-020-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.248465+00:00",
       "content_hash": "sha256:b05d9951a32d2cdfb09ff74621130dc1fef2a37959ffa7d1cf947f3873043be0"
     },
     {
       "question_id": "5aa53ed7-441e-4080-89c5-5072a99461cb",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "A contractor begins work on a change order that the architect verbally approved but never issued as a formal change order document. The contractor incurs costs of 100,000 pesos and later submits a claim for reimbursement. The architect disputes the claim, stating that no formal change order was ever issued. How should the claim be evaluated?",
+      "text": "What actual-direct-cost formula is supported by CIAP Document 102 for extra work?",
       "options": [
         {
           "id": "a",
-          "text": "The claim should be paid immediately because the architect gave verbal approval, which is considered binding"
+          "text": "Actual direct cost plus VAT if any plus fifteen percent for contractor profit and overhead"
         },
         {
           "id": "b",
-          "text": "The claim requires substantiation: the contractor must document the verbal approval (email, site memo, correspondence) and prove the actual costs incurred (invoices, time records)"
+          "text": "Actual direct cost plus fifty percent automatically"
         },
         {
           "id": "c",
-          "text": "The claim is invalid because without a formal change order document, the work is not recognized as changed scope"
+          "text": "Owner estimate only"
         },
         {
           "id": "d",
-          "text": "The claim should be denied because the contractor proceeded without written authorization, which is a breach of contract"
+          "text": "Architect fee plus contractor equipment only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. While a formal change order is the normal procedure, a contractor may claim reimbursement for work done per oral direction if documented.",
-        "d": "Incorrect. If the architect directed the work (even verbally), the contractor is not required to refuse or wait for written authorization; the claim must be substantiated, not denied for lack of formal document.",
-        "correct": "The claim requires documentation substantiating both the basis (evidence of architect approval, written or circumstances showing architect-directed change) and the cost (invoices, labor records, material receipts). The lack of a formal change order document does not automatically invalidate a claim if other evidence supports that the work was directed and costs are proven.",
-        "takeaway": "Oral change order claims require documentation of architect approval (email, memo, correspondence) and proof of actual costs incurred (invoices, time records)—lack of formal change order does not invalidate the claim if substantiated."
+        "correct": "The source states actual direct cost plus VAT if any plus fifteen percent for profit and overhead.",
+        "takeaway": "The source states actual direct cost plus VAT if any plus fifteen percent for profit and overhead."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -251,43 +236,40 @@
       "model_id": "ALE-PRAC-CTR-020-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.246992+00:00",
       "content_hash": "sha256:e0c41a3b068d0064342eb969bb5491850def0e408092bf4a6f7da818017805cb"
     },
     {
       "question_id": "99bd7463-0801-4cba-95a4-6ca00916c5a9",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "What is the architect's role in evaluating contractor claims per standard Philippine construction practice?",
+      "text": "What is the architect-linked role in UAP Document 301 when claims or contract interpretation issues arise?",
       "options": [
         {
           "id": "a",
-          "text": "The architect has no role; claims are evaluated solely by the owner and contractor through negotiation, without any third-party input"
+          "text": "Make decisions on claims and matters relating to execution, progress, or interpretation within the contract framework"
         },
         {
           "id": "b",
-          "text": "The architect reviews claims, requests documentation, evaluates merit, and prepares a written recommendation to the owner, but the owner makes the final decision"
+          "text": "Ignore all claims until litigation"
         },
         {
           "id": "c",
-          "text": "The architect has absolute authority to approve or deny claims without owner input, ensuring decisions are made swiftly"
+          "text": "Guarantee contractor profit"
         },
         {
           "id": "d",
-          "text": "The architect must approve all claims if the contractor submits documentation, regardless of the claim's validity"
+          "text": "Replace the contract documents with oral instructions"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. The architect recommends; the owner decides. The architect is not the final authority.",
-        "d": "Incorrect. Documentation alone does not guarantee claim approval; merit must also be substantiated.",
-        "correct": "Under Philippine construction practice and UAP Document 301, the architect's role in claims is to review claims, request documentation, evaluate the factual and contractual basis, and prepare a written recommendation to the owner. The owner makes the final decision on claim acceptance or denial. This gives the architect a gatekeeping role while preserving owner decision-making authority.",
-        "takeaway": "The architect reviews claims, evaluates merit, requests documentation, and makes written recommendations to the owner—the owner makes the final decision on approval or denial."
+        "correct": "UAP Document 301 gives the architect a decision role on claims and contract interpretation matters.",
+        "takeaway": "UAP Document 301 gives the architect a decision role on claims and contract interpretation matters."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -301,43 +283,40 @@
       "model_id": "ALE-PRAC-CTR-020-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.246245+00:00",
       "content_hash": "sha256:28eafcf74f65e71d7335520c6c6ad76659a3e0297dd2ce234c9a6453307cbf3a"
     },
     {
       "question_id": "e5231e62-0a7c-4545-af66-0306d7a2447f",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "What is the primary distinction between a changed work claim and a differing site conditions claim?",
+      "text": "Which claim is not automatically waived by acceptance of final payment under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "Changed work is based on oral direction; differing conditions are based on written documentation, which must be provided by the contractor"
+          "text": "A claim covered by prior notice and reserved for filing under the contract"
         },
         {
           "id": "b",
-          "text": "Changed work is directed by the owner or architect (expansion of scope); differing site conditions are unforeseen physical conditions that were not anticipated"
+          "text": "A completely unrecorded claim raised for the first time after final payment"
         },
         {
           "id": "c",
-          "text": "Changed work claims can be submitted any time; differing conditions must be submitted within 30 days of discovery to be valid"
+          "text": "A claim the contractor intentionally abandoned"
         },
         {
           "id": "d",
-          "text": "Changed work claims are always approved; differing conditions claims are always denied, regardless of the evidence presented"
+          "text": "A claim unsupported by any contract notice"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Both are typically subject to the same submission deadline requirements.",
-        "d": "Incorrect. Both can be approved or denied based on merit and proof.",
-        "correct": "Changed work claims allege that the owner or architect directed the contractor to perform work outside the original contract scope. Differing site conditions claims allege that actual physical conditions encountered during construction (e.g., unforeseen soil conditions, hidden utilities) differ from what was represented in the contract documents, making performance more costly or impossible at the contract price. These are distinct factual and contractual bases.",
-        "takeaway": "Changed work is directed scope expansion by owner/architect; differing conditions are unforeseen physical conditions that differ from what was represented in the contract documents."
+        "correct": "CIAP Document 102 preserves claims with prior notice and reservation, pending unresolved claims, arbitrated disputes, and claims acknowledged by the owner as outside final payment.",
+        "takeaway": "CIAP Document 102 preserves claims with prior notice and reservation, pending unresolved claims, arbitrated disputes, and claims acknowledged by the owner as outside final payment."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -351,43 +330,40 @@
       "model_id": "ALE-PRAC-CTR-020-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.249165+00:00",
       "content_hash": "sha256:76eced295bee44d92923737636129c28d7201454de18d4309e883822b06b9b2d"
     },
     {
       "question_id": "286f8c8b-3a29-4719-86ec-be5b130279a5",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "The architect receives a claim from the contractor that is poorly documented, missing key invoices and cost records. The contract gives the architect 14 days to respond to the claim. What should the architect do?",
+      "text": "If an unresolved construction contract dispute arises under CIAP Document 102, what is the source-supported dispute path?",
       "options": [
         {
           "id": "a",
-          "text": "Deny the claim within the 14-day deadline because documentation is incomplete, ensuring compliance with contractual obligations"
+          "text": "File a claim with CIAC for arbitration under EO 1008 construction arbitration rules"
         },
         {
           "id": "b",
-          "text": "Request additional documentation and explanations from the contractor, providing a reasonable deadline for submission before evaluating the claim"
+          "text": "Ask a supplier to decide"
         },
         {
           "id": "c",
-          "text": "Extend the 14-day response deadline indefinitely until the contractor submits complete documentation, which may lead to project delays"
+          "text": "Treat the dispute as waived without checking the contract"
         },
         {
           "id": "d",
-          "text": "Recommend partial approval based on whatever documentation is provided, potentially setting a precedent for future claims"
+          "text": "Use only a social media announcement"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. The architect cannot indefinitely extend the response deadline; an extended but reasonable deadline for documentation submission should be set.",
-        "d": "Incorrect. Partial approval without substantiation is irresponsible; documentation must be complete.",
-        "correct": "The architect's professional responsibility in claim review includes demanding documentation before recommendation. If documentation is incomplete, the architect should request additional information within a reasonable deadline (e.g., 7 days). If the contractor does not respond with documentation within the extended deadline, the architect can then recommend denial based on lack of substantiation.",
-        "takeaway": "For incomplete claim documentation, the architect should request additional information with a reasonable deadline before responding—only after the deadline expires may the architect recommend denial for lack of substantiation."
+        "correct": "CIAP Document 102 sends unresolved connected disputes to arbitration and filing with CIAC.",
+        "takeaway": "CIAP Document 102 sends unresolved connected disputes to arbitration and filing with CIAC."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -401,43 +377,40 @@
       "model_id": "ALE-PRAC-CTR-020-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.244753+00:00",
       "content_hash": "sha256:f9f4ce6b76ce952fc2ec905b5fc17c7d5c31c99db03cca9862290518c2d47a51"
     },
     {
       "question_id": "859e56b7-b6fb-4ba4-bb62-2c3222b631eb",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "A contractor discovers that the actual soil conditions on the site require additional pile depth beyond what was specified in the geotechnical report. The contractor immediately notifies the architect and owner. What must the contractor document to support a differing site conditions claim?",
+      "text": "A contractor submits an extra-cost claim saying only that costs were significant. What is missing for a source-safe review?",
       "options": [
         {
           "id": "a",
-          "text": "Only the immediate notification to the architect is required; further documentation is optional, though it may strengthen the claim"
+          "text": "Written notice, contract basis, and cost support such as vouchers or other supporting documents"
         },
         {
           "id": "b",
-          "text": "Geotechnical test results showing the difference between specified conditions and actual conditions, additional costs incurred (invoices), photographs of soil conditions, and correspondence showing the architect was notified before proceeding"
+          "text": "Only a project photograph"
         },
         {
           "id": "c",
-          "text": "The contractor's estimate of additional costs only, without any supporting evidence or documentation"
+          "text": "Only a future promise to explain later"
         },
         {
           "id": "d",
-          "text": "A claim submitted to the insurance company for the cost of remediation, which may not be directly related to the differing site conditions"
+          "text": "Only the contractor signature"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. The estimate must be supported by actual costs and invoices, not estimates.",
-        "d": "Incorrect. Insurance claims are separate; contract claim documentation is what is needed.",
-        "correct": "A differing site conditions claim requires: (1) evidence of the difference between contract-specified conditions and actual conditions (test results, professional analysis), (2) documentation of actual costs incurred (invoices for additional materials, labor, equipment), (3) photographs or other evidence of the site conditions, and (4) proof that the contractor notified the architect and obtained direction before incurring the additional costs. Without all elements, the claim will not succeed.",
-        "takeaway": "Differing conditions claims require test results showing the difference, cost invoices, photographs, and evidence the architect was notified before work proceeded—all four elements are required."
+        "correct": "The checked sources require written notice and direct-cost support rather than assertion alone.",
+        "takeaway": "The checked sources require written notice and direct-cost support rather than assertion alone."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -451,43 +424,40 @@
       "model_id": "ALE-PRAC-CTR-020-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.241913+00:00",
       "content_hash": "sha256:6dd2ca5bef5c3dd1f89523682e108a927370bb191fbdf66d04f1d7cb5de4dd60"
     },
     {
       "question_id": "bf1a9166-fbef-4a7f-94ea-fb7f3c301917",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
       "topic_id": "562ab6b2-4e61-4989-9a59-23ca2c83f3d9",
-      "text": "The architect receives a contractor claim for 500,000 pesos in additional labor costs allegedly caused by a design error that required rework. The contractor has submitted invoices from labor suppliers totaling 450,000 pesos and a site logbook estimate of 50,000 pesos in additional labor. The architect is uncertain whether the design error actually caused the need for rework. What should the architect do?",
+      "text": "What is the safest workflow for a construction claim question?",
       "options": [
         {
           "id": "a",
-          "text": "Recommend approval of 450,000 pesos (the documented amount) and deny the additional 50,000 pesos for lack of documentation, unless further evidence is provided"
+          "text": "Check notice, entitlement, cost or time proof, contract decision path, and arbitration if unresolved"
         },
         {
           "id": "b",
-          "text": "Request the contractor provide additional evidence that the design error was the actual cause of the rework, and verify that the labor costs are reasonable"
+          "text": "Approve every claimed amount immediately"
         },
         {
           "id": "c",
-          "text": "Deny the entire claim because the documentation is incomplete and does not sufficiently prove the design error"
+          "text": "Ignore written deadlines"
         },
         {
           "id": "d",
-          "text": "Approve the claim in full because invoices have been provided for most of the amount, assuming the remaining amount is justified"
+          "text": "Wait until final payment and then decide from memory"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This option reflects a common misconception. Review the source provision.",
-        "c": "Incorrect. Partial documentation (invoices) supports partial approval; the claim should not be denied entirely.",
-        "d": "Incorrect. Invoices are necessary but not sufficient; the causal link and reasonableness must also be verified.",
-        "correct": "The architect must evaluate both the factual basis (did the design error actually cause the rework?) and the cost substantiation (are the labor costs reasonable and actually incurred?). While invoices support 450,000 pesos, the architect must request: (1) additional evidence linking the design error to the rework, (2) verification that the labor costs are appropriate for the work performed. The 50,000 pesos estimate should be rejected, but the 450,000 pesos should not be denied without further evaluation.",
-        "takeaway": "Claims require both cost documentation and factual proof (causal link)—the architect must verify that the design error actually caused the rework and that costs are reasonable, not just documented."
+        "correct": "The workflow follows the source-supported notice, proof, decision, and dispute path.",
+        "takeaway": "The workflow follows the source-supported notice, proof, decision, and dispute path."
       },
       "explanation": null,
       "code_citation": "UAP Doc 301",
@@ -501,7 +471,7 @@
       "model_id": "ALE-PRAC-CTR-020-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.247741+00:00",
       "content_hash": "sha256:dbfe0c1ffb6a476bb82e18aea5ee06c0c2413b25704b7ca36b3510f8354f1a75"
     }
   ]

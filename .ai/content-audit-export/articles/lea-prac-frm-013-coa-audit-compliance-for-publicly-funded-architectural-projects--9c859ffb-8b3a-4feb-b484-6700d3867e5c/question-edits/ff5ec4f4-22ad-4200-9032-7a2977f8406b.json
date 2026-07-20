@@ -1,69 +1,66 @@
 {
   "question_id": "ff5ec4f4-22ad-4200-9032-7a2977f8406b",
   "baseline_hash": "sha256:6a768491c93f23aa0dc9e816a97093f59cd4731890963cef33ea2c1b322514ab",
-  "reason": "Batch 102 local-first source audit aligned the explanation/citation to local raw primary source support while preserving the answer key.",
-  "approved_by": "codex-local-source-audit-batch-102",
-  "approved_at": "2026-05-13T10:45:00.000+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-U: the prior Batch 102 edit was a no-op that kept the answer key unchanged while explicitly admitting it 'treats the three-pillar phrasing as final-depth pending a local COA source.' The question fabricates a 'three pillars of COA audit = regularity, legality, economy' doctrine that is NOT an official COA framework. Per the COA Compliance Audit Manual and the 1987 Constitution Art. IX-D, COA's official frameworks are (a) three TYPES of audit (financial, compliance, performance) and (b) the '3 E's' of performance audit (economy, efficiency, effectiveness). 'Regularity, legality, economy' as a named 'three pillars' doctrine appears only in reviewers, not in COA issuances. The baseline code_citation 'RA 9266' is also wrong: COA authority comes from the 1987 Constitution Art. IX-D and PD 1445 (State Audit Code), not RA 9266. The article body itself warns 'Do not rely on memory of regularity, legality, economy unless the question source is available.' Rewrote to test the source-backed RA 7160 COA-access rule for LGU-funded projects instead of the fabricated doctrine.",
+  "approved_by": "council-agent-U-leaprac-cmp-frm",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
-    "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA_9184.md",
-    "raw_markdown_sha256": "sha256:ecbcdb3b7cad01360562b13cff77d076aae591c81ad32caf49530ac4ad9d6dd7",
-    "source_locator": "RA 9184; checked lines 32, 50, 80, 88, 126, 136, 140, 159, 211, 213",
-    "checked_markdown_lines": [
-      32,
-      50,
-      80,
-      88,
-      126,
-      136,
-      140,
-      159,
-      211,
-      213
-    ],
     "parent_article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
     "parent_article_slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
-    "answer_key_fields_changed": false,
-    "additional_sources": [
+    "parent_article_title": "COA Audit Compliance for Publicly Funded Architectural Projects",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 7160 (Local Government Code) - vouchers, accounts, COA inspection access for LGU-funded projects; 1987 Constitution Art. IX-D and PD 1445 (State Audit Code) for COA authority",
+    "checked_sources": [
       {
-        "label": "RA 7160",
+        "source_id": "ra-7160-local",
+        "label": "RA 7160 - The Local Government Code (local raw source)",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
         "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-7160/RA 7160 The Local Government Code.md",
-        "raw_markdown_sha256": "sha256:b414ad079021bfdbc19094ddffeef87b3e5038b3ef4de38d18c804beb1df2d15",
-        "checked_markdown_lines": [
-          2142,
-          2162,
-          2330,
-          2348,
-          2465,
-          2473
-        ]
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:b414ad079021bfdbc19094ddffeef87b3e5038b3ef4de38d18c804beb1df2d15",
+        "source_locator": "RA 7160 - vouchers certified as to validity, propriety, legality; books/accounts open to COA inspection"
       },
       {
-        "label": "RA 9266 IRR",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
-        "checked_markdown_lines": [
-          117,
-          119,
-          184,
-          186,
-          338,
-          340,
-          708,
-          712,
-          742,
-          748
-        ]
+        "source_id": "coa-constitutional-mandate",
+        "label": "1987 Constitution Art. IX-D (Commission on Audit) and PD 1445 (State Audit Code)",
+        "url": "https://www.coa.gov.ph/about-us/constitutional-mandate/",
+        "source_locator": "COA authority derives from the 1987 Constitution Art. IX-D and PD 1445, not from RA 9266"
       }
-    ]
+    ],
+    "local_source_safe_action": "Removed fabricated 'three pillars = regularity, legality, economy' doctrine and wrong RA 9266 citation; replaced with the source-backed RA 7160 rule on COA inspection access for LGU-funded projects."
   },
   "proposed": {
-    "code_citation": "RA 9184 audit-trail/BAC observer provisions; RA 7160 vouchers/accounts/COA access; RA 9266 IRR architect-of-record responsibility",
-    "explanation": "Batch 102 keeps the answer key unchanged but treats the three-pillar phrasing as final-depth pending a local COA source. The supported local map is RA 9184 transparency/accountability/economy plus RA 7160 validity, propriety, legality, records, accounts, and COA access."
+    "text": "For an LGU-funded architectural project, what does RA 7160 (Local Government Code) require regarding Commission on Audit access?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Books, accounts, papers, and cash of accountable local officers are open to inspection by COA or its authorized representative"
+      },
+      {
+        "id": "b",
+        "text": "COA access applies only to private residential projects with no public funds"
+      },
+      {
+        "id": "c",
+        "text": "COA may inspect only after the building is occupied, never during construction"
+      },
+      {
+        "id": "d",
+        "text": "COA access is optional and may be waived by the architect"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "RA 7160 requires local funds to be accounted for by fund and purpose, with vouchers certified as to validity, propriety, and legality, and states that books, accounts, papers, and cash of accountable local officers are open to inspection by COA or its authorized representative.",
+      "b": "COA access applies to publicly funded / LGU-funded work, not private residential projects with no public funds.",
+      "c": "RA 7160 does not restrict COA inspection to post-occupancy; the accountability record runs throughout the project.",
+      "d": "COA access is a statutory requirement for accountable public officers; it cannot be waived by the architect.",
+      "correct": "RA 7160 requires local funds to be accounted for by fund and purpose, with vouchers certified as to validity, propriety, and legality, and states that books, accounts, papers, and cash of accountable local officers are open to inspection by COA or its authorized representative.",
+      "takeaway": "Do not assert a 'three pillars = regularity, legality, economy' COA doctrine from memory; the source-backed rule for LGU work is the RA 7160 COA-inspection access and the validity/propriety/legality voucher certification."
+    },
+    "explanation": "RA 7160 (Local Government Code) requires local funds to be accounted for by fund and purpose, with vouchers and payrolls certified and approved as to validity, propriety, and legality, and states that books, accounts, papers, and cash of accountable local officers are open to inspection by COA or its authorized representative. COA authority derives from the 1987 Constitution Art. IX-D and PD 1445 (State Audit Code), not from RA 9266.",
+    "code_citation": "RA 7160 (Local Government Code); 1987 Constitution Art. IX-D; PD 1445 (State Audit Code)"
   }
 }

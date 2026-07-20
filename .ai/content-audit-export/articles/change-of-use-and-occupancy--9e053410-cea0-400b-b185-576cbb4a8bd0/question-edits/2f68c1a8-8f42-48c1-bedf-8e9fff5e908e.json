@@ -2,9 +2,9 @@
   "question_id": "2f68c1a8-8f42-48c1-bedf-8e9fff5e908e",
   "baseline_hash": "sha256:b62f1f219c6684f5081e2cca2eec1ced50332827fa62ee0987f5a9ecee4417f4",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What risk comparison is required for an existing building proposed for another occupancy group?",
+    "text": "Under Sec. 702 of PD 1096, what is the general rule governing any proposed change of use or occupancy of an existing building?",
     "options": [
       {
         "id": "a",
-        "text": "The new or proposed use must be less hazardous based on life and fire risk than the existing use."
+        "text": "Any change of use is freely permitted provided the owner files a written notice with the Barangay Captain"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "No change of use or occupancy may be made unless the building conforms to the requirements of the Code for the new use"
       },
       {
         "id": "c",
-        "text": "h"
+        "text": "Change of use is permitted within the same occupancy group without any Code review or approval"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "Change of use requires only DPWH approval; the local Building Official has no jurisdiction over occupancy changes"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The new or proposed use must be less hazardous based on life and fire risk than the existing use. This is supported by The new use must have fewer doors than the old use..",
-    "explanation": "The new or proposed use must be less hazardous based on life and fire risk than the existing use. The cited local source family controls this item: The new use must have fewer doors than the old use..",
-    "code_citation": "The new use must have a larger FLAR than the old use."
+    "correct_option_id": "b",
+    "rationale": "Sec. 702 establishes the foundational rule: no change of use or occupancy may be made to a building or structure unless that building conforms to the requirements of PD 1096 for the proposed new use. This applies regardless of whether the change is within the same general occupancy group or to a different group. The Code compliance requirement exists because different uses carry different life safety and fire hazard profiles.",
+    "explanation": "Sec. 702 is the gatekeeper provision. It makes Code compliance for the NEW use a prerequisite — not an option — before any change of occupancy is legally effective. This is why a new Certificate of Occupancy (Sec. 309.9) is always required when use changes.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

@@ -2,9 +2,9 @@
   "question_id": "26a095f6-3e39-4a70-a66d-b2e7b98bd297",
   "baseline_hash": "sha256:22320f69e3423fb4a74ff5890f5b269e0b164303cb55ebf68f7c36b215c17844",
   "action": "replace",
-  "reason": "source-audited-article-batch-099-local-first retained and refreshed this linked question after local raw-source recheck for lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery.",
-  "approved_by": "codex-local-source-audit-batch-099",
-  "approved_at": "2026-05-13T09:07:08+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
     "parent_article_slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
@@ -94,33 +94,28 @@
     ]
   },
   "proposed": {
-    "text": "Does the presence of a Project Manager relieve designers and contractors of their normal duties?",
+    "text": "What is the defining characteristic of Design-Bid-Build as a project delivery method?",
     "options": [
       {
         "id": "a",
-        "text": "Yes, always"
+        "text": "Design and construction occur simultaneously under single entity responsibility, which is not typical of Design-Bid-Build"
       },
       {
         "id": "b",
-        "text": "No"
+        "text": "Design and construction are sequential phases with clear separation of responsibilities"
       },
       {
         "id": "c",
-        "text": "Only if there is no bid bond"
+        "text": "A construction manager participates in design and guarantees maximum price, which is more characteristic of CM at Risk"
       },
       {
         "id": "d",
-        "text": "Only after final payment"
+        "text": "All parties share risk, reward, and decision-making equally, which is not a feature of Design-Bid-Build"
       }
     ],
     "correct_option_id": "b",
-    "rationale": "The compiled SPP says the Project Manager does not relieve designers and contractors of their respective normal duties and responsibilities.",
-    "explanation": "Batch 099 refresh: this item is bounded to checked local raw/source-conversion evidence for Project Delivery Source Terms: Bidding, Design-Build, PM, CM, and Owner's Representative.",
-    "code_citation": "UAP Standards of Professional Practice refined markdown lines 1104-1108",
-    "practice_context": [
-      "professional practice",
-      "source-audited batch 099"
-    ],
-    "model_id": "BATCH-099-lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery-26a095f6-3e39-4a70-a66d-b2e7b98bd297"
+    "rationale": "Design-Bid-Build separates design and construction into sequential phases. The architect completes design, then contractors bid for construction work, maintaining clear separation of responsibilities. SPP 206. [A]: Sequential separation is DBB's defining characteristic. [C]: That describes CM-at-Risk, not DBB. [D]: That describes IPD, not DBB.",
+    "explanation": null,
+    "code_citation": "SPP Doc 206"
   }
 }

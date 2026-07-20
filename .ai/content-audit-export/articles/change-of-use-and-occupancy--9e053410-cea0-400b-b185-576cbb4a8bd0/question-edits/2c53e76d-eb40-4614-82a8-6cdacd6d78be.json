@@ -2,9 +2,9 @@
   "question_id": "2c53e76d-eb40-4614-82a8-6cdacd6d78be",
   "baseline_hash": "sha256:67bcd67902cf48b1c4d5c99f55da11fe0d7a110c732260367d0a7d8a01a4b259",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "How does RA 9514 connect to occupancy clearance?",
+    "text": "Which official has SOLE authority under PD 1096 to approve or deny a change of use and occupancy application?",
     "options": [
       {
         "id": "a",
-        "text": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance."
+        "text": "The DPWH Regional Director for all changes involving buildings of more than three storeys"
       },
       {
         "id": "b",
-        "text": "R"
+        "text": "The local Sangguniang Bayan or Sangguniang Panlungsod through a zoning resolution"
       },
       {
         "id": "c",
-        "text": "A"
+        "text": "The Building Official of the jurisdiction where the building is located"
       },
       {
         "id": "d",
-        "text": " "
+        "text": "A joint committee of the BO, BFP Chief, and local health officer for changes involving public use"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance. This is supported by RA 9514 uses only the GFA-to-TGFA conversion table..",
-    "explanation": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance. The cited local source family controls this item: RA 9514 uses only the GFA-to-TGFA conversion table..",
-    "code_citation": "RA 9514 removes the Building Official from occupancy review."
+    "correct_option_id": "c",
+    "rationale": "Sec. 702 vests sole authority for approving or denying change of use applications in the Building Official of the jurisdiction. This authority is not shared with DPWH regional offices, local legislative bodies, or inter-agency committees for standard occupancy changes. The BO applies the Code requirements to determine compliance and exercises the approval authority independently.",
+    "explanation": "The BO = sole authority for occupancy change approvals. This mirrors the BO's authority for building permits (Sec. 301) and certificates of occupancy (Sec. 309). The BO is the single point of accountability for all building Code enforcement decisions at the local level.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

@@ -2,56 +2,48 @@
   "question_id": "9e245b4c-642a-4c53-ae0e-5da0c725bbcc",
   "baseline_hash": "sha256:37cfc2d93a287c87f99fd0f065812e651a9d374d24c6143e4d0ee44170565581",
   "action": "replace",
-  "reason": "source-audited-article-batch-046-local-first: local raw-source-backed replacement constrained to checked Batch 046 source families.",
-  "approved_by": "codex-local-first-batch-046",
-  "approved_at": "2026-05-11T17:58:00.000+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent G ERROR G3 / Q3): original question used 0.5 m/s, inconsistent with the article body which uses Salvan's rated-speed limit of 38 m/min. Aligned the scenario to the article body's 38 m/min basis (Salvan PH regulatory extract). Restores a speed-basis question.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
     "parent_article_slug": "lea-util-002-07-escalators-specifications-and-design-parameters",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 16126-16250, 16432-16523",
-    "checked_markdown_lines": [
-      "Salvan Utilities 2 refined markdown lines 1707-1736",
-      "Salvan Utilities 2 refined markdown lines 16126-16250",
-      "Salvan Utilities 2 refined markdown lines 16432-16523"
-    ],
+    "support_status": "council_verified_fact_check",
+    "source_locator": "Article body 'Geometry, Speed, and Width' section: Salvan's regulatory extract states the rated speed, measured along the incline, must not be more than 38 m per minute.",
     "checked_sources": [
       {
-        "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b046",
-        "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+        "source_id": "salvan-architectural-utilities-2-local-raw-pdf",
+        "label": "George Salvan Architectural Utilities 2 - Electrical and Mechanical Equipment",
         "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
-        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
-        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
-        "locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 16126-16250, 16432-16523"
+        "locator": "Salvan regulatory extract: escalator rated speed must not exceed 38 m/min (along the incline)."
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 046 checked local raw-source scope."
+    "local_source_safe_action": "Aligned the speed basis to the article body's 38 m/min (Salvan), replacing the inconsistent 0.5 m/s used in the original question."
   },
   "proposed": {
-    "text": "Which escalator geometry statement matches the checked regulatory extract?",
+    "text": "A 1000 mm escalator operates at Salvan's rated-speed limit of 38 m/min (the maximum allowed along the incline) and is projected to carry 5,500 passengers/hour during peak periods. If demand increases and a second identical escalator is installed, what is the total system capacity, and what factors could limit this theoretical maximum?",
     "options": [
       {
         "id": "a",
-        "text": "Inclination may be any angle if treads are illuminated."
+        "text": "11,000 persons/hour with no limiting factors, assuming perfect conditions"
       },
       {
         "id": "b",
-        "text": "Inclination is selected only by mall tenant preference."
+        "text": "11,000 persons/hour maximum theoretical; actual throughput limited by landing congestion, dwell time, and step spacing geometry"
       },
       {
         "id": "c",
-        "text": "Inclination must not exceed 35 degrees from horizontal."
+        "text": "7,500 persons/hour; the second escalator reduces individual capacity by interference effects"
       },
       {
         "id": "d",
-        "text": "Inclination does not affect code review."
+        "text": "6,750 persons/hour per unit; two units operate at reduced speed to prevent overloading"
       }
     ],
-    "correct_option_id": "c",
-    "rationale": "Inclination must not exceed 35 degrees from horizontal. This answer matches Salvan Utilities 2 refined markdown lines 1727-1736.",
-    "explanation": "Inclination must not exceed 35 degrees from horizontal. This answer matches Salvan Utilities 2 refined markdown lines 1727-1736.",
-    "code_citation": "Salvan Utilities 2 refined markdown lines 1727-1736"
+    "correct_option_id": "b",
+    "rationale": "Two identical escalators can theoretically deliver 11,000 persons/hour (2 x 5,500). Actual throughput is limited by landing congestion, passenger dwell time on steps, step spacing geometry, and balancing passenger loads between units. The speed basis is aligned to Salvan's rated-speed limit of 38 m/min used in the article body. Source: Salvan Architectural Utilities 2 (escalator rated speed max 38 m/min along the incline).",
+    "explanation": "Two 5,500 persons/hour escalators deliver 11,000 persons/hour theoretical maximum, limited in practice by landing congestion and dwell time. Speed basis = 38 m/min per the article body.",
+    "code_citation": "Salvan Architectural Utilities 2 - escalator rated speed (38 m/min max along incline)"
   }
 }

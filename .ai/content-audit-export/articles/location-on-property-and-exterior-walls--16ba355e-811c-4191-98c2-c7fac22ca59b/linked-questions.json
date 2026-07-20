@@ -8,23 +8,23 @@
       "question_id": "0e318c9c-3ef2-42fb-84c7-271cfbe75f8e",
       "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "The clearance from a metal hood to combustible materials must be at least how many millimeters under the 2004 Revised IRR, Rule XII, Section 1211?",
+      "text": "Under PD 1096 Rule VII, Section 704(1)(c), eaves over required windows must be at least how many millimeters from the side and rear property lines?",
       "options": [
         {
           "id": "a",
-          "text": "50 mm"
+          "text": "500 mm"
         },
         {
           "id": "b",
-          "text": "150 mm"
+          "text": "600 mm"
         },
         {
           "id": "c",
-          "text": "300 mm"
+          "text": "700 mm"
         },
         {
           "id": "d",
-          "text": "400 mm"
+          "text": "750 mm"
         }
       ],
       "correct_option_id": "d",
@@ -32,7 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 400 mm clearance is part of the '5-2-1-5' clearance mnemonic: 50 mm interior chimney, 25 mm exterior chimney, 150 mm from fireplace opening, 400 mm from metal hoods.",
+      "rationale": "Section 704(1)(c) requires eaves over required windows to be not less than 750 millimeters from the side and rear property lines. This is a narrow rule: it governs only eaves over required windows on side and rear lines, not all projections or all facades.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,38 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:15.61155+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.850378+00:00",
       "content_hash": "sha256:7d4d47636f586868539e2b7945ab537d6758f856fd5c634f28c3a59e6b34b377"
     },
     {
       "question_id": "477e44ee-af37-4bd2-8477-c3fc8223f552",
       "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule II, Sec. 215, IRR Category 1(f), the plumb-line test for exterior walls requires that the center of gravity plumb line fall within which geometric boundary of the base?",
+      "text": "Under PD 1096 Rule VII, Section 704(1)(a), no building may be constructed unless it has what minimum relationship to a public space, yard, or street?",
       "options": [
         {
-          "id": "dr-007-a",
-          "text": "Inside the base of the wall, ensuring stability and compliance with structural safety standards"
+          "id": "a",
+          "text": "It must front directly on a public street on its main facade only"
         },
         {
-          "id": "dr-007-b",
-          "text": "Inside the middle third (1/3) of the base"
+          "id": "b",
+          "text": "It must adjoin or have direct access to a public space, yard, or street on at least one of its sides"
         },
         {
-          "id": "dr-007-c",
-          "text": "Inside the middle half (1/2) of the base, providing a balanced distribution of weight"
+          "id": "c",
+          "text": "It must adjoin a public space on at least two opposite sides"
         },
         {
-          "id": "dr-007-d",
-          "text": "At the center point of the base only, which is a critical point for maintaining equilibrium"
+          "id": "d",
+          "text": "It must have frontage on a public street equal to at least half of its perimeter"
         }
       ],
-      "correct_option_id": "dr-007-b",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The middle-third rule in masonry: if the resultant falls outside the kern, the base goes into tension — masonry cracks. This is why the middle third is the safety boundary, not the middle half or the base generally.",
+      "rationale": "Section 704(1)(a) is the basic location rule: no building shall be constructed unless it adjoins or has direct access to a public space, yard, or street on at least one of its sides. Direct frontage on a public street is not required; access through an easement or yard is sufficient.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -89,7 +89,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:15.908256+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.891050+00:00",
       "content_hash": "sha256:5f569f05c1dee6357399f042d9aeedcf598ce80efa7c596a5eed819847563bad"
     },
     {
@@ -121,8 +121,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The 750 mm applies specifically to eaves over required windows on side and rear lines. Front yard setbacks are governed by local zoning ordinances and Rule VII Sec. 702-703.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -133,7 +133,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.871567+00:00",
       "content_hash": "sha256:4e1ab499af849cbb736326dadb53dc7d9f749bf2f07eca5aa4ed8e95502a7776"
     },
     {
@@ -165,8 +165,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This trap tests whether candidates read the full provision. The 50% cap is triggered by proximity to property lines — not by occupancy, not by fire zone, not by construction type.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -177,7 +177,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.886920+00:00",
       "content_hash": "sha256:7da8eee98f134fa6a0ce40c02cfa30c784c53b7db4ec286112dcbb7ba36021c6"
     },
     {
@@ -209,8 +209,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Example: a building on a 10 m wide street with 2 m setback has effective separation of 2 m + 5 m (half street) = 7 m from the opposite building's property line. The centerline rule effectively doubles the apparent street width as usable fire separation.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -221,7 +221,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.844486+00:00",
       "content_hash": "sha256:9b5a4bb6f17dbe2e50eefe5280fb75385b632833d5d213083fc311c4df796b18"
     },
     {
@@ -253,8 +253,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Use CAPE every time you encounter a location-on-property question involving Sec. 704. It captures all four structural rules in sequence.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -265,7 +265,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.841986+00:00",
       "content_hash": "sha256:577860996572ed9c0ff5255226c5eb78cf639ae7a97d3aa7367181e31dcd8ad3"
     },
     {
@@ -297,8 +297,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This exception allows developers to consolidate multiple small buildings that together don't exceed the single-building floor area limit, avoiding the imaginary property line requirement between them.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -309,7 +309,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.834495+00:00",
       "content_hash": "sha256:069c1b4e6144e0d53646fcde3ed8988dc0603bbeb392cacb092f1cf346037af9"
     },
     {
@@ -341,8 +341,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Example: if protection is required at 3 m from the property line, projections cannot exceed 1 m beyond the wall face. A balcony cantilevering 2 m toward the lot line effectively reduces the fire separation to 1 m.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -353,7 +353,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.864145+00:00",
       "content_hash": "sha256:3173788c7b954d84f0092c1b70a60fdc820da12916330e9a760e39160098a616"
     },
     {
@@ -385,8 +385,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This rule prevents buildings from having so many windows that the solid wall provides no meaningful fire barrier. The 50% cap ensures at least half the wall is solid, fire-rated material.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -397,7 +397,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.885072+00:00",
       "content_hash": "sha256:798e3e28462a0bbb04f37c0b1f44fae02b0411b84cd4e591b951665583e32dea"
     },
     {
@@ -429,8 +429,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Perpendicular measurement is the standard for all fire separation and setback distances in the Code. The shortest perpendicular distance governs — not the diagonal, not the wall-parallel distance.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -441,7 +441,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.828948+00:00",
       "content_hash": "sha256:1b26c8a09a53b2f158f8ac1c89ebf3a74e9dd1fdbb68e6d9893aa1674720a205"
     },
     {
@@ -473,8 +473,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This is a classic exam trap. Candidates who answer 'all property lines' will be wrong. The Code specifically says side and rear — front setbacks are a separate governance issue under local zoning.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -485,7 +485,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.830776+00:00",
       "content_hash": "sha256:215f940a61f984b908c7d063b8b17c138142e7f8c355776e83ffab089ef75cd2"
     },
     {
@@ -517,8 +517,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This prevents gaming: a building at 1.5 m from the property line with a 3 m threshold can't cantilever a 2 m balcony — that effectively reduces the fire separation to 0.5 m.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -529,7 +529,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.846354+00:00",
       "content_hash": "sha256:d82e770f31623ec102a376336abdec7e7be21c2d5d398e5f7a6576ed895056a4"
     },
     {
@@ -561,8 +561,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The IBC's detailed table allows more nuanced design decisions — closer to property lines = fewer openings; farther = more openings. PH's single 50% ceiling is simpler but less granular.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -573,7 +573,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.888814+00:00",
       "content_hash": "sha256:dd1ed3c0ea82432c23f23d90fc865ac4104424d99fdf29ae9e479b843d5e4fc7"
     },
     {
@@ -605,8 +605,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This prevents developers from evading fire separation requirements by placing multiple buildings under a single property title without actual separation. Common ownership does not override this requirement.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -617,14 +617,14 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:17.648005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.883223+00:00",
       "content_hash": "sha256:e3e89f64d1e880bfb72b7070852078e1c0316c56fe920df2513eb0cee0119a99"
     },
     {
       "question_id": "f83a8c1d-c537-47c0-88ef-d90c6ac6cf66",
       "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule VIII, Section 808, projecting elements such as eaves, canopies, awnings, or media aguas over required window openings must be at least how far away from side and rear property lines?",
+      "text": "Under PD 1096 Rule VII, Section 704(1)(c), eaves over required window openings must be at least how far from the side and rear property lines?",
       "options": [
         {
           "id": "lv-009-a",
@@ -648,7 +648,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 750 mm minimum applies to ALL projecting elements over windows — not only large overhangs. A simple awning extending 800 mm from a wall in a narrow lot would violate this provision if the side property line clearance is insufficient. This connects Rule VIII to Rule VII (Location on Property) for setback compliance.",
+      "rationale": "Section 704(1)(c) requires eaves over required windows to be not less than 750 mm from the side and rear property lines. This rule is narrow: it applies specifically to eaves over required windows on side and rear lines, not to all projections or all facades.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -661,38 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.860344+00:00",
       "content_hash": "sha256:2920c6cb56aac2ce3e110a265bd1062583449d5279d4ed1bdf1f26195a2ca8fc"
     },
     {
       "question_id": "0aa679c6-8f46-4ece-bad7-3f36d5a4a27f",
       "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "For how many sides of an R-1 lot are abutments (building walls at zero setback on the property line) permitted?",
+      "text": "Under PD 1096 Rule VII Section 704, when a building is constructed with its exterior wall directly on a side or rear property line (zero setback on that side), what opening and wall requirement applies to that wall?",
       "options": [
         {
           "id": "a",
-          "text": "1 side, provided it does not exceed 50% of the lot's perimeter"
+          "text": "The wall must be constructed as a firewall with no unprotected openings permitted at zero setback from the property line"
         },
         {
           "id": "b",
-          "text": "2 sides, with the condition that the total length does not exceed 75% of the lot's perimeter"
+          "text": "Openings are permitted up to 50 percent of the wall area as long as fire-rated glazing is used"
         },
         {
           "id": "c",
-          "text": "None — abutments are absolutely not permitted in R-1"
+          "text": "Openings are permitted up to 25 percent of the wall area, with no special fire-rating required"
         },
         {
           "id": "d",
-          "text": "Subject to Building Official approval on a case-by-case basis, considering the overall site plan and neighborhood context"
+          "text": "Openings are unrestricted because zero-setback walls are governed by local zoning, not PD 1096"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "R-1 lots are the most setback-restrictive: no abutments on any side. By contrast, R-2 allows 1 side abutment, R-3 allows 2 sides (or 1+rear), R-4 allows 2 sides, and R-5 allows 2 sides or 1+rear.",
+      "rationale": "A wall built on the property line presents maximum fire-spread risk to the adjacent property. Section 704 therefore requires the wall to be a firewall, and no unprotected openings are permitted in an exterior wall located at zero setback from the property line.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -705,38 +705,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.389139+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.821129+00:00",
       "content_hash": "sha256:cabb832de83d705a955bfca5391f82879177bb047c40c6d8470f02b20e5ffb4b"
     },
     {
       "question_id": "a7870827-248f-4086-9b36-b0031ca7a13d",
       "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A plastic skylight on a flat commercial roof in Occupancy Group E is specified with the following characteristics: 9.50 sq.m area per unit, 2.40 m lateral spacing, 3.00 m slope spacing, 100 mm curb height, and 3.10 m setback from the property line. Which specification is non-compliant with Section 1607 (2004 IRR)?",
+      "text": "Under PD 1096 Rule VII, Section 704, when an exterior wall opening requires protection, what is the maximum percentage of the total wall area in any storey that may be occupied by protected openings?",
       "options": [
         {
-          "id": "pl-011-a",
-          "text": "The 9.50 sq.m area — exceeds the 10.00 sq.m individual skylight maximum, which is a common misunderstanding of the code's intent"
+          "id": "a",
+          "text": "25 percent of the wall area in that storey"
         },
         {
-          "id": "pl-011-b",
-          "text": "The 100 mm curb height — insufficient for a flat roof (slope < 1:4), as the code requires a minimum of 150 mm to prevent water ingress"
+          "id": "b",
+          "text": "33 percent of the wall area in that storey"
         },
         {
-          "id": "pl-011-c",
-          "text": "The 3.10 m property line setback — must be at least 3.00 m, so this is compliant"
+          "id": "c",
+          "text": "50 percent of the wall area in that storey"
         },
         {
-          "id": "pl-011-d",
-          "text": "All specifications are compliant, assuming no additional local amendments apply to the standard code requirements"
+          "id": "d",
+          "text": "75 percent of the wall area in that storey"
         }
       ],
-      "correct_option_id": "pl-011-c",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "This question tests whether the candidate can correctly evaluate dimensional compliance. The 3.10 m setback is above the 3.00 m minimum — it is compliant. The distractor (C) frames a compliant measurement as non-compliant, exploiting reading comprehension under time pressure.",
+      "rationale": "Section 704 limits the sum of protected openings in an exterior wall in any storey to a maximum of 50 percent of the total wall area in that storey. The wall-area basis is per storey, not the whole building.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -749,38 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.702597+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.852494+00:00",
       "content_hash": "sha256:14c837c9c0c12b8970943e7d88724f338139e1ac086b0d250e42966a6a16da12"
     },
     {
       "question_id": "b29f491f-da4c-480e-8cbb-4926b6c485fe",
       "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per PD 1096 Section 1604, what is the maximum travel distance from any point in an unprotected assembly to a plastic-glazed opening in an exterior wall?",
+      "text": "For purposes of measuring distances under PD 1096 Rule VII, Section 704(1)(b), how is the adjacent property line established when a building adjoins a street or alley?",
       "options": [
         {
-          "id": "pl-005-a",
-          "text": "30.00 m"
+          "id": "a",
+          "text": "At the far edge (far side) of the street or alley right-of-way"
         },
         {
-          "id": "pl-005-b",
-          "text": "45.00 m"
+          "id": "b",
+          "text": "At the centerline of the adjoining street or alley"
         },
         {
-          "id": "pl-005-c",
-          "text": "60.00 m"
+          "id": "c",
+          "text": "At the near edge (face of curb) of the street or alley"
         },
         {
-          "id": "pl-005-d",
-          "text": "15.00 m"
+          "id": "d",
+          "text": "At the legal lot boundary only, regardless of street or alley"
         }
       ],
-      "correct_option_id": "pl-005-b",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The suppression/distance inversion is a classic Trap Alert: students often assume suppression allows greater distance, but the code reduces the distance for suppressed buildings to protect firefighter access routes.",
+      "rationale": "Section 704(1)(b) provides that, for purposes of this section, the centerline of an adjoining street or alley shall be considered an adjacent property line when applying the exterior-wall and opening-protection rules in Section 704.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -793,38 +793,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.702597+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.881249+00:00",
       "content_hash": "sha256:310cf07dc893b4a3754d2e66ebe4fc66d9f4b5b6869d04fbd1a81cce996ced93"
     },
     {
       "question_id": "4d9b4473-df46-4c60-9b1f-8066c00c04cd",
       "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under Section 1604 (2004 IRR), what is the minimum opening size and minimum spacing between plastic-glazed openings in an exterior wall, and what type of doors must NEVER be plastic?",
+      "text": "Under PD 1096 Rule VII, Section 704, two or more buildings on the same property may be treated as one building only if which condition is met?",
       "options": [
         {
-          "id": "pl-015-a",
-          "text": "600 mm × 600 mm opening; 2.00 m spacing; entrance and exit doors must never be plastic"
+          "id": "a",
+          "text": "All buildings share the same occupancy group and construction type, and abut one another along a common firewall"
         },
         {
-          "id": "pl-015-b",
-          "text": "450 mm × 450 mm opening; 1.00 m spacing; exit doors only must never be plastic"
+          "id": "b",
+          "text": "Their aggregate area does not exceed the allowable floor area for a single building, and the most restrictive occupancy and construction requirements are applied"
         },
         {
-          "id": "pl-015-c",
-          "text": "600 mm × 600 mm opening; 3.00 m spacing; entrance doors only must never be plastic"
+          "id": "c",
+          "text": "They are located on separately titled lots that are consolidated by permit for the sole purpose of parking"
         },
         {
-          "id": "pl-015-d",
-          "text": "1.00 m × 1.00 m opening; 2.50 m spacing; all doors including service doors must never be plastic"
+          "id": "d",
+          "text": "They have identical heights and footprints, and each is provided with independent means of egress"
         }
       ],
-      "correct_option_id": "pl-015-a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The prohibition on plastic entrance and exit doors applies across all occupancy groups without exception. This is one of the few absolute prohibitions in Rule XVI — no exceptions, no zone-dependent relaxations.",
+      "rationale": "Section 704 allows two or more buildings on the same property to be treated as one building only if their aggregate area is within the allowable floor area for a single building; where occupancy groups or construction types differ, the most restrictive requirements govern.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -837,38 +837,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.702597+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.877426+00:00",
       "content_hash": "sha256:5bde9f769ada51454b5fe33b9924d3d82108632f740de2fda00aecf525d34de9"
     },
     {
       "question_id": "4db48437-52d6-4194-9cd8-5f5a43832bee",
       "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XVII, Section 1704, what is the minimum clearance required between the exhaust duct discharge point and combustible construction, and what is the minimum clearance to exterior wall openings?",
+      "text": "Under PD 1096 Rule VII, Section 704, what is the maximum projection beyond an exterior wall, expressed as a fraction of the distance from the assumed vertical plane (where opening protection first becomes required) to the property line?",
       "options": [
         {
-          "id": "sm-008-a",
-          "text": "≥ 2.00 m from combustible construction; ≥ 8.00 m from exterior wall openings"
+          "id": "a",
+          "text": "One-fourth (1/4) of the distance"
         },
         {
-          "id": "sm-008-b",
-          "text": "≥ 1.00 m from combustible construction; ≥ 3.00 m from exterior wall openings"
+          "id": "b",
+          "text": "One-third (1/3) of the distance"
         },
         {
-          "id": "sm-008-c",
-          "text": "≥ 3.00 m from combustible construction; ≥ 5.00 m from exterior wall openings"
+          "id": "c",
+          "text": "One-half (1/2) of the distance"
         },
         {
-          "id": "sm-008-d",
-          "text": "≥ 2.00 m from combustible construction; ≥ 5.00 m from exterior wall openings"
+          "id": "d",
+          "text": "Two-thirds (2/3) of the distance"
         }
       ],
-      "correct_option_id": "sm-008-a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 8.00 m clearance to wall openings is substantially larger than most buildings' footprints. On dense urban sites, this requirement drives booth placement to building perimeters or rooftop exhaust locations.",
+      "rationale": "Section 704 limits projections beyond the exterior wall to a maximum of one-third of the distance from the assumed vertical plane where opening protection first becomes required to the property line. The distance is measured at right angles from the property line.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -881,7 +881,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.870876+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.858382+00:00",
       "content_hash": "sha256:902dd76933e56cc9a252c426f6c275b3d6383e3c94b52ed34993d57f47119c80"
     },
     {
@@ -913,8 +913,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 establishes that when a building faces a street, alley, or public way, the centerline of that right-of-way is treated as the property line for the purpose of calculating fire separation distances and setback requirements.",
-      "explanation": "Using the street centerline as the property line effectively gives each property owner half the street width as a notional setback. For a 6-meter-wide street, each building is treated as having 3 meters of separation from the property line. This convention prevents buildings on opposite sides of a street from appearing to have zero fire separation distance.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -925,7 +925,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.869734+00:00",
       "content_hash": "sha256:1296b055e5d8771cf14d0e68c8bd0c9f70c91a3593409db173998abd9fa5035b"
     },
     {
@@ -957,8 +957,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 requires that every building have access to a public space, public street, or permanent open space. The code does not require direct frontage on a public street — access through an easement or permanent open space satisfies the requirement.",
-      "explanation": "The access requirement is broader than direct street frontage. 'Public space' includes plazas, parks, and other publicly accessible open areas. 'Permanent open space' can include recorded easements. This flexibility accommodates mid-block lots and lot configurations common in Philippine urban subdivisions.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -969,7 +969,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.865985+00:00",
       "content_hash": "sha256:30ebc12f5be0eeede647a10d0df348314594803c0e0f663434b245ba72a49fd8"
     },
     {
@@ -1001,8 +1001,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The one-third rule limits projections to a maximum of 1/3 × 1.5m = 0.5m. The proposed 0.6m projection exceeds this limit by 0.1m and does not comply with Sec. 704.",
-      "explanation": "The calculation is straightforward: 1/3 × 1.5m = 0.5m maximum projection. A 0.6m projection exceeds this by 20%. There is no exemption for walkway canopies in Sec. 704 — the one-third rule applies to all architectural projections. To comply, the canopy must be shortened to 0.5m or the building wall must be moved farther from the property line to create more setback.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -1013,7 +1013,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.856313+00:00",
       "content_hash": "sha256:4da425c5c863817ce252e9a34521f5f41e0f7c8b1bc7b5ad8fb26609b4d4710c"
     },
     {
@@ -1045,8 +1045,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 requires that eaves and roof overhangs maintain a minimum clearance of 750mm from side and rear property lines to prevent fire spread to adjacent properties and maintain drainage separation.",
-      "explanation": "The 750mm eave clearance prevents close-range radiant heat and direct flame spread between adjacent roof structures. It also ensures adequate clearance for gutter maintenance and prevents roof runoff from discharging directly onto neighboring property. This requirement applies to both side and rear property lines — the front setback is governed separately.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1057,7 +1057,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.875230+00:00",
       "content_hash": "sha256:4df2316837a66e90bfd032a2880e190dca04ad08b03118184b9468f991cfd5b3"
     },
     {
@@ -1089,8 +1089,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 limits unprotected openings in exterior walls to a maximum of 50% of the wall area per storey per face. This limit controls the amount of unprotected glass or open area through which fire could spread between buildings.",
-      "explanation": "The 50% opening limit is applied per storey of each exterior wall face, not as a cumulative total across the building. A wall face that is 10 sq.m in one storey may have a maximum of 5 sq.m of unprotected openings in that storey. Exceeding 50% requires either protected openings (fire-rated frames and glass) or increased separation distance from the property line.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
@@ -1101,7 +1101,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.848339+00:00",
       "content_hash": "sha256:9a39b7811a793db3c9921ff2dadf1f42247ebd0c77f4527226aea04ff30558d4"
     },
     {
@@ -1133,8 +1133,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 limits exterior wall projections (bay windows, balconies, canopies) to a maximum of one-third of the distance between the building wall and the property line, ensuring a minimum fire separation clearance is maintained.",
-      "explanation": "The one-third rule preserves two-thirds of the setback as open, unobstructed fire separation. For example, if a building wall is 3 meters from the property line, projections may extend no more than 1 meter (1/3 of 3m), leaving at least 2 meters of clear separation. This applies to any architectural element projecting beyond the building face plane.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1145,7 +1145,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.862279+00:00",
       "content_hash": "sha256:4c0af36ea40d4d6a9e59cc88cd5f1ab124d659d59e954c466236e22973265f53"
     },
     {
@@ -1177,8 +1177,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 prohibits unprotected openings in exterior walls located at zero setback from the property line. A wall on the property line presents the maximum fire spread risk to the adjacent property, requiring a solid, opening-free fire wall.",
-      "explanation": "At zero setback, there is no separation distance between the building wall and the property line. Any opening in this wall creates a direct fire path to the adjacent property. The code therefore requires this wall to be a solid fire wall with no unprotected openings. Protected openings (fire-rated assemblies) may be permitted under specific conditions, but unprotected openings are categorically prohibited.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -1189,7 +1189,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.892906+00:00",
       "content_hash": "sha256:fe3c3f13f7c31c84fd51952dd242ebe5124959c1e130b11f0501c77312294f03"
     },
     {
@@ -1221,8 +1221,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "4.2 sq.m of openings in a 9 sq.m wall face equals 46.7%, which is below the 50% maximum set by Sec. 704. At a 1.0m setback, the 50% limit applies; no separate reduction is specified for this setback distance in the base code provision.",
-      "explanation": "The arithmetic: 4.2 ÷ 9 = 0.467 = 46.7%, under the 50% threshold. The distractor in option B suggests that a reduced allowable percentage applies at 1.0m setback — this tests whether candidates know that Sec. 704's 50% limit applies uniformly, with zero-setback walls being the point at which openings are categorically prohibited, not at intermediate setbacks where a sliding sclea applies.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1233,7 +1233,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.879290+00:00",
       "content_hash": "sha256:92983326825a115ba67ce6b4ca298cd822be13f40e13c71806b260c239d855eb"
     },
     {
@@ -1265,8 +1265,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The imaginary property line is drawn at the midpoint — 3 meters from Building A. At 3 meters from an (imaginary) property line, the 50% maximum unprotected opening limit still applies. Building A's 60% opening ratio exceeds this limit. To comply, the openings must either be reduced to 50% or replaced with protected (fire-rated) glazing assemblies.",
-      "explanation": "This question chains two Sec. 704 concepts: the imaginary property line for same-lot buildings (midpoint = 3m) and the 50% unprotected opening limit. Option B states the correct outcome (non-compliant) but gives the wrong reason — it ignores the imaginary property line concept entirely. Option D correctly identifies both the imaginary property line location AND the remedy (protected openings). The distinction between option B and D tests whether candidates understand that protected openings are a permissible solution beyond the 50% limit, not that the 50% limit is absolute in all circumstances.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "evaluate",
       "application_context": null,
       "practice_context": [],
@@ -1277,7 +1277,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.827125+00:00",
       "content_hash": "sha256:74e72be4238eb6b609a45cbbc475299fb835be3c2bb0dc9c24796c4a1b337d0c"
     },
     {
@@ -1309,8 +1309,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 requires that when two buildings on the same lot face each other, an imaginary property line is established at the midpoint between them. Each building's exterior wall opening limits are then calculated as if this imaginary line were the actual property line.",
-      "explanation": "The imaginary property line concept prevents buildings on large lots from treating their entire lot as a single unlimited fire separation zone. With two buildings 4 meters apart, the imaginary property line is at 2 meters from each wall. Each building's exterior wall on this face is then treated as if it were 2 meters from a property line, which governs the allowable percentage of unprotected openings.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1321,7 +1321,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.248954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.867821+00:00",
       "content_hash": "sha256:c0d84acd6e64753d95611ceb2704cfc671ab62ad13dea7005d2ff89e874b2543"
     },
     {
@@ -1353,8 +1353,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 requires that every building have access to a public space, public street, or permanent open space. The code does not require direct frontage on a public street — access through an easement or permanent open space satisfies the requirement.",
-      "explanation": "The access requirement is broader than direct street frontage. 'Public space' includes plazas, parks, and other publicly accessible open areas. 'Permanent open space' can include recorded easements. This flexibility accommodates mid-block lots and lot configurations common in Philippine urban subdivisions.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1365,7 +1365,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.836383+00:00",
       "content_hash": "sha256:ac4bcd8f3dbbe3f278addf2e94c2f10770bd054b6f0a4e5ed0f4d9f2fc381b70"
     },
     {
@@ -1397,8 +1397,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 prohibits unprotected openings in exterior walls located at zero setback from the property line. A wall on the property line presents the maximum fire spread risk to the adjacent property, requiring a solid, opening-free fire wall.",
-      "explanation": "At zero setback, there is no separation distance between the building wall and the property line. Any opening in this wall creates a direct fire path to the adjacent property. The code therefore requires this wall to be a solid fire wall with no unprotected openings. Protected openings (fire-rated assemblies) may be permitted under specific conditions, but unprotected openings are categorically prohibited.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -1409,7 +1409,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.840053+00:00",
       "content_hash": "sha256:48e31d62b9de898d2a07af1baeea4664e5c65008ef6163189bd9e3d4cc18ab44"
     },
     {
@@ -1441,8 +1441,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 requires that eaves and roof overhangs maintain a minimum clearance of 750mm from side and rear property lines to prevent fire spread to adjacent properties and maintain drainage separation.",
-      "explanation": "The 750mm eave clearance prevents close-range radiant heat and direct flame spread between adjacent roof structures. It also ensures adequate clearance for gutter maintenance and prevents roof runoff from discharging directly onto neighboring property. This requirement applies to both side and rear property lines — the front setback is governed separately.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1453,7 +1453,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.818309+00:00",
       "content_hash": "sha256:64bda21fb0763f251935289dd8d02dcd9c3d22fa0cba3beb12437b54c468be4c"
     },
     {
@@ -1485,8 +1485,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 requires that when two buildings on the same lot face each other, an imaginary property line is established at the midpoint between them. Each building's exterior wall opening limits are then calculated as if this imaginary line were the actual property line.",
-      "explanation": "The imaginary property line concept prevents buildings on large lots from treating their entire lot as a single unlimited fire separation zone. With two buildings 4 meters apart, the imaginary property line is at 2 meters from each wall. Each building's exterior wall on this face is then treated as if it were 2 meters from a property line, which governs the allowable percentage of unprotected openings.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1497,7 +1497,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.854466+00:00",
       "content_hash": "sha256:b47605d4ba72cbf8e5cd4cdc55e118f3f8fc4696c19ea6c9bdbddc4402b53f91"
     },
     {
@@ -1529,8 +1529,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "4.2 sq.m of openings in a 9 sq.m wall face equals 46.7%, which is below the 50% maximum set by Sec. 704. At a 1.0m setback, the 50% limit applies; no separate reduction is specified for this setback distance in the base code provision.",
-      "explanation": "The arithmetic: 4.2 ÷ 9 = 0.467 = 46.7%, under the 50% threshold. The distractor in option B suggests that a reduced allowable percentage applies at 1.0m setback — this tests whether candidates know that Sec. 704's 50% limit applies uniformly, with zero-setback walls being the point at which openings are categorically prohibited, not at intermediate setbacks where a sliding sclea applies.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1541,7 +1541,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.823169+00:00",
       "content_hash": "sha256:921df6b445876e095689eada8430d2bcae502781aaeb30ef0358400725127476"
     },
     {
@@ -1573,8 +1573,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 establishes that when a building faces a street, alley, or public way, the centerline of that right-of-way is treated as the property line for the purpose of calculating fire separation distances and setback requirements.",
-      "explanation": "Using the street centerline as the property line effectively gives each property owner half the street width as a notional setback. For a 6-meter-wide street, each building is treated as having 3 meters of separation from the property line. This convention prevents buildings on opposite sides of a street from appearing to have zero fire separation distance.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1585,7 +1585,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.873395+00:00",
       "content_hash": "sha256:a8d592f0ebafe2ffdcd4086151e38a0ea68af6eaa816cd06a74ff693aeb31261"
     },
     {
@@ -1617,8 +1617,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 limits unprotected openings in exterior walls to a maximum of 50% of the wall area per storey per face. This limit controls the amount of unprotected glass or open area through which fire could spread between buildings.",
-      "explanation": "The 50% opening limit is applied per storey of each exterior wall face, not as a cumulative total across the building. A wall face that is 10 sq.m in one storey may have a maximum of 5 sq.m of unprotected openings in that storey. Exceeding 50% requires either protected openings (fire-rated frames and glass) or increased separation distance from the property line.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
@@ -1629,7 +1629,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.894748+00:00",
       "content_hash": "sha256:b89447f19fd09fc2037401c0547153048b43682fddb76241b1684391f7af7a1d"
     },
     {
@@ -1661,8 +1661,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 704 limits exterior wall projections (bay windows, balconies, canopies) to a maximum of one-third of the distance between the building wall and the property line, ensuring a minimum fire separation clearance is maintained.",
-      "explanation": "The one-third rule preserves two-thirds of the setback as open, unobstructed fire separation. For example, if a building wall is 3 meters from the property line, projections may extend no more than 1 meter (1/3 of 3m), leaving at least 2 meters of clear separation. This applies to any architectural element projecting beyond the building face plane.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1673,7 +1673,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.832626+00:00",
       "content_hash": "sha256:45537e6fe34819c93a58cadbc18ffded7864945c072c20ef9a6dfe019d984ef6"
     },
     {
@@ -1705,8 +1705,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The one-third rule limits projections to a maximum of 1/3 × 1.5m = 0.5m. The proposed 0.6m projection exceeds this limit by 0.1m and does not comply with Sec. 704.",
-      "explanation": "The calculation is straightforward: 1/3 × 1.5m = 0.5m maximum projection. A 0.6m projection exceeds this by 20%. There is no exemption for walkway canopies in Sec. 704 — the one-third rule applies to all architectural projections. To comply, the canopy must be shortened to 0.5m or the building wall must be moved farther from the property line to create more setback.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -1717,7 +1717,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.838224+00:00",
       "content_hash": "sha256:e7126286dac035a70293b77fc76563000eafefc02ff157a5611c4d1aad92ff2f"
     },
     {
@@ -1749,8 +1749,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The imaginary property line is drawn at the midpoint — 3 meters from Building A. At 3 meters from an (imaginary) property line, the 50% maximum unprotected opening limit still applies. Building A's 60% opening ratio exceeds this limit. To comply, the openings must either be reduced to 50% or replaced with protected (fire-rated) glazing assemblies.",
-      "explanation": "This question chains two Sec. 704 concepts: the imaginary property line for same-lot buildings (midpoint = 3m) and the 50% unprotected opening limit. Option B states the correct outcome (non-compliant) but gives the wrong reason — it ignores the imaginary property line concept entirely. Option D correctly identifies both the imaginary property line location AND the remedy (protected openings). The distinction between option B and D tests whether candidates understand that protected openings are a permissible solution beyond the 50% limit, not that the 50% limit is absolute in all circumstances.",
-      "code_citation": "PD 1096, Rule VII, Sec. 704",
+      "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
       "bloom_level": "evaluate",
       "application_context": null,
       "practice_context": [],
@@ -1761,7 +1761,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.06444+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.825125+00:00",
       "content_hash": "sha256:7667218c3375b213324cdfcb770f5db8de11a4563ff9a6025182a4992c513954"
     }
   ]

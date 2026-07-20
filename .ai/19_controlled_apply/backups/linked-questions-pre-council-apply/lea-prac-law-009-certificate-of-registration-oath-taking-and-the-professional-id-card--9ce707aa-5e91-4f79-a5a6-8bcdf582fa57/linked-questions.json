@@ -1,0 +1,508 @@
+{
+  "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:eceeb08d3396f2e928bee29bd693f1d7d9b033f9e21feefb02de3996fc882f35",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "6b422a1b-5daf-4271-890f-e3f792401441",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "How long is a Professional Identification Card valid from the date of issuance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 year"
+        },
+        {
+          "id": "b",
+          "text": "2 years"
+        },
+        {
+          "id": "c",
+          "text": "3 years"
+        },
+        {
+          "id": "d",
+          "text": "5 years"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates the validity period; the law establishes 3 years, not 1 year, to reduce renewal burden.",
+        "b": "Understates the validity period; the law establishes 3 years, not 2 years.",
+        "d": "Overstates the validity period; the law establishes 3 years, not 5 years.",
+        "correct": "RA 9266 Section 17 and IRR Rule III Section 302 specify that the registration (evidenced by PIC) remains valid for a three (3)-year period from the date of issuance and requires renewal upon expiry.",
+        "takeaway": "PIC validity: 3 years from issuance; renewal required before expiry to maintain practice authority."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d6ad4e15805928f0fb08a766e0e83440383c2ad3a54cd0e0427448e8d04e7278"
+    },
+    {
+      "question_id": "b997fcee-7f26-4cab-aea5-5b787f40a219",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "Who has the exclusive authority to issue, suspend, revoke, or reinstate the Certificate of Registration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The university where the architect graduated, which has no legal authority over professional licensing"
+        },
+        {
+          "id": "b",
+          "text": "The Board of Architecture under RA 9266 Section 7(d)"
+        },
+        {
+          "id": "c",
+          "text": "Any regional architect chapter, although they primarily focus on local advocacy and networking"
+        },
+        {
+          "id": "d",
+          "text": "The Secretary of Trade and Industry, who oversees broader economic policies but not specific professional licenses"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Conflates educational institutions with regulatory boards; universities grant degrees, not professional licenses; the Board regulates practice.",
+        "c": "Fragments authority inappropriately; regional chapters may provide professional services, but the Board alone holds statutory certificate authority.",
+        "d": "Misattributes regulatory power; DTI oversees business/commerce, but the Board under RA 9266 regulates architectural licensure and practice.",
+        "correct": "RA 9266 Section 7(d) vests exclusive authority in the Board of Architecture to issue, suspend, revoke, or reinstate the Certificate of Registration and Professional Identification Card.",
+        "takeaway": "Certificate authority: Board of Architecture holds sole power under RA 9266 Section 7(d) to issue, suspend, revoke, or reinstate."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e5d6b554353fb950843a41076261b416d71590a8a2c24de3d9fe2ce7a495043"
+    },
+    {
+      "question_id": "4e2ee935-b8af-4e4f-8874-8f5d6434da82",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "How does the requirement for oath-taking and regular PIC renewal work together to maintain the integrity of the architectural profession?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are unrelated administrative procedures with no professional significance, serving merely as bureaucratic formalities without impact on professional conduct"
+        },
+        {
+          "id": "b",
+          "text": "Oath commits architects to ethics; renewal verifies they maintain standing and compliance with professional standards"
+        },
+        {
+          "id": "c",
+          "text": "Both are voluntary measures that architects may choose to follow, with no mandatory enforcement or penalties for non-compliance"
+        },
+        {
+          "id": "d",
+          "text": "They serve only to generate revenue for the PRC, without any direct influence on the professional standards or ethical practices of architects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dismisses safeguards as merely administrative; oath and renewal together enforce professional responsibility and accountability.",
+        "c": "Contradicts legal structure; both oath and renewal are mandatory for practice authority, not voluntary options.",
+        "d": "Reduces public interest safeguards to revenue collection; oath and renewal protect the public by ensuring ethical practitioners remain in good standing.",
+        "correct": "The oath represents a binding commitment to the Code of Ethical Conduct and professional standards, while PIC renewal requires verification of continued standing and compliance. Together they ensure that only architects meeting ongoing ethical and professional requirements maintain practice authority.",
+        "takeaway": "Oath + renewal: initial ethical commitment + ongoing verification of compliance = sustained profession integrity."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:35810107bc26a66134145fd73cb1875297fa6da3a71ed9d401cc6e12fb88023b"
+    },
+    {
+      "question_id": "02697f9f-da38-496a-b4d6-004091a7831a",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "What is the primary purpose of the Professional Identification Card in an architect's professional practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To serve as a discount card at architectural suppliers, offering financial benefits on purchases"
+        },
+        {
+          "id": "b",
+          "text": "To prove current registration status in all professional transactions and client communications"
+        },
+        {
+          "id": "c",
+          "text": "To waive renewal fees for the Certificate of Registration, providing cost savings for architects"
+        },
+        {
+          "id": "d",
+          "text": "To grant exemption from continuing professional development, reducing the need for ongoing education"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Trivializes the credential; the PIC is a regulatory proof of licensed status, not a vendor discount card.",
+        "c": "Misunderstands renewal mechanics; the PIC itself is renewed, not replaced; renewal pays for the 3-year validity period, not waived.",
+        "d": "Invents exemptions; holding a valid PIC does not exempt architects from continuing professional development if required.",
+        "correct": "RA 9266 IRR Rule III Section 302 and Rule V Section 504 define the PIC as tangible proof of current registration status in all professional transactions and client communications, bearing the registration number, date of issuance, expiry date, and the architect's photograph.",
+        "takeaway": "PIC purpose: tangible proof of current registration status in all professional transactions and client communications."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5efd51d2daf296a11b7fdf3e9e17bafe09a447cdf7211374ec95aad018680f95"
+    },
+    {
+      "question_id": "9459ac16-5219-4f0a-b94a-146083f51989",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "What does taking the professional oath represent in the transition from LEA candidate to practicing architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ceremonial recognition with no legal consequences, serving primarily as a symbolic gesture of entry into the profession"
+        },
+        {
+          "id": "b",
+          "text": "Formal commitment to uphold the Code of Ethical Conduct and RA 9266 standards"
+        },
+        {
+          "id": "c",
+          "text": "An optional step if the architect works in corporate settings, where individual licensure may not be emphasized"
+        },
+        {
+          "id": "d",
+          "text": "Temporary pledge that may be modified later by the architect, depending on personal career goals and professional development"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Strips legal meaning from the oath; it is a binding condition of practice, not ceremonial theater.",
+        "c": "Invents exemptions; oath-taking is mandatory for all successful ALE candidates regardless of employment context.",
+        "d": "Falsely permits modification; the oath is a binding pledge, not a temporary or modifiable undertaking; it persists throughout practice.",
+        "correct": "The source document states that the oath commits the new architect to uphold the Code of Ethical Conduct, maintain high professional standards, and comply with RA 9266 and all applicable laws. It is a condition precedent to certificate issuance.",
+        "takeaway": "Professional oath: formal, binding commitment to Code of Ethical Conduct, professional standards, and RA 9266 compliance."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:956a8643641beb85ec06a3431c869728be023b1654769a1e6314a9c13a1b71a0"
+    },
+    {
+      "question_id": "946fc668-12f4-416d-8134-ec9830dcc3a1",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "The Board suspends an architect's Certificate of Registration for violation of the Code of Ethical Conduct. During suspension, what is the status of her professional practice authority?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She may practice but must report all projects to the Board monthly, ensuring transparency and compliance with ongoing ethical standards"
+        },
+        {
+          "id": "b",
+          "text": "She loses the right to practice entirely until the Board lifts the suspension"
+        },
+        {
+          "id": "c",
+          "text": "She may practice with clients' written consent, provided that all parties are aware of the suspension and its implications"
+        },
+        {
+          "id": "d",
+          "text": "She may practice only projects valued below 1 million pesos, limiting her professional scope during the suspension period"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely permits practice with Board oversight; suspension is a complete prohibition, not a monitored-practice arrangement.",
+        "c": "Invents client-consent exception; client consent cannot override Board suspension; suspension bars all practice regardless of consent.",
+        "d": "Creates non-existent thresholds; suspension prohibits all practice, not just high-value projects; no monetary threshold creates exceptions.",
+        "correct": "The source document explicitly states: 'During suspension, the architect may not practice.' Suspension is a complete prohibition on practice authority until the Board lifts the suspension.",
+        "takeaway": "Certificate suspension: architect loses all practice authority until suspension is lifted by the Board."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27979cac4962cba0e566a01412a10ff7296095250f9bfb905452f8a9ecec27d9"
+    },
+    {
+      "question_id": "9f38af9c-13c0-4f5f-b716-9e0737415143",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "Under RA 9266, what authority administers the professional oath that successful LEA candidates must take?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The CHED, as part of its oversight of higher education institutions and professional programs"
+        },
+        {
+          "id": "b",
+          "text": "The Board of Architecture or an authorized official"
+        },
+        {
+          "id": "c",
+          "text": "The candidate's previous architect-mentor, who provides guidance and support throughout the process"
+        },
+        {
+          "id": "d",
+          "text": "The PRC chairperson exclusively, ensuring consistency and adherence to professional standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses educational accreditation with professional regulation; CHED accredits schools, but the Board administers professional oaths.",
+        "c": "Misplaces authority; the architect-mentor role is pre-licensure guidance, not post-licensure oath administration; the Board alone administers the oath.",
+        "d": "Narrows the scope incorrectly; the Board (through the Chairperson or authorized officials) administers oaths, not the PRC Chairperson exclusively.",
+        "correct": "RA 9266 Section 7(c) authorizes the Board to administer oaths in connection with the regulation of architecture. The oath is administered before the Board or an authorized official, typically at a formal oath-taking ceremony.",
+        "takeaway": "Oath authority: Board of Architecture or authorized official administers professional oath under RA 9266 Section 7(c)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6dc5d96d196a2405ce2138c8ecd0123fe786c49252426e50e15947fd5ded6b6c"
+    },
+    {
+      "question_id": "f524a5bc-74aa-458c-8b03-326c1a9e30dc",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "An architect requests cancellation of her Certificate of Registration to relocate to another country. After two years, she returns to the Philippines and wishes to practice again. What must she do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simply renew her old PIC at the PRC office without any additional requirements"
+        },
+        {
+          "id": "b",
+          "text": "Apply for reinstatement of her Certificate and obtain Board approval"
+        },
+        {
+          "id": "c",
+          "text": "Retake the Architect Licensure Examination as if she were a new applicant"
+        },
+        {
+          "id": "d",
+          "text": "Register with the CHED before PRC approval, ensuring compliance with educational standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mishandles cancellation mechanics; a cancelled registration cannot be merely renewed; reapplication and Board approval are required.",
+        "c": "Overstates the requirement; reinstatement does not necessitate re-examination; Board approval of reapplication suffices.",
+        "d": "Misorders authority; CHED accredits educational institutions, not practicing architects; the Board (under PRC) handles reinstatement.",
+        "correct": "The source document states that once a Certificate is cancelled, reinstatement requires reapplication and Board approval. Renewal of an old PIC is not possible because the registration was cancelled.",
+        "takeaway": "Cancelled certificate reinstatement: architect must reapply and obtain Board approval; renewal alone is insufficient."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aaf09d85df695544d80a94ebc2dd6705416c87d723ea814d23955607a08c9cf3"
+    },
+    {
+      "question_id": "58c847f2-dbf7-4bae-8d06-2c230927d2f8",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "What document signifies that a candidate has successfully passed the LEA and is legally authorized to practice architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ALE Passing Certificate, which is a preliminary document indicating successful completion of the exam but not sufficient for legal practice."
+        },
+        {
+          "id": "b",
+          "text": "Certificate of Registration issued by the Professional Regulation Commission"
+        },
+        {
+          "id": "c",
+          "text": "Professional Identification Card, which serves as proof of identity and professional status but is issued after registration."
+        },
+        {
+          "id": "d",
+          "text": "Board Resolution of Qualification, which is an internal document used by the board to confirm eligibility but not a public certification."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses examination passing with legal authorization; exam passing alone does not grant practice authority; the Certificate of Registration is required.",
+        "c": "Misidentifies purpose; the PIC proves current registration status but is issued after the Certificate; the Certificate comes first.",
+        "d": "Invents non-existent credential; the Board issues certificates under RA 9266, not Board Resolutions alone, to authorize practice.",
+        "correct": "RA 9266 Section 3 establishes that the Certificate of Registration, issued by the Professional Regulation Commission, represents the candidate's legal authorization to practice architecture and entry into the professional register.",
+        "takeaway": "Legal authority to practice: Certificate of Registration from the PRC, not exam score alone."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5816edc822d5735b3c91e48742bbd5b89fd6674ddf925b6289c084f7120e4117"
+    },
+    {
+      "question_id": "b9acbca7-4e97-47f9-819e-15cecdf21aa6",
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
+      "text": "An architect's PIC expired six months ago and she has not renewed it. Can she legally accept new projects or represent herself as a registered architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, as long as her original Certificate of Registration is still valid, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "No, because the expired PIC represents lapsed registration status and unauthorized practice"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only for projects that began before the expiration date, which is not legally permissible"
+        },
+        {
+          "id": "d",
+          "text": "No, but she may practice if she pays a late renewal penalty immediately, which is a temporary solution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses certificate validity with practice authority; the PIC's expiration represents lapsed registration status regardless of the original Certificate.",
+        "c": "Allows retroactive practice on expired credentials; practice authority requires current PIC; prior project commencement does not excuse renewal lapses.",
+        "d": "Overstates remedy availability; while renewal is possible, the claim about late penalties obscures the core rule: no practice without current PIC.",
+        "correct": "RA 9266 prohibits practice without a valid PIC (Sec 33); while the Certificate of Registration remains valid indefinitely unless revoked, an expired PIC means no legal authority to practice until renewed.",
+        "takeaway": "Expired PIC = lapsed registration = no legal practice authority until PIC is renewed."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-009-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:839066ee057cf08d1e2e57bba8f3666a05d45d4359637ed15bdf7ffa961e4f81"
+    }
+  ]
+}

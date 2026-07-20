@@ -1,0 +1,518 @@
+{
+  "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:7726196ee2d83234f8dffdb18c4953320e69ed027efb3cd905730a887884e472",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "666317d7-3669-4aa4-bb80-bff27428a3b3",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "What is the minimum setback distance required by PHIVOLCS for inhabited structures from an active fault trace?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 meters"
+        },
+        {
+          "id": "b",
+          "text": "5 meters"
+        },
+        {
+          "id": "c",
+          "text": "10 meters"
+        },
+        {
+          "id": "d",
+          "text": "20 meters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3 meters is the PD 1067 easement for small streams, not fault setbacks.",
+        "b": "PHIVOLCS guidelines establish a minimum 5-meter setback from mapped active fault traces for inhabited structures. Local government units are advised to integrate fault locations into their Comprehensive Land Use Plans (CLUPs) per RA 10121.",
+        "c": "10 meters is not the standard PHIVOLCS setback.",
+        "d": "20 meters is the PD 1067 easement for agricultural areas along water bodies, not fault setbacks.",
+        "correct": "PHIVOLCS guidelines establish a minimum 5-meter setback from mapped active fault traces for inhabited structures. Local government units are advised to integrate fault locations into their Comprehensive Land Use Plans (CLUPs) per RA 10121.",
+        "takeaway": "PHIVOLCS fault setback = 5 meters minimum from the fault trace on both sides."
+      },
+      "explanation": null,
+      "code_citation": "PHIVOLCS Active Fault Map and Guidelines",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0ef7061a9a95fd558d6e93f63e345ccd972d0c5a65e9ca2bc9643f9fcaa58b1c"
+    },
+    {
+      "question_id": "def42b34-63cd-4120-b0b3-f106e895e3a4",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "Why is disaster-responsive planning incorporated into CLUPs rather than handled as a separate emergency management function?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because hazard prevention can only be achieved through land use restrictions and site selection that occurs during planning, not during emergencies"
+        },
+        {
+          "id": "b",
+          "text": "Because emergency management agencies have no expertise in hazard mitigation, and their focus is primarily on response and recovery operations"
+        },
+        {
+          "id": "c",
+          "text": "Because DRRM is less important than other CLUP considerations, such as economic development and infrastructure planning, which take precedence"
+        },
+        {
+          "id": "d",
+          "text": "Because RA 10121 prohibits separate DRRM planning at the municipal level, mandating integration into existing planning frameworks"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Disaster-responsive planning is proactive—it prevents disaster risk by restricting development in hazard zones during the planning phase, rather than managing risk after disasters occur. Hazard-resilient planning is a prevention strategy embedded in land use allocation.",
+        "b": "Emergency management and planning are complementary; DRRM integration into CLUPs requires coordination, not replacement.",
+        "c": "DRRM is mandatory under RA 10121 and a critical planning priority, especially in disaster-prone regions.",
+        "d": "RA 10121 requires LGU-level DRRM offices and planning; separate DRRM plans can coexist with CLUP integration.",
+        "correct": "Disaster-responsive planning is proactive—it prevents disaster risk by restricting development in hazard zones during the planning phase, rather than managing risk after disasters occur. Hazard-resilient planning is a prevention strategy embedded in land use allocation.",
+        "takeaway": "Disaster-responsive planning uses land use controls to prevent risk at the source—it is preventive planning, not reactive emergency management."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121; Climate Resilience Planning Theory",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0abe85cd0580ef1cc79bf4ddcf5153dba0c6e86cf59b90c8bf03f0d3734cb64e"
+    },
+    {
+      "question_id": "d9e97ff8-5f4c-40c7-82cb-9431374ba0e0",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "Under RA 10121, what is the mandate for all Local Government Units regarding Disaster Risk Reduction and Management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DRRM must be integrated into CLUPs and mainstreamed into land use planning"
+        },
+        {
+          "id": "b",
+          "text": "DRRM is optional in areas with low disaster risk, allowing LGUs to allocate resources elsewhere"
+        },
+        {
+          "id": "c",
+          "text": "DRRM applies only to coastal municipalities, focusing on flood and typhoon preparedness"
+        },
+        {
+          "id": "d",
+          "text": "DRRM is administered solely by NDRRMC without LGU involvement, centralizing disaster response efforts"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "RA 10121 requires all LGUs to mainstream DRRM into CLUPs and land use planning decisions; it is mandatory, not discretionary.",
+        "b": "DRRM is a mandatory requirement under RA 10121 for all LGUs, regardless of risk level.",
+        "c": "DRRM applies to all LGUs—inland areas face flood, earthquake, and landslide risks as well.",
+        "d": "RA 10121 assigns DRRM responsibilities to LGUs at all levels; NDRRMC coordinates but does not replace local action.",
+        "correct": "RA 10121 requires all LGUs to mainstream DRRM into CLUPs and land use planning decisions; it is mandatory, not discretionary.",
+        "takeaway": "RA 10121 makes DRRM integration into CLUPs a legal mandate for all LGUs."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59723c1535b52f4c0941d8ff78cbf528f81622f81fa28faa30f77bce5088b6ec"
+    },
+    {
+      "question_id": "d2f1a2d4-7b47-4af7-92b7-0266e69296a0",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "A planner is preparing a CLUP update for a municipality in a typhoon-prone region. Under RA 10121, the CLUP must include which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hazard mapping and disaster risk assessment integrated into land use zones"
+        },
+        {
+          "id": "b",
+          "text": "Only evacuation route identification, not land use restrictions, which are addressed separately"
+        },
+        {
+          "id": "c",
+          "text": "A separate standalone DRRM document unlinked to the CLUP, focusing solely on emergency response"
+        },
+        {
+          "id": "d",
+          "text": "Generic hazard information without site-specific analysis, providing a broad overview"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "RA 10121 mandates that CLUPs mainstream DRRM by integrating hazard mapping and risk assessment into land use zoning decisions, making disaster resilience part of the planning framework.",
+        "b": "Evacuation routes are important but DRRM integration into CLUPs must also address land use restrictions in hazard zones.",
+        "c": "RA 10121 requires DRRM to be mainstreamed INTO the CLUP, not as a separate parallel document.",
+        "d": "CLUP DRRM integration requires site-specific hazard analysis tailored to the LGU's geography and risk profile.",
+        "correct": "RA 10121 mandates that CLUPs mainstream DRRM by integrating hazard mapping and risk assessment into land use zoning decisions, making disaster resilience part of the planning framework.",
+        "takeaway": "DRRM in CLUPs is not an appendix—it is integrated into zoning and land allocation decisions."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121; CLUP guidelines",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:81ebde3750eaefdcb38c509758be16dd246475f94cea984c1319465b0aaa5e72"
+    },
+    {
+      "question_id": "aa330d02-8e26-4e13-96b4-1b835136bfdc",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "Which scenario best demonstrates the integration of climate resilience into disaster-responsive planning at the CLUP level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A municipality creates a separate DRRM office that handles all disaster planning independent of the Planning Office, which may lead to coordination issues"
+        },
+        {
+          "id": "b",
+          "text": "A CLUP designates high-risk flood zones as no-build or restricted-use areas, restricts high-density development in earthquake-prone areas, and integrates evacuation corridors into the road network"
+        },
+        {
+          "id": "c",
+          "text": "A municipality invests heavily in post-disaster reconstruction funds without revising land use patterns, potentially leading to repeated damage"
+        },
+        {
+          "id": "d",
+          "text": "A CLUP is prepared, then DRRM is added as a separate supplementary document without modifying zoning, which may not fully integrate resilience"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A separate office handles implementation but DRRM must be embedded in the CLUP itself for mainstreaming.",
+        "b": "True disaster-responsive planning integrates hazard awareness INTO the zoning and land use framework itself: hazard-zone designations, use restrictions, infrastructure design. This is mainstreaming—making DRRM part of the planning fabric, not an add-on.",
+        "c": "Post-disaster funding is reactive; resilience planning is preventive.",
+        "d": "A supplementary document without zoning changes is not true mainstreaming; DRRM must reshape zoning decisions.",
+        "correct": "True disaster-responsive planning integrates hazard awareness INTO the zoning and land use framework itself: hazard-zone designations, use restrictions, infrastructure design. This is mainstreaming—making DRRM part of the planning fabric, not an add-on.",
+        "takeaway": "DRRM mainstreaming = DRRM integrated into zoning and land use restrictions, not handled separately."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121; CLUP Integration Guidelines",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6fb93c6fb96c90ba55805abc14abc022e99e4846e8d605e7cff02ab802f26dcc"
+    },
+    {
+      "question_id": "e94bd9ec-d1cb-4ccb-93ab-32724cb0b3cf",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "According to PD 1067 (Water Code of the Philippines), what is the easement requirement from the mean high tide line along seashores?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 meters for urban areas, 20 meters for agricultural areas, 40 meters for forest areas"
+        },
+        {
+          "id": "b",
+          "text": "20 meters for all coastal areas regardless of classification, ensuring uniformity in coastal management"
+        },
+        {
+          "id": "c",
+          "text": "40 meters for all coastal areas regardless of classification, to provide maximum protection against erosion"
+        },
+        {
+          "id": "d",
+          "text": "10 meters for all coastal areas, which is the minimum standard for environmental protection"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PD 1067, Article 51 establishes an easement of public use along seashores with distances based on land classification: 3 meters in urban areas, 20 meters in agricultural areas, and 40 meters in forest areas.",
+        "b": "20 meters applies only to agricultural coastal areas, not uniformly to all coastal zones.",
+        "c": "40 meters applies only to forest areas, not uniformly to all coastal zones.",
+        "d": "10 meters is not a PD 1067 easement standard.",
+        "correct": "PD 1067, Article 51 establishes an easement of public use along seashores with distances based on land classification: 3 meters in urban areas, 20 meters in agricultural areas, and 40 meters in forest areas. The same classification applies to rivers and streams based on width.",
+        "takeaway": "PD 1067 easement distances vary by land classification: 3m (urban), 20m (agricultural), 40m (forest)."
+      },
+      "explanation": null,
+      "code_citation": "PD 1067 (Water Code of the Philippines, 1976), Article 51",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7ececd3b0cbe90af1ec020b42efc1e5f64e82b343702be8cfe168b40d32de295"
+    },
+    {
+      "question_id": "fac766b3-8431-4033-8ab0-9019d168a2b1",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "How does climate resilience planning address the World Bank estimate that disasters cost the Philippines approximately 1.9% of GDP annually?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By restricting development in high-hazard zones and investing in resilient infrastructure that reduces losses when disasters occur"
+        },
+        {
+          "id": "b",
+          "text": "By increasing disaster insurance costs to deter development in risky areas, thereby indirectly encouraging safer construction practices"
+        },
+        {
+          "id": "c",
+          "text": "By relocating all settlements away from hazard zones regardless of livelihood, which is considered impractical due to socio-economic impacts"
+        },
+        {
+          "id": "d",
+          "text": "By focusing only on post-disaster reconstruction, which is more cost-effective than prevention according to some outdated studies"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Climate resilience planning reduces GDP loss by preventing development in high-risk zones and building resilience into approved development through design standards and setbacks. This front-loaded prevention is cost-effective compared to post-disaster recovery.",
+        "b": "While insurance has a role, planning's primary tool is land use restriction and resilient design, not insurance pricing.",
+        "c": "Planned development is possible outside hazard zones; absolute relocation is not the planning strategy.",
+        "d": "Prevention through planning is far more cost-effective than repeated reconstruction cycles.",
+        "correct": "Climate resilience planning reduces GDP loss by preventing development in high-risk zones and building resilience into approved development through design standards and setbacks. This front-loaded prevention is cost-effective compared to post-disaster recovery.",
+        "takeaway": "The economic argument for climate resilience planning: prevention and resilient design cost less over time than managing repeated disaster impacts."
+      },
+      "explanation": null,
+      "code_citation": "World Bank Philippines Disaster Risk Profile; Climate Resilience Planning",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b59870b2cacf8ddf28c2a39e51f18e8ab04aedd5fec024c52a60f20b0b29307"
+    },
+    {
+      "question_id": "4cc26dea-290e-4a69-9c0b-c6ff4a94fd8c",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "A municipality with both active fault traces and coastal exposure is revising its CLUP. Which setback standards must be applied?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5-meter fault setback OR 40-meter coastal setback, whichever is less restrictive, which may not ensure safety"
+        },
+        {
+          "id": "b",
+          "text": "Both 5-meter fault setback AND applicable PD 1067 easement (3/20/40m based on land classification) in their respective hazard zones"
+        },
+        {
+          "id": "c",
+          "text": "Only the 40-meter coastal setback, as it is more stringent, which may not address all hazards"
+        },
+        {
+          "id": "d",
+          "text": "Only the 5-meter fault setback, as geological hazards take priority over storm surge, which is not a comprehensive approach"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Land use must satisfy ALL applicable hazard setback standards, not the least restrictive.",
+        "b": "Different hazards have different setback standards. Both apply in their respective hazard zones: PHIVOLCS 5-meter fault setback, and PD 1067 easement distances (3m urban, 20m agricultural, 40m forest) along water bodies.",
+        "c": "Both standards apply simultaneously in their respective zones; neither takes absolute priority.",
+        "d": "Geological and meteorological hazards are equally significant in Philippine risk; both must be addressed.",
+        "correct": "Different hazards have different setback standards. Both apply in their respective hazard zones: PHIVOLCS 5-meter fault setback, and PD 1067 easement distances (3m urban, 20m agricultural, 40m forest) along water bodies. A site may be subject to one or both restrictions depending on its location.",
+        "takeaway": "Setback standards are cumulative by hazard type—a site must comply with every applicable standard for its location."
+      },
+      "explanation": null,
+      "code_citation": "PHIVOLCS Guidelines; PD 1067; RA 10121",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7d9066033c34db122a150bf8376af458f8eb34a5ff68fa6e69a29412fbfa71ab"
+    },
+    {
+      "question_id": "1367498d-0e0d-4c8d-b575-c7ab74cc8a4e",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "A planner identifies that a proposed CLUP revision removes a 5-meter setback requirement from an active fault zone to permit affordable housing development. Under RA 10121, what is the correct response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approve the removal because housing need takes priority over hazard mitigation, especially in urban areas with high population density"
+        },
+        {
+          "id": "b",
+          "text": "Maintain the setback requirement; DRRM mainstreaming under RA 10121 makes hazard protection non-negotiable in planning decisions"
+        },
+        {
+          "id": "c",
+          "text": "Remove only the fault setback but maintain the coastal setback if applicable, ensuring compliance with local zoning ordinances"
+        },
+        {
+          "id": "d",
+          "text": "Refer the matter entirely to PHIVOLCS for final decision without planner involvement, as they have the expertise in seismic risk assessment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Housing need is important but cannot override life safety hazard protections. Alternative sites outside hazard zones must be sought.",
+        "b": "RA 10121 mandates that DRRM be mainstreamed into CLUPs, making disaster risk reduction a non-negotiable planning obligation. Planners must balance development with resilience; setback requirements exist to protect life and property, not to arbitrarily restrict development.",
+        "c": "If an area is subject to fault hazard, the setback applies regardless of other considerations.",
+        "d": "While PHIVOLCS maps faults, planners have the responsibility to implement setback requirements in their CLUPs based on PHIVOLCS data.",
+        "correct": "RA 10121 mandates that DRRM be mainstreamed into CLUPs, making disaster risk reduction a non-negotiable planning obligation. Planners must balance development with resilience; setback requirements exist to protect life and property, not to arbitrarily restrict development.",
+        "takeaway": "DRRM mainstreaming under RA 10121 means that setbacks are binding planning constraints, not negotiable features."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121; CLUP Planning Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8061c599ee7703d21fa289645e02826fe1d2d7671a112578ad9237c128c2c644"
+    },
+    {
+      "question_id": "0bb37a3d-994d-4ace-a7e2-a864ce4ecc9e",
+      "article_id": "8b24b8a8-6624-4793-98b7-b03c5a1fcbef",
+      "topic_id": "553c2e75-a296-4928-ad42-2d01cac2ea06",
+      "text": "A coastal barangay proposes a new commercial fishing port facility 35 meters from mean high tide. The adjacent land is classified as agricultural. Based on PD 1067, is this compliant with easement requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the post-Yolanda framework allows commercial structures within 40 meters of the mean high tide line for livelihood purposes"
+        },
+        {
+          "id": "b",
+          "text": "No, because the 20-meter agricultural easement applies; the facility at 35 meters is outside the easement zone"
+        },
+        {
+          "id": "c",
+          "text": "Yes, because PD 1067 allows development within the easement for livelihood purposes such as commercial fishing port operations"
+        },
+        {
+          "id": "d",
+          "text": "No, because the post-Yolanda framework requires 40 meters for all coastal development regardless of land classification"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The post-Yolanda framework does not establish a fixed 40-meter no-build zone; it recommends site-specific hazard assessment. PD 1067 provides the statutory easement.",
+        "b": "PD 1067 establishes a 20-meter easement for agricultural coastal areas. The proposed facility at 35 meters is outside this 20-meter restriction and therefore compliant with PD 1067.",
+        "c": "PD 1067 does not exempt livelihood structures from easement requirements; all structures within the easement zone are restricted.",
+        "d": "The post-Yolanda framework does not establish a fixed 40-meter no-build zone; rather, it recommends hazard-based classification of areas. PD 1067 is the operative law.",
+        "correct": "PD 1067 establishes a 20-meter easement for agricultural coastal areas. The proposed facility at 35 meters is outside this 20-meter restriction and therefore compliant with PD 1067. However, local zoning ordinances and site-specific hazard assessments (storm surge modeling) must also be considered.",
+        "takeaway": "PD 1067 easement distances vary by land classification—20 meters for agricultural coastal areas. Site-specific hazard assessment is also required under DRRM mainstreaming."
+      },
+      "explanation": null,
+      "code_citation": "PD 1067 (Water Code); RA 10121 (DRRM mainstreaming)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e927435a4573355f1de364ec3e4894045083cdbd8a725fec9196d6835ce3cc23"
+    }
+  ]
+}

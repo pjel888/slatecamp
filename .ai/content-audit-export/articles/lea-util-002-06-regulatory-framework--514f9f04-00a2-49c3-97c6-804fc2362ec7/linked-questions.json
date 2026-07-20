@@ -8,37 +8,31 @@
       "question_id": "6c5229af-16d2-4064-ab91-c42b086a9b06",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "Which of the following best describes the operational difference between geared and gearless traction elevators?",
+      "text": "Which elevator hoistway statement best matches the checked local source?",
       "options": [
         {
           "id": "a",
-          "text": "Geared elevators use cable friction while gearless elevators use hydraulic pressure, affecting their operational efficiency and maintenance requirements"
+          "text": "A substantially enclosed hoistway with only necessary openings and no unrelated services."
         },
         {
           "id": "b",
-          "text": "Geared elevators feature a reduction gearbox; gearless elevators use direct-drive motors enabling higher speeds"
+          "text": "A general utility shaft shared freely with unrelated piping."
         },
         {
           "id": "c",
-          "text": "Geared elevators are limited to 5 stories; gearless elevators can serve any height, providing flexibility in building design"
+          "text": "A decorative void where machine-room access is optional."
         },
         {
           "id": "d",
-          "text": "Geared elevators require a machine room; gearless elevators are always MRL systems, offering space-saving advantages"
+          "text": "A shaft that needs no pit clearance once buffers are installed."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Both geared and gearless are traction systems; hydraulics are a different elevator category.",
-        "c": "Height capability depends on speed classification, not type alone; a geared elevator can serve tall buildings if slower speeds are acceptable.",
-        "d": "Both systems can have dedicated machine rooms; MRL is a separate design consideration independent of geared/gearless distinction.",
-        "correct": "Both systems use cable friction (traction) but differ in power transmission: geared systems use a reduction gearbox (0.63–2.5 m/s); gearless systems use direct-drive multi-pole motors (3.0–4.0+ m/s), enabling high-rise applications.",
-        "takeaway": "The geared vs. gearless distinction is fundamentally about motor design and achievable speed; gearless systems enable high-rise efficiency through direct-drive design."
-      },
+      "rationale": "A substantially enclosed hoistway with only necessary openings and no unrelated services. This answer matches Salvan Utilities 2 refined markdown lines 1707-1711.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Traction Elevators section)",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-002-06-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.445802+00:00",
       "content_hash": "sha256:8ffdd92f7443c7bfd294e2eac384ce10651ea08b5b34df12bf9fd83da65b680c"
     },
     {
       "question_id": "4ece05c2-2089-4943-a0af-5a17f4873ae0",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "A consulting engineer must recommend elevator specifications for a mixed-use building in Quezon City with high-rise office space (16–25 stories) and mid-rise residential units (5–8 stories). The building has two separate elevator shafts. What approach best balances performance, cost, and regulatory compliance?",
+      "text": "What pit condition is required when the elevator car rests on fully compressed buffers?",
       "options": [
         {
           "id": "a",
-          "text": "Use gearless traction elevators (3.0–4.0 m/s) for both office and residential shafts, ensuring high speed and efficiency across all building types"
+          "text": "The pit may be eliminated if the car is slow."
         },
         {
           "id": "b",
-          "text": "Use geared traction elevators (1.75 m/s) for both shafts to minimize cost, although this may not meet the speed requirements for high-rise buildings"
+          "text": "At least 600 mm clearance remains below the underside of the car."
         },
         {
           "id": "c",
-          "text": "Use gearless traction for office shaft and geared traction (or MRL) for residential shaft to match speed requirements to occupancy"
+          "text": "The hoistway can be used for any unrelated conduit."
         },
         {
           "id": "d",
-          "text": "Use hydraulic elevators for residential and gearless traction for office, considering the cost-effectiveness and speed requirements for different building heights"
+          "text": "Only the cab finish determines the required clearance."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Over-specifying residential units with gearless 3.0+ m/s systems is wasteful and increases capital cost without performance benefit for lower-occupancy residential use.",
-        "b": "Geared traction at 1.75 m/s is inadequate for 16–25 story office tower; this violates high-rise speed standards and creates excessive wait times.",
-        "d": "Hydraulic elevators are limited to 1.0 m/s and 5–7 story maximum; they cannot serve a 25-story office building and would violate speed/height requirements.",
-        "correct": "This approach optimizes performance by matching elevator type to occupancy profile: gearless traction (3.0+ m/s) for high-rise office traffic demands, and geared traction or MRL (1.0–1.75 m/s) for mid-rise residential with lower traffic. This balances cost and regulatory compliance.",
-        "takeaway": "Mixed-use buildings with distinct occupancy profiles benefit from differentiated elevator specification aligned to each wing's traffic demands and regulatory classification."
-      },
+      "rationale": "At least 600 mm clearance remains below the underside of the car. This answer matches Salvan Utilities 2 refined markdown lines 1711-1717.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Elevator Types, Speed Classifications, and Load Capacity sections)",
       "bloom_level": "apply",
@@ -101,30 +89,30 @@
       "model_id": "ALE-UTIL-002-06-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.440122+00:00",
       "content_hash": "sha256:3e182dfabfea552591a6d432e407b717f18624b32c9fd92a04a00ddcdb6872af"
     },
     {
       "question_id": "52ac05bb-4911-4d55-81bd-d9f9c7bcf15f",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "Under RA 9514, what is the minimum car dimension required for a fire service (fireman's) elevator in a Philippine building?",
+      "text": "How should four or more elevators serving the same portion of a building be grouped?",
       "options": [
         {
           "id": "a",
-          "text": "900 mm × 1800 mm"
+          "text": "All in one hoistway to simplify shafts."
         },
         {
           "id": "b",
-          "text": "1000 mm × 2000 mm"
+          "text": "Only by cab finish and lobby visibility."
         },
         {
           "id": "c",
-          "text": "1100 mm × 2100 mm"
+          "text": "In at least two hoistways, with not more than four elevators in one hoistway."
         },
         {
           "id": "d",
-          "text": "1200 mm × 2300 mm"
+          "text": "In any grouping if one elevator is fast enough."
         }
       ],
       "correct_option_id": "c",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "900 mm × 1800 mm is below minimum fire service standards.",
-        "b": "1000 mm × 2000 mm is insufficient for emergency personnel and equipment transport.",
-        "d": "1200 mm × 2300 mm exceeds the minimum requirement.",
-        "correct": "PD 1096 / Fire Code requires fire service elevators to accommodate firefighters and equipment (typically aligning with accessibility dimensions per NBC Rule VII Sec. 722) to accommodate firefighting equipment, stretchers, and personnel.",
-        "takeaway": "Fire service elevator dimensions (1100 mm × 2100 mm) align with accessibility requirements but serve a different regulatory purpose: emergency personnel and equipment transport."
-      },
+      "rationale": "In at least two hoistways, with not more than four elevators in one hoistway. This answer matches Salvan Utilities 2 refined markdown lines 1717-1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (RA 9514 section)",
       "bloom_level": "remember",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-002-06-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.443961+00:00",
       "content_hash": "sha256:8e124950811fd1a502cad1639cb59de2401164c13772ebadf9738849c84a89ac"
     },
     {
       "question_id": "77349cad-43d9-4588-ac3d-7c5ba5fc3353",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "A Manila high-rise building achieves 20% energy savings through regenerative drives over 5 years. If annual operating cost was previously PHP 500,000, what is the approximate savings achieved annually?",
+      "text": "What is the source-safe use of an elevator machine room or penthouse?",
       "options": [
         {
           "id": "a",
-          "text": "PHP 50,000"
+          "text": "A general storage room for building supplies."
         },
         {
           "id": "b",
-          "text": "PHP 75,000"
+          "text": "A public waiting lounge above the shaft."
         },
         {
           "id": "c",
-          "text": "PHP 100,000"
+          "text": "An unventilated closet if equipment is compact."
         },
         {
           "id": "d",
-          "text": "PHP 125,000"
+          "text": "A ventilated repair and inspection space, not living quarters or storage."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "PHP 50,000 represents only 10% reduction, below the minimum regenerative drive benefit.",
-        "b": "PHP 75,000 represents 15% savings, below the stated 20–35% range.",
-        "d": "PHP 125,000 represents 25% savings, within range but conservative given typical outcomes.",
-        "correct": "Regenerative drives achieve 20–35% energy savings. At 20% savings on PHP 500,000 annual operating cost: 500,000 × 0.20 = PHP 100,000 annual savings.",
-        "takeaway": "Regenerative drives provide quantifiable energy cost reductions (20–35%) that can be modeled into building operational budgets; payback periods typically justify installation in mid-to-high-rise commercial buildings."
-      },
+      "rationale": "A ventilated repair and inspection space, not living quarters or storage. This answer matches Salvan Utilities 2 refined markdown lines 1717-1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Regenerative Drives section)",
       "bloom_level": "analyze",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-002-06-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.441084+00:00",
       "content_hash": "sha256:c0e693bfa8dc0fbcc4525e59cfe7d9f3a266b15945a53b65a9b7eb358fa27436"
     },
     {
       "question_id": "d4fbe63c-70c0-45e6-89a7-144602cd77d7",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "Which elevator type is most suitable for a 4-story residential building in the Philippines where space is limited and installation cost is a primary concern?",
+      "text": "What service rule applies to high-rise apartments or residential condominiums over five stories?",
       "options": [
         {
           "id": "a",
-          "text": "Gearless traction elevator"
+          "text": "At least one passenger elevator is kept on 24-hour constant service."
         },
         {
           "id": "b",
-          "text": "Hydraulic elevator"
+          "text": "Only a freight elevator is needed at night."
         },
         {
           "id": "c",
-          "text": "Machine-room-less (MRL) elevator"
+          "text": "All passenger elevators may be shut down after office hours."
         },
         {
           "id": "d",
-          "text": "Geared traction elevator with dedicated machine room"
+          "text": "Escalators alone satisfy the constant-service rule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Gearless traction elevators are overkill for a 4-story building and are designed for high-rise applications where speed and efficiency are critical.",
-        "c": "While MRL elevators reduce footprint, they are more expensive than hydraulic systems for a simple low-rise residential application.",
-        "d": "Geared traction with dedicated machine room requires additional space for the machine room itself, contradicting the space constraint.",
-        "correct": "Hydraulic elevators are ideal for low-rise buildings (up to 5–7 stories) with limited space. They offer lower installation cost and simpler maintenance, though with higher energy consumption.",
-        "takeaway": "Hydraulic elevators balance cost and simplicity for low-rise applications, while gearless and MRL systems are reserved for taller buildings or special constraints."
-      },
+      "rationale": "At least one passenger elevator is kept on 24-hour constant service. This answer matches Salvan Utilities 2 refined markdown line 1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Elevator Types section)",
       "bloom_level": "understand",
@@ -251,30 +221,30 @@
       "model_id": "ALE-UTIL-002-06-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.442976+00:00",
       "content_hash": "sha256:9a892a489ba78ac846d2058a1151bb38a10430ce2cea3584ef773fb7233a1a17"
     },
     {
       "question_id": "bc7bea13-8441-4d2e-bc3f-7337d345b4f5",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "A retrofit project in Cebu is installing MRL elevators to replace aging traction elevators in a 6-story commercial building. What is the primary advantage of MRL technology for this retrofit scenario?",
+      "text": "Which elevator hoistway statement best matches the checked local source?",
       "options": [
         {
           "id": "a",
-          "text": "MRL elevators achieve faster speeds (3.5–4.0 m/s) than geared traction elevators, enhancing vertical transportation efficiency in high-rise buildings."
+          "text": "A general utility shaft shared freely with unrelated piping."
         },
         {
           "id": "b",
-          "text": "MRL systems eliminate the need for a dedicated machine room, reducing building footprint and construction cost"
+          "text": "A substantially enclosed hoistway with only necessary openings and no unrelated services."
         },
         {
           "id": "c",
-          "text": "MRL elevators provide greater passenger capacity (1600+ kg) than geared traction systems, accommodating more users per trip and improving service efficiency."
+          "text": "A decorative void where machine-room access is optional."
         },
         {
           "id": "d",
-          "text": "MRL systems are fully hydraulic and require no electrical connections, simplifying installation and reducing energy consumption."
+          "text": "A shaft that needs no pit clearance once buffers are installed."
         }
       ],
       "correct_option_id": "b",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "MRL speeds are up to 2.5 m/s, comparable to geared systems, not superior to them.",
-        "c": "MRL systems serve mid-rise buildings with typical 1000 kg capacity, not greater capacity.",
-        "d": "MRL systems are electric, not hydraulic, and still require significant electrical infrastructure.",
-        "correct": "MRL technology mounts the motor and controller directly above the shaft or within guide rails, eliminating the dedicated machine room. This reduces building footprint and construction costs—key advantages for retrofit projects with space constraints.",
-        "takeaway": "MRL elevators are ideally suited for retrofit and space-constrained projects because the distributed motor eliminates machine room requirements, though they are limited to mid-rise applications."
-      },
+      "rationale": "A substantially enclosed hoistway with only necessary openings and no unrelated services. This answer matches Salvan Utilities 2 refined markdown lines 1707-1711.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Machine-Room-Less (MRL) Elevators section)",
       "bloom_level": "analyze",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-002-06-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.449348+00:00",
       "content_hash": "sha256:382ea33a1bf45034424c7b731a5b83f0608b34598c7e6dbe4b89413e76ecf9bb"
     },
     {
       "question_id": "dcb06f79-7723-410c-a685-14f645c9c9f9",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "What is the minimum clear floor area required in an elevator machine room to comply with safety and maintenance standards in the Philippines?",
+      "text": "What pit condition is required when the elevator car rests on fully compressed buffers?",
       "options": [
         {
           "id": "a",
-          "text": "2 m²"
+          "text": "The pit may be eliminated if the car is slow."
         },
         {
           "id": "b",
-          "text": "4 m²"
+          "text": "The hoistway can be used for any unrelated conduit."
         },
         {
           "id": "c",
-          "text": "6 m²"
+          "text": "At least 600 mm clearance remains below the underside of the car."
         },
         {
           "id": "d",
-          "text": "8 m²"
+          "text": "Only the cab finish determines the required clearance."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2 m² is too small for safe equipment maintenance and would violate safety access standards.",
-        "c": "6 m² exceeds the minimum requirement and represents over-design.",
-        "d": "8 m² is excessive and not specified in standards.",
-        "correct": "Elevator machine rooms must have a minimum clear floor area of 4 m² to allow equipment inspection, maintenance, and safe personnel movement.",
-        "takeaway": "Machine room design must provide minimum 4 m² floor area plus minimum 2.1 m headroom to ensure maintainability; these are binding regulatory minimums."
-      },
+      "rationale": "At least 600 mm clearance remains below the underside of the car. This answer matches Salvan Utilities 2 refined markdown lines 1711-1717.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Machine Room Requirements - Access and Safety section)",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-002-06-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.450173+00:00",
       "content_hash": "sha256:5da23f612f6e236c955a9de6a9de49525edb82831be8627f627403e4811de293"
     },
     {
       "question_id": "f2dc570d-81d0-4e21-9788-89280783e67b",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "What is the minimum interior car dimension required by BP 344 to ensure wheelchair accessibility in an elevator?",
+      "text": "How should four or more elevators serving the same portion of a building be grouped?",
       "options": [
         {
           "id": "a",
-          "text": "1000 mm × 2000 mm"
+          "text": "All in one hoistway to simplify shafts."
         },
         {
           "id": "b",
-          "text": "1100 mm × 1400 mm"
+          "text": "Only by cab finish and lobby visibility."
         },
         {
           "id": "c",
-          "text": "1200 mm × 2200 mm"
+          "text": "In any grouping if one elevator is fast enough."
         },
         {
           "id": "d",
-          "text": "1300 mm × 2300 mm"
+          "text": "In at least two hoistways, with not more than four elevators in one hoistway."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1000 mm × 2000 mm is below the minimum standard and would not provide adequate space for wheelchair maneuvering.",
-        "c": "1200 mm × 2200 mm exceeds the minimum requirement and represents over-design for accessibility compliance.",
-        "d": "1300 mm × 2300 mm is excessive and not specified in BP 344 standards.",
-        "correct": "BP 344 specifies minimum car interior dimensions of 1100 mm (width) × 2100 mm (depth) to accommodate wheelchairs and comply with accessibility standards.",
-        "takeaway": "BP 344 establishes precise minimum dimensions (1100 mm × 2100 mm) for accessible elevators; these dimensions are regulatory minimums, not recommendations."
-      },
+      "rationale": "In at least two hoistways, with not more than four elevators in one hoistway. This answer matches Salvan Utilities 2 refined markdown lines 1717-1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (BP 344 section)",
       "bloom_level": "remember",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-002-06-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.436609+00:00",
       "content_hash": "sha256:43ed2251ad0f4d0c0c048d6efce7b623ee0c33d8623a58c3e83df8bd6b3cb317"
     },
     {
       "question_id": "155a0ac5-4090-4d60-9c3d-6860694b5f26",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "A developer is planning a 10-story office building in Davao with 250 occupants on each floor. According to industry standards for peak-hour traffic, how many elevators should be included at minimum?",
+      "text": "What is the source-safe use of an elevator machine room or penthouse?",
       "options": [
         {
           "id": "a",
-          "text": "One 1000 kg elevator"
+          "text": "A ventilated repair and inspection space, not living quarters or storage."
         },
         {
           "id": "b",
-          "text": "One 1600 kg elevator"
+          "text": "A general storage room for building supplies."
         },
         {
           "id": "c",
-          "text": "Two 1000 kg elevators"
+          "text": "A public waiting lounge above the shaft."
         },
         {
           "id": "d",
-          "text": "Two 1600 kg elevators"
+          "text": "An unventilated closet if equipment is compact."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "One 1000 kg elevator would serve only 250 occupants and create unacceptable wait times (>35 seconds) during peak periods.",
-        "b": "One 1600 kg elevator is still insufficient for 2500 occupants; a single large elevator cannot meet wait-time standards.",
-        "d": "Two 1600 kg elevators exceeds minimum requirements and represents over-design, adding unnecessary construction and operating costs.",
-        "correct": "Industry planning standards suggest one elevator for every 250–300 occupants. With 2500 total occupants (250 × 10 floors), the building requires at least two elevators. Each 1000 kg elevator accommodates 13 persons, providing sufficient capacity for peak-hour traffic (12–15% of occupancy per 5 minutes).",
-        "takeaway": "Elevator capacity planning is based on occupancy ratios (1 per 250–300 occupants), not arbitrary selection; peak-hour demand during design is critical."
-      },
+      "rationale": "A ventilated repair and inspection space, not living quarters or storage. This answer matches Salvan Utilities 2 refined markdown lines 1717-1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Load Capacity and Occupancy section)",
       "bloom_level": "apply",
@@ -451,30 +397,30 @@
       "model_id": "ALE-UTIL-002-06-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.442038+00:00",
       "content_hash": "sha256:ec12ee0e1eada2d3a70ac52fa45fc53f907edfba2a9b02d2856451dc7aa144f0"
     },
     {
       "question_id": "edc9b87d-7de2-4693-8eeb-a096feb2301f",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "During a seismic event in Manila, an elevator car is at the 15th floor when seismic switches detect ground acceleration of 0.12 g. What is the expected automatic response of the elevator system?",
+      "text": "What service rule applies to high-rise apartments or residential condominiums over five stories?",
       "options": [
         {
           "id": "a",
-          "text": "The car continues to the next floor and then stops, allowing passengers to exit safely"
+          "text": "Only a freight elevator is needed at night."
         },
         {
           "id": "b",
-          "text": "The car immediately descends to the nearest floor and opens doors for evacuation"
+          "text": "At least one passenger elevator is kept on 24-hour constant service."
         },
         {
           "id": "c",
-          "text": "The car remains at the 15th floor with doors locked until manual override is activated by authorized personnel"
+          "text": "All passenger elevators may be shut down after office hours."
         },
         {
           "id": "d",
-          "text": "The car ascends to the top floor for structural stability, which is a standard safety protocol"
+          "text": "Escalators alone satisfy the constant-service rule."
         }
       ],
       "correct_option_id": "b",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Continuing to the next floor defeats the safety purpose and delays evacuation.",
-        "c": "Locking occupants in the car at height creates greater hazard than controlled descent.",
-        "d": "Ascending to the top floor is counter to seismic safety design and increases fall risk.",
-        "correct": "Seismic switches activate at 0.1–0.15 g acceleration and automatically lower the car to the nearest floor, then open doors to allow passenger evacuation before structural damage occurs.",
-        "takeaway": "Seismic switches trigger automatic descent and door opening at 0.1–0.15 g to enable rapid evacuation; this is a passive safety mechanism requiring no human intervention."
-      },
+      "rationale": "At least one passenger elevator is kept on 24-hour constant service. This answer matches Salvan Utilities 2 refined markdown line 1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Seismic Safety section)",
       "bloom_level": "apply",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-002-06-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.444893+00:00",
       "content_hash": "sha256:4500bb293427f98218af9f2625e45de20204ec9d7d648fed495ce14877f7c96a"
     },
     {
       "question_id": "8c7a0a6d-490e-4d2f-a23d-6154c30baa54",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "According to BP 344, which of the following is NOT a required accessibility feature for an elevator in a Philippine building?",
+      "text": "Which elevator hoistway statement best matches the checked local source?",
       "options": [
         {
           "id": "a",
-          "text": "Braille buttons and tactile floor indicators on control panels, ensuring accessibility for visually impaired users"
+          "text": "A general utility shaft shared freely with unrelated piping."
         },
         {
           "id": "b",
-          "text": "Audible signals for floor arrival and direction indication, which are essential for compliance with auditory accessibility standards"
+          "text": "A decorative void where machine-room access is optional."
         },
         {
           "id": "c",
-          "text": "Minimum door width of 900 mm, as specified for wheelchair accessibility under BP 344 guidelines"
+          "text": "A substantially enclosed hoistway with only necessary openings and no unrelated services."
         },
         {
           "id": "d",
-          "text": "Stainless steel interior finish to prevent rust in tropical climates"
+          "text": "A shaft that needs no pit clearance once buffers are installed."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Braille buttons and tactile indicators are explicitly required by BP 344 for visual accessibility.",
-        "b": "Audible signals for floor arrival and direction are explicitly required for audio accessibility.",
-        "c": "The 800 mm door width is a specific BP 344 dimensional requirement.",
-        "correct": "BP 344 requires Braille buttons, tactile indicators, audible signals, and specific door/car dimensions. Stainless steel interior finish is a material selection choice for durability, not a BP 344 accessibility requirement.",
-        "takeaway": "BP 344 focuses on accessibility for persons with disabilities (mobility, vision, hearing) through design dimensions and sensory features; material specifications are separate durability/maintenance considerations."
-      },
+      "rationale": "A substantially enclosed hoistway with only necessary openings and no unrelated services. This answer matches Salvan Utilities 2 refined markdown lines 1707-1711.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (BP 344 section)",
       "bloom_level": "understand",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-002-06-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.438079+00:00",
       "content_hash": "sha256:1e5ae3752f8b26473de124066494d1226b694a80af91a53816f7abf4370433e3"
     },
     {
       "question_id": "f63aee2e-ce39-49c3-a401-0b72a88daa4e",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "An elevator pit in a Manila high-rise experiences recurring water accumulation despite adequate drainage slope. A structural engineer identifies that pit depth is insufficient at 0.8 meters. For a traction elevator system, what is the consequence of this undersized pit?",
+      "text": "What pit condition is required when the elevator car rests on fully compressed buffers?",
       "options": [
         {
           "id": "a",
-          "text": "The counterweight will rest below the car when at the lowest landing, violating safety protocols and potentially causing operational hazards"
+          "text": "The pit may be eliminated if the car is slow."
         },
         {
           "id": "b",
-          "text": "Inadequate space for counterweight buffers and travel zone, restricting service access and increasing maintenance costs"
+          "text": "The hoistway can be used for any unrelated conduit."
         },
         {
           "id": "c",
-          "text": "The hoistway pressure relief vents will operate continuously, wasting energy and leading to increased utility expenses"
+          "text": "Only the cab finish determines the required clearance."
         },
         {
           "id": "d",
-          "text": "Motor overheating will occur due to reduced ventilation pathways through the pit, necessitating frequent repairs and downtime"
+          "text": "At least 600 mm clearance remains below the underside of the car."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Counterweight positioning is controlled by cable length and pulley design, not pit depth alone.",
-        "c": "Hoistway pressure relief is not directly related to pit depth deficiency.",
-        "d": "Motor cooling occurs in the machine room, not the pit.",
-        "correct": "Traction elevators require minimum pit depth of 1.0–1.5 meters to accommodate counterweight buffers and safety travel zones. A 0.8-meter pit is insufficient, restricting service access and increasing maintenance costs due to component damage and difficulty of repairs.",
-        "takeaway": "Pit depth is a critical design parameter specific to elevator type; insufficient depth for traction systems directly impacts maintainability, safety margins, and operational life."
-      },
+      "rationale": "At least 600 mm clearance remains below the underside of the car. This answer matches Salvan Utilities 2 refined markdown lines 1711-1717.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Pit Depth section)",
       "bloom_level": "analyze",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-002-06-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.439129+00:00",
       "content_hash": "sha256:606fe88c3c78c6f2395723470225dc2ace3e2783c35611f7a4c64456691fa57a"
     },
     {
       "question_id": "19f735fe-062c-4758-917b-3082c39235d9",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "In a tropical climate like the Philippines, what is the primary risk of inadequate machine room ventilation for elevator systems?",
+      "text": "How should four or more elevators serving the same portion of a building be grouped?",
       "options": [
         {
           "id": "a",
-          "text": "Excessive air pressure in the hoistway causing the car to move erratically, potentially leading to safety hazards"
+          "text": "In at least two hoistways, with not more than four elevators in one hoistway."
         },
         {
           "id": "b",
-          "text": "Motor overheating, reduced efficiency, and premature component failure"
+          "text": "All in one hoistway to simplify shafts."
         },
         {
           "id": "c",
-          "text": "Corrosion of the counterweight due to moisture accumulation, affecting the balance and operation"
+          "text": "Only by cab finish and lobby visibility."
         },
         {
           "id": "d",
-          "text": "Hydraulic fluid degradation in traction elevators, compromising performance"
+          "text": "In any grouping if one elevator is fast enough."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Hoistway pressure differentials affect efficiency through piston effect, but primary concern is component thermal protection.",
-        "c": "Counterweight corrosion is a pit drainage issue, not a machine room ventilation problem.",
-        "d": "Traction elevators use wire ropes, not hydraulic fluid; this confuses elevator types.",
-        "correct": "In tropical climates with ambient temperatures exceeding 30°C, undersized ventilation leads to motor overheating and electrical component degradation. Adequate ventilation (10–15 ACH) maintains operating temperatures between 5–40°C.",
-        "takeaway": "Machine room ventilation in tropical regions must account for both heat dissipation and electrical component protection; mechanical cooling may be necessary beyond standard ACH rates."
-      },
+      "rationale": "In at least two hoistways, with not more than four elevators in one hoistway. This answer matches Salvan Utilities 2 refined markdown lines 1717-1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Machine Room Requirements and Tropical Climate Factors sections)",
       "bloom_level": "understand",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-002-06-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.446701+00:00",
       "content_hash": "sha256:7e3b2a280e0ffdd3b6c6b605d750a77d2164f2e7632da2ecfb0baf6192506c34"
     },
     {
       "question_id": "97280f1d-b654-47d0-9168-d07a31d1d90b",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "A 20-story commercial building in Manila has a total elevator travel distance of 65 meters. Based on speed classification standards, what is the minimum required elevator speed for this building?",
+      "text": "What is the source-safe use of an elevator machine room or penthouse?",
       "options": [
         {
           "id": "a",
-          "text": "1.0 m/s (low-rise), suitable for buildings up to 5 stories with minimal travel distance"
+          "text": "A general storage room for building supplies."
         },
         {
           "id": "b",
-          "text": "1.75 m/s (mid-rise), typically used for buildings between 6 to 10 stories with moderate travel requirements"
+          "text": "A ventilated repair and inspection space, not living quarters or storage."
         },
         {
           "id": "c",
-          "text": "3.0 m/s or above (high-rise)"
+          "text": "A public waiting lounge above the shaft."
         },
         {
           "id": "d",
-          "text": "4.5 m/s (ultra high-rise), generally reserved for skyscrapers exceeding 40 stories with extensive travel distances"
+          "text": "An unventilated closet if equipment is compact."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.0 m/s is the low-rise classification (1–5 stories, <20 meters travel) and is inadequate for a 20-story building.",
-        "b": "1.75 m/s is the mid-rise classification (6–15 stories, 20–50 meters) and does not apply to a 20-story building with 65 meters travel.",
-        "d": "4.5 m/s is beyond standard high-rise speeds and represents over-specification without clear operational justification.",
-        "correct": "High-rise buildings (16+ stories) with travel distances exceeding 50 meters require a minimum speed of 3.0 m/s to manage passenger flow efficiently and reduce wait times.",
-        "takeaway": "Speed classification is determined by both building height and total travel distance; a 20-story building automatically falls into high-rise classification requiring 3.0 m/s minimum."
-      },
+      "rationale": "A ventilated repair and inspection space, not living quarters or storage. This answer matches Salvan Utilities 2 refined markdown lines 1717-1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Speed Classifications section)",
       "bloom_level": "apply",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-002-06-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.447588+00:00",
       "content_hash": "sha256:ef5c37574b889fd0f25c42d4b7fb9ca874b04f341b0f706e3fccec73e7151d13"
     },
     {
       "question_id": "9f10740b-7aa2-4d0a-b209-3d80bf765880",
       "article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
       "topic_id": "22d581ef-4afc-4695-8a72-7577c4fd50c4",
-      "text": "A 15-story commercial building in Quezon City experienced significant elevator downtime due to corrosion of cables and fasteners after the 2022 typhoon season. The building is located 2 km from the coast. What design specification should have been included to mitigate this issue?",
+      "text": "What service rule applies to high-rise apartments or residential condominiums over five stories?",
       "options": [
         {
           "id": "a",
-          "text": "Increased machine room ventilation to 20 ACH to ensure adequate air circulation and reduce humidity levels"
+          "text": "Only a freight elevator is needed at night."
         },
         {
           "id": "b",
-          "text": "Selection of stainless steel ropes and fasteners for corrosion resistance in coastal regions"
+          "text": "All passenger elevators may be shut down after office hours."
         },
         {
           "id": "c",
-          "text": "Installation of backup hydraulic elevators for redundancy, which would provide an alternative in case of primary system failure"
+          "text": "At least one passenger elevator is kept on 24-hour constant service."
         },
         {
           "id": "d",
-          "text": "Use of gearless traction elevators instead of geared systems, which are more efficient and require less maintenance"
+          "text": "Escalators alone satisfy the constant-service rule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Machine room ventilation addresses thermal management, not material corrosion protection.",
-        "c": "Backup elevators address availability but not the root cause of corrosion damage.",
-        "d": "Elevator type (geared vs. gearless) does not address corrosion; both require material protection in coastal areas.",
-        "correct": "The Philippines' coastal regions experience salt air corrosion. Standards explicitly require stainless steel ropes and fasteners in coastal areas, plus moisture-resistant lubricants to prevent rust and extend component life.",
-        "takeaway": "Tropical climate and coastal considerations must inform material selection at design stage; stainless steel, moisture-resistant lubricants, and proper drainage are essential in Philippine coastal buildings."
-      },
+      "rationale": "At least one passenger elevator is kept on 24-hour constant service. This answer matches Salvan Utilities 2 refined markdown line 1725.",
       "explanation": null,
       "code_citation": "LEA-UTIL-002-06.mdx (Tropical Climate Factors section)",
       "bloom_level": "analyze",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-002-06-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.448459+00:00",
       "content_hash": "sha256:173b9dc64b88a2312e364f9c23cba4a48519e73775304b7a6ecc67b35ae4ff20"
     }
   ]

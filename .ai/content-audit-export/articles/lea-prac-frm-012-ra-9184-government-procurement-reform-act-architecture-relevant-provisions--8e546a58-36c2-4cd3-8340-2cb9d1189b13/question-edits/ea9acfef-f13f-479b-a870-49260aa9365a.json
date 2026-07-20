@@ -1,50 +1,70 @@
 {
   "question_id": "ea9acfef-f13f-479b-a870-49260aa9365a",
   "baseline_hash": "sha256:c169d3abc4b69b614b74aeaadf93bc7995a93d30ebbc9853f00c50b5f7362fb5",
-  "reason": "Batch 102 local-first source audit aligned the explanation/citation to local raw primary source support while preserving the answer key.",
-  "approved_by": "codex-local-source-audit-batch-102",
-  "approved_at": "2026-05-13T10:45:00.000+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-U: the prior Batch 102 edit was a no-op (kept answer key unchanged) and left the question stem incoherent. The stem says 'the latest Revised IRR of RA 9184' but every option references 'RA 12009' as if it were an IRR. RA 12009 (New Government Procurement Act, signed 20 July 2024) is a NEW STATUTE that REVISED/REPEALED RA 9184, not an IRR of RA 9184. The previous rationale's phrase 'Updated 2016 Revised IRR of RA 9184 (as of July 2024)' is wrong because July 2024 is the date RA 12009 was signed, not an IRR update. Rewrote so the stem, options, and rationale consistently describe RA 12009 as the successor statute and ask the source-safe takeaway (architects should track the new law and its IRR and PhilGEPS e-procurement).",
+  "approved_by": "council-agent-U-leaprac-cmp-frm",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
-    "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA_9184.md",
-    "raw_markdown_sha256": "sha256:ecbcdb3b7cad01360562b13cff77d076aae591c81ad32caf49530ac4ad9d6dd7",
-    "source_locator": "RA 9184; checked lines 32, 50, 80, 88, 126, 136, 140, 159, 211, 213",
-    "checked_markdown_lines": [
-      32,
-      50,
-      80,
-      88,
-      126,
-      136,
-      140,
-      159,
-      211,
-      213
-    ],
     "parent_article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
     "parent_article_slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions",
-    "answer_key_fields_changed": false,
-    "additional_sources": [
+    "parent_article_title": "RA 9184 Government Procurement Reform Act Architecture Relevant Provisions",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9184 (Government Procurement Reform Act of 2003); RA 12009 (New Government Procurement Act of 2024, signed 20 July 2024), which revised RA 9184",
+    "checked_sources": [
       {
-        "label": "Updated 2016 IRR of RA 9184",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/Updated 2016 IRR_31 March 2021.pdf",
-        "raw_pdf_sha256": "sha256:9e1db6ab2f6f9c9483338902fea28a3ed482f0a69c5e883bf98c58f4717a1c25",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/Updated 2016 IRR_31 March 2021.md",
-        "raw_markdown_sha256": "sha256:b6dde9a240d58f44212eff47191b57cb8d8747121a9ef667e093f1eff1f0f2bf",
-        "checked_markdown_lines": [
-          31,
-          410,
-          467,
-          1660,
-          2980,
-          2982
-        ]
+        "source_id": "ra-9184-local",
+        "label": "RA 9184 - Government Procurement Reform Act (local raw source)",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "source_locator": "RA 9184 Sections 10, 49-51 (competitive bidding default; alternative methods)"
+      },
+      {
+        "source_id": "ra-12009-lawphil",
+        "label": "Republic Act No. 12009 - New Government Procurement Act of 2024",
+        "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html",
+        "source_locator": "RA 12009 (20 July 2024) - 'AN ACT REVISING REPUBLIC ACT NO. 9184, OTHERWISE KNOWN AS THE GOVERNMENT PROCUREMENT REFORM ACT'"
+      },
+      {
+        "source_id": "gppb-ra-12009",
+        "label": "GPPB - New Government Procurement Act (RA 12009) official page",
+        "url": "https://www.gppb.gov.ph/new-government-procurement-act-or-republic-act-no-12009/",
+        "source_locator": "Confirms RA 12009 revises the 21-year-old RA 9184"
       }
-    ]
+    ],
+    "local_source_safe_action": "Rewrote incoherent stem (mixed 'IRR of RA 9184' with 'RA 12009' options). RA 12009 is a successor statute, not an IRR. New question tests the source-safe takeaway that RA 12009 supersedes RA 9184 and architects must track the new law, its IRR, and PhilGEPS e-procurement."
   },
   "proposed": {
-    "code_citation": "RA 9184 and Updated 2016 IRR of RA 9184",
-    "explanation": "Batch 102 source audit keeps the answer key unchanged and strengthens RA 9184 support. The Act and Updated 2016 IRR support procurement principles, consulting-services scope, procurement planning, competitive-bidding default, BAC functions, observer participation, and alternative methods as exceptions."
+    "text": "What is the source-safe framing of RA 12009 (signed 20 July 2024) relative to RA 9184, and what should architects do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "RA 12009 is a new Implementing Rules and Regulations updating RA 9184; architects only need to re-read the old IRR"
+      },
+      {
+        "id": "b",
+        "text": "RA 12009 is a new statute (New Government Procurement Act) that revises RA 9184; architects should track the new law, its IRR, and PhilGEPS e-procurement requirements"
+      },
+      {
+        "id": "c",
+        "text": "RA 12009 repeals all procurement rules so architects no longer need to bid for government work"
+      },
+      {
+        "id": "d",
+        "text": "RA 12009 only applies to private architectural projects, so government architects can ignore it"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "RA 12009 is not an IRR; it is a new statute that revises RA 9184 itself.",
+      "b": "RA 12009 (New Government Procurement Act of 2024, signed 20 July 2024) is a successor statute that revises RA 9184. Architects should follow the new law, its IRR, and the PhilGEPS e-procurement system.",
+      "c": "RA 12009 revises rather than abolishes government procurement; bidding rules remain, modernized.",
+      "d": "RA 12009 applies to government procurement, not private projects; government-side architects must follow it.",
+      "correct": "RA 12009 (New Government Procurement Act of 2024, signed 20 July 2024) is a successor statute that revises RA 9184. Architects should follow the new law, its IRR, and the PhilGEPS e-procurement system.",
+      "takeaway": "Do not conflate a statute with an IRR. RA 12009 is the new law; its IRR is a separate instrument. Track both plus PhilGEPS for e-procurement."
+    },
+    "explanation": "RA 12009 (New Government Procurement Act of 2024, signed 20 July 2024) is a successor statute that revises RA 9184 (Government Procurement Reform Act of 2003). It is not an IRR of RA 9184. Architects working on government projects should follow the new law, its Implementing Rules and Regulations, and the PhilGEPS e-procurement platform.",
+    "code_citation": "RA 9184 (Government Procurement Reform Act of 2003); RA 12009 (New Government Procurement Act of 2024)"
   }
 }

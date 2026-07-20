@@ -8,31 +8,31 @@
       "question_id": "bdd56476-63bf-4798-90ac-1a1709d2af54",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Based on the specifications in \"RA 9442 PWD Privileges and Incentives\", if a project requires 1500 mm, what is the correct interpretation?",
+      "text": "Which source family should answer LEA questions about accessible ramp, walkway, entrance, parking, and handrail dimensions?",
       "options": [
         {
           "id": "A",
-          "text": "1500 mm is the minimum/standard requirement"
+          "text": "RA 10754 benefit rules"
         },
         {
           "id": "B",
-          "text": "1500 mm is the maximum permitted value"
+          "text": "BP 344 and PD 1096 accessibility provisions"
         },
         {
           "id": "C",
-          "text": "1500 mm applies only to specific conditions"
+          "text": "BIR revenue regulations"
         },
         {
           "id": "D",
-          "text": "1500 mm is an approximate value subject to interpretation"
+          "text": "Civil Code provisions on obligations"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "B",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 1500 mm as the requirement. Context: ation and implementing regs.[web:29]\r 5. **BP 344 dimensions:** You again tie **...",
+      "rationale": "BP 344 and PD 1096 are the local source-supported design references for accessible facility dimensions.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:11.237947+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.600013+00:00",
       "content_hash": "sha256:471a888b19ba68eb70e3fc201b3776f61cb5c174adb6c6e825c6f9da9b4c91b3"
     },
     {
       "question_id": "b25a26d0-821d-433b-8e07-8db832ccb64a",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An employer hires PWD workers and installs BP 344-compliant ramps and accessible toilets. Under the Philippine law framework, what are the two categories of additional tax deductions the employer may claim?",
+      "text": "What minimum clear width does the 2024 BP 344 IRR give for accessible ramps?",
       "options": [
         {
           "id": "A",
-          "text": "20% deduction on PWD wages and 10% deduction on construction costs for accessibility improvements, providing moderate financial incentives for compliance"
+          "text": "900 mm"
         },
         {
           "id": "B",
-          "text": "25% additional deduction on PWD wages and up to 50% additional deduction on direct accessibility improvement costs"
+          "text": "1000 mm"
         },
         {
           "id": "C",
-          "text": "50% additional deduction on PWD wages and 25% additional deduction on structural improvement costs, offering significant tax relief for inclusive practices"
+          "text": "1200 mm"
         },
         {
           "id": "D",
-          "text": "30% additional deduction on PWD wages and full deduction of accessibility improvement costs, maximizing financial benefits for employers"
+          "text": "1500 mm"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "C",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "25% additional deduction on wages; up to 50% on direct accessibility improvement costs.",
-        "explanation": "The Philippine law framework (RA 7277 as amended, with BIR implementing guidelines) provides two distinct incentive categories: (1) A 25% additional deduction on the total salaries/wages paid to PWD employees — on top of the regular wage deduction. (2) Up to 50% additional deduction on the direct costs of installing accessibility improvements (ramps, lifts, accessible toilets) that comply with BP 344. The wage deduction rewards employment; the improvement deduction subsidizes physical compliance with accessibility standards.",
-        "common_misconceptions": [
-          "Treating both deductions as 25% — the improvement cost deduction is up to 50%, not 25%",
-          "Attributing these tax incentives directly to RA 9442 — they are grounded in RA 7277 as amended and BIR rules"
-        ]
-      },
+      "rationale": "The 2024 BP 344 IRR states a 1200 mm minimum clear width for accessible ramps.",
       "explanation": "Two distinct deductions: 25% on PWD wages and up to 50% on direct accessibility improvement costs.",
       "code_citation": "RA 7277 as amended; BIR guidance",
       "bloom_level": "understand",
@@ -96,7 +89,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.622079+00:00",
       "content_hash": "sha256:a5247abf3e15454b0c9d1b3c7601eff6a17cf308c677ca88799e566d3ad1fbb1"
     },
     {
@@ -127,14 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Up to 50% additional deduction on direct accessibility improvement costs is available under RA 7277 incentive provisions and BIR guidance.",
-        "explanation": "Beyond normal depreciation, the Philippine law framework — specifically RA 7277 as amended and BIR implementing rules — allows businesses to claim an additional deduction of up to 50% of the direct costs of installing accessibility improvements such as ramps, lifts, and accessible toilets that comply with BP 344. This is distinct from the 25% wage deduction (which applies only to PWD employee salaries). The improvement deduction effectively subsidizes BP 344 compliance by reducing taxable income, making accessibility economically less burdensome.",
-        "common_misconceptions": [
-          "Confusing the 25% wage deduction with the improvement cost deduction — different categories, different percentages",
-          "Describing the incentive as a tax credit rather than an additional deduction — it is a deduction reducing taxable income"
-        ]
-      },
+      "rationale": "Up to 50% additional deduction on direct accessibility improvement costs is available under RA 7277 incentive provisions and BIR guidance. Beyond normal depreciation, the Philippine law framework — specifically RA 7277 as amended and BIR implementing rules — allows businesses to claim an additional deduction of up to 50% of the direct costs of installing accessibility improvements such as ramps, lifts, and accessible toilets that comply with BP 344. This is distinct from the 25% wage deduction (which applies only to PWD employee salaries). The improvement deduction effectively subsidizes BP 344 compliance by reducing taxable income, making accessibility economically less burdensome.",
       "explanation": "Up to 50% additional deduction on direct accessibility improvement costs effectively subsidizes BP 344 compliance.",
       "code_citation": "RA 7277 as amended; BIR guidance on accessibility improvements",
       "bloom_level": "evaluate",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.617236+00:00",
       "content_hash": "sha256:d9ea143d4e3d276af726b6486c03865bbf5d38b1a1ff2cfa512b77bd582ed770"
     },
     {
       "question_id": "8f02020f-2932-4b4e-95ba-d30bdecae193",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under the Philippine PWD law framework, which law expanded the discount to include full VAT exemption in addition to the 20% discount for PWDs?",
+      "text": "What is the source-safe interpretation of a 1500 mm sidewalk or walkway requirement?",
       "options": [
         {
           "id": "A",
-          "text": "RA 7277 (Magna Carta for Disabled Persons), as the parent rights law establishing all privileges"
+          "text": "It is a PWD VAT exemption rule"
         },
         {
           "id": "B",
-          "text": "RA 9442, which amended RA 7277 to add discounts and anti-ridicule provisions"
+          "text": "It is an accessibility-route dimension supported by BP 344"
         },
         {
           "id": "C",
-          "text": "RA 10754, which expanded benefits to include 12% VAT exemption alongside the 20% discount"
+          "text": "It is a business permit penalty"
         },
         {
           "id": "D",
-          "text": "BP 344 2024 IRR, which ties spatial compliance requirements to discount eligibility"
+          "text": "It is a tax deduction limit"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "B",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "RA 10754 added the 12% VAT exemption on top of the 20% discount established by RA 9442's amendments.",
-        "explanation": "RA 7277 is the parent Magna Carta for PWDs. RA 9442 amended RA 7277 to introduce discounts, anti-ridicule provisions, and privileges. RA 10754 further expanded these benefits by adding full VAT exemption (currently 12%) on top of the 20% discount, and also increased penalties for denial of benefits. BP 344 governs spatial specifications only and does not create discount entitlements.",
-        "common_misconceptions": [
-          "Attributing the VAT exemption to RA 9442 — RA 9442 added discounts but RA 10754 added the VAT exemption",
-          "Believing BP 344 creates monetary privileges — it governs physical dimensions and built-environment accessibility only"
-        ]
-      },
+      "rationale": "BP 344 supports sidewalk and walkway widths as accessibility-route dimensions, not benefit-law provisions.",
       "explanation": "RA 10754 is the specific law that added the 12% VAT exemption alongside the 20% discount for PWDs.",
       "code_citation": "RA 10754; RA 9442; RA 7277",
       "bloom_level": "remember",
@@ -198,30 +177,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.613535+00:00",
       "content_hash": "sha256:c6f369c910c83f442785ff48a4b3d3cd64e6f9ab71f8e59d19d1aff56a1b2364"
     },
     {
       "question_id": "ee96cec5-730b-4940-9da4-7a0d7587fdff",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "The 20% PWD discount and 12% VAT exemption under Philippine law apply to specific goods and services. Which of the following is NOT included in the list of covered services?",
+      "text": "When two wheelchair users need to pass on a sidewalk or walkway, what width does the 2024 BP 344 IRR identify?",
       "options": [
         {
           "id": "A",
-          "text": "Domestic air, sea, and land transport fares for the exclusive use of the PWD"
+          "text": "1200 mm"
         },
         {
           "id": "B",
-          "text": "Hotel accommodations, restaurant meals, and recreational admissions for the PWD"
+          "text": "1500 mm"
         },
         {
           "id": "C",
-          "text": "Purchase of motor vehicles for personal use by the PWD, with proof of disability"
+          "text": "1800 mm"
         },
         {
           "id": "D",
-          "text": "Medical and dental services, professional fees, and diagnostic procedures"
+          "text": "3000 mm"
         }
       ],
       "correct_option_id": "C",
@@ -229,14 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Motor vehicle purchases are not among the covered PWD discount categories.",
-        "explanation": "The 20% discount and VAT exemption cover: medicines and medical supplies; medical and dental services, diagnostics, professional fees; domestic air/sea/land transport fares; hotels, restaurants, and recreational facilities (cinemas, amusement); funeral and burial services; and educational assistance. Motor vehicle purchases are not included in the enumerated categories. The discount applies to services for the PWD's exclusive personal use, not capital goods purchases.",
-        "common_misconceptions": [
-          "Assuming the discount applies to all purchases made by a PWD — it is limited to specific enumerated categories",
-          "Including vehicle purchases because mobility aids are covered — the law covers mobility aids, not motor vehicles generally"
-        ]
-      },
+      "rationale": "The 2024 BP 344 IRR gives 1800 mm where space is required for two wheelchairs to pass.",
       "explanation": "Motor vehicle purchases are not in the enumerated PWD discount categories; the list covers transport fares, not vehicle acquisitions.",
       "code_citation": "RA 7277 Sec. 32 as amended by RA 9442 and RA 10754",
       "bloom_level": "apply",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.602953+00:00",
       "content_hash": "sha256:4cbe4732221f2f9ae8759e23deb5586d521367c7c538dc3b1e7bdf2eb630b337"
     },
     {
       "question_id": "b486bf24-76ff-4c3a-b1e2-d1070d253bea",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A review question states: 'The 1% PWD workforce quota for government agencies is mandated by RA 9442 Section 35.' Is this statement accurate, and if not, what is the correct source?",
+      "text": "What should an architect do with PWD discount, VAT, employment quota, tax incentive, or penalty claims when the local RA/BIR source packet is unavailable?",
       "options": [
         {
           "id": "A",
-          "text": "Accurate — RA 9442 Section 35 is the specific provision creating the 1% public sector employment quota"
+          "text": "Answer from memory"
         },
         {
           "id": "B",
-          "text": "Inaccurate — the 1% workforce quota is properly grounded in RA 10524, not RA 9442 Section 35"
+          "text": "Use BP 344 dimensions as proof of those benefits"
         },
         {
           "id": "C",
-          "text": "Accurate — RA 9442 amended RA 7277 to include employment quotas in all its major sections"
+          "text": "Defer or narrow the item until the local law packet is acquired"
         },
         {
           "id": "D",
-          "text": "Inaccurate — no Philippine law specifies a 1% employment quota; the quota is merely encouraged, not mandated"
+          "text": "Delete all accessibility design checks"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "C",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The 1% public sector workforce quota is properly grounded in RA 10524 — not RA 9442.",
-        "explanation": "A common source error in review materials attributes the 1% government employment quota to RA 9442 Section 35. The correct statutory basis is RA 10524, which amended RA 7277 to mandate that at least 1% of government agency positions be reserved for PWDs. RA 9442 amended RA 7277 in other respects (discounts, anti-ridicule provisions) but is not the proper basis for the employment quota. For private companies with 100+ employees, the 1% is encouraged and backed by anti-discrimination provisions under RA 7277 as amended.",
-        "common_misconceptions": [
-          "Citing RA 9442 as the source of the 1% workforce quota — the correct source is RA 10524",
-          "Treating the private sector quota as a firm mandate — it is encouraged rather than strictly mandated for private entities"
-        ]
-      },
+      "rationale": "Privilege-law claims require their own verified local source packet; the safe batch action is to defer those claims or narrow to locally supported accessibility design.",
       "explanation": "The 1% government employment quota comes from RA 10524 — a common misattribution to RA 9442 Section 35 is a documented exam trap.",
       "code_citation": "RA 10524; RA 7277 as amended",
       "bloom_level": "analyze",
@@ -300,30 +265,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.611000+00:00",
       "content_hash": "sha256:061578cf66199bac7353f95ba9153f4f3ec82b0a2d577e0dd857c3627f006a5d"
     },
     {
       "question_id": "ddd94c88-fee7-4167-a8eb-370a02061d26",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under the Philippine PWD law framework, which pair of laws provides the physical dimensional specifications for accessible facilities versus which provide the rights and discount framework?",
+      "text": "What handrail heights are supported in the local accessibility source family?",
       "options": [
         {
           "id": "A",
-          "text": "RA 9442 and RA 10754 provide physical dimensions; BP 344 and PD 1096 provide the rights framework"
+          "text": "0.30 m and 0.50 m"
         },
         {
           "id": "B",
-          "text": "BP 344 and PD 1096 provide physical dimensions; RA 7277, RA 9442, and RA 10754 provide the rights framework"
+          "text": "0.70 m and 0.90 m"
         },
         {
           "id": "C",
-          "text": "BP 344 alone provides both physical dimensions and the PWD discount and employment rights"
+          "text": "1.20 m and 1.50 m"
         },
         {
           "id": "D",
-          "text": "PD 1096 provides physical dimensions; RA 9442 provides both rights and millimeter specifications"
+          "text": "1.80 m and 2.20 m"
         }
       ],
       "correct_option_id": "B",
@@ -331,14 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 + PD 1096 give millimeter specs; RA 7277/9442/10754 give rights, discounts, and incentives.",
-        "explanation": "This is the fundamental law-assignment distinction in Philippine PWD compliance. BP 344 (2024 IRR) and PD 1096 (National Building Code) provide all physical dimensional specifications: ramp slopes, corridor widths, parking dimensions, elevator sizes, counter heights. RA 7277, RA 9442, and RA 10754 provide the rights framework: equal access mandates, the 20% discount, VAT exemption, employment quotas, and penalties. RA 9442 and RA 10754 contain no millimeter specifications whatsoever.",
-        "common_misconceptions": [
-          "Believing RA 9442 contains dimensional specifications — it has no millimeter standards; only BP 344 and PD 1096 do",
-          "Attributing the rights and discount framework to BP 344 — BP 344 governs physical design, not entitlements"
-        ]
-      },
+      "rationale": "PD 1096 Appendix A and the BP 344 source family support handrails at 0.70 m and 0.90 m above ramps or steps.",
       "explanation": "Critical exam distinction: BP 344 + PD 1096 = dimensions; RA 7277/9442/10754 = rights and discounts.",
       "code_citation": "BP 344; PD 1096; RA 7277; RA 9442; RA 10754",
       "bloom_level": "understand",
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.608337+00:00",
       "content_hash": "sha256:4c3ff6ea05439810ec24ebe9cac33d373280e784ef15d1c79cbbba7732566123"
     },
     {
       "question_id": "5fd55ca3-eeae-48a0-b499-0d860bac7549",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Post-RA 10754, what are the maximum penalty ranges that commentaries and BIR/DOH enforcement discussions cite for serious denial of PWD benefits or privileges?",
+      "text": "Which design item is supported by PD 1096 Appendix A for accessible parking?",
       "options": [
         {
           "id": "A",
-          "text": "Up to ₱50,000 fine and up to 2 years imprisonment for first-time offenders"
+          "text": "Accessible parking should be close to accessible entrances and allow wheelchair transfer"
         },
         {
           "id": "B",
-          "text": "Up to ₱150,000 fine and up to 3 years imprisonment with possible suspension of business permits"
+          "text": "Restaurants may deduct VAT from meals"
         },
         {
           "id": "C",
-          "text": "Up to ₱300,000 fine and up to 6 years imprisonment, plus possible business permit revocation"
+          "text": "PWD IDs must be renewed yearly"
         },
         {
           "id": "D",
-          "text": "Up to ₱500,000 fine and up to 10 years imprisonment for repeated violations after RA 10754"
+          "text": "Employers must reserve one percent of private jobs"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "A",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Post-RA 10754 enforcement discussions cite up to ₱300,000 and up to 6 years for serious violations.",
-        "explanation": "RA 9442 introduced penalties for denying PWD privileges and for ridicule or vilification. RA 10754 significantly increased these penalties. Post-RA 10754 commentaries, BIR guidance, and DOH enforcement discussions reference penalties of up to ₱300,000 and imprisonment of up to 6 years, plus possible revocation or suspension of business permits for repeated or serious violations. The narrower ₱50,000–₱150,000 ranges appear in older review materials that pre-date RA 10754.",
-        "common_misconceptions": [
-          "Using the pre-RA 10754 penalty ranges of ₱50,000–₱150,000 — these were increased by RA 10754",
-          "Citing ₱500,000 as the maximum — current post-10754 commentary references ₱300,000 as the upper band"
-        ]
-      },
+      "rationale": "The local PD 1096 accessibility appendix supports accessible parking location and transfer-space design checks.",
       "explanation": "Post-RA 10754 penalties: up to ₱300,000 + up to 6 years + possible business permit revocation.",
       "code_citation": "RA 10754; RA 9442",
       "bloom_level": "remember",
@@ -402,30 +353,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.604307+00:00",
       "content_hash": "sha256:f6ff62583bbf49a45f3d004a3604b3abe88457995f813e9e18fa752f3c3cf85c"
     },
     {
       "question_id": "025e8d23-e547-4895-8d31-571ab8ce9da5",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A restaurant refuses to apply the 20% PWD discount to a PWD's meal, claiming it is not required to absorb the cost. Which statement correctly describes the legal obligation?",
+      "text": "Which source family should answer LEA questions about accessible ramp, walkway, entrance, parking, and handrail dimensions?",
       "options": [
         {
           "id": "A",
-          "text": "The restaurant is correct; the government reimburses establishments directly for all discount amounts given"
+          "text": "RA 10754 benefit rules"
         },
         {
           "id": "B",
-          "text": "The restaurant must apply the discount; establishments absorb the cost but may treat it as a deductible expense"
+          "text": "BP 344 and PD 1096 accessibility provisions"
         },
         {
           "id": "C",
-          "text": "The restaurant is correct; the 20% discount only applies to hotels and transport, not food service"
+          "text": "BIR revenue regulations"
         },
         {
           "id": "D",
-          "text": "The restaurant must apply the discount only if it has more than 50 seats or is part of a hotel facility"
+          "text": "Civil Code provisions on obligations"
         }
       ],
       "correct_option_id": "B",
@@ -433,14 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Establishments absorb the cost of the PWD discount; there is no direct government reimbursement, but the cost may be treated as a deductible expense under BIR rules.",
-        "explanation": "Under Philippine PWD law, establishments are required to grant the discount and absorb the cost themselves — there is no direct government reimbursement mechanism. However, BIR rules allow the discount amount to be treated as a deductible business expense. This arrangement incentivizes compliance by reducing taxable income, without requiring government to directly subsidize individual transactions. Restaurants are specifically included in the list of covered establishments under RA 7277 as amended.",
-        "common_misconceptions": [
-          "Believing the government directly reimburses establishments for PWD discounts — establishments absorb the cost",
-          "Limiting the restaurant discount to hotel-affiliated restaurants — all food service establishments are covered"
-        ]
-      },
+      "rationale": "BP 344 and PD 1096 are the local source-supported design references for accessible facility dimensions.",
       "explanation": "Establishments absorb PWD discount costs and may treat the amount as a deductible expense — no direct government reimbursement exists.",
       "code_citation": "RA 7277 Sec. 32 as amended; BIR rules",
       "bloom_level": "apply",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.614785+00:00",
       "content_hash": "sha256:5d636d3c8447dd89bb52f6d43fa941540462a57dc644d314d1b3fbad1a9e801a"
     },
     {
       "question_id": "8ab6f7c5-83cc-4399-b4c8-8b4e203d8b76",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "RA 9442's role in the PWD law hierarchy is best described as which of the following?",
+      "text": "What minimum clear width does the 2024 BP 344 IRR give for accessible ramps?",
       "options": [
         {
           "id": "A",
-          "text": "A standalone law creating all PWD privileges, replacing RA 7277 entirely with new provisions"
+          "text": "900 mm"
         },
         {
           "id": "B",
-          "text": "An amendment to RA 7277 adding discounts, anti-ridicule provisions, and privileges but no new spatial dimensions"
+          "text": "1000 mm"
         },
         {
           "id": "C",
-          "text": "An implementing rule and regulation (IRR) for BP 344 covering both social rights and dimensional standards"
+          "text": "1200 mm"
         },
         {
           "id": "D",
-          "text": "A replacement for PD 1096 that combines building codes with social legislation in a single instrument"
+          "text": "1500 mm"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "C",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "RA 9442 is an amendment to RA 7277 adding discounts and privileges — it contains no millimeter-level building specifications.",
-        "explanation": "RA 9442 does not stand alone or replace RA 7277. It amends RA 7277 to introduce: the 20% discount on specified goods and services; anti-ridicule and vilification provisions; priority access privileges; and penalties for denial of benefits. Crucially, RA 9442 contains no millimeter-level spatial specifications — it does not specify ramp widths, counter heights, or parking dimensions. Those remain exclusively in BP 344 and PD 1096.",
-        "common_misconceptions": [
-          "Treating RA 9442 as a standalone law that replaces RA 7277 — it is an amendment, not a replacement",
-          "Believing RA 9442 contains spatial specifications — it has none; BP 344 and PD 1096 provide all dimensions"
-        ]
-      },
+      "rationale": "The 2024 BP 344 IRR states a 1200 mm minimum clear width for accessible ramps.",
       "explanation": "RA 9442 amends RA 7277 to add discounts and privileges — it is not standalone and contains no spatial specifications.",
       "code_citation": "RA 9442; RA 7277",
       "bloom_level": "understand",
@@ -504,7 +441,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.605641+00:00",
       "content_hash": "sha256:c111cd7866ecb9b285ae0d13235ea9c8af297943380bf3f1665a9ae938a9cffb"
     },
     {
@@ -535,14 +472,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Private companies with 100+ employees are encouraged (not strictly mandated) to reserve 1% of positions for PWDs.",
-        "explanation": "The 1% employment quota is a firm absolute mandate for government agencies and corporations under RA 10524. For private companies with 100 or more employees, the 1% reservation is encouraged and backed by anti-discrimination provisions, but the framing in RA 10524 and RA 7277 amendments is less absolute for the private sector than for the public sector. Failure to make good-faith efforts can trigger anti-discrimination enforcement, but the private sector framing is 'encouraged' rather than a hard criminal mandate.",
-        "common_misconceptions": [
-          "Treating the private sector 1% as an identical mandate to the government sector requirement — the private sector framing is softer",
-          "Citing 5% as the private employer quota — no such rate exists; 1% is the reference figure"
-        ]
-      },
+      "rationale": "Private companies with 100+ employees are encouraged (not strictly mandated) to reserve 1% of positions for PWDs. The 1% employment quota is a firm absolute mandate for government agencies and corporations under RA 10524. For private companies with 100 or more employees, the 1% reservation is encouraged and backed by anti-discrimination provisions, but the framing in RA 10524 and RA 7277 amendments is less absolute for the private sector than for the public sector. Failure to make good-faith efforts can trigger anti-discrimination enforcement, but the private sector framing is 'encouraged' rather than a hard criminal mandate.",
       "explanation": "Government: 1% is an absolute mandate. Private (100+ employees): 1% is encouraged with anti-discrimination backing.",
       "code_citation": "RA 10524; RA 7277 as amended",
       "bloom_level": "analyze",
@@ -555,30 +485,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:56.979869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.598537+00:00",
       "content_hash": "sha256:0c8387bf84fac4fb6414ce1b2a46bd1f31ffcd31a67308b16938550806b909a6"
     },
     {
       "question_id": "dcac97cf-7104-4326-b307-0a28c737c1f2",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An architect installs accessible ramps and an accessible toilet to comply with BP 344. The building owner asks whether this investment yields any tax benefit. Which answer correctly evaluates the situation?",
+      "text": "What is the source-safe interpretation of a 1500 mm sidewalk or walkway requirement?",
       "options": [
         {
           "id": "A",
-          "text": "No tax benefit applies to accessibility improvements since these are mandatory code compliance costs"
+          "text": "It is a PWD VAT exemption rule"
         },
         {
           "id": "B",
-          "text": "The owner may claim up to 50% additional deduction on direct accessibility improvement costs under RA 7277 incentives"
+          "text": "It is an accessibility-route dimension supported by BP 344"
         },
         {
           "id": "C",
-          "text": "The owner receives a 25% tax credit (not deduction) on accessibility improvement costs under RA 10754, which is a different incentive structure than deductions"
+          "text": "It is a business permit penalty"
         },
         {
           "id": "D",
-          "text": "The owner receives full exemption from real property tax on floors that contain accessible features, which is not typically applicable under current tax laws"
+          "text": "It is a tax deduction limit"
         }
       ],
       "correct_option_id": "B",
@@ -586,14 +516,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Up to 50% additional deduction on direct accessibility improvement costs is available under RA 7277 incentive provisions and BIR guidance.",
-        "explanation": "Beyond normal depreciation, the Philippine law framework — specifically RA 7277 as amended and BIR implementing rules — allows businesses to claim an additional deduction of up to 50% of the direct costs of installing accessibility improvements such as ramps, lifts, and accessible toilets that comply with BP 344. This is distinct from the 25% wage deduction (which applies only to PWD employee salaries). The improvement deduction effectively subsidizes BP 344 compliance by reducing taxable income, making accessibility economically less burdensome.",
-        "common_misconceptions": [
-          "Confusing the 25% wage deduction with the improvement cost deduction — different categories, different percentages",
-          "Describing the incentive as a tax credit rather than an additional deduction — it is a deduction reducing taxable income"
-        ]
-      },
+      "rationale": "BP 344 supports sidewalk and walkway widths as accessibility-route dimensions, not benefit-law provisions.",
       "explanation": "Up to 50% additional deduction on direct accessibility improvement costs effectively subsidizes BP 344 compliance.",
       "code_citation": "RA 7277 as amended; BIR guidance on accessibility improvements",
       "bloom_level": "evaluate",
@@ -606,30 +529,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.612278+00:00",
       "content_hash": "sha256:0c3d75b22fcaaf7c0165252175d2930676c6e2ea5c8c9e566e593b3743404409"
     },
     {
       "question_id": "bba80f31-9296-4517-9b87-fba75b1f934b",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "The 20% PWD discount and 12% VAT exemption under Philippine law apply to specific goods and services. Which of the following is NOT included in the list of covered services?",
+      "text": "When two wheelchair users need to pass on a sidewalk or walkway, what width does the 2024 BP 344 IRR identify?",
       "options": [
         {
           "id": "A",
-          "text": "Domestic air, sea, and land transport fares for the exclusive use of the PWD"
+          "text": "1200 mm"
         },
         {
           "id": "B",
-          "text": "Hotel accommodations, restaurant meals, and recreational admissions for the PWD"
+          "text": "1500 mm"
         },
         {
           "id": "C",
-          "text": "Purchase of motor vehicles for personal use by the PWD, with proof of disability"
+          "text": "1800 mm"
         },
         {
           "id": "D",
-          "text": "Medical and dental services, professional fees, and diagnostic procedures"
+          "text": "3000 mm"
         }
       ],
       "correct_option_id": "C",
@@ -637,14 +560,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Motor vehicle purchases are not among the covered PWD discount categories.",
-        "explanation": "The 20% discount and VAT exemption cover: medicines and medical supplies; medical and dental services, diagnostics, professional fees; domestic air/sea/land transport fares; hotels, restaurants, and recreational facilities (cinemas, amusement); funeral and burial services; and educational assistance. Motor vehicle purchases are not included in the enumerated categories. The discount applies to services for the PWD's exclusive personal use, not capital goods purchases.",
-        "common_misconceptions": [
-          "Assuming the discount applies to all purchases made by a PWD — it is limited to specific enumerated categories",
-          "Including vehicle purchases because mobility aids are covered — the law covers mobility aids, not motor vehicles generally"
-        ]
-      },
+      "rationale": "The 2024 BP 344 IRR gives 1800 mm where space is required for two wheelchairs to pass.",
       "explanation": "Motor vehicle purchases are not in the enumerated PWD discount categories; the list covers transport fares, not vehicle acquisitions.",
       "code_citation": "RA 7277 Sec. 32 as amended by RA 9442 and RA 10754",
       "bloom_level": "apply",
@@ -657,45 +573,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.619808+00:00",
       "content_hash": "sha256:09390fa1f26f36b6c691018daa67d7f1c4fe79d8b3bde810e51f21f4c1a6b375"
     },
     {
       "question_id": "a9044a5c-aa7d-485b-9086-77156a855abf",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A review question states: 'The 1% PWD workforce quota for government agencies is mandated by RA 9442 Section 35.' Is this statement accurate, and if not, what is the correct source?",
+      "text": "What should an architect do with PWD discount, VAT, employment quota, tax incentive, or penalty claims when the local RA/BIR source packet is unavailable?",
       "options": [
         {
           "id": "A",
-          "text": "Accurate — RA 9442 Section 35 is the specific provision creating the 1% public sector employment quota"
+          "text": "Answer from memory"
         },
         {
           "id": "B",
-          "text": "Inaccurate — the 1% workforce quota is properly grounded in RA 10524, not RA 9442 Section 35"
+          "text": "Use BP 344 dimensions as proof of those benefits"
         },
         {
           "id": "C",
-          "text": "Accurate — RA 9442 amended RA 7277 to include employment quotas in all its major sections"
+          "text": "Defer or narrow the item until the local law packet is acquired"
         },
         {
           "id": "D",
-          "text": "Inaccurate — no Philippine law specifies a 1% employment quota; the quota is merely encouraged, not mandated"
+          "text": "Delete all accessibility design checks"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "C",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The 1% public sector workforce quota is properly grounded in RA 10524 — not RA 9442.",
-        "explanation": "A common source error in review materials attributes the 1% government employment quota to RA 9442 Section 35. The correct statutory basis is RA 10524, which amended RA 7277 to mandate that at least 1% of government agency positions be reserved for PWDs. RA 9442 amended RA 7277 in other respects (discounts, anti-ridicule provisions) but is not the proper basis for the employment quota. For private companies with 100+ employees, the 1% is encouraged and backed by anti-discrimination provisions under RA 7277 as amended.",
-        "common_misconceptions": [
-          "Citing RA 9442 as the source of the 1% workforce quota — the correct source is RA 10524",
-          "Treating the private sector quota as a firm mandate — it is encouraged rather than strictly mandated for private entities"
-        ]
-      },
+      "rationale": "Privilege-law claims require their own verified local source packet; the safe batch action is to defer those claims or narrow to locally supported accessibility design.",
       "explanation": "The 1% government employment quota comes from RA 10524 — a common misattribution to RA 9442 Section 35 is a documented exam trap.",
       "code_citation": "RA 10524; RA 7277 as amended",
       "bloom_level": "analyze",
@@ -708,30 +617,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.618434+00:00",
       "content_hash": "sha256:938086c2ba2d97ac8855421655deefbe9e94ff2ff90279afaa8a8f3f159b4377"
     },
     {
       "question_id": "3ef000b7-cb0b-47f1-a724-44f572d7a948",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under the Philippine PWD law framework, which pair of laws provides the physical dimensional specifications for accessible facilities versus which provide the rights and discount framework?",
+      "text": "What handrail heights are supported in the local accessibility source family?",
       "options": [
         {
           "id": "A",
-          "text": "RA 9442 and RA 10754 provide physical dimensions; BP 344 and PD 1096 provide the rights framework"
+          "text": "0.30 m and 0.50 m"
         },
         {
           "id": "B",
-          "text": "BP 344 and PD 1096 provide physical dimensions; RA 7277, RA 9442, and RA 10754 provide the rights framework"
+          "text": "0.70 m and 0.90 m"
         },
         {
           "id": "C",
-          "text": "BP 344 alone provides both physical dimensions and the PWD discount and employment rights"
+          "text": "1.20 m and 1.50 m"
         },
         {
           "id": "D",
-          "text": "PD 1096 provides physical dimensions; RA 9442 provides both rights and millimeter specifications"
+          "text": "1.80 m and 2.20 m"
         }
       ],
       "correct_option_id": "B",
@@ -739,14 +648,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 + PD 1096 give millimeter specs; RA 7277/9442/10754 give rights, discounts, and incentives.",
-        "explanation": "This is the fundamental law-assignment distinction in Philippine PWD compliance. BP 344 (2024 IRR) and PD 1096 (National Building Code) provide all physical dimensional specifications: ramp slopes, corridor widths, parking dimensions, elevator sizes, counter heights. RA 7277, RA 9442, and RA 10754 provide the rights framework: equal access mandates, the 20% discount, VAT exemption, employment quotas, and penalties. RA 9442 and RA 10754 contain no millimeter specifications whatsoever.",
-        "common_misconceptions": [
-          "Believing RA 9442 contains dimensional specifications — it has no millimeter standards; only BP 344 and PD 1096 do",
-          "Attributing the rights and discount framework to BP 344 — BP 344 governs physical design, not entitlements"
-        ]
-      },
+      "rationale": "PD 1096 Appendix A and the BP 344 source family support handrails at 0.70 m and 0.90 m above ramps or steps.",
       "explanation": "Critical exam distinction: BP 344 + PD 1096 = dimensions; RA 7277/9442/10754 = rights and discounts.",
       "code_citation": "BP 344; PD 1096; RA 7277; RA 9442; RA 10754",
       "bloom_level": "understand",
@@ -759,45 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.616016+00:00",
       "content_hash": "sha256:aadbd9562c766a1684b724ef46e343bc62a08ee5ef75a629c27ab6c031248e7b"
     },
     {
       "question_id": "184d680c-bcf2-4989-9a1f-e5b4223e3fd5",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Post-RA 10754, what are the maximum penalty ranges that commentaries and BIR/DOH enforcement discussions cite for serious denial of PWD benefits or privileges?",
+      "text": "Which design item is supported by PD 1096 Appendix A for accessible parking?",
       "options": [
         {
           "id": "A",
-          "text": "Up to ₱50,000 fine and up to 2 years imprisonment for first-time offenders"
+          "text": "Accessible parking should be close to accessible entrances and allow wheelchair transfer"
         },
         {
           "id": "B",
-          "text": "Up to ₱150,000 fine and up to 3 years imprisonment with possible suspension of business permits"
+          "text": "Restaurants may deduct VAT from meals"
         },
         {
           "id": "C",
-          "text": "Up to ₱300,000 fine and up to 6 years imprisonment, plus possible business permit revocation"
+          "text": "PWD IDs must be renewed yearly"
         },
         {
           "id": "D",
-          "text": "Up to ₱500,000 fine and up to 10 years imprisonment for repeated violations after RA 10754"
+          "text": "Employers must reserve one percent of private jobs"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "A",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Post-RA 10754 enforcement discussions cite up to ₱300,000 and up to 6 years for serious violations.",
-        "explanation": "RA 9442 introduced penalties for denying PWD privileges and for ridicule or vilification. RA 10754 significantly increased these penalties. Post-RA 10754 commentaries, BIR guidance, and DOH enforcement discussions reference penalties of up to ₱300,000 and imprisonment of up to 6 years, plus possible revocation or suspension of business permits for repeated or serious violations. The narrower ₱50,000–₱150,000 ranges appear in older review materials that pre-date RA 10754.",
-        "common_misconceptions": [
-          "Using the pre-RA 10754 penalty ranges of ₱50,000–₱150,000 — these were increased by RA 10754",
-          "Citing ₱500,000 as the maximum — current post-10754 commentary references ₱300,000 as the upper band"
-        ]
-      },
+      "rationale": "The local PD 1096 accessibility appendix supports accessible parking location and transfer-space design checks.",
       "explanation": "Post-RA 10754 penalties: up to ₱300,000 + up to 6 years + possible business permit revocation.",
       "code_citation": "RA 10754; RA 9442",
       "bloom_level": "remember",
@@ -810,30 +705,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.621017+00:00",
       "content_hash": "sha256:d6c92a17baf44e6130cf93975fb4c5fe9ce140b76b72f45df92912ee92eaf4c0"
     },
     {
       "question_id": "24561889-65bb-4d12-8806-4aabadbdaa4b",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A restaurant refuses to apply the 20% PWD discount to a PWD's meal, claiming it is not required to absorb the cost. Which statement correctly describes the legal obligation?",
+      "text": "Which source family should answer LEA questions about accessible ramp, walkway, entrance, parking, and handrail dimensions?",
       "options": [
         {
           "id": "A",
-          "text": "The restaurant is correct; the government reimburses establishments directly for all discount amounts given"
+          "text": "RA 10754 benefit rules"
         },
         {
           "id": "B",
-          "text": "The restaurant must apply the discount; establishments absorb the cost but may treat it as a deductible expense"
+          "text": "BP 344 and PD 1096 accessibility provisions"
         },
         {
           "id": "C",
-          "text": "The restaurant is correct; the 20% discount only applies to hotels and transport, not food service"
+          "text": "BIR revenue regulations"
         },
         {
           "id": "D",
-          "text": "The restaurant must apply the discount only if it has more than 50 seats or is part of a hotel facility"
+          "text": "Civil Code provisions on obligations"
         }
       ],
       "correct_option_id": "B",
@@ -841,14 +736,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Establishments absorb the cost of the PWD discount; there is no direct government reimbursement, but the cost may be treated as a deductible expense under BIR rules.",
-        "explanation": "Under Philippine PWD law, establishments are required to grant the discount and absorb the cost themselves — there is no direct government reimbursement mechanism. However, BIR rules allow the discount amount to be treated as a deductible business expense. This arrangement incentivizes compliance by reducing taxable income, without requiring government to directly subsidize individual transactions. Restaurants are specifically included in the list of covered establishments under RA 7277 as amended.",
-        "common_misconceptions": [
-          "Believing the government directly reimburses establishments for PWD discounts — establishments absorb the cost",
-          "Limiting the restaurant discount to hotel-affiliated restaurants — all food service establishments are covered"
-        ]
-      },
+      "rationale": "BP 344 and PD 1096 are the local source-supported design references for accessible facility dimensions.",
       "explanation": "Establishments absorb PWD discount costs and may treat the amount as a deductible expense — no direct government reimbursement exists.",
       "code_citation": "RA 7277 Sec. 32 as amended; BIR rules",
       "bloom_level": "apply",
@@ -861,45 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.596012+00:00",
       "content_hash": "sha256:c3c30878fee62fff44b2bd223544c849d05cc80e48bad1f757716c5090cfcff6"
     },
     {
       "question_id": "397c79f0-aee3-422c-ac86-cb369e20cc10",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "RA 9442's role in the PWD law hierarchy is best described as which of the following?",
+      "text": "What minimum clear width does the 2024 BP 344 IRR give for accessible ramps?",
       "options": [
         {
           "id": "A",
-          "text": "A standalone law creating all PWD privileges, replacing RA 7277 entirely with new provisions"
+          "text": "900 mm"
         },
         {
           "id": "B",
-          "text": "An amendment to RA 7277 adding discounts, anti-ridicule provisions, and privileges but no new spatial dimensions"
+          "text": "1000 mm"
         },
         {
           "id": "C",
-          "text": "An implementing rule and regulation (IRR) for BP 344 covering both social rights and dimensional standards"
+          "text": "1200 mm"
         },
         {
           "id": "D",
-          "text": "A replacement for PD 1096 that combines building codes with social legislation in a single instrument"
+          "text": "1500 mm"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "C",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "RA 9442 is an amendment to RA 7277 adding discounts and privileges — it contains no millimeter-level building specifications.",
-        "explanation": "RA 9442 does not stand alone or replace RA 7277. It amends RA 7277 to introduce: the 20% discount on specified goods and services; anti-ridicule and vilification provisions; priority access privileges; and penalties for denial of benefits. Crucially, RA 9442 contains no millimeter-level spatial specifications — it does not specify ramp widths, counter heights, or parking dimensions. Those remain exclusively in BP 344 and PD 1096.",
-        "common_misconceptions": [
-          "Treating RA 9442 as a standalone law that replaces RA 7277 — it is an amendment, not a replacement",
-          "Believing RA 9442 contains spatial specifications — it has none; BP 344 and PD 1096 provide all dimensions"
-        ]
-      },
+      "rationale": "The 2024 BP 344 IRR states a 1200 mm minimum clear width for accessible ramps.",
       "explanation": "RA 9442 amends RA 7277 to add discounts and privileges — it is not standalone and contains no spatial specifications.",
       "code_citation": "RA 9442; RA 7277",
       "bloom_level": "understand",
@@ -912,7 +793,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.606967+00:00",
       "content_hash": "sha256:238e90b9862aa86b87202482e66cc63e610350209e1262346741721bb9b01c1c"
     },
     {
@@ -943,14 +824,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Private companies with 100+ employees are encouraged (not strictly mandated) to reserve 1% of positions for PWDs.",
-        "explanation": "The 1% employment quota is a firm absolute mandate for government agencies and corporations under RA 10524. For private companies with 100 or more employees, the 1% reservation is encouraged and backed by anti-discrimination provisions, but the framing in RA 10524 and RA 7277 amendments is less absolute for the private sector than for the public sector. Failure to make good-faith efforts can trigger anti-discrimination enforcement, but the private sector framing is 'encouraged' rather than a hard criminal mandate.",
-        "common_misconceptions": [
-          "Treating the private sector 1% as an identical mandate to the government sector requirement — the private sector framing is softer",
-          "Citing 5% as the private employer quota — no such rate exists; 1% is the reference figure"
-        ]
-      },
+      "rationale": "Private companies with 100+ employees are encouraged (not strictly mandated) to reserve 1% of positions for PWDs. The 1% employment quota is a firm absolute mandate for government agencies and corporations under RA 10524. For private companies with 100 or more employees, the 1% reservation is encouraged and backed by anti-discrimination provisions, but the framing in RA 10524 and RA 7277 amendments is less absolute for the private sector than for the public sector. Failure to make good-faith efforts can trigger anti-discrimination enforcement, but the private sector framing is 'encouraged' rather than a hard criminal mandate.",
       "explanation": "Government: 1% is an absolute mandate. Private (100+ employees): 1% is encouraged with anti-discrimination backing.",
       "code_citation": "RA 10524; RA 7277 as amended",
       "bloom_level": "analyze",
@@ -963,30 +837,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.601471+00:00",
       "content_hash": "sha256:ba770e3c094dfc80468bb0f3af306fe302b49008012d625a795a931925f90c53"
     },
     {
       "question_id": "5e495aca-f627-4ad3-a500-0b2e55f7e414",
       "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An employer hires PWD workers and installs BP 344-compliant ramps and accessible toilets. Under the Philippine law framework, what are the two categories of additional tax deductions the employer may claim?",
+      "text": "What is the source-safe interpretation of a 1500 mm sidewalk or walkway requirement?",
       "options": [
         {
           "id": "A",
-          "text": "20% deduction on PWD wages and 10% deduction on construction costs for accessibility improvements, applicable only if the improvements exceed 5% of total project cost"
+          "text": "It is a PWD VAT exemption rule"
         },
         {
           "id": "B",
-          "text": "25% additional deduction on PWD wages and up to 50% additional deduction on direct accessibility improvement costs"
+          "text": "It is an accessibility-route dimension supported by BP 344"
         },
         {
           "id": "C",
-          "text": "50% additional deduction on PWD wages and 25% additional deduction on structural improvement costs, provided the improvements are certified by a licensed accessibility consultant"
+          "text": "It is a business permit penalty"
         },
         {
           "id": "D",
-          "text": "30% additional deduction on PWD wages and full deduction of accessibility improvement costs, but only if the employer employs more than 50 PWD workers"
+          "text": "It is a tax deduction limit"
         }
       ],
       "correct_option_id": "B",
@@ -994,14 +868,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "25% additional deduction on wages; up to 50% on direct accessibility improvement costs.",
-        "explanation": "The Philippine law framework (RA 7277 as amended, with BIR implementing guidelines) provides two distinct incentive categories: (1) A 25% additional deduction on the total salaries/wages paid to PWD employees — on top of the regular wage deduction. (2) Up to 50% additional deduction on the direct costs of installing accessibility improvements (ramps, lifts, accessible toilets) that comply with BP 344. The wage deduction rewards employment; the improvement deduction subsidizes physical compliance with accessibility standards.",
-        "common_misconceptions": [
-          "Treating both deductions as 25% — the improvement cost deduction is up to 50%, not 25%",
-          "Attributing these tax incentives directly to RA 9442 — they are grounded in RA 7277 as amended and BIR rules"
-        ]
-      },
+      "rationale": "BP 344 supports sidewalk and walkway widths as accessibility-route dimensions, not benefit-law provisions.",
       "explanation": "Two distinct deductions: 25% on PWD wages and up to 50% on direct accessibility improvement costs.",
       "code_citation": "RA 7277 as amended; BIR guidance",
       "bloom_level": "understand",
@@ -1014,7 +881,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:46.611376+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.609648+00:00",
       "content_hash": "sha256:1d2577f49580120535128c0895fe784be5e6a657d24398852ca43fea4d4174b8"
     }
   ]

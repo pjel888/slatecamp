@@ -8,36 +8,33 @@
       "question_id": "48ba9425-0d6a-407f-9e0c-f7beb9c04174",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "How should an architect analyze the tension between the prohibition on fee competition (SPP Doc 200) and antitrust laws that prohibit price fixing? What is the key distinction?",
+      "text": "A question asks whether architects may collude on price under competition law, but the local packet contains only UAP ethics and SPP sources. What is the source-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "SPP Doc 200's fee standards are legally equivalent to price-fixing cartels and equally prohibited, which is a misinterpretation of professional guidelines."
+          "text": "Defer competition-law conclusions until a local primary competition source is checked"
         },
         {
           "id": "b",
-          "text": "Antitrust laws apply only to for-profit businesses; professional ethics standards supersede competition law for architects, which is not entirely accurate."
+          "text": "Invent RA 10667 penalties from memory"
         },
         {
           "id": "c",
-          "text": "SPP Doc 200 prohibits only aggressive, predatory fee competition that harms service quality, while price-fixing involves explicit agreements to set prices collectively"
+          "text": "Say all fee comparison is always criminal"
         },
         {
           "id": "d",
-          "text": "There is no meaningful distinction; architects must prioritize compliance with antitrust law over ethical guidelines, which oversimplifies the issue."
+          "text": "Ignore UAP ethics entirely"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Professional ethics standards and cartels differ fundamentally—SPP Doc 200 involves individual professional judgment, not collective pricing agreements.",
-        "c": "Competition law applies to professionals equally. However, maintaining professional standards through individual conduct differs from collective price-fixing.",
-        "d": "The legal framework permits professional standards that do not constitute explicit price-fixing agreements.",
-        "correct": "The critical distinction is that SPP Doc 200 establishes professional standards requiring each architect to maintain service adequacy and prohibits competitive fee-undercutting that demeans the profession. This is individual ethical conduct, not collective price-fixing. Antitrust laws prohibit explicit agreements between competitors to set or fix prices. Recommended fees in the Architect's Guidelines are guidelines, not binding agreements, distinguishing them from illegal cartels. An architect may independently choose to charge recommended fees or above without violating antitrust law.",
-        "takeaway": "Individual fee adequacy (SPP Doc 200) differs legally from collective price-fixing; both can coexist appropriately."
+        "correct": "Batch 114 did not add a local primary competition-law source.",
+        "takeaway": "Batch 114 did not add a local primary competition-law source."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200; RA 9266; Philippine Competition Act",
@@ -51,30 +48,30 @@
       "model_id": "ALE-PRAC-ETH-013-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.103930+00:00",
       "content_hash": "sha256:e6853a104e40ca602be25fd9c1b2b5968700f8ed9d147da1e49840341c21af5f"
     },
     {
       "question_id": "16969e3a-aa96-4cc6-9f2e-eae799fe8f1e",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "An architect learns that a competitor is systematically winning projects by charging fees significantly below recommended levels. The architect is considering matching these low fees to remain competitive. Analyze this situation in terms of professional ethics and potential legal implications.",
+      "text": "Which UAP rule controls free preliminary sketches offered before a definite client agreement?",
       "options": [
         {
           "id": "a",
-          "text": "The architect should evaluate whether the competitor's fees actually permit adequate service quality; if not, the competitor violates professional standards, and matching those fees would compound the unethical practice"
+          "text": "Do not offer preliminary services on a conditional basis before a definite agreement with the client"
         },
         {
           "id": "b",
-          "text": "The architect should match the fees to remain competitive, as market forces determine fair pricing, and this approach aligns with business strategies"
+          "text": "Always give full schematic design for free"
         },
         {
           "id": "c",
-          "text": "The architect should report the competitor to the PRC for price-fixing violations and continue charging recommended fees to uphold industry standards"
+          "text": "Use contractor gifts as compensation"
         },
         {
           "id": "d",
-          "text": "The architect should reduce fees slightly below market rate but above recommended minimums to undercut the competitor ethically, ensuring compliance with professional guidelines"
+          "text": "Avoid discussing scope and charges"
         }
       ],
       "correct_option_id": "a",
@@ -83,11 +80,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Market forces cannot override professional ethics. Adequate fee levels protect service quality, not just profit.",
-        "b": "Recommending fees are guidelines, not legally binding minimums, so competitor pricing alone is not price-fixing unless there is explicit agreement.",
-        "d": "Any reduction below adequacy remains unethical; 'slightly below' does not cure the fundamental problem of inadequate fees.",
-        "correct": "The ethical approach is to recognize that competitor behavior violating professional standards does not justify the architect adopting the same violations. SPP Doc 200 requires each architect to maintain professional standards independently. If competitor fees are inadequate, matching them spreads unethical undercutting rather than addressing it. The architect should maintain service adequacy and report concerns through proper professional channels if warranted.",
-        "takeaway": "Competitor unethical behavior does not justify adopting the same practices; maintain your own professional standards."
+        "correct": "UAP Section 5-a bars conditional preliminary services before definite agreement.",
+        "takeaway": "UAP Section 5-a bars conditional preliminary services before definite agreement."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200; RA 9266",
@@ -101,43 +95,40 @@
       "model_id": "ALE-PRAC-ETH-013-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.106138+00:00",
       "content_hash": "sha256:acfa88066113c261dcf6d190160ba1a3453e1f31b721f5e3710be433726f472a"
     },
     {
       "question_id": "1508b3c5-49ec-47e3-8a21-e49a11fa0c74",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "How does the Code distinguish between legitimate fee negotiation and unethical fee undercutting?",
+      "text": "What should the architect clarify at the inception of the client relationship?",
       "options": [
         {
           "id": "a",
-          "text": "Legitimate negotiation involves discussing scope of work; undercutting involves price competition with competitors"
+          "text": "The exact nature and scope of services and corresponding professional charges"
         },
         {
           "id": "b",
-          "text": "Legitimate negotiation maintains service quality and professional adequacy; undercutting sacrifices quality for lower price"
+          "text": "Only the contractor warranty"
         },
         {
           "id": "c",
-          "text": "Legitimate negotiation reduces fees to match client budgets; undercutting reduces fees below competitor rates"
+          "text": "Only the supplier discount"
         },
         {
           "id": "d",
-          "text": "Legitimate negotiation is allowed only for government projects; undercutting applies to private work"
+          "text": "Only the appeal period"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Discussing scope is part of negotiation, but the ethical boundary is about service adequacy, not scope conversation.",
-        "b": "Matching client budgets may be legitimate if quality is maintained, but undercutting competitors (price-based competition) is the prohibited behavior.",
-        "d": "Ethical principles apply consistently across all project types and client categories.",
-        "correct": "The critical distinction is whether the fee level still permits adequate professional service delivery. Legitimate negotiation may adjust scope or fee structure while maintaining professional standards. Unethical undercutting reduces fees to levels that compromise service quality or professional dignity, violating the architect's obligation to the Profession.",
-        "takeaway": "The ethical line is whether the negotiated fee still allows adequate professional service delivery."
+        "correct": "UAP Section 2-b is the source for early scope and charge clarification.",
+        "takeaway": "UAP Section 2-b is the source for early scope and charge clarification."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200",
@@ -151,43 +142,40 @@
       "model_id": "ALE-PRAC-ETH-013-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.106848+00:00",
       "content_hash": "sha256:4d15ac9e85e289b2d0e13356dee132b5911c4d28c882f1fa2629d65069564cf7"
     },
     {
       "question_id": "a01cbe2e-32ea-485f-9748-22b0f80117c3",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "What is the ethical status of offering free architectural services to a prospective client to secure a commission for a future paid project?",
+      "text": "What is the source-safe answer when a client asks for free design work to win a future paid commission?",
       "options": [
         {
           "id": "a",
-          "text": "Completely acceptable as a marketing strategy to build client relationships"
+          "text": "Present experience, but do not provide preliminary services without a legitimate compensation agreement"
         },
         {
           "id": "b",
-          "text": "Prohibited except in specific competitive situations where it is legitimately justified"
+          "text": "Provide complete drawings because a future commission is possible"
         },
         {
           "id": "c",
-          "text": "Ethical when used occasionally and when the prospect is a genuine potential client"
+          "text": "Charge the contractor instead"
         },
         {
           "id": "d",
-          "text": "Ethical only if the free services are limited to preliminary design sketches"
+          "text": "Call it CPD"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Using free work as general marketing violates professional standards and demeans the profession's value.",
-        "b": "Frequency does not justify free work; the prohibition is categorical except in specific competitive contexts.",
-        "d": "The restriction applies to all free services offered to secure paid work, not just complex services.",
-        "correct": "SPP Doc 200 prohibits offering free services to secure commissions as a general practice. This protects the profession from devaluation and fee competition that undermines service standards. However, exceptions exist in specific competitive situations where legitimate justification applies. Free services beyond these exceptions violate the obligation to the Profession.",
-        "takeaway": "Free services to secure paid commissions are prohibited except in specific justified competitive situations."
+        "correct": "UAP Section 2-a allows presenting experience but not free preliminary services without an agreement.",
+        "takeaway": "UAP Section 2-a allows presenting experience but not free preliminary services without an agreement."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200; RA 9266",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-ETH-013-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.101149+00:00",
       "content_hash": "sha256:5598e9f22fdeb3de6ac0b411052eba579fd94d5ffda87738278486ea8e8cd42d"
     },
     {
       "question_id": "f50f3bc2-d69c-429e-8205-5242ebad81b9",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "According to the Code of Ethical Conduct, what is the relationship between the Architect's Guidelines recommended fees and professional practice?",
+      "text": "How does the SPP describe compensation for Regular Design Services?",
       "options": [
         {
           "id": "a",
-          "text": "They establish legally binding minimum fees that architects cannot undercut"
+          "text": "It may use one or more methods, including percentage of PCC, MDPE, fee plus expenses, fixed fee, per diem/honorarium, or mixed methods"
         },
         {
           "id": "b",
-          "text": "They apply only to government projects and not private commissions"
+          "text": "Only one fixed percentage is allowed for every project"
         },
         {
           "id": "c",
-          "text": "They are guidelines for fair compensation, not legally mandated minimums"
+          "text": "All compensation must come from suppliers"
         },
         {
           "id": "d",
-          "text": "They supersede any fees agreed upon in writing between architect and client"
+          "text": "Compensation is never discussed with the client"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Recommended fees are guidelines, not legally binding minimums. Making them binding could constitute price fixing under competition law.",
-        "c": "Recommended fees apply broadly across practice types as ethical guidelines.",
-        "d": "Written fee agreements between architect and client take precedence over general recommendations.",
-        "correct": "the Architect's Guidelines establishes recommended fee percentages as professional guidelines. These serve as benchmarks for fair compensation but are not legally mandatory minimums, distinguishing ethical standards from anti-competitive price fixing.",
-        "takeaway": "Recommended fees guide ethical practice but remain guidelines, not legally enforceable minimums."
+        "correct": "SPP 202 lists multiple compensation modes.",
+        "takeaway": "SPP 202 lists multiple compensation modes."
       },
       "explanation": null,
       "code_citation": "the Architect's Guidelines; RA 9266",
@@ -251,30 +236,30 @@
       "model_id": "ALE-PRAC-ETH-013-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.102284+00:00",
       "content_hash": "sha256:7a9e02643eda177f038279c97df3097c3f050d4f9cafdd5be9a0e3f12b4bdf8c"
     },
     {
       "question_id": "496bed67-f595-4e6c-91cd-924797bb88db",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "What does SPP Doc 200 explicitly prohibit regarding professional fee competition?",
+      "text": "Which statement best matches UAP Section 5-b?",
       "options": [
         {
           "id": "a",
-          "text": "Competing on the basis of professional fees alone"
+          "text": "The architect shall not knowingly compete with other architects on the basis of difference of professional charges"
         },
         {
           "id": "b",
-          "text": "Any negotiation of fees with clients"
+          "text": "The architect must always undercut competitors"
         },
         {
           "id": "c",
-          "text": "Charging fees higher than those recommended in the Architect's Guidelines"
+          "text": "The architect may use donation for any competitive advantage"
         },
         {
           "id": "d",
-          "text": "Discussing fee structures with other architects"
+          "text": "The architect may ignore competition rules for all sketches"
         }
       ],
       "correct_option_id": "a",
@@ -283,11 +268,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Fee negotiation with clients is permitted; the prohibition is against fee-based competition that undermines professional standards.",
-        "c": "the Architect's Guidelines establishes recommended fees as guidelines, not mandated maximums. Architects may charge higher fees.",
-        "d": "Professional discussion about fee structures differs from prohibited competitive undercutting.",
-        "correct": "SPP Doc 200 prohibits architects from knowingly competing solely on the basis of professional fees. This protects service quality and professional standards.",
-        "takeaway": "Fee-only competition is prohibited because it risks compromising professional service quality."
+        "correct": "Section 5-b is the direct fee-competition boundary in the checked source.",
+        "takeaway": "Section 5-b is the direct fee-competition boundary in the checked source."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200",
@@ -301,30 +283,30 @@
       "model_id": "ALE-PRAC-ETH-013-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.103177+00:00",
       "content_hash": "sha256:b516f99d4d9a3a313684da03754a419f82dfcec48813229f5529fd7d845cf485"
     },
     {
       "question_id": "85180c56-ccd9-4a23-b6fc-0016456632bb",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "Which of the following scenarios most clearly represents a violation of the obligation to the Profession under SPP Doc 200 regarding fees?",
+      "text": "Which scenario is most clearly source-supported as a fee ethics risk?",
       "options": [
         {
           "id": "a",
-          "text": "An architect charges fees 60% below recommended levels to win market share, knowing this prevents proper professional service"
+          "text": "Using a donation as a device to gain competitive advantage on a private commission"
         },
         {
           "id": "b",
-          "text": "An architect charges higher fees than recommended in the Architect's Guidelines for specialized expertise, which is permissible under certain conditions."
+          "text": "Discussing project scope with the client"
         },
         {
           "id": "c",
-          "text": "An architect negotiates reduced fees with a long-term client while maintaining full service quality, which is often acceptable in practice."
+          "text": "Using an SPP-listed compensation method"
         },
         {
           "id": "d",
-          "text": "An architect offers preliminary consultation at reduced cost to establish client relationships, a common practice to build rapport."
+          "text": "Presenting examples of prior professional experience"
         }
       ],
       "correct_option_id": "a",
@@ -333,11 +315,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Charging premium fees for specialized work exceeds recommendations but does not demean the profession.",
-        "b": "Maintaining service quality while adjusting fees preserves professional standards and represents legitimate negotiation.",
-        "d": "Preliminary consultation at reduced cost differs from undercutting service-delivery fees.",
-        "correct": "Deliberately charging fees inadequate for proper service, especially to gain competitive advantage, directly demeans the profession and violates the third obligation (obligation to the Profession). SPP Doc 200 explicitly identifies fee competition that undermines professional standards as unethical. This scenario combines inadequate fee-setting with conscious knowledge of service compromise.",
-        "takeaway": "Knowingly accepting inadequate fees to undercut competitors directly violates the obligation to the Profession."
+        "correct": "Section 5-b restricts donation as a device for competitive advantage except for worthy civic or religious projects.",
+        "takeaway": "Section 5-b restricts donation as a device for competitive advantage except for worthy civic or religious projects."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200; RA 9266 Section 36",
@@ -351,43 +330,40 @@
       "model_id": "ALE-PRAC-ETH-013-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.105408+00:00",
       "content_hash": "sha256:c79072897e3ddff67f16a12aadd089ba757a6cdb4d3be05e6f769cd232841296"
     },
     {
       "question_id": "c19ea900-289f-4d12-bed2-17a335b80b55",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "A client requests that an architect provide comprehensive design services (schematic design through detailed design) for a flat fee significantly below the the Architect's Guidelines recommended percentage. The architect's cost analysis shows this fee would not cover adequate staff time, quality control, or proper documentation. What should the architect do?",
+      "text": "A fee is too low to cover proper staff time and documentation. What source principle should guide the architect?",
       "options": [
         {
           "id": "a",
-          "text": "Accept the commission at the requested fee to avoid losing the client to competitors, despite potential quality compromises"
+          "text": "Fair remuneration, scope-and-charge clarity, and a compensation method appropriate to the project"
         },
         {
           "id": "b",
-          "text": "Accept the commission but reduce quality standards and staff assignments to fit the budget constraints"
+          "text": "Hidden supplier returns"
         },
         {
           "id": "c",
-          "text": "Decline the commission or propose reducing scope and service deliverables to match the available fee budget"
+          "text": "No written agreement"
         },
         {
           "id": "d",
-          "text": "Accept the commission pending a fee review after schematic design, with adjustment possible later based on further analysis"
+          "text": "A Board appeal to the Court of Appeals"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Accepting inadequate fees to avoid competition directly violates SPP Doc 200's prohibition on fee-based competition and undermines service quality.",
-        "c": "Deliberately reducing quality standards to match an inadequate fee is explicitly prohibited unethical practice.",
-        "d": "Conditional acceptance with vague future adjustment still represents initial acceptance of inadequate fees, violating professional standards.",
-        "correct": "SPP Doc 200 prohibits accepting commissions at inadequate fees that prevent proper professional service delivery. The architect must either decline or negotiate a realistic scope matching the available fee. Accepting inadequate fees that require reduced service violates the obligation to the Profession. Proposing scope reduction is ethically preferable as it maintains service quality within available resources.",
-        "takeaway": "Reject inadequate fees by declining or reducing scope; never sacrifice service quality for budget constraints."
+        "correct": "The checked sources support fair remuneration and project-appropriate compensation.",
+        "takeaway": "The checked sources support fair remuneration and project-appropriate compensation."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200; RA 9266",
@@ -401,43 +377,40 @@
       "model_id": "ALE-PRAC-ETH-013-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.104677+00:00",
       "content_hash": "sha256:1b50062db029329f15996a5c4fbb2c9e0f2f6838d30be328b89799fae0fd3bef"
     },
     {
       "question_id": "af1e191a-a8f8-4f09-97c1-fed3d15721ad",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "An architect is offered a significant commercial project at a fee 40% below the the Architect's Guidelines recommended percentage. Under what ethical principle should the architect evaluate this offer?",
+      "text": "What should an architect avoid when offered a fee far below professional expectations?",
       "options": [
         {
           "id": "a",
-          "text": "Market forces alone; if the client accepts, the fee is ethically acceptable, regardless of industry standards."
+          "text": "Accepting hidden returns from interested sources or compromising source-supported professional duties"
         },
         {
           "id": "b",
-          "text": "Comparison with fees charged by competitors for similar projects, ensuring competitiveness and fairness."
+          "text": "Explaining scope to the client"
         },
         {
           "id": "c",
-          "text": "The architect's personal financial need and business circumstances, which may influence decision-making."
+          "text": "Using a client-paid professional fee"
         },
         {
           "id": "d",
-          "text": "Whether the fee allows adequate professional service delivery and maintains professional dignity"
+          "text": "Choosing a valid SPP compensation method"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Market forces alone cannot justify abandoning professional standards. Fee adequacy is an ethical requirement beyond market principles.",
-        "c": "Competitor fees may themselves be unethical. The standard is adequacy for proper service, not competitive benchmarking.",
-        "d": "Personal financial circumstances do not excuse accepting inadequate fees that undermine professional service quality.",
-        "correct": "SPP Doc 200 establishes that accepting fees below adequate levels to provide quality professional service constitutes unethical undercutting. The architect must assess whether the fee permits proper service delivery. This reflects the obligation to the Profession—fees that demean professional standards violate ethical conduct.",
-        "takeaway": "Ethical fee acceptance requires ensuring the fee permits adequate professional service, regardless of market pressure."
+        "correct": "UAP Section 2-h bars returns from interested sources other than the client.",
+        "takeaway": "UAP Section 2-h bars returns from interested sources other than the client."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200; RA 9266",
@@ -451,43 +424,40 @@
       "model_id": "ALE-PRAC-ETH-013-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.107552+00:00",
       "content_hash": "sha256:1a2372db1839495339dfb92d25b75cddfa172da99aed8c91ad39644866e451b6"
     },
     {
       "question_id": "ed2191dd-6ee8-42f3-b1c9-01702ee92a78",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "topic_id": "01f6c373-5bac-4835-9603-5ed42d1d212a",
-      "text": "An architect firm experiences pressure from financial difficulties and considers aggressively undercutting competitor fees to rapidly increase market share and cash flow. Evaluate whether financial hardship justifies this approach under professional ethics.",
+      "text": "Does financial hardship justify knowingly competing solely by lower professional charges under the checked UAP source?",
       "options": [
         {
           "id": "a",
-          "text": "Financial hardship creates an exception to SPP Doc 200 prohibitions; the firm may use fee competition to survive, provided it does not compromise service quality"
+          "text": "No, Section 5-b remains the source-safe professional boundary"
         },
         {
           "id": "b",
-          "text": "The firm should undercut fees only for a limited period until financial recovery, then return to ethical practices, ensuring transparency with clients"
+          "text": "Yes, hardship erases all fee duties"
         },
         {
           "id": "c",
-          "text": "Fee competition is justified if it is used to improve service quality and operational efficiency rather than exploit clients, aligning with long-term strategic goals"
+          "text": "Yes, if the contractor pays the difference"
         },
         {
           "id": "d",
-          "text": "Financial difficulty does not justify violating professional standards, as this would harm clients, the profession, and ultimately the firm's reputation and sustainability"
+          "text": "Yes, if no one files an appeal"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Professional ethics contain no financial hardship exception. Standards must apply consistently to maintain profession credibility.",
-        "c": "Temporary violations do not become ethical. The prohibition is categorical, not time-limited.",
-        "d": "The stated rationale (improvement through competition) contradicts SPP Doc 200's evidence that fee competition inherently risks quality compromise.",
-        "correct": "SPP Doc 200 establishes that professional ethical standards apply universally and cannot be suspended based on individual financial circumstances. Undercutting fees to address financial problems would compromise service quality, harm clients, damage professional reputation, and ultimately worsen long-term firm viability. Ethical alternatives exist: reduce overhead, adjust service scope, seek partnership, or transition practice. Personal or firm financial hardship does not excuse unethical conduct under the Code of Ethical Conduct.",
-        "takeaway": "Financial hardship never justifies violating professional ethics; seek legitimate alternatives instead."
+        "correct": "The checked UAP source does not create a hardship exception to Section 5-b.",
+        "takeaway": "The checked UAP source does not create a hardship exception to Section 5-b."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200; RA 9266; Code of Ethical Conduct",
@@ -501,7 +471,7 @@
       "model_id": "ALE-PRAC-ETH-013-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.108204+00:00",
       "content_hash": "sha256:60f291fea46f228070e7e3d5af9ab5684a98ef3a16bec971ee9499c2c1ecbba8"
     }
   ]

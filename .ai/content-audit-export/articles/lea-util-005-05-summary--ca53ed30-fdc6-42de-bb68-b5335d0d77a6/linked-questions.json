@@ -8,37 +8,31 @@
       "question_id": "2d03fa99-8f82-4c72-8f26-1d6e97d4d558",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "A multinational corporation is designing two connected buildings in Makati (Building A: 6000 m², Building B: 4000 m²) with a 250 m inter-building conduit span. The design must support independent IPTV delivery, shared Wi-Fi roaming, unified DAS cellular coverage across both buildings, and disaster recovery (99.9% uptime SLA). The buildings will use multiple ISPs (Converge + PLDT) for external connectivity. What is the optimal inter-building backbone architecture that balances resilience, capacity, and future-proofing?",
+      "text": "What does the checked source say a TV antenna system does?",
       "options": [
         {
           "id": "a",
-          "text": "A) Single-mode fiber (SMF) for both buildings, single fiber pair across the 250 m inter-building span, terminating at separate ONTs in each TR; passive Wi-Fi roaming via layer-3 protocols; DAS integrated on shared wavelength"
+          "text": "Amplifies the received TV signal and distributes it by special cable to wall outlets."
         },
         {
           "id": "b",
-          "text": "B) Redundant multi-mode fiber (MMF) pairs: one pair dedicated to Building A–B DAS (CWDM 1550 nm), second pair for Building A–B IPTV/Wi-Fi backbone (CWDM 1310 nm); separate ISP entries to each building; DAS shared via active splitter; Wi-Fi controlled from Building A with standby controller in Building B"
+          "text": "Converts all TV signals to plumbing controls."
         },
         {
           "id": "c",
-          "text": "C) Single fiber pair with tight wavelength spacing (1295 nm, 1305 nm, 1315 nm) to maximize channel count; all services multiplexed on single strand; DAS, IPTV, Wi-Fi all on shared trunk; no redundancy to minimize cost"
+          "text": "Replaces the building grounding electrode."
         },
         {
           "id": "d",
-          "text": "D) Copper Cat 6A between buildings (cheaper than fiber, adequate for 200 m max); IPTV via local ISP ONT in each building (no inter-building delivery); DAS relies on each building's rooftop antenna without centralized coordination"
+          "text": "Only decorates the roofline."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Single fiber pair and single ISP entry are single points of failure; any fiber cut or ISP outage affects all services. Passive Wi-Fi roaming without unified controller does not guarantee seamless handoff across buildings. Does not meet 99.9% SLA requirement.",
-        "c": "Tight wavelength spacing (1295/1305/1315 nm) requires DWDM (Dense WDM), not CWDM, introducing cost and complexity. Single fiber strand with all services multiplexed is a single point of failure—if the fiber is damaged, all services fail simultaneously.",
-        "d": "Cat 6A copper is rated 55 m maximum for 10 Gbps; a 250 m inter-building span would require signal regeneration, adding cost and complexity that fiber eliminates. Local ISP ONTs eliminate inter-building IPTV delivery capability. Uncoordinated DAS in each building creates coverage gaps and roaming issues.",
-        "correct": "Building A (6000 m²) requires 1.8 m² TR; Building B (4000 m²) requires 1.4 m² TR. The 250 m inter-building span is well within multi-mode fiber (OM3/OM4) 300 m @ 10 Gbps capability, making MMF the cost-optimal choice vs. SMF. Redundant fiber pairs provide diverse paths for disaster recovery: one pair (DAS-dedicated, 1550 nm wavelength) ensures cellular coverage persists if IP services fail; second pair (IP/Wi-Fi, 1310 nm wavelength) handles IPTV and Wi-Fi backhaul. Separate ISP entries to each building (Converge to Building A, PLDT to Building B) avoid single ISP dependency. Unified DAS via active splitter serves both buildings from a shared master unit. Redundant Wi-Fi controller (primary in A, standby in B) enables seamless roaming and failover if primary fails. This architecture is designed to support 99.9% uptime SLA (approximately 8.6 hours downtime per year), but actual SLA achievement depends on implementation quality, maintenance procedures, and operational discipline.",
-        "takeaway": "Multi-building campus networks require redundant fiber backbone paths, separate wavelength allocation per service, multiple ISP inputs, and distributed/failover controller architecture to achieve high availability (99.9% SLA) and disaster recovery."
-      },
+      "rationale": "Amplifies the received TV signal and distributes it by special cable to wall outlets. This answer matches Communication refined markdown lines 416-440.",
       "explanation": null,
       "code_citation": "TIA-568 Structured Cabling; CWDM Wavelength Standards; DAS Redundancy Patterns; LEA-UTIL-005-05 Article Section: Integration and Future Growth",
       "bloom_level": "evaluate",
@@ -51,30 +45,30 @@
       "model_id": "ALE-UTIL-005-05-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.092971+00:00",
       "content_hash": "sha256:d3b7abaae0850e018efcfbe4c87172dd481395b64525c6fb00e18be14daa43e3"
     },
     {
       "question_id": "21203b5f-ab41-4ce7-90f2-7b502076f81b",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "A shopping mall in Metro Manila has concrete exterior walls (30–50 dB signal attenuation) and requires indoor cellular coverage for multiple carriers (700 MHz, 900 MHz, 1800 MHz, 2600 MHz LTE/5G). The building is 200 m long, 150 m wide, and 5 stories. What DAS architecture and antenna spacing would provide adequate coverage while integrating with the fiber backbone?",
+      "text": "When does a TV antenna distribution system generally need a booster amplifier?",
       "options": [
         {
           "id": "a",
-          "text": "A) Passive DAS with 100 m antenna spacing; single 700 MHz donor antenna sufficient; coaxial distribution from master to remote antennas"
+          "text": "Only when the building has no elevator."
         },
         {
           "id": "b",
-          "text": "B) Active DAS supporting all four carrier bands via CWDM multiplexing (DAS on 1550 nm, IP traffic on 1310 nm); 30–50 m antenna spacing on each floor; fiber distribution from master unit to remote antenna units"
+          "text": "When the system has two or more outlets."
         },
         {
           "id": "c",
-          "text": "C) Passive DAS with 200 m spacing; multiple satellite dish receivers to cover all carriers; separate coaxial trunks for each frequency band, ensuring each band is isolated for optimal performance"
+          "text": "Only if all outlets are on one wall."
         },
         {
           "id": "d",
-          "text": "D) Wi-Fi 6 access points at 1 AP per 70 m² as a substitute for cellular DAS; no separate DAS infrastructure required, relying entirely on Wi-Fi for all communication needs"
+          "text": "Never, because wall outlets amplify signals."
         }
       ],
       "correct_option_id": "b",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Passive DAS is limited to shorter cable runs (~100 m) and does not amplify multi-band signals adequately. Single-band (700 MHz) coverage leaves users on other carriers without service.",
-        "c": "Satellite receivers do not solve indoor cellular coverage; indoor DAS systems integrate with external donor antennas, not satellites. Separate coaxial trunks are inefficient when CWDM fiber is available.",
-        "d": "Wi-Fi is an alternative wireless technology, not a cellular replacement. Users require cellular network coverage for mobile phones and devices; Wi-Fi alone cannot meet this requirement.",
-        "correct": "Active DAS is required for multi-band coverage in large buildings with high attenuation (concrete 30–50 dB loss means exterior signals are severely attenuated indoors). All four carrier bands (700, 900, 1800, 2600 MHz) must be supported to serve all tenants' devices. Active DAS with 30–50 m antenna spacing on each floor ensures coverage throughout the 200 × 150 × 5-story volume. CWDM wavelength allocation (DAS on 1550 nm, IP on 1310 nm) allows fiber backbone sharing with IPTV/Wi-Fi systems, reducing cable runs.",
-        "takeaway": "Multi-carrier DAS requires active amplification, all-band support, and appropriately-spaced antenna units; CWDM fiber integration reduces infrastructure footprint in complex buildings."
-      },
+      "rationale": "When the system has two or more outlets. This answer matches Communication refined markdown lines 432-440.",
       "explanation": null,
       "code_citation": "DAS Architecture and Deployment; CWDM Standards; LEA-UTIL-005-05 Article Section: In-Building Wireless and DAS; Integration and Future Growth",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-005-05-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.085131+00:00",
       "content_hash": "sha256:6663a5dcc940200ebb29c0e1732f7cb4d94dc8c836040fb27870e45982c86bda"
     },
     {
       "question_id": "24b44a48-baa1-4161-bb21-a61c558b3d20",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "A 5-floor, 8000 m² mixed-use building in Quezon City integrates Globe Fiber (1 Gbps) as the external broadband input via ONT in the TR. The building must support: 100 residential units (average 15 Mbps per unit sustained), 20 office suites (50 Mbps each), and IPTV with 50 simultaneous HD streams. What is the total WAN bandwidth required, and does the 1 Gbps external link provide adequate capacity?",
+      "text": "How does the checked source describe an intercom system?",
       "options": [
         {
           "id": "a",
-          "text": "A) 100 units × 15 Mbps + 20 suites × 50 Mbps + 50 streams × 5 Mbps = 2650 Mbps; 1 Gbps is insufficient, requires 2.5–5 Gbps link"
+          "text": "It is only a fire sprinkler valve."
         },
         {
           "id": "b",
-          "text": "B) Residential (1500 Mbps) + Office (1000 Mbps) + IPTV (250 Mbps) = 2750 Mbps total; external link is a bottleneck; multicarrier ISP redundancy needed"
+          "text": "It is the same as a transformer vault."
         },
         {
           "id": "c",
-          "text": "C) 100 × 15 Mbps + 20 × 50 Mbps + 50 × 4 Mbps = 1500 + 1000 + 200 = 2700 Mbps aggregate demand; 1 Gbps Globe link covers only 37% of peak demand; requires secondary ISP"
+          "text": "Master stations can selectively call remote stations that operate through the masters."
         },
         {
           "id": "d",
-          "text": "D) 1 Gbps is sufficient if QoS prioritization allocates: 500 Mbps residential, 300 Mbps office, 200 Mbps IPTV; peak overages are handled by caching and buffering without additional WAN capacity"
+          "text": "It has no stations or calling function."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Residential and office demand are correctly calculated, but IPTV bandwidth is overstated at 5 Mbps per stream (ITU standard is 4–6 Mbps); however, the conclusion remains valid—1 Gbps is still insufficient.",
-        "c": "Correctly identifies the shortfall, but QoS prioritization cannot increase actual WAN capacity; it can only allocate existing 1 Gbps among services, leaving 60% of peak demand unmet. Buffering and caching are temporary solutions, not long-term capacity solutions.",
-        "d": "QoS and caching cannot solve a fundamental capacity shortfall. Buffering video content implies significant local storage and viewer experience degradation (buffering delays). This is a temporary workaround, not a solution.",
-        "correct": "Aggregate bandwidth demand: residential 100 × 15 = 1500 Mbps; office 20 × 50 = 1000 Mbps; IPTV 50 × 4–6 Mbps = 200–300 Mbps. Total = 2700–2800 Mbps at peak utilization. A single 1 Gbps link provides only ~37% of the required capacity. This building requires 2.5–5 Gbps external connectivity (either multi-gigabit single ISP like Converge or redundant links from multiple providers like Globe + PLDT). Internal structured cabling (fiber backbone, gigabit switches) must also support this aggregate capacity.",
-        "takeaway": "External WAN capacity must match or exceed aggregate peak demand for all building services; QoS manages available capacity but does not create additional bandwidth. Multi-ISP or multi-gigabit links are essential for buildings with high simultaneous demand."
-      },
+      "rationale": "Master stations can selectively call remote stations that operate through the masters. This answer matches Communication refined markdown lines 442-486.",
       "explanation": null,
       "code_citation": "ITU-R BT.1200 IPTV Bandwidth; Philippine ISP Service Offerings; LEA-UTIL-005-05 Article Section: IPTV as Modern Replacement; Philippine ISP Infrastructure",
       "bloom_level": "analyze",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-005-05-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.089145+00:00",
       "content_hash": "sha256:79ce22a47ca24e91a53fd0467804a719a20858ab8598841b49bbb636ef74ffba"
     },
     {
       "question_id": "f7958c12-2fcc-41a1-b99b-e63ea40f0b9f",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "A telecommunications engineer is specifying the backbone cabling for a 3-story, 4500 m² commercial building in Metro Manila with central TR on floor 1 and IDFs on floors 2 and 3. Which fiber optic specification provides the best balance of cost, distance capability, and future scalability?",
+      "text": "What telephone entrance protection statement is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "A) Single-mode fiber (8–10 μm core): 40+ km range, supports all future upgrades, suitable for inter-building links"
+          "text": "The protector should be as far as possible from the entrance."
         },
         {
           "id": "b",
-          "text": "B) Multi-mode OM3/OM4 fiber (50 μm core): up to 300 m range at 10 Gbps, lower cost than SMF, adequate for intra-building distribution"
+          "text": "Telephone entrances need no lightning protection."
         },
         {
           "id": "c",
-          "text": "C) Cat 6A copper UTP: 55 m maximum for 10 Gigabit, sufficient for direct TR-to-IDF connections on each floor"
+          "text": "The protector replaces all terminal cabinets."
         },
         {
           "id": "d",
-          "text": "D) Hybrid Cat 6A horizontal to IDF, then copper patch cords to final outlets; avoids fiber cost entirely"
+          "text": "A protector is generally required and should be near the entrance point."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "SMF (40+ km range) is unnecessarily overprovisioned for a 3-story building; cost premium of 2–3× per meter is unjustified for intra-building backbone.",
-        "c": "Cat 6A copper is limited to 55 m for 10 Gbps and is suitable for final horizontal runs from IDF to outlets, not for backbone distribution between TR and IDFs.",
-        "d": "Hybrid approach wastes Cat 6A's 55 m distance limitation and fails to leverage the superior distance and bandwidth characteristics of fiber for backbone distribution.",
-        "correct": "Multi-mode fiber (OM3/OM4, 50 μm) is the industry standard for intra-building backbones. At 300 m range for 10 Gbps, it easily covers 3-story buildings (typical floor-to-floor vertical runs in a 3-story building are 6–8 m (2 floors × 3–4 m per floor); horizontal runs within each floor may reach 30–50 m, but the backbone from central TR to IDFs is primarily vertical). Cost is 2–3× lower per meter than SMF. Future upgrades (40/100 Gbps) are possible with MMF over adequate distances. SMF is overspecified and costlier for intra-building links.",
-        "takeaway": "Multi-mode fiber is the optimal choice for intra-building backbones; it provides adequate distance, lower cost than SMF, and ample room for future bandwidth growth."
-      },
+      "rationale": "A protector is generally required and should be near the entrance point. This answer matches Communication refined markdown lines 507-532.",
       "explanation": null,
       "code_citation": "TIA-568 Structured Cabling Standards; LEA-UTIL-005-05 Article Section: Fiber Optic and Copper Cabling",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-005-05-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.090302+00:00",
       "content_hash": "sha256:00f880442938e25b09b77ab94cd34073de5bf6ecb1bbff29a07afdadc3df8e3a"
     },
     {
       "question_id": "b983d909-6968-48d1-98a9-88774d5b6aed",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "A building manager is designing Wi-Fi coverage for a mixed-use facility: 4000 m² of offices, 1200 m² of conference rooms, and 500 m² of lobby. What is the minimum number of 802.11ax access points required per WiFi Alliance guidelines?",
+      "text": "What does PEC require for CATV coaxial shield grounding?",
       "options": [
         {
           "id": "a",
-          "text": "A) 38 APs total (29 offices at 1/140 m², 9 conference at 1/70 m², 0 lobby)"
+          "text": "Ground the outer conductive shield near the building entrance or attachment point."
         },
         {
           "id": "b",
-          "text": "B) 56 APs total (34 offices at 1/90 m², 19 conference at 1/45 m², 3 lobby at 1/140 m²)"
+          "text": "Ground only the television screen."
         },
         {
           "id": "c",
-          "text": "C) 42 APs total (28 offices at 1/90 m², 15 conference at 1/70 m², 4 lobby at 1/140 m²)"
+          "text": "Keep the coaxial shield floating at every building."
         },
         {
           "id": "d",
-          "text": "D) 71 APs total (44 offices at 1/90 m², 27 conference at 1/45 m², 4 lobby at 1/90 m²)"
+          "text": "Bond it to a hot water pipe as the preferred electrode."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Uses 140 m² for all offices (upper limit) and 70 m² for conferences (upper limit), underestimating APs needed for adequate performance; omits lobby entirely.",
-        "c": "Applies conservative office density (1/90) across all space types and overestimates lobby APs; calculation is not aligned with mixed-use guidance.",
-        "d": "Applies high-density spacing (1/90) to the lobby, which is inappropriate for general-use space; this overestimates total APs by approximately 15–20%.",
-        "correct": "WiFi Alliance 802.11ax guidelines specify: offices 1 AP per 90–140 m² (use 90 m² for adequate coverage); high-density conference 1 AP per 45–70 m² (use 45 m²); lobby as general space 1 AP per 90–140 m² (use 140 m²). The calculation method is unclear. If using stated ranges (offices 1/90, conference 1/45, lobby 1/140), the result is 44+27+4=75 APs. The jump to 56 APs (34+19+3) is not explained and appears to use different density assumptions than stated. WiFi Alliance guidelines should be explicitly cited with document reference.",
-        "takeaway": "AP density varies by space type: offices require 1 per 90–140 m², high-density (conference) requires 1 per 45–70 m²; accurate space classification is essential for cost-effective coverage planning."
-      },
+      "rationale": "Ground the outer conductive shield near the building entrance or attachment point. This answer matches PEC refined markdown lines 32838-32920.",
       "explanation": null,
       "code_citation": "WiFi Alliance 802.11ax Deployment Guidelines; LEA-UTIL-005-05 Article Section: Access Point Density and Coverage",
       "bloom_level": "apply",
@@ -251,30 +221,30 @@
       "model_id": "ALE-UTIL-005-05-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.084107+00:00",
       "content_hash": "sha256:30de175e346a25ee0e7701bd559c8f67e175672456ef33a72f09c0f7ff605d39"
     },
     {
       "question_id": "758a7181-25b8-48c3-8490-930184d71726",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "An existing 12-story office building in Quezon City (8000 m²) has a non-compliant TR (0.7 m² area, inadequate cooling, incorrect grounding per PEC Article 800, and mixed-gauge equipment grounding conductors from #10 to #6 AWG). The building currently operates legacy CATV headend + Wi-Fi APs. The building owner proposes adding IPTV server and upgrading to Wi-Fi 6. What is the correct remediation sequence that addresses compliance without disrupting existing services?",
+      "text": "What does the checked source say a TV antenna system does?",
       "options": [
         {
           "id": "a",
-          "text": "A) Install new equipment directly into the existing non-compliant TR; upgrade Wi-Fi and IPTV in parallel; conduct compliance audit after all changes are complete, which may not address existing non-compliance issues"
+          "text": "Converts all TV signals to plumbing controls."
         },
         {
           "id": "b",
-          "text": "B) Phase 1: Expand/upgrade TR to meet TIA-569-C minimum (1.4 m² for 1000–5000 m² buildings; this building is 8000 m², actually requiring 1.8 m²), install compliant grounding per PEC Article 800 (#6 AWG minimum throughout), and add split AC cooling; Phase 2: Migrate CATV to IPTV with gateway bridging; Phase 3: Upgrade Wi-Fi 6 APs and controller"
+          "text": "Amplifies the received TV signal and distributes it by special cable to wall outlets."
         },
         {
           "id": "c",
-          "text": "C) Relocate legacy CATV headend to external equipment room; use the freed TR space for new IPTV equipment; upgrade Wi-Fi and DAS simultaneously without TR expansion, which may not resolve compliance issues"
+          "text": "Replaces the building grounding electrode."
         },
         {
           "id": "d",
-          "text": "D) Declare the building non-compliant; shut down all services; perform complete infrastructure replacement before resuming any operations, which is an extreme measure"
+          "text": "Only decorates the roofline."
         }
       ],
       "correct_option_id": "b",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Installing equipment in non-compliant infrastructure risks equipment damage, electrical hazards (inadequate grounding), equipment failure (overheating), and creates liability. Deferring compliance audit to post-implementation is unacceptable.",
-        "c": "Relocating CATV headend to external room does not address the TR's fundamental size/cooling/grounding deficiencies, and creates operational complexity (separate control rooms). The building's central network hub must be in the TR per TIA-569-C philosophy.",
-        "d": "Complete shutdown is excessive for a phased upgrade. The building can maintain service while TR infrastructure is upgraded if planning is coordinated (e.g., upgrade during off-hours, test new equipment before cutover).",
-        "correct": "Current 0.7 m² is severely non-compliant. Remediation must occur in phases to maintain service continuity: (1) Infrastructure upgrade—expand TR, install grounding per PEC Article 800 (minimum #6 AWG throughout, dedicated equipment grounding bus connected to main building ground at <10 ohms), and add cooling capacity; (2) Service migration—IPTV gateway bridging allows legacy CATV subscribers to continue service while new infrastructure is tested; (3) Access technology upgrade—Wi-Fi 6 APs benefit from stable, compliant power/cooling infrastructure. This phased approach maintains tenant services and distributes cost over time.",
-        "takeaway": "Remediation of non-compliant infrastructure must address structural (space), electrical (grounding), and mechanical (cooling) deficiencies in a phased sequence that maintains operational continuity and distributes costs."
-      },
+      "rationale": "Amplifies the received TV signal and distributes it by special cable to wall outlets. This answer matches Communication refined markdown lines 416-440.",
       "explanation": null,
       "code_citation": "TIA-569-C Telecommunications Pathways and Spaces; Philippine Electrical Code (PEC) Article 800; LEA-UTIL-005-05 Article Section: Telecommunications Room Sizing",
       "bloom_level": "evaluate",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-005-05-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.092075+00:00",
       "content_hash": "sha256:caf6547dc1e21b6ee3829f7383dfc618204c02410f6031bbd8b4695a3673837b"
     },
     {
       "question_id": "4b9cb172-778c-4c17-a1d2-11a63949431e",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "An IPTV system is being designed for a 200-unit residential building in Makati. The building requires support for 150 simultaneous HD streams at peak demand. At 4–6 Mbps per HD stream per ITU-R BT.1200, what is the minimum backbone bandwidth required, and which infrastructure option meets this requirement?",
+      "text": "When does a TV antenna distribution system generally need a booster amplifier?",
       "options": [
         {
           "id": "a",
-          "text": "A) 600–900 Mbps; Fast Ethernet (100 Mbps) with QoS prioritization is sufficient for basic streaming needs but may not support peak demand"
+          "text": "Only when the building has no elevator."
         },
         {
           "id": "b",
-          "text": "B) 600–900 Mbps; gigabit ethernet (1 Gbps) backbone with fiber or Cat 6A provides adequate headroom for 150 simultaneous users"
+          "text": "Only if all outlets are on one wall."
         },
         {
           "id": "c",
-          "text": "C) 150–300 Mbps; Cat 5e cabling (100 Mbps nominal) can be upgraded to support additional streams, though it may not meet current demands"
+          "text": "When the system has two or more outlets."
         },
         {
           "id": "d",
-          "text": "D) 900–1200 Mbps; 10 Gigabit backbone is mandatory for all residential IPTV deployments, ensuring future-proofing"
+          "text": "Never, because wall outlets amplify signals."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Fast Ethernet at 100 Mbps falls short by 600% even at the lower end of the bandwidth requirement; QoS prioritization cannot create bandwidth that doesn't exist.",
-        "c": "This dramatically underestimates the actual bandwidth requirement by a factor of 4–6×. Cat 5e cannot support gigabit speeds reliably.",
-        "d": "10 Gbps is not mandatory for a 200-unit residential building with 150 simultaneous streams; gigabit is adequate. 10 Gbps would be appropriate for buildings with 1000+ units or when multiple services (IPTV, IP phone, data) share the backbone.",
-        "correct": "150 simultaneous HD streams × 4–6 Mbps per stream = 600–900 Mbps total requirement. Gigabit ethernet (1000 Mbps) provides adequate headroom with margin for protocol overhead and future growth. Fiber optic or Cat 6A cabling can deliver gigabit speeds. Fast Ethernet (100 Mbps) is insufficient by a factor of 6–9×. Cat 5e (rated 100 Mbps) cannot sustain gigabit speeds reliably.",
-        "takeaway": "Accurate bandwidth calculation (streams × codec bitrate) is essential for selecting appropriate backbone infrastructure; gigabit provides practical capacity for medium-sized residential deployments."
-      },
+      "rationale": "When the system has two or more outlets. This answer matches Communication refined markdown lines 432-440.",
       "explanation": null,
       "code_citation": "ITU-R BT.1200 Video Codec Specifications; LEA-UTIL-005-05 Article Section: IPTV as Modern Replacement",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-005-05-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.086121+00:00",
       "content_hash": "sha256:113a1e16f8eacf66bfa9a7f7829d09ad426bf468e9fafe70e722e8ca6bafb7ff"
     },
     {
       "question_id": "0a729ee2-580b-4a23-8bbf-0939fdb28acb",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "Why is impedance matching to 75 ohms critical in coaxial cable CATV systems?",
+      "text": "How does the checked source describe an intercom system?",
       "options": [
         {
           "id": "a",
-          "text": "A) To reduce power consumption in distribution amplifiers operating at 220V/60Hz, ensuring energy efficiency"
+          "text": "It is only a fire sprinkler valve."
         },
         {
           "id": "b",
-          "text": "B) To prevent signal reflections and loss at cable terminations, splitters, and tap-off connections"
+          "text": "It is the same as a transformer vault."
         },
         {
           "id": "c",
-          "text": "C) To comply with Philippine Electrical Code requirements for electrical safety, which mandates specific impedance levels"
+          "text": "It has no stations or calling function."
         },
         {
           "id": "d",
-          "text": "D) To ensure that RG-6 cables can transmit signals over distances exceeding 150 m without significant loss"
+          "text": "Master stations can selectively call remote stations that operate through the masters."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Power consumption is related to amplifier design and electrical supply, not impedance matching.",
-        "c": "PEC requirements address grounding and electrical safety, not impedance—impedance is a transmission line property.",
-        "d": "Cable distance capability is determined by signal loss per unit length and amplifier spacing, not impedance (RG-6 has specified loss regardless of impedance).",
-        "correct": "Coaxial cables are transmission lines with characteristic impedance of 75 ohms. Any impedance mismatch at connections (splitters, taps, terminations) creates reflection of signal energy back toward the source, causing signal loss and degradation. Proper termination maintains impedance matching throughout the system.",
-        "takeaway": "Impedance matching prevents reflections and signal loss, ensuring clean signal propagation throughout the CATV distribution network."
-      },
+      "rationale": "Master stations can selectively call remote stations that operate through the masters. This answer matches Communication refined markdown lines 442-486.",
       "explanation": null,
       "code_citation": "IEC 61196-1 Coaxial Cable Standards; LEA-UTIL-005-05 Article Section: Cable Specifications",
       "bloom_level": "understand",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-005-05-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.088197+00:00",
       "content_hash": "sha256:a358e521fbd7f18e7feff5eaef9744443a97d693ba7550fdff07a83ee0df2b36"
     },
     {
       "question_id": "35d31958-7b81-447b-9a9e-bea831a43a61",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "How does IPTV fundamentally change the infrastructure requirements for video distribution compared to traditional CATV systems?",
+      "text": "What telephone entrance protection statement is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "A) IPTV uses the same coaxial trunk infrastructure but replaces distribution amplifiers with IP routers at 1 km intervals, which allows for more efficient data management"
+          "text": "A protector is generally required and should be near the entrance point."
         },
         {
           "id": "b",
-          "text": "B) IPTV encodes video as IP packets (4–6 Mbps per HD stream) and delivers via fiber/ethernet backbone, eliminating coaxial trunk distribution and leveraging structured cabling"
+          "text": "The protector should be as far as possible from the entrance."
         },
         {
           "id": "c",
-          "text": "C) IPTV requires dedicated satellite downconverters at each subscriber unit instead of a centralized headend, which increases the complexity of individual installations"
+          "text": "Telephone entrances need no lightning protection."
         },
         {
           "id": "d",
-          "text": "D) IPTV broadcasts all signals over 2.4 GHz and 5 GHz Wi-Fi, eliminating the need for any physical cabling, thus reducing installation costs significantly"
+          "text": "The protector replaces all terminal cabinets."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "IPTV does not use coaxial trunks; it is entirely IP-based. IP routers operate at the network layer, not as amplifier replacements at fixed intervals.",
-        "c": "IPTV centralizes content at the headend/server, not at subscriber units. Downconverters are eliminated because signals are processed digitally at the source.",
-        "d": "Wi-Fi is a wireless access method with limited backbone capacity; IPTV requires wired backbone delivery (fiber or ethernet) for reliable multi-stream performance.",
-        "correct": "IPTV replaces coaxial distribution entirely by encoding video content in MPEG-2 or MPEG-4 and transmitting as IP packets over a high-capacity fiber optic or gigabit ethernet backbone. This shifts the infrastructure model from dedicated RF distribution to IP network delivery, reducing cable complexity and leveraging the building's structured cabling system.",
-        "takeaway": "IPTV shifts from RF-based trunk distribution to IP packet delivery, fundamentally reducing physical infrastructure complexity while improving scalability."
-      },
+      "rationale": "A protector is generally required and should be near the entrance point. This answer matches Communication refined markdown lines 507-532.",
       "explanation": null,
       "code_citation": "ITU-R BT.1200 Video Coding; LEA-UTIL-005-05 Article Section: IPTV as Modern Replacement",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-005-05-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.087230+00:00",
       "content_hash": "sha256:852319a6ff1d614e757a59dd2e5e0f15e9d785306d5a19c60c3b7ab2e892777f"
     },
     {
       "question_id": "c18406ab-44f7-496d-9efc-a650bfbeca3b",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "What are the three main functional stages within a CATV distribution system headend facility?",
+      "text": "What does PEC require for CATV coaxial shield grounding?",
       "options": [
         {
           "id": "a",
-          "text": "A) Reception, processing, and modulation of signals onto a single coaxial trunk"
+          "text": "Ground only the television screen."
         },
         {
           "id": "b",
-          "text": "B) Antenna installation, cable termination, and splitter calibration for signal distribution"
+          "text": "Ground the outer conductive shield near the building entrance or attachment point."
         },
         {
           "id": "c",
-          "text": "C) UPS backup, thermal management, and power supply regulation to ensure system reliability"
+          "text": "Keep the coaxial shield floating at every building."
         },
         {
           "id": "d",
-          "text": "D) Tap-off installation, drop cable management, and subscriber connection setup for end-user access"
+          "text": "Bond it to a hot water pipe as the preferred electrode."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Antenna installation and cable termination are site preparation tasks; splitter calibration is not a headend function.",
-        "c": "UPS backup and thermal management are operational support systems, not the main functional stages of the headend.",
-        "d": "Tap-offs and drop cables are downstream subscriber distribution components that receive processed signals from the headend trunk.",
-        "correct": "The headend facility performs three core functions: (1) signal reception from terrestrial, satellite, or fiber sources; (2) signal processing and combination; (3) modulation and transmission as optical signals onto a fiber transport network (in HFC systems) or coaxial trunk (in legacy systems). The headend is the central hub where all incoming signals are unified for building-wide distribution.",
-        "takeaway": "Understanding the headend's three-stage process (reception → processing → modulation) is foundational to CATV system architecture."
-      },
+      "rationale": "Ground the outer conductive shield near the building entrance or attachment point. This answer matches PEC refined markdown lines 32838-32920.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-05 Article Section: System Architecture",
       "bloom_level": "remember",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-005-05-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.083072+00:00",
       "content_hash": "sha256:6b6d7ec9f809a506d4fc87d9fb99dc10f151b5cd600d548b24540612abdc6909"
     },
     {
       "question_id": "5aa7ccf8-6567-4ab9-8968-e03534ae984c",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "During RF shielding design for a 12-story hospital tower in Metro Manila, the design team must protect sensitive medical imaging equipment on floor 6 from external Wi-Fi (2.4/5 GHz), cellular DAS (700/900/1800/2600 MHz), and broadcast RF interference. The medical room is 20 m × 15 m × 3.5 m. What shielding strategy provides adequate protection while maintaining accessibility?",
+      "text": "What does the checked source say a TV antenna system does?",
       "options": [
         {
           "id": "a",
-          "text": "A) Faraday cage with 80 dB shielding effectiveness at all relevant frequencies; copper mesh screen covering all walls, floor, ceiling with apertures for equipment access sealed with RF gaskets"
+          "text": "Converts all TV signals to plumbing controls."
         },
         {
           "id": "b",
-          "text": "B) Double-layer drywall with aluminum foil layer between; provides cost-effective RF attenuation without affecting room accessibility"
+          "text": "Replaces the building grounding electrode."
         },
         {
           "id": "c",
-          "text": "C) Install Wi-Fi access point inside the medical room operating at reduced power (10 dBm) to mask external interference, ensuring connectivity"
+          "text": "Amplifies the received TV signal and distributes it by special cable to wall outlets."
         },
         {
           "id": "d",
-          "text": "D) Apply RF-absorbing paint on interior surfaces; blocks external signals while maintaining normal wall/door/window construction for ease of access"
+          "text": "Only decorates the roofline."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Double-layer drywall with foil provides limited attenuation (~20–30 dB) and is insufficient for medical-grade isolation. Attenuation decreases with frequency, providing worse performance at higher Wi-Fi/cellular bands.",
-        "c": "Internal Wi-Fi masking does not prevent external RF from interfering with sensitive equipment. Adding a Wi-Fi transmitter inside the space contradicts the goal of RF isolation.",
-        "d": "RF-absorbing paint provides minimal attenuation (10–15 dB at best) over narrow frequency ranges. It does not achieve 80 dB shielding and is unreliable for critical medical applications.",
-        "correct": "Medical imaging equipment (MRI, CT, ultrasound) requires high levels of RF shielding. A full Faraday cage with >80 dB shielding effectiveness (per the article requirement) blocks external interference across all relevant bands. Copper mesh construction allows visibility and some equipment access while maintaining electromagnetic isolation. RF gaskets around door seals, cable penetration panels, and equipment feedthroughs prevent RF leakage at apertures. This is the standard for medical and laboratory RF-sensitive spaces.",
-        "takeaway": "Hospital and laboratory RF-sensitive spaces require full Faraday cage enclosures with proper gasket sealing of all apertures to achieve medical-grade electromagnetic isolation across all frequency bands in use."
-      },
+      "rationale": "Amplifies the received TV signal and distributes it by special cable to wall outlets. This answer matches Communication refined markdown lines 416-440.",
       "explanation": null,
       "code_citation": "ICNIRP RF Exposure Guidelines (adopted by NTC); LEA-UTIL-005-05 Article Section: Safety and Electromagnetic Compliance",
       "bloom_level": "analyze",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-005-05-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.079797+00:00",
       "content_hash": "sha256:bf8b622650e5f5366d7f31afb907090044ae3b22f90a112e8acd2ab9e1d259cd"
     },
     {
       "question_id": "aeff315a-4d5c-44ad-b144-3f26e3e01d0c",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "An older 8-story office building in Makati was originally built with CATV infrastructure (coaxial trunk, tap-offs, drop cables). The owner now wants to migrate to IPTV while maintaining CATV service during the transition. What is the most cost-effective and operationally sound approach?",
+      "text": "When does a TV antenna distribution system generally need a booster amplifier?",
       "options": [
         {
           "id": "a",
-          "text": "A) Rip out all existing CATV coaxial infrastructure immediately and install pure IPTV on the structured cabling backbone; CATV subscribers convert to internet video streaming"
+          "text": "Only when the building has no elevator."
         },
         {
           "id": "b",
-          "text": "B) Install IPTV gateway devices in the TR that convert IP-delivered video to analog signals for existing CATV tap-offs and drop cables, allowing gradual subscriber migration to IPTV set-top boxes without immediate coaxial removal"
+          "text": "Only if all outlets are on one wall."
         },
         {
           "id": "c",
-          "text": "C) Operate both CATV and IPTV in parallel indefinitely; run separate fiber trunk alongside existing coaxial trunks to support future IPTV expansion, ensuring seamless service."
+          "text": "Never, because wall outlets amplify signals."
         },
         {
           "id": "d",
-          "text": "D) Disable CATV and replace only the headend equipment with IP-based servers; retain all coaxial distribution unchanged to avoid physical reconstruction, minimizing disruption."
+          "text": "When the system has two or more outlets."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Immediate rip-and-replace is high-risk (service disruption), high-cost, and ignores the operational value of existing coaxial plant. Forcing subscribers to internet streaming (dependent on broadband availability and data caps) may be infeasible.",
-        "c": "Parallel operation of both CATV and IPTV on separate infrastructure duplicates cost (separate fiber trunks, separate headend equipment, separate power/cooling) without enabling migration; this is indefinite, not a transition strategy.",
-        "d": "Disabling CATV without conversion hardware leaves existing subscribers without service. Retaining unchanged coaxial distribution with IP-based servers creates a mismatch between central IP architecture and analog distribution.",
-        "correct": "IPTV gateway devices in the TR bridge CATV and IPTV by converting IP packets to analog CATV signals, allowing the existing coaxial infrastructure (tap-offs, drop cables) to continue serving legacy CATV subscribers while new subscribers adopt IPTV via ethernet. This enables gradual migration without disrupting service or requiring immediate capital expenditure on full infrastructure replacement. Coaxial cables can be decommissioned floor-by-floor as subscribers migrate.",
-        "takeaway": "IPTV gateway bridging enables cost-effective gradual migration from CATV to IPTV while maintaining service continuity and allowing decommissioning of legacy infrastructure on a floor-by-floor timeline."
-      },
+      "rationale": "When the system has two or more outlets. This answer matches Communication refined markdown lines 432-440.",
       "explanation": null,
       "code_citation": "LEA-UTIL-005-05 Article Section: CATV Distribution Systems; IPTV as Modern Replacement; Integration and Future Growth",
       "bloom_level": "analyze",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-005-05-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.080937+00:00",
       "content_hash": "sha256:72d47a83c849b208dad9373fbd1495af085534dcf4340f4b7f54802c4b2235d4"
     },
     {
       "question_id": "39668ddf-2244-4e14-a0d7-558f091c7de3",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "A 15-story office tower in BGC is integrating CATV, IPTV, Wi-Fi, and DAS cellular systems into a unified structured cabling infrastructure. The building has 1500 m² per floor. Per TIA-569-C, what is the minimum Telecommunications Room (TR) floor area required, and how should the backbone strategy allocate fiber capacity?",
+      "text": "How does the checked source describe an intercom system?",
       "options": [
         {
           "id": "a",
-          "text": "A) 0.9 m² minimum (up to 1000 m² building); single-mode fiber trunk for all services including Wi-Fi and IPTV, which may not be sufficient for larger buildings."
+          "text": "Master stations can selectively call remote stations that operate through the masters."
         },
         {
           "id": "b",
-          "text": "B) 1.8 m² minimum (over 5000 m²); multi-mode fiber backbone with CWDM wavelength allocation: IP traffic (1310 nm), DAS (1550 nm), separate coax for CATV tap-off bridging"
+          "text": "It is only a fire sprinkler valve."
         },
         {
           "id": "c",
-          "text": "C) 1.4 m² minimum (1000–5000 m²); copper backbone with fiber termination at ONT only for ISP connectivity, which limits future scalability."
+          "text": "It is the same as a transformer vault."
         },
         {
           "id": "d",
-          "text": "D) 2.5 m² minimum with emergency egress; all services require separate dedicated coaxial and fiber trunks with no multiplexing, which is not typically efficient."
+          "text": "It has no stations or calling function."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.9 m² applies to buildings up to 1000 m²; a 22,500 m² building requires 1.8 m². SMF is overprovisioned for intra-building distances.",
-        "c": "1.4 m² applies to buildings 1000–5000 m²; this building is larger and requires 1.8 m². Copper backbone cannot support gigabit IPTV delivery; copper is appropriate for final horizontal runs only.",
-        "d": "2.5 m² exceeds the TIA-569-C maximum specification (1.8 m² for buildings over 5000 m²). Separate trunks for each service wastes conduit space and installation cost when CWDM multiplexing is available.",
-        "correct": "Building floor area = 1500 m² × 15 floors = 22,500 m² total, exceeding 5000 m², requiring 1.8 m² minimum TR per TIA-569-C. Multi-mode fiber backbone is suitable for intra-building distribution (15 stories at ~4 m per floor = 60 m total span, well within MMF 300 m @ 10 Gbps). CWDM wavelength division multiplexing allows a single fiber pair to carry: IP traffic (1310 nm for IPTV, Wi-Fi backhaul), DAS cellular (1550 nm), reducing physical cable runs and installation complexity.",
-        "takeaway": "Integrated service delivery via CWDM-multiplexed fiber backbone reduces infrastructure complexity and cost while meeting TIA-569-C space requirements."
-      },
+      "rationale": "Master stations can selectively call remote stations that operate through the masters. This answer matches Communication refined markdown lines 442-486.",
       "explanation": null,
       "code_citation": "TIA-569-C Telecommunications Pathways and Spaces; CWDM Wavelength Standards; LEA-UTIL-005-05 Article Section: Telecommunications Room Sizing; Integration and Future Growth",
       "bloom_level": "apply",
@@ -651,30 +573,30 @@
       "model_id": "ALE-UTIL-005-05-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.078231+00:00",
       "content_hash": "sha256:d33ff74ecdcd1c388c7567eba5c6a2ff70315ef83c6e66f6b7443d000e19fb22"
     },
     {
       "question_id": "b60c2fda-331c-4ab3-92d6-47010a0bed74",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "A developer is proposing a new 25-story commercial tower in BGC with 40,000 m² total floor area, designed for mixed office/retail/hospitality use. The design must integrate cable TV, IPTV, Wi-Fi 6, and DAS cellular infrastructure within PBC and NTC compliance. Which integrated infrastructure plan best balances initial capital cost, operational complexity, future scalability, and regulatory compliance?",
+      "text": "What telephone entrance protection statement is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "A) Traditional CATV for video; Wi-Fi 6 APs only; exclude DAS (rely on cell coverage from external providers); minimize TR size to 1.8 m² to reduce real estate cost, potentially impacting future upgrades"
+          "text": "The protector should be as far as possible from the entrance."
         },
         {
           "id": "b",
-          "text": "B) IPTV-only video delivery via gigabit fiber backbone; unified Wi-Fi 6 + DAS integration using CWDM (IP 1310 nm, DAS 1550 nm); 2.5–3.0 m² TR with common equipment racks; future-proof structured cabling for 5G upgrades"
+          "text": "A protector is generally required and should be near the entrance point."
         },
         {
           "id": "c",
-          "text": "C) Parallel CATV + IPTV infrastructure with separate coaxial and fiber trunks; independent Wi-Fi and DAS systems with separate controllers; maximize TR to 3.0+ m² with dedicated equipment racks per service, increasing operational complexity"
+          "text": "Telephone entrances need no lightning protection."
         },
         {
           "id": "d",
-          "text": "D) Eliminate CATV entirely; outsource IPTV delivery to external ISP; focus on Wi-Fi only; omit DAS and rely on rooftop cellular antennas for building coverage, which may limit service quality"
+          "text": "The protector replaces all terminal cabinets."
         }
       ],
       "correct_option_id": "b",
@@ -682,13 +604,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Minimizing TR to code minimum (1.8 m²) for a 25-story, 40,000 m² building creates severe operational constraints, inadequate cooling capacity, and poor scalability for future upgrades. Excluding DAS forces reliance on external providers' rooftop antennas, which provide poor indoor coverage; this contradicts modern user expectations for ubiquitous cellular service.",
-        "c": "Parallel CATV + IPTV doubles capital cost (separate headend, separate fiber trunks, separate power/cooling), complicates operations (two video management systems), and is only justified as a transitional strategy. For a new building, parallel infrastructure is wasteful. CWDM wavelength multiplexing reduces the number of fiber strands required but does not reduce the physical space needed for equipment racks, cooling, and power distribution. TR size is determined by equipment volume and thermal load, not by fiber strand count.",
-        "d": "Outsourcing IPTV to external ISP creates dependency on ISP uptime and service policies; quality-of-service control is lost. Omitting DAS leaves the building with poor indoor cellular coverage, unacceptable for modern office/hospitality occupants. Wi-Fi-only strategy ignores that most mobile devices require cellular connectivity.",
-        "correct": "At 40,000 m² (exceeding 5000 m², requiring 1.8 m² minimum TR per TIA-569-C), the building justifies investment in integrated infrastructure. IPTV-only eliminates legacy CATV operational complexity while delivering superior video quality and bandwidth efficiency. Multi-mode fiber backbone (adequate for 25-story height at ~100 m span) supports gigabit IPTV delivery. CWDM wavelength allocation (IP 1310 nm, DAS 1550 nm) allows unified backbone serving multiple services on a single fiber pair, reducing conduit/cable runs. Integrated Wi-Fi and DAS controllers in a unified TR (2.5–3.0 m²) reduce operational overhead, simplify network management, and enable QoS coordination across services. Future 5G DAS upgrades (higher bands, additional wavelengths) are accommodated without major infrastructure redesign. This plan complies with PBC (structural) and NTC (licensing for DAS RF transmission) requirements.",
-        "takeaway": "Integrated IPTV + DAS + Wi-Fi on unified fiber backbone with CWDM multiplexing is the optimal design for large new buildings; it minimizes infrastructure complexity, reduces operational cost, and provides superior scalability for 5G and beyond."
-      },
+      "rationale": "A protector is generally required and should be near the entrance point. This answer matches Communication refined markdown lines 507-532.",
       "explanation": null,
       "code_citation": "TIA-569-C Telecommunications Pathways; CWDM Wavelength Standards; NTC Regulations; LEA-UTIL-005-05 Article Section: Integration and Future Growth",
       "bloom_level": "evaluate",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-005-05-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.091208+00:00",
       "content_hash": "sha256:b6a0c360552b1dcc6789bd228e8cdf2c0859e081913cd68825f542651bca32de"
     },
     {
       "question_id": "9f75e96d-2a31-4a86-9755-b18dfaf9e6bc",
       "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
       "topic_id": "5467a2e1-94c8-4f1f-b5bc-c55c85f02c22",
-      "text": "A 10-story luxury residential building in Makati requires simultaneous support for: CATV delivery (legacy), IPTV (new), Wi-Fi 6 (802.11ax), and multi-carrier DAS (700/900/1800/2600 MHz). The TR is 1.8 m × 1.2 m with equipment racks for CATV headend, IPTV server, Wi-Fi controller, DAS master unit, ISP ONT, and network switch. Power budget is 5 kW continuous at 220V/60Hz. Identify the critical constraint and the optimal mitigation strategy.",
+      "text": "What does PEC require for CATV coaxial shield grounding?",
       "options": [
         {
           "id": "a",
-          "text": "A) Thermal management is the limiting factor; implement ceiling-mounted split AC units (3 tons minimum) with variable speed compressor to maintain 16–35 °C per TIA-569-C, and ensure adequate ventilation exhaust to prevent recirculation"
+          "text": "Ground only the television screen."
         },
         {
           "id": "b",
-          "text": "B) Electrical capacity (5 kW) is insufficient for simultaneous operation of all equipment; reduce services by eliminating CATV in favor of IPTV-only deployment, which will also reduce the overall power consumption"
+          "text": "Keep the coaxial shield floating at every building."
         },
         {
           "id": "c",
-          "text": "C) Physical space (1.8 × 1.2 m = 2.16 m²) exceeds TIA-569-C maximum (1.8 m² for buildings over 5000 m²); the TR must be redesigned as two separate distribution frames to comply with the standard and ensure proper equipment accommodation"
+          "text": "Ground the outer conductive shield near the building entrance or attachment point."
         },
         {
           "id": "d",
-          "text": "D) RF interference between DAS (cellular) and Wi-Fi is the limiting factor; relocate DAS master unit to a separate shielded cabinet to prevent cross-coupling through antenna feeds, ensuring signal integrity and minimizing interference"
+          "text": "Bond it to a hot water pipe as the preferred electrode."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "5 kW electrical capacity is adequate for the calculated equipment load (~2.85 kW continuous operation). The budget constraint is thermal (cooling capacity), not electrical power.",
-        "c": "While 2.16 m² is slightly above 1.8 m² (the specified maximum for buildings over 5000 m²), the 0.36 m² overage is negligible and does not warrant elimination of CATV services. Code compliance is achievable through equipment density optimization.",
-        "d": "RF shielding between DAS cellular (700–2600 MHz) and Wi-Fi (2.4/5 GHz) is a secondary consideration. Proper cable routing, ferrite filters on Ethernet feeds, and equipment grounding (mandatory per PEC Article 800) prevent RF coupling without separate enclosure.",
-        "correct": "With 5 major equipment systems (CATV headend, IPTV server, Wi-Fi controller, DAS master, ONT, network switch) in a small 1.8 × 1.2 m TR, thermal load is the primary constraint. Typical equipment power dissipation: headend/server 1.5 kW, Wi-Fi controller 0.3 kW, DAS master 0.8 kW, network switch 0.2 kW, ONT 0.05 kW = ~2.85 kW of heat output. [Claim cannot be verified from provided search results; TIA-569-C document reference required] Air conditioning (minimum 3-ton capacity = ~10.6 kW cooling) is required to maintain temperature while avoiding condensation at high humidity. Ceiling-mounted split AC with variable speed compressor provides efficient part-load operation.",
-        "takeaway": "Thermal management in small, densely-packed TR spaces is often the limiting factor for multi-service integration; adequate cooling prevents equipment failure and ensures long-term reliability."
-      },
+      "rationale": "Ground the outer conductive shield near the building entrance or attachment point. This answer matches PEC refined markdown lines 32838-32920.",
       "explanation": null,
       "code_citation": "TIA-569-C Environmental Control Requirements; LEA-UTIL-005-05 Article Section: Telecommunications Room Sizing",
       "bloom_level": "analyze",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-005-05-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.082029+00:00",
       "content_hash": "sha256:e742e5ff00f162925a3c9442109878835e6c5299c7c9cb76a83a58972c1ce015"
     }
   ]

@@ -1,0 +1,508 @@
+{
+  "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:89c991d501cc504ea545a01808ad6c5ed4731268a60f72948e24311fead1be87",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1a57fe63-3ca3-4663-b958-3b497b5f5859",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "A construction dispute is filed in regular civil court instead of CIAC. The contract contains an arbitration clause. CIAC has not yet been invoked. Can the court accept the case, or must it defer to CIAC jurisdiction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The court can accept and hear the case because it was filed there first, although this may lead to jurisdictional challenges later"
+        },
+        {
+          "id": "b",
+          "text": "The court must dismiss the case and defer to CIAC jurisdiction upon party motion or court notice of the arbitration clause"
+        },
+        {
+          "id": "c",
+          "text": "The court can accept the case but must stay proceedings pending CIAC arbitration completion, ensuring compliance with the arbitration agreement"
+        },
+        {
+          "id": "d",
+          "text": "Only if CIAC declines to accept the case may the court proceed, which is a rare occurrence given the arbitration clause"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. The court does not stay proceedings; it dismisses the case and defers entirely to CIAC.",
+        "d": "Incorrect. CIAC's acceptance is not a precondition to court dismissal; the arbitration agreement itself divests court jurisdiction.",
+        "correct": "If a construction dispute is filed in regular civil court but the contract contains an arbitration clause, the court must dismiss the case and defer to CIAC jurisdiction. This is a foundational principle of arbitration law: once an agreement to arbitrate exists, courts lack jurisdiction. The party seeking court resolution can be compelled to arbitrate through CIAC.",
+        "takeaway": "If a construction dispute is filed in civil court but the contract contains an arbitration clause, the court must dismiss and defer to CIAC—courts lack jurisdiction when arbitration agreement exists."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1df3489ce80c1ef0e45b83cb60c5ab0a08a3a5d87446eceb36db11a06a9e1ad3"
+    },
+    {
+      "question_id": "862657b8-dd8f-441e-b37c-526c1a159839",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "Which of the following best describes the Construction Industry Arbitration Commission (CIAC) and its jurisdiction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CIAC is a government court that hears construction cases as a specialized civil court division, focusing on construction-related disputes"
+        },
+        {
+          "id": "b",
+          "text": "CIAC is an optional arbitration forum created by Executive Order 1008 that provides specialized dispute resolution for construction disputes with original and exclusive jurisdiction"
+        },
+        {
+          "id": "c",
+          "text": "CIAC is a private arbitration company that competes with other forums like ICC for construction disputes, offering alternative dispute resolution services"
+        },
+        {
+          "id": "d",
+          "text": "CIAC is the engineering board that regulates construction professionals in the Philippines, overseeing licensing and professional conduct"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. CIAC is statutory, not private, and has mandatory jurisdiction, not optional competition with other forums.",
+        "d": "Incorrect. CIAC adjudicates disputes; the Professional Regulation Commission (PRC) and Professional Regulatory Board of Architecture (PRBoA) regulate construction professionals.",
+        "correct": "CIAC was established by Executive Order No. 1008 in 1985 as a specialized arbitration body with original and exclusive jurisdiction over construction disputes in the Philippines. It is neither a court nor a private entity, but a statutory arbitration commission under the DTI/CIAP.",
+        "takeaway": "CIAC is a statutory arbitration commission established by Executive Order 1008 with original and exclusive jurisdiction over construction disputes in the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "EO 1008 (Construction Industry Arbitration Law)",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05b6387f5d61d9906b0b32657d2867a76c1d982fde6f67a52894cdbd42ce21a9"
+    },
+    {
+      "question_id": "225aa142-e35e-45c8-8e3a-54b7b14722a5",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "What is the primary policy rationale for CIAC's original and exclusive jurisdiction over construction disputes in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce the number of construction contracts in the Philippines by discouraging unnecessary legal actions through arbitration"
+        },
+        {
+          "id": "b",
+          "text": "To provide specialized, efficient arbitration for construction disputes using arbitrators with construction expertise, avoiding delays of regular court litigation"
+        },
+        {
+          "id": "c",
+          "text": "To give the government authority to interfere in private construction contracts, ensuring compliance with national standards"
+        },
+        {
+          "id": "d",
+          "text": "To prevent contractors from filing claims in any forum other than the designated arbitration body"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. CIAC arbitration respects contract autonomy and party agreement; it is not government interference.",
+        "d": "Incorrect. CIAC does not prevent claims; it provides the forum for them.",
+        "correct": "CIAC was established to provide specialized, efficient dispute resolution for construction disputes. The policy recognizes that construction disputes require technical expertise and quick resolution to minimize project disruption. CIAC arbitrators are typically engineers and architects who understand construction practice. Arbitration avoids court backlogs and allows faster, more informed decisions.",
+        "takeaway": "CIAC's original and exclusive jurisdiction provides specialized, efficient resolution using construction experts (engineers/architects) to avoid court delays and project disruption."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eb9618801e5dfc0d09c7274673f2853bad2befaaa8d02c7debcc7556f9be3ef8"
+    },
+    {
+      "question_id": "2ff95efa-142b-4be5-9ace-ba75f4b10383",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "A construction contract between an owner and contractor specifies that disputes shall be resolved through the International Chamber of Commerce (ICC) arbitration. A dispute arises over design changes and the contractor files a case with CIAC. Can CIAC assert jurisdiction despite the contract's ICC forum selection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, CIAC must defer to the contract's explicit ICC forum selection, unless both parties mutually agree to CIAC jurisdiction"
+        },
+        {
+          "id": "b",
+          "text": "Yes, per Section 4.1 of CIAC Rules of Procedure and the landmark case Hutama-Rsea v. Citra Metro Manila Tollways, CIAC has original and exclusive jurisdiction over construction disputes regardless of contract forum selection"
+        },
+        {
+          "id": "c",
+          "text": "Only if the ICC declines to hear the case first, which is unlikely given the international nature of the dispute"
+        },
+        {
+          "id": "d",
+          "text": "Only if the owner agrees in writing to CIAC jurisdiction, which must be documented and submitted to both CIAC and ICC"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. CIAC jurisdiction is not contingent on ICC action; CIAC's jurisdiction is independent and primary.",
+        "d": "Incorrect. CIAC jurisdiction exists upon dispute filing if the three requisites are met; owner consent (agreement to arbitrate) is ALWAYS required as the 3rd jurisdictional requisite per EO 1008 Sec. 4.",
+        "correct": "Section 4.1 of CIAC Rules of Procedure codifies the principle that CIAC has original and exclusive jurisdiction over construction disputes, even if the contract specifies another arbitral forum such as ICC. The landmark decision in Hutama-Rsea v. Citra Metro Manila Tollways established that CIAC jurisdiction is non-waivable by contract language selecting another forum. CIAC statutory jurisdiction supersedes contract forum selection.",
+        "takeaway": "CIAC has original and exclusive jurisdiction over construction disputes regardless of contract forum selection (e.g., ICC)—CIAC statutory jurisdiction cannot be waived by contract language."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ea3ab809b1217a0b119633ae94e450534418ac100cb6131db5b2dbb447d855e2"
+    },
+    {
+      "question_id": "31aa1e8f-a81a-4fd3-971d-89d1bfe09ff5",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "A construction contract does not contain an arbitration clause. A dispute arises and one party proposes CIAC arbitration to the other. Can CIAC assert jurisdiction if both parties later agree to submit the dispute to CIAC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, CIAC jurisdiction requires an arbitration clause in the original contract, not post-dispute agreements, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Yes, CIAC can assert jurisdiction based on the post-dispute arbitration agreement, satisfying the third requisite (agreement to arbitrate)"
+        },
+        {
+          "id": "c",
+          "text": "Only if the dispute is resolved before the agreement is signed, which is not a standard practice"
+        },
+        {
+          "id": "d",
+          "text": "No, because regular court litigation must commence first, which is a misunderstanding of arbitration processes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. The dispute timing is not a prerequisite; the agreement requisite is satisfied by consent to arbitration.",
+        "d": "Incorrect. Court litigation need not commence for CIAC jurisdiction; the three requisites are independent of court process.",
+        "correct": "The third requisite for CIAC jurisdiction is 'agreement by the parties to submit the dispute to arbitration.' This agreement can be established through an arbitration clause in the original contract or through a separate agreement after the dispute arises. If both parties later agree to CIAC arbitration, the agreement requisite is satisfied and CIAC can assert jurisdiction.",
+        "takeaway": "CIAC jurisdiction's third requisite (agreement to arbitrate) can be satisfied by post-dispute written agreement—it does not require an original contract arbitration clause."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9e1223b67b91ce5cb737331f7212bfca74fdd3c39ce137d65cb66c3bf6085925"
+    },
+    {
+      "question_id": "fc9eedd7-b22d-4e0f-a030-7474f7cfd0dc",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "A CIAC arbitral tribunal issues an award in favor of the contractor for 5 million pesos in additional costs. The award is rendered on March 1. On what date does the award become immediately executory if no temporary restraining order (TRO) or preliminary injunction is issued?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Immediately on March 1, the award is executory"
+        },
+        {
+          "id": "b",
+          "text": "After the arbitrators sign the award, which is typically 30 days after issuance"
+        },
+        {
+          "id": "c",
+          "text": "Immediately upon receipt by the parties (March 1)"
+        },
+        {
+          "id": "d",
+          "text": "Only after all appeal deadlines have passed, typically 60 days later"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "Incorrect. The signing timeline is not the controlling factor; the 15-day receipt rule controls executability.",
+        "d": "Incorrect. CIAC awards are executory before appeal deadlines expire; appeal does not suspend executability unless a TRO is issued.",
+        "correct": "Per EO 1008 Sec. 19 and CIAC Rules, a CIAC arbitral award is immediately executory upon receipt by the parties, unless a temporary restraining order or preliminary injunction is issued by a court. This fast-track executability is a feature of arbitration designed to provide finality.",
+        "takeaway": "A CIAC award becomes immediately executory 15 days after receipt by the parties unless a court issues a temporary restraining order or preliminary injunction."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a320fb853f50565ea93a55ac1375e3899f9793706b811f28a684afeb89d8642d"
+    },
+    {
+      "question_id": "cbe85002-2709-4141-80d5-c3a28e0f9d87",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "A CIAC tribunal consists of how many arbitrators under the standard CIAC Rules of Procedure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One arbitrator who is jointly selected by the parties, ensuring neutrality and mutual agreement"
+        },
+        {
+          "id": "b",
+          "text": "Two arbitrators, one selected by each party, which can lead to balanced representation of interests"
+        },
+        {
+          "id": "c",
+          "text": "Three arbitrators, unless the parties agree otherwise (typically one selected by each party and a third neutral chair)"
+        },
+        {
+          "id": "d",
+          "text": "Five arbitrators, including the CIAC administrator, to provide a comprehensive panel for complex cases"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "Incorrect. Two arbitrators are selected by the parties, but a third chair is added for tribunal composition.",
+        "d": "Incorrect. CIAC administrators do not serve as tribunal arbitrators; the tribunal consists of three independent arbitrators.",
+        "correct": "Under CIAC Rules of Procedure, the standard arbitral tribunal consists of three arbitrators unless the parties agree to a single arbitrator. The composition is typically one arbitrator selected by each party and a third arbitrator (chair) selected by the two party-selected arbitrators or by CIAC if consensus is not reached.",
+        "takeaway": "A CIAC tribunal consists of three arbitrators (one selected by each party, and a neutral chair) unless the parties agree otherwise."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4ca58a8dfce719fe5b2b2736ed0a43b85529f621864aae50d31013f9e1e69c95"
+    },
+    {
+      "question_id": "9beb0a8d-3e8c-4796-ac50-ae0c146b8f8a",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "What are the three requisites for CIAC to acquire jurisdiction over a construction dispute?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The dispute must involve over 10 million pesos, parties must be Philippine citizens, and there must be a written contract specifying arbitration"
+        },
+        {
+          "id": "b",
+          "text": "A dispute arising from or connected with a construction contract, parties involved in construction in the Philippines, and an agreement by the parties to submit the dispute to arbitration"
+        },
+        {
+          "id": "c",
+          "text": "The dispute must be filed in CIAC, the arbitrator must approve jurisdiction, and the owner must agree to arbitration as per the contract terms"
+        },
+        {
+          "id": "d",
+          "text": "The contract must specify CIAC arbitration, the contractor must be licensed by the PRC, and the dispute must involve design defects that affect project completion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Filing alone does not create jurisdiction; the three requisites must be met. The arbitrator does not approve jurisdiction—jurisdiction is established by statute.",
+        "d": "Incorrect. CIAC jurisdiction is not limited to specific contract types or dispute categories; any construction dispute qualifies if the three requisites are met.",
+        "correct": "The three jurisdictional requisites for CIAC are: (1) a dispute arising from or connected with a construction contract, (2) the construction contract was entered into by parties involved in construction in the Philippines, and (3) agreement by the parties to submit the dispute to arbitration (established through the arbitration clause in the contract or later agreement).",
+        "takeaway": "CIAC jurisdiction requires three requisites: a construction contract dispute, parties involved in construction in the Philippines, and agreement to arbitrate (by clause or later written agreement)."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:68e24a0fb2c1c4c5b2c65dbbca6919eaf7864e92380c9371730854518912127d"
+    },
+    {
+      "question_id": "6c92eeb7-83ba-4027-a312-df441bcaf615",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "On what grounds can a CIAC arbitral award be appelead or challenged in court?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any ground; the award can be reviewed de novo by a court, allowing for a complete reassessment of all aspects of the case"
+        },
+        {
+          "id": "b",
+          "text": "Only on limited grounds: grounds under RA 876 Sec. 24: procurement by corruption/fraud/undue means; evident partiality; arbitrator misconduct; award exceeds powers"
+        },
+        {
+          "id": "c",
+          "text": "Only factual errors and disagreements with the arbitrator's reasoning, which may include misinterpretation of evidence or incorrect application of legal principles"
+        },
+        {
+          "id": "d",
+          "text": "Only if the contractor or owner claims hardship or unforeseeability, which must be proven with substantial evidence and documentation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Disagreement with reasoning or fact-finding is not a ground for appeal in arbitration.",
+        "d": "Incorrect. Hardship or unforeseeability claims do not override the award's finality.",
+        "correct": "Per Philippine Arbitration Law and CIAC practice, the grounds for appealing or challenging a CIAC award in court are limited to: (1) excess of arbitral authority, (2) non-compliance with CIAC Rules of Procedure, (3) corruption or fraud, and (4) manifest bias. General factual or legal disagreement is not a ground for appeal; the award's finality is protected.",
+        "takeaway": "CIAC awards can be challenged only on limited grounds: excess of authority, non-compliance with procedure, corruption, or manifest bias—not for factual or legal disagreement."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be6b6d8b44bfb1ae20b236e48cc87e04625290968b51598377ecb1b0bef0cb09"
+    },
+    {
+      "question_id": "8871dd43-1198-4e02-bac6-fb361238a2b9",
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "topic_id": "b9ad6fe8-6944-4a5d-a9a1-28978ac5dd61",
+      "text": "A contractor and owner are in a construction dispute. The contract is silent on dispute resolution. Can they voluntarily agree to CIAC arbitration after the dispute arises?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, CIAC requires an arbitration clause in the original contract; post-dispute agreements cannot create jurisdiction"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if both parties agree to submit to CIAC arbitration in writing, CIAC can assert jurisdiction based on their voluntary agreement"
+        },
+        {
+          "id": "c",
+          "text": "Only if the dispute involves over 50 million pesos in contract value, which is a threshold for certain arbitration cases"
+        },
+        {
+          "id": "d",
+          "text": "Only if they obtain court approval for the post-dispute agreement, which is not typically required for CIAC arbitration"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. No monetary threshold applies to CIAC jurisdiction.",
+        "d": "Incorrect. Court approval is not required for post-dispute arbitration agreements between parties.",
+        "correct": "The third requisite for CIAC jurisdiction is agreement to submit the dispute to arbitration. This agreement does not require an arbitration clause in the original contract; it can be established by a separate written agreement between the parties after the dispute arises. Many construction disputes are resolved through post-dispute CIAC arbitration agreements.",
+        "takeaway": "Post-dispute written agreement to CIAC arbitration is sufficient to establish jurisdiction—the original contract need not contain an arbitration clause."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-021-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8e67a7d55d411e0a00f5de0dd5a040d78a5966a3222ebbacd5ccb743e821a9ca"
+    }
+  ]
+}

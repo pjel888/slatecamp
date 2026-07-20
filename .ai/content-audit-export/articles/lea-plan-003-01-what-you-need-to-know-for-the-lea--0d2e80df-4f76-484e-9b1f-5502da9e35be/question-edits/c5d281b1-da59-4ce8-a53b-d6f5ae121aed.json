@@ -1,97 +1,77 @@
 {
   "question_id": "c5d281b1-da59-4ce8-a53b-d6f5ae121aed",
-  "baseline_hash": "sha256:7227bcd4450f57a1211eaa2529828397ac81ac3772f6c044e04be3196765782d",
+  "baseline_hash": "sha256:2f5aa6137dac45ce0ca054009ddb32d616c2a12e1de92694123ffb725360d3f2",
   "action": "replace",
-  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-plan-003-01-what-you-need-to-know-for-the-lea.",
-  "approved_by": "codex-local-source-audit-batch-021",
-  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "reason": "council-remediation-2026-07-20/agent-P override of prior batch-021 edit. The original linked question's marked-correct option C ('15-20% of project cost') is factually wrong. RA 10884 Section 2(b) amending RA 7279 Section 18 sets socialized housing at 15% (subdivision) or 5% (condominium) of total area OR project cost at developer option; the original 20% applied only under RA 7279 before amendment. The prior batch-021 edit sidestepped the issue by retreating to RA 7279's 20%; this council pass instead preserves the RA 10884 framing and corrects the percentage to the externally verified statutory figure.",
+  "approved_by": "agent-P-planning-council-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
     "parent_article_slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "PD 957 IRR, BP 220 Revised IRR, and RA 7279 housing provisions checked from local raw PDFs",
-    "checked_markdown_lines": [
-      "PD 957 refined markdown lines 100-240",
-      "BP 220 refined markdown lines 130-560",
-      "RA 7279 refined markdown lines 70-190"
-    ],
-    "checked_sources": [
+    "support_status": "externally_verified_rewrite",
+    "source_locator": "RA 10884 Section 2(b) amending RA 7279 Section 18 (Balanced Housing Development). External verification via Supreme Court E-Library and Lawphil.",
+    "external_sources": [
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.pdf",
-        "sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
-        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
-        "locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+        "citation": "RA 10884 Section 2(b), amending RA 7279 Section 18",
+        "url": "https://lawphil.net/statutes/repacts/ra2016/ra_10884_2016.html"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.md",
-        "sha256": "sha256:5a118e6b9e678d495ffac7a715d08deb0787e5905105fe25b9847cb226af7080",
-        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
-        "locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+        "citation": "Supreme Court E-Library RA 10884",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/70219"
       },
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
-        "sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
-        "source_id": "bp220-revised-irr-2008-local",
-        "locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
-        "sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
-        "source_id": "bp220-revised-irr-2008-local",
-        "locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
-      },
-      {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
-        "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
-        "source_id": "ra7279-urban-development-housing-act-local",
-        "locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
-        "sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
-        "source_id": "ra7279-urban-development-housing-act-local",
-        "locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
+        "citation": "DHSUD HLURB Board Resolution No. 965 s. 2017",
+        "url": "https://dhsud.gov.ph/wp-content/uploads/Laws_Issuances/00_Archive/HLURB/Board_Resolutions/R-965%2520s.%25202017.pdf"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Agent-P council pass: replaces prior batch-021 source-scope retrenchment with externally verified RA 10884 figure (15% subdivision / 5% condominium)."
   },
   "proposed": {
-    "text": "How does the checked RA 7279 source frame balanced housing for proposed subdivision projects?",
+    "text": "Under RA 10884 (Balanced Housing Development Program, 2016), which amended Section 18 of RA 7279, what socialized-housing allocation applies to a SUBDIVISION project?",
     "options": [
       {
         "id": "a",
-        "text": "At least 5 percent of project cost only"
+        "text": "At least 5 percent of total subdivision area or project cost, at the developer's option"
       },
       {
         "id": "b",
-        "text": "At least 10 percent of saleable area only"
+        "text": "At least 15 percent of total subdivision area or project cost, at the developer's option"
       },
       {
         "id": "c",
-        "text": "At least 20 percent of total subdivision area or total subdivision project cost, at the developer option"
+        "text": "At least 20 percent of total subdivision area or project cost, at the developer's option"
       },
       {
         "id": "d",
-        "text": "A fixed number of units unrelated to area or cost"
+        "text": "At least 30 percent of total subdivision area or project cost, at the developer's option"
       }
     ],
-    "correct_option_id": "c",
+    "correct_option_id": "b",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The checked RA 7279 text states at least 20 percent of total subdivision area or total subdivision project cost, at the developer option.",
-    "explanation": "This batch did not rely on later laws for a different percentage.",
-    "code_citation": "RA 7279 refined markdown lines 181-187",
-    "bloom_level": "apply",
+    "rationale": {
+      "a": "Wrong. 5% applies to CONDOMINIUM projects under RA 10884, not subdivisions.",
+      "b": "Correct. RA 10884 Section 2(b) reduced the subdivision (horizontal) requirement from the original RA 7279 figure of 20% to at least 15% of total subdivision area or project cost at the developer's option.",
+      "c": "Wrong. 20% was the original RA 7279 (1992) requirement; RA 10884 (2016) reduced it to 15% for subdivisions.",
+      "d": "Wrong. 30% is the PD 1216 / PD 957 non-buildable open-space requirement for subdivisions of 1 hectare or more, not a balanced-housing figure.",
+      "correct": "RA 10884 (2016), Section 2(b) amending RA 7279 Section 18, requires owners/developers of subdivision projects to develop an area for socialized housing equivalent to at least 15 percent of the total subdivision area or project cost, at the option of the developer. For condominium projects the figure is 5%.",
+      "takeaway": "RA 10884 reduced the subdivision balanced-housing share from RA 7279's 20% to 15% (and set condominiums at 5%). The figure is fixed at 15% for subdivisions, not '15-20%'."
+    },
+    "explanation": "RA 10884 Section 2(b) amends RA 7279 Section 18: subdivisions = at least 15% of total area or project cost; condominiums = at least 5%. Verified against Lawphil and the Supreme Court E-Library.",
+    "code_citation": "RA 10884 (2016), Section 2(b) amending RA 7279 Section 18",
+    "bloom_level": "remember",
     "application_context": "code_interpretation",
     "practice_context": [
-      "housing law",
-      "balanced housing"
+      "balanced-housing",
+      "RA 10884",
+      "socialized-housing"
     ],
-    "difficulty": 0.66,
-    "is_assessment": false,
-    "model_id": "BATCH-021-housing-004"
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
   }
 }

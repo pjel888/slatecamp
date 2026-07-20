@@ -22,5 +22,53 @@
       "fundamentals-strength",
       "bsi-design"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which item is a serviceability concern rather than a pure strength comparison?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The spelling of the member mark."
+      },
+      {
+        "id": "b",
+        "text": "Excessive deflection or vibration under use conditions."
+      },
+      {
+        "id": "c",
+        "text": "The color of the structural drawing sheet."
+      },
+      {
+        "id": "d",
+        "text": "The room name printed beside the beam."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "The spelling of the member mark. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Excessive deflection or vibration under use conditions. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+      "c": "The color of the structural drawing sheet. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "The room name printed beside the beam. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Excessive deflection or vibration under use conditions. Supported by bsi-design.",
+      "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-design",
+      "checked_sources": [
+        "fundamentals-strength",
+        "bsi-design"
+      ]
+    },
+    "explanation": "Excessive deflection or vibration under use conditions. Supported by the Batch 144 local source boundary: bsi-design.",
+    "code_citation": "bsi-design",
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.9,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-005-02-010"
   }
 }

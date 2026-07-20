@@ -8,36 +8,33 @@
       "question_id": "18c651c2-e5ba-4111-896a-1250346043e0",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "Architect B bids at a significantly lower fee than Architect A specifically to 'undercut' and win the client. This violates:",
+      "text": "Which conduct does Section 5-b prohibit?",
       "options": [
         {
           "id": "a",
-          "text": "Article II, Section 3.3 regarding pro-bono work"
+          "text": "Knowingly competing with other architects on the basis of differences in professional charges"
         },
         {
           "id": "b",
-          "text": "Article VI, Section 7.2 regarding competition on professional charges"
+          "text": "Charging any professional fee at all"
         },
         {
           "id": "c",
-          "text": "Article VI, Section 7.9 regarding supervision"
+          "text": "Serving a small civic project without compensation"
         },
         {
           "id": "d",
-          "text": "No ethical provision"
+          "text": "Sharing technical information with colleagues"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The violation is specifically about undercutting to win a commission, which is covered by Section 7.2 rather than general provisions.",
-        "c": "Section 7.9 addresses signing and sealing work without supervision, which is not the issue in fee bidding.",
-        "d": "Section 7.2 explicitly prohibits fee-based competition among architects to protect professional standards.",
-        "correct": "Article VI, Section 7.2 explicitly states: 'The Architect shall not knowingly compete with other Architects on the basis of difference of professional charges.'",
-        "takeaway": "Fee competition degrades the profession; architects should compete on merit and approach, not price."
+        "correct": "Section 5-b bars fee-based competition.",
+        "takeaway": "Section 5-b bars fee-based competition."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.2",
@@ -51,43 +48,40 @@
       "model_id": "ALE-PRAC-ETH-005-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.972888+00:00",
       "content_hash": "sha256:b6f51012768242b40568847288496e9a5fded861d7841286e7a26709e3842a67"
     },
     {
       "question_id": "d6f31936-d385-41f8-a12b-3475c44006bb",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "An architect reviews a structural redesign by an engineer and then seals the revised structural drawings. According to Article VI, Section 7.9, this is:",
+      "text": "How should this batch cite the signature-and-seal rule?",
       "options": [
         {
           "id": "a",
-          "text": "Permissible because the architect reviewed them and found no errors"
+          "text": "Use verified UAP Code Section 5-i language unless another checked local source is added"
         },
         {
           "id": "b",
-          "text": "Permissible because the architect is project manager and has overall responsibility"
+          "text": "Use stale Article VI numbering from memory"
         },
         {
           "id": "c",
-          "text": "Prohibited because the structural drawings were prepared by an engineer, not under the architect's direct supervision"
+          "text": "Avoid any source locator"
         },
         {
           "id": "d",
-          "text": "Permissible if the architect disclaims responsibility and notes the engineer's involvement"
+          "text": "Treat it as a supplier-discount rule"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Administrative review as a project lead does not create the direct supervision of the design process required for the seal.",
-        "b": "Project management is oversight, while the Code requires direct supervision of the technical preparation of the documents.",
-        "d": "Disclaimers do not convert improper sealing into proper practice; architects sign architectural work only.",
-        "correct": "Section 7.9 requires work to be 'done under his direct personal supervision.' Reviewing an engineer's independent design does not satisfy this.",
-        "takeaway": "Direct supervision of design is not project management review. Architects cannot seal other disciplines' work simply by being lead."
+        "correct": "The checked local source gives Section 5-i.",
+        "takeaway": "The checked local source gives Section 5-i."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.9",
@@ -101,43 +95,40 @@
       "model_id": "ALE-PRAC-ETH-005-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.969421+00:00",
       "content_hash": "sha256:9729c079e473981f4aaba53ee4a0ab867a62213fa31ce5d452d4721bd967259f"
     },
     {
       "question_id": "1eea40c9-19b5-49cd-8de5-4b29275355b5",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "SPP Document 200, Article VI, Section 7.9 states that an architect shall NOT affix signature and seal to professional documents:",
+      "text": "What does Section 5-i prohibit?",
       "options": [
         {
           "id": "a",
-          "text": "Prepared by consultants, regardless of review, unless explicitly authorized by the governing body"
+          "text": "Affixing signature and seal to plans or professional documents prepared by others and not under direct personal supervision"
         },
         {
           "id": "b",
-          "text": "Prepared by other persons or entities not done under the architect's direct personal supervision"
+          "text": "Mentoring young aspirants"
         },
         {
           "id": "c",
-          "text": "Unless the architect has obtained liability insurance covering all potential errors and omissions"
+          "text": "Charging a client fee"
         },
         {
           "id": "d",
-          "text": "That contain minor errors, which could lead to significant project delays or cost overruns"
+          "text": "Giving contractors clear contract documents"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Consultant work CAN be sealed if done under the architect's direct supervision of the design process.",
-        "c": "Insurance is a risk management tool, not the legal determinant of sealing authority under SPP 200.",
-        "d": "The core requirement is direct supervision of the design process, regardless of whether the outcome is perfect.",
-        "correct": "Article VI, Section 7.9 (formerly Section 5-i) explicitly states: 'The Architect shall not affix his signature and seal to any plans or professional documents prepared by other persons or entities not done under his direct personal supervision.'",
-        "takeaway": "The seal requires personal supervision of the design process, not just a final review of a finished product."
+        "correct": "Section 5-i states the signature-and-seal restriction.",
+        "takeaway": "Section 5-i states the signature-and-seal restriction."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.9",
@@ -151,43 +142,40 @@
       "model_id": "ALE-PRAC-ETH-005-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.970837+00:00",
       "content_hash": "sha256:72471ef878a848bb2bca31b2e15312e22356041ed6a740798e0f699a416318bb"
     },
     {
       "question_id": "f0268fbe-ffb4-44f6-b156-f237bd128c04",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "A client asks an architect to sign and seal as-built drawings of a building designed by another professional. What is the architect's proper course of action?",
+      "text": "A client asks an architect to sign as-built drawings prepared elsewhere. What is the source-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "Sign and seal since they document the physical building rather than original design, provided that the architect verifies the accuracy of the drawings"
+          "text": "Do not sign or seal unless the documents were done under the architect direct personal supervision"
         },
         {
           "id": "b",
-          "text": "Decline to sign and seal because the documents were not prepared under the architect's direct personal supervision"
+          "text": "Sign after a quick visual scan"
         },
         {
           "id": "c",
-          "text": "Sign only if the architect performs a visual inspection and confirms compliance with all relevant codes and standards"
+          "text": "Sign because the owner requested it"
         },
         {
           "id": "d",
-          "text": "Sign and seal if the client provides indemnification, ensuring that the architect is protected from any future liabilities"
+          "text": "Sign if the fee is low"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Signing as-built drawings prepared by others still implies professional responsibility for work not supervised by the architect.",
-        "c": "Visual inspection after the fact does not constitute the 'direct personal supervision' of the preparation process required.",
-        "d": "Indemnification cannot override the Code of Ethics; sealing unsupervised work remains a violation regardless of civil agreements.",
-        "correct": "Article VI, Section 7.9 strictly prohibits an architect from affixing their seal to documents not prepared under their direct personal supervision.",
-        "takeaway": "The architect must decline to seal drawings they did not supervise, as sealing them constitutes professional malpractice."
+        "correct": "Section 5-i controls this scenario.",
+        "takeaway": "Section 5-i controls this scenario."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.9",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-ETH-005-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.968722+00:00",
       "content_hash": "sha256:80971003fc9f75448f6c35cebb7acc46eeebe98cc7d94b76b9f8e071d4540ecc"
     },
     {
       "question_id": "fdb051f2-b700-42fe-961c-b5a4dab71ae6",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "A junior staff member (licensed architect) prepares designs under a senior architect's supervision. The senior architect then signs and seals the drawings. This arrangement:",
+      "text": "A licensed junior prepares drawings under the direct personal supervision of the signing architect. What does the source allow you to say?",
       "options": [
         {
           "id": "a",
-          "text": "Violates Article VI, Section 7.9, which prohibits delegation of signing authority"
+          "text": "The key issue is whether the work was done under the signing architect direct personal supervision"
         },
         {
           "id": "b",
-          "text": "Is permissible because the work was done under the architect's direct personal supervision"
+          "text": "All staff-prepared drawings are automatically forbidden"
         },
         {
           "id": "c",
-          "text": "Requires the junior architect to also sign, ensuring accountability at all levels"
+          "text": "No supervision is ever needed"
         },
         {
           "id": "d",
-          "text": "Is acceptable only if the project is small and does not exceed a certain budget threshold"
+          "text": "Only the contractor may sign"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Section 7.9 allows signing work prepared by staff if done under the supervising architect's direct direction.",
-        "c": "The junior architect's signature is often good practice but is not a Code requirement for the senior's seal.",
-        "d": "The requirement for direct supervision applies regardless of building size or project magnitude.",
-        "correct": "Section 7.9 prohibits signing work 'not done under his direct personal supervision.' If the junior staff worked under the senior architect's direction and decision-making, the senior architect CAN sign.",
-        "takeaway": "Direct supervision means the architect directed the process and made key decisions, not that they personally executed all drawings."
+        "correct": "Section 5-i turns on direct personal supervision.",
+        "takeaway": "Section 5-i turns on direct personal supervision."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.9",
@@ -251,43 +236,40 @@
       "model_id": "ALE-PRAC-ETH-005-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.970114+00:00",
       "content_hash": "sha256:364e6eb5aa6c388bbde34a2d5e4c6bdacbc50f2a10bf375fadf151369e30654f"
     },
     {
       "question_id": "11b4b876-fbab-4b5c-a67f-6c98c79807b2",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "A contractor designs a building and asks an architect to review and 'approve' the design before sealing it. This arrangement is:",
+      "text": "What does Section 5-c protect?",
       "options": [
         {
           "id": "a",
-          "text": "Permissible because the architect reviewed it, provided the architect's role is clearly documented"
+          "text": "Commissions known to be previously endowed to another architect, even if still in negotiation"
         },
         {
           "id": "b",
-          "text": "Permissible only if the fee is high enough to justify the architect's involvement"
+          "text": "Hidden supplier commissions"
         },
         {
           "id": "c",
-          "text": "Prohibited because the design was not prepared under the architect's direct personal supervision"
+          "text": "Paid product endorsements"
         },
         {
           "id": "d",
-          "text": "Permissible if the architect assumes liability, including all associated risks and responsibilities"
+          "text": "Guaranteed construction estimates"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Post-hoc review is insufficient to warrant the architect's seal; the architect must direct the design process itself.",
-        "b": "The level of compensation does not cure the lack of professional supervision during the design phase.",
-        "d": "The architect cannot legally seal work not under their supervision; assuming liability does not make the act valid under the Code.",
-        "correct": "Section 7.9 requires work to be done under the architect's 'direct personal supervision.' Post-hoc approval of an independent design does not meet this standard.",
-        "takeaway": "Review and approval of finished designs is not direct supervision. Direct supervision requires involvement in the design process itself."
+        "correct": "Section 5-c covers endowed commissions, including negotiation.",
+        "takeaway": "Section 5-c covers endowed commissions, including negotiation."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.9",
@@ -301,43 +283,40 @@
       "model_id": "ALE-PRAC-ETH-005-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.967992+00:00",
       "content_hash": "sha256:c04c9f9ed75bf9e40a9ccff65df98ccb645416837ac9a0efc76687c0059626c3"
     },
     {
       "question_id": "49651da8-babb-409b-857b-366293c68070",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "An architect serves as a juror for a competition they helped prepare. According to SPP 200, Article VI, Section 7.4, this involves:",
+      "text": "What conflict appears when an architect helps formulate an architectural competition program and then enters as a competitor?",
       "options": [
         {
           "id": "a",
-          "text": "No conflict of interest, as long as the architect does not influence the outcome"
+          "text": "Section 5-d conflict with competition role"
         },
         {
           "id": "b",
-          "text": "A conflict because architects shall not act as juror when they have reviewed or assisted in the preparation of any entry"
+          "text": "Section 4-b market discount"
         },
         {
           "id": "c",
-          "text": "A violation only if they rank their own entry high, which would demonstrate bias"
+          "text": "Section 1-e paid endorsement"
         },
         {
           "id": "d",
-          "text": "A technical violation but not a material ethics issue, unless it affects the competition's integrity"
+          "text": "Section 2-d conditional estimate"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Helping prepare an entry and then judging it creates an inherent conflict that undermines the competition's integrity.",
-        "c": "The violation exists categorically due to the dual role; the actual ranking outcome is irrelevant to the ethical breach.",
-        "d": "Section 7.4 prohibits the dual role as a substantive ethics issue to ensure fair and impartial competition.",
-        "correct": "Article VI, Section 7.4 (formerly Section 5-d) prohibits an architect from acting as a juror if they have assisted in the preparation of any competition design entered.",
-        "takeaway": "Architectural competitions require independence; jurors cannot also be involved with competition entries."
+        "correct": "Section 5-d bars competing when the architect has direct relations with program formulation or adviser/juror roles.",
+        "takeaway": "Section 5-d bars competing when the architect has direct relations with program formulation or adviser/juror roles."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.4",
@@ -351,43 +330,40 @@
       "model_id": "ALE-PRAC-ETH-005-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.972214+00:00",
       "content_hash": "sha256:37d4fa7481a4fe5876438f077604078141dae8cd868f79b638705fa863a60fa3"
     },
     {
       "question_id": "70f4e3e4-9c96-4079-b2aa-34204b2965c6",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "An architect delegates structural and MEP redesign to engineers. At the project end, the architect seals ALL drawings. Per Section 7.9, this is:",
+      "text": "What should a new architect do for additions or remodeling of a structure previously undertaken by another architect?",
       "options": [
         {
           "id": "a",
-          "text": "Permissible because the architect is project lead, assuming full responsibility for all design aspects"
+          "text": "Notify the previous architect, even if the owner is no longer the same"
         },
         {
           "id": "b",
-          "text": "Permissible for architectural drawings only; engineers must sign their own disciplines"
+          "text": "Always claim full original design credit"
         },
         {
           "id": "c",
-          "text": "Permissible if the architect is multi-licensed, holding valid credentials in all relevant engineering fields"
+          "text": "Ignore previous authorship because it is renovation"
         },
         {
           "id": "d",
-          "text": "Permissible due to overall project responsibility, provided all parties agree in writing"
+          "text": "Solicit paid advertisements"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Administrative project leadership does not authorize the sealing of work from other technical disciplines.",
-        "c": "The Code separates sealing authority by discipline; even with multiple licenses, work must be prepared under direct supervision.",
-        "d": "Overall project responsibility is distinct from the technical supervision of design required for document sealing.",
-        "correct": "Article VI, Section 7.9 prohibits sealing documents prepared by others without direct personal supervision. Each professional signs their own discipline.",
-        "takeaway": "Each professional must sign their own design work; project coordination does not create direct supervision of other disciplines."
+        "correct": "Section 5-f gives the successor-work notice rule.",
+        "takeaway": "Section 5-f gives the successor-work notice rule."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.9",
@@ -401,43 +377,40 @@
       "model_id": "ALE-PRAC-ETH-005-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.967106+00:00",
       "content_hash": "sha256:72aa6ff79256f0ee5c9412d5c97ba47cde5e3ab4eeb46ec9744c9e6a0056593f"
     },
     {
       "question_id": "7350b58c-9c9c-48c0-9183-99c4fddb117c",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "Architect X designed a building. Five years later, Architect Y is hired for an addition. Per SPP 200, Article VI, Section 7.6, Architect Y should:",
+      "text": "What does Section 5-g prohibit?",
       "options": [
         {
           "id": "a",
-          "text": "Proceed immediately without contact, assuming no legal or ethical obligations to the original architect"
+          "text": "Knowingly false or malicious injury to another architect reputation, prospects, or practice"
         },
         {
           "id": "b",
-          "text": "Duly notify Architect X of the contemplated project"
+          "text": "Constructive professional criticism within limits"
         },
         {
           "id": "c",
-          "text": "Obtain written permission from Architect X, ensuring that all professional courtesies and legal requirements are met"
+          "text": "Fair compensation of employees"
         },
         {
           "id": "d",
-          "text": "Coordinate all decisions with Architect X, maintaining a collaborative approach to the project"
+          "text": "Technical information sharing"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Section 7.6 requires notification as a professional courtesy, regardless of whether the original architect is still involved.",
-        "c": "Section 7.6 requires notification, not permission; the original architect cannot veto a successor's commission.",
-        "d": "While notification is required, binding coordination of all design decisions is not mandated by the Code.",
-        "correct": "Article VI, Section 7.6 (formerly Section 5-f) prohibits undertaking commissions for additions or remodeling of structures by another architect without 'duly notifying him of the contemplated project.'",
-        "takeaway": "Professional courtesy requires notification of successor projects even when the Owner is no longer the same."
+        "correct": "Section 5-g protects professional reputation, prospects, and practice from false or malicious injury.",
+        "takeaway": "Section 5-g protects professional reputation, prospects, and practice from false or malicious injury."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.6",
@@ -451,43 +424,40 @@
       "model_id": "ALE-PRAC-ETH-005-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.965993+00:00",
       "content_hash": "sha256:a21a68afb36a1d7ec7ae337566ffe23d30f1d5f158dde39fc278e6756e509c05"
     },
     {
       "question_id": "ad24c745-7468-4929-ae0f-a76d724989ff",
       "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
       "topic_id": "73d4fa9e-d17e-4746-945f-fa726c9ffe79",
-      "text": "According to SPP Document 200, Article VI, Section 7.2, an architect shall not compete with other architects on the basis of:",
+      "text": "Which duty is source-supported for employees and young aspirants?",
       "options": [
         {
           "id": "a",
-          "text": "Professional qualifications and experience, which are considered personal attributes and not a basis for competition"
+          "text": "Suitable working conditions, competent service, adequate and just compensation, mentorship, and information sharing"
         },
         {
           "id": "b",
-          "text": "Difference of professional charges or fees"
+          "text": "No training and no compensation"
         },
         {
           "id": "c",
-          "text": "Design innovation and creativity, as these are subjective and vary greatly between projects"
+          "text": "Paid advertising of the office"
         },
         {
           "id": "d",
-          "text": "Specialized expertise, which is often unique to individual practitioners and not a common competitive factor"
+          "text": "Free supplier engineering services"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Legitimate competitive factors include qualifications and experience, which distinguish architects by capability.",
-        "c": "Design innovation is a professional merit that architects are encouraged to use as a basis for competition.",
-        "d": "Specialized expertise is an encouraged competitive basis that differentiates professionals through experience.",
-        "correct": "Article VI, Section 7.2 (formerly Section 5-b) prohibits knowingly competing with other architects on the basis of professional charges.",
-        "takeaway": "Architects should compete on qualifications, innovation, and expertise—not price."
+        "correct": "Sections 5-j and 5-k cover employee treatment, mentorship, and information sharing.",
+        "takeaway": "Sections 5-j and 5-k cover employee treatment, mentorship, and information sharing."
       },
       "explanation": null,
       "code_citation": "SPP Doc 200, Article VI, Section 7.2",
@@ -501,7 +471,7 @@
       "model_id": "ALE-PRAC-ETH-005-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.971541+00:00",
       "content_hash": "sha256:34b75d68bd34d59c81ddcf766078a8950240c1369231c0f616732a6e958269bd"
     }
   ]

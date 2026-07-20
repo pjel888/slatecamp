@@ -1,0 +1,1724 @@
+{
+  "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:5123b914237b4f12f22512429ce3103a233020bb20499ff5c4793accc25639ab",
+  "question_count": 39,
+  "questions": [
+    {
+      "question_id": "9a826a27-ed09-4432-8ac3-6af6b1547991",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per Sec. 811, what is the minimum required rate of artificial ventilation for rooms located above grade (offices, stores, restaurants, markets, factories, workshops, machinery rooms)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 air change per hour"
+        },
+        {
+          "id": "B",
+          "text": "2 air changes per hour"
+        },
+        {
+          "id": "C",
+          "text": "3 air changes per hour"
+        },
+        {
+          "id": "D",
+          "text": "6 air changes per hour"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The '3 UP, 6 DOWN' mnemonic governs Sec. 811's artificial ventilation rates. For rooms above grade, the minimum is 3 air changes per hour (ACH). This is the baseline rate for occupied spaces that cannot achieve natural ventilation through direct exterior openings. The ACH approach is conceptually simpler than the ASHRAE 62.1 cfm/person methodology used in the USA and is the dominant framework for Philippine board exam questions.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:807cbb92637e89415b862e841e2b1c9e0c5080167c226d468be7a44b154fb894"
+    },
+    {
+      "question_id": "680174d1-0ee9-4b1f-80ca-2c89d01a21d5",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 309.9, what additional certificate may be required when there is a CHANGE IN USE of a building or portion thereof?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A new Building Permit, which must be obtained prior to any change in use to ensure compliance with updated regulations"
+        },
+        {
+          "id": "b",
+          "text": "A new or additional Certificate of Occupancy"
+        },
+        {
+          "id": "c",
+          "text": "A Fire Safety Clearance Certificate, which is necessary to address any new fire hazards introduced by the change"
+        },
+        {
+          "id": "d",
+          "text": "An amended Environmental Compliance Certificate, reflecting the environmental impact of the new use"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This provision intersects with Rule VII, Sec. 702 (Change of Use) which requires NBC Form No. B-12 and a Certificate of Use for existing buildings. For new buildings undergoing a change of use after initial occupancy, the new CO under Sec. 309.9 is the mechanism. The change of occupancy provisions ensure that occupancy classification always matches actual use.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.005539+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb3560f0f251cc166710aad08d83d22e947e33254da8e8968abcc235c3cc5674"
+    },
+    {
+      "question_id": "ea6aac54-af21-4cd9-a6fd-f4d79f3bde8e",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What TWO criteria does the Building Official use to determine whether a proposed change of use is 'less hazardous'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structural integrity and cost of compliance"
+        },
+        {
+          "id": "b",
+          "text": "Life risk AND fire risk"
+        },
+        {
+          "id": "c",
+          "text": "Floor area and occupant load"
+        },
+        {
+          "id": "d",
+          "text": "Building age and construction type"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The dual-criteria assessment (life risk + fire risk) is a frequently missed detail. A change might reduce fire risk but increase life risk (e.g., adding a rooftop bar to a residential building increases occupant density and egress demands), requiring full code compliance. Candidates must consider both factors, not just one.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:993923948ae93d167a08b202a84064e6767f8d483f3221c928bf00403c54ec13"
+    },
+    {
+      "question_id": "bf891ad7-eb6f-4c4c-975e-ba208898b586",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A former warehouse (Group E-2) is being converted to a grocery store (Group G, mercantile). What is the most likely outcome under Sec. 702?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full code compliance is required because mercantile is more hazardous, necessitating a comprehensive review"
+        },
+        {
+          "id": "b",
+          "text": "The change may be approved as less hazardous with a Certificate of Use — grocery stores have lower fire risk and lower occupant density risk than moderate-hazard storage"
+        },
+        {
+          "id": "c",
+          "text": "The change is automatically approved with no application needed, simplifying the conversion process"
+        },
+        {
+          "id": "d",
+          "text": "A new Certificate of Occupancy is required instead of a Certificate of Use, reflecting the change in building use"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The hazard hierarchy is: High-hazard (H) > Industrial/Storage (F/E) > Educational/Institutional/Residential (C/D/B) > Low-cost Residential (A) > Mercantile (G) > Miscellaneous (J). Moving DOWN this scale (toward J) is generally toward less hazardous. Moving UP is toward more hazardous and requires full compliance.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c26c3b67ec9864aeed4c4ca1576f67cfac0011fe0819d1d776b45d2642e55c2"
+    },
+    {
+      "question_id": "90114e42-fe3a-482c-a3cb-9bd51d61d384",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A mixed-occupancy building has ground-floor commercial with upper-floor residential. A change of use affecting only the ground floor is proposed. Under PD 1096, which provision MUST also be considered alongside Sec. 702?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sec. 701 (Occupancy Classification) only, without considering the interaction between existing and proposed occupancies"
+        },
+        {
+          "id": "b",
+          "text": "Sec. 703 (Mixed Occupancy) — to determine how the new occupancy combination is classified and separated"
+        },
+        {
+          "id": "c",
+          "text": "Sec. 708 (Group A Dwellings) — because any change triggers residential requirements regardless of floor affected"
+        },
+        {
+          "id": "d",
+          "text": "Sec. 704 (Location on Property) — because the building footprint may change due to the new ground floor use"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mixed-occupancy buildings are among the most complex compliance scenarios. The interaction between Sec. 702 (change of use) and Sec. 703 (mixed occupancy classification) can create layered requirements. Option A (Sec. 701 only) is incomplete — Sec. 703 specifically governs mixed-occupancy buildings. Options C and D introduce irrelevant sections.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7542540037b70769ca8ab9229bc2d8af6ffca147482a584930524e56e22bcfd2"
+    },
+    {
+      "question_id": "c7878ba7-40b4-47c5-81ea-88834dbb8ecf",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 702, when a change to a MORE HAZARDOUS use is proposed, what must occur BEFORE the Building Official may approve?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Building Official must issue a Certificate of Use regardless of compliance, which is not standard practice"
+        },
+        {
+          "id": "b",
+          "text": "The building must fully comply with all requirements of the National Building Code for the new occupancy group"
+        },
+        {
+          "id": "c",
+          "text": "Only a site inspection is required — no compliance is needed, which contradicts safety protocols"
+        },
+        {
+          "id": "d",
+          "text": "The owner must pay a surcharge equivalent to the change-of-use permit fee, which is a financial requirement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mnemonic: 'LESS = YES, MORE = COMPLY.' Less hazardous new use → YES, Building Official may approve with Certificate of Use. More hazardous new use → must COMPLY fully with new occupancy code before approval. This binary rule governs the entire change-of-use decision framework.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:55eaefd68ea406b2aa1f07544e8df90b04f7499782eb47fdffecbb1aca657700"
+    },
+    {
+      "question_id": "a5c718e1-d6c3-4464-972d-5fbdb95226b4",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What NBC form is used to apply for a change of occupancy under PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NBC Form No. B-1 (Building Permit Application), typically used for new constructions"
+        },
+        {
+          "id": "b",
+          "text": "NBC Form No. B-5 (Fencing Permit), which is unrelated to occupancy changes"
+        },
+        {
+          "id": "c",
+          "text": "NBC Form No. B-12 (Application for Change of Use or Occupancy)"
+        },
+        {
+          "id": "d",
+          "text": "NBC Form No. B-7 (Demolition Permit), applicable when structures are to be removed"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mnemonic: 'B-12 for Change' — the form number B-12 corresponds to the number of letters in 'change of use' if you count creatively (or simply: B-12 is the Change of Use form). Option A (B-1) is the most common distractor — it is the new construction permit application, not the change-of-use form.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c29a22e8d4ea8b829c630049f438b9ef4279ef23c58f436081fd48f9e174f4dd"
+    },
+    {
+      "question_id": "737c1f58-f588-401b-a1a5-22858e146f90",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The IBC Section 3411.4 requires accessibility compliance for changes of occupancy. What does the IBC require for a COMPLETE change of occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No accessibility compliance is required for existing buildings, unless they undergo significant structural alterations"
+        },
+        {
+          "id": "b",
+          "text": "At least one accessible entrance, an accessible route to the altered area, and at least one accessible toilet"
+        },
+        {
+          "id": "c",
+          "text": "Full accessibility upgrades throughout the entire building, including all floors and common areas"
+        },
+        {
+          "id": "d",
+          "text": "Accessibility compliance only if the building has more than 3 floors, which is considered a major structure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A is directly contradicted by IBC text. Option C overstates the requirement — only targeted accessibility features (entrance, route, toilet) are mandated, not full building-wide upgrades. Option D introduces a floor count threshold not found in IBC 3411.4.2. This question tests the specific accessibility standard applicable to complete changes of occupancy in the US code.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:622898184129fbf07bb168ad20567e5718cdfd08de66bfccbeab3e184a1b4a87"
+    },
+    {
+      "question_id": "ed081e73-219c-478c-ba34-fe5619c8dcb8",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 702, when may a change to a LESS HAZARDOUS use be approved without full code compliance for the new occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Never — full compliance is always required regardless of hazard level, ensuring maximum safety"
+        },
+        {
+          "id": "b",
+          "text": "When the new use represents lower life risk AND fire risk than the existing use, and the Building Official approves the change"
+        },
+        {
+          "id": "c",
+          "text": "When the building is more than 20 years old, which is a common misconception about code compliance"
+        },
+        {
+          "id": "d",
+          "text": "When the building owner signs a waiver accepting liability, which is not a recognized practice under the code"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The less hazardous exception does not eliminate the application and approval requirement — it determines whether full code compliance is needed before approval. Building Official inspection and assessment still apply. Options C and D introduce criteria not found in Sec. 702. Option A denies the less hazardous pathway entirely.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:85e65c5ee3252ecb25c55805dc0d55eded776829b773f4c2375f59763bb8b594"
+    },
+    {
+      "question_id": "422fd056-50a6-4262-843f-71bec0d2958e",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Who has the SOLE authority to approve or deny a change of occupancy application under PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The building owner or architect may self-certify the change"
+        },
+        {
+          "id": "b",
+          "text": "The Building Official"
+        },
+        {
+          "id": "c",
+          "text": "The City Mayor"
+        },
+        {
+          "id": "d",
+          "text": "The BFP (Bureau of Fire Protection)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Self-certification is not permitted under any provision of PD 1096 for changes of occupancy. The Building Official's authority is absolute for this process. Option C (Mayor) confuses administrative governance with building code enforcement. Option D (BFP) handles fire safety but not occupancy classification.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c01485e1a1286a320c73b3c60917c4f2e4df52b961db56c89571410e2092de7e"
+    },
+    {
+      "question_id": "470ba6ed-2f78-4313-96c6-359359b6cfe2",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the correct sequence of the change-of-use process under Sec. 702?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inspection → Application (B-12) → Assessment → Certificate of Use"
+        },
+        {
+          "id": "b",
+          "text": "Application (B-12) → Assessment → Inspection → Certificate of Use"
+        },
+        {
+          "id": "c",
+          "text": "Assessment → Application (B-12) → Certificate of Use → Inspection"
+        },
+        {
+          "id": "d",
+          "text": "Application (B-12) → Certificate of Use → Inspection → Assessment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The B-12 application must come before assessment and inspection — the BO needs the formal application before reviewing the case. Mnemonic: 'B-12 to Certificate of Use — the Change Chain.' The process is: B-12 Form → Assessment → Inspection → Certificate of Use. The order matters because the assessment determines the scope of inspection.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e9eaa1a33ca9f7aa9a64aa732f3028a3093a01cf692df30252a95ee13b26783"
+    },
+    {
+      "question_id": "e015d560-a07f-4a1f-b8bc-dafab81572f1",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the IEBC Chapter 10 (USA), what is the approach to change of occupancy compared to PD 1096 Sec. 702?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The IEBC allows any change of occupancy without compliance as long as it is less hazardous, which can lead to potential safety risks if not properly evaluated"
+        },
+        {
+          "id": "b",
+          "text": "The IEBC requires compliance with new occupancy standards (or an approved alternative method) regardless of direction of hazard change"
+        },
+        {
+          "id": "c",
+          "text": "The IEBC and PD 1096 use identical change-of-occupancy procedures, ensuring consistency across different jurisdictions"
+        },
+        {
+          "id": "d",
+          "text": "The IEBC does not address change of occupancy, leaving it to local codes and regulations to determine the necessary procedures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This comparative question tests understanding of the key policy difference: PH's 'less hazardous' standard is uniquely pragmatic for a country with a large stock of aging buildings. The IEBC's approach is more rigorous — full compliance or a scored evaluation, regardless of hazard direction. This distinction is a frequent ALE comparative analysis topic.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:251dfb54b47481085be0089bf1621a651147a4c7198c65dcae79249a3ee80c9e"
+    },
+    {
+      "question_id": "34b812c6-d500-4936-9d5b-e94177d46756",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, Section 702, what is the GENERAL PROHIBITION regarding changes in occupancy classification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any change in use requires a new building permit, regardless of the scale or nature of the change"
+        },
+        {
+          "id": "b",
+          "text": "No change in character of occupancy placing a building in a different division or group shall be made unless the building complies with all requirements of the Code for the new use"
+        },
+        {
+          "id": "c",
+          "text": "Changes between divisions within the same occupancy group do not require any Building Official approval, simplifying minor adjustments"
+        },
+        {
+          "id": "d",
+          "text": "Changes from residential to commercial are always allowed without code compliance, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is the foundational rule of the entire change-of-use topic. Options A, C, and D all incorrectly simplify or misstate the prohibition. Option C incorrectly exempts intra-group changes — the Code applies to changes within a division or group as well.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3859ed28c4b20bb9d85a60994cbc4256a7646a0e22a2024fec6be7c0aa299373"
+    },
+    {
+      "question_id": "3e2392f2-49a9-4f87-9ccf-e76f149f6a70",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building owner converts a former barangay health center into a dental clinic without filing any application with the Building Official. Under PD 1096, which statement is MOST accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The conversion is valid because a dental clinic is less hazardous than a health center, and thus poses no increased risk"
+        },
+        {
+          "id": "b",
+          "text": "The conversion violates Sec. 702 — any change in occupancy group or division requires Building Official approval regardless of relative hazard"
+        },
+        {
+          "id": "c",
+          "text": "The conversion is valid because both uses are health-related, and therefore fall under the same general category"
+        },
+        {
+          "id": "d",
+          "text": "The owner only needs to update the signage to reflect the new use, as long as no structural changes are made"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A misapplies the less hazardous pathway — even if less hazardous, approval is still required. Option C incorrectly assumes same-function uses are in the same occupancy group — health-related uses can be in different groups. Option D trivializes the requirement to a signage change. The Building Official may order cessation of operations for unapproved changes.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c7b94b05691b1e9927e5ae3a8d70064b732986a5c843258b73bf60dfb4c5be2d"
+    },
+    {
+      "question_id": "58d057b3-af3b-4fd1-b418-971117a97b5d",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "After an approved change of occupancy, what document does the Building Official issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A new Certificate of Occupancy"
+        },
+        {
+          "id": "b",
+          "text": "A Certificate of Use"
+        },
+        {
+          "id": "c",
+          "text": "An amended Building Permit"
+        },
+        {
+          "id": "d",
+          "text": "A Fire Safety Clearance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mnemonic: 'COU ≠ CO — Certificate of U-se for existing building, change of U-se; Certificate of O-ccupancy for new/O-riginal occupancy.' The letter that changes in the document name tells you which building status it applies to. Option A is the most common wrong answer — candidates default to the familiar CO.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3d689930f68cdd3468df4be1c3f47f613a5b4fe2f47025b2e13beb1e22ebd350"
+    },
+    {
+      "question_id": "80954f58-c19c-416e-8b05-eca1a8a67188",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 703, what is the general rule for a building containing multiple occupancies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each portion may be designed under its own occupancy requirements, which can lead to inconsistencies"
+        },
+        {
+          "id": "b",
+          "text": "The building must comply with the requirements for the most restrictive occupancy involved"
+        },
+        {
+          "id": "c",
+          "text": "The dominant occupancy (by area) governs the entire building, which is not always permissible"
+        },
+        {
+          "id": "d",
+          "text": "Mixed occupancy buildings are prohibited in the Philippines, which is a misunderstanding of the code"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Two exceptions exist: (a) one-storey buildings may treat each portion under its own occupancy; (b) accessory uses occupying ≤10% of any storey may allow the major occupancy to govern.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:489f75611f513935b770f4d08f7fc12c03f4fdcce9cc2dc8b8e8bb731d5f586a"
+    },
+    {
+      "question_id": "98b9b530-b29e-4129-bf7a-affc944fb0ec",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Group A Div. 1 includes which of the following uses under Sec. 701?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single-family dwellings, and churches, community facilities, parks, and clubhouses not operated primarily for gain"
+        },
+        {
+          "id": "b",
+          "text": "Hotels, apartments, and boarding houses, typically classified under Group R for residential occupancy"
+        },
+        {
+          "id": "c",
+          "text": "Educational buildings and day-care centers, which fall under Group E for educational occupancy"
+        },
+        {
+          "id": "d",
+          "text": "Business offices and mercantile establishments, generally categorized under Group B for business occupancy"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Group A includes more than just houses — it encompasses a broad range of low-density residential and community uses. Hotels and apartments → Group B. Educational buildings → Group C. Business/mercantile → Group E.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:33e953ae594b0232c18cacd6872b3a891c7456da7531c1c319fa9ae39162b1ab"
+    },
+    {
+      "question_id": "f32b6c0f-04e2-4be9-9a69-63f5d23e1f49",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 1607 (2004 IRR), plastic skylights are proposed for a three-storey Type III commercial building in Occupancy Group E. What additional fire safety system is required for this installation?",
+      "options": [
+        {
+          "id": "pl-010-a",
+          "text": "An approved fire venting system from the Building Official, OR Type IV 1-hour construction with 400 mm curb, OR 1-storey building without a required fire-resistive ceiling — as alternative to suppression"
+        },
+        {
+          "id": "pl-010-b",
+          "text": "Automatic fire-extinguishing system is always required regardless of construction type or occupancy, ensuring maximum safety"
+        },
+        {
+          "id": "pl-010-c",
+          "text": "Type I or II construction is required for any building with plastic skylights, as these types provide enhanced fire resistance"
+        },
+        {
+          "id": "pl-010-d",
+          "text": "A fire alarm system must be installed in all zones served by the skylights, to ensure early detection and response"
+        }
+      ],
+      "correct_option_id": "pl-010-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The exceptions to the suppression requirement represent a design flexibility that architects can use when suppression is impractical. Understanding when each exception applies is essential for compliant skylight specification.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.702597+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d361268cca53de184d9c25ea82570cb60385df9a9b3deafdc499762ece56ad5"
+    },
+    {
+      "question_id": "40b21fa4-7f4d-4cc5-a1ba-3763dd1281e5",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per the mnemonic 'GARRC' for the five change-type definitions, what is the correct sequence from smallest to largest scope of intervention?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Addition → Conversion → Renovation → Alteration → Repair"
+        },
+        {
+          "id": "B",
+          "text": "Repair → Renovation → Alteration → Conversion → Addition"
+        },
+        {
+          "id": "C",
+          "text": "Alteration → Repair → Renovation → Addition → Conversion"
+        },
+        {
+          "id": "D",
+          "text": "Renovation → Repair → Addition → Alteration → Conversion"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The scope ladder (smallest to largest) is: Repair → Renovation → Alteration → Conversion → Addition. Visualize a stair: each step up represents a greater intervention. Repair = restore original (same-for-same). Renovation = improve value/aesthetic (better-for-same). Alteration = change configuration (different-for-different, within existing area). Conversion = change use/occupancy. Addition = GROWS (height and/or area increase).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.788686+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2d0135e960ab9e73d77ca1644e1010e23f9ab71f0155ebfc62bfc74358551fa0"
+    },
+    {
+      "question_id": "1e80ef50-0b77-4a4a-b890-d5ef4527adfc",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, what are the two specific criteria used to evaluate whether a change of occupancy triggers the 'more hazardous' compliance pathway?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Construction cost of the proposed renovation and the age of the existing building"
+        },
+        {
+          "id": "b",
+          "text": "Life risk to occupants and fire risk associated with the proposed new use"
+        },
+        {
+          "id": "c",
+          "text": "Proximity to adjacent structures and the occupant load of the proposed new use"
+        },
+        {
+          "id": "d",
+          "text": "Structural rating of the building and the zoning classification of the lot"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 specifies that the determination of whether a change constitutes a more or less hazardous reclassification is based on two criteria: LIFE RISK (the risk of injury or death to the occupants) and FIRE RISK (the probability and severity of fire in the new use). Both factors must be considered together. Construction cost, building age, and structural rating are not the evaluative criteria under Sec. 702.",
+      "explanation": "LIFE RISK + FIRE RISK = the dual criteria. These map directly to the two primary safety concerns that building codes are designed to address: protecting occupants from structural/panic hazards (life risk) and from fire (fire risk).",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3cb95250bee70d352dc3b1f85da24509ed1142ae3d8e7c941f532339c4e6743a"
+    },
+    {
+      "question_id": "e5ef0bb2-d668-41da-80d1-50bb14f8f2e0",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An owner proposes converting a residential apartment building into a high-occupancy entertainment venue with pyrotechnic displays. How does Sec. 702 classify this change in terms of hazard direction, and what does the Code require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Less hazardous change — BO may approve at discretion with minimal review, provided that the occupancy load does not exceed previous limits."
+        },
+        {
+          "id": "b",
+          "text": "More hazardous change — full compliance with all Code requirements for the new use is mandatory before approval"
+        },
+        {
+          "id": "c",
+          "text": "Equivalent hazard — no additional compliance is required if the building footprint does not change, maintaining existing safety standards."
+        },
+        {
+          "id": "d",
+          "text": "Neutral change — only a change-of-use fee must be paid to the OBO; no structural review is needed, simplifying the approval process."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "An entertainment venue with pyrotechnic displays represents a substantially MORE hazardous use compared to a residential apartment. Sec. 702 mandates that changes to a more hazardous classification require FULL compliance with all applicable Code requirements for the new use before the change can be approved. This includes fire suppression, egress, occupant load calculations, structural review, and any other requirements triggered by the new occupancy.",
+      "explanation": "The two-track system: less hazardous = BO discretion; more hazardous = mandatory full Code compliance. The direction of hazard change determines the applicable review standard. Pyrotechnics + high occupancy = clearly more hazardous.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c4e3decd46d9081724ed8859fe691309161e911cef14259ed87c5cadc6244ca"
+    },
+    {
+      "question_id": "afdb8cb6-0f7a-4959-9223-8da62de659e3",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building owner begins operating a new use in an existing building after only filing NBC Form B-12, without waiting for inspection or certificate issuance. Under PD 1096, which statement best describes the legal position?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filing B-12 constitutes constructive notice and authorizes provisional occupancy pending final approval, allowing temporary use"
+        },
+        {
+          "id": "b",
+          "text": "The change of use is unauthorized; the building is being operated in violation of PD 1096 until the Certificate of Use is issued"
+        },
+        {
+          "id": "c",
+          "text": "The owner is protected from enforcement action once B-12 is filed, as the BO's review is administrative only, not regulatory"
+        },
+        {
+          "id": "d",
+          "text": "The BO may only act after 30 days; the owner may operate in the interim without legal consequence, assuming compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Filing Form B-12 initiates the application process — it does not authorize the new use. Under Sec. 702, a change of use is only legally effective after the building conforms to Code requirements AND the Certificate of Use is issued. Operating the new use before the Certificate of Use is issued violates the Code, exposes the owner to administrative and criminal penalties, and exposes occupants to unverified safety risks.",
+      "explanation": "Application filing ≠ authorization. The Certificate of Use is the legal instrument that authorizes the new use — not the B-12 form. This is analogous to starting construction before a building permit is issued.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f83b3f785484569704c4a5ee9b5118e17b4f5e5bd421015613b1ccbd41b95cb4"
+    },
+    {
+      "question_id": "19089bf5-f788-4896-a452-d343705534fc",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building owner proposes to change a building's use to a classification that is LESS hazardous than its current use. Under Sec. 702, what level of authority may approve this change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The DPWH Regional Director must approve all changes of occupancy regardless of hazard direction"
+        },
+        {
+          "id": "b",
+          "text": "The Building Official alone may approve a change to a less hazardous use classification"
+        },
+        {
+          "id": "c",
+          "text": "The local Zoning Administrator has exclusive authority over all occupancy reclassifications"
+        },
+        {
+          "id": "d",
+          "text": "No approval is needed for changes to less hazardous uses; only the owner's written declaration is required"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 provides that when the proposed change is to a use of LESSER hazard, the Building Official — as the sole authority at the local level — may approve the change. The BO evaluates whether the building meets the Code requirements for the new, less hazardous use and exercises discretion to approve. Changes to MORE hazardous uses require full Code compliance and a more rigorous review process.",
+      "explanation": "The BO is the SOLE authority for occupancy change approvals. For less hazardous changes, the BO may approve using discretion. For more hazardous changes, full Code compliance is mandatory before the BO can approve. The DPWH is not the approving authority for individual building occupancy changes.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ae33b5b0b151910ed93b411d385525f0990c4f07813de667e5035a62ce664b4"
+    },
+    {
+      "question_id": "2f68c1a8-8f42-48c1-bedf-8e9fff5e908e",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 702 of PD 1096, what is the general rule governing any proposed change of use or occupancy of an existing building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any change of use is freely permitted provided the owner files a written notice with the Barangay Captain"
+        },
+        {
+          "id": "b",
+          "text": "No change of use or occupancy may be made unless the building conforms to the requirements of the Code for the new use"
+        },
+        {
+          "id": "c",
+          "text": "Change of use is permitted within the same occupancy group without any Code review or approval"
+        },
+        {
+          "id": "d",
+          "text": "Change of use requires only DPWH approval; the local Building Official has no jurisdiction over occupancy changes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 establishes the foundational rule: no change of use or occupancy may be made to a building or structure unless that building conforms to the requirements of PD 1096 for the proposed new use. This applies regardless of whether the change is within the same general occupancy group or to a different group. The Code compliance requirement exists because different uses carry different life safety and fire hazard profiles.",
+      "explanation": "Sec. 702 is the gatekeeper provision. It makes Code compliance for the NEW use a prerequisite — not an option — before any change of occupancy is legally effective. This is why a new Certificate of Occupancy (Sec. 309.9) is always required when use changes.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b62f1f219c6684f5081e2cca2eec1ced50332827fa62ee0987f5a9ecee4417f4"
+    },
+    {
+      "question_id": "962cce8a-dc03-4a7d-b056-769715bbfa72",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the correct sequence of steps in the change of use and occupancy process under PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inspection → Assessment → Submit B-12 → Certificate of Use"
+        },
+        {
+          "id": "b",
+          "text": "Submit B-12 → Assessment → Inspection → Certificate of Use"
+        },
+        {
+          "id": "c",
+          "text": "Assessment → Submit B-12 → Certificate of Use → Inspection"
+        },
+        {
+          "id": "d",
+          "text": "Submit B-12 → Certificate of Use → Inspection → Assessment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The proper process sequence under Sec. 702 is: (1) Submit NBC Form B-12 to initiate the application; (2) OBO conducts a fee and compliance Assessment; (3) Physical Inspection of the existing building; (4) Issuance of the Certificate of Use upon satisfactory compliance. The inspection must occur before the certificate is issued — not after. Option A inverts the first two steps. Options C and D place the certificate before the inspection.",
+      "explanation": "B-12 → Assessment → Inspection → Certificate of Use. The sequence matters: you cannot issue the Certificate of Use before inspecting the building. The inspection verifies that the building actually meets the Code requirements for the new use.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d9771eacad8b7eda62f8533a519e323a5ae6ed99264a291ad70a1e271dcad1be"
+    },
+    {
+      "question_id": "d8169a11-7d8c-451b-a744-1556beb8b5d6",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A light manufacturing facility (moderate fire risk) is proposed to be converted into a daycare center for 80 children (high life risk, low fire risk). Applying the two criteria of Sec. 702, how should the Building Official classify this change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Less hazardous overall — fire risk decreases so the BO may approve at discretion without full Code review, provided no other factors increase risk"
+        },
+        {
+          "id": "b",
+          "text": "More hazardous overall — life risk increases substantially with 80 vulnerable child occupants, triggering mandatory full Code compliance"
+        },
+        {
+          "id": "c",
+          "text": "Equivalent hazard — the decrease in fire risk exactly offsets the increase in life risk so no review is needed, assuming no additional hazards are present"
+        },
+        {
+          "id": "d",
+          "text": "Outside Code jurisdiction — daycare centers are regulated exclusively by DSWD, not by PD 1096"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 requires evaluation of BOTH life risk AND fire risk. While fire risk decreases (daycare vs. manufacturing), life risk increases substantially: 80 young children are among the most vulnerable occupants, requiring enhanced egress design, fire detection, supervision, and accessibility features. A significant increase in life risk — even when fire risk decreases — classifies the change as more hazardous overall, mandating full Code compliance. Option C assumes the two criteria cancel out, which has no basis in the Code.",
+      "explanation": "When life risk and fire risk point in different directions, the more conservative interpretation governs. Vulnerable occupants (children, elderly, persons with disabilities) elevate life risk regardless of fire hazard level. Full Code compliance is required whenever either criterion indicates increased hazard.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ec6bf4d0e4b9d84159445c6afa11a50e4feccd1c6585a0e0b4701c1e859711a2"
+    },
+    {
+      "question_id": "b945c913-9d0f-4977-852a-038e9bfa8690",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "After a successful change of use application is approved and all conditions are met, what specific document does the Building Official issue to authorize the new occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Certificate of Occupancy updated to reflect the new use classification"
+        },
+        {
+          "id": "b",
+          "text": "An amended Building Permit that incorporates the new use into the original permit record"
+        },
+        {
+          "id": "c",
+          "text": "A Certificate of Use — a separate instrument specific to approved occupancy changes"
+        },
+        {
+          "id": "d",
+          "text": "A Zoning Compliance Certificate issued jointly by the BO and the local planning office"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Under PD 1096, the specific document issued upon approval of a change of use application is the CERTIFICATE OF USE — distinct from the Certificate of Occupancy issued for new construction. The Certificate of Use is the instrument that legally authorizes the new occupancy classification. While a new CO (per Sec. 309.9) is also required, the intermediate authorization document specifically issued for the change process is the Certificate of Use.",
+      "explanation": "Certificate of USE (change process) vs Certificate of OCCUPANCY (new construction). Both are issued by the Building Official but serve different purposes and apply to different scenarios. Confusing these two is a common exam error.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:254ae03b8f2303729520a50eac81e9d5f0f3cfc439e6bc30b5e82b87a28c8340"
+    },
+    {
+      "question_id": "173d29f6-0ac6-49dc-b6a2-04faf5f0f2a4",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which official has SOLE authority under PD 1096 to approve or deny a change of use and occupancy application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The DPWH Regional Director for all changes involving buildings of more than three storeys"
+        },
+        {
+          "id": "b",
+          "text": "The local Sangguniang Bayan or Sangguniang Panlungsod through a zoning resolution"
+        },
+        {
+          "id": "c",
+          "text": "The Building Official of the jurisdiction where the building is located"
+        },
+        {
+          "id": "d",
+          "text": "A joint committee of the BO, BFP Chief, and local health officer for changes involving public use"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 vests sole authority for approving or denying change of use applications in the Building Official of the jurisdiction. This authority is not shared with DPWH regional offices, local legislative bodies, or inter-agency committees for standard occupancy changes. The BO applies the Code requirements to determine compliance and exercises the approval authority independently.",
+      "explanation": "The BO = sole authority for occupancy change approvals. This mirrors the BO's authority for building permits (Sec. 301) and certificates of occupancy (Sec. 309). The BO is the single point of accountability for all building Code enforcement decisions at the local level.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9777f51e44bcfc6c7c7838c3633873739b48d2dddabe3c4790c824f9da5de60"
+    },
+    {
+      "question_id": "50b61152-ae0d-4d8b-8434-894e12cd3c2d",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the specific NBC form number used to initiate a formal change of use or occupancy application under PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NBC Form No. B-05 — Application for Building Permit"
+        },
+        {
+          "id": "b",
+          "text": "NBC Form No. B-12 — Application for Change of Use or Occupancy"
+        },
+        {
+          "id": "c",
+          "text": "NBC Form No. B-09 — Certificate of Completion and Occupancy"
+        },
+        {
+          "id": "d",
+          "text": "NBC Form No. B-17 — Application for Demolition Permit"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The official form for initiating a change of use or occupancy application is NBC Form No. B-12. This is a distinct form from the standard building permit application (B-05) and is specific to occupancy reclassification requests. Submitting the wrong form does not initiate the proper review process under Sec. 702.",
+      "explanation": "NBC Form B-12 is the entry point for all change-of-use applications. Knowing form numbers is a direct recall item in LEA examinations. B-12 → Change of Use; B-05 → Building Permit; B-09 → CO application.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702; NBC Form B-12",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.742648+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a09f911fa9b36a833e94b291058c9055e9daff3740013c35d6bed98bc30ea9fd"
+    },
+    {
+      "question_id": "c37b472c-deac-4a3f-927c-56ca7f9a225c",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the specific NBC form number used to initiate a formal change of use or occupancy application under PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NBC Form No. B-05 — Application for Building Permit"
+        },
+        {
+          "id": "b",
+          "text": "NBC Form No. B-12 — Application for Change of Use or Occupancy"
+        },
+        {
+          "id": "c",
+          "text": "NBC Form No. B-09 — Certificate of Completion and Occupancy"
+        },
+        {
+          "id": "d",
+          "text": "NBC Form No. B-17 — Application for Demolition Permit"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The official form for initiating a change of use or occupancy application is NBC Form No. B-12. This is a distinct form from the standard building permit application (B-05) and is specific to occupancy reclassification requests. Submitting the wrong form does not initiate the proper review process under Sec. 702.",
+      "explanation": "NBC Form B-12 is the entry point for all change-of-use applications. Knowing form numbers is a direct recall item in LEA examinations. B-12 → Change of Use; B-05 → Building Permit; B-09 → CO application.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702; NBC Form B-12",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04ceed1cfb7d5b9364e37f3a09257547d3e7fac7897a504f3b6fd56549d73c88"
+    },
+    {
+      "question_id": "6a3632dc-dcaf-439f-baa5-b8c9e132fd14",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building owner begins operating a new use in an existing building after only filing NBC Form B-12, without waiting for inspection or certificate issuance. Under PD 1096, which statement best describes the legal position?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filing B-12 constitutes constructive notice and authorizes provisional occupancy pending final approval, provided no objections are raised within 30 days"
+        },
+        {
+          "id": "b",
+          "text": "The change of use is unauthorized; the building is being operated in violation of PD 1096 until the Certificate of Use is issued"
+        },
+        {
+          "id": "c",
+          "text": "The owner is protected from enforcement action once B-12 is filed, as the BO's review is administrative only and does not affect occupancy rights"
+        },
+        {
+          "id": "d",
+          "text": "The BO may only act after 30 days; the owner may operate in the interim without legal consequence, assuming no safety violations are evident"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Filing Form B-12 initiates the application process — it does not authorize the new use. Under Sec. 702, a change of use is only legally effective after the building conforms to Code requirements AND the Certificate of Use is issued. Operating the new use before the Certificate of Use is issued violates the Code, exposes the owner to administrative and criminal penalties, and exposes occupants to unverified safety risks.",
+      "explanation": "Application filing ≠ authorization. The Certificate of Use is the legal instrument that authorizes the new use — not the B-12 form. This is analogous to starting construction before a building permit is issued.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:61eba075d6bd237089cabff6d2733d8dbdadf9da16174061a646e30683d90406"
+    },
+    {
+      "question_id": "4b93b26f-ea84-43c9-94be-ce1f8cf7edbb",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, what are the two specific criteria used to evaluate whether a change of occupancy triggers the 'more hazardous' compliance pathway?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Construction cost of the proposed renovation and the age of the existing building"
+        },
+        {
+          "id": "b",
+          "text": "Life risk to occupants and fire risk associated with the proposed new use"
+        },
+        {
+          "id": "c",
+          "text": "Proximity to adjacent structures and the occupant load of the proposed new use"
+        },
+        {
+          "id": "d",
+          "text": "Structural rating of the building and the zoning classification of the lot"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 specifies that the determination of whether a change constitutes a more or less hazardous reclassification is based on two criteria: LIFE RISK (the risk of injury or death to the occupants) and FIRE RISK (the probability and severity of fire in the new use). Both factors must be considered together. Construction cost, building age, and structural rating are not the evaluative criteria under Sec. 702.",
+      "explanation": "LIFE RISK + FIRE RISK = the dual criteria. These map directly to the two primary safety concerns that building codes are designed to address: protecting occupants from structural/panic hazards (life risk) and from fire (fire risk).",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4c1c329fe9caa7e04271ddb9fbc4bb4f401a0a5ef580910944e16627338c38df"
+    },
+    {
+      "question_id": "991995f4-6504-4b94-b149-6d492b86b460",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the correct sequence of steps in the change of use and occupancy process under PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inspection → Assessment → Submit B-12 → Certificate of Use"
+        },
+        {
+          "id": "b",
+          "text": "Submit B-12 → Assessment → Inspection → Certificate of Use"
+        },
+        {
+          "id": "c",
+          "text": "Assessment → Submit B-12 → Certificate of Use → Inspection"
+        },
+        {
+          "id": "d",
+          "text": "Submit B-12 → Certificate of Use → Inspection → Assessment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The proper process sequence under Sec. 702 is: (1) Submit NBC Form B-12 to initiate the application; (2) OBO conducts a fee and compliance Assessment; (3) Physical Inspection of the existing building; (4) Issuance of the Certificate of Use upon satisfactory compliance. The inspection must occur before the certificate is issued — not after. Option A inverts the first two steps. Options C and D place the certificate before the inspection.",
+      "explanation": "B-12 → Assessment → Inspection → Certificate of Use. The sequence matters: you cannot issue the Certificate of Use before inspecting the building. The inspection verifies that the building actually meets the Code requirements for the new use.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3413978ae4aa934493d17b0bd717e838387f75d03b9f626eb0a525ef6f0f9993"
+    },
+    {
+      "question_id": "c4221a89-a6be-45eb-81dd-0079f8d6950e",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "After a successful change of use application is approved and all conditions are met, what specific document does the Building Official issue to authorize the new occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Certificate of Occupancy updated to reflect the new use classification"
+        },
+        {
+          "id": "b",
+          "text": "An amended Building Permit that incorporates the new use into the original permit record"
+        },
+        {
+          "id": "c",
+          "text": "A Certificate of Use — a separate instrument specific to approved occupancy changes"
+        },
+        {
+          "id": "d",
+          "text": "A Zoning Compliance Certificate issued jointly by the BO and the local planning office"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Under PD 1096, the specific document issued upon approval of a change of use application is the CERTIFICATE OF USE — distinct from the Certificate of Occupancy issued for new construction. The Certificate of Use is the instrument that legally authorizes the new occupancy classification. While a new CO (per Sec. 309.9) is also required, the intermediate authorization document specifically issued for the change process is the Certificate of Use.",
+      "explanation": "Certificate of USE (change process) vs Certificate of OCCUPANCY (new construction). Both are issued by the Building Official but serve different purposes and apply to different scenarios. Confusing these two is a common exam error.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:62d54f8fe39dd967cd8b3a7defa74404d2eccd4063af2bd713a9957988b4751c"
+    },
+    {
+      "question_id": "d2ac3076-d2fd-4ba7-8723-3c1f19b890e7",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An owner proposes converting a residential apartment building into a high-occupancy entertainment venue with pyrotechnic displays. How does Sec. 702 classify this change in terms of hazard direction, and what does the Code require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Less hazardous change — BO may approve at discretion with minimal review, provided that the occupancy load does not exceed the original design capacity"
+        },
+        {
+          "id": "b",
+          "text": "More hazardous change — full compliance with all Code requirements for the new use is mandatory before approval"
+        },
+        {
+          "id": "c",
+          "text": "Equivalent hazard — no additional compliance is required if the building footprint does not change, maintaining the original structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "Neutral change — only a change-of-use fee must be paid to the OBO; no structural review is needed, simplifying the approval process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "An entertainment venue with pyrotechnic displays represents a substantially MORE hazardous use compared to a residential apartment. Sec. 702 mandates that changes to a more hazardous classification require FULL compliance with all applicable Code requirements for the new use before the change can be approved. This includes fire suppression, egress, occupant load calculations, structural review, and any other requirements triggered by the new occupancy.",
+      "explanation": "The two-track system: less hazardous = BO discretion; more hazardous = mandatory full Code compliance. The direction of hazard change determines the applicable review standard. Pyrotechnics + high occupancy = clearly more hazardous.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12f206afedab6d754cc06e9f8f6cd8201b09a20b004a63e30075619bb04eb005"
+    },
+    {
+      "question_id": "66bbf061-43d3-47df-a4b2-684579a16d90",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A light manufacturing facility (moderate fire risk) is proposed to be converted into a daycare center for 80 children (high life risk, low fire risk). Applying the two criteria of Sec. 702, how should the Building Official classify this change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Less hazardous overall — fire risk decreases so the BO may approve at discretion without full Code review, provided that additional safety measures are implemented"
+        },
+        {
+          "id": "b",
+          "text": "More hazardous overall — life risk increases substantially with 80 vulnerable child occupants, triggering mandatory full Code compliance"
+        },
+        {
+          "id": "c",
+          "text": "Equivalent hazard — the decrease in fire risk exactly offsets the increase in life risk so no review is needed, assuming that existing safety protocols are deemed sufficient"
+        },
+        {
+          "id": "d",
+          "text": "Outside Code jurisdiction — daycare centers are regulated exclusively by DSWD, not by PD 1096, unless specific structural changes are proposed"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 requires evaluation of BOTH life risk AND fire risk. While fire risk decreases (daycare vs. manufacturing), life risk increases substantially: 80 young children are among the most vulnerable occupants, requiring enhanced egress design, fire detection, supervision, and accessibility features. A significant increase in life risk — even when fire risk decreases — classifies the change as more hazardous overall, mandating full Code compliance. Option C assumes the two criteria cancel out, which has no basis in the Code.",
+      "explanation": "When life risk and fire risk point in different directions, the more conservative interpretation governs. Vulnerable occupants (children, elderly, persons with disabilities) elevate life risk regardless of fire hazard level. Full Code compliance is required whenever either criterion indicates increased hazard.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:864060db1752c8fe9ae53cca20fb036c96cc294337541ce2163483d4004ef270"
+    },
+    {
+      "question_id": "07084cc3-b801-422b-a2a8-632c24e186f6",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 702 of PD 1096, what is the general rule governing any proposed change of use or occupancy of an existing building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any change of use is freely permitted provided the owner files a written notice with the Barangay Captain"
+        },
+        {
+          "id": "b",
+          "text": "No change of use or occupancy may be made unless the building conforms to the requirements of the Code for the new use"
+        },
+        {
+          "id": "c",
+          "text": "Change of use is permitted within the same occupancy group without any Code review or approval"
+        },
+        {
+          "id": "d",
+          "text": "Change of use requires only DPWH approval; the local Building Official has no jurisdiction over occupancy changes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 establishes the foundational rule: no change of use or occupancy may be made to a building or structure unless that building conforms to the requirements of PD 1096 for the proposed new use. This applies regardless of whether the change is within the same general occupancy group or to a different group. The Code compliance requirement exists because different uses carry different life safety and fire hazard profiles.",
+      "explanation": "Sec. 702 is the gatekeeper provision. It makes Code compliance for the NEW use a prerequisite — not an option — before any change of occupancy is legally effective. This is why a new Certificate of Occupancy (Sec. 309.9) is always required when use changes.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7ba33292a84e5a10a4bafe2e71bef7dd06e4dbc0eb39e5cf9a296838b0f90074"
+    },
+    {
+      "question_id": "8c34d1fc-028e-4da0-afb4-7c3db5afa6b5",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building owner proposes to change a building's use to a classification that is LESS hazardous than its current use. Under Sec. 702, what level of authority may approve this change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The DPWH Regional Director must approve all changes of occupancy regardless of hazard direction"
+        },
+        {
+          "id": "b",
+          "text": "The Building Official alone may approve a change to a less hazardous use classification"
+        },
+        {
+          "id": "c",
+          "text": "The local Zoning Administrator has exclusive authority over all occupancy reclassifications"
+        },
+        {
+          "id": "d",
+          "text": "No approval is needed for changes to less hazardous uses; only the owner's written declaration is required"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 provides that when the proposed change is to a use of LESSER hazard, the Building Official — as the sole authority at the local level — may approve the change. The BO evaluates whether the building meets the Code requirements for the new, less hazardous use and exercises discretion to approve. Changes to MORE hazardous uses require full Code compliance and a more rigorous review process.",
+      "explanation": "The BO is the SOLE authority for occupancy change approvals. For less hazardous changes, the BO may approve using discretion. For more hazardous changes, full Code compliance is mandatory before the BO can approve. The DPWH is not the approving authority for individual building occupancy changes.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4af769d179259370e44c6ba17045a30208f65cd8fa1f36b9772c674da8d8fb62"
+    },
+    {
+      "question_id": "2c53e76d-eb40-4614-82a8-6cdacd6d78be",
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which official has SOLE authority under PD 1096 to approve or deny a change of use and occupancy application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The DPWH Regional Director for all changes involving buildings of more than three storeys"
+        },
+        {
+          "id": "b",
+          "text": "The local Sangguniang Bayan or Sangguniang Panlungsod through a zoning resolution"
+        },
+        {
+          "id": "c",
+          "text": "The Building Official of the jurisdiction where the building is located"
+        },
+        {
+          "id": "d",
+          "text": "A joint committee of the BO, BFP Chief, and local health officer for changes involving public use"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 702 vests sole authority for approving or denying change of use applications in the Building Official of the jurisdiction. This authority is not shared with DPWH regional offices, local legislative bodies, or inter-agency committees for standard occupancy changes. The BO applies the Code requirements to determine compliance and exercises the approval authority independently.",
+      "explanation": "The BO = sole authority for occupancy change approvals. This mirrors the BO's authority for building permits (Sec. 301) and certificates of occupancy (Sec. 309). The BO is the single point of accountability for all building Code enforcement decisions at the local level.",
+      "code_citation": "PD 1096, Rule VII, Sec. 702",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.641581+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:67bcd67902cf48b1c4d5c99f55da11fe0d7a110c732260367d0a7d8a01a4b259"
+    }
+  ]
+}

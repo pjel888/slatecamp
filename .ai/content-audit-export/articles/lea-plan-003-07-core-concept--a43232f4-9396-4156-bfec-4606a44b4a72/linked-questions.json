@@ -8,23 +8,23 @@
       "question_id": "6e1ff2cb-3f16-42ee-b391-3414c262f2fc",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "What is the primary legal mechanism requiring government to obtain community approval before implementing housing projects affecting Indigenous Peoples?",
+      "text": "What does RA 11201 IRR require a People's Plan to include in source-safe terms?",
       "options": [
         {
           "id": "a",
-          "text": "Free, Prior, Informed Consent (FPIC) — a legal requirement under RA 8371"
+          "text": "A beneficiary-association plan with site development aligned to LGU zoning plus community, livelihood, and welfare elements"
         },
         {
           "id": "b",
-          "text": "Community consultation as a courtesy before project approval, which is often encouraged but not legally binding"
+          "text": "Only a private developer brochure"
         },
         {
           "id": "c",
-          "text": "Majority vote by municipal council members, which may influence decisions but does not specifically address Indigenous Peoples' rights"
+          "text": "Only a certificate of occupancy"
         },
         {
           "id": "d",
-          "text": "Environmental impact assessment sign-off only, which focuses on environmental factors rather than community consent"
+          "text": "Only a list of paint colors"
         }
       ],
       "correct_option_id": "a",
@@ -32,14 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RA 8371 (Indigenous Peoples Rights Act, 1997) mandates FPIC for any project affecting IP ancestral lands/resources. FPIC is a legal requirement, not a discretionary courtesy. It requires full IP community participation and meaningful consent.",
-        "b": "Consultation is necessary but insufficient; FPIC is the legal standard.",
-        "c": "Municipal council vote is separate from FPIC; both may be required but FPIC targets IP communities specifically.",
-        "d": "EIA is procedurally important but does not substitute for FPIC.",
-        "correct": "RA 8371 (Indigenous Peoples Rights Act, 1997) mandates FPIC for any project affecting IP ancestral lands/resources. FPIC is a legal requirement, not a discretionary courtesy. It requires full IP community participation and meaningful consent.",
-        "takeaway": "RA 8371: FPIC required before any project affecting IP lands/resources. This is a legal requirement."
-      },
+      "rationale": "The checked definition ties People's Plans to beneficiary associations, zoning conformity, site development, and social concerns.",
       "explanation": null,
       "code_citation": "RA 8371 (Indigenous Peoples Rights Act, 1997)",
       "bloom_level": "remember",
@@ -52,30 +45,30 @@
       "model_id": "ALE-PLAN-003-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.30354+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.486681+00:00",
       "content_hash": "sha256:50939dccd4211fa46f749699aa2c2a218f3ea776e1a3896765365bc5a91514a2"
     },
     {
       "question_id": "72da896c-cc53-4703-888f-0f2121c75884",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "An Indigenous Peoples community faces relocation due to a government development project. Under RA 8371, which housing provision is mandatory?",
+      "text": "Which group is expressly included in the RA 11201 IRR People's Plan welfare scope?",
       "options": [
         {
           "id": "a",
-          "text": "Priority relocation within ancestral territory if possible; if not, compensation and benefit-sharing agreements are mandatory"
+          "text": "Elderly persons, persons with disabilities, and children"
         },
         {
           "id": "b",
-          "text": "Relocation to the nearest available government site, regardless of location, ensuring minimal disruption to community life."
+          "text": "Only luxury condominium buyers"
         },
         {
           "id": "c",
-          "text": "Immediate conversion to urban formal housing away from traditional lands, focusing on modern amenities."
+          "text": "Only foreign corporate landlords"
         },
         {
           "id": "d",
-          "text": "Community may be relocated without housing provisions if adequate warning is given, which is not typically the case."
+          "text": "Only building officials"
         }
       ],
       "correct_option_id": "a",
@@ -83,14 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RA 8371 prioritizes in-territory relocation when possible (preserves ancestral connection). If external relocation is unavoidable, benefit-sharing and compensation agreements are mandatory. This reflects IP rights to land and culture.",
-        "b": "Nearest site ≠ RA 8371 priority; ancestral territory is preferred.",
-        "c": "Forced conversion to urban housing violates RA 8371 community rights.",
-        "d": "RA 8371 mandates housing provisions for relocated IPs.",
-        "correct": "RA 8371 prioritizes in-territory relocation when possible (preserves ancestral connection). If external relocation is unavoidable, benefit-sharing and compensation agreements are mandatory. This reflects IP rights to land and culture.",
-        "takeaway": "RA 8371 relocation: ancestral territory preferred; if not, benefit-sharing required."
-      },
+      "rationale": "The People's Plan definition includes welfare of elderly persons, persons with disabilities, and children.",
       "explanation": null,
       "code_citation": "RA 8371, Section 57–58",
       "bloom_level": "understand",
@@ -103,45 +89,38 @@
       "model_id": "ALE-PLAN-003-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.482934+00:00",
       "content_hash": "sha256:66155d0f37f5a5779f8d81d5baa6354dee4fabc39c5d235e2edec546c6a263cc"
     },
     {
       "question_id": "d4c1affb-3c2a-41d5-a43f-c8095c387c70",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "Persons with Disabilities (PWDs) housing programs must include which mandatory accessibility features?",
+      "text": "What is the source-safe idea behind resilient housing in RA 11201 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "Aesthetic design features and modern decoration only, which do not address accessibility needs"
+          "text": "Housing capacity to resist, absorb, and accommodate climate-change and hazard effects and return to function"
         },
         {
           "id": "b",
-          "text": "Wheelchair ramps, grab bars, accessible toilets, and appropriate door widths (minimum 85 cm clear)"
+          "text": "Housing that ignores all hazards"
         },
         {
           "id": "c",
-          "text": "Ground-floor units only (no multi-story buildings allowed), which limits housing options"
+          "text": "Housing defined only by decorative style"
         },
         {
           "id": "d",
-          "text": "Segregated community design separate from non-PWD populations, which is not inclusive"
+          "text": "Housing that removes all local planning requirements"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Aesthetics do not address accessibility function.",
-        "b": "RA 7277 (Magna Carta for Disabled Persons, 1992) mandates universal accessibility design: ramps (maximum 1:20 slope), grab bars in toilets, accessible toilet design (seat height, space), doors ≥ 80cm width. These are practical, testable standards.",
-        "c": "Multi-story buildings are permitted if equipped with elevators/ramps to access all floors.",
-        "d": "RA 7277 emphasizes community integration, not segregation.",
-        "correct": "BP 344 (Accessibility Law of 1983) and 2024 IRR mandate accessibility features: ramps (max 1:20 slope), grab bars in toilets, accessible toilets, doors minimum 0.85m width (Sec 5.2.1.2). These are practical, testable standards.",
-        "takeaway": "PWD housing: universal accessible design mandatory (ramps, grab bars, accessible toilets, door widths)."
-      },
+      "rationale": "The RA 11201 IRR definition links resilient housing to climate-change and hazard effects.",
       "explanation": null,
       "code_citation": "RA 7277 (Magna Carta for Disabled Persons, 1992)",
       "bloom_level": "remember",
@@ -154,45 +133,38 @@
       "model_id": "ALE-PLAN-003-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.480435+00:00",
       "content_hash": "sha256:c4b2ad081337d5d1a2adc5c9aca887e0b62b92d3255f495343e19eb144b04abc"
     },
     {
       "question_id": "2099f6e7-74a0-4318-b95a-b5265944907b",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "Why is livelihood restoration emphasized as a critical component in post-disaster housing programs?",
+      "text": "How does HLURB CLUP Volume 2 handle informal settlements in hazard analysis?",
       "options": [
         {
           "id": "a",
-          "text": "To comply with international humanitarian law requirements, ensuring that all aspects of recovery, including economic stability, are addressed"
+          "text": "Overlay the map of informal settlements on hazard maps and calculate affected area and population"
         },
         {
           "id": "b",
-          "text": "To prevent relocated families from experiencing economic collapse and returning to original hazard areas"
+          "text": "Delete informal settlements from planning maps"
         },
         {
           "id": "c",
-          "text": "To increase government revenue from relocated communities, which can be reinvested into further development projects"
+          "text": "Treat hazards as unrelated to housing"
         },
         {
           "id": "d",
-          "text": "To reduce dependency on housing subsidies, encouraging self-sufficiency and long-term economic resilience"
+          "text": "Use only a financing chart with no location data"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Humanitarian law is relevant but not the primary reason tested.",
-        "b": "Post-disaster housing failure occurs when livelihood is not restored. Relocated families in distant sites without job access often face economic collapse and may return to dangerous original sites or migrate elsewhere. Livelihood restoration ensures resettlement is sustainable.",
-        "c": "Housing programs are not revenue-generating; this is not the rationale.",
-        "d": "Subsidy reduction is not the primary goal.",
-        "correct": "Post-disaster housing failure occurs when livelihood is not restored. Relocated families in distant sites without job access often face economic collapse and may return to dangerous original sites or migrate elsewhere. Livelihood restoration ensures resettlement is sustainable.",
-        "takeaway": "Post-disaster livelihood restoration = sustainability. Without it, resettlement fails."
-      },
+      "rationale": "The checked CLUP guide directs overlay mapping and affected-population analysis.",
       "explanation": null,
       "code_citation": "RA 10121 (DRRM Act); World Bank Post-Disaster Recovery",
       "bloom_level": "analyze",
@@ -205,45 +177,38 @@
       "model_id": "ALE-PLAN-003-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.481344+00:00",
       "content_hash": "sha256:5ec44cfd9c1363d7b6fe66e790feefa2b383b3775715199fb07cdec982e98cfe"
     },
     {
       "question_id": "f23e182c-d100-47f5-b624-83b7aab273c0",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "What distinguishes disaster-affected housing programs from standard relocation-based resettlement?",
+      "text": "Which CLUP question is source-safe for housing and social-service facilities?",
       "options": [
         {
           "id": "a",
-          "text": "Disaster housing is temporary; standard relocation is permanent, which affects the long-term planning of communities"
+          "text": "What hazards can affect housing and social-service facilities?"
         },
         {
           "id": "b",
-          "text": "Disaster housing uses only NHA; standard relocation uses only private developers, which is not a typical practice"
+          "text": "What paint color should every facility use?"
         },
         {
           "id": "c",
-          "text": "Disaster housing prioritizes speed of delivery and livelihood restoration; standard relocation emphasizes infrastructure completeness"
+          "text": "Which bank advertises the best loan?"
         },
         {
           "id": "d",
-          "text": "Disaster housing is voluntary; standard relocation is mandatory, which impacts resident participation"
+          "text": "How can zoning be ignored during relocation?"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Disaster housing can be permanent if well-planned; temporariness is not the defining feature.",
-        "b": "Both use mixed financing (NHA, private, government, community).",
-        "c": "Disaster housing = crisis response requiring immediate shelter provision (temporary or transitional) PLUS rapid livelihood restoration. Standard relocation is deliberate, infrastructure-focused. Post-Yolanda experience showed failure when livelihood restoration was neglected.",
-        "d": "Both involve varying degrees of community choice/coercion.",
-        "correct": "Disaster housing = crisis response requiring immediate shelter provision (temporary or transitional) PLUS rapid livelihood restoration. Standard relocation is deliberate, infrastructure-focused. Post-Yolanda experience showed failure when livelihood restoration was neglected.",
-        "takeaway": "Disaster housing = speed + livelihood. Standard relocation = infrastructure-focused."
-      },
+      "rationale": "HLURB CLUP Volume 2 includes guide questions on hazards affecting housing and social-service facilities.",
       "explanation": null,
       "code_citation": "RA 10121 (DRRM Act); Post-Yolanda Housing Experience",
       "bloom_level": "understand",
@@ -256,45 +221,38 @@
       "model_id": "ALE-PLAN-003-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.485300+00:00",
       "content_hash": "sha256:fff9b3f8de79828f36a6e8ec0ba23a68b5a7d1dde346985e24ef25e5aa455bd5"
     },
     {
       "question_id": "33fcd5e0-4253-49a2-9295-2c5aea60b44b",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "The principle of universal accessible design (as mandated for PWD housing under RA 7277) differs from 'special PWD-only housing' in that universal design:",
+      "text": "Which RA 7279 concern belongs in socialized housing and resettlement planning?",
       "options": [
         {
           "id": "a",
-          "text": "Is more expensive to implement than segregated facilities, often requiring additional budget allocations for compliance"
+          "text": "Livelihood access and basic services where feasible"
         },
         {
           "id": "b",
-          "text": "Benefits PWDs while remaining equally usable by non-disabled residents and visitors (ramps, accessible entry, grab bars serve everyone)"
+          "text": "Only premium clubhouse design"
         },
         {
           "id": "c",
-          "text": "Is limited to PWDs only; non-disabled residents cannot use universal design features, which are specifically tailored for accessibility"
+          "text": "Only brand naming"
         },
         {
           "id": "d",
-          "text": "Eliminates the need for specialized health services in housing, assuming all residents have equal access to external healthcare facilities"
+          "text": "Only furniture procurement"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Universal design can cost less than segregated facilities (integrated systems are efficient).",
-        "b": "Universal design = accessibility that benefits PWDs AND all other residents (parents with strollers use ramps; elderly users benefit from grab bars; everyone benefits from accessible entries). It integrates rather than segregates.",
-        "c": "Contrary to universal design principle; features serve all users.",
-        "d": "Universal design is about environment/facilities; specialized health services are separate program elements.",
-        "correct": "Universal design = accessibility that benefits PWDs AND all other residents (parents with strollers use ramps; elderly users benefit from grab bars; everyone benefits from accessible entries). It integrates rather than segregates.",
-        "takeaway": "Universal accessible design: benefits PWDs + all residents. Integration over segregation."
-      },
+      "rationale": "RA 7279 includes livelihood and basic-service concerns for socialized housing and resettlement projects.",
       "explanation": null,
       "code_citation": "RA 7277 (Magna Carta for Disabled Persons); Universal Design Principles",
       "bloom_level": "apply",
@@ -307,45 +265,38 @@
       "model_id": "ALE-PLAN-003-07-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.485993+00:00",
       "content_hash": "sha256:865440df1ac1eff097bcaa23ebc62de2c3fc63b79de46a6340fb2b60b03a1e10"
     },
     {
       "question_id": "c454a1ba-6fb0-4949-9912-1a7698127a12",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "Which combination of features best characterizes a comprehensive special housing program for disaster-affected populations?",
+      "text": "What does the checked CLUP source say about vulnerable and marginalized groups?",
       "options": [
         {
           "id": "a",
-          "text": "Temporary shelter only; permanent housing deferred to future budget cycles without interim livelihood support"
+          "text": "They include groups facing higher exposure to disaster risk and poverty, such as women, children, elderly, differently abled people, and ethnic minorities"
         },
         {
           "id": "b",
-          "text": "Permanent housing only; no temporary shelter or interim support during the transition and reconstruction period"
+          "text": "They are not part of planning analysis"
         },
         {
           "id": "c",
-          "text": "Temporary shelter rapidly provided + transition to permanent housing + livelihood restoration + hazard-aware site selection"
+          "text": "They are only construction materials"
         },
         {
           "id": "d",
-          "text": "Housing provision + mandatory relocation to government-designated remote sites without community consultation or livelihood programs"
+          "text": "They are all treated as luxury buyers"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Temporary-only approach leaves families in limbo; violates RA 10121 recovery mandates.",
-        "b": "Permanent-only delays ignores emergency shelter crisis.",
-        "c": "Comprehensive disaster housing = immediate emergency shelter PLUS structured transition to permanent units PLUS livelihood restoration planning PLUS hazard-aware siting (not replicate original hazard). Post-Yolanda experience validated this multi-component model.",
-        "d": "Remote relocation without livelihood causes program failure.",
-        "correct": "Comprehensive disaster housing = immediate emergency shelter PLUS structured transition to permanent units PLUS livelihood restoration planning PLUS hazard-aware siting (not replicate original hazard). Post-Yolanda experience validated this multi-component model.",
-        "takeaway": "Disaster housing = immediate + permanent + livelihood + hazard-aware. All four necessary."
-      },
+      "rationale": "HLURB CLUP Volume 2 defines vulnerable and marginalized groups in disaster-risk and poverty terms.",
       "explanation": null,
       "code_citation": "RA 10121; Post-Yolanda Recovery Evaluation",
       "bloom_level": "analyze",
@@ -358,45 +309,38 @@
       "model_id": "ALE-PLAN-003-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.484514+00:00",
       "content_hash": "sha256:0838f6f7ab8c32201d216976920c8986fe0c05ca5dd4d7766465c3f4dcfb0c3f"
     },
     {
       "question_id": "3a4f4cbc-1f5d-45be-8851-300eeaee1130",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "A proposed housing project will affect the ancestral lands of an Indigenous Peoples community. Which step must occur BEFORE project implementation under RA 8371?",
+      "text": "How should indigenous peoples be treated in this batch scope?",
       "options": [
         {
           "id": "a",
-          "text": "Environmental impact assessment completion, which is crucial but not the first step"
+          "text": "As a CLUP thematic concern only where the checked CLUP source supports the planning point"
         },
         {
           "id": "b",
-          "text": "DHSUD project licensing, which is necessary but follows other approvals"
+          "text": "By inventing IPRA section numbers from memory"
         },
         {
           "id": "c",
-          "text": "City council zoning approval, which is important but not the initial requirement"
+          "text": "By ignoring ancestral-domain context entirely"
         },
         {
           "id": "d",
-          "text": "Free, Prior, Informed Consent (FPIC) from the IP community"
+          "text": "By replacing local source checks with search snippets"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "EIA is important but procedurally secondary to FPIC.",
-        "b": "DHSUD licensing follows FPIC.",
-        "c": "Zoning approval is separate; FPIC targets IP communities specifically.",
-        "d": "RA 8371 mandates FPIC BEFORE any project affecting ancestral lands. FPIC must precede all other approvals (zoning, licensing, EIA). It is the foundational legal requirement.",
-        "correct": "RA 8371 mandates FPIC BEFORE any project affecting ancestral lands. FPIC must precede all other approvals (zoning, licensing, EIA). It is the foundational legal requirement.",
-        "takeaway": "RA 8371 sequence: FPIC first, then other approvals follow."
-      },
+      "rationale": "The checked CLUP guide includes indigenous cultural communities and related thematic planning context.",
       "explanation": null,
       "code_citation": "RA 8371 (Indigenous Peoples Rights Act, 1997)",
       "bloom_level": "apply",
@@ -409,45 +353,38 @@
       "model_id": "ALE-PLAN-003-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.479358+00:00",
       "content_hash": "sha256:1aa5511d9d44fcd9a4d5ebddb2278dc04149cd557c3581e2ec8ca3b35c7e180b"
     },
     {
       "question_id": "dc04ad0e-93db-4dc2-8829-ae1760ee1072",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "Senior Citizens housing under RA 9257 prioritizes proximity to which services?",
+      "text": "What is the LEA trap in special housing questions?",
       "options": [
         {
           "id": "a",
-          "text": "Entertainment and recreational facilities only, which are considered essential for social engagement and mental health benefits"
+          "text": "Using inclusion labels without checking the planning document, hazard context, and beneficiary safeguards"
         },
         {
           "id": "b",
-          "text": "Government administrative offices, as they provide necessary services and support for senior citizens"
+          "text": "Reading the People's Plan definition"
         },
         {
           "id": "c",
-          "text": "Shopping malls and commercial districts, which offer accessibility to various goods and services needed for daily living"
+          "text": "Checking hazard overlays"
         },
         {
           "id": "d",
-          "text": "Healthcare facilities, pharmacies, and rehabilitation services"
+          "text": "Considering livelihood and welfare"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Recreation is beneficial but not the priority identified by RA 9257.",
-        "b": "Administrative proximity is not relevant to senior housing needs.",
-        "c": "Commercial proximity is not a RA 9257 senior housing requirement.",
-        "d": "RA 9257 (Senior Citizens Act, 2003) mandates housing proximity to healthcare, pharmacies, and medical/rehabilitation services. Senior populations depend on frequent healthcare access.",
-        "correct": "RA 9257 (Senior Citizens Act, 2003) provides privileges for seniors including priority access to housing near services, but specific mandates are under DHSUD senior housing guidelines. Senior populations depend on frequent healthcare access.",
-        "takeaway": "Senior housing: healthcare/pharmacy/rehab service proximity mandatory (RA 9257)."
-      },
+      "rationale": "The batch source scope links special housing to concrete planning and resettlement requirements.",
       "explanation": null,
       "code_citation": "RA 9257 (Senior Citizens Act, 2003)",
       "bloom_level": "apply",
@@ -460,45 +397,38 @@
       "model_id": "ALE-PLAN-003-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.482188+00:00",
       "content_hash": "sha256:da3602e6cbcc0d9e278701a446efc772823afdd65cc03b54263c85e18af49ee2"
     },
     {
       "question_id": "fef2e489-9ad1-4ccb-ba2c-1f5f7764922b",
       "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
       "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-      "text": "Compared to general housing programs, special housing programs in the Philippines are characterized by:",
+      "text": "In a relocation scenario, what combination is most source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Larger funding allocations and higher construction volumes, often supported by international aid"
+          "text": "People's Plan contents plus CLUP hazard-overlay analysis and RA 7279 livelihood/basic-service concerns"
         },
         {
           "id": "b",
-          "text": "Exclusive use of private developer financing, with minimal government intervention"
+          "text": "Only a private marketing flyer"
         },
         {
           "id": "c",
-          "text": "Smaller scale, more specialized design, tailored to specific population needs, but often underfunded relative to need"
+          "text": "Only an unchecked program slogan"
         },
         {
           "id": "d",
-          "text": "Absence of government involvement; purely community-managed, relying on local resources and volunteer efforts"
+          "text": "Only a generic loan amount"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Special programs receive SMALLER allocations than mainstream programs.",
-        "b": "Special programs use mixed financing (government, community, private).",
-        "c": "Special programs (IP, PWD, senior, disaster) are smaller-scale, highly specialized, and often chronically underfunded. They address legitimate needs but compete for resources with mainstream socialized housing.",
-        "d": "Government has legal obligations (FPIC, accessibility standards); not purely community-managed.",
-        "correct": "Special programs (IP, PWD, senior, disaster) are smaller-scale, highly specialized, and often chronically underfunded. They address legitimate needs but compete for resources with mainstream socialized housing.",
-        "takeaway": "Special housing programs: specialized but underfunded relative to population need."
-      },
+      "rationale": "The checked sources support a combined planning, socialized-housing, and hazard-analysis answer.",
       "explanation": null,
       "code_citation": "Philippine Housing Policy Review; DHSUD Budget Analysis",
       "bloom_level": "apply",
@@ -511,7 +441,7 @@
       "model_id": "ALE-PLAN-003-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.483801+00:00",
       "content_hash": "sha256:c1000fba6d8e7ea13204b85bd5000a29c84abdbe6e5c6dc5dd48469c01680a64"
     }
   ]

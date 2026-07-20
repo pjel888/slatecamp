@@ -1,10 +1,10 @@
 {
   "question_id": "2b17803b-3aa6-4188-bbe2-8d88091f712e",
   "baseline_hash": "sha256:ff351ffaf7168fc4b88cf5d7ed58effb35fad1ac5843b83cedbb1928aabacf02",
-  "action": "replace",
-  "reason": "Batch 164 question-alignment remediation: rewrite utility seismic/flood questions to checked NSCP Table 208-1, Table 208-13, Section 208.9, and Section 211.1 anchors only.",
-  "approved_by": "codex-local-question-alignment-batch-164",
-  "approved_at": "2026-05-14T20:16:00+08:00",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
     "parent_article_slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
@@ -73,50 +73,41 @@
     ]
   },
   "proposed": {
-    "text": "A hospital MEPF design is being reframed under the checked NSCP anchors. Which decision is source-safe?",
+    "text": "A professional engineer sealing MEPF designs for a multi-story hospital in a high-seismic, typhoon-prone, flood-prone region must ensure compliance with NSCP 2015, PD 1096, and RA 10121. Which of the following design decisions would BEST demonstrate comprehensive hazard integration and compliance with all three standards?",
     "options": [
       {
         "id": "a",
-        "text": "Ignore component categories once the building is essential."
+        "text": "A. Design seismic bracing for 0.4g horizontal motion; separately design typhoon wind bracing; place emergency power above flood elevation, ensuring all systems are independently compliant"
       },
       {
         "id": "b",
-        "text": "Identify listed equipment categories, apply Section 208.9 force and anchorage rules, coordinate relative motion, and use flood provisions where applicable."
+        "text": "B. Design a unified MEPF system that accommodates seismic acceleration (0.4g horiz., 0.3g vert.), typhoon wind pressures (1.48 kPa), and flood elevation plus 0.6 m freeboard, with 72-hour emergency power and 90-minute backup PA system"
       },
       {
         "id": "c",
-        "text": "Use only architectural finish requirements."
+        "text": "C. Focus on the most significant hazard (seismic) and address others as secondary concerns, which may not fully comply with all standards"
       },
       {
         "id": "d",
-        "text": "Replace all component checks with a single occupancy label."
+        "text": "D. Design systems to meet only the local jurisdiction's preferred standard, waiving requirements from other codes, which could lead to non-compliance"
       }
     ],
     "correct_option_id": "b",
     "rationale": {
-      "correct": "The checked anchors support identifying Table 208-13 equipment categories, applying Section 208.9 force and anchorage rules, coordinating relative motion, and using Section 211.1 for flood conditions.",
-      "takeaway": "The source-safe workflow is category, force, transfer, relative motion, and flood boundary when relevant.",
-      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
-      "a": "Not selected: Ignore component categories once the building is essential.",
-      "b": "Selected: Identify listed equipment categories, apply Section 208.9 force and anchorage rules, coordinate relative motion, and use flood provisions where applicable.",
-      "c": "Not selected: Use only architectural finish requirements.",
-      "d": "Not selected: Replace all component checks with a single occupancy label."
+      "a": "Addressing hazards separately misses cumulative effects; integrated design is required.",
+      "c": "Prioritizing one hazard violates multiple code requirements; all three hazards are mandated by the three applicable standards.",
+      "d": "Professional engineer seal requires compliance with all applicable codes; selective compliance is a violation of professional ethics and legal standards.",
+      "correct": "Comprehensive MEPF design for a building facing multiple hazards must integrate all three code requirements: NSCP 2015 seismic and wind criteria, PD 1096 emergency systems and fire safety, and RA 10121 disaster resilience (critical facility 72-hour autonomy). Option B demonstrates this integration across all hazard types and system categories.",
+      "takeaway": "Professional engineers must integrate seismic, wind, and flood design criteria across all MEPF systems, with emergency power and communication resilience, to meet NSCP 2015, PD 1096, and RA 10121 requirements for multi-hazard-prone critical facilities."
     },
-    "explanation": "The checked anchors support identifying Table 208-13 equipment categories, applying Section 208.9 force and anchorage rules, coordinating relative motion, and using Section 211.1 for flood conditions.",
-    "code_citation": "NSCP 2015 Vol. I, Table 208-1, Table 208-13, Section 208.9, and Section 211.1; OCR pages 237, 283-287, and 290.",
-    "bloom_level": "apply",
-    "difficulty": 0.7,
+    "explanation": "",
+    "code_citation": "LEA-UTIL-004-05.mdx, comprehensive across all sections",
+    "bloom_level": "evaluate",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.5,
     "difficulty_rating": null,
     "discrimination_rating": null,
-    "is_assessment": false,
-    "model_id": "ALE-UTIL-004-05-024",
-    "prompt_image_url": null,
-    "application_context": "code_interpretation",
-    "practice_context": [
-      "utilities",
-      "seismic bracing",
-      "batch 164 question alignment",
-      "source-audited NSCP Batch 164"
-    ]
+    "model_id": "ALE-UTIL-004-05-024"
   }
 }

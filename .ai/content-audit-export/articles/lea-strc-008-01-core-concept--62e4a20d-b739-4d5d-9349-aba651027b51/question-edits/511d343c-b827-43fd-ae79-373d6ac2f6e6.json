@@ -21,5 +21,52 @@
     "checked_sources": [
       "bsi-steel-members"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which statement about W shapes stays inside the local source boundary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "W shape numbers automatically prove exact capacity without a table."
+      },
+      {
+        "id": "b",
+        "text": "Wide-flange W shapes have largely superseded classic S shapes for steel beams."
+      },
+      {
+        "id": "c",
+        "text": "W shapes are masonry wythes."
+      },
+      {
+        "id": "d",
+        "text": "W shapes never need connection checks."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "W shape numbers automatically prove exact capacity without a table. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "b": "Wide-flange W shapes have largely superseded classic S shapes for steel beams. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+      "c": "W shapes are masonry wythes. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "d": "W shapes never need connection checks. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "correct": "Wide-flange W shapes have largely superseded classic S shapes for steel beams. Supported by bsi-steel-members.",
+      "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-steel-members",
+      "checked_sources": [
+        "bsi-steel-members"
+      ]
+    },
+    "explanation": "Wide-flange W shapes have largely superseded classic S shapes for steel beams. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+    "code_citation": "bsi-steel-members",
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-008-01-001"
   }
 }

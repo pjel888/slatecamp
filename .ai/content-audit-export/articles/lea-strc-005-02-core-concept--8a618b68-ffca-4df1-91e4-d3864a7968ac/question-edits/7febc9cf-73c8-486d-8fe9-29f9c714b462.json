@@ -22,5 +22,53 @@
       "fundamentals-strength",
       "bsi-design"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Why should an exam answer avoid unsupported exact reduction-factor tables?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exact factors are never used in structural design."
+      },
+      {
+        "id": "b",
+        "text": "All factors are chosen by the architect during schematic design."
+      },
+      {
+        "id": "c",
+        "text": "Exact factors must come from the applicable code table or a captured source."
+      },
+      {
+        "id": "d",
+        "text": "Factored demand is the same as service stress."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Exact factors are never used in structural design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "All factors are chosen by the architect during schematic design. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "c": "Exact factors must come from the applicable code table or a captured source. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+      "d": "Factored demand is the same as service stress. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Exact factors must come from the applicable code table or a captured source. Supported by fundamentals-strength.",
+      "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "fundamentals-strength",
+      "checked_sources": [
+        "fundamentals-strength",
+        "bsi-design"
+      ]
+    },
+    "explanation": "Exact factors must come from the applicable code table or a captured source. Supported by the Batch 144 local source boundary: fundamentals-strength.",
+    "code_citation": "fundamentals-strength",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-005-02-003"
   }
 }

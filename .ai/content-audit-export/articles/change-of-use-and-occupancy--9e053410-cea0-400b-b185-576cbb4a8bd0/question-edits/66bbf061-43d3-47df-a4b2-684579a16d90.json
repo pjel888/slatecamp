@@ -2,9 +2,9 @@
   "question_id": "66bbf061-43d3-47df-a4b2-684579a16d90",
   "baseline_hash": "sha256:864060db1752c8fe9ae53cca20fb036c96cc294337541ce2163483d4004ef270",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "Does Section 309 cover a change in existing use or occupancy classification?",
+    "text": "A light manufacturing facility (moderate fire risk) is proposed to be converted into a daycare center for 80 children (high life risk, low fire risk). Applying the two criteria of Sec. 702, how should the Building Official classify this change?",
     "options": [
       {
         "id": "a",
-        "text": "Yes. No change in existing use or occupancy classification may be made until the Building Official issues the Certificate of Occupancy for it."
+        "text": "Less hazardous overall — fire risk decreases so the BO may approve at discretion without full Code review, provided that additional safety measures are implemented"
       },
       {
         "id": "b",
-        "text": "N"
+        "text": "More hazardous overall — life risk increases substantially with 80 vulnerable child occupants, triggering mandatory full Code compliance"
       },
       {
         "id": "c",
-        "text": "o"
+        "text": "Equivalent hazard — the decrease in fire risk exactly offsets the increase in life risk so no review is needed, assuming that existing safety protocols are deemed sufficient"
       },
       {
         "id": "d",
-        "text": "."
+        "text": "Outside Code jurisdiction — daycare centers are regulated exclusively by DSWD, not by PD 1096, unless specific structural changes are proposed"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Yes. No change in existing use or occupancy classification may be made until the Building Official issues the Certificate of Occupancy for it. This is supported by No. It only covers projection-room ports..",
-    "explanation": "Yes. No change in existing use or occupancy classification may be made until the Building Official issues the Certificate of Occupancy for it. The cited local source family controls this item: No. It only covers projection-room ports..",
-    "code_citation": "No. It only covers fire-extinguisher sales."
+    "correct_option_id": "b",
+    "rationale": "Sec. 702 requires evaluation of BOTH life risk AND fire risk. While fire risk decreases (daycare vs. manufacturing), life risk increases substantially: 80 young children are among the most vulnerable occupants, requiring enhanced egress design, fire detection, supervision, and accessibility features. A significant increase in life risk — even when fire risk decreases — classifies the change as more hazardous overall, mandating full Code compliance. Option C assumes the two criteria cancel out, which has no basis in the Code.",
+    "explanation": "When life risk and fire risk point in different directions, the more conservative interpretation governs. Vulnerable occupants (children, elderly, persons with disabilities) elevate life risk regardless of fire hazard level. Full Code compliance is required whenever either criterion indicates increased hazard.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

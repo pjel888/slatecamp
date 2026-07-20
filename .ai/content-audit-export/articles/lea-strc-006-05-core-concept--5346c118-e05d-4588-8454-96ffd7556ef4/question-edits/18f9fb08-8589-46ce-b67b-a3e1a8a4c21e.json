@@ -24,5 +24,54 @@
       "detailing-precast-integrity",
       "detailing-cover"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "In a precast slab floor that must act as a diaphragm, what source-backed detail matters?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All supports can be ignored once a topping is poured."
+      },
+      {
+        "id": "b",
+        "text": "Steel reinforcement should tie precast slab units at supports and end bearings."
+      },
+      {
+        "id": "c",
+        "text": "The units should remain completely untied for diaphragm action."
+      },
+      {
+        "id": "d",
+        "text": "The finish schedule replaces structural continuity."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "All supports can be ignored once a topping is poured. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "b": "Steel reinforcement should tie precast slab units at supports and end bearings. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+      "c": "The units should remain completely untied for diaphragm action. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "d": "The finish schedule replaces structural continuity. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "correct": "Steel reinforcement should tie precast slab units at supports and end bearings. Supported by bsi-prestress-precast; detailing-precast-integrity.",
+      "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-prestress-precast; detailing-precast-integrity",
+      "checked_sources": [
+        "bsi-prestress-precast",
+        "detailing-precast-integrity",
+        "detailing-cover"
+      ]
+    },
+    "explanation": "Steel reinforcement should tie precast slab units at supports and end bearings. Supported by the Batch 145 local source boundary: bsi-prestress-precast; detailing-precast-integrity.",
+    "code_citation": "bsi-prestress-precast; detailing-precast-integrity",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-05-008"
   }
 }

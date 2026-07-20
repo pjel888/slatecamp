@@ -24,5 +24,54 @@
       "bsi-design",
       "bsi-bending"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Why is a deeper section often helpful for bending performance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depth removes all need for support reactions."
+      },
+      {
+        "id": "b",
+        "text": "Greater depth can improve section efficiency and reduce bending stress and deflection."
+      },
+      {
+        "id": "c",
+        "text": "Depth changes service loads into factored loads automatically."
+      },
+      {
+        "id": "d",
+        "text": "Depth makes the neutral axis disappear."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Depth removes all need for support reactions. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Greater depth can improve section efficiency and reduce bending stress and deflection. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+      "c": "Depth changes service loads into factored loads automatically. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "Depth makes the neutral axis disappear. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Greater depth can improve section efficiency and reduce bending stress and deflection. Supported by bsi-bending; mechanics-allowable.",
+      "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-bending; mechanics-allowable",
+      "checked_sources": [
+        "mechanics-allowable",
+        "bsi-design",
+        "bsi-bending"
+      ]
+    },
+    "explanation": "Greater depth can improve section efficiency and reduce bending stress and deflection. Supported by the Batch 144 local source boundary: bsi-bending; mechanics-allowable.",
+    "code_citation": "bsi-bending; mechanics-allowable",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-005-03-001"
   }
 }

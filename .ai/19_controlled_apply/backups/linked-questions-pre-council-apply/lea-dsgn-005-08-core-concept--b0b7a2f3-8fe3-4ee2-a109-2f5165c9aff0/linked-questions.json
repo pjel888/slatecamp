@@ -1,0 +1,541 @@
+{
+  "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:159644781b5808bfb4f1449e374ccf5e1d4378b8425e88b4ea4987f8093ad676",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "3dba9ff1-36a2-4fd3-ac3c-84796439112a",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "An accessible entrance door to a BHC is specified with a clear opening width of 850 millimeters. Does this comply with BP 344?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 850 mm is acceptable under certain conditions where space constraints are documented"
+        },
+        {
+          "id": "b",
+          "text": "No, BP 344 requires a minimum clear opening width of 900 mm. (ERR-DSGN-015 inverse)"
+        },
+        {
+          "id": "c",
+          "text": "No, BP 344 requires 1000 mm minimum for high-traffic areas to ensure accessibility"
+        },
+        {
+          "id": "d",
+          "text": "No, BP 344 requires only 750 mm for secondary entrances not primarily used by the public"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "850 mm does not meet the 900 mm minimum required by BP 344.",
+        "c": "1000 mm exceeds the minimum requirement; 900 mm is the specified standard.",
+        "d": "750 mm is insufficient; BP 344 requires 900 mm minimum.",
+        "correct": "BP 344 specifies an accessible door clear opening width of 900 mm minimum to allow wheelchair passage. 850 mm falls short by 50 mm and is non-compliant. (BP 344, ERR-DSGN-015)",
+        "takeaway": "Accessible door clear opening width per BP 344 = 900 mm minimum. 850 mm is non-compliant."
+      },
+      "explanation": null,
+      "code_citation": "BP 344; ERR-DSGN-015",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "accessibility",
+        "bp 344",
+        "door sizing"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:39d01773f618be3ffcf17afca304c71ba07c9ef0ef44398de27e9e5af8306714"
+    },
+    {
+      "question_id": "a6a6f2ce-1e83-4eae-bb38-8226943589c6",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "A pharmacy dispensary in a community health center is being sized. According to DOH standards, what is the minimum area required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 sqm"
+        },
+        {
+          "id": "b",
+          "text": "4 sqm"
+        },
+        {
+          "id": "c",
+          "text": "6 sqm"
+        },
+        {
+          "id": "d",
+          "text": "8 sqm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2 sqm is insufficient for pharmacy operations and medication storage.",
+        "c": "6 sqm exceeds the minimum requirement; 4 sqm is the standard.",
+        "d": "8 sqm exceeds the minimum standard.",
+        "correct": "Pharmacy dispensary minimum area per DOH/Sentrong Sigla standards = 4 sqm. This allows space for shelving, counter, and medication management. (DOH Facility Standards)",
+        "takeaway": "Pharmacy dispensary minimum area per DOH = 4 sqm."
+      },
+      "explanation": null,
+      "code_citation": "DOH Facility Standards",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [
+        "space programming",
+        "pharmacy"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a37235311b21a23b2d85a71591678271c78ad044c108e6b026915632a840b009"
+    },
+    {
+      "question_id": "31185486-f6f9-4973-b004-a79d276d939d",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "A community health center is designed to serve 120 persons in total (clinical, waiting, and administrative areas). How many separate exits are required, and what is the minimum combined exit width?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 exit; 570 mm total width, which is below the standard requirement for such facilities"
+        },
+        {
+          "id": "b",
+          "text": "2 exits; 912 mm combined width, ensuring compliance with safety regulations for emergency egress"
+        },
+        {
+          "id": "c",
+          "text": "2 exits; 912 mm combined width (120 × 7.6 ÷ 1000)"
+        },
+        {
+          "id": "d",
+          "text": "3 exits; 1700 mm combined width, providing ample egress capacity for high-traffic scenarios"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "One exit is insufficient for 120 persons. Two exits are required at 50+ person occupancy.",
+        "b": "912 mm is the minimum calculated width, but 1140 mm provides appropriate safety margin for institutional occupancy.",
+        "d": "Three exits exceed the requirement; two exits are sufficient for 120-person institutional facility.",
+        "correct": "At 120-person occupancy, two exits are required (NBC: 2 exits mandatory at 50+ persons). Minimum combined exit width = 120 × 7.6 mm/person ÷ 1000 = 0.912 m = 912 mm. However, option (c) shows 1140 mm which allows additional safety margin and is commonly used for Group D institutional design. (NBC Table 3, ERR-DSGN-021 inverse)",
+        "takeaway": "At 120-person occupancy: 2 exits required (50+ person threshold). Minimum combined width = 120 × 7.6 mm ÷ 1000 = 912 mm."
+      },
+      "explanation": null,
+      "code_citation": "NBC Table 3; ERR-DSGN-021",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [
+        "fire safety",
+        "exit requirements",
+        "occupant load"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8bb365ff95838b41950f64cdef3e24a6a35b02c80162c4d834fa6fa823fe538f"
+    },
+    {
+      "question_id": "ffbd3fbc-c7be-4e85-b7e1-a9f954961b04",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "A community health center consultation room is sized at 3.0 meters by 3.0 meters. What is the total area in square meters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.0 sqm"
+        },
+        {
+          "id": "b",
+          "text": "9.0 sqm"
+        },
+        {
+          "id": "c",
+          "text": "12.0 sqm"
+        },
+        {
+          "id": "d",
+          "text": "15.0 sqm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6.0 sqm is insufficient; consultation room minimum is 9.0 sqm.",
+        "c": "12.0 sqm is the minimum for a treatment room, not a consultation room.",
+        "d": "15.0 sqm exceeds the minimum consultation room requirement.",
+        "correct": "3.0m × 3.0m = 9.0 sqm. This is the minimum area for a consultation room per DOH/Sentrong Sigla standards. (DOH Facility Standards)",
+        "takeaway": "Community health center consultation room minimum = 9 sqm (3.0m × 3.0m)."
+      },
+      "explanation": null,
+      "code_citation": "DOH/Sentrong Sigla Facility Standards",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [
+        "space programming",
+        "consultation room"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b23769eed089a859f0b0395b103a5c9f573e407450fdc2ab3e3d99658aaecf55"
+    },
+    {
+      "question_id": "3a742a98-4708-40ce-8a74-235d05178bac",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "According to BP 344 (Accessibility Law), what are the minimum dimensions of an accessible toilet facility in a community health center?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.5m × 1.5m"
+        },
+        {
+          "id": "b",
+          "text": "1.7m × 1.7m"
+        },
+        {
+          "id": "c",
+          "text": "2.0m × 2.0m"
+        },
+        {
+          "id": "d",
+          "text": "2.5m × 2.5m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.5m × 1.5m is too small for accessible toilet clearance and wheelchair turn.",
+        "c": "2.0m × 2.0m exceeds minimum but may be used for larger facilities.",
+        "d": "2.5m × 2.5m is larger than required minimum standard.",
+        "correct": "BP 344 specifies accessible toilet dimensions as 1.7m × 1.7m minimum to accommodate wheelchair maneuverability and grab bar installation. (BP 344 2024 IRR Section 4.2.5)",
+        "takeaway": "Accessible toilet minimum dimensions per BP 344 = 1.7m × 1.7m."
+      },
+      "explanation": null,
+      "code_citation": "BP 344 Accessibility Law",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "accessibility",
+        "bp 344"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b679776fb2396b02abe8a0957c5bec8c8b0f9e7c68ffbeafd3e6b0dbb7918b4f"
+    },
+    {
+      "question_id": "54505189-13a8-47dc-8e43-70cf78f14c98",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "A treatment room in a community health center is designed with dimensions of 3.5 meters by 3.5 meters. Is this compliant with DOH space standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 12.25 sqm meets the 12 sqm minimum for treatment rooms."
+        },
+        {
+          "id": "b",
+          "text": "No, treatment rooms require a minimum of 15 sqm."
+        },
+        {
+          "id": "c",
+          "text": "No, the room dimensions should be 4.0m × 3.0m minimum."
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only for consultation; treatment rooms need 18 sqm."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Treatment rooms require 12 sqm minimum, not 15 sqm. 12.25 sqm is sufficient.",
+        "c": "Dimensional requirements vary; what matters is total area meeting 12 sqm minimum. 3.5m × 3.5m is acceptable.",
+        "d": "Treatment rooms do not require 18 sqm; the standard is 12 sqm minimum.",
+        "correct": "Treatment room minimum per DOH standards = 12 sqm. A 3.5m × 3.5m room = 12.25 sqm, which exceeds the 12 sqm minimum and is compliant. (DOH Facility Standards)",
+        "takeaway": "Treatment room minimum area per DOH = 12 sqm. 3.5m × 3.5m (12.25 sqm) is compliant."
+      },
+      "explanation": null,
+      "code_citation": "DOH Facility Standards",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [
+        "space programming",
+        "doh standards"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ac16ffed47d73ca1a672f3458a993e8b16a86452bbb2b0acb097ada265d5514"
+    },
+    {
+      "question_id": "11db642a-65f0-4449-90cc-3cf95b84a81a",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "A BHC is located adjacent to a commercial office building (Group E). Per the National Building Code, what fire separation rating is required between the BHC (Group D) and the adjacent office space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1-hour fire-rated wall"
+        },
+        {
+          "id": "b",
+          "text": "2-hour fire-rated wall"
+        },
+        {
+          "id": "c",
+          "text": "3-hour fire-rated wall"
+        },
+        {
+          "id": "d",
+          "text": "No separation required; different groups can be adjacent."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1-hour separation is insufficient for Group D; institutional facilities require 2-hour minimum.",
+        "c": "3-hour separation is more restrictive than required; 2-hour is the NBC standard.",
+        "d": "Fire separation is mandatory; different occupancy groups must be separated by rated walls.",
+        "correct": "NBC Rule X Table X-700 specifies 1-hour between Group D and Group E (neither high hazard) to protect vulnerable patients. This applies regardless of the adjacent group. (NBC Fire Safety Provisions, Group D requirements)",
+        "takeaway": "Group D (BHC) requires 2-hour fire-rated separation from any other occupancy group per NBC."
+      },
+      "explanation": null,
+      "code_citation": "NBC Fire Safety Provisions; Group D Requirements",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "fire safety",
+        "occupancy separation"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d5bfa113544e3932cc7277a1bcd0ff4ba7afd8c893009f790e947dc13cb03ab5"
+    },
+    {
+      "question_id": "89220a2e-d103-461d-bdee-329b6726d37c",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "A ramp providing accessible route to a community health center entrance is designed with a slope of 1:10. Which regulation does this violate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It complies with BP 344; 1:10 is acceptable, which is incorrect as it does not meet the maximum slope requirements for longer ramps"
+        },
+        {
+          "id": "b",
+          "text": "It violates BP 344 because the maximum slope is 1:10 (running slope for ramps ≤3m rise) or 1:12 (longer ramps). (ERR-DSGN-014)"
+        },
+        {
+          "id": "c",
+          "text": "It violates the NBC because ramps must be 1:8 maximum, which is not a correct interpretation of the code"
+        },
+        {
+          "id": "d",
+          "text": "It exceeds accessibility requirements; 1:15 is required, which is not accurate for all ramp lengths"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "BP 344 sets 1:12 as the maximum allowable slope; 1:10 is non-compliant.",
+        "c": "NBC ramp standards align with BP 344; the requirement is 1:12 maximum, not 1:8.",
+        "d": "1:15 is more restrictive than required; BP 344 allows up to 1:12.",
+        "correct": "BP 344 specifies a maximum ramp slope of 1:12 to ensure accessibility for persons with disabilities. A 1:10 slope is steeper and violates this requirement. (BP 344, ERR-DSGN-014)",
+        "takeaway": "Ramp slope maximum per BP 344 = 1:12. A 1:10 slope violates accessibility law."
+      },
+      "explanation": null,
+      "code_citation": "BP 344; ERR-DSGN-014",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "accessibility",
+        "bp 344",
+        "ramp design"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4d3129990868fc19b1be54bf8fd6190a7a1cd72254244075ba4a521185228e73"
+    },
+    {
+      "question_id": "5f10d370-1cb4-428f-830e-0e2fc5b16776",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "A BHC is designed with an occupant load of 75 persons in clinical and waiting areas. Calculate the minimum exit width required per the National Building Code.",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.8 mm (75 × 5mm/person), which is insufficient for safe egress according to standard calculations"
+        },
+        {
+          "id": "b",
+          "text": "4.5 mm (75 × 6mm/person), which does not meet the minimum requirements for exit width"
+        },
+        {
+          "id": "c",
+          "text": "0.57 m (75 × 7.6mm/person ÷ 1000)"
+        },
+        {
+          "id": "d",
+          "text": "6.8 m (75 × 9mm/person ÷ 1000), which exceeds typical requirements and is impractical"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 mm/person is incorrect; NBC specifies 7.6 mm/person for institutional occupancies.",
+        "b": "6 mm/person does not match NBC standards; correct rate is 7.6 mm/person.",
+        "d": "9 mm/person exceeds NBC requirement; the correct standard is 7.6 mm/person.",
+        "correct": "Exit width = Occupant Load75 × 5.0 mm/person ÷ 1000 = 0.375 m5 × 7.6 ÷ 1000 = 0.57 m (570 mm) minimum. (NBC Table 3, ERR-DSGN-019 inverse)",
+        "takeaway": "Exit width = Occupant Load × 7.6 mm/person (NBC Table 3). For 75 persons: 570 mm minimum."
+      },
+      "explanation": null,
+      "code_citation": "NBC Table 3; ERR-DSGN-019",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "fire safety",
+        "exit sizing"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:38e53e395274d83a32a43efede4258a92b66a2dbc7c8cef5a12453bdf85c151f"
+    },
+    {
+      "question_id": "31aa7fa4-6e66-44be-ad6a-ae502098e0a8",
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "topic_id": "70da2562-d5e5-4e6b-af6f-52d3afa8b851",
+      "text": "A Barangay Health Center (BHC) serves 50 or more persons in consultation and waiting areas. Under the National Building Code, what is the occupancy classification of this facility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group C (Education and Recreation)"
+        },
+        {
+          "id": "b",
+          "text": "Group A, Division 2 (Residential)"
+        },
+        {
+          "id": "c",
+          "text": "Group E (Business and Mercantile)"
+        },
+        {
+          "id": "d",
+          "text": "Group F (Industrial)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group C applies to education and assembly venues with higher mobility; BHCs have vulnerable occupants requiring institutional classification.",
+        "c": "Group E (mercantile) may house administrative offices, but the clinical function and patient vulnerability place the entire facility in Group D.",
+        "d": "Group F is industrial/manufacturing; BHCs are healthcare facilities classified as institutional.",
+        "correct": "BHCs are Group D because occupants (patients, elderly, infants) may be incapable of self-evacuation and require assisted egress. This institutional classification triggers stricter fire separation and exit requirements. (NBC Table 3, ERR-DSGN-002 inverse)",
+        "takeaway": "BHC occupancy classification is Group D (Institutional) due to patient vulnerability and assisted evacuation needs."
+      },
+      "explanation": null,
+      "code_citation": "NBC Table 3; ERR-DSGN-002",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "occupancy classification",
+        "group d institutional"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ea35977c9e32f5bc01d9c5006873878c28ae0d3d8cbc3e718a7837275b5f6b62"
+    }
+  ]
+}

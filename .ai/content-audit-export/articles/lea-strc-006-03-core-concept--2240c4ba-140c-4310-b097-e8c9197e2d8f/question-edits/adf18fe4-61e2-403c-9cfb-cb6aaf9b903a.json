@@ -24,5 +24,54 @@
       "fundamentals-strength",
       "detailing-flexural"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "What does ductility contribute to flexural behavior?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A reason to ignore load paths."
+      },
+      {
+        "id": "b",
+        "text": "Deformation capacity and warning before brittle failure."
+      },
+      {
+        "id": "c",
+        "text": "A guarantee that detailing is unnecessary."
+      },
+      {
+        "id": "d",
+        "text": "A replacement for reinforcement anchorage."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "A reason to ignore load paths. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Deformation capacity and warning before brittle failure. This stays inside the Batch 144 local source boundary for Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity.",
+      "c": "A guarantee that detailing is unnecessary. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "A replacement for reinforcement anchorage. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Deformation capacity and warning before brittle failure. Supported by bsi-design; detailing-flexural.",
+      "takeaway": "For Reinforced Concrete Flexure: Neutral Axis, Ductility, and Detail Continuity, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-design; detailing-flexural",
+      "checked_sources": [
+        "bsi-bending",
+        "fundamentals-strength",
+        "detailing-flexural"
+      ]
+    },
+    "explanation": "Deformation capacity and warning before brittle failure. Supported by the Batch 144 local source boundary: bsi-design; detailing-flexural.",
+    "code_citation": "bsi-design; detailing-flexural",
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-03-003"
   }
 }

@@ -23,5 +23,54 @@
       "bsi-design",
       "bsi-bending"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "What is the basic axial-tension logic of the allowable-stress method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Computed stress should always exceed allowable stress."
+      },
+      {
+        "id": "b",
+        "text": "Axial stress is unrelated to force and area."
+      },
+      {
+        "id": "c",
+        "text": "Computed tensile stress should be less than or equal to allowable tensile stress."
+      },
+      {
+        "id": "d",
+        "text": "Allowable stress is checked only after deflection fails."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Computed stress should always exceed allowable stress. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Axial stress is unrelated to force and area. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "c": "Computed tensile stress should be less than or equal to allowable tensile stress. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+      "d": "Allowable stress is checked only after deflection fails. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Computed tensile stress should be less than or equal to allowable tensile stress. Supported by mechanics-allowable.",
+      "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "mechanics-allowable",
+      "checked_sources": [
+        "mechanics-allowable",
+        "bsi-design",
+        "bsi-bending"
+      ]
+    },
+    "explanation": "Computed tensile stress should be less than or equal to allowable tensile stress. Supported by the Batch 144 local source boundary: mechanics-allowable.",
+    "code_citation": "mechanics-allowable",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-005-03-002"
   }
 }

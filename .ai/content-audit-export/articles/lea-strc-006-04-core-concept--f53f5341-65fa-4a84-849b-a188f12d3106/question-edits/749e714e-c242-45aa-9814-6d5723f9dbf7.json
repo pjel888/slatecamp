@@ -21,5 +21,52 @@
     "checked_sources": [
       "bsi-prestress-precast"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "A project asks for a post-tensioning grouting rule not captured in this batch. What is the safest answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approve any duct condition because the slab has already been stressed."
+      },
+      {
+        "id": "b",
+        "text": "Ignore tendon protection because deflection control was mentioned."
+      },
+      {
+        "id": "c",
+        "text": "Use the applicable code, project specification, or supplied source rather than restoring the uncaptured rule."
+      },
+      {
+        "id": "d",
+        "text": "Assume all grouting rules are identical for every system."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Approve any duct condition because the slab has already been stressed. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "b": "Ignore tendon protection because deflection control was mentioned. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "c": "Use the applicable code, project specification, or supplied source rather than restoring the uncaptured rule. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+      "d": "Assume all grouting rules are identical for every system. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "correct": "Use the applicable code, project specification, or supplied source rather than restoring the uncaptured rule. Supported by bsi-prestress-precast.",
+      "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-prestress-precast",
+      "checked_sources": [
+        "bsi-prestress-precast"
+      ]
+    },
+    "explanation": "Use the applicable code, project specification, or supplied source rather than restoring the uncaptured rule. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+    "code_citation": "bsi-prestress-precast",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-04-009"
   }
 }

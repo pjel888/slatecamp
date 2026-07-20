@@ -8,37 +8,31 @@
       "question_id": "104787da-f5be-477d-95bc-0e1e27f97a90",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "What is the fundamental difference in cost risk between Design-Build by Administration and Design-Build by Guaranteed Maximum Cost?",
+      "text": "What does SPP 207 Design-Build Services seek to balance?",
       "options": [
         {
           "id": "a",
-          "text": "Both models place equal cost risk on the architect, with no distinction in financial responsibility"
+          "text": "Time, quality, and cost"
         },
         {
           "id": "b",
-          "text": "Administration places no cost risk on the architect; GMC places significant financial risk on the architect"
+          "text": "Only tax, title, and survey"
         },
         {
           "id": "c",
-          "text": "Administration places all cost risk on the client; GMC guarantees the client against cost overruns"
+          "text": "Only contractor payroll and equipment rental"
         },
         {
           "id": "d",
-          "text": "Cost risk is determined entirely by the size of the project, not the delivery model, affecting financial outcomes"
+          "text": "Only jury scoring and anonymity"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Risk allocation differs fundamentally between the models.",
-        "c": "Both models affect client protection, but differently.",
-        "d": "The delivery model fundamentally shapes cost risk allocation.",
-        "correct": "In Administration, the client does not receive a guaranteed maximum cost and risk evolves with actual construction expenses. In GMC, the architect provides a guaranteed maximum estimate, placing cost control responsibility on the architect through savings sharing. SPP 207.",
-        "takeaway": "GMC places risk on architect; Administration doesn't."
-      },
+      "rationale": "The checked UAP source frames design-build around balancing time, quality, and cost.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "remember",
@@ -51,30 +45,30 @@
       "model_id": "ALE-PRAC-SVC-020-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.669316+00:00",
       "content_hash": "sha256:67155fc611e38563b38aa7a10f204025b65e1c05ef7ddceff005466de84e1eab"
     },
     {
       "question_id": "1c643395-56b1-4599-b95a-74e4c87e7395",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "An architect is deciding between Design-Build by Administration and Design-Build GMC for a commercial office building. The client has a well-defined program, trusts the architect's judgment, and wants active involvement in cost decisions. Which model is more appropriate?",
+      "text": "In SPP 207, what responsibility does the Architect assume in Design-Build Services?",
       "options": [
         {
           "id": "a",
-          "text": "Design-Build by Administration, as it supports collaborative cost management without the pressure of a cost guarantee"
+          "text": "Professional responsibility and civil liability for both design and construction"
         },
         {
           "id": "b",
-          "text": "Design-Build GMC, as it eliminates the need for client involvement, allowing the architect to make decisions independently"
+          "text": "Only ownership of the project site"
         },
         {
           "id": "c",
-          "text": "Neither model works without a guaranteed maximum cost, which is essential for budget control in large projects"
+          "text": "Only the role of a design competition juror"
         },
         {
           "id": "d",
-          "text": "Design-Build GMC, as it prevents all client communication about costs, ensuring that the project stays within budget constraints"
+          "text": "Only post-occupancy tax assessment"
         }
       ],
       "correct_option_id": "a",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Administration actually encourages active client involvement.",
-        "c": "Administration is specifically designed for this scenario.",
-        "d": "GMC does not prevent cost discussion; it provides a different risk framework.",
-        "correct": "Design-Build by Administration suits projects where scope and requirements are well-defined, where client and architect relationships are established, and where collaborative cost management is preferred over guaranteed costs. SPP 207.",
-        "takeaway": "Administration fits established relationships with active clients."
-      },
+      "rationale": "The source states that the Architect assumes professional responsibility and civil liability for both design and construction.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-SVC-020-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.671387+00:00",
       "content_hash": "sha256:7c7a1730736f3a2de9dd2aff157523541663478f518a13104e6a1a2a5ac2fa71"
     },
     {
       "question_id": "306b8c60-f29e-4c9c-a8e0-43072ff991a4",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "When should an architect select Design-Build GMC instead of Design-Build by Administration?",
+      "text": "Which pair names the two checked SPP 207 design-build types?",
       "options": [
         {
           "id": "a",
-          "text": "When the client is unwilling to trust the architect's judgment and demands third-party verification of all decisions"
+          "text": "By Administration and with Guaranteed Maximum Project Construction Cost"
         },
         {
           "id": "b",
-          "text": "When cost certainty is paramount, the client requires protection from cost escalation, or the architect is confident in cost estimating and value management"
+          "text": "Open competition and limited competition"
         },
         {
           "id": "c",
-          "text": "When the project scope is uncertain and likely to change, necessitating flexible contract terms and adaptive management strategies"
+          "text": "Programming and space management"
         },
         {
           "id": "d",
-          "text": "When the architect wants to avoid responsibility for construction decisions and prefers to delegate all site management tasks"
+          "text": "Lighting design and forensic architecture"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "GMC doesn't require distrust; it's about cost certainty.",
-        "c": "Uncertain scope suggests Administration, which is more flexible.",
-        "d": "GMC requires greater architect involvement in cost management.",
-        "correct": "Design-Build GMC suits projects where cost certainty is paramount, where the client requires protection from cost escalation, or where the architect's confidence in cost estimating and value management is strong. SPP 207.",
-        "takeaway": "GMC chosen when cost certainty and confidence matter."
-      },
+      "rationale": "The checked sources identify these two SPP 207 design-build service types.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-SVC-020-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.672052+00:00",
       "content_hash": "sha256:c029bfe9b822c102991a1a5f5428701177dc24d4096cdcbd649dc4d05de8a028"
     },
     {
       "question_id": "234a754c-5a4b-4e9c-9a6f-6e9c5cf960bb",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "In Design-Build by Administration, what type of client relationship is most appropriate?",
+      "text": "How does Design-Build with Guaranteed Maximum Project Construction Cost differ from Design-Build by Administration?",
       "options": [
         {
           "id": "a",
-          "text": "Adversarial, with the client and architect competing over costs, potentially leading to conflicts and project delays"
+          "text": "The Architect provides a guaranteed maximum project construction cost"
         },
         {
           "id": "b",
-          "text": "A collaborative relationship based on mutual trust where the architect and client work together on cost management"
+          "text": "The Architect stops being responsible for construction"
         },
         {
           "id": "c",
-          "text": "Minimal communication; the architect makes all decisions independently, which can lead to misunderstandings and misaligned project goals"
+          "text": "The project becomes an architectural design competition"
         },
         {
           "id": "d",
-          "text": "One where the client delegates all authority to a cost consultant, removing the architect from financial decision-making"
+          "text": "The owner becomes the professional adviser"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Collaboration is essential; adversarial relationships are counterproductive.",
-        "c": "Communication and partnership are fundamental.",
-        "d": "The architect remains the primary manager, not a cost consultant.",
-        "correct": "Design-Build by Administration works well when project scope is clear and the architect and client share a collaborative relationship based on mutual trust, with the client benefiting from the architect's direct involvement in construction decisions. SPP 207.",
-        "takeaway": "Administration needs trusting partnership."
-      },
+      "rationale": "The checked source says the guaranteed maximum cost mode is essentially the same except for the guaranteed maximum project construction cost.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "remember",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-SVC-020-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.672709+00:00",
       "content_hash": "sha256:10fdfc38ec180e2ab64b8ed0b2d3b7d8039354e1c8e43b6461991209271d0a93"
     },
     {
       "question_id": "97c8e79e-62ea-4660-a1a5-90d8f4fed351",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "How do contract documentation requirements differ between Design-Build by Administration and Design-Build GMC?",
+      "text": "Which statement is source-safe for Design-Build by Administration?",
       "options": [
         {
           "id": "a",
-          "text": "Both models require identical contract language and specifications, including clauses for unforeseen conditions and change orders"
+          "text": "Its scope is similar to SPP 202"
         },
         {
           "id": "b",
-          "text": "Administration contracts specify the architect's management role and fee structure; GMC contracts define the guaranteed maximum, cost-sharing formulas, and conditions for legitimate cost increases"
+          "text": "It is only a post-occupancy inspection"
         },
         {
           "id": "c",
-          "text": "GMC contracts are simpler because they don't need to address cost controls, allowing for more flexibility in project execution and management"
+          "text": "It is a tax registration procedure"
         },
         {
           "id": "d",
-          "text": "Only Administration requires detailed contract documentation, such as comprehensive project timelines and milestone deliverables"
+          "text": "It is a jury selection rule"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The distinct risk structures require different contractual terms.",
-        "c": "GMC contracts are more complex due to cost guarantee provisions.",
-        "d": "Both models require comprehensive contract documentation.",
-        "correct": "Design-Build by Administration contracts specify management role and fee structure. Design-Build GMC contracts define the guaranteed maximum, cost-sharing formulas, conditions for legitimate cost increases, and cost control mechanisms. SPP 207.",
-        "takeaway": "GMC contracts specify guarantee, sharing, exceptions."
-      },
+      "rationale": "The UAP source states that Design-Build Services by Administration has a scope similar to SPP 202.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "analyze",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-SVC-020-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.669986+00:00",
       "content_hash": "sha256:af8fa06c7db8cb0758460d84ecb52f24cb141cb1391c68da367de0cbc2e6afe1"
     },
     {
       "question_id": "e0462ca4-8b78-4020-afd9-22e40f0935ba",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "How does the guaranteed maximum cost in Design-Build GMC incentivize the architect's behavior?",
+      "text": "Which expenditure category is identified as owner-borne under the checked guaranteed maximum project construction cost rule?",
       "options": [
         {
           "id": "a",
-          "text": "It discourages the architect from caring about project quality, which is a misconception as quality is still a critical factor"
+          "text": "Construction variation orders or extra work orders"
         },
         {
           "id": "b",
-          "text": "It provides no incentive; the architect's fee is unaffected by actual costs, which is incorrect as cost management is a key responsibility"
+          "text": "Every design error attributable to the Architect"
         },
         {
           "id": "c",
-          "text": "It incentivizes aggressive value engineering, early cost estimating, and constructive collaboration to identify cost savings"
+          "text": "The Architect's ordinary office overhead"
         },
         {
           "id": "d",
-          "text": "It forces the architect to eliminate all specialized consultants, which is not true as consultants are often necessary for project success"
+          "text": "The jury's competition honorarium"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Cost control doesn't require sacrificing quality.",
-        "b": "The financial guarantee significantly affects the architect's financial outcome.",
-        "d": "Cost control can work with consultants through value engineering.",
-        "correct": "The guaranteed maximum cost in GMC places financial responsibility on the architect, incentivizing aggressive value engineering, early cost estimating, and constructive collaboration with building teams to identify cost-saving opportunities. SPP 207.",
-        "takeaway": "GMC incentivizes cost control and value engineering."
-      },
+      "rationale": "The source identifies CVOs and EWOs as additional expenditures borne by the Owner/Client.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-SVC-020-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.667140+00:00",
       "content_hash": "sha256:aa7e33526d14509293cf4cc3cf5f9dd1a1052bccad91d89b07d3a2c30f216ae8"
     },
     {
       "question_id": "59092694-695e-4747-9ffe-c6d0e72c377f",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "What are legitimate conditions under which additional costs are the client's responsibility in Design-Build GMC?",
+      "text": "Which escalation condition is source-supported as outside the Architect-attributable guarantee burden?",
       "options": [
         {
           "id": "a",
-          "text": "Any cost increase, regardless of cause, is the architect's responsibility under the guaranteed maximum contract terms"
+          "text": "Substantial escalation evidenced by NEDA"
         },
         {
           "id": "b",
-          "text": "Change orders initiated by the client, extra work orders, and legitimate cost escalation for materials or labor are borne by the client"
+          "text": "A private rumor of price change with no source basis"
         },
         {
           "id": "c",
-          "text": "Only costs explicitly authorized by the architect in writing through formal change order documentation are chargeable"
+          "text": "A competition jury preference"
         },
         {
           "id": "d",
-          "text": "The client assumes responsibility only for costs exceeding the project scope originally defined in the contract agreement"
+          "text": "A space audit note"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Legitimate exceptions exist for conditions beyond the architect's control.",
-        "c": "Written authorization is important but is not the sole criterion.",
-        "d": "Scope changes are one type of legitimate exception, but not the only one.",
-        "correct": "Legitimate exceptions to the cost guarantee include client change orders, extra work orders, and legitimate cost escalation for materials or labor evidenced by data from nationally recognized agencies. SPP 207.",
-        "takeaway": "Client CVOs and material escalation are client's cost."
-      },
+      "rationale": "The checked source identifies substantial escalation evidenced by NEDA as owner-borne.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-SVC-020-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.668636+00:00",
       "content_hash": "sha256:0ee3a2570f909f3a8eb81f3e5314cfc5dc7e33f1cd6afde78625e7fd8255087d"
     },
     {
       "question_id": "34218721-e9c7-4e19-aa52-942199241895",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "What does 'shared commitment to project success' mean in the context of Design-Build relationships, and how does it differ between Administration and GMC models?",
+      "text": "What is the best LEA distinction for SPP 207 compared with ordinary design services?",
       "options": [
         {
           "id": "a",
-          "text": "Both models eliminate the need for commitment; profit motives determine success, which can lead to conflicts of interest"
+          "text": "SPP 207 combines design and construction responsibility in the Architect's design-build role"
         },
         {
           "id": "b",
-          "text": "In Administration, commitment depends on collaborative cost management; in GMC, financial alignment creates mutual incentive for efficiency and value optimization"
+          "text": "SPP 207 removes construction from the Architect's responsibility"
         },
         {
           "id": "c",
-          "text": "Shared commitment means the architect and contractor have identical financial interests, which is rarely the case in practice"
+          "text": "SPP 207 is only about lighting fixture samples"
         },
         {
           "id": "d",
-          "text": "GMC eliminates shared commitment by making costs adversarial, potentially leading to disputes over budget allocations"
+          "text": "SPP 207 is only about site landscaping"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Professional commitment is fundamental to both models.",
-        "c": "Interests may differ; both models require commitment to project success.",
-        "d": "GMC creates alignment, not adversity, through savings sharing.",
-        "correct": "Successful Design-Build relationships depend on transparent cost factors and shared commitment to project success. In Administration, this relies on trust; in GMC, financial alignment through savings sharing creates mutual incentive for efficiency. SPP 207.",
-        "takeaway": "GMC aligns incentives through shared savings."
-      },
+      "rationale": "The source-supported distinction is the Architect's responsibility and civil liability for both design and construction.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "analyze",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-SVC-020-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.666090+00:00",
       "content_hash": "sha256:1172e952ce50be007897c0e0499a8d51b5b2587945d9be4071ba81909c431c58"
     },
     {
       "question_id": "b2827a52-9e38-4c85-838a-361de87c5e09",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "How does the cost guarantee in Design-Build GMC protect the client?",
+      "text": "Which result does the checked UAP source associate with Design-Build Services?",
       "options": [
         {
           "id": "a",
-          "text": "It ensures the project can never exceed the estimated cost, even for legitimate change orders, which provides a false sense of security"
+          "text": "Simplifying and expediting the process"
         },
         {
           "id": "b",
-          "text": "It provides cost certainty by guaranteeing the project construction cost will not exceed the maximum, subject to legitimate exceptions"
+          "text": "Automatically granting occupancy"
         },
         {
           "id": "c",
-          "text": "It eliminates all cost variation regardless of circumstances, which is not feasible in practical scenarios"
+          "text": "Replacing all client decisions"
         },
         {
           "id": "d",
-          "text": "It guarantees the project will be completed at half the estimated cost, which is unrealistic and not typically offered"
+          "text": "Cancelling all civil liability"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Legitimate exceptions (CVOs, escalation) can increase costs beyond the guarantee.",
-        "c": "The guarantee allows for specified legitimate exceptions.",
-        "d": "The guarantee protects against overruns; savings sharing rewards efficiency.",
-        "correct": "Design-Build GMC provides cost certainty by guaranteeing the project construction cost will not exceed the maximum, with specific conditions governing legitimate exceptions for additional expenditures. SPP 207.",
-        "takeaway": "GMC guarantees maximum cost plus legitimate exceptions."
-      },
+      "rationale": "The checked source says design-build can simplify and expedite the process.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "apply",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-SVC-020-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.670675+00:00",
       "content_hash": "sha256:c69001d3b18befd351bddcdf8c98afea00e59df7d9b471e1b5e10a273b9c345c"
     },
     {
       "question_id": "7ec35d00-6ac1-407b-8153-de0c4f23571f",
       "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
       "topic_id": "058f986c-530c-4bf1-9e69-9ad9e1c284a6",
-      "text": "What is the key distinction in how risk allocation affects the architect's approach to design decisions between Administration and GMC models?",
+      "text": "Which answer avoids an overbroad guaranteed-cost claim?",
       "options": [
         {
           "id": "a",
-          "text": "Both models encourage the same design approach regardless of cost implications, which is a common misunderstanding"
+          "text": "The guaranteed maximum project construction cost is subject to source-listed owner-borne exceptions"
         },
         {
           "id": "b",
-          "text": "In Administration, risk sharing is less defined; in GMC, the architect assumes explicit financial responsibility for cost predictability"
+          "text": "The Architect must absorb every cost increase from every cause"
         },
         {
           "id": "c",
-          "text": "Administration places more cost pressure on the architect than GMC, which can affect design flexibility"
+          "text": "The Owner pays nothing after contract signing under any condition"
         },
         {
           "id": "d",
-          "text": "Risk allocation has no impact on the architect's design decisions, which is not accurate in practice"
+          "text": "The guarantee only applies to competition prizes"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Risk allocation fundamentally affects design approach.",
-        "c": "GMC places more explicit cost pressure through the guarantee.",
-        "d": "Risk allocation significantly influences design decision-making.",
-        "correct": "In Administration, risk sharing is less defined and the architect coordinates but doesn't bear explicit cost guarantees. In GMC, the architect assumes explicit financial responsibility for cost predictability, affecting design decision-making. SPP 207.",
-        "takeaway": "GMC's guarantee makes architect cost-conscious."
-      },
+      "rationale": "The checked source identifies exceptions such as CVOs, EWOs, NEDA-evidenced escalation, and causes not attributable to the Architect.",
       "explanation": null,
       "code_citation": "SPP Doc 207",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-SVC-020-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.667958+00:00",
       "content_hash": "sha256:60dbd24e8351377bb4c098de68b857b3efb5e313d4673e1c7811fda749c1300d"
     }
   ]

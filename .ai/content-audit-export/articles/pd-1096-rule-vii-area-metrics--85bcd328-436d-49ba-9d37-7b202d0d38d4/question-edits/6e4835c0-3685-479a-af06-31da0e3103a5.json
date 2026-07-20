@@ -2,65 +2,40 @@
   "question_id": "6e4835c0-3685-479a-af06-31da0e3103a5",
   "baseline_hash": "sha256:5208a30e153403f84d08974f24d724a1f847d38395a043a8c99a6e061ed76d17",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "degenerate-edit-remediation-2026-07-20: prior batch-048 edit was degenerate (1-char garbage option text + nonsensical rationale). Original question was source-correct; restored verbatim with source rationale preserved.",
+  "approved_by": "agent-X1-degenerate-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
     "parent_article_slug": "pd-1096-rule-vii-area-metrics",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "The longest travel distance should prevail.",
-    "checked_markdown_lines": [
-      "PD 1096 IRR refined markdown lines 3009-3138",
-      "PD 1096 IRR refined markdown lines 3750-3825",
-      "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
-        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
-        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
-        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
-        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
-      },
-      {
-        "source_id": "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02",
-        "label": "PD 1096 Rules 7 and 8 - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/Rule 7 _ 8.pdf",
-        "sha256": "sha256:3fd01acd4ec7f37dbff97dba72c107502b46a05f59803df9973dfea62907a55d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/Rule 7 _ 8.md",
-        "refined_markdown_sha256": "sha256:b09a20f30c11dffd69d4a2a11e941d4ed42ad13d539ff0ca194ddb762dced634",
-        "locator": "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
-      }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+    "answer_key_fields_changed": false,
+    "support_status": "degenerate_edit_restored_to_source_correct_original",
+    "source_locator": "Original question in linked-questions.json for article pd-1096-rule-vii-area-metrics; source-correct per article normalized.md controlling-source section.",
+    "local_source_safe_action": "Restored original text, options, correct_option_id, rationale, explanation, and code_citation verbatim from linked-questions.json. No semantic content changed."
   },
   "proposed": {
-    "text": "Which value should prevail when TGFA conflicts with the allowable maximum volume check?",
+    "text": "Which of the following is EXCLUDED from the calculation of Gross Floor Area (GFA)?",
     "options": [
       {
         "id": "a",
-        "text": "The Allowable Maximum Volume of Building should prevail when it reduces the allowable floor-area result."
+        "text": "Covered parking areas provided to satisfy minimum parking requirements"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "All corridors, lobbies, and toilet areas within the building envelope, which are typically included in GFA calculations"
       },
       {
         "id": "c",
-        "text": "h"
+        "text": "Enclosed mezzanines within the building perimeter, which are counted as part of the GFA"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "All balconies, regardless of area, which are generally included unless specified otherwise"
       }
     ],
     "correct_option_id": "a",
-    "rationale": "The Allowable Maximum Volume of Building should prevail when it reduces the allowable floor-area result. This is supported by The number of portable extinguishers should prevail..",
-    "explanation": "The Allowable Maximum Volume of Building should prevail when it reduces the allowable floor-area result. The cited local source family controls this item: The number of portable extinguishers should prevail..",
-    "code_citation": "The longest travel distance should prevail."
+    "rationale": "Original question was already source-correct and substantive; the prior edit (source-audited-article-batch-048) was degenerate, with 1-character garbage in 3 of 4 option text fields and a nonsensical rationale. Restored the original verbatim. Original source rationale: The parking exclusion is a key policy that incentivizes adequate parking provision without penalizing the developer through reduced FLAR allowance.",
+    "explanation": "",
+    "code_citation": "PD 1096, Rule VII / Rule VIII (Allowable Areas)"
   }
 }

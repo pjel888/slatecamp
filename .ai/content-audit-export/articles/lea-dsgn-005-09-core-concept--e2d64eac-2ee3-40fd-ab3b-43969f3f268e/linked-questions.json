@@ -8,37 +8,31 @@
       "question_id": "66037bcc-79c4-417d-8718-d2aa3f459b5f",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "A barangay hall contains administrative offices (Barangay Captain, SK, secretarial). What is the primary occupancy group classification?",
+      "text": "For a barangay hall exam item, what classification posture is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Group A (Residential), typically used for buildings intended for dwelling purposes, which may include accessory uses"
+          "text": "Use the exact table and room use stated by the problem."
         },
         {
           "id": "b",
-          "text": "Group C (Education and Recreation), which covers buildings used for educational purposes, including schools and recreational facilities"
+          "text": "Treat the name barangay hall as one universal classification."
         },
         {
           "id": "c",
-          "text": "Group A, Division 1 or 2 (Residential/Conditional)"
+          "text": "Classify every barangay hall as a hospital."
         },
         {
           "id": "d",
-          "text": "Group D (Institutional), which includes buildings used for institutional purposes such as hospitals, nursing homes, and similar facilities"
+          "text": "Ignore occupant load and room function."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group A is residential; barangay halls are government office buildings, not residential.",
-        "b": "Group C applies to assembly venues; if the hall has a multi-purpose assembly component, that area may be Group C, but administrative offices are Group E.",
-        "d": "Group D is institutional (hospitals, care facilities); government administrative offices are Group E.",
-        "correct": "Barangay halls (administrative) are classified as Group A, Division 1 or 2 per NBC Rule VII. The Barangay Captain's office, SK office, and secretarial functions are business-type operations. (NBC Occupancy Groups)",
-        "takeaway": "Barangay hall administrative offices = Group E (business and mercantile)."
-      },
+      "rationale": "PD 1096 names Multi-purpose/Barangay Hall in one matrix context and civic or government centers in another, so the table and use control.",
       "explanation": null,
       "code_citation": "NBC Occupancy Groups",
       "bloom_level": "remember",
@@ -54,44 +48,38 @@
       "model_id": "ALE-DSGN-005-09-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.512449+00:00",
       "content_hash": "sha256:ed5e28da94874664830f37ee34cd5a86ac989397a8d68de4292443438ec0fcc7"
     },
     {
       "question_id": "40f057d1-e491-4ab3-9217-2c2e84c4df3f",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "A barangay serves 5,000 persons. According to space programming standards, what is the minimum linear length of the public counter?",
+      "text": "Which PD 1096 checked matrix entry explicitly names Multi-purpose/Barangay Hall?",
       "options": [
         {
           "id": "a",
-          "text": "2.5 meters (5,000 ÷ 2,000)"
+          "text": "The checked residential matrix context."
         },
         {
           "id": "b",
-          "text": "5.0 meters (5,000 ÷ 1,000)"
+          "text": "The hazardous storage row only."
         },
         {
           "id": "c",
-          "text": "10.0 meters (5,000 ÷ 500)"
+          "text": "The aircraft hangar row."
         },
         {
           "id": "d",
-          "text": "15.0 meters (5,000 ÷ 333)"
+          "text": "The cemetery row."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.5 meters is too small; the calculation should be (5,000 ÷ 1,000) × 2.0m = 10.0m.",
-        "b": "5.0 meters is half the required length; correct is 10.0 meters.",
-        "d": "15.0 meters exceeds the minimum requirement.",
-        "correct": "Public counter space = 2.0 meters per 1,000 barangay population. For 5,000 persons: (5,000 ÷ 1,000) × 2.0m = 5 × 2.0m = 10.0 meters. (No NBC requirement; functional programming)",
-        "takeaway": "Public counter = 2.0m per 1,000 population. For 5,000 persons: 10.0 meters minimum."
-      },
+      "rationale": "PD 1096 lists Multi-purpose/Barangay Hall in the checked A-1 matrix context.",
       "explanation": null,
       "code_citation": "NBC Public Counter Standards",
       "bloom_level": "understand",
@@ -107,44 +95,38 @@
       "model_id": "ALE-DSGN-005-09-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.510117+00:00",
       "content_hash": "sha256:6fe098f549f9322d44ab257f7ccaf5046960c3bb339f49bd20a37db6497b1f9d"
     },
     {
       "question_id": "9f09e4c1-88eb-491c-95d2-ffc7e264cec6",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "A barangay hall site has a total land area of 2,000 sqm and is zoned as GI (Government Institutional) with a 50% Parking Space Occupancy (PSO). What is the maximum parking area permitted?",
+      "text": "Which PD 1096 checked Group C entries can be relevant to barangay-hall civic functions?",
       "options": [
         {
           "id": "a",
-          "text": "500 sqm (25% of 2,000)"
+          "text": "Civic centers, community centers, civic or government centers, and other government buildings."
         },
         {
           "id": "b",
-          "text": "1,000 sqm (50% of 2,000)"
+          "text": "Only gasoline stations."
         },
         {
           "id": "c",
-          "text": "1,500 sqm (75% of 2,000)"
+          "text": "Only dry-cleaning plants."
         },
         {
           "id": "d",
-          "text": "2,000 sqm (100% of 2,000)"
+          "text": "Only agricultural structures."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "500 sqm is 25%; GI zone allows 50% PSO.",
-        "c": "1,500 sqm is 75%; GI zone is 50%, not 75%.",
-        "d": "2,000 sqm is 100%; GI zone PSO is 50% maximum.",
-        "correct": "GI zone PSO = 50% means parking area = 50% × total land area. For 2,000 sqm: 50% × 2,000 = 1,000 sqm maximum parking. (Local zoning ordinance/HLURB)",
-        "takeaway": "GI zone PSO = 50%. Parking area = 50% × total land area. For 2,000 sqm: 1,000 sqm."
-      },
+      "rationale": "PD 1096 Group C matrix rows include civic centers, community centers, civic or government centers, and other government buildings.",
       "explanation": null,
       "code_citation": "PD 1096; GI Zone Specifications",
       "bloom_level": "understand",
@@ -160,44 +142,38 @@
       "model_id": "ALE-DSGN-005-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.510902+00:00",
       "content_hash": "sha256:45c794b2f202bbeea4c5975bfd8f96b6ff286023a7f0af580cd189fd8af5489e"
     },
     {
       "question_id": "9cc8c037-3b84-48ff-acc1-cd68c27baccd",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "What is the minimum area required for a Barangay Captain's office in a barangay hall?",
+      "text": "Under RA 9514, when can a barangay session hall become an assembly occupancy?",
       "options": [
         {
           "id": "a",
-          "text": "7 sqm"
+          "text": "When it is used for gathering 50 or more persons for listed or similar purposes."
         },
         {
           "id": "b",
-          "text": "9 sqm"
+          "text": "Only when it has hospital beds."
         },
         {
           "id": "c",
-          "text": "10 sqm"
+          "text": "Only when it stores LPG."
         },
         {
           "id": "d",
-          "text": "12 sqm"
+          "text": "Never, because it is government-owned."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "7 sqm is insufficient for a Captain's office; the standard is 9 sqm.",
-        "c": "10 sqm is the requirement for the SK (Sangguniang Kabataan) office, not the Captain's office.",
-        "d": "12 sqm exceeds the minimum; 9 sqm is the standard for Captain's office.",
-        "correct": "The Barangay Captain's office requires a minimum of 9 square meters per NBC space programming standards for small government buildings. (No specific NBC requirement; refer to local standards or DILG guidelines if applicable)",
-        "takeaway": "Barangay Captain's office minimum area = 9 sqm."
-      },
+      "rationale": "RA 9514 assembly occupancy includes rooms or buildings used for gathering 50 or more persons for deliberation or similar uses.",
       "explanation": null,
       "code_citation": "No NBC requirement; functional programming",
       "bloom_level": "remember",
@@ -213,44 +189,38 @@
       "model_id": "ALE-DSGN-005-09-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.508113+00:00",
       "content_hash": "sha256:501daf497f29401270d8c2bc0478ba51b29b55449aa2a009c46f4bd27d696881"
     },
     {
       "question_id": "b9ca1f03-d96f-409e-bdb1-941bcea75641",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "What is the minimum area required for the SK (Sangguniang Kabataan) office in a barangay hall?",
+      "text": "How does RA 9514 treat an assembly room serving fewer than 50 persons when it is incidental to another occupancy?",
       "options": [
         {
           "id": "a",
-          "text": "8 sqm"
+          "text": "It is classified as part of the other occupancy and subject to that occupancy provisions."
         },
         {
           "id": "b",
-          "text": "9 sqm"
+          "text": "It automatically becomes a theater."
         },
         {
           "id": "c",
-          "text": "10 sqm"
+          "text": "It is exempt from all fire-safety review."
         },
         {
           "id": "d",
-          "text": "12 sqm"
+          "text": "It becomes health care occupancy."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "8 sqm is insufficient; SK office minimum is 10 sqm.",
-        "b": "9 sqm is the requirement for Barangay Captain's office, not SK office.",
-        "d": "12 sqm exceeds the minimum requirement; 10 sqm is the standard.",
-        "correct": "The SK office requires a minimum of 10 square meters per NBC standards for small government buildings. (NBC Small Government Building Standards)",
-        "takeaway": "SK (Sangguniang Kabataan) office minimum area = 10 sqm."
-      },
+      "rationale": "RA 9514 states that assembly use by fewer than 50 persons incidental to another occupancy is classified with the other occupancy.",
       "explanation": null,
       "code_citation": "NBC Small Government Building Standards",
       "bloom_level": "analyze",
@@ -266,44 +236,38 @@
       "model_id": "ALE-DSGN-005-09-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.509196+00:00",
       "content_hash": "sha256:4cacb8497ea0822147eba42258b9516d267b7468817c899271ed85fe6edd945e"
     },
     {
       "question_id": "31ca884c-cc3a-4aff-8f2a-5fa460611349",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "A barangay hall site covers 1,500 sqm and is zoned GI with 50% PSO. If the building footprint is 600 sqm, what maximum area should be devoted to parking?",
+      "text": "Which assembly occupant-load factor is source-safe for a concentrated use without fixed seats?",
       "options": [
         {
           "id": "a",
-          "text": "300 sqm (20% of site)"
+          "text": "0.65 m2 per person."
         },
         {
           "id": "b",
-          "text": "600 sqm (40% of site)"
+          "text": "3.3 m2 per person."
         },
         {
           "id": "c",
-          "text": "750 sqm (50% of site)"
+          "text": "11.1 m2 per person."
         },
         {
           "id": "d",
-          "text": "900 sqm (60% of site)"
+          "text": "No occupant-load factor is used."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "300 sqm is 20%; GI zone allows 50%.",
-        "b": "600 sqm is 40%; GI zone PSO is 50%.",
-        "d": "900 sqm is 60%; GI zone is capped at 50%.",
-        "correct": "GI zone PSO = 50% of total land area. Parking area = 50% × 1,500 sqm = 750 sqm. The building footprint (600 sqm) is separate from the parking calculation; PSO applies to total site area. (PD 1096, GI Zone Specifications)",
-        "takeaway": "GI zone PSO = 50% of total land area. For 1,500 sqm: 750 sqm maximum parking."
-      },
+      "rationale": "RA 9514 uses 0.65 m2 per person for concentrated assembly use without fixed seats.",
       "explanation": null,
       "code_citation": "PD 1096; GI Zone Specifications",
       "bloom_level": "analyze",
@@ -319,44 +283,38 @@
       "model_id": "ALE-DSGN-005-09-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.513922+00:00",
       "content_hash": "sha256:e71a4d5f0ae3f5b3040fda37dba893f2dae628c64d4e0721e94a6982207dc0e6"
     },
     {
       "question_id": "caea3ec0-1c8b-4da8-ad0a-80d5e6620062",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "Records and secretarial space in a barangay hall must be sized within a specific range. What is the prescribed minimum and maximum area?",
+      "text": "For a barangay hall assembly area, what main-exit rule is source-safe under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "4–6 sqm"
+          "text": "The main exit accommodates one half of the total occupant load."
         },
         {
           "id": "b",
-          "text": "6–9 sqm"
+          "text": "The main exit is optional when the hall is civic."
         },
         {
           "id": "c",
-          "text": "8–12 sqm"
+          "text": "The main exit is based only on the mayoral permit."
         },
         {
           "id": "d",
-          "text": "10–15 sqm"
+          "text": "The main exit must be hidden from public view."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "4–6 sqm is too small for records and secretarial functions.",
-        "b": "6–9 sqm is insufficient; correct range is 8–12 sqm.",
-        "d": "10–15 sqm exceeds the prescribed range.",
-        "correct": "Records and secretarial space in small government buildings is prescribed as 8–12 sqm per NBC standards, allowing flexibility based on document volume and staffing. (NBC Small Government Building Standards)",
-        "takeaway": "Records/secretarial space = 8–12 sqm per NBC."
-      },
+      "rationale": "RA 9514 requires a main exit sufficient for one half of the total occupant load in assembly occupancy.",
       "explanation": null,
       "code_citation": "NBC Small Government Building Standards",
       "bloom_level": "apply",
@@ -371,44 +329,38 @@
       "model_id": "ALE-DSGN-005-09-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.513219+00:00",
       "content_hash": "sha256:2aa06456fc1b6c2ee9a66d929b2f758f3f1fd44e62433a0af0def73a7e175667"
     },
     {
       "question_id": "87ea989c-c9f9-4e5e-a976-30edd14c34ef",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "A standard parking stall in a barangay hall site is to be sized. What are the correct minimum dimensions?",
+      "text": "What RA 9514 corridor width is source-safe for an assembly exit-access corridor serving 50 or more persons?",
       "options": [
         {
           "id": "a",
-          "text": "2.0m × 4.5m"
+          "text": "At least 1.12 m."
         },
         {
           "id": "b",
-          "text": "2.5m × 5.0m"
+          "text": "At least 0.40 m."
         },
         {
           "id": "c",
-          "text": "3.0m × 6.0m"
+          "text": "Exactly 3.30 m in all cases."
         },
         {
           "id": "d",
-          "text": "3.7m × 5.5m"
+          "text": "No minimum is stated."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.0m × 4.5m is too small for standard vehicle; correct is 2.5m × 5.0m.",
-        "c": "3.0m × 6.0m exceeds the standard requirement.",
-        "d": "3.7m × 5.5m is not standard; BP 344 2024 IRR specifies 3.6m × 5.0m.",
-        "correct": "Standard parking stall dimensions per NBC = 2.5m wide × 5.0m long. This accommodates a typical passenger vehicle. (PD 1096, NBC Parking Standards)",
-        "takeaway": "Standard parking stall = 2.5m wide × 5.0m long per NBC."
-      },
+      "rationale": "RA 9514 states that an exit-access corridor serving 50 or more persons in assembly occupancy is at least 1.12 m wide.",
       "explanation": null,
       "code_citation": "PD 1096; NBC Parking Standards",
       "bloom_level": "apply",
@@ -424,44 +376,38 @@
       "model_id": "ALE-DSGN-005-09-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.511682+00:00",
       "content_hash": "sha256:03f10b6f5f3ebfcbaa09eb1f9c0e2481d4930e2343b50310dcb309083e5fc669"
     },
     {
       "question_id": "3ea9c8ee-70b4-4d7b-a43b-8a8d36bb4c3a",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "An accessible parking stall at a barangay hall is to be provided for a person with disability and their attendant. What are the minimum dimensions per BP 344?",
+      "text": "Which Fire Code general statement supports barangay hall egress review?",
       "options": [
         {
           "id": "a",
-          "text": "2.5m × 5.0m"
+          "text": "Exit routes must be free, unobstructed, visible, marked, and illuminated as applicable."
         },
         {
           "id": "b",
-          "text": "3.0m × 5.5m"
+          "text": "Exit routes can be blocked during events."
         },
         {
           "id": "c",
-          "text": "3.6m × 5.0m"
+          "text": "Only storage rooms require egress."
         },
         {
           "id": "d",
-          "text": "4.5m × 6.0m"
+          "text": "Warning systems are prohibited."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.5m × 5.0m is standard parking, not accessible parking.",
-        "b": "3.0m × 5.5m does not meet the required width for accessible parking.",
-        "d": "4.5m × 6.0m exceeds the minimum requirement.",
-        "correct": "Accessible parking per BP 344 = 4.0m wide × 5.0m long per person with disability plus one attendant vehicle. This provides space for wheelchair loading and access. (BP 344 Accessibility Standards)",
-        "takeaway": "Accessible parking per BP 344 = 4.0m wide × 5.0m long."
-      },
+      "rationale": "The Fire Code source family requires free and unobstructed egress, visible exits, marked routes, illumination, and warning systems as applicable.",
       "explanation": null,
       "code_citation": "BP 344 Accessibility Standards",
       "bloom_level": "apply",
@@ -477,44 +423,38 @@
       "model_id": "ALE-DSGN-005-09-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.514598+00:00",
       "content_hash": "sha256:28aa11ed035f2fade0e4a03cd842b86b05c27db9c93d65ea395b99b949ce754b"
     },
     {
       "question_id": "9f5b0972-1e6e-4b45-94eb-7910dbd16d8a",
       "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
       "topic_id": "d4d0c26b-e6a9-45d3-81ec-41c28dfada4b",
-      "text": "A barangay hall has a 120-sqm multi-purpose assembly hall serving community meetings and events, plus administrative offices. The facility serves 6,000 persons. How should the occupancy be classified?",
+      "text": "Which answer is safe for a barangay hall with office, clinic, and assembly functions?",
       "options": [
         {
           "id": "a",
-          "text": "Group E only (business office dominates), which may not account for the assembly use"
+          "text": "Treat it as a mixed-use problem and apply the relevant occupancy rules to each function."
         },
         {
           "id": "b",
-          "text": "Group C or Group H for the assembly component; Group E for offices (mixed-use)"
+          "text": "Use only the word barangay to choose the answer."
         },
         {
           "id": "c",
-          "text": "Group A (residential), which is not applicable to this type of facility"
+          "text": "Always ignore the clinic."
         },
         {
           "id": "d",
-          "text": "Single Group C (assembly is dominant), reflecting the primary use of the space"
+          "text": "Always ignore the assembly room."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Administrative offices alone would be Group E, but the assembly hall requires separate occupancy classification.",
-        "c": "Group A is residential; government buildings are not residential.",
-        "d": "The assembly hall component is Group C/H, but offices are Group E; they must be treated separately per code.",
-        "correct": "Barangay halls with both administrative offices and assembly space are mixed-use. Administrative areas are Group E; the 120-sqm multi-purpose hall is classified as Group H (assembly <1,000 per NBC). Each zone has separate egress and exit requirements. (NBC Mixed-Use Classification)",
-        "takeaway": "Mixed-use barangay hall: Group E (offices) + Group C or H (assembly) with separate egress design."
-      },
+      "rationale": "The checked source families separate civic, health, and assembly functions; the problem facts control the applicable rule.",
       "explanation": null,
       "code_citation": "NBC Mixed-Use Classification; Occupancy Groups",
       "bloom_level": "analyze",
@@ -530,7 +470,7 @@
       "model_id": "ALE-DSGN-005-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.515261+00:00",
       "content_hash": "sha256:8e5252b5d3d6c5a418ff57f4d216e028db327fcf869db0326b339b95b0a5f917"
     }
   ]

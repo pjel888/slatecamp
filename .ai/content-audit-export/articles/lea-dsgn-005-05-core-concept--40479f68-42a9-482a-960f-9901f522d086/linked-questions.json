@@ -8,37 +8,31 @@
       "question_id": "7b8bfa70-2c84-47b4-b837-c0ab044afd39",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "A rural health unit waiting area must accommodate 50 seated persons. According to DOH occupancy standards, what is the minimum required waiting area floor space?",
+      "text": "Which first step is source-safe for a specialized health facility question?",
       "options": [
         {
           "id": "a",
-          "text": "50 sqm"
+          "text": "Identify the actual use and the source table before choosing the occupancy path."
         },
         {
           "id": "b",
-          "text": "65 sqm"
+          "text": "Apply a single room-area schedule to every clinic and hospital."
         },
         {
           "id": "c",
-          "text": "75 sqm"
+          "text": "Treat all health facilities as assembly occupancies."
         },
         {
           "id": "d",
-          "text": "100 sqm"
+          "text": "Use BP 344 dimensions even when the item asks only for PD 1096 occupancy."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "50 sqm is based on 1 sqm/person, which is used for classrooms but not clinical waiting areas.",
-        "b": "65 sqm is below the 1.5 sqm requirement.",
-        "d": "100 sqm exceeds the minimum requirement of 75 sqm.",
-        "correct": "The DOH planning standard for waiting areas is 1.5 sqm per seat/person. Therefore, 50 persons × 1.5 sqm = 75 sqm.",
-        "takeaway": "Waiting area occupancy = 1.5 sqm per seat/person."
-      },
+      "rationale": "PD 1096 uses several checked entries for outpatient clinics, hospitals, nursing homes, medical centers, and multi-purpose clinics. The exact use controls.",
       "explanation": null,
       "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-DSGN-005-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.207871+00:00",
       "content_hash": "sha256:0334bede4d8cf19ba76974de49acab4af1f290e67820d1c868ce83c206dfbcb0"
     },
     {
       "question_id": "7d4611ef-97fb-4cf3-95fb-7020d50f8748",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "A clinic serves 60 patients per day during peak hours. According to DOH Sentrong Sigla standards, what is the minimum number of water closets (toilet facilities) required for patient use?",
+      "text": "Under RA 9514, which facility set is explicitly included in health care facilities?",
       "options": [
         {
           "id": "a",
-          "text": "1 WC"
+          "text": "Hospitals, nursing homes, and birth centers."
         },
         {
           "id": "b",
-          "text": "2 WC"
+          "text": "Barangay halls, gymnasiums, and convention halls."
         },
         {
           "id": "c",
-          "text": "3 WC"
+          "text": "Restaurants with less than 50 occupants."
         },
         {
           "id": "d",
-          "text": "4 WC"
+          "text": "Branch libraries and museums."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1 WC is only sufficient for up to 30 persons.",
-        "c": "3 WC would be required for 90 persons.",
-        "d": "4 WC exceeds the standard for 60 persons.",
-        "correct": "The DOH Sentrong Sigla Movement guidelines established a standard of 1 water closet per 30 persons for primary health facilities. 60 ÷ 30 = 2 WC.",
-        "takeaway": "Sanitary Ratio = 1 WC per 30 persons."
-      },
+      "rationale": "RA 9514 lists hospitals, nursing homes, and birth centers as health care facilities.",
       "explanation": null,
       "code_citation": "DOH Sentrong Sigla Movement Guidelines",
       "bloom_level": "remember",
@@ -101,44 +89,38 @@
       "model_id": "ALE-DSGN-005-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.211398+00:00",
       "content_hash": "sha256:e346587cc814b2ba476287a4f493839f27709ef4d9c9ecd45980304509094f7d"
     },
     {
       "question_id": "b0f2a6ed-9886-4090-9675-94f321a2218a",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "A barangay health center has a peak occupancy of 85 persons (patients, visitors, and staff). According to PD 1096 Rule X (Exits), how many emergency exits are required?",
+      "text": "For a hospital or nursing home floor under RA 9514, what exit rule is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "One exit (single occupancy under 100)"
+          "text": "At least two remote exits are required for each floor or fire section."
         },
         {
           "id": "b",
-          "text": "Two exits (required at 50+ persons)"
+          "text": "One exit is always enough if staff are present."
         },
         {
           "id": "c",
-          "text": "Three exits (health facility requirement)"
+          "text": "Elevators count as the required exits."
         },
         {
           "id": "d",
-          "text": "Four exits (per DOH minimum)"
+          "text": "A lobby may replace all exits."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Single exits are only permitted for occupant loads less than 50.",
-        "c": "Three exits are required only when the load exceeds 500.",
-        "d": "Four exits are required when the load exceeds 1,000.",
-        "correct": "PD 1096 2004 IRR Rule X Section 1007.2 requires at least two exits for any floor or portion thereof with an occupant load of 50 to 500.",
-        "takeaway": "Egress threshold: 50 persons = 2 exits minimum."
-      },
+      "rationale": "RA 9514 requires at least two remote exits for each floor or fire section and states that elevators are supplementary, not required exits.",
       "explanation": null,
       "code_citation": "PD 1096 IRR Rule X Section 1007",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-DSGN-005-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.206978+00:00",
       "content_hash": "sha256:0ad806295c07a1097abe08ecb5b6804870a99fed30ef26c5dc6ebb8474c6a516"
     },
     {
       "question_id": "c2e7ad69-62df-4d30-ac45-2938b63b340f",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "According to DOH standards, what is the minimum floor area required for a single consultation room in a primary care clinic?",
+      "text": "What RA 9514 clear width applies to aisles, corridors, and ramps required for exit access in hospitals or nursing homes?",
       "options": [
         {
           "id": "a",
-          "text": "6 sqm"
+          "text": "At least 2.44 m for hospital or nursing-home patient-use exit access."
         },
         {
           "id": "b",
-          "text": "9 sqm"
+          "text": "At least 0.75 m for all patient corridors."
         },
         {
           "id": "c",
-          "text": "10.5 sqm"
+          "text": "Exactly 1.00 m regardless of patient movement."
         },
         {
           "id": "d",
-          "text": "12 sqm"
+          "text": "No clear width is specified for health care."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "6 sqm is insufficient for clinical privacy and movement.",
-        "c": "10.5 sqm is the standard for a single acute-care hospital bed per DOH hospital standards, not outpatient consultation.",
-        "d": "12 sqm is the standard for treatment/procedure rooms.",
-        "correct": "DOH standards specify 9 sqm minimum for consultation rooms in primary care facilities. This provides sufficient space for the physician, patient, and one companion.",
-        "takeaway": "Consultation = 9 sqm. Treatment = 12 sqm. Hospital bed = 10.5 sqm."
-      },
+      "rationale": "RA 9514 states 2.44 m clear and unobstructed width for hospital or nursing-home exit access serving patient-use areas, with 1.83 m for adjunct areas not intended for inpatient housing, treatment, or use.",
       "explanation": null,
       "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-DSGN-005-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.209237+00:00",
       "content_hash": "sha256:47729ce7c90db6a69027d4493b9fa71baf174f52af5ce05b064b4a8a18013560"
     },
     {
       "question_id": "18b772cf-4f68-4bef-9409-f9c6af82befe",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "An outpatient clinic design uses a ramp to connect the waiting area to the consultation corridor. According to BP 344, what is the maximum permitted ramp slope?",
+      "text": "Which RA 9514 statement about health care smoke compartmentation is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "1:8 (12.5%)"
+          "text": "Storeys used by inpatients for sleeping or treatment are divided into at least two smoke compartments."
         },
         {
           "id": "b",
-          "text": "1:10 (10%)"
+          "text": "Smoke compartments are optional for all hospitals."
         },
         {
           "id": "c",
-          "text": "1:12 (8.3%)"
+          "text": "A single open floor is the default for inpatient sleeping areas."
         },
         {
           "id": "d",
-          "text": "1:15 (6.7%)"
+          "text": "Smoke partitions apply only to parking structures."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1:8 is too steep and dangerous for unassisted wheelchair users.",
-        "b": "1:10 is not allowed under BP 344; it exceeds the 1:12 limit.",
-        "d": "1:15 is a gentler slope and is encouraged, but 1:12 is the maximum legal limit.",
-        "correct": "BP 344 IRR Section 4.2.1 mandates that the maximum gradient for ramps shall be 1:12.",
-        "takeaway": "Maximum ramp slope = 1:12."
-      },
+      "rationale": "RA 9514 requires smoke partitions to divide every storey used by inpatients for sleeping or treatment into at least two compartments.",
       "explanation": null,
       "code_citation": "BP 344 IRR Section 4.2.1",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-DSGN-005-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.210724+00:00",
       "content_hash": "sha256:848526fb87686143ac490b2edec3b8dc11f48b97a67dd1e5add6b33792eea2a5"
     },
     {
       "question_id": "2af215ff-c61d-4f31-8e99-47ffd00a11d6",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "A clinic consultation room must be accessible for wheelchair users. According to BP 344, what is the minimum door width required for accessible entry?",
+      "text": "Which sprinkler rule is source-safe for hospitals and nursing homes under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "750 mm"
+          "text": "Approved supervised sprinklers are required throughout, except for a one-storey building with bed capacity not exceeding five."
         },
         {
           "id": "b",
-          "text": "800 mm"
+          "text": "Sprinklers are never required in nursing homes."
         },
         {
           "id": "c",
-          "text": "900 mm"
+          "text": "Sprinklers are required only in lobbies."
         },
         {
           "id": "d",
-          "text": "1000 mm"
+          "text": "Sprinklers are required only when a stage is present."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "750 mm is a standard bedroom door but not accessible.",
-        "b": "800 mm was an older standard, but current ALE expectations and BP 344 IRR revisions point to 900 mm for clear passage.",
-        "d": "1000 mm is helpful but not the minimum required.",
-        "correct": "BP 344 IRR requires a minimum clear opening of 900 mm for doors to be considered accessible for wheelchairs.",
-        "takeaway": "Accessible door minimum clear width = 900 mm."
-      },
+      "rationale": "RA 9514 requires approved supervised sprinklers throughout hospitals and nursing homes, with the stated one-storey, five-bed exception.",
       "explanation": null,
       "code_citation": "BP 344 IRR Section 4.3.1",
       "bloom_level": "analyze",
@@ -301,44 +265,38 @@
       "model_id": "ALE-DSGN-005-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.212078+00:00",
       "content_hash": "sha256:2737544bb63d5878648653fa9389746c48eb1fa28010049d0cff9ac9d5774c06"
     },
     {
       "question_id": "9c5b06bc-3c72-4e7a-bd2d-06da0e0e4c39",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "A BHC design includes consultation (9 sqm), treatment room (12 sqm), pharmacy (4 sqm), and waiting for 30 patients. When calculating total required waiting area, what is the minimum floor space needed to accommodate the 30-person waiting occupancy?",
+      "text": "If an exam item names an outpatient clinic rather than a hospital, what is the safest Batch 064 answer posture?",
       "options": [
         {
           "id": "a",
-          "text": "30 sqm (1 sqm per seat)"
+          "text": "Use the stated facility use and table; do not automatically apply hospital-only rules."
         },
         {
           "id": "b",
-          "text": "45 sqm (1.5 sqm per seat)"
+          "text": "Always classify it as a nursing home."
         },
         {
           "id": "c",
-          "text": "60 sqm (2 sqm per seat)"
+          "text": "Ignore PD 1096 and answer from furniture clearances."
         },
         {
           "id": "d",
-          "text": "75 sqm (2.5 sqm per seat)"
+          "text": "Assume it is an assembly hall."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "30 sqm uses a 1:1 ratio, which is incorrect for clinical waiting areas.",
-        "c": "60 sqm is based on 2 sqm/person, exceeding the minimum.",
-        "d": "75 sqm is based on 2.5 sqm/person, which is not the DOH standard.",
-        "correct": "Waiting area minimum space = 30 persons × 1.5 sqm/person = 45 sqm.",
-        "takeaway": "Total Area = Occupancy × 1.5 sqm/person standard."
-      },
+      "rationale": "PD 1096 separately mentions outpatient clinics and hospitals in checked entries, so hospital-only rules should not be imported without the facts.",
       "explanation": null,
       "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
       "bloom_level": "analyze",
@@ -351,44 +309,38 @@
       "model_id": "ALE-DSGN-005-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.212759+00:00",
       "content_hash": "sha256:9109dea295ccc8da9b370d1ca922d90bd493b36d64b6dc95161188d8c250de1d"
     },
     {
       "question_id": "f98d92ca-84e5-4466-9e57-72bddfd21432",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "A primary care clinic is classified under which occupancy group according to PD 1096?",
+      "text": "Which Fire Code general requirement supports specialized health facility egress review?",
       "options": [
         {
           "id": "a",
-          "text": "Group C (Education/Recreation)"
+          "text": "Exits must be of kind, number, location, and capacity appropriate to the occupancy and building conditions."
         },
         {
           "id": "b",
-          "text": "Group D (Institutional)"
+          "text": "All exits may be locked if the owner prefers."
         },
         {
           "id": "c",
-          "text": "Group E (Business/Mercantile)"
+          "text": "Egress can depend on one single safety feature."
         },
         {
           "id": "d",
-          "text": "Group A (Residential)"
+          "text": "Exit signs are optional in all occupied buildings."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group C is education/recreation (schools, churches), not healthcare.",
-        "c": "Group E is business/mercantile. While some private clinics are in office buildings, the occupancy classification for health facilities is institutional (Group D).",
-        "d": "Group A is residential. Clinics are not residential occupancies.",
-        "correct": "Primary care clinics and specialized health facilities are Group D (institutional) per PD 1096 Rule VII. This includes Health Centers, RHUs, and outpatient clinics providing healthcare services to non-ambulatory or semi-ambulatory patients.",
-        "takeaway": "All health facilities providing care = Group D institutional occupancy."
-      },
+      "rationale": "The Fire Code source family requires exits appropriate to the occupancy, occupant count, fire protection, height, and construction type.",
       "explanation": null,
       "code_citation": "PD 1096 Rule VII Section 701",
       "bloom_level": "remember",
@@ -401,44 +353,38 @@
       "model_id": "ALE-DSGN-005-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.208556+00:00",
       "content_hash": "sha256:aa1395b330ddc144c045c4568d015c2a2e5a7b22d8cd960e5529598a920daf4c"
     },
     {
       "question_id": "15ad7240-aff0-4172-bbed-33dad3a19c91",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "A clinic design must include a treatment/procedure room for minor surgery. According to DOH standards, what is the minimum required floor area?",
+      "text": "For emergency rooms, operating rooms, intensive care units, delivery rooms, and similar facilities, what does RA 9514 require as the basic location rule?",
       "options": [
         {
           "id": "a",
-          "text": "9 sqm"
+          "text": "They shall be located on the level of exit discharge unless the stated alternate conditions are met."
         },
         {
           "id": "b",
-          "text": "10.5 sqm"
+          "text": "They shall always be located below exit discharge."
         },
         {
           "id": "c",
-          "text": "12 sqm"
+          "text": "They are exempt from exit discharge review."
         },
         {
           "id": "d",
-          "text": "15 sqm"
+          "text": "They must be placed above the fifth floor."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "9 sqm is the size for a standard consultation room.",
-        "b": "10.5 sqm is the area for an inpatient hospital bed space.",
-        "d": "15 sqm is excellent for larger clinics but exceeds the mandated minimum.",
-        "correct": "Treatment and procedure rooms for primary care require a minimum of 12 sqm to accommodate the procedure table, equipment, and medical team.",
-        "takeaway": "Treatment/Procedure Room = 12 sqm minimum."
-      },
+      "rationale": "RA 9514 places those facilities on the level of exit discharge unless compliant ramp or horizontal-exit conditions are provided.",
       "explanation": null,
       "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
       "bloom_level": "apply",
@@ -451,44 +397,38 @@
       "model_id": "ALE-DSGN-005-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.210046+00:00",
       "content_hash": "sha256:57d6a0549fdc5fa567520ac1ac4a7b0bd38cff05e7759b6f9b623cc7fa85989b"
     },
     {
       "question_id": "040e6d8d-ac52-4024-88c5-ef1381861941",
       "article_id": "40479f68-42a9-482a-960f-9901f522d086",
       "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
-      "text": "A clinic pharmacy must dispense oral medications, injectables, and controlled substances. According to DOH standards, what is the minimum required pharmacy floor area?",
+      "text": "What does RA 9514 say about health care sleeping-room doors in the checked exit-access text?",
       "options": [
         {
           "id": "a",
-          "text": "2 sqm"
+          "text": "A sleeping room without a ground-level outside door needs an exit-access door leading to a corridor that leads to an exit."
         },
         {
           "id": "b",
-          "text": "4 sqm"
+          "text": "Sleeping rooms may rely only on windows for exit access."
         },
         {
           "id": "c",
-          "text": "6 sqm"
+          "text": "Sleeping rooms never need corridor access."
         },
         {
           "id": "d",
-          "text": "8 sqm"
+          "text": "Sleeping rooms must discharge through storage rooms."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2 sqm is insufficient for required storage cabinets and counter space.",
-        "c": "6 sqm is a higher-tier standard but not the minimum.",
-        "d": "8 sqm is typically for hospital-level pharmacies.",
-        "correct": "For primary care facilities, the dispensing area for the pharmacy requires a minimum of 4 sqm.",
-        "takeaway": "Primary care pharmacy dispensing area = 4 sqm minimum."
-      },
+      "rationale": "RA 9514 requires the health care sleeping room to have an exit-access door to a corridor leading to an exit, unless it opens at ground level.",
       "explanation": null,
       "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
       "bloom_level": "analyze",
@@ -501,7 +441,7 @@
       "model_id": "ALE-DSGN-005-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:20.027426+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.205817+00:00",
       "content_hash": "sha256:d35120c7157c12d2293679790bd86b0e46f4c72db662ecd42c257511a8b8e526"
     }
   ]

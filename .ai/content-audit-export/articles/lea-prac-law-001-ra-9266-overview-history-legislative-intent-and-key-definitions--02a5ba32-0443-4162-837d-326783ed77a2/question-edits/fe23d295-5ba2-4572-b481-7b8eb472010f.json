@@ -1,11 +1,77 @@
 {
   "question_id": "fe23d295-5ba2-4572-b481-7b8eb472010f",
   "baseline_hash": "sha256:1033ccce9a674fdf3f12677a4e622eb3c36ef318cf5cbbab814376b9cfbeb262",
-  "reason": "Batch 094 local-first audit revalidated RA 9266 overview, role definitions, Board/IAPOA anchors, and source-safe scenario enrichment.",
-  "approved_by": "codex-local-source-audit-batch-094",
-  "approved_at": "2026-05-12T21:35:16+08:00",
+  "action": "replace",
+  "reason": "Agent W (council-remediation-2026-07-20) source-audit fixes a substantive content error left untouched by the prior Batch 094 metadata-only edit. The linked question's marked-correct option (b 'one full additional term only') is correct under RA 9266 Section 6, but the rationale 'correct' string states 'limiting maximum tenure to 6 years for Chairman and 4 years for Members.' The 4-year ceiling for Members is wrong: under Section 6, reappointment is for 'one full term of three (3) years' applied uniformly, so for the FIRST Board a Member initially serving 2 years can be reappointed for a full 3-year term (5 years max), and a Member initially serving 1 year can be reappointed for a full 3-year term (4 years max). The Member ceiling is therefore 5 years, not 4. After the first Board's staggered cycle has passed, every regular member serves 3+3=6 years max. The Batch 094 edit refreshed only code_citation and explanation metadata without touching the wrong rationale. This edit rewrites the rationale 'correct' string so the maximum-tenure statement is source-accurate.",
+  "approved_by": "agent-W-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
+    "parent_article_slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+    "answer_key_fields_changed": true,
+    "support_status": "rationale_correction",
+    "source_locator": "RA 9266 Section 6 Term of Office - 'The members of the Board shall hold office for a term of three (3) years after appointment... Each member of the Board may be reappointed for one full term of three (3) years. Of the members of the Board first appointed under this Act, one (1) member shall hold office for two (2) years and the other member for one (1) year.'",
+    "checked_sources": [
+      {
+        "source_id": "ra-9266-section-6-term-of-office",
+        "locator": "RA 9266 Section 6, third paragraph - reappointment for one full term of three (3) years applies uniformly to all Board members regardless of initial term length",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/1491"
+      },
+      {
+        "source_id": "prboa-irr-ra9266-pdf",
+        "locator": "IRR Section 6 Term of Office",
+        "url": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.2-04_IRR_RA9266%20coded.pdf"
+      },
+      {
+        "source_id": "lawphil-ra-9266",
+        "locator": "RA 9266 full text Section 6",
+        "url": "https://lawphil.net/statutes/repacts/ra2004/ra_9266_2004.html"
+      }
+    ],
+    "local_source_safe_action": "corrected rationale 'correct' string which previously understated Member maximum tenure (4 years); replaced with source-accurate 5-year ceiling for the longer-serving first Board member and 6-year ceiling for all subsequent members"
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Sections 1-7 and 40",
-    "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Sections 1-6 and 40."
+    "text": "Under Section 6, how many times may a PRBoA member be reappointed after their initial term?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unlimited reappointments"
+      },
+      {
+        "id": "b",
+        "text": "One full additional term only"
+      },
+      {
+        "id": "c",
+        "text": "Two full additional terms"
+      },
+      {
+        "id": "d",
+        "text": "Reappointment is prohibited"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Unlimited reappointments would create indefinite tenure contrary to democratic rotation principles.",
+      "c": "Two additional terms would exceed the single-reappointment ceiling that Section 6 sets.",
+      "d": "Reappointment is allowed by Section 6, but limited to one additional term.",
+      "correct": "Section 6 states that each member of the Board may be reappointed for one full term of three (3) years. The ceiling is therefore one reappointment. Because Section 6 also prescribes staggered initial terms for the first Board (Chairman 3 years, one Member 2 years, the other Member 1 year), the resulting maximum tenures on the first Board are 6 years for the Chairman, 5 years for the Member with a 2-year initial term, and 4 years for the Member with a 1-year initial term. Once the staggered cycle has passed, every member serves a 3-year initial term and may be reappointed for a further 3 years, so the regular maximum tenure is 6 years.",
+      "takeaway": "The single-reappointment limit of one full 3-year term prevents entrenched power while ensuring sufficient tenure for policy continuity and expertise deployment."
+    },
+    "explanation": "The original rationale incorrectly stated 'limiting maximum tenure to 6 years for Chairman and 4 years for Members.' Section 6 fixes the reappointment at one full 3-year term regardless of the member's initial term, so the maximum tenure for the longer-serving first Board Member is 5 years (2+3), not 4.",
+    "code_citation": "RA 9266 Section 6",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "RA 9266",
+      "PRBoA composition and terms"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-001-005"
   }
 }

@@ -21,5 +21,52 @@
     "checked_sources": [
       "bsi-steel-connections"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "A connection detail uses oversized holes. What should this batch avoid claiming?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That bolted connections are point connections."
+      },
+      {
+        "id": "b",
+        "text": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured."
+      },
+      {
+        "id": "c",
+        "text": "That welded connections are line connections."
+      },
+      {
+        "id": "d",
+        "text": "That plates, tees, and angles can be transitional elements."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "That bolted connections are point connections. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "b": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured. This stays inside the Batch 147 local source boundary for Bolted Steel Connections and Source Limits.",
+      "c": "That welded connections are line connections. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "d": "That plates, tees, and angles can be transitional elements. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "correct": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured. Supported by bsi-steel-connections.",
+      "takeaway": "For Bolted Steel Connections and Source Limits, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-steel-connections",
+      "checked_sources": [
+        "bsi-steel-connections"
+      ]
+    },
+    "explanation": "Exact oversized-hole permissions and limits, unless a readable connection standard is captured. Supported by the Batch 147 local source boundary: bsi-steel-connections.",
+    "code_citation": "bsi-steel-connections",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-008-02-003"
   }
 }

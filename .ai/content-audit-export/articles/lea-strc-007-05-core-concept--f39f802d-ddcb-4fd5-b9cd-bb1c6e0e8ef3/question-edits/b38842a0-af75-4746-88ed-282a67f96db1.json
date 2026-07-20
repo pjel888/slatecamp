@@ -2,8 +2,8 @@
   "question_id": "b38842a0-af75-4746-88ed-282a67f96db1",
   "baseline_hash": "sha256:9dc9c63ea0d9bed9c203dc1a627e852fe6c41ddcf0e3c1952a27e330a4e21bd5",
   "action": "replace",
-  "reason": "Batch 164 question-alignment remediation: constrain embedment questions to checked NSCP Sections 420.7 and 426.8 and correct pipe-cover values.",
-  "approved_by": "codex-local-question-alignment-batch-164",
+  "reason": "Batch 164 question-alignment remediation: constrain embedment questions to checked NSCP Sections 420.7 and 426.8 and correct pipe-cover values. [council-fact-check-remediation-2026-07-20 / Agent G ERROR G2: re-verified citation as NSCP 2015 § 420.7 (mirroring ACI 318-14 § 26.6.5); confirmed the question premise no longer uses the fabricated § 6.3.x shortcuts (h/3, 4%, 3×diameter, w_rib/4) forbidden by the article body. NSCP 2015 Chapter 6 is Wood Design and contains no embedment rules.]",
+  "approved_by": "council-agent-J-question-remediation (re-stamped; original: codex-local-question-alignment-batch-164)",
   "approved_at": "2026-05-14T20:16:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
@@ -37,7 +37,8 @@
     "local_source_safe_action": "Question proposal now tests only structural impairment, material compatibility, aluminum coating, 0.002 perpendicular reinforcement, 40 mm / 20 mm cover, and Section 426.8 review/installation rules.",
     "excluded_claims": [
       "Detailed conduit-size, rib-width, spacing, and cumulative-area shortcuts outside Sections 420.7 and 426.8.",
-      "Any pipe-cover value that conflicts with the checked 40 mm and 20 mm Section 420.7.5 values."
+      "Any pipe-cover value that conflicts with the checked 40 mm and 20 mm Section 420.7.5 values.",
+      "Fabricated NSCP 2015 § 6.3.x citations (Chapter 6 is Wood Design); h/3, 4%, 3×diameter, w_rib/4 conduit shortcuts rejected by article body."
     ]
   },
   "proposed": {
@@ -71,7 +72,7 @@
       "d": "Not selected: It is accepted if the pipe is small."
     },
     "explanation": "The checked Section 426.8 continuation states that embedments not shown in construction documents shall be submitted for review by the licensed design professional.",
-    "code_citation": "NSCP 2015 Vol. I, Sections 420.7 and 426.8; OCR page 463 lines 60-81 and page 508 lines 3-27.",
+    "code_citation": "NSCP 2015 Vol. I, Sections 420.7 and 426.8; OCR page 463 lines 60-81 and page 508 lines 3-27; ACI 318-14 § 26.6.5 equivalence.",
     "application_context": "code_interpretation",
     "practice_context": [
       "structural",

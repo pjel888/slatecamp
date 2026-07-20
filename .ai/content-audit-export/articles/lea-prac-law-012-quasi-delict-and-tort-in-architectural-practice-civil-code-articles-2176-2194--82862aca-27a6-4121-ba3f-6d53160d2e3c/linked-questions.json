@@ -8,23 +8,23 @@
       "question_id": "8532bdb6-bdd8-4f4f-bd6e-1e5a9d11211c",
       "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
       "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
-      "text": "An architect retains a structural engineer to design the building frame. The engineer makes an error; the architect does not review the structural plans for compliance with the overall design. Is the architect liable under quasi-delict?",
+      "text": "An architect's employee makes a negligent coordination error within assigned design work, causing damage to a third party with no contract with the architect. Why can the architect or employer still be analyzed under quasi-delict?",
       "options": [
         {
           "id": "a",
-          "text": "No, because the structural engineer is an independent professional, which is a common defense."
+          "text": "Because Article 2176 imposes liability for every error without requiring negligence"
         },
         {
           "id": "b",
-          "text": "No, if the engineer was CHED-licensed and recognized, which may not absolve liability."
+          "text": "Because Article 1723 covers every non-collapse coordination error"
         },
         {
           "id": "c",
-          "text": "Yes, under Article 2180, unless the client explicitly approved the engineer and assumed responsibility"
+          "text": "Because Article 2180 can make employers responsible for employees acting within assigned tasks, together with the Article 2176 negligence rule"
         },
         {
           "id": "d",
-          "text": "No, because the architect's service agreement may disclaim liability for contracted professionals, though this may not hold in all cases."
+          "text": "Because payment of professional fees automatically transfers liability to the client"
         }
       ],
       "correct_option_id": "c",
@@ -51,7 +51,7 @@
       "model_id": "ALE-PRAC-LAW-012-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.728776+00:00",
       "content_hash": "sha256:8638ec4117b1d529d9800a25775686ce88e889f59975c929895c9261df3bdd6e"
     },
     {
@@ -158,23 +158,23 @@
       "question_id": "00550971-f954-4b5c-a520-3e0642ed4bb0",
       "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
       "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
-      "text": "What is the statute of limitations for filing a quasi-delict claim based on negligent architectural work?",
+      "text": "What prescription rule applies to a quasi-delict claim based on negligent architectural work?",
       "options": [
         {
           "id": "a",
-          "text": "2 years from discovery of damage"
+          "text": "Two years from discovery of damage"
         },
         {
           "id": "b",
-          "text": "4 years from discovery of damage"
+          "text": "Four years, counted from the day the action may be brought"
         },
         {
           "id": "c",
-          "text": "10 years from the negligent act"
+          "text": "Ten years from the negligent act in all cases"
         },
         {
           "id": "d",
-          "text": "15 years from completion of the building"
+          "text": "Fifteen years from completion of the building in all cases"
         }
       ],
       "correct_option_id": "b",
@@ -201,7 +201,7 @@
       "model_id": "ALE-PRAC-LAW-012-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.727644+00:00",
       "content_hash": "sha256:72be2d62cd10faa7a20de0a25d80d00ec60f91b305e4585c7800568110b6940e"
     },
     {
@@ -308,26 +308,26 @@
       "question_id": "f857ab41-1fea-4427-82e3-872b52cc036b",
       "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
       "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
-      "text": "An architect's design violates applicable building code provisions for seismic safety, but no earthquake occurs and no damage results during the architect's lifetime. After 16 years, an earthquake causes building failure. Can the architect be held liable under quasi-delict despite the 15-year Article 1723 window expiring?",
+      "text": "A building collapses sixteen years after completion from a construction defect of the kind covered by Civil Code Article 1723. May a third person avoid the Article 1723 period by pleading the same construction-defect damage as quasi-delict?",
       "options": [
         {
           "id": "a",
-          "text": "No, because both regimes have expired 16 years after completion, and no legal action can be pursued"
+          "text": "No, Article 2192 directs third-person construction-defect damage covered by Article 1723 to Article 1723 within its fixed period"
         },
         {
           "id": "b",
-          "text": "Yes, if filed within 4 years of discovering seismic damage, on the basis of negligent code violation"
+          "text": "Yes, any damage discovered later can always be filed as quasi-delict within four years of discovery"
         },
         {
           "id": "c",
-          "text": "No, because Article 1723 is the exclusive remedy for structural failures, and it has already expired"
+          "text": "Yes, if the architect knew of the defect, regardless of Article 2192"
         },
         {
           "id": "d",
-          "text": "Yes, but only if the client can prove the architect knew of the code violation, which can be difficult to establish"
+          "text": "No, because quasi-delict never applies to architects in any situation"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
@@ -351,7 +351,7 @@
       "model_id": "ALE-PRAC-LAW-012-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.731115+00:00",
       "content_hash": "sha256:99649780daabe4ccc02ec4c271778e7a795abfec25dd3c84b4bfcafb63ade5a6"
     },
     {
@@ -377,7 +377,7 @@
           "text": "Neither, because no collapse occurred, and the defects do not meet the threshold for legal action"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
@@ -401,7 +401,7 @@
       "model_id": "ALE-PRAC-LAW-012-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.729788+00:00",
       "content_hash": "sha256:911c57a9302f0448acded05eb5051c27772a839db44354e7ee0e224cd3e289b0"
     },
     {

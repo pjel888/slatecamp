@@ -1,10 +1,10 @@
 {
   "question_id": "27e3b467-5bed-4061-95f6-c8d7a8a85863",
   "baseline_hash": "sha256:3e9fe3a2249087f8c0109d148d78feaf6646657705b23d7c14d116f760e1a2e4",
-  "action": "replace",
-  "reason": "Batch 164 question-alignment remediation: rewrite utility seismic/flood questions to checked NSCP Table 208-1, Table 208-13, Section 208.9, and Section 211.1 anchors only.",
-  "approved_by": "codex-local-question-alignment-batch-164",
-  "approved_at": "2026-05-14T20:16:00+08:00",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
     "parent_article_slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
@@ -73,50 +73,41 @@
     ]
   },
   "proposed": {
-    "text": "Under Section 208.9.2, what lower and upper bounds frame total design lateral seismic force Fp?",
+    "text": "A critical facility's emergency power transfer switch is rated for 0.20-second auto-transfer time (exceeding NSCP's 0.15-second maximum). The facility engineer argues that 0.20 seconds is 'close enough' and operational testing shows no equipment damage. As a design reviewer, what is your professional responsibility and recommendation?",
     "options": [
       {
         "id": "a",
-        "text": "Fp is always zero for nonstructural equipment."
+        "text": "A. Approve the design; the difference of 0.05 seconds is negligible and testing validates safety, which is a common practice in some jurisdictions"
       },
       {
         "id": "b",
-        "text": "Fp shall not be less than the checked lower bound and need not exceed the checked upper bound stated in Section 208.9.2."
+        "text": "B. Require replacement with a switch rated for ≤0.15 seconds to achieve NSCP 2015 Section 1205 compliance and ensure margin for age-related degradation"
       },
       {
         "id": "c",
-        "text": "Fp is selected only by the contractor."
+        "text": "C. Allow operation with quarterly testing instead of the standard testing frequency, which could mitigate potential risks"
       },
       {
         "id": "d",
-        "text": "Fp is taken only from flood maps."
+        "text": "D. Request a variance from the local building authority allowing the extended transfer time, which may be granted under specific conditions"
       }
     ],
     "correct_option_id": "b",
     "rationale": {
-      "correct": "Section 208.9.2 states that Fp shall not be less than the checked lower bound and need not be more than the checked upper bound for component seismic force.",
-      "takeaway": "Use the Section 208.9.2 Fp boundaries rather than off-anchor service details.",
-      "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
-      "a": "Not selected: Fp is always zero for nonstructural equipment.",
-      "b": "Selected: Fp shall not be less than the checked lower bound and need not exceed the checked upper bound stated in Section 208.9.2.",
-      "c": "Not selected: Fp is selected only by the contractor.",
-      "d": "Not selected: Fp is taken only from flood maps."
+      "a": "Even small deviations from code standards violate professional engineer obligations; testing on new equipment does not ensure performance under fault conditions or after aging.",
+      "c": "Increased testing frequency cannot substitute for code compliance; the transfer time specification is based on life-safety criticality, not average performance.",
+      "d": "Variances are granted for novel situations or demonstrable hardship, not for using equipment that fails to meet standard specifications.",
+      "correct": "Per applicable fire safety codes (PD 1096 Rule VII or RA 9514), critical life safety loads require auto-transfer switches with a maximum of 0.15 seconds. A 0.20-second switch does not meet code; operational testing provides false assurance because equipment degradation over time will extend transfer time further. Professional responsibility requires enforcing the code standard to maintain an adequate safety margin.",
+      "takeaway": "Professional engineers must enforce code standards (0.15-second max transfer time) even when testing shows marginal performance, because standards provide safety margins for degradation and unexpected conditions."
     },
-    "explanation": "Section 208.9.2 states that Fp shall not be less than the checked lower bound and need not be more than the checked upper bound for component seismic force.",
-    "code_citation": "NSCP 2015 Vol. I, Table 208-1, Table 208-13, Section 208.9, and Section 211.1; OCR pages 237, 283-287, and 290.",
-    "bloom_level": "understand",
+    "explanation": "",
+    "code_citation": "LEA-UTIL-004-05.mdx, Emergency Power Systems for Life Safety section",
+    "bloom_level": "evaluate",
+    "application_context": "code_interpretation",
+    "practice_context": [],
     "difficulty": 0.5,
     "difficulty_rating": null,
     "discrimination_rating": null,
-    "is_assessment": false,
-    "model_id": "ALE-UTIL-004-05-025",
-    "prompt_image_url": null,
-    "application_context": "code_interpretation",
-    "practice_context": [
-      "utilities",
-      "seismic bracing",
-      "batch 164 question alignment",
-      "source-audited NSCP Batch 164"
-    ]
+    "model_id": "ALE-UTIL-004-05-025"
   }
 }

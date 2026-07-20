@@ -21,5 +21,52 @@
     "checked_sources": [
       "detailing-wall-diaphragm-construction-joints"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "What wall reinforcement spacing limit is captured for the cited structural wall condition?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spacing each way is unlimited."
+      },
+      {
+        "id": "b",
+        "text": "Reinforcement spacing each way does not exceed 450 mm."
+      },
+      {
+        "id": "c",
+        "text": "Spacing each way is always 1200 mm."
+      },
+      {
+        "id": "d",
+        "text": "Spacing is controlled only by architectural tile layout."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Spacing each way is unlimited. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "b": "Reinforcement spacing each way does not exceed 450 mm. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+      "c": "Spacing each way is always 1200 mm. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "d": "Spacing is controlled only by architectural tile layout. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "correct": "Reinforcement spacing each way does not exceed 450 mm. Supported by detailing-wall-diaphragm-construction-joints.",
+      "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-wall-diaphragm-construction-joints",
+      "checked_sources": [
+        "detailing-wall-diaphragm-construction-joints"
+      ]
+    },
+    "explanation": "Reinforcement spacing each way does not exceed 450 mm. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+    "code_citation": "detailing-wall-diaphragm-construction-joints",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-007-06-001"
   }
 }

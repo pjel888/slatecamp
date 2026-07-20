@@ -1,0 +1,562 @@
+{
+  "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:c5823513f4c77e18bfb9acc5edc7f6e8373d9cb6cc2515442ecf055ef78c3460",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "266f9a38-1d8f-4a9c-8962-5c5ee99e1d4d",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Exam Meta Deck Heights\", if a project requires 200 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "200 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "200 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "200 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 200 mm as the requirement. Context: 344 IRR Reach Ranges | Floor-level side reach; forward reach floor minimum also ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:10.051548+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:21b026fa827de5d92507b0529d8cce4264e54cbc74dc3d71b0094f3e40d83f8c"
+    },
+    {
+      "question_id": "f736f5d1-a63e-444c-9bee-afd170f2de95",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), what is the minimum required length of a ramp landing at the top, bottom, and intermediate positions?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1,200 mm — matching the minimum ramp clear width"
+        },
+        {
+          "id": "B",
+          "text": "1,500 mm — matching the accessible stair clear width requirement"
+        },
+        {
+          "id": "C",
+          "text": "1,800 mm — part of the '1800 Club' of wheelchair maneuvering spaces"
+        },
+        {
+          "id": "D",
+          "text": "2,400 mm — double the minimum ramp width to allow wheelchair turning"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Ramp landings (top, bottom, and intermediate) require a minimum length of 1,800 mm under BP 344.",
+        "explanation": "BP 344 (2024 IRR) Appendix A Ramps specifies that ramp landings at all positions (top, bottom, and intermediate) must have a minimum length of 1,800 mm. The width equals the ramp width. This 1,800 mm is part of the '1800 Club' — the consistent dimension for wheelchair maneuvering spaces. The article distinguishes this linear 1,800 mm (landing length) from the square 1,800 × 1,800 mm used for turning circles and elevator lobbies.",
+        "common_misconceptions": [
+          "Confusing the ramp landing length with the ramp clear width (1,200 mm)",
+          "Applying the stair landing depth (1,500 mm) to ramp landings"
+        ]
+      },
+      "explanation": "This question distinguishes the 1,800 mm ramp landing length from the 1,200 mm ramp width and the 1,500 mm stair landing depth.",
+      "code_citation": "BP 344 2024 IRR, Appendix A Ramps",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e75aac6493b4237a5692d4935d76878c61ba35a8bc47670217883e3f1c532c6b"
+    },
+    {
+      "question_id": "23b29d77-ba24-4958-a8de-02fe0c7bd090",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A service counter has a lower accessible level at 750 mm and an upper standard level at 970 mm. A separate bed in an accessible guest room has its top surface at 520 mm. Under BP 344 (2024 IRR), which elements are non-compliant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The upper counter level only — it must be within 950–1,100 mm; the lower level and bed are compliant"
+        },
+        {
+          "id": "B",
+          "text": "The bed only — it exceeds the 500 mm maximum; both counter levels are compliant"
+        },
+        {
+          "id": "C",
+          "text": "Both the upper counter level and the bed are non-compliant; the lower counter level is correct"
+        },
+        {
+          "id": "D",
+          "text": "All three elements are non-compliant under BP 344 height requirements"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The bed at 520 mm exceeds the 500 mm maximum; both counter levels are compliant. The upper counter at 970 mm falls within the 950–1,100 mm range.",
+        "explanation": "BP 344 (2024 IRR): service counter lower level = 750 mm (correct); upper level = 950–1,100 mm — 970 mm is within range (correct); bed maximum height = 500 mm AFF to top of mattress — 520 mm exceeds this (non-compliant). Beds in accessible guest rooms must be at 500 mm or below so wheelchair users can transfer laterally. A bed at 520 mm is only 20 mm over the limit but is still non-compliant.",
+        "common_misconceptions": [
+          "Assuming 970 mm is outside the 950–1,100 mm upper counter range",
+          "Not knowing the 500 mm maximum bed height under BP 344"
+        ]
+      },
+      "explanation": "This multi-element application question tests three different BP 344 heights simultaneously: counter lower (750 mm), counter upper (950–1,100 mm), and bed maximum (500 mm).",
+      "code_citation": "BP 344 2024 IRR, Sec. 17.5; Sec. 14.2",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:77269e519a4114f1c3825389a547ab8d67281ed97b6050ab742fdcac11d0693d"
+    },
+    {
+      "question_id": "c109109f-fb94-4034-9ce4-bb8237aa31e2",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An accessible toilet has an emergency call button mounted at 650 mm AFF. According to BP 344 (2024 IRR), is this compliant, and what is the required height band?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Non-compliant — the emergency call button must be within 400–600 mm AFF to be reachable from the floor"
+        },
+        {
+          "id": "B",
+          "text": "Compliant — 650 mm is within the permitted 600–900 mm AFF range for emergency controls"
+        },
+        {
+          "id": "C",
+          "text": "Non-compliant — the button must be at 700–900 mm AFF, aligned with the lower handrail height"
+        },
+        {
+          "id": "D",
+          "text": "Compliant — any height below 900 mm AFF satisfies the reach range requirement for toilet accessories"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The toilet emergency call button band is 400–600 mm AFF — reachable from the floor; 650 mm is too high.",
+        "explanation": "BP 344 (2024 IRR) Sec. 6 requires the emergency call button in accessible toilets (and baths/pools) to be within the 400–600 mm AFF band. This low placement is intentional: if a person with a disability falls to the floor, they must still be able to reach and activate the button. A button at 650 mm AFF — even a little above 600 mm — is out of reach from the floor and non-compliant. This is distinct from the 700–900 mm AFF area-of-refuge communications range.",
+        "common_misconceptions": [
+          "Confusing the 400–600 mm toilet emergency button band with the 700–900 mm area-of-refuge communications range",
+          "Assuming 650 mm is close enough to the 600 mm upper limit"
+        ]
+      },
+      "explanation": "This application question tests the 400–600 mm toilet emergency call button band — a specific low range that is often confused with higher control heights.",
+      "code_citation": "BP 344 2024 IRR, Sec. 6",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:36b855ccc47808ebf77457b7ccb80e05df5861a9fd097e415d87e9b632f7fa7c"
+    },
+    {
+      "question_id": "2dba295d-e505-412b-8982-c1bbbd6866a8",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), what is the maximum height for a lavatory rim, and what is the required knee clearance height underneath?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lavatory rim maximum 800 mm AFF; knee clearance height minimum 650 mm"
+        },
+        {
+          "id": "B",
+          "text": "Lavatory rim maximum 900 mm AFF; knee clearance height minimum 700 mm"
+        },
+        {
+          "id": "C",
+          "text": "Lavatory rim maximum 750 mm AFF; knee clearance height minimum 600 mm"
+        },
+        {
+          "id": "D",
+          "text": "Lavatory rim maximum 1,000 mm AFF; knee clearance height minimum 650 mm"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Lavatory rim maximum is 800 mm AFF; knee clearance under the lavatory must be at least 650 mm high.",
+        "explanation": "BP 344 (2024 IRR) Sec. 6 specifies: lavatory rim maximum height of 800 mm AFF, allowing a wheelchair user to approach without the rim being too high to reach over; knee clearance height of 650 mm from the floor to the underside of the lavatory, providing room for the wheelchair user's legs. The 650 mm knee clearance height is part of the Height Ladder sequence at that position. The 1,000 mm figure applies to mirror bottom edge — a different element.",
+        "common_misconceptions": [
+          "Confusing the 800 mm lavatory rim with the 900 mm door handle height or upper handrail",
+          "Mixing the 650 mm knee clearance height with the 700 mm lower handrail height"
+        ]
+      },
+      "explanation": "This question pairs two related lavatory dimensions — rim height (800 mm) and knee clearance height (650 mm) — which are tested together on the LEA.",
+      "code_citation": "BP 344 2024 IRR, Sec. 6",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:75b98160339a5dd1f72dd97a522d63d15ca1a0d3603777993a3487f88b6151bb"
+    },
+    {
+      "question_id": "c8c988c4-2ecc-454a-a131-b72e88b29904",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "According to the Height Ladder in the Exam Meta Deck, the single most-tested height dimension in BP 344 (2024 IRR) is 900 mm because it governs the most elements. Which of the following does NOT have a 900 mm dimension?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Upper handrail height on ramps and stairs above the ramp/nosing surface"
+        },
+        {
+          "id": "B",
+          "text": "Car Operating Panel (COP) height above the elevator car floor"
+        },
+        {
+          "id": "C",
+          "text": "Bottom edge of a mirror in an accessible toilet room"
+        },
+        {
+          "id": "D",
+          "text": "Accessible door handle and pull height above finished floor"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The mirror bottom edge is 1,000 mm AFF — not 900 mm. All other listed elements are at 900 mm.",
+        "explanation": "BP 344 (2024 IRR) specifies the mirror bottom edge at a maximum of 1,000 mm AFF — high enough that a wheelchair user can still see their reflection from a seated position. The 900 mm height governs: upper handrails (ramps and stairs), the COP in elevators, door handles and pull hardware, elevator handrails, curb ramp width, wheelchair space width, and service counter minimum width. The mirror is a deliberate exception at 1,000 mm.",
+        "common_misconceptions": [
+          "Assuming the mirror bottom edge is at 900 mm like other accessible accessories",
+          "Confusing the 1,000 mm mirror standard with the 1,000 mm lower peephole height for wheelchair users"
+        ]
+      },
+      "explanation": "This question tests the '900 Club' by identifying the one element — the mirror — that breaks the pattern at 1,000 mm instead of 900 mm.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3a5b682dd02e0f9c24420467ea4236be77ced8b72e47b989b404bb18702922bc"
+    },
+    {
+      "question_id": "625706e9-131b-4e60-ac20-80fb52960b98",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), what is the minimum guard trigger height — the drop at which a guard/railing becomes mandatory?",
+      "options": [
+        {
+          "id": "A",
+          "text": "500 mm — the same as the maximum accessible bed height"
+        },
+        {
+          "id": "B",
+          "text": "700 mm — aligned with the lower handrail height on ramps and stairs"
+        },
+        {
+          "id": "C",
+          "text": "750 mm — the same threshold used for service counter lower level height"
+        },
+        {
+          "id": "D",
+          "text": "900 mm — the same as the upper handrail height on ramps and stairs"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Guards are required where the drop exceeds 750 mm — the same 750 mm threshold used in the Height Ladder for service counters.",
+        "explanation": "Both BP 344 (2024 IRR) and PD 1096 require guards (balustrades/railings) where the adjacent drop exceeds 750 mm. This 750 mm threshold appears in the Height Ladder at the same position as the service counter lower level (also 750 mm) and the drinking fountain spout upper limit (900 mm spout upper, but the guard trigger is 750 mm). The guard height, once triggered, must be at least 1,100 mm. The trigger and the height are two separate numbers: >750 mm drop triggers the guard; 1,100 mm is the guard height.",
+        "common_misconceptions": [
+          "Confusing the 750 mm guard trigger with the 1,100 mm guard height",
+          "Applying the 900 mm upper handrail height as the guard trigger"
+        ]
+      },
+      "explanation": "This question distinguishes the 750 mm guard trigger from the 1,100 mm guard height — two values that appear in the same context but serve different purposes.",
+      "code_citation": "BP 344 2024 IRR; PD 1096 Rule XII",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6743bea6f5751a314e80ac817154581cec24b7fe1665118e8fa7228b8bbe28b1"
+    },
+    {
+      "question_id": "8232f17a-fb66-4a9d-a44a-9703151b29bd",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), accessible rest or turn spaces must be provided along accessible walkways at maximum intervals of how far, and what are their clear dimensions?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every 30 m; minimum 1,500 × 1,500 mm clear dimension"
+        },
+        {
+          "id": "B",
+          "text": "Every 60 m; minimum 1,800 mm clear dimension"
+        },
+        {
+          "id": "C",
+          "text": "Every 50 m; minimum 1,200 × 1,200 mm clear dimension"
+        },
+        {
+          "id": "D",
+          "text": "Every 45 m; minimum 900 × 1,200 mm clear dimension"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Rest/turn spaces must occur at maximum 60 m intervals with a minimum 1,800 mm clear dimension.",
+        "explanation": "BP 344 (2024 IRR) Walkways provisions require rest/turn spaces at intervals not exceeding 60 m along accessible routes. The clear dimension of these spaces is 1,800 mm — part of the '1800 Club' of wheelchair maneuvering dimensions. This allows a wheelchair to turn around or pass another wheelchair. The 30 m interval applies to accessible bench spacing (Sec. 18.1.c), not walkway rest spaces — these two intervals are commonly confused.",
+        "common_misconceptions": [
+          "Applying the 30 m bench interval to walkway rest/turn spaces",
+          "Confusing the 1,800 mm turn space with the 1,500 mm accessible corridor minimum width"
+        ]
+      },
+      "explanation": "This question distinguishes the 60 m walkway rest space interval from the 30 m bench interval — two separate BP 344 spacing requirements that are easily confused.",
+      "code_citation": "BP 344 2024 IRR, Walkways",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:84fc1619cef4d0c20ccb3f87ac36c46f52ce59304fb98184d9d7f6bb9e5c8efe"
+    },
+    {
+      "question_id": "b242696d-cc68-4e24-8e0b-ee45182a0962",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect reviewing a project finds these four conditions: (1) stair/ramp headroom at 2,000 mm; (2) projecting sign clearance at 2,200 mm; (3) accessible parking vertical clearance at 2,100 mm; (4) ATM signage panel top at 2,350 mm. Under BP 344 (2024 IRR), which condition is non-compliant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Condition 3 only — accessible parking requires 2,300 mm vertical clearance, not 2,100 mm"
+        },
+        {
+          "id": "B",
+          "text": "Condition 2 only — projecting signs must have at least 2,400 mm clearance, not 2,200 mm"
+        },
+        {
+          "id": "C",
+          "text": "Conditions 1 and 3 — headroom minimum is 2,200 mm and parking clearance minimum is 2,300 mm"
+        },
+        {
+          "id": "D",
+          "text": "Conditions 3 and 4 — both the parking clearance and ATM signage height are non-compliant"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Only Condition 3 is non-compliant: accessible parking requires 2,300 mm; the other three values are correct.",
+        "explanation": "Checking each: (1) 2,000 mm headroom — correct (BP 344/PD 1096 minimum); (2) 2,200 mm projecting sign clearance — correct (BP 344 minimum); (3) 2,100 mm accessible parking — NON-COMPLIANT (BP 344 requires 2,300 mm); (4) 2,350 mm ATM signage top — correct (BP 344 Sec. 12.10 maximum is 2,400 mm, and 2,350 mm is below the cap). The parking clearance is the sole violation. This scenario requires knowing four distinct heights simultaneously.",
+        "common_misconceptions": [
+          "Thinking 2,200 mm projecting sign clearance is wrong (it is exactly the minimum)",
+          "Assuming ATM signage at 2,350 mm is non-compliant (the cap is 2,400 mm, so 2,350 mm is fine)"
+        ]
+      },
+      "explanation": "This evaluation question requires applying all four upper-range heights simultaneously (2,000 / 2,200 / 2,300 / 2,400 mm) and identifying the single non-compliant value.",
+      "code_citation": "BP 344 2024 IRR; PD 1096",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bd8366919b52a48bfe7dc0df101c45c0a1d7c5168ed1b1489593f3947968fb03"
+    },
+    {
+      "question_id": "6f1551a0-29e6-4edc-8b5d-1f7c9e312513",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "According to BP 344 (2024 IRR), which of the following elements does NOT require a 1,800 × 1,800 mm clear floor space?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Roll-in shower (no curb, drain centered, fold-down seat optional)"
+        },
+        {
+          "id": "B",
+          "text": "ATM approach area measured in front of the machine face"
+        },
+        {
+          "id": "C",
+          "text": "Accessible toilet cubicle (width × depth configuration)"
+        },
+        {
+          "id": "D",
+          "text": "Elevator lobby waiting area measured from the fully-open elevator door"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The accessible WC cubicle is 1,800 mm × 2,250 mm — not a square 1,800 × 1,800 mm.",
+        "explanation": "The accessible toilet cubicle under BP 344 (2024 IRR) Sec. 6 is 1,800 mm wide × 2,250 mm deep — a rectangle, not a square. All other options (roll-in shower, ATM approach, elevator lobby) require the full 1,800 × 1,800 mm square. The WC cubicle is the most common 'almost 1800' trap — students remember 1,800 mm and miss the 2,250 mm depth.",
+        "common_misconceptions": [
+          "Assuming the accessible WC cubicle is a square 1,800 × 1,800 mm",
+          "Forgetting that the 2,250 mm depth is the paired dimension for the WC cubicle"
+        ]
+      },
+      "explanation": "This question tests the critical exception to the '1800 Club' — the WC cubicle is 1,800 × 2,250 mm, not 1,800 × 1,800 mm.",
+      "code_citation": "BP 344 2024 IRR, Sec. 6",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d34bb7b9b0b713ecbaa770cb555d6c2abeddda0c1ccf793842e870a61b70f0bc"
+    },
+    {
+      "question_id": "b7869dbc-2c9d-4c12-8b6f-30dde99b06ac",
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the minimum accessible parking vertical clearance required under BP 344 (2024 IRR), and why is this higher than standard headroom?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2,000 mm — the same as standard stair and ramp headroom clearance under PD 1096, which is sufficient for most pedestrian traffic"
+        },
+        {
+          "id": "B",
+          "text": "2,200 mm — the same as the minimum clearance below projecting signs, ensuring visibility and safety for all vehicular traffic"
+        },
+        {
+          "id": "C",
+          "text": "2,300 mm — to accommodate wheelchair vans and vehicles with roof-mounted mobility equipment"
+        },
+        {
+          "id": "D",
+          "text": "2,400 mm — aligned with the maximum ATM signage height to standardize overhead clearances, providing uniformity across different structures"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible parking vertical clearance is 2,300 mm — higher than standard to accommodate wheelchair vans with roof equipment.",
+        "explanation": "BP 344 (2024 IRR) specifies 2,300 mm vertical clearance above accessible parking stalls. Standard parking structures may have lower clearances, but accessible stalls must accommodate wheelchair vans, vehicles with raised roofs, and vehicles carrying roof-mounted mobility equipment (hoists, carriers). The 2,000 mm headroom applies to stairs/ramps (PD 1096); 2,200 mm applies to projecting signs (BP 344 signage); 2,400 mm is the ATM signage maximum. These four heights are distinct and all testable.",
+        "common_misconceptions": [
+          "Applying the 2,000 mm stair headroom to accessible parking",
+          "Confusing the 2,200 mm projecting sign clearance with the 2,300 mm parking clearance"
+        ]
+      },
+      "explanation": "This question distinguishes four similar overhead heights: 2,000 mm (headroom), 2,200 mm (projecting signs), 2,300 mm (accessible parking), and 2,400 mm (ATM signage max).",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.687137+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ba17af3898519dc2a7ba3652874402881415ca3ec5622ae4e42771edb576722"
+    }
+  ]
+}

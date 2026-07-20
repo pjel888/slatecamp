@@ -23,5 +23,54 @@
       "bsi-design",
       "bsi-bending"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which check belongs with a compression member even after a stress comparison?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the finish color schedule."
+      },
+      {
+        "id": "b",
+        "text": "Buckling or stability review."
+      },
+      {
+        "id": "c",
+        "text": "Only the north arrow direction."
+      },
+      {
+        "id": "d",
+        "text": "Only the sheet number."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Only the finish color schedule. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Buckling or stability review. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+      "c": "Only the north arrow direction. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "Only the sheet number. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Buckling or stability review. Supported by mechanics-allowable.",
+      "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "mechanics-allowable",
+      "checked_sources": [
+        "mechanics-allowable",
+        "bsi-design",
+        "bsi-bending"
+      ]
+    },
+    "explanation": "Buckling or stability review. Supported by the Batch 144 local source boundary: mechanics-allowable.",
+    "code_citation": "mechanics-allowable",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-005-03-004"
   }
 }

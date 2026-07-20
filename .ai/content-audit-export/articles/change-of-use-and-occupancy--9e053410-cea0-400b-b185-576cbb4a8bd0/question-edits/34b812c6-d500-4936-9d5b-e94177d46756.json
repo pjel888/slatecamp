@@ -2,9 +2,9 @@
   "question_id": "34b812c6-d500-4936-9d5b-e94177d46756",
   "baseline_hash": "sha256:3859ed28c4b20bb9d85a60994cbc4256a7646a0e22a2024fec6be7c0aa299373",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "Who must approve an existing-building change to another occupancy group under Section 702?",
+    "text": "Under PD 1096 Rule VII, Section 702, what is the GENERAL PROHIBITION regarding changes in occupancy classification?",
     "options": [
       {
         "id": "a",
-        "text": "The Building Official must approve the change."
+        "text": "Any change in use requires a new building permit, regardless of the scale or nature of the change"
       },
       {
         "id": "b",
-        "text": "O"
+        "text": "No change in character of occupancy placing a building in a different division or group shall be made unless the building complies with all requirements of the Code for the new use"
       },
       {
         "id": "c",
-        "text": "n"
+        "text": "Changes between divisions within the same occupancy group do not require any Building Official approval, simplifying minor adjustments"
       },
       {
         "id": "d",
-        "text": "l"
+        "text": "Changes from residential to commercial are always allowed without code compliance, which is a common misconception"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The Building Official must approve the change. This is supported by Only the fire extinguisher supplier may approve the change..",
-    "explanation": "The Building Official must approve the change. The cited local source family controls this item: Only the fire extinguisher supplier may approve the change..",
-    "code_citation": "Only the tenant may approve the change."
+    "correct_option_id": "b",
+    "rationale": "This is the foundational rule of the entire change-of-use topic. Options A, C, and D all incorrectly simplify or misstate the prohibition. Option C incorrectly exempts intra-group changes — the Code applies to changes within a division or group as well.",
+    "explanation": null,
+    "code_citation": null
   }
 }

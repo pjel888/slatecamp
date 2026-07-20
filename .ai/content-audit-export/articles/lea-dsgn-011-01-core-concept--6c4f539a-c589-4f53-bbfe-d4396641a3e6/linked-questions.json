@@ -8,37 +8,31 @@
       "question_id": "6e707d6f-5370-4fdd-a180-afbbe4a94b8e",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "A standard residential entry door on a floor plan is typically dimensioned at a width of:",
+      "text": "Which floor-plan requirement is directly supported by checked PD 1096?",
       "options": [
         {
           "id": "a",
-          "text": "0.75 m"
+          "text": "Floor plans must be drawn to scale not less than 1:100 and show gridlines plus complete room or functional-space identification."
         },
         {
           "id": "b",
-          "text": "0.8 m"
+          "text": "Floor plans must always be drawn at 1:20."
         },
         {
           "id": "c",
-          "text": "0.9 m"
+          "text": "Floor plans need only furniture symbols."
         },
         {
           "id": "d",
-          "text": "1.1 m"
+          "text": "Floor plans are not part of architectural documents."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect—0.75 m is too narrow for residential entry; might be used for closets.",
-        "b": "Incorrect—0.8 m is below minimum per code.",
-        "d": "Incorrect—1.1 m exceeds standard residential; might be commercial double doors.",
-        "correct": "Standard residential entry door minimum = 0.80 m clear opening width per PD 1096 Rule VIII Sec 808. Accessible doors require 1.0 m (1000mm). A 0.9m door is typical for bedrooms, bathrooms, residential entries.",
-        "takeaway": "Standard residential entry = 0.9 m clear width. Accessible = 1.0 m. Interior doors (bedrooms, bathrooms) can be 0.8m–0.9m depending on code and practice."
-      },
+      "rationale": "PD 1096 lists floor plans among architectural documents and states the minimum scale and identification requirements.",
       "explanation": null,
       "code_citation": "PD 1096 Rule VIII Section 808 (Door Widths); BP 344 2024 IRR Section 4.5BP 344 2024 IRR (Accessible Door Width—0.85m minimum)",
       "bloom_level": "understand",
@@ -54,44 +48,38 @@
       "model_id": "ALE-DSGN-011-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.631109+00:00",
       "content_hash": "sha256:a82b1e47d8848d9c36c2f76139f9046faa415e1f956a416d2ad3ff0dde2b4b61"
     },
     {
       "question_id": "b8a6c28d-484f-45c9-b9bf-fdb367cc6436",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "A floor plan for a multi-story residential building shows a fire-rated corridor (2-hour rated). How should this wall be graphically represented on the plan to clearly indicate its fire-rating requirement?",
+      "text": "Which accessible elements does checked PD 1096 require as details in architectural documents?",
       "options": [
         {
           "id": "a",
-          "text": "Solid thick line, same as any other interior partition, which does not indicate fire rating"
+          "text": "Accessible ramps, stairs, lifts/elevators, entrances, corridors, and walkways."
         },
         {
           "id": "b",
-          "text": "Thick line with horizontal hatching or dashed pattern, labeled '2-HR FIR' (2-hour fire-rated)"
+          "text": "Only decorative landscaping."
         },
         {
           "id": "c",
-          "text": "Dashed line with no special marking; fire rating is shown only in specifications, not graphically, which is incorrect"
+          "text": "Only kitchen counters."
         },
         {
           "id": "d",
-          "text": "Red line (colored); color indicates fire rating on plans, which is not a standard practice"
+          "text": "Only furniture schedules."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect—solid line without marking does not distinguish fire-rated from standard partition.",
-        "c": "Incorrect—fire rating should be graphically evident on plans (hatching/dashing + label), not only in specs.",
-        "d": "Incorrect—color coding is not standard in CAD-based or printed architectural plans (though some offices may use it internally).",
-        "correct": "Fire-rated walls are represented with a distinctive graphic—typically horizontal hatching or a dashed line pattern—and labeled with the fire-rating requirement (e.g., '2-HR FIR', '4-HR FIR'). This makes clear to contractors that the wall requires special assembly and testing, not just standard framing.",
-        "takeaway": "Fire-rated walls = distinctive graphic (hatching or dashing) + text label (2-HR, 4-HR, etc.). This ensures contractor awareness and inspection compliance."
-      },
+      "rationale": "PD 1096 lists details for accessible ramps, accessible stairs, accessible lifts/elevators, accessible entrances, corridors, and walkways.",
       "explanation": null,
       "code_citation": "PD 1096 Section 505 (Plans—Fire-Rated Assembly Notation); PHILGBC/AIA Standards",
       "bloom_level": "remember",
@@ -107,44 +95,38 @@
       "model_id": "ALE-DSGN-011-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.629294+00:00",
       "content_hash": "sha256:4fdce8d0394eadc3d8efed8ce6381ab28b448cde1cd6522efa850027e949f6f2"
     },
     {
       "question_id": "1a7f4a3c-5020-4b0c-852c-33b00cf1d629",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "A floor plan shows a room labeled 'Office A: 5.0m × 4.0m = 20 m²' with dimensions marked. Are these dimensions measured as interior clear width/length or including wall thickness?",
+      "text": "What accessibility document requirement is source-safe under PD 1096?",
       "options": [
         {
           "id": "a",
-          "text": "Including wall thickness (exterior face to exterior face), which is not standard for calculating room area"
+          "text": "Plans and specific locations of all accessibility facilities at scale of at least 1:100."
         },
         {
           "id": "b",
-          "text": "Interior clear (wall face to wall face inside the room), which is standard for room area calculation"
+          "text": "A verbal note with no drawing location."
         },
         {
           "id": "c",
-          "text": "From centerline to centerline of walls (structural convention), which is typically used for structural calculations rather than room area"
+          "text": "Only a perspective view."
         },
         {
           "id": "d",
-          "text": "Custom to each architect; no standard applies, although most follow established conventions for clarity"
+          "text": "No accessibility plan is required."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect—including wall thickness would overstate room area and is not standard.",
-        "c": "Incorrect—centerline-to-centerline is used in structural drawing, not room dimension.",
-        "d": "Incorrect—clear standard does exist (C-C interior).",
-        "correct": "Room dimensions are measured interior clear (face-to-face inside the room). C-C means centerline-to-centerline (structural). Wall thickness is NOT included in room area calculation unless explicitly noted. This is the standard practice per ISO 1091 and Philippine architectural convention.",
-        "takeaway": "Room dimensions = interior clear (face-to-face inside). Wall thickness is shown in the wall graphic but not included in the dimension. Always clarify if structural walls are included (rare, but sometimes noted)."
-      },
+      "rationale": "PD 1096 requires plans and specific locations of all accessibility facilities at a stated scale.",
       "explanation": null,
       "code_citation": "ISO 1091 (Architectural Graphic Standards); PD 1096 Section 505 (Plans & Specifications—Dimensioning)",
       "bloom_level": "apply",
@@ -160,30 +142,30 @@
       "model_id": "ALE-DSGN-011-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.630202+00:00",
       "content_hash": "sha256:5bc4f49f547245243168152fd6fbf180192721cfdf8db78d8a1b6e1d059fadd6"
     },
     {
       "question_id": "52547862-2eab-49d4-b68e-dfb07f453967",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "A floor plan shows an accessible bathroom with a toilet stall layout. Which of the following is a mandatory measurement that must be clearly dimensioned on the plan per BP 344?",
+      "text": "Which fire-safety content is source-safe for plan documentation?",
       "options": [
         {
           "id": "a",
-          "text": "The clear floor space (minimum 1.5m diameter wheelchair turning circle)"
+          "text": "A floor layout indicating evacuation route, emergency lights, signs, fire exits, and related fire-safety items."
         },
         {
           "id": "b",
-          "text": "The toilet seat height (0.4–0.45m), which ensures accessibility for individuals with mobility impairments"
+          "text": "Only furniture color schedules."
         },
         {
           "id": "c",
-          "text": "The sink depth (0.3m typical), allowing for adequate space for wheelchair users to approach and use the sink comfortably"
+          "text": "Only structural rebar sizes."
         },
         {
           "id": "d",
-          "text": "The mirror mounting height (1.2m AFF), ensuring visibility for all users, including those in wheelchairs"
+          "text": "No fire-safety information is shown on plans."
         }
       ],
       "correct_option_id": "a",
@@ -191,13 +173,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Incorrect—toilet height is a fixture specification, not a critical plan dimension for accessibility review.",
-        "c": "Incorrect—sink depth is standard; not a critical accessible dimension.",
-        "d": "Incorrect—mirror height is accessibility detail but not the primary plan dimension.",
-        "correct": "BP 344 (Accessibility Law) requires accessible bathrooms to provide a 1.5m diameter clear floor space for wheelchair maneuvering. This dimension must be explicitly shown on plans to verify compliance during review. Other measurements (toilet height, sink depth) are standard fixtures; the turning circle is the critical dimension that determines accessibility.",
-        "takeaway": "Accessible bathrooms on plans must clearly show the 1.5m (minimum) clear floor space for wheelchair turning. This is the key dimension for BP 344 compliance verification."
-      },
+      "rationale": "PD 1096 requires fire-safety documents including layout plans with evacuation routes and fire-safety devices.",
       "explanation": null,
       "code_citation": "BP 344 (Accessibility Law); PD 1096 Section 505 (Plans showing accessible features)",
       "bloom_level": "analyze",
@@ -213,30 +189,30 @@
       "model_id": "ALE-DSGN-011-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.632053+00:00",
       "content_hash": "sha256:831e53e74a3512a20ad494736b6f797999a023c18a6a59e5eb638c895f0802b2"
     },
     {
       "question_id": "b1ef73e0-5627-43b5-8c4e-638bcafbe850",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "On a floor plan, a staircase is shown with tread lines and an arrow labeled 'UP'. This convention indicates:",
+      "text": "Which checked BP 344 definition helps test floor-plan accessibility?",
       "options": [
         {
           "id": "a",
-          "text": "The direction occupants ascend when using the stair"
+          "text": "Accessible route as a continuous unobstructed path connecting accessible elements and spaces."
         },
         {
           "id": "b",
-          "text": "The stair location only; arrow direction is arbitrary"
+          "text": "Accessible route as any stair-only path."
         },
         {
           "id": "c",
-          "text": "The staircase serves an upper floor; arrow shows vertical travel direction"
+          "text": "Accessible route as only a driveway."
         },
         {
           "id": "d",
-          "text": "The fire egress route; arrows show emergency exit direction"
+          "text": "Accessible route as a decorative arrow."
         }
       ],
       "correct_option_id": "a",
@@ -244,13 +220,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Incorrect—arrow direction is NOT arbitrary; it specifically shows vertical travel direction.",
-        "c": "Partially correct (serves upper floor), but the primary purpose of the arrow is direction notation, not just location.",
-        "d": "Incorrect—stair arrows show vertical direction, not fire egress route (though stairs ARE egress; the arrow is not specifically marking them as such).",
-        "correct": "Stair convention: Tread lines (parallel lines showing each step) with 'UP' or 'DN' arrow clearly indicate direction of ascent/descent. This is critical for orientation—looking at a plan, you know immediately whether the stair goes up or down from that floor level.",
-        "takeaway": "Stairs on plan: tread lines + 'UP'/'DN' arrow. UP = ascending this floor to the next; DN = descending to the floor below. Essential for plan orientation."
-      },
+      "rationale": "BP 344 2024 defines accessible route as continuous and unobstructed, connecting accessible elements and spaces safely and independently.",
       "explanation": null,
       "code_citation": "ISO 1091 (Architectural Graphic Standards); AIA Graphic Standards",
       "bloom_level": "analyze",
@@ -266,44 +236,38 @@
       "model_id": "ALE-DSGN-011-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.634934+00:00",
       "content_hash": "sha256:660bb4ab80c7fa7ff8c793373269360f233515fd4cf1d561ee9ec9b26d1926dd"
     },
     {
       "question_id": "0c804e94-bea7-4c99-9bf6-687427307d6d",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "In architectural floor plan conventions, at what height above finished floor (AFF) is a horizontal slice typically taken to create a floor plan?",
+      "text": "Which door clear width is supported by the checked BP 344 2024 source for the cited accessible room condition?",
       "options": [
         {
           "id": "a",
-          "text": "0.5 m AFF, which is too low to capture standard window openings"
+          "text": "At least 900 mm clear width."
         },
         {
           "id": "b",
-          "text": "1.0 m AFF, a common height for capturing door and window openings"
+          "text": "At least 600 mm clear width."
         },
         {
           "id": "c",
-          "text": "1.2–1.5 m AFF"
+          "text": "Exactly 1200 mm for every door."
         },
         {
           "id": "d",
-          "text": "2.0 m AFF, which is too high and would miss most interior features"
+          "text": "No clear width is stated."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect—0.5 m is too low; would show furniture and base details.",
-        "b": "Incorrect—1.0 m is close but slightly low; does not reliably capture all door heads.",
-        "d": "Incorrect—2.0 m is too high; may miss some window sills and would not capture some door configurations.",
-        "correct": "Floor plans are drawn as a horizontal section at 1.2–1.5 m AFF. This height cuts through door/window openings, captures room configuration, and avoids ceiling elements. This is the ISO standard adopted in Philippine architectural practice.",
-        "takeaway": "Standard plan cut = 1.2–1.5 m AFF. This height reliably captures doors and windows while showing clear spatial organization."
-      },
+      "rationale": "The checked BP 344 source states the cited room doorway shall have a clear width of at least 900 mm.",
       "explanation": null,
       "code_citation": "ISO 1091 (Architectural Graphic Standards); ISO 1091 (Architectural Graphic Standards)",
       "bloom_level": "remember",
@@ -318,44 +282,38 @@
       "model_id": "ALE-DSGN-011-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.628031+00:00",
       "content_hash": "sha256:3b8f3d349decbe5b074efe0258fdc8a00921cc2fb61dacffce071f5fd8aaec21"
     },
     {
       "question_id": "3af86aba-b257-4457-99d4-f16670ae87b4",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "On a floor plan, the maximum travel distance from any point in an occupied space to the nearest exit is marked as 45 meters. Does this comply with NBC egress requirements?",
+      "text": "Which accessible parking information is source-safe to show or coordinate on plans?",
       "options": [
         {
           "id": "a",
-          "text": "Yes—45m is the maximum allowed travel distance for all occupancy types, which is a misinterpretation"
+          "text": "Accessible parking slot count, location near accessible entrances, minimum 4000 mm by 5000 mm size, and required signage."
         },
         {
           "id": "b",
-          "text": "No—maximum travel distance is 30m regardless of occupancy, which is incorrect"
+          "text": "Only a generic P label with no route or dimensions."
         },
         {
           "id": "c",
-          "text": "Yes, if the space is served by a single exit; if two exits are present, travel distance can extend to 60m, which is a common misconception"
+          "text": "Accessible parking in ramped or sloping areas."
         },
         {
           "id": "d",
-          "text": "Depends on occupancy type and number of exits; 45m is maximum for single exit, but 60m allowed with two exits"
+          "text": "No accessible parking information."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect—travel distance varies by number of exits and occupancy type.",
-        "b": "Incorrect—30m is not the standard; 45m/60m is correct.",
-        "c": "Partially correct (60m with two exits) but wrong on single exit (should be 45m, not allowing 45m as insufficient).",
-        "correct": "PD 1096 Rule IV Section 1005 (Means of Egress—Travel Distance) specifies: Travel distance to nearest exit = 45m maximum (single exit scenario). If two independent exits are provided from the space, travel distance can extend to 60m. This is the fundamental life-safety trade-off: more exits = more distance allowed.",
-        "takeaway": "Egress travel distance = 45m (one exit) or 60m (two exits). Plans must mark travel distance and confirm compliance before BPBD approval."
-      },
+      "rationale": "The checked BP 344 parking text covers slot count, location, dimensions, and signage.",
       "explanation": null,
       "code_citation": "PD 1096 Section 405 (Means of Egress—Travel Distance)",
       "bloom_level": "analyze",
@@ -371,44 +329,38 @@
       "model_id": "ALE-DSGN-011-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.635628+00:00",
       "content_hash": "sha256:6cd075c0640c2cb36e5fa9758dce87c7d6649248f759aee3c45f0559a435c825"
     },
     {
       "question_id": "4a8ae14b-ea51-43c9-8f6f-ec6dc588848d",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "On an architectural floor plan, how is a door opening conventionally represented?",
+      "text": "Which source-safe floor-plan approach avoids overclaiming?",
       "options": [
         {
           "id": "a",
-          "text": "A solid rectangle at the location of the door frame, indicating the structural boundary"
+          "text": "Show the accessible element and cite the checked requirement that controls it."
         },
         {
           "id": "b",
-          "text": "A line representing the door frame with a swing arc showing 90° opening direction"
+          "text": "Apply a remembered drafting convention as if it were law."
         },
         {
           "id": "c",
-          "text": "A double line showing both sides of the door panel, providing a detailed view"
+          "text": "Use RA 7277 text not raw-audited in this batch."
         },
         {
           "id": "d",
-          "text": "A dashed line indicating the door's interior position when closed, used for clarity"
+          "text": "Treat all dimensions as interior clear widths without source support."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect—a solid rectangle shows a solid wall, not a door opening.",
-        "c": "Incorrect—double line is used for some window representations, not standard for doors.",
-        "d": "Incorrect—dashed lines show walls or hidden elements; door swings are solid arcs.",
-        "correct": "Door convention: A line shows the door frame location; a 90° arc drawn from the hinge shows the swing direction (opening away from the room for egress, typically). The arc indicates which side of the door is the hinge and clarifies opening direction for code review (egress swing, accessible approach, etc.).",
-        "takeaway": "Door = line (frame) + 90° arc (swing direction). The arc always points away from the room the door serves."
-      },
+      "rationale": "Batch 066 floor-plan edits are limited to checked PD 1096 and BP 344 requirements.",
       "explanation": null,
       "code_citation": "ISO 1091 (Architectural Graphic Standards); AIA (American Institute of Architects) Graphic Standards",
       "bloom_level": "understand",
@@ -424,30 +376,30 @@
       "model_id": "ALE-DSGN-011-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.634238+00:00",
       "content_hash": "sha256:96e16ad297c2a3413467cfe245766a12776ff575436bb20280970d8dc0b1b964"
     },
     {
       "question_id": "a2c0eb56-b546-4bef-8bdc-826c27fa9f5c",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "A floor plan shows a rectangular room with dimensions marked as 'C-C 3.5m × 4.0m' and area labeled '14 m²'. The exterior wall thickness is 0.3m. What is the likely intention of the 'C-C' notation?",
+      "text": "Which BP 344 signage element can be coordinated on a floor plan?",
       "options": [
         {
           "id": "a",
-          "text": "Center-to-center (wall centerline to centerline), used for structural coordination"
+          "text": "Directional signs using the International Symbol of Access to lead to facilities such as elevators, entrances, toilets, and parking."
         },
         {
           "id": "b",
-          "text": "Clear-to-clear (interior face-to-face), the standard room dimension, ensuring accurate space planning"
+          "text": "Only restaurant menu boards."
         },
         {
           "id": "c",
-          "text": "Curved corner (indicating rounded interior corners), which may be used for aesthetic purposes or to meet specific design requirements"
+          "text": "Only structural grid bubbles."
         },
         {
           "id": "d",
-          "text": "Construction center (indicating the building's geometric center), often used in complex layouts for precise alignment"
+          "text": "No accessibility signage."
         }
       ],
       "correct_option_id": "a",
@@ -455,13 +407,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Partially correct interpretation—if C-C meant clear-to-clear, then 3.5 × 4.0 = 14 m² is correct. However, architectural convention is more commonly 'C-C interior' or 'clear', not 'C-C' which is structural.",
-        "c": "Incorrect—C-C does not indicate curved corners.",
-        "d": "Incorrect—not a standard notation.",
-        "correct": "C-C typically means center-to-center (wall centerline to centerline), which is a structural/dimensional convention. However, for room areas, the calculation should be interior face-to-face (clear interior). The notation 'C-C' is sometimes used ambiguously in Philippine practice—it can mean centerline-to-centerline (structural) or clear-to-clear (architectural). In this context, 14 m² does not equal 3.5 × 4.0 if those are C-C structural dimensions (would be ~14.56 m² with 0.3m walls). The question tests awareness of dimensional notation ambiguity.",
-        "takeaway": "C-C notation is ambiguous in architectural drawings. Clarify: centerline-to-centerline (structural) vs. clear interior (room area). For room dimensions, interior face-to-face is standard. Always confirm notation in drawing set general notes."
-      },
+      "rationale": "BP 344 2024 requires directional signs incorporating the International Symbol of Access at passageways and changes in direction.",
       "explanation": null,
       "code_citation": "ISO 1091 (Architectural Graphic Standards); PD 1096 Section 505 (Plans—Dimensioning & Notation)",
       "bloom_level": "apply",
@@ -477,30 +423,30 @@
       "model_id": "ALE-DSGN-011-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.633539+00:00",
       "content_hash": "sha256:bb1abdfcf42d0594b339797acc45a1f80f8f2bbb48f05b18f381769a93cab545"
     },
     {
       "question_id": "1518d0a9-7fd2-42d4-aabc-11441dde4189",
       "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
       "topic_id": "436d096f-e20b-49f4-90ba-cc19ce59009a",
-      "text": "On a floor plan, diagonal hatching pattern (45° lines) across a solid area typically indicates:",
+      "text": "Which source-safe statement applies to areas of refuge on plans?",
       "options": [
         {
           "id": "a",
-          "text": "A wall area; usually concrete or masonry"
+          "text": "They are fire-separated areas with direct access to an exit where persons unable to use stairs may temporarily await assistance."
         },
         {
           "id": "b",
-          "text": "A void or empty space (like a room) indicating areas that are open and unobstructed"
+          "text": "They are storage closets with no exit relation."
         },
         {
           "id": "c",
-          "text": "Fire-rated assembly requiring specific materials and construction methods per building code"
+          "text": "They replace all required exits."
         },
         {
           "id": "d",
-          "text": "Existing condition to remain (no demolition) as documented in the as-built survey drawings"
+          "text": "They are only parking stalls."
         }
       ],
       "correct_option_id": "a",
@@ -508,13 +454,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Incorrect—blank/white space shows voids; hatching shows solid.",
-        "c": "Incorrect—fire-rated walls are shown with horizontal hatching or a dashed line with 'FIR' notation, not diagonal.",
-        "d": "Incorrect—'existing to remain' is shown with cross-hatching or notation, not simple diagonal.",
-        "correct": "Diagonal hatching (45°) is the universal convention for solid material—concrete, masonry, structural elements. Blank (white) space indicates voids (rooms, corridors). This distinguishes between solid and void in a simple visual language.",
-        "takeaway": "Diagonal hatching (45°) = solid material (concrete, masonry). Blank = void (room, air space). Horizontal hatching = fire-rated."
-      },
+      "rationale": "BP 344 2024 defines an area of refuge with direct access to an exit and fire separation for temporary safety.",
       "explanation": null,
       "code_citation": "ISO 1091 (Architectural Graphic Standards); AIA Graphic Standards",
       "bloom_level": "apply",
@@ -529,7 +469,7 @@
       "model_id": "ALE-DSGN-011-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.632809+00:00",
       "content_hash": "sha256:7701d656c36abed5d773fc2fc643a762257eac3ad40d54146cd0145b8ed6d165"
     }
   ]

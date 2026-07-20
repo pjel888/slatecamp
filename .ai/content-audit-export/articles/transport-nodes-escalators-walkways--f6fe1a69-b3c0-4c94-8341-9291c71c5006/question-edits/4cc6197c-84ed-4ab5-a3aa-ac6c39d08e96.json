@@ -1,10 +1,10 @@
 {
   "question_id": "4cc6197c-84ed-4ab5-a3aa-ac6c39d08e96",
   "baseline_hash": "sha256:2101a5a3b2d8c55e6c7723fb1b8118c832d69a5b087edf056526f380973e85dd",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
     "parent_article_slug": "transport-nodes-escalators-walkways",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "What minimum car size applies to accessible elevators in transport facilities under the checked source?",
+    "text": "A transport terminal plan shows escalators connecting three levels but no ramps or elevators. The building official notes a compliance failure. Which BP 344 principle does this violate, and what is the required remedy?",
     "options": [
       {
-        "id": "a",
-        "text": "1400 mm deep by 1500 mm wide with at least 900 mm door opening"
+        "id": "A",
+        "text": "Escalators alone are not sufficient — an elevator or accessible ramp alternative must also be provided on every accessible route"
       },
       {
-        "id": "b",
-        "text": "1400 mm deep by 1200 mm wide with at least 800 mm door opening"
+        "id": "B",
+        "text": "Escalators are fully compliant if they meet the S800 tread, 30° inclination, and 30 m/min speed requirements, which is not sufficient for accessibility"
       },
       {
-        "id": "c",
-        "text": "1200 mm deep by 1200 mm wide with at least 900 mm door opening"
+        "id": "C",
+        "text": "Escalators are sufficient if they have tactile warning blocks, handrails, and audible announcements, which does not meet accessibility standards"
       },
       {
-        "id": "d",
-        "text": "1500 mm deep by 1800 mm wide with at least 1200 mm door opening"
+        "id": "D",
+        "text": "Escalators are compliant for commercial buildings; hospitals are the only typology requiring a ramp or elevator alternative, which is incorrect"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "Transport-facility accessible elevators require at least 1400 mm depth, 1500 mm width, and 900 mm door opening.",
-    "explanation": "Transport-facility accessible elevators require at least 1400 mm depth, 1500 mm width, and 900 mm door opening.",
-    "code_citation": "BP 344 2024 IRR, transport infrastructure elevators",
-    "bloom_level": "apply",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Transport Nodes, Escalators, and Walkways",
-      "LEA Accessibility and Transport Design"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-transport-nodes-escalators-walkways-010"
+    "correct_option_id": "A",
+    "rationale": {
+      "summary": "Escalators are not a substitute for accessible vertical circulation — an elevator or ramp is always additionally required.",
+      "explanation": "BP 344 is explicit: an escalator alone does not constitute accessible vertical circulation because wheelchair users and many ambulatory disabled persons cannot use moving steps safely. An elevator (car minimum 1200 × 1400 mm) or accessible ramp (minimum 1200 mm wide, ≤1:12 slope) must be provided as an alternative on every floor level served. This applies to all building typologies — malls, transport terminals, schools, and hospitals alike.",
+      "common_misconceptions": [
+        "Believing that a code-compliant escalator satisfies the accessible vertical circulation requirement",
+        "Thinking the ramp/elevator alternative is only required in hospitals"
+      ]
+    },
+    "explanation": "Escalators cannot serve as the sole accessible vertical circulation — an elevator or ramp alternative is always required by BP 344.",
+    "code_citation": "BP 344 IRR",
+    "bloom_level": "evaluate",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.85,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

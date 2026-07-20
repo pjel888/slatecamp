@@ -662,19 +662,19 @@
       "options": [
         {
           "id": "a",
-          "text": "170 kg"
+          "text": "Equipment weight is 170 kg."
         },
         {
           "id": "b",
-          "text": "240 kg"
+          "text": "Equipment weight is 240 kg."
         },
         {
           "id": "c",
-          "text": "320 kg"
+          "text": "Equipment weight is 320 kg."
         },
         {
           "id": "d",
-          "text": "343 kg"
+          "text": "Equipment weight is 343 kg."
         }
       ],
       "correct_option_id": "c",
@@ -683,10 +683,10 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "170 kg is only 71% of the required capacity; this would fail under seismic load and violate NSCP strength requirements.",
-        "b": "240 kg is the basic seismic force WITHOUT the strength reduction factor; code requires the factor to be applied, so 240 kg is insufficient.",
-        "d": "343 kg would correspond to φ ≈ 0.70, which is not the standard factor specified in the code.",
-        "correct": "Tensile capacity = Seismic force ÷ φ = 240 kg ÷ 0.75 = 320 kg. Per NSCP 2015 Section 1307.5 and ASCE 7, the strength reduction factor φ = 0.75 applies to seismic restraints to account for uncertainty and dynamic effects. Using the raw seismic force without φ would underestimate the required capacity.",
+        "a": "Equipment weight is 170 kg. is only 71% of the required capacity; this would fail under seismic load and violate NSCP strength requirements.",
+        "b": "Equipment weight is 240 kg. is the basic seismic force WITHOUT the strength reduction factor; code requires the factor to be applied, so Equipment weight is 240 kg. is insufficient.",
+        "d": "Equipment weight is 343 kg. would correspond to φ ≈ 0.70, which is not the standard factor specified in the code.",
+        "correct": "Tensile capacity = Seismic force ÷ φ = Equipment weight is 240 kg. ÷ 0.75 = Equipment weight is 320 kg.. Per NSCP 2015 Section 1307.5 and ASCE 7, the strength reduction factor φ = 0.75 applies to seismic restraints to account for uncertainty and dynamic effects. Using the raw seismic force without φ would underestimate the required capacity.",
         "takeaway": "Cable restraint minimum tensile capacity = Seismic design force ÷ φ (φ = 0.75 per ASCE 7 for seismic restraints). Always apply the strength reduction factor; using only the raw force is a critical design error."
       },
       "explanation": null,
@@ -701,7 +701,7 @@
       "model_id": "ALE-UTIL-004-08-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.138859+00:00",
       "content_hash": "sha256:b9a769ccc8dfccfc1cce91cd857ea5c4c3dc4f4e335c8453e2e5eb4fcf9b649f"
     },
     {
