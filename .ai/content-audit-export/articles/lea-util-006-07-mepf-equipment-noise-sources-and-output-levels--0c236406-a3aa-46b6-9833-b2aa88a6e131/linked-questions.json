@@ -8,37 +8,31 @@
       "question_id": "0b8bb1cc-a6cb-4989-9bf2-0aff3b695ab4",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "According to ASHRAE guidance, what is the typical natural frequency range for coil spring isolators commonly used in HVAC equipment mounting?",
+      "text": "What is the first source-safe distinction in a noise-control item?",
       "options": [
         {
           "id": "a",
-          "text": "A) 0.5–2 Hz"
+          "text": "Whether the problem is airborne sound, structure-borne vibration, reverberation, or flanking transmission."
         },
         {
           "id": "b",
-          "text": "B) 2–8 Hz"
+          "text": "Whether the building is painted a dark color."
         },
         {
           "id": "c",
-          "text": "C) 10–15 Hz"
+          "text": "Whether the door hardware is card-reader based."
         },
         {
           "id": "d",
-          "text": "D) 15–25 Hz"
+          "text": "Whether the project has a net-metering application."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.5–2 Hz frequencies are too low for typical HVAC equipment mass and would require extremely soft springs with excessive deflection (>200 mm), making installation impractical.",
-        "c": "10–15 Hz is the range for elastomeric pads, which are lower-stiffness isolators suitable for lighter loads; spring isolators are stiffer and target 2–8 Hz.",
-        "d": "15–25 Hz frequencies are too high; at this range, isolation effectiveness drops to <10 dB above 30 Hz, insufficient for mechanical room noise control.",
-        "correct": "Spring isolators (coil springs) are designed for HVAC equipment with natural frequencies of 2–8 Hz per ASHRAE Handbook—Applications, Chapter 47. This frequency range is critical for effective isolation above ~30 Hz, where equipment noise dominates (ASHRAE design methodology).",
-        "takeaway": "Spring isolator selection must match equipment mass to achieve 2–8 Hz natural frequency; undersized or oversized isolators fail to provide required vibration isolation."
-      },
+      "rationale": "Whether the problem is airborne sound, structure-borne vibration, reverberation, or flanking transmission. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Applications (2021), Chapter 47 (Vibration and Seismic Restraint Design)",
       "bloom_level": "remember",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-006-07-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:01.938652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.763236+00:00",
       "content_hash": "sha256:b3e18ef1a4c0e7e5d88bd71c2f5627d3a422f9e4830ce0b51b854fbae8d98fbc"
     },
     {
       "question_id": "31a3dde5-2d63-4543-8d86-cecc572615d5",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A diesel generator (95 dB(A) at 1 m) is located in a ground-floor mechanical room adjacent to a residential unit (55 dB(A) daytime limit per DENR DAO 2000-81). The shared wall is 200 mm concrete (STC 54, ~50 dB at 1 kHz). Why is this design insufficient, and what is the primary gap?",
+      "text": "What does the checked handout say building materials affect?",
       "options": [
         {
           "id": "a",
-          "text": "A) STC 54 is marginal; wall must be upgraded to STC 65+ at all frequencies to ensure adequate sound attenuation"
+          "text": "How sound is reflected, absorbed, or transmitted."
         },
         {
           "id": "b",
-          "text": "B) Low-frequency attenuation (63–125 Hz) is inadequate; 200 mm concrete provides only 35–40 dB at 63 Hz versus 50 dB at 1 kHz"
+          "text": "How PV circuits are sized."
         },
         {
           "id": "c",
-          "text": "C) Diesel generator noise is primarily airborne, not structure-borne; acoustic enclosure is not required, which is a misconception"
+          "text": "How card readers store credentials."
         },
         {
           "id": "d",
-          "text": "D) Vibration isolation of the generator is unnecessary because the wall provides sufficient attenuation, which is incorrect"
+          "text": "How utility poles are numbered."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "STC 54 is actually good mid-frequency rating, but STC ratings do not capture low-frequency performance gaps. Upgrading to STC 65 is extremely costly and unnecessary if low-frequency problem is identified and targeted.",
-        "c": "Diesel generator noise is both airborne (exhaust, cooling fan) and structure-borne (vibration from engine mounts). Both paths must be controlled; airborne requires enclosure and louver silencing, structure-borne requires isolation.",
-        "d": "Vibration isolation of the generator is essential for reducing structure-borne transmission; the wall alone cannot compensate for uncontrolled vibration transmission.",
-        "correct": "Mass law predicts SRI ≈ 6 dB improvement per doubling of mass; 200 mm concrete achieves ~50 dB at 1 kHz but only 35–40 dB at 63 Hz (low-frequency weakness). Diesel generators produce peak energy at 63–125 Hz, making low-frequency isolation critical. To achieve 55 − 40 dB(A) limit (with margin), attenuation at 63 Hz must exceed 55 dB. Solution: decoupled double-skin construction (100 mm concrete + 100 mm cavity + 100 mm concrete + 50 mm lining) achieves 45–50 dB at 63 Hz, plus vibration isolation of generator (20 dB structure-borne reduction).",
-        "takeaway": "STC ratings are valid for 125 Hz–4 kHz only. Low-frequency equipment noise requires explicit verification of performance below 125 Hz; mass law SRI calculation at 63 Hz must confirm adequate margin."
-      },
+      "rationale": "How sound is reflected, absorbed, or transmitted. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43; ISO 12354-1:2017",
       "bloom_level": "analyze",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-006-07-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:01.938652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.759502+00:00",
       "content_hash": "sha256:94e5f88ed0cf52530c635c90c50e460986903c87ca37cc6e82e121e6c1dbeab1"
     },
     {
       "question_id": "32e37f8f-3cc7-44e7-82ad-21cfaaaedf2a",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A rectangular splitter silencer in an AHU discharge duct has 40 mm melamine foam splitters and is designed for 6 m/s face velocity. What is the primary limitation of this design, and what is the recommended remediation?",
+      "text": "Which treatment is source-safe for pipe or duct vibration noise?",
       "options": [
         {
           "id": "a",
-          "text": "A) Pressure drop is excessive (>50 Pa); reduce splitter thickness to 25 mm to improve airflow efficiency and reduce energy consumption"
+          "text": "Use a wrap or damping treatment on the pipe or duct path."
         },
         {
           "id": "b",
-          "text": "B) Face velocity exceeds 8 m/s threshold; reduce to ≤5 m/s to minimize self-noise regeneration and ensure compliance with acoustic standards"
+          "text": "Increase camera resolution."
         },
         {
           "id": "c",
-          "text": "C) Attenuation at 63–125 Hz is only 5–10 dB; increase to 50 mm thickness and add lined duct downstream"
+          "text": "Move the kWh meter higher."
         },
         {
           "id": "d",
-          "text": "D) Melamine foam loses acoustic properties at >40 mm thickness; replace with mineral wool to maintain sound attenuation performance"
+          "text": "Add a PABX console."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "At 40 mm splitters and 6 m/s, pressure drop is approximately 20–30 Pa, well below the 50 Pa threshold. Reducing thickness would worsen low-frequency performance.",
-        "b": "While 6 m/s approaches the 8 m/s self-noise limit, it is within acceptable design bounds. The design problem is not velocity but low-frequency weakness.",
-        "d": "Melamine foam at 40–50 mm is standard; mineral wool would not improve performance. Class A melamine (ASTM E84) is preferred in humid climates.",
-        "correct": "Rectangular splitter silencers provide 15–35 dB across 500 Hz–8 kHz but only 5–10 dB at 63–125 Hz per ASHRAE Chapter 8. At 6 m/s (within acceptable range), the design pressure drop (~25 Pa) is acceptable, but low-frequency weakness is critical for equipment (chillers, compressors) with dominant 63–125 Hz content. Solution: increase splitter thickness to 50 mm and add 5–10 m of lined ductwork downstream to achieve integrated low-frequency control.",
-        "takeaway": "Silencer design must address both mid-frequency attenuation (via splitter thickness) and low-frequency performance (via combination of geometry and lined duct)."
-      },
+      "rationale": "Use a wrap or damping treatment on the pipe or duct path. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 8 (Sound and Vibration Control)",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-006-07-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:01.938652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.764289+00:00",
       "content_hash": "sha256:1c8162fbbb73515425ab37f9bc87e44e42b52364b2ba1a6db53e1d7beb7208b2"
     },
     {
       "question_id": "5baaab42-9918-4909-ae15-0068a8a9356d",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "What is the primary mechanism by which vibration isolation reduces structure-borne noise transmission from rotating equipment to occupied spaces below?",
+      "text": "What does RT60 measure?",
       "options": [
         {
           "id": "a",
-          "text": "A) Absorbing vibration energy in the isolator material, which is effective for high-frequency vibrations but less so for low-frequency ones"
+          "text": "The time for sound level to drop 60 dB in a room."
         },
         {
           "id": "b",
-          "text": "B) Raising the equipment's natural frequency above the source vibration frequency, which can be challenging to achieve in practice"
+          "text": "The current rating of a PV inverter."
         },
         {
           "id": "c",
-          "text": "C) Lowering the equipment's natural frequency well below the source vibration frequency to provide attenuation above it"
+          "text": "The number of card-reader swipes per minute."
         },
         {
           "id": "d",
-          "text": "D) Damping all vibration frequencies equally across the spectrum, which is rarely possible due to material limitations"
+          "text": "The voltage of a service drop."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While some energy is absorbed by the isolator material (damping), this is secondary; the primary mechanism is frequency separation (tuning). Pure energy absorption would be inefficient.",
-        "b": "Raising the natural frequency would bring it closer to equipment vibration, reducing isolation effectiveness and potentially creating resonance amplification.",
-        "d": "Isolators are designed for selective frequency isolation, not flat damping; equal attenuation across all frequencies is neither achievable nor desired.",
-        "correct": "Vibration isolation works by setting the system natural frequency (f_n) well below the equipment vibration frequency (f_e). When f_e >> f_n (typically f_e > 2.5 × f_n), attenuation ∝ (f_e/f_n)². At 2–5 Hz natural frequency with equipment vibration at 30+ Hz, this produces 20–30 dB reduction (CIBSE Guide E; ASHRAE).",
-        "takeaway": "Effective vibration isolation requires frequency separation: f_n << f_e, not mass increase or frequency matching."
-      },
+      "rationale": "The time for sound level to drop 60 dB in a room. This matches the checked local source locator for the parent article.",
       "explanation": "While some energy is absorbed by the isolator material (damping), this is secondary; the primary mechanism is frequency separation (tuning). Pure energy absorption would be inefficient. Raising the natural frequency would bring it closer to equipment vibration, reducing isolation effectiveness and potentially creating resonance amplification. Isolators are designed for selective frequency isolation, not flat damping; equal attenuation across all frequencies is neither achievable nor desired. Vibration isolation works by setting the system natural frequency (f_n) well below the equipment vibration frequency (f_e). When f_e >> f_n (typically f_e > 2.5 × f_n), attenuation ∝ (f_e/f_n)². At 2–5 Hz natural frequency with equipment vibration at 30+ Hz, this produces 20–30 dB reduction (CIBSE Guide E; ASHRAE). Effective vibration isolation requires frequency separation: f_n << f_e, not mass increase or frequency matching.",
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43 (Vibration Isolation); CIBSE Guide E (2018)",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-006-07-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:01.938652+00:00",
-      "updated_at": "2026-05-06T15:03:13.141976+00:00",
+      "updated_at": "2026-07-20T01:13:25.757845+00:00",
       "content_hash": "sha256:83d561c2b5f5e66428fb1b82663754dbe443011cbd3af286b4dc052a0742aafb"
     },
     {
       "question_id": "e494ec90-a6c1-41fd-b156-f1a6252e26f1",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A centrifugal pump (80 dB(A)) is mounted on the third floor of a residential building, and vibration must be isolated to meet NC 25 target in the bedroom below (45 dB(A) allowable). Assuming vibration isolation achieves 20 dB reduction, what additional attenuation is required from airborne transmission, and is single-layer 100 mm concrete partition sufficient?",
+      "text": "What is the decibel caution from Salvan acoustics?",
       "options": [
         {
           "id": "a",
-          "text": "A) 15 dB additional required; 100 mm concrete (STC 48, ~50 dB at 1 kHz) provides adequate attenuation for the remaining airborne path"
+          "text": "Decibels are logarithmic; doubled sound intensity is about a 3 dB increase."
         },
         {
           "id": "b",
-          "text": "B) 25 dB additional required; 100 mm concrete is marginal; STC 60+ (double-skin construction) recommended for safety margin, especially in high-noise environments"
+          "text": "Decibels can always be added by ordinary arithmetic."
         },
         {
           "id": "c",
-          "text": "C) 15 dB additional required; but low-frequency pump noise (70–150 Hz) at 63 Hz may be only 35 dB attenuated by 100 mm concrete; upgrade to decoupled double-layer required"
+          "text": "Decibels only apply to electrical panelboards."
         },
         {
           "id": "d",
-          "text": "D) 5 dB additional required; vibration isolation is primary control; partition is secondary, but may need reinforcement in certain conditions"
+          "text": "Decibels measure photovoltaic current."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While 100 mm concrete provides adequate mid-frequency attenuation, low-frequency weakness (38 dB at 63 Hz vs. 50 dB at 1 kHz) creates spectral imbalance. The remaining 15 dB budget is exceeded at low frequencies.",
-        "b": "15 dB additional is correct, but the analysis omits the critical low-frequency gap. STC 60+ is recommended, but the specific reason is low-frequency control, not a general safety requirement.",
-        "d": "Vibration isolation is critical (20 dB), but airborne transmission via direct radiation from pump (fan noise, discharge) and through partition is not negligible. Both paths must be controlled per sound path analysis methodology.",
-        "correct": "Source level 80 dB(A) − target 45 dB(A) = 35 dB required total. Vibration isolation provides 20 dB, leaving 15 dB required from airborne/partition path. Single-layer 100 mm concrete achieves STC 48 (~50 dB at 1 kHz mid-frequency), but low-frequency pump noise peaks at 70–150 Hz with significant 63 Hz content. At 63 Hz, mass law predicts: SRI = 20 log₁₀(240 × 63) − 47 = 20(4.18) − 47 ≈ 38 dB (versus 50 dB at 1 kHz). The low-frequency attenuation (38 dB) is insufficient for 15 dB remaining budget; a dominant 63 Hz signature will exceed the 45 dB(A) target. Recommendation: decoupled double-skin construction (100 mm concrete + 100 mm air + 100 mm concrete + 50 mm lining) achieves 45–50 dB at 63 Hz, plus vibration isolation (20 dB) = 65–70 dB total reduction, exceeding 35 dB requirement with safety margin (ASHRAE Chapter 43).",
-        "takeaway": "Design allocation of attenuation must account for spectral content; low-frequency equipment (pumps, compressors, chillers) requires explicit low-frequency wall design or increased partition thickness/decoupling."
-      },
+      "rationale": "Decibels are logarithmic; doubled sound intensity is about a 3 dB increase. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43; ISO 12354-1:2017",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-UTIL-006-07-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.762154+00:00",
       "content_hash": "sha256:b9b7849aa8a0245b017cb41d29930776a856f479f7f5fbfc81bb7f17cc8efe23"
     },
     {
       "question_id": "84992241-8a45-400a-91ad-123866d139c2",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "What is the key difference between duct-borne transmission and breakout noise in terms of noise generation and mitigation strategy?",
+      "text": "What is the first source-safe distinction in a noise-control item?",
       "options": [
         {
           "id": "a",
-          "text": "A) Duct-borne is fan noise traveling through ducts; breakout is vibration from equipment mounts. Both require vibration isolation, which is a common approach"
+          "text": "Whether the problem is airborne sound, structure-borne vibration, reverberation, or flanking transmission."
         },
         {
           "id": "b",
-          "text": "B) Duct-borne is low-frequency; breakout is high-frequency. Mitigation uses different absorptive material for each, tailored to their specific characteristics"
+          "text": "Whether the building is painted a dark color."
         },
         {
           "id": "c",
-          "text": "C) Duct-borne is noise generated within the duct (turbulence, regeneration) traveling downstream; breakout is acoustic radiation from duct walls to adjacent spaces. Mitigation requires internal silencers for duct-borne and duct wrapping/decoupling for breakout."
+          "text": "Whether the door hardware is card-reader based."
         },
         {
           "id": "d",
-          "text": "D) Both are identical; the terms are synonymous in engineering practice, which is a misunderstanding of the concepts"
+          "text": "Whether the project has a net-metering application."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Duct-borne is not solely fan noise; it includes regenerated noise from fittings and turbulence. Vibration isolation is relevant to both paths but is not the primary mitigation for duct-borne transmission.",
-        "b": "Duct-borne and breakout occur across all frequency ranges. Absorptive material effectiveness varies by type, but the distinction is not frequency-based.",
-        "d": "The terms are distinct and represent different transmission mechanisms requiring different control strategies.",
-        "correct": "Duct-borne transmission refers to noise (from fans, turbulence, fittings) traveling through the duct to downstream grilles/registers; mitigation uses internal silencers (splitters, lined sections) and velocity control. Breakout noise is radiation from duct walls caused by internal pressure/vibration; mitigation uses external duct wrapping (50 mm mineral wool), decoupling supports (springs/elastomers), and velocity reduction. Both paths must be controlled per ASHRAE Chapter 8; separating them clarifies mitigation strategy (CIBSE Guide E).",
-        "takeaway": "Designers must identify whether the dominant path is duct-borne (internal silencers needed) or breakout (duct decoupling and wrapping needed) to select appropriate mitigation."
-      },
+      "rationale": "Whether the problem is airborne sound, structure-borne vibration, reverberation, or flanking transmission. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 8; CIBSE Guide E (2018)",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-006-07-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.760835+00:00",
       "content_hash": "sha256:67aa1d902a903c3e150006dabfead50e77cdf344825aedec9bcaad2f5186e88a"
     },
     {
       "question_id": "cb6cfb1d-6d74-4bc6-9ab1-ef3b427b42b2",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A mechanical room floor is 150 mm above a residential office below. A floating floor system is proposed with 2–5 Hz natural frequency. What is the minimum recommended perimeter isolation detail to ensure design effectiveness, and why is it critical?",
+      "text": "What does the checked handout say building materials affect?",
       "options": [
         {
           "id": "a",
-          "text": "A) No perimeter isolation required; the floating slab isolates vibration naturally through its mass and resilient layer"
+          "text": "How sound is reflected, absorbed, or transmitted."
         },
         {
           "id": "b",
-          "text": "B) Rigid brick wall connection at perimeter; maintains structural integrity and lateral load transfer capacity"
+          "text": "How PV circuits are sized."
         },
         {
           "id": "c",
-          "text": "C) Full-perimeter resilient gaskets isolating floor slab from perimeter walls to prevent short-circuit vibration paths"
+          "text": "How card readers store credentials."
         },
         {
           "id": "d",
-          "text": "D) Spring isolators at 1 m spacing around perimeter; elastomeric materials are unnecessary for perimeter treatment"
+          "text": "How utility poles are numbered."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The floating slab itself does not provide vibration isolation; isolation is provided by the resilient layer beneath it. Perimeter isolation is equally critical to preserve the isolation path.",
-        "b": "Rigid brick or concrete perimeter connections create a direct vibration transmission path (short-circuit), defeating the entire floating floor system.",
-        "d": "Spring isolators at perimeter are additional; the primary requirement is continuous resilient gasket material around the entire perimeter to break the structural path.",
-        "correct": "Floating floor systems require full-perimeter isolation with resilient gaskets (elastomeric material 10–20 mm thick) to decouple the floating slab from perimeter walls (ASHRAE Chapter 43; CIBSE Guide E). Without edge isolation, vibration bypasses the isolation system through rigid wall connections, negating low-frequency attenuation (20–30 dB at 100 Hz). This is a common failure mode in practical installations (per ASHRAE common design errors).",
-        "takeaway": "Floating floor effectiveness depends on complete isolation path isolation from ground to slab to perimeter. Any rigid connection compromises performance."
-      },
+      "rationale": "How sound is reflected, absorbed, or transmitted. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43; CIBSE Guide E (2018)",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-006-07-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.772066+00:00",
       "content_hash": "sha256:7bb71817e7d651a60caa973249b0bf8aa8e2299dca23c28700961847543aa1ca"
     },
     {
       "question_id": "059c8c19-5d80-46a5-b810-b2b70f05310c",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "Flexible hose connectors (vibration-isolation assemblies) are installed at the inlet and outlet of a centrifugal pump (85 dB(A) at source). What is the minimum recommended length of flexible hose per section, and what is the primary benefit within 1 meter of the equipment?",
+      "text": "Which treatment is source-safe for pipe or duct vibration noise?",
       "options": [
         {
           "id": "a",
-          "text": "A) 100 mm minimum; provides 5 dB attenuation at high frequencies only, which is insufficient for comprehensive noise control"
+          "text": "Use a wrap or damping treatment on the pipe or duct path."
         },
         {
           "id": "b",
-          "text": "B) 300 mm minimum; decouples vibration transmission at low frequencies (3–8 Hz) for >20 dB attenuation above 200 Hz"
+          "text": "Increase camera resolution."
         },
         {
           "id": "c",
-          "text": "C) 500 mm minimum; required for pressure rating and stress relief, ensuring long-term durability under operational conditions"
+          "text": "Move the kWh meter higher."
         },
         {
           "id": "d",
-          "text": "D) 1000 mm minimum; achieves full isolation equivalent to spring isolators, providing maximum noise and vibration reduction"
+          "text": "Add a PABX console."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "100 mm is insufficient; the flexible section must have adequate length to deform under load and provide frequency separation. High-frequency-only attenuation is inadequate for low-frequency equipment noise.",
-        "c": "500 mm and 1000 mm are larger than the minimum required; 300 mm is the industry-standard minimum for practical installations. Longer sections provide no additional benefit for isolation but increase cost and space.",
-        "d": "Flexible hose stress rating and pressure capacity are separate from isolation length; 300 mm is adequate for isolation per design standards.",
-        "correct": "Flexible hose assemblies (elastomeric core, typically 3–8 Hz natural frequency) require minimum 300 mm length per section per ASHRAE Applications Chapter 47 and pump manufacturer specifications. This length provides adequate flexibility to isolate vibration transmission through the piping system, breaking the rigid connection path. Attenuation >20 dB is achieved above 200 Hz (ASHRAE design guidance). Installation within 1 meter of pump inlet/outlet is critical per PD 1058 (Philippine Mechanical Code) to prevent structure-borne transmission before isolation.",
-        "takeaway": "Flexible connectors are not a substitute for equipment vibration isolation; they supplement isolators by breaking pipe transmission paths at the source."
-      },
+      "rationale": "Use a wrap or damping treatment on the pipe or duct path. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Applications (2021), Chapter 47",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-006-07-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.771162+00:00",
       "content_hash": "sha256:1ec842dfe3289789a60069a07deed5bef35be45f2c38bbbb56182914979b00d4"
     },
     {
       "question_id": "4c01e366-2b98-4197-b9af-c1f2acd0e89c",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "In the context of noise control for equipment rooms, what is the definition of NC (Noise Criteria) and how does it differ from overall dB(A) measurement?",
+      "text": "What does RT60 measure?",
       "options": [
         {
           "id": "a",
-          "text": "A) NC is a single overall sound level rating; dB(A) is a spectral measurement across octave bands, which provides a more detailed analysis of sound frequencies"
+          "text": "The time for sound level to drop 60 dB in a room."
         },
         {
           "id": "b",
-          "text": "B) NC is a spectral rating across octave bands (63 Hz–8 kHz) accounting for human perception and task-specific performance; dB(A) is an overall energy-weighted single number (A-weighting per ISO 226)"
+          "text": "The current rating of a PV inverter."
         },
         {
           "id": "c",
-          "text": "C) NC and dB(A) are identical metrics; different names for the same measurement, often used interchangeably in industry standards"
+          "text": "The number of card-reader swipes per minute."
         },
         {
           "id": "d",
-          "text": "D) NC is used outdoors; dB(A) is used indoors only, reflecting different environmental considerations for sound measurement"
+          "text": "The voltage of a service drop."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This reverses the definitions; NC is spectral, dB(A) is overall single-number.",
-        "c": "While both metrics can be measured simultaneously, NC and dB(A) capture different aspects of the acoustic environment. NC 30 might correspond to dB(A) 40–45 depending on spectral content.",
-        "d": "Both metrics apply to indoor and outdoor environments. NC is typically used for enclosed spaces; dB(A) is the legal standard for environmental/property boundary compliance (DENR DAO 2000-81).",
-        "correct": "NC (ANSI/ASA S12.2-2008) is a spectral criterion providing acceptable sound levels across 11 octave bands (63 Hz–8 kHz), designed to correlate with speech intelligibility and task performance in specific room types. dB(A) is an overall sound pressure level weighted by the A-weighting curve (ISO 226), reducing low-frequency sensitivity. A design can meet NC 30 in one space and dB(A) 45 in another; NC captures spectral balance (avoiding low-frequency dominance), while dB(A) represents overall energy. ASHRAE design typically specifies both: NC for spectral compliance in occupied spaces, dB(A) for overall budget in mechanical areas.",
-        "takeaway": "Design specifications must address both NC (spectral quality) and dB(A) (overall energy); meeting one does not guarantee the other, particularly if low-frequency energy dominates."
-      },
+      "rationale": "The time for sound level to drop 60 dB in a room. This matches the checked local source locator for the parent article.",
       "explanation": "This reverses the definitions; NC is spectral, dB(A) is overall single-number. While both metrics can be measured simultaneously, NC and dB(A) capture different aspects of the acoustic environment. NC 30 might correspond to dB(A) 40–45 depending on spectral content. Both metrics apply to indoor and outdoor environments. NC is typically used for enclosed spaces; dB(A) is the legal standard for environmental/property boundary compliance (DENR DAO 2000-81). NC (ANSI/ASA S12.2-2008) is a spectral criterion providing acceptable sound levels across 11 octave bands (63 Hz–8 kHz), designed to correlate with speech intelligibility and task performance in specific room types. dB(A) is an overall sound pressure level weighted by the A-weighting curve (ISO 226), reducing low-frequency sensitivity. A design can meet NC 30 in one space and dB(A) 45 in another; NC captures spectral balance (avoiding low-frequency dominance), while dB(A) represents overall energy. ASHRAE design typically specifies both: NC for spectral compliance in occupied spaces, dB(A) for overall budget in mechanical areas. Design specifications must address both NC (spectral quality) and dB(A) (overall energy); meeting one does not guarantee the other, particularly if low-frequency energy dominates.",
       "code_citation": "ANSI/ASA S12.2-2008; ASHRAE Handbook—Fundamentals (2021), Chapter 8",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-006-07-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-05-06T15:03:13.273785+00:00",
+      "updated_at": "2026-07-20T01:13:25.768287+00:00",
       "content_hash": "sha256:17725d81e1ae832e78d2ffd66b213ff54f0cd80da9cc538d5864e19d03ceac61"
     },
     {
       "question_id": "a4bafc8a-9b31-43fb-9cf8-5bd8837f5c40",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "An AHU serving an open office above a mechanical room is designed with supply ductwork (NC 35 target at grille, 48 dB(A)) and discharge noise 75 dB(A) from the unit outlet. A splitter silencer (35 dB attenuation) is specified, but the specification omits duct wrapping on the return air ductwork passing above the office. What acoustic path is uncontrolled, and what is the resulting office noise signature?",
+      "text": "What is the decibel caution from Salvan acoustics?",
       "options": [
         {
           "id": "a",
-          "text": "A) Supply ductwork breakout; the supply silencer addresses this. Design is complete."
+          "text": "Decibels are logarithmic; doubled sound intensity is about a 3 dB increase."
         },
         {
           "id": "b",
-          "text": "B) Return air ductwork breakout above office is uncontrolled; return air (typically 3–5 dB lower than supply due to system losses) radiates from uninsulated return ducts, potentially adding 10–15 dB to office background. Minimum 50 mm wrapping required on return ductwork."
+          "text": "Decibels can always be added by ordinary arithmetic."
         },
         {
           "id": "c",
-          "text": "C) Outdoor air intake noise; acoustic louver is the missing component, which is crucial for maintaining the desired noise levels within the office environment."
+          "text": "Decibels only apply to electrical panelboards."
         },
         {
           "id": "d",
-          "text": "D) Equipment vibration transmission; floating floor isolation is required to prevent structural noise from affecting the office space above."
+          "text": "Decibels measure photovoltaic current."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While supply silencer is correctly specified, return air ductwork is overlooked. Supply and return paths must both be controlled per ASHRAE integrated design process.",
-        "c": "Outdoor air intake louver is separate from the return ductwork issue; not addressing this path.",
-        "d": "Equipment vibration is controlled separately via isolators; ductwork breakout is an acoustic radiation path independent of equipment vibration.",
-        "correct": "Discharge silencer (35 dB) reduces supply duct inlet noise from 75 dB(A) to ~40 dB(A), meeting NC 35 target (48 dB(A) allowable). However, return air ductwork (typically 70–72 dB(A) at return inlet due to system regeneration and return fan) passes above the office unlined. Uninsulated return ducts exhibit 5–10 dB/m radiated breakout noise at low frequencies (63–250 Hz) per ASHRAE Chapter 8 duct radiation formulas. Over 5–10 m of ductwork above office, cumulative breakout adds 10–15 dB above office background, potentially raising noise signature to NC 40 (unacceptable for office). Mitigation: wrap return ductwork with 50 mm mineral wool + mesh, reducing breakout by 5–10 dB (ASHRAE recommendation for return ducts above occupied space).",
-        "takeaway": "Complete acoustic design requires analysis of all ductwork paths: supply discharge (silencers), return inlet (lower priority but still needed if ductwork passes above occupied space), and outdoor air intake (silenced louvers). Omitting return air ductwork treatment is a common design error."
-      },
+      "rationale": "Decibels are logarithmic; doubled sound intensity is about a 3 dB increase. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 8; CIBSE Guide E (2018)",
       "bloom_level": "analyze",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-006-07-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.770200+00:00",
       "content_hash": "sha256:db8b8679f1172928090553db43dec74e37a093b65f1f90d8d99fabbe0f6ac495"
     },
     {
       "question_id": "29605ab9-d42e-4436-a818-4c1a865d9980",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "An acoustic enclosure for a diesel generator is designed with single-layer 100 mm reinforced concrete (mass ≈ 350 kg/m²). Using the mass law formula SRI = 20 log₁₀(M × f) − 47, estimate the SRI at 63 Hz (low-frequency diesel peak) and explain why this enclosure design is inadequate for residential-adjacent locations.",
+      "text": "What is the first source-safe distinction in a noise-control item?",
       "options": [
         {
           "id": "a",
-          "text": "A) SRI ≈ 42 dB at 63 Hz; adequate for residential isolation (55 dB limit − 42 dB = 13 dB remaining for source + other paths), which is a miscalculation"
+          "text": "Whether the problem is airborne sound, structure-borne vibration, reverberation, or flanking transmission."
         },
         {
           "id": "b",
-          "text": "B) SRI ≈ 35 dB at 63 Hz; inadequate; 100 mm concrete provides insufficient low-frequency attenuation for a 95 dB(A) diesel generator to achieve 55 dB(A) target at property boundary"
+          "text": "Whether the building is painted a dark color."
         },
         {
           "id": "c",
-          "text": "C) SRI ≈ 48 dB at 63 Hz; exceeds requirement, but enclosure ventilation is problematic, which is not the primary concern"
+          "text": "Whether the door hardware is card-reader based."
         },
         {
           "id": "d",
-          "text": "D) SRI cannot be calculated below 125 Hz; mass law is invalid at low frequencies, which is a misunderstanding of the mass law application"
+          "text": "Whether the project has a net-metering application."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Calculation is incorrect; 20 log₁₀(22,050) ≈ 86.8, not higher. Residual margin of 13 dB is insufficient; best practice requires 5–10 dB safety margin, leaving only 3–8 dB for source variability and other paths.",
-        "c": "STC 48 is typical for single-layer 100 mm concrete at mid-frequencies, but low-frequency (63 Hz) performance is much worse (~40 dB), not exceeding requirement. Ventilation is a secondary issue if low-frequency isolation is inadequate.",
-        "d": "Mass law is valid below 125 Hz; it is the primary design method for low-frequency partition performance per ISO 12354-1. The transition to coincidence control occurs above ~1 kHz.",
-        "correct": "SRI = 20 log₁₀(350 × 63) − 47 = 20 log₁₀(22,050) − 47 = 20(4.34) − 47 = 86.8 − 47 = 39.8 ≈ 40 dB at 63 Hz per ISO 12354-1 (with boundary corrections, typically 35–40 dB practical). A 95 dB(A) diesel generator requires 95 − 55 = 40 dB attenuation to meet DENR residential limit; enclosure alone (40 dB) leaves zero margin and does not account for airborne paths (exhaust, cooling fan radiation). Combined with vibration isolation (20 dB) and louver silencing (15 dB), total 75 dB reduction is achievable. Single-layer concrete enclosure is insufficient; double-skin (100 mm air + 50 mm lining) required to achieve 45–50 dB at 63 Hz.",
-        "takeaway": "Single-layer concrete enclosures (100 mm) are marginal for low-frequency diesel generator isolation. Double-skin or triple-layer decoupled construction is the industry standard for residential-adjacent mechanical rooms."
-      },
+      "rationale": "Whether the problem is airborne sound, structure-borne vibration, reverberation, or flanking transmission. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ISO 12354-1:2017; ASHRAE Handbook—Fundamentals (2021)",
       "bloom_level": "apply",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-006-07-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.766336+00:00",
       "content_hash": "sha256:bf994816c851d25c7deb71ee4b78b485279f6742940dacce9306e689a6452825"
     },
     {
       "question_id": "4b21976b-389f-46fc-9ba2-7be7f612449f",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A cooling tower (85 dB(A) at 1 m) is mounted on a rooftop 6 meters from the nearest residential property boundary. Using inverse square law outdoor propagation, what is the sound level at the property boundary, and does it comply with DENR DAO 2000-81 (55 dB(A) daytime residential limit) with a 3 dB safety margin?",
+      "text": "What does the checked handout say building materials affect?",
       "options": [
         {
           "id": "a",
-          "text": "A) 73 dB(A); does not comply; requires 21 dB reduction (barriers + silencers + setback increase)"
+          "text": "How sound is reflected, absorbed, or transmitted."
         },
         {
           "id": "b",
-          "text": "B) 68 dB(A); does not comply; requires 16 dB reduction (barriers or silencers)"
+          "text": "How PV circuits are sized."
         },
         {
           "id": "c",
-          "text": "C) 62 dB(A); marginally compliant (3 dB margin remains but no buffer for variability)"
+          "text": "How card readers store credentials."
         },
         {
           "id": "d",
-          "text": "D) 61 dB(A); compliant with safety margin"
+          "text": "How utility poles are numbered."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Calculation is 85 − 20 log₁₀(6) ≈ 69 dB, not 73 dB. At 6 m distance, the 15 dB attenuation from distance is correctly applied.",
-        "c": "62 dB(A) would imply only ~7 dB attenuation from distance, which corresponds to ~3 m distance, not 6 m. This under-estimates the distance effect.",
-        "d": "61 dB(A) calculation is inconsistent with the 6 m distance and inverse square law. At 6 m, predicted level is ~69 dB(A).",
-        "correct": "L₂ = 85 − 20 log₁₀(6/1) = 85 − 20(0.778) = 85 − 15.56 ≈ 69.4 dB(A) at 6 m (ISO 3744 free-field method). DENR DAO 2000-81 residential daytime limit is 55 dB(A); with 3 dB safety margin requirement, design target is 52 dB(A). Required reduction: 69 − 52 = 17 dB (rounded 16 dB practical). Solution: acoustic barrier (STC 45, ~10 dB) + silenced louver intake (10 dB) achieves 20 dB; or increase setback to >10 m (gain 6 dB from distance) + barrier (10 dB) = 16 dB total. Compliance verification per ISO 9613-1 outdoor propagation model.",
-        "takeaway": "Outdoor noise compliance requires explicit inverse square law calculation and identification of dominant attenuation source (distance, barriers, silencers); relying on distance alone is often insufficient for nearby residential boundaries."
-      },
+      "rationale": "How sound is reflected, absorbed, or transmitted. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ISO 3744:2017; DENR DAO 2000-81",
       "bloom_level": "analyze",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-006-07-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.765313+00:00",
       "content_hash": "sha256:839688020ffa2125a69d634931c9c2d4bd1f7703552037684de3348ff97f80ec"
     },
     {
       "question_id": "c9d72107-2797-4191-91f6-ad26abb9bdc2",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A chiller isolation system uses inertia base mass = 12,000 kg (equipment + base), target f_n = 3 Hz, and static deflection is measured at 30 mm. Using the natural frequency formula, is this isolation system properly tuned?",
+      "text": "Which treatment is source-safe for pipe or duct vibration noise?",
       "options": [
         {
           "id": "a",
-          "text": "A) Yes; 30 mm deflection is within acceptable 25–100 mm range for practical installations, ensuring adequate vibration isolation."
+          "text": "Use a wrap or damping treatment on the pipe or duct path."
         },
         {
           "id": "b",
-          "text": "B) No; calculated spring stiffness (1.15 × 10^7 N/m) exceeds practical component ratings, which may lead to premature failure."
+          "text": "Increase camera resolution."
         },
         {
           "id": "c",
-          "text": "C) No; actual calculated f_n ≈ 2.85 Hz, below the 3 Hz target, resulting in inadequate attenuation above 10 Hz"
+          "text": "Move the kWh meter higher."
         },
         {
           "id": "d",
-          "text": "D) Cannot determine without knowing the isolator material (elastomeric vs. spring), as material properties significantly affect performance."
+          "text": "Add a PABX console."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While 30 mm is within the acceptable 25–100 mm range, the design goal is to achieve target f_n = 3 Hz, not merely fall within deflection limits. This design is under-tuned.",
-        "b": "At 30 mm deflection, stiffness is 3.9 × 10^6 N/m, within standard component ratings (typical springs rated to 10^7 N/m). This is not the limiting factor.",
-        "d": "The calculation method applies to both spring and elastomeric isolators (they both follow f_n = √(kg/Δ) physics). Material type does not change the fundamental frequency calculation.",
-        "correct": "Given Δ = 30 mm = 0.03 m and M = 12,000 kg, solve for k: k = M × g / Δ = 12,000 × 9.81 / 0.03 ≈ 3.9 × 10^6 N/m. Then f_n = (1/2π) × √(k/m) = (1/2π) × √(3.9 × 10^6 / 12,000) ≈ 2.87 Hz (ASHRAE formula). At 2.87 Hz natural frequency, attenuation begins at ~9 Hz; at 30 Hz source frequency, attenuation is only (30/2.87)² ≈ 109× ≈ 20 dB. If target is 25 dB attenuation at 30 Hz, this is marginal. Recalibration to reduce deflection to 22–25 mm would raise f_n to 3.2–3.5 Hz, improving mid-range isolation per ASHRAE guidelines.",
-        "takeaway": "Measured deflection and natural frequency must be verified against design targets; small deviations in deflection (±5 mm) significantly impact isolation effectiveness at critical frequencies (20–50 Hz)."
-      },
+      "rationale": "Use a wrap or damping treatment on the pipe or duct path. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43",
       "bloom_level": "analyze",
@@ -651,30 +573,30 @@
       "model_id": "ALE-UTIL-006-07-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.769240+00:00",
       "content_hash": "sha256:65a09ce27e6876a3b38456eb22cec31733be39a0ff2927250a50110d9feb3411"
     },
     {
       "question_id": "bd1044d6-dc61-418f-b931-e0ae71527d6b",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "In a Philippine mechanical room subject to monsoon humidity (90% RH), fibrous duct lining (fiberglass, 30 mm thickness, installed 5 years ago) shows visible mold discoloration and slight compression. A sound level survey indicates duct breakout noise is 8 dB higher than design prediction. What is the root cause and what corrective action is recommended?",
+      "text": "What does RT60 measure?",
       "options": [
         {
           "id": "a",
-          "text": "A) Fiberglass degradation in humid climate reduces acoustic absorption coefficient (NRC) by ~40% over 5 years; replace with Class A melamine foam (10-year service life in tropical climates)"
+          "text": "The time for sound level to drop 60 dB in a room."
         },
         {
           "id": "b",
-          "text": "B) Duct velocity exceeded design; increase duct diameter to restore attenuation and ensure compliance with noise standards"
+          "text": "The current rating of a PV inverter."
         },
         {
           "id": "c",
-          "text": "C) Vibration isolation hangers failed; inspect and replace with stainless steel spring supports to prevent further noise issues"
+          "text": "The number of card-reader swipes per minute."
         },
         {
           "id": "d",
-          "text": "D) Silencer installed downstream is clogged with debris; clean and verify pressure drop performance to restore system efficiency"
+          "text": "The voltage of a service drop."
         }
       ],
       "correct_option_id": "a",
@@ -682,13 +604,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "If duct velocity were excessive, it would have been evident at commissioning; 5-year post-installation degradation is unlikely to be velocity-related. Duct geometry is fixed; increasing diameter is costly and unnecessary.",
-        "c": "While vibration isolation degradation is possible in humid climates, failed spring supports would produce visible rust/corrosion and structure-borne vibration transmission (lower frequencies); 8 dB breakout increase is consistent with lining absorption loss, not vibration path failure.",
-        "d": "Downstream silencer clogging would reduce pressure drop and attenuation, but visual inspection would show blockage. The problem (mold, discoloration) is clearly in the duct lining itself.",
-        "correct": "Fiberglass duct lining degrades in high-humidity tropical environments (90%+ RH typical in Philippines during monsoon). Mold growth, moisture absorption, and compression reduce acoustic absorption coefficient (NRC) by ~5% per year per manufacturer data; 5-year installation shows ~25% degradation, with visible mold indicating faster failure (possible 40% loss per field assessments). ASHRAE and CIBSE guidance recommend 10-year replacement interval in humid climates versus 15–20 years in temperate zones. Replacement with melamine foam (Class A fire rating ASTM E84, superior moisture resistance, 10-year design life) is the corrective action. Cost estimate: 500–2,000 PHP per linear meter. Verification: re-test duct breakout noise post-replacement; expect restoration to design levels.",
-        "takeaway": "Fibrous acoustic materials in Philippine mechanical rooms require planned 10-year replacement intervals; annual inspection is critical to detect early mold growth before performance loss becomes noticeable."
-      },
+      "rationale": "The time for sound level to drop 60 dB in a room. This matches the checked local source locator for the parent article.",
       "explanation": null,
       "code_citation": "ASHRAE Handbook—Fundamentals (2021); CIBSE Guide E (2018); Philippine climate-specific maintenance guidance",
       "bloom_level": "analyze",
@@ -701,46 +617,40 @@
       "model_id": "ALE-UTIL-006-07-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.767321+00:00",
       "content_hash": "sha256:65973eecc2118757d743a1471098f7f6a4ced903358a054c9f4006961c25bfe0"
     },
     {
       "question_id": "e04b845f-478f-4d7a-a2c2-7b23178781fa",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A complete noise control design for a building's mechanical room requires meeting PD 1096 (health and safety), PD 1058 (HVAC operation), and DENR DAO 2000-81 (property boundary compliance). What is the correct hierarchy of design criteria and the governing standard for each phase?",
+      "text": "What is the decibel caution from Salvan acoustics?",
       "options": [
         {
           "id": "a",
-          "text": "A) DENR DAO 2000-81 (property boundary) → PD 1058 (mechanical room NC targets) → PD 1096 (overall building health requirement); DENR is primary/binding, especially in urban settings"
+          "text": "Decibels are logarithmic; doubled sound intensity is about a 3 dB increase."
         },
         {
           "id": "b",
-          "text": "B) PD 1096 health and safety → PD 1058 mechanical design standards → DENR DAO 2000-81 property boundary compliance; all three are codependent and must be verified independently"
+          "text": "Decibels can always be added by ordinary arithmetic."
         },
         {
           "id": "c",
-          "text": "C) PD 1058 HVAC system NC targets → DENR DAO 2000-81 property boundary → PD 1096 overall health requirement; system design drives compliance, particularly in mixed-use developments"
+          "text": "Decibels only apply to electrical panelboards."
         },
         {
           "id": "d",
-          "text": "D) DENR DAO 2000-81 property boundary alone governs mechanical room noise; PD 1096/1058 are building codes, not acoustic standards, and thus secondary"
+          "text": "Decibels measure photovoltaic current."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While DENR DAO 2000-81 sets absolute limits, it does not govern the design process for mechanical room systems per se; that is PD 1058 scope. DENR is binding for property boundary compliance but not the sole governing standard.",
-        "c": "PD 1058 mechanical room NC targets are necessary but not sufficient; property boundary compliance (DENR DAO) and health requirement (PD 1096) are equally critical. No single path governs design.",
-        "d": "DENR DAO 2000-81 is environmental compliance, not the only acoustic standard. PD 1096 and PD 1058 are building codes with acoustic implications (health, system operation); all three form the regulatory framework.",
-        "correct": "Philippine acoustic design for buildings is governed by three independent but codependent standards (ASHRAE design philosophy): (1) PD 1096 Rule VII Sec 707 (Environmental Health) mandates occupant health including environmental quality.; this is the foundational health requirement. (2) PD 1058 covers mechanical design; NC targets follow ASHRAE Handbook recommendations referenced in PD 1096. (3) DENR DAO 2000-81 establishes property boundary compliance limits (55 dB(A) residential daytime) and adjacent space limits. A complete design verification must address all three: (a) define NC targets based on ASHRAE/PD 1096 for mechanical room and occupied spaces; (b) design system to achieve those NC targets (vibration isolation, duct silencing, enclosure); (c) verify property boundary compliance per DENR DAO via measured/predicted sound levels. Failure in any one path violates building code (PD 1096), operating code (PD 1058), and environmental law (DENR DAO). All three are legally binding and mutually enforcing per Philippine Environmental Code, Book IV.",
-        "takeaway": "Philippine mechanical room acoustic design must satisfy PD 1096 health requirements (via NC targets per ASHRAE/PD 1096), deliver PD 1058 system operation criteria (NC ranges), and demonstrate DENR DAO 2000-81 property boundary compliance (measured/predicted dB(A) levels). Audits should verify all three paths independently."
-      },
+      "rationale": "Decibels are logarithmic; doubled sound intensity is about a 3 dB increase. This matches the checked local source locator for the parent article.",
       "explanation": null,
-      "code_citation": "PD 1096:2015 (National Building Code of the Philippines), Section 1202; PD 1058:1977 (National Mechanical Code); DENR DAO 2000-81; ASHRAE integrated design methodology",
+      "code_citation": "PD 1096:2015 (National Building Code of the Philippines), Section 1202; PD 1096 (National Building Code) / RA 9514 (Fire Code)); DENR DAO 2000-81; ASHRAE integrated design methodology",
       "bloom_level": "evaluate",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-006-07-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.772934+00:00",
       "content_hash": "sha256:6fea07996157142fb7c3b23a010ea553c7cb4e006f623e09455d4d059e49bd88"
     }
   ]

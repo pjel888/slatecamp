@@ -2,9 +2,9 @@
   "question_id": "d2ac3076-d2fd-4ba7-8723-3c1f19b890e7",
   "baseline_hash": "sha256:12f206afedab6d754cc06e9f8f6cd8201b09a20b004a63e30075619bb04eb005",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What does Section 309 say about occupancy before a Certificate of Occupancy?",
+    "text": "An owner proposes converting a residential apartment building into a high-occupancy entertainment venue with pyrotechnic displays. How does Sec. 702 classify this change in terms of hazard direction, and what does the Code require?",
     "options": [
       {
         "id": "a",
-        "text": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy."
+        "text": "Less hazardous change — BO may approve at discretion with minimal review, provided that the occupancy load does not exceed the original design capacity"
       },
       {
         "id": "b",
-        "text": "A"
+        "text": "More hazardous change — full compliance with all Code requirements for the new use is mandatory before approval"
       },
       {
         "id": "c",
-        "text": " "
+        "text": "Equivalent hazard — no additional compliance is required if the building footprint does not change, maintaining the original structural integrity"
       },
       {
         "id": "d",
-        "text": "b"
+        "text": "Neutral change — only a change-of-use fee must be paid to the OBO; no structural review is needed, simplifying the approval process"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy. This is supported by A building may be occupied once the FLAR table is printed..",
-    "explanation": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy. The cited local source family controls this item: A building may be occupied once the FLAR table is printed..",
-    "code_citation": "A building may be occupied once the paint is complete."
+    "correct_option_id": "b",
+    "rationale": "An entertainment venue with pyrotechnic displays represents a substantially MORE hazardous use compared to a residential apartment. Sec. 702 mandates that changes to a more hazardous classification require FULL compliance with all applicable Code requirements for the new use before the change can be approved. This includes fire suppression, egress, occupant load calculations, structural review, and any other requirements triggered by the new occupancy.",
+    "explanation": "The two-track system: less hazardous = BO discretion; more hazardous = mandatory full Code compliance. The direction of hazard change determines the applicable review standard. Pyrotechnics + high occupancy = clearly more hazardous.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

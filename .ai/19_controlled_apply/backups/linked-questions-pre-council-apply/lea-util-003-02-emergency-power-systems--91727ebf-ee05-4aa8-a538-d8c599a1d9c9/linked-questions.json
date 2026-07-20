@@ -1,0 +1,759 @@
+{
+  "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:129e27a43b4ae11d56c4bb756a2b15c18348e03106e14ba6e8038bf85b36949e",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "d542544c-6183-4423-88ab-84e86b445fcc",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A diesel fuel storage tank for a building's emergency generator holds 20,000 liters. The tank is located in a dedicated fuel storage area within the generator room. According to Philippine environmental protection standards, what is the minimum secondary containment capacity required to prevent soil and groundwater contamination in case of tank rupture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 16,000 liters (80% of tank capacity)"
+        },
+        {
+          "id": "b",
+          "text": "B. 20,000 liters (100% of tank capacity)"
+        },
+        {
+          "id": "c",
+          "text": "C. 22,000 liters (110% of tank capacity)"
+        },
+        {
+          "id": "d",
+          "text": "D. 30,000 liters (150% of tank capacity)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "80% containment is insufficient to prevent environmental contamination if tank ruptures.",
+        "b": "100% containment provides no safety margin and does not meet Philippine environmental protection standards.",
+        "d": "150% containment significantly exceeds environmental standards and represents unnecessary cost without proportional environmental benefit.",
+        "correct": "Philippine environmental protection standards and PEC generator installation guidelines require secondary containment sized for 110% of the tank volume. For a 20,000-liter tank: 20,000 liters × 1.10 = 22,000 liters minimum secondary containment. This 10% safety margin accommodates tank rupture or overflow while preventing fuel leaks from contaminating soil and groundwater. The containment area must be inspected annually and tested for structural integrity.",
+        "takeaway": "Fuel storage secondary containment must equal 110% of tank capacity per Philippine environmental standards to prevent soil and groundwater contamination during tank failure."
+      },
+      "explanation": "80% containment is insufficient to prevent environmental contamination if tank ruptures. 100% containment provides no safety margin and does not meet Philippine environmental protection standards. 150% containment significantly exceeds environmental standards and represents unnecessary cost without proportional environmental benefit. Philippine environmental protection standards and PEC generator installation guidelines require secondary containment sized for 110% of the tank volume. For a 20,000-liter tank: 20,000 liters × 1.10 = 22,000 liters minimum secondary containment. This 10% safety margin accommodates tank rupture or overflow while preventing fuel leaks from contaminating soil and groundwater. The containment area must be inspected annually and tested for structural integrity. Fuel storage secondary containment must equal 110% of tank capacity per Philippine environmental standards to prevent soil and groundwater contamination during tank failure.",
+      "code_citation": "Philippine Environmental Code; PEC Generator Installation Standards; Environmental Protection Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T15:56:00.326621+00:00",
+      "content_hash": "sha256:899d37c499ebf13d4d64faa578b60664ffdceacba4cc35e32216741ecea334f0"
+    },
+    {
+      "question_id": "2ab35a6f-b37d-4dbd-b6fa-bea8a6ae4950",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A building's data center requires continuous protection from voltage disturbances and harmonics caused by Meralco fluctuations (±5-10% variation from nominal). Which UPS topology provides the highest protection level against these power quality issues despite efficiency trade-offs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Offline (standby) UPS with 98% efficiency and detection delay, suitable for non-critical applications"
+        },
+        {
+          "id": "b",
+          "text": "B. Line-interactive UPS with autotransformer voltage regulation and 94-97% efficiency, offering moderate protection"
+        },
+        {
+          "id": "c",
+          "text": "C. Online double conversion UPS with continuous AC-DC-AC conversion and 90-94% efficiency"
+        },
+        {
+          "id": "d",
+          "text": "D. Hybrid UPS combining offline and online modes for balanced efficiency, though it may not provide the highest level of protection"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Offline UPS provides no protection until failure detection occurs; it is unsuitable for sensitive equipment during Meralco voltage fluctuations.",
+        "b": "Line-interactive UPS offers good compromise between protection and efficiency but does not provide complete isolation from voltage disturbances like online UPS.",
+        "d": "Hybrid UPS modes switching between offline and online operation cannot guarantee continuous protection during rapid Meralco voltage changes.",
+        "correct": "Online double conversion UPS continuously converts incoming AC power to DC, then back to AC, providing maximum isolation from utility voltage disturbances, harmonics, and transients. This topology completely decouples the load from Meralco's ±5-10% voltage fluctuations and 8-12% harmonic distortion. Although efficiency is lower (90-94%), sensitive data center equipment justifies this trade-off to prevent data loss and hardware damage.",
+        "takeaway": "Online double conversion UPS topology is optimized for data centers in the Philippines where Meralco power quality issues require maximum protection against voltage fluctuations and harmonics."
+      },
+      "explanation": "Offline UPS provides no protection until failure detection occurs; it is unsuitable for sensitive equipment during Meralco voltage fluctuations. Line-interactive UPS offers good compromise between protection and efficiency but does not provide complete isolation from voltage disturbances like online UPS. Hybrid UPS modes switching between offline and online operation cannot guarantee continuous protection during rapid Meralco voltage changes. Online double conversion UPS continuously converts incoming AC power to DC, then back to AC, providing maximum isolation from utility voltage disturbances, harmonics, and transients. This topology completely decouples the load from Meralco's ±5-10% voltage fluctuations and 8-12% harmonic distortion. Although efficiency is lower (90-94%), sensitive data center equipment justifies this trade-off to prevent data loss and hardware damage. Online double conversion UPS topology is optimized for data centers in the Philippines where Meralco power quality issues require maximum protection against voltage fluctuations and harmonics.",
+      "code_citation": "IEEE 1100 Power Quality Standards; Schneider Electric UPS Performance Data; Meralco Power Quality Analysis",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T15:56:00.5908+00:00",
+      "content_hash": "sha256:de8c6a9eb7278333d695c87e3148f0d15041c8a2e827b3bb0a9ff5d13f383094"
+    },
+    {
+      "question_id": "dd564551-4368-45d9-a5d2-d80bb42b6890",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A data center in the Philippines experiences frequent Meralco power fluctuations (±5-10% voltage variation) and occasionally complete outages lasting 2-4 hours. The facility requires continuous operation of critical servers, cooling systems, and fire protection. What integrated emergency power design strategy best addresses this scenario with minimum cost while ensuring safety compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Online UPS (90-94% efficiency) for all loads plus diesel generator with 8-hour fuel capacity"
+        },
+        {
+          "id": "b",
+          "text": "B. Line-interactive UPS (94-97% efficiency) for servers plus offline UPS for cooling plus diesel generator"
+        },
+        {
+          "id": "c",
+          "text": "C. Online UPS for servers plus solar PV with 4-hour battery storage plus diesel generator for extended outages"
+        },
+        {
+          "id": "d",
+          "text": "D. Diesel generator with 24-hour fuel capacity plus offline UPS for emergency lighting only"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Online UPS for all loads is the most expensive option with 90-94% efficiency losses; omits solar PV alternative power benefit.",
+        "b": "Multiple UPS types increase complexity and cost without proportional benefit; does not address daytime load offset through renewable energy.",
+        "d": "24-hour fuel capacity is excessive for stated 2-4 hour outage scenario; offline UPS inadequately protects against Meralco voltage fluctuations during cooling system operation.",
+        "correct": "Integrated strategy for Philippine data center: (1) Online double conversion UPS (90-94% efficiency) protects sensitive servers from Meralco ±5-10% voltage fluctuations and harmonics per IEEE 1100; (2) Solar PV with 4-hour battery storage (2-4 hours autonomy typical for hybrid systems per article requirements) provides daytime load offset, extends generator runtime, and leverages Philippines' 4.5-5.5 kWh/m²/day solar irradiance; (3) Diesel generator with 8-hour fuel capacity backs extended outages (2-4 hours stated requirement fits within 8-hour tank design). This strategy balances protection (life safety priority), efficiency (line-interactive UPS for cooling), cost control, and compliance with PEC Article 700 and RA 9513 renewable energy provisions.",
+        "takeaway": "Optimal Philippine data center emergency design: Online UPS for sensitive equipment + Solar PV with battery storage + Diesel generator creates defense-in-depth against Meralco fluctuations and outages."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700; IEEE 1100 Power Quality; RA 9513 Renewable Energy Act; Philippine Solar Resources",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:88af26c04689be6d8f3d7253b8827b5af99825e2735d28754f35b3ad551dcc36"
+    },
+    {
+      "question_id": "7184835c-f3df-4159-b0cb-b139df258411",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "The PEC specifies different load classifications for emergency power systems: life safety loads, legally required standby loads, and optional loads. Which category includes fire pump motors, emergency elevators, and exit lighting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Legally required standby loads, which are essential for maintaining critical operations during power outages"
+        },
+        {
+          "id": "b",
+          "text": "B. Life safety loads requiring 100% generator capacity"
+        },
+        {
+          "id": "c",
+          "text": "C. Optional loads used for business continuity, typically non-essential but beneficial for operational efficiency"
+        },
+        {
+          "id": "d",
+          "text": "D. Restricted loads that can only operate for brief durations, often limited by regulatory guidelines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Legally required standby loads include fire alarm and detection systems but do not encompass the full scope of fire pumps and emergency elevators.",
+        "c": "Optional loads are for business continuity purposes and are not critical to life safety; they have lower priority than life safety loads.",
+        "d": "Restricted loads are not a standard PEC classification; emergency systems operate at full capacity for defined durations based on load classification.",
+        "correct": "Life safety loads include fire pump motors (100% of nameplate rating for ≥10 minutes), emergency elevators (sufficient capacity for at least one car at full load), and exit lighting (100% of connected load for ≥90 minutes per PEC Article 700.12). These loads directly protect occupant safety and must be prioritized in emergency power design. Generator capacity must accommodate simultaneous operation of all life safety loads plus 25% demand factor reserve per PEC Article 700.4(a).",
+        "takeaway": "Fire pump motors, emergency elevators, and exit lighting are life safety loads requiring 100% generator capacity per PEC Article 700.4 and 700.12."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700.4; PEC Article 700.12; Emergency Load Classification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e079dd061d3b8db0beddaca22b93bfe490d9d9ea7a4a6c077d1562d72a792840"
+    },
+    {
+      "question_id": "ac18be37-47ec-40c1-95a2-b85e4ca963e7",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A commercial building in Manila requires emergency power for the following loads: fire pump (50 kW), emergency elevators (75 kW), exit lighting (25 kW), fire alarm system (5 kW), and emergency voice/alarm communication (10 kW). These loads must operate simultaneously during a Meralco outage. What is the minimum required generator capacity including PEC demand factor reserve?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 165 kW (100% load)"
+        },
+        {
+          "id": "b",
+          "text": "B. 189 kW (115% demand factor)"
+        },
+        {
+          "id": "c",
+          "text": "C. 206 kW (125% demand factor)"
+        },
+        {
+          "id": "d",
+          "text": "D. 247 kW (150% demand factor)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "165 kW is the sum of all simultaneous loads and meets the PEC requirement for adequate capacity.",
+        "b": "189 kW assumes a 15% reserve factor, which is not mandated by PEC Article 700.",
+        "c": "206 kW assumes a 25% reserve factor, which is not a PEC requirement.",
+        "d": "247 kW assumes a 50% reserve factor, which is unnecessary and not code-mandated.",
+        "correct": "Total emergency load = 50 + 75 + 25 + 5 + 10 = 165 kW. PEC Article 700.5 requires adequate capacity to carry all emergency loads expected to operate simultaneously. There is no mandated reserve percentage; the generator must be sized for the actual connected load. The correct answer is 165 kW, provided the generator can start and run all loads simultaneously without overloading. Additional margin may be added by design but is not required by code.",
+        "takeaway": "Emergency generator sizing is based on the actual sum of simultaneous emergency loads per PEC Article 700.5; no fixed reserve percentage is required."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700.5; Building Emergency Power Load Calculations",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c0c63cb134d936f9235aa53b02c6f12d9e87eb845aabac2f7f54b06d3d02bf5"
+    },
+    {
+      "question_id": "5e382f17-d5d9-4f9d-9739-aa2c1e23b0a0",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "An inspection of a commercial building's generator room reveals the following conditions: (1) exhaust ducting terminates 2.5 meters above the highest occupied floor, (2) secondary fuel containment provides 105% of tank volume, (3) generator has not been exercise-tested in 6 months, (4) fuel quality was last tested 18 months ago. Which condition represents the greatest violation of PEC and NFPA 110 standards and poses the highest risk to building occupants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Exhaust ducting height deficiency (2.5 meters vs. 3 meters required)"
+        },
+        {
+          "id": "b",
+          "text": "B. Secondary fuel containment below environmental code requirements (typically 100-110%)"
+        },
+        {
+          "id": "c",
+          "text": "C. Generator exercise testing overdue beyond 30-day monthly interval per NFPA 110 Section 8.3"
+        },
+        {
+          "id": "d",
+          "text": "D. Fuel quality testing overdue beyond 12-month annual interval, risking fuel contamination"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Exhaust ducting 2.5 meters (0.5 meter deficiency) creates health risk but less immediate than generator failure; re-routing is relatively quick remediation.",
+        "b": "Secondary containment at 105% (5% below 110%) slightly exceeds environmental risk threshold but containment still provides significant protection; remediation is straightforward tank inspection.",
+        "d": "Fuel quality testing at 18-month interval (6 months overdue) risks contamination but does not create immediate failure unless water/sediment accumulation is severe; fuel additives can temporarily mitigate.",
+        "correct": "Generator exercise testing overdue by 4.5 months (6-month actual vs. 30-day monthly requirement per NFPA 110 Section 8.3) represents the greatest safety violation. Untested generators may fail to start during emergencies due to fuel system degradation, starter problems, or internal corrosion. This directly risks life safety as the generator cannot assume the emergency load during Meralco outages. Monthly testing under ≥50% rated load for ≥30 minutes identifies and prevents starting failures before emergencies occur.",
+        "takeaway": "Delinquent generator exercise testing represents the greatest PEC/NFPA 110 violation and occupant safety risk; untested generators may fail during emergencies when life safety depends on reliable operation."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 110 Section 8.3; PEC Article 700 Maintenance Requirements; Generator Testing Standards",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:326d86a60dc03033abc0e0c4b732dada0eac8e72d2d4eaa3d51cdf5da8d723d8"
+    },
+    {
+      "question_id": "be26c746-90b0-41dd-9ea1-0445b9314fba",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A building emergency power system experiences a scenario where the diesel generator fails to start due to low fuel pressure, but the UPS system and fire alarm communication system remain operational. According to PEC and NFPA 110 maintenance requirements, what is the likely cause of inadequate system maintenance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Failure to conduct monthly generator exercise under load per NFPA 110 Section 8.3"
+        },
+        {
+          "id": "b",
+          "text": "B. Failure to conduct quarterly 100% load bank testing per NFPA 110 Section 8.3"
+        },
+        {
+          "id": "c",
+          "text": "C. Failure to conduct annual fuel quality testing for water and sediment contamination"
+        },
+        {
+          "id": "d",
+          "text": "D. Failure to conduct semi-annual ATS testing with load transfer verification"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Monthly generator exercise detects starting problems but does not specifically address fuel quality issues.",
+        "b": "Quarterly load bank testing at 100% capacity would detect fuel pressure problems under load but not specifically fuel contamination.",
+        "d": "ATS testing verifies transfer switch operation but does not address fuel system failures.",
+        "correct": "Low fuel pressure causing generator failure to start typically results from water and sediment contamination in the diesel fuel supply. PEC and NFPA 110 require annual fuel quality testing to verify water and sediment content remain below equipment specifications. Contaminated fuel clogs fuel injectors and damages fuel pumps, preventing proper engine operation. This failure indicates inadequate fuel maintenance; fuel storage tanks must be inspected annually, and fuel samples must be tested for water content (maximum 100 ppm) and sediment (maximum 24 mg/L per ASTM D2276).",
+        "takeaway": "Annual fuel quality testing per PEC requirements prevents low fuel pressure failures caused by water and sediment contamination in emergency generator fuel supplies."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 110 Section 8.3; PEC Maintenance Requirements; Fuel Quality Testing Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4b1db6e03c48fa55e4961ee19822fe383e1db6715982724e04d5ce8a8a42c9ca"
+    },
+    {
+      "question_id": "8afc9cb1-7d96-44ab-826e-7025d0097f2a",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A commercial building's diesel fuel storage tank in the generator room experiences a small crack during routine maintenance. Before fuel leaks contaminate the surrounding area, the secondary containment prevents environmental damage. Which PEC requirement ensures that emergency generator fuel storage areas provide this critical environmental protection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Fuel tank material specification requiring stainless steel construction, ensuring durability and resistance to corrosion"
+        },
+        {
+          "id": "b",
+          "text": "B. Regular fuel quality testing for water and sediment contamination, ensuring fuel integrity and system reliability"
+        },
+        {
+          "id": "c",
+          "text": "C. Secondary containment sized for 110% of tank capacity per environmental standards"
+        },
+        {
+          "id": "d",
+          "text": "D. Monthly visual inspection of fuel tank external surfaces for corrosion, ensuring early detection of potential issues"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While stainless steel construction improves tank durability, it does not eliminate containment needs and is not the primary PEC environmental protection requirement.",
+        "b": "Fuel quality testing prevents equipment damage but does not provide environmental protection against spills and contamination.",
+        "d": "Visual inspection detects corrosion but is a reactive measure; secondary containment is a proactive engineered control that prevents contamination.",
+        "correct": "PEC generator installation standards mandate secondary containment sized for 110% of the fuel tank volume. This requirement directly prevents soil and groundwater contamination by capturing any fuel leaked from tank rupture, corrosion, or overflow. The secondary containment area must be properly sloped, impermeable, and inspected annually. This is the most effective engineered control for environmental protection in fuel storage design.",
+        "takeaway": "Secondary containment sized for 110% of fuel tank capacity is the primary PEC requirement that prevents soil and groundwater contamination from fuel storage tank failure."
+      },
+      "explanation": "While stainless steel construction improves tank durability, it does not eliminate containment needs and is not the primary PEC environmental protection requirement. Fuel quality testing prevents equipment damage but does not provide environmental protection against spills and contamination. Visual inspection detects corrosion but is a reactive measure; secondary containment is a proactive engineered control that prevents contamination. PEC generator installation standards mandate secondary containment sized for 110% of the fuel tank volume. This requirement directly prevents soil and groundwater contamination by capturing any fuel leaked from tank rupture, corrosion, or overflow. The secondary containment area must be properly sloped, impermeable, and inspected annually. This is the most effective engineered control for environmental protection in fuel storage design. Secondary containment sized for 110% of fuel tank capacity is the primary PEC requirement that prevents soil and groundwater contamination from fuel storage tank failure.",
+      "code_citation": "PEC Generator Installation Standards; Philippine Environmental Code; Fuel Storage Design",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T15:56:00.202648+00:00",
+      "content_hash": "sha256:4fe48fb3380f093280297de178535e2904073b940781c895bda613292848c70f"
+    },
+    {
+      "question_id": "c4f63e05-e11d-4150-a48d-f8f4ece16db6",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A generator room in a high-rise building must meet multiple design requirements to ensure safe emergency power operation. The PEC and local building codes specify exhaust ducting termination, fire rating, acoustic performance, and ventilation capacity. Which requirement directly prevents dangerous levels of carbon monoxide accumulation in surrounding occupied spaces?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Exhaust ducting terminating above the roof or away from building air intakes, per local environmental and fire codes"
+        },
+        {
+          "id": "b",
+          "text": "B. 2-hour fire-rated enclosure per PEC Article 700.2(b), which primarily addresses fire safety"
+        },
+        {
+          "id": "c",
+          "text": "C. Minimum 80 dB(A) sound attenuation in urban areas, which is related to noise control"
+        },
+        {
+          "id": "d",
+          "text": "D. Monthly generator exercise under 50% load for ≥30 minutes, which ensures operational readiness"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Fire-rated enclosure protects the generator from external fire threats and contains internal fires but does not address exhaust gas safety.",
+        "c": "Sound attenuation controls noise pollution but does not prevent dangerous exhaust gas accumulation.",
+        "d": "Generator testing verifies operational readiness but does not address continuous exhaust routing safety.",
+        "correct": "Building codes and environmental regulations require exhaust ducting to terminate at a location that prevents re-entry of carbon monoxide and other combustion products into occupied spaces. This typically means terminating above the roof, away from fresh air intakes, or at a height that ensures dispersion. The exact dimension (e.g., 3 meters above highest occupied floor) is a common design practice derived from these principles, but the key requirement is to prevent harmful exhaust from entering the building.",
+        "takeaway": "Exhaust ducting must be terminated to prevent carbon monoxide and harmful exhaust gases from entering occupied spaces, ensuring occupant health and safety per PEC and environmental codes."
+      },
+      "explanation": null,
+      "code_citation": "PEC Generator Room Design; Environmental Code Exhaust Routing; Building Ventilation Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e261a05dd0aeb1fa16055de08acbcf06ead881ca547700f3a9edac06d33c2d32"
+    },
+    {
+      "question_id": "d458fd34-49f0-4125-a13d-fb2baf6dced6",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A building in Metro Manila has emergency generator, UPS, and solar photovoltaic systems. During a Meralco outage, the emergency sequence must prioritize life safety systems. In what order should power be allocated to maximize occupant safety while maintaining equipment operation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Solar PV (if available) → UPS backup → Generator assumes load after 10 seconds, ensuring continuous power supply"
+        },
+        {
+          "id": "b",
+          "text": "B. UPS maintains critical loads during 10-second ATS transfer → Generator assumes life safety loads → Solar PV offsets daytime demand"
+        },
+        {
+          "id": "c",
+          "text": "C. Generator starts immediately → UPS supplements during ramp-up → Solar PV provides alternative power, reducing reliance on non-renewable sources"
+        },
+        {
+          "id": "d",
+          "text": "D. Life safety loads get priority regardless of source availability during all phases of emergency, ensuring compliance with safety regulations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Solar PV cannot provide instant power during nighttime outages or cloudy conditions; UPS must bridge the ATS transfer delay.",
+        "c": "Generator cannot start instantly; UPS must provide bridging power during the generator ramp-up period.",
+        "d": "While life safety prioritization is correct, this option does not address the technical sequencing of power sources during the emergency response.",
+        "correct": "Optimal emergency power sequencing: (1) UPS battery provides instantaneous backup power to critical loads during the 10-second ATS detection and transfer delay, preventing elevator stoppage and emergency lighting interruption; (2) Generator assumes full emergency load (fire pumps, emergency elevators, exit lighting, fire alarm) after transfer switch closes; (3) Solar PV with battery storage provides daytime load offset and extends generator runtime during extended outages. This sequence ensures continuous operation of life safety systems per PEC Article 700.4 and 700.12 requirements.",
+        "takeaway": "Emergency power sequence: UPS bridges ATS transfer delay → Generator assumes all emergency loads → Solar PV provides alternative/supplementary power during extended outages."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700; NFPA 110 Emergency Power Standards; Integrated Emergency Power System Design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7e9955c9abcb527d807ce5e1e05b2bb09cfb72f8c7e0664f181a96d6c0daf58c"
+    },
+    {
+      "question_id": "e193c510-7e59-4ad8-b7a2-875538b761ae",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A hospital in the Philippines must maintain life safety systems for at least 90 minutes during a Meralco outage before the backup generator can be refueled or replaced. The emergency lighting UPS requires 30 minutes minimum backup per PEC Article 700.12(c), but the fire alarm system requires 24-hour standby plus 5 hours of alarm operation per PEC Article 700.12(d). What is the minimum UPS battery capacity required for the fire alarm system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 5 hours backup capacity for alarm operation only"
+        },
+        {
+          "id": "b",
+          "text": "B. 24 hours standby capacity for detection capability"
+        },
+        {
+          "id": "c",
+          "text": "C. 29 hours total capacity (24 hours standby + 5 hours alarm)"
+        },
+        {
+          "id": "d",
+          "text": "D. 4 hours minimum per NFPA 110 emergency power standards"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 hours addresses only alarm operation and omits the 24-hour standby requirement needed for continuous detection capability.",
+        "b": "24 hours standby capacity alone does not account for the additional 5-hour alarm operation requirement specified in PEC Article 700.12(d).",
+        "d": "4 hours minimum is suitable for emergency lighting per PEC Article 700.12(c) but is grossly inadequate for fire alarm systems requiring significantly longer backup.",
+        "correct": "PEC Article 700.12(B)(4) requires storage battery capacity to supply total load for at least 1½ hours (90 minutes).hours. This ensures the fire alarm system can detect and communicate fire conditions throughout the extended outage period. Battery capacity must account for temperature effects; capacity decreases approximately 0.5% per degree Celsius below 25°C.",
+        "takeaway": "Fire alarm UPS systems must provide 29 hours total battery capacity (24 hours standby + 5 hours alarm) per PEC Article 700.12(d) to maintain life safety detection and communication during extended Meralco outages."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700.12(c) and (d); NFPA 110 Emergency System Standards; Battery Backup Duration Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9979bd6e320bc9ec1ab8ba77d3ab6853349962047e4cf887c1ac77badaf73097"
+    },
+    {
+      "question_id": "6dafd58f-9afd-44ee-9231-6819e0824e19",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A building experiences a complete utility failure from Meralco. The automatic transfer switch (ATS) must reliably detect the fault and transfer the emergency load to the standby generator. What is the maximum time for emergency power availability per PEC Article 700.12(B) and NFPA 110?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 5 seconds maximum"
+        },
+        {
+          "id": "b",
+          "text": "B. 10 seconds maximum"
+        },
+        {
+          "id": "c",
+          "text": "C. 15 seconds maximum"
+        },
+        {
+          "id": "d",
+          "text": "D. 30 seconds maximum"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 seconds is overly conservative and exceeds typical ATS detection and switching capabilities; this timing is not a PEC requirement.",
+        "c": "15 seconds exceeds PEC limits and risks elevator stoppage, creating life safety hazards during emergency evacuations.",
+        "d": "30 seconds significantly exceeds PEC requirements and creates unacceptable safety risks including loss of emergency lighting and elevator operation.",
+        "correct": "Both PEC Article 700.12 and NFPA 110 Section 7.2.2 specify 10 seconds as the maximum transfer time from utility failure to generator load assumption. This strict timing requirement ensures emergency elevator operation during evacuations and prevents significant interruption of emergency lighting and life safety systems.",
+        "takeaway": "PEC Article 700.12 establishes 10-second maximum ATS transfer time to maintain elevator and emergency circuit operation during Meralco outages."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700.12; NFPA 110 Section 7.2.2; Philippine Emergency Power Standards",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b68806b9bbda14a476466028f20d2f49fd668fe60bb79ab72438adb41295e12d"
+    },
+    {
+      "question_id": "0e83ea53-ac38-4071-b382-9a69afca9f7f",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "During a Meralco power failure, the automatic transfer switch transfers the emergency load to the standby generator, but a 10-second delay occurs before the generator reaches full capacity. Which emergency power system must bridge this transfer gap to prevent loss of critical loads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Fuel cell system providing bridging power from hydrogen reserves"
+        },
+        {
+          "id": "b",
+          "text": "B. Solar photovoltaic system with battery storage"
+        },
+        {
+          "id": "c",
+          "text": "C. Uninterruptible power supply (UPS) with battery backup"
+        },
+        {
+          "id": "d",
+          "text": "D. Voltage stabilizer with flywheel energy storage"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fuel cell systems provide reliable backup power but cannot respond instantly to brief transfer delays; they are better suited for longer-term alternative power.",
+        "b": "Solar PV systems with battery storage are suitable for daytime load offset and alternative power but cannot guarantee instant response during nighttime outages.",
+        "d": "Voltage stabilizers regulate voltage but do not provide backup power during complete utility failure; flywheel storage has limited energy capacity for extended outages.",
+        "correct": "UPS systems with battery backup provide instantaneous power during the ATS transfer delay before the generator reaches full output capacity. Online double conversion UPS (90-94% efficiency) offers maximum protection for sensitive equipment; line-interactive UPS (94-97% efficiency) provides regulated voltage; and offline UPS offers minimal protection but lowest cost. Battery duration typically ranges from 30 minutes for emergency lighting to 2-4 hours for critical data center equipment.",
+        "takeaway": "UPS systems with battery backup bridge the ATS transfer delay, maintaining power to critical loads during the 10-second transfer from utility to generator operation."
+      },
+      "explanation": "Fuel cell systems provide reliable backup power but cannot respond instantly to brief transfer delays; they are better suited for longer-term alternative power. Solar PV systems with battery storage are suitable for daytime load offset and alternative power but cannot guarantee instant response during nighttime outages. Voltage stabilizers regulate voltage but do not provide backup power during complete utility failure; flywheel storage has limited energy capacity for extended outages. UPS systems with battery backup provide instantaneous power during the ATS transfer delay before the generator reaches full output capacity. Online double conversion UPS (90-94% efficiency) offers maximum protection for sensitive equipment; line-interactive UPS (94-97% efficiency) provides regulated voltage; and offline UPS offers minimal protection but lowest cost. Battery duration typically ranges from 30 minutes for emergency lighting to 2-4 hours for critical data center equipment. UPS systems with battery backup bridge the ATS transfer delay, maintaining power to critical loads during the 10-second transfer from utility to generator operation.",
+      "code_citation": "PEC Article 700.12; IEEE 1100 Power Quality Standards; UPS System Design",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T15:56:00.472668+00:00",
+      "content_hash": "sha256:51cc32cfcb6bf33cafdc944969ff90d44c4e388a3ed42ab971b9de2cd95c73f2"
+    },
+    {
+      "question_id": "8012bb51-586a-4907-8818-89d6d177f600",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "The PEC requires that emergency power systems maintain selective coordination to ensure critical life safety loads receive power first during a Meralco outage, while protecting less critical loads from overload. What mechanism enables this selective coordination of emergency and normal power supplies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Automatic transfer switches (ATS) that prioritize life safety circuit breakers"
+        },
+        {
+          "id": "b",
+          "text": "B. Parallel operation of generator with Meralco supply to balance loading"
+        },
+        {
+          "id": "c",
+          "text": "C. Separate raceways for emergency circuits with independent overcurrent protection"
+        },
+        {
+          "id": "d",
+          "text": "D. Load shedding relays that automatically disconnect non-critical loads"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While ATS design contributes to selective coordination, separate raceways and independent overcurrent protection are the primary PEC mechanisms enabling circuit isolation.",
+        "b": "Parallel operation of generator and Meralco supply requires sophisticated synchronization and is not a standard method for ensuring selective coordination during outages.",
+        "d": "Load shedding may occur but is secondary to the primary mechanism of separate raceways ensuring independent circuit operation per PEC Article 700.3.",
+        "correct": "PEC Article 700.3 requires separate raceways for emergency power conductors to ensure complete isolation from normal power circuits. Independent overcurrent protection for emergency circuits allows selective coordination where life safety circuits remain protected even if normal power circuits experience faults. This isolation prevents normal circuit failures from cascading into emergency systems. Additionally, ATS selective coordination logic prioritizes transfer of life safety loads to the generator, with legally required and optional loads following based on available generator capacity.",
+        "takeaway": "Separate raceways with independent overcurrent protection per PEC Article 700.3 ensure selective coordination and prevent normal circuit faults from affecting emergency systems."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700.3; Emergency Circuit Isolation; Selective Coordination Standards",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd2d185d7eefdb241cea0847efa988d6b97321f1276e8aa7ca2180a86e114922"
+    },
+    {
+      "question_id": "acf616f0-eb67-4456-84fe-4a2bd5a941f3",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "Under the Philippine Electrical Code (PEC) Article 700.5, how must emergency generator capacity be determined?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 100% of the largest emergency motor plus 25% of the remaining connected load, ensuring adequate power supply during outages"
+        },
+        {
+          "id": "b",
+          "text": "B. 125% of the total emergency load (25% demand factor reserve), providing a buffer for unexpected load increases"
+        },
+        {
+          "id": "c",
+          "text": "C. Adequate capacity to carry all emergency loads expected to operate simultaneously, with no fixed percentage reserve"
+        },
+        {
+          "id": "d",
+          "text": "D. 150% of the total emergency load to allow for future expansion and additional safety margin"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes a sizing method for optional standby systems or motor loads, not the emergency system requirement under Article 700.",
+        "b": "There is no 25% demand factor reserve requirement in PEC Article 700; such a figure is not prescribed.",
+        "d": "150% oversizing is not required; it represents a design choice, not a code mandate.",
+        "correct": "PEC Article 700.5 requires that emergency generators have adequate capacity and rating to supply all emergency loads expected to operate simultaneously. Unlike optional standby systems, there is no specified percentage reserve or demand factor; the engineer must calculate the actual connected load and ensure the generator can carry it under all conditions. Common practice often includes a margin for future loads, but this is not mandated by the code.",
+        "takeaway": "Emergency generator sizing under PEC Article 700 is based on actual simultaneous loads, not a fixed reserve percentage; the engineer must verify capacity for all life safety and emergency loads."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700.5; NFPA 110 Emergency Power Standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0b9cedb8b908d7709ebbee4ce4d55a6f139387b5359c98d7135ef7b1e61a735c"
+    }
+  ]
+}

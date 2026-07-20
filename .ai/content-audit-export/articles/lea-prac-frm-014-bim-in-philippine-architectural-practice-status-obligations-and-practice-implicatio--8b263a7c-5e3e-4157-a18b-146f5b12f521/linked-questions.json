@@ -8,23 +8,23 @@
       "question_id": "c446f74e-be99-486a-af3e-7c119351bf45",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What does LOD 300 represent in a BIM project?",
+      "text": "What is the source-safe answer to a Batch 103 question asking what LOD 300 means?",
       "options": [
         {
           "id": "a",
-          "text": "Conceptual design only with massing studies and basic spatial relationships"
+          "text": "Answer from memory because all BIM terms are in RA 9266"
         },
         {
           "id": "b",
-          "text": "Design development phase with detailed elements"
+          "text": "Defer the exact LOD definition until a local raw BIM standard source is available"
         },
         {
           "id": "c",
-          "text": "Construction documents with precise specifications and fabrication details"
+          "text": "Treat LOD 300 as a building-code permit classification"
         },
         {
           "id": "d",
-          "text": "As-built documentation reflecting actual constructed conditions"
+          "text": "Use the owner's marketing brochure as the legal source"
         }
       ],
       "correct_option_id": "b",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "LOD 100 is conceptual design; LOD 300 is more detailed.",
-        "c": "LOD 400 is construction documents; LOD 300 precedes it with less specification detail.",
-        "d": "As-built is post-construction; LOD 300 is design-phase documentation.",
-        "correct": "LOD 300 represents the design development phase with detailed element geometries and parameters; LOD 400 is construction documents.",
-        "takeaway": "LOD 300 is the design development phase with detailed model elements; LOD 400 is construction documents."
-      },
+      "rationale": "The checked RA 9266 and UAP sources do not define LOD 300, so the batch narrows the answer to source-supported professional controls.",
       "explanation": "LOD 100 is conceptual design; LOD 300 is more detailed. LOD 400 is construction documents; LOD 300 precedes it with less specification detail. As-built is post-construction; LOD 300 is design-phase documentation. LOD 300 represents the design development phase with detailed element geometries and parameters; LOD 400 is construction documents. LOD 300 is the design development phase with detailed model elements; LOD 400 is construction documents.",
       "code_citation": "RA 9266",
       "bloom_level": "understand",
@@ -51,30 +45,30 @@
       "model_id": "ALE-PRAC-FRM-014-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:20:04.337816+00:00",
+      "updated_at": "2026-07-20T01:13:23.641927+00:00",
       "content_hash": "sha256:c0c551c947c805d47b68f26ebca5d282e2f4331c2a5471c8261ea7cf0ad38489"
     },
     {
       "question_id": "acf347c6-3fb0-4cfe-be9e-1c3a48a489dd",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What is Building Information Modeling (BIM)?",
+      "text": "What does the checked local source packet support when BIM is specified?",
       "options": [
         {
           "id": "a",
-          "text": "2D drawing software used primarily for drafting and basic design visualization"
+          "text": "An automatic Philippine BIM mandate"
         },
         {
           "id": "b",
-          "text": "digital methodology that creates a unified, data-rich model of a building's design, construction, and operation"
+          "text": "The need to define scope, deliverables, reliance, ownership, and professional responsibility in the agreement"
         },
         {
           "id": "c",
-          "text": "cost estimation tool only, providing basic financial projections without detailed design integration"
+          "text": "A complete IFC exchange standard"
         },
         {
           "id": "d",
-          "text": "marketing technique aimed at promoting architectural services and enhancing client engagement"
+          "text": "A fixed LOD schedule for every project"
         }
       ],
       "correct_option_id": "b",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses BIM with CAD; BIM is 3D/multidimensional with embedded data, not 2D.",
-        "c": "Overrestricts BIM to cost tools; BIM serves coordination, visualization, and operational purposes beyond cost.",
-        "d": "BIM is a technical methodology, not a marketing approach.",
-        "correct": "BIM is a comprehensive digital methodology creating an integrated, data-rich model used across design, construction, and facility management phases.",
-        "takeaway": "BIM is a digital methodology creating a unified, data-rich model spanning design, construction, and building operation."
-      },
+      "rationale": "RA 9266 and UAP sources support service scope, contract documents, instruments of service, and responsibility, not exact BIM technical standards.",
       "explanation": "Confuses BIM with CAD; BIM is 3D/multidimensional with embedded data, not 2D. Overrestricts BIM to cost tools; BIM serves coordination, visualization, and operational purposes beyond cost. BIM is a technical methodology, not a marketing approach. BIM is a comprehensive digital methodology creating an integrated, data-rich model used across design, construction, and facility management phases. BIM is a digital methodology creating a unified, data-rich model spanning design, construction, and building operation.",
       "code_citation": "RA 10173",
       "bloom_level": "remember",
@@ -101,30 +89,30 @@
       "model_id": "ALE-PRAC-FRM-014-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:20:04.65111+00:00",
+      "updated_at": "2026-07-20T01:13:23.638047+00:00",
       "content_hash": "sha256:d45053bd8062d276e933d686642454a9bb7c574060c9589e42c5c79aca4b38dc"
     },
     {
       "question_id": "3a04b9b5-3645-4a16-87d0-231f2b14383c",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What is IFC in the context of BIM?",
+      "text": "How should IFC claims be handled in this local-first BIM article?",
       "options": [
         {
           "id": "a",
-          "text": "proprietary software format used by specific vendors for exclusive interoperability"
+          "text": "Treat IFC as defined by the RA 9266 IRR"
         },
         {
           "id": "b",
-          "text": "The international open standard for BIM file format, ensuring interoperability across different software platforms"
+          "text": "Treat exact IFC details as final-depth source-needed unless a local raw BIM source is added"
         },
         {
           "id": "c",
-          "text": "cost-estimation method primarily used in preliminary project budgeting"
+          "text": "Treat IFC as a permit form required by all LGUs"
         },
         {
           "id": "d",
-          "text": "quality control system designed to maintain standards in construction processes"
+          "text": "Treat IFC as replacing signed drawings"
         }
       ],
       "correct_option_id": "b",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Proprietary formats (Revit, ArchiCAD native) are software-specific; IFC is vendor-neutral.",
-        "c": "Cost estimation is a BIM application, not a file format.",
-        "d": "Quality control is a process; IFC is a data exchange standard.",
-        "correct": "IFC (Industry Foundation Classes) is the international open standard enabling BIM model exchange across different software without vendor lock-in.",
-        "takeaway": "IFC is the international open standard for BIM file exchange, enabling interoperability across software platforms."
-      },
+      "rationale": "The available sources do not define IFC, so the question edit avoids an unsupported technical definition.",
       "explanation": "Proprietary formats (Revit, ArchiCAD native) are software-specific; IFC is vendor-neutral. Cost estimation is a BIM application, not a file format. Quality control is a process; IFC is a data exchange standard. IFC (Industry Foundation Classes) is the international open standard enabling BIM model exchange across different software without vendor lock-in. IFC is the international open standard for BIM file exchange, enabling interoperability across software platforms.",
       "code_citation": "RA 9266",
       "bloom_level": "apply",
@@ -151,30 +133,30 @@
       "model_id": "ALE-PRAC-FRM-014-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:20:04.782986+00:00",
+      "updated_at": "2026-07-20T01:13:23.641175+00:00",
       "content_hash": "sha256:fc7985d3064314ac10e991d68933fd451099e23f241cb41d28fccb215f3f5708"
     },
     {
       "question_id": "23630dbc-2261-4505-a8b8-339d6039d464",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What must an architect do when a BIM project involves sensitive sectors like hospitals or schools?",
+      "text": "What must an architect do when a BIM model includes sensitive project information?",
       "options": [
         {
           "id": "a",
-          "text": "Share the model publicly for feedback, ensuring that all stakeholders have access to the latest design iterations"
+          "text": "Publish the model freely because it is only a design file"
         },
         {
           "id": "b",
-          "text": "Comply with RA 10173 (Data Privacy Act) by securing information, limiting access, and protecting against unauthorized disclosure"
+          "text": "Control access, permitted use, and reliance in the agreement while deferring exact data-privacy mechanics to a local primary source"
         },
         {
           "id": "c",
-          "text": "Ignore data protection requirements, as they are not applicable to architectural models in sensitive sectors"
+          "text": "Ignore confidentiality if the model is not printed"
         },
         {
           "id": "d",
-          "text": "Post the model on social media to gather public opinion and suggestions for improvement"
+          "text": "Assume BIM software automatically satisfies all legal duties"
         }
       ],
       "correct_option_id": "b",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Public sharing of sensitive models violates data privacy and security.",
-        "c": "Data protection is legally required under RA 10173; ignoring it creates liability.",
-        "d": "Social media sharing exposes confidential project information.",
-        "correct": "BIM models of sensitive projects contain confidential information; RA 10173 requires encryption, access controls, and protection against unauthorized disclosure.",
-        "takeaway": "Sensitive project BIM models require RA 10173 compliance: encryption, access limits, and protection against unauthorized disclosure."
-      },
+      "rationale": "The checked sources support professional document and service controls; exact data-privacy mechanics need a separate local DPA source.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "understand",
@@ -201,30 +177,30 @@
       "model_id": "ALE-PRAC-FRM-014-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.643607+00:00",
       "content_hash": "sha256:47f4830d4cc2675711ef59e6dbf932a05e2106f0955531044a89b6f275db0408"
     },
     {
       "question_id": "cccc46ab-440c-4e3c-b5f2-07fc6c890361",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "Describe the architect's affirmative obligations when delivering a BIM model at construction documents phase.",
+      "text": "What is the architect's source-safe obligation when a BIM model is part of construction-document delivery?",
       "options": [
         {
           "id": "a",
-          "text": "Deliver only basic geometry, without any additional coordination or detailed specifications"
+          "text": "Let the model silently replace all contract documents"
         },
         {
           "id": "b",
-          "text": "Establish naming conventions, coordinate with consultants, conduct clash detection, maintain model discipline, and deliver a fully coordinated, clash-free model suitable for construction"
+          "text": "State which signed and sealed documents control and how the model supports or coordinates those documents"
         },
         {
           "id": "c",
-          "text": "No coordination is required, as the model is only a preliminary representation"
+          "text": "Avoid signing and sealing any project documents"
         },
         {
           "id": "d",
-          "text": "Only deliver 2D drawings, as 3D models are not necessary at this stage"
+          "text": "Let every consultant reuse the model without terms"
         }
       ],
       "correct_option_id": "b",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Basic geometry alone is insufficient; detailed coordination and clash resolution are required.",
-        "c": "Coordination is the fundamental BIM obligation; failure constitutes negligence.",
-        "d": "BIM at construction documents phase is the primary deliverable, not 2D drawings.",
-        "correct": "Construction documents-phase BIM requires: naming standards, continuous consultant coordination, systematic clash detection, model discipline maintenance, and delivery of a fully coordinated model.",
-        "takeaway": "Construction-phase BIM delivery requires established standards, full consultant coordination, clash-free model, and systematic discipline throughout."
-      },
+      "rationale": "RA 9266 anchors signed and sealed professional documents, while UAP service scope should define the model role.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "analyze",
@@ -251,30 +221,30 @@
       "model_id": "ALE-PRAC-FRM-014-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.644379+00:00",
       "content_hash": "sha256:191d3b4cd470102873b8557172446824bef1c88065b056158a98ffeb0cec9e07"
     },
     {
       "question_id": "2377a61d-bd13-4479-b7e1-dd0205a27870",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What should architects do regarding CPD and professional development as BIM adoption increases in Philippine practice?",
+      "text": "How should CPD and professional development be framed for BIM in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Ignore BIM training, as it is not a mandatory requirement for architectural practice in the Philippines"
+          "text": "Invent a BIM CPD credit schedule"
         },
         {
           "id": "b",
-          "text": "Pursue specialized CPD in BIM methodologies, software, modeling standards, and coordination protocols to stay competitive"
+          "text": "Keep the answer to competence and source-safe professional controls unless a local CPD or BIM source supports exact claims"
         },
         {
           "id": "c",
-          "text": "Only senior architects need training, as they are the ones responsible for overseeing BIM projects"
+          "text": "Say BIM has no relation to professional competence"
         },
         {
           "id": "d",
-          "text": "BIM knowledge is not important for practice, as traditional methods are sufficient for most projects"
+          "text": "Treat software training as a substitute for registration"
         }
       ],
       "correct_option_id": "b",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignoring BIM training risks loss of competitive advantage and client acceptance.",
-        "c": "All architectural staff benefit from BIM training; project teams require consistent competency.",
-        "d": "BIM is increasingly critical for government and large private projects.",
-        "correct": "As client expectations and competitive requirements shift toward BIM, architects must pursue CPD in software, modeling standards, coordination workflows, and best practices.",
-        "takeaway": "Architects must pursue BIM-focused CPD in methodologies, software, standards, and coordination to maintain competitive capability."
-      },
+      "rationale": "The local source packet does not prove exact BIM CPD requirements, so the repair avoids unsupported schedules.",
       "explanation": "Ignoring BIM training risks loss of competitive advantage and client acceptance. All architectural staff benefit from BIM training; project teams require consistent competency. BIM is increasingly critical for government and large private projects. As client expectations and competitive requirements shift toward BIM, architects must pursue CPD in software, modeling standards, coordination workflows, and best practices. Architects must pursue BIM-focused CPD in methodologies, software, standards, and coordination to maintain competitive capability.",
       "code_citation": "RA 9266",
       "bloom_level": "analyze",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-FRM-014-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:20:04.210871+00:00",
+      "updated_at": "2026-07-20T01:13:23.638886+00:00",
       "content_hash": "sha256:4789ac52ff023481c2a1d5a711bb8a1079a90d30a22c96fd783c448cffe67ebb"
     },
     {
       "question_id": "accb394f-a2c5-41bb-b900-833abe2749af",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "Is BIM adoption currently mandated by Philippine law or building code?",
+      "text": "Is BIM adoption proven mandatory by the checked Philippine law/building-code sources in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, fully mandated for all types of construction projects, including both public and private sectors, without exception"
+          "text": "Yes, every Philippine project must use BIM"
         },
         {
           "id": "b",
-          "text": "Yes, but only for government projects that exceed a certain budget threshold or involve complex infrastructure"
+          "text": "No; the checked RA 9266 and UAP sources do not prove a general BIM mandate"
         },
         {
           "id": "c",
-          "text": "No, but client expectations and competitive advantage are driving adoption"
+          "text": "Yes, only hospitals must use BIM"
         },
         {
           "id": "d",
-          "text": "No, and it will never be required as it is considered too costly and complex for standard practice"
+          "text": "Yes, BIM replaces the building permit process"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "BIM adoption is not yet mandated by Philippine law or building code.",
-        "b": "No government mandate exists; adoption is client-driven, not statutory.",
-        "d": "Future mandates are possible as global standards evolve and client expectations shift.",
-        "correct": "BIM is not legally mandated in the Philippines, but client expectations (especially government and large developers) and competitive advantage pressure architects to adopt it.",
-        "takeaway": "BIM is not mandatory in the Philippines but is increasingly expected by clients and required for competitive advantage."
-      },
+      "rationale": "The article records the absence of a local raw mandate source and keeps the answer source-safe.",
       "explanation": "BIM adoption is not yet mandated by Philippine law or building code. No government mandate exists; adoption is client-driven, not statutory. Future mandates are possible as global standards evolve and client expectations shift. BIM is not legally mandated in the Philippines, but client expectations (especially government and large developers) and competitive advantage pressure architects to adopt it. BIM is not mandatory in the Philippines but is increasingly expected by clients and required for competitive advantage.",
       "code_citation": "RA 9266",
       "bloom_level": "remember",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-FRM-014-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:20:04.513799+00:00",
+      "updated_at": "2026-07-20T01:13:23.639628+00:00",
       "content_hash": "sha256:a1a9f1e9633034eaab4bf55111f5b31b1310b7223f1b3e135c7eb762e6779cd5"
     },
     {
       "question_id": "80e3384a-5019-4731-b0a0-bda9e485a866",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "How does BIM change the architect's potential liability for design errors compared to 2D practice?",
+      "text": "How does BIM affect architect liability in the source-safe answer?",
       "options": [
         {
           "id": "a",
-          "text": "No change in liability, which is a common misconception"
+          "text": "It eliminates responsibility because software finds all errors"
         },
         {
           "id": "b",
-          "text": "BIM reduces all liability, which is not accurate"
+          "text": "It changes workflow evidence but does not remove responsibility for agreed services and signed professional documents"
         },
         {
           "id": "c",
-          "text": "Architects may be held to a higher standard due to BIM's precision; clash detection obligations are stronger"
+          "text": "It transfers all liability to the contractor"
         },
         {
           "id": "d",
-          "text": "Architects have no liability in BIM projects, which is incorrect"
+          "text": "It makes unsigned model files unrestricted legal documents"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Liability exposure is increased, not unchanged, due to precision expectations.",
-        "b": "BIM improves coordination but also increases professional duty; it does not reduce liability.",
-        "d": "BIM projects create enhanced liability for coordination and precision.",
-        "correct": "BIM's precision advantages create higher expectations; courts may hold architects to stricter accuracy standards and clash detection duties.",
-        "takeaway": "BIM's precision increases architect liability expectations; higher coordination standards and earlier clash detection are required."
-      },
+      "rationale": "RA 9266 responsibility and signing/sealing controls remain relevant even when the work is digitally coordinated.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "apply",
@@ -401,30 +353,30 @@
       "model_id": "ALE-PRAC-FRM-014-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.642744+00:00",
       "content_hash": "sha256:8cb28020809680ae0f017c8094fc5591d78ef8794b573758a5cc8e658a4c84b2"
     },
     {
       "question_id": "8cd7a9d5-eb43-4c3f-bc9c-88feb9e73b0d",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What is the primary risk of failing to deliver a properly coordinated BIM model?",
+      "text": "What is the main risk of promising a coordinated BIM model without contract controls?",
       "options": [
         {
           "id": "a",
-          "text": "No liability consequences, as BIM coordination is considered an optional service"
+          "text": "The project automatically becomes illegal"
         },
         {
           "id": "b",
-          "text": "Professional negligence; architect may be liable for clash resolution costs discovered during construction"
+          "text": "The parties may disagree about model scope, reliance, authorship, coordination duties, and permitted use"
         },
         {
           "id": "c",
-          "text": "Only a minor fee adjustment, which is typically absorbed by the project budget"
+          "text": "The architect automatically loses the COR"
         },
         {
           "id": "d",
-          "text": "Client satisfaction only, with no significant impact on project outcomes"
+          "text": "The owner automatically owns every future reuse right"
         }
       ],
       "correct_option_id": "b",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "BIM coordination failures create significant liability exposure.",
-        "c": "Coordination failures often trigger substantial claims, not minor adjustments.",
-        "d": "Undetected clashes during construction represent professional negligence, not merely satisfaction issues.",
-        "correct": "Uncoordinated BIM models create clash liability; architects may be held negligent for clashes discovered during construction, requiring costly resolution.",
-        "takeaway": "Uncoordinated BIM delivery constitutes professional negligence; architects are liable for clash resolution costs."
-      },
+      "rationale": "The source-safe risk is uncontrolled service scope and instrument-of-service use.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "apply",
@@ -451,30 +397,30 @@
       "model_id": "ALE-PRAC-FRM-014-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.640443+00:00",
       "content_hash": "sha256:f55a778cee16e5fec1e99f4d36529ac8e7268b5ced7c70e531fc69fd9bd1518e"
     },
     {
       "question_id": "46ee9419-0359-4147-9267-61f0dd1bb83b",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
       "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What must a service agreement explicitly define when BIM is specified?",
+      "text": "What should a BIM service agreement explicitly define?",
       "options": [
         {
           "id": "a",
-          "text": "Only the fee amount, which is subject to negotiation and may vary based on project scope"
+          "text": "Only the software brand"
         },
         {
           "id": "b",
-          "text": "Model scope, disciplines included, level of detail (LOD) for each phase, data format, clash detection, and delivery format"
+          "text": "Model purpose, phase, authorship, coordination, reliance, file exchange, permitted use, and ownership or license terms"
         },
         {
           "id": "c",
-          "text": "Only the project timeline, which outlines key milestones and deadlines for deliverables"
+          "text": "Only the presentation renderings"
         },
         {
           "id": "d",
-          "text": "Only the architect's name, as a formal requirement for contract documentation"
+          "text": "Only the architect's social-media credit"
         }
       ],
       "correct_option_id": "b",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Fee is important but secondary to scope definition; BIM scope clarity prevents misunderstandings.",
-        "c": "Timeline is scheduling information; BIM-specific contract requirements are much more detailed.",
-        "d": "Architect identification is basic; substantive BIM requirements must be contractually specified.",
-        "correct": "BIM contracts must define scope (which disciplines), LOD standards (100-400), data formats (IFC or proprietary), clash detection requirements, and delivery specifications.",
-        "takeaway": "BIM contracts must specify model scope, disciplines, LOD levels, data format, clash detection standards, and delivery format."
-      },
+      "rationale": "The UAP and RA 9266 anchors support defining service scope and document-use controls in the agreement.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-FRM-014-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.636929+00:00",
       "content_hash": "sha256:1054e897986e16e829d44c2d1db2e4acf0f55a1a3b88e76ac8be75735e72cecd"
     }
   ]

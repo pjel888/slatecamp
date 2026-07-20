@@ -1,0 +1,508 @@
+{
+  "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:86a636db6244d64d4fee1659e08f245bf8e8d1ecf7294abdbbe4096dd682040d",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "89e628df-64a1-4dc5-8915-1acd4f5f104d",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "A partnership of four architects has one non-architect investor who owns 30 percent. What action must the partnership take?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No action is required; the partnership is compliant under current regulations."
+        },
+        {
+          "id": "b",
+          "text": "The partnership must immediately register with the SEC to ensure legal compliance."
+        },
+        {
+          "id": "c",
+          "text": "The partnership must adjust ownership to achieve 75 percent RLA composition"
+        },
+        {
+          "id": "d",
+          "text": "The non-architect must obtain an architecture license to maintain the partnership's legal standing."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely assumes compliance—70% architect ownership falls short of the 75% threshold; the partnership violates RA 9266.",
+        "b": "Repeats existing step without fixing the problem—registration status is not the issue; ownership composition violates the law.",
+        "d": "Presents impossible solution—non-architect investors cannot obtain architecture licenses by definition; only architects can be licensed.",
+        "correct": "With one non-architect owning 30 percent, architects own only 70 percent, violating the 75 percent RLA requirement. The partnership must adjust ownership or re-register to comply.",
+        "takeaway": "A non-architect investor's 30% stake reduces architect ownership to 70%, violating the 75% RLA requirement and forcing ownership restructure."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6130ccbef13316521a4db1bde89d16b9582377269ab56142b04b02498c0dfb9"
+    },
+    {
+      "question_id": "279ac190-da6a-4f8a-b895-2e5d601dbd4f",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "What is the relationship between a partnership agreement and the liability of individual partners?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The partnership agreement eliminates all personal liability, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "The partnership agreement can limit liability among partners through indemnity clauses"
+        },
+        {
+          "id": "c",
+          "text": "Joint and several liability cannot be modified by agreement, ensuring partners remain accountable"
+        },
+        {
+          "id": "d",
+          "text": "The agreement must be approved by the PRC before liability effects apply, which is a regulatory requirement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overstates agreement power—agreements cannot eliminate statutory joint and several liability to third-party clients.",
+        "c": "Understates agreement power—while statutory liability to clients cannot be modified, inter-partner apportionment through indemnity is permitted.",
+        "d": "Imposes false requirement—partnership agreements do not require PRC approval for internal liability allocation mechanisms.",
+        "correct": "While joint and several liability exists by law, partnership agreements can include indemnification clauses to apportion liability among partners or protect one partner from another's malpractice.",
+        "takeaway": "Partnership agreements cannot eliminate joint and several liability to clients, but indemnity clauses redistribute liability among partners internally."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:82636c2c76a064442ed1a2b5aaf28847beb054ffb1ae30e40039bef632545366"
+    },
+    {
+      "question_id": "645a6629-fb7a-4a0a-acbf-661170bc30fb",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "A three-partner architectural firm loses one partner who retires. One remaining partner becomes incapacitated. Can the surviving partner continue the practice legally?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the partnership dissolves; the surviving architect must register as sole proprietorship with DTI and PRC"
+        },
+        {
+          "id": "b",
+          "text": "No, the partnership must be dissolved immediately, and all ongoing projects must be reassigned to a new legal entity"
+        },
+        {
+          "id": "c",
+          "text": "Only if a new partner is added before the incapacitated partner leaves, ensuring continuity of the firm's legal status"
+        },
+        {
+          "id": "d",
+          "text": "Only with prior approval from the PRC, which must be obtained through a formal application process"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Imposes automatic dissolution incorrectly—partners can continue if the agreement permits and RLA requirements are met.",
+        "c": "Sets unnecessary precondition—timing of new partner addition is irrelevant; current composition after withdrawal is what matters.",
+        "d": "Imposes false requirement—PRC approval is not needed for continuation; partnership agreement and RLA composition determine legality.",
+        "correct": "Continuation after partner withdrawal depends on the partnership agreement and whether remaining architects meet the 75 percent RLA requirement; re-registration may be required.",
+        "takeaway": "Partnership cannot continue with one architect; must dissolve and surviving architect register as sole proprietorship."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:447be879743779cbc53ed5072010e974e21c62572a20666b2c7349c2e55cd5b3"
+    },
+    {
+      "question_id": "363574ac-92a6-4b1a-a67e-0a045eede11a",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "When a partner withdraws from an architectural partnership, what must happen regarding projects in progress?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All projects must be terminated immediately, regardless of their stage of completion, to prevent liability issues"
+        },
+        {
+          "id": "b",
+          "text": "Outstanding projects and architect-of-record status must be transferred"
+        },
+        {
+          "id": "c",
+          "text": "The withdrawn partner retains liability for incomplete projects, unless otherwise agreed in the partnership contract"
+        },
+        {
+          "id": "d",
+          "text": "The BOA automatically assumes project responsibility, ensuring continuity of service without interruption"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Creates unnecessary disruption—projects can be transferred to continuing partners; immediate termination is not required.",
+        "c": "Perpetuates liability incorrectly—withdrawn partners cannot indefinitely bear liability; transfer of architect-of-record extinguishes their responsibility.",
+        "d": "Attributes false authority—BOA does not assume operational responsibility for specific projects; only licensed architects can be architect-of-record.",
+        "correct": "When a partner withdraws, outstanding client relationships and project obligations must be transferred to a continuing partner or assigned to another licensed architect with client notification.",
+        "takeaway": "Partner withdrawal requires transferring architect-of-record status and client projects to continuing partners or other RLAs with client notification."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65d3f313121fbe3b147aeb52c83fbf63916491af64d2011d6ec994560095987c"
+    },
+    {
+      "question_id": "9732576b-20ce-4638-83c5-6a2f7386c224",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "What must a partnership agreement establish regarding architectural document ownership after dissolution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All documents revert to the PRC, ensuring that regulatory oversight is maintained even after the partnership ends"
+        },
+        {
+          "id": "b",
+          "text": "Documents are distributed equally among former partners, unless otherwise specified in a pre-existing agreement or clause"
+        },
+        {
+          "id": "c",
+          "text": "Ownership transfer procedures and assignment mechanisms must be specified"
+        },
+        {
+          "id": "d",
+          "text": "Documents automatically become public property, accessible to anyone who requests them under the Freedom of Information Act"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Attributes false ownership to regulatory body—PRC does not own practitioner documents; the partnership or its successors retain ownership.",
+        "b": "Imposes equal distribution—equal distribution may not reflect each partner's contribution; the agreement should specify actual allocation.",
+        "d": "Converts private property to public incorrectly—architectural documents remain proprietary; dissolution does not make them public.",
+        "correct": "Partnership agreements must address intellectual property ownership and transfer procedures for architectural documents to prevent disputes after partner withdrawal or partnership dissolution.",
+        "takeaway": "Partnership agreements must specify how architectural documents are assigned after dissolution to prevent disputes over intellectual property."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9dc01b80f52f8de0be85c0ba2ccdb69d1e11b7d2142743122029e5aaf9d865db"
+    },
+    {
+      "question_id": "5d3fe44c-6796-41f3-8b25-ed9dcc1ccaeb",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "What percentage of partnership ownership must be held by registered and licensed architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "51 percent minimum"
+        },
+        {
+          "id": "b",
+          "text": "60 percent minimum"
+        },
+        {
+          "id": "c",
+          "text": "75 percent minimum"
+        },
+        {
+          "id": "d",
+          "text": "100 percent required"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mistakes the 51% simple majority rule for general corporations with the 75% RLA requirement specific to architectural firms.",
+        "b": "Underestimates the actual requirement—60% falls short of the 75% threshold needed to ensure professional control.",
+        "d": "Overreaches by requiring 100%—the law allows up to 25% non-architect participation while maintaining professional control.",
+        "correct": "RA 9266 Section 37 mandates that registered and licensed architects compose at least 75 percent of owners and decision-makers to prevent non-architect control of architectural firms.",
+        "takeaway": "The 75% RLA rule applies equally to partnerships and corporations—architects must control at least three-quarters of ownership."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2bb692ac6c31416a48e9fc43126f698d4e6e04989fc1b04726bb06f56f2e69e0"
+    },
+    {
+      "question_id": "6ed190bf-7179-411d-8679-c37526278754",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "Which government agencies must approve an architectural partnership under RA 9266?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SEC and DTI"
+        },
+        {
+          "id": "b",
+          "text": "BOA and PRC only"
+        },
+        {
+          "id": "c",
+          "text": "SEC and BOA"
+        },
+        {
+          "id": "d",
+          "text": "PRC and Department of Finance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses partnership registration with sole proprietorship—DTI registers sole proprietors, not partnerships; SEC registers partnerships.",
+        "b": "Omits the required SEC registration—partnerships cannot skip corporate registration with SEC; BOA and PRC registration alone is insufficient.",
+        "d": "Substitutes Finance Department for SEC—only SEC registers partnerships; Department of Finance has no partnership registration authority.",
+        "correct": "Architectural partnerships must be registered first with the Securities and Exchange Commission (SEC), then with the Board of Architecture (BOA), subject to PRC approval, for registration certificate.",
+        "takeaway": "Partnerships register with SEC for corporate formation, then BOA for architectural practice approval."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2a0cb3b61c7b43af2c5d5f014b53f7e25b7fc43d03bd9ac0fae7cf8eab0a5eea"
+    },
+    {
+      "question_id": "d03029e0-65d4-4ae7-baf3-d43e488ecd6e",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "In an architectural partnership, who bears liability for one partner's professional negligence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the negligent partner personally, as they are solely responsible for their professional actions and decisions."
+        },
+        {
+          "id": "b",
+          "text": "Only the partnership entity, which assumes all legal and financial responsibilities for the actions of its partners."
+        },
+        {
+          "id": "c",
+          "text": "All partners jointly and severally"
+        },
+        {
+          "id": "d",
+          "text": "The BOA and PRC, as they oversee professional conduct and enforce disciplinary measures."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mistakes sole proprietorship liability for partnership—partnerships spread liability to all partners, not confined to the negligent one.",
+        "b": "Misunderstands joint and several liability—the partnership entity is liable but so are individual partners personally.",
+        "d": "Attributes liability to regulatory bodies—BOA and PRC enforce standards but do not bear civil liability for architect negligence.",
+        "correct": "Partners share joint and several liability; each partner is personally liable for acts and omissions of other partners within the scope of partnership business, exposing all partners' personal assets.",
+        "takeaway": "In partnerships, one partner's negligence creates liability for all partners' personal assets—joint and several liability means clients can sue anyone."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fda60e4facf9d377f768bd84aafff840f27fb63d10059ef75637081a430dfba3"
+    },
+    {
+      "question_id": "99921fdc-dab4-4199-9be7-656de5ed1b37",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "What is the primary purpose of the 75 percent RLA majority rule in partnerships?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To increase government tax collection, ensuring that partnerships contribute fairly to public revenue"
+        },
+        {
+          "id": "b",
+          "text": "To ensure professional standards are maintained by architects"
+        },
+        {
+          "id": "c",
+          "text": "To limit the number of partnerships allowed, preventing market saturation"
+        },
+        {
+          "id": "d",
+          "text": "To prevent competition from corporations, safeguarding the interests of individual practitioners"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses regulatory purpose with revenue—the rule addresses professional control, not tax benefits.",
+        "c": "Mistakes the rule as quantitative cap—the rule ensures quality control, not supply control.",
+        "d": "Misrepresents inter-structural competition—the rule applies uniformly to partnerships and corporations alike.",
+        "correct": "The RLA majority rule prevents non-architects from directing professional decisions and ensures that architectural standards and ethics are maintained by qualified architects.",
+        "takeaway": "The 75% RLA rule protects professional integrity by ensuring architects control decisions, not financial investors."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:072c987ebde99226fd4feb5dcc8937e67d07f36ef7385b6b5fc28508e8ed31d9"
+    },
+    {
+      "question_id": "4593060f-de75-41a6-b054-d392166457c9",
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "topic_id": "c6d2715e-a855-40b5-bbd9-654ce6c58ff9",
+      "text": "What is the minimum number of partners required to form an architectural partnership?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One architect"
+        },
+        {
+          "id": "b",
+          "text": "Two or more architects"
+        },
+        {
+          "id": "c",
+          "text": "Three architects minimum"
+        },
+        {
+          "id": "d",
+          "text": "Five or more architects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses sole proprietorship with partnership—one architect forms a sole proprietorship, not a partnership.",
+        "c": "Sets an unnecessarily high threshold—partnerships form with two architects minimum, not three.",
+        "d": "Creates an unrealistically high barrier—while partnerships can have five members, they do not require this minimum.",
+        "correct": "An architectural partnership requires at least two registered/licensed architects composing 75% ownership per RA 9266 Sec 37, formed among architects or with allied professionals and registered with SEC and BOA.",
+        "takeaway": "Partnership minimally requires two RLAs; one architect alone is a sole proprietorship, not a partnership."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-002-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3a474f13574e6b6b376ff464037ffc3d1b5a445e48634e0f1c129a8665e08a5b"
+    }
+  ]
+}

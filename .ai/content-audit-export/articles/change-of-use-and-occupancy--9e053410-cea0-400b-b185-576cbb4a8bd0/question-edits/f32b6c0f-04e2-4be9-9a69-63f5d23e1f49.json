@@ -2,9 +2,9 @@
   "question_id": "f32b6c0f-04e2-4be9-9a69-63f5d23e1f49",
   "baseline_hash": "sha256:8d361268cca53de184d9c25ea82570cb60385df9a9b3deafdc499762ece56ad5",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What additional certificate rule applies after a Certificate of Occupancy has been issued?",
+    "text": "Under Section 1607 (2004 IRR), plastic skylights are proposed for a three-storey Type III commercial building in Occupancy Group E. What additional fire safety system is required for this installation?",
     "options": [
       {
-        "id": "a",
-        "text": "Other Certificates of Occupancy may be issued due to changes in use, whether partly or wholly, if the new use conforms with the Code and IRR."
+        "id": "pl-010-a",
+        "text": "An approved fire venting system from the Building Official, OR Type IV 1-hour construction with 400 mm curb, OR 1-storey building without a required fire-resistive ceiling — as alternative to suppression"
       },
       {
-        "id": "b",
-        "text": "T"
+        "id": "pl-010-b",
+        "text": "Automatic fire-extinguishing system is always required regardless of construction type or occupancy, ensuring maximum safety"
       },
       {
-        "id": "c",
-        "text": "h"
+        "id": "pl-010-c",
+        "text": "Type I or II construction is required for any building with plastic skylights, as these types provide enhanced fire resistance"
       },
       {
-        "id": "d",
-        "text": "e"
+        "id": "pl-010-d",
+        "text": "A fire alarm system must be installed in all zones served by the skylights, to ensure early detection and response"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Other Certificates of Occupancy may be issued due to changes in use, whether partly or wholly, if the new use conforms with the Code and IRR. This is supported by A certificate is replaced by a fire pump test..",
-    "explanation": "Other Certificates of Occupancy may be issued due to changes in use, whether partly or wholly, if the new use conforms with the Code and IRR. The cited local source family controls this item: A certificate is replaced by a fire pump test..",
-    "code_citation": "A certificate becomes unnecessary after the first tenant."
+    "correct_option_id": "pl-010-a",
+    "rationale": "The exceptions to the suppression requirement represent a design flexibility that architects can use when suppression is impractical. Understanding when each exception applies is essential for compliant skylight specification.",
+    "explanation": null,
+    "code_citation": null
   }
 }

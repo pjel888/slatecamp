@@ -1,0 +1,518 @@
+{
+  "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:80d0f7bbb14d89ed8a25519acb093b457174440a050501f0136bf3cc5d271cdf",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "412a5c9d-4442-42d8-a7f8-587c5355e54b",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A site plan for a residential subdivision in Quezon Province includes detailed hazard mapping showing: 100-year flood zone, 500-year flood zone, landslide susceptibility zones, and seismic hazard zones (from PHIVOLCS). Climate change projections indicate a 15% increase in annual rainfall by 2050 and 0.5 meters of sea-level rise. How should the site design and CLUP planning account for these climate projections?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design for historical climate conditions; climate projections are too uncertain to use in planning, and relying on them could lead to overdesign"
+        },
+        {
+          "id": "b",
+          "text": "Climate change is a national-level issue; local site planning does not need to address it, as national policies will eventually mitigate these impacts"
+        },
+        {
+          "id": "c",
+          "text": "Design retention basin and flood elevation standards based on projected 2050 conditions, not current conditions; evacuate routes and critical infrastructure should account for escalated hazards"
+        },
+        {
+          "id": "d",
+          "text": "Assume climate impacts will be mitigated globally, so no local design adaptation is necessary, as international agreements will address these issues"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Climate projections are science-based (IPCC); uncertainty is not a reason to ignore them; design for resilience includes margins.",
+        "b": "Climate change has local impacts; local planning must adapt (flood basins, evacuation, elevation standards).",
+        "c": "RA 10121 and current planning best practice mandate that CLUPs and site design account for climate change escalation. Designing for historical climate (100-year flood baseline) is insufficient if future floods are projected to be more frequent/severe. Retention basin sizing, evacuation routes, and critical infrastructure must account for projected climate impacts.",
+        "d": "Waiting for global mitigation leaves local communities vulnerable; adaptation planning is necessary.",
+        "correct": "RA 10121 and current planning best practice mandate that CLUPs and site design account for climate change escalation. Designing for historical climate (100-year flood baseline) is insufficient if future floods are projected to be more frequent/severe. Retention basin sizing, evacuation routes, and critical infrastructure must account for projected climate impacts.",
+        "takeaway": "RA 10121 mainstreaming requires planning for climate-escalated hazards, not just historical conditions. Future climate informs design now."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121; IPCC Climate Projections; CLUP Guidelines",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:334cc642910b0a7ad013e2e5e6fb46380889dc7f8efc2de6ae294424e3d2e8f0"
+    },
+    {
+      "question_id": "2ba52cd1-9352-421d-ac3b-29f513929e57",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A proposed 5-hectare mixed-use development is planned in a riverine flood-prone area. Flood hazard mapping indicates a 50-year flood level that would inundate the site to a depth of 1.2 meters. The site plan includes a retention basin designed to temporarily store stormwater runoff and delay peak flows downstream. What DRRM principle does this retention basin exemplify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk transfer through insurance; the basin protects the developer from liability by mitigating potential flood damage"
+        },
+        {
+          "id": "b",
+          "text": "Risk avoidance through site relocation; the basin allows the developer to ignore flood risk by providing an engineered solution"
+        },
+        {
+          "id": "c",
+          "text": "Risk reduction through structural mitigation; the basin reduces flood depth and duration at the site and downstream"
+        },
+        {
+          "id": "d",
+          "text": "Risk acceptance; the developer accepts that flooding will occur and designs for recovery, incorporating resilient infrastructure"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Insurance is risk transfer, not mitigation; the basin is a structural measure reducing actual flood risk.",
+        "b": "The basin does not allow ignoring flood risk; it mitigates but does not eliminate it.",
+        "c": "A retention basin is a structural (engineered) mitigation measure that reduces flood impact: it stores excess water temporarily, reducing downstream peak flows and inundation depth. This exemplifies risk reduction—the hazard is not eliminated, but its impact is mitigated.",
+        "d": "Risk acceptance involves planning for recovery after disaster; the basin is proactive mitigation.",
+        "correct": "A retention basin is a structural (engineered) mitigation measure that reduces flood impact: it stores excess water temporarily, reducing downstream peak flows and inundation depth. This exemplifies risk reduction—the hazard is not eliminated, but its impact is mitigated.",
+        "takeaway": "Retention basins = flood risk reduction through structural (green/gray) infrastructure; reduces depth, duration, and downstream impact."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121; Flood Risk Reduction Best Practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7f2a3b4f8c1d7be476d04ddd7407d2d67cbd7454a8aff319204f0ca4c5f1fe5c"
+    },
+    {
+      "question_id": "5cd1180c-4cb6-4fb5-963b-cf28f9fc2149",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A site is located 3.5 meters from a PHIVOLCS-mapped active fault trace. The developer proposes a 4-story residential building at this location. According to PHIVOLCS seismic resilience standards, what constraint applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The site meets PHIVOLCS standards for building; 3.5 meters is sufficient distance from the fault, provided additional structural reinforcements are implemented"
+        },
+        {
+          "id": "b",
+          "text": "The fault setback applies only to hospitals and schools, not residential buildings, unless specified otherwise by local ordinances"
+        },
+        {
+          "id": "c",
+          "text": "Only single-story buildings are permitted near fault zones, with exceptions for structures with specialized seismic design"
+        },
+        {
+          "id": "d",
+          "text": "The site violates the 5-meter minimum setback from the active fault; the building cannot be sited at this location without variance or relocation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3.5 meters is less than the 5-meter PHIVOLCS standard; the site violates the requirement.",
+        "b": "PHIVOLCS fault setback applies to all inhabited structures, not just critical facilities.",
+        "c": "Story height is not the control; the constraint is distance from fault trace.",
+        "d": "PHIVOLCS specifies a 5-meter minimum setback from active fault traces for inhabited structures. This site at 3.5 meters violates the standard and cannot be developed for residential use without relocation or exceptional engineering justification.",
+        "correct": "National Building Code (PD 1096) and NSCP 2015 prohibit structures straddling active fault traces; typical practice recommends 5m buffer, but not a PHIVOLCS-mandated standard. This site at 3.5 meters violates the standard and cannot be developed for residential use without relocation or exceptional engineering justification.",
+        "takeaway": "PHIVOLCS seismic standard: 5-meter minimum setback from active faults for any inhabited structure."
+      },
+      "explanation": null,
+      "code_citation": "PHIVOLCS Active Fault Map Standards",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:73132b2b69e7950d6bdbe737110fbe9c598dfe110454719020d35ceb30a623bd"
+    },
+    {
+      "question_id": "169a96c8-f01e-4a00-97a8-a96b96536e76",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A proposed industrial facility is planned adjacent to a populated barangay in a landslide-susceptible mountainous area. Slope analysis indicates the site is in a high-hazard zone. RA 10121 requires DRRM mainstreaming into site planning. What DRRM-informed planning response is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conduct slope stabilization engineering (terracing, soil nails, drainage) to reduce landslide risk; ensure accessible evacuation routes for the barangay; integrate early warning systems"
+        },
+        {
+          "id": "b",
+          "text": "Proceed with the industrial facility without restrictions; landslide risk is a natural hazard beyond human control, and mitigation is unnecessary"
+        },
+        {
+          "id": "c",
+          "text": "Relocate the facility to a safe zone; no development is possible in high-hazard areas, ensuring the safety of both the facility and the community"
+        },
+        {
+          "id": "d",
+          "text": "Require the adjacent barangay to relocate; the facility can proceed once the barangay is moved, prioritizing industrial development over residential safety"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DRRM-informed planning does not prohibit all development in hazardous areas; instead, it requires hazard mitigation, vulnerable population protection, and resilience design. Slope stabilization, evacuation routes, and early warning exemplify this approach.",
+        "b": "RA 10121 mandates active DRRM; ignoring landslide risk is not compliant.",
+        "c": "Complete prohibition is overly restrictive; mitigation-informed development is the DRRM goal.",
+        "d": "Forcing community relocation is not a standard DRRM response; mitigation and resilience are preferred.",
+        "correct": "DRRM-informed planning does not prohibit all development in hazardous areas; instead, it requires hazard mitigation, vulnerable population protection, and resilience design. Slope stabilization, evacuation routes, and early warning exemplify this approach.",
+        "takeaway": "DRRM mainstreaming allows development in hazardous areas IF resilience measures are designed and vulnerable populations are protected."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121; Landslide Risk Reduction Planning",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:acba9b82b346b65a39b0f4f5d3b166becee7967499a388e17df72c767c073f4f"
+    },
+    {
+      "question_id": "54ee072d-60aa-4363-b2d0-4928d0a7f1fa",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A coastal municipality is revising its CLUP to integrate climate resilience and DRRM per RA 10121. The municipality currently permits residential development up to 25 meters from mean high tide (within the post-Yolanda 40-meter no-build zone). What is the required CLUP revision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No change is necessary; 25 meters is a reasonable compromise between development and safety that balances economic interests with hazard mitigation"
+        },
+        {
+          "id": "b",
+          "text": "The CLUP may allow the 25-meter zone if the developer constructs seawalls to protect against storms and obtains an environmental compliance certificate"
+        },
+        {
+          "id": "c",
+          "text": "Amend the CLUP to restrict residential development to beyond 40 meters from mean high tide in compliance with the post-Yolanda National Zoning Framework"
+        },
+        {
+          "id": "d",
+          "text": "The municipal CLUP supersedes post-Yolanda national zoning; the municipality may set its own coastal setback based on local risk assessment findings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "25 meters violates the 40-meter national framework; it is not a compliant compromise.",
+        "b": "Seawalls do not waive the national 40-meter no-build requirement; the zone is absolute.",
+        "c": "The post-Yolanda National Zoning Framework (2014) is a binding national constraint, not a guideline. The CLUP must enforce the 40-meter no-build zone in affected provinces. Allowing 25-meter development violates both national zoning and RA 10121 DRRM mainstreaming.",
+        "d": "National zoning framework overrides municipal CLUP; they must align.",
+        "correct": "The post-Yolanda National Zoning Framework (2014) is a binding national constraint, not a guideline. The CLUP must enforce the 40-meter no-build zone in affected provinces. Allowing 25-meter development violates both national zoning and RA 10121 DRRM mainstreaming.",
+        "takeaway": "Post-Yolanda 40m no-build zone is a binding national constraint; CLUPs must enforce it, not circumvent it."
+      },
+      "explanation": null,
+      "code_citation": "Post-Yolanda National Zoning Framework; RA 10121",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06999680d6c7d8d16aeaf65dec906428debeee241b93404bbbea41bccf518186"
+    },
+    {
+      "question_id": "80463191-02dc-4b84-85b2-8267207f0719",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A municipality is updating its CLUP to integrate disaster risk reduction and management requirements per RA 10121. Which of the following best describes what 'mainstreaming DRRM into the CLUP' means?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Integrating hazard identification, vulnerability assessment, and resilience measures throughout all land use planning, zoning, and infrastructure decisions"
+        },
+        {
+          "id": "b",
+          "text": "Creating a separate DRRM chapter in the CLUP document without affecting other planning components, which is a limited approach"
+        },
+        {
+          "id": "c",
+          "text": "Deferring DRRM considerations to the National Disaster Risk Reduction and Management Council (NDRRMC), which is not recommended"
+        },
+        {
+          "id": "d",
+          "text": "Limiting DRRM planning to coastal areas and flood-prone barangays only, which overlooks other potential risks"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mainstreaming DRRM means integrating disaster risk considerations into every planning decision: land use zoning, infrastructure placement, building standards, evacuation routes. It is not a separate sidebar; it permeates the plan.",
+        "b": "A separate DRRM chapter is insufficient; mainstreaming requires integration throughout the plan.",
+        "c": "LGU DRRM mainstreaming is an LGU responsibility, not deferred to NDRRMC.",
+        "d": "DRRM applies to all areas; every site has some hazard (seismic, landslide, drought, etc.).",
+        "correct": "Mainstreaming DRRM means integrating disaster risk considerations into every planning decision: land use zoning, infrastructure placement, building standards, evacuation routes. It is not a separate sidebar; it permeates the plan.",
+        "takeaway": "DRRM mainstreaming = integrating disaster risk into every planning and land use decision, not creating a separate DRRM section."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121 (DRRM Act); DHSUD CLUP Guidelines",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:980ef07198657208174c64664e198dbf2daf33346c999e9a7d39a11c5bb1bc33"
+    },
+    {
+      "question_id": "23941221-20b3-4b03-9157-d5687638db39",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A municipality must update its CLUP every 10 years with a 3-year midterm review per RA 7160. The current CLUP was finalized in 2015 (before 2016 climate projections). It is now 2026, and new climate data shows significantly escalated flooding projections. RA 10121 mandates DRRM mainstreaming. Which statement best describes the municipality's planning obligation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The municipality must wait until 2025 (10-year review) to update the CLUP; no interim changes are required, even if new data suggests otherwise"
+        },
+        {
+          "id": "b",
+          "text": "The municipality should conduct a 3-year midterm review (2018) addressing updated climate data, though this may have been missed; current CLUP should be updated to reflect escalated hazards per RA 10121 mainstreaming"
+        },
+        {
+          "id": "c",
+          "text": "Climate change is outside the scope of CLUP updates; hazard mainstreaming is optional and not mandated by any specific regulation"
+        },
+        {
+          "id": "d",
+          "text": "Only DHSUD can mandate CLUP updates for climate data; LGUs cannot initiate updates independently without express permission"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Waiting for the 10-year cycle means the CLUP ignores updated hazard data for years; RA 10121 does not permit this.",
+        "b": "RA 10121 mandates DRRM mainstreaming into CLUPs. If climate data substantially changes hazard assessments, the CLUP should be updated (ideally via 3-year midterm review, but updates can occur as needed for DRRM compliance). Waiting until 2025 means 10 years of planning based on outdated hazard data—a RA 10121 violation.",
+        "c": "RA 10121 explicitly mandates DRRM mainstreaming; it is mandatory, not optional.",
+        "d": "LGUs have authority to update CLUPs responsive to new data; DHSUD reviews for conformity but does not control update timing.",
+        "correct": "RA 10121 mandates DRRM mainstreaming into CLUPs. If climate data substantially changes hazard assessments, the CLUP should be updated (ideally via 3-year midterm review, but updates can occur as needed for DRRM compliance). Waiting until 2025 means 10 years of planning based on outdated hazard data—a RA 10121 violation.",
+        "takeaway": "DRRM mainstreaming under RA 10121 requires CLUPs to be responsive to updated hazard data, not rigidly bound to 10-year cycles."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121; RA 7160 CLUP Review Cycle",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5f1386829477798fdc050ae90bc4a97aabcbbfc02de9c20ac1de8175d8e9607a"
+    },
+    {
+      "question_id": "972bdb07-0df4-4a39-b97d-29db3dcbe46d",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A site is vulnerable to both riverine flooding and seismic hazard. The 100-year flood level is 1.5 meters above current ground level; the site is 25 meters from an active fault (PHIVOLCS standard = 5-meter minimum). The developer proposes: (1) elevation of buildings 2 meters above current grade to avoid flood impact, and (2) flexible utility connections to accommodate fault movement. What is the most accurate assessment of these resilience measures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both measures are adequate; the site can be developed safely, considering the elevation exceeds the flood level and the fault setback is more than sufficient"
+        },
+        {
+          "id": "b",
+          "text": "Elevation addresses flood risk appropriately; the site meets PHIVOLCS fault setback (25m > 5m), so seismic resilience is achieved, ensuring compliance with local safety standards"
+        },
+        {
+          "id": "c",
+          "text": "The site cannot be developed due to multiple hazards; no resilience measures are adequate, as the combination of flood and seismic risks is too great to mitigate effectively"
+        },
+        {
+          "id": "d",
+          "text": "The elevation strategy is insufficient (buildings would still be 0.5m below 100-year flood); flexible utilities address seismic impact but do not eliminate risk"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The analysis is incomplete; flood elevation margin is only 0.5m (risky); flexible utilities are incomplete seismic mitigation.",
+        "b": "Elevation is better but 0.5m margin is narrow; PHIVOLCS setback is met, but flexible utilities alone don't fully address seismic resilience (ground rupture is still possible).",
+        "c": "Multiple hazards do not prohibit development; they require comprehensive resilience design.",
+        "d": "Elevation of 2 meters brings buildings to 2m above current grade; 100-year flood is 1.5m above current, so buildings are at 0.5m above peak flood — a thin margin. Flexible utilities mitigate seismic impact but don't eliminate damage risk. Both are partial measures; more comprehensive mitigation may be needed.",
+        "correct": "Elevation of 2 meters brings buildings to 2m above current grade; 100-year flood is 1.5m above current, so buildings are at 0.5m above peak flood — a thin margin. Flexible utilities mitigate seismic impact but don't eliminate damage risk. Both are partial measures; more comprehensive mitigation may be needed.",
+        "takeaway": "Resilience measures reduce but don't eliminate risk. Site design must address multiple hazards comprehensively; single measures are rarely sufficient."
+      },
+      "explanation": null,
+      "code_citation": "DRRM Site Design Best Practice; PHIVOLCS and Flood Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:20a57a611309ef8e42881d0b4f9f052839ead9b9f68c75898e7f54d66e47e2a0"
+    },
+    {
+      "question_id": "b07093ca-4877-4435-8004-9bfcd8a5c321",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "A proposed residential development in the coastal municipality of Tacloban, Eastern Samar (a province significantly affected by Super Typhoon Yolanda in 2013), is planned at a location 30 meters from the mean high tide line. What does the post-Yolanda National Zoning Framework specify regarding development in this location?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The site is compliant; the 40-meter no-build zone is a non-binding guideline, though adherence is strongly recommended"
+        },
+        {
+          "id": "b",
+          "text": "The site falls within the 40-meter no-build zone; residential structures cannot be erected in this zone"
+        },
+        {
+          "id": "c",
+          "text": "Only low-income housing projects are permitted in the 30–40 meter zone, subject to specific conditions"
+        },
+        {
+          "id": "d",
+          "text": "The developer may proceed with structures up to 2 stories in the 30-meter zone, provided additional safety measures are implemented"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The framework is binding, not a guideline. The no-build zone is a regulatory constraint.",
+        "b": "The post-Yolanda National Zoning Framework (2014) established a 40-meter no-build zone from mean high tide in provinces affected by Typhoon Yolanda. This site at 30 meters is within the restricted zone where residential structures are prohibited.",
+        "c": "The no-build zone is absolute; no structures (low-income or otherwise) are permitted.",
+        "d": "Height restriction is not the control; the zone is a complete no-build zone.",
+        "correct": "Post-Yolanda guidelines recommend 40-meter setbacks from mean high tide in Yolanda-affected areas, but this is advisory; binding requirements follow PD 1067 waterway easements (3m/20m/40m based on width) and local CLUP zoning. This site at 30 meters is within the restricted zone where residential structures are prohibited.",
+        "takeaway": "Post-Yolanda 40m no-build zone from mean high tide applies to designated coastal provinces; total prohibition on structures."
+      },
+      "explanation": null,
+      "code_citation": "Post-Yolanda National Zoning Framework (2014)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:40.815035+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:985433dc1a9bc81c171c65fe3b5465541b59693883d041889fa40b4afbc1b01f"
+    },
+    {
+      "question_id": "c51a6f2b-6cc0-405a-901d-1a6f66633826",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "topic_id": "a8505857-7320-4c8f-a91b-e1d0972d3f6d",
+      "text": "According to RA 10121 (Philippine Disaster Risk Reduction and Management Act), what is the mandatory allocation of Local Government Unit (LGU) funds specifically for disaster risk reduction and management programs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3% of annual general fund revenue, which is often allocated for various community projects."
+        },
+        {
+          "id": "b",
+          "text": "5% of estimated revenue from regular sources"
+        },
+        {
+          "id": "c",
+          "text": "10% of capital outlay budget, typically reserved for infrastructure development."
+        },
+        {
+          "id": "d",
+          "text": "All surplus revenue at fiscal year-end, which may vary significantly each year."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3% is not specified in RA 10121; the mandate is 5% of IRA.",
+        "b": "RA 10121 explicitly mandates that LGUs allocate at least 5% of their Internal Revenue Allotment (IRA) to DRRM programs, ensuring dedicated funding for disaster risk reduction.",
+        "c": "10% of capital outlay is not the standard; RA 10121 specifies IRA percentage.",
+        "d": "DRRM funding is not contingent on surplus; it is a fixed percentage of IRA.",
+        "correct": "RA 10121 explicitly mandates that LGUs allocate at least 5% of their Internal Revenue Allotment (IRA) to DRRM programs, ensuring dedicated funding for disaster risk reduction.",
+        "takeaway": "RA 10121 mandates: 5% of LGU IRA to DRRM fund. This ensures DRRM is funded, not discretionary."
+      },
+      "explanation": null,
+      "code_citation": "RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8cb764f5f6228a7057029b98c93c5da08f27be740a178508dc34f70917622572"
+    }
+  ]
+}

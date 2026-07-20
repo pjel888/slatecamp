@@ -2,9 +2,9 @@
   "question_id": "d14b44f6-6ea2-4331-9073-64f27da54e13",
   "baseline_hash": "sha256:6f3f3fc71238e2fe3ea35630fbc0e3c9e31b19f1f6f4bab76f01535962483631",
   "action": "replace",
-  "reason": "source-audited-article-batch-118-local-first source-maps lea-hist-001-05-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
-  "approved_by": "codex-local-source-audit-batch-118",
-  "approved_at": "2026-05-13T22:16:00+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
     "parent_article_slug": "lea-hist-001-05-core-concept",
@@ -47,54 +47,28 @@
     "new_source_map_phase": true
   },
   "proposed": {
-    "question_id": "d14b44f6-6ea2-4331-9073-64f27da54e13",
-    "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-    "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
-    "text": "A circular Greek sacred building or temple form is called a:",
+    "text": "A circular Greek temple structure with an internal colonnade and a circular plan rather than rectangular is called:",
     "options": [
       {
         "id": "a",
-        "text": "Stoa"
+        "text": "Stoa — a Greek covered colonnaded walkway, not a circular temple"
       },
       {
         "id": "b",
-        "text": "Tholos"
+        "text": "Tholos — the circular Greek temple type with internal colonnade"
       },
       {
         "id": "c",
-        "text": "Cella"
+        "text": "Cella (naos) — the inner sanctum of a temple, not a building type"
       },
       {
         "id": "d",
-        "text": "Peristasis"
+        "text": "Peristyle — a colonnade surrounding a court, not a circular temple"
       }
     ],
     "correct_option_id": "b",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": {
-      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
-      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
-      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
-      "correct": "Tholos is the source-safe term for a circular Greek building form; stoa, cella, and peristasis refer to other elements.",
-      "takeaway": "Circular Greek temple/building clue equals tholos."
-    },
-    "explanation": "Tholos is the source-safe term for a circular Greek building form; stoa, cella, and peristasis refer to other elements. Circular Greek temple/building clue equals tholos.",
-    "code_citation": null,
-    "bloom_level": "remember",
-    "application_context": "recall",
-    "practice_context": [
-      "DESC"
-    ],
-    "difficulty": 0.5,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false,
-    "model_id": "ALE-HIST-001-05-008",
-    "prompt_image_url": null,
-    "created_at": "2026-03-23T19:27:23.734061+00:00",
-    "updated_at": "2026-05-06T12:47:35.698764+00:00"
+    "rationale": "The Treasury of Atreus at Mycenae (c. 1350 BCE, pre-Classical but influential) featured a corbelled dome—a \"tholos\" or circular structure that predates Greek post-and-lintel temples. Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).' [A]: A stoa is a portico or covered walkway with columns, not a circular temple. [C]: Cella (or naos) is the inner chamber of a temple, not a circular building type. [D]: Peristyle refers to a colonnade surrounding a building, not a specific circular building type.",
+    "explanation": "A stoa is a portico or covered walkway with columns, not a circular temple. Cella (or naos) is the inner chamber of a temple, not a circular building type. Peristyle refers to a colonnade surrounding a building, not a specific circular building type. The Treasury of Atreus at Mycenae (c. 1350 BCE, pre-Classical but influential) featured a corbelled dome—a \"tholos\" or circular structure that predates Greek post-and-lintel temples. Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).' Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'.",
+    "code_citation": null
   }
 }

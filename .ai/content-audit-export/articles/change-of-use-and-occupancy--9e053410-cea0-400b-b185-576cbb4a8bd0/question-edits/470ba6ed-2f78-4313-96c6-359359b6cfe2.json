@@ -2,9 +2,9 @@
   "question_id": "470ba6ed-2f78-4313-96c6-359359b6cfe2",
   "baseline_hash": "sha256:2e9eaa1a33ca9f7aa9a64aa732f3028a3093a01cf692df30252a95ee13b26783",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What is the first step in a PD 1096 change-of-use question?",
+    "text": "What is the correct sequence of the change-of-use process under Sec. 702?",
     "options": [
       {
         "id": "a",
-        "text": "Identify the existing and proposed occupancy groups under Section 701."
+        "text": "Inspection → Application (B-12) → Assessment → Certificate of Occupancy"
       },
       {
         "id": "b",
-        "text": "S"
+        "text": "Application (B-12) → Assessment → Inspection → Certificate of Occupancy"
       },
       {
         "id": "c",
-        "text": "t"
+        "text": "Assessment → Application (B-12) → Certificate of Occupancy → Inspection"
       },
       {
         "id": "d",
-        "text": "a"
+        "text": "Application (B-12) → Certificate of Occupancy → Inspection → Assessment"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Identify the existing and proposed occupancy groups under Section 701. This is supported by Start by computing exit width only..",
-    "explanation": "Identify the existing and proposed occupancy groups under Section 701. The cited local source family controls this item: Start by computing exit width only..",
-    "code_citation": "Start by choosing an extinguisher label."
+    "correct_option_id": "b",
+    "rationale": "The B-12 application must come before assessment and inspection — the BO needs the formal application before reviewing the case. Mnemonic: 'B-12 to Certificate of Occupancy — the Change Chain.' The process is: B-12 Form → Assessment → Inspection → Certificate of Occupancy. The order matters because the assessment determines the scope of inspection.",
+    "explanation": null,
+    "code_citation": null
   }
 }

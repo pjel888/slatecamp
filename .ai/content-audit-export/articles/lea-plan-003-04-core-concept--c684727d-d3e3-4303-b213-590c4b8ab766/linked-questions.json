@@ -8,37 +8,37 @@
       "question_id": "93ecfc50-9242-4ab4-a83a-e7017a898f0a",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "In a sites-and-services housing project, what is the PRIMARY responsibility of the government (NHA)?",
+      "text": "What does a housing production method describe?",
       "options": [
         {
           "id": "a",
-          "text": "Construct complete housing units for beneficiaries, ensuring all units meet the minimum standards set by the Housing and Urban Development Coordinating Council"
+          "text": "How housing is delivered, upgraded, financed, or organized."
         },
         {
           "id": "b",
-          "text": "Regulate private developers' compliance with building codes, including periodic inspections and enforcement of penalties for non-compliance"
+          "text": "Only the statutory minimum lot area."
         },
         {
           "id": "c",
-          "text": "Finance individual family building loans through government-backed financial institutions, providing low-interest rates and flexible repayment terms"
+          "text": "Only the name of the developer."
         },
         {
           "id": "d",
-          "text": "Acquire land, develop infrastructure, and provide individual plots to families"
+          "text": "Only the color of the zoning map."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "That describes medium-rise or core housing; sites-and-services provides only land and infrastructure.",
-        "b": "DHSUD (via HLURB) regulates developer compliance; NHA focuses on production.",
-        "c": "NHA is a producer (builds/develops), not a finance agency. Pag-IBIG finances loans.",
-        "d": "Sites-and-services: NHA acquires land, provides water/electricity/roads/drainage infrastructure, and allocates individual plots. Families then self-build structures at their own pace and cost.",
-        "correct": "Sites-and-services: NHA acquires land, provides water/electricity/roads/drainage infrastructure, and allocates individual plots. Families then self-build structures at their own pace and cost.",
-        "takeaway": "Sites-and-services = land + infrastructure + plots. Family builds the structure."
+        "a": "Correct. Production methods describe delivery, upgrading, financing, or organization, not classification alone.",
+        "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "correct": "Production methods describe delivery, upgrading, financing, or organization, not classification alone.",
+        "takeaway": "Apply the checked local raw-source condition before choosing the answer."
       },
       "explanation": null,
       "code_citation": "NHA Sites-and-Services Program Guidelines",
@@ -52,30 +52,30 @@
       "model_id": "ALE-PLAN-003-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.531863+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.370016+00:00",
       "content_hash": "sha256:c0a1c8b7c504ecf64b20cf0cb8a2dc2f956a3cb57da2ecad8e1b9b57b2730c7b"
     },
     {
       "question_id": "d8f20b9d-9ecb-49c8-ab3b-6d12606465ac",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "Which combination of production methods is consistent with integrated housing delivery that balances immediate shelter provision with long-term community development?",
+      "text": "A city upgrades an occupied informal settlement to reduce displacement. Which checked method fits best?",
       "options": [
         {
           "id": "a",
-          "text": "Core housing + sites-and-services expansion + CMP financing for tenure security"
+          "text": "On-site development"
         },
         {
           "id": "b",
-          "text": "Medium-rise buildings only, no expansion allowance, limiting future adaptability and community growth potential."
+          "text": "Open market housing"
         },
         {
           "id": "c",
-          "text": "Market subdivisions with strict balanced housing enforcement, ensuring compliance with local zoning laws and equitable distribution of resources."
+          "text": "Medium cost subdivision"
         },
         {
           "id": "d",
-          "text": "Self-help housing exclusively; no government-provided structures, which may lead to inconsistent quality and lack of essential infrastructure."
+          "text": "Daylighting credit"
         }
       ],
       "correct_option_id": "a",
@@ -84,12 +84,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously.",
-        "b": "Medium-rise alone does not allow family expansion or community-driven development.",
-        "c": "Market subdivisions serve formal buyers, not low-income integrated development.",
-        "d": "Self-help without initial government support may face material/technical constraints.",
-        "correct": "Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously.",
-        "takeaway": "Integrated delivery: starter shell + expandable land + collective tenure = completeness."
+        "a": "Correct. RA 7279 describes on-site development as upgrading or rehabilitating blighted or slum areas while minimizing displacement.",
+        "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "correct": "RA 7279 describes on-site development as upgrading or rehabilitating blighted or slum areas while minimizing displacement.",
+        "takeaway": "Apply the checked local raw-source condition before choosing the answer."
       },
       "explanation": "Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously. Medium-rise alone does not allow family expansion or community-driven development. Market subdivisions serve formal buyers, not low-income integrated development. Self-help without initial government support may face material/technical constraints. Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously. Integrated delivery: starter shell + expandable land + collective tenure = completeness.",
       "code_citation": "NHA Integrated Housing Programs; John F.C. Turner",
@@ -103,44 +103,44 @@
       "model_id": "ALE-PLAN-003-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-05-06T15:42:45.573619+00:00",
+      "updated_at": "2026-07-20T01:13:27.375445+00:00",
       "content_hash": "sha256:a905678cb48542926605a2e06f553530d1d2309b7f1b3777747167d5bb313e26"
     },
     {
       "question_id": "06a24ec1-335a-40b0-8566-3ea611622802",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "Which housing production method is based on John F.C. Turner's concept of 'Housing by People'?",
+      "text": "What source-safe condition must be considered for resettlement under RA 7279?",
       "options": [
         {
           "id": "a",
-          "text": "Core housing provided by NHA, which focuses on providing basic shelter but may not fully engage community participation"
+          "text": "The site must include basic services and access to employment and livelihood opportunities."
         },
         {
           "id": "b",
-          "text": "Medium-rise government buildings, which are typically centrally planned and may not reflect Turner's emphasis on self-help"
+          "text": "The site may be any remote vacant lot."
         },
         {
           "id": "c",
-          "text": "Self-help housing with community-driven construction"
+          "text": "The site must ignore transportation access."
         },
         {
           "id": "d",
-          "text": "Market subdivisions under PD 957 regulation, which are often developer-driven and may not align with Turner's principles"
+          "text": "The site must always be a condominium project."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Core housing is government-provided shell, not self-help.",
-        "b": "Medium-rise is government construction; not self-help.",
-        "c": "Turner's seminal work _Housing by People_ (1976) emphasized community-driven, self-help housing as a path to autonomy and community cohesion. Self-help housing in the Philippines (often via SHFC/CMP) embodies this principle.",
-        "d": "Market subdivisions are profit-driven private development.",
-        "correct": "Turner's seminal work _Housing by People_ (1976) emphasized community-driven, self-help housing as a path to autonomy and community cohesion. Self-help housing in the Philippines (often via SHFC/CMP) embodies this principle.",
-        "takeaway": "Turner principle: self-help housing = community autonomy, economic participation, social cohesion."
+        "a": "Correct. RA 7279 ties resettlement to basic services and access to employment and livelihood opportunities.",
+        "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "correct": "RA 7279 ties resettlement to basic services and access to employment and livelihood opportunities.",
+        "takeaway": "Apply the checked local raw-source condition before choosing the answer."
       },
       "explanation": null,
       "code_citation": "John F.C. Turner, _Housing by People_ (1976)",
@@ -154,44 +154,44 @@
       "model_id": "ALE-PLAN-003-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.372198+00:00",
       "content_hash": "sha256:e948e7479828a76ca8a4657d78169710d8763df8834670d0769e469fb7eebf1b"
     },
     {
       "question_id": "0cdb1964-a66d-4ad2-96eb-9cb42500ebbb",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "Compared to medium-rise housing projects, sites-and-services projects require:",
+      "text": "Which statement about sites and services is source-safe in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Higher initial government capital for structure construction but lower ongoing maintenance, which can be a cost-effective long-term strategy"
+          "text": "It is part of the socialized-housing toolbox and may combine land, services, financing, and liberalized terms."
         },
         {
           "id": "b",
-          "text": "Identical upfront investment but different timeline for occupancy, affecting project scheduling and resource allocation"
+          "text": "It always means a finished core house is already built."
         },
         {
           "id": "c",
-          "text": "Lower initial capital for land/infrastructure but extended timeline for family self-building"
+          "text": "It is identical to PD 957 open market housing."
         },
         {
           "id": "d",
-          "text": "Higher community participation in construction but guaranteed completion timelines, ensuring community engagement and timely delivery"
+          "text": "It is prohibited by RA 7279."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Sites-and-services requires LOWER capital (no structure); medium-rise requires HIGHER capital.",
-        "b": "Investment levels differ significantly.",
-        "c": "Sites-and-services: minimal upfront capital (land, utilities, roads only); families build at own pace over years. Medium-rise: high upfront capital (complete construction); immediate occupancy. Trade-off: affordability vs. timeliness.",
-        "d": "Sites-and-services has variable completion; not guaranteed timeline.",
-        "correct": "Sites-and-services: minimal upfront capital (land, utilities, roads only); families build at own pace over years. Medium-rise: high upfront capital (complete construction); immediate occupancy. Trade-off: affordability vs. timeliness.",
-        "takeaway": "Sites-and-services: low capital, long timeline. Medium-rise: high capital, immediate occupancy."
+        "a": "Correct. The checked RA 7279 evidence supports sites and services as part of socialized housing, without adding an uncited fixed house type.",
+        "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "correct": "The checked RA 7279 evidence supports sites and services as part of socialized housing, without adding an uncited fixed house type.",
+        "takeaway": "Apply the checked local raw-source condition before choosing the answer."
       },
       "explanation": null,
       "code_citation": "NHA Production Methods Comparison",
@@ -205,30 +205,30 @@
       "model_id": "ALE-PLAN-003-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.373843+00:00",
       "content_hash": "sha256:f0acb2d03e371a39e7faa2b87589ae3781b2b5d3993d2ad9073b0abfcc5c8a19"
     },
     {
       "question_id": "5a28f94e-3a66-4240-aac8-71ee4fe61c6b",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "In-situ upgrading is distinguished from relocation in housing policy by:",
+      "text": "What does the Community Mortgage Program support?",
       "options": [
         {
           "id": "a",
-          "text": "In-situ improves settlements in place; relocation moves communities to new sites"
+          "text": "Legally organized associations of underprivileged and homeless citizens acquiring and developing land."
         },
         {
           "id": "b",
-          "text": "In-situ is cheaper; relocation provides better services, often including utilities and infrastructure"
+          "text": "Only luxury subdivision buyers."
         },
         {
           "id": "c",
-          "text": "In-situ is used for squatters; relocation is used for formal residents, typically with legal land titles"
+          "text": "Only building orientation under DOE guidelines."
         },
         {
           "id": "d",
-          "text": "In-situ requires government funding; relocation requires private investment, often through public-private partnerships"
+          "text": "Only minimum parking layouts."
         }
       ],
       "correct_option_id": "a",
@@ -237,12 +237,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "In-situ upgrading = improve where communities exist (community cohesion preserved). Relocation = move to certified new site (disruptive but sometimes necessary for danger areas). RA 7279 favors in-situ when possible.",
-        "b": "In-situ may not be cheaper; both are cost-intensive but achieve different outcomes.",
-        "c": "Both approaches apply to informal settlements.",
-        "d": "Both are primarily government-funded programs.",
-        "correct": "In-situ upgrading = improve where communities exist (community cohesion preserved). Relocation = move to certified new site (disruptive but sometimes necessary for danger areas). RA 7279 favors in-situ when possible.",
-        "takeaway": "In-situ = in place; Relocation = new site. RA 7279 prefers in-situ; relocation only with certified site."
+        "a": "Correct. RA 7279 supports CMP for organized community associations acquiring and developing land.",
+        "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "correct": "RA 7279 supports CMP for organized community associations acquiring and developing land.",
+        "takeaway": "Apply the checked local raw-source condition before choosing the answer."
       },
       "explanation": null,
       "code_citation": "RA 7279 (UDHA); SHFC-CMP Guidelines",
@@ -256,44 +256,44 @@
       "model_id": "ALE-PLAN-003-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.373030+00:00",
       "content_hash": "sha256:5e1dd534f738a9cedd06de732956ff044a0bae5f40cf60cf0da92e1b097c0a47"
     },
     {
       "question_id": "9b442276-d26f-4b49-9016-629d9cc2bfb5",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "Core housing differs from sites-and-services in that core housing provides:",
+      "text": "Before choosing a local shelter program, what should the Local Shelter Planning Manual make the planner check?",
       "options": [
         {
           "id": "a",
-          "text": "Land only; beneficiaries provide all infrastructure and building"
+          "text": "Housing need, upgrading need, affordability, land, infrastructure, resources, and local plan alignment."
         },
         {
           "id": "b",
-          "text": "High-rise apartment buildings with complete unit interiors"
+          "text": "Only facade color."
         },
         {
           "id": "c",
-          "text": "A pre-built basic shell that families then expand or improve"
+          "text": "Only a single national template without local data."
         },
         {
           "id": "d",
-          "text": "Individual plots with water/electricity but no structures"
+          "text": "Only the developer marketing name."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "That is sites-and-services (land + infrastructure).",
-        "b": "That is medium-rise housing (multi-story complete buildings).",
-        "c": "Core housing: government provides a basic 1–2-room shell with roof, walls, utilities connection. Families then expand (add rooms, upper floor, etc.). This is intermediate between bare land (sites-and-services) and turnkey housing (medium-rise).",
-        "d": "That is sites-and-services.",
-        "correct": "Core housing: government provides a basic 1–2-room shell with roof, walls, utilities connection. Families then expand (add rooms, upper floor, etc.). This is intermediate between bare land (sites-and-services) and turnkey housing (medium-rise).",
-        "takeaway": "Core housing = starter shell + family expansion. Sites-and-services = land + infrastructure only."
+        "a": "Correct. The manual requires local data gathering and validation before selecting programs.",
+        "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "correct": "The manual requires local data gathering and validation before selecting programs.",
+        "takeaway": "Apply the checked local raw-source condition before choosing the answer."
       },
       "explanation": null,
       "code_citation": "NHA Core Housing Program Guidelines",
@@ -307,30 +307,30 @@
       "model_id": "ALE-PLAN-003-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.371282+00:00",
       "content_hash": "sha256:b67806b797c5d69fbdd6469eb9ea528d107003cae89e53dcd6229af769402159"
     },
     {
       "question_id": "b72602ce-e685-4fd2-8a9e-1c73325c9fa4",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "Under RA 10884 (Balanced Housing Development Program), private subdivision developers are required to dedicate a percentage of project cost to socialized housing. What is this percentage?",
+      "text": "Under RA 10884 (Balanced Housing Development Program, 2016), private subdivision developers must dedicate a share of socialized housing. Which percentage applies to a subdivision project?",
       "options": [
         {
           "id": "a",
-          "text": "10–12%"
+          "text": "5% of total subdivision area or project cost"
         },
         {
           "id": "b",
-          "text": "15–20%"
+          "text": "15% of total subdivision area or project cost"
         },
         {
           "id": "c",
-          "text": "25–30%"
+          "text": "20% of total subdivision area or project cost"
         },
         {
           "id": "d",
-          "text": "30–40%"
+          "text": "30% of total subdivision area or project cost"
         }
       ],
       "correct_option_id": "b",
@@ -339,12 +339,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Insufficient; below the statutory requirement.",
-        "b": "RA 10884 updates RA 7279's balanced housing requirement to 15–20% of project cost. This percentage is the current standard tested on the ALE.",
-        "c": "Exceeds the requirement (though some projects may exceed).",
-        "d": "Exceeds the statutory requirement.",
-        "correct": "RA 10884 updates RA 7279's balanced housing requirement to 20% of total project area. This percentage is the current standard tested on the ALE.",
-        "takeaway": "RA 10884 balanced housing threshold: 15–20% of project cost dedicated to socialized housing."
+        "a": "Wrong. 5% applies to condominium projects under RA 10884, not subdivisions.",
+        "b": "Correct. RA 10884 Section 2(b) sets the subdivision socialized-housing allocation at 15% of total area or project cost at the developer's option.",
+        "c": "Wrong. 20% was the original RA 7279 (1992) figure; RA 10884 (2016) reduced it to 15% for subdivisions.",
+        "d": "Wrong. 30% is the PD 1216/PD 957 non-buildable open space requirement, not a balanced-housing figure.",
+        "correct": "RA 10884 (2016) amended RA 7279 Section 18: subdivision projects require at least 15% of total area or project cost (at developer option); condominium projects require at least 5%.",
+        "takeaway": "RA 10884 reduced RA 7279's 20% subdivision share to 15%. The figure is a fixed 15% (or 5% for condominiums), not a range."
       },
       "explanation": null,
       "code_citation": "RA 10884, Balanced Housing Development Program",
@@ -358,26 +358,26 @@
       "model_id": "ALE-PLAN-003-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.377330+00:00",
       "content_hash": "sha256:359b7a830b710973669fa306a760b3404c21d36792293a2c88f417eb95a2046d"
     },
     {
       "question_id": "6b5fef8d-e722-48d5-b59b-ac1703e93def",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "A developer constructs a 500-hectare residential subdivision for slea to middle-income buyers under PD 957. To comply with RA 10884, the developer must allocate:",
+      "text": "A developer constructs a 500-hectare residential subdivision for sale to middle-income buyers under PD 957. To comply with RA 10884 (Balanced Housing Development), the developer must allocate:",
       "options": [
         {
           "id": "a",
-          "text": "At least 30% of the total area as open space (parks, roads, facilities)"
+          "text": "At least 30% of the total area as non-buildable open space (parks, roads, facilities) under PD 1216"
         },
         {
           "id": "b",
-          "text": "15–20% of PROJECT COST to socialized housing or equivalent contribution"
+          "text": "At least 15% of the total subdivision area or project cost, at the developer's option, devoted to socialized housing or an equivalent compliance mode"
         },
         {
           "id": "c",
-          "text": "A minimum of 100 hectares as reserved for low-cost housing units"
+          "text": "A minimum of 100 hectares reserved for low-cost housing units"
         },
         {
           "id": "d",
@@ -390,12 +390,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "That is PD 957 Sec. 9 open space requirement (30% of gross area).",
-        "b": "RA 10884 requires 15–20% of PROJECT COST (not total area) dedicated to socialized housing. This may be on-site units, off-site units, bond to NHA, or joint venture with NHA.",
-        "c": "RA 10884 is a percentage of cost, not a fixed hectare amount.",
-        "d": "RA 10884 does not require 50% below-market sales.",
-        "correct": "RA 10884 requires 15–20% of PROJECT COST (not total area) dedicated to socialized housing. This may be on-site units, off-site units, bond to NHA, or joint venture with NHA.",
-        "takeaway": "RA 10884: 15–20% of PROJECT COST to balanced housing (in-site, off-site, bond, or JV options)."
+        "a": "Wrong. The 30% figure is the PD 1216/PD 957 non-buildable open space requirement for subdivisions of 1 hectare or more, not a balanced-housing allocation.",
+        "b": "Correct. RA 10884 (2016), Section 2(b) amending RA 7279 Section 18, requires subdivision developers to develop socialized housing equivalent to at least 15% of total subdivision area or project cost at the developer's option. Compliance modes include on-site units, off-site units, joint venture with NHA, or bond contribution.",
+        "c": "Wrong. RA 10884 does not set a fixed hectare reservation; it sets a percentage of area or cost.",
+        "d": "Wrong. RA 10884 does not require a 50% below-market-rate quota.",
+        "correct": "RA 10884 (2016) sets subdivision balanced housing at 15% of total area or project cost at the developer's option (down from RA 7279's original 20%). For condominiums, the figure is 5%.",
+        "takeaway": "RA 10884 reduced RA 7279's 20% subdivision share to a fixed 15% (or 5% for condominiums). The '15-20%' range found in older reviewers is incorrect."
       },
       "explanation": null,
       "code_citation": "RA 10884; PD 957; PD 1216",
@@ -409,44 +409,44 @@
       "model_id": "ALE-PLAN-003-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.376404+00:00",
       "content_hash": "sha256:afcc5aef2bd5a8ba02fc8289081ee3e014786ac7d0aa05c6c80ba4a4ca4622eb"
     },
     {
       "question_id": "0e1b937e-7924-471e-8dca-95c77defa57f",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "The PRIMARY advantage of the Community Mortgage Program (SHFC) in the context of housing production methods is that it:",
+      "text": "Which planning answer is safest when the facts show high relocation cost and strong existing livelihood ties?",
       "options": [
         {
           "id": "a",
-          "text": "Finances the lowest-cost housing through maximum government subsidy, which is not the primary focus of the program"
+          "text": "Evaluate on-site upgrading first if hazard and land constraints allow it."
         },
         {
           "id": "b",
-          "text": "Converts informal settlements into formal market subdivisions, which is a potential outcome but not the primary advantage"
+          "text": "Relocate immediately without checking services."
         },
         {
           "id": "c",
-          "text": "Provides turnkey housing units with complete interior finishing, which is not the main feature of the program"
+          "text": "Ignore affordability analysis."
         },
         {
           "id": "d",
-          "text": "Enables communities to upgrade settlements in place rather than be relocated"
+          "text": "Treat every settlement as medium cost housing."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "CMP financing is moderate cost, not necessarily the cheapest (though lower than market-rate).",
-        "b": "CMP preserves informal settlement character while formalizing tenure.",
-        "c": "CMP finances land acquisition, not construction of turnkey units.",
-        "d": "CMP's defining advantage: the community organization collectively mortgages land to acquire it legally. Families remain in place; in-situ upgrading proceeds with community continuity, social cohesion, and economic stability.",
-        "correct": "CMP's defining advantage: the community organization collectively mortgages land to acquire it legally. Families remain in place; in-situ upgrading proceeds with community continuity, social cohesion, and economic stability.",
-        "takeaway": "CMP strength: in-situ upgrading + community continuity + collective tenure security."
+        "a": "Correct. The checked sources support minimizing displacement and requiring planning data before choosing the method.",
+        "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "correct": "The checked sources support minimizing displacement and requiring planning data before choosing the method.",
+        "takeaway": "Apply the checked local raw-source condition before choosing the answer."
       },
       "explanation": "CMP financing is moderate cost, not necessarily the cheapest (though lower than market-rate). CMP preserves informal settlement character while formalizing tenure. CMP finances land acquisition, not construction of turnkey units. CMP's defining advantage: the community organization collectively mortgages land to acquire it legally. Families remain in place; in-situ upgrading proceeds with community continuity, social cohesion, and economic stability. CMP's defining advantage: the community organization collectively mortgages land to acquire it legally. Families remain in place; in-situ upgrading proceeds with community continuity, social cohesion, and economic stability. CMP strength: in-situ upgrading + community continuity + collective tenure security.",
       "code_citation": "SHFC-CMP Guidelines; John F.C. Turner Principle",
@@ -460,44 +460,44 @@
       "model_id": "ALE-PLAN-003-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-05-06T15:42:45.439584+00:00",
+      "updated_at": "2026-07-20T01:13:27.378048+00:00",
       "content_hash": "sha256:8194d47d246a8f8ce218fe7cf9b61b14f2453ed9c7d34cd337df2423d5be92db"
     },
     {
       "question_id": "378edc0a-3fb9-4585-98d9-822e37ffa107",
       "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
       "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "Medium-rise housing projects developed by NHA are characterized primarily by:",
+      "text": "What is the role of affordability analysis in the checked local shelter planning source?",
       "options": [
         {
           "id": "a",
-          "text": "Single-family houses with individual plots for owner expansion, allowing for personalized development over time"
+          "text": "It helps match housing need to feasible program options and payment capacity."
         },
         {
           "id": "b",
-          "text": "Multi-story apartment buildings (typically 4–5 stories) providing immediate occupancy in urban areas"
+          "text": "It replaces all site safety checks."
         },
         {
           "id": "c",
-          "text": "Horizontal subdivision with commercial mixed-use development, integrating residential and commercial spaces"
+          "text": "It is only decorative."
         },
         {
           "id": "d",
-          "text": "Bare lots with family-built structures over extended periods, reflecting a self-help approach to housing"
+          "text": "It applies only to open market luxury housing."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "That describes sites-and-services or core housing (single units).",
-        "b": "Medium-rise: NHA constructs 4–5-story buildings in high-density urban zones. Units are smaller (25–35 sq.m.) but immediately occupiable and efficient land-use for cities like Metro Manila.",
-        "c": "Market subdivisions may have mixed-use; NHA medium-rise is residential-focused.",
-        "d": "That is sites-and-services (minimal development).",
-        "correct": "Medium-rise: NHA constructs 4–5-story buildings in high-density urban zones. Units are smaller (25–35 sq.m.) but immediately occupiable and efficient land-use for cities like Metro Manila.",
-        "takeaway": "Medium-rise = NHA-built multi-story; immediate occupancy; high density; urban focus."
+        "a": "Correct. The manual uses affordability and paying-capacity analysis to guide program selection.",
+        "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+        "correct": "The manual uses affordability and paying-capacity analysis to guide program selection.",
+        "takeaway": "Apply the checked local raw-source condition before choosing the answer."
       },
       "explanation": null,
       "code_citation": "NHA Medium-Rise Housing Programs",
@@ -511,7 +511,7 @@
       "model_id": "ALE-PLAN-003-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.374665+00:00",
       "content_hash": "sha256:e5eaf943cc874cf52890e06812e71080d69f53c11136c18d7c8758fbd6934bae"
     }
   ]

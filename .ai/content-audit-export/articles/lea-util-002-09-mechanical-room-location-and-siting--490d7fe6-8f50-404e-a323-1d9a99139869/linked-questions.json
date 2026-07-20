@@ -8,39 +8,33 @@
       "question_id": "c42da156-dfc9-498a-b14a-8ad4df9570de",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A mechanical room layout shows a chiller, secondary pump skid, and cooling tower condenser water piping. The project structural engineer confirms equipment support columns are at building perimeter, clear of the planned maintenance corridor. What is the primary design constraint when specifying the 900 mm service access clearance requirement?",
+      "text": "What does the checked Salvan source support for an elevator machine room or penthouse?",
       "options": [
         {
           "id": "a",
-          "text": "Clearance must be uniform on all four sides of every equipment unit to satisfy code requirements for maintenance access"
+          "text": "It needs access, ventilation, and room for repair and inspection, and is not used as storage."
         },
         {
           "id": "b",
-          "text": "Clearance is only required on the operational side (control panels, pump discharge); opposite sides may be constrained if removal path remains unobstructed"
+          "text": "It is primarily a storage area."
         },
         {
           "id": "c",
-          "text": "Clearance is measured from wall centerline, not edge, per PD 1058 Section 7.2.1 for mechanical room layout standards"
+          "text": "It can be sealed without access."
         },
         {
           "id": "d",
-          "text": "Clearance must extend 1.5 m minimum in the direction of equipment removal to accommodate dismantling during future replacement"
+          "text": "It only needs decorative treatment."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Code does not mandate uniform clearance; operational sides require 900 mm, but constraints on non-operational sides are acceptable if access is preserved.",
-        "c": "Clearance is measured from the equipment surface to the wall or obstruction, not wall centerline; Section 7.2.1 is explicit about practical service access.",
-        "d": "Equipment removal path is a separate requirement from operational maintenance clearance; the 900 mm applies to routine service, not major disassembly.",
-        "correct": "PD 1096 and equipment manufacturer requirements (PD 1058 does not govern mechanical clearances) on operational sides (where pumps, control panels, discharge flanges, and isolation valves are located). Opposite sides may be closer if they do not prevent maintenance access. However, manufacturer specifications (Trane, Daikin, Carrier) often mandate 1.2–1.5 m on multiple sides and override code minima.",
-        "takeaway": "Operational-side service access (900 mm) enables routine maintenance; manufacturer specifications often demand greater clearances and override code minimums."
-      },
+      "rationale": "Salvan states that a machine room or penthouse should provide access, ventilation, and room for repair and inspection, and should not be used for storage.",
       "explanation": null,
-      "code_citation": "PD 1058 (Plumbing Code), Section 7.2.1; equipment manufacturer data sheets (Trane, Daikin, Carrier)",
+      "code_citation": "PD 1096 (National Building Code) / RA 9514 (Fire Code)), Section 7.2.1; equipment manufacturer data sheets (Trane, Daikin, Carrier)",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-002-09-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.050030+00:00",
       "content_hash": "sha256:d81da3cd68903fc2fbf5bb4228946902301da0b7c6efc435255edd89e8af8d1c"
     },
     {
       "question_id": "0181170f-da24-4a0f-ac1e-22841f9dfc55",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A mechanical room floor slab design for a 250-tonne chiller installation must accommodate both static loading (chiller + water volume = 750 kPa) and dynamic loading (pump unbalance, compressor cycling). Per ISO 10816-3, dynamic load factor is 1.5–2× static load. The structural engineer designs a 250 mm thick reinforced concrete slab. Is this adequate without local reinforcement or column support?",
+      "text": "When a mechanical room includes electrical equipment, what source family controls working-space issues?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, 250 mm concrete at 40 MPa strength provides 4,000 kPa bearing capacity, exceeding combined static + dynamic load of 1,500 kPa maximum"
+          "text": "The Philippine Electrical Code."
         },
         {
           "id": "b",
-          "text": "No, 250 mm slab can support ~2,500 kPa bearing capacity, insufficient for dynamic loading scenario; local thickening to 300–400 mm or steel column support is required"
+          "text": "A kitchen hood table."
         },
         {
           "id": "c",
-          "text": "Yes, if vibration isolation springs are used; they reduce dynamic loads by 50%, making standard 250 mm slab adequate"
+          "text": "A landscaping schedule."
         },
         {
           "id": "d",
-          "text": "No, but the issue is resolved by distributing chiller load across multiple equipment feet rather than concentrated loading on point supports"
+          "text": "A paint specification."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "4,000 kPa capacity figure is optimistic; typical concrete bearing under localized equipment load is 2,000–2,500 kPa depending on compressive strength and slab thickness.",
-        "c": "Vibration isolation does not reduce static + dynamic loading transmitted to the floor slab; it isolates vibration frequency content. Structural load is independent of isolation strategy.",
-        "d": "Multi-point load distribution helps but does not address the fundamental inadequacy of 250 mm slab thickness under concentrated loads; local thickening is still required.",
-        "correct": "A 250 mm concrete slab provides ~2,500 kPa bearing capacity under typical design assumptions. Combined loading: Static 750 kPa + Dynamic (2× static) = 750 + 1,500 = 2,250 kPa maximum, which approaches or exceeds slab capacity. Article PD 1096, Section 4.2 requires structural engineer verification for heavy equipment; local slab thickening to 300–400 mm or steel column supports beneath equipment centerlines are standard reinforcement strategies.",
-        "takeaway": "Heavy mechanical equipment (250+ tonnes) requires structural verification for static + dynamic loading; standard slabs often need local thickening or column support."
-      },
+      "rationale": "The PEC source family governs access, working space, headroom, illumination, and dedicated electrical space around electrical equipment.",
       "explanation": null,
       "code_citation": "ISO 10816-3; PD 1096, Section 4.2 (equipment load verification); structural design guidelines",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-002-09-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.046275+00:00",
       "content_hash": "sha256:984d1e6da40cc248c52b75d7ed268171445b53e5d6849cc986cc073812d76cb6"
     },
     {
       "question_id": "a5d06320-87a0-4971-897a-635ce72d7697",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "During mechanical room ventilation design, a mechanical engineer sizes intake louvers using ASHRAE 62.1-PH criteria. A 400 kW chiller plant calculates 60 m³/s required outdoor air. The engineer specifies louvres with 2.5 m/s face velocity instead of the standard 2 m/s. How does this affect the required louvre effective area?",
+      "text": "What control concept does the DOE mechanical ventilation section support?",
       "options": [
         {
           "id": "a",
-          "text": "Effective area increases to 30 m² because higher velocity requires proportionally more inlet area"
+          "text": "Mechanical ventilation equipment should have accessible controls or means of volume reduction or shutoff when not required."
         },
         {
           "id": "b",
-          "text": "Effective area decreases to 24 m² (60 ÷ 2.5) because higher velocity allows smaller physical louvre size"
+          "text": "Ventilation equipment should never be controlled."
         },
         {
           "id": "c",
-          "text": "Effective area remains 30 m² (60 ÷ 2 standard velocity) regardless of face velocity selection"
+          "text": "Only natural ventilation can be used."
         },
         {
           "id": "d",
-          "text": "Effective area calculation must also account for louver blade angle, which affects open-area ratio independent of face velocity"
+          "text": "Fans must run at full volume at all times."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Higher velocity reduces required area, not increases. The relationship is inverse.",
-        "c": "Effective area depends directly on velocity selection; changing velocity without recalculating area leads to inadequate intake capacity.",
-        "d": "While louver blade angle and open-area ratio (typically 60%) affect manufacturer sizing, the fundamental calculation is Flow ÷ Face velocity. Higher velocity enables smaller louvre, but both factors matter in final equipment selection.",
-        "correct": "Required outdoor air = 400 kW × 0.15 m³/s/kW = 60 m³/s. Effective area = Flow ÷ Face velocity. At 2 m/s: 60 ÷ 2 = 30 m² effective. At 2.5 m/s: 60 ÷ 2.5 = 24 m² effective. Higher velocity reduces physical louvre size, lowering cost but increasing static pressure drop and fan energy. ASHRAE 62.1-PH recommends 2 m/s as optimal balance.",
-        "takeaway": "Mechanical room intake louvre area = Required outdoor air ÷ Face velocity; higher velocity reduces area but increases pressure drop and fan load."
-      },
+      "rationale": "The DOE guidelines require mechanical ventilation systems to have accessible manual or automatic controls or means of volume reduction or shutoff when ventilation is not required.",
       "explanation": null,
       "code_citation": "ASHRAE 62.1-PH (Philippine adaptation); mechanical room ventilation design guidelines",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-002-09-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.039933+00:00",
       "content_hash": "sha256:7f7b4567bc3396a39d385e80452acef8bda23d3799ef65ace26c59968f4ed69e"
     },
     {
       "question_id": "e8262241-960b-4241-86ea-42e0fbcd18d4",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A BIM coordination meeting at 60% DD reveals that electrical cable tray routing blocks the planned service access corridor to a chiller room. The MEP engineer proposes relocating the cable tray above ceiling level (+0.5 m), which would affect structural coordination with HVAC ductwork hanging from the same grid. Per Philippine Building Code BIM clash detection protocol, what is the correct resolution path?",
+      "text": "Which planning lens is source-safe for locating mechanical and electrical service rooms?",
       "options": [
         {
           "id": "a",
-          "text": "Approve the cable tray relocation immediately to resolve the clash without further coordination delays, assuming no further conflicts arise"
+          "text": "Maintenance, ventilation, expandability, centrality, access limitation, noise, and adequate space."
         },
         {
           "id": "b",
-          "text": "Revert to 30% DD design and restart coordination from that phase to ensure comprehensive resolution, even if it delays the project timeline significantly"
+          "text": "Only exterior color."
         },
         {
           "id": "c",
-          "text": "Conduct interdisciplinary coordination meeting (structural, MEP, electrical, architectural); resolve via 3D model updates; document resolution before 90% DD to prevent field changes"
+          "text": "Only furniture layout."
         },
         {
           "id": "d",
-          "text": "Proceed to 90% DD without resolution, flagging the clash for field contractor management during construction, which may lead to increased costs and delays"
+          "text": "Only signage style."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Single-trade decision without interdisciplinary input risks creating new clashes (e.g., cable tray relocation interferes with HVAC grid support).",
-        "b": "Reverting to 30% DD is wasteful; 60% DD clash resolution is more efficient and maintains design schedule.",
-        "d": "Deferring to construction exposes the project to safety risk, schedule delay, and cost overruns. BIM coordination is mandatory.",
-        "correct": "Philippine Building Code coordination mandates BIM clash detection and resolution at 30%, 60%, and 90% DD stages for projects >20,000 m² GFA. A 60% DD clash discovered in cable tray must trigger interdisciplinary meeting with electrical, structural, MEP, and architectural leads to evaluate: cable tray relocation, ductwork rerouting, or access corridor modification. All parties update 3D models and document resolution before proceeding to 90% DD. This prevents costly field changes.",
-        "takeaway": "BIM clash detection at 60% DD requires interdisciplinary meeting and 3D model resolution before 90% DD to prevent field modifications."
-      },
+      "rationale": "Salvan lists practical space-allocation factors including maintenance, ventilation, expandability, centrality, access limitation, noise, and adequate space.",
       "explanation": null,
       "code_citation": "Philippine Building Code adoption guidelines; BIM coordination standards; clash detection best practices",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-002-09-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.038862+00:00",
       "content_hash": "sha256:33c75fcaa6a0f37af9a9fe242169a7e1e5a11815c713b38a414ff1df13191352"
     },
     {
       "question_id": "bc62ede2-4a85-432b-8bdf-786ba843d81e",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "Under RA 9514 (Fire Safety Code), what is the minimum fire-resistant rating for doors serving mechanical rooms containing flammable fluids or combustible coolant circulation?",
+      "text": "For smoke-proof enclosure mechanical ventilation, what RA 9514 trigger is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "30-minute fire-rated door with push-bar hardware, suitable for areas with lower fire risk and less stringent safety requirements."
+          "text": "Activation by a smoke detector at an approved location, with other listed initiations where provided."
         },
         {
           "id": "b",
-          "text": "1-hour fire-rated door with keyed locks, providing a balance between security and fire protection for mechanical spaces."
+          "text": "Activation only by a light switch."
         },
         {
           "id": "c",
-          "text": "1-hour fire-rated door, self-closing with panic hardware (RA 9514 requires self-closing fire doors matching wall rating)"
+          "text": "No activation requirement."
         },
         {
           "id": "d",
-          "text": "2-hour fire-rated door with electromagnetic lock release, offering enhanced protection for high-risk environments with stringent safety needs."
+          "text": "Activation only by a tenant request."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "30-minute rating is inadequate for mechanical rooms; prior PD 1096 allowed lesser ratings only for small rooms <50 m², now superseded.",
-        "b": "1-hour rating is insufficient per RA 9514; keyed locks delay egress and violate panic-bar requirements.",
-        "d": "2-hour rating exceeds mechanical room door requirements (walls are 2-hour, but doors are 1.5-hour minimum per RA 9514 Article 5).",
-        "correct": "RA 9514 mandates 1.5-hour minimum fire-rated doors with self-closing mechanisms, push-bar (panic) hardware, and automatic closure upon smoke detection. Frame must be steel, set in grouted CMU, with edge gasketing. This ensures compartmentalization during fire events.",
-        "takeaway": "Mechanical room fire-rated doors must achieve 1.5-hour minimum with automatic closure hardware to ensure life safety during fire emergencies."
-      },
+      "rationale": "RA 9514 requires smoke-proof enclosure mechanical ventilation and pressurization systems to be initiated by a smoke detector and, where provided, by other listed signals.",
       "explanation": null,
       "code_citation": "RA 9514 (Fire Safety Code of the Philippines), Article 5, Section 5.3; Philippine Fire Code provisions",
       "bloom_level": "remember",
@@ -251,44 +221,38 @@
       "model_id": "ALE-UTIL-002-09-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.035155+00:00",
       "content_hash": "sha256:c9ce5b1a709d281b837c5e59b2d0f86a0339a96803c5daa70b68f921e8de32f5"
     },
     {
       "question_id": "491cd33d-0890-4ad3-b337-82aa8538a6a1",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A mechanical room equipment removal path analysis shows a rooftop chiller (8 m × 4 m × 2.5 m height) must reach the rooftop via a loading dock, elevator car, and stairwell route spanning 25 m of corridor. The structural engineer confirms the path is clear of permanent obstructions but notes a temporary 0.8 m × 0.8 m electrical disconnect switch box is mounted in the lower stairwell. Per PD 1096, Section 3.1.1, what action is permissible?",
+      "text": "What does the checked Salvan source support for an elevator machine room or penthouse?",
       "options": [
         {
           "id": "a",
-          "text": "Proceed with installation; the temporary obstruction is minor and can be worked around during equipment passage, provided safety protocols are followed"
+          "text": "It needs access, ventilation, and room for repair and inspection, and is not used as storage."
         },
         {
           "id": "b",
-          "text": "Relocate the electrical disconnect switch permanently to another location to clear the path, ensuring compliance with electrical safety standards"
+          "text": "It is primarily a storage area."
         },
         {
           "id": "c",
-          "text": "Temporary removal of the disconnect switch, coordinated with MEP contractor and ALE inspector under formal temporary variance notice, is permissible during staged installation"
+          "text": "It can be sealed without access."
         },
         {
           "id": "d",
-          "text": "Abandon the rooftop equipment plan and select a smaller chiller sized to fit around the obstruction without path modification, considering cost implications"
+          "text": "It only needs decorative treatment."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Equipment passage risks damage to the disconnect switch, creating electrical hazards and voiding warranty. 'Working around' is not an acceptable solution.",
-        "b": "Permanent relocation imposes unnecessary cost and may violate electrical code spacing requirements. Temporary removal is permissible under variance.",
-        "d": "Downsizing equipment based on logistics constraints undermines system design without evaluating cooling load adequacy. Variance is the appropriate solution.",
-        "correct": "PD 1096, Section 3.1.1 permits temporary removal of non-structural elements (handrails, guardrails, electrical access boxes) during staged equipment installation under formal temporary variance notice coordinated with MEP contractor and ALE inspector. This is standard practice for large equipment delivery. The variance must document the temporary action and restoration timeline.",
-        "takeaway": "Equipment removal paths may require temporary variance permits for removal of non-structural obstruction; formal coordination between MEP, ALE, and contractor is mandatory."
-      },
+      "rationale": "Salvan states that a machine room or penthouse should provide access, ventilation, and room for repair and inspection, and should not be used for storage.",
       "explanation": null,
       "code_citation": "PD 1096 (General Building Code), Section 3.1.1; equipment installation logistics standards",
       "bloom_level": "understand",
@@ -301,30 +265,30 @@
       "model_id": "ALE-UTIL-002-09-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.042365+00:00",
       "content_hash": "sha256:9c7592a0a6c5facb21daa705c0cce63a3d5595c9f1db4745c26cffbccbb29e8d"
     },
     {
       "question_id": "4f2ccf0d-c9e1-4b7a-b3fb-879b720748ff",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A 500 kW chiller room condensate drainage system includes a floor drain, condensate tank, and gravity return to municipal storm drain. During commissioning, system flushing generates fine debris that clogs the floor drain. The facility manager removes the drain grate to clear blockage but notices that no vent line connects the condensate tank to atmosphere. Per PD 1058, Section 4.4, why is this vent line critical for proper drainage operation?",
+      "text": "When a mechanical room includes electrical equipment, what source family controls working-space issues?",
       "options": [
         {
           "id": "a",
-          "text": "Vent lines equalize atmospheric pressure in the tank and prevent siphoning of condensate back into the mechanical room during drain flow reversal"
+          "text": "The Philippine Electrical Code."
         },
         {
           "id": "b",
-          "text": "Vent lines allow humid air to escape from the tank, reducing corrosion of internal tank surfaces during off-season storage"
+          "text": "A kitchen hood table."
         },
         {
           "id": "c",
-          "text": "Vent lines provide secondary drainage capacity if the main floor drain becomes partially blocked, ensuring continuous operation"
+          "text": "A landscaping schedule."
         },
         {
           "id": "d",
-          "text": "Vent lines are optional if the tank includes a mechanical float valve for level control, which can manage overflow"
+          "text": "A paint specification."
         }
       ],
       "correct_option_id": "a",
@@ -332,15 +296,9 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "While ventilation aids corrosion prevention, the primary code mandate is siphoning prevention, not surface protection.",
-        "c": "Vent lines do not provide drainage capacity; they maintain atmospheric pressure equilibrium. Redundant floor drains address blockage risk.",
-        "d": "Mechanical float valves control tank level but do not prevent siphoning. Atmospheric vent is required regardless of level-control hardware.",
-        "correct": "PD 1058, Section 4.4 mandates vent lines on condensate tanks. Without atmospheric venting, gravity drain flow creates a suction condition, causing a siphon trap. When draining stops, this suction pulls sewer gas back into the mechanical room, creating odor and contamination hazard. A vent >300 mm above floor slab elevation breaks the siphon and maintains atmospheric pressure equilibrium during drainage cycles.",
-        "takeaway": "Condensate tank vent lines (>300 mm above floor slab) are mandatory per PD 1058 to prevent siphoning and sewer gas backflow."
-      },
+      "rationale": "The PEC source family governs access, working space, headroom, illumination, and dedicated electrical space around electrical equipment.",
       "explanation": null,
-      "code_citation": "PD 1058 (Plumbing Code), Section 4.4; drainage system design principles",
+      "code_citation": "PD 1096 (National Building Code) / RA 9514 (Fire Code)), Section 4.4; drainage system design principles",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,46 +309,40 @@
       "model_id": "ALE-UTIL-002-09-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.037797+00:00",
       "content_hash": "sha256:62afa7c8fd4d73c6e74f289bd3f988a0dad2f0b8538fe9395f0967b36d733db9"
     },
     {
       "question_id": "c7363660-2955-4c60-8a1c-e5e4751978f9",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A 1,000 kW chiller room in a Manila basement design includes both wet-pipe sprinkler heads and condensate floor drains sloped to a sump pit. During monsoon flooding, the sump pump fails. The designer argues that the sprinkler system will manage any water accumulation. Does this reasoning satisfy RA 9514 automatic suppression requirements for mechanical rooms with flammable fluids?",
+      "text": "What control concept does the DOE mechanical ventilation section support?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because wet-pipe sprinkler systems are designed to manage both fire suppression and incidental water accumulation, which is a misunderstanding of their primary function."
+          "text": "Mechanical ventilation equipment should have accessible controls or means of volume reduction or shutoff when not required."
         },
         {
           "id": "b",
-          "text": "No, sprinkler systems are fire suppression only; flood management via sump pump redundancy (dual pumps per PD 1058 drainage requirements; redundancy per local flood risk practice) is a separate safety requirement"
+          "text": "Ventilation equipment should never be controlled."
         },
         {
           "id": "c",
-          "text": "Yes, if condensate drainage slope is 1:40 minimum and the floor drain capacity exceeds anticipated monsoon inflow, which is not a substitute for proper suppression systems."
+          "text": "Only natural ventilation can be used."
         },
         {
           "id": "d",
-          "text": "No, but automatic suppression systems in mechanical rooms are optional if the room is sealed and ventilation is adequate, which misrepresents the mandatory nature of such systems."
+          "text": "Fans must run at full volume at all times."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wet-pipe sprinklers serve only fire suppression; they are not designed to handle monsoon flooding or sump backup.",
-        "c": "Proper slope and drain capacity are essential, but do not address sump pump failure during critical monsoon events. Redundancy (dual pumps) is required per PD 1058.",
-        "d": "Automatic suppression is mandatory per RA 9514 Article 5 for mechanical rooms storing flammable oil or combustible coolant; no exemption for sealed rooms or adequate ventilation.",
-        "correct": "RA 9514 mandates automatic suppression (wet-pipe or pre-action systems) for fire safety in flammable-fluid rooms. This is distinct from flood management. PD 1058, Section 4.4 requires dual-pump sump systems in flood-risk basements near Manila coastal or low-lying areas. Sprinklers suppress fire; sump pumps prevent flooding. Conflating the two violates both fire and flood-protection codes.",
-        "takeaway": "Automatic suppression (fire safety) and sump pump redundancy (flood safety) are separate systems serving distinct hazards in basement mechanical rooms."
-      },
+      "rationale": "The DOE guidelines require mechanical ventilation systems to have accessible manual or automatic controls or means of volume reduction or shutoff when ventilation is not required.",
       "explanation": null,
-      "code_citation": "RA 9514 (Fire Safety Code), Article 5; PD 1058 (Plumbing Code), Section 4.4; Category 3 equipment reliability standards",
+      "code_citation": "RA 9514 (Fire Safety Code), Article 5; PD 1096 (National Building Code) / RA 9514 (Fire Code)), Section 4.4; Category 3 equipment reliability standards",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-002-09-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.047201+00:00",
       "content_hash": "sha256:69eda98d10ba2f64f4c0a5d2246d5617676df960ec9a390bc5aa1d5517b12c5d"
     },
     {
       "question_id": "52f68b7e-2c13-43af-9fab-b0bf435fc3c4",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A rooftop mechanical room houses a 500 kW chiller with 8 spring isolators rated 150 kN each. Per equipment manufacturer standards and ASHRAE guidelines (PD 1096 does not specify vibration isolation deflection), what is the acceptable isolation deflection range for effective vibration decoupling?",
+      "text": "Which planning lens is source-safe for locating mechanical and electrical service rooms?",
       "options": [
         {
           "id": "a",
-          "text": "5–15 mm deflection to minimize equipment sway and ensure stability"
+          "text": "Maintenance, ventilation, expandability, centrality, access limitation, noise, and adequate space."
         },
         {
           "id": "b",
-          "text": "15–25 mm deflection for optimal spring stiffness and vibration control"
+          "text": "Only exterior color."
         },
         {
           "id": "c",
-          "text": "25–75 mm deflection to achieve 3–15 Hz natural frequency range"
+          "text": "Only furniture layout."
         },
         {
           "id": "d",
-          "text": "100–150 mm deflection to maximize absorption of transient loads and prevent structural damage"
+          "text": "Only signage style."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5–15 mm is insufficient deflection; this range does not achieve the required natural frequency separation from equipment operating frequencies.",
-        "b": "15–25 mm is suboptimal; the lower bound approaches the 25 mm minimum threshold but provides inadequate isolation margin.",
-        "d": "100–150 mm exceeds code; excessive deflection risks equipment tipping and makes spring selection impractical.",
-        "correct": "PD 1096, Section 8.4.2 specifies 25–75 mm isolation deflection. This range achieves 3–15 Hz natural frequency (vs. pump/compressor operating at 20+ Hz), ensuring effective isolation. Undersized deflection (<25 mm) reduces isolation; oversized (>75 mm) risks resonance during startup.",
-        "takeaway": "Isolation deflection of 25–75 mm (per PD 1096) ensures vibration isolation natural frequency is well-separated from equipment operating frequencies."
-      },
+      "rationale": "Salvan lists practical space-allocation factors including maintenance, ventilation, expandability, centrality, access limitation, noise, and adequate space.",
       "explanation": null,
       "code_citation": "PD 1096 (General Building Code), Section 8.4.2; ISO 10816-3 (vibration severity standards)",
       "bloom_level": "remember",
@@ -451,46 +397,40 @@
       "model_id": "ALE-UTIL-002-09-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.26772+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.045329+00:00",
       "content_hash": "sha256:9a919fbe1191c571fe7805ed8fb4dda2294cc2544e5b1db3e0b38a75615f16df"
     },
     {
       "question_id": "ed8a610d-2249-4535-9f9d-a44b5a2c8bb1",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "During LEA site inspection of a basement mechanical room, the inspector notes: (1) floor drain grate is missing, (2) condensate tank vent line terminates at ceiling height (2.5 m above floor slab) with no atmospheric opening, (3) flexible hose clamp connections between pump discharge and piping are missing, and (4) acoustic enclosure around a backup diesel generator is open on one side. Which deficiency directly violates PD 1058 or RA 9514 mandatory requirements and requires immediate correction before occupancy permit?",
+      "text": "For smoke-proof enclosure mechanical ventilation, what RA 9514 trigger is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Deficiency 1 (missing drain grate); visual inspection hazard and tripping risk for maintenance personnel, though not a direct code violation"
+          "text": "Activation by a smoke detector at an approved location, with other listed initiations where provided."
         },
         {
           "id": "b",
-          "text": "Deficiency 2 (condensate tank vent line inside building); siphoning risk causes sewer gas backflow and odor problems, violating PD 1058, Section 4.4 atmospheric venting requirement"
+          "text": "Activation only by a light switch."
         },
         {
           "id": "c",
-          "text": "Deficiency 3 (missing flexible hose clamps); vibration transmission increases noise emission, violating EMRO noise code limits, though not directly related to PD 1058 or RA 9514"
+          "text": "No activation requirement."
         },
         {
           "id": "d",
-          "text": "Deficiency 4 (incomplete acoustic enclosure); partial isolation is acceptable if equipment noise levels are monitored post-commissioning, though it may not meet all noise control standards"
+          "text": "Activation only by a tenant request."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Missing drain grate is a safety nuisance but not a direct code violation; it should be restored but does not prevent occupancy permit.",
-        "c": "Missing flexible couplings increase vibration transmission but can be corrected post-occupancy if noise monitoring confirms code compliance; not a mandatory pre-occupancy item.",
-        "d": "Partial acoustic enclosure does not meet full isolation design but may be acceptable if commissioning noise levels satisfy EMRO code; retrofit enclosure is possible.",
-        "correct": "Condensate tank vent must terminate >300 mm above floor slab and open to atmosphere per PD 1058, Section 4.4. A vent terminating at ceiling height inside the building creates a sealed condition, causing siphoning and sewer gas backflow during drainage cycles. This is a mandatory code deficiency requiring immediate correction. Siphoning creates suction traps and health hazard through odor and microbial growth.",
-        "takeaway": "Condensate tank atmospheric venting >300 mm above floor slab is a mandatory PD 1058 requirement; sealed or interior venting creates siphoning hazard and requires immediate field correction."
-      },
+      "rationale": "RA 9514 requires smoke-proof enclosure mechanical ventilation and pressurization systems to be initiated by a smoke detector and, where provided, by other listed signals.",
       "explanation": null,
-      "code_citation": "PD 1058 (Plumbing Code), Section 4.4; RA 9514 (Fire Safety Code); EMRO-DENR Noise Code",
+      "code_citation": "PD 1096 (National Building Code) / RA 9514 (Fire Code)), Section 4.4; RA 9514 (Fire Safety Code); EMRO-DENR Noise Code",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,30 +441,30 @@
       "model_id": "ALE-UTIL-002-09-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.539651+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.040985+00:00",
       "content_hash": "sha256:f9506b858cc7dd4612bd606c82e5fb1c322a6d68d0ec11f0bf1555c4db7793c5"
     },
     {
       "question_id": "f77c86b7-1476-428b-99c5-f5bbbf0e3dad",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A mechanical room design includes a 50-tonne inertia base beneath a 200 kg unbalanced rotor pump, achieving 600 kg total mass (3× isolation multiplier per ISO 10816-3). The engineer specifies 8 spring isolators, each rated 150 kN stiffness. During commissioning, vibration monitoring reveals natural frequency is 18 Hz (instead of the 7 Hz design target). What is the likely cause and remedial action?",
+      "text": "What does the checked Salvan source support for an elevator machine room or penthouse?",
       "options": [
         {
           "id": "a",
-          "text": "Spring stiffness rating was misinterpreted; the actual springs installed are stiffer than specified, yielding higher natural frequency; replacement with lower-stiffness springs (5 Hz–7 Hz range) is required"
+          "text": "It needs access, ventilation, and room for repair and inspection, and is not used as storage."
         },
         {
           "id": "b",
-          "text": "Equipment mass is incorrect; total combined mass is less than 600 kg, making natural frequency higher than designed; structural reinforcement of the inertia base is unnecessary if monitoring shows acceptable vibration amplitude"
+          "text": "It is primarily a storage area."
         },
         {
           "id": "c",
-          "text": "Higher natural frequency (18 Hz) is beneficial for isolation because it exceeds pump operating frequency (20+ Hz); the design successfully isolates vibration at all frequencies above 10 Hz"
+          "text": "It can be sealed without access."
         },
         {
           "id": "d",
-          "text": "Spring deflection is insufficient; measured deflection is <25 mm instead of the design 50 mm, violating PD 1096, Section 8.4.2; spring or base mass adjustment is required"
+          "text": "It only needs decorative treatment."
         }
       ],
       "correct_option_id": "a",
@@ -532,13 +472,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Mass error alone would reduce frequency, not increase it. Also, vibration amplitude acceptance does not override PD 1096 frequency-range requirement.",
-        "c": "18 Hz natural frequency with 20+ Hz pump operating frequency provides only 2 Hz margin, insufficient for safe isolation. Isolation effectiveness is poor when natural and operating frequencies are close. Target 3–15 Hz range ensures >3× separation from 20 Hz operating frequency.",
-        "d": "If observed frequency is 18 Hz and calculated target is 7 Hz, deflection under static load is less, not more. The issue is spring stiffness, not deflection.",
-        "correct": "Natural frequency f = √(k/m) Hz. For 600 kg mass and 8 springs @ 150 kN each: f = √(1,200,000 N/m ÷ 600 kg) ≈ 45 rad/s ≈ 7.2 Hz target. Observed 18 Hz indicates actual spring stiffness is ~3× design (f = √(3,600,000 ÷ 600) ≈ 18 Hz). This likely stems from: (1) springs misidentified at procurement, (2) incorrect installation (springs preloaded beyond specification), or (3) temperature-dependent stiffness change. Remediation: replace springs with correct stiffness rating or reduce total mass via lighter inertia base design.",
-        "takeaway": "Natural frequency discrepancies between design and commissioning indicate spring specification or installation errors; field investigation and spring replacement are required."
-      },
+      "rationale": "Salvan states that a machine room or penthouse should provide access, ventilation, and room for repair and inspection, and should not be used for storage.",
       "explanation": null,
       "code_citation": "ISO 10816-3; PD 1096, Section 8.4.2; vibration isolation commissioning standards",
       "bloom_level": "apply",
@@ -551,46 +485,40 @@
       "model_id": "ALE-UTIL-002-09-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.539651+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.048274+00:00",
       "content_hash": "sha256:7c29140f04ec6e5a29bd38e7ccf806a4b75e8ce8dce3019861bcc938456dd295"
     },
     {
       "question_id": "2437d019-381b-4f73-a157-5a340dcccbc5",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "An LEA project review reveals three design proposals for a 45,000 m² high-rise with four-pipe fan coil HVAC system: (A) Basement mechanical room (1,800 m², 4% GFA) with rooftop cooling tower and gravity condensate return; (B) Rooftop mechanical room (2,000 m², 4.4% GFA) with all chiller, pump, and tower equipment consolidated; (C) Split design with basement chiller/pump room (1,200 m²) and rooftop tower/AHU room (1,000 m²). Using PD 1096 coordination guidelines and Philippine climate constraints, which design carries the lowest lifecycle risk?",
+      "text": "When a mechanical room includes electrical equipment, what source family controls working-space issues?",
       "options": [
         {
           "id": "a",
-          "text": "Option A minimizes vertical rise frictional losses and simplifies maintenance access via basement lobbies, but basement flood risk during monsoon and sump pump redundancy cost are concerns"
+          "text": "The Philippine Electrical Code."
         },
         {
           "id": "b",
-          "text": "Option B consolidates rooftop installation but requires chiller condensate pump-up from tower drain (energy cost and backpressure management); zero basement flood risk is the primary benefit"
+          "text": "A kitchen hood table."
         },
         {
           "id": "c",
-          "text": "Option C achieves gravity chiller/tower drain through separate rooftop tower room, allows basement chiller/pump proximity to vertical rises, and maintains independent floor drain systems per equipment type—lowest lifecycle risk per PD 1096 coordination principles"
+          "text": "A landscaping schedule."
         },
         {
           "id": "d",
-          "text": "All three options are equivalent if floor drain, sump, and fire-stop designs meet code minimums; architectural preference determines selection"
+          "text": "A paint specification."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Option A concentrates risk in basement; monsoon flood protection requires dual sump pumps, increasing maintenance burden and lifecycle cost.",
-        "b": "Option B eliminates basement flood risk but saddles rooftop with equipment weight (structural design cost) and chiller pump-up energy; condensate pump operation adds operating cost over building lifecycle.",
-        "d": "Code minimums are necessary but insufficient; design strategy (location, drainage strategy, isolation approach) determines lifecycle performance and maintenance reliability.",
-        "correct": "Option C (split basement/rooftop) balances MEP infrastructure: (1) Basement chillers + pumps minimize vertical rise runs and simplify maintenance. (2) Rooftop towers enable gravity condensate/blowdown drainage without basement sump backup. (3) Independent floor drain systems per equipment location simplify troubleshooting and maintenance. (4) Vibration isolation burden is distributed (basement equipment uses heavier inertia bases; rooftop equipment uses lighter isolation). (5) Flood risk is managed at equipment level rather than requiring building-wide dual sump redundancy. (6) Fire-stop and acoustic separation can be tailored to each location. PD 1096 Sections 4, 7, and 8 emphasize coordination; split design aligns with these principles.",
-        "takeaway": "Split mechanical room design (basement + rooftop) optimizes gravity drainage, minimizes basement flood risk, and distributes vibration isolation burden across disciplines."
-      },
+      "rationale": "The PEC source family governs access, working space, headroom, illumination, and dedicated electrical space around electrical equipment.",
       "explanation": null,
-      "code_citation": "PD 1096 (General Building Code), Sections 4, 7, 8; PD 1058 (Plumbing Code), Section 4.4; Philippine climate and tropical MEP design practice",
+      "code_citation": "PD 1096 (General Building Code), Sections 4, 7, 8; PD 1096 (National Building Code) / RA 9514 (Fire Code)), Section 4.4; Philippine climate and tropical MEP design practice",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-002-09-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.539651+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.044374+00:00",
       "content_hash": "sha256:58885a238fe3959a23ada5a34935c614e7fddb2f3d9b270647d8832314bc1b7c"
     },
     {
       "question_id": "3d6e21f3-38a8-494f-876d-23b71352c9c6",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A mechanical room fire-stop design includes 15 pipe penetrations through a 150 mm reinforced concrete 2-hour fire-rated wall. The fire-stop specification calls for Hilti CFS-SE sealant rated 2-hour per ASTM E814, with certified installation and stamped third-party inspection at each penetration. The contractor proposes using a single fire-stop injection system serving all 15 penetrations to reduce cost. Does this approach satisfy RA 9514 compliance requirements?",
+      "text": "What control concept does the DOE mechanical ventilation section support?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, as long as the total cross-sectional sealant area across all penetrations meets code minimum, individual certification per penetration is unnecessary to control cost"
+          "text": "Mechanical ventilation equipment should have accessible controls or means of volume reduction or shutoff when not required."
         },
         {
           "id": "b",
-          "text": "No, each penetration requires individual fire-stop sealant installation and separate stamped certification per ASTM E814; grouped injection violates RA 9514 inspection and certification protocols"
+          "text": "Ventilation equipment should never be controlled."
         },
         {
           "id": "c",
-          "text": "Yes, if the contractor provides a composite stamped certificate from the sealant manufacturer covering all 15 penetrations as a single assembly, ensuring compliance with fire safety standards."
+          "text": "Only natural ventilation can be used."
         },
         {
           "id": "d",
-          "text": "No, but fire-stop is only required for piping >25 mm diameter; smaller penetrations may use standard caulk under grouped application, which may not meet all safety requirements."
+          "text": "Fans must run at full volume at all times."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Total sealant area calculation is irrelevant; code mandates individual penetration compliance. Cost reduction cannot override safety certification.",
-        "c": "Composite certification does not substitute for individual penetration documentation. RA 9514 and ASTM E814 are explicit: each penetration must be certified independently.",
-        "d": "Fire-stop is required for all penetrations regardless of diameter; no diameter exemption exists in RA 9514. Standard caulk is never acceptable for fire-rated wall penetrations.",
-        "correct": "RA 9514, Section 5.1 and ASTM E814 require fire-stop sealant at EACH penetration with stamped certification documenting installation quality and sealant integrity. Grouped injection undermines inspection and certification rigor; each penetration must be individually documented. Hilti CFS-SE or equivalent must be installed per manufacturer protocol and independently inspected. Visual inspection alone is insufficient; stamped certification from sealant supplier and third-party inspector is binding.",
-        "takeaway": "Fire-stop penetration sealing requires individual installation and separate stamped certification per ASTM E814; cost-cutting through grouped application violates RA 9514."
-      },
+      "rationale": "The DOE guidelines require mechanical ventilation systems to have accessible manual or automatic controls or means of volume reduction or shutoff when ventilation is not required.",
       "explanation": null,
       "code_citation": "RA 9514 (Fire Safety Code), Article 5, Section 5.1; ASTM E814 (fire-stop testing standard)",
       "bloom_level": "apply",
@@ -651,46 +573,40 @@
       "model_id": "ALE-UTIL-002-09-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.539651+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.036703+00:00",
       "content_hash": "sha256:10ea52b686fb3d5f213beb00617d94c24d8faad0bea5029f15d0cbad9e44237c"
     },
     {
       "question_id": "a58e3590-4a4a-4d96-984d-4276dfba6d52",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A 50,000 m² commercial tower's mechanical room allocation is 2,400 m² (4.8% GFA) split between basement (1,600 m²) and rooftop (800 m²). The architect proposes consolidating all equipment into basement to optimize rooftop for solar panel installation. This would increase basement mechanical space to 2,400 m² within the existing basement footprint. What critical infrastructure constraints must the MEP engineer evaluate before approving this consolidation?",
+      "text": "Which planning lens is source-safe for locating mechanical and electrical service rooms?",
       "options": [
         {
           "id": "a",
-          "text": "Basement consolidation is permissible if floor drain and sump capacity are doubled to handle increased condensate and monsoon flood risk, ensuring compliance with local building codes"
+          "text": "Maintenance, ventilation, expandability, centrality, access limitation, noise, and adequate space."
         },
         {
           "id": "b",
-          "text": "Gravity drainage of condensate and condensate tanks require separate evaluation; rooftop cooling towers cannot drain to basement without boosting systems; vibration transmission from basement equipment to occupied levels above requires isolation and structural verification; PD 1058 basement flood-risk requirements (dual sump pumps) become critical"
+          "text": "Only exterior color."
         },
         {
           "id": "c",
-          "text": "Basement consolidation is advantageous because it eliminates rooftop equipment weight, reducing structural design requirements and wind-load evaluation per NSCP 2015, but may require additional ventilation"
+          "text": "Only furniture layout."
         },
         {
           "id": "d",
-          "text": "The consolidation requires only architectural floor plan modification; MEP infrastructure remains unchanged if total mechanical room area (2,400 m²) is preserved, which is a common misconception"
+          "text": "Only signage style."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Increased drainage alone is insufficient; condensate pump-up from basement requires energy and maintenance; gravity drainage from rooftop is preferred.",
-        "c": "Basement consolidation increases structural load on lower floors and increases vibration transmission risk; it does not simplify structural design.",
-        "d": "Consolidation fundamentally changes MEP infrastructure requirements; architectural area preservation does not address mechanical, drainage, or vibration constraints.",
-        "correct": "Consolidation from basement + rooftop to basement-only introduces multiple constraints: (1) Condenser water from 500 kW+ cooling towers cannot gravity-drain from basement; chiller plant requires booster pumps and backpressure management, increasing operating cost. (2) Basement flood risk per PD 1058 Section 4.4 mandates dual sump pump redundancy and increased drainage capacity; monsoon risk is higher with consolidated load. (3) Vibration from chillers, pumps, compressors in basement transmits through floor slabs to occupied office spaces above, requiring enhanced isolation, structural reinforcement, and acoustic enclosure per EMRO noise code. (4) Rooftop cooling towers require gravity return, making complete basement consolidation impractical for chiller-plus-tower systems.",
-        "takeaway": "Mechanical room consolidation requires comprehensive MEP infrastructure analysis: drainage, flood risk, vibration isolation, acoustic performance, and equipment accessibility."
-      },
+      "rationale": "Salvan lists practical space-allocation factors including maintenance, ventilation, expandability, centrality, access limitation, noise, and adequate space.",
       "explanation": null,
-      "code_citation": "PD 1058 (Plumbing Code), Section 4.4; EMRO-DENR Noise Code; structural vibration standards",
+      "code_citation": "PD 1096 (National Building Code) / RA 9514 (Fire Code)), Section 4.4; EMRO-DENR Noise Code; structural vibration standards",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-002-09-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.539651+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.043388+00:00",
       "content_hash": "sha256:ef567ac3b95e1a840b098a58fdfeba7bcd7ca2c75be31c3f3ba29d19421fb8bb"
     },
     {
       "question_id": "524a705a-77e3-4a66-8245-2ad6159167e3",
       "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
       "topic_id": "fbc3217a-0dde-40c1-8e73-6e6decd6997d",
-      "text": "A 60% DD BIM review of a 50,000 m² tower reveals a clash: electrical cable tray (0.6 m wide × 0.4 m deep) runs across the planned mechanical room service access corridor. The MEP engineer calculates that removing the cable tray from this path requires rerouting 200 m of electrical conduit, estimated 4-week schedule delay and 2 million PHP additional cost. The electrical engineer argues the tray placement is optimized for equipment distribution loads and cannot be moved. A project director asks whether to proceed with overlapping designs and manage the conflict during construction. Which response best reflects Philippine Building Code coordination protocol and LEA professional judgment?",
+      "text": "For smoke-proof enclosure mechanical ventilation, what RA 9514 trigger is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Proceed to 90% DD with the design conflict documented as a RFI (Request for Information) to be resolved during construction; field contractors frequently manage such clashes without design revision"
+          "text": "Activation by a smoke detector at an approved location, with other listed initiations where provided."
         },
         {
           "id": "b",
-          "text": "Approve the electrical tray placement in the mechanical service path; mechanical room clearance is preferred but not mandatory if electrical distribution is critical to the project schedule"
+          "text": "Activation only by a light switch."
         },
         {
           "id": "c",
-          "text": "Halt design progression at 60% DD and require MEP + electrical + structural + architectural coordination meeting to resolve the clash. Document resolution in updated 3D BIM models. Cost and schedule impact are irrelevant to code compliance. Option: reduce electrical tray depth via cable bundling, reroute conduit via architectural ceiling space, or relocate the mechanical service corridor 0.8 m laterally. Proceed to 90% DD only after resolution is modeled and approved by all trades."
+          "text": "No activation requirement."
         },
         {
           "id": "d",
-          "text": "Conduct a feasibility study during 90% DD to determine whether the cable tray can be suspended or bridged above the mechanical service path; if not feasible, proceed to construction and address via field engineering change orders"
+          "text": "Activation only by a tenant request."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RFI during construction is a change-order mechanism, not a design method. Code-driven clashes (access, fire rating, structural loading) cannot be resolved via RFI; they require design coordination.",
-        "b": "Mechanical room service clearance is mandatory per PD 1096 Section 3.7, not preferred. No trade interest (electrical load distribution) overrides code compliance.",
-        "d": "Deferring resolution to 90% DD or construction violates BIM coordination protocol and exposes the project to cost/schedule overruns and safety risk during installation.",
-        "correct": "Philippine Building Code mandatory BIM coordination at 30%, 60%, and 90% DD stages requires clash resolution through interdisciplinary design changes BEFORE construction documents are finalized. Deferring a clash to construction violates code and creates liability for ALE, MEP engineer, and general contractor. Cost and schedule pressure do not excuse code-driven coordination. The mechanical service access requirement (PD 1096 general coordination; UAP SPP professional practice) is non-negotiable. Solutions: (1) cable tray depth reduction via conduit optimization, (2) tray suspension above service path, (3) mechanical corridor lateral relocation (if floor layout permits), or (4) temporary tray removal (under variance notice). All options must be modeled and approved at 60% DD before proceeding to final documents.",
-        "takeaway": "BIM clash resolution at 60% DD is mandatory per Philippine Building Code; design coordination and 3D modeling must precede final documents and construction."
-      },
+      "rationale": "RA 9514 requires smoke-proof enclosure mechanical ventilation and pressurization systems to be initiated by a smoke detector and, where provided, by other listed signals.",
       "explanation": null,
       "code_citation": "Philippine Building Code adoption guidelines; BIM coordination standards; PD 1096, Section 3.7; LEA professional responsibility standards",
       "bloom_level": "analyze",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-002-09-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:00.539651+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.049164+00:00",
       "content_hash": "sha256:a5a3aa8cddfaf7943b9d6805da663628247ff70513c9afdd35c0f2be82a68e62"
     }
   ]

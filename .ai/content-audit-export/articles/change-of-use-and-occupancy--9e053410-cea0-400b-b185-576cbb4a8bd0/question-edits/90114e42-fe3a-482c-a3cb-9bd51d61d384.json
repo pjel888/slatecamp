@@ -2,9 +2,9 @@
   "question_id": "90114e42-fe3a-482c-a3cb-9bd51d61d384",
   "baseline_hash": "sha256:7542540037b70769ca8ab9229bc2d8af6ffca147482a584930524e56e22bcfd2",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What does Section 309 say about occupancy before a Certificate of Occupancy?",
+    "text": "A mixed-occupancy building has ground-floor commercial with upper-floor residential. A change of use affecting only the ground floor is proposed. Under PD 1096, which provision MUST also be considered alongside Sec. 702?",
     "options": [
       {
         "id": "a",
-        "text": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy."
+        "text": "Sec. 701 (Occupancy Classification) only, without considering the interaction between existing and proposed occupancies"
       },
       {
         "id": "b",
-        "text": "A"
+        "text": "Sec. 703 (Mixed Occupancy) — to determine how the new occupancy combination is classified and separated"
       },
       {
         "id": "c",
-        "text": " "
+        "text": "Sec. 708 (Group A Dwellings) — because any change triggers residential requirements regardless of floor affected"
       },
       {
         "id": "d",
-        "text": "b"
+        "text": "Sec. 704 (Location on Property) — because the building footprint may change due to the new ground floor use"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy. This is supported by A building may be occupied once the FLAR table is printed..",
-    "explanation": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy. The cited local source family controls this item: A building may be occupied once the FLAR table is printed..",
-    "code_citation": "A building may be occupied once the paint is complete."
+    "correct_option_id": "b",
+    "rationale": "Mixed-occupancy buildings are among the most complex compliance scenarios. The interaction between Sec. 702 (change of use) and Sec. 703 (mixed occupancy classification) can create layered requirements. Option A (Sec. 701 only) is incomplete — Sec. 703 specifically governs mixed-occupancy buildings. Options C and D introduce irrelevant sections.",
+    "explanation": null,
+    "code_citation": null
   }
 }

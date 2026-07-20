@@ -66,6 +66,8 @@ const eslintConfig = defineConfig([
     "flowbite/**",
     ".omx/**",
     ".ai/**",
+    // Generated test coverage output (not source).
+    "coverage/**",
   ]),
 ]);
 

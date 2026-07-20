@@ -1,0 +1,758 @@
+{
+  "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:7827e0d70f46e8dbc8917ff7f21af90892b17278dbbeb03d2b92aae00092202e",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "ee42877a-4fc5-41d1-938c-6c823f9df94b",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "According to IES standards, what illumination range applies to general retail spaces such as clothing and grocery stores?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200–300 lux"
+        },
+        {
+          "id": "b",
+          "text": "300–500 lux"
+        },
+        {
+          "id": "c",
+          "text": "500–750 lux"
+        },
+        {
+          "id": "d",
+          "text": "750–1,000 lux"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "200–300 lux is too low for effective retail display; this range approaches warehouse illumination requirements.",
+        "c": "500–750 lux is reserved for high-value retail (jewelry, electronics, cosmetics) where detailed color and gemstone assessment is critical.",
+        "d": "750–1,000 lux exceeds retail requirements; this range is used for specialized surgical or industrial precision tasks.",
+        "correct": "IES standards specify 300–500 lux for general retail (clothing, groceries), supporting color discrimination and merchandise visibility without excessive energy consumption.",
+        "takeaway": "General retail illumination (300–500 lux) is calibrated to merchandise type; jewelry and cosmetics demand higher levels (500–750 lux) for color accuracy."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Section: Commercial and Industrial",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:428ab2d68e706a119023c4906a6bca438287500bd0ad74a0f79bb6f01ba90ea8"
+    },
+    {
+      "question_id": "69766551-0f0c-4cd4-b59a-3b3bcefe596c",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "What is the primary purpose of specifying a uniformity ratio (UR) of 0.6 minimum in general occupied spaces per IES standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To ensure 60% of fixtures operate at rated capacity, optimizing energy efficiency and lighting performance"
+        },
+        {
+          "id": "b",
+          "text": "To guarantee average illumination across the space is at least 60% of peak illumination, providing consistent lighting conditions"
+        },
+        {
+          "id": "c",
+          "text": "To prevent dark zones by ensuring minimum illumination is at least 60% of average illumination"
+        },
+        {
+          "id": "d",
+          "text": "To limit energy consumption to 60% of the building's total lighting budget, promoting sustainable design practices"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fixture capacity and operating levels are independent of uniformity ratio; UR addresses spatial consistency, not individual fixture output.",
+        "b": "This inverts the definition; UR compares minimum to average, not average to peak. Peak illumination (brightest points) may far exceed average.",
+        "d": "Uniformity ratio is a spatial quality metric, not an energy budget allocation; energy consumption is managed through lighting power density (LPD) limits.",
+        "correct": "UR 0.6 means the darkest point must receive at least 60% of average illumination, preventing dark zones and reducing eye strain. This prevents excessive brightness variation across a space.",
+        "takeaway": "UR 0.6 (general) and 0.7 (task areas) ensure consistent illumination distribution, preventing dark zones that cause visual fatigue and safety hazards."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Section: Uniformity Ratio",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5598e9621a18832979792cc5f00622fefae25fb6a9f4dcaf1e902bbed62e5a6b"
+    },
+    {
+      "question_id": "2a420569-5a81-4878-b6ab-d7986e8f1f38",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "What is the minimum illumination level required for classroom spaces according to IES standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50-100 lux, which is suitable for corridors and not for classrooms"
+        },
+        {
+          "id": "b",
+          "text": "150 lux, typically used for storage areas and not adequate for learning environments"
+        },
+        {
+          "id": "c",
+          "text": "300-500 lux"
+        },
+        {
+          "id": "d",
+          "text": "500 lux, which is often used for detailed tasks but not necessary for general classroom activities"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "100 lux is insufficient for classroom tasks; this level applies to circulation and hospital wards.",
+        "b": "150 lux is the requirement for stairways, which is higher than circulation but inadequate for sustained classroom work.",
+        "d": "500 lux exceeds classroom requirements; this level applies to office task areas and laboratory spaces.",
+        "correct": "IES standards specify 300 lux minimum for classrooms to support reading printed materials, viewing instructional aids, and board visibility.",
+        "takeaway": "Classroom illumination (300 lux) balances document readability with energy efficiency, distinct from lower circulation levels and higher task-specific areas."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Section: Educational Facilities",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e5d87e026f00dca3ebcf5d543650b4fb5db7348402fb1439d83f5750cf739a5"
+    },
+    {
+      "question_id": "4e65f0c0-d2ff-4bac-897b-e739415182ac",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A designer is specifying lighting for a hospital ward (general patient area). What combination of illumination level and color temperature best meets IES and Philippine standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 lux, 6500K (cool)"
+        },
+        {
+          "id": "b",
+          "text": "100 lux, 3000K (warm)"
+        },
+        {
+          "id": "c",
+          "text": "500 lux, 5000K (cool)"
+        },
+        {
+          "id": "d",
+          "text": "750 lux, 4000K (neutral)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "100 lux is correct, but 6500K (cool) is inappropriate for patient areas; cool light is reserved for industrial, healthcare precision tasks, and operating rooms, not patient recovery areas.",
+        "c": "500 lux is the requirement for laboratory and precision healthcare tasks, not general wards; 5000K cool temperature is also inappropriate for patient comfort.",
+        "d": "750 lux and 4000K exceed ward requirements; these specifications apply to office and retail spaces, not healthcare patient areas.",
+        "correct": "Hospital wards require 100 lux per IES to prevent glare while allowing staff assessment of patient condition, paired with 3000K warm light to create a calming, therapeutic environment.",
+        "takeaway": "Hospital wards balance low illumination (100 lux) for comfort with warm color temperature (3000K) for therapeutic effect, distinct from operating rooms (10,000–100,000 lux, cool light)."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Healthcare Facilities and Color Temperature",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.226895+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:19f186365e77581359cf48cf604d4365aab2631670b61223142b190d50ae8302"
+    },
+    {
+      "question_id": "d9b5f4e3-065c-453f-8016-0d52c846bd43",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A hospital operating room renovation must balance maximum surgical illumination (100,000 lux in the surgical field) with energy efficiency under ASHRAE 90.1. What design strategy best achieves this balance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Install uniform 100,000 lux illumination throughout the entire OR to ensure visibility everywhere, regardless of specific task requirements"
+        },
+        {
+          "id": "b",
+          "text": "Specify high-intensity task lighting (100,000 lux) in the surgical field only; general OR areas can operate at lower illumination levels with cool color temperature (5000–6500K)"
+        },
+        {
+          "id": "c",
+          "text": "Use 50,000 lux average throughout to reduce energy while maintaining surgical visibility, balancing light distribution with energy savings"
+        },
+        {
+          "id": "d",
+          "text": "Distribute 100,000 lux equally across 10 operating rooms to comply with hospital LPD limits, ensuring consistent lighting across all surgical environments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uniform 100,000 lux throughout the OR is wasteful; excessive illumination in areas without surgical procedures causes glare, discomfort, and energy waste.",
+        "c": "50,000 lux average is inadequate for precision microsurgery (upper limit of 100,000 lux); compromising surgical field illumination risks patient safety and surgical error.",
+        "d": "LPD limits apply by space type and building area, not by distributing a single illumination level across multiple rooms. Each OR must independently meet surgical requirements.",
+        "correct": "Surgical fields require extreme illumination (10,000–100,000 lux), but general OR areas outside the surgical field can operate at lower levels. Targeted high-intensity task lighting in the surgical zone with appropriately dimmed general area lighting achieves safety without excessive energy consumption. Cool color temperature supports surgical alertness and precision.",
+        "takeaway": "Healthcare task lighting design uses zoned illumination—high-intensity task lighting in surgical fields, lower general area illumination elsewhere—to balance safety, precision, and energy efficiency."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Healthcare Facilities and Practical Application: Designing for Compliance",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2b3e310f8138dd7152fb287c8ebabfa1a5642cf3117d923667930a6d60329d6b"
+    },
+    {
+      "question_id": "e18cbb8c-819b-47b1-8e05-582ec52fa320",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A Philippine university lab renovation must meet 500 lux illumination and PD 1096 Rule VIII requirements while optimizing energy costs. Which design approach best achieves these goals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Install fluorescent fixtures (70 lm/W) to maximize light output per watt, ensuring compliance with basic illumination standards"
+        },
+        {
+          "id": "b",
+          "text": "Specify LED fixtures (>90 lm/W) with occupancy sensors and dimming controls to meet 500 lux while staying within LPD limits and reducing energy waste during periods of low occupancy"
+        },
+        {
+          "id": "c",
+          "text": "Install dedicated task lighting at each workstation, raising illumination to 750 lux to ensure safety without continuous full-space illumination, which may increase energy consumption"
+        },
+        {
+          "id": "d",
+          "text": "Use a combination of daylighting and LED to achieve 500 lux baseline, accepting higher LPD to ensure code compliance and enhance natural light integration"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fluorescent fixtures (70 lm/W) are less efficient than LED baseline assumptions in ASHRAE 90.1 and Philippine standards; they would exceed LPD limits while trying to meet 500 lux.",
+        "c": "Zoned task lighting may reduce ambient consumption but risks non-compliance if it fails to provide adequate general space illumination. Lab work often requires general visibility plus task-specific intensity.",
+        "d": "Accepting higher LPD defeats the goal of optimizing energy costs; daylighting is beneficial but cannot reliably provide 500 lux year-round in Philippine climate variability.",
+        "correct": "LED fixtures (>90 lm/W per ASHRAE 90.1 baseline) are the baseline assumption for LPD calculations. Pairing high-efficiency LEDs with occupancy sensors and dimming controls allows the space to maintain 500 lux when occupied and reduce consumption during periods of low or no occupancy, meeting both illumination and energy efficiency goals under PD 1096.",
+        "takeaway": "Energy-efficient compliance combines LED technology (the baseline for LPD calculations) with responsive controls (occupancy sensing, dimming) to maintain required illumination while minimizing unnecessary consumption."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Lighting Power Density Compliance and Practical Application: Designing for Compliance",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e28504ead7ad53fff1024840e55cfc383e5a2c07f63d55f1c2f7d8b5770ea248"
+    },
+    {
+      "question_id": "417114a6-689d-4bb0-8ade-b78440f4fdab",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "What color temperature range does ASHRAE 90.1 recommend for hospitality, residential, and reception areas ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3000K (warm white)"
+        },
+        {
+          "id": "b",
+          "text": "4000K (neutral white)"
+        },
+        {
+          "id": "c",
+          "text": "5000K (cool white)"
+        },
+        {
+          "id": "d",
+          "text": "6500K (daylight)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "4000K neutral is designated for general office, retail, and education—spaces requiring balanced visibility without warm bias.",
+        "c": "5000K cool is reserved for industrial work, healthcare, and precision task areas where alertness and visual acuity are priorities.",
+        "d": "6500K daylight is used in specific applications requiring true daylight simulation but is not standard in the color temperature selection framework.",
+        "correct": "3000K warm white is specified for hospitality, residential, and reception areas per IES design guidance. Warm light creates a welcoming, relaxed atmosphere appropriate for these occupancy types.",
+        "takeaway": "Color temperature selection is occupancy-specific: 3000K (hospitality/residential), 4000K (office/retail), 5000–6500K (industrial/healthcare), each chosen to support behavioral and task needs."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Section: Color Temperature",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:055e5c59c8ebaa55b973ab8ce654b933fda940dcdc2c1790c4e68db1ee52c4e1"
+    },
+    {
+      "question_id": "b761cd1c-3adb-4190-a5c9-71ef272c55b8",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A retail store's lighting design specifies 600 lux with CRI 85 for cosmetics display, but the designer receives feedback that customers report difficulty distinguishing subtle color differences in foundation shades. What is the most likely cause, and what adjustment should the designer make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Illumination is too low; increase to 750 lux to improve color visibility, ensuring better customer satisfaction"
+        },
+        {
+          "id": "b",
+          "text": "CRI is insufficient; increase to CRI 90 to improve color rendering accuracy, as CRI 85 is below IES retail requirements"
+        },
+        {
+          "id": "c",
+          "text": "Color temperature should be warmer (3000K); cool light (5000K) is causing perception errors, affecting sales"
+        },
+        {
+          "id": "d",
+          "text": "Uniformity ratio is below 0.6; dark zones in the display are preventing color assessment, leading to customer complaints"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "600 lux is adequate for cosmetics (within the 500–750 lux range); the illumination level is not the primary limitation for color discrimination.",
+        "c": "Color temperature selection (3000K vs 5000K) affects visual ambiance and alertness, not the fundamental accuracy of color rendering per CRI definition.",
+        "d": "While uniformity is important for preventing dark zones, customer feedback specifically mentions difficulty with subtle color differences, not visibility variability, suggesting a CRI shortfall.",
+        "correct": "IES standards require CRI 90 or higher for retail spaces where color accuracy is critical (jewelry, cosmetics, electronics). CRI 85 fails to render subtle color differences accurately; increasing CRI to 90+ (while maintaining 600 lux illumination) will resolve the issue without modifying the established lighting layout.",
+        "takeaway": "CRI (Color Rendering Index) is the primary metric for color accuracy in retail; CRI 90+ is mandatory for jewelry and cosmetics display. Illumination level and color temperature affect visual perception but not color discrimination precision."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Commercial and Industrial and Lighting Quality Metrics (Color Rendering Index)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1a51a80349659c738eabcc2593e44067093a2686effe045433bee6dc6db26fb0"
+    },
+    {
+      "question_id": "6bd7a10c-c65a-4b59-85d7-798f9a529d40",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "According to IES standards, what is the minimum illumination requirement for covered parking structures, and why is this level appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20–30 lux to support basic wayfinding, which is sufficient for minimal navigation needs"
+        },
+        {
+          "id": "b",
+          "text": "50–75 lux to support vehicle navigation and personal safety"
+        },
+        {
+          "id": "c",
+          "text": "100 lux to match corridor standards, ensuring consistency in lighting levels across different areas"
+        },
+        {
+          "id": "d",
+          "text": "150 lux to ensure clear vehicle and pedestrian visibility, providing maximum safety and comfort"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "20–30 lux applies to outdoor surface parking, which has reduced visual complexity due to open-air settings per PD 1096 parking guidelines.",
+        "c": "100 lux matches corridor standards and is excessive for parking; corridors require 100 lux because they are continuous circulation paths requiring sustained visibility.",
+        "d": "150 lux applies to stairways, which demand higher illumination than parking due to fall risk during vertical navigation.",
+        "correct": "Covered parking requires 50–75 lux per IES standards to support vehicle navigation and personal safety. This reflects moderate visual complexity in enclosed structures, higher than outdoor parking (20–30 lux) but lower than circulation areas.",
+        "takeaway": "Parking illumination (50–75 lux covered; 20–30 lux outdoor) is calibrated to visual complexity; open-air parking requires less light than enclosed structures due to reduced navigation demands."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Section: Parking Areas",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d30f4a504174cc6467d0b2d2a40a771499461e57522c5fd949a67c877f5e499f"
+    },
+    {
+      "question_id": "e80b2b3f-4431-4bca-abc3-f76f309bcd74",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A Philippine pharmaceutical manufacturing facility requires precision inspection of medications under magnification. Based on IES and Philippine Energy Efficiency Standards, which specifications should the designer select?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 lux, CRI 80, 4000K, LED >90 lm/W"
+        },
+        {
+          "id": "b",
+          "text": "500–750 lux, CRI 90, 5000K, LED >90 lm/W"
+        },
+        {
+          "id": "c",
+          "text": "750–1,000 lux, CRI 80, 3000K, LED >90 lm/W"
+        },
+        {
+          "id": "d",
+          "text": "200–300 lux, CRI 90, 6500K, LED >90 lm/W"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "300 lux is insufficient for precision magnified inspection; CRI 80 lacks the color accuracy required for pharmaceutical QA.",
+        "c": "750–1,000 lux is excessive; 3000K warm light is inappropriate for precision industrial tasks; CRI 80 is below pharmaceutical industry standards.",
+        "d": "200–300 lux is far too low for magnified inspection; 6500K is excessively cool even for industrial tasks.",
+        "correct": "Precision industrial inspection requires 500–750 lux (industrial task range), CRI 90 for healthcare-grade color accuracy, 5000K cool light to enhance alertness and visual acuity, and LED >90 lm/W per Philippine Energy Efficiency Standards to comply with LPD limits.",
+        "takeaway": "Industrial precision tasks (magnified inspection) demand the upper illumination range (500–750 lux), high CRI (90), cool color temperature (5000K), and efficient LED technology to meet both quality and energy standards."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Commercial and Industrial, Lighting Quality Metrics, and LPD Compliance",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:81a744bdb0b4f28129e93cec8e269c8c1640435aa2fede2b9b8001ef3b455836"
+    },
+    {
+      "question_id": "d31bcd1a-10d9-4c8a-9356-206ce3d52938",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A designer is preparing a specification for a pharmaceutical laboratory facility requiring precision microscopic analysis. According to IES and Philippine standards, which statement best describes the combined requirements for this space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "500 lux, CRI 80, 4000K, UR 0.5—standard office-level specifications adapted for laboratory work, which may not meet precision needs"
+        },
+        {
+          "id": "b",
+          "text": "500 lux per IES laboratory standard, CRI 90 per healthcare precision requirements, cool color temperature (5000–6500K) for alertness, UR 0.7 minimum per IES task-area requirement"
+        },
+        {
+          "id": "c",
+          "text": "300 lux minimum per classroom standard, CRI 90, 3000K for comfort during long analysis sessions, UR 0.6, which is less than ideal for laboratory precision"
+        },
+        {
+          "id": "d",
+          "text": "750 lux per advanced task requirement, CRI 80, 4000K neutral, UR 0.8 for industrial compliance, which may exceed typical laboratory needs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CRI 80 is insufficient for pharmaceutical microscopy; 4000K neutral is suboptimal for the alertness demands of precision analysis; UR 0.5 is below the 0.7 task-area requirement.",
+        "c": "300 lux is the classroom minimum, far below the 500 lux required for laboratory precision; 3000K warm light is inappropriate for extended analytical work.",
+        "d": "750 lux exceeds laboratory requirements; CRI 80 is insufficient for pharmaceutical analysis; 0.8 uniformity is acceptable but unnecessarily strict compared to the 0.7 minimum.",
+        "correct": "Pharmaceutical laboratory work requires 500 lux (IES precision task standard), CRI 90 minimum (healthcare quality standard for accurate color/analysis assessment), cool color temperature (5000–6500K) to enhance alertness during extended precision work, and UR 0.7 minimum (IES task-area uniformity requirement) to minimize eye strain.",
+        "takeaway": "Precision laboratory specifications combine task illumination (500 lux), healthcare-grade color rendering (CRI 90), cool color temperature for alertness (5000–6500K), and task-area uniformity (UR 0.7) to support accuracy and reduce fatigue."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Educational Facilities and Lighting Quality Metrics",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:94ea17c8e9340419513b4771ba9f02dc4cff7c2e9ceadac64045fbb7748b1f39"
+    },
+    {
+      "question_id": "0eab051f-e0fd-4331-93c8-b52115910828",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A design specification for an industrial warehouse requires calculation of uniformity ratio to verify design intent. The designer measures minimum illumination of 180 lux at the darkest corner and average illumination of 250 lux across the space. Does this design meet IES uniformity requirements, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; 180 lux exceeds the 50 lux minimum for warehouse spaces, which is a common misunderstanding"
+        },
+        {
+          "id": "b",
+          "text": "No; UR = 180 ÷ 250 = 0.72, which exceeds the IES warehouse requirement of 0.6, indicating non-compliance"
+        },
+        {
+          "id": "c",
+          "text": "Yes; UR = 180 ÷ 250 = 0.72, which meets or exceeds the IES general area minimum of 0.6"
+        },
+        {
+          "id": "d",
+          "text": "No; the average illumination of 250 lux is below the 300 lux warehouse minimum, which is incorrect"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 180 lux is adequate for warehouse function, this response misses the uniformity ratio calculation and its verification against standards.",
+        "b": "This correctly calculates UR = 0.72 but inverts the compliance judgment; higher UR (closer to 1.0) is better. 0.72 exceeds the 0.6 minimum, so it passes.",
+        "d": "250 lux falls within the 200–500 lux range for industrial work; warehouse task-specific illumination can be at the lower end if tasks are simple (general material handling).",
+        "correct": "UR = minimum ÷ average = 180 ÷ 250 = 0.72. IES requires UR 0.6 minimum for general areas. A UR of 0.72 exceeds this requirement, indicating acceptable light distribution without excessive dark zones. Warehouse spaces (200–500 lux general task) operate at this illumination level appropriately.",
+        "takeaway": "Uniformity ratio verification (UR = minimum ÷ average) confirms even light distribution across a space. UR > 0.6 (general) or > 0.7 (task areas) prevents dark zones and visual fatigue."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Uniformity Ratio and Commercial and Industrial",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:30bac00353148f6fcc3fb4fd67c81faab40b03da97925e02303520e96c3d9cad"
+    },
+    {
+      "question_id": "081eebe8-f507-4af7-b288-783db6a3fce5",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A design team is calculating lighting power density (LPD) for a 1,000 m² office space. If they select 50 W total installed lighting power, will this comply with ASHRAE 90.1 office general area limits of 8.6-10.8 W/m² (ASHRAE 90.1) assuming LED technology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; 50 W ÷ 1,000 m² = 0.05 W/m², well below the limit"
+        },
+        {
+          "id": "b",
+          "text": "No; 50 W ÷ 1,000 m² = 0.05 W/m², below the minimum required for visibility"
+        },
+        {
+          "id": "c",
+          "text": "Yes; the total wattage is appropriate for LED efficiency gains, which allows for reduced power usage while maintaining adequate lighting levels"
+        },
+        {
+          "id": "d",
+          "text": "No; the calculation should use total lumens, not watts, as lumens measure the actual light output and are more relevant for compliance with visibility standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Though mathematically below the limit, 0.05 W/m² is inadequate; designers must verify both LPD compliance AND sufficient illumination to meet lux targets.",
+        "c": "LED technology does not eliminate the relationship between wattage and luminous output; lumens-per-watt is already factored into LPD calculations.",
+        "d": "This inverts the compliance hierarchy; LPD is calculated from total installed power, not lumens. Designers calculate fixture output (lumens) first, then verify wattage stays within LPD limits.",
+        "correct": "50 W ÷ 1,000 m² = 0.05 W/m², far below the 9–12 W/m² compliance range. While below the limit, this specification cannot deliver 300–500 lux required for office general work, violating minimum illumination requirements. LPD compliance means staying within limits while meeting lux requirements.",
+        "takeaway": "LPD compliance requires both staying within W/m² limits AND meeting illumination targets; insufficient wattage violates illumination requirements even if LPD is low."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Recommended Illumination Levels by Space Type and Lighting Power Density Compliance",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a26af76c1f4d7ab45428a393011621c97f40be92773d5c3994e62549d4083c16"
+    },
+    {
+      "question_id": "c14dd7e9-243c-462d-a6ed-e2e10243e517",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A design team is reviewing a completed lighting installation in a Philippine office that underwent renovation. Measurements show 450 lux average, CRI 85, 4000K, UR 0.72, and 10.5 W/m² installed power. Based on IES standards and Philippine Energy Efficiency Standards, what concerns, if any, exist?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No concerns; all measurements are within or exceed minimum requirements, ensuring compliance with both IES and local standards"
+        },
+        {
+          "id": "b",
+          "text": "CRI 85 meets IES minimum of 80 for general spaces; CRI 90 recommended for color-critical tasks; CRI should be increased to 90 for compliance"
+        },
+        {
+          "id": "c",
+          "text": "UR 0.72 exceeds the IES general area requirement of 0.6, indicating over-specification; remove fixtures to reduce cost"
+        },
+        {
+          "id": "d",
+          "text": "Illumination of 450 lux is below the office task area requirement of 500–750 lux; upgrade fixtures to meet full office specification"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 450 lux, 4000K, and 10.5 W/m² are acceptable for office general areas (300–500 lux, 9–12 W/m²), CRI 85 requires verification against Philippine minimum requirements.",
+        "c": "UR 0.72 exceeds the minimum of 0.6; higher uniformity is beneficial and indicates excellent light distribution, not over-specification. Reducing uniformity would degrade quality.",
+        "d": "450 lux is appropriate for office general areas (300–500 lux); only office task areas (500–750 lux) require higher illumination. If the space function is general office only, 450 lux is compliant.",
+        "correct": "Philippine Energy Efficiency Standards require CRI 80 minimum for all occupied spaces per the article. However, best practice (article states 'minimum CRI 80') suggests CRI 85 is acceptable but suboptimal; the article specifies CRI 90 for healthcare and retail where color accuracy is critical. For general office, CRI 85 may be acceptable but verification against the exact Philippine standard is prudent. If space includes any detailed visual work requiring color accuracy, upgrade to CRI 90.",
+        "takeaway": "Lighting installation review requires verification against all standards: illumination level (matching space function), CRI (per occupancy and task), color temperature, uniformity ratio, and LPD. CRI is often the limiting factor in compliance."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Recommended Illumination Levels by Space Type, Lighting Quality Metrics, and Lighting Power Density Compliance",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.452134+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:834b7e299ba4f4b679770c77f8cc91306d6b7b3446e6a2c59b04f8a12910b60d"
+    },
+    {
+      "question_id": "c9c232c4-fe07-43e9-b0ee-e6e0e18cee50",
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "topic_id": "01effa1f-ca03-4e48-9596-561c764c038b",
+      "text": "A Philippine government office building (2,500 m² total) is designing lighting for three zones: general work areas (1,500 m²), task areas with detailed paperwork (800 m²), and corridors (200 m²). Using ASHRAE 90.1 LPD limits for LED technology, approximately what is the total installed lighting power budget (in watts) to comply with all three zone requirements while meeting illumination targets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15,000–18,000 W"
+        },
+        {
+          "id": "b",
+          "text": "22,500–30,000 W"
+        },
+        {
+          "id": "c",
+          "text": "35,000–42,000 W"
+        },
+        {
+          "id": "d",
+          "text": "45,000–60,000 W"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "15,000–18,000 W applies to general work areas alone and ignores task areas and corridors.",
+        "c": "35,000–42,000 W significantly exceeds typical office LPD budgets; this would suggest non-LED technology or excessive specification.",
+        "d": "45,000–60,000 W far exceeds ASHRAE 90.1 limits; this would represent serious non-compliance and excessive energy consumption.",
+        "correct": "General work (1,500 m² × 9–12 W/m²) = 13,500–18,000 W. Task areas (800 m² × higher LPD, estimated 12–14 W/m²) = 9,600–11,200 W. Corridors (200 m² × lower LPD, estimated 3–5 W/m²) = 600–1,000 W. Total: approximately 23,700–30,200 W, matching option B (22,500–30,000 W).",
+        "takeaway": "LPD budgeting across multi-zone spaces requires zone-specific calculation: general areas (9–12 W/m²), task areas (higher), circulation (lower). Total installed power must stay within the sum of zone-specific LPD limits while meeting illumination targets."
+      },
+      "explanation": null,
+      "code_citation": "Article: Illumination Levels by Occupancy and Task, Sections: Lighting Power Density Compliance and Practical Application: Designing for Compliance",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-05-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2df00610d40b34270c4938a7e1c27fe11d6c6666a9189c747c27189f973d03bf"
+    }
+  ]
+}

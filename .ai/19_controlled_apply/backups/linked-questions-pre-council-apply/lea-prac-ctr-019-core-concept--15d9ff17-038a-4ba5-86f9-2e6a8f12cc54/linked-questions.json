@@ -1,0 +1,508 @@
+{
+  "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:677f0076fec0fbe2a0b777ab7b3cca2bb73062d5764708f52e8d717d7d3cd718",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1aa545e5-78a5-4a02-a9fa-5dddeeb9461f",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "Which government authority is responsible for issuing the Certificate of Occupancy that authorizes the owner to legally occupy the building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Professional Regulation Commission (PRC) based on architect recommendation, which is not within PRC's jurisdiction"
+        },
+        {
+          "id": "b",
+          "text": "The Building Official of the local government unit responsible for the building location"
+        },
+        {
+          "id": "c",
+          "text": "The Department of Public Works and Highways (DPWH) for public buildings only, which does not cover private structures"
+        },
+        {
+          "id": "d",
+          "text": "The architect, based on the Certificate of Substantial Completion, which is not a legal authority for occupancy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. The DPWH supervises national infrastructure; local Building Officials issue occupancy permits regardless of public or private building status.",
+        "d": "Incorrect. The architect's Substantial Completion certificate is not an occupancy permit. Only the Building Official can issue the legal Certificate of Occupancy.",
+        "correct": "The Building Official at the local government unit level (city engineer's office, municipal government) is the authority responsible for inspecting the building for code compliance and issuing the Certificate of Occupancy. This is a government permit, not an architect document.",
+        "takeaway": "The local Building Official (city engineer or municipal government) is the sole authority responsible for issuing the Certificate of Occupancy—it is a government permit, not an architect document."
+      },
+      "explanation": null,
+      "code_citation": "UAP Document 208; PD 1096 Rule VII",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6ed956108e50874d4350c6d1198729b72537c554c5359823affd783951309ce"
+    },
+    {
+      "question_id": "b3a498f5-b299-4efa-90df-93ccc5ade750",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "The architect identifies a construction deviation during site inspection: the contractor has installed electrical conduit that deviates from the approved plans in a way that affects code compliance. What must the architect do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continue construction supervision and allow the deviation if it does not visibly affect the building appearance, provided that it is documented and approved by the client"
+        },
+        {
+          "id": "b",
+          "text": "Issue a notice to the contractor requiring corrective action to comply with approved plans and code requirements"
+        },
+        {
+          "id": "c",
+          "text": "Withhold certification of Substantial Completion until the deviation is corrected, ensuring that all aspects of the project meet the necessary standards"
+        },
+        {
+          "id": "d",
+          "text": "Report the deviation to the Building Official without requiring the contractor to correct it, assuming the deviation is minor and does not pose a safety risk"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. While withholding Substantial Completion is possible, the primary action is to require contractor correction through a notice.",
+        "d": "Incorrect. The architect must first direct the contractor to correct the deviation. Reporting to the Building Official is a secondary step if the contractor refuses correction.",
+        "correct": "When the architect identifies a construction deviation, particularly one affecting code compliance, the architect must issue a notice to the contractor requiring corrective action. The architect's supervisory duty includes enforcement of plan and code compliance. Option B is the standard architect response to plan/code deviations.",
+        "takeaway": "When the architect identifies code-noncompliant deviations, the architect must issue a notice to the contractor requiring corrective action to comply with approved plans and code."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cb3c97b34ff0480b2aa0b47d99123bc0b1066f8b37beea20285849db619c01cd"
+    },
+    {
+      "question_id": "3f77b2cd-3809-46af-a773-eb1a34733dc4",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "The architect's professional seal on the design drawings represents which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A guarantee that the building will be defect-free after construction, ensuring long-term durability and safety"
+        },
+        {
+          "id": "b",
+          "text": "An authentication that the design complies with applicable building codes and regulations, and that the architect has supervisory responsibility for construction compliance"
+        },
+        {
+          "id": "c",
+          "text": "Permission from the PRC to proceed with construction, indicating official approval and authorization"
+        },
+        {
+          "id": "d",
+          "text": "A certification that the contractor's work quality meets minimum standards, ensuring adherence to industry benchmarks"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. The PRC grants the architect's license to practice; the architect's seal on drawings is a professional authentication, not a PRC permission document.",
+        "d": "Incorrect. The seal represents design compliance, not contractor work quality. The architect supervises for quality, but the seal primarily represents design authentication.",
+        "correct": "The architect's professional seal on drawings is a legal authentication that the design complies with applicable laws and building codes, and creates the architect's professional responsibility for the design and for supervising construction compliance with the design. The seal represents the architect's professional judgment and accountability.",
+        "takeaway": "The architect's professional seal on drawings authenticates code compliance and creates the architect's responsibility for supervising construction to ensure design and code compliance."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9674bd1173ec3e35462a4e1df6eb8a02c3e7b6ada973e24755df536f622ae8c7"
+    },
+    {
+      "question_id": "0b9b0dce-2c69-4871-855f-521fbff96210",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "Before the Building Official issues the Certificate of Occupancy, a structural test report and a fire-rating compliance report are required. What is the architect's role in ensuring these documents are submitted to the Building Official?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect has no role—the contractor is solely responsible for obtaining and submitting test reports to the Building Official for occupancy clearance"
+        },
+        {
+          "id": "b",
+          "text": "The architect coordinates and ensures that required tests are scheduled, completed, and submitted to the Building Official as part of occupancy permit preparation"
+        },
+        {
+          "id": "c",
+          "text": "The architect must personally conduct the structural and fire tests to verify compliance with the approved building plans and specifications"
+        },
+        {
+          "id": "d",
+          "text": "The Building Official independently obtains all required test reports, so the architect's role is minimal and limited to design documentation only"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. The architect does not personally conduct structural or fire tests. Third-party specialists or contractors conduct tests; the architect coordinates their completion and submission.",
+        "d": "Incorrect. The Building Official does not independently obtain test reports; the permit applicant (owner) must submit them, typically coordinated by the architect.",
+        "correct": "The architect's role in occupancy coordination includes ensuring that all required test reports and certifications are obtained and submitted to the Building Official. The architect typically coordinates the timing of tests (e.g., structural load tests, fire-rating verification) with the contractor and third-party testing agencies, and ensures documents reach the Building Official before the occupancy inspection.",
+        "takeaway": "The architect coordinates required test reports (structural, fire-rating, etc.) and ensures they are completed and submitted to the Building Official for the occupancy inspection."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f6392dc042ff8b64ba7400474dc2d4f973727359134deea76d74e191a70e84d3"
+    },
+    {
+      "question_id": "0e0adff4-13d5-49db-8d4f-69f6d433d7c6",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "During the Building Official's final occupancy inspection, a code violation is discovered: certain interior walls do not meet the fire-rating requirements specified in the approved plans. The architect had certified Substantial Completion two weeks earlier. Who bears primary responsibility for this code non-compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Building Official, for not inspecting the building earlier, although their role is not to ensure compliance during construction"
+        },
+        {
+          "id": "b",
+          "text": "The owner, for occupying the building without thorough inspection, which is not typically their responsibility"
+        },
+        {
+          "id": "c",
+          "text": "The contractor, who executed the fire-rated walls contrary to approved plans despite architect supervision"
+        },
+        {
+          "id": "d",
+          "text": "The contractor, who bears all responsibility for code compliance regardless of architect supervision, which oversimplifies the shared responsibilities"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "Incorrect. The owner relies on the architect's supervision and certification. The owner is not professionally qualified to detect fire-rating code violations.",
+        "d": "Incorrect. While the contractor executes the work, the architect's design seal and supervision duty create primary responsibility for code compliance. The architect may have indemnity from the contractor for deviations, but liability to the owner falls on the architect.",
+        "correct": "The architect bears primary responsibility for code compliance in two ways: (1) design responsibility—the architect's sealed drawings must comply with building codes; and (2) construction administration responsibility—the architect must monitor construction to ensure it complies with the approved code-compliant plans. If code non-compliance is discovered during occupancy inspection, the architect failed either in design or in supervision. The architect may seek recovery from the contractor for construction deviation, but the architect-owner relationship creates architect liability for code non-compliance.",
+        "takeaway": "The architect bears primary responsibility for code compliance through both design and construction administration supervision—failure to identify code non-compliance creates architect liability to the owner."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3dc3976cf19cf0c11fe8ac23ad0c8397790dd2c74457ef527533a6cf54475f18"
+    },
+    {
+      "question_id": "667a3387-0240-44fe-8e51-953e32b98a8b",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "The architect certifies Substantial Completion and the owner requests immediate occupancy. The Building Official's occupancy inspection is still pending and no occupancy permit has been issued. What is the architect's professional responsibility regarding this situation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inform the owner in writing that occupancy before the Certificate of Occupancy is issued is illegal and violates building code"
+        },
+        {
+          "id": "b",
+          "text": "Allow the owner to occupy; the architect's responsibility ends at Substantial Completion certification, which is a common misunderstanding"
+        },
+        {
+          "id": "c",
+          "text": "Check with the Building Official to obtain informal permission for pre-occupancy, which may not be legally binding"
+        },
+        {
+          "id": "d",
+          "text": "Issue a written certification that the building is safe for occupancy to substitute for the Building Official's permit, which is not a recognized practice"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Incorrect. The architect's responsibility extends to ensuring the owner understands the legal occupancy requirement, not just to Substantial Completion certification.",
+        "c": "Incorrect. There is no 'informal' occupancy. The Building Official's Certificate of Occupancy is the sole legal authorization.",
+        "d": "Incorrect. The architect cannot issue an occupancy permit. Only the Building Official has that authority.",
+        "correct": "The architect has a professional and ethical duty to inform the owner that legal occupancy requires the Building Official's Certificate of Occupancy. Occupying before the permit is issued violates PD 1096 Rule VII Sec 704. The architect must clearly communicate that Substantial Completion is a contract milestone, not an occupancy authorization.",
+        "takeaway": "The architect must inform the owner in writing that occupying before the Building Official issues the Certificate of Occupancy is illegal and violates the National Building Code."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c2bebaee45c6b6844685a3b22307dd4d52edef2384723272a3757d6ff2a1ce6"
+    },
+    {
+      "question_id": "8b50cf47-2a97-405c-9f03-4c367d5f1eda",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "During construction, the architect discovers that the contractor has proceeded with interior finishes before the structural system was properly inspected and code-verified. This deviation creates potential code compliance risk. What is the architect's liability exposure if the occupancy inspection later reveals structural non-compliance because the architect failed to halt interior work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No liability, because the contractor made the decision to proceed with interior work, assuming full responsibility"
+        },
+        {
+          "id": "b",
+          "text": "Limited liability, because code compliance is the Building Official's responsibility, not the architect's"
+        },
+        {
+          "id": "c",
+          "text": "Significant liability, because the architect's supervisory duty includes ensuring proper sequencing and halting work that creates code compliance risk"
+        },
+        {
+          "id": "d",
+          "text": "No liability, because the architect's responsibility ends at design, not construction sequencing, unless otherwise stated in the contract"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "Incorrect. While the Building Official inspects for compliance, the architect's supervision duty requires proactive compliance management during construction.",
+        "d": "Incorrect. The architect's responsibility includes not just design but also supervising construction execution for code and plan compliance.",
+        "correct": "The architect's construction administration duty includes supervising work sequence and construction practices that affect code compliance. If the architect observes improper sequencing (e.g., proceeding with interior finishes before structural verification), the architect must halt or redirect the work to ensure code compliance is verified before proceeding. Failure to do so creates architect liability for failure to supervise properly, even though the contractor made the improper decision.",
+        "takeaway": "The architect's supervisory duty includes halting work that creates code compliance risk—failure to halt improper sequencing (e.g., interior work before structural verification) creates architect liability."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:16074b717e043f3abcc1f8fc7367c29f14183e261aae008e86ffa50a36412811"
+    },
+    {
+      "question_id": "ae3493cb-2dfe-4e41-8247-ee2e77a55e4d",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "The architect certifies Substantial Completion on March 1. The Building Official's occupancy inspection is not scheduled until March 21 due to administrative delays. Can the owner legally occupy the building on March 1 based on the architect's Substantial Completion certificate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the architect's certificate is sufficient authorization for occupancy, regardless of other pending approvals"
+        },
+        {
+          "id": "b",
+          "text": "No, the owner must wait for the Building Official's Certificate of Occupancy to legally occupy, even if Substantial Completion is certified"
+        },
+        {
+          "id": "c",
+          "text": "Only if the owner obtains written permission from the Building Official before occupying, which is a rare exception"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only if the architect certifies that the building is code-compliant and all safety measures are in place"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. The Building Official does not grant pre-approval or partial permits. The occupancy permit is issued after final inspection; pre-occupancy is not authorized.",
+        "d": "Incorrect. The architect's code-compliance certification, even if given, does not substitute for the Building Official's occupancy inspection and permit issuance.",
+        "correct": "The architect's Certificate of Substantial Completion is a contract milestone document, not a legal occupancy permit. The Building Official's Certificate of Occupancy is the legal permit required for occupancy. The owner cannot legally occupy until the Building Official issues the Certificate of Occupancy, regardless of architect certification timing.",
+        "takeaway": "The architect's Substantial Completion certificate is a contract milestone—legal occupancy requires the Building Official's Certificate of Occupancy, which is a separate government permit."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:db1fefe64f4ebd86c72b649977d098728e80f3df87b909fad0e08b962e76c14b"
+    },
+    {
+      "question_id": "c1eebcfc-f5dd-4ed7-82cd-c696bdf6389a",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "What is the purpose of as-built drawings in the occupancy permit process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To replace the original approved plans and show what was actually constructed, including any deviations from the initial design that were approved during construction"
+        },
+        {
+          "id": "b",
+          "text": "To provide a record of the actual construction that can be compared against approved plans to verify compliance and assist the Building Official in the occupancy inspection"
+        },
+        {
+          "id": "c",
+          "text": "To replace the architect's original design if construction required changes, ensuring that all modifications are documented for future reference"
+        },
+        {
+          "id": "d",
+          "text": "As-built drawings are not required for occupancy permits in Philippine practice, except in cases where significant structural changes have occurred"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Changes to design are documented through change orders and permits, not by as-built drawings replacing the original design.",
+        "d": "Incorrect. As-built drawings are standard documentation required for occupancy permits in Philippine practice.",
+        "correct": "As-built drawings document the actual construction as executed in the field. They serve as a record that allows comparison between approved plans and actual construction, helping the Building Official verify that no unauthorized deviations occurred or that deviations were properly documented and approved. As-built drawings are essential for the occupancy inspection process.",
+        "takeaway": "As-built drawings document actual construction and allow comparison with approved plans to verify compliance and identify any deviations for the Building Official's occupancy inspection."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb78a0221a333e69298d9afab06a157c443d9f54e549656bda351bfcafd28965"
+    },
+    {
+      "question_id": "b07620ce-a43c-474c-95ed-fe1dde743e57",
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "topic_id": "68096f3b-c693-473c-ae80-39b024b12343",
+      "text": "The architect has designed the building to comply with National Building Code requirements for structural safety, fire safety, and accessibility. Before the occupancy inspection, the contractor deviates from the approved plans by substituting different structural steel grades without architect approval, and the Building Official's inspection reveals the substitution. Can the architect claim that the deviation was solely the contractor's responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the architect's design was code-compliant and the contractor made the unauthorized substitution, though this may not absolve the architect of oversight responsibility"
+        },
+        {
+          "id": "b",
+          "text": "No, the architect had a supervisory duty to monitor construction for compliance with approved plans and must enforce contractor adherence to specifications"
+        },
+        {
+          "id": "c",
+          "text": "Only if the architect never became aware of the substitution during construction, which would be difficult to prove"
+        },
+        {
+          "id": "d",
+          "text": "Yes, unless the architect specifically received notice of the substitution in writing, which shifts some responsibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Incorrect. Lack of awareness does not excuse the architect's supervisory duty. The architect should have been aware through proper inspection.",
+        "d": "Incorrect. The architect's duty exists regardless of how notice is given. Construction site inspection is the architect's responsibility to discover deviations.",
+        "correct": "The architect's duty in construction administration includes monitoring construction for compliance with approved plans and specifications. Even if the design is code-compliant, the architect must ensure the contractor executes the work as designed. If the contractor deviates (structural steel grade substitution) without approval, the architect must identify and require correction. The architect's failure to enforce compliance creates architect liability, even though the contractor is the party that made the unauthorized substitution. The architect has indemnity from the contractor for the deviation but remains liable to the owner.",
+        "takeaway": "The architect's supervisory duty requires monitoring construction for compliance with approved plans—failure to identify and enforce contractor deviations creates architect liability even though the contractor made the deviation."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-019-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:900752b1cb06e77a9eb1fd29eb22edf73174729ffdd58463e26f127b435fdc9e"
+    }
+  ]
+}

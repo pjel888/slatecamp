@@ -8,11 +8,11 @@
       "question_id": "a931bd9c-871e-4538-8ceb-3e7a0b07d5b2",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A 20 kWp commercial solar installation in Davao (5.2 kWh/m²/day, PR 0.80) generates 30,368 kWh/year. The system cost is 8.5 million PHP. Over a 25-year lifespan, considering 0.7% annual panel degradation, 1% annual O&M cost, a 5% discount rate, and electricity rate of 12 PHP/kWh (assumed constant), what is the approximate Net Present Value (NPV) of the investment?",
+      "text": "A 20 kWp commercial solar installation in Davao (5.2 kWh/m2/day, PR 0.80) generates 30,368 kWh/year. The system cost is 8.5 million PHP. Over a 25-year lifespan, considering 0.7% annual panel degradation, 1% annual O&M cost, a 5% discount rate, and electricity rate of 12 PHP/kWh (assumed constant), what is the approximate Net Present Value (NPV) of the investment?",
       "options": [
         {
           "id": "a",
-          "text": "A) Negative (−2.0 to −3.0 million PHP); investment is not justified"
+          "text": "A) Negative (approximately -4.9 million PHP, in the -2.0 to -5.0 million PHP range); investment is not justified on pure economics without tariff escalation or incentives"
         },
         {
           "id": "b",
@@ -27,18 +27,12 @@
           "text": "D) Cannot be determined without knowing the inflation rate and future electricity tariff changes"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "NPV is negative only if tariffs remain absolutely flat (unrealistic in Philippines where ERC approves ~3–5% annual increases). With any tariff escalation, NPV turns positive.",
-        "b": "Slightly positive NPV (0.5–1.5M) implies low return (~2–3% IRR), inconsistent with article's citation of 12–15% IRR for commercial systems. Article's worked example Davao hybrid system cites ~340,000–390,000 PHP annual benefit, yielding shorter payback and higher NPV.",
-        "d": "While tariff growth is not given explicitly, the article establishes Philippine tariff trend (+5% annually per ERC). Assuming constant rates yields negative NPV; assuming historical escalation (realistic) yields positive NPV. At 12–15% IRR (from article), NPV must be substantially positive.",
-        "correct": "Year-1 gross revenue = 30,368 kWh × 12 PHP/kWh = 364,416 PHP. With 0.7% annual panel degradation, average revenue over 25 years ≈ 364,416 × 0.992 (midpoint degradation) ≈ 361,580 PHP/year (conservative, ignoring tariff escalation). O&M cost ≈ 1% × 8.5M = 85,000 PHP/year. Net annual benefit ≈ 361,580 − 85,000 = 276,580 PHP. Using NPV formula at 5% discount rate over 25 years: NPV ≈ Σ(276,580 / (1.05)^n) − 8,500,000 ≈ 276,580 × annuity factor (~14.1 for 25yr at 5%) − 8.5M ≈ 3,898,728 − 8,500,000 = −4.6M (without tariff escalation). However, electricity rates in Philippines rise ~4–5% annually; incorporating tariff growth improves NPV substantially, pushing it to +4 to +6M range. Conservative estimate (flat rates): NPV ≈ −2 to −1M (negative). With tariff escalation (realistic): NPV ≈ +4 to +6M (strongly positive). Answer C assumes tariff growth, which is realistic given Philippine electricity market trends.",
-        "takeaway": "NPV sensitivity to tariff assumptions is critical. Always model tariff escalation (3–5% annually) in Philippine solar feasibility studies. Flat-rate assumption is pessimistic and leads to project rejection despite genuine economic viability."
-      },
+      "rationale": "Year 1 energy revenue = 30,368 kWh x 12 PHP/kWh = 364,416 PHP. Apply 0.7%/year degradation and discount at 5% over 25 years: PV of degraded energy savings = sum_{t=1..25} [30,368 x (0.993)^(t-1) x 12 / (1.05)^t] = 4,809,387 PHP (geometric series with ratio r = 0.993/1.05 = 0.9457; sum = (1 - 0.9457^25) / (1 - 0.9457) x 30,368 x 12 / 1.05). Annuity factor at 5% for 25 years = (1 - 1.05^(-25))/0.05 = 14.094. PV of O&M = 85,000 PHP/year x 14.094 = 1,197,985 PHP. NPV = PV_savings - Capex - PV_OM = 4,809,387 - 8,500,000 - 1,197,985 = -4,888,599 PHP (approximately -4.9M PHP, negative). Correct answer is a. The originally marked answer c (+4 to +6M PHP positive) would require an unstated tariff escalation of approximately 5-7%/year, contradicting the stem's explicit 'assumed constant' wording. Option d is incorrect because the stem explicitly fixes all NPV inputs.",
       "explanation": null,
       "code_citation": "Article Section 8: Economic Analysis and Payback; Worked Example 2: Commercial Hybrid System; national tariff trends (ERC, 2026)",
       "bloom_level": "analyze",
@@ -51,30 +45,30 @@
       "model_id": "ALE-UTIL-003-08-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.160361+00:00",
       "content_hash": "sha256:57ac376c0c1dc64d530d31d49690469583319d3611e6a21aecce6f7feefc5865"
     },
     {
       "question_id": "650a00d0-3592-4e01-9b99-c751b770fbee",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "Under IEEE 1547 and Philippine electrical safety standards, what is the maximum allowable time for a grid-tied PV inverter to automatically disconnect (de-energize) from the grid following a loss of utility power?",
+      "text": "In PEC terminology, what is a PV output circuit?",
       "options": [
         {
           "id": "a",
-          "text": "A) 500 milliseconds (0.5 seconds), which is the standard for most grid-tied systems to ensure safety"
+          "text": "The utility service drop serving the building."
         },
         {
           "id": "b",
-          "text": "B) 160 milliseconds (0.16 seconds)"
+          "text": "The circuit from the PV source-circuit connection point to the inverter or dc utilization equipment."
         },
         {
           "id": "c",
-          "text": "C) 2 seconds, allowing for a brief delay to accommodate transient faults"
+          "text": "The final branch circuit serving lighting outlets."
         },
         {
           "id": "d",
-          "text": "D) 5 seconds, which is typically too long for safety compliance in most jurisdictions"
+          "text": "The grounding electrode conductor for the service."
         }
       ],
       "correct_option_id": "b",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "500 milliseconds is too slow and violates IEEE 1547. This delay could allow hazardous islanding conditions.",
-        "c": "2 seconds is significantly longer than the 160 ms limit. Used in some microgrids but not standard for residential/commercial grid-tied systems.",
-        "d": "5 seconds is far too slow. Safety-critical response time for grid-tied systems is <200 ms.",
-        "correct": "IEEE 1547-4 specifies automatic disconnect relay (ADR) trip time <160 milliseconds on grid loss. This rapid disconnection prevents the inverter from 'islanding'—continuing to energize the utility circuit when utility workers expect it to be de-energized. Islanding hazard could cause electrocution of utility technicians during blackout restoration. Philippine PEC and Meralco interconnection agreements adopt IEEE 1547 requirements.",
-        "takeaway": "Grid-tied PV = rapid ADR trip (<160 ms) to prevent islanding. Off-grid and hybrid systems can tolerate slower ADR because they are not grid-synchronized. This is a critical safety feature verifiable during Meralco commissioning inspection."
-      },
+      "rationale": "The circuit from the PV source-circuit connection point to the inverter or dc utilization equipment. This answer matches PEC refined markdown lines 29231-29720.",
       "explanation": null,
       "code_citation": "Article Section 7: Electrical Safety and Interconnection; IEEE 1547 reference",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-003-08-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.151810+00:00",
       "content_hash": "sha256:b442703dfc7ea5590b1520969538f0d4633a18f3a581f03e18542b93ccb00c8c"
     },
     {
       "question_id": "94bfd0a7-f9b5-40a0-9fde-25dcdec849cc",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "What is the primary advantage of hybrid PV systems (PV + battery) compared to pure grid-tied systems in the Philippine context, particularly for commercial buildings?",
+      "text": "What is the key feature of an interactive PV system?",
       "options": [
         {
           "id": "a",
-          "text": "A) Hybrid systems generate more total energy because batteries store and re-use power with no losses, which is a misconception as energy storage always involves some efficiency loss"
+          "text": "It operates only with no connection to any utility network."
         },
         {
           "id": "b",
-          "text": "B) Hybrid systems provide backup during grid outages, reduce grid dependency, and optimize peak-shaving—valued in regions with frequent Meralco interruptions"
+          "text": "It contains only passive daylighting elements."
         },
         {
           "id": "c",
-          "text": "C) Hybrid systems are required by RA 9513 for all commercial installations over 10 kWp, which is not a current legal requirement"
+          "text": "It operates in parallel with an electricity production and distribution network."
         },
         {
           "id": "d",
-          "text": "D) Hybrid systems eliminate the need for net metering agreements and bypass Meralco interconnection requirements, which is incorrect as regulatory compliance is still necessary"
+          "text": "It has no inverter or current-producing equipment."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Lithium-ion batteries have ~90–95% round-trip efficiency; energy stored is not 'free.' Battery cycling accelerates degradation and increases O&M costs over time.",
-        "c": "RA 9513 does not mandate hybrid systems for any size. Grid-tied is the baseline; hybrid is optional for resilience. The article notes 20 kWp example as 'common in commercial buildings requiring high availability,' not mandatory.",
-        "d": "Hybrid systems still require Meralco interconnection agreement and comply with net metering if grid-connected. Batteries do not exempt the system from regulatory requirements.",
-        "correct": "Hybrid systems provide resilience during blackouts (common in provincial Philippines 4–6 hours/month) and enable strategic load shifting (use battery-stored generation during peak demand hours to reduce demand charges). They cost 3–4x more than grid-tied systems but justify the investment for critical loads (data centers, hospitals, continuous operations).",
-        "takeaway": "Hybrid = resilience + peak-shaving capability. Cost premium justified only where frequent outages occur or demand charge reduction is significant. Standard grid-tied is more cost-effective in stable urban areas."
-      },
+      "rationale": "It operates in parallel with an electricity production and distribution network. This answer matches PEC refined markdown lines 29231-29720.",
       "explanation": null,
       "code_citation": "Article Section 1: System Architecture and Types; Worked Example 2: Commercial Hybrid System",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-003-08-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.163143+00:00",
       "content_hash": "sha256:64dddd7828ae73e2257a433d9a6e163b252d95e710447b39625c93b51b4869c3"
     },
     {
       "question_id": "2bfa9ead-92d2-4512-b0e6-8cd891c527bd",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A residential solar system installed in 2026 costs 380,000 PHP total (panels + inverter + BOP). It generates 5,694 kWh/year (from Worked Example 1: 4 kWp system at 5.0 PSH and 0.78 PR). Electricity rate is 12 PHP/kWh. Assuming 0.7% annual panel degradation, 1% annual O&M cost, and 25-year lifespan, which scenario best represents the system's financial feasibility?",
+      "text": "How should PV source and output circuits be treated when routed near feeders or branch circuits?",
       "options": [
         {
           "id": "a",
-          "text": "A) Simple payback ~4.8 years; IRR ~12–15% over 25 years (superior to Philippine fixed-income rates at 3–4%)"
+          "text": "They may always be mixed with lighting branch circuits."
         },
         {
           "id": "b",
-          "text": "B) Simple payback ~6.2 years due to O&M costs; IRR drops to 7–8% making investment marginal"
+          "text": "They must be routed only through plumbing shafts."
         },
         {
           "id": "c",
-          "text": "C) System will not break even within 20 years due to panel degradation and rising maintenance costs, which significantly impact the financial returns"
+          "text": "They are exempt from raceway and enclosure rules."
         },
         {
           "id": "d",
-          "text": "D) System is uneconomical; grid electricity is cheaper long-term than capital + O&M costs, especially when considering future rate increases"
+          "text": "They should not share the same raceway, cable tray, outlet box, or junction box unless separated by a partition or connected together as permitted."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Simple payback considering O&M does extend to ~5.9–6.0 years, but not 6.2. IRR remains above 12% with conservative O&M assumptions.",
-        "c": "25-year lifespan is standard for residential solar (panel warranty covers 25 years at ≥80% output). System will not fully depreciate but generates positive cash flow through year 25. Break-even occurs within first 6 years.",
-        "d": "Electricity is not cheaper than solar when amortized. Grid rates in Philippines are rising (~5% annually per ERC trends); solar locks in protection against future tariff increases.",
-        "correct": "Year-1 gross revenue = 5,694 kWh × 12 PHP/kWh = 68,328 PHP. O&M cost = 1% × 380,000 = 3,800 PHP/year. Net benefit first year = 68,328 − 3,800 = 64,528 PHP. Simple payback ≈ 380,000 / 64,528 ≈ 5.9 years (conservative). Without O&M adjustment: 380,000 / 68,328 ≈ 5.6 years. Article cites simple payback 4.8 years (gross, before O&M), which is reasonable. IRR over 25 years at 5% discount rate, accounting for 0.7% annual panel degradation and 1% O&M, yields ~12–15% (from article). This exceeds Philippine bank savings rates (3–4%) and mortgage rates (6–8%), making solar investment attractive.",
-        "takeaway": "Residential solar in Philippines: simple payback 4–6 years, IRR 12–15%, positive NPV over 25-year lifespan. Strong investment when roof is suitable and load profile stable. Verify Meralco rates and local incentives (property tax holidays) before approval."
-      },
+      "rationale": "They should not share the same raceway, cable tray, outlet box, or junction box unless separated by a partition or connected together as permitted. This answer matches PEC refined markdown lines 29484-29492.",
       "explanation": null,
       "code_citation": "Article Section 8: Economic Analysis and Payback; Worked Example 1: Residential Grid-Tied System",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-003-08-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.164029+00:00",
       "content_hash": "sha256:4d3487a6642ca00f38f9eedaf8f824f5529eef82a517d6e00520f85c6f3635f5"
     },
     {
       "question_id": "af781c7d-9e8b-45d7-8998-4928600cbcad",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "Under RA 9513 and DOE Circular DC2013-05-0009, what is the key distinction between Philippine net metering and feed-in tariff schemes?",
+      "text": "For a PV source circuit, how does PEC establish maximum current for parallel module strings?",
       "options": [
         {
           "id": "a",
-          "text": "A) Net metering requires the utility to purchase all excess solar generation at premium wholesale rates, which is not typically the case for residential installations"
+          "text": "Use the sum of parallel module short-circuit currents multiplied by 125 percent."
         },
         {
           "id": "b",
-          "text": "B) Net metering credits excess kWh at the retail end-user rate, while feed-in tariffs typically pay a fixed lower wholesale rate"
+          "text": "Use the building demand load divided by voltage only."
         },
         {
           "id": "c",
-          "text": "C) Feed-in tariffs guarantee 20-year contracts, whereas Philippine net metering expires annually, requiring annual renewal"
+          "text": "Use the inverter nameplate output current divided by two."
         },
         {
           "id": "d",
-          "text": "D) Net metering applies only to residential systems; commercial systems must use feed-in tariffs, which are structured differently"
+          "text": "Use the branch-circuit rating serving the nearest panelboard."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wholesale rates are much lower than retail rates; net metering explicitly credits at retail rate per DC2013-05-0009. This distractor reverses the economic advantage.",
-        "c": "Philippine net metering does provide long-term contracts (20-year guarantee under RA 9513), and credits do not expire within a calendar year per DOE guidelines.",
-        "d": "Both residential and commercial systems can use net metering under Philippine law. There is no distinction by building type; all ≥500 Wp systems are eligible if they meet PEC and Meralco requirements.",
-        "correct": "Philippine net metering credits excess generation at the retail rate (~12 PHP/kWh in 2026), which is more favorable to building owners than feed-in tariffs (typically 4–6 PHP/kWh wholesale). This incentivizes distributed PV and supports national renewable energy goals.",
-        "takeaway": "Philippine net metering = retail rate credits (~12 PHP/kWh), not wholesale (~4–6 PHP/kWh). This is competitive advantage for building owners."
-      },
+      "rationale": "Use the sum of parallel module short-circuit currents multiplied by 125 percent. This answer matches PEC refined markdown lines 29498-29512.",
       "explanation": null,
       "code_citation": "Article Section 2: Philippine Regulatory Framework; DOE DC2013-05-0009; Economic Analysis and Payback",
       "bloom_level": "remember",
@@ -251,30 +221,30 @@
       "model_id": "ALE-UTIL-003-08-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.157229+00:00",
       "content_hash": "sha256:a1cd38a29543ffbad404fedbd90b193cc7d9457ad30da57c1637c626f21cbb3e"
     },
     {
       "question_id": "707888fc-cd60-4944-bff6-aaadd3b75076",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A structural engineer is evaluating a 25 kWp rooftop PV installation on a 5-story commercial building in Metro Manila. The roof's design live load is 150 kg/m², existing dead load is 120 kg/m², and the required PV footprint is 125 m² (50 panels × 400 Wp, mounting frames). Assuming 50 panels at 20 kg each, 2 kg/m² distributed load for frames, and inverter/electrical equipment at 300 kg, which statement is most accurate?",
+      "text": "What protection is required for roof-mounted dc PV arrays on dwellings?",
       "options": [
         {
           "id": "a",
-          "text": "A) System exceeds live load capacity; structural reinforcement of the roof slab is mandatory due to the additional weight imposed by the PV system and associated equipment"
+          "text": "Only a manual label at the service entrance."
         },
         {
           "id": "b",
-          "text": "B) System is feasible; total PV load (~1,550 kg ÷ 125 m² = 12.4 kg/m²) remains within the 150 kg/m² live load allocation"
+          "text": "Ground-fault protection that detects, interrupts, and indicates the ground fault."
         },
         {
           "id": "c",
-          "text": "C) System requires dynamic bracing for typhoon resistance, even though static loading is acceptable, to ensure safety during extreme weather conditions"
+          "text": "Only a lighting arrester at the roof edge."
         },
         {
           "id": "d",
-          "text": "D) System must be distributed across at least 200 m² to meet building code live load limits, ensuring compliance with structural safety standards"
+          "text": "Only a higher utility transformer rating."
         }
       ],
       "correct_option_id": "b",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Total load of 282.4 kg/m² is far below typical commercial roof design capacity (400–500 kg/m²). No structural reinforcement required for static loading.",
-        "c": "Dynamic typhoon bracing (200 km/h design wind load per National Building Code) is indeed required for tropical installations, but this is a separate structural concern from static live load. Both must be verified.",
-        "d": "Spreading over 200 m² would reduce per-area loading, but 125 m² already distributes load adequately. There is no code requirement to exceed minimum footprint.",
-        "correct": "Load calculation: PV panels 50 × 20 = 1,000 kg; mounting frames 125 m² × 2 kg/m² = 250 kg; electrical equipment 300 kg; total ≈ 1,550 kg distributed over 125 m² = 12.4 kg/m² added load. Total roof load = 120 (existing dead) + 150 (design live) + 12.4 (PV) = 282.4 kg/m², well below typical commercial roof capacity of 400–500 kg/m² per NEC III-1. The 150 kg/m² live load allocation includes safety margin for maintenance access and equipment; PV utilizes only 8.3% of live load budget. System is feasible from static perspective.",
-        "takeaway": "Rooftop PV feasibility check: (1) Static load vs. live load capacity—typically no issue. (2) Dynamic wind load—mandatory in tropical zones; requires wind-rated mounting and lateral bracing. (3) Point loads from inverter/battery enclosure—verify local support girders or foundation points. Always engage structural engineer for commercial roofs."
-      },
+      "rationale": "Ground-fault protection that detects, interrupts, and indicates the ground fault. This answer matches PEC refined markdown lines 29467-29476.",
       "explanation": null,
       "code_citation": "Article Section 6: Building Integration and Structural Considerations; Load calculation example",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-003-08-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.161309+00:00",
       "content_hash": "sha256:0a48382a39cd6e177bfcdb6e472d21cb79726d565dd5fa835cf61a79cea63a92"
     },
     {
       "question_id": "f60b7368-b3c8-477f-b587-12fd5c0beb58",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A 10 kWp grid-tied PV system in Metro Manila was designed for 18,000 kWh/year (5.0 PSH × 10 kW × 365 days × 0.78 PR). Year-1 actual output: 17,325 kWh. Year-2 actual output: 17,192 kWh. Assuming 0.7% annual panel degradation from the NREL study, which statement best describes the system performance?",
+      "text": "What is a core rule for grouped PV disconnecting means?",
       "options": [
         {
           "id": "a",
-          "text": "A) System is underperforming; soiling/dust requires immediate cleaning to restore efficiency"
+          "text": "They may be scattered around the building if each is labeled."
         },
         {
           "id": "b",
-          "text": "B) System is performing as expected; observed degradation matches 0.7% annual panel degradation"
+          "text": "They are required only for off-grid systems."
         },
         {
           "id": "c",
-          "text": "C) Inverter has partially failed; one string is likely offline, affecting overall output"
+          "text": "They must be grouped and marked, with the grouped set limited to six switches or circuit breakers."
         },
         {
           "id": "d",
-          "text": "D) System requires replacement of 30% of panels due to micro-cracks, which are reducing efficiency"
+          "text": "They may be omitted when the PV array is small."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Soiling would cause sudden drops (20–30%) or gradual decline over months if severe. 0.76% year-to-year is consistent with expected degradation, not dust accumulation (which is reversible via cleaning).",
-        "c": "String inverter failure would show complete loss of that string's output (~50% drop), not 0.76% decline. DC combiner fuses and monitoring would alert to such failure.",
-        "d": "Micro-cracks cause progressive output loss and voltage mismatch faults detected by monitoring. 0.76% decline is normal aging, not catastrophic failure.",
-        "correct": "Expected year-1 output with 0.7% degradation: 18,000 × 0.993 = 17,874 kWh. Actual year 1: 17,325 kWh is ~2.9% below (within ±5% acceptable weather variation). Year 2: 17,192 kWh shows (17,192 − 17,325) / 17,325 = −0.76% drop, matching expected annual panel degradation of 0.7%. Capacity factor: 17,325 / (10 × 365 × 24 / 5.0 / 0.78) ≈ 19.2%, within typical Philippines range (18–22%). System performing nominally.",
-        "takeaway": "Expect 0.7% annual panel degradation in first 5 years, then 0.5% thereafter (NREL). Monitor year-to-year output to detect anomalies (>5% drop signals cleaning or maintenance need). Use capacity factor (actual kWh / theoretical max) to benchmark against regional norms."
-      },
+      "rationale": "They must be grouped and marked, with the grouped set limited to six switches or circuit breakers. This answer matches PEC refined markdown lines 29528-29550.",
       "explanation": null,
       "code_citation": "Article Section 7: Performance Monitoring and Energy Yield Assessment; Operation, Maintenance, and Degradation",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-003-08-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.155058+00:00",
       "content_hash": "sha256:a6fd394fa9f912956eb5eece7fa441a445a8165ed6d00a0276b3e2ad5031550d"
     },
     {
       "question_id": "d60eece4-283d-4149-b28b-296778d93771",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A hybrid PV system in Davao includes 20 kWp of solar panels and a 20 kWh lithium-ion battery bank with 80% depth-of-discharge (DoD). Critical load requires 2.5 kW for 6 hours during grid outages. How many full-duration outage cycles can the battery support per week before exceeding typical commercial lithium-ion cycling limits?",
+      "text": "Which equipment should have a disconnecting means in a PV system?",
       "options": [
         {
           "id": "a",
-          "text": "A) 1 cycle per week"
+          "text": "Only receptacle outlets inside occupied rooms."
         },
         {
           "id": "b",
-          "text": "B) 2–3 cycles per week"
+          "text": "Only plumbing pumps supplied by the building."
         },
         {
           "id": "c",
-          "text": "C) 5–7 cycles per week"
+          "text": "Only the utility meter enclosure."
         },
         {
           "id": "d",
-          "text": "D) Daily cycles with minimal impact"
+          "text": "Inverters, batteries, charge controllers, and similar PV equipment."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "One cycle per week (52/year) is overly conservative; typical commercial systems support 500+ cycles/year with proper thermal management.",
-        "c": "Daily cycles (365/year) exceed the 500–800 annual cycle budget without significantly reducing DoD or temperature management. Tropical climates (Davao 25–35°C) reduce cycle count by 5–10%.",
-        "d": "Actually, answer A is too conservative. Two to three full-depth cycles per week aligns with real-world commercial hybrid deployments.",
-        "correct": "Battery usable capacity = 20 kWh × 80% DoD = 16 kWh. Each 6-hour outage at 2.5 kW draws 15 kWh (close to usable limit). Lithium-ion batteries in commercial applications sustain 5,000–8,000 full-equivalent cycles over 10–15 year lifespan, or ~500–800 cycles/year (IRENA, 2021), equivalent to 1.4–2.2 cycles/week. However, hybrid systems typically benefit from partial daily cycling (charge morning, use afternoon/evening), so 2–3 full-depth cycles per week is practical limit. Exceeding reduces battery lifespan significantly.",
-        "takeaway": "Battery lifespan depends on annual cycle count and temperature. Monitor battery management system (BMS) to track cycles. Hybrid systems in hot climates require active thermal management (cooling enclosure) to maximize longevity."
-      },
+      "rationale": "Inverters, batteries, charge controllers, and similar PV equipment. This answer matches PEC refined markdown lines 29558-29582.",
       "explanation": null,
       "code_citation": "Article Section 5: Worked Example 2: Commercial Hybrid System; Operation, Maintenance, and Degradation",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-003-08-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.154022+00:00",
       "content_hash": "sha256:e513504c8c09bdc9da7c434260fa230196a07250de961b8c27779af2ad50e78b"
     },
     {
       "question_id": "1e4ca699-e662-4045-9e86-dafd78e26144",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A proposed 8 kWp grid-tied PV system in Cebu (central Philippines, 5.1 kWh/m²/day insolation) is expected to generate 365 days × 5.1 PSH × 8 kW = 14,892 kWh/year before accounting for losses. If the measured performance ratio is 0.82, what is the corrected annual energy yield?",
+      "text": "How should dc PV source or output circuits inside a building be protected before the first readily accessible disconnect?",
       "options": [
         {
           "id": "a",
-          "text": "A) 12,212 kWh/year"
+          "text": "They should be installed in metallic raceways or metallic enclosures as required by the PEC."
         },
         {
           "id": "b",
-          "text": "B) 12,211 kWh/year"
+          "text": "They should be run loose above ceiling tiles for ventilation."
         },
         {
           "id": "c",
-          "text": "C) 13,071 kWh/year"
+          "text": "They should use only flexible extension cords."
         },
         {
           "id": "d",
-          "text": "D) 14,892 kWh/year"
+          "text": "They should be installed in the same cable tray as unrelated feeders without separation."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This results from using a slightly different rounding method but is essentially the same calculation; answer B is more precise.",
-        "c": "This is too high; it assumes a PR of 0.88, not 0.82. Reflects incomplete understanding of PR magnitude.",
-        "d": "This ignores the performance ratio entirely, using only the theoretical PSH × capacity calculation. In practice, no system achieves this without losses.",
-        "correct": "Corrected annual yield = 14,892 kWh/year × 0.82 PR = 12,211.4 ≈ 12,211 kWh/year. The performance ratio of 0.82 accounts for inverter efficiency, soiling, temperature derating in tropical climate, wiring losses, and mismatch. This is the realistic design estimate.",
-        "takeaway": "Always apply PR to theoretical PSH × capacity calculation. For Philippine tropical systems, expect PR 0.75–0.85 due to heat, soiling, and humidity."
-      },
+      "rationale": "They should be installed in metallic raceways or metallic enclosures as required by the PEC. This answer matches PEC refined markdown lines 29590-29611.",
       "explanation": null,
       "code_citation": "Article Section 4: System Sizing Calculation; Performance Ratio definition and components",
       "bloom_level": "apply",
@@ -451,30 +397,30 @@
       "model_id": "ALE-UTIL-003-08-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.162232+00:00",
       "content_hash": "sha256:4dc3f1d647eb2d0bbf521b90dc74077ff36411f7ba510f979ed29a75ed8fb8b8"
     },
     {
       "question_id": "65275b85-2e63-4081-9a10-2a2edbdd5918",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "Which panel technology offers the best balance of efficiency, cost, and building-integrated applications for a space-constrained commercial rooftop in the Philippines?",
+      "text": "What does PEC grounding coordination address in PV systems?",
       "options": [
         {
           "id": "a",
-          "text": "A) Polycrystalline, due to lowest cost (~0.85–0.95x monocrystalline) and acceptable 16–19% efficiency"
+          "text": "Grounding may be ignored when modules are mounted on a roof."
         },
         {
           "id": "b",
-          "text": "B) Monocrystalline, due to highest efficiency (18–22%) for maximum power density in limited roof area"
+          "text": "Grounded dc circuits, equipment grounding conductors, and conductive metal PV parts must be coordinated with the grounding system."
         },
         {
           "id": "c",
-          "text": "C) Thin-film, due to flexibility for curved surfaces and superior performance in tropical heat"
+          "text": "Only the utility company may ground PV module frames."
         },
         {
           "id": "d",
-          "text": "D) Any technology is equivalent; efficiency matters less than system size for total energy output"
+          "text": "The grounding electrode system is replaced by a label on the inverter."
         }
       ],
       "correct_option_id": "b",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Polycrystalline is cost-effective for greenfield sites with abundant space, but space-constrained rooftops demand efficiency. Polycrystalline (16–19% efficiency) sacrifices power density.",
-        "c": "Thin-film panels (10–15% efficiency) require more area and suffer performance degradation in tropical heat (high temperature coefficient). Building-integrated applications (BIPV) use thin-film for aesthetics, not efficiency.",
-        "d": "Efficiency directly impacts system size and rooftop footprint. In space-constrained applications, efficiency is the primary selection criterion.",
-        "correct": "Monocrystalline panels (18–22% efficiency) deliver the highest power density (~400–550 Wp per 2 m² module). For a constrained rooftop, monocrystalline minimizes area required: 10 kWp system needs ~50 m² with monocrystalline vs. ~65 m² with polycrystalline. The cost premium (~1.0x vs. 0.85–0.95x) is justified by space savings on expensive commercial real estate.",
-        "takeaway": "For space-constrained rooftops: choose monocrystalline (highest efficiency). For cost-driven or abundant-space installations: polycrystalline is adequate. Thin-film reserved for BIPV aesthetics."
-      },
+      "rationale": "Grounded dc circuits, equipment grounding conductors, and conductive metal PV parts must be coordinated with the grounding system. This answer matches PEC refined markdown lines 29617-29680.",
       "explanation": null,
       "code_citation": "Article Section 2: Panel Technology and Specifications; Building Integration and Structural Considerations",
       "bloom_level": "understand",
@@ -501,30 +441,30 @@
       "model_id": "ALE-UTIL-003-08-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.165030+00:00",
       "content_hash": "sha256:5c5fe32f9eaacc34ee899b72821de130fa8675330d07ded23c09eebe76349dea"
     },
     {
       "question_id": "7c428f52-60c7-40c5-ad6e-644be0928905",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A residential customer's Meralco bill has energy charge of 12 PHP/kWh. A 5 kWp grid-tied PV system generates 21,900 kWh/year (at PR 0.78). If 70% is exported to grid and 30% is consumed on-site, what is the approximate annual energy savings from avoided consumption charges?",
+      "text": "What must an interactive PV inverter do when utility voltage is lost?",
       "options": [
         {
           "id": "a",
-          "text": "A) 52,560 PHP/year"
+          "text": "It must continue energizing the utility indefinitely."
         },
         {
           "id": "b",
-          "text": "B) 75,120 PHP/year"
+          "text": "It must bypass all disconnecting means."
         },
         {
           "id": "c",
-          "text": "C) 78,840 PHP/year"
+          "text": "It must stop energizing the utility connection."
         },
         {
           "id": "d",
-          "text": "D) 131,400 PHP/year"
+          "text": "It must convert the array into a plumbing backup system."
         }
       ],
       "correct_option_id": "c",
@@ -532,13 +472,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This is 70% of generation × 12, treating exported energy as if it carries the retail rate value without accounting for the split. Net metering credits exports but at retail rate only for accounting purposes.",
-        "b": "This assumes 100% of generation yields grid export benefit (70% × 21,900 × 12 = 18,348... actually closer to 184,680 PHP for export credits). Reflects confusion about export crediting mechanism.",
-        "d": "This uses 100% of generation × 12 PHP/kWh, ignoring the split between self-consumption and export. Represents worst-case overestimate.",
-        "correct": "Annual energy savings = (30% self-consumed × 21,900 kWh) × 12 PHP/kWh = 6,570 kWh × 12 = 78,840 PHP. This represents the avoided consumption charges from on-site generation that offsets the customer's grid purchases.",
-        "takeaway": "In payback calculations, distinguish between avoided consumption (on-site use at retail rate) and export credits (grid sales also at retail rate per DC2013-05-0009). Both contribute to economic benefit."
-      },
+      "rationale": "It must stop energizing the utility connection. This answer matches PEC refined markdown lines 29708-29720.",
       "explanation": null,
       "code_citation": "Article Section 8: Economic Analysis and Payback; Worked Example 1: Residential Grid-Tied System",
       "bloom_level": "apply",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-003-08-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.159239+00:00",
       "content_hash": "sha256:3d761fb17d6edfa6e9657a07eb129028d1b2d2f3ac3968bc0390261004c57b41"
     },
     {
       "question_id": "7e4f7f10-bbc1-4e17-b2e0-d13cc723f767",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A 10 kWp monocrystalline PV system (20% efficiency) is to be installed on a commercial rooftop. Approximately how much roof area is required to accommodate the array?",
+      "text": "How does RA 11285 frame renewable energy technologies in building energy practice?",
       "options": [
         {
           "id": "a",
-          "text": "A) 25 m²"
+          "text": "It removes all energy management duties from large establishments."
         },
         {
           "id": "b",
-          "text": "B) 40 m²"
+          "text": "It treats renewable energy as unrelated to building performance."
         },
         {
           "id": "c",
-          "text": "C) 50 m²"
+          "text": "It applies only to temporary construction lighting."
         },
         {
           "id": "d",
-          "text": "D) 75 m²"
+          "text": "It promotes efficient renewable energy technologies within the energy efficiency and conservation policy framework."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This is 10 / 0.40 = 25 modules but neglects the 2 m² per module conversion, treating module count as m² directly.",
-        "b": "This results from 10 / (0.25 × 1) or similar incorrect efficiency assumption. Polycrystalline at 17.5% average would yield ~57 m², slightly higher.",
-        "d": "This is 10 / (0.133 × 1), significantly overestimating area. May result from using 13.3% efficiency (thin-film) by error.",
-        "correct": "Using Area (m²) = System Size (kWp) / (Panel Efficiency × 1 kW/m²) = 10 / (0.20 × 1) = 50 m². Alternatively: 10 kWp ÷ 0.4 kWp per 400 Wp module = 25 modules; 25 modules × 2 m² per module = 50 m². This is the baseline footprint; account for access gaps (10–15% additional) when planning actual layout.",
-        "takeaway": "Rule-of-thumb: ~2 m² per 400 Wp monocrystalline panel or ~5 m² per kWp system. Always verify available rooftop area early in project feasibility phase."
-      },
+      "rationale": "It promotes efficient renewable energy technologies within the energy efficiency and conservation policy framework. This answer matches RA 11285 refined markdown lines 31-145.",
       "explanation": null,
       "code_citation": "Article Section 4: System Sizing Calculation; Panel Area Calculation example",
       "bloom_level": "apply",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-003-08-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.156102+00:00",
       "content_hash": "sha256:74d021711c1b3f313f9aed5950a550a74461f837b7a75a20212896e5779dbed7"
     },
     {
       "question_id": "81614ce2-8812-4597-b3cb-aaf98484f382",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "What is the critical difference between monocrystalline and thin-film panel performance in tropical climates like the Philippines, particularly regarding temperature effects?",
+      "text": "For designated establishments under RA 11285, which action aligns with the source-backed energy management approach?",
       "options": [
         {
           "id": "a",
-          "text": "A) Monocrystalline has lower temperature coefficient (−0.35% per °C) and maintains efficiency better in heat than thin-film (−0.25% per °C)"
+          "text": "Include renewable energy technologies and measurable energy performance actions in the energy management plan where applicable."
         },
         {
           "id": "b",
-          "text": "B) Thin-film panels have higher temperature coefficient (−0.25% per °C), making them superior in heat; monocrystalline loses 0.5% per °C"
+          "text": "Ignore monthly energy consumption records."
         },
         {
           "id": "c",
-          "text": "C) Monocrystalline undergoes faster degradation in tropical humidity (>0.7% per year vs. thin-film 0.5% per year)"
+          "text": "Use PV equipment as a substitute for all electrical safety rules."
         },
         {
           "id": "d",
-          "text": "D) Temperature coefficient is identical across all panel types; tropical derating of 15–25°C above STC affects all equally"
+          "text": "Treat building energy performance as unrelated to construction or retrofit work."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Monocrystalline has higher (worse) temperature coefficient than thin-film. The reversed numbers misstate the advantage of thin-film in high-heat applications.",
-        "c": "Degradation in tropical humidity affects all panel types similarly (~0.7% per year), per NREL. Material type (mono vs. thin-film) does not significantly alter humidity sensitivity if encapsulation is adequate (IEC 61215 testing includes damp-heat cycling).",
-        "d": "Temperature coefficient varies by technology: thin-film ~−0.25% per °C, monocrystalline ~−0.35 to −0.50% per °C (depending on cell type). This variation is significant in tropical design.",
-        "correct": "Thin-film panels have lower temperature coefficient (−0.25% per °C on average), meaning they lose less efficiency as temperature rises. Monocrystalline panels have −0.35% to −0.50% per °C temperature coefficient. In Philippine tropical climate, cell temperatures reach 60–70°C (vs. STC 25°C), causing 0.5% × (60–70 − 25) = 17.5–22.5% efficiency loss for monocrystalline. Thin-film suffers lower losses (~10–12%) due to better heat tolerance, which is why thin-film is sometimes chosen for tropical BIPV despite lower baseline efficiency.",
-        "takeaway": "Tropical derating (15–25°C above STC) is substantial; thin-film's superior temperature tolerance is valuable despite lower baseline efficiency. For BIPV or heat-prone locations: thin-film trades efficiency for thermal stability. For standard rooftops with good ventilation: monocrystalline efficiency gain usually outweighs thermal penalty."
-      },
+      "rationale": "Include renewable energy technologies and measurable energy performance actions in the energy management plan where applicable. This answer matches RA 11285 refined markdown lines 1060-1135.",
       "explanation": null,
       "code_citation": "Article Section 4: System Sizing Calculation (temperature derating); Panel Technology and Specifications",
       "bloom_level": "understand",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-003-08-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.152974+00:00",
       "content_hash": "sha256:1f2c73e28be82695c1acd4eb36c394c0a06edc158a37d0367237339556fb43a1"
     },
     {
       "question_id": "91dc3f80-3ccd-43b3-81d0-216b40a60262",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "A commercial building in Quezon City requires 30 kWh/day of electricity. Solar insolation is 5.0 kWh/m²/day and performance ratio is 0.78. Using the sizing formula System Size (kWp) = Daily Energy / (PSH × PR), what minimum PV array capacity is needed?",
+      "text": "Which PV review sequence is most defensible for an LEA answer?",
       "options": [
         {
           "id": "a",
-          "text": "A) 5.5 kWp"
+          "text": "Start with investment payback and skip electrical safety."
         },
         {
           "id": "b",
-          "text": "B) 7.7 kWp"
+          "text": "Define the PV circuits, size current, provide disconnects, protect against faults, ground equipment, and coordinate interactive operation."
         },
         {
           "id": "c",
-          "text": "C) 9.2 kWp"
+          "text": "Select panel brand before identifying circuits."
         },
         {
           "id": "d",
-          "text": "D) 11.5 kWp"
+          "text": "Assume utility interconnection removes the need for grounding."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This is 30 / (5.0 + 0.78) = 4.8, incorrectly adding PSH and PR instead of multiplying them.",
-        "b": "This is approximately 30 / 3.9 = 7.69, which is the raw calculation without design margin rounding. Acceptable but answer C includes conservative buffer.",
-        "d": "This results from dividing 30 by only the PR (0.78) or other arithmetic error, significantly overestimating capacity.",
-        "correct": "System Size (kWp) = 30 kWh/day / (5.0 × 0.78) = 30 / 3.9 = 7.69 kWp ≈ 9.2 kWp when rounded up for design margin (commonly round to nearest 0.5 kW increment for standard panel configurations). Actual sizing: 30 / 3.9 = 7.69, but with design safety margin round to 8.0–8.5 kWp minimum; answer 9.2 kWp provides additional buffer for uncertainty in daily load variation.",
-        "takeaway": "Sizing formula: System (kWp) = Load (kWh/day) / [PSH × PR]. Always round up for design margin and account for seasonal variation in tropical climates (±10–20% during cloudy season)."
-      },
+      "rationale": "Define the PV circuits, size current, provide disconnects, protect against faults, ground equipment, and coordinate interactive operation. This answer matches PEC refined markdown lines 29231-29720; RA 11285 refined markdown lines 1060-1135.",
       "explanation": null,
       "code_citation": "Article Section 4: System Sizing Calculation; Worked Example 1: Residential Grid-Tied System",
       "bloom_level": "apply",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-003-08-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.158255+00:00",
       "content_hash": "sha256:0e8dcc18f38c87186a764537e0e42367cec1086232eb6e864af59b9dd1545698"
     },
     {
       "question_id": "77f9a30f-5705-4de7-aadf-33038f4684c9",
       "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
       "topic_id": "ecd9ae24-a5d1-49e7-a797-22604ca6b4c7",
-      "text": "In the context of Philippine solar resource assessment, what does the term 'peak sun hours (PSH)' represent?",
+      "text": "Which statement should be avoided when the question asks for PEC-backed PV safety?",
       "options": [
         {
           "id": "a",
-          "text": "A) The maximum number of hours the sun is above the horizon in a single day"
+          "text": "Checking the PV source and output circuit definitions."
         },
         {
           "id": "b",
-          "text": "B) The equivalent hours of 1000 W/m² irradiance per day, used for energy yield calculations"
+          "text": "Reviewing disconnect grouping and marking."
         },
         {
           "id": "c",
-          "text": "C) The hours between sunrise and sunset when solar panels generate any measurable power"
+          "text": "Using tariff or market assumptions as the answer when the source-backed issue is circuit protection, disconnecting, grounding, or inverter behavior."
         },
         {
           "id": "d",
-          "text": "D) The total daily radiation integrated and normalized to a constant power value of 500 W/m²"
+          "text": "Confirming inverter behavior after utility voltage loss."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This confuses PSH with daylight hours. In Manila, daylight may be 11–13 hours, but PSH is only 5.0 hours average because actual irradiance dips below 1000 W/m² in mornings and evenings.",
-        "c": "This conflates PSH with the entire generation window. PSH accounts only for hours when irradiance reaches 1000 W/m² equivalent, not the full sunrise-to-sunset period.",
-        "d": "Using 500 W/m² as the normalization standard is non-standard and would double the PSH value, making it useless for design calculations pegged to IEC 61215 standard test conditions (1000 W/m²).",
-        "correct": "Peak sun hours is a normalized measure: equivalent hours of 1000 W/m² irradiance per day. For the Philippines, PSH ranges 4.5–5.5 kWh/m²/day. This metric decouples actual irradiance variation from system sizing, making calculations simple and standardized across regions.",
-        "takeaway": "PSH is a dimensionless design metric: 1 PSH = 1 hour at 1000 W/m². Philippines 4.5–5.5 PSH means daily energy is equivalent to 4.5–5.5 kWh per square meter."
-      },
+      "rationale": "Using tariff or market assumptions as the answer when the source-backed issue is circuit protection, disconnecting, grounding, or inverter behavior. This answer matches PEC refined markdown lines 29231-29720.",
       "explanation": null,
       "code_citation": "Article Section 3: Solar Insolation in the Philippines; IEC 61215 standard test conditions",
       "bloom_level": "remember",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-003-08-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.150262+00:00",
       "content_hash": "sha256:c8b4d7afa296124e0e699679ed615e4a43dde19e95286e9f3d2db398756ae8cd"
     }
   ]

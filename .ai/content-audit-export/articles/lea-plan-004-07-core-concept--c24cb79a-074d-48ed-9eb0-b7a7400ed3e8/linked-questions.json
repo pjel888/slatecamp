@@ -8,23 +8,23 @@
       "question_id": "0492b28b-17b2-41b0-acb4-f0b2a48a5575",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A proposed residential subdivision is submitted for zoning compliance review. The zoning ordinance for the site is marked R-2 (Medium-Density Residential). The proposed project includes 150 residential units with 25% open space allocation. What is the first regulatory check that must be completed?",
+      "text": "What is the first source-safe step in site-level zoning analysis?",
       "options": [
         {
           "id": "a",
-          "text": "Verify that residential use is permitted in the R-2 zone and identify applicable setback, height, and density standards"
+          "text": "Identify the applicable zoning map and district before applying use or dimensional controls."
         },
         {
           "id": "b",
-          "text": "Confirm that the CLUP for the municipality permits residential development in this area, ensuring alignment with the comprehensive land use plan"
+          "text": "Start by choosing the architect’s preferred use."
         },
         {
           "id": "c",
-          "text": "Obtain approval from the city/municipal planning office for the project, including a review of environmental impact assessments and traffic studies"
+          "text": "Ignore the ordinance if the CLUP has a broad vision statement."
         },
         {
           "id": "d",
-          "text": "Verify that the developer has registered with DHSUD per PD 957, including submission of all necessary documentation and fees"
+          "text": "Apply a national default FAR without checking the local ordinance."
         }
       ],
       "correct_option_id": "a",
@@ -32,14 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The first regulatory gate is zoning compliance: Is the proposed use permitted in the designated zone? Setback and height standards follow. CLUP conformity is separate (DHSUD reviews); zoning ordinance is the site-specific legal constraint.",
-        "b": "CLUP review is important but occurs at municipal level with DHSUD; zoning compliance is the site-specific gate.",
-        "c": "Planning office review happens after zoning compliance is confirmed.",
-        "d": "PD 957 registration applies to subdivision developers but follows zoning approval, not before it.",
-        "correct": "The first regulatory gate is zoning compliance: Is the proposed use permitted in the designated zone? Setback and height standards follow. CLUP conformity is separate (DHSUD reviews); zoning ordinance is the site-specific legal constraint.",
-        "takeaway": "Zoning analysis begins with: Is the proposed use permitted in the designated zone?"
-      },
+      "rationale": "Zoning analysis begins with the applicable local zoning district and ordinance.",
       "explanation": null,
       "code_citation": "Municipal Zoning Ordinance Framework; RA 7160",
       "bloom_level": "remember",
@@ -52,45 +45,38 @@
       "model_id": "ALE-PLAN-004-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.076631+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.833278+00:00",
       "content_hash": "sha256:4094429da36f53b14f7dd64e3e415d985d3e611d1425346eae5366306217df6e"
     },
     {
       "question_id": "7f4837d8-bd19-4a5b-b389-e88f59c67cb9",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "According to Philippine municipal zoning law, what authority is responsible for adopting the zoning ordinance that implements a Comprehensive Land Use Plan (CLUP)?",
+      "text": "A problem gives a 1,000 sq.m lot and 40% maximum lot coverage. What is the maximum covered area?",
       "options": [
         {
           "id": "a",
-          "text": "The Mayor of the municipality or city who issues the executive order implementing the land use plan"
+          "text": "400 sq.m"
         },
         {
           "id": "b",
-          "text": "The Sanggunian Bayan (municipal council) or Sangguniang Panlungsod (city council)"
+          "text": "40 sq.m"
         },
         {
           "id": "c",
-          "text": "DHSUD (Department of Human Settlements and Urban Development) through a national directive"
+          "text": "600 sq.m"
         },
         {
           "id": "d",
-          "text": "The Municipal Planning and Development Office which prepares and enforces the zoning regulations"
+          "text": "1,400 sq.m"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The Mayor signs the ordinance but does not adopt it; adoption requires legislative action.",
-        "b": "Per RA 7160, the legislative body (Sanggunian Bayan for municipalities, Sangguniang Panlungsod for cities) adopts the zoning ordinance through legislative action. The Mayor signs it, but legislative adoption is required for legal force.",
-        "c": "DHSUD reviews the CLUP for conformity with national standards; DHSUD does not adopt local zoning ordinances.",
-        "d": "The planning office drafts the ordinance but the Sanggunian adopts it legislatively.",
-        "correct": "Per RA 7160, the legislative body (Sanggunian Bayan for municipalities, Sangguniang Panlungsod for cities) adopts the zoning ordinance through legislative action. The Mayor signs it, but legislative adoption is required for legal force.",
-        "takeaway": "Zoning ordinances are adopted by the Sanggunian (legislative body); the Mayor signs; the planning office drafts."
-      },
+      "rationale": "1,000 sq.m multiplied by 0.40 equals 400 sq.m.",
       "explanation": null,
       "code_citation": "RA 7160 (Local Government Code, 1991)",
       "bloom_level": "remember",
@@ -103,45 +89,38 @@
       "model_id": "ALE-PLAN-004-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.831358+00:00",
       "content_hash": "sha256:0216761c713e65542e86b7c2cb029e949a3352d49bcf1be98de350730151735f"
     },
     {
       "question_id": "6c9396b1-dae6-48f8-94fb-ce214a7fd2e1",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A zoning ordinance specifies that in an R-1 (Low-Density Residential) zone, the maximum lot coverage is 40% and the FAR (Floor Area Ratio) is 0.8. A developer owns a 1,500 sq.m. lot and proposes a 2-story residential building. What is the maximum buildable floor area that complies with zoning?",
+      "text": "A 3-hectare site requires 25% open space under the stated ordinance. How much open space is required?",
       "options": [
         {
           "id": "a",
-          "text": "1,200 sq.m. (40% lot coverage × 1,500 sq.m.)"
+          "text": "0.75 hectare or 7,500 sq.m"
         },
         {
           "id": "b",
-          "text": "1,200 sq.m. (FAR 0.8 × 1,500 sq.m.)"
+          "text": "0.25 hectare or 2,500 sq.m"
         },
         {
           "id": "c",
-          "text": "The stricter of the two limits: 1,200 sq.m."
+          "text": "1.25 hectares or 12,500 sq.m"
         },
         {
           "id": "d",
-          "text": "3,000 sq.m. (2 stories × 1,500 sq.m.)"
+          "text": "3.25 hectares or 32,500 sq.m"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Lot coverage alone = 600 sq.m. footprint, but the question asks total buildable floor area.",
-        "b": "FAR 0.8 × 1,500 = 1,200 sq.m. total buildable area. This is correct IF lot coverage is not more restrictive; but both apply.",
-        "c": "Lot coverage: 40% × 1,500 = 600 sq.m. (footprint). FAR: 0.8 × 1,500 = 1,200 sq.m. (total buildable area). Both limits apply; the stricter (lot coverage) limits buildable area to a single-story footprint of 600 sq.m. If a 2-story building, total floor area = 1,200 sq.m. (600 sq.m. × 2 stories), which equals FAR limit. Both limits are satisfied by a building with 600 sq.m. footprint and 2 stories = 1,200 sq.m. total.",
-        "d": "This ignores the FAR limit entirely; 3,000 sq.m. exceeds FAR 0.8 limit.",
-        "correct": "Lot coverage: 40% × 1,500 = 600 sq.m. (footprint). FAR: 0.8 × 1,500 = 1,200 sq.m. (total buildable area). Both limits apply; both limits allow exactly 1,200 sq.m. total: 600 sq.m. footprint (40% coverage) x 2 stories = 1,200 sq.m. (FAR 0.8). If a 2-story building, total floor area = 1,200 sq.m. (600 sq.m. × 2 stories), which equals FAR limit. Both limits are satisfied by a building with 600 sq.m. footprint and 2 stories = 1,200 sq.m. total.",
-        "takeaway": "Multiple zoning constraints (coverage, FAR, height) apply together; the building must satisfy all of them."
-      },
+      "rationale": "Three hectares times 25 percent equals 0.75 hectare, or 7,500 sq.m.",
       "explanation": null,
       "code_citation": "Municipal Zoning Ordinance; FAR and Lot Coverage Analysis",
       "bloom_level": "remember",
@@ -154,45 +133,38 @@
       "model_id": "ALE-PLAN-004-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.837081+00:00",
       "content_hash": "sha256:67205c6b70102dbb161eb8166c37125d2ddef120f78cb9e204c713cdb21eb17f"
     },
     {
       "question_id": "0e1d5b21-eee4-49fb-8157-0466141836b6",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A municipal zoning ordinance contains the following setback requirements for an R-3 (High-Density Residential) zone: Front setback = 10 meters, Side setbacks = 5 meters each, Rear setback = 7.5 meters. The site is rectangular, 40 meters wide (frontage) and 50 meters deep. What is the maximum buildable width (perpendicular to the front of the site) after applying all setback requirements?",
+      "text": "If the zoning ordinance says the proposed use is prohibited in the district, what is the source-safe conclusion?",
       "options": [
         {
           "id": "a",
-          "text": "30 meters (40m frontage minus 10m front setback, considering only the front setback)"
+          "text": "The proposal is noncompliant unless the ordinance provides a valid variance, conditional-use, rezoning, or amendment path."
         },
         {
           "id": "b",
-          "text": "25 meters (40m width minus 5m each side setback, assuming symmetrical reduction)"
+          "text": "The proposal may proceed because the designer prefers it."
         },
         {
           "id": "c",
-          "text": "40 meters (no width setback reduction, assuming setbacks apply only to depth)"
+          "text": "The CLUP automatically overrides the ordinance for one project."
         },
         {
           "id": "d",
-          "text": "30 meters (40m width minus total of 10m side setbacks)"
+          "text": "The planning office can waive the law without a defined process."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Students confuse setback directions: front and rear setbacks reduce site DEPTH, while side setbacks reduce site WIDTH. This confusion reverses which setbacks affect the buildable envelope dimensions.",
-        "b": "This answer is numerically close but arrives at 25m by subtracting side setbacks; correct calculation is 40 − 5 − 5 = 30m.",
-        "c": "Side setbacks clearly reduce buildable width.",
-        "d": "Front setback of 10 meters reduces depth (not width); side setbacks of 5 meters each reduce width. Buildable width = 40m site width − 5m (left side) − 5m (right side) = 30 meters.",
-        "correct": "Front setback of 10 meters reduces depth (not width); side setbacks of 5 meters each reduce width. Buildable width = 40m site width − 5m (left side) − 5m (right side) = 30 meters.",
-        "takeaway": "Setback geometry: Front/rear setbacks reduce depth; side setbacks reduce width. Both must be applied for full envelope."
-      },
+      "rationale": "The zoning ordinance is the enforceable local rule implementing the CLUP.",
       "explanation": null,
       "code_citation": "Municipal Zoning Ordinance; Setback Analysis",
       "bloom_level": "apply",
@@ -205,45 +177,38 @@
       "model_id": "ALE-PLAN-004-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.830422+00:00",
       "content_hash": "sha256:16a00d2c240d9d06b847e975563f100b5e28b321eb59e5b5bf5dc42bccf358f1"
     },
     {
       "question_id": "77ea5770-beb5-4e91-8898-2b3c424da726",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A 3-hectare site is zoned R-2 (Medium-Density Residential). The zoning ordinance requires 25% minimum open space for residential development per PD 957 Sec. 9 and municipal zoning ordinance. How much of the site must be dedicated to open space (parks, playgrounds, community facilities)?",
+      "text": "Which control should be applied when the exam item supplies local zoning numbers?",
       "options": [
         {
           "id": "a",
-          "text": "0.5 hectares (approximately 5,000 sq.m.)"
+          "text": "The numbers stated in the local ordinance or problem facts."
         },
         {
           "id": "b",
-          "text": "0.75 hectares (approximately 7,500 sq.m.)"
+          "text": "A memorized generic national zoning value."
         },
         {
           "id": "c",
-          "text": "1.0 hectare (approximately 10,000 sq.m.)"
+          "text": "A value from an unrelated fire-code rule."
         },
         {
           "id": "d",
-          "text": "1.5 hectares (approximately 15,000 sq.m.)"
+          "text": "A value from a different municipality."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.5 hectares is approximately 17% of 3 hectares — too low.",
-        "b": "25% of 3 hectares = 0.75 hectares. Convert: 3 hectares = 30,000 sq.m.; 25% of 30,000 = 7,500 sq.m. = 0.75 hectares. This open space must be dedicated to parks, playgrounds, and community facilities.",
-        "c": "1.0 hectare is approximately 33% — exceeds the 25% requirement.",
-        "d": "1.5 hectares is 50% — far exceeds the requirement.",
-        "correct": "25% of 3 hectares = 0.75 hectares. Convert: 3 hectares = 30,000 sq.m.; 25% of 30,000 = 7,500 sq.m. = 0.75 hectares. This open space must be dedicated to parks, playgrounds, and community facilities.",
-        "takeaway": "Open space calculation: multiply site area by percentage requirement. PD 957 Sec. 9: 30% for residential subdivisions >1ha; local zoning ordinances may specify different percentages."
-      },
+      "rationale": "Zoning standards are ordinance-specific unless the item names another controlling law.",
       "explanation": null,
       "code_citation": "PD 1216 (Open Space Requirement in Residential Subdivisions)",
       "bloom_level": "apply",
@@ -256,45 +221,38 @@
       "model_id": "ALE-PLAN-004-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.834796+00:00",
       "content_hash": "sha256:ae4fe7c0a5dcbeff191629277379337b379c6eaa68d7674f91d9ffba56591e63"
     },
     {
       "question_id": "dea6a7ee-8996-444b-82bd-6ccfb2018cab",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A municipal zoning ordinance designates a 1-hectare site as C-2 (Commercial). The ordinance specifies that retail uses are permitted, offices are permitted, but residential uses are prohibited. A developer proposes a mixed-use project with 40% commercial (retail) and 60% residential (apartments). What zoning status applies to this proposal?",
+      "text": "Who enacts the zoning ordinance used in site analysis?",
       "options": [
         {
           "id": "a",
-          "text": "The project is fully compliant; mixed-use projects are inherently permitted in commercial zones, provided they meet all other local regulations and guidelines"
+          "text": "The Sanggunian through legislative action."
         },
         {
           "id": "b",
-          "text": "The retail component is permitted by right; the residential component is prohibited and would require a zoning variance or conditional use permit"
+          "text": "The CPDC or MPDC acting alone."
         },
         {
           "id": "c",
-          "text": "The project is prohibited and cannot be approved under the current zoning, unless a comprehensive plan amendment is pursued"
+          "text": "The project owner."
         },
         {
           "id": "d",
-          "text": "The project requires DHSUD approval before it can proceed, including a detailed environmental impact assessment"
+          "text": "The mayor acting without the Sanggunian."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mixed-use is not automatically permitted; each component must comply with zoning rules.",
-        "b": "The retail portion complies with C-2 zoning (permitted use); the residential portion violates C-2 zoning (prohibited use). The developer must seek a conditional use permit or zoning variance to allow residential, or redesign to eliminate residential.",
-        "c": "The project is not prohibited outright; it can proceed if the zoning violation is resolved through approval of a conditional use permit.",
-        "d": "DHSUD reviews CLUP conformity at the municipal level; zoning approval is a local matter.",
-        "correct": "The retail portion complies with C-2 zoning (permitted use); the residential portion violates C-2 zoning (prohibited use). The developer must seek a conditional use permit or zoning variance to allow residential, or redesign to eliminate residential.",
-        "takeaway": "Each use component in a mixed-use project must independently comply with zoning; if one use is prohibited, a variance/conditional use permit is required."
-      },
+      "rationale": "RA 7160 and EO 72 connect zoning ordinance enactment to the Sanggunian.",
       "explanation": null,
       "code_citation": "Municipal Zoning Ordinance; Conditional Use Permit Framework",
       "bloom_level": "apply",
@@ -307,45 +265,38 @@
       "model_id": "ALE-PLAN-004-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.828952+00:00",
       "content_hash": "sha256:20725729006ad408e1a89a87a8b768f55ea0a1f9b74d47b9c6695ebae3fefcf7"
     },
     {
       "question_id": "708f85dc-c043-4fa4-a02a-322be632414f",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A zoning ordinance specifies the following standards for a C-3 (Highway Commercial) zone: setback from street = 5 meters, setback from side/rear = 3 meters, maximum height = 10 stories, minimum lot area = 1,000 sq.m., and FAR (Floor Area Ratio) = 2.5. A developer proposes a 12-story office building on a 2,000 sq.m. lot. What zoning violations occur?",
+      "text": "Why is CLUP consistency relevant in zoning analysis?",
       "options": [
         {
           "id": "a",
-          "text": "Only height violation (12 stories exceed 10-story limit), which requires a variance or redesign to comply with zoning regulations"
+          "text": "The zoning ordinance implements the CLUP and should be in consonance with the approved plan."
         },
         {
           "id": "b",
-          "text": "Height violation and FAR violation (total buildable area exceeds 2.5 × lot area)"
+          "text": "The CLUP is unrelated to zoning."
         },
         {
           "id": "c",
-          "text": "No violations; the lot size exceeds the minimum and the building satisfies setback requirements, assuming all other zoning conditions are met"
+          "text": "The CLUP cancels all local ordinances automatically."
         },
         {
           "id": "d",
-          "text": "FAR violation only; height is determined by other factors such as structural design and local ordinances"
+          "text": "The CLUP is only a private developer guideline."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Height is violated, but FAR is also violated; a 12-story building exceeds FAR limit.",
-        "b": "Height violation: 12 stories exceed 10-story limit. FAR violation: FAR 2.5 on 2,000 sq.m. = 5,000 sq.m. maximum buildable area; a 12-story building exceeds this. Setbacks and lot area are adequate but do not cure the height and FAR violations.",
-        "c": "Height clearly violates the 10-story limit. Minimum lot size compliance does not waive height/FAR limits.",
-        "d": "Both height and FAR are violations; FAR is not 'only' violation.",
-        "correct": "Height violation: 12 stories exceed 10-story limit. FAR violation: FAR 2.5 on 2,000 sq.m. = 5,000 sq.m. maximum buildable area; a 12-story building exceeds this. Setbacks and lot area are adequate but do not cure the height and FAR violations.",
-        "takeaway": "Multiple zoning standards apply simultaneously: use, setback, height, FAR, lot coverage. Violating any one requires variance/conditional use permit."
-      },
+      "rationale": "RA 7160 requires integrated zoning ordinances in consonance with the approved CLUP.",
       "explanation": null,
       "code_citation": "Municipal Zoning Ordinance Standards",
       "bloom_level": "analyze",
@@ -358,45 +309,38 @@
       "model_id": "ALE-PLAN-004-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.834052+00:00",
       "content_hash": "sha256:30f346c5bb3359f06ed442a0e0ab92ab0dbd804812d05928fc0b7a328c3c9344"
     },
     {
       "question_id": "0f65c977-2d57-42a3-adb3-95b46c23bb8d",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A proposed commercial development is situated on a site zoned C-2 (Commercial). The zoning ordinance specifies that retail and office uses are permitted by right in C-2, but residential use is prohibited. Additionally, a national law (PD 1067) establishes a 20-meter water body easement around a river 25 meters from the site boundary. Which statement best describes the regulatory constraints on this development?",
+      "text": "A project exceeds the ordinance height limit. What should the exam answer look for?",
       "options": [
         {
           "id": "a",
-          "text": "Only zoning constraints apply; national water body easements do not affect local site planning, which misinterprets the hierarchy of regulations"
+          "text": "Noncompliance or a valid local variance/amendment path if provided by the ordinance."
         },
         {
           "id": "b",
-          "text": "Both zoning ordinance (C-2 use constraints) and PD 1067 easement (20m water body setback) must be satisfied; the site is partially constrained by the easement"
+          "text": "Automatic approval because height is aesthetic."
         },
         {
           "id": "c",
-          "text": "The PD 1067 easement is superseded by the local zoning ordinance; the developer may build across the easement if zoning permits, which inaccurately represents legal precedence"
+          "text": "Approval by the contractor alone."
         },
         {
           "id": "d",
-          "text": "National water body laws only apply to developments in rural areas; urban zoning supersedes them, which is a misunderstanding of the law's applicability"
+          "text": "No review because height is never a zoning matter."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "National laws like PD 1067 are binding on all development, not subordinate to local zoning.",
-        "b": "Site planning must comply with BOTH local zoning AND national law constraints. PD 1067 easements apply universally; they are not overridden by local zoning. The site must respect both the C-2 zoning use rules AND the PD 1067 easement distance.",
-        "c": "National law (PD 1067) is not superseded by local zoning ordinances.",
-        "d": "PD 1067 applies to all sites near water bodies, urban or rural.",
-        "correct": "Site planning must comply with BOTH local zoning AND national law constraints. PD 1067 easements apply universally; they are not overridden by local zoning. The site must respect both the C-2 zoning use rules AND the PD 1067 easement distance.",
-        "takeaway": "Site planning must satisfy BOTH local zoning AND national law constraints (PD 1067, PHIVOLCS, post-Yolanda restrictions, etc.). Neither supersedes the other."
-      },
+      "rationale": "Site zoning analysis checks ordinance dimensional controls such as height when given.",
       "explanation": null,
       "code_citation": "RA 7160; PD 1067; Regulatory Hierarchy",
       "bloom_level": "analyze",
@@ -409,45 +353,38 @@
       "model_id": "ALE-PLAN-004-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.836376+00:00",
       "content_hash": "sha256:fc6ae6402e8febc9f50ac6a02342b6cd41b1f4f66271a36cebf0530a0b70adfe"
     },
     {
       "question_id": "c82d2e20-708f-43f0-b096-ab96ed73e5b7",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A municipality is preparing to update its zoning ordinance to implement a newly adopted CLUP that emphasizes climate resilience and disaster risk reduction per RA 10121. The proposed zoning revisions include setback expansions near water bodies, height restrictions in flood-prone areas, and mandatory open space for retention ponds. What is the correct legal and procedural understanding of this update?",
+      "text": "Which source-safe statement avoids importing unrelated laws?",
       "options": [
         {
           "id": "a",
-          "text": "The Mayor may unilaterally adopt these zoning changes to implement the CLUP; no legislative approval is required, which could expedite the process but lacks checks and balances"
+          "text": "Apply water easements, fire limits, accessibility, or building-code yards only when the item names that source or gives those facts."
         },
         {
           "id": "b",
-          "text": "The updated zoning ordinance must be adopted by the Sanggunian (municipal/city council) as a legislative act and signed by the Mayor to have legal force"
+          "text": "Always apply every remembered law to every zoning item."
         },
         {
           "id": "c",
-          "text": "DHSUD must approve the zoning ordinance before it becomes effective, ensuring compliance with national standards"
+          "text": "Ignore the local zoning ordinance."
         },
         {
           "id": "d",
-          "text": "The zoning ordinance is automatically effective once the CLUP is approved by DHSUD; no separate zoning adoption is needed, which simplifies the process but may overlook local legislative input"
+          "text": "Use subdivision standards for all projects regardless of scope."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The Mayor cannot unilaterally adopt zoning ordinances; the Sanggunian must legislatively approve them.",
-        "b": "Per RA 7160, zoning ordinances must be adopted by the Sanggunian (legislative body) through an ordinance and signed by the Mayor. This is true regardless of whether the ordinance implements a CLUP or addresses climate resilience. Legislative adoption is a legal requirement.",
-        "c": "DHSUD reviews the CLUP for conformity with national standards, not the zoning ordinance itself.",
-        "d": "CLUP and zoning ordinance are separate documents; both must be formally adopted through their respective processes.",
-        "correct": "Per RA 7160, zoning ordinances must be adopted by the Sanggunian (legislative body) through an ordinance and signed by the Mayor. This is true regardless of whether the ordinance implements a CLUP or addresses climate resilience. Legislative adoption is a legal requirement.",
-        "takeaway": "Zoning ordinances are always adopted by the Sanggunian (legislative) and signed by the Mayor, regardless of their content or policy drivers."
-      },
+      "rationale": "A zoning item should be anchored to the named controlling source and stated facts.",
       "explanation": null,
       "code_citation": "RA 7160 (Local Government Code); RA 10121 (DRRM Act); Zoning Adoption Process",
       "bloom_level": "analyze",
@@ -460,45 +397,38 @@
       "model_id": "ALE-PLAN-004-07-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.835512+00:00",
       "content_hash": "sha256:18e475751f46e30cb6870df5bb17d78546b6f077c9c69ae6a43e7ab06bc8f3fb"
     },
     {
       "question_id": "a9df6931-21c2-48cb-8d91-cda5c88dbfe0",
       "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
       "topic_id": "3d4ef59b-2741-488f-8652-f08a3eae86e4",
-      "text": "A proposed industrial warehouse facility is submitted for zoning review. The site is designated I-2 (Light Industrial) in the municipal zoning ordinance. The ordinance lists 'warehousing' as a conditional use (not permitted by right) in I-2 zones, requiring a conditional use permit upon demonstration of traffic mitigation and dust control measures. What regulatory pathway must the developer follow?",
+      "text": "What does EO 72 add to site-level implementation?",
       "options": [
         {
           "id": "a",
-          "text": "Warehousing is prohibited in I-2 zones; the developer must relocate to an I-3 (Heavy Industrial) zone, which allows warehousing by right"
+          "text": "It links reviewed/approved land-use plans to local implementation responsibilities, including locational-clearance functions for locally significant projects."
         },
         {
           "id": "b",
-          "text": "The developer may proceed with the warehouse project immediately without additional approvals, assuming compliance with all other zoning requirements"
+          "text": "It abolishes local zoning ordinances."
         },
         {
           "id": "c",
-          "text": "The developer must apply for a conditional use permit, demonstrating compliance with traffic mitigation and dust control measures before project approval"
+          "text": "It transfers Sanggunian powers to private developers."
         },
         {
           "id": "d",
-          "text": "The developer must apply for a zoning variance to change the I-2 designation to I-3, which involves a lengthy review process"
+          "text": "It says CLUPs are optional."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Warehousing is not prohibited; it is a conditional use — permitted with approval of conditions.",
-        "b": "Conditional uses are not permitted by right; approval is required.",
-        "c": "Conditional use (permitted with conditions) is different from permitted by right and different from prohibited. The developer must apply for a conditional use permit and demonstrate that conditions (traffic study, dust control plan) are met.",
-        "d": "A variance changes the zoning designation; a conditional use permit approves a use within existing zoning.",
-        "correct": "Conditional use (permitted with conditions) is different from permitted by right and different from prohibited. The developer must apply for a conditional use permit and demonstrate that conditions (traffic study, dust control plan) are met.",
-        "takeaway": "Three zoning use categories: Permitted by right (automatic), Conditional use (requires CUP), Prohibited (no approval possible). Conditional use is the middle ground."
-      },
+      "rationale": "EO 72 addresses CLUP review and implementation, including devolved local clearance functions where conditions are met.",
       "explanation": null,
       "code_citation": "Municipal Zoning Ordinance; Conditional Use Permit Process",
       "bloom_level": "apply",
@@ -511,7 +441,7 @@
       "model_id": "ALE-PLAN-004-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.832320+00:00",
       "content_hash": "sha256:667517c0ef654bc87b08de13637f1f016085d1b1c3672209ad446a994dc917f6"
     }
   ]

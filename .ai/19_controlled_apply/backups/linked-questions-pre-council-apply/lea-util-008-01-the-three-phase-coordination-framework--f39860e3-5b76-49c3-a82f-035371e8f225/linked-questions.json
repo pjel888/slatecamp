@@ -1,0 +1,756 @@
+{
+  "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:86bffd29e83b36d894f3ce4ce3d63cac030d024e6bbebbbdce77d01edaa33f57",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "b7046144-71a4-4722-98b3-e0d856010c72",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "What primary building components are accommodated within the ceiling plenum space in a typical office building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structural reinforcement beams and column bracing systems, which are critical for building stability"
+        },
+        {
+          "id": "b",
+          "text": "Supply air ducts, return air plenums, electrical conduit, lighting, sprinkler lines, and plumbing drains"
+        },
+        {
+          "id": "c",
+          "text": "HVAC equipment, water heaters, and electrical switchgear, which are essential for building operations"
+        },
+        {
+          "id": "d",
+          "text": "Tenant storage and mechanical equipment access vaults, providing additional space for building services"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Structural elements are part of the structural system above the plenum, not within it.",
+        "c": "Major equipment like HVAC units and water heaters are housed in mechanical rooms, not in the plenum. The plenum only accommodates distribution components.",
+        "d": "Tenant storage is not a MEPF component. This confuses building use with building systems.",
+        "correct": "The ceiling plenum must accommodate supply ducts, return air plenums, electrical conduit, lighting fixtures, sprinkler lines, and plumbing drain lines. These components must be coordinated within the allocated 300-450mm depth.",
+        "takeaway": "Plenum space is a shared resource that must accommodate multiple building systems simultaneously. Proper depth allocation prevents conflicts between systems."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-008-01.mdx - Ceiling Plenum and Vertical Integration section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3df39317d5cfa98302be51eb2acc0afba6acfd31a46db0821be95594980f3cab"
+    },
+    {
+      "question_id": "5171aeed-b508-4a05-9d96-14ef0d3fad97",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "An electrical contractor, during shop drawing review, submits conduit routing that differs from the combined services drawings. The contractor's routing avoids a coordination conflict identified during BIM but creates a new conflict with sprinkler branch lines shown on the mechanical combined services drawing. How should the architect respond?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approve the contractor's routing since it resolves a prior conflict, ensuring that the new conflict is minor and manageable"
+        },
+        {
+          "id": "b",
+          "text": "Reject the routing and require the contractor to follow the combined services drawings without deviation, maintaining strict adherence to the original design intent"
+        },
+        {
+          "id": "c",
+          "text": "Initiate a coordination review involving the electrical and mechanical contractors to find a routing that satisfies both system requirements shown in the combined services drawings"
+        },
+        {
+          "id": "d",
+          "text": "Allow the contractor to proceed and document the new conflict as a punch list item for resolution during construction, ensuring it is addressed before project completion"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Approving the routing without verification of its impact on other systems repeats the clash detection and resolution process during construction, defeating the purpose of design-phase coordination.",
+        "b": "While combined services drawings are binding, a contractor may identify more efficient routing if properly coordinated with other trades. The architect should review the proposal's merit before rejecting it.",
+        "d": "Allowing conflicts to reach punch lists increases change orders, schedule delays, and coordination overhead during construction. Shop drawing review is the architect's opportunity to catch conflicts before installation begins.",
+        "correct": "Shop drawings are construction-phase documents that must align with the design-phase coordination decisions documented in combined services drawings. When a contractor proposes routing that differs from combined services drawings, the architect must verify the proposal doesn't create new conflicts. A coordination review between affected contractors ensures the revised routing satisfies all system requirements.",
+        "takeaway": "Shop drawing review is a critical coordination checkpoint. The architect must verify that any deviations from combined services drawings don't create new conflicts. When conflicts are identified, a brief coordination review is faster and cheaper than resolving them during construction."
+      },
+      "explanation": "Approving the routing without verification of its impact on other systems repeats the clash detection and resolution process during construction, defeating the purpose of design-phase coordination. While combined services drawings are binding, a contractor may identify more efficient routing if properly coordinated with other trades. The architect should review the proposal's merit before rejecting it. Allowing conflicts to reach punch lists increases change orders, schedule delays, and coordination overhead during construction. Shop drawing review is the architect's opportunity to catch conflicts before installation begins. Shop drawings are construction-phase documents that must align with the design-phase coordination decisions documented in combined services drawings. When a contractor proposes routing that differs from combined services drawings, the architect must verify the proposal doesn't create new conflicts. A coordination review between affected contractors ensures the revised routing satisfies all system requirements. Shop drawing review is a critical coordination checkpoint. The architect must verify that any deviations from combined services drawings don't create new conflicts. When conflicts are identified, a brief coordination review is faster and cheaper than resolving them during construction.",
+      "code_citation": "LEA-UTIL-008-01.mdx - Coordination Drawings and Documentation section and Construction Documents Approval section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:15:16.831055+00:00",
+      "content_hash": "sha256:ac68a4c872cc3a4fa9ea8459a6887e75d8293cab2f4a3945b47071b0347b46df"
+    },
+    {
+      "question_id": "99c074a7-064f-43bc-9300-faf33d9a46ad",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "During schematic design, the architectural team proposes a 3.0-meter floor-to-floor height for a mid-rise office building. What is the architect's primary coordination action regarding this dimension?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confirm with MEPF consultants that this height accommodates their preliminary layouts and system requirements"
+        },
+        {
+          "id": "b",
+          "text": "Automatically increase the height to 3.6 meters to ensure adequate MEP space, regardless of initial design constraints"
+        },
+        {
+          "id": "c",
+          "text": "Defer floor-to-floor height decisions until design development when MEP layouts are finalized, allowing for more flexibility"
+        },
+        {
+          "id": "d",
+          "text": "Reduce the height to 2.8 meters to minimize structural costs, even if it compromises MEP integration"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While buildings with high MEP density may require 4.0-4.5 meters, a 3.0-meter height may be adequate for standard office buildings. The architect should confirm requirements with consultants rather than automatically increasing dimensions.",
+        "c": "Deferring this decision to design development delays crucial decisions and may require expensive redesigns. Floor-to-floor height is established early in schematic design.",
+        "d": "Reducing floor-to-floor height to 2.8 meters would make MEPF coordination more difficult, not less. This would reduce available plenum space.",
+        "correct": "Floor-to-floor height decisions directly impact MEPF feasibility. The architect must confirm with MEPF consultants during schematic design that the proposed dimension accommodates their system concepts. This is a key coordination checkpoint.",
+        "takeaway": "Floor-to-floor height is a foundational architectural decision that must be confirmed with MEPF consultants early in schematic design. The architect cannot establish this dimension unilaterally."
+      },
+      "explanation": "While buildings with high MEP density may require 4.0-4.5 meters, a 3.0-meter height may be adequate for standard office buildings. The architect should confirm requirements with consultants rather than automatically increasing dimensions. Deferring this decision to design development delays crucial decisions and may require expensive redesigns. Floor-to-floor height is established early in schematic design. Reducing floor-to-floor height to 2.8 meters would make MEPF coordination more difficult, not less. This would reduce available plenum space. Floor-to-floor height decisions directly impact MEPF feasibility. The architect must confirm with MEPF consultants during schematic design that the proposed dimension accommodates their system concepts. This is a key coordination checkpoint. Floor-to-floor height is a foundational architectural decision that must be confirmed with MEPF consultants early in schematic design. The architect cannot establish this dimension unilaterally.",
+      "code_citation": "LEA-UTIL-008-01.mdx - Schematic Design Phase section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:15:16.978144+00:00",
+      "content_hash": "sha256:7af04f653482806a969c7f4475475aebabc317e70c6e15a63146ea5d85606155"
+    },
+    {
+      "question_id": "83a61677-5bb3-4a19-962c-34a38c83fb34",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "In BIM coordination workflow, what is the first step after each MEPF consultant models their discipline systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automated clash detection software is applied to combined models"
+        },
+        {
+          "id": "b",
+          "text": "Models are exported to a common format such as IFC"
+        },
+        {
+          "id": "c",
+          "text": "The architect reviews each model independently for code compliance"
+        },
+        {
+          "id": "d",
+          "text": "Construction documents are immediately prepared from the models"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While clash detection is a later step, models must first be made compatible through export to a common format.",
+        "c": "Individual model review occurs before export, not after. The sequencing of the BIM workflow requires format standardization first.",
+        "d": "Construction documents are produced only after clash resolution is complete, not during model export.",
+        "correct": "Models must be exported to a common format (typically IFC or proprietary exchange format) before they can be imported into a coordination platform for clash detection. This standardization allows different CAD platforms to communicate.",
+        "takeaway": "Understand the sequential steps in BIM coordination: discipline modeling → format export → platform import → automated clash detection → resolution."
+      },
+      "explanation": "While clash detection is a later step, models must first be made compatible through export to a common format. Individual model review occurs before export, not after. The sequencing of the BIM workflow requires format standardization first. Construction documents are produced only after clash resolution is complete, not during model export. Models must be exported to a common format (typically IFC or proprietary exchange format) before they can be imported into a coordination platform for clash detection. This standardization allows different CAD platforms to communicate. Understand the sequential steps in BIM coordination: discipline modeling → format export → platform import → automated clash detection → resolution.",
+      "code_citation": "LEA-UTIL-008-01.mdx - BIM Coordination and Clash Detection section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:15:17.413026+00:00",
+      "content_hash": "sha256:30a8d302c28f6571f01d4ac06d7b188048b992ae497f6023e4f566e3a6b2ff73"
+    },
+    {
+      "question_id": "7242acb5-f7bb-4174-a1cd-f64c39696527",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "In a Philippine high-rise building project, the plumbing engineer needs to route a 75mm waste stack vertically through the building. According to standard practice documented?, what is the most appropriate shaft to house this stack?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mechanical shaft (2.0m × 1.2m) to accommodate vibration isolation, which is not typically used for plumbing"
+        },
+        {
+          "id": "b",
+          "text": "Electrical riser (1.2m × 0.9m) to keep utilities together, which is not standard for waste stacks"
+        },
+        {
+          "id": "c",
+          "text": "Plumbing riser (0.9m × 0.6m) with hot water supply, cold water supply, and vent stacks"
+        },
+        {
+          "id": "d",
+          "text": "Dedicated plumbing-only shaft separate from other utilities, ensuring no interference with other systems"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The mechanical shaft is designed for HVAC ductwork and piping, not for plumbing stacks. Housing plumbing waste in a mechanical shaft would require unnecessarily large dimensions.",
+        "b": "Electrical risers must not be combined with wet plumbing systems due to safety and code requirements. Vertical separation is required.",
+        "d": "While dedicated shafts are sometimes used, standard Philippine practice combines related plumbing components (supply, waste, vent) in a single riser to minimize core area and distribution distances.",
+        "correct": "The plumbing riser (typical dimensions 0.9m × 0.6m) is designed to accommodate hot water supply, cold water supply, waste and vent stacks, valve boxes, and drainage sumps. A 75mm waste stack fits within this configuration with appropriate clearance.",
+        "takeaway": "Shaft sizing is determined by the systems housed within. Plumbing risers accommodate all plumbing stacks and valves; electrical risers are separate; mechanical shafts are separate. Proper shaft assignment is essential for efficient coordination."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-008-01.mdx - Shaft Design and Penetration section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b42eae66793ece2d722bc94ef9e2fc1721684c9425c88b3e026d6713c3060775"
+    },
+    {
+      "question_id": "caf4f98a-13cd-42c7-a3fe-d8ad9ff9bc73",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "During construction documents review, the combined services drawings show a 400mm-deep soffit created by supply ductwork in a zone with a 3.0-meter floor-to-floor height, 150mm structural slab, and 50mm finished ceiling. The architect needs to achieve 2.7 meters finished floor-to-ceiling height. What coordination action is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Request the mechanical engineer to reduce duct depth to 350mm to increase finished ceiling height by 50mm"
+        },
+        {
+          "id": "b",
+          "text": "Increase the floor-to-floor height dimension by 200mm to accommodate the soffit depth without affecting finished height"
+        },
+        {
+          "id": "c",
+          "text": "Verify whether the soffit depth is essential or can be relocated to avoid this ceiling height impact"
+        },
+        {
+          "id": "d",
+          "text": "Accept the lower ceiling height as a necessary compromise for adequate MEPF distribution"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Requesting duct depth reduction to 350mm may not be feasible if the duct size is required by the mechanical system's air handling capacity. This forces the mechanical engineer to justify the requirement rather than exploring alternative routing.",
+        "b": "Increasing floor-to-floor height is costly and should only be done after exploring ductwork relocation options. This is a structural design change with major cost implications.",
+        "d": "Accepting the lower finished ceiling height without exploration misses coordination opportunities. Modern MEPF coordination requires exploring all resolution strategies before accepting constraints.",
+        "correct": "Before accepting a constraint that reduces finished ceiling height to below-target dimensions, the architect should verify with the mechanical consultant whether the soffit location and depth are essential or can be relocated (to a corridor, mechanical room area, or adjusted in depth). Coordination may find a solution that maintains the target finished height.",
+        "takeaway": "Soffit depth and location significantly impact finished ceiling height and tenant marketability. The architect must verify that deep soffits are unavoidable through design confirmation with MEP consultants. Coordination drawings must clearly show soffit implications on finished dimensions."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-008-01.mdx - Ceiling Plenum and Vertical Integration section and Architectural Impacts sections",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:daae4d994d654afaf5b64e5c995f3048f561135866c5db01f6a244283dcc83f3"
+    },
+    {
+      "question_id": "4ec5b27f-22b4-40c3-8eaa-9f47de128f4c",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "In a high-rise office building with four separate discipline models (architecture, mechanical, electrical, plumbing), the BIM coordination software identifies 47 spatial clashes. The construction documents deadline is in three weeks. What is the architect's priority coordination approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defer detailed clash resolution and proceed to construction documents, resolving clashes during construction administration through field coordination"
+        },
+        {
+          "id": "b",
+          "text": "Categorize clashes by severity, focus on major conflicts affecting building systems or structural integrity, and require subconsultants to resolve their discipline conflicts"
+        },
+        {
+          "id": "c",
+          "text": "Require all 47 clashes to be resolved before construction documents are finalized, extending the schedule if necessary to achieve zero-clash coordination"
+        },
+        {
+          "id": "d",
+          "text": "Eliminate the electrical and plumbing models from BIM coordination to reduce clash count and accelerate the process toward the deadline"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Deferring clash resolution to construction creates costly change orders, schedule delays, and potential safety issues. All major clashes must be resolved before construction begins per the three-phase coordination framework.",
+        "c": "While three weeks is tight, requiring all 47 clashes to be resolved—including minor spacing issues—may not be necessary. Severity-based prioritization is more efficient.",
+        "d": "Eliminating discipline models defeats the purpose of BIM coordination. The architect should work with all consultants despite the schedule pressure.",
+        "correct": "The architect should categorize clashes by impact severity. Major clashes affecting building systems (duct intersecting structural beam) require resolution before construction documents. Minor clashes (conduit spacing) may be acceptable as long as systems function. Each consultant should resolve conflicts within their discipline first. This prioritization allows design advancement while addressing critical issues.",
+        "takeaway": "BIM coordination in tight schedules requires disciplined prioritization. The architect focuses on major clashes that affect building form, while subconsultants manage discipline-specific conflicts. This stratified approach allows construction documents advancement while maintaining coordination quality."
+      },
+      "explanation": "Deferring clash resolution to construction creates costly change orders, schedule delays, and potential safety issues. All major clashes must be resolved before construction begins per the three-phase coordination framework. While three weeks is tight, requiring all 47 clashes to be resolved—including minor spacing issues—may not be necessary. Severity-based prioritization is more efficient. Eliminating discipline models defeats the purpose of BIM coordination. The architect should work with all consultants despite the schedule pressure. The architect should categorize clashes by impact severity. Major clashes affecting building systems (duct intersecting structural beam) require resolution before construction documents. Minor clashes (conduit spacing) may be acceptable as long as systems function. Each consultant should resolve conflicts within their discipline first. This prioritization allows design advancement while addressing critical issues. BIM coordination in tight schedules requires disciplined prioritization. The architect focuses on major clashes that affect building form, while subconsultants manage discipline-specific conflicts. This stratified approach allows construction documents advancement while maintaining coordination quality.",
+      "code_citation": "LEA-UTIL-008-01.mdx - BIM Coordination and Clash Detection section and Design Development Approval section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:15:16.681881+00:00",
+      "content_hash": "sha256:74b78ffe9c663b5e6ec339abffa4ecec0c3d317a7b3974c796a82f5175af6b23"
+    },
+    {
+      "question_id": "3bc1b825-86b5-434e-8338-b0387dc1d435",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "What is firestopping in the context of MEPF coordination, and why is it required per RA 9514 Fire Code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Installing fire extinguishers at mechanical equipment locations, which is a separate requirement from firestopping"
+        },
+        {
+          "id": "b",
+          "text": "Sealing gaps between ductwork/pipes and shaft structure to prevent flame and smoke spread through penetrations"
+        },
+        {
+          "id": "c",
+          "text": "Installing fire-rated doors on mechanical rooms, which is a different fire safety measure"
+        },
+        {
+          "id": "d",
+          "text": "Creating firebreaks between tenant spaces and MEP distribution, which involves compartmentalization rather than firestopping"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fire extinguishers are fire protection equipment, not firestopping. Firestopping is a penetration seal, not active fire suppression.",
+        "c": "Fire-rated doors protect rooms but do not address shaft penetration sealing.",
+        "d": "Firebreaks between tenant spaces are architectural fire-separation elements, separate from firestopping. Firestopping specifically addresses gaps created by MEP penetrations through fire-rated assemblies.",
+        "correct": "Firestopping is the sealing of gaps between penetrating systems (ducts, pipes) and the surrounding structure. This maintains the fire-rating of multi-floor shafts by preventing flame and smoke transmission. It is a critical life safety requirement coordinated between architect and MEPF consultants, mandated by RA 9514 Fire Code requirements for fire-resistive construction.",
+        "takeaway": "Firestopping is a mandatory architectural component coordinated with MEP penetrations. Common firestopping systems include mineral wool wrapping, silicone sealant, expanding foam, and fire-rated sleeves. The architect must ensure firestopping designs are compatible with MEP routing."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-008-01.mdx - Fire-Rated Shaft Penetrations section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:69078436161529f029bd4d07865b35bcad20a6fc866e65bec3c79463bd0411f5"
+    },
+    {
+      "question_id": "630a2fc3-1f6f-4b39-bcfc-d521ccf6373d",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "What information is typically documented in coordination schedules that support the combined services drawings during construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Equipment purchase costs, supplier contact information, and delivery schedules for major mechanical and electrical components"
+        },
+        {
+          "id": "b",
+          "text": "Shaft locations and dimensions, bulkhead depths, equipment access locations, and penetration firestopping specifications"
+        },
+        {
+          "id": "c",
+          "text": "Construction phasing sequence and contractor crew assignments for each floor of the building during the construction period"
+        },
+        {
+          "id": "d",
+          "text": "Tenant improvement allowances and final material selections for interior finishes as coordinated with the building owner"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Purchase costs and supplier information are procurement documents, not coordination schedules. These are managed separately from design coordination.",
+        "c": "Construction phasing and contractor assignments are construction administration documents prepared during project execution, not design coordination documents.",
+        "d": "Tenant improvement allowances and interior material selections are project management and design development documents, not coordination schedules. Coordination schedules focus on building systems spatial relationships.",
+        "correct": "Coordination schedules document shaft dimensions, bulkhead locations, major equipment locations with access requirements, penetration locations with firestopping specifications, and access panel locations for maintenance. These provide consistent reference information across the building.",
+        "takeaway": "Coordination schedules are reference tools for construction teams showing MEPF spatial requirements. They ensure consistency in shaft sizing, bulkhead depths, and firestopping across multiple floors and building sections. These schedules prevent installation conflicts caused by dimensional inconsistencies."
+      },
+      "explanation": "Purchase costs and supplier information are procurement documents, not coordination schedules. These are managed separately from design coordination. Construction phasing and contractor assignments are construction administration documents prepared during project execution, not design coordination documents. Tenant improvement allowances and interior material selections are project management and design development documents, not coordination schedules. Coordination schedules focus on building systems spatial relationships. Coordination schedules document shaft dimensions, bulkhead locations, major equipment locations with access requirements, penetration locations with firestopping specifications, and access panel locations for maintenance. These provide consistent reference information across the building. Coordination schedules are reference tools for construction teams showing MEPF spatial requirements. They ensure consistency in shaft sizing, bulkhead depths, and firestopping across multiple floors and building sections. These schedules prevent installation conflicts caused by dimensional inconsistencies.",
+      "code_citation": "LEA-UTIL-008-01.mdx - Coordination Drawings and Documentation section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:15:17.125573+00:00",
+      "content_hash": "sha256:33c5c0965ee551f0c0a06aad3dca6684afd8c1e72846406a1b5bc5f667d6a801"
+    },
+    {
+      "question_id": "43cbfcbd-6340-450c-8bec-076918a2ffdb",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "During design development, the electrical engineer proposes placing the main electrical distribution panel in a location that requires long vertical conduit runs through three floors. The architect notes this creates extensive MEP routing conflicts in the building core. What is the architect's appropriate coordination response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the location since electrical panel placement is the engineer's design decision, unless it violates building codes"
+        },
+        {
+          "id": "b",
+          "text": "Require the engineer to relocate the panel to minimize core conflicts and conduit run distances, with final location subject to architect approval"
+        },
+        {
+          "id": "c",
+          "text": "Suggest moving the panel but allow the engineer to decide if the longer runs are acceptable, considering potential cost implications"
+        },
+        {
+          "id": "d",
+          "text": "Request value engineering to eliminate some floors' electrical panels to reduce core congestion, ensuring compliance with safety standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While electrical panel design is the engineer's responsibility, the architect coordinates all system locations within the building's spatial framework. Panel location has architectural implications.",
+        "c": "Suggesting without requiring gives the engineer discretion over a coordination decision. The architect must maintain authority over system locations affecting building coordination.",
+        "d": "Eliminating panels to reduce clashes is not standard practice and would reduce electrical system redundancy and operational efficiency.",
+        "correct": "The architect has authority to require MEPF consultants to optimize their system locations for coordinated building performance. Panel location affects core area efficiency, plenum depth requirements, and coordination complexity. The architect should require the engineer to explore more efficient locations within the building's architectural constraints. Final approval remains with the architect.",
+        "takeaway": "The architect coordinates system locations (not system design) to optimize building efficiency. MEPF consultants must justify locations that create extensive horizontal distribution or coordination conflicts. Equipment location is a shared responsibility requiring design development collaboration."
+      },
+      "explanation": "While electrical panel design is the engineer's responsibility, the architect coordinates all system locations within the building's spatial framework. Panel location has architectural implications. Suggesting without requiring gives the engineer discretion over a coordination decision. The architect must maintain authority over system locations affecting building coordination. Eliminating panels to reduce clashes is not standard practice and would reduce electrical system redundancy and operational efficiency. The architect has authority to require MEPF consultants to optimize their system locations for coordinated building performance. Panel location affects core area efficiency, plenum depth requirements, and coordination complexity. The architect should require the engineer to explore more efficient locations within the building's architectural constraints. Final approval remains with the architect. The architect coordinates system locations (not system design) to optimize building efficiency. MEPF consultants must justify locations that create extensive horizontal distribution or coordination conflicts. Equipment location is a shared responsibility requiring design development collaboration.",
+      "code_citation": "LEA-UTIL-008-01.mdx - Shaft Design and Penetration section and Architectural Impacts section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:15:17.268033+00:00",
+      "content_hash": "sha256:3f6207c24518afeaebe22df08088ac2e5461bb5ae001c4518cc2cb12343f691c"
+    },
+    {
+      "question_id": "6909815b-027e-43da-96cc-e72d0d2d1ade",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "A value engineering proposal during design development suggests reducing the mechanical shaft size from 2.4m × 1.5m to 2.0m × 1.0m to reduce core area and save construction cost. What is the primary coordination risk of this change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The reduced shaft will limit future expansion of mechanical systems and may require rerouting during renovation"
+        },
+        {
+          "id": "b",
+          "text": "The smaller dimension will require the ductwork to be installed at a steeper angle, potentially affecting airflow"
+        },
+        {
+          "id": "c",
+          "text": "The mechanical system capacity will be reduced and heating/cooling efficiency will decrease, impacting energy consumption"
+        },
+        {
+          "id": "d",
+          "text": "The cost savings will be offset by increased labor for installation in a tighter space, complicating project timelines"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Ductwork routing angle is not determined by shaft size. Ducts are routed to serve space requirements, not to fit available shaft area.",
+        "c": "Mechanical system capacity is determined by equipment selection and duct sizing, not by shaft dimensions. A smaller shaft does not reduce system capacity, but it may prevent installation or service.",
+        "d": "While labor costs may increase in a tighter space, this is a secondary concern compared to long-term operational and maintenance issues.",
+        "correct": "Reducing shaft dimensions below the architect's confirmed requirements creates long-term operational constraints. A 2.4m × 1.5m shaft is established based on major duct sizes, return plenums, and maintenance access. Reducing to 2.0m × 1.0m may prevent future system modifications and create operational inefficiency. The architect should reject this value engineering proposal without mechanical engineer concurrence.",
+        "takeaway": "Value engineering decisions affecting MEPF systems must be reviewed with subconsultants. Reducing confirmed shaft dimensions creates construction risk and limits future flexibility. The architect must maintain authority over dimensional decisions that affect system coordination."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-008-01.mdx - Design Development Phase section and Architectural Impacts sections",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:64f448339c2bd7aeb8feb624fdddb31052aa927aa73e24500cc4d8aaeffd5442"
+    },
+    {
+      "question_id": "a3dd0607-3354-47ce-9088-3ecd15e35d3b",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "A clash detection report identifies that a return air duct at the third floor is passing through the location of a planned electrical panel. Which clash resolution strategy would most directly address this conflict within the mechanical system design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relocate the electrical panel to a different wall to clear the ductwork path, ensuring compliance with electrical code clearance requirements"
+        },
+        {
+          "id": "b",
+          "text": "Reroute the return air duct to an alternate path that avoids the electrical panel location"
+        },
+        {
+          "id": "c",
+          "text": "Modify the structural frame to create a larger opening for both systems, considering the impact on structural integrity and load distribution"
+        },
+        {
+          "id": "d",
+          "text": "Accept the clash as unavoidable and document it as a construction exception, noting potential future maintenance challenges"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the architect may require the electrical panel relocation, the preferred resolution is for the mechanical consultant to adjust their system's routing first within their discipline.",
+        "c": "Structural accommodation is a more costly and time-consuming resolution that should only be used when routing adjustments are not feasible.",
+        "d": "Documenting unresolved clashes creates construction risk. All major clashes must be resolved before construction documents are finalized per the three-phase coordination framework.",
+        "correct": "Route adjustment—moving ductwork to a new path—is a primary resolution strategy within the mechanical consultant's control. The mechanical engineer can typically find alternate routing paths that avoid conflicts.",
+        "takeaway": "Clash resolution strategies follow a priority: route adjustment (least cost), system redesign, structural accommodation, equipment relocation. The architect maintains final authority over which strategy is applied."
+      },
+      "explanation": "While the architect may require the electrical panel relocation, the preferred resolution is for the mechanical consultant to adjust their system's routing first within their discipline. Structural accommodation is a more costly and time-consuming resolution that should only be used when routing adjustments are not feasible. Documenting unresolved clashes creates construction risk. All major clashes must be resolved before construction documents are finalized per the three-phase coordination framework. Route adjustment—moving ductwork to a new path—is a primary resolution strategy within the mechanical consultant's control. The mechanical engineer can typically find alternate routing paths that avoid conflicts. Clash resolution strategies follow a priority: route adjustment (least cost), system redesign, structural accommodation, equipment relocation. The architect maintains final authority over which strategy is applied.",
+      "code_citation": "LEA-UTIL-008-01.mdx - BIM Coordination and Clash Detection section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:15:16.52982+00:00",
+      "content_hash": "sha256:ffc704196bc9fdef6379f75b7a0f48a64a1536d91008238f030990f87df4aae3"
+    },
+    {
+      "question_id": "4984d1d5-f80a-4261-882d-2005749b6d73",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "A sustainability initiative proposes integrating return air plenums with passive heating/cooling using exposed structural ceilings. This eliminates the suspended ceiling system in some zones, reducing plenum depth allocation from 450mm to 200mm. What coordination consideration must the architect address before approving this design change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verify that all MEPF systems (supply duct, electrical conduit, sprinklers, drains) can fit within the 200mm reduced plenum depth and confirm consultant approval"
+        },
+        {
+          "id": "b",
+          "text": "Approve the change immediately since sustainability benefits outweigh other considerations, regardless of potential conflicts"
+        },
+        {
+          "id": "c",
+          "text": "Request that the mechanical engineer increase system efficiency to compensate for the shallower plenum, ensuring no loss in performance"
+        },
+        {
+          "id": "d",
+          "text": "Limit the exposed ceiling approach to areas with low MEP density only, maintaining standard plenum depth elsewhere to avoid complications"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "MEPF system capacity is independent of plenum depth. Reducing plenum depth cannot be compensated for by increasing efficiency.",
+        "c": "While limiting exposed ceilings to low-density areas is possible, this approach reduces the sustainability benefit. The architect should first verify feasibility with consultants before limiting the strategy.",
+        "correct": "Reducing plenum depth from 450mm to 200mm has significant impacts on MEPF system routing and must be verified with all subconsultants. The architect must confirm that supply ducts (typically 300mm × 400mm or larger), electrical conduit bundles, sprinkler lines, and plumbing drains can fit within the reduced depth. This is not a sustainability decision alone—it's a MEPF coordination decision requiring engineer verification.",
+        "takeaway": "Architectural sustainability initiatives must be coordinated with MEPF system requirements. Reducing plenum depth requires confirmation that all distribution systems fit within the available space. Design modifications affecting building systems must have consultant concurrence before approval."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-008-01.mdx - Ceiling Plenum and Vertical Integration and Sustainability Integration sections",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6bd1dfa5c0771bccfdc2fdb93eb2c2468db45e8d861b19468b010db3c6240cb0"
+    },
+    {
+      "question_id": "a80f2183-0c5a-44ec-a289-c928fd0c77ff",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "A contractor discovers during installation that a mechanical soffit shown on the combined services drawing is 50mm deeper than the finished ceiling height target established during schematic design. Investigation reveals the soffit depth was never coordinated with the architect's finished ceiling height requirement; the mechanical engineer designed the soffit based on available duct depth without ceiling height constraint awareness. What is the root cause of this coordination failure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect failed to communicate finished ceiling height requirements as a constraint during schematic design phase"
+        },
+        {
+          "id": "b",
+          "text": "The BIM clash detection software failed to identify the soffit depth impact on finished ceiling clearance"
+        },
+        {
+          "id": "c",
+          "text": "The mechanical engineer designed the duct size larger than necessary to accommodate future system expansion"
+        },
+        {
+          "id": "d",
+          "text": "The combined services drawings were incomplete and did not clearly show soffit depth impact on finished dimensions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "BIM clash detection identifies geometric conflicts (intersecting volumes), not dimensional constraints like finished ceiling height targets. The architect must explicitly communicate ceiling height requirements to consultants.",
+        "c": "Combined services drawings document resolved coordination. This case shows coordination was not resolved. The drawings are accurately showing uncoordinated design, revealing the design failure.",
+        "correct": "The root cause is a communication failure during schematic design. The architect must establish and communicate finished ceiling height targets as constraints to MEPF consultants. The mechanical engineer designed the soffit based on available space without awareness of the finished ceiling requirement. This is a design phase coordination failure, not a construction problem.",
+        "takeaway": "Finished ceiling height is an architectural constraint that must be explicitly communicated to MEPF consultants during schematic design. The architect cannot assume consultants understand this requirement. Design development coordination should verify that soffit depths allow the target finished ceiling height to be achieved. This is a fundamental coordination checkpoint."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-008-01.mdx - Schematic Design Approval, Design Development Phase, and Ceiling Plenum and Vertical Integration sections",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:04.724704+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6778a37893fb7b110bef0185deec2bb7006916480e7b26cb163b2a4f7c2b0be1"
+    },
+    {
+      "question_id": "ffee499e-745f-4c18-b78f-151e6790e59b",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "topic_id": "e184594b-20b9-46c6-9bfd-204daf696062",
+      "text": "In a Philippine high-rise office building, clash detection identifies that return air ductwork and electrical cable trays conflict at the second-floor core area. The mechanical engineer proposes relocating the return duct to a perimeter zone; the electrical engineer insists the cable tray location is optimal for future tenant flexibility. The architects proposes accepting the clash as documented in combined services drawings and resolving during construction. What is the primary risk with the architect's proposed approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The documented clash indicates incomplete coordination during design, creating construction ambiguity about which system takes priority and leading to costly field modifications."
+        },
+        {
+          "id": "b",
+          "text": "Deferring clash resolution to construction is acceptable if both consultants agree the conflict can be managed during installation, provided there is a clear understanding of responsibilities"
+        },
+        {
+          "id": "c",
+          "text": "The clash will automatically resolve during construction when contractors see the spatial conflict, assuming they have the authority to make necessary adjustments"
+        },
+        {
+          "id": "d",
+          "text": "Documenting the clash eliminates the architect's liability for coordination failures during construction, transferring responsibility to the contractors"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While consultants may believe a conflict can be managed, documented clashes create construction ambiguity and cost risk. The architect's role is to require resolution during design, not defer to construction.",
+        "c": "Contractors cannot automatically resolve design clashes. Unresolved conflicts typically result in stop-work situations, change orders, or operational compromises affecting system performance.",
+        "d": "Documentation does not eliminate liability. The architect remains responsible for coordination quality. Documented unresolved clashes indicate incomplete design, creating professional exposure.",
+        "correct": "Design-phase coordination exists to resolve conflicts when adjustments are least costly. A documented clash indicates unresolved coordination. During construction, contractors may make conflicting decisions about which system takes priority, requiring expensive change orders and schedule delays. The architect should require resolution before construction documents are finalized.",
+        "takeaway": "The architect cannot defer coordination decisions to construction. All major clashes must be resolved during design development through collaboration with MEPF consultants. Documented unresolved clashes indicate design failure and create construction risk. The architect's authority includes requiring resolution."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-008-01.mdx - BIM Coordination, Design Development Approval, and Construction Documents Approval sections",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-01-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:04.724704+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8e80a7f9272d24dc1a3d7e29dd53a27acca07c5f14ce961d82a47a363ccbd988"
+    }
+  ]
+}

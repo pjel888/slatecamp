@@ -1,0 +1,508 @@
+{
+  "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:d6b1a18e25e79db285348d2ae34486cdaf5795003ea477830b43eddf5e08d2d6",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "695488a7-b6a8-411b-b6cb-63b3f1e682d8",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "What is the architect's liability if a building designed by the architect fails to meet BP 344 accessibility standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No liability exists, as the responsibility lies solely with the contractor and building owner"
+        },
+        {
+          "id": "b",
+          "text": "Professional negligence; architect is liable to affected PWDs, building owner, and potentially regulatory action"
+        },
+        {
+          "id": "c",
+          "text": "Only the contractor is liable, provided that the architect has fulfilled all design obligations and specifications"
+        },
+        {
+          "id": "d",
+          "text": "Liability cannot be established unless there is clear evidence of design oversight or non-compliance with BP 344"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dangerously incorrect; BP 344 violations create direct architect liability.",
+        "c": "Misplaces liability; while contractors execute, architects designed the failure; architects bear design liability.",
+        "d": "False; accessibility failures are clearly negligent and liability is well-established in Philippine law.",
+        "correct": "Failure to meet BP 344 accessibility standards constitutes professional negligence; architects are liable to affected PWDs for damages, to building owners for non-compliance, and face potential regulatory action by DENR and disciplinary action by the Board of Architecture.",
+        "takeaway": "Accessibility is non-negotiable—failure to meet BP 344 exposes architects to civil liability to PWDs, owner liability, and professional discipline."
+      },
+      "explanation": null,
+      "code_citation": "BP 344; RA 7277; Code of Ethical Conduct",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8096b13c0196c9232a63ee12225fd8c9da0bee0851cb41b76107afccae1ec7a3"
+    },
+    {
+      "question_id": "188ec91c-f3fd-4e34-b145-587f61f548e5",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "At what design phase should accessibility be integrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only during construction, when physical adjustments can be made"
+        },
+        {
+          "id": "b",
+          "text": "Conceptual phase onward, including site planning and building form decisions"
+        },
+        {
+          "id": "c",
+          "text": "Only in detailed design, focusing on specific elements like door widths and ramp slopes"
+        },
+        {
+          "id": "d",
+          "text": "After construction, if budget allows, to retrofit necessary features"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too late; construction-only accessibility integration cannot change fundamental site and building form decisions.",
+        "c": "Too late; detailed design cannot fix site planning or building form errors; early integration prevents costly changes.",
+        "d": "Dangerously wrong; waiting until after construction to address accessibility violates BP 344 and is impossible to retrofit economically.",
+        "correct": "Accessibility must be integrated from the conceptual design phase onward because early decisions (site selection, building orientation, entry positioning) determine whether accessibility is possible.",
+        "takeaway": "Accessibility cannot be retrofitted—it must be designed in from schematic phase to prevent costly redesigns later."
+      },
+      "explanation": null,
+      "code_citation": "BP 344; RA 7277",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:50b18963e31367dea1ca43085bfb57ba51c5cb8e526ad59195323aec9b406a5c"
+    },
+    {
+      "question_id": "a959edb9-3e81-4b9d-99f9-24e05f85e7de",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "Why is segregated access (separate elevators or entrances for PWDs) discouraged in modern accessibility practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is less expensive, which can be a consideration in budget-constrained projects but does not align with inclusive design principles"
+        },
+        {
+          "id": "b",
+          "text": "It reduces design complexity, allowing for simpler layouts but failing to meet the needs of all users in an equitable manner"
+        },
+        {
+          "id": "c",
+          "text": "Universal Design philosophy favors integrated design where all persons use the same facilities; segregation implies discrimination"
+        },
+        {
+          "id": "d",
+          "text": "Segregated access is actually required by law, particularly in older buildings where retrofitting is not feasible"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misconception; segregated access may appear cheaper initially but reduces overall design quality.",
+        "b": "Misconception; segregated access may seem simpler but contradicts accessibility standards requiring integration.",
+        "d": "False; law permits segregated facilities but modern standards reject this approach in favor of integration.",
+        "correct": "Modern accessibility philosophy rejects segregation; Universal Design dictates a single accessible main entrance, shared restrooms with accessible stalls, and integrated circulation—segregated facilities imply discrimination.",
+        "takeaway": "Integrated accessible design (one main entrance for all, shared facilities) is the standard, not segregated back entrances for PWDs."
+      },
+      "explanation": null,
+      "code_citation": "BP 344; Universal Design Philosophy",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b8c98a1493cf46fa16ad53e37774b5b0e53dcf95e49d12de97ec2d5a8113dd9"
+    },
+    {
+      "question_id": "b2951761-b2e8-41a4-a893-19f574ed5e75",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "What is the recommended ramp slope ratio according to BP 344?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:6 (steep), which may be used in exceptional cases with proper justification and safety measures"
+        },
+        {
+          "id": "b",
+          "text": "1:12 preferred, steeper allowed temporarily with conditions"
+        },
+        {
+          "id": "c",
+          "text": "1:20 (too shallow), generally not recommended for accessibility purposes"
+        },
+        {
+          "id": "d",
+          "text": "Any slope is acceptable if it meets the specific needs of the project and is approved by the relevant authorities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too steep; 1:6 slope is dangerous for wheelchair and mobility device users and violates BP 344 standards.",
+        "c": "1:20 is maximum for temporary ramps per BP 344; 1:12 is maximum for permanent ramps.",
+        "d": "False; BP 344 specifies precise ramp slopes; any slope without meeting standards violates accessibility requirements.",
+        "correct": "BP 344 specifies maximum ramp slope of 1:12 (1V:12H) for permanent ramps; maximum 1:20 allowed temporarily with handrails and landings.",
+        "takeaway": "Use 1:12 ramp slope; steeper slopes (e.g., 1:8) require additional handrails and landings and should only be temporary solutions."
+      },
+      "explanation": null,
+      "code_citation": "BP 344",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:145681199a598f96a7fb291e020b1796db40ef50126ee8d287f1f815c25d0bca"
+    },
+    {
+      "question_id": "d2c6e542-5e8c-4cac-9715-6d4c866ca7d6",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "What is Universal Design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design that only works for disabled persons, focusing solely on accessibility features"
+        },
+        {
+          "id": "b",
+          "text": "Designing for all people regardless of ability; integrated access benefits everyone"
+        },
+        {
+          "id": "c",
+          "text": "Design that looks the same everywhere, lacking cultural or contextual adaptation"
+        },
+        {
+          "id": "d",
+          "text": "Expensive design for wealthy clients, often involving luxury materials and finishes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misses the point; Universal Design benefits all people, not just PWDs.",
+        "c": "Misses the philosophy; Universal Design allows variety while ensuring all people can access and use spaces.",
+        "d": "False cost assumption; Universal Design is not inherently expensive and often requires no cost penalty.",
+        "correct": "Universal Design means designing for all people regardless of ability; curb cuts help parents with strollers and delivery personnel, clear wayfinding helps elderly and visitors, accessible heights serve wheelchair users and short persons alike.",
+        "takeaway": "Universal Design benefits everyone—curb cuts, clear signage, and accessible heights are not special accommodations, they improve design for all."
+      },
+      "explanation": null,
+      "code_citation": "BP 344; Universal Design Philosophy",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ab7dfed56f2de967ff4ba5637a813d9bf84732ef558fb4f7293f17005eb6033b"
+    },
+    {
+      "question_id": "f386d9d8-f92f-43e8-9e05-4f017d8135e0",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "What accessibility features should architects prioritize for persons with vision loss?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only wheelchair ramps, as they are universally required for all disabilities"
+        },
+        {
+          "id": "b",
+          "text": "Contrast, tactile paving, Braille signage, adequate non-glare lighting, and hazard warnings"
+        },
+        {
+          "id": "c",
+          "text": "Loud announcements only, as auditory cues are sufficient for navigation"
+        },
+        {
+          "id": "d",
+          "text": "No special features are needed, as standard building designs are adequate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incomplete; ramps serve mobility, not vision—vision accessibility requires tactile and visual cues.",
+        "c": "Insufficient; announcements help hearing-based wayfinding but do not guide blind users through physical spaces.",
+        "d": "False; persons with vision loss need designed features to navigate safely—adequate lighting, contrast, tactile guides, and signage are essential.",
+        "correct": "Vision accessibility requires contrast (colors, textures), tactile paving at entries and hazards, Braille and tactile signage, adequate non-glare lighting for low-vision users, and contrasting-color handrails.",
+        "takeaway": "For vision loss: use contrast, tactile guides, Braille signage, good lighting without glare, and hazard warnings—not just ramps."
+      },
+      "explanation": null,
+      "code_citation": "BP 344",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ffe4351a6ee7a1074014ae18238d48836e43444b6cecce001b82a03446bbff0a"
+    },
+    {
+      "question_id": "fe1fd1bb-a2f3-44ba-bc60-1591ab66e402",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "Which law reinforces PWD rights by establishing the Magna Carta for Disabled Persons?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RA 9184"
+        },
+        {
+          "id": "b",
+          "text": "RA 10173"
+        },
+        {
+          "id": "c",
+          "text": "RA 7277"
+        },
+        {
+          "id": "d",
+          "text": "RA 9266"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrong law; RA 9184 governs government procurement.",
+        "b": "Wrong law; RA 10173 is the Data Privacy Act.",
+        "d": "Wrong law; RA 9266 is the Architecture Law regulating the profession.",
+        "correct": "RA 7277 (Magna Carta for Disabled Persons) establishes that persons with disabilities have the same rights and responsibilities as all citizens.",
+        "takeaway": "RA 7277 reinforces accessibility as a rights issue, not a charity—PWDs have equal participation rights in all public and private spaces."
+      },
+      "explanation": null,
+      "code_citation": "RA 7277",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b479bc1a95d40811b157e35bc1e2dc070b9cbdd2b19e60889b46b6924b13c9c"
+    },
+    {
+      "question_id": "56dcdffb-e8bc-4a0a-9d55-681ead7beaae",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "How should accessibility be verified during construction administration and after occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No verification is needed, as accessibility is assumed to be inherent in the design"
+        },
+        {
+          "id": "b",
+          "text": "During construction, verify ramp slopes, handrail heights, door swings, and fixture installation; after occupancy, conduct post-occupancy review confirming accessible features remain functional"
+        },
+        {
+          "id": "c",
+          "text": "Only post-occupancy review is required, focusing on user feedback and accessibility audits"
+        },
+        {
+          "id": "d",
+          "text": "Accessibility never needs verification, as it is not a critical component of building design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Negligent approach; without verification, construction errors go undetected and accessible features may not function.",
+        "c": "Incomplete; post-occupancy verification alone misses construction errors that occur during building.",
+        "d": "False; verification is part of professional responsibility to ensure BP 344 compliance.",
+        "correct": "Architects must verify during construction that accessible features are built as detailed (ramp slopes, handrail heights, door widths, fixture locations) and conduct post-occupancy review to confirm accessible features remain functional and unobstructed.",
+        "takeaway": "Verify accessibility during construction and after occupancy—accessible features that are detailed correctly but built wrong, or built right but later blocked, still fail."
+      },
+      "explanation": null,
+      "code_citation": "BP 344",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3239e28c13121324f883a10bfa50ad7664e0c06fae7a879910b985c4f4630857"
+    },
+    {
+      "question_id": "77d94f06-ccb1-4fb8-8ad5-fcc8c135aca0",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "What is the primary legal mandate for accessibility in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Board of Architecture preference, which is advisory rather than mandatory"
+        },
+        {
+          "id": "b",
+          "text": "Client request only, which may vary depending on project scope"
+        },
+        {
+          "id": "c",
+          "text": "Batas Pambansa Bilang 344 (Accessibility Law) requires accessible design for all new construction"
+        },
+        {
+          "id": "d",
+          "text": "Accessibility is optional for all projects, unless specified by local ordinances"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses accessibility with professional preference; BP 344 is a legal mandate, not a guideline.",
+        "b": "Confuses accessibility with contractual option; BP 344 requires accessibility regardless of client request.",
+        "d": "False legal statement; BP 344 makes accessibility mandatory for new construction with no general cost-based exemptions.",
+        "correct": "BP 344 2024 Revised IRR (Accessibility Law) mandates that all new construction and alterations provide accessible facilities enabling persons with disabilities to access and use buildings.",
+        "takeaway": "BP 344 is a mandatory legal requirement, not optional—accessibility is the default expectation for all new construction."
+      },
+      "explanation": null,
+      "code_citation": "BP 344",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ac6fd13ffa787217d46b6e73df97e27aebf87f534b12e9b931df72c0ace0eba1"
+    },
+    {
+      "question_id": "20c4c16a-b905-42d5-93ec-994d67f25f59",
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "topic_id": "835c2914-8c0f-4c6c-a165-c907cdd8f299",
+      "text": "What must be documented in contract documents to ensure accessibility compliance during construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "General notes only, as they provide a broad overview of compliance requirements without detailing specific elements"
+        },
+        {
+          "id": "b",
+          "text": "Explicit accessibility features, dimensions, materials, ramp slopes, door swings, grab bar mounting, and signage specifications"
+        },
+        {
+          "id": "c",
+          "text": "No detail is needed, as accessibility compliance is assumed to be inherent in the design process"
+        },
+        {
+          "id": "d",
+          "text": "Only the cost estimate, which should reflect the inclusion of accessibility features without specifying them"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Insufficient; general notes lead to construction errors; explicit detailed specifications are required.",
+        "c": "Dangerously incorrect; without detailed specifications, contractors cannot build accessible features correctly.",
+        "d": "Incomplete; cost estimates are not specifications—detailed drawings and specs are needed to guide construction.",
+        "correct": "Contract documents must explicitly note all accessible features, dimensions, materials, ramp slopes, door widths, grab bar heights and mounting, and signage requirements—vague notes invite construction errors.",
+        "takeaway": "Accessibility must be detailed in drawings and specifications—a ramp drawn to proper slope but built wrong still fails accessibility; detail prevents errors."
+      },
+      "explanation": null,
+      "code_citation": "BP 344",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-018-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2b00525d9bc1e61258f030ef0d6cf8105030326b02a402d555f290d3ccd31673"
+    }
+  ]
+}

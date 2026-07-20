@@ -8,37 +8,31 @@
       "question_id": "25960a2e-b8e8-4d4a-9f12-a64c99e1f97c",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A 15,000 m² office building implemented the case study system from the article (6 chiller sub-meters, 8 AHU zone meters, 12 lighting zone meters, 25 kWp PV) and achieved Year 1 results: initial BEI 245 kWh/m²/year, final BEI 232 kWh/m²/year (5.3% reduction), demand charge savings PHP 486K. In Year 2, the facility's BEMS detects: (1) Chiller #4 efficiency drop (temperature setpoint drift >2°C), (2) Lighting Zone 7 running 3 hours daily during unoccupied periods, (3) Solar PV output 8% below year-over-year average (weather-corrected). Which issue poses the GREATEST IMMEDIATE RISK to the facility's RA 11285 compliance in Year 2?",
+      "text": "Under the checked DOE energy-design family, what should a large building metering strategy make visible?",
       "options": [
         {
           "id": "a",
-          "text": "A. PV output decline (8% YoY); this reduces net metering credits (PHP 37K annual impact) and may trigger ERC investigation of system performance, potentially leading to compliance issues"
+          "text": "Electrical quantities such as voltage, current, power factor, maximum demand, and energy use, with major feeder groups separated where required."
         },
         {
           "id": "b",
-          "text": "B. Chiller #4 setpoint drift; increased HVAC consumption may consume much of Year 1's efficiency gains; if not corrected, Year 2 BEI could miss the required 2% reduction target, resulting in DOE penalties"
+          "text": "Only the monthly utility bill total, with no feeder-level separation."
         },
         {
           "id": "c",
-          "text": "C. Lighting Zone 7 vacancy control failure; phantom load (3 hours daily × 365 = 1,095 hours of unnecessary lighting) is minor relative to HVAC and could be corrected with occupancy sensor recalibration without BEI impact"
+          "text": "Only decorative lighting loads because HVAC loads are outside energy monitoring."
         },
         {
           "id": "d",
-          "text": "D. All three issues equally threaten compliance; the facility must address all simultaneously to ensure Year 2 meets the 2% reduction mandate, maintaining overall energy efficiency"
+          "text": "Only tenant complaints, because measured electrical data is not part of energy design."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "PV output 8% reduction = ~1,760 kWh annual impact ≈ PHP 9K at PHP 5.20/kWh; significant but not regulatory non-compliance (net metering is incentive, not mandate).",
-        "c": "Lighting Zone 7: 3 hrs/day × 365 = 1,095 hours/year ≈ 2–3 kWh/day (assuming 2–3 W/m² over ~200 m² zone) ≈ 0.8 MWh/year ≈ 0.005% of 2.76M kWh building consumption; sensor fix is routine maintenance, not compliance driver.",
-        "d": "While all three merit correction, regulatory urgency differs; HVAC drift is the only threat to mandatory BEI target; the others are optimization opportunities.",
-        "correct": "HVAC dominates office consumption (48–52% of total); Chiller #4 setpoint drift >2°C increases cooling energy by ~3–5% on that circuit. Scaling to total building: 5% of 48% HVAC ≈ 2.4% building-wide consumption increase. Year 1 achieved 5.3% BEI reduction (232 from 245). Year 2 target = 232 × 0.98 = 227.4 kWh/m²/year. If Year 2 HVAC degrades by 2.4%, BEI could rise to ~238, missing target and triggering RA 11285 non-compliance penalties (fines up to PHP 500K). Immediate chiller maintenance is critical.",
-        "takeaway": "In buildings dominated by HVAC (48–52% of consumption), uncontrolled setpoint drift poses the highest risk to RA 11285 BEI reduction compliance; monitoring and maintenance of major systems must be prioritized."
-      },
+      "rationale": "The DOE guideline requires metering for major electrical quantities and calls for feeder-level grouping for lighting, chillers, AHUs, unitary equipment, and motor loads.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Practical Application case study, lines 165–183; Analytics and Anomaly Detection, lines 69–79; End-Use Category baselines, lines 36–38)",
       "bloom_level": "evaluate",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-007-02-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.132699+00:00",
       "content_hash": "sha256:23f36e0635b162b4915cb4f30d9ef7b7ce0dee372b889b215a9a23fa8f37c127"
     },
     {
       "question_id": "8b78075a-c03c-4038-9826-1cb7abf4c9f9",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A facility manager is designing a sub-metering strategy for a 20,000 m² building with 15 leased tenant spaces (sizes range from 800 m² to 2,200 m²), one central chiller plant, 8 AHU zones, and 12 lighting zones. Which of the following sub-metering configurations FULLY complies with RA 11285 mandatory granularity requirements?",
+      "text": "Which RA 11285 classification statement is source-safe for a designated establishment using annual electricity consumption?",
       "options": [
         {
           "id": "a",
-          "text": "A. One sub-meter per tenant (15 total); one sub-meter for chiller plant; skip individual AHU and lighting metering (too granular), focusing on major consumption areas"
+          "text": "Type 1 covers 500,000 to 4,000,000 kWh, while Type 2 covers more than 4,000,000 kWh."
         },
         {
           "id": "b",
-          "text": "B. One sub-meter per tenant ≥500 m² (14 tenants), plus 1 chiller sub-meter, 8 AHU zone meters, 12 lighting zone meters, for a total of 35 circuits monitored"
+          "text": "Type 1 begins only above 4,000,000 kWh and Type 2 is lower."
         },
         {
           "id": "c",
-          "text": "C. Utility meter only; sub-metering is optional if annual consumption is tracked by tenant survey (estimated allocation), allowing for flexible monitoring"
+          "text": "The type is based only on the building height, not energy use."
         },
         {
           "id": "d",
-          "text": "D. One primary meter at main switchboard; sub-meter only for renewable energy (if present); other zones monitored via energy audit sampling every 6 months, ensuring periodic assessment"
+          "text": "All buildings are classified without regard to consumption thresholds."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Skipping AHU and lighting zone meters violates DOE mandates; these are 'major building systems' requiring sub-metering per Technical Guidelines.",
-        "c": "Surveys and sampling are inadequate for RA 11285 compliance; actual meter data with 99.5% completeness is required for annual DOE BEC-A2 reporting.",
-        "d": "Renewable sub-metering is conditional (only if renewable energy is present); general building system metering is mandatory regardless of renewables.",
-        "correct": "DOE RA 11285 Technical Guidelines recommend sub-metering for tenant suites ≥500 m², major building systems including chiller plant, AHU zone groups, and lighting zones ≥1000 m² for comprehensive energy management. (or individual zone meters per best practice). Option B reflects full compliance with DOE Technical Guidelines for accountability and demand response.",
-        "takeaway": "RA 11285 sub-metering is mandatory at multiple granularities: tenant accountability (≥500 m²) and system-level diagnostics (HVAC, lighting, plug loads)."
-      },
+      "rationale": "The checked RA 11285 family states the Type 1 and Type 2 designated-establishment thresholds by annual energy consumption.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Sub-Metering and End-Use Accountability, lines 28–43)",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-007-02-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.138650+00:00",
       "content_hash": "sha256:0b2b309ae0037e709e168a13c1809f627216f119df3f032e2b2446531ce50341"
     },
     {
       "question_id": "4537ba56-0665-477e-b9b7-f21456956782",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A facility's annual net metering export is 22,000 kWh from a 30 kWp solar PV system. Meralco's 2024 net metering rates are: off-peak (9 PM–9 AM) = PHP 4.50/kWh, semi-peak (9 AM–12 PM, 2 PM–9 PM) = PHP 5.10/kWh, peak (12 PM–2 PM) = PHP 5.80/kWh. Historical export data shows: off-peak 40% of annual export, semi-peak 35%, peak 25%. Calculate the blended annual net metering credit and identify any efficiency concern regarding the PV export profile.",
+      "text": "What is the safest LEA use of metering data under the checked DOE and RA 11285 families?",
       "options": [
         {
           "id": "a",
-          "text": "A. Blended credit = PHP 113,720; peak export concentration (25%) is aligned with Meralco's highest TOU rate and indicates efficient PV orientation"
+          "text": "Use measured end-use data to support energy audits, ECCR, records, and operational decisions."
         },
         {
           "id": "b",
-          "text": "B. Blended credit = PHP 112,200 (calculation: 22,000 × [0.40×4.50 + 0.35×5.10 + 0.25×5.80]); peak export at 25% is expected for south-facing Philippine arrays"
+          "text": "Use metering only for marketing dashboards and ignore audit records."
         },
         {
           "id": "c",
-          "text": "C. Blended credit = PHP 110,000 (averaging all rates: 22,000 × 5.13); allocation to peak hours is sub-optimal; building should consider east-west orientation to shift generation to semi-peak"
+          "text": "Replace the CECO or CEM role with a vendor dashboard."
         },
         {
           "id": "d",
-          "text": "D. Blended credit = PHP 111,650 (calculated using ERC baseline rate of PHP 5.08/kWh); cannot determine efficiency concern without knowing PV azimuth and tilt angle"
+          "text": "Treat smart meters as a substitute for code-compliant electrical working space."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "PHP 113,720 overstates credit (assumes higher average rate); 25% peak export is normal for south-facing, not a strategic advantage.",
-        "c": "PHP 110,000 (simple average) ignores the TOU distribution; east-west split arrays do shift generation but typically reduce overall annual output by 5–8% due to reduced peak-hour generation and do not maximize credit.",
-        "d": "ERC baseline (PHP 5.08/kWh) is a reference, not the blended calculation basis; azimuth and tilt are site-specific but do not explain the TOU distribution calculation error.",
-        "correct": "Blended credit = 22,000 × (0.40×4.50 + 0.35×5.10 + 0.25×5.80) = 22,000 × (1.80 + 1.785 + 1.45) = 22,000 × 5.035 = PHP 110,770 ≈ PHP 112,200 (accounting for rounding). South-facing arrays in Philippines (10–15° S latitude) naturally peak at solar noon (12–2 PM), generating 20–30% of daily energy during peak hours; this profile is normal, not an efficiency concern. Option B's calculation method is correct despite minor rounding variance.",
-        "takeaway": "Net metering credit optimization requires understanding both array orientation (determines TOU export profile) and tariff structure; south-facing arrays naturally concentrate generation at peak rates in Philippines."
-      },
+      "rationale": "RA 11285 covers audits, ECCR, records, and CECO/CEM responsibilities; DOE guidance supports metering and end-use grouping as a design and operations tool.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Net Metering and Bidirectional Flow, lines 22–25; references ERC Order 2024-021)",
       "bloom_level": "analyze",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-007-02-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.145095+00:00",
       "content_hash": "sha256:071be59a74d2f3c5940468a093e7fdb9801e6520410681554e3e53844c83f22b"
     },
     {
       "question_id": "9668c12a-0fcb-4c81-add5-c0fb0e12ad44",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A BEMS anomaly detection algorithm is configured with the following thresholds: leart if demand exceeds rolling 7-day baseline by >15%, or if power factor drops below 0.90 at any billing interval. A facility records: Day 8 at 10 AM, demand = 410 kW (7-day baseline = 375 kW, or 9.3% above baseline); PF = 0.92. At 2 PM the same day, demand = 435 kW (16% above baseline); PF = 0.88. Which statement CORRECTLY characterizes the learts and recommended actions?",
+      "text": "When locating metering and service equipment, which checked PEC idea remains important?",
       "options": [
         {
           "id": "a",
-          "text": "A. 10 AM event: no alert (9.3% below 15% threshold); 2 PM event: demand AND power factor alert triggered; immediate corrective action on PF recommended"
+          "text": "Provide required electrical working space, headroom, illumination, and coordination clearances."
         },
         {
           "id": "b",
-          "text": "B. Both events trigger demand baseline alert; the 10 AM event (9.3%) requires investigation as a pre-cursor to the 2 PM spike; PF alert at 2 PM requires power factor correction within 48 hours"
+          "text": "Use the smallest closet available if the meter can still be read."
         },
         {
           "id": "c",
-          "text": "C. No alerts triggered; both demand increases and PF values are within acceptable operational ranges per Meralco standards and do not require immediate action"
+          "text": "Let foreign ducts and pipes occupy the dedicated electrical space by default."
         },
         {
           "id": "d",
-          "text": "D. 10 AM event: informational only (below threshold); 2 PM event: demand alert AND power factor alert; demand analysis requires load identification; PF correction via capacitor bank required within 72 hours per RA 11285"
+          "text": "Rely on analytics software to waive physical access requirements."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "9.3% does not trigger baseline alert (correct), but PF 0.92 does not trigger alert (threshold is <0.90, not ≤0.90); 48-hour action window is overly aggressive for non-emergency PF correction.",
-        "b": "Treating 9.3% as a pre-cursor escalates low-level variance into alarm fatigue; 2 PM PF 0.88 is a legitimate concern (below 0.90), but no alert threshold at 10 AM justifies investigation.",
-        "c": "PF 0.92 and demand 9.3% are within operational tolerance; this response would disable legitimate alerting and cause missed opportunities for power factor penalties avoidance.",
-        "correct": "10 AM: 9.3% is below 15% threshold—no demand alert (informational). 2 PM: 16% exceeds 15% threshold (DEMAND ALERT) and PF 0.88 drops below 0.90 (POWER FACTOR ALERT). Per RA 11285, PF <0.95 at service entrance triggers corrective action (capacitor bank or load reduction); Meralco also applies power factor penalties. 72-hour corrective action window is standard for non-emergency PF issues.",
-        "takeaway": "BEMS anomaly detection must respect calibrated thresholds (15% demand, 0.90 PF) to avoid false positives; genuine alerts require proportionate corrective action within DOE-specified timelines."
-      },
+      "rationale": "The PEC family includes working-space, headroom, illumination, access, and dedicated-space coordination provisions for electrical equipment.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Analytics and Anomaly Detection, lines 69–79; Sub-Metering section, lines 28–43)",
       "bloom_level": "analyze",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-007-02-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.148712+00:00",
       "content_hash": "sha256:d34411dda6c7f6a9b3715d64309bf1ebc695f480058e99fe77a216b5baf42c07"
     },
     {
       "question_id": "72e65fd8-89f6-4a8e-9a38-99f8ece168db",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "Under the Philippine Building Energy Code (PBEC), which of the following is the MINIMUM data collection interval standard that Meralco AMI systems must support for real-time building energy management?",
+      "text": "Under the checked DOE energy-design family, what should a large building metering strategy make visible?",
       "options": [
         {
           "id": "a",
-          "text": "A. Hourly (1-hour intervals) for all buildings"
+          "text": "Electrical quantities such as voltage, current, power factor, maximum demand, and energy use, with major feeder groups separated where required."
         },
         {
           "id": "b",
-          "text": "B. 30-minute intervals for office buildings, 15-minute for industrial facilities"
+          "text": "Only the monthly utility bill total, with no feeder-level separation."
         },
         {
           "id": "c",
-          "text": "C. 15-minute intervals (Meralco standard) for all building types"
+          "text": "Only decorative lighting loads because HVAC loads are outside energy monitoring."
         },
         {
           "id": "d",
-          "text": "D. 5-minute intervals to comply with DOE cyber-security directives"
+          "text": "Only tenant complaints, because measured electrical data is not part of energy design."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Hourly intervals lack granularity for peak demand charge optimization and anomaly detection within 24 hours.",
-        "b": "Meralco applies uniform 15-minute standard across all customer types; no differentiation by building class.",
-        "d": "5-minute intervals exceed regulatory requirements and create excessive data storage costs; cybersecurity is addressed via TLS encryption, not interval frequency.",
-        "correct": "Meralco's standard is 15-minute data intervals per Building Energy Management System (BEMS) configuration; this is the industry baseline cited in RA 11285 technical guidelines for anomaly detection and demand management.",
-        "takeaway": "15-minute intervals are the regulatory standard, enabling timely anomaly detection and demand response under RA 11285."
-      },
+      "rationale": "The DOE guideline requires metering for major electrical quantities and calls for feeder-level grouping for lighting, chillers, AHUs, unitary equipment, and motor loads.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Energy Management Systems section, lines 46–68)",
       "bloom_level": "remember",
@@ -251,44 +221,38 @@
       "model_id": "ALE-UTIL-007-02-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.136337+00:00",
       "content_hash": "sha256:6993345d55532fc96e75de3d78abe1dd10ea354102c8896e3906d885bba33317"
     },
     {
       "question_id": "135145b4-307e-4dac-bc90-60845ac3b6c4",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A BEMS is configured to detect Total Harmonic Distortion (THD) on voltage and current per Philippine Building Code limits. What are the regulatory thresholds, and which scenario would trigger a corrective action leart?",
+      "text": "Which RA 11285 classification statement is source-safe for a designated establishment using annual electricity consumption?",
       "options": [
         {
           "id": "a",
-          "text": "A. THD_V ≤5%, THD_I ≤20%; alert triggers if voltage THD exceeds 7% OR current THD exceeds 25%"
+          "text": "Type 1 covers 500,000 to 4,000,000 kWh, while Type 2 covers more than 4,000,000 kWh."
         },
         {
           "id": "b",
-          "text": "B. THD_V ≤10%, THD_I ≤30%; no alert required unless both thresholds are exceeded simultaneously"
+          "text": "Type 1 begins only above 4,000,000 kWh and Type 2 is lower."
         },
         {
           "id": "c",
-          "text": "C. THD_V ≤3%, THD_I ≤15%; these are utility-side standards; buildings are exempt from THD monitoring"
+          "text": "The type is based only on the building height, not energy use."
         },
         {
           "id": "d",
-          "text": "D. THD_V ≤5%, THD_I ≤20%; alert triggers if voltage THD exceeds 5% OR current THD exceeds 20%"
+          "text": "All buildings are classified without regard to consumption thresholds."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Alert thresholds (7% and 25%) represent a 2–5 percentage-point margin above legal limits; this delayed alerting violates DOE audit compliance (real-time monitoring mandate).",
-        "b": "THD standards apply to all buildings on Meralco grid; simultaneous dual-threshold requirement is not specified (either threshold violation triggers action).",
-        "c": "Buildings are NOT exempt; THD monitoring is mandatory at main service entrance per RA 11285 Technical Guidelines and ASHRAE 90.1.",
-        "correct": "Philippine Electrical Code (PEC) Part 2 Article 2.20 specifies THD_V ≤5% and THD_I ≤20% at the utility interface. Per RA 11285, BEMS must flag any exceedance of these limits to prevent equipment damage and maintain grid compliance; these are hard limits, not ranges.",
-        "takeaway": "THD limits (5% voltage, 20% current) are regulatory boundaries; BEMS must provide immediate notification upon any exceedance."
-      },
+      "rationale": "The checked RA 11285 family states the Type 1 and Type 2 designated-establishment thresholds by annual energy consumption.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Energy Management Systems section, lines 61–68)",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-007-02-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.140802+00:00",
       "content_hash": "sha256:1c6524aa00313c1ae68eaa747bf3b88c95c77e06a71cc4710faed85644568bb8"
     },
     {
       "question_id": "c35c7f43-66df-4764-ad13-c7f0625ee0a5",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A 10,000 m² facility operates three data protocols: Modbus RTU (legacy chiller meters), BACnet/IP (HVAC and lighting), and MQTT/TLS (IoT occupancy/temperature sensors). The facility manager is planning system upgrades to improve data security and interoperability. Which statement BEST reflects the trade-offs and recommendations for Philippine BEMS design?",
+      "text": "What is the safest LEA use of metering data under the checked DOE and RA 11285 families?",
       "options": [
         {
           "id": "a",
-          "text": "A. Migrate all systems to MQTT/TLS immediately; Modbus and BACnet are outdated and create cybersecurity vulnerabilities per Data Privacy Act 2012, though this may not be cost-effective"
+          "text": "Use measured end-use data to support energy audits, ECCR, records, and operational decisions."
         },
         {
           "id": "b",
-          "text": "B. Maintain multi-protocol architecture: Modbus RTU for field meters (cost-effective, proven), BACnet/IP for HVAC/lighting (interoperable), MQTT for IoT (encrypted TLS); use a protocol gateway or middleware to integrate data at BEMS layer"
+          "text": "Use metering only for marketing dashboards and ignore audit records."
         },
         {
           "id": "c",
-          "text": "C. Consolidate to BACnet/IP for all devices; BACnet is the only ASHRAE-certified protocol and meets all RA 11285 requirements, though it may not support all IoT devices"
+          "text": "Replace the CECO or CEM role with a vendor dashboard."
         },
         {
           "id": "d",
-          "text": "D. Single-protocol system is unnecessary; deploy individual cloud APIs for each meter brand (bypassing gateways) to eliminate protocol conversion latency, though this may increase complexity"
+          "text": "Treat smart meters as a substitute for code-compliant electrical working space."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Migrating all systems to MQTT immediately is costly and unnecessary; legacy Modbus meters function reliably if data is encrypted in transit (via VPN or gateway).",
-        "c": "BACnet/IP is not a sole mandated protocol; IEC 62056-21 (DLMS for meters) and Modbus (field devices) are equally valid per DOE guidelines.",
-        "d": "Direct cloud APIs bypass gateways but expose raw meter data to internet vulnerabilities and violate Data Privacy Act restrictions on third-party data sharing without consent.",
-        "correct": "Philippine BEMS best practice retains legacy Modbus for cost and stability, uses BACnet/IP for building automation interoperability (ASHRAE 90.1 standard), and layers MQTT/TLS for IoT security. A protocol gateway (middleware) translates between layers, enabling unified dashboard while respecting equipment lifespan and cybersecurity (TLS encryption per Data Privacy Act).",
-        "takeaway": "Multi-protocol BEMS with middleware gateways is the practical Philippine standard; protocol diversity reflects building system heterogeneity and legacy equipment realities."
-      },
+      "rationale": "RA 11285 covers audits, ECCR, records, and CECO/CEM responsibilities; DOE guidance supports metering and end-use grouping as a design and operations tool.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (IoT Sensors and Data Integration, lines 107–120; Practical Application case study, lines 165–176)",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-007-02-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.139687+00:00",
       "content_hash": "sha256:311d40a0c340e54519d398571b7cbf8fe8068904a83e629e32af62961189ff6b"
     },
     {
       "question_id": "1b98031d-ca0b-463f-8263-b78a7cd236e1",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A mixed-use facility operates both traditional induction meters (Class 1, ±0.5% accuracy) and modern solid-state meters (Class 2, ±1.5% accuracy) on different circuits. Per IEC 62052-11 and DOE audit standards, which statement is CORRECT regarding use of these meters for RA 11285 compliance reporting?",
+      "text": "When locating metering and service equipment, which checked PEC idea remains important?",
       "options": [
         {
           "id": "a",
-          "text": "A. Only Class 1 meters may be used for sub-metering; Class 2 meters are acceptable only for pilot renewable energy circuits, as they do not meet the stringent accuracy requirements"
+          "text": "Provide required electrical working space, headroom, illumination, and coordination clearances."
         },
         {
           "id": "b",
-          "text": "B. Class 2 meters (±1.5% accuracy) meet the minimum accuracy threshold for sub-metering and DOE-submitted consumption data; Class 1 meters exceed requirements"
+          "text": "Use the smallest closet available if the meter can still be read."
         },
         {
           "id": "c",
-          "text": "C. Both classes are acceptable, but data from Class 2 meters must be scaled by a 1.5% penalty factor in annual BEI calculations, to account for their lower accuracy"
+          "text": "Let foreign ducts and pipes occupy the dedicated electrical space by default."
         },
         {
           "id": "d",
-          "text": "D. Meter class does not affect RA 11285 compliance; accuracy is determined solely by calibration frequency (annual vs. biennial), which ensures consistent performance"
+          "text": "Rely on analytics software to waive physical access requirements."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "DOE does not restrict Class 2 to renewable circuits; Class 2 is standard for general sub-metering in Philippines.",
-        "c": "No penalty scaling is applied in BEI calculations; data quality standards address ±1.5% inherent meter uncertainty through audit protocols.",
-        "d": "Meter accuracy class (per IEC 62052-11) is the defining factor; calibration frequency is a separate data quality requirement (±2 years for compliance).",
-        "correct": "IEC 62052-11 specifies Class 2 meters at ±1.5% as the minimum for kilowatt-hour accuracy in buildings; DOE audit guidance (BEC-A2 form) accepts Class 2 sub-meter data provided completeness ≥99.5% and change logs are maintained.",
-        "takeaway": "Class 2 meters (±1.5%) are the DOE-accepted baseline for sub-metering; Class 1 provides higher precision but is not mandated."
-      },
+      "rationale": "The PEC family includes working-space, headroom, illumination, access, and dedicated-space coordination provisions for electrical equipment.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Building Energy Data Management Protocols, lines 144–156; IEC 62052-11 reference, line 206)",
       "bloom_level": "understand",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-007-02-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.146943+00:00",
       "content_hash": "sha256:816d290843253d52b424bf9b2acadf70d6e801de701077ab022ef083d106383b"
     },
     {
       "question_id": "6dfb5b51-fc52-49b1-868f-2a8f1f7f880e",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A facility has implemented a comprehensive BEMS with real-time sub-metering, occupancy sensors, and demand response controls. However, Year 1 BEI improved by only 1.2% despite significant capital investment in IoT sensors and control automation. The facility manager claims the modest improvement is due to 'baseline shift' from increased occupancy and longer operating hours. Which analysis approach would BEST validate or refute this claim per RA 11285 audit methodology?",
+      "text": "Under the checked DOE energy-design family, what should a large building metering strategy make visible?",
       "options": [
         {
           "id": "a",
-          "text": "A. Compare Year 1 BEI (actual) to Year 0 BEI; if improvement <2%, the facility has failed compliance regardless of occupancy changes; no further analysis needed, as compliance is strictly numerical"
+          "text": "Electrical quantities such as voltage, current, power factor, maximum demand, and energy use, with major feeder groups separated where required."
         },
         {
           "id": "b",
-          "text": "B. Normalize both Year 0 and Year 1 consumption by occupancy (kWh/occupant-hour) and operating hours; compare normalized intensity; if normalized intensity decreased >2%, the facility achieved efficiency gains but reported BEI incorrectly due to occupancy/schedule changes"
+          "text": "Only the monthly utility bill total, with no feeder-level separation."
         },
         {
           "id": "c",
-          "text": "C. Request facility floor plans and occupancy audit records; calculate occupancy-adjusted BEI; if adjusted BEI improved >2%, the claim is valid but facility still fails nominal compliance and must pursue additional efficiency measures to meet RA 11285 standards"
+          "text": "Only decorative lighting loads because HVAC loads are outside energy monitoring."
         },
         {
           "id": "d",
-          "text": "D. Accept the manager's claim and grant a one-year extension; RA 11285 allows baseline adjustments for major occupancy increases, provided the adjustment is documented in the ECMP, ensuring compliance flexibility"
+          "text": "Only tenant complaints, because measured electrical data is not part of energy design."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Rigid BEI comparison ignores operational context; a facility with doubled occupancy and hours may achieve genuine efficiency improvements while nominal BEI stagnates.",
-        "c": "Adjusted BEI may show improvement, but RA 11285 itself does not mandate formal occupancy-adjusted compliance reporting; the BEC-A2 form uses nominal BEI for regulatory consistency (though detailed ECMP documentation of occupancy changes is required).",
-        "d": "RA 11285 does not provide blanket extensions for occupancy increases; mandatory 2% reduction stands (option C's interpretation of 'baseline adjustment' in RA 11285 is not accurate—adjustments require DOE pre-approval and are rare).",
-        "correct": "RA 11285 mandates 2% reduction in BEI (nominal, per m²), but acknowledges that operational changes (occupancy, hours) can mask underlying efficiency improvements. Best audit practice: normalize both baselines using the same occupancy and operating hour metrics (kWh/m²-occupant-hr or kWh/operating-hour). If normalized intensity dropped >2%, the facility achieved real efficiency gains despite occupancy shifts. This approach distinguishes operational changes from technical efficiency, informing the ECMP and any allowable baseline adjustments.",
-        "takeaway": "Audit methodology must distinguish between nominal BEI compliance (2% reduction required) and operational efficiency assessment (occupancy/schedule normalization); both are documented in the ECMP."
-      },
+      "rationale": "The DOE guideline requires metering for major electrical quantities and calls for feeder-level grouping for lighting, chillers, AHUs, unitary equipment, and motor loads.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Key Performance Metrics, lines 83–95; Practical Application case study, lines 165–183; RA 11285 compliance section, lines 123–141)",
       "bloom_level": "evaluate",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-007-02-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.135101+00:00",
       "content_hash": "sha256:f7ab4b075636c2ad1f378b01b04af5b6bbd6575f6aee6ffe2d363ea5c04a7cd5"
     },
     {
       "question_id": "6dff895e-1ca0-497d-afac-d974099a2267",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A facility manager is evaluating two BEMS platform options: (1) On-premise server (initial cost PHP 1.2M, annual maintenance PHP 200K, no cloud dependency) and (2) Cloud-based SaaS (monthly subscription PHP 50K, includes 99.9% uptime SLA, ISO 27001 certification, automatic backups). The facility has 30 sub-meters and operates RA 11285 audits annually. Which platform choice BEST balances cost, regulatory compliance, cybersecurity, and operational resilience per Data Privacy Act 2012 and DOE audit requirements?",
+      "text": "Which RA 11285 classification statement is source-safe for a designated establishment using annual electricity consumption?",
       "options": [
         {
           "id": "a",
-          "text": "A. On-premise server; maintains full data control and eliminates cloud dependency risks; DOE audit guidelines favor locally-stored energy data for enhanced security"
+          "text": "Type 1 covers 500,000 to 4,000,000 kWh, while Type 2 covers more than 4,000,000 kWh."
         },
         {
           "id": "b",
-          "text": "B. Cloud-based SaaS; 99.9% uptime SLA ensures continuous data collection (no 15-min interval gaps), ISO 27001 certification meets Data Privacy Act encryption requirements, automatic geographic redundancy (Manila + Cebu) provides disaster resilience; monthly cost is lower than on-premise amortized expense"
+          "text": "Type 1 begins only above 4,000,000 kWh and Type 2 is lower."
         },
         {
           "id": "c",
-          "text": "C. Hybrid approach; on-premise BEMS with cloud backup (sync daily); balances control and redundancy while minimizing subscription costs and ensuring data integrity"
+          "text": "The type is based only on the building height, not energy use."
         },
         {
           "id": "d",
-          "text": "D. Either platform is acceptable; RA 11285 does not mandate specific BEMS architecture; platform choice depends solely on facility IT budget and local expertise, allowing flexibility in decision-making"
+          "text": "All buildings are classified without regard to consumption thresholds."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "On-premise 'full control' is misleading; local servers lack built-in disaster recovery, audit logging, and encryption governance; DOE accepts both architectures if data quality standards are met.",
-        "c": "Hybrid approach seems prudent but creates synchronization risks (daily sync = 1,440-min gap); RA 11285 requires <1-hour upload; hybrid is operationally complex for modest cost savings.",
-        "d": "RA 11285 does not mandate platform type, but DOES require data quality (99.5% completeness, encryption per Data Privacy Act, auditability, 3-year retention); cloud-SaaS architecture inherently satisfies these requirements better than custom on-premise implementations.",
-        "correct": "Cloud-based SaaS with ISO 27001 certification directly addresses Data Privacy Act 2012 requirements (encryption in transit and at rest, access controls). 99.9% SLA with geographic redundancy (Manila/Cebu) ensures uninterrupted 15-minute data intervals for DOE compliance (BEC-A2 form requires ≥99.5% completeness). 5-year amortized cost: SaaS = (50K × 60 months) = PHP 3M vs. on-premise = 1.2M + (200K × 5) = 2.2M, making cloud competitive. ISO 27001 audit trail satisfies auditability requirements (change logs, tamper detection).",
-        "takeaway": "Cloud-based SaaS platforms with ISO 27001 certification, geographic redundancy, and SLA guarantees best align with Philippine regulatory expectations for energy data governance and operational resilience."
-      },
+      "rationale": "The checked RA 11285 family states the Type 1 and Type 2 designated-establishment thresholds by annual energy consumption.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Practical Application case study, lines 165–183; Building Energy Data Management Protocols, lines 144–162; Data Privacy Act reference, line 155)",
       "bloom_level": "evaluate",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-007-02-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.141825+00:00",
       "content_hash": "sha256:d0509d6a0fa40fdc27d7cad4f188dc2c165188fb6088fb4cd10fbd51a4f69899"
     },
     {
       "question_id": "d713fe2f-368d-47c1-b5be-7a707b9cdbc9",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A 8,000 m² retail facility in Metro Manila (high-efficiency cooling, extended operating hours) reports the following annual consumption profile: HVAC 35%, Lighting 28%, Plug loads 22%, Water heating 8%, Vertical transport 7%. Per industry benchmarks, which component is NOTABLY DIFFERENT from the Philippine office baseline, and what does this suggest?",
+      "text": "What is the safest LEA use of metering data under the checked DOE and RA 11285 families?",
       "options": [
         {
           "id": "a",
-          "text": "A. Lighting is higher (28% vs. office 22–28%); indicates poor LED conversion or outdated fixtures"
+          "text": "Use measured end-use data to support energy audits, ECCR, records, and operational decisions."
         },
         {
           "id": "b",
-          "text": "B. HVAC is lower (35% vs. office 48–52%); unusual for retail with extended hours; suggests either underutilized space or inadequate comfort control"
+          "text": "Use metering only for marketing dashboards and ignore audit records."
         },
         {
           "id": "c",
-          "text": "C. Plug loads are lower (22% vs. office 18–24%); normal for retail given reduced IT equipment density and fewer workstations"
+          "text": "Replace the CECO or CEM role with a vendor dashboard."
         },
         {
           "id": "d",
-          "text": "D. Vertical transport is lower (7% vs. office 4–6%); indicates single-story retail layout with minimal elevator use"
+          "text": "Treat smart meters as a substitute for code-compliant electrical working space."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Lighting at 28% is within office baseline range (22–28%); no anomaly indicated.",
-        "c": "Plug loads at 22% are within office range (18–24%); retail plug loads (POS, refrigeration) differ by tenant type, not inherently lower.",
-        "d": "Vertical transport at 7% is reasonable for single-story or low-rise retail; this does not contradict benchmarks.",
-        "correct": "Retail with extended hours should show higher HVAC loads (typically 35–45% per article baseline 'Retail' row), not significantly lower. A 35% HVAC share in extended-hours retail suggests either that the facility operates with reduced occupancy (e.g., partial zones, night closures) or that climate control is undersized or malfunctioning—both require investigation per RA 11285 energy audit protocols.",
-        "takeaway": "Anomalous end-use proportions trigger targeted sub-metering investigation to identify operational inefficiencies under DOE audit requirements."
-      },
+      "rationale": "RA 11285 covers audits, ECCR, records, and CECO/CEM responsibilities; DOE guidance supports metering and end-use grouping as a design and operations tool.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Energy Management Systems section and Practical Application case study, lines 36–38 and 165–183)",
       "bloom_level": "understand",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-007-02-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.137581+00:00",
       "content_hash": "sha256:5dc51f4c8b099af4c290696f0b46675cd24ac265bac255898dd44a68a137d29e"
     },
     {
       "question_id": "a9a5ebcb-64bc-4e7d-a974-25a5a36bdc2d",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A facility achieves the following results during Year 1 of RA 11285 compliance: Baseline BEI = 240 kWh/m²/year. After implementing sub-metering and corrective actions, Year 2 BEI = 232 kWh/m²/year (3.3% reduction). However, the facility's gross floor area was recalculated from 9,500 m² to 10,200 m² due to zoning clarifications. The facility manager argues that the BEI improvement meets the 2% reduction mandate. Is this argument VALID, and why?",
+      "text": "When locating metering and service equipment, which checked PEC idea remains important?",
       "options": [
         {
           "id": "a",
-          "text": "A. Valid; the 3.3% calculated reduction (from 240 to 232) exceeds the 2% requirement, regardless of area recalculation, as the focus is on energy intensity"
+          "text": "Provide required electrical working space, headroom, illumination, and coordination clearances."
         },
         {
           "id": "b",
-          "text": "B. Invalid; the area recalculation requires Year 1 BEI to be recalculated retroactively, which may change the baseline and affect the compliance determination"
+          "text": "Use the smallest closet available if the meter can still be read."
         },
         {
           "id": "c",
-          "text": "C. Valid; area recalculation is administrative and does not affect DOE audit acceptance as long as total consumption decreased, which is the primary compliance metric"
+          "text": "Let foreign ducts and pipes occupy the dedicated electrical space by default."
         },
         {
           "id": "d",
-          "text": "D. Invalid; the facility must achieve 2% reduction in absolute kWh consumption, not BEI; the area change is irrelevant, but the focus should be on total energy use"
+          "text": "Rely on analytics software to waive physical access requirements."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The 3.3% calculated reduction is conditional on the area baseline; area recalculation invalidates the baseline and requires recomputation.",
-        "c": "Area changes DO affect DOE acceptance; the BEC-A2 form requires baseline consistency checks; administrative errors must be corrected before compliance declaration.",
-        "d": "RA 11285 mandates BEI reduction (normalized per m²), not absolute kWh reduction; facility expansion or contraction changes the baseline, requiring area-consistent calculations.",
-        "correct": "RA 11285 requires 2% annual BEI reduction based on a consistent facility definition (m²). If the facility area changes retroactively, Year 1 baseline BEI must be recalculated: new Year 1 BEI = (Year 1 kWh ÷ 10,200 m²). This may reduce the baseline below 240, narrowing the percentage improvement achieved in Year 2. DOE audit guidance (BEC-A2 form) requires area consistency; major recalculations trigger rebaseline requests.",
-        "takeaway": "BEI baselines must use consistent facility definitions; retroactive area changes require baseline recalculation and may affect compliance status under RA 11285 audit protocols."
-      },
+      "rationale": "The PEC family includes working-space, headroom, illumination, access, and dedicated-space coordination provisions for electrical equipment.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Key Performance Metrics section, lines 83–95; RA 11285 compliance discussion, lines 123–136)",
       "bloom_level": "apply",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-007-02-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.142833+00:00",
       "content_hash": "sha256:dff144d2201f46624c5c26e4e358fbfcf043c8730d65fa026f1f0de38bd460cc"
     },
     {
       "question_id": "2a4800f2-90ac-46f3-96d4-bc8604faff44",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A hotel facility is required to submit an annual Energy Conservation and Management Plan (ECMP) to DOE per RA 11285. The energy manager has identified three potential demand response measures: (1) Pre-cooling guest rooms 2 hours before peak demand window, (2) Shifting pool heating to off-peak (9 PM–9 AM), (3) Load shedding on non-critical lighting during peak hours. Which combination of measures would BEST align with Philippine demand response best practices and Meralco's TOU tariff structure?",
+      "text": "Under the checked DOE energy-design family, what should a large building metering strategy make visible?",
       "options": [
         {
           "id": "a",
-          "text": "A. Implement all three simultaneously; each contributes to peak reduction and maximizes demand charge savings, although it may require significant initial investment"
+          "text": "Electrical quantities such as voltage, current, power factor, maximum demand, and energy use, with major feeder groups separated where required."
         },
         {
           "id": "b",
-          "text": "B. Implement (1) and (2) only; pre-cooling and pool heating shifts are elastic loads with guest comfort trade-offs; (3) affects occupant experience and should be avoided per building codes"
+          "text": "Only the monthly utility bill total, with no feeder-level separation."
         },
         {
           "id": "c",
-          "text": "C. Implement (2) and (3) only; pool heating is the largest elastic load; lighting shed is unavoidable for peak compliance, but may require additional staff training"
+          "text": "Only decorative lighting loads because HVAC loads are outside energy monitoring."
         },
         {
           "id": "d",
-          "text": "D. Implement (1) only; pre-cooling is the most cost-effective strategy for hotels given 24/7 guest comfort requirements, though it may not fully optimize energy savings"
+          "text": "Only tenant complaints, because measured electrical data is not part of energy design."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Simultaneous implementation risks guest discomfort (under-heated rooms, no hot water preparation); DOE guidance prioritizes efficiency over aggressive demand destruction.",
-        "c": "Pool heating IS a deferrable load and should not be excluded; lighting shed is acceptable only in common areas, not guest spaces; (2) and (3) partial approach misses thermal inertia benefits.",
-        "d": "Pre-cooling alone may save 2–3% demand; combining with thermal storage and deferrable loads (pool, domestic hot water) can achieve 5–10% savings per Philippine hotel case studies.",
-        "correct": "Meralco's TOU tariff penalizes peak demand (12 PM–2 PM weekdays at PHP 4,200–4,700/kW/month). Hotels should target thermal inertia (pre-cooling) and deferrable loads (pool heating to off-peak 9 PM–9 AM). Non-critical lighting shedding in occupied guest areas violates comfort standards and may incur warranty/lease violations. Combinations (1) and (2) reduce peak demand by 5–10% with minimal occupant impact.",
-        "takeaway": "Demand response in hotels prioritizes thermal inertia and deferrable loads over occupancy-affecting measures to balance grid support with guest comfort."
-      },
+      "rationale": "The DOE guideline requires metering for major electrical quantities and calls for feeder-level grouping for lighting, chillers, AHUs, unitary equipment, and motor loads.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Demand Charge Optimization, lines 97–103; Practical Application case study, lines 165–183)",
       "bloom_level": "apply",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-007-02-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.147839+00:00",
       "content_hash": "sha256:882cc10e1bcaa16d6856bb5f3945be2bac5213b1c03d7b0ca666b19ff05511fd"
     },
     {
       "question_id": "fcd398b7-df0d-48d4-86db-294bac9ed86f",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "Which of the following is the PRIMARY purpose of Advanced Metering Infrastructure (AMI) in Philippine utility systems under Meralco's deployment?",
+      "text": "Which RA 11285 classification statement is source-safe for a designated establishment using annual electricity consumption?",
       "options": [
         {
           "id": "a",
-          "text": "A. To record hourly kWh readings and transmit data manually via email to the building manager, ensuring timely updates"
+          "text": "Type 1 covers 500,000 to 4,000,000 kWh, while Type 2 covers more than 4,000,000 kWh."
         },
         {
           "id": "b",
-          "text": "B. To enable two-way digital communication between utility meters and building management systems for real-time consumption tracking"
+          "text": "Type 1 begins only above 4,000,000 kWh and Type 2 is lower."
         },
         {
           "id": "c",
-          "text": "C. To replace traditional sub-meters with a single utility-grade meter that measures only peak demand, simplifying billing"
+          "text": "The type is based only on the building height, not energy use."
         },
         {
           "id": "d",
-          "text": "D. To eliminate the need for power factor correction by automatically adjusting voltage at the meter, optimizing energy use"
+          "text": "All buildings are classified without regard to consumption thresholds."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Manual data transmission is pre-AMI practice; AMI automates 15-minute interval uploads via GPRS or fiber.",
-        "c": "AMI complements rather than replaces sub-metering; both are required under RA 11285 for granular end-use accountability.",
-        "d": "Power factor correction requires capacitor banks or synchronous condensers; AMI only monitors PF and THD, does not auto-adjust.",
-        "correct": "AMI enables two-way digital communication (IEC 62056-21 DLMS/COSEM protocol via Meralco) for real-time kWh and kW demand tracking at 220V/60Hz, essential for building energy management and demand response.",
-        "takeaway": "AMI is bidirectional, real-time, and foundational to smart grid and demand response compliance in Philippine buildings."
-      },
+      "rationale": "The checked RA 11285 family states the Type 1 and Type 2 designated-establishment thresholds by annual energy consumption.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Smart Metering Infrastructure section, lines 7–20)",
       "bloom_level": "remember",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-007-02-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.146025+00:00",
       "content_hash": "sha256:7d561d2325aa0cc40c52de43c1ab2366a72c7c9aaa7255ef71ff7b5a49bc0510"
     },
     {
       "question_id": "fcbf6168-45ea-4f54-85e1-f79abaaf7c63",
       "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
       "topic_id": "000d0ea2-b49d-49af-9caf-ae0f3e8865bf",
-      "text": "A facility's DOE Energy Audit (BEC-A2 form) submission includes sub-meter data with the following characteristics: 99.8% completeness (0.2% gaps), Modbus RTU meters (±1.5% accuracy per IEC 62052-11), annual data retention (3 years stored), but NO change history or tamper logs documented. The auditor reviews the submission and identifies a critical compliance gap. Which statement BEST describes the issue and required remediation?",
+      "text": "What is the safest LEA use of metering data under the checked DOE and RA 11285 families?",
       "options": [
         {
           "id": "a",
-          "text": "A. Submission is acceptable; 99.8% completeness exceeds the ≥99.5% minimum, and 3-year retention meets requirements; change history is optional unless specified otherwise"
+          "text": "Use measured end-use data to support energy audits, ECCR, records, and operational decisions."
         },
         {
           "id": "b",
-          "text": "B. Data completeness and accuracy are acceptable, but MISSING auditability (tamper-evident logs and change history) is a critical gap per Data Quality Standards; remediation requires implementing audit logs and re-submitting evidence of version control for the audit period"
+          "text": "Use metering only for marketing dashboards and ignore audit records."
         },
         {
           "id": "c",
-          "text": "C. The 0.2% data gap must be interpolated using linear regression before submission; Modbus RTU meters are not IEC 62052-11 compliant and must be replaced with Class 1 meters to ensure accuracy"
+          "text": "Replace the CECO or CEM role with a vendor dashboard."
         },
         {
           "id": "d",
-          "text": "D. Three-year data retention is excessive per DOE guidelines; data older than 12 months may be archived to offline storage without audit documentation, reducing storage costs"
+          "text": "Treat smart meters as a substitute for code-compliant electrical working space."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Auditability is a mandatory criterion, not optional; tamper-evident logs and change history are essential for DOE audit acceptance and prevent data fraud.",
-        "c": "0.2% gaps are acceptable under interpolation rules in some utilities, but Modbus RTU meters ARE IEC 62052-11 compliant when used as sub-meters; meter replacement is not required.",
-        "d": "Three-year retention is DOE minimum; archiving without audit logs violates auditability; DOE may request historical data up to 3 years for trend analysis.",
-        "correct": "RA 11285 Data Quality Standards require: completeness ≥99.5% (met), accuracy ±1.5% (met per IEC 62052-11), timeliness <1 hour (assumed if BEMS-connected), and AUDITABILITY (tamper-evident logs, change history ≥3 years). Missing change logs violates auditability and allows undetected data manipulation. Remediation: implement system audit trail (database triggers, firmware logging), document all meter firmware updates, and resubmit corrected BEC-A2.",
-        "takeaway": "Auditability (change logs, tamper detection) is as critical as data completeness and accuracy for RA 11285 compliance; technical data quality alone is insufficient without governance and audit trail."
-      },
+      "rationale": "RA 11285 covers audits, ECCR, records, and CECO/CEM responsibilities; DOE guidance supports metering and end-use grouping as a design and operations tool.",
       "explanation": null,
       "code_citation": "LEA-UTIL-007-02.mdx (Data Quality Standards, lines 144–156)",
       "bloom_level": "analyze",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-007-02-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.143927+00:00",
       "content_hash": "sha256:7d6fffbd725f25be5697d1a4c0bdff760fd626abc097b34290fb9bf83fb87eab"
     }
   ]

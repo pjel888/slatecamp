@@ -55,7 +55,7 @@ Internal developer AI is a separate local-tooling boundary: SlateCamp developer 
 
 
 ## Complete Route Map
-The current App Router surface has **118 `page.tsx` routes** after restoring Quiz under the dashboard shell plus the prior tools/calculators consolidation. Redirect-only legacy pages removed or converted in this pass include `/settings`, `/test-3d`, `/admin/wiki`, `/dashboard/heatmap`, `/dashboard/trail`, `/dashboard/trails`, `/dashboard/settings/billing`, `/dashboard/settings/developer`, the former `/calculators/*` pages, and `/quiz/*` redirect wrappers; `/dashboard/quiz` is now the canonical quiz hub and `/tools` is the canonical public utility namespace. See `.ai/06_specs/routes--map--v2.md` for layout/loading/error-boundary inventories.
+The current App Router surface has **130 `page.tsx` routes** (verified 2026-07-20) after restoring Quiz under the dashboard shell plus the prior tools/calculators consolidation. Redirect-only legacy pages removed or converted in this pass include `/settings`, `/test-3d`, `/admin/wiki`, `/dashboard/heatmap`, `/dashboard/trail`, `/dashboard/trails`, `/dashboard/settings/billing`, `/dashboard/settings/developer`, the former `/calculators/*` pages, and `/quiz/*` redirect wrappers; `/dashboard/quiz` is now the canonical quiz hub and `/tools` is the canonical public utility namespace. See `.ai/06_specs/routes--map--v2.md` for layout/loading/error-boundary inventories.
 
 | Route | Type | File | Access | Purpose | Key Features | Data/API Dependencies | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |

@@ -2,100 +2,69 @@
   "question_id": "b72602ce-e685-4fd2-8a9e-1c73325c9fa4",
   "baseline_hash": "sha256:359b7a830b710973669fa306a760b3404c21d36792293a2c88f417eb95a2046d",
   "action": "replace",
-  "reason": "source-audited-article-batch-074-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes out-of-scope or stale claims from the exported question.",
-  "approved_by": "codex-local-first-batch-074",
-  "approved_at": "2026-05-12T02:15:00.945+08:00",
+  "reason": "council-remediation-2026-07-20/agent-P override of prior batch-074 source-scope retrenchment. Original linked question's marked-correct option B ('15-20%') is factually wrong, and the original rationale ('RA 10884 updates RA 7279's balanced housing requirement to 20% of total project area') is doubly wrong. RA 10884 Section 2(b) sets 15% for subdivisions and 5% for condominiums of total area OR project cost. Prior batch edit avoided the topic; this council pass preserves the original learning objective with the externally verified figure.",
+  "approved_by": "agent-P-planning-council-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
     "parent_article_slug": "lea-plan-003-04-core-concept",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
-    "checked_markdown_lines": [
-      "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329",
-      "Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819",
-      "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204"
-    ],
-    "checked_raw_pdf_pages": [
-      "RA 7279 Urban Development and Housing Act: 1-7 checked by local PyMuPDF extraction",
-      "Local Shelter Planning Manual, 2016 Web Edition: 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
-      "RA 11201 IRR - DHSUD Act Implementing Rules: 1-7 checked by local PyMuPDF extraction"
-    ],
-    "checked_sources": [
+    "support_status": "externally_verified_rewrite",
+    "source_locator": "RA 10884 Section 2(b) amending RA 7279 Section 18. External verification via Lawphil and Supreme Court E-Library.",
+    "external_sources": [
       {
-        "source_id": "ra7279-udha-2009-b074",
-        "label": "RA 7279 Urban Development and Housing Act",
-        "source_type": "primary_law_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
-        "source_locator": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
-        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e"
+        "citation": "RA 10884 Section 2(b), amending RA 7279 Section 18",
+        "url": "https://lawphil.net/statutes/repacts/ra2016/ra_10884_2016.html"
       },
       {
-        "source_id": "local-shelter-planning-manual-2016-b074",
-        "label": "Local Shelter Planning Manual, 2016 Web Edition",
-        "source_type": "government_planning_manual_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md",
-        "source_locator": "Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec",
-        "refined_markdown_sha256": "sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b"
-      },
-      {
-        "source_id": "ra11201-irr-dhsud-b074",
-        "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
-        "source_type": "primary_law_irr_pdf",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
-        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
-        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
-        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528"
+        "citation": "Supreme Court E-Library RA 10884",
+        "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/70219"
       }
     ],
-    "local_source_safe_action": "Question text, answer, rationale, and citation rewritten to the source-audited-article-batch-074-local-first checked local raw-source scope."
+    "local_source_safe_action": "Agent-P council pass: externally verified RA 10884 figure (15% subdivision / 5% condominium)."
   },
   "proposed": {
-    "text": "Why is classifying a project as socialized housing not the same as identifying its production method?",
+    "text": "Under RA 10884 (Balanced Housing Development Program, 2016), private subdivision developers must dedicate a share of socialized housing. Which percentage applies to a subdivision project?",
     "options": [
       {
         "id": "a",
-        "text": "Classification states the category, while production states how the housing is delivered or upgraded."
+        "text": "5% of total subdivision area or project cost"
       },
       {
         "id": "b",
-        "text": "Classification always names the contractor."
+        "text": "15% of total subdivision area or project cost"
       },
       {
         "id": "c",
-        "text": "Production methods replace all laws."
+        "text": "20% of total subdivision area or project cost"
       },
       {
         "id": "d",
-        "text": "The two terms are interchangeable in the checked sources."
+        "text": "30% of total subdivision area or project cost"
       }
     ],
-    "correct_option_id": "a",
+    "correct_option_id": "b",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": {
-      "a": "Correct. The article separates category from delivery method.",
-      "b": "Incorrect. This changes the checked source condition or applies a different rule.",
-      "c": "Incorrect. This changes the checked source condition or applies a different rule.",
-      "d": "Incorrect. This changes the checked source condition or applies a different rule.",
-      "correct": "The article separates category from delivery method.",
-      "takeaway": "Apply the checked local raw-source condition before choosing the answer."
+      "a": "Wrong. 5% applies to condominium projects under RA 10884, not subdivisions.",
+      "b": "Correct. RA 10884 Section 2(b) sets the subdivision socialized-housing allocation at 15% of total area or project cost at the developer's option.",
+      "c": "Wrong. 20% was the original RA 7279 (1992) figure; RA 10884 (2016) reduced it to 15% for subdivisions.",
+      "d": "Wrong. 30% is the PD 1216/PD 957 non-buildable open space requirement, not a balanced-housing figure.",
+      "correct": "RA 10884 (2016) amended RA 7279 Section 18: subdivision projects require at least 15% of total area or project cost (at developer option); condominium projects require at least 5%.",
+      "takeaway": "RA 10884 reduced RA 7279's 20% subdivision share to 15%. The figure is a fixed 15% (or 5% for condominiums), not a range."
     },
-    "explanation": "The article separates category from delivery method.",
-    "code_citation": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
-    "bloom_level": "apply",
-    "application_context": "housing_delivery_methods",
+    "explanation": "RA 10884 Section 2(b) amends RA 7279 Section 18: subdivisions = at least 15% of total area or project cost; condominiums = at least 5%.",
+    "code_citation": "RA 10884 (2016), Section 2(b) amending RA 7279 Section 18",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
     "practice_context": [
-      "source-audited-article-batch-074-local-first"
+      "balanced-housing",
+      "RA 10884"
     ],
-    "difficulty": 0.62,
+    "difficulty": 0.5,
     "difficulty_rating": null,
     "discrimination_rating": null,
     "is_assessment": false

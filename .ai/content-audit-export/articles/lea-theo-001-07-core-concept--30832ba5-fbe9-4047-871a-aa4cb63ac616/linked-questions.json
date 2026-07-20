@@ -8,37 +8,31 @@
       "question_id": "b99538af-d27b-4324-be11-95c71fe927c0",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "The architectural design process is best understood as following which model?",
+      "text": "What is the source-audited relationship between architecture and society?",
       "options": [
         {
           "id": "a",
-          "text": "A chaotic process where design decisions are made continuously without systematic phases, often leading to unpredictable outcomes"
+          "text": "Architecture responds to social, cultural, economic, and environmental conditions."
         },
         {
           "id": "b",
-          "text": "Phases that are determined solely by client preference rather than professional standards, which can lead to inconsistencies"
+          "text": "Architecture is independent from society."
         },
         {
           "id": "c",
-          "text": "Strictly sequential phases that cannot overlap or be modified once initiated, ensuring a rigid but clear process"
+          "text": "Architecture is only a decorative art."
         },
         {
           "id": "d",
-          "text": "Iterative refinement of design from concept through construction, with phases that progress logically but may overlap on smaller projects or flexible delivery methods"
+          "text": "Architecture is determined only by structural span."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Architects employ systematic processes; this is not chaotic.",
-        "b": "Professional standards establish the framework; client preferences are accommodated within this framework.",
-        "c": "Flexibility in project delivery methods allows phase overlap while maintaining systematic progression.",
-        "correct": "While the fundamental progression from concept to construction remains consistent, phases may overlap or compress on smaller projects or design-build methods. The key is systematic progression, not rigid sequencing.",
-        "takeaway": "The key is systematic progression, not rigid sequencing."
-      },
+      "rationale": "Architecture responds to social, cultural, economic, and environmental conditions. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": "Architects employ systematic processes; this is not chaotic. Professional standards establish the framework; client preferences are accommodated within this framework. Flexibility in project delivery methods allows phase overlap while maintaining systematic progression. While the fundamental progression from concept to construction remains consistent, phases may overlap or compress on smaller projects or design-build methods. The key is systematic progression, not rigid sequencing. The key is systematic progression, not rigid sequencing.",
       "code_citation": null,
       "bloom_level": "remember",
@@ -53,44 +47,38 @@
       "model_id": "ALE-THEO-001-07-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-05-06T13:22:17.532544+00:00",
+      "updated_at": "2026-07-20T01:13:23.686694+00:00",
       "content_hash": "sha256:895767b8a703959f61b8701f2801128abe17ebf96505610a64bd7204b5a96f8c"
     },
     {
       "question_id": "a85e7772-9c31-419f-a9cf-50d500a64810",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "A Shop Drawing submitted by a contractor shows a detail not explicitly shown in the Construction Documents. What is the architect's responsibility?",
+      "text": "Which answer best explains why social conditions matter in architecture?",
       "options": [
         {
           "id": "a",
-          "text": "Automatically approve it if it seems structurally sound, assuming no further review is necessary"
+          "text": "They influence building types, appearance, comfort, convenience, and planning requirements."
         },
         {
           "id": "b",
-          "text": "Review it carefully to verify it complies with design intent and Construction Documents, issuing RFIs if clarification is needed"
+          "text": "They replace the need for functional planning."
         },
         {
           "id": "c",
-          "text": "Forward it to the structural engineer without comment, delegating responsibility for review"
+          "text": "They matter only in historical monuments."
         },
         {
           "id": "d",
-          "text": "Reject it for not being in the original documents, maintaining strict adherence to initial plans"
+          "text": "They apply only to legal occupancy classification."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Structural soundness is not the only criterion; design intent and specification compliance matter equally.",
-        "c": "The architect is the primary interpreter of design intent; specialist review supplements but does not replace this responsibility.",
-        "d": "Approved details may not be explicitly shown if they are standard practice; the question is whether they comply with design intent.",
-        "correct": "Shop Drawings require architect review and approval to ensure contractor interpretations align with design intent. If unclear, the architect issues an RFI (Request for Information) seeking clarification or modification.",
-        "takeaway": "If unclear, the architect issues an RFI (Request for Information) seeking clarification or modification."
-      },
+      "rationale": "They influence building types, appearance, comfort, convenience, and planning requirements. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": "Structural soundness is not the only criterion; design intent and specification compliance matter equally. The architect is the primary interpreter of design intent; specialist review supplements but does not replace this responsibility. Approved details may not be explicitly shown if they are standard practice; the question is whether they comply with design intent. Shop Drawings require architect review and approval to ensure contractor interpretations align with design intent. If unclear, the architect issues an RFI (Request for Information) seeking clarification or modification. If unclear, the architect issues an RFI (Request for Information) seeking clarification or modification.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -105,30 +93,30 @@
       "model_id": "ALE-THEO-001-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-05-06T13:22:17.683961+00:00",
+      "updated_at": "2026-07-20T01:13:23.680221+00:00",
       "content_hash": "sha256:187d05515efd5196257cd5bbc9a01810be821a0a883049333bab220174dda688"
     },
     {
       "question_id": "59d27089-6f3b-4a44-8924-1bdbf8a12ad2",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "How do Design Development drawings differ from Schematic Design drawings in terms of detail and approval?",
+      "text": "What should an LEA answer emphasize when asked about architecture and society?",
       "options": [
         {
           "id": "a",
-          "text": "Schematic drawings establish general direction needing approval; Design Development drawings specify materials, systems, and final design intent in detail, also requiring approval"
+          "text": "Context, human activity, social structure, and environment."
         },
         {
           "id": "b",
-          "text": "Design Development drawings require client approval but Schematic drawings do not, allowing for more flexibility in the early stages of design"
+          "text": "A single universal facade style."
         },
         {
           "id": "c",
-          "text": "Design Development drawings are less detailed; they are preliminary sketches not requiring formal approval, serving as a conceptual guide rather than a definitive plan"
+          "text": "Memorized ornament without context."
         },
         {
           "id": "d",
-          "text": "Both are equally detailed; the distinction is only in the timeline of the project, with no significant difference in content or purpose"
+          "text": "A structural calculation only."
         }
       ],
       "correct_option_id": "a",
@@ -136,13 +124,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Both require client approval at their respective stage; this is essential to project progression.",
-        "c": "Design Development drawings are more detailed, not less.",
-        "d": "The distinction is substantive—scope and detail increase significantly between phases.",
-        "correct": "Design Development refines the approved schematic concept into detailed drawings showing material selections, system layouts, and refined cost estimates. Both phases require client approval, but at different levels of detail and precision.",
-        "takeaway": "Both phases require client approval, but at different levels of detail and precision."
-      },
+      "rationale": "Context, human activity, social structure, and environment. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": "Both require client approval at their respective stage; this is essential to project progression. Design Development drawings are more detailed, not less. The distinction is substantive—scope and detail increase significantly between phases. Design Development refines the approved schematic concept into detailed drawings showing material selections, system layouts, and refined cost estimates. Both phases require client approval, but at different levels of detail and precision. Both phases require client approval, but at different levels of detail and precision.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -157,30 +139,30 @@
       "model_id": "ALE-THEO-001-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-05-06T13:22:17.84088+00:00",
+      "updated_at": "2026-07-20T01:13:23.676797+00:00",
       "content_hash": "sha256:943bd447a00fc41ed2a02db0b3e142917d9cbab1d1f72b577ffd687f655bab54"
     },
     {
       "question_id": "4335b6f2-bc45-4990-927c-3f78591a808e",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "A client reviews preliminary schematic designs and requests a major spatial reorganization. Should this request be accommodated? When, and what are the implications?",
+      "text": "Why is architecture not isolated from culture?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because schematic design is specifically intended for establishing the design direction before committing to detailed work; major changes here cost far less than during Construction Documents"
+          "text": "Built form houses and reflects activities, values, and needs of a civilization."
         },
         {
           "id": "b",
-          "text": "No; changes must wait until Design Development is complete to maintain schedule and avoid unnecessary delays"
+          "text": "Culture applies only after a building is completed."
         },
         {
           "id": "c",
-          "text": "Yes, but only if the client pays additional fees for the time already spent on rejected concepts and any subsequent revisions"
+          "text": "Culture is unrelated to building use."
         },
         {
           "id": "d",
-          "text": "No; the schematic phase is too late for major changes; the design has already been finalized and approved by all stakeholders"
+          "text": "Culture is only a color palette."
         }
       ],
       "correct_option_id": "a",
@@ -188,13 +170,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Waiting until Design Development increases cost and schedule impact significantly.",
-        "c": "While additional fees may apply, the question is about appropriateness of timing, which is correct during schematic phase.",
-        "d": "Schematic Design is explicitly intended for establishing—and potentially revising—design direction. It is not finalized.",
-        "correct": "Schematic Design is the appropriate phase for major conceptual changes. The design direction is still being established; client feedback drives refinement before investment in detailed drawings. Changes here are cost-effective compared to changes during later phases.",
-        "takeaway": "Changes here are cost-effective compared to changes during later phases."
-      },
+      "rationale": "Built form houses and reflects activities, values, and needs of a civilization. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -209,44 +185,38 @@
       "model_id": "ALE-THEO-001-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.678238+00:00",
       "content_hash": "sha256:e549939681f67fc0e7d8de058d2747c6026e9d84434434d8f26ca52887c22535"
     },
     {
       "question_id": "45328c46-b531-4bee-bfc5-cb760d922fab",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "In the Philippine context, how might the architectural design process be modified for a public school project in a typhoon-prone region?",
+      "text": "What is the source-audited relationship between architecture and society?",
       "options": [
         {
           "id": "a",
-          "text": "The Schematic Design phase would be skipped in favor of moving directly to Construction Documents to save time, which is not advisable due to the need for thorough planning"
+          "text": "Architecture responds to social, cultural, economic, and environmental conditions."
         },
         {
           "id": "b",
-          "text": "The standard five phases apply without modification; local climate conditions do not affect the process, which overlooks critical environmental considerations"
+          "text": "Architecture is independent from society."
         },
         {
           "id": "c",
-          "text": "Structural engineer involvement would typically occur earlier than Design Development to address typhoon wind resistance and ensure structural adequacy before schematic concepts are finalized"
+          "text": "Architecture is only a decorative art."
         },
         {
           "id": "d",
-          "text": "Environmental engineers would replace structural engineers due to the climate emphasis, which misrepresents the roles of these professionals"
+          "text": "Architecture is determined only by structural span."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Schematic Design cannot be skipped; it is essential for establishing design direction.",
-        "b": "Climate and risk context influence when consultants are engaged and how thoroughly each phase addresses structural resilience.",
-        "d": "Both structural and environmental engineers are needed; this is not an either-or choice.",
-        "correct": "High-risk climate conditions may warrant early structural consultation during or even before Schematic Design to ensure design direction is feasible and safe. While this modifies typical sequencing, it reflects responsible design practice in challenging environments.",
-        "takeaway": "While this modifies typical sequencing, it reflects responsible design practice in challenging environments."
-      },
+      "rationale": "Architecture responds to social, cultural, economic, and environmental conditions. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -261,44 +231,38 @@
       "model_id": "ALE-THEO-001-07-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.679301+00:00",
       "content_hash": "sha256:a08bee4ff8914a88c441dfe86219428c7490a49f1c6b83cdefa1f8865a0c1dd7"
     },
     {
       "question_id": "d85fed8d-2823-4d9a-84fb-0b3425119438",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "In the standard five-phase architectural process, when do structural engineers and mechanical engineers typically join the design team?",
+      "text": "Which answer best explains why social conditions matter in architecture?",
       "options": [
         {
           "id": "a",
-          "text": "From the very beginning of Schematic Design to ensure structural feasibility from the start"
+          "text": "They influence building types, appearance, comfort, convenience, and planning requirements."
         },
         {
           "id": "b",
-          "text": "During Design Development, after the architect has established the schematic design direction"
+          "text": "They replace the need for functional planning."
         },
         {
           "id": "c",
-          "text": "During Bidding and Negotiation, when constructability reviews are required"
+          "text": "They matter only in historical monuments."
         },
         {
           "id": "d",
-          "text": "During Construction Documents, when detailed technical calculations become necessary"
+          "text": "They apply only to legal occupancy classification."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Early involvement of all consultants is not standard practice; it increases cost without proportional benefit if design direction is still being established.",
-        "c": "Bidding occurs after Design Development and Construction Documents; consultants are already involved by then.",
-        "d": "They may have detailed calculations then, but they join before—during Design Development—to inform system selection and feasibility.",
-        "correct": "Consultants typically join during Design Development, once the architect has established design direction. This sequential approach saves time and cost by developing systems that support (rather than constrain) the approved concept.",
-        "takeaway": "This sequential approach saves time and cost by developing systems that support (rather than constrain) the approved concept."
-      },
+      "rationale": "They influence building types, appearance, comfort, convenience, and planning requirements. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": "Early involvement of all consultants is not standard practice; it increases cost without proportional benefit if design direction is still being established. Bidding occurs after Design Development and Construction Documents; consultants are already involved by then. They may have detailed calculations then, but they join before—during Design Development—to inform system selection and feasibility. Consultants typically join during Design Development, once the architect has established design direction. This sequential approach saves time and cost by developing systems that support (rather than constrain) the approved concept. This sequential approach saves time and cost by developing systems that support (rather than constrain) the approved concept.",
       "code_citation": null,
       "bloom_level": "remember",
@@ -313,44 +277,38 @@
       "model_id": "ALE-THEO-001-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-05-06T13:22:16.942793+00:00",
+      "updated_at": "2026-07-20T01:13:23.682030+00:00",
       "content_hash": "sha256:8423e0546fa9a02ef36068b6ce4dbf37928fc1d288553551897be3c56e32aa09"
     },
     {
       "question_id": "4ebdf156-fc5f-4199-9b37-ecf3cadcc63a",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "Construction Documents, also called technical design, consist of which of the following?",
+      "text": "What should an LEA answer emphasize when asked about architecture and society?",
       "options": [
         {
           "id": "a",
-          "text": "Cost estimates and project schedules for contractor planning and procurement coordination"
+          "text": "Context, human activity, social structure, and environment."
         },
         {
           "id": "b",
-          "text": "Preliminary sketches and 3D renderings for client presentation and approval of design intent"
+          "text": "A single universal facade style."
         },
         {
           "id": "c",
-          "text": "Comprehensive sets of drawings, specifications, and schedules containing all information required for bidding and construction"
+          "text": "Memorized ornament without context."
         },
         {
           "id": "d",
-          "text": "Detailed drawings showing material selections and spatial relationships for further refinement during design development"
+          "text": "A structural calculation only."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Schedules and cost estimates support Construction Documents but do not define them.",
-        "b": "This describes Schematic Design.",
-        "d": "This describes Design Development.",
-        "correct": "Construction Documents are comprehensive and complete, specifying every material, dimension, connection, and operational detail. They translate design intent into a format that enables contractors to build and obtain permits.",
-        "takeaway": "They translate design intent into a format that enables contractors to build and obtain permits."
-      },
+      "rationale": "Context, human activity, social structure, and environment. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "remember",
@@ -365,44 +323,38 @@
       "model_id": "ALE-THEO-001-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.681132+00:00",
       "content_hash": "sha256:31ccb505c555ea063d1b81add14e2dbe304d29993a26c874ebb388803c69ad09"
     },
     {
       "question_id": "f1e05489-1362-4f4d-9f94-a40f15284030",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "How do the roles of design phases differ from procurement phases in the overall architectural process?",
+      "text": "Why is architecture not isolated from culture?",
       "options": [
         {
           "id": "a",
-          "text": "All phases are equally focused on design refinement; there is no distinction between design and procurement, which means that both processes are integrated seamlessly"
+          "text": "Built form houses and reflects activities, values, and needs of a civilization."
         },
         {
           "id": "b",
-          "text": "The distinction is not meaningful; architects are equally involved in all phases, suggesting that their role does not change regardless of the phase"
+          "text": "Culture applies only after a building is completed."
         },
         {
           "id": "c",
-          "text": "Procurement phases occur during schematic design to ensure budgets are feasible, which allows for early financial planning and adjustments"
+          "text": "Culture is unrelated to building use."
         },
         {
           "id": "d",
-          "text": "Design phases focus on creating the design; the Bidding phase is a procurement phase where contractors are selected based on a completed design"
+          "text": "Culture is only a color palette."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Bidding is not a design phase; the design is complete before bidding occurs.",
-        "b": "The architect's role shifts substantially from design to management/verification across phases.",
-        "c": "Cost estimates occur during Design Development; bidding uses complete Construction Documents.",
-        "correct": "Schematic, Design Development, and Construction Documents are design phases where the architect creates and refines the design. Bidding/Negotiation is a procurement phase where the design is complete and contractors are selected based on competitive offers.",
-        "takeaway": "Bidding/Negotiation is a procurement phase where the design is complete and contractors are selected based on competitive offers."
-      },
+      "rationale": "Built form houses and reflects activities, values, and needs of a civilization. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": "Bidding is not a design phase; the design is complete before bidding occurs. The architect's role shifts substantially from design to management/verification across phases. Cost estimates occur during Design Development; bidding uses complete Construction Documents. Schematic, Design Development, and Construction Documents are design phases where the architect creates and refines the design. Bidding/Negotiation is a procurement phase where the design is complete and contractors are selected based on competitive offers. Bidding/Negotiation is a procurement phase where the design is complete and contractors are selected based on competitive offers.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -417,44 +369,38 @@
       "model_id": "ALE-THEO-001-07-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-05-06T13:22:17.08953+00:00",
+      "updated_at": "2026-07-20T01:13:23.683029+00:00",
       "content_hash": "sha256:32e00706a9906ba1855a625264caefb7ceb4ac855e1065cdefbb3f131a598487"
     },
     {
       "question_id": "f598fb46-3577-48b0-b30f-066138a6bfca",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "What is the primary role of the architect during the Construction Administration phase?",
+      "text": "What is the source-audited relationship between architecture and society?",
       "options": [
         {
           "id": "a",
-          "text": "To manage the construction site and supervise the contractor's daily work activities, ensuring all tasks align with project goals"
+          "text": "Architecture responds to social, cultural, economic, and environmental conditions."
         },
         {
           "id": "b",
-          "text": "To make regular site visits, review contractor submissions, verify compliance with drawings, interpret design intent, and certify payment requests"
+          "text": "Architecture is independent from society."
         },
         {
           "id": "c",
-          "text": "To make structural and material changes as field conditions differ from expectations, adapting the design as necessary"
+          "text": "Architecture is only a decorative art."
         },
         {
           "id": "d",
-          "text": "To coordinate schedules and manage the contractor's equipment and personnel, ensuring efficient resource allocation"
+          "text": "Architecture is determined only by structural span."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The contractor manages the site; the architect verifies compliance and quality.",
-        "c": "Changes are processed formally through change orders, not at the architect's discretion.",
-        "d": "Schedule and equipment management are contractor responsibilities.",
-        "correct": "The architect verifies that work complies with Construction Documents and maintains design integrity. The architect does not physically manage the site (that is the contractor's responsibility) but ensures design intent is realized.",
-        "takeaway": "The architect does not physically manage the site (that is the contractor's responsibility) but ensures design intent is realized."
-      },
+      "rationale": "Architecture responds to social, cultural, economic, and environmental conditions. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": "The contractor manages the site; the architect verifies compliance and quality. Changes are processed formally through change orders, not at the architect's discretion. Schedule and equipment management are contractor responsibilities. The architect verifies that work complies with Construction Documents and maintains design integrity. The architect does not physically manage the site (that is the contractor's responsibility) but ensures design intent is realized. The architect does not physically manage the site (that is the contractor's responsibility) but ensures design intent is realized.",
       "code_citation": null,
       "bloom_level": "remember",
@@ -469,44 +415,38 @@
       "model_id": "ALE-THEO-001-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-05-06T13:22:17.237961+00:00",
+      "updated_at": "2026-07-20T01:13:23.684775+00:00",
       "content_hash": "sha256:f703babd8040d0c022c115116aee65ee28d5c3fdaf83a8008e16d660f3e6e013"
     },
     {
       "question_id": "3600ee5d-b6b5-41fc-92b9-ac13201a940e",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "A contractor encounters field conditions differing from documented expectations (e.g., subsurface soil conditions differ from geotechnical reports). How should this be addressed?",
+      "text": "Which answer best explains why social conditions matter in architecture?",
       "options": [
         {
           "id": "a",
-          "text": "The architect directs the contractor to proceed as originally designed despite different conditions, assuming all risks associated with the deviation"
+          "text": "They influence building types, appearance, comfort, convenience, and planning requirements."
         },
         {
           "id": "b",
-          "text": "The project is suspended until new geotechnical reports are obtained, which may delay the project timeline significantly"
+          "text": "They replace the need for functional planning."
         },
         {
           "id": "c",
-          "text": "The architect investigates the conditions, interprets design intent, and may issue a change order if modifications become necessary"
+          "text": "They matter only in historical monuments."
         },
         {
           "id": "d",
-          "text": "The contractor makes independent decisions about how to proceed without consulting the architect, potentially leading to non-compliance with design specifications"
+          "text": "They apply only to legal occupancy classification."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Proceeding blindly with original design despite changed conditions may be unsafe or unfeasible.",
-        "b": "Suspension is not necessary; the architect works with consultants to determine appropriate response.",
-        "d": "Contractor independence without architect coordination violates the design contract.",
-        "correct": "Field conditions may differ from expectations. The architect investigates, interprets how design intent applies to the actual conditions, and documents any necessary modifications through change orders.",
-        "takeaway": "The architect investigates, interprets how design intent applies to the actual conditions, and documents any necessary modifications through change orders."
-      },
+      "rationale": "They influence building types, appearance, comfort, convenience, and planning requirements. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -521,44 +461,38 @@
       "model_id": "ALE-THEO-001-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.683898+00:00",
       "content_hash": "sha256:c32b31be276a7262b9c0f988d391d2d3b006f95333a2bb8fc0d4c63acd87549c"
     },
     {
       "question_id": "f6dcf17d-d08c-4445-90be-8e1d4a628cfd",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "Schematic Design, the first major phase of the architectural process, is best characterized by which of the following?",
+      "text": "What should an LEA answer emphasize when asked about architecture and society?",
       "options": [
         {
           "id": "a",
-          "text": "Bidding process where contractors submit competitive offers based on completed drawings, which occurs after design phases"
+          "text": "Context, human activity, social structure, and environment."
         },
         {
           "id": "b",
-          "text": "Site visits and quality verification ensuring contractor compliance with approved drawings, typically part of construction administration"
+          "text": "A single universal facade style."
         },
         {
           "id": "c",
-          "text": "Preliminary design concepts, sketches, floor plans, and 3D renderings establishing general layout and form without finalizing details"
+          "text": "Memorized ornament without context."
         },
         {
           "id": "d",
-          "text": "Production of comprehensive technical drawings specifying every material, dimension, and construction detail, which is part of the construction documents phase"
+          "text": "A structural calculation only."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This describes the Bidding phase.",
-        "b": "This describes Construction Administration.",
-        "d": "This describes Construction Documents, a later phase.",
-        "correct": "Schematic Design establishes the big-picture concept—general layout of spaces, overall form and mass, and approximate scale. The goal is client approval of design direction, not specification of every detail.",
-        "takeaway": "The goal is client approval of design direction, not specification of every detail."
-      },
+      "rationale": "Context, human activity, social structure, and environment. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": "This describes the Bidding phase. This describes Construction Administration. This describes Construction Documents, a later phase. Schematic Design establishes the big-picture concept—general layout of spaces, overall form and mass, and approximate scale. The goal is client approval of design direction, not specification of every detail. The goal is client approval of design direction, not specification of every detail.",
       "code_citation": null,
       "bloom_level": "remember",
@@ -573,44 +507,38 @@
       "model_id": "ALE-THEO-001-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-05-06T13:22:17.386909+00:00",
+      "updated_at": "2026-07-20T01:13:23.687543+00:00",
       "content_hash": "sha256:9bb824e9846378f9698d836a66dacc20f2dae66b4774437cd8d866488d63c1d6"
     },
     {
       "question_id": "bb520aac-e0a1-4a1a-ab7e-5e5adbbb0322",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "After Construction Documents are complete and issued for bidding, a client requests a significant design change. How is this typically managed?",
+      "text": "Why is architecture not isolated from culture?",
       "options": [
         {
           "id": "a",
-          "text": "The change is negotiated with the lowest bidder during contract award, ensuring that the cost implications are addressed"
+          "text": "Built form houses and reflects activities, values, and needs of a civilization."
         },
         {
           "id": "b",
-          "text": "The change is deferred until the next project; Construction Documents cannot be modified once issued, unless under exceptional circumstances"
+          "text": "Culture applies only after a building is completed."
         },
         {
           "id": "c",
-          "text": "The change is processed as a change order during Construction Administration, with documented cost and schedule impacts"
+          "text": "Culture is unrelated to building use."
         },
         {
           "id": "d",
-          "text": "The change is incorporated into the drawings immediately at no additional cost, provided it does not affect the structural integrity"
+          "text": "Culture is only a color palette."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Changes are not negotiated with individual bidders; they are processed formally after contract award.",
-        "b": "Changes can be made but through formal processes acknowledging their impact.",
-        "d": "Changes at this stage are not free; they have cost and schedule consequences.",
-        "correct": "Once Construction Documents are released for bidding, they become relatively fixed. Changes after this point trigger the formal change order process during Construction Administration, documenting impacts on cost and schedule.",
-        "takeaway": "Changes after this point trigger the formal change order process during Construction Administration, documenting impacts on cost and schedule."
-      },
+      "rationale": "Built form houses and reflects activities, values, and needs of a civilization. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "apply",
@@ -625,30 +553,30 @@
       "model_id": "ALE-THEO-001-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.685658+00:00",
       "content_hash": "sha256:f55e7c0cd831af8636ac27fc59fdd864b7dfe480ecdc9b0a9d1d1ac2bd7608d7"
     },
     {
       "question_id": "59987c89-25b6-46e5-8ae1-940a45720f65",
       "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
       "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
-      "text": "How does the systematic design process protect both the client's interests and the quality of the final building?",
+      "text": "What is the source-audited relationship between architecture and society?",
       "options": [
         {
           "id": "a",
-          "text": "It allows major design decisions to be made and approved before detailed technical investment, identifies consultants' expertise early, and establishes clear approval points protecting client interests while ensuring design quality is verified throughout construction"
+          "text": "Architecture responds to social, cultural, economic, and environmental conditions."
         },
         {
           "id": "b",
-          "text": "It transfers all responsibility to contractors, protecting the architect from liability, thereby ensuring that any issues arising during construction are not attributed to the design team"
+          "text": "Architecture is independent from society."
         },
         {
           "id": "c",
-          "text": "It ensures the lowest possible cost by minimizing architect involvement across phases, which can lead to cost savings but may compromise design integrity"
+          "text": "Architecture is only a decorative art."
         },
         {
           "id": "d",
-          "text": "It eliminates the need for revisions by making all decisions during Schematic Design, assuming that initial decisions are comprehensive and final"
+          "text": "Architecture is determined only by structural span."
         }
       ],
       "correct_option_id": "a",
@@ -656,13 +584,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "The architect maintains significant responsibility throughout all phases.",
-        "c": "The process does not minimize architect involvement; rather, it structures involvement strategically.",
-        "d": "Revisions are expected; the process accommodates them cost-effectively at early phases.",
-        "correct": "The phased process allows major concepts to be established and approved before detailed technical investment (protecting costs), ensures consultants contribute at appropriate times (improving feasibility and quality), and maintains architect oversight through Construction Administration (verifying design intent realization).",
-        "takeaway": "The phased process allows major concepts to be established and approved before detailed technical investment (protecting costs), ensures consultants contribute at appropriate times (improving feasibility and quality), and maintains architect oversight through Construction Administration (verifying design intent realization)."
-      },
+      "rationale": "Architecture responds to social, cultural, economic, and environmental conditions. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": "analyze",
@@ -677,7 +599,7 @@
       "model_id": "ALE-THEO-001-07-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.688351+00:00",
       "content_hash": "sha256:9a9b65f34fe42f02ce5ddfd9a7d1e04e3e60a7465b7d51b087e402622a8ea05a"
     }
   ]

@@ -1,0 +1,543 @@
+{
+  "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:5c64b5939e93184d30a3d2431489e5376e794d4115b0b334afc2d786149fb4de",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "cfd4d907-3fb3-4788-bdf2-e7d54763fe1e",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "A mixed-use building contains 800 m² office space and 200 m² restaurant dining area. After calculating required parking, how many accessible spaces must be provided?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 accessible space (1% of total), which is the minimum requirement for buildings of this size."
+        },
+        {
+          "id": "b",
+          "text": "1 accessible space (1% of total per BP 344 2024 IRR)"
+        },
+        {
+          "id": "c",
+          "text": "8 accessible spaces (1 per 100 sqm), calculated based on the total area of the building."
+        },
+        {
+          "id": "d",
+          "text": "0 accessible spaces (only required for facilities >5,000 sqm), as smaller facilities are exempt from this requirement."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—1% of 15 rounds to 0, but minimum is always 2 per BP 344.",
+        "c": "Incorrect—accessible parking is NOT 1 per 100 sqm; it is 1% of total (minimum 2).",
+        "d": "Incorrect—accessible spaces are required for all buildings, regardless of size (minimum 2).",
+        "correct": "Step 1: Office (800 m² ÷ 125) = 6.4 ≈ 6 spaces; Restaurant (200 m² ÷ 30) = 6.67 ≈ 7 spaces. Total = 13 spaces. Step 2: Accessible = 1% of 13 = 0.13, but 1 space required (1 for 1-50 total spaces) per BP 344 2024 IRR. Answer: 2 accessible spaces (4.0m × 5.0m each, plus 1.2m access aisle).",
+        "takeaway": "Accessible parking = 1% of total parking (minimum 2 spaces). This is the critical intersection of parking calculations and accessibility law."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Sec. 803 + BP 344 (Accessibility Parking Requirements)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [
+        "Multi-step calculation",
+        "Percentage with minimum rule",
+        "BP 344 integration"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a5336807fcfdeccd6cbb78d45d19c65d71e070c48c11715100c254f49f99b8c0"
+    },
+    {
+      "question_id": "498c1496-c58f-41e8-9aa2-daa3e1f49e4d",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "A standard parking stall in the Philippines must measure:",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.0m wide × 5.0m long"
+        },
+        {
+          "id": "b",
+          "text": "2.4m wide × 4.8m long"
+        },
+        {
+          "id": "c",
+          "text": "2.5m wide × 5.0m long"
+        },
+        {
+          "id": "d",
+          "text": "3.0m wide × 5.5m long"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—2.0m is too narrow for most vehicles; this is a common error (ERR-DSGN-025).",
+        "b": "Incorrect—2.4m × 4.8m is the compact car stall (allowed for max 25% of total parking).",
+        "d": "Incorrect—3.0m × 5.5m is not a standard stall size. (Current accessible van stall per 2024 Revised IRR = 4.0m × 5.0m, not 3.7m × 5.5m.)",
+        "correct": "PD 1096 Rule VII Table VII.4 specifies standard car parking stall dimensions as 2.5m × 5.0m as 2.5m width × 5.0m length. These are the minimum dimensions for typical sedans.",
+        "takeaway": "Standard car = 2.5m × 5.0m (NOT 2.0m). Compact = 2.4m × 4.8m (max 25% of total)."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Parking Stall Dimensions); BP 344",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Stall dimension memorization",
+        "Standard vs. compact distinction"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8b4dc7dbef7edac3dd5f403496894ec9a713fccd08f19b63eaec7473e6080e83"
+    },
+    {
+      "question_id": "a108d995-3338-4e59-80ea-74d8a81b7022",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "A hotel is designed as 'first class' category. The NBC parking requirement for a 150-room first class hotel is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 spaces (1 per 10 rooms)"
+        },
+        {
+          "id": "b",
+          "text": "150 spaces (1 per room)"
+        },
+        {
+          "id": "c",
+          "text": "37–38 spaces (1 per 4 rooms)"
+        },
+        {
+          "id": "d",
+          "text": "75 spaces (1 per 2 rooms)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Incorrect—150 spaces is 1 per room (de luxe category, not first class). De luxe hotels require higher parking ratios.",
+        "c": "Incorrect—37–38 spaces would be 1 per 4 rooms, which is not a standard hotel ratio.",
+        "d": "Incorrect—75 spaces is 1 per 2 rooms, an outdated ratio. Current code specifies 1 per 10 rooms.",
+        "correct": "PD 1096 Rule VII Sec. 803 specifies: Hotel (first class) = 1 space per 10 guest rooms. 150 rooms ÷ 10 = 15 spaces. This is the correct calculation per code.",
+        "takeaway": "First class hotel = 1 space per 10 guest rooms. De luxe hotel = 1 space per 1 room. For 150 rooms first class: 150 ÷ 10 = 15 spaces."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Hospitality—Hotel Categories)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Hospitality occupancy categories",
+        "Ratio application"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:585bb4d238142c2341956301fc635e9c157396d81b826900e54fdc3717295c0f"
+    },
+    {
+      "question_id": "48f3e50e-1d97-4ede-958d-33343b12aa35",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "A parking stall marked as 'motorcycle' spaces takes up 0.75m width × 2.0m length per NBC. How many motorcycle spaces are equivalent to 1 standard car parking space in terms of area allocation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 motorcycles = 1 car space"
+        },
+        {
+          "id": "b",
+          "text": "3 motorcycles = 1 car space"
+        },
+        {
+          "id": "c",
+          "text": "4 motorcycles = 1 car space"
+        },
+        {
+          "id": "d",
+          "text": "5 motorcycles = 1 car space"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—too generous; motorcycles are much more space-efficient.",
+        "b": "Incorrect—still underestimates motorcycle efficiency.",
+        "d": "Incorrect—overestimates motorcycle count.",
+        "correct": "PD 1096 Rule VII Sec. 803 states: No specific motorcycle-to-car conversion factor in PD 1096; question basis unsupported. This is a regulatory conversion factor reflecting motorcycle footprint efficiency.",
+        "takeaway": "1 motorcycle = 0.25 car slot, so 4 motorcycles ≈ 1 car slot. This ratio is used to convert mixed vehicle parking into 'car-equivalents' for compliance verification."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Motorcycle Parking—Conversion Factor)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Motorcycle parking allowance",
+        "Unit conversion",
+        "Space equivalency"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c039f5fbb79e39dc9c0b3d50ff0f0b6713939102a9b39579cca3296fd8330865"
+    },
+    {
+      "question_id": "e02a4fa5-dff1-4efd-9167-9578c9e23ffa",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "A restaurant with 150 m² of dining area is proposed. How many parking spaces are required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 space (1 per 150 sqm)"
+        },
+        {
+          "id": "b",
+          "text": "3 spaces (1 per 50 sqm)"
+        },
+        {
+          "id": "c",
+          "text": "5 spaces (1 per 30 sqm)"
+        },
+        {
+          "id": "d",
+          "text": "15 spaces (1 per 10 sqm)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—using wrong ratio; 1/150 is not a standard NBC ratio.",
+        "b": "Incorrect—1/50 is not the restaurant ratio (possibly confused with office).",
+        "d": "Incorrect—1/10 is far too strict and not applicable.",
+        "correct": "PD 1096 Rule VII Sec. 803 prescribes 1 parking space per 30 m² of dining area for restaurants. 150 m² ÷ 30 = 5 spaces. Note: only dining area counts, not kitchen, bar, or staff areas.",
+        "takeaway": "Restaurant parking is 1 space per 30 m² of dining area (not total building area). Smaller unit = more parking demand."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Food & Beverage Parking)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Specialized occupancy ratio",
+        "Dining area measurement"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d4908464d3eab1b9a2496e801d01f5080fb73cf520a427d83f14dcc22334e04a"
+    },
+    {
+      "question_id": "ec7285b9-1a71-4698-a426-aa9873531189",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "An accessible parking stall designed with dimensions 3.5m × 4.8m plus a 1.2m access aisle is submitted for BPBD approval. Will it be approved?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes—the dimensions meet or exceed all requirements"
+        },
+        {
+          "id": "b",
+          "text": "No—the stall width is too narrow (should be 4.0m, not 3.5m)"
+        },
+        {
+          "id": "c",
+          "text": "No—the stall length is too short (should be 5.0m, not 4.8m)"
+        },
+        {
+          "id": "d",
+          "text": "No—the access aisle is too narrow (should be 1.7m, not 1.2m)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—dimensions do not meet requirements.",
+        "c": "Incorrect—length is close (5.0m is minimum; 4.8m is slightly short but width 3.5m vs. 4.0m is the critical failure).",
+        "d": "Incorrect—1.2m access aisle is correct per BP 344.",
+        "correct": "BP 344 and PD 1096 specify accessible van parking stall dimensions as 3.6m width × 5.0m length plus adjacent 1.2m access aisle (total 4.8m width) per BP 344 2024 IRR. The submitted stall is 3.5m wide, which is deficient by 0.5m—it will not accommodate wheelchair lift deployment. This is ERR-DSGN-016.",
+        "takeaway": "Accessible van stall = 4.0m wide × 5.0m long (NOT 3.5m × 4.8m). The 4.0m width is critical for van lift operation."
+      },
+      "explanation": null,
+      "code_citation": "BP 344 (Accessibility Law) + PD 1096 Rule VII Sec. 803; ERR-DSGN-016 (Common Error Registry)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Compliance checking",
+        "BP 344 standards",
+        "Wheelchair lift requirements"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5983aaaaae108e5c13cf184348da6277f5ba0a0896b1901ba8af98bfb33a53b4"
+    },
+    {
+      "question_id": "ecf50051-1389-4299-b6d3-397717f004bc",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "An office building is 2,500 m² GFA. How many parking spaces are required per NBC regulations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 spaces (1 per 125 sqm)"
+        },
+        {
+          "id": "b",
+          "text": "50 spaces (1 per 50 sqm)"
+        },
+        {
+          "id": "c",
+          "text": "12 spaces (1 per 200 sqm)"
+        },
+        {
+          "id": "d",
+          "text": "100 spaces (1 per 25 sqm)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Incorrect—1 per 50 sqm is an outdated or non-Philippine standard. NBC specifies 1/125 sqm. This is a common error (ERR-DSGN-027).",
+        "c": "Incorrect—1 per 200 sqm applies to industrial/warehouse, not office.",
+        "d": "Incorrect—this ratio is too strict and not applicable to any occupancy type in NBC.",
+        "correct": "PD 1096 (2004 Revised IRR) Rule VII Table VII.4 prescribes 1 parking space per 125 m² GFA for office buildings. 2,500 m² ÷ 125 = 20 spaces.",
+        "takeaway": "Office parking ratio is 1 space per 125 m² GFA. Remember: 1/125 (not 1/100)."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Parking Requirements by Use)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "NBC ratio lookup",
+        "Basic arithmetic"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:862941042f60d490db854b41889d00bc14850109bc68b5e298f695dae1b33b38"
+    },
+    {
+      "question_id": "2b1ed3ac-5938-4f31-836e-cfdf92b67670",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "A large mixed-use development is being designed: 5,000 m² office, 2,000 m² retail, 100-room apartment building (at 1 space per unit), and 400 m² restaurant dining area. Calculate the total parking requirement and accessible spaces.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total: 75 spaces; Accessible: 1 space"
+        },
+        {
+          "id": "b",
+          "text": "Total: 173 spaces; Accessible: 2 spaces"
+        },
+        {
+          "id": "c",
+          "text": "Total: 173 spaces; Accessible: 3 spaces"
+        },
+        {
+          "id": "d",
+          "text": "Total: 160 spaces; Accessible: 5 spaces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—total is too low (75 is not the sum of component ratios).",
+        "c": "Incorrect—total is correct (173) but accessible spaces should be 2 (1% = 1.73, minimum 2), not 3.",
+        "d": "Incorrect—total is underestimated and accessible count exceeds correct calculation.",
+        "correct": "Step 1: Calculate by use. Office (5,000 ÷ 125) = 40 spaces. Retail (2,000 ÷ 100) = 20 spaces. Apartment (100 units × 1) = 100 spaces. Restaurant (400 ÷ 30) = 13.33 ≈ 13 spaces (round up). Subtotal = 40 + 20 + 100 + 13 = 173 spaces. Step 2: Accessible spaces = 2 (2 slots for 51-150 total parking spaces) per BP 344 2024 IRR Table 4.2.4.2. Therefore: Total = 173, Accessible = 2.",
+        "takeaway": "Mixed-use calculation requires summing all use types: Office (1/125), Retail (1/100), Residential (1/unit), Restaurant (1/30 dining). Accessible = 1% with minimum 2 spaces per BP 344."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (All Uses); BP 344 (Accessible Parking)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Multi-occupancy summation",
+        "Percentage with minimum",
+        "Accessible compliance"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d9ded4ba86d85ec16f6dfcbf025e7012bfb5011c7359b6d023ca0160cd066eed"
+    },
+    {
+      "question_id": "2172c445-ecaf-4f77-8994-329242f352ef",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "A developer proposes 240 parking spaces for an office building. Under NBC regulations, what is the maximum number of spaces that can be designed as compact (small car) stalls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 spaces (12.5%)"
+        },
+        {
+          "id": "b",
+          "text": "48 spaces (20%)"
+        },
+        {
+          "id": "c",
+          "text": "60 spaces (25%)"
+        },
+        {
+          "id": "d",
+          "text": "80 spaces (33%)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—12.5% is below the allowed maximum.",
+        "b": "Incorrect—20% is below the allowed maximum.",
+        "d": "Incorrect—33% exceeds the 25% maximum cap.",
+        "correct": "PD 1096 Rule VII Sec. 803 allows compact car stalls (2.4m × 4.8m) to constitute a maximum of 25% of total parking. 240 spaces × 25% = 60 compact spaces maximum.",
+        "takeaway": "Compact stalls = maximum 25% of total parking supply. Always calculate 25% and round down if necessary."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Compact Parking Maximum)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Percentage calculation",
+        "Compact vs. standard ratio"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f3ea30714fc9b48c82b56b330773ecf02a0165f7920e47c7021c3fd2e045c73"
+    },
+    {
+      "question_id": "9835510c-e862-4eeb-9ce5-416b6cd8e9de",
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "topic_id": "25d0f2ab-212e-47df-bda1-4857861e623f",
+      "text": "A school building has 20 classrooms and 400 students enrolled. What is the total parking requirement per NBC regulations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 spaces (1 per 50 students), calculated based on student enrollment."
+        },
+        {
+          "id": "b",
+          "text": "20 spaces (1 per classroom), ensuring adequate parking for faculty and staff."
+        },
+        {
+          "id": "c",
+          "text": "28 spaces (20 classrooms + 8 from student ratio)"
+        },
+        {
+          "id": "d",
+          "text": "80 spaces (1 per 5 students), which accounts for high student vehicle usage."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—this counts only student ratio, not the classroom component.",
+        "b": "Incorrect—this counts only classrooms, not students.",
+        "d": "Incorrect—1 per 5 students is far too strict and not a standard ratio.",
+        "correct": "PD 1096 Rule VII Sec. 803 specifies: School/University = 1 space per classroom + 1 per 50 students. Calculation: 20 classrooms = 20 spaces; 400 students ÷ 50 = 8 spaces. Total = 20 + 8 = 28 spaces.",
+        "takeaway": "School parking is ADDITIVE: 1 per classroom + 1 per 50 students. Both components are required; do not use one ratio in isolation."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Educational Institutions—School Parking)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Educational occupancy",
+        "Additive ratios",
+        "Multi-unit calculation"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd520d3a6081421822455e5aaf2e5cea4e3cd87824fa995d3e8284ba939f772b"
+    }
+  ]
+}

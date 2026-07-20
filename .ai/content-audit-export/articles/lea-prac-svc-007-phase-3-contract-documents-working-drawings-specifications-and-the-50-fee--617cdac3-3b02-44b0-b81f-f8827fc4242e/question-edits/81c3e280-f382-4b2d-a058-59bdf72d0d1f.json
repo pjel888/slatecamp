@@ -2,9 +2,9 @@
   "question_id": "81c3e280-f382-4b2d-a058-59bdf72d0d1f",
   "baseline_hash": "sha256:9fad90665835ce5bcc1e96120c095101235fd3f4fd9f3a6154f5cadc4f49bbb4",
   "action": "replace",
-  "reason": "source-audited-article-batch-095-local-first verified this linked question against local source evidence for lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee and refreshed the source-safe local question-edit draft.",
-  "approved_by": "codex-local-source-audit-batch-095",
-  "approved_at": "2026-05-12T22:11:13.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
     "parent_article_slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
@@ -49,41 +49,28 @@
     "batch_095_verified": true
   },
   "proposed": {
-    "text": "If work is abandoned after the architect prepared the plans, specifications, and project design documents, what percentage of the work does UAP Document 401-402 associate with completed Contract Documents?",
+    "text": "What is the primary deliverable of the Contract Documents Phase according to SPP 202?",
     "options": [
       {
         "id": "a",
-        "text": "15%"
+        "text": "Preliminary schematic design concepts"
       },
       {
         "id": "b",
-        "text": "35%"
+        "text": "Complete contract documents with detailed drawings and comprehensive specifications for construction"
       },
       {
         "id": "c",
-        "text": "85%"
+        "text": "Bid documents and contractor proposals"
       },
       {
         "id": "d",
-        "text": "100%"
+        "text": "Site supervision during construction"
       }
     ],
-    "correct_option_id": "c",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "The abandoned-work clause treats completed Contract Documents as equivalent to 85% of the work.",
-    "explanation": "The abandoned-work clause treats completed Contract Documents as equivalent to 85% of the work.",
-    "code_citation": "SPP Document 202; UAP Document 401-402 where payment timing is tested",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
-    "practice_context": [
-      "SPP 202",
-      "regular design services"
-    ],
-    "difficulty": 0.64,
-    "is_assessment": false,
-    "model_id": "BATCH-095-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee-008"
+    "correct_option_id": "b",
+    "rationale": "Contract Documents consist of detailed designs and construction drawings setting forth all work required for all building systems, plus comprehensive technical specifications (SPP Doc 202). [A]: Schematic design is prepared in the Schematic Design phase. [C]: Bid documents are prepared in the Bidding Assistance phase. [D]: Site supervision is the Construction Administration phase.",
+    "explanation": null,
+    "code_citation": "SPP Doc 202"
   }
 }

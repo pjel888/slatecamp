@@ -2,70 +2,48 @@
   "question_id": "89f0062e-92dc-411c-9f07-7c02ed8b32f0",
   "baseline_hash": "sha256:e726f16b05bd88eb3596ce623216d468c9fa8e6a0d0812e3c46603ec2e703c9b",
   "action": "replace",
-  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
-  "approved_by": "codex-local-first-batch-041",
-  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent G ERROR G1 / Q11): marked-correct '58,500 VA' failed arithmetic; the model-generated rationale itself admitted the connected-load sum equals 51,500 VA. Recomputed total connected load: lighting 500 sqm x 5 VA/sqm = 2,500 VA; 200 receptacles x 180 VA = 36,000 VA; water heater 8 kW = 8,000 VA; HVAC motor 5 kW = 5,000 VA. Total = 2,500 + 36,000 + 8,000 + 5,000 = 51,500 VA. Restores the original connected-load question with the corrected answer.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "c9e0e01a-b54b-4957-8316-010c1780aea1",
     "parent_article_slug": "lea-util-003-07-residential-load-computation-pec-method",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358 | Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190",
-    "checked_markdown_lines": [
-      "Phil Electrical Code refined markdown lines 1721-1770",
-      "Phil Electrical Code refined markdown lines 2125-2138",
-      "Phil Electrical Code refined markdown lines 2202-2237",
-      "Phil Electrical Code refined markdown lines 2253-2311",
-      "Phil Electrical Code refined markdown lines 2337-2358",
-      "Electrical Layout and Estimate refined markdown lines 53-68",
-      "Electrical Layout and Estimate refined markdown lines 3260-3350",
-      "Electrical Layout and Estimate refined markdown lines 2153-2190"
-    ],
+    "support_status": "council_verified_fact_check",
+    "source_locator": "PEC 220.12 general lighting (commercial office 5 VA/sqm basis used in the scenario); receptacle load 180 VA each; appliance/motor nameplate load.",
     "checked_sources": [
       {
         "source_id": "pec-2017-local-phil-electrical-code",
         "label": "Philippine Electrical Code local raw PDF",
         "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
-        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
-        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
-        "locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358"
-      },
-      {
-        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
-        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
-        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
-        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
-        "locator": "Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190"
+        "locator": "PEC 220.12 general lighting; receptacle load 180 VA each; appliance/motor nameplate load."
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+    "local_source_safe_action": "Corrected marked-correct option from '58,500 VA' to '51,500 VA' (council-recomputed value, matching Agent G)."
   },
   "proposed": {
-    "text": "How are dwelling general-use receptacles treated in this article scope?",
+    "text": "A commercial office building (500 sqm) has: lighting 5 VA/sqm, 200 receptacles at 180 VA each, 8 kW water heater, and 5 kW HVAC motor. What is the total connected load before demand factor?",
     "options": [
       {
         "id": "a",
-        "text": "They are handled within the general lighting-load method except where a more specific Code rule applies."
+        "text": "49,500 VA"
       },
       {
         "id": "b",
-        "text": "They are always zero load."
+        "text": "50,500 VA"
       },
       {
         "id": "c",
-        "text": "They always use a structural span table."
+        "text": "51,500 VA"
       },
       {
         "id": "d",
-        "text": "They are always omitted from residential calculations."
+        "text": "58,500 VA"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The checked provisions distinguish general lighting/receptacle treatment from specific outlet and appliance rules.",
-    "explanation": "The checked provisions distinguish general lighting/receptacle treatment from specific outlet and appliance rules.",
-    "code_citation": "PEC lighting and receptacle load provisions"
+    "correct_option_id": "c",
+    "rationale": "Connected load = sum of all nameplate/unit values. Lighting = 500 x 5 = 2,500 VA. Receptacles = 200 x 180 = 36,000 VA. Water heater = 8 kW = 8,000 VA. HVAC motor = 5 kW = 5,000 VA. Total = 2,500 + 36,000 + 8,000 + 5,000 = 51,500 VA. The original '58,500 VA' answer over-counted by 7,000 VA; the model-generated rationale itself admitted the sum equals 51,500 VA. Source: PEC 220.12 general lighting and receptacle/appliance load provisions.",
+    "explanation": "Total connected load = 2,500 + 36,000 + 8,000 + 5,000 = 51,500 VA before any demand factor.",
+    "code_citation": "PEC 220.12 (general lighting); PEC receptacle and appliance/motor nameplate load provisions"
   }
 }

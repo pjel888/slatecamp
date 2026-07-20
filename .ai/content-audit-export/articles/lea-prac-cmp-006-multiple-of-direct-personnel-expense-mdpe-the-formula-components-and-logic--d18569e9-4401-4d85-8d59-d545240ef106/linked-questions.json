@@ -8,36 +8,37 @@
       "question_id": "784da871-b661-4bd9-95e6-41cc531a2eaf",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "Which costs are included in Direct Personnel Expense (DPE)?",
+      "text": "According to SPP 202 Section 5.2, MDPE is applicable only to what kind of work?",
       "options": [
         {
           "id": "a",
-          "text": "Architect salaries, benefits, and office rent, which are essential for maintaining operational capacity"
+          "text": "Non-creative work such as accounting, research, data gathering, and report preparation"
         },
         {
           "id": "b",
-          "text": "Architect and technical staff salaries plus labor-related benefits of personnel directly assigned to the project"
+          "text": "All creative design services regardless of scope"
         },
         {
           "id": "c",
-          "text": "All firm staff costs including administrative and management personnel, regardless of project involvement"
+          "text": "Only percentage-of-PCC building design work"
         },
         {
           "id": "d",
-          "text": "Only senior architect and principal time, excluding other essential personnel costs"
+          "text": "Only construction contractor work"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Includes office rent, which is overhead covered by the multiplier, not Direct Personnel Expense.",
-        "c": "Includes all firm staff, not just those directly assigned to the project; DPE only includes project-engaged personnel.",
-        "d": "Omits design architect, junior staff, and specialists; DPE includes all project team members regardless of level.",
-        "correct": "DPE includes only salaries and labor-related benefits (PAGIBIG, PhilHealth, SSS) of architects, engineers, and technical staff directly engaged in the project's design and delivery.",
-        "takeaway": "DPE = salaries + mandatory benefits (PAGIBIG, PhilHealth, SSS) for project-assigned staff only; office rent and overhead are in the multiplier, not DPE."
+        "a": "SPP 202 Section 5.2 limits MDPE to non-creative work such as accounting, research, data gathering, and preparation of reports.",
+        "b": "The source says MDPE does not account for creative work.",
+        "c": "Percentage-of-PCC is a different compensation method.",
+        "d": "The source is about Architect compensation, not contractor work.",
+        "correct": "SPP 202 Section 5.2 limits MDPE to non-creative work such as accounting, research, data gathering, and preparation of reports.",
+        "takeaway": "MDPE is effort/time based for measurable technical work."
       },
       "explanation": "Includes office rent, which is overhead covered by the multiplier, not Direct Personnel Expense. Includes all firm staff, not just those directly assigned to the project; DPE only includes project-engaged personnel. Omits design architect, junior staff, and specialists; DPE includes all project team members regardless of level. DPE includes only salaries and labor-related benefits (PAGIBIG, PhilHealth, SSS) of architects, engineers, and technical staff directly engaged in the project's design and delivery. DPE = salaries + mandatory benefits (PAGIBIG, PhilHealth, SSS) for project-assigned staff only; office rent and overhead are in the multiplier, not DPE.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -51,43 +52,44 @@
       "model_id": "ALE-PRAC-CMP-006-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-05-06T15:55:58.954227+00:00",
+      "updated_at": "2026-07-20T01:13:28.184338+00:00",
       "content_hash": "sha256:28b0ab94932de08b502ce0cbe055b3facc64d75b8f705c7a67d162ca2e6d42c0"
     },
     {
       "question_id": "a91d6194-2330-405d-b263-11e8c40f1ff2",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "A project team consists of: Senior architect 200 hours at 1,500 pesos/hour, Design architect 400 hours at 900 pesos/hour, Junior staff 800 hours at 450 pesos/hour. What is the total DPE?",
+      "text": "What is the source-backed MDPE multiplier range in SPP 202?",
       "options": [
         {
           "id": "a",
-          "text": "720,000 pesos"
+          "text": "1.0 to 1.5"
         },
         {
           "id": "b",
-          "text": "900,000 pesos"
+          "text": "1.5 to 2.5"
         },
         {
           "id": "c",
-          "text": "1,020,000 pesos"
+          "text": "2.8 to 3.5"
         },
         {
           "id": "d",
-          "text": "1,200,000 pesos"
+          "text": "4.5 to 5.5"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Calculates only the junior staff cost (800 × 450 = 360,000) and misses the senior and design architect costs, or incorrectly totals partial amounts.",
-        "b": "Calculates 900,000 pesos by omitting one staff category or using incorrect multiplications.",
-        "d": "Calculates 1,200,000 pesos, which overstates by including additional costs or miscalculating hours/rates.",
-        "correct": "Senior: 200 × 1,500 = 300,000 pesos; Design architect: 400 × 900 = 360,000 pesos; Junior: 800 × 450 = 360,000 pesos. Total DPE = 300,000 + 360,000 + 360,000 = 1,020,000 pesos.",
-        "takeaway": "DPE calculation: sum individual staff costs (hours × rate) for all team members; (200×1500) + (400×900) + (800×450) = 1.02M pesos."
+        "a": "The checked SPP range starts at 1.5 and extends to 2.5.",
+        "b": "SPP 202 states that the MDPE multiplier ranges from 1.5 to 2.5.",
+        "c": "Those values are above the checked SPP 202 range.",
+        "d": "Those values are not in the checked source.",
+        "correct": "SPP 202 states that the MDPE multiplier ranges from 1.5 to 2.5.",
+        "takeaway": "Do not substitute broader practice ranges unless another verified source is attached."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -101,30 +103,30 @@
       "model_id": "ALE-PRAC-CMP-006-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.182690+00:00",
       "content_hash": "sha256:b01471f0ee1c9fac21d5f7459c262acd5870894f97dec2aa347bbc71b7d67b01"
     },
     {
       "question_id": "ee7b5d76-e3f1-4ed8-9bcc-35a5bbf02119",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "An architect proposes MDPE compensation with a multiplier of 2.8 for a specialized research facility. How should the architect justify this multiplier to the client?",
+      "text": "What does M represent in the MDPE formula?",
       "options": [
         {
           "id": "a",
-          "text": "The multiplier is standard; no justification is needed, as it falls within industry norms for similar projects"
+          "text": "Mobilization payment"
         },
         {
           "id": "b",
-          "text": "Explain the overhead structure, target profit margin, project-specific risk factors, and why this multiplier is appropriate for the project's specialized requirements"
+          "text": "Multiplier to account for overhead and reasonable profit"
         },
         {
           "id": "c",
-          "text": "Show that the multiplier produces a fee within SPP 202 percentage ranges for equivalent Group classification, ensuring compliance with professional standards"
+          "text": "Materials cost in PCC"
         },
         {
           "id": "d",
-          "text": "The multiplier should be reduced to 2.5 to match the average for all projects, unless specific project conditions warrant a higher rate"
+          "text": "Monthly construction progress"
         }
       ],
       "correct_option_id": "b",
@@ -133,11 +135,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Lacks transparency; multipliers must be explained and justified based on firm overhead and project characteristics, not treated as standard.",
-        "c": "While useful context, equating MDPE to percentage-of-PCC ranges does not directly justify the multiplier; focus should be on overhead, profit, and project-specific factors.",
-        "d": "Inappropriately reduces the multiplier to an average when specialized research facilities justify higher multipliers (2.8–3.5) due to complexity and risk.",
-        "correct": "Transparent MDPE proposals should document and justify the multiplier based on the firm's overhead structure, target profit, and project characteristics such as specialization, risk, and non-technical complexity.",
-        "takeaway": "MDPE multiplier justification: explain overhead costs (1.5–2.0), profit target (0.3–0.7), specialized risk factors (0.2–0.5), and why 2.8 matches this project's requirements."
+        "a": "Mobilization is a payment concept in a different source.",
+        "b": "The formula defines M as the multiplier used to account for overhead and reasonable profit.",
+        "c": "Materials cost belongs to PCC, not M.",
+        "d": "Construction progress is not the formula variable M.",
+        "correct": "The formula defines M as the multiplier used to account for overhead and reasonable profit.",
+        "takeaway": "M is applied after direct technical cost is identified."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -151,30 +154,30 @@
       "model_id": "ALE-PRAC-CMP-006-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.180950+00:00",
       "content_hash": "sha256:291fd56192d6e82b104ecd4a75ec4ea9de631c080b0c4004922d223fa92f5190"
     },
     {
       "question_id": "381f5ac2-0e39-4b39-b2ff-63bfd8fec2e3",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "What is the typical multiplier range for MDPE in Philippine architecture practice?",
+      "text": "Which sequence matches the SPP 202 MDPE computation?",
       "options": [
         {
           "id": "a",
-          "text": "1.0 to 1.5"
+          "text": "PCC x percentage, then add land cost"
         },
         {
           "id": "b",
-          "text": "2.0 to 3.5"
+          "text": "Direct cost x M, then add reimbursable expenses R"
         },
         {
           "id": "c",
-          "text": "3.5 to 4.5"
+          "text": "R x M, then subtract direct cost"
         },
         {
           "id": "d",
-          "text": "4.5 to 5.5"
+          "text": "Architect fee plus consultant fee equals PCC"
         }
       ],
       "correct_option_id": "b",
@@ -183,11 +186,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Understates the multiplier range; 1.0–1.5 would only barely cover overhead without profit.",
-        "c": "Overstates the multiplier; 3.5–4.5 is beyond the typical range and would result in excessive fees.",
-        "d": "Significantly overstates the multiplier; 4.5–5.5 is unrealistic for Philippine architecture practice.",
-        "correct": "MDPE multipliers in Philippine architecture practice typically range from 2.0 to 3.5, depending on the firm's overhead structure, profit objectives, and project risk profile.",
-        "takeaway": "Multiplier range: 2.0–3.5; straightforward projects use 2.0–2.3, complex/specialized use 2.8–3.5."
+        "a": "That describes a different percentage-of-PCC approach.",
+        "b": "SPP 202 states Fee = Direct Cost x M and Total Cost of Service charged to Client = Fee + R.",
+        "c": "The source adds R after Fee, not before multiplying R.",
+        "d": "Professional fees are not PCC.",
+        "correct": "SPP 202 states Fee = Direct Cost x M and Total Cost of Service charged to Client = Fee + R.",
+        "takeaway": "Compute direct cost, multiply by M, then add reimbursables."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -201,30 +205,30 @@
       "model_id": "ALE-PRAC-CMP-006-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.186539+00:00",
       "content_hash": "sha256:68422e3535594eb2b81d733915baeaf3c11aaebd663f358d36332a9c76846fa4"
     },
     {
       "question_id": "e39f2cd6-f73e-4bbb-9fe9-8d48085e3375",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "An architect earns 600,000 pesos annually with 80,000 pesos in benefits and works 1,800 billable hours per year. What is the fully-loaded hourly rate?",
+      "text": "Which variable group represents hours spent by the Architect, consultants, and technical staff?",
       "options": [
         {
           "id": "a",
-          "text": "333 pesos per hour"
+          "text": "A, C, and T"
         },
         {
           "id": "b",
-          "text": "378 pesos per hour"
+          "text": "AN, CN, and TN"
         },
         {
           "id": "c",
-          "text": "444 pesos per hour"
+          "text": "M and R only"
         },
         {
           "id": "d",
-          "text": "556 pesos per hour"
+          "text": "PCC and FPCC"
         }
       ],
       "correct_option_id": "b",
@@ -233,11 +237,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Calculates 600,000 ÷ 1,800 = 333 pesos, omitting the 80,000 in benefits.",
-        "c": "Calculates 800,000 ÷ 1,800 = 444 pesos by using an incorrect total (perhaps doubling benefits or using a different assumption).",
-        "d": "Calculates 1,000,000 ÷ 1,800 = 556 pesos by incorrectly inflating the total salary and benefits.",
-        "correct": "Fully-loaded hourly rate = (Annual salary + benefits) ÷ billable hours per year = (600,000 + 80,000) ÷ 1,800 = 680,000 ÷ 1,800 = 377.78 pesos per hour, approximately 378 pesos.",
-        "takeaway": "Fully-loaded rate = (annual salary + benefits) ÷ billable hours; (600K + 80K) ÷ 1,800 = 378 pesos/hour."
+        "a": "A, C, and T are hourly rates, not hour counts.",
+        "b": "The formula defines AN, CN, and TN as the number of hours spent by the Architect, consultants, and technical staff.",
+        "c": "M is the multiplier and R is reimbursables.",
+        "d": "PCC and FPCC are construction-cost concepts.",
+        "correct": "The formula defines AN, CN, and TN as the number of hours spent by the Architect, consultants, and technical staff.",
+        "takeaway": "Separate rate variables from hour-count variables."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -251,43 +256,44 @@
       "model_id": "ALE-PRAC-CMP-006-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.185811+00:00",
       "content_hash": "sha256:f8aa64e1065e3b80e36454a20cf863c9737be7328a304109ebe36533841d2c19"
     },
     {
       "question_id": "4093f3c5-3cb0-410d-800f-d1db186ecd9d",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "What is the basic MDPE fee calculation formula?",
+      "text": "Which item is a source-backed reimbursable example under MDPE?",
       "options": [
         {
           "id": "a",
-          "text": "MDPE Fee = PCC ÷ Multiplier, which is a common misconception"
+          "text": "Transportation or per diem for assigned personnel beyond the stated distance condition"
         },
         {
           "id": "b",
-          "text": "MDPE Fee = Direct Personnel Expense × Multiplier"
+          "text": "The Architect fee being computed"
         },
         {
           "id": "c",
-          "text": "MDPE Fee = Multiplier ÷ Direct Personnel Expense, which is often misunderstood"
+          "text": "Owner land acquisition cost"
         },
         {
           "id": "d",
-          "text": "MDPE Fee = Direct Personnel Expense + Multiplier, which is an incorrect assumption"
+          "text": "A fixed 20% contingency"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Divides PCC by multiplier, mixing MDPE (personnel-based) with PCC (cost-based) methods and inverting the calculation.",
-        "c": "Divides multiplier by Direct Personnel Expense, which inverts the relationship and produces an incorrect result.",
-        "d": "Adds multiplier to Direct Personnel Expense instead of multiplying them together.",
-        "correct": "MDPE Fee = Direct Personnel Expense × Multiplier. This formula multiplies the total cost of project personnel by a factor covering overhead, profit, and non-technical costs.",
-        "takeaway": "MDPE formula: Fee = (salary + benefits cost) × multiplier; multiplier covers overhead (1.5–2.0), profit (0.3–0.7), and non-technical factors (0.2–0.5)."
+        "a": "SPP 202 lists transportation, housing/living allowance, per diem, extra printing, calls, technical tests, licenses, fees, taxes, and similar project cost items as reimbursables.",
+        "b": "The Architect fee is the result of the computation, not a reimbursable example.",
+        "c": "Land acquisition cost is not listed as an MDPE reimbursable.",
+        "d": "The checked source does not state a fixed contingency.",
+        "correct": "SPP 202 lists transportation, housing/living allowance, per diem, extra printing, calls, technical tests, licenses, fees, taxes, and similar project cost items as reimbursables.",
+        "takeaway": "R is added after Fee in the source formula."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -301,43 +307,44 @@
       "model_id": "ALE-PRAC-CMP-006-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.179862+00:00",
       "content_hash": "sha256:aac3595261c49af88a7089bd329996b8bb2a962ccbbbc5b95ea844bd8dd313fd"
     },
     {
       "question_id": "20e23ea7-ac46-488c-b73b-22901d78d063",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "When comparing MDPE and percentage-of-PCC methods for a project, what factor most strongly suggests MDPE is more appropriate?",
+      "text": "Why does the source say MDPE does not account for creative design work?",
       "options": [
         {
           "id": "a",
-          "text": "The project has a very high estimated construction cost, which may not justify the detailed analysis required by MDPE"
+          "text": "Because creative design value cannot be measured merely by time spent"
         },
         {
           "id": "b",
-          "text": "The project has uncertain scope, limited construction cost relative to design complexity, or innovative design requiring significant development"
+          "text": "Because creative design has no professional value"
         },
         {
           "id": "c",
-          "text": "The project is a straightforward residential building with minimal design complexity and predictable costs"
+          "text": "Because creative design is always free"
         },
         {
           "id": "d",
-          "text": "The project delivery is Design-Bid-Build with a fixed contract, which typically aligns with percentage-of-PCC methods"
+          "text": "Because PCC includes all design fees"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "High construction cost favors percentage-of-PCC (tied to cost), not MDPE; MDPE is for projects where cost is not a reliable basis for fees.",
-        "c": "Straightforward residential projects are well-suited to percentage-of-PCC, not MDPE; MDPE is for uncertain or complex scope.",
-        "d": "Design-Bid-Build with fixed contracts typically use percentage-of-PCC; MDPE is more suited to projects with uncertain scope.",
-        "correct": "MDPE is most appropriate for projects with uncertain scope, limited construction cost relative to design complexity, or design complexity disproportionate to construction cost, where compensation should reflect actual effort rather than construction cost.",
-        "takeaway": "Use MDPE when: scope is uncertain, design complexity exceeds construction cost, or innovation requires extensive development—cases where effort-based fees are fairer than cost-based."
+        "a": "SPP 202 says the value of creative design cannot be measured by the length of time spent on the work.",
+        "b": "The source values creative work but says time alone cannot measure it.",
+        "c": "The source does not say creative design is free.",
+        "d": "PCC excludes professional fees.",
+        "correct": "SPP 202 says the value of creative design cannot be measured by the length of time spent on the work.",
+        "takeaway": "This is why MDPE is confined to measurable non-creative work in the checked source."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -351,43 +358,44 @@
       "model_id": "ALE-PRAC-CMP-006-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.183548+00:00",
       "content_hash": "sha256:61a5b35872c5e3dd28471d3f62f4b3a3cedeaf6dd1aa12d2451ff759bc3f003a"
     },
     {
       "question_id": "344f3bfb-3dfc-4a00-aff4-11475a4b67d3",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "Which of the following costs should NOT be included in Direct Personnel Expense?",
+      "text": "If direct cost is PHP 1,200,000 and M is 2.5 with no reimbursables stated, what is the Fee before R?",
       "options": [
         {
           "id": "a",
-          "text": "Senior architect time directly assigned to the project, including overtime hours and project-specific bonuses"
+          "text": "PHP 480,000"
         },
         {
           "id": "b",
-          "text": "Independent consultant fees for specialized services retained as contractors"
+          "text": "PHP 1,200,000"
         },
         {
           "id": "c",
-          "text": "Junior architect time directly assigned to the project, covering both design and documentation phases"
+          "text": "PHP 3,000,000"
         },
         {
           "id": "d",
-          "text": "Technical staff benefits for project team members, such as health insurance and retirement contributions"
+          "text": "PHP 4,500,000"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Senior architect time is core DPE; it represents direct personnel directly assigned to the project.",
-        "c": "Junior architect time is core DPE; it represents direct personnel directly assigned to the project.",
-        "d": "Technical staff benefits are included in DPE; they are labor-related costs of directly-assigned personnel.",
-        "correct": "Independent consultant fees for specialized consultants retained as contractors (rather than employed directly by the architect) are not included in DPE. These costs are covered by the multiplier.",
-        "takeaway": "DPE includes in-house staff time and benefits; independent contractor consultants are covered by the multiplier, not included in DPE."
+        "a": "This divides instead of multiplying.",
+        "b": "This omits the multiplier.",
+        "c": "Fee = Direct Cost x M, so PHP 1,200,000 x 2.5 = PHP 3,000,000.",
+        "d": "This uses an unsupported multiplier.",
+        "correct": "Fee = Direct Cost x M, so PHP 1,200,000 x 2.5 = PHP 3,000,000.",
+        "takeaway": "Only add R if reimbursable expenses are given."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -401,43 +409,44 @@
       "model_id": "ALE-PRAC-CMP-006-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.187223+00:00",
       "content_hash": "sha256:58673230560bd69dba692a2ca4acb4db44e1114f2d902142af518e34285ba324"
     },
     {
       "question_id": "9e391e7d-a5b9-4447-8ff9-f3b5b8e8e775",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "An MDPE multiplier of 2.5 can be decomposed as: 1.8 (overhead) + 0.5 (profit) + 0.2 (non-technical factors). For a straightforward project, should this multiplier be adjusted?",
+      "text": "Before agreeing on MDPE, what should the Architect make known to the Client?",
       "options": [
         {
           "id": "a",
-          "text": "No; 2.5 is appropriate for all project types, regardless of complexity or scope"
+          "text": "The rates of professionals/personnel assigned and the multiplier to be applied"
         },
         {
           "id": "b",
-          "text": "Yes; straightforward projects with clearly defined scope may justify a lower multiplier such as 2.0–2.3"
+          "text": "Only the final contractor bid price"
         },
         {
           "id": "c",
-          "text": "Yes; straightforward projects require higher multipliers due to reduced complexity, which can lead to unforeseen challenges"
+          "text": "Only the Owner land acquisition cost"
         },
         {
           "id": "d",
-          "text": "The multiplier cannot be adjusted; it is fixed by SPP standards, ensuring consistency across all projects"
+          "text": "A guaranteed estimate accuracy band"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrectly assumes a uniform multiplier applies to all projects regardless of complexity and risk.",
-        "c": "Reverses the logic; straightforward projects should justify lower multipliers, not higher ones, due to reduced complexity and risk.",
-        "d": "SPP standards establish ranges and guidance, not fixed multipliers; architects negotiate multipliers appropriate to project characteristics.",
-        "correct": "Different project types justify different multipliers. Straightforward projects with clearly defined scope and uncomplicated delivery may justify lower multipliers (2.0–2.3) than complex projects.",
-        "takeaway": "Multiplier adjustment by project type: straightforward = 2.0–2.3, moderate complexity = 2.3–2.8, highly specialized = 2.8–3.5."
+        "a": "SPP 202 says the Architect shall make known the rates of professionals/personnel assigned and the multiplier before agreeing on MDPE.",
+        "b": "Contractor bid price is not the MDPE disclosure item stated here.",
+        "c": "Land acquisition is outside MDPE.",
+        "d": "The source does not provide guaranteed accuracy bands.",
+        "correct": "SPP 202 says the Architect shall make known the rates of professionals/personnel assigned and the multiplier before agreeing on MDPE.",
+        "takeaway": "MDPE depends on transparent rates, hours, multiplier, and reimbursables."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -451,43 +460,44 @@
       "model_id": "ALE-PRAC-CMP-006-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.185085+00:00",
       "content_hash": "sha256:da904781ba1ca0898f0e6ae20c28e5cb7748c18b3fbd5162be553a8cde0ae8d6"
     },
     {
       "question_id": "2dfa755c-6509-4f8f-a5b6-8c7861f07b84",
       "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
       "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
-      "text": "A project has estimated DPE of 1,200,000 pesos. Using an MDPE multiplier of 2.5, what is the total architect fee?",
+      "text": "Which statement is not source-safe for MDPE under the checked Batch 105 sources?",
       "options": [
         {
           "id": "a",
-          "text": "2,400,000 pesos"
+          "text": "The multiplier ranges from 1.5 to 2.5"
         },
         {
           "id": "b",
-          "text": "2,700,000 pesos"
+          "text": "MDPE applies to non-creative work such as research or data gathering"
         },
         {
           "id": "c",
-          "text": "3,000,000 pesos"
+          "text": "Total Cost of Service equals Fee plus R"
         },
         {
           "id": "d",
-          "text": "3,600,000 pesos"
+          "text": "The normal MDPE range is 2.8 to 3.5 for complex projects"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Calculates 1,200,000 × 2.0 = 2,400,000 pesos, using a lower multiplier (2.0) instead of the negotiated 2.5.",
-        "b": "Calculates 1,200,000 × 2.25 = 2,700,000 pesos, using an incorrect intermediate multiplier.",
-        "d": "Calculates 1,200,000 × 3.0 = 3,600,000 pesos, using a higher multiplier (3.0) instead of 2.5.",
-        "correct": "MDPE Fee = Direct Personnel Expense × Multiplier = 1,200,000 × 2.5 = 3,000,000 pesos.",
-        "takeaway": "MDPE calculation: 1.2M DPE × 2.5 multiplier = 3M pesos total fee."
+        "a": "This is in SPP 202.",
+        "b": "This is in SPP 202.",
+        "c": "This is in the formula.",
+        "d": "The checked SPP 202 source supports a multiplier range of 1.5 to 2.5, not 2.8 to 3.5.",
+        "correct": "The checked SPP 202 source supports a multiplier range of 1.5 to 2.5, not 2.8 to 3.5.",
+        "takeaway": "Stay inside the audited local source range."
       },
       "explanation": null,
       "code_citation": "Architect's Guidelines; SPP Doc 202",
@@ -501,7 +511,7 @@
       "model_id": "ALE-PRAC-CMP-006-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.181934+00:00",
       "content_hash": "sha256:acbb5d6b9d92056d5a33878d77eba7734ba1d0996092695880271633d3dec92f"
     }
   ]

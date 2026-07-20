@@ -1,8 +1,14 @@
 import { NextResponse } from "next/server";
+import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { getAIProvider } from "@/lib/ai/provider";
 import { isDemoMode } from "@/lib/demo/config";
 import { checkRateLimit } from "@/lib/rate-limit";
+import { parseAiBody } from "@/lib/ai/route-validation";
+
+const EmbedRequestSchema = z.object({
+  text: z.string().min(1).max(8000),
+})
 
 export async function POST(request: Request) {
   if (isDemoMode()) {
@@ -19,7 +25,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const rateLimit = checkRateLimit(`ai_${user.id}`)
+  const rateLimit = await checkRateLimit(`ai_${user.id}`)
   if (!rateLimit.allowed) {
     return NextResponse.json(
       { error: 'Rate limit exceeded. Please wait before sending another message.' },
@@ -27,7 +33,9 @@ export async function POST(request: Request) {
     )
   }
 
-  const { text } = await request.json();
+  const parsed = await parseAiBody(request, EmbedRequestSchema)
+  if (parsed.ok === false) return parsed.response
+  const { text } = parsed.data
 
   try {
     const ai = getAIProvider();

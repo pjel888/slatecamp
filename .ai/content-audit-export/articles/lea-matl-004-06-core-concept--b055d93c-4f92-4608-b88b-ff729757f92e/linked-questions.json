@@ -8,23 +8,23 @@
       "question_id": "6b5f3caf-2467-4806-84f9-2bb8b164238d",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "Cast-in-place (CIP) concrete construction involves pouring concrete on-site with temporary formwork support. What are the primary components of the CIP process?",
+      "text": "Which sequence best matches the checked cast-in-place concrete workflow?",
       "options": [
         {
           "id": "a",
-          "text": "Formwork, rebar placement, concrete pouring, vibration, and curing in place"
+          "text": "Supply and store materials, mix, transport, place, compact, and cure the concrete in its formwork"
         },
         {
           "id": "b",
-          "text": "Precast elements delivered and bolted together, which eliminates the need for on-site concrete pouring and formwork"
+          "text": "Deliver finished precast units and skip all site placement"
         },
         {
           "id": "c",
-          "text": "Formwork design only; concrete is delivered pre-mixed and does not require on-site adjustments or additional mixing"
+          "text": "Install rebar only after the concrete has cured"
         },
         {
           "id": "d",
-          "text": "Rebar installation without concrete placement, focusing solely on the structural reinforcement aspect"
+          "text": "Select paint finishes before concrete is transported"
         }
       ],
       "correct_option_id": "a",
@@ -32,12 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Precast involves factory fabrication and on-site assembly, not in-place construction.",
-        "c": "CIP requires active curing processes, not passive delivery.",
-        "d": "Concrete placement and curing are integral to CIP.",
-        "correct": "CIP construction consists of building temporary formwork, placing reinforcement per drawings, pouring concrete (by pump or bucket), vibrating to consolidate, and curing moisture/temperature-controlled on-site. All strength gain occurs in place, enabling site customization and monolithic structural behavior."
-      },
+      "rationale": "Chudley/Greeno describes concreting as material supply and storage, mixing, transporting, placing, compaction, and curing.",
       "explanation": "Precast involves factory fabrication and on-site assembly, not in-place construction. CIP requires active curing processes, not passive delivery. Concrete placement and curing are integral to CIP. CIP construction consists of building temporary formwork, placing reinforcement per drawings, pouring concrete (by pump or bucket), vibrating to consolidate, and curing moisture/temperature-controlled on-site. All strength gain occurs in place, enabling site customization and monolithic structural behavior.",
       "code_citation": "ACI 349; NSCP 2015 Chapter 4",
       "bloom_level": "remember",
@@ -50,30 +45,30 @@
       "model_id": "ALE-MATL-004-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-05-06T14:48:27.419677+00:00",
+      "updated_at": "2026-07-20T01:13:24.972754+00:00",
       "content_hash": "sha256:ac4db944dfe12ddf1d7143cac1ebf17d16f0a4c16f12237d6ec71da29fb59ba6"
     },
     {
       "question_id": "d1ab2f34-ef26-49a2-b5d1-cbf06cca9f5d",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "Concrete is over-vibrated during placement. What are the likely consequences?",
+      "text": "What is the main source-safe role of formwork in reinforced concrete work?",
       "options": [
         {
           "id": "a",
-          "text": "Segregation (coarse aggregate settling), surface blowholes, and reduced strength in upper layers due to excessive air removal and paste separation."
+          "text": "It temporarily shapes and supports wet concrete until the member can hold its intended form"
         },
         {
           "id": "b",
-          "text": "Improved consolidation; over-vibration always benefits concrete quality, leading to a denser and more uniform material"
+          "text": "It permanently replaces reinforcing bars"
         },
         {
           "id": "c",
-          "text": "No effect; vibration duration is irrelevant, as concrete properties are unaffected by over-vibration"
+          "text": "It is only a decorative finish template"
         },
         {
           "id": "d",
-          "text": "Enhanced bond with rebar; over-vibration is desirable, ensuring better structural integrity"
+          "text": "It is used only after the slab is cured"
         }
       ],
       "correct_option_id": "a",
@@ -81,12 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Over-vibration degrades quality, not improves it.",
-        "c": "Vibration duration has major impact on quality.",
-        "d": "Over-vibration reduces bond by causing paste separation.",
-        "correct": "Over-vibration causes segregation: coarse aggregate settles while paste rises, creating weak upper layers and voids below. Surface blowholes (small bubble cavities) indicate excess air removal and paste migration. Under-vibration leaves voids and poor consolidation. Proper vibration (20–30 seconds per placement zone) is optimum; operator training and equipment maintenance are critical for quality."
-      },
+      "rationale": "Formwork is a temporary mold and support system for wet concrete.",
       "explanation": "Over-vibration degrades quality, not improves it. Vibration duration has major impact on quality. Over-vibration reduces bond by causing paste separation. Over-vibration causes segregation: coarse aggregate settles while paste rises, creating weak upper layers and voids below. Surface blowholes (small bubble cavities) indicate excess air removal and paste migration. Under-vibration leaves voids and poor consolidation. Proper vibration (20–30 seconds per placement zone) is optimum; operator training and equipment maintenance are critical for quality.",
       "code_citation": "ACI 301; NSCP 2015 Chapter 4",
       "bloom_level": "understand",
@@ -99,30 +89,30 @@
       "model_id": "ALE-MATL-004-06-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-05-06T14:48:27.54394+00:00",
+      "updated_at": "2026-07-20T01:13:24.971896+00:00",
       "content_hash": "sha256:03470980d70058d44555c598d9d038824b0c0a165ad988e11c9c9453f963e788"
     },
     {
       "question_id": "70c37f31-945c-467d-8c10-5878ff9b1588",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "ACI 347 specifies that formwork for horizontal spans should not be struck until concrete achieves approximately ___ percent of the design 28-day strength. Why is this timing critical in Philippine tropical climates?",
+      "text": "Why is reinforcement coordinated before and during concrete placement?",
       "options": [
         {
           "id": "a",
-          "text": "70%; Inadequate early strength risks sagging, cracking, and water ingress. Tropical high humidity and potential rain exposure during curing demand conservative strength targets before load application."
+          "text": "It provides the steel component that helps the concrete member resist tensile and continuity demands"
         },
         {
           "id": "b",
-          "text": "50%; Lower strength is acceptable since tropical warmth accelerates curing, reducing the time needed for formwork removal"
+          "text": "It eliminates the need for any concrete cover"
         },
         {
           "id": "c",
-          "text": "90%; Maximum curing delay, but necessary for durability, especially in environments with fluctuating temperatures and humidity"
+          "text": "It is used only to measure concrete volume"
         },
         {
           "id": "d",
-          "text": "25%; Rapid form removal to accelerate schedule, although this may compromise structural integrity if not carefully managed"
+          "text": "It is a substitute for curing"
         }
       ],
       "correct_option_id": "a",
@@ -130,12 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "50% is too low; bending capacity is insufficient.",
-        "c": "90% is overly conservative; strength gain plateaus after 28 days.",
-        "d": "25% is dangerously low; failure is likely.",
-        "correct": "ACI 347 recommends 70% of 28-day strength before striking forms. In Philippine tropical climates with variable humidity, monsoon rain, and warm temperatures, early strength gain may be unpredictable. Conservative 70% threshold (achieved typically at 7–14 days for standard Portland cement) ensures safe form removal without risk of collapse or excessive deflection. Premature removal risks sagging, cracking, and water infiltration compromising durability."
-      },
+      "rationale": "The checked sources describe reinforcement as part of the structural action of reinforced concrete members.",
       "explanation": null,
       "code_citation": "ACI 347R-14; NSCP 2015 Chapter 4",
       "bloom_level": "understand",
@@ -148,30 +133,30 @@
       "model_id": "ALE-MATL-004-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.976147+00:00",
       "content_hash": "sha256:655fc31ca5aa24995b900e39d9fe869baef38c184e46975f8eeeea87c15abfd6"
     },
     {
       "question_id": "6abfbae9-18fc-416a-a853-fe428f78abb2",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "Concrete reinforcement is placed with cover (distance from concrete surface to rebar) of typically ___ mm for beams and columns, and ___ mm for slabs. Why is adequate cover essential?",
+      "text": "What does compaction do in the checked concrete placing process?",
       "options": [
         {
           "id": "a",
-          "text": "40 mm for beams/columns, 20 mm for slabs. Cover protects rebar from carbonation (acid attack) and chloride corrosion in wet/coastal environments."
+          "text": "It helps consolidate concrete around inserts and reinforcement after placement"
         },
         {
           "id": "b",
-          "text": "10 mm for all members; thickness is immaterial, as modern concrete additives provide sufficient protection"
+          "text": "It is a paper review done before delivery"
         },
         {
           "id": "c",
-          "text": "100 mm minimum; thicker cover is always safer, ensuring maximum durability against environmental factors"
+          "text": "It removes the need for curing"
         },
         {
           "id": "d",
-          "text": "Cover is only required for exposed elements; internal members need none, as they are naturally protected by surrounding concrete"
+          "text": "It changes concrete into a steel member"
         }
       ],
       "correct_option_id": "a",
@@ -179,12 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Minimal cover (10 mm) provides little protection; corrosion reaches rebar within years.",
-        "c": "Excessive cover (100 mm) increases section size, weight, and cost without proportional durability gain.",
-        "d": "Internal members are still exposed to moisture and humidity; cover is universal.",
-        "correct": "NSCP 2015 Table 412-4.1 specifies minimum cover: 40 mm for beams and columns, 20 mm for slabs (interior and exterior). Cover depth protects embedded steel from carbonation (CO₂ diffusion) and chloride penetration (salt spray in coastal areas). Insufficient cover leads to early corrosion, rust expansion, spalling, and loss of load-bearing capacity."
-      },
+      "rationale": "Chudley/Greeno links placing with working concrete around reinforcement and compacting it by tamping or vibration.",
       "explanation": null,
       "code_citation": "NSCP 2015 Section 412; ACI 349",
       "bloom_level": "remember",
@@ -197,30 +177,30 @@
       "model_id": "ALE-MATL-004-06-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.976924+00:00",
       "content_hash": "sha256:2ebb4f6f88c6612170e2578d1b145efdd89face897c86d14dc5b3f89efb15ab8"
     },
     {
       "question_id": "2df09bb8-6825-4557-9bec-c792b7f29a33",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "A precast hollow-core slab system is compared to cast-in-place concrete for a 20-story apartment building. Which statement accurately captures the trade-off?",
+      "text": "When is a concrete pump a source-safe equipment choice?",
       "options": [
         {
           "id": "a",
-          "text": "Precast: faster on-site assembly, reduced on-site formwork, but requires factory production time and transportation logistics. CIP: longer on-site construction but enables site customization and no transportation constraints. For 20 stories, precast is likely faster if production and logistics are planned efficiently."
+          "text": "When large volumes of concrete must be moved efficiently from the pump position to the point of placing"
         },
         {
           "id": "b",
-          "text": "Precast is always faster regardless of project scale, which may not account for specific logistical challenges"
+          "text": "When no concrete is being placed on site"
         },
         {
           "id": "c",
-          "text": "CIP is always more economical; precast has no cost advantage, which oversimplifies the cost analysis"
+          "text": "When reinforcement should be omitted"
         },
         {
           "id": "d",
-          "text": "Precast and CIP have identical construction schedules, which is rarely the case in practice"
+          "text": "When a purely hand-mixed finish coat is specified"
         }
       ],
       "correct_option_id": "a",
@@ -228,12 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Precast has advantages but requires logistics planning; not universally faster for all projects.",
-        "c": "Precast often has cost advantages in high-rise due to reduced labor.",
-        "d": "Schedules differ significantly; precast faster on-site.",
-        "correct": "Precast excels for repetitive elements in mid-to-high-rise buildings. Factory production and on-site assembly occur in parallel, reducing critical path. CIP requires sequential on-site formwork, curing, and removal. However, precast's factory production time, transportation, and careful installation logistics must be managed. For 20 stories with repetitive floor plans, precast is typically faster if planned effectively."
-      },
+      "rationale": "The checked plant discussion places pumps under concrete transport and placing methods.",
       "explanation": null,
       "code_citation": "NSCP 2015 Chapter 4; PCI Manual",
       "bloom_level": "understand",
@@ -246,30 +221,30 @@
       "model_id": "ALE-MATL-004-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.969987+00:00",
       "content_hash": "sha256:b84a40040959368470f8ad66a260a40eecfdd10beeda9f9fbab3f8cc2e7a444f"
     },
     {
       "question_id": "4f25e6ca-18b3-4230-9c46-80a1de2023a7",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "Precast concrete hollow-core slabs offer advantages over cast-in-place slabs including lighter self-weight and reduced on-site formwork. Typical span range for hollow-core units is ___–___ meters.",
+      "text": "What is the safest contrast between cast-in-place and precast concrete for this batch?",
       "options": [
         {
           "id": "a",
-          "text": "6–12 meters"
+          "text": "Cast-in-place concrete is placed and cured in its final site location; precast units are made before site assembly"
         },
         {
           "id": "b",
-          "text": "1–3 meters"
+          "text": "Both always remove the need for formwork"
         },
         {
           "id": "c",
-          "text": "15–30 meters"
+          "text": "Both are only architectural finishes"
         },
         {
           "id": "d",
-          "text": "30+ meters"
+          "text": "Both must be treated as timber framing"
         }
       ],
       "correct_option_id": "a",
@@ -277,12 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "1–3 m is too short for efficient precast economics; CIP is competitive.",
-        "c": "15–30 m is the Double-Tee range, not hollow-core.",
-        "d": "30+ m requires specialized systems beyond standard precast.",
-        "correct": "Hollow-core slabs are economical for spans of 6–12 m. The internal void cores reduce weight while maintaining stiffness. Double-Tee (DT) beams cover longer spans (12–30 m). Very long spans (30+ m) typically use cable-stayed or suspension systems."
-      },
+      "rationale": "The article scope separates site-cast placement from prefabricated/precast assembly.",
       "explanation": null,
       "code_citation": "NSCP 2015 Chapter 4; PCI Precast Design Manual",
       "bloom_level": "remember",
@@ -295,30 +265,30 @@
       "model_id": "ALE-MATL-004-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.968868+00:00",
       "content_hash": "sha256:d8bd5988d992bea2959d47b4e26117356549de6df7e1039de95981d394197e36"
     },
     {
       "question_id": "887dde45-e724-47d3-adb4-4e21fd69c7b7",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "Precast connections are either wet (grouted) or dry (bolted/welded). A moment-resisting frame requires structural continuity to redistribute seismic forces. Which connection type is more appropriate and why?",
+      "text": "Which statement avoids an unsupported code claim?",
       "options": [
         {
           "id": "a",
-          "text": "Wet (grouted) connections provide structural continuity similar to monolithic CIP behavior and allow moment transfer between precast elements. However, they require 7–14 day grout curing before load application."
+          "text": "The article can explain source-checked construction roles without asserting unchecked ACI, PCI, or NSCP section values"
         },
         {
           "id": "b",
-          "text": "Dry (bolted) connections are always superior for moment-resisting frames, especially in seismic zones where flexibility is prioritized over rigidity."
+          "text": "Every concrete question must cite a precise NSCP section from memory"
         },
         {
           "id": "c",
-          "text": "Wet and dry connections offer identical moment-transfer capacity, making them interchangeable in all structural applications without any impact on performance."
+          "text": "Unverified proprietary tables may be used if common online"
         },
         {
           "id": "d",
-          "text": "Precast elements cannot be used in moment-resisting frames; only CIP is suitable due to its inherent ability to handle dynamic loads without additional reinforcement."
+          "text": "A source locator is unnecessary for structural claims"
         }
       ],
       "correct_option_id": "a",
@@ -326,12 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Dry connections can transfer moments via carefully designed bolted plates, but wet is simpler and more reliable.",
-        "c": "Wet and dry have different structural behavior; wet is preferred for moment transfer.",
-        "d": "Modern precast systems effectively resist seismic loads with proper connections.",
-        "correct": "Wet (grouted) connections fill voids with cementitious grout, locking precast units together and enabling moment transfer similar to CIP. They are preferred for moment-resisting frames. Dry (bolted) connections are mechanical and simpler to install but require careful design to transfer moments via bolted plate connections. Grout curing delay (7–14 days) must be accommodated in schedules; dry connections permit immediate load application."
-      },
+      "rationale": "Batch 084 keeps reinforced-concrete claims inside local raw-source evidence.",
       "explanation": null,
       "code_citation": "NSCP 2015 Sections 417–420; PCI Design Handbook",
       "bloom_level": "understand",
@@ -344,30 +309,30 @@
       "model_id": "ALE-MATL-004-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.975301+00:00",
       "content_hash": "sha256:901e4345b9f3a2bb484ae507c67ce47288267b462ccbe010f6178dce5fe50905"
     },
     {
       "question_id": "9a62b4db-f140-4a50-9220-2c5fe91e0353",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "A concrete beam in a Philippine coastal building is designed with rebar cover of 30 mm instead of the specified 40 mm due to construction error. The beam is exposed to marine salt spray. What is the long-term durability risk?",
+      "text": "Why should reinforcing steel be kept clean and properly stored in site practice?",
       "options": [
         {
           "id": "a",
-          "text": "Carbonation and chloride penetration will reach the rebar within 5–10 years (vs. 20+ years with adequate 40 mm cover). Rust expansion causes spalling, cracking, and loss of structural capacity. Repair/replacement is necessary before design service life (50 years) is achieved."
+          "text": "Contamination can reduce bond and usability, so reinforcement should be protected from conditions that impair it"
         },
         {
           "id": "b",
-          "text": "30 mm cover is adequate; marine salt spray does not penetrate concrete, assuming the concrete mix has a water-cement ratio below 0.40 and is properly cured."
+          "text": "Rust automatically increases bar size for design"
         },
         {
           "id": "c",
-          "text": "Durability risk is minimal if concrete strength is high, provided that the concrete has been treated with a surface sealant to prevent chloride ingress."
+          "text": "Oil improves bond with concrete"
         },
         {
           "id": "d",
-          "text": "Cover thickness is cosmetic; structural capacity is unaffected unless the beam is subjected to direct impact or heavy loading conditions."
+          "text": "Storage condition has no construction relevance"
         }
       ],
       "correct_option_id": "a",
@@ -375,12 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Salt spray is highly aggressive; even good concrete cannot prevent chloride penetration over decades.",
-        "c": "High concrete strength slows but does not prevent chloride penetration; cover is the primary defense.",
-        "d": "Cover is structural; it directly impacts service life and durability.",
-        "correct": "NSCP 2015 Section 402 (Durability) specifies cover based on exposure. For coastal (marine salt spray) environments, 50 mm cover is required to protect rebar for 50 years. Reducing cover to 30 mm accelerates corrosion—chloride ions from salt spray penetrate concrete and reach rebar within 5–10 years, initiating rust. Rust expansion (volume increase of ~5%) causes concrete spalling, water ingress, and further deterioration. Early major repairs are likely, failing the 50-year design intent."
-      },
+      "rationale": "The Metals Lecture source notes that reinforcement should be kept free of oil and stored away from moisture and vegetation.",
       "explanation": null,
       "code_citation": "NSCP 2015 Sections 402, 412; ACI 349",
       "bloom_level": "apply",
@@ -393,30 +353,30 @@
       "model_id": "ALE-MATL-004-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.974462+00:00",
       "content_hash": "sha256:8a4726a77343491623f5a0225cf80760a71852ec4e88faa7bc5a55673a82c47b"
     },
     {
       "question_id": "a1027648-bbd9-4c06-a931-32c6092424fe",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "A 25-story residential tower in Manila will use precast hollow-core floor slabs with wet (grouted) connections to support structures. The developer requests design verification that the project can be completed in 24 months including 6 months of design/permitting. Evaluate feasibility considering production time, transportation, on-site assembly, and grouted connection curing.",
+      "text": "Which floor-system idea is source-safe from the checked BCI scope?",
       "options": [
         {
           "id": "a",
-          "text": "Feasible if carefully planned: Precast production can occur during construction of lower levels (parallel path). On-site assembly is rapid (~1 day per floor). However, 7–14 day grout curing between floors delays load transfer. Critical path is 6 mo. design + 3–4 mo. production + 3–4 mo. assembly/curing + contingency = ~18 months construction. Margin exists for 24-month total if production and logistics are managed efficiently. Risks: production delays, transportation bottlenecks, weather-induced curing delays in rainy season."
+          "text": "Reinforced concrete slabs can act as structural floor planes transferring loads to supports"
         },
         {
           "id": "b",
-          "text": "Impossible; precast projects always exceed 36 months, which is a common misconception"
+          "text": "Every slab span can be selected without engineering"
         },
         {
           "id": "c",
-          "text": "Feasible with no schedule risk or contingency needed, which is overly optimistic given typical project challenges"
+          "text": "Floor openings never affect reinforced concrete layouts"
         },
         {
           "id": "d",
-          "text": "Grout curing delay is immaterial; assembly can continue without waiting, which ignores structural integrity concerns"
+          "text": "A slab is only a nonstructural finish layer"
         }
       ],
       "correct_option_id": "a",
@@ -424,12 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Precast schedules vary greatly by planning; 24 months is achievable with diligence.",
-        "c": "Tight schedules always involve risk; contingency is necessary.",
-        "d": "Grout curing delays can extend overall schedule if not managed; assembly cannot safely load until grout sets.",
-        "correct": "Timeline analysis: design/permits 6 mo., precast production 3–4 mo. (parallel to foundation/lower structure), on-site assembly ~3–4 mo. (1 day/floor + grout curing delays), finishing 2–3 mo. Total: ~18 months construction fits within 24 months (assuming 6 mo. design). Grout curing (7–14 days between floors where loads transfer) is the main schedule risk. If planned as sequential phases (grout cures while assembly continues on levels above), critical path is manageable. Tropical rainy season (June–October) may reduce curing speed; schedule accordingly."
-      },
+      "rationale": "BCI treats reinforced concrete slabs as structural floor systems rather than finish-only surfaces.",
       "explanation": null,
       "code_citation": "NSCP 2015 Chapter 4; PCI Project Planning Guide",
       "bloom_level": "apply",
@@ -442,30 +397,30 @@
       "model_id": "ALE-MATL-004-06-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.973571+00:00",
       "content_hash": "sha256:4e9f07f330c9fd9825d404eef58892d6b967a5a185a1d84c0c3a1e7088e61922"
     },
     {
       "question_id": "587afd88-a79b-4f8b-a8c4-60c498a14927",
       "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
       "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "Conventional timber formwork (coco lumber) reuses approximately ___ cycles before replacement, whereas system formwork (aluminum/steel) achieves ___ cycles. Why is system formwork preferred for high-rise buildings despite higher capital cost?",
+      "text": "What is the LEA trap in reinforced concrete questions?",
       "options": [
         {
           "id": "a",
-          "text": "Conventional: 5–10 cycles; System: 50+ cycles. System formwork reduces labor assembly time per floor and enables rapid form striking, accelerating high-rise construction schedules. The labor savings justify the capital investment."
+          "text": "Confusing construction sequence, support, reinforcement, compaction, and curing roles"
         },
         {
           "id": "b",
-          "text": "Conventional: 50+; System: 5–10. Conventional is always superior, especially in terms of cost-effectiveness and ease of handling for smaller projects."
+          "text": "Assuming concrete work has no sequence"
         },
         {
           "id": "c",
-          "text": "Both achieve identical cycles; cost is the only difference, although system formwork is often chosen for its perceived durability and ease of use in complex designs."
+          "text": "Treating rebar as a paint material"
         },
         {
           "id": "d",
-          "text": "System formwork is heavier and unsuitable for heights above 20 stories, which limits its application in high-rise construction projects where weight is a critical factor."
+          "text": "Replacing source checks with remembered standard names"
         }
       ],
       "correct_option_id": "a",
@@ -473,12 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Conventional reuses fewer times; system is designed for hundreds of uses.",
-        "c": "System and conventional reverse the cycle counts.",
-        "d": "System is not weight-limited; it's used up to 100+ stories globally.",
-        "correct": "Conventional timber formwork (coco lumber) reuses ~5–10 times before degradation; system aluminum/steel panels achieve 50+ cycles. For high-rise projects with 30+ floors, system formwork's rapid assembly, standardized connections, and minimal adjustment time per floor reduce total labor cost despite higher capital outlay. Conventional timber is economical for low-rise (1–5 floors)."
-      },
+      "rationale": "The checked article is about the coordinated construction process, not unsupported standard-number recall.",
       "explanation": null,
       "code_citation": "ACI 347R-14",
       "bloom_level": "understand",
@@ -491,7 +441,7 @@
       "model_id": "ALE-MATL-004-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.971016+00:00",
       "content_hash": "sha256:c9f4273fc87cbea9be1235c4f2dbff837c399500efdd29db0a15cf739760d24e"
     }
   ]

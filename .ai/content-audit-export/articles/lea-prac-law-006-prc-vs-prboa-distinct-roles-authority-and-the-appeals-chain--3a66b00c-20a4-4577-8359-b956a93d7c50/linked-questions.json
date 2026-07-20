@@ -8,36 +8,33 @@
       "question_id": "2904461d-bd7e-40a6-8ec5-e5f025acce17",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "What is the relationship between the PRC and PRBoA?",
+      "text": "What is the source-safe relationship between PRC and PRBoA under Section 8?",
       "options": [
         {
           "id": "a",
-          "text": "The PRC and PRBoA are the same entity, functioning under a unified administrative structure"
+          "text": "The Board is under Commission administrative supervision, with Commission custody of records and support services"
         },
         {
           "id": "b",
-          "text": "The PRBoA is a collegial board operating under PRC administrative supervision; the PRC provides budgetary, personnel, and facility support but the Board retains professional and technical autonomy."
+          "text": "The Board is a private contractor"
         },
         {
           "id": "c",
-          "text": "The PRC has complete operational control over the Board, dictating all professional standards and practices"
+          "text": "The Commission has no relation to the Board"
         },
         {
           "id": "d",
-          "text": "The Board has complete independence from the PRC, operating without any oversight or support"
+          "text": "The IAPOA is the Court of Appeals"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "PRC supervises multiple professions; PRBoA is specific to architecture.",
-        "c": "The PRC supervises administratively but not operationally; the Board decides professional matters.",
-        "d": "The Board operates under PRC administrative supervision, not in complete independence.",
-        "correct": "Section 8 establishes that 'The Board shall be under the administrative supervision of the Commission.' Administrative supervision means organizational support, not operational control of professional decisions.",
-        "takeaway": "The Board is part of the PRC structure but retains autonomy over professional matters; the distinction between administrative support and professional control is essential to understanding professional regulation."
+        "correct": "Section 8 states administrative supervision and support-service details.",
+        "takeaway": "Section 8 states administrative supervision and support-service details."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -51,43 +48,40 @@
       "model_id": "ALE-PRAC-LAW-006-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.017953+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.253515+00:00",
       "content_hash": "sha256:166465403dfad359df885bf94394bbdb75dca3374f697bb5b2ef7cc6d74e4414"
     },
     {
       "question_id": "72bb3f4f-8b19-47a6-a472-2649767649ff",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "What is the role of the IAPOA (now United Architects of the Philippines, Inc.) in relation to the PRC and PRBoA?",
+      "text": "What is the IAPOA/UAP role in this checked source set?",
       "options": [
         {
           "id": "a",
-          "text": "The IAPOA is the same as the PRC, functioning as a regulatory body for architects."
+          "text": "Integrated professional organization with functions such as Board vacancy nominations and compliance monitoring/complaint endorsement"
         },
         {
           "id": "b",
-          "text": "The IAPOA is a professional association distinct from government regulatory bodies; it nominates PRBoA members, provides input on standards, and may offer self-regulatory functions complementary to government regulation."
+          "text": "The appointing President"
         },
         {
           "id": "c",
-          "text": "The IAPOA has complete regulatory authority over architects, including licensing and disciplinary actions."
+          "text": "The Court of Appeals"
         },
         {
           "id": "d",
-          "text": "The IAPOA has no role in professional regulation, focusing solely on member services and advocacy."
+          "text": "The CHED accreditor for every diploma"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The IAPOA is a professional association; the PRC is a government agency.",
-        "c": "The IAPOA has consultative input but not complete regulatory authority.",
-        "d": "The IAPOA plays significant roles in nomination, input, and complementary regulation.",
-        "correct": "Section 41 designates the United Architects of the Philippines (UAP) as the accredited Integrated and Accredited Professional Organization of Architects (IAPOA) and provides its roles: nomination of PRBoA members, CPD input, and consultation on standards.",
-        "takeaway": "Professional regulation involves dual systems: government regulation (through PRC/PRBoA) and professional association self-regulation (through IAPOA). These complement each other."
+        "correct": "Section 40 lists UAP/IAPOA functions.",
+        "takeaway": "Section 40 lists UAP/IAPOA functions."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -101,43 +95,40 @@
       "model_id": "ALE-PRAC-LAW-006-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.250733+00:00",
       "content_hash": "sha256:88d80c17d9a42b46d6deb5c840b7a048f0f7fa002ad034cc3213170427b9d274"
     },
     {
       "question_id": "1fb1753b-af27-470b-9a94-61383f1b0ebc",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "What is the distinction between PRC record custody and Board record access?",
+      "text": "What does Commission record custody include under Section 8?",
       "options": [
         {
           "id": "a",
-          "text": "The Board controls all records; the PRC has no access, which limits the PRC's ability to oversee Board activities"
+          "text": "Board records, applications, exam questions, answer sheets, licensure-exam records, and administrative/investigative-case documents"
         },
         {
           "id": "b",
-          "text": "The PRC holds custody of all Board records; the Board accesses records for operations, but the PRC controls confidentiality and protects sensitive documents like examination questions and investigation files."
+          "text": "Only supplier discounts"
         },
         {
           "id": "c",
-          "text": "Records are public; anyone can access them without restriction, ensuring transparency but potentially compromising confidentiality"
+          "text": "Only contractor payroll"
         },
         {
           "id": "d",
-          "text": "The PRC and Board cannot access records; they are sealed, preventing any unauthorized disclosure"
+          "text": "No records at all"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The Board operates with records but does not have unilateral control.",
-        "c": "Records are not uniformly public; sensitive materials remain confidential.",
-        "d": "Records are accessible to authorized parties; sealing is not absolute.",
-        "correct": "Section 8 states 'All records of the Board...shall be under the custody of the Commission.' This means the Commission maintains control and enforces confidentiality while the Board uses records for operations.",
-        "takeaway": "Record custody reflects security and confidentiality concerns; examination questions, investigation files, and internal deliberations must be protected from unauthorized access."
+        "correct": "Section 8 identifies the records in Commission custody.",
+        "takeaway": "Section 8 identifies the records in Commission custody."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -151,43 +142,40 @@
       "model_id": "ALE-PRAC-LAW-006-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.252180+00:00",
       "content_hash": "sha256:755ea65b13dd97f85a7d173520147974438ebe1a19d2bf71d216e9c117700d31"
     },
     {
       "question_id": "318cfcb0-3a93-413d-98fc-e215bbc67c62",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "Explain how the distinction between administrative supervision and professional autonomy would be applied if the PRC ordered the Board to license an unqualified applicant or to approve unethical practice.",
+      "text": "If the Commission ordered a result that contradicts Section 7 professional powers, what should a source-safe answer do?",
       "options": [
         {
           "id": "a",
-          "text": "The Board must follow PRC orders regardless of the professional consequence, as administrative directives take precedence"
+          "text": "Separate Commission administrative supervision from the Board powers expressly granted in Section 7"
         },
         {
           "id": "b",
-          "text": "The Board would refuse such an order as exceeding the PRC's authority. Administrative supervision covers budgetary and organizational matters, not professional decisions. The Board's professional judgment on qualifications and ethics is independent; following such an order would violate the Board's statutory duty to the public."
+          "text": "Ignore Section 7"
         },
         {
           "id": "c",
-          "text": "The PRC can control all Board decisions, professional and administrative alike, without exception"
+          "text": "Say IAPOA decides every appeal"
         },
         {
           "id": "d",
-          "text": "Administrative supervision gives the PRC complete control over registration and licensure, including ethical considerations"
+          "text": "Use an unsourced Court standard"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Administrative supervision does not grant authority to direct professional substance.",
-        "c": "Professional decisions remain Board autonomous despite administrative supervision.",
-        "d": "Administrative supervision does not include operational control of registration.",
-        "correct": "The statute distinguishes administrative from operational control. The PRC supervises administratively but not operationally. An order to license the unqualified would be an operational order about professional judgment, exceeding the PRC's authority.",
-        "takeaway": "This distinction protects professional regulation's integrity; regulators cannot be compelled by administrators to compromise professional standards. Public interest presumption overrides hierarchical direction."
+        "correct": "The source separately states Board powers and Commission administrative support/review roles.",
+        "takeaway": "The source separately states Board powers and Commission administrative support/review roles."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-LAW-006-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.254927+00:00",
       "content_hash": "sha256:a1327ddcd61d16e3e33e2dabee55159db51cdf6d88380910c47339443c116ac7"
     },
     {
       "question_id": "29549d4e-32a1-4e47-9451-fcd854a4032b",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "What is the asymmetry in PRC review authority between Board rulemaking and disciplinary decisions?",
+      "text": "What is the asymmetry in Commission review authority?",
       "options": [
         {
           "id": "a",
-          "text": "Both rules and disciplinary decisions require pre-approval, which ensures consistency and oversight"
+          "text": "Board policies/rules need Commission review and approval; administrative-case decisions are reviewed only if appealed"
         },
         {
           "id": "b",
-          "text": "Board rules require PRC pre-approval before taking effect; Board disciplinary decisions take effect without pre-approval but are subject to appeal to the PRC."
+          "text": "All Board decisions skip the Commission"
         },
         {
           "id": "c",
-          "text": "Neither rules nor disciplinary decisions require PRC approval, which is a common misconception"
+          "text": "Only contractor claims are reviewed"
         },
         {
           "id": "d",
-          "text": "Disciplinary decisions require pre-approval; rules do not, which is not the case in practice"
+          "text": "The Court of Appeals reviews policies before they exist"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Disciplinary decisions do not require pre-approval; they are appealable, not pre-approved.",
-        "c": "Rules require pre-approval; disciplinary decisions are appealable but not pre-approved.",
-        "d": "The opposite is true: disciplinary decisions are appealable, not pre-approved.",
-        "correct": "Section 7 states: 'The policies, resolutions, rules and regulations...shall be subject to review and approval of the Commission. However, the Board's decisions...in administrative cases shall be subject to review only if on appeal.'",
-        "takeaway": "This asymmetry reflects recognition that Board expertise in adjudication should be respected; pre-approval of every disciplinary decision would undermine the Board's independence. However, rulemaking authority requires Commission oversight."
+        "correct": "The final paragraph of Section 7 states this distinction.",
+        "takeaway": "The final paragraph of Section 7 states this distinction."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -251,43 +236,40 @@
       "model_id": "ALE-PRAC-LAW-006-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.247749+00:00",
       "content_hash": "sha256:6bc47ddddfc25d4c625b067cfbd46302de2b98faa064dd9943f80390a3326985"
     },
     {
       "question_id": "c9aa0743-2dd3-4765-9cf9-de31b1015494",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "Analyze the checks-and-balances structure created by the three-tier appeal system (Board → Commission → Court of Appeals) in professional discipline.",
+      "text": "What is the source-supported administrative-case appeal path?",
       "options": [
         {
           "id": "a",
-          "text": "No checks or balances exist; the Board has complete discretion, which may lead to arbitrary decisions without oversight."
+          "text": "Board decision, appeal to Commission, then Commission decision may be appealed to the Court of Appeals"
         },
         {
           "id": "b",
-          "text": "The Board provides technical expertise and first-instance adjudication; the Commission ensures consistency and legal compliance; the Court ensures constitutional due process. Each level checks the prior level's discretion, preventing arbitrary discipline while respecting expert judgment."
+          "text": "Board decision directly to a supplier"
         },
         {
           "id": "c",
-          "text": "Each level completely retries the case; this creates redundancy, potentially delaying the resolution of disciplinary actions."
+          "text": "IAPOA decision to CHED only"
         },
         {
           "id": "d",
-          "text": "Only the Board has authority; appeals are not permitted, which limits the ability to challenge decisions."
+          "text": "Contractor appeal to the client only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Appeals provide substantial checks on Board discretion.",
-        "c": "Appeals are not complete retrials; they are focused reviews for specific error.",
-        "d": "Appeals are expressly permitted and provide meaningful review.",
-        "correct": "The three-tier structure embodies separation of powers in professional regulation: experts (Board) decide technical matters, administrators (Commission) ensure system consistency, and judges (Court) ensure lawfulness.",
-        "takeaway": "This structure balances deference to expertise with protection against abuse. The Board's judgment is respected but subject to meaningful appellate review."
+        "correct": "Section 7(h) states the appeal sequence.",
+        "takeaway": "Section 7(h) states the appeal sequence."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -301,43 +283,40 @@
       "model_id": "ALE-PRAC-LAW-006-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.249048+00:00",
       "content_hash": "sha256:ffb7df5b1ac6e9266817719ea5c19fd5f46721b63d51e2de3fce5687eb87cac6"
     },
     {
       "question_id": "51f58799-f190-44a3-9bba-33dd12f7e456",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "How long does an architect have to appeal a Board disciplinary decision to the Commission?",
+      "text": "How long before a Board administrative-case decision becomes final if not appealed to the Commission?",
       "options": [
         {
           "id": "a",
-          "text": "30 days from the date of the decision, provided no other conditions apply"
+          "text": "Fifteen days from receipt of notice of judgment or decision"
         },
         {
           "id": "b",
-          "text": "7 days from the receipt of the decision notice, unless otherwise specified by the Board"
+          "text": "One year automatically"
         },
         {
           "id": "c",
-          "text": "15 days from receipt of notice of judgment; if not appealed within this period, the decision becomes final and executory."
+          "text": "Six years"
         },
         {
           "id": "d",
-          "text": "There is no deadline; appeals can be filed anytime, although this is rarely advisable"
+          "text": "Never"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Thirty days exceeds the statutory deadline.",
-        "b": "Seven days is insufficient; the statute specifies 15 days.",
-        "d": "There is a firm 15-day deadline; failure to appeal results in final judgment.",
-        "correct": "Section 7(h) states the Board's decision 'shall, unless appealed to the Commission, become final and executory after fifteen (15) days from receipt of notice of judgment or decision.'",
-        "takeaway": "The 15-day appeal deadline ensures finality and prevents indefinite uncertainty. Architects must act promptly to appeal; delay results in waiver of appeal rights."
+        "correct": "Section 7(h) states the fifteen-day finality rule.",
+        "takeaway": "Section 7(h) states the fifteen-day finality rule."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -351,43 +330,40 @@
       "model_id": "ALE-PRAC-LAW-006-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.252854+00:00",
       "content_hash": "sha256:2d364583579a522bd35c3f80f5ea77a16faebc190f0e2216cbb41ea9445138e3"
     },
     {
       "question_id": "d3ff9e75-a6c4-4c76-a9ca-873f73163d81",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "What grounds exist for the President to suspend or remove a PRBoA member?",
+      "text": "Which is a Section 9 ground for suspension or removal of a Board member?",
       "options": [
         {
           "id": "a",
-          "text": "The President may remove members at will without cause, which is not supported by the legal framework."
+          "text": "Neglect of duty or incompetence"
         },
         {
           "id": "b",
-          "text": "Upon PRC recommendation, after the member has been given opportunity to defend in a Commission investigation, on grounds of violations of professional standards, misconduct, or neglect of duty."
+          "text": "Using an SPP compensation method"
         },
         {
           "id": "c",
-          "text": "Only the Board can remove its own members, which is not in accordance with the established procedures."
+          "text": "Being a client"
         },
         {
           "id": "d",
-          "text": "Board members have lifetime tenure and cannot be removed, which is a misunderstanding of the tenure policies."
+          "text": "Submitting a design brief"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Removal requires cause and due process, not presidential whim.",
-        "c": "The President has removal authority, though on Commission recommendation.",
-        "d": "Board membership has a fixed term and can be terminated.",
-        "correct": "Section 9 states the President may suspend or remove members 'upon the recommendation of the Commission, after giving the concerned member an opportunity to defend himself in a proper administrative investigation to be conducted by the Commission.'",
-        "takeaway": "Board members can be removed, but only through a due process investigation by the Commission. The member has a right to defend before removal occurs."
+        "correct": "Section 9 lists neglect of duty or incompetence among the grounds.",
+        "takeaway": "Section 9 lists neglect of duty or incompetence among the grounds."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -401,43 +377,40 @@
       "model_id": "ALE-PRAC-LAW-006-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.254282+00:00",
       "content_hash": "sha256:22ae6784b186e7e4a377bf2969e7d44054951def48eba2d0ba6eb336e7284c04"
     },
     {
       "question_id": "d0e33670-4ddc-4cc8-aeaf-c4760c22b790",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "What is the standard of review applied by the Court of Appeals when reviewing a PRC disciplinary decision?",
+      "text": "What should be done with Court of Appeals standard-of-review doctrine in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "The Court completely retries the case de novo, considering all evidence anew"
+          "text": "Defer it unless a local Rules of Court or appellate-review source is checked"
         },
         {
           "id": "b",
-          "text": "Certiorari under Rule 65: the Court reviews for grave abuse of discretion amounting to lack or excess of jurisdiction; the decision is upheld if supported by substantial evidence and without grave abuse."
+          "text": "Invent it from memory"
         },
         {
           "id": "c",
-          "text": "The Court applies a preponderance of the evidence standard, weighing the evidence presented"
+          "text": "Put it in every answer option"
         },
         {
           "id": "d",
-          "text": "The Court has authority to overturn the PRC decision for any reason, without limitation"
+          "text": "Treat it as a CPD rule"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Courts do not retry administrative cases; they apply deferential review.",
-        "c": "Preponderance is a trial standard; administrative appeal applies arbitrary-and-capricious standard.",
-        "d": "The Court's review is limited; only arbitrary, irrational, or unlawful decisions are overturned.",
-        "correct": "Administrative law applies the arbitrary-and-capricious standard on appeal. The agency's decision is upheld if supported by evidence and within authority; courts respect agency expertise.",
-        "takeaway": "Deferential review protects agency autonomy and expertise; courts intervene only for legal error or constitutional violation, not disagreement with agency judgment."
+        "correct": "The checked source mentions appeal to the Court of Appeals but does not supply review-standard doctrine.",
+        "takeaway": "The checked source mentions appeal to the Court of Appeals but does not supply review-standard doctrine."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -451,43 +424,40 @@
       "model_id": "ALE-PRAC-LAW-006-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.251489+00:00",
       "content_hash": "sha256:7318850799c75b8678e04c1b529773c6b9dde2bcd1515dde7214956fb830af2c"
     },
     {
       "question_id": "30634494-d646-4114-8e7a-17f3e61c7b5d",
       "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
       "topic_id": "71da0834-4f91-43e5-9206-dd505262095b",
-      "text": "What does 'administrative supervision' of the PRBoA include?",
+      "text": "What does Section 8 say the Commission provides to the Board?",
       "options": [
         {
           "id": "a",
-          "text": "Complete control over examination content and disciplinary decisions, including the power to amend examination procedures without consultation"
+          "text": "The Board Secretary, secretariat, and other support services"
         },
         {
           "id": "b",
-          "text": "Budgetary support, personnel administration, facility provision, record custody, and secretarial services—not operational control of professional decisions."
+          "text": "All private client fees"
         },
         {
           "id": "c",
-          "text": "The PRC determines which architects are eligible for licensure based on criteria set independently of the Board's recommendations"
+          "text": "All competition prizes"
         },
         {
           "id": "d",
-          "text": "No PRC involvement in Board operations, allowing the Board to function autonomously without oversight"
+          "text": "All contractor bonds"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Professional decisions remain Board autonomous, not subject to PRC control.",
-        "c": "The Board, not PRC, determines eligibility for licensure.",
-        "d": "The PRC provides administrative support; this is involvement, though limited to support functions.",
-        "correct": "Section 8 specifies that the Commission provides budget, personnel support, facilities, record custody, and secretarial services. It does not control professional substance.",
-        "takeaway": "Administrative supervision is organizational support infrastructure; it is distinct from operational control. The Board decides professional matters independently."
+        "correct": "Section 8 states secretary designation and support services.",
+        "takeaway": "Section 8 states secretary designation and support services."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -501,7 +471,7 @@
       "model_id": "ALE-PRAC-LAW-006-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.249966+00:00",
       "content_hash": "sha256:48521681b5a6b2c3aa3ba4cd9a346c728c3eec62e09a9777cfbe1b3615603371"
     }
   ]

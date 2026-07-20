@@ -2,9 +2,9 @@
   "question_id": "ed081e73-219c-478c-ba34-fe5619c8dcb8",
   "baseline_hash": "sha256:85e65c5ee3252ecb25c55805dc0d55eded776829b773f4c2375f59763bb8b594",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "How does RA 9514 connect to occupancy clearance?",
+    "text": "Under Sec. 702, when may a change to a LESS HAZARDOUS use be approved without full code compliance for the new occupancy?",
     "options": [
       {
         "id": "a",
-        "text": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance."
+        "text": "Never — full compliance is always required regardless of hazard level, ensuring maximum safety"
       },
       {
         "id": "b",
-        "text": "R"
+        "text": "When the new use represents lower life risk AND fire risk than the existing use, and the Building Official approves the change"
       },
       {
         "id": "c",
-        "text": "A"
+        "text": "When the building is more than 20 years old, which is a common misconception about code compliance"
       },
       {
         "id": "d",
-        "text": " "
+        "text": "When the building owner signs a waiver accepting liability, which is not a recognized practice under the code"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance. This is supported by RA 9514 uses only the GFA-to-TGFA conversion table..",
-    "explanation": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance. The cited local source family controls this item: RA 9514 uses only the GFA-to-TGFA conversion table..",
-    "code_citation": "RA 9514 removes the Building Official from occupancy review."
+    "correct_option_id": "b",
+    "rationale": "The less hazardous exception does not eliminate the application and approval requirement — it determines whether full code compliance is needed before approval. Building Official inspection and assessment still apply. Options C and D introduce criteria not found in Sec. 702. Option A denies the less hazardous pathway entirely.",
+    "explanation": null,
+    "code_citation": null
   }
 }

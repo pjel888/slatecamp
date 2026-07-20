@@ -108,23 +108,23 @@
       "question_id": "c7cd772a-ccb9-48ec-8f02-b183400fa519",
       "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
       "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
-      "text": "Compare the examination passing standard with the requirement for Continuing Professional Development. How do they reinforce continuous competence in architectural practice?",
+      "text": "How do the LEA passing rule and the Board's CPD authority fit together in the checked RA 9266 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "ALE verifies initial competence; CPD requirements maintain competence throughout a career"
+          "text": "Section 15 sets the LEA passing thresholds, while Section 7 authorizes the Board to adopt CPD guidelines; these are separate competence controls."
         },
         {
           "id": "b",
-          "text": "Both are administered simultaneously by the same examination board, ensuring a streamlined process for professionals"
+          "text": "CPD replaces the LEA passing standard for first registration."
         },
         {
           "id": "c",
-          "text": "ALE is more stringent than CPD, so no further learning is needed, which simplifies the professional's ongoing education requirements"
+          "text": "The LEA has no minimum subject-grade requirement if CPD is completed."
         },
         {
           "id": "d",
-          "text": "They are independent and do not relate to professional competence standards, allowing for flexibility in professional development"
+          "text": "CPD is the same as the post-exam oath requirement."
         }
       ],
       "correct_option_id": "a",
@@ -133,11 +133,7 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Conflates separate regulatory functions; ALE and CPD are typically administered by different processes at different career stages.",
-        "c": "Creates a false security; ALE's rigor establishes entry standards, but architectural knowledge and codes evolve, necessitating ongoing professional development.",
-        "d": "Severs the relationship between initial and continuing competence; both mechanisms work together to protect public safety over an architect's full career.",
-        "correct": "The ALE represents a one-time rigorous assessment of baseline competence across all architectural disciplines required for initial licensure. CPD requirements, as mandated by RA 9266 Section 8(i), ensure that licensed architects maintain and update their knowledge throughout their careers as practice standards, materials, codes, and technologies evolve.",
-        "takeaway": "ALE establishes entry competence; CPD maintains and updates competence throughout practice life."
+        "correct": "Section 15 sets the 70 percent weighted average and no-below-50 subject-grade rule. Section 7 authorizes CPD guidelines and also states CPD is not mandatory for PIC renewal in the checked source."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -151,43 +147,39 @@
       "model_id": "ALE-PRAC-LAW-008-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.027325+00:00",
       "content_hash": "sha256:07b7dae9147575d09f2eead70a11ab432ee601f302f8a42d90c1dc7e82666008"
     },
     {
       "question_id": "b9c2c1eb-97f4-47e5-8e16-868fa209474e",
       "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
       "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
-      "text": "A candidate fails the LEA and wishes to retake it six months later. What must she confirm before reapplying?",
+      "text": "A candidate fails the LEA and wants to reapply. Based on the checked RA 9266 IRR source, what must she confirm before reapplying?",
       "options": [
         {
           "id": "a",
-          "text": "Only that the examination fee has been paid, ensuring no outstanding balances"
+          "text": "That she still satisfies the Section 13 application requirements and submits truthful supporting documents."
         },
         {
           "id": "b",
-          "text": "Current NBI clearance and valid DAE credentials, along with reapplication of all required documents"
+          "text": "That no eligibility documents are needed after a first failed attempt."
         },
         {
           "id": "c",
-          "text": "Permission from her previous architect-mentor, which is a common courtesy but not a formal requirement"
+          "text": "That the IAPOA automatically certifies all repeat applicants."
         },
         {
           "id": "d",
-          "text": "Letter of recommendation from her university, which may enhance her application but is not mandatory"
+          "text": "That subject grades below 50 percent are ignored on repeat attempts."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Undershoots qualification requirements; examination fees alone do not satisfy the legal prerequisites for retake eligibility.",
-        "c": "Invents an unnecessary barrier; mentor permission is not required for reapplication; the candidate only needs to meet statutory requirements.",
-        "d": "Substitutes subjective evaluation for objective compliance; university recommendations are not part of the retake eligibility criteria.",
-        "correct": "Retaking candidates must reapply with all required documents as specified for initial applicants (including NBI clearance and DAE credentials per Section 13), though specific retake-only procedures are not detailed in the available IRR excerpts.",
-        "takeaway": "ALE retake: candidates must resubmit all required documents and maintain current NBI clearance + valid DAE credentials."
+        "correct": "The checked pages do not state a maximum-attempt rule. They do support Section 13 eligibility and the Board authority to act on false evidence or information."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -201,7 +193,7 @@
       "model_id": "ALE-PRAC-LAW-008-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.026180+00:00",
       "content_hash": "sha256:e2aa4ca9cdfa2c906302f87b87efa486f3745e10e6662b1d0825ccf74db55409"
     },
     {
@@ -458,36 +450,32 @@
       "question_id": "f3735773-264e-4d66-9bf5-3e40e6ecca6a",
       "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
       "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
-      "text": "Within what timeframe must the Board announce LEA results after the examination date?",
+      "text": "Within what timeframe must the Board submit LEA ratings to the Commission after the examination, unless extended for just cause?",
       "options": [
         {
           "id": "a",
-          "text": "Within 15 days"
+          "text": "Within thirty calendar days after the examination."
         },
         {
           "id": "b",
-          "text": "Within 30 days"
+          "text": "Within five working days after the examination."
         },
         {
           "id": "c",
-          "text": "Within 45 days"
+          "text": "Within one year after the examination."
         },
         {
           "id": "d",
-          "text": "Within 60 days"
+          "text": "Only when the IAPOA requests the ratings."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Understates the allowable timeframe; Section 16 permits 30 days, not 15.",
-        "c": "Extends the deadline unnecessarily; the law requires announcement within 30 days, not 45.",
-        "d": "Further delays candidate notification; Section 16 mandates 30 days, not 60.",
-        "correct": "RA 9266 Section 16 specifies that the Board must announce ALE results within 30 days after the examination, ensuring timely notification and allowing successful candidates to apply for Certificate of Registration without delay.",
-        "takeaway": "ALE results must be announced within 30 days of the examination date."
+        "correct": "Section 16 requires the Board to submit ratings to the Commission within thirty calendar days after the examination, unless extended for just cause. The source says submit ratings, not announce results."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -501,7 +489,7 @@
       "model_id": "ALE-PRAC-LAW-008-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.029580+00:00",
       "content_hash": "sha256:4a2b5b48527efdb3aa7995b996daf4b71e9c1de09a25342e1c57bb9abf3d6e4f"
     }
   ]

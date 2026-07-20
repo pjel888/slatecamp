@@ -8,36 +8,33 @@
       "question_id": "901938c1-a5e2-4468-934e-72c690090a13",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "A client files a complaint with the PRBoA alleging that an architect failed to design according to the Philippine Building Code. The architect responds claiming the client approved the design deviation. At what stage can the PRBoA dismiss the complaint as frivolous?",
+      "text": "Which Board power is directly source-supported in Section 7?",
       "options": [
         {
           "id": "a",
-          "text": "Before formal investigation if the response is satisfactory and addresses all points raised in the complaint"
+          "text": "Hear and decide administrative cases involving RA 9266, IRR, Code, and Standards violations"
         },
         {
           "id": "b",
-          "text": "Only after formal investigation if evidence supports the architect's claim and disproves the allegations"
+          "text": "Issue criminal convictions"
         },
         {
           "id": "c",
-          "text": "Before formal investigation if the complaint lacks sufficient factual basis to proceed"
+          "text": "Approve any supplier commission"
         },
         {
           "id": "d",
-          "text": "Only after a formal hearing and board deliberation involving testimony from both parties and expert witnesses"
+          "text": "Waive all notice and hearing"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Response satisfactoriness does not determine frivolousness; factual sufficiency is the standard.",
-        "b": "Dismissal for frivolousness may occur before investigation; formal investigation is not required.",
-        "d": "Formal hearing is not required for frivolousness dismissal; early threshold determination applies.",
-        "correct": "The PRBoA may dismiss a complaint before formal investigation if it lacks sufficient factual basis or is clearly frivolous. The client's allegation (design non-compliance) is factually sufficient to proceed.",
-        "takeaway": "PRBoA may dismiss frivolous complaints before formal investigation if lacking factual basis."
+        "correct": "Section 7 states the Board administrative-case power.",
+        "takeaway": "Section 7 states the Board administrative-case power."
       },
       "explanation": null,
       "code_citation": "RA 9266 Section 39",
@@ -51,43 +48,40 @@
       "model_id": "ALE-PRAC-ETH-009-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.955532+00:00",
       "content_hash": "sha256:f2c9d0618de4aa28116d0f091bbdfe4837ce4077275218908ac7f28d73250f61"
     },
     {
       "question_id": "0b3e88c6-ef82-4a83-ac79-beb282106847",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "During an investigative hearing, the complainant (a contractor) testifies that the architect told him the building code \"doesn't apply to this project.\" The architect, through counsel, objects that this is hearsay and inadmissible. How should the PRBoA rule?",
+      "text": "What is the private-charge gate under Section 23?",
       "options": [
         {
           "id": "a",
-          "text": "Sustain the objection because hearsay is inadmissible in administrative proceedings, which typically follow strict rules of evidence"
+          "text": "Written, sworn charges filed with the Secretary of the Board"
         },
         {
           "id": "b",
-          "text": "Overrule the objection because administrative hearings apply relaxed evidentiary standards"
+          "text": "A social-media post"
         },
         {
           "id": "c",
-          "text": "Sustain the objection and require the architect to testify directly, ensuring that the testimony is firsthand and not secondhand"
+          "text": "A verbal complaint to a contractor"
         },
         {
           "id": "d",
-          "text": "Require the contractor to produce the architect's written statement instead, which would serve as a more reliable form of evidence"
+          "text": "A supplier invoice"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Hearsay is admissible in administrative proceedings; relaxed standards apply.",
-        "c": "Direct architect testimony is not required; hearsay testimony is admissible.",
-        "d": "Written statement preference is not required; hearsay testimony suffices.",
-        "correct": "Administrative hearings before the PRBoA apply relaxed evidentiary standards. Hearsay is admissible if relevant and offered for truth—establishing the architect's understanding of code applicability.",
-        "takeaway": "Administrative hearings permit hearsay under relaxed evidentiary standards."
+        "correct": "Section 23 gives the private-charge requirements.",
+        "takeaway": "Section 23 gives the private-charge requirements."
       },
       "explanation": null,
       "code_citation": "RA 9266 Section 39; PRC Rules",
@@ -101,43 +95,40 @@
       "model_id": "ALE-PRAC-ETH-009-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.958667+00:00",
       "content_hash": "sha256:bd30215978e8cb4f4df0f8d1868693ab9a0c33044aa0dcdf3c7aa5f03b71e771"
     },
     {
       "question_id": "2909dd7a-ae02-4588-b951-e22e9afa586e",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "An architect licensed in 2015 is accused of designing a building that does not comply with the 2023 Philippine Building Code. During the PRBoA investigation, the architect claims that when he was licensed and trained, different standards applied and he is not obligated to use 2023 standards. How should the PRBoA address this defense?",
+      "text": "Which statement about motu proprio authority is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "The claim is valid because architects can only be held to standards existing at the time of their original license, and changes are not retroactive"
+          "text": "The Board may investigate or take cognizance by proper resolution or order"
         },
         {
           "id": "b",
-          "text": "The claim is invalid because architects have an ongoing professional obligation to remain current with evolving standards"
+          "text": "The Board can never act unless a client files a sworn complaint"
         },
         {
           "id": "c",
-          "text": "The PRBoA must prove the architect had actual notice of the 2023 standard changes, ensuring fair enforcement"
+          "text": "Only contractors can trigger a case"
         },
         {
           "id": "d",
-          "text": "Only architects licensed after 2023 must comply with the 2023 code, as it applies to new licenses only"
+          "text": "Only the Court of Appeals can begin discipline"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Architects must stay current; original training standards do not excuse non-compliance.",
-        "c": "Actual notice is not required; architects must independently maintain current knowledge.",
-        "d": "All licensed architects must comply with current standards regardless of license date.",
-        "correct": "Professional architects have continuous obligation to remain current with evolving codes and standards. The \"I was trained differently\" defense does not excuse non-compliance with current standards at the time of practice.",
-        "takeaway": "Architects have continuous obligation to maintain current knowledge of evolving standards."
+        "correct": "Section 23 provides motu proprio authority.",
+        "takeaway": "Section 23 provides motu proprio authority."
       },
       "explanation": null,
       "code_citation": "Code of Ethical Conduct; RA 9266 Section 22",
@@ -151,30 +142,30 @@
       "model_id": "ALE-PRAC-ETH-009-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.954395+00:00",
       "content_hash": "sha256:9a69a348a7655cceba6481e711cedc497b9aefef12531bc4ba87ea18e8619d00"
     },
     {
       "question_id": "07903847-d96f-487d-9d6b-77bc31dcb662",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "An architect successfully appeals a PRBoA suspension on the ground that the decision contained a clear legal error in interpreting Section 22 of RA 9266 (standard of care). The Court of Appeals agrees and reverses the suspension. Can the PRBoA reinvestigate the same facts and refile charges based on a different legal theory?",
+      "text": "What detailed claim should remain deferred for ETH-009?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because the reversal only addresses the specific legal error, not the underlying conduct"
+          "text": "Relaxed hearsay standards and full PRC investigation timeline"
         },
         {
           "id": "b",
-          "text": "Yes, if new evidence emerges during the reinvestigation"
+          "text": "Board authority to hear administrative cases"
         },
         {
           "id": "c",
-          "text": "No, because double jeopardy principles in administrative law prevent relitigating the same facts"
+          "text": "Subpoena authority"
         },
         {
           "id": "d",
-          "text": "No, because the reversal constitutes an acquittal on the merits and precludes further action"
+          "text": "Written sworn charges"
         }
       ],
       "correct_option_id": "a",
@@ -183,11 +174,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "New evidence is not required; existing facts may be pursued under different legal theory.",
-        "c": "Strict double jeopardy limits apply in criminal contexts; administrative law is more flexible.",
-        "d": "Reversal on legal error does not constitute acquittal on merits; facts may be relitigated.",
-        "correct": "The reversal addresses legal error in law application, not factual findings. The underlying facts remain viable—the PRBoA may reinvestigate and pursue discipline under different legal theory if facts support it. Administrative law permits relitigation under different theories.",
-        "takeaway": "Legal error reversal permits relitigation under different legal theory for same facts."
+        "correct": "The checked packet points to Commission rules but does not include detailed hearing rules.",
+        "takeaway": "The checked packet points to Commission rules but does not include detailed hearing rules."
       },
       "explanation": null,
       "code_citation": "RA 9266 Section 37; Rules of Court",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-ETH-009-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.961606+00:00",
       "content_hash": "sha256:f2eb1610a424ab3358a87e39cf51c41d97ca2b323404cabb37a293105e68cc65"
     },
     {
       "question_id": "e5efaad5-2078-4e28-8630-8f79452369d3",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "Examine the appeal rights and limitations: A PRBoA decision finds the architect guilty of fraud (falsifying billing records) and revokes the license. The architect appeals to the Court of Appeals, which affirms. The architect then claims the court \"made an error in not reconsidering the fraudulent intent finding.\" Is this ground sufficient for Supreme Court review?",
+      "text": "What may happen to a Board decision if it is not appealed to the Commission?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because the Supreme Court reviews all administrative decisions on appeal, ensuring that justice is served in every case."
+          "text": "It becomes final and executory after fifteen days from receipt of notice"
         },
         {
           "id": "b",
-          "text": "Yes, because fraud involves moral turpitude and constitutional due process, which are critical issues warranting higher court review."
+          "text": "It is automatically void"
         },
         {
           "id": "c",
-          "text": "No, because factual findings (including intent) are reviewed under substantial evidence standard and not reconsidered absent clear error"
+          "text": "It becomes a supplier discount"
         },
         {
           "id": "d",
-          "text": "No, because the architect had a full opportunity to contest fraudulent intent at the PRBoA hearing, and procedural fairness was observed."
+          "text": "It has no effect until CPD is completed"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Supreme Court does not review all administrative decisions; discretionary review is limited.",
-        "b": "Fraud and due process concerns do not automatically grant Supreme Court review; legal error must be demonstrated.",
-        "d": "Opportunity at hearing does not change the appellate standard or discretionary review availability.",
-        "correct": "Court of Appeals applies deferential substantial evidence standard on factual findings and does not reweigh evidence or reconsider credibility. Factual reassessment (including intent findings) does not meet discretionary review grounds.",
-        "takeaway": "Factual findings reviewed under substantial evidence standard; reassessment not ground for review."
+        "correct": "Section 7 includes finality language.",
+        "takeaway": "Section 7 includes finality language."
       },
       "explanation": null,
       "code_citation": "RA 9266 Section 37; Rules of Court",
@@ -251,43 +236,40 @@
       "model_id": "ALE-PRAC-ETH-009-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.956399+00:00",
       "content_hash": "sha256:57dbc147f24a7873197e776a02a517df4ead22fdf9b85925903f711c24170bb4"
     },
     {
       "question_id": "37540b83-58bb-40c0-b42f-e5fd55e5653e",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "An architect under investigation by the PRBoA fails to file an answer to the complaint within the required 15-day period. What is the consequence?",
+      "text": "Which source supports the Board power to compel witnesses and documents?",
       "options": [
         {
           "id": "a",
-          "text": "The complaint is automatically dismissed for lack of proper notice, unless the PRBoA decides to extend the deadline"
+          "text": "Section 7(h), through subpoena ad testificandum and subpoena duces tecum"
         },
         {
           "id": "b",
-          "text": "The PRBoA must extend the deadline and provide another 15 days, allowing the architect additional time to respond"
+          "text": "Section 4-b of the UAP Code"
         },
         {
           "id": "c",
-          "text": "The architect waives the right to respond and facts may be presumed true; the case may proceed to recommended discipline"
+          "text": "A project brochure"
         },
         {
           "id": "d",
-          "text": "The architect is required to appear before the PRBoA to explain the delay, potentially facing further disciplinary action"
+          "text": "A private cost estimate"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Failure to answer does not dismiss the complaint; it forfeits the defense.",
-        "b": "Extension is discretionary, not mandatory; failure to respond timely has consequences.",
-        "d": "Appearance to explain delay is not required; the default consequence applies.",
-        "correct": "Failure to file timely answer results in waiver of defense rights and adverse inference that allegations are true. This procedural default has serious consequences and can support discipline recommendation even without hearing.",
-        "takeaway": "Failure to file timely answer waives defense rights and permits adverse inference."
+        "correct": "Section 7(h) states the subpoena authority.",
+        "takeaway": "Section 7(h) states the subpoena authority."
       },
       "explanation": null,
       "code_citation": "RA 9266 Section 39; PRC Rules",
@@ -301,43 +283,40 @@
       "model_id": "ALE-PRAC-ETH-009-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.957144+00:00",
       "content_hash": "sha256:b98ebfd67fa20a82d959a0abc7dada396b665356144503df54c7c675a5ebb67a"
     },
     {
       "question_id": "9aeb9d49-efce-46ac-8143-bf1fd5426c9b",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "Compare two disciplinary scenarios: (1) Architect A failed to include required technical specifications in working drawings, causing a contractor claim; and (2) Architect B deliberately falsified structural calculations to meet an impossible budget. How would the PRBoA likely distinguish the severity of discipline?",
+      "text": "What governs the hearing or investigation according to Section 23?",
       "options": [
         {
           "id": "a",
-          "text": "Both would receive identical penalties because the violation category is the same, regardless of intent or potential impact on public safety."
+          "text": "Commission rules on administrative investigation, subject to RA 9266, RA 8981, and the Rules of Court"
         },
         {
           "id": "b",
-          "text": "Architect A's negligence might warrant probation or brief suspension, while Architect B's fraud would warrant suspension or revocation"
+          "text": "Only client preference"
         },
         {
           "id": "c",
-          "text": "Architect B's deliberate falsification would only warrant a fine because no physical harm occurred, unless it can be shown that the falsification led to a structural failure."
+          "text": "Only contractor affidavits"
         },
         {
           "id": "d",
-          "text": "The PRBoA cannot consider intent—only whether the violation occurred, which means both cases are treated equally under the board's disciplinary guidelines."
+          "text": "Only UAP competition rules"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Violation category does not determine identical penalties; intent and severity matter.",
-        "c": "Fraud warrants serious discipline regardless of physical harm; financial/ethical harm suffices.",
-        "d": "The PRBoA considers intent as a sentencing factor along with violation facts.",
-        "correct": "The PRBoA considers intent and severity when determining discipline. Negligent omission (A) is less severe than fraudulent falsification (B), warranting proportionally lighter discipline.",
-        "takeaway": "Fraud receives harsher discipline than negligence; intent affects sentencing severity."
+        "correct": "Section 23 points to Commission administrative-investigation rules.",
+        "takeaway": "Section 23 points to Commission administrative-investigation rules."
       },
       "explanation": null,
       "code_citation": "RA 9266 Section 23; SPP Doc 200",
@@ -351,43 +330,40 @@
       "model_id": "ALE-PRAC-ETH-009-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.960209+00:00",
       "content_hash": "sha256:a0acbfb44972b094095782aa065d50c130eb8f27da8bd5695c5c314eca47b280"
     },
     {
       "question_id": "55911a4f-346f-4bc4-81fc-dad9174372b1",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "The PRBoA investigation report recommends dismissal of a complaint against an architect based on finding insufficient evidence of the alleged code violation. However, the PRBoA board members review the same evidence and conclude it supports the violation. What is the legal effect of the board's disagreement with the investigator?",
+      "text": "Why can a Code of Ethical Conduct violation become a Board administrative case?",
       "options": [
         {
           "id": "a",
-          "text": "The report is binding and the complaint must be dismissed"
+          "text": "Section 7 and Section 23 include the Code of Ethical Conduct within Board authority"
         },
         {
           "id": "b",
-          "text": "The board must follow the investigator's recommendation or explain why in writing"
+          "text": "Only because the client wants it"
         },
         {
           "id": "c",
-          "text": "The board may reject the recommendation and proceed to hearing based on its independent review"
+          "text": "Only when a supplier pays a discount"
         },
         {
           "id": "d",
-          "text": "The disagreement requires automatic appeal to the Court of Appeals"
+          "text": "It cannot become a Board case"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The report is not binding; the board has independent review authority.",
-        "b": "The board need not follow the investigator's recommendation; only provide reasoning in decision.",
-        "d": "Board disagreement with investigator is not automatic appeal ground.",
-        "correct": "The investigator's report is advisory, not binding. The PRBoA board has independent authority to review evidence and reach its own conclusions—the board may disagree with recommendations.",
-        "takeaway": "Investigator's report is advisory; PRBoA has independent review and decision authority."
+        "correct": "The Board hears Code violations and Section 23 includes Code violations.",
+        "takeaway": "The Board hears Code violations and Section 23 includes Code violations."
       },
       "explanation": null,
       "code_citation": "RA 9266 Section 39; PRC Rules",
@@ -401,43 +377,40 @@
       "model_id": "ALE-PRAC-ETH-009-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.957880+00:00",
       "content_hash": "sha256:01cc835e221db1c3f3be30aa0b235eaaccafc2ba649f26e2fece75afa23cea62"
     },
     {
       "question_id": "0f7c57fa-0b38-44b9-a746-3bc87fb8083a",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "An architect receives notice that the PRBoA has suspended her license for 2 years based on a finding that she failed to provide adequate structural coordination. The architect believes this finding is clearly wrong based on the documentation submitted. Which remedy is most appropriate?",
+      "text": "What should a source-safe answer avoid when a question asks for PRC Resolution 2009-688 details?",
       "options": [
         {
           "id": "a",
-          "text": "Request immediate reinstatement from the PRBoA before suspension takes effect, citing procedural errors in the initial hearing"
+          "text": "Giving procedural specifics unless the local resolution source is checked"
         },
         {
           "id": "b",
-          "text": "File an appeal with the Court of Appeals within 30 days of decision promulgation"
+          "text": "Citing Section 23 written charges"
         },
         {
           "id": "c",
-          "text": "Demand a new PRBoA hearing on the factual issue, arguing that new evidence has come to light"
+          "text": "Citing Board authority"
         },
         {
           "id": "d",
-          "text": "Petition the Supreme Court for reversal of the suspension, emphasizing constitutional rights violations"
+          "text": "Citing notice and hearing"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Reinstatement must come through appeal or PRBoA reconsideration, not emergency request.",
-        "c": "Court of Appeals review is the first appellate level; new PRBoA hearing is not the remedy.",
-        "d": "Supreme Court is available only for exceptional cases; Court of Appeals is the proper first appeal.",
-        "correct": "Appeal to Court of Appeals within 30 days is the proper remedy. The court reviews whether factual findings are supported by substantial evidence—the appropriate forum for challenging factual determinations.",
-        "takeaway": "Court of Appeals appeal within 30 days is the proper remedy for PRBoA decisions."
+        "correct": "The current packet did not add that resolution as a checked source.",
+        "takeaway": "The current packet did not add that resolution as a checked source."
       },
       "explanation": null,
       "code_citation": "RA 9266 Sections 37, 39",
@@ -451,43 +424,40 @@
       "model_id": "ALE-PRAC-ETH-009-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.960912+00:00",
       "content_hash": "sha256:16df5aadd54da0e94a7616ff21cb4fd421e9a8afb2d4e3acf4ded4909e02f620"
     },
     {
       "question_id": "ed8aceea-0b83-40fa-b2ff-bff588bdd251",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
       "topic_id": "46ee11b1-9d70-4cd2-8d7b-551abc5ed314",
-      "text": "An architect suspended for 3 years due to a finding of gross negligence wishes to appeal the PRBoA decision. The architect's appeal brief argues the discipline is \"excessive\" and \"unjust.\" However, the appeal brief provides no analysis of legal errors in the PRBoA's application of RA 9266 or the Code of Ethics. What is the likely outcome of the appeal?",
+      "text": "Which pairing is correct?",
       "options": [
         {
           "id": "a",
-          "text": "The Court of Appeals will overturn the suspension because the architect questions the justice of the decision, despite lacking legal error analysis"
+          "text": "Private charge: written and sworn; Board-initiated case: motu proprio by resolution or order"
         },
         {
           "id": "b",
-          "text": "The Court of Appeals will remand for a new PRBoA hearing, considering procedural fairness and potential oversight"
+          "text": "Private charge: anonymous; Board-initiated case: impossible"
         },
         {
           "id": "c",
-          "text": "The Court of Appeals will affirm because the appeal raises no legal error; excessive penalty arguments without legal error basis are unlikely to succeed"
+          "text": "Private charge: supplier memo; Board-initiated case: client waiver"
         },
         {
           "id": "d",
-          "text": "The Supreme Court will grant discretionary review because the matter involves professional discipline and may set a precedent"
+          "text": "Private charge: verbal only; Board-initiated case: automatic conviction"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Justice disagreement without legal error does not overturn decisions.",
-        "b": "Legal error in hearing procedures would warrant remand, but the brief raises only penalty disagreement.",
-        "d": "Supreme Court discretionary review addresses exceptional cases, not ordinary penalty disputes.",
-        "correct": "Appeals are limited to legal errors in law application and procedure. Disagreement with penalty without legal error does not succeed—the court presumes PRBoA decisions correct absent demonstrated legal error.",
-        "takeaway": "Appeal success requires legal error; penalty disagreement alone does not prevail."
+        "correct": "Section 23 supports both pathways and their boundaries.",
+        "takeaway": "Section 23 supports both pathways and their boundaries."
       },
       "explanation": null,
       "code_citation": "RA 9266 Section 37; Rules of Court",
@@ -501,7 +471,7 @@
       "model_id": "ALE-PRAC-ETH-009-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.959501+00:00",
       "content_hash": "sha256:6d8949367f96f692bbadf8700cb91f1e2a201fdb6a4bedf5680b4a2ee08e40e3"
     }
   ]

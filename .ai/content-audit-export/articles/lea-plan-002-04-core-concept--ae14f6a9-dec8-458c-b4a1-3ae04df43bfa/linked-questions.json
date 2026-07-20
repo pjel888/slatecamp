@@ -8,23 +8,23 @@
       "question_id": "d50e388c-1e82-4df6-a5ce-1f5708819dc4",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "How does zoning simultaneously 'enable' and 'restrain' development?",
+      "text": "What is a zoning ordinance in the CLUP system?",
       "options": [
         {
           "id": "a",
-          "text": "Zoning enables development in designated zones but restrains it everywhere else by specifying which uses are prohibited in which areas"
+          "text": "The enforceable local legislative tool that implements the CLUP."
         },
         {
           "id": "b",
-          "text": "Zoning enables all development equally while restraining environmental damage through pollution controls and other regulatory measures"
+          "text": "A nonbinding sketch prepared by a developer."
         },
         {
           "id": "c",
-          "text": "Zoning restrains development for poor communities while enabling development for wealthy areas only, often through differential zoning laws and incentives"
+          "text": "A national building-code table that replaces the CLUP."
         },
         {
           "id": "d",
-          "text": "Zoning enables development through building permits but restrains it through architectural design standards that must be adhered to strictly"
+          "text": "A mayoral memo that never needs Sanggunian action."
         }
       ],
       "correct_option_id": "a",
@@ -32,14 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not.",
-        "b": "Zoning allocates land use; pollution control is separate regulation (environmental law). Zoning does not control environmental impacts directly.",
-        "c": "Zoning is a neutral regulatory mechanism applicable to all properties. While zoning can have inequitable outcomes (e.g., zoning out affordable housing), that is a policy problem, not the inherent function of zoning.",
-        "d": "Building permits are issued under zoning authority, but they are a separate approval. Design standards are also separate from zoning (though related).",
-        "correct": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not.",
-        "takeaway": "Zoning enables development in designated zones; restrains it in others. This allocation mechanism is zoning's core function."
-      },
+      "rationale": "RPS and RA 7160 frame the zoning ordinance as the enforceable implementation of the CLUP.",
       "explanation": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not. Zoning allocates land use; pollution control is separate regulation (environmental law). Zoning does not control environmental impacts directly. Zoning is a neutral regulatory mechanism applicable to all properties. While zoning can have inequitable outcomes (e.g., zoning out affordable housing), that is a policy problem, not the inherent function of zoning. Building permits are issued under zoning authority, but they are a separate approval. Design standards are also separate from zoning (though related). Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not. Zoning enables development in designated zones; restrains it in others. This allocation mechanism is zoning's core function.",
       "code_citation": "Zoning principles; RA 7160",
       "bloom_level": "understand",
@@ -52,45 +45,38 @@
       "model_id": "ALE-PLAN-002-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-05-06T11:48:41.007893+00:00",
+      "updated_at": "2026-07-20T01:13:22.305301+00:00",
       "content_hash": "sha256:e6c5779b9091cf21a38d173e5b643812f7563c089496c1467507e9f356952d45"
     },
     {
       "question_id": "428e42b4-9c1e-4c80-adfc-20d4504813dd",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "In a municipal CLUP, 65% of the land area is designated 'Agricultural Zone' to preserve farmland and open space. As population pressure grows, developers seek to rezone portions to residential. What is the primary challenge this conflict creates?",
+      "text": "Who has authority to enact integrated zoning ordinances for a municipality?",
       "options": [
         {
           "id": "a",
-          "text": "Agricultural zoning always fails to produce revenue for the municipality, so any alternative is better, especially if it aligns with economic growth targets"
+          "text": "The Sangguniang Bayan."
         },
         {
           "id": "b",
-          "text": "Balancing CLUP stability (consistent long-term vision) with development pressure (market demand for housing); rezoning is flexible but fragmentary, risking sprawl"
+          "text": "The MPDC acting alone."
         },
         {
           "id": "c",
-          "text": "Agricultural land is protected by the national government and cannot be rezoned without federal approval, which involves a lengthy bureaucratic process"
+          "text": "DHSUD acting as the local council."
         },
         {
           "id": "d",
-          "text": "Environmental impact assessments for rezoning take too long, so it is best to deny all rezoning requests unless they meet expedited review criteria"
+          "text": "A private surveyor."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Agricultural zoning can generate value (farm output, food security, environmental services); it is not revenue-'worse' than residential—it is a different choice with different benefits.",
-        "b": "Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension.",
-        "c": "Local governments have zoning authority under RA 7160. National oversight exists (DHSUD review), but zoning authority is delegated to LGUs. The municipality can rezone if the CLUP is updated.",
-        "d": "EIA may be required for larger rezoning/development, but EIA delays are a process issue, not a reason to ban rezoning. Zoning changes do require environmental review, but that is standard practice.",
-        "correct": "Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension.",
-        "takeaway": "Land use planning challenges: balancing CLUP stability with development pressure; piecemeal rezoning risks sprawl."
-      },
+      "rationale": "RA 7160 grants the municipal Sanggunian power to enact integrated zoning ordinances.",
       "explanation": null,
       "code_citation": "RA 7160; CLUP planning principles",
       "bloom_level": "apply",
@@ -105,30 +91,30 @@
       "model_id": "ALE-PLAN-002-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.312497+00:00",
       "content_hash": "sha256:1d8403bba696cab59039fa7a344e7263a69ac232e51e403bb25b8308f6a6d3c6"
     },
     {
       "question_id": "68090083-0ff0-447f-89c0-15b1585bc48a",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "A city's zoning ordinance requires all residential zones to have a minimum lot size of 300 sq.m. per residential unit. A developer in a Residential 3 (high-density) zone wants to build apartment units on 60 sq.m. average per unit. What is the fundamental problem with enforcing the 300 sq.m. rule in a high-density zone?",
+      "text": "Which statement correctly distinguishes CLUP from zoning ordinance?",
       "options": [
         {
           "id": "a",
-          "text": "The 300 sq.m. minimum contradicts the stated purpose of high-density zoning and may be legally unenforceable for that zone, though it is clearly stated in the ordinance"
+          "text": "The CLUP sets spatial policy; the zoning ordinance makes enforceable use and development controls."
         },
         {
           "id": "b",
-          "text": "The requirement is valid and must be enforced; developers must accept the 300 sq.m. minimum regardless of the zone designation, even if it contradicts the intended density"
+          "text": "The CLUP and zoning ordinance are identical documents with no legal difference."
         },
         {
           "id": "c",
-          "text": "DHSUD must grant an exemption because 300 sq.m. is too restrictive for apartments, potentially stifling development in high-density areas"
+          "text": "The zoning ordinance is only an illustration."
         },
         {
           "id": "d",
-          "text": "The Mayor must issue a variance allowing 60 sq.m. per unit, which may not align with the overall zoning strategy but addresses immediate developer needs"
+          "text": "The CLUP is prepared only by private developers."
         }
       ],
       "correct_option_id": "a",
@@ -136,14 +122,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge.",
-        "b": "While the ordinance states the rule, the rule contradicts the zone's designation. Contradictory ordinance language is a legal defect that a court would likely not enforce as written.",
-        "c": "DHSUD does not grant individual exemptions from zoning minimums. The problem is the ordinance itself, not the developer's application.",
-        "d": "The Mayor does not grant variances; the Sanggunian does (via the variance/appeals process). But the real issue is the zoning ordinance's internal contradiction, not a specific variance request.",
-        "correct": "A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge.",
-        "takeaway": "Zoning ordinances must be internally consistent. Rules that contradict a zone's stated purpose are legally weak and create compliance problems."
-      },
+      "rationale": "The CLUP is the plan; the zoning ordinance is the statutory implementation tool.",
       "explanation": null,
       "code_citation": "Zoning Code best practices; RA 7160",
       "bloom_level": "analyze",
@@ -158,45 +137,38 @@
       "model_id": "ALE-PLAN-002-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.307375+00:00",
       "content_hash": "sha256:aac98ae581d3f02e97860d1775604546448810f31a4457446ce9a7d09ace842d"
     },
     {
       "question_id": "dddba217-806c-48b8-9860-3c627f973e1f",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "A developer owns a 5-hectare parcel zoned 'Residential 1' (single-family homes, max. 2 stories). The developer wants to construct a 15-story condominium. What process must occur to make this development legal?",
+      "text": "If a zoning ordinance conflicts with the approved CLUP, what is the source-safe concern?",
       "options": [
         {
           "id": "a",
-          "text": "The developer applies directly to DHSUD for an exemption; DHSUD approves or denies based on current zoning laws"
+          "text": "It is vulnerable because zoning should be in consonance with the approved CLUP."
         },
         {
           "id": "b",
-          "text": "The Sanggunian must amend the zoning ordinance to allow high-rise residential in that zone; or a variance/conditional use permit must be granted"
+          "text": "It is automatically valid because zoning never follows CLUP."
         },
         {
           "id": "c",
-          "text": "The Mayor must issue an executive order overriding the zoning ordinance, which is subject to legal review"
+          "text": "It is irrelevant because only the mayor decides land use."
         },
         {
           "id": "d",
-          "text": "The Planning Office must approve a zoning waiver, which requires a comprehensive impact assessment"
+          "text": "It becomes a national law."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "DHSUD does not grant exemptions from local zoning. DHSUD reviews the zoning ordinance itself for conformity with national policy; DHSUD does not override municipal zoning codes.",
-        "b": "Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing.",
-        "c": "The Mayor does not have the executive power to override the zoning ordinance. The Mayor implements ordinances; the Mayor does not legislatively amend them.",
-        "d": "The Planning Office has no authority to grant zoning waivers. Only the Sanggunian (through amendment or variance) can modify zoning legally.",
-        "correct": "Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing.",
-        "takeaway": "Changing zoning requires Sanggunian action (amendment or variance), not executive override or agency exemption."
-      },
+      "rationale": "RA 7160 says integrated zoning ordinances are enacted in consonance with the approved CLUP.",
       "explanation": null,
       "code_citation": "RA 7160; Standard Zoning Code practice",
       "bloom_level": "apply",
@@ -211,30 +183,30 @@
       "model_id": "ALE-PLAN-002-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.311660+00:00",
       "content_hash": "sha256:f2efd67fb64e3026aa01e310cbb319bccef9f59500ce484293619e63c6010e33"
     },
     {
       "question_id": "f85ba1e1-3b9c-4804-943d-edbe08ce41e4",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "Compared to updating the CLUP (which is a 10-year vision planning process), amending the Zoning Ordinance is typically easier and faster. Why does this flexibility create a risk of fragmented urban development (sprawl)?",
+      "text": "Which items are normally ordinance-specific rather than universal defaults?",
       "options": [
         {
           "id": "a",
-          "text": "Easier zoning amendment means developers can request small rezoning changes parcel-by-parcel without integrated planning for roads, water, or sewage, risking incremental sprawl pattern"
+          "text": "FAR, lot coverage, setbacks, height limits, parking, and conditional uses."
         },
         {
           "id": "b",
-          "text": "Zoning amendments are always opposed by environmental groups, which slows development and increases costs, leading to potential delays"
+          "text": "The existence of RA 7160."
         },
         {
           "id": "c",
-          "text": "The CLUP is more legally binding than zoning, so zoning changes are automatically invalid, which is a misconception"
+          "text": "The existence of the Sanggunian."
         },
         {
           "id": "d",
-          "text": "Zoning amendment flexibility allows cities to achieve sustainable development faster, eliminating sprawl, which is an overly optimistic view"
+          "text": "The fact that LGUs prepare CLUPs."
         }
       ],
       "correct_option_id": "a",
@@ -242,14 +214,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Because the Sanggunian can amend the zoning ordinance relatively easily (compared to rewriting a 10-year CLUP), developers can request small rezoning changes without a coherent long-term vision. Each parcel-by-parcel rezoning decision may be individually justified, but collectively they fragment the land use pattern and create sprawl—low-density scattered development. This is a process risk, not inevitable, but it is real.",
-        "b": "Environmental review may slow some amendments, but opposition is not automatic. The issue is that fast, easy amendments allow piecemeal decisions without vision.",
-        "c": "The CLUP is guiding policy; zoning is the legal rule. Zoning should conform to the CLUP, but both can be amended. Neither supersedes the other absolutely.",
-        "d": "Flexible zoning can support development speed, but not sustainable development. Sustainability requires integrated vision (CLUP) + consistent implementation (zoning) + infrastructure planning (water, sewage, roads).",
-        "correct": "Because the Sanggunian can amend the zoning ordinance relatively easily (compared to rewriting a 10-year CLUP), developers can request small rezoning changes without a coherent long-term vision. Each parcel-by-parcel rezoning decision may be individually justified, but collectively they fragment the land use pattern and create sprawl—low-density scattered development. This is a process risk, not inevitable, but it is real.",
-        "takeaway": "Easy zoning amendment enables parcel-by-parcel rezoning without integrated planning, risking sprawl. Balance flexibility with long-term CLUP vision."
-      },
+      "rationale": "Dimensional and use standards come from the adopted zoning ordinance unless another source is specified.",
       "explanation": null,
       "code_citation": "Land use planning principles; CLUP and zoning strategy",
       "bloom_level": "analyze",
@@ -264,45 +229,38 @@
       "model_id": "ALE-PLAN-002-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.308403+00:00",
       "content_hash": "sha256:61fdf3213e4134937752904eb116df649eb121481fa40d038eef7a14ec25bcce"
     },
     {
       "question_id": "d8761a1a-1089-49ca-bb33-783cd29acdb8",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "Why do mixed-use zoning codes typically require residential to be located above or adjacent to commercial, rather than intermixed at all levels?",
+      "text": "Which planning actor supplies technical content for zoning?",
       "options": [
         {
           "id": "a",
-          "text": "To maximize revenue for the city by separating income streams, ensuring distinct tax categories"
+          "text": "The local planning and technical structure, such as the CPDC/MPDC and technical working groups."
         },
         {
           "id": "b",
-          "text": "To separate incompatible uses (commercial noise/traffic) from residential sleep spaces, reducing conflicts while maintaining walkable density"
+          "text": "The Sanggunian alone with no technical input."
         },
         {
           "id": "c",
-          "text": "Because international zoning standards forbid horizontal mixing of uses, which is a common misconception"
+          "text": "Only private brokers."
         },
         {
           "id": "d",
-          "text": "To ensure commercial uses remain profitable without residential competing for the same land, thereby stabilizing market values"
+          "text": "Only a national court."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Municipal revenue is not the primary driver of zoning decisions; land use compatibility is.",
-        "b": "Mixed-use zoning balances walkability and vitality ('eyes on the street' principle) with residential livability. Locating residential above/adjacent to commercial preserves retail activity on the ground floor while separating noise and traffic disturbance from sleeping areas. This is a functional design strategy, not an economic one.",
-        "c": "International standards exist but do not mandate this arrangement; the rationale is functional—reducing use conflicts.",
-        "d": "Zoning is not designed to protect commercial profitability through use separation. Successful mixed-use districts integrate residential and commercial.",
-        "correct": "Mixed-use zoning balances walkability and vitality ('eyes on the street' principle) with residential livability. Locating residential above/adjacent to commercial preserves retail activity on the ground floor while separating noise and traffic disturbance from sleeping areas. This is a functional design strategy, not an economic one.",
-        "takeaway": "Mixed-use zoning vertical separation = functional design to balance walkability with livability."
-      },
+      "rationale": "RPS describes technical components that supply planning data and analysis.",
       "explanation": null,
       "code_citation": "Mixed-use zoning best practices; New Urbanism principles",
       "bloom_level": "understand",
@@ -315,45 +273,38 @@
       "model_id": "ALE-PLAN-002-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.310104+00:00",
       "content_hash": "sha256:6d10f95acfa1575f58288bf914946592d0e8a7674f2ad890666e8e43e8ccedd2"
     },
     {
       "question_id": "f148bd59-ec01-4e30-a114-3caf969eec40",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "What is a Zoning Ordinance?",
+      "text": "Which planning actor makes the legislative zoning decision?",
       "options": [
         {
           "id": "a",
-          "text": "A planning vision document that guides development for 10 years, often revised to reflect changing urban dynamics and community needs"
+          "text": "The Sanggunian."
         },
         {
           "id": "b",
-          "text": "A legislative enactment adopted by the Sanggunian that specifies permitted and prohibited land uses and building regulations"
+          "text": "The zoning applicant."
         },
         {
           "id": "c",
-          "text": "A set of guidelines prepared by the Planning Office to recommend how land should be used, including suggestions for zoning classifications and land use intensity"
+          "text": "The drafting technician alone."
         },
         {
           "id": "d",
-          "text": "A permit issued by DHSUD to authorize specific construction projects, detailing compliance with local zoning laws and environmental regulations"
+          "text": "The fire inspector alone."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "That describes the CLUP (Comprehensive Land Use Plan), not the zoning ordinance. The CLUP is the vision; the ordinance is the law that implements it.",
-        "b": "The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations.",
-        "c": "The Planning Office drafts the zoning ordinance, but the Sanggunian must formally adopt it as law. Guidelines alone are not enforceable.",
-        "d": "DHSUD reviews the ordinance for conformity with national standards, but the ordinance itself is not a construction permit—it sets the rules under which permits are issued.",
-        "correct": "The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations.",
-        "takeaway": "Zoning Ordinance = enforceable legislative act adopted by Sanggunian, implementing the CLUP."
-      },
+      "rationale": "The Sanggunian is the legislative body with zoning enactment authority.",
       "explanation": "That describes the CLUP (Comprehensive Land Use Plan), not the zoning ordinance. The CLUP is the vision; the ordinance is the law that implements it. The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations. The Planning Office drafts the zoning ordinance, but the Sanggunian must formally adopt it as law. Guidelines alone are not enforceable. DHSUD reviews the ordinance for conformity with national standards, but the ordinance itself is not a construction permit—it sets the rules under which permits are issued. The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations. Zoning Ordinance = enforceable legislative act adopted by Sanggunian, implementing the CLUP.",
       "code_citation": "RA 7160 (Local Government Code); DHSUD Zoning Guidelines",
       "bloom_level": "remember",
@@ -366,45 +317,38 @@
       "model_id": "ALE-PLAN-002-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-05-06T11:48:41.801502+00:00",
+      "updated_at": "2026-07-20T01:13:22.306529+00:00",
       "content_hash": "sha256:1a382da151509c0be604b609df7106ed4cbe89395179644eb13279faee20e612"
     },
     {
       "question_id": "4ba27171-6e13-42f5-b60c-d31ed680d19f",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "Which of the following scenarios represents a zoning ordinance that violates the principle of 'internal consistency' with the infrastructure plan?",
+      "text": "What does the HLURB CLUP Guidebook say a CLUP should integrate?",
       "options": [
         {
           "id": "a",
-          "text": "A residential zone permits 3-story buildings and requires 2 parking spaces per unit; water supply is adequate for this density, ensuring no strain on resources"
+          "text": "Sectoral plans and policies for land-use categories such as settlements, production, protection, and infrastructure."
         },
         {
           "id": "b",
-          "text": "A commercial zone permits retail and office use; a planned drainage system is sized for this intensity, preventing flooding"
+          "text": "Only architectural facade styles."
         },
         {
           "id": "c",
-          "text": "An industrial zone permits high-intensity manufacturing (24-hour operation) in an area with no planned sewage treatment facility to handle industrial waste discharge"
+          "text": "Only the preferences of one landowner."
         },
         {
           "id": "d",
-          "text": "An agricultural zone permits farm operations on 5-hectare minimum lots; roads are maintained by municipality, supporting agricultural transport"
+          "text": "Only annual payroll records."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Adequate water supply + appropriate parking requirements = consistent with infrastructure capacity.",
-        "b": "Appropriate drainage sizing + permitted use intensity = consistent.",
-        "c": "A zoning ordinance that permits intensive industrial use without corresponding infrastructure (sewage treatment, waste management) is not internally consistent. The zoning allows activity that the infrastructure cannot support, making it unenforceable and legally vulnerable.",
-        "d": "Road maintenance is a service function, not an infrastructure barrier to agricultural zoning. Agricultural uses typically generate less infrastructure demand than residential.",
-        "correct": "A zoning ordinance that permits intensive industrial use without corresponding infrastructure (sewage treatment, waste management) is not internally consistent. The zoning allows activity that the infrastructure cannot support, making it unenforceable and legally vulnerable.",
-        "takeaway": "Zoning must be consistent with planned infrastructure capacity. Zoning that exceeds infrastructure capability is internally inconsistent and unenforceable."
-      },
+      "rationale": "The Guidebook describes CLUP integration of sectoral plans and land-use categories.",
       "explanation": null,
       "code_citation": "Zoning and infrastructure planning principles; CLUP standards",
       "bloom_level": "apply",
@@ -419,45 +363,38 @@
       "model_id": "ALE-PLAN-002-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.313241+00:00",
       "content_hash": "sha256:769870e6fb82f10f25ed71530897215ff630e0ca9060cf9c4745ac7be8b3b81d"
     },
     {
       "question_id": "4a605fa8-0442-4887-b959-310d2bffbabd",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "Which authority has the power to adopt a Zoning Ordinance in a municipality?",
+      "text": "Why should a zoning answer not invent an R-zone numeric limit when the item does not provide it?",
       "options": [
         {
           "id": "a",
-          "text": "The Mayor, who oversees the implementation of local policies and ordinances"
+          "text": "Because local zoning standards are ordinance-specific and must be read from the applicable ordinance."
         },
         {
           "id": "b",
-          "text": "The Planning Office, responsible for drafting and recommending zoning plans to the council"
+          "text": "Because zoning never has numeric standards."
         },
         {
           "id": "c",
-          "text": "The Sangguniang Bayan (Municipal Council)"
+          "text": "Because the CLUP cancels all numbers."
         },
         {
           "id": "d",
-          "text": "DHSUD (Department of Human Settlements and Urban Development), which provides guidelines but does not directly adopt local ordinances"
+          "text": "Because only national defaults exist."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The Mayor signs the ordinance but does not initiate or vote on it. The Mayor's role is executive (implementation), not legislative (adoption).",
-        "b": "The Planning Office prepares (drafts) the technical content of the zoning ordinance, but does not have adoption authority. Technical preparation ≠ legislative authority.",
-        "c": "Under RA 7160, the Sanggunian (city or municipal council) is the legislative body that adopts zoning ordinances. The Mayor signs it, but adoption power rests with the Sanggunian.",
-        "d": "DHSUD reviews the ordinance for conformity with national standards and the CLUP, but DHSUD does not adopt municipal or city zoning ordinances. That is an LGU function.",
-        "correct": "Under RA 7160, the Sanggunian (city or municipal council) is the legislative body that adopts zoning ordinances. The Mayor signs it, but adoption power rests with the Sanggunian.",
-        "takeaway": "Sanggunian = legislative body that adopts zoning. Planning Office = drafts. Mayor = signs. DHSUD = reviews for conformity."
-      },
+      "rationale": "Numeric zoning controls must be anchored to the local ordinance or stated facts.",
       "explanation": null,
       "code_citation": "RA 7160 (Local Government Code, 1991)",
       "bloom_level": "remember",
@@ -470,45 +407,38 @@
       "model_id": "ALE-PLAN-002-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.310898+00:00",
       "content_hash": "sha256:8f54a0d7adaaadf98a430e79c3f5872a23340ac4c93abbef70da070b5df97bab"
     },
     {
       "question_id": "d5ecaa5a-46f3-4603-91c9-b5bbebf41ac1",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "The CLUP designates an area for residential development, but the current Zoning Ordinance permits only industrial use in that same area. What is the legal status of this zoning?",
+      "text": "Which source-safe answer applies when a proposed use is not permitted by the zoning ordinance?",
       "options": [
         {
           "id": "a",
-          "text": "Valid—the zoning ordinance can differ from the CLUP as long as the Mayor approves both"
+          "text": "It cannot proceed as proposed unless a valid ordinance procedure allows variance, conditional use, rezoning, or amendment."
         },
         {
           "id": "b",
-          "text": "Valid—industrial development will eventually pay for residential infrastructure, so it is a reasonable interim use"
+          "text": "It automatically proceeds if profitable."
         },
         {
           "id": "c",
-          "text": "Invalid—zoning ordinances must be consistent with the CLUP; inconsistency is legally vulnerable"
+          "text": "It proceeds if the planning office verbally agrees."
         },
         {
           "id": "d",
-          "text": "Valid—the Sanggunian has discretion to adopt zoning categories regardless of CLUP alignment"
+          "text": "It proceeds because CLUPs are advisory only."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mayoral approval does not cure inconsistency with the CLUP. The CLUP itself is the mandate under RA 7160; zoning must implement it.",
-        "b": "While interim uses are possible in planning, a permanent zoning designation that contradicts the CLUP is not an interim use—it is a policy conflict that must be resolved.",
-        "c": "The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority).",
-        "d": "Under RA 7160, the Sanggunian's power to zone is limited to implementing the CLUP. Zoning that contradicts the CLUP exceeds that delegated power.",
-        "correct": "The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority).",
-        "takeaway": "Zoning ordinance must align with CLUP or it is legally invalid."
-      },
+      "rationale": "The zoning ordinance is enforceable; conflicts require a lawful local process.",
       "explanation": null,
       "code_citation": "RA 7160; DHSUD conformity standards",
       "bloom_level": "understand",
@@ -521,7 +451,7 @@
       "model_id": "ALE-PLAN-002-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.309250+00:00",
       "content_hash": "sha256:e65a54ef6058ef6d747847badc49262319fa488d5bf7b78c762c71880584a9e9"
     }
   ]

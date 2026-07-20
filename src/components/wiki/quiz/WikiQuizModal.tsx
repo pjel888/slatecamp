@@ -450,6 +450,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                       {currentQuestion.stem}
                     </p>
                     {currentQuestion.image_url && (
+                      // eslint-disable-next-line @next/next/no-img-element -- question images may be data: URLs or from hosts not in next.config images.remotePatterns; the modal context doesn't benefit from next/image optimization.
                       <img
                         src={currentQuestion.image_url}
                         alt={currentQuestion.image_alt_text || 'Question image'}

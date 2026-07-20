@@ -1,14 +1,29 @@
 import { NextResponse } from "next/server";
+import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { getAIProvider } from "@/lib/ai/provider";
 import { questionGenerationPrompt } from "@/lib/ai/prompts";
 import { isDemoMode } from "@/lib/demo/config";
 import { checkRateLimit } from "@/lib/rate-limit";
+import { parseAiBody } from "@/lib/ai/route-validation";
+
+const GenerateQuestionsRequestSchema = z.object({
+  chunkContent: z.string().min(1).max(20_000),
+  profession: z.string().min(1).max(200),
+  examTarget: z.string().min(1).max(200),
+  difficulty: z.string().max(50).optional().default("medium"),
+  count: z.number().int().min(1).max(20).optional().default(5),
+})
 
 export async function POST(request: Request) {
   if (isDemoMode()) {
-    const { count } = await request.json();
-    const questions = Array.from({ length: count ?? 5 }, (_, i) => ({
+    const parsed = await parseAiBody(
+      request,
+      z.object({ count: z.number().int().min(1).max(20).optional().default(5) }),
+    )
+    if (parsed.ok === false) return parsed.response
+    const { count } = parsed.data
+    const questions = Array.from({ length: count }, (_, i) => ({
       prompt: `Demo question ${i + 1}: What is the primary structural function of a shear wall in a building?`,
       choices: [
         { id: "a", text: "Resist lateral forces", is_correct: true },
@@ -33,7 +48,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const rateLimit = checkRateLimit(`ai_${user.id}`)
+  const rateLimit = await checkRateLimit(`ai_${user.id}`)
   if (!rateLimit.allowed) {
     return NextResponse.json(
       { error: 'Rate limit exceeded. Please wait before sending another message.' },
@@ -41,16 +56,17 @@ export async function POST(request: Request) {
     )
   }
 
-  const { chunkContent, profession, examTarget, difficulty, count } =
-    await request.json();
+  const parsed = await parseAiBody(request, GenerateQuestionsRequestSchema)
+  if (parsed.ok === false) return parsed.response
+  const { chunkContent, profession, examTarget, difficulty, count } = parsed.data
 
   const ai = getAIProvider();
   const prompt = questionGenerationPrompt(
     profession,
     examTarget,
     chunkContent,
-    count ?? 5,
-    difficulty ?? "medium"
+    count,
+    difficulty,
   );
 
   try {

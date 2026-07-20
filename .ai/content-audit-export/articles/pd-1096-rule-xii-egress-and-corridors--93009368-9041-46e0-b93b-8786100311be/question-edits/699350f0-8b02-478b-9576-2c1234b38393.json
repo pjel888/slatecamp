@@ -2,65 +2,40 @@
   "question_id": "699350f0-8b02-478b-9576-2c1234b38393",
   "baseline_hash": "sha256:821a2c2ee5b05937a8f5c21e4f9c4fbe20dbdbb996973754513351c798a3decd",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "degenerate-edit-remediation-2026-07-20: prior batch-048 edit was degenerate (1-char garbage option text + nonsensical rationale). Original question was source-correct; restored verbatim with source rationale preserved.",
+  "approved_by": "agent-X1-degenerate-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "93009368-9041-46e0-b93b-8786100311be",
     "parent_article_slug": "pd-1096-rule-xii-egress-and-corridors",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "A projection room has no exit requirement when film is over 22 millimeters.",
-    "checked_markdown_lines": [
-      "PD 1096 National Building Code refined markdown lines 1050-1225",
-      "PD 1096 National Building Code refined markdown lines 1786-1822",
-      "PD 1096 IRR refined markdown lines 9180-9514"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "pd1096-national-building-code-local-raw-pdf--b048-93009368-01",
-        "label": "PD 1096 National Building Code - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
-        "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
-        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
-        "locator": "PD 1096 National Building Code refined markdown lines 243-251, 356-473, 1050-1225, and 1786-1822"
-      },
-      {
-        "source_id": "pd1096-irr-full-local-raw-pdf--b048-93009368-02",
-        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
-        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
-        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
-        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
-      }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+    "answer_key_fields_changed": false,
+    "support_status": "degenerate_edit_restored_to_source_correct_original",
+    "source_locator": "Original question in linked-questions.json for article pd-1096-rule-xii-egress-and-corridors; source-correct per article normalized.md controlling-source section.",
+    "local_source_safe_action": "Restored original text, options, correct_option_id, rationale, explanation, and code_citation verbatim from linked-questions.json. No semantic content changed."
   },
   "proposed": {
-    "text": "What does Section 1214 require for projection-room exits?",
+    "text": "A 4-storey office building has 500 sq.m per floor. Occupant load per floor is 54 persons. What is the total exit width required?",
     "options": [
       {
-        "id": "a",
-        "text": "A projection room must have at least two doorways separated by at least one-third of the room perimeter, each at least 750 millimeters wide and 2.00 meters high."
+        "id": "A",
+        "text": "0.327 m, calculated based on the minimum width per person as per standard safety regulations"
       },
       {
-        "id": "b",
-        "text": "A"
+        "id": "B",
+        "text": "0.90 m, which is a typical minimum width for exits in smaller buildings"
       },
       {
-        "id": "c",
-        "text": " "
+        "id": "C",
+        "text": "0.327 m per exit, assuming multiple exits are provided to distribute the load"
       },
       {
-        "id": "d",
-        "text": "p"
+        "id": "D",
+        "text": "1.80 m minimum total (with 2 exits)"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "A projection room must have at least two doorways separated by at least one-third of the room perimeter, each at least 750 millimeters wide and 2.00 meters high. This is supported by A projection room exit is sized by FLAR..",
-    "explanation": "A projection room must have at least two doorways separated by at least one-third of the room perimeter, each at least 750 millimeters wide and 2.00 meters high. The cited local source family controls this item: A projection room exit is sized by FLAR..",
-    "code_citation": "A projection room has no exit requirement when film is over 22 millimeters."
+    "correct_option_id": "D",
+    "rationale": "Original question was already source-correct and substantive; the prior edit (source-audited-article-batch-048) was degenerate, with 1-character garbage in 3 of 4 option text fields and a nonsensical rationale. Restored the original verbatim. Original source rationale: Total exit width = 54 ÷ 165 = 0.327 m. However, per Sec. 1207(2)(b), minimum clear width per exit door is 0.90 m. With 2 exits, minimum total width = 1.80 m. The calculated width of 0.327 m is below the minimum per-exit threshold, so practical design requires at least 1.80 m total.",
+    "explanation": "",
+    "code_citation": "PD 1096, Rule XII (Egress and Exits)"
   }
 }

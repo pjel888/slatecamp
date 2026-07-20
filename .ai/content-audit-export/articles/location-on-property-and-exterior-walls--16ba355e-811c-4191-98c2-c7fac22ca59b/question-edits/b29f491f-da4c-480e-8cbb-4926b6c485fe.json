@@ -1,11 +1,45 @@
 {
   "question_id": "b29f491f-da4c-480e-8cbb-4926b6c485fe",
   "baseline_hash": "sha256:310cf07dc893b4a3754d2e66ebe4fc66d9f4b5b6869d04fbd1a81cce996ced93",
-  "reason": "Batch 008 local source audit aligned linked question b29f491f-da4c-480e-8cbb-4926b6c485fe with the repaired Location on Property and Exterior Walls article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-008",
-  "approved_at": "2026-05-10T18:13:43+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited Section 1604 travel distance to plastic-glazed openings, which is off-scope for an article limited to PD 1096 Rule VII Sec. 704 (Location on Property and Exterior Walls). Replaced with a Sec. 704-grounded question on measurement of street/alley centerline as adjacent property line.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "chunk_id": "source-pack-pd-1096-irr-chunk-0001",
+        "section_locator": "Rule VII / Section 704.1 Location on Property"
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704.1(b)"
+  },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
-    "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft."
+    "text": "For purposes of measuring distances under PD 1096 Rule VII, Section 704(1)(b), how is the adjacent property line established when a building adjoins a street or alley?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At the far edge (far side) of the street or alley right-of-way"
+      },
+      {
+        "id": "b",
+        "text": "At the centerline of the adjoining street or alley"
+      },
+      {
+        "id": "c",
+        "text": "At the near edge (face of curb) of the street or alley"
+      },
+      {
+        "id": "d",
+        "text": "At the legal lot boundary only, regardless of street or alley"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Section 704(1)(b) provides that, for purposes of this section, the centerline of an adjoining street or alley shall be considered an adjacent property line when applying the exterior-wall and opening-protection rules in Section 704.",
+    "explanation": "Do not measure only from the legal lot boundary when a street or alley is involved; Section 704 uses the centerline convention for the specific exterior-wall rules in that section.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704.1(b)"
   }
 }

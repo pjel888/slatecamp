@@ -33,11 +33,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely prohibits all junior staff work; junior architects may develop drawings under the licensed architect's direct supervision.",
-        "c": "Incorrectly requires licensing of junior staff; unlicensed junior architects can work under a licensed architect's supervision.",
-        "d": "Suggests written certification is required; the statute requires direct involvement, not additional certification documentation.",
-        "correct": "Direct supervision is satisfied when the licensed architect actively participates in design decisions, reviews work at each development phase, provides design direction, and conducts final verification. Supervision of junior architects or staff in developing drawings under an experienced architect's active guidance is a normal and proper part of architectural practice. The key is that the licensed architect maintains continuous involvement and personal responsibility.",
-        "takeaway": "Active involvement in design meetings, review at each phase, and detailed final review satisfy the direct supervision requirement."
+        "a": "The source does not prohibit staff participation; the risk is signing work outside the architect's preparation or supervision.",
+        "c": "The source does not require each staff member to be a licensed architect when the registered architect supervises the architectural documents.",
+        "d": "The checked source does not add a separate local-building-authority supervision certificate requirement.",
+        "correct": "The facts show the architect directed the work, participated in design decisions, reviewed the drawings during development, and verified the set before sealing. That pattern supports the conclusion that the documents were prepared by or under the architect's direct/immediate supervision.",
+        "takeaway": "Staff drafting is source-safe when the architect retains real professional control over the documents being signed and sealed."
       },
       "explanation": "Falsely prohibits all junior staff work; junior architects may develop drawings under the licensed architect's direct supervision. Incorrectly requires licensing of junior staff; unlicensed junior architects can work under a licensed architect's supervision. Suggests written certification is required; the statute requires direct involvement, not additional certification documentation. Direct supervision is satisfied when the licensed architect actively participates in design decisions, reviews work at each development phase, provides design direction, and conducts final verification. Supervision of junior architects or staff in developing drawings under an experienced architect's active guidance is a normal and proper part of architectural practice. The key is that the licensed architect maintains continuous involvement and personal responsibility. Active involvement in design meetings, review at each phase, and detailed final review satisfy the direct supervision requirement.",
       "code_citation": "RA 9266",
@@ -51,7 +51,7 @@
       "model_id": "ALE-PRAC-LAW-017-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-05-06T13:22:18.593054+00:00",
+      "updated_at": "2026-07-20T01:13:23.701525+00:00",
       "content_hash": "sha256:c4afedf40db83ef21d6af50521fd53b69a5a47df314dcad3f9e84a72f3c2b1ff"
     },
     {
@@ -83,11 +83,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely assumes a complaint triggers automatic presumption of violation; the architect has the right to present evidence in defense.",
-        "c": "Reverses the evidentiary presumption; documentation supports innocence, not guilt.",
-        "d": "Understates the value of documentation; strong evidence can resolve a complaint favorably for the architect.",
-        "correct": "Documentation of the architect's involvement during design development provides strong evidence supporting a claim of direct supervision. Emails directing design work, marked-up drawings showing review and feedback, and dated notes of design decisions demonstrate active participation. Such documentation significantly strengthens the architect's defense in professional discipline proceedings and helps establish that direct supervision was maintained.",
-        "takeaway": "Documented evidence of active involvement in design meetings and drawing reviews provides strong proof of direct supervision compliance."
+        "a": "The checked source requires notice and hearing for Section 23 discipline; it does not create automatic guilt on complaint filing.",
+        "c": "Documentation of participation supports supervision rather than creating a presumption of guilt.",
+        "d": "Documentation may support the defense, but it does not make the complaint process irrelevant.",
+        "correct": "Emails, meeting notes, markups, and schedules can help show that the architect supervised the work as it developed. That evidence is relevant because Section 23 turns on whether the documents were personally prepared or executed under immediate supervision.",
+        "takeaway": "Good supervision records help connect the seal to actual professional control over document preparation."
       },
       "explanation": "Falsely assumes a complaint triggers automatic presumption of violation; the architect has the right to present evidence in defense. Reverses the evidentiary presumption; documentation supports innocence, not guilt. Understates the value of documentation; strong evidence can resolve a complaint favorably for the architect. Documentation of the architect's involvement during design development provides strong evidence supporting a claim of direct supervision. Emails directing design work, marked-up drawings showing review and feedback, and dated notes of design decisions demonstrate active participation. Such documentation significantly strengthens the architect's defense in professional discipline proceedings and helps establish that direct supervision was maintained. Documented evidence of active involvement in design meetings and drawing reviews provides strong proof of direct supervision compliance.",
       "code_citation": "RA 9266",
@@ -101,14 +101,14 @@
       "model_id": "ALE-PRAC-LAW-017-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-05-06T13:22:18.897353+00:00",
+      "updated_at": "2026-07-20T01:13:23.704039+00:00",
       "content_hash": "sha256:3a2d48a95a9631a06dff6e920061e3442772b0c817610dceb510d4b71fccd876"
     },
     {
       "question_id": "02841c55-036f-4a32-8a6d-ef3fd5346e8f",
       "article_id": "16e972e5-378d-426c-9269-d716204c52de",
       "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
-      "text": "An architect received substantially complete architectural drawings prepared by a design consultant. The architect made three minor dimensional adjustments, reviewed the drawings for approximately two hours, and signed them. Does this action satisfy the direct supervision requirement of RA 9266 Section 23?",
+      "text": "An architect received substantially complete architectural drawings prepared by a design consultant. The architect made three minor dimensional adjustments, reviewed the drawings for approximately two hours, and signed them. Does this satisfy the immediate supervision requirement tied to RA 9266 IRR Section 23?",
       "options": [
         {
           "id": "a",
@@ -133,11 +133,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Treats minor edits as the controlling factor; edits alone do not demonstrate direct involvement in design development.",
-        "b": "Suggests time-based review suffices; two hours is clearly inadequate for thorough technical and code compliance verification.",
-        "d": "Focuses on irrelevant qualifications; the issue is whether the architect directly supervised the actual work.",
-        "correct": "Direct supervision requires active involvement in the design process from concept through completion, not merely making minor edits to substantially complete work prepared by others. Two hours of review of architectural drawings is insufficient to verify accuracy, code compliance, and completeness. The architect has not exercised the care required and has likely violated the direct supervision requirement.",
-        "takeaway": "Minor edits and brief review of substantially complete work do not satisfy the direct supervision requirement for signing documents."
+        "a": "Minor edits do not prove the architect personally prepared the work or supervised its preparation.",
+        "b": "The checked source does not create a time-based safe harbor for review before signing.",
+        "d": "The consultant's qualifications do not substitute for the signing architect's own preparation or immediate supervision.",
+        "correct": "Section 23 identifies discipline exposure for signing and sealing work not personally prepared or not executed under immediate supervision. Minor late changes to substantially complete work prepared elsewhere do not show that the signing architect supervised the work as it was executed.",
+        "takeaway": "Minor edits and brief final review are not a substitute for immediate supervision of the work being signed."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -151,14 +151,14 @@
       "model_id": "ALE-PRAC-LAW-017-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.704920+00:00",
       "content_hash": "sha256:8796fff91164ea159f1ea91c20b678dc41ec1abb056f623aa2b3625f2153ce9c"
     },
     {
       "question_id": "22e6b69c-204d-43d4-9397-33c543381d33",
       "article_id": "16e972e5-378d-426c-9269-d716204c52de",
       "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
-      "text": "What does 'direct supervision' mean in the context of RA 9266 Section 23?",
+      "text": "What does immediate or direct supervision mean for signing and sealing under RA 9266 IRR Sections 20 and 23?",
       "options": [
         {
           "id": "a",
@@ -183,11 +183,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Treats final review as equivalent to direct supervision; the statute requires continuous involvement during development.",
-        "c": "Confuses project management functions with design supervision; budget and schedule approval are not design supervision.",
-        "d": "Treats a single owner meeting as sufficient supervision; direct supervision requires involvement throughout design development.",
-        "correct": "Direct supervision requires active, continuous involvement of the architect in the design process from concept through completion of construction documents. The architect must participate in design decisions, review drawings as they develop, provide feedback and direction, and personally verify accuracy before signing. Simply receiving completed drawings does not constitute direct supervision.",
-        "takeaway": "Direct supervision requires the architect's active, continuous involvement in design decisions and drawing development, not just final review."
+        "a": "Final review of completed drawings is not the same as work prepared under the architect's direct or immediate supervision.",
+        "c": "Budget and schedule approval do not show supervision of the architectural documents being signed and sealed.",
+        "d": "A single owner meeting does not show supervision of the preparation of the documents.",
+        "correct": "RA 9266 IRR uses direct supervision in Section 20 and immediate supervision in Section 23. For exam purposes, the signing architect must be able to connect the signed documents to the architect's own preparation or supervision while the work was being prepared, not merely to a last-minute review.",
+        "takeaway": "The safe exam answer looks for actual supervision of document preparation before signing and sealing."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -201,30 +201,30 @@
       "model_id": "ALE-PRAC-LAW-017-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.702369+00:00",
       "content_hash": "sha256:33c8728d9c9778258db81c0ca0e0d016453e229b2a921196d16e5955028ed5f2"
     },
     {
       "question_id": "47298cc0-16d5-432f-9fef-5a5b99325b4d",
       "article_id": "16e972e5-378d-426c-9269-d716204c52de",
       "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
-      "text": "What is the consequence under RA 9266 Section 20(e) if an architect signs architectural plans not prepared by the architect or not prepared under the architect's direct supervision?",
+      "text": "What is the disciplinary consequence under RA 9266 IRR Section 23 if an architect signs and seals architectural plans not personally prepared by the architect or not executed under the architect's immediate supervision?",
       "options": [
         {
           "id": "a",
-          "text": "fine of PHP 10,000, which serves as a financial penalty for non-compliance with professional standards"
+          "text": "Only an office correction, because sealing is a clerical step"
         },
         {
           "id": "b",
-          "text": "Loss of professional liability insurance, which impacts the architect's ability to practice safely and legally"
+          "text": "Automatic cancellation of the building permit, which RA 9266 IRR Section 23 does not state"
         },
         {
           "id": "c",
-          "text": "Grounds for suspension or revocation of the architect's Certificate of Registration"
+          "text": "Grounds for suspension or revocation of the Certificate of Registration or Professional Identification Card after notice and hearing"
         },
         {
           "id": "d",
-          "text": "Automatic requirement to hire a consultant to review the work, ensuring compliance with professional standards"
+          "text": "Mandatory hiring of a consulting architect before the Board may consider discipline"
         }
       ],
       "correct_option_id": "c",
@@ -233,11 +233,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Understates the consequence; the statute provides for license suspension or revocation, far more serious than a mere fine.",
-        "b": "Addresses insurance consequences, not disciplinary ones; insurance may lapse due to professional discipline, but discipline is the primary consequence.",
-        "d": "Invents a remedial requirement; RA 9266 Section 20(e) provides for discipline, not corrective measures.",
-        "correct": "RA 9266 Section 20(e) specifies that signing or sealing plans not prepared by the architect or under direct supervision is grounds for suspension or revocation of the architect's license. This is a serious professional discipline consequence affecting the architect's right to practice.",
-        "takeaway": "Signing plans without direct supervision is grounds for license suspension or revocation—a serious disciplinary consequence."
+        "a": "Treats the seal as clerical; RA 9266 IRR treats signing and sealing as an accountability act.",
+        "b": "Adds an automatic permit consequence not stated in the checked RA 9266 IRR source.",
+        "d": "Invents a required corrective step not stated in the checked source.",
+        "correct": "RA 9266 IRR Section 23 gives the Board power, after notice and hearing, to suspend or revoke the Certificate of Registration or Professional Identification Card when an architect signs and affixes, or permits the signing or affixing of, the architect's name or seal on work not personally prepared or not executed under immediate supervision.",
+        "takeaway": "Keep the consequence tied to Section 23: suspension or revocation exposure after notice and hearing."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -251,30 +251,30 @@
       "model_id": "ALE-PRAC-LAW-017-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.706534+00:00",
       "content_hash": "sha256:6570695670e1096aed51a7eaf7e0e985f6417be72480a8c2d9077f57bf2a63bd"
     },
     {
       "question_id": "dbf369e5-5866-4bf1-92f9-c989c72357b8",
       "article_id": "16e972e5-378d-426c-9269-d716204c52de",
       "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
-      "text": "How does the direct supervision requirement affect coordination between the architect and specialist engineers (structural, mechanical, electrical, sanitary)?",
+      "text": "How does the signing and sealing rule affect coordination between architectural documents and specialist discipline documents?",
       "options": [
         {
           "id": "a",
-          "text": "The architect need not be concerned with specialist drawings; each professional is independently responsible for their own documents, which is not the case in practice"
+          "text": "The architect should sign and seal all specialist documents to unify the package"
         },
         {
           "id": "b",
-          "text": "The architect is responsible for direct supervision of all specialist drawings in the contract document package, ensuring all elements are coordinated"
+          "text": "The architect has no need to coordinate specialist work with the architectural documents"
         },
         {
           "id": "c",
-          "text": "The architect, as lead designer, must verify that specialist work coordinates with architectural design and should refuse to proceed if unresolved conflicts exist"
+          "text": "The architect should coordinate conflicts affecting the architectural design while each professional remains responsible for documents within that professional's own signing and sealing scope"
         },
         {
           "id": "d",
-          "text": "Coordination is required only if the architect also supervises construction of the specialist work, which is a limited view of the architect's role"
+          "text": "The contractor alone resolves all discipline conflicts after construction starts"
         }
       ],
       "correct_option_id": "c",
@@ -283,11 +283,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely isolates the architect from coordination responsibility; the architect as lead designer has coordination oversight.",
-        "b": "Overstates the architect's role; the architect does not directly supervise specialist drawings; each engineer directly supervises their own.",
-        "d": "Conditions coordination on construction supervision; coordination is required during design, not dependent on construction roles.",
-        "correct": "While each professional (structural, mechanical, electrical, sanitary engineer) is responsible for direct supervision of their own documents, the architect as lead designer must verify that specialist work integrates with the architectural design. If conflicts between the architect's design and specialist designs are not resolved before signing, the architect cannot ethically sign knowing coordination problems exist. The architect's responsibility includes ensuring coordination, though each specialist bears responsibility for their own documents' accuracy and compliance.",
-        "takeaway": "The architect must ensure specialist work coordinates with architectural design and should refuse to sign if unresolved conflicts exist."
+        "a": "Overextends the architect's seal beyond architectural documents and into other professionals' signing scopes.",
+        "b": "Ignores the architect's responsibility for the architectural documents and their coordination within the project set.",
+        "d": "Improperly postpones document coordination to construction and shifts it to the contractor.",
+        "correct": "RA 9266 IRR Section 32 limits the architect-of-record responsibility to architectural documents and states that liability does not extend to other signing professionals unless they are under the architect's direct employ. The source-safe coordination answer is to resolve architectural conflicts while respecting each professional's own sealing scope.",
+        "takeaway": "Coordinate the architectural set, but do not sign or assume another discipline's sealed documents."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -301,14 +301,14 @@
       "model_id": "ALE-PRAC-LAW-017-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.703204+00:00",
       "content_hash": "sha256:168c0bd7815eb29865689a270cf4bdf4773671fb001160a539b561f1e15a68a9"
     },
     {
       "question_id": "dd8040c1-44b2-4bf3-b907-a55195638c7e",
       "article_id": "16e972e5-378d-426c-9269-d716204c52de",
       "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
-      "text": "An architect signed and selead architectural drawings prepared by a consulting firm, making only minor modifications to adapt the design to a different site. Later, construction defects occurred because the building was not properly designed for the different site conditions. What is the architect's liability?",
+      "text": "An architect signed and sealed architectural drawings prepared by a consulting firm, making only minor modifications to adapt the design to a different site. Later, construction problems occurred because the building was not properly adapted for the site. What is the architect's signing/sealing exposure?",
       "options": [
         {
           "id": "a",
@@ -333,11 +333,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely exonerates the signing architect; the seal certifies personal responsibility regardless of original authorship.",
-        "c": "Creates illusory partial liability; the seal certifies responsibility for the entire document.",
-        "d": "Conditions liability on whether modifications were adequate; the architect is liable for the entire document once signed.",
-        "correct": "When an architect signs and seals a document, the architect assumes full responsibility for its accuracy and appropriateness, regardless of who prepared it. The signature certifies that the architect has verified the work and is willing to assume professional liability. Making minor modifications does not transfer responsibility to the original designer. The architect is liable for any deficiencies in the entire document.",
-        "takeaway": "The architect who seals a document assumes full responsibility for all of it, not just the portions the architect personally modified."
+        "a": "Signing and sealing the set prevents the architect from treating the consultant's authorship as a complete shield.",
+        "c": "Section 20 and Section 32 tie responsibility to architectural documents issued under the architect's seal or authorized signature, not only to visible minor edits.",
+        "d": "The checked source does not shift the burden to the consulting firm as the condition for the signing architect's exposure.",
+        "correct": "RA 9266 IRR Section 20 and Section 32 tie responsibility to architectural documents issued under the architect's seal or authorized signature. Section 23 adds discipline exposure if the documents were not personally prepared or executed under immediate supervision.",
+        "takeaway": "A seal on borrowed drawings carries real responsibility; minor adaptation does not erase Section 23 exposure."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -351,7 +351,7 @@
       "model_id": "ALE-PRAC-LAW-017-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.707282+00:00",
       "content_hash": "sha256:3a2addd22d74eedc8556ba95db0bd661c582631c5fcbbfff895b243609d21a23"
     },
     {
@@ -383,11 +383,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Treats final review and signing as the controlling factors; direct supervision requires continuous involvement before the review.",
-        "c": "Confuses drafter competence with the architect's direct involvement; competence does not replace the architect's required supervision.",
-        "d": "Focuses on irrelevant drafter qualifications; the issue is whether the architect maintained active involvement in design development.",
-        "correct": "Direct supervision requires active involvement in the design process from concept through completion, not merely final review before signing. An architect who delegates design work to drafters without participating in design decisions and without continuous oversight during drawing development has not maintained direct supervision. The compressed review schedule (several hours on the day before bid) cannot substitute for active involvement throughout the design development process.",
-        "takeaway": "Last-minute review before signing, regardless of duration, does not satisfy the direct supervision requirement without active involvement throughout development."
+        "a": "Final review and signing do not prove direct or immediate supervision while the drawings were prepared.",
+        "c": "Drafter competence does not replace the architect's required supervision of the architectural documents.",
+        "d": "The checked source does not turn drafter training into the standard for signing and sealing compliance.",
+        "correct": "The architect delegated drawing preparation but did not personally develop the design or review the drawings until the day before bidding. That fact pattern does not show documents prepared by or under direct/immediate supervision before signing.",
+        "takeaway": "A last-minute review cannot repair the absence of supervision during document preparation."
       },
       "explanation": "Treats final review and signing as the controlling factors; direct supervision requires continuous involvement before the review. Confuses drafter competence with the architect's direct involvement; competence does not replace the architect's required supervision. Focuses on irrelevant drafter qualifications; the issue is whether the architect maintained active involvement in design development. Direct supervision requires active involvement in the design process from concept through completion, not merely final review before signing. An architect who delegates design work to drafters without participating in design decisions and without continuous oversight during drawing development has not maintained direct supervision. The compressed review schedule (several hours on the day before bid) cannot substitute for active involvement throughout the design development process. Last-minute review before signing, regardless of duration, does not satisfy the direct supervision requirement without active involvement throughout development.",
       "code_citation": "RA 9266",
@@ -401,7 +401,7 @@
       "model_id": "ALE-PRAC-LAW-017-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-05-06T13:22:18.748346+00:00",
+      "updated_at": "2026-07-20T01:13:23.705732+00:00",
       "content_hash": "sha256:95833a4015192cdfe031256fd76dcb6d7910b5d97f4bf9e189db87c8ceebb605"
     },
     {
@@ -433,11 +433,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely shields the architect from discipline based on policy; the substance of the review matters, not the mere existence of a policy.",
-        "b": "Assumes the formal process absolves responsibility; the process helps but does not excuse obvious missed violations.",
-        "d": "Creates false liability protection; the architect is responsible regardless of whether others also reviewed the documents.",
-        "correct": "While formal review policies and documentation support a claim of reasonable diligence, they do not eliminate professional responsibility if the review was inadequate or if obvious deficiencies were missed. A reasonable architect should catch obvious building code violations during careful review. The existence of a review process does not excuse liability if the review was not thorough or if obvious errors were overlooked. The architect remains responsible for the accuracy of signed documents.",
-        "takeaway": "Formal review policies help document diligence, but do not excuse missing obvious code violations that a reasonable architect should have caught."
+        "a": "A firm checklist does not replace the architect's responsibility for documents issued under the architect's seal or authorized signature.",
+        "b": "A formal process may help document diligence, but it does not by itself answer whether the sealed work was properly prepared or supervised.",
+        "d": "Responsibility does not disappear because no one else reviewed the drawings.",
+        "correct": "The architect remains responsible for architectural documents issued under the architect's seal or authorized signature. A review checklist may be evidence of diligence, but it does not remove exposure if the signed documents show inadequate preparation, supervision, or review.",
+        "takeaway": "Process documentation helps, but the sealed architectural documents still carry the architect's responsibility."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -451,7 +451,7 @@
       "model_id": "ALE-PRAC-LAW-017-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.700571+00:00",
       "content_hash": "sha256:b11c1ae0a7a070d342e90d07f2cd0ef712749de1d87589a84a180dcee824b8f3"
     },
     {
@@ -483,11 +483,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely exempts subtle violations; reasonable professional care includes catching violations that careful review would reveal.",
-        "c": "Falsely separates liability from discipline; both civil liability and professional discipline can result from inadequate review.",
-        "d": "Treats timing of discovery as a defense; the architect's signing constitutes certification at that time, not at construction.",
-        "correct": "When an architect signs documents, the architect certifies that they have been reviewed and are code-compliant. If a code violation should have been discovered through reasonable, careful review by a competent professional, the architect may face professional discipline and civil liability. The subtlety of the violation is relevant to determining whether it was a reasonable oversight or demonstrates inadequate review, but does not eliminate professional responsibility.",
-        "takeaway": "An architect who signs documents is liable for code violations that a reasonable, careful review should have discovered."
+        "a": "The subtlety of an issue may affect the factual assessment, but it does not erase responsibility for sealed documents.",
+        "c": "Professional discipline is not limited to owner lawsuits; Section 23 identifies Board discipline exposure after notice and hearing.",
+        "d": "Discovery during construction does not by itself erase the accountability attached to signing and sealing.",
+        "correct": "The architect may face responsibility if the signed documents were not personally prepared, not immediately supervised, or were issued under the architect's seal without adequate professional control. The question is not when the issue was discovered, but whether the architect's signing and sealing were supported by proper preparation, supervision, and review.",
+        "takeaway": "The seal makes the architect accountable for the architectural documents issued under that seal."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -501,7 +501,7 @@
       "model_id": "ALE-PRAC-LAW-017-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.698557+00:00",
       "content_hash": "sha256:af5817e5f71dba776f5d8fa853f7251f6ef38ae1f02b62c38ea2a60e0607bffa"
     }
   ]

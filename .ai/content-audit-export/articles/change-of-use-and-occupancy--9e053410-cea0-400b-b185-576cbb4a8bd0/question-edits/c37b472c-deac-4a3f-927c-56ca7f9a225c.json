@@ -2,9 +2,9 @@
   "question_id": "c37b472c-deac-4a3f-927c-56ca7f9a225c",
   "baseline_hash": "sha256:04ceed1cfb7d5b9364e37f3a09257547d3e7fac7897a504f3b6fd56549d73c88",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "Which occupancy group under Section 701 covers accessory uses such as private garages, carports, sheds, fences over 1.80 meters, tanks, and towers?",
+    "text": "What is the specific NBC form number used to initiate a formal change of use or occupancy application under PD 1096?",
     "options": [
       {
         "id": "a",
-        "text": "Group J covers accessory occupancies."
+        "text": "NBC Form No. B-05 — Application for Building Permit"
       },
       {
         "id": "b",
-        "text": "G"
+        "text": "NBC Form No. B-12 — Application for Change of Use or Occupancy"
       },
       {
         "id": "c",
-        "text": "r"
+        "text": "NBC Form No. B-09 — Certificate of Completion and Occupancy"
       },
       {
         "id": "d",
-        "text": "o"
+        "text": "NBC Form No. B-17 — Application for Demolition Permit"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Group J covers accessory occupancies. This is supported by Group F covers all carports regardless of use..",
-    "explanation": "Group J covers accessory occupancies. The cited local source family controls this item: Group F covers all carports regardless of use..",
-    "code_citation": "Group D covers all private garages."
+    "correct_option_id": "b",
+    "rationale": "The official form for initiating a change of use or occupancy application is NBC Form No. B-12. This is a distinct form from the standard building permit application (B-05) and is specific to occupancy reclassification requests. Submitting the wrong form does not initiate the proper review process under Sec. 702.",
+    "explanation": "NBC Form B-12 is the entry point for all change-of-use applications. Knowing form numbers is a direct recall item in LEA examinations. B-12 → Change of Use; B-05 → Building Permit; B-09 → CO application.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702; NBC Form B-12"
   }
 }

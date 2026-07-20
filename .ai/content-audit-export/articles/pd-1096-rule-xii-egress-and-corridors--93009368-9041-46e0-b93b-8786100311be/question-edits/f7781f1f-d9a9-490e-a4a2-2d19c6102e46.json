@@ -2,65 +2,40 @@
   "question_id": "f7781f1f-d9a9-490e-a4a2-2d19c6102e46",
   "baseline_hash": "sha256:a081af99290e4549e872c07af2e4ce96b4d44b7ec52b17aecda771e6d0c938aa",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "degenerate-edit-remediation-2026-07-20: prior batch-048 edit was degenerate (1-char garbage option text + nonsensical rationale). Original question was source-correct; restored verbatim with source rationale preserved.",
+  "approved_by": "agent-X1-degenerate-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "93009368-9041-46e0-b93b-8786100311be",
     "parent_article_slug": "pd-1096-rule-xii-egress-and-corridors",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "The installed exit door must leave a 30-meter FLAR bonus.",
-    "checked_markdown_lines": [
-      "PD 1096 National Building Code refined markdown lines 1050-1225",
-      "PD 1096 National Building Code refined markdown lines 1786-1822",
-      "PD 1096 IRR refined markdown lines 9180-9514"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "pd1096-national-building-code-local-raw-pdf--b048-93009368-01",
-        "label": "PD 1096 National Building Code - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
-        "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
-        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
-        "locator": "PD 1096 National Building Code refined markdown lines 243-251, 356-473, 1050-1225, and 1786-1822"
-      },
-      {
-        "source_id": "pd1096-irr-full-local-raw-pdf--b048-93009368-02",
-        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
-        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
-        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
-        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
-      }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+    "answer_key_fields_changed": false,
+    "support_status": "degenerate_edit_restored_to_source_correct_original",
+    "source_locator": "Original question in linked-questions.json for article pd-1096-rule-xii-egress-and-corridors; source-correct per article normalized.md controlling-source section.",
+    "local_source_safe_action": "Restored original text, options, correct_option_id, rationale, explanation, and code_citation verbatim from linked-questions.json. No semantic content changed."
   },
   "proposed": {
-    "text": "What clear exitway width must remain when an exit door is installed?",
+    "text": "Under PD 1096 Rule XII, Sec. 1204, when must an exit door swing outward in the direction of exit travel?",
     "options": [
       {
         "id": "a",
-        "text": "The installed exit door must leave a clear exitway width of at least 700 millimeters."
+        "text": "Whenever the room serves more than 10 occupants regardless of occupancy type or storey"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "Whenever the occupant load served by the door is 50 or more persons"
       },
       {
         "id": "c",
-        "text": "h"
+        "text": "Only when the door opens directly onto a public street or exterior sidewalk"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "Only for assembly and institutional occupancies; offices and storage are exempted"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The installed exit door must leave a clear exitway width of at least 700 millimeters. This is supported by The installed exit door must leave no more than one wet standpipe..",
-    "explanation": "The installed exit door must leave a clear exitway width of at least 700 millimeters. The cited local source family controls this item: The installed exit door must leave no more than one wet standpipe..",
-    "code_citation": "The installed exit door must leave a 30-meter FLAR bonus."
+    "correct_option_id": "b",
+    "rationale": "Original question was already source-correct and substantive; the prior edit (source-audited-article-batch-048) was degenerate, with 1-character garbage in 3 of 4 option text fields and a nonsensical rationale. Restored the original verbatim. Original source rationale: Sec. 1204 requires exit doors to swing outward (in the direction of exit travel) when serving an occupant load of 50 or more persons. Below 50 persons inward swinging is permitted. The 50-person threshold applies universally — it is not limited to assembly or institutional uses.",
+    "explanation": "The outward-swing rule at 50 persons prevents crowd crush against a door that would swing into a crowd. The threshold is 50 — not 10, not 100. Any answer suggesting occupancy-type restrictions is incorrect.",
+    "code_citation": "PD 1096, Rule XII, Sec. 1204"
   }
 }

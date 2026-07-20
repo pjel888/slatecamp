@@ -8,38 +8,31 @@
       "question_id": "618bb5ae-8a21-498f-bc5a-20389b93aa98",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "How many phases comprise the Regular Design Services under SPP 202?",
+      "text": "Which sequence matches the regular design service phases described in SPP Document 202?",
       "options": [
         {
           "id": "a",
-          "text": "4 phases"
+          "text": "Schematic Design, Design Development, Contract Documents, Bidding/Negotiation, and Construction only"
         },
         {
           "id": "b",
-          "text": "5 phases"
+          "text": "Project Definition, Schematic Design, Design Development, Contract Documents, Bidding/Negotiation, and Construction Phase"
         },
         {
           "id": "c",
-          "text": "6 phases"
+          "text": "Pre-Design, Design, Build, Operate, and Post-Occupancy"
         },
         {
           "id": "d",
-          "text": "7 phases"
+          "text": "Consultation, Site Selection, Space Management, Value Management, and Promotional Services"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "4 phases is too few. SPP 202 has a more detailed phasing structure.",
-        "b": "5 phases is incorrect. SPP 202 specifies 6 distinct phases.",
-        "c": "Correct. SPP 202 defines 6 phases: (1) Schematic Design, (2) Design Development, (3) Contract Documents, (4) Bidding/Negotiation, (5) Construction, and (6) Post-Construction.",
-        "d": "7 phases is too many. The SPP 202 structure has exactly 6 phases.",
-        "correct": "Regular Design Services under SPP 202 consist of 6 phases: Schematic Design, Design Development, Contract Documents, Bidding/Negotiation, Construction Phase Services, and Post-Construction Phase Services.",
-        "takeaway": "SPP 202 has 6 phases: SD, DD, CD, Bidding, Construction, Post-Construction."
-      },
+      "rationale": "SPP 202 lists Project Definition first, then Schematic Design, Design Development, Contract Document, Bidding/Negotiation, and Construction Phase services.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "remember",
@@ -52,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.719605+00:00",
       "content_hash": "sha256:b7cf964001d62b1405ef49140d5ad3fdfcc4d3145c3eacbe5cf8a66c759d5617"
     },
     {
       "question_id": "33e502b9-c4a4-4c7f-9cb4-569aabe2ca65",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Under SPP 202, when the Contract Documents Phase represents 90% of the total work, how much of the design fee is the architect entitled to at that point?",
+      "text": "In SPP 202 work-suspended-or-abandoned wording, once the architect has prepared the plans, specifications, and other building construction documents, that completed work is equivalent to what share of the architect's work?",
       "options": [
         {
           "id": "a",
-          "text": "75% of the total fee"
+          "text": "35% of the architect's work"
         },
         {
           "id": "b",
-          "text": "80% of the total fee"
+          "text": "85% of the architect's work"
         },
         {
           "id": "c",
-          "text": "85% of the total fee"
+          "text": "90% of the architect's work"
         },
         {
           "id": "d",
-          "text": "90% of the total fee"
+          "text": "100% of the architect's work"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "75% is incorrect. The fee entitlement corresponds proportionally to the work completed.",
-        "b": "80% is incorrect. SPP 202 ties fee entitlement to the percentage of work completed.",
-        "c": "85% is incorrect. The principle under SPP 202 is direct proportionality.",
-        "d": "Correct. When the Contract Documents phase represents 90% of the total architectural work, the architect is entitled to 90% of the total design fee at that milestone.",
-        "correct": "Under SPP 202, fee entitlement is proportional to work completed. Since the Contract Documents phase represents 90% of the total architectural work, the architect is entitled to 90% of the total design fee upon completion of this phase.",
-        "takeaway": "Contract Documents = 90% of work = 90% of fee entitlement."
-      },
+      "rationale": "SPP 202 states that when the detailed design and contract documents are prepared, that phase is equivalent to ninety percent of the architect's work in the abandonment context.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "understand",
@@ -103,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.714779+00:00",
       "content_hash": "sha256:764c4c683600a73bbf5f4bfd52fefdb49d23c445eaa2e2928bf5381e344e94bf"
     },
     {
       "question_id": "9fdc08e5-ef3f-46ac-a3a4-4741b3d7e63e",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "What is the minimum design fee percentage for Group 4 (Residences) under SPP 202?",
+      "text": "Which project type belongs to SPP 202 Group 4 in the checked local source?",
       "options": [
         {
           "id": "a",
-          "text": "7% of PCC"
+          "text": "Airports, ports, hospitals, hotels, theaters, and similar complex facilities"
         },
         {
           "id": "b",
-          "text": "8% of PCC"
+          "text": "Residences, small apartment houses, and townhouses"
         },
         {
           "id": "c",
-          "text": "10% of PCC"
+          "text": "Built-in components, special fittings, screens, counters, and architectural interiors"
         },
         {
           "id": "d",
-          "text": "12% of PCC"
+          "text": "Alterations, renovations, rehabilitations, retrofit, and expansion to existing Groups 1 to 5 buildings"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "7% applies to simpler building groups, not residences which require more detailed design.",
-        "b": "8% is incorrect for Group 4. Residences command a higher fee due to their design complexity and customization.",
-        "c": "Correct. Group 4 (Residences) has a minimum design fee of 10% of PCC, reflecting the intensive, personalized design attention residences require.",
-        "d": "12% is incorrect for Group 4. While some specialized buildings may reach this rate, residences are at 10%.",
-        "correct": "Group 4 (Residences) under SPP 202 carries a minimum design fee of 10% of PCC. Residences command a higher percentage than commercial buildings because of the individualized design, multiple custom details, and intensive client interaction required.",
-        "takeaway": "Group 4 (Residences) fee = 10% of PCC."
-      },
+      "rationale": "The checked SPP 202 source identifies Group 4 as residences, small apartment houses, and townhouses.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "remember",
@@ -154,30 +133,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.718228+00:00",
       "content_hash": "sha256:5eef75089b1f45aa7dab8bde365af459d756bd7b8310adaf6b7d5ba79f071cc3"
     },
     {
       "question_id": "389d47a6-4100-4b1e-aaa2-3784b2911d3a",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Under SPP 202, what is the fee rate for Group 9 (Alterations, Renovations, and Additions)?",
+      "text": "Which work belongs to SPP 202 Group 9 in the checked local source?",
       "options": [
         {
           "id": "a",
-          "text": "Same rate as the applicable Group 1-5 category"
+          "text": "New residences and townhouses"
         },
         {
           "id": "b",
-          "text": "125% of the applicable Group 1-5 rate"
+          "text": "Projects involving extensive built-in detail, special fittings, or architectural interiors"
         },
         {
           "id": "c",
-          "text": "150% of the applicable Group 1-5 rate"
+          "text": "Alterations, renovations, rehabilitations, retrofit, and expansion/additions to existing Groups 1 to 5 buildings"
         },
         {
           "id": "d",
-          "text": "200% of the applicable Group 1-5 rate"
+          "text": "Technical opinions, advice, clarifications, or explanations on architectural works"
         }
       ],
       "correct_option_id": "c",
@@ -185,14 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The same rate is insufficient because alterations involve additional complexity of working within existing structures.",
-        "b": "125% is incorrect. The premium for alteration work is higher than 25% above base rate.",
-        "c": "Correct. Group 9 (Alterations) fee is 150% of the applicable Group 1-5 rate, reflecting the added complexity of working within existing buildings.",
-        "d": "200% is too high. While alterations are complex, the SPP sets the premium at 150%, not double.",
-        "correct": "Group 9 (Alterations, Renovations, and Additions) carries a fee of 150% of the applicable Group 1-5 rate. The 50% premium recognizes the additional complexity of surveying existing conditions, working around occupied spaces, and integrating new work with old.",
-        "takeaway": "Group 9 (Alterations) = 150% of the applicable Group 1-5 rate."
-      },
+      "rationale": "The checked SPP 202 source defines Group 9 as alterations, renovations, rehabilitations, retrofit, and expansion/additions to existing buildings belonging to Groups 1 to 5.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "apply",
@@ -205,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.715679+00:00",
       "content_hash": "sha256:7f376cfa7542728baf2fd1e801f49a8f65519ffedd646aba0fe56dacd344030b"
     },
     {
       "question_id": "214ce588-337e-45fe-ab73-763e5de08118",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "What is the minimum fee percentage for Group 8 (Buildings Requiring Extensive Detail) under SPP 202?",
+      "text": "What characterizes SPP 202 Group 8 in the checked local source?",
       "options": [
         {
           "id": "a",
-          "text": "10% of PCC"
+          "text": "Projects involving extensive detail such as built-in components, equipment, special fittings, screens, counters, interiors, and development planning/design"
         },
         {
           "id": "b",
-          "text": "12% of PCC"
+          "text": "Small apartment houses and townhouses"
         },
         {
           "id": "c",
-          "text": "15% of PCC"
+          "text": "Projects where the same drawings are reused for repetitive similar buildings"
         },
         {
           "id": "d",
-          "text": "18% of PCC"
+          "text": "Opinions and advice on technical matters pertaining to architectural works"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "10% applies to Group 4 (Residences), not Group 8.",
-        "b": "12% is incorrect. Group 8 buildings requiring extensive detail have a higher fee rate.",
-        "c": "Correct. Group 8 (Buildings Requiring Extensive Detail) has a minimum fee of 15% of PCC, the highest standard group rate in SPP 202.",
-        "d": "18% exceeds the SPP 202 specification for Group 8. While negotiable, the minimum is 15%.",
-        "correct": "Group 8 (Buildings Requiring Extensive Detail) carries the highest standard group rate at 15% of PCC. This applies to buildings like museums, theaters, and laboratories that require exceptionally detailed and specialized architectural work.",
-        "takeaway": "Group 8 (Extensive Detail buildings) = 15% of PCC — highest group rate."
-      },
+      "rationale": "The checked SPP 202 source describes Group 8 as projects involving extensive detail, including built-in elements, equipment, special fittings, screens, counters, architectural interiors, and development planning/design.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "remember",
@@ -256,30 +221,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.720948+00:00",
       "content_hash": "sha256:78636a61f734431097912a2d0c3e22384586fa902708a9ab2611c6543af35d21"
     },
     {
       "question_id": "2e790ee6-a6a0-4c9a-a545-6379492a35f3",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "How many sets of construction drawings are required for a building permit application under SPP 202?",
+      "text": "Under SPP 202, how many sets of construction drawings and technical specifications does the architect submit to the Owner for building permit purposes?",
       "options": [
         {
           "id": "a",
-          "text": "5 sets"
+          "text": "Five sets"
         },
         {
           "id": "b",
-          "text": "6 sets"
+          "text": "Six sets"
         },
         {
           "id": "c",
-          "text": "7 sets"
+          "text": "Seven sets"
         },
         {
           "id": "d",
-          "text": "8 sets"
+          "text": "Eight sets"
         }
       ],
       "correct_option_id": "c",
@@ -287,14 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5 sets is insufficient for a building permit application under SPP 202.",
-        "b": "6 sets is incorrect. SPP 202 specifies a higher number.",
-        "c": "Correct. SPP 202 requires 7 sets of construction drawings for a building permit application.",
-        "d": "8 sets exceeds the SPP 202 requirement for building permit drawings.",
-        "correct": "SPP 202 requires the architect to prepare 7 sets of construction drawings for building permit application. These sets are distributed among various reviewing agencies and the owner.",
-        "takeaway": "Building permit requires 7 sets of construction drawings."
-      },
+      "rationale": "SPP 202 states that the architect submits seven sets of all construction drawings and technical specifications for building permit purposes.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "remember",
@@ -307,22 +265,22 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.713386+00:00",
       "content_hash": "sha256:489ed6d621d932fbe7f799ed72f04e60250c4811c7d52893cb73893f55cb7afa"
     },
     {
       "question_id": "77a5ab14-e2ec-4d15-85d7-a4a8ce240227",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Under SPP 202, through whom must the Owner communicate instructions to the contractor?",
+      "text": "Under SPP 202 owner responsibilities, through whom should the Owner issue orders to the General Contractor?",
       "options": [
         {
           "id": "a",
-          "text": "Directly to the contractor"
+          "text": "Directly to the General Contractor"
         },
         {
           "id": "b",
-          "text": "Through the project manager"
+          "text": "Through the local government building official"
         },
         {
           "id": "c",
@@ -330,7 +288,7 @@
         },
         {
           "id": "d",
-          "text": "Through the construction manager"
+          "text": "Through the supplier with the largest contract amount"
         }
       ],
       "correct_option_id": "c",
@@ -338,14 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Direct owner-to-contractor communication bypasses the architect's authority and is not permitted under SPP 202.",
-        "b": "The project manager route applies under SPP 206 (CAS), not as the standard under SPP 202.",
-        "c": "Correct. Under SPP 202, all Owner instructions to the contractor must flow through the Architect, preserving the architect's authority over design intent and construction quality.",
-        "d": "The construction manager route applies under SPP 204-B, not as the standard under SPP 202.",
-        "correct": "SPP 202 establishes that all Owner orders and instructions to the contractor must flow through the Architect. This ensures the architect maintains authority over design intent, construction quality, and contract administration.",
-        "takeaway": "Owner orders to contractor must flow through the Architect under SPP 202."
-      },
+      "rationale": "The checked SPP 202 owner-responsibility text says the Owner should issue orders to the General Contractor only through the Architect.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "understand",
@@ -358,30 +309,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.718930+00:00",
       "content_hash": "sha256:c4bc65b6b62465a519cfb70e8f8edcee28848fb4fb12833c9cc4b317c76b6128"
     },
     {
       "question_id": "2b52b921-0fbb-4b41-9ae9-26147cb2b421",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Under SPP 202, what radial distance from the architect's office triggers per diem travel compensation?",
+      "text": "Under SPP 202, per diem plus travel and living expenses become chargeable when services are required beyond what radial distance from the architect's established office?",
       "options": [
         {
           "id": "a",
-          "text": "25 km"
+          "text": "25.0 kilometers"
         },
         {
           "id": "b",
-          "text": "50 km"
+          "text": "50.0 kilometers"
         },
         {
           "id": "c",
-          "text": "75 km"
+          "text": "75.0 kilometers"
         },
         {
           "id": "d",
-          "text": "100 km"
+          "text": "100.0 kilometers"
         }
       ],
       "correct_option_id": "b",
@@ -389,14 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "25 km is too short. The SPP 202 threshold allows for reasonable local travel without additional compensation.",
-        "b": "Correct. SPP 202 specifies that per diem travel compensation is triggered when the project site exceeds 50 km radial distance from the architect's principal office.",
-        "c": "75 km is incorrect. The threshold is lower at 50 km.",
-        "d": "100 km is the reimbursable travel threshold under SPP 201 for pre-design services, not the per diem trigger under SPP 202.",
-        "correct": "Under SPP 202, per diem travel compensation is triggered when the project site is beyond 50 km radial distance from the architect's principal office. This is distinct from the 100 km threshold in SPP 201 for reimbursable pre-design travel.",
-        "takeaway": "SPP 202 per diem travel threshold = 50 km (vs. SPP 201 reimbursable = 100 km)."
-      },
+      "rationale": "SPP 202 uses beyond 50.0 kilometers, measured as air, straight-line, or radial distance from the architect's established office.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "remember",
@@ -409,30 +353,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.717280+00:00",
       "content_hash": "sha256:bd9cfadd3c60b572d49b7cb0c598a07159c6b813be2a0571a13660919d00999c"
     },
     {
       "question_id": "b4ad1ac0-f8c0-42fa-821e-7286375ae1b4",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Under SPP 202, what happens to the architect's fee if construction is suspended for more than 6 months?",
+      "text": "Under SPP 202, what happens to the fee for remaining works when construction suspension exceeds six months?",
       "options": [
         {
           "id": "a",
-          "text": "The fee remains unchanged, regardless of the duration of the suspension, ensuring financial stability for the architect"
+          "text": "It remains unchanged"
         },
         {
           "id": "b",
-          "text": "The fee is increased by 25%, reflecting the additional administrative burden and potential inflationary impacts"
+          "text": "It is reduced to the direct personnel expense only"
         },
         {
           "id": "c",
-          "text": "The fee is doubled for the remaining work"
+          "text": "It is doubled for the remaining works"
         },
         {
           "id": "d",
-          "text": "The contract is automatically terminated, requiring renegotiation if the project resumes"
+          "text": "It is converted automatically to a lump-sum government-project fee"
         }
       ],
       "correct_option_id": "c",
@@ -440,14 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Unchanged fees do not compensate the architect for the disruption and carrying costs of a prolonged suspension.",
-        "b": "A 25% increase is insufficient under SPP 202 for suspensions exceeding 6 months.",
-        "c": "Correct. Under SPP 202, if construction is suspended for more than 6 months, the architect's fee for the remaining work is doubled to compensate for the disruption, remobilization, and extended engagement period.",
-        "d": "Automatic termination is not specified. The contract continues but with adjusted compensation.",
-        "correct": "SPP 202 provides that when construction is suspended for more than 6 months, the architect's fee for the remaining work is doubled. This compensates for the disruption to the architect's practice, the need to remobilize, and the extended engagement period.",
-        "takeaway": "Construction suspension > 6 months = architect's remaining fee is doubled."
-      },
+      "rationale": "SPP 202 states that when construction suspension exceeds six months, the fee for the remaining works shall be doubled.",
       "explanation": null,
       "code_citation": "SPP 202",
       "bloom_level": "apply",
@@ -460,30 +397,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.720280+00:00",
       "content_hash": "sha256:ded76afaf7149659e69425fb9347f7522a307e4d962f48bc060c6a6a20e594ba"
     },
     {
       "question_id": "b1ec9503-9ae3-4835-af28-704fc4dd064c",
       "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Under SPP 202, is the architect required to provide continuous 8-hour on-site supervision during construction?",
+      "text": "Under SPP 202, is regular construction-phase service the same as continuous eight-hour on-site supervision?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the architect must be present for 8 hours daily, ensuring all work complies with the design"
+          "text": "Yes; SPP 202 requires the architect to supervise continuously for eight hours each day"
         },
         {
           "id": "b",
-          "text": "No, SPP 202 requires only periodic site visits, not continuous supervision"
+          "text": "No; SPP 202 includes periodic site visits, and full-time eight-hour supervision is a separate service when required"
         },
         {
           "id": "c",
-          "text": "Yes, but only during critical construction phases, such as foundation and structural work"
+          "text": "Yes; continuous supervision replaces the need for certificates for payment"
         },
         {
           "id": "d",
-          "text": "No, supervision is optional under SPP 202, allowing flexibility in project management"
+          "text": "No; SPP 202 has no construction-phase role for the architect"
         }
       ],
       "correct_option_id": "b",
@@ -491,14 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Continuous 8-hour supervision is NOT required under SPP 202. This is the scope of SPP 204-A (Fulltime Supervision).",
-        "b": "Correct. SPP 202 requires only periodic site visits during construction, not continuous 8-hour daily supervision. Full-time supervision is a separate service under SPP 204-A.",
-        "c": "Even during critical phases, SPP 202 does not mandate continuous presence. That level of supervision falls under SPP 204-A.",
-        "d": "Supervision is not optional — periodic visits ARE required under SPP 202. But continuous 8-hour supervision is not.",
-        "correct": "SPP 202 requires periodic site visits during construction, not continuous 8-hour supervision. Full-time construction supervision (daily 8-hour presence) is a separate, additional service covered under SPP 204-A and compensated separately.",
-        "takeaway": "SPP 202 = periodic visits only. Continuous 8-hour supervision = SPP 204-A (separate fee)."
-      },
+      "rationale": "SPP 202 states that the architect makes periodic site visits and is not required to make exhaustive or continuous eight-hour on-site supervision; full-time supervision is covered separately when required.",
       "explanation": null,
       "code_citation": "SPP 202 / SPP 204-A",
       "bloom_level": "analyze",
@@ -511,7 +441,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.010788+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.716544+00:00",
       "content_hash": "sha256:6906966a8f782c05416195a1346a62464f4be8ac7d3d080e208ea4ef02d8c5c1"
     }
   ]

@@ -22,5 +22,53 @@
       "detailing-concrete",
       "bsi-concrete"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which concrete issue is a durability cue rather than a pure strength-number cue?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The room name beside the beam."
+      },
+      {
+        "id": "b",
+        "text": "Exposure-related cover and water-cement control."
+      },
+      {
+        "id": "c",
+        "text": "The color of the title block."
+      },
+      {
+        "id": "d",
+        "text": "The sheet border thickness."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "The room name beside the beam. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Exposure-related cover and water-cement control. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+      "c": "The color of the title block. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "The sheet border thickness. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Exposure-related cover and water-cement control. Supported by detailing-concrete.",
+      "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-concrete",
+      "checked_sources": [
+        "detailing-concrete",
+        "bsi-concrete"
+      ]
+    },
+    "explanation": "Exposure-related cover and water-cement control. Supported by the Batch 144 local source boundary: detailing-concrete.",
+    "code_citation": "detailing-concrete",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-01-002"
   }
 }

@@ -8,37 +8,31 @@
       "question_id": "0b587929-9468-40fe-aa21-4bc6dd18d353",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "In a private competitive bidding process, is the Owner obligated to accept the lowest bid?",
+      "text": "Under UAP Document 301, what is an Advertisement or Invitation to Bid?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the Owner must always award to the lowest bidder to ensure fairness, as this is a common practice in public procurement"
+          "text": "A notice or invitation giving prospective bidders project and bidding information"
         },
         {
           "id": "b",
-          "text": "No, the Owner may consider qualifications, past performance, financial stability, and other factors; however, selection should be based on rational criteria established before bidding"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "Only if the lowest bid is within 10% of the average bid, which is a guideline sometimes used to prevent abnormally low bids"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "No, the Owner may select any bidder regardless of price or qualifications, which allows for flexibility in decision-making"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses private bidding with public bidding requirements; private owners have discretion to weigh non-price factors.",
-        "c": "Invents a 10% threshold that does not exist in private bidding procedures.",
-        "d": "Mistakes discretion for arbitrary selection; Owner's choice must follow rational, pre-established criteria to avoid breaching the implied obligation of fair dealing.",
-        "correct": "In private competitive bidding, the Owner may consider qualifications, past performance, financial stability, and other factors in addition to price, provided the selection criteria are rational and established before bidding.",
-        "takeaway": "Private bidders compete on multiple criteria (price, qualifications, past performance), not just lowest cost."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 490-499. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": "Confuses private bidding with public bidding requirements; private owners have discretion to weigh non-price factors. Invents a 10% threshold that does not exist in private bidding procedures. Mistakes discretion for arbitrary selection; Owner's choice must follow rational, pre-established criteria to avoid breaching the implied obligation of fair dealing. In private competitive bidding, the Owner may consider qualifications, past performance, financial stability, and other factors in addition to price, provided the selection criteria are rational and established before bidding. Private bidders compete on multiple criteria (price, qualifications, past performance), not just lowest cost.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CTR-007-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-05-06T15:03:07.458214+00:00",
+      "updated_at": "2026-07-20T01:13:25.548243+00:00",
       "content_hash": "sha256:0de30e4c789aa48340fbfed5ee9f52a36a96e81e4daaaa98f082aaf6b1aa04a3"
     },
     {
       "question_id": "133a155e-942f-4423-a618-db04b924a780",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "When the Owner issues an addendum to the bid documents after initial distribution, what must the Owner do to ensure fair bidding?",
+      "text": "Under CIAP Document 102, what is a Bid?",
       "options": [
         {
           "id": "a",
-          "text": "The addendum may be provided only to bidders who request clarification, potentially leading to unequal access to critical information"
+          "text": "A tender, proposal, quotation, or offer complying with the Instruction to Bidders"
         },
         {
           "id": "b",
-          "text": "The addendum must be issued to all potential bidders to ensure equal information and fair competition"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "The addendum is provided only to the bidders the Owner favors, which could result in biased competition and unfair bidding practices"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "The addendum may be withheld from competitors of the Owner's preferred bidder, compromising the integrity of the bidding process"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Permits selective distribution only to those who asked; addenda modify contract documents and must reach all participants.",
-        "c": "Permits discriminatory distribution; addenda must reach all potential bidders regardless of Owner preference.",
-        "d": "Permits suppression of information from some competitors; all bidders must receive identical addenda.",
-        "correct": "Addenda must be issued to all potential bidders to ensure equal information and maintain fair competition.",
-        "takeaway": "Addenda must be distributed to all bidders, not selectively, to maintain competitive fairness."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 171-176. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-007-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.549775+00:00",
       "content_hash": "sha256:feb4c09a9fa1cc4a15e6440a92bcb64805d035bf900015be58bbf9a2d3b673ba"
     },
     {
       "question_id": "430cb11f-f1ae-4956-a0f8-918acf8480b2",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "May a bidder withdraw a bid after the bid deadline but before the Notice of Award is issued?",
+      "text": "Under CIAP Document 102, what are Bid Documents?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, bidders may always withdraw bids, regardless of the stage in the bidding process, which is a common misunderstanding."
+          "text": "Documents provided or made available to prospective bidders, including the Invitation to Bid and contract copy"
         },
         {
           "id": "b",
-          "text": "No, withdrawal is not permitted after the deadline unless the Owner consents, or unless the bidder can demonstrate a clear error in bid preparation"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "Only if the bid is the highest bid, which is a misconception as bid withdrawal rules are not dependent on bid ranking."
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "Only with the Architect's written consent, which is incorrect as the Architect does not have authority over bid withdrawals."
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes unlimited withdrawal rights; bids become binding at the deadline and withdrawal is restricted.",
-        "c": "Invents a condition tied to bid rank; withdrawal restrictions apply equally to all bidders regardless of bid amount.",
-        "d": "Assigns consent authority to Architect; only the Owner (not Architect) has authority to permit late withdrawal.",
-        "correct": "After the deadline, bidders cannot withdraw unless the Owner consents or the bidder demonstrates a clear error in preparation; bids are binding once submitted.",
-        "takeaway": "Post-deadline withdrawal requires Owner consent or proof of clear bid preparation error."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 174-177. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-007-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.550436+00:00",
       "content_hash": "sha256:97d79a48be8715a099bcb14c5a3b3d4f7121042fea815704c2b05c34aa2f7daa"
     },
     {
       "question_id": "56de8bc9-526c-4609-a89d-0689bcaf88ce",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "What happens if a bid is received after the specified deadline?",
+      "text": "Under UAP Document 301, what is a Proposal Bond?",
       "options": [
         {
           "id": "a",
-          "text": "The bid is accepted and the Owner evaluates it with other on-time bids, provided it meets all other submission criteria"
+          "text": "Security accompanying the proposal to guarantee the bidder will enter the contract if awarded"
         },
         {
           "id": "b",
-          "text": "The bid is rejected, even if only slightly late, unless the Owner consents to late acceptance"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "The bid is accepted but subject to a 10% penalty, which serves as a deterrent for late submissions"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "The bid is held until after the opening and evaluated at that time, which can delay the decision-making process"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Wrongly assumes late bids are accepted; strict deadline enforcement is essential to competitive bidding fairness.",
-        "c": "Invents a 10% penalty mechanism that does not exist; late bids are rejected outright, not penalized.",
-        "d": "Suggests late bids are held for later evaluation; the procedure is strict rejection without exception unless Owner consents.",
-        "correct": "Late bids are rejected automatically, regardless of how slightly late, unless the Owner explicitly consents to late acceptance.",
-        "takeaway": "Late bids are rejected unless Owner consents; even slightly late bids do not qualify."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 489-491. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": "Wrongly assumes late bids are accepted; strict deadline enforcement is essential to competitive bidding fairness. Invents a 10% penalty mechanism that does not exist; late bids are rejected outright, not penalized. Suggests late bids are held for later evaluation; the procedure is strict rejection without exception unless Owner consents. Late bids are rejected automatically, regardless of how slightly late, unless the Owner explicitly consents to late acceptance. Late bids are rejected unless Owner consents; even slightly late bids do not qualify.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-007-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-05-06T15:03:07.591994+00:00",
+      "updated_at": "2026-07-20T01:13:25.551734+00:00",
       "content_hash": "sha256:62e6227739d619f61df0c6a5eac4b8ea834fb12fb5e340685c4af4fdef0e0a66"
     },
     {
       "question_id": "96a7e7da-5a9a-4163-9511-bf6a29741bc2",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "What is the legal effect of the Owner's issuance of a Notice of Award to the selected bidder?",
+      "text": "Under CIAP Document 102, what is a Bid Bond?",
       "options": [
         {
           "id": "a",
-          "text": "The contract is immediately binding and work must commence without any further formalities"
+          "text": "Acceptable security accompanying the Bid to guarantee contract entry if awarded"
         },
         {
           "id": "b",
-          "text": "The Award notifies the contractor that the bid has been accepted; the Award is conditional on the contractor signing the Agreement within a specified period, typically 7-14 days"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "The Award is a binding contract that requires the Owner to pay even if the contractor never signs, ensuring financial commitment"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "The Award may be revoked by the Owner at any time without consequence, allowing flexibility in decision-making"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses Award with contract; Award precedes and depends on signing the Agreement.",
-        "c": "Wrongly treats Award as a binding contract; Award merely accepts the bid and requires the contractor to sign the Agreement.",
-        "d": "Suggests Award is revocable without consequence; once issued, Award creates a binding obligation on the contractor to sign within the specified period.",
-        "correct": "Notice of Award is conditional: it notifies the contractor of bid acceptance but requires the contractor to execute the Agreement within 7-14 days; Award is not final until Agreement is signed.",
-        "takeaway": "Award is conditional notice of bid acceptance; contract becomes binding only when Agreement is signed."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 174-176. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-007-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.544546+00:00",
       "content_hash": "sha256:133a8b85e7945b96a987abc1820ce096f4475c55073e1c294f223db72cf31b1f"
     },
     {
       "question_id": "b916ef5c-9166-4460-a5dc-4a5f2b85e5d8",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "If the Architect discloses confidential site information to one bidder before the bid deadline, what obligation does the Architect have?",
+      "text": "What do Instructions to Bidders control in the checked sources?",
       "options": [
         {
           "id": "a",
-          "text": "The information may be kept confidential as it helps the bidder prepare a more accurate bid, potentially benefiting the project"
+          "text": "The manner of bid preparation and the conditions for contract award"
         },
         {
           "id": "b",
-          "text": "The information must be disclosed to all bidders in writing to prevent unfair advantage and maintain bidding integrity"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "The Architect has no obligation to share the information with other bidders, unless specifically requested by the client"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "The information may be shared with competitors of the favored bidder only, if deemed necessary by the project manager"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mistakenly permits selective disclosure; allowing one bidder to possess confidential information violates fair dealing principles.",
-        "c": "Ignores the obligation of fair dealing; discretionary disclosure creates competitive unfairness.",
-        "d": "Invents a selective sharing scheme; the rule is disclosure to all bidders, not selective sharing based on competition.",
-        "correct": "If information is provided to one bidder, it must be disclosed to all bidders in writing to prevent unfair advantage and maintain the integrity of the bidding process.",
-        "takeaway": "All bidders must have equal access to the same contract documents and site information."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 498-505; CIAP Document 102 lines 198-204. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-007-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.546456+00:00",
       "content_hash": "sha256:7b71e439200f16cfa48ad3f05b38fcef23d63ba9038d3c2ac9e156b50514e946"
     },
     {
       "question_id": "808401a2-7e7e-42fe-b7df-b0c122d2674d",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "What is the purpose of the bid bond that accompanies each contractor's proposal?",
+      "text": "What is a Bid Bulletin under CIAP Document 102?",
       "options": [
         {
           "id": "a",
-          "text": "To guarantee that the contractor will complete the work on time, which is a common misconception"
+          "text": "Additional information on Bid Documents or Contract Documents issued before the date of bidding"
         },
         {
           "id": "b",
-          "text": "To guarantee that the contractor will maintain quality standards during construction, although this is not the primary purpose"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "To guarantee that the contractor will enter into the contract if the bid is accepted; if the contractor refuses, the bid bond is forfeited"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "To provide insurance coverage for the contractor's workers, which is not the function of a bid bond"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses bid bond with performance bond; performance bond ensures contract completion, not commitment to sign.",
-        "b": "Confuses bid bond with quality assurance mechanisms; bid bond only guarantees commitment to contract, not work quality.",
-        "d": "Confuses bid bond with workers' compensation insurance; bid bond is a financial guarantee, not insurance coverage.",
-        "correct": "A bid bond guarantees that the bidder will enter into the contract if selected; if the contractor refuses to sign after Award, the bid bond amount is forfeited to protect the Owner.",
-        "takeaway": "Bid bond protects Owner by securing the contractor's commitment to sign if bid is accepted."
-      },
+      "rationale": "Correct because it follows CIAP Document 102 lines 176-178. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-007-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.547422+00:00",
       "content_hash": "sha256:317efda1e330b6e1bfa41b16507045dbee2063d43488e8cbcfb01f494234aa10"
     },
     {
       "question_id": "915cf8f3-6124-46af-8c95-54565b055e86",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "What is the purpose of a prebid meeting conducted by the Owner and Architect?",
+      "text": "Which statement is safe for private bidding based on UAP Document 301 and CIAP Document 102 alone?",
       "options": [
         {
           "id": "a",
-          "text": "To pressure bidders to reduce their prices, which is not an ethical practice"
+          "text": "The sources define bid notices, instructions, bulletins, bid documents, and bid/bond terms but do not mandate every private award rule"
         },
         {
           "id": "b",
-          "text": "To provide clarification on the project scope, allow site tours, and ensure all bidders have equal information and understanding to prevent unfair advantage to selected bidders"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "To select the contractor before formal bidding, which is not the intended purpose of a prebid meeting"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "To eliminate weak bidders from consideration, which is not the primary goal of such meetings"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mischaracterizes purpose as coercive; prebid meetings serve to clarify scope and ensure fair information sharing.",
-        "c": "Wrongly assumes contractor is selected at prebid; bidding and evaluation occur after prebid meeting.",
-        "d": "Confuses the neutral clarification purpose with selective elimination; all qualified bidders have equal access to prebid information.",
-        "correct": "Prebid meetings provide clarification, site tours, and ensure all bidders receive equal information to prevent any bidder from gaining unfair advantage.",
-        "takeaway": "Prebid meetings equalize information and understanding across all bidders to maintain fair competition."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 490-505; CIAP Document 102 lines 171-204. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-007-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.551094+00:00",
       "content_hash": "sha256:9acd22875d1df7eb4bdf11a69dc2cc21702cb56f4de708ca5904ffdee2b8f928"
     },
     {
       "question_id": "0469ce6d-9057-4c1c-8635-bc4e878aa9c1",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "In an invited bid procedure, what is the first step before contractors are invited to submit bids?",
+      "text": "Why is a claim that all private projects must be awarded to the lowest bidder unsafe in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "The Owner publishes a public advertisement in newspapers of general circulation to solicit bids from all interested and qualified contractors within the project jurisdiction"
+          "text": "Because the checked UAP/CIAP private contract definitions do not prove a universal lowest-bidder award rule"
         },
         {
           "id": "b",
-          "text": "The Owner pre-qualifies contractors by evaluating past project references, financial statements, insurance verification, and safety records; only qualified contractors are invited to bid"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "The Owner selects the lowest bidder immediately from among the pre-qualified list without requiring formal sealed bid submissions or comparative evaluation"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "The Owner conducts a public hearing to discuss the project scope and invites community feedback before proceeding to distribute the bidding documents to potential contractors"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Describes competitive bidding process with public advertisement, not invited bidding which is limited to pre-qualified contractors.",
-        "c": "Describes award process, not pre-qualification; selection occurs after bids are received, not before.",
-        "d": "Confuses invited bidding with public bidding procedures that may require hearings; invited bidding operates without public notice.",
-        "correct": "Invited bidding requires pre-qualification: the Owner evaluates past references, financial statements, insurance, and safety records before inviting selected contractors to bid.",
-        "takeaway": "Invited bidding begins with pre-qualification of contractors based on credentials, references, and financial stability."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 490-505; CIAP Document 102 lines 171-204. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": "Describes competitive bidding process with public advertisement, not invited bidding which is limited to pre-qualified contractors. Describes award process, not pre-qualification; selection occurs after bids are received, not before. Confuses invited bidding with public bidding procedures that may require hearings; invited bidding operates without public notice. Invited bidding requires pre-qualification: the Owner evaluates past references, financial statements, insurance, and safety records before inviting selected contractors to bid. Invited bidding begins with pre-qualification of contractors based on credentials, references, and financial stability.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CTR-007-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-05-06T15:03:07.843351+00:00",
+      "updated_at": "2026-07-20T01:13:25.549098+00:00",
       "content_hash": "sha256:746e809bc3418d6b1ab75a82fb6a74196f8aa9623ecf3592f7d0ace3add99c4e"
     },
     {
       "question_id": "986d8bc6-065e-465f-b66e-96af92788a9a",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "What is the primary difference between competitive bidding and negotiated procurement?",
+      "text": "Which source-backed item helps ensure the successful bidder enters the construction contract?",
       "options": [
         {
           "id": "a",
-          "text": "Competitive bidding is used for public projects; negotiated procurement is used for private projects, typically involving direct selection of contractors"
+          "text": "The Proposal Bond or Bid Bond"
         },
         {
           "id": "b",
-          "text": "In competitive bidding, multiple contractors submit sealed bids and the Owner selects based on established criteria; in negotiated procurement, the Owner selects a contractor and negotiates terms directly without competitive bidding"
+          "text": "A rule that changes the party named in the cited source"
         },
         {
           "id": "c",
-          "text": "Competitive bidding always results in lower costs than negotiated procurement, ensuring budget constraints are met"
+          "text": "An answer that treats the article title as the controlling rule"
         },
         {
           "id": "d",
-          "text": "Negotiated procurement requires a public advertisement; competitive bidding does not, allowing for more discretion in contractor selection"
+          "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Reverses the actual relationship; both public and private projects can use competitive bidding or negotiated procurement.",
-        "c": "Assumes competitive bidding always yields lower costs, but cost is just one criterion and negotiated contracts sometimes achieve better value.",
-        "d": "Inverts the procedures; competitive bidding uses public advertisement to attract multiple bidders, not negotiated procurement.",
-        "correct": "Competitive bidding uses sealed bids from multiple contractors with Owner selection based on pre-established criteria, while negotiated procurement involves selecting one contractor upfront and negotiating terms directly.",
-        "takeaway": "Competitive bidding = sealed bids from multiple contractors; negotiated = direct contractor selection and negotiations."
-      },
+      "rationale": "Correct because it follows UAP Document 301 lines 489-491; CIAP Document 102 lines 174-176. The other options change the party, period, percentage, or document rule stated in the audited source.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-007-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.545643+00:00",
       "content_hash": "sha256:129af7091e74af72afa5b21064d2720588f4a1de774f4b3d1390da546c838960"
     }
   ]

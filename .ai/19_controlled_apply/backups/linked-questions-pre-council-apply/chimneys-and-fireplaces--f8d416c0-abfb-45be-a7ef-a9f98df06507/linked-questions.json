@@ -1,0 +1,1460 @@
+{
+  "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3bd74c85a8a51374697484642f6d0e1f745e2784e317beb168e7609d9acf965c",
+  "question_count": 33,
+  "questions": [
+    {
+      "question_id": "91c23f7c-d0e7-4f4f-91cf-4d9177dd62b8",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1401, what is the minimum required clearance between stored X-ray films and any heat source (steam pipes, chimneys, or other heat-emitting elements)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm"
+        },
+        {
+          "id": "B",
+          "text": "450 mm"
+        },
+        {
+          "id": "C",
+          "text": "600 mm"
+        },
+        {
+          "id": "D",
+          "text": "900 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1401 specifies a minimum clearance of 600 millimeters from heat sources. This distance reflects the approximate safe margin at which radiant heat from a steam pipe surface (typically 100–150°C) falls below the threshold that accelerates film degradation or approaches cellulose nitrate's spontaneous ignition temperature of approximately 150°C. In the Philippine tropical climate with elevated ambient temperatures, this 600 mm should be treated as a minimum, not a design target.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ea5bf1ed7d13c149155d7c8c45dfc95ba6dc2e6424dfbec2acf30386337a9938"
+    },
+    {
+      "question_id": "04086fd9-8572-47d7-b4fa-8052d0e8cd65",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "According to the WALSH mnemonic for chimney compliance under PD 1096 Rule XII, Section 1211, what does each letter stand for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "W = Waterproofing, A = Anchorage, L = Lathing, S = Separation, H = Height"
+        },
+        {
+          "id": "b",
+          "text": "W = Walls (thickness by heat load), A = Anchorage (lateral, at 1.80 m intervals), L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm), S = Separation/Clearance (50 mm interior, 25 mm exterior), H = Height (≥ 600 mm above roof AND above any obstruction within 3 m)"
+        },
+        {
+          "id": "c",
+          "text": "W = Width, A = Angle, L = Load-bearing capacity, S = Structural integrity, H = Horizontal reinforcement"
+        },
+        {
+          "id": "d",
+          "text": "W = Weather resistance, A = Acoustic rating, L = Load distribution, S = Seismic design, H = Heat dissipation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "WALSH is a board-prep mnemonic that organizes the entire Section 1211 into five testable categories. Candidates should memorize this before tackling any chimney-related question.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:481805ef20be6aa6a97a7ce277ff612b8edba7825b839413d33b92abba3826ed"
+    },
+    {
+      "question_id": "e58e42cc-aefc-42f0-bf96-efe9f72b9a32",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Using the '2-2.5-5-10' mnemonic for fireplace construction under PD 1096 Rule XII, Section 1211, which of the following is the correct interpretation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 mm = fireplace wall thickness, 250 mm = firebox depth, 500 mm = firebox wall thickness, 10 mm = minimum firebrick joint"
+        },
+        {
+          "id": "b",
+          "text": "200 mm = outer fireplace wall, 250 mm = firebox wall (without firebrick lining), 500 mm = minimum firebox depth, 10 mm = maximum firebrick joint thickness"
+        },
+        {
+          "id": "c",
+          "text": "200 mm = minimum chimney height above roof, 250 mm = minimum interior clearance, 500 mm = minimum firebox depth, 10 mm = minimum fire clay lining"
+        },
+        {
+          "id": "d",
+          "text": "200 mm = smoke chamber front/side walls, 250 mm = smoke chamber back wall, 500 mm = firebox wall thickness, 10 mm = maximum soot accumulation depth"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Associate the numbers with the fireplace box shape going from outside to inside: outer wall → firebox wall → depth → joint. The mnemonic replaces rote memorization of individual values.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2b3d5c4d72312c426bdc9cdb7cf4befc573b6e44cfcc87bb633a9d7ccdfecc35"
+    },
+    {
+      "question_id": "2444a4c6-63d2-464d-bd9b-fc8fb060440e",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the 2004 Revised IRR, Rule XII, Section 1211, what is the maximum total corbel projection permitted from a masonry chimney wall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 mm"
+        },
+        {
+          "id": "b",
+          "text": "150 mm"
+        },
+        {
+          "id": "c",
+          "text": "200 mm"
+        },
+        {
+          "id": "d",
+          "text": "300 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 150 mm maximum corbel applies regardless of wall thickness or exception. The per-course limit of 25 mm is also fixed. Candidates should not confuse the 150 mm corbel with the 300 mm wall thickness requirement.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:44ad68e417679b9f4116f940aecccc441e243e358687758042147b3672cbe1f9"
+    },
+    {
+      "question_id": "9f7cea39-9a80-424d-a1c8-587f12533a94",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Lateral anchoring of chimneys in wood-framed buildings is required at which of the following intervals under the 2004 Revised IRR, Rule XII, Section 1211?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At the ceiling line of each storey only, ensuring stability at the uppermost structural level without additional anchoring at lower levels"
+        },
+        {
+          "id": "b",
+          "text": "At every floor line more than 1.80 m above grade, providing consistent lateral support throughout the height of the chimney"
+        },
+        {
+          "id": "c",
+          "text": "At the ceiling line of each storey and at every floor line more than 1.80 m above grade"
+        },
+        {
+          "id": "d",
+          "text": "At 1.50 m intervals measured from grade, which ensures uniform distribution of lateral forces along the chimney's height"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is the 'A' (Anchorage) in the WALSH mnemonic. The 1.80 m threshold is critical — floors below this elevation do not require additional lateral anchoring beyond the ceiling line requirement.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34f62c0849e0ba9cafdffaaf56bb98ae85b73fa2b07b2d8f738e5fc19970feed"
+    },
+    {
+      "question_id": "012b6191-5b85-4337-b05d-8df24b346613",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A commercial incinerator has a burn rate of 120 kg/hr and a grate area of 0.60 m². Under the 2004 Revised IRR, Rule XII, Section 1211, which chimney wall specification applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 mm masonry/RC with no firebrick lining required"
+        },
+        {
+          "id": "b",
+          "text": "100 mm masonry/RC with firebrick ≥ 100 mm extending ≥ 12.00 m above combustion chamber roof"
+        },
+        {
+          "id": "c",
+          "text": "200 mm masonry/RC with firebrick ≥ 100 mm extending full height"
+        },
+        {
+          "id": "d",
+          "text": "200 mm masonry/RC with double walls and 50 mm air space"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The classification boundary is based on burn rate (110 kg/hr) and grate area (0.50 m²/0.80 m² thresholds). Burn rate takes priority — exceeding 110 kg/hr triggers the large classification regardless of grate area.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:61a999cbda2a063a71c262e6ebf21fd0e3c93bb0ce9b5da82404b62a594aa40f"
+    },
+    {
+      "question_id": "877eef4b-f6a0-4614-86c0-dd4e697691ea",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A chimney must terminate at least how many millimeters above both the highest point of roof penetration AND the highest elevation of any building part within 3.00 m of the chimney?",
+      "options": [
+        {
+          "id": "a",
+          "text": "400 mm"
+        },
+        {
+          "id": "b",
+          "text": "500 mm"
+        },
+        {
+          "id": "c",
+          "text": "600 mm"
+        },
+        {
+          "id": "d",
+          "text": "914 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is the 'H' in WALSH. The dual-condition height rule is a common exam trap — candidates often assume the 600 mm above-roof condition alone is sufficient.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c8ba463802dae33672147fcdb84838b92c72ed9e0939fcb63918e27aadd91e83"
+    },
+    {
+      "question_id": "b1093b84-0cd5-465e-a924-c754b5ec3911",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The spark arrester mesh opening on an incinerator chimney must not exceed what maximum size under the 2004 Revised IRR, Rule XII, Section 1211?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 mm"
+        },
+        {
+          "id": "b",
+          "text": "12.7 mm (½ inch)"
+        },
+        {
+          "id": "c",
+          "text": "20 mm"
+        },
+        {
+          "id": "d",
+          "text": "25 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question tests the PH vs. NFPA 211 divergence on spark arrester mesh size. Both values (20 mm PH vs. 12.7 mm NFPA 211) are testable depending on which standard the question frame references.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:19e8a277e1a77c4ae86b155af78ea7149d61c5ac00e396f662e69a32b8275278"
+    },
+    {
+      "question_id": "dcc221c7-5ee2-4c80-89aa-7dcda5f002c4",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum thickness of fire clay chimney lining required under the 2004 Revised IRR, Rule XII, Section 1211?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 mm"
+        },
+        {
+          "id": "b",
+          "text": "15 mm"
+        },
+        {
+          "id": "c",
+          "text": "25 mm"
+        },
+        {
+          "id": "d",
+          "text": "50 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 15 mm fire clay lining and the 200 mm starting point below the lowest inlet are frequently tested together. The lining must be installed ahead of surrounding construction, not inserted after the fact.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff8cc20f6b5404d4c08f0e9973b88af3cc98e092c0822259f4f9b49088691813"
+    },
+    {
+      "question_id": "fc6c47d1-987d-49e3-9e02-847edc789c75",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The clearance from a chimney entirely outside the structure to combustible materials must be at least how many millimeters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 mm"
+        },
+        {
+          "id": "b",
+          "text": "50 mm"
+        },
+        {
+          "id": "c",
+          "text": "150 mm"
+        },
+        {
+          "id": "d",
+          "text": "400 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is part of the '5-2-1-5' clearance mnemonic: 50 mm interior, 25 mm exterior, 150 mm from fireplace opening, 400 mm from metal hoods.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f6aa5d02f8ecac6d68ea1c3e11234d6faa52d63e03c4c82c5713a22abddf827f"
+    },
+    {
+      "question_id": "a709ec89-b137-4edc-8a53-48fdfeb75c15",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A masonry chimney serves a medium heat appliance and is 6.00 m tall above its connector entrance. According to the 2004 Revised IRR, Rule XII, Section 1211, which of the following best describes the required lining?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No lining is required; the 200 mm masonry walls are sufficient, provided they meet the minimum fire resistance rating"
+        },
+        {
+          "id": "b",
+          "text": "Firebrick lining ≥ 100 mm in fire clay mortar, beginning 600 mm below the connector entrance and extending to the top of the chimney."
+        },
+        {
+          "id": "c",
+          "text": "Fire clay lining ≥ 15 mm beginning at the connector entrance, which may not provide adequate protection for higher temperatures"
+        },
+        {
+          "id": "d",
+          "text": "Firebrick lining ≥ 100 mm, but only for the lowest 3.00 m of the chimney, which may not comply with full height requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The critical threshold is 7.50 m: when a medium heat chimney is ≤ 7.50 m above the connector, firebrick lining must extend to the top. The 600 mm offset from the connector accounts for the zone of highest thermal stress where hot gases first enter.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5b07e342eea03695d9bbbcff4cb9bb9b50c34d1f4930a4177ea8c7f2a34ba849"
+    },
+    {
+      "question_id": "53bbb60d-d87d-4396-a73e-8bfa82c5bdaf",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum firebox depth required for a residential fireplace under the 2004 Revised IRR, Rule XII, Section 1211?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 mm"
+        },
+        {
+          "id": "b",
+          "text": "450 mm"
+        },
+        {
+          "id": "c",
+          "text": "500 mm"
+        },
+        {
+          "id": "d",
+          "text": "600 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 500 mm figure is part of the '2-2.5-5-10' mnemonic: 200 mm outer wall, 250 mm firebox wall, 500 mm firebox depth, 10 mm max joint thickness.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:704101e9bf140cd6a139f107ca8ff8fd2637459578cc9bb44b34c4e76f4ff4c8"
+    },
+    {
+      "question_id": "a9cfa20d-2ea4-4d7d-96dd-3b900f41678c",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, fire dampers must be installed at all HVAC duct penetrations through:",
+      "options": [
+        {
+          "id": "em-014-a",
+          "text": "Interior partitions only, which are not typically fire-rated and may not require dampers"
+        },
+        {
+          "id": "em-014-b",
+          "text": "Firewalls, as they are critical in preventing fire spread between compartments"
+        },
+        {
+          "id": "em-014-c",
+          "text": "Firewalls and shaft enclosure walls"
+        },
+        {
+          "id": "em-014-d",
+          "text": "Only through the roof, which is an uncommon requirement for most buildings"
+        }
+      ],
+      "correct_option_id": "em-014-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Fire dampers are listed assemblies with a specific fire-resistance rating (typically matching the wall rating they penetrate). They close automatically upon exposure to heat, blocking the duct opening when the wall's fire rating is threatened. Combination fire/smoke dampers provide both fire protection and smoke control.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:092cb743c920f69697ef3a8e7212b6e63fd3147cee0277506c7c8ac3c55876a1"
+    },
+    {
+      "question_id": "cb716029-b17f-4706-963f-4ed30ef57a99",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "As an alternative to fire clay lining, Sec. 1211 permits the use of firebrick. What minimum thickness of firebrick lining satisfies the Code's thermal protection requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 mm of firebrick as an alternative to fire clay lining"
+        },
+        {
+          "id": "b",
+          "text": "200 mm of firebrick as an alternative to fire clay lining"
+        },
+        {
+          "id": "c",
+          "text": "500 mm of firebrick as an alternative to fire clay lining"
+        },
+        {
+          "id": "d",
+          "text": "300 mm of firebrick as an alternative to fire clay lining"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 specifies that firebrick may substitute for fire clay lining provided the firebrick thickness is at least 500 mm. This substantially greater thickness (compared to fire clay tile lining) compensates for the lower thermal resistance per unit thickness of standard firebrick versus specialized fire clay liner tiles.",
+      "explanation": "Fire clay lining = standard; Firebrick alternative = 500 mm minimum. The 500 mm thickness is counterintuitively large — it reflects the fact that firebrick requires much greater mass to achieve equivalent thermal protection to purpose-made fire clay liner tiles.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6ef84d04f5311b334087872f89add26953062f6399c4a02744cded9df5098aac"
+    },
+    {
+      "question_id": "3fa92de2-a43a-424a-9ba8-d6f95a3a17ed",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule XII, Sec. 1211 of PD 1096, what are the two simultaneous height requirements a chimney must satisfy relative to the roof?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least 300 mm above the roof ridge AND at least 300 mm above any part of the building within 3.00 m"
+        },
+        {
+          "id": "b",
+          "text": "At least 600 mm above the roof AND at least 600 mm above any part of the building within 3.00 m"
+        },
+        {
+          "id": "c",
+          "text": "At least 900 mm above the roof ridge AND at least 600 mm above any adjacent building within 6.00 m"
+        },
+        {
+          "id": "d",
+          "text": "At least 600 mm above the roof AND at least 1.00 m above any building part within 5.00 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 requires chimneys to project at least 600 mm above the highest point where they pass through the roof AND at least 600 mm above any part of the building within a horizontal distance of 3.00 m. Both conditions must be met simultaneously. Option A uses 300 mm (half the correct value). Options C and D use wrong distances or wrong horizontal clearances.",
+      "explanation": "600 mm above roof + 600 mm above any building part within 3.00 m. Both thresholds are the same (600 mm) but apply to different reference points. The 3.00 m horizontal distance is the radius within which nearby building parts must be considered.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b4b88942fad65ed9cbdd7c6d9159a602afeab9a4a24493f03c3cd892739aaad"
+    },
+    {
+      "question_id": "e368bf09-914b-4da5-abdb-770b3a1633f6",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1211, what is the minimum clearance between a chimney and combustible framing WITHIN the building structure (interior clearance)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 mm from all combustible framing both inside and outside the building structure"
+        },
+        {
+          "id": "b",
+          "text": "50 mm from all combustible framing within the building structure"
+        },
+        {
+          "id": "c",
+          "text": "100 mm from combustible framing inside and 50 mm from combustible framing outside"
+        },
+        {
+          "id": "d",
+          "text": "150 mm from all combustible materials both inside and outside the building"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 establishes two clearances: (1) Within the structure — 50 mm minimum clearance from all combustible framing; (2) Outside the structure — 25 mm minimum clearance from combustible materials. These are different values for different zones. Option A uses 25 mm for both (interior should be 50 mm). Option D uses 150 mm (which is the fireplace opening clearance, not framing clearance).",
+      "explanation": "Interior clearance = 50 mm; Exterior clearance = 25 mm. The interior requires more clearance because heat transfer to concelead combustible framing is harder to detect and more dangerous. The 150 mm figure belongs to fireplace opening clearances, not framing clearances.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65921dc9df2ee8a48d60e8ccb879072c6dbfd1385bc18e52c2b29307be5947a2"
+    },
+    {
+      "question_id": "98d143ec-150e-452e-84db-918f5853bf81",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A residential chimney uses fire clay lining. Under Sec. 1211, at what point below the lowest smoke inlet must the fire clay lining begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At the same level as the lowest smoke inlet — lining starts at the inlet itself"
+        },
+        {
+          "id": "b",
+          "text": "At least 100 mm below the lowest smoke inlet"
+        },
+        {
+          "id": "c",
+          "text": "At least 200 mm below the lowest smoke inlet"
+        },
+        {
+          "id": "d",
+          "text": "At least 300 mm below the lowest smoke inlet"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 requires that fire clay lining begin at least 200 mm below the lowest smoke inlet (the point where combustion gases enter the flue). This ensures that the transition zone between the firebox/connection point and the lined flue is also protected, preventing heat damage to unlined masonry at the most thermally stressed entry point.",
+      "explanation": "200 mm below the lowest inlet — not at the inlet, not 100 mm, not 300 mm. The lining must extend beyond the inlet zone to protect the masonry at the highest-temperature point of the flue system.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6c591867b99da5704015e93bd0fc7436cd920b6360e8e75a9659f2bf07886e7"
+    },
+    {
+      "question_id": "6e85948c-d74f-42e0-a561-e5bb0826519a",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1211, what is the minimum required OUTER WALL thickness for a masonry fireplace, and what reduced thickness is permitted when the inner surface is lined with firebrick?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Outer wall: 150 mm; reduced to 100 mm with firebrick lining on the inner face"
+        },
+        {
+          "id": "b",
+          "text": "Outer wall: 200 mm; reduced to 150 mm with firebrick lining on the inner face"
+        },
+        {
+          "id": "c",
+          "text": "Outer wall: 200 mm; reduced to 100 mm with firebrick lining on the inner face"
+        },
+        {
+          "id": "d",
+          "text": "Outer wall: 250 mm; no reduction permitted even with firebrick lining"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 requires fireplace outer walls to be at least 200 mm thick. Where the inner firebox face is lined with firebrick, the minimum outer wall thickness may be reduced to 150 mm, as the firebrick provides the additional thermal protection. Option C incorrectly reduces to 100 mm. Option D (250 mm) is the firebox wall thickness, not the outer wall.",
+      "explanation": "Outer wall: 200 mm standard, 150 mm with firebrick inner face. Firebox wall: 250 mm standard, 200 mm with firebrick. Hearth: ≥100 mm thick. These four distinct wall thickness values are each independently testable.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff4c7218e680a6bac9a42f4ea5d5ab6d86d4e0f4be871411ee457c69b7347b17"
+    },
+    {
+      "question_id": "f798fca9-af5b-4993-aa2b-eef65fa94811",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Sec. 1211 specifies hearth dimensions for masonry fireplaces. What are the minimum required projections of the hearth in front of and to the sides of the fireplace opening?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 mm in front of the opening and 200 mm on each side of the opening"
+        },
+        {
+          "id": "b",
+          "text": "450 mm in front of the opening and 300 mm on each side of the opening"
+        },
+        {
+          "id": "c",
+          "text": "600 mm in front of the opening and 450 mm on each side of the opening"
+        },
+        {
+          "id": "d",
+          "text": "500 mm in front of the opening and 350 mm on each side of the opening"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 requires hearths to project at least 450 mm in front of the fireplace opening and at least 300 mm beyond each side of the opening. These dimensions ensure that falling embers land on non-combustible hearth material rather than on adjacent flooring. The hearth must also be at least 100 mm thick.",
+      "explanation": "Hearth: 450 mm front, 300 mm sides, 100 mm thick. Three separate hearth dimensions. The asymmetry (450 front vs 300 sides) reflects that embers are more likely to roll forward than sideways when falling from a fireplace opening.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eb18d8bc74bfd1ddfd40604e1b3bd34f984a77972991a6835ee61412235c80cf"
+    },
+    {
+      "question_id": "6144bc8b-3fd9-419d-9ea4-0ac611b7290d",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1211, what is the minimum gauge specification for the metal damper plate in a masonry fireplace, and what percentage of the flue cross-sectional area must it cover when fully open?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No. 10 gauge steel; must cover at least 75% of the flue area when fully open"
+        },
+        {
+          "id": "b",
+          "text": "No. 12 gauge steel; must cover at least 90% of the flue area when fully open"
+        },
+        {
+          "id": "c",
+          "text": "No. 14 gauge steel; must cover 100% of the flue area when fully open"
+        },
+        {
+          "id": "d",
+          "text": "No. 12 gauge steel; must cover at least 80% of the flue area when fully open"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 specifies that dampers must be fabricated from No. 12 gauge steel (minimum) and when fully open, must provide an opening equal to at least 90% of the cross-sectional area of the flue. This ensures adequate draft when the fireplace is in use while still allowing the damper to fully close when not in use.",
+      "explanation": "Damper specs: No. 12 gauge + 90% of flue area when open. Both figures are precise and independently testable. The 90% requirement prevents damper installation that would unduly restrict draft even when fully retracted.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:35e0cf46f8738cfbfa69b5a0d2d33fb739c8ff2a4f8291b784aabff01273af49"
+    },
+    {
+      "question_id": "9766f928-e710-4ffb-b8f4-066b56e577b7",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "PD 1096 and NFPA 211 specify different maximum mesh opening sizes for chimney spark arresters. What are the respective Philippine and US standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PD 1096: maximum 25 mm openings; NFPA 211: maximum 20 mm openings"
+        },
+        {
+          "id": "b",
+          "text": "PD 1096: maximum 20 mm openings; NFPA 211: maximum 12.7 mm openings"
+        },
+        {
+          "id": "c",
+          "text": "PD 1096: maximum 15 mm openings; NFPA 211: maximum 12.7 mm openings"
+        },
+        {
+          "id": "d",
+          "text": "PD 1096: maximum 12.7 mm openings; NFPA 211: maximum 20 mm openings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The Philippine standard (PD 1096/2004 IRR) permits spark arrester mesh openings up to 20 mm maximum. NFPA 211 (US standard) requires tighter mesh with openings not exceeding 12.7 mm (1/2 inch). The Philippine standard is therefore less restrictive — allowing larger mesh openings — than the US standard. Option D reverses the two standards.",
+      "explanation": "PH = 20 mm max; US (NFPA 211) = 12.7 mm max. Philippine standard is more permissive. This is a classic comparison question: Philippine vs international standard. The direction of difference (PH allows larger) is the testable fact.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211; NFPA 211",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b86581a6e4964f2269300a4d152f01ae3af0ab993e249bfdac4d6480d299286"
+    },
+    {
+      "question_id": "8bceeeb5-5e69-4bab-8c39-ecf2addbfe08",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A commercial incinerator burns 95 kg of waste per hour with a grate area of 0.45 sq.m. Under Sec. 1211, how is this incinerator classified, and what chimney lining rule applies to it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Large incinerator — classified as large because the grate exceeds 0.40 sq.m; medium-heat chimney lining rules apply"
+        },
+        {
+          "id": "b",
+          "text": "Small incinerator — burning rate ≤110 kg/hr AND grate ≤0.50 sq.m; fire clay lining to top required for chimneys ≤7.50 m"
+        },
+        {
+          "id": "c",
+          "text": "Small incinerator — burning rate ≤110 kg/hr AND grate ≤0.50 sq.m; no lining required for outdoor incinerators"
+        },
+        {
+          "id": "d",
+          "text": "Large incinerator — classified as large because burning rate exceeds 90 kg/hr; high-heat chimney rules apply"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 defines a SMALL commercial incinerator as one with a burning rate ≤110 kg/hr AND a grate area ≤0.50 sq.m — both conditions must be satisfied simultaneously. This incinerator burns 95 kg/hr (≤110 ✓) and has a 0.45 sq.m grate (≤0.50 ✓), so it qualifies as small. For medium-heat appliances with chimneys ≤7.50 m, fire clay lining to the top is required. Option A and D incorrectly classify it as large.",
+      "explanation": "Small incinerator: ≤110 kg/hr AND ≤0.50 sq.m grate — BOTH criteria required. 95 kg/hr passes; 0.45 sq.m passes → small. Medium-heat chimney ≤7.50 m → lining to top. This question tests dual-criteria classification plus the associated chimney rule.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a91c4ae1daf5e6689dfaf057228e630efaa835f53e88801da16e9550da79fe10"
+    },
+    {
+      "question_id": "e38e2752-69c7-42f6-9e66-645f1cf9cfd8",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A masonry chimney corbels outward from a structural wall. Under Sec. 1211, what is the maximum total corbeling distance allowed, the minimum required wall thickness before corbeling, and the maximum projection per course?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Max total corbeling: 200 mm; min wall thickness: 200 mm; max per course: 30 mm"
+        },
+        {
+          "id": "b",
+          "text": "Max total corbeling: 150 mm; min wall thickness: 300 mm; max per course: 25 mm"
+        },
+        {
+          "id": "c",
+          "text": "Max total corbeling: 100 mm; min wall thickness: 250 mm; max per course: 20 mm"
+        },
+        {
+          "id": "d",
+          "text": "Max total corbeling: 150 mm; min wall thickness: 200 mm; max per course: 50 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 specifies three simultaneous corbeling constraints: (1) maximum total corbeling distance = 150 mm; (2) minimum wall thickness before corbeling begins = 300 mm; (3) maximum projection per individual course = 25 mm. All three must be satisfied. Option A uses wrong values. Option C uses different wrong values. Option D has 50 mm per course (double the correct limit).",
+      "explanation": "Three corbeling rules: 150 mm total maximum, 300 mm minimum wall, 25 mm per course maximum. All three apply simultaneously. Corbeling redirects chimney location horizontally while maintaining structural integrity — excessive corbeling creates instability and cracking.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.895462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:46c88547c246d97822e147f7f4c022439a06d9cdeba75881c6a94ba9b9751417"
+    },
+    {
+      "question_id": "86b58ac2-0918-4b2a-88ec-04ff21611c5c",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1211, what is the minimum required OUTER WALL thickness for a masonry fireplace, and what reduced thickness is permitted when the inner surface is lined with firebrick?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Outer wall: 150 mm; reduced to 100 mm with firebrick lining on the inner face"
+        },
+        {
+          "id": "b",
+          "text": "Outer wall: 200 mm; reduced to 150 mm with firebrick lining on the inner face"
+        },
+        {
+          "id": "c",
+          "text": "Outer wall: 200 mm; reduced to 100 mm with firebrick lining on the inner face"
+        },
+        {
+          "id": "d",
+          "text": "Outer wall: 250 mm; no reduction permitted even with firebrick lining"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 requires fireplace outer walls to be at least 200 mm thick. Where the inner firebox face is lined with firebrick, the minimum outer wall thickness may be reduced to 150 mm, as the firebrick provides the additional thermal protection. Option C incorrectly reduces to 100 mm. Option D (250 mm) is the firebox wall thickness, not the outer wall.",
+      "explanation": "Outer wall: 200 mm standard, 150 mm with firebrick inner face. Firebox wall: 250 mm standard, 200 mm with firebrick. Hearth: ≥100 mm thick. These four distinct wall thickness values are each independently testable.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f0ece378aef968b134b31fd4a64e325dcbb29a90c323e0b5641f2d5a47426461"
+    },
+    {
+      "question_id": "f705bad3-a2e0-4b3d-91ac-a6d99a9e38f2",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Sec. 1211 specifies hearth dimensions for masonry fireplaces. What are the minimum required projections of the hearth in front of and to the sides of the fireplace opening?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 mm in front of the opening and 200 mm on each side of the opening"
+        },
+        {
+          "id": "b",
+          "text": "450 mm in front of the opening and 300 mm on each side of the opening"
+        },
+        {
+          "id": "c",
+          "text": "600 mm in front of the opening and 450 mm on each side of the opening"
+        },
+        {
+          "id": "d",
+          "text": "500 mm in front of the opening and 350 mm on each side of the opening"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 requires hearths to project at least 450 mm in front of the fireplace opening and at least 300 mm beyond each side of the opening. These dimensions ensure that falling embers land on non-combustible hearth material rather than on adjacent flooring. The hearth must also be at least 100 mm thick.",
+      "explanation": "Hearth: 450 mm front, 300 mm sides, 100 mm thick. Three separate hearth dimensions. The asymmetry (450 front vs 300 sides) reflects that embers are more likely to roll forward than sideways when falling from a fireplace opening.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb25ad14cd8ab7982589fba4ffd41ff9d69bee059d5671ddc6dc228d6bb5cf06"
+    },
+    {
+      "question_id": "9033159a-1dd8-42de-8fa8-303da69b6cc1",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1211, what is the minimum clearance between a chimney and combustible framing WITHIN the building structure (interior clearance)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 mm from all combustible framing both inside and outside the building structure"
+        },
+        {
+          "id": "b",
+          "text": "50 mm from all combustible framing within the building structure"
+        },
+        {
+          "id": "c",
+          "text": "100 mm from combustible framing inside and 50 mm from combustible framing outside"
+        },
+        {
+          "id": "d",
+          "text": "150 mm from all combustible materials both inside and outside the building"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 establishes two clearances: (1) Within the structure — 50 mm minimum clearance from all combustible framing; (2) Outside the structure — 25 mm minimum clearance from combustible materials. These are different values for different zones. Option A uses 25 mm for both (interior should be 50 mm). Option D uses 150 mm (which is the fireplace opening clearance, not framing clearance).",
+      "explanation": "Interior clearance = 50 mm; Exterior clearance = 25 mm. The interior requires more clearance because heat transfer to concelead combustible framing is harder to detect and more dangerous. The 150 mm figure belongs to fireplace opening clearances, not framing clearances.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ee46dbac9eecfa3df56ce81e01f105c0df018e31b508cf3b4fa4768dc3c29e8"
+    },
+    {
+      "question_id": "220385c8-6d94-46a0-9363-f42f253cc596",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A residential chimney uses fire clay lining. Under Sec. 1211, at what point below the lowest smoke inlet must the fire clay lining begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At the same level as the lowest smoke inlet — lining starts at the inlet itself"
+        },
+        {
+          "id": "b",
+          "text": "At least 100 mm below the lowest smoke inlet"
+        },
+        {
+          "id": "c",
+          "text": "At least 200 mm below the lowest smoke inlet"
+        },
+        {
+          "id": "d",
+          "text": "At least 300 mm below the lowest smoke inlet"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 requires that fire clay lining begin at least 200 mm below the lowest smoke inlet (the point where combustion gases enter the flue). This ensures that the transition zone between the firebox/connection point and the lined flue is also protected, preventing heat damage to unlined masonry at the most thermally stressed entry point.",
+      "explanation": "200 mm below the lowest inlet — not at the inlet, not 100 mm, not 300 mm. The lining must extend beyond the inlet zone to protect the masonry at the highest-temperature point of the flue system.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:988436c8ac4839e2c2ae669e4f97bc04869ab37f5272f95f4cc2a8b83636b54d"
+    },
+    {
+      "question_id": "338ca640-3d19-4318-a056-5a853d5deb90",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "As an alternative to fire clay lining, Sec. 1211 permits the use of firebrick. What minimum thickness of firebrick lining satisfies the Code's thermal protection requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 mm of firebrick as an alternative to fire clay lining"
+        },
+        {
+          "id": "b",
+          "text": "200 mm of firebrick as an alternative to fire clay lining"
+        },
+        {
+          "id": "c",
+          "text": "500 mm of firebrick as an alternative to fire clay lining"
+        },
+        {
+          "id": "d",
+          "text": "300 mm of firebrick as an alternative to fire clay lining"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 specifies that firebrick may substitute for fire clay lining provided the firebrick thickness is at least 500 mm. This substantially greater thickness (compared to fire clay tile lining) compensates for the lower thermal resistance per unit thickness of standard firebrick versus specialized fire clay liner tiles.",
+      "explanation": "Fire clay lining = standard; Firebrick alternative = 500 mm minimum. The 500 mm thickness is counterintuitively large — it reflects the fact that firebrick requires much greater mass to achieve equivalent thermal protection to purpose-made fire clay liner tiles.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:68467bd1fed34501bcf1db7f6a8fe954acd7541b8a9ebd23190feab82f688e51"
+    },
+    {
+      "question_id": "0fb3f57e-eff6-4c96-8b89-86a0acd810f0",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A commercial incinerator burns 95 kg of waste per hour with a grate area of 0.45 sq.m. Under Sec. 1211, how is this incinerator classified, and what chimney lining rule applies to it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Large incinerator — classified as large because the grate exceeds 0.40 sq.m; medium-heat chimney lining rules apply"
+        },
+        {
+          "id": "b",
+          "text": "Small incinerator — burning rate ≤110 kg/hr AND grate ≤0.50 sq.m; fire clay lining to top required for chimneys ≤7.50 m"
+        },
+        {
+          "id": "c",
+          "text": "Small incinerator — burning rate ≤110 kg/hr AND grate ≤0.50 sq.m; no lining required for outdoor incinerators"
+        },
+        {
+          "id": "d",
+          "text": "Large incinerator — classified as large because burning rate exceeds 90 kg/hr; high-heat chimney rules apply"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 defines a SMALL commercial incinerator as one with a burning rate ≤110 kg/hr AND a grate area ≤0.50 sq.m — both conditions must be satisfied simultaneously. This incinerator burns 95 kg/hr (≤110 ✓) and has a 0.45 sq.m grate (≤0.50 ✓), so it qualifies as small. For medium-heat appliances with chimneys ≤7.50 m, fire clay lining to the top is required. Option A and D incorrectly classify it as large.",
+      "explanation": "Small incinerator: ≤110 kg/hr AND ≤0.50 sq.m grate — BOTH criteria required. 95 kg/hr passes; 0.45 sq.m passes → small. Medium-heat chimney ≤7.50 m → lining to top. This question tests dual-criteria classification plus the associated chimney rule.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:194b80387b18cf544ee054ff416cd3d82b498897738dfdfd517969489e5ad875"
+    },
+    {
+      "question_id": "ba8f89a4-a0b3-470d-86ac-b995dbc0ae52",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule XII, Sec. 1211 of PD 1096, what are the two simultaneous height requirements a chimney must satisfy relative to the roof?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least 300 mm above the roof ridge AND at least 300 mm above any part of the building within 3.00 m"
+        },
+        {
+          "id": "b",
+          "text": "At least 600 mm above the roof AND at least 600 mm above any part of the building within 3.00 m"
+        },
+        {
+          "id": "c",
+          "text": "At least 900 mm above the roof ridge AND at least 600 mm above any adjacent building within 6.00 m"
+        },
+        {
+          "id": "d",
+          "text": "At least 600 mm above the roof AND at least 1.00 m above any building part within 5.00 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 requires chimneys to project at least 600 mm above the highest point where they pass through the roof AND at least 600 mm above any part of the building within a horizontal distance of 3.00 m. Both conditions must be met simultaneously. Option A uses 300 mm (half the correct value). Options C and D use wrong distances or wrong horizontal clearances.",
+      "explanation": "600 mm above roof + 600 mm above any building part within 3.00 m. Both thresholds are the same (600 mm) but apply to different reference points. The 3.00 m horizontal distance is the radius within which nearby building parts must be considered.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f77398c3669b2c2ea3c0c85401ed54ef4c5d8d39e70ceb7ebfab1a803a885b33"
+    },
+    {
+      "question_id": "9ea9e7c7-e1b7-4b38-a224-369309b83440",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1211, what is the minimum gauge specification for the metal damper plate in a masonry fireplace, and what percentage of the flue cross-sectional area must it cover when fully open?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No. 10 gauge steel; must cover at least 75% of the flue area when fully open"
+        },
+        {
+          "id": "b",
+          "text": "No. 12 gauge steel; must cover at least 90% of the flue area when fully open"
+        },
+        {
+          "id": "c",
+          "text": "No. 14 gauge steel; must cover 100% of the flue area when fully open"
+        },
+        {
+          "id": "d",
+          "text": "No. 12 gauge steel; must cover at least 80% of the flue area when fully open"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 specifies that dampers must be fabricated from No. 12 gauge steel (minimum) and when fully open, must provide an opening equal to at least 90% of the cross-sectional area of the flue. This ensures adequate draft when the fireplace is in use while still allowing the damper to fully close when not in use.",
+      "explanation": "Damper specs: No. 12 gauge + 90% of flue area when open. Both figures are precise and independently testable. The 90% requirement prevents damper installation that would unduly restrict draft even when fully retracted.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d9a7dded2acdc400ce712acf9bb913e7604909bb35219a56bb3cb61b0da4948d"
+    },
+    {
+      "question_id": "e81cee3f-7421-458e-8e13-6f240213e1c7",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "PD 1096 and NFPA 211 specify different maximum mesh opening sizes for chimney spark arresters. What are the respective Philippine and US standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PD 1096: maximum 25 mm openings; NFPA 211: maximum 20 mm openings"
+        },
+        {
+          "id": "b",
+          "text": "PD 1096: maximum 20 mm openings; NFPA 211: maximum 12.7 mm openings"
+        },
+        {
+          "id": "c",
+          "text": "PD 1096: maximum 15 mm openings; NFPA 211: maximum 12.7 mm openings"
+        },
+        {
+          "id": "d",
+          "text": "PD 1096: maximum 12.7 mm openings; NFPA 211: maximum 20 mm openings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The Philippine standard (PD 1096/2004 IRR) permits spark arrester mesh openings up to 20 mm maximum. NFPA 211 (US standard) requires tighter mesh with openings not exceeding 12.7 mm (1/2 inch). The Philippine standard is therefore less restrictive — allowing larger mesh openings — than the US standard. Option D reverses the two standards.",
+      "explanation": "PH = 20 mm max; US (NFPA 211) = 12.7 mm max. Philippine standard is more permissive. This is a classic comparison question: Philippine vs international standard. The direction of difference (PH allows larger) is the testable fact.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211; NFPA 211",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7890227ec060fbb90592c057bd64510a6056a16444f3de3a013c3300cfe073f2"
+    },
+    {
+      "question_id": "b2b5d849-b20f-4117-a9cd-c1a6405455ef",
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A masonry chimney corbels outward from a structural wall. Under Sec. 1211, what is the maximum total corbeling distance allowed, the minimum required wall thickness before corbeling, and the maximum projection per course?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Max total corbeling: 200 mm; min wall thickness: 200 mm; max per course: 30 mm"
+        },
+        {
+          "id": "b",
+          "text": "Max total corbeling: 150 mm; min wall thickness: 300 mm; max per course: 25 mm"
+        },
+        {
+          "id": "c",
+          "text": "Max total corbeling: 100 mm; min wall thickness: 250 mm; max per course: 20 mm"
+        },
+        {
+          "id": "d",
+          "text": "Max total corbeling: 150 mm; min wall thickness: 200 mm; max per course: 50 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1211 specifies three simultaneous corbeling constraints: (1) maximum total corbeling distance = 150 mm; (2) minimum wall thickness before corbeling begins = 300 mm; (3) maximum projection per individual course = 25 mm. All three must be satisfied. Option A uses wrong values. Option C uses different wrong values. Option D has 50 mm per course (double the correct limit).",
+      "explanation": "Three corbeling rules: 150 mm total maximum, 300 mm minimum wall, 25 mm per course maximum. All three apply simultaneously. Corbeling redirects chimney location horizontally while maintaining structural integrity — excessive corbeling creates instability and cracking.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1211",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.791615+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6a0e0fbc3af514d5b7ddbbfc66a87c36d87c15629d18de0b899530dd54fd4688"
+    }
+  ]
+}

@@ -8,37 +8,31 @@
       "question_id": "0ec0a8ff-0730-46f3-8c11-47bb9dd46485",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "An electrical system in a Philippine hospital requires ground resistance ≤ 5 ohms for medical equipment protection (PEC Article 250.56(c)). The site has volcanic soil with a single 2.4 m ground rod measuring 8 ohms. What is the most efficient solution to achieve the 5-ohm target?",
+      "text": "Which statement best defines bonding under the checked PEC language?",
       "options": [
         {
           "id": "a",
-          "text": "Install a second electrode and drive the first electrode to 3.6 m depth, ensuring both are bonded together to reduce resistance"
+          "text": "Permanent joining of metallic parts to form an electrically conductive path with continuity and fault-current capacity."
         },
         {
           "id": "b",
-          "text": "Install a concrete-encased electrode in the building foundation supplemented by the existing ground rod"
+          "text": "Driving a rod into earth only."
         },
         {
           "id": "c",
-          "text": "Replace the ground rod with a larger diameter copper rod, which may improve conductivity but not necessarily achieve the target resistance"
+          "text": "Painting metal parts the same color."
         },
         {
           "id": "d",
-          "text": "Install ground rods at every column foundation point throughout the site, which could be excessive and costly without guaranteed results"
+          "text": "Measuring a room area for lighting load."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Installing a second rod and deeper installation may only achieve 4–5 ohms combined; less efficient than leveraging the Ufer ground.",
-        "c": "Rod diameter is already optimized by PEC; increasing diameter yields minimal resistance reduction.",
-        "d": "Installing rods at multiple locations is expensive and unnecessary; strategic electrode placement is more cost-effective.",
-        "correct": "Combining a 8-ohm ground rod with a concrete-encased Ufer electrode creates a parallel system. Since Ufer grounds in Philippine tropical soil typically achieve 3–5 ohms resistance (due to constant moisture), the parallel combination of 8 ohms (rod) with 3–5 ohms (Ufer) yields approximately 2–3 ohms, well below the 5-ohm sensitive-equipment threshold.",
-        "takeaway": "For sensitive equipment requiring ≤5 ohms, combining ground rods with concrete-encased electrodes creates parallel paths for lowest resistance in Philippine installations."
-      },
+      "rationale": "PEC bonding is about permanent metallic continuity and safe current-carrying capacity.",
       "explanation": null,
       "code_citation": "PEC Article 250.56(c); parallel grounding principles",
       "bloom_level": "apply",
@@ -51,30 +45,30 @@
       "model_id": "ALE-UTIL-003-05-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.375871+00:00",
       "content_hash": "sha256:06844e5f2a2d30608a3cc6f5ebf03869a3d604b991e58b49f6ebb47842014ae0"
     },
     {
       "question_id": "21084f66-e82d-49d5-b000-a7de4c55d026",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "In a Philippine building, AFCI protection is required in bedrooms, and GFCI protection is required in bathrooms. Which statement correctly describes the functional difference between these devices?",
+      "text": "Which statement best defines grounding in this source-audited article?",
       "options": [
         {
           "id": "a",
-          "text": "AFCI detects arcing faults and interrupts within 250 ms; GFCI detects leakage current and interrupts within 25 ms"
+          "text": "Connecting equipment, circuits, or wiring systems to a grounding electrode or electrodes."
         },
         {
           "id": "b",
-          "text": "GFCI detects arcing and protects against fire; AFCI detects ground faults and protects against electrocution, which is a common misunderstanding"
+          "text": "Joining decorative trim for appearance only."
         },
         {
           "id": "c",
-          "text": "Both devices function identically but are named differently by regional preference, which is incorrect"
+          "text": "Selecting a wall finish."
         },
         {
           "id": "d",
-          "text": "AFCI is required for 220 V systems; GFCI is required for 120 V systems only, which is not applicable in the Philippines"
+          "text": "Balancing an air diffuser."
         }
       ],
       "correct_option_id": "a",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "The functions are reversed; AFCI detects arcing (fire protection), GFCI detects leakage (electrocution protection).",
-        "c": "AFCI and GFCI function differently and protect against different hazards; they are not interchangeable.",
-        "d": "PEC device requirements are based on location and hazard type, not voltage; Philippine 220 V residential systems use the same requirements as other voltages.",
-        "correct": "PEC Article 210.12(a) requires AFCI protection in bedrooms with 250 ms detection of arcing current (20–150 A range). PEC Article 210.8 requires GFCI in bathrooms with 25 ms detection of ground fault leakage ≥5 mA. These are distinct hazards: arcing causes fires; ground faults cause electrocution.",
-        "takeaway": "AFCI and GFCI are distinct: AFCI detects dangerous arcing within 250 ms (fire protection); GFCI detects leakage current within 25 ms (electrocution protection)."
-      },
+      "rationale": "PEC grounding conductor language connects equipment, circuits, or wiring systems to electrodes.",
       "explanation": null,
       "code_citation": "PEC Article 210.8(b)(2) and 210.12(a)",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-003-05-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.382716+00:00",
       "content_hash": "sha256:bd7899d35f2ea989b71142fc05465a8361cccfe9b16ed3fbe0a097bd8a4568a2"
     },
     {
       "question_id": "7df25e02-af42-41d0-88d3-0e4390857cdd",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "A building's structural steel is bonded to the service ground with continuity testing showing 3 ohms resistance across the main bonding connection. The bonding conductor is 6 AWG copper. According to PEC Article 250.94, is this bonding installation compliant?",
+      "text": "What is an equipment grounding conductor used to connect?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because copper bonding conductors have inherently low resistance regardless of size, ensuring effective grounding in most installations"
+          "text": "Non-current-carrying metal equipment parts, raceways, and enclosures to the grounded conductor or grounding electrode conductor path."
         },
         {
           "id": "b",
-          "text": "Yes, because the measured continuity of ≤5 ohms confirms proper bonding connection"
+          "text": "Only plumbing fixture traps."
         },
         {
           "id": "c",
-          "text": "No, because bonding conductors must have zero resistance to ensure absolute safety and compliance with all electrical codes"
+          "text": "Only finish hardware."
         },
         {
           "id": "d",
-          "text": "No, because 6 AWG is too small for structural steel bonding, which typically requires larger conductors for adequate safety"
+          "text": "Only door swing symbols."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Copper's low resistivity is important, but PEC still requires verification testing to ≤5 ohms.",
-        "c": "Zero resistance is impossible in practice; PEC recognizes practical limitations and permits ≤5 ohms.",
-        "d": "PEC Article 250.8 permits mechanical clamps of appropriate size; 6 AWG is typical for large buildings.",
-        "correct": "PEC Article 250.94 requires effective bonding for low impedance fault current path; continuity verified by low resistance (typically <1 ohm in practice). The measured 3 ohms confirms proper electrical connection between the structural steel and the service ground. This resistance includes the contact resistance of the mechanical connector and is within acceptable limits.",
-        "takeaway": "Structural steel bonding continuity must be verified at ≤5 ohms resistance per PEC Article 250.94; measured 3 ohms indicates proper connection."
-      },
+      "rationale": "The checked PEC definition identifies non-current-carrying metal equipment parts, raceways, and enclosures.",
       "explanation": null,
       "code_citation": "PEC Article 250.94; Article 250.8 on mechanical clamps",
       "bloom_level": "apply",
@@ -151,30 +133,30 @@
       "model_id": "ALE-UTIL-003-05-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.385414+00:00",
       "content_hash": "sha256:3bdb62bc6235682515bed7474d43e19f2550ed75bb7d9467606817b165c885cc"
     },
     {
       "question_id": "75d3743a-b865-4cee-9bf6-c598cc4e91f0",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "A building's concrete foundation contains a 6 m copper conductor embedded for Ufer grounding. The foundation is 1.2 m below grade and remains moist due to tropical humidity. According to PEC Article 250.52(a)(3), is this installation compliant?",
+      "text": "What happens when several grounding electrodes are present at a building?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because concrete maintains moisture and provides excellent contact resistance in tropical climates"
+          "text": "They are bonded together to form the grounding electrode system."
         },
         {
           "id": "b",
-          "text": "No, because the conductor must be buried at least 2.4 m below grade for adequate ground fault dissipation"
+          "text": "Only one is kept and the rest are ignored."
         },
         {
           "id": "c",
-          "text": "Yes, if the concrete foundation extends below the frost line as required for structural frost protection"
+          "text": "They are used as branch-circuit switches."
         },
         {
           "id": "d",
-          "text": "No, because Ufer grounds require a minimum 12 m copper conductor length embedded in the concrete foundation"
+          "text": "They replace all overcurrent devices."
         }
       ],
       "correct_option_id": "a",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "PEC does not require 2.4 m burial depth for Ufer grounds; the requirement is 6 m conductor length in contact with earth.",
-        "c": "Frost line is not a concern in tropical Philippines; Ufer grounds are preferred precisely because tropical moisture maintains excellent contact.",
-        "d": "PEC Article 250.52(a)(3) specifies minimum 6 m, not 12 m, of copper conductor.",
-        "correct": "PEC Article 250.52(a)(3) requires minimum 6 m of copper conductor in concrete in contact with earth. The depth requirement is that concrete be directly in contact with soil, which this installation satisfies. Philippine tropical conditions are ideal for Ufer grounds because concrete remains moist year-round, maintaining consistent resistance.",
-        "takeaway": "Ufer grounds in Philippine construction are highly effective because tropical humidity keeps concrete moist, maintaining stable, low-resistance earth contact."
-      },
+      "rationale": "The checked PEC electrode provision requires present electrodes to be bonded into the grounding electrode system.",
       "explanation": null,
       "code_citation": "PEC Article 250.52(a)(3); LEA-UTIL-003-05 article on Ufer grounds",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-003-05-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.383617+00:00",
       "content_hash": "sha256:dcba1d7b72ed758cf18ea601734028eb3ea03833828680d62eed770b3e94ece2"
     },
     {
       "question_id": "dd53b691-1180-44cc-bb30-c69f78902cbf",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "During the dry season in the Philippines (November–May), a building's ground electrode system is remeasured and shows resistance of 28 ohms (compared to 20 ohms during the wet season). what explains this seasonal variation and what is the appropriate response?",
+      "text": "Which item is listed as an electrode type in the checked PEC provisions?",
       "options": [
         {
           "id": "a",
-          "text": "Soil drying reduces moisture content and increases ground resistance; the system is non-compliant and requires emergency repairs to ensure safety"
+          "text": "A concrete-encased electrode."
         },
         {
           "id": "b",
-          "text": "Seasonal variation of 5–15% in Philippine soil is normal; annual testing is recommended to verify year-round compliance"
+          "text": "Gas piping as a grounding electrode."
         },
         {
           "id": "c",
-          "text": "Ground rods corrode during the dry season; copper-clad rods must be replaced annually to maintain system integrity"
+          "text": "A wooden handrail."
         },
         {
           "id": "d",
-          "text": "The 28 ohms reading is erroneous; dry season soil is more stable and resistance should decrease, indicating a potential measurement error"
+          "text": "A room finish schedule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While 28 ohms approaches the 25-ohm limit, seasonal fluctuation is normal; emergency repairs are not required for expected seasonal variations.",
-        "c": "Corrosion is slower than seasonal moisture effects; annual replacement is unnecessary.",
-        "d": "Dry season reduces soil moisture and increases resistance; the reading is valid and explains the increase.",
-        "correct": "The ALE-UTIL-003-05 article states: 'Seasonal variation in Philippine soil moisture may cause ground resistance fluctuations of 5–15% throughout the year, requiring periodic measurement.' An increase from 20 ohms (wet season) to 28 ohms (dry season) represents an 8 ohm change (40% relative change), which exceeds the typical 5–15% range but remains within expected seasonal behavior. Annual testing is the appropriate response.",
-        "takeaway": "Philippine ground electrode systems experience 5–15% seasonal resistance variation due to dry season moisture loss; annual testing documents this variation and ensures compliance year-round."
-      },
+      "rationale": "The checked electrode list includes concrete-encased electrodes and excludes gas piping as an electrode.",
       "explanation": null,
       "code_citation": "LEA-UTIL-003-05 article: 'Seasonal variation in Philippine soil moisture...'",
       "bloom_level": "apply",
@@ -251,30 +221,30 @@
       "model_id": "ALE-UTIL-003-05-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.387139+00:00",
       "content_hash": "sha256:3497e59355fa912eee2a0e9cb2f6dfa61242cfcb5a6162cd4a3e11a24d6de9ba"
     },
     {
       "question_id": "150b7e15-c95f-4f3f-8f07-97e81e7fa2f4",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "A Philippine building specification requires lightning protection grounding with a dedicated ground electrode system separate from the service ground (PEC Article 250.60(a)). The lightning electrode measures 12 ohms and the service ground measures 20 ohms. If these electrodes are separated by 1.8 m, what does the PEC require?",
+      "text": "Which item is not source-safe as a grounding electrode under the checked PEC provision?",
       "options": [
         {
           "id": "a",
-          "text": "The electrodes must be bonded together because the separation distance is the minimum, not adequate isolation"
+          "text": "Gas piping."
         },
         {
           "id": "b",
-          "text": "The electrodes must be bonded together to create a unified 5–6 ohm system for fault current distribution across both grounding paths"
+          "text": "Metal underground water pipe with required earth contact."
         },
         {
           "id": "c",
-          "text": "The electrodes may remain separate because 1.8 m separation satisfies the PEC ≥1.8 m requirement for independent grounding electrode systems"
+          "text": "Metal frame of the building where qualified."
         },
         {
           "id": "d",
-          "text": "The lightning electrode must be replaced with a larger diameter rod to achieve the required maximum 10-ohm resistance specified by the PEC"
+          "text": "Rod or pipe electrodes installed under the checked rules."
         }
       ],
       "correct_option_id": "a",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "While bonding creates a unified system, the stated reason (5–6 ohm combined resistance) is approximate; the PEC requirement is not rigorous about combined resistance for separate lightning/service grounds.",
-        "c": "While 1.8 m separation technically satisfies PEC Article 250.60(a), the standard's 'OR bonded together' clause indicates that bonding is equally acceptable and may be preferred for Philippine coastal lightning environments.",
-        "d": "Rod sizing is not the solution; the PEC explicitly permits separation or bonding.",
-        "correct": "PEC Article 250.60(a) states: 'Lightning grounding electrodes must be separated ≥1.8 m (6 feet) from service ground OR bonded together.' The word 'OR' indicates two acceptable options. Separation at exactly 1.8 m meets the letter of the requirement, but best practice in the Philippines often requires bonding for unified system protection and to prevent dangerous voltage gradients during lightning strikes.",
-        "takeaway": "PEC Article 250.60(a) permits lightning grounding electrodes to be either ≥1.8 m separated from service ground OR bonded together; bonding is often preferred in Philippine installations for unified protection."
-      },
+      "rationale": "The checked PEC provision excludes gas piping from use as a grounding electrode.",
       "explanation": null,
       "code_citation": "PEC Article 250.60(a); LEA-UTIL-003-05 article on lightning protection",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-003-05-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.379829+00:00",
       "content_hash": "sha256:fdda694e4155cbb486443434f4c06c1b946ae8e70fa09d569c51796e5a97d36c"
     },
     {
       "question_id": "0c4da5ce-765a-4eeb-b6c3-e9e865f61761",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "A ground rod installation in Philippine volcanic soil measures 18 ohms resistance after a 2.4 m installation. If a second electrode is added 1.8 m away and measures 19 ohms individually, what is the minimum expected combined resistance of the two-electrode system?",
+      "text": "Why is bonding necessary in an electrical installation?",
       "options": [
         {
           "id": "a",
-          "text": "37 ohms (sum of both electrodes)"
+          "text": "It provides electrical continuity and capacity to conduct fault current safely."
         },
         {
           "id": "b",
-          "text": "18.5 ohms (average of both electrodes)"
+          "text": "It changes the architectural occupancy classification."
         },
         {
           "id": "c",
-          "text": "9 ohms (both electrodes effectively combined)"
+          "text": "It replaces all conductor insulation."
         },
         {
           "id": "d",
-          "text": "Between 9 and 10 ohms"
+          "text": "It eliminates the need for any equipment grounding path."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Simply adding resistances (37 ohms) is incorrect; electrodes in parallel reduce combined resistance below individual values.",
-        "b": "Averaging (18.5 ohms) is a rough approximation that underestimates the combined benefit of parallel electrodes.",
-        "c": "This range is closer to actual parallel resistance calculation and reflects real-world conditions with adequate spacing.",
-        "correct": "When two equal-resistance electrodes are spaced adequately (≥1.8 m), combined resistance approaches approximately half of a single electrode resistance. With 18 and 19 ohms individually, combined resistance ≈ (18 × 19)/(18 + 19) ≈ 9.4 ohms, which meets the 25-ohm requirement.",
-        "takeaway": "Two ground electrodes spaced ≥1.8 m apart combine in parallel; combined resistance ≈ (R₁ × R₂)/(R₁ + R₂), resulting in lower total resistance than either electrode alone."
-      },
+      "rationale": "The PEC bonding definition ties bonding to electrical continuity and current-carrying capacity.",
       "explanation": null,
       "code_citation": "PEC Article 250.56(b)(1); fundamental parallel resistance principles",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-003-05-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.377871+00:00",
       "content_hash": "sha256:b379e0b4ceaf435c6d635e200a67a83087cd1c8b8f69c82d243af50f1509e39d"
     },
     {
       "question_id": "ee2b54b0-34bf-487e-9c39-0b3039f8855c",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "According to PEC Article 110.26, what is the minimum combined working clearance requirement for electrical equipment that has 0.9 m (30 inches) width?",
+      "text": "Which phrase most clearly indicates grounding rather than bonding?",
       "options": [
         {
           "id": "a",
-          "text": "Depth 1 m (3 feet), Width 0.9 m, Height 2.1 m (7 feet), ensuring adequate space for maintenance and operation"
+          "text": "Connection to earth through a grounding electrode."
         },
         {
           "id": "b",
-          "text": "Depth 0.9 m, Width 0.9 m, Height 2.0 m, which is suitable for most standard installations"
+          "text": "Permanent joining of metal parts for continuity."
         },
         {
           "id": "c",
-          "text": "Depth 1 m (3 feet), Width 1 m (3 feet), Height 2.1 m (7 feet)"
+          "text": "Bonding jumper across metallic parts."
         },
         {
           "id": "d",
-          "text": "Depth 0.75 m (2.5 feet), Width 0.9 m, Height 1.8 m (6 feet), providing minimal clearance for compact spaces"
+          "text": "Ensuring metal piping is electrically continuous."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While depth and height are correct, the width requirement states 'greater of equipment width or 75 cm'; 0.9 m satisfies this, but some might interpret it as requiring at least 1 m minimum.",
-        "b": "0.9 m depth does not meet the 1 m minimum requirement.",
-        "d": "0.75 m (2.5 feet) depth does not meet the 1 m minimum, and height requirement is 2.1 m, not 1.8 m.",
-        "correct": "PEC Article 110.26(a) requires: (1) minimum 1 m (3 feet) depth in front of equipment; (2) width equal to equipment width or 75 cm (2.5 feet), whichever is greater (0.9 m > 0.75 m, so 0.9 m width is adequate); and (3) minimum 2.1 m (7 feet) height above equipment. In this case: 1 m depth, 0.9 m width is acceptable, 2.1 m height minimum.",
-        "takeaway": "PEC Article 110.26 minimum working clearances: 1 m depth, width = equipment width or 75 cm (whichever is greater), height = 2.1 m; all three dimensions must be met."
-      },
+      "rationale": "Grounding is the earth or electrode connection; bonding is metallic continuity.",
       "explanation": null,
       "code_citation": "PEC Article 110.26(a)(1), (a)(2), (a)(3)",
       "bloom_level": "understand",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-003-05-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.373368+00:00",
       "content_hash": "sha256:93b2e3298ba72cc3cb63ac8beb32d00c6cff115b160699dae2c1d9d50de21c53"
     },
     {
       "question_id": "4c94086d-d7fc-43d0-84d8-51775c0f163d",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "In a 220 V single-phase Philippine residential service, a 40 A subcircuit protects an air conditioning unit. What is the minimum copper equipment grounding conductor size required, and why is this sizing critical in Philippine installations?",
+      "text": "Which conductor material is supported for grounding electrode conductors under the checked PEC provision?",
       "options": [
         {
           "id": "a",
-          "text": "5.26 mm² (10 AWG) because 40 A requires large conductors; undersizing risks fire during fault current"
+          "text": "Copper, aluminum, or copper-clad aluminum subject to the Code conditions."
         },
         {
           "id": "b",
-          "text": "5.26 mm² (10 AWG) because PEC Table 250.122(A) specifies this size for 40 A overcurrent protection"
+          "text": "Only plastic rope."
         },
         {
           "id": "c",
-          "text": "3.31 mm² (12 AWG) because 220 V systems allow smaller conductors than 120 V systems"
+          "text": "Only wood strips."
         },
         {
           "id": "d",
-          "text": "8.37 mm² (8 AWG) because tropical humidity increases corrosion risk and requires oversizing"
+          "text": "Only unmarked communications cable."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While fire risk is a valid concern, the primary reason for sizing is the PEC table requirement, not voltage-dependent hazard.",
-        "c": "Voltage level does not affect equipment grounding conductor sizing; PEC sizing is based on overcurrent device rating only.",
-        "d": "Tropical humidity may require corrosion-resistant materials (copper or copper-clad), but PEC sizing tables do not include oversizing allowances for climate.",
-        "correct": "PEC Article 250.122, Table 250.122(A) specifies minimum 5.26 mm² (10 AWG) copper for equipment grounding on 40 A overcurrent protection. This sizing ensures the grounding path safely carries fault current to the service ground. Philippine 220 V systems use the same PEC conductor sizing as other voltages.",
-        "takeaway": "Equipment grounding conductors are sized per PEC Table 250.122(A) based on overcurrent device rating; voltage level does not affect sizing requirements."
-      },
+      "rationale": "The checked PEC grounding electrode conductor provision lists these conductor materials with conditions.",
       "explanation": null,
       "code_citation": "PEC Article 250.122, Table 250.122(A); LEA-UTIL-003-05 voltage standards",
       "bloom_level": "apply",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-003-05-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.376878+00:00",
       "content_hash": "sha256:8c06b38574017d215c1f731988b995bfcb9f08c877b15eee7dbab1e8d8235eed"
     },
     {
       "question_id": "9e2e4c94-285b-4f10-8fa0-3ada94ea518b",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "In Philippine coastal construction with salt-contaminated soil, a ground electrode system achieves 32 ohms resistance with a single 2.4 m rod. According to the PEC, what must the electrical engineer specify for compliance?",
+      "text": "What is the source-safe role of a bonding jumper?",
       "options": [
         {
           "id": "a",
-          "text": "Install a deeper rod to 3.6 m length instead"
+          "text": "It ensures required electrical conductivity between metal parts."
         },
         {
           "id": "b",
-          "text": "Accept the 32 ohms as acceptable in tropical soil conditions"
+          "text": "It calculates occupancy load."
         },
         {
           "id": "c",
-          "text": "Install a second electrode at least 1.8 m away from the first"
+          "text": "It labels room finishes."
         },
         {
           "id": "d",
-          "text": "Switch to a concrete-encased electrode instead of ground rods"
+          "text": "It replaces the service entrance conductors."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Simply deepening a single rod may not achieve 25 ohms in high-salinity soil; a second electrode is the required solution.",
-        "b": "PEC does not permit acceptance of resistance above 25 ohms for a single electrode; compliance requires additional action.",
-        "d": "While concrete-encased electrodes are effective in the Philippines, the PEC permits alternative solutions; the second ground rod is explicitly required here.",
-        "correct": "PEC Article 250.53(A)(2) requires supplemental electrode if single rod exceeds 25 ohms; spacing ≥1.8 m recommended for efficiency. Two electrodes spaced ≥1.8 m apart can reduce combined resistance. In Philippine coastal areas with salt-contaminated soil, this approach is standard practice.",
-        "takeaway": "Ground resistance exceeding 25 ohms requires installation of a second electrode at least 1.8 m away; two electrodes combined must meet 25 ohms or lower."
-      },
+      "rationale": "Bonding jumpers provide electrical continuity between metal parts.",
       "explanation": null,
       "code_citation": "PEC Article 250.56(b)(1); LEA-UTIL-003-05 Article text on coastal soil",
       "bloom_level": "understand",
@@ -501,30 +441,30 @@
       "model_id": "ALE-UTIL-003-05-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.380827+00:00",
       "content_hash": "sha256:28e7864dc1552e63552cf129bcf42852ae9d3007e9322bc49e7cb85eb19cd2a8"
     },
     {
       "question_id": "e640ba67-fb61-488b-b351-329f869ac689",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "During a Meralco service connection application for a new Philippine commercial building, the fall-of-potential test shows ground resistance of 23 ohms at the service point. What action is required before Meralco energizes the service?",
+      "text": "Which installation concept should be avoided in an LEA grounding answer?",
       "options": [
         {
           "id": "a",
-          "text": "No action required; 23 ohms meets Meralco's ≤25 ohm specification and can be energized immediately"
+          "text": "Treating a single ground rod as the complete fault-current path without bonding continuity."
         },
         {
           "id": "b",
-          "text": "Install a second electrode to reduce resistance to ≤10 ohms before service activation, ensuring compliance with stricter standards"
+          "text": "Bonding present electrodes into a system."
         },
         {
           "id": "c",
-          "text": "Conduct monthly testing for one year to verify seasonal stability before approval, ensuring long-term reliability"
+          "text": "Using equipment grounding conductors for metal enclosures."
         },
         {
           "id": "d",
-          "text": "Apply for a variance because tropical soil makes lower resistance impossible, acknowledging environmental constraints"
+          "text": "Distinguishing earth connection from bonding."
         }
       ],
       "correct_option_id": "a",
@@ -532,13 +472,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Further reduction is not required; while lower resistance is beneficial, Meralco's specification is ≤25 ohms.",
-        "c": "Initial compliance testing is sufficient; Meralco approval proceeds upon passing the fall-of-potential test.",
-        "d": "Tropical soil conditions do not provide variance; Philippine soils typically achieve good grounding performance.",
-        "correct": "Meralco Specification SR-2020 requires ≤25 ohms ground resistance at the service point. The measured 23 ohms complies with this requirement. The Meralco technician verifies this with a calibrated ground resistance tester using the fall-of-potential method and certifies the result before service activation.",
-        "takeaway": "Meralco service activation requires documented ground resistance ≤25 ohms verified by fall-of-potential testing; compliance permits immediate service energization."
-      },
+      "rationale": "The checked source supports a grounding electrode system plus bonding continuity.",
       "explanation": null,
       "code_citation": "Meralco Specification SR-2020; LEA-UTIL-003-05 article on Meralco requirements",
       "bloom_level": "apply",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-003-05-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.374813+00:00",
       "content_hash": "sha256:2bcefefb2ab12dc95a6d71eb6224c739b1d341292c54bac8d91d882b9ee95ac0"
     },
     {
       "question_id": "e665c34c-13e8-4a92-82db-b9ce1dd41446",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "A metal water piping system must be bonded according to PEC Article 250.104(a)(1). In a Philippine building with a 100 A main overcurrent device, what is the minimum bonding conductor size required?",
+      "text": "Which metal system is explicitly addressed by the checked PEC bonding provisions?",
       "options": [
         {
           "id": "a",
-          "text": "3.31 mm² (12 AWG) copper minimum"
+          "text": "Metal water piping and other metal piping systems."
         },
         {
           "id": "b",
-          "text": "5.26 mm² (10 AWG) copper minimum"
+          "text": "Ceramic floor tile only."
         },
         {
           "id": "c",
-          "text": "8.37 mm² (8 AWG) copper minimum"
+          "text": "Curtain fabric only."
         },
         {
           "id": "d",
-          "text": "13.3 mm² (6 AWG) copper minimum"
+          "text": "Painted wall graphics only."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "3.31 mm² (12 AWG) is the minimum for 20 A circuits, not 100 A mains.",
-        "b": "5.26 mm² (10 AWG) is the minimum for 30 A/40 A circuits, insufficient for 100 A service.",
-        "c": "8.37 mm² (8 AWG) is the minimum for 50 A circuits; the 100 A service requires larger conductor.",
-        "correct": "PEC Article 250.104(a)(1) requires bonding conductor sized per Table 250.122(A) based on the main overcurrent device rating. For 100 A main protection, the table specifies minimum 13.3 mm² (6 AWG) copper. This ensures the water piping can safely carry any fault current without developing dangerous voltage.",
-        "takeaway": "Water piping bonding conductor size matches equipment grounding conductor size for the main overcurrent device; a 100 A main requires 13.3 mm² (6 AWG) copper minimum."
-      },
+      "rationale": "The checked bonding provisions cover metal water piping and other metal piping systems.",
       "explanation": null,
       "code_citation": "PEC Article 250.104(a)(1); PEC Table 250.122(A)",
       "bloom_level": "understand",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-003-05-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.378859+00:00",
       "content_hash": "sha256:8ae2e246e846bc462d4b30a52866e1708f08ed86bb99c7ca27742fca1e18f0c1"
     },
     {
       "question_id": "eb168717-c97e-4397-929b-11b67e906e68",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "According to the Philippine Electrical Code, what is the minimum diameter requirement for a copper-clad grounding rod?",
+      "text": "What makes a connection method source-safe for grounding or bonding?",
       "options": [
         {
           "id": "a",
-          "text": "9.5 mm (3/8 inch)"
+          "text": "It is permanent and effective, with listed connection devices where required and not dependent on solder alone."
         },
         {
           "id": "b",
-          "text": "16 mm (5/8 inch)"
+          "text": "It is temporary tape only."
         },
         {
           "id": "c",
-          "text": "16 mm (5/8 inch)"
+          "text": "It depends only on paint contact."
         },
         {
           "id": "d",
-          "text": "19 mm (3/4 inch)"
+          "text": "It uses a decorative fastener unrelated to conductivity."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "9.5 mm is below the PEC minimum and would not provide adequate cross-sectional area for reliable fault current carrying capacity.",
-        "c": "16 mm is the minimum for galvanized ferrous rods, not copper-clad rods which have a lower requirement.",
-        "d": "19 mm exceeds the minimum requirement and is unnecessarily large for copper-clad conductors.",
-        "correct": "PEC Article 250.52(a)(5) specifies minimum 13 mm (1/2 inch) diameter for copper or copper-clad rods, which is smaller than the 16 mm requirement for ferrous rods because copper has superior electrical conductivity.",
-        "takeaway": "Material type determines grounding rod minimum diameter: ferrous requires 16 mm, copper-clad requires 13 mm minimum."
-      },
+      "rationale": "The checked PEC connection provisions require permanent and effective connections and do not rely on solder alone.",
       "explanation": null,
       "code_citation": "PEC Article 250.52(a)(5)",
       "bloom_level": "remember",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-003-05-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.384522+00:00",
       "content_hash": "sha256:57f4aacf9d046142d86565fa1c391daf123a672c50490fa6466c5d5d1cd26554"
     },
     {
       "question_id": "e8bae89c-0fb3-4332-856f-93a076c3c6d6",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "What is the leakage current threshold at which a GFCI device must activate to prevent electrocution?",
+      "text": "Which answer best separates the two terms?",
       "options": [
         {
           "id": "a",
-          "text": "1 mA ± 0.5 mA"
+          "text": "Grounding connects to earth or electrodes; bonding joins metal parts into a continuous conductive path."
         },
         {
           "id": "b",
-          "text": "5 mA ± 1 mA"
+          "text": "Grounding and bonding always mean the same single action."
         },
         {
           "id": "c",
-          "text": "10 mA ± 2 mA"
+          "text": "Bonding means only driving a ground rod."
         },
         {
           "id": "d",
-          "text": "20 mA ± 3 mA"
+          "text": "Grounding means painting metal parts."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1 mA would cause nuisance trips from normal equipment leakage and is too sensitive for practical application.",
-        "c": "10 mA ± 2 mA is dangerously high and approaches the threshold for cardiac fibrillation in some individuals.",
-        "d": "20 mA would provide insufficient protection and allow dangerous electrical exposure.",
-        "correct": "PEC Article 210.8(b)(2) specifies GFCI activation at 5 mA ± 1 mA leakage current. This threshold is below the 10–20 mA level that causes muscular paralysis and above the 1 mA level that causes sensation.",
-        "takeaway": "GFCI protection activates at 5 mA leakage current, providing protection before serious physiological effects occur."
-      },
+      "rationale": "The checked definitions support this distinction.",
       "explanation": null,
       "code_citation": "PEC Article 210.8(b)(2)",
       "bloom_level": "remember",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-003-05-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.381757+00:00",
       "content_hash": "sha256:e101cfcde9e6ebca689499a3fce9c915ebba38d764a2e06fe88fb5a8add696ad"
     },
     {
       "question_id": "8c9485f0-f98a-4d02-8102-cb2c0e675f53",
       "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
       "topic_id": "96077995-ca59-4fd2-bb92-bf4e34371c57",
-      "text": "According to the PEC, gas piping in a building electrical system must be bonded to ensure safe electrical potential. Why is gas piping not permitted to be used as an equipment grounding conductor?",
+      "text": "Which source family supports this Batch 041 grounding repair?",
       "options": [
         {
           "id": "a",
-          "text": "Because gas piping is plastic and does not conduct electricity, making it unsuitable for grounding purposes"
+          "text": "The local PEC raw PDF, with Electrical Layout and Estimate used for supporting utility explanation."
         },
         {
           "id": "b",
-          "text": "Because gas piping may be isolated by utility-required breaks that interrupt electrical continuity"
+          "text": "An unchecked web summary treated as source truth."
         },
         {
           "id": "c",
-          "text": "Because gas piping corrodes in tropical Philippine environments, which can compromise its integrity over time"
+          "text": "A derivative-only note without raw PDF support."
         },
         {
           "id": "d",
-          "text": "Because PEC requires separate dedicated grounding for all fuel systems to ensure safety and compliance"
+          "text": "An unrelated design-trend article."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Modern gas piping is often metal; plastic is used but not the primary reason for the prohibition.",
-        "c": "Corrosion is a maintenance concern but not the basis for the PEC prohibition.",
-        "d": "PEC allows bonding of gas piping to the service ground; the issue is that it cannot be the equipment grounding return path.",
-        "correct": "PEC Article 250.104(b) prohibits gas piping as an equipment grounding conductor because gas utilities may install isolation unions, regulators, or meter isolators that break electrical continuity. If a fault relied on gas piping for return, an isolation break would leave the fault path incomplete, creating an electrocution hazard.",
-        "takeaway": "Gas piping must be bonded to the service ground but cannot serve as an equipment grounding conductor because utility isolation devices may break electrical continuity."
-      },
+      "rationale": "The repair is limited to the checked local raw PDF source families.",
       "explanation": null,
       "code_citation": "PEC Article 250.104(b); LEA-UTIL-003-05 article on gas piping bonding",
       "bloom_level": "understand",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-003-05-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.386283+00:00",
       "content_hash": "sha256:3e0e1926854baffc889647561f3dd1873399d8497708c5af7ff027ff65f22169"
     }
   ]

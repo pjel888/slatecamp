@@ -1,0 +1,508 @@
+{
+  "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:27c90d618ff6cbae1cc8341e8021f08d8e9b5fdc538226cdf7c8b47a1c491db5",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "93cb4e1d-3381-4e5e-8678-6965ae5dc5b5",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "If defects in workmanship are discovered six months after Substantial Completion, who is responsible for correction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Owner is always responsible for correction after any time period, regardless of the nature of the defect or the terms of the contract"
+        },
+        {
+          "id": "b",
+          "text": "The Contractor is responsible for correction at no cost to the Owner, as the defect falls within the one-year Guarantee Bond period"
+        },
+        {
+          "id": "c",
+          "text": "The Contractor is responsible only if the defect is significant; minor defects are the Owner's responsibility, unless otherwise specified in the contract"
+        },
+        {
+          "id": "d",
+          "text": "Both the Contractor and Owner share the cost equally, unless the defect is due to a design error, in which case the architect may also be involved"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Eliminates guarantee protection; the Contractor's Guarantee Bond covers defects during the one-year period at contractor expense.",
+        "c": "Introduces subjective threshold; the guarantee covers all defects regardless of significance—there is no minor/major distinction in the guarantee obligation.",
+        "d": "Shares cost inappropriately; the Contractor bears 100% of defect correction costs during the guarantee period.",
+        "correct": "During the one-year guarantee period beginning at Substantial Completion, the Contractor must correct all defects reported by the Owner or Architect at no additional cost to the Owner.",
+        "takeaway": "Defects discovered within one year of Substantial Completion are the Contractor's responsibility to correct at no cost."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff39fae4cf95644a52991fc44f7adc6986d5b41a9e0c89fb2e59403230dddf40"
+    },
+    {
+      "question_id": "9e62295e-bf4e-4dd5-a066-ffed0d28cf6d",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "In the hierarchy of document interpretation under Doc 301, what is the correct order of precedence if conflicts exist?",
+      "options": [
+        {
+          "id": "a",
+          "text": "General Conditions, then Specifications, then Drawings, then Special Provisions in descending order of authority"
+        },
+        {
+          "id": "b",
+          "text": "Agreement as modified by Notice of Award, then Instructions to Bidders and amendments, then Addenda, then Drawings, then Specifications, then General Conditions"
+        },
+        {
+          "id": "c",
+          "text": "Specifications always prevail over all other documents regardless of the nature or timing of the conflicting provision"
+        },
+        {
+          "id": "d",
+          "text": "The Contractor chooses which conflicting provision to follow based on practical construction considerations and cost impact"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Inverts the hierarchy; General Conditions are lowest precedence, not highest.",
+        "c": "Oversimplifies; while Specifications prevail over General Conditions, Drawings and prior amendments take precedence over Specifications.",
+        "d": "Eliminates hierarchy entirely; the Contractor must follow the highest-ranking document in case of conflict—not the Contractor's choice.",
+        "correct": "The hierarchy of interpretation applies when conflicts exist among contract documents: Agreement as modified by Notice of Award; Instructions to Bidders and amendments; Addenda; Drawings; Specifications; General Conditions; other documents.",
+        "takeaway": "Document hierarchy in order: Agreement/Notice of Award, then Bidding Instructions, Addenda, Drawings, Specifications, then General Conditions."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3dbd9f80ff7bc930479e38ad7c105936a3e3a267046ef20771c4a1bf5d90e4c3"
+    },
+    {
+      "question_id": "efcb9fe3-08a7-4c5d-b208-4f7d75480cfe",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "If a Change Order would increase the total contract price by more than 25%, what procedure does Doc 301 typically establish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Change Order is prohibited and the Owner must hire a different contractor, as the original contract terms cannot accommodate such a significant increase"
+        },
+        {
+          "id": "b",
+          "text": "The Contractor is automatically entitled to the increase without further evaluation, bypassing any additional approval processes"
+        },
+        {
+          "id": "c",
+          "text": "The Owner may require the Contractor to proceed under protest, with the final cost determined after competitive evaluation or other method specified in the Contract Documents"
+        },
+        {
+          "id": "d",
+          "text": "The Architect unilaterally decides the cost without Owner involvement, ensuring that the project remains within budget constraints"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Prohibits legitimate work; large Change Orders are permitted but subject to cost evaluation to protect the Owner.",
+        "b": "Grants unqualified entitlement; the Contractor proceeds under protest while cost is evaluated—entitlement is not automatic.",
+        "d": "Excludes Owner from decision; the Owner controls whether to proceed and by what method the cost is determined.",
+        "correct": "IfDoc 301 does not specify a percentage threshold like 25% for Change Orders; large changes are handled via formal Change Orders with Architect/Owner approval as per the document's procedures.otest, with final cost determined after competitive evaluation or other method as specified.",
+        "takeaway": "Change Orders exceeding 25% allow the Owner to require contractor to proceed under protest pending final cost evaluation."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e11381c4f9cd1f0fdf0c7b46ddad528970eb8a6cb11337bd37b43fe997270d12"
+    },
+    {
+      "question_id": "bdcab46d-30bc-41a4-860a-8a66efd4ac2e",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "What event triggers the commencement of the one-year Contractor Guarantee Bond period?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The date the Contract is signed, which marks the formal agreement between parties but not the start of the guarantee period"
+        },
+        {
+          "id": "b",
+          "text": "The date the Architect certifies Substantial Completion"
+        },
+        {
+          "id": "c",
+          "text": "The date the final payment is made to the Contractor, indicating financial closure but not necessarily the start of the guarantee"
+        },
+        {
+          "id": "d",
+          "text": "The date the Owner takes possession of the site, which may occur before or after substantial completion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Starts guarantee too early; the guarantee begins at Substantial Completion (when work is ready for occupancy), not at contract signing.",
+        "c": "Ties guarantee to payment timing; the guarantee period is tied to Substantial Completion (physical state of work), not to final payment date.",
+        "d": "Confuses ownership with completion; Substantial Completion is when the architect certifies readiness for use—Owner possession follows, but doesn't define the period start.",
+        "correct": "The Architect certifies Substantial Completion in writing, establishing the date from which the one-year Guarantee Bond period commences.",
+        "takeaway": "The one-year guarantee period begins when the Architect certifies Substantial Completion, not at contract signing or final payment."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d849c6c974f203444f53986647a9c2f7439151deb8d232bc70cd9039277eda7"
+    },
+    {
+      "question_id": "7a6b7153-317f-4e4a-bdfd-8bd8b0b2ac14",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "What is the distinction between the Architect's role as Owner's representative and the Architect's role as impartial contract interpreter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "These are the same role; the Architect always advocates exclusively for the Owner, ensuring their interests are prioritized"
+        },
+        {
+          "id": "b",
+          "text": "As Owner's representative during design, the Architect advocates for the Owner's interests; during construction, the Architect interprets the Contract Documents impartially to both Owner and Contractor, issuing directives that bind both parties"
+        },
+        {
+          "id": "c",
+          "text": "The Architect has no obligation to act impartially; the Architect always favors the Owner, regardless of the situation"
+        },
+        {
+          "id": "d",
+          "text": "These roles are incompatible and should never be assigned to the same person, as it creates a conflict of interest"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Eliminates impartiality requirement; the Architect must interpret the contract impartially during construction, even though appointed by the Owner.",
+        "c": "Removes fairness obligation; the Architect's duty to interpret impartially is distinct from and sometimes contradicts exclusive owner advocacy.",
+        "d": "Declares roles incompatible; Doc 301 intentionally combines these roles—the same person serves as owner advocate during design and impartial interpreter during construction.",
+        "correct": "The Architect's dual role—Owner's agent during design and impartial contract administrator during construction—is central to Doc 301's framework, allowing the Architect to issue binding interpretations during construction to both Owner and Contractor.",
+        "takeaway": "During design, architect advocates for owner; during construction, architect interprets contract impartially, binding both owner and contractor."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a016187f2a18c1aaa967a1cc7c6357071f701a8294e220f08d93bd429498a77f"
+    },
+    {
+      "question_id": "89b08ba2-acdb-4c8c-a076-894b935193ee",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "What is the legal basis for the Owner to hold the Contractor responsible for defects discovered 18 months after Substantial Completion, beyond the one-year Guarantee Bond period?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Contractor has unlimited liability for all defects regardless of time, which is a common misconception and not typically supported by standard contracts"
+        },
+        {
+          "id": "b",
+          "text": "After the one-year Guarantee Bond period, the Contractor has no further liability under UAP Doc 301 for defects unless specified otherwise in the contract documents."
+        },
+        {
+          "id": "c",
+          "text": "Defects discovered after one year are never the Contractor's responsibility, unless there is evidence of gross negligence or intentional misconduct"
+        },
+        {
+          "id": "d",
+          "text": "The Owner must file a claim within 30 days of discovery or forfeit all rights, which is often stipulated in the contract to ensure timely resolution of issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overstates liability; unlimited liability is not established—Article 1723 limits structural defect claims to 15 years from completion.",
+        "c": "Eliminates all post-guarantee responsibility; Article 1723 provides a statutory basis to pursue contractor responsibility for structural defects beyond the guarantee.",
+        "d": "Imposes arbitrary deadline; Article 1723 claims can be made within the 15-year period, not just within 30 days of discovery.",
+        "correct": "After the one-year guarantee period, the Owner's recourse for defects is limited to claims against the Contractor's Guarantee Bond (if still active) or lawsuits under Article 1723 of the Civil Code, which allows claims for structural defects for 15 years from completion.",
+        "takeaway": "Article 1723 provides a 15-year liability period for structural defects beyond the one-year guarantee period."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8f205dba13cd0fb3e0536d8649d9eec2ad993d402588ce24d2891b2d7c90186c"
+    },
+    {
+      "question_id": "08c2d1f7-c489-4d87-878a-785225242445",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "When the Architect interprets an ambiguous contract provision and directs the Contractor to proceed in a specific manner, may the Contractor later claim adjustment of Contract Price if the interpretation imposes unexpected cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the Contractor must accept the Architect's interpretation without any claim for adjustment, even if it results in additional expenses"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the Contractor may file a claim for adjustment of Contract Price and/or Completion Time if the interpretation imposes unexpected cost or delay, provided the claim is submitted in writing within the specified period"
+        },
+        {
+          "id": "c",
+          "text": "Only if the Architect's interpretation is proven to be intentionally unfair, which must be demonstrated through a formal dispute resolution process"
+        },
+        {
+          "id": "d",
+          "text": "Only if the change costs exceed 50% of the original contract price, which is a significant threshold for claims"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Eliminates remedy; the Contractor retains the right to claim adjustment for unexpected cost from interpretation.",
+        "c": "Requires proof of unfairness; the Contractor's claim is based on unexpected cost or delay, not on proving architect intent.",
+        "d": "Imposes arbitrary threshold; the claim threshold is not a fixed percentage—any unexpected cost or delay can trigger a claim if submitted timely.",
+        "correct": "The Contractor must proceed with the work in accordance with the Owner's/Architect's interpretation but may file a claim for adjustment of Contract Price or Completion Time if the interpretation imposes unexpected cost or delay, provided the claim is submitted in writing within the specified period.",
+        "takeaway": "Contractor may claim Contract Price adjustment if the Architect's interpretation imposes unexpected costs, but must claim within the specified timeframe."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7d7479796a62aeab75e93c4d6dabb2732da37bf74d248aefbcdbe0d6ab19e363"
+    },
+    {
+      "question_id": "f5604333-d96c-4c32-8346-35dfd4e5c129",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "What is the consequence of the Contractor performing extra work without a formal Change Order authorizing the work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Contractor is automatically entitled to payment at the unit prices in the Contract Documents, regardless of authorization"
+        },
+        {
+          "id": "b",
+          "text": "The work is at the Contractor's risk and expense; the Contractor has no entitlement to additional compensation unless a Change Order is subsequently executed"
+        },
+        {
+          "id": "c",
+          "text": "The Owner must reimburse the Contractor for all costs regardless of authorization, ensuring fairness in project execution"
+        },
+        {
+          "id": "d",
+          "text": "The contract is automatically terminated and voided, leading to potential legal disputes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Grants unwarranted entitlement; without a Change Order, the Contractor cannot bill at contract unit prices or any other rate.",
+        "c": "Eliminates authorization requirement; the Owner has no obligation to reimburse unauthorized work—the Change Order requirement is strict.",
+        "d": "Terminates contract prematurely; performing unauthorized work does not void the entire contract—it's simply uncompensated.",
+        "correct": "No extra work is compensated unless a formal Change Order is executed; work performed beyond the Contract Documents without Change Order authorization is at the Contractor's risk and expense.",
+        "takeaway": "Unauthorized extra work is at contractor's risk; no compensation due without a formal Change Order signed before work begins."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27f3daf86f9f90dd69d9109bc3bf8cc69cdf7ab64c172e955553a1eef0ee7484"
+    },
+    {
+      "question_id": "f6101679-b69f-4201-bf4a-b34b050d0052",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "Under Doc 301, what three bonds does the Contractor typically provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insurance Bond, Maintenance Bond, and Completion Bond, each serving a specific purpose in project security"
+        },
+        {
+          "id": "b",
+          "text": "Performance Bond (execution), Payment Bond (workers/suppliers), and Guarantee Bond (quality for one year from Substantial Completion)"
+        },
+        {
+          "id": "c",
+          "text": "Owner's Bond, Architect's Bond, and Worker's Bond, which are not standard but may be required in special cases"
+        },
+        {
+          "id": "d",
+          "text": "Bid Bond, Completion Bond, and Defect Bond, which are often used in competitive bidding scenarios"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lists inapplicable bonds; Insurance Bond and Maintenance Bond are not standard Doc 301 contractor bonds.",
+        "c": "Misidentifies parties; these are not the three contractor bonds—Owner and Architect do not post similar bonds under Doc 301.",
+        "d": "Conflates bidding and construction bonds; Bid Bond occurs at bidding stage (not one of three bonds), and these names don't match Doc 301 bonds.",
+        "correct": "The Contractor provides three bonds under Doc 301: Performance Bond (guaranteeing execution per contract), Payment Bond (guaranteeing payment to workers and suppliers), and Guarantee Bond (guaranteeing quality defects for one year from Substantial Completion).",
+        "takeaway": "Three contractor bonds: Performance Bond (work execution), Payment Bond (worker/supplier payment), Guarantee Bond (one-year defect coverage)."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96e1c2e9cb85640726392923970b1c2fcc60a1ff24bcd77c076eee5c0cba368a"
+    },
+    {
+      "question_id": "cf97d0de-da04-42b1-bebd-7a1b72e60b4a",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "topic_id": "f3306726-7c76-413b-b204-6e9b7a5f4a7a",
+      "text": "What is the primary purpose of UAP Document 301 in construction contracting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To establish the Architect's fee and design timeline, ensuring clarity in financial and scheduling expectations"
+        },
+        {
+          "id": "b",
+          "text": "To define the General Conditions governing the Owner-Contractor relationship during construction and to establish the Architect's role as both Owner's representative and impartial contract interpreter"
+        },
+        {
+          "id": "c",
+          "text": "To specify the exact materials and construction methods the Contractor must use, providing detailed guidance for compliance"
+        },
+        {
+          "id": "d",
+          "text": "To eliminate the need for a separate Agreement between Owner and Contractor, simplifying the contractual process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses Doc 301 (construction conditions) with the Owner-Architect Agreement (design services); architect fee and design timeline are in separate documents.",
+        "c": "Overspecifies Doc 301's role; materials and methods detail are in Specifications and Drawings, not in General Conditions.",
+        "d": "Misunderstands document hierarchy; Doc 301 works alongside the Agreement, not in place of it—the Agreement identifies parties and contract price.",
+        "correct": "UAP Document 301 establishes the General Conditions of Contract for construction projects and governs the three-party relationship (Owner, Contractor, Architect), defining obligations and procedures, while distinguishing itself from design-phase agreements and Special Provisions.",
+        "takeaway": "UAP Doc 301 governs the Owner-Contractor construction relationship and defines the Architect's dual role as owner representative and impartial contract interpreter."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-004-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e689856135f7511570c5ff37a18e188f5e5a1aed3f761eafea3b63d0bc13074b"
+    }
+  ]
+}

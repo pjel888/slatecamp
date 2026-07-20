@@ -8,37 +8,31 @@
       "question_id": "39ad5ca3-2c3e-43c2-9d60-691afa821f7c",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "A restaurant chef requests food prep counter heights of 950 mm to accommodate taller staff. According to ergonomic standards, how should the designer respond?",
+      "text": "Under checked PD 1096 text, which restaurant condition fits Group E Division E-2?",
       "options": [
         {
           "id": "a",
-          "text": "Approve 950 mm; higher counters are always more efficient, although this may not be true for all tasks and user heights"
+          "text": "A drinking or dining establishment with occupant load below one hundred persons."
         },
         {
           "id": "b",
-          "text": "Reject; standard counter height is 850–900 mm for optimal ergonomics and Philippine anthropometric data."
+          "text": "A hospital with non-ambulatory patients."
         },
         {
           "id": "c",
-          "text": "Approve; heights above 900 mm improve workflow, but this depends on specific tasks and user preferences"
+          "text": "A warehouse with highly combustible storage."
         },
         {
           "id": "d",
-          "text": "Use variable heights: 950 mm for tall staff, 800 mm for others, to accommodate a wider range of user heights and tasks"
+          "text": "A school dormitory for ten or fewer non-leasing occupants."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "950 mm exceeds standard and may create strain for average-height staff.",
-        "c": "Non-standard heights (950+ mm) conflict with equipment integration and reduce efficiency.",
-        "d": "Variable heights complicate equipment installation and violate design standards.",
-        "correct": "Food prep counters are standardized at 850–900 mm height per ergonomic and code standards. This accounts for optimal arm height during extended standing work and reduces fatigue.",
-        "takeaway": "Food prep counter height = 850–900 mm. This is ergonomic standard, not negotiable by individual preference."
-      },
+      "rationale": "PD 1096 lists drinking and dining establishments having an occupant load of less than one hundred persons under Group E Division E-2.",
       "explanation": null,
       "code_citation": "Standard Practice",
       "bloom_level": "analyze",
@@ -51,44 +45,38 @@
       "model_id": "ALE-DSGN-004-09-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.593459+00:00",
       "content_hash": "sha256:b5e68c31f83c6c8725f1bb65eddbedb2df9680c0adb178cdfc5a03f25e4c6518"
     },
     {
       "question_id": "56a5e759-ce46-4848-ad63-7c5e282239d2",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "A restaurant dining area serves 320 patrons and is unsprinklered. According to RA 9514 2019 IRR Section 10.2, what is the minimum total exit width required?",
+      "text": "Under RA 9514, a restaurant with fifty or more persons is classified as what?",
       "options": [
         {
           "id": "a",
-          "text": "1600 mm (5 mm per person)"
+          "text": "Assembly occupancy."
         },
         {
           "id": "b",
-          "text": "2432 mm (7.6 mm per person)"
+          "text": "Storage occupancy."
         },
         {
           "id": "c",
-          "text": "3200 mm (10 mm per person)"
+          "text": "Health care occupancy."
         },
         {
           "id": "d",
-          "text": "900 mm (fixed accessible minimum)"
+          "text": "Detention occupancy."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "ERR-DSGN-019: Using 5 mm/person is substandard and creates fire safety hazard.",
-        "c": "10 mm/person exceeds code; 7.6 mm is the standard.",
-        "d": "900 mm is accessible door minimum, not exit width calculation for large occupancies.",
-        "correct": "Exit width = occupancy × 7.6 mm/person per PD 1096 §906. 320 × 7.6 = 2432 mm (2.432 m).",
-        "takeaway": "Exit width formula: occupants × 7.6 mm/person. For 320 people = 2432 mm minimum."
-      },
+      "rationale": "RA 9514 assembly occupancy includes restaurants and drinking establishments when the occupant load is fifty or more persons.",
       "explanation": null,
       "code_citation": "PD 1096 §906",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-DSGN-004-09-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.595586+00:00",
       "content_hash": "sha256:95e9d371326a13059b1ff8be5bc74637f704edc9001a754c95c3ad8ca0319db1"
     },
     {
       "question_id": "8546673b-6021-490b-a0e7-cfa8626bcd1a",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "A restaurant has 600 sqm total floor area dedicated to dining. According to standard kitchen design practice, what is the minimum required kitchen floor area?",
+      "text": "Under RA 9514, a restaurant with less than fifty persons is classified as what?",
       "options": [
         {
           "id": "a",
-          "text": "150 sqm (1:4 ratio)"
+          "text": "Mercantile occupancy."
         },
         {
           "id": "b",
-          "text": "200 sqm (1:3 ratio)"
+          "text": "Industrial occupancy."
         },
         {
           "id": "c",
-          "text": "300 sqm (1:2 ratio)"
+          "text": "Educational occupancy."
         },
         {
           "id": "d",
-          "text": "600 sqm (1:1 ratio)"
+          "text": "Residential board and care."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "ERR-DSGN-031: 1:4 ratio (150 sqm) undersizes the kitchen and violates code. Correct ratio is 1:3.",
-        "c": "1:2 ratio oversizes the kitchen beyond necessary; 1:3 is the standard.",
-        "d": "1:1 ratio (600 sqm kitchen) is operationally inefficient and violates space efficiency standards.",
-        "correct": "Kitchen-to-dining ratio = 1:3 per standard restaurant design practice. 600 sqm dining ÷ 3 = 200 sqm kitchen minimum.",
-        "takeaway": "Kitchen:dining = 1:3. For 600 sqm dining, kitchen = 200 sqm. Common trap: reversing the ratio."
-      },
+      "rationale": "RA 9514 classifies restaurants and drinking establishments with an occupant load of less than fifty persons as mercantile occupancies.",
       "explanation": null,
       "code_citation": "Not code-required; industry guideline",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-DSGN-004-09-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.597054+00:00",
       "content_hash": "sha256:cdadabf30257e952fb81c87872350abe5434e872778244a022273c5f171dd907"
     },
     {
       "question_id": "4b62319e-9fb8-4052-9e2e-5751544b85f4",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "Per local zoning ordinance (not PD 1096), how many parking spaces are required for a restaurant with 450 sqm of dining area?",
+      "text": "Which occupant-load factor is source-safe for a less concentrated assembly dining room under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "9 spaces (1 per 50 sqm)"
+          "text": "1.4 sqm per person."
         },
         {
           "id": "b",
-          "text": "15 spaces (1 per 30 sqm)"
+          "text": "0.10 sqm per person."
         },
         {
           "id": "c",
-          "text": "30 spaces (1 per 15 sqm)"
+          "text": "18.6 sqm per person."
         },
         {
           "id": "d",
-          "text": "45 spaces (1 per 10 sqm)"
+          "text": "No occupant-load factor is used for dining rooms."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "9 spaces (1/50 sqm) is insufficient; restaurant standard is 1/30 sqm.",
-        "c": "30 spaces exceeds requirement (that would be 1/15 sqm ratio).",
-        "d": "45 spaces is excessive (1/10 sqm is not a code threshold).",
-        "correct": "Restaurant parking = 1 space per 30 sqm of dining area per PD 1096 §803. 450 ÷ 30 = 15 spaces.",
-        "takeaway": "Restaurant parking formula: Dining area ÷ 30 sqm/space. Distinguish from hotel (1/room) and hospital (1/4 beds)."
-      },
+      "rationale": "RA 9514 lists dining rooms and drinking establishments as less concentrated assembly use at 1.4 sqm per person.",
       "explanation": null,
       "code_citation": "PD 1096 §803",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-DSGN-004-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.589798+00:00",
       "content_hash": "sha256:937b42d0ea3beff4f88644a7075b44c952826bbb0d3954dd7012817470715948"
     },
     {
       "question_id": "2b0ebced-3596-4010-b849-8fb6e52a513c",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "A restaurant design proposal allocates 300 sqm to dining and 300 sqm to kitchen within a 600 sqm total building. When reviewing this allocation, what design issue arises under standard restaurant practice?",
+      "text": "How is occupant load determined for an assembly area with fixed seats under checked RA 9514 text?",
       "options": [
         {
           "id": "a",
-          "text": "Kitchen is correctly sized at 1:1 ratio; no issue, as this allows for equal space distribution"
+          "text": "By the number of fixed seats installed."
         },
         {
           "id": "b",
-          "text": "ERR-DSGN-031: Kitchen oversized; standard 1:3 ratio requires kitchen = 100 sqm for 300 sqm dining."
+          "text": "By dividing the kitchen area by four."
         },
         {
           "id": "c",
-          "text": "Dining oversized; should increase kitchen to 450 sqm, which would provide more space for kitchen operations"
+          "text": "By parking-slot count."
         },
         {
           "id": "d",
-          "text": "Allocation is acceptable if parking exceeds 20 spaces, which may offset the space distribution concerns"
+          "text": "By the number of menu items."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1:1 ratio violates standard practice; kitchen should be ONE-THIRD of dining area, not equal.",
-        "c": "Dining is correctly sized; reducing kitchen from 300 to 100 sqm is the appropriate correction.",
-        "d": "Parking requirement is independent of dining/kitchen ratio efficiency.",
-        "correct": "For 300 sqm dining, kitchen should be 100 sqm (1:3 ratio), not 300 sqm. The 300 sqm kitchen oversizes operational space, reduces floor efficiency, and increases utility costs.",
-        "takeaway": "ERR-DSGN-031 trap: Kitchen:dining = 1:3. A 300 sqm kitchen for 300 sqm dining is 3× oversized."
-      },
+      "rationale": "The checked RA 9514 text states that fixed-seat assembly occupant load is determined by the number of fixed seats installed.",
       "explanation": null,
       "code_citation": "Standard Practice",
       "bloom_level": "analyze",
@@ -251,44 +221,38 @@
       "model_id": "ALE-DSGN-004-09-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.592722+00:00",
       "content_hash": "sha256:1fb87ac172a7c83b28939c43a4c83cdb091af855a377ab75fb2d5797123801d9"
     },
     {
       "question_id": "2abd77f9-e032-497b-8eb8-6fc6f86bf1d8",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "A restaurant has 200 dining seats. According to RA 9514, what is the minimum dining floor area required?",
+      "text": "What must an assembly room without fixed seats have posted near the main exit?",
       "options": [
         {
           "id": "a",
-          "text": "200 sqm"
+          "text": "The occupant load of the room."
         },
         {
           "id": "b",
-          "text": "280 sqm"
+          "text": "The kitchen equipment list."
         },
         {
           "id": "c",
-          "text": "286 sqm"
+          "text": "The zoning district only."
         },
         {
           "id": "d",
-          "text": "400 sqm"
+          "text": "The plumbing fixture count only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "200 sqm equals seat count but ignores the 1.4 sqm/seat requirement.",
-        "c": "286 sqm is close but results from incorrect calculation (e.g., 1.43 sqm/seat).",
-        "d": "400 sqm exceeds requirement; 280 sqm is the minimum.",
-        "correct": "No minimum dining floor area requirement from RA 9514; 1.4 sqm/seat is for occupant load/egress calculation only per RA 9514 IRR Table 10.",
-        "takeaway": "Dining occupant load = seats × 1.4 sqm/seat. This is the code standard under RA 9514."
-      },
+      "rationale": "RA 9514 requires every assembly room without fixed seats to have the occupant load posted conspicuously near the main exit.",
       "explanation": null,
       "code_citation": "RA 9514",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-DSGN-004-09-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.596275+00:00",
       "content_hash": "sha256:4bca43d550d03751c87ab56605590deddb69696858af8774f92cf395c9765806"
     },
     {
       "question_id": "f90e5a68-f86e-4149-8e32-86075711a654",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "What occupancy group classification applies to a restaurant under PD 1096?",
+      "text": "Which PD 1096 parking cue is supported for restaurants, fast-food centers, bars, and beerhouses?",
       "options": [
         {
           "id": "a",
-          "text": "Group C (Education/Recreation), which is typically reserved for educational facilities and recreational centers"
+          "text": "One car slot for every 20 sqm of customer area, with the checked tourist-bus row language for theater-restaurants."
         },
         {
           "id": "b",
-          "text": "Group H Division 1 (Assembly)"
+          "text": "One car slot for every twenty beds."
         },
         {
           "id": "c",
-          "text": "Group H (Assembly), which includes spaces designed for gatherings of people for purposes such as dining, entertainment, or worship"
+          "text": "One car slot for every ten classrooms."
         },
         {
           "id": "d",
-          "text": "Group D (Institutional), generally applicable to facilities like hospitals and care homes"
+          "text": "No parking row is provided."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group C applies to schools and churches. Restaurants are NOT educational institutions.",
-        "c": "ERR-DSGN-005: Group H is for large assembly venues (stadiums, arenas). Restaurants are not classified as pure assembly.",
-        "d": "Group D is institutional (hospitals, jails). Restaurants do not provide custodial care.",
-        "correct": "Restaurants are classified as Group E (business and mercantile) per PD 1096. Dining areas and food service operations fall under commercial occupancies.",
-        "takeaway": "Restaurant = Group E occupancy, not C or H. This is a foundational classification error trap."
-      },
+      "rationale": "The checked PD 1096 parking table lists restaurants, fast-food centers, bars, and beerhouses by customer area.",
       "explanation": null,
       "code_citation": "PD 1096",
       "bloom_level": "remember",
@@ -351,44 +309,38 @@
       "model_id": "ALE-DSGN-004-09-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.591748+00:00",
       "content_hash": "sha256:a117ce888e85b97efd3fcc76559d924f5f8b533c34a9c6110a8bc1dce5a77dd3"
     },
     {
       "question_id": "f8c6d48a-463e-4105-ab53-e8ad2a7e85ee",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "A restaurant kitchen requires two main aisles for equipment access and service. According to standard practice, what is the minimum width for a kitchen aisle?",
+      "text": "What is source-safe about office, storage, and service facilities incidental to mercantile restaurant use?",
       "options": [
         {
           "id": "a",
-          "text": "0.9 m"
+          "text": "When located in the same building, they are considered part of the mercantile occupancy classification in the checked RA 9514 text."
         },
         {
           "id": "b",
-          "text": "1.0 m"
+          "text": "They always create a separate detention occupancy."
         },
         {
           "id": "c",
-          "text": "1.2 m"
+          "text": "They eliminate the need for exits."
         },
         {
           "id": "d",
-          "text": "1.5 m"
+          "text": "They convert the building to health care."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.9 m is too narrow for equipment movement and violates work zone safety.",
-        "b": "1.0 m is insufficient; 1.2 m is the recognized standard.",
-        "d": "1.5 m exceeds standard requirement but may be used for high-volume kitchens.",
-        "correct": "Kitchen aisle minimum width = 1.2 m per standard restaurant design practice. This accommodates equipment movement and two-way service traffic.",
-        "takeaway": "Kitchen aisle minimum = 1.2 m. Remember this distinct from 900 mm door width and 1.5 m pathway standards."
-      },
+      "rationale": "RA 9514 states that office, storage, and service facilities incidental to sale of merchandise and located in the same building should be considered part of mercantile occupancy.",
       "explanation": null,
       "code_citation": "Standard Practice",
       "bloom_level": "remember",
@@ -401,44 +353,38 @@
       "model_id": "ALE-DSGN-004-09-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.594169+00:00",
       "content_hash": "sha256:bda87fdb44866df00df6775db0144f4016cf022cc63f4e2bea3258e3e1473294"
     },
     {
       "question_id": "0953b128-2689-4042-87b2-61d29d1ed82d",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "A restaurant design uses a single emergency exit serving 75 dining patrons. According to PD 1096 Section 906, is this design compliant?",
+      "text": "Which Fire Code framing is source-safe for restaurant exits?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, single exit is permitted for up to 150 persons."
+          "text": "Exits must match occupancy character, occupant count, fire protection, height, and construction type."
         },
         {
           "id": "b",
-          "text": "No, dual exits are required at 50+ person occupancy."
+          "text": "One exit is always enough for every restaurant."
         },
         {
           "id": "c",
-          "text": "Yes, single exit is permitted if width exceeds 1200 mm."
+          "text": "Counter height determines exit count."
         },
         {
           "id": "d",
-          "text": "No, restaurants always require minimum three exits."
+          "text": "Kitchen size alone determines exit capacity."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect threshold. Dual exits required at 50+, not 150+.",
-        "c": "Exit width calculation does not substitute for dual exit requirement.",
-        "d": "Three exits not required for 75 occupants; two exits minimum suffice.",
-        "correct": "ERR-DSGN-021 violation: PD 1096 §906 requires dual exits at occupancies of 50 or more persons. Single exit at 75 occupants fails fire code.",
-        "takeaway": "Occupancy threshold = 50 persons. At 50+ = 2 exits required minimum. Single exit fails at 75 occupants."
-      },
+      "rationale": "The Fire Code source family requires exits appropriate to building and occupancy conditions.",
       "explanation": null,
       "code_citation": "PD 1096 §906",
       "bloom_level": "analyze",
@@ -451,44 +397,38 @@
       "model_id": "ALE-DSGN-004-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.594888+00:00",
       "content_hash": "sha256:a689d4f4145059cda52706fc2b5b815fd650e3f34d6afab2c1953f9c1abb8b23"
     },
     {
       "question_id": "440cb66f-abd3-4166-9584-5adb999e894c",
       "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
       "topic_id": "b82adcf8-47a6-4e61-992a-7119ffc37781",
-      "text": "A restaurant kitchen has food prep areas adjacent to the dishwashing section with only a low counter separating them. According to DOH/FSDO regulation, what design violation exists?",
+      "text": "Which answer avoids an unsupported restaurant design shortcut?",
       "options": [
         {
           "id": "a",
-          "text": "No violation; proximity allows efficient workflow, assuming all hygiene standards are met"
+          "text": "Use the checked source matching the question: PD 1096 occupancy/parking or RA 9514 fire classification/occupant load."
         },
         {
           "id": "b",
-          "text": "Violation: Dishwashing must be physically separated from raw food prep to prevent cross-contamination."
+          "text": "Use a generic kitchen-area ratio for all code questions."
         },
         {
           "id": "c",
-          "text": "Violation exists only if prep counter is below 850 mm height, which is not a standard regulation"
+          "text": "Use local zoning claims when the item asks for PD 1096."
         },
         {
           "id": "d",
-          "text": "No violation if aisle width meets 1.2 m minimum, which is unrelated to cross-contamination concerns"
+          "text": "Answer from ergonomic counter height when the item asks for fire classification."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Workflow efficiency does not override food safety requirements. Separation is mandatory.",
-        "c": "Counter height is about ergonomics; separation is about sanitation compliance.",
-        "d": "Aisle width is about circulation; it does not substitute for sanitation zone separation.",
-        "correct": "DOH/FSDO food safety standards require physical separation (walls, sealed barriers) between dishwashing and raw food preparation zones to prevent cross-contamination and pathogen spread.",
-        "takeaway": "Dishwashing isolated from raw prep: DOH/FSDO requirement. Low counters do NOT satisfy separation mandate."
-      },
+      "rationale": "The safe route is to answer from the checked source family that matches the prompt rather than unsupported operational design rules.",
       "explanation": null,
       "code_citation": "DOH Sanitation Code",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-DSGN-004-09-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:19.82855+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.597728+00:00",
       "content_hash": "sha256:9e6747ced93264d5df0b83d77d1e4243dc35616ec9106a7127a5e80c2153424f"
     }
   ]

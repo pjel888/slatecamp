@@ -8,37 +8,31 @@
       "question_id": "6419032c-2dba-434a-b15d-15539a77893a",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "If the Contractor requests waiver of a specification requirement to use a substitute material, what is the Architect's proper authority?",
+      "text": "What is the source limit on the architect’s authority to act for the owner during construction?",
       "options": [
         {
           "id": "a",
-          "text": "The Architect may grant the waiver unilaterally, which is a misunderstanding of the typical contractual process"
+          "text": "Only the authority expressly provided in the Contract Documents or otherwise in writing and shown to the contractor"
         },
         {
           "id": "b",
-          "text": "The Architect may recommend the waiver to the Owner but cannot grant it; Owner's written authorization is required"
+          "text": "Unlimited authority over every owner decision"
         },
         {
           "id": "c",
-          "text": "The Architect must deny all waiver requests, which is an overly rigid interpretation of the Architect's role"
+          "text": "Only oral instructions from the contractor"
         },
         {
           "id": "d",
-          "text": "The Architect and Contractor jointly decide without Owner involvement, which is not standard practice in construction contracts"
+          "text": "Authority created by any subcontractor request"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Grants unauthorized unilateral power; waiver authority belongs to the Owner, who negotiated the specifications.",
-        "c": "Eliminates consideration of legitimate requests; the Architect may recommend waivers for reasonable substitutions.",
-        "d": "Excludes Owner from decision; the Owner, who contracted for specific materials, must authorize any deviation.",
-        "correct": "The Architect does not have authority to waive contract requirements or excuse the Contractor's performance obligations. If the Contractor requests waiver of a specification requirement, the Architect may recommend the waiver to the Owner but cannot grant it unilaterally. The Owner's written authorization is required for any waiver or modification of contract requirements.",
-        "takeaway": "Architect can recommend waivers but only Owner can authorize them in writing—waivers are not architect authority."
-      },
+      "rationale": "UAP Document 301 limits the architect’s authority to the Contract Documents or written authority shown to the contractor.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-CTR-005-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.803027+00:00",
       "content_hash": "sha256:502a288cc7dee32d2a353bb0493fa80587a9505507339f2ab9ffaf9506ae4d13"
     },
     {
       "question_id": "0bec1cf8-2190-47df-a9de-5859594e5f90",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "Does the Architect's authority to direct correction of a design defect eliminate the Architect's liability to the Owner for the defect?",
+      "text": "Which issue may the architect decide under UAP Document 301?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, once the Contractor corrects the defect, the Architect is no longer liable, as the responsibility shifts entirely"
+          "text": "Quality and acceptability of materials and work"
         },
         {
           "id": "b",
-          "text": "No, the Architect remains liable to the Owner for design defects even after directing and overseeing correction; the Architect's liability is separate from the Contractor's correction obligation"
+          "text": "The contractor’s corporate tax rate"
         },
         {
           "id": "c",
-          "text": "The Architect's liability is shared with the Contractor, depending on the contract terms and specific responsibilities outlined"
+          "text": "The owner’s unrelated financing plan"
         },
         {
           "id": "d",
-          "text": "The Architect is liable only if the Contractor refuses to correct the defect, which is a rare occurrence"
+          "text": "The city’s zoning map"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Conflates direction with liability elimination; directing correction addresses the immediate problem but does not absolve the designer of liability.",
-        "c": "Inappropriately shares architect liability; the Architect remains fully liable for design errors—the Contractor may seek indemnification.",
-        "d": "Conditions liability on contractor non-cooperation; the Architect is liable for design errors regardless of whether the Contractor cooperates in correction.",
-        "correct": "The Architect's authority to direct removal of defective work does not eliminate the Architect's responsibility for design defects. If the defect is caused by the Architect's incomplete or incorrect specifications, the Architect remains liable to the Owner for the design error, even if the Contractor corrects the defect.",
-        "takeaway": "Architect's authority to direct contractor correction does not eliminate architect's liability for design error—two separate responsibilities."
-      },
+      "rationale": "The architect may decide quality and acceptability questions under the contract.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-CTR-005-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.795522+00:00",
       "content_hash": "sha256:d18bffd58c993983af7edbc5b7c88ad84142ddd49c298e1813a561835bddc1e6"
     },
     {
       "question_id": "3a321576-1242-4824-8714-64e7decdde7b",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "If the Architect observes that the Contractor is using an unsafe work method, does the Architect have authority to require a specific alternative method?",
+      "text": "When may the architect stop the work under UAP Document 301?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the Architect has complete authority over all work methods for safety reasons, including the power to enforce specific changes"
+          "text": "When stoppage is necessary in the architect’s reasonable opinion to ensure proper contract execution"
         },
         {
           "id": "b",
-          "text": "No, the Contractor is responsible for all work methods; the Architect may only require correction of the unsafe condition but not dictate the specific corrective method"
+          "text": "Only after a court conviction"
         },
         {
           "id": "c",
-          "text": "Only if the method affects the final product's conformity with specifications, which must be documented in the project records"
+          "text": "Whenever a supplier asks for it"
         },
         {
           "id": "d",
-          "text": "Only if the Owner explicitly authorizes method changes, following a formal request from the Architect"
+          "text": "Never under any condition"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Overstates architect authority; the Architect directs results (safe conditions) but not methods (how the Contractor achieves them).",
-        "c": "Limits authority narrowly to specification conformance; the Architect can require safety correction even if the method doesn't affect the final product.",
-        "d": "Adds unnecessary requirement; the Architect inherits authority to require safety correction from Doc 301, independent of owner authorization.",
-        "correct": "The Architect does not have authority to direct the Contractor's work methods, labor practices, equipment, or sequencing unless specified in the Contract Documents. If the Architect observes an unsafe work method, the Architect may require correction for safety reasons but does not direct how the Contractor accomplishes the work.",
-        "takeaway": "Architect can require unsafe conditions be corrected but cannot prescribe the specific corrective method—contractor retains control of means and methods."
-      },
+      "rationale": "The source grants stop-work authority where necessary for proper execution of the contract.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-CTR-005-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.802356+00:00",
       "content_hash": "sha256:8df51e11dbf21db6f6208b7b7078d78c42e3eeaf29e98d1356941896be8a2878"
     },
     {
       "question_id": "0dae5e7e-407c-4d9a-a6ba-876ef384fa3f",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "What is the primary source of the Architect's authority to direct work during construction?",
+      "text": "What does the architect’s failure to order stopping of work do to contractor responsibility?",
       "options": [
         {
           "id": "a",
-          "text": "The Architect's professional judgment and experience accumulated through years of practice and continuing education"
+          "text": "It does not relieve the contractor from complying with the Contract Documents or protecting persons and property"
         },
         {
           "id": "b",
-          "text": "The Contract Documents, principally Doc 301 and the Agreement between Owner and Contractor"
+          "text": "It transfers all contractor duties to the architect"
         },
         {
           "id": "c",
-          "text": "Building codes and industry standards that establish minimum requirements for construction quality and safety"
+          "text": "It automatically accepts all defective work"
         },
         {
           "id": "d",
-          "text": "The Architect's licensing and professional registration issued by the Professional Regulation Commission"
+          "text": "It cancels the contract drawings"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses professional expertise with contractual authority; the Architect's personal judgment must operate within the scope defined by the contract.",
-        "c": "Misattributes authority source; while the Architect applies codes and standards, the authority to direct comes from the contract, not the codes.",
-        "d": "Conflates licensing with contract authority; licensing permits practice but does not establish construction project authority.",
-        "correct": "The Architect's authority derives exclusively from the Contract Documents, primarily Doc 301 and the Agreement between Owner and Contractor.",
-        "takeaway": "Architect authority comes from Contract Documents (Doc 301 and Agreement), not from professional credentials or industry standards."
-      },
+      "rationale": "The source expressly keeps contractor responsibility in place.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-CTR-005-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.798538+00:00",
       "content_hash": "sha256:fe20a4be976abc879efd41490e9d235162025ecbec9087b6a2d23bec76a074a2"
     },
     {
       "question_id": "8d2e15ef-d781-4bbe-a67b-680d9c60afc5",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "Under UAP Document 301, what is the extent of the Architect's unilateral authority to issue Change Orders that adjust the Contract Price or Contract Time?",
+      "text": "In interpreting the contract, how should the architect act between owner and contractor?",
       "options": [
         {
           "id": "a",
-          "text": "The Architect may unilaterally approve changes up to 10% of the contract price, provided that such changes do not affect the critical path of the project schedule"
+          "text": "Side neither with the owner nor the contractor, and enforce faithful performance by both"
         },
         {
           "id": "b",
-          "text": "The Architect has no unilateral authority to adjust the Contract Price or Time; all such Change Orders must be approved by the Owner"
+          "text": "Always side with the owner"
         },
         {
           "id": "c",
-          "text": "The Architect may unilaterally approve changes up to 25% of the contract price, but only if the changes are deemed necessary for compliance with local building codes"
+          "text": "Always side with the contractor"
         },
         {
           "id": "d",
-          "text": "The Architect can approve unlimited changes as long as they are necessary for project completion and do not exceed the budget contingency"
+          "text": "Avoid making any contract interpretation"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The Architect has no unilateral authority to authorize extra costs, even at 10%.",
-        "c": "The Architect has no unilateral authority to authorize extra costs. The 25% threshold often mistakenly refers to the maximum cumulative change orders an owner can request before a contractor can refuse or renegotiate, not the architect's unilateral authority.",
-        "d": "The Architect cannot authorize unlimited changes; the Owner controls the budget and must approve cost/time adjustments.",
-        "correct": "Under UAP Document 301, the Architect cannot unilaterally issue Change Orders that affect the Contract Price or Contract Time. Such changes must be authorized and signed by the Owner. The Architect may only order minor changes in the work that do not involve extra cost or time extensions.",
-        "takeaway": "The Architect cannot unilaterally spend the Owner's money or extend the schedule. Change Orders require Owner approval."
-      },
+      "rationale": "UAP Document 301 requires impartial contract interpretation and enforcement.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-CTR-005-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.801673+00:00",
       "content_hash": "sha256:ff71410177f30ecf9a71db071cf1f0547a5ab0900598b5089cdc3ae1fac02717"
     },
     {
       "question_id": "0e3da667-2f7b-4e3f-b57b-77de9f3886ff",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "When the Architect directs removal and replacement of defective work, who bears the cost of the removal, replacement, and any adjacent work demolished and restored?",
+      "text": "Unless otherwise stipulated, contract terms such as approved, directed, and acceptable point to whose judgment?",
       "options": [
         {
           "id": "a",
-          "text": "The Owner bears the cost, as the Architect is directing the correction, unless otherwise specified in the contract"
+          "text": "The architect’s judgment within the contract administration role"
         },
         {
           "id": "b",
-          "text": "The Contractor bears the cost, as the defect is the Contractor's responsibility, unless a Change Order is issued"
+          "text": "A material supplier’s judgment"
         },
         {
           "id": "c",
-          "text": "The cost is shared equally between Owner and Contractor, based on mutual agreement or contract terms"
+          "text": "A subcontractor’s private preference"
         },
         {
           "id": "d",
-          "text": "The Architect's insurance covers the cost, provided the defect is due to design error"
+          "text": "A social media poll"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Misplaces cost responsibility; the owner did not cause the defect, so doesn't bear correction costs.",
-        "c": "Inappropriately splits cost; the Contractor caused the defect and bears correction responsibility.",
-        "d": "Misidentifies payer; architect insurance covers architect's own professional negligence, not contractor defects.",
-        "correct": "If the Contractor installs defective materials, equipment, or performs work that deviates from specifications, the Architect issues a written directive requiring removal and replacement. The Contractor must comply without additional compensation unless a Change Order is issued. If removal requires demolition of adjacent completed work, the Contractor must perform the demolition and restoration at the Contractor's cost, as the defect is the Contractor's responsibility.",
-        "takeaway": "Contractor bears all removal costs including demolition/restoration of adjacent work, unless directed work was ordered by architect outside original contract scope."
-      },
+      "rationale": "UAP Document 301 defines these terms as pointing to the architect unless otherwise stipulated.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-CTR-005-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.796647+00:00",
       "content_hash": "sha256:863ce958ae8909409f284c5d3ea73144eaaa55c9f21e21ed70181e79b776dd78"
     },
     {
       "question_id": "65d9d1e3-1012-4c37-9968-56ebcdfb7da4",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "May the Architect unilaterally extend the Completion Time or increase the Contract Price without Owner approval?",
+      "text": "What is the role of project representatives, resident architects, resident engineers, or inspectors under UAP Document 301?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the Architect has authority to make all adjustments necessary to keep the project on track, including time and cost modifications"
+          "text": "They assist the architect and engineers in general supervision and direction of the work"
         },
         {
           "id": "b",
-          "text": "No, the Architect may recommend adjustments to the Owner but cannot bind the Owner to them; only the Owner can authorize time and price adjustments through a Change Order"
+          "text": "They replace the contractor’s responsibility for the work"
         },
         {
           "id": "c",
-          "text": "Yes, but only if the delay or cost increase exceeds 15% of the original contract price, and the Architect provides a detailed justification"
+          "text": "They automatically approve owner payments"
         },
         {
           "id": "d",
-          "text": "Yes, but only for delays caused by Owner actions, and such actions must be documented in writing"
+          "text": "They rewrite the Contract Documents without referral"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Grants unilateral authority inappropriately; the Owner controls project budget and schedule, not the Architect.",
-        "c": "Introduces false threshold; regardless of the percentage, the Architect cannot unilaterally adjust time or price—Owner approval is always required.",
-        "d": "Conditionally grants authority by cause; even for owner-caused delays, only the Owner can authorize time extension.",
-        "correct": "The Architect does not have authority to extend the Completion Time or adjust the Contract Price unilaterally. These adjustments require the Owner's approval and execution of a Change Order. The Architect may recommend a time extension or price adjustment to the Owner but cannot bind the Owner to such adjustment.",
-        "takeaway": "Architect recommends time/price adjustments; Owner authorizes them through Change Order—architect cannot bind owner unilaterally."
-      },
+      "rationale": "The source describes these representatives as assistants, with disputes referred to the architect.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-CTR-005-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.797608+00:00",
       "content_hash": "sha256:b4cae401a348a7d58a3a666a092f9bab2a00135d129735280b6fc8a99764054d"
     },
     {
       "question_id": "3a951a9e-2897-4db2-8035-dccc207c0f2f",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "If the Architect discovers defective work after it has been covered (e.g., concrete poured, wall painted), and the Architect fails to require removal at that time, may the Architect later require removal after additional work is completed?",
+      "text": "If a dispute arises between a project representative and the contractor, what source-backed path applies?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the Architect may always require removal if the work is defective, regardless of subsequent work"
+          "text": "The question is referred to and decided by the architect"
         },
         {
           "id": "b",
-          "text": "The Architect's authority to require removal is practical only if uncovered and corrected promptly; later discovery may make removal impractical if adjacent work must be demolished and restored, reducing the enforceability of the removal directive"
+          "text": "The contractor decides alone"
         },
         {
           "id": "c",
-          "text": "No, once work is covered, the Architect has no authority to require removal, as the opportunity to correct has passed"
+          "text": "The supplier casts the deciding vote"
         },
         {
           "id": "d",
-          "text": "The Contractor may demand compensation for removal if discovery is delayed, complicating the process"
+          "text": "The dispute is ignored until final payment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Overstates practical authority; while the architect retains contractual right, enforceability is undermined by delayed discovery.",
-        "c": "Incorrectly eliminates authority; the Architect may require removal anytime if the work is defective—but practicality diminishes.",
-        "d": "Inverts cost responsibility; the Contractor caused the defect; delayed discovery by the Architect doesn't entitle the Contractor to compensation.",
-        "correct": "If the Architect allows defective work to be covered (e.g., concrete poured over defective rebar placement, walls painted over unfinished surface preparation), the Architect may later be unable to require removal without demolishing adjacent components, reducing the practicality of correction and the enforceability of the removal directive.",
-        "takeaway": "Delayed discovery of covered defects may make removal impractical if adjacent work must be demolished—timing affects enforcement practicality."
-      },
+      "rationale": "UAP Document 301 refers such disputes to the architect.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-CTR-005-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.799276+00:00",
       "content_hash": "sha256:a053690a922254d9b7c2b90537ee9b04d173d0ba66856bfee516a947d359d7cf"
     },
     {
       "question_id": "ca5401d0-ea04-4431-aff7-28f4226a0f13",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "If the Contractor fails to remove defective work when directed by the Architect, what is the Architect's authority?",
+      "text": "Which ethics principle supports the architect’s construction-administration role?",
       "options": [
         {
           "id": "a",
-          "text": "The Architect may remove and replace the work at the Architect's own cost, assuming all financial responsibility for the corrective action"
+          "text": "The architect’s advice should be unprejudiced and impartial between client and contractor"
         },
         {
           "id": "b",
-          "text": "The Architect must immediately terminate the contract, notifying all parties involved and ensuring compliance with legal procedures"
+          "text": "The architect should conceal nonconforming work"
         },
         {
           "id": "c",
-          "text": "The Architect notifies the Owner and recommends that the Owner require removal or pursue breach remedies; the Owner makes the final decision"
+          "text": "The architect should always represent the contractor only"
         },
         {
           "id": "d",
-          "text": "The Architect has no authority to enforce the directive, leaving the decision entirely to the Owner's discretion"
+          "text": "The architect should avoid contract documents"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Grants unwarranted self-help authority; the Architect cannot perform the work at the Architect's cost—that is owner/contractor matter.",
-        "b": "Overstates consequence; non-compliance with a directive is not automatic contract termination—the Owner decides remedy.",
-        "d": "Eliminates architect leverage; the Architect can issue directives and escalate non-compliance to the Owner for enforcement.",
-        "correct": "The Architect may issue a written directive requiring correction, but enforcement of the directive is the Owner's responsibility. If the Contractor fails to comply, the Architect notifies the Owner and recommends remedies; the Owner decides whether to require removal, pursue breach remedies, or accept the non-conformity.",
-        "takeaway": "Architect directs correction; if contractor refuses, architect reports to owner who decides enforcement action."
-      },
+      "rationale": "The UAP Code of Ethics describes impartial professional and judicial functions.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-CTR-005-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.800075+00:00",
       "content_hash": "sha256:6d8c577534554d6a7273d3a9e366e322f296b4d3c92cc0669287504803b8c027"
     },
     {
       "question_id": "9405a991-38bc-4447-93db-1dcbeff27061",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
       "topic_id": "df8c16db-0616-44df-bfc2-aecea4590dfb",
-      "text": "When the Architect issues a Certificate of Payment, does this certification waive the Contractor's obligation to correct latent defects discovered after payment?",
+      "text": "A contractor asks to waive a specified material requirement. What is the safest source-backed answer?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the certificate constitutes final approval and releases the Contractor from all future correction obligations, including those related to latent defects"
+          "text": "The architect may decide acceptability within the Contract Documents but cannot treat the request as unlimited authority to waive owner or contract requirements"
         },
         {
           "id": "b",
-          "text": "No, the certificate certifies visible, completed work but does not waive obligation to correct hidden defects discovered later, including defects in covered components"
+          "text": "The contractor may waive the specification alone"
         },
         {
           "id": "c",
-          "text": "Only if the defect is minor and does not affect the building's function, as determined by a post-construction audit"
+          "text": "The architect must approve every substitute material"
         },
         {
           "id": "d",
-          "text": "Only if the Owner was present during the inspection and explicitly agreed to waive future claims"
+          "text": "The project representative’s oral approval is final"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Grants unwarranted finality; the certificate covers visible work and does not waive duty to correct hidden defects.",
-        "c": "Introduces subjective threshold; the certificate protects against all defects, regardless of significance.",
-        "d": "Adds unnecessary condition; owner presence during inspection is not a requirement for certificate to be binding.",
-        "correct": "The Architect certifies progress payments by issuing a Certificate of Payment, confirming that work completed meets the contract requirements. This certification does not waive the Contractor's obligation to correct latent defects discovered later. The certification is based on visible, completed work; hidden or covered work is conditionally approved, subject to rejection if subsequent inspection reveals non-conformity.",
-        "takeaway": "Payment certificate covers visible work only; contractor remains liable for hidden defects discovered later."
-      },
+      "rationale": "The architect’s authority covers quality and acceptability but remains bounded by the Contract Documents.",
       "explanation": null,
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-CTR-005-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.800825+00:00",
       "content_hash": "sha256:89df0145fb5ddfc3fde6ee87f836a938e54cadc31a9b52eadd298b4795c88b9f"
     }
   ]

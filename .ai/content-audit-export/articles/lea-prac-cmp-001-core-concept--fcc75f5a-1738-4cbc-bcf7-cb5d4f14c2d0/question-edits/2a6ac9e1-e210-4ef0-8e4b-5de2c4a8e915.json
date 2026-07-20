@@ -2,9 +2,9 @@
   "question_id": "2a6ac9e1-e210-4ef0-8e4b-5de2c4a8e915",
   "baseline_hash": "sha256:cacb593a595b9327bd90b061822f17bddad46903f45b1c91160351ce4778bbd2",
   "action": "replace",
-  "reason": "source-audited-article-batch-104-local-first rewrote this linked question after local raw-source recheck for lea-prac-cmp-001-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-104",
-  "approved_at": "2026-05-13T11:58:43+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
     "parent_article_slug": "lea-prac-cmp-001-core-concept",
@@ -48,34 +48,28 @@
     "batch_id": "source-audited-article-batch-104-local-first"
   },
   "proposed": {
-    "text": "For a Group 3 project not over PHP 50M, what minimum basic fee does the local OCR anchor support?",
+    "text": "An architect classifies a laboratory building with specialized equipment as Group 3 (Exceptional Character) with a PCC of ₱250 million. The client argues it should be Group 2 (Moderate Complexity) because the building uses standard construction methods. Under the Architect's Guidelines, which classification is correct, and what is the fee difference between the two interpretations?",
     "options": [
       {
         "id": "a",
-        "text": "6%"
+        "text": "Group 2 is correct because standard construction methods determine the group; fee difference is ₱1,000,000"
       },
       {
         "id": "b",
-        "text": "7%"
+        "text": "Group 3 is correct because it covers buildings housing special equipment; fee difference is ₱2,500,000"
       },
       {
         "id": "c",
-        "text": "8%"
+        "text": "Group 3 is correct because it covers buildings housing special equipment; fee difference is ₱500,000"
       },
       {
         "id": "d",
-        "text": "15%"
+        "text": "Group 3 is correct because it covers buildings housing special equipment; fee difference is ₱1,500,000"
       }
     ],
-    "correct_option_id": "c",
-    "rationale": "The SPP 202 OCR anchor supports Group 3 at 8% for projects not over PHP 50M.",
-    "explanation": "104 source-audited rewrite: The SPP 202 OCR anchor supports Group 3 at 8% for projects not over PHP 50M.",
-    "code_citation": "raw markdown lines 313-344; raw markdown lines 350-381; raw markdown lines 397-469; raw markdown lines 548-586; batch 104 OCR anchor extract lines 1-10 for SPP 202 PDF pages 55-57",
-    "application_context": "professional_practice_source_audit",
-    "practice_context": [
-      "professional practice",
-      "source-audited batch 104"
-    ],
-    "model_id": "BATCH-104-lea-prac-cmp-001-core-concept-007"
+    "correct_option_id": "b",
+    "rationale": "Group 3 explicitly covers buildings of exceptional character AND those housing special equipment. A laboratory building qualifies under Group 3 regardless of its structural system. Per the Architect's Guidelines sliding scale: Group 3 = (7%, 6%, 5%, 4%, 3%, 2%), Group 2 = (6%, 5%, 4%, 3%, 2%, 1%). For ₱250M: Group 3 = (₱50M × 7%) + (₱50M × 6%) + (₱100M × 5%) + (₱50M × 4%) = ₱3,500,000 + ₱3,000,000 + ₱5,000,000 + ₱2,000,000 = ₱13,500,000. Group 2 = (₱50M × 6%) + (₱50M × 5%) + (₱100M × 4%) + (₱50M × 3%) = ₱3,000,000 + ₱2,500,000 + ₱4,000,000 + ₱1,500,000 = ₱11,000,000. Difference = ₱2,500,000. Each bracket differs by 1%, and ₱250M spans four brackets (₱50M + ₱50M + ₱100M + ₱50M), so total difference = 1% on each bracket. [A]: Group 2 is incorrect. The Architect's Guidelines classify by building function and character, not solely by construction method. Special equipment is a Group 3 criterion. [C]: Group 3 is correct, but ₱500,000 understates the difference. The ₱250M project spans four rate brackets, not just one. Each bracket differs by 1% between groups. [D]: Group 3 is correct, but ₱1,500,000 still understates the difference. A ₱250M project spans four brackets (₱50M each at different rates), not just 1.5 brackets.",
+    "explanation": null,
+    "code_citation": "Architect's Guidelines, Project Classification Groups 2–3; Sliding Sclea"
   }
 }

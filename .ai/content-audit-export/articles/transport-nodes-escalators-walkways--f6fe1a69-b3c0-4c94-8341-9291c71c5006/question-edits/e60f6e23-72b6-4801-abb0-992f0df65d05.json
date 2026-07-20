@@ -1,10 +1,10 @@
 {
   "question_id": "e60f6e23-72b6-4801-abb0-992f0df65d05",
   "baseline_hash": "sha256:dc5b3b46eb1922a67714ec1dca86d985b4878378b7d98b0eea273cb125fff50a",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
     "parent_article_slug": "transport-nodes-escalators-walkways",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "Where are escalator tactile warning strips placed under the checked BP 344 source?",
+    "text": "The BP 344 IRR limits escalator speed for PWD-compatible use. What is the maximum speed specified?",
     "options": [
       {
-        "id": "a",
-        "text": "300 mm before the floor plates at both ends"
+        "id": "A",
+        "text": "50 metres per minute"
       },
       {
-        "id": "b",
-        "text": "At the center of the escalator only"
+        "id": "B",
+        "text": "45 metres per minute"
       },
       {
-        "id": "c",
-        "text": "Only on the upward escalator"
+        "id": "C",
+        "text": "30 metres per minute"
       },
       {
-        "id": "d",
-        "text": "600 mm after the handrail end"
+        "id": "D",
+        "text": "20 metres per minute"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "BP 344 requires tactile warning strips 600 mm deep and 300 mm before the floor plates at both ends.",
-    "explanation": "BP 344 requires tactile warning strips 600 mm deep and 300 mm before the floor plates at both ends.",
-    "code_citation": "BP 344 2024 IRR, escalators and passenger conveyances",
-    "bloom_level": "apply",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Transport Nodes, Escalators, and Walkways",
-      "LEA Accessibility and Transport Design"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-transport-nodes-escalators-walkways-013"
+    "correct_option_id": "C",
+    "rationale": {
+      "summary": "BP 344 IRR sets 30 m/minute as the maximum escalator speed for PWD-friendly operation.",
+      "explanation": "30 m/min allows users with mobility impairments enough time to step on and off the moving steps safely. Higher speeds reduce the available boarding/alighting window and increase the risk of falls. This value pairs with the 3 horizontal steps requirement and the S800-type tread specification.",
+      "common_misconceptions": [
+        "Thinking 45 m/min is the standard — that is a typical commercial escalator speed, not the BP 344 PWD-compatible maximum",
+        "Confusing m/min with m/sec — 30 m/min is 0.5 m/sec"
+      ]
+    },
+    "explanation": "Maximum escalator speed for PWD-compatible use under BP 344 is 30 metres per minute.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.65,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

@@ -76,7 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "This provision intersects with Rule VII, Sec. 702 (Change of Use) which requires NBC Form No. B-12 and a Certificate of Use for existing buildings. For new buildings undergoing a change of use after initial occupancy, the new CO under Sec. 309.9 is the mechanism. The change of occupancy provisions ensure that occupancy classification always matches actual use.",
+      "rationale": "Sec. 309(c) of the PD 1096 2004 Revised IRR provides that a building that already holds a Certificate of Occupancy may be issued other Certificates of Occupancy due to changes in use, whether partly or wholly, if the new use conforms to the Code and its IRR. This intersects with Rule VII Sec. 702, which requires NBC Form No. B-12 to initiate the change-of-use review. The correct instrument is a Certificate of Occupancy — not a 'Certificate of Use'.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -89,7 +89,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:15.005539+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.324365+00:00",
       "content_hash": "sha256:bb3560f0f251cc166710aad08d83d22e947e33254da8e8968abcc235c3cc5674"
     },
     {
@@ -140,23 +140,23 @@
       "question_id": "bf891ad7-eb6f-4c4c-975e-ba208898b586",
       "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A former warehouse (Group E-2) is being converted to a grocery store (Group G, mercantile). What is the most likely outcome under Sec. 702?",
+      "text": "An existing storage building is proposed for conversion to a lower-hazard commercial use. Under PD 1096 Rule VII Sec. 702 and Rule III Sec. 309, what is the most likely approval path and document issued?",
       "options": [
         {
           "id": "a",
-          "text": "Full code compliance is required because mercantile is more hazardous, necessitating a comprehensive review"
+          "text": "Full Code compliance is required and a new Building Permit must be reissued from scratch, because any change of use always resets the entire permit history"
         },
         {
           "id": "b",
-          "text": "The change may be approved as less hazardous with a Certificate of Use — grocery stores have lower fire risk and lower occupant density risk than moderate-hazard storage"
+          "text": "The Building Official may approve the change as less hazardous, and an additional Certificate of Occupancy is issued under Sec. 309(c) for the change in use"
         },
         {
           "id": "c",
-          "text": "The change is automatically approved with no application needed, simplifying the conversion process"
+          "text": "The change is automatically effective upon filing of NBC Form B-12, with no inspection or certificate required before occupancy begins"
         },
         {
           "id": "d",
-          "text": "A new Certificate of Occupancy is required instead of a Certificate of Use, reflecting the change in building use"
+          "text": "A Fire Safety Clearance from the BFP alone authorizes the new use, with no Building Official review or Certificate of Occupancy required"
         }
       ],
       "correct_option_id": "b",
@@ -164,7 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The hazard hierarchy is: High-hazard (H) > Industrial/Storage (F/E) > Educational/Institutional/Residential (C/D/B) > Low-cost Residential (A) > Mercantile (G) > Miscellaneous (J). Moving DOWN this scale (toward J) is generally toward less hazardous. Moving UP is toward more hazardous and requires full compliance.",
+      "rationale": "Per PD 1096 Rule VII Sec. 702, when the proposed use is LESS hazardous than the existing use, the Building Official may approve the change; and per Rule III Sec. 309(c), a building already holding a Certificate of Occupancy may be issued other Certificates of Occupancy due to changes in use, provided the building conforms to the Code and its IRR for the new use. The correct document is therefore a Certificate of Occupancy — not the non-existent 'Certificate of Use'.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -177,7 +177,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:15.323908+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.321941+00:00",
       "content_hash": "sha256:9c26c3b67ec9864aeed4c4ca1576f67cfac0011fe0819d1d776b45d2642e55c2"
     },
     {
@@ -232,7 +232,7 @@
       "options": [
         {
           "id": "a",
-          "text": "The Building Official must issue a Certificate of Use regardless of compliance, which is not standard practice"
+          "text": "The Building Official must issue a Certificate of Occupancy regardless of compliance, which is not standard practice"
         },
         {
           "id": "b",
@@ -252,7 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Mnemonic: 'LESS = YES, MORE = COMPLY.' Less hazardous new use → YES, Building Official may approve with Certificate of Use. More hazardous new use → must COMPLY fully with new occupancy code before approval. This binary rule governs the entire change-of-use decision framework.",
+      "rationale": "Mnemonic: 'LESS = YES, MORE = COMPLY.' Less hazardous new use → YES, Building Official may approve with Certificate of Occupancy. More hazardous new use → must COMPLY fully with new occupancy code before approval. This binary rule governs the entire change-of-use decision framework.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -265,7 +265,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:15.323908+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.311168+00:00",
       "content_hash": "sha256:55eaefd68ea406b2aa1f07544e8df90b04f7499782eb47fdffecbb1aca657700"
     },
     {
@@ -452,19 +452,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Inspection → Application (B-12) → Assessment → Certificate of Use"
+          "text": "Inspection → Application (B-12) → Assessment → Certificate of Occupancy"
         },
         {
           "id": "b",
-          "text": "Application (B-12) → Assessment → Inspection → Certificate of Use"
+          "text": "Application (B-12) → Assessment → Inspection → Certificate of Occupancy"
         },
         {
           "id": "c",
-          "text": "Assessment → Application (B-12) → Certificate of Use → Inspection"
+          "text": "Assessment → Application (B-12) → Certificate of Occupancy → Inspection"
         },
         {
           "id": "d",
-          "text": "Application (B-12) → Certificate of Use → Inspection → Assessment"
+          "text": "Application (B-12) → Certificate of Occupancy → Inspection → Assessment"
         }
       ],
       "correct_option_id": "b",
@@ -472,7 +472,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The B-12 application must come before assessment and inspection — the BO needs the formal application before reviewing the case. Mnemonic: 'B-12 to Certificate of Use — the Change Chain.' The process is: B-12 Form → Assessment → Inspection → Certificate of Use. The order matters because the assessment determines the scope of inspection.",
+      "rationale": "The B-12 application must come before assessment and inspection — the BO needs the formal application before reviewing the case. Mnemonic: 'B-12 to Certificate of Occupancy — the Change Chain.' The process is: B-12 Form → Assessment → Inspection → Certificate of Occupancy. The order matters because the assessment determines the scope of inspection.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -485,7 +485,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:15.323908+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.308071+00:00",
       "content_hash": "sha256:2e9eaa1a33ca9f7aa9a64aa732f3028a3093a01cf692df30252a95ee13b26783"
     },
     {
@@ -624,23 +624,23 @@
       "question_id": "58d057b3-af3b-4fd1-b418-971117a97b5d",
       "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "After an approved change of occupancy, what document does the Building Official issue?",
+      "text": "After a change of use application is approved under Sec. 702, what specific occupancy authorization does the Building Official issue under Rule III Sec. 309?",
       "options": [
         {
           "id": "a",
-          "text": "A new Certificate of Occupancy"
+          "text": "An amended Building Permit that retroactively changes the original new-construction permit to reflect the new use"
         },
         {
           "id": "b",
-          "text": "A Certificate of Use"
+          "text": "An additional Certificate of Occupancy, issued because Sec. 309(c) expressly provides for other Certificates of Occupancy due to changes in use"
         },
         {
           "id": "c",
-          "text": "An amended Building Permit"
+          "text": "A separate 'Certificate of Use', a distinct instrument that the IRR created specifically for existing-building conversions"
         },
         {
           "id": "d",
-          "text": "A Fire Safety Clearance"
+          "text": "A Fire Safety Clearance issued by the Bureau of Fire Protection, which alone authorizes the new occupancy classification"
         }
       ],
       "correct_option_id": "b",
@@ -648,7 +648,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Mnemonic: 'COU ≠ CO — Certificate of U-se for existing building, change of U-se; Certificate of O-ccupancy for new/O-riginal occupancy.' The letter that changes in the document name tells you which building status it applies to. Option A is the most common wrong answer — candidates default to the familiar CO.",
+      "rationale": "Sec. 309(c) of the PD 1096 2004 Revised IRR provides that a building that already holds a Certificate of Occupancy may be issued OTHER Certificates of Occupancy due to changes in use, whether partly or wholly, if the new use conforms to the Code and its IRR. The term 'Certificate of Use' does not appear anywhere in PD 1096 or its IRR; the correct instrument is a Certificate of Occupancy.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -661,7 +661,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:15.323908+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.330091+00:00",
       "content_hash": "sha256:3d689930f68cdd3468df4be1c3f47f613a5b4fe2f47025b2e13beb1e22ebd350"
     },
     {
@@ -940,7 +940,7 @@
         },
         {
           "id": "b",
-          "text": "The change of use is unauthorized; the building is being operated in violation of PD 1096 until the Certificate of Use is issued"
+          "text": "The change of use is unauthorized; the building is being operated in violation of PD 1096 until the Certificate of Occupancy is issued"
         },
         {
           "id": "c",
@@ -956,7 +956,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Filing Form B-12 initiates the application process — it does not authorize the new use. Under Sec. 702, a change of use is only legally effective after the building conforms to Code requirements AND the Certificate of Use is issued. Operating the new use before the Certificate of Use is issued violates the Code, exposes the owner to administrative and criminal penalties, and exposes occupants to unverified safety risks.",
+      "rationale": "Filing Form B-12 initiates the application process — it does not authorize the new use. Under Sec. 702, a change of use is only legally effective after the building conforms to Code requirements AND the Certificate of Occupancy is issued. Operating the new use before the Certificate of Occupancy is issued violates the Code, exposes the owner to administrative and criminal penalties, and exposes occupants to unverified safety risks.",
       "explanation": "Application filing ≠ authorization. The Certificate of Use is the legal instrument that authorizes the new use — not the B-12 form. This is analogous to starting construction before a building permit is issued.",
       "code_citation": "PD 1096, Rule VII, Sec. 702",
       "bloom_level": "apply",
@@ -969,7 +969,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.742648+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.334074+00:00",
       "content_hash": "sha256:f83b3f785484569704c4a5ee9b5118e17b4f5e5bd421015613b1ccbd41b95cb4"
     },
     {
@@ -1068,19 +1068,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Inspection → Assessment → Submit B-12 → Certificate of Use"
+          "text": "Inspection → Assessment → Submit B-12 → Certificate of Occupancy"
         },
         {
           "id": "b",
-          "text": "Submit B-12 → Assessment → Inspection → Certificate of Use"
+          "text": "Submit B-12 → Assessment → Inspection → Certificate of Occupancy"
         },
         {
           "id": "c",
-          "text": "Assessment → Submit B-12 → Certificate of Use → Inspection"
+          "text": "Assessment → Submit B-12 → Certificate of Occupancy → Inspection"
         },
         {
           "id": "d",
-          "text": "Submit B-12 → Certificate of Use → Inspection → Assessment"
+          "text": "Submit B-12 → Certificate of Occupancy → Inspection → Assessment"
         }
       ],
       "correct_option_id": "b",
@@ -1088,7 +1088,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The proper process sequence under Sec. 702 is: (1) Submit NBC Form B-12 to initiate the application; (2) OBO conducts a fee and compliance Assessment; (3) Physical Inspection of the existing building; (4) Issuance of the Certificate of Use upon satisfactory compliance. The inspection must occur before the certificate is issued — not after. Option A inverts the first two steps. Options C and D place the certificate before the inspection.",
+      "rationale": "The proper process sequence under Sec. 702 is: (1) Submit NBC Form B-12 to initiate the application; (2) OBO conducts a fee and compliance Assessment; (3) Physical Inspection of the existing building; (4) Issuance of the Certificate of Occupancy upon satisfactory compliance. The inspection must occur before the certificate is issued — not after. Option A inverts the first two steps. Options C and D place the certificate before the inspection.",
       "explanation": "B-12 → Assessment → Inspection → Certificate of Use. The sequence matters: you cannot issue the Certificate of Use before inspecting the building. The inspection verifies that the building actually meets the Code requirements for the new use.",
       "code_citation": "PD 1096, Rule VII, Sec. 702",
       "bloom_level": "analyze",
@@ -1101,7 +1101,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.742648+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.314340+00:00",
       "content_hash": "sha256:d9771eacad8b7eda62f8533a519e323a5ae6ed99264a291ad70a1e271dcad1be"
     },
     {
@@ -1164,7 +1164,7 @@
         },
         {
           "id": "c",
-          "text": "A Certificate of Use — a separate instrument specific to approved occupancy changes"
+          "text": "A Certificate of Occupancy — a separate instrument specific to approved occupancy changes"
         },
         {
           "id": "d",
@@ -1176,7 +1176,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Under PD 1096, the specific document issued upon approval of a change of use application is the CERTIFICATE OF USE — distinct from the Certificate of Occupancy issued for new construction. The Certificate of Use is the instrument that legally authorizes the new occupancy classification. While a new CO (per Sec. 309.9) is also required, the intermediate authorization document specifically issued for the change process is the Certificate of Use.",
+      "rationale": "Under PD 1096, the specific document issued upon approval of a change of use application is the CERTIFICATE OF USE — distinct from the Certificate of Occupancy issued for new construction. The Certificate of Occupancy is the instrument that legally authorizes the new occupancy classification. While a new CO (per Sec. 309.9) is also required, the intermediate authorization document specifically issued for the change process is the Certificate of Occupancy.",
       "explanation": "Certificate of USE (change process) vs Certificate of OCCUPANCY (new construction). Both are issued by the Building Official but serve different purposes and apply to different scenarios. Confusing these two is a common exam error.",
       "code_citation": "PD 1096, Rule VII, Sec. 702",
       "bloom_level": "remember",
@@ -1189,7 +1189,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.742648+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.338424+00:00",
       "content_hash": "sha256:254ae03b8f2303729520a50eac81e9d5f0f3cfc439e6bc30b5e82b87a28c8340"
     },
     {
@@ -1336,7 +1336,7 @@
         },
         {
           "id": "b",
-          "text": "The change of use is unauthorized; the building is being operated in violation of PD 1096 until the Certificate of Use is issued"
+          "text": "The change of use is unauthorized; the building is being operated in violation of PD 1096 until the Certificate of Occupancy is issued"
         },
         {
           "id": "c",
@@ -1352,7 +1352,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Filing Form B-12 initiates the application process — it does not authorize the new use. Under Sec. 702, a change of use is only legally effective after the building conforms to Code requirements AND the Certificate of Use is issued. Operating the new use before the Certificate of Use is issued violates the Code, exposes the owner to administrative and criminal penalties, and exposes occupants to unverified safety risks.",
+      "rationale": "Filing Form B-12 initiates the application process — it does not authorize the new use. Under Sec. 702, a change of use is only legally effective after the building conforms to Code requirements AND the Certificate of Occupancy is issued. Operating the new use before the Certificate of Occupancy is issued violates the Code, exposes the owner to administrative and criminal penalties, and exposes occupants to unverified safety risks.",
       "explanation": "Application filing ≠ authorization. The Certificate of Use is the legal instrument that authorizes the new use — not the B-12 form. This is analogous to starting construction before a building permit is issued.",
       "code_citation": "PD 1096, Rule VII, Sec. 702",
       "bloom_level": "apply",
@@ -1365,7 +1365,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.641581+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.336043+00:00",
       "content_hash": "sha256:61eba075d6bd237089cabff6d2733d8dbdadf9da16174061a646e30683d90406"
     },
     {
@@ -1420,19 +1420,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Inspection → Assessment → Submit B-12 → Certificate of Use"
+          "text": "Inspection → Assessment → Submit B-12 → Certificate of Occupancy"
         },
         {
           "id": "b",
-          "text": "Submit B-12 → Assessment → Inspection → Certificate of Use"
+          "text": "Submit B-12 → Assessment → Inspection → Certificate of Occupancy"
         },
         {
           "id": "c",
-          "text": "Assessment → Submit B-12 → Certificate of Use → Inspection"
+          "text": "Assessment → Submit B-12 → Certificate of Occupancy → Inspection"
         },
         {
           "id": "d",
-          "text": "Submit B-12 → Certificate of Use → Inspection → Assessment"
+          "text": "Submit B-12 → Certificate of Occupancy → Inspection → Assessment"
         }
       ],
       "correct_option_id": "b",
@@ -1440,7 +1440,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The proper process sequence under Sec. 702 is: (1) Submit NBC Form B-12 to initiate the application; (2) OBO conducts a fee and compliance Assessment; (3) Physical Inspection of the existing building; (4) Issuance of the Certificate of Use upon satisfactory compliance. The inspection must occur before the certificate is issued — not after. Option A inverts the first two steps. Options C and D place the certificate before the inspection.",
+      "rationale": "The proper process sequence under Sec. 702 is: (1) Submit NBC Form B-12 to initiate the application; (2) OBO conducts a fee and compliance Assessment; (3) Physical Inspection of the existing building; (4) Issuance of the Certificate of Occupancy upon satisfactory compliance. The inspection must occur before the certificate is issued — not after. Option A inverts the first two steps. Options C and D place the certificate before the inspection.",
       "explanation": "B-12 → Assessment → Inspection → Certificate of Use. The sequence matters: you cannot issue the Certificate of Use before inspecting the building. The inspection verifies that the building actually meets the Code requirements for the new use.",
       "code_citation": "PD 1096, Rule VII, Sec. 702",
       "bloom_level": "analyze",
@@ -1453,7 +1453,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.641581+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.340389+00:00",
       "content_hash": "sha256:3413978ae4aa934493d17b0bd717e838387f75d03b9f626eb0a525ef6f0f9993"
     },
     {
@@ -1472,7 +1472,7 @@
         },
         {
           "id": "c",
-          "text": "A Certificate of Use — a separate instrument specific to approved occupancy changes"
+          "text": "A Certificate of Occupancy — a separate instrument specific to approved occupancy changes"
         },
         {
           "id": "d",
@@ -1484,7 +1484,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Under PD 1096, the specific document issued upon approval of a change of use application is the CERTIFICATE OF USE — distinct from the Certificate of Occupancy issued for new construction. The Certificate of Use is the instrument that legally authorizes the new occupancy classification. While a new CO (per Sec. 309.9) is also required, the intermediate authorization document specifically issued for the change process is the Certificate of Use.",
+      "rationale": "Under PD 1096, the specific document issued upon approval of a change of use application is the CERTIFICATE OF USE — distinct from the Certificate of Occupancy issued for new construction. The Certificate of Occupancy is the instrument that legally authorizes the new occupancy classification. While a new CO (per Sec. 309.9) is also required, the intermediate authorization document specifically issued for the change process is the Certificate of Occupancy.",
       "explanation": "Certificate of USE (change process) vs Certificate of OCCUPANCY (new construction). Both are issued by the Building Official but serve different purposes and apply to different scenarios. Confusing these two is a common exam error.",
       "code_citation": "PD 1096, Rule VII, Sec. 702",
       "bloom_level": "remember",
@@ -1497,7 +1497,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.641581+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.319886+00:00",
       "content_hash": "sha256:62d54f8fe39dd967cd8b3a7defa74404d2eccd4063af2bd713a9957988b4751c"
     },
     {

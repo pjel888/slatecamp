@@ -1,0 +1,508 @@
+{
+  "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f058787f2aec0e075c1fa567264ebcc1d69985158a3f56260e260dae2d4e1930",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "13c3b867-cb19-49f9-98c9-79498cd843d7",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "Why is MDPE particularly suitable as a compensation method for pre-design services like research and data gathering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It provides lower costs than percentage-based fees, making it attractive for projects with tight budgets"
+        },
+        {
+          "id": "b",
+          "text": "It is a cost-based approach applicable to non-creative work with measurable direct expenses"
+        },
+        {
+          "id": "c",
+          "text": "It eliminates the need for detailed project specifications, simplifying the initial phases of project planning"
+        },
+        {
+          "id": "d",
+          "text": "It guarantees a fixed profit margin regardless of scope, ensuring financial predictability for the service provider"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "MDPE may not always result in lower costs; it depends on the multiplier and expense base.",
+        "c": "MDPE requires clear definition of the scope to determine direct personnel expenses.",
+        "d": "MDPE profit margin varies based on the multiplier selected.",
+        "correct": "MDPE is a cost-based approach applicable to non-creative work such as accounting, research, and data gathering where direct expenses can be tracked and multiplied to recover overhead and profit (SPP Doc 201).",
+        "takeaway": "MDPE suits non-creative work where direct expenses are measurable and identifiable."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:37b7ab8b33d0eb7599a86f8d34acf462a2a5cc107b41ca8e88d48c653625825f"
+    },
+    {
+      "question_id": "67257ca1-f7e4-44ff-a8e8-10c906dc6c29",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "What must an architect submit to the client after the initial meeting for pre-design services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schematic design drawings, including preliminary sketches and conceptual layouts for client review"
+        },
+        {
+          "id": "b",
+          "text": "A formal proposal stating scope, payment method, and conditions"
+        },
+        {
+          "id": "c",
+          "text": "Contract documents and specifications, detailing all project requirements and legal obligations"
+        },
+        {
+          "id": "d",
+          "text": "Final construction cost estimate, based on initial discussions and anticipated project scope"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schematic design drawings are part of the regular design phase, not pre-design.",
+        "c": "Contract documents are prepared during the Contract Documents phase of regular design.",
+        "d": "Final cost estimates are provided in later design phases.",
+        "correct": "The architect must submit a formal proposal to the client after the initial meeting, stating the scope of work, manner of payment, owner's responsibilities, and other conditions (SPP Doc 201).",
+        "takeaway": "A formal pre-design proposal must specify scope, payment, and owner responsibilities."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:599b92704cd0299d44533ce959215bbb63e0138b54e31012ba47d672929e6dfc"
+    },
+    {
+      "question_id": "d8768a42-0479-44f2-8d49-61507607ce1d",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "According to SPP 201, what is the primary compensation method for pre-design services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percentage of Project Construction Cost, which aligns the architect's fee with the project's scale"
+        },
+        {
+          "id": "b",
+          "text": "Multiple of Direct Personnel Expenses (MDPE)"
+        },
+        {
+          "id": "c",
+          "text": "Hourly billing rate, providing flexibility for varying project demands"
+        },
+        {
+          "id": "d",
+          "text": "Value-based fee arrangement, allowing for compensation based on perceived value rather than time or cost"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Percentage of PCC is used for regular design services under SPP 202, not pre-design services.",
+        "c": "Hourly billing is not mentioned as a primary method for pre-design services in SPP 201.",
+        "d": "Value-based arrangements are not the established primary method in SPP 201.",
+        "correct": "SPP 201 establishes that MDPE is the primary method for pre-design services, a cost-based approach applicable to non-creative work such as accounting, research, and data gathering (SPP Doc 201).",
+        "takeaway": "MDPE is the primary pre-design compensation method for cost-based non-creative work."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d359599070bc8c2386a2c55ac752ca5c83dfe70aac95ef1d134314fa346a48ab"
+    },
+    {
+      "question_id": "85a45315-e39c-41e7-815a-2ee9b49edcdb",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "Pre-design services under SPP 201 cover work from initial problem identification through what stage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obtaining building permits, including all necessary documentation and approvals from relevant authorities"
+        },
+        {
+          "id": "b",
+          "text": "Initial project conceptualization"
+        },
+        {
+          "id": "c",
+          "text": "Construction bidding, involving the preparation and submission of bid documents to potential contractors"
+        },
+        {
+          "id": "d",
+          "text": "Project completion, ensuring all aspects of the project are finalized and handed over to the client"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Building permits are obtained during the Contract Documents phase under SPP 202.",
+        "c": "Construction bidding is the Bidding Assistance phase under SPP 202.",
+        "d": "Project completion occurs after construction administration.",
+        "correct": "SPP 201 defines pre-design services as architectural work performed before the architect begins regular design phases, ranging from initial problem identification through activities that allow the architect to initially conceptualize architectural and allied solutions (SPP Doc 201).",
+        "takeaway": "Pre-design services culminate in initial project conceptualization before regular design begins."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:24bfc761d3f7be28910cb23ee7e25423eafe396d3e0a01222218d1f12fca11c7"
+    },
+    {
+      "question_id": "2392ce58-4bd0-4c68-8528-3d4dec330fa7",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "Which of the following is NOT listed as a pre-design service in SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schematic design"
+        },
+        {
+          "id": "b",
+          "text": "Site selection and analysis"
+        },
+        {
+          "id": "c",
+          "text": "Architectural programming"
+        },
+        {
+          "id": "d",
+          "text": "Space planning"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Site selection and analysis is explicitly listed as a pre-design service.",
+        "c": "Architectural programming is explicitly listed as a pre-design service.",
+        "d": "Space planning is explicitly listed as a pre-design service.",
+        "correct": "Schematic design is the first fee-earning phase under SPP 202, not a pre-design service in SPP 201 (SPP Doc 201).",
+        "takeaway": "Schematic design is the first regular design phase, distinct from pre-design services."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a78d520c37e78dd374e7dc182d63f22c5289382ccc34831b49e45103099a0909"
+    },
+    {
+      "question_id": "ee221540-9a12-4911-8275-968a22baf2fb",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "Typical pre-design deliverables include analysis documents and feasibility reports. What else is commonly included?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bid documents and contractor proposals, detailing the scope of work and cost estimates for potential contractors"
+        },
+        {
+          "id": "b",
+          "text": "Space programs, site studies, and design briefs"
+        },
+        {
+          "id": "c",
+          "text": "Detailed construction drawings, including specifications and material selections for the project"
+        },
+        {
+          "id": "d",
+          "text": "Construction administration certificates, verifying compliance with regulatory standards and project specifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bid documents are prepared during the Bidding Assistance phase under SPP 202.",
+        "c": "Detailed construction drawings are prepared during the Contract Documents phase.",
+        "d": "Certificates of payment are issued during Construction Administration.",
+        "correct": "Pre-design deliverables typically include analysis documents, feasibility reports, space programs, site studies, and design briefs (SPP Doc 201).",
+        "takeaway": "Pre-design deliverables are foundational documents guiding the design process."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c4092b89092ca917ca925e16685190e46a0e9a3b9ab7fa0ed18ef38802c95a8"
+    },
+    {
+      "question_id": "d5887625-cf3d-42c0-8702-2d27869b6820",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "What is the typical range for the MDPE multiplier used in pre-design services compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.0 to 1.2"
+        },
+        {
+          "id": "b",
+          "text": "1.5 to 2.5"
+        },
+        {
+          "id": "c",
+          "text": "2.6 to 3.5"
+        },
+        {
+          "id": "d",
+          "text": "3.6 to 4.5"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This range is too low for MDPE multipliers under SPP 201.",
+        "c": "This range exceeds the standard MDPE multiplier range stated in SPP 201.",
+        "d": "This range is too high and not specified in SPP 201.",
+        "correct": "The MDPE multiplier ranges from 1.5 to 2.5 depending on office set-up, overhead, and architect experience (SPP Doc 201). Note: Some secondary sources incorrectly cite 1.0 to 2.0; the authoritative range is 1.5 to 2.5.",
+        "takeaway": "MDPE multipliers in pre-design services range 1.5–2.5 based on office overhead and experience."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:60c28bed0b0cc3ccb57fbe71ed8613e7a1acfbd826889b8840a2dae27142746e"
+    },
+    {
+      "question_id": "e11d7308-a1c7-4444-9e2e-f907b4ac2a7b",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "Per diem plus reimbursable expenses is listed in SPP 201 as a compensation method. For which type of pre-design activity is this approach most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Large-scale feasibility studies requiring extensive research and multiple site visits"
+        },
+        {
+          "id": "b",
+          "text": "Specialized personal time activities where tracking expenses is impractical"
+        },
+        {
+          "id": "c",
+          "text": "Multiple consulting sessions with different client departments, necessitating detailed documentation"
+        },
+        {
+          "id": "d",
+          "text": "Site analysis and land-use planning studies, especially in remote locations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Large-scale studies might be better suited to lump sum or MDPE methods.",
+        "c": "Multiple consulting sessions could use professional fee plus expenses.",
+        "d": "Site analysis typically uses MDPE or professional fee plus expenses.",
+        "correct": "SPP 201 identifies per diem plus reimbursable expenses as appropriate for specialized personal time activities where the nature of work makes direct expense tracking difficult (SPP Doc 201).",
+        "takeaway": "Per diem suits specialized personal time activities where expenses are harder to track."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b9da545f3ae52212ffa2622bc4bed8a0c7c4e73e3075d10cfb6071d8cb541470"
+    },
+    {
+      "question_id": "f61bac75-22db-41a6-860b-95a15b857473",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "Which compensation method under SPP 201 combines a professional fee with direct expenses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multiple of Direct Personnel Expenses, which includes a multiplier for overhead and profit"
+        },
+        {
+          "id": "b",
+          "text": "Professional fee plus expenses"
+        },
+        {
+          "id": "c",
+          "text": "Fixed lump sum fee, which is predetermined and not subject to change"
+        },
+        {
+          "id": "d",
+          "text": "Cost-plus percentage, where the fee is a percentage of the total project cost"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "MDPE is already a cost-based method that does not combine with a separate fee.",
+        "c": "Fixed lump sum is a separate method that does not separately itemize expenses.",
+        "d": "Cost-plus percentage is not listed as a method in SPP 201.",
+        "correct": "SPP 201 lists professional fee plus expenses as an alternative compensation method for pre-design services (SPP Doc 201).",
+        "takeaway": "Professional fee plus expenses is an alternative pre-design compensation method."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fe1fe4467e2649c60f91fc9cabda04ac66cae6a7c77f0eed60e3993583f656f0"
+    },
+    {
+      "question_id": "90609d99-2f70-4b64-817c-5f87177190e0",
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "topic_id": "a885c9ed-8604-4614-98e7-da58ef06c299",
+      "text": "An architect completing pre-design work is determining compensation using MDPE with a multiplier of 1.8 applied to direct personnel expenses of P150,000. What is the total pre-design fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P150,000"
+        },
+        {
+          "id": "b",
+          "text": "P180,000"
+        },
+        {
+          "id": "c",
+          "text": "P270,000"
+        },
+        {
+          "id": "d",
+          "text": "P330,000"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This ignores the MDPE multiplier entirely.",
+        "b": "This represents only the direct personnel expenses without applying the multiplier; the correct calculation requires multiplying the full direct personnel expenses (P150,000) by the multiplier (1.8).",
+        "d": "This exceeds the correct calculation and misapplies the multiplier.",
+        "correct": "Using MDPE: P150,000 × 1.8 = P270,000 total fee. The multiplier (1.8) is within the 1.5–2.5 range specified in SPP 201.",
+        "takeaway": "MDPE fee calculation: Direct Personnel Expenses × Multiplier = Total Fee."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-001-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5e18df58192804e252a0d5e93c7a601ca37acda96a10d9d9c3604ea13c1eb99f"
+    }
+  ]
+}

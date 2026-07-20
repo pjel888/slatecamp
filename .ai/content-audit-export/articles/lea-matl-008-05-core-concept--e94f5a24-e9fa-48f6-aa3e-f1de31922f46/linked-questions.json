@@ -8,37 +8,31 @@
       "question_id": "658f2f0c-ed59-48d2-8ab0-6411ba3f8a4e",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "A specification calls for applying silicone sealant on top of old acrylic sealant in an existing joint. What is the risk, and what should be done?",
+      "text": "What is the basic purpose of an adhesive in BCI?",
       "options": [
         {
           "id": "a",
-          "text": "Silicone and acrylic are compatible; the new sealant will adhere immediately without any additional preparation or priming"
+          "text": "To secure the surfaces of two materials together"
         },
         {
           "id": "b",
-          "text": "Silicone will not adhere to acrylic due to chemical incompatibility; all old sealant must be removed to base material."
+          "text": "To replace all mechanical fasteners in structural work"
         },
         {
           "id": "c",
-          "text": "The risk is air entrapment; primer is required between the two products to ensure proper adhesion and prevent future joint failure"
+          "text": "To waterproof every joint regardless of substrate"
         },
         {
           "id": "d",
-          "text": "No preparation is needed; the new sealant will chemically bond to the old product, forming a seamless and durable joint"
+          "text": "To provide only a decorative surface coating"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Compatibility is poor; adhesion will fail within weeks.",
-        "c": "Primer does not solve the incompatibility; substrate preparation (removal of old sealant) is required.",
-        "d": "No chemical bond occurs; mechanical adhesion is impossible.",
-        "correct": "Silicone and acrylic are chemically incompatible. Silicone has very low surface energy and does not wet acrylic. Complete removal of old sealant to bare substrate is mandatory.",
-        "takeaway": "When changing sealant types, remove old sealant completely. Never assume chemical compatibility."
-      },
+      "rationale": "BCI defines adhesives as materials used to secure the surfaces of two materials together.",
       "explanation": "Compatibility is poor; adhesion will fail within weeks. Primer does not solve the incompatibility; substrate preparation (removal of old sealant) is required. No chemical bond occurs; mechanical adhesion is impossible. Silicone and acrylic are chemically incompatible. Silicone has very low surface energy and does not wet acrylic. Complete removal of old sealant to bare substrate is mandatory. When changing sealant types, remove old sealant completely. Never assume chemical compatibility.",
       "code_citation": "ASTM C920 Substrate Preparation and Sealant Compatibility Guidelines",
       "bloom_level": "apply",
@@ -51,44 +45,38 @@
       "model_id": "ALE-MATL-008-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T15:53:12.110332+00:00",
+      "updated_at": "2026-07-20T01:13:27.865762+00:00",
       "content_hash": "sha256:798a0dfdf037c9fb1b983ec84437f4f98b11985a7d21edcb7035813869225f65"
     },
     {
       "question_id": "40327fb6-c5dc-46e0-811e-bc1729bed4ee",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "What type of adhesive is primarily used for bonding concrete-to-concrete or metal-to-concrete in structural applications?",
+      "text": "Which adhesive selection factor asks how the bond resists loads?",
       "options": [
         {
           "id": "a",
-          "text": "Pressure-sensitive adhesive"
+          "text": "Strength"
         },
         {
           "id": "b",
-          "text": "Epoxy adhesive"
+          "text": "Color matching"
         },
         {
           "id": "c",
-          "text": "Polyurethane adhesive"
+          "text": "Package size"
         },
         {
           "id": "d",
-          "text": "Silicone adhesive"
+          "text": "Finish gloss"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Pressure-sensitive adhesives are for temporary bonding (tapes, labels).",
-        "c": "Polyurethane adhesives are more flexible; preferred for wood-to-wood applications.",
-        "d": "Silicone adhesives are flexible and not suitable for structural concrete bonding.",
-        "correct": "Epoxy adhesives are two-part, high-strength products specifically designed for rigid bonding of concrete and metal. They develop full strength after 24-48 hours.",
-        "takeaway": "Epoxy = structural bonding (concrete, metal); Polyurethane = wood-to-wood or movement-accommodating applications."
-      },
+      "rationale": "BCI lists strength as an important adhesive selection factor.",
       "explanation": "Pressure-sensitive adhesives are for temporary bonding (tapes, labels). Polyurethane adhesives are more flexible; preferred for wood-to-wood applications. Silicone adhesives are flexible and not suitable for structural concrete bonding. Epoxy adhesives are two-part, high-strength products specifically designed for rigid bonding of concrete and metal. They develop full strength after 24-48 hours. Epoxy = structural bonding (concrete, metal); Polyurethane = wood-to-wood or movement-accommodating applications.",
       "code_citation": "ASTM D2382 Epoxy Adhesive Specifications",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-MATL-008-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T15:53:12.30848+00:00",
+      "updated_at": "2026-07-20T01:13:27.867280+00:00",
       "content_hash": "sha256:12fb7a1926edd8fb81de4058fe48f1f292dc9b2924b6accfee1e0e8ab841c75e"
     },
     {
       "question_id": "ecfcd7f3-6bfd-4986-961b-ed087bb7cc08",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "Which sealant type is moisture-curing and tolerates wet conditions during application?",
+      "text": "According to BCI, adhesives are usually strongest against which stresses?",
       "options": [
         {
           "id": "a",
-          "text": "Acrylic sealant, which is generally used for interior applications and not suitable for wet conditions"
+          "text": "Tensile and shear stresses"
         },
         {
           "id": "b",
-          "text": "Polyurethane sealant"
+          "text": "Cleavage and splitting stresses"
         },
         {
           "id": "c",
-          "text": "Butyl sealant, often used for roofing but not ideal for wet application"
+          "text": "Abrasion and polishing stresses"
         },
         {
           "id": "d",
-          "text": "Polysulfide sealant, which is known for its chemical resistance but not specifically for moisture curing"
+          "text": "Thermal color-change stresses"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Acrylic is water-based and sensitive to rain during cure; it requires 24-48 dry hours.",
-        "c": "Butyl sealants are non-hardening; they do not cure.",
-        "d": "Polysulfide sealants are moisture-tolerant but require longer cure times than polyurethane.",
-        "correct": "Polyurethane sealants are moisture-curing; water triggers the cure reaction, allowing application in humid conditions or during light rain.",
-        "takeaway": "Polyurethane = moisture-curing; ideal for tropical and humid climates."
-      },
+      "rationale": "BCI states adhesives are usually strongest in tensile and shear stresses.",
       "explanation": "Acrylic is water-based and sensitive to rain during cure; it requires 24-48 dry hours. Butyl sealants are non-hardening; they do not cure. Polysulfide sealants are moisture-tolerant but require longer cure times than polyurethane. Polyurethane sealants are moisture-curing; water triggers the cure reaction, allowing application in humid conditions or during light rain. Polyurethane = moisture-curing; ideal for tropical and humid climates.",
       "code_citation": "ASTM C920 Sealant Product Specifications",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-MATL-008-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T15:53:12.477807+00:00",
+      "updated_at": "2026-07-20T01:13:27.869480+00:00",
       "content_hash": "sha256:2ba0563d7eb311ad6fb3445a2154f242be1bb3931c372b68ca9e235ddedd6236"
     },
     {
       "question_id": "55b5ab8f-f29e-45e6-937d-7d621933b95d",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "A concrete expansion joint in a structure experiences 6 inches of movement due to thermal cycling. Using the ASTM C920 requirement that joint width must be at least 2 times the expected movement, what is the minimum required joint width?",
+      "text": "According to BCI, adhesives are usually weakest against which stresses?",
       "options": [
         {
           "id": "a",
-          "text": "6 inches"
+          "text": "Cleavage or splitting stresses"
         },
         {
           "id": "b",
-          "text": "12 inches"
+          "text": "Tensile and shear stresses"
         },
         {
           "id": "c",
-          "text": "18 inches"
+          "text": "Uniform compression only"
         },
         {
           "id": "d",
-          "text": "24 inches"
+          "text": "Surface staining only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "6 inches is the expected movement, not the joint width.",
-        "c": "18 inches exceeds the minimum requirement.",
-        "d": "24 inches is twice the minimum.",
-        "correct": "Minimum joint width = 2 × expected movement = 2 × 6 inches = 12 inches.",
-        "takeaway": "Always apply the 2x rule from ASTM C920. Joint width = 2 × movement."
-      },
+      "rationale": "BCI identifies cleavage or splitting stresses as the weaker stress condition for adhesives.",
       "explanation": null,
       "code_citation": "ASTM C920 Joint Design Requirements",
       "bloom_level": "apply",
@@ -201,44 +177,38 @@
       "model_id": "ALE-MATL-008-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.867988+00:00",
       "content_hash": "sha256:774d7182566edc649684b341d0ecd95ba9020e78798ca220aeb503e59e33fc75"
     },
     {
       "question_id": "b05d11fe-15fd-4759-894e-69e74486c310",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "An acrylic sealant requires 24-hour dry cure time in temperate climates. For a Philippine project at 90°F and 85 percent humidity during the dry season, approximately how long will the cure take?",
+      "text": "Which common adhesive does BCI describe as quick-setting, non-staining, and slightly resilient?",
       "options": [
         {
           "id": "a",
-          "text": "24 hours (same as temperate climates)"
+          "text": "White or polyvinyl glue"
         },
         {
           "id": "b",
-          "text": "36-48 hours (1.5-2x longer)"
+          "text": "Contact cement"
         },
         {
           "id": "c",
-          "text": "72 hours (3x longer)"
+          "text": "Resorcin resin"
         },
         {
           "id": "d",
-          "text": "1-2 weeks (significantly longer)"
+          "text": "Animal glue"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Cure time extends in tropical climates due to humidity interference.",
-        "c": "72 hours (3x) is excessive for acrylic in these conditions.",
-        "d": "1-2 weeks assumes conditions are cooler or significantly more humid.",
-        "correct": "Tropical conditions (high temperature and humidity) may extend cure times; however, the specific multiplier (1.5-2x) should be verified against product data sheets for the specific acrylic sealant being used, as cure time extension varies by formulation and environmental conditions.",
-        "takeaway": "Tropical climate cure time = 1.5-2x temperate times. Always plan for extended cure periods in the Philippines."
-      },
+      "rationale": "BCI describes white or polyvinyl glue as setting quickly, not staining, and being slightly resilient.",
       "explanation": null,
       "code_citation": "Tropical climate engineering practice and product data sheets",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-MATL-008-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.864611+00:00",
       "content_hash": "sha256:87f0023333646cca4fae9a550b279c31d06222f8f3fdc929b1eab57cf7510474"
     },
     {
       "question_id": "c99f78a2-e10a-42cc-a604-d0937967c595",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "What is the primary difference between an adhesive and a sealant?",
+      "text": "Which adhesive type does BCI describe as extremely strong and usable on porous and nonporous materials?",
       "options": [
         {
           "id": "a",
-          "text": "Adhesives are flexible; sealants are rigid, which affects their application in dynamic joints."
+          "text": "Epoxy resin"
         },
         {
           "id": "b",
-          "text": "Adhesives create permanent bonds and are rigid after cure; sealants remain flexible and accommodate joint movement."
+          "text": "Animal glue"
         },
         {
           "id": "c",
-          "text": "Adhesives are used for wood; sealants are used for concrete, reflecting their material compatibility."
+          "text": "White glue only"
         },
         {
           "id": "d",
-          "text": "There is no significant difference; the terms are interchangeable, although industry standards may vary."
+          "text": "Wall sizing"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The comparison is reversed; sealants are flexible.",
-        "c": "Both types are used for multiple substrates; application determines the choice.",
-        "d": "The terms are not interchangeable; they serve different functions.",
-        "correct": "Adhesives bond substrates rigidly; sealants remain elastic to accommodate joint movement and prevent air/water infiltration. This is the fundamental distinction.",
-        "takeaway": "Adhesive = permanent rigid bond. Sealant = flexible, accommodates movement."
-      },
+      "rationale": "BCI states epoxy resins are extremely strong and may secure both porous and nonporous materials.",
       "explanation": "The comparison is reversed; sealants are flexible. Both types are used for multiple substrates; application determines the choice. The terms are not interchangeable; they serve different functions. Adhesives bond substrates rigidly; sealants remain elastic to accommodate joint movement and prevent air/water infiltration. This is the fundamental distinction. Adhesive = permanent rigid bond. Sealant = flexible, accommodates movement.",
       "code_citation": "ASTM C920 Sealant Standard and ASTM D2382 Adhesive Standard",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-MATL-008-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T15:46:06.782172+00:00",
+      "updated_at": "2026-07-20T01:13:27.868800+00:00",
       "content_hash": "sha256:d73e7f1e972638dce2c8c6208f47c6a01603ab8dc3a73be1a2e96ff54b48f37c"
     },
     {
       "question_id": "f092ecd5-bd75-430a-86e3-faaca7a6b76d",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "What is the typical service life of a silicone sealant in a temperate climate?",
+      "text": "A large plastic laminate sheet must be bonded without clamping. Which BCI adhesive family matches this cue?",
       "options": [
         {
           "id": "a",
-          "text": "5-10 years"
+          "text": "Contact cement"
         },
         {
           "id": "b",
-          "text": "10-15 years"
+          "text": "Animal glue for stable indoor heat and humidity"
         },
         {
           "id": "c",
-          "text": "15-20 years"
+          "text": "A sealer used only to fill surface pores"
         },
         {
           "id": "d",
-          "text": "20+ years"
+          "text": "A backup material for caulking depth control"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5-10 years is typical for acrylic or butyl sealants.",
-        "b": "10-15 years is typical for acrylic sealants.",
-        "c": "15-20 years is typical for polyurethane sealants.",
-        "correct": "Silicone sealants are among the most durable elastomeric sealants, typically providing 15-20+ years of service in temperate climates with good UV and ozone resistance, depending on environmental exposure and product formulation.",
-        "takeaway": "Silicone (20+ years) > Polyurethane (15-20 years) > Acrylic (10-15 years)."
-      },
+      "rationale": "BCI states contact cement bonds on contact, generally does not require clamping, and is used for large sheet materials such as plastic laminate.",
       "explanation": null,
       "code_citation": "ASTM C920 Sealant Product Data and Durability Standards",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-MATL-008-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.871497+00:00",
       "content_hash": "sha256:11daedd69a67640e203f6f655a6c5e0f7794cc634bff9b98bf1954f051b51b82"
     },
     {
       "question_id": "e9f78201-79f2-439a-8f25-27003fb280c7",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "During LEA exam analysis, a specification for facade joints in a tropical climate calls for applying acrylic sealant during June (monsoon season, frequent rain, 85% humidity). What is the critical risk, and what should be specified instead?",
+      "text": "Which adhesive does BCI associate with large sheet materials such as plastic laminate?",
       "options": [
         {
           "id": "a",
-          "text": "Acrylic shrinkage will cause joint failure; use butyl sealant instead, which is more flexible and durable in humid conditions."
+          "text": "Contact cement"
         },
         {
           "id": "b",
-          "text": "Acrylic is water-based and rain will wash it away during the 24-48 hour cure period; polyurethane or silicone sealant (moisture-tolerant) should be specified or application postponed until the dry season."
+          "text": "Animal glue"
         },
         {
           "id": "c",
-          "text": "Acrylic is incompatible with tropical concrete; epoxy primer is required to ensure proper adhesion and longevity."
+          "text": "Acrylic wall paint"
         },
         {
           "id": "d",
-          "text": "Acrylic cures too slowly in tropical humidity; use fast-set polyurethane instead, which accelerates curing time and enhances performance."
+          "text": "Sodium silicate sealer"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While shrinkage is a concern, the immediate risk is cure failure from rain exposure.",
-        "c": "Epoxy primer does not address the water sensitivity of acrylic during cure.",
-        "d": "Cure rate is less critical than the rain sensitivity during cure.",
-        "correct": "Acrylic sealants require 24-48 hours of dry cure. In June monsoon with frequent rain and 85 percent humidity, water will interfere with cure and wash away the uncured material. Moisture-tolerant polyurethane or silicone is required, or scheduling must shift to the dry season (December-April).",
-        "takeaway": "Never specify water-based sealants (acrylic) for monsoon-season application in tropical regions. Use moisture-curing alternatives (polyurethane) or reschedule work."
-      },
+      "rationale": "BCI gives plastic laminate as an example use for contact cement.",
       "explanation": null,
       "code_citation": "Tropical construction practice and ASTM C920 application guidelines",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-MATL-008-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.870818+00:00",
       "content_hash": "sha256:232f7bd25086151db6f7b2c6d7859cf156e24350bb47e95ad37d05e276d49ab0"
     },
     {
       "question_id": "9ac51a05-5a1a-4b76-867e-bb6ebbf03193",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "Which sealant type is the most versatile for accommodating joint movement?",
+      "text": "In Salvan, what does adhesiveness mean?",
       "options": [
         {
           "id": "a",
-          "text": "Acrylic (Class 7.5)"
+          "text": "The ability of a material to cling to a different material"
         },
         {
           "id": "b",
-          "text": "Polyurethane (Class 50)"
+          "text": "The ability of one material to keep its own particles together"
         },
         {
           "id": "c",
-          "text": "Polysulfide (Class 25)"
+          "text": "The ability of a surface to become glossy"
         },
         {
           "id": "d",
-          "text": "Butyl (non-hardening)"
+          "text": "The ability of a wall to carry vertical load"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Acrylic Class 7.5 accommodates only ±7.5 percent; limited for significant movement.",
-        "c": "Polysulfide Class 25 accommodates ±25 percent; adequate for moderate movement but lower than polyurethane.",
-        "d": "Butyl sealants are non-hardening and non-flexible after cure.",
-        "correct": "Polyurethane sealants accommodate ±50 percent movement (Class 50), the highest among the common elastomeric sealants (silicone Class 50 is equivalent, but polyurethane has broader substrate compatibility).",
-        "takeaway": "Polyurethane Class 50 and silicone Class 50 are the highest-movement sealants per ASTM C920. Choose polyurethane for moisture tolerance; silicone for durability."
-      },
+      "rationale": "Salvan distinguishes adhesiveness as clinging to a different material.",
       "explanation": null,
       "code_citation": "ASTM C920 Sealant Classification and Product Specifications",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-MATL-008-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.866573+00:00",
       "content_hash": "sha256:709c20cd6d584d976e35930134409d1516395734a3e45bc92c1f990c16bc3a7d"
     },
     {
       "question_id": "4972fc6b-1dc3-483d-bfc5-dfc3a932654c",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
       "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "According to ASTM C920, what does a Class 50 sealant mean?",
+      "text": "What is the purpose of sealing compounds in Salvan?",
       "options": [
         {
           "id": "a",
-          "text": "The sealant accommodates 50 degrees of temperature change, which is crucial for extreme climates."
+          "text": "To fill surface pores and form a continuous skin against liquid movement"
         },
         {
           "id": "b",
-          "text": "The sealant accommodates ±50 percent joint movement (equal tension and compression)."
+          "text": "To calculate the volume of lumber"
         },
         {
           "id": "c",
-          "text": "The sealant has a service life of 50 years, ensuring long-term durability and performance."
+          "text": "To classify reinforcing bar markings"
         },
         {
           "id": "d",
-          "text": "The sealant is 50 percent more expensive than standard sealants due to its enhanced properties."
+          "text": "To set the number of hollow blocks per square meter"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Temperature is not the basis for ASTM C920 classification.",
-        "c": "Service life varies by product and environment; it is separate from the Class rating.",
-        "d": "Cost is not determined by the Class number.",
-        "correct": "ASTM C920 Class ratings specify movement capability. Class 50 means the sealant can accommodate ±50 percent of the original joint width in both tension and compression.",
-        "takeaway": "ASTM C920 Class = movement capability. Class 50 = ±50%; Class 25 = ±25%; Class 7.5 = ±7.5%."
-      },
+      "rationale": "Salvan describes sealing compounds as filling pores and forming a continuous skin against liquid penetration or escape.",
       "explanation": null,
       "code_citation": "ASTM C920 Elastomeric Joint Sealant Standard",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-MATL-008-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.870153+00:00",
       "content_hash": "sha256:44bf4e6fbe96a53425f8a6102e7dd4df9f253be59ab2ae1e46a80e0020552ad9"
     }
   ]

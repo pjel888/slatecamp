@@ -8,37 +8,31 @@
       "question_id": "49681035-042d-4d58-b499-0596f6e715f0",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "An architect earns 15% of total design fees for Schematic Design on a project with a PCC of P8,000,000. What amount should the architect receive upon completion and approval of schematic design?",
+      "text": "Under SPP 202, Schematic Design studies are derived from which earlier phase?",
       "options": [
         {
           "id": "a",
-          "text": "P600,000"
+          "text": "Project Definition Phase"
         },
         {
           "id": "b",
-          "text": "P1,200,000"
+          "text": "Design Development Phase"
         },
         {
           "id": "c",
-          "text": "P1,600,000"
+          "text": "Bidding or Negotiation Phase"
         },
         {
           "id": "d",
-          "text": "P4,000,000"
+          "text": "Construction Phase"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "P600,000 would be 7.5% of the PCC.",
-        "c": "P1,600,000 would be 20% of the PCC (Design Development rate).",
-        "d": "P4,000,000 would be 50% of the PCC (Contract Documents rate).",
-        "correct": "If total architect fees = 10% of PCC (P800,000), then SD = 15% of total fees = P120,000 (SPP Doc 202 payment schedule applied to total fees, not PCC directly).",
-        "takeaway": "Schematic Design fee = 15% × Project Construction Cost."
-      },
+      "rationale": "The source says Schematic Design studies are derived from the Project Definition Phase.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "apply",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-SVC-005-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.898751+00:00",
       "content_hash": "sha256:4561e0f40d796c8cd0768b4606ddf17c742e50d3817259b0e6f7008e2101047c"
     },
     {
       "question_id": "cbf79e32-d1b7-40ea-9fb1-8eba6e8210fd",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "Which of the following is NOT mentioned as a critical decision made during Schematic Design?",
+      "text": "Which set of inputs does the architect evaluate during Schematic Design?",
       "options": [
         {
           "id": "a",
-          "text": "Massing and building orientation"
+          "text": "Only the contractor's payroll"
         },
         {
           "id": "b",
-          "text": "Structural systems and project delivery approach"
+          "text": "Owner program, schedule, budget, and site"
         },
         {
           "id": "c",
-          "text": "Specific HVAC equipment brand selection"
+          "text": "Only final shop drawings"
         },
         {
           "id": "d",
-          "text": "Site utilization strategy"
+          "text": "Only warranty documents"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Massing and orientation are explicitly mentioned as Schematic Design decisions.",
-        "b": "Structural systems and delivery method are explicitly mentioned.",
-        "d": "Site utilization is explicitly mentioned.",
-        "correct": "SPP 202 identifies massing, orientation, site utilization, structural systems, and project delivery method as Schematic Design decisions, not specific equipment brands (determined in later phases) (SPP Doc 202).",
-        "takeaway": "Schematic Design sets strategic direction; equipment specifics come later."
-      },
+      "rationale": "SPP 202 lists the owner's program, schedule, budget, and project site.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-SVC-005-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.900158+00:00",
       "content_hash": "sha256:770d0e10e18f6f5186e7f40d2c729b2b28466689c9fe73ea1866d9485e759ae1"
     },
     {
       "question_id": "0648ff6b-1677-4581-9a3d-76959220695b",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "Consider the implications of inadequate Schematic Design work in terms of SPP 202's subsequent phases. Why would rushing or underfunding Schematic Design be problematic?",
+      "text": "Which deliverable best signals Schematic Design rather than Design Development?",
       "options": [
         {
           "id": "a",
-          "text": "It has no impact on later phases, assuming all other project elements are perfectly aligned"
+          "text": "Initial line drawings leading to a recommended solution"
         },
         {
           "id": "b",
-          "text": "Weak Schematic Design foundations lead to greater rework, consultant coordination challenges, and potential disputes in Design Development and Contract Documents phases"
+          "text": "Complete technical specifications for construction"
         },
         {
           "id": "c",
-          "text": "It saves money that can be applied to Construction Administration, though this may lead to unforeseen complications"
+          "text": "Final certificate of payment"
         },
         {
           "id": "d",
-          "text": "It eliminates the need for owner approval, which can expedite the process but may result in misaligned expectations"
+          "text": "Abstract of bids"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Schematic quality directly affects all subsequent phases.",
-        "c": "Underfunding early phases typically increases total costs, not reduces them.",
-        "d": "Owner approval is essential regardless of Schematic Design quality.",
-        "correct": "Adequate Schematic Design establishes the foundation for all subsequent work; inadequate schematic work creates cascading issues through Design Development and Contract Documents, requiring rework and increasing costs (SPP Doc 202).",
-        "takeaway": "Strong Schematic Design foundations prevent costly rework later."
-      },
+      "rationale": "Schematic Design prepares initial line drawings representing design studies.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "analyze",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-SVC-005-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.900961+00:00",
       "content_hash": "sha256:d2cbc1b10c71799400d5b897a6c1dfff76f1097e8df7d90d0819b5b98aa99cba"
     },
     {
       "question_id": "de06253a-607c-4c7e-b66f-8d6a29243ff5",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "According to SPP 202, what is the fee percentage earned during the Schematic Design Phase?",
+      "text": "What cost document does Schematic Design submit to the owner?",
       "options": [
         {
           "id": "a",
-          "text": "5%"
+          "text": "A final project construction cost audit"
         },
         {
           "id": "b",
-          "text": "10%"
+          "text": "A Statement of the Probable Project Construction Cost based on current cost parameters"
         },
         {
           "id": "c",
-          "text": "15%"
+          "text": "A contractor retention ledger"
         },
         {
           "id": "d",
-          "text": "20%"
+          "text": "A guarantee bond schedule"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5% is Proposal Fee (SPP 201), not Schematic Design.",
-        "b": "10% does not correspond to standard Construction phase allocation.",
-        "d": "20% exceeds standard Design Development allocation (typically 15%).",
-        "correct": "Schematic Design is the first fee-earning phase under SPP 202, representing 15% of the architect's total compensation based on Project Construction Cost (SPP Doc 202).",
-        "takeaway": "Schematic Design earns 15% of total design fees."
-      },
+      "rationale": "SPP 202 requires an SPPCC based on current cost parameters.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "remember",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-SVC-005-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.903344+00:00",
       "content_hash": "sha256:597586e96ffdc505f987ac399b7695ba90c62e313d899b034adca89b250d5f55"
     },
     {
       "question_id": "65bbba7b-2bfe-4179-a5d4-69d0d2a40a01",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "What is the primary output of Schematic Design according to SPP 202?",
+      "text": "What is the owner-facing purpose of the schematic design general description?",
       "options": [
         {
           "id": "a",
-          "text": "Detailed working drawings and specifications, including all necessary technical details for construction"
+          "text": "To support owner approval of the recommended solution"
         },
         {
           "id": "b",
-          "text": "Preliminary design solutions with conceptual plans and probable construction cost estimate"
+          "text": "To replace the building permit set"
         },
         {
           "id": "c",
-          "text": "Final construction documents for building permits, ensuring compliance with all relevant codes and regulations"
+          "text": "To serve as the contractor's final shop drawing"
         },
         {
           "id": "d",
-          "text": "Bid documents for contractor solicitation, complete with all necessary legal and technical requirements"
+          "text": "To close out the project"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Detailed working drawings are prepared during Contract Documents phase.",
-        "c": "Final construction documents are prepared during Contract Documents phase.",
-        "d": "Bid documents are prepared during Bidding Assistance phase.",
-        "correct": "Schematic Design produces initial line drawings and design studies leading to a recommended conceptual solution with a Statement of Probable Project Construction Cost (SPP Doc 202).",
-        "takeaway": "Schematic Design produces preliminary conceptual solutions and cost estimates."
-      },
+      "rationale": "The schematic studies lead to a recommended solution and general description for owner approval.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "remember",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-SVC-005-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.903985+00:00",
       "content_hash": "sha256:80a120f1722a6fb216665acae12330d4c9f2d6be892c73aa147b291f4fc52008"
     },
     {
       "question_id": "fccf1e8a-dc41-4631-9ab9-ddd400052705",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "How do the design studies produced during Schematic Design relate to the final recommended concept?",
+      "text": "Which item belongs to a later phase, not Schematic Design?",
       "options": [
         {
           "id": "a",
-          "text": "Design studies are unrelated to the final concept and serve no purpose in the decision-making process"
+          "text": "Evaluating the owner's budget"
         },
         {
           "id": "b",
-          "text": "Design studies represent alternative approaches that lead to a recommended conceptual solution"
+          "text": "Proposing project delivery methods"
         },
         {
           "id": "c",
-          "text": "Design studies replace the need for schematic drawings, making them redundant"
+          "text": "Preparing outline specifications for systems and materials"
         },
         {
           "id": "d",
-          "text": "Design studies are only for the architect's internal use and not shown to owners, unless specifically requested"
+          "text": "Submitting an SPPCC based on current parameters"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Design studies are the foundation for the recommended concept.",
-        "c": "Design studies are represented in the schematic drawings shown to the owner.",
-        "d": "Design studies inform the concept presented to the owner for approval.",
-        "correct": "During Schematic Design, the architect prepares initial line drawings representing design studies that lead to a recommended conceptual solution presented to the owner (SPP Doc 202).",
-        "takeaway": "Schematic studies explore alternatives leading to a recommended concept."
-      },
+      "rationale": "Outline specifications are a Design Development duty.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-SVC-005-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.904614+00:00",
       "content_hash": "sha256:e3194464bcf344f65df703e5a477dc6fe2e9ad94a21cfcc3ed18d383535d1894"
     },
     {
       "question_id": "3a39c288-9c89-47dd-9acc-858f9745608d",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "According to SPP 202, what must occur before the architect can proceed from Schematic Design to Design Development?",
+      "text": "Under UAP Document 401-402, completion of Schematic Design Services corresponds to what payment milestone?",
       "options": [
         {
           "id": "a",
-          "text": "The architect must begin construction, which is a premature step before design development"
+          "text": "15% of the Basic Fee"
         },
         {
           "id": "b",
-          "text": "The owner must approve the schematic design and probable cost estimate"
+          "text": "35% of the Basic Fee"
         },
         {
           "id": "c",
-          "text": "The contractor must be selected, although this typically occurs after design development"
+          "text": "85% of the Basic Fee"
         },
         {
           "id": "d",
-          "text": "Building permits must be obtained, which is usually required after design development"
+          "text": "100% of the Basic Fee"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Construction occurs much later, after Contract Documents and Bidding phases.",
-        "c": "Contractor selection occurs after Bidding Assistance phase.",
-        "d": "Permits are obtained during Contract Documents phase.",
-        "correct": "The owner must approve the schematic design concept and the probable construction cost estimate before the architect proceeds to design development (SPP Doc 202).",
-        "takeaway": "Owner approval of schematics and cost is required to proceed to Design Development."
-      },
+      "rationale": "The agreement source states 15% of the Basic Fee upon completion of Schematic Design Services.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-SVC-005-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.905238+00:00",
       "content_hash": "sha256:ece2b64f198a4dd03e06578f701899d819d5aa048d1002321fec3fcc72fa267d"
     },
     {
       "question_id": "0bbce9ad-a429-40bc-8b6e-23e199f2fe93",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "During Schematic Design, the architect evaluates the owner's program, schedule, and budget. Why is this evaluation essential according to SPP 202?",
+      "text": "Why is it safer to call Schematic Design a design phase rather than the first SPP 202 phase?",
       "options": [
         {
           "id": "a",
-          "text": "To determine if the project should be abandoned based on preliminary cost estimates and schedule feasibility analysis"
+          "text": "SPP 202 lists Project Definition before Schematic Design."
         },
         {
           "id": "b",
-          "text": "To propose delivery methods and develop design solutions that align with owner constraints"
+          "text": "SPP 202 omits Schematic Design entirely."
         },
         {
           "id": "c",
-          "text": "To blame the owner if the project exceeds budget by documenting initial cost estimates as a liability shield"
+          "text": "Schematic Design is only a construction-phase service."
         },
         {
           "id": "d",
-          "text": "To eliminate the need for design development by producing fully detailed construction documents during schematic design"
+          "text": "Schematic Design happens after final completion."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Evaluation informs design direction; it doesn't determine project viability alone.",
-        "c": "Evaluation enables informed collaboration, not blame assignment.",
-        "d": "Evaluation informs design; subsequent development is still necessary.",
-        "correct": "The architect evaluates owner's program, schedule, budget, and site to propose appropriate project delivery methods and develop design solutions that meet these constraints (SPP Doc 202).",
-        "takeaway": "Schematic evaluation aligns design direction with owner constraints."
-      },
+      "rationale": "The SPP 202 sequence begins with Project Definition, then Schematic Design.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "apply",
@@ -401,30 +353,30 @@
       "model_id": "ALE-PRAC-SVC-005-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.905865+00:00",
       "content_hash": "sha256:9c915a4107fa9abf0c3be57ae90bfbeb19afbc44a52c1b741c040d6a73bb4ec4"
     },
     {
       "question_id": "fe49f5e2-d8fa-4e92-abea-3c26f200635f",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "Why is obtaining owner approval of the schematic design concept considered essential according to SPP 202?",
+      "text": "Which phase would the architect enter after owner-approved schematic concepts are ready for more detailed drawings and outline specifications?",
       "options": [
         {
           "id": "a",
-          "text": "Approval is a formality that has no practical consequence, which is a misconception"
+          "text": "Project Definition"
         },
         {
           "id": "b",
-          "text": "Changes to the approved concept in later phases typically result in claims and delays, making early approval critical"
+          "text": "Design Development"
         },
         {
           "id": "c",
-          "text": "Approval is needed only to satisfy the contractor, which overlooks the owner's role"
+          "text": "Bidding or Negotiation"
         },
         {
           "id": "d",
-          "text": "Approval guarantees the project will be completed on budget, which is not always the case"
+          "text": "Final completion"
         }
       ],
       "correct_option_id": "b",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Approval is significant and affects project trajectory.",
-        "c": "Approval is for owner authorization; contractor selection comes later.",
-        "d": "Owner approval does not guarantee budget control without other measures.",
-        "correct": "SPP 202 emphasizes that changes to the approved concept in later phases typically result in additional compensation claims and schedule delays, making early approval essential (SPP Doc 202).",
-        "takeaway": "Approved schematics prevent costly changes in later design phases."
-      },
+      "rationale": "Design Development is based on approved schematics and conceptual plans.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-SVC-005-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.901755+00:00",
       "content_hash": "sha256:d08a9e1d3441e169bf6e163ac105d0116d2d86d871af4ca9f993c80f7f6bc8e6"
     },
     {
       "question_id": "7978f50b-a94f-4b20-8f36-1662b80703ed",
       "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
       "topic_id": "9b34c9f1-5bb8-4029-ba81-240c09e2f901",
-      "text": "A Statement of Probable Project Construction Cost is submitted to the owner during Schematic Design. What purpose does this cost estimate serve?",
+      "text": "A client asks for conceptual plans from the project definition output. Which phase is being described?",
       "options": [
         {
           "id": "a",
-          "text": "To fix the final construction cost that cannot change, regardless of future adjustments"
+          "text": "Schematic Design"
         },
         {
           "id": "b",
-          "text": "To provide the owner with cost feedback for decision-making and planning"
+          "text": "Contract Document"
         },
         {
           "id": "c",
-          "text": "To commit the contractor to a specific price, which is binding and unchangeable"
+          "text": "Construction Phase"
         },
         {
           "id": "d",
-          "text": "To replace the need for design development, eliminating further design phases"
+          "text": "Bidding or Negotiation"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Cost estimates are preliminary and updated in subsequent phases.",
-        "c": "Contractor pricing occurs during Bidding phase, not Schematic Design.",
-        "d": "Cost estimates inform but do not replace design development work.",
-        "correct": "The Statement of Probable Project Construction Cost provides the owner with cost feedback based on current cost parameters, enabling informed decisions about the conceptual design (SPP Doc 202).",
-        "takeaway": "Schematic cost estimates guide owner decisions about design direction."
-      },
+      "rationale": "Conceptual plans derived from Project Definition identify Schematic Design.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-SVC-005-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.902525+00:00",
       "content_hash": "sha256:b959c59a38d4eb51149ed7effa9d4fea308f22d9239f1f70dd318d4ba46c9cd2"
     }
   ]

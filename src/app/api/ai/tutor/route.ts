@@ -1,17 +1,30 @@
 import { NextResponse } from "next/server";
+import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { getAIProvider } from "@/lib/ai/provider";
 import { checkRateLimit } from "@/lib/rate-limit";
+import { parseAiBody } from "@/lib/ai/route-validation";
+
+// `context` is client-supplied quiz state that gets stringified into the
+// generator prompt. We accept any JSON shape (the tutor formats it for the
+// model) but cap its serialized size to bound prompt-injection blast radius.
+const TutorRequestSchema = z.object({
+  message: z.string().min(1).max(4000),
+  context: z.unknown().optional(),
+})
 
 export async function POST(req: Request) {
   try {
-    const { message, context: quizContext } = await req.json();
+    const parsed = await parseAiBody(req, TutorRequestSchema)
+    if (parsed.ok === false) return parsed.response
+    const { message, context: quizContext } = parsed.data
+
     const supabase = await createClient();
-    
+
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) return new Response("Unauthorized", { status: 401 });
 
-    const rateLimit = checkRateLimit(`ai_tutor_${user.id}`);
+    const rateLimit = await checkRateLimit(`ai_tutor_${user.id}`);
     if (!rateLimit.allowed) {
       return NextResponse.json(
         { error: 'Rate limit exceeded. Please wait before sending another message.' },

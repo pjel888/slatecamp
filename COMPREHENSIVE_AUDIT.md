@@ -1,5 +1,14 @@
 # SlateCamp Comprehensive Codebase Audit
 
+> **Historical document — preserved for context, not a living reference.**
+> This audit was written 2026-05-15. Counts below (128 routes, 86 tables, 100
+> migrations, 81 tests, 128 AGENTS.md files) reflect the repo as of that date
+> and have drifted. Verified 2026-07-20 counts (in `README.md` and `plans/`):
+> **130 `page.tsx` routes · 77 tables · 227 migrations · 95 test files**. For
+> current architecture, security, and findings, see `README.md`, the `.ai/`
+> corpus, and the `plans/` directory (which contains the 2026-07-20 audit
+> results and applied fixes).
+
 ## Executive Summary
 
 SlateCamp is a pre-launch MVP for LEA (Licensure Examination for Architects) preparation in the Philippines. It's a large, operationally mature Next.js 16 App Router application with 128 page routes, 86 database tables, 100 migrations, and extensive domain logic. This audit covers architecture, data layer, frontend systems, security, testing, and operational readiness.

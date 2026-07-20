@@ -21,5 +21,52 @@
     "checked_sources": [
       "detailing-wall-diaphragm-construction-joints"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "What does the source say about contact surfaces at wall and diaphragm construction joints?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are polished smooth in all cases."
+      },
+      {
+        "id": "b",
+        "text": "They are roughened as specified by the cited source provision."
+      },
+      {
+        "id": "c",
+        "text": "They are ignored after the next pour starts."
+      },
+      {
+        "id": "d",
+        "text": "They need only paint, not surface preparation."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "They are polished smooth in all cases. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "b": "They are roughened as specified by the cited source provision. This stays inside the Batch 146 local source boundary for Construction Joints in Walls and Diaphragms.",
+      "c": "They are ignored after the next pour starts. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "d": "They need only paint, not surface preparation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 146 local source boundary.",
+      "correct": "They are roughened as specified by the cited source provision. Supported by detailing-wall-diaphragm-construction-joints.",
+      "takeaway": "For Construction Joints in Walls and Diaphragms, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-wall-diaphragm-construction-joints",
+      "checked_sources": [
+        "detailing-wall-diaphragm-construction-joints"
+      ]
+    },
+    "explanation": "They are roughened as specified by the cited source provision. Supported by the Batch 146 local source boundary: detailing-wall-diaphragm-construction-joints.",
+    "code_citation": "detailing-wall-diaphragm-construction-joints",
+    "bloom_level": "apply",
+    "application_context": "calculation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-007-06-002"
   }
 }

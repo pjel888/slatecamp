@@ -1,10 +1,17 @@
 import { NextResponse } from 'next/server'
+import { z } from 'zod'
 import { createClient } from '@/lib/supabase/server'
 import { getAIProvider } from '@/lib/ai/provider'
 import { isDemoMode } from '@/lib/demo/config'
 import { checkRateLimit } from '@/lib/rate-limit'
+import { parseAiBody } from '@/lib/ai/route-validation'
 
 export type StudyAgentAction = 'summarize' | 'flashcards' | 'code_check'
+
+const StudyAgentRequestSchema = z.object({
+  action: z.enum(['summarize', 'flashcards', 'code_check']),
+  content: z.string().min(1).max(8000),
+})
 
 const DEMO_SUMMARIZE = `**Key points (atomic):**
 - First main idea from your notes.
@@ -22,7 +29,12 @@ const DEMO_CODE_CHECK = `**Code check:** Your note mentions building code concep
 
 export async function POST(request: Request) {
   if (isDemoMode()) {
-    const { action } = (await request.json()) as { action?: StudyAgentAction }
+    const parsed = await parseAiBody(
+      request,
+      z.object({ action: z.enum(['summarize', 'flashcards', 'code_check']).optional() }),
+    )
+    if (parsed.ok === false) return parsed.response
+    const { action } = parsed.data
     const text = action === 'summarize' ? DEMO_SUMMARIZE : action === 'flashcards' ? DEMO_FLASHCARDS : DEMO_CODE_CHECK
     return NextResponse.json({ text })
   }
@@ -33,7 +45,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
 
-  const rateLimit = checkRateLimit(`ai_${user.id}`)
+  const rateLimit = await checkRateLimit(`ai_${user.id}`)
   if (!rateLimit.allowed) {
     return NextResponse.json(
       { error: 'Rate limit exceeded. Please wait before sending another message.' },
@@ -41,11 +53,9 @@ export async function POST(request: Request) {
     )
   }
 
-  const body = (await request.json()) as { action: StudyAgentAction; content: string }
-  const { action, content } = body
-  if (!action || typeof content !== 'string') {
-    return NextResponse.json({ error: 'action and content required' }, { status: 400 })
-  }
+  const parsed = await parseAiBody(request, StudyAgentRequestSchema)
+  if (parsed.ok === false) return parsed.response
+  const { action, content } = parsed.data
 
   const systemPrompts: Record<StudyAgentAction, string> = {
     summarize: `You are a Study Tutor for architecture Licensure Exam preparation. The user has pasted messy lecture or reading notes.

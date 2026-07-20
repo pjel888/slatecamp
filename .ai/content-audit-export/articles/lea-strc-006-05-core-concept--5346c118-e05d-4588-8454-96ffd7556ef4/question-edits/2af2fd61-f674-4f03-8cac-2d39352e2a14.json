@@ -23,5 +23,54 @@
       "detailing-precast-integrity",
       "detailing-cover"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which definition best stays inside the captured source boundary for precast concrete slabs?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are always cast monolithically with every column and footing."
+      },
+      {
+        "id": "b",
+        "text": "They are one-way spanning units made before placement in the final supported floor system."
+      },
+      {
+        "id": "c",
+        "text": "They are nonstructural decorative panels only."
+      },
+      {
+        "id": "d",
+        "text": "They never require support or bearing review."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "They are always cast monolithically with every column and footing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "b": "They are one-way spanning units made before placement in the final supported floor system. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+      "c": "They are nonstructural decorative panels only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "d": "They never require support or bearing review. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "correct": "They are one-way spanning units made before placement in the final supported floor system. Supported by bsi-prestress-precast.",
+      "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-prestress-precast",
+      "checked_sources": [
+        "bsi-prestress-precast",
+        "detailing-precast-integrity",
+        "detailing-cover"
+      ]
+    },
+    "explanation": "They are one-way spanning units made before placement in the final supported floor system. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+    "code_citation": "bsi-prestress-precast",
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-05-001"
   }
 }

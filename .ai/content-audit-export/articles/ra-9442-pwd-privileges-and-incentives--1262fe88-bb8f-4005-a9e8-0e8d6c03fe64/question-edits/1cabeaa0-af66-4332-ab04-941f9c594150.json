@@ -2,9 +2,9 @@
   "question_id": "1cabeaa0-af66-4332-ab04-941f9c594150",
   "baseline_hash": "sha256:ba770e3c094dfc80468bb0f3af306fe302b49008012d625a795a931925f90c53",
   "action": "replace",
-  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for ra-9442-pwd-privileges-and-incentives.",
-  "approved_by": "codex-local-source-audit-batch-089",
-  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
     "parent_article_slug": "ra-9442-pwd-privileges-and-incentives",
@@ -48,28 +48,28 @@
     "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
   },
   "proposed": {
-    "text": "Under the 2024 BP 344 IRR, what is the default maximum accessible ramp gradient before special-case length checks?",
+    "text": "A private company with 120 employees wants to understand its PWD employment obligations. Under the Philippine law framework, which statement correctly describes the company's obligation?",
     "options": [
       {
         "id": "A",
-        "text": "1:8"
+        "text": "It must reserve exactly 1% of positions for PWDs as an absolute legal mandate under RA 10524"
       },
       {
         "id": "B",
-        "text": "1:12"
+        "text": "It is encouraged to reserve at least 1% of positions for PWDs under RA 10524 and anti-discrimination provisions"
       },
       {
         "id": "C",
-        "text": "1:15"
+        "text": "It has no legal obligation to hire PWDs since employment quotas apply only to government agencies"
       },
       {
         "id": "D",
-        "text": "1:20"
+        "text": "It must reserve 5% of positions for PWDs since it is a large private employer with over 100 employees"
       }
     ],
-    "correct_option_id": "D",
-    "rationale": "The 2024 BP 344 IRR states that accessible ramp gradient should not be steeper than 1:20, with steeper gradients treated as special cases by length.",
-    "explanation": "The 2024 BP 344 IRR states that accessible ramp gradient should not be steeper than 1:20, with steeper gradients treated as special cases by length.",
-    "code_citation": "BP 344 2024 IRR, Accessible Ramps"
+    "correct_option_id": "B",
+    "rationale": "Private companies with 100+ employees are encouraged (not strictly mandated) to reserve 1% of positions for PWDs. The 1% employment quota is a firm absolute mandate for government agencies and corporations under RA 10524. For private companies with 100 or more employees, the 1% reservation is encouraged and backed by anti-discrimination provisions, but the framing in RA 10524 and RA 7277 amendments is less absolute for the private sector than for the public sector. Failure to make good-faith efforts can trigger anti-discrimination enforcement, but the private sector framing is 'encouraged' rather than a hard criminal mandate.",
+    "explanation": "Government: 1% is an absolute mandate. Private (100+ employees): 1% is encouraged with anti-discrimination backing.",
+    "code_citation": "RA 10524; RA 7277 as amended"
   }
 }

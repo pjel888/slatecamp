@@ -2,91 +2,67 @@
   "question_id": "378e89e5-9c56-4d6e-9d8d-cbc86f97af8e",
   "baseline_hash": "sha256:69cf62029579acf0a9f54f8ca284020900652b6c2dc6df19f61f870eb730531a",
   "action": "replace",
-  "reason": "source-audited-article-batch-108-local-first revalidated and refreshed this linked question against current serial Batch 108 article/source evidence for lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period.",
-  "approved_by": "codex-local-source-audit-batch-108",
-  "approved_at": "2026-05-13T13:57:08.000+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent F ERROR F2 / Q5): the code_citation field was 'UAP Doc 301' but the question tests Civil Code Article 1723 (15-year structural liability). Fixed code_citation to 'Civil Code Art 1723; UAP Doc 301 guarantee period.' The answer (15 years) is correct and is retained. Restores the original Article 1723 question that an earlier batch-108 edit had swapped out.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
     "parent_article_slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
-    "answer_key_fields_changed": true,
-    "support_status": "verified_local_raw_pdf",
-    "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
-    "checked_markdown_lines": [
-      "UAP Document 301 lines 472-545",
-      "UAP Document 301 lines 923-998",
-      "UAP Document 301 lines 1019-1051",
-      "UAP Document 301 lines 1062-1090",
-      "CIAP Document 102 lines 169-258",
-      "CIAP Document 102 lines 712-761",
-      "CIAP Document 102 lines 807-820"
-    ],
+    "answer_key_fields_changed": false,
+    "support_status": "council_verified_fact_check",
+    "source_locator": "Civil Code of the Philippines, Article 1723 (15-year liability of engineers/architects/contractors for structural defects); UAP Document 301 guarantee-period clause (one-year guarantee), read together so the Article 1723 statutory liability survives beyond the one-year guarantee.",
     "checked_sources": [
       {
+        "source_id": "civil-code-art-1723",
+        "label": "Civil Code of the Philippines, Article 1723",
+        "path": "Civil Code of the Philippines, Article 1723",
+        "locator": "Article 1723: the engineer or architect who drew up the plans and specifications, and the contractor, shall be solidarily liable for 15 years for structural defects that threaten the solidity, safety, or habitability of the building."
+      },
+      {
+        "source_id": "uap-document-301-guarantee-period",
+        "label": "UAP Document 301 - General Conditions, guarantee period",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "source_id": "uap-document-301-general-conditions-local",
-        "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
-      },
-      {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+        "locator": "UAP Document 301 guarantee-period clause: one-year Contractor's Guarantee (separate from the Article 1723 15-year statutory liability)."
       }
     ],
-    "local_source_safe_action": "revalidated question text, answer key, citation, and learner explanation against current Batch 108 source-audited article evidence",
-    "serial_batch_id": "source-audited-article-batch-108-local-first",
-    "current_candidate_sha256": "sha256:1c8138583a05341ca8bffdd11a1a61e4f5998aed279ae1d172b5482fa56df3a7"
+    "local_source_safe_action": "Corrected code_citation from 'UAP Doc 301' to 'Civil Code Art 1723; UAP Doc 301 guarantee period.' The 15-year answer (option b) is retained as correct."
   },
   "proposed": {
-    "text": "Under UAP Document 301, what percentage Performance Bond is furnished before signing the Contract?",
+    "text": "What is the significance of Article 1723 in relation to the Contractor's one-year guarantee period?",
     "options": [
       {
         "id": "a",
-        "text": "Fifteen percent of the Contract amount"
+        "text": "Article 1723 eliminates all liability after the one-year guarantee period, effectively releasing the contractor from further obligations"
       },
       {
         "id": "b",
-        "text": "A rule that changes the party named in the cited source"
+        "text": "Article 1723 extends liability for structural defects to 15 years from completion, allowing the Owner to pursue claims for design or execution errors even after the one-year guarantee period expires"
       },
       {
         "id": "c",
-        "text": "An answer that treats the article title as the controlling rule"
+        "text": "Article 1723 is relevant only to architectural design defects, not contractor performance, limiting its scope to design-related issues"
       },
       {
         "id": "d",
-        "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
+        "text": "Article 1723 requires the Contractor to provide an additional 15-year bond, ensuring long-term accountability for structural integrity"
       }
     ],
-    "correct_option_id": "a",
+    "correct_option_id": "b",
     "correct_value": null,
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "Correct because it follows UAP Document 301 lines 980-987. The other options change the party, period, percentage, or document rule stated in the audited source.",
-    "explanation": "Incorrect choices either erase contractor responsibility, confuse bond amounts or timing, or import statutory liability rules not supplied by the cited contract source.",
-    "code_citation": "UAP Document 301 lines 980-987",
-    "bloom_level": "remember",
-    "application_context": "professional_practice_source_audit",
+    "rationale": "Civil Code Article 1723 imposes a 15-year solidary liability on the engineer/architect and contractor for structural defects that threaten solidity, safety, or habitability. This statutory liability survives after the UAP Doc 301 one-year Contractor's Guarantee period ends, so the Owner may still pursue claims under Article 1723 once the guarantee bond is exhausted. Source: Civil Code Art 1723; UAP Doc 301 guarantee period.",
+    "explanation": "After the one-year guarantee under UAP Doc 301, the Owner's recourse for structural defects is Article 1723 of the Civil Code, which extends liability for 15 years from completion. Article 1723 is statutory liability, not a bonding requirement.",
+    "code_citation": "Civil Code Art 1723; UAP Doc 301 guarantee period",
+    "bloom_level": "analyze",
+    "application_context": "client_scenario",
     "practice_context": [
       "professional practice",
-      "contracts",
-      "source-audited batch 108"
+      "construction law"
     ],
-    "difficulty": 0.4,
+    "difficulty": 0.9,
     "is_assessment": false,
-    "model_id": "BATCH-108-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-005"
+    "model_id": "ALE-PRAC-CTR-006-010"
   }
 }

@@ -8,37 +8,31 @@
       "question_id": "2d1f422b-b013-4ced-9bf8-52a7cdefb9c6",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "Structural steel is quoted at 40,000 pesos per metric ton. A project requires 2.5 MT of steel. What is the material cost?",
+      "text": "A takeoff has 4 steel members, each 6 m long, with a given unit weight of 25 kg/m. What is the total weight?",
       "options": [
         {
           "id": "a",
-          "text": "60,000 pesos"
+          "text": "600 kg"
         },
         {
           "id": "b",
-          "text": "100,000 pesos"
+          "text": "150 kg"
         },
         {
           "id": "c",
-          "text": "150,000 pesos"
+          "text": "240 kg"
         },
         {
           "id": "d",
-          "text": "200,000 pesos"
+          "text": "1000 kg"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "60,000 pesos results from 1.5 MT instead of 2.5 MT.",
-        "b": "100,000 pesos is the direct calculation (2.5 × 40,000).",
-        "d": "200,000 pesos results from 5 MT instead of 2.5 MT.",
-        "correct": "Cost = 2.5 MT × 40,000 pesos/MT = 100,000 pesos. Hmm, that's option 1, not option 2 (150,000). Let me verify: 2.5 × 40,000 = 100,000. So option 1 is correct. But the answer index marks option 2 (150,000). There may be a discrepancy; I'll note the calculation.",
-        "takeaway": "Cost estimation: Total weight (MT) × Price per MT = Total material cost."
-      },
+      "rationale": "4 x 6 x 25 = 600 kg.",
       "explanation": null,
       "code_citation": "Structural steel cost",
       "bloom_level": "analyze",
@@ -51,44 +45,38 @@
       "model_id": "ALE-MATL-010-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.306029+00:00",
       "content_hash": "sha256:a501eb452149126a78bff3951bc90d876b00c291df6b7401b79c9d4fbc18d6a1"
     },
     {
       "question_id": "cbe3277b-ffde-4b56-8be1-d4056158a593",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "A frame has 4 beams, each 8 m long, made of IPE 300 steel (42.2 kg/m). What is the total weight without waste?",
+      "text": "How many metric tons is 2500 kg of steel?",
       "options": [
         {
           "id": "a",
-          "text": "846.4 kg, assuming no additional load factors or safety margins are applied"
+          "text": "2.5 MT"
         },
         {
           "id": "b",
-          "text": "1,049 kg, calculated without considering potential variations in material density"
+          "text": "25 MT"
         },
         {
           "id": "c",
-          "text": "1,352 kg, which includes a standard allowance for joint connections"
+          "text": "0.25 MT"
         },
         {
           "id": "d",
-          "text": "1,689.6 kg"
+          "text": "250 MT"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "846.4 kg results from 2 beams, not 4.",
-        "b": "1,049 kg is significantly lower; calculation error.",
-        "c": "1,352 kg is very close to the correct calculation (1,350.4).",
-        "correct": "Total weight = 4 beams × 8 m × 42.2 kg/m = 32 m × 42.2 kg/m = 1,350.4 kg. Closest is **1,352 kg (option c)**.",
-        "takeaway": "Multi-member assembly: Sum of (number × length × weight per meter) for each member type."
-      },
+      "rationale": "Divide kilograms by 1000: 2500 kg = 2.5 MT.",
       "explanation": null,
       "code_citation": "Structural steel multi-member",
       "bloom_level": "apply",
@@ -101,43 +89,38 @@
       "model_id": "ALE-MATL-010-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.310946+00:00",
       "content_hash": "sha256:d31d99d5fdf394130c9e9a7d0ebdd3d5a2f010367c4cb4fb519a2f6e68e3c668"
     },
     {
       "question_id": "b1ece91b-f8c3-4624-8c75-43391ac35306",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "The weight of structural steel is determined by looking up the value from ___.",
+      "text": "Structural steel is quoted at 40000 pesos per metric ton. A project requires 2.5 MT. What is the material cost?",
       "options": [
         {
           "id": "a",
-          "text": "Formula D²÷162.5, which is a simplified calculation for estimating purposes"
+          "text": "100000 pesos"
         },
         {
           "id": "b",
-          "text": "Manufacturer weight tables for the section type"
+          "text": "60000 pesos"
         },
         {
           "id": "c",
-          "text": "Cross-sectional area × 7,850 kg/m³, which provides a precise calculation based on material density"
+          "text": "150000 pesos"
         },
         {
           "id": "d",
-          "text": "Both B and C (equivalent approaches), offering flexibility in determining weight"
+          "text": "200000 pesos"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "D²÷162.5 is for rebar, not structural steel.",
-        "b": "Correct method, derived from cross-sectional area × density.",
-        "correct": "Both B and C are correct: manufacturers publish weight tables (B), which are calculated using the formula (C). For ALE purposes, use the published weight table.",
-        "takeaway": "Structural steel weight = published weight tables. Memorize key section weights (HEB 200 = 50 kg/m, IPE 300 = 42.2 kg/m)."
-      },
+      "rationale": "2.5 x 40000 = 100000 pesos.",
       "explanation": null,
       "code_citation": "NSCP 2015, AISC Manual",
       "bloom_level": "remember",
@@ -150,44 +133,38 @@
       "model_id": "ALE-MATL-010-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.308776+00:00",
       "content_hash": "sha256:3d4e8e818d3eba6ddd32f44b503b034b10b2115fd5f87f2ebaac93b0468376c3"
     },
     {
       "question_id": "ee29a4c4-4d31-482c-a2c5-8ce323701b98",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "A multi-story building frame requires: 20 columns (HEB 300 @ 117 kg/m, 4 m each), 40 primary beams (IPE 400 @ 66.3 kg/m, 8 m each), and 60 secondary braces (IPE 200 @ 22.4 kg/m, 4 m each). Calculate total steel weight with 6% waste and convert to metric tons.",
+      "text": "What is the source-safe total-weight formula when unit weight is given in kg/m?",
       "options": [
         {
           "id": "a",
-          "text": "10.2 MT"
+          "text": "Total weight = sum of quantity x length x unit weight"
         },
         {
           "id": "b",
-          "text": "12.8 MT"
+          "text": "Total weight = price / length"
         },
         {
           "id": "c",
-          "text": "14.5 MT"
+          "text": "Total weight = area x paint coverage"
         },
         {
           "id": "d",
-          "text": "16.7 MT"
+          "text": "Total weight = tile area / room area"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "10.2 MT is lower than expected.",
-        "b": "12.8 MT is intermediate but still lower.",
-        "d": "14.5 MT is still lower than calculated 38.1 MT.",
-        "correct": "Revise quantities/options to match realistic total near 14.5 MT, e.g., halve all member counts. 360 + 21,216 + 5,376 = 35,952 kg. With 6% waste: 35,952 × 1.06 = 38,109.1 kg ≈ 38.1 MT. Hmm, that's higher than all options. Let me recalculate to verify. If 38.1 MT is the actual total, the closest option is 16.7 MT (option 3), but that's significantly lower. There may be a scaling issue or different assumptions. I'll mark methodology as correct.",
-        "takeaway": "Exam-grade problems require careful tracking of all member types, systematic calculation, waste application, and unit conversion to MT."
-      },
+      "rationale": "Steel takeoff arithmetic multiplies each member quantity by length and kg/m, then sums groups.",
       "explanation": null,
       "code_citation": "Comprehensive building frame steel estimation",
       "bloom_level": "analyze",
@@ -200,44 +177,38 @@
       "model_id": "ALE-MATL-010-07-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.311615+00:00",
       "content_hash": "sha256:74bb9327b9d51194995eb2d510003ea4321bb1da0d7942ac946fc69b24afa30c"
     },
     {
       "question_id": "08ec5885-9581-4f71-b1bc-1697335d703c",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "A frame requires: 4 columns at 5 m each (HEB 200, 50 kg/m) and 8 beams at 6 m each (IPE 300, 42.2 kg/m). Calculate total weight with a 5% waste factor.",
+      "text": "When should a fabrication waste allowance be added to a steel takeoff?",
       "options": [
         {
           "id": "a",
-          "text": "2,500 kg"
+          "text": "Only when the item tells you to include it"
         },
         {
           "id": "b",
-          "text": "2,788 kg"
+          "text": "Always before multiplying length"
         },
         {
           "id": "c",
-          "text": "3,040 kg"
+          "text": "Never, even if the problem requires it"
         },
         {
           "id": "d",
-          "text": "3,360 kg"
+          "text": "Only for paint"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2,500 kg is lower; missing beams or using lower weights.",
-        "b": "2,788 kg is intermediate; partial calculation.",
-        "d": "3,360 kg is higher; possible over-estimate with additional allowance.",
-        "correct": "Columns: 4 × 5 × 50 = 1,000 kg. Beams: 8 × 6 × 42.2 = 2,025.6 kg. Total: 3,025.6 kg × 1.05 = 3,176.9 kg ≈ 3,040 kg (option b, closest). Let me recalculate: if beams are 8 × 6 × 42.2 = 2,025.6. Columns 4 × 5 × 50 = 1,000. Total = 3,025.6. 3,025.6 × 1.05 = 3,176.9 ≈ 3,177. Option 2 (3,040) is close if using different assumptions. I'll mark methodology and note closest.",
-        "takeaway": "Multi-component frame: Sum all member weights (columns + beams + bracing), then apply waste %."
-      },
+      "rationale": "The source-safe rule is to add waste only when the problem asks for it.",
       "explanation": null,
       "code_citation": "Frame steel estimation",
       "bloom_level": "apply",
@@ -250,44 +221,38 @@
       "model_id": "ALE-MATL-010-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.312473+00:00",
       "content_hash": "sha256:bfc6cdb42a49079d243be43f5ee32b3574f6d41e2306a1834a3b47a2fab28234"
     },
     {
       "question_id": "1c56b3f1-97be-4df6-b73e-ce4f7a222c49",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "A column is 6 m tall, made of HEB 200 steel (50 kg/m). What is the total weight?",
+      "text": "How many kilograms are in one metric ton?",
       "options": [
         {
           "id": "a",
-          "text": "180 kg"
+          "text": "1000 kg"
         },
         {
           "id": "b",
-          "text": "250 kg"
+          "text": "100 kg"
         },
         {
           "id": "c",
-          "text": "300 kg"
+          "text": "10 kg"
         },
         {
           "id": "d",
-          "text": "350 kg"
+          "text": "10000 kg"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "180 kg results from using 30 kg/m (incorrect weight).",
-        "b": "250 kg results from using ~42 kg/m (IPE 300, not HEB 200).",
-        "d": "350 kg results from using 58.3 kg/m (heavier section).",
-        "correct": "Weight = 6 m × 50 kg/m = 300 kg.",
-        "takeaway": "Single member: Length (m) × Weight per meter (kg/m) = Total weight (kg)."
-      },
+      "rationale": "For estimating, 1 metric ton equals 1000 kg.",
       "explanation": null,
       "code_citation": "Structural steel calculation",
       "bloom_level": "apply",
@@ -300,30 +265,30 @@
       "model_id": "ALE-MATL-010-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.309508+00:00",
       "content_hash": "sha256:e740b62e68b4476eed5c01c150799ccc263273d5eb971a9c116dfe8dd256cd64"
     },
     {
       "question_id": "f575d263-9018-4efd-8a53-ea5376ce29d2",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "A building frame requires: 6 columns (HEB 200), 12 primary beams (IPE 300), and 24 secondary braces (IPE 200). All columns are 4 m, beams are 7 m, braces are 3 m. Using weights: HEB 200 = 50 kg/m, IPE 300 = 42.2 kg/m, IPE 200 = 22.4 kg/m, calculate total weight with 7% waste.",
+      "text": "What should control the unit weight of a steel member in an LEA takeoff item?",
       "options": [
         {
           "id": "a",
-          "text": "2,821 kg"
+          "text": "The table or problem statement unit weight"
         },
         {
           "id": "b",
-          "text": "3,020 kg"
+          "text": "A guessed section weight"
         },
         {
           "id": "c",
-          "text": "3,435 kg"
+          "text": "The member color"
         },
         {
           "id": "d",
-          "text": "4,126 kg"
+          "text": "The room finish"
         }
       ],
       "correct_option_id": "a",
@@ -331,13 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2,821 kg is too low; missing major members.",
-        "b": "3,020 kg is intermediate but too low.",
-        "c": "3,435 kg is still lower than expected.",
-        "correct": "Rewrite question or options to match calculation, e.g., reduce quantities or use lighter sections so total ~4,126 kg / 1.07 ≈ 3,857 kg theoretical. Hmm, this is much higher than all options. Let me verify calculations. Perhaps the intended calculation has different values or there's a misunderstanding. I'll mark the methodology as correct.",
-        "takeaway": "Complex multi-member assemblies: systematically calculate each member type, sum, then apply waste factor."
-      },
+      "rationale": "Fajardo warns estimators to verify weight per meter or weight per bar length from the applicable table.",
       "explanation": null,
       "code_citation": "Comprehensive frame steel estimation",
       "bloom_level": "analyze",
@@ -350,44 +309,38 @@
       "model_id": "ALE-MATL-010-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.308050+00:00",
       "content_hash": "sha256:d3ef4ad4d3f98c7f891d2709f6827c9e9dc7f140ee4730421c5383af99e947a2"
     },
     {
       "question_id": "40e81923-31c8-4e03-addb-e0883e91d8c4",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "The typical waste allowance for structural steel fabrication is ___.",
+      "text": "Three steel members are 8 m long with a given unit weight of 42 kg/m. What is their total weight?",
       "options": [
         {
           "id": "a",
-          "text": "2–3%"
+          "text": "1008 kg"
         },
         {
           "id": "b",
-          "text": "5–7%"
+          "text": "336 kg"
         },
         {
           "id": "c",
-          "text": "10–15%"
+          "text": "126 kg"
         },
         {
           "id": "d",
-          "text": "20–25%"
+          "text": "3008 kg"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2–3% is too low; does not account for fabrication losses.",
-        "c": "10–15% is higher; applies to materials like paint or tiles, not structural steel.",
-        "d": "20–25% is excessive.",
-        "correct": "Structural steel fabrication waste is 5–7% due to cutting, welding, and handling losses.",
-        "takeaway": "Use 5–7% waste for structural steel. Add this AFTER calculating total member weights."
-      },
+      "rationale": "3 x 8 x 42 = 1008 kg.",
       "explanation": "2–3% is too low; does not account for fabrication losses. 10–15% is higher; applies to materials like paint or tiles, not structural steel. 20–25% is excessive. Structural steel fabrication waste is 5–7% due to cutting, welding, and handling losses. Use 5–7% waste for structural steel. Add this AFTER calculating total member weights.",
       "code_citation": "Site practice, NSCP guidelines",
       "bloom_level": "apply",
@@ -400,44 +353,38 @@
       "model_id": "ALE-MATL-010-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-05-06T15:09:18.711683+00:00",
+      "updated_at": "2026-07-20T01:13:26.310254+00:00",
       "content_hash": "sha256:4a92d6a87ab927c9e1de28c650b0a13d93f66e68c0c51d18d902c09dbad853a7"
     },
     {
       "question_id": "5fce1666-8acb-4920-b55f-f740f9cce6d4",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "An H-beam HEB 200 weighs ___ kg/m.",
+      "text": "A base steel weight is 1000 kg and the problem requires 5 percent fabrication allowance. What final weight should be used?",
       "options": [
         {
           "id": "a",
-          "text": "26 kg/m"
+          "text": "1050 kg"
         },
         {
           "id": "b",
-          "text": "50 kg/m"
+          "text": "950 kg"
         },
         {
           "id": "c",
-          "text": "42 kg/m"
+          "text": "1005 kg"
         },
         {
           "id": "d",
-          "text": "117 kg/m"
+          "text": "1500 kg"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "26 kg/m is HEA 150 (lighter).",
-        "c": "42 kg/m is IPE 300 (I-beam, not H-beam).",
-        "d": "117 kg/m is HEB 300 (larger).",
-        "correct": "HEB 200 (200 × 200 mm H-beam) weighs 50 kg/m. This is a standard reference section.",
-        "takeaway": "Memorize HEB 200 = 50 kg/m as an anchor value."
-      },
+      "rationale": "1000 x 1.05 = 1050 kg.",
       "explanation": null,
       "code_citation": "Megasteel, structural steel tables",
       "bloom_level": "remember",
@@ -450,44 +397,38 @@
       "model_id": "ALE-MATL-010-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.313202+00:00",
       "content_hash": "sha256:3e348411f4d664f310d538a837a2188a4d804bb530b9dc89655f547f127c46ba"
     },
     {
       "question_id": "6cf3fdb3-9b14-4e8b-93e1-c62dfec9c915",
       "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
       "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
-      "text": "An I-beam IPE 300 weighs ___ kg/m.",
+      "text": "Which shortcut should not be used for structural steel shapes unless the item is explicitly about reinforcing bars?",
       "options": [
         {
           "id": "a",
-          "text": "22.4 kg/m"
+          "text": "A reinforcing-bar shortcut"
         },
         {
           "id": "b",
-          "text": "42.2 kg/m"
+          "text": "A given kg/m table"
         },
         {
           "id": "c",
-          "text": "66.3 kg/m"
+          "text": "A metric-ton conversion"
         },
         {
           "id": "d",
-          "text": "50 kg/m"
+          "text": "A direct length x unit weight multiplication"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "22.4 kg/m is IPE 200 (smaller).",
-        "c": "66.3 kg/m is IPE 400 (larger).",
-        "d": "50 kg/m is HEB 200 (H-beam, not I-beam).",
-        "correct": "IPE 300 (300 mm height I-beam) weighs 42.2 kg/m. Standard reference for primary beams.",
-        "takeaway": "Memorize IPE 300 = 42.2 kg/m and IPE 400 = 66.3 kg/m."
-      },
+      "rationale": "Structural shapes should use the unit weight provided by the table or item; reinforcing-bar shortcuts apply only when the item is about reinforcing bars.",
       "explanation": null,
       "code_citation": "Megasteel, structural steel tables",
       "bloom_level": "remember",
@@ -500,7 +441,7 @@
       "model_id": "ALE-MATL-010-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.307208+00:00",
       "content_hash": "sha256:ce53e13e81f5346e4320af17d04a5f64257d7a38851b2b3be7ea57fb41f9c6bc"
     }
   ]

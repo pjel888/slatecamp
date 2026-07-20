@@ -2,9 +2,9 @@
   "question_id": "a25a7ea9-e1e4-4586-90a8-eea03dc38724",
   "baseline_hash": "sha256:18ec276ce4cb146e76bf7ebd1c4bb6ec30aab14ecac9dccf470e6598098f517a",
   "action": "replace",
-  "reason": "source-audited-article-batch-121-local-first source-maps lea-hist-004-07-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
-  "approved_by": "codex-local-source-audit-batch-121",
-  "approved_at": "2026-05-13T15:55:13.115+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
     "parent_article_slug": "lea-hist-004-07-core-concept",
@@ -59,56 +59,28 @@
     "new_source_map_phase": true
   },
   "proposed": {
-    "question_id": "a25a7ea9-e1e4-4586-90a8-eea03dc38724",
-    "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
-    "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
-    "text": "For Mughal architecture, which option best matches the Batch 121 source-map anchor for this item?",
+    "text": "The Taj Mahal construction spanned from 1632 to which completion date, with the mausoleum itself completed in 1648 and the surrounding complex finished in the second date?",
     "options": [
       {
         "id": "a",
-        "text": "1638"
+        "text": "1638 — mid-construction date, before the mausoleum was finished"
       },
       {
         "id": "b",
-        "text": "1648"
+        "text": "1648 — the year the Taj Mahal mausoleum itself was completed"
       },
       {
         "id": "c",
-        "text": "1653"
+        "text": "1653 — the year the entire Taj Mahal complex was completed"
       },
       {
         "id": "d",
-        "text": "1658"
+        "text": "1658 — the year of Shah Jahan's death, not the complex completion"
       }
     ],
     "correct_option_id": "c",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": {
-      "a": "1638 does not best match the Batch 121 source map for Mughal architecture. Use the local capture/refined map before relying on older broad wording.",
-      "b": "1648 does not best match the Batch 121 source map for Mughal architecture. Use the local capture/refined map before relying on older broad wording.",
-      "c": "1653 is the source-safe answer for this Mughal architecture item under the Batch 121 local capture/refined map.",
-      "d": "1658 does not best match the Batch 121 source map for Mughal architecture. Use the local capture/refined map before relying on older broad wording.",
-      "correct": "1653 matches the local source capture and refined source-map anchors for Mughal architecture.",
-      "takeaway": "Mughal architecture items should be answered from source-mapped architectural vocabulary, named monument anchors, and cautious claim limits."
-    },
-    "explanation": "1653 matches the local source capture and refined source-map anchors for Mughal architecture. Mughal architecture items should be answered from source-mapped architectural vocabulary, named monument anchors, and cautious claim limits.",
-    "code_citation": null,
-    "bloom_level": "remember",
-    "application_context": "recall",
-    "practice_context": [
-      "CH"
-    ],
-    "difficulty": 0.5,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false,
-    "model_id": "ALE-HIST-004-07-012",
-    "prompt_image_url": null,
-    "created_at": "2026-03-23T19:27:24.126756+00:00",
-    "updated_at": "2026-05-06T14:40:22.649546+00:00",
-    "content_hash": "sha256:18ec276ce4cb146e76bf7ebd1c4bb6ec30aab14ecac9dccf470e6598098f517a"
+    "rationale": "Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.' [A]: 1638 is during construction but not the final completion date. [B]: 1648 marks the mausoleum completion, not the full complex. [D]: 1658 marks Shah Jahan's death, not the Taj Mahal's completion.",
+    "explanation": "1638 is during construction but not the final completion date. 1648 marks the mausoleum completion, not the full complex. 1658 marks Shah Jahan's death, not the Taj Mahal's completion. Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.' The article states: 'Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.'.",
+    "code_citation": null
   }
 }

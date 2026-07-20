@@ -8,23 +8,23 @@
       "question_id": "9ed943a2-3930-414e-9c8e-b1624e6f0e77",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "During Construction Administration, an architect observes that a contractor is installing a different door type than specified in the Construction Documents. What is the architect's appropriate response?",
+      "text": "Which step best matches initiation in the checked design-process source?",
       "options": [
         {
           "id": "a",
-          "text": "Issue a Request for Information (RFI) or stop-work notice to require compliance with specifications before proceeding."
+          "text": "Problem identification."
         },
         {
           "id": "b",
-          "text": "Immediately order the contractor to remove the installed doors without documentation, risking potential disputes and lack of record"
+          "text": "Issuing final occupancy permits."
         },
         {
           "id": "c",
-          "text": "Approve the change without notification to the client, as long as the door quality is acceptable, which may lead to client dissatisfaction"
+          "text": "Choosing paint colors after construction."
         },
         {
           "id": "d",
-          "text": "Ignore the discrepancy as Construction Administration has no authority over contractor decisions, which could lead to non-compliance issues"
+          "text": "Deleting client/user information."
         }
       ],
       "correct_option_id": "a",
@@ -33,12 +33,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct: RFI or directive to comply. The architect must document the issue and require resolution.",
-        "b": "Too aggressive: The architect observes and directs; does not order removal without documented process.",
-        "c": "Incorrect: The architect cannot approve changes unilaterally. Client/contractor agreement is required for substitutions.",
-        "d": "Incorrect: The architect has significant authority to verify compliance during Construction Administration.",
-        "correct": "The architect's role in Construction Administration is verification and observation. If a discrepancy is discovered, the architect issues an RFI (Request for Information) requiring explanation and correction, or directs stop-work until compliance is verified. The architect has authority to require compliance but does not supervise construction.",
-        "takeaway": "Construction Administration role: Observe, verify, document, require compliance. The architect does not supervise daily construction, but enforces specification compliance through RFIs and formal directives. Authority is verification-based, not supervisory."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The source describes initiation as problem identification.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "Correct: RFI or directive to comply. The architect must document the issue and require resolution. Too aggressive: The architect observes and directs; does not order removal without documented process. Incorrect: The architect cannot approve changes unilaterally. Client/contractor agreement is required for substitutions. Incorrect: The architect has significant authority to verify compliance during Construction Administration. The architect's role in Construction Administration is verification and observation. If a discrepancy is discovered, the architect issues an RFI (Request for Information) requiring explanation and correction, or directs stop-work until compliance is verified. The architect has authority to require compliance but does not supervise construction. Construction Administration role: Observe, verify, document, require compliance. The architect does not supervise daily construction, but enforces specification compliance through RFIs and formal directives. Authority is verification-based, not supervisory.",
       "code_citation": "UAP SPP; Construction Administration Definition; AIA Standard Practice",
@@ -55,44 +55,44 @@
       "model_id": "ALE-DSGN-007-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-05-06T15:06:27.829412+00:00",
+      "updated_at": "2026-07-20T01:13:26.298535+00:00",
       "content_hash": "sha256:df777e3f7473839343f3a7994efbc8233ae92dff885fc28f7bb7cc56ad9070bf"
     },
     {
       "question_id": "9c3bc255-515b-41a0-b140-215f9176c94f",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "Design Development phase begins after Schematic Design is approved. In Design Development, what is a key additional activity that was not prominent in Schematic Design?",
+      "text": "What is architectural programming in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Site selection and feasibility analysis, which is typically completed during the initial stages of project planning"
+          "text": "The problem-seeking phase that gathers, organizes, analyzes, interprets, and presents project information."
         },
         {
           "id": "b",
-          "text": "Coordination with consultants (structural, MEP, fire protection engineers) to integrate building systems"
+          "text": "A final punch list only."
         },
         {
           "id": "c",
-          "text": "Presenting multiple conceptual options to the client, allowing for a broader range of design possibilities to be considered"
+          "text": "A substitute for construction documents."
         },
         {
           "id": "d",
-          "text": "Final review of shop drawings during construction, ensuring that all design elements are accurately represented"
+          "text": "A decorative rendering phase."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Site analysis is Pre-Design activity, not Design Development.",
-        "b": "Correct: Design Development emphasizes consultant coordination. Schematic design is largely architectural exploration; Design Development adds engineering.",
-        "c": "Multiple conceptual options are Schematic Design; Design Development refines one selected concept.",
-        "d": "Shop drawing review is Construction Administration, not Design Development.",
-        "correct": "Design Development refines the approved Schematic concept by integrating structural, mechanical, electrical, and fire protection systems. This phase adds technical depth through consultant coordination.",
-        "takeaway": "Schematic = architect-led exploration. Design Development = architect + consultants coordination. The shift from design to engineering is the key distinction between these phases."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "Programming defines and organizes the architectural problem before design resolution.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "Site analysis is Pre-Design activity, not Design Development. Correct: Design Development emphasizes consultant coordination. Schematic design is largely architectural exploration; Design Development adds engineering. Multiple conceptual options are Schematic Design; Design Development refines one selected concept. Shop drawing review is Construction Administration, not Design Development. Design Development refines the approved Schematic concept by integrating structural, mechanical, electrical, and fire protection systems. This phase adds technical depth through consultant coordination. Schematic = architect-led exploration. Design Development = architect + consultants coordination. The shift from design to engineering is the key distinction between these phases.",
       "code_citation": "UAP SPP; Design Development Definition",
@@ -109,44 +109,44 @@
       "model_id": "ALE-DSGN-007-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-05-06T15:06:27.952282+00:00",
+      "updated_at": "2026-07-20T01:13:26.299385+00:00",
       "content_hash": "sha256:6602a5d9be8af1858b6beca1e107e5649ae26b96cc9261b2e6dea42c497ae9a3"
     },
     {
       "question_id": "92428bec-df95-4f35-b33d-d34a2e887aaa",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "What is the primary purpose of the Schematic Design phase?",
+      "text": "Which pair is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Produce final construction drawings ready for bidding, ensuring all details are finalized and compliant with regulations"
+          "text": "Facts are objective/verifiable; values shape how facts are interpreted for users and building types."
         },
         {
           "id": "b",
-          "text": "Develop multiple conceptual solutions exploring different design directions"
+          "text": "Facts are opinions; values are survey bearings."
         },
         {
           "id": "c",
-          "text": "Coordinate with engineers and finalize all technical details, including structural and MEP systems"
+          "text": "Facts and values are identical."
         },
         {
           "id": "d",
-          "text": "Verify construction compliance on the building site, ensuring all work adheres to the approved plans and specifications"
+          "text": "Values replace all performance requirements."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is the purpose of Construction Documents phase, not Schematic Design.",
-        "b": "Correct: Schematic Design explores concepts. Multiple schemes are typical; detailed engineering comes later.",
-        "c": "This is the purpose of Design Development and Construction Documents phases.",
-        "d": "This is the purpose of Construction Administration phase.",
-        "correct": "Schematic Design is conceptual and exploratory. The architect presents multiple design approaches for spatial arrangement, massing, and materials. The client selects a preferred direction. Engineering coordination is minimal at this stage.",
-        "takeaway": "Schematic Design = exploration phase. Drawings are conceptual (typical scale 1:100 or smaller). Multiple concepts are okay. Detailed engineering is NOT part of Schematic; it comes in Design Development."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The source separates facts and values in issue-based programming.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "This is the purpose of Construction Documents phase, not Schematic Design. Correct: Schematic Design explores concepts. Multiple schemes are typical; detailed engineering comes later. This is the purpose of Design Development and Construction Documents phases. This is the purpose of Construction Administration phase. Schematic Design is conceptual and exploratory. The architect presents multiple design approaches for spatial arrangement, massing, and materials. The client selects a preferred direction. Engineering coordination is minimal at this stage. Schematic Design = exploration phase. Drawings are conceptual (typical scale 1:100 or smaller). Multiple concepts are okay. Detailed engineering is NOT part of Schematic; it comes in Design Development.",
       "code_citation": "UAP Standard Practice Parameters; Schematic Design Definition",
@@ -162,44 +162,44 @@
       "model_id": "ALE-DSGN-007-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-05-06T15:09:18.487031+00:00",
+      "updated_at": "2026-07-20T01:13:26.300282+00:00",
       "content_hash": "sha256:5833d86eca2e706604155fba79db9e968a3e783aaefa4779852e244fb60bf1fd"
     },
     {
       "question_id": "6725d0c2-6ccf-45a4-9e12-93984ac3f075",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "A project has completed Schematic Design and the client has approved the design direction. During Design Development, the structural engineer recommends a significant change to the building form (e.g., different column spacing) that would improve structural efficiency but requires redesign of the approved schematic concept. How should this recommendation be handled?",
+      "text": "What is a performance requirement?",
       "options": [
         {
           "id": "a",
-          "text": "Reject the recommendation to preserve the approved design; structural efficiency is not as important as schedule, and maintaining the original timeline is crucial"
+          "text": "A measurable level of function that the designed building or place must provide."
         },
         {
           "id": "b",
-          "text": "Present the structural recommendation to the client with analysis of cost/benefit trade-offs; allow the client to decide whether to accept the change and redesign."
+          "text": "A mood board with no criteria."
         },
         {
           "id": "c",
-          "text": "Implement the change immediately without consulting the client, since the engineer is the expert and their judgment should be trusted implicitly"
+          "text": "A contractor payment claim."
         },
         {
           "id": "d",
-          "text": "Defer the structural recommendation to Construction Administration when the contractor is on-site, as this phase allows for more flexibility in decision-making"
+          "text": "A random title page."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Rejects valuable input; Design Development is designed to incorporate consultant expertise.",
-        "b": "Correct: Present structural recommendation with cost/benefit analysis. Client decides on design revision. This is the appropriate time to make such decisions.",
-        "c": "Unilateral implementation without client consent violates the approval process.",
-        "d": "Construction Administration is too late; structural decisions must be made before Construction Documents.",
-        "correct": "Design Development is when consultant recommendations can still influence design. The architect presents the structural recommendation to the client, explaining cost/schedule/performance impacts. The client decides whether the benefit justifies revisiting the approved concept. This is when design decisions should be collaborative and informed.",
-        "takeaway": "Design Development allows consultant recommendations to influence design while changes are still manageable. If a consultant recommends design changes, the architect presents the recommendation with analysis to the client for decision. Client approval is required to revise an approved concept."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source defines performance requirement as measurable function.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "Rejects valuable input; Design Development is designed to incorporate consultant expertise. Correct: Present structural recommendation with cost/benefit analysis. Client decides on design revision. This is the appropriate time to make such decisions. Unilateral implementation without client consent violates the approval process. Construction Administration is too late; structural decisions must be made before Construction Documents. Design Development is when consultant recommendations can still influence design. The architect presents the structural recommendation to the client, explaining cost/schedule/performance impacts. The client decides whether the benefit justifies revisiting the approved concept. This is when design decisions should be collaborative and informed. Design Development allows consultant recommendations to influence design while changes are still manageable. If a consultant recommends design changes, the architect presents the recommendation with analysis to the client for decision. Client approval is required to revise an approved concept.",
       "code_citation": "UAP SPP; Design Development Guidelines; Professional Practice Standards",
@@ -217,30 +217,30 @@
       "model_id": "ALE-DSGN-007-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-05-06T15:06:27.4465+00:00",
+      "updated_at": "2026-07-20T01:13:26.301112+00:00",
       "content_hash": "sha256:e1e840f1bfde53d1a06fe6a2fd02db6af4854c017b01355b68dfe4b7241df646"
     },
     {
       "question_id": "83c86b93-3c04-456b-b13d-a199ba12515f",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "List the five phases of the architectural design process in correct sequence, and for each phase, identify a single key deliverable. Which sequence is correct?",
+      "text": "Why is iteration source-safe in the design process?",
       "options": [
         {
           "id": "a",
-          "text": "1. Pre-Design (Program Statement), 2. Schematic Design (Multiple concepts), 3. Design Development (Integrated systems), 4. Construction Documents (Complete specifications), 5. Construction Admin (Site verification)"
+          "text": "Design proceeds through cycles and feedback before decisions are locked downstream."
         },
         {
           "id": "b",
-          "text": "1. Schematic Design (Concepts), 2. Design Development (Systems), 3. Pre-Design (Program), 4. Construction Documents (Specs), 5. Construction Admin (Verification)"
+          "text": "Iteration means never making a decision."
         },
         {
           "id": "c",
-          "text": "1. Construction Documents (Drawings), 2. Design Development (Concepts), 3. Schematic Design (Systems), 4. Pre-Design (Program), 5. Construction Admin (Verification)"
+          "text": "Iteration applies only after occupancy."
         },
         {
           "id": "d",
-          "text": "1. Pre-Design (Site survey), 2. Schematic Design (Cost estimate), 3. Design Development (Drawings), 4. Construction Documents (Coordination), 5. Construction Admin (Design review)"
+          "text": "Iteration replaces the program."
         }
       ],
       "correct_option_id": "a",
@@ -249,12 +249,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct sequence and appropriate key deliverables for each phase.",
-        "b": "Incorrect sequence; Pre-Design cannot come after Schematic.",
-        "c": "Completely reversed sequence; Construction Documents cannot precede earlier phases.",
-        "d": "Deliverables are out of phase (cost estimate in Schematic, not Pre-Design; drawings in Design Dev, not Constr Docs).",
-        "correct": "Correct sequence: Pre-Design (program/feasibility) → Schematic (concepts) → Design Development (systems/engineering) → Construction Documents (complete specifications) → Construction Administration (site verification). Each phase builds on the previous.",
-        "takeaway": "Architectural design process sequence is strict: Pre-Design → Schematic → Design Dev → Constr Docs → Constr Admin. Each phase has distinct objectives and deliverables. Do not skip phases or reorder them."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source lists iteration as cycles and feedback.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "Correct sequence and appropriate key deliverables for each phase. Incorrect sequence; Pre-Design cannot come after Schematic. Completely reversed sequence; Construction Documents cannot precede earlier phases. Deliverables are out of phase (cost estimate in Schematic, not Pre-Design; drawings in Design Dev, not Constr Docs). Correct sequence: Pre-Design (program/feasibility) → Schematic (concepts) → Design Development (systems/engineering) → Construction Documents (complete specifications) → Construction Administration (site verification). Each phase builds on the previous. Architectural design process sequence is strict: Pre-Design → Schematic → Design Dev → Constr Docs → Constr Admin. Each phase has distinct objectives and deliverables. Do not skip phases or reorder them.",
       "code_citation": "UAP Standard Practice Parameters; Architectural Design Process Framework",
@@ -271,44 +271,44 @@
       "model_id": "ALE-DSGN-007-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-05-06T15:06:27.571589+00:00",
+      "updated_at": "2026-07-20T01:13:26.297387+00:00",
       "content_hash": "sha256:3fe3fbca41939795477f3efdcbf2959017e577c5f265d6dce8aadea6da1fca3c"
     },
     {
       "question_id": "b35a994c-9507-48d8-afe9-7d3c78717e4a",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "Explain the relationship between the Program Statement (Pre-Design deliverable) and the Schematic Design phase. Why is the Program Statement essential to successful Schematic Design?",
+      "text": "How should schematic/design development questions be answered safely in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "The Program Statement lists all materials to be used; Schematic Design specifies dimensions, which is a simplified view"
+          "text": "By asking what information, criteria, consultant input, and validation are needed at that decision point."
         },
         {
           "id": "b",
-          "text": "The Program Statement defines space types, quantities, and functional relationships; Schematic Design translates this into spatial layouts and conceptual forms."
+          "text": "By memorizing an unsupported five-phase percentage table."
         },
         {
           "id": "c",
-          "text": "The Program Statement provides final cost estimates; Schematic Design adjusts costs for selected design, which is a financial perspective"
+          "text": "By ignoring the program statement."
         },
         {
           "id": "d",
-          "text": "The Program Statement is a legal contract; Schematic Design is its technical interpretation, which is a contractual view"
+          "text": "By treating renderings as construction documents."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Materials are determined in Design Development and Construction Documents, not Pre-Design or Schematic.",
-        "b": "Correct: Program defines requirements; Schematic translates requirements into design. Program is the design constraint; Schematic explores solutions within that constraint.",
-        "c": "Cost estimates are refined through all phases, not provided as a static Program Statement value.",
-        "d": "Program Statement is a design document, not a legal contract (though it informs the contract).",
-        "correct": "The Program Statement (Pre-Design) defines WHAT the building must accommodate (space types, adjacencies, area requirements). Schematic Design answers HOW to organize these spaces (layouts, massing, forms). The Program is the design brief; Schematic responds to it.",
-        "takeaway": "Program Statement = Design Brief. It establishes what the building must do. Schematic Design is the architect's creative response to the program. Without a clear program, Schematic Design becomes arbitrary. With a program, Schematic Design can be evaluated against explicit requirements."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The audited article avoids unchecked fixed phase claims and uses process evidence.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "UAP SPP; Design Process Framework",
@@ -325,44 +325,44 @@
       "model_id": "ALE-DSGN-007-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.295054+00:00",
       "content_hash": "sha256:bc51a707df1fabf4355ca6627d038e61735ac414264b005348ec84fd08ea37fd"
     },
     {
       "question_id": "b4864bda-0b9d-4da2-b226-fca9833aa239",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "Which phase of the architectural design process focuses on site analysis, client interviews, and program development before design concepts are explored?",
+      "text": "What is the relationship between program and design proposal?",
       "options": [
         {
           "id": "a",
-          "text": "Schematic Design"
+          "text": "The program defines issues, facts, values, goals, requirements, and concepts that proposals should answer."
         },
         {
           "id": "b",
-          "text": "Pre-Design"
+          "text": "The proposal deletes the program."
         },
         {
           "id": "c",
-          "text": "Design Development"
+          "text": "The program is written after construction only."
         },
         {
           "id": "d",
-          "text": "Construction Documents"
+          "text": "There is no relationship."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Schematic Design develops conceptual solutions after the problem is defined in Pre-Design.",
-        "b": "Correct: Pre-Design precedes all other phases. It answers 'what should this building do?' before 'how should it be designed?'",
-        "c": "Design Development refines a selected Schematic concept; it requires Pre-Design to establish the program.",
-        "d": "Construction Documents are produced after Design Development and are for construction, not problem definition.",
-        "correct": "Pre-Design establishes the project foundation: site surveys, climate analysis, client requirements, program statement, preliminary feasibility. This phase defines the design problem before concepts are developed.",
-        "takeaway": "Pre-Design = problem definition (what/where/why). Schematic Design = solution exploration (how). Do not skip Pre-Design or combine it with Schematic. The problem must be clear before solutions are designed."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The program provides the problem and criteria for the design response.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "UAP Standard Practice Parameters (SPP); Design Process Framework",
@@ -378,44 +378,44 @@
       "model_id": "ALE-DSGN-007-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.302716+00:00",
       "content_hash": "sha256:a5044542d3503bc37675951940597bb82449edb3193c39c62e6f3fadbc8faa37"
     },
     {
       "question_id": "66d34357-c22c-46a1-b488-dbd342f94cbc",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "A project manager states that the design timeline is compressed to 3 months total (Pre-Design through Schematic). What is the most realistic allocation of time to each phase, and what risks does this compression create?",
+      "text": "A late structural conflict appears in construction documents. What is the source-safe lesson?",
       "options": [
         {
           "id": "a",
-          "text": "Pre-Design: 2 weeks, Schematic: 10 weeks. Risk: Schematic may be rushed; concepts may be underdeveloped."
+          "text": "Required information or consultant coordination was likely skipped or not validated earlier."
         },
         {
           "id": "b",
-          "text": "Pre-Design: 1 week, Schematic: 11 weeks. Risk: Program will be incomplete or inaccurate; Schematic will solve the wrong problem."
+          "text": "All iteration is forbidden."
         },
         {
           "id": "c",
-          "text": "Pre-Design: 4 weeks, Schematic: 8 weeks. Risk: Both phases are reasonable, but requires focused effort and rapid client decisions."
+          "text": "Programming caused the conflict by existing."
         },
         {
           "id": "d",
-          "text": "Pre-Design: 8 weeks, Schematic: 4 weeks. Risk: Schematic concepts will be shallow; insufficient time for multiple design exploration."
+          "text": "No design-process action can reduce late conflicts."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "2 weeks Pre-Design is very tight; risks incomplete program. But allocation is defensible if program is simple.",
-        "b": "1 week Pre-Design is inadequate for any project. High risk of solving the wrong problem.",
-        "c": "Correct: 4 weeks Pre-Design + 8 weeks Schematic = 12 weeks (3 months). Reasonable but requires discipline and rapid client feedback.",
-        "d": "8 weeks Pre-Design + 4 weeks Schematic is backwards; Schematic would be inadequate.",
-        "correct": "Pre-Design typically requires 2–4 weeks (minimum, for simple projects). Schematic requires 4–8 weeks. A 3-month total allows ~4 weeks Pre-Design and ~8 weeks Schematic, assuming rapid client decisions and decision-making. Risks include deadline pressure and potential incomplete analysis.",
-        "takeaway": "Pre-Design ≈ 15–25% of combined Pre-Design + Schematic time. Schematic ≈ 75–85%. Compressing Pre-Design risks poor program; compressing Schematic risks underdeveloped concepts. Both must be adequate."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked process emphasizes information management, criteria, validation, and iteration.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "UAP SPP; Project Management Standards",
@@ -432,44 +432,44 @@
       "model_id": "ALE-DSGN-007-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.301914+00:00",
       "content_hash": "sha256:9064df2fd30659e582936de04d220b78ef3bed2699ae5ea2dc8a61dd356dffbb"
     },
     {
       "question_id": "d873505a-3ec6-450d-a2ca-dc1f9035c84a",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "The Construction Documents phase produces drawings and specifications sufficient for competitive bidding and construction. Which of the following is NOT a typical Construction Documents deliverable?",
+      "text": "What is a concept in the checked design-process source?",
       "options": [
         {
           "id": "a",
-          "text": "Full-size technical drawings with dimensions and material notes"
+          "text": "A statement of ideal relationships among form, material, color, adjacency, and other controllable elements."
         },
         {
           "id": "b",
-          "text": "Comprehensive written specifications detailing materials, methods, and quality standards"
+          "text": "A final building permit number."
         },
         {
           "id": "c",
-          "text": "Multiple alternative design concepts for client review"
+          "text": "A concrete test report only."
         },
         {
           "id": "d",
-          "text": "Coordinated structural, MEP, and fire protection engineer plans"
+          "text": "A random list of fixtures."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Full-size technical drawings (typically 1:50 or 1:100 scale) are core Construction Documents.",
-        "b": "Comprehensive specifications are essential Construction Documents.",
-        "c": "Correct: Alternative concepts are Schematic Design. Construction Documents finalize ONE design with complete detail.",
-        "d": "Coordinated engineer plans are Construction Documents.",
-        "correct": "Multiple design concepts are Schematic Design deliverables. Construction Documents present a SINGLE, complete design ready for construction.",
-        "takeaway": "Schematic = multiple concepts. Design Development = one refined concept. Construction Documents = one finalized, detailed design. This sequence eliminates alternatives as the project progresses toward construction."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The source defines concept as ideal relationships under the architect control.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "Full-size technical drawings (typically 1:50 or 1:100 scale) are core Construction Documents. Comprehensive specifications are essential Construction Documents. Correct: Alternative concepts are Schematic Design. Construction Documents finalize ONE design with complete detail. Coordinated engineer plans are Construction Documents. Multiple design concepts are Schematic Design deliverables. Construction Documents present a SINGLE, complete design ready for construction. Schematic = multiple concepts. Design Development = one refined concept. Construction Documents = one finalized, detailed design. This sequence eliminates alternatives as the project progresses toward construction.",
       "code_citation": "UAP SPP; Construction Documents Definition",
@@ -485,44 +485,44 @@
       "model_id": "ALE-DSGN-007-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-05-06T15:06:27.701467+00:00",
+      "updated_at": "2026-07-20T01:13:26.296364+00:00",
       "content_hash": "sha256:a4f501c5eff021bc7a94f0a36015a42f4b59e34e032ebaf8e884a665397c85ac"
     },
     {
       "question_id": "db0c1ac3-e9e7-495f-ada5-71833f3bdf6c",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
       "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "A design proposal reaches the Construction Documents phase. The architect discovers that structural engineering was not coordinated during Design Development, and significant structural changes are now required. What is the primary consequence of this oversight, and what should have occurred?",
+      "text": "Which is the safest summary of the design process?",
       "options": [
         {
           "id": "a",
-          "text": "Structural changes can be handled during Construction Administration when the contractor is on-site, although this may lead to increased costs and delays"
+          "text": "Problem, information, synthesis, evaluation, and feedback guide decisions into coordinated documents."
         },
         {
           "id": "b",
-          "text": "The project must return to Design Development for proper structural coordination, delaying Construction Documents and increasing cost. Structural coordination should have occurred when architectural forms were still flexible."
+          "text": "Skip analysis and draft final details first."
         },
         {
           "id": "c",
-          "text": "Structural changes should be handled with a Change Order during bidding phase, which can complicate the bidding process and affect contractor selection"
+          "text": "Use unsupported phase percentages."
         },
         {
           "id": "d",
-          "text": "The architect should approve the changes alone without involving the structural engineer, which could lead to liability issues"
+          "text": "Treat construction administration as the first design step."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Construction Administration cannot redesign structural systems; it only verifies compliance.",
-        "b": "Correct: Structural coordination MUST occur in Design Development when forms are still fluid. Late discovery creates significant rework, schedule delays, and cost increases.",
-        "c": "A Change Order during bidding is reactive and expensive; coordination during Design Development is proactive.",
-        "d": "Structural systems require engineer expertise. The architect cannot approve without structural engineer involvement.",
-        "correct": "Structural coordination during Design Development allows architectural and structural systems to be designed together, ensuring compatibility. Late discovery of structural conflicts requires rework, delays, and increased costs. Design Development exists to prevent Construction Documents from being late-stage.",
-        "takeaway": "Design Development = integration phase. All consultants (structural, MEP, fire) must coordinate while the design is still flexible. Delayed consultant coordination moves problems downstream, increasing cost and schedule impact. Consult early, not late."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The article is grounded in initiation, preparation, synthesis, evaluation, and iteration.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "UAP SPP; Design Development Guidelines; Project Management Standards",
@@ -539,7 +539,7 @@
       "model_id": "ALE-DSGN-007-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.303513+00:00",
       "content_hash": "sha256:32c816bccd5ce274d50039221a4bfb6905b4ef8a33e34bd8a8d699ecafa1c627"
     }
   ]

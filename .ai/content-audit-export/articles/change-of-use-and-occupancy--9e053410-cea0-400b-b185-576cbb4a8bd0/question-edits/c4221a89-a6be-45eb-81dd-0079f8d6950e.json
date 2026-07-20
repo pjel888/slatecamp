@@ -2,9 +2,9 @@
   "question_id": "c4221a89-a6be-45eb-81dd-0079f8d6950e",
   "baseline_hash": "sha256:62d54f8fe39dd967cd8b3a7defa74404d2eccd4063af2bd713a9957988b4751c",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What risk comparison is required for an existing building proposed for another occupancy group?",
+    "text": "After a successful change of use application is approved and all conditions are met, what specific document does the Building Official issue to authorize the new occupancy?",
     "options": [
       {
         "id": "a",
-        "text": "The new or proposed use must be less hazardous based on life and fire risk than the existing use."
+        "text": "A Certificate of Occupancy updated to reflect the new use classification"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "An amended Building Permit that incorporates the new use into the original permit record"
       },
       {
         "id": "c",
-        "text": "h"
+        "text": "A Certificate of Occupancy — a separate instrument specific to approved occupancy changes"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "A Zoning Compliance Certificate issued jointly by the BO and the local planning office"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The new or proposed use must be less hazardous based on life and fire risk than the existing use. This is supported by The new use must have fewer doors than the old use..",
-    "explanation": "The new or proposed use must be less hazardous based on life and fire risk than the existing use. The cited local source family controls this item: The new use must have fewer doors than the old use..",
-    "code_citation": "The new use must have a larger FLAR than the old use."
+    "correct_option_id": "c",
+    "rationale": "Under PD 1096, the specific document issued upon approval of a change of use application is the CERTIFICATE OF USE — distinct from the Certificate of Occupancy issued for new construction. The Certificate of Occupancy is the instrument that legally authorizes the new occupancy classification. While a new CO (per Sec. 309.9) is also required, the intermediate authorization document specifically issued for the change process is the Certificate of Occupancy.",
+    "explanation": "Certificate of USE (change process) vs Certificate of OCCUPANCY (new construction). Both are issued by the Building Official but serve different purposes and apply to different scenarios. Confusing these two is a common exam error.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

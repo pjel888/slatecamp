@@ -1,0 +1,518 @@
+{
+  "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:08ae78f09f110cb5673f4a4bdb87b7fac3317634ed05533d1f5dbefe5b4daf9b",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "c92005d0-21a4-4e3e-b487-59ca76580cb3",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 205, does Building Maintenance include security monitoring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, security is exclusively the Owner's responsibility, and is not covered under standard maintenance agreements"
+        },
+        {
+          "id": "b",
+          "text": "No, security monitoring requires a separate SPP 203 engagement, which is specifically tailored for security services"
+        },
+        {
+          "id": "c",
+          "text": "Yes, Building Maintenance includes security monitoring as part of comprehensive facility management"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only for commercial buildings, not residential, as residential security is typically handled by the homeowner association"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the Owner has ultimate responsibility, the architect-administrator may include security monitoring in maintenance services.",
+        "b": "Security monitoring does not require a separate SPP 203 engagement when provided as part of SPP 205 Building Maintenance.",
+        "c": "Correct. Under SPP 205, Building Maintenance includes security monitoring as part of the comprehensive facility management services provided by the architect-administrator.",
+        "d": "The inclusion of security monitoring is not limited by building type. It applies to all Building Maintenance engagements.",
+        "correct": "SPP 205 includes security monitoring within the scope of Building Maintenance. As part of comprehensive facility management, the architect-administrator oversees security systems, access control, and safety monitoring alongside other maintenance functions.",
+        "takeaway": "Building Maintenance under SPP 205 includes security monitoring."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ee89ade2226ed7a35fabe87e0c13fffd6198099802af29f4ad2382af42174df2"
+    },
+    {
+      "question_id": "bb6edf61-1258-4eb0-b02f-1c7b048feaa8",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the primary goal of Business Development as a post-construction service under SPP 205?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To market the architect's services for future projects"
+        },
+        {
+          "id": "b",
+          "text": "To maximize building occupancy and revenue"
+        },
+        {
+          "id": "c",
+          "text": "To attract investors for building expansion"
+        },
+        {
+          "id": "d",
+          "text": "To develop new construction projects on adjacent sites"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Marketing the architect's own services is not the purpose of Business Development under SPP 205.",
+        "b": "Correct. Business Development under SPP 205 aims to maximize building occupancy and revenue through tenant acquisition, retention strategies, and market positioning.",
+        "c": "Attracting investors for expansion is beyond the scope of SPP 205 Business Development.",
+        "d": "New construction development is outside SPP 205's post-construction scope.",
+        "correct": "Business Development under SPP 205 focuses on maximizing building occupancy and revenue. The architect-administrator works to attract and retain tenants, position the building competitively in the market, and optimize the building's income-generating potential.",
+        "takeaway": "SPP 205 Business Development = maximize building occupancy."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c2794bc0b16bea69e18cbf0c18704b7ab3b5727782705988bc001411e4c757db"
+    },
+    {
+      "question_id": "4e184740-6fe6-45b3-83fc-e92571360ba6",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 205, what triggers a Post-Construction Evaluation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatic requirement at 5-year intervals"
+        },
+        {
+          "id": "b",
+          "text": "Building permit renewal"
+        },
+        {
+          "id": "c",
+          "text": "Owner's request"
+        },
+        {
+          "id": "d",
+          "text": "Mandatory government inspection"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "There is no automatic interval requirement. Evaluation is initiated by the Owner.",
+        "b": "Building permit renewal does not automatically trigger evaluation under SPP 205.",
+        "c": "Correct. Post-Construction Evaluation under SPP 205 is triggered upon the Owner's request, giving the Owner control over when to assess the building's performance.",
+        "d": "Government inspections are regulatory, not within the scope of SPP 205 Post-Construction Evaluation.",
+        "correct": "Post-Construction Evaluation under SPP 205 is initiated upon the Owner's request. This allows the Owner to commission an assessment of the building's performance, condition, and suitability whenever they deem it necessary.",
+        "takeaway": "Post-Construction Evaluation = triggered by Owner's request."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5df3f2c282334d614f85fb08ff6e3438b21a62eff51b553f77bbc933dfa9392a"
+    },
+    {
+      "question_id": "5e7bc30e-714a-48a1-ab2b-81076608591a",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "When forensic investigation is needed under SPP 205, which other SPP document is cross-referenced?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SPP 201 (Pre-Design Services)"
+        },
+        {
+          "id": "b",
+          "text": "SPP 202 (Regular Design Services)"
+        },
+        {
+          "id": "c",
+          "text": "SPP 203.13 (Forensic Architecture)"
+        },
+        {
+          "id": "d",
+          "text": "SPP 204-A (Fulltime Supervision)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "SPP 201 covers pre-design services, not forensic investigation.",
+        "b": "SPP 202 covers regular design, not forensic investigation.",
+        "c": "Correct. SPP 205 cross-references SPP 203.13 (Forensic Architecture) for post-construction forensic investigations of building deterioration or failure.",
+        "d": "SPP 204-A covers construction supervision, not forensic investigation.",
+        "correct": "When post-construction forensic investigation is needed, SPP 205 cross-references SPP 203.13 (Forensic Architecture). This creates a link between post-construction evaluation and the specialized forensic investigation service.",
+        "takeaway": "Forensic investigation in SPP 205 cross-references SPP 203.13."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205 / SPP 203",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e7f602e1b74a1768d96e8e38639786ce58f7a90cdb77e1ab27df13fd3b4e2086"
+    },
+    {
+      "question_id": "c36398b7-8601-4ca0-968f-43bf3f8cbcea",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the architect's role regarding Equipment Maintenance under SPP 205?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect directly maintains all building equipment, which is not typically within their scope of work"
+        },
+        {
+          "id": "b",
+          "text": "The architect assists proper third parties in equipment maintenance"
+        },
+        {
+          "id": "c",
+          "text": "The architect certifies equipment for insurance purposes only, which limits their involvement to documentation"
+        },
+        {
+          "id": "d",
+          "text": "The architect has no role in equipment maintenance, as this is typically handled by facility management"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Direct maintenance is not the architect's role. Specialized technicians handle equipment.",
+        "b": "Correct. Under SPP 205, the architect assists proper third parties (specialized maintenance contractors and technicians) in equipment maintenance, coordinating and overseeing their work.",
+        "c": "Certification for insurance is not the primary equipment maintenance role under SPP 205.",
+        "d": "The architect does have a role — assisting and coordinating with maintenance specialists.",
+        "correct": "Under SPP 205, the architect's role in Equipment Maintenance is to assist proper third parties. The architect coordinates with specialized maintenance contractors and technicians, ensuring equipment is properly maintained without performing the technical work directly.",
+        "takeaway": "Equipment Maintenance: architect assists proper third parties."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f565fe0eb6ec5524dd3d954f2fac5862c0c1b19e7fc898d04577eafe5d39c0c"
+    },
+    {
+      "question_id": "b624a791-4a51-4a9d-835b-888ff4593f98",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is SPP 205's position within the overall SPP document series?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is the introductory document of the series"
+        },
+        {
+          "id": "b",
+          "text": "It is a standalone document unrelated to other SPPs"
+        },
+        {
+          "id": "c",
+          "text": "It is the final link in the SPP 201-205 service chain"
+        },
+        {
+          "id": "d",
+          "text": "It replaces SPP 201 for renovation projects"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The introductory document is SPP 200 (Overview), not SPP 205.",
+        "b": "SPP 205 is not standalone — it is explicitly connected to SPP 201-204 as part of a service continuum.",
+        "c": "Correct. SPP 205 is the final link in the SPP 201-205 chain, completing the lifecycle of architectural services from pre-design through post-construction.",
+        "d": "SPP 205 does not replace any document. It complements the chain.",
+        "correct": "SPP 205 is the final link in the SPP 201-205 chain, completing the full lifecycle of architectural services: Pre-Design (201) > Regular Design (202) > Specialized Services (203) > Supervision (204-A/B) > Post-Construction (205).",
+        "takeaway": "SPP 205 = final link in the 201-205 service lifecycle chain."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a6ac114c1cc1f84344ce894ab9386ab11b670cf2f2370eba616d454dc2e03c77"
+    },
+    {
+      "question_id": "72860255-14d1-4c63-bbf2-20cb6e2f16c3",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What does Grounds and Landscaping maintenance under SPP 205 specifically include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interior plant maintenance only, focusing on aesthetic upkeep within enclosed spaces"
+        },
+        {
+          "id": "b",
+          "text": "Landscape design for new installations, including site analysis and plant selection"
+        },
+        {
+          "id": "c",
+          "text": "RROW (Right-of-Road-and-Other-Ways) maintenance"
+        },
+        {
+          "id": "d",
+          "text": "Agricultural lot management, involving crop rotation and soil fertility enhancement"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Interior plants are a small component. The scope is broader, including exterior grounds.",
+        "b": "New landscape design is a design service under SPP 202 or 203, not maintenance under SPP 205.",
+        "c": "Correct. Grounds and Landscaping under SPP 205 includes RROW (Right-of-Road-and-Other-Ways) maintenance, covering the building's grounds, rights-of-way, and outdoor areas.",
+        "d": "Agricultural lot management is outside the scope of architectural post-construction services.",
+        "correct": "Grounds and Landscaping maintenance under SPP 205 specifically includes RROW (Right-of-Road-and-Other-Ways) maintenance. This covers upkeep of the building's grounds, surrounding landscape areas, rights-of-way, and exterior infrastructure.",
+        "takeaway": "Grounds & Landscaping = RROW maintenance."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4dc2833e3039570b7e720593b90d530e82310f214c083293c06d62863561f8ec"
+    },
+    {
+      "question_id": "797af126-84ec-4a4a-89fe-e898ccf12bdb",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What are the two major service clusters under SPP 205?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Building Design and Building Construction, focusing on the initial phases of project development"
+        },
+        {
+          "id": "b",
+          "text": "Building Administration and Post-Construction Evaluation"
+        },
+        {
+          "id": "c",
+          "text": "Property Management and Facilities Engineering, which includes ongoing maintenance and operations"
+        },
+        {
+          "id": "d",
+          "text": "Maintenance Planning and Building Demolition, addressing end-of-life building considerations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Building Design and Construction are covered under SPP 202, not SPP 205.",
+        "b": "Correct. SPP 205 organizes post-construction services into two clusters: (1) Building Administration (ongoing management) and (2) Post-Construction Evaluation (assessment of completed work).",
+        "c": "While related, Property Management and Facilities Engineering are components within the clusters, not the cluster names themselves.",
+        "d": "Building Demolition is not covered under SPP 205.",
+        "correct": "SPP 205 organizes post-construction services into two clusters: Building Administration (ongoing building management, maintenance, and operations) and Post-Construction Evaluation (assessment of the completed building's performance and condition).",
+        "takeaway": "SPP 205 = two clusters: Building Administration + Post-Construction Evaluation."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae9947a9ea6c4dd8c13c07dd572f399365009ee6c37c4fdf9454c5af6f4f4d5f"
+    },
+    {
+      "question_id": "3eb51f7d-bc08-4425-9371-53c3322da05b",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the compensation range for Building Administration services under SPP 205?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2-4% of project construction cost, depending on the complexity and duration of the project"
+        },
+        {
+          "id": "b",
+          "text": "4-6% of gross rentals (value/incentive-based)"
+        },
+        {
+          "id": "c",
+          "text": "A flat monthly fee based on building area, adjusted annually for inflation and market conditions"
+        },
+        {
+          "id": "d",
+          "text": "10% of the original SPP 202 design fee, reflecting the ongoing management and oversight responsibilities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PCC-based compensation is for design services, not post-construction administration.",
+        "b": "Correct. Building Administration compensation is 4-6% of gross rentals, structured as a value/incentive-based fee tied to the building's revenue performance.",
+        "c": "While a flat fee may be negotiated, the SPP 205 standard is percentage of gross rentals.",
+        "d": "Tying to the design fee has no basis in SPP 205. Post-construction services have their own compensation structure.",
+        "correct": "SPP 205 establishes Building Administration compensation at 4-6% of gross rentals, using a value/incentive-based model. This ties the architect's compensation to the building's revenue performance, incentivizing effective administration.",
+        "takeaway": "Building Administration fee = 4-6% of gross rentals (incentive-based)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c467e83d36065364c71c1f1ca425496b1cb9b6bc1176f274aca3189cffb724e"
+    },
+    {
+      "question_id": "aa9187f8-fbfe-45eb-aad9-0118e9a5024e",
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 205, what dual role may the architect serve in post-construction services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Designer and Contractor, which may lead to conflicts of interest"
+        },
+        {
+          "id": "b",
+          "text": "Building Administrator and/or Property Manager"
+        },
+        {
+          "id": "c",
+          "text": "Project Manager and Construction Manager, which requires careful role delineation"
+        },
+        {
+          "id": "d",
+          "text": "Engineer and Architect simultaneously, which is uncommon and may require additional qualifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architects do not serve as contractors. These are distinct professional roles.",
+        "b": "Correct. Under SPP 205, the architect may serve as Building Administrator and/or Property Manager, managing the building's operations, maintenance, and tenant relations.",
+        "c": "PM and CM are covered under SPP 206 and 204-B respectively, not SPP 205.",
+        "d": "Serving simultaneously as engineer and architect is not addressed by SPP 205.",
+        "correct": "SPP 205 allows the architect to serve in a dual role as Building Administrator and/or Property Manager. This recognizes the architect's comprehensive understanding of the building and ability to manage its ongoing operations.",
+        "takeaway": "Architect may serve as Building Administrator and/or Property Manager."
+      },
+      "explanation": null,
+      "code_citation": "SPP 205",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.959749+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff045b50c4d2931ea63ceb9394f6ed77c534202bf5a7faadd165727404eea52f"
+    }
+  ]
+}

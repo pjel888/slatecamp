@@ -1,0 +1,588 @@
+{
+  "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f43ec7d74d055ab786ee8bc97ad8b5563ccba70c52df71b71a23be7c85c23ef4",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "dc4b2ccb-c761-48dd-b4a1-ce7289b975c5",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "What is the source-supported purpose of an isolation joint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To act only as a line connector like a weld"
+        },
+        {
+          "id": "b",
+          "text": "To make two members fully fixed against rotation"
+        },
+        {
+          "id": "c",
+          "text": "To divide a large or complex structure into sections so differential movement or settlement can occur"
+        },
+        {
+          "id": "d",
+          "text": "To replace all weathertightness detailing"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "To act only as a line connector like a weld is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "To make two members fully fixed against rotation is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "To divide a large or complex structure into sections so differential movement or settlement can occur This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "d": "To replace all weathertightness detailing is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "To divide a large or complex structure into sections so differential movement or settlement can occur Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9436-9443.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:14.306445+00:00",
+      "content_hash": "sha256:62fdd764bb622ec6f547750d470bacde41b2699662ee0d88a7b2b9a3bd93f68f"
+    },
+    {
+      "question_id": "f875ea2b-e341-47d6-a3fd-bc9527ba25b4",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "Which statement best describes a control joint within this source packet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a cable anchorage that resists translation only along the cable."
+        },
+        {
+          "id": "b",
+          "text": "It forms a plane of weakness to regulate the location and amount of cracking."
+        },
+        {
+          "id": "c",
+          "text": "It is a bolt grade requirement."
+        },
+        {
+          "id": "d",
+          "text": "It is a permanent prohibition against movement."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "It is a cable anchorage that resists translation only along the cable. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "It forms a plane of weakness to regulate the location and amount of cracking. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "It is a bolt grade requirement. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "It is a permanent prohibition against movement. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "It forms a plane of weakness to regulate the location and amount of cracking. Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 5215-5238 and 9429-9435.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0b40df8ce1bac77be872399af184f42b15f5ab68734109fa94ab1e4e5add7043"
+    },
+    {
+      "question_id": "34066ba1-043c-468e-9c14-e1da001cbfb3",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "BCI gives which example of a point connector?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glue"
+        },
+        {
+          "id": "b",
+          "text": "Bolt"
+        },
+        {
+          "id": "c",
+          "text": "Weld"
+        },
+        {
+          "id": "d",
+          "text": "Backer rod"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Glue is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Bolt This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Weld is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Backer rod is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Bolt Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 2147-2152.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c61f287c516ac06b6aec3377d8b62788c9b2308f71caa2e44f1720155a44c994"
+    },
+    {
+      "question_id": "4d0ba4e9-0578-43b7-b967-ff87cf040c27",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "A new addition adjoins an existing structure and differential movement is expected. Which movement-joint category best fits the source logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expansion joint only for color separation"
+        },
+        {
+          "id": "b",
+          "text": "Control joint only for surface scoring"
+        },
+        {
+          "id": "c",
+          "text": "Point connector"
+        },
+        {
+          "id": "d",
+          "text": "Isolation joint"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Expansion joint only for color separation is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Control joint only for surface scoring is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "Point connector is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Isolation joint This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "correct": "Isolation joint Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9402-9443.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:13.954385+00:00",
+      "content_hash": "sha256:96fe4b9dcb340f06720c9fd69c77de369196f6ffa749587e3535de51005b8dac"
+    },
+    {
+      "question_id": "ba6f430c-26f3-43d2-b022-4d7be552200d",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "A movement joint in an exterior assembly must permit movement. What second requirement does BCI keep in view?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It must transfer all bending moments across the joint."
+        },
+        {
+          "id": "b",
+          "text": "It should maintain the weathertightness of the construction."
+        },
+        {
+          "id": "c",
+          "text": "It should eliminate all sealant and filler."
+        },
+        {
+          "id": "d",
+          "text": "It must be treated as a screw connection."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "It must transfer all bending moments across the joint. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "It should maintain the weathertightness of the construction. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "It should eliminate all sealant and filler. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "It must be treated as a screw connection. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "It should maintain the weathertightness of the construction. Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9402-9421.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:14.103618+00:00",
+      "content_hash": "sha256:e17e0248a49816a99df01f8ad398f4e438767267dbece5b64980df21d6da9613"
+    },
+    {
+      "question_id": "fe655d63-6f5e-4c86-8e02-7bcb3fbb93d8",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "A long building surface is expected to expand and contract with temperature and moisture. Which answer stays inside the checked source?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do not allow any movement because all materials stay dimensionally fixed."
+        },
+        {
+          "id": "b",
+          "text": "Use movement-joint logic so expansion or contraction can occur without damaging the materials."
+        },
+        {
+          "id": "c",
+          "text": "Use only a glued surface connector for all movement."
+        },
+        {
+          "id": "d",
+          "text": "Calculate a final joint width from this batch without project data."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Do not allow any movement because all materials stay dimensionally fixed. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Use movement-joint logic so expansion or contraction can occur without damaging the materials. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Use only a glued surface connector for all movement. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Calculate a final joint width from this batch without project data. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Use movement-joint logic so expansion or contraction can occur without damaging the materials. Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9402-9435.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d5ceb0d472a160fbac4734d78dd09557b061eaf6176e00d5e2fa02b8f4fd4168"
+    },
+    {
+      "question_id": "88765cc5-82d4-4877-9dfc-a700b7b5c4f8",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "Which movement joint is a continuous, unobstructed slot between two parts of a building or structure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pinned structural joint"
+        },
+        {
+          "id": "b",
+          "text": "Expansion joint"
+        },
+        {
+          "id": "c",
+          "text": "Cable anchorage"
+        },
+        {
+          "id": "d",
+          "text": "Point connector"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pinned structural joint is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Expansion joint This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Cable anchorage is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "Point connector is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Expansion joint Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9422-9428.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:14.583855+00:00",
+      "content_hash": "sha256:100e496a6aa01041fd9bfc7710dcdd0b57d0ac06486de3fdc9d16968033c1b12"
+    },
+    {
+      "question_id": "887bd3ab-f020-4174-8e3f-5efab5067597",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "What is the primary source-supported function of an expansion joint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To act as a weld between steel members"
+        },
+        {
+          "id": "b",
+          "text": "To permit thermal or moisture expansion without damage to either part"
+        },
+        {
+          "id": "c",
+          "text": "To make the joint fully rigid against rotation"
+        },
+        {
+          "id": "d",
+          "text": "To replace all structural connectors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "To act as a weld between steel members is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "To permit thermal or moisture expansion without damage to either part This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "To make the joint fully rigid against rotation is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "To replace all structural connectors is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "To permit thermal or moisture expansion without damage to either part Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 9422-9428.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:14.729809+00:00",
+      "content_hash": "sha256:0506947cfdb533f24dfc6c12d72f784b15fdbe82790641c297cfa1678a128b96"
+    },
+    {
+      "question_id": "8b3a89a7-67c3-4291-bfcf-b1f2a228602c",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "What is the key behavior difference between a fixed joint and a pinned joint in BCI?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed joints allow all movement; pinned joints resist all rotation and translation."
+        },
+        {
+          "id": "b",
+          "text": "Fixed joints maintain angular relationship and resist rotation and translation; pinned joints allow rotation but resist translation."
+        },
+        {
+          "id": "c",
+          "text": "Fixed joints are always adhesive-only; pinned joints are always waterproofing-only."
+        },
+        {
+          "id": "d",
+          "text": "There is no behavioral difference."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fixed joints allow all movement; pinned joints resist all rotation and translation. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Fixed joints maintain angular relationship and resist rotation and translation; pinned joints allow rotation but resist translation. This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "c": "Fixed joints are always adhesive-only; pinned joints are always waterproofing-only. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "d": "There is no behavioral difference. is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Fixed joints maintain angular relationship and resist rotation and translation; pinned joints allow rotation but resist translation. Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 2153-2160.",
+      "bloom_level": "understand",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:14.87812+00:00",
+      "content_hash": "sha256:b841966264866dce80c70932e7fb55807ecc037e42388b0903dc1d1aa7c47d49"
+    },
+    {
+      "question_id": "38633d41-612b-4cc2-b0c1-d28e46909051",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "A connection must maintain the angular relationship between joined elements and resist rotation. Which source-supported behavior is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expansion joint behavior"
+        },
+        {
+          "id": "b",
+          "text": "Pinned behavior only"
+        },
+        {
+          "id": "c",
+          "text": "Fixed or rigid joint behavior"
+        },
+        {
+          "id": "d",
+          "text": "Control joint behavior"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Expansion joint behavior is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "b": "Pinned behavior only is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "c": "Fixed or rigid joint behavior This is the source-supported answer inside the Batch 153 local-first source boundary.",
+        "d": "Control joint behavior is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
+        "correct": "Fixed or rigid joint behavior Supported by bci-5e-structural-joints-b153.",
+        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
+        "source_boundary": "bci-5e-structural-joints-b153",
+        "checked_sources": [
+          "bci-5e-structural-joints-b153"
+        ]
+      },
+      "explanation": null,
+      "code_citation": "Local source boundary: BCI refined markdown lines 2153-2158.",
+      "bloom_level": "apply",
+      "application_context": "source_audited_local_first",
+      "practice_context": [
+        "batch-153-local-first",
+        "bci-5e-structural-joints-b153"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5102472122b970d48e07996ce80d7ab0fd575a469153f2486e440b0857920d24"
+    }
+  ]
+}

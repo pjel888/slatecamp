@@ -2,65 +2,40 @@
   "question_id": "aa59d7dc-e5d6-40f3-ba88-a15a7e55b432",
   "baseline_hash": "sha256:f50a0ea25a0f0b55fd14d9e15b44a13b88f3045a6e3d57765e5462058c86384f",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "degenerate-edit-remediation-2026-07-20: prior batch-048 edit was degenerate (1-char garbage option text + nonsensical rationale). Original question was source-correct; restored verbatim with source rationale preserved.",
+  "approved_by": "agent-X1-degenerate-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
     "parent_article_slug": "pd-1096-rule-vii-area-metrics",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Use only the largest setback dimension as the whole area control.",
-    "checked_markdown_lines": [
-      "PD 1096 IRR refined markdown lines 3009-3138",
-      "PD 1096 IRR refined markdown lines 3750-3825",
-      "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
-        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
-        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
-        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
-        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
-      },
-      {
-        "source_id": "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02",
-        "label": "PD 1096 Rules 7 and 8 - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/Rule 7 _ 8.pdf",
-        "sha256": "sha256:3fd01acd4ec7f37dbff97dba72c107502b46a05f59803df9973dfea62907a55d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/Rule 7 _ 8.md",
-        "refined_markdown_sha256": "sha256:b09a20f30c11dffd69d4a2a11e941d4ed42ad13d539ff0ca194ddb762dced634",
-        "locator": "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
-      }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+    "answer_key_fields_changed": false,
+    "support_status": "degenerate_edit_restored_to_source_correct_original",
+    "source_locator": "Original question in linked-questions.json for article pd-1096-rule-vii-area-metrics; source-correct per article normalized.md controlling-source section.",
+    "local_source_safe_action": "Restored original text, options, correct_option_id, rationale, explanation, and code_citation verbatim from linked-questions.json. No semantic content changed."
   },
   "proposed": {
-    "text": "In a Rule VII area-metrics problem, what should be kept distinct from the FLAR-based GFA check?",
+    "text": "Under PD 1096, Rule VIII, Sec. 803, what does MACA (Maximum Allowable Construction Area) represent, and how is it calculated?",
     "options": [
       {
         "id": "a",
-        "text": "The TGFA and AMVB checks should remain separate from the FLAR-based GFA check."
+        "text": "MACA equals PSO alone — it is another name for the building footprint percentage, excluding open paved areas"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "MACA equals PSO plus ISA — the total of building footprint percentage and impervious paved open area percentage"
       },
       {
         "id": "c",
-        "text": "r"
+        "text": "MACA equals TOSL minus USA — subtracting the unpaved softscape from total open space to find hard coverage"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "MACA equals TLA minus TOSL — total lot area less total open space, expressed as a square meter figure"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The TGFA and AMVB checks should remain separate from the FLAR-based GFA check. This is supported by Skip AMVB once a GFA result has been computed..",
-    "explanation": "The TGFA and AMVB checks should remain separate from the FLAR-based GFA check. The cited local source family controls this item: Skip AMVB once a GFA result has been computed..",
-    "code_citation": "Use only the largest setback dimension as the whole area control."
+    "correct_option_id": "b",
+    "rationale": "Original question was already source-correct and substantive; the prior edit (source-audited-article-batch-048) was degenerate, with 1-character garbage in 3 of 4 option text fields and a nonsensical rationale. Restored the original verbatim. Original source rationale: MACA = PSO + ISA: the sum of the building footprint percentage (PSO) and the impervious paved open area percentage (ISA). It represents all hard/impervious coverage on the ground — building plus paving. Option A confuses MACA with PSO. Option C is algebraically equivalent but expressed incorrectly (TOSL − USA = ISA, not MACA). Option D mixes percentage and area units and arrives at MACA incorrectly.",
+    "explanation": "Four governing equations: PSO + TOSL = 100%; TOSL = ISA + USA; MACA = PSO + ISA; TLA% = MACA + USA. MACA caps all hard/impervious coverage (building + paving) combined. For Basic R-2 without firewall: PSO=55%, ISA=30%, MACA=85% — the building plus all paving cannot exceed 85% of the lot.",
+    "code_citation": "PD 1096, Rule VIII, Sec. 803.3–803.4, Table VIII.1"
   }
 }

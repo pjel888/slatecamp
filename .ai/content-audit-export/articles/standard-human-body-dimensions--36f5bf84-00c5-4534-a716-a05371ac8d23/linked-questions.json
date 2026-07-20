@@ -8,31 +8,31 @@
       "question_id": "3a4e3215-1ddc-4022-8e4d-b24c31036491",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "Based on the specifications in \"Standard Human Body Dimensions\", if a project requires 1.50 m, what is the correct interpretation?",
+      "text": "What does the checked Furniture Reviewer source identify as anthropometrics?",
       "options": [
         {
-          "id": "A",
-          "text": "1.50 m is the minimum/standard requirement"
+          "id": "a",
+          "text": "The study dealing with human measurements."
         },
         {
-          "id": "B",
-          "text": "1.50 m is the maximum permitted value"
+          "id": "b",
+          "text": "The study of metal lath thickness."
         },
         {
-          "id": "C",
-          "text": "1.50 m applies only to specific conditions"
+          "id": "c",
+          "text": "The study of legal privileges and incentives."
         },
         {
-          "id": "D",
-          "text": "1.50 m is an approximate value subject to interpretation"
+          "id": "d",
+          "text": "The study of fire exits only."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 1.50 m as the requirement. Context: ino Female 5th Percentile Stature Understated**: The original's lower bound of \"...",
+      "rationale": "The study dealing with human measurements. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:13.561337+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.915364+00:00",
       "content_hash": "sha256:41f818816af5758a13e872008ea0d7bbbe7c4c0be459b938201033fbd649d672"
     },
     {
       "question_id": "f478d658-dd03-4830-b80c-fb2635bd527e",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A designer places a high storage shelf at 233 cm (US mlea 95th% overhead reach) in a community center in Quezon City. What proportion of Filipino femlea users would be unable to reach this shelf without step aids?",
+      "text": "Which statement is source-safe for Standard Human Body Dimensions in Batch 053?",
       "options": [
         {
-          "id": "A",
-          "text": "None — Filipino female overhead reach exceeds 233 cm at the 50th percentile, making the shelf universally accessible"
+          "id": "a",
+          "text": "Human dimensions affect reach, furniture, and space needed for movement, activity, and rest."
         },
         {
-          "id": "B",
-          "text": "Approximately 5% — only Filipino females at or below the 5th percentile (183.0 cm overhead reach) cannot reach 233 cm"
+          "id": "b",
+          "text": "Del Prado-Lu tables were verified as the primary raw source in this batch."
         },
         {
-          "id": "C",
-          "text": "Approximately 50% — the mean Filipino female overhead reach (196.5 cm) falls exactly at the 50th percentile, so half cannot reach 233 cm"
+          "id": "c",
+          "text": "A 1.50 m to 1.85 m range is the legal source for all Filipino users."
         },
         {
-          "id": "D",
-          "text": "The vast majority — Filipino female 5th% overhead reach is 183 cm and mean is 196.5 cm; a 233 cm shelf is beyond reach for essentially all Filipino women without assistance"
+          "id": "d",
+          "text": "BIFMA is the checked local raw PDF authority."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Filipino female 5th% overhead reach = 183 cm; mean = 196.5 cm; 95th% = 211 cm. A shelf at 233 cm exceeds even the Filipino female 95th% overhead reach of 211 cm — virtually all Filipino women cannot reach it without step aids.",
-        "explanation": "Del Prado-Lu (2007) Filipino female overhead fingertip reach: 5th% = 183.0 cm; mean = 196.5 cm; 95th% = 211.0 cm. A shelf at 233 cm is above the 95th percentile for Filipino women — meaning more than 95% of Filipino women cannot reach it. The US male 95th% overhead reach (~233 cm) is the result of designing for the largest US user, but this dimension is inaccessible to essentially all Filipino women and even exceeds Filipino male 95th% reach (224.9 cm). Option B confuses the 5th% lower tail with the upper reach limit. Option D is numerically wrong about the mean.",
-        "common_misconceptions": [
-          "Applying US male 95th% overhead reach as the upper shelf limit in Philippine design contexts",
-          "Assuming the Filipino female mean overhead reach (~196.5 cm) is near 233 cm"
-        ]
-      },
+      "rationale": "Human dimensions affect reach, furniture, and space needed for movement, activity, and rest. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests analysis of the reach gap between US mlea 95th% overhead reach and Filipino femlea reach data.",
       "code_citation": null,
       "bloom_level": "analyze",
@@ -96,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.903925+00:00",
       "content_hash": "sha256:16f6ba7556568798f44c7b56bbd3fe498fa97ae9921659aa20e863e813c3ce8a"
     },
     {
       "question_id": "bb7f737e-5751-4f3e-87fd-bc3a8615782c",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "In ergonomic design, why is designing for the 50th percentile ('average') person considered an error, and what is the correct design approach?",
+      "text": "Under the checked BP 344 2024 source, where is a manual switch installed?",
       "options": [
         {
-          "id": "A",
-          "text": "The 50th percentile is statistically unstable; ergonomics requires designing for the 99th percentile to ensure maximum coverage across all user populations, especially in diverse environments"
+          "id": "a",
+          "text": "1200 mm above the floor to the center of the switch plate."
         },
         {
-          "id": "B",
-          "text": "The 50th percentile is appropriate for reach-based design; the 95th percentile is used only for hazardous clearance calculations such as fire exit widths, which are critical for safety"
+          "id": "b",
+          "text": "1500 mm above the floor to the center of the switch plate."
         },
         {
-          "id": "C",
-          "text": "Designing for the 50th percentile excludes approximately half the population on either side; correct practice uses 5th percentile for reach-based elements and 95th percentile for clearance elements"
+          "id": "c",
+          "text": "900 mm above the floor because door width is 900 mm."
         },
         {
-          "id": "D",
-          "text": "The 50th percentile should be used for all residential design; the 5th–95th range applies only to institutional and commercial occupancies, where variability is greater"
+          "id": "d",
+          "text": "450 mm above the floor because toilet-seat height is 450 mm."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The 50th percentile is the median — designing for it excludes approximately 50% of users on each extreme. Correct practice: 5th percentile for reach (smallest person can access it = everyone can); 95th percentile for clearance (largest person fits = everyone fits).",
-        "explanation": "The 'average person fallacy': the 50th percentile is statistically the median, meaning roughly half the population is shorter/smaller and half is taller/larger. A control placed at average reach height excludes shorter users. An aisle sized for average shoulder breadth excludes wider users. The REACH-CLEAR Rule: REACH elements (switches, shelves, controls) → design for 5th percentile (smallest reach sets the upper limit); CLEARANCE elements (doors, aisles, knee space) → design for 95th percentile (largest body sets the minimum space). Option A incorrectly advocates the 99th percentile, which would over-design most elements. Options C and D incorrectly limit the 5th–95th approach.",
-        "common_misconceptions": [
-          "Believing the 'average' person is a safe design target — it excludes approximately half the intended user population",
-          "Reversing the rule: applying 95th percentile to reach elements and 5th percentile to clearance elements"
-        ]
-      },
+      "rationale": "1200 mm above the floor to the center of the switch plate. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests understanding of the fundamental 5th–95th percentile design principle and why the average is an incorrect target.",
       "code_citation": null,
       "bloom_level": "understand",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.911644+00:00",
       "content_hash": "sha256:a4682e79e0a079c2ba576079a5e82816643c9003281604f018627181185f0557"
     },
     {
       "question_id": "2183794f-110e-40e3-bedb-2d1af3e14828",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "Filipino mlea and US mlea mean popliteal heights are both 43.3 cm (Del Prado-Lu, 2007; NHANES/ANSUR). However, the Philippine recommended seat height range (38–45 cm) is lower than the US BIFMA range (43.2–48.3 cm). Why does this discrepancy exist if the mlea means are identical?",
+      "text": "Which accessible route/pathway width is source-backed in this article?",
       "options": [
         {
-          "id": "A",
-          "text": "The Philippine range extends lower because Filipino classrooms and offices have a higher proportion of users in the 36–42 cm popliteal range (shorter women, children) compared to the US population distribution"
+          "id": "a",
+          "text": "1500 mm minimum for sidewalks, walkways, and pathways."
         },
         {
-          "id": "B",
-          "text": "The discrepancy is an error — since male means are identical, the seat height ranges should be identical; Philippine furniture makers should adopt BIFMA standards to align with international norms"
+          "id": "b",
+          "text": "5000 mm minimum for every pathway."
         },
         {
-          "id": "C",
-          "text": "BIFMA standards are based on 95th percentile dimensions exclusively; Philippine standards are based on 5th percentile dimensions, explaining the range difference and accommodating a wider user base"
+          "id": "c",
+          "text": "400 mm to 600 mm for every pathway."
         },
         {
-          "id": "D",
-          "text": "The Philippine range is lower because Filipino males sit on a different posture pattern than US males, requiring lower seat heights for the same popliteal height, which is a cultural adaptation"
+          "id": "d",
+          "text": "750 mm minimum for two wheelchairs to pass."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Although male means are identical, the Philippine seat range extends lower because Filipino contexts include a higher proportion of shorter-statured women and children whose popliteal heights fall in the 36–42 cm range — below the BIFMA minimum of 43.2 cm.",
-        "explanation": "The male means are identical (43.3 cm for both populations). The issue is population composition and the design target. In a Filipino school or workplace, the user population includes Filipino women (5th% popliteal = 36.0 cm, mean = 40.3 cm) — both values fall below the BIFMA minimum of 43.2 cm. A BIFMA-standard chair at 43.2 cm minimum height leaves Filipino women at or below the mean with feet dangling. The Philippine range of 38–45 cm accommodates the full Filipino user distribution from shorter women to average men. US BIFMA was designed for the US population distribution, which has a different female lower-end distribution. Option A incorrectly equates identical male means with identical design ranges.",
-        "common_misconceptions": [
-          "Assuming identical male mean popliteal heights mean the seat height ranges should also be identical",
-          "Ignoring the role of female and child users in setting the lower bound of seat height ranges for public/institutional seating"
-        ]
-      },
+      "rationale": "1500 mm minimum for sidewalks, walkways, and pathways. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests analytical understanding of why identical mlea means produce different recommended seat height ranges in two populations.",
       "code_citation": null,
       "bloom_level": "analyze",
@@ -198,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.906552+00:00",
       "content_hash": "sha256:5d6bd6839505644590a430e7547ea3bc775957aef6fd81baa530940dce183cec"
     },
     {
       "question_id": "21c7405e-664d-4669-ab87-d670e3682b98",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "What is the 95th percentile stature for Filipino mleas and US mleas according to Del Prado-Lu (2007) and NHANES/ANSUR data respectively, and what is the architectural significance of the gap?",
+      "text": "Why are population-specific anthropometric tables not included in this Batch 053 rewrite?",
       "options": [
         {
-          "id": "A",
-          "text": "PH male 95th%: 185.0 cm; US male 95th%: 186.7 cm — nearly identical, so US door height standards apply without modification in the Philippines, ensuring compliance with international standards"
+          "id": "a",
+          "text": "Their primary raw sources were not part of the selected local raw PDF families."
         },
         {
-          "id": "B",
-          "text": "PH male 95th%: 178.0 cm; US male 95th%: 186.7 cm — an 8.7 cm gap meaning US standards for overhead clearance are generous for Filipino users but insufficient if applied to taller visiting populations"
+          "id": "b",
+          "text": "They are always invalid for architecture."
         },
         {
-          "id": "C",
-          "text": "PH male 95th%: 178.0 cm; US male 95th%: 180.0 cm — a minor 2 cm gap with no practical design significance, thus not affecting the overall architectural design considerations"
+          "id": "c",
+          "text": "They were verified by BP 344 parking tables."
         },
         {
-          "id": "D",
-          "text": "PH male 95th%: 167.0 cm (population mean); US male 95th%: 186.7 cm — the Filipino mean is used in place of the 95th percentile for Philippine design, which may lead to discrepancies in international projects"
+          "id": "d",
+          "text": "They belong only in structural analysis."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Filipino male 95th% stature = 178.0 cm (Del Prado-Lu, 2007); US male 95th% = 186.7 cm (NHANES/ANSUR) — an 8.7 cm gap that is significant for door height, overhead storage, and clearance design.",
-        "explanation": "Del Prado-Lu (2007) n=1,805 Filipino workers: male 95th% stature = 178.0 cm. NHANES/ANSUR US data: male 95th% = 186.7 cm. The 8.7 cm gap means a door clearance sized for the US 95th% (e.g., 213 cm / 7ft 0in) provides generous headroom for Filipino users. But PD 1096 sets the Philippine door minimum at 2.10 m — which is 178 cm + 32 cm clearance buffer, more than adequate. Using the Filipino mean (167 cm, Option D) as a design target excludes the tallest 50% of Filipino male users — a classic 'average person fallacy' error.",
-        "common_misconceptions": [
-          "Using the Filipino male mean stature (167 cm) as the design target rather than the 95th percentile (178 cm)",
-          "Assuming the US and Filipino 95th percentile statures are nearly identical when they differ by 8.7 cm"
-        ]
-      },
+      "rationale": "Their primary raw sources were not part of the selected local raw PDF families. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests recall of the specific stature data values and their architectural significance.",
       "code_citation": "Del Prado-Lu (2007); NHANES/ANSUR",
       "bloom_level": "remember",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.914147+00:00",
       "content_hash": "sha256:b314494b8210b83fdf5ef3951db7c715fc65d71ac4f333e129c32a2befd4fdbe"
     },
     {
       "question_id": "f004612b-7e17-4698-928e-ed558850ee0d",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "What is the key distinction between static (structural) dimensions and dynamic (functional) dimensions in anthropometrics, and which type is more relevant for positioning reach-based controls?",
+      "text": "What does the checked Furniture Reviewer source identify as anthropometrics?",
       "options": [
         {
-          "id": "A",
-          "text": "Static dimensions are measured in movement; dynamic dimensions are measured at rest. Static dimensions govern reach-based control placement, ensuring ergonomic efficiency"
+          "id": "a",
+          "text": "The study dealing with human measurements."
         },
         {
-          "id": "B",
-          "text": "Static dimensions are measured in a fixed standardized posture; dynamic dimensions are measured during task performance. Dynamic (functional) reach — typically 10–20% larger than static — governs reach-based control positioning."
+          "id": "b",
+          "text": "The study of metal lath thickness."
         },
         {
-          "id": "C",
-          "text": "Static and dynamic dimensions are identical in value; the distinction is purely terminological with no practical design consequence, which is a common misunderstanding"
+          "id": "c",
+          "text": "The study of legal privileges and incentives."
         },
         {
-          "id": "D",
-          "text": "Static dimensions govern clearance design; dynamic dimensions are used only for structural engineering calculations, not architectural anthropometrics, which is incorrect"
+          "id": "d",
+          "text": "The study of fire exits only."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Static dimensions are measured in fixed standardized postures; dynamic (functional) dimensions are measured during tasks. Functional reach is 10–20% larger than static reach and is the correct data type for positioning controls and shelves.",
-        "explanation": "Anthropometric dimension types: Static (Structural) = measured in a standardized, fixed posture (e.g., stature measured standing erect, no shoes). Dynamic (Functional) = measured during task performance, accounting for body movement. Key rule: dynamic dimensions are typically 10–20% larger than static equivalents. For reach-based design (controls, switches, shelves), functional reach data must be used — not static arm length — because users rotate, lean, and extend during actual reach tasks. Option A reverses the definitions. Option C incorrectly claims the values are identical. Option D incorrectly limits dynamic dimensions to structural engineering.",
-        "common_misconceptions": [
-          "Using static arm length data instead of functional reach data when positioning controls and shelving",
-          "Assuming static and dynamic dimensions are numerically equivalent"
-        ]
-      },
+      "rationale": "The study dealing with human measurements. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests understanding of the static vs. dynamic dimension distinction and its application to reach-based design.",
       "code_citation": null,
       "bloom_level": "understand",
@@ -300,45 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.899742+00:00",
       "content_hash": "sha256:6b737bae8d6e0e56a64411d5db44de59613aa17b15c6f525787ab0ee7aa68141"
     },
     {
       "question_id": "b0dd9dcd-3121-48fa-980e-1df831635a36",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A Philippine accessible building must comply with BP 344. At what maximum height from the floor must light switches, outlets, and controls be placed to be accessible from a wheelchair, and what body dimension governs this limit?",
+      "text": "Which statement is source-safe for Standard Human Body Dimensions in Batch 053?",
       "options": [
         {
-          "id": "A",
-          "text": "Maximum 120 cm — based on wheelchair user forward reach limit; this is the BP 344 accessible control placement standard"
+          "id": "a",
+          "text": "Human dimensions affect reach, furniture, and space needed for movement, activity, and rest."
         },
         {
-          "id": "B",
-          "text": "Maximum 155 cm — based on Filipino female mean standing overhead reach, ensuring most standing users can reach controls from below"
+          "id": "b",
+          "text": "Del Prado-Lu tables were verified as the primary raw source in this batch."
         },
         {
-          "id": "C",
-          "text": "Maximum 183 cm — based on Filipino female 5th percentile overhead standing reach, setting the absolute upper limit for all Philippine controls"
+          "id": "c",
+          "text": "A 1.50 m to 1.85 m range is the legal source for all Filipino users."
         },
         {
-          "id": "D",
-          "text": "Maximum 140 cm — based on seated Filipino female eye height, ensuring controls are within the visual field of wheelchair users"
+          "id": "d",
+          "text": "BIFMA is the checked local raw PDF authority."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 requires accessible controls at a maximum of 120 cm from the floor, governed by wheelchair user forward reach — not ambulatory standing reach.",
-        "explanation": "BP 344 accessible control placement: light switches, outlets, and intercom buttons must be ≤ 120 cm from the floor. The governing dimension is wheelchair user forward reach, not standing adult reach. The US ADA equivalent is ≤ 48 inches (121.9 cm) — nearly identical. Option A (155 cm) is the Filipino female mean standing eye height — irrelevant to wheelchair reach. Option C (183 cm) is the Filipino female 5th percentile standing overhead reach — relevant for ambulatory upper shelf limits, not accessible controls. Option D (140 cm) has no direct code basis.",
-        "common_misconceptions": [
-          "Confusing ambulatory standing reach limits with wheelchair forward reach limits for control placement",
-          "Using the Filipino female 5th percentile overhead reach (183 cm) as the accessible control height maximum"
-        ]
-      },
+      "rationale": "Human dimensions affect reach, furniture, and space needed for movement, activity, and rest. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests application of the BP 344 accessible control placement standard and its anthropometric basis.",
       "code_citation": "BP 344 IRR",
       "bloom_level": "apply",
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.910416+00:00",
       "content_hash": "sha256:7d156eee0ea5cfb11a706c196774976e948d896fc804212ddda90a79aceab812"
     },
     {
       "question_id": "4883a3be-389e-42d3-be78-908d00f7af37",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "An open-plan office in Manila is designed with 120 cm high partitions. A Filipino mlea at the 95th percentile has a seated eye height of approximately 123 cm from the floor (seat 43 cm + eye above seat 80 cm). What is the effect of 120 cm partitions on this user?",
+      "text": "Under the checked BP 344 2024 source, where is a manual switch installed?",
       "options": [
         {
-          "id": "A",
-          "text": "The 120 cm partition is above his seated eye height of 123 cm, providing complete visual privacy while seated, which is ideal for focused work environments."
+          "id": "a",
+          "text": "1200 mm above the floor to the center of the switch plate."
         },
         {
-          "id": "B",
-          "text": "The 120 cm partition has no effect on sightlines — seated eye height calculations do not apply to partition design in Philippine offices, as other factors are more critical."
+          "id": "b",
+          "text": "1500 mm above the floor to the center of the switch plate."
         },
         {
-          "id": "C",
-          "text": "The 120 cm partition exactly matches his seated eye height, creating a perfect privacy-communication balance for all Filipino male occupants, ensuring both privacy and interaction."
+          "id": "c",
+          "text": "900 mm above the floor because door width is 900 mm."
         },
         {
-          "id": "D",
-          "text": "The 120 cm partition is slightly below his seated eye height of 123 cm, allowing him to see over it when seated — providing limited privacy but enabling visual communication"
+          "id": "d",
+          "text": "450 mm above the floor because toilet-seat height is 450 mm."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Filipino male 95th% seated eye height ≈ 123 cm from floor. A 120 cm partition is 3 cm below his eye level — he can see over it when seated, providing limited privacy while allowing standing communication.",
-        "explanation": "Seated eye height calculation for Filipino male 95th%: seat height = 43 cm + seated eye height above seat = 80.0 cm (Del Prado-Lu, 2007) → floor-to-eye = 123 cm. A 120 cm partition is 3 cm below this eye level — meaning the tallest 5% of Filipino male occupants can see over the partition while seated. For average Filipino males (floor-to-eye ≈ 43 + 73.4 = 116.4 cm), the 120 cm partition blocks seated sightlines, providing privacy. This is the classic 'privacy with visibility' partition design for open-plan offices — low enough to see over when standing, high enough to block seated sightlines for most users. Option A incorrectly states 120 cm exceeds 123 cm. Option C incorrectly claims the values are equal.",
-        "common_misconceptions": [
-          "Assuming a 120 cm partition blocks sightlines for all Filipino male occupants when the 95th percentile seated eye height (123 cm) exceeds it",
-          "Confusing 120 cm partition height with 120 cm seated eye height"
-        ]
-      },
+      "rationale": "1200 mm above the floor to the center of the switch plate. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests application of Filipino seated eye height data to open-plan office partition design.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -402,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.920138+00:00",
       "content_hash": "sha256:f3148f35a593388a130f21a70703c0bcec21e47eaa8f563846fa3fc2bc7c3edd"
     },
     {
       "question_id": "d487d2f2-135c-4901-873a-c16ec3ee0f44",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "According to Del Prado-Lu (2007), what is the Filipino femlea 5th percentile stature, and what specific design consequence follows from using the incorrect value of 150 cm instead of the correct figure?",
+      "text": "Which accessible route/pathway width is source-backed in this article?",
       "options": [
         {
-          "id": "A",
-          "text": "Filipino female 5th% stature = 150.0 cm; this value is confirmed by both Del Prado-Lu and NHANES data as the lower bound for Asian women, ensuring inclusivity"
+          "id": "a",
+          "text": "1500 mm minimum for sidewalks, walkways, and pathways."
         },
         {
-          "id": "B",
-          "text": "Filipino female 5th% stature = 143.0 cm; using 150 cm as the design floor makes controls and shelves inaccessible to the shortest 5% of Filipino women who are shorter than 150 cm"
+          "id": "b",
+          "text": "5000 mm minimum for every pathway."
         },
         {
-          "id": "C",
-          "text": "Filipino female 5th% stature = 152.8 cm; this matches the US female 5th% stature, confirming that one standard can serve both populations, simplifying design"
+          "id": "c",
+          "text": "400 mm to 600 mm for every pathway."
         },
         {
-          "id": "D",
-          "text": "Filipino female 5th% stature = 143.0 cm; this is only relevant for outdoor space design; interior architectural minimums use the 50th percentile as the design floor, ensuring comfort"
+          "id": "d",
+          "text": "750 mm minimum for two wheelchairs to pass."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Del Prado-Lu (2007) reports Filipino female 5th% stature = 143.0 cm. Using 150 cm as the design floor excludes all Filipino women shorter than 150 cm — roughly the bottom 15–20% of the Filipino female population.",
-        "explanation": "Del Prado-Lu (2007) Filipino female stature data: 5th% = 143.0 cm, mean = 153.9 cm, 95th% = 165.0 cm. The US female 5th% = 152.8 cm (NHANES) — nearly 10 cm taller than the Filipino 5th%. If a designer uses 150 cm as the 'lower bound' for Filipino women (a common error from unchecked sources), they exclude Filipino women with stature between 143–150 cm — approximately the bottom 15% of the Filipino female distribution. This means reach elements (shelves, controls) designed for 150 cm minimum reach height would be inaccessible to this population segment. Option B incorrectly cites 150 cm as the verified value. Option C applies the US female 5th% value to the Filipino population.",
-        "common_misconceptions": [
-          "Using 150 cm as the Filipino female design lower bound when the actual 5th% is 143 cm",
-          "Assuming US female 5th% stature (152.8 cm) is interchangeable with Filipino female 5th% (143.0 cm)"
-        ]
-      },
+      "rationale": "1500 mm minimum for sidewalks, walkways, and pathways. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests recall of the correct Filipino femlea 5th percentile stature and the consequence of using an incorrect value.",
       "code_citation": "Del Prado-Lu (2007)",
       "bloom_level": "remember",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.901223+00:00",
       "content_hash": "sha256:6d081482de786ce43d984fa07be54aa6faec7c9f713af0bdce5530375fd0f55b"
     },
     {
       "question_id": "9c525145-8a22-4811-8650-7e462d5f3ddc",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "The cross-cultural anthropometric gap between Filipino and US users is largest for which dimension category, and smallest for which — and what does this mean for Philippine architectural practice?",
+      "text": "Why are population-specific anthropometric tables not included in this Batch 053 rewrite?",
       "options": [
         {
-          "id": "A",
-          "text": "Largest gap in popliteal height (~8 cm); smallest gap in stature (~0 cm). Seat heights need Filipino-specific standards; door heights can use US standards directly."
+          "id": "a",
+          "text": "Their primary raw sources were not part of the selected local raw PDF families."
         },
         {
-          "id": "B",
-          "text": "Largest gap in sitting height (~15 cm); smallest gap in shoulder breadth (~1 cm). Desk heights need major adjustment but aisle widths can follow US standards."
+          "id": "b",
+          "text": "They are always invalid for architecture."
         },
         {
-          "id": "C",
-          "text": "Largest gap in standing stature and eye height (~8–10 cm); smallest gap in popliteal height (~0 cm). Overhead reach, door height, and shelf placement require population-specific data; seat height is relatively transferable between populations."
+          "id": "c",
+          "text": "They were verified by BP 344 parking tables."
         },
         {
-          "id": "D",
-          "text": "Gaps are uniformly distributed across all dimensions at approximately 8 cm; all US standards require the same proportional reduction of 5% for Philippine application."
+          "id": "d",
+          "text": "They belong only in structural analysis."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The largest Filipino–US gaps are in standing stature and eye height (~8–10 cm). Popliteal height is nearly identical between populations (difference ≈ 0 cm). This means seat height is relatively transferable, but overhead reach, door design, and shelf placement require Filipino-specific data.",
-        "explanation": "Key cross-cultural comparisons from the article: Male 95th% stature gap = 186.7 − 178.0 = 8.7 cm (large). Male 95th% standing eye height gap = 174.3 − 166.0 = 8.3 cm (large). Male 50th% popliteal height: US = 43.3 cm, PH = 43.3 cm (identical). The critical insight: sitting-height-derived dimensions (popliteal height → seat height) are largely transferable across populations; standing-height-derived dimensions (stature → door height, overhead reach → shelf placement, eye height → sightlines) require population-specific calibration. This is the foundational principle for applying Filipino anthropometric data selectively in Philippine architectural practice.",
-        "common_misconceptions": [
-          "Assuming all anthropometric gaps between Filipino and US populations are equal in magnitude",
-          "Thinking popliteal height differences are large when they are nearly identical between the two populations"
-        ]
-      },
+      "rationale": "Their primary raw sources were not part of the selected local raw PDF families. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests evaluative synthesis of which anthropometric dimensions require Filipino-specific standards versus which can use US data reliably.",
       "code_citation": null,
       "bloom_level": "evaluate",
@@ -504,45 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.897697+00:00",
       "content_hash": "sha256:f229059bb7aa0f934c4ca837edd2a2455d2449646ed520f611671a406c8256eb"
     },
     {
       "question_id": "7bd2f17f-dbe0-4373-9c94-86a199547deb",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096 sets the minimum standard door height at 2.10 m. Filipino mlea 95th percentile stature is 178.0 cm. Why is the standard 2.10 m rather than 1.98 m (178 cm + 20 cm clearance)?",
+      "text": "What does the checked Furniture Reviewer source identify as anthropometrics?",
       "options": [
         {
-          "id": "A",
-          "text": "2.10 m was adopted from the US 7-foot standard and converted to metric without anthropometric verification for the Filipino population"
+          "id": "a",
+          "text": "The study dealing with human measurements."
         },
         {
-          "id": "B",
-          "text": "1.98 m would be sufficient but PD 1096 rounds all dimensions to the nearest 10 cm, making 2.00 m the true minimum and 2.10 m an error"
+          "id": "b",
+          "text": "The study of metal lath thickness."
         },
         {
-          "id": "C",
-          "text": "2.10 m provides a larger clearance buffer for dynamic movement (carrying objects, wearing hats, head tilt), accommodates visiting taller populations, and ensures the code minimum sets a comfortable rather than a minimal floor"
+          "id": "c",
+          "text": "The study of legal privileges and incentives."
         },
         {
-          "id": "D",
-          "text": "2.10 m is required because Filipino males at the 95th percentile wear shoes adding approximately 3 cm to stature, making 181 cm + 29 cm clearance the governing dimension"
+          "id": "d",
+          "text": "The study of fire exits only."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "2.10 m exceeds the raw 95th% + 20 cm clearance calculation to account for dynamic movement (carrying boxes, head tilt), accommodate taller visiting populations, and establish the code minimum as a comfortable design floor.",
-        "explanation": "The article's principle: 'The code minimum sets the floor; good design may exceed it.' While 178 cm + 20 cm = 198 cm would technically clear the Filipino 95th% male, 2.10 m provides: (1) clearance for dynamic movement (tilting head, carrying objects overhead); (2) accommodation for taller international visitors (US male 95th% = 186.7 cm → 186.7 + 20 = 206.7 cm, rounded up to 210 cm); (3) a buffer that prevents the code minimum from being uncomfortably close to the actual body dimension. This is the principle of 'generous code minimums' — they are set higher than the raw calculation to ensure usability. Option A is a historical misattribution without support in the article.",
-        "common_misconceptions": [
-          "Thinking PD 1096 should set door heights exactly at 95th% stature + 20 cm clearance with no additional buffer",
-          "Assuming the PD 1096 2.10 m standard was copied from US standards without Philippine anthropometric consideration"
-        ]
-      },
+      "rationale": "The study dealing with human measurements. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests analysis of why code minimums exceed raw anthropometric calculations.",
       "code_citation": "PD 1096",
       "bloom_level": "analyze",
@@ -555,45 +485,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.310712+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.905238+00:00",
       "content_hash": "sha256:183fc2b8957bfef2d451c5f076d53a28ffa5795823b606e0ae5113b56ee45a08"
     },
     {
       "question_id": "55884ad6-a94d-4946-aa54-7c3cb9020ad6",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "What is the key distinction between static (structural) dimensions and dynamic (functional) dimensions in anthropometrics, and which type is more relevant for positioning reach-based controls?",
+      "text": "Which statement is source-safe for Standard Human Body Dimensions in Batch 053?",
       "options": [
         {
-          "id": "A",
-          "text": "Static dimensions are measured in movement; dynamic dimensions are measured at rest. Static dimensions govern reach-based control placement."
+          "id": "a",
+          "text": "Human dimensions affect reach, furniture, and space needed for movement, activity, and rest."
         },
         {
-          "id": "B",
-          "text": "Static dimensions are measured in a fixed standardized posture; dynamic dimensions are measured during task performance. Dynamic (functional) reach — typically 10–20% larger than static — governs reach-based control positioning."
+          "id": "b",
+          "text": "Del Prado-Lu tables were verified as the primary raw source in this batch."
         },
         {
-          "id": "C",
-          "text": "Static and dynamic dimensions are identical in value; the distinction is purely terminological with no practical design consequence."
+          "id": "c",
+          "text": "A 1.50 m to 1.85 m range is the legal source for all Filipino users."
         },
         {
-          "id": "D",
-          "text": "Static dimensions govern clearance design; dynamic dimensions are used only for structural engineering calculations, not architectural anthropometrics."
+          "id": "d",
+          "text": "BIFMA is the checked local raw PDF authority."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Static dimensions are measured in fixed standardized postures; dynamic (functional) dimensions are measured during tasks. Functional reach is 10–20% larger than static reach and is the correct data type for positioning controls and shelves.",
-        "explanation": "Anthropometric dimension types: Static (Structural) = measured in a standardized, fixed posture (e.g., stature measured standing erect, no shoes). Dynamic (Functional) = measured during task performance, accounting for body movement. Key rule: dynamic dimensions are typically 10–20% larger than static equivalents. For reach-based design (controls, switches, shelves), functional reach data must be used — not static arm length — because users rotate, lean, and extend during actual reach tasks. Option A reverses the definitions. Option C incorrectly claims the values are identical. Option D incorrectly limits dynamic dimensions to structural engineering.",
-        "common_misconceptions": [
-          "Using static arm length data instead of functional reach data when positioning controls and shelving",
-          "Assuming static and dynamic dimensions are numerically equivalent"
-        ]
-      },
+      "rationale": "Human dimensions affect reach, furniture, and space needed for movement, activity, and rest. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests understanding of the static vs. dynamic dimension distinction and its application to reach-based design.",
       "code_citation": null,
       "bloom_level": "understand",
@@ -606,45 +529,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.919016+00:00",
       "content_hash": "sha256:0550593a9d9e857b82fd72bdbe04716f750c76fec8b4bf8e616eda7b2fb70488"
     },
     {
       "question_id": "ca99ab71-d683-4bde-99c4-cf22b185c48b",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "In ergonomic design, why is designing for the 50th percentile ('average') person considered an error, and what is the correct design approach?",
+      "text": "Under the checked BP 344 2024 source, where is a manual switch installed?",
       "options": [
         {
-          "id": "A",
-          "text": "The 50th percentile is statistically unstable; ergonomics requires designing for the 99th percentile to ensure maximum coverage across all user populations, avoiding exclusion"
+          "id": "a",
+          "text": "1200 mm above the floor to the center of the switch plate."
         },
         {
-          "id": "B",
-          "text": "The 50th percentile is appropriate for reach-based design; the 95th percentile is used only for hazardous clearance calculations such as fire exit widths, ensuring safety"
+          "id": "b",
+          "text": "1500 mm above the floor to the center of the switch plate."
         },
         {
-          "id": "C",
-          "text": "Designing for the 50th percentile excludes approximately half the population on either side; correct practice uses 5th percentile for reach-based elements and 95th percentile for clearance elements"
+          "id": "c",
+          "text": "900 mm above the floor because door width is 900 mm."
         },
         {
-          "id": "D",
-          "text": "The 50th percentile should be used for all residential design; the 5th–95th range applies only to institutional and commercial occupancies, which have different requirements"
+          "id": "d",
+          "text": "450 mm above the floor because toilet-seat height is 450 mm."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The 50th percentile is the median — designing for it excludes approximately 50% of users on each extreme. Correct practice: 5th percentile for reach (smallest person can access it = everyone can); 95th percentile for clearance (largest person fits = everyone fits).",
-        "explanation": "The 'average person fallacy': the 50th percentile is statistically the median, meaning roughly half the population is shorter/smaller and half is taller/larger. A control placed at average reach height excludes shorter users. An aisle sized for average shoulder breadth excludes wider users. The REACH-CLEAR Rule: REACH elements (switches, shelves, controls) → design for 5th percentile (smallest reach sets the upper limit); CLEARANCE elements (doors, aisles, knee space) → design for 95th percentile (largest body sets the minimum space). Option A incorrectly advocates the 99th percentile, which would over-design most elements. Options C and D incorrectly limit the 5th–95th approach.",
-        "common_misconceptions": [
-          "Believing the 'average' person is a safe design target — it excludes approximately half the intended user population",
-          "Reversing the rule: applying 95th percentile to reach elements and 5th percentile to clearance elements"
-        ]
-      },
+      "rationale": "1200 mm above the floor to the center of the switch plate. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests understanding of the fundamental 5th–95th percentile design principle and why the average is an incorrect target.",
       "code_citation": null,
       "bloom_level": "understand",
@@ -657,45 +573,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.909168+00:00",
       "content_hash": "sha256:614b0e34cb2b39101f11b9eca7cec8d6369013f848996aeea02ae2599cd66378"
     },
     {
       "question_id": "4bbdb766-6e23-464f-abc3-3d8ccf31897e",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "An open-plan office in Manila is designed with 120 cm high partitions. A Filipino mlea at the 95th percentile has a seated eye height of approximately 123 cm from the floor (seat 43 cm + eye above seat 80 cm). What is the effect of 120 cm partitions on this user?",
+      "text": "Which accessible route/pathway width is source-backed in this article?",
       "options": [
         {
-          "id": "A",
-          "text": "The 120 cm partition is above his seated eye height of 123 cm, providing complete visual privacy while seated, which is ideal for focused work environments"
+          "id": "a",
+          "text": "1500 mm minimum for sidewalks, walkways, and pathways."
         },
         {
-          "id": "B",
-          "text": "The 120 cm partition has no effect on sightlines — seated eye height calculations do not apply to partition design in Philippine offices, as they are based on different ergonomic standards"
+          "id": "b",
+          "text": "5000 mm minimum for every pathway."
         },
         {
-          "id": "C",
-          "text": "The 120 cm partition exactly matches his seated eye height, creating a perfect privacy-communication balance for all Filipino male occupants, ensuring both privacy and interaction"
+          "id": "c",
+          "text": "400 mm to 600 mm for every pathway."
         },
         {
-          "id": "D",
-          "text": "The 120 cm partition is slightly below his seated eye height of 123 cm, allowing him to see over it when seated — providing limited privacy but enabling visual communication"
+          "id": "d",
+          "text": "750 mm minimum for two wheelchairs to pass."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Filipino male 95th% seated eye height ≈ 123 cm from floor. A 120 cm partition is 3 cm below his eye level — he can see over it when seated, providing limited privacy while allowing standing communication.",
-        "explanation": "Seated eye height calculation for Filipino male 95th%: seat height = 43 cm + seated eye height above seat = 80.0 cm (Del Prado-Lu, 2007) → floor-to-eye = 123 cm. A 120 cm partition is 3 cm below this eye level — meaning the tallest 5% of Filipino male occupants can see over the partition while seated. For average Filipino males (floor-to-eye ≈ 43 + 73.4 = 116.4 cm), the 120 cm partition blocks seated sightlines, providing privacy. This is the classic 'privacy with visibility' partition design for open-plan offices — low enough to see over when standing, high enough to block seated sightlines for most users. Option A incorrectly states 120 cm exceeds 123 cm. Option C incorrectly claims the values are equal.",
-        "common_misconceptions": [
-          "Assuming a 120 cm partition blocks sightlines for all Filipino male occupants when the 95th percentile seated eye height (123 cm) exceeds it",
-          "Confusing 120 cm partition height with 120 cm seated eye height"
-        ]
-      },
+      "rationale": "1500 mm minimum for sidewalks, walkways, and pathways. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests application of Filipino seated eye height data to open-plan office partition design.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -708,45 +617,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.912895+00:00",
       "content_hash": "sha256:da5e2241627537570244c78c085ba85efdeb41efa8195c6d38e84e62a782c7c9"
     },
     {
       "question_id": "214e680d-73d1-44e5-bd20-9095f007550f",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A designer places a high storage shelf at 233 cm (US mlea 95th% overhead reach) in a community center in Quezon City. What proportion of Filipino femlea users would be unable to reach this shelf without step aids?",
+      "text": "Why are population-specific anthropometric tables not included in this Batch 053 rewrite?",
       "options": [
         {
-          "id": "A",
-          "text": "None — Filipino female overhead reach exceeds 233 cm at the 50th percentile, making the shelf universally accessible, which is a common misconception"
+          "id": "a",
+          "text": "Their primary raw sources were not part of the selected local raw PDF families."
         },
         {
-          "id": "B",
-          "text": "Approximately 5% — only Filipino females at or below the 5th percentile (183.0 cm overhead reach) cannot reach 233 cm, indicating a small minority"
+          "id": "b",
+          "text": "They are always invalid for architecture."
         },
         {
-          "id": "C",
-          "text": "Approximately 50% — the mean Filipino female overhead reach (196.5 cm) falls exactly at the 50th percentile, so half cannot reach 233 cm, highlighting a significant accessibility issue"
+          "id": "c",
+          "text": "They were verified by BP 344 parking tables."
         },
         {
-          "id": "D",
-          "text": "The vast majority — Filipino female 5th% overhead reach is 183 cm and mean is 196.5 cm; a 233 cm shelf is beyond reach for essentially all Filipino women without assistance"
+          "id": "d",
+          "text": "They belong only in structural analysis."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Filipino female 5th% overhead reach = 183 cm; mean = 196.5 cm; 95th% = 211 cm. A shelf at 233 cm exceeds even the Filipino female 95th% overhead reach of 211 cm — virtually all Filipino women cannot reach it without step aids.",
-        "explanation": "Del Prado-Lu (2007) Filipino female overhead fingertip reach: 5th% = 183.0 cm; mean = 196.5 cm; 95th% = 211.0 cm. A shelf at 233 cm is above the 95th percentile for Filipino women — meaning more than 95% of Filipino women cannot reach it. The US male 95th% overhead reach (~233 cm) is the result of designing for the largest US user, but this dimension is inaccessible to essentially all Filipino women and even exceeds Filipino male 95th% reach (224.9 cm). Option B confuses the 5th% lower tail with the upper reach limit. Option D is numerically wrong about the mean.",
-        "common_misconceptions": [
-          "Applying US male 95th% overhead reach as the upper shelf limit in Philippine design contexts",
-          "Assuming the Filipino female mean overhead reach (~196.5 cm) is near 233 cm"
-        ]
-      },
+      "rationale": "Their primary raw sources were not part of the selected local raw PDF families. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests analysis of the reach gap between US mlea 95th% overhead reach and Filipino femlea reach data.",
       "code_citation": null,
       "bloom_level": "analyze",
@@ -759,45 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.917859+00:00",
       "content_hash": "sha256:3aa5b5637f7725693b1666cb9f44f9a894b9f9144674a042738c5e4f98b672fa"
     },
     {
       "question_id": "bcd66801-cf78-4543-8b83-a49b5c1bc09a",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "The cross-cultural anthropometric gap between Filipino and US users is largest for which dimension category, and smallest for which — and what does this mean for Philippine architectural practice?",
+      "text": "What does the checked Furniture Reviewer source identify as anthropometrics?",
       "options": [
         {
-          "id": "A",
-          "text": "Largest gap in popliteal height (~8 cm); smallest gap in stature (~0 cm). Seat heights need Filipino-specific standards; door heights can use US standards directly."
+          "id": "a",
+          "text": "The study dealing with human measurements."
         },
         {
-          "id": "B",
-          "text": "Largest gap in sitting height (~15 cm); smallest gap in shoulder breadth (~1 cm). Desk heights need major adjustment but aisle widths can follow US standards."
+          "id": "b",
+          "text": "The study of metal lath thickness."
         },
         {
-          "id": "C",
-          "text": "Largest gap in standing stature and eye height (~8–10 cm); smallest gap in popliteal height (~0 cm). Overhead reach, door height, and shelf placement require population-specific data; seat height is relatively transferable between populations."
+          "id": "c",
+          "text": "The study of legal privileges and incentives."
         },
         {
-          "id": "D",
-          "text": "Gaps are uniformly distributed across all dimensions at approximately 8 cm; all US standards require the same proportional reduction of 5% for Philippine application."
+          "id": "d",
+          "text": "The study of fire exits only."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The largest Filipino–US gaps are in standing stature and eye height (~8–10 cm). Popliteal height is nearly identical between populations (difference ≈ 0 cm). This means seat height is relatively transferable, but overhead reach, door design, and shelf placement require Filipino-specific data.",
-        "explanation": "Key cross-cultural comparisons from the article: Male 95th% stature gap = 186.7 − 178.0 = 8.7 cm (large). Male 95th% standing eye height gap = 174.3 − 166.0 = 8.3 cm (large). Male 50th% popliteal height: US = 43.3 cm, PH = 43.3 cm (identical). The critical insight: sitting-height-derived dimensions (popliteal height → seat height) are largely transferable across populations; standing-height-derived dimensions (stature → door height, overhead reach → shelf placement, eye height → sightlines) require population-specific calibration. This is the foundational principle for applying Filipino anthropometric data selectively in Philippine architectural practice.",
-        "common_misconceptions": [
-          "Assuming all anthropometric gaps between Filipino and US populations are equal in magnitude",
-          "Thinking popliteal height differences are large when they are nearly identical between the two populations"
-        ]
-      },
+      "rationale": "The study dealing with human measurements. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests evaluative synthesis of which anthropometric dimensions require Filipino-specific standards versus which can use US data reliably.",
       "code_citation": null,
       "bloom_level": "evaluate",
@@ -810,45 +705,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.923825+00:00",
       "content_hash": "sha256:ded77f5d0c05ef29c968868ecdaf0a70b885dbc9b21e8b86f93b3e7da8464b47"
     },
     {
       "question_id": "0b9a3fab-d66e-418f-b203-72903b7017a4",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A Philippine accessible building must comply with BP 344. At what maximum height from the floor must light switches, outlets, and controls be placed to be accessible from a wheelchair, and what body dimension governs this limit?",
+      "text": "Which statement is source-safe for Standard Human Body Dimensions in Batch 053?",
       "options": [
         {
-          "id": "A",
-          "text": "Maximum 120 cm — based on wheelchair user forward reach limit; this is the BP 344 accessible control placement standard"
+          "id": "a",
+          "text": "Human dimensions affect reach, furniture, and space needed for movement, activity, and rest."
         },
         {
-          "id": "B",
-          "text": "Maximum 155 cm — based on Filipino female mean standing overhead reach, ensuring most standing users can reach controls from below"
+          "id": "b",
+          "text": "Del Prado-Lu tables were verified as the primary raw source in this batch."
         },
         {
-          "id": "C",
-          "text": "Maximum 183 cm — based on Filipino female 5th percentile overhead standing reach, setting the absolute upper limit for all Philippine controls"
+          "id": "c",
+          "text": "A 1.50 m to 1.85 m range is the legal source for all Filipino users."
         },
         {
-          "id": "D",
-          "text": "Maximum 140 cm — based on seated Filipino female eye height, ensuring controls are within the visual field of wheelchair users"
+          "id": "d",
+          "text": "BIFMA is the checked local raw PDF authority."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 requires accessible controls at a maximum of 120 cm from the floor, governed by wheelchair user forward reach — not ambulatory standing reach.",
-        "explanation": "BP 344 accessible control placement: light switches, outlets, and intercom buttons must be ≤ 120 cm from the floor. The governing dimension is wheelchair user forward reach, not standing adult reach. The US ADA equivalent is ≤ 48 inches (121.9 cm) — nearly identical. Option A (155 cm) is the Filipino female mean standing eye height — irrelevant to wheelchair reach. Option C (183 cm) is the Filipino female 5th percentile standing overhead reach — relevant for ambulatory upper shelf limits, not accessible controls. Option D (140 cm) has no direct code basis.",
-        "common_misconceptions": [
-          "Confusing ambulatory standing reach limits with wheelchair forward reach limits for control placement",
-          "Using the Filipino female 5th percentile overhead reach (183 cm) as the accessible control height maximum"
-        ]
-      },
+      "rationale": "Human dimensions affect reach, furniture, and space needed for movement, activity, and rest. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests application of the BP 344 accessible control placement standard and its anthropometric basis.",
       "code_citation": "BP 344 IRR",
       "bloom_level": "apply",
@@ -861,45 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.922732+00:00",
       "content_hash": "sha256:ded1d6acf35a7d9399dff83d7379545824b8de8e4760bbcd1d153c247869a23f"
     },
     {
       "question_id": "6d1b638c-2ff8-4916-b2d8-1f708fcd02db",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "Filipino mlea and US mlea mean popliteal heights are both 43.3 cm (Del Prado-Lu, 2007; NHANES/ANSUR). However, the Philippine recommended seat height range (38–45 cm) is lower than the US BIFMA range (43.2–48.3 cm). Why does this discrepancy exist if the mlea means are identical?",
+      "text": "Under the checked BP 344 2024 source, where is a manual switch installed?",
       "options": [
         {
-          "id": "A",
-          "text": "The Philippine range extends lower because Filipino classrooms and offices have a higher proportion of users in the 36–42 cm popliteal range (shorter women, children) compared to the US population distribution"
+          "id": "a",
+          "text": "1200 mm above the floor to the center of the switch plate."
         },
         {
-          "id": "B",
-          "text": "The discrepancy is an error — since male means are identical, the seat height ranges should be identical; Philippine furniture makers should adopt BIFMA standards without deviation"
+          "id": "b",
+          "text": "1500 mm above the floor to the center of the switch plate."
         },
         {
-          "id": "C",
-          "text": "BIFMA standards are based on 95th percentile dimensions exclusively; Philippine standards are based on 5th percentile dimensions, explaining the range difference in ergonomic design"
+          "id": "c",
+          "text": "900 mm above the floor because door width is 900 mm."
         },
         {
-          "id": "D",
-          "text": "The Philippine range is lower because Filipino males sit on a different posture pattern than US males, requiring lower seat heights for the same popliteal height due to cultural seating habits"
+          "id": "d",
+          "text": "450 mm above the floor because toilet-seat height is 450 mm."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Although male means are identical, the Philippine seat range extends lower because Filipino contexts include a higher proportion of shorter-statured women and children whose popliteal heights fall in the 36–42 cm range — below the BIFMA minimum of 43.2 cm.",
-        "explanation": "The male means are identical (43.3 cm for both populations). The issue is population composition and the design target. In a Filipino school or workplace, the user population includes Filipino women (5th% popliteal = 36.0 cm, mean = 40.3 cm) — both values fall below the BIFMA minimum of 43.2 cm. A BIFMA-standard chair at 43.2 cm minimum height leaves Filipino women at or below the mean with feet dangling. The Philippine range of 38–45 cm accommodates the full Filipino user distribution from shorter women to average men. US BIFMA was designed for the US population distribution, which has a different female lower-end distribution. Option A incorrectly equates identical male means with identical design ranges.",
-        "common_misconceptions": [
-          "Assuming identical male mean popliteal heights mean the seat height ranges should also be identical",
-          "Ignoring the role of female and child users in setting the lower bound of seat height ranges for public/institutional seating"
-        ]
-      },
+      "rationale": "1200 mm above the floor to the center of the switch plate. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests analytical understanding of why identical mlea means produce different recommended seat height ranges in two populations.",
       "code_citation": null,
       "bloom_level": "analyze",
@@ -912,45 +793,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.921291+00:00",
       "content_hash": "sha256:2c631d6b51beb7645468073d11fdf3165e267b934b31818ce12ef489cac781f0"
     },
     {
       "question_id": "35c76da4-4c3d-4741-a231-2f22617092b6",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "According to Del Prado-Lu (2007), what is the Filipino femlea 5th percentile stature, and what specific design consequence follows from using the incorrect value of 150 cm instead of the correct figure?",
+      "text": "Which accessible route/pathway width is source-backed in this article?",
       "options": [
         {
-          "id": "A",
-          "text": "Filipino female 5th% stature = 150.0 cm; this value is confirmed by both Del Prado-Lu and NHANES data as the lower bound for Asian women"
+          "id": "a",
+          "text": "1500 mm minimum for sidewalks, walkways, and pathways."
         },
         {
-          "id": "B",
-          "text": "Filipino female 5th% stature = 143.0 cm; using 150 cm as the design floor makes controls and shelves inaccessible to the shortest 5% of Filipino women who are shorter than 150 cm"
+          "id": "b",
+          "text": "5000 mm minimum for every pathway."
         },
         {
-          "id": "C",
-          "text": "Filipino female 5th% stature = 152.8 cm; this matches the US female 5th% stature, confirming that one standard can serve both populations"
+          "id": "c",
+          "text": "400 mm to 600 mm for every pathway."
         },
         {
-          "id": "D",
-          "text": "Filipino female 5th% stature = 143.0 cm; this is only relevant for outdoor space design; interior architectural minimums use the 50th percentile as the design floor"
+          "id": "d",
+          "text": "750 mm minimum for two wheelchairs to pass."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Del Prado-Lu (2007) reports Filipino female 5th% stature = 143.0 cm. Using 150 cm as the design floor excludes all Filipino women shorter than 150 cm — roughly the bottom 15–20% of the Filipino female population.",
-        "explanation": "Del Prado-Lu (2007) Filipino female stature data: 5th% = 143.0 cm, mean = 153.9 cm, 95th% = 165.0 cm. The US female 5th% = 152.8 cm (NHANES) — nearly 10 cm taller than the Filipino 5th%. If a designer uses 150 cm as the 'lower bound' for Filipino women (a common error from unchecked sources), they exclude Filipino women with stature between 143–150 cm — approximately the bottom 15% of the Filipino female distribution. This means reach elements (shelves, controls) designed for 150 cm minimum reach height would be inaccessible to this population segment. Option B incorrectly cites 150 cm as the verified value. Option C applies the US female 5th% value to the Filipino population.",
-        "common_misconceptions": [
-          "Using 150 cm as the Filipino female design lower bound when the actual 5th% is 143 cm",
-          "Assuming US female 5th% stature (152.8 cm) is interchangeable with Filipino female 5th% (143.0 cm)"
-        ]
-      },
+      "rationale": "1500 mm minimum for sidewalks, walkways, and pathways. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests recall of the correct Filipino femlea 5th percentile stature and the consequence of using an incorrect value.",
       "code_citation": "Del Prado-Lu (2007)",
       "bloom_level": "remember",
@@ -963,45 +837,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.902593+00:00",
       "content_hash": "sha256:522ea8facc12a6ebb328dffb41e8207842b3c09be2833914e349ee2751866446"
     },
     {
       "question_id": "3efd4b6b-bec2-476c-9db0-a8faf884697f",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096 sets the minimum standard door height at 2.10 m. Filipino mlea 95th percentile stature is 178.0 cm. Why is the standard 2.10 m rather than 1.98 m (178 cm + 20 cm clearance)?",
+      "text": "Why are population-specific anthropometric tables not included in this Batch 053 rewrite?",
       "options": [
         {
-          "id": "A",
-          "text": "2.10 m was adopted from the US 7-foot standard and converted to metric without anthropometric verification for the Filipino population, leading to a mismatch with local needs"
+          "id": "a",
+          "text": "Their primary raw sources were not part of the selected local raw PDF families."
         },
         {
-          "id": "B",
-          "text": "1.98 m would be sufficient but PD 1096 rounds all dimensions to the nearest 10 cm, making 2.00 m the true minimum and 2.10 m an error, reflecting a lack of precision in code drafting"
+          "id": "b",
+          "text": "They are always invalid for architecture."
         },
         {
-          "id": "C",
-          "text": "2.10 m provides a larger clearance buffer for dynamic movement (carrying objects, wearing hats, head tilt), accommodates visiting taller populations, and ensures the code minimum sets a comfortable rather than a minimal floor"
+          "id": "c",
+          "text": "They were verified by BP 344 parking tables."
         },
         {
-          "id": "D",
-          "text": "2.10 m is required because Filipino males at the 95th percentile wear shoes adding approximately 3 cm to stature, making 181 cm + 29 cm clearance the governing dimension, ensuring safety and comfort"
+          "id": "d",
+          "text": "They belong only in structural analysis."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "2.10 m exceeds the raw 95th% + 20 cm clearance calculation to account for dynamic movement (carrying boxes, head tilt), accommodate taller visiting populations, and establish the code minimum as a comfortable design floor.",
-        "explanation": "The article's principle: 'The code minimum sets the floor; good design may exceed it.' While 178 cm + 20 cm = 198 cm would technically clear the Filipino 95th% male, 2.10 m provides: (1) clearance for dynamic movement (tilting head, carrying objects overhead); (2) accommodation for taller international visitors (US male 95th% = 186.7 cm → 186.7 + 20 = 206.7 cm, rounded up to 210 cm); (3) a buffer that prevents the code minimum from being uncomfortably close to the actual body dimension. This is the principle of 'generous code minimums' — they are set higher than the raw calculation to ensure usability. Option A is a historical misattribution without support in the article.",
-        "common_misconceptions": [
-          "Thinking PD 1096 should set door heights exactly at 95th% stature + 20 cm clearance with no additional buffer",
-          "Assuming the PD 1096 2.10 m standard was copied from US standards without Philippine anthropometric consideration"
-        ]
-      },
+      "rationale": "Their primary raw sources were not part of the selected local raw PDF families. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests analysis of why code minimums exceed raw anthropometric calculations.",
       "code_citation": "PD 1096",
       "bloom_level": "analyze",
@@ -1014,45 +881,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.916555+00:00",
       "content_hash": "sha256:ad85e544b65cd2f6f1109f4d5924483b3b50c9ed296cb538e7f0428351f5c45b"
     },
     {
       "question_id": "4f4f9e43-4cb6-4013-9c55-0473a89c6b6f",
       "article_id": "36f5bf84-00c5-4534-a716-a05371ac8d23",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "What is the 95th percentile stature for Filipino mleas and US mleas according to Del Prado-Lu (2007) and NHANES/ANSUR data respectively, and what is the architectural significance of the gap?",
+      "text": "What does the checked Furniture Reviewer source identify as anthropometrics?",
       "options": [
         {
-          "id": "A",
-          "text": "PH male 95th%: 185.0 cm; US male 95th%: 186.7 cm — nearly identical, so US door height standards apply without modification in the Philippines"
+          "id": "a",
+          "text": "The study dealing with human measurements."
         },
         {
-          "id": "B",
-          "text": "PH male 95th%: 178.0 cm; US male 95th%: 186.7 cm — an 8.7 cm gap meaning US standards for overhead clearance are generous for Filipino users but insufficient if applied to taller visiting populations"
+          "id": "b",
+          "text": "The study of metal lath thickness."
         },
         {
-          "id": "C",
-          "text": "PH male 95th%: 178.0 cm; US male 95th%: 180.0 cm — a minor 2 cm gap with no practical design significance, allowing for standardization"
+          "id": "c",
+          "text": "The study of legal privileges and incentives."
         },
         {
-          "id": "D",
-          "text": "PH male 95th%: 167.0 cm (population mean); US male 95th%: 186.7 cm — the Filipino mean is used in place of the 95th percentile for Philippine design, which may not accommodate taller individuals"
+          "id": "d",
+          "text": "The study of fire exits only."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Filipino male 95th% stature = 178.0 cm (Del Prado-Lu, 2007); US male 95th% = 186.7 cm (NHANES/ANSUR) — an 8.7 cm gap that is significant for door height, overhead storage, and clearance design.",
-        "explanation": "Del Prado-Lu (2007) n=1,805 Filipino workers: male 95th% stature = 178.0 cm. NHANES/ANSUR US data: male 95th% = 186.7 cm. The 8.7 cm gap means a door clearance sized for the US 95th% (e.g., 213 cm / 7ft 0in) provides generous headroom for Filipino users. But PD 1096 sets the Philippine door minimum at 2.10 m — which is 178 cm + 32 cm clearance buffer, more than adequate. Using the Filipino mean (167 cm, Option D) as a design target excludes the tallest 50% of Filipino male users — a classic 'average person fallacy' error.",
-        "common_misconceptions": [
-          "Using the Filipino male mean stature (167 cm) as the design target rather than the 95th percentile (178 cm)",
-          "Assuming the US and Filipino 95th percentile statures are nearly identical when they differ by 8.7 cm"
-        ]
-      },
+      "rationale": "The study dealing with human measurements. This answer is supported by the checked Batch 053 local raw PDF source families for Standard Human Body Dimensions.",
       "explanation": "This question tests recall of the specific stature data values and their architectural significance.",
       "code_citation": "Del Prado-Lu (2007); NHANES/ANSUR",
       "bloom_level": "remember",
@@ -1065,7 +925,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.221754+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.907867+00:00",
       "content_hash": "sha256:5eae69592e93e5db08ee9a22adea586319ab1059cec95cd25d805b4ae33e74e7"
     }
   ]

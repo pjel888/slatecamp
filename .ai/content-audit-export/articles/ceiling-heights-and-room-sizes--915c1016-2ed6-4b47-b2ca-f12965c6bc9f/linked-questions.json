@@ -33,8 +33,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This question tests the ability to derive occupancy density from the air space standard. The volumetric minimum (14.00 cu.m/person) operates as an occupancy LIMITE — you can have fewer people but not more. The floor area minimum (6.00 sq.m) and least dimension (2.00 m) are separate geometric minimums. This room meets the area minimum (12 sq.m > 6 sq.m) and dimension minimum, but the air space limit restricts occupancy to 2 persons.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -45,7 +45,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.399631+00:00",
       "content_hash": "sha256:5f64f3225ddde50344e7a2459f5b137b8ba0fb7542d647e3e8cd5af41e087e63"
     },
     {
@@ -77,8 +77,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The two-part rule (percentage + absolute minimum) applies to both habitable rooms (10%, min 1.00 sq.m) and wet rooms (5%, min 240 sq mm). For wet rooms, even a very small bathroom with 0.20 sq.m floor area must have at least 240 sq mm of window opening.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -89,7 +89,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.359330+00:00",
       "content_hash": "sha256:a1654ed3fba369f63ca225c44b43c59dbb5b765499b78589df99e6ddabc98cb6"
     },
     {
@@ -121,8 +121,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The descending ceiling height chain: 2.70 m (first floor / natural vent) → 2.40 m (second floor / single-storey) → 2.10 m (third floor and above) → 1.80 m (mezzanine clearance). Option A (2.40 m) is the second storey minimum. Option D (1.80 m) is the mezzanine clearance. The progressive reduction is the key memory structure.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -133,7 +133,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.350220+00:00",
       "content_hash": "sha256:bda1cfeb69fc964b7b388180e63125e5fe7fd553582ec87e49d8cc8e046ba0da"
     },
     {
@@ -165,8 +165,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This question is frequently confused with the single-storey artificial ventilation minimum (2.40 m). The first floor of multi-storey artificially ventilated buildings requires 2.70 m — the same as natural ventilation. The elevated requirement for the first storey reflects its higher occupant density and functional complexity compared to upper residential floors.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -177,7 +177,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.395990+00:00",
       "content_hash": "sha256:dfde575b852b9c90c75f97f20f1a86cbaa46137fa78d32ad451346ff7b5addba"
     },
     {
@@ -209,8 +209,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The three-tier air space hierarchy: 3.00 cu.m (schools) < 12.00 cu.m (offices/workshops) < 14.00 cu.m (habitable rooms). The habitable room standard is the highest because unconscious occupants during sleep are most vulnerable to CO₂ accumulation. The IBC/ASHRAE uses airflow rate (cfm) instead of volumetric standards — a key PH vs. USA distinction.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -221,7 +221,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.368058+00:00",
       "content_hash": "sha256:1c3056185d8a909c772cc59f4552fc69436c894c285782ccc7c7083cde607949"
     },
     {
@@ -253,8 +253,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Option A (2.40 m) is the artificial ventilation minimum for single-storey buildings — the most common trap. The natural ventilation standard is universally 2.70 m regardless of storey. The exam frequently swaps 'single-storey' with 'multi-storey first floor' to trigger this confusion — both require 2.70 m, but for different reasons.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -265,7 +265,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.348497+00:00",
       "content_hash": "sha256:ed2e522a7cc1bafcae045594871001ea7f5215ee0eedce0c7f2b663d06391b11"
     },
     {
@@ -297,8 +297,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This question forces candidates to check ALL three standards independently: floor area (Sec. 806), ceiling height (Sec. 805), and air space (Sec. 807). A room can pass two standards and fail the third. The 6.50 sq.m / 2.10 m combination fails air space even though it passes area and might pass ceiling height. The lesson: always check every applicable standard independently.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -309,7 +309,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.406634+00:00",
       "content_hash": "sha256:a57135f4090aa5be0a12a6d4e5ffbe13769c045b9afd5593a90434c8a12211d2"
     },
     {
@@ -341,8 +341,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The CHAIN mnemonic: C → 2.40 m Ceiling height for artificial vent (single-storey or 2nd floor); H → 2.70 m Height for natural vent and first floor of multi-storey; A → 2.10 m Above second floor; I → 1.80 m In mezzanine. The 2.40 m single-storey artificial vent is the baseline minimum, not the 2.70 m.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -353,7 +353,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.366325+00:00",
       "content_hash": "sha256:3851907f727859fcf406ceef016b654566fee3d18594e9fb032f8ada4fb23b88"
     },
     {
@@ -385,8 +385,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The tiered ceiling height standard for multi-storey artificially ventilated buildings is frequently tested. Candidates must distinguish: (1) 2.70 m for natural ventilation ALL floors; (2) 2.70 m for FIRST floor of multi-storey artificial vent; (3) 2.40 m for SECOND floor; (4) 2.10 m for THIRD floor and above. The second-floor minimum is the same as single-storey artificial ventilation.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -397,7 +397,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.355755+00:00",
       "content_hash": "sha256:682f154d68eac7153b919c4c45829b8486805bd8cfe799c6e3d2cba8fc44440e"
     },
     {
@@ -429,8 +429,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The 1.80 m clearance applies to BOTH sides of the mezzanine. Option A (1.50 m) is a confusion with other minimum thresholds. Option C (2.10 m) is the minimum headroom for the third storey and above. Option D (2.40 m) is the ceiling height for artificially ventilated rooms on the second floor. The IBC requires 7 ft (2.13 m) below the mezzanine — 330 mm more than the Philippine requirement.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -441,7 +441,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.383802+00:00",
       "content_hash": "sha256:26c1f801f1cebfb07c966c1a9cd835072ad011646b65c883227df05d1547a1ee"
     },
     {
@@ -473,8 +473,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The double-check requirement for mezzanines means that the total floor-to-floor height must be at least 3.60 m (1.80 m above + 1.80 m below) — plus structural floor thickness. A developer who wants a mezzanine in a 3.00 m floor-to-floor building cannot do so in compliance with Rule VIII.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -485,7 +485,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.369804+00:00",
       "content_hash": "sha256:784e39955f2329666b12709a890c196a524a0ed43ad0e9a1e3962560011621ca"
     },
     {
@@ -517,8 +517,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "You cannot 'borrow' the lower artificial-ventilation ceiling standard for naturally ventilated rooms. If a room relies on natural ventilation, the minimum ceiling is 2.70 m on every floor — this is a common Trap Alert.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -529,7 +529,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.342286+00:00",
       "content_hash": "sha256:074e1cf842b2645e0d064faf7317731a8805cd63f2453511608035762b6e5493"
     },
     {
@@ -561,8 +561,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This question distinguishes between code text and reviewer heuristics. The board exam tests whether candidates can correctly cite the code versus repeat common lecture approximations. The cascade (2.70 → 2.40 → 2.10) exists in some review materials but is not the codified standard.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -573,7 +573,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.385542+00:00",
       "content_hash": "sha256:e046775c51695bf849928699f4691bdd452635934ac3f0031ebb1c8206a7f129"
     },
     {
@@ -605,8 +605,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Worked example from the article: 60 sq.m school room at 3.00 m ceiling height → volume 180 cu.m → 180/3 = 60 students max. At 2.70 m ceiling → 162 cu.m → 162/3 = 54 students. The air space calculation determines maximum occupancy independent of floor area ratios.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -617,7 +617,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.382079+00:00",
       "content_hash": "sha256:1e6385b3e218b7d40a96d4c896879b4ac92cc3842e73fe087b872fa44886f606"
     },
     {
@@ -649,8 +649,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "This worked example demonstrates when each constraint binds: at higher ceilings, floor area may be the binding constraint; at lower ceilings (approaching 2.70 m), air space becomes the binding constraint. The candidate must calculate both and use the more restrictive.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -661,7 +661,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.361087+00:00",
       "content_hash": "sha256:2e61281c561409369dd5a625bd0d8ccfb0f1c3f2767eb4a8b0be5375b98a9ff8"
     },
     {
@@ -693,8 +693,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The 10% of 10 sq.m = 1.00 sq.m threshold is a frequently tested calculation. The thermal stability test (65°C for 15 minutes) is a separate requirement that applies once the rule is triggered.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -705,7 +705,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.702597+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.401357+00:00",
       "content_hash": "sha256:ff63ce53547a80237aa0dffd26a98f8f631d0341bb7800db5fdf4109f5662524"
     },
     {
@@ -737,8 +737,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The 2.40 m ceiling height ensures adequate volume for ventilation and equipment clearance. The 1-hour fire-resistive rating reflects the fire hazard of the projection equipment and film stock while recognizing that the room is typically a small ancillary space within a larger fire-resistive building. Note that the proscenium wall (Sec. 1213.4) requires 2-hour rating — do not confuse the two requirements.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -749,7 +749,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:19.019496+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.357626+00:00",
       "content_hash": "sha256:0d98562194efb849f707cb99edd79abd7b6b6fe0cbbe9199cf4564bdc97de390"
     },
     {
@@ -781,8 +781,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Bathroom requirements: floor area ≥1.20 sq.m (this bathroom has 1.30 sq.m — PASSES); minimum dimension ≥900 mm (1.00 m × 1.30 m — both sides exceed 900 mm — PASSES); ventilation opening ≥5% of floor area with absolute minimum 240 sq.mm for wet rooms. At 200 sq.mm the louvre is below the 240 sq.mm absolute minimum — FAILS ventilation only. Option C is wrong: 900 mm, not 1.20 m, is the minimum dimension for bathrooms. Option A uses the wrong area threshold (1.50 sq.m is for kitchens in dimension, not bathrooms).",
-      "explanation": "Bathroom dimension minimum is 900 mm, not 1.20 m. Wet room ventilation minimum is 240 sq.mm absolute. This question tests whether candidates correctly apply bathroom-specific thresholds rather than defaulting to habitable room standards.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 806, 808",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -793,7 +793,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.362848+00:00",
       "content_hash": "sha256:8cf7629e51ed7afe6f09dfcea137c73f6d1ddb9327b0ac6614dca0cc377fc134"
     },
     {
@@ -825,8 +825,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 805 permits a reduced ceiling height of 2.40 m for single-storey buildings with artificial ventilation. This is less than the 2.70 m required for natural ventilation. The 2.10 m minimum applies only to the 3rd floor and above in artificially ventilated multi-storey buildings. For a single-storey artificially ventilated building, 2.40 m is the correct minimum.",
-      "explanation": "Single-storey + artificial ventilation = 2.40 m minimum. Multi-storey + artificial ventilation = staggered 2.70/2.40/2.10. The 2.10 m figure only applies to 3rd floor and above in multi-storey artificially ventilated buildings — not to single-storey structures.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
@@ -837,7 +837,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.380358+00:00",
       "content_hash": "sha256:e564eb721a63797af09d7f44765a4f551f232b6d9d0974b7913075a7ebd5bf12"
     },
     {
@@ -869,8 +869,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Kitchen minimums: 3.00 sq.m AND 1.50 m minimum dimension. This kitchen is 2.52 sq.m (fails area) and 0.90 m wide (fails dimension — both violations). Bathroom minimums: 1.20 sq.m AND 900 mm minimum dimension. This bathroom is 1.10 sq.m (fails area) but measures 1.00 m × 1.10 m (both sides exceed 900 mm — passes dimension). Both rooms fail, but for different reasons.",
-      "explanation": "Always check BOTH criteria — area AND dimension — independently for each room type. Kitchen: 3.00 sq.m / 1.50 m. Bathroom: 1.20 sq.m / 900 mm. The 2.00 m dimension minimum belongs only to habitable rooms, not wet rooms.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 806",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -881,7 +881,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.390768+00:00",
       "content_hash": "sha256:7c3655e8ac57aa7c46f52893cb5c4712d8edc384d815322fa3530f2b783b2196"
     },
     {
@@ -913,8 +913,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Rule VIII specifies that a mezzanine must have a minimum clear height of 1.80 m both above it (from mezzanine floor to ceiling) and below it (from main floor to underside of mezzanine). This 1.80 m standard applies equally to both zones. Options A and B use figures from other ceiling height rules. Option D mixes two unrelated standards.",
-      "explanation": "1.80 m above AND 1.80 m below — both thresholds are identical and apply simultaneously. A mezzanine insertion only complies if both zones clear this minimum.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -925,7 +925,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.346586+00:00",
       "content_hash": "sha256:36e8eefb5c80f5de23381a49b6ff67e5ff530b09b836f49e2e13409f8d07e9c1"
     },
     {
@@ -957,8 +957,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 806 establishes that habitable rooms must have a minimum floor area of 6.00 sq.m AND a minimum horizontal dimension of 2.00 m. Both conditions must be satisfied simultaneously. Options A, C, and D use dimensions not found in the Code.",
-      "explanation": "The 6.00 sq.m / 2.00 m standards apply to habitable rooms. Compare: kitchen = 3.00 sq.m / 1.50 m; bathroom = 1.20 sq.m / 900 mm. Each room type has its own distinct minimums.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 806",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -969,7 +969,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.394245+00:00",
       "content_hash": "sha256:357c3f2e4dcf31123f2581360b4d2eeae64d16cc3fdf56c3f3a4101ac4d17624"
     },
     {
@@ -1001,8 +1001,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Rule VIII establishes three distinct occupancy-specific air space standards: (1) Schools = 3.00 cu.m per person PLUS an additional floor area requirement of 1.00 sq.m per person; (2) Offices = 12.00 cu.m per person; (3) Habitable rooms = 14.00 cu.m per person. Option B inverts the school and habitable room values. Options A and D use unsupported figures.",
-      "explanation": "Three standards to memorize: Schools = 3 cu.m + 1 sq.m per person (dual criteria); Offices = 12 cu.m/person; Habitable = 14 cu.m/person. Schools uniquely have both a volumetric AND a floor-area requirement applied simultaneously.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1013,7 +1013,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.404841+00:00",
       "content_hash": "sha256:b03aa6e4e1827f4d0e1e5402d830553c702f1a568aa723ecc702848e7f23049a"
     },
     {
@@ -1045,8 +1045,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 808 requires window openings for habitable rooms equal to at least 10% of the floor area, with an absolute minimum of 1.00 sq.m. For a 12.00 sq.m room: 10% × 12.00 = 1.20 sq.m, which exceeds the absolute minimum of 1.00 sq.m. So 1.20 sq.m governs. The 5% standard applies only to wet service rooms (bathrooms, toilets), not habitable rooms.",
-      "explanation": "Habitable rooms: 10% of floor area, absolute minimum 1.00 sq.m. Wet rooms: 5% of floor area, absolute minimum 240 sq.mm. For large rooms the percentage governs; for small rooms the absolute minimum may govern instead.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 808",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1057,7 +1057,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.374994+00:00",
       "content_hash": "sha256:54c1869b5ff45876c935e582bdba856e18674514aac0e5483741ca26921ec2d5"
     },
     {
@@ -1089,8 +1089,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Apply both criteria: Air space limit: volume = 48 × 2.70 = 129.6 cu.m; 129.6 ÷ 3.00 = 43.2 → 43 pupils. Floor area limit: 48 ÷ 1.00 = 48 pupils. The more restrictive (lower) value governs, which is 43 pupils from the air space criterion. Option A ignores the air space check. Option C has no Code basis. Option D miscalculates and ignores the floor area check.",
-      "explanation": "Schools require checking BOTH limits simultaneously and using the lower result. Volume = floor area × ceiling height. Always round down (partial persons not permitted). The air space criterion is typically the binding constraint in normally proportioned classrooms.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1101,7 +1101,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.376824+00:00",
       "content_hash": "sha256:d44d33cf0ea00d4306e63a52f4bee4ad9e50afcfd39fffbc1b10925ad969ba69"
     },
     {
@@ -1133,8 +1133,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "For artificially ventilated multi-storey buildings, Sec. 805 establishes a staggered minimum: 1st floor = 2.70 m, 2nd floor = 2.40 m, 3rd floor and above = 2.10 m. The uniform 2.40 m rule applies only to single-storey artificially ventilated buildings. Option A ignores the reduced allowances for mechanical systems. Options C and D use unsupported values.",
-      "explanation": "The staggered reduction recognizes that mechanical systems compensate for reduced ceiling volume. Remember the progression: 2.70 → 2.40 → 2.10 for floors 1, 2, 3+ in artificially ventilated multi-storey buildings.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1145,7 +1145,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.354009+00:00",
       "content_hash": "sha256:5d6adb07d5fcfa2b143f26cb9532045f243423102383a6f64b99a2acbbe08378"
     },
     {
@@ -1177,8 +1177,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 805 requires a minimum ceiling height of 2.70 m for all floors in naturally ventilated rooms. This uniform standard applies regardless of floor level. The 2.40 m allowance applies only to artificially ventilated single-storey buildings, not naturally ventilated spaces.",
-      "explanation": "2.70 m is the baseline for natural ventilation at all floors. The reduced 2.40 m is reserved exclusively for artificially ventilated buildings — and even then, only the single-storey condition applies.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1189,7 +1189,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:01.43637+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.352082+00:00",
       "content_hash": "sha256:7607464e60a0aa99712c7b1d6c58243337ad211db88aa64567196ea46fbbbf11"
     },
     {
@@ -1221,8 +1221,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 805 permits a reduced ceiling height of 2.40 m for single-storey buildings with artificial ventilation. This is less than the 2.70 m required for natural ventilation. The 2.10 m minimum applies only to the 3rd floor and above in artificially ventilated multi-storey buildings. For a single-storey artificially ventilated building, 2.40 m is the correct minimum.",
-      "explanation": "Single-storey + artificial ventilation = 2.40 m minimum. Multi-storey + artificial ventilation = staggered 2.70/2.40/2.10. The 2.10 m figure only applies to 3rd floor and above in multi-storey artificially ventilated buildings — not to single-storey structures.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
@@ -1233,7 +1233,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.373262+00:00",
       "content_hash": "sha256:f39c7ba7f3928f65d9ff51fa9e0d855a516e89f3c2a9d12d230facde623fc8cf"
     },
     {
@@ -1265,8 +1265,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Apply both criteria: Air space limit: volume = 48 × 2.70 = 129.6 cu.m; 129.6 ÷ 3.00 = 43.2 → 43 pupils. Floor area limit: 48 ÷ 1.00 = 48 pupils. The more restrictive (lower) value governs, which is 43 pupils from the air space criterion. Option A ignores the air space check. Option C has no Code basis. Option D miscalculates and ignores the floor area check.",
-      "explanation": "Schools require checking BOTH limits simultaneously and using the lower result. Volume = floor area × ceiling height. Always round down (partial persons not permitted). The air space criterion is typically the binding constraint in normally proportioned classrooms.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1277,7 +1277,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.387310+00:00",
       "content_hash": "sha256:d97d3bc3352ba7dcf4a09f7bcc0b9a492e5565399589d1103ab584c495063533"
     },
     {
@@ -1309,8 +1309,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Bathroom requirements: floor area ≥1.20 sq.m (this bathroom has 1.30 sq.m — PASSES); minimum dimension ≥900 mm (1.00 m × 1.30 m — both sides exceed 900 mm — PASSES); ventilation opening ≥5% of floor area with absolute minimum 240 sq.mm for wet rooms. At 200 sq.mm the louvre is below the 240 sq.mm absolute minimum — FAILS ventilation only. Option C is wrong: 900 mm, not 1.20 m, is the minimum dimension for bathrooms. Option A uses the wrong area threshold (1.50 sq.m is for kitchens in dimension, not bathrooms).",
-      "explanation": "Bathroom dimension minimum is 900 mm, not 1.20 m. Wet room ventilation minimum is 240 sq.mm absolute. This question tests whether candidates correctly apply bathroom-specific thresholds rather than defaulting to habitable room standards.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 806, 808",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -1321,7 +1321,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.389044+00:00",
       "content_hash": "sha256:032cd7147b2b815d6cf39612a8e30d8cab2fca3429fc2ca1cdb7d2e015adc82e"
     },
     {
@@ -1353,8 +1353,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Rule VIII establishes three distinct occupancy-specific air space standards: (1) Schools = 3.00 cu.m per person PLUS an additional floor area requirement of 1.00 sq.m per person; (2) Offices = 12.00 cu.m per person; (3) Habitable rooms = 14.00 cu.m per person. Option B inverts the school and habitable room values. Options A and D use unsupported figures.",
-      "explanation": "Three standards to memorize: Schools = 3 cu.m + 1 sq.m per person (dual criteria); Offices = 12 cu.m/person; Habitable = 14 cu.m/person. Schools uniquely have both a volumetric AND a floor-area requirement applied simultaneously.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1365,7 +1365,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.344605+00:00",
       "content_hash": "sha256:1e6614005a142a75f88c2fdefedb66c6d39b28b026cee3d17ed403fc124b1948"
     },
     {
@@ -1397,8 +1397,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Kitchen minimums: 3.00 sq.m AND 1.50 m minimum dimension. This kitchen is 2.52 sq.m (fails area) and 0.90 m wide (fails dimension — both violations). Bathroom minimums: 1.20 sq.m AND 900 mm minimum dimension. This bathroom is 1.10 sq.m (fails area) but measures 1.00 m × 1.10 m (both sides exceed 900 mm — passes dimension). Both rooms fail, but for different reasons.",
-      "explanation": "Always check BOTH criteria — area AND dimension — independently for each room type. Kitchen: 3.00 sq.m / 1.50 m. Bathroom: 1.20 sq.m / 900 mm. The 2.00 m dimension minimum belongs only to habitable rooms, not wet rooms.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 806",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -1409,7 +1409,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.403094+00:00",
       "content_hash": "sha256:4a0041c7ef1e464f774d26186210da80df1658a29655eb163fe4b6bb157df87a"
     },
     {
@@ -1441,8 +1441,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 805 requires a minimum ceiling height of 2.70 m for all floors in naturally ventilated rooms. This uniform standard applies regardless of floor level. The 2.40 m allowance applies only to artificially ventilated single-storey buildings, not naturally ventilated spaces.",
-      "explanation": "2.70 m is the baseline for natural ventilation at all floors. The reduced 2.40 m is reserved exclusively for artificially ventilated buildings — and even then, only the single-storey condition applies.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1453,7 +1453,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.392510+00:00",
       "content_hash": "sha256:4fba869915d9ceb41a4879b06f0182696202d00a834761ad17ccadeaa8aad566"
     },
     {
@@ -1485,8 +1485,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "For artificially ventilated multi-storey buildings, Sec. 805 establishes a staggered minimum: 1st floor = 2.70 m, 2nd floor = 2.40 m, 3rd floor and above = 2.10 m. The uniform 2.40 m rule applies only to single-storey artificially ventilated buildings. Option A ignores the reduced allowances for mechanical systems. Options C and D use unsupported values.",
-      "explanation": "The staggered reduction recognizes that mechanical systems compensate for reduced ceiling volume. Remember the progression: 2.70 → 2.40 → 2.10 for floors 1, 2, 3+ in artificially ventilated multi-storey buildings.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1497,7 +1497,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.378614+00:00",
       "content_hash": "sha256:f0812d23caba7f3e0e85c5a71aee4beb653164f3c65a1c1d5ba5233547f4a3c9"
     },
     {
@@ -1529,8 +1529,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Rule VIII specifies that a mezzanine must have a minimum clear height of 1.80 m both above it (from mezzanine floor to ceiling) and below it (from main floor to underside of mezzanine). This 1.80 m standard applies equally to both zones. Options A and B use figures from other ceiling height rules. Option D mixes two unrelated standards.",
-      "explanation": "1.80 m above AND 1.80 m below — both thresholds are identical and apply simultaneously. A mezzanine insertion only complies if both zones clear this minimum.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1541,7 +1541,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.397749+00:00",
       "content_hash": "sha256:fc997acc872c648273d10e87b8f35b3f8413e3d057faa84a4af7d63de5425fdf"
     },
     {
@@ -1573,8 +1573,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 806 establishes that habitable rooms must have a minimum floor area of 6.00 sq.m AND a minimum horizontal dimension of 2.00 m. Both conditions must be satisfied simultaneously. Options A, C, and D use dimensions not found in the Code.",
-      "explanation": "The 6.00 sq.m / 2.00 m standards apply to habitable rooms. Compare: kitchen = 3.00 sq.m / 1.50 m; bathroom = 1.20 sq.m / 900 mm. Each room type has its own distinct minimums.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 806",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1585,7 +1585,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.364580+00:00",
       "content_hash": "sha256:b923efec0c33443c0c9d7280664d12b4c8203d1d67b95f879816c9cb9b5e29a5"
     },
     {
@@ -1617,8 +1617,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Sec. 808 requires window openings for habitable rooms equal to at least 10% of the floor area, with an absolute minimum of 1.00 sq.m. For a 12.00 sq.m room: 10% × 12.00 = 1.20 sq.m, which exceeds the absolute minimum of 1.00 sq.m. So 1.20 sq.m governs. The 5% standard applies only to wet service rooms (bathrooms, toilets), not habitable rooms.",
-      "explanation": "Habitable rooms: 10% of floor area, absolute minimum 1.00 sq.m. Wet rooms: 5% of floor area, absolute minimum 240 sq.mm. For large rooms the percentage governs; for small rooms the absolute minimum may govern instead.",
-      "code_citation": "PD 1096, Rule VIII, Sec. 808",
+      "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1629,7 +1629,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:51.335363+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.371528+00:00",
       "content_hash": "sha256:511153bb4d584dc6c71fd760fe776d58f8e14737404475a34cc4cdfb51d169c8"
     }
   ]

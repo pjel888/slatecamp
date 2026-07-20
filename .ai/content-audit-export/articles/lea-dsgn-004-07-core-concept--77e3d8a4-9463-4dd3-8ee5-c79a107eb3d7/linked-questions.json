@@ -8,23 +8,23 @@
       "question_id": "22b27483-ef13-4a77-85a8-eeee97175c7c",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "In a proscenium theater, what is the generally accepted minimum dimension for the stage opening and the ratio of backstage area to stage area?",
+      "text": "Under PD 1096, what group applies to an assembly building with a stage and occupant load below 1000?",
       "options": [
         {
           "id": "a",
-          "text": "9.0 m × 12.0 m; Backstage = 30-50% of stage area"
+          "text": "Group H-1."
         },
         {
           "id": "b",
-          "text": "6.0 m × 9.0 m; Backstage = 10% of stage area"
+          "text": "Group I-1."
         },
         {
           "id": "c",
-          "text": "12.0 m × 15.0 m; Backstage = 100% of stage area"
+          "text": "Group A-1 residential."
         },
         {
           "id": "d",
-          "text": "No standard; varies by theater seat count"
+          "text": "Group G-1 hazardous storage."
         }
       ],
       "correct_option_id": "a",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct; standard professional guideline.",
-        "b": "Too small for standard theatrical scenery.",
-        "d": "Functional requirements for performance (scenery, lighting) dictate size more than seat count.",
-        "correct": "While not mandated by PD 1096, architectural standards for a functional proscenium stage typically start at 9m x 12m with a support area of 30-50% to accommodate wings and scenery.",
-        "takeaway": "Theatrical dimensions are governed by performance standards, not building code minimums."
-      },
+      "rationale": "PD 1096 Group H-1 covers assembly buildings with a stage and occupant load less than 1000.",
       "explanation": null,
       "code_citation": "General Architectural Practice",
       "bloom_level": "apply",
@@ -51,45 +45,38 @@
       "model_id": "ALE-DSGN-004-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.589711+00:00",
       "content_hash": "sha256:b01f1d3bec1354e57657f5a77ec83105f715aad919fe3d3c1c6698c541815e19"
     },
     {
       "question_id": "128cc2f6-34c7-4ea3-8e90-949bcfd6f28d",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "What is the minimum width for a level exit aisle in an assembly venue like a theater according to the RA 9514 2019 Revised IRR?",
+      "text": "Under PD 1096, what group applies to a theater with a stage and occupant load of 1000 or more?",
       "options": [
         {
           "id": "a",
-          "text": "715 mm"
+          "text": "Group I-1."
         },
         {
           "id": "b",
-          "text": "915 mm"
+          "text": "Group H-3."
         },
         {
           "id": "c",
-          "text": "1,100 mm"
+          "text": "Group E-2."
         },
         {
           "id": "d",
-          "text": "1,200 mm"
+          "text": "Group D-2."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This is below the minimum clear width for public assembly aisles.",
-        "b": "Correct; 915 mm is the standard minimum for aisles.",
-        "c": "Often cited as a corridor minimum, but aisles have a specific 915 mm threshold.",
-        "d": "A recommended width for high-traffic, but not the statutory minimum.",
-        "correct": "RA 9514 2019 IRR Section 10.2.13.1.6 specifies that the minimum clear width of any aisle shall not be less than 915 mm (36 inches).",
-        "takeaway": "Minimum Aisle Width = 915 mm."
-      },
+      "rationale": "PD 1096 Group I-1 covers assembly buildings with a stage and occupant load of 1000 or more.",
       "explanation": null,
       "code_citation": "RA 9514 2019 IRR Section 10.2.13.1.6",
       "bloom_level": "remember",
@@ -102,45 +89,38 @@
       "model_id": "ALE-DSGN-004-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.593753+00:00",
       "content_hash": "sha256:9e444694c76efc7a622dc4d6364965132d16d3ca3e54f023551d6b579f899288"
     },
     {
       "question_id": "ab21400d-6b48-42ce-bce2-9410c981ea8f",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "A 250-seat theater has a backstage area of 50 sqm used for storage and technical support. Calculate the total building occupant load for egress design.",
+      "text": "How is occupant load determined for theater areas with fixed seats under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "250 occupants"
+          "text": "By the number of fixed seats installed."
         },
         {
           "id": "b",
-          "text": "252 occupants"
+          "text": "By the floor area of backstage storage only."
         },
         {
           "id": "c",
-          "text": "286 occupants"
+          "text": "By the number of performers."
         },
         {
           "id": "d",
-          "text": "260 occupants"
+          "text": "By the width of the proscenium opening."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignores staff/technical occupancy in support areas.",
-        "b": "Correct; combines fixed seating with staff storage density ($27.9$).",
-        "c": "Uses the Dense Stage factor ($1.4$) for the entire backstage area.",
-        "d": "Incorrect rounding or factor.",
-        "correct": "1. Seating: 250 occupants (fixed count). 2. Backstage (Storage/Mechanical): $50 \\text{ sqm} \\div 27.9 = 1.79 \\approx 2$ occupants. Total = $250 + 2 = 252$.",
-        "takeaway": "Sum all functional areas. Storage/Technical support uses $27.9$ sqm/person."
-      },
+      "rationale": "RA 9514 uses the number of fixed seats for fixed-seat assembly areas.",
       "explanation": null,
       "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
       "bloom_level": "apply",
@@ -153,30 +133,30 @@
       "model_id": "ALE-DSGN-004-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.587256+00:00",
       "content_hash": "sha256:2905aadff20d028e1eaef26eab61333fb78fe8e2d8f8a5d563cb1caddbf7bfe9"
     },
     {
       "question_id": "9e709b0b-91f9-4aaa-b3fb-e9603633947b",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "A 1,500-seat multipurpose venue uses flexible temporary staging instead of a fixed proscenium. Under PD 1096, what is its classification?",
+      "text": "What is the RA 9514 main-exit requirement for assembly occupancy?",
       "options": [
         {
           "id": "a",
-          "text": "Group H Division 2 (Assembly without stage, ≥ 300 occupants)"
+          "text": "The main exit must accommodate one-half of the total occupant load."
         },
         {
           "id": "b",
-          "text": "Group I (Assembly with stage, ≥ 1,000 occupants) because the venue exceeds the 1,000 seat threshold"
+          "text": "The main exit may be any width if there are ushers."
         },
         {
           "id": "c",
-          "text": "Group H Division 1 (Assembly with stage, < 1,000 occupants) because staging is present even if temporary"
+          "text": "Only backstage exits count."
         },
         {
           "id": "d",
-          "text": "Group J (Open-air assembly) because the flexible staging creates a non-permanent performance configuration"
+          "text": "The main exit is optional for theaters."
         }
       ],
       "correct_option_id": "a",
@@ -184,12 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct; lack of a permanent stage triggers the 'without stage' classification.",
-        "b": "Requires a permanent stage structure.",
-        "correct": "PD 1096 Section 701 classifies assembly buildings without a stage and with an occupant load of 300 or more as Group H Division 2.",
-        "takeaway": "Classification depends on structural presence (Fixed Stage) rather than intent (Multipurpose Use)."
-      },
+      "rationale": "RA 9514 requires a main exit sized for one-half of the total occupant load.",
       "explanation": null,
       "code_citation": "PD 1096 Rule VII Table VII.1",
       "bloom_level": "apply",
@@ -202,43 +177,38 @@
       "model_id": "ALE-DSGN-004-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.592172+00:00",
       "content_hash": "sha256:6ca1506cdb6de9ecadcede55f167d476859f94fc18cbaddc580a57d2cdbe4126"
     },
     {
       "question_id": "75fea312-1626-484c-87dc-ddb12ee0c17b",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "A 350-seat theater provides one 1.5 m door and one 1.2 m stair. Based on RA 9514 2019 IRR, is this adequate egress for an assembly occupancy?",
+      "text": "What travel distance limit applies to an unsprinklered place of assembly under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, aggregate width and count are met, assuming no additional exits are required by local amendments."
+          "text": "46 m to reach an exit."
         },
         {
           "id": "b",
-          "text": "No, assembly occupancies require a minimum of 2 separate exits regardless of width."
+          "text": "61 m to reach an exit."
         },
         {
           "id": "c",
-          "text": "No, the width is insufficient for 350 persons, especially during peak occupancy events."
+          "text": "150 m to reach an exit."
         },
         {
           "id": "d",
-          "text": "Yes, if the travel distance is less than 45 meters, and no other obstructions are present."
+          "text": "No limit applies to theaters."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Correct; the 'remoteness' and 'separation' of the 2 exits is the critical factor for assembly safety.",
-        "c": "Required width is $350 \\times 7.6 = 2,660$ mm. Available is $2,700$ mm. Width is technically sufficient, but count/remoteness is the priority.",
-        "correct": "RA 9514 Section 10.2.13.1.1 mandates that every assembly occupancy shall be provided with at least two separate means of egress. One door and one stair satisfy the count of 2, but they must be 'separate' and remote from each other.",
-        "takeaway": "Assembly rule: Minimum 2 exits, remotely located, aggregate width satisfied."
-      },
+      "rationale": "RA 9514 limits unsprinklered assembly travel distance to 46 m.",
       "explanation": null,
       "code_citation": "RA 9514 2019 IRR Section 10.2.13.1.1",
       "bloom_level": "analyze",
@@ -251,44 +221,38 @@
       "model_id": "ALE-DSGN-004-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.590592+00:00",
       "content_hash": "sha256:0c35d0c5d601ebf82f43da02b5df8e749f2b3006b5042c797f6081e057086862"
     },
     {
       "question_id": "c18f456c-739a-4a06-b3c5-3348498df8f8",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "What is the typical recommended row spacing (front-to-front) in general architectural practice for theater seating to ensure adequate legroom?",
+      "text": "What travel distance limit applies to a sprinklered place of assembly under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "600 mm"
+          "text": "61 m to reach an exit."
         },
         {
           "id": "b",
-          "text": "850–1,050 mm"
+          "text": "46 m to reach an exit."
         },
         {
           "id": "c",
-          "text": "1,200 mm"
+          "text": "6 m to reach an exit."
         },
         {
           "id": "d",
-          "text": "750 mm"
+          "text": "No travel distance check is needed."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Too narrow; physically impossible for standard theater chairs.",
-        "b": "Correct; aligns with international and local design standards.",
-        "c": "Excessive; reduces capacity without significant added benefit for standard theaters.",
-        "correct": "While PD 1096 and RA 9514 focus on clear widths between rows for egress, general architectural practice (UAP/Neufert) recommends 850–1,050 mm front-to-front spacing for comfort.",
-        "takeaway": "Row spacing is a design guideline (850-1,050 mm), not a building code minimum."
-      },
+      "rationale": "RA 9514 allows 61 m where the assembly space is protected by an approved supervised sprinkler system.",
       "explanation": null,
       "code_citation": "General Architectural Practice / UAP Guidelines",
       "bloom_level": "understand",
@@ -301,30 +265,30 @@
       "model_id": "ALE-DSGN-004-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.595373+00:00",
       "content_hash": "sha256:f8c2adf6031e73b455b8c63377d6952c602569c1f3e84c92e5ca0f8284094640"
     },
     {
       "question_id": "df8369de-f75c-4677-bd80-86b18c739fb5",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "What is the minimum net seating area floor space (in sqm) required for a 200-seat theater per RA 9514 2019 IRR?",
+      "text": "Which door hardware rule is source-safe for assembly exit doors?",
       "options": [
         {
           "id": "a",
-          "text": "168 sqm"
+          "text": "An exit door from an assembly occupancy must not have a latch or lock unless it is panic hardware."
         },
         {
           "id": "b",
-          "text": "180 sqm"
+          "text": "Any padlock is allowed if staff have a key."
         },
         {
           "id": "c",
-          "text": "200 sqm"
+          "text": "Panic hardware is never allowed."
         },
         {
           "id": "d",
-          "text": "120 sqm"
+          "text": "Only sliding bolts are permitted."
         }
       ],
       "correct_option_id": "a",
@@ -332,14 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct; uses the code-mandated $0.84$ factor.",
-        "b": "Uses an outdated factor of $0.90$.",
-        "c": "Assumes $1.0$ sqm per person, which is not a code standard for fixed seating.",
-        "d": "Uses $0.60$, which is too dense for fixed seating.",
-        "correct": "RA 9514 2019 IRR Table 10.2.7.3.1 specifies an occupant load factor of $0.84$ sqm per person (net) for assembly areas with fixed seats. $200 \\times 0.84 = 168$ sqm.",
-        "takeaway": "Theater Fixed Seating Factor = $0.84$ sqm/person (Net Area)."
-      },
+      "rationale": "RA 9514 requires panic hardware for latches or locks on assembly exit doors.",
       "explanation": null,
       "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
       "bloom_level": "apply",
@@ -352,30 +309,30 @@
       "model_id": "ALE-DSGN-004-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.593019+00:00",
       "content_hash": "sha256:7dc6b09a27538f1c719c369208008685df5529958d83c190e7fc6de49493e4a5"
     },
     {
       "question_id": "c500cf14-7406-4083-aa5b-6b834f5c20b3",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "A theater with 500 occupants has two 1.2 m doors and one 1.5 m stairwell. Is the aggregate exit width compliant under RA 9514 (2019 IRR)?",
+      "text": "Which stage feature is source-safe under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "Yes; Required=3,800 mm, Available=3,900 mm"
+          "text": "A qualifying stage or enclosed platform requires automatic fire suppression and stage fire-safety features."
         },
         {
           "id": "b",
-          "text": "No; Required=3,800 mm, Available=2,400 mm"
+          "text": "Every stage is exempt from fire suppression."
         },
         {
           "id": "c",
-          "text": "Yes; Required=2,500 mm, Available=3,900 mm"
+          "text": "Only the audience seating area is regulated."
         },
         {
           "id": "d",
-          "text": "No; Required=4,560 mm, Available=3,900 mm"
+          "text": "Stage workshops may open directly onto the stage with flammable storage."
         }
       ],
       "correct_option_id": "a",
@@ -383,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct; correctly calculates both required and provided aggregate widths.",
-        "b": "Fails to include the stairwell width in the aggregate total.",
-        "d": "Incorrectly uses a different factor or higher occupancy count.",
-        "correct": "Required width for stairs = $500 \\times 7.6 = 3,800$ mm. Available width = $1.2 + 1.2 + 1.5 = 3.9$ m ($3,900$ mm). Since $3,900 \\ge 3,800$, it is compliant.",
-        "takeaway": "Aggregate width must satisfy the most restrictive component (Stairs = $7.6$ mm/person)."
-      },
+      "rationale": "RA 9514 includes fire suppression, ventilation, curtain, control station, and auxiliary stage-space rules.",
       "explanation": null,
       "code_citation": "RA 9514 2019 IRR Section 10.2.5.2",
       "bloom_level": "apply",
@@ -402,30 +353,30 @@
       "model_id": "ALE-DSGN-004-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.591383+00:00",
       "content_hash": "sha256:587d1cfa9783764708dd50701831640485d863a29a5a1130667dd88096d8126a"
     },
     {
       "question_id": "5e6387ca-7a68-49ba-bef7-8c70657bdb8a",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "A theater has 300 fixed seats arranged in rows and a traditional proscenium stage (9.0 m × 12.0 m). Under PD 1096, what occupancy group classification applies?",
+      "text": "What announcement requirement is source-safe for theaters and similar occupancies?",
       "options": [
         {
           "id": "a",
-          "text": "Group H Division 1 (Assembly with stage, occupant load < 1,000)"
+          "text": "Before the performance, an audible announcement or other means must describe exit locations."
         },
         {
           "id": "b",
-          "text": "Group I (Assembly with stage, occupant load ≥ 1,000), typically used for larger venues such as concert halls"
+          "text": "Announcements are forbidden before performances."
         },
         {
           "id": "c",
-          "text": "Group C (Education and Recreation), which includes facilities like schools and community centers"
+          "text": "Only printed tickets need exit directions."
         },
         {
           "id": "d",
-          "text": "Group H Division 2 (Assembly without stage), applicable to open-air venues or those without a defined stage area"
+          "text": "Only performers need emergency information."
         }
       ],
       "correct_option_id": "a",
@@ -433,14 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct; the presence of a stage and capacity < 1,000 defines H-1.",
-        "b": "Group I is reserved for assembly buildings with a stage and 1,000 or more occupants.",
-        "c": "Group C is strictly for Educational institutions (Schools).",
-        "d": "Division 2 applies to assembly buildings without a stage.",
-        "correct": "PD 1096 Rule VII Table VII.1 classifies assembly buildings with a stage and an occupant load of less than 1,000 as Group H Division 1.",
-        "takeaway": "The classification of theaters depends on two triggers: 1) Presence of a stage, and 2) Occupant load (threshold at 1,000)."
-      },
+      "rationale": "RA 9514 requires a pre-performance announcement or equivalent means describing exits for theaters and similar occupancies.",
       "explanation": null,
       "code_citation": "PD 1096 Rule VII Table VII.1",
       "bloom_level": "remember",
@@ -453,45 +397,38 @@
       "model_id": "ALE-DSGN-004-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.588783+00:00",
       "content_hash": "sha256:a742680f9f93bdbd4c09d83ca57b101b23aae0e086512751571170f42bf8d0ec"
     },
     {
       "question_id": "39274749-e023-48c7-b905-89b14c08d6be",
       "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
       "topic_id": "9233b8ce-0440-4f0b-baa0-68ee4515dedb",
-      "text": "What is the minimum number of parking slots required for a theater with 600 seats according to the NBCP?",
+      "text": "What is the main exam habit for theater questions?",
       "options": [
         {
           "id": "a",
-          "text": "6 slots"
+          "text": "Separate PD 1096 classification from RA 9514 feature-specific assembly requirements."
         },
         {
           "id": "b",
-          "text": "12 slots"
+          "text": "Use one memorized number for every theater feature."
         },
         {
           "id": "c",
-          "text": "30 slots"
+          "text": "Ignore occupant load."
         },
         {
           "id": "d",
-          "text": "60 slots"
+          "text": "Treat theaters as fire stations."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect; uses 1 per 100 ratio.",
-        "b": "Correct ratio of 1 per 50.",
-        "c": "Incorrect ratio of 1 per 20.",
-        "d": "Incorrect ratio of 1 per 10.",
-        "correct": "PD 1096 Table VII.1 specifies 1 parking slot per 50 seats for theaters, cinemas, and auditoria. Calculation: $600 \\div 50 = 12$ slots.",
-        "takeaway": "Theater Parking = 1 slot per 50 seats."
-      },
+      "rationale": "The repaired article separates classification, occupant load, exits, travel distance, alarms, sprinklers, and stage protection.",
       "explanation": null,
       "code_citation": "PD 1096 Table VII.1",
       "bloom_level": "apply",
@@ -504,7 +441,7 @@
       "model_id": "ALE-DSGN-004-07-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.594577+00:00",
       "content_hash": "sha256:7132a940ec16ff363ea8590a43154a56ad00767fb5fc8e4fb709e9c32c3ca627"
     }
   ]

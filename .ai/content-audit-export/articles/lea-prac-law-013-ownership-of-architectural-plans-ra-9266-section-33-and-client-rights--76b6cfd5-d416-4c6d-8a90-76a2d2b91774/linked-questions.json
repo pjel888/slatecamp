@@ -12,19 +12,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Architect C cannot claim ownership because the original project was never built, and the plans were not registered"
+          "text": "Architect C cannot claim ownership because the original project was never built"
         },
         {
           "id": "b",
-          "text": "Architect C must prove the shopping mall construction was done with actual intent to harm, which is difficult without direct evidence"
+          "text": "Architect C must prove actual intent to harm before Section 33 can apply"
         },
         {
           "id": "c",
-          "text": "Architect C retains copyright ownership and can pursue infringement remedies despite the original project never being executed"
+          "text": "Architect C retains ownership unless a written stipulation provides otherwise, and unauthorized use for another project violates the written-consent rule"
         },
         {
           "id": "d",
-          "text": "Architect C's rights expired when more than three years passed without project execution, according to standard industry practices"
+          "text": "Architect C's rights expired after three years without construction"
         }
       ],
       "correct_option_id": "c",
@@ -51,30 +51,30 @@
       "model_id": "ALE-PRAC-LAW-013-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.593259+00:00",
       "content_hash": "sha256:5e5d0c887b96c67c8b8e3c7962a0419da248131722ae82a0b0b5adf9536501c0"
     },
     {
       "question_id": "13fe4f9a-1db3-4144-8380-2aee7bd42be8",
       "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
       "topic_id": "276b03f0-a2f1-4961-b295-32207081f95c",
-      "text": "A developer hired Architect B to design a residential complex. After the building was completed and occupied, the developer hired a new architect to design an expansion using the same floor plan layout from the original design without permission from Architect B. What legal remedy is most appropriate?",
+      "text": "A developer uses the same floor-plan layout from the original architectural documents for an expansion or later project without Architect B's written permission. What Section 33 issue is triggered?",
       "options": [
         {
           "id": "a",
-          "text": "Criminal prosecution for theft of property, which involves proving intent to permanently deprive the original architect of their design rights"
+          "text": "The client automatically owns all repeat-use rights after paying the fee"
         },
         {
           "id": "b",
-          "text": "Civil action for copyright infringement, including injunction and damages"
+          "text": "Unauthorized repetition or use for another project is prohibited without the architect's written consent"
         },
         {
           "id": "c",
-          "text": "Administrative complaint to the mayor's office, seeking intervention based on local building regulations and professional conduct standards"
+          "text": "Only the mayor's office can object to reuse of architectural documents"
         },
         {
           "id": "d",
-          "text": "Request for mediation through the real estate industry association, aiming to resolve the dispute amicably without resorting to legal action"
+          "text": "Reuse is allowed whenever the later project has the same owner"
         }
       ],
       "correct_option_id": "b",
@@ -101,7 +101,7 @@
       "model_id": "ALE-PRAC-LAW-013-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.594019+00:00",
       "content_hash": "sha256:3afe7d7e89d95fcedb304f8c9bfef2bccb000816ca40310a809720d82790f969"
     },
     {
@@ -212,19 +212,19 @@
       "options": [
         {
           "id": "a",
-          "text": "The architect loses all claims because the architect accepted payment without explicit copyright notice, which is considered a waiver of rights"
+          "text": "The architect loses all claims because payment alone waives ownership"
         },
         {
           "id": "b",
-          "text": "The architect retains copyright ownership and remedies under RA 9266 and the IP Code, though the absence of written notice weakens proof of client understanding"
+          "text": "The architect retains ownership unless a written stipulation provides otherwise; the missing Section 33 notice is a contract-compliance problem, not automatic transfer"
         },
         {
           "id": "c",
-          "text": "The copyright automatically transfers to the client who paid for the work, as payment implies transfer of all rights"
+          "text": "Copyright automatically transfers to the client who paid for the work"
         },
         {
           "id": "d",
-          "text": "Both the architect and client have equal ownership rights requiring joint consent for any use, which complicates licensing agreements"
+          "text": "Both architect and client automatically become equal co-owners"
         }
       ],
       "correct_option_id": "b",
@@ -251,7 +251,7 @@
       "model_id": "ALE-PRAC-LAW-013-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.594764+00:00",
       "content_hash": "sha256:44e09155dc5c4b63e61d5e952fd8640909d2b7dd11eea0bdcb1139d4ebff783c"
     },
     {
@@ -308,23 +308,23 @@
       "question_id": "6ba4425b-1349-4410-b3e6-c4890f897eff",
       "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
       "topic_id": "276b03f0-a2f1-4961-b295-32207081f95c",
-      "text": "A client who licensed architectural plans for a residential project in the Philippines wishes to construct an identical building in a foreign country using the same plans and specifications. Does RA 9266 Section 33 prevent this use?",
+      "text": "A client who received architectural plans for one residential project wants to construct an identical building on another property using the same plans and specifications. What does RA 9266 Section 33 require?",
       "options": [
         {
           "id": "a",
-          "text": "No, because RA 9266 applies only to buildings erected in the Philippines"
+          "text": "No consent is needed because the client paid for the original plans"
         },
         {
           "id": "b",
-          "text": "Yes, RA 9266 Section 33 prohibits all unauthorized reproduction regardless of location"
+          "text": "Written consent from the architect is required for repetition or use for another project"
         },
         {
           "id": "c",
-          "text": "Only if the foreign country has a reciprocal copyright treaty with the Philippines"
+          "text": "Consent is required only if the second project is in the same city"
         },
         {
           "id": "d",
-          "text": "The prohibition applies only to projects within the same province or city"
+          "text": "Consent is required only when the second project has a different contractor"
         }
       ],
       "correct_option_id": "b",
@@ -351,7 +351,7 @@
       "model_id": "ALE-PRAC-LAW-013-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.591102+00:00",
       "content_hash": "sha256:a2e00eb7475fb5cf05bacd0cd94501cc30f010cc555a3816375cc154fc0440f3"
     },
     {
@@ -408,23 +408,23 @@
       "question_id": "bc85ebfe-63f7-4a09-8de6-ed97399e22c0",
       "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
       "topic_id": "276b03f0-a2f1-4961-b295-32207081f95c",
-      "text": "Architect D assigned her copyright in architectural plans to a design firm in exchange for employment. The design firm then licensed the plans to multiple clients who built projects in different provinces based on these designs. Which statement correctly describes the copyright ownership chain and enforceability?",
+      "text": "Architect D expressly assigned copyright ownership in writing to a design firm. The firm later licenses the plans. Which statement best follows from RA 9266's written-stipulation exception?",
       "options": [
         {
           "id": "a",
-          "text": "The copyright remains with Architect D because Section 33 ownership is non-transferable, ensuring her continued control over the use of her designs."
+          "text": "Ownership can never transfer because Section 33 is non-transferable"
         },
         {
           "id": "b",
-          "text": "The copyright ownership passed to the design firm by assignment, and the firm has standing to enforce against unauthorized uses and to control licensing"
+          "text": "A written stipulation can change the default retained-ownership rule, so the assignee may control licensed uses according to the assignment"
         },
         {
           "id": "c",
-          "text": "The copyright became public domain once any single client built a project based on the plans, eliminating exclusive rights and allowing unrestricted use."
+          "text": "The plans become public domain after one project is built"
         },
         {
           "id": "d",
-          "text": "The multiple projects eliminate copyright protection because the designs are no longer original, thus voiding any claims to exclusive rights."
+          "text": "Multiple projects automatically eliminate copyright protection"
         }
       ],
       "correct_option_id": "b",
@@ -451,7 +451,7 @@
       "model_id": "ALE-PRAC-LAW-013-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.592475+00:00",
       "content_hash": "sha256:adda30f115b5b9318dbba0645b618008194075c74d60d5d6134f7490e929a3a7"
     },
     {

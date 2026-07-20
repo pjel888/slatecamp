@@ -2,57 +2,40 @@
   "question_id": "32689bdf-4836-45bd-889f-e99bb03ef924",
   "baseline_hash": "sha256:b5ca0ae84126848ffb3c9987d6e084de49122ad6ecfe0191646acc724d2c787c",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "degenerate-edit-remediation-2026-07-20: prior batch-048 edit was degenerate (1-char garbage option text + nonsensical rationale). Original question was source-correct; restored verbatim with source rationale preserved.",
+  "approved_by": "agent-X1-degenerate-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
     "parent_article_slug": "fire-resistive-construction-ratings",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "It authorizes FLAR values for every zoning class.",
-    "checked_markdown_lines": [
-      "PD 1096 IRR refined markdown lines 1256-1277",
-      "PD 1096 IRR refined markdown lines 1334-1378",
-      "PD 1096 IRR refined markdown lines 8637-8715",
-      "PD 1096 IRR refined markdown lines 8790-8810"
-    ],
-    "checked_sources": [
-      {
-        "source_id": "pd1096-irr-full-local-raw-pdf--b048-aef59aa2-01",
-        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
-        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
-        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
-        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
-      }
-    ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+    "answer_key_fields_changed": false,
+    "support_status": "degenerate_edit_restored_to_source_correct_original",
+    "source_locator": "Original question in linked-questions.json for article fire-resistive-construction-ratings; source-correct per article normalized.md controlling-source section.",
+    "local_source_safe_action": "Restored original text, options, correct_option_id, rationale, explanation, and code_citation verbatim from linked-questions.json. No semantic content changed."
   },
   "proposed": {
-    "text": "What does Rule VI Section 604 authorize the Secretary to prescribe?",
+    "text": "An architect specifies a prestressed concrete beam with 40mm cover and a 125mm slab depth for a floor system. A building inspector claims this meets a 2-hour fire rating for the beam. Is the inspector correct, and which code provision governs?",
     "options": [
       {
-        "id": "a",
-        "text": "It authorizes standards and rules for fire tests, doors, windows, detectors, finishes, structural protection, walls, partitions, floors, roofs, openings, and roof coverings."
+        "id": "A",
+        "text": "Correct: 40mm cover satisfies the 2-hour prestressed requirement and 125mm slab satisfies the 2-hour slab depth"
       },
       {
-        "id": "b",
-        "text": "I"
+        "id": "B",
+        "text": "Incorrect: 40mm cover satisfies 2-hour prestressed beams, but the slab must be 150mm for a combined 2-hour assembly"
       },
       {
-        "id": "c",
-        "text": "t"
+        "id": "C",
+        "text": "Incorrect: 40mm cover is only the 2-hour requirement for RC slabs, not prestressed members which need 50mm"
       },
       {
-        "id": "d",
-        "text": " "
+        "id": "D",
+        "text": "Correct: 40mm cover for any concrete member and 125mm minimum slab depth together achieve a 2-hour assembly"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "It authorizes standards and rules for fire tests, doors, windows, detectors, finishes, structural protection, walls, partitions, floors, roofs, openings, and roof coverings. This is supported by It authorizes all sprinkler travel-distance bonuses..",
-    "explanation": "It authorizes standards and rules for fire tests, doors, windows, detectors, finishes, structural protection, walls, partitions, floors, roofs, openings, and roof coverings. The cited local source family controls this item: It authorizes all sprinkler travel-distance bonuses..",
-    "code_citation": "It authorizes FLAR values for every zoning class."
+    "correct_option_id": "A",
+    "rationale": "Original question was already source-correct and substantive; the prior edit (source-audited-article-batch-048) was degenerate, with 1-character garbage in 3 of 4 option text fields and a nonsensical rationale. Restored the original verbatim. Original source rationale: Sec. 603 specifies 40mm cover for 2-hour prestressed concrete members and 125mm minimum slab thickness for 2-hour RC slabs. Both specifications are satisfied, making the inspector's assessment correct.",
+    "explanation": "This question requires simultaneous application of two separate Sec. 603 tables: the prestressed member cover table (40mm = 2-hour) and the RC slab thickness table (125mm = 2-hour). Both conditions are independently satisfied at the 2-hour level. The distractor in option B uses the 3-hour slab thickness (150mm), testing whether candidates can distinguish between the two fire rating levels.",
+    "code_citation": "PD 1096, Rule VI, Sec. 603"
   }
 }

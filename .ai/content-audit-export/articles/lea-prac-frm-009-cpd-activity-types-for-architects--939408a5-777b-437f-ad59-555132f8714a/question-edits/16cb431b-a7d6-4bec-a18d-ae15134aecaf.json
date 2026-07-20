@@ -1,34 +1,60 @@
 {
   "question_id": "16cb431b-a7d6-4bec-a18d-ae15134aecaf",
   "baseline_hash": "sha256:155469290615233e1ab502d382eb483cb45ecfb07e43a7a7f14b73d9d432e6a6",
-  "reason": "Batch 102 local-first source audit aligned the explanation/citation to local raw primary source support while preserving the answer key.",
-  "approved_by": "codex-local-source-audit-batch-102",
-  "approved_at": "2026-05-13T10:45:00.000+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-U: the prior Batch 102 edit was a no-op that kept the answer key unchanged while admitting the credit hierarchy is source-limited. The question asks 'Which CPD activity type typically awards the highest credit units?' and marks 'Structured learning' as correct, but the article explicitly states 'this batch does not treat their exact credit hierarchy as source-primary from RA 9266 IRR alone' and 'Do not claim an exact credit hierarchy unless the current CPD guideline or CPD law source is in hand.' The RA 9266 IRR (the only checked local source) establishes CPD purpose and provider structure, not which activity type awards the highest units. Asserting 'structured learning = highest credits' as a marked-correct exam answer overstates the checked source. Rewrote to test the source-supported rule (which organization the IRR entrusts with the CPD program) instead of the unsourced credit hierarchy.",
+  "approved_by": "council-agent-U-leaprac-cmp-frm",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-    "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-    "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
-    "source_locator": "RA 9266 IRR; checked lines 117, 119, 184, 186, 338, 340, 708, 712, 742, 748",
-    "checked_markdown_lines": [
-      117,
-      119,
-      184,
-      186,
-      338,
-      340,
-      708,
-      712,
-      742,
-      748
-    ],
     "parent_article_id": "939408a5-777b-437f-ad59-555132f8714a",
     "parent_article_slug": "lea-prac-frm-009-cpd-activity-types-for-architects",
-    "answer_key_fields_changed": false,
-    "additional_sources": []
+    "parent_article_title": "CPD Activity Types for Architects",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR Section 28 (CPD program developed by the integrated and accredited professional organization; CPD provider accreditation by the Board)",
+    "checked_sources": [
+      {
+        "source_id": "ra-9266-irr-local",
+        "label": "RA 9266 IRR (Architecture Act of 2004) - local raw source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_locator": "RA 9266 IRR Section 28 - CPD definition, IAPOA program role, Board provider accreditation"
+      }
+    ],
+    "local_source_safe_action": "Removed unsourced 'which activity type awards the highest credits' question; replaced with the source-supported rule on who develops the CPD program under RA 9266 IRR Section 28."
   },
   "proposed": {
-    "code_citation": "RA 9266 IRR Section 28 and CPD provider definition; exact RA 10912 category/credit schedule deferred to final-depth source review",
-    "explanation": "Batch 102 source audit keeps the answer key unchanged but marks the credit hierarchy source-limited. RA 9266 IRR supports CPD purpose, provider accreditation, and CPD-program authority; exact highest-credit activity treatment needs current CPD guideline verification."
+    "text": "Under RA 9266 IRR Section 28, which entity develops the CPD program for architects, while other entities may become CPD providers upon accreditation by the Board?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The integrated and accredited professional organization of architects (IAPOA/UAP)"
+      },
+      {
+        "id": "b",
+        "text": "The Commission on Audit"
+      },
+      {
+        "id": "c",
+        "text": "The Department of Public Works and Highways"
+      },
+      {
+        "id": "d",
+        "text": "Any supplier or vendor that teaches an architecture topic"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "RA 9266 IRR Section 28 states that the integrated and accredited professional organization develops the CPD program for architects, and other entities may become CPD providers upon accreditation by the Board.",
+      "b": "The Commission on Audit handles audit of public funds, not the CPD program for architects.",
+      "c": "DPWH is an infrastructure agency; it does not develop the architectural CPD program.",
+      "d": "A supplier or vendor is not automatically a CPD provider; Board accreditation is required.",
+      "correct": "RA 9266 IRR Section 28 states that the integrated and accredited professional organization develops the CPD program for architects, and other entities may become CPD providers upon accreditation by the Board.",
+      "takeaway": "Do not assert an exact CPD credit hierarchy from RA 9266 IRR alone; the IRR establishes CPD purpose and the IAPOA/Board program-provider structure, not which activity type earns the most credits."
+    },
+    "explanation": "RA 9266 IRR Section 28 states that the integrated and accredited professional organization of architects develops the CPD program, and other entities or organizations may become CPD providers upon accreditation by the Board. The IRR establishes CPD purpose and this program-provider structure; exact credit hierarchies require the current CPD guideline/CPD law source.",
+    "code_citation": "RA 9266 IRR Section 28"
   }
 }

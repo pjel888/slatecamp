@@ -1,12 +1,73 @@
 {
   "question_id": "ae2dd470-af9a-49d3-b2ae-03968c51a4a1",
   "baseline_hash": "sha256:9333a34382edace5f1bc36674bc6e38dac5f80cf38c916576923b9c3c55657d3",
-  "reason": "Batch 094 local-first audit revalidated RA 9266 scope-of-practice boundaries and source-safe scenario enrichment.",
-  "approved_by": "codex-local-source-audit-batch-094",
-  "approved_at": "2026-05-12T21:35:16+08:00",
+  "action": "replace",
+  "reason": "Agent W (council-remediation-2026-07-20) source-audit rewrites this question against RA 9266 IRR Section 3(4). The original linked question is malformed: (a) the third option object is missing an 'id' field, (b) the third option carries an inline 'correct_option_id' key, creating a duplicate at the question level alongside the top-level 'correct_option_id':'c', and (c) the marked-correct answer (9 categories) is wrong because the IRR lists ten lettered service categories (a)-(j). The prior Batch 094 edit only refreshed metadata and question text; it did not fix the structural corruption or the wrong answer. This edit rewrites the options array so that 10 categories is the correct answer and removes the malformed duplicate.",
+  "approved_by": "agent-W-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
+    "parent_article_slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR Section 3(4) scope of the practice of architecture - ten lettered service categories (a) through (j)",
+    "checked_sources": [
+      {
+        "source_id": "ra-9266-irr-section-3-4-scope-of-practice",
+        "locator": "RA 9266 IRR Section 3(4) enumerates ten lettered service categories (a)-(j) covering planning, consultation, appraisal, structural conceptualization, architectural interiors, site development and utility layouting, building administration, construction supervision, project management, and all other works requiring architectural competence",
+        "url": "https://lawphil.net/statutes/repacts/ra2004/ra_9266_2004.html"
+      },
+      {
+        "source_id": "prboa-irr-ra9266-pdf",
+        "locator": "PRBoA IRR Section 3 Definition of Scope of Practice",
+        "url": "https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.2-04_IRR_RA9266%20coded.pdf"
+      }
+    ],
+    "local_source_safe_action": "rewrote malformed options array and corrected marked answer from 9 to 10 categories per IRR Section 3(4) enumeration (a)-(j)"
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Section 3(2)-(4)",
-    "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
-    "text": "According to RA 9266 IRR Section 3(4), how many lettered service categories are listed under the scope of the practice of architecture?"
+    "text": "According to RA 9266 IRR Section 3(4), how many lettered service categories (a through j) are listed under the scope of the practice of architecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "7 categories"
+      },
+      {
+        "id": "b",
+        "text": "9 categories"
+      },
+      {
+        "id": "c",
+        "text": "10 categories"
+      },
+      {
+        "id": "d",
+        "text": "12 categories"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Seven categories understates the IRR enumeration; the IRR lists ten lettered categories (a)-(j).",
+      "b": "Nine categories understates the IRR enumeration; a tenth catch-all category (j) covers all other works requiring architectural competence.",
+      "d": "Twelve categories exceeds the IRR enumeration; only ten lettered categories (a)-(j) appear in Section 3(4).",
+      "correct": "RA 9266 IRR Section 3(4) enumerates ten lettered service categories: (a) planning; (b) consultation; (c) appraisal; (d) structural conceptualization; (e) architectural interiors; (f) site development and utility layouting; (g) building administration; (h) construction supervision; (i) project management; and (j) all other works, projects, and activities requiring the professional competence of an architect.",
+      "takeaway": "The ten categories (a)-(j) define the statutory boundaries of architectural scope, with the catch-all (j) allowing the PRBoA to recognize emerging services without statutory amendment."
+    },
+    "explanation": "RA 9266 IRR Section 3(4) enumerates ten lettered service categories (a) through (j). The original linked question was malformed and marked 9 categories as correct; this rewrite restores the correct count and repairs the corrupted options array.",
+    "code_citation": "RA 9266 IRR Section 3(4)",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "RA 9266",
+      "IRR",
+      "scope of practice"
+    ],
+    "difficulty": 0.3,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-002-001"
   }
 }

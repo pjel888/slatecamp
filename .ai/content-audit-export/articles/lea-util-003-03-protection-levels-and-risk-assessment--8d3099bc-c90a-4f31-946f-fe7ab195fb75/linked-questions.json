@@ -8,37 +8,31 @@
       "question_id": "12abdae6-10c1-40cb-b313-4a0d705a126e",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "A commercial building in Cagayan Valley has a grounding system with measured resistance of 9.8 ohms (within PEC limit). During the annual inspection five years later, the clamp-on tester reads 12.2 ohms. Soil conditions have not changed significantly. Which factor is most likely responsible for the resistance increase, and what diagnostic test is recommended?",
+      "text": "What is the source-safe purpose of grounding in lightning and surge conditions?",
       "options": [
         {
           "id": "a",
-          "text": "A) Normal seasonal soil moisture variation; no action required if next year's test shows ≤10 ohms, as fluctuations are expected"
+          "text": "To limit voltage imposed by lightning, line surges, or accidental higher-voltage contact."
         },
         {
           "id": "b",
-          "text": "B) Ground rod corrosion reducing effective conductive cross-section; perform visual excavation at one electrode point and measure rod diameter with calipers"
+          "text": "To make earth the only fault-current path."
         },
         {
           "id": "c",
-          "text": "C) Bonding wire loosening at connection points; retorque all visible grounding terminal bolts to specification (≥5 N·m for M8), ensuring secure connections"
+          "text": "To eliminate all need for bonding."
         },
         {
           "id": "d",
-          "text": "D) Atmospheric humidity affecting the clamp-on tester calibration; recalibrate tester against known reference before retesting to ensure accuracy"
+          "text": "To replace communication protectors."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Seasonal variation is typically ±2 ohms; a 2.4 ohm jump exceeds normal fluctuation and persists over months, suggesting structural change.",
-        "c": "Bonding looseness (C) affects current distribution but not ground electrode resistance itself; torque check is part of annual maintenance but unlikely sole cause of measured increase.",
-        "d": "Tester calibration drift (D) is possible but would be random; a systematic increase points to electrode condition rather than instrument error. Calibration should be verified independently.",
-        "correct": "A 2.4 ohm increase (9.8 to 12.2 ohms, ~25% rise) over five years in stable soil suggests electrode degradation, not transient moisture variation. Copper rod corrosion in Philippine tropical climate (high humidity, salt spray in coastal areas, acidic soil) reduces cross-sectional area, increasing resistance. Visual inspection and caliper measurement identify corrosion extent; significant loss (>10% of original diameter) requires rod replacement. This is consistent with the article's warning about annual inspection for corrosion.",
-        "takeaway": "Grounding resistance increase over time signals electrode corrosion; visual inspection and dimensional verification are faster than full system replacement. 5-year comprehensive testing per PEC is essential."
-      },
+      "rationale": "To limit voltage imposed by lightning, line surges, or accidental higher-voltage contact. This answer matches PEC refined markdown lines 4483-4495.",
       "explanation": null,
       "code_citation": "PEC Part 2, NFPA 780, Maintenance and Testing section, tropical corrosion factors",
       "bloom_level": "apply",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-003-03-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.905411+00:00",
       "content_hash": "sha256:e111e645c2daf35ae62dc4fe3f120bd0352e4c4e5e797379de7f09c99789d205"
     },
     {
       "question_id": "2ff52618-d885-4b8a-93ce-4cd9072ba9a1",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "An industrial facility in Davao (isokeraunic level 50 days/year, soil resistivity 95 ohms·m) is designed with Level II protection, five air terminals, and a down conductor mesh network. The grounding design specifies eight ground rods (two per down conductor cluster): each rod is 3.5 m deep, copper, 16 mm diameter, spaced at 1.5 × rod length = 5.25 m apart. Calculate approximate individual rod resistance and identify whether supplementary grounding (ring conductor) is likely required.",
+      "text": "Why is bonding important in lightning-related electrical protection?",
       "options": [
         {
           "id": "a",
-          "text": "A) R_single ≈ 27 ohms; supplementary grounding required (parallel multi-rod system insufficient to guarantee ≤10 ohms)"
+          "text": "It intentionally isolates every electrode."
         },
         {
           "id": "b",
-          "text": "B) R_single ≈ 27 ohms; eight rods in parallel via interconnecting strap alone achieve ≤5 ohms (no supplementary needed), which is optimal for the facility's safety requirements"
+          "text": "It helps create a low-impedance path and limits potential differences between systems."
         },
         {
           "id": "c",
-          "text": "C) R_single ≈ 15 ohms; two-rod-per-cluster design reliably achieves ≤10 ohms throughout facility, ensuring compliance with local electrical codes"
+          "text": "It replaces all overcurrent devices."
         },
         {
           "id": "d",
-          "text": "D) R_single ≈ 38 ohms; facility requires deep electrodes (4.5 m minimum) to meet compliance, especially in high-resistivity soil conditions"
+          "text": "It is only decorative metalwork."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "R_single calculation correct but overstates sufficiency; eight unconnected rods achieve minimum ~9-10 ohms theoretically, but ring conductor addition guarantees <8 ohms and is recommended for industrial sites.",
-        "c": "Two-rod clusters (four total for two down conductor pairs) would produce R ≈ 27/2 ≈ 13.5 ohms per cluster, marginal without interconnection. Eight rods are better engineered.",
-        "d": "38 ohms is too high; 3.5 m rods produce ~27 ohms, not 38 ohms. Deeper rods help but existing design is reasonable if supplemented with ring.",
-        "correct": "R_single = 95 / 3.5 ≈ 27 ohms per rod. Eight rods each producing 27 ohms cannot achieve ≤10 ohms through simple parallel reduction unless the spacing factor and interconnection geometry are optimized. With eight rods spaced at 1.5× length in multi-cluster layout, the effective resistance reduction is typically R_eff ≈ 27 / sqrt(8) ≈ 9.5 ohms (optimistic). However, field verification is required, and a ring conductor is standard practice for industrial facilities to ensure robustness and current distribution redundancy.",
-        "takeaway": "Multi-rod grounding in high-resistivity soil requires calculation and field verification; ring conductor or interconnecting mesh is standard supplement for industrial/critical facilities to ensure <8 ohms margin."
-      },
+      "rationale": "It helps create a low-impedance path and limits potential differences between systems. This answer matches PEC refined markdown lines 4495-4578.",
       "explanation": null,
       "code_citation": "PEC Part 2, NFPA 780, grounding electrode spacing formula, Davao soil data",
       "bloom_level": "analyze",
@@ -101,30 +89,30 @@
       "model_id": "ALE-UTIL-003-03-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.901276+00:00",
       "content_hash": "sha256:df63136f2f85d9eba4161082c99251cf14055d9bbf710187dcdf179a35f75984"
     },
     {
       "question_id": "906d30bb-6a8e-4196-bc25-906cca44290f",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "Which of the following is NOT an acceptable method to achieve ≤10 ohm grounding resistance in Philippine soil conditions?",
+      "text": "What separation does PEC require where practicable between communications wiring and lightning conductors?",
       "options": [
         {
           "id": "a",
-          "text": "A) Two parallel 3.5 m copper rods with horizontal interconnecting strap in high-resistivity soil, which may not achieve the desired resistance without additional measures"
+          "text": "At least 150 mm."
         },
         {
           "id": "b",
-          "text": "B) One 5 m deep rod reaching lower soil layers in clay-rich regions, which is typically effective for achieving low resistance"
+          "text": "No separation when both are outdoors."
         },
         {
           "id": "c",
-          "text": "C) A single 3 m copper rod in isolation with bonded metal roof panels providing parallel path"
+          "text": "At least 1,800 mm."
         },
         {
           "id": "d",
-          "text": "D) Horizontal ring conductor buried 1 m deep around building perimeter, which is a common method for achieving low resistance"
+          "text": "Exactly the same support points."
         }
       ],
       "correct_option_id": "c",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Parallel rods with strap are standard practice (Deep Rod + Shallow Rods method per article) and reliably achieve <15 ohms.",
-        "b": "Deep rods reach wetter soil with lower resistivity, achieving ~20 ohms for a single deep electrode—acceptable when combined with parallel shallow rods.",
-        "d": "Ring electrode provides excellent redundancy and voltage distribution, commonly achieving 8-10 ohms for mid-sized buildings.",
-        "correct": "A single 3 m rod in isolation cannot meet ≤10 ohm requirement in typical Philippine soil (100-150 ohms·m produces ~33 ohms). Bonded roof panels are structural elements, not grounding electrodes, and contribute negligible conductance. Roofing material (metal, slate, tile) does not reduce electrode resistance; it requires bonding to the LPS but does not substitute for proper grounding design.",
-        "takeaway": "Grounding compliance requires intentional electrode design (multiple rods, deep drilling, or ring); bonded structural elements do not substitute for dedicated electrodes."
-      },
+      "rationale": "At least 1,800 mm. This answer matches PEC refined markdown lines 32160-32169.",
       "explanation": null,
       "code_citation": "PEC Part 2, NFPA 780, Example in article (Ground Resistance Calculation)",
       "bloom_level": "understand",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-003-03-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.911723+00:00",
       "content_hash": "sha256:bda0fddf9cfd17046cb9151fc519e1ec85b37183f59e1226ff43681323682437"
     },
     {
       "question_id": "e818819f-0ff7-4b53-bb2f-40a2bf72fff0",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "A data center in Makati has a Level I lightning protection system with a mesh roof conductor network (5 m × 5 m spacing). During design verification, the engineer calculates that a down conductor carries approximately 20 kA strike current. What minimum copper conductor cross-section is required to safely carry this current without significant temperature rise?",
+      "text": "What protection is required for communications circuits exposed to lightning?",
       "options": [
         {
           "id": "a",
-          "text": "A) 10 mm² (meets air terminal rod minimum)"
+          "text": "No protector if the cable is low voltage."
         },
         {
           "id": "b",
-          "text": "B) 16 mm² (meets PEC down conductor minimum)"
+          "text": "Only a larger wall outlet."
         },
         {
           "id": "c",
-          "text": "C) 35 mm² (higher capacity for Level I critical application)"
+          "text": "Only a decorative equipment cabinet."
         },
         {
           "id": "d",
-          "text": "D) 50 mm² (ensures margin for repeated strikes)"
+          "text": "Listed primary protectors at exposed building circuits as required by PEC."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "10 mm² is below PEC minimum for down conductors (only applies to air terminal rods themselves); undersized for strike current.",
-        "c": "35 mm² and 50 mm² exceed requirements for a single down conductor in this configuration. Oversizing adds unnecessary cost; the 5×5 m mesh provides current path redundancy, distributing the 20 kA across multiple parallel mesh segments.",
-        "d": "Multiple strikes to the same conductor are statistically rare within the lifetime of a building; design for single-event capacity, supported by annual inspection.",
-        "correct": "PEC specifies 16 mm² minimum for all down conductors regardless of protection level. A 16 mm² copper conductor can safely carry 20 kA for the brief millisecond duration of a lightning strike without exceeding safe temperature limits (~250°C). The conductor's thermal mass and short pulse duration prevent melting or significant damage. For a single 20 kA strike, 16 mm² is adequate per NFPA 780 empirical testing.",
-        "takeaway": "PEC minimum sizing (16 mm² copper) is based on empirical lightning current testing for typical strike durations and frequencies. Mesh method distributes current, reducing individual conductor burden."
-      },
+      "rationale": "Listed primary protectors at exposed building circuits as required by PEC. This answer matches PEC refined markdown lines 32169-32176.",
       "explanation": null,
       "code_citation": "PEC Part 2 Article 2.50, NFPA 780 Section 4.7 (down conductor sizing)",
       "bloom_level": "apply",
@@ -201,30 +177,30 @@
       "model_id": "ALE-UTIL-003-03-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.900064+00:00",
       "content_hash": "sha256:6ac3ce1147b4e07334d8de0de47759ee352d9b27228a806e458c1b1884476c64"
     },
     {
       "question_id": "984d84b6-2175-4a4b-a50b-41c9ccf7b531",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "A retrofit project involves upgrading a 30-year-old commercial building in metro Manila from no LPS to Level II protection. The structure is 28 m tall, 35 m × 28 m footprint, with clay soil (resistivity 130 ohms·m, water table at 2.8 m depth). Proposed design: four corner air terminals, four exterior down conductors, and grounding using six 3.5 m rods (two per down conductor pair) with horizontal strap interconnection. After design installation and testing, ground resistance measures 11.3 ohms (exceeds 10 ohm target by 1.3 ohms). The owner requests expedited approval and minimal cost retrofit. Evaluate the engineer's recommendation: 'Add one 2.5 m shallow ring conductor 0.8 m burial depth around building perimeter to reduce system resistance by approximately 4-5 ohms, achieving ≤7 ohms.' Is this approach technically sound?",
+      "text": "What is required when separate CATV and power grounding electrodes are used?",
       "options": [
         {
           "id": "a",
-          "text": "A) Yes; adding parallel conductive paths via ring conductor reliably reduces multi-rod resistance; 4-5 ohm reduction is reasonable estimate given six-rod base system"
+          "text": "Bond them together with the required bonding jumper."
         },
         {
           "id": "b",
-          "text": "B) No; the water table depth (2.8 m) exceeds ring burial (0.8 m), so ring conductor operates in dry soil layer and provides negligible capacitance reduction"
+          "text": "Keep them isolated to increase resistance."
         },
         {
           "id": "c",
-          "text": "C) Questionable; ring conductor helps but a more direct correction is to deepen all rods from 3.5 m to 4.2 m, reaching the water table and reducing rod resistance from 37 ohms each to ~31 ohms"
+          "text": "Use hot water pipes as protector electrodes."
         },
         {
           "id": "d",
-          "text": "D) Questionable; the 1.3 ohm excess is marginal; field test three additional locations on the grounding perimeter to confirm 11.3 ohms is not a local high-resistance spot—rework only if entire system confirms >10.5 ohms consistently"
+          "text": "Ground only the television outlet faceplate."
         }
       ],
       "correct_option_id": "a",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Water table at 2.8 m does place ring in drier soil (B), but ring still provides measurable conductance. Ignore water table in a 50-year design life (table fluctuates seasonally); ring capacitance dominates.",
-        "c": "Deepening rods (C) to 4.2 m requires full excavation and coordination; ring conductor retrofit is faster and equally effective given the marginal 1.3 ohm excess.",
-        "d": "Confirming the 11.3 ohm reading (D) is prudent, but it does not resolve non-compliance. PEC mandate is strict: ≤10 ohms maximum. Marginal excess still requires correction.",
-        "correct": "A horizontal ring conductor at 0.8 m depth (above water table) in moist Manila clay still provides parallel conductance; even dry-layer soil resistivity (150-200 ohms·m) combined with ring's larger surface area reduces effective system impedance. For six 3.5 m rods producing ~37 ohms each (130/3.5), a parallel ring adds ~5-6 ohms capacitance. The resulting parallel combination: R_eff = (37/6 × 5) / (37/6 + 5) ≈ 4.5-5 ohms in parallel with the six-rod cluster, reducing total to ~7-8 ohms. This is technically sound and cost-effective.",
-        "takeaway": "Ring conductor retrofit is a cost-effective field correction for marginal grounding compliance; provides parallel path that adds 4-5 ohms capacitance even at shallow burial depths, reducing multi-rod systems by 1-3 ohms net."
-      },
+      "rationale": "Bond them together with the required bonding jumper. This answer matches PEC refined markdown lines 32838-32920.",
       "explanation": null,
       "code_citation": "PEC Part 2, NFPA 780, grounding electrode design principles, Example in article (Ground Resistance Calculation)",
       "bloom_level": "evaluate",
@@ -251,30 +221,30 @@
       "model_id": "ALE-UTIL-003-03-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.902328+00:00",
       "content_hash": "sha256:ca506343111dcb9021215d271392679d44d6d60e50231dddff402bee2ed885a2"
     },
     {
       "question_id": "69b56ba6-6b49-4ec5-beff-c0cbb97530f8",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "According to PEC requirements, what is the minimum height that an air terminal (lightning rod) must extend above the highest point of a protected structure?",
+      "text": "What is the source-safe purpose of grounding in lightning and surge conditions?",
       "options": [
         {
           "id": "a",
-          "text": "A) 0.2 m"
+          "text": "To make earth the only fault-current path."
         },
         {
           "id": "b",
-          "text": "B) 0.5 m"
+          "text": "To limit voltage imposed by lightning, line surges, or accidental higher-voltage contact."
         },
         {
           "id": "c",
-          "text": "C) 1.0 m"
+          "text": "To eliminate all need for bonding."
         },
         {
           "id": "d",
-          "text": "D) 1.8 m"
+          "text": "To replace communication protectors."
         }
       ],
       "correct_option_id": "b",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.2 m is insufficient; the terminal must clear roof edges and safety equipment by larger margin.",
-        "c": "1.0 m is sometimes recommended for aesthetics or wind resistance but exceeds the minimum code requirement.",
-        "d": "1.8 m is the required clearance distance for down conductors from occupied spaces, not terminal height.",
-        "correct": "IEC 62305-3:2010 (no PEC Article 2.50) above the roof, antennas, and surrounding objects. This ensures the air terminal remains above all protected structure elements.",
-        "takeaway": "Air terminal minimum extension is 0.5 m per PEC; additional height may be specified for wind stability or equipment clearance on case-by-case basis."
-      },
+      "rationale": "To limit voltage imposed by lightning, line surges, or accidental higher-voltage contact. This answer matches PEC refined markdown lines 4483-4495.",
       "explanation": null,
       "code_citation": "PEC Part 2 Article 2.50, IEC 62305-3:2010",
       "bloom_level": "remember",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-003-03-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.909978+00:00",
       "content_hash": "sha256:116628b9ffc518277180e17c331aac64e205cb4655e33c3f8a1f3d5e81e3d707"
     },
     {
       "question_id": "356f819e-597c-4be7-bc31-1cdce0e3c675",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "During a site inspection in Cebu, the engineer observes a 3-story building with an aluminum down conductor routed 1.5 m from the main entrance door (within the occupied zone). The conductor is bonded via 16 mm² copper straps to metal railings and door frames. The owner insists that bonding these metal components reduces risk, making the interior routing acceptable. Is this assessment correct, and what is the appropriate corrective action?",
+      "text": "Why is bonding important in lightning-related electrical protection?",
       "options": [
         {
           "id": "a",
-          "text": "A) Correct; bonding metal elements to the down conductor pathway ensures safe current distribution to ground and permits interior routing"
+          "text": "It intentionally isolates every electrode."
         },
         {
           "id": "b",
-          "text": "B) Incorrect; bonding does not negate electrocution hazard; down conductor must be rerouted to exterior with ≥1.8 m clearance from occupied spaces"
+          "text": "It replaces all overcurrent devices."
         },
         {
           "id": "c",
-          "text": "C) Partially correct; bonding helps but interior routing remains unsafe; route to exterior and then bond metal elements from there"
+          "text": "It helps create a low-impedance path and limits potential differences between systems."
         },
         {
           "id": "d",
-          "text": "D) Conditional; interior routing is acceptable if bonded metal provides alternative current path, reducing voltage rise in down conductor during strikes"
+          "text": "It is only decorative metalwork."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Bonding aids current distribution but does not address the fundamental electrocution hazard from voltage transients in the immediate vicinity of the down conductor.",
-        "c": "Partially correct (C) is inconsistent with codes; exterior routing is mandatory, not conditional. Bonding should occur from external terminal points, not from interior conduit locations.",
-        "d": "Conditional reasoning (D) contradicts PEC safety philosophy. Alternative current paths do not justify occupant proximity to a high-current pathway.",
-        "correct": "Interior down conductor routing with occupied space proximity creates electrocution risk from voltage rise during lightning strikes (30 kA current induces high voltage differential). NFPA 780 and PEC mandate ≥1.8 m clearance from windows, doors, and work areas specifically to prevent this hazard. Bonding metal components to the conductor does not eliminate voltage rise; it only ensures those elements are at the same potential (reducing side-flash risk). The primary hazard—proximity to occupants during a strike event—remains unmitigated. Full exterior rerouting is required.",
-        "takeaway": "Interior down conductor routing is categorically prohibited in occupied zones per NFPA 780 and PEC Part 2. Bonding metal components is mandatory but separate from routing requirements."
-      },
+      "rationale": "It helps create a low-impedance path and limits potential differences between systems. This answer matches PEC refined markdown lines 4495-4578.",
       "explanation": null,
       "code_citation": "NFPA 780 Section 4.5, PEC Part 2 Article 2.50, down conductor routing section",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-003-03-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.907297+00:00",
       "content_hash": "sha256:60398dab6d76f7e4f2d9ba2ca2172a66974bd072c6732bff55da98805b904e46"
     },
     {
       "question_id": "3630dc79-02c6-4955-a698-9b05a6139d31",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "In the mesh method for large roof areas, what is the maximum conductor spacing for a Level II lightning protection system?",
+      "text": "What separation does PEC require where practicable between communications wiring and lightning conductors?",
       "options": [
         {
           "id": "a",
-          "text": "A) 5 m × 5 m"
+          "text": "At least 150 mm."
         },
         {
           "id": "b",
-          "text": "B) 10 m × 10 m"
+          "text": "No separation when both are outdoors."
         },
         {
           "id": "c",
-          "text": "C) 15 m × 15 m"
+          "text": "Exactly the same support points."
         },
         {
           "id": "d",
-          "text": "D) 20 m × 20 m"
+          "text": "At least 1,800 mm."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5 m × 5 m is reserved for Level I only; unnecessary expense for Level II systems.",
-        "c": "15 m × 15 m spacing is too loose for Level II; creates unprotected gaps if individual mesh conductors fail.",
-        "d": "20 m × 20 m spacing exceeds code allowance for any protection level; results in insufficient current path redundancy.",
-        "correct": "IEC 62305-3 specifies mesh spacing of 10 m × 10 m for Levels II, III, and IV. Level I requires the tighter 5 m × 5 m spacing for maximum redundancy and current distribution.",
-        "takeaway": "Mesh method spacing scales inversely with protection level; tighter mesh for highest levels, providing current distribution redundancy critical during multi-strike events."
-      },
+      "rationale": "At least 1,800 mm. This answer matches PEC refined markdown lines 32160-32169.",
       "explanation": null,
       "code_citation": "IEC 62305-3:2010, PEC Part 2 Article 2.50",
       "bloom_level": "understand",
@@ -401,30 +353,30 @@
       "model_id": "ALE-UTIL-003-03-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.910858+00:00",
       "content_hash": "sha256:548bc48eb573ac4f7655d9634689a4f489f5a47d9d3d46a1fee9a91fbf5baf0e"
     },
     {
       "question_id": "842f63a4-c052-4c2b-8993-fe58ccac3d00",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "A grounding system in Davao (soil resistivity 90 ohms·m) uses one 4 m deep rod and two 3 m deep rods in parallel with interconnecting strap. Calculate the approximate single-rod resistance and identify which configuration best achieves the ≤10 ohm PEC requirement.",
+      "text": "What protection is required for communications circuits exposed to lightning?",
       "options": [
         {
           "id": "a",
-          "text": "A) Single 4 m rod = 22.5 ohms; need additional ring conductor or deeper electrodes"
+          "text": "Listed primary protectors at exposed building circuits as required by PEC."
         },
         {
           "id": "b",
-          "text": "B) Single 4 m rod = 22.5 ohms; two 3 m rods in parallel achieve ≤10 ohms alone"
+          "text": "No protector if the cable is low voltage."
         },
         {
           "id": "c",
-          "text": "C) Single 4 m rod = 40 ohms; configuration insufficient without ring conductor"
+          "text": "Only a larger wall outlet."
         },
         {
           "id": "d",
-          "text": "D) Single 4 m rod = 15 ohms; configuration meets requirement without modification"
+          "text": "Only a decorative equipment cabinet."
         }
       ],
       "correct_option_id": "a",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Calculations correct for single rods, but parallel combination still marginal; ring conductor addition is standard practice.",
-        "c": "Two 3 m rods alone produce ~15 ohms, insufficient. The 4 m rod addition helps but strap interconnection factor requires verification by field testing.",
-        "d": "40 ohms underestimates 4 m rod performance; actual R = 22.5 ohms. Configuration is closer to compliance than stated.",
-        "correct": "Single 4 m rod: R ≈ ρ/(2πL) × ln(2L/a) ≈ 18-22Ω (approximate; field test required). Two 3 m rods: R_single = 90 / 3 = 30 ohms each; in parallel ≈ 15 ohms (ignoring spacing factor). Combined with the 4 m rod through interconnecting strap and deep clustering, the effective parallel resistance approaches 10-12 ohms. A supplementary ring conductor or additional shallow rods is typically required to confidently achieve ≤10 ohms in Davao's resistivity.",
-        "takeaway": "Philippine soil resistivity (50-150 ohms·m) typically requires multi-electrode or ring conductor design; single rods alone insufficient. Field testing validates design."
-      },
+      "rationale": "Listed primary protectors at exposed building circuits as required by PEC. This answer matches PEC refined markdown lines 32169-32176.",
       "explanation": null,
       "code_citation": "PEC Part 2, NFPA 780, grounding resistance calculation formula R = ρ / L",
       "bloom_level": "understand",
@@ -451,30 +397,30 @@
       "model_id": "ALE-UTIL-003-03-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.906360+00:00",
       "content_hash": "sha256:fefb4ef4fbeb6388b66b1e362ea2dbc55cd303a770e95d79ead9da2cac13e603"
     },
     {
       "question_id": "af96460b-60e3-4237-8a3b-e068fb6f8cad",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "A hospital in Quezon City (Level I protection requirement for critical care operations) is designed with four air terminals, mesh roof network (5 m × 5 m), and SPDs at the service entrance. The engineer calculates that the LPS down conductors and SPD grounding are separated by 0.3 m (air gap) at the building base. PEC Part 2 specifies coordination voltage ≤1 kV and recommends either closer bonding or insulation. Which combination of actions best mitigates the separation risk?",
+      "text": "What is required when separate CATV and power grounding electrodes are used?",
       "options": [
         {
           "id": "a",
-          "text": "A) Increase air gap to 0.5 m per PEC guidance; rely on SPD voltage limiting to protect patient equipment, ensuring compliance with safety standards"
+          "text": "Keep them isolated to increase resistance."
         },
         {
           "id": "b",
-          "text": "B) Install horizontal bonding strap (≥16 mm² copper) within 0.3 m lateral distance, connecting LPS ground ring to SPD ground electrode, reducing coupling impedance"
+          "text": "Bond them together with the required bonding jumper."
         },
         {
           "id": "c",
-          "text": "C) Route LPS and SPD grounds to separate electrode systems (>10 m apart) to avoid transient coupling; place additional SPD at LPS entry point to enhance protection"
+          "text": "Use hot water pipes as protector electrodes."
         },
         {
           "id": "d",
-          "text": "D) Install 50 mm solid insulation sheath around LPS conductors where they pass near SPD ground electrode; separation distance becomes secondary, focusing on insulation integrity"
+          "text": "Ground only the television outlet faceplate."
         }
       ],
       "correct_option_id": "b",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Increasing air gap does not reduce coupling; at 0.5 m, mutual inductance still causes transient coupling during lightning events.",
-        "c": "Separate electrode systems (C) create the opposite effect—isolated grounds amplify voltage differences and are explicitly prohibited for medical facility LPS/SPD coordination per IEC 62305-4.",
-        "d": "Insulation sheath (D) does not address the fundamental issue of separate voltage potentials; transient coupling occurs through the soil and return path.",
-        "correct": "PEC Article 2.50 recommends bonding LPS and SPD grounds at ≤0.5 m spacing via low-impedance conductor (≥16 mm² copper) to ensure coordinated voltage response. A horizontal bonding strap connecting the LPS ring or down conductor strap to the SPD ground electrode creates an equipotential zone, preventing voltage transient differences that could damage patient-critical equipment. This is more reliable than increasing separation distance (A) or physical insulation (D).",
-        "takeaway": "Medical facility LPS and SPD grounding must be bonded at ≤0.5 m via low-impedance strap to ensure safe, coordinated voltage response. Equipotential bonding is more critical than separation distance."
-      },
+      "rationale": "Bond them together with the required bonding jumper. This answer matches PEC refined markdown lines 32838-32920.",
       "explanation": null,
       "code_citation": "PEC Part 2 Article 2.50, IEC 62305-4:2010 (SPD coordination), medical facility guidelines",
       "bloom_level": "analyze",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-003-03-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.909108+00:00",
       "content_hash": "sha256:a497f6c5d452139fb5678a8ccc147b2840ccb2d263177a255b792e7cdc1aa5a4"
     },
     {
       "question_id": "5cf18a7a-7c9f-457e-b86b-bd2dcd8c4e53",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "For a Level I lightning protection system, what is the protection angle (α) and what maximum protected radius can be achieved with a 25 m tall air terminal using the protection angle method at ground level?",
+      "text": "What is the source-safe purpose of grounding in lightning and surge conditions?",
       "options": [
         {
           "id": "a",
-          "text": "A) α = 25°; radius = 11.7 m"
+          "text": "To make earth the only fault-current path."
         },
         {
           "id": "b",
-          "text": "B) α = 35°; radius = 17.5 m"
+          "text": "To eliminate all need for bonding."
         },
         {
           "id": "c",
-          "text": "C) α = 45°; radius = 25.0 m"
+          "text": "To limit voltage imposed by lightning, line surges, or accidental higher-voltage contact."
         },
         {
           "id": "d",
-          "text": "D) α = 60°; radius = 43.3 m"
+          "text": "To replace communication protectors."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "α = 35° is Level II, not Level I; produces larger radius (17.5 m).",
-        "c": "α = 45° is Level III with 25 m terminal; protection angle method less effective for Level I precision.",
-        "d": "α = 60° is Level IV with smallest protection angle; would give maximum reach but lowest protection level.",
-        "correct": "IEC 62305-3:2010 Level I uses α = 25° (not PEC-specific). At ground level, protection radius = h × tan(α) = 25 × tan(25°) = 25 × 0.466 ≈ 11.7 m. This represents the protected diameter circle directly below the terminal.",
-        "takeaway": "Protection angle method directly correlates to protection level; Level I (α=25°) offers smallest ground radius but highest safety margin. Rolling sphere method preferred for design precision."
-      },
+      "rationale": "To limit voltage imposed by lightning, line surges, or accidental higher-voltage contact. This answer matches PEC refined markdown lines 4483-4495.",
       "explanation": null,
       "code_citation": "IEC 62305-3:2010, PEC Part 2 Article 2.50",
       "bloom_level": "understand",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-003-03-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.903426+00:00",
       "content_hash": "sha256:a37b539b6346018ddab5cd15970bdd7426759b3f8207dbce72e857c0f55add7b"
     },
     {
       "question_id": "c316d8c5-ce1d-494c-9b26-25bcc2485dec",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "A 20 m × 20 m residential building roof in Cebu (Level II protection, r = 30 m) uses the rolling sphere method. If a single air terminal is positioned at the geometric center (10 m, 10 m), what distance from this center point can the protection sphere just barely reach along the roof edge?",
+      "text": "Why is bonding important in lightning-related electrical protection?",
       "options": [
         {
           "id": "a",
-          "text": "A) 14.1 m"
+          "text": "It intentionally isolates every electrode."
         },
         {
           "id": "b",
-          "text": "B) 20.0 m"
+          "text": "It replaces all overcurrent devices."
         },
         {
           "id": "c",
-          "text": "C) 21.2 m"
+          "text": "It is only decorative metalwork."
         },
         {
           "id": "d",
-          "text": "D) 30.0 m"
+          "text": "It helps create a low-impedance path and limits potential differences between systems."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "14.1 m is the direct diagonal distance to the corner but ignores the rolling sphere's 3D geometry and actual protection extent.",
-        "b": "20.0 m represents the half-width of the building and lacks geometric justification for rolling sphere protection.",
-        "d": "30.0 m is the sphere radius itself; it cannot be directly applied as a 2D distance without accounting for height and 3D geometry.",
-        "correct": "The sphere radius (30 m) must be rolled across the roof. From the center (10, 10), the corner of the roof is at distance √[(10)² + (10)²] = 14.1 m. However, the sphere can reach 30 m away; Maximum protection along edge from center is approximately 25.8m from center point (√(30² - 14.1²)) from the building corner (or at calculated arc distance). This accounts for the 3D geometry where the sphere is not constrained to the roof plane.",
-        "takeaway": "Rolling sphere method requires 3D geometric analysis; a center terminal on a 20×20 building requires supplementary edge terminals to ensure full roof coverage."
-      },
+      "rationale": "It helps create a low-impedance path and limits potential differences between systems. This answer matches PEC refined markdown lines 4495-4578.",
       "explanation": null,
       "code_citation": "IEC 62305-3:2010, Example 2 (Residential Tower) in article text",
       "bloom_level": "understand",
@@ -601,30 +529,30 @@
       "model_id": "ALE-UTIL-003-03-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.912592+00:00",
       "content_hash": "sha256:00b2e0c143d0527d19e8cd8cd8276d01de1b059e767f8cdbbf4d074d008d526f"
     },
     {
       "question_id": "4d507ade-a0a9-45a5-ae08-1431c09ca010",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "An engineer is designing lightning protection for a 50 m tall mixed-use building (residential + data center) in metro Manila. The building has a rectangular footprint of 30 m × 25 m. Using Level II protection (r = 30 m), the engineer proposes air terminals only at the four roof corners with spacing of exactly 60 m (at maximum allowable limit per 2 × r). After rolling sphere verification, unprotected zones are found at the roof center region. What is the most cost-effective primary correction?",
+      "text": "What separation does PEC require where practicable between communications wiring and lightning conductors?",
       "options": [
         {
           "id": "a",
-          "text": "A) Add a single central air terminal with mesh conductors radiating to corners"
+          "text": "At least 1,800 mm."
         },
         {
           "id": "b",
-          "text": "B) Install a 10 m × 10 m protective mesh across entire roof, eliminating need for corner terminals"
+          "text": "At least 150 mm."
         },
         {
           "id": "c",
-          "text": "C) Reduce spacing between existing corner terminals; move one or two to roof perimeter edges"
+          "text": "No separation when both are outdoors."
         },
         {
           "id": "d",
-          "text": "D) Install surge protection devices (SPDs) at electrical entry points to compensate for zone gaps"
+          "text": "Exactly the same support points."
         }
       ],
       "correct_option_id": "a",
@@ -632,13 +560,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Full mesh retrofit (B) is more expensive than one additional terminal and exceeds Level II requirements (5×5 m mesh is Level I standard).",
-        "c": "Adjusting spacing (C) within the same four-corner framework is geometrically impossible; corners define the perimeter.",
-        "d": "SPDs (D) protect internal equipment from transient overvoltage but do not address direct-strike protection gaps on the roof; they are complementary, not primary corrections.",
-        "correct": "Adding a central air terminal at the roof geometric center (15 m, 12.5 m) with mesh connections to corners addresses the unprotected center zone while maintaining corner redundancy. This preserves the four-corner configuration's resilience while extending protection to the high-value data center roof region. Cost-effective because it reuses the corner terminals already installed.",
-        "takeaway": "Rolling sphere verification must precede installation; rectangular buildings often require center terminals in addition to corners. Mesh method is backup if terminal addition is impractical."
-      },
+      "rationale": "At least 1,800 mm. This answer matches PEC refined markdown lines 32160-32169.",
       "explanation": null,
       "code_citation": "IEC 62305-3:2010, RSM principles, Example 2 (Residential Tower) methodology",
       "bloom_level": "apply",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-003-03-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.904431+00:00",
       "content_hash": "sha256:a7aaf03186afe3cf43634c37fba7374f35a417578e413dfb0487b30c7b50b4fb"
     },
     {
       "question_id": "58b5ec72-4d3a-46dc-97c4-2bed78f956a6",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "In the Philippines, which protection level is mandated as the minimum standard for commercial buildings exceeding 15 m height in high isokeraunic regions (>50 thunderstorm days/year)?",
+      "text": "What protection is required for communications circuits exposed to lightning?",
       "options": [
         {
           "id": "a",
-          "text": "A) Level IV (60 m sphere radius), which provides the highest level of protection and is typically used for critical infrastructure."
+          "text": "No protector if the cable is low voltage."
         },
         {
           "id": "b",
-          "text": "B) Level III (45 m sphere radius), which is suitable for most commercial applications and balances cost with protection."
+          "text": "Listed primary protectors at exposed building circuits as required by PEC."
         },
         {
           "id": "c",
-          "text": "No specific level mandated; refer to NFPA 780/IEC 62305 risk assessment per PEC reference standards"
+          "text": "Only a larger wall outlet."
         },
         {
           "id": "d",
-          "text": "D) Level I (20 m sphere radius), which offers basic protection and is often used for residential buildings rather than commercial ones."
+          "text": "Only a decorative equipment cabinet."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Level IV is too basic for commercial occupancy and high isokeraunic exposure; reserved for low-risk storage or auxiliary structures.",
-        "b": "Level III is common for residential buildings but insufficient for commercial occupancy with critical systems; still lower than recommended minimum.",
-        "d": "Level I is reserved for hospitals, data centers, and hazardous materials facilities—overkill for standard commercial buildings unless specific risk assessment justifies it.",
-        "correct": "Level II protection is the standard baseline for buildings >15 m in high-frequency thunderstorm areas. PEC guidelines and IEC 62305-2 risk analysis typically recommend Level II for most Philippine commercial structures due to the nation's 40-80 thunderstorm days per year.",
-        "takeaway": "Philippine thunderstorm frequency necessitates Level II as the practical minimum for commercial/tall residential in high-risk zones; Level III acceptable for residential only."
-      },
+      "rationale": "Listed primary protectors at exposed building circuits as required by PEC. This answer matches PEC refined markdown lines 32169-32176.",
       "explanation": null,
       "code_citation": "PEC 1-2017 Article 2.90; NFPA 780; IEC 62305, IEC 62305-2:2010, Philippine isokeraunic data",
       "bloom_level": "remember",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-003-03-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.898150+00:00",
       "content_hash": "sha256:da03174208f82bca95fbbf02f9e7b648f6b03be7c603852a2e62ee940ab0b6f0"
     },
     {
       "question_id": "2d874579-510d-4c12-9656-0fd954ef52d2",
       "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
       "topic_id": "c6580518-21ae-4e62-a370-23f333b8cdea",
-      "text": "An engineer reviews a completed LPS design for a 45 m tall office building in northern Mindanao (isokeraunic level 58 days/year). The design includes: Level II protection (r=30 m), six air terminals on the roof with 48 m nominal spacing, four exterior down conductors (copper, 16 mm²), and grounding with three parallel 3.5 m rods per down conductor (total 12 rods, soil resistivity 105 ohms·m, spacing 5.25 m apart). Post-installation clamp-on testing shows ground resistance = 8.5 ohms. Which aspect of the system design is most questionable for long-term compliance in this tropical high-frequency environment?",
+      "text": "What is required when separate CATV and power grounding electrodes are used?",
       "options": [
         {
           "id": "a",
-          "text": "A) Air terminal spacing of 48 m exceeds the Level II maximum of 60 m; no concern"
+          "text": "Keep them isolated to increase resistance."
         },
         {
           "id": "b",
-          "text": "B) Grounding resistance of 8.5 ohms is below target; system is over-designed and cost-inefficient, potentially leading to unnecessary expenses"
+          "text": "Use hot water pipes as protector electrodes."
         },
         {
           "id": "c",
-          "text": "C) Six air terminals on a rectangular roof create potential unprotected corner/edge zones; rolling sphere verification required to ensure comprehensive coverage"
+          "text": "Bond them together with the required bonding jumper."
         },
         {
           "id": "d",
-          "text": "D) Four down conductors are minimum per PEC; consider adding two diagonal cross-straps or mesh to distribute current during multi-stroke events in 58-day/year environment"
+          "text": "Ground only the television outlet faceplate."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "48 m spacing is within the 60 m limit (2×r for Level II); spacing is acceptable and geometrically sound.",
-        "b": "8.5 ohms is well below the 10 ohm maximum, providing safety margin. Over-design in grounding is acceptable and recommended for coastal/high-humidity regions where corrosion risk is elevated.",
-        "c": "Six air terminals require rolling sphere verification regardless; the question asks about design aspects most questionable for compliance. RSM verification is mandatory but does not emerge as a primary concern if properly performed during design phase.",
-        "correct": "While four down conductors meet the PEC minimum, the high isokeraunic level (58 days/year) and tall building height (45 m) increase multi-strike probability. Best practice in high-frequency regions adds cross-bonding between down conductors (diagonal straps) or mesh segments to distribute current during sequential strikes to different roof points. This redundancy is cost-effective insurance in tropical regions. The present design is compliant but marginally resilient for the local environment.",
-        "takeaway": "In high isokeraunic regions (>50 days/year), redundant current paths (cross-straps, mesh) beyond minimum down conductors significantly improve resilience to multi-stroke events. PEC compliance does not mandate this, but engineering best practice in the Philippine context does."
-      },
+      "rationale": "Bond them together with the required bonding jumper. This answer matches PEC refined markdown lines 32838-32920.",
       "explanation": null,
       "code_citation": "PEC Part 2 Article 2.50, IEC 62305-1:2010 (risk assessment for high-frequency regions), tropical environment factors",
       "bloom_level": "analyze",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-003-03-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.908213+00:00",
       "content_hash": "sha256:eefe3593e3ee94803e5bfc04724286590852a1635a74219f8520717fd6af7077"
     }
   ]

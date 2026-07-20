@@ -8,38 +8,31 @@
       "question_id": "6f11d12f-f2c8-4542-b40d-ff6ebacefa59",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "What is the Project Manager's fee range under SPP 206?",
+      "text": "What is the source-safe compensation statement for a Project Manager under SPP 206?",
       "options": [
         {
           "id": "a",
-          "text": "1-3% of PCC"
+          "text": "The PM is compensated on a percentage basis as described in the Architect's Guidelines"
         },
         {
           "id": "b",
-          "text": "2-5% of PCC"
+          "text": "The PM is always paid 2-5% of PCC under the checked source"
         },
         {
           "id": "c",
-          "text": "5-8% of PCC"
+          "text": "The PM is paid only through MDPE"
         },
         {
           "id": "d",
-          "text": "7-10% of PCC"
+          "text": "The PM receives no separate compensation when regular design services are also performed"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1-3% is below the SPP 206 specification for PM fees.",
-        "b": "Correct. The Project Manager's fee under SPP 206 is 2-5% of PCC, separate from the SPP 202 design fee.",
-        "c": "5-8% exceeds the SPP 206 PM fee range.",
-        "d": "7-10% is far above the PM fee and may be confused with design fee rates.",
-        "correct": "SPP 206 specifies the PM fee at 2-5% of PCC, separate from the design fee. This compensates the PM for overall project coordination, cost control, scheduling, and management of the multidisciplinary team.",
-        "takeaway": "PM fee = 2-5% of PCC (separate from design fee)."
-      },
+      "rationale": "The checked source states percentage basis and separately compensates regular design services under SPP 202 when the architect as PM performs them.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "remember",
@@ -52,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.067768+00:00",
       "content_hash": "sha256:7bb746f3f2cc21495850d4ac4ae8ddf78ea953d44f6b6afc3e239b60b5e1ced9"
     },
     {
       "question_id": "1d327aad-2f00-470b-a072-73c86592108e",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "What is the OAEC Team Approach referenced in SPP 206?",
+      "text": "What does the OAEC Team Approach in SPP 206 identify?",
       "options": [
         {
           "id": "a",
-          "text": "A construction methodology for large projects, focusing on integrated project delivery and efficiency"
+          "text": "A team relationship among Owner, Architect, Engineer, Contractor, and Project Manager"
         },
         {
           "id": "b",
-          "text": "A multidisciplinary collaboration framework including Owner, Architect, Engineer, and Contractor"
+          "text": "A government procurement method"
         },
         {
           "id": "c",
-          "text": "A quality assurance protocol for design review, ensuring compliance with industry standards and best practices"
+          "text": "A construction-only quality checklist"
         },
         {
           "id": "d",
-          "text": "A government procurement method for public works, emphasizing transparency and competitive bidding"
+          "text": "A fee formula for SPP 202"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "OAEC is not a construction methodology but a collaborative team framework.",
-        "b": "Correct. The OAEC Team Approach is a multidisciplinary collaboration framework that includes the Owner, Architect, Engineer, and Contractor working together under the CAS umbrella.",
-        "c": "Quality assurance is a component but not the defining characteristic of the OAEC approach.",
-        "d": "OAEC is not a procurement method. It describes the collaborative relationship structure.",
-        "correct": "The OAEC Team Approach referenced in SPP 206 is a collaborative framework that brings together the Owner (O), Architect (A), Engineer (E), and Contractor (C) in a coordinated team structure under the CAS umbrella for comprehensive project delivery.",
-        "takeaway": "OAEC = Owner, Architect, Engineer, Contractor team collaboration."
-      },
+      "rationale": "SPP 206 describes the PM as operating within the Owner-Architect-Engineer-Contractor team approach.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "understand",
@@ -103,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.069163+00:00",
       "content_hash": "sha256:92888989d5dbdb94e92960c4e4b7dbfe673f0e8026d8490a38db702f5fa44782"
     },
     {
       "question_id": "ec575392-5394-45da-97e1-fdec87985fa2",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "What is the Project Manager's primary responsibility under SPP 206?",
+      "text": "What is the Project Manager's primary responsibility under the SPP 206 team approach?",
       "options": [
         {
           "id": "a",
-          "text": "Design quality assurance"
+          "text": "Overall cost control through planning, programming, monitoring, and advising on material costs and construction methods"
         },
         {
           "id": "b",
-          "text": "Overall cost control"
+          "text": "Replacing the architect as designer of record"
         },
         {
           "id": "c",
-          "text": "Construction supervision"
+          "text": "Selecting all contractors without owner participation"
         },
         {
           "id": "d",
-          "text": "Regulatory compliance"
+          "text": "Approving engineering plans as the engineer of record"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Design quality is the designing architect's responsibility, not the PM's primary function.",
-        "b": "Correct. The PM's primary responsibility under SPP 206 is overall cost control — ensuring the project stays within budget across all phases.",
-        "c": "Construction supervision is covered under SPP 204-A/B. The PM coordinates but does not primarily supervise.",
-        "d": "Regulatory compliance is a component of project management but not the primary PM responsibility.",
-        "correct": "Under SPP 206, the Project Manager's primary responsibility is overall cost control. The PM monitors budgets, tracks expenditures, manages change orders, and ensures the project remains financially viable throughout all phases.",
-        "takeaway": "PM primary responsibility = overall cost control."
-      },
+      "rationale": "The source assigns the PM primary responsibility for overall cost control while other team members keep their own domains.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "understand",
@@ -154,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.066429+00:00",
       "content_hash": "sha256:c884df136b1118207aa83732e014245f1138802604a48d8e7db81380d2741a32"
     },
     {
       "question_id": "1b7cf899-e38f-443a-858c-c49688e67bf4",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "What are the three dimensions of Architect primacy under SPP 206?",
+      "text": "Which phrase matches the architect's prime-professional role in SPP 206?",
       "options": [
         {
           "id": "a",
-          "text": "Designer, Builder, Owner's Representative"
+          "text": "Creator, author, and coordinator of the building design"
         },
         {
           "id": "b",
-          "text": "Creator, Author, Coordinator"
+          "text": "Contractor, supplier, and financier of the building"
         },
         {
           "id": "c",
-          "text": "Planner, Engineer, Administrator"
+          "text": "Owner, regulator, and contractor of record"
         },
         {
           "id": "d",
-          "text": "Consultant, Supervisor, Manager"
+          "text": "Sole performer of every project service"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Builder is a contractor role, not a dimension of architect primacy.",
-        "b": "Correct. The three dimensions of Architect primacy are: Creator (originator of the design), Author (intellectual owner of the work), and Coordinator (integrator of all disciplines).",
-        "c": "Planner and Engineer are related roles but not the three dimensions specified in SPP 206.",
-        "d": "Consultant and Manager describe functions, not the primacy dimensions.",
-        "correct": "SPP 206 establishes three dimensions of Architect primacy: Creator (the originator and creative force behind the design), Author (the intellectual property holder and design authority), and Coordinator (the integrator who harmonizes all disciplines).",
-        "takeaway": "Three dimensions of Architect primacy: Creator, Author, Coordinator."
-      },
+      "rationale": "SPP 206 describes the architect as creator, author, and coordinator of the building design.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "remember",
@@ -205,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.070450+00:00",
       "content_hash": "sha256:6bfadbc140e97ee9d43437880804c920f311295701956f046efbd90a37fa9274"
     },
     {
       "question_id": "b60a8e08-3cee-4c81-836d-d1c9f154a257",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "What is Comprehensive Architectural Services (CAS) under SPP 206?",
+      "text": "What is Comprehensive Architectural Services under SPP 206?",
       "options": [
         {
           "id": "a",
-          "text": "A replacement for all individual SPP documents, streamlining the architectural service process"
+          "text": "A service range covering pre-design, regular design, specialized services, construction services, and post-construction services"
         },
         {
           "id": "b",
-          "text": "An umbrella of SPP 201-205 services under a Project Manager"
+          "text": "A construction-only service under SPP 204-B"
         },
         {
           "id": "c",
-          "text": "A specialized service for government projects only, focusing on public infrastructure"
+          "text": "A replacement for all other SPP documents"
         },
         {
           "id": "d",
-          "text": "A new design methodology introduced in 2010, emphasizing sustainability and innovation"
+          "text": "A government-only service for public works"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "CAS does not replace individual SPP documents. It integrates them under unified management.",
-        "b": "Correct. CAS is an umbrella that integrates SPP 201-205 services under the coordination of a Project Manager, providing comprehensive management across all project phases.",
-        "c": "CAS applies to all project types, not just government projects.",
-        "d": "CAS is not a design methodology but a management/coordination framework.",
-        "correct": "Comprehensive Architectural Services (CAS) under SPP 206 is an umbrella that integrates all services from SPP 201 through 205 under the coordination of a Project Manager. It adds a management layer without replacing the individual service documents.",
-        "takeaway": "CAS = umbrella of SPP 201-205 under a Project Manager."
-      },
+      "rationale": "SPP 206 defines CAS as a full range of professional services from pre-design through post-construction.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "understand",
@@ -256,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.064828+00:00",
       "content_hash": "sha256:7b802e2ba8b6e7a6e99646df76f035e39d4b1f35a9a51d4a11c56b86d5b0bc95"
     },
     {
       "question_id": "2d264421-3dc4-4881-a033-81cfb75be92b",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "During which design phase should the Project Manager ideally be engaged under SPP 206?",
+      "text": "When should PM consultations begin according to the checked SPP 206 source?",
       "options": [
         {
           "id": "a",
-          "text": "Pre-design phase (SPP 201)"
+          "text": "As early as the design development phase, perhaps concurrently with the architect's commission"
         },
         {
           "id": "b",
-          "text": "Design Development phase"
+          "text": "Only after final completion"
         },
         {
           "id": "c",
-          "text": "Contract Documents phase"
+          "text": "Only after the certificate of occupancy is issued"
         },
         {
           "id": "d",
-          "text": "Construction phase"
+          "text": "Only when a contractor has defaulted"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Pre-design is too early. The PM engagement should begin when design activities are underway.",
-        "b": "Correct. The PM should ideally be engaged during the Design Development phase, allowing the PM to coordinate multidisciplinary inputs as the design takes detailed shape.",
-        "c": "Contract Documents phase is too late for effective PM integration into the project team.",
-        "d": "Construction phase is far too late. The PM needs to be involved well before construction begins.",
-        "correct": "SPP 206 recommends PM engagement during the Design Development phase. This timing allows the PM to influence project coordination, cost control, and scheduling as the design progresses from concept to detailed development.",
-        "takeaway": "PM engagement should begin during Design Development phase."
-      },
+      "rationale": "SPP 206 places PM consultation as early as design development, possibly concurrent with the architect's commission.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "apply",
@@ -307,45 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.068433+00:00",
       "content_hash": "sha256:3c3b4ecea60d4cce4618eab9e012674cffb2d59db60cb6b4e4472819cdb345d9"
     },
     {
       "question_id": "22ca1a75-136a-4a8d-ab93-db276e9d771a",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "How many professional types typically compose the multidisciplinary team under SPP 206 CAS?",
+      "text": "Which set appears in the SPP 206 multidisciplinary team examples?",
       "options": [
         {
           "id": "a",
-          "text": "5, including architects, engineers, and planners"
+          "text": "Architects, engineers, market analysts, accountants, general contractors, real estate consultants, sociologists, planners, bankers, and lawyers"
         },
         {
           "id": "b",
-          "text": "7, covering a range of specialties such as architecture, engineering, and environmental science"
+          "text": "Architects only, because CAS must be personally performed"
         },
         {
           "id": "c",
-          "text": "10"
+          "text": "Contractors only, because CAS is construction management"
         },
         {
           "id": "d",
-          "text": "12, incorporating diverse fields like architecture, engineering, and urban planning"
+          "text": "Jurors, competitors, and professional advisers"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5 professionals is too few for a comprehensive multidisciplinary team.",
-        "b": "7 professionals is insufficient for the full CAS team composition.",
-        "c": "Correct. SPP 206 identifies 10 professional types in the multidisciplinary CAS team, reflecting the comprehensive nature of the services.",
-        "d": "12 professionals exceeds the SPP 206 specification.",
-        "correct": "SPP 206 identifies 10 professional types in the multidisciplinary CAS team. This typically includes the architect, structural engineer, mechanical engineer, electrical engineer, sanitary engineer, electronics engineer, interior designer, landscape architect, quantity surveyor, and project manager.",
-        "takeaway": "CAS multidisciplinary team = 10 professional types."
-      },
+      "rationale": "The source lists these ten examples of professionals who may compose the CAS team.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "remember",
@@ -358,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.069821+00:00",
       "content_hash": "sha256:b4f2a5e39e3b6b619cd2a889a2967122b9cc58a66dabc1cb299aa1229e094c25"
     },
     {
       "question_id": "9e0284a1-afca-4906-864d-d70315d03911",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Does the PM's engagement under SPP 206 relieve designers and contractors of their individual duties?",
+      "text": "Does the presence of a Project Manager relieve designers and contractors of their normal duties?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the PM assumes overall responsibility for all parties, including any liabilities that may arise during the project"
+          "text": "No. The PM complements them; they keep their respective normal duties and responsibilities"
         },
         {
           "id": "b",
-          "text": "Yes, but only during the construction phase, and only if explicitly stated in the contract"
+          "text": "Yes. The PM absorbs all duties and liabilities"
         },
         {
           "id": "c",
-          "text": "No, the PM does not relieve designers or contractors of their duties"
+          "text": "Yes, but only during bidding"
         },
         {
           "id": "d",
-          "text": "No, except when the PM is also the designing architect, in which case some responsibilities may overlap"
+          "text": "No, because PM is unrelated to design or construction"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The PM coordinates but does not assume individual parties' responsibilities.",
-        "b": "The PM does not relieve any party at any phase. Individual accountability is maintained.",
-        "c": "Correct. The PM does not relieve designers or contractors of their individual duties and responsibilities. Each party remains accountable for their own scope of work.",
-        "d": "There is no exception for dual-role situations. Individual duties remain.",
-        "correct": "SPP 206 makes clear that the PM's engagement does not relieve designers, contractors, or consultants of their individual duties and responsibilities. The PM coordinates and manages, but each party retains professional accountability for their work.",
-        "takeaway": "PM does NOT relieve designers/contractors of their duties."
-      },
+      "rationale": "SPP 206 expressly states that the PM does not relieve designers and contractors of normal duties and responsibilities.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "understand",
@@ -409,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.067109+00:00",
       "content_hash": "sha256:3fcfa7916d010a1f2657df0932d90fcb7681047c3e7be6daf9b069baab41cf14"
     },
     {
       "question_id": "cdc8b26a-8f05-484e-89d9-720cfeea0b1e",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Does CAS under SPP 206 replace the individual services defined in SPP 201-205?",
+      "text": "How should CAS be understood in relation to SPP 201 through SPP 205?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, CAS is a standalone replacement for all individual SPP services, streamlining the architectural service process"
+          "text": "CAS coordinates the service range; it does not erase the underlying service categories"
         },
         {
           "id": "b",
-          "text": "Yes, but only for projects above a certain PCC threshold, ensuring cost-effectiveness for larger projects"
+          "text": "CAS applies only to SPP 204-B"
         },
         {
           "id": "c",
-          "text": "No, CAS adds a management layer but does not replace individual services"
+          "text": "CAS replaces the need for post-construction services"
         },
         {
           "id": "d",
-          "text": "No, CAS only applies to the construction phase, limiting its scope to specific project stages"
+          "text": "CAS is only a fee schedule"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "CAS does not replace individual SPP documents. Each service retains its own scope and compensation.",
-        "b": "There is no PCC threshold. The relationship between CAS and individual SPPs is structural, not size-dependent.",
-        "c": "Correct. CAS adds a management and coordination layer over the individual SPP 201-205 services. Each individual service document retains its own scope, requirements, and compensation structure.",
-        "d": "CAS covers all project phases, not just construction.",
-        "correct": "CAS under SPP 206 adds a management layer — it does not replace individual SPP 201-205 services. Each service document retains its independent scope and compensation. CAS provides the coordination umbrella that integrates them into a comprehensive delivery framework.",
-        "takeaway": "CAS adds management layer — does NOT replace individual SPP services."
-      },
+      "rationale": "The source maps CAS across SPP 201 through SPP 205 service categories.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "analyze",
@@ -460,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.063595+00:00",
       "content_hash": "sha256:88618e7ce9aa536daff1763d2f4b30c87376311855005eb31b31a12af3776332"
     },
     {
       "question_id": "ad9d170a-fc28-410f-aac1-fd3ff9e68f5c",
       "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
       "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Under SPP 206, is the Architect expected to perform all services personally?",
+      "text": "Is the architect expected to perform every CAS service personally?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, the Architect must personally perform all services, without exception or delegation"
+          "text": "No. The architect acts as the client's agent in procuring and coordinating necessary services"
         },
         {
           "id": "b",
-          "text": "Yes, but may delegate non-critical tasks to staff, provided they are supervised closely"
+          "text": "Yes. Delegation is prohibited under SPP 206"
         },
         {
           "id": "c",
-          "text": "No, the Architect is NOT expected to perform all services personally"
+          "text": "Yes, unless the owner is a government entity"
         },
         {
           "id": "d",
-          "text": "No, only if the project exceeds a certain PCC threshold, which allows for delegation"
+          "text": "No. The architect has no coordinating role"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Personal performance of all services is impractical for comprehensive projects. SPP 206 recognizes this.",
-        "b": "Delegation is not limited to non-critical tasks. The Architect coordinates a team of specialists.",
-        "c": "Correct. Under SPP 206, the Architect is explicitly NOT expected to perform all services personally. The CAS model recognizes that comprehensive projects require a multidisciplinary team.",
-        "d": "The principle applies regardless of PCC. It is inherent to the CAS framework.",
-        "correct": "SPP 206 explicitly states that the Architect is NOT expected to perform all services personally. The CAS model recognizes that comprehensive projects require diverse expertise, with the Architect serving as coordinator of a multidisciplinary team.",
-        "takeaway": "Architect is NOT expected to perform all CAS services personally."
-      },
+      "rationale": "The source states that the architect is not expected to perform all services and instead procures and coordinates required services.",
       "explanation": null,
       "code_citation": "SPP 206",
       "bloom_level": "understand",
@@ -511,7 +441,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:48.105563+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.065690+00:00",
       "content_hash": "sha256:29c6308e3ffdf9a61adb3de925b4a3a0e728565b6986ade21228dac53e98e214"
     }
   ]

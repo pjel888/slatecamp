@@ -1,0 +1,508 @@
+{
+  "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6e50138299d91f7c7b42adcb2d2cb5b2df27fbc26d5a4a05563b4f52fa31be15",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "14e40c1e-bbd2-4e6b-9b3a-83a2132cc4bf",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "An architect assigned all copyright in a building design to a developer. The developer then licensed the design to a competitor without the architect's permission. What rights does the architect have?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect retains economic copyright rights and can sue the developer for unauthorized licensing, provided the assignment agreement included specific restrictions"
+        },
+        {
+          "id": "b",
+          "text": "The architect retains inalienable moral rights to be credited as the author, but not economic copyright rights"
+        },
+        {
+          "id": "c",
+          "text": "The architect has no remaining rights, as all copyright was assigned to the developer, leaving no legal recourse"
+        },
+        {
+          "id": "d",
+          "text": "The architect may sue only if the assignment agreement explicitly prohibited sublicensing, which is a common clause in such agreements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses the consequence of copyright assignment; the architect loses economic copyright rights after valid assignment to the developer.",
+        "c": "Fails to recognize inalienable moral rights; the architect retains the right to be credited as author regardless of copyright transfer.",
+        "d": "Overstates the requirement; moral rights are inalienable and protected by law regardless of what the assignment agreement states.",
+        "correct": "Under RA 8293, moral rights (attribution and integrity) are inalienable—they remain with the architect regardless of copyright assignment. The architect retains the right to claim authorship and object to misattribution, but loses economic copyright rights (reproduction, distribution) after assignment. The developer, as the new copyright owner, controls economic rights and may license the design unless the assignment agreement specified otherwise.",
+        "takeaway": "Moral rights (attribution and integrity) cannot be transferred and remain with the original architect forever, even after economic copyright assignment."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c83f811bab063bc6a7f867488b78a4d2a3d00990fa90523c24826ec483d353ba"
+    },
+    {
+      "question_id": "45690748-e390-4480-b415-8d27332a229e",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "Can criminal penalties be imposed on a contractor who unknowingly constructed a building based on stolen architectural plans, believing the plans were legally obtained from the developer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, strict liability applies; knowledge and intent are not required for criminal infringement, making the contractor liable regardless of awareness"
+        },
+        {
+          "id": "b",
+          "text": "No, criminal penalties under RA 8293 require proof of willful infringement with knowledge or reckless disregard for copyright rights"
+        },
+        {
+          "id": "c",
+          "text": "Only if the building has been completed and the infringement is discovered post-construction"
+        },
+        {
+          "id": "d",
+          "text": "Only if the contractor's profits exceeded PHP 500,000, which would indicate significant financial gain from the infringement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely applies strict liability; criminal copyright infringement requires proof of willfulness and intent, not strict liability.",
+        "c": "Imposes a building completion requirement for criminal liability; willfulness is the controlling factor, not building status.",
+        "d": "Invents a profit threshold; criminal liability depends on willfulness, not on the magnitude of profits earned.",
+        "correct": "RA 8293 imposes criminal penalties for copyright infringement only in cases of willful infringement with intent to defraud or gain profit. Willfulness requires knowledge that the conduct constituted infringement or reckless disregard for copyright rights. A contractor who unknowingly relied on the developer's false representation of authority to use the plans lacks the willfulness required for criminal liability, though the developer and architect may pursue civil remedies.",
+        "takeaway": "Criminal copyright penalties require willful infringement with knowledge or reckless disregard; innocent reliance on false representations does not trigger criminal liability."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5e6388da079128dc9d204f9217f703e5f1a991f67cd496bb1b7c4955d2fd0d2e"
+    },
+    {
+      "question_id": "f8ee2e9c-d6ad-4651-990e-1405aca9a97e",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "An architect created a distinctive building design. Five years later, without authorization, another firm constructed an identical building using the same floor plans and facade design. What is the most appropriate civil remedy for the architect to seek?",
+      "options": [
+        {
+          "id": "a",
+          "text": "preliminary injunction to stop future construction using the design, plus monetary damages for past infringement"
+        },
+        {
+          "id": "b",
+          "text": "Criminal prosecution of the other firm's principals for theft, aiming to deter future intellectual property violations"
+        },
+        {
+          "id": "c",
+          "text": "demand that the other firm demolish the completed building, restoring the original design's exclusivity"
+        },
+        {
+          "id": "d",
+          "text": "Damages only; injunctive relief is not available once construction is complete, limiting the architect's legal options"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Confuses civil infringement with criminal theft; copyright violations are civil matters unless willful fraud is proven.",
+        "c": "Overstates the remedy; courts do not typically order demolition of completed buildings as a remedy for copyright infringement.",
+        "d": "Falsely limits remedies when construction is complete; injunctive relief remains available to prevent continued use of the infringing design.",
+        "correct": "Civil remedies under RA 8293 include preliminary injunctive relief to stop ongoing infringement and prevent further unauthorized use, plus monetary damages for actual losses and infringer's profits. Even for completed buildings, the architect may pursue injunctive relief to prevent future use of the stolen design and damages for the unauthorized construction already undertaken. Criminal prosecution requires proof of willful infringement with intent to defraud.",
+        "takeaway": "Civil copyright infringement remedies include both injunctive relief and damages; completion of construction does not bar the architect's claims."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f0a3664086b528b19f93811c3d409454bd5981ed8153fe17c79684ddf792ef1a"
+    },
+    {
+      "question_id": "a26d48a9-28dd-4b90-a315-dece40a3594a",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "AAn architect created a design in 1999 and died in 2010. Under RA 8293, when does copyright protection for this work expire? ... In 2060 (50 years after the architect's death)",
+      "options": [
+        {
+          "id": "a",
+          "text": "In 2005 (20 years after creation), which is incorrect as copyright duration is based on the creator's lifetime"
+        },
+        {
+          "id": "b",
+          "text": "In 2035 (25 years after creation), which does not apply as the protection extends beyond the creator's lifetime"
+        },
+        {
+          "id": "c",
+          "text": "In 2060 (50 years after the architect's death)"
+        },
+        {
+          "id": "d",
+          "text": "In 2070 (60 years after the architect's death), which is a common misconception about copyright duration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Measures from creation instead of death and provides only 20 years; RA 8293 uses the architect's death date as the measuring point.",
+        "b": "Measures from creation instead of death and provides only 25 years; protection extends through 50 years after death.",
+        "d": "Miscalculates the post-mortem period as 60 years instead of 50 years; RA 8293 provides exactly 50 years post-mortem.",
+        "correct": "Copyright extends for the lifetime of the architect plus 50 years after death. Architect B died in 2010. Copyright protection continues for 50 years after the death date, expiring in 2060. The date of creation (1985) is not used to calculate the copyright term for individual authors; only the death date triggers the start of the 50-year post-mortem protection period.",
+        "takeaway": "For individual architects, copyright expires exactly 50 years after the architect's death, not based on when the work was created."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a65631b0ae6825b5c28536337ad55b3b516f8b38ab9c1e07b1bd901a9944d6b5"
+    },
+    {
+      "question_id": "2f003089-bf9c-426c-bab7-45b3060e94cc",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "An architect's building design was published on an international architecture website without the architect's knowledge or consent. The unauthorized publication has been online for three years, and the architect has now discovered it. Does the length of unauthorized publication eliminate the architect's right to pursue enforcement action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the work was published more than two years ago without objection, which is a misunderstanding of copyright law"
+        },
+        {
+          "id": "b",
+          "text": "Yes, because publication on a public website constitutes implied authorization, which is incorrect"
+        },
+        {
+          "id": "c",
+          "text": "No, the architect retains copyright infringement remedies regardless of how long the unauthorized use continued before discovery"
+        },
+        {
+          "id": "d",
+          "text": "Only if the website obtained copies from a former client of the architect, which complicates the issue but does not negate rights"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely imposes a time bar based on two years of non-objection; no statute of limitations eliminates the right to enforce copyright.",
+        "b": "Incorrectly treats public website posting as implied authorization; the architect's silence does not authorize use without consent.",
+        "d": "Artificially limits enforcement to cases where a former client was the source; the architect can enforce against any unauthorized infringer.",
+        "correct": "The length of prior unauthorized use does not eliminate copyright protection or enforcement rights. RA 8293 protects reproduction and public display rights without limitation based on prior use duration. The architect may pursue injunctive relief to stop ongoing publication and recover damages for the three-year unauthorized use despite the delayed discovery and enforcement action.",
+        "takeaway": "Length of prior unauthorized use does not limit the architect's right to pursue infringement remedies or claim damages."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fa58ed7ad28d7c986f71c72f0b0ce15c7e4ccb7a82c5a758ea5015a0dbad6b8b"
+    },
+    {
+      "question_id": "368ae03f-8257-46b2-a77b-7704293a921f",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "A completed building designed by Architect A was acquired by a new owner who removed the architect's nameplate and attribution signage from the entrance and exterior. The owner also authorized major facade renovation that eliminated several distinctive architectural features. Which moral rights violations has occurred?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neither violation applies; attribution and integrity rights do not apply to completed buildings"
+        },
+        {
+          "id": "b",
+          "text": "Removal of attribution violates the right of attribution; facade alteration violates the right of integrity"
+        },
+        {
+          "id": "c",
+          "text": "Only the attribution violation applies; building modifications are always authorized for the property owner"
+        },
+        {
+          "id": "d",
+          "text": "Neither violation applies because the owner paid for the building and may modify it freely"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely assumes moral rights disappear upon building completion; they continue in perpetuity for the architect.",
+        "c": "Partly correct on attribution but ignores integrity violation; major changes that eliminate distinctive features can violate integrity rights.",
+        "d": "Confuses real property ownership with moral rights; owning a building does not give the owner the right to remove the architect's credit or fundamentally distort the design.",
+        "correct": "The architect's inalienable moral rights include the right of attribution (being credited as the author) and the right of integrity (objecting to distortions that damage the work's artistic character or the architect's reputation). Removing the architect's name violates attribution rights. Eliminating distinctive design features through major facade renovation violates integrity rights if the modification fundamentally distorts the original design intent. Ownership of the building does not eliminate the architect's moral rights.",
+        "takeaway": "Moral rights protect the architect's attribution and design integrity even in completed buildings; property ownership does not override these protections."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bf9b4e135d9c12543b1fef7663750d8b6196e3e248f9f9b6cd2fd0ad8bbb90b4"
+    },
+    {
+      "question_id": "68a8a8b5-fb10-437f-a738-3e8a6417e42f",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "How long does copyright protection extend for an architectural work created by an individual architect under RA 8293?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 years from the date of creation, unless renewed under special provisions"
+        },
+        {
+          "id": "b",
+          "text": "The lifetime of the architect only, without any posthumous extension"
+        },
+        {
+          "id": "c",
+          "text": "The lifetime of the architect plus 50 years after the architect's death"
+        },
+        {
+          "id": "d",
+          "text": "50 years from the date the building is completed, regardless of subsequent modifications"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sets an arbitrary short term unrelated to the statutory scheme; RA 8293 provides lifetime plus 50 years, not 30 years from creation.",
+        "b": "Terminates copyright upon the architect's death rather than extending 50 years post-mortem; this fails to recognize the extended protection for heirs.",
+        "d": "Measures from building completion rather than death and provides only 50 years instead of lifetime plus 50 years.",
+        "correct": "RA 8293 Section 213.1 provides copyright protection for the lifetime of the architect plus 50 years following death (for works created after June 28, 1998). This extended post-mortem protection reflects the long-term cultural and commercial value of architectural works. The protection term does not depend on building completion or project execution dates.",
+        "takeaway": "Copyright in architectural works lasts the architect's entire lifetime plus an additional 50 years after death."
+      },
+      "explanation": null,
+      "code_citation": "RA 8293",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c8a5edeaffb9e94e99383a18efe4858646f53a0bbb64a6a0d7959cd0335bdd5b"
+    },
+    {
+      "question_id": "5ac59327-c523-4e0c-b081-bf1680d73013",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "What types of monetary damages may an architect recover in a copyright infringement case under RA 8293?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the cost to register the copyright with IPOPHL, which is minimal compared to potential losses"
+        },
+        {
+          "id": "b",
+          "text": "Actual damages suffered plus profits earned by the infringer, or statutory damages up to PHP 250,000 per infringement if actual damages are difficult to prove"
+        },
+        {
+          "id": "c",
+          "text": "fixed fee of PHP 100,000 regardless of actual losses, which may not cover all incurred damages"
+        },
+        {
+          "id": "d",
+          "text": "Only the cost of the design work; no damages for lost opportunity or reputation, limiting recovery options"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses registration costs with infringement damages; registration is merely a precautionary measure, not a ceiling on damages.",
+        "c": "Invents a fictitious fixed fee; RA 8293 provides variable damages based on actual losses, profits, or statutory maximum, not a flat amount.",
+        "d": "Artificially limits damages to design costs; the architect may recover lost fees, lost business opportunities, damage to reputation, and the infringer's profits.",
+        "correct": "RA 8293 provides that copyright owners may recover actual damages (losses suffered) plus profits earned by the infringer from unauthorized use. When actual losses and profits are difficult to calculate, statutory damages up to PHP 250,000 per infringement may be awarded. The architect need not prove which remedy yields greater recovery; the architect may claim both actual damages and infringer's profits and recover the greater amount.",
+        "takeaway": "Copyright infringement damages include actual losses plus the infringer's profits, or statutory damages up to PHP 250,000 if actual damages are hard to calculate."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3adc1e65cad8ad169e07e6f8eb4cac4cd7a4e858dd3a83d882eaa596bbad586f"
+    },
+    {
+      "question_id": "eb50e294-bf0a-477b-8dc2-ceb0cd6e39ef",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "Can an architect transfer copyright in architectural designs to a developer or client through a written assignment agreement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, architects cannot assign copyright; it always remains with the architect, ensuring that the original creator retains control over the work"
+        },
+        {
+          "id": "b",
+          "text": "Yes, copyright may be assigned through written agreement, making the assignee the new copyright owner"
+        },
+        {
+          "id": "c",
+          "text": "Only if the Board of Architecture approves the transfer in advance, which is a rare and exceptional circumstance"
+        },
+        {
+          "id": "d",
+          "text": "Only if the building has been completed and occupied, as this signifies the end of the architect's involvement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely treats copyright as inalienable; while RA 8293 Section 172 grants copyright to the architect upon creation, copyright can be validly assigned.",
+        "c": "Incorrectly imposes a Board approval requirement; copyright transfer is a contractual matter between parties, not subject to Board authorization.",
+        "d": "Falsely conditions transfer on building completion; copyright can be assigned at any time, even before project construction.",
+        "correct": "Copyright in architectural works is a transferable intellectual property asset. Architects may assign copyright to developers, clients, or other parties through written agreement. No government approval or Board authorization is required. The assignment agreement should clearly identify the work, state that copyright is transferred, and be signed by both parties.",
+        "takeaway": "Copyright in architectural works is freely transferable by written assignment agreement without need for Board approval."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a0adce500501eac78a099d78d137662509bc005f73341d893857ece0b7fde7dc"
+    },
+    {
+      "question_id": "bf6e85b4-a9aa-4a13-82f1-8a6844e03306",
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "topic_id": "87f5a64c-3090-487e-aacd-d238d8a6f74a",
+      "text": "An architectural firm assigned all copyright in a building design to a developer through a clear written assignment agreement. Five years later, the architect who created the design wishes to include photographs of the building in a portfolio publication and to claim authorship. Can the architect do so without developer permission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the developer owns all copyright and controls all rights to display and claim authorship, including any public use of the design"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the architect retains inalienable moral rights to claim authorship and be credited, even though economic copyright was assigned"
+        },
+        {
+          "id": "c",
+          "text": "Only if the architect registers the assignment with IPOPHL, which would provide a legal basis for claiming authorship"
+        },
+        {
+          "id": "d",
+          "text": "Only if the assignment agreement was signed more than three years prior, as this may affect the enforceability of certain rights"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overstates the developer's rights; while the developer controls economic copyright, the architect retains inalienable moral rights.",
+        "c": "Adds an unnecessary registration requirement; moral rights exist by law and do not depend on registration of the assignment.",
+        "d": "Invents a time-based condition for moral rights; moral rights are inalienable regardless of how much time has passed.",
+        "correct": "Although the architect assigned economic copyright to the developer, moral rights (attribution and the right to claim authorship) are inalienable under RA 8293 and remain with the original creator. The architect may claim and publicize authorship, display the work in a professional portfolio, and demand credit as the author, despite the assignment of economic copyright. Moral rights cannot be waived or transferred regardless of copyright assignment terms.",
+        "takeaway": "Moral rights are inalienable and remain with the original architect forever; even full copyright assignment cannot transfer the right to claim authorship."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-015-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59fe424e37dafdb35620d3c5af67f79ff60e6c1068a42fbf8a1f636e2f21e869"
+    }
+  ]
+}

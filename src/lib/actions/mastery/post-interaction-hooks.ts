@@ -1,8 +1,6 @@
 'use server'
 
-import { updateDecayRate } from './update-decay-rate'
-import { updateMemoryStrength } from './update-memory-strength'
-import { updateMasteryStats } from './update-mastery-stats'
+import { applyInteraction } from '@/lib/mastery/apply-interaction'
 
 /**
  * Post-interaction hook: runs non-blocking updates after each quiz answer.
@@ -11,7 +9,18 @@ import { updateMasteryStats } from './update-mastery-stats'
  * rate, memory strength (SS/RS), and core performance statistics (mastery weight,
  * attempts, anti-inflation vectors) based on correctness, speed, and mode.
  *
- * Designed to be fire-and-forget — failures are logged but never propagated.
+ * ARCHITECTURE: previously fanned out to three concurrent hooks that each did
+ * their own read-modify-write on the same `user_node_mastery` row, racing
+ * each other and clobbering overlapping columns. Now delegates to
+ * `applyInteraction`, which issues ONE SELECT + combined compute + ONE UPSERT
+ * — eliminating the lost-update window (Plan 013). The math is byte-identical
+ * (locked in by update-mastery-stats.test.ts and the apply-interaction test).
+ *
+ * Designed to be fire-and-forget — failures are logged but never propagated
+ * (the `try/catch` lives inside `applyInteraction`).
+ *
+ * Public signature unchanged so callers (`submit-answer.ts:327`,
+ * `wiki/submit-prequestion.ts`) need no edits.
  */
 export const runPostInteractionHooks = async (params: {
   userId: string
@@ -41,24 +50,17 @@ export const runPostInteractionHooks = async (params: {
     isSuspectedLuckyGuess = false,
   } = params
 
-  // Use avg_time_ms as the expected time baseline.
-  // If no baseline exists yet (first attempt), use timeSpentMs itself
-  // so the ratio is 1.0 (neutral).
-  const expectedTimeMs = avgTimeMs > 0 ? avgTimeMs : timeSpentMs
-
-  // Run all hooks concurrently — all are independently fault-tolerant
-  await Promise.all([
-    updateDecayRate(userId, topicId, timeSpentMs, expectedTimeMs, isCorrect),
-    updateMemoryStrength(userId, topicId, isCorrect, difficulty, isInterleaved, sessionMode, emaWeightMultiplier),
-    updateMasteryStats({
-      userId,
-      topicId,
-      questionId,
-      isCorrect,
-      timeSpentMs,
-      testMode: sessionMode,
-      difficulty,
-      isSuspectedLuckyGuess,
-    }),
-  ])
+  await applyInteraction({
+    userId,
+    topicId,
+    questionId,
+    isCorrect,
+    timeSpentMs,
+    avgTimeMs,
+    difficulty,
+    isInterleaved,
+    sessionMode,
+    emaWeightMultiplier,
+    isSuspectedLuckyGuess,
+  })
 }

@@ -1,0 +1,518 @@
+{
+  "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:0155dd9143861694edb6658cd82e810555b4bfc454fbbea5dd087f47fa0e3174",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "a4ec33ae-682c-4e73-a214-b210d02e33ba",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the administration fee for Design-Build Services under DBS-A (SPP 207)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5% of PCC"
+        },
+        {
+          "id": "b",
+          "text": "7% of PCC"
+        },
+        {
+          "id": "c",
+          "text": "10% of PCC"
+        },
+        {
+          "id": "d",
+          "text": "12% of PCC"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5% is below the SPP 207 DBS-A administration fee.",
+        "b": "Correct. The DBS-A administration fee is 7% of PCC, covering the architect's project administration role in the design-build delivery method.",
+        "c": "10% is the DBS-GMPCC fee, not the DBS-A administration fee.",
+        "d": "12% exceeds both DBS-A and DBS-GMPCC fee rates.",
+        "correct": "Under SPP 207, the DBS-A (Design-Build Services — Administration) fee is 7% of PCC. This covers the architect's administration of the design-build process, including design coordination, contractor oversight, and quality management.",
+        "takeaway": "DBS-A administration fee = 7% of PCC."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f69fb84b3824716e547d98d84c7e76b8a0b6d36069d09373956bfe4ff9c86d71"
+    },
+    {
+      "question_id": "5c487ac9-76e1-4d51-be18-767455d1fc4e",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the fee for DBS-GMPCC (Guaranteed Maximum Project Construction Cost) under SPP 207?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5% of PCC"
+        },
+        {
+          "id": "b",
+          "text": "7% of PCC"
+        },
+        {
+          "id": "c",
+          "text": "10% of PCC"
+        },
+        {
+          "id": "d",
+          "text": "15% of PCC"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5% is too low for the GMPCC arrangement, which involves greater architect risk.",
+        "b": "7% is the DBS-A administration fee, not the DBS-GMPCC fee.",
+        "c": "Correct. DBS-GMPCC fee is 10% of PCC, reflecting the architect's increased risk and responsibility in guaranteeing the maximum construction cost.",
+        "d": "15% exceeds the SPP 207 GMPCC fee specification.",
+        "correct": "The DBS-GMPCC fee is 10% of PCC under SPP 207. This higher rate (compared to DBS-A's 7%) reflects the architect's greater financial risk in guaranteeing the maximum project construction cost to the Owner.",
+        "takeaway": "DBS-GMPCC fee = 10% of PCC."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b55e5b640bbe5272a4097f1001dfb2524b0cf90e8611d7b62d975c1865fd8578"
+    },
+    {
+      "question_id": "e21f4c65-09a0-4763-b8e7-57b9d63b632d",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How many construction administration tasks are defined under DBS-A in SPP 207?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "6"
+        },
+        {
+          "id": "c",
+          "text": "8"
+        },
+        {
+          "id": "d",
+          "text": "10"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 tasks is too few for comprehensive construction administration.",
+        "b": "6 tasks is incorrect. SPP 207 specifies a more comprehensive set.",
+        "c": "Correct. SPP 207 defines 8 construction administration tasks under DBS-A, covering all aspects of design-build project management.",
+        "d": "10 tasks exceeds the SPP 207 specification.",
+        "correct": "SPP 207 defines 8 construction administration tasks under DBS-A, encompassing the full range of administration duties in a design-build delivery model.",
+        "takeaway": "DBS-A has 8 construction administration tasks."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1147b4f9746bb72c5e060a44ef5afa581378190a3cb17dada013dbf64dc633a9"
+    },
+    {
+      "question_id": "49b55320-0aa6-4535-9e31-7cadf29f9354",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How are GMPCC savings split between the Owner and Architect under SPP 207?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100% to the Owner, ensuring full financial benefit from cost savings"
+        },
+        {
+          "id": "b",
+          "text": "70/30 in favor of the Owner, providing a balanced incentive for both parties"
+        },
+        {
+          "id": "c",
+          "text": "50/50 between Owner and Architect"
+        },
+        {
+          "id": "d",
+          "text": "60/40 in favor of the Architect, rewarding the architect's efficiency and cost management"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Giving 100% to the Owner removes the architect's incentive to achieve savings.",
+        "b": "70/30 is not the SPP 207 split. The document specifies an equal division.",
+        "c": "Correct. GMPCC savings are split 50/50 between the Owner and the Architect, incentivizing the architect to find efficiencies while ensuring the Owner benefits equally.",
+        "d": "60/40 in favor of the Architect is incorrect. The split is equal.",
+        "correct": "Under SPP 207, when actual costs come in below the Guaranteed Maximum Project Construction Cost, the savings are split 50/50 between the Owner and the Architect. This equal split incentivizes the architect to achieve cost efficiencies.",
+        "takeaway": "GMPCC savings split = 50/50 (Owner and Architect)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1bdcb27cf04797e7558507cb24ef232645e9222111d29b09ee69e6a62d2cda65"
+    },
+    {
+      "question_id": "2d7245ea-6b38-487a-b3c3-2e091006ad31",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 207, how is force majeure price escalation validated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By the Owner's independent auditor"
+        },
+        {
+          "id": "b",
+          "text": "By NEDA-certified price escalation data"
+        },
+        {
+          "id": "c",
+          "text": "By mutual agreement between Architect and Contractor"
+        },
+        {
+          "id": "d",
+          "text": "By PRC-Board of Architecture resolution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "An independent auditor is not the specified validation mechanism.",
+        "b": "Correct. Force majeure price escalation under SPP 207 must be validated through NEDA (National Economic and Development Authority)-certified price escalation data.",
+        "c": "Mutual agreement is insufficient without objective data backing.",
+        "d": "PRC-Board resolutions address professional practice, not price escalation.",
+        "correct": "SPP 207 requires force majeure price escalation to be validated through NEDA-certified data. This ensures that cost adjustments due to force majeure events (natural disasters, economic disruptions) are based on objective, government-verified economic data.",
+        "takeaway": "Force majeure price escalation validated by NEDA-certified data."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:75ef431dabe5002f3fd2f8a13dc3e06eb5c58584f04f65e7b17ba9f8c0c8a8ca"
+    },
+    {
+      "question_id": "8b831263-3244-4b6b-b64c-19da02b950b5",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What dual professional responsibility does the Architect assume in design-build under SPP 207?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design responsibility and financial liability"
+        },
+        {
+          "id": "b",
+          "text": "Design responsibility and construction responsibility"
+        },
+        {
+          "id": "c",
+          "text": "Creative responsibility and administrative responsibility"
+        },
+        {
+          "id": "d",
+          "text": "Technical responsibility and legal responsibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Financial liability is capped, not a defining dual responsibility.",
+        "b": "Correct. In design-build, the Architect assumes dual professional responsibility for both design (as architect) and construction (as design-builder), covering the entire project delivery.",
+        "c": "Creative and administrative are aspects of design, not the dual responsibility framework.",
+        "d": "Technical and legal are too broad. The specific dual responsibility is design + construction.",
+        "correct": "Under SPP 207, the Architect assumes dual professional responsibility for both design AND construction. This is the fundamental characteristic of design-build: the single-point responsibility that encompasses both the creative/design and the physical construction aspects of the project.",
+        "takeaway": "Design-build = dual responsibility: design AND construction."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e16735fa41a37c97b27455e2e8383ea7387cf6fe2bed4314d0aca73189c6afdb"
+    },
+    {
+      "question_id": "2054fdb3-1850-4d74-85ce-169b5410e7e4",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How does R.A. 4566 (Contractor's License Law) interface with SPP 207 design-build services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It prohibits architects from offering design-build services, even if they are qualified and experienced in construction management"
+        },
+        {
+          "id": "b",
+          "text": "It requires the architect to obtain a contractor's license, which must be renewed annually and is subject to compliance with additional training requirements"
+        },
+        {
+          "id": "c",
+          "text": "It distinguishes professional architectural practice from construction contracting"
+        },
+        {
+          "id": "d",
+          "text": "It has no relevance to SPP 207, as it only applies to contractors working on public infrastructure projects"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "R.A. 4566 does not prohibit design-build. It creates a distinction between professional practice and contracting.",
+        "b": "The architect does not need a contractor's license. Design-build is a professional service, not contracting.",
+        "c": "Correct. R.A. 4566 distinguishes between professional architectural practice and construction contracting, clarifying that the architect's design-build role remains a professional service rather than a contracting business.",
+        "d": "R.A. 4566 is directly relevant as it defines the boundary between professional practice and contracting.",
+        "correct": "R.A. 4566 (Contractor's License Law) interfaces with SPP 207 by distinguishing professional architectural practice from construction contracting. The architect in design-build provides professional services, not contracting services, maintaining the distinction.",
+        "takeaway": "R.A. 4566 distinguishes architect's professional practice from contractor's business."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207 / R.A. 4566",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0b5e67d6207a0437d7855a69ffac6ca32a0097ea86401e841e9d12abb2a9a16"
+    },
+    {
+      "question_id": "22693376-6751-4fe2-b2cb-7e2d4c66490e",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 207, what is the cost overrun tolerance, and how is the architect's liability capped?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5% tolerance; liability capped at design fee, unless otherwise agreed in writing"
+        },
+        {
+          "id": "b",
+          "text": "10% tolerance; liability capped at the administration fee"
+        },
+        {
+          "id": "c",
+          "text": "15% tolerance; liability capped at 50% of the total fee, subject to negotiation"
+        },
+        {
+          "id": "d",
+          "text": "No tolerance; architect bears full overrun cost, with no exceptions allowed"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5% tolerance is too restrictive, and liability is not capped at the full design fee.",
+        "b": "Correct. SPP 207 allows a 10% cost overrun tolerance, and the architect's liability for overruns is capped at the administration fee amount.",
+        "c": "15% tolerance exceeds the SPP 207 specification, and the liability cap is not 50% of total fee.",
+        "d": "Zero tolerance would make design-build commercially unviable. SPP 207 provides a reasonable margin.",
+        "correct": "SPP 207 establishes a 10% cost overrun tolerance for design-build services. If costs exceed the guaranteed amount by more than 10%, the architect's liability is capped at the administration fee, protecting the architect from unlimited financial exposure.",
+        "takeaway": "10% cost overrun tolerance; architect liability capped at admin fee."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d7cec068c4a6e5724cccc7fee5391d49ae911cbdcd75f7b456194ed59d09b507"
+    },
+    {
+      "question_id": "7cd7767a-37fe-4a42-a9ac-8feb04bc01ca",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 207, must the Architect retain a distinct professional identity as defined in SPP 200?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the architect becomes a contractor in design-build and loses professional identity"
+        },
+        {
+          "id": "b",
+          "text": "No, the design-build framework supersedes SPP 200 and establishes a new identity"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the Architect must retain distinct professional identity per SPP 200"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only when operating under DBS-GMPCC delivery method specifically"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The architect never becomes a contractor. Professional identity must be maintained.",
+        "b": "SPP 207 does not supersede SPP 200. The foundational principles remain.",
+        "c": "Correct. Even in design-build, the Architect must retain their distinct professional identity as defined in SPP 200, maintaining the distinction between professional practice and contracting.",
+        "d": "The requirement applies to all design-build arrangements, not just GMPCC.",
+        "correct": "SPP 207 requires the Architect to retain distinct professional identity as defined in SPP 200, even when providing design-build services. This ensures the architect maintains professional standards, ethical obligations, and legal responsibilities regardless of delivery method.",
+        "takeaway": "Architect must retain professional identity in design-build — always per SPP 200."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207 / SPP 200",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:942fe18c46c348b3e116f468d03c9a159e35779f5d1ddabec49f40c970ac52cf"
+    },
+    {
+      "question_id": "86a5bc20-5cbd-4111-bc52-e9edfc263b24",
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 207, does the Architect advance money for construction through the revolving fund?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the Architect funds construction from their own resources, covering initial expenses"
+        },
+        {
+          "id": "b",
+          "text": "Yes, but only up to 20% of the PCC, ensuring limited financial exposure"
+        },
+        {
+          "id": "c",
+          "text": "No, the Architect does NOT advance money — the revolving fund is Owner-funded"
+        },
+        {
+          "id": "d",
+          "text": "No, financing is handled by a third-party lender, independent of the Architect's resources"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Architect does not use personal funds for construction. This would create unacceptable financial exposure.",
+        "b": "Even a limited advance is not required. The revolving fund mechanism keeps the Architect out of financing.",
+        "c": "Correct. Under SPP 207, the Architect does NOT advance money for construction. The revolving fund is funded by the Owner, and the Architect manages disbursements from it.",
+        "d": "Third-party lending is not the mechanism specified in SPP 207.",
+        "correct": "SPP 207 establishes a revolving fund mechanism where the Owner provides the construction funds. The Architect manages the fund and makes disbursements but does NOT advance their own money. This protects the architect from becoming a lender.",
+        "takeaway": "Architect does NOT advance money — revolving fund is Owner-funded."
+      },
+      "explanation": null,
+      "code_citation": "SPP 207",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.295644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1be897e95e5870a3c775bcd49fb1bc01f2820640b7237acc9c6719fc5f911363"
+    }
+  ]
+}

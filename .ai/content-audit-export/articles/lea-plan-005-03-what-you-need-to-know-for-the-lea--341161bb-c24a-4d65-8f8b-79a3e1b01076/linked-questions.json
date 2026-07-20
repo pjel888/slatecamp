@@ -8,38 +8,31 @@
       "question_id": "690b313c-1e9b-44cf-a8f4-a296c0f5fbd8",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "A landscape designer is preparing a site plan for a large residential development that includes a planned Material Recovery Facility (MRF) for waste segregation. Which law mandates the inclusion of this facility, and what is its primary function?",
+      "text": "What are the PD 1067 Article 51 public-use easement distances?",
       "options": [
         {
           "id": "a",
-          "text": "**RA 9275** requires MRFs to treat wastewater from residential units, ensuring compliance with environmental standards"
+          "text": "3 m urban, 20 m agricultural, and 40 m forest areas."
         },
         {
           "id": "b",
-          "text": "**RA 9003** requires LGUs and residential projects to establish MRFs for waste segregation and recycling"
+          "text": "1 m urban, 2 m agricultural, and 3 m forest areas."
         },
         {
           "id": "c",
-          "text": "**PD 1586** requires MRFs as part of environmental impact mitigation, focusing on reducing ecological footprints"
+          "text": "10 m for all sites."
         },
         {
           "id": "d",
-          "text": "MRFs are optional facilities not required by any Philippine law, though they are encouraged for sustainability"
+          "text": "No easement is required."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RA 9275 requires STPs for wastewater treatment, not MRFs. MRFs handle solid waste, not wastewater.",
-        "b": "RA 9003 (Ecological Solid Waste Management Act) mandates that LGUs establish MRFs and residential projects include waste management facilities. The MRF is where waste is sorted into recyclable and compostable materials, reducing disposal to landfills.",
-        "c": "While PD 1586 requires environmental mitigation, MRF is specifically mandated by RA 9003.",
-        "d": "RA 9003 makes MRFs mandatory for proper waste management and environmental protection.",
-        "correct": "RA 9003 (Ecological Solid Waste Management Act) mandates that LGUs establish MRFs and residential projects include waste management facilities. The MRF is where waste is sorted into recyclable and compostable materials, reducing disposal to landfills.",
-        "takeaway": "RA 9003 mandates MRFs as infrastructure for waste segregation and recycling in residential and LGU projects."
-      },
+      "rationale": "PD 1067 Article 51 states 3, 20, and 40 meter public-use easement zones by area type.",
       "explanation": null,
       "code_citation": "RA 9003 — Ecological Solid Waste Management Act (2000) section",
       "bloom_level": "apply",
@@ -52,45 +45,38 @@
       "model_id": "ALE-PLAN-005-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.193014+00:00",
       "content_hash": "sha256:b08893684c24a143e7f260c9ea7eef558b5918db91cfca401f2372323a0190f8"
     },
     {
       "question_id": "7b3df3e6-217f-4dcf-a14d-08e7742985a9",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "A residential subdivision project is proposed on a 50-hectare site in a valley with several streams and no proximity to protected areas. The site is not in an Environmentally Critical Area. Which environmental legal requirement applies?",
+      "text": "What does PD 1067 prohibit inside the Article 51 public-use easement?",
       "options": [
         {
           "id": "a",
-          "text": "Full Environmental Impact Statement and ECC are mandatory because the site is large and may impact local ecosystems"
+          "text": "Building structures of any kind or staying longer than necessary for public-use purposes."
         },
         {
           "id": "b",
-          "text": "No EIS or ECC is required because the site is not in an ECA, and the development is considered low-risk"
+          "text": "All walking and fishing."
         },
         {
           "id": "c",
-          "text": "PD 1067 easement requirements apply to identified streams; ECC may not be required if not in ECA"
+          "text": "All public access."
         },
         {
           "id": "d",
-          "text": "Only RA 9003 solid waste management requirements apply, focusing on waste reduction and recycling initiatives"
+          "text": "Only planting native trees."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Large size alone does not trigger ECC; ECP category or ECA location does.",
-        "b": "Even outside ECAs, PD 1067 applies—water body easements are always required.",
-        "c": "PD 1067 easements are mandatory regardless of ECA status. For projects not in ECAs but not in ECP categories, ECC may not be required. However, the site must comply with PD 1067 easement distances for all identified streams. Landscape design must reserve these easements and prevent building placement within them.",
-        "d": "While RA 9003 applies, PD 1067 easements are the most relevant legal constraint for this site.",
-        "correct": "PD 1067 easements are mandatory regardless of ECA status. For projects not in ECAs but not in ECP categories, ECC may not be required. However, the site must comply with PD 1067 easement distances for all identified streams. Landscape design must reserve these easements and prevent building placement within them.",
-        "takeaway": "All sites with water bodies must comply with PD 1067; ECC requirements depend on ECP category or ECA location."
-      },
+      "rationale": "Article 51 subjects the zone to public use and prohibits structures of any kind.",
       "explanation": null,
       "code_citation": "PD 1067; PD 1586 sections on ECP and ECA categories",
       "bloom_level": "apply",
@@ -103,45 +89,38 @@
       "model_id": "ALE-PLAN-005-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.196284+00:00",
       "content_hash": "sha256:4060adeef0965831990031e3ebf877a23f059feaea1173c817ebb9e9d5c5170e"
     },
     {
       "question_id": "7dcfcdab-0100-4388-b47d-09123c8b65d7",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "A development site is adjacent to a NIPAS (National Integrated Protected Areas System) protected landscape. The developer proposes a residential project in the buffer zone of the protected area. Analyze what legal framework applies and what restrictions the designer should expect:",
+      "text": "Which law primarily governs water quality management in all water bodies?",
       "options": [
         {
           "id": "a",
-          "text": "No restrictions apply because the project is not inside the protected area, only adjacent to it, which may be a common misconception"
+          "text": "RA 9275 Clean Water Act."
         },
         {
           "id": "b",
-          "text": "**RA 7586** applies; DENR permits are required; design must demonstrate that the project does not harm protected species or ecosystems"
+          "text": "UAP SPP 208."
         },
         {
           "id": "c",
-          "text": "Only municipal zoning ordinances apply; NIPAS has no jurisdiction outside protected area boundaries, which limits its influence"
+          "text": "RA 9266 IRR."
         },
         {
           "id": "d",
-          "text": "**RA 9275** prohibits all development adjacent to protected areas, ensuring no environmental impact"
+          "text": "EO 72."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Buffer zones around protected areas are subject to NIPAS restrictions; proximity matters.",
-        "b": "RA 7586 NIPAS Act extends oversight to buffer zones around protected areas. Projects in or near NIPAS must obtain special permits from DENR. Design must incorporate conservation measures and demonstrate that development does not harm protected ecosystems or species.",
-        "c": "NIPAS has authority over buffer zones and must approve development plans affecting protected area ecology.",
-        "d": "RA 9275 (water quality) does not prohibit all development near protected areas; RA 7586 NIPAS does require permits and harm assessment.",
-        "correct": "RA 7586 NIPAS Act extends oversight to buffer zones around protected areas. Projects in or near NIPAS must obtain special permits from DENR. Design must incorporate conservation measures and demonstrate that development does not harm protected ecosystems or species.",
-        "takeaway": "NIPAS buffer zones require DENR permits and restrictions to protect adjacent protected areas from development impacts."
-      },
+      "rationale": "RA 9275 applies to water quality management in all water bodies.",
       "explanation": null,
       "code_citation": "RA 7586 — National Integrated Protected Areas System (NIPAS) Act (1992) section",
       "bloom_level": "apply",
@@ -154,30 +133,30 @@
       "model_id": "ALE-PLAN-005-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.193765+00:00",
       "content_hash": "sha256:72de61bf0b6b580f643ac445588e74d2a6c9a85f6c5b778524c8cd23b8dbd1f6"
     },
     {
       "question_id": "ad15394b-790d-4125-9cd3-f4886c1bc110",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "According to **PD 1067** (Water Code of the Philippines), what is the required easement distance from the edge of a river that is 5 meters wide?",
+      "text": "Under RA 9275, what does sewerage include?",
       "options": [
         {
           "id": "a",
-          "text": "3 meters"
+          "text": "Systems for collection, transport, pumping, treatment, and disposal of sewage."
         },
         {
           "id": "b",
-          "text": "10 meters"
+          "text": "Only roof drainage gutters."
         },
         {
           "id": "c",
-          "text": "20 meters"
+          "text": "Only zoning district names."
         },
         {
           "id": "d",
-          "text": "40 meters"
+          "text": "Only architectural design competitions."
         }
       ],
       "correct_option_id": "a",
@@ -185,14 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "PD 1067 establishes 3-meter easement for streams and rivers less than 6 meters wide. Since this river is 5 meters wide (< 6m), the easement is 3 meters.",
-        "b": "10 meters is not a PD 1067 easement distance.",
-        "c": "20 meters applies to rivers 6 meters wide or greater.",
-        "d": "40 meters applies to lakes and seashore.",
-        "correct": "PD 1067 Article 51 requires easement of 3m (urban land), 20m (agricultural land), or 40m (forest land) along rivers, measured from highest water line. Land classification required to determine distance.",
-        "takeaway": "PD 1067 easement distances vary by water body size: 3m (< 6m width), 20m (≥ 6m), 40m (lakes/sea)."
-      },
+      "rationale": "RA 9275 defines sewerage broadly as collection, transport, pumping, treatment, and disposal systems.",
       "explanation": null,
       "code_citation": "PD 1067 — Water Code of the Philippines (1976) section",
       "bloom_level": "remember",
@@ -205,45 +177,38 @@
       "model_id": "ALE-PLAN-005-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.194496+00:00",
       "content_hash": "sha256:8a8fcd2a517c3a96d16caae88c0e0108b3fa6b815e86d219516d3476a6308192"
     },
     {
       "question_id": "b1db1918-cdbd-43ab-ae98-223f33ce6444",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "A proposed development project is located in a mangrove ecosystem. Which Philippine law requires the project to undergo environmental impact assessment and obtain a compliance certificate?",
+      "text": "What local responsibility is source-safe under RA 9275?",
       "options": [
         {
           "id": "a",
-          "text": "**PD 957** (Subdivision and Condominium Buyers Protective Decree)"
+          "text": "LGUs share responsibility for water-quality management and improvement within their jurisdictions."
         },
         {
           "id": "b",
-          "text": "**RA 7279** (Urban Development and Housing Act)"
+          "text": "LGUs have no water-quality role."
         },
         {
           "id": "c",
-          "text": "**PD 1586** (Philippine Environmental Impact Statement System)"
+          "text": "Only private developers manage water quality."
         },
         {
           "id": "d",
-          "text": "**RA 9003** (Ecological Solid Waste Management Act)"
+          "text": "UAP manages water quality areas."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "PD 957 governs subdivision buyer protection and developer registration, not environmental assessment.",
-        "b": "RA 7279 addresses housing eviction and relocation, not environmental assessment.",
-        "c": "Mangrove ecosystems are designated Environmentally Critical Areas (ECA) under PD 1586. Projects in ECAs must undergo EIA and obtain ECC. Mangrove areas are explicitly listed as sensitive ecosystems requiring assessment.",
-        "d": "RA 9003 governs solid waste management, not environmental impact for development in sensitive ecosystems.",
-        "correct": "Mangrove ecosystems are designated Environmentally Critical Areas (ECA) under PD 1586. Projects in ECAs must undergo EIA and obtain ECC. Mangrove areas are explicitly listed as sensitive ecosystems requiring assessment.",
-        "takeaway": "PD 1586 requires environmental assessment for projects in Environmentally Critical Areas, including mangroves."
-      },
+      "rationale": "RA 9275 states LGUs share water-quality management and improvement responsibility.",
       "explanation": null,
       "code_citation": "PD 1586 section — Environmentally Critical Areas (ECAs)",
       "bloom_level": "understand",
@@ -256,45 +221,38 @@
       "model_id": "ALE-PLAN-005-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.192249+00:00",
       "content_hash": "sha256:99339eea141c55bf933f61fd43730f8fe9242544c396d97a504b5adc2ba47526"
     },
     {
       "question_id": "06e2e396-b06f-4ffc-a612-3110aad86720",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "Which agency is responsible for issuing an **ECC (Environmental Compliance Certificate)** under **PD 1586**?",
+      "text": "What initial diversion target does RA 9003 set for LGU solid-waste plans?",
       "options": [
         {
           "id": "a",
-          "text": "DHSUD (Department of Human Settlements and Urban Development)"
+          "text": "At least 25 percent diversion within five years through reuse, recycling, composting, and resource recovery."
         },
         {
           "id": "b",
-          "text": "DENR (Department of Environment and Natural Resources)"
+          "text": "Exactly 100 percent on day one."
         },
         {
           "id": "c",
-          "text": "DPWH (Department of Public Works and Highways)"
+          "text": "No diversion target."
         },
         {
           "id": "d",
-          "text": "Local Government Unit (LGU) planning office"
+          "text": "Only 5 percent after 20 years."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "DHSUD regulates subdivisions and housing projects but does not issue ECC. [ERR-PLAN-021]",
-        "b": "PD 1586 establishes the EIS system and designates DENR as the issuing agency for ECC. DENR conducts the environmental impact assessment for Environmentally Critical Projects and issues the ECC.",
-        "c": "DPWH is responsible for public infrastructure but not ECC issuance.",
-        "d": "LGUs coordinate with DENR but do not issue the ECC.",
-        "correct": "PD 1586 establishes the EIS system and designates DENR as the issuing agency for ECC. DENR conducts the environmental impact assessment for Environmentally Critical Projects and issues the ECC.",
-        "takeaway": "DENR issues ECC under PD 1586; DHSUD handles subdivision permits (distinct agencies, distinct roles)."
-      },
+      "rationale": "RA 9003 Section 20 sets an initial 25 percent diversion target within five years.",
       "explanation": null,
       "code_citation": "PD 1586 — Philippine Environmental Impact Statement System (1978) section",
       "bloom_level": "remember",
@@ -307,45 +265,38 @@
       "model_id": "ALE-PLAN-005-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.191315+00:00",
       "content_hash": "sha256:0b815faa9937813acebb6720af28d0a7a5fc58d0373bb2404afd30909f33732b"
     },
     {
       "question_id": "8b0e7593-8bb0-4cc2-97bb-5811ea767773",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "A landscape architect discovers that a proposed site is in an area with unclear ECA status and proximity to an estero of unknown width. The client pressures to proceed without environmental assessment. Analyze what legal and professional responsibilities apply:",
+      "text": "What facility does RA 9003 require in every barangay or cluster of barangays?",
       "options": [
         {
           "id": "a",
-          "text": "Proceed immediately to design; environmental assessment can be done later if required, assuming no immediate legal constraints"
+          "text": "Materials Recovery Facility."
         },
         {
           "id": "b",
-          "text": "Verify estero width and ECA status with DENR before design; verify PD 1067 easement distance; determine if ECC is required"
+          "text": "Architectural design competition office."
         },
         {
           "id": "c",
-          "text": "Assume no environmental requirements apply because the site is developed area, thus bypassing initial assessments"
+          "text": "Regional Land Use Committee."
         },
         {
           "id": "d",
-          "text": "Environmental assessment is only required for projects in protected areas, not for developed or urban sites"
+          "text": "Professional Regulatory Board."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Proceeding without environmental assessment risks legal liability and project redesign costs.",
-        "b": "Professional practice requires due diligence: verify water body dimensions (to apply correct PD 1067 easement), confirm ECA status with DENR (to determine EIS requirement), and confirm whether project is classified as ECP requiring ECC. Design cannot responsibly proceed without clarifying these legal constraints.",
-        "c": "Even developed areas must comply with PD 1067; ECA status depends on specific site characteristics, not general area designation.",
-        "d": "ECC requirements apply to ECPs and ECA projects, not only protected areas.",
-        "correct": "Professional practice requires due diligence: verify water body dimensions (to apply correct PD 1067 easement), confirm ECA status with DENR (to determine EIS requirement), and confirm whether project is classified as ECP requiring ECC. Design cannot responsibly proceed without clarifying these legal constraints.",
-        "takeaway": "Environmental due diligence is essential before site design to identify legal requirements and avoid costly non-compliance."
-      },
+      "rationale": "RA 9003 requires an MRF in every barangay or cluster of barangays.",
       "explanation": null,
       "code_citation": "Integration of PD 1067, PD 1586, RA 7586, RA 9275, RA 9003; professional standards",
       "bloom_level": "analyze",
@@ -358,30 +309,30 @@
       "model_id": "ALE-PLAN-005-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.196975+00:00",
       "content_hash": "sha256:6a91c3c6a07717344cde31433f1847d7767592b63408da3c904ae1afbc779b67"
     },
     {
       "question_id": "93f222f3-8b5f-4f86-9088-6870bc611ec1",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "A site plan for a mixed-use development includes a large lake, steep riparian forest, and commercial buildings. Integrate **PD 1067**, **PD 1586**, **RA 7586**, **RA 9275**, and **RA 9003** requirements into a design checklist. Which combination of measures demonstrates full legal compliance?",
+      "text": "Which RA 9003 rule is important for site planning and sanitation?",
       "options": [
         {
           "id": "a",
-          "text": "Reserve easement from lake edge per PD 1067 Article 51: 3m (urban land), 20m (agricultural land), or 40m (forest land), assess if EIA required in forest (PD 1586), include STP (RA 9275) and MRF (RA 9003)"
+          "text": "Source segregation and properly identified containers pending collection."
         },
         {
           "id": "b",
-          "text": "Maximize lake-side development to generate views; no STP required for small commercial use, assuming minimal environmental impact"
+          "text": "No solid-waste segregation ever."
         },
         {
           "id": "c",
-          "text": "Reserve forest as protected area; prohibit all development; no wastewater or waste management needed, as natural processes will suffice"
+          "text": "Only water easement computation."
         },
         {
           "id": "d",
-          "text": "Environmental compliance applies only to public projects, not private developments, allowing for more flexible design approaches"
+          "text": "Only professional fee computation."
         }
       ],
       "correct_option_id": "a",
@@ -389,14 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Comprehensive compliance requires: (1) 40m easement from lake (PD 1067); (2) EIA assessment if forest is in ECA or project is ECP (PD 1586); (3) STP for commercial wastewater (RA 9275); (4) MRF for solid waste management (RA 9003). RA 7586 may apply if near protected area. All integrate into site planning.",
-        "b": "Lake-side development cannot violate PD 1067 easement; STP is mandatory for commercial buildings under RA 9275.",
-        "c": "Riparian forest protection is important but does not eliminate other compliance requirements (STP, MRF).",
-        "d": "Environmental laws apply to all development, public and private.",
-        "correct": "Comprehensive compliance requires: (1) 40m easement from lake (PD 1067); (2) EIA assessment if forest is in ECA or project is ECP (PD 1586); (3) STP for commercial wastewater (RA 9275); (4) MRF for solid waste management (RA 9003). RA 7586 may apply if near protected area. All integrate into site planning.",
-        "takeaway": "Comprehensive environmental site planning integrates multiple laws: water easements, EIS, protected areas, wastewater, waste management."
-      },
+      "rationale": "RA 9003 includes segregation and storage standards for solid waste.",
       "explanation": null,
       "code_citation": "All five law sections — integrated planning framework",
       "bloom_level": "analyze",
@@ -409,30 +353,30 @@
       "model_id": "ALE-PLAN-005-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.190047+00:00",
       "content_hash": "sha256:772dcab5154d00ed549e61961c6bd175e229aa8d35e9cf88297190f5ed79f0ad"
     },
     {
       "question_id": "48f2946f-cef3-4ff7-959d-2edafebeb753",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "A landscape site plan identifies an estero (drainage canal, 4 meters wide) running along the site boundary. According to **PD 1067**, what area must be reserved as public right-of-way and cannot be developed?",
+      "text": "What does RA 9003 say about open dumps?",
       "options": [
         {
           "id": "a",
-          "text": "3 meters from the estero edge (because width < 6 meters)"
+          "text": "Open dumps may not be established or operated, and controlled dumps were also time-limited."
         },
         {
           "id": "b",
-          "text": "20 meters from the estero edge, which is a standard buffer zone for larger waterways"
+          "text": "Open dumps are required for every LGU."
         },
         {
           "id": "c",
-          "text": "The entire site within 100 meters of the estero, which is a precautionary measure for flood-prone areas"
+          "text": "Open dumps replace MRFs."
         },
         {
           "id": "d",
-          "text": "No easement required for drainage canals, unless specified by local ordinances"
+          "text": "Open dumps are an architectural competition method."
         }
       ],
       "correct_option_id": "a",
@@ -440,14 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "PD 1067 requires 3-meter easement from streams and rivers less than 6 meters wide. A 4-meter-wide estero is less than 6 meters, so 3 meters of right-of-way must be reserved along the estero edge.",
-        "b": "20 meters applies to rivers 6 meters wide or greater, not to this 4-meter estero.",
-        "c": "Only the 3-meter strip is reserved; the remainder of the site may be developed.",
-        "d": "Drainage canals and esteros are water bodies subject to easement requirements.",
-        "correct": "PD 1067 requires 3-meter easement from streams and rivers less than 6 meters wide. A 4-meter-wide estero is less than 6 meters, so 3 meters of right-of-way must be reserved along the estero edge.",
-        "takeaway": "PD 1067 easement for esteros < 6m wide = 3 meters; this area is public right-of-way."
-      },
+      "rationale": "RA 9003 prohibits establishing or operating open dumps after the effectivity rules.",
       "explanation": null,
       "code_citation": "PD 1067 — Water Code of the Philippines (1976) section",
       "bloom_level": "understand",
@@ -460,45 +397,38 @@
       "model_id": "ALE-PLAN-005-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.195235+00:00",
       "content_hash": "sha256:a2aef3136aaa09871c2d23d63bcaf6ea892aa562aec7fc02a2e4ceaefd8b8b43"
     },
     {
       "question_id": "c109bc3f-2827-49d6-91aa-9f22d7f4f640",
       "article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
       "topic_id": "4a884cb8-0411-410b-a850-d0ef7c0a8424",
-      "text": "**RA 9275** (Philippine Clean Water Act) requires high-density residential developments to include what infrastructure to prevent water pollution?",
+      "text": "Which answer is safest when an environmental item names only PD 1067?",
       "options": [
         {
           "id": "a",
-          "text": "Open stormwater drainage channels, which are designed to manage surface runoff"
+          "text": "Answer from PD 1067 easement rules and do not import other environmental laws unless named."
         },
         {
           "id": "b",
-          "text": "Sewage Treatment Plant (STP) or connection to municipal treatment"
+          "text": "Answer from any remembered law."
         },
         {
           "id": "c",
-          "text": "Groundwater extraction wells, which are used to supplement water supply"
+          "text": "Ignore water margins."
         },
         {
           "id": "d",
-          "text": "Drinking water filtration systems for residents, ensuring potable water quality"
+          "text": "Apply UAP ethics only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Stormwater drainage is distinct from sewage treatment; drainage alone does not treat wastewater.",
-        "b": "RA 9275 requires sewage treatment to prevent raw wastewater discharge into water bodies. High-density residential and commercial projects must install and operate STPs or connect to municipal sewage systems with treatment.",
-        "c": "Groundwater extraction is water supply, not wastewater treatment.",
-        "d": "Drinking water filtration is for potable water, not treatment of wastewater before discharge.",
-        "correct": "RA 9275 requires sewage treatment to prevent raw wastewater discharge into water bodies. High-density residential and commercial projects must install and operate STPs or connect to municipal sewage systems with treatment.",
-        "takeaway": "RA 9275 mandates sewage treatment (STP) for high-density residential and commercial projects to protect water bodies."
-      },
+      "rationale": "The controlling source named by the item should drive the answer.",
       "explanation": null,
       "code_citation": "RA 9275 — Philippine Clean Water Act (2004) section",
       "bloom_level": "understand",
@@ -511,7 +441,7 @@
       "model_id": "ALE-PLAN-005-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:29.197648+00:00",
       "content_hash": "sha256:12629b95102c0ce4b319010e96d641fbb1b8341ccfbc975dc2a3d07caebd7bb6"
     }
   ]

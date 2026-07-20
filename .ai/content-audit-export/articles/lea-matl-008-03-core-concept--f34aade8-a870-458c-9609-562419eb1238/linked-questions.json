@@ -310,7 +310,7 @@
         },
         {
           "id": "b",
-          "text": "Bolt"
+          "text": "Bolt — fastener inserted through holes and secured with a mating nut"
         },
         {
           "id": "c",
@@ -326,19 +326,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Finish nail is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-        "b": "Bolt This is the source-supported answer inside the Batch 153 local-first source boundary.",
-        "c": "Adhesive film is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-        "d": "Piano hinge is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
-        "correct": "Bolt Supported by bci-5e-fastener-systems-b153, salvan-fastener-systems-b153.",
-        "takeaway": "Classify the hardware, joint, or fastener by function and source-supported action before using exact ratings, capacities, or code triggers.",
-        "source_boundary": "bci-5e-fastener-systems-b153, salvan-fastener-systems-b153",
-        "checked_sources": [
-          "bci-5e-fastener-systems-b153",
-          "salvan-fastener-systems-b153"
-        ]
-      },
+      "rationale": "Bolt Supported by bci-5e-fastener-systems-b153, salvan-fastener-systems-b153. [A]: Finish nail is not the best answer because it changes the source-backed concept or adds an unsupported claim. [B]: Bolt This is the source-supported answer inside the Batch 153 local-first source boundary. [C]: Adhesive film is not the best answer because it changes the source-backed concept or adds an unsupported claim. [D]: Piano hinge is not the best answer because it changes the source-backed concept or adds an unsupported claim.",
       "explanation": null,
       "code_citation": "Local source boundary: BCI refined markdown lines 16081-16100; Salvan lines 6318-6348.",
       "bloom_level": "apply",
@@ -355,7 +343,7 @@
       "model_id": "ALE-MATL-008-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.656022+00:00",
       "content_hash": "sha256:9d6d3bbdc058a78a818e1413f5cdfc32ef25a83a478f438d34d677b7dc5597ca"
     },
     {

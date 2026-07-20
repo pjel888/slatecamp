@@ -21,5 +21,52 @@
     "checked_sources": [
       "bsi-prestress-precast"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which statement best matches the captured pretensioning and posttensioning distinction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both methods are always performed after occupancy."
+      },
+      {
+        "id": "b",
+        "text": "Pretensioning is associated with a factory site, while posttensioning is associated with the construction site."
+      },
+      {
+        "id": "c",
+        "text": "Pretensioning means no prestress is introduced."
+      },
+      {
+        "id": "d",
+        "text": "Posttensioning is only an architectural finish operation."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Both methods are always performed after occupancy. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "b": "Pretensioning is associated with a factory site, while posttensioning is associated with the construction site. This stays inside the Batch 145 local source boundary for Prestressing and Post-Tensioned Concrete Systems.",
+      "c": "Pretensioning means no prestress is introduced. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "d": "Posttensioning is only an architectural finish operation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "correct": "Pretensioning is associated with a factory site, while posttensioning is associated with the construction site. Supported by bsi-prestress-precast.",
+      "takeaway": "For Prestressing and Post-Tensioned Concrete Systems, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-prestress-precast",
+      "checked_sources": [
+        "bsi-prestress-precast"
+      ]
+    },
+    "explanation": "Pretensioning is associated with a factory site, while posttensioning is associated with the construction site. Supported by the Batch 145 local source boundary: bsi-prestress-precast.",
+    "code_citation": "bsi-prestress-precast",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-04-001"
   }
 }

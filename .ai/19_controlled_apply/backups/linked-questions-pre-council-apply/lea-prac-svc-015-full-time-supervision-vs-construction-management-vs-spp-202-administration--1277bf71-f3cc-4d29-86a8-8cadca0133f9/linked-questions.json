@@ -1,0 +1,508 @@
+{
+  "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a07fd9a1cf78c220925807f5115eb3acf89234444d0fb04b4056d83fa8b093e9",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "723d1495-84c4-4921-ade4-21b0a1e4c699",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "What guidance does the comparison provide architects for communicating service distinctions to clients?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects must clearly communicate service distinctions to establish appropriate engagement arrangements and manage client expectations"
+        },
+        {
+          "id": "b",
+          "text": "The comparison indicates that service distinctions are too technical to explain to clients, which is a misconception"
+        },
+        {
+          "id": "c",
+          "text": "Architects should avoid clarifying service differences to clients, which could lead to misunderstandings"
+        },
+        {
+          "id": "d",
+          "text": "Client communication about service types is not relevant according to the comparison, which is misleading"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Dismisses communication responsibility—the comparison explicitly mandates architects must clearly communicate distinctions to clients.",
+        "c": "Contradicts professional duty—the comparison identifies clear communication about service types as essential, not something to avoid.",
+        "d": "Denies communication importance—the comparison places client communication about service types as a core introductory professional requirement.",
+        "correct": "The comparison introduction states 'Architects must clearly communicate these distinctions to clients to establish appropriate engagement arrangements' as a core professional responsibility.",
+        "takeaway": "Architects must clearly communicate supervision vs. CM vs. administration distinctions to clients—this clarity establishes appropriate engagement arrangements and prevents scope misunderstandings."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae6ee742b3b32931616260767eb7255c7989cde98cf48e16c944bc1e80bfa90f"
+    },
+    {
+      "question_id": "220f133d-4770-47d8-a8a2-031efec6f71e",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "How does Article 1723 liability apply across the three service models according to the comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Article 1723 applies to supervisors and construction managers directing structural work, establishing liability for technical decisions affecting structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "The comparison indicates Article 1723 applies uniformly across all service models regardless of role, ensuring consistent accountability"
+        },
+        {
+          "id": "c",
+          "text": "Article 1723 applies exclusively to design services and not to supervision or management, limiting liability to architects"
+        },
+        {
+          "id": "d",
+          "text": "Limitation of authority completely exempts professionals from Article 1723 liability, provided they have documented disclaimers"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Overstates uniformity—the comparison specifically ties Article 1723 to supervisors and CMs 'directing structural work,' not all roles equally.",
+        "c": "Incorrectly narrows applicability—the comparison explicitly applies Article 1723 to supervisors and CMs when they direct structural decisions.",
+        "d": "Falsely exempts through limitation—the comparison states limitations protect 'when operating within defined scope,' but doesn't claim to exempt Article 1723 entirely.",
+        "correct": "The comparison states 'Article 1723 structural liability applies to supervisors and construction managers directing structural work' and identifies this as a key legal responsibility consideration.",
+        "takeaway": "Article 1723 applies when supervisors or CMs direct/approve structural work—not uniform across all roles; it attaches to specific technical structural decision-making."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6eba5e5527427a93ccf1014909410716a9adceef66f817fe305cf202d90be710"
+    },
+    {
+      "question_id": "dae8dc6e-ac8a-4631-923a-e40d55c2f370",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "What distinguishes SPP 202 Design Administration from the other service models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design Administration integrates design decisions with construction execution and post-occupancy support across all project phases"
+        },
+        {
+          "id": "b",
+          "text": "SPP 202 Administration is identical to full-time supervision services, offering no unique benefits or distinctions"
+        },
+        {
+          "id": "c",
+          "text": "Design Administration is only applicable to construction phase services, limiting its scope and applicability"
+        },
+        {
+          "id": "d",
+          "text": "The comparison indicates SPP 202 has no distinct characteristics from other models, making it redundant"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Overstates similarity—the comparison explicitly distinguishes Design Administration as a comprehensive model spanning multiple phases and integrating design with construction.",
+        "c": "Incorrectly narrows scope—the comparison identifies Design Administration as encompassing 'preliminary, design, construction, and post-construction' services, not construction-only.",
+        "d": "Denies distinct model characteristics—the comparison explicitly establishes Design Administration as a distinct integrated model different from supervision or standalone CM.",
+        "correct": "The comparison establishes Design Administration as the model that 'encompasses preliminary services, design phase services, construction phase services, and post-construction services' and 'integrates design decisions with construction execution and post-occupancy support.'",
+        "takeaway": "SPP 202 Design Administration (SPP 202) spans all project phases from concept through post-occupancy—the most comprehensive engagement model, integrating design with construction and operations."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fd0685fadc602f7bd348fdb0d73f123acf3e060877713945dec37a39537e9f38"
+    },
+    {
+      "question_id": "29dd6dc5-26ba-4695-b8d9-faf8e24168da",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "In terms of authority scope, how do supervisors differ from construction managers according to the comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supervisors exercise technical compliance verification authority only; construction managers hold broader authority over scheduling, costs, and vendor coordination"
+        },
+        {
+          "id": "b",
+          "text": "Both supervisors and construction managers have identical authority over all project decisions, which is rarely the case in practice"
+        },
+        {
+          "id": "c",
+          "text": "Construction managers are limited to technical verification like supervisors, which is a misunderstanding of their role"
+        },
+        {
+          "id": "d",
+          "text": "The comparison indicates that authority scope is irrelevant to service distinctions, which is not typically accurate"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Denies authority distinction—the comparison explicitly identifies supervisors' authority as 'limited to technical matters' versus CMs' 'broader authority.'",
+        "c": "Misrepresents CM authority—the comparison explicitly establishes CM authority as 'broader' and extending to business decisions supervisors cannot make.",
+        "d": "Denies authority significance—the comparison explicitly uses authority distinctions as a key differentiator among service models.",
+        "correct": "The comparison states Supervisors 'exercise authority limited to technical compliance verification' while CMs 'hold broader authority over scheduling, cost management, and vendor coordination within owner-defined limits.'",
+        "takeaway": "Supervisor authority is limited to technical compliance verification; CM authority extends to scheduling, costs, and vendor coordination—fundamentally different decision-making scopes."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8f7746751a62d0243ef8036fb38fb36d9fe122885d218d0708456ba7e8e55bc9"
+    },
+    {
+      "question_id": "36b5b91f-0408-48ce-8992-10cc2cfcb3c3",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "According to the comparison, why is authority clarification essential among these service models?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Authority clarification prevents role confusion and establishes clear responsibility boundaries among different service types"
+        },
+        {
+          "id": "b",
+          "text": "The comparison indicates that authority clarification is unnecessary since all models are identical in terms of their operational framework"
+        },
+        {
+          "id": "c",
+          "text": "Authority distinctions are irrelevant to contract negotiations, as they do not impact the legal enforceability of agreements"
+        },
+        {
+          "id": "d",
+          "text": "Contracts should avoid specifying authority limitations according to the comparison, to maintain flexibility in service delivery"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Denies distinction necessity—the comparison explicitly identifies authority clarification as preventing confusion, implying distinctions exist.",
+        "c": "Denies contract importance—the comparison emphasizes contracts 'must explicitly define authority limitations' for protection.",
+        "d": "Contradicts contract requirement—the comparison states contracts 'must explicitly define authority limitations,' not avoid doing so.",
+        "correct": "The comparison states 'Authority clarification prevents role confusion and establishes clear responsibility boundaries' and 'Contracts must explicitly define authority limitations to protect all parties.'",
+        "takeaway": "Clear authority definition is essential because service models differ significantly—explicit contracts prevent role confusion and liability disputes among supervision, CM, and administration."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1358bba94d07b56255dfa503c550d2ae786acc8091b88a6caf9912c27284d8ee"
+    },
+    {
+      "question_id": "5dc46cca-f183-4b3f-9d35-a04110ba91f2",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "How does the scope of Construction Management services differ from Full-Time Supervision according to the comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Construction Management encompasses schedule progression, cost control, multi-trade coordination, and resource management beyond supervision's quality focus"
+        },
+        {
+          "id": "b",
+          "text": "Construction Management and Full-Time Supervision have identical scopes and responsibilities, with no distinctions in their roles"
+        },
+        {
+          "id": "c",
+          "text": "Construction Management is limited exclusively to quality verification like supervision, without involvement in other project aspects"
+        },
+        {
+          "id": "d",
+          "text": "The comparison indicates no functional differences between these service types, suggesting they are interchangeable"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Denies scope distinction—the comparison explicitly identifies CM as 'broader' scope than supervision and lists distinct CM responsibilities.",
+        "c": "Overly narrows CM scope—the comparison explicitly establishes CM as encompassing schedule, cost, coordination, and resource management beyond quality focus.",
+        "d": "Denies critical distinctions—the comparison establishes key functional differences in authority, responsibility, and compensation methods between the models.",
+        "correct": "The comparison states CM 'encompass[es] broader project coordination beyond quality verification' and 'address[es] schedule progression, cost control, multi-trade coordination, and resource management' while Supervision 'verifies contractor compliance without managing overall project coordination or cost control.'",
+        "takeaway": "CM (SPP 204-B) adds schedule, cost control, and multi-trade coordination to supervision's quality focus—fundamentally different professional scopes and expertise."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ef8b918abf6fe560becac63e62dccc0821705028a39b3ec1e698af9ba8bce38"
+    },
+    {
+      "question_id": "a539d8c1-b237-4106-9a8d-551646a42cfa",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "What does the comparison indicate about the relationship between service scope and compensation method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compensation methods align with service scope and professional responsibility intensity to establish value exchange"
+        },
+        {
+          "id": "b",
+          "text": "Compensation methods are established arbitrarily without relationship to service scope, often leading to inconsistencies in perceived value"
+        },
+        {
+          "id": "c",
+          "text": "All architectural services should use identical compensation regardless of scope, which simplifies billing but ignores project complexity"
+        },
+        {
+          "id": "d",
+          "text": "The comparison states that service scope has no impact on compensation determination, suggesting a one-size-fits-all approach"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Denies systematic approach—the comparison explicitly establishes compensation as systematically aligned with service scope and responsibility.",
+        "c": "Contradicts differentiation—the comparison identifies different compensation methods for different service scopes, not identical fees.",
+        "d": "Contradicts direct statement—the comparison explicitly links scope and compensation as interconnected factors in service design.",
+        "correct": "The comparison explicitly states 'Compensation methods align with service scope and professional responsibility intensity' and 'Clear fee structures prevent disputes and establish mutual understanding of value exchange.'",
+        "takeaway": "Compensation directly reflects service scope and responsibility intensity—broader scope and greater responsibility justify higher or differently-structured fees than narrower services."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8fed25faf6f62855a23a77c94479b00606587b1a636be1a62c21052216dd0058"
+    },
+    {
+      "question_id": "29a8d547-9d4b-4a7d-a084-127d93e528c6",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "What role does Design Administration play in the architect's overall project involvement according to the comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design Administration encompasses preliminary, design, construction, and post-construction services maintaining architect involvement across all phases"
+        },
+        {
+          "id": "b",
+          "text": "Design Administration only covers the design phase excluding construction and post-occupancy services, limiting the architect's role"
+        },
+        {
+          "id": "c",
+          "text": "The comparison indicates Design Administration has no relationship to other service categories, suggesting a standalone function"
+        },
+        {
+          "id": "d",
+          "text": "Design Administration is limited to construction phase supervision only, focusing on site activities and compliance"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Incorrectly narrows scope—the comparison explicitly includes preliminary, construction, and post-construction services alongside design services.",
+        "c": "Denies relationship—the comparison uses Design Administration to frame distinctions with supervision and CM services.",
+        "d": "Overstates specialization—the comparison identifies Design Administration as spanning multiple phases beyond construction supervision.",
+        "correct": "The comparison establishes Design Administration as 'the architect's involvement from concept through occupancy' and states it 'encompasses preliminary services, design phase services, construction phase services, and post-construction services.'",
+        "takeaway": "Design Administration (SPP 202) maintains architect involvement across all project phases—preliminary, design, construction, post-occupancy—an integrated continuous engagement model."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1cdf5487426a0254537773ebdf631f269a83553c893d1f7ce9c9f61830080442"
+    },
+    {
+      "question_id": "49ee9405-b9df-452e-9385-695bf1c55ce9",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "How do compensation methods differ among the three service models according to the comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supervision uses percentage or fixed fees; Construction Management uses percentage, hourly, or performance methods; Design Administration encompasses fees for entire project delivery"
+        },
+        {
+          "id": "b",
+          "text": "All three service models use identical percentage-of-cost compensation exclusively, without any variation for project type or complexity"
+        },
+        {
+          "id": "c",
+          "text": "The comparison indicates that compensation methods are unrelated to service scope, implying that the choice of method is arbitrary and not influenced by project specifics"
+        },
+        {
+          "id": "d",
+          "text": "SPP 202 Design Administration requires no separate compensation from supervision fees, as it is considered an integral part of the supervision process"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Denies method variation—the comparison explicitly identifies different methods for each service type reflecting their different scopes.",
+        "c": "Denies compensation logic—the comparison explicitly states compensation methods 'align with service scope and professional responsibility intensity.'",
+        "d": "Confuses models—the comparison establishes Design Administration as a distinct comprehensive model with its own compensation framework, not supervision-based.",
+        "correct": "The comparison states 'Full-time supervision typically employs percentage of construction cost or fixed fees'; 'Construction management uses percentage, hourly, or performance-based methods'; and 'Design administration encompasses fees for entire project delivery from concept through occupancy.'",
+        "takeaway": "Each model has distinct compensation methods: Supervision (percentage/fixed fees), CM (percentage/hourly/performance), Design Admin (comprehensive project delivery fees)—aligned with service scope."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8cabb0435c154c1c75965a253910962e677d0070faa76f608dafeb99107736eb"
+    },
+    {
+      "question_id": "db9c9838-e211-4913-a100-15a9af7d2538",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "topic_id": "6e8fd270-2197-4168-af0c-87e6fa3f0555",
+      "text": "According to the comparison framework, what is the primary focus of Full-Time Supervision services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quality control and design verification to ensure construction conforms to design specifications and technical standards"
+        },
+        {
+          "id": "b",
+          "text": "Comprehensive project delivery coordination including cost control and multi-trade scheduling, ensuring all aspects are aligned with the project timeline"
+        },
+        {
+          "id": "c",
+          "text": "Managing all project phases from concept through post-occupancy services, providing a holistic approach to project delivery"
+        },
+        {
+          "id": "d",
+          "text": "Replacing the contractor's responsibility for quality construction, which is not typically the role of supervision services"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Confuses Supervision with Construction Management—the comparison explicitly states CM adds 'cost control and stakeholder management' beyond supervision's quality focus.",
+        "c": "Confuses Supervision with Design Administration—the comparison identifies Design Administration (SPP 202) as the model spanning 'concept through occupancy,' not supervision.",
+        "d": "Misunderstands the role—the comparison establishes supervision as verification and oversight, not assumption of contractor's construction responsibility.",
+        "correct": "The comparison establishes that Full-Time Supervision focuses on 'quality control and design verification' ensuring 'materials, workmanship, and methods conform to design specifications and technical standards.'",
+        "takeaway": "Full-Time Supervision (SPP 204-A) narrowly focuses on quality control and design verification during construction—not cost management or comprehensive project coordination."
+      },
+      "explanation": null,
+      "code_citation": "SPP Documents 201-210",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-015-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:acfc649206103d07b7c1ff4d4277f48460c9c4fb1f28c5e694af5c30044cf220"
+    }
+  ]
+}

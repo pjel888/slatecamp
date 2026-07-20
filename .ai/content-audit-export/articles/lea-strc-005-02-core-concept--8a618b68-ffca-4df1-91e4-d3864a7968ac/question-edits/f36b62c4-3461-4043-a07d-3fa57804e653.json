@@ -23,5 +23,53 @@
       "fundamentals-strength",
       "bsi-design"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "A heavy tank is added above an existing frame. What is the most defensible review sequence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approve it if the tank fits on the roof plan."
+      },
+      {
+        "id": "b",
+        "text": "Trace the load path, identify demand format, compare matching capacity, and check serviceability."
+      },
+      {
+        "id": "c",
+        "text": "Check only the paint specification of the frame."
+      },
+      {
+        "id": "d",
+        "text": "Use a service stress value as a factored resistance."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Approve it if the tank fits on the roof plan. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Trace the load path, identify demand format, compare matching capacity, and check serviceability. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+      "c": "Check only the paint specification of the frame. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "Use a service stress value as a factored resistance. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Trace the load path, identify demand format, compare matching capacity, and check serviceability. Supported by bsi-design; fundamentals-strength.",
+      "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-design; fundamentals-strength",
+      "checked_sources": [
+        "fundamentals-strength",
+        "bsi-design"
+      ]
+    },
+    "explanation": "Trace the load path, identify demand format, compare matching capacity, and check serviceability. Supported by the Batch 144 local source boundary: bsi-design; fundamentals-strength.",
+    "code_citation": "bsi-design; fundamentals-strength",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-005-02-006"
   }
 }

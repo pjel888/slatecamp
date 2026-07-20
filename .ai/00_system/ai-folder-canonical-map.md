@@ -21,7 +21,7 @@ As of 2026-05-17, the `.ai/` cleanup pass is complete. The tree now contains onl
 | `05_logs/` | human-readable logs | includes preserved legacy changelog |
 | `06_specs/` | spec surface | root = operational summaries, `deep/` = deep reference corpus |
 | `07_experiments/` | experiment notes | low-volume research/prototype shelf |
-| `08_prompts/` | active prompt library | includes preserved prompt artifacts under `legacy/` |
+| `08_prompts/` | active prompt library | includes preserved prompt artifacts under `legacy/`; **frontier Plan Pack lifecycle + grounded Git commit workflow** under `000_Planning Prompts/` and `000_Git Commit Prompt/` (see `.ai/08_prompts/README.md`) |
 | `09_archive/` | archive entrypoint | includes preserved content under `store/` |
 | `10_state/` | human-readable state | includes preserved state/runtime residue under `legacy-*` |
 | `11_skills/` | skill governance | live payloads under `payloads/` |

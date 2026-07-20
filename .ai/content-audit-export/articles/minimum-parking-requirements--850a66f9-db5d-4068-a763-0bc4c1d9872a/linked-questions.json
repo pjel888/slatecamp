@@ -8,31 +8,31 @@
       "question_id": "52c59f23-53a5-4910-8232-41854c315f12",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under IBC Section 506.2, what is the MINIMUM WIDTH of open space required to qualify for the frontage increase?",
+      "text": "Which source governs ordinary minimum off-street parking and loading counts for this article?",
       "options": [
         {
           "id": "a",
-          "text": "15 feet (4.57 m) as measured from the property line to the nearest obstruction"
+          "text": "PD 1096 RIRR Table VII.4"
         },
         {
           "id": "b",
-          "text": "20 feet (approximately 6.1 m)"
+          "text": "The BP 344 accessible-parking table only"
         },
         {
           "id": "c",
-          "text": "25 feet (7.62 m) including any overhangs or projections that may encroach"
+          "text": "IBC frontage increase rules"
         },
         {
           "id": "d",
-          "text": "30 feet (9.14 m) to ensure compliance with fire department access requirements"
+          "text": "A local zoning summary without a source locator"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The minimum 20 ft (6.1 m) qualifying width is a separate concept from the W cap of 30 ft in the formula. W = 30 ft is the maximum value used in the (W/30) multiplier, but the open space only needs to be at least 20 ft wide to qualify. A street wider than 30 ft still caps W at 30 ft in the formula.",
+      "rationale": "PD 1096 RIRR Table VII.4 provides the ordinary off-street parking and loading ratios.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,38 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:13.304811+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.041406+00:00",
       "content_hash": "sha256:39f15d3e241495aa7b1de62f909920ad097bf092974c6f35c594d25db676e6c3"
     },
     {
       "question_id": "c0a7e645-33eb-41b9-a933-5e2f49ea9e2d",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per Section 811, for WET AREAS (toilet, bath, laundry), what window area is required and what is the absolute minimum opening?",
+      "text": "What is the standard PD 1096 perpendicular or diagonal car slot size used in the audited repair?",
       "options": [
         {
           "id": "a",
-          "text": "10% of floor area; minimum 240 sq mm, ensuring adequate ventilation and natural light"
+          "text": "2.50 m by 5.00 m"
         },
         {
           "id": "b",
-          "text": "1/20 of floor area (5%); minimum 240 sq mm"
+          "text": "2.15 m by 6.00 m"
         },
         {
           "id": "c",
-          "text": "5% of floor area; minimum 1.00 sq.m, providing sufficient air exchange"
+          "text": "3.00 m by 9.00 m"
         },
         {
           "id": "d",
-          "text": "15% of floor area; minimum 500 sq mm, maximizing light and air flow"
+          "text": "4.00 m by 5.00 m"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 1/20 (5%) and 240 sq mm for wet rooms vs. 10% and 1.00 sq.m for habitable rooms is a direct comparison trap. Option A applies the habitable room percentage (10%) to wet rooms. Option C uses the habitable room absolute minimum (1.00 sq.m) instead of 240 sq mm. Option D uses wrong percentage and wrong minimum.",
+      "rationale": "PD 1096 gives 2.50 m by 5.00 m for perpendicular or diagonal car slots.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -89,38 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:14.569927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.038745+00:00",
       "content_hash": "sha256:c3713a73450336dce92afdc590796871d66562d821d362f289059fb7343adb69"
     },
     {
       "question_id": "18e7e8dd-abaa-41f1-a4ac-5c9309a38f76",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per PD 1096, Rule XIII, Section 1301, the minimum vertical clearance for a service drop crossing a street at the crown of the road is:",
+      "text": "How many accessible parking slots are required for 501 to 1000 total parking spaces under the 2024 BP 344 IRR?",
       "options": [
         {
-          "id": "em-012-a",
-          "text": "2.50 m"
+          "id": "a",
+          "text": "2 percent of total parking spaces"
         },
         {
-          "id": "em-012-b",
-          "text": "3.00 m"
+          "id": "b",
+          "text": "9 spaces total"
         },
         {
-          "id": "em-012-c",
-          "text": "5.50 m"
+          "id": "c",
+          "text": "20 spaces plus one per 100 over 1000"
         },
         {
-          "id": "em-012-d",
-          "text": "6.00 m"
+          "id": "d",
+          "text": "One accessible space for each 50 spaces"
         }
       ],
-      "correct_option_id": "em-012-c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 5.50 m street crown clearance is nearly identical to the NEC requirement of 18 feet (5.49 m). This international alignment reflects the universal challenge of accommodating tall vehicles under overhead service drops at street intersections and crossings.",
+      "rationale": "The 2024 BP 344 table uses 2 percent of total spaces for the 501-1000 bracket.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -133,206 +133,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:16.162931+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.013167+00:00",
       "content_hash": "sha256:55db21ca58ec5af5696dba3dc1e47b5ca66fc924486dbd5080ca6aed3eeab0f3"
     },
     {
       "question_id": "b918195c-be77-4c3f-965c-2a6cd4154240",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule VIII, Section 804, what are the minimum court dimensions — specifically the minimum horizontal dimension of any court and the minimum width of a passageway to an inner court?",
-      "options": [
-        {
-          "id": "lv-005-a",
-          "text": "Minimum horizontal dimension of any court: 1.50 m; minimum width of passageway to inner court: 1.00 m"
-        },
-        {
-          "id": "lv-005-b",
-          "text": "Minimum horizontal dimension of any court: 2.00 m; minimum width of passageway to inner court: 1.20 m"
-        },
-        {
-          "id": "lv-005-c",
-          "text": "Minimum horizontal dimension of any court: 2.50 m; minimum width of passageway to inner court: 1.50 m"
-        },
-        {
-          "id": "lv-005-d",
-          "text": "Minimum horizontal dimension of any court: 3.00 m; minimum width of passageway to inner court: 1.20 m"
-        }
-      ],
-      "correct_option_id": "lv-005-b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "The 2.00 m court minimum is the same as the habitable room least dimension — both are 2.00 m. The 1.20 m passageway matches the temporary walkway minimum under Rule XI. These convergences across rules help with memory encoding.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cbd1e63cbadda853c6f275758707bc8e488c886416d81ca66e8528dfac929ebc"
-    },
-    {
-      "question_id": "bf4f2007-6c3c-4160-8697-2867f0b8ba53",
-      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule VIII, Section 808, windows may open into a roofed porch under specific conditions. Which of the following correctly states all required conditions?",
-      "options": [
-        {
-          "id": "lv-007-a",
-          "text": "The porch abuts a court, yard, public street, alley, or open watercourse; porch ceiling height at least 2.70 m; at least 65% of the longer side of the porch is open and unobstructed"
-        },
-        {
-          "id": "lv-007-b",
-          "text": "The porch has a ceiling height of at least 3.00 m; at least 50% of any side is open, ensuring adequate ventilation"
-        },
-        {
-          "id": "lv-007-c",
-          "text": "The porch abuts a court or yard only; ceiling height at least 2.40 m; at least 75% of the perimeter is open to allow for sufficient airflow"
-        },
-        {
-          "id": "lv-007-d",
-          "text": "The porch ceiling height is at least 2.70 m; no specific open-side percentage is required, but natural light must be maximized"
-        }
-      ],
-      "correct_option_id": "lv-007-a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "The porch exception is valuable in dense urban lots where a traditional court is not available. The architect can create a roofed porch that functions as a semi-outdoor space, with windows opening into it rather than directly to the exterior. Meeting all three conditions simultaneously is required — the candidate must not truncate the requirements.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:093ff5227e07ec9ac161702372d726c3dd41f38eca4a7566aecec040ff5d2648"
-    },
-    {
-      "question_id": "2f1ae785-1019-4512-8ee8-cf98169f4537",
-      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the minimum vertical clearance required for a BALCONY above grade under Rule X, Section 1003?",
+      "text": "What is the minimum accessible parking slot size in the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "2.40 m"
+          "text": "4000 mm by 5000 mm"
         },
         {
           "id": "b",
-          "text": "3.00 m"
+          "text": "2500 mm by 5000 mm"
         },
         {
           "id": "c",
-          "text": "4.50 m"
+          "text": "2150 mm by 6000 mm"
         },
         {
           "id": "d",
-          "text": "2.10 m"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Permanent overhead cover (balconies, canopies) = 3.00 m. Movable/retractable overhead (awnings) = 2.40 m. Mnemonic: 'Permanent = 3.00; movable = 2.40.'",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:52:18.389139+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:527c30d864e4dbfa45d1c17289f7743ae0295ac7187d616dca3aa9066b77e45c"
-    },
-    {
-      "question_id": "8c93e456-3440-4c36-912f-8f3503377667",
-      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under Rule X, what is the minimum vertical clearance for a MOVABLE AWNING above pavement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "3.00 m"
-        },
-        {
-          "id": "b",
-          "text": "2.40 m"
-        },
-        {
-          "id": "c",
-          "text": "2.00 m"
-        },
-        {
-          "id": "d",
-          "text": "1.80 m"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Awnings (movable) = 2.40 m clearance. Canopies (permanent) = 3.00 m clearance. Always identify whether the overhead projection is permanent or retractable before selecting the applicable clearance.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:52:18.389139+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9219b5b04a2bfebfbbcb1c2a8c4be8ab43435767f2b523b705c884eb976448f5"
-    },
-    {
-      "question_id": "b1e19bb8-ca5e-4dd4-aa89-63c857c729cb",
-      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under the variance provision of Section 803, Subsection 4e, when can TOSL requirements be waived for lots abutting public open spaces?",
-      "options": [
-        {
-          "id": "a",
-          "text": "When the lot abuts 1 public open space with depth ≤ 8.00 m, or 2+ open spaces with depth ≤ 12.00 m"
-        },
-        {
-          "id": "b",
-          "text": "When the lot abuts a national road, regardless of depth, provided it meets other zoning requirements"
-        },
-        {
-          "id": "c",
-          "text": "Only when approved by the sanggunian, for any lot regardless of dimensions, subject to additional environmental assessments"
-        },
-        {
-          "id": "d",
-          "text": "TOSL requirements cannot be waived under any circumstances, as they are essential for urban planning"
+          "text": "3000 mm by 9000 mm"
         }
       ],
       "correct_option_id": "a",
@@ -340,7 +164,95 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The variance recognizes that lots adjacent to public parks or plazas can draw open space from those public areas rather than providing it entirely on-lot.",
+      "rationale": "The accessible slot is wider than an ordinary car slot: at least 4000 mm by 5000 mm.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-07-20T01:13:24.031980+00:00",
+      "content_hash": "sha256:cbd1e63cbadda853c6f275758707bc8e488c886416d81ca66e8528dfac929ebc"
+    },
+    {
+      "question_id": "bf4f2007-6c3c-4160-8697-2867f0b8ba53",
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Where should accessible parking be located in a multi-story parking facility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Near accessible elevators or accessible pedestrian entrances"
+        },
+        {
+          "id": "b",
+          "text": "On ramped aisles to shorten travel distance"
+        },
+        {
+          "id": "c",
+          "text": "Only at the farthest end of the parking level"
+        },
+        {
+          "id": "d",
+          "text": "Anywhere if the stall is painted blue"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "BP 344 directs accessible stalls in multi-story parking to accessible elevators or accessible pedestrian entrances and bars ramped or sloping placement.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-07-20T01:13:24.045342+00:00",
+      "content_hash": "sha256:093ff5227e07ec9ac161702372d726c3dd41f38eca4a7566aecec040ff5d2648"
+    },
+    {
+      "question_id": "2f1ae785-1019-4512-8ee8-cf98169f4537",
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which source governs ordinary minimum off-street parking and loading counts for this article?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PD 1096 RIRR Table VII.4"
+        },
+        {
+          "id": "b",
+          "text": "The BP 344 accessible-parking table only"
+        },
+        {
+          "id": "c",
+          "text": "IBC frontage increase rules"
+        },
+        {
+          "id": "d",
+          "text": "A local zoning summary without a source locator"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 RIRR Table VII.4 provides the ordinary off-street parking and loading ratios.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -353,38 +265,126 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.389139+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.029043+00:00",
+      "content_hash": "sha256:527c30d864e4dbfa45d1c17289f7743ae0295ac7187d616dca3aa9066b77e45c"
+    },
+    {
+      "question_id": "8c93e456-3440-4c36-912f-8f3503377667",
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the standard PD 1096 perpendicular or diagonal car slot size used in the audited repair?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.50 m by 5.00 m"
+        },
+        {
+          "id": "b",
+          "text": "2.15 m by 6.00 m"
+        },
+        {
+          "id": "c",
+          "text": "3.00 m by 9.00 m"
+        },
+        {
+          "id": "d",
+          "text": "4.00 m by 5.00 m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 gives 2.50 m by 5.00 m for perpendicular or diagonal car slots.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.389139+00:00",
+      "updated_at": "2026-07-20T01:13:24.016018+00:00",
+      "content_hash": "sha256:9219b5b04a2bfebfbbcb1c2a8c4be8ab43435767f2b523b705c884eb976448f5"
+    },
+    {
+      "question_id": "b1e19bb8-ca5e-4dd4-aa89-63c857c729cb",
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "How many accessible parking slots are required for 501 to 1000 total parking spaces under the 2024 BP 344 IRR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 percent of total parking spaces"
+        },
+        {
+          "id": "b",
+          "text": "9 spaces total"
+        },
+        {
+          "id": "c",
+          "text": "20 spaces plus one per 100 over 1000"
+        },
+        {
+          "id": "d",
+          "text": "One accessible space for each 50 spaces"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2024 BP 344 table uses 2 percent of total spaces for the 501-1000 bracket.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.389139+00:00",
+      "updated_at": "2026-07-20T01:13:24.017433+00:00",
       "content_hash": "sha256:ff1a93e4f78c267fa5f288ad0d670a00d570c8f180677b923874c56069aa7f4e"
     },
     {
       "question_id": "a3932901-e999-49f9-bad0-80120c66fa72",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under the 2004 Revised IRR of PD 1096 (Rule VII, Sec. 707.4), what are the minimum dimensions for a standard perpendicular automobile parking slot?",
+      "text": "What is the minimum accessible parking slot size in the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "2.00 m wide by 5.00 m long — the baseline dimension used in older pre-2004 review materials"
+          "text": "4000 mm by 5000 mm"
         },
         {
           "id": "b",
-          "text": "2.15 m wide by 6.00 m long — a wider, longer slot for all car types including parallel-parked vehicles"
+          "text": "2500 mm by 5000 mm"
         },
         {
           "id": "c",
-          "text": "2.50 m wide by 5.00 m long — the current PRBoA-annotated standard for perpendicular and diagonal car slots"
+          "text": "2150 mm by 6000 mm"
         },
         {
           "id": "d",
-          "text": "2.40 m wide by 5.00 m long — the intermediate value appearing in some unofficial review materials"
+          "text": "3000 mm by 9000 mm"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Rule VII, Sec. 707.4 of the PRBoA-annotated 2004 Revised IRR sets the minimum perpendicular or diagonal car slot at 2.50 m x 5.00 m. Option A (2.00 x 5.00) is from pre-2004 references. Option B (2.15 x 6.00) is the parallel car slot dimension. Option D (2.40 x 5.00) appears in unofficial reviewers but is not the IRR figure.",
+      "rationale": "The accessible slot is wider than an ordinary car slot: at least 4000 mm by 5000 mm.",
       "explanation": "Perpendicular/diagonal car: 2.50 m x 5.00 m. Parallel car: 2.15 m x 6.00 m (narrower but longer). Jeepney: 3.00 m x 9.00 m. Bus/truck: 3.60 m x 12.00 m. PWD slot: 4.00 m x 5.00 m. These five sets of dimensions are all independently tested on the LEA.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Sec. 707.4",
       "bloom_level": "remember",
@@ -397,38 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.021839+00:00",
       "content_hash": "sha256:d1e47284fbe472493d2861802425a19e44fb673878f7c8f4557ee15a38d5eaa2"
     },
     {
       "question_id": "9908157a-a669-47d9-90e3-83b4df496405",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A Group H theater in a highly urbanized city has a spectator area of 600 sq.m. and a capacity of 600 spectators. Under the 2004 Revised IRR Table VII.4, which set of minimum parking provisions is correct?",
+      "text": "Where should accessible parking be located in a multi-story parking facility?",
       "options": [
         {
           "id": "a",
-          "text": "12 car slots only — based on 1 slot per 50 sq.m. of spectator area, without considering additional vehicle types"
+          "text": "Near accessible elevators or accessible pedestrian entrances"
         },
         {
           "id": "b",
-          "text": "12 car slots and 12 jeepney/shuttle slots — combined car+jeepney per 50 sq.m., no bus slots required, assuming no large group arrivals"
+          "text": "On ramped aisles to shorten travel distance"
         },
         {
           "id": "c",
-          "text": "12 car slots, 12 jeepney/shuttle slots, and 3 bus slots — car+jeepney per 50 sq.m. plus 1 bus per 200 spectators"
+          "text": "Only at the farthest end of the parking level"
         },
         {
           "id": "d",
-          "text": "6 car slots and 3 bus slots only — applying 1 car per 100 sq.m. and 1 bus per 200 spectators, which may not accommodate peak demand"
+          "text": "Anywhere if the stall is painted blue"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "2004 IRR Table VII.4 for theaters/cinemas (Group H): 1 car slot + 1 jeepney/shuttle slot per 50 sq.m. spectator area, PLUS 1 bus slot per 200 spectators. 600 sq.m. ÷ 50 = 12 car slots and 12 jeepney slots. 600 spectators ÷ 200 = 3 bus slots. All three vehicle types are mandatory. Option A omits jeepney and bus slots. Option B omits bus slots. Option D uses wrong car ratio and omits jeepney slots.",
+      "rationale": "BP 344 directs accessible stalls in multi-story parking to accessible elevators or accessible pedestrian entrances and bars ramped or sloping placement.",
       "explanation": "Assembly occupancies (theaters, stadia, convention centers) require three vehicle types: car + jeepney per 50 sq.m. of spectator area, AND 1 bus slot per 200 spectators. This multi-vehicle requirement reflects Philippine public transport patterns. The most common trap is computing only car slots and forgetting the mandatory jeepney and bus provisions.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4",
       "bloom_level": "analyze",
@@ -441,38 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.014592+00:00",
       "content_hash": "sha256:7e6c92857c35543cdeaf33c143dab22b69c9fd0fe7155dcd27b490d2f3988e74"
     },
     {
       "question_id": "6f3e2c37-0d0c-4ca6-abef-c697719fb462",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A hotel in a highly urbanized city has 25 guest rooms. Under the 2004 Revised IRR of PD 1096 (Table VII.4), what is the minimum required parking provision?",
+      "text": "Which source governs ordinary minimum off-street parking and loading counts for this article?",
       "options": [
         {
           "id": "a",
-          "text": "3 car slots only — applying 1 slot per 3 rooms, rounded down, with no supplemental vehicle slots required"
+          "text": "PD 1096 RIRR Table VII.4"
         },
         {
           "id": "b",
-          "text": "3 car slots plus 2 tourist bus slots — the flat bus slot requirement applies per hotel regardless of size"
+          "text": "The BP 344 accessible-parking table only"
         },
         {
           "id": "c",
-          "text": "9 car slots plus 2 tourist bus slots — applying 1:3 ratio rounded up plus the flat per-hotel bus requirement"
+          "text": "IBC frontage increase rules"
         },
         {
           "id": "d",
-          "text": "9 car slots only — tourist bus slots are only required for hotels with 50 or more rooms"
+          "text": "A local zoning summary without a source locator"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 2004 Revised IRR Table VII.4 specifies: highly urbanized city hotels → 1 car slot per 3 rooms (or fraction thereof) + 2 tourist bus slots per hotel. 25 rooms ÷ 3 = 8.33, rounded UP to 9 car slots. The 2 tourist bus slots are a flat per-hotel requirement regardless of room count. Option A omits the bus slots and rounds down. Option B uses only 3 slots (no rounding up). Option D incorrectly limits bus slots to larger hotels.",
+      "rationale": "PD 1096 RIRR Table VII.4 provides the ordinary off-street parking and loading ratios.",
       "explanation": "Hotel parking under 2004 IRR: highly urbanized = 1:3 rooms + 2 bus slots; all other areas = 1:7 rooms + 2 bus slots; Old Summary Table = 1:10 rooms. The 2 tourist bus slots are always a flat per-hotel requirement. 'Fraction thereof' always rounds up: 25/3 = 8.33 → 9 car slots.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4",
       "bloom_level": "apply",
@@ -485,38 +485,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.026118+00:00",
       "content_hash": "sha256:9a3f80220d8dabaed7de78d3048a6cbc11f27388fd5d7593d0eedf8d65a18944"
     },
     {
       "question_id": "bf4d568f-9342-4e41-9e86-262d7d482c66",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under the Old Summary Table of PD 1096 (pre-2004), a low-income single-detached residential development has 47 units on individual lots of 90 sq.m. each. What is the minimum required pooled parking provision?",
+      "text": "What is the standard PD 1096 perpendicular or diagonal car slot size used in the audited repair?",
       "options": [
         {
           "id": "a",
-          "text": "4 slots — 47 divided by 10 rounded down to 4"
+          "text": "2.50 m by 5.00 m"
         },
         {
           "id": "b",
-          "text": "5 slots — 47 divided by 10 equals 4.7, rounded up per the 'fraction thereof' rule"
+          "text": "2.15 m by 6.00 m"
         },
         {
           "id": "c",
-          "text": "6 slots — applying the 2004 IRR bracket for lots 50–96 sq.m. at 1 slot per 4 lots"
+          "text": "3.00 m by 9.00 m"
         },
         {
           "id": "d",
-          "text": "12 slots — applying the 1 slot per 4 units ratio for multi-family dwellings at 50–100 sq.m."
+          "text": "4.00 m by 5.00 m"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The Old Summary Table specifies 1 pooled slot per 10 units for low-income single-detached dwellings on lots not more than 100 sq.m. 47 ÷ 10 = 4.7 → round UP to 5 slots. Option A (4 slots) is the rounding-down error. Option C incorrectly applies the 2004 IRR subdivision table (which uses lot-size brackets, not the 1:10 unit ratio). Option D applies the wrong residential category.",
+      "rationale": "PD 1096 gives 2.50 m by 5.00 m for perpendicular or diagonal car slots.",
       "explanation": "Old Table: low-income single-detached on lots ≤100 sq.m. → 1 pooled slot per 10 units. This differs from the 2004 IRR which uses lot-size brackets (32–72 sq.m. → 1:6 lots; 50–96 sq.m. → 1:4 lots). When a question uses 'low-income single-detached' framing without specifying Table VII.4, the Old Table applies.",
       "code_citation": "PD 1096, Old Summary Parking Table (pre-2004 IRR)",
       "bloom_level": "apply",
@@ -529,38 +529,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.007671+00:00",
       "content_hash": "sha256:6a45bcfdf1538edbc70ad8db5ab76c762b69b74352b392b99c326e0acaf3028e"
     },
     {
       "question_id": "ac0c6da1-945a-41b9-8e87-4f91abeaf072",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What are the minimum dimensions and key locational requirement for an accessible (PWD) parking slot under the amended BP 344 IRR?",
+      "text": "How many accessible parking slots are required for 501 to 1000 total parking spaces under the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "3.70 m x 5.00 m; located within 60 m of the main entrance to remain accessible"
+          "text": "2 percent of total parking spaces"
         },
         {
           "id": "b",
-          "text": "4.00 m x 5.00 m; located nearest to accessible main entrances, not in ramped or sloping areas"
+          "text": "9 spaces total"
         },
         {
           "id": "c",
-          "text": "2.50 m x 5.00 m with a 1.50 m side transfer zone; located at the architect's discretion"
+          "text": "20 spaces plus one per 100 over 1000"
         },
         {
           "id": "d",
-          "text": "4.00 m x 6.00 m; located within any accessible parking level in multi-storey structures"
+          "text": "One accessible space for each 50 spaces"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Amended BP 344 Appendix A, Sec. A.6: accessible parking slots measure 4.00 m wide x 5.00 m long (not 2.50 m x 5.00 m), with a 1.20 m clear walkway in front. They must be nearest to accessible main entrances and must not be located on ramped or sloping areas. Option A cites an outdated 60 m rule and wrong dimensions. Option C uses standard car slot dimensions. Option D uses incorrect length (6.00 m).",
+      "rationale": "The 2024 BP 344 table uses 2 percent of total spaces for the 501-1000 bracket.",
       "explanation": "PWD slot: 4.00 m x 5.00 m — the extra 1.50 m width (vs. standard 2.50 m car slot) accommodates wheelchair transfer and an adjacent walkway. The 1.20 m clear walkway is provided in front of parked cars. Location must be nearest to accessible main entrances, not on slopes. The older '60 m' distance rule has been replaced by the 'nearest to accessible entry' proximity requirement.",
       "code_citation": "BP 344 IRR (Amended), Appendix A, Sec. A.6.3, A.6.9–A.6.11",
       "bloom_level": "remember",
@@ -573,39 +573,39 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.042717+00:00",
       "content_hash": "sha256:1e641730caf028ed03a1ecb51107a7b8620c7807aaca271fad0822ee4eeb868b"
     },
     {
       "question_id": "52d28326-aaf0-49c0-9e3e-157225c9a353",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An R-4 townhouse project has 12 units each with a GFA of 50 sq.m. Under the 2004 Revised IRR of PD 1096, how many pooled parking slots are required?",
+      "text": "What is the minimum accessible parking slot size in the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "2 slots — using the R-5 condominium 1:6 ratio (>22–50 sq.m. bracket) for the 12 units"
+          "text": "4000 mm by 5000 mm"
         },
         {
           "id": "b",
-          "text": "3 slots — using the R-5 condominium 1:4 ratio (50–100 sq.m. bracket) for the 12 units"
+          "text": "2500 mm by 5000 mm"
         },
         {
           "id": "c",
-          "text": "6 slots — using the R-4 townhouse ratio of 1 pooled slot per 2 units"
+          "text": "2150 mm by 6000 mm"
         },
         {
           "id": "d",
-          "text": "12 slots — 1 slot per unit as required for all attached residential projects"
+          "text": "3000 mm by 9000 mm"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 2004 Revised IRR Table VII.4 provides a separate R-4 townhouse category: 1 pooled slot per 2 units (or fraction thereof) for townhouses at 50 sq.m. GFA. 12 units ÷ 2 = 6 slots exactly. Options A and B incorrectly apply the R-5 condominium scale to an R-4 project. Option D applies a 1:1 ratio that applies only to R-5 units over 100 sq.m. The occupancy type (R-4 townhouse vs R-5 condominium) determines which parking table applies.",
-      "explanation": "Townhouse (R-4) at 50 sq.m. GFA uses 1:2 ratio, not the R-5 condominium sclea. The '8-6-4-1' sclea applies exclusively to R-5 condominiums. Mixing these two tables is the primary exam trap. Also note: all parking must be located outside the RROW — no private parking on public streets.",
+      "rationale": "The accessible slot is wider than an ordinary car slot: at least 4000 mm by 5000 mm.",
+      "explanation": "Townhouse (R-4) at 50 sq.m. GFA uses 1:2 ratio, not the R-5 condominium scale. The '8-6-4-1' scale applies exclusively to R-5 condominiums. Mixing these two tables is the primary exam trap. Also note: all parking must be located outside the RROW — no private parking on public streets.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4",
       "bloom_level": "analyze",
       "application_context": null,
@@ -617,38 +617,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.044029+00:00",
       "content_hash": "sha256:983532fe887d8e0cb5a0109dde4c207dcb425fa39ab78c9c1e26c4f0b73d45b5"
     },
     {
       "question_id": "2772895e-5e13-4851-b033-8c6a38242e48",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An architect is reviewing a building permit application for a proposed structure in a highly urbanized city. The application cites 'PD 1096' as authority for providing 1 parking slot per 10 hotel rooms — yet the project is a new 4-star hotel. Which assessment is correct?",
+      "text": "Where should accessible parking be located in a multi-story parking facility?",
       "options": [
         {
           "id": "a",
-          "text": "The ratio is correct — 1:10 is the current PD 1096 standard for all hotels regardless of location, including urban areas"
+          "text": "Near accessible elevators or accessible pedestrian entrances"
         },
         {
           "id": "b",
-          "text": "The ratio is correct for the Old Summary Table but would not comply with the 2004 Revised IRR for a highly urbanized city hotel"
+          "text": "On ramped aisles to shorten travel distance"
         },
         {
           "id": "c",
-          "text": "The ratio is incorrect under all versions of PD 1096 — the correct ratio has always been 1:3 rooms for any hotel, ensuring adequate parking"
+          "text": "Only at the farthest end of the parking level"
         },
         {
           "id": "d",
-          "text": "The ratio is acceptable since new hotels are exempt from parking requirements under the 2004 IRR, which provides flexibility for new developments"
+          "text": "Anywhere if the stall is painted blue"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 1:10 rooms ratio appears in the pre-2004 Old Summary Table and is confirmed in some board exam question banks. However, the 2004 Revised IRR Table VII.4 requires 1 slot per 3 rooms (highly urbanized) or 1 per 7 rooms (all other areas), plus 2 tourist bus slots per hotel. A new hotel in a highly urbanized city must comply with the 2004 IRR, making 1:10 non-compliant. Option A is incorrect — the 1:10 ratio was superseded in 2004. Option C is wrong — 1:3 only applies to highly urbanized cities. Option D has no basis in the Code.",
+      "rationale": "BP 344 directs accessible stalls in multi-story parking to accessible elevators or accessible pedestrian entrances and bars ramped or sloping placement.",
       "explanation": "Two hotel parking tables exist: Old Summary Table (1:10 rooms, no bus requirement) and 2004 Revised IRR (1:3 rooms in highly urbanized / 1:7 elsewhere + 2 tourist bus slots). The 2004 IRR is the legally-binding current standard. The LEA tests both, so the key skill is recognizing which table the question is invoking based on context clues — 'highly urbanized city' always signals Table VII.4.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4 vs. pre-2004 Old Summary Table",
       "bloom_level": "evaluate",
@@ -661,38 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.020401+00:00",
       "content_hash": "sha256:d435b470cddb58e9a20b469c948b7e4e1c2dc3f4b9824acd7b9e8e3f9f58eca8"
     },
     {
       "question_id": "28963736-b95c-474d-9bcf-785de04c663a",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An office building has a Gross Floor Area of 1,250 sq.m. Under the 2004 Revised IRR Table VII.4, what is the minimum number of off-street car parking slots required?",
+      "text": "Which source governs ordinary minimum off-street parking and loading counts for this article?",
       "options": [
         {
           "id": "a",
-          "text": "8 slots — 1 slot per 150 sq.m. GFA, rounding down as fractional slots are not provided"
+          "text": "PD 1096 RIRR Table VII.4"
         },
         {
           "id": "b",
-          "text": "10 slots — 1 slot per 125 sq.m. GFA with no fraction, exact division"
+          "text": "The BP 344 accessible-parking table only"
         },
         {
           "id": "c",
-          "text": "13 slots — 1 slot per 100 sq.m. GFA rounded up per the fraction-thereof rule"
+          "text": "IBC frontage increase rules"
         },
         {
           "id": "d",
-          "text": "42 slots — 1 slot per 30 sq.m. of customer area applied to the full GFA"
+          "text": "A local zoning summary without a source locator"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Table VII.4 specifies office buildings at 1 car slot per 125 sq.m. of GFA. 1,250 sq.m. ÷ 125 = exactly 10 slots with no remainder — no rounding needed. Option A uses 1:150 (which is the market floor area ratio, not offices). Option C uses 1:100 (incorrect ratio). Option D applies the restaurant ratio (1:30 sq.m. customer area) to the wrong occupancy type.",
+      "rationale": "PD 1096 RIRR Table VII.4 provides the ordinary off-street parking and loading ratios.",
       "explanation": "Office buildings: 1 slot per 125 sq.m. GFA. Shopping centers: 1 per 100 sq.m. Restaurants: 1 per 30 sq.m. customer area. Markets: 1 per 150 sq.m. market floor area. Knowing which ratio applies to which occupancy type is as important as computing the number correctly.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4",
       "bloom_level": "apply",
@@ -705,39 +705,39 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.036024+00:00",
       "content_hash": "sha256:7e78701ed7e36649d11104ca85a198fe0b52a7fd968872f694d082295d6305b3"
     },
     {
       "question_id": "ac331568-9433-410b-adfc-7ff7582f9893",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An R-5 condominium in a highly urbanized city has 25 residential units with an average GFA of 45 sq.m. per unit. Under the 2004 Revised IRR as amended by DPWH DO 059 s. 2019, what is the minimum number of off-street parking slots required?",
+      "text": "What is the standard PD 1096 perpendicular or diagonal car slot size used in the audited repair?",
       "options": [
         {
           "id": "a",
-          "text": "4 slots — applying the 1:6 ratio and rounding down to the nearest whole number, which is standard practice for small developments"
+          "text": "2.50 m by 5.00 m"
         },
         {
           "id": "b",
-          "text": "5 slots — applying the 1:6 ratio (22–50 sq.m. bracket) and rounding up per the 'fraction thereof' rule"
+          "text": "2.15 m by 6.00 m"
         },
         {
           "id": "c",
-          "text": "7 slots — applying the 1:4 ratio for units in the 50–100 sq.m. bracket, which is applicable only if the average GFA exceeds 50 sq.m."
+          "text": "3.00 m by 9.00 m"
         },
         {
           "id": "d",
-          "text": "25 slots — 1 slot per unit as required for all condominium projects, regardless of unit size or location"
+          "text": "4.00 m by 5.00 m"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Under Division A-2 (R-5 Condominium), DPWH DO 059 s. 2019: units above 22.00 up to 50.00 sq.m. require 1 pooled slot per 6 units. 25 ÷ 6 = 4.167 → round UP to 5 slots per the 'or fraction thereof' rule. Option A (4 slots) is the rounding-down error. Option C uses the wrong bracket (50–100 sq.m.). Option D applies the 1:1 ratio for units over 100 sq.m.",
-      "explanation": "R-5 condominium parking ratios follow the '8-6-4-1' sclea: 18–22 sq.m. → 1:8; >22–50 sq.m. → 1:6; 50–100 sq.m. → 1:4; >100 sq.m. → 1:1. The 'or fraction thereof' rule always rounds up. 45 sq.m. falls in the 1:6 bracket: 25/6 = 4.17, rounded up to 5.",
+      "rationale": "PD 1096 gives 2.50 m by 5.00 m for perpendicular or diagonal car slots.",
+      "explanation": "R-5 condominium parking ratios follow the '8-6-4-1' scale: 18–22 sq.m. → 1:8; >22–50 sq.m. → 1:6; 50–100 sq.m. → 1:4; >100 sq.m. → 1:1. The 'or fraction thereof' rule always rounds up. 45 sq.m. falls in the 1:6 bracket: 25/6 = 4.17, rounded up to 5.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4; DPWH DO 059 s. 2019",
       "bloom_level": "apply",
       "application_context": null,
@@ -749,38 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.027496+00:00",
       "content_hash": "sha256:70cf4564134314b2c345221b37bea4a38812f1f0444b7be1deab263636c3f248"
     },
     {
       "question_id": "f41cd511-730f-4e06-b116-cc6d58e5a920",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A building has 180 total off-street parking slots. How many accessible (PWD) parking slots are required under the amended BP 344 IRR?",
+      "text": "How many accessible parking slots are required for 501 to 1000 total parking spaces under the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "2 accessible slots — 1% of 180 rounded to the nearest whole number, which is the minimum requirement"
+          "text": "2 percent of total parking spaces"
         },
         {
           "id": "b",
-          "text": "4 accessible slots — falling in the 151–200 band at 4 slots per the BP 344 table, which is a common misinterpretation"
+          "text": "9 spaces total"
         },
         {
           "id": "c",
-          "text": "6 accessible slots — the BP 344 Appendix A table specifies 6 slots for the 151–200 total range"
+          "text": "20 spaces plus one per 100 over 1000"
         },
         {
           "id": "d",
-          "text": "9 accessible slots — 5% of 180 total slots rounded up, which is not applicable in this case"
+          "text": "One accessible space for each 50 spaces"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "BP 344 Appendix A, Table A.6.1 specifies accessible slot bands: 1–25→1, 26–50→2, 51–75→3, 76–100→4, 101–150→5, 151–200→6. For 180 total slots (in the 151–200 band), 6 accessible slots are required. Option A erroneously uses a 1% calculation. Option B (4 slots) corresponds to the 76–100 band. Option D applies an incorrect 5% formula.",
+      "rationale": "The 2024 BP 344 table uses 2 percent of total spaces for the 501-1000 bracket.",
       "explanation": "BP 344 uses a stepped band table, not a percentage. Bands 1–25=1, 26–50=2, 51–75=3, 76–100=4, 101–150=5, 151–200=6, 201–300=7, 301–400=8, 401–500=9. Above 500: 2% of total; above 1000: 20 + 1 per 100 or fraction over 1000. The transition to percentage only begins at 501+ total slots.",
       "code_citation": "BP 344 IRR (Amended), Appendix A, Sec. A.6, Table A.6.1",
       "bloom_level": "apply",
@@ -793,38 +793,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.391899+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.030576+00:00",
       "content_hash": "sha256:38bbf44dfbb549a13e9d29de06d52af36a4c31682927b8ffcd64a52eb9d9f9f2"
     },
     {
       "question_id": "a3b9fc07-da66-4818-b524-1f4fbd4c498e",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An office building has a Gross Floor Area of 1,250 sq.m. Under the 2004 Revised IRR Table VII.4, what is the minimum number of off-street car parking slots required?",
+      "text": "What is the minimum accessible parking slot size in the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "8 slots — 1 slot per 150 sq.m. GFA, rounding down as fractional slots are not provided"
+          "text": "4000 mm by 5000 mm"
         },
         {
           "id": "b",
-          "text": "10 slots — 1 slot per 125 sq.m. GFA with no fraction, exact division"
+          "text": "2500 mm by 5000 mm"
         },
         {
           "id": "c",
-          "text": "13 slots — 1 slot per 100 sq.m. GFA rounded up per the fraction-thereof rule"
+          "text": "2150 mm by 6000 mm"
         },
         {
           "id": "d",
-          "text": "42 slots — 1 slot per 30 sq.m. of customer area applied to the full GFA"
+          "text": "3000 mm by 9000 mm"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Table VII.4 specifies office buildings at 1 car slot per 125 sq.m. of GFA. 1,250 sq.m. ÷ 125 = exactly 10 slots with no remainder — no rounding needed. Option A uses 1:150 (which is the market floor area ratio, not offices). Option C uses 1:100 (incorrect ratio). Option D applies the restaurant ratio (1:30 sq.m. customer area) to the wrong occupancy type.",
+      "rationale": "The accessible slot is wider than an ordinary car slot: at least 4000 mm by 5000 mm.",
       "explanation": "Office buildings: 1 slot per 125 sq.m. GFA. Shopping centers: 1 per 100 sq.m. Restaurants: 1 per 30 sq.m. customer area. Markets: 1 per 150 sq.m. market floor area. Knowing which ratio applies to which occupancy type is as important as computing the number correctly.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4",
       "bloom_level": "apply",
@@ -837,38 +837,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.011598+00:00",
       "content_hash": "sha256:93200246a030c51b49b8e332013b5560cce79ee26cc0d9bedded845c2ac04cdf"
     },
     {
       "question_id": "e23fc4cf-7e7d-427c-ad8d-50c178f9dd6b",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A hotel in a highly urbanized city has 25 guest rooms. Under the 2004 Revised IRR of PD 1096 (Table VII.4), what is the minimum required parking provision?",
+      "text": "Where should accessible parking be located in a multi-story parking facility?",
       "options": [
         {
           "id": "a",
-          "text": "3 car slots only — applying 1 slot per 3 rooms, rounded down, with no supplemental vehicle slots required"
+          "text": "Near accessible elevators or accessible pedestrian entrances"
         },
         {
           "id": "b",
-          "text": "3 car slots plus 2 tourist bus slots — the flat bus slot requirement applies per hotel regardless of size"
+          "text": "On ramped aisles to shorten travel distance"
         },
         {
           "id": "c",
-          "text": "9 car slots plus 2 tourist bus slots — applying 1:3 ratio rounded up plus the flat per-hotel bus requirement"
+          "text": "Only at the farthest end of the parking level"
         },
         {
           "id": "d",
-          "text": "9 car slots only — tourist bus slots are only required for hotels with 50 or more rooms"
+          "text": "Anywhere if the stall is painted blue"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 2004 Revised IRR Table VII.4 specifies: highly urbanized city hotels → 1 car slot per 3 rooms (or fraction thereof) + 2 tourist bus slots per hotel. 25 rooms ÷ 3 = 8.33, rounded UP to 9 car slots. The 2 tourist bus slots are a flat per-hotel requirement regardless of room count. Option A omits the bus slots and rounds down. Option B uses only 3 slots (no rounding up). Option D incorrectly limits bus slots to larger hotels.",
+      "rationale": "BP 344 directs accessible stalls in multi-story parking to accessible elevators or accessible pedestrian entrances and bars ramped or sloping placement.",
       "explanation": "Hotel parking under 2004 IRR: highly urbanized = 1:3 rooms + 2 bus slots; all other areas = 1:7 rooms + 2 bus slots; Old Summary Table = 1:10 rooms. The 2 tourist bus slots are always a flat per-hotel requirement. 'Fraction thereof' always rounds up: 25/3 = 8.33 → 9 car slots.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4",
       "bloom_level": "apply",
@@ -881,38 +881,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.033329+00:00",
       "content_hash": "sha256:caa11878de0f32eeb19f25c5438670708cfa09cead0d6236c60fe90e84f250da"
     },
     {
       "question_id": "e2eb01bd-e3c4-492f-b9b8-fc53730332d3",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under the 2004 Revised IRR of PD 1096 (Rule VII, Sec. 707.4), what are the minimum dimensions for a standard perpendicular automobile parking slot?",
+      "text": "Which source governs ordinary minimum off-street parking and loading counts for this article?",
       "options": [
         {
           "id": "a",
-          "text": "2.00 m wide by 5.00 m long — the baseline dimension used in older pre-2004 review materials"
+          "text": "PD 1096 RIRR Table VII.4"
         },
         {
           "id": "b",
-          "text": "2.15 m wide by 6.00 m long — a wider, longer slot for all car types including parallel-parked vehicles"
+          "text": "The BP 344 accessible-parking table only"
         },
         {
           "id": "c",
-          "text": "2.50 m wide by 5.00 m long — the current PRBoA-annotated standard for perpendicular and diagonal car slots"
+          "text": "IBC frontage increase rules"
         },
         {
           "id": "d",
-          "text": "2.40 m wide by 5.00 m long — the intermediate value appearing in some unofficial review materials"
+          "text": "A local zoning summary without a source locator"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Rule VII, Sec. 707.4 of the PRBoA-annotated 2004 Revised IRR sets the minimum perpendicular or diagonal car slot at 2.50 m x 5.00 m. Option A (2.00 x 5.00) is from pre-2004 references. Option B (2.15 x 6.00) is the parallel car slot dimension. Option D (2.40 x 5.00) appears in unofficial reviewers but is not the IRR figure.",
+      "rationale": "PD 1096 RIRR Table VII.4 provides the ordinary off-street parking and loading ratios.",
       "explanation": "Perpendicular/diagonal car: 2.50 m x 5.00 m. Parallel car: 2.15 m x 6.00 m (narrower but longer). Jeepney: 3.00 m x 9.00 m. Bus/truck: 3.60 m x 12.00 m. PWD slot: 4.00 m x 5.00 m. These five sets of dimensions are all independently tested on the LEA.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Sec. 707.4",
       "bloom_level": "remember",
@@ -925,38 +925,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.037374+00:00",
       "content_hash": "sha256:e0b20e2391f4223e89ea8598c649f6ac79b68a363882630bc962001b5ebb03d9"
     },
     {
       "question_id": "aed28d28-9e94-456a-a4cf-d3aafec14080",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What are the minimum dimensions and key locational requirement for an accessible (PWD) parking slot under the amended BP 344 IRR?",
+      "text": "What is the standard PD 1096 perpendicular or diagonal car slot size used in the audited repair?",
       "options": [
         {
           "id": "a",
-          "text": "3.70 m x 5.00 m; located within 60 m of the main entrance to remain accessible"
+          "text": "2.50 m by 5.00 m"
         },
         {
           "id": "b",
-          "text": "4.00 m x 5.00 m; located nearest to accessible main entrances, not in ramped or sloping areas"
+          "text": "2.15 m by 6.00 m"
         },
         {
           "id": "c",
-          "text": "2.50 m x 5.00 m with a 1.50 m side transfer zone; located at the architect's discretion"
+          "text": "3.00 m by 9.00 m"
         },
         {
           "id": "d",
-          "text": "4.00 m x 6.00 m; located within any accessible parking level in multi-storey structures"
+          "text": "4.00 m by 5.00 m"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Amended BP 344 Appendix A, Sec. A.6: accessible parking slots measure 4.00 m wide x 5.00 m long (not 2.50 m x 5.00 m), with a 1.20 m clear walkway in front. They must be nearest to accessible main entrances and must not be located on ramped or sloping areas. Option A cites an outdated 60 m rule and wrong dimensions. Option C uses standard car slot dimensions. Option D uses incorrect length (6.00 m).",
+      "rationale": "PD 1096 gives 2.50 m by 5.00 m for perpendicular or diagonal car slots.",
       "explanation": "PWD slot: 4.00 m x 5.00 m — the extra 1.50 m width (vs. standard 2.50 m car slot) accommodates wheelchair transfer and an adjacent walkway. The 1.20 m clear walkway is provided in front of parked cars. Location must be nearest to accessible main entrances, not on slopes. The older '60 m' distance rule has been replaced by the 'nearest to accessible entry' proximity requirement.",
       "code_citation": "BP 344 IRR (Amended), Appendix A, Sec. A.6.3, A.6.9–A.6.11",
       "bloom_level": "remember",
@@ -969,38 +969,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.034679+00:00",
       "content_hash": "sha256:8682549e24e60abfa1f16824cc40afe40dde5a42372316d673ba6809f8e81ffd"
     },
     {
       "question_id": "2c59c765-06b3-4273-8f2a-5be9565a8aa4",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A Group H theater in a highly urbanized city has a spectator area of 600 sq.m. and a capacity of 600 spectators. Under the 2004 Revised IRR Table VII.4, which set of minimum parking provisions is correct?",
+      "text": "How many accessible parking slots are required for 501 to 1000 total parking spaces under the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "12 car slots only — based on 1 slot per 50 sq.m. of spectator area, which does not account for other vehicle types"
+          "text": "2 percent of total parking spaces"
         },
         {
           "id": "b",
-          "text": "12 car slots and 12 jeepney/shuttle slots — combined car+jeepney per 50 sq.m., no bus slots required, which may not meet all transport needs"
+          "text": "9 spaces total"
         },
         {
           "id": "c",
-          "text": "12 car slots, 12 jeepney/shuttle slots, and 3 bus slots — car+jeepney per 50 sq.m. plus 1 bus per 200 spectators"
+          "text": "20 spaces plus one per 100 over 1000"
         },
         {
           "id": "d",
-          "text": "6 car slots and 3 bus slots only — applying 1 car per 100 sq.m. and 1 bus per 200 spectators, which may not suffice for peak events"
+          "text": "One accessible space for each 50 spaces"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "2004 IRR Table VII.4 for theaters/cinemas (Group H): 1 car slot + 1 jeepney/shuttle slot per 50 sq.m. spectator area, PLUS 1 bus slot per 200 spectators. 600 sq.m. ÷ 50 = 12 car slots and 12 jeepney slots. 600 spectators ÷ 200 = 3 bus slots. All three vehicle types are mandatory. Option A omits jeepney and bus slots. Option B omits bus slots. Option D uses wrong car ratio and omits jeepney slots.",
+      "rationale": "The 2024 BP 344 table uses 2 percent of total spaces for the 501-1000 bracket.",
       "explanation": "Assembly occupancies (theaters, stadia, convention centers) require three vehicle types: car + jeepney per 50 sq.m. of spectator area, AND 1 bus slot per 200 spectators. This multi-vehicle requirement reflects Philippine public transport patterns. The most common trap is computing only car slots and forgetting the mandatory jeepney and bus provisions.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4",
       "bloom_level": "analyze",
@@ -1013,38 +1013,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.023249+00:00",
       "content_hash": "sha256:2278e9e206c101a4f846fe078db42c191db789f67ea966d551d61f44434eb9f2"
     },
     {
       "question_id": "f078ffef-43b6-491c-b974-c39ffec88a6c",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A building has 180 total off-street parking slots. How many accessible (PWD) parking slots are required under the amended BP 344 IRR?",
+      "text": "What is the minimum accessible parking slot size in the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "2 accessible slots — 1% of 180 rounded to the nearest whole number, which is the minimum requirement for any building"
+          "text": "4000 mm by 5000 mm"
         },
         {
           "id": "b",
-          "text": "4 accessible slots — falling in the 151–200 band at 4 slots per the BP 344 table, ensuring compliance with accessibility standards"
+          "text": "2500 mm by 5000 mm"
         },
         {
           "id": "c",
-          "text": "6 accessible slots — the BP 344 Appendix A table specifies 6 slots for the 151–200 total range"
+          "text": "2150 mm by 6000 mm"
         },
         {
           "id": "d",
-          "text": "9 accessible slots — 5% of 180 total slots rounded up, which is a common misinterpretation of the guidelines"
+          "text": "3000 mm by 9000 mm"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "BP 344 Appendix A, Table A.6.1 specifies accessible slot bands: 1–25→1, 26–50→2, 51–75→3, 76–100→4, 101–150→5, 151–200→6. For 180 total slots (in the 151–200 band), 6 accessible slots are required. Option A erroneously uses a 1% calculation. Option B (4 slots) corresponds to the 76–100 band. Option D applies an incorrect 5% formula.",
+      "rationale": "The accessible slot is wider than an ordinary car slot: at least 4000 mm by 5000 mm.",
       "explanation": "BP 344 uses a stepped band table, not a percentage. Bands 1–25=1, 26–50=2, 51–75=3, 76–100=4, 101–150=5, 151–200=6, 201–300=7, 301–400=8, 401–500=9. Above 500: 2% of total; above 1000: 20 + 1 per 100 or fraction over 1000. The transition to percentage only begins at 501+ total slots.",
       "code_citation": "BP 344 IRR (Amended), Appendix A, Sec. A.6, Table A.6.1",
       "bloom_level": "apply",
@@ -1057,38 +1057,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.009824+00:00",
       "content_hash": "sha256:f3c515e0f590bc9212c68aae2f28ccea4e926e7381403993beb6b545185373fc"
     },
     {
       "question_id": "e206144d-cf97-41fc-b6c3-5c23cabfa274",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under the Old Summary Table of PD 1096 (pre-2004), a low-income single-detached residential development has 47 units on individual lots of 90 sq.m. each. What is the minimum required pooled parking provision?",
+      "text": "Where should accessible parking be located in a multi-story parking facility?",
       "options": [
         {
           "id": "a",
-          "text": "4 slots — 47 divided by 10 rounded down to 4"
+          "text": "Near accessible elevators or accessible pedestrian entrances"
         },
         {
           "id": "b",
-          "text": "5 slots — 47 divided by 10 equals 4.7, rounded up per the 'fraction thereof' rule"
+          "text": "On ramped aisles to shorten travel distance"
         },
         {
           "id": "c",
-          "text": "6 slots — applying the 2004 IRR bracket for lots 50–96 sq.m. at 1 slot per 4 lots"
+          "text": "Only at the farthest end of the parking level"
         },
         {
           "id": "d",
-          "text": "12 slots — applying the 1 slot per 4 units ratio for multi-family dwellings at 50–100 sq.m."
+          "text": "Anywhere if the stall is painted blue"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The Old Summary Table specifies 1 pooled slot per 10 units for low-income single-detached dwellings on lots not more than 100 sq.m. 47 ÷ 10 = 4.7 → round UP to 5 slots. Option A (4 slots) is the rounding-down error. Option C incorrectly applies the 2004 IRR subdivision table (which uses lot-size brackets, not the 1:10 unit ratio). Option D applies the wrong residential category.",
+      "rationale": "BP 344 directs accessible stalls in multi-story parking to accessible elevators or accessible pedestrian entrances and bars ramped or sloping placement.",
       "explanation": "Old Table: low-income single-detached on lots ≤100 sq.m. → 1 pooled slot per 10 units. This differs from the 2004 IRR which uses lot-size brackets (32–72 sq.m. → 1:6 lots; 50–96 sq.m. → 1:4 lots). When a question uses 'low-income single-detached' framing without specifying Table VII.4, the Old Table applies.",
       "code_citation": "PD 1096, Old Summary Parking Table (pre-2004 IRR)",
       "bloom_level": "apply",
@@ -1101,39 +1101,39 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.040089+00:00",
       "content_hash": "sha256:acb2357b8d8f39ea71cc972e2efcf598e11a1526480e6a35315e66d981f7a1f3"
     },
     {
       "question_id": "549ef370-167f-4dfc-ac1b-00ce22ad7c98",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An R-4 townhouse project has 12 units each with a GFA of 50 sq.m. Under the 2004 Revised IRR of PD 1096, how many pooled parking slots are required?",
+      "text": "Which source governs ordinary minimum off-street parking and loading counts for this article?",
       "options": [
         {
           "id": "a",
-          "text": "2 slots — using the R-5 condominium 1:6 ratio (>22–50 sq.m. bracket) for the 12 units"
+          "text": "PD 1096 RIRR Table VII.4"
         },
         {
           "id": "b",
-          "text": "3 slots — using the R-5 condominium 1:4 ratio (50–100 sq.m. bracket) for the 12 units"
+          "text": "The BP 344 accessible-parking table only"
         },
         {
           "id": "c",
-          "text": "6 slots — using the R-4 townhouse ratio of 1 pooled slot per 2 units"
+          "text": "IBC frontage increase rules"
         },
         {
           "id": "d",
-          "text": "12 slots — 1 slot per unit as required for all attached residential projects"
+          "text": "A local zoning summary without a source locator"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 2004 Revised IRR Table VII.4 provides a separate R-4 townhouse category: 1 pooled slot per 2 units (or fraction thereof) for townhouses at 50 sq.m. GFA. 12 units ÷ 2 = 6 slots exactly. Options A and B incorrectly apply the R-5 condominium scale to an R-4 project. Option D applies a 1:1 ratio that applies only to R-5 units over 100 sq.m. The occupancy type (R-4 townhouse vs R-5 condominium) determines which parking table applies.",
-      "explanation": "Townhouse (R-4) at 50 sq.m. GFA uses 1:2 ratio, not the R-5 condominium sclea. The '8-6-4-1' sclea applies exclusively to R-5 condominiums. Mixing these two tables is the primary exam trap. Also note: all parking must be located outside the RROW — no private parking on public streets.",
+      "rationale": "PD 1096 RIRR Table VII.4 provides the ordinary off-street parking and loading ratios.",
+      "explanation": "Townhouse (R-4) at 50 sq.m. GFA uses 1:2 ratio, not the R-5 condominium scale. The '8-6-4-1' scale applies exclusively to R-5 condominiums. Mixing these two tables is the primary exam trap. Also note: all parking must be located outside the RROW — no private parking on public streets.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4",
       "bloom_level": "analyze",
       "application_context": null,
@@ -1145,38 +1145,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.046668+00:00",
       "content_hash": "sha256:6ccab40dd4f104d232eee11d97ef84d1d7b86133aca49951352d7f55b5e03d5d"
     },
     {
       "question_id": "bdb9c17e-9ee0-4588-a6d8-e4051fc08ed8",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An architect is reviewing a building permit application for a proposed structure in a highly urbanized city. The application cites 'PD 1096' as authority for providing 1 parking slot per 10 hotel rooms — yet the project is a new 4-star hotel. Which assessment is correct?",
+      "text": "What is the standard PD 1096 perpendicular or diagonal car slot size used in the audited repair?",
       "options": [
         {
           "id": "a",
-          "text": "The ratio is correct — 1:10 is the current PD 1096 standard for all hotels regardless of location, which simplifies compliance"
+          "text": "2.50 m by 5.00 m"
         },
         {
           "id": "b",
-          "text": "The ratio is correct for the Old Summary Table but would not comply with the 2004 Revised IRR for a highly urbanized city hotel"
+          "text": "2.15 m by 6.00 m"
         },
         {
           "id": "c",
-          "text": "The ratio is incorrect under all versions of PD 1096 — the correct ratio has always been 1:3 rooms for any hotel, ensuring adequate parking"
+          "text": "3.00 m by 9.00 m"
         },
         {
           "id": "d",
-          "text": "The ratio is acceptable since new hotels are exempt from parking requirements under the 2004 IRR, which provides flexibility for developers"
+          "text": "4.00 m by 5.00 m"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 1:10 rooms ratio appears in the pre-2004 Old Summary Table and is confirmed in some board exam question banks. However, the 2004 Revised IRR Table VII.4 requires 1 slot per 3 rooms (highly urbanized) or 1 per 7 rooms (all other areas), plus 2 tourist bus slots per hotel. A new hotel in a highly urbanized city must comply with the 2004 IRR, making 1:10 non-compliant. Option A is incorrect — the 1:10 ratio was superseded in 2004. Option C is wrong — 1:3 only applies to highly urbanized cities. Option D has no basis in the Code.",
+      "rationale": "PD 1096 gives 2.50 m by 5.00 m for perpendicular or diagonal car slots.",
       "explanation": "Two hotel parking tables exist: Old Summary Table (1:10 rooms, no bus requirement) and 2004 Revised IRR (1:3 rooms in highly urbanized / 1:7 elsewhere + 2 tourist bus slots). The 2004 IRR is the legally-binding current standard. The LEA tests both, so the key skill is recognizing which table the question is invoking based on context clues — 'highly urbanized city' always signals Table VII.4.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4 vs. pre-2004 Old Summary Table",
       "bloom_level": "evaluate",
@@ -1189,39 +1189,39 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.024706+00:00",
       "content_hash": "sha256:07c5758fe946bc2fcf861936cfff85c5f051107524ec51a61e1956a41b677c07"
     },
     {
       "question_id": "a8ec5051-9268-461e-873b-5c8182674535",
       "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An R-5 condominium in a highly urbanized city has 25 residential units with an average GFA of 45 sq.m. per unit. Under the 2004 Revised IRR as amended by DPWH DO 059 s. 2019, what is the minimum number of off-street parking slots required?",
+      "text": "How many accessible parking slots are required for 501 to 1000 total parking spaces under the 2024 BP 344 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "4 slots — applying the 1:6 ratio and rounding down to the nearest whole number, which is a common practice in urban planning"
+          "text": "2 percent of total parking spaces"
         },
         {
           "id": "b",
-          "text": "5 slots — applying the 1:6 ratio (22–50 sq.m. bracket) and rounding up per the 'fraction thereof' rule"
+          "text": "9 spaces total"
         },
         {
           "id": "c",
-          "text": "7 slots — applying the 1:4 ratio for units in the 50–100 sq.m. bracket, which is a stricter requirement for larger units"
+          "text": "20 spaces plus one per 100 over 1000"
         },
         {
           "id": "d",
-          "text": "25 slots — 1 slot per unit as required for all condominium projects, ensuring ample parking for all residents"
+          "text": "One accessible space for each 50 spaces"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Under Division A-2 (R-5 Condominium), DPWH DO 059 s. 2019: units above 22.00 up to 50.00 sq.m. require 1 pooled slot per 6 units. 25 ÷ 6 = 4.167 → round UP to 5 slots per the 'or fraction thereof' rule. Option A (4 slots) is the rounding-down error. Option C uses the wrong bracket (50–100 sq.m.). Option D applies the 1:1 ratio for units over 100 sq.m.",
-      "explanation": "R-5 condominium parking ratios follow the '8-6-4-1' sclea: 18–22 sq.m. → 1:8; >22–50 sq.m. → 1:6; 50–100 sq.m. → 1:4; >100 sq.m. → 1:1. The 'or fraction thereof' rule always rounds up. 45 sq.m. falls in the 1:6 bracket: 25/6 = 4.17, rounded up to 5.",
+      "rationale": "The 2024 BP 344 table uses 2 percent of total spaces for the 501-1000 bracket.",
+      "explanation": "R-5 condominium parking ratios follow the '8-6-4-1' scale: 18–22 sq.m. → 1:8; >22–50 sq.m. → 1:6; 50–100 sq.m. → 1:4; >100 sq.m. → 1:1. The 'or fraction thereof' rule always rounds up. 45 sq.m. falls in the 1:6 bracket: 25/6 = 4.17, rounded up to 5.",
       "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Table VII.4; DPWH DO 059 s. 2019",
       "bloom_level": "apply",
       "application_context": null,
@@ -1233,7 +1233,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.201087+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.018865+00:00",
       "content_hash": "sha256:ff3c2f15a3cde7c01fbac1dbf0ae5fdd758a8481c2329bd5e465f3cd4cd9cd10"
     }
   ]

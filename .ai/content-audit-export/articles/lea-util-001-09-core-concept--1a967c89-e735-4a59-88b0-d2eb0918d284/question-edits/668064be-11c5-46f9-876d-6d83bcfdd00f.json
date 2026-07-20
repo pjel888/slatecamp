@@ -2,58 +2,43 @@
   "question_id": "668064be-11c5-46f9-876d-6d83bcfdd00f",
   "baseline_hash": "sha256:4bc228709a755f093cd865caa48d8364733c1e6c836515ca02a196ae96e03353",
   "action": "replace",
-  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
-  "approved_by": "codex-local-first-batch-043",
-  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "reason": "council-remediation-2026-07-20/agent-O-utilities: arithmetic error in correct_option_id AND distractor options. Rational Method in SI units requires the 0.00278 conversion constant: Q (m3/s) = 0.00278 x C x I (mm/hr) x A (ha). Solving A = Q / (0.00278 x C x I) = 0.120 / (0.00278 x 0.72 x 160) = 0.120 / 0.3201 = 0.375 ha. The original marked answer c (3.4 ha) implies Q = 1.089 m3/s (off by factor of ~9 from the stated 0.120 m3/s); all four original distractors are off by a factor of 5-10 from the correct answer, indicating the unit conversion constant was omitted during answer-key generation. Option set rewritten to include the correct value (0.375 ha) plus plausible distractors reflecting common errors (omitting the 0.00278 constant, misplacing decimal). Recomputation shown in rationale.",
+  "approved_by": "agent-O-utilities-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "parent_article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
-    "parent_article_slug": "lea-util-001-09-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245",
-    "checked_markdown_lines": [
-      "RNPC refined markdown lines 570, 645, 651-655",
-      "RNPC refined markdown lines 1689-1691 and 1721",
-      "RNPC refined markdown lines 4706-4728",
-      "RNPC refined markdown lines 4745-4822",
-      "RNPC refined markdown lines 5241-5245"
-    ],
+    "batch_id": "council-remediation-2026-07-20-agent-O-utilities",
     "checked_sources": [
       {
-        "source_id": "rnpc-ph-local-raw-pdf--b043-1",
-        "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
-        "sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
-        "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
-        "locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245"
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+    "citation": "Rational Method (Q = CIA) with SI unit conversion constant 0.00278; PD 1096 NBC storm drainage provisions."
   },
   "proposed": {
-    "text": "What should an architect remember about roof drain strainers under the checked RNPC family?",
+    "text": "A storm drain must accommodate a peak discharge of 0.120 m3/s. The rainfall intensity for the design storm is 160 mm/hr, and the runoff coefficient for the catchment is 0.72. What is the minimum drainage area (in hectares) that this discharge represents under the Rational Method?",
     "options": [
       {
         "id": "a",
-        "text": "The strainer net inlet area should be at least equal to the outlet area it serves."
+        "text": "0.0375 hectares"
       },
       {
         "id": "b",
-        "text": "A strainer may reduce inlet area below the outlet area when aesthetics require it."
+        "text": "0.375 hectares"
       },
       {
         "id": "c",
-        "text": "Strainers are not part of storm drainage coordination."
+        "text": "3.4 hectares"
       },
       {
         "id": "d",
-        "text": "The strainer rule applies only to sanitary floor drains."
+        "text": "37.5 hectares"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The checked RNPC roof-drain provisions require a strainer with adequate net inlet area in relation to the outlet.",
-    "explanation": "The checked RNPC roof-drain provisions require a strainer with adequate net inlet area in relation to the outlet.",
-    "code_citation": "RNPC refined markdown lines 4714-4728"
+    "correct_option_id": "b",
+    "rationale": "Rational Method in SI units: Q (m3/s) = 0.00278 x C x I (mm/hr) x A (ha), where 0.00278 = 1/3600 x (1 m / 1000 mm) x (10000 m2 / 1 ha). Solving for area: A = Q / (0.00278 x C x I) = 0.120 / (0.00278 x 0.72 x 160) = 0.120 / 0.3201 = 0.375 ha. Correct answer is b. Option a (0.0375 ha) results from a decimal-place error. Option c (3.4 ha) is the original erroneous marked answer (off by a factor of ~9; would imply Q = 1.09 m3/s, not the 0.120 m3/s given in the stem) and reflects omission of the 0.00278 SI conversion constant. Option d (37.5 ha) results from dividing by 0.00278 twice.",
+    "explanation": "Storm-drain sizing uses the Rational Method Q = CIA. In SI units (Q in m3/s, I in mm/hr, A in ha), the formula becomes Q = 0.00278 x C x I x A. Rearranging for A: A = 0.120 / (0.00278 x 0.72 x 160) = 0.375 hectares.",
+    "code_citation": "PD 1096 (National Building Code) - storm drainage and site drainage provisions; Rational Method with SI conversion constant 0.00278."
   }
 }

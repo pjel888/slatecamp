@@ -1,10 +1,10 @@
 {
   "question_id": "9c2e5ec4-a1fa-458a-a3e2-63990308393d",
   "baseline_hash": "sha256:e512e51a5606669eae0688fcedc565f75542d973710c1d28ce3220e0d83b48e6",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
     "parent_article_slug": "top-50-traps-2024-irr",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "Which accessible parking count applies for 1001 or more total parking spaces?",
+    "text": "Trap #29 identifies a counterintuitive emergency call button placement rule. At what height must the emergency call button in an accessible toilet be mounted, and why does it deviate from the standard operable controls range?",
     "options": [
       {
-        "id": "a",
-        "text": "20 plus 1 for each 100 or fraction over 1000"
+        "id": "A",
+        "text": "900–1200 mm AFF — the same as all operable controls, to maintain design consistency"
       },
       {
-        "id": "b",
-        "text": "2 percent of total spaces only"
+        "id": "B",
+        "text": "400–600 mm AFF — reachable from the floor by a fallen user who cannot stand or reach higher"
       },
       {
-        "id": "c",
-        "text": "9 accessible spaces total"
+        "id": "C",
+        "text": "300 mm AFF — at the base of the wall so it is always visible and reachable when crawling"
       },
       {
-        "id": "d",
-        "text": "1 accessible space for every 25 spaces"
+        "id": "D",
+        "text": "700–800 mm AFF — consistent with the lower accessible handrail height and seated reach range"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "For 1001 or more total spaces, the 2024 BP 344 table requires 20 plus 1 for each 100 or fraction over 1000.",
-    "explanation": "For 1001 or more total spaces, the 2024 BP 344 table requires 20 plus 1 for each 100 or fraction over 1000.",
-    "code_citation": "BP 344 2024 IRR, accessible parking table",
-    "bloom_level": "analyze",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Top 50 Traps: 2024 IRR",
-      "LEA Accessibility Code Review"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-top-50-traps-2024-irr-008"
+    "correct_option_id": "B",
+    "rationale": {
+      "summary": "Trap #29: emergency button at 400–600 mm AFF — reachable from the floor by a fallen user.",
+      "explanation": "Trap #29 in the article. The standard operable controls range is 900–1200 mm AFF, but the emergency call button in an accessible toilet deliberately violates this range. The button must be at 400–600 mm AFF because it must be reachable by a user who has fallen to the floor and cannot stand or reach upward. A button at 900–1200 mm is unreachable by a prone or severely incapacitated user. This is one of the most counterintuitive specifications in BP 344 — the one control that is intentionally placed lower than the standard reach range.",
+      "common_misconceptions": [
+        "Applying the standard 900–1200 mm operable range to the emergency button — this button is the explicit exception",
+        "Selecting 300 mm as 'even lower therefore better' — 400–600 mm is the specified range, not lower"
+      ]
+    },
+    "explanation": "Emergency toilet button: 400–600 mm AFF — the one control intentionally below the standard 900–1200 mm reach range.",
+    "code_citation": "BP 344 IRR Sec. 6; Trap #29",
+    "bloom_level": "apply",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

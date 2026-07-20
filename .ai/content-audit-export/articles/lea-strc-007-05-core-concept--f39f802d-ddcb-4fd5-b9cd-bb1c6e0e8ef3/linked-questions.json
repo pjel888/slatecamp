@@ -8,23 +8,23 @@
       "question_id": "0d8debcf-c39f-428d-a756-cde40a1b307a",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A 300 mm beam contains two 80 mm conduits with spacing of 240 mm center-to-center. Check compliance with NSCP spacing and size limits.",
+      "text": "What is the first NSCP Section 420.7 rule for embedments in concrete?",
       "options": [
         {
           "id": "a",
-          "text": "Both spacing and size compliant, assuming no additional structural constraints are present"
+          "text": "Embedments may reduce fire protection if the contractor approves."
         },
         {
           "id": "b",
-          "text": "Size non-compliant (exceeds h/3 = 100 mm) and spacing adequate (240 mm = 3 × 80 mm)."
+          "text": "Embedments shall not significantly impair structural strength or reduce fire protection."
         },
         {
           "id": "c",
-          "text": "Spacing non-compliant (240 mm < 3 × 80 = 240 mm), which may require adjustment"
+          "text": "Embedments are checked only after occupancy."
         },
         {
           "id": "d",
-          "text": "Cumulative area exceeds limit; both conduits must be reduced, or alternative solutions considered"
+          "text": "Embedments are outside structural review."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +33,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While size is compliant, spacing is exactly at the limit (not 'adequate' with margin).",
-        "c": "240 mm = 3 × 80 mm, so spacing meets the minimum requirement.",
-        "d": "Cumulative area = π(40)² × 2 ≈ 10,053 mm² > 7,854 mm² (h/3 equivalent for 300 mm), so cumulative exceeds limit.",
-        "correct": "Beam size limit = h/3 = 300/3 = 100 mm. The 80 mm conduits are individually compliant (80 < 100 mm). Spacing requirement = 3 × 80 = 240 mm. Actual spacing = 240 mm, which equals the requirement (compliant, just at the limit) (NSCP 6.3.1 & 6.3.2). The size criterion is satisfied, but the spacing is right at the boundary.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 420.7.1 states that embedments shall not significantly impair structural strength and shall not reduce fire protection.",
+        "takeaway": "The first filter is structural and fire-protection impact.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: Embedments may reduce fire protection if the contractor approves.",
+        "b": "Selected: Embedments shall not significantly impair structural strength or reduce fire protection.",
+        "c": "Not selected: Embedments are checked only after occupancy.",
+        "d": "Not selected: Embedments are outside structural review."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.1 & 6.3.2 (Size and Spacing checks)",
+      "code_citation": "NSCP 2015 § 420.7 (Concrete protection for reinforcement — mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,30 +53,30 @@
       "model_id": "ALE-STRC-007-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.358887+00:00",
       "content_hash": "sha256:c34e37a139ad25274d4dc11cb8635b496473c94469d43f356d2eecb53890359e"
     },
     {
       "question_id": "6c765e0f-401b-4fa7-a331-0d6952b16166",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A 350 mm × 350 mm column requires a 110 mm diameter utility sleeve. Is this within the 4% embedded area limit, and if so, what is the maximum area in mm²?",
+      "text": "What minimum reinforcement area does NSCP Section 420.7.4 require perpendicular to pipe embedments?",
       "options": [
         {
           "id": "a",
-          "text": "Non-compliant; 110 mm conduit exceeds 4% area limit. Maximum allowed is 4,900 mm²."
+          "text": "At least 0.002 times the area of the concrete section."
         },
         {
           "id": "b",
-          "text": "Compliant; conduit area ≈ 9,503 mm² is within the 4,900 mm² limit, ensuring structural integrity and compliance with building codes"
+          "text": "Exactly the area of the pipe wall."
         },
         {
           "id": "c",
-          "text": "Compliant; the 110 mm conduit is less than h/3 of the column dimension, maintaining the necessary structural proportions"
+          "text": "No perpendicular reinforcement is mentioned."
         },
         {
           "id": "d",
-          "text": "Cannot determine without knowing the reinforcement ratio of the column, which affects the overall structural capacity"
+          "text": "At least 10 percent of the beam area."
         }
       ],
       "correct_option_id": "a",
@@ -83,14 +85,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This option is incorrect. Review the correct answer above.",
-        "c": "This option is incorrect. Review the correct answer above.",
-        "d": "This option is incorrect. Review the correct answer above.",
-        "correct": "Column area = 350 × 350 = 122,500 mm². Maximum embedded = 4% × 122,500 = 4,900 mm². A 110 mm diameter conduit has area = π(55)² ≈ 9,503 mm². Since 9,503 mm² > 4,900 mm², the conduit exceeds the 4% limit and is non-compliant (NSCP 6.3.1).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 420.7.4 requires reinforcement with area at least 0.002 times the concrete section area perpendicular to pipe embedments.",
+        "takeaway": "The checked anchor gives a reinforcement-area rule for pipe embedments.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: At least 0.002 times the area of the concrete section.",
+        "b": "Not selected: Exactly the area of the pipe wall.",
+        "c": "Not selected: No perpendicular reinforcement is mentioned.",
+        "d": "Not selected: At least 10 percent of the beam area."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.1 (Column embedded area — 4% limit)",
+      "code_citation": "NSCP 2015 § 420.7 / § 409 (Maximum reinforcement ratio — mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +105,30 @@
       "model_id": "ALE-STRC-007-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.360417+00:00",
       "content_hash": "sha256:8eba6da65b0004e7687301400ff408a6fb3f50c57e665af84a7c01b7ea0c71f9"
     },
     {
       "question_id": "09117f07-7332-47ae-94e9-75f9effee9f2",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "Two electrical conduits (25 mm diameter each) are embedded in a concrete slab. What is the minimum center-to-center distance between them per NSCP?",
+      "text": "What minimum specified concrete cover is required for pipe embedments and fittings exposed to earth or weather?",
       "options": [
         {
           "id": "a",
-          "text": "50 mm"
+          "text": "20 mm"
         },
         {
           "id": "b",
-          "text": "75 mm"
+          "text": "40 mm"
         },
         {
           "id": "c",
-          "text": "100 mm"
+          "text": "75 mm"
         },
         {
           "id": "d",
-          "text": "25 mm"
+          "text": "No cover is specified."
         }
       ],
       "correct_option_id": "b",
@@ -133,14 +137,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "50 mm = 2 × diameter (less than required 3 diameters).",
-        "c": "100 mm = 4 × diameter (more than required; acceptable but not minimum).",
-        "d": "25 mm is the conduit diameter itself (no spacing).",
-        "correct": "Minimum spacing between adjacent conduits is 3 times the conduit diameter, measured center-to-center (NSCP 6.3.2). For 25 mm conduits: 3 × 25 = 75 mm.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 420.7.5 requires at least 40 mm cover for pipe embedments and fittings in concrete exposed to earth or weather.",
+        "takeaway": "Use 40 mm for earth or weather exposure under the checked source.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: 20 mm",
+        "b": "Selected: 40 mm",
+        "c": "Not selected: 75 mm",
+        "d": "Not selected: No cover is specified."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.2 (Conduit Spacing)",
+      "code_citation": "NSCP 2015 § 420.7 (Embedded conduits in concrete — mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,30 +157,30 @@
       "model_id": "ALE-STRC-007-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.361173+00:00",
       "content_hash": "sha256:47a877500aa342ccb63475f404af2aec851e7a94a5aed02860881472f2dc221d"
     },
     {
       "question_id": "7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A slab has ribbed joists (rib width = 120 mm). What is the maximum diameter of electrical conduit that can be embedded in the rib per NSCP?",
+      "text": "What minimum specified cover is required for pipe embedments and fittings not exposed to weather and not in contact with ground?",
       "options": [
         {
           "id": "a",
-          "text": "40 mm"
+          "text": "10 mm"
         },
         {
           "id": "b",
-          "text": "30 mm"
+          "text": "20 mm"
         },
         {
           "id": "c",
-          "text": "60 mm"
+          "text": "40 mm"
         },
         {
           "id": "d",
-          "text": "20 mm"
+          "text": "75 mm"
         }
       ],
       "correct_option_id": "b",
@@ -183,14 +189,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "40 mm = w_rib/3, which is NOT the code limit for ribs.",
-        "c": "60 mm = w_rib/2 (far too large for slender ribs).",
-        "d": "20 mm is more conservative than required.",
-        "correct": "For ribs in ribbed/joist slabs, the maximum conduit size is w_rib/4 = 120/4 = 30 mm (NSCP 6.3.1). This tighter limit (vs. h/3 for solid slabs) applies because ribs are slender and sensitive to voids.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 420.7.5 requires at least 20 mm cover when the concrete is not exposed to weather and not in contact with ground.",
+        "takeaway": "The checked source distinguishes 40 mm exposure cover from 20 mm protected cover.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: 10 mm",
+        "b": "Selected: 20 mm",
+        "c": "Not selected: 40 mm",
+        "d": "Not selected: 75 mm"
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.1 (Ribbed Slab — rib conduit limit w_rib/4)",
+      "code_citation": "NSCP 2015 § 420.7 (mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +209,30 @@
       "model_id": "ALE-STRC-007-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.359650+00:00",
       "content_hash": "sha256:9c05528efb7387a38154c6c47be981c46d2f0a38742bf8fefaf835063663e5f4"
     },
     {
       "question_id": "02cea262-5a75-4808-86e3-051379a503c3",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A beam (400 mm deep) requires a utility sleeve (110 mm diameter) that exceeds the standard size limit h/3 ≈ 133 mm. Wait—actually, is 110 mm within the limit? If yes, is it compliant? If no, what is required?",
+      "text": "How must aluminum embedments be handled under NSCP Section 420.7.3?",
       "options": [
         {
           "id": "a",
-          "text": "Compliant; 110 mm < 133 mm (h/3)."
+          "text": "They must be coated or covered to prevent aluminum-concrete reaction and electrolytic action between aluminum and steel."
         },
         {
           "id": "b",
-          "text": "Non-compliant; 110 mm > 133 mm requires reinforcement."
+          "text": "They are prohibited in every concrete member."
         },
         {
           "id": "c",
-          "text": "Compliant; 110 mm is within the h/2 limit."
+          "text": "They need no protection if fully hidden."
         },
         {
           "id": "d",
-          "text": "Non-compliant; only conduits ≤ 50 mm are allowed without reinforcement."
+          "text": "They are treated the same as reinforcing bars."
         }
       ],
       "correct_option_id": "a",
@@ -233,14 +241,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "110 mm is NOT greater than 133 mm; it is within the limit.",
-        "c": "h/2 = 200 mm is not the code limit; h/3 is the limit.",
-        "d": "The limit is h/3 (which equals 133 mm here), not a fixed 50 mm.",
-        "correct": "For a 400 mm beam, h/3 = 400/3 ≈ 133 mm. The 110 mm conduit is less than 133 mm, so it is compliant with the size limit (NSCP 6.3.1). No supplemental reinforcement is required.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 420.7.3 requires aluminum embedments to be coated or covered to prevent aluminum-concrete reaction and electrolytic action between aluminum and steel.",
+        "takeaway": "The checked rule is protective treatment, not a blanket prohibition.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: They must be coated or covered to prevent aluminum-concrete reaction and electrolytic action between aluminum and steel.",
+        "b": "Not selected: They are prohibited in every concrete member.",
+        "c": "Not selected: They need no protection if fully hidden.",
+        "d": "Not selected: They are treated the same as reinforcing bars."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.1 (Beam Conduit h/3 limit)",
+      "code_citation": "NSCP 2015 § 420.7 (mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,30 +261,30 @@
       "model_id": "ALE-STRC-007-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.356965+00:00",
       "content_hash": "sha256:e3e0b815225cd89920e947f929bc7c7547ddfd6f182c8c1c0fa48e07fb7bf216"
     },
     {
       "question_id": "b38842a0-af75-4746-88ed-282a67f96db1",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A 400 mm × 400 mm concrete column is to be analyzed for embedded utility pipes. What is the maximum total area of embedded pipes per NSCP?",
+      "text": "If an embedment is not shown in the construction documents, what does Section 426.8 require?",
       "options": [
         {
           "id": "a",
-          "text": "9,600 mm²"
+          "text": "It may be installed without design review."
         },
         {
           "id": "b",
-          "text": "6,400 mm²"
+          "text": "It shall be submitted for review by the licensed design professional."
         },
         {
           "id": "c",
-          "text": "16,000 mm²"
+          "text": "It automatically becomes nonstructural."
         },
         {
           "id": "d",
-          "text": "4,800 mm²"
+          "text": "It is accepted if the pipe is small."
         }
       ],
       "correct_option_id": "b",
@@ -283,14 +293,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "9,600 mm² = 6% of column area (exceeds 4%).",
-        "c": "16,000 mm² = 10% of column area (far too large).",
-        "d": "4,800 mm² = 3% of column area (below 4% but not the code value).",
-        "correct": "For columns, the maximum embedded area is 4% of the gross cross-sectional area (NSCP 6.3.1). Column area = 400 × 400 = 160,000 mm². Max embedded = 0.04 × 160,000 = 6,400 mm² (ERR-STRC-024).",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "The checked Section 426.8 continuation states that embedments not shown in construction documents shall be submitted for review by the licensed design professional.",
+        "takeaway": "Unshown embedments require design-professional review before acceptance.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: It may be installed without design review.",
+        "b": "Selected: It shall be submitted for review by the licensed design professional.",
+        "c": "Not selected: It automatically becomes nonstructural.",
+        "d": "Not selected: It is accepted if the pipe is small."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.1 (Conduit Size Limits — Columns)",
+      "code_citation": "NSCP 2015 § 420.7 (mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -301,30 +313,30 @@
       "model_id": "ALE-STRC-007-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.358007+00:00",
       "content_hash": "sha256:9dc9c63ea0d9bed9c203dc1a627e852fe6c41ddcf0e3c1952a27e330a4e21bd5"
     },
     {
       "question_id": "e080685f-fe5e-42bf-86e1-5cbaa5663de9",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A 250 mm deep beam requires embedded HVAC ducts. The largest single duct proposed is 90 mm diameter. Is this compliant per NSCP, and if not, what is the maximum allowed?",
+      "text": "Before concrete reaches specified strength, what may be placed in embedded pipes under the checked Section 426.8 rule?",
       "options": [
         {
           "id": "a",
-          "text": "Compliant; 90 mm < 250 mm, which is a common misinterpretation of the code"
+          "text": "Any gas if the pressure is below the building service pressure."
         },
         {
           "id": "b",
-          "text": "Non-compliant; maximum allowed = 83 mm (h/3 = 250/3 ≈ 83 mm)."
+          "text": "Only water not exceeding 32 C or 0.35 MPa."
         },
         {
           "id": "c",
-          "text": "Compliant; 90 mm is within the h/2 limit, which is not applicable in this context"
+          "text": "Any liquid if the pipe is coated."
         },
         {
           "id": "d",
-          "text": "Non-compliant; maximum allowed = 75 mm (h/3.3), which is a miscalculation of the standard"
+          "text": "Nothing is ever permitted inside embedded pipes."
         }
       ],
       "correct_option_id": "b",
@@ -333,14 +345,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Compliance is not simply 'less than full depth'; the h/3 rule is the code limit.",
-        "c": "h/2 = 125 mm is not the code limit; the limit is h/3.",
-        "d": "The correct formula is h/3 ≈ 83 mm, not h/3.3.",
-        "correct": "For beams, maximum conduit size = h/3 = 250/3 ≈ 83 mm (NSCP 6.3.1). The proposed 90 mm exceeds this limit. The duct must be reduced to ≤83 mm, or reinforcement must be added around the opening.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 426.8 allows only water not exceeding 32 C or 0.35 MPa before the concrete has attained specified strength.",
+        "takeaway": "The checked rule tightly limits pipe contents before concrete reaches specified strength.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: Any gas if the pressure is below the building service pressure.",
+        "b": "Selected: Only water not exceeding 32 C or 0.35 MPa.",
+        "c": "Not selected: Any liquid if the pipe is coated.",
+        "d": "Not selected: Nothing is ever permitted inside embedded pipes."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.1 (Beam Conduit Limit h/3)",
+      "code_citation": "NSCP 2015 § 420.7 (mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,30 +365,30 @@
       "model_id": "ALE-STRC-007-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.361938+00:00",
       "content_hash": "sha256:865b8ce9073983694683e7b42a4765c7939a1cbe958b5f15d9e8a65491d42bf5"
     },
     {
       "question_id": "99438c76-e9fc-4436-8ecf-208de1f1d5e1",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A concrete slab (200 mm thick) has four 30 mm diameter electrical conduits running parallel. Assuming they are equally spaced in the slab cross-section, is the cumulative area within NSCP limits?",
+      "text": "Where should piping in solid slabs generally be placed, except for radiant heating or snow melting?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, cumulative area = 2,827 mm² is within limits."
+          "text": "Between top and bottom reinforcement."
         },
         {
           "id": "b",
-          "text": "No; 200 mm slab allows only one 67 mm conduit (h/3), not four 30 mm conduits."
+          "text": "Below all reinforcement at the slab soffit."
         },
         {
           "id": "c",
-          "text": "Yes, if spacing between conduits is ≥ 90 mm (3 diameters)."
+          "text": "Outside the concrete section only."
         },
         {
           "id": "d",
-          "text": "No; four conduits exceed the h/3 limit regardless of individual sizes."
+          "text": "Only inside beams."
         }
       ],
       "correct_option_id": "a",
@@ -383,14 +397,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "The h/3 rule applies to total void area, not just single conduit. Multiple smaller conduits can fit if cumulative area is within limits.",
-        "c": "While adequate spacing (90 mm) is required, the area check is the primary limit.",
-        "d": "The cumulative area is the controlling factor, not the count. Four smaller conduits can be acceptable if total area ≤ h/3 equivalent.",
-        "correct": "Four 30 mm conduits have cumulative area = 4 × π(15)² ≈ 2,827 mm². The slab allows up to h/3 ≈ 66.7 mm equivalent diameter, which is ≈3,490 mm² area. Since 2,827 mm² < 3,533 mm², the design is within limits (NSCP 6.3.1). Also, if spacing is ≥3 diameters = 90 mm, the spacing criterion is satisfied.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 426.8 states that in solid slabs, piping except for radiant heating or snow melting shall be placed between top and bottom reinforcement.",
+        "takeaway": "Solid-slab piping is coordinated with the reinforcement layers.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: Between top and bottom reinforcement.",
+        "b": "Not selected: Below all reinforcement at the slab soffit.",
+        "c": "Not selected: Outside the concrete section only.",
+        "d": "Not selected: Only inside beams."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.1 & 6.3.2 (Conduit area and spacing limits)",
+      "code_citation": "NSCP 2015 § 420.7 (mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,30 +417,30 @@
       "model_id": "ALE-STRC-007-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.362715+00:00",
       "content_hash": "sha256:190200c07a97c58c207bf7a2bc8d5aaafd35aeffece756381f98bcba6618c40a"
     },
     {
       "question_id": "a7ddfea1-6c8b-4cba-967e-f0662ac042a9",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A 180 mm thick concrete slab in an exterior building has a metal utility conduit (60 mm diameter) embedded for weather-exposed piping. What is the minimum concrete cover to this pipe per NSCP?",
+      "text": "How must conduit and piping be fabricated and installed relative to reinforcement?",
       "options": [
         {
           "id": "a",
-          "text": "25 mm"
+          "text": "So reinforcement can be displaced freely in the field."
         },
         {
           "id": "b",
-          "text": "40 mm"
+          "text": "So reinforcement cutting is decided after concrete placement."
         },
         {
           "id": "c",
-          "text": "50 mm"
+          "text": "So cutting, bending, or displacement of reinforcement from its specified location is not required."
         },
         {
           "id": "d",
-          "text": "75 mm"
+          "text": "So reinforcement is omitted wherever pipes pass."
         }
       ],
       "correct_option_id": "c",
@@ -433,14 +449,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "25 mm is not a standard cover in NSCP.",
-        "b": "40 mm applies to interior (protected) elements, not weather-exposed.",
-        "d": "75 mm is for concrete cast against earth (not applicable here).",
-        "correct": "Pipes exposed to weather require 50 mm concrete cover minimum, equivalent to the cover for ≥20 mm bars in weather exposure (NSCP 6.3.3 & 6.7.1). This applies because the slab surface and pipe are subject to weathering.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 426.8 requires conduit and piping to be fabricated and installed so cutting, bending, or displacement of reinforcement from its specified location is not required.",
+        "takeaway": "Pipe coordination must protect the specified reinforcement layout.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Not selected: So reinforcement can be displaced freely in the field.",
+        "b": "Not selected: So reinforcement cutting is decided after concrete placement.",
+        "c": "Selected: So cutting, bending, or displacement of reinforcement from its specified location is not required.",
+        "d": "Not selected: So reinforcement is omitted wherever pipes pass."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.3 (Cover for Embedded Pipes — weather exposure)",
+      "code_citation": "NSCP 2015 § 420.7 (mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +469,30 @@
       "model_id": "ALE-STRC-007-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.355685+00:00",
       "content_hash": "sha256:b83b9acc1b58c27d17fc32929ddf5805a17fff99260c0ac7f61fe3f5c795788b"
     },
     {
       "question_id": "0219dc35-4e33-4ce0-b077-c008de043af6",
       "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
       "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
-      "text": "A 150 mm thick concrete slab has electrical conduits embedded. What is the maximum diameter of a single conduit per NSCP?",
+      "text": "Which embedment information belongs in the construction documents under the checked Section 426.8 source boundary?",
       "options": [
         {
           "id": "a",
-          "text": "50 mm"
+          "text": "Type, size, details, and location of embedments designed by the licensed design professional."
         },
         {
           "id": "b",
-          "text": "75 mm"
+          "text": "Only the trade name of the pipe material."
         },
         {
           "id": "c",
-          "text": "100 mm"
+          "text": "Only the subcontractor installation date."
         },
         {
           "id": "d",
-          "text": "30 mm"
+          "text": "Only the paint color of exposed fittings."
         }
       ],
       "correct_option_id": "a",
@@ -483,14 +501,16 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "75 mm = h/2, which exceeds the h/3 limit.",
-        "c": "100 mm approaches the full slab thickness and is far too large.",
-        "d": "30 mm is smaller than allowed (conservative but not standard).",
-        "correct": "For slabs and beams, the maximum conduit size is h/3 = 150/3 = 50 mm (NSCP 6.3.1). This ensures the void does not overly weaken the concrete section.",
-        "takeaway": "Review the correct answer and associated code provision."
+        "correct": "Section 426.8 lists type, size, details, and location of embedments designed by the licensed design professional as design information.",
+        "takeaway": "Embedments are a construction-document coordination item, not a field-only detail.",
+        "source_boundary": "Batch 164 question-alignment remediation uses only the checked local NSCP OCR anchors listed in source-audit-evidence.json.",
+        "a": "Selected: Type, size, details, and location of embedments designed by the licensed design professional.",
+        "b": "Not selected: Only the trade name of the pipe material.",
+        "c": "Not selected: Only the subcontractor installation date.",
+        "d": "Not selected: Only the paint color of exposed fittings."
       },
       "explanation": null,
-      "code_citation": "NSCP 2015 § 6.3.1 (Conduit Size Limits — Slabs/Beams)",
+      "code_citation": "NSCP 2015 § 420.7 (mirrors ACI 318-14 § 26.6.5)",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,7 +521,7 @@
       "model_id": "ALE-STRC-007-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.363472+00:00",
       "content_hash": "sha256:4670f8b31695356bb63eb426ec9e997382a908a8943ef657f751de7ccb0d1edf"
     }
   ]

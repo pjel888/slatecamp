@@ -1,11 +1,45 @@
 {
   "question_id": "f83a8c1d-c537-47c0-88ef-d90c6ac6cf66",
   "baseline_hash": "sha256:2920c6cb56aac2ce3e110a265bd1062583449d5279d4ed1bdf1f26195a2ca8fc",
-  "reason": "Batch 008 local source audit aligned linked question f83a8c1d-c537-47c0-88ef-d90c6ac6cf66 with the repaired Location on Property and Exterior Walls article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-008",
-  "approved_at": "2026-05-10T18:13:43+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited Rule VIII Sec. 808 for projecting-element clearance from side and rear property lines. The 750 mm requirement for eaves over required windows is in Rule VII Sec. 704(1)(c) per the source pack, not Rule VIII Sec. 808. Citation and text corrected to align with the source; the answer (750 mm) is unchanged.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "chunk_id": "source-pack-pd-1096-irr-chunk-0001",
+        "section_locator": "Rule VII / Section 704.1 Location on Property"
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704.1(c)"
+  },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
-    "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft."
+    "text": "Under PD 1096 Rule VII, Section 704(1)(c), eaves over required window openings must be at least how far from the side and rear property lines?",
+    "options": [
+      {
+        "id": "lv-009-a",
+        "text": "500 mm"
+      },
+      {
+        "id": "lv-009-b",
+        "text": "750 mm"
+      },
+      {
+        "id": "lv-009-c",
+        "text": "1.00 m"
+      },
+      {
+        "id": "lv-009-d",
+        "text": "1.50 m"
+      }
+    ],
+    "correct_option_id": "lv-009-b",
+    "rationale": "Section 704(1)(c) requires eaves over required windows to be not less than 750 mm from the side and rear property lines. This rule is narrow: it applies specifically to eaves over required windows on side and rear lines, not to all projections or all facades.",
+    "explanation": "The original citation to Rule VIII Sec. 808 was incorrect; the 750 mm eave-clearance rule is in Rule VII Sec. 704(1)(c) per the source pack. Front-yard setbacks remain governed by local zoning and Rule VII Sec. 702-703.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704.1(c)"
   }
 }

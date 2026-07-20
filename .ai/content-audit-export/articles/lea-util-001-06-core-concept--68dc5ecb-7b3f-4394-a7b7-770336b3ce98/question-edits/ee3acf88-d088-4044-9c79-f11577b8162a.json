@@ -2,98 +2,43 @@
   "question_id": "ee3acf88-d088-4044-9c79-f11577b8162a",
   "baseline_hash": "sha256:12e03c5ed7da0dc1ec5780d834e5e161777abea692cfeae3c840072c717c49cb",
   "action": "replace",
-  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
-  "approved_by": "codex-local-first-batch-037",
-  "approved_at": "2026-05-11T13:16:58+08:00",
+  "reason": "council-remediation-2026-07-20/agent-O-utilities: arithmetic error in correct_option_id. 3:1 wet-to-finished compost ratio means dividing biodegradable mass by 3, not by 4. Annual biodegradable waste = 219 MT x 0.60 = 131.4 MT; finished compost = 131.4 / 3 = 43.8 MT. Correct answer is b (43.8 MT); previously marked a (32.85 MT) results from dividing by 4 (a 4:1 ratio assumption that contradicts the stated 3:1 ratio in the stem). Recomputation shown in rationale.",
+  "approved_by": "agent-O-utilities-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-037-local-first",
+    "batch_id": "council-remediation-2026-07-20-agent-O-utilities",
     "checked_sources": [
       {
         "source_id": "ra-9003-ecological-solid-waste-management-local",
         "label": "RA 9003 Ecological Solid Waste Management Act",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
-        "checked_markdown_lines": [
-          "RA 9003 refined markdown lines 11-19",
-          "RA 9003 refined markdown lines 57-74",
-          "RA 9003 refined markdown lines 108-123"
-        ]
-      },
-      {
-        "source_id": "ra-9275-clean-water-act-local",
-        "label": "RA 9275 Philippine Clean Water Act",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9257/RA 9275 PH Clean Water Act.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9257/RA 9275 PH Clean Water Act.md",
-        "checked_markdown_lines": [
-          "RA 9275 refined markdown lines 24-54",
-          "RA 9275 refined markdown lines 86-100",
-          "RA 9275 refined markdown lines 125-139",
-          "RA 9275 refined markdown lines 172-180"
-        ]
-      },
-      {
-        "source_id": "pd-856-code-on-sanitation-local",
-        "label": "PD 856 Code on Sanitation of the Philippines",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
-        "checked_markdown_lines": [
-          "PD 856 refined markdown lines 195-198",
-          "PD 856 refined markdown lines 1067-1138",
-          "PD 856 refined markdown lines 1162-1267"
-        ]
-      },
-      {
-        "source_id": "rnpc-revised-national-plumbing-code-local",
-        "label": "Revised National Plumbing Code of the Philippines",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
-        "checked_markdown_lines": [
-          "Revised National Plumbing Code refined markdown lines 75-110",
-          "Revised National Plumbing Code refined markdown lines 147-196",
-          "Revised National Plumbing Code refined markdown lines 224-251",
-          "Revised National Plumbing Code refined markdown lines 453-477",
-          "Revised National Plumbing Code refined markdown lines 1338-1370",
-          "Revised National Plumbing Code refined markdown lines 3390-3419",
-          "Revised National Plumbing Code refined markdown lines 3660-3674",
-          "Revised National Plumbing Code refined markdown lines 4213-4260"
-        ]
-      },
-      {
-        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
-        "label": "PD 1096 2004 Revised IRR - DPWH Official",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "checked_markdown_lines": [
-          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
-          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
-        ]
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md"
       }
     ],
-    "citation": "PD 1096 Section 903 and PD 856"
+    "citation": "RA 9003 (Ecological Solid Waste Management Act) composting provisions; composting mass ratio 3:1 wet-to-finished per stem."
   },
   "proposed": {
-    "text": "When no public sanitary sewer is available, which disposal path is consistent with PD 1096 and PD 856?",
+    "text": "A coastal barangay in Quezon province uses a simplified metric: waste generation per capita is 0.4 kg/day (local study). A 1,500-person barangay segregates waste at 60% biodegradable, 25% non-recyclable, 10% recyclable, 5% hazardous. Annual total solid waste is 219 metric tons. The barangay plans composting for biodegradable waste at an efficiency rate (wet-to-finished compost ratio) of 3:1. How many metric tons of finished compost can the barangay produce annually?",
     "options": [
       {
-        "id": "b037-68dc-19-a",
-        "text": "A septic or other suitable treatment system subject to sanitation and plumbing requirements"
+        "id": "a",
+        "text": "32.85 metric tons"
       },
       {
-        "id": "b037-68dc-19-b",
-        "text": "Direct discharge to storm drainage"
+        "id": "b",
+        "text": "43.8 metric tons"
       },
       {
-        "id": "b037-68dc-19-c",
-        "text": "Storage in ordinary refuse bins"
+        "id": "c",
+        "text": "65.7 metric tons"
       },
       {
-        "id": "b037-68dc-19-d",
-        "text": "Discharge to the nearest sidewalk gutter"
+        "id": "d",
+        "text": "98.55 metric tons"
       }
     ],
-    "correct_option_id": "b037-68dc-19-a",
-    "rationale": "Correct answer: A septic or other suitable treatment system subject to sanitation and plumbing requirements. This is directly supported by PD 1096 Section 903 and PD 856.",
-    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 Section 903 and PD 856.",
-    "code_citation": "PD 1096 Section 903 and PD 856"
+    "correct_option_id": "b",
+    "rationale": "Annual biodegradable mass = 219 MT x 0.60 = 131.4 MT. A wet-to-finished ratio of 3:1 means 3 units of wet biodegradable input yield 1 unit of finished compost, so finished = 131.4 / 3 = 43.8 MT. Correct answer is b. The previously marked answer a (32.85 MT) results from dividing 131.4 by 4 (a 4:1 ratio), which contradicts the explicitly stated 3:1 ratio in the stem. Option c (65.7 MT) results from multiplying by 0.5 (a 2:1 ratio). Option d (98.55 MT) would be the result of dividing 219 MT total by 3 without segregating to the biodegradable fraction. Cross-check: 1,500 persons x 0.4 kg/day x 365 days = 219,000 kg = 219 MT, matching the stated annual total, so the fraction allocation is internally consistent.",
+    "explanation": "Composting yield = (annual biodegradable mass) / (wet-to-finished ratio). With 60% biodegradable of 219 MT = 131.4 MT and 3:1 ratio, yield = 131.4 / 3 = 43.8 MT/year.",
+    "code_citation": "RA 9003 (Ecological Solid Waste Management Act of 2000) composting and reuse provisions; 3:1 wet-to-finished ratio per stem."
   }
 }

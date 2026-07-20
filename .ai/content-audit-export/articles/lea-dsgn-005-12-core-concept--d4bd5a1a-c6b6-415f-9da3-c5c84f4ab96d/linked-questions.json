@@ -8,23 +8,23 @@
       "question_id": "0619bbcb-4794-477e-bf46-d88794649473",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "What is the maximum slope permitted for a ramp providing accessible access to a heritage building entrance per BP 344 and the 2024 Revised IRR?",
+      "text": "Under BP 344 and its 2024 Revised IRR, what is the maximum gradient permitted for an accessible ramp serving a heritage building entrance (where no mechanical alternative is feasible)?",
       "options": [
         {
           "id": "a",
-          "text": "1:8, which is only permissible for short ramps not exceeding 1.5 meters in length"
+          "text": "1:8 - permissible only for very short ramps under 1.5 m"
         },
         {
           "id": "b",
-          "text": "1:12 (old standard), typically used for non-heritage buildings and subject to specific exemptions"
+          "text": "1:12 - the previous standard retained in the 2024 IRR for heritage retrofits"
         },
         {
           "id": "c",
-          "text": "1:12 (BP 344 2024 Revised IRR Sec. 4.2.2)"
+          "text": "1:20 - the checked BP 344 2024 IRR maximum (1:15 allowed only in special cases for shorter runs)"
         },
         {
           "id": "d",
-          "text": "1:25, generally applicable to gentle slopes in landscaped areas"
+          "text": "1:25 - preferred for landscaped approaches but not the regulatory maximum"
         }
       ],
       "correct_option_id": "c",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1:8 is steeper than allowed and non-compliant.",
-        "b": "1:12 was the previous standard but has been superseded by 1:20 in the 2024 Revised IRR.",
-        "d": "1:25 is less steep than required; 1:20 maximum is the current standard.",
-        "correct": "BP 344 with the 2024 Revised IRR specifies a maximum ramp slope of 1:20 to ensure accessibility for persons using wheelchairs. 1:12 remains the maximum slope per BP 344 2024 Revised IRR Section 4.2.2 (1:20 applies to landings per Section 4.2.3). Heritage status does not relax accessibility requirements. (BP 344 Accessibility Standards; 2024 Revised IRR)",
-        "takeaway": "Ramp slope maximum per BP 344 and 2024 Revised IRR = 1:20 for all buildings, including heritage properties. (Previously 1:12 under old IRR, but that is no longer current.)"
-      },
+      "rationale": "BP 344 2024 Revised IRR Appendix A.1.1 (Accessible Ramps) states verbatim that ramps 'shall have... Gradient not steeper than 1:20. Steeper gradients may be allowed in special cases depending on the length to be covered.' Table A.1.1 lists 1:20 as the standard maximum (15 m landing interval) and 1:15 only for special cases (max length 10.50 m, max rise 700 mm, 10 m landing interval). The older 1:12 value is not the current 2024 IRR maximum for general accessible ramps. Heritage status does not relax BP 344 ramp gradient; where strict application is impossible, RA 10066 / NBC variance procedure with a documented cultural constraint and an alternative accessible route is the source-safe path, not a steeper ramp.",
       "explanation": null,
       "code_citation": "BP 344 Accessibility Standards",
       "bloom_level": "apply",
@@ -54,30 +48,30 @@
       "model_id": "ALE-DSGN-005-12-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.490073+00:00",
       "content_hash": "sha256:40e74c0d5a07a94e014f27e07bc982f0a1fdf0ba9e202f605d054d80f6daf966"
     },
     {
       "question_id": "1739337c-b67d-4e37-b92e-e97729ce3394",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "During heritage building adaptive reuse, the architect discovers the main entrance doorway is 750mm wide, less than the required 900mm accessible clear width per BP 344. What is the appropriate approach?",
+      "text": "During heritage building adaptive reuse, the architect finds the historic main entrance doorway is 750 mm wide - narrower than the BP 344 2024 Revised IRR minimum clear door width. What is the source-safe design response?",
       "options": [
         {
           "id": "a",
-          "text": "Ignore the requirement because heritage buildings are exempt from accessibility laws, which prioritize preservation over accessibility"
+          "text": "Accept the 750 mm doorway as-is because heritage buildings are automatically exempt from BP 344 accessibility standards"
         },
         {
           "id": "b",
-          "text": "Demolish and rebuild the historic doorway to meet 900mm requirement, ensuring compliance with modern accessibility standards"
+          "text": "Demolish and rebuild the historic doorway to widen it to 900 mm regardless of cultural impact"
         },
         {
           "id": "c",
-          "text": "Prepare a variance request with documented cultural constraint and code impossibility; propose accessible alternative entrance"
+          "text": "File a variance request with the Building Official and NHCP documenting the cultural constraint and code impossibility, and provide an alternative accessible entrance (e.g., secondary door at 900 mm clear width or accessible route elsewhere)"
         },
         {
           "id": "d",
-          "text": "Use surface-mounted frame to effectively narrow the approach instead, which may not comply with accessibility standards but preserves the original structure"
+          "text": "Add a surface-mounted frame to narrow the doorway further to 'match' the historic opening"
         }
       ],
       "correct_option_id": "c",
@@ -85,13 +79,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Heritage buildings must still meet accessibility standards; no exemption exists.",
-        "b": "Demolishing historic features contradicts preservation and is a last resort.",
-        "d": "Narrowing the approach makes it less accessible; contrary to intent.",
-        "correct": "Heritage status does NOT exempt buildings from NBC/BP 344 compliance. However, when code compliance directly conflicts with preservation (e.g., enlarging a historic doorway destroys character), an architect may request a variance from the Building Official and NHCP, justified by the cultural constraint and impossible cost/damage. Alternative accessible routes (e.g., secondary entrance, accessible elevator elsewhere) must be provided. (RA 10066; NBC Variance Procedure; BP 344)",
-        "takeaway": "Heritage code conflicts require variance with cultural justification + alternative accessible route, not exemption."
-      },
+      "rationale": "BP 344 2024 Revised IRR Appendix C.2 (Doors) states verbatim: 'All doors shall have a minimum clear width of 900 mm.' and 'For double-leaf doors, the minimum clear width shall be 1800 mm.' The historic 750 mm doorway is therefore non-compliant. Heritage status under RA 10066 does NOT automatically exempt the building from BP 344, but when code compliance directly conflicts with preservation (enlarging the historic doorway would destroy character-defining features), the source-safe response is to (1) file a variance request with the Building Official and NHCP documenting the cultural constraint and code impossibility, and (2) provide an alternative accessible entrance (secondary doorway meeting 900 mm clear width, or an accessible route elsewhere). Demolishing the historic fabric is a last resort, not the default; ignoring the requirement or further narrowing the doorway is non-compliant.",
       "explanation": null,
       "code_citation": "RA 10066; NBC Variance Procedure; BP 344",
       "bloom_level": "apply",
@@ -108,30 +96,30 @@
       "model_id": "ALE-DSGN-005-12-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.489119+00:00",
       "content_hash": "sha256:97303e17e4f81f587645eba424ad804f92efbb7f60e334b03af5261c69584621"
     },
     {
       "question_id": "8a98aef9-0ec2-44b3-9997-6ce70ed82125",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "The following Philippine law mandates the protection of registered heritage properties and requires NHCP approval for significant modifications:",
+      "text": "Which RA 10066 action is required before modifying original features of a declared or marked historic edifice?",
       "options": [
         {
           "id": "a",
-          "text": "RA 7160 (Local Government Code) which delegates regulatory authority to local government units"
+          "text": "No action is needed after occupancy classification is changed."
         },
         {
           "id": "b",
-          "text": "RA 10066 (Cultural Heritage Act of 2009)"
+          "text": "Prior written permission from the Commission or appropriate cultural authority is needed."
         },
         {
           "id": "c",
-          "text": "BP 344 (Accessibility Law) which governs barrier-free design for persons with disability"
+          "text": "A private contractor approval is enough."
         },
         {
           "id": "d",
-          "text": "PD 1096 (National Building Code) which sets minimum standards for building construction"
+          "text": "Only a barangay clearance is needed."
         }
       ],
       "correct_option_id": "b",
@@ -140,11 +128,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "RA 7160 governs local government structure; not heritage-specific.",
-        "c": "BP 344 addresses accessibility for persons with disabilities; not heritage-specific.",
-        "d": "PD 1096 is the National Building Code; establishes construction standards but not heritage protection.",
-        "correct": "**RA 10066** (Cultural Heritage Act of 2009) is the primary Philippine law protecting movable and immovable cultural property, including heritage buildings. It establishes the National Historical Commission of the Philippines (NHCP) as the regulatory authority and mandates NHCP approval for adaptive reuse and significant modifications. (RA 10066)",
-        "takeaway": "RA 10066 (Cultural Heritage Act of 2009) mandates heritage protection and NHCP approval for adaptive reuse."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "RA 10066 penalizes modifying, altering, or destroying original features of protected historic edifices without prior written permission.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "RA 10066 Cultural Heritage Act of 2009",
@@ -161,43 +150,44 @@
       "model_id": "ALE-DSGN-005-12-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.494978+00:00",
       "content_hash": "sha256:7aad1d7f13124789d378ed68a1374d01524759c18ea1bab6b577dac7e717282e"
     },
     {
       "question_id": "e912eeec-848e-4b6b-9388-b3a532760eea",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "A heritage warehouse (originally Group F industrial) is being adapted as artists' studios and community exhibition space (new function Group C). The warehouse has a 200-person design capacity. Calculate the minimum required combined exit width per NBC Table 3 (7.6 mm/person).",
+      "text": "In adaptive reuse, why does the proposed new use matter under PD 1096?",
       "options": [
         {
           "id": "a",
-          "text": "1.0 m (200 × 5mm ÷ 1000)"
+          "text": "Conversion is a change in use or occupancy that may have different requirements."
         },
         {
           "id": "b",
-          "text": "1.2 m (200 × 6mm ÷ 1000)"
+          "text": "The original historic use always controls forever."
         },
         {
           "id": "c",
-          "text": "1.52 m (200 × 7.6mm ÷ 1000)"
+          "text": "The new use matters only for interior color selection."
         },
         {
           "id": "d",
-          "text": "2.0 m (200 × 10mm ÷ 1000)"
+          "text": "PD 1096 does not regulate occupancy."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "1.0 m uses 5 mm/person; NBC specifies 7.6 mm/person.",
-        "b": "1.2 m uses 6 mm/person; correct rate is 7.6 mm/person.",
-        "d": "2.0 m uses 10 mm/person; exceeds the required rate.",
-        "correct": "Exit width = Occupant load × 7.6 mm/person ÷ 1000 = 200 × 7.6 ÷ 1000 = 1.52 m. This applies to the new occupancy (Group C), not the original industrial use. (NBC Table 3, ERR-DSGN-019 inverse)",
-        "takeaway": "Heritage adaptive-reuse exit width = new occupancy load × 7.6 mm/person per NBC Table 3."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "The checked PD 1096 definition treats conversion as a change in use or occupancy with different requirements, and certificates may be issued for changes in use.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Table 3; ERR-DSGN-019",
@@ -214,43 +204,44 @@
       "model_id": "ALE-DSGN-005-12-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.494243+00:00",
       "content_hash": "sha256:2f292e44d0aeef069676a4e45b31f56170ce0e9ad341304e19dd3a242645114a"
     },
     {
       "question_id": "48caed56-c54c-4c98-96a1-96b4734efcff",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "A registered heritage building originally served as a school (Group C, 500 sqm). It is being adaptively reused as an office building (new occupancy, 10 sqm per person minimum). What is the new occupant load?",
+      "text": "A former warehouse is reused as office suites. Which occupancy anchor is safest from the checked PD 1096 source?",
       "options": [
         {
           "id": "a",
-          "text": "25 persons (500 ÷ 20)"
+          "text": "Group A because all old buildings are residential."
         },
         {
           "id": "b",
-          "text": "50 persons (500 ÷ 10)"
+          "text": "Group D because all adaptive reuse is institutional."
         },
         {
           "id": "c",
-          "text": "100 persons (500 ÷ 5)"
+          "text": "Group E because office buildings are business and mercantile use."
         },
         {
           "id": "d",
-          "text": "150 persons (500 ÷ 3.3)"
+          "text": "No occupancy group applies after reuse."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "25 persons uses 20 sqm/person; office standard is 10 sqm/person.",
-        "c": "100 persons uses 5 sqm/person; office minimum is 10 sqm/person.",
-        "d": "150 persons uses 3.3 sqm/person; exceeds office density.",
-        "correct": "Occupant load for office use = Building area ÷ space per person = 500 sqm ÷ 10 sqm/person = 50 persons. The calculation uses the _new function_ (office), not the original function (school). (NBC Occupancy Calculation)",
-        "takeaway": "Occupant load for heritage adaptive reuse = new use area ÷ new use density. For 500 sqm office: 50 persons."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Correct. This option follows the checked local raw-source evidence.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "The checked PD 1096 source lists office buildings under Group E business and mercantile use.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Occupancy Calculation",
@@ -267,43 +258,44 @@
       "model_id": "ALE-DSGN-005-12-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.490930+00:00",
       "content_hash": "sha256:73a4f58ae531726d92b8fef2f0ae4cfff6b1388b555522f4d6edf4dddc2cf74e"
     },
     {
       "question_id": "648e498c-4fcb-447c-96cd-5b38b07f5ddb",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "A heritage mansion is being adapted for use as a boutique hotel. The building's exterior and character-defining features must be preserved. When routing new mechanical systems (HVAC, plumbing), what design principle is preferred?",
+      "text": "For protected cultural property, who supervises conservation intervention works under RA 10066?",
       "options": [
         {
           "id": "a",
-          "text": "Permanent integration into structural walls to hide systems completely, which may compromise the building's structural integrity"
+          "text": "The appropriate cultural agency"
         },
         {
           "id": "b",
-          "text": "Reversible interventions routed in attics, crawl spaces, or secondary zones with minimal visual impact"
+          "text": "Only the contractor"
         },
         {
           "id": "c",
-          "text": "Surface-mounted systems throughout, regardless of aesthetic impact, prioritizing ease of access for maintenance"
+          "text": "Only the building owner"
         },
         {
           "id": "d",
-          "text": "Removal of all historic features to accommodate modern systems, which is generally discouraged in heritage conservation"
+          "text": "Only the furniture supplier"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Permanent integration (cutting beams, embedding in walls) damages original structure and violates reversibility principles.",
-        "c": "Visible system routing compromises historic appearance unless carefully integrated.",
-        "d": "Removal of historic features is destructive and contrary to preservation ethics.",
-        "correct": "Reversible interventions are the gold standard in heritage conservation. New systems are routed through attics, crawl spaces, secondary walls, or concealed areas to minimize damage and visual impact on character-defining features. This allows future removal or modification without destroying heritage fabric. (NHCP Preservation Standards; Venice Charter principles adapted to Philippine context)",
-        "takeaway": "Heritage system routing = reversible interventions in hidden zones (attics, secondary walls) to preserve character and fabric."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "RA 10066 states that conservation intervention works on protected cultural property are undertaken through the appropriate cultural agency, which supervises the work.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NHCP Preservation Standards; Venice Charter",
@@ -320,43 +312,44 @@
       "model_id": "ALE-DSGN-005-12-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.491769+00:00",
       "content_hash": "sha256:739f24670c5a22ce5752203ec7e615939d6035f8dfa806b8d445cc36c13b6a25"
     },
     {
       "question_id": "d3296a38-6fa1-4587-91bd-c9ecfa054644",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "A colonial-era mansion (registered heritage property) is being adapted as a restaurant (Group E mercantile). The basement kitchen generates grease-laden exhaust requiring ventilation. What design approach best preserves the exterior character?",
+      "text": "A new exhaust duct would cut through a protected character-defining wall. Which answer is safest?",
       "options": [
         {
           "id": "a",
-          "text": "Route exhaust ductwork visibly across the heritage facade, which may violate preservation guidelines"
+          "text": "Cut the wall because mechanical work is never part of heritage review."
         },
         {
           "id": "b",
-          "text": "Disguise ductwork with paint matching the wall color, which is a temporary solution"
+          "text": "Route or detail the system only after cultural-agency and code coordination, using approved methods and materials."
         },
         {
           "id": "c",
-          "text": "Conceal exhaust discharge within attic/roof space or interior walls; route ductwork through secondary areas to minimize facade alteration (reversible intervention)"
+          "text": "Ignore the code because the building is old."
         },
         {
           "id": "d",
-          "text": "Locate kitchen elsewhere in the neighborhood to avoid modifying the heritage building, which may not be feasible"
+          "text": "Install the duct wherever it is shortest."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Visible ductwork across the facade diminishes heritage character and is not reversible.",
-        "b": "Paint-matching conceals but does not eliminate the visual intrusion; reversible routing is better.",
-        "d": "Locating kitchen off-site is not always practical; in-place routing (concealed) is the standard solution.",
-        "correct": "Reversible intervention routed through concealed spaces (attic, interior walls, secondary zones) minimizes visual impact on character-defining exterior. This approach allows future removal without permanently altering the heritage facade. Discharging through the roof (if less visible than a facade penetration) is preferable to wall discharge. (NHCP Preservation Standards; Reversible Design Principles)",
-        "takeaway": "Heritage building systems = conceal through attic, interior walls, secondary zones. Minimize facade penetrations. Reversible."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "RA 10066 requires supervised conservation intervention and approved methods/materials for protected cultural property; PD 1096 still controls the new use and building work.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NHCP Preservation Standards; Reversible Design Principles",
@@ -373,30 +366,30 @@
       "model_id": "ALE-DSGN-005-12-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.492643+00:00",
       "content_hash": "sha256:c6b42d6669712c15e33ee24e94e6383157d37ebefbba1380a99c453936892bbe"
     },
     {
       "question_id": "7a5cd003-7197-4406-8320-9336ee3ed844",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "Before beginning design modifications to a registered heritage property, which agency's clearance is mandatory in the Philippines?",
+      "text": "A declared heritage building will undergo adaptive reuse. Which clearance path is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Department of Trade and Industry (DTI), which oversees commercial aspects of heritage properties"
+          "text": "Proceed without cultural review if the exterior color is unchanged."
         },
         {
           "id": "b",
-          "text": "National Historical Commission of the Philippines (NHCP)"
+          "text": "Coordinate with the appropriate cultural agency before intervention works on protected cultural property."
         },
         {
           "id": "c",
-          "text": "Department of Public Works and Highways (DPWH), responsible for infrastructure and public works"
+          "text": "Ask only the tenant to approve conservation methods."
         },
         {
           "id": "d",
-          "text": "Philippine Statistics Authority (PSA), which collects data on heritage sites for national records"
+          "text": "Treat registration as removing all building-code duties."
         }
       ],
       "correct_option_id": "b",
@@ -405,11 +398,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "DTI governs trade and industry; not responsible for heritage conservation.",
-        "c": "DPWH handles public works; NHCP is the heritage authority.",
-        "d": "PSA manages statistics; not responsible for cultural heritage.",
-        "correct": "The National Historical Commission of the Philippines (NHCP) administers **RA 10066** (Cultural Heritage Act) and must provide clearance for any significant modification or adaptive reuse of registered heritage properties. Clearance must be obtained during design phase before construction. (RA 10066, NHCP Mandate)",
-        "takeaway": "NHCP (National Historical Commission of the Philippines) clearance is mandatory for heritage property adaptive reuse per RA 10066."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "RA 10066 places conservation intervention works under the appropriate cultural agency and requires proper permission for alteration of protected historic features.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "RA 10066; NHCP Mandate",
@@ -426,30 +420,30 @@
       "model_id": "ALE-DSGN-005-12-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.493380+00:00",
       "content_hash": "sha256:876345451acd8a633c365b6d48a39396d79581e74700c0ee1dad8759e219ba6a"
     },
     {
       "question_id": "de8fc2ae-c560-4920-9c3a-25566327e0ee",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "During heritage building adaptive reuse, which approach is most appropriate when replacing deteriorated materials (e.g., wood siding, mortar)?",
+      "text": "Which material-replacement rule is safest under RA 10066?",
       "options": [
         {
           "id": "a",
-          "text": "Use modern substitutes (vinyl siding, epoxy mortar) for durability and cost savings, prioritizing efficiency over historical accuracy."
+          "text": "Use any modern material if it is cheaper."
         },
         {
           "id": "b",
-          "text": "Match original material in composition, color, and texture; use reversible techniques compatible with heritage fabric (e.g., lime mortar, wood stain)"
+          "text": "Use methods and materials approved by the appropriate cultural agency and aligned with accepted conservation standards."
         },
         {
           "id": "c",
-          "text": "Leave deteriorated materials in place to preserve original authenticity, even if it compromises the building's structural integrity."
+          "text": "Replace all original materials to make the building look new."
         },
         {
           "id": "d",
-          "text": "Apply modern finishes over original materials to speed construction, which may alter the building's historical character and appearance."
+          "text": "Let the supplier decide without documentation."
         }
       ],
       "correct_option_id": "b",
@@ -458,11 +452,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Modern substitutes (vinyl, epoxy) are incompatible with heritage fabric and often cause long-term damage (e.g., epoxy traps moisture in masonry).",
-        "c": "Leaving deteriorated materials compromises structural integrity and preservation goals; maintenance/repair is required.",
-        "d": "Covering original materials obscures character and traps moisture/damage.",
-        "correct": "Heritage conservation requires compatible replacement materials that match the original in composition, color, texture, and performance. Lime mortar (reversible, breathable) is preferable to epoxy (permanent, impermeable); wood stain or paint matching original hues preserves character. This approach maintains authenticity and allows future reversibility. (NHCP Preservation Standards; Venice Charter)",
-        "takeaway": "Heritage material replacement = match original composition, color, texture; use reversible compatible techniques."
+        "a": "Incorrect. This option changes the source rule, value, or condition.",
+        "b": "Correct. This option follows the checked local raw-source evidence.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "RA 10066 states that the appropriate cultural agency approves methods and materials that adhere to accepted conservation standards.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NHCP Preservation Standards; Venice Charter",
@@ -479,43 +474,44 @@
       "model_id": "ALE-DSGN-005-12-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.495698+00:00",
       "content_hash": "sha256:8822c675c789c1b0d9552903741419065a73dc982eb5d8753c82f13f5ba32836"
     },
     {
       "question_id": "dd7eb8c9-0c40-4101-a106-8062190a2102",
       "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
       "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-      "text": "A century-old Spanish-era church (originally Group C assembly) is being adaptively reused as a public library and archive. What is the new occupancy classification based on the reuse function?",
+      "text": "A heritage house is reused as a small restaurant with fewer than 100 occupants. Which PD 1096 group is the safest anchor?",
       "options": [
         {
           "id": "a",
-          "text": "Group A (Residential) because it is heritage property, which often includes living quarters for caretakers or staff"
+          "text": "Group E business and mercantile"
         },
         {
           "id": "b",
-          "text": "Group C (Education and Recreation) per NBC Rule VII; note RA 9514 classifies libraries as Assembly occupancy."
+          "text": "Group D institutional"
         },
         {
           "id": "c",
-          "text": "Group D (Institutional) because it is a cultural institution, serving the public with educational and informational resources"
+          "text": "Group F industrial"
         },
         {
           "id": "d",
-          "text": "Group F (Industrial) because archives require special storage, including climate control and fire suppression systems"
+          "text": "Group A single-family dwelling"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Group A is residential; heritage property status does not change occupancy.",
-        "c": "Group D is institutional (care facilities); a public library is Group C.",
-        "d": "Group F is industrial/manufacturing; archives in a library are Group C.",
-        "correct": "Occupancy classification for adaptive reuse is determined by the new programmed function, not the original use. A heritage church reused as a library is Group C (education and recreation). The building's historic status does not change its code occupancy classification. (NBC Occupancy Classification; RA 10066 Adaptive Reuse Principles)",
-        "takeaway": "Heritage adaptive reuse occupancy classification = new programmed function, not original use."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, value, or condition.",
+        "c": "Incorrect. This option changes the source rule, value, or condition.",
+        "d": "Incorrect. This option changes the source rule, value, or condition.",
+        "correct": "The checked PD 1096 source lists drinking and dining establishments with occupant load under 100 under Group E business and mercantile use.",
+        "takeaway": "Use the local raw-source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Occupancy Classification; RA 10066",
@@ -532,7 +528,7 @@
       "model_id": "ALE-DSGN-005-12-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.487773+00:00",
       "content_hash": "sha256:afe5b0039154ab0e5e7a0ebf94f8948da9e840ce275dc9d6bb853fc46d9ab1e8"
     }
   ]

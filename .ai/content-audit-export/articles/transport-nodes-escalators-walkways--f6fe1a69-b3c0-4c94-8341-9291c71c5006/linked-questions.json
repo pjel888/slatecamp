@@ -76,14 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Elevator tactile termination: 300 mm warning strip before the door, Braille/tactile at controls and jambs.",
-        "explanation": "The tactile path terminates at a warning tactile strip 300 mm in front of the elevator door, alerting the user that the lift is immediately ahead. Braille and tactile labels on the COP (at 900–1200 mm AFF) and on both door jambs allow independent floor selection. The 600 mm depth rule applies to the warning field before escalators and platform edges; at elevator doors the specific element is the 300 mm setback warning strip.",
-        "common_misconceptions": [
-          "Using a 600 mm warning strip in front of the elevator door — the 600 mm refers to depth at escalator/platform edges, not elevator door setback",
-          "Relying on audio chimes alone without tactile controls — visually impaired users need tactile labels to operate the elevator"
-        ]
-      },
+      "rationale": "Elevator tactile termination: 300 mm warning strip before the door, Braille/tactile at controls and jambs. The tactile path terminates at a warning tactile strip 300 mm in front of the elevator door, alerting the user that the lift is immediately ahead. Braille and tactile labels on the COP (at 900–1200 mm AFF) and on both door jambs allow independent floor selection. The 600 mm depth rule applies to the warning field before escalators and platform edges; at elevator doors the specific element is the 300 mm setback warning strip.",
       "explanation": "Elevator tactile termination requires a 300 mm warning strip before the door plus Braille/tactile at controls and jambs.",
       "code_citation": null,
       "bloom_level": "analyze",
@@ -96,7 +89,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.938504+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.127367+00:00",
       "content_hash": "sha256:46af19ccb3aa11d22b9308195229a12fc988034590b0110e21fe0fadc10d0200"
     },
     {
@@ -331,14 +324,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Walkalators follow the same 600 mm depth / 300 mm setback / full-width rule as escalators.",
-        "explanation": "The article explicitly states that passenger conveyors follow the same 600 mm / 300 mm tactile rule as escalators and ramps. The approach areas must also be level, surfaces slip-resistant, and handrails provided on both sides at accessible heights. Walkalators are essentially 'flat escalators' for tactile and safety logic.",
-        "common_misconceptions": [
-          "Assuming walkalators have different tactile requirements than escalators because they are horizontal",
-          "Using 900 mm depth — this is not a BP 344 tactile dimension"
-        ]
-      },
+      "rationale": "Walkalators follow the same 600 mm depth / 300 mm setback / full-width rule as escalators. The article explicitly states that passenger conveyors follow the same 600 mm / 300 mm tactile rule as escalators and ramps. The approach areas must also be level, surfaces slip-resistant, and handrails provided on both sides at accessible heights. Walkalators are essentially 'flat escalators' for tactile and safety logic.",
       "explanation": "Walkalators use the same 600 mm depth / 300 mm setback / full-width tactile rule as escalators per BP 344.",
       "code_citation": null,
       "bloom_level": "understand",
@@ -351,7 +337,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.938504+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.122025+00:00",
       "content_hash": "sha256:9ec9b440e368ba250759da4865cd6176de5d8df6c14be3a6806937700732d798"
     },
     {
@@ -586,14 +572,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The tactile path must link all key station nodes: drop-offs, security, ticketing, gates, stairs, escalators, elevators, and boarding zones.",
-        "explanation": "BP 344 requires directional tactile bars to form a continuous route linking every functional node a transit passenger must navigate — from drop-off and entrance through security, ticketing, and gates to vertical circulation and the platform. Partial networks (only entrance-to-platform or only elevator lobbies) leave visually impaired users unable to independently navigate the station.",
-        "common_misconceptions": [
-          "Assuming only the elevator and platform need tactile connections",
-          "Thinking ISA signage can replace tactile paths for non-elevator segments"
-        ]
-      },
+      "rationale": "The tactile path must link all key station nodes: drop-offs, security, ticketing, gates, stairs, escalators, elevators, and boarding zones. BP 344 requires directional tactile bars to form a continuous route linking every functional node a transit passenger must navigate — from drop-off and entrance through security, ticketing, and gates to vertical circulation and the platform. Partial networks (only entrance-to-platform or only elevator lobbies) leave visually impaired users unable to independently navigate the station.",
       "explanation": "The tactile path must be a complete network linking all functional station nodes per BP 344.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -606,7 +585,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.806316+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.125683+00:00",
       "content_hash": "sha256:d884c0dab250ad1277cde8524ec4c931f5bd421ffae5c16a43d1bb73f794bcfa"
     },
     {
@@ -841,14 +820,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Walkalators follow the same 600 mm depth / 300 mm setback / full-width rule as escalators.",
-        "explanation": "The article explicitly states that passenger conveyors follow the same 600 mm / 300 mm tactile rule as escalators and ramps. The approach areas must also be level, surfaces slip-resistant, and handrails provided on both sides at accessible heights. Walkalators are essentially 'flat escalators' for tactile and safety logic.",
-        "common_misconceptions": [
-          "Assuming walkalators have different tactile requirements than escalators because they are horizontal",
-          "Using 900 mm depth — this is not a BP 344 tactile dimension"
-        ]
-      },
+      "rationale": "Walkalators follow the same 600 mm depth / 300 mm setback / full-width rule as escalators. The article explicitly states that passenger conveyors follow the same 600 mm / 300 mm tactile rule as escalators and ramps. The approach areas must also be level, surfaces slip-resistant, and handrails provided on both sides at accessible heights. Walkalators are essentially 'flat escalators' for tactile and safety logic.",
       "explanation": "Walkalators use the same 600 mm depth / 300 mm setback / full-width tactile rule as escalators per BP 344.",
       "code_citation": null,
       "bloom_level": "understand",
@@ -861,7 +833,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.806316+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.120346+00:00",
       "content_hash": "sha256:867e55878363d8985dcaa7aa8b711105acb9dc9ab5c4a829f59cfd8528c91d62"
     },
     {

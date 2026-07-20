@@ -64,7 +64,7 @@
         },
         {
           "id": "A",
-          "text": "CORRECT"
+          "text": "Option labeled CORRECT in the source."
         },
         {
           "id": "E",
@@ -76,7 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The mnemonic \"WRONG\" was specifically designed to help remember CORRECT.",
+      "rationale": "The mnemonic \"WRONG\" was specifically designed to help remember Option labeled CORRECT in the source..",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -89,7 +89,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:11.817388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.469533+00:00",
       "content_hash": "sha256:1aef6e0d5c9834f376998172fdaf08702edbdf1c965a9cf27801f563ac04c236"
     },
     {
@@ -222,14 +222,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Trap #3: ramp landings = 1800 mm; stair landings and approach clear floors = 1500 mm. These are different.",
-        "explanation": "Trap #3 in the article. BP 344 specifies ramp landings (at top, bottom, and intermediate points) at 1800 mm in length. Stair landings and approach clear floor areas use 1500 mm. The ALE frequently places both dimensions in the same question to exploit this confusion. The mnemonic from the article's summary table: 'Ramp landing vs. stair landing → Ramp = 1800 mm; Stair = 1500 mm.' The student's answer of 1500 mm is the wrong dimension applied to the wrong element.",
-        "common_misconceptions": [
-          "Treating all landings (ramp, stair, approach floor) as having the same 1500 mm dimension",
-          "Applying the stair landing dimension to ramp landings — ramp landings require the larger 1800 mm"
-        ]
-      },
+      "rationale": "Trap #3: ramp landings = 1800 mm; stair landings and approach clear floors = 1500 mm. These are different. Trap #3 in the article. BP 344 specifies ramp landings (at top, bottom, and intermediate points) at 1800 mm in length. Stair landings and approach clear floor areas use 1500 mm. The ALE frequently places both dimensions in the same question to exploit this confusion. The mnemonic from the article's summary table: 'Ramp landing vs. stair landing → Ramp = 1800 mm; Stair = 1500 mm.' The student's answer of 1500 mm is the wrong dimension applied to the wrong element.",
       "explanation": "Classic pair: ramp landing = 1800 mm; stair landing / approach clear floor = 1500 mm. Never swap these.",
       "code_citation": "BP 344 IRR, Ramps section; Trap #3",
       "bloom_level": "apply",
@@ -242,7 +235,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.644162+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.461773+00:00",
       "content_hash": "sha256:57910ed803742827a31d049e8991eabe13d3d014205d4b64464d49ece0c28397"
     },
     {
@@ -477,14 +470,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Trap #46: accessible parking requires 2300 mm minimum vertical clearance — exclusively for raised-roof vans.",
-        "explanation": "Trap #46 in the article. Standard parking structures typically provide 2100–2200 mm vertical clearance. BP 344 IRR requires a minimum of 2300 mm vertical clearance specifically at accessible parking spaces to accommodate raised-roof vans (wheelchair-accessible vehicles with elevated rooflines). This is not required throughout the entire parking structure — only at the accessible spaces. An accessible parking level at 2100 mm standard clearance would physically prevent raised-roof van access to the only spaces intended for the users who need them most.",
-        "common_misconceptions": [
-          "Treating 2100 mm standard clearance as sufficient for accessible spaces — raised-roof vans require the extra 200 mm",
-          "Selecting 2500 mm as 'safer' — the BP 344 specification is 2300 mm, not an arbitrary higher value"
-        ]
-      },
+      "rationale": "Trap #46: accessible parking requires 2300 mm minimum vertical clearance — exclusively for raised-roof vans. Trap #46 in the article. Standard parking structures typically provide 2100–2200 mm vertical clearance. BP 344 IRR requires a minimum of 2300 mm vertical clearance specifically at accessible parking spaces to accommodate raised-roof vans (wheelchair-accessible vehicles with elevated rooflines). This is not required throughout the entire parking structure — only at the accessible spaces. An accessible parking level at 2100 mm standard clearance would physically prevent raised-roof van access to the only spaces intended for the users who need them most.",
       "explanation": "Accessible parking: 2300 mm min vertical clearance (vs. standard 2100 mm) — raised-roof vans require the additional headroom.",
       "code_citation": "BP 344 IRR, Parking section; Trap #46",
       "bloom_level": "analyze",
@@ -497,7 +483,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:57.644162+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.465916+00:00",
       "content_hash": "sha256:cb4b91c26bf61edb408a20306273a1fb77265cefc07a6afb8ab6c8ea08bc44a5"
     },
     {
@@ -732,14 +718,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Trap #29: emergency button at 400–600 mm AFF — reachable from the floor by a fallen user.",
-        "explanation": "Trap #29 in the article. The standard operable controls range is 900–1200 mm AFF, but the emergency call button in an accessible toilet deliberately violates this range. The button must be at 400–600 mm AFF because it must be reachable by a user who has fallen to the floor and cannot stand or reach upward. A button at 900–1200 mm is unreachable by a prone or severely incapacitated user. This is one of the most counterintuitive specifications in BP 344 — the one control that is intentionally placed lower than the standard reach range.",
-        "common_misconceptions": [
-          "Applying the standard 900–1200 mm operable range to the emergency button — this button is the explicit exception",
-          "Selecting 300 mm as 'even lower therefore better' — 400–600 mm is the specified range, not lower"
-        ]
-      },
+      "rationale": "Trap #29: emergency button at 400–600 mm AFF — reachable from the floor by a fallen user. Trap #29 in the article. The standard operable controls range is 900–1200 mm AFF, but the emergency call button in an accessible toilet deliberately violates this range. The button must be at 400–600 mm AFF because it must be reachable by a user who has fallen to the floor and cannot stand or reach upward. A button at 900–1200 mm is unreachable by a prone or severely incapacitated user. This is one of the most counterintuitive specifications in BP 344 — the one control that is intentionally placed lower than the standard reach range.",
       "explanation": "Emergency toilet button: 400–600 mm AFF — the one control intentionally below the standard 900–1200 mm reach range.",
       "code_citation": "BP 344 IRR Sec. 6; Trap #29",
       "bloom_level": "apply",
@@ -752,7 +731,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.470786+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.463041+00:00",
       "content_hash": "sha256:fc847abd435bc16b76fc4cf549a22b458ea9b8eb411e21c5a4482bf12a7cdfca"
     },
     {
@@ -987,14 +966,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Trap #3: ramp landings = 1800 mm; stair landings and approach clear floors = 1500 mm. These are different.",
-        "explanation": "Trap #3 in the article. BP 344 specifies ramp landings (at top, bottom, and intermediate points) at 1800 mm in length. Stair landings and approach clear floor areas use 1500 mm. The ALE frequently places both dimensions in the same question to exploit this confusion. The mnemonic from the article's summary table: 'Ramp landing vs. stair landing → Ramp = 1800 mm; Stair = 1500 mm.' The student's answer of 1500 mm is the wrong dimension applied to the wrong element.",
-        "common_misconceptions": [
-          "Treating all landings (ramp, stair, approach floor) as having the same 1500 mm dimension",
-          "Applying the stair landing dimension to ramp landings — ramp landings require the larger 1800 mm"
-        ]
-      },
+      "rationale": "Trap #3: ramp landings = 1800 mm; stair landings and approach clear floors = 1500 mm. These are different. Trap #3 in the article. BP 344 specifies ramp landings (at top, bottom, and intermediate points) at 1800 mm in length. Stair landings and approach clear floor areas use 1500 mm. The ALE frequently places both dimensions in the same question to exploit this confusion. The mnemonic from the article's summary table: 'Ramp landing vs. stair landing → Ramp = 1800 mm; Stair = 1500 mm.' The student's answer of 1500 mm is the wrong dimension applied to the wrong element.",
       "explanation": "Classic pair: ramp landing = 1800 mm; stair landing / approach clear floor = 1500 mm. Never swap these.",
       "code_citation": "BP 344 IRR, Ramps section; Trap #3",
       "bloom_level": "apply",
@@ -1007,7 +979,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:47.470786+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.459623+00:00",
       "content_hash": "sha256:7bc16124fb06c272783b8bbf9f289a83f752d4ecbeeb8146d6a721ef564ba2f7"
     }
   ]

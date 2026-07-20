@@ -2,9 +2,9 @@
   "question_id": "98b9b530-b29e-4129-bf7a-affc944fb0ec",
   "baseline_hash": "sha256:33e953ae594b0232c18cacd6872b3a891c7456da7531c1c319fa9ae39162b1ab",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What documents are tied to the IRR Certificate of Occupancy process?",
+    "text": "Group A Div. 1 includes which of the following uses under Sec. 701?",
     "options": [
       {
         "id": "a",
-        "text": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process."
+        "text": "Single-family dwellings, and churches, community facilities, parks, and clubhouses not operated primarily for gain"
       },
       {
         "id": "b",
-        "text": "O"
+        "text": "Hotels, apartments, and boarding houses, typically classified under Group R for residential occupancy"
       },
       {
         "id": "c",
-        "text": "n"
+        "text": "Educational buildings and day-care centers, which fall under Group E for educational occupancy"
       },
       {
         "id": "d",
-        "text": "l"
+        "text": "Business offices and mercantile establishments, generally categorized under Group B for business occupancy"
       }
     ],
     "correct_option_id": "a",
-    "rationale": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process. This is supported by Only a hydrant-location sketch is required..",
-    "explanation": "The application, Certificate of Completion, construction logbook, as-built plans and specifications, and Building Inspection Sheet are tied to the process. The cited local source family controls this item: Only a hydrant-location sketch is required..",
-    "code_citation": "Only a FLAR computation is required."
+    "rationale": "Group A includes more than just houses — it encompasses a broad range of low-density residential and community uses. Hotels and apartments → Group B. Educational buildings → Group C. Business/mercantile → Group E.",
+    "explanation": null,
+    "code_citation": null
   }
 }

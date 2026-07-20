@@ -8,31 +8,31 @@
       "question_id": "98fe1db5-9578-44b5-aaf0-f7aa622c8aec",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Based on the specifications in \"Wheelchair Maneuvering and Parking Slots\", if a project requires 4.0 m, what is the correct interpretation?",
+      "text": "Why is extra width required for accessible parking slots?",
       "options": [
         {
-          "id": "A",
-          "text": "4.0 m is the minimum/standard requirement"
+          "id": "a",
+          "text": "To allow transfer from a vehicle to a wheelchair and allow wheelchair passage."
         },
         {
-          "id": "B",
-          "text": "4.0 m is the maximum permitted value"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "4.0 m applies only to specific conditions"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "4.0 m is an approximate value subject to interpretation"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 4.0 m as the requirement. Context: Memorize\r \r Your draft uses several **Appendix C corridor and parking values** (...",
+      "rationale": "The checked local source supports: To allow transfer from a vehicle to a wheelchair and allow wheelchair passage.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:12.423524+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.863136+00:00",
       "content_hash": "sha256:9c9e9b95316a93d7723ba2dd68d140d286f50f1103729563302589368bfc7fb5"
     },
     {
       "question_id": "80695d64-b8cf-4a61-b855-f69caed50d49",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A ramp total run exceeds 10.50 m. What must be provided, and what is the minimum length of each such element in the direction of travel?",
+      "text": "Where should accessible parking slots be located relative to accessible main entrances?",
       "options": [
         {
-          "id": "A",
-          "text": "Intermediate landings, each with a minimum length of 1800 mm in the direction of travel"
+          "id": "a",
+          "text": "Nearest to accessible main entrances."
         },
         {
-          "id": "B",
-          "text": "Intermediate landings, each with a minimum length of 1200 mm in the direction of travel"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Rest alcoves on each side of the ramp, each 900 mm deep perpendicular to direction of travel"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Intermediate landings, each with a minimum length of 1500 mm in the direction of travel"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ramps exceeding 10.50 m total run require intermediate landings of minimum 1800 mm length.",
-        "explanation": "BP 344 Appendix A specifies that when a ramp total length exceeds 10.50 m, intermediate landings must be provided at intervals, each with a minimum length of 1800 mm in the direction of travel. This is the same 1800 mm used for top and bottom ramp landings — consistent across all ramp landing types. The 1200 mm figure is the ramp width, not the landing length.",
-        "common_misconceptions": [
-          "Using 1200 mm as the intermediate landing length — that is the ramp clear width",
-          "Using rest alcoves rather than full-width intermediate landings"
-        ]
-      },
+      "rationale": "The checked local source supports: Nearest to accessible main entrances.",
       "explanation": "Ramps over 10.50 m require intermediate landings of minimum 1800 mm length per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "understand",
@@ -96,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.877806+00:00",
       "content_hash": "sha256:0844a67bad554114b6fd4556365f1143c949f83ef636b3294422cbf45f90358b"
     },
     {
       "question_id": "664a737c-37c0-49e3-88b2-b71f6238b511",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix B requires rest and turn spaces on lengthy accessible pathways. What is the maximum spacing between these spaces, and what is their minimum clear dimension?",
+      "text": "What minimum accessible parking slot size is supported by the checked BP 344 source?",
       "options": [
         {
-          "id": "A",
-          "text": "Maximum spacing 10000 mm between rest/turn spaces; minimum clear dimension 1500 mm"
+          "id": "a",
+          "text": "4000 mm wide by 5000 mm long."
         },
         {
-          "id": "B",
-          "text": "Maximum spacing 12000 mm between rest/turn spaces; minimum clear dimension 1800 mm"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Maximum spacing 15000 mm between rest/turn spaces; minimum clear dimension 1800 mm"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Maximum spacing 12000 mm between rest/turn spaces; minimum clear dimension 1500 mm"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Rest/turn spaces: maximum 12000 mm intervals; minimum 1800 mm clear dimension per BP 344 Appendix B.",
-        "explanation": "The 12,000 mm (12 m) maximum interval prevents a wheelchair user from being stranded on a long pathway with no place to turn around or rest. The 1800 mm minimum clear dimension is the same as the turnabout space size used in corridors. The 15000 mm figure belongs to the 1:20 ramp landing interval — a different element.",
-        "common_misconceptions": [
-          "Using 15000 mm as the rest space interval — that is the 1:20 ramp landing interval, not the walkway rest space interval",
-          "Using 1500 mm as the rest space minimum dimension — the required minimum is 1800 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: 4000 mm wide by 5000 mm long.",
       "explanation": "Walkway rest/turn spaces: maximum 12000 mm apart; minimum 1800 mm clear per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "remember",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.855563+00:00",
       "content_hash": "sha256:4c0f7786e59bf2d8dc02441d7fb8ccffbea8b7bbb0369915a1be2c620855c7a8"
     },
     {
       "question_id": "b0754bcf-452e-4581-b87e-4060490e6a41",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix B states: 'Turnabout spaces shall also be provided at or within ___ mm of every dead-end corridor.' What is the correct distance?",
+      "text": "What minimum walkway clear width is required between the front ends of parked cars?",
       "options": [
         {
-          "id": "A",
-          "text": "1800 mm of every dead-end corridor"
+          "id": "a",
+          "text": "1200 mm."
         },
         {
-          "id": "B",
-          "text": "5000 mm of every dead-end corridor"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "3500 mm of every dead-end corridor"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "2500 mm of every dead-end corridor"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 Appendix B exact text: turnabout spaces within 3500 mm of every dead-end corridor.",
-        "explanation": "The 3500 mm proximity requirement ensures a wheelchair user can reverse a manageable distance to reach the turnabout if they inadvertently travel to the dead end. This is a direct quote from the BP 344 Appendix B text. The 1800 mm figure is the turnabout space clear dimension — not the dead-end proximity distance.",
-        "common_misconceptions": [
-          "Confusing the 1800 mm turnabout size with the 3500 mm proximity-to-dead-end distance",
-          "Using 5000 mm as the dead-end proximity — the specified distance is 3500 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: 1200 mm.",
       "explanation": "Turnabout spaces must be provided at or within 3500 mm of every dead-end corridor per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "remember",
@@ -198,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.858331+00:00",
       "content_hash": "sha256:68b5ed64edf63e08bad03dee48c157de020eb48e15824a01e52ce1131bf08cbf"
     },
     {
       "question_id": "7abf2dc6-24d0-4eac-84da-81868a926eb6",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A curb ramp at a loading bay drop-off for PWDs must meet two specifications under BP 344 Appendix B. What are the minimum width and maximum gradient?",
+      "text": "What is required when parking access walkways are raised?",
       "options": [
         {
-          "id": "A",
-          "text": "Minimum width 1500 mm; maximum gradient 1:15"
+          "id": "a",
+          "text": "Dropped sidewalks or curb ramps leading to the parking level."
         },
         {
-          "id": "B",
-          "text": "Minimum width 1200 mm; maximum gradient 1:12"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Minimum width 900 mm; maximum gradient 1:20"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Minimum width 900 mm; maximum gradient 1:15"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Curb ramp at loading bay: minimum 900 mm width, maximum 1:15 gradient per BP 344 Appendix B.",
-        "explanation": "These two values are explicitly stated in BP 344 Appendix B for curb ramps at loading bays (drop-off points for PWDs at vehicles). The 900 mm width is narrower than an accessible pathway (1500 mm) because curb ramps serve as transitional elements between the roadway and sidewalk, not as full pedestrian routes. The 1:15 maximum gradient is the steepest permitted for this element.",
-        "common_misconceptions": [
-          "Using 1200 mm as the curb ramp width — 1200 mm is the accessible ramp width, not the curb ramp width",
-          "Using 1:20 as the curb ramp gradient — the curb ramp maximum is 1:15, not 1:20"
-        ]
-      },
+      "rationale": "The checked local source supports: Dropped sidewalks or curb ramps leading to the parking level.",
       "explanation": "Curb ramp at loading bay: 900 mm minimum width, 1:15 maximum gradient per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "apply",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.870190+00:00",
       "content_hash": "sha256:f8db55ecf9872e0f08609ba8720219f9b04892d41fe053bb2b12196bbda15bb2"
     },
     {
       "question_id": "12e675d4-2b46-466d-afee-0e68a34b869f",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix B specifies the maximum cross gradient (lateral slope) for accessible sidewalks and walkways. What is this value?",
+      "text": "Where must accessible parking slots never be located?",
       "options": [
         {
-          "id": "A",
-          "text": "1:100 (1%) maximum cross gradient to prevent wheelchair drift"
+          "id": "a",
+          "text": "In ramped or sloping areas."
         },
         {
-          "id": "B",
-          "text": "1:50 (2%) maximum cross gradient, the same as an accessible route slope"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "1:20 (5%) maximum cross gradient, matching the preferred longitudinal ramp slope"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "1:200 (0.5%) maximum cross gradient for drainage purposes only"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Maximum cross gradient for accessible sidewalks: 1:100 (1%) per BP 344 Appendix B.",
-        "explanation": "A cross gradient steeper than 1:100 causes wheelchair users to fight lateral drift continuously, which is exhausting and hazardous. The 1:100 limit is tighter than the 1:50 cross-slope mentioned in some general route discussions. The longitudinal gradient ('along the length') is ideally not steeper than 1:20, but the cross gradient — perpendicular to travel direction — is limited to 1:100.",
-        "common_misconceptions": [
-          "Using 1:50 as the cross gradient limit — 1:50 appears in some accessible route contexts but BP 344 Appendix B specifies 1:100 for cross slope",
-          "Confusing longitudinal gradient (1:20 preferred) with cross gradient (1:100 maximum)"
-        ]
-      },
+      "rationale": "The checked local source supports: In ramped or sloping areas.",
       "explanation": "Maximum cross gradient for accessible sidewalks: 1:100 (1%) per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "understand",
@@ -300,45 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.867946+00:00",
       "content_hash": "sha256:9a6a214359c667cfce727fd99f61a1280f8da6a13b8bc20a5b5c713b25aa6952"
     },
     {
       "question_id": "e2bf9103-fb0c-489d-af58-a56d52f99afd",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A dropped sidewalk at a narrow crossing less than 1500 mm wide transitions between the roadway and the sidewalk. What minimum depth must the level base surface at the bottom of this dropped sidewalk provide?",
+      "text": "In multi-story indoor parking, where should accessible slots be placed?",
       "options": [
         {
-          "id": "A",
-          "text": "1200 mm depth at the bottom, matching the accessible ramp minimum width, ensuring compliance with accessibility standards"
+          "id": "a",
+          "text": "Next to accessible elevators or as close as possible to accessible pedestrian entrances."
         },
         {
-          "id": "B",
-          "text": "900 mm depth at the bottom, matching the accessible curb ramp minimum width, which is often used in urban settings for pedestrian safety"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "1500 mm depth at the bottom, creating a level maneuvering platform at the road crossing"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "1800 mm depth at the bottom, matching the turnabout and landing standard, providing ample space for wheelchair maneuverability"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Dropped sidewalk base at bottom: minimum 1500 mm depth for crossings/walkways under 1500 mm wide.",
-        "explanation": "The 1500 mm base depth at the bottom of a dropped sidewalk creates a level maneuvering platform where a wheelchair user can pause, orient, and confirm it is safe to cross. For narrow crossings under 1500 mm wide, the base depth equals the standard sidewalk width. Width of the base matches the crossing width. This prevents wheelchair users from being partially on the slope when at the road edge.",
-        "common_misconceptions": [
-          "Using 900 mm as the base depth — 900 mm is the curb ramp width at loading bays, not the dropped sidewalk base depth",
-          "Using 1800 mm as the base depth — this is the turnabout/landing dimension applied in different contexts"
-        ]
-      },
+      "rationale": "The checked local source supports: Next to accessible elevators or as close as possible to accessible pedestrian entrances.",
       "explanation": "Dropped sidewalk base minimum depth: 1500 mm at bottom for crossings under 1500 mm wide per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "analyze",
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.865650+00:00",
       "content_hash": "sha256:4c7d4885975c5d462e206bd330e6fa0a3839d54d2379bf33c80f597b39eb034c"
     },
     {
       "question_id": "92e3243b-2371-4e5e-99a5-327bf17b25f7",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Table A.1.1 specifies maximum run length and rise per run for a 1:15 ramp slope. What are these values?",
+      "text": "How should accessible parking be distributed when a building has multiple accessible entrances with adjacent parking?",
       "options": [
         {
-          "id": "A",
-          "text": "Maximum run 10.50 m and maximum rise 500 mm before an intermediate landing is required"
+          "id": "a",
+          "text": "Disperse slots and locate them closest to accessible entrances."
         },
         {
-          "id": "B",
-          "text": "Maximum run 15.00 m and maximum rise 750 mm before an intermediate landing is required"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Maximum run 10.50 m and maximum rise 700 mm before an intermediate landing is required"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Maximum run 12.00 m and maximum rise 700 mm before an intermediate landing is required"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "1:15 slope: maximum run 10.50 m, maximum rise 700 mm per BP 344 Table A.1.1.",
-        "explanation": "The relationship is verified mathematically: rise × slope ratio = run; 700 mm × 15 = 10,500 mm = 10.50 m. This is the explicit formula given in the article. The 15.0 m interval belongs to the gentler 1:20 slope, not 1:15. Any 1:15 ramp run exceeding 10.50 m or rise exceeding 700 mm requires an intermediate landing of at least 1800 mm.",
-        "common_misconceptions": [
-          "Applying the 15.0 m interval to the 1:15 slope — 15.0 m belongs to the 1:20 slope",
-          "Using 500 mm as the maximum rise for 1:15 — the limit is 700 mm (500 mm × 15 = 7.5 m, not the stated value)"
-        ]
-      },
+      "rationale": "The checked local source supports: Disperse slots and locate them closest to accessible entrances.",
       "explanation": "1:15 ramp: max run 10.50 m, max rise 700 mm (verified: 700 × 15 = 10,500 mm) per BP 344 Table A.1.1.",
       "code_citation": "BP 344 Appendix A Table A.1.1",
       "bloom_level": "remember",
@@ -402,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.853627+00:00",
       "content_hash": "sha256:d79a6ffbe95545f715da3c75dd820de771b2799aca82c44f275121b00b60be71"
     },
     {
       "question_id": "c876af45-0686-4448-bf76-87edf5087827",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "According to BP 344 Appendix B, what is the minimum width of an accessible sidewalk or walkway serving a single wheelchair, and what increases this requirement?",
+      "text": "For parking facilities not serving a particular building, what route rule applies?",
       "options": [
         {
-          "id": "A",
-          "text": "Minimum 900 mm for a single wheelchair; increases to 1500 mm where two wheelchairs must pass"
+          "id": "a",
+          "text": "Place accessible parking on the shortest accessible route to an accessible pedestrian entrance."
         },
         {
-          "id": "B",
-          "text": "Minimum 1200 mm for a single wheelchair; increases to 1500 mm where two wheelchairs must pass"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Minimum 1500 mm for a single wheelchair; increases to 2000 mm where two wheelchairs must pass"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Minimum 1500 mm for a single wheelchair; increases to 1800 mm where two wheelchairs must pass"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Sidewalk/walkway minimum: 1500 mm; two-wheelchair passing width: 1800 mm per BP 344 Appendix B.",
-        "explanation": "The 1500 mm baseline accommodates one wheelchair plus reasonable clearance to adjacent walls or landscaping. When a pathway is expected to have two-way wheelchair traffic, the width must increase to 1800 mm at passing points. This is confirmed directly from BP 344 Appendix B text.",
-        "common_misconceptions": [
-          "Using 1200 mm as the single-wheelchair sidewalk minimum — 1200 mm is the accessible ramp width",
-          "Using 2000 mm as the two-wheelchair passing width — 1800 mm is the specified value"
-        ]
-      },
+      "rationale": "The checked local source supports: Place accessible parking on the shortest accessible route to an accessible pedestrian entrance.",
       "explanation": "Sidewalk minimum: 1500 mm single wheelchair; 1800 mm where two wheelchairs must pass per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "remember",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.874569+00:00",
       "content_hash": "sha256:86036ded379b52fc3004e8e1642a429b86db0924efd59bf3c53026ec2db30564"
     },
     {
       "question_id": "10be362b-086f-45d8-97fe-15ec2a8b79c0",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 Appendix A, what is the minimum clear width of an accessible ramp?",
+      "text": "What size is the pole-mounted accessible parking sign?",
       "options": [
         {
-          "id": "A",
-          "text": "900 mm minimum clear width, matching the accessible door clear width"
+          "id": "a",
+          "text": "600 mm by 600 mm."
         },
         {
-          "id": "B",
-          "text": "1200 mm minimum clear width for all accessible ramps"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "1500 mm minimum clear width, matching the accessible sidewalk width"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "1000 mm minimum clear width for ramps serving a single building entrance"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 Appendix A specifies 1200 mm minimum clear width for accessible ramps.",
-        "explanation": "The 1200 mm clear ramp width is verified directly from BP 344 Appendix A. It is wider than accessible door clear width (900 mm) because the ramp must accommodate a wheelchair and allow the user to maintain contact with handrails on both sides simultaneously. The 1500 mm figure is the sidewalk/walkway minimum, not the ramp minimum.",
-        "common_misconceptions": [
-          "Using 900 mm (door clear width) as the ramp minimum — ramps need 1200 mm",
-          "Using 1500 mm (sidewalk width) as the ramp minimum — the ramp minimum is 1200 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: 600 mm by 600 mm.",
       "explanation": "Accessible ramp minimum clear width = 1200 mm per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "remember",
@@ -504,45 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.873477+00:00",
       "content_hash": "sha256:337da268cba2f1d7bc100c12632464f84f68106be97f350138157fa7cbc590dd"
     },
     {
       "question_id": "5bf6fe54-9056-4e9b-adce-e7d550c8b2c4",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible ramp has handrails on both sides per BP 344 Appendix A. At what two heights above the ramp surface must the handrails be set, and how far must they extend horizontally at the upper and lower ends?",
+      "text": "What minimum clear mounting height applies to pole-mounted accessible parking signage?",
       "options": [
         {
-          "id": "A",
-          "text": "750 mm and 900 mm above ramp surface; 300 mm horizontal extension at upper and lower ends"
+          "id": "a",
+          "text": "2200 mm from the parking floor."
         },
         {
-          "id": "B",
-          "text": "700 mm and 900 mm above ramp surface; 300 mm horizontal extension at upper and lower ends"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "700 mm and 900 mm above ramp surface; 150 mm horizontal extension at upper and lower ends"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "800 mm and 1000 mm above ramp surface; 300 mm horizontal extension at upper and lower ends"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ramp handrails: 700 mm and 900 mm above ramp surface; 300 mm horizontal extension at both ends.",
-        "explanation": "The dual-height handrail system (700 mm lower, 900 mm upper) serves users of different heights and those who use handrails for different support levels. The 300 mm horizontal extension beyond the ramp at top and bottom provides a gripping surface before the user steps onto or off the ramp slope, improving safety at transitions. Both heights are measured from the ramp surface (not from the floor level at the landing).",
-        "common_misconceptions": [
-          "Using 750 mm as the lower handrail height — the dual-ramp handrail heights are 700 mm and 900 mm (matching stair handrail heights)",
-          "Using 150 mm as the extension — the horizontal extension is 300 mm at both ends"
-        ]
-      },
+      "rationale": "The checked local source supports: 2200 mm from the parking floor.",
       "explanation": "Ramp handrails: 700 mm and 900 mm above ramp surface; 300 mm horizontal extension at both ends per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "evaluate",
@@ -555,45 +485,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:58.229367+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.859538+00:00",
       "content_hash": "sha256:84d5eeead3e58164442da4265aba9b9f100efcabeda96299d3e1877b9bf9ca06"
     },
     {
       "question_id": "30ee6dd5-3ba7-4d82-80c6-8c08133fd29b",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A dropped sidewalk at a narrow crossing less than 1500 mm wide transitions between the roadway and the sidewalk. What minimum depth must the level base surface at the bottom of this dropped sidewalk provide?",
+      "text": "How is the International Symbol of Access described in the checked source?",
       "options": [
         {
-          "id": "A",
-          "text": "1200 mm depth at the bottom, matching the accessible ramp minimum width and ensuring compliance with BP 344 standards"
+          "id": "a",
+          "text": "A white wheelchair figure on a blue background, with the figure facing right."
         },
         {
-          "id": "B",
-          "text": "900 mm depth at the bottom, matching the accessible curb ramp minimum width, which is sufficient for most pedestrian traffic"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "1500 mm depth at the bottom, creating a level maneuvering platform at the road crossing"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "1800 mm depth at the bottom, matching the turnabout and landing standard, providing ample space for wheelchair maneuvering"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Dropped sidewalk base at bottom: minimum 1500 mm depth for crossings/walkways under 1500 mm wide.",
-        "explanation": "The 1500 mm base depth at the bottom of a dropped sidewalk creates a level maneuvering platform where a wheelchair user can pause, orient, and confirm it is safe to cross. For narrow crossings under 1500 mm wide, the base depth equals the standard sidewalk width. Width of the base matches the crossing width. This prevents wheelchair users from being partially on the slope when at the road edge.",
-        "common_misconceptions": [
-          "Using 900 mm as the base depth — 900 mm is the curb ramp width at loading bays, not the dropped sidewalk base depth",
-          "Using 1800 mm as the base depth — this is the turnabout/landing dimension applied in different contexts"
-        ]
-      },
+      "rationale": "The checked local source supports: A white wheelchair figure on a blue background, with the figure facing right.",
       "explanation": "Dropped sidewalk base minimum depth: 1500 mm at bottom for crossings under 1500 mm wide per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "analyze",
@@ -606,45 +529,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.866810+00:00",
       "content_hash": "sha256:6420d3d9aaaf4dd16a48163577901320a1cf8dae0040804a10980d38cc03f87f"
     },
     {
       "question_id": "05e49a0d-17c6-44a0-af64-f90454cc30ef",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix B states: 'Turnabout spaces shall also be provided at or within ___ mm of every dead-end corridor.' What is the correct distance?",
+      "text": "What minimum clear corridor width supports wheelchair passage in the checked BP 344 source?",
       "options": [
         {
-          "id": "A",
-          "text": "1800 mm of every dead-end corridor"
+          "id": "a",
+          "text": "1500 mm."
         },
         {
-          "id": "B",
-          "text": "5000 mm of every dead-end corridor"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "3500 mm of every dead-end corridor"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "2500 mm of every dead-end corridor"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 Appendix B exact text: turnabout spaces within 3500 mm of every dead-end corridor.",
-        "explanation": "The 3500 mm proximity requirement ensures a wheelchair user can reverse a manageable distance to reach the turnabout if they inadvertently travel to the dead end. This is a direct quote from the BP 344 Appendix B text. The 1800 mm figure is the turnabout space clear dimension — not the dead-end proximity distance.",
-        "common_misconceptions": [
-          "Confusing the 1800 mm turnabout size with the 3500 mm proximity-to-dead-end distance",
-          "Using 5000 mm as the dead-end proximity — the specified distance is 3500 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: 1500 mm.",
       "explanation": "Turnabout spaces must be provided at or within 3500 mm of every dead-end corridor per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "remember",
@@ -657,45 +573,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.871295+00:00",
       "content_hash": "sha256:b0a8115113ff1aca4980dc004fab8134d3d4eb8c76ec7a4f0ba1ee6e14032956"
     },
     {
       "question_id": "65f2fadf-7420-497e-8407-9fb823269aa1",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A curb ramp at a loading bay drop-off for PWDs must meet two specifications under BP 344 Appendix B. What are the minimum width and maximum gradient?",
+      "text": "What size turnabout space is provided for wheelchairs?",
       "options": [
         {
-          "id": "A",
-          "text": "Minimum width 1500 mm; maximum gradient 1:15"
+          "id": "a",
+          "text": "1800 mm by 1800 mm."
         },
         {
-          "id": "B",
-          "text": "Minimum width 1200 mm; maximum gradient 1:12"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Minimum width 900 mm; maximum gradient 1:20"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Minimum width 900 mm; maximum gradient 1:15"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Curb ramp at loading bay: minimum 900 mm width, maximum 1:15 gradient per BP 344 Appendix B.",
-        "explanation": "These two values are explicitly stated in BP 344 Appendix B for curb ramps at loading bays (drop-off points for PWDs at vehicles). The 900 mm width is narrower than an accessible pathway (1500 mm) because curb ramps serve as transitional elements between the roadway and sidewalk, not as full pedestrian routes. The 1:15 maximum gradient is the steepest permitted for this element.",
-        "common_misconceptions": [
-          "Using 1200 mm as the curb ramp width — 1200 mm is the accessible ramp width, not the curb ramp width",
-          "Using 1:20 as the curb ramp gradient — the curb ramp maximum is 1:15, not 1:20"
-        ]
-      },
+      "rationale": "The checked local source supports: 1800 mm by 1800 mm.",
       "explanation": "Curb ramp at loading bay: 900 mm minimum width, 1:15 maximum gradient per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "apply",
@@ -708,45 +617,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.861942+00:00",
       "content_hash": "sha256:32078c937e3d054ebf9b811a9e19222f51ebf872c34c282c0a6b7739732c149e"
     },
     {
       "question_id": "635d2a24-56bb-4159-9304-dc8d9b31f7d8",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix B specifies the maximum cross gradient (lateral slope) for accessible sidewalks and walkways. What is this value?",
+      "text": "What passing or rest-space dimension applies in lengthy or busy sidewalks and walkways?",
       "options": [
         {
-          "id": "A",
-          "text": "1:100 (1%) maximum cross gradient to prevent wheelchair drift"
+          "id": "a",
+          "text": "A minimum clear dimension of 1800 mm."
         },
         {
-          "id": "B",
-          "text": "1:50 (2%) maximum cross gradient, the same as an accessible route slope"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "1:20 (5%) maximum cross gradient, matching the preferred longitudinal ramp slope"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "1:200 (0.5%) maximum cross gradient for drainage purposes only"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Maximum cross gradient for accessible sidewalks: 1:100 (1%) per BP 344 Appendix B.",
-        "explanation": "A cross gradient steeper than 1:100 causes wheelchair users to fight lateral drift continuously, which is exhausting and hazardous. The 1:100 limit is tighter than the 1:50 cross-slope mentioned in some general route discussions. The longitudinal gradient ('along the length') is ideally not steeper than 1:20, but the cross gradient — perpendicular to travel direction — is limited to 1:100.",
-        "common_misconceptions": [
-          "Using 1:50 as the cross gradient limit — 1:50 appears in some accessible route contexts but BP 344 Appendix B specifies 1:100 for cross slope",
-          "Confusing longitudinal gradient (1:20 preferred) with cross gradient (1:100 maximum)"
-        ]
-      },
+      "rationale": "The checked local source supports: A minimum clear dimension of 1800 mm.",
       "explanation": "Maximum cross gradient for accessible sidewalks: 1:100 (1%) per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "understand",
@@ -759,45 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.864380+00:00",
       "content_hash": "sha256:a2ec1469cc8754cdf4b3bf355aa6f9cc56157e8d34325560fe0d5bce89bcc134"
     },
     {
       "question_id": "39ac20e3-9f51-46aa-a6ec-868fa067f88c",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 Appendix A, what is the minimum clear width of an accessible ramp?",
+      "text": "What should be checked after confirming the parking slot dimensions?",
       "options": [
         {
-          "id": "A",
-          "text": "900 mm minimum clear width, matching the accessible door clear width"
+          "id": "a",
+          "text": "The continuous accessible route from the slot to the entrance."
         },
         {
-          "id": "B",
-          "text": "1200 mm minimum clear width for all accessible ramps"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "1500 mm minimum clear width, matching the accessible sidewalk width"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "1000 mm minimum clear width for ramps serving a single building entrance"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 Appendix A specifies 1200 mm minimum clear width for accessible ramps.",
-        "explanation": "The 1200 mm clear ramp width is verified directly from BP 344 Appendix A. It is wider than accessible door clear width (900 mm) because the ramp must accommodate a wheelchair and allow the user to maintain contact with handrails on both sides simultaneously. The 1500 mm figure is the sidewalk/walkway minimum, not the ramp minimum.",
-        "common_misconceptions": [
-          "Using 900 mm (door clear width) as the ramp minimum — ramps need 1200 mm",
-          "Using 1500 mm (sidewalk width) as the ramp minimum — the ramp minimum is 1200 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: The continuous accessible route from the slot to the entrance.",
       "explanation": "Accessible ramp minimum clear width = 1200 mm per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "remember",
@@ -810,45 +705,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.875689+00:00",
       "content_hash": "sha256:0adddef9b9ac8bfeaa0ba276d6e95a1f94b9f2d5e9ee6632b865f021246ca77c"
     },
     {
       "question_id": "18004174-f8d0-4025-8b0f-8e1db7e89a30",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A ramp total run exceeds 10.50 m. What must be provided, and what is the minimum length of each such element in the direction of travel?",
+      "text": "What does a PWD parking placard requirement support?",
       "options": [
         {
-          "id": "A",
-          "text": "Intermediate landings, each with a minimum length of 1800 mm in the direction of travel"
+          "id": "a",
+          "text": "Control and identification of vehicles using reserved accessible slots."
         },
         {
-          "id": "B",
-          "text": "Intermediate landings, each with a minimum length of 1200 mm in the direction of travel"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Rest alcoves on each side of the ramp, each 900 mm deep perpendicular to direction of travel"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Intermediate landings, each with a minimum length of 1500 mm in the direction of travel"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ramps exceeding 10.50 m total run require intermediate landings of minimum 1800 mm length.",
-        "explanation": "BP 344 Appendix A specifies that when a ramp total length exceeds 10.50 m, intermediate landings must be provided at intervals, each with a minimum length of 1800 mm in the direction of travel. This is the same 1800 mm used for top and bottom ramp landings — consistent across all ramp landing types. The 1200 mm figure is the ramp width, not the landing length.",
-        "common_misconceptions": [
-          "Using 1200 mm as the intermediate landing length — that is the ramp clear width",
-          "Using rest alcoves rather than full-width intermediate landings"
-        ]
-      },
+      "rationale": "The checked local source supports: Control and identification of vehicles using reserved accessible slots.",
       "explanation": "Ramps over 10.50 m require intermediate landings of minimum 1800 mm length per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "understand",
@@ -861,45 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.872386+00:00",
       "content_hash": "sha256:13233865973b48880281a91363327db64dca99895368e27897256bc323b2106f"
     },
     {
       "question_id": "3bbdbc9d-66a8-4bc4-b25c-ac5eec0a67e8",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Table A.1.1 specifies maximum run length and rise per run for a 1:15 ramp slope. What are these values?",
+      "text": "Which parking orientation is preferred whenever possible?",
       "options": [
         {
-          "id": "A",
-          "text": "Maximum run 10.50 m and maximum rise 500 mm before an intermediate landing is required"
+          "id": "a",
+          "text": "Perpendicular or angled to the road or circulation aisle."
         },
         {
-          "id": "B",
-          "text": "Maximum run 15.00 m and maximum rise 750 mm before an intermediate landing is required"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Maximum run 10.50 m and maximum rise 700 mm before an intermediate landing is required"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Maximum run 12.00 m and maximum rise 700 mm before an intermediate landing is required"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "1:15 slope: maximum run 10.50 m, maximum rise 700 mm per BP 344 Table A.1.1.",
-        "explanation": "The relationship is verified mathematically: rise × slope ratio = run; 700 mm × 15 = 10,500 mm = 10.50 m. This is the explicit formula given in the article. The 15.0 m interval belongs to the gentler 1:20 slope, not 1:15. Any 1:15 ramp run exceeding 10.50 m or rise exceeding 700 mm requires an intermediate landing of at least 1800 mm.",
-        "common_misconceptions": [
-          "Applying the 15.0 m interval to the 1:15 slope — 15.0 m belongs to the 1:20 slope",
-          "Using 500 mm as the maximum rise for 1:15 — the limit is 700 mm (500 mm × 15 = 7.5 m, not the stated value)"
-        ]
-      },
+      "rationale": "The checked local source supports: Perpendicular or angled to the road or circulation aisle.",
       "explanation": "1:15 ramp: max run 10.50 m, max rise 700 mm (verified: 700 × 15 = 10,500 mm) per BP 344 Table A.1.1.",
       "code_citation": "BP 344 Appendix A Table A.1.1",
       "bloom_level": "remember",
@@ -912,45 +793,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.860748+00:00",
       "content_hash": "sha256:740edbba0485057b2f8e395b0af0920043f4b776faae4d7deba954ac94ce063a"
     },
     {
       "question_id": "ebbe73cc-b82f-4054-b3bd-d7cda19fbdeb",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "According to BP 344 Appendix B, what is the minimum width of an accessible sidewalk or walkway serving a single wheelchair, and what increases this requirement?",
+      "text": "What should be provided between two or more adjacent accessible parking slots?",
       "options": [
         {
-          "id": "A",
-          "text": "Minimum 900 mm for a single wheelchair; increases to 1500 mm where two wheelchairs must pass"
+          "id": "a",
+          "text": "Pavement markings and fixed pole-mounted signage."
         },
         {
-          "id": "B",
-          "text": "Minimum 1200 mm for a single wheelchair; increases to 1500 mm where two wheelchairs must pass"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Minimum 1500 mm for a single wheelchair; increases to 2000 mm where two wheelchairs must pass"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Minimum 1500 mm for a single wheelchair; increases to 1800 mm where two wheelchairs must pass"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Sidewalk/walkway minimum: 1500 mm; two-wheelchair passing width: 1800 mm per BP 344 Appendix B.",
-        "explanation": "The 1500 mm baseline accommodates one wheelchair plus reasonable clearance to adjacent walls or landscaping. When a pathway is expected to have two-way wheelchair traffic, the width must increase to 1800 mm at passing points. This is confirmed directly from BP 344 Appendix B text.",
-        "common_misconceptions": [
-          "Using 1200 mm as the single-wheelchair sidewalk minimum — 1200 mm is the accessible ramp width",
-          "Using 2000 mm as the two-wheelchair passing width — 1800 mm is the specified value"
-        ]
-      },
+      "rationale": "The checked local source supports: Pavement markings and fixed pole-mounted signage.",
       "explanation": "Sidewalk minimum: 1500 mm single wheelchair; 1800 mm where two wheelchairs must pass per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "remember",
@@ -963,45 +837,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.856976+00:00",
       "content_hash": "sha256:b767aaf12da32c573770bf9c578165879c15d4fca33731e2408c1ca0d57a83f5"
     },
     {
       "question_id": "b95646e9-4758-4e65-8535-7e4955fefd12",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "An accessible ramp has handrails on both sides per BP 344 Appendix A. At what two heights above the ramp surface must the handrails be set, and how far must they extend horizontally at the upper and lower ends?",
+      "text": "Which condition makes a parking answer incomplete?",
       "options": [
         {
-          "id": "A",
-          "text": "750 mm and 900 mm above ramp surface; 300 mm horizontal extension at upper and lower ends"
+          "id": "a",
+          "text": "The slot is dimensioned but the route to the accessible entrance is not usable."
         },
         {
-          "id": "B",
-          "text": "700 mm and 900 mm above ramp surface; 300 mm horizontal extension at upper and lower ends"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "700 mm and 900 mm above ramp surface; 150 mm horizontal extension at upper and lower ends"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "800 mm and 1000 mm above ramp surface; 300 mm horizontal extension at upper and lower ends"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ramp handrails: 700 mm and 900 mm above ramp surface; 300 mm horizontal extension at both ends.",
-        "explanation": "The dual-height handrail system (700 mm lower, 900 mm upper) serves users of different heights and those who use handrails for different support levels. The 300 mm horizontal extension beyond the ramp at top and bottom provides a gripping surface before the user steps onto or off the ramp slope, improving safety at transitions. Both heights are measured from the ramp surface (not from the floor level at the landing).",
-        "common_misconceptions": [
-          "Using 750 mm as the lower handrail height — the dual-ramp handrail heights are 700 mm and 900 mm (matching stair handrail heights)",
-          "Using 150 mm as the extension — the horizontal extension is 300 mm at both ends"
-        ]
-      },
+      "rationale": "The checked local source supports: The slot is dimensioned but the route to the accessible entrance is not usable.",
       "explanation": "Ramp handrails: 700 mm and 900 mm above ramp surface; 300 mm horizontal extension at both ends per BP 344 Appendix A.",
       "code_citation": "BP 344 Appendix A",
       "bloom_level": "evaluate",
@@ -1014,45 +881,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.876754+00:00",
       "content_hash": "sha256:90a5f775eb3330389dda27e484147b43cd07de1f0eb54056bf6b9a88d0938be0"
     },
     {
       "question_id": "525f6a20-5cf5-4645-b346-9ddde18bb3e7",
       "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "BP 344 Appendix B requires rest and turn spaces on lengthy accessible pathways. What is the maximum spacing between these spaces, and what is their minimum clear dimension?",
+      "text": "What is the source-safe plan-check sequence for accessible parking?",
       "options": [
         {
-          "id": "A",
-          "text": "Maximum spacing 10000 mm between rest/turn spaces; minimum clear dimension 1500 mm"
+          "id": "a",
+          "text": "Check slot size, transfer area, walkway, slope, signage, elevator or entrance proximity, and route continuity."
         },
         {
-          "id": "B",
-          "text": "Maximum spacing 12000 mm between rest/turn spaces; minimum clear dimension 1800 mm"
+          "id": "b",
+          "text": "Place the slot in a ramped area."
         },
         {
-          "id": "C",
-          "text": "Maximum spacing 15000 mm between rest/turn spaces; minimum clear dimension 1800 mm"
+          "id": "c",
+          "text": "Use a standard slot with no transfer allowance."
         },
         {
-          "id": "D",
-          "text": "Maximum spacing 12000 mm between rest/turn spaces; minimum clear dimension 1500 mm"
+          "id": "d",
+          "text": "Locate it farthest from every accessible entrance."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Rest/turn spaces: maximum 12000 mm intervals; minimum 1800 mm clear dimension per BP 344 Appendix B.",
-        "explanation": "The 12,000 mm (12 m) maximum interval prevents a wheelchair user from being stranded on a long pathway with no place to turn around or rest. The 1800 mm minimum clear dimension is the same as the turnabout space size used in corridors. The 15000 mm figure belongs to the 1:20 ramp landing interval — a different element.",
-        "common_misconceptions": [
-          "Using 15000 mm as the rest space interval — that is the 1:20 ramp landing interval, not the walkway rest space interval",
-          "Using 1500 mm as the rest space minimum dimension — the required minimum is 1800 mm"
-        ]
-      },
+      "rationale": "The checked local source supports: Check slot size, transfer area, walkway, slope, signage, elevator or entrance proximity, and route continuity.",
       "explanation": "Walkway rest/turn spaces: maximum 12000 mm apart; minimum 1800 mm clear per BP 344 Appendix B.",
       "code_citation": "BP 344 Appendix B",
       "bloom_level": "remember",
@@ -1065,7 +925,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:48.122345+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.869074+00:00",
       "content_hash": "sha256:6a0a0a81b69f75cb885e14f3eb3314438fca9404031b222062dd0132a33852c1"
     }
   ]

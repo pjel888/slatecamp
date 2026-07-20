@@ -1,0 +1,970 @@
+{
+  "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:75c26a3217dbfe6e8be9b6f8a4bd8a8786a3865301f8436b7a4842509afba30e",
+  "question_count": 19,
+  "questions": [
+    {
+      "question_id": "e78040d1-3c4d-4446-a7c2-c8d5072d0849",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Public Service Counters and ATMs\", if a project requires 950 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "950 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "950 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "950 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "950 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 950 mm as the requirement. Context: 850 mm too high | **750 mm** | 12.6 |\r | 5 | Service counter | Single-level at 9...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:11.094257+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8b7008b7b2fe0295509af180cb6f7ad16a56222a5d6cc04c0df8e30a59d1f965"
+    },
+    {
+      "question_id": "cc0b0eca-6e40-40d8-8098-ab14a87d29c8",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the correct height range for ATM controls (keypads, screens) under BP 344 Section 12.3, and how does this differ from the ATM counter surface height?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Controls: 750–900 mm AFF; surface: 1000 mm — the surface is always higher than the controls"
+        },
+        {
+          "id": "B",
+          "text": "Controls: 900–1200 mm AFF; surface: 750 mm — the surface is lower than the controls"
+        },
+        {
+          "id": "C",
+          "text": "Controls: 900–1200 mm AFF; surface: 900 mm — both share the same minimum height"
+        },
+        {
+          "id": "D",
+          "text": "Controls: 1000–1400 mm AFF; surface: 750 mm — a wide range to accommodate standing users"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 12.3: controls at 900–1200 mm; Sec. 12.6: surface at 750 mm. The surface is lower.",
+        "explanation": "BP 344 distinguishes two separate height specifications: ATM controls (keypads, card slots, screens) must be within 900–1200 mm AFF (Sec. 12.3) — the seated forward reach zone. The ATM counter/surface (where a user might rest documents or hands) must be at 750 mm AFF (Sec. 12.6) — the universal accessible surface height. The surface is lower than the controls because it functions as a resting platform while the controls are reached by an upward-and-forward reach.",
+        "common_misconceptions": [
+          "Assuming both the surface and controls share the same 900–1200 mm range — the surface is distinctly lower at 750 mm",
+          "Confusing 900 mm as a single fixed height for all ATM elements"
+        ]
+      },
+      "explanation": "Surface (750 mm) and controls (900–1200 mm) are two separate specifications serving different functions.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.3, 12.6",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f35aa51c818dd9e2e875b26825c9026bdf43a7c0aea511bf7e7c215bd436c7c"
+    },
+    {
+      "question_id": "8dbb0e4d-b4c8-4c83-b242-a5cea1888beb",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A restaurant has 60 dining tables. Under BP 344 Section 16.4, what is the minimum number of tables that must meet accessibility requirements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 tables, applying a 5% accessible dining table requirement"
+        },
+        {
+          "id": "B",
+          "text": "6 tables, applying a 10% accessible dining table requirement"
+        },
+        {
+          "id": "C",
+          "text": "12 tables, requiring 20% of all tables to be accessible"
+        },
+        {
+          "id": "D",
+          "text": "All 60 tables must comply since public dining spaces cannot exclude any user"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 16.4 requires 10% of restaurant dining tables to be accessible: 10% × 60 = 6 tables.",
+        "explanation": "BP 344 Section 16.4 mandates that a minimum of 10% of restaurant dining tables be accessible. For 60 tables: 60 × 10% = 6 tables. These accessible tables must meet the full Section 16 specifications: 750 mm surface height, 700 mm knee clearance, 480 mm knee depth. Not all tables need to be accessible — the 10% threshold ensures proportional representation without requiring full conversion of the dining space.",
+        "common_misconceptions": [
+          "Applying the 2% private hotel room quota to restaurant tables — the dining table quota is a separate 10%",
+          "Assuming all tables must be accessible — only 10% is required"
+        ]
+      },
+      "explanation": "10% of dining tables must be accessible; 10% of 60 = 6 tables minimum.",
+      "code_citation": "BP 344 2024 IRR, Sec. 16.4",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be6f65d7d6e06ec1420864601e6459d85de16e78a35e6340ffd7ec3b704bbcc2"
+    },
+    {
+      "question_id": "9f3121c7-8a62-494f-82f6-8fdda8d2627d",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "BP 344 Section 12.5 requires that ATM controls must not require tight grasping, pinching, or twisting. What is the functional design principle behind this requirement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Controls must be operable with a closed fist or open palm to serve users with limited hand dexterity"
+        },
+        {
+          "id": "B",
+          "text": "Controls must be voice-activated to eliminate the need for any hand contact by users with disabilities"
+        },
+        {
+          "id": "C",
+          "text": "Controls must use touchscreen technology exclusively since tactile buttons require grip and pinch actions"
+        },
+        {
+          "id": "D",
+          "text": "Controls must be operated by proximity sensors to eliminate the need for direct contact altogether"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 12.5 requires controls operable with a closed fist or open palm — the lowest common denominator of hand function.",
+        "explanation": "BP 344 Section 12.5 prohibits controls that require tight grasping, pinching, or twisting because these actions demand precise motor control that users with arthritis, cerebral palsy, limb differences, or tremors may lack. The standard is that all controls must be operable with a closed fist or open palm — the baseline of functional hand use. This does not mandate touchscreens or voice activation; it mandates operational simplicity in physical interaction.",
+        "common_misconceptions": [
+          "Interpreting Sec. 12.5 as requiring touchscreens — the section governs operational ease, not specific technology",
+          "Believing the requirement eliminates all physical button use — buttons are allowed if operable without grip/pinch/twist"
+        ]
+      },
+      "explanation": "Closed-fist or open-palm operability is the standard — no grip, pinch, or twist required for users with limited dexterity.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.5",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4636f67a778d67a3784ef3f05a5d0afbc8f132ea2412317ec46d41280970829"
+    },
+    {
+      "question_id": "5f8f2841-06ab-4def-8d12-963170e922fa",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A bank branch plan shows a single-level service counter at 950 mm with 650 mm vertical knee clearance and an 800 mm-wide accessible section. Under BP 344 Sections 14.1–14.5, how many distinct violations does this counter have?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One violation — only the single-level configuration fails; all dimensions are compliant"
+        },
+        {
+          "id": "B",
+          "text": "Two violations — the single-level design and the 800 mm counter width both fail"
+        },
+        {
+          "id": "C",
+          "text": "Three violations — single-level design, inadequate knee clearance, and narrow counter width"
+        },
+        {
+          "id": "D",
+          "text": "Four violations — single-level design, knee clearance, counter width, and counter height all fail"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Three violations: single-level design (Sec. 14.1), 650 mm knee clearance below 700 mm minimum (Sec. 14.3), and 800 mm width below 900 mm minimum (Sec. 14.5).",
+        "explanation": "Violation 1: Single-level at 950 mm violates Sec. 14.1 — counters must be two-level with a lower tier at 750 mm for wheelchair users. Violation 2: 650 mm vertical knee clearance violates Sec. 14.3 — the minimum is 700 mm (standard wheelchair armrest height). Violation 3: 800 mm counter width violates Sec. 14.5 — the minimum accessible section width is 900 mm. The counter height of 950 mm is compliant as the upper tier (950–1100 mm range is correct), so height alone is not a violation.",
+        "common_misconceptions": [
+          "Marking the 950 mm counter height as a violation — it is within the acceptable upper-tier range of 950–1100 mm",
+          "Counting single-level design and height as the same violation — they address different code provisions"
+        ]
+      },
+      "explanation": "Three separate provisions are violated; the 950 mm counter height itself is compliant as an upper tier.",
+      "code_citation": "BP 344 2024 IRR, Sec. 14.1, 14.3, 14.5",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be03c56e8b949e992b25a469bedb77f9ca9c2f475c7a789e666d24f4d85ed32f"
+    },
+    {
+      "question_id": "ae3c5292-a81f-418d-a8f7-67d8043e36f7",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 Section 12.9, what additional accessibility feature is required at ATMs beyond the physical and sensory access specifications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A priority queue system that electronically signals when an accessible ATM becomes available"
+        },
+        {
+          "id": "B",
+          "text": "An interphone or call button allowing the user to request staff assistance directly"
+        },
+        {
+          "id": "C",
+          "text": "A dedicated accessible ATM area separated from the general banking floor for privacy"
+        },
+        {
+          "id": "D",
+          "text": "A seating area with a minimum of two chairs positioned within 3 meters of the ATM"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 12.9 requires an interphone or call button at ATMs for requesting staff assistance.",
+        "explanation": "BP 344 Section 12.9 requires an interphone or call button at accessible ATMs. This supplements physical accessibility features by providing a direct communication link to staff for users who encounter equipment malfunctions, need assistance with a transaction, or face unexpected barriers. The call button must itself be within the accessible reach range and operable without tight grip or twisting, consistent with Sec. 12.5.",
+        "common_misconceptions": [
+          "Assuming Braille, tactile, and audio features alone constitute complete ATM accessibility — the call button is an additional requirement",
+          "Confusing the interphone requirement with general building emergency call systems"
+        ]
+      },
+      "explanation": "An interphone/call button is required in addition to Braille, tactile, and audio features at all accessible ATMs.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.9",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8bbb15bdb6bca1f0ce38bae901ef4e316ccd303512b1f94814125019e0804eef"
+    },
+    {
+      "question_id": "8716ef14-6d97-4f7b-8b7d-285914e03193",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A building official inspects an accessible restaurant and finds: (1) a circulation path in front of food stalls at 1200 mm wide, and (2) access routes to tables at 800 mm wide. Under BP 344 Sections 16.2 and 16.3, which elements are non-compliant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both are non-compliant: stall path requires 1500 mm and table routes require 900 mm minimum"
+        },
+        {
+          "id": "B",
+          "text": "Only the stall circulation path is non-compliant; 800 mm table routes are within tolerance"
+        },
+        {
+          "id": "C",
+          "text": "Only the table access route is non-compliant; 1200 mm stall circulation paths are acceptable"
+        },
+        {
+          "id": "D",
+          "text": "Neither is non-compliant; both dimensions are within the acceptable accessible circulation range"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both violate: Sec. 16.2 requires 1500 mm for stall paths; Sec. 16.3 requires 900 mm for table routes.",
+        "explanation": "BP 344 Section 16.2 requires a minimum 1500 mm wide circulation path in front of food stalls — 1200 mm is 300 mm below the minimum. BP 344 Section 16.3 requires minimum 900 mm access route width to dining tables — 800 mm is 100 mm below the minimum. Both are separately deficient. The 1500 mm stall path allows a wheelchair to pass a standing person in front of food stalls; the 900 mm table route is the baseline wheelchair-only passage width.",
+        "common_misconceptions": [
+          "Assuming 1200 mm is sufficient for circulation paths — 1500 mm is required in front of food stalls",
+          "Treating 800 mm as an acceptable tolerance below 900 mm — no tolerance is permitted for minimum widths"
+        ]
+      },
+      "explanation": "Stall path: 1500 mm required (1200 mm fails); table route: 900 mm required (800 mm fails) — both are violations.",
+      "code_citation": "BP 344 2024 IRR, Sec. 16.2, 16.3",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e02c6a0303ca25dbf1fb7f86fa5bd6897fd2bbdbaa64d39efbc0a07d0230427"
+    },
+    {
+      "question_id": "2460e58f-257d-4c2c-922e-b494ea64364e",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A two-level service counter under BP 344 Section 14 has a lower surface at 750 mm. What is the required vertical knee clearance below this lower surface, and how deep must the knee space be?",
+      "options": [
+        {
+          "id": "A",
+          "text": "650 mm vertical clearance and 400 mm depth, based on minimum wheelchair proportions"
+        },
+        {
+          "id": "B",
+          "text": "700 mm vertical clearance and 480 mm depth, matching the universal knee space standard"
+        },
+        {
+          "id": "C",
+          "text": "750 mm vertical clearance and 480 mm depth, equal to the counter surface height"
+        },
+        {
+          "id": "D",
+          "text": "700 mm vertical clearance and 600 mm depth, providing extra clearance for power wheelchairs"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 14.3: 700 mm vertical clearance and 480 mm depth are the knee space standards.",
+        "explanation": "BP 344 Section 14.3 specifies: (1) 700 mm vertical clearance — matching the height of standard wheelchair armrests so they slide under the counter; (2) 480 mm depth — allowing wheelchair footrests (which extend ~400–450 mm from the seat) to tuck fully under the counter, enabling the user's chest to reach the transaction surface. These dimensions appear consistently across counters (Sec. 14), workstations (Sec. 15), and restaurant tables (Sec. 16).",
+        "common_misconceptions": [
+          "Selecting 650 mm vertical clearance, which is too low for standard wheelchair armrests (~700–750 mm high)",
+          "Confusing the counter surface height (750 mm) with the knee clearance height (700 mm)"
+        ]
+      },
+      "explanation": "700 mm vertical and 480 mm deep are the universal knee space dimensions across counters, workstations, and dining tables.",
+      "code_citation": "BP 344 2024 IRR, Sec. 14.3",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5e029d1e3b96afbb783f1f22c233ad09dd5223a980d5ce0a792da0009207f280"
+    },
+    {
+      "question_id": "8d860ef2-c1a4-4350-8183-a7ad364f596b",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the minimum clear floor space required in front of an accessible ATM under BP 344 Section 12.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1200 mm × 1200 mm, the standard turning circle for single-user approach"
+        },
+        {
+          "id": "B",
+          "text": "1500 mm × 1500 mm, the standard approach clear floor space for service counters"
+        },
+        {
+          "id": "C",
+          "text": "1800 mm × 1800 mm, the larger maneuvering envelope needed for ATM lateral movement"
+        },
+        {
+          "id": "D",
+          "text": "2000 mm × 2000 mm, providing space for both the wheelchair user and an assistant"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 12.1 requires 1800 × 1800 mm clear floor space in front of ATMs.",
+        "explanation": "BP 344 Section 12.1 mandates 1800 × 1800 mm clear floor space in front of ATMs. This is larger than the 1500 × 1500 mm required at service counters (Sec. 14.4) because ATM use involves lateral movement — inserting cards, reaching a keypad, retrieving cash, pocketing a receipt — requiring a bigger maneuvering envelope. Service counters involve primarily forward approach, so the smaller 1500 mm square is sufficient.",
+        "common_misconceptions": [
+          "Selecting 1500 × 1500 mm, which applies to service counters — not ATMs",
+          "Treating all accessible clear floor spaces as equivalent regardless of fixture type"
+        ]
+      },
+      "explanation": "ATMs need 1800 × 1800 mm (lateral movement required); service counters need only 1500 × 1500 mm (forward approach).",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d686e90cd65f497f65e20633e9f462b8e272ebc6c48a0e8567ce1b0c450972f8"
+    },
+    {
+      "question_id": "4827f559-7b14-4fb0-9282-e781d4880000",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "According to BP 344 Section 12.2, what three modes of access must every accessible ATM provide simultaneously?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Visual screen, audio headphone jack, and enlarged print keypad for low-vision users"
+        },
+        {
+          "id": "B",
+          "text": "Braille labeling, tactile labeling, and audio output — covering blind, low-vision, and Deaf-blind users"
+        },
+        {
+          "id": "C",
+          "text": "Audio output, vibrating alerts, and color-coded buttons for users with different disabilities"
+        },
+        {
+          "id": "D",
+          "text": "Braille labeling, high-contrast display, and voice-activated controls for comprehensive access"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 12.2 requires Braille labeling, tactile labeling, and audio output at all accessible ATMs.",
+        "explanation": "BP 344 Section 12.2 requires all three modes: (1) Braille labeling — for blind users who cannot see; (2) tactile labeling — for low-vision users who can feel but not fully see; (3) audio output — for blind and low-vision users navigating menus. All three coexist because no single mode serves every user: Deaf-blind users rely on Braille alone; blind users need audio; low-vision users use tactile cues. Omitting any one mode fails users who depend on it.",
+        "common_misconceptions": [
+          "Assuming audio alone is sufficient for blind users — Braille is essential for Deaf-blind users",
+          "Treating vibrating alerts as a required ATM feature — this applies to lodging alarms, not ATMs"
+        ]
+      },
+      "explanation": "Three modalities are mandatory: Braille for Deaf-blind, tactile for low-vision, audio for blind users.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27e9a2b5d38642a79a9daac5a556a21130b7c0aa16031d82de2b3e5a5550b385"
+    },
+    {
+      "question_id": "24cfa28a-84e8-4955-ab84-6c2477d5c332",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect specifies a workstation under BP 344 Section 15. Which combination of dimensions is entirely correct for a compliant accessible workstation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 mm wide, 700 mm legroom height, 480 mm depth — matching the universal accessible knee space standard"
+        },
+        {
+          "id": "B",
+          "text": "750 mm wide, 700 mm legroom height, 400 mm depth — matching minimum wheelchair proportions, ensuring accessibility"
+        },
+        {
+          "id": "C",
+          "text": "900 mm wide, 750 mm legroom height, 480 mm depth — equal to the counter surface height, providing ergonomic comfort"
+        },
+        {
+          "id": "D",
+          "text": "1000 mm wide, 700 mm legroom height, 600 mm depth — providing generously accessible proportions, exceeding standard requirements"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 15.3–15.4: workstation width 900 mm, legroom height 700 mm, depth 480 mm.",
+        "explanation": "BP 344 Section 15.3 specifies workstation width at 900 mm minimum, and Section 15.4 specifies legroom height at 700 mm and depth at 480 mm. These are identical to the counter knee space specifications in Sec. 14 and the dining table specifications in Sec. 16 — the same universal knee space standard (700 mm × 480 mm) applies across all three fixture types, making this one of the most consistent dimensional patterns in the accessibility code.",
+        "common_misconceptions": [
+          "Selecting 750 mm wide, which is the surface height — not the workstation width",
+          "Selecting 750 mm as legroom height, confusing it with the surface height"
+        ]
+      },
+      "explanation": "900 mm wide / 700 mm legroom / 480 mm depth — the universal knee space standard repeated across counters, workstations, and tables.",
+      "code_citation": "BP 344 2024 IRR, Sec. 15.3–15.4",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.813058+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5335839e50fc2eed3cff4e845678aef404648d6c526ef3f32f61ef912cba14ec"
+    },
+    {
+      "question_id": "fbf208c5-7caf-4a61-a214-a9c10ce9be09",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "BP 344 Section 12.5 requires that ATM controls must not require tight grasping, pinching, or twisting. What is the functional design principle behind this requirement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Controls must be operable with a closed fist or open palm to serve users with limited hand dexterity"
+        },
+        {
+          "id": "B",
+          "text": "Controls must be voice-activated to eliminate the need for any hand contact by users with disabilities"
+        },
+        {
+          "id": "C",
+          "text": "Controls must use touchscreen technology exclusively since tactile buttons require grip and pinch actions"
+        },
+        {
+          "id": "D",
+          "text": "Controls must be operated by proximity sensors to eliminate the need for direct contact altogether"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 12.5 requires controls operable with a closed fist or open palm — the lowest common denominator of hand function.",
+        "explanation": "BP 344 Section 12.5 prohibits controls that require tight grasping, pinching, or twisting because these actions demand precise motor control that users with arthritis, cerebral palsy, limb differences, or tremors may lack. The standard is that all controls must be operable with a closed fist or open palm — the baseline of functional hand use. This does not mandate touchscreens or voice activation; it mandates operational simplicity in physical interaction.",
+        "common_misconceptions": [
+          "Interpreting Sec. 12.5 as requiring touchscreens — the section governs operational ease, not specific technology",
+          "Believing the requirement eliminates all physical button use — buttons are allowed if operable without grip/pinch/twist"
+        ]
+      },
+      "explanation": "Closed-fist or open-palm operability is the standard — no grip, pinch, or twist required for users with limited dexterity.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.5",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.383681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fbde2255f0bdfd491383ea835f0507d989f24b4ebe4aa184147327c990517c1c"
+    },
+    {
+      "question_id": "7bead9ef-3cfc-4d92-811e-9159aba5bd8c",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 Section 12.9, what additional accessibility feature is required at ATMs beyond the physical and sensory access specifications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A priority queue system that electronically signals when an accessible ATM becomes available"
+        },
+        {
+          "id": "B",
+          "text": "An interphone or call button allowing the user to request staff assistance directly"
+        },
+        {
+          "id": "C",
+          "text": "A dedicated accessible ATM area separated from the general banking floor for privacy"
+        },
+        {
+          "id": "D",
+          "text": "A seating area with a minimum of two chairs positioned within 3 meters of the ATM"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 12.9 requires an interphone or call button at ATMs for requesting staff assistance.",
+        "explanation": "BP 344 Section 12.9 requires an interphone or call button at accessible ATMs. This supplements physical accessibility features by providing a direct communication link to staff for users who encounter equipment malfunctions, need assistance with a transaction, or face unexpected barriers. The call button must itself be within the accessible reach range and operable without tight grip or twisting, consistent with Sec. 12.5.",
+        "common_misconceptions": [
+          "Assuming Braille, tactile, and audio features alone constitute complete ATM accessibility — the call button is an additional requirement",
+          "Confusing the interphone requirement with general building emergency call systems"
+        ]
+      },
+      "explanation": "An interphone/call button is required in addition to Braille, tactile, and audio features at all accessible ATMs.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.9",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.383681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:346c584361853efb291ae3131f13d7d8ca4d19fa96f60a5278c5c218e2d6d84d"
+    },
+    {
+      "question_id": "afa12d5f-9bc3-4879-bfd6-17a4ababa350",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A building official inspects an accessible restaurant and finds: (1) a circulation path in front of food stalls at 1200 mm wide, and (2) access routes to tables at 800 mm wide. Under BP 344 Sections 16.2 and 16.3, which elements are non-compliant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both are non-compliant: stall path requires 1500 mm and table routes require 900 mm minimum"
+        },
+        {
+          "id": "B",
+          "text": "Only the stall circulation path is non-compliant; 800 mm table routes are within tolerance"
+        },
+        {
+          "id": "C",
+          "text": "Only the table access route is non-compliant; 1200 mm stall circulation paths are acceptable"
+        },
+        {
+          "id": "D",
+          "text": "Neither is non-compliant; both dimensions are within the acceptable accessible circulation range"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both violate: Sec. 16.2 requires 1500 mm for stall paths; Sec. 16.3 requires 900 mm for table routes.",
+        "explanation": "BP 344 Section 16.2 requires a minimum 1500 mm wide circulation path in front of food stalls — 1200 mm is 300 mm below the minimum. BP 344 Section 16.3 requires minimum 900 mm access route width to dining tables — 800 mm is 100 mm below the minimum. Both are separately deficient. The 1500 mm stall path allows a wheelchair to pass a standing person in front of food stalls; the 900 mm table route is the baseline wheelchair-only passage width.",
+        "common_misconceptions": [
+          "Assuming 1200 mm is sufficient for circulation paths — 1500 mm is required in front of food stalls",
+          "Treating 800 mm as an acceptable tolerance below 900 mm — no tolerance is permitted for minimum widths"
+        ]
+      },
+      "explanation": "Stall path: 1500 mm required (1200 mm fails); table route: 900 mm required (800 mm fails) — both are violations.",
+      "code_citation": "BP 344 2024 IRR, Sec. 16.2, 16.3",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.383681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c42aa29ac023106486d9a3915627e78c1a2446dfcfd5ffb16a441f2dd7e670ee"
+    },
+    {
+      "question_id": "c84ad42e-ac0e-4418-af75-7a93aea19047",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect specifies a workstation under BP 344 Section 15. Which combination of dimensions is entirely correct for a compliant accessible workstation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 mm wide, 700 mm legroom height, 480 mm depth — matching the universal accessible knee space standard"
+        },
+        {
+          "id": "B",
+          "text": "750 mm wide, 700 mm legroom height, 400 mm depth — matching minimum wheelchair proportions, but not compliant with BP 344 Section 15"
+        },
+        {
+          "id": "C",
+          "text": "900 mm wide, 750 mm legroom height, 480 mm depth — equal to the counter surface height, which is not specified in BP 344"
+        },
+        {
+          "id": "D",
+          "text": "1000 mm wide, 700 mm legroom height, 600 mm depth — providing generously accessible proportions, exceeding typical requirements"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 15.3–15.4: workstation width 900 mm, legroom height 700 mm, depth 480 mm.",
+        "explanation": "BP 344 Section 15.3 specifies workstation width at 900 mm minimum, and Section 15.4 specifies legroom height at 700 mm and depth at 480 mm. These are identical to the counter knee space specifications in Sec. 14 and the dining table specifications in Sec. 16 — the same universal knee space standard (700 mm × 480 mm) applies across all three fixture types, making this one of the most consistent dimensional patterns in the accessibility code.",
+        "common_misconceptions": [
+          "Selecting 750 mm wide, which is the surface height — not the workstation width",
+          "Selecting 750 mm as legroom height, confusing it with the surface height"
+        ]
+      },
+      "explanation": "900 mm wide / 700 mm legroom / 480 mm depth — the universal knee space standard repeated across counters, workstations, and tables.",
+      "code_citation": "BP 344 2024 IRR, Sec. 15.3–15.4",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.383681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e6c2916d119ce5a1f20ba5e88b8561e0bc29f08fd96ed3d1d4482d12c497b1c1"
+    },
+    {
+      "question_id": "77e5ee93-628f-483e-a495-947acc069e48",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A bank branch plan shows a single-level service counter at 950 mm with 650 mm vertical knee clearance and an 800 mm-wide accessible section. Under BP 344 Sections 14.1–14.5, how many distinct violations does this counter have?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One violation — only the single-level configuration fails; all dimensions are compliant"
+        },
+        {
+          "id": "B",
+          "text": "Two violations — the single-level design and the 800 mm counter width both fail"
+        },
+        {
+          "id": "C",
+          "text": "Three violations — single-level design, inadequate knee clearance, and narrow counter width"
+        },
+        {
+          "id": "D",
+          "text": "Four violations — single-level design, knee clearance, counter width, and counter height all fail"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Three violations: single-level design (Sec. 14.1), 650 mm knee clearance below 700 mm minimum (Sec. 14.3), and 800 mm width below 900 mm minimum (Sec. 14.5).",
+        "explanation": "Violation 1: Single-level at 950 mm violates Sec. 14.1 — counters must be two-level with a lower tier at 750 mm for wheelchair users. Violation 2: 650 mm vertical knee clearance violates Sec. 14.3 — the minimum is 700 mm (standard wheelchair armrest height). Violation 3: 800 mm counter width violates Sec. 14.5 — the minimum accessible section width is 900 mm. The counter height of 950 mm is compliant as the upper tier (950–1100 mm range is correct), so height alone is not a violation.",
+        "common_misconceptions": [
+          "Marking the 950 mm counter height as a violation — it is within the acceptable upper-tier range of 950–1100 mm",
+          "Counting single-level design and height as the same violation — they address different code provisions"
+        ]
+      },
+      "explanation": "Three separate provisions are violated; the 950 mm counter height itself is compliant as an upper tier.",
+      "code_citation": "BP 344 2024 IRR, Sec. 14.1, 14.3, 14.5",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.383681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:94d22df4a63aa1fce66517b86898d7be87e42723bb9bc372705d6c4655947658"
+    },
+    {
+      "question_id": "06d18bbd-744c-4363-af2e-5f77a4f96cc8",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A two-level service counter under BP 344 Section 14 has a lower surface at 750 mm. What is the required vertical knee clearance below this lower surface, and how deep must the knee space be?",
+      "options": [
+        {
+          "id": "A",
+          "text": "650 mm vertical clearance and 400 mm depth, based on minimum wheelchair proportions"
+        },
+        {
+          "id": "B",
+          "text": "700 mm vertical clearance and 480 mm depth, matching the universal knee space standard"
+        },
+        {
+          "id": "C",
+          "text": "750 mm vertical clearance and 480 mm depth, equal to the counter surface height"
+        },
+        {
+          "id": "D",
+          "text": "700 mm vertical clearance and 600 mm depth, providing extra clearance for power wheelchairs"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 14.3: 700 mm vertical clearance and 480 mm depth are the knee space standards.",
+        "explanation": "BP 344 Section 14.3 specifies: (1) 700 mm vertical clearance — matching the height of standard wheelchair armrests so they slide under the counter; (2) 480 mm depth — allowing wheelchair footrests (which extend ~400–450 mm from the seat) to tuck fully under the counter, enabling the user's chest to reach the transaction surface. These dimensions appear consistently across counters (Sec. 14), workstations (Sec. 15), and restaurant tables (Sec. 16).",
+        "common_misconceptions": [
+          "Selecting 650 mm vertical clearance, which is too low for standard wheelchair armrests (~700–750 mm high)",
+          "Confusing the counter surface height (750 mm) with the knee clearance height (700 mm)"
+        ]
+      },
+      "explanation": "700 mm vertical and 480 mm deep are the universal knee space dimensions across counters, workstations, and dining tables.",
+      "code_citation": "BP 344 2024 IRR, Sec. 14.3",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.383681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d29ff4b0919fb0b307f4c3abcc60607e0b02cc5c493497aaee09952bd6ed1220"
+    },
+    {
+      "question_id": "098fa62c-1fcf-40e3-b3d5-3a858c4178e9",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the correct height range for ATM controls (keypads, screens) under BP 344 Section 12.3, and how does this differ from the ATM counter surface height?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Controls: 750–900 mm AFF; surface: 1000 mm — the surface is always higher than the controls"
+        },
+        {
+          "id": "B",
+          "text": "Controls: 900–1200 mm AFF; surface: 750 mm — the surface is lower than the controls"
+        },
+        {
+          "id": "C",
+          "text": "Controls: 900–1200 mm AFF; surface: 900 mm — both share the same minimum height"
+        },
+        {
+          "id": "D",
+          "text": "Controls: 1000–1400 mm AFF; surface: 750 mm — a wide range to accommodate standing users"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 12.3: controls at 900–1200 mm; Sec. 12.6: surface at 750 mm. The surface is lower.",
+        "explanation": "BP 344 distinguishes two separate height specifications: ATM controls (keypads, card slots, screens) must be within 900–1200 mm AFF (Sec. 12.3) — the seated forward reach zone. The ATM counter/surface (where a user might rest documents or hands) must be at 750 mm AFF (Sec. 12.6) — the universal accessible surface height. The surface is lower than the controls because it functions as a resting platform while the controls are reached by an upward-and-forward reach.",
+        "common_misconceptions": [
+          "Assuming both the surface and controls share the same 900–1200 mm range — the surface is distinctly lower at 750 mm",
+          "Confusing 900 mm as a single fixed height for all ATM elements"
+        ]
+      },
+      "explanation": "Surface (750 mm) and controls (900–1200 mm) are two separate specifications serving different functions.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.3, 12.6",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.383681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cb8a36bdced89f89330a9c3c78616add619102be530786643c13befbe7d13bd4"
+    },
+    {
+      "question_id": "ae03fa30-5675-4c8a-983f-15fe2ae5c505",
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A restaurant has 60 dining tables. Under BP 344 Section 16.4, what is the minimum number of tables that must meet accessibility requirements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 tables, applying a 5% accessible dining table requirement"
+        },
+        {
+          "id": "B",
+          "text": "6 tables, applying a 10% accessible dining table requirement"
+        },
+        {
+          "id": "C",
+          "text": "12 tables, requiring 20% of all tables to be accessible"
+        },
+        {
+          "id": "D",
+          "text": "All 60 tables must comply since public dining spaces cannot exclude any user"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sec. 16.4 requires 10% of restaurant dining tables to be accessible: 10% × 60 = 6 tables.",
+        "explanation": "BP 344 Section 16.4 mandates that a minimum of 10% of restaurant dining tables be accessible. For 60 tables: 60 × 10% = 6 tables. These accessible tables must meet the full Section 16 specifications: 750 mm surface height, 700 mm knee clearance, 480 mm knee depth. Not all tables need to be accessible — the 10% threshold ensures proportional representation without requiring full conversion of the dining space.",
+        "common_misconceptions": [
+          "Applying the 2% private hotel room quota to restaurant tables — the dining table quota is a separate 10%",
+          "Assuming all tables must be accessible — only 10% is required"
+        ]
+      },
+      "explanation": "10% of dining tables must be accessible; 10% of 60 = 6 tables minimum.",
+      "code_citation": "BP 344 2024 IRR, Sec. 16.4",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:46.383681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c38d33a74c111a894c38041089b5d2661a01fa2a3a6e9601ebc4eb722069750d"
+    }
+  ]
+}

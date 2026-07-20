@@ -1,0 +1,518 @@
+{
+  "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:69a95109cb424d7eff709ecd786b8dd9f44362073a111a3fc533d423229e1903",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "9c9927a6-1272-4c52-8ae9-2eea291e6c52",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "A proposed 200-unit residential subdivision requires water supply assessment. The existing water main has capacity to serve 120 units at standard consumption rates. What is the primary infrastructure implication?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The development cannot proceed unless the developer invests in augmenting the water system to serve all 200 units"
+        },
+        {
+          "id": "b",
+          "text": "The developer must design water storage facilities (elevated tank or underground reservoir) to bridge the capacity gap"
+        },
+        {
+          "id": "c",
+          "text": "The local water utility is solely responsible for upgrading its infrastructure, not the developer"
+        },
+        {
+          "id": "d",
+          "text": "The subdivision may proceed at reduced density (120 units) without developer contribution"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "When existing infrastructure cannot support projected demand, the developer must either augment infrastructure or negotiate infrastructure upgrade contributions. This is standard practice for ensuring utility adequacy.",
+        "b": "Storage is a partial measure but does not address the underlying main capacity shortage.",
+        "c": "While utilities have responsibility for regional systems, developments triggering infrastructure needs create shared obligation.",
+        "d": "Reducing density is not a standard solution — the assessment goal is to identify what infrastructure is needed.",
+        "correct": "When existing infrastructure cannot support projected demand, the developer must either augment infrastructure or negotiate infrastructure upgrade contributions. This is standard practice for ensuring utility adequacy.",
+        "takeaway": "Infrastructure assessment creates developer obligations when systems are insufficient for the proposed scale."
+      },
+      "explanation": null,
+      "code_citation": "Site Planning Infrastructure Assessment Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca405fbf12ab798997c0a4f6bc4a3a46bfbc5d3f2fd50d91a33e2426a4f36cad"
+    },
+    {
+      "question_id": "2232528d-2b14-424f-b81c-1d080f7b97ad",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "A site plan reveals that proposed buildings will discharge wastewater into a 15-meter-wide river 200 meters downstream of the site. The engineer confirms that the receiving river is the primary water source for a municipality 3 km downstream. Considering RA 9275 and responsible site planning practice, which statement most accurately describes the infrastructure requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Direct discharge is permissible because the river is large enough (15 meters wide) to assimilate wastewater, assuming no adverse environmental impact"
+        },
+        {
+          "id": "b",
+          "text": "An on-site sewage treatment plant (STP) must be designed to treat wastewater to acceptable standards before discharge, protecting the downstream water supply"
+        },
+        {
+          "id": "c",
+          "text": "The project may proceed with septic tanks if the distance to the river (200 meters) exceeds the PD 1067 easement, provided additional environmental assessments are conducted"
+        },
+        {
+          "id": "d",
+          "text": "Wastewater must be trucked off-site for treatment at a distant facility, ensuring no contamination of local water sources"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "River size does not justify untreated discharge; RA 9275 requires treatment regardless.",
+        "b": "RA 9275 mandates treatment of wastewater from commercial and high-density residential projects. The downstream municipal water supply is at risk; responsible site design requires on-site STP to achieve acceptable discharge quality, protecting both the river and the downstream community.",
+        "c": "PD 1067 easement applies to structures near water, not to septic tank adequacy. Septic tanks are not appropriate for commercial/high-density sites.",
+        "d": "Off-site trucking is impractical and not a standard solution when on-site STP is feasible.",
+        "correct": "RA 9275 mandates treatment of wastewater from commercial and high-density residential projects. The downstream municipal water supply is at risk; responsible site design requires on-site STP to achieve acceptable discharge quality, protecting both the river and the downstream community.",
+        "takeaway": "RA 9275 requires STP for commercial and high-density residential, especially when receiving waters are drinking water sources."
+      },
+      "explanation": null,
+      "code_citation": "RA 9275 (Philippine Clean Water Act, 2004); Site Planning Best Practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4cfe2b72531ca3e78b8a93fa6de0a7e86f728ed4238b0bc0cbdd120e57a8e9d1"
+    },
+    {
+      "question_id": "fc49276b-e9e1-4599-94b2-39fef69ae679",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "During infrastructure assessment for a 300-unit residential subdivision, the site engineer must compare projected demand against existing water supply, power distribution, sewerage, and drainage capacity. The assessment reveals that water supply will be adequate, power requires augmentation, sewerage requires on-site STP per RA 9275, and drainage is insufficient. What is the most comprehensive description of the site's infrastructure readiness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The site is fully ready to develop without any developer contribution to infrastructure, which is not accurate given the need for power and drainage improvements"
+        },
+        {
+          "id": "b",
+          "text": "The site has mixed readiness: some systems are adequate; others require developer investment in augmentation and on-site facilities"
+        },
+        {
+          "id": "c",
+          "text": "The site cannot be developed because multiple systems are insufficient, which overlooks the potential for developer-led improvements"
+        },
+        {
+          "id": "d",
+          "text": "The site requires municipal commitment to upgrade all infrastructure before development can proceed, which may not be feasible or necessary"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The assessment reveals multiple infrastructure gaps requiring developer response.",
+        "b": "Infrastructure assessment creates a mixed picture: some systems are adequate (water), others require augmentation (power, drainage), and legal requirements mandate on-site solutions (RA 9275 STP). This mixed readiness is typical and drives site design and developer cost estimates.",
+        "c": "Multiple insufficiencies do not prevent development if developer invests in solutions.",
+        "d": "While municipal support is beneficial, developments typically proceed with developer-funded infrastructure augmentation.",
+        "correct": "Infrastructure assessment creates a mixed picture: some systems are adequate (water), others require augmentation (power, drainage), and legal requirements mandate on-site solutions (RA 9275 STP). This mixed readiness is typical and drives site design and developer cost estimates.",
+        "takeaway": "Infrastructure assessment provides a utility-by-utility readiness picture; gaps drive developer investment decisions and project budgeting."
+      },
+      "explanation": null,
+      "code_citation": "Site Planning Infrastructure Assessment Framework",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6d1da2d8d1086b00601cc9e5f5af9b3e995231393bc88af5102ea25bf2e34f3d"
+    },
+    {
+      "question_id": "2713f23f-dea3-4356-a121-1bf064be885b",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "A site plan shows a proposed residential development adjacent to a 3.5-meter-wide creek. According to PD 1067, what is the minimum setback easement that must be maintained from the creek edge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 meters"
+        },
+        {
+          "id": "b",
+          "text": "10 meters"
+        },
+        {
+          "id": "c",
+          "text": "20 meters"
+        },
+        {
+          "id": "d",
+          "text": "40 meters"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PD 1067 specifies that streams and rivers with width less than 6 meters require a 3-meter easement. The creek is 3.5 meters wide, so it falls below the 6-meter threshold.",
+        "b": "10 meters is not a PD 1067 standard easement distance.",
+        "c": "20 meters applies to rivers and streams ≥ 6 meters wide — this creek is smaller.",
+        "d": "40 meters applies to lakes and seashores — not applicable here.",
+        "correct": "PD 1067 specifies that streams and rivers with width less than 6 meters require a 3-meter easement. The creek is 3.5 meters wide, so it falls below the 6-meter threshold.",
+        "takeaway": "PD 1067 easement distances: 3m (streams/rivers < 6m), 20m (streams/rivers ≥ 6m), 40m (lakes/sea)."
+      },
+      "explanation": null,
+      "code_citation": "PD 1067 (Water Code of the Philippines, 1976)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c7ae5fa45da1285c7bf0c69c837d70ce3be5e9a9323bf04b78f88751591ea105"
+    },
+    {
+      "question_id": "93ef0a84-fc4c-4990-827c-3a8e813f059a",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "During infrastructure assessment for a coastal residential project in Region VIII (post-Yolanda), the site engineer notes that the site extends within 35 meters of the mean high tide line. What is the planning implication of this measurement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The site complies with all setback requirements; no building restrictions apply, allowing for full development potential without additional regulatory oversight"
+        },
+        {
+          "id": "b",
+          "text": "The site falls within the 40-meter easement zone from mean high tide; residential structures cannot be built in this zone per PD 1067"
+        },
+        {
+          "id": "c",
+          "text": "Only 1-story structures are permitted within 40 meters per PD 1067, provided they adhere to additional structural reinforcement guidelines"
+        },
+        {
+          "id": "d",
+          "text": "The area can be used for parking and circulation only, with buildings restricted to beyond 40 meters, ensuring compliance with coastal management policies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The site violates the 40-meter easement required by PD 1067.",
+        "b": "PD 1067 (Water Code of the Philippines) mandates a 40-meter easement from the mean high tide line along seashores. Any structure within this zone is prohibited unless a special easement is granted. The site at 35 meters falls within this restriction.",
+        "c": "PD 1067 does not permit any construction (including 1-story) within the 40-meter easement zone without a valid easement; the zone is generally a no-build zone.",
+        "d": "The easement zone applies to all construction, including parking and circulation, unless a special easement is obtained.",
+        "correct": "PD 1067 (Water Code of the Philippines) mandates a 40-meter easement from the mean high tide line along seashores. Any structure within this zone is prohibited unless a special easement is granted. The site at 35 meters falls within this restriction.",
+        "takeaway": "PD 1067 requires a 40-meter easement from mean high tide line along seashores. This is a no-build zone; structures are prohibited without a special easement."
+      },
+      "explanation": null,
+      "code_citation": "PD 1067 (Water Code of the Philippines, 1976)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2c7c7784d5c5c41a33d36ccb8baca568184de5c9addf278c18c1df503f76c758"
+    },
+    {
+      "question_id": "8295131d-20ee-4bea-aedf-f07b25052593",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "A subdivision project has been designed with 150 residential units. The site is adjacent to an 8-meter-wide river. The power distribution company indicates that the nearest electrical distribution line (3 km away) has sufficient transformer capacity but requires a new service line to reach the site. Which infrastructure assessment conclusion is most accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Power supply is not feasible because the distance is too great; the development cannot proceed"
+        },
+        {
+          "id": "b",
+          "text": "Power supply is feasible, but the developer must fund the new 3-km service line as a project cost"
+        },
+        {
+          "id": "c",
+          "text": "The electrical utility must extend service at no cost to the developer"
+        },
+        {
+          "id": "d",
+          "text": "The project must install on-site power generation (solar, diesel) instead of relying on the grid"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Distance is not a barrier to electricity supply when capacity exists; it requires funding the service line.",
+        "b": "Infrastructure feasibility is determined by capacity and connectivity. Capacity exists; connectivity requires investment. Standard practice allocates service line extension costs to the developer triggering the extension.",
+        "c": "Utilities extend infrastructure to serve development, but cost allocation depends on service area policies and developer agreements.",
+        "d": "On-site generation is a supplementary option, not a substitute for grid connection feasibility.",
+        "correct": "Infrastructure feasibility is determined by capacity and connectivity. Capacity exists; connectivity requires investment. Standard practice allocates service line extension costs to the developer triggering the extension.",
+        "takeaway": "Infrastructure feasibility requires both capacity AND connectivity; developers typically fund service line extensions to reach new developments."
+      },
+      "explanation": null,
+      "code_citation": "PD 957 Sec 20 (Utilities); PD 1096 Rule VII",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2cc50c0824a5b433c45edd87992498a555c65931788421133f6c7fd416070b92"
+    },
+    {
+      "question_id": "cd26535a-073c-4fe3-99f0-a77d30c93cf4",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "A development site located 500 meters from the nearest sewer main is proposed for 800 housing units. The site is not within the service area of a municipal sewage treatment plant. Based on RA 9275 and standard site planning practice, what is the most practical infrastructure solution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design and construct an on-site sewage treatment plant (STP) to serve the development before discharging to receiving waters"
+        },
+        {
+          "id": "b",
+          "text": "Use septic tanks for all 800 units since the site is not connected to municipal sewers, which may lead to environmental concerns if not properly managed"
+        },
+        {
+          "id": "c",
+          "text": "Connect to the municipal system via a 500-meter trunk line at developer expense, which could be cost-prohibitive and require extensive coordination with local authorities"
+        },
+        {
+          "id": "d",
+          "text": "Discharge directly to the nearest river since there is no municipal treatment plant, which is illegal and environmentally harmful"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "RA 9275 requires treatment of sewage from high-density residential developments (800 units exceeds this threshold). On-site STP is the appropriate solution when municipal capacity is unavailable.",
+        "b": "Septic tanks are suitable for individual houses but not for 800-unit developments requiring centralized treatment.",
+        "c": "A 500-meter trunk line is technically possible but economically impractical and requires municipal agreement.",
+        "d": "Direct discharge is prohibited by RA 9275 and violates water quality standards.",
+        "correct": "RA 9275 requires treatment of sewage from high-density residential developments (800 units exceeds this threshold). On-site STP is the appropriate solution when municipal capacity is unavailable.",
+        "takeaway": "When municipal sewage treatment is unavailable, RA 9275 requires on-site STP design for commercial and high-density residential projects."
+      },
+      "explanation": null,
+      "code_citation": "RA 9275 (Philippine Clean Water Act, 2004)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd06a8b271fe99ca39a1ddbb85aa01b5ebf902c10eeba07457ec5d837bf1427d"
+    },
+    {
+      "question_id": "e4d11e53-c00a-459f-b91a-81d11bee80c7",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "During site planning for a commercial office building in Makati, the engineer determines that on-site sewage treatment is required before discharge into the city's stormwater system. Which Philippine law mandates this requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PD 957 (Subdivision and Condominium Buyers Protective Decree)"
+        },
+        {
+          "id": "b",
+          "text": "RA 9275 (Philippine Clean Water Act)"
+        },
+        {
+          "id": "c",
+          "text": "PD 1067 (Water Code of the Philippines)"
+        },
+        {
+          "id": "d",
+          "text": "RA 7160 (Local Government Code)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PD 957 governs subdivision/condominium sales protections — not utilities.",
+        "b": "RA 9275 explicitly requires sewage treatment plants (STP) for commercial buildings and high-density residential developments to prevent untreated discharge into water bodies.",
+        "c": "PD 1067 establishes easement distances around water bodies — does not mandate STP.",
+        "d": "RA 7160 is the Local Government Code — mandates planning and zoning, not specific utility treatment standards.",
+        "correct": "RA 9275 explicitly requires sewage treatment plants (STP) for commercial buildings and high-density residential developments to prevent untreated discharge into water bodies.",
+        "takeaway": "RA 9275 (Clean Water Act) is the Philippine law requiring on-site STP for commercial and high-density buildings."
+      },
+      "explanation": null,
+      "code_citation": "RA 9275 (Philippine Clean Water Act, 2004)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d8b2e8fe5c45fe5dd1be5543c37700b65c15bb8875a367fe87945c7fa0a145fd"
+    },
+    {
+      "question_id": "79ac76cf-9d0d-45b8-bccb-0d19cb28a740",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "Infrastructure assessment reveals that a proposed mixed-use development (residential tower + commercial podium + office space) cannot be adequately served by the existing stormwater drainage system. The assessment indicates flooding risk during 10-year storm events. According to best practice and Philippine site planning standards, what should the site design include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Detention basin or retention pond to manage stormwater runoff before discharge"
+        },
+        {
+          "id": "b",
+          "text": "Reliance on the municipal drainage system despite insufficient capacity, which may lead to flooding"
+        },
+        {
+          "id": "c",
+          "text": "Elevation of all structures above projected flood levels, ensuring safety during storm events"
+        },
+        {
+          "id": "d",
+          "text": "Reduction of site development density to minimize runoff, balancing development with environmental impact"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "When existing drainage infrastructure is insufficient, on-site stormwater management (retention/detention) is standard practice to control runoff and prevent downstream flooding. This is now a core site planning component.",
+        "b": "Overloading an already-insufficient system is not a responsible solution.",
+        "c": "Elevation is a complementary flood mitigation strategy but does not address the root drainage problem.",
+        "d": "Density reduction addresses runoff volume but is not required if on-site stormwater management is designed.",
+        "correct": "When existing drainage infrastructure is insufficient, on-site stormwater management (retention/detention) is standard practice to control runoff and prevent downstream flooding. This is now a core site planning component.",
+        "takeaway": "Insufficient drainage capacity requires on-site stormwater management (detention/retention) as part of site design."
+      },
+      "explanation": "When existing drainage infrastructure is insufficient, on-site stormwater management (retention/detention) is standard practice to control runoff and prevent downstream flooding. This is now a core site planning component. Overloading an already-insufficient system is not a responsible solution. Elevation is a complementary flood mitigation strategy but does not address the root drainage problem. Density reduction addresses runoff volume but is not required if on-site stormwater management is designed. When existing drainage infrastructure is insufficient, on-site stormwater management (retention/detention) is standard practice to control runoff and prevent downstream flooding. This is now a core site planning component. Insufficient drainage capacity requires on-site stormwater management (detention/retention) as part of site design.",
+      "code_citation": "Philippine Building Code; Site Stormwater Management Standards",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-05-06T14:48:26.048451+00:00",
+      "content_hash": "sha256:218c0e7d0aff3d62627ebebdcb154132ee4cd8b0c8497eaa96f07002b346ea03"
+    },
+    {
+      "question_id": "ea2083c0-913f-4c1a-9137-13c182f17fa1",
+      "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+      "topic_id": "9f2076ad-3198-4fbc-b5f8-4434da4f0ba4",
+      "text": "A proposed development site is located 2.5 km from the nearest telecommunications infrastructure node. Mobile signal coverage from all carriers is weak (below usable threshold). What is the primary implication for site planning in the context of contemporary smart city development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The site cannot be developed because telecommunications cannot be provided, leading to potential isolation from digital services"
+        },
+        {
+          "id": "b",
+          "text": "The developer should negotiate with carriers to extend fiber optic infrastructure or install on-site cellular equipment to ensure connectivity"
+        },
+        {
+          "id": "c",
+          "text": "Telecommunications is optional for residential projects; only commercial projects require connectivity, as they rely more heavily on digital infrastructure"
+        },
+        {
+          "id": "d",
+          "text": "The site should be developed with reduced density to minimize telecommunications demand, ensuring that existing infrastructure can support the development"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Telecommunications challenges are solvable through infrastructure investment; they do not prevent development.",
+        "b": "Modern site planning increasingly includes telecommunications as essential infrastructure. When existing coverage is inadequate, developers must plan for infrastructure augmentation (fiber extension, cell site, or in-building systems) as part of project implementation.",
+        "c": "Both residential and commercial projects now require telecommunications for smart living and operational efficiency.",
+        "d": "Density reduction is not a standard response to connectivity challenges when infrastructure can be extended.",
+        "correct": "Modern site planning increasingly includes telecommunications as essential infrastructure. When existing coverage is inadequate, developers must plan for infrastructure augmentation (fiber extension, cell site, or in-building systems) as part of project implementation.",
+        "takeaway": "Telecommunications infrastructure is now a critical site assessment component; developers must ensure connectivity through infrastructure investment or augmentation."
+      },
+      "explanation": null,
+      "code_citation": "Contemporary Smart City Planning Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:39.076631+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4000566d72ecfee9be64febc84eff9fe32a4b3b5fed9e74800d1ed395771b241"
+    }
+  ]
+}

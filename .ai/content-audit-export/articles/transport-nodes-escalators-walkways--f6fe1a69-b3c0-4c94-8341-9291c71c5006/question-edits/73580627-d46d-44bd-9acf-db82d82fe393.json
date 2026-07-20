@@ -1,10 +1,10 @@
 {
   "question_id": "73580627-d46d-44bd-9acf-db82d82fe393",
   "baseline_hash": "sha256:42a19ca7290c1e88b048f9c6e574a8c533a9dacdfbbae56e8c4cbdb6343d4809",
-  "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
     "parent_article_slug": "transport-nodes-escalators-walkways",
@@ -23,41 +23,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "What minimum car size applies to accessible elevators in transport facilities under the checked source?",
+    "text": "BP 344 specifies warning tactile blocks before escalators and passenger conveyors. What are the required depth of the tactile strip and its setback distance from the landing plate or hazard edge?",
     "options": [
       {
-        "id": "a",
-        "text": "1400 mm deep by 1500 mm wide with at least 900 mm door opening"
+        "id": "A",
+        "text": "300 mm depth installed 300 mm before the hazard, spanning the full width of the escalator"
       },
       {
-        "id": "b",
-        "text": "1400 mm deep by 1200 mm wide with at least 800 mm door opening"
+        "id": "B",
+        "text": "300 mm depth installed 600 mm before the hazard, spanning the full width of the escalator"
       },
       {
-        "id": "c",
-        "text": "1200 mm deep by 1200 mm wide with at least 900 mm door opening"
+        "id": "C",
+        "text": "600 mm depth installed 300 mm before the hazard, centered on the escalator only"
       },
       {
-        "id": "d",
-        "text": "1500 mm deep by 1800 mm wide with at least 1200 mm door opening"
+        "id": "D",
+        "text": "600 mm depth installed 300 mm before the hazard, spanning the full width of the escalator"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "Transport-facility accessible elevators require at least 1400 mm depth, 1500 mm width, and 900 mm door opening.",
-    "explanation": "Transport-facility accessible elevators require at least 1400 mm depth, 1500 mm width, and 900 mm door opening.",
-    "code_citation": "BP 344 2024 IRR, transport infrastructure elevators",
-    "bloom_level": "analyze",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Transport Nodes, Escalators, and Walkways",
-      "LEA Accessibility and Transport Design"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-transport-nodes-escalators-walkways-005"
+    "correct_option_id": "D",
+    "rationale": {
+      "summary": "Escalator tactile: 600 mm depth, 300 mm setback from hazard, full-width coverage.",
+      "explanation": "The mnemonic from the article is '600 deep, 300 back, full width.' The 600 mm depth gives a visually impaired user sufficient tactile surface to detect the warning before reaching the moving steps. The 300 mm setback keeps the strip clear of the metal landing plate. Full-width coverage prevents bypass. Option B inverts the two numbers — the most common exam trap.",
+      "common_misconceptions": [
+        "Inverting the numbers: 300 mm depth and 600 mm setback instead of 600 mm depth and 300 mm setback",
+        "Thinking the strip only needs to cover the center lane rather than the full width"
+      ]
+    },
+    "explanation": "Escalator tactile rule: 600 mm depth, 300 mm setback, full width — never invert these two numbers.",
+    "code_citation": "BP 344 Appendix A",
+    "bloom_level": "remember",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

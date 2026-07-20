@@ -8,38 +8,31 @@
       "question_id": "e3aeecb6-c72c-4010-9ec4-c77ff7f17422",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "Who developed the Concentric Zone Model of urban structure?",
+      "text": "Which local instrument is the long-term guide for a city or municipality physical development and the basis for zoning?",
       "options": [
         {
           "id": "a",
-          "text": "Homer Hoyt, known for the Sector Model, which focuses on urban growth patterns"
+          "text": "The Comprehensive Land Use Plan (CLUP)"
         },
         {
           "id": "b",
-          "text": "Ernest W. Burgess"
+          "text": "The building permit application"
         },
         {
           "id": "c",
-          "text": "Chauncy Harris, who contributed to the Multiple Nuclei Model of urban development"
+          "text": "The contractor work program"
         },
         {
           "id": "d",
-          "text": "Walter Christaller, recognized for the Central Place Theory in geography"
+          "text": "The private subdivision brochure"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "ERR-PLAN-001 confusion—Hoyt proposed the Sector Model (1939), not the Concentric Zone Model. This is the most common attribution error on the ALE.",
-        "b": "Burgess proposed the Concentric Zone Model in 1925, based on Chicago's growth pattern. The model describes cities expanding outward in concentric rings from the CBD through ecological succession.",
-        "c": "Harris (with Ullman) proposed the Multiple Nuclei Model (1945), a different theoretical framework.",
-        "d": "Christaller proposed Central Place Theory (1933), describing a hierarchy of urban centers based on range and threshold.",
-        "correct": "Burgess proposed the Concentric Zone Model in 1925, based on Chicago's growth pattern. The model describes cities expanding outward in concentric rings from the CBD through ecological succession.",
-        "takeaway": "Burgess = Bullseye (concentric circles). Hoyt = Hot corridors (sectors along transport routes)."
-      },
+      "rationale": "RPS 2008 treats the CLUP as the long-term guide for physical development and the framework for managing local territory.",
       "explanation": null,
       "code_citation": "THEORY_ATTRIBUTION_GUIDE.md, Part 1",
       "bloom_level": "remember",
@@ -52,45 +45,38 @@
       "model_id": "ALE-PLAN-002-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:31.124328+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.543219+00:00",
       "content_hash": "sha256:826d673a1c19d11e85696bd284dbc4d613b601d768dda3587b30126f463b886c"
     },
     {
       "question_id": "4ee128a4-3218-4dea-b45d-fca4f6f777fe",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "Which classical urban model would BEST predict that high-income neighborhoods in Metro Manila cluster along EDSA and major highways?",
+      "text": "A question describes outward growth from a built-up area. Which source-safe planning check comes first?",
       "options": [
         {
           "id": "a",
-          "text": "Concentric Zone Model—high-income areas form the outermost ring, which may not align with the actual urban layout"
+          "text": "Map land supply, vacant land, infrastructure, and suitability for urban expansion"
         },
         {
           "id": "b",
-          "text": "Sector Model—high-income sectors follow transport routes and maintain stability"
+          "text": "Assume all outward growth is acceptable"
         },
         {
           "id": "c",
-          "text": "Multiple Nuclei Model—high-income clusters form independent CBD nuclei, reflecting diverse urban development patterns"
+          "text": "Approve the conversion because roads exist"
         },
         {
           "id": "d",
-          "text": "Rank-Size Rule—largest cities attract the most wealth, which does not necessarily predict specific neighborhood clustering"
+          "text": "Classify the area by memorized model name only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Concentric models predict rings, not corridors. High-income areas would be the outermost ring, but this doesn't explain the corridor clustering.",
-        "b": "Hoyt's Sector Model (1939) explains that growth follows transport corridors (highways, transit lines) and that high-income areas, once established along premium corridors, remain stable and attract further investment. EDSA is the archetypal example.",
-        "c": "Multiple Nuclei would describe independent high-income centers (e.g., Makati vs. BGC), not concentration along a single corridor.",
-        "d": "Rank-Size Rule is a regional urban system principle, not an explanation for where within a city high-income areas cluster.",
-        "correct": "Hoyt's Sector Model (1939) explains that growth follows transport corridors (highways, transit lines) and that high-income areas, once established along premium corridors, remain stable and attract further investment. EDSA is the archetypal example.",
-        "takeaway": "Premium sectors follow premium transport routes. Hoyt = transport corridors as organizing principle for land-use growth."
-      },
+      "rationale": "RPS 2008 directs planners to assess land supply, infrastructure, vacant land, and suitability before allocating future urban use.",
       "explanation": null,
       "code_citation": "Hoyt (1939); VERIFIED_REFERENCE.md Part 2",
       "bloom_level": "apply",
@@ -103,30 +89,30 @@
       "model_id": "ALE-PLAN-002-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.536359+00:00",
       "content_hash": "sha256:3a3d22809421450adee1ed8543196b8e885ce83527d58ea7654dbf1beb5092a0"
     },
     {
       "question_id": "0c5fb6b9-1a92-424d-99eb-e98798457031",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "What does the Rank-Size Rule predict about the relationship between a city's rank and its population?",
+      "text": "What does map overlay or sieve analysis help determine in CLUP work?",
       "options": [
         {
           "id": "a",
-          "text": "The second-largest city should be 1/2 the population of the first; the third should be 1/3, etc."
+          "text": "Suitable urban expansion areas and decision zones"
         },
         {
           "id": "b",
-          "text": "The largest city should be 10 times the size of the second-largest city, which is an extreme concentration of population"
+          "text": "The architectural style of every building"
         },
         {
           "id": "c",
-          "text": "All cities in a region should have equal populations, which is an unrealistic scenario in urban planning"
+          "text": "The contractor warranty period"
         },
         {
           "id": "d",
-          "text": "The largest city attracts all growth; smaller cities decline, leading to urban primacy and regional imbalance"
+          "text": "The tax rate for construction materials"
         }
       ],
       "correct_option_id": "a",
@@ -134,14 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "George Kingsley Zipf (1949) proposed the Rank-Size Rule: in a balanced urban system, the nth-ranked city = 1/n times the largest city. Second city = 1/2; third = 1/3. The Philippines violates this (Manila is ~10× Cebu, not 2×).",
-        "b": "This describes primacy (disproportionate dominance), not the rank-size expectation. A primate city violates the rule.",
-        "c": "Equal populations would be uniform distribution, not rank-size proportionality.",
-        "d": "This describes a primate pattern, not rank-size equilibrium.",
-        "correct": "George Kingsley Zipf (1949) proposed the Rank-Size Rule: in a balanced urban system, the nth-ranked city = 1/n times the largest city. Second city = 1/2; third = 1/3. The Philippines violates this (Manila is ~10× Cebu, not 2×).",
-        "takeaway": "Rank-Size Rule = proportional urban hierarchy. Philippines violates it through primacy. Zipf (1949)."
-      },
+      "rationale": "RPS 2008 describes map overlay/sieve analysis as a way to find suitable urban land and identify decision zones.",
       "explanation": null,
       "code_citation": "Zipf (1949); THEORY_ATTRIBUTION_GUIDE.md Part 1; VERIFIED_REFERENCE.md Part 2",
       "bloom_level": "analyze",
@@ -154,45 +133,38 @@
       "model_id": "ALE-PLAN-002-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.541779+00:00",
       "content_hash": "sha256:196bfb4f4fc7f66571ee5b60b963d0ec3e1ef6f2b23e5191d6fc4b5f3847ae3a"
     },
     {
       "question_id": "df8adb14-a0eb-40aa-9485-bb8d12578ec3",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "A planner observes that low-income residential zones in a city are located farther from the CBD and that zones filter outward as the CBD expands. Which model explains this pattern?",
+      "text": "Which evidence best supports a corridor-growth planning decision?",
       "options": [
         {
           "id": "a",
-          "text": "Hoyt's Sector Model—land use follows transport corridors"
+          "text": "Road-network, land-use, service, and hazard maps checked together"
         },
         {
           "id": "b",
-          "text": "Burgess's Concentric Zone Model—zones filter outward through ecological succession"
+          "text": "A single real estate advertisement"
         },
         {
           "id": "c",
-          "text": "Harris & Ullman's Multiple Nuclei Model—functional clustering creates independent centers"
+          "text": "A preferred city slogan"
         },
         {
           "id": "d",
-          "text": "Christaller's Central Place Theory—settlement hierarchy determines land use"
+          "text": "A building perspective drawing only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Hoyt's Sector Model explains sectoral growth along corridors, not outward filtering or concentric rings.",
-        "b": "Burgess's Concentric Zone Model (1925) describes zones filtering outward—as the CBD expands, inner zones move outward in rings, a process called ecological succession. Lower-income housing gets pushed farther out.",
-        "c": "Harris & Ullman's model explains multiple independent centers, not outward filtering from a single CBD.",
-        "d": "Christaller's theory explains regional settlement hierarchies, not the internal dynamics of a single city's land-use succession.",
-        "correct": "Burgess's Concentric Zone Model (1925) describes zones filtering outward—as the CBD expands, inner zones move outward in rings, a process called ecological succession. Lower-income housing gets pushed farther out.",
-        "takeaway": "Filtering outward in rings = Burgess. Concentric expansion through succession = Burgess's signature mechanism."
-      },
+      "rationale": "A corridor strategy needs mapped access, land use, service capacity, and constraints, not a visual preference alone.",
       "explanation": null,
       "code_citation": "Burgess (1925); THEORY_ATTRIBUTION_GUIDE.md Part 1",
       "bloom_level": "apply",
@@ -205,45 +177,38 @@
       "model_id": "ALE-PLAN-002-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.543900+00:00",
       "content_hash": "sha256:85ab1fad1464e88c5a401880a44edfb6fd36510a73432b1f8c87b2ed80d7ac30"
     },
     {
       "question_id": "819e5bda-4246-4c13-9a76-7acd0f8648d8",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "In the Concentric Zone Model, what is the primary mechanism driving urban expansion?",
+      "text": "Why is population data important in urban-structure analysis?",
       "options": [
         {
           "id": "a",
-          "text": "Transport corridors and accessibility to highways"
+          "text": "It guides services, housing demand, land allocation, circulation, and land-use pattern analysis"
         },
         {
           "id": "b",
-          "text": "Ecological succession and outward filtering of land use"
+          "text": "It replaces the zoning ordinance"
         },
         {
           "id": "c",
-          "text": "Agglomeration of specialized economic functions"
+          "text": "It proves all land should become commercial"
         },
         {
           "id": "d",
-          "text": "Hexagonal trade area geometry and market threshold"
+          "text": "It eliminates the need for maps"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This mechanism describes Hoyt's Sector Model, not Burgess's. Sectors follow transport corridors; concentric zones expand uniformly outward.",
-        "b": "Burgess's Concentric Zone Model is rooted in urban ecology. Cities expand outward like ripples; inner zones filter outward, creating a succession of land uses. Each ring represents a stage of urban growth.",
-        "c": "This mechanism describes Harris & Ullman's Multiple Nuclei Model, where specialized functions cluster independently.",
-        "d": "This mechanism describes Christaller's Central Place Theory, which explains regional settlement hierarchies, not internal city structure.",
-        "correct": "Burgess's Concentric Zone Model is rooted in urban ecology. Cities expand outward like ripples; inner zones filter outward, creating a succession of land uses. Each ring represents a stage of urban growth.",
-        "takeaway": "Burgess = ecological succession (organic, wave-like expansion). Hoyt = transport-driven sectors. Harris & Ullman = specialized functional clustering."
-      },
+      "rationale": "RPS 2008 says population affects public services, housing demand, economic activity, circulation, and land-use allocation.",
       "explanation": null,
       "code_citation": "Burgess (1925) in THEORY_ATTRIBUTION_GUIDE.md, Part 1",
       "bloom_level": "understand",
@@ -256,45 +221,38 @@
       "model_id": "ALE-PLAN-002-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.541029+00:00",
       "content_hash": "sha256:c6594633183af38a32026a6488237f797ff95b9ef7867d50018e2f3e66d4e655"
     },
     {
       "question_id": "474a92bc-e098-45ad-b16e-4b310890bead",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "If a planner wants to understand why Metro Manila's growth has deviated from concentric-ring patterns and instead follows sectoral development along major highways, which transition in urban modeling theory should they study?",
+      "text": "In source-safe CLUP analysis, what should proposed settlement areas avoid?",
       "options": [
         {
           "id": "a",
-          "text": "From Central Place Theory to the Rank-Size Rule"
+          "text": "Protected areas and areas with environmental hazards"
         },
         {
           "id": "b",
-          "text": "From Burgess's Concentric Zone Model to Hoyt's Sector Model"
+          "text": "All areas with roads"
         },
         {
           "id": "c",
-          "text": "From Von Thünen's agricultural rings to Harris & Ullman's Multiple Nuclei"
+          "text": "All infill sites"
         },
         {
           "id": "d",
-          "text": "From Jefferson's Primate City to Christaller's Central Place Theory"
+          "text": "All existing urban barangays"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Central Place Theory and Rank-Size Rule describe regional systems, not internal city structure. Neither explains sectoral vs. concentric growth.",
-        "b": "Burgess's model (rings) predicts organic, uniform outward expansion. Hoyt's model (sectors) predicts that transport corridors redirect growth into wedges. Modern Manila shows Hoyt's pattern—premium development along EDSA and highways, not concentric rings. Understanding the transition explains the shift.",
-        "c": "Von Thünen precedes both Burgess and Hoyt (1826 vs. 1925/1939). Harris & Ullman's Multiple Nuclei is a refinement beyond both Burgess and Hoyt.",
-        "d": "Jefferson's Primate City and Christaller's Central Place Theory describe regional hierarchy, not the internal mechanisms Burgess and Hoyt address.",
-        "correct": "Burgess's model (rings) predicts organic, uniform outward expansion. Hoyt's model (sectors) predicts that transport corridors redirect growth into wedges. Modern Manila shows Hoyt's pattern—premium development along EDSA and highways, not concentric rings. Understanding the transition explains the shift.",
-        "takeaway": "Burgess → concentric rings. Hoyt → sectoral corridors. Modern Metro Manila exemplifies Hoyt's transport-driven model."
-      },
+      "rationale": "RPS 2008 states urban land uses, particularly settlements, must avoid protected areas and environmental hazards.",
       "explanation": null,
       "code_citation": "Burgess (1925), Hoyt (1939); THEORY_ATTRIBUTION_GUIDE.md Part 1; VERIFIED_REFERENCE.md Part 2",
       "bloom_level": "analyze",
@@ -307,30 +265,30 @@
       "model_id": "ALE-PLAN-002-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.539443+00:00",
       "content_hash": "sha256:44a46817a10556489ca06cdeda15bdb06e236425d02d679a1b80006c1bd94848"
     },
     {
       "question_id": "796c1c03-ed56-4ffe-b024-7d8948e0ddb9",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "When the Philippines violates the Rank-Size Rule with Metro Manila being roughly 10 times larger than Cebu City, this pattern is called a ___ city.",
+      "text": "What is the purpose of an urban vacant land survey?",
       "options": [
         {
           "id": "a",
-          "text": "Primate city"
+          "text": "To test infill capacity before sending growth or resettlement to distant sites"
         },
         {
           "id": "b",
-          "text": "Hierarchical city"
+          "text": "To replace public consultation"
         },
         {
           "id": "c",
-          "text": "Megalopolis"
+          "text": "To identify only decorative parks"
         },
         {
           "id": "d",
-          "text": "Primary city"
+          "text": "To approve every vacant lot automatically"
         }
       ],
       "correct_option_id": "a",
@@ -338,14 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "A Primate City (Mark Jefferson, 1939) is disproportionately large and dominates the urban system. Metro Manila's 10× size relative to Cebu violates the rank-size rule—it is primate, not just primary.",
-        "b": "Hierarchical city is not a standard term. A hierarchical urban system would follow the rank-size rule; Manila violates it.",
-        "c": "Megalopolis refers to a mega-city region (very large), but primacy is about disproportionate dominance, not just size.",
-        "d": "ERR-PLAN-026 confusion—'primary' means 'first' or 'largest'; 'primate' means 'disproportionately dominant.' Manila is both primary AND primate, but the specific term for this dominance is primate.",
-        "correct": "A Primate City (Mark Jefferson, 1939) is disproportionately large and dominates the urban system. Metro Manila's 10× size relative to Cebu violates the rank-size rule—it is primate, not just primary.",
-        "takeaway": "Primate = disproportionately dominant (10× rule-size violating). Not just 'largest'—much, much larger than statistics predict."
-      },
+      "rationale": "RPS 2008 links vacant land surveys with infill as an alternative to distant resettlement sites.",
       "explanation": null,
       "code_citation": "Jefferson (1939); ERROR_REGISTRY.md ERR-PLAN-026; VERIFIED_REFERENCE.md Part 2",
       "bloom_level": "apply",
@@ -358,45 +309,38 @@
       "model_id": "ALE-PLAN-002-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.542512+00:00",
       "content_hash": "sha256:7d5af8bc6b3ddc81fb868507af2eef43e3d7e807aed2a07b796117e8b6ae4732"
     },
     {
       "question_id": "f25d8b6b-7719-4e66-88b7-f61ba7ef6547",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "Which urban model proposes that cities grow as pie-shaped sectors along transportation corridors?",
+      "text": "Which CLUP step produces alternative spatial development forms and a preferred structure or concept plan?",
       "options": [
         {
           "id": "a",
-          "text": "Concentric Zone Model (Burgess)"
+          "text": "Establishing the development thrust and spatial strategies"
         },
         {
           "id": "b",
-          "text": "Sector Model (Hoyt)"
+          "text": "Issuing individual building permits"
         },
         {
           "id": "c",
-          "text": "Multiple Nuclei Model (Harris & Ullman)"
+          "text": "Collecting contractor bids"
         },
         {
           "id": "d",
-          "text": "Central Place Theory (Christaller)"
+          "text": "Closing the project audit"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "ERR-PLAN-002 confusion—Burgess's model uses concentric rings, not sectors. This name swap is the second-most common error.",
-        "b": "Hoyt's Sector Model (1939) explains urban growth as pie-shaped sectors radiating from the CBD, with growth following transport corridors. High-income sectors remain high-rent once established.",
-        "c": "Harris & Ullman's model rejects both rings and sectors, proposing instead multiple specialized centers with independent locations.",
-        "d": "Christaller's theory describes a hierarchical system of market towns based on range and threshold, not city internal structure.",
-        "correct": "Hoyt's Sector Model (1939) explains urban growth as pie-shaped sectors radiating from the CBD, with growth following transport corridors. High-income sectors remain high-rent once established.",
-        "takeaway": "Hoyt's sectors follow transport corridors—picture wedges of a pie, not concentric rings."
-      },
+      "rationale": "The CLUP GIS Guidebook identifies Step 6 as establishing development thrust and spatial strategies, including alternatives and a preferred structure/concept plan.",
       "explanation": null,
       "code_citation": "THEORY_ATTRIBUTION_GUIDE.md, Part 1",
       "bloom_level": "remember",
@@ -409,45 +353,38 @@
       "model_id": "ALE-PLAN-002-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.538638+00:00",
       "content_hash": "sha256:b3c0f5b85e558ab21d27defc313a28840f2ad6cafefddea862df7414ff02e45e"
     },
     {
       "question_id": "c75eab96-0b69-44cc-9f3d-43fcb3449239",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "The Multiple Nuclei Model is attributed to which two theorists?",
+      "text": "A CLUP map must help stakeholders answer where features are and how they relate spatially. Which source-safe tool is being tested?",
       "options": [
         {
           "id": "a",
-          "text": "Burgess and Hoyt, known for their contributions to urban land use theory"
+          "text": "GIS and mapped information products"
         },
         {
           "id": "b",
-          "text": "Harris and Christaller, who developed central place theory and urban hierarchy models"
+          "text": "A private marketing brochure"
         },
         {
           "id": "c",
-          "text": "Chauncy Harris and Edward Ullman"
+          "text": "A construction payroll"
         },
         {
           "id": "d",
-          "text": "Hoyt and Zipf, recognized for their work on urban growth patterns and rank-size rule"
+          "text": "A furniture schedule"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "ERR-PLAN-003 variation—Burgess and Hoyt are classical theorists but of different models (Concentric and Sector, respectively). They did not collaborate on Multiple Nuclei.",
-        "b": "Harris is correct; Christaller is wrong. Christaller developed Central Place Theory, not Multiple Nuclei.",
-        "c": "Harris and Ullman jointly developed the Multiple Nuclei Model (1945). Both names are required—the ALE specifically tests that students know both authors.",
-        "d": "Neither Hoyt nor Zipf contributed to Multiple Nuclei. Zipf developed the Rank-Size Rule.",
-        "correct": "Harris and Ullman jointly developed the Multiple Nuclei Model (1945). Both names are required—the ALE specifically tests that students know both authors.",
-        "takeaway": "Multiple Nuclei = Harris AND Ullman (1945). Both names are essential; using only one is incomplete."
-      },
+      "rationale": "The CLUP GIS Guidebook treats maps and GIS as tools for communicating spatial relations and planning evidence.",
       "explanation": null,
       "code_citation": "THEORY_ATTRIBUTION_GUIDE.md, Part 1; ERROR_REGISTRY.md ERR-PLAN-003",
       "bloom_level": "understand",
@@ -460,45 +397,38 @@
       "model_id": "ALE-PLAN-002-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.537715+00:00",
       "content_hash": "sha256:1b7f3990545227152a07d26a6b40e8d5266ea497e9bba6e6e1f55fcb7949e8cf"
     },
     {
       "question_id": "cec9245f-ad6b-48d5-b9c2-472cbccbb0fe",
       "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
       "topic_id": "f25766c8-32a5-4889-bc61-ea5651637e35",
-      "text": "A city has a CBD, a government center in a separate district, a port area, manufacturing zones, and residential neighborhoods spread throughout. Which model best describes this structure?",
+      "text": "If land-use layers reveal conflicts between infrastructure, hazards, and proposed settlement, what should the planner identify?",
       "options": [
         {
           "id": "a",
-          "text": "Concentric Zone Model—all uses are arranged in rings, with the CBD at the center and other uses radiating outward"
+          "text": "Decision zones for CLUP policy and consultation"
         },
         {
           "id": "b",
-          "text": "Sector Model—all uses follow transport corridors, with development extending along major roads and rail lines"
+          "text": "A final building color palette"
         },
         {
           "id": "c",
-          "text": "Multiple Nuclei Model—specialized functions cluster in different centers"
+          "text": "The lowest contractor bid"
         },
         {
           "id": "d",
-          "text": "Central Place Theory—smaller towns supply the larger city, forming a hierarchical network of settlements"
+          "text": "A fixed answer without consultation"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "A concentric model would place all functions in rings from a single CBD. This city has dispersed specialized centers, not concentric bands.",
-        "b": "A sector model would arrange functions along transport corridors as pie-shaped wedges. This description shows independent spatial clusters, not wedge patterns.",
-        "c": "The Multiple Nuclei Model (Harris & Ullman, 1945) explains cities with multiple specialized centers. Each nucleus—government, port, manufacturing, residential—develops independently based on locational requirements. Metro Manila exemplifies this.",
-        "d": "Central Place Theory describes regional hierarchies (small towns supplying larger cities), not the internal structure of a single city.",
-        "correct": "The Multiple Nuclei Model (Harris & Ullman, 1945) explains cities with multiple specialized centers. Each nucleus—government, port, manufacturing, residential—develops independently based on locational requirements. Metro Manila exemplifies this.",
-        "takeaway": "Multiple specialized centers (nuclei) with different functions = Multiple Nuclei Model. Metro Manila: Makati CBD, Quezon City government, Intramuros port/heritage, Ortigas commercial."
-      },
+      "rationale": "RPS 2008 says overlay analysis can identify decision zones for public consultation and policy formulation.",
       "explanation": null,
       "code_citation": "Harris & Ullman (1945); VERIFIED_REFERENCE.md Part 2",
       "bloom_level": "understand",
@@ -511,7 +441,7 @@
       "model_id": "ALE-PLAN-002-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.540239+00:00",
       "content_hash": "sha256:4010c627e923eee63bf273109ecaee2de01f2bb4deaab44831f9bb0584aa2320"
     }
   ]

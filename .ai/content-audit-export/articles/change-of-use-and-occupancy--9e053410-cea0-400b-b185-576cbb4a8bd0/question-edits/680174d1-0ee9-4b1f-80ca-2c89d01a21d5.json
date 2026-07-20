@@ -2,15 +2,15 @@
   "question_id": "680174d1-0ee9-4b1f-80ca-2c89d01a21d5",
   "baseline_hash": "sha256:bb3560f0f251cc166710aad08d83d22e947e33254da8e8968abcc235c3cc5674",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "The change is approved by adding a dry standpipe only.",
+    "source_locator": "PD 1096 2004 Revised IRR Rule III Sec. 309(c): 'other Certificates of Occupancy due to changes in use'; Rule VII Sec. 702.",
     "checked_markdown_lines": [
       "PD 1096 National Building Code refined markdown lines 243-251",
       "PD 1096 National Building Code refined markdown lines 356-473",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What does Section 702 require when a change places a building in a different division or group?",
+    "text": "Under Section 309.9, what additional certificate may be required when there is a CHANGE IN USE of a building or portion thereof?",
     "options": [
       {
         "id": "a",
-        "text": "The building must comply with the Code requirements for that new division or group."
+        "text": "A new Building Permit, which must be obtained prior to any change in use to ensure compliance with updated regulations"
       },
       {
         "id": "b",
-        "text": "T"
+        "text": "A new or additional Certificate of Occupancy"
       },
       {
         "id": "c",
-        "text": "h"
+        "text": "A Fire Safety Clearance Certificate, which is necessary to address any new fire hazards introduced by the change"
       },
       {
         "id": "d",
-        "text": "e"
+        "text": "An amended Environmental Compliance Certificate, reflecting the environmental impact of the new use"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The building must comply with the Code requirements for that new division or group. This is supported by The change is approved by reducing corridor width..",
-    "explanation": "The building must comply with the Code requirements for that new division or group. The cited local source family controls this item: The change is approved by reducing corridor width..",
-    "code_citation": "The change is approved by adding a dry standpipe only."
+    "correct_option_id": "b",
+    "rationale": "Sec. 309(c) of the PD 1096 2004 Revised IRR provides that a building that already holds a Certificate of Occupancy may be issued other Certificates of Occupancy due to changes in use, whether partly or wholly, if the new use conforms to the Code and its IRR. This intersects with Rule VII Sec. 702, which requires NBC Form No. B-12 to initiate the change-of-use review. The correct instrument is a Certificate of Occupancy — not a 'Certificate of Use'.",
+    "explanation": "Mixed-signal correction: the original question's correct answer was already right (Certificate of Occupancy), but its rationale contradicted it by referencing 'Certificate of Use'. This edit removes that contradiction.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule III Sec. 309(c) (other Certificates of Occupancy due to changes in use); Rule VII Sec. 702 (change of use application via NBC Form B-12)."
   }
 }

@@ -22,5 +22,53 @@
       "detailing-rebar",
       "detailing-concrete"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Why does clear spacing between parallel bars matter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is only for visual symmetry in the drawing."
+      },
+      {
+        "id": "b",
+        "text": "It allows concrete to pass, consolidate, and bond around the reinforcement."
+      },
+      {
+        "id": "c",
+        "text": "It replaces aggregate selection."
+      },
+      {
+        "id": "d",
+        "text": "It eliminates cover requirements."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It is only for visual symmetry in the drawing. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "It allows concrete to pass, consolidate, and bond around the reinforcement. This stays inside the Batch 144 local source boundary for Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals.",
+      "c": "It replaces aggregate selection. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "It eliminates cover requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "It allows concrete to pass, consolidate, and bond around the reinforcement. Supported by detailing-concrete.",
+      "takeaway": "For Deformed Reinforcing Bars, Hooks, Spacing, Ties, and Spirals, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-concrete",
+      "checked_sources": [
+        "detailing-rebar",
+        "detailing-concrete"
+      ]
+    },
+    "explanation": "It allows concrete to pass, consolidate, and bond around the reinforcement. Supported by the Batch 144 local source boundary: detailing-concrete.",
+    "code_citation": "detailing-concrete",
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-02-002"
   }
 }

@@ -2,9 +2,9 @@
   "question_id": "57f2f805-413f-488f-bb1a-85ecac9e23d3",
   "baseline_hash": "sha256:fc847abd435bc16b76fc4cf549a22b458ea9b8eb411e21c5a4482bf12a7cdfca",
   "action": "replace",
-  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
-  "approved_by": "codex-local-source-audit-batch-023",
-  "approved_at": "2026-05-10T18:16:14.069Z",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
     "parent_article_slug": "top-50-traps-2024-irr",
@@ -23,41 +23,28 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
   },
   "proposed": {
-    "text": "Which item cannot be part of a BP 344 accessible route?",
+    "text": "Trap #29 identifies a counterintuitive emergency call button placement rule. At what height must the emergency call button in an accessible toilet be mounted, and why does it deviate from the standard operable controls range?",
     "options": [
       {
-        "id": "a",
-        "text": "Turnstile or escalator"
+        "id": "A",
+        "text": "900–1200 mm AFF — the same as all operable controls, to maintain design consistency"
       },
       {
-        "id": "b",
-        "text": "Doorway"
+        "id": "B",
+        "text": "400–600 mm AFF — reachable from the floor by a fallen user who cannot stand or reach higher"
       },
       {
-        "id": "c",
-        "text": "Clear floor space"
+        "id": "C",
+        "text": "300 mm AFF — at the base of the wall so it is always visible and reachable when crawling"
       },
       {
-        "id": "d",
-        "text": "Ramp"
+        "id": "D",
+        "text": "700–800 mm AFF — consistent with the lower accessible handrail height and seated reach range"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "BP 344 excludes turnstiles, revolving doors, escalators, stairways, steps, and impediments from the accessible route.",
-    "explanation": "BP 344 excludes turnstiles, revolving doors, escalators, stairways, steps, and impediments from the accessible route.",
-    "code_citation": "BP 344 2024 IRR, accessible route definition",
-    "bloom_level": "remember",
-    "application_context": "lea_code_and_accessibility_review",
-    "practice_context": [
-      "Top 50 Traps: 2024 IRR",
-      "LEA Accessibility Code Review"
-    ],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-023-top-50-traps-2024-irr-015"
+    "correct_option_id": "B",
+    "rationale": "Trap #29: emergency button at 400–600 mm AFF — reachable from the floor by a fallen user. Trap #29 in the article. The standard operable controls range is 900–1200 mm AFF, but the emergency call button in an accessible toilet deliberately violates this range. The button must be at 400–600 mm AFF because it must be reachable by a user who has fallen to the floor and cannot stand or reach upward. A button at 900–1200 mm is unreachable by a prone or severely incapacitated user. This is one of the most counterintuitive specifications in BP 344 — the one control that is intentionally placed lower than the standard reach range.",
+    "explanation": "Emergency toilet button: 400–600 mm AFF — the one control intentionally below the standard 900–1200 mm reach range.",
+    "code_citation": "BP 344 IRR Sec. 6; Trap #29"
   }
 }

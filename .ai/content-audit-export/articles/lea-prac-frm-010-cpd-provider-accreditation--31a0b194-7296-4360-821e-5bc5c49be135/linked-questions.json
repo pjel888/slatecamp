@@ -39,8 +39,8 @@
         "correct": "After accreditation expiration without renewal, activities delivered do not generate valid CPD credits; architects cannot claim credit from expired providers.",
         "takeaway": "CPD credits from providers become invalid immediately upon accreditation expiration—no grace period applies."
       },
-      "explanation": "Incorrectly grants automatic grace period; re-accreditation must be applied for before expiration. Falsely extends validity; accreditation expiration terminates credit validity immediately. Contradicts the requirement for application and evaluation; re-accreditation is not automatic. After accreditation expiration without renewal, activities delivered do not generate valid CPD credits; architects cannot claim credit from expired providers. CPD credits from providers become invalid immediately upon accreditation expiration—no grace period applies.",
-      "code_citation": "RA 10912",
+      "explanation": "Batch 102 source audit keeps the answer key unchanged while narrowing the citation. RA 9266 IRR supports Board accreditation/registration of CPD providers, IAPOA/UAP automatic provider status, and provider accreditation based on PRC guidelines. Exact validity periods and detailed provider standards need current CPD guideline verification.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,7 +51,7 @@
       "model_id": "ALE-PRAC-FRM-010-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T15:55:56.666257+00:00",
+      "updated_at": "2026-07-20T01:13:28.076529+00:00",
       "content_hash": "sha256:9ebf5eb519d923c8c1d96af6bef99ccdd6fcf4f5937674708a30db5126f878b4"
     },
     {
@@ -89,8 +89,8 @@
         "correct": "Architects must verify provider accreditation status before enrollment; only credits from accredited providers count toward the mandatory 45-unit requirement.",
         "takeaway": "Architects are responsible for verifying provider accreditation before enrollment to ensure CPD credit validity."
       },
-      "explanation": "Fails to apply the accreditation requirement; non-accredited programs generate no CPD credit. Reverses the responsibility; architects must proactively verify, not wait for Board notifications. Ignores the accreditation distinction; credits are valid only from accredited providers. Architects must verify provider accreditation status before enrollment; only credits from accredited providers count toward the mandatory 45-unit requirement. Architects are responsible for verifying provider accreditation before enrollment to ensure CPD credit validity.",
-      "code_citation": "RA 10912",
+      "explanation": "Batch 102 source audit keeps the answer key unchanged while narrowing the citation. RA 9266 IRR supports Board accreditation/registration of CPD providers, IAPOA/UAP automatic provider status, and provider accreditation based on PRC guidelines. Exact validity periods and detailed provider standards need current CPD guideline verification.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,7 +101,7 @@
       "model_id": "ALE-PRAC-FRM-010-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T15:55:56.798645+00:00",
+      "updated_at": "2026-07-20T01:13:28.079617+00:00",
       "content_hash": "sha256:32f2121a1b5ba9f1c17256af83e5cf3a04dbc238dd39dc3a30680e336f81101f"
     },
     {
@@ -139,8 +139,8 @@
         "correct": "The CPD Council for Architecture (under the Professional Regulatory Board of Architecture) accredits CPD providers.",
         "takeaway": "The CPD Council for Architecture holds authority to accredit CPD providers."
       },
-      "explanation": null,
-      "code_citation": "RA 10912",
+      "explanation": "RA 9266 IRR defines CPD providers as entities accredited or registered with the Board of Architecture of the PRC. The Batch 102 edit therefore cites the Board source directly and preserves the answer key.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,7 +151,7 @@
       "model_id": "ALE-PRAC-FRM-010-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.073405+00:00",
       "content_hash": "sha256:cd1205a297d4af4d1192d371d388dc972b76e22a06141fe1b1c3dad27a31b68e"
     },
     {
@@ -189,8 +189,8 @@
         "correct": "The Board evaluates instructor qualifications, curriculum design, course content, learning outcomes, facilities, and instructional methodologies during accreditation review.",
         "takeaway": "Accreditation evaluation focuses on instructor expertise, curriculum design, and instructional quality—not business registration or age."
       },
-      "explanation": null,
-      "code_citation": "RA 10912",
+      "explanation": "Batch 102 source audit keeps the answer key unchanged while narrowing the citation. RA 9266 IRR supports Board accreditation/registration of CPD providers, IAPOA/UAP automatic provider status, and provider accreditation based on PRC guidelines. Exact validity periods and detailed provider standards need current CPD guideline verification.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,7 +201,7 @@
       "model_id": "ALE-PRAC-FRM-010-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.080372+00:00",
       "content_hash": "sha256:f074a51b10b0ecef07e95ec7964d0d6f6d89ecb80d57ad96b0962f8bdd8b70be"
     },
     {
@@ -239,8 +239,8 @@
         "correct": "When organizations collaborate on CPD programs, all co-offering organizations must hold accreditation status; credits are only valid if all participating providers are accredited.",
         "takeaway": "All participating providers in a collaborative CPD program must be accredited; a single non-accredited partner invalidates credits."
       },
-      "explanation": null,
-      "code_citation": "RA 10912",
+      "explanation": "Batch 102 source audit keeps the answer key unchanged while narrowing the citation. RA 9266 IRR supports Board accreditation/registration of CPD providers, IAPOA/UAP automatic provider status, and provider accreditation based on PRC guidelines. Exact validity periods and detailed provider standards need current CPD guideline verification.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,7 +251,7 @@
       "model_id": "ALE-PRAC-FRM-010-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.078867+00:00",
       "content_hash": "sha256:b47c76fcb5297d99b08b90871ee98f1280771d91e1bda0dd8e032a0385cc589b"
     },
     {
@@ -290,8 +290,8 @@
         "correct": "Only the integrated accredited professional organization receives automatic accreditation without separate application; other providers must undergo standard evaluation.",
         "takeaway": "UAP alone receives automatic accreditation; all other providers must apply and undergo Board evaluation."
       },
-      "explanation": null,
-      "code_citation": "RA 10912",
+      "explanation": "Batch 102 source audit keeps the answer key unchanged while narrowing the citation. RA 9266 IRR supports Board accreditation/registration of CPD providers, IAPOA/UAP automatic provider status, and provider accreditation based on PRC guidelines. Exact validity periods and detailed provider standards need current CPD guideline verification.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -302,7 +302,7 @@
       "model_id": "ALE-PRAC-FRM-010-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.081130+00:00",
       "content_hash": "sha256:e0592bb3303492a5350edeb10d7abf3285446874f91e5ede94c106781ad39127"
     },
     {
@@ -340,8 +340,8 @@
         "correct": "The United Architects of the Philippines (UAP), as the Accredited Integrated Professional Organization (AIPO) is automatically accredited as a CPD provider without requiring separate application.",
         "takeaway": "UAP (United Architects of the Philippines) holds automatic CPD provider accreditation—no separate application required."
       },
-      "explanation": null,
-      "code_citation": "RA 10912",
+      "explanation": "RA 9266 IRR states that the Integrated Accredited Professional Organization of Architects is automatically accredited by the Board as a CPD provider. The Batch 102 edit preserves the answer key and removes unsupported RA 10912-only citation reliance.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -352,7 +352,7 @@
       "model_id": "ALE-PRAC-FRM-010-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.078018+00:00",
       "content_hash": "sha256:8115d07ec36efc1bd989733552ba740ade79cd95d23ae89054042a0a46502dbd"
     },
     {
@@ -390,8 +390,8 @@
         "correct": "Non-accredited provider activities generate no valid CPD credits regardless of content quality, time invested, or architectural relevance.",
         "takeaway": "Non-accredited provider activities generate zero valid CPD credits, regardless of content quality."
       },
-      "explanation": null,
-      "code_citation": "RA 10912",
+      "explanation": "Batch 102 source audit keeps the answer key unchanged while narrowing the citation. RA 9266 IRR supports Board accreditation/registration of CPD providers, IAPOA/UAP automatic provider status, and provider accreditation based on PRC guidelines. Exact validity periods and detailed provider standards need current CPD guideline verification.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -402,7 +402,7 @@
       "model_id": "ALE-PRAC-FRM-010-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.074720+00:00",
       "content_hash": "sha256:b24092d2791198028854d049330b1c45597f68f7f71e22b34a4130836b5b0fef"
     },
     {
@@ -440,8 +440,8 @@
         "correct": "CPD provider accreditation is valid for three years from issuance; providers must apply for re-accreditation before expiration.",
         "takeaway": "CPD provider accreditation is valid for three years and requires re-accreditation before expiration."
       },
-      "explanation": "Overly short duration; annual re-accreditation would impose excessive administrative burden. Undercounts the validity period; actual term is three years, not two. Overcounts; five years exceeds the three-year accreditation validity. CPD provider accreditation is valid for three years from issuance; providers must apply for re-accreditation before expiration. CPD provider accreditation is valid for three years and requires re-accreditation before expiration.",
-      "code_citation": "RA 10912",
+      "explanation": "Batch 102 keeps the answer key unchanged but treats the exact validity period as final-depth pending current CPD guideline source review. RA 9266 IRR supports the provider-accreditation framework but not the exact three-year period in the local source packet.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -452,7 +452,7 @@
       "model_id": "ALE-PRAC-FRM-010-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T15:55:56.926141+00:00",
+      "updated_at": "2026-07-20T01:13:28.075644+00:00",
       "content_hash": "sha256:913d5a9b88e650d3fe9a15ff7e85b375928e1b54d77e06ee68a9927264c8a6c0"
     },
     {
@@ -490,8 +490,8 @@
         "correct": "Accredited providers must have clearly defined learning objectives aligned with professional track categories and assessment methods evaluating participant competency acquisition.",
         "takeaway": "Accredited providers must have clearly defined learning outcomes aligned with the five professional track categories."
       },
-      "explanation": null,
-      "code_citation": "RA 10912",
+      "explanation": "Batch 102 source audit keeps the answer key unchanged while narrowing the citation. RA 9266 IRR supports Board accreditation/registration of CPD providers, IAPOA/UAP automatic provider status, and provider accreditation based on PRC guidelines. Exact validity periods and detailed provider standards need current CPD guideline verification.",
+      "code_citation": "RA 9266 IRR CPD provider definition and Section 28; exact current CPD guideline mechanics deferred to final-depth source review",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -502,7 +502,7 @@
       "model_id": "ALE-PRAC-FRM-010-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.077276+00:00",
       "content_hash": "sha256:be4796b068c4a18cd6150b05de2c1118985f9277ebffbac0a0d8ada572466019"
     }
   ]

@@ -2,9 +2,9 @@
   "question_id": "40b21fa4-7f4d-4cc5-a1ba-3763dd1281e5",
   "baseline_hash": "sha256:2d0135e960ab9e73d77ca1644e1010e23f9ab71f0155ebfc62bfc74358551fa0",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "How does RA 9514 connect to occupancy clearance?",
+    "text": "Per the mnemonic 'GARRC' for the five change-type definitions, what is the correct sequence from smallest to largest scope of intervention?",
     "options": [
       {
-        "id": "a",
-        "text": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance."
+        "id": "A",
+        "text": "Addition → Conversion → Renovation → Alteration → Repair"
       },
       {
-        "id": "b",
-        "text": "R"
+        "id": "B",
+        "text": "Repair → Renovation → Alteration → Conversion → Addition"
       },
       {
-        "id": "c",
-        "text": "A"
+        "id": "C",
+        "text": "Alteration → Repair → Renovation → Addition → Conversion"
       },
       {
-        "id": "d",
-        "text": " "
+        "id": "D",
+        "text": "Renovation → Repair → Addition → Alteration → Conversion"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance. This is supported by RA 9514 uses only the GFA-to-TGFA conversion table..",
-    "explanation": "BFP inspection and FSIC are part of the fire-safety clearance path before occupancy or permit issuance. The cited local source family controls this item: RA 9514 uses only the GFA-to-TGFA conversion table..",
-    "code_citation": "RA 9514 removes the Building Official from occupancy review."
+    "correct_option_id": "B",
+    "rationale": "The scope ladder (smallest to largest) is: Repair → Renovation → Alteration → Conversion → Addition. Visualize a stair: each step up represents a greater intervention. Repair = restore original (same-for-same). Renovation = improve value/aesthetic (better-for-same). Alteration = change configuration (different-for-different, within existing area). Conversion = change use/occupancy. Addition = GROWS (height and/or area increase).",
+    "explanation": null,
+    "code_citation": null
   }
 }

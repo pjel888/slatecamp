@@ -22,5 +22,53 @@
       "masonry-lecture-terms-chb",
       "bsi-masonry-walls"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "A question asks for a code-backed stack-bond seismic rule. What should Batch 147 do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Publish the seismic rule from memory."
+      },
+      {
+        "id": "b",
+        "text": "Use an AISC bolting concept as the masonry code."
+      },
+      {
+        "id": "c",
+        "text": "Verify the rule against the applicable masonry code because this local capture did not include that code requirement."
+      },
+      {
+        "id": "d",
+        "text": "Treat stack bond as automatically code-compliant in all cases."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Publish the seismic rule from memory. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "b": "Use an AISC bolting concept as the masonry code. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "c": "Verify the rule against the applicable masonry code because this local capture did not include that code requirement. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+      "d": "Treat stack bond as automatically code-compliant in all cases. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "correct": "Verify the rule against the applicable masonry code because this local capture did not include that code requirement. Supported by masonry-lecture-terms-chb.",
+      "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "masonry-lecture-terms-chb",
+      "checked_sources": [
+        "masonry-lecture-terms-chb",
+        "bsi-masonry-walls"
+      ]
+    },
+    "explanation": "Verify the rule against the applicable masonry code because this local capture did not include that code requirement. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb.",
+    "code_citation": "masonry-lecture-terms-chb",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-010-01-005"
   }
 }

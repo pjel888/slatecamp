@@ -8,37 +8,31 @@
       "question_id": "46b5d235-5848-4cb4-9309-67cdd3259870",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "According to the Philippine Electrical Code (PEC), what is the maximum GFCI trip threshold for personnel protection in wet locations such as bathrooms and outdoor areas?",
+      "text": "Which source family should control a solar PV interconnection question?",
       "options": [
         {
           "id": "a",
-          "text": "50 mA (milliamperes)"
+          "text": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection."
         },
         {
           "id": "b",
-          "text": "<30 mA (milliamperes)"
+          "text": "The plumbing code because PV modules are usually near roof drains."
         },
         {
           "id": "c",
-          "text": "75 mA (milliamperes)"
+          "text": "A history source because solar panels change the building appearance."
         },
         {
           "id": "d",
-          "text": "100 mA (milliamperes)"
+          "text": "Only the DOE energy guideline, with no electrical-code coordination."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "50 mA is a higher threshold used in dry locations, not wet locations where more stringent protection is required.",
-        "c": "75 mA exceeds the safe protection level for wet locations and would not comply with PEC requirements.",
-        "d": "100 mA is far too high for wet location protection and violates electrical safety standards.",
-        "correct": "The Philippine Electrical Code (PEC), based on NEC/NFPA 70 standards, specifies that electrical fault current protection in wet locations must not exceed 30 mA (less than 30 mA). This lower threshold in wet locations provides enhanced protection against electrical shock hazards where moisture is present, reducing the time delay for circuit disconnection in fault conditions.",
-        "takeaway": "Wet locations (bathrooms, outdoor) require <30 mA fault current protection per PEC; this is a critical numerical standard for electrical safety."
-      },
+      "rationale": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection. PEC Article 6.90 is the checked local source for PV electrical-system requirements.",
       "explanation": "50 mA is a higher threshold used in dry locations, not wet locations where more stringent protection is required. 75 mA exceeds the safe protection level for wet locations and would not comply with PEC requirements. 100 mA is far too high for wet location protection and violates electrical safety standards. The Philippine Electrical Code (PEC), based on NEC/NFPA 70 standards, specifies that electrical fault current protection in wet locations must not exceed 30 mA (less than 30 mA). This lower threshold in wet locations provides enhanced protection against electrical shock hazards where moisture is present, reducing the time delay for circuit disconnection in fault conditions. Wet locations (bathrooms, outdoor) require <30 mA fault current protection per PEC; this is a critical numerical standard for electrical safety.",
       "code_citation": "LEA-UTIL-008-04.mdx: Summary of Key Numerical Standards section, line 204",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-008-04-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-05-06T15:59:04.586837+00:00",
+      "updated_at": "2026-07-20T01:13:28.759691+00:00",
       "content_hash": "sha256:3b2bc3b2673460abe3c0ca1dc4a9fa874a1d0ca65d3ad5cfe277b1376fb4a424"
     },
     {
       "question_id": "253ea8ab-aee8-40d3-a579-42c9cb98df05",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "Under the Philippine Electrical Code (PEC) Part 7, what is the minimum emergency lighting level that must be maintained in buildings during evacuation scenarios?",
+      "text": "Which source family should control plans for a plumbing installation permit?",
       "options": [
         {
           "id": "a",
-          "text": "5 lux"
+          "text": "The Revised National Plumbing Code, including RMP-signed plans, administrative review, inspection, and testing."
         },
         {
           "id": "b",
-          "text": "10 lux"
+          "text": "PEC Article 6.90 because all utility systems use service entrances."
         },
         {
           "id": "c",
-          "text": "20 lux"
+          "text": "A UAP fee schedule with no plumbing-code review."
         },
         {
           "id": "d",
-          "text": "30 lux"
+          "text": "Only the DOE lighting-power-density rules."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5 lux is insufficient for safe evacuation and does not meet regulatory requirements.",
-        "c": "20 lux exceeds the minimum required standard; while acceptable, 10 lux is the baseline threshold.",
-        "d": "30 lux is above the minimum emergency lighting requirement.",
-        "correct": "The Philippine Electrical Code (PEC) Part 7 establishes that emergency lighting systems must maintain a minimum illumination level of 10 lux throughout evacuation routes and exit areas. This illumination level enables safe movement and wayfinding during fire emergencies when normal lighting may fail. This numerical standard is critical for life safety compliance.",
-        "takeaway": "Emergency lighting must maintain 10 lux minimum per PEC Part 7; this is a foundational life safety numerical standard."
-      },
+      "rationale": "The Revised National Plumbing Code, including RMP-signed plans, administrative review, inspection, and testing. The plumbing code locators state the permit, plan, review, inspection, testing, and Registered Master Plumber requirements.",
       "explanation": "5 lux is insufficient for safe evacuation and does not meet regulatory requirements. 20 lux exceeds the minimum required standard; while acceptable, 10 lux is the baseline threshold. 30 lux is above the minimum emergency lighting requirement. The Philippine Electrical Code (PEC) Part 7 establishes that emergency lighting systems must maintain a minimum illumination level of 10 lux throughout evacuation routes and exit areas. This illumination level enables safe movement and wayfinding during fire emergencies when normal lighting may fail. This numerical standard is critical for life safety compliance. Emergency lighting must maintain 10 lux minimum per PEC Part 7; this is a foundational life safety numerical standard.",
       "code_citation": "LEA-UTIL-008-04.mdx: Summary of Key Numerical Standards section, line 201",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-008-04-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-05-06T15:59:04.465937+00:00",
+      "updated_at": "2026-07-20T01:13:28.766449+00:00",
       "content_hash": "sha256:f149053616361531718c5575aeb6e1174aca56582ef6eb28b4f1c2f4b9f3094a"
     },
     {
       "question_id": "81c040bd-ec0d-4a75-bb72-141ee602749b",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "Under PD 1058 (Philippine Mechanical Engineering Code), which systems are NOT specifically regulated?",
+      "text": "What is the correct LEA response to a building energy-performance question?",
       "options": [
         {
           "id": "a",
-          "text": "Heating, ventilation, and air-conditioning (HVAC) systems"
+          "text": "Use RA 11285 with the DOE Guidelines for new construction, retrofits, lighting, controls, daylighting, and envelope OTTV."
         },
         {
           "id": "b",
-          "text": "Electrical wiring and circuit protection systems"
+          "text": "Use only the plumbing code because energy performance is a drainage issue."
         },
         {
           "id": "c",
-          "text": "Pressure vessels and boilers"
+          "text": "Use only Spanish colonial planning rules because orientation affects solar gain."
         },
         {
           "id": "d",
-          "text": "Refrigeration systems"
+          "text": "Use no statutory source because energy conservation is optional."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "HVAC systems are explicitly listed as a primary component of PD 1058 regulation.",
-        "c": "Pressure vessels and boilers are specifically included in the scope of PD 1058.",
-        "d": "Refrigeration systems are explicitly regulated by PD 1058 for safety and performance standards.",
-        "correct": "PD 1058 (Philippine Mechanical Engineering Code) regulates HVAC systems, mechanical power transmission equipment, pressure vessels, boilers, refrigeration systems, and ventilation standards. Electrical wiring and circuit protection are regulated by the Philippine Electrical Code (PEC), not PD 1058.",
-        "takeaway": "PD 1058 covers mechanical systems, not electrical; the Philippine Electrical Code (PEC) governs electrical installations."
-      },
+      "rationale": "Use RA 11285 with the DOE Guidelines for new construction, retrofits, lighting, controls, daylighting, and envelope OTTV. RA 11285 and the DOE Guidelines are the checked source families for building energy performance.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Mechanical Systems Standards section",
       "bloom_level": "remember",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-008-04-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.765482+00:00",
       "content_hash": "sha256:a4ff367cc064cfc430dadb72dacda10934db7c9e1369cea838e12fbf010dce66"
     },
     {
       "question_id": "00f00e5c-8a24-4a5f-9bef-1f5f66140aad",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "In the Philippine regulatory hierarchy for building codes, at which level does a local government unit (LGU) ordinance typically fit, and what is its relationship to national standards?",
+      "text": "What is the first step when a utility item mixes electrical, plumbing, and energy topics?",
       "options": [
         {
           "id": "a",
-          "text": "LGU ordinances supersede all national laws when they conflict with national standards, which allows for local autonomy in building regulations"
+          "text": "Classify the system and then select the controlling source family before applying details."
         },
         {
           "id": "b",
-          "text": "LGU ordinances may impose stricter requirements than national standards but cannot lower national baseline requirements"
+          "text": "Choose the most familiar numerical answer even when it belongs to a different system."
         },
         {
           "id": "c",
-          "text": "LGU ordinances replace national standards entirely at the local level, providing a unique set of rules for each locality"
+          "text": "Treat all utility topics as architectural style questions."
         },
         {
           "id": "d",
-          "text": "LGU ordinances only apply to government buildings, not private construction, ensuring that public structures meet specific local needs"
+          "text": "Use contractor preference as the controlling rule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "National laws supersede local ordinances; LGU ordinances cannot lower national standards or override national law provisions.",
-        "c": "LGU ordinances supplement national standards; they do not replace them entirely. National standards provide the legal baseline.",
-        "d": "LGU ordinances apply to all building construction (public and private) within their jurisdiction, not exclusively government buildings.",
-        "correct": "The Philippine regulatory hierarchy places national laws (including PD 1096, RA 1378, RA 9514) at the top, followed by technical codes (PEC, PD 1058) incorporated by reference. Local government units may impose stricter or more specific requirements than national standards to address local conditions, but they cannot reduce or eliminate requirements established by national law. This ensures minimum compliance nationwide.",
-        "takeaway": "Regulatory precedence: national law > technical codes > local ordinances. LGUs can add stricter requirements but not remove national standards."
-      },
+      "rationale": "Classify the system and then select the controlling source family before applying details. The article organizes PEC, plumbing-code, RA 11285, and DOE responsibilities by system scope.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Interaction and Precedence of Regulations section",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-008-04-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.763320+00:00",
       "content_hash": "sha256:47da3a5ae07d0010b44c977ff4ae6f8936c0f6f0f43bc3162c08e8e148abdfd7"
     },
     {
       "question_id": "75853a85-b945-43f4-a7d6-bbf42de64739",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "A manufacturing facility discharges treated wastewater to a Class C water body. DENR-EMB has issued an Environmental Compliance Certificate specifying a 50 mg/L biochemical oxygen demand (BOD) limit per RA 9275. The facility's wastewater treatment system consistently achieves 55 mg/L BOD. What regulatory status describes this facility?",
+      "text": "Which source family should control a solar PV interconnection question?",
       "options": [
         {
           "id": "a",
-          "text": "In compliance because 55 mg/L is only 5 mg/L above the limit, which is within acceptable measurement error margins, assuming no significant environmental impact"
+          "text": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection."
         },
         {
           "id": "b",
-          "text": "In violation of the ECC conditions and RA 9275 because actual discharge (55 mg/L) exceeds the permitted limit (50 mg/L); the facility must upgrade treatment"
+          "text": "The plumbing code because PV modules are usually near roof drains."
         },
         {
           "id": "c",
-          "text": "Compliant only if the facility pays an environmental fee to DENR-EMB for the excess 5 mg/L, which is not a standard practice under RA 9275"
+          "text": "A history source because solar panels change the building appearance."
         },
         {
           "id": "d",
-          "text": "In compliance if monitoring records show the average over 12 months is below 50 mg/L, regardless of individual test results, which may not align with regulatory requirements"
+          "text": "Only the DOE energy guideline, with no electrical-code coordination."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Regulatory limits have no built-in margin of error; 55 mg/L exceeds 50 mg/L and is non-compliant.",
-        "c": "Environmental violations are not resolved by paying fees; they require corrective action to achieve compliance.",
-        "d": "Each discharge test result must comply with the limit; averaging across multiple tests does not justify individual violations.",
-        "correct": "Environmental Compliance Certificate limits are regulatory maximums, not targets or averages. RA 9275 (Philippine Clean Water Act) establishes that wastewater discharged to Class C waters must meet BOD limits specified in the ECC and water quality guidelines. Any discharge exceeding the permitted limit is a violation, regardless of how close the excess is. The facility must upgrade its wastewater treatment system to consistently achieve the 50 mg/L limit. DENR-EMB has authority to impose penalties and require corrective action for non-compliance.",
-        "takeaway": "ECC discharge limits are regulatory maximums that must be met in every instance; exceeding limits is a direct violation requiring corrective action."
-      },
+      "rationale": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection. PEC Article 6.90 is the checked local source for PV electrical-system requirements.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Energy and Environmental Compliance section; RA 9275 and DENR-EMB enforcement",
       "bloom_level": "analyze",
@@ -251,30 +221,30 @@
       "model_id": "ALE-UTIL-008-04-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.767506+00:00",
       "content_hash": "sha256:e7b005e8dec89242323a55605608da858a3e49a6d718eb4eab768bdc786424c9"
     },
     {
       "question_id": "42d8f0ab-eac2-4e1f-9bb1-4b09bb9be51f",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "According to DENR environmental standards (DAO 2016-08), what are the permissible noise limits for a commercial zone during daytime (typically 6 AM to 10 PM) and nighttime (10 PM to 6 AM)?",
+      "text": "Which source family should control plans for a plumbing installation permit?",
       "options": [
         {
           "id": "a",
-          "text": "70 dB daytime, 60 dB nighttime"
+          "text": "The Revised National Plumbing Code, including RMP-signed plans, administrative review, inspection, and testing."
         },
         {
           "id": "b",
-          "text": "60 dB daytime, 50 dB nighttime"
+          "text": "PEC Article 6.90 because all utility systems use service entrances."
         },
         {
           "id": "c",
-          "text": "55 dB daytime, 45 dB nighttime"
+          "text": "A UAP fee schedule with no plumbing-code review."
         },
         {
           "id": "d",
-          "text": "75 dB daytime, 65 dB nighttime"
+          "text": "Only the DOE lighting-power-density rules."
         }
       ],
       "correct_option_id": "a",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "60 dB daytime and 50 dB nighttime are the limits for mixed residential-commercial zones, not pure commercial zones.",
-        "c": "55 dB daytime and 45 dB nighttime are the limits for residential zones, which are more stringent than commercial zones.",
-        "d": "75 dB daytime and 65 dB nighttime exceed all permissible limits under DAO 2016-08 and would require noise reduction measures.",
-        "correct": "DENR DAO 2016-08 establishes noise limits specific to zone classifications. For commercial zones, the permissible noise levels are 70 dB during daytime hours and 60 dB during nighttime hours. These limits apply to all noise sources from building operations and utilities. Residential zones have lower limits (55 dB daytime, 45 dB nighttime) to protect residential environments. Industrial zones have higher limits. These are regulatory maximums enforced by DENR-EMB.",
-        "takeaway": "Commercial zone noise limits per DENR DAO 2016-08: 70 dB daytime, 60 dB nighttime; these are regulatory maximums for building utility operations."
-      },
+      "rationale": "The Revised National Plumbing Code, including RMP-signed plans, administrative review, inspection, and testing. The plumbing code locators state the permit, plan, review, inspection, testing, and Registered Master Plumber requirements.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Summary of Key Numerical Standards section, line 205; DENR Environmental Standards section",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-008-04-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.762103+00:00",
       "content_hash": "sha256:78a22d705dc3e141f02d240b63f9c197b42bb1578cbf4d67514ea27559f69fda"
     },
     {
       "question_id": "4fd23aec-9698-4183-ad57-9575ab1eb5f7",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "Which combination of professional licenses and certifications is required for a comprehensive building utility system design that includes electrical distribution, HVAC systems, plumbing, fire protection, and solar renewable energy?",
+      "text": "What is the correct LEA response to a building energy-performance question?",
       "options": [
         {
           "id": "a",
-          "text": "Only a Licensed Architect can certify all utility systems under a single design responsibility, which is not typically allowed by law"
+          "text": "Use RA 11285 with the DOE Guidelines for new construction, retrofits, lighting, controls, daylighting, and envelope OTTV."
         },
         {
           "id": "b",
-          "text": "Licensed Electrical Engineer (PEC), Licensed Mechanical Engineer (PD 1058), Licensed Sanitary Engineer (RA 1378), BFP-Certified Fire Protection Specialist (RA 9514), and DOE-certified renewable energy designer"
+          "text": "Use only the plumbing code because energy performance is a drainage issue."
         },
         {
           "id": "c",
-          "text": "All utility designs can be completed by a single Licensed Mechanical Engineer with PRC certification, which is not feasible for all systems"
+          "text": "Use only Spanish colonial planning rules because orientation affects solar gain."
         },
         {
           "id": "d",
-          "text": "A Licensed Architect alone, supported by paraprofessional technicians without professional licenses, which is not compliant with regulations"
+          "text": "Use no statutory source because energy conservation is optional."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Architects coordinate overall building design and compliance but do not individually design or certify specialized utility systems; they work with licensed specialists.",
-        "c": "A single mechanical engineer cannot design electrical systems, fire protection systems, or renewable energy systems; each requires specific licensing.",
-        "d": "Paraprofessional technicians cannot design utility systems or provide professional certification; all designs must be signed and sealed by licensed professionals.",
-        "correct": "Comprehensive building utility design requires specialized professional licensing for each system: Licensed Electrical Engineer for electrical systems per PEC; Licensed Mechanical Engineer for HVAC and mechanical systems per PD 1058; Licensed Sanitary Engineer for water supply and wastewater per RA 1378; BFP-Certified Fire Protection Specialist for fire protection per RA 9514; and DOE-certified or qualified designer for renewable energy systems per RA 9513. Each professional bears certification responsibility for their discipline. The Licensed Architect coordinates and integrates all designs.",
-        "takeaway": "Complex utility systems require multiple specialized licensed professionals; each discipline has specific licensing requirements under respective laws."
-      },
+      "rationale": "Use RA 11285 with the DOE Guidelines for new construction, retrofits, lighting, controls, daylighting, and envelope OTTV. RA 11285 and the DOE Guidelines are the checked source families for building energy performance.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Professional Regulation and Licensing section, lines 172-183",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-008-04-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.772264+00:00",
       "content_hash": "sha256:9298c61b3bc18c6e843dcb23c812837159d2084e3b05e5649fee4f12773c6a2e"
     },
     {
       "question_id": "c5fe4c99-47d8-4b5f-bce3-88d652cfcc3c",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "A hospital building project in the Philippines must comply with RA 1378 (Revised National Plumbing Code) for medical gas systems, electrical standards under PEC for life-critical equipment, and fire protection under RA 9514 for patient safety. If these three regulatory requirements appear to create conflicting design specifications for a particular system component, how should the design team resolve the conflict?",
+      "text": "What is the first step when a utility item mixes electrical, plumbing, and energy topics?",
       "options": [
         {
           "id": "a",
-          "text": "Select the least restrictive requirement to reduce design and construction costs, ensuring budget adherence"
+          "text": "Classify the system and then select the controlling source family before applying details."
         },
         {
           "id": "b",
-          "text": "Apply the most stringent requirement from each regulation, then integrate them to ensure all standards are met simultaneously"
+          "text": "Choose the most familiar numerical answer even when it belongs to a different system."
         },
         {
           "id": "c",
-          "text": "Follow only RA 9514 since fire safety is the supreme consideration in healthcare facilities, prioritizing patient safety"
+          "text": "Treat all utility topics as architectural style questions."
         },
         {
           "id": "d",
-          "text": "Request a waiver from the Department of Health (DOH) to determine which standard applies, streamlining the approval process"
+          "text": "Use contractor preference as the controlling rule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Selecting the least restrictive requirement violates the principle that all applicable regulations must be met; this creates non-compliance and safety risks.",
-        "c": "While fire safety is important, all applicable regulations must be met. Hospitals must comply with plumbing codes, electrical codes, and fire codes simultaneously.",
-        "d": "No regulatory agency issues waivers that override the requirement to comply with applicable national laws. The design must integrate all requirements.",
-        "correct": "When multiple Philippine utility regulations apply to a single building system, the design approach is to meet ALL standards simultaneously by applying the most stringent requirement from each regulation. This ensures comprehensive safety and compliance. For example, if plumbing requires a specific backflow prevention device and electrical codes require additional grounding, both must be implemented. Conflicts are resolved through integrated design, not by selecting the least stringent standard or choosing a single regulation.",
-        "takeaway": "Resolve regulatory conflicts by meeting all applicable standards simultaneously through integrated design; do not choose lesser standards or seek waivers."
-      },
+      "rationale": "Classify the system and then select the controlling source family before applying details. The article organizes PEC, plumbing-code, RA 11285, and DOE responsibilities by system scope.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Interaction and Precedence of Regulations section, combined with practical building design principles",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-008-04-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.760878+00:00",
       "content_hash": "sha256:cb55a44abbc2a84ebb4538dd5721006708696941bf3e8e6270726c1d29c21587"
     },
     {
       "question_id": "ac7167a0-3864-4633-8665-aa0368205333",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "Which law establishes the legal framework for renewable energy integration in Philippine buildings, including solar photovoltaic systems and tax incentives?",
+      "text": "Which source family should control a solar PV interconnection question?",
       "options": [
         {
           "id": "a",
-          "text": "RA 7832 (Anti-Pilferage Law)"
+          "text": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection."
         },
         {
           "id": "b",
-          "text": "RA 9513 (Renewable Energy Act 2008)"
+          "text": "The plumbing code because PV modules are usually near roof drains."
         },
         {
           "id": "c",
-          "text": "RA 11285 (Energy Efficiency and Conservation Act 2019)"
+          "text": "A history source because solar panels change the building appearance."
         },
         {
           "id": "d",
-          "text": "RA 9275 (Philippine Clean Water Act 2004)"
+          "text": "Only the DOE energy guideline, with no electrical-code coordination."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RA 7832 is the Anti-Pilferage Law, which addresses theft of electrical and water services—unrelated to renewable energy incentives or integration.",
-        "c": "RA 11285 addresses energy efficiency and conservation standards, not renewable energy incentives or system integration requirements.",
-        "d": "RA 9275 is the Philippine Clean Water Act, governing wastewater discharge and water quality standards, not renewable energy.",
-        "correct": "RA 9513 (Renewable Energy Act 2008) is the primary legislation promoting renewable energy integration in buildings. It covers solar PV systems, wind installations, geothermal systems, and provides tax incentives. The Department of Energy (DOE) administers this law and provides technical standards and certification for renewable energy systems.",
-        "takeaway": "RA 9513 is the dedicated renewable energy legislation; understand its scope includes incentives, technical standards, and DOE administration."
-      },
+      "rationale": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection. PEC Article 6.90 is the checked local source for PV electrical-system requirements.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Energy and Environmental Compliance section",
       "bloom_level": "remember",
@@ -451,30 +397,30 @@
       "model_id": "ALE-UTIL-008-04-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.773163+00:00",
       "content_hash": "sha256:f7fc4e867ee4f72323c63cd83a3dd334a6a17328b479be3f210d69a670e1587b"
     },
     {
       "question_id": "cf8f658c-2f51-4cf7-8ad4-74b104109b86",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "RA 7832 (Anti-Pilferage Law) specifically targets theft of utility services. Which of the following scenarios would fall under the enforcement scope of this law?",
+      "text": "Which source family should control plans for a plumbing installation permit?",
       "options": [
         {
           "id": "a",
-          "text": "Illegal connections to water supply lines to bypass meter readings and water charges"
+          "text": "The Revised National Plumbing Code, including RMP-signed plans, administrative review, inspection, and testing."
         },
         {
           "id": "b",
-          "text": "Non-compliance with HVAC efficiency standards in a commercial building"
+          "text": "PEC Article 6.90 because all utility systems use service entrances."
         },
         {
           "id": "c",
-          "text": "Failure to obtain an Environmental Compliance Certificate before construction"
+          "text": "A UAP fee schedule with no plumbing-code review."
         },
         {
           "id": "d",
-          "text": "Installation of electrical systems without a licensed electrical engineer's supervision"
+          "text": "Only the DOE lighting-power-density rules."
         }
       ],
       "correct_option_id": "a",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Non-compliance with energy efficiency standards violates RA 11285, not the Anti-Pilferage Law.",
-        "c": "Failure to obtain an ECC violates DENR environmental regulations, not the Anti-Pilferage Law.",
-        "d": "Failure to use a licensed engineer violates professional licensing requirements under the Professional Regulation Commission, not the Anti-Pilferage Law.",
-        "correct": "RA 7832 (Anti-Pilferage Law) addresses theft of electrical and water services through illegal connections, meter tampering, and bypassing payment systems. Illegal water connections and electrical theft by bypassing meters are direct violations of this law and subject to criminal and civil penalties. This law protects utility infrastructure and revenue collection systems.",
-        "takeaway": "RA 7832 specifically targets theft and unauthorized consumption of electrical and water services through illegal connections or meter tampering."
-      },
+      "rationale": "The Revised National Plumbing Code, including RMP-signed plans, administrative review, inspection, and testing. The plumbing code locators state the permit, plan, review, inspection, testing, and Registered Master Plumber requirements.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: mentions RA 7832 under regulatory angles; article context regarding utility protection",
       "bloom_level": "understand",
@@ -501,44 +441,38 @@
       "model_id": "ALE-UTIL-008-04-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.768463+00:00",
       "content_hash": "sha256:69285e392d5ffa2b982d91e196f80feac8eebe69981c4fcc60f4120687e98314"
     },
     {
       "question_id": "6b02f55d-25da-490b-b79b-a00081517dcd",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "A developer is planning a 10,000 square meter mixed-use building (residential, commercial, office) in a commercial zone that includes a manufacturing tenant with wastewater discharge. The project must satisfy PD 1096 (National Building Code), RA 9514 (Fire Code), RA 11285 (Energy Efficiency), RA 9275 (Clean Water Act), and DENR DAO 2016-08 (noise limits). According to Philippine regulatory hierarchy, when the design team identifies that the manufacturing operation's noise during daytime hours will reach 75 dB (exceeding the 70 dB commercial zone limit), and their wastewater BOD will reach 60 mg/L (exceeding the 50 mg/L Class C water limit), which course of action correctly resolves these violations?",
+      "text": "What is the correct LEA response to a building energy-performance question?",
       "options": [
         {
           "id": "a",
-          "text": "The violations are acceptable because manufacturing facilities are exempt from noise and water quality limits in commercial zones, as per special provisions in the local ordinance"
+          "text": "Use RA 11285 with the DOE Guidelines for new construction, retrofits, lighting, controls, daylighting, and envelope OTTV."
         },
         {
           "id": "b",
-          "text": "Accept the violations and pay environmental penalties to DENR-EMB as an alternative to compliance, which is a common practice in certain industrial areas"
+          "text": "Use only the plumbing code because energy performance is a drainage issue."
         },
         {
           "id": "c",
-          "text": "Redesign the manufacturing tenant's operations, include noise mitigation (silencers, enclosures, operational restrictions), upgrade wastewater treatment to meet 50 mg/L BOD, and ensure fire safety per RA 9514—all regulatory requirements must be met simultaneously"
+          "text": "Use only Spanish colonial planning rules because orientation affects solar gain."
         },
         {
           "id": "d",
-          "text": "Prioritize fire safety compliance per RA 9514 and ignore noise and water quality limits since fire protection is the supreme regulation, overriding other environmental concerns"
+          "text": "Use no statutory source because energy conservation is optional."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Manufacturing facilities in commercial zones are not exempt from environmental and noise regulations. All occupancy types must comply with DENR standards regardless of zone classification.",
-        "b": "Environmental penalties are enforcement consequences for violations, not acceptable alternatives to compliance. Violations require corrective action, not fee-based acceptance.",
-        "d": "Fire safety supremacy applies only to fire protection design; it does not excuse violations of environmental standards, noise limits, or other applicable regulations. All requirements must be met simultaneously.",
-        "correct": "All applicable Philippine regulations must be satisfied simultaneously. The manufacturing tenant cannot be exempt from DENR noise limits (DAO 2016-08) or water quality limits (RA 9275) simply because it operates in a commercial zone. The developer must integrate multiple compliance approaches: operational modifications and noise mitigation (silencers, acoustic enclosure of equipment, operational hour restrictions) to meet 70 dB commercial zone limits; wastewater treatment system upgrades to achieve 50 mg/L BOD for Class C waters; and concurrent compliance with fire safety per RA 9514. Regulatory hierarchy shows that no single regulation supersedes others in non-fire-related matters. Fire safety (RA 9514) remains supreme only for fire protection system design conflicts—not for environmental or noise violations.",
-        "takeaway": "Regulatory compliance requires meeting ALL applicable laws simultaneously through integrated design and operational management; no single regulation justifies non-compliance with others except fire safety in fire-specific contexts."
-      },
+      "rationale": "Use RA 11285 with the DOE Guidelines for new construction, retrofits, lighting, controls, daylighting, and envelope OTTV. RA 11285 and the DOE Guidelines are the checked source families for building energy performance.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Interaction and Precedence of Regulations section; DENR Environmental Standards; RA 9275 enforcement; comprehensive building project integration principles",
       "bloom_level": "analyze",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-008-04-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.770357+00:00",
       "content_hash": "sha256:e506f58b81afb14ecb0bab73e2a97f4865e13b42f88e38afdd46f7f3ddcab512"
     },
     {
       "question_id": "556e3a8d-a19c-486b-be7c-0a0be4cccbda",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "An office building of 7,200 square meters must comply with RA 11285 (Energy Efficiency and Conservation Act 2019) for energy performance standards. Under this law, which of the following statements correctly describes the building's energy compliance obligations?",
+      "text": "What is the first step when a utility item mixes electrical, plumbing, and energy topics?",
       "options": [
         {
           "id": "a",
-          "text": "The building is exempt because RA 9513 (Renewable Energy Act) is sufficient for energy management, which is a common misunderstanding"
+          "text": "Classify the system and then select the controlling source family before applying details."
         },
         {
           "id": "b",
-          "text": "The building must meet mandatory energy efficiency standards, maintain energy management systems, and undergo performance monitoring because it exceeds the 5,000 square meter threshold"
+          "text": "Choose the most familiar numerical answer even when it belongs to a different system."
         },
         {
           "id": "c",
-          "text": "The building must install solar panels as the only way to comply with energy efficiency requirements, which is not entirely accurate"
+          "text": "Treat all utility topics as architectural style questions."
         },
         {
           "id": "d",
-          "text": "Energy efficiency compliance is optional; the building may choose to comply or pay an environmental fee instead, which is a misinterpretation of the law"
+          "text": "Use contractor preference as the controlling rule."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RA 9513 addresses renewable energy incentives, not mandatory energy efficiency standards. Both laws can apply to the same building without overlap.",
-        "c": "Solar panels are one option under RA 9513 but are not the sole compliance pathway for RA 11285 energy efficiency requirements. HVAC and lighting efficiency are equally important.",
-        "d": "Energy efficiency compliance under RA 11285 is mandatory for buildings exceeding 5,000 m²; fees cannot substitute for compliance.",
-        "correct": "RA 11285 mandates that buildings exceeding 5,000 square meters must comply with energy efficiency standards for systems including HVAC efficiency ratings, lighting power density limits, and energy management systems. The 7,200 square meter building falls within this requirement and must implement these measures. Performance monitoring and regular reporting are mandatory. Compliance is not optional; it is a legal requirement for buildings of this size.",
-        "takeaway": "Buildings exceeding 5,000 m² must comply with RA 11285 mandatory energy efficiency standards, including HVAC/lighting efficiency and energy management systems."
-      },
+      "rationale": "Classify the system and then select the controlling source family before applying details. The article organizes PEC, plumbing-code, RA 11285, and DOE responsibilities by system scope.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Energy and Environmental Compliance section, lines 74-81",
       "bloom_level": "apply",
@@ -601,44 +529,38 @@
       "model_id": "ALE-UTIL-008-04-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.764394+00:00",
       "content_hash": "sha256:454a353ab6f403369c313df11615289226033c85a53dc38642196f6b817879e3"
     },
     {
       "question_id": "5d9b57be-0834-4832-8dfe-677dbd285c17",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "An architect is designing a high-rise residential building in Metro Manila and must obtain permits from multiple agencies. According to Philippine law, which sequence correctly represents the typical permitting flow for a project affecting environmental resources, fire safety, and electrical systems?",
+      "text": "Which source family should control a solar PV interconnection question?",
       "options": [
         {
           "id": "a",
-          "text": "Obtain building permit from DPWH first, then Environmental Compliance Certificate from DENR-EMB, then fire safety inspection from BFP after construction completion"
+          "text": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection."
         },
         {
           "id": "b",
-          "text": "Obtain Environmental Compliance Certificate from DENR-EMB before construction (if required), then obtain building permit from DPWH, then conduct fire safety inspections by BFP during construction"
+          "text": "The plumbing code because PV modules are usually near roof drains."
         },
         {
           "id": "c",
-          "text": "Obtain fire safety inspection certificate from BFP first, then submit architectural and electrical designs to DPWH for building permit approval"
+          "text": "A history source because solar panels change the building appearance."
         },
         {
           "id": "d",
-          "text": "All permits must be obtained simultaneously before design phase begins; no sequential permitting is allowed"
+          "text": "Only the DOE energy guideline, with no electrical-code coordination."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This sequence is incorrect because the ECC must be obtained before construction begins, not after. Fire safety inspections occur both during construction and after completion, not solely after construction.",
-        "c": "BFP fire safety inspection is not the first permit; building permits from DPWH require complete design review first.",
-        "d": "Permits are obtained sequentially according to project phases, not simultaneously before design phase.",
-        "correct": "The typical Philippine permitting sequence follows these phases: (1) Pre-construction: DENR-EMB issues an Environmental Compliance Certificate (if required) before construction begins based on environmental impact assessment. (2) Design and Permitting: Architect and engineers submit complete designs to DPWH (City/Municipal Building Official), which issues the building permit after design review. (3) Construction: BFP may inspect fire protection systems during construction and before occupancy. (4) Completion: DPWH issues Certificate of Occupancy after final inspection; BFP issues Fire Safety Inspection Certificate. This sequence ensures environmental compliance before work begins, design compliance before construction, and safety verification before occupancy.",
-        "takeaway": "Permitting sequence: ECC (if required) → Building Permit → Construction (with inspections) → Certificate of Occupancy and Fire Safety Certificate."
-      },
+      "rationale": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection. PEC Article 6.90 is the checked local source for PV electrical-system requirements.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Practical Integration for Building Projects section, lines 185-196",
       "bloom_level": "apply",
@@ -651,44 +573,38 @@
       "model_id": "ALE-UTIL-008-04-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.758221+00:00",
       "content_hash": "sha256:d8910d3d9073fc1eceb3ad6c942fcc26acc58ce00c732202c9638c2cac1743e8"
     },
     {
       "question_id": "ab936f82-45fd-4a22-8f2e-7e43336a77a3",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "The Energy Regulatory Commission (ERC) regulates distributed energy resources including rooftop solar systems, while the Department of Energy (DOE) administers renewable energy incentives under RA 9513. A building owner installs a grid-tied solar PV system but fails to register it with the ERC for grid interconnection standards compliance. Which consequence correctly describes the regulatory result?",
+      "text": "Which source family should control plans for a plumbing installation permit?",
       "options": [
         {
           "id": "a",
-          "text": "The system is legal because DOE certification for renewable energy is the only requirement; ERC registration is optional, which is a misunderstanding of regulatory requirements"
+          "text": "The Revised National Plumbing Code, including RMP-signed plans, administrative review, inspection, and testing."
         },
         {
           "id": "b",
-          "text": "The system violates ERC regulations regarding grid interconnection standards and distributed energy resource integration; the owner may face penalties and system disconnection orders"
+          "text": "PEC Article 6.90 because all utility systems use service entrances."
         },
         {
           "id": "c",
-          "text": "Only the DOE can impose penalties; the ERC has no enforcement authority over rooftop solar installations, which is incorrect as ERC oversees grid compliance"
+          "text": "A UAP fee schedule with no plumbing-code review."
         },
         {
           "id": "d",
-          "text": "The building owner must pay additional energy charges to the utility for the unregistered system but no other penalties apply, which overlooks potential regulatory actions"
+          "text": "Only the DOE lighting-power-density rules."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Both DOE and ERC requirements apply to grid-tied systems. DOE provides incentives and technical standards; ERC ensures grid interconnection compliance. Both are mandatory.",
-        "c": "The ERC has full enforcement authority over distributed energy resources and grid interconnection standards for all building-scale renewable systems.",
-        "d": "Regulatory violations result in administrative penalties and enforcement action, not merely additional utility charges. The regulatory framework is more stringent than fee-based compliance.",
-        "correct": "The ERC has mandatory regulatory authority over distributed energy resources (DER), including rooftop solar systems that connect to the grid. Registration with the ERC ensures that the system meets grid interconnection standards, protects grid stability, and complies with regulatory requirements. Failure to register is a violation of ERC regulations, not merely an optional compliance measure. The owner may face administrative penalties, cease-and-desist orders, or mandatory system disconnection until proper registration is completed.",
-        "takeaway": "Grid-tied solar systems require both DOE certification (RA 9513) AND ERC registration; both regulatory bodies have overlapping jurisdiction and enforcement authority."
-      },
+      "rationale": "The Revised National Plumbing Code, including RMP-signed plans, administrative review, inspection, and testing. The plumbing code locators state the permit, plan, review, inspection, testing, and Registered Master Plumber requirements.",
       "explanation": null,
       "code_citation": "LEA-UTIL-008-04.mdx: Energy and Environmental Compliance section; Regulatory Agencies section on DOE and ERC",
       "bloom_level": "analyze",
@@ -701,46 +617,40 @@
       "model_id": "ALE-UTIL-008-04-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.771267+00:00",
       "content_hash": "sha256:b42368f3758ed4cb81c0feadd8a6093e92167cd3da39b47b81437d507b35c15a"
     },
     {
       "question_id": "4cb8116d-cfba-41e4-bd16-603f2c3c2aec",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
       "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "A building design team is integrating utility systems under DENR environmental standards (DAO 2016-08 noise limits) and PEC electrical standards simultaneously. A commercial zone location permits 70 dB daytime noise limits per DENR. The HVAC system design, required to comply with PD 1058, will generate 75 dB noise during operation. How should the team resolve this regulatory conflict?",
+      "text": "What is the correct LEA response to a building energy-performance question?",
       "options": [
         {
           "id": "a",
-          "text": "Accept the 75 dB HVAC noise level because PD 1058 takes precedence over DENR environmental standards, which is not a valid resolution"
+          "text": "Use RA 11285 with the DOE Guidelines for new construction, retrofits, lighting, controls, daylighting, and envelope OTTV."
         },
         {
           "id": "b",
-          "text": "Ignore the DENR noise limit because electrical and mechanical codes are primary regulations; environmental standards are secondary, which is not accurate"
+          "text": "Use only the plumbing code because energy performance is a drainage issue."
         },
         {
           "id": "c",
-          "text": "Modify the HVAC system design (silencers, acoustic insulation, equipment relocation) to comply with both PD 1058 mechanical standards and the DENR 70 dB noise limit"
+          "text": "Use only Spanish colonial planning rules because orientation affects solar gain."
         },
         {
           "id": "d",
-          "text": "Request a waiver from the Department of Environment and Natural Resources allowing 75 dB commercial zone noise, which may not be granted"
+          "text": "Use no statutory source because energy conservation is optional."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "PD 1058 and DENR standards are complementary, not competing; both must be met simultaneously.",
-        "b": "DENR environmental standards are national-level requirements with full regulatory authority, not secondary guidelines.",
-        "d": "Regulatory agencies do not issue waivers that excuse non-compliance with national environmental standards; the design must integrate both requirements.",
-        "correct": "When multiple regulatory requirements apply (PD 1058 mechanical standards and DENR noise limits), the design must satisfy BOTH through integrated design. The HVAC system must function per PD 1058 technical standards while also meeting DENR environmental noise limits of 70 dB for commercial zones (DAO 2016-08). This is achieved through design modifications such as acoustic enclosures, vibration isolation, silencers, or system relocation. Both regulations are equally binding; neither takes precedence over the other.",
-        "takeaway": "Resolve conflicts between technical codes and environmental standards through integrated design that meets both sets of requirements simultaneously."
-      },
+      "rationale": "Use RA 11285 with the DOE Guidelines for new construction, retrofits, lighting, controls, daylighting, and envelope OTTV. RA 11285 and the DOE Guidelines are the checked source families for building energy performance.",
       "explanation": null,
-      "code_citation": "LEA-UTIL-008-04.mdx: Environmental Standards and Permitting section; DENR noise limits per DAO 2016-08; PD 1058 requirements",
+      "code_citation": "LEA-UTIL-008-04.mdx: Environmental Standards and Permitting section; DENR noise limits per DAO 2016-08; PD 1096 (National Building Code) / RA 9514 (Fire Code)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-008-04-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.769408+00:00",
       "content_hash": "sha256:6e8fc1697e382adf1968aa15ce1c3eae816170361aaf27b0a5e6368a0c450beb"
     }
   ]

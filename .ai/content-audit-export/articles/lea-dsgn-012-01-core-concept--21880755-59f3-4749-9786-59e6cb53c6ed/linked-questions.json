@@ -8,23 +8,23 @@
       "question_id": "21750aff-9192-4866-8658-121af507bcf8",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "A site plan shows contour lines at 0.5 m intervals. The northernmost contour is 156.0 m AMSL; the southernmost is 152.0 m AMSL. The site is 200 m long (north-south). What is the average slope grade from north to south?",
+      "text": "What does site analysis study?",
       "options": [
         {
           "id": "a",
-          "text": "2.0%; Gentle slope (3–8% category)"
+          "text": "Contextual forces that influence building placement, orientation, enclosure, and landscape relationship."
         },
         {
           "id": "b",
-          "text": "0.2%; Flat (0–3% category)"
+          "text": "Only interior paint color."
         },
         {
           "id": "c",
-          "text": "4 m; Not a percentage (dimension error)"
+          "text": "Only furniture count."
         },
         {
           "id": "d",
-          "text": "2%; Gentle slope, but trending toward flat at the boundary"
+          "text": "Only final punch list items."
         }
       ],
       "correct_option_id": "a",
@@ -33,12 +33,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct. You calculated the slope correctly; however, 2% is technically in the flat category (0–3%), not gentle (3–8%).",
-        "b": "Incorrect. 0.2% would be an extremely flat site (4.0 ÷ 2000 = 0.002). You may have used the wrong distance unit.",
-        "c": "Incorrect. 4 m is the elevation drop, not slope percentage. Slope must be expressed as a percentage or ratio.",
-        "d": "Incorrect. 2% is correct, but it is flat (0–3%), not gentle (3–8%).",
-        "correct": "Elevation drop: 156.0 − 152.0 = 4.0 m. Horizontal distance: 200 m. Slope % = (4.0 ÷ 200) × 100 = 2.0%. This is in the 0–3% flat category (2% slope). For site planning, a 2% slope is manageable (good drainage, minimal terracing needed).",
-        "takeaway": "Always calculate slope % correctly: (elevation change ÷ horizontal distance) × 100. Be sure to use consistent units. A 2% slope is very gentle and requires minimal site earthwork."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source defines site analysis as studying contextual forces affecting the building and landscape relationship.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Slope calculation; topographic analysis",
@@ -52,44 +52,44 @@
       "model_id": "ALE-DSGN-012-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.837567+00:00",
       "content_hash": "sha256:5065e0ec4b9a8a37bbe170c9bb85bb05a890fc18dc4962b1f098b0ad4bd10c97"
     },
     {
       "question_id": "3167534f-dea8-44bc-bce8-6c4acd62b2a8",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "What do tightly-spaced contour lines on a site plan indicate?",
+      "text": "What do closely spaced contour lines indicate?",
       "options": [
         {
           "id": "a",
-          "text": "A gentle, gradual slope; the site has minimal elevation change, which is typical for flat terrains"
+          "text": "A relatively steep rise in elevation."
         },
         {
           "id": "b",
-          "text": "A steep slope; the elevation changes significantly over a short horizontal distance"
+          "text": "A completely flat site."
         },
         {
           "id": "c",
-          "text": "Proposed terraces or retaining walls, which are often used to manage steep gradients"
+          "text": "A property boundary by themselves."
         },
         {
           "id": "d",
-          "text": "Utility locations; tight spacing indicates conduit bundles, which are typically planned for efficient space use"
+          "text": "A utility easement only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. You inverted the relationship; tight spacing indicates steeper, not gentler, slopes.",
-        "b": "Correct. You understand contour spacing and slope steepness relationship.",
-        "c": "Incorrect. Proposed terraces are shown separately; contour lines represent existing topography.",
-        "d": "Incorrect. Utilities are marked separately; contours are purely topographic.",
-        "correct": "Contour line spacing is inversely proportional to slope steepness. Tightly-spaced contours = steep slope (elevation changes rapidly). Widely-spaced contours = gentle slope (elevation change is gradual). This is a fundamental topographic reading skill.",
-        "takeaway": "Contour line spacing directly indicates slope: tight lines = steep, wide lines = gentle. This allows you to understand existing site topography at a glance and identify areas suitable for building placement (gentler slopes) versus challenges (steep slopes requiring terracing)."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The source states closely spaced contours indicate a relatively steep rise.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Topographic analysis; contour line reading",
@@ -103,30 +103,30 @@
       "model_id": "ALE-DSGN-012-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.835624+00:00",
       "content_hash": "sha256:8fb1b5dd9bdbfe56a1c8ffeccb0c8798d46dc61e9cdd608aa15ed03477928a46"
     },
     {
       "question_id": "c4721fb2-29e4-4f89-b2a3-baee821492a3",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "A site analysis shows a 200-year-old mango tree on the property with a canopy spread of 20 m diameter. The tree is healthy and provides significant shade. How should the architect treat this tree in site planning?",
+      "text": "How is slope percentage calculated?",
       "options": [
         {
           "id": "a",
-          "text": "Preserve the tree; it provides natural cooling, reduces site development cost, and may have ecological or cultural value"
+          "text": "Elevation gain divided by horizontal distance, multiplied by 100."
         },
         {
           "id": "b",
-          "text": "Remove it; large trees obstruct building placement and are maintenance problems, especially in urban settings"
+          "text": "Horizontal distance divided by north arrow."
         },
         {
           "id": "c",
-          "text": "Preserve only if the tree does not reduce solar access to proposed building windows, which is crucial for energy efficiency"
+          "text": "Window width divided by floor area."
         },
         {
           "id": "d",
-          "text": "Tree preservation is a landscape choice, not an architectural site analysis decision, unless mandated by local ordinances"
+          "text": "Lot area multiplied by facade color."
         }
       ],
       "correct_option_id": "a",
@@ -135,12 +135,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct. You recognized tree preservation as a core site strategy, not an afterthought.",
-        "b": "Incorrect. Removing mature trees increases costs (shade, cooling, landscaping) and loses ecological value.",
-        "c": "Incorrect. Tree preservation and solar access can both be achieved through thoughtful building placement; it is not a binary choice.",
-        "d": "Incorrect. Tree preservation is an architectural site analysis decision with cost and performance implications.",
-        "correct": "Large mature trees are valuable site assets: they provide natural cooling (shade), absorb stormwater (reducing drainage load), improve air quality, and reduce development costs compared to adding mechanical cooling. A 200-year-old tree has ecological, cultural, and practical value. Preservation should be a priority, with building placement designed around the tree.",
-        "takeaway": "In site analysis, identify and preserve valuable trees. They reduce mechanical cooling loads, absorb stormwater, improve microclimate, and provide cost savings. Building placement should adapt to existing vegetation, not demolish it. This is both sustainable design and economically smart."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source gives slope percent as elevation gain over horizontal distance times 100.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Sustainable site planning; ecological design",
@@ -154,44 +154,44 @@
       "model_id": "ALE-DSGN-012-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.839806+00:00",
       "content_hash": "sha256:fcb17fde894053b73f6eff8bafec2a38f5ff6a62a094eb93178e15e9d19a715a"
     },
     {
       "question_id": "4a8befb5-dce8-41f4-9538-835309d9a01c",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "A site analysis identifies a major highway 100 m from the property, with estimated traffic noise of 75 dB during peak hours. How should this noise constraint influence the site planning and building design?",
+      "text": "Which site-analysis item is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Noise at 100 m distance is negligible; place any space program (bedrooms, offices, classrooms) anywhere on the site without concern"
+          "text": "Availability of water mains, sanitary and storm sewers, gas, electrical, communications, and fire hydrants."
         },
         {
           "id": "b",
-          "text": "Place noise-sensitive spaces (bedrooms, offices, classrooms) on the far side of the building, away from the highway; use site buffer zones (vegetation, berms) to reduce noise transmission"
+          "text": "A guaranteed zoning bonus with no source."
         },
         {
           "id": "c",
-          "text": "75 dB requires building abandonment; the site is unsuitable for development due to excessive noise levels"
+          "text": "A fixed river setback from memory."
         },
         {
           "id": "d",
-          "text": "Noise design is the responsibility of the mechanical engineer, not the architect, and should be addressed in the mechanical plans"
+          "text": "A universal road width for every site."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. 75 dB in quiet spaces (bedrooms) causes sleep disruption. 100 m distance does not make 75 dB negligible.",
-        "b": "Correct. You recognized noise as a site design constraint and proposed appropriate mitigation strategies.",
-        "c": "Incorrect. 75 dB is manageable with site planning and design; development is feasible.",
-        "d": "Incorrect. The architect is responsible for site planning and building layout strategy; mechanical engineers then provide acoustic specifications.",
-        "correct": "75 dB is moderately loud (conversational speech ≈ 60 dB; lawnmower ≈ 90 dB). Noise-sensitive uses (bedrooms, offices, libraries) should be placed away from the source. Building buffers (secondary spaces like storage, bathrooms, corridors on the loud side), site buffers (vegetation, earth berms), and window/door specifications (double-glazed, acoustic seals) can mitigate noise. The architect's site planning decisions are critical.",
-        "takeaway": "Noise analysis informs building orientation, program placement, and buffer strategy. Sensitive spaces on quiet side; buffering spaces on noise side. Vegetation and earth berms reduce noise. This is a critical site analysis outcome."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source includes utility availability in site analysis.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Acoustic design; site planning; environmental analysis",
@@ -205,44 +205,44 @@
       "model_id": "ALE-DSGN-012-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.838341+00:00",
       "content_hash": "sha256:e19b72db681a0aafb9af02fde1c71e7d84e91c91f4423b4da1dbea6f67821fcd"
     },
     {
       "question_id": "e770c9be-45eb-4c0a-8e3b-24e2b0524df5",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "A site plan shows contour lines at 1 m intervals. Over a horizontal distance of 40 m, the elevation drops by 6 m. What is the slope percentage, and how should this slope be classified?",
+      "text": "Why examine soil and groundwater?",
       "options": [
         {
           "id": "a",
-          "text": "Slope = 6%; Classification = Flat (0–3%), which is suitable for most types of development"
+          "text": "They affect foundation suitability, settlement risk, drainage, and basement water issues."
         },
         {
           "id": "b",
-          "text": "Slope = 15%; Classification = Moderate/Steep boundary (8–18%) per standard civil engineering practice"
+          "text": "They only affect paint color."
         },
         {
           "id": "c",
-          "text": "Slope = 6.67%; Classification = Gentle (3–8%), allowing for moderate construction challenges"
+          "text": "They replace the need for boundaries."
         },
         {
           "id": "d",
-          "text": "Slope = 150%; Classification = Very steep (>25%), requiring specialized engineering solutions"
+          "text": "They are unrelated to site decisions."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. 6% would result from dividing by 100 instead of 40; incorrect calculation.",
-        "b": "Correct. You calculated the slope correctly: (6÷40)×100 = 15%, moderate slope classification.",
-        "c": "Incorrect. 6.67% might result from misreading contour intervals or calculation error (e.g., 2.67/40); correct is 6÷40=0.15=15%.",
-        "d": "Incorrect. 150% would result from multiplying 6×40 instead of dividing; represents a near-vertical cliff.",
-        "correct": "Slope % = (vertical rise ÷ horizontal run) × 100 = (6 ÷ 40) × 100 = 15%. This falls in the moderate slope category (8–15%), which requires site grading and drainage planning. The site slopes noticeably and may require terracing or cut-and-fill design.",
-        "takeaway": "Slope % = (rise÷run)×100. Always divide elevation change by horizontal run distance. For a 6m rise over 40m horizontal: (6÷40)×100 = 15%. Classification: 15% is moderate slope (8–15%), requiring attentive site grading."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The source ties soil and groundwater to foundation and drainage risk.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Slope classification; site analysis methodology",
@@ -256,30 +256,30 @@
       "model_id": "ALE-DSGN-012-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.836657+00:00",
       "content_hash": "sha256:3f14abb927e669a3680b92a8f5c7a8c3d367ee1d56b16dce6f3ed514c5faaa64"
     },
     {
       "question_id": "8e4acae9-a7a2-4a1f-87f4-7ddaee3d77b9",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "What does 'effective daylighting distance' mean in site analysis, and how does it influence interior space planning?",
+      "text": "Which climate information belongs in site analysis?",
       "options": [
         {
           "id": "a",
-          "text": "Effective daylighting distance = 2.5 × ceiling height. Interior spaces beyond this distance from a window lack adequate natural light and may require supplemental electric lighting"
+          "text": "Sun path, prevailing winds, rainfall, glare, views, and noise."
         },
         {
           "id": "b",
-          "text": "All interior spaces receive equal daylighting if windows are present; daylighting distance is not a design constraint, which simplifies planning but may not be accurate."
+          "text": "Only ceiling paint."
         },
         {
           "id": "c",
-          "text": "Effective daylighting distance = ceiling height only; rooms deeper than ceiling height are automatically dark, which is a simplistic view of lighting design."
+          "text": "Only door hardware."
         },
         {
           "id": "d",
-          "text": "Daylighting distance is measured from the building exterior to property line and limits building depth, which is a common misconception."
+          "text": "Only furniture layout."
         }
       ],
       "correct_option_id": "a",
@@ -288,12 +288,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct. You understand the daylighting distance principle and its design implications.",
-        "b": "Incorrect. Light intensity decreases with distance; far corners of deep rooms are functionally dark.",
-        "c": "Incorrect. 2.5 × ceiling height is the proven guideline, not just ceiling height.",
-        "d": "Incorrect. Daylighting distance is an interior space consideration, not a property-line regulation.",
-        "correct": "Effective daylighting distance = 2.5 × ceiling height is a rule of thumb. A room with 2.4 m ceiling height has adequate daylight within 6 m of the window. Deeper spaces require supplemental lighting, skylights, or light shelves. This influences room layout (offices, classrooms near windows) and building depth/floorplate design.",
-        "takeaway": "Use the 2.5× rule to estimate daylighting zones. For a typical 3 m ceiling: 2.5 × 3 = 7.5 m daylighting depth. Place daylight-sensitive spaces (offices, learning spaces) within 7.5 m of windows. Deeper spaces (storage, mechanical) can be dark or require skylights."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The source lists climate, solar access, winds, rainfall, glare, views, and noise as site analysis factors.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Daylighting principles; interior space planning",
@@ -307,30 +307,30 @@
       "model_id": "ALE-DSGN-012-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.840516+00:00",
       "content_hash": "sha256:3d04c2efd1b0dbc7e94fbc5ef60957c5a7b77c58844a8cf91cb7f2b3994127f9"
     },
     {
       "question_id": "2dd938eb-a691-4ddb-bf19-a424943b49ec",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "A site analysis shows a pleasant eastward view of a tree-lined park 150 m away, with a major intersection (high traffic and noise) to the west. How should this information inform the architect's building orientation and program placement?",
+      "text": "What is a source-safe orientation warning for air-conditioned buildings?",
       "options": [
         {
           "id": "a",
-          "text": "Orient the building with primary views facing east; place living spaces and amenities (cafes, lounges) on the east side to frame the park view"
+          "text": "Long east and west facade exposure can increase solar heat gain and cooling load."
         },
         {
           "id": "b",
-          "text": "Build a solid wall facing west to block traffic noise; concentrate all programs on the east side, ensuring a quiet environment"
+          "text": "North arrows are unnecessary."
         },
         {
           "id": "c",
-          "text": "View and noise constraints are separate; place the building centrally on the site regardless, which may not optimize the site's potential"
+          "text": "Orientation never affects energy."
         },
         {
           "id": "d",
-          "text": "Orient the building with primary glazing facing west to maximize solar exposure for passive heating, which may increase cooling loads"
+          "text": "All sites require the same plan orientation."
         }
       ],
       "correct_option_id": "a",
@@ -339,12 +339,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Correct. You integrated multiple site analysis findings (view + noise) into a coherent design strategy.",
-        "b": "Incorrect. A solid wall is extreme; buffering spaces and acoustic design are more flexible and economical.",
-        "c": "Incorrect. Site constraints (noise) and opportunities (views) are central to design strategy, not separable.",
-        "d": "Incorrect. West orientation increases solar heat gain (problematic in tropical climate) and exposes interiors to noise.",
-        "correct": "The east view is an asset; the west noise is a constraint. Smart site planning: (1) frame the eastward view with major glazing and outdoor spaces; (2) place noise-sensitive uses (bedrooms, offices) on east; (3) buffer zones (parking, mechanical, storage) on west; (4) optional: double-glazed or acoustic wall on west. This integrates view opportunity with noise avoidance.",
-        "takeaway": "Site analysis findings (views, noise, sun, wind) should collectively inform building orientation and program placement. Integrate multiple factors: place high-value uses where conditions are favorable, place buffer uses where conditions are challenging."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "DOE guidance identifies east-west long-facade exposure as a heat-gain concern.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Site analysis integration; design strategy",
@@ -358,44 +358,44 @@
       "model_id": "ALE-DSGN-012-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.833264+00:00",
       "content_hash": "sha256:2b7dea59b71bb6551a46169955fa95977c98a2f241b1e78db6f68935eae930d4"
     },
     {
       "question_id": "2e926a42-8da9-4d2c-befe-21249760eb3e",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "A site analysis identifies strong prevailing winds from the northeast at 3.5 m/s during the cool season (December–February) in Manila. Where should the architect place primary glazing and operable windows to maximize natural ventilation and cooling benefit?",
+      "text": "A site has a 6 m drop over 40 m. What is the slope?",
       "options": [
         {
           "id": "a",
-          "text": "On the southwestern side of the building to capture prevailing winds year-round, ensuring cross-ventilation during all seasons"
+          "text": "15 percent."
         },
         {
           "id": "b",
-          "text": "On the northeastern side of the building to capture northeast prevailing winds during the cool season"
+          "text": "6 percent."
         },
         {
           "id": "c",
-          "text": "Glazing placement is independent of wind direction; ventilation is better controlled mechanically through HVAC systems"
+          "text": "40 percent."
         },
         {
           "id": "d",
-          "text": "On the western side to capture afternoon sea breezes (if near coast), which can provide cooling during the hottest part of the day"
+          "text": "240 percent."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. Southwest winds are monsoon rainfall (June–September), not the cool season. The cool season brings NE winds.",
-        "b": "Correct. You aligned window placement with prevailing wind direction for passive cooling benefit.",
-        "c": "Incorrect. In tropical Philippines, passive natural ventilation is preferred for energy and comfort; mechanical cooling is expensive.",
-        "d": "Incorrect. Afternoon (western) breezes are less reliable and typically warm; NE cool-season winds are the design target.",
-        "correct": "Prevailing northeast winds during cool season are a natural cooling resource. Placing operable windows on the northeast side captures these breezes. Cross-ventilation (windows on opposite sides) enhances air movement through the building. This passive design strategy reduces mechanical cooling loads.",
-        "takeaway": "In site analysis, understand seasonal wind patterns and design window placement to capture beneficial breezes. In Philippines: NE winds (cool, winter) are valuable; SW winds bring monsoon rain. Passive ventilation reduces cooling energy dramatically."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "6 divided by 40 times 100 equals 15 percent.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Climate-responsive design; ventilation strategy",
@@ -409,44 +409,44 @@
       "model_id": "ALE-DSGN-012-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.831922+00:00",
       "content_hash": "sha256:d6fa4d8ab1b99a3f5a1bca1c2c688ca66db8c12ab1868ac8e9c130e718afa51f"
     },
     {
       "question_id": "2eb8fa32-4c5e-40c5-b75d-16ec32456012",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "For a site in the Philippines at 14.5°N latitude, what is the optimal building orientation for minimizing solar heat gain and maximizing energy efficiency?",
+      "text": "Why map existing trees and water features?",
       "options": [
         {
           "id": "a",
-          "text": "Long axis oriented north-south (N-S), with primary facade facing east to maximize morning sun exposure and reduce afternoon heat"
+          "text": "They may need preservation and affect site layout, drainage, views, shade, and environmental response."
         },
         {
           "id": "b",
-          "text": "Long axis oriented east-west (E-W), minimizing direct east and west sun exposure while maximizing north and south facades"
+          "text": "They are always removed before design."
         },
         {
           "id": "c",
-          "text": "Building orientation is not important; passive design and shading are the primary thermal control methods, which can be adapted to any orientation"
+          "text": "They replace survey data."
         },
         {
           "id": "d",
-          "text": "Buildings should face south, regardless of latitude or climate, to capture maximum solar benefit, which is a common misconception"
+          "text": "They only affect room names."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. N-S orientation (ERR-DSGN-035 error) exposes the long building face to intense E and W sun, increasing cooling loads.",
-        "b": "Correct. You applied the tropical climate-responsive orientation principle correctly.",
-        "c": "Incorrect. Orientation is fundamental; passive design builds on a good orientation foundation.",
-        "d": "Incorrect. This is a temperate-climate principle (northern hemisphere heating). In tropical Philippines, south-facing orientation provides intense heat gain, not benefit.",
-        "correct": "In tropical Philippines, the sun is high altitude year-round (nearly overhead), making east-west exposure intense and problematic. Orienting the long axis E-W minimizes the building's width facing east and west, reducing heat gain. North and south facades have lower-angle sun (even in tropics) and can be managed with shading. This is Tropical climate-responsive design principles (UAP Green Building Code or standard practice) principle.",
-        "takeaway": "Tropical Philippines: E-W orientation (long axis east-west) is optimal. This is a critical design principle and a frequent exam focus (ERR-DSGN-035). Always verify building orientation early in site analysis."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source includes existing trees, plant materials, and water features in site analysis.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "ERR-DSGN-035; tropical climate design principles",
@@ -460,44 +460,44 @@
       "model_id": "ALE-DSGN-012-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.839086+00:00",
       "content_hash": "sha256:996da83c1b65bf977932094453e38c25bcdf5c11a620d96eeb32c86be987a25b"
     },
     {
       "question_id": "4dd31a0e-1dd8-4cb0-a21b-6552352a7d2e",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
       "topic_id": "3469bab5-911a-4eb9-b0ef-e861ee434ec3",
-      "text": "A site analysis of an urban lot in Metro Manila shows: 10 m × 25 m property; 8% slope (gentle); northeast wind exposure; existing 30 m tall building to the south blocking views and wind; major road (75 dB noise) to the west; and a medium-density residential neighborhood. The proposed building is 12 m tall, 6 stories. How should the architect synthesize these site analysis findings into a design strategy?",
+      "text": "What is the safest site-analysis takeaway?",
       "options": [
         {
           "id": "a",
-          "text": "Ignore site constraints; standardize the design to maximize floor area regardless of context, focusing solely on maximizing usable space"
+          "text": "Read physical, legal, environmental, utility, access, and climate evidence before fixing form."
         },
         {
           "id": "b",
-          "text": "Respond to slope with terraced/split-level sections on the 10 m short axis; orient long axis (25 m) E-W to minimize sun; place program on east side to access northeast winds; buffer west facade (road side) with mechanical/storage spaces; minimize impact of south building shadow"
+          "text": "Start with final elevations only."
         },
         {
           "id": "c",
-          "text": "Place all glazing on the south side to maximize daylight despite the adjacent building, which may result in increased artificial lighting needs"
+          "text": "Ignore contours if the lot is urban."
         },
         {
           "id": "d",
-          "text": "Noise analysis requires relocating the project to a quieter neighborhood; design changes cannot mitigate 75 dB, making it unsuitable for residential purposes"
+          "text": "Use unsupported local numeric rules."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect. Site context drives design; ignoring constraints leads to uncomfortable, inefficient buildings.",
-        "b": "Correct. You integrated all findings into a comprehensive response.",
-        "c": "Incorrect. South-facing glazing benefits from daylight but overlooks the opportunity to capture NE winds and the thermal liability of E-W summer sun.",
-        "d": "Incorrect. 75 dB is manageable; relocation is not necessary when design strategies exist.",
-        "correct": "This response integrates all site analysis findings into coherent design strategy: (1) Slope: terracing on short (10 m) axis manages drainage and reduces footprint impact; (2) Orientation: long axis E-W minimizes tropical sun (ERR-DSGN-035); (3) Wind: east-side program placement captures NE breezes; (4) Noise: buffer west side with non-habitable spaces; (5) Context: 12 m tall respects neighborhood while allowing 6 floors on gentle slope. This is sophisticated site-responsive design.",
-        "takeaway": "Site analysis is not an academic exercise—it drives design decisions. Slope suggests terracing, orientation, program placement, and buffer zones. Context (adjacent buildings, noise, views) inform priority hierarchy. Integration of findings creates site-responsive, efficient, and comfortable design."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The article anchors design decisions to checked site evidence.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Integrated site analysis and design strategy; climate-responsive architecture",
@@ -511,7 +511,7 @@
       "model_id": "ALE-DSGN-012-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:14.424388+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.834714+00:00",
       "content_hash": "sha256:18ae5d7c2cee669768816d0285638b414ba2745c6e4af8ca53563cf0302ec0f4"
     }
   ]

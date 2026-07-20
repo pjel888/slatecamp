@@ -39,8 +39,8 @@
         "correct": "The IRR definitions explicitly state the AoR assumes civil liability for plans, specifications, and contract documents signed and sealed, while the Consulting Architect assumes no civil liability unless attempting or succeeding to interfere with or contravene the legal and professional functions of the Architect-of-Record.",
         "takeaway": "This distinction protects specialized consultants from blanket liability while ensuring primary design accountability rests with the AoR; it also creates incentive for consultants to respect the AoR's primary authority."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Sections 1-6 and 40.",
+      "code_citation": "RA 9266 IRR Sections 1-7 and 40",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -51,7 +51,7 @@
       "model_id": "ALE-PRAC-LAW-001-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.679582+00:00",
       "content_hash": "sha256:cb851a154b8e78a02eae8bcfb9b03fa2733312d6e24b81f7dce158e91da66360"
     },
     {
@@ -89,8 +89,8 @@
         "correct": "RA 9266 explicitly repeals RA 545, the 1950 Architecture Act, after 54 years of governance.",
         "takeaway": "Understand the historical regulatory progression: RA 545 (1950) → RA 9266 (2004) represents the modernization of architecture regulation."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Sections 1-6 and 40.",
+      "code_citation": "RA 9266 IRR Sections 1-7 and 40",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,7 +101,7 @@
       "model_id": "ALE-PRAC-LAW-001-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.686242+00:00",
       "content_hash": "sha256:0ecdb63d9684126b3f361e3b76bb68c8cf0c171745927038fca4a2794a9a37f4"
     },
     {
@@ -139,8 +139,8 @@
         "correct": "Section 5(c) requires an architect with a valid Certificate of Registration and Professional ID Card and active practitioner status for at least ten (10) years on the appointment date.",
         "takeaway": "The 10-year minimum ensures that Board members possess substantial field experience and understand contemporary practice challenges."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Sections 1-6 and 40.",
+      "code_citation": "RA 9266 IRR Sections 1-7 and 40",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,7 +151,7 @@
       "model_id": "ALE-PRAC-LAW-001-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.684778+00:00",
       "content_hash": "sha256:e005a737a9ea0d41c5a4d3103067d7d481d37c3cc17d8b7d04bb755819f8f3dd"
     },
     {
@@ -189,8 +189,8 @@
         "correct": "Section 4 explicitly states the Board comprises a chairman and two (2) members appointed by the President.",
         "takeaway": "The three-person composition ensures collegiality without unwieldy committee size; it enables staggered terms that prevent wholesale Board replacement."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Sections 1-6 and 40.",
+      "code_citation": "RA 9266 IRR Sections 1-7 and 40",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,43 +201,39 @@
       "model_id": "ALE-PRAC-LAW-001-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.682288+00:00",
       "content_hash": "sha256:d45a3bf8d65e653c626c4a75814fb8e1ba0329ea0365562bed042c649604a6bd"
     },
     {
       "question_id": "6c099536-f6a9-4cda-863a-a5a97be9870b",
       "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
       "topic_id": "3f28a914-9bdc-40eb-9b07-be6c0702aba6",
-      "text": "Describe the relationship between Structural Conceptualization (within architect scope) and Structural Design Documents (within engineer scope) and explain why this boundary exists.",
+      "text": "Under RA 9266 IRR Section 3(5), what does Structural Conceptualization refer to?",
       "options": [
         {
           "id": "a",
-          "text": "Architects design all structural elements; engineers only review their work, which can lead to conflicts in design intent and structural integrity"
+          "text": "Conceiving, choosing, and developing the type, disposition, arrangement, and proportioning of structural elements while considering safety, cost-effectiveness, functionality, and aesthetics."
         },
         {
           "id": "b",
-          "text": "Architects perform structural conceptualization—choosing type, disposition, and arrangement of structural elements—but licensed structural engineers prepare and sign structural design documents; this boundary prevents scope overlap while recognizing the collaborative nature of design."
+          "text": "Preparing all signed and sealed structural engineering calculations for the project."
         },
         {
           "id": "c",
-          "text": "Engineers perform all structural work; architects contribute nothing, which can result in a lack of architectural coherence in the final design"
+          "text": "Issuing the occupancy permit after construction."
         },
         {
           "id": "d",
-          "text": "Both professions interchangeably sign structural documents, which can lead to confusion over responsibility and accountability"
+          "text": "Replacing the Architect-of-Record for structural liability purposes."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "If architects designed all, structural engineers would have no role.",
-        "c": "Architects contribute significantly to structural conception.",
-        "d": "Interchangeable signing violates professional licensing and legal responsibility principles.",
-        "correct": "The IRR defines Structural Conceptualization as within architectural scope but reserves structural design document preparation and signing for structural engineers; this respects both professions' domains while enabling collaborative design.",
-        "takeaway": "Professional boundaries are permeable at conceptual levels but rigid at final legal responsibility; architects think structurally, engineers engineer structurally and accept legal accountability for structural calculations and specifications."
+        "correct": "Section 3(5) defines Structural Conceptualization in architecture. This edit avoids unsupported claims about separate engineering document-signing rules not visible in the checked pages."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -251,7 +247,7 @@
       "model_id": "ALE-PRAC-LAW-001-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.680640+00:00",
       "content_hash": "sha256:2a24a18b5574625899a2e8db7b13d58f8c69e9a96a31eb7e4c3c2be546818a70"
     },
     {
@@ -289,8 +285,8 @@
         "correct": "RA 9266's definition states architecture is 'the art, science or profession of planning, designing and constructing buildings in their totality taking into account their environment, in accordance with the principles of utility, strength and beauty.'",
         "takeaway": "These three principles—utility, strength, beauty—echo Vitruvius and form the philosophical foundation of architectural regulation; they reflect the holistic nature of architectural practice."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Sections 1-6 and 40.",
+      "code_citation": "RA 9266 IRR Sections 1-7 and 40",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,7 +297,7 @@
       "model_id": "ALE-PRAC-LAW-001-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.681512+00:00",
       "content_hash": "sha256:38907ee33e5c3f5e4b42d57169d7c6fb85e35048c82a0531f05be902f0fbfe13"
     },
     {
@@ -334,10 +330,10 @@
       "question_type": "mcq",
       "rationale": {
         "a": "Unlimited reappointments would create indefinite tenure contrary to democratic rotation principles.",
-        "c": "Two additional terms would be six years total for Members, exceeding the statutory ceiling.",
-        "d": "Reappointment is allowed, but limited to one additional term.",
-        "correct": "Section 6 states each member may be reappointed for one full additional term only, limiting maximum tenure to 6 years for Chairman and 4 years for Members.",
-        "takeaway": "The single-reappointment limit prevents entrenched power while ensuring sufficient tenure for policy continuity and expertise deployment."
+        "c": "Two additional terms would exceed the single-reappointment ceiling that Section 6 sets.",
+        "d": "Reappointment is allowed by Section 6, but limited to one additional term.",
+        "correct": "Section 6 states that each member of the Board may be reappointed for one full term of three (3) years. The ceiling is therefore one reappointment. Because Section 6 also prescribes staggered initial terms for the first Board (Chairman 3 years, one Member 2 years, the other Member 1 year), the resulting maximum tenures on the first Board are 6 years for the Chairman, 5 years for the Member with a 2-year initial term, and 4 years for the Member with a 1-year initial term. Once the staggered cycle has passed, every member serves a 3-year initial term and may be reappointed for a further 3 years, so the regular maximum tenure is 6 years.",
+        "takeaway": "The single-reappointment limit of one full 3-year term prevents entrenched power while ensuring sufficient tenure for policy continuity and expertise deployment."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -351,30 +347,30 @@
       "model_id": "ALE-PRAC-LAW-001-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.684004+00:00",
       "content_hash": "sha256:1033ccce9a674fdf3f12677a4e622eb3c36ef318cf5cbbab814376b9cfbeb262"
     },
     {
       "question_id": "7e4e697d-9af0-4014-abfc-d26db4d50092",
       "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
       "topic_id": "3f28a914-9bdc-40eb-9b07-be6c0702aba6",
-      "text": "Which organization does Section 41 designate as the source from which PRBoA nominees must be drawn?",
+      "text": "Which RA 9266 IRR section uses the IAPOA as the source of nominees for PRBoA appointments?",
       "options": [
         {
           "id": "a",
-          "text": "IAPOA (Integrated and Accredited Professional Organization of Architects, now UAP)"
+          "text": "Section 4"
         },
         {
           "id": "b",
-          "text": "IAPOA (Integrated and Accredited Professional Organization of Architects, now UAP)"
+          "text": "Section 41"
         },
         {
           "id": "c",
-          "text": "Philippine Association of Construction Industries, which focuses on construction standards and practices"
+          "text": "Section 18"
         },
         {
           "id": "d",
-          "text": "Association of Professional Engineers, which primarily represents engineering professionals"
+          "text": "Section 15"
         }
       ],
       "correct_option_id": "a",
@@ -383,11 +379,7 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "IAPOA (now UAP) is the correct nominating organization; this option incorrectly identifies an alternative professional body not designated by RA 9266.",
-        "c": "PACI represents construction, not the architecture profession.",
-        "d": "APE represents engineers, not architects; engineers do not nominate the architecture board.",
-        "correct": "Section 41 of RA 9266 designates the IAPOA—now the United Architects of the Philippines, Inc.—as the exclusive source from which PRBoA nominees are submitted to the Commission.",
-        "takeaway": "This ensures profession-driven governance; the architectural community itself nominates the regulators, creating accountability and ensuring Board members remain rooted in practitioner concerns."
+        "correct": "Section 4 describes PRBoA appointment through recommendees selected from IAPOA nominees. Section 40 identifies the UAP as the IAPOA, while Section 41 concerns the implementing rules and regulations."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -401,7 +393,7 @@
       "model_id": "ALE-PRAC-LAW-001-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.685520+00:00",
       "content_hash": "sha256:b7cdccc37404acc21a168f91fec6f1c443d465bbe6495401cecd4174390ac222"
     },
     {
@@ -439,8 +431,8 @@
         "correct": "Section 6 prescribes: Chairman 3 years, Member 1 two years, Member 2 one year. This design prevents wholesale Board replacement and ensures institutional memory persists while fresh perspective enters regularly.",
         "takeaway": "Staggered terms are a cornerstone of governance design; they balance continuity against fresh perspective, preventing capture by outgoing administrations or entrenched factions."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Sections 1-6 and 40.",
+      "code_citation": "RA 9266 IRR Sections 1-7 and 40",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,30 +443,30 @@
       "model_id": "ALE-PRAC-LAW-001-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.686970+00:00",
       "content_hash": "sha256:916f18ba5ce45618b62dd3c5dfa1d2bdbd9a1f8b36da614298943eae320035cd"
     },
     {
       "question_id": "3a13ae21-70c5-44cd-884f-04f7305e3640",
       "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
       "topic_id": "3f28a914-9bdc-40eb-9b07-be6c0702aba6",
-      "text": "What is the exact date that Republic Act No. 9266 was signed into law?",
+      "text": "According to RA 9266 IRR Section 1, what is the short title of Republic Act No. 9266?",
       "options": [
         {
           "id": "a",
-          "text": "March 17, 2004"
+          "text": "Architecture Act of 2004"
         },
         {
           "id": "b",
-          "text": "December 1, 2004"
+          "text": "PRC Modernization Act of 2000"
         },
         {
           "id": "c",
-          "text": "June 1, 2005"
+          "text": "National Building Code of the Philippines"
         },
         {
           "id": "d",
-          "text": "January 1, 2005"
+          "text": "Civil Engineering Law"
         }
       ],
       "correct_option_id": "a",
@@ -483,11 +475,7 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "December 1, 2004 is the effective date of the IRR, not the statute signature date.",
-        "c": "June 1, 2005 is the organizational deadline for the PRBoA, not the statute signature.",
-        "d": "This is an incorrect date unrelated to RA 9266's enactment.",
-        "correct": "The statute itself states RA 9266 was signed on March 17, 2004, taking effect immediately upon signature.",
-        "takeaway": "Know the exact legislative date; it marks the beginning of the modern architecture regulatory era in the Philippines."
+        "correct": "Section 1 of the checked RA 9266 IRR identifies the law by the short title Architecture Act of 2004. The exact signing date was not used because it is not visible in the audited local PDF pages for this batch."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -501,7 +489,7 @@
       "model_id": "ALE-PRAC-LAW-001-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.683027+00:00",
       "content_hash": "sha256:5f5aef803e63ef221f563cac19d1e9016077ea6947e0c23b556fa6c14fe1831d"
     }
   ]

@@ -1,0 +1,508 @@
+{
+  "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f5fa1415ce39a0c8d1e063ebd1ad8243cf07111ddaa7c10d5dbbd1e1343df886",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "10449ff2-9fd5-4fca-8ca1-73ede27ebd7e",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "What is the proper professional ethics approach when a Value Engineering recommendation achieves cost savings while accepting some performance reduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Implement the recommendation without disclosing the performance reduction to the client or stakeholders"
+        },
+        {
+          "id": "b",
+          "text": "Decline the recommendation to preserve all performance regardless of cost, ensuring no compromise on quality"
+        },
+        {
+          "id": "c",
+          "text": "Explicitly disclose the cost-benefit tradeoff to the client, allowing them to decide whether savings justify performance reduction"
+        },
+        {
+          "id": "d",
+          "text": "Hide the recommendation from the client entirely to avoid potential conflicts or misunderstandings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Transparency is fundamental to ethics.",
+        "b": "The client may choose to accept trade-offs.",
+        "d": "Client communication is essential.",
+        "correct": "Professional ethics require architects practicing VE to be transparent about cost-benefit tradeoffs. When VE saves cost while accepting performance reduction, this must be explicitly disclosed. The client, not the value engineer, decides whether savings justify reduction. SPP 206.",
+        "takeaway": "Disclose tradeoffs; let client decide."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f4af9c2f0fcb23a0fcfff41ac69ebbeccc955ee4924fd8f66043b10af869843c"
+    },
+    {
+      "question_id": "d53e4ff3-73f6-4fff-b57e-5c3624333be3",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "An architect is offered compensation as a percentage of achieved construction cost savings through Value Engineering. What ethical concern should the architect raise about this arrangement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "There are no ethical concerns; percentage-of-savings is standard practice in the industry and widely accepted by professionals"
+        },
+        {
+          "id": "b",
+          "text": "This creates financial incentive to identify cost reductions regardless of design implications, potentially compromising professional judgment"
+        },
+        {
+          "id": "c",
+          "text": "Architects should always accept percentage-of-savings compensation as it aligns their interests with the client's financial goals"
+        },
+        {
+          "id": "d",
+          "text": "Percentage compensation eliminates the need for transparent client communication, thus simplifying the project management process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This arrangement raises significant ethical concerns.",
+        "c": "The architect should question this arrangement.",
+        "d": "Transparent communication remains essential.",
+        "correct": "If the architect receives a percentage of construction cost savings achieved through value engineering, this creates financial incentive to identify cost reductions regardless of design implications. Better approaches use hourly or fixed fees. SPP 206.",
+        "takeaway": "Savings percentages create bias; use hourly fees instead."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f630e30ad8570d0537232b1949d99f806b18061b10abf5889a060cddd36dfc7"
+    },
+    {
+      "question_id": "9f93a125-874a-41a4-a762-8f4fb6f96cd5",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "What is the relationship between Value Engineering expertise and professional standards in the field?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Professional standards do not address value engineering, leaving practitioners to rely on general project management guidelines"
+        },
+        {
+          "id": "b",
+          "text": "Organizations like SAVE establish professional standards for VE practice; architects should understand these standards and consider certification"
+        },
+        {
+          "id": "c",
+          "text": "Value engineering has no professional standards, which can lead to inconsistent application and varying results across different projects"
+        },
+        {
+          "id": "d",
+          "text": "Professional standards prohibit architects from practicing value engineering, as it is considered outside the traditional scope of architectural services"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Professional standards specifically address VE.",
+        "c": "SAVE and other organizations maintain standards.",
+        "d": "Standards facilitate, not prohibit, VE practice.",
+        "correct": "Value Engineering follows systematic methodologies as outlined in professional practice standards. Architects should apply these methodologies consistent with SPP 206.",
+        "takeaway": "SAVE standards guide VE practice."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d97dd602f466218b55d0f85f25772f0e4fa2d5fe65f44eb82196f2c4f62db312"
+    },
+    {
+      "question_id": "eec416e1-e851-49d8-83c9-673800368561",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "What distinguishes legitimate Value Engineering from cost-cutting disguised as value analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "There is no distinction; they are the same approach, which is a common misconception among non-professionals"
+        },
+        {
+          "id": "b",
+          "text": "Legitimate VE requires professional judgment maintaining commitment to design quality while systematically analyzing cost relationships"
+        },
+        {
+          "id": "c",
+          "text": "Cost-cutting that achieves savings is always legitimate, although this overlooks the importance of maintaining design integrity"
+        },
+        {
+          "id": "d",
+          "text": "Professional judgment has no role in VE analysis, which is a misunderstanding of the VE process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The approaches are fundamentally different.",
+        "c": "Savings achieved through quality reduction isn't legitimate VE.",
+        "d": "Professional judgment is central to VE.",
+        "correct": "Legitimate Value Engineering requires professional judgment distinguishing cost optimization from cost-cutting disguised as value analysis. Architects must maintain commitment to design quality and building performance while systematically analyzing cost relationships. SPP 206.",
+        "takeaway": "VE maintains quality; cutting doesn't."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d5c1e95ac1abd86a4a57285fe89fcbd93186d6cc5013741ddcbe3ced43ad4666"
+    },
+    {
+      "question_id": "06041dfd-7916-47da-97f2-27e1c83f02e4",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "How does Value Engineering differ from simple cost-cutting in architectural practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Value engineering and cost-cutting are identical approaches, both aiming to reduce project costs"
+        },
+        {
+          "id": "b",
+          "text": "Cost-cutting indiscriminately reduces expenditures; value engineering systematically analyzes cost-to-function relationships to eliminate unnecessary expense without diminishing performance"
+        },
+        {
+          "id": "c",
+          "text": "Value engineering always costs more than cost-cutting, as it involves detailed analysis and planning"
+        },
+        {
+          "id": "d",
+          "text": "Cost-cutting is ethical; value engineering is not, as it may compromise design integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The approaches are fundamentally different.",
+        "c": "Value engineering reduces cost through intelligent analysis.",
+        "d": "Value engineering is ethical when practiced properly.",
+        "correct": "Value Engineering differs fundamentally from cost-cutting. Value engineering systematically analyzes the relationship between cost and function, identifying where cost reduction eliminates unnecessary expense rather than diminishing essential performance. SPP 206.",
+        "takeaway": "VE analyzes function-cost; cutting is indiscriminate."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34c35bfcaa1950b1e5a07f3cdc6d6ceaf4db49b917357e1586437e1eb10ac14a"
+    },
+    {
+      "question_id": "50435889-3c0f-49ec-a6de-4e5054f50c10",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "What critical ethical issue emerges when architects practice Value Engineering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Value engineering has no ethical implications, which is a misconception"
+        },
+        {
+          "id": "b",
+          "text": "The conflict between the engineer's incentive to find cost reductions and the architect's professional pride in design decisions"
+        },
+        {
+          "id": "c",
+          "text": "Value engineering always compromises design quality, which is not necessarily true"
+        },
+        {
+          "id": "d",
+          "text": "Architects should never practice value engineering, which is an extreme position"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Value engineering raises significant ethical questions.",
+        "c": "VE can preserve quality while reducing cost.",
+        "d": "VE is a legitimate service when practiced ethically.",
+        "correct": "A critical ethical issue emerges when VE recommendations challenge design decisions. This creates potential conflict between the engineer's incentive to identify cost reductions and the architect's professional pride in design. SPP 206.",
+        "takeaway": "VE must balance cost savings with design integrity."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:780ecadffaf995a7610b647bbb0e341bebe943464cc75cc500198ceed13cd8c9"
+    },
+    {
+      "question_id": "ce1f6e27-dba7-409c-b4b7-3ca2e69e9bea",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "What is the proper approach when Value Engineering recommendations would materially compromise design intent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Implement the recommendation regardless of design impact to achieve cost reduction, prioritizing budget over design"
+        },
+        {
+          "id": "b",
+          "text": "Decline the recommendation to protect design quality and serve client's long-term interests"
+        },
+        {
+          "id": "c",
+          "text": "Implement recommendations that compromise design to protect the VE budget, ensuring financial targets are met"
+        },
+        {
+          "id": "d",
+          "text": "Hide design compromises from the client, maintaining the appearance of design integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Design integrity matters more than short-term savings.",
+        "c": "VE budgets don't override professional responsibility.",
+        "d": "Transparency with clients is essential.",
+        "correct": "When VE recommendations would materially compromise design intent, architects should decline those recommendations. The architect's fundamental responsibility is to client's long-term interests, not cost reduction at any price. SPP 206.",
+        "takeaway": "Decline VE that compromises essential design."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:faf70a08fb266490d386715b8eacd89ede82795fb2606785565ee5675198237e"
+    },
+    {
+      "question_id": "f086ecd6-65e0-4f5c-91ea-d91eabfaffc0",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "How does market demand for Value Engineering services fluctuate, and what does this suggest about service offerings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demand is constant regardless of market conditions, suggesting a stable need for cost optimization in all economic climates"
+        },
+        {
+          "id": "b",
+          "text": "Demand fluctuates with market conditions; value engineering demand increases during tight budgets and decreases during robust construction markets"
+        },
+        {
+          "id": "c",
+          "text": "Value engineering is never in demand, indicating a lack of awareness or perceived value in the service"
+        },
+        {
+          "id": "d",
+          "text": "Market conditions have no impact on VE service demand, which remains unaffected by economic cycles"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Demand varies significantly with market.",
+        "c": "VE services have periodic high demand.",
+        "d": "Market conditions significantly affect VE demand.",
+        "correct": "Value engineering demand fluctuates with market conditions. During tight budget environments, clients actively seek cost reduction opportunities. During robust construction markets, cost control becomes less urgent. SPP 206.",
+        "takeaway": "VE demand peaks in tight markets."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:865660eee6c4f911873bf2cf915d7c68f7d7ad0aeeac4664c6a4a2dd7c7ffb8e"
+    },
+    {
+      "question_id": "d6ae669e-1c18-4569-b312-1224afd0cd3f",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "When in the design process is Value Engineering most practical and effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only after construction is complete, which is too late for effective cost-saving measures"
+        },
+        {
+          "id": "b",
+          "text": "During Schematic Design and Design Development phases when changes are practical and cost implications can be evaluated"
+        },
+        {
+          "id": "c",
+          "text": "Only during the bidding phase, which limits the scope of potential savings"
+        },
+        {
+          "id": "d",
+          "text": "Value Engineering cannot be performed during design phases, a misconception about its applicability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Post-construction VE is too late for most changes.",
+        "c": "Bidding phase VE is constrained by limited flexibility.",
+        "d": "Design phases are the optimal VE timing.",
+        "correct": "Value engineering services typically occur during design phases, particularly during Schematic Design and Design Development, when changes are practical and cost implications can be evaluated. Post-contract VE is more problematic. SPP 206.",
+        "takeaway": "VE most effective during Schematic and DD phases."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a8d130a1272b02c38bafa564cddd0b4df31c45637ddfc13ff16a558e2870950f"
+    },
+    {
+      "question_id": "0a518284-a549-4f37-9f0d-6e0614c78bc6",
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "topic_id": "ebf5644d-9834-4029-8f19-5522dcb5ef9b",
+      "text": "What is the primary goal of Value Engineering analysis in architectural projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce all project costs regardless of impact on quality, even if it means sacrificing essential design elements"
+        },
+        {
+          "id": "b",
+          "text": "To optimize project value by analyzing design and construction cost relationships and identifying cost reduction without compromising essential performance"
+        },
+        {
+          "id": "c",
+          "text": "To eliminate the need for quality construction by focusing solely on cost-cutting measures"
+        },
+        {
+          "id": "d",
+          "text": "To ignore performance requirements in favor of lowest cost, prioritizing budget over functionality"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Performance preservation is essential to VE.",
+        "c": "Quality remains a critical VE consideration.",
+        "d": "Performance requirements are fundamental to VE analysis.",
+        "correct": "Value Engineering is a systematic process analyzing project cost and identifying opportunities for cost reduction without compromising essential performance or quality. It optimizes the cost-to-value ratio. SPP 206.",
+        "takeaway": "Value engineering optimizes cost without sacrificing performance."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-024-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:746d5bc98b238031d8ef7553ad4a3cb2987de1906137aba99aa13108c7b34ebf"
+    }
+  ]
+}

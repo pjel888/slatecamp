@@ -8,36 +8,33 @@
       "question_id": "41ffe2a2-10ff-4308-adb9-29b97141d657",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "Which of the following is NOT a requirement for LEA eligibility under RA 9266, Section 13?",
+      "text": "Which item is NOT stated as a Section 13 applicant qualification in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Bachelor of Science in Architecture from CHED-accredited school"
+          "text": "A 3,840-hour conversion stated in the IRR passage"
         },
         {
           "id": "b",
-          "text": "Minimum 3 years of work experience in a construction company"
+          "text": "Good moral character"
         },
         {
           "id": "c",
-          "text": "Good moral character verified by NBI clearance"
+          "text": "BS Architecture from a CHED-recognized or accredited school"
         },
         {
           "id": "d",
-          "text": "Diversified Architectural Experience of at least 2 years"
+          "text": "No conviction of a criminal offense involving moral turpitude"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This IS a requirement under RA 9266 Section 13; all candidates must hold a Bachelor of Science in Architecture from CHED-accredited institutions.",
-        "c": "This IS a requirement; applicants must establish good moral character through NBI clearance and documentary evidence.",
-        "d": "This IS a requirement; 2 years of diversified architectural experience (3,840 hours) is mandatory unless reduced by a Master's degree.",
-        "correct": "RA 9266 Section 13 requires CHED-accredited Architecture degree + at least 2 years (3,840 hours) DAE. Good moral character is a general PRC exam requirement (not Sec 13-specific). No minimum work experience in construction companies is mandated.",
-        "takeaway": "ALE eligibility requires CHED degree + good moral character + 2 years DAE (3,840 hours) — not 3 years of construction company employment."
+        "correct": "The checked passage says two years or equivalent DAE, not 3,840 hours.",
+        "takeaway": "The checked passage says two years or equivalent DAE, not 3,840 hours."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -51,30 +48,30 @@
       "model_id": "ALE-PRAC-LAW-007-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.680790+00:00",
       "content_hash": "sha256:f4161ac9303fa85d961b6b92cba2c31a6ce3455bcf164b0a482fc465e59b8e17"
     },
     {
       "question_id": "2c5690ce-36ff-4ba8-b261-322bc95c880a",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "How do the academic and experiential pathways specified in RA 9266, Section 13 ensure that LEA candidates possess both theoretical and practical architectural competence?",
+      "text": "How do Section 13 academic and experience requirements work together?",
       "options": [
         {
           "id": "a",
-          "text": "By requiring a degree from CHED-accredited institutions and mandatory real-world DAE spanning multiple project phases"
+          "text": "They require both a recognized BS Architecture degree and at least two years or equivalent certified diversified architectural experience"
         },
         {
           "id": "b",
-          "text": "By accepting either a degree or professional experience, whichever is easier to acquire, which may not ensure comprehensive competence"
+          "text": "They allow experience with no degree"
         },
         {
           "id": "c",
-          "text": "By allowing alternative credentials from foreign universities without DAE verification, which could lead to inconsistencies in candidate preparedness"
+          "text": "They require only a contractor certificate"
         },
         {
           "id": "d",
-          "text": "By focusing solely on written examination performance without regard to background, potentially overlooking practical skills"
+          "text": "They replace moral character"
         }
       ],
       "correct_option_id": "a",
@@ -83,11 +80,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Contradicts the law; both pathways are mandatory, not alternative options. A degree without DAE or vice versa does not satisfy Section 13.",
-        "c": "Falsely claims foreign credentials bypass DAE requirements; RA 9266 requires CHED-accredited degrees and mandatory experiential verification regardless of origin.",
-        "d": "Diminishes the role of credentials; the ALE requires verified academic and experiential foundations, not examination performance in isolation.",
-        "correct": "RA 9266 Section 13 requires both: (1) a five-year Bachelor of Science from CHED-accredited institutions (ensuring rigorous theoretical foundation) and (2) 2 years of diversified architectural experience spanning multiple project phases (ensuring practical competence). Neither requirement alone is sufficient.",
-        "takeaway": "ALE eligibility combines academic rigor (CHED degree) + real-world breadth (2-year DAE across design, construction, site analysis) to ensure both theory and practice."
+        "correct": "Section 13(c) contains the degree and DAE requirements.",
+        "takeaway": "Section 13(c) contains the degree and DAE requirements."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -101,43 +95,40 @@
       "model_id": "ALE-PRAC-LAW-007-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.683431+00:00",
       "content_hash": "sha256:1c2c633c1d9c94a1330c3a8b762cd25dd5edbc75d715931cb0df9988b33870b8"
     },
     {
       "question_id": "322640fd-b891-4827-a284-4f0ecb707c05",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "An architect-mentor's Professional Tax Receipt expires during a candidate's DAE documentation period. How does this affect the candidate's eligibility for the LEA?",
+      "text": "What should this batch say about an architect-mentor PTR expiration scenario?",
       "options": [
         {
           "id": "a",
-          "text": "It has no effect if the mentor was registered when the DAE began"
+          "text": "The checked source requires a photocopy of the mentor valid PIC, PTR, and IAPOA number, but current handling of expiration needs a current local source"
         },
         {
           "id": "b",
-          "text": "The candidate may still apply if the mentor's PTR is renewed before submission"
+          "text": "PTR expiration is never relevant"
         },
         {
           "id": "c",
-          "text": "The entire DAE period becomes invalid and must be redone"
+          "text": "PTR replaces DAE"
         },
         {
           "id": "d",
-          "text": "The Board will accept the application but with a provisional certificate pending mentor verification"
+          "text": "PTR is issued by the Court of Appeals"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Misinterprets continuity; mentor registration at the start does not excuse expiration of the PTR at application time, which is when the Board verifies credentials.",
-        "c": "Overstates the consequence; renewal of the PTR cures the documentation gap without invalidating the completed DAE hours.",
-        "d": "The Board does not issue provisional certificates pending mentor verification; credentials must be in order before registration is finalized.",
-        "correct": "The source document requires the architect-mentor's Professional Tax Receipt as supporting documentation. Mentor's PTR must be current at application; hours under expired PTR may not qualify unless mentor renewed continuously.ials at the time of ALE application.",
-        "takeaway": "Mentor's PTR expiration: candidate can still qualify if the PTR is renewed before ALE application submission."
+        "correct": "Section 13 lists mentor PIC, PTR, and IAPOA number but does not resolve every expiration scenario.",
+        "takeaway": "Section 13 lists mentor PIC, PTR, and IAPOA number but does not resolve every expiration scenario."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -151,43 +142,40 @@
       "model_id": "ALE-PRAC-LAW-007-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.684184+00:00",
       "content_hash": "sha256:d2d7b4daeb8c5ee9503a6c327e0d4e3bf7193db6220796cc1737b6a7832619fe"
     },
     {
       "question_id": "515fdf22-be1f-495b-a65f-e9f80ab4c0d6",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "A candidate holding a Master's degree in Architecture from a CHED-accredited university applies for the LEA. By how many years is the standard DAE requirement reduced?",
+      "text": "A candidate holds a master degree in Architecture from a government-recognized institution. What credit does Section 13 provide?",
       "options": [
         {
           "id": "a",
-          "text": "No reduction applies"
+          "text": "One year credited in practical experience"
         },
         {
           "id": "b",
-          "text": "6 months reduction"
+          "text": "Automatic license without examination"
         },
         {
           "id": "c",
-          "text": "1 year reduction"
+          "text": "Three years credited"
         },
         {
           "id": "d",
-          "text": "2 years reduction"
+          "text": "No need for good moral character"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrectly assumes no advantage for advanced postgraduate study; the law recognizes advanced coursework by reducing the experiential requirement.",
-        "b": "Understates the benefit; the law provides a full 1-year reduction, not a 6-month reduction.",
-        "d": "Confuses the overall requirement; eliminating the entire 2-year DAE would bypass the experiential foundation mandated by RA 9266.",
-        "correct": "RRA 9266 Section 13 (as implemented) credits 1 year (1,920 hours) of Master's toward the at least 3,840-hour DAE total, requiring additional 1,920 practical hours.s with a government-recognized Master's degree in Architecture, leaving only 1 year (1,920 hours) of mandatory experience.",
-        "takeaway": "Master's degree in Architecture from CHED-accredited institution = 1 year DAE credit (1,920 hours instead of 3,840)."
+        "correct": "Section 13(c) gives one year practical-experience credit.",
+        "takeaway": "Section 13(c) gives one year practical-experience credit."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-LAW-007-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.679314+00:00",
       "content_hash": "sha256:24cd243de12c493712d8f086c1da131d2eb10a22737324a259a3a1d8d8bedcd1"
     },
     {
       "question_id": "7aebff66-1444-41e2-8cb1-b05a626f0811",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "A candidate presents a Master's degree in Architecture from a private university claiming 1-year DAE credit. What is the Board's responsibility before accepting this claim?",
+      "text": "Before accepting a master degree credit, what must be source-checked?",
       "options": [
         {
           "id": "a",
-          "text": "Accept it automatically based on the degree level, assuming all Master's programs meet the same standards"
+          "text": "That it is a master degree in Architecture from a school, college, university, or institute recognized by the government"
         },
         {
           "id": "b",
-          "text": "Verify the university's CHED accreditation status before confirming the 1-year reduction"
+          "text": "That it is any non-architecture degree"
         },
         {
           "id": "c",
-          "text": "Require the candidate to complete the full 2-year DAE regardless of advanced degree, ensuring uniformity in qualification standards"
+          "text": "That the contractor approves it"
         },
         {
           "id": "d",
-          "text": "Conduct an interview to assess the candidate's theoretical knowledge, focusing on the depth and relevance of their academic experience"
+          "text": "That no documents are submitted"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Confuses degree level with institutional accreditation; the law requires a CHED-accredited institution, not merely a Master's-level degree.",
-        "c": "Ignores the statutory reduction; a CHED-accredited Master's does qualify for the 1-year credit, but accreditation must first be verified.",
-        "d": "Substitutes credentials verification with subjective knowledge assessment; the Board's role is to verify institutional accreditation, not interview candidates.",
-        "correct": "The 1-year DAE reduction applies only to Master's degrees from 'government-recognized institutions' with CHED accreditation status. The Board must verify accreditation before granting the reduction; a private institution without CHED accreditation does not qualify.",
-        "takeaway": "Master's degree DAE credit: Board must verify CHED accreditation status before confirming the 1-year reduction."
+        "correct": "The credit is limited by the source wording.",
+        "takeaway": "The credit is limited by the source wording."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -251,42 +236,40 @@
       "model_id": "ALE-PRAC-LAW-007-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.684918+00:00",
       "content_hash": "sha256:d35fddfc9a20e8a9c133fa937a03705218565d64802fa7a854b85ca4e52a84e2"
     },
     {
       "question_id": "9f917c1e-317b-4a35-aeaf-327ce7c41298",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "What is the minimum cumulative hour requirement for Diversified Architectural Experience (DAE)?",
+      "text": "What minimum experience wording is source-safe from Section 13?",
       "options": [
         {
           "id": "a",
-          "text": "1,920 hours"
+          "text": "At least two years or equivalent of diversified architectural experience duly certified by a registered/licensed architect"
         },
         {
           "id": "b",
-          "text": "3,840 hours"
+          "text": "Exactly 3,840 hours in the checked passage"
         },
         {
           "id": "c",
-          "text": "2,560 hours"
+          "text": "No experience if the applicant has a diploma"
         },
         {
           "id": "d",
-          "text": "4,000 hours"
+          "text": "Only contractor site experience"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "c": "States an intermediate figure that matches neither the standard requirement (3,840 hours) nor the Master's-degree reduction (1,920 hours).",
-        "d": "Overstates the requirement; the law specifies exactly 3,840 hours, not 4,000.",
-        "correct": "RA 9266 Section 13 mandates exactly 3,840 cumulative hours of DAE (approximately 24 hours per week over 2 years) before exam eligibility.",
-        "takeaway": "DAE requires 3,840 hours (2 years at ~24 hours/week) for all candidates without a Master's degree. PRC Board Resolution No. 09 requires at least an aggregate of 3,840 cumulative hours of DAE (RA 9266 Section 13 as amended by IRR). Master's provides 1-year (1,920-hour) credit toward the at least 3,840-hour total."
+        "correct": "Section 13(c) states two years or equivalent DAE.",
+        "takeaway": "Section 13(c) states two years or equivalent DAE."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -300,43 +283,40 @@
       "model_id": "ALE-PRAC-LAW-007-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.685674+00:00",
       "content_hash": "sha256:1b34bd308f9d622717c9dfd4768d69af064b8a89533b44eeb1c32e44d33aa2a3"
     },
     {
       "question_id": "3bf3c0d5-ad9d-44bc-bed2-11eb56fd3595",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "A candidate completed her Bachelor's degree in Architecture in June 2023 and accumulated 3,840 hours of DAE by June 2025. When may she apply for the LEA?",
+      "text": "A candidate has a BS Architecture degree and two years of certified DAE. What else must still be satisfied?",
       "options": [
         {
           "id": "a",
-          "text": "Immediately upon graduation in June 2023, which is not possible as DAE requirements are not yet met"
+          "text": "All Section 13 requirements and support documents, including moral character and no moral-turpitude conviction"
         },
         {
           "id": "b",
-          "text": "Only after June 2025, when the DAE requirement is satisfied"
+          "text": "No other requirements"
         },
         {
           "id": "c",
-          "text": "Six months before completing the DAE requirement, which is not allowed under current regulations"
+          "text": "A supplier discount"
         },
         {
           "id": "d",
-          "text": "At any time, provided the NBI clearance is current, which overlooks the DAE requirement"
+          "text": "A Board member oath"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Confuses graduation timing with DAE eligibility; a degree alone does not satisfy the 2-year experiential requirement.",
-        "c": "Assumes early application is permitted; the law requires full completion of DAE, not early submission before hours accumulate.",
-        "d": "Overestimates the flexibility; NBI clearance currency is necessary but not sufficient — DAE completion remains mandatory.",
-        "correct": "RA 9266 Section 13 mandates that candidates must complete all 3,840 hours of DAE before applying for the ALE; the requirement is not negotiable.",
-        "takeaway": "ALE application timing: only after completing all required DAE hours (3,840), not before."
+        "correct": "Section 13 includes multiple requirements beyond degree and DAE.",
+        "takeaway": "Section 13 includes multiple requirements beyond degree and DAE."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -350,43 +330,40 @@
       "model_id": "ALE-PRAC-LAW-007-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.682513+00:00",
       "content_hash": "sha256:7f8c6984f55b257fc395ec2fcbbadceef3628a0ce8982c5c0ae525a6e0fcbc85"
     },
     {
       "question_id": "97c8aa6b-c21d-4ab0-bc04-e62c42720665",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "According to RA 9266, what consequence results from submitting false evidence or misrepresentations in an LEA application?",
+      "text": "What can happen when an application contains false evidence or misrepresentation?",
       "options": [
         {
           "id": "a",
-          "text": "Fine of 50,000 pesos, which serves as a deterrent against fraudulent activities"
+          "text": "The Board may refuse renewal or registration, or suspend/revoke a certificate obtained by false swearing or misrepresentation"
         },
         {
           "id": "b",
-          "text": "Denial of registration or suspension/revocation of Certificate of Registration"
+          "text": "The false evidence is always ignored"
         },
         {
           "id": "c",
-          "text": "One-year ban from reapplying, effectively delaying the applicant's professional progress"
+          "text": "The applicant automatically passes"
         },
         {
           "id": "d",
-          "text": "Mandatory completion of additional coursework, aimed at reinforcing ethical standards"
+          "text": "Only the contractor decides"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While penalties may exist, the primary consequences stated in RA 9266 are denial/revocation, not a specific monetary fine.",
-        "c": "The law does not specify a one-year reapplication ban; the focus is on denial of the current application and potential revocation.",
-        "d": "Fraudulent conduct triggers denial or revocation, not mandatory coursework; additional education would not remedy dishonesty in the application process.",
-        "correct": "RA 9266 states that fraudulent applications containing false evidence or misrepresentations result in denial of registration or, if discovered later, suspension or revocation of the Certificate of Registration.",
-        "takeaway": "Fraud in ALE applications leads to denial of registration or revocation of the architect's Certificate of Registration."
+        "correct": "The fraudulent-applications clause states these consequences.",
+        "takeaway": "The fraudulent-applications clause states these consequences."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -400,43 +377,40 @@
       "model_id": "ALE-PRAC-LAW-007-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.686434+00:00",
       "content_hash": "sha256:edf259ae623fdbfdc937625837c587457b72c8b2c273819c4e016493cb166c56"
     },
     {
       "question_id": "4cd44a96-7246-4702-8715-3baaba3685aa",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "Diversified Architectural Experience must demonstrate variation across different phases and types of architectural service. Which scenario BEST illustrates compliance with this variation requirement?",
+      "text": "Which DAE scenario is safest under the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Working 3,840 hours exclusively on building design under one architect-mentor, without exposure to other phases or types of projects"
+          "text": "Experience that is diversified architectural experience and duly certified by a registered/licensed architect"
         },
         {
           "id": "b",
-          "text": "Experience spanning schematic design, construction administration, site analysis, and post-occupancy evaluation under different projects"
+          "text": "Pure administrative work with no architect certification"
         },
         {
           "id": "c",
-          "text": "Completing all 3,840 hours within the office of a large architectural firm, focusing solely on design development"
+          "text": "Supplier sales with no architectural work"
         },
         {
           "id": "d",
-          "text": "Working solely on renovation and restoration projects for a single contractor, without involvement in new construction or other project types"
+          "text": "A verbal promise with no certification"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Violates the variation requirement; limiting all 3,840 hours to building design alone fails to demonstrate competence across multiple architectural phases.",
-        "c": "While an architectural firm may offer diverse work, this option doesn't specify whether the candidate actually worked across varied phases or concentrated in one area.",
-        "d": "Confuses DAE with contractor-specific work; limiting experience to only renovation/restoration projects fails to demonstrate the required breadth across design, planning, and construction administration.",
-        "correct": "DAE must demonstrate variation across different phases and types of architectural service, not concentration in a single area. Option b spans multiple design phases (schematic design, construction administration, site analysis, post-occupancy evaluation).",
-        "takeaway": "DAE variation requirement: exposure to multiple project phases (design, construction administration, site analysis) — not concentration in one area."
+        "correct": "Section 13(c) requires certified diversified architectural experience.",
+        "takeaway": "Section 13(c) requires certified diversified architectural experience."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -450,30 +424,30 @@
       "model_id": "ALE-PRAC-LAW-007-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.687129+00:00",
       "content_hash": "sha256:99d1f211b3c3e9082281dc2b9a6bf64d25da626fd6432a238e8e07c087cb02e3"
     },
     {
       "question_id": "cc6442bf-ef49-46bf-8b8d-ee86d1393b18",
       "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
       "topic_id": "53da3df4-1f2f-496c-a24d-bf445a8b410c",
-      "text": "What document must be submitted to verify that a candidate's architect-mentor holds a valid Professional Identification Card?",
+      "text": "Which document verifies the architect-mentor authority in the source-listed support documents?",
       "options": [
         {
           "id": "a",
-          "text": "Photocopy of the mentor's Professional Identification Card"
+          "text": "Photocopy of the Architect-Mentor valid Professional Identification Card, Professional Tax Receipt, and IAPOA number"
         },
         {
           "id": "b",
-          "text": "Affidavit from the Board of Architecture, which is not typically required for this verification"
+          "text": "A supplier invoice only"
         },
         {
           "id": "c",
-          "text": "Certificate from CHED confirming the mentor's credentials, which is not applicable for verifying a Professional Identification Card"
+          "text": "A client text message"
         },
         {
           "id": "d",
-          "text": "Board Resolution authorizing the mentor's practice, which is not a standard document for this purpose"
+          "text": "A competition poster"
         }
       ],
       "correct_option_id": "a",
@@ -482,11 +456,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "An affidavit from the Board is not required to verify the mentor's PIC; a direct photocopy of the valid ID serves as the primary proof.",
-        "c": "CHED does not issue certificates confirming individual architect credentials; CHED accredits schools, not practicing professionals.",
-        "d": "A Board Resolution is not necessary for verifying an individual mentor's Professional Identification Card; the card itself is the standard documentation.",
-        "correct": "PRC Board of Architects (PRBoA) DAE logbook guidelines require photocopy of mentor's valid Professional Identification Card (PRC ID) to verify licensure and verify the mentor's current licensure status.",
-        "takeaway": "To verify mentor credentials, submit a photocopy of the mentor's valid Professional Identification Card."
+        "correct": "Section 13 lists the mentor PIC, PTR, and IAPOA number.",
+        "takeaway": "Section 13 lists the mentor PIC, PTR, and IAPOA number."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -500,7 +471,7 @@
       "model_id": "ALE-PRAC-LAW-007-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.681662+00:00",
       "content_hash": "sha256:bc4490bf117e6be147f4952610402862b439a954bf639c94d46ab771a6090e7a"
     }
   ]

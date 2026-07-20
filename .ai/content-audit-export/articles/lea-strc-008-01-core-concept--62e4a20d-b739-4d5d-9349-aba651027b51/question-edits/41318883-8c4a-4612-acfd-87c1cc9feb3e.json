@@ -21,5 +21,52 @@
     "checked_sources": [
       "bsi-steel-members"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which source-safe habit best prevents overclaiming when selecting a steel bracing or secondary member?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Select the smallest visible shape without checking stability."
+      },
+      {
+        "id": "b",
+        "text": "Use a CHB reinforcement note as the steel design table."
+      },
+      {
+        "id": "c",
+        "text": "Match the shape to the load path, support condition, connection, and source-backed design check."
+      },
+      {
+        "id": "d",
+        "text": "Assume any shape is correct if it is drawn in elevation."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Select the smallest visible shape without checking stability. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "b": "Use a CHB reinforcement note as the steel design table. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "c": "Match the shape to the load path, support condition, connection, and source-backed design check. This stays inside the Batch 147 local source boundary for Structural Steel Members and Load Paths.",
+      "d": "Assume any shape is correct if it is drawn in elevation. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "correct": "Match the shape to the load path, support condition, connection, and source-backed design check. Supported by bsi-steel-members.",
+      "takeaway": "For Structural Steel Members and Load Paths, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "bsi-steel-members",
+      "checked_sources": [
+        "bsi-steel-members"
+      ]
+    },
+    "explanation": "Match the shape to the load path, support condition, connection, and source-backed design check. Supported by the Batch 147 local source boundary: bsi-steel-members.",
+    "code_citation": "bsi-steel-members",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-008-01-002"
   }
 }

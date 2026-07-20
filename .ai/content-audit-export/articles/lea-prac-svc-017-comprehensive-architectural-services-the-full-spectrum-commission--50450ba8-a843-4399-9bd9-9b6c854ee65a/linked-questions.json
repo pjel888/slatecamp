@@ -8,37 +8,31 @@
       "question_id": "8a51628d-86d8-43e4-b42c-d55b7df25981",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "An architect provides pre-design services establishing project requirements, regular design services creating the design, and then construction administration. The client later questions whether the architect should have coordinated MEP engineers throughout. Which CAS principle addresses this concern?",
+      "text": "A client asks why the architect coordinates MEP consultants in a comprehensive commission. Which SPP 206 principle answers best?",
       "options": [
         {
           "id": "a",
-          "text": "Architects are only responsible for design; MEP coordination is the contractor's role, unless otherwise agreed upon in the contract"
+          "text": "The architect acts as the client's agent in procuring and coordinating services required by the project"
         },
         {
           "id": "b",
-          "text": "The architect acts as agent of the client in procuring and coordinating all necessary services to ensure viable project execution"
+          "text": "MEP coordination belongs only to the contractor"
         },
         {
           "id": "c",
-          "text": "Coordination is optional and depends on what the client is willing to pay for, which should be clearly outlined in the service agreement"
+          "text": "MEP coordination is prohibited in CAS"
         },
         {
           "id": "d",
-          "text": "MEP coordination occurs only in design-build delivery methods, which integrate design and construction services"
+          "text": "Coordination begins only after building occupancy"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Coordination is the architect's distinctive role in CAS.",
-        "c": "Coordination is essential to CAS, not optional.",
-        "d": "CAS coordination principles apply across all delivery methods.",
-        "correct": "The architect's fundamental role in CAS is to act as the client's agent in procuring and coordinating all necessary services, including MEP coordination. This is inherent to the architect's position as prime professional. SPP 206.",
-        "takeaway": "Architect coordinates all necessary disciplines."
-      },
+      "rationale": "SPP 206 identifies the architect as the client's agent for procuring and coordinating necessary services.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "apply",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-SVC-017-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.474406+00:00",
       "content_hash": "sha256:85c4a42ab0df374f471ecb4c5954ff8a0df0dc5c89f2a49e5165ca68a6e82095"
     },
     {
       "question_id": "0cd4f367-83fa-4ff5-8f52-d46bc102be40",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "How does Professional Responsibility differ between the architect's coordinating role and their responsibility for design?",
+      "text": "Which source-safe statement describes responsibility boundaries in CAS?",
       "options": [
         {
           "id": "a",
-          "text": "The architect assumes professional responsibility only for design decisions, not for coordination outcomes, which are managed by the project manager"
+          "text": "The PM complements designers and contractors but does not relieve them of normal duties"
         },
         {
           "id": "b",
-          "text": "The architect assumes equal professional responsibility and civil liability for both design and construction aspects"
+          "text": "The architect assumes every contractor duty once CAS is used"
         },
         {
           "id": "c",
-          "text": "Professional responsibility depends on whether the architect performs the work or coordinates it, with liability varying accordingly"
+          "text": "Engineers lose responsibility for engineering plans under CAS"
         },
         {
           "id": "d",
-          "text": "The architect's coordinating role carries liability only for communication, not technical outcomes, unless specified in the contract"
+          "text": "The owner no longer makes project decisions"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Responsibility extends to both design and construction outcomes, not design only.",
-        "c": "The architect assumes full responsibility regardless of whether they perform work directly or coordinate it.",
-        "d": "Responsibility encompasses technical coordination and outcomes, not merely communication.",
-        "correct": "In comprehensive services, the architect assumes professional responsibility as prime professional for both design and construction aspects, coordinating to ensure project execution of the project, ensuring accountability throughout. SPP 206.",
-        "takeaway": "Comprehensive responsibility extends to design AND construction."
-      },
+      "rationale": "SPP 206 states that PM does not relieve designers and contractors of their respective normal duties and responsibilities.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-SVC-017-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.478261+00:00",
       "content_hash": "sha256:7ccb4a5878908a9e7c73d2cc0bfbe3a919d0c84dd487838f614a87571da6fe0a"
     },
     {
       "question_id": "c774555c-0d1d-42b8-a58b-1e8854ce4cb7",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "What does the architect's 'prime professional' role mean in Comprehensive Architectural Services?",
+      "text": "What does the architect's prime-professional role mean in SPP 206?",
       "options": [
         {
           "id": "a",
-          "text": "The architect directly performs all services required by the project"
+          "text": "The architect is creator, author, and coordinator of the building design and coordinates required services as client agent"
         },
         {
           "id": "b",
-          "text": "The architect serves as the client's agent coordinating all necessary services"
+          "text": "The architect personally performs every consulting specialty"
         },
         {
           "id": "c",
-          "text": "The architect maintains authority over all design decisions without consulting others"
+          "text": "The architect becomes the project owner"
         },
         {
           "id": "d",
-          "text": "The architect takes full legal responsibility only for design work, not construction"
+          "text": "The architect replaces the contractor's superintendent"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The architect is not expected to perform all services directly; instead, the architect coordinates services provided by others.",
-        "c": "The prime professional role emphasizes coordination and collaboration, not unilateral authority.",
-        "d": "In CAS, the architect assumes professional responsibility for both design and construction aspects.",
-        "correct": "CAS defines the architect as the prime professional who acts as agent of the client in procuring and coordinating necessary services, maintaining professional integrity while managing multidisciplinary teams. SPP 206.",
-        "takeaway": "Architects coordinate; they don't perform all work themselves."
-      },
+      "rationale": "This wording tracks the checked SPP 206 description and avoids overstatement beyond the checked source.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "remember",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-SVC-017-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.475258+00:00",
       "content_hash": "sha256:57b1b3d23c9355432cda0456e89092f18fc4a2790fabe8d9749acd851212095f"
     },
     {
       "question_id": "4ce45e1a-c11d-41c4-b30e-da46213a25e8",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "Which phase is NOT included in the five traditional project phases within Regular Design Services?",
+      "text": "Which item is outside the regular design-service phases but still part of the broader CAS lifecycle?",
       "options": [
         {
           "id": "a",
-          "text": "Project Definition and Schematic Design"
+          "text": "Post-construction evaluation"
         },
         {
           "id": "b",
-          "text": "Design Development and Contract Documents"
+          "text": "Project definition phase"
         },
         {
           "id": "c",
-          "text": "Bidding and post-construction evaluation"
+          "text": "Schematic design phase"
         },
         {
           "id": "d",
-          "text": "All phases listed above are included in Regular Design Services"
+          "text": "Contract documents phase"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Project Definition and Schematic Design are the first two of the five regular design phases.",
-        "b": "Design Development and Contract Documents are phases three and four of the regular design services.",
-        "d": "Not all are included in Regular Design Services; post-construction evaluation is a separate category.",
-        "correct": "Regular Design Services (SPP 202) comprise exactly five phases: 1. Project Definition Phase, 2. Schematic Design Phase, 3. Design Development Phase, 4. Contract Documents Phase, and 5. Bidding or Negotiation Phase. Post-construction evaluation is a separate CAS category. SPP 206.",
-        "takeaway": "Five regular phases create the design; post-construction is separate."
-      },
+      "rationale": "Post-construction evaluation belongs under SPP 205 in the CAS framework, not the regular design phases under SPP 202.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "remember",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-SVC-017-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.477576+00:00",
       "content_hash": "sha256:57512702a926b415de3f30151a6a35aec46bf1fdfe663ab3fcc4eabee0126184"
     },
     {
       "question_id": "8b646a53-5989-4195-87b5-b876d74843c4",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "Which of the following best explains why Comprehensive Architectural Services requires the architect to coordinate multiple disciplines?",
+      "text": "Why does CAS require coordination of multiple disciplines?",
       "options": [
         {
           "id": "a",
-          "text": "To eliminate the need for specialty consultants, thereby reducing project costs and simplifying management"
+          "text": "Continuity of services is needed for execution of a viable project"
         },
         {
           "id": "b",
-          "text": "To create continuity of service ensuring seamless integration of all project elements"
+          "text": "It eliminates every specialist consultant"
         },
         {
           "id": "c",
-          "text": "To reduce the client's need to hire a separate project manager, streamlining communication and decision-making"
+          "text": "It turns every project into design-build"
         },
         {
           "id": "d",
-          "text": "To allow the architect to bill for additional consulting services, increasing potential revenue streams"
+          "text": "It prevents owner decision-making"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The architect coordinates specialty consultants; it doesn't eliminate them.",
-        "c": "While coordination relates to project management, the primary purpose is integration, not to eliminate PM.",
-        "d": "Coordination serves project success, not billing enhancement.",
-        "correct": "The coordination of structural engineers, mechanical engineers, landscape architects, and consultants ensures seamless integration and creates continuity essential for executing a completely viable project. SPP 206.",
-        "takeaway": "Coordination ensures integrated, viable project delivery."
-      },
+      "rationale": "SPP 206 explains CAS through continuity of services related to design and construction.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "understand",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-SVC-017-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.476241+00:00",
       "content_hash": "sha256:71d5a18605b3c84a2790ecd3164a0f35923124bfb6934ce4416b8ab2a6ff7aa9"
     },
     {
       "question_id": "304030e9-5eb4-4cd0-b3c1-c81be955f91d",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "In Comprehensive Architectural Services, what is the significance of the architect maintaining the role of 'agent of the client' rather than acting independently?",
+      "text": "What is the significance of the architect acting as the client's agent in CAS?",
       "options": [
         {
           "id": "a",
-          "text": "The architect's decisions must be approved by all consultants before implementation, ensuring alignment with the client's interests"
+          "text": "The architect procures and coordinates needed services in line with the client's project needs"
         },
         {
           "id": "b",
-          "text": "The architect maintains professional integrity by aligning all coordinated services with the client's project objectives"
+          "text": "The architect becomes exempt from professional standards"
         },
         {
           "id": "c",
-          "text": "The architect cannot be held liable for consultants' work if acting as client's agent, which reduces potential legal exposure"
+          "text": "The architect cannot use consultants"
         },
         {
           "id": "d",
-          "text": "It reduces the architect's professional responsibility to coordinate and supervise quality, potentially impacting project outcomes"
+          "text": "The architect must fund the construction work"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Agency doesn't require consultant approval; it means the architect represents client interests.",
-        "c": "Agency doesn't eliminate liability; the architect assumes responsibility for coordination quality.",
-        "d": "Agency actually reinforces responsibility by clarifying that the architect serves client interests.",
-        "correct": "Acting as the client's agent allows the architect to maintain professional integrity while managing complex multidisciplinary teams and ensuring all coordinated services align with client objectives. This agency relationship preserves the architect's leadership while serving client interests. SPP 206.",
-        "takeaway": "Agency means serving client interests through coordination."
-      },
+      "rationale": "The source-safe role is procurement and coordination of necessary services as client agent.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "analyze",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-SVC-017-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.473726+00:00",
       "content_hash": "sha256:7bad5313e5df1b3494917b01324bfb6fce0a4da8e57c5ff58331855d33da4eff"
     },
     {
       "question_id": "0966fc2e-80e2-459f-8d78-6099e8f5ccc9",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "A client questions why the architect should coordinate construction services when contractors are hired to manage construction. What is the architect's best response regarding Comprehensive Architectural Services?",
+      "text": "A client asks whether construction services belong in CAS. Which answer is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Architects shouldn't coordinate construction; that's the contractor's exclusive responsibility, which is a common misconception"
+          "text": "Yes. CAS includes construction services, including full-time supervision and construction management categories"
         },
         {
           "id": "b",
-          "text": "The architect's professional responsibility and civil liability require oversight to ensure design intent is properly executed in the field"
+          "text": "No. CAS ends at schematic design"
         },
         {
           "id": "c",
-          "text": "The architect coordinates construction only if the client agrees to pay additional fees, which is often negotiated in the contract"
+          "text": "No. Construction services are never architectural services"
         },
         {
           "id": "d",
-          "text": "Construction services are only necessary for design-build projects, not traditional delivery, which is a misunderstanding of the architect's role"
+          "text": "Yes, but only if the project is public"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "CAS specifically includes construction services as a primary category.",
-        "c": "Coordination is part of the comprehensive scope, not an optional add-on.",
-        "d": "CAS applies across delivery methods, not exclusively to design-build.",
-        "correct": "In comprehensive services, the architect assumes professional responsibility and civil liability for construction aspects, requiring direct involvement to ensure the design is properly executed. This is inherent to CAS, not optional. SPP 206.",
-        "takeaway": "Professional liability extends through design into construction."
-      },
+      "rationale": "SPP 206 lists construction services and identifies SPP 204-A and SPP 204-B.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-SVC-017-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.472206+00:00",
       "content_hash": "sha256:771fa58ed39cc833aef3b414d288711cb9c642d1f379a0f2e9c95f1e1e8e76dc"
     },
     {
       "question_id": "57ac8070-f0a8-43ff-bdc1-c8c5ca52b66d",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "What distinguishes specialized architectural services from regular design services in the Comprehensive Services framework?",
+      "text": "What distinguishes specialized architectural services from regular design services in the CAS framework?",
       "options": [
         {
           "id": "a",
-          "text": "Specialized services are always more expensive than regular services, due to the need for advanced expertise and technology"
+          "text": "They address project-specific needs beyond the regular design phase sequence"
         },
         {
           "id": "b",
-          "text": "Specialized services address specific project needs beyond the five traditional project phases"
+          "text": "They replace project definition and schematic design"
         },
         {
           "id": "c",
-          "text": "Specialized services can only be provided by firms with exclusive certification, ensuring compliance with industry standards"
+          "text": "They are available only to contractors"
         },
         {
           "id": "d",
-          "text": "Specialized services replace regular design services rather than supplement them, leading to a streamlined project approach"
+          "text": "They are not listed in SPP 206"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Cost depends on scope and complexity, not the service category alone.",
-        "c": "Architects develop specialized expertise; certification isn't universal.",
-        "d": "Specialized services typically occur alongside or in parallel with regular design services.",
-        "correct": "Specialized architectural services (acoustic design, interiors, heritage conservation, security evaluation, etc.) expand the core offering to address specific project needs beyond the five traditional design phases. SPP 206.",
-        "takeaway": "Specialized services address unique, specific project needs."
-      },
+      "rationale": "SPP 206 lists SPP 203 specialized services as a separate CAS category beyond regular design services.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "analyze",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-SVC-017-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.471029+00:00",
       "content_hash": "sha256:10f7a8aadfddebb744c89d9d2d66df7b60c0d142bd64defde55d066783ddfbed"
     },
     {
       "question_id": "bef77a69-327c-459e-b11d-918086a5fe4a",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "How do the five categories of Comprehensive Architectural Services relate to a project's full lifecycle?",
+      "text": "How do the five CAS categories relate to the project lifecycle?",
       "options": [
         {
           "id": "a",
-          "text": "Pre-design and regular design services cover the entire project; post-construction services are optional upgrades that can enhance project longevity"
+          "text": "They span from pre-design through post-construction"
         },
         {
           "id": "b",
-          "text": "They span from pre-project evaluation through post-construction assessment, creating continuity across the project lifecycle"
+          "text": "They cover only bidding and construction"
         },
         {
           "id": "c",
-          "text": "Only construction services and design services are required; other categories are supplementary and can be tailored to client needs"
+          "text": "They are unrelated optional services with no lifecycle connection"
         },
         {
           "id": "d",
-          "text": "The categories are independent service offerings with no required sequence or relationship, allowing for flexible project management"
+          "text": "They cover only government procurement"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "All five categories contribute to comprehensive service; post-construction is integral, not optional.",
-        "c": "All categories are part of the comprehensive framework, not supplementary.",
-        "d": "The categories are sequential and interdependent, creating continuous service.",
-        "correct": "The five categories (pre-design, regular design, specialized, construction, and post-construction services) together span the complete project lifecycle from conception through occupancy assessment. SPP 206.",
-        "takeaway": "Five categories create complete lifecycle coverage."
-      },
+      "rationale": "The checked source maps CAS from pre-design through post-construction.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "apply",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-SVC-017-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.476905+00:00",
       "content_hash": "sha256:9ce9805ecea64a339a5831465f39dbab552e99f35eccd1acd20d9cca54cfa962"
     },
     {
       "question_id": "7c00e128-1eaa-4d5d-92a7-49eda97f2f8e",
       "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
       "topic_id": "1f007471-e73c-411a-9ef3-6d4d7450a06f",
-      "text": "An architect is asked to coordinate comprehensive services for a complex healthcare facility including structural engineers, MEP consultants, and security specialists. What concept does this arrangement exemplify?",
+      "text": "An owner hires an architect to coordinate the whole CAS range. What does SPP 206 call that relationship?",
       "options": [
         {
           "id": "a",
-          "text": "Design-Build Services with multiple contractors sharing responsibility for design and construction delivery"
+          "text": "Project Management"
         },
         {
           "id": "b",
-          "text": "Project Management representing the owner's engagement for full professional responsibility"
+          "text": "Architectural Design Competition"
         },
         {
           "id": "c",
-          "text": "Design-Bid-Build with consultant coordination managed independently by each discipline lead"
+          "text": "Retainer only"
         },
         {
           "id": "d",
-          "text": "Specialized architectural services limited to design only without construction phase involvement"
+          "text": "Forensic architecture"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This arrangement does not divide design and construction between separate entities as in Design-Build.",
-        "c": "The scope exceeds DBB which doesn't typically include full coordination of post-construction services.",
-        "d": "This extends beyond design to include all five CAS service categories.",
-        "correct": "When the Owner hires the Architect to coordinate the whole range of CAS, this constitutes Project Management (PM) per SPP 206 1.2.1, which involves management activities over normal A&E services for control of time, cost, and quality. SPP 206.",
-        "takeaway": "Full CAS coordination equals Project Management."
-      },
+      "rationale": "SPP 206 states that hiring an architect or firm to coordinate the whole CAS range constitutes PM.",
       "explanation": null,
       "code_citation": "SPP Doc 206",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-SVC-017-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:46.259279+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.473016+00:00",
       "content_hash": "sha256:3d6ec64c75f48e813fe0ba67737b5b7731866fcad8416c8fcefd620b2d8d9d9e"
     }
   ]

@@ -8,36 +8,37 @@
       "question_id": "c0e34a50-1905-4f29-ad32-59aed88ebe6f",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "An international development organization is financing a commercial office tower in Metro Manila and requires a certification system with 20% improvement in energy, water, and embodied energy compared to baseline. Which system should the project pursue?",
+      "text": "Which statement is source-safe for a Philippine green building certification question in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "BERDE, because it is the Philippine national standard and aligns with local environmental policies"
+          "text": "BERDE is the checked Philippine national voluntary green building rating system."
         },
         {
           "id": "b",
-          "text": "LEED, because it has the highest prestige globally and is widely recognized by international stakeholders"
+          "text": "LEED is the Philippine government rating system."
         },
         {
           "id": "c",
-          "text": "EDGE, because it is designed for cost-effective efficiency gains"
+          "text": "EDGE is the only local code compliance method."
         },
         {
           "id": "d",
-          "text": "ISO 14001, because it certifies environmental management systems across various industries"
+          "text": "Any efficient building may claim certification without assessment."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BERDE is appropriate for domestic projects and government buildings, but the scenario explicitly states '20% improvement' which is EDGE's defining metric.",
-        "b": "LEED has global prestige but uses a point-based system with varying thresholds, not a fixed 20% improvement target.",
-        "d": "ISO 14001 is an environmental management system, not a building performance certification.",
-        "correct": "EDGE, administered by the IFC, is specifically designed around a 20% improvement target in energy, water, and embodied energy. It is cost-effective and accessible to developing economies, making it ideal for IFC-funded projects.",
-        "takeaway": "EDGE is the IFC's efficiency-focused certification system; 20% improvement is its defining metric."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "BERDE is identified in the checked source as the national voluntary green building rating system by the Philippine government through DOE, developed by PHILGBC.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "BERDE is appropriate for domestic projects and government buildings, but the scenario explicitly states '20% improvement' which is EDGE's defining metric. LEED has global prestige but uses a point-based system with varying thresholds, not a fixed 20% improvement target. ISO 14001 is an environmental management system, not a building performance certification. EDGE, administered by the IFC, is specifically designed around a 20% improvement target in energy, water, and embodied energy. It is cost-effective and accessible to developing economies, making it ideal for IFC-funded projects. EDGE is the IFC's efficiency-focused certification system; 20% improvement is its defining metric.",
       "code_citation": "IFC EDGE Certification Manual; PHILGBC BERDE Rating System Comparison",
@@ -54,43 +55,44 @@
       "model_id": "ALE-DSGN-009-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-05-06T15:46:01.588513+00:00",
+      "updated_at": "2026-07-20T01:13:27.731990+00:00",
       "content_hash": "sha256:c76b9c9301cd42454f3156f1d977fda8481a8f7b688775b0383206c3d22bc0d1"
     },
     {
       "question_id": "3588f5a0-8c25-44ba-ae7b-54b9346d21a9",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "Which of the following best describes the relationship between BERDE prerequisites and optional credits?",
+      "text": "A project team says its building is BERDE-certified because it uses efficient lighting and shading. What is missing?",
       "options": [
         {
           "id": "a",
-          "text": "Prerequisites are optional; credits are mandatory—the opposite of typical certification systems, which usually prioritize foundational requirements"
+          "text": "The formal BERDE assessment, rating, certification process, minimum system requirements, and minimum rating."
         },
         {
           "id": "b",
-          "text": "Prerequisites are mandatory minimum performance levels in core categories; optional credits allow projects to achieve higher ratings or address specific priorities"
+          "text": "A foreign rating label only."
         },
         {
           "id": "c",
-          "text": "All prerequisites and credits are equally weighted; a project can ignore prerequisites if it earns enough credits, allowing flexibility in certification paths"
+          "text": "A building height variance."
         },
         {
           "id": "d",
-          "text": "BERDE does not use prerequisites, only credits, simplifying the certification process by focusing solely on elective achievements"
+          "text": "A visual facade rendering."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrect—prerequisites are mandatory, not optional.",
-        "c": "Incorrect—prerequisites cannot be bypassed with credits. All BERDE certified projects must meet all prerequisites.",
-        "d": "Incorrect—BERDE explicitly uses prerequisites.",
-        "correct": "BERDE structure: Prerequisites in Energy, Water, Site, Materials, and Waste are non-negotiable baseline performance levels. Optional credits allow projects to exceed baseline and achieve higher star ratings (1–5 stars). This two-tiered approach ensures minimum sustainability; optional credits reward innovation.",
-        "takeaway": "BERDE uses a prerequisite (mandatory) + credit (optional advancement) model, similar to LEED. All certified projects must pass prerequisites."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "Strategies can support performance, but BERDE certification requires the formal process and minimum certification requirements.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "Incorrect—prerequisites are mandatory, not optional. Incorrect—prerequisites cannot be bypassed with credits. All BERDE certified projects must meet all prerequisites. Incorrect—BERDE explicitly uses prerequisites. BERDE structure: Prerequisites in Energy, Water, Site, Materials, and Waste are non-negotiable baseline performance levels. Optional credits allow projects to exceed baseline and achieve higher star ratings (1–5 stars). This two-tiered approach ensures minimum sustainability; optional credits reward innovation. BERDE uses a prerequisite (mandatory) + credit (optional advancement) model, similar to LEED. All certified projects must pass prerequisites.",
       "code_citation": "PHILGBC BERDE Rating System v2.0 Structure and Certification Path",
@@ -106,43 +108,44 @@
       "model_id": "ALE-DSGN-009-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-05-06T15:46:01.163987+00:00",
+      "updated_at": "2026-07-20T01:13:27.729420+00:00",
       "content_hash": "sha256:26692169d0793477227bef9ce3891d8779c4d23f401db5198f6efcde37f8e4a6"
     },
     {
       "question_id": "213446ce-a4b2-495c-ba67-8ff8593ded53",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "A multinational corporation is developing a regional headquarters in the Philippines and requires a certification system recognized globally and valued by international investors. The project is willing to invest in premium features. Which system should be pursued?",
+      "text": "For a new construction project pursuing BERDE, which assessment stages are source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "BERDE, because it is the Philippine national standard, which aligns with local regulations and practices"
+          "text": "Stage 1 - Design and Stage 2 - Construction."
         },
         {
           "id": "b",
-          "text": "EDGE, because it emphasizes cost-effective efficiency, making it suitable for projects with budget constraints"
+          "text": "Stage 3 - Operations only."
         },
         {
           "id": "c",
-          "text": "LEED, because it is globally recognized and valued by multinational corporations and international investors"
+          "text": "A single marketing stage."
         },
         {
           "id": "d",
-          "text": "No certification, because operational efficiency alone is sufficient, reducing initial costs and focusing on practical outcomes"
+          "text": "Only post-occupancy tenant surveys."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BERDE is appropriate for domestic projects but lacks the global recognition multinational corporations seek for international prestige projects.",
-        "b": "EDGE is cost-focused; for a flagship project with premium budget, LEED Gold/Platinum is more aspirational.",
-        "d": "Certification provides market value, regulatory credibility, and investor confidence—not pursuing it forgoes strategic advantage.",
-        "correct": "LEED is the global standard recognized by multinational corporations, international financial institutions, and institutional investors. For flagship headquarters projects with premium budgets, LEED (particularly Gold or Platinum) signals global best practice and enhances asset value.",
-        "takeaway": "LEED is the global standard for multinational/prestige projects; BERDE is domestic best practice; EDGE is cost-effective efficiency."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked BERDE source assigns new construction and fit-out projects to Stage 1 Design and Stage 2 Construction.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "USGBC LEED v4.1 Global Market Presence; PHILGBC BERDE Domestic Context; IFC EDGE Market Positioning",
@@ -160,43 +163,44 @@
       "model_id": "ALE-DSGN-009-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.730382+00:00",
       "content_hash": "sha256:9d43d2053a8cc38063e205f22c4dfa8943c0b977114c8019cfbf4f6fb13b86d2"
     },
     {
       "question_id": "00c2ea2f-4b57-4263-9cf5-0d063ecfc489",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "A residential condominium project in Quezon City is pursuing BERDE certification. Which of the following is a mandatory BERDE prerequisite, not optional?",
+      "text": "Which design move is most aligned with the checked DOE energy-conserving design guidance for an air-conditioned building?",
       "options": [
         {
           "id": "a",
-          "text": "Installation of renewable energy (solar PV) with a minimum capacity of 5 kW per occupied floor"
+          "text": "Reduce east-west long-facade exposure where feasible and control envelope heat gain."
         },
         {
           "id": "b",
-          "text": "Water efficiency—minimum reduction in potable water consumption"
+          "text": "Increase unshaded west glazing because daylight always saves more energy."
         },
         {
           "id": "c",
-          "text": "Green roof or rooftop garden covering at least 30% of the total roof area for thermal reduction"
+          "text": "Ignore orientation if HVAC equipment is efficient."
         },
         {
           "id": "d",
-          "text": "Rainwater harvesting system with storage capacity equivalent to 10% of the annual water demand"
+          "text": "Use dark exterior finishes to absorb solar radiation."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Renewable energy installation is desirable and can earn points, but it is not a mandatory prerequisite; many projects achieve BERDE without on-site PV.",
-        "c": "Green roofs are an innovation strategy, not a prerequisite; they are optional.",
-        "d": "Rainwater harvesting is one strategy to meet Water Efficiency prerequisite, but the prerequisite itself (potable water reduction) is mandatory; the implementation strategy varies.",
-        "correct": "Water Efficiency is a mandatory BERDE prerequisite; all projects must demonstrate minimum potable water reduction targets. This reflects the Philippines' water management challenges, especially in high-precipitation regions.",
-        "takeaway": "BERDE prerequisites are mandatory minimum performance levels; Water Efficiency, Energy Efficiency, Site Selection, Materials, and Waste Management are all required categories."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The DOE guidance identifies solar heat gain and facade orientation as key envelope-energy concerns.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "Renewable energy installation is desirable and can earn points, but it is not a mandatory prerequisite; many projects achieve BERDE without on-site PV. Green roofs are an innovation strategy, not a prerequisite; they are optional. Rainwater harvesting is one strategy to meet Water Efficiency prerequisite, but the prerequisite itself (potable water reduction) is mandatory; the implementation strategy varies. Water Efficiency is a mandatory BERDE prerequisite; all projects must demonstrate minimum potable water reduction targets. This reflects the Philippines' water management challenges, especially in high-precipitation regions. BERDE prerequisites are mandatory minimum performance levels; Water Efficiency, Energy Efficiency, Site Selection, Materials, and Waste Management are all required categories.",
       "code_citation": "PHILGBC BERDE Rating System v2.0; PD 2194 Green Building Provisions",
@@ -213,43 +217,44 @@
       "model_id": "ALE-DSGN-009-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-05-06T15:46:01.316502+00:00",
+      "updated_at": "2026-07-20T01:13:27.733766+00:00",
       "content_hash": "sha256:e7119f1754a7561fb1082fe9098d8757ee1ff6b09f10a58421f25fa4549db7ad"
     },
     {
       "question_id": "13781414-6765-40a5-a91e-12fc2c66fa98",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "Which of the following is the national green building certification system for the Philippines?",
+      "text": "What is the source-safe role of daylighting in the checked DOE guidance?",
       "options": [
         {
           "id": "a",
-          "text": "LEED v4.1"
+          "text": "Coordinate daylight with artificial lighting while managing glare, brightness imbalance, and heat buildup."
         },
         {
           "id": "b",
-          "text": "BERDE"
+          "text": "Add maximum glazing without controls."
         },
         {
           "id": "c",
-          "text": "EDGE"
+          "text": "Replace all code-required lighting."
         },
         {
           "id": "d",
-          "text": "ISO 14001"
+          "text": "Use daylighting only as a decorative facade effect."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "LEED is a US-based system by USGBC; while used globally, it is not the Philippine national standard.",
-        "c": "EDGE is an IFC system focused on 20% efficiency improvement; it is growing in the region but is not the national system.",
-        "d": "ISO 14001 is an environmental management standard, not a building rating system.",
-        "correct": "BERDE (Building for Ecologically Responsive Design Excellence) is developed and administered by the Philippine Green Building Council (PHILGBC) and is the national sustainability rating system aligned with Philippine environmental and climate context.",
-        "takeaway": "BERDE is the Philippines' domestic green building certification framework."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The DOE guidance supports daylighting coordination but warns about glare, brightness imbalance, and heat buildup.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PHILGBC BERDE Rating System (voluntary national system recognized by DOE)",
@@ -263,43 +268,44 @@
       "model_id": "ALE-DSGN-009-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.736167+00:00",
       "content_hash": "sha256:9afb1c5f3068c4aaf72516ad5ed1e3ebb95bd232be4ab5119c77b38cf0cd2d6d"
     },
     {
       "question_id": "f9f75173-697b-495d-9b06-e3d5a56ec37a",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "In tropical Philippine climate, which passive design strategy is MOST critical for reducing operational energy in an office building?",
+      "text": "How should voluntary green certification relate to mandatory building requirements?",
       "options": [
         {
           "id": "a",
-          "text": "Active air conditioning with high-efficiency compressors, which are designed to reduce energy consumption by optimizing cooling cycles"
+          "text": "It sits above mandatory requirements and does not replace safety, health, environmental, or building compliance."
         },
         {
           "id": "b",
-          "text": "Natural ventilation and cross-ventilation design, combined with solar shading and thermal mass"
+          "text": "It cancels all local code checks."
         },
         {
           "id": "c",
-          "text": "LED lighting throughout the building, ensuring energy-efficient illumination with minimal heat generation"
+          "text": "It applies only to facade color."
         },
         {
           "id": "d",
-          "text": "Double-glazed windows with low-E coating, providing insulation and reducing solar heat gain while maintaining visibility"
+          "text": "It is required for every private dwelling unit by this article."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "High-efficiency AC is important but cannot replace the energy savings of passive design in tropical climates. Relying on mechanical systems increases operational costs and vulnerability to power outages (common in monsoon season).",
-        "c": "LED lighting reduces lighting energy (typically 10–15% of total), but climate control (heating/cooling) dominates office energy consumption (~40–60%). Addressing the larger load is more impactful.",
-        "d": "Double-glazing in tropical climates is less critical than in cold climates; it may increase cost without proportional benefit. Solar shading and ventilation are more cost-effective.",
-        "correct": "In the Philippines' hot, humid climate, passive design—natural ventilation, orientation to catch prevailing breezes (NE/SW in many regions), solar shading (deep overhangs, louvers), and thermal mass (exposed concrete ceilings)—dramatically reduces cooling load. This is more cost-effective than active systems and improves resilience.",
-        "takeaway": "Tropical climate design must prioritize passive cooling (ventilation, shading, mass) before active systems. This aligns with BERDE's emphasis on climate-responsive design."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "BERDE assesses performance beyond existing laws and standards, while DOE energy guidance must not bypass other requirements.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": "High-efficiency AC is important but cannot replace the energy savings of passive design in tropical climates. Relying on mechanical systems increases operational costs and vulnerability to power outages (common in monsoon season). LED lighting reduces lighting energy (typically 10–15% of total), but climate control (heating/cooling) dominates office energy consumption (~40–60%). Addressing the larger load is more impactful. Double-glazing in tropical climates is less critical than in cold climates; it may increase cost without proportional benefit. Solar shading and ventilation are more cost-effective. In the Philippines' hot, humid climate, passive design—natural ventilation, orientation to catch prevailing breezes (NE/SW in many regions), solar shading (deep overhangs, louvers), and thermal mass (exposed concrete ceilings)—dramatically reduces cooling load. This is more cost-effective than active systems and improves resilience. Tropical climate design must prioritize passive cooling (ventilation, shading, mass) before active systems. This aligns with BERDE's emphasis on climate-responsive design.",
       "code_citation": "PD 2194 Green Building Provisions; PHILGBC BERDE—Climate Adaptation Guidance",
@@ -316,44 +322,44 @@
       "model_id": "ALE-DSGN-009-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-05-06T15:46:01.448848+00:00",
+      "updated_at": "2026-07-20T01:13:27.728100+00:00",
       "content_hash": "sha256:8bf7ba20d3340460b3b61c56261a1fcd130554074c307adeb5c24a1008868831"
     },
     {
       "question_id": "1c5554c7-7175-43c4-a7f6-730630519e94",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "Comparing BERDE, EDGE, and LEED: which system operates on a point-based sclea with Certified, Silver, Gold, and Platinum ratings?",
+      "text": "A question asks for LEED or EDGE point thresholds, but the local source packet only checked BERDE and DOE guidance. What is the safest action?",
       "options": [
         {
           "id": "a",
-          "text": "BERDE (1–5 stars), focusing on local environmental priorities and sustainable practices"
+          "text": "Do not assert the thresholds unless the specific LEED or EDGE source packet is checked."
         },
         {
           "id": "b",
-          "text": "EDGE (1–3 stars), emphasizing resource efficiency and cost-effective green building solutions"
+          "text": "Invent the most common international threshold."
         },
         {
           "id": "c",
-          "text": "LEED (40–110 points, Certified to Platinum)"
+          "text": "Use BERDE as a substitute threshold."
         },
         {
           "id": "d",
-          "text": "All three use identical point scales, providing a unified approach to sustainability assessment"
+          "text": "Answer from memory because all green systems are identical."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BERDE uses a 1–5 star rating system based on mandatory prerequisites and optional credits.",
-        "b": "EDGE uses a 1–3 star system or 20% efficiency improvement threshold.",
-        "c": "Correct—LEED's point system is its defining characteristic.",
-        "d": "Incorrect—all three systems use different rating scales (BERDE: 1–5 stars; EDGE: 1–3 stars or pass/fail; LEED: points-based Certified/Silver/Gold/Platinum).",
-        "correct": "LEED uses a points-based system (40–110 total points) with achievement levels: Certified (40–49), Silver (50–59), Gold (60–79), Platinum (80+). This allows partial credit across categories.",
-        "takeaway": "LEED's point-based system (Certified/Silver/Gold/Platinum) is its distinguishing feature; BERDE and EDGE use star or improvement-based ratings."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "Source-safe question work must not import unchecked thresholds from outside the audited packet.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "USGBC LEED v4.1 Reference Guide; PHILGBC BERDE v2.0; IFC EDGE Certification Manual",
@@ -369,43 +375,44 @@
       "model_id": "ALE-DSGN-009-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.734558+00:00",
       "content_hash": "sha256:d858bb312063055348f73ed90b56fff73815098a0e089f4790d24fc163d0ee3c"
     },
     {
       "question_id": "301b5df3-d4d3-40ea-862c-ccce90f7b66e",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "A government-funded low-cost housing project in the Philippines must comply with green building standards. Which certification system is most aligned with the project's domestic policy context and affordability constraints?",
+      "text": "Which answer best separates RA 11285 from BERDE certification?",
       "options": [
         {
           "id": "a",
-          "text": "LEED Certified (base level), because USGBC is internationally recognized and offers a broad framework for sustainability"
+          "text": "RA 11285 establishes energy-efficiency policy scope; BERDE certification requires the BERDE process."
         },
         {
           "id": "b",
-          "text": "BERDE, because it is the national system and emphasizes cost-effective, locally-sourced solutions"
+          "text": "RA 11285 automatically certifies buildings as BERDE."
         },
         {
           "id": "c",
-          "text": "EDGE, because it requires only 20% efficiency improvement, making it lowest-cost and easiest to achieve for budget-constrained projects"
+          "text": "BERDE replaces all energy policy obligations."
         },
         {
           "id": "d",
-          "text": "No certification—government projects are exempt from green building requirements, allowing for flexibility in design and construction"
+          "text": "RA 11285 is a facade-material guide."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "LEED is more expensive to certify and implement; it is designed for premium, professionally-managed projects, not low-cost housing.",
-        "c": "EDGE is cost-effective but not the domestic mandate; BERDE provides both affordability and national alignment.",
-        "d": "Government projects set the standard and must demonstrate compliance; exemption is not appropriate for taxpayer-funded housing.",
-        "correct": "BERDE is the nationally-developed system that integrates Philippine climate, local materials availability, affordability, and policy priorities. Government projects are expected to lead by example using the domestic standard.",
-        "takeaway": "BERDE is the appropriate certification for public/government projects in the Philippines; it reflects domestic priorities and is most cost-accessible."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "RA 11285 supports energy efficiency and conservation policy; it does not itself prove BERDE certification.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PHILGBC BERDE Rating System; PD 2194 National Building Code—Green Building Provisions",
@@ -423,43 +430,44 @@
       "model_id": "ALE-DSGN-009-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.731184+00:00",
       "content_hash": "sha256:8298ebb38d7bb832c24bbebb550b4f571930d8ed3fab9bc1ec39f110d3f0dbbe"
     },
     {
       "question_id": "34179641-32d5-4b41-a6ad-d0b7c472b57b",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "In the Philippine monsoon climate, which water management strategy is MOST relevant to BERDE prerequisite compliance?",
+      "text": "A design has efficient lamps but poor envelope heat-gain control. What is the source-safe critique?",
       "options": [
         {
           "id": "a",
-          "text": "Reduced watering schedules for landscaping, because water is scarce in the tropics and conservation is critical"
+          "text": "Lighting efficiency helps, but DOE guidance also treats envelope heat gain as a major energy-design concern."
         },
         {
           "id": "b",
-          "text": "Rainwater harvesting and greywater reuse systems, because high rainfall must be managed and potable water reduced"
+          "text": "Lighting efficiency alone proves full green certification."
         },
         {
           "id": "c",
-          "text": "Installation of desalination plants to increase water supply, despite the high cost and energy requirements"
+          "text": "Envelope design is irrelevant in the tropics."
         },
         {
           "id": "d",
-          "text": "Elimination of outdoor landscaping to reduce water demand, which may impact aesthetic and environmental quality"
+          "text": "Only the project logo needs revision."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Reduced watering schedules address demand but do not address potable water reduction or local water cycle integration; this is a surface-level approach.",
-        "c": "Desalination is energy-intensive and not typical for high-rainfall regions; it is not a BERDE-aligned strategy.",
-        "d": "Eliminating landscaping removes ecosystem co-benefits and quality-of-life value; this is not the intent of green building.",
-        "correct": "The Philippines receives high rainfall (monsoon season can exceed 3,000mm annually in some regions). BERDE's Water Efficiency prerequisite requires potable water reduction; rainwater harvesting and greywater reuse are cost-effective strategies that align with high rainfall, site-specific water cycle management, and BERDE's tropical adaptation emphasis.",
-        "takeaway": "BERDE's Philippine context emphasizes water cycle management—capturing and reusing high rainfall, not just reducing use. Rainwater harvesting is the signature strategy."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "DOE guidance covers lighting efficiency and envelope heat-gain reduction.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PHILGBC BERDE—Water Efficiency Category; PD 2194 Green Building Provisions for Tropical Climate",
@@ -477,43 +485,44 @@
       "model_id": "ALE-DSGN-009-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.732962+00:00",
       "content_hash": "sha256:ea231f8c4acc81a4e13032a56829c2181e77964cf50e30bbda59a13fdeac6e36"
     },
     {
       "question_id": "c3be7e92-b350-4b11-84e3-07a01be93144",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
       "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "A commercial office project is designed with high-performance insulation, efficient HVAC systems, LED lighting, and low-VOC finishes. Which green building principle does this design primarily address?",
+      "text": "Which is the best LEA takeaway from this audited green-building article?",
       "options": [
         {
           "id": "a",
-          "text": "Site Selection—minimizing environmental disturbance, focusing on the location and its impact on the surrounding ecosystem"
+          "text": "Use BERDE for checked local certification claims and DOE guidance for energy-design strategy."
         },
         {
           "id": "b",
-          "text": "Water Efficiency—reducing potable water consumption, through the use of low-flow fixtures and water recycling systems"
+          "text": "Use any international rating as a local code substitute."
         },
         {
           "id": "c",
-          "text": "Energy Efficiency & Indoor Environmental Quality—reducing operational impact and occupant health"
+          "text": "Treat certification as purely cosmetic."
         },
         {
           "id": "d",
-          "text": "Materials & Waste Management—using recycled content, promoting sustainability through material selection and waste reduction"
+          "text": "Avoid energy design until after occupancy."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Site Selection is about location choice (proximity to transit, brownfield remediation), not post-design efficiency upgrades.",
-        "b": "Water Efficiency focuses on fixtures and management; these strategies do not directly address water.",
-        "d": "Materials & Waste Management addresses embodied carbon and construction waste; while LED uses manufactured materials, the emphasis here is on operational efficiency.",
-        "correct": "The listed strategies (insulation, efficient HVAC, LED, low-VOC finishes) directly address Energy Efficiency (reducing operational energy consumption) and Indoor Environmental Quality (low-VOC improves air quality and occupant health). These are two of the core BERDE/LEED/EDGE categories.",
-        "takeaway": "Energy Efficiency and Indoor Environmental Quality are core green building principles; insulation, HVAC, lighting, and low-VOC finishes are typical strategies."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The audited article limits claims to BERDE, DOE energy guidance, and RA 11285 policy support.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PHILGBC BERDE Rating System; USGBC LEED Categories; IFC EDGE Focus Areas",
@@ -529,7 +538,7 @@
       "model_id": "ALE-DSGN-009-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.735347+00:00",
       "content_hash": "sha256:b3ec97bbb05005363cf1db12a11efa1400060ab142af0b7bc8b7e6c955ced873"
     }
   ]

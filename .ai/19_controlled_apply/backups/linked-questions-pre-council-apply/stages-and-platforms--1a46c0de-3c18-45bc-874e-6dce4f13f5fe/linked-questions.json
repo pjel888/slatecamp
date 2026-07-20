@@ -1,0 +1,1372 @@
+{
+  "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:5ec457e1ff5fec183bdd3ec716e772cb0933118199e1e7e6553661d322fb6193",
+  "question_count": 31,
+  "questions": [
+    {
+      "question_id": "8d763aab-f50c-4878-b74d-84f1e56a496c",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An open-air stadium with no stage accommodates 5,000 spectators. Under PD 1096, what is the correct Occupancy Group?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group I, which is typically used for assembly buildings with a stage"
+        },
+        {
+          "id": "b",
+          "text": "Group H, Div. 1, which is for assembly buildings with fixed seats"
+        },
+        {
+          "id": "c",
+          "text": "Group H, Div. 4"
+        },
+        {
+          "id": "d",
+          "text": "Group C, which is for educational buildings and not applicable here"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The absence of a stage disqualifies this stadium from Group I regardless of headcount. Group H Div. 4 is the catch-all for large assembly structures without stages.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d229f836ef6bd1f2651b788341e69c608f794583b289ec16add9fafcb68c9f4"
+    },
+    {
+      "question_id": "bc31c8ba-d5d5-444e-907b-52eb7b4f16bb",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A 900-seat theater with a raised stage has an occupant load of 950 persons. Under PD 1096, what is the correct Occupancy Group?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group H, Div. 1"
+        },
+        {
+          "id": "b",
+          "text": "Group H, Div. 2"
+        },
+        {
+          "id": "c",
+          "text": "Group I"
+        },
+        {
+          "id": "d",
+          "text": "Group H, Div. 3"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Both conditions (stage AND ≥1,000 occupants) must be met for Group I. 950 is less than 1,000, so this is Group H Div. 1. If it had exactly 1,000 seats, it would be Group I. The 1,000 is inclusive/exclusive matters — '1,000 or more' means ≥1,000.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b765a0e26e0ef31002138d822839594b42e1d9dd43af55ce2d34f00366150ec1"
+    },
+    {
+      "question_id": "c89343bf-ae47-4227-b4ad-632a70c7c149",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which of the following correctly describes the proscenium wall requirements under PD 1096, Rule XII, Section 1213.4?",
+      "options": [
+        {
+          "id": "sp-003-a",
+          "text": "1-hour fire-resistive construction, extending flush with the auditorium roof, with all openings protected by 1-hour fire assemblies"
+        },
+        {
+          "id": "sp-003-b",
+          "text": "2-hour incombustible construction, extending at least 1.20 m above the auditorium roof, with all openings protected by 1.5-hour fire assemblies"
+        },
+        {
+          "id": "sp-003-c",
+          "text": "2-hour incombustible construction, extending at least 1.50 m above the auditorium roof, with all openings protected by 1-hour fire assemblies"
+        },
+        {
+          "id": "sp-003-d",
+          "text": "3-hour fire-resistive construction, extending at least 1.20 m above the auditorium roof, with the main proscenium opening protected by a 3/4-hour fire assembly"
+        }
+      ],
+      "correct_option_id": "sp-003-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The proscenium wall is the primary fire-separation barrier between the high-risk stage area (scenery, curtains, pyrotechnics) and the audience. The 1.20 m extension above the auditorium roof prevents fire from rolling over the top of the wall. Maximum permitted openings: 1 at orchestra pit level, 2 at stage floor level (each ≤ 2.00 m²), all with 1.5-hour fire assemblies.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8255a4dcdb295eb1dff8e61da139ba9a59042986b28173d2820fcc2c46096ba4"
+    },
+    {
+      "question_id": "a7ab976f-e52b-4a39-a4f2-0763720ba396",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the maximum allowable area for a projection port in a motion picture projection room per PD 1096, Rule XII, Section 1214.4?",
+      "options": [
+        {
+          "id": "sp-007-a",
+          "text": "750 cm², except up to 4,500 cm² for safety film"
+        },
+        {
+          "id": "sp-007-b",
+          "text": "1,300 cm² for all film types, ensuring uniformity across different projection systems"
+        },
+        {
+          "id": "sp-007-c",
+          "text": "750 cm² for all film types without exception, maintaining a standard size for all applications"
+        },
+        {
+          "id": "sp-007-d",
+          "text": "4,500 cm² for all film types, which may not align with standard safety regulations"
+        }
+      ],
+      "correct_option_id": "sp-007-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Port size hierarchy: Projection port ≤ 750 cm² (standard) / ≤ 4,500 cm² (acetate safety film only); Observation port ≤ 1,300 cm²; Combination port (max 3) ≤ 750 mm × 600 mm each. The larger allowance for safety film reflects its non-combustible nature under standard conditions.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1a9c0abc8b6136c1b08efaf7bce1bf1341d564c21b0b7eae1a2598271e6e992f"
+    },
+    {
+      "question_id": "12697864-66f5-4e56-b8f3-0bc2bafcaafd",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which memory aid correctly captures the three ascending load/area numbers for stages under PD 1096, Rule XII?",
+      "options": [
+        {
+          "id": "sp-016-a",
+          "text": "5% Vent, 480 Grid, 620 Floor"
+        },
+        {
+          "id": "sp-016-b",
+          "text": "5% Vent, 367 Grid, 620 Floor"
+        },
+        {
+          "id": "sp-016-c",
+          "text": "10% Vent, 367 Grid, 620 Floor"
+        },
+        {
+          "id": "sp-016-d",
+          "text": "5% Vent, 367 Grid, 732 Floor"
+        }
+      ],
+      "correct_option_id": "sp-016-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The '5% Vent, 367 Grid, 620 Floor' mnemonic is the most reliable study aid for this topic cluster. The numbers increase in ascending order: the smallest percentage applies to ventilators (5%), the intermediate load to gridirons (367 kg/m²), and the highest load to the stage floor (620 kg/m²) where performers and heavy sets directly bear on the structure.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c02562f029a96d044ac3e8f489d9a1be4fac2b3e4b0f96a4129e5f1c11031d6"
+    },
+    {
+      "question_id": "f61d555d-2571-4e83-8632-a1b7da308c7c",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.4, the maximum permitted size for openings at stage floor level in the proscenium wall is:",
+      "options": [
+        {
+          "id": "sp-010-a",
+          "text": "1 opening of any size"
+        },
+        {
+          "id": "sp-010-b",
+          "text": "2 openings, each not exceeding 2.00 m²"
+        },
+        {
+          "id": "sp-010-c",
+          "text": "3 openings, each not exceeding 1.50 m²"
+        },
+        {
+          "id": "sp-010-d",
+          "text": "1 opening at orchestra pit level and unlimited openings at stage floor level"
+        }
+      ],
+      "correct_option_id": "sp-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "All openings in the proscenium wall must be protected by 1.5-hour fire assemblies. The main proscenium opening (the stage aperture itself) additionally requires a self-closing fire-resistive curtain. These restrictions reflect the extreme fire risk in the stage area and the critical life-safety function of the proscenium wall.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c24a9287732eca4cd35c6a610c65295ebd8e75d2ab5adee243b96d97f90a6c1d"
+    },
+    {
+      "question_id": "12bb632a-4b6e-42e6-a8ec-d081be049b7f",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214.6, the fresh-air inlet for a projection room must have a minimum area of 900 cm² and must be located within what distance from the floor level?",
+      "options": [
+        {
+          "id": "sp-009-a",
+          "text": "25 mm of the floor level"
+        },
+        {
+          "id": "sp-009-b",
+          "text": "50 mm of the floor level"
+        },
+        {
+          "id": "sp-009-c",
+          "text": "100 mm of the floor level"
+        },
+        {
+          "id": "sp-009-d",
+          "text": "150 mm of the floor level"
+        }
+      ],
+      "correct_option_id": "sp-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The low-level fresh-air inlet is a passive cooling strategy: cool air enters at the floor, absorbs heat from the projection equipment, and rises to be exhausted through the upper ventilation. The exhaust ducts must be of incombustible material with 25 mm clearance from combustible materials or covered with 10 mm insulation.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c7e781c61a7cafcc7763814e64b57e30589003fe370830fa24517f78215545cb"
+    },
+    {
+      "question_id": "17b41a6f-6bd6-4a0d-bbf0-5a48dbefb9c2",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An enclosed platform in a school auditorium measures 7.00 m × 7.00 m. Per PD 1096, Rule XII, Section 1213.6, is a stage ventilator required for this platform?",
+      "options": [
+        {
+          "id": "sp-005-a",
+          "text": "Yes, because the platform exceeds 45.00 m²"
+        },
+        {
+          "id": "sp-005-b",
+          "text": "Yes, because the platform is not enclosed"
+        },
+        {
+          "id": "sp-005-c",
+          "text": "No, because the platform is 49.00 m² and the exemption applies at exactly 45.00 m²"
+        },
+        {
+          "id": "sp-005-d",
+          "text": "No, because the platform is enclosed and at 49.00 m² it is within the ≤ 45.00 m² exemption threshold"
+        }
+      ],
+      "correct_option_id": "sp-005-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The exemption requires BOTH conditions: (1) the platform must be enclosed, and (2) it must be ≤ 45.00 m². A platform at exactly 45.00 m² qualifies. A platform at 49.00 m² does not, even if enclosed. A platform at 40.00 m² that is open to the audience may not qualify on the 'enclosed' criterion.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da79d152981a651a6815b6c8d85734a99015ad89b6bd39522285981468c4830d"
+    },
+    {
+      "question_id": "4db2dd6b-b3cb-4a6f-afd7-1ce690900d9b",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.5, what is the minimum required live load for a stage floor, and what is the minimum thickness for a wood trap door in the stage floor?",
+      "options": [
+        {
+          "id": "sp-008-a",
+          "text": "620 kg/m²; 50 mm nominal thickness"
+        },
+        {
+          "id": "sp-008-b",
+          "text": "367 kg/m²; 50 mm nominal thickness"
+        },
+        {
+          "id": "sp-008-c",
+          "text": "620 kg/m²; 75 mm nominal thickness"
+        },
+        {
+          "id": "sp-008-d",
+          "text": "480 kg/m²; 40 mm nominal thickness"
+        }
+      ],
+      "correct_option_id": "sp-008-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 620 kg/m² live load for stage floors is among the highest in the entire National Building Code. It must accommodate the full weight of rolling sets, stage lifts, orchestra pits in raised positions, and the possibility of large cast or chorus members concentrated in a small area. Trap doors of 50 mm nominal wood are permitted because wood remains a workable material for frequent actuation in performance contexts.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5acceaaf19dd46692cdfa6feefb4287bd8606787e329d002ec439e9d177c814d"
+    },
+    {
+      "question_id": "4904ff2c-ed80-485f-8004-f2dec98e9227",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214.6, exhaust ducts from a projection room must maintain a clearance of at least 25 mm from combustible materials, or be covered with insulation of at least:",
+      "options": [
+        {
+          "id": "sp-015-a",
+          "text": "5 mm insulation"
+        },
+        {
+          "id": "sp-015-b",
+          "text": "10 mm insulation"
+        },
+        {
+          "id": "sp-015-c",
+          "text": "15 mm insulation"
+        },
+        {
+          "id": "sp-015-d",
+          "text": "20 mm insulation"
+        }
+      ],
+      "correct_option_id": "sp-015-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 25 mm clearance and 10 mm insulation requirements are alternative compliance paths — either one is sufficient. Both provisions prevent the transfer of heat from the hot exhaust gases to adjacent combustible construction, which could ignite structural or finish materials.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f99e5ef48086f9a04378ad4a7a84de06bc3e005b51ce8ca38397a08a52c0086"
+    },
+    {
+      "question_id": "8e52ebb6-5d80-4d76-9654-777ec8db5c6b",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.2, what is the minimum required live load for a stage gridiron?",
+      "options": [
+        {
+          "id": "sp-004-a",
+          "text": "240 kg/m²"
+        },
+        {
+          "id": "sp-004-b",
+          "text": "367 kg/m²"
+        },
+        {
+          "id": "sp-004-c",
+          "text": "480 kg/m²"
+        },
+        {
+          "id": "sp-004-d",
+          "text": "620 kg/m²"
+        }
+      ],
+      "correct_option_id": "sp-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Gridirons are the structural framing systems above the stage from which scenery, lighting, and rigging are suspended. They must be incombustible (steel or iron), and fire protection of steel/iron may be omitted at this location since the stage ventilator provides smoke and heat relief. The 367 kg/m² is a distributed load requirement for the rigging structure.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:853ffd4e78d39845e4c4add9874878119675cc668dee04bb42a8563ce7471ea4"
+    },
+    {
+      "question_id": "e98eaf3e-2f3f-4ba1-a6b4-9935c9f90fc2",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.1, stage ventilators must be positioned where on the stage structure, and what additional glass protection requirement applies?",
+      "options": [
+        {
+          "id": "sp-002-a",
+          "text": "At the perimeter walls of the stage; no glass protection requirement is specified in Section 1213.1, allowing for flexibility in design"
+        },
+        {
+          "id": "sp-002-b",
+          "text": "Near the center above the highest part of the working stage; all glass within the ventilator must be protected against falling"
+        },
+        {
+          "id": "sp-002-c",
+          "text": "At the base of the proscenium wall; glass must be laminated safety glass rated for impact, ensuring safety during performances"
+        },
+        {
+          "id": "sp-002-d",
+          "text": "At the rear wall of the stage above the fly loft; glass protection follows standard fenestration rules only, which may not be sufficient for stage use"
+        }
+      ],
+      "correct_option_id": "sp-002-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1213.1, ventilators must be positioned near the center above the highest part of the working stage. This placement maximizes smoke exhaust effectiveness — hot smoke rises to the highest point before the ventilator opens. All glass within the ventilator must be protected against falling (using wire glass or protective screen) because broken glass falling onto a working stage during a performance or fire event is a life-safety hazard.",
+      "explanation": "The 'near center above highest working stage' positioning rule has a functional purpose: smoke stratifies and banks up at the highest point. A ventilator at the perimeter would be less effective. The glass protection requirement is separate from — and in addition to — the area and positioning requirements.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b09a9ddc6580056e2679b2170d2d9965225f675d20ca46a59c4a69ac9005da40"
+    },
+    {
+      "question_id": "a94e1bb4-8cfa-4b0e-b418-cee9dcc51eb5",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A performing arts center has a stage floor area of 180 sq.m measured within the stage walls. Per PD 1096, Rule XII, Section 1213.1, what is the minimum required total area of stage ventilators?",
+      "options": [
+        {
+          "id": "sp-001-a",
+          "text": "7.20 sq.m — calculated as 4% of the stage floor area"
+        },
+        {
+          "id": "sp-001-b",
+          "text": "9.00 sq.m — calculated as 5% of the 180 sq.m stage floor area"
+        },
+        {
+          "id": "sp-001-c",
+          "text": "12.00 sq.m — calculated as the standard fixed minimum for all full stages"
+        },
+        {
+          "id": "sp-001-d",
+          "text": "18.00 sq.m — calculated as 10% of the stage floor area for larger venues"
+        }
+      ],
+      "correct_option_id": "sp-001-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1213.1 mandates that total ventilation area equal at least 5% of the stage floor area within the stage walls. 5% of 180 sq.m = 9.00 sq.m. There is no fixed minimum independent of stage area — the requirement scales with the stage. Option A (7.20 sq.m) represents 4%, which is insufficient. Option C incorrectly implies a fixed standard minimum. Option D (18.00 sq.m) would require 10%, which exceeds the code minimum. Ventilators must be of metal or incombustible material, positioned near the center above the highest working stage point.",
+      "explanation": "The 5% rule is the most-tested provision in Section 1213. The ventilator doubles as a fire smoke exhaust path, allowing hot gases to escape upward rather than banking down into the auditorium during a fire. The measurement is within the stage walls — not the overall building footprint.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d8034d01a1c0e936d28cdb3f1507832f0cec74ce4cf024f35e84bcf4a6410de1"
+    },
+    {
+      "question_id": "732841ec-9350-4c66-ba90-2f189db03c5e",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.2, what material must stage gridirons be constructed of, what minimum live load must they carry, and may fire protection be omitted from the steel structure?",
+      "options": [
+        {
+          "id": "sp-003-a",
+          "text": "Incombustible materials (steel/iron); minimum 367 kg/sq.m live load; fire protection of steel/iron may be omitted"
+        },
+        {
+          "id": "sp-003-b",
+          "text": "Incombustible materials (steel/iron); minimum 620 kg/sq.m live load; fire protection must be provided on all steel members"
+        },
+        {
+          "id": "sp-003-c",
+          "text": "Any structural material; minimum 367 kg/sq.m live load; fire protection follows standard Type of Construction requirements"
+        },
+        {
+          "id": "sp-003-d",
+          "text": "Incombustible materials (steel/iron); minimum 240 kg/sq.m live load; fire protection of steel/iron may be omitted"
+        }
+      ],
+      "correct_option_id": "sp-003-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1213.2, gridirons must be incombustible (steel or iron) and must be designed for a minimum live load of 367 kg/sq.m. Notably, fire protection of steel/iron gridirons may be omitted — the stage ventilator provides the smoke and heat relief that substitutes for cementitious or intumescent protection in this location. The 620 kg/sq.m figure is the stage floor live load (Section 1213.5), not the gridiron — a frequent exam confusion point.",
+      "explanation": "The 367 kg/sq.m gridiron live load accounts for concentrated counterweight rigging systems, full scenery drops, and lighting battens. The permission to omit fire protection is a code-specific exception that exists because the ventilator provides equivalent smoke/heat venting — recognizing that a gridiron that cannot be adjusted quickly during a fire could be catastrophic for performers.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2daed59fa233d61dd9cd19c40b72535fcf852a731bf609644b6539efa78714a4"
+    },
+    {
+      "question_id": "12c127d7-ad19-42b7-a6a5-1c00168afbc8",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.4, what are the fire rating, roof extension height, permitted openings, and opening protection requirements for a proscenium wall?",
+      "options": [
+        {
+          "id": "sp-004-a",
+          "text": "1-hour fire-resistive; flush with auditorium roof; openings limited to 2 at stage floor level; all protected by 1-hour fire assemblies"
+        },
+        {
+          "id": "sp-004-b",
+          "text": "2-hour incombustible; extends ≥1.20 m above auditorium roof; max 1 at orchestra pit, max 2 at stage floor (each ≤2.00 sq.m); 1.5-hour fire assemblies"
+        },
+        {
+          "id": "sp-004-c",
+          "text": "2-hour incombustible; extends ≥1.50 m above auditorium roof; unlimited openings permitted provided each has a 1-hour fire assembly"
+        },
+        {
+          "id": "sp-004-d",
+          "text": "3-hour fire-resistive; extends ≥1.20 m above auditorium roof; max 2 openings at any level; all protected by 3-hour fire assemblies"
+        }
+      ],
+      "correct_option_id": "sp-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1213.4 requires: (1) minimum 2-hour incombustible construction; (2) extension of at least 1.20 m above the auditorium roof — preventing fire from rolling over the wall; (3) maximum 1 opening at orchestra pit level, maximum 2 openings at stage floor level (each ≤ 2.00 sq.m); (4) all openings protected by 1.5-hour fire assemblies; (5) main proscenium opening must have a self-closing fire-resistive curtain (the 'iron curtain'). Option A (1-hour, flush) fails on both rating and extension. Option C permits unlimited openings — incorrect. Option D uses 3-hour (too high) and assigns 3-hour door assemblies to a 2-hour wall.",
+      "explanation": "The proscenium wall is the primary fire barrier between the high-risk stage and the audience. The 1.20 m extension above the roof prevents fire from escaping the stage envelope by traveling across the auditorium roofline. The 1.5-hour assembly rating at openings is specific — not 1-hour, not 2-hour.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.4",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6baeb2d5b67bba256f1feef9235feacea80d32b74506f3662ff72754f47b35b"
+    },
+    {
+      "question_id": "a9b2cb1f-ffdf-401d-852a-917478ffac93",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.5, what is the minimum live load requirement for a stage floor, and what material and thickness apply to permitted trap doors?",
+      "options": [
+        {
+          "id": "sp-005-a",
+          "text": "Stage floor: minimum 367 kg/sq.m; trap doors: steel plate, minimum 10 mm thick"
+        },
+        {
+          "id": "sp-005-b",
+          "text": "Stage floor: minimum 620 kg/sq.m; trap doors: wood, minimum 50 mm nominal thickness"
+        },
+        {
+          "id": "sp-005-c",
+          "text": "Stage floor: minimum 480 kg/sq.m; trap doors: incombustible material of any thickness"
+        },
+        {
+          "id": "sp-005-d",
+          "text": "Stage floor: minimum 620 kg/sq.m; trap doors are prohibited under all Section 1213 stages"
+        }
+      ],
+      "correct_option_id": "sp-005-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1213.5, the stage floor minimum live load is 620 kg/sq.m — the highest in the article and among the highest in the NBC. This accommodates rolling loads from heavy set pieces, motorized stage lifts, and massed performers. Trap doors are permitted and must be of wood with minimum 50 mm nominal thickness. Note the reversal from the gridiron: the gridiron is steel/incombustible (367 kg/sq.m); the stage floor trap doors are specifically wood (620 kg/sq.m floor). The 367 kg/sq.m figure belongs to the gridiron, not the floor.",
+      "explanation": "The 620 kg/sq.m vs. 367 kg/sq.m pair (floor vs. gridiron) is a primary exam trap. The floor carries higher load because performers and scenery concentrate on it; the gridiron carries distributed rigging loads. Trap doors in wood at 50 mm nominal thickness are a specific code permission — not a general allowance.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4d9645b041ed841d2d9bf32e131efa8c94bb995045037abbcae63b4b640bc939"
+    },
+    {
+      "question_id": "4011ba53-8c9f-4d5e-9bb3-2c29f6fcecea",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.6, enclosed platforms are subject to ventilator requirements similar to stages — but with one critical exemption. What is that exemption threshold?",
+      "options": [
+        {
+          "id": "sp-006-a",
+          "text": "Enclosed platforms not exceeding 30.00 sq.m are exempt from the ventilator requirement"
+        },
+        {
+          "id": "sp-006-b",
+          "text": "Enclosed platforms not exceeding 45.00 sq.m are exempt from the ventilator requirement"
+        },
+        {
+          "id": "sp-006-c",
+          "text": "Enclosed platforms not exceeding 93.00 sq.m are exempt from the ventilator requirement"
+        },
+        {
+          "id": "sp-006-d",
+          "text": "All enclosed platforms regardless of size are exempt because they have no fly gallery or gridiron"
+        }
+      ],
+      "correct_option_id": "sp-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1213.6, platforms are subject to the same 5% ventilator requirement as stages — with one exemption: enclosed platforms not exceeding 45.00 sq.m are exempt. A school auditorium platform of 6 m × 7 m = 42 sq.m does not need a stage ventilator. A platform of 7 m × 7 m = 49 sq.m does. The IBC platform exemption is 93 sq.m (1,000 sq.ft) — PH is more conservative. Option D is incorrect: platforms are not globally exempt — only those ≤ 45 sq.m.",
+      "explanation": "The 45 sq.m threshold is a critical exam number. It separates small school assembly platforms (typically exempt) from performance platforms requiring the full 5% ventilator provision. The threshold applies only to enclosed platforms — open platforms have different considerations.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.6",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ab5ae48581140b71501f681b8ca6c8263d3cb2fa87761cf207ef598dc9fde03e"
+    },
+    {
+      "question_id": "4b6899d5-1663-4f84-8c5a-6af09b865a06",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214, what is the minimum floor area formula for a motion picture projection room, and what is the minimum ceiling height?",
+      "options": [
+        {
+          "id": "sp-007-a",
+          "text": "5.00 sq.m for the first projector plus 2.50 sq.m each additional; minimum ceiling height 2.10 m"
+        },
+        {
+          "id": "sp-007-b",
+          "text": "7.00 sq.m for the first projector plus 3.50 sq.m each additional; minimum ceiling height 2.40 m"
+        },
+        {
+          "id": "sp-007-c",
+          "text": "7.00 sq.m for the first projector plus 5.00 sq.m each additional; minimum ceiling height 2.40 m"
+        },
+        {
+          "id": "sp-007-d",
+          "text": "10.00 sq.m regardless of the number of projectors; minimum ceiling height 2.40 m"
+        }
+      ],
+      "correct_option_id": "sp-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1214, the minimum floor area is 7.00 sq.m for the first projector plus 3.50 sq.m for each additional machine. For two projectors: 7.00 + 3.50 = 10.50 sq.m. For three: 7.00 + 7.00 = 14.00 sq.m. The minimum ceiling height is 2.40 m. The room must also have minimum 1-hour fire-resistive construction throughout, incombustible walls and ceiling. Section 1214 applies to ribbon-type film wider than 22 mm and electric arc projection equipment.",
+      "explanation": "The 7 + 3.50 per additional machine formula is a frequently tested computation. For any N projectors: floor area = 7.00 + (N-1) × 3.50 sq.m. The most common trap is using 7.00 sq.m for a two-projector room — the correct answer for two machines is 10.50 sq.m.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1214",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be44264f3e690f107144a45438e4abbc4a0061016e2a490891845096b4f41dd5"
+    },
+    {
+      "question_id": "719a4f55-1c44-4e83-a0cb-eab7b7152b7e",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214, what are the exit requirements for a motion picture projection room, including doorway dimensions and door specifications?",
+      "options": [
+        {
+          "id": "sp-008-a",
+          "text": "1 doorway minimum, 900 mm wide × 2.10 m high; door swings inward; self-closing 1-hour fire assembly; standard latch permitted"
+        },
+        {
+          "id": "sp-008-b",
+          "text": "2 doorways minimum, separated ≥1/3 of room perimeter; each 750 mm wide × 2.00 m high; self-closing 3/4-hour fire assembly, swing outward, no latches"
+        },
+        {
+          "id": "sp-008-c",
+          "text": "2 doorways minimum with no separation requirement; each 900 mm wide × 2.00 m high; doors may swing in either direction; no special latch requirement"
+        },
+        {
+          "id": "sp-008-d",
+          "text": "3 doorways minimum when more than one projector is installed; each 750 mm wide × 2.00 m high; 1-hour fire assemblies; no latch requirement"
+        }
+      ],
+      "correct_option_id": "sp-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1214, projection rooms require: minimum 2 doorways, separated by at least 1/3 of the room perimeter; each doorway minimum 750 mm wide × 2.00 m high; doors must be self-closing 3/4-hour fire assemblies; must swing outward (away from the room); maximum door width 750 mm; and no latches — ensuring panic-free egress. The outward swing is critical for emergency escape when the room is filled with smoke. No-latch doors prevent occupants from being trapped.",
+      "explanation": "The 1/3 perimeter separation ensures the two exits are not adjacent — preventing both exits from being blocked simultaneously by a single fire or obstruction. The no-latch requirement is a panic egress provision unique to this section. The 3/4-hour fire assembly rating (not 1-hour) is specific to projection room doors.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1214",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2bb1ff2cb76a3e3a5375a14f5fbf8ea1dcd86ea2aaf4deaf439baed3786f22af"
+    },
+    {
+      "question_id": "26e5b0a0-a147-4133-b20d-af5d31fbebdc",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214, what are the maximum sizes for projection ports and observation ports in a motion picture projection room, and what is the exception for acetate safety film projection ports?",
+      "options": [
+        {
+          "id": "sp-009-a",
+          "text": "Projection port: max 500 sq.cm; observation port: max 1,000 sq.cm; safety film exception: up to 3,000 sq.cm"
+        },
+        {
+          "id": "sp-009-b",
+          "text": "Projection port: max 750 sq.cm; observation port: max 1,300 sq.cm; safety film exception: up to 4,500 sq.cm"
+        },
+        {
+          "id": "sp-009-c",
+          "text": "Projection port: max 1,300 sq.cm; observation port: max 750 sq.cm; safety film exception: up to 6,000 sq.cm"
+        },
+        {
+          "id": "sp-009-d",
+          "text": "Projection port: max 750 sq.cm; observation port: max 750 sq.cm; no exception exists for acetate safety film"
+        }
+      ],
+      "correct_option_id": "sp-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1214: projection port maximum is 750 sq.cm; observation port maximum is 1,300 sq.cm (larger because it is for observation only, not beam passage); combination ports (max 3 allowed) must not exceed 750 mm × 600 mm each. For acetate safety film only, projection port size may be increased to up to 4,500 sq.cm — six times the standard limit — because safety film's lower flammability reduces the risk of a large opening becoming a fire propagation path.",
+      "explanation": "The port size hierarchy (750 sq.cm projection < 1,300 sq.cm observation < 4,500 sq.cm safety film projection) tracks fire risk inversely: smaller openings for more dangerous film types. The observation port is larger than the projection port because the light beam does not pass through it — only the projectionist's line of sight.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1214",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:79f5a90929ca6b0fe419118c358babf9cc62f88ac0f9caa596a2a0d9f8c397be"
+    },
+    {
+      "question_id": "162517f9-d367-4d6c-a734-cf94b89eaa1d",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214, where must the fresh-air inlet for a projection room ventilation system be located, and what minimum area must it provide?",
+      "options": [
+        {
+          "id": "sp-010-a",
+          "text": "Fresh-air inlet at ceiling level; minimum area 900 sq.cm to maximize mixing with warm room air"
+        },
+        {
+          "id": "sp-010-b",
+          "text": "Fresh-air inlet within 50 mm of the floor level; minimum area 900 sq.cm to draw cool air from floor level"
+        },
+        {
+          "id": "sp-010-c",
+          "text": "Fresh-air inlet at mid-wall level; minimum area 1,300 sq.cm to match the observation port area"
+        },
+        {
+          "id": "sp-010-d",
+          "text": "Fresh-air inlet at the door threshold; minimum area 300 sq.cm per projector installed in the room"
+        }
+      ],
+      "correct_option_id": "sp-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1214, the fresh-air inlet must have a minimum area of 900 sq.cm and must be located within 50 mm of the floor level. The floor-level position exploits thermal displacement ventilation: cool fresh air enters at floor level, absorbs heat from equipment and people, rises, and exits through ceiling-level exhaust ducts. Exhaust ducts must be incombustible material with 25 mm clearance from combustible material or covered with 10 mm insulation. The 50 mm floor proximity is a precise dimensional requirement, not a general guideline.",
+      "explanation": "The floor-level supply strategy is the opposite of mixing ventilation — it uses thermal buoyancy to drive airflow rather than forced mixing. The 900 sq.cm minimum area (roughly 300 mm × 300 mm) ensures adequate supply volume. The 50 mm proximity to the floor is non-negotiable under the code — a mid-height inlet would not satisfy the requirement.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1214",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.631077+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7f728b7dd69c4e710cec638c78cb96e14bae3b6a3ebc3f552d9ea0be9174dfa1"
+    },
+    {
+      "question_id": "7185d76f-ac1d-4e9b-83a0-c7408d76c207",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214, what are the maximum sizes for projection ports and observation ports in a motion picture projection room, and what is the exception for acetate safety film projection ports?",
+      "options": [
+        {
+          "id": "sp-009-a",
+          "text": "Projection port: max 500 sq.cm; observation port: max 1,000 sq.cm; safety film exception: up to 3,000 sq.cm"
+        },
+        {
+          "id": "sp-009-b",
+          "text": "Projection port: max 750 sq.cm; observation port: max 1,300 sq.cm; safety film exception: up to 4,500 sq.cm"
+        },
+        {
+          "id": "sp-009-c",
+          "text": "Projection port: max 1,300 sq.cm; observation port: max 750 sq.cm; safety film exception: up to 6,000 sq.cm"
+        },
+        {
+          "id": "sp-009-d",
+          "text": "Projection port: max 750 sq.cm; observation port: max 750 sq.cm; no exception exists for acetate safety film"
+        }
+      ],
+      "correct_option_id": "sp-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1214: projection port maximum is 750 sq.cm; observation port maximum is 1,300 sq.cm (larger because it is for observation only, not beam passage); combination ports (max 3 allowed) must not exceed 750 mm × 600 mm each. For acetate safety film only, projection port size may be increased to up to 4,500 sq.cm — six times the standard limit — because safety film's lower flammability reduces the risk of a large opening becoming a fire propagation path.",
+      "explanation": "The port size hierarchy (750 sq.cm projection < 1,300 sq.cm observation < 4,500 sq.cm safety film projection) tracks fire risk inversely: smaller openings for more dangerous film types. The observation port is larger than the projection port because the light beam does not pass through it — only the projectionist's line of sight.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1214",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:024e13120446bcc1927afa30a0f54baa35fa31294cc3b3340f7ea3c5077bfce2"
+    },
+    {
+      "question_id": "8b5bf5b2-694e-43e5-b460-905b205d4912",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214, where must the fresh-air inlet for a projection room ventilation system be located, and what minimum area must it provide?",
+      "options": [
+        {
+          "id": "sp-010-a",
+          "text": "Fresh-air inlet at ceiling level; minimum area 900 sq.cm to maximize mixing with warm room air"
+        },
+        {
+          "id": "sp-010-b",
+          "text": "Fresh-air inlet within 50 mm of the floor level; minimum area 900 sq.cm to draw cool air from floor level"
+        },
+        {
+          "id": "sp-010-c",
+          "text": "Fresh-air inlet at mid-wall level; minimum area 1,300 sq.cm to match the observation port area"
+        },
+        {
+          "id": "sp-010-d",
+          "text": "Fresh-air inlet at the door threshold; minimum area 300 sq.cm per projector installed in the room"
+        }
+      ],
+      "correct_option_id": "sp-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1214, the fresh-air inlet must have a minimum area of 900 sq.cm and must be located within 50 mm of the floor level. The floor-level position exploits thermal displacement ventilation: cool fresh air enters at floor level, absorbs heat from equipment and people, rises, and exits through ceiling-level exhaust ducts. Exhaust ducts must be incombustible material with 25 mm clearance from combustible material or covered with 10 mm insulation. The 50 mm floor proximity is a precise dimensional requirement, not a general guideline.",
+      "explanation": "The floor-level supply strategy is the opposite of mixing ventilation — it uses thermal buoyancy to drive airflow rather than forced mixing. The 900 sq.cm minimum area (roughly 300 mm × 300 mm) ensures adequate supply volume. The 50 mm proximity to the floor is non-negotiable under the code — a mid-height inlet would not satisfy the requirement.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1214",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3428e8abc9e2aea1b80e8a56277e6a19c97ab349426404e74ff98cdfc17ae277"
+    },
+    {
+      "question_id": "f0cebf08-dfa1-4d03-8c71-36a6a85b347c",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.1, stage ventilators must be positioned where on the stage structure, and what additional glass protection requirement applies?",
+      "options": [
+        {
+          "id": "sp-002-a",
+          "text": "At the perimeter walls of the stage; no glass protection requirement is specified in Section 1213.1, allowing for flexibility in design"
+        },
+        {
+          "id": "sp-002-b",
+          "text": "Near the center above the highest part of the working stage; all glass within the ventilator must be protected against falling"
+        },
+        {
+          "id": "sp-002-c",
+          "text": "At the base of the proscenium wall; glass must be laminated safety glass rated for impact, ensuring compliance with safety standards"
+        },
+        {
+          "id": "sp-002-d",
+          "text": "At the rear wall of the stage above the fly loft; glass protection follows standard fenestration rules only, adhering to general building codes"
+        }
+      ],
+      "correct_option_id": "sp-002-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1213.1, ventilators must be positioned near the center above the highest part of the working stage. This placement maximizes smoke exhaust effectiveness — hot smoke rises to the highest point before the ventilator opens. All glass within the ventilator must be protected against falling (using wire glass or protective screen) because broken glass falling onto a working stage during a performance or fire event is a life-safety hazard.",
+      "explanation": "The 'near center above highest working stage' positioning rule has a functional purpose: smoke stratifies and banks up at the highest point. A ventilator at the perimeter would be less effective. The glass protection requirement is separate from — and in addition to — the area and positioning requirements.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ac37e67923ffdcea2b441de95edd783559c4c35cb902c03e2523dc4ad07bc63c"
+    },
+    {
+      "question_id": "076a902a-86a8-44bf-a28e-de741ce6bac3",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.2, what material must stage gridirons be constructed of, what minimum live load must they carry, and may fire protection be omitted from the steel structure?",
+      "options": [
+        {
+          "id": "sp-003-a",
+          "text": "Incombustible materials (steel/iron); minimum 367 kg/sq.m live load; fire protection of steel/iron may be omitted"
+        },
+        {
+          "id": "sp-003-b",
+          "text": "Incombustible materials (steel/iron); minimum 620 kg/sq.m live load; fire protection must be provided on all steel members"
+        },
+        {
+          "id": "sp-003-c",
+          "text": "Any structural material; minimum 367 kg/sq.m live load; fire protection follows standard Type of Construction requirements"
+        },
+        {
+          "id": "sp-003-d",
+          "text": "Incombustible materials (steel/iron); minimum 240 kg/sq.m live load; fire protection of steel/iron may be omitted"
+        }
+      ],
+      "correct_option_id": "sp-003-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1213.2, gridirons must be incombustible (steel or iron) and must be designed for a minimum live load of 367 kg/sq.m. Notably, fire protection of steel/iron gridirons may be omitted — the stage ventilator provides the smoke and heat relief that substitutes for cementitious or intumescent protection in this location. The 620 kg/sq.m figure is the stage floor live load (Section 1213.5), not the gridiron — a frequent exam confusion point.",
+      "explanation": "The 367 kg/sq.m gridiron live load accounts for concentrated counterweight rigging systems, full scenery drops, and lighting battens. The permission to omit fire protection is a code-specific exception that exists because the ventilator provides equivalent smoke/heat venting — recognizing that a gridiron that cannot be adjusted quickly during a fire could be catastrophic for performers.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:668a7f703fe758f97a339d5dc787fffaf08c92ace1533ddc8e0dd008670b5653"
+    },
+    {
+      "question_id": "a092a4ff-3969-47b7-ad14-6ff6bb8d3b04",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A performing arts center has a stage floor area of 180 sq.m measured within the stage walls. Per PD 1096, Rule XII, Section 1213.1, what is the minimum required total area of stage ventilators?",
+      "options": [
+        {
+          "id": "sp-001-a",
+          "text": "7.20 sq.m — calculated as 4% of the stage floor area"
+        },
+        {
+          "id": "sp-001-b",
+          "text": "9.00 sq.m — calculated as 5% of the 180 sq.m stage floor area"
+        },
+        {
+          "id": "sp-001-c",
+          "text": "12.00 sq.m — calculated as the standard fixed minimum for all full stages"
+        },
+        {
+          "id": "sp-001-d",
+          "text": "18.00 sq.m — calculated as 10% of the stage floor area for larger venues"
+        }
+      ],
+      "correct_option_id": "sp-001-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1213.1 mandates that total ventilation area equal at least 5% of the stage floor area within the stage walls. 5% of 180 sq.m = 9.00 sq.m. There is no fixed minimum independent of stage area — the requirement scales with the stage. Option A (7.20 sq.m) represents 4%, which is insufficient. Option C incorrectly implies a fixed standard minimum. Option D (18.00 sq.m) would require 10%, which exceeds the code minimum. Ventilators must be of metal or incombustible material, positioned near the center above the highest working stage point.",
+      "explanation": "The 5% rule is the most-tested provision in Section 1213. The ventilator doubles as a fire smoke exhaust path, allowing hot gases to escape upward rather than banking down into the auditorium during a fire. The measurement is within the stage walls — not the overall building footprint.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8408dad77dde76c2c78c7dce975898cffe5d25e99f69dbfd3170e7d124ce24d4"
+    },
+    {
+      "question_id": "c3243dd7-22a0-47ff-a2e7-9aef2c10977c",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.4, what are the fire rating, roof extension height, permitted openings, and opening protection requirements for a proscenium wall?",
+      "options": [
+        {
+          "id": "sp-004-a",
+          "text": "1-hour fire-resistive; flush with auditorium roof; openings limited to 2 at stage floor level; all protected by 1-hour fire assemblies"
+        },
+        {
+          "id": "sp-004-b",
+          "text": "2-hour incombustible; extends ≥1.20 m above auditorium roof; max 1 at orchestra pit, max 2 at stage floor (each ≤2.00 sq.m); 1.5-hour fire assemblies"
+        },
+        {
+          "id": "sp-004-c",
+          "text": "2-hour incombustible; extends ≥1.50 m above auditorium roof; unlimited openings permitted provided each has a 1-hour fire assembly"
+        },
+        {
+          "id": "sp-004-d",
+          "text": "3-hour fire-resistive; extends ≥1.20 m above auditorium roof; max 2 openings at any level; all protected by 3-hour fire assemblies"
+        }
+      ],
+      "correct_option_id": "sp-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1213.4 requires: (1) minimum 2-hour incombustible construction; (2) extension of at least 1.20 m above the auditorium roof — preventing fire from rolling over the wall; (3) maximum 1 opening at orchestra pit level, maximum 2 openings at stage floor level (each ≤ 2.00 sq.m); (4) all openings protected by 1.5-hour fire assemblies; (5) main proscenium opening must have a self-closing fire-resistive curtain (the 'iron curtain'). Option A (1-hour, flush) fails on both rating and extension. Option C permits unlimited openings — incorrect. Option D uses 3-hour (too high) and assigns 3-hour door assemblies to a 2-hour wall.",
+      "explanation": "The proscenium wall is the primary fire barrier between the high-risk stage and the audience. The 1.20 m extension above the roof prevents fire from escaping the stage envelope by traveling across the auditorium roofline. The 1.5-hour assembly rating at openings is specific — not 1-hour, not 2-hour.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.4",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b1d0165ffb9e856085d46b05b20406839bff8769c768f60f03c2d852506e4c0b"
+    },
+    {
+      "question_id": "d7ae6d58-6111-4c88-9152-b2dadff9f375",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.5, what is the minimum live load requirement for a stage floor, and what material and thickness apply to permitted trap doors?",
+      "options": [
+        {
+          "id": "sp-005-a",
+          "text": "Stage floor: minimum 367 kg/sq.m; trap doors: steel plate, minimum 10 mm thick"
+        },
+        {
+          "id": "sp-005-b",
+          "text": "Stage floor: minimum 620 kg/sq.m; trap doors: wood, minimum 50 mm nominal thickness"
+        },
+        {
+          "id": "sp-005-c",
+          "text": "Stage floor: minimum 480 kg/sq.m; trap doors: incombustible material of any thickness"
+        },
+        {
+          "id": "sp-005-d",
+          "text": "Stage floor: minimum 620 kg/sq.m; trap doors are prohibited under all Section 1213 stages"
+        }
+      ],
+      "correct_option_id": "sp-005-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1213.5, the stage floor minimum live load is 620 kg/sq.m — the highest in the article and among the highest in the NBC. This accommodates rolling loads from heavy set pieces, motorized stage lifts, and massed performers. Trap doors are permitted and must be of wood with minimum 50 mm nominal thickness. Note the reversal from the gridiron: the gridiron is steel/incombustible (367 kg/sq.m); the stage floor trap doors are specifically wood (620 kg/sq.m floor). The 367 kg/sq.m figure belongs to the gridiron, not the floor.",
+      "explanation": "The 620 kg/sq.m vs. 367 kg/sq.m pair (floor vs. gridiron) is a primary exam trap. The floor carries higher load because performers and scenery concentrate on it; the gridiron carries distributed rigging loads. Trap doors in wood at 50 mm nominal thickness are a specific code permission — not a general allowance.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4a992c0b93d3c7cc0ce44f3e29f688e458a81a114916a3341a53603536c4fc5f"
+    },
+    {
+      "question_id": "554a7ca9-fcb2-4034-94d5-d437c472853e",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.6, enclosed platforms are subject to ventilator requirements similar to stages — but with one critical exemption. What is that exemption threshold?",
+      "options": [
+        {
+          "id": "sp-006-a",
+          "text": "Enclosed platforms not exceeding 30.00 sq.m are exempt from the ventilator requirement"
+        },
+        {
+          "id": "sp-006-b",
+          "text": "Enclosed platforms not exceeding 45.00 sq.m are exempt from the ventilator requirement"
+        },
+        {
+          "id": "sp-006-c",
+          "text": "Enclosed platforms not exceeding 93.00 sq.m are exempt from the ventilator requirement"
+        },
+        {
+          "id": "sp-006-d",
+          "text": "All enclosed platforms regardless of size are exempt because they have no fly gallery or gridiron"
+        }
+      ],
+      "correct_option_id": "sp-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1213.6, platforms are subject to the same 5% ventilator requirement as stages — with one exemption: enclosed platforms not exceeding 45.00 sq.m are exempt. A school auditorium platform of 6 m × 7 m = 42 sq.m does not need a stage ventilator. A platform of 7 m × 7 m = 49 sq.m does. The IBC platform exemption is 93 sq.m (1,000 sq.ft) — PH is more conservative. Option D is incorrect: platforms are not globally exempt — only those ≤ 45 sq.m.",
+      "explanation": "The 45 sq.m threshold is a critical exam number. It separates small school assembly platforms (typically exempt) from performance platforms requiring the full 5% ventilator provision. The threshold applies only to enclosed platforms — open platforms have different considerations.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1213.6",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5402d135b771fcf29d31a207dbfffa4454f246b4f4c0076615a61c9cd3691d7a"
+    },
+    {
+      "question_id": "5aa72d56-6d75-4a09-ad09-0f12322b2d14",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214, what is the minimum floor area formula for a motion picture projection room, and what is the minimum ceiling height?",
+      "options": [
+        {
+          "id": "sp-007-a",
+          "text": "5.00 sq.m for the first projector plus 2.50 sq.m each additional; minimum ceiling height 2.10 m"
+        },
+        {
+          "id": "sp-007-b",
+          "text": "7.00 sq.m for the first projector plus 3.50 sq.m each additional; minimum ceiling height 2.40 m"
+        },
+        {
+          "id": "sp-007-c",
+          "text": "7.00 sq.m for the first projector plus 5.00 sq.m each additional; minimum ceiling height 2.40 m"
+        },
+        {
+          "id": "sp-007-d",
+          "text": "10.00 sq.m regardless of the number of projectors; minimum ceiling height 2.40 m"
+        }
+      ],
+      "correct_option_id": "sp-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1214, the minimum floor area is 7.00 sq.m for the first projector plus 3.50 sq.m for each additional machine. For two projectors: 7.00 + 3.50 = 10.50 sq.m. For three: 7.00 + 7.00 = 14.00 sq.m. The minimum ceiling height is 2.40 m. The room must also have minimum 1-hour fire-resistive construction throughout, incombustible walls and ceiling. Section 1214 applies to ribbon-type film wider than 22 mm and electric arc projection equipment.",
+      "explanation": "The 7 + 3.50 per additional machine formula is a frequently tested computation. For any N projectors: floor area = 7.00 + (N-1) × 3.50 sq.m. The most common trap is using 7.00 sq.m for a two-projector room — the correct answer for two machines is 10.50 sq.m.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1214",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5cd7ea446d4c7e2f0397468afebbf13dcc153a0dbf8b2358d091ceb594eed5f4"
+    },
+    {
+      "question_id": "84c2f496-a8cf-4b0d-9128-5b2221725268",
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1214, what are the exit requirements for a motion picture projection room, including doorway dimensions and door specifications?",
+      "options": [
+        {
+          "id": "sp-008-a",
+          "text": "1 doorway minimum, 900 mm wide × 2.10 m high; door swings inward; self-closing 1-hour fire assembly; standard latch permitted"
+        },
+        {
+          "id": "sp-008-b",
+          "text": "2 doorways minimum, separated ≥1/3 of room perimeter; each 750 mm wide × 2.00 m high; self-closing 3/4-hour fire assembly, swing outward, no latches"
+        },
+        {
+          "id": "sp-008-c",
+          "text": "2 doorways minimum with no separation requirement; each 900 mm wide × 2.00 m high; doors may swing in either direction; no special latch requirement"
+        },
+        {
+          "id": "sp-008-d",
+          "text": "3 doorways minimum when more than one projector is installed; each 750 mm wide × 2.00 m high; 1-hour fire assemblies; no latch requirement"
+        }
+      ],
+      "correct_option_id": "sp-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1214, projection rooms require: minimum 2 doorways, separated by at least 1/3 of the room perimeter; each doorway minimum 750 mm wide × 2.00 m high; doors must be self-closing 3/4-hour fire assemblies; must swing outward (away from the room); maximum door width 750 mm; and no latches — ensuring panic-free egress. The outward swing is critical for emergency escape when the room is filled with smoke. No-latch doors prevent occupants from being trapped.",
+      "explanation": "The 1/3 perimeter separation ensures the two exits are not adjacent — preventing both exits from being blocked simultaneously by a single fire or obstruction. The no-latch requirement is a panic egress provision unique to this section. The 3/4-hour fire assembly rating (not 1-hour) is specific to projection room doors.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1214",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.342344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:47b0029691026cc9e1e87f5d6997c34a771a3949f516c5cdc3fd4f31f553a887"
+    }
+  ]
+}

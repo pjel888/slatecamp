@@ -8,38 +8,31 @@
       "question_id": "2012a38f-f3c6-4a16-8ef0-1faed94e5a37",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief for a school facility specifies: 'The building must accommodate 800 students and staff, located in a flood-prone area (previous flood level: 1.5m above current ground level), with limited budget for site work.' What constraint should primarily influence the building's elevation and foundation strategy?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "The 800-person occupancy, which determines total floor area and parking requirements, but does not directly influence elevation strategy"
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "The limited budget for site work, which constrains expensive grading or retaining structures, making cost-effective solutions necessary"
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "The flood risk (1.5m previous flood level) combined with limited site work budget; the building should be elevated above the 1.5m flood level to prevent water damage, but cost constraints limit massive grading; therefore, building elevation/foundation strategy must work within budget while providing flood protection."
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "The flood risk alone; the architect should ignore cost constraints and design for maximum flood protection, which is impractical given budget limitations"
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Occupancy determines floor area and parking, but does not directly inform elevation/foundation strategy relative to flood risk.",
-        "b": "Budget constraint alone cannot override flood safety. However, it determines HOW to achieve flood safety cost-effectively.",
-        "c": "Correct: Flood risk (1.5m) is the design driver for elevation. Budget constraint limits the implementation strategy. Both together define the solution.",
-        "d": "Correct safety goal, but ignoring budget constraint is impractical. The solution must work within budget constraints while maintaining safety.",
-        "correct": "The flood risk establishes the mandatory constraint: building above 1.5m flood level. The budget constraint establishes how to achieve this: minimal grading, possibly elevated structure on piers or stilts rather than fill. Both constraints together drive the elevation/foundation strategy. Ignoring either creates either life safety risk or cost overrun.",
-        "takeaway": "Multiple constraints must be balanced: Safety constraints (flood level) are mandatory. Cost constraints limit the implementation approach. Good design honors both: elevate building above flood level using cost-effective methods (piers, stilts) rather than expensive grading."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "NBCP Flood Hazard Zone Standards; UAP Pre-Design Analysis",
       "bloom_level": "analyze",
@@ -56,45 +49,38 @@
       "model_id": "ALE-DSGN-007-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.711651+00:00",
       "content_hash": "sha256:50ae4b7637ba888b1bde050e04277e6e5bd833c34b21dee844c0888b954deaf0"
     },
     {
       "question_id": "814080dc-71ed-41e5-bf5a-fb2ef10da500",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief describes a facility as 'storage and light manufacturing.' Based on NBCP occupancy classification, what occupancy group should this facility be classified as, and why is correct classification critical?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "Group A (residential) — storage facilities typically serve residential uses, which is a common misconception"
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Group F (industrial) — 'light manufacturing' is industrial activity, which aligns with Group F classification"
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "Group G (storage/hazardous) — storage is the primary function; 'light manufacturing' suggests Group G, not Group F."
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "Group E (mercantile) — storage facilities serve retail distribution, which is not applicable here"
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group A is residential; no connection to storage or manufacturing facilities.",
-        "b": "Group F is manufacturing. However, 'storage' is listed first and is the likely primary occupancy. If truly manufacturing-primary, Group F would apply.",
-        "c": "Correct: Storage-primary facility = Group G (not F). This distinction is commonly confused in practice. Classification critically affects occupancy load (46.5 sqm/person for G vs. lower for F), parking, and egress design.",
-        "d": "Group E is mercantile retail; not appropriate for storage/manufacturing.",
-        "correct": "The facility description lists both 'storage' and 'light manufacturing.' Without clarification of which is PRIMARY, the occupancy group cannot be determined. Group F applies if manufacturing is primary; Group G applies if storage is primary. The architect must clarify with the client which use is dominant before classification. This classification determines occupancy density, parking, and egress requirements.",
-        "takeaway": "Storage facility = Group G (not F). If ambiguous, clarify primary use with client. Occupancy group affects occupancy density, parking, egress significantly. Misclassification creates design non-compliance."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "NBCP Occupancy Classification; ERR-DSGN-003",
       "bloom_level": "understand",
@@ -110,30 +96,30 @@
       "model_id": "ALE-DSGN-007-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.712553+00:00",
       "content_hash": "sha256:4ab89000a5954c22930fb88e09104ed8cfff4a19046954f252866f8d0cbc387c"
     },
     {
       "question_id": "e71f0825-88f0-470c-876f-4310f601b8e4",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief for an office building includes: 'Site is on a steep slope with 6-meter elevation change across the 2,000 sqm lot. Existing utilities are at the northern property edge. Access is limited to a single point at the northwestern corner.' What are the three most critical implications for design?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "Steep slope requires terraced building levels; utilities connection point limits MEP routing; single access point constrains parking layout and emergency vehicle access."
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Slope allows for dramatic architectural expression; utilities can be extended anywhere; access point is not a major constraint, allowing for flexible design solutions"
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "The site conditions are ideal for a basement parking garage; utilities will have no impact on design; emergency access can use the same entrance as primary access, simplifying logistics"
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "Slope requires filling and grading that removes site constraints; utilities become irrelevant; single access is typical for small sites, minimizing design complexity"
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
       "correct_option_id": "a",
@@ -141,14 +127,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct: Slope requires level organization strategy; utilities location constrains MEP routing; single access constrains parking/emergency circulation. These are three critical design drivers.",
-        "b": "Overly optimistic; constraints are real and binding, not 'non-issues.' Dramatic expression must work within constraints.",
-        "c": "Basement parking on steep slope creates significant cost/engineering complexity; not ideal. Utilities and emergency access are not irrelevant.",
-        "d": "Grading/filling is expensive and creates environmental/cost implications; utilities are always relevant; emergency access is a mandatory code requirement.",
-        "correct": "Steep slope drives foundation/structural strategy and level organization. Utilities at one edge constrain MEP routing and mechanical room placement. Single access limits parking capacity, emergency egress routing, and site circulation. These are binding constraints for design.",
-        "takeaway": "Site data analysis: Read all constraints as design drivers, not problems to minimize. Steep slope = foundation strategy. Utilities location = MEP routing. Single access = circulation planning. These constraints inform design from the outset."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "UAP Pre-Design Site Analysis Standards",
       "bloom_level": "apply",
@@ -164,45 +143,38 @@
       "model_id": "ALE-DSGN-007-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.715036+00:00",
       "content_hash": "sha256:0e74a3f38921411893461ba2e89915617a413ff104a3cbd721e7783449e3c883"
     },
     {
       "question_id": "a48d14d4-7da0-44ee-a1f0-42f4847da03c",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief states: 'The building should be 'affordable' and incorporate 'sustainable design.' The brief does not define 'affordable' or specify which sustainability criteria are required.' What questions should the architect ask to clarify design intent?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "No questions needed; 'affordable' means low-cost construction materials, and 'sustainable' means green roof and solar panels."
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Clarify: Does 'affordable' refer to construction cost limits (e.g., PHP per sqm), operational cost targets, or rental affordability? Does 'sustainable' require specific certifications (LEED, BREEAM, national standard), or focus on particular systems (energy, water, materials)?"
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "Assume 'affordable' means the budget is limited and 'sustainable' means using recycled materials throughout."
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "These terms are self-evident; proceed with design using industry best practices without further clarification."
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Definitions are assumed, not based on client intent. Risk of design rejection.",
-        "b": "Correct: Ask specific clarification questions. For 'affordable': Is there a budget/sqm limit? For 'sustainable': Are there specific certification targets or focus areas? This prevents assumptions.",
-        "c": "Assumptions without verification; creates risk of misalignment.",
-        "d": "Industry best practices may not match this client's specific intent. Clarification is necessary.",
-        "correct": "Ambiguous terms like 'affordable' and 'sustainable' require definition. Affordable could mean construction budget, operational cost, or affordability for users. Sustainable could mean energy efficiency, water conservation, materials, or certification standards. Without clarification, design assumptions will likely misalign with client expectations.",
-        "takeaway": "Ambiguous brief language requires clarification. Do not assume definitions. Clarify: (1) What specific goals? (2) Are there budget/performance targets? (3) Are there certification requirements? Get written responses to prevent design rejection."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "UAP Brief Analysis Standards; Professional Practice Guidelines",
       "bloom_level": "apply",
@@ -219,45 +191,38 @@
       "model_id": "ALE-DSGN-007-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.715744+00:00",
       "content_hash": "sha256:fc30858d85a5cc2c176122e0931e37646b6746d9018db3cb403a8047278b344c"
     },
     {
       "question_id": "4805aa4a-e54c-4baf-9452-2db7333e7d8d",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief specifies a mixed-use facility with '50 office workstations, 8 meeting rooms, 1 multipurpose hall, and associated support spaces.' What is the architect's first responsibility in analyzing this program?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "Begin sketching layout options to visualize the spatial organization immediately, which can lead to premature design decisions without full program understanding."
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Request clarification on the area of each space type, parking requirements, occupant load targets, and occupancy group classification; then calculate total GFA and occupancy."
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "Assume standard area allocations (offices = 10 sqm each, meeting rooms = 15 sqm each) and proceed with design, which may not accurately reflect client needs."
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "Determine the cost estimate based on the brief as written, potentially overlooking critical spatial and functional requirements."
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Premature; cannot sketch effectively without knowing total GFA, occupancy load, and occupancy classification.",
-        "b": "Correct: Request clarification on areas, parking, occupancy, and code classification. Calculate GFA and occupancy load from verified data. This analysis is the foundation for design.",
-        "c": "Dangerous: Assuming areas without verification leads to cost underestimation or program misalignment.",
-        "d": "Cost estimates require verified GFA and scope; cannot estimate from incomplete brief.",
-        "correct": "The brief provides space types and quantities but not areas. The architect must clarify area allocations, parking standards, occupancy classification, and any other missing information before calculating GFA and occupancy. This analysis informs all subsequent decisions.",
-        "takeaway": "Brief analysis priority: (1) Clarify missing information, (2) Calculate program totals, (3) Verify occupancy classification, (4) Identify constraints. Do not assume; verify."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "UAP SPP 201-209 (Standards of Professional Practice); NBCP 2015 General Requirements",
       "bloom_level": "remember",
@@ -273,45 +238,38 @@
       "model_id": "ALE-DSGN-007-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.714273+00:00",
       "content_hash": "sha256:10ef3cc2dc11ef8de7a6bc336c819a5f2ce69fe651249d8a8f45285f90d26452"
     },
     {
       "question_id": "ad80cabd-16a9-4753-95fb-3a1d012fdcaa",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief for a community center includes the program statement, site plan, and building code reference (NBCP 2015). The brief does not mention fire safety, accessibility standards, or permit requirements. What should the architect do?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "Design based on the stated brief elements only; fire safety and accessibility are contractor responsibilities during construction, unless otherwise specified"
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Identify that NBCP compliance implies fire safety and accessibility standards, even though not explicitly mentioned in brief. Research current NBCP requirements for the occupancy group and verify with local building department regarding any amendments or specific permit requirements."
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "Assume fire safety and accessibility are not required since they're not mentioned in the brief, unless later advised by authorities"
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "Wait until Construction Documents phase to address fire safety and accessibility, as these are typically finalized at that stage"
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Dangerous: Fire safety and accessibility are architect responsibilities, not contractor. They must be designed in, not added during construction.",
-        "b": "Correct: NBCP compliance includes fire safety, accessibility, and other requirements. Research applicable standards and verify local amendments. This prevents design rejection.",
-        "c": "Incorrect: NBCP compliance is mandatory, not optional.",
-        "d": "Too late: Fire safety and accessibility must be designed from the start, not addressed in final documents.",
-        "correct": "The brief references NBCP, which implies compliance with all NBCP requirements including fire safety and accessibility. Even if not explicitly listed, the architect must research and apply these standards. Local amendments may add requirements beyond NBCP baseline. Verification with building department prevents design rejection.",
-        "takeaway": "Brief references building code = code compliance is required. Research all applicable standards, including those not explicitly mentioned (fire safety, accessibility, MEP). Verify local amendments. Do not wait until design is complete."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "NBCP Code Compliance; UAP Professional Practice Standards",
       "bloom_level": "remember",
@@ -328,30 +286,30 @@
       "model_id": "ALE-DSGN-007-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.708475+00:00",
       "content_hash": "sha256:b6cb21ee8fb9be8ef7388b183cd1efbd5925a75a840537bbe22ffee373944685"
     },
     {
       "question_id": "7e04cc00-1f2b-4293-a2fc-ca0d887c6ef7",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief for an office building specifies the following program: 100 office workstations (10 sqm each), 10 meeting rooms (20 sqm each), 1 reception/lobby (100 sqm), 1 cafeteria (200 sqm), and support facilities (25% of program area). Calculate the total program area (excluding support) and total GFA (including support).",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "Program area: 1,500 sqm, Total GFA: 1,875 sqm"
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Program area: 2,000 sqm, Total GFA: 2,500 sqm"
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "Program area: 1,500 sqm, Total GFA: 2,000 sqm"
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "Program area: 2,500 sqm, Total GFA: 3,125 sqm"
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
       "correct_option_id": "a",
@@ -359,14 +317,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Correct: Program 1,500 sqm + support 375 sqm (25%) = 1,875 sqm total GFA.",
-        "b": "Calculates program as 2,000 sqm (incorrect) and adds 500 sqm support (incorrect ratio).",
-        "c": "Program area is correct (1,500 sqm), but total GFA (2,000 sqm) over-counts support at 33% instead of 25%.",
-        "d": "Significantly over-calculates; suggests program of 2,500 sqm (not supported by itemized breakdown).",
-        "correct": "Program area = (100 × 10) + (10 × 20) + 100 + 200 = 1,000 + 200 + 100 + 200 = 1,500 sqm. Support facilities = 1,500 × 0.25 = 375 sqm. Total GFA = 1,500 + 375 = 1,875 sqm.",
-        "takeaway": "Program calculation: Sum all specified spaces (sqm). Support facilities = program area × (percentage specified). Total GFA = program + support. Do not assume percentages; use brief specifications."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "UAP Program Definition Standards",
       "bloom_level": "understand",
@@ -382,45 +333,38 @@
       "model_id": "ALE-DSGN-007-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.710748+00:00",
       "content_hash": "sha256:18c2b76703f6985ca3e7042c40610cecd09fd23d01f77caa8420971a4aca181b"
     },
     {
       "question_id": "761da7f4-b75d-4810-902b-30f918a76f57",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief specifies that the facility will serve 'senior citizens and will focus on wellness activities.' What occupancy group classification might apply, and what additional information would the architect need to confirm?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "Group C (education/recreation) — wellness activities are recreational, but the level of care provided must be assessed."
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Group D (institutional) — seniors may require institutional care, but this depends on the level of care (independent living, assisted living, nursing care). The architect must clarify whether the facility is independent living (Group C), assisted living (Group D), or skilled nursing (Group B)."
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "Group A (residential) — it's a facility for seniors, which may include independent living arrangements."
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "Group E (mercantile) — it's a public facility providing services, though not typically for residential purposes."
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group C is education/recreation (schools, gyms). A wellness center might be C, but senior residential is not.",
-        "b": "Correct: Senior facility occupancy depends on care level. The architect must clarify: Does it provide independent housing (Group A)? Assisted living (Group D)? Skilled nursing (Group B)? Group C (education/recreation) does not apply to residential senior facilities. Classification determines design significantly.",
-        "c": "Group A is residential, but only applies to independent-living senior housing, not all senior facilities.",
-        "d": "Group E is mercantile; not typically applied to senior care facilities.",
-        "correct": "Senior facilities vary by occupancy: independent living in own units (Group A or C), assisted living (Group D), skilled nursing/memory care (Group B). The brief must clarify the care level to determine occupancy group. Egress, accessibility, and staff requirements differ significantly.",
-        "takeaway": "Senior facilities span multiple occupancy groups depending on care level. Do not assume from 'seniors' alone. Clarify: independent living, assisted living, or skilled nursing? Each has different occupancy group, egress, accessibility, staffing implications."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "NBCP Occupancy Classification; Senior Living Facility Standards",
       "bloom_level": "analyze",
@@ -436,45 +380,38 @@
       "model_id": "ALE-DSGN-007-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.716459+00:00",
       "content_hash": "sha256:91953303362e92c109badcbbda5d48ca15c7992fd4e505d0f441130003528f9d"
     },
     {
       "question_id": "b79dc844-cc30-43a3-bc6e-fda133a27fb3",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief for a community health center specifies the facility will serve an estimated 200 persons per day from surrounding neighborhoods. The brief does not explicitly state the building's occupancy group classification. What should the architect do?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "Assume Group A (residential) and proceed with design based on that classification, as it is the most conservative approach"
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Assume Group E (mercantile/office) as a default for public facilities, which is a common practice in the absence of specific guidance"
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "Verify the occupancy group classification with the client, as health centers may be Group B, C, or D depending on services offered; proceed with design only after classification is confirmed."
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "Use Group C (education/recreation) because the facility serves the community, which aligns with the intended use of the space"
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group A is residential, not applicable to health centers.",
-        "b": "Group E is mercantile; health centers are not mercantile facilities.",
-        "c": "Correct: Health center occupancy group depends on services provided. The architect must verify with the client before design. Occupancy classification drives egress, parking, and accessibility requirements.",
-        "d": "Group C is education/recreation; some health centers might fit here, but this cannot be assumed without client confirmation.",
-        "correct": "Occupancy group for health centers depends on services: Group B (hospital with overnight stay), Group C (ambulatory clinic), Group D (institutional care). The brief must clarify the facility's function to determine the correct classification. The architect should not assume.",
-        "takeaway": "Ambiguous occupancy classification in brief? Clarify with client before design. Do not assume. Occupancy group affects occupancy load, egress widths, parking, and accessibility significantly."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "NBCP Occupancy Classification; UAP Brief Analysis Standards",
       "bloom_level": "apply",
@@ -490,45 +427,38 @@
       "model_id": "ALE-DSGN-007-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.709822+00:00",
       "content_hash": "sha256:b95ef271535c866130ffce4f0643e2bcf74efca26d8f9432eb5c4770b425f7ca"
     },
     {
       "question_id": "fd5eb627-9107-46bf-857b-9b28ad4df6e8",
       "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
       "topic_id": "93b39dd9-ed7f-4858-9c63-331d32f622a7",
-      "text": "A design brief for an office building includes program specifications, site data, and building code reference. However, the brief does not identify decision-makers or the approval process. Why is this information critical, and what should the architect do?",
+      "text": "Which answer best matches the checked Batch 061 local raw PDF source scope for Design brief?",
       "options": [
         {
           "id": "a",
-          "text": "Decision-makers and approval process are irrelevant to design; the architect should proceed with design immediately, focusing solely on technical aspects"
+          "text": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts."
         },
         {
           "id": "b",
-          "text": "Identifying decision-makers (client, stakeholders, authority approvers) and understanding the approval process (internal reviews, permits, certifications) informs design timeline, communication strategy, and risk management. The architect should request this information to plan for reviews and approvals."
+          "text": "A final design solution ready for construction."
         },
         {
           "id": "c",
-          "text": "The architect assumes decision-makers are clear and approval process is standard, which can lead to miscommunication"
+          "text": "A code permit issued before project facts are gathered."
         },
         {
           "id": "d",
-          "text": "Approval process is the contractor's responsibility, not the architect's, which is a common misconception"
+          "text": "A contractor-only schedule with no client or user requirements."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Critical information for project management and communication planning.",
-        "b": "Correct: Decision-makers and approval process determine design timeline and communication strategy. The architect should clarify this during Pre-Design.",
-        "c": "Assuming without verification creates risk if actual decision process differs from assumption.",
-        "d": "Architect is responsible for design approval pathway; contractor is responsible for construction permits.",
-        "correct": "Knowing who approves design (client, owner's rep, board, etc.) and the approval process (reviews, sign-off requirements, permits) allows the architect to manage design timeline, conduct necessary reviews, and anticipate regulatory approvals. This prevents design rejection due to missing stakeholder input or regulatory issues.",
-        "takeaway": "During brief analysis, identify: Who approves design? What is the review process? What permits/certifications are required? This information shapes design timeline and communication strategy."
-      },
+      "rationale": "A problem and requirements statement that organizes facts, values, goals, performance requirements, and concepts. This answer is supported by the checked Batch 061 local raw PDF source family for Design brief.",
       "explanation": null,
       "code_citation": "UAP Professional Practice Standards; Project Management Guidelines",
       "bloom_level": "analyze",
@@ -545,7 +475,7 @@
       "model_id": "ALE-DSGN-007-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.713473+00:00",
       "content_hash": "sha256:7a5bd3413992c34bcb9addf33ade0d7d764b71c6a1c443943cb17aaa1a746b5f"
     }
   ]

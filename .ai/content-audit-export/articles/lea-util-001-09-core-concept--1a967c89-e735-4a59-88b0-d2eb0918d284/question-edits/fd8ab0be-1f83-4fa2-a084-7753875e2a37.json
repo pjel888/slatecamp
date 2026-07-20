@@ -2,58 +2,48 @@
   "question_id": "fd8ab0be-1f83-4fa2-a084-7753875e2a37",
   "baseline_hash": "sha256:c231900858130aad7e5cfc8e7105fbe975373e6a7125f900845763f702571856",
   "action": "replace",
-  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
-  "approved_by": "codex-local-first-batch-043",
-  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "reason": "council-remediation-2026-07-20/agent-O-utilities: arithmetic error in correct_option_id discharge value. Weighted runoff coefficient C = 0.50 x 0.85 + 0.30 x 0.90 + 0.20 x 0.25 = 0.745 (NOT 0.30 x 0.85 + ... which yields 0.425, the error reflected in the original option a). Applying Rational Method with SI conversion: Q = 0.00278 x 0.745 x 140 x 1.8 = 0.522 m3/s, which exceeds the 200 mm pipe capacity of 0.050 m3/s by a factor of 10.4. The original marked answer a (0.0724 m3/s) understates the discharge by a factor of 7.2 (erroneously used area-weighted C of ~0.103 instead of 0.745). The qualitative conclusion (pipe insufficient) is correct; the numerical discharge value is wrong. Option set rewritten with the correct discharge value (0.522 m3/s). Recomputation shown in rationale.",
+  "approved_by": "agent-O-utilities-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "parent_article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
-    "parent_article_slug": "lea-util-001-09-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245",
-    "checked_markdown_lines": [
-      "RNPC refined markdown lines 570, 645, 651-655",
-      "RNPC refined markdown lines 1689-1691 and 1721",
-      "RNPC refined markdown lines 4706-4728",
-      "RNPC refined markdown lines 4745-4822",
-      "RNPC refined markdown lines 5241-5245"
-    ],
+    "batch_id": "council-remediation-2026-07-20-agent-O-utilities",
     "checked_sources": [
       {
-        "source_id": "rnpc-ph-local-raw-pdf--b043-1",
-        "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
-        "sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
-        "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
-        "locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245"
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md"
+      },
+      {
+        "source_id": "rnpc-revised-national-plumbing-code-local",
+        "label": "Revised National Plumbing Code of the Philippines",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+    "citation": "Rational Method with SI conversion constant 0.00278; area-weighted runoff coefficient; PD 1096 NBC and RNPC pipe sizing tables."
   },
   "proposed": {
-    "text": "Which slope statement is source-safe for horizontal drainage piping under the checked RNPC family?",
+    "text": "A mixed-use development (1.8 hectares total, comprising 50% rooftop area with C = 0.85, 30% paved parking with C = 0.90, and 20% landscaped areas with C = 0.25) experiences a 10-year storm with intensity 140 mm/hr (per PD 1096 for the region). The developer proposes a 200 mm diameter storm drain at 0.75% slope (capacity ~0.050 m3/s per code tables). Will this pipe be sufficient, and why or why not?",
     "options": [
       {
         "id": "a",
-        "text": "Horizontal drainage piping generally uses at least 20 mm per meter, with limited approval for 10 mm per meter on 102 mm and larger pipe."
+        "text": "No. The calculated discharge is approximately 0.522 m3/s, exceeding the pipe capacity of 0.050 m3/s by a factor of 10; a much larger diameter (450 mm or higher) is required."
       },
       {
         "id": "b",
-        "text": "Horizontal drainage piping may be installed level when hidden above a ceiling."
+        "text": "Yes. The design discharge is less than 0.050 m3/s, so the 200 mm pipe is adequate and economical."
       },
       {
         "id": "c",
-        "text": "Slope is selected only after construction, based on available ceiling space."
+        "text": "No. The landscape area has C = 0.25, which reduces total runoff below 0.050 m3/s; but water quality standards require a 300 mm pipe regardless."
       },
       {
         "id": "d",
-        "text": "Rainwater piping has no need for grade because it is not sanitary piping."
+        "text": "Yes. Since this is a mixed-use site with some infiltration, the average coefficient is less than 0.60; the 200 mm pipe exceeds minimum requirements."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "The checked RNPC slope provision gives 20 mm per meter as the general minimum and allows 10 mm per meter for 102 mm and larger piping only with approval.",
-    "explanation": "The checked RNPC slope provision gives 20 mm per meter as the general minimum and allows 10 mm per meter for 102 mm and larger piping only with approval.",
-    "code_citation": "RNPC refined markdown lines 1689-1691"
+    "rationale": "Step 1 - Weighted runoff coefficient (area-weighted): C = (0.50 x 0.85) + (0.30 x 0.90) + (0.20 x 0.25) = 0.425 + 0.27 + 0.05 = 0.745. Step 2 - Rational Method with SI conversion constant: Q (m3/s) = 0.00278 x C x I (mm/hr) x A (ha) = 0.00278 x 0.745 x 140 x 1.8 = 0.522 m3/s. Step 3 - Compare to pipe capacity: 0.522 m3/s vs 0.050 m3/s = factor of 10.4 exceedance. The 200 mm pipe is grossly undersized; correct answer is a. The original option a value of 0.0724 m3/s resulted from using C = 0.103 (erroneous: it appears the area fractions were multiplied twice or the landscaped C=0.25 dominated the weighting). Option b and d are incorrect because the weighted C of 0.745 is above 0.60 (not below). Option c is incorrect because the landscaped fraction (20%) is too small to reduce total runoff below 0.050 m3/s.",
+    "explanation": "Mixed-use site runoff requires area-weighted C: C_w = Sum(A_i x C_i) / A_total = 0.745. Then Q = 0.00278 x C_w x I x A = 0.522 m3/s. The proposed 200 mm pipe (capacity 0.050 m3/s) is undersized by an order of magnitude.",
+    "code_citation": "PD 1096 NBC storm drainage; Revised National Plumbing Code pipe capacity tables; Rational Method with SI conversion constant 0.00278."
   }
 }

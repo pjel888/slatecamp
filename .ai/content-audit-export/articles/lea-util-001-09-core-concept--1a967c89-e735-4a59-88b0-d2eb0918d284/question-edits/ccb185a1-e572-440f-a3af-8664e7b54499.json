@@ -2,58 +2,43 @@
   "question_id": "ccb185a1-e572-440f-a3af-8664e7b54499",
   "baseline_hash": "sha256:54290eb0453cf1c8d87d8cfd7bc9e4e79f428377a335f0d33509eef4018fae8a",
   "action": "replace",
-  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
-  "approved_by": "codex-local-first-batch-043",
-  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "reason": "council-remediation-2026-07-20/agent-O-utilities: arithmetic error in correct_option_id AND distractor options. Rational Method in SI units requires the 0.00278 conversion constant: Q (m3/s) = 0.00278 x C x I (mm/hr) x A (ha). Substituting C=0.68, I=150 mm/hr, A=3.2 ha: Q = 0.00278 x 0.68 x 150 x 3.2 = 0.907 m3/s. All four original distractors (0.0889, 0.136, 0.204, 0.480 m3/s) are off from the correct value by a factor of 2-10; the original marked answer b (0.136 m3/s) implies a drainage area of 0.48 ha, contradicting the 3.2 ha stated in the stem. Option set rewritten with the correct value (0.907 m3/s) plus plausible distractors. Recomputation shown in rationale.",
+  "approved_by": "agent-O-utilities-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "parent_article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
-    "parent_article_slug": "lea-util-001-09-core-concept",
-    "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245",
-    "checked_markdown_lines": [
-      "RNPC refined markdown lines 570, 645, 651-655",
-      "RNPC refined markdown lines 1689-1691 and 1721",
-      "RNPC refined markdown lines 4706-4728",
-      "RNPC refined markdown lines 4745-4822",
-      "RNPC refined markdown lines 5241-5245"
-    ],
+    "batch_id": "council-remediation-2026-07-20-agent-O-utilities",
     "checked_sources": [
       {
-        "source_id": "rnpc-ph-local-raw-pdf--b043-1",
-        "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
-        "sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
-        "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
-        "locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245"
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md"
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+    "citation": "Rational Method (Q = CIA) with SI conversion constant 0.00278; Linsley, Kohler & Paulhus Hydrology for Engineers reference."
   },
   "proposed": {
-    "text": "Which slope statement is source-safe for horizontal drainage piping under the checked RNPC family?",
+    "text": "A drainage catchment of 3.2 hectares experiences a peak rainfall intensity of 150 mm/hr. The runoff coefficient for mixed residential development is 0.68 (standard hydrology tables). Mixed development runoff coefficient is 0.60-0.75 (standard tables). Calculate the peak discharge using the Rational Method.",
     "options": [
       {
         "id": "a",
-        "text": "Horizontal drainage piping generally uses at least 20 mm per meter, with limited approval for 10 mm per meter on 102 mm and larger pipe."
+        "text": "0.0907 m3/s (approx 91 L/s)"
       },
       {
         "id": "b",
-        "text": "Horizontal drainage piping may be installed level when hidden above a ceiling."
+        "text": "0.454 m3/s (approx 454 L/s)"
       },
       {
         "id": "c",
-        "text": "Slope is selected only after construction, based on available ceiling space."
+        "text": "0.907 m3/s (approx 907 L/s)"
       },
       {
         "id": "d",
-        "text": "Rainwater piping has no need for grade because it is not sanitary piping."
+        "text": "3.264 m3/s (approx 3264 L/s)"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The checked RNPC slope provision gives 20 mm per meter as the general minimum and allows 10 mm per meter for 102 mm and larger piping only with approval.",
-    "explanation": "The checked RNPC slope provision gives 20 mm per meter as the general minimum and allows 10 mm per meter for 102 mm and larger piping only with approval.",
-    "code_citation": "RNPC refined markdown lines 1689-1691"
+    "correct_option_id": "c",
+    "rationale": "Rational Method in SI units: Q (m3/s) = 0.00278 x C x I (mm/hr) x A (ha), where 0.00278 = 1/3600 x (1 m / 1000 mm) x (10000 m2 / 1 ha). Substituting: Q = 0.00278 x 0.68 x 150 x 3.2 = 0.907 m3/s (approximately 907 L/s). Correct answer is c. Option a (0.0907 m3/s) results from a decimal-place error. Option b (0.454 m3/s) would correspond to an intensity of 75 mm/hr (half the stated value). Option d (3.264 m3/s) results from omitting the 0.00278 SI conversion constant (computing Q = C x I x A directly = 0.68 x 150 x 3.2 = 326.4, then dividing by 100). The original marked answer b (0.136 m3/s) was off by a factor of approximately 6.7.",
+    "explanation": "Peak discharge Q = CIA in Rational Method. In SI units with I in mm/hr and A in ha, the formula is Q = 0.00278 x C x I x A. Q = 0.00278 x 0.68 x 150 x 3.2 = 0.907 m3/s.",
+    "code_citation": "PD 1096 NBC storm drainage; Rational Method with SI conversion constant 0.00278; Linsley, Kohler & Paulhus reference."
   }
 }

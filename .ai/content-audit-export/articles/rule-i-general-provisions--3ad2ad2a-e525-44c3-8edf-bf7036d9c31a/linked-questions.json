@@ -8,31 +8,31 @@
       "question_id": "bb02603a-d17b-43db-806f-51dd28233602",
       "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule VIII, Section 804, courts under what minimum horizontal dimension do not comply, and is the total court area or the least dimension the controlling dimension?",
+      "text": "Per IRR Sec. 106, an owner encloses an existing open terrace to create a new room, adding gross floor area without increasing building height. Under the Section 106 definitions, how is this work classified?",
       "options": [
         {
-          "id": "lv-016-a",
-          "text": "Courts under 2.00 m in least dimension do not comply; the least dimension is the controlling measure"
+          "id": "a",
+          "text": "Alteration, because the building height is unchanged"
         },
         {
-          "id": "lv-016-b",
-          "text": "Courts under 3.00 m in least dimension do not comply; the total area is the controlling measure"
+          "id": "b",
+          "text": "Addition, because the work increases the floor area of the existing building"
         },
         {
-          "id": "lv-016-c",
-          "text": "Courts under 1.50 m in least dimension do not comply; the total area is the controlling measure"
+          "id": "c",
+          "text": "Renovation, because the visual appearance and value of the property are improved"
         },
         {
-          "id": "lv-016-d",
-          "text": "Courts under 2.00 m in least dimension do not comply; the total area is the controlling measure"
+          "id": "d",
+          "text": "Conversion, because the use of the terrace has been changed"
         }
       ],
-      "correct_option_id": "lv-016-a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The court least dimension minimum (2.00 m) equals the habitable room least dimension (2.00 m) and the temporary walkway minimum (1.20 m × ... actually no). These convergences across rules are intentional — the code uses consistent dimensional language across related provisions.",
+      "rationale": "Section 106 defines an addition as new construction that increases the height or floor area of an existing building or structure. Adding gross floor area by enclosing a terrace meets the addition definition even when building height is unchanged; the floor-area increase is the controlling element.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,38 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.389528+00:00",
       "content_hash": "sha256:eba52bfb458886f5b9723e36cd0ddda8fb75dbc7eb3c765aff8ce270863eba23"
     },
     {
       "question_id": "c9874e0d-3fd2-41a5-b93a-6846af94904b",
       "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A naturally ventilated master bedroom is 25.00 sq.m; its en-suite bathroom is 4.00 sq.m. Under PD 1096 Rule VIII, Section 808, what are the minimum required free areas of windows for each room?",
+      "text": "Per IRR Sec. 105, every site or building intended for human habitation must be kept at a safe distance from which three categories of hazards, as determined by competent authorities?",
       "options": [
         {
-          "id": "lv-004-a",
-          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.20 sq.m"
+          "id": "a",
+          "text": "High-voltage transmission lines, airports, and military installations"
         },
         {
-          "id": "lv-004-b",
-          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.24 sq.m"
+          "id": "b",
+          "text": "Polluted streams or bodies of water or air sources, a volcano or volcanic site, and any other building considered a potential source of fire or explosion"
         },
         {
-          "id": "lv-004-c",
-          "text": "Bedroom: 1.00 sq.m; Bathroom: 0.24 sq.m"
+          "id": "c",
+          "text": "Heavy industrial zones, agricultural pesticide spray zones, and active fault lines"
         },
         {
-          "id": "lv-004-d",
-          "text": "Bedroom: 2.50 sq.m; Bathroom: 0.40 sq.m"
+          "id": "d",
+          "text": "Solid waste landfills, cemeteries, and slaughterhouses"
         }
       ],
-      "correct_option_id": "lv-004-b",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The bathroom window calculation tests two skills: (1) knowing the 5% rule for bathrooms (not the general 10%); (2) applying the absolute minimum floor (0.24 sq.m > 0.20 sq.m computed, so 0.24 sq.m governs). This is a classic 'more restrictive' rule.",
+      "rationale": "Section 105 requires the site for human habitation to be at a safe distance from: polluted streams, bodies of water, or air sources; a volcano or volcanic site; and any other building considered a potential source of fire or explosion. The exact clearance is set by the competent authority, but Section 105 supplies the minimum safety concept.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -89,38 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.238687+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.392762+00:00",
       "content_hash": "sha256:5cd4102da4169153b7a6a3d1e8d507424bb683d85408df927c8bfd08b3d50712"
     },
     {
       "question_id": "09105dcb-65cc-4b6a-ac03-086f28052994",
       "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per the 2004 Revised IRR, Rule XV, Section 1501, which of the following is an IRR-only addition not found in the original PD 1096 basic law?",
+      "text": "Per PD 1096 Rule I, Section 102 (Declaration of Policy), the Code establishes what type of standards framework for buildings and structures?",
       "options": [
         {
-          "id": "A",
-          "text": "Testing for structural adequacy and fire resistance, which ensures compliance with modern safety standards"
+          "id": "a",
+          "text": "Recommended guidelines that designers may adopt at their discretion"
         },
         {
-          "id": "B",
-          "text": "Anchorage to withstand all probable external and internal forces, which is critical for structural integrity"
+          "id": "b",
+          "text": "Performance targets benchmarked against foreign model codes"
         },
         {
-          "id": "C",
-          "text": "A Safety Engineer must be present at the site during placement of prefabricated assemblies"
+          "id": "c",
+          "text": "Minimum standards and requirements for location, site, design, materials, construction, use, occupancy, and maintenance"
         },
         {
-          "id": "D",
-          "text": "Connections must develop member strength as an integral structure, which is essential for load distribution"
+          "id": "d",
+          "text": "Maximum limits that local ordinances may not exceed"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The Safety Engineer requirement during placement is exclusively an IRR addition. Options A, B, and D are all present in both the 1977 basic law and the 2004 IRR — they are the original provisions. The IRR also added: uPVC as named material, metal/uPVC-specific anchorage provision, inspection requirement, and Safety Engineer requirement.",
+      "rationale": "Section 102 declares that the Code provides a framework of minimum standards and requirements regulating location, site, design, quality of materials, construction, use, occupancy, and maintenance. The word 'minimum' is controlling: a project, contract, local ordinance, or referral code may require more, but the Code establishes the baseline.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -133,7 +133,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.539432+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.368075+00:00",
       "content_hash": "sha256:dd00cf4e37144b5998b85f79230691c8be1db7c7b26bdae457121741ea0e7dee"
     },
     {
@@ -165,8 +165,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 104, all buildings shall be maintained in safe, sanitary, and good working condition — indefinitely, not just at time of construction. This is a continuing code obligation that runs with the land, not just a one-time compliance event at the Certificate of Occupancy stage.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 104",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -177,7 +177,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.369570+00:00",
       "content_hash": "sha256:aa19907e1d0eac6a88b777fab4f0200e0e57d05f4c67bcf2ccf28bc2b09d5a99"
     },
     {
@@ -209,8 +209,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, Renovation is any physical change made on a building to increase the value and/or improve the aesthetic quality of the building. Repair is remedial work to restore to original condition. Replacing ceramic with marble improves value and aesthetics — this is Renovation, not Repair (the result is an upgrade, not a restoration). The trigger being damage is irrelevant — what matters is the outcome.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -221,7 +221,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.395845+00:00",
       "content_hash": "sha256:7467da6ea8ec5456fcc6b1a2a7543fb30537893ba24547f292cd81fa43225d7f"
     },
     {
@@ -253,8 +253,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, the Building Official is the Executive Officer of the OBO, appointed by the DPWH Secretary. The OBO is the office authorized to enforce the Code and IRR. The Building Official has authority to issue permits, certificates of occupancy, stop-work orders, and demolition orders.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -265,7 +265,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.380077+00:00",
       "content_hash": "sha256:f42aad88dbaf3658c78700f94dbd7e802395695508f3d06c519018fe4686dd4b"
     },
     {
@@ -297,8 +297,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, Conversion is any change in the use or occupancy of buildings or parts thereof that has different requirements. Unlike Repair, Renovation, Alteration, and Addition — which focus on physical changes — Conversion is about USE. A building can be converted without any construction at all (reclassifying occupancy), though physical work often accompanies it.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -309,7 +309,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.398843+00:00",
       "content_hash": "sha256:1b1cc9ebf37f9418c3273fe8a3034427e6297d8a0534a4de385bbe43fa9be80b"
     },
     {
@@ -341,8 +341,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, applicable provisions of codes and standards of various professional organizations, government agencies, and technical associations are deemed Referral Codes — supplementary to PD 1096. They apply when PD 1096 does not directly address a technical matter. Examples: NSCP (structural), PEC (electrical), PSME Code (mechanical), PCAB standards.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -353,7 +353,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.381591+00:00",
       "content_hash": "sha256:73e391c3e481cd361bae783e9e1bb29496be28b435ecb2e4927cad1a2df25ba9"
     },
     {
@@ -385,8 +385,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area of an existing building. An Alteration is any change in materials, partitioning, openings, structural parts, or utilities that does NOT increase height and/or floor area. The 'and/or' means increasing EITHER height OR floor area constitutes an Addition.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -397,7 +397,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.378585+00:00",
       "content_hash": "sha256:5c3605063f205a62cd6167a7ca98252eda7f6522f8a410db31b2115404d985d3"
     },
     {
@@ -429,8 +429,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Under Philippine statutory construction, 'shall' is mandatory. All three requirements of Sec. 104 — conformity to safe construction principles, suitability to purpose, and maintenance in safe/sanitary condition — use 'shall.' A building official cannot approve non-compliant plans, and a building owner has a continuing mandatory obligation to maintain the building.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 104",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -441,7 +441,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.377060+00:00",
       "content_hash": "sha256:6fb9c89b8e0a74f427b775069e7e46de145f969b0c94450823cb926ebe2ab9bd"
     },
     {
@@ -473,8 +473,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, buildings covered by BP 220 (Economic and Socialized Housing) are explicitly exempt from PD 1096 and governed instead by HLURB/DHSUD standards. Note: this exception appears in the 2004 IRR but NOT in the original PD 1096 Sec. 103. Traditional indigenous family dwellings are also exempt under Sec. 103 of the basic law.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -485,7 +485,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.375533+00:00",
       "content_hash": "sha256:8ce8c7676c932311b95f7fb63f5618ea2b645afb0e59ab6dfc6b4992704509d4"
     },
     {
@@ -517,8 +517,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, the Code covers 7 disciplines: Architectural, Civil/Structural, Electrical, Mechanical, Sanitary, Plumbing, and Electronics. Each discipline requires a licensed professional to sign and seal relevant plans and documents.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -529,7 +529,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.400342+00:00",
       "content_hash": "sha256:c3448e54e818541ea70e8e45db533741596cb22bf09ee6310279fb91d864d660"
     },
     {
@@ -561,8 +561,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 105, sites for human habitation must be sanitary, hygienic, and safe. Safe distance must be maintained from: (1) streams, bodies of water, and sources of air pollution; (2) volcanic sites or active/potentially active volcanoes; (3) buildings that constitute a potential source of fire or explosion. Mnemonic: 'SASH' — Streams/Air pollution, Active volcanic sites, Safe distance required, Habitation triggers.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 105",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -573,7 +573,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.371066+00:00",
       "content_hash": "sha256:0892bdbcc67f48021b664248215ba2ec44fe8ec4cb32c0c47dcc5149915f7f01"
     },
     {
@@ -605,8 +605,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per PD 1096, Sec. 102, the Code provides a framework of minimum standards and requirements. The operative word is 'minimum.' The Code does not prescribe optimal or maximum standards. Local governments, project specifications, and referral codes may exceed minimums; nothing in PD 1096 prevents that. What they cannot do is fall below.",
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 102",
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
@@ -617,7 +617,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.788686+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.361488+00:00",
       "content_hash": "sha256:880f3895b91da7bd3639ed453c6d559be5e1f85b42888f518e077ada3cc854ec"
     },
     {
@@ -649,8 +649,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, existing buildings constructed without permits may be legalized if they are made to conform to all current code requirements, subject to corresponding penalties, surcharges, and fines. This is not a blanket amnesty — it requires full code compliance (not just the code at original construction) plus all financial penalties. This IRR provision does not appear in the original PD 1096 basic law.",
-      "explanation": "Per IRR Sec. 103, existing buildings constructed without permits may be legalized if they are made to conform to all current code requirements, subject to corresponding penalties, surcharges, and fines. This is not a blanket amnesty — it requires full code compliance (not just the code at original construction) plus all financial penalties. This IRR provision does not appear in the original PD 1096 basic law.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -661,7 +661,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.959079+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.363095+00:00",
       "content_hash": "sha256:6336c37aadb7ddc7c343b6080d272f76b5a3f93ed99278c9fee2dc92b7f58c5c"
     },
     {
@@ -693,8 +693,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, the Code explicitly covers 7 disciplines: Architectural, Civil/Structural, Electrical, Mechanical, Sanitary, Plumbing, and Electronics. Each discipline requires a licensed professional to sign and seal relevant plans and documents submitted for a building permit.",
-      "explanation": "Per IRR Sec. 103, the Code explicitly covers 7 disciplines: Architectural, Civil/Structural, Electrical, Mechanical, Sanitary, Plumbing, and Electronics. Each discipline requires a licensed professional to sign and seal relevant plans and documents submitted for a building permit.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -705,7 +705,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.959079+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.386180+00:00",
       "content_hash": "sha256:2545dee97deb72b377166efe7ec68f4830a54b51383381126894e87cc1f2299a"
     },
     {
@@ -737,8 +737,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, buildings covered by BP 220 (Economic and Socialized Housing) are explicitly exempt from PD 1096 and governed instead by HLURB/DHSUD standards. Traditional indigenous family dwellings are also exempt under Sec. 103 of the basic law. All other options describe buildings fully subject to PD 1096.",
-      "explanation": "Per IRR Sec. 103, buildings covered by BP 220 (Economic and Socialized Housing) are explicitly exempt from PD 1096 and governed instead by HLURB/DHSUD standards. Traditional indigenous family dwellings are also exempt under Sec. 103 of the basic law. All other options describe buildings fully subject to PD 1096.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
@@ -749,7 +749,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.959079+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.397349+00:00",
       "content_hash": "sha256:ec3de45e849420fe54c3bdce8a8bcd5d84f2060211e1eb1ab25c3e60d47568cb"
     },
     {
@@ -781,8 +781,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 105, sites for human habitation must be sanitary, hygienic, and safe. Safe distance must be maintained from: (1) streams, bodies of water, and sources of air pollution; (2) volcanic sites or active/potentially active volcanoes; (3) buildings that constitute a potential source of fire or explosion. These are the three statutory categories, not expanded interpretations.",
-      "explanation": "Per IRR Sec. 105, sites for human habitation must be sanitary, hygienic, and safe. Safe distance must be maintained from: (1) streams, bodies of water, and sources of air pollution; (2) volcanic sites or active/potentially active volcanoes; (3) buildings that constitute a potential source of fire or explosion. These are the three statutory categories, not expanded interpretations.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 105",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -793,7 +793,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.959079+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.394277+00:00",
       "content_hash": "sha256:2c8408621022a7ab587a5b56aa92c7261099db114daf25ebf6584ff08ee87a9b"
     },
     {
@@ -825,8 +825,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, Conversion is any change in the use or occupancy of buildings or parts thereof that has different requirements. Unlike the other four categories, which focus on physical changes, Conversion is about USE. A building can be converted without any physical construction at all (reclassifying occupancy), though physical work often accompanies it.",
-      "explanation": "Per IRR Sec. 106, Conversion is any change in the use or occupancy of buildings or parts thereof that has different requirements. Unlike the other four categories, which focus on physical changes, Conversion is about USE. A building can be converted without any physical construction at all (reclassifying occupancy), though physical work often accompanies it.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -837,7 +837,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.959079+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.374043+00:00",
       "content_hash": "sha256:cdfd529204f692eefe77d2b7ed383684b7de5a84beb840b690cbba26fd13a782"
     },
     {
@@ -869,8 +869,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area of an existing building. An Alteration is any change in materials, partitioning, openings, structural parts, or utilities that does NOT increase height and/or floor area. The 'and/or' means increasing EITHER height OR floor area constitutes an Addition — both need not change simultaneously.",
-      "explanation": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area of an existing building. An Alteration is any change in materials, partitioning, openings, structural parts, or utilities that does NOT increase height and/or floor area. The 'and/or' means increasing EITHER height OR floor area constitutes an Addition — both need not change simultaneously.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
@@ -881,7 +881,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.959079+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.401851+00:00",
       "content_hash": "sha256:69b95fdc146a2ac7b174fd37ddc8f42a22e89023dbe811ceeea5dc4de80bd6b4"
     },
     {
@@ -913,8 +913,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, Renovation is any physical change made to increase the value and/or improve the aesthetic quality of a building. Repair is remedial work to restore to original condition. Replacing ceramic with marble improves value and aesthetics — this is Renovation, not Repair. The cause (damage) does not control the classification; the outcome (upgrade vs. restoration) does.",
-      "explanation": "Per IRR Sec. 106, Renovation is any physical change made to increase the value and/or improve the aesthetic quality of a building. Repair is remedial work to restore to original condition. Replacing ceramic with marble improves value and aesthetics — this is Renovation, not Repair. The cause (damage) does not control the classification; the outcome (upgrade vs. restoration) does.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -925,7 +925,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.959079+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.366235+00:00",
       "content_hash": "sha256:2b1a5af8525fed398ab0c1cf41547c3a59cf491bcbd528876fd85415f671275c"
     },
     {
@@ -957,8 +957,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area. The 'and/or' means increasing EITHER height OR floor area alone constitutes an Addition. Enclosing a terrace increases gross floor area without adding height; therefore the work is classified as an Addition, requiring an addition building permit. This is a common exam trap where candidates assume both dimensions must change.",
-      "explanation": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area. The 'and/or' means increasing EITHER height OR floor area alone constitutes an Addition. Enclosing a terrace increases gross floor area without adding height; therefore the work is classified as an Addition, requiring an addition building permit. This is a common exam trap where candidates assume both dimensions must change.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -969,7 +969,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.959079+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.383087+00:00",
       "content_hash": "sha256:027cda0be72d34963237fd4cbebf50f535d8e8f75eef17f83b27fc7ee1d36972"
     },
     {
@@ -1001,8 +1001,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 105, sites for human habitation must be sanitary, hygienic, and safe. Safe distance must be maintained from: (1) streams, bodies of water, and sources of air pollution; (2) volcanic sites or active/potentially active volcanoes; (3) buildings that constitute a potential source of fire or explosion. These are the three statutory categories, not expanded interpretations.",
-      "explanation": "Per IRR Sec. 105, sites for human habitation must be sanitary, hygienic, and safe. Safe distance must be maintained from: (1) streams, bodies of water, and sources of air pollution; (2) volcanic sites or active/potentially active volcanoes; (3) buildings that constitute a potential source of fire or explosion. These are the three statutory categories, not expanded interpretations.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 105",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1013,7 +1013,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.712852+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.359828+00:00",
       "content_hash": "sha256:7fd0b31b2402333685bff99ed5be00bd15c1f65b61cadb9105de42bf90d4613b"
     },
     {
@@ -1045,8 +1045,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, the Code explicitly covers 7 disciplines: Architectural, Civil/Structural, Electrical, Mechanical, Sanitary, Plumbing, and Electronics. Each discipline requires a licensed professional to sign and seal relevant plans and documents submitted for a building permit.",
-      "explanation": "Per IRR Sec. 103, the Code explicitly covers 7 disciplines: Architectural, Civil/Structural, Electrical, Mechanical, Sanitary, Plumbing, and Electronics. Each discipline requires a licensed professional to sign and seal relevant plans and documents submitted for a building permit.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": "remember",
       "application_context": null,
       "practice_context": [],
@@ -1057,7 +1057,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.712852+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.358116+00:00",
       "content_hash": "sha256:a358107faf7d3aa4942ac277fbaaa1912ec190f258756dbc0e704660ca3900b1"
     },
     {
@@ -1089,8 +1089,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area of an existing building. An Alteration is any change in materials, partitioning, openings, structural parts, or utilities that does NOT increase height and/or floor area. The 'and/or' means increasing EITHER height OR floor area constitutes an Addition — both need not change simultaneously.",
-      "explanation": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area of an existing building. An Alteration is any change in materials, partitioning, openings, structural parts, or utilities that does NOT increase height and/or floor area. The 'and/or' means increasing EITHER height OR floor area constitutes an Addition — both need not change simultaneously.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
@@ -1101,7 +1101,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.712852+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.384585+00:00",
       "content_hash": "sha256:627dd700733a1dc6fe11f954aa3f13641a334e22a5fb2fa0e3404527df7a407b"
     },
     {
@@ -1133,8 +1133,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, Renovation is any physical change made to increase the value and/or improve the aesthetic quality of a building. Repair is remedial work to restore to original condition. Replacing ceramic with marble improves value and aesthetics — this is Renovation, not Repair. The cause (damage) does not control the classification; the outcome (upgrade vs. restoration) does.",
-      "explanation": "Per IRR Sec. 106, Renovation is any physical change made to increase the value and/or improve the aesthetic quality of a building. Repair is remedial work to restore to original condition. Replacing ceramic with marble improves value and aesthetics — this is Renovation, not Repair. The cause (damage) does not control the classification; the outcome (upgrade vs. restoration) does.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1145,7 +1145,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.712852+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.372563+00:00",
       "content_hash": "sha256:c6a3d13f827ea27b2ec6c50815e90de9a08d0fdf6083b9559a3d6982fb7efa9d"
     },
     {
@@ -1177,8 +1177,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, Conversion is any change in the use or occupancy of buildings or parts thereof that has different requirements. Unlike the other four categories, which focus on physical changes, Conversion is about USE. A building can be converted without any physical construction at all (reclassifying occupancy), though physical work often accompanies it.",
-      "explanation": "Per IRR Sec. 106, Conversion is any change in the use or occupancy of buildings or parts thereof that has different requirements. Unlike the other four categories, which focus on physical changes, Conversion is about USE. A building can be converted without any physical construction at all (reclassifying occupancy), though physical work often accompanies it.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": "analyze",
       "application_context": null,
       "practice_context": [],
@@ -1189,7 +1189,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.712852+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.391037+00:00",
       "content_hash": "sha256:a0d705c08097d624695ac5cab12359247c8957410bc26f5044138154903c535a"
     },
     {
@@ -1221,8 +1221,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, existing buildings constructed without permits may be legalized if they are made to conform to all current code requirements, subject to corresponding penalties, surcharges, and fines. This is not a blanket amnesty — it requires full code compliance (not just the code at original construction) plus all financial penalties. This IRR provision does not appear in the original PD 1096 basic law.",
-      "explanation": "Per IRR Sec. 103, existing buildings constructed without permits may be legalized if they are made to conform to all current code requirements, subject to corresponding penalties, surcharges, and fines. This is not a blanket amnesty — it requires full code compliance (not just the code at original construction) plus all financial penalties. This IRR provision does not appear in the original PD 1096 basic law.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1233,7 +1233,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.712852+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.356060+00:00",
       "content_hash": "sha256:e8812ffaf3ba24b0fa897c9bad5441ee574706125ed2b3a6b0fe4069ef599748"
     },
     {
@@ -1265,8 +1265,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area. The 'and/or' means increasing EITHER height OR floor area alone constitutes an Addition. Enclosing a terrace increases gross floor area without adding height; therefore the work is classified as an Addition, requiring an addition building permit. This is a common exam trap where candidates assume both dimensions must change.",
-      "explanation": "Per IRR Sec. 106, an Addition is new construction that increases height and/or floor area. The 'and/or' means increasing EITHER height OR floor area alone constitutes an Addition. Enclosing a terrace increases gross floor area without adding height; therefore the work is classified as an Addition, requiring an addition building permit. This is a common exam trap where candidates assume both dimensions must change.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 106",
       "bloom_level": "apply",
       "application_context": null,
       "practice_context": [],
@@ -1277,7 +1277,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.712852+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.387736+00:00",
       "content_hash": "sha256:a48ed35468b3f345c90beb4e627de69ab664069b341f0c08d3fc283fa9eb6207"
     },
     {
@@ -1309,8 +1309,8 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Per IRR Sec. 103, buildings covered by BP 220 (Economic and Socialized Housing) are explicitly exempt from PD 1096 and governed instead by HLURB/DHSUD standards. Traditional indigenous family dwellings are also exempt under Sec. 103 of the basic law. All other options describe buildings fully subject to PD 1096.",
-      "explanation": "Per IRR Sec. 103, buildings covered by BP 220 (Economic and Socialized Housing) are explicitly exempt from PD 1096 and governed instead by HLURB/DHSUD standards. Traditional indigenous family dwellings are also exempt under Sec. 103 of the basic law. All other options describe buildings fully subject to PD 1096.",
-      "code_citation": "PD 1096",
+      "explanation": "PD 1096 Rule I supplies the IRR title, policy, scope, general building requirements, site requirements, and definitions. It is the framework for later technical rules, but item-specific dimensions or procedures still come from the later section cited in the question. This local edit adds source context only and does not change answer-key fields.",
+      "code_citation": "PD 1096 2004 Revised IRR, Section 103",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
@@ -1321,7 +1321,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.712852+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.364601+00:00",
       "content_hash": "sha256:b7c304e03105f7eb55fc77d173fcae93c303c0541904ae5e1605dc964c9dd9a9"
     }
   ]

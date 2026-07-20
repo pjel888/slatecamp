@@ -11,13 +11,10 @@ const accentBorderMap: Record<HeaderHeroAccent, string> = {
   warning: 'border-l-warning',
 }
 
-const accentTextMap: Record<HeaderHeroAccent, string> = {
-  primary: 'text-primary',
-  'camp-orange': 'text-camp-orange',
-  emerald: 'text-emerald',
-  warning: 'text-warning',
-}
-
+// `accentTextMap` and the `category` / `categoryIcon` props are reserved for
+// the currently-commented category chip (see JSX below). Reactivate them when
+// that feature is re-enabled; until then they are intentionally not
+// destructured/used.
 export interface HeaderHeroProps {
   title?: string
   subtitle?: string
@@ -34,19 +31,16 @@ export interface HeaderHeroProps {
 }
 
 export function HeaderHero({
-  category,
   description,
   actions,
   metadata,
   backgroundImage,
   backgroundOverlay,
   accent,
-  categoryIcon: CategoryIcon,
   children,
   className,
 }: HeaderHeroProps) {
   const accentBorder = accent ? accentBorderMap[accent] : undefined
-  const accentText = accent ? accentTextMap[accent] : 'text-primary'
 
   return (
     <section

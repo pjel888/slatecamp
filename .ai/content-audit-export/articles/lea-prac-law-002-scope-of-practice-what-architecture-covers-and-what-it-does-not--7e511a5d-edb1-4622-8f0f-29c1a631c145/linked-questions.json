@@ -8,19 +8,19 @@
       "question_id": "ae2dd470-af9a-49d3-b2ae-03968c51a4a1",
       "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
       "topic_id": "b9ff0da7-472e-4ed3-92fe-1905ea3b14dd",
-      "text": "According to Section 20 of the IRR, how many primary service categories does architectural practice encompass?",
+      "text": "According to RA 9266 IRR Section 3(4), how many lettered service categories (a through j) are listed under the scope of the practice of architecture?",
       "options": [
         {
           "id": "a",
-          "text": "5 categories"
+          "text": "7 categories"
         },
         {
           "id": "b",
-          "text": "8 categories"
+          "text": "9 categories"
         },
         {
-          "text": "9 categories",
-          "correct_option_id": "b"
+          "id": "c",
+          "text": "10 categories"
         },
         {
           "id": "d",
@@ -33,11 +33,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Five categories would omit significant service domains recognized in the statute.",
-        "b": "Eight categories falls short of the full enumeration.",
-        "d": "Twelve exceeds the statutory enumeration; there are exactly ten primary categories.",
-        "correct": "The IRR enumeration identifies 9 primary service categories (a through i), with a tenth catch-all provision (j) for other works requiring architectural competence, each with subdivisions, creating a comprehensive matrix of architectural services.",
-        "takeaway": "These ten categories define the boundaries of architectural scope; they provide the framework for understanding what constitutes architectural work under RA 9266."
+        "a": "Seven categories understates the IRR enumeration; the IRR lists ten lettered categories (a)-(j).",
+        "b": "Nine categories understates the IRR enumeration; a tenth catch-all category (j) covers all other works requiring architectural competence.",
+        "d": "Twelve categories exceeds the IRR enumeration; only ten lettered categories (a)-(j) appear in Section 3(4).",
+        "correct": "RA 9266 IRR Section 3(4) enumerates ten lettered service categories: (a) planning; (b) consultation; (c) appraisal; (d) structural conceptualization; (e) architectural interiors; (f) site development and utility layouting; (g) building administration; (h) construction supervision; (i) project management; and (j) all other works, projects, and activities requiring the professional competence of an architect.",
+        "takeaway": "The ten categories (a)-(j) define the statutory boundaries of architectural scope, with the catch-all (j) allowing the PRBoA to recognize emerging services without statutory amendment."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -51,7 +51,7 @@
       "model_id": "ALE-PRAC-LAW-002-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.000048+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.096507+00:00",
       "content_hash": "sha256:9333a34382edace5f1bc36674bc6e38dac5f80cf38c916576923b9c3c55657d3"
     },
     {
@@ -89,8 +89,8 @@
         "correct": "The statute defines what architects may do (broad scope); service agreements define what architects will do (specific engagement). This two-tier boundary system (statutory and contractual) ensures clarity, prevents scope creep, and provides legal recourse for breach.",
         "takeaway": "Statutory scope and contractual scope operate on different levels; broad statutory authority requires specific contractual definition to manage client expectations and protect professional accountability."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,7 +101,7 @@
       "model_id": "ALE-PRAC-LAW-002-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.093800+00:00",
       "content_hash": "sha256:8f571f9d6a8f76b5c7caf600561f4ed3b66e96a2692b351941115e132f26a731"
     },
     {
@@ -139,8 +139,8 @@
         "correct": "The IRR defines architectural documents as architectural drawings, specifications, and other outputs that only an architect can sign and seal, specifically listing vicinity maps, floor plans, elevations, sections, detailed drawings, technical specifications, and cost estimates.",
         "takeaway": "The architect's seal and signature on documents carry legal significance; only the architect can vouch for the design's completeness, coordination, and compliance with standards and law."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,7 +151,7 @@
       "model_id": "ALE-PRAC-LAW-002-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.089142+00:00",
       "content_hash": "sha256:19abbc64498972be8a19c17bc0094f6b165e3924579697eee72a2364cbfaed69"
     },
     {
@@ -189,8 +189,8 @@
         "correct": "The IRR defines AoR as directly and professionally responsible for total design and assumes civil liability for plans and contract documents. AiCC is responsible and liable for construction supervision. Roles can overlap but carry distinct accountabilities.",
         "takeaway": "Clear role definition prevents liability confusion and ensures design intent is preserved during construction; the AoR cannot abandon design responsibility, nor can the AiCC reinvent design during construction."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,7 +201,7 @@
       "model_id": "ALE-PRAC-LAW-002-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.092176+00:00",
       "content_hash": "sha256:2fdc91f581fc1329e2be313d7764a611bacbc6bda6554875040b846acabccb27"
     },
     {
@@ -239,8 +239,8 @@
         "correct": "The seventh category explicitly includes 'housing design and community architecture' as part of space planning and utilization within and surrounding buildings, reflecting architectural practice's evolution beyond individual buildings to community scale.",
         "takeaway": "Modern architectural practice extends to neighborhood planning and housing strategies; these emerging areas are recognized as falling within architectural scope when they involve spatial planning and design at community scale."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -251,7 +251,7 @@
       "model_id": "ALE-PRAC-LAW-002-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.097447+00:00",
       "content_hash": "sha256:ea99c6f1df3d42127f230f439ebdadfc90bd7ba6cc5d4242de6d49afecdfe4d2"
     },
     {
@@ -289,8 +289,8 @@
         "correct": "The IRR and RA 9266 establish that structural conceptualization—conceiving and developing structural type, disposition, and arrangement—is within architectural scope, but preparation and signing of structural design documents belongs exclusively to structural engineers.",
         "takeaway": "This boundary respects both professions: architects think structurally; engineers engineer structurally and accept liability for structural calculations and compliance."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,7 +301,7 @@
       "model_id": "ALE-PRAC-LAW-002-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.090410+00:00",
       "content_hash": "sha256:0f19a3a81317a76679d58692d2d7782bb054450dd0fe85e92e48a2374e40e09b"
     },
     {
@@ -339,8 +339,8 @@
         "correct": "Construction management encompasses supervision, coordination, and direction—not the physical act of building. Construction itself is performed by contractors; architects oversee and coordinate.",
         "takeaway": "The distinction between design authority and construction execution is critical; architects do not build—they design, manage, and ensure contractors comply with designs."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,7 +351,7 @@
       "model_id": "ALE-PRAC-LAW-002-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.094557+00:00",
       "content_hash": "sha256:d9ed3441b15c296bb5f6c0570ffd05cdf22a510cd291cb5ba0de62470050cf52"
     },
     {
@@ -389,8 +389,8 @@
         "correct": "RA 9266 defines a service agreement as a duly notarized written contract stipulating scope and compensation. The IRR states violation is a civil liability basis under the Civil Code (specific article not confirmed in available IRR excerpts) unless the architect attempts to interfere with protected functions.",
         "takeaway": "Clear contracting is a cornerstone of professional practice; clients and architects both benefit from explicit scope definition, and the civil code provides remedy when agreements are breached."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -401,7 +401,7 @@
       "model_id": "ALE-PRAC-LAW-002-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.091292+00:00",
       "content_hash": "sha256:34aabf19e8aab3e28353f95c10898b9a40a23c40ad8d01d757378a994ddd92a7"
     },
     {
@@ -439,8 +439,8 @@
         "correct": "Category (b) includes consultation, consultancy, written advice, evaluations, investigations, quality surveys, and appraisals—all pre-design and advisory services that do not require delivery of designs.",
         "takeaway": "Not all architectural engagement culminates in design; advisory services are legitimate architectural practice with distinct fee structures and liability frameworks."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -451,7 +451,7 @@
       "model_id": "ALE-PRAC-LAW-002-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.095531+00:00",
       "content_hash": "sha256:7801c31f1aafe5663d33d4e75ffddefc1e5c065ddecf494ba8806b965c3ee9cf"
     },
     {
@@ -489,8 +489,8 @@
         "correct": "Category (j) states 'all other works, projects, and activities which require the professional competence of an architect.' This future-proofs the statute; as practice evolves, the PRBoA can recognize new service areas as falling within scope if they demand architectural knowledge.",
         "takeaway": "Catch-all provisions prevent statutory obsolescence; they allow professions to evolve and adapt to market demands and technological change without requiring legislative amendment."
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
+      "explanation": "Batch 094 local-first source audit revalidated this question against the local RA 9266 IRR PDF and refined markdown locators for Section 3 role, scope, structural conceptualization, utility layouting, and service-agreement language.",
+      "code_citation": "RA 9266 IRR Section 3(2)-(4)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -501,7 +501,7 @@
       "model_id": "ALE-PRAC-LAW-002-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.260218+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.093009+00:00",
       "content_hash": "sha256:948884a7388f221287db47f89c37f78d1f8412352d4887b1170b09ccf8008fff"
     }
   ]

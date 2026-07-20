@@ -1,0 +1,508 @@
+{
+  "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:d1c125fa6a4e9a0d48b167a10661ffda80dbe25bac27555d89303cc082036608",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "c503eb0a-79f5-4041-baa6-6ee79e9d1b7c",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "Philippine timber stress groups rank species by structural capacity. Which of the following is a Group I (highest strength) species?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yakal"
+        },
+        {
+          "id": "b",
+          "text": "Narra"
+        },
+        {
+          "id": "c",
+          "text": "Lauan"
+        },
+        {
+          "id": "d",
+          "text": "White Lauan"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Narra is Group I (highest capacity).",
+        "d": "Lauan is Group III (moderate capacity).",
+        "correct": "Yakal is classified as Group I (highest), along with Molave, Ipil, Guijo, and Mangkono. Group I species have the highest allowable bending and compression stresses.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Timber Grading and Stress Group Schedule",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4dfb700591a643600e6fb02b709578bafae919ff870930021b0040b427d3861b"
+    },
+    {
+      "question_id": "9640e7ab-7532-4a85-b54e-683ffb2b9466",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "Identify the correct stress group for each species: Narra, Lauan, Apitong.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Narra: Group II, Lauan: Group III, Apitong: Group I"
+        },
+        {
+          "id": "b",
+          "text": "Narra: Group I, Lauan: Group III, Apitong: Group III"
+        },
+        {
+          "id": "c",
+          "text": "Narra: Group I, Lauan: Group III, Apitong: Group IV"
+        },
+        {
+          "id": "d",
+          "text": "Narra: Group II, Lauan: Group IV, Apitong: Group II"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Apitong is Group III, not Group I.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "Narra is Group II, not Group I. Apitong is Group II, not Group IV.",
+        "correct": "Narra (Group II), Lauan (Group III), Apitong (Group II). Apitong and Narra are both high-capacity species in Group II; Lauan is moderate capacity (Group III).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Timber Grading and Stress Group Schedule",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ac39970e14ce5ede986c18ef458a4c4001853b14b74d06baf8392b32ba695e2"
+    },
+    {
+      "question_id": "0c2afd87-7afa-49e6-8974-3a2d224f1af2",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "A structural specification states 'Hardboard (density ≥497 kg/m³) as primary shear wall backing.' An engineer proposes using fiberboard (280 kg/m³) instead to reduce cost. What compliance issue exists?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fiberboard does not meet the density threshold (≥497 kg/m³ for hardboard). The substitution violates the specification and is non-compliant; hardboard (or specification modification) is required."
+        },
+        {
+          "id": "b",
+          "text": "Density is the only specification criterion; any timber-based product of equivalent thickness is acceptable, provided it meets other structural requirements"
+        },
+        {
+          "id": "c",
+          "text": "Fiberboard can substitute for hardboard if the thickness is increased by 50% to compensate for lower density, ensuring structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "Hardboard and fiberboard are identical products; the terminology difference is cosmetic, with no impact on performance"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "The specification is explicit: hardboard ≥497 kg/m³. Density is not the only criterion; product category is definitive.",
+        "d": "Thickness adjustment does not alter the material's internal structure, modulus, or water-resistance—all properties engineered into hardboard versus fiberboard.",
+        "correct": "Hardboard is defined as density ≥497 kg/m³. Fiberboard (>160 to <497 kg/m³) is a separate product category with different mechanical properties. The specification requires hardboard; fiberboard does not meet the definition and is non-compliant.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Building Code Section 2401; ASEAN TCS 1-2019 (product definitions)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:377fda6dd4694e12d15dfa5a49dde564de586dd03dda32ce71e847180fcbbadb"
+    },
+    {
+      "question_id": "f7809040-5f36-445c-84b7-9a1dfa8bd4c8",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "A design uses Apitong lumber but the project location is remote and Apitong is unavailable. The contractor proposes substituting White Lauan of the same grade and dimensions. What design issue arises?",
+      "options": [
+        {
+          "id": "a",
+          "text": "White Lauan is Group III (moderate capacity); Apitong is Group II. The allowable stresses are significantly different. The beam must be re-designed or rejected."
+        },
+        {
+          "id": "b",
+          "text": "Apitong and White Lauan have similar allowable stresses; substitution is acceptable if grade and dimensions match."
+        },
+        {
+          "id": "c",
+          "text": "White Lauan has higher density and strength than Apitong; the substitution is superior and should be approved."
+        },
+        {
+          "id": "d",
+          "text": "Grade is the only factor in stress assignment; species group does not affect allowable stresses."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Groups define distinct stress ranges. Same grade does not mean same allowable stress across groups.",
+        "d": "White Lauan is lower strength than Apitong, not higher.",
+        "correct": "Apitong (Group II) has significantly higher allowable bending (Fb) and compression stresses than White Lauan (Group IV). Substitution without re-design violates the basis of the original design and is non-compliant.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Timber Grading and Stress Group Schedule; Philippine Building Code Section 2402 (material verification)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:55449d2eb249fe13b59ac78ca8635e4d48f7c5a3d95a23fd6109386adc00c3ea"
+    },
+    {
+      "question_id": "37b399b3-f04c-4d24-a3bd-7fe1fd2bc186",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "A timber grade schedule specifies 'No. 1 Common, 50×200 mm nominal.' What are the actual dimensions used in design calculations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 × 200 mm (nominal equals actual in metric conversion)"
+        },
+        {
+          "id": "b",
+          "text": "Approximately 38 × 189 mm (surfaced from nominal)"
+        },
+        {
+          "id": "c",
+          "text": "Approximately 44 × 194 mm (standard Australian sizing)"
+        },
+        {
+          "id": "d",
+          "text": "Actual dimensions must be measured on-site; nominal is not used."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Nominal = actual is incorrect. Surfacing always reduces dimensions by 10–15%.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "Australian standards use different nominal/actual conversions; Philippine grading uses the 50→38, 200→189 pattern.",
+        "correct": "Nominal 50×200 mm timber is surfaced (milled) to approximately 38×189 mm actual. This reduction accounts for planing, finishing, and knot-trimming. Actual dimensions are required for all section properties (S, I, A).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Timber Grading Schedule; Philippine Building Code Section 2401",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aba99a613ab4ecf002a9067206f4a2be1fa6aaad62b00d7f9b2d87d4e649397d"
+    },
+    {
+      "question_id": "f03689fe-68c2-40c5-87f3-33d5b4a1397b",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "A timber column is designed using Group II species (Narra), Select Structural grade, with Fb = 12 MPa. The project budget requires substitution to a lower grade (No. 1 Common) of the same species and dimensions. What is the design consequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fb value will decrease (typically by 10–15%) because No. 1 Common permits larger knots and defects than Select Structural. The column design must be re-analyzed or reinforced."
+        },
+        {
+          "id": "b",
+          "text": "Fb remains identical because Narra (Group II) has the same allowable stress regardless of grade, which simplifies the substitution process"
+        },
+        {
+          "id": "c",
+          "text": "No. 1 Common has higher Fb than Select Structural; the substitution improves capacity and is acceptable without re-design, contrary to typical expectations"
+        },
+        {
+          "id": "d",
+          "text": "Grade affects appearance only; structural properties depend on species and dimensions alone, which means the substitution has no impact on structural integrity"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Grade directly affects allowable stress within the same species. Fb is not fixed for a species; it is a function of both species and grade.",
+        "d": "No. 1 Common does not improve capacity; it reduces it due to larger permitted defects.",
+        "correct": "Within the same species and group, grade determines the specific allowable stress level. Select Structural (best) has higher Fb than No. 1 Common (middle grade). A design using Select Structural cannot be transferred to No. 1 Common without re-analysis.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Timber Grading and Stress Group Schedule; Philippine Building Code Section 2401",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fb250dffab7ac1338b7b8bcea62b9d369a48af683100233bfd43f10b2641a4e3"
+    },
+    {
+      "question_id": "a767d035-653c-4782-af2b-8d67e8796978",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "A timber joists are specified as 'Green Yakal, Group I, Select Structural.' Explain why moisture content affects the allowable bending stress (Fb).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Green timber (≥19% moisture content) has reduced stiffness and strength; design tables provide lower Fb values for green timber than for kiln-dried (≤15% MC) to account for this loss."
+        },
+        {
+          "id": "b",
+          "text": "Green timber has higher Fb values because moisture increases elastic modulus, which is a common misconception in structural engineering"
+        },
+        {
+          "id": "c",
+          "text": "Moisture content does not affect Fb; all Group I Select Structural timber has the same allowable stress regardless of MC, which is contrary to standard engineering practices"
+        },
+        {
+          "id": "d",
+          "text": "Green timber must be excluded from design; only kiln-dried timber is permitted, as per the latest amendments to the building code regarding structural timber use"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Moisture reduces stiffness and strength, not increases it.",
+        "d": "Many applications accept green timber; the allowable stress is simply reduced to account for the moisture penalty.",
+        "correct": "Green timber has higher moisture content, which reduces the wood's stiffness, strength, and modulus. Design tables apply a moisture adjustment factor (typically 1.0–0.9) to Fb for green vs. dry conditions. Fb(green) < Fb(dry).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Building Code Section 2401; ASEAN TCS 1-2019, Section 5.2 (adjustment factors)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4bde7e4097a4cf1c6d7d3df7ce96b1e421cff919931c910728ad404953434d45"
+    },
+    {
+      "question_id": "efc0ee7f-1f80-43b8-8e7d-ff3fe67d619b",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "A joist specification requires actual dimensions. If nominal 2×10 Lauan (Group III, No. 1 Common) joists are delivered, what are the approximate actual dimensions, and which are used in the design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nominal 2×10 is approximately 38×240 mm actual. Actual dimensions are used in design calculations for section properties."
+        },
+        {
+          "id": "b",
+          "text": "Nominal and actual are the same in modern Philippine timber; no conversion is necessary, as the industry standards have unified these measurements"
+        },
+        {
+          "id": "c",
+          "text": "Nominal 2×10 equals 50×250 mm actual; nominal is used in design because it represents the full-size product, ensuring consistency across projects"
+        },
+        {
+          "id": "d",
+          "text": "The actual dimensions cannot be determined without physical measurement; nominal must be used as a proxy, which is a common practice in preliminary design stages"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Nominal and actual differ by 10–15% due to surfacing; conversion tables are standardized.",
+        "d": "Nominal 2 is not 50 mm; the conversion is 2 in. ≈ 38 mm (not 50 mm). Nominal is never used in design calculations.",
+        "correct": "Nominal 2 inches ≈ 38 mm (actual), nominal 10 inches ≈ 240 mm (actual). Allowance is made for surfacing and trimming. All section properties (S, I, A, c) are calculated using actual dimensions.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Timber Grading Schedule; Philippine Building Code Section 2401",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ebad436fa0161d3e86e7cea63a7b8b743a0b9d4c7bef34722fa8aa8b95d384e6"
+    },
+    {
+      "question_id": "34def5c9-1623-4322-bd32-47636959a406",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "Fiberboard has a density of 280 kg/m³. Explain why fiberboard at this density cannot replace solid lumber as a primary load-bearing beam.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fiberboard lacks the structural modulus and shear strength of solid lumber; its low density and engineered composition limit it to non-primary-load paths like infill, backing, or insulation."
+        },
+        {
+          "id": "b",
+          "text": "Fiberboard is only used for thermal insulation; its mechanical properties are deliberately minimized to reduce weight and cost."
+        },
+        {
+          "id": "c",
+          "text": "Fiberboard's density is too high; it should be replaced with hardboard (≥497 kg/m³) for structural use, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Fiberboard is acceptable for primary beams if thickness is doubled to compensate for lower density, which is not a recommended practice"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Fiberboard does have some strength; the issue is that its strength is insufficient for primary structural duty, not that it is intentionally weak.",
+        "d": "Hardboard (≥497 kg/m³) is denser but is still not suitable for primary beams. Hardboard is also an engineered product, not a structural member.",
+        "correct": "Fiberboard (>160 to <497 kg/m³) is a composite product with lower modulus of elasticity and shear strength per unit volume than solid sawn timber. Its engineered structure is optimized for insulation and backing, not primary bending members.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Building Code Section 2401; ASEAN TCS 1-2019 (product classification)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9e47fa2a3c84924646168b7faf37eb2d3bfd2ed535e58bc9656701ab9eb2afd"
+    },
+    {
+      "question_id": "a493ef1b-723a-4599-a71e-1fb1acad9228",
+      "article_id": "047334de-c79a-4d6a-aa23-58a321b71e2e",
+      "topic_id": "3fddf841-6549-4275-b68b-815cc8ea74e7",
+      "text": "A timber beam is graded as 'Select Structural, No. 1 Common, and No. 2 Common' in the same size. Which grade permits the largest knots and defects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No. 2 Common (lowest grade among the three listed)"
+        },
+        {
+          "id": "b",
+          "text": "No. 1 Common (middle grade), allowing moderate knots and defects but not as large as No. 2 Common"
+        },
+        {
+          "id": "c",
+          "text": "Select Structural (highest grade), which permits only minimal knots and defects, ensuring structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "All three grades have identical knot limits; only color differs, which is not a standard grading practice"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "No. 1 Common is higher than No. 2; it has stricter knot limits.",
+        "d": "Select Structural has the tightest defect limits of all three.",
+        "correct": "No. 2 Common is the lowest grade among these three and allows the largest knots, widest checks, and most visible defects. Allowable stresses are correspondingly reduced.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Timber Grading Schedule; Philippine Building Code Section 2401",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d137972d3b39b387ed62bb9414a58ae123efa97644b96e567b8e8155dc8940fa"
+    }
+  ]
+}

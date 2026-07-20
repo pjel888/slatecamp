@@ -8,37 +8,31 @@
       "question_id": "cfab4c01-7384-475f-9dbb-a90e5b1b953f",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "A multi-purpose community hall is designed with temporary wooden stages for barangay events and political rallies. What is the occupancy classification of this facility?",
+      "text": "What is the safest first step for a multi-purpose hall classification question?",
       "options": [
         {
           "id": "a",
-          "text": "Group A (Residential), which is typically not applicable to community halls used for public events"
+          "text": "Identify the activity, occupant load, fixed seating, and stage conditions supplied by the item."
         },
         {
           "id": "b",
-          "text": "Group C (Education and Recreation), which may apply if the hall is used for educational purposes"
+          "text": "Classify by the words multi-purpose only."
         },
         {
           "id": "c",
-          "text": "Group H, Division 1 (Assembly with stage)"
+          "text": "Answer from chair-storage dimensions."
         },
         {
           "id": "d",
-          "text": "Group E (Business and Mercantile), which is generally not suitable for assembly uses"
+          "text": "Ignore whether people gather."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group A is residential; community halls are not residential.",
-        "b": "Group C (theater/auditorium) applies to permanent-stage venues with designed-in theater seating. This facility has temporary stages, so it is Group H.",
-        "d": "Group E is mercantile/business; community halls are assembly, not commercial.",
-        "correct": "A multi-purpose hall with temporary stages serving varied community functions is Group H (assembly). Group H applies to general-purpose assembly venues. If it had a permanent stage designed specifically as a theater/auditorium, it would be Group H, Division 1. (NBC Occupancy Groups, ERR-DSGN-005 inverse)",
-        "takeaway": "Multi-purpose hall with temporary stages = Group H (Assembly). Permanent theater stage = Group C."
-      },
+      "rationale": "PD 1096 and RA 9514 classification depends on use, occupant load, fixed seats, stage, and assembly conditions.",
       "explanation": null,
       "code_citation": "NBC Occupancy Groups; ERR-DSGN-005",
       "bloom_level": "remember",
@@ -54,44 +48,38 @@
       "model_id": "ALE-DSGN-005-10-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.752826+00:00",
       "content_hash": "sha256:83b5b156758ee3fa764533f1ef15bb4c41467c447b641177577b4b4925e632b5"
     },
     {
       "question_id": "f06dc934-6ef5-442f-bb57-d56d73d84e8a",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "A 350-sqm multi-purpose hall (Group H assembly) is not sprinklered. What is the maximum allowed travel distance to an exit?",
+      "text": "Under PD 1096, which group covers assembly buildings with stage and occupant load below 1,000?",
       "options": [
         {
           "id": "a",
-          "text": "30 meters"
+          "text": "Group H-1."
         },
         {
           "id": "b",
-          "text": "45 meters"
+          "text": "Group D-2."
         },
         {
           "id": "c",
-          "text": "60 meters"
+          "text": "Group G-1."
         },
         {
           "id": "d",
-          "text": "75 meters"
+          "text": "Group J-2."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "30 meters is more restrictive than required.",
-        "c": "60 meters applies only to sprinklered buildings; this hall is unsprinklered.",
-        "d": "75 meters exceeds NBC limits.",
-        "correct": "For Group H assembly without sprinklers, maximum travel distance = 45 meters per NBC. Sprinklered buildings may extend to 60 meters. (NBC Fire Safety, Travel Distance)",
-        "takeaway": "Unsprinklered Group H assembly: max travel distance = 45 meters. Sprinklered = 60 meters."
-      },
+      "rationale": "PD 1096 Group H-1 is for assembly buildings with stage and occupant load below 1,000.",
       "explanation": null,
       "code_citation": "NBC Fire Safety, Travel Distance",
       "bloom_level": "analyze",
@@ -107,44 +95,38 @@
       "model_id": "ALE-DSGN-005-10-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.749202+00:00",
       "content_hash": "sha256:bc2a067eef016d854f2f826571cdbb63f1a275272013739c4114a144cd011638"
     },
     {
       "question_id": "e02df667-3094-4322-9470-b1c6f73a41d7",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "A multi-purpose hall is arranged for standing-room-only capacity. How much floor area per person is required for standing occupancy?",
+      "text": "Under PD 1096, what distinguishes Group I in the checked assembly text?",
       "options": [
         {
           "id": "a",
-          "text": "0.5 sqm/person"
+          "text": "Assembly buildings with stage and occupant load of 1,000 or more."
         },
         {
           "id": "b",
-          "text": "0.65 sqm/person"
+          "text": "Any room with fewer than 10 persons."
         },
         {
           "id": "c",
-          "text": "1.0 sqm/person"
+          "text": "All clinics."
         },
         {
           "id": "d",
-          "text": "1.1 sqm/person"
+          "text": "All barangay offices."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.5 sqm/person is too dense and does not meet NBC clearance requirements.",
-        "c": "1.0 sqm/person is looser than required; standing is 0.65 sqm/person.",
-        "d": "1.1 sqm/person is for seated occupancy with folding chairs, not standing.",
-        "correct": "Standing-room occupancy density = 0.65 sqm per person per NBC assembly standards. This allows for body space and minimal movement clearance. (PD 1096 Rule VIII, Table VIII.3.1 Occupant Load Factors)",
-        "takeaway": "Standing-room occupancy = 0.65 sqm per person per NBC."
-      },
+      "rationale": "PD 1096 Group I is for assembly buildings with stage and occupant load of 1,000 or more.",
       "explanation": null,
       "code_citation": "NBC Assembly Occupancy Standards",
       "bloom_level": "remember",
@@ -160,44 +142,38 @@
       "model_id": "ALE-DSGN-005-10-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.746900+00:00",
       "content_hash": "sha256:ff94db0927a016dd091884c4670c78ab7219cddf11350c8f4b7ca659f7d073bd"
     },
     {
       "question_id": "7872ac19-1e89-47ab-bf18-1228667eaff1",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "A multi-purpose hall with 272-person seated occupancy (Group H assembly) requires a minimum combined exit width. Calculate using 7.6 mm/person per NBC Table 3.",
+      "text": "Which RA 9514 rule decides occupant load for assembly areas without fixed seats?",
       "options": [
         {
           "id": "a",
-          "text": "1.36 m (272 × 5mm ÷ 1000)"
+          "text": "Divide the net floor area assigned to the use by the applicable square-meter-per-person factor."
         },
         {
           "id": "b",
-          "text": "1.63 m (272 × 6mm ÷ 1000)"
+          "text": "Use the number of doors only."
         },
         {
           "id": "c",
-          "text": "2.07 m (272 × 7.6mm ÷ 1000)"
+          "text": "Use the floor finish material only."
         },
         {
           "id": "d",
-          "text": "2.72 m (272 × 10mm ÷ 1000)"
+          "text": "Use the exterior wall length only."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.36 m uses 5 mm/person; NBC specifies 7.6 mm/person.",
-        "b": "1.63 m uses 6 mm/person; correct rate is 7.6 mm/person.",
-        "d": "2.72 m uses 10 mm/person; NBC requires 7.6 mm/person.",
-        "correct": "Exit width = Occupant load × 7.6 mm/person ÷ 1000 = 272 × 7.6 ÷ 1000 = 2.067 m ≈ 2.07 m. (NBC Table 3, ERR-DSGN-019 inverse)",
-        "takeaway": "Exit width = Occupant load × 7.6 mm/person per NBC Table 3."
-      },
+      "rationale": "RA 9514 determines assembly occupant load by dividing the net floor area or space assigned to the use by the applicable square-meter-per-occupant factor.",
       "explanation": null,
       "code_citation": "NBC Table 3; ERR-DSGN-019",
       "bloom_level": "apply",
@@ -213,44 +189,38 @@
       "model_id": "ALE-DSGN-005-10-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.752163+00:00",
       "content_hash": "sha256:7ee78cfb515fe23434620d7366d8cdef648c2bdfd3a1d875b2a67d777b632485"
     },
     {
       "question_id": "dd65c550-e1b5-404d-ab8b-77a8dabcb83c",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "A multi-purpose hall plans to store 200 folding chairs. What is the minimum floor area required for chair storage?",
+      "text": "Which RA 9514 factor applies to less concentrated assembly use such as a conference room, dining room, exhibit room, gymnasium, or lounge?",
       "options": [
         {
           "id": "a",
-          "text": "10 sqm (200 × 0.05)"
+          "text": "1.4 m2 per person."
         },
         {
           "id": "b",
-          "text": "20 sqm (200 × 0.1)"
+          "text": "0.28 m2 per person."
         },
         {
           "id": "c",
-          "text": "30 sqm (200 × 0.15)"
+          "text": "11.1 m2 per person."
         },
         {
           "id": "d",
-          "text": "40 sqm (200 × 0.2)"
+          "text": "22.3 m2 per person."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "10 sqm uses 0.05 sqm/chair; correct standard is 0.1 sqm/chair.",
-        "c": "30 sqm exceeds the requirement; 20 sqm is the standard.",
-        "d": "40 sqm is twice the required amount.",
-        "correct": "Chair storage density = 0.1 sqm per folding chair. For 200 chairs: 200 × 0.1 = 20 sqm. (NBC Assembly Storage Standards)",
-        "takeaway": "Folding chair storage = 0.1 sqm per chair. For 200 chairs: 20 sqm."
-      },
+      "rationale": "RA 9514 uses 1.4 m2 per person for less concentrated assembly uses such as conference rooms, dining rooms, exhibit rooms, gymnasiums, or lounges.",
       "explanation": null,
       "code_citation": "NBC Assembly Storage Standards",
       "bloom_level": "apply",
@@ -265,44 +235,38 @@
       "model_id": "ALE-DSGN-005-10-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.751355+00:00",
       "content_hash": "sha256:f752c880820eec962c0e19c6a7e8ac4419a6c3b40edc70b21f3dcf6813abe0f4"
     },
     {
       "question_id": "ae640469-4c88-4353-9ad1-0801e6f7ce6c",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "A demountable (temporary) stage is to be installed in a multi-purpose hall. What is the required minimum depth?",
+      "text": "Which RA 9514 factor applies to standing room or waiting space in assembly occupancy?",
       "options": [
         {
           "id": "a",
-          "text": "2.0–3.0 meters"
+          "text": "0.28 m2 per person."
         },
         {
           "id": "b",
-          "text": "4.0–6.0 meters"
+          "text": "1.9 m2 per person."
         },
         {
           "id": "c",
-          "text": "6.0–8.0 meters"
+          "text": "3.3 m2 per person."
         },
         {
           "id": "d",
-          "text": "8.0–10.0 meters"
+          "text": "22.3 m2 per person."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.0–3.0 meters is too shallow for performer movement and equipment.",
-        "c": "6.0–8.0 meters is larger than standard demountable requirement.",
-        "d": "8.0–10.0 meters exceeds typical temporary stage depth.",
-        "correct": "Demountable stage depth = 4.0–6.0 meters to accommodate performers, technical setup, and minimal storage. (NBC Assembly Stage Standards)",
-        "takeaway": "Demountable stage depth = 4.0–6.0 meters per assembly standards."
-      },
+      "rationale": "RA 9514 uses 0.28 m2 per person for standing room or waiting space.",
       "explanation": null,
       "code_citation": "NBC Assembly Stage Standards",
       "bloom_level": "apply",
@@ -317,44 +281,38 @@
       "model_id": "ALE-DSGN-005-10-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.750647+00:00",
       "content_hash": "sha256:8e5c71d4dd1c954c9e60cbf96ded5c8908d41a37999f4f13f110e175ae97c28d"
     },
     {
       "question_id": "753158bd-b92a-4518-b1e8-9d68bda8c34e",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "What is the correct height range for a permanent stage in a multi-purpose hall per standard design practice?",
+      "text": "What is source-safe for fixed seats in an assembly area?",
       "options": [
         {
           "id": "a",
-          "text": "300–400 mm"
+          "text": "Occupant load is determined by the number of fixed seats installed."
         },
         {
           "id": "b",
-          "text": "450–550 mm"
+          "text": "Occupant load ignores the seats."
         },
         {
           "id": "c",
-          "text": "600–750 mm"
+          "text": "Occupant load is always one person per 3.3 m2."
         },
         {
           "id": "d",
-          "text": "800–900 mm"
+          "text": "Fixed seats are prohibited in all halls."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "300–400 mm is too low for audience visibility.",
-        "b": "450–550 mm is below the recommended range.",
-        "d": "800–900 mm exceeds standard and creates greater fall risk.",
-        "correct": "Permanent stage height = 600–750 mm above floor level. This height ensures stage visibility for seated audiences without creating excessive fall hazard. (NBC Assembly Stage Standards)",
-        "takeaway": "Permanent stage height = 600–750 mm per assembly design standards."
-      },
+      "rationale": "RA 9514 determines occupant load in fixed-seat areas by the number of fixed seats installed.",
       "explanation": null,
       "code_citation": "NBC Assembly Stage Standards",
       "bloom_level": "understand",
@@ -369,44 +327,38 @@
       "model_id": "ALE-DSGN-005-10-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.749937+00:00",
       "content_hash": "sha256:5af35b171968c1e651c8543d37b35710b2d884cb685c61eca7a64067a7f07011"
     },
     {
       "question_id": "351c680e-87fe-4673-a91a-20a4b3de6f68",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "A community hall designed as a permanent theater with a fixed stage, theater seating, and projection equipment should be classified as which occupancy group?",
+      "text": "What is the RA 9514 travel-distance rule for places of assembly in the checked text?",
       "options": [
         {
           "id": "a",
-          "text": "Group H (Assembly) because it has seating, which is a primary characteristic of assembly occupancies"
+          "text": "46 m without approved supervised sprinklers and 61 m where protected."
         },
         {
           "id": "b",
-          "text": "Group E (Business and Mercantile) because it is commercial, focusing on the business aspect of theater operations"
+          "text": "10 m in every assembly building."
         },
         {
           "id": "c",
-          "text": "Group H, Division 1 (Assembly with stage) (ERR-DSGN-005 inverse)"
+          "text": "No travel-distance limit."
         },
         {
           "id": "d",
-          "text": "Group A (Residential), assuming it serves as a temporary living space for performers"
+          "text": "Only 15 m for all halls regardless of sprinklers."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group H applies to general assembly venues with temporary/flexible stages; permanent theaters are Group C.",
-        "b": "Group E is mercantile/commercial office; theaters are Group C.",
-        "d": "Group A is residential; theaters are not residential.",
-        "correct": "A purpose-built theater with a permanent stage, designed theater seating, and entertainment infrastructure is Group C (education and recreation), not Group H. This distinction affects exit capacity and occupancy calculations. (NBC Occupancy Groups, ERR-DSGN-005)",
-        "takeaway": "Permanent theater with fixed stage = Group C. Multi-purpose hall with temporary stage = Group H. (ERR-DSGN-005)"
-      },
+      "rationale": "RA 9514 limits assembly travel distance to 46 m without approved supervised sprinklers and 61 m where protected.",
       "explanation": null,
       "code_citation": "NBC Occupancy Groups; ERR-DSGN-005",
       "bloom_level": "analyze",
@@ -422,44 +374,38 @@
       "model_id": "ALE-DSGN-005-10-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.747752+00:00",
       "content_hash": "sha256:b140caf377735276295a0088d6fa7397484b2279e597df418c95aca5bcc2c0c6"
     },
     {
       "question_id": "42d6cee5-55e8-4765-b04c-613c04520040",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "An accessible wheelchair seating area in a multi-purpose hall must be sized to accommodate one wheelchair user and one companion. What are the minimum dimensions per BP 344?",
+      "text": "Which assembly door hardware statement is source-safe under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "2.5m × 3.0m, which allows for additional maneuvering space beyond the minimum requirements"
+          "text": "An exit door from an assembly occupancy shall not have a latch or lock unless it is panic hardware."
         },
         {
           "id": "b",
-          "text": "3.0m × 4.0m, providing ample space for both users and additional equipment if necessary"
+          "text": "Locks are always required on assembly exits."
         },
         {
           "id": "c",
-          "text": "1.67m width × 1.52m depth (minimum per space)"
+          "text": "Panic hardware is prohibited."
         },
         {
           "id": "d",
-          "text": "4.5m × 6.0m, ensuring maximum comfort and accessibility for all users"
+          "text": "Door hardware is not addressed."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.5m × 3.0m is too small for wheelchair and companion.",
-        "b": "3.0m × 4.0m does not meet the required dimensions.",
-        "d": "4.5m × 6.0m exceeds the standard requirement.",
-        "correct": "Accessible wheelchair seating area per BP 344 = 4.0m × 5.0m per wheelchair plus companion. This accommodates wheelchair maneuverability and companion seating. (BP 344 Accessibility Standards)",
-        "takeaway": "Accessible wheelchair seating area per BP 344 = 4.0m × 5.0m."
-      },
+      "rationale": "RA 9514 requires panic hardware where an assembly exit door has a latch or lock.",
       "explanation": null,
       "code_citation": "BP 344 Accessibility Standards",
       "bloom_level": "analyze",
@@ -475,44 +421,38 @@
       "model_id": "ALE-DSGN-005-10-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.748484+00:00",
       "content_hash": "sha256:dd293ab17bb0a4a878e5b92f464454ef296ae802bfd45986b76f7e054b8190fe"
     },
     {
       "question_id": "f0e8719a-b163-4c6e-8a18-5f4050211fb9",
       "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
       "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
-      "text": "A 300-sqm multi-purpose hall is arranged with folding chairs for seated occupancy. At 1.1 sqm per seated person, what is the maximum occupant load?",
+      "text": "Which RA 9514 overcrowding statement is source-safe for multi-purpose halls?",
       "options": [
         {
           "id": "a",
-          "text": "195 persons (300 ÷ 1.5)"
+          "text": "No person shall permit overcrowding beyond the approved capacity of a place of public assembly."
         },
         {
           "id": "b",
-          "text": "272 persons (300 ÷ 1.1)"
+          "text": "Overcrowding is allowed if the event is brief."
         },
         {
           "id": "c",
-          "text": "330 persons (300 ÷ 0.9)"
+          "text": "Only the architect may stop overcrowding."
         },
         {
           "id": "d",
-          "text": "450 persons (300 ÷ 0.65)"
+          "text": "Approved capacity is irrelevant to public assembly."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "195 persons uses incorrect divisor (1.5); correct is 1.1.",
-        "c": "330 persons uses 0.9; seated chairs are 1.1 sqm/person.",
-        "d": "450 persons is for standing (0.65 sqm/person), not seated.",
-        "correct": "Occupant load = Hall area ÷ area per person = 300 sqm ÷ 1.1 sqm/person = 272.7 persons (round to 272). (NBC Assembly Occupancy Calculation)",
-        "takeaway": "Seated occupancy = Hall area ÷ 1.1 sqm/person. For 300 sqm: 272 persons."
-      },
+      "rationale": "RA 9514 prohibits overcrowding or admittance beyond approved capacity in places of public assembly.",
       "explanation": null,
       "code_citation": "NBC Assembly Occupancy Calculation",
       "bloom_level": "understand",
@@ -528,7 +468,7 @@
       "model_id": "ALE-DSGN-005-10-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:59.547655+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.745826+00:00",
       "content_hash": "sha256:1f36cdd02f2d9cfe66f0bf238aefc4d82024118d85da724c66654760dcfb8448"
     }
   ]

@@ -8,23 +8,23 @@
       "question_id": "752b4bc9-a4c2-4ade-b7df-00ec7b9bcc4c",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "A shareholder architect commits malpractice on a project. What is the corporate liability structure?",
+      "text": "A shareholder architect commits malpractice on a project. What source-backed responsibility statement applies to an architectural corporation?",
       "options": [
         {
           "id": "a",
-          "text": "Only the individual architect is liable; the corporation is protected"
+          "text": "RA 9266 makes no individual or collective responsibility possible."
         },
         {
           "id": "b",
-          "text": "Both the corporation and the architect are potentially liable"
+          "text": "Individual members are responsible for individual and collective acts as an entity and as provided by law."
         },
         {
           "id": "c",
-          "text": "Only the corporation is liable; individual architects are protected"
+          "text": "Only non-architect shareholders are responsible."
         },
         {
           "id": "d",
-          "text": "Liability is waived due to corporate structure"
+          "text": "The SEC replaces all professional responsibility."
         }
       ],
       "correct_option_id": "b",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mistakes corporate shield—the corporation as the licensed entity shares liability for professional negligence committed by its architects.",
-        "c": "Overextends protection—corporate veil does not shield the responsible architect from professional negligence claims.",
-        "d": "Falsely claims immunity—professional negligence claims are not waived; the corporate structure addresses liability allocation only.",
-        "correct": "Although the corporation has limited liability for debts, professional negligence claims attach to both the corporation and the responsible architect.",
-        "takeaway": "Corporate veil protects shareholders from business debts, but professional negligence liability attaches to both the corporation and the negligent architect."
-      },
+      "rationale": "RA 9266 Section 37 provides the individual-and-collective responsibility language for registered firms, partnerships, associations, and corporations.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "apply",
@@ -51,30 +45,30 @@
       "model_id": "ALE-PRAC-FRM-003-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.331895+00:00",
       "content_hash": "sha256:1e1cc27b183a02037d98b1ece758cc15ae70140f61860915397575131f7503e3"
     },
     {
       "question_id": "d32e8f62-9843-444d-8cd7-53b4221fb775",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "An architectural corporation has five architect shareholders owning 80 percent and one non-architect owning 20 percent. The non-architect shareholder wants to become the Chief Executive Officer. What is the status?",
+      "text": "An architectural corporation has one non-architect shareholder who wants to be chief executive officer. What RA 9266 composition rule must be checked?",
       "options": [
         {
           "id": "a",
-          "text": "The appointment is allowed; the architect ownership threshold is met, which is a common practice in mixed-ownership firms"
+          "text": "Only shareholder percentage matters; executive officers are not mentioned."
         },
         {
           "id": "b",
-          "text": "The appointment is prohibited; non-architects cannot serve as executive officers"
+          "text": "RLAs must compose at least 75 percent of executive officers as applicable."
         },
         {
           "id": "c",
-          "text": "The appointment requires SEC approval only, which is a regulatory requirement"
+          "text": "Any non-architect may hold all executive offices if SEC approves."
         },
         {
           "id": "d",
-          "text": "The non-architect can serve as CEO if architects approve, which may require a board resolution"
+          "text": "The rule applies only to sole proprietorships."
         }
       ],
       "correct_option_id": "b",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses ownership compliance with governance rules—meeting the 75% threshold does not permit non-architects in executive offices.",
-        "c": "Attributes wrong authority—SEC cannot override the professional governance requirement that officers must be architects.",
-        "d": "Mistakes approval for permission—architect approval cannot override the statutory bar on non-architect officers.",
-        "correct": "Even though architect ownership exceeds 75 percent, RA 9266 prohibits non-architects from serving as directors or executive officers regardless of ownership percentage.",
-        "takeaway": "The 75% ownership rule and the officer restriction are separate requirements—high architect ownership does not enable non-architects to be CEO."
-      },
+      "rationale": "Section 37 includes executive officers in the categories subject to the at-least-75-percent RLA composition rule.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "apply",
@@ -101,30 +89,30 @@
       "model_id": "ALE-PRAC-FRM-003-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.333351+00:00",
       "content_hash": "sha256:f53c03248f10245b1a8782353ccdb48ad74311a44063d7d88a56fe7dfea408de"
     },
     {
       "question_id": "773d5663-7ac1-4279-9a8f-945cca8e9175",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "How does malpractice insurance coverage differ between corporate and sole proprietorship architectural practices?",
+      "text": "Which malpractice-insurance statement is source-safe from RA 9266 alone?",
       "options": [
         {
           "id": "a",
-          "text": "Both structures require identical individual architect coverage, regardless of the business model"
+          "text": "RA 9266 states corporate insurance always replaces individual responsibility."
         },
         {
           "id": "b",
-          "text": "Corporations carry insurance under the corporate entity; sole proprietors carry individual coverage"
+          "text": "RA 9266 supports professional responsibility; insurance placement needs a separate insurance or contract source."
         },
         {
           "id": "c",
-          "text": "Insurance coverage is prohibited for architectural corporations, which must rely on other risk management strategies"
+          "text": "RA 9266 forbids all insurance for corporations."
         },
         {
           "id": "d",
-          "text": "Only sole proprietors require professional liability insurance, as corporations are exempt under certain conditions"
+          "text": "RA 9266 says only sole proprietors need insurance."
         }
       ],
       "correct_option_id": "b",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Ignores structural difference—corporations hold the license and insurance as entities; sole proprietors insure individually.",
-        "c": "Falsely prohibits insurance—corporations carry malpractice insurance routinely as licensed professional entities.",
-        "d": "Omits corporate insurance—both structures require professional liability coverage, but under different entities.",
-        "correct": "Corporate malpractice insurance is typically carried by the corporation as the licensed entity, while sole proprietors carry individual professional liability coverage.",
-        "takeaway": "Corporations insure under the corporate license; sole proprietors insure individually—insurance follows the liability structure."
-      },
+      "rationale": "The audited source supports registration, composition, and professional responsibility; insurance mechanics are not established in the cited excerpts.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "analyze",
@@ -151,30 +133,30 @@
       "model_id": "ALE-PRAC-FRM-003-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.328161+00:00",
       "content_hash": "sha256:c219ceba8b32ffbd6e43a9b4146e0a63d0ad76eb4015d1f28d496dc893cf9f06"
     },
     {
       "question_id": "5d143f9c-28b9-404f-a59b-e6f14f9c6364",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "Which entity holds the professional license for an architectural corporation?",
+      "text": "Which source-backed statement describes professional registration for an architectural corporation?",
       "options": [
         {
           "id": "a",
-          "text": "Each individual architect shareholding within the corporation"
+          "text": "Only SEC registration is needed to practice architecture."
         },
         {
           "id": "b",
-          "text": "The corporation itself as the licensed entity"
+          "text": "The Board may issue a certificate of registration to the corporation upon grant of registration, while individual professional qualifications still matter."
         },
         {
           "id": "c",
-          "text": "The board chairperson personally"
+          "text": "A non-architect corporation may practice architecture without RLAs."
         },
         {
           "id": "d",
-          "text": "The SEC on behalf of the corporation"
+          "text": "DTI registration is the corporate route."
         }
       ],
       "correct_option_id": "b",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses corporate licensing with personal licensing—the corporation holds one license as an entity; individual architects are not separately licensed to practice through the corporation.",
-        "c": "Attributes licensing to a person—executive officers hold administrative roles but do not personally hold the professional license; the corporation is the licensee.",
-        "d": "Mistakes SEC's role—SEC registers the corporation commercially, but BOA issues the professional architectural license.",
-        "correct": "The architectural corporation itself holds the professional license issued by the Board of Architecture, not individual shareholders or officers.",
-        "takeaway": "Corporations hold the professional license as entities—not individual shareholders—which creates the institutional liability structure."
-      },
+      "rationale": "RA 9266 Section 37 provides for Board/Commission registration of the entity, while emphasizing architecture as a professional service based on individual qualifications.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "remember",
@@ -201,30 +177,30 @@
       "model_id": "ALE-PRAC-FRM-003-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.330275+00:00",
       "content_hash": "sha256:19ffe18db3e5fe424f46b815f0537c2b5ad654b6f049cf1d5d291f57c04a22ad"
     },
     {
       "question_id": "391c4ef4-ac81-481e-9d36-6e5502d7e11f",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "An architectural corporation is found to have only 70 percent architect ownership due to share transfers. What must occur?",
+      "text": "An architectural corporation falls to 70 percent RLA composition because of share transfers. What must occur before it can be treated as compliant?",
       "options": [
         {
           "id": "a",
-          "text": "The corporation continues normally; 70 percent exceeds 51 percent, which is the minimum threshold for control"
+          "text": "Nothing; compliance is checked only at incorporation."
         },
         {
           "id": "b",
-          "text": "The corporation must immediately re-register and adjust ownership to 75 percent"
+          "text": "The corporation must restore the at-least-75-percent RLA composition and, if non-compliant, comply and register again with SEC and BOA."
         },
         {
           "id": "c",
-          "text": "The SEC automatically dissolves the corporation, as it no longer meets the required ownership criteria"
+          "text": "The 75 percent rule becomes 70 percent after registration."
         },
         {
           "id": "d",
-          "text": "Individual architects must surrender their licenses, as they are no longer compliant with ownership regulations"
+          "text": "The non-architect shareholders become RLAs automatically."
         }
       ],
       "correct_option_id": "b",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mistakes the threshold—70% is below the 75% requirement; simple majority (51%) is irrelevant to architectural corporations.",
-        "c": "Overstates consequences—non-compliance triggers re-registration, not SEC dissolution.",
-        "d": "Misattributes consequences—license issues are corporation-wide, not individual architect responsibility.",
-        "correct": "Non-compliance with the 75 percent RLA requirement triggers mandatory re-registration and ownership adjustment to restore compliance.",
-        "takeaway": "Dropping below 75% RLA ownership mandates re-registration with BOA and ownership restoration—the corporation cannot continue non-compliant."
-      },
+      "rationale": "The IRR states non-compliant existing architectural corporations must comply and register again with SEC and BOA; Section 37 sets the 75 percent floor.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "analyze",
@@ -251,30 +221,30 @@
       "model_id": "ALE-PRAC-FRM-003-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.331147+00:00",
       "content_hash": "sha256:08814ac5ca88cc902d1fb90d6a48cbc1e74cfae9bdddcd31ab5decd57273f88f"
     },
     {
       "question_id": "d4e98688-b5e4-4c4c-9861-82118e717e40",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "What happens when share transfer would reduce architect ownership below 75 percent?",
+      "text": "What happens when a proposed share transfer would reduce RLA composition below 75 percent?",
       "options": [
         {
           "id": "a",
-          "text": "The sale is automatically permitted; the corporation re-registers with the SEC, assuming all other regulatory requirements are met"
+          "text": "The transfer is harmless under RA 9266."
         },
         {
           "id": "b",
-          "text": "The sale cannot proceed; architect ownership must be maintained"
+          "text": "The corporation cannot rely on that structure as RA 9266-compliant unless the 75 percent RLA composition is maintained or restored."
         },
         {
           "id": "c",
-          "text": "Only the SEC can approve such transfer, provided that the corporation meets specific criteria set forth in the corporate governance code"
+          "text": "The corporation becomes a sole proprietorship."
         },
         {
           "id": "d",
-          "text": "The corporation must liquidate, unless it can demonstrate compliance with alternative ownership structures allowed under specific conditions"
+          "text": "BOA registration is no longer needed."
         }
       ],
       "correct_option_id": "b",
@@ -282,14 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mistakes re-registration for permission—re-registration occurs after compliance is restored, not before the violation happens.",
-        "b": "Incorrectly assumes re-registration enables the transfer—re-registration is required AFTER ownership is restored to 75%, not to permit the violating transfer.",
-        "c": "Attributes false power to SEC—SEC cannot override the 75% RLA requirement; only the corporation's bylaws prevent sales that violate it.",
-        "d": "Overreaches consequences—ownership imbalance triggers re-registration requirements, not automatic liquidation.",
-        "correct": "Share restrictions prevent architect ownership from dropping below 75 percent; bylaws typically include right-of-first-refusal or buyback provisions to maintain control.",
-        "takeaway": "Share transfer bylaws must protect the 75% RLA threshold—the corporation cannot sell architect shares to non-architects if it drops below 75%."
-      },
+      "rationale": "Section 37 requires at least 75 percent RLA composition in the applicable categories.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "understand",
@@ -302,30 +265,30 @@
       "model_id": "ALE-PRAC-FRM-003-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.334823+00:00",
       "content_hash": "sha256:9e586eeb24979263751c340b58ecca800ebb1a5a8f1b25991c400b3d0a936c3c"
     },
     {
       "question_id": "0574d350-1e16-4231-a6ac-a3d2abaef628",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "What regulatory bodies must approve an architectural corporation?",
+      "text": "What regulatory registrations are source-backed for an architectural corporation?",
       "options": [
         {
           "id": "a",
-          "text": "SEC only, which simplifies the approval process but may not cover all necessary regulatory requirements"
+          "text": "DTI only"
         },
         {
           "id": "b",
-          "text": "SEC, BOA, and PRC"
+          "text": "SEC registration and Board/PRC registration for architectural practice"
         },
         {
           "id": "c",
-          "text": "BOA and PRC only, which may lead to incomplete compliance without SEC involvement"
+          "text": "Only an LGU business permit"
         },
         {
           "id": "d",
-          "text": "DTI and PRC, which are not the primary bodies for architectural corporations"
+          "text": "No registration if the corporation has a design portfolio"
         }
       ],
       "correct_option_id": "b",
@@ -333,13 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Stops at corporate registration—SEC incorporation alone does not provide professional licensure for architectural practice.",
-        "c": "Omits SEC registration—corporations require SEC incorporation before professional registration with BOA and PRC.",
-        "d": "Confuses sole proprietorship with corporation—DTI registers sole proprietors; SEC registers corporations.",
-        "correct": "Architectural corporations must be registered with the SEC for incorporation, then with the Board of Architecture and PRC for professional practice licensure.",
-        "takeaway": "Corporations need SEC (corporate), BOA (architectural), and PRC (professional licensing) registration in sequence."
-      },
+      "rationale": "RA 9266 Section 37 requires SEC and Board registration; the UAP SPP frames group architectural practice through SEC/PRC registration.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "understand",
@@ -352,30 +309,30 @@
       "model_id": "ALE-PRAC-FRM-003-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.335574+00:00",
       "content_hash": "sha256:6dd24b4f494c180faf873771c79bd73158a5ef45deabf8623b4d6d7eb09893c3"
     },
     {
       "question_id": "523f4cda-70b4-485f-be17-bf65265e98b7",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "Can non-architects serve as directors or executive officers of an architectural corporation?",
+      "text": "Can non-RLAs control the directors or executive officers of an architectural corporation?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, if they own less than 50 percent, provided that the majority of the board are licensed architects"
+          "text": "Yes, if they provide capital."
         },
         {
           "id": "b",
-          "text": "No, non-architects cannot serve as directors or officers"
+          "text": "No; RLAs must compose at least 75 percent of directors and executive officers, as applicable."
         },
         {
           "id": "c",
-          "text": "Yes, non-architects may be officers if architects are directors, but they cannot influence architectural decisions"
+          "text": "Yes, because Section 37 omits directors and officers."
         },
         {
           "id": "d",
-          "text": "Yes, with approval from the PRC, and only if they meet specific criteria set by the board"
+          "text": "Yes, if DTI registers the name."
         }
       ],
       "correct_option_id": "b",
@@ -383,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses ownership rights with governance rights—non-architect shareholders cannot be officers even if owning less than 50%.",
-        "c": "Splits positions incorrectly—both directors and officers must be architects; non-architects cannot hold executive roles.",
-        "d": "Imposes false requirement—PRC approval cannot override the statutory prohibition; non-architects are barred by law from executive offices.",
-        "correct": "Non-architects may own up to 25 percent but cannot serve as directors or executive officers; these positions must be held by registered and licensed architects.",
-        "takeaway": "Only RLAs can be directors and officers—non-architects cannot hold governing positions regardless of their ownership stake."
-      },
+      "rationale": "Section 37 expressly includes directors and executive officers in the 75 percent RLA composition rule.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "understand",
@@ -402,30 +353,30 @@
       "model_id": "ALE-PRAC-FRM-003-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.332623+00:00",
       "content_hash": "sha256:53bca427af0fb4d7dee1850c783929136c5edec3158ebceec54558a4dffb548e"
     },
     {
       "question_id": "3229b4c1-bdd9-4a5c-bc70-9730665a9be2",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "How does corporate practice differ from sole proprietorship regarding institutional continuity?",
+      "text": "How should institutional continuity of an architectural corporation be treated in a source-safe RA 9266 answer?",
       "options": [
         {
           "id": "a",
-          "text": "Corporations dissolve when any shareholder leaves, which is a misunderstanding of corporate structure and continuity"
+          "text": "RA 9266 alone supplies every corporate succession rule."
         },
         {
           "id": "b",
-          "text": "Corporations continue despite individual architect departures"
+          "text": "RA 9266 recognizes a registered entity, but corporate continuity mechanics need separate corporate-law or agreement support."
         },
         {
           "id": "c",
-          "text": "Both have identical continuity characteristics, which is incorrect as they differ significantly in terms of legal and operational continuity"
+          "text": "Continuity allows non-architects to ignore the 75 percent rule."
         },
         {
           "id": "d",
-          "text": "Sole proprietorships offer better continuity than corporations, which is contrary to the typical understanding of business structures"
+          "text": "Continuity eliminates individual professional qualifications."
         }
       ],
       "correct_option_id": "b",
@@ -433,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Reverses corporate law—corporations continue despite shareholder departures; shareholders do not control corporate survival.",
-        "c": "Falsely equates structures—sole proprietorships terminate with owner death; corporations are perpetual entities.",
-        "d": "Inverts the advantage—sole proprietorships collapse with owner incapacity; corporations have institutional permanence.",
-        "correct": "The corporation continues independent of individual shareholder involvement, providing institutional stability that sole proprietorships cannot match.",
-        "takeaway": "Corporations survive shareholder departures; the corporation is a perpetual entity distinct from any individual architect."
-      },
+      "rationale": "RA 9266 supports entity registration and the RLA composition rule; detailed corporate continuity is outside the audited excerpts.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "apply",
@@ -452,30 +397,30 @@
       "model_id": "ALE-PRAC-FRM-003-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.329251+00:00",
       "content_hash": "sha256:cf5165e5d04f66a5c3e2de4b6b9e628f47ecebc021e9e58f9b542a121dc33cc0"
     },
     {
       "question_id": "e9a7dcd5-5300-4d8d-8966-dd2a8ebe1725",
       "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
       "topic_id": "384409f7-aa12-4152-9c72-6f793b0545c4",
-      "text": "What is the minimum percentage of registered and licensed architects that must own an architectural corporation?",
+      "text": "What is the minimum RLA composition required by RA 9266 Section 37 for architectural corporations?",
       "options": [
         {
           "id": "a",
-          "text": "51 percent"
+          "text": "25 percent"
         },
         {
           "id": "b",
-          "text": "60 percent"
+          "text": "50 percent"
         },
         {
           "id": "c",
-          "text": "75 percent"
+          "text": "At least 75 percent"
         },
         {
           "id": "d",
-          "text": "100 percent"
+          "text": "No minimum once SEC registration exists"
         }
       ],
       "correct_option_id": "c",
@@ -483,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Mistakes the 51% simple majority rule for general corporations with the 75% RLA requirement specific to architectural firms.",
-        "b": "Underestimates the actual requirement—60% falls short of the 75% threshold needed for professional control in architecture.",
-        "d": "Overstates the requirement—the law permits up to 25% non-architect participation while maintaining professional control.",
-        "correct": "RA 9266 IRR Section 37(b) requires that registered and licensed architects compose at least seventy-five percent (75%) of all owners, shareholders, members, incorporators, directors, and executive officers.",
-        "takeaway": "Corporations require 75% RLA ownership per RA 9266 Section 37(b)—higher than simple majority to ensure professional control."
-      },
+      "rationale": "Section 37 requires registered and licensed architects to compose at least 75 percent of the applicable categories.",
       "explanation": null,
       "code_citation": "RA 9266",
       "bloom_level": "remember",
@@ -502,7 +441,7 @@
       "model_id": "ALE-PRAC-FRM-003-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.334106+00:00",
       "content_hash": "sha256:6787132269fd14b683dc8a47058240438b2ae532b3820ee8eda82625dfe783f8"
     }
   ]

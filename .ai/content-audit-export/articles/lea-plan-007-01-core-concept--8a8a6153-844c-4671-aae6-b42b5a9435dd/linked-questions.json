@@ -8,38 +8,31 @@
       "question_id": "317073ad-b389-4523-bafd-a9bf553e4ba0",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "Which of the following best describes the primary function of the National Housing Authority (NHA)?",
+      "text": "Which source-safe role best matches NHA in EO 90?",
       "options": [
         {
           "id": "a",
-          "text": "Regulates and licenses subdivision developers, ensuring compliance with national standards"
+          "text": "Direct shelter production for the checked housing-assistance scope"
         },
         {
           "id": "b",
-          "text": "Builds and develops government housing projects for low-income families"
+          "text": "Mortgage financing for every association under CMP"
         },
         {
           "id": "c",
-          "text": "Finances housing loans for individual end-buyers, providing financial support for home ownership"
+          "text": "Issuing professional licenses"
         },
         {
           "id": "d",
-          "text": "Coordinates inter-agency housing policy to streamline efforts across different government bodies"
+          "text": "Approving every local zoning ordinance"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "That is DHSUD's role (formerly HLURB)—regulation and licensing of developers under PD 957.",
-        "b": "NHA is the government housing PRODUCER—it builds resettlement projects, medium-rise housing, core housing, and slum upgrading programs. Production (building units) is its defining function.",
-        "c": "That is Pag-IBIG/HDMF, SSS, and GSIS—they finance loans. NHA does not issue loans; it constructs units.",
-        "d": "That was historically HUDCC's role (now absorbed into DHSUD).",
-        "correct": "NHA is the government housing PRODUCER—it builds resettlement projects, medium-rise housing, core housing, and slum upgrading programs. Production (building units) is its defining function.",
-        "takeaway": "NHA = producer (builds). Finance agencies = Pag-IBIG, SSS, GSIS."
-      },
+      "rationale": "EO 90 assigns NHA the direct shelter production role.",
       "explanation": null,
       "code_citation": "RA 10811, RA 7279",
       "bloom_level": "understand",
@@ -52,45 +45,38 @@
       "model_id": "ALE-PLAN-007-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:34.537533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.214835+00:00",
       "content_hash": "sha256:0902de57c3d65b2c2429bb1245b1415c6b66e2b8d0a865757ac057a23a2ec6dd"
     },
     {
       "question_id": "00130a06-ee25-47fc-a1a5-50b4da92e666",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "A young engineer working for a private corporation needs a housing loan to buy a condominium unit in Metro Manila. Which agency provides this type of individual end-buyer financing?",
+      "text": "Which role best matches SHFC in RA 11201 IRR?",
       "options": [
         {
           "id": "a",
-          "text": "NHA—through medium-rise housing programs under the National Resettlement Program"
+          "text": "Lead agency for social housing programs and community-driven shelter finance solutions"
         },
         {
           "id": "b",
-          "text": "SHFC—through the Community Mortgage Program for organized informal settler groups"
+          "text": "The sole issuer of building permits"
         },
         {
           "id": "c",
-          "text": "Pag-IBIG (HDMF)—through open-market or low-cost housing loans"
+          "text": "A fire-code inspection office"
         },
         {
           "id": "d",
-          "text": "DHSUD—through approved developer projects under Balanced Housing compliance"
+          "text": "A private furniture lender"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "NHA produces government-built housing, not finance for market purchases.",
-        "b": "SHFC/CMP is for communities, not individuals.",
-        "c": "Pag-IBIG/HDMF provides housing loans to individual employees (private and government sectors). Open-market housing loans cover purchases up to ₱6 million, appropriate for a condo purchase.",
-        "d": "DHSUD regulates; it does not finance purchases.",
-        "correct": "Pag-IBIG/HDMF provides housing loans to individual employees (private and government sectors). Open-market housing loans cover purchases up to ₱6 million, appropriate for a condo purchase.",
-        "takeaway": "Individual employee housing loans: Pag-IBIG (employed), SSS (private sector), GSIS (government)."
-      },
+      "rationale": "RA 11201 IRR identifies SHFC as lead agency for social housing programs.",
       "explanation": null,
       "code_citation": "Pag-IBIG Fund official guidelines",
       "bloom_level": "analyze",
@@ -107,45 +93,38 @@
       "model_id": "ALE-PLAN-007-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.212834+00:00",
       "content_hash": "sha256:b96e60a71d97dc09cdeeebdc38318df9d3c10466582f0fc130a3b7829b41fe37"
     },
     {
       "question_id": "38f0e388-8f66-425f-8667-5eecca8b54af",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "If NHA constructs 500 units of medium-rise socialized housing and allocates them to informal settlers from a danger area, and separately, SHFC finances a community mortgage allowing 200 households to purchase their occupied land, which statement most accurately characterizes these two interventions?",
+      "text": "What does CMP do in the checked RA 11201 IRR scope?",
       "options": [
         {
           "id": "a",
-          "text": "Both are identical government programs serving the same population through the same mechanism, which is incorrect."
+          "text": "It finances legally organized associations of underprivileged and homeless citizens to purchase and develop land under community ownership"
         },
         {
           "id": "b",
-          "text": "NHA intervention is relocation with new housing supply; SHFC intervention enables in-situ tenure formalization—different mechanisms addressing different community preferences"
+          "text": "It licenses architects"
         },
         {
           "id": "c",
-          "text": "SHFC's program is superior because it requires no government funding, which is a misunderstanding of the program's funding structure."
+          "text": "It sells condominium decorations"
         },
         {
           "id": "d",
-          "text": "NHA's intervention is problematic because it does not allow communities to remain in place, which oversimplifies the issue."
+          "text": "It replaces every local shelter plan"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "They are entirely different—different agencies, different mechanisms, different outcomes.",
-        "b": "The two interventions serve fundamentally different purposes: NHA provides new housing in resettlement (for communities that must move due to danger); SHFC enables communities to formalize tenure and stay in place. Choice between them depends on context and community preference.",
-        "c": "SHFC programs require government financing through loan portfolios; they are not zero-cost.",
-        "d": "NHA programs are appropriate for danger area relocations where in-situ options are unsafe.",
-        "correct": "The two interventions serve fundamentally different purposes: NHA provides new housing in resettlement (for communities that must move due to danger); SHFC enables communities to formalize tenure and stay in place. Choice between them depends on context and community preference.",
-        "takeaway": "NHA = resettlement production; SHFC = in-situ tenure formalization. Complementary, not redundant."
-      },
+      "rationale": "The RA 11201 IRR CMP definition supports association-based land acquisition and development.",
       "explanation": null,
       "code_citation": "RA 10811, RA 7279, SHFC/CMP design, housing policy theory",
       "bloom_level": "analyze",
@@ -162,45 +141,38 @@
       "model_id": "ALE-PLAN-007-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.210985+00:00",
       "content_hash": "sha256:6e81c3cbf8363dc65df73d483f89ad4aec7740f3447cc836bf10ac4980c7a1f9"
     },
     {
       "question_id": "50c84b9b-1933-4cad-b5a9-3ec620cc1494",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "What distinguishes the Community Mortgage Program (CMP) from other government housing programs?",
+      "text": "What does RA 7279 say about NHA in socialized housing context?",
       "options": [
         {
           "id": "a",
-          "text": "It is administered by Pag-IBIG and available to individual salaried workers, providing a unique financing option for home ownership"
+          "text": "NHA is the primary government agency in charge of providing housing for underprivileged and homeless citizens"
         },
         {
           "id": "b",
-          "text": "It allows communities to collectively mortgage land they occupy, enabling in-situ upgrading without relocation"
+          "text": "NHA is only a private bank"
         },
         {
           "id": "c",
-          "text": "It is a direct grant program requiring no repayment from beneficiaries, offering financial relief to low-income families"
+          "text": "NHA has no role in housing"
         },
         {
           "id": "d",
-          "text": "It is funded by the national government and administered by NHA, focusing on large-scale housing projects"
+          "text": "NHA only approves fire exits"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Pag-IBIG administers individual housing loans, not CMP. CMP is SHFC's community program.",
-        "b": "The CMP, administered by SHFC, is designed for communities—not individuals. It finances collective land purchases through a single mortgage secured by the community organization, preserving existing settlements.",
-        "c": "CMP is a mortgage program (repayment required), not a grant.",
-        "d": "CMP is SHFC's program. NHA builds housing directly; it does not administer the CMP.",
-        "correct": "The CMP, administered by SHFC, is designed for communities—not individuals. It finances collective land purchases through a single mortgage secured by the community organization, preserving existing settlements.",
-        "takeaway": "CMP is community-based collective financing (SHFC); preserves communities in-situ."
-      },
+      "rationale": "RA 7279 identifies NHA as the primary agency for that housing role.",
       "explanation": null,
       "code_citation": "SHFC official documentation, RA 7279",
       "bloom_level": "understand",
@@ -213,45 +185,38 @@
       "model_id": "ALE-PLAN-007-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.214074+00:00",
       "content_hash": "sha256:5b2f6a91a5b6e6219ee8d419b974221bb5c7e82a73bd3f4a87e213a1713cb032"
     },
     {
       "question_id": "64b0a20b-1620-465a-9b1c-4bba9d990e24",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "Which of the following correctly distinguishes between NHA and SHFC in terms of their roles in government housing?",
+      "text": "When should a question steer toward SHFC/CMP instead of NHA?",
       "options": [
         {
           "id": "a",
-          "text": "NHA finances housing loans; SHFC builds housing units, focusing on urban areas with high-density requirements"
+          "text": "When the stem asks about mortgage financing for an organized beneficiary association acquiring land"
         },
         {
           "id": "b",
-          "text": "NHA regulates developers; SHFC oversees zoning compliance, ensuring adherence to local government unit ordinances"
+          "text": "When it asks for direct shelter production"
         },
         {
           "id": "c",
-          "text": "NHA builds and develops housing; SHFC finances community-based housing programs"
+          "text": "When it asks for building height classification"
         },
         {
           "id": "d",
-          "text": "Both are regulatory agencies with overlapping authority, often collaborating on joint housing initiatives"
+          "text": "When it asks for fire-alarm audibility"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This reverses their roles. NHA produces; SHFC finances.",
-        "b": "DHSUD regulates developers. Neither NHA nor SHFC is regulatory.",
-        "c": "NHA's role is production (building); SHFC's role is financing (enabling communities to buy land or access housing through CMP).",
-        "d": "Neither is regulatory. NHA is a developer/builder; SHFC is a finance institution.",
-        "correct": "NHA's role is production (building); SHFC's role is financing (enabling communities to buy land or access housing through CMP).",
-        "takeaway": "Producer (NHA) vs. Financer (SHFC)—complementary roles, never confused."
-      },
+      "rationale": "The source-supported CMP role belongs to SHFC in the RA 11201 IRR scope.",
       "explanation": null,
       "code_citation": "RA 10811, SHFC official documentation",
       "bloom_level": "understand",
@@ -267,45 +232,38 @@
       "model_id": "ALE-PLAN-007-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.207083+00:00",
       "content_hash": "sha256:fd1289205cc1d5e395186cdcdebd0e9e0782bb9681c5f4bd2f5111f1ba069224"
     },
     {
       "question_id": "99a84b41-92bf-4f72-9f59-6cfa88027b2a",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "An informal settler community in a flood-prone area wants to purchase the land they occupy to prevent relocation. Which agency's program would be most appropriate to facilitate this?",
+      "text": "When should a question steer toward NHA instead of SHFC?",
       "options": [
         {
           "id": "a",
-          "text": "NHA—through direct government funding and unit construction"
+          "text": "When the stem emphasizes direct shelter production or the primary government housing agency role"
         },
         {
           "id": "b",
-          "text": "SHFC—through the Community Mortgage Program"
+          "text": "When it asks about community mortgage finance for associations"
         },
         {
           "id": "c",
-          "text": "Pag-IBIG—through individual socialized housing loans"
+          "text": "When it asks about private-sector SSS member loans"
         },
         {
           "id": "d",
-          "text": "DHSUD—through relocation site designation"
+          "text": "When it asks about CLUP hazard overlays only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "NHA builds housing but does not finance land purchases for existing communities.",
-        "b": "SHFC's CMP finances community land purchases through collective mortgages, allowing the community to buy the land and avoid relocation while upgrading in place.",
-        "c": "Pag-IBIG is for individual workers' housing loans, not community land purchases.",
-        "d": "DHSUD regulates housing and CLUPs; it does not provide financing or relocation programs.",
-        "correct": "SHFC's CMP finances community land purchases through collective mortgages, allowing the community to buy the land and avoid relocation while upgrading in place.",
-        "takeaway": "For communities to buy their own land (in-situ): SHFC/CMP is the enabling mechanism."
-      },
+      "rationale": "EO 90 and RA 7279 tie NHA to direct shelter production and the primary housing provision role.",
       "explanation": null,
       "code_citation": "SHFC/CMP program design, RA 7279",
       "bloom_level": "apply",
@@ -322,30 +280,30 @@
       "model_id": "ALE-PLAN-007-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.215653+00:00",
       "content_hash": "sha256:ce810f7d5737956fb6fe12f451ab6c61d275da0066b78000986d8a81c07f193d"
     },
     {
       "question_id": "823c185a-63c4-4ac6-a9c0-f10af5ff3b6f",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "Comparing the scope of beneficiaries: NHA primarily serves low-income populations through production, while Pag-IBIG primarily serves employed individuals through financing. Why is this distinction important for Philippine housing policy?",
+      "text": "What is the historical-source caution for CMP?",
       "options": [
         {
           "id": "a",
-          "text": "It ensures that both low-income informal settlers and formal employees have access to housing through different mechanisms"
+          "text": "Older RA 7279 language and later RA 11201 IRR language must be read by source context before choosing an agency"
         },
         {
           "id": "b",
-          "text": "It eliminates the need for private housing developers, which is a misconception as private developers play a crucial role"
+          "text": "Every source uses the same agency wording forever"
         },
         {
           "id": "c",
-          "text": "It removes the responsibility of government to serve market-rate buyers, focusing resources on those who need assistance"
+          "text": "Historical context never matters"
         },
         {
           "id": "d",
-          "text": "It concentrates all housing responsibility in a single agency, which is not the case as multiple agencies are involved"
+          "text": "Search snippets override local raw PDFs"
         }
       ],
       "correct_option_id": "a",
@@ -353,14 +311,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The division of roles ensures comprehensive coverage: NHA serves those unable to access market financing (informal settlers, very low-income families); Pag-IBIG serves the employed sector. Together, they address different segments of housing need.",
-        "b": "Private developers remain important for open-market housing—PD 957 regulates them.",
-        "c": "Market-rate buyers are served by private developers and Pag-IBIG's open-market loan tier.",
-        "d": "The system is deliberately distributed across multiple agencies for different functions.",
-        "correct": "The division of roles ensures comprehensive coverage: NHA serves those unable to access market financing (informal settlers, very low-income families); Pag-IBIG serves the employed sector. Together, they address different segments of housing need.",
-        "takeaway": "NHA + Pag-IBIG + SHFC = layered system serving different population segments."
-      },
+      "rationale": "Batch 086 keeps agency claims tied to the checked source date and text.",
       "explanation": null,
       "code_citation": "RA 7279, RA 10811, Pag-IBIG Fund design",
       "bloom_level": "analyze",
@@ -377,45 +328,38 @@
       "model_id": "ALE-PLAN-007-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.212016+00:00",
       "content_hash": "sha256:4d8271bf87773b9198c47dbd8fb48b87692d819bca37822be59cb2bc3ee78c97"
     },
     {
       "question_id": "a2d3bdd1-c176-4caf-98bf-3139e81fc46e",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "Why is the Community Mortgage Program (CMP) considered one of the most successful housing interventions for informal settlers compared to forced relocation?",
+      "text": "Which statement avoids an agency-role mix-up?",
       "options": [
         {
           "id": "a",
-          "text": "It transfers all government responsibility to the private sector, reducing public expenditure on housing"
+          "text": "NHA is not the same answer as SHFC when the tested function is production versus community mortgage finance"
         },
         {
           "id": "b",
-          "text": "It preserves existing community networks and social capital while enabling formal land tenure through collective mortgages"
+          "text": "NHA and SHFC are always interchangeable"
         },
         {
           "id": "c",
-          "text": "It eliminates the need for government investment in housing, allowing funds to be redirected to other public services"
+          "text": "Every shelter question is answered by HDMF"
         },
         {
           "id": "d",
-          "text": "It converts informal settlers into formal employees with government contracts, providing stable income sources"
+          "text": "All agencies are private developers"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "CMP is government-financed through SHFC, though the community bears the mortgage obligation.",
-        "b": "CMP's success lies in enabling communities to formalize tenure while remaining in place—preserving livelihoods, kinship networks, and social stability. This aligns with research by John Turner and others on the value of community-based housing solutions.",
-        "c": "CMP requires government investment through SHFC financing.",
-        "d": "CMP does not change employment status; it enables land formalization.",
-        "correct": "CMP's success lies in enabling communities to formalize tenure while remaining in place—preserving livelihoods, kinship networks, and social stability. This aligns with research by John Turner and others on the value of community-based housing solutions.",
-        "takeaway": "CMP success = in-situ tenure security + community preservation + social stability."
-      },
+      "rationale": "The article separates direct shelter production from social housing finance.",
       "explanation": null,
       "code_citation": "SHFC/CMP documentation, RA 7279, John Turner housing theory",
       "bloom_level": "analyze",
@@ -432,45 +376,38 @@
       "model_id": "ALE-PLAN-007-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.209256+00:00",
       "content_hash": "sha256:f59e32fb4383da8a62685e8eece6b4f0e5e31341ef20cccaa1a7b02b6fd74e9f"
     },
     {
       "question_id": "a542ae5f-d3e5-4e1b-bcaa-07ab45561265",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "A low-income family receives an NHA resettlement unit with title in their name. Under which type of NHA program would they most likely qualify for such direct housing production?",
+      "text": "In a land-acquisition case led by a legally organized informal-settler association, which answer best fits the checked source scope?",
       "options": [
         {
           "id": "a",
-          "text": "Open-market housing financing, which typically requires higher income levels and credit scores"
+          "text": "SHFC/CMP"
         },
         {
           "id": "b",
-          "text": "Community Mortgage Program, designed for collective land acquisition but not direct housing production"
+          "text": "NHA as the only possible mortgage finance channel"
         },
         {
           "id": "c",
-          "text": "Government resettlement projects for informal settlers"
+          "text": "A certificate of occupancy"
         },
         {
           "id": "d",
-          "text": "Commercial condominium development, which is not typically associated with low-income housing initiatives"
+          "text": "A purely decorative design award"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Open-market financing is Pag-IBIG's role, not NHA's.",
-        "b": "CMP is SHFC's program for land purchase, not NHA's.",
-        "c": "NHA's primary mission is direct housing production for low-income families, particularly resettlement of informal settlers from danger areas or development sites. Receiving a completed unit with title is characteristic of NHA resettlement programs.",
-        "d": "NHA does not develop commercial projects.",
-        "correct": "NHA's primary mission is direct housing production for low-income families, particularly resettlement of informal settlers from danger areas or development sites. Receiving a completed unit with title is characteristic of NHA resettlement programs.",
-        "takeaway": "NHA resettlement = direct government production, not loan-based."
-      },
+      "rationale": "RA 11201 IRR supports SHFC/CMP for association-based land purchase and development.",
       "explanation": "Open-market financing is Pag-IBIG's role, not NHA's. CMP is SHFC's program for land purchase, not NHA's. NHA's primary mission is direct housing production for low-income families, particularly resettlement of informal settlers from danger areas or development sites. Receiving a completed unit with title is characteristic of NHA resettlement programs. NHA does not develop commercial projects. NHA's primary mission is direct housing production for low-income families, particularly resettlement of informal settlers from danger areas or development sites. Receiving a completed unit with title is characteristic of NHA resettlement programs. NHA resettlement = direct government production, not loan-based.",
       "code_citation": "RA 10811, RA 7279",
       "bloom_level": "apply",
@@ -487,45 +424,38 @@
       "model_id": "ALE-PLAN-007-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-05-06T15:06:24.67505+00:00",
+      "updated_at": "2026-07-20T01:13:26.210139+00:00",
       "content_hash": "sha256:a3d311fa9055afeafa11532ecdee23083075f90e72cdd1dc6af522889fc545d1"
     },
     {
       "question_id": "348cda39-4655-485d-b2ea-f1dd5ab2e734",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
       "topic_id": "c4f6fb40-873f-46d1-9157-0d2d37858824",
-      "text": "A barangay is planning an in-situ upgrading project for an informal settler community on municipally-owned land. Which combination of agencies would be essential partners in this effort?",
+      "text": "What is the LEA trap in NHA/SHFC questions?",
       "options": [
         {
           "id": "a",
-          "text": "NHA (to build) and DHSUD (to approve zoning), ensuring compliance with local development plans"
+          "text": "Ignoring the action verb: produce shelter, finance community mortgage, or coordinate policy"
         },
         {
           "id": "b",
-          "text": "SHFC/CMP (to finance land or housing improvement) and the local government (to provide the land)"
+          "text": "Reading the agency function"
         },
         {
           "id": "c",
-          "text": "Pag-IBIG (to provide loans) and NHA (to build all units), focusing on affordable housing solutions"
+          "text": "Checking the local raw PDF locator"
         },
         {
           "id": "d",
-          "text": "DHSUD (to regulate) and GSIS (to finance government employee housing), which may not directly address informal settler needs"
+          "text": "Separating beneficiary association from individual member finance"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While DHSUD approval may be needed, NHA is unnecessary if the community finances their own upgrade via CMP.",
-        "b": "In-situ upgrading requires financing for community land acquisition or housing improvement (SHFC/CMP) and local government support to make land available. This is the classic SHFC/CMP deployment model.",
-        "c": "Pag-IBIG serves individual employees, not communities. NHA is not required for community-financed upgrades.",
-        "d": "GSIS is for government employees only. DHSUD's role is ancillary here (approval/regulation).",
-        "correct": "In-situ upgrading requires financing for community land acquisition or housing improvement (SHFC/CMP) and local government support to make land available. This is the classic SHFC/CMP deployment model.",
-        "takeaway": "In-situ upgrading = SHFC/CMP + local government land partnership."
-      },
+      "rationale": "Agency questions turn on the function being tested, not name familiarity alone.",
       "explanation": null,
       "code_citation": "SHFC/CMP program, RA 7279",
       "bloom_level": "apply",
@@ -542,7 +472,7 @@
       "model_id": "ALE-PLAN-007-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:26.208303+00:00",
       "content_hash": "sha256:b4b3f5e9f9cee27d1d7add8a0cdc23671c7572013d1d91448810a4f03a89c2ba"
     }
   ]

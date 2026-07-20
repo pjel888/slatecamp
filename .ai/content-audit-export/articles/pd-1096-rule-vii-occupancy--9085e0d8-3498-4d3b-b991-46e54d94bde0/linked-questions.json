@@ -8,31 +8,31 @@
       "question_id": "2d23b0ca-243c-453e-a477-293dd7f9a0db",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "If the BFP takes NO ACTION within the required period under Section 309.4, what may the Building Official do?",
+      "text": "Under PD 1096 Rule VII, what is the safest first step when classifying a building?",
       "options": [
         {
           "id": "a",
-          "text": "Deny the CO application and require the owner to re-apply after obtaining the FSIC"
+          "text": "Identify the proposed use or character of occupancy and match it to the listed Group A to J classification."
         },
         {
           "id": "b",
-          "text": "Issue the CO conditionally without waiting for the FSIC"
+          "text": "Start with the preferred structural material."
         },
         {
           "id": "c",
-          "text": "Refer the matter to the Secretary of DPWH for resolution"
+          "text": "Choose the group with the lowest permit fee."
         },
         {
           "id": "d",
-          "text": "Cancel the BFP endorsement and process the CO without fire safety review"
+          "text": "Classify all buildings as commercial unless residential units are present."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "This is the highest-yield FSIC detail on the ALE. Option A (deny) would allow BFP inaction to indefinitely block occupancy — which the conditional CO provision explicitly prevents. Option B captures the correct mechanism. Option D misreads the provision as eliminating fire safety review entirely, when it only defers it.",
+      "rationale": "Rule VII classifies buildings by proposed use or character of occupancy before downstream requirements are applied.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,38 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:15.005539+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.405471+00:00",
       "content_hash": "sha256:d249effeb7d2f6f5305589aea1da47db1651d73e14ce2c7bccb99382fa8028cc"
     },
     {
       "question_id": "c3f1c7e1-5e01-4806-a4cf-653050ee361f",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "In PD 1096, how many Occupancy Groups (A through J) are there, and how are they subdivided?",
+      "text": "Which statement correctly distinguishes Group A from Group B in the checked PD 1096 source?",
       "options": [
         {
           "id": "a",
-          "text": "8 groups (A–H), subdivided into 20 Divisions"
+          "text": "Group A includes listed residential dwellings and A-2 non-leasing occupants not exceeding ten persons; Group B covers similar residential, hotel, and apartment uses accommodating more than ten persons."
         },
         {
           "id": "b",
-          "text": "10 groups (A–J), subdivided into 25 Divisions"
+          "text": "Group A is only hotels while Group B is only single-family houses."
         },
         {
           "id": "c",
-          "text": "9 groups (A–I), subdivided into 30 Divisions"
+          "text": "Group A and Group B are separated only by building height."
         },
         {
           "id": "d",
-          "text": "10 groups (A–J), subdivided into 15 Divisions"
+          "text": "Group B applies only when the structure is industrial."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 10-group system with 25 divisions allows the code to match structural, fire, and egress requirements to the specific hazard level and occupant vulnerability of each building type.",
+      "rationale": "The checked source places the ten-person line between A-2 non-leasing residential uses and Group B residential, hotel, and apartment occupancies.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -89,30 +89,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.093315+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.400503+00:00",
       "content_hash": "sha256:062ef7eca2a54f02a3b159b81a9d0e266e5d580a055775c49c142b0b22d016e2"
     },
     {
       "question_id": "5c8e3dfd-6847-4667-871d-252f7d96fd43",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096, what are the divisions of Group H (Assembly Other Than Group I)?",
+      "text": "For mixed occupancy under PD 1096 Rule VII, what is the default rule?",
       "options": [
         {
           "id": "a",
-          "text": "H-1: with stage (<1,000); H-2: without stage (≥300); H-3: without stage (<300)"
+          "text": "Apply the most restrictive requirement among the occupancies present unless a checked exception applies."
         },
         {
           "id": "b",
-          "text": "H-1: with stage (≥1,000); H-2: without stage (≥300); H-3: without stage (<300)"
+          "text": "Apply only the requirement for the largest floor area."
         },
         {
           "id": "c",
-          "text": "H-1: without stage (≥500); H-2: with stage (any number); H-3: outdoor venues"
+          "text": "Ignore minor occupancies even when they exceed ten percent."
         },
         {
           "id": "d",
-          "text": "H-1: theaters only; H-2: restaurants; H-3: all other assembly"
+          "text": "Average the requirements of all occupancies."
         }
       ],
       "correct_option_id": "a",
@@ -120,7 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The three criteria (stage presence, occupant load threshold of 300, and the ≥1,000 threshold for Group I) create the classification hierarchy. Stage + <1,000 → H-1. No stage + ≥300 → H-2. No stage + <300 → H-3.",
+      "rationale": "PD 1096 states that a mixed-occupancy building is subject to the most restrictive requirement unless the one-storey or minor-accessory exception applies.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -133,162 +133,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.093315+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.417834+00:00",
       "content_hash": "sha256:9995be7d2a3eac45fe50f47b103c4e354e321a8befd35f4a812b1a1bb58cdc20"
     },
     {
       "question_id": "11ae27bc-e3ee-43b9-a47e-6e24cdc4eb68",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "In PD 1096, what is the direction of the Construction Type sclea from Type I to Type V?",
+      "text": "Which minor accessory-use condition is source-safe under PD 1096 Rule VII?",
       "options": [
         {
           "id": "a",
-          "text": "Type I = most fire-resistive; Type V = least fire-resistive, applicable to high-rise buildings"
+          "text": "The accessory use must not occupy more than ten percent of the area of any floor and not more than ten percent of the basic area permitted in the occupancy requirement."
         },
         {
           "id": "b",
-          "text": "Type I = least fire-resistive (wood construction); Type V = most fire-resistive (fire-resistive construction)"
+          "text": "The accessory use may occupy up to half of any floor."
         },
         {
           "id": "c",
-          "text": "Type I = masonry construction; Type V = steel construction, with specific fireproofing requirements"
+          "text": "The accessory use automatically controls the whole building."
         },
         {
           "id": "d",
-          "text": "Type I and Type V are equivalent — they differ only in height permitted, not in fire resistance"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "This reversal from the US IBC convention is one of the most critical exam traps. Students who import IBC mnemonics into PD 1096 answers will consistently fail questions about construction types.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:52:18.093315+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:55d1116e951eb6e3f9bab2a2d589ef3300ee4a429f50575311488867c59e6ed6"
-    },
-    {
-      "question_id": "e196ff66-7219-4fd2-8aa2-2dc4a46b5a4c",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Which of the following Occupancy Groups in PD 1096 does NOT exist?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group D (Institutional)"
-        },
-        {
-          "id": "b",
-          "text": "Group F (Industrial)"
-        },
-        {
-          "id": "c",
-          "text": "Group M (Mercantile)"
-        },
-        {
-          "id": "d",
-          "text": "Group J (Accessory)"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "This is the US IBC vs PD 1096 trap: Group M is a US IBC classification. PD 1096 uses Group E for mercantile uses. Students familiar with US codes often answer this incorrectly.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:52:18.093315+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:04a66b01d1ec56e9297523d263040cdde336c4e55fe8a2c6274efdaffd88ddbf"
-    },
-    {
-      "question_id": "f9b74e8c-c73e-4abb-8072-aa42f550db6c",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the PD 1096 occupancy classification for an aircraft hangar used for repairs?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group E, Div. 3"
-        },
-        {
-          "id": "b",
-          "text": "Group G, Div. 5"
-        },
-        {
-          "id": "c",
-          "text": "Group F, Div. 2"
-        },
-        {
-          "id": "d",
-          "text": "Group H, Div. 4"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group G covers storage and hazardous uses. The repair activity elevates this from mere storage (G Div. 1-3) or open parking (E Div. 3) to G Div. 5 for aircraft repair facilities.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:52:18.093315+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:97cf588325dfcc4ea4de17126929ced44afbf56d48d881cd39c15da6ad679428"
-    },
-    {
-      "question_id": "8515a370-1e87-4ea7-9021-019964163530",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the PD 1096 occupancy classification for a gasoline filling station?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group E, Div. 1"
-        },
-        {
-          "id": "b",
-          "text": "Group F, Div. 1"
-        },
-        {
-          "id": "c",
-          "text": "Group G, Div. 1"
-        },
-        {
-          "id": "d",
-          "text": "Group H, Div. 2"
+          "text": "The accessory use is ignored only if it is on the roof."
         }
       ],
       "correct_option_id": "a",
@@ -296,7 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Group F = industrial (ice plants, cold storage, factories using non-highly flammable materials). Group G = storage and hazardous (flammable materials, spray painting). Gas stations are business/mercantile under Group E despite handling flammable products — because the sales/storage is incidental to the mercantile use and the code specifically places them in E-1.",
+      "rationale": "The checked mixed-occupancy exception uses the ten percent threshold for the area of any floor and the basic area permitted.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -309,38 +177,170 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:18.093315+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.414584+00:00",
+      "content_hash": "sha256:55d1116e951eb6e3f9bab2a2d589ef3300ee4a429f50575311488867c59e6ed6"
+    },
+    {
+      "question_id": "e196ff66-7219-4fd2-8aa2-2dc4a46b5a4c",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which assembly classification statement is source-safe from PD 1096 Rule VII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group I is an assembly building with a stage and an occupant load of one thousand or more."
+        },
+        {
+          "id": "b",
+          "text": "Group I is every assembly space over one hundred occupants."
+        },
+        {
+          "id": "c",
+          "text": "Group H is only outdoor stadiums."
+        },
+        {
+          "id": "d",
+          "text": "Stage presence is irrelevant to Group I."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked source identifies Group I as any assembly building with a stage and an occupant load of one thousand or more.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-07-20T01:13:23.432140+00:00",
+      "content_hash": "sha256:04a66b01d1ec56e9297523d263040cdde336c4e55fe8a2c6274efdaffd88ddbf"
+    },
+    {
+      "question_id": "f9b74e8c-c73e-4abb-8072-aa42f550db6c",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, what is the safest first step when classifying a building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify the proposed use or character of occupancy and match it to the listed Group A to J classification."
+        },
+        {
+          "id": "b",
+          "text": "Start with the preferred structural material."
+        },
+        {
+          "id": "c",
+          "text": "Choose the group with the lowest permit fee."
+        },
+        {
+          "id": "d",
+          "text": "Classify all buildings as commercial unless residential units are present."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule VII classifies buildings by proposed use or character of occupancy before downstream requirements are applied.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-07-20T01:13:23.421248+00:00",
+      "content_hash": "sha256:97cf588325dfcc4ea4de17126929ced44afbf56d48d881cd39c15da6ad679428"
+    },
+    {
+      "question_id": "8515a370-1e87-4ea7-9021-019964163530",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which statement correctly distinguishes Group A from Group B in the checked PD 1096 source?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group A includes listed residential dwellings and A-2 non-leasing occupants not exceeding ten persons; Group B covers similar residential, hotel, and apartment uses accommodating more than ten persons."
+        },
+        {
+          "id": "b",
+          "text": "Group A is only hotels while Group B is only single-family houses."
+        },
+        {
+          "id": "c",
+          "text": "Group A and Group B are separated only by building height."
+        },
+        {
+          "id": "d",
+          "text": "Group B applies only when the structure is industrial."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked source places the ten-person line between A-2 non-leasing residential uses and Group B residential, hotel, and apartment occupancies.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-07-20T01:13:23.422829+00:00",
       "content_hash": "sha256:3f69afe850a03491e7554eb025b78bacd952129d4d0fa75c5c64f0067de3866c"
     },
     {
       "question_id": "d0b883d2-98e0-4e69-b65f-c806d3c5961e",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An architect proposes a stage with a fly gallery in a building classified as Group H, Division 1. Per PD 1096, Rule XII and Rule VII, which occupancy classification applies to motion picture projection rooms within this theater?",
+      "text": "For mixed occupancy under PD 1096 Rule VII, what is the default rule?",
       "options": [
         {
-          "id": "sp-018-a",
-          "text": "They are classified as Group H, Division 1, the same as the theater, with no additional requirements"
+          "id": "a",
+          "text": "Apply the most restrictive requirement among the occupancies present unless a checked exception applies."
         },
         {
-          "id": "sp-018-b",
-          "text": "They are classified as ancillary to Group H, Division 1, with their own 1-hour fire-resistive construction requirement"
+          "id": "b",
+          "text": "Apply only the requirement for the largest floor area."
         },
         {
-          "id": "sp-018-c",
-          "text": "They are classified as Group B (Business) ancillary spaces, requiring separate egress"
+          "id": "c",
+          "text": "Ignore minor occupancies even when they exceed ten percent."
         },
         {
-          "id": "sp-018-d",
-          "text": "They are exempt from occupancy classification since they are mechanical spaces, provided they meet ventilation standards"
+          "id": "d",
+          "text": "Average the requirements of all occupancies."
         }
       ],
-      "correct_option_id": "sp-018-b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Group H, Division 1 covers theaters with stage, fly gallery, and fixed seating — the most regulated assembly occupancy. The projection room is a high-hazard ancillary space (combustible film stock, electric arc equipment) but its specific requirements are contained in Section 1214 rather than the general occupancy classification rules.",
+      "rationale": "PD 1096 states that a mixed-occupancy building is subject to the most restrictive requirement unless the one-storey or minor-accessory exception applies.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -353,38 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:19.019496+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.427382+00:00",
       "content_hash": "sha256:b9adaba1bbd5fd4213a06a6b5e6e063ddc6a182e5bbbb9ee2d779d592f874fe0"
     },
     {
       "question_id": "da6b73c7-41f8-409b-be6b-4439d4e640b4",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per PD 1096, Rule XII, Section 1204, what is the maximum aggregate width of all openings in a 3-hour occupancy separation wall, expressed as a percentage of the wall's length?",
+      "text": "Which minor accessory-use condition is source-safe under PD 1096 Rule VII?",
       "options": [
         {
-          "id": "vo-008-a",
-          "text": "10% of wall length"
+          "id": "a",
+          "text": "The accessory use must not occupy more than ten percent of the area of any floor and not more than ten percent of the basic area permitted in the occupancy requirement."
         },
         {
-          "id": "vo-008-b",
-          "text": "20% of wall length"
+          "id": "b",
+          "text": "The accessory use may occupy up to half of any floor."
         },
         {
-          "id": "vo-008-c",
-          "text": "25% of wall length"
+          "id": "c",
+          "text": "The accessory use automatically controls the whole building."
         },
         {
-          "id": "vo-008-d",
-          "text": "33% of wall length"
+          "id": "d",
+          "text": "The accessory use is ignored only if it is on the roof."
         }
       ],
-      "correct_option_id": "vo-008-c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 25% limit allows meaningful penetrations (doors, windows, service openings) while ensuring the wall retains sufficient length of intact fire barrier. For a 20.00 m wall, this permits up to 5.00 m of aggregate opening width — which could be, for example, two 2.50 m door openings, provided each individual opening also stays within the 10.00 m² single-opening cap.",
+      "rationale": "The checked mixed-occupancy exception uses the ten percent threshold for the area of any floor and the basic area permitted.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -397,38 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:52:19.225527+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.413144+00:00",
       "content_hash": "sha256:144f4c21c07ee210bae535cfd511988b289cf93c6c0bf326dfb7fc10bd28503a"
     },
     {
       "question_id": "c5769661-fee6-422d-a69e-0ec776082851",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "According to Table XII.1 of PD 1096, what is the unit area per occupant for an auditorium, and for a warehouse?",
+      "text": "Which assembly classification statement is source-safe from PD 1096 Rule VII?",
       "options": [
         {
-          "id": "A",
-          "text": "Auditorium: 0.65 sq.m/person; Warehouse: 28.00 sq.m/person"
+          "id": "a",
+          "text": "Group I is an assembly building with a stage and an occupant load of one thousand or more."
         },
         {
-          "id": "B",
-          "text": "Auditorium: 1.40 sq.m/person; Warehouse: 28.00 sq.m/person"
+          "id": "b",
+          "text": "Group I is every assembly space over one hundred occupants."
         },
         {
-          "id": "C",
-          "text": "Auditorium: 0.65 sq.m/person; Warehouse: 18.60 sq.m/person"
+          "id": "c",
+          "text": "Group H is only outdoor stadiums."
         },
         {
-          "id": "D",
-          "text": "Auditorium: 1.80 sq.m/person; Warehouse: 46.50 sq.m/person"
+          "id": "d",
+          "text": "Stage presence is irrelevant to Group I."
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Table XII.1 specifies 0.65 sq.m/person for auditoriums (Assembly Group C) and 28.00 sq.m/person for warehouses (Industrial/Storage Group G, I). The small unit area for auditoriums reflects high-density occupancy, while the large unit area for warehouses reflects low-density storage use.",
+      "rationale": "The checked source identifies Group I as any assembly building with a stage and an occupant load of one thousand or more.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -441,38 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:10.025015+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.433566+00:00",
       "content_hash": "sha256:4db6819c5b7275b41400a12c7f13ba4e2635148ccba1eccf569ea96a3487bb32"
     },
     {
       "question_id": "08ec0be4-70ff-42d9-88c1-97d0cdfadcc7",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per PD 1096, Rule IX, Sec. 905, which buildings are required to have rat-proofing?",
+      "text": "Under PD 1096 Rule VII, what is the safest first step when classifying a building?",
       "options": [
         {
-          "id": "A",
-          "text": "Only buildings above 3 storeys, as they are more susceptible to rodent infestation due to height"
+          "id": "a",
+          "text": "Identify the proposed use or character of occupancy and match it to the listed Group A to J classification."
         },
         {
-          "id": "B",
-          "text": "All buildings with hollow and/or wood construction"
+          "id": "b",
+          "text": "Start with the preferred structural material."
         },
         {
-          "id": "C",
-          "text": "Only food-related establishments, which are at higher risk of contamination"
+          "id": "c",
+          "text": "Choose the group with the lowest permit fee."
         },
         {
-          "id": "D",
-          "text": "Only buildings in rural areas, where rodent populations are typically higher"
+          "id": "d",
+          "text": "Classify all buildings as commercial unless residential units are present."
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Per Rule IX, Sec. 905, all buildings with hollow and/or wood construction shall be provided with rat-proofing. This includes concrete hollow block (CHB) buildings where open joints and cavities can become rat highways. The trigger is construction type, not occupancy classification or building size.",
+      "rationale": "Rule VII classifies buildings by proposed use or character of occupancy before downstream requirements are applied.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -485,30 +485,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:12.033224+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.402316+00:00",
       "content_hash": "sha256:87a5e48e35628fdae78bf9165691b0d909912b367cbd605d7dd7e67d3d43268c"
     },
     {
       "question_id": "e3f24215-dd9e-4312-988d-5245f2ef056c",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Chapter 7, Sec. 701, how many Occupancy Groups exist and into how many Divisions are they subdivided?",
+      "text": "Which statement correctly distinguishes Group A from Group B in the checked PD 1096 source?",
       "options": [
         {
           "id": "a",
-          "text": "10 groups (A through J), subdivided into 25 Divisions"
+          "text": "Group A includes listed residential dwellings and A-2 non-leasing occupants not exceeding ten persons; Group B covers similar residential, hotel, and apartment uses accommodating more than ten persons."
         },
         {
           "id": "b",
-          "text": "8 groups (A through H), subdivided into 20 Divisions"
+          "text": "Group A is only hotels while Group B is only single-family houses."
         },
         {
           "id": "c",
-          "text": "9 groups (A through I), subdivided into 30 Divisions"
+          "text": "Group A and Group B are separated only by building height."
         },
         {
           "id": "d",
-          "text": "10 groups (A through J), subdivided into 15 Divisions"
+          "text": "Group B applies only when the structure is industrial."
         }
       ],
       "correct_option_id": "a",
@@ -516,7 +516,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "PD 1096 Sec. 701 establishes 10 Occupancy Groups (A through J) subdivided into 25 Divisions. Each group reflects a distinct profile of fire risk, occupant vulnerability, and evacuation need. The 10-group system allows the Code to match structural, fire, and egress requirements to the specific hazard level of each building type.",
+      "rationale": "The checked source places the ten-person line between A-2 non-leasing residential uses and Group B residential, hotel, and apartment occupancies.",
       "explanation": "The groups range from Group A (Residential Dwellings) through Group J (Accessory). Knowing the total count (10 groups, 25 divisions) is a baseline fact directly tested on the LEA.",
       "code_citation": "PD 1096, Chap. 7, Sec. 701; Rule VII, Sec. 701 (IRR)",
       "bloom_level": "remember",
@@ -529,646 +529,30 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:03.968005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.428845+00:00",
       "content_hash": "sha256:1d880e2b6a755991d2a48b11636669c1ffc9a86ebce70f2c1b150a34a8ad4e0e"
     },
     {
       "question_id": "b5081fbc-8df9-41a8-92fb-08b0b2f11827",
       "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A convent houses 12 nuns on a non-leasing basis. Under PD 1096 Rule VII, Sec. 701, what is the correct occupancy classification?",
+      "text": "For mixed occupancy under PD 1096 Rule VII, what is the default rule?",
       "options": [
         {
           "id": "a",
-          "text": "Group A, Div. 1 — single-family and community residential uses"
+          "text": "Apply the most restrictive requirement among the occupancies present unless a checked exception applies."
         },
         {
           "id": "b",
-          "text": "Group A, Div. 2 — residential for non-leasing occupants not exceeding 10 persons"
+          "text": "Apply only the requirement for the largest floor area."
         },
         {
           "id": "c",
-          "text": "Group B — residentials, hotels, and apartments for more than 10 persons"
+          "text": "Ignore minor occupancies even when they exceed ten percent."
         },
         {
           "id": "d",
-          "text": "Group D, Div. 3 — nursing homes and similar institutional occupancies"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group A Div. 2 covers convents and monasteries for non-leasing occupants not exceeding 10 persons. Once such a building accommodates more than 10 persons it becomes Group B (Residentials, Hotels and Apartments). With 12 nuns the 10-person threshold is exceeded, so the correct classification is Group B.",
-      "explanation": "The 10-person cutoff is one of the most frequently tested distinctions on the LEA. Group A Div. 2 → Group B is triggered the moment the non-leasing residential population exceeds 10, regardless of building type.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "apply",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.55,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:03.968005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:952959a546d4cfe97fcafce639a6043a7115a52f2854e815652dc8e4a0b63e78"
-    },
-    {
-      "question_id": "3dc4aaf0-bbea-48fc-8467-b733a35d7321",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Sec. 703, what is the general rule for a building containing two or more occupancies?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The dominant occupancy by floor area governs the entire building classification"
-        },
-        {
-          "id": "b",
-          "text": "The building shall comply with requirements for the most restrictive occupancy involved"
-        },
-        {
-          "id": "c",
-          "text": "Each portion shall always be designed under its own occupancy requirements"
-        },
-        {
-          "id": "d",
-          "text": "Mixed-occupancy buildings are prohibited and must be separated into individual structures"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 703 general rule: a building with two or more occupancies shall comply with the requirements for the most restrictive occupancy involved, unless otherwise provided by the Code. This conservative approach ensures the most hazardous use governs the safety provisions for the entire structure.",
-      "explanation": "Two exceptions exist under Sec. 703: (a) one-storey buildings may treat each portion under its own occupancy; (b) accessory uses occupying not more than 10% of any storey may allow the major occupancy to govern.",
-      "code_citation": "PD 1096, Sec. 703; Rule VII, Sec. 703 (IRR)",
-      "bloom_level": "understand",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.4,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:03.968005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2ce04d64b3721b37cc4ef4c008fa9bc29e5f0725378e6f08d0962101d18d92be"
-    },
-    {
-      "question_id": "3e435f1d-61bc-4ca2-ba56-afa4a2a00ae3",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An assembly building has a raised stage and an occupant load of 1,200 persons. Under PD 1096 Rule VII, Sec. 701, what is the correct occupancy group?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group H, Div. 1 — assembly with a stage, occupant load less than 1,000"
-        },
-        {
-          "id": "b",
-          "text": "Group H, Div. 2 — assembly without a stage, occupant load 300 or more"
-        },
-        {
-          "id": "c",
-          "text": "Group I — assembly with a stage AND occupant load of 1,000 or more"
-        },
-        {
-          "id": "d",
-          "text": "Group H, Div. 4 — stadia, reviewing stands, and amusement park structures"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group I requires both conditions simultaneously: a stage AND an occupant load of 1,000 or more. This building has both — a raised stage and 1,200 occupants — satisfying both thresholds and qualifying as Group I. A building with a stage but fewer than 1,000 occupants falls into Group H Div. 1, not Group I.",
-      "explanation": "The dual condition (stage AND occupant load ≥ 1,000) is the most common Group I classification trap. Missing either condition drops the classification to the appropriate Group H division.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "apply",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.65,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:03.968005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:470c88a99d61dcea0b81b68ac99976048cc14c411f5a728a1963df813f1e6d01"
-    },
-    {
-      "question_id": "2b63414b-dbc5-4b5e-ac08-b6adac08b942",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Sec. 703, an accessory chapel occupies 8% of the floor area of a one-storey shopping mall. Which provision governs?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The entire mall must comply with the most restrictive occupancy — religious assembly requirements, regardless of the chapel's size"
-        },
-        {
-          "id": "b",
-          "text": "The major occupancy (mall / Group E) may govern because the chapel occupies 8%, which is within the 10% accessory use threshold"
-        },
-        {
-          "id": "c",
-          "text": "The chapel must be separated and independently classified regardless of its area, ensuring compliance with all relevant codes"
-        },
-        {
-          "id": "d",
-          "text": "Mixed occupancy is prohibited in one-storey commercial buildings under Sec. 703, making the current setup non-compliant"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 703 Exception (b): where accessory uses occupy not more than 10% of the floor area of any storey and remain within the basic allowable area, the major occupancy may govern the classification. At 8% the chapel qualifies as a minor accessory use, so Group E (the mall's primary occupancy) governs the entire building without requiring the mall to comply with the more restrictive religious assembly standards.",
-      "explanation": "The 10% accessory-use exception prevents over-regulation of buildings that contain small subordinate uses. A small clinic, chapel, or daycare inside a mall need not reclassify the entire mall to institutional or religious standards if they occupy 10% or less of any storey.",
-      "code_citation": "PD 1096, Sec. 703; Rule VII, Sec. 703 (IRR)",
-      "bloom_level": "analyze",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.8,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:03.968005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:246be15dbc75b8fd7043bba79a75e773456c85409b6ee1cf350ae157bb0b88a0"
-    },
-    {
-      "question_id": "edcf1c56-5dbb-420e-837c-d33f524ea40d",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An open-air stadium without a stage accommodates 8,000 spectators. Under PD 1096 Rule VII, Sec. 701, what is the correct occupancy group?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group I — assembly with occupant load of 1,000 or more"
-        },
-        {
-          "id": "b",
-          "text": "Group H, Div. 1 — assembly with a stage and occupant load less than 1,000"
-        },
-        {
-          "id": "c",
-          "text": "Group H, Div. 4 — stadia, reviewing stands, and amusement park structures"
-        },
-        {
-          "id": "d",
-          "text": "Group H, Div. 2 — assembly without a stage, occupant load 300 or more"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group H Div. 4 covers stadia, reviewing stands, and amusement park structures not classified in Group I or H Div. 1–3. Group I requires a stage — this stadium has no stage, so it cannot be Group I regardless of its 8,000-person occupant load. Group H Div. 4 is the correct catch-all for large outdoor assembly structures without stages.",
-      "explanation": "The absence of a stage disqualifies any assembly facility from Group I, no matter how large the crowd. Group H Div. 4 is specifically written for sports venues and outdoor spectator facilities.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "apply",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.75,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:03.968005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8672cf534e439f5cc9fcffdea49a693a682d6a29b254b46edebe74c67faca174"
-    },
-    {
-      "question_id": "f5fd4ca0-e918-4b42-8af4-d8deef21814a",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the PD 1096 occupancy classification for a gasoline filling station, and why does it not fall under Group G (Storage and Hazardous)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group G, Div. 1 — because filling stations store hazardous flammable materials"
-        },
-        {
-          "id": "b",
-          "text": "Group F — because petroleum products are incombustible under the Code's definition"
-        },
-        {
-          "id": "c",
-          "text": "Group E, Div. 1 — the Code specifically places filling stations in Business and Mercantile"
-        },
-        {
-          "id": "d",
-          "text": "Group H, Div. 4 — because filling stations serve large numbers of the public"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "PD 1096 Rule VII, Sec. 701 specifically lists gasoline filling and service stations under Group E (Business and Mercantile), Div. 1. Group E Div. 1 also covers storage garages and boat-storage structures where only limited maintenance is done without open flame or highly flammable liquids. The Code places filling stations in the mercantile/business category, distinguishing them from Group G which covers bulk flammable storage and industrial hazardous operations.",
-      "explanation": "This is a counterintuitive placement that frequently trips candidates. Even though filling stations handle flammable fuel, the Code classifies the retail sleas and service function — not the incidental fuel storage — as the principal use, placing them in Group E Div. 1.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "understand",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:03.968005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e3131b73c6f9d4ed02f391b7d7b3940a94891481adeb54e3dd73631565f86c7e"
-    },
-    {
-      "question_id": "d48005bf-2e21-4793-ac20-4b960135f57d",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the PD 1096 occupancy classification for Group D, Div. 2, and what is the minimum number of persons that triggers it?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Mental hospitals, jails, and reformatories where liberty is restrained — more than 5 persons"
-        },
-        {
-          "id": "b",
-          "text": "Nursing homes for ambulatory patients and homes for kindergarten-age children — more than 5 persons"
-        },
-        {
-          "id": "c",
-          "text": "Hospitals and facilities with non-ambulatory patients under full medical care — more than 5 persons"
-        },
-        {
-          "id": "d",
-          "text": "Nurseries for full-time care of children under kindergarten age — more than 6 persons"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group D Div. 2 covers nurseries for full-time care of children under kindergarten age, and hospitals and similar facilities with non-ambulatory patients, each accommodating more than 5 persons. The defining characteristics are: occupants under full care, non-ambulatory status, and a count of more than 5. Div. 1 covers liberty-restrained facilities (jails, mental hospitals). Div. 3 covers ambulatory nursing homes for older children (kindergarten age or over) with more than 5 occupants.",
-      "explanation": "The three D-division distinctions hinge on: (D1) liberty restrained; (D2) non-ambulatory or under-kindergarten care, more than 5 persons; (D3) ambulatory patients or kindergarten-age-and-over children, more than 5 occupants. Non-ambulatory status is the D2 trigger.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "evaluate",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.85,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:03.968005+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b8063a3c4a4f5d8445c78e55ae57bb3994cd5ac6931c850593cd586cd2aa27be"
-    },
-    {
-      "question_id": "843ef8ad-6c5a-456d-a593-de2486b040f0",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the PD 1096 occupancy classification for a gasoline filling station, and why does it not fall under Group G (Storage and Hazardous)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group G, Div. 1 — because filling stations store hazardous flammable materials"
-        },
-        {
-          "id": "b",
-          "text": "Group F — because petroleum products are incombustible under the Code's definition"
-        },
-        {
-          "id": "c",
-          "text": "Group E, Div. 1 — the Code specifically places filling stations in Business and Mercantile"
-        },
-        {
-          "id": "d",
-          "text": "Group H, Div. 4 — because filling stations serve large numbers of the public"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "PD 1096 Rule VII, Sec. 701 specifically lists gasoline filling and service stations under Group E (Business and Mercantile), Div. 1. Group E Div. 1 also covers storage garages and boat-storage structures where only limited maintenance is done without open flame or highly flammable liquids. The Code places filling stations in the mercantile/business category, distinguishing them from Group G which covers bulk flammable storage and industrial hazardous operations.",
-      "explanation": "This is a counterintuitive placement that frequently trips candidates. Even though filling stations handle flammable fuel, the Code classifies the retail sleas and service function — not the incidental fuel storage — as the principal use, placing them in Group E Div. 1.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "understand",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:53.757508+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6e03d07c4ca82acd0d6ec3f10d9b3af9b0ca610176b1d24c8a107f1c11eeacad"
-    },
-    {
-      "question_id": "1eca56c1-8f9a-4be5-9d28-0d156a50542e",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A convent houses 12 nuns on a non-leasing basis. Under PD 1096 Rule VII, Sec. 701, what is the correct occupancy classification?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group A, Div. 1 — single-family and community residential uses"
-        },
-        {
-          "id": "b",
-          "text": "Group A, Div. 2 — residential for non-leasing occupants not exceeding 10 persons"
-        },
-        {
-          "id": "c",
-          "text": "Group B — residentials, hotels, and apartments for more than 10 persons"
-        },
-        {
-          "id": "d",
-          "text": "Group D, Div. 3 — nursing homes and similar institutional occupancies"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group A Div. 2 covers convents and monasteries for non-leasing occupants not exceeding 10 persons. Once such a building accommodates more than 10 persons it becomes Group B (Residentials, Hotels and Apartments). With 12 nuns the 10-person threshold is exceeded, so the correct classification is Group B.",
-      "explanation": "The 10-person cutoff is one of the most frequently tested distinctions on the LEA. Group A Div. 2 → Group B is triggered the moment the non-leasing residential population exceeds 10, regardless of building type.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "apply",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.55,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:53.757508+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a740f35e8ed32543f345ac94bf6a4ccf88ea540b7abed0381665f76be8b38c49"
-    },
-    {
-      "question_id": "a97bb663-3f1a-4614-8870-9b32b2d306d5",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An open-air stadium without a stage accommodates 8,000 spectators. Under PD 1096 Rule VII, Sec. 701, what is the correct occupancy group?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group I — assembly with occupant load of 1,000 or more"
-        },
-        {
-          "id": "b",
-          "text": "Group H, Div. 1 — assembly with a stage and occupant load less than 1,000"
-        },
-        {
-          "id": "c",
-          "text": "Group H, Div. 4 — stadia, reviewing stands, and amusement park structures"
-        },
-        {
-          "id": "d",
-          "text": "Group H, Div. 2 — assembly without a stage, occupant load 300 or more"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group H Div. 4 covers stadia, reviewing stands, and amusement park structures not classified in Group I or H Div. 1–3. Group I requires a stage — this stadium has no stage, so it cannot be Group I regardless of its 8,000-person occupant load. Group H Div. 4 is the correct catch-all for large outdoor assembly structures without stages.",
-      "explanation": "The absence of a stage disqualifies any assembly facility from Group I, no matter how large the crowd. Group H Div. 4 is specifically written for sports venues and outdoor spectator facilities.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "apply",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.75,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:53.757508+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:39336149805bd853ae18d11a0b2c029c0572eecf080a4883a3c9e4611dab23e9"
-    },
-    {
-      "question_id": "0656d149-9421-465e-a3e4-e7636d4bdac0",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the PD 1096 occupancy classification for Group D, Div. 2, and what is the minimum number of persons that triggers it?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Mental hospitals, jails, and reformatories where liberty is restrained — more than 5 persons"
-        },
-        {
-          "id": "b",
-          "text": "Nursing homes for ambulatory patients and homes for kindergarten-age children — more than 5 persons"
-        },
-        {
-          "id": "c",
-          "text": "Hospitals and facilities with non-ambulatory patients under full medical care — more than 5 persons"
-        },
-        {
-          "id": "d",
-          "text": "Nurseries for full-time care of children under kindergarten age — more than 6 persons"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group D Div. 2 covers nurseries for full-time care of children under kindergarten age, and hospitals and similar facilities with non-ambulatory patients, each accommodating more than 5 persons. The defining characteristics are: occupants under full care, non-ambulatory status, and a count of more than 5. Div. 1 covers liberty-restrained facilities (jails, mental hospitals). Div. 3 covers ambulatory nursing homes for older children (kindergarten age or over) with more than 5 occupants.",
-      "explanation": "The three D-division distinctions hinge on: (D1) liberty restrained; (D2) non-ambulatory or under-kindergarten care, more than 5 persons; (D3) ambulatory patients or kindergarten-age-and-over children, more than 5 occupants. Non-ambulatory status is the D2 trigger.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "evaluate",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.85,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:53.757508+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:76189eec779abe3d1b4de3472d5b37716886ac0291ae11b5b4cace9faed6901a"
-    },
-    {
-      "question_id": "fc0eccdf-7d67-439c-9f8a-1bfa3ea5b8cf",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "An assembly building has a raised stage and an occupant load of 1,200 persons. Under PD 1096 Rule VII, Sec. 701, what is the correct occupancy group?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group H, Div. 1 — assembly with a stage, occupant load less than 1,000"
-        },
-        {
-          "id": "b",
-          "text": "Group H, Div. 2 — assembly without a stage, occupant load 300 or more"
-        },
-        {
-          "id": "c",
-          "text": "Group I — assembly with a stage AND occupant load of 1,000 or more"
-        },
-        {
-          "id": "d",
-          "text": "Group H, Div. 4 — stadia, reviewing stands, and amusement park structures"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Group I requires both conditions simultaneously: a stage AND an occupant load of 1,000 or more. This building has both — a raised stage and 1,200 occupants — satisfying both thresholds and qualifying as Group I. A building with a stage but fewer than 1,000 occupants falls into Group H Div. 1, not Group I.",
-      "explanation": "The dual condition (stage AND occupant load ≥ 1,000) is the most common Group I classification trap. Missing either condition drops the classification to the appropriate Group H division.",
-      "code_citation": "PD 1096, Rule VII, Sec. 701",
-      "bloom_level": "apply",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.65,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:53.757508+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fd5f7689d631945554c6fedc96021adbd4df08c9d5b24481c99e1a130a3dcbd1"
-    },
-    {
-      "question_id": "b439fbbf-06a6-4536-b06e-1a9b42e57a3d",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Sec. 703, what is the general rule for a building containing two or more occupancies?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The dominant occupancy by floor area governs the entire building classification"
-        },
-        {
-          "id": "b",
-          "text": "The building shall comply with requirements for the most restrictive occupancy involved"
-        },
-        {
-          "id": "c",
-          "text": "Each portion shall always be designed under its own occupancy requirements"
-        },
-        {
-          "id": "d",
-          "text": "Mixed-occupancy buildings are prohibited and must be separated into individual structures"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 703 general rule: a building with two or more occupancies shall comply with the requirements for the most restrictive occupancy involved, unless otherwise provided by the Code. This conservative approach ensures the most hazardous use governs the safety provisions for the entire structure.",
-      "explanation": "Two exceptions exist under Sec. 703: (a) one-storey buildings may treat each portion under its own occupancy; (b) accessory uses occupying not more than 10% of any storey may allow the major occupancy to govern.",
-      "code_citation": "PD 1096, Sec. 703; Rule VII, Sec. 703 (IRR)",
-      "bloom_level": "understand",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.4,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:53.757508+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:57b372fb6a2c062c1ff1230cfa87fd92e79d686ed6eb06ef9ca255b92c97f1d6"
-    },
-    {
-      "question_id": "fb989980-e4e1-4f33-91fe-20fb863afc1b",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Sec. 703, an accessory chapel occupies 8% of the floor area of a one-storey shopping mall. Which provision governs?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The entire mall must comply with the most restrictive occupancy — religious assembly requirements, which may include additional fire safety measures."
-        },
-        {
-          "id": "b",
-          "text": "The major occupancy (mall / Group E) may govern because the chapel occupies 8%, which is within the 10% accessory use threshold"
-        },
-        {
-          "id": "c",
-          "text": "The chapel must be separated and independently classified regardless of its area, ensuring compliance with all applicable codes for religious structures."
-        },
-        {
-          "id": "d",
-          "text": "Mixed occupancy is prohibited in one-storey commercial buildings under Sec. 703, necessitating a redesign to separate uses."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 703 Exception (b): where accessory uses occupy not more than 10% of the floor area of any storey and remain within the basic allowable area, the major occupancy may govern the classification. At 8% the chapel qualifies as a minor accessory use, so Group E (the mall's primary occupancy) governs the entire building without requiring the mall to comply with the more restrictive religious assembly standards.",
-      "explanation": "The 10% accessory-use exception prevents over-regulation of buildings that contain small subordinate uses. A small clinic, chapel, or daycare inside a mall need not reclassify the entire mall to institutional or religious standards if they occupy 10% or less of any storey.",
-      "code_citation": "PD 1096, Sec. 703; Rule VII, Sec. 703 (IRR)",
-      "bloom_level": "analyze",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.8,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:53.757508+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cd4b60a07987b150f5d9edaf614463b3e33f28b74308f5d61d37ba519067b90a"
-    },
-    {
-      "question_id": "9b19dfbe-98f5-47a8-8472-85c83a7ef4d8",
-      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Chapter 7, Sec. 701, how many Occupancy Groups exist and into how many Divisions are they subdivided?",
-      "options": [
-        {
-          "id": "a",
-          "text": "10 groups (A through J), subdivided into 25 Divisions"
-        },
-        {
-          "id": "b",
-          "text": "8 groups (A through H), subdivided into 20 Divisions"
-        },
-        {
-          "id": "c",
-          "text": "9 groups (A through I), subdivided into 30 Divisions"
-        },
-        {
-          "id": "d",
-          "text": "10 groups (A through J), subdivided into 15 Divisions"
+          "text": "Average the requirements of all occupancies."
         }
       ],
       "correct_option_id": "a",
@@ -1176,7 +560,623 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "PD 1096 Sec. 701 establishes 10 Occupancy Groups (A through J) subdivided into 25 Divisions. Each group reflects a distinct profile of fire risk, occupant vulnerability, and evacuation need. The 10-group system allows the Code to match structural, fire, and egress requirements to the specific hazard level of each building type.",
+      "rationale": "PD 1096 states that a mixed-occupancy building is subject to the most restrictive requirement unless the one-storey or minor-accessory exception applies.",
+      "explanation": "The 10-person cutoff is one of the most frequently tested distinctions on the LEA. Group A Div. 2 → Group B is triggered the moment the non-leasing residential population exceeds 10, regardless of building type.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.968005+00:00",
+      "updated_at": "2026-07-20T01:13:23.419583+00:00",
+      "content_hash": "sha256:952959a546d4cfe97fcafce639a6043a7115a52f2854e815652dc8e4a0b63e78"
+    },
+    {
+      "question_id": "3dc4aaf0-bbea-48fc-8467-b733a35d7321",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which minor accessory-use condition is source-safe under PD 1096 Rule VII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The accessory use must not occupy more than ten percent of the area of any floor and not more than ten percent of the basic area permitted in the occupancy requirement."
+        },
+        {
+          "id": "b",
+          "text": "The accessory use may occupy up to half of any floor."
+        },
+        {
+          "id": "c",
+          "text": "The accessory use automatically controls the whole building."
+        },
+        {
+          "id": "d",
+          "text": "The accessory use is ignored only if it is on the roof."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked mixed-occupancy exception uses the ten percent threshold for the area of any floor and the basic area permitted.",
+      "explanation": "Two exceptions exist under Sec. 703: (a) one-storey buildings may treat each portion under its own occupancy; (b) accessory uses occupying not more than 10% of any storey may allow the major occupancy to govern.",
+      "code_citation": "PD 1096, Sec. 703; Rule VII, Sec. 703 (IRR)",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.968005+00:00",
+      "updated_at": "2026-07-20T01:13:23.434990+00:00",
+      "content_hash": "sha256:2ce04d64b3721b37cc4ef4c008fa9bc29e5f0725378e6f08d0962101d18d92be"
+    },
+    {
+      "question_id": "3e435f1d-61bc-4ca2-ba56-afa4a2a00ae3",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which assembly classification statement is source-safe from PD 1096 Rule VII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group I is an assembly building with a stage and an occupant load of one thousand or more."
+        },
+        {
+          "id": "b",
+          "text": "Group I is every assembly space over one hundred occupants."
+        },
+        {
+          "id": "c",
+          "text": "Group H is only outdoor stadiums."
+        },
+        {
+          "id": "d",
+          "text": "Stage presence is irrelevant to Group I."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked source identifies Group I as any assembly building with a stage and an occupant load of one thousand or more.",
+      "explanation": "The dual condition (stage AND occupant load ≥ 1,000) is the most common Group I classification trap. Missing either condition drops the classification to the appropriate Group H division.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.968005+00:00",
+      "updated_at": "2026-07-20T01:13:23.430693+00:00",
+      "content_hash": "sha256:470c88a99d61dcea0b81b68ac99976048cc14c411f5a728a1963df813f1e6d01"
+    },
+    {
+      "question_id": "2b63414b-dbc5-4b5e-ac08-b6adac08b942",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, what is the safest first step when classifying a building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify the proposed use or character of occupancy and match it to the listed Group A to J classification."
+        },
+        {
+          "id": "b",
+          "text": "Start with the preferred structural material."
+        },
+        {
+          "id": "c",
+          "text": "Choose the group with the lowest permit fee."
+        },
+        {
+          "id": "d",
+          "text": "Classify all buildings as commercial unless residential units are present."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule VII classifies buildings by proposed use or character of occupancy before downstream requirements are applied.",
+      "explanation": "The 10% accessory-use exception prevents over-regulation of buildings that contain small subordinate uses. A small clinic, chapel, or daycare inside a mall need not reclassify the entire mall to institutional or religious standards if they occupy 10% or less of any storey.",
+      "code_citation": "PD 1096, Sec. 703; Rule VII, Sec. 703 (IRR)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.968005+00:00",
+      "updated_at": "2026-07-20T01:13:23.411588+00:00",
+      "content_hash": "sha256:246be15dbc75b8fd7043bba79a75e773456c85409b6ee1cf350ae157bb0b88a0"
+    },
+    {
+      "question_id": "edcf1c56-5dbb-420e-837c-d33f524ea40d",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which statement correctly distinguishes Group A from Group B in the checked PD 1096 source?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group A includes listed residential dwellings and A-2 non-leasing occupants not exceeding ten persons; Group B covers similar residential, hotel, and apartment uses accommodating more than ten persons."
+        },
+        {
+          "id": "b",
+          "text": "Group A is only hotels while Group B is only single-family houses."
+        },
+        {
+          "id": "c",
+          "text": "Group A and Group B are separated only by building height."
+        },
+        {
+          "id": "d",
+          "text": "Group B applies only when the structure is industrial."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked source places the ten-person line between A-2 non-leasing residential uses and Group B residential, hotel, and apartment occupancies.",
+      "explanation": "The absence of a stage disqualifies any assembly facility from Group I, no matter how large the crowd. Group H Div. 4 is specifically written for sports venues and outdoor spectator facilities.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.968005+00:00",
+      "updated_at": "2026-07-20T01:13:23.425916+00:00",
+      "content_hash": "sha256:8672cf534e439f5cc9fcffdea49a693a682d6a29b254b46edebe74c67faca174"
+    },
+    {
+      "question_id": "f5fd4ca0-e918-4b42-8af4-d8deef21814a",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "For mixed occupancy under PD 1096 Rule VII, what is the default rule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apply the most restrictive requirement among the occupancies present unless a checked exception applies."
+        },
+        {
+          "id": "b",
+          "text": "Apply only the requirement for the largest floor area."
+        },
+        {
+          "id": "c",
+          "text": "Ignore minor occupancies even when they exceed ten percent."
+        },
+        {
+          "id": "d",
+          "text": "Average the requirements of all occupancies."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 states that a mixed-occupancy building is subject to the most restrictive requirement unless the one-storey or minor-accessory exception applies.",
+      "explanation": "This is a counterintuitive placement that frequently trips candidates. Even though filling stations handle flammable fuel, the Code classifies the retail sleas and service function — not the incidental fuel storage — as the principal use, placing them in Group E Div. 1.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.968005+00:00",
+      "updated_at": "2026-07-20T01:13:23.437872+00:00",
+      "content_hash": "sha256:e3131b73c6f9d4ed02f391b7d7b3940a94891481adeb54e3dd73631565f86c7e"
+    },
+    {
+      "question_id": "d48005bf-2e21-4793-ac20-4b960135f57d",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which minor accessory-use condition is source-safe under PD 1096 Rule VII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The accessory use must not occupy more than ten percent of the area of any floor and not more than ten percent of the basic area permitted in the occupancy requirement."
+        },
+        {
+          "id": "b",
+          "text": "The accessory use may occupy up to half of any floor."
+        },
+        {
+          "id": "c",
+          "text": "The accessory use automatically controls the whole building."
+        },
+        {
+          "id": "d",
+          "text": "The accessory use is ignored only if it is on the roof."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked mixed-occupancy exception uses the ten percent threshold for the area of any floor and the basic area permitted.",
+      "explanation": "The three D-division distinctions hinge on: (D1) liberty restrained; (D2) non-ambulatory or under-kindergarten care, more than 5 persons; (D3) ambulatory patients or kindergarten-age-and-over children, more than 5 occupants. Non-ambulatory status is the D2 trigger.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.968005+00:00",
+      "updated_at": "2026-07-20T01:13:23.403945+00:00",
+      "content_hash": "sha256:b8063a3c4a4f5d8445c78e55ae57bb3994cd5ac6931c850593cd586cd2aa27be"
+    },
+    {
+      "question_id": "843ef8ad-6c5a-456d-a593-de2486b040f0",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which assembly classification statement is source-safe from PD 1096 Rule VII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group I is an assembly building with a stage and an occupant load of one thousand or more."
+        },
+        {
+          "id": "b",
+          "text": "Group I is every assembly space over one hundred occupants."
+        },
+        {
+          "id": "c",
+          "text": "Group H is only outdoor stadiums."
+        },
+        {
+          "id": "d",
+          "text": "Stage presence is irrelevant to Group I."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked source identifies Group I as any assembly building with a stage and an occupant load of one thousand or more.",
+      "explanation": "This is a counterintuitive placement that frequently trips candidates. Even though filling stations handle flammable fuel, the Code classifies the retail sleas and service function — not the incidental fuel storage — as the principal use, placing them in Group E Div. 1.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.757508+00:00",
+      "updated_at": "2026-07-20T01:13:23.398721+00:00",
+      "content_hash": "sha256:6e03d07c4ca82acd0d6ec3f10d9b3af9b0ca610176b1d24c8a107f1c11eeacad"
+    },
+    {
+      "question_id": "1eca56c1-8f9a-4be5-9d28-0d156a50542e",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, what is the safest first step when classifying a building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify the proposed use or character of occupancy and match it to the listed Group A to J classification."
+        },
+        {
+          "id": "b",
+          "text": "Start with the preferred structural material."
+        },
+        {
+          "id": "c",
+          "text": "Choose the group with the lowest permit fee."
+        },
+        {
+          "id": "d",
+          "text": "Classify all buildings as commercial unless residential units are present."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule VII classifies buildings by proposed use or character of occupancy before downstream requirements are applied.",
+      "explanation": "The 10-person cutoff is one of the most frequently tested distinctions on the LEA. Group A Div. 2 → Group B is triggered the moment the non-leasing residential population exceeds 10, regardless of building type.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.757508+00:00",
+      "updated_at": "2026-07-20T01:13:23.410170+00:00",
+      "content_hash": "sha256:a740f35e8ed32543f345ac94bf6a4ccf88ea540b7abed0381665f76be8b38c49"
+    },
+    {
+      "question_id": "a97bb663-3f1a-4614-8870-9b32b2d306d5",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which statement correctly distinguishes Group A from Group B in the checked PD 1096 source?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group A includes listed residential dwellings and A-2 non-leasing occupants not exceeding ten persons; Group B covers similar residential, hotel, and apartment uses accommodating more than ten persons."
+        },
+        {
+          "id": "b",
+          "text": "Group A is only hotels while Group B is only single-family houses."
+        },
+        {
+          "id": "c",
+          "text": "Group A and Group B are separated only by building height."
+        },
+        {
+          "id": "d",
+          "text": "Group B applies only when the structure is industrial."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked source places the ten-person line between A-2 non-leasing residential uses and Group B residential, hotel, and apartment occupancies.",
+      "explanation": "The absence of a stage disqualifies any assembly facility from Group I, no matter how large the crowd. Group H Div. 4 is specifically written for sports venues and outdoor spectator facilities.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.757508+00:00",
+      "updated_at": "2026-07-20T01:13:23.439311+00:00",
+      "content_hash": "sha256:39336149805bd853ae18d11a0b2c029c0572eecf080a4883a3c9e4611dab23e9"
+    },
+    {
+      "question_id": "0656d149-9421-465e-a3e4-e7636d4bdac0",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "For mixed occupancy under PD 1096 Rule VII, what is the default rule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apply the most restrictive requirement among the occupancies present unless a checked exception applies."
+        },
+        {
+          "id": "b",
+          "text": "Apply only the requirement for the largest floor area."
+        },
+        {
+          "id": "c",
+          "text": "Ignore minor occupancies even when they exceed ten percent."
+        },
+        {
+          "id": "d",
+          "text": "Average the requirements of all occupancies."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 states that a mixed-occupancy building is subject to the most restrictive requirement unless the one-storey or minor-accessory exception applies.",
+      "explanation": "The three D-division distinctions hinge on: (D1) liberty restrained; (D2) non-ambulatory or under-kindergarten care, more than 5 persons; (D3) ambulatory patients or kindergarten-age-and-over children, more than 5 occupants. Non-ambulatory status is the D2 trigger.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.757508+00:00",
+      "updated_at": "2026-07-20T01:13:23.424453+00:00",
+      "content_hash": "sha256:76189eec779abe3d1b4de3472d5b37716886ac0291ae11b5b4cace9faed6901a"
+    },
+    {
+      "question_id": "fc0eccdf-7d67-439c-9f8a-1bfa3ea5b8cf",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which minor accessory-use condition is source-safe under PD 1096 Rule VII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The accessory use must not occupy more than ten percent of the area of any floor and not more than ten percent of the basic area permitted in the occupancy requirement."
+        },
+        {
+          "id": "b",
+          "text": "The accessory use may occupy up to half of any floor."
+        },
+        {
+          "id": "c",
+          "text": "The accessory use automatically controls the whole building."
+        },
+        {
+          "id": "d",
+          "text": "The accessory use is ignored only if it is on the roof."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked mixed-occupancy exception uses the ten percent threshold for the area of any floor and the basic area permitted.",
+      "explanation": "The dual condition (stage AND occupant load ≥ 1,000) is the most common Group I classification trap. Missing either condition drops the classification to the appropriate Group H division.",
+      "code_citation": "PD 1096, Rule VII, Sec. 701",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.757508+00:00",
+      "updated_at": "2026-07-20T01:13:23.416072+00:00",
+      "content_hash": "sha256:fd5f7689d631945554c6fedc96021adbd4df08c9d5b24481c99e1a130a3dcbd1"
+    },
+    {
+      "question_id": "b439fbbf-06a6-4536-b06e-1a9b42e57a3d",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which assembly classification statement is source-safe from PD 1096 Rule VII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group I is an assembly building with a stage and an occupant load of one thousand or more."
+        },
+        {
+          "id": "b",
+          "text": "Group I is every assembly space over one hundred occupants."
+        },
+        {
+          "id": "c",
+          "text": "Group H is only outdoor stadiums."
+        },
+        {
+          "id": "d",
+          "text": "Stage presence is irrelevant to Group I."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked source identifies Group I as any assembly building with a stage and an occupant load of one thousand or more.",
+      "explanation": "Two exceptions exist under Sec. 703: (a) one-storey buildings may treat each portion under its own occupancy; (b) accessory uses occupying not more than 10% of any storey may allow the major occupancy to govern.",
+      "code_citation": "PD 1096, Sec. 703; Rule VII, Sec. 703 (IRR)",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.757508+00:00",
+      "updated_at": "2026-07-20T01:13:23.408690+00:00",
+      "content_hash": "sha256:57b372fb6a2c062c1ff1230cfa87fd92e79d686ed6eb06ef9ca255b92c97f1d6"
+    },
+    {
+      "question_id": "fb989980-e4e1-4f33-91fe-20fb863afc1b",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VII, what is the safest first step when classifying a building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify the proposed use or character of occupancy and match it to the listed Group A to J classification."
+        },
+        {
+          "id": "b",
+          "text": "Start with the preferred structural material."
+        },
+        {
+          "id": "c",
+          "text": "Choose the group with the lowest permit fee."
+        },
+        {
+          "id": "d",
+          "text": "Classify all buildings as commercial unless residential units are present."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule VII classifies buildings by proposed use or character of occupancy before downstream requirements are applied.",
+      "explanation": "The 10% accessory-use exception prevents over-regulation of buildings that contain small subordinate uses. A small clinic, chapel, or daycare inside a mall need not reclassify the entire mall to institutional or religious standards if they occupy 10% or less of any storey.",
+      "code_citation": "PD 1096, Sec. 703; Rule VII, Sec. 703 (IRR)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.757508+00:00",
+      "updated_at": "2026-07-20T01:13:23.436414+00:00",
+      "content_hash": "sha256:cd4b60a07987b150f5d9edaf614463b3e33f28b74308f5d61d37ba519067b90a"
+    },
+    {
+      "question_id": "9b19dfbe-98f5-47a8-8472-85c83a7ef4d8",
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which statement correctly distinguishes Group A from Group B in the checked PD 1096 source?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group A includes listed residential dwellings and A-2 non-leasing occupants not exceeding ten persons; Group B covers similar residential, hotel, and apartment uses accommodating more than ten persons."
+        },
+        {
+          "id": "b",
+          "text": "Group A is only hotels while Group B is only single-family houses."
+        },
+        {
+          "id": "c",
+          "text": "Group A and Group B are separated only by building height."
+        },
+        {
+          "id": "d",
+          "text": "Group B applies only when the structure is industrial."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The checked source places the ten-person line between A-2 non-leasing residential uses and Group B residential, hotel, and apartment occupancies.",
       "explanation": "The groups range from Group A (Residential Dwellings) through Group J (Accessory). Knowing the total count (10 groups, 25 divisions) is a baseline fact directly tested on the LEA.",
       "code_citation": "PD 1096, Chap. 7, Sec. 701; Rule VII, Sec. 701 (IRR)",
       "bloom_level": "remember",
@@ -1189,7 +1189,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:53.757508+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.406966+00:00",
       "content_hash": "sha256:4a8fdc5c527b3c14bad5093f926346888576f5ed4ec1e536d40aba9038e46afb"
     }
   ]

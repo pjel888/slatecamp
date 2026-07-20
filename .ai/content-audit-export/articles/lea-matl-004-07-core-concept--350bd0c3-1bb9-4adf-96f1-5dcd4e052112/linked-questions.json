@@ -8,23 +8,23 @@
       "question_id": "69a2096c-53b2-4e1f-bff4-498df7580c48",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "Moment-resisting frames (MRF) resist lateral seismic forces through ___ moment transfer at beam-column joints. Advantages include ___; disadvantages include larger member sizes and ___.",
+      "text": "What does BCI identify as a main variable in steel connection strength?",
       "options": [
         {
           "id": "a",
-          "text": "bending; open floor plans (no interior bracing); complex, expensive connections"
+          "text": "Member sizes plus the tees, angles, plates, bolts, and weld configuration used"
         },
         {
           "id": "b",
-          "text": "axial force in diagonal braces; interior space loss; stiff frame, which can limit architectural flexibility"
+          "text": "Paint color only"
         },
         {
           "id": "c",
-          "text": "shear in floor decking; reduced deformation; minimal connections, which simplifies construction but may reduce overall strength"
+          "text": "The date the beam was delivered"
         },
         {
           "id": "d",
-          "text": "weight redistribution; economic efficiency; simple construction, though this may not always meet seismic performance requirements"
+          "text": "The number of rooms in the building"
         }
       ],
       "correct_option_id": "a",
@@ -32,12 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Braced frames use axial force in diagonals, not bending.",
-        "c": "Floor decking carries gravity loads; lateral forces are in frame.",
-        "d": "MRF is not economical due to complex connections; braced frames are cheaper.",
-        "correct": "MRF transfers lateral forces through bending moment at rigid beam-column connections. Advantages: architectural flexibility (open floor plans, no interior bracing). Disadvantages: require larger members for moment capacity, complex connections (welded or bolted moment plates), higher cost. Essential for ductility in seismic regions (Philippines)."
-      },
+      "rationale": "BCI ties connection strength to member and connector size and bolt or weld configuration.",
       "explanation": "Braced frames use axial force in diagonals, not bending. Floor decking carries gravity loads; lateral forces are in frame. MRF is not economical due to complex connections; braced frames are cheaper. MRF transfers lateral forces through bending moment at rigid beam-column connections. Advantages: architectural flexibility (open floor plans, no interior bracing). Disadvantages: require larger members for moment capacity, complex connections (welded or bolted moment plates), higher cost. Essential for ductility in seismic regions (Philippines).",
       "code_citation": "AISC 360-22; NSCP 2015 Chapter 5",
       "bloom_level": "understand",
@@ -50,30 +45,30 @@
       "model_id": "ALE-MATL-004-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-05-06T14:43:19.333572+00:00",
+      "updated_at": "2026-07-20T01:13:24.773650+00:00",
       "content_hash": "sha256:dae3e5d8cf7ad69adc9ae0a8e59c3b924e1660256fcb2147c827d63af9918406"
     },
     {
       "question_id": "4080f5cd-695e-40d9-8f66-102d884693eb",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "Bolted connections are preferred over welded connections for field assembly in Philippine construction because bolts are ___ to install, ___, and do not require ___.",
+      "text": "Which description best matches a moment connection in the checked source scope?",
       "options": [
         {
           "id": "a",
-          "text": "faster/easier; require minimal equipment; skilled welders or weather protection"
+          "text": "A connection intended to hold its angle under loading by developing resisting moment"
         },
         {
           "id": "b",
-          "text": "always stronger than welded; economical; inspection, which is a common misconception"
+          "text": "A connection intended only to carry paint loads"
         },
         {
           "id": "c",
-          "text": "more durable than welded; always water-resistant; maintenance, which is often misunderstood"
+          "text": "A loose joint that is never engineered"
         },
         {
           "id": "d",
-          "text": "impossible to inspect; cheaper; no temporary bracing, which is an incorrect assumption"
+          "text": "A temporary shipping strap"
         }
       ],
       "correct_option_id": "a",
@@ -81,12 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Welded connections can be equally strong if properly executed; the advantage of bolts is field convenience, not strength.",
-        "c": "Bolts are cheaper initially but require preload control; maintenance is minimal.",
-        "d": "Bolted connections are easily inspected; weather protection is not a concern.",
-        "correct": "Bolted connections (ASTM A325 or A490) are field-convenient: simple nut-wrench installation, minimal equipment, no welding skill required, weather-independent (SMAW can tolerate wind; GMAW cannot). Preload is verified via wrench torque or TC spline breakoff. Welded connections require skilled labor, weather protection, and quality inspection (VT, UT)."
-      },
+      "rationale": "BCI distinguishes moment connections from simple shear connections by rigidity and moment resistance.",
       "explanation": null,
       "code_citation": "AISC 360-22; NSCP 2015 Chapter 5",
       "bloom_level": "understand",
@@ -99,30 +89,30 @@
       "model_id": "ALE-MATL-004-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.771796+00:00",
       "content_hash": "sha256:d18cd31478cc63ef30bb078cb789b47e7f4603739bf954565eb82750574b0f1a"
     },
     {
       "question_id": "8d093dea-4dd4-4794-bfa3-0568adf10e81",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "An architect specifies 'standard spray-applied fireproofing' for a 30-story office building without stating the required fire-resistance rating. The contractor applies spray-applied fireproofing to a 2-hour specification. Upon inspection, the building authority requires 3-hour fire-resistance (per occupancy/height tables in PD 1096). What is the corrective action required?",
+      "text": "What is true of a shear connection in simple steel framing?",
       "options": [
         {
           "id": "a",
-          "text": "Demolition and reapplication of fireproofing to 3-hour rating, or upgrade to board fireproofing. The 2-hour spray-applied is inadequate; thicker application or superior method is required. Always specify the fire-resistance rating numerically (2, 3, or 4 hours) before construction begins."
+          "text": "It transfers shear and permits rotation under gravity loads, so lateral stability must come from another system"
         },
         {
           "id": "b",
-          "text": "2-hour and 3-hour ratings are equivalent; no action needed, as the difference is negligible in practical terms"
+          "text": "It automatically resists all building sway alone"
         },
         {
           "id": "c",
-          "text": "Spray-applied fireproofing cannot be upgraded; the building must be redesigned to accommodate the required specifications"
+          "text": "It is the same as a full rigid joint"
         },
         {
           "id": "d",
-          "text": "The contractor can apply additional spray-applied to achieve 3 hours, ensuring compliance with the building authority's requirements"
+          "text": "It removes the need for beams"
         }
       ],
       "correct_option_id": "a",
@@ -130,12 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Ratings are not equivalent; 2 hours is insufficient if 3 hours is required.",
-        "c": "Fireproofing can be upgraded; additional spray-applied or board can achieve higher rating.",
-        "d": "Additional spray-applied can achieve 3-hour rating if tested/applied to required thickness per NSCP; however, existing application must be verified/removed if damaged.",
-        "correct": "Fireproofing must meet the code-required fire-resistance rating per PD 1096 occupancy tables. If 3 hours is required and only 2 hours is applied, a deficiency exists. Correction requires reapplication to 3-hour specification or upgrade to board fireproofing. This error is costly and avoidable by specifying the numerical rating (e.g., '3-hour fire-resistance rating per PD 1096 Section 503.1') in design documents."
-      },
+      "rationale": "BCI states that simple frame shear connections require shear walls or diagonal bracing for lateral stability.",
       "explanation": null,
       "code_citation": "NSCP 2015 Chapter 7; PD 1096",
       "bloom_level": "apply",
@@ -148,30 +133,30 @@
       "model_id": "ALE-MATL-004-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.770873+00:00",
       "content_hash": "sha256:7ff95033f480a0fc5ac81b64bd9f266f72acdd1cc32edbde3ca77ff8f1766d73"
     },
     {
       "question_id": "d59c8c76-feb2-469c-9010-82b7c3e09080",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "NSCP 2015 Chapter 4 (Fire-Resistive Construction) provides fire-resistance ratings for structural steel, typically _–___ hours for high-rise buildings. What is the purpose of fireproofing?",
+      "text": "What is an open-web steel joist in the checked BCI scope?",
       "options": [
         {
           "id": "a",
-          "text": "2–4 hours. To protect steel from direct flame exposure and maintain strength during fire; unprotected steel loses capacity rapidly above 500°C."
+          "text": "A lightweight, shop-fabricated steel member with a trussed web"
         },
         {
           "id": "b",
-          "text": "24 hours. Steel is inherently fire-resistant, requiring no additional protection"
+          "text": "A cast-in-place concrete wall"
         },
         {
           "id": "c",
-          "text": "1–2 hours only for commercial buildings, as residential structures have different requirements"
+          "text": "A timber board used only for formwork"
         },
         {
           "id": "d",
-          "text": "Fire-resistance ratings apply only to concrete, not steel, due to differing material properties"
+          "text": "A plumbing fixture support"
         }
       ],
       "correct_option_id": "a",
@@ -179,12 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "24-hour ratings are not typical for building structures.",
-        "c": "Steel is NOT inherently fire-resistant; protection is mandatory.",
-        "d": "Steel fireproofing is explicitly required in NSCP 2015.",
-        "correct": "NSCP 2015 Chapter 4 provides fire-resistance ratings (typically 2–4 hours depending on occupancy/height per PD 1096 Rule VII). Fireproofing insulates steel from direct flame and heat, maintaining structural capacity during fire. Unprotected steel loses ~50% capacity at 500°C; collapse risk is high if fireproofing is omitted."
-      },
+      "rationale": "BCI describes open-web joists as shop-fabricated steel members with trussed webs.",
       "explanation": null,
       "code_citation": "NSCP 2015 Chapter 4; NSCP 2015 Chapter 5",
       "bloom_level": "remember",
@@ -197,30 +177,30 @@
       "model_id": "ALE-MATL-004-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.769976+00:00",
       "content_hash": "sha256:998bade490d4e239f280f6348402545e88ce276186579c42ce4f6594f2b26cf9"
     },
     {
       "question_id": "0bbe1ff5-0f2d-475c-83a2-e29b5f89b41c",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "The proper erection sequence for a structural steel frame is: (1) ___, (2) temporary bracing, (3) ___, (4) floor decking and concrete.",
+      "text": "What role does metal decking play during construction?",
       "options": [
         {
           "id": "a",
-          "text": "(1) Columns; (3) Beams and connections"
+          "text": "It can serve as a working platform and formwork for a site-cast concrete slab"
         },
         {
           "id": "b",
-          "text": "(1) Beams; (3) Columns, which are installed after temporary bracing is secured"
+          "text": "It is only a finish paint layer"
         },
         {
           "id": "c",
-          "text": "(1) Fireproofing; (3) Lateral bracing, which is essential for structural stability"
+          "text": "It replaces all structural beams"
         },
         {
           "id": "d",
-          "text": "(1) Decking; (3) Columns, ensuring that the load path is established early"
+          "text": "It is installed after occupancy only"
         }
       ],
       "correct_option_id": "a",
@@ -228,12 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Beams are installed after columns and bracing, not first.",
-        "c": "Fireproofing is installed after frame is complete and connections are verified.",
-        "d": "Decking cannot be installed before columns and beams support it.",
-        "correct": "Correct sequence: (1) Erect columns from lowest level upward, (2) Install temporary bracing (diagonals, knee braces) to stabilize frame against wind/seismic, (3) Install floor beams and make connections (bolted or welded), (4) Install deck and concrete. Temporary bracing is critical to prevent instability and collapse during erection."
-      },
+      "rationale": "BCI describes corrugated metal decking as a platform and permanent formwork for slabs.",
       "explanation": "Beams are installed after columns and bracing, not first. Fireproofing is installed after frame is complete and connections are verified. Decking cannot be installed before columns and beams support it. Correct sequence: (1) Erect columns from lowest level upward, (2) Install temporary bracing (diagonals, knee braces) to stabilize frame against wind/seismic, (3) Install floor beams and make connections (bolted or welded), (4) Install deck and concrete. Temporary bracing is critical to prevent instability and collapse during erection.",
       "code_citation": "AISC 360-22; NSCP 2015 Chapter 5; OSHA 1926.500+",
       "bloom_level": "remember",
@@ -246,30 +221,30 @@
       "model_id": "ALE-MATL-004-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-05-06T14:43:19.455378+00:00",
+      "updated_at": "2026-07-20T01:13:24.768205+00:00",
       "content_hash": "sha256:8fa579b7f1d803d6c28b1927dc86ca2790ac2270acbd8f8d3023591319dbcb17"
     },
     {
       "question_id": "9fbc565d-046c-4cdb-8b49-61f11a36c026",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "A dual lateral force-resisting system combines ___ (for ductility and energy absorption) with ___ (for stiffness and drift control). Why is dual optimal for high-rise seismic design in the Philippines?",
+      "text": "How does composite decking differ from simple form decking in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Moment-resisting frames (MRF); braced frames. Dual provides both ductile energy absorption (MRF) and lateral stiffness (bracing), reducing member sizes and cost compared to pure MRF while maintaining seismic safety."
+          "text": "It bonds with the concrete slab and may work with shear studs for composite action"
         },
         {
           "id": "b",
-          "text": "Two moment-resisting frames; optimal redundancy, ensuring that the building can withstand seismic forces from multiple directions"
+          "text": "It is made of wood planks only"
         },
         {
           "id": "c",
-          "text": "Two braced systems; maximum stiffness, which is crucial for minimizing lateral displacement during seismic events"
+          "text": "It is never attached to steel beams"
         },
         {
           "id": "d",
-          "text": "MRF and precast elements; simplifies connections, allowing for faster construction and reduced labor costs"
+          "text": "It is a nonstructural wallpaper finish"
         }
       ],
       "correct_option_id": "a",
@@ -277,12 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Two MRFs add redundancy but do not reduce member sizes.",
-        "c": "Two braced systems are stiff but brittle; ductility is sacrificed.",
-        "d": "Precast elements do not enhance lateral system; this is tangential.",
-        "correct": "Dual systems combine MRF (ductile, absorbs seismic energy elastically) with bracing (stiff, reduces lateral drift). MRF alone requires large members for moment capacity; bracing alone is brittle if poorly designed. Dual optimizes both seismic ductility (essential in Philippines per NSCP 2015) and stiffness, reducing member sizes and cost."
-      },
+      "rationale": "BCI explains composite decking as tensile reinforcement bonded to the slab with possible shear-stud interaction.",
       "explanation": "Two MRFs add redundancy but do not reduce member sizes. Two braced systems are stiff but brittle; ductility is sacrificed. Precast elements do not enhance lateral system; this is tangential. Dual systems combine MRF (ductile, absorbs seismic energy elastically) with bracing (stiff, reduces lateral drift). MRF alone requires large members for moment capacity; bracing alone is brittle if poorly designed. Dual optimizes both seismic ductility (essential in Philippines per NSCP 2015) and stiffness, reducing member sizes and cost.",
       "code_citation": "AISC 360-22; NSCP 2015 Chapter 5",
       "bloom_level": "understand",
@@ -295,30 +265,30 @@
       "model_id": "ALE-MATL-004-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-05-06T14:43:19.57158+00:00",
+      "updated_at": "2026-07-20T01:13:24.774414+00:00",
       "content_hash": "sha256:d5dfe7cf45516cc346b810163d583c332243f983f6a15ee39e0b1801976d6807"
     },
     {
       "question_id": "7c51503e-1a06-4087-a462-0b77207825f0",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "Three fireproofing methods are available: (1) Intumescent coatings (___ mm thick, applied like paint), (2) Spray-applied (_–___ cm, cementitious/mineral fiber), (3) Board (gypsum/fiber, ___ cm). Which method is most economical and which is most durable?",
+      "text": "Which steel-frame statement is source-safe for Batch 084?",
       "options": [
         {
           "id": "a",
-          "text": "Intumescent: thin/aesthetic; Spray-applied: most economical; Board: most durable (low maintenance)"
+          "text": "Bolts and welds are common connection methods, but exact design values need a checked table before being asserted"
         },
         {
           "id": "b",
-          "text": "All methods are equivalent in cost, durability, and aesthetic finish for structural fire protection."
+          "text": "Any remembered AISC value may be inserted without a locator"
         },
         {
           "id": "c",
-          "text": "Spray-applied is most durable; intumescent requires no maintenance and is the lowest-cost option."
+          "text": "All steel connections behave identically"
         },
         {
           "id": "d",
-          "text": "Board is cheapest; spray-applied is most durable and requires no reapplication over the building life."
+          "text": "Welds are decorative and cannot carry load"
         }
       ],
       "correct_option_id": "a",
@@ -326,12 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Methods have different cost-benefit trade-offs; selection depends on project needs.",
-        "c": "Spray-applied is more economical than board; intumescent requires maintenance.",
-        "d": "Board is expensive, not cheap.",
-        "correct": "Intumescent: thin application, good aesthetics, requires periodic touch-up (maintenance intensive). Spray-applied (3–5 cm): low cost, effective, vulnerable to damage, needs finish coat. Board: highest cost, durable, impact-resistant, minimal maintenance. Select based on rating requirement, budget, and lifecycle considerations."
-      },
+      "rationale": "The batch supports connection concepts, not unchecked standard table values.",
       "explanation": null,
       "code_citation": "NSCP 2015 Chapter 7",
       "bloom_level": "understand",
@@ -344,30 +309,30 @@
       "model_id": "ALE-MATL-004-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.769050+00:00",
       "content_hash": "sha256:e34e93f99e827abd5acfa4ff0a981ab23d188f6edc03850bf01685f4e1fc2cd1"
     },
     {
       "question_id": "2b236f64-4d4e-499b-9f61-c7a57f61f46a",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "A 35-story residential tower in Metro Manila (high seismic hazard (SDS=1.2-1.6g equivleant to former Zone 4) per NSCP 2015) is designed with a moment-resisting frame (MRF) lateral system. The developer proposes reducing the moment-connection size by 20% to cut costs. A structural engineer reviewing the design identifies that the reduced connections no longer meet ACI moment-transfer requirements. What is the critical issue and recommendation?",
+      "text": "What is the practical risk of large web openings in a steel beam?",
       "options": [
         {
           "id": "a",
-          "text": "Reduced connections compromise moment capacity required by seismic design. In a seismic zone, MRF provides essential ductility and energy dissipation. Undersized connections may fail under seismic loads, compromising life safety. Recommendation: maintain original connection size, or redesign as a dual system (MRF + bracing) to reduce moment demand on connections while maintaining lateral capacity."
+          "text": "Large openings can weaken the web in shear and may need stiffening or reinforcement"
         },
         {
           "id": "b",
-          "text": "Cost reduction is justified; undersize the connections to save money, which may lead to increased risk"
+          "text": "Large openings always increase shear capacity"
         },
         {
           "id": "c",
-          "text": "Seismic loading is not a concern in Metro Manila, which contradicts current seismic assessments"
+          "text": "Web openings have no structural effect"
         },
         {
           "id": "d",
-          "text": "Braced frames are unsuitable for residential buildings; only MRF works, which limits design flexibility"
+          "text": "Only paint specification changes"
         }
       ],
       "correct_option_id": "a",
@@ -375,12 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Cost reduction cannot compromise seismic safety; life safety is paramount.",
-        "c": "Manila is in seismic Zone 3–4; significant seismic risk exists.",
-        "d": "Braced frames can be used in residential buildings (interior space permitting) as part of dual systems.",
-        "correct": "NSCP 2015 designates Philippines as seismic (Zone 3–4 in Metro Manila). MRF is chosen for its ductility and energy absorption under seismic forces. Reducing connection capacity undermines this protection. Seismic design is not optional cost reduction; it is a life-safety mandate per PD 1096. If connections must be reduced, redesign as dual system (MRF + bracing) to maintain total lateral capacity with smaller MRF moment demands."
-      },
+      "rationale": "BCI warns that large openings weaken beam webs in shear and require stiffening or reinforcement.",
       "explanation": null,
       "code_citation": "NSCP 2015 Chapter 5; PD 1096; AISC 360-22",
       "bloom_level": "apply",
@@ -393,30 +353,30 @@
       "model_id": "ALE-MATL-004-07-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.772701+00:00",
       "content_hash": "sha256:cd972e0f317cb88541e50caf4f609a655abf9ef48328b0264797ce4d26f90556"
     },
     {
       "question_id": "be19e9f8-ca1d-4328-ba4c-f26dc3bda451",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "A partially erected 20-story steel frame has completed column and beam installation on 10 floors but lacks permanent lateral bracing (moment-resisting connections are not yet welded). Temporary diagonal bracing is being removed to accelerate schedule. What is the critical safety concern?",
+      "text": "Why do exposed steel connections require extra attention beyond strength?",
       "options": [
         {
           "id": "a",
-          "text": "The frame is unstable; wind or minor seismic activity will cause collapse without temporary bracing. Per OSHA 1926.500 and NSCP 2015, temporary bracing must remain until permanent lateral system (MRF connections) is complete. Removal risks fatalities."
+          "text": "Economy of fabrication, erection, and visual appearance may also matter"
         },
         {
           "id": "b",
-          "text": "Temporary bracing is optional once columns are erected, which is incorrect and unsafe"
+          "text": "Only the furniture layout matters"
         },
         {
           "id": "c",
-          "text": "Diagonal bracing only provides aesthetic stiffness; it is not structural, which is a misunderstanding of its purpose"
+          "text": "Connections are invisible by definition"
         },
         {
           "id": "d",
-          "text": "Permanent connections can be welded after bracing is removed, which ignores the need for stability during construction"
+          "text": "They are selected only by color"
         }
       ],
       "correct_option_id": "a",
@@ -424,12 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Temporary bracing is essential during erection; early removal violates safety standards.",
-        "c": "Bracing is structural, not aesthetic; it supports lateral loads.",
-        "d": "Permanent connections must be complete before temporary bracing is removed.",
-        "correct": "A partially erected frame without temporary OR permanent lateral bracing is unstable. Temporary bracing (diagonals, knee braces) supports the frame during erection; permanent lateral system (MRF connections, final bracing) takes over when complete. Removing temporary bracing before permanent system is functional invites collapse. OSHA and NSCP 2015 mandate bracing throughout erection; removal is forbidden until final lateral system is installed and verified."
-      },
+      "rationale": "BCI notes economy of fabrication and erection and appearance if exposed.",
       "explanation": null,
       "code_citation": "OSHA 1926.500; NSCP 2015 Chapter 5",
       "bloom_level": "apply",
@@ -442,30 +397,30 @@
       "model_id": "ALE-MATL-004-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.767065+00:00",
       "content_hash": "sha256:3b02a4dcb44cdcc4a33819452f9de998315a527ad0440cd6c0d0d90574cad94f"
     },
     {
       "question_id": "5f270502-7f3c-43ee-a509-eaaacba0def1",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
       "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
-      "text": "Braced frames resist lateral forces through ___ in diagonal or X-bracing members. What is the primary advantage of braced frames over moment-resisting frames?",
+      "text": "What is the LEA trap in structural steel construction questions?",
       "options": [
         {
           "id": "a",
-          "text": "Axial tension/compression; smaller member sizes, stiffer frame, economical"
+          "text": "Confusing moment, shear, semi-rigid, joist, decking, and bracing roles"
         },
         {
           "id": "b",
-          "text": "Bending; open floor plans with fewer obstructions for flexible use"
+          "text": "Assuming all connections are decorative"
         },
         {
           "id": "c",
-          "text": "Shear in connections; faster erection due to simplified joint design"
+          "text": "Treating steel decking as a roofing shingle only"
         },
         {
           "id": "d",
-          "text": "Weight distribution; reduced material cost and simplified construction process"
+          "text": "Ignoring source locators for exact standard claims"
         }
       ],
       "correct_option_id": "a",
@@ -473,12 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "MRF uses bending, not bracing.",
-        "c": "Braces do not accelerate erection; if anything, they complicate assembly.",
-        "d": "Bracing does not reduce material cost; braces add weight.",
-        "correct": "Braced frames employ diagonal braces in tension (pulls) and compression (pushes) to resist lateral forces. Advantages: smaller member sizes (no moment capacity required), stiff frame (low sway), economical. Disadvantages: interior bracing reduces usable floor space. Used in industrial buildings, parking structures."
-      },
+      "rationale": "The checked article emphasizes system roles and connection behavior.",
       "explanation": null,
       "code_citation": "AISC 360-22",
       "bloom_level": "remember",
@@ -491,7 +441,7 @@
       "model_id": "ALE-MATL-004-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.775168+00:00",
       "content_hash": "sha256:eefa78fcc5a5bd2ed71a61c66d9ac58a25249ec40e3f6a8cc1cebaa3b5a4e9e0"
     }
   ]

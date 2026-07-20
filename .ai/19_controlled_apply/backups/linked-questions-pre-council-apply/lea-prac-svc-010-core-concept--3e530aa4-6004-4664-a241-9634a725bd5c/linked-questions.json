@@ -1,0 +1,508 @@
+{
+  "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:214d888800cc35391bcfa12a664856b38f75d12ced8c5c4117c2b6d6008062cf",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "6ecca30e-491f-4119-a877-513b5b85adb2",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "What is the primary function of the competition secretariat in SPP Doc 208 competitions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The secretariat manages submission reception, document organization, confidentiality protocols, and result announcement while coordinating between all parties"
+        },
+        {
+          "id": "b",
+          "text": "The secretariat functions exclusively as a publicity and marketing department for the competition, which is a limited view of its role"
+        },
+        {
+          "id": "c",
+          "text": "The secretariat has authority to modify competition conditions after entries have been submitted, which is not typically allowed"
+        },
+        {
+          "id": "d",
+          "text": "The secretariat's only responsibility is collecting and storing physical submission materials, which underestimates its role"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While secretariats may assist with publicity, their primary function per SPP Doc 208 is operational management and coordination.",
+        "c": "Secretariats implement established competition conditions; only authorized parties (owner, professional advisor) may modify terms.",
+        "d": "Material management is one function; the secretariat's broader coordinating role encompasses all participant communications and procedural oversight.",
+        "correct": "SPP Doc 208 establishes that the competition secretariat functions as the operational center, responsible for managing all submission logistics, maintaining confidentiality procedures to ensure fair judging, coordinating communications among owner, professional advisor, jury, and participants, and announcing results. This coordinating role is essential to competition integrity and professional standards.",
+        "takeaway": "The secretariat's operational coordination and confidentiality management protect competition integrity."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:df92f73cac50bfac570c3e8db6a61660b5aae96f7467c951f11ee8db4cb55bd9"
+    },
+    {
+      "question_id": "900e778c-aeb9-4035-8861-eb0aaddff212",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "According to SPP Doc 208, how does jury composition contribute to competition credibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Juries combine professional architects, consultants, users, and community representatives to ensure diverse perspectives and prevent conflicts of interest"
+        },
+        {
+          "id": "b",
+          "text": "Jury credibility depends exclusively on having only architects as members, excluding other disciplines from the evaluation panel"
+        },
+        {
+          "id": "c",
+          "text": "SPP Doc 208 recommends that competition organizers appoint jury members without announcing their identities to prevent lobbying"
+        },
+        {
+          "id": "d",
+          "text": "The size of the jury is irrelevant to competition credibility according to SPP Doc 208; only the jury's expertise matters"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 208 explicitly requires inclusion of lay jurors and technical advisors beyond architects to strengthen evaluation quality.",
+        "c": "SPP Doc 208 supports transparency in jury selection and composition; anonymity is not a requirement for credibility.",
+        "d": "Jury composition, including size, experience, and expertise balance, directly impacts evaluation quality and public confidence per SPP Doc 208.",
+        "correct": "SPP Doc 208 specifies that juries must include majority architects (appointed by the owner) with assistance from a lay juror nominated by the owner and approved by IAPOA. Technical advisors provide specialized expertise. This composition ensures diverse evaluation perspectives, incorporates user/community viewpoints, and mitigates bias, directly enhancing competition credibility and professional legitimacy.",
+        "takeaway": "Diverse jury composition (architects + lay juror + technical advisors) ensures credible, unbiased evaluation."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:52d8b44b5b069aa7dc6055fd5f1d671aad6a0a42f46489be74fe52531afc6045"
+    },
+    {
+      "question_id": "06db3b0d-1060-4ba2-b0b6-4b5a62b1404b",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "According to SPP Doc 208, what criteria should competition juries use when evaluating submissions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Juries evaluate submissions against established criteria including functional performance, innovation, cost efficiency, and constructability"
+        },
+        {
+          "id": "b",
+          "text": "SPP Doc 208 requires juries to base all evaluations exclusively on aesthetic appearance, which may overlook practical and functional aspects"
+        },
+        {
+          "id": "c",
+          "text": "Juries should evaluate submissions primarily on which architectural firm has the largest portfolio, potentially biasing against smaller firms"
+        },
+        {
+          "id": "d",
+          "text": "Competition criteria are deliberately left undefined to give juries complete discretion, which may lead to inconsistent evaluations"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 208 establishes comprehensive criteria beyond aesthetics, reflecting the complexity of architectural practice and project requirements.",
+        "c": "Jury evaluation focuses on submission quality and project alignment, not on competing firms' existing portfolios.",
+        "d": "SPP Doc 208 emphasizes that defined, published criteria are essential to professional credibility and fair evaluation.",
+        "correct": "SPP Doc 208 requires that competition conditions establish clear evaluation criteria encompassing functional performance, design innovation, cost efficiency, and constructability. This framework prevents arbitrary judging, ensures transparent assessment aligned with project objectives, and maintains professional standards across diverse competition types and projects.",
+        "takeaway": "Defined, multifaceted evaluation criteria ensure professional, objective jury assessment."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bfc464ad39fa409a2a8aaa9f8775b713f8ee238d2c30698ec0f05a9001969033"
+    },
+    {
+      "question_id": "0b88787a-7596-44fe-9f2e-5e64e169ce46",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "In SPP Doc 208, why do Ideas competitions lower participation barriers compared to Project competitions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ideas competitions encourage conceptual exploration without requiring full construction documentation, enabling broader participation including students and emerging firms"
+        },
+        {
+          "id": "b",
+          "text": "Ideas competitions offer substantially higher prize money than Project competitions, which attracts a wider range of participants"
+        },
+        {
+          "id": "c",
+          "text": "Ideas competitions do not require participants to hold architectural licenses, allowing for a more diverse pool of entrants"
+        },
+        {
+          "id": "d",
+          "text": "Ideas competitions have shorter deadlines that make them easier to enter, reducing the time commitment required from participants"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Prize levels are determined by competition organizers, not inherent to competition type per SPP Doc 208.",
+        "c": "SPP Doc 208 still expects professional participation; licensing requirements are not waived in Ideas competitions.",
+        "d": "Timeline flexibility is an organizational choice, not the fundamental reason Ideas competitions lower barriers.",
+        "correct": "SPP Doc 208 establishes that Ideas Competitions operate without requiring the comprehensive technical documentation, site-specific analysis, and construction feasibility assessments mandated for Project competitions. This reduced documentation burden significantly lowers entry barriers, making participation accessible to students, emerging practices, and architects exploring conceptual approaches.",
+        "takeaway": "Lower documentation requirements in Ideas competitions democratize participation across experience levels."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:860761e212035733f2c79d6ae6a7071308a0d3b763ec6ba21718a2861df2b4ec"
+    },
+    {
+      "question_id": "f92201ed-1e78-4321-b618-cc3d1631d692",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "According to SPP Doc 208, which elements must be included in competition conditions to maintain professional standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Competition conditions must establish submission requirements, intellectual property rights, compensation for designs, timeline specifications, and ethical conduct expectations"
+        },
+        {
+          "id": "b",
+          "text": "SPP Doc 208 states that competition conditions should be flexible and can be changed by organizers anytime during the competition, allowing for adjustments based on unforeseen circumstances"
+        },
+        {
+          "id": "c",
+          "text": "Professional conditions are optional and not required in competitions, as they are considered supplementary and not mandatory for all types of architectural contests"
+        },
+        {
+          "id": "d",
+          "text": "Competition conditions need only address prize amounts and do not require ethical conduct provisions, focusing solely on the financial incentives for participants"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 208 emphasizes conditions must be fixed and published before competition opening to ensure fairness and participant protection.",
+        "c": "Professional standards codified in competition conditions are foundational to credible competitions per SPP Doc 208.",
+        "d": "Ethical conduct provisions are essential elements alongside financial terms per SPP Doc 208's comprehensive framework.",
+        "correct": "SPP Doc 208 mandates that comprehensive competition conditions establish clear parameters for submission requirements, intellectual property ownership and usage rights, fair compensation mechanisms for winning designs, specific timelines, and expectations for professional ethical conduct. These elements collectively protect participant rights, ensure transparency, and maintain professional practice standards throughout the competitive process.",
+        "takeaway": "Comprehensive, published conditions covering submissions, IP, compensation, and ethics establish professional competition standards."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3a3c2c32c2085a5afd9af83727446a09659153aed030128da3a67332577c73eb"
+    },
+    {
+      "question_id": "c04f07d7-b34e-4b9d-a636-680235b87413",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "What role do technical advisors play in SPP Doc 208 competitions compared to professional advisors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Technical advisors provide specialized expertise in specific design disciplines or sustainability standards while professional advisors oversee overall administration and procedural integrity"
+        },
+        {
+          "id": "b",
+          "text": "Technical advisors and professional advisors have identical responsibilities in all aspects of competition management, ensuring consistency across the board"
+        },
+        {
+          "id": "c",
+          "text": "Technical advisors supersede professional advisors in all decision-making authority, taking the lead in critical areas"
+        },
+        {
+          "id": "d",
+          "text": "Technical advisors are only required for international competitions, not domestic ones, where local expertise suffices"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 208 creates distinct roles: professional advisors oversee administration while technical advisors provide specialized consultation.",
+        "c": "Technical advisors support jury deliberation through expertise; professional advisors retain administrative and procedural authority.",
+        "d": "SPP Doc 208 applies to both domestic and international competitions; technical advisor requirements are not restricted by competition scope.",
+        "correct": "SPP Doc 208 delineates distinct roles: professional advisors (nominated by owner, approved by IAPOA) manage overall competition administration and standards compliance; technical advisors are specialist personnel consulted by jurors for relevant information in their fields (e.g., structural engineering, sustainability, project management). This separation ensures comprehensive expertise while maintaining clear administrative oversight.",
+        "takeaway": "Professional advisors = overall administration; technical advisors = specialized discipline expertise."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:46464acfe3f7ee930d8969580bbaecdb5f39d467f958bf98c59532e0f07b7ead"
+    },
+    {
+      "question_id": "a0cf6227-79b7-4bca-adbe-5467a47444ce",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "What specific responsibilities does the professional advisor assume in SPP Doc 208 competitions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The professional advisor oversees competition administration, ensures compliance with professional standards, and maintains procedural integrity"
+        },
+        {
+          "id": "b",
+          "text": "The professional advisor functions as a competing participant and cannot influence the outcome, which is a conflict of interest"
+        },
+        {
+          "id": "c",
+          "text": "The professional advisor is responsible only for publicizing the competition results, which limits their involvement in the process"
+        },
+        {
+          "id": "d",
+          "text": "The professional advisor's role is limited to collecting entry fees from participants, which is a minor administrative task"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The professional advisor must maintain independence and cannot participate as a competing designer.",
+        "c": "Publicizing results is one minor function; the advisor's primary role encompasses comprehensive competition organization and oversight.",
+        "d": "Fee collection is an administrative task, not the professional advisor's defining responsibility per SPP Doc 208.",
+        "correct": "SPP Doc 208 designates the professional advisor as an architect nominated by the owner and approved by IAPOA (UAP) with responsibility for organizing and administering the competition. This includes ensuring that procedures comply with professional standards and maintaining the integrity and credibility of the entire competitive process.",
+        "takeaway": "Professional advisors maintain procedural and professional standards throughout competition administration."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:97371fa04e0309858eac60aefed9a49f05f097607ffe8a0e6b53c9e166a5d588"
+    },
+    {
+      "question_id": "f6d525f0-6053-4fe9-bf91-027d72eb1b17",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "How do SPP Doc 208 provisions for publication rights and design team acknowledgment serve the broader profession?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clear provisions protect intellectual property, ensure proper attribution, and maintain professional standards while building credibility and preventing disputes throughout the competitive process"
+        },
+        {
+          "id": "b",
+          "text": "Publication rights are irrelevant to professional practice and SPP Doc 208 does not address them, focusing instead on other contractual obligations"
+        },
+        {
+          "id": "c",
+          "text": "SPP Doc 208 mandates that all winning designs must be published without requiring designer consent or acknowledgment, ensuring public access to architectural innovations"
+        },
+        {
+          "id": "d",
+          "text": "Design team acknowledgment is a courtesy matter with no professional implications according to SPP Doc 208, allowing flexibility in crediting contributions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP Doc 208 recognizes publication rights and acknowledgment as integral to professional ethics and competition legitimacy.",
+        "c": "SPP Doc 208 requires respecting designer intellectual property; consent and proper attribution are essential requirements.",
+        "d": "Professional acknowledgment carries significant career and ethical implications per SPP Doc 208; it is not merely courtesy.",
+        "correct": "SPP Doc 208 establishes clear publication rights and designer acknowledgment provisions as mechanisms to protect intellectual property ownership, ensure appropriate professional credit, prevent exploitative use of designs, and build competition credibility through fair treatment. These provisions demonstrate respect for professional work and contribute to the professionalization of the competition process, encouraging higher quality submissions and broader professional participation.",
+        "takeaway": "IP protection and proper attribution through publication provisions strengthen competition credibility and professional practice standards."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fd67037a5968a5bd74774da1d1cd9236fd003d4cc98816fbe909b0681081dec0"
+    },
+    {
+      "question_id": "86cb10ca-ce47-4494-b870-a0e8d2c7ae5e",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "According to SPP Doc 208, what is the primary purpose of architectural design competitions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To select exceptional design solutions through competitive evaluation while stimulating creative exploration and elevating design standards"
+        },
+        {
+          "id": "b",
+          "text": "To provide free architectural designs for low-budget projects, making architecture accessible"
+        },
+        {
+          "id": "c",
+          "text": "To replace the traditional architectural licensing examination requirement, offering an alternative path"
+        },
+        {
+          "id": "d",
+          "text": "To reduce architectural fees by forcing designers to compete on price, lowering costs"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This misrepresents competitions as purely cost-saving mechanisms rather than quality and innovation drivers as established in SPP Doc 208.",
+        "c": "ADCs serve a distinct role in professional practice; they do not substitute for licensing examinations which ensure minimum professional competency.",
+        "d": "While competitions involve selection among designs, SPP Doc 208 emphasizes quality and innovation, not price reduction.",
+        "correct": "SPP Doc 208 establishes architectural design competitions as mechanisms to select high-quality design solutions while promoting creative exploration within the profession. The document's foundational purpose is guiding promoters and owners in organizing competitions that elevate design standards and encourage innovative professional practice.",
+        "takeaway": "ADCs identify exceptional designs and stimulate creative exploration in the profession."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aed573905b2fa7c27aecc3814cec1ed426511b0c93e53d7c3b498f54dd7d6537"
+    },
+    {
+      "question_id": "500abdab-8eb8-4d57-8d61-4920c18352d9",
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "topic_id": "5c0db34e-27b5-43a7-b9df-e60b24b0f294",
+      "text": "What is the key distinction between Project Architectural Design Competitions and Ideas Competitions in SPP Doc 208?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project competitions require complete architectural documentation for specific sites, while Ideas competitions explore conceptual solutions without immediate construction intent"
+        },
+        {
+          "id": "b",
+          "text": "Ideas competitions are more prestigious and valuable than Project competitions, which is not necessarily true"
+        },
+        {
+          "id": "c",
+          "text": "Project competitions are only for government agencies, while Ideas competitions are exclusively for private developers, which is not accurate"
+        },
+        {
+          "id": "d",
+          "text": "There is no functional difference between the two competition types, which is incorrect"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Both competition types serve legitimate professional purposes; prestige varies by context and not by inherent type designation per SPP Doc 208.",
+        "c": "SPP Doc 208 establishes that both competition types can serve public and private sector organizations without sector restrictions.",
+        "d": "The distinction in scope, documentation requirements, and intent creates functional differences essential to SPP Doc 208's framework.",
+        "correct": "SPP Doc 208 defines two distinct competition types. Project ADCs address specific construction objectives with complete documentation requirements for defined sites. Ideas Competitions focus on conceptual exploration and innovation without requiring immediate implementation, serving different professional and institutional needs.",
+        "takeaway": "Project competitions = site-specific full documentation; Ideas competitions = conceptual exploration."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 208",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-010-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.925465+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:44af5fd3d49f19aee93ffa77ed752606039bfd7593eb6a336d3a870de3b57bf4"
+    }
+  ]
+}

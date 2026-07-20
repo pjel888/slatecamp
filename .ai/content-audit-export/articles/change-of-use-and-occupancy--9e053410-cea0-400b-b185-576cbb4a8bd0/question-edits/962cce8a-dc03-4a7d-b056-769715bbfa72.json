@@ -2,9 +2,9 @@
   "question_id": "962cce8a-dc03-4a7d-b056-769715bbfa72",
   "baseline_hash": "sha256:d9771eacad8b7eda62f8533a519e323a5ae6ed99264a291ad70a1e271dcad1be",
   "action": "replace",
-  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
-  "approved_by": "codex-local-first-batch-048",
-  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
     "parent_article_slug": "change-of-use-and-occupancy",
@@ -50,28 +50,28 @@
     "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
   },
   "proposed": {
-    "text": "What does Section 309 say about occupancy before a Certificate of Occupancy?",
+    "text": "What is the correct sequence of steps in the change of use and occupancy process under PD 1096?",
     "options": [
       {
         "id": "a",
-        "text": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy."
+        "text": "Inspection → Assessment → Submit B-12 → Certificate of Occupancy"
       },
       {
         "id": "b",
-        "text": "A"
+        "text": "Submit B-12 → Assessment → Inspection → Certificate of Occupancy"
       },
       {
         "id": "c",
-        "text": " "
+        "text": "Assessment → Submit B-12 → Certificate of Occupancy → Inspection"
       },
       {
         "id": "d",
-        "text": "b"
+        "text": "Submit B-12 → Certificate of Occupancy → Inspection → Assessment"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy. This is supported by A building may be occupied once the FLAR table is printed..",
-    "explanation": "No building or structure may be used or occupied until the Building Official has issued a Certificate of Occupancy. The cited local source family controls this item: A building may be occupied once the FLAR table is printed..",
-    "code_citation": "A building may be occupied once the paint is complete."
+    "correct_option_id": "b",
+    "rationale": "The proper process sequence under Sec. 702 is: (1) Submit NBC Form B-12 to initiate the application; (2) OBO conducts a fee and compliance Assessment; (3) Physical Inspection of the existing building; (4) Issuance of the Certificate of Occupancy upon satisfactory compliance. The inspection must occur before the certificate is issued — not after. Option A inverts the first two steps. Options C and D place the certificate before the inspection.",
+    "explanation": "B-12 → Assessment → Inspection → Certificate of Occupancy. The sequence matters: you cannot issue the Certificate of Occupancy before inspecting the building. The inspection verifies that the building actually meets the Code requirements for the new use.",
+    "code_citation": "PD 1096, Rule VII, Sec. 702"
   }
 }

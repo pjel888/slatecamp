@@ -2,9 +2,9 @@
   "question_id": "eb541d35-35f7-421e-ad90-28faf6a55e39",
   "baseline_hash": "sha256:206c42e42b9ff0f1f39f3c63f952c6e1ad1f2e1a10be8f4a6450dc4b58ee4541",
   "action": "replace",
-  "reason": "source-audited-article-batch-104-local-first rewrote this linked question after local raw-source recheck for lea-prac-cmp-001-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-104",
-  "approved_at": "2026-05-13T11:58:43+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
     "parent_article_slug": "lea-prac-cmp-001-core-concept",
@@ -48,34 +48,28 @@
     "batch_id": "source-audited-article-batch-104-local-first"
   },
   "proposed": {
-    "text": "For a Group 1 project not over PHP 50M, what minimum basic fee does the local SPP 202 OCR anchor support?",
+    "text": "Under the Architect's Guidelines, what is the recommended fee percentage for a Group 1 project (Simplest Utilization and Character) with a Project Construction Cost of ₱50 million or less?",
     "options": [
       {
         "id": "a",
-        "text": "3%"
+        "text": "5% DAEDS of PCC"
       },
       {
         "id": "b",
-        "text": "6% of construction cost"
+        "text": "6% DAEDS of PCC"
       },
       {
         "id": "c",
-        "text": "10% of construction cost"
+        "text": "7% DAEDS of PCC"
       },
       {
         "id": "d",
-        "text": "150% of PCC directly"
+        "text": "8% DAEDS of PCC"
       }
     ],
-    "correct_option_id": "b",
-    "rationale": "The local OCR anchor supports Group 1 at 6% for projects not over PHP 50M.",
-    "explanation": "104 source-audited rewrite: The local OCR anchor supports Group 1 at 6% for projects not over PHP 50M.",
-    "code_citation": "raw markdown lines 313-344; raw markdown lines 350-381; raw markdown lines 397-469; raw markdown lines 548-586; batch 104 OCR anchor extract lines 1-10 for SPP 202 PDF pages 55-57",
-    "application_context": "professional_practice_source_audit",
-    "practice_context": [
-      "professional practice",
-      "source-audited batch 104"
-    ],
-    "model_id": "BATCH-104-lea-prac-cmp-001-core-concept-002"
+    "correct_option_id": "a",
+    "rationale": "the Architect's Guidelines specifies that Group 1 (Simplest Utilization and Character) projects with PCC of ₱50M or less carry a DAEDS fee of 5% of PCC. [B]: 6% is the base rate for Group 2 (Moderate Complexity), not Group 1. [C]: 7% is the base rate for Group 3 (Exceptional Character), not Group 1. [D]: 8% is an outdated rate from the 1979 UAP schedule — the Architect's Guidelines revised these percentages.",
+    "explanation": null,
+    "code_citation": "Architect's Guidelines, Project Classification Group 1"
   }
 }

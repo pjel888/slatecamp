@@ -1,0 +1,758 @@
+{
+  "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3bfa982776db68a5cc536cb676f77811fb8db0a48a842e6af6bfdaaf8efe72ff",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "b78d8690-1339-4fef-a3da-19bcd1f16a4d",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "An access control system's IP network is isolated on a dedicated VLAN with QoS prioritization. Why is network isolation important for access control systems, and what cybersecurity control is critical if the VLAN is breached?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Isolation prevents unauthorized door locks; encryption of commands prevents unauthorized unlock commands even if the network is compromised"
+        },
+        {
+          "id": "b",
+          "text": "B. QoS ensures all access control traffic has priority; isolation is only for administrative convenience and does not enhance security"
+        },
+        {
+          "id": "c",
+          "text": "C. Isolation prevents the access control system from interfering with building WiFi; encryption is unnecessary if VLAN tagging is enabled, as it provides sufficient security"
+        },
+        {
+          "id": "d",
+          "text": "D. Network isolation eliminates the need for firewalls; QoS alone provides sufficient cybersecurity protection, making additional measures redundant"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "QoS ensures responsiveness but does not provide security. Isolation is not merely administrative convenience; it limits attack surface by preventing access control from being targeted by general-network malware.",
+        "c": "Isolation does not prevent WiFi interference (different frequency bands). VLAN tagging is a networking construct, not a security measure against command spoofing; encryption of commands is required.",
+        "d": "Network isolation complements firewalls but does not replace them. QoS is traffic prioritization, not cybersecurity; firewalls, IDS, and encrypted commands provide actual security controls.",
+        "correct": "Isolated VLAN segregates access control traffic from general building LAN, reducing exposure to compromised endpoints. However, if the VLAN is breached (e.g., rogue device injected, network tap installed), encrypted command/response is critical to prevent an attacker from sending unencrypted 'unlock door' commands to readers or controllers. IP-based systems must use TLS/SSL encryption for all server-to-reader communication.",
+        "takeaway": "Defense-in-depth requires network isolation (VLAN), firewall rules, and cryptographic protection of access control commands to mitigate IP-based system vulnerabilities."
+      },
+      "explanation": "QoS ensures responsiveness but does not provide security. Isolation is not merely administrative convenience; it limits attack surface by preventing access control from being targeted by general-network malware. Isolation does not prevent WiFi interference (different frequency bands). VLAN tagging is a networking construct, not a security measure against command spoofing; encryption of commands is required. Network isolation complements firewalls but does not replace them. QoS is traffic prioritization, not cybersecurity; firewalls, IDS, and encrypted commands provide actual security controls. Isolated VLAN segregates access control traffic from general building LAN, reducing exposure to compromised endpoints. However, if the VLAN is breached (e.g., rogue device injected, network tap installed), encrypted command/response is critical to prevent an attacker from sending unencrypted 'unlock door' commands to readers or controllers. IP-based systems must use TLS/SSL encryption for all server-to-reader communication. Defense-in-depth requires network isolation (VLAN), firewall rules, and cryptographic protection of access control commands to mitigate IP-based system vulnerabilities.",
+      "code_citation": "Article section 'TCP/IP-Based Access Control' security concern paragraph; NIST SP 800-53 cybersecurity framework",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:03:10.067021+00:00",
+      "content_hash": "sha256:efebf8fea43730d43462e83d7baa79ac4380df2318dd2f056c57bcc537d16327"
+    },
+    {
+      "question_id": "e2c8705e-36c7-4ff9-82c7-f06bdc39ff79",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "During the design phase of an access control system for a new shopping mall in Cebu, the integrator specifies Category 5e cabling in conduit for reader/lock connections and mentions future scalability to PoE readers. What is the primary advantage of preparing for PoE infrastructure even if Phase 1 uses non-PoE readers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. PoE eliminates the need for UPS backup power supplies, which are typically required for non-PoE systems to ensure continuous operation during power outages"
+        },
+        {
+          "id": "b",
+          "text": "B. PoE infrastructure (802.3af 15.4 W per port) simplifies future reader upgrades by providing combined power and data in a single cable, reducing installation labor"
+        },
+        {
+          "id": "c",
+          "text": "C. PoE reduces the number of cable runs required by 50% compared to Wiegand or OSDP, allowing for a more streamlined and cost-effective installation process"
+        },
+        {
+          "id": "d",
+          "text": "D. PoE readers are immune to RF interference and require no shielding in the conduit, which can otherwise be a significant concern in environments with high electromagnetic activity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PoE does not replace UPS backup; a UPS still backs the PoE switch to ensure 4–8 hours of offline operation during mains failure.",
+        "c": "PoE reduces cable types (power + data consolidated) but does not reduce total runs by 50%. Conduit pathways are similar whether using separate power or PoE.",
+        "d": "PoE is an electrical power delivery standard; RF shielding is determined by reader frequency (125 kHz, 13.56 MHz, BLE), not by power delivery method.",
+        "correct": "PoE infrastructure (IEEE 802.3af/at) combines power and data over a single Ethernet cable, eliminating the need for separate 24V DC power pairs in conduit. This simplifies future reader replacements and upgrades without re-running power cables. Category 5e cabling supports PoE infrastructure (15.4 W per 802.3af port, 30 W per 802.3at port), making upfront investment in Cat 5e future-proof.",
+        "takeaway": "Specifying Category 5e with PoE-capable infrastructure during initial installation enables cost-effective future upgrades to IP-based PoE readers without major re-cabling efforts."
+      },
+      "explanation": "PoE does not replace UPS backup; a UPS still backs the PoE switch to ensure 4–8 hours of offline operation during mains failure. PoE reduces cable types (power + data consolidated) but does not reduce total runs by 50%. Conduit pathways are similar whether using separate power or PoE. PoE is an electrical power delivery standard; RF shielding is determined by reader frequency (125 kHz, 13.56 MHz, BLE), not by power delivery method. PoE infrastructure (IEEE 802.3af/at) combines power and data over a single Ethernet cable, eliminating the need for separate 24V DC power pairs in conduit. This simplifies future reader replacements and upgrades without re-running power cables. Category 5e cabling supports PoE infrastructure (15.4 W per 802.3af port, 30 W per 802.3at port), making upfront investment in Cat 5e future-proof. Specifying Category 5e with PoE-capable infrastructure during initial installation enables cost-effective future upgrades to IP-based PoE readers without major re-cabling efforts.",
+      "code_citation": "Article section 'Cabling Infrastructure' > 'Structured Cabling for Access Control' table and 'Typical Cable Runs'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:03:10.337239+00:00",
+      "content_hash": "sha256:cb593b32edcc5f415c11fc0d1635ba2edc183805f4928ee698c2e9b60198d67b"
+    },
+    {
+      "question_id": "44d2f59f-abee-4590-ab52-de9e0a0e6137",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A visitor management system at a Philippine office tower issues temporary mobile credentials (push notification) to guests. What is the key security advantage of revocable mobile credentials over printed temporary proximity cards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Mobile credentials are cheaper to produce and distribute, offering cost savings for large organizations"
+        },
+        {
+          "id": "b",
+          "text": "B. Mobile credentials can be instantly revoked in real-time if a phone is lost or access is withdrawn; printed cards remain valid until expiration"
+        },
+        {
+          "id": "c",
+          "text": "C. Mobile credentials use 125 kHz RF technology, making them immune to interception, which is a common security concern"
+        },
+        {
+          "id": "d",
+          "text": "D. Mobile credentials automatically upgrade from BLE to NFC based on reader availability, ensuring compatibility with various systems"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mobile credentials incur cloud/app infrastructure costs, offsetting low per-card printing costs. Overall cost advantage is operational, not per-unit production.",
+        "c": "Mobile credentials operate at 2.4 GHz (BLE) or 13.56 MHz (NFC), not 125 kHz. RF frequency does not determine immunity to interception; encryption does.",
+        "d": "BLE and NFC are separate protocols; readers detect and use one or the other based on their capabilities. Readers do not automatically switch protocols.",
+        "correct": "Mobile credentials (BLE/NFC via smartphone app) can be instantly revoked in real-time through the central access control server if the phone is lost, stolen, or employment terminates. Printed temporary cards remain valid for their entire validity window, creating a security window if cards are lost. Tokens are dynamically managed without physical distribution.",
+        "takeaway": "Mobile credentials enable dynamic access revocation without physical card collection, improving security in high-turnover environments and reducing post-termination access breaches."
+      },
+      "explanation": "Mobile credentials incur cloud/app infrastructure costs, offsetting low per-card printing costs. Overall cost advantage is operational, not per-unit production. Mobile credentials operate at 2.4 GHz (BLE) or 13.56 MHz (NFC), not 125 kHz. RF frequency does not determine immunity to interception; encryption does. BLE and NFC are separate protocols; readers detect and use one or the other based on their capabilities. Readers do not automatically switch protocols. Mobile credentials (BLE/NFC via smartphone app) can be instantly revoked in real-time through the central access control server if the phone is lost, stolen, or employment terminates. Printed temporary cards remain valid for their entire validity window, creating a security window if cards are lost. Tokens are dynamically managed without physical distribution. Mobile credentials enable dynamic access revocation without physical card collection, improving security in high-turnover environments and reducing post-termination access breaches.",
+      "code_citation": "Article section 'Mobile Credentials (BLE & NFC)' and 'Visitor Management & Temporary Credentials'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:03:10.468928+00:00",
+      "content_hash": "sha256:67d112a6e6cb5c721743bdd5441051832868d6d9653e9ce76539da50573d7fbd"
+    },
+    {
+      "question_id": "d31806e0-1733-42af-84c5-6bbd6328999d",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A high-security facility requires anti-passback enforcement, meaning the same credential cannot be used to enter twice in succession without an exit event. Which access control protocol and architecture best supports real-time anti-passback detection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Wiegand protocol with local panel relay modules tracking last badge swipe time, which is a common method for basic access control"
+        },
+        {
+          "id": "b",
+          "text": "B. OSDP with bidirectional status polling every 5 seconds per reader to detect double-entry attempts"
+        },
+        {
+          "id": "c",
+          "text": "C. IP-based centralized system with event-driven real-time reporting (< 1 second) and database-driven anti-passback rules"
+        },
+        {
+          "id": "d",
+          "text": "D. Proximity cards with motion sensor REX devices to prevent tailgating only, which does not address anti-passback"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wiegand-based local panels cannot track state across multiple readers without extensive inter-panel communication. Relay modules lack intelligence for credential-level anti-passback logic.",
+        "b": "OSDP's 200–500 ms polling interval creates a 0.4–1 second lag, allowing double-entry attempts to slip through before the system registers the first badge swipe at the exit.",
+        "d": "Motion sensors prevent tailgating (multiple people passing through one badge swipe) but do not prevent anti-passback (same person, same credential, multiple entries without exits).",
+        "correct": "IP-based centralized systems with sub-second event reporting enable real-time anti-passback logic at the server. When a credential swipes at an entry reader, the server logs the event and blocks the same credential from being used at the same entry until an exit event is recorded. This requires centralized state management and low-latency communication.",
+        "takeaway": "Anti-passback rules require real-time, centralized credential state management; legacy panel-based systems cannot enforce this due to polling delays and lack of inter-panel synchronization."
+      },
+      "explanation": "Wiegand-based local panels cannot track state across multiple readers without extensive inter-panel communication. Relay modules lack intelligence for credential-level anti-passback logic. OSDP's 200–500 ms polling interval creates a 0.4–1 second lag, allowing double-entry attempts to slip through before the system registers the first badge swipe at the exit. Motion sensors prevent tailgating (multiple people passing through one badge swipe) but do not prevent anti-passback (same person, same credential, multiple entries without exits). IP-based centralized systems with sub-second event reporting enable real-time anti-passback logic at the server. When a credential swipes at an entry reader, the server logs the event and blocks the same credential from being used at the same entry until an exit event is recorded. This requires centralized state management and low-latency communication. Anti-passback rules require real-time, centralized credential state management; legacy panel-based systems cannot enforce this due to polling delays and lack of inter-panel synchronization.",
+      "code_citation": "Article sections 'IP-Based Access Control' and 'Access Control Architecture'; anti-passback is an advanced security requirement not explicitly detailed but inferable from system architecture discussion",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:03:10.603916+00:00",
+      "content_hash": "sha256:59b06ef659727ad06baaabe91821088c5ccd4b87288e67ee4b9d74eb45281589"
+    },
+    {
+      "question_id": "4043fba2-585d-4962-b639-c7372d4a4a2a",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A condominium in Metro Manila reports 60–80% of access incidents involve cloned proximity cards. The integrator proposes upgrading to smart cards (13.56 MHz) but the developer wants to minimize cost. What is the technical and operational trade-off of maintaining proximity cards while implementing stricter monitoring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Proximity cards remain vulnerable to cloning; monitoring can detect unauthorized access patterns post-facto but cannot prevent cloning"
+        },
+        {
+          "id": "b",
+          "text": "B. Monitoring proximity card usage eliminates cloning risk by alerting on duplicate card swipes within a 1-second window"
+        },
+        {
+          "id": "c",
+          "text": "C. Smart cards cost 3–5x more per card but add on-card encryption; proximity cards with real-time RFID monitoring are equally secure"
+        },
+        {
+          "id": "d",
+          "text": "D. Cloned proximity cards are detectable through facial recognition cross-check; no credential upgrade is needed"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Monitoring cannot prevent cloning; a cloned card presents the same card ID as the original and is indistinguishable at the reader level. Post-hoc detection via pattern analysis (e.g., impossible travel between two locations) is possible but not foolproof.",
+        "c": "Smart cards do cost 2–3x more but provide encryption. RFID monitoring (live field strength detection) cannot eliminate cloning—an attacker can still capture the unencrypted card number passively.",
+        "d": "Facial recognition cross-check adds cost and operational friction; it does not address the root cause (unencrypted credential broadcast). It is a compensating control, not a replacement for secure credentials.",
+        "correct": "Proximity card cloning occurs because unencrypted card numbers are broadcast openly. Monitoring/alerting on duplicate swipes can detect unauthorized access after the fact (forensic value) but cannot prevent a cloned card from being used to gain access. The cloning vulnerability persists at the protocol level. Smart cards with on-card encryption and mutual authentication eliminate cloning risk at the credential level.",
+        "takeaway": "Proximity card cloning is a fundamental protocol vulnerability; monitoring mitigates risk post-access but does not prevent breach. Credential upgrade (smart card or biometric) is the only technical fix."
+      },
+      "explanation": "Monitoring cannot prevent cloning; a cloned card presents the same card ID as the original and is indistinguishable at the reader level. Post-hoc detection via pattern analysis (e.g., impossible travel between two locations) is possible but not foolproof. Smart cards do cost 2–3x more but provide encryption. RFID monitoring (live field strength detection) cannot eliminate cloning—an attacker can still capture the unencrypted card number passively. Facial recognition cross-check adds cost and operational friction; it does not address the root cause (unencrypted credential broadcast). It is a compensating control, not a replacement for secure credentials. Proximity card cloning occurs because unencrypted card numbers are broadcast openly. Monitoring/alerting on duplicate swipes can detect unauthorized access after the fact (forensic value) but cannot prevent a cloned card from being used to gain access. The cloning vulnerability persists at the protocol level. Smart cards with on-card encryption and mutual authentication eliminate cloning risk at the credential level. Proximity card cloning is a fundamental protocol vulnerability; monitoring mitigates risk post-access but does not prevent breach. Credential upgrade (smart card or biometric) is the only technical fix.",
+      "code_citation": "Article section 'Credential Technologies' > 'Proximity Cards'; Philippine Security Industry Association breach statistics",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:03:09.682212+00:00",
+      "content_hash": "sha256:98c9fccd4e58e85440075e09ff5def5e152e10c272404557052ce13d2aea6a35"
+    },
+    {
+      "question_id": "ae6a1ff0-b4d9-4c67-b99d-7f494df6df08",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "What is the primary difference between Wiegand and OSDP protocols in terms of bidirectional communication capability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Wiegand supports full-duplex communication; OSDP supports half-duplex only, which limits its functionality"
+        },
+        {
+          "id": "b",
+          "text": "B. Wiegand cannot natively send door lock status or REX signals; OSDP provides real-time bidirectional status and tamper alerts"
+        },
+        {
+          "id": "c",
+          "text": "C. Both protocols are unidirectional and require auxiliary relay modules for status feedback, which complicates installation"
+        },
+        {
+          "id": "d",
+          "text": "D. OSDP is limited to 100 bits per second; Wiegand supports up to 115,200 bps, offering faster data transfer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wiegand is half-duplex, not full-duplex. OSDP is also half-duplex (RS-485 serial) but supports bidirectional messages within the half-duplex constraint.",
+        "c": "Wiegand requires auxiliary modules, but OSDP is inherently bidirectional without external modules.",
+        "d": "Wiegand operates at 100 bits per second (fixed), while OSDP supports 9,600–115,200 bps variable data rates.",
+        "correct": "Wiegand is a legacy, one-way protocol that transmits card data only; it cannot natively receive door lock status or REX signals from the controller. Auxiliary relay modules are needed for bidirectional feedback. OSDP (IEC 60839-11-5) is a bidirectional, secured protocol supporting real-time lock status, tamper alerts, power failure reporting, and biometric enrollments.",
+        "takeaway": "Modern access control favors OSDP's bidirectional capability for real-time status monitoring, door health diagnostics, and secure credential transmission over legacy Wiegand's one-way design."
+      },
+      "explanation": "Wiegand is half-duplex, not full-duplex. OSDP is also half-duplex (RS-485 serial) but supports bidirectional messages within the half-duplex constraint. Wiegand requires auxiliary modules, but OSDP is inherently bidirectional without external modules. Wiegand operates at 100 bits per second (fixed), while OSDP supports 9,600–115,200 bps variable data rates. Wiegand is a legacy, one-way protocol that transmits card data only; it cannot natively receive door lock status or REX signals from the controller. Auxiliary relay modules are needed for bidirectional feedback. OSDP (IEC 60839-11-5) is a bidirectional, secured protocol supporting real-time lock status, tamper alerts, power failure reporting, and biometric enrollments. Modern access control favors OSDP's bidirectional capability for real-time status monitoring, door health diagnostics, and secure credential transmission over legacy Wiegand's one-way design.",
+      "code_citation": "Article sections 'Wiegand Protocol' and 'Open Supervised Device Protocol (OSDP)'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:03:09.934576+00:00",
+      "content_hash": "sha256:15e029f983e0589ab33d2bb4ad02e638200be5956629b5964065534c1a19585b"
+    },
+    {
+      "question_id": "e377f90c-4040-4f0d-bcfd-e96b04e16dc1",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "An office building's access control system integrates with the building management system (BMS) to track occupancy. Which metric does occupancy data feed into for HVAC scheduling and energy optimization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Real-time door lock status and maintenance schedules, which are crucial for security but not directly related to HVAC"
+        },
+        {
+          "id": "b",
+          "text": "B. Number of people in building/floor for heating, cooling, and ventilation scheduling"
+        },
+        {
+          "id": "c",
+          "text": "C. Elevator destination prediction and car pre-staging, which optimizes vertical transportation efficiency"
+        },
+        {
+          "id": "d",
+          "text": "D. Fire alarm sensor sensitivity calibration based on floor density, ensuring safety compliance but not HVAC optimization"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Door lock status is managed by the access control system itself, not the BMS; maintenance is separate from occupancy optimization.",
+        "c": "Elevator pre-staging uses occupancy data, but this is a separate integration point (mentioned in the article) and not the primary HVAC application.",
+        "d": "Fire alarm sensor sensitivity is independent of access control occupancy data; fire detection is autonomous.",
+        "correct": "Access control occupancy data (number of badge swipes per floor/building) feeds into BMS HVAC systems to optimize heating, cooling, and ventilation scheduling. Occupancy-based HVAC reduces energy consumption during off-hours or low-occupancy periods—a key ISO 50001 energy management metric.",
+        "takeaway": "BMS integration with access control enables data-driven energy management by correlating occupancy patterns with HVAC and lighting schedules, reducing operational costs."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Integration with Building Management Systems'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7086c9854bae6ca9ff142a8d5c69a529c3602c47bb81661a584599fc18535111"
+    },
+    {
+      "question_id": "83a757ec-4488-441c-812b-993eb67f7282",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "What are the three main components of a typical access control system architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Card readers, electric locks, and motion sensors only, which are essential for basic access control"
+        },
+        {
+          "id": "b",
+          "text": "B. Readers (credential capture), controllers (access decision), and electric locks (access enforcement), plus REX devices for egress"
+        },
+        {
+          "id": "c",
+          "text": "C. Fire alarm panel, elevator system, and BMS integration, which are part of a comprehensive building management system"
+        },
+        {
+          "id": "d",
+          "text": "D. PoE switch, UPS battery, and network cable, providing power and connectivity for system components"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Motion sensors are optional REX devices, not core components. All three are required for proper system function.",
+        "c": "Fire alarm, elevator, and BMS are building systems that integrate with access control, not component parts of the access control system itself.",
+        "d": "PoE switch, UPS, and cabling are infrastructure, not functional access control components.",
+        "correct": "Access control systems consist of three functional components: (1) Readers capture credentials (card swipe, biometric scan, mobile tap); (2) Controllers receive reader input, query access rights database, and send lock release commands; (3) Electric locks (solenoid or motor) enforce access by locking/unlocking doors. REX devices (push buttons, motion sensors, door contacts) provide emergency egress without credential presentation.",
+        "takeaway": "Reader-Controller-Lock is the functional backbone of access control; REX, fire integration, and BMS integration are critical additions for life safety and operational intelligence."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Access Control Architecture' > 'Controller & Reader Integration'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd41aa74f0e15cc4ed349b9a68614d7b7175d0ccffb034a2ba4bfd1d77533cf7"
+    },
+    {
+      "question_id": "028e920a-269e-4453-994f-b5027ead68f8",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A financial institution operates a cash-handling room protected by fingerprint-based access control. According to NIST FRVT benchmarks, what is the false acceptance rate (FAR) risk, and what operational procedure should mitigate unauthorized access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. FAR ~0.01–0.1% at industry standards; implement manual identity verification (e.g., guard visual check) as secondary authentication"
+        },
+        {
+          "id": "b",
+          "text": "B. FAR is zero if enrollment uses 8–10 fingers; fingerprints are unique and cannot be spoofed, ensuring absolute security"
+        },
+        {
+          "id": "c",
+          "text": "C. FAR >5%; fingerprint readers should only be used as convenience, not security, and require PIN codes as secondary factor for enhanced protection"
+        },
+        {
+          "id": "d",
+          "text": "D. FAR varies based on database size; larger enrollment databases increase false acceptance exponentially, necessitating additional security measures"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Enrollment of 8–10 fingers reduces false rejection rate (FRR) but does not eliminate false acceptance. Biometric systems always have non-zero FAR due to template matching variance and spoofing risk (fake fingerprints).",
+        "c": "FAR of >5% would be unacceptable for high-security facilities. FRR of 2–5% is typical for fingerprint systems, causing legitimate users to be rejected occasionally.",
+        "d": "FAR is not exponentially sensitive to database size under proper algorithm implementation. NIST benchmarks control for database size, showing consistent FAR across 1,000–10,000 template databases.",
+        "correct": "Fingerprint readers achieve FAR of 0.01–0.1% (1 false acceptance per 1,000–10,000 attempts) at industry-standard security levels. For high-security areas (cash handling, server rooms), this residual error rate requires secondary authentication such as manual visual verification by a security officer or a PIN code to ensure no unauthorized access occurs.",
+        "takeaway": "High-security facilities should implement multi-factor authentication combining biometrics (fingerprint) with secondary factors (PIN, guard verification) to mitigate the residual FAR risk."
+      },
+      "explanation": "Enrollment of 8–10 fingers reduces false rejection rate (FRR) but does not eliminate false acceptance. Biometric systems always have non-zero FAR due to template matching variance and spoofing risk (fake fingerprints). FAR of >5% would be unacceptable for high-security facilities. FRR of 2–5% is typical for fingerprint systems, causing legitimate users to be rejected occasionally. FAR is not exponentially sensitive to database size under proper algorithm implementation. NIST benchmarks control for database size, showing consistent FAR across 1,000–10,000 template databases. Fingerprint readers achieve FAR of 0.01–0.1% (1 false acceptance per 1,000–10,000 attempts) at industry-standard security levels. For high-security areas (cash handling, server rooms), this residual error rate requires secondary authentication such as manual visual verification by a security officer or a PIN code to ensure no unauthorized access occurs. High-security facilities should implement multi-factor authentication combining biometrics (fingerprint) with secondary factors (PIN, guard verification) to mitigate the residual FAR risk.",
+      "code_citation": "Article section 'Biometric Systems' > 'Fingerprint Recognition'; NIST FRVT methodology",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:03:10.20527+00:00",
+      "content_hash": "sha256:5a1467f154adb99f89bf5f8bebc6a8f368259775712ea845c87c21f92d591504"
+    },
+    {
+      "question_id": "2cff9738-f6fa-43f0-bc15-193eb27aa2bf",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "Which credential technology operates at 125 kHz and has a typical read distance of 5–50 cm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Smart cards (ISO/IEC 14443), which typically operate at 13.56 MHz and are used for secure transactions"
+        },
+        {
+          "id": "b",
+          "text": "B. Proximity cards (125 kHz, e.g. HID Prox, ISO 11784/11785 compatible)"
+        },
+        {
+          "id": "c",
+          "text": "C. Iris scanning readers, which use biometric data to authenticate users and do not rely on radio frequencies"
+        },
+        {
+          "id": "d",
+          "text": "D. Fingerprint recognition devices, which require physical contact and do not operate on radio frequencies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Smart cards operate at 13.56 MHz, not 125 kHz, and have a shorter 1–10 cm read range with on-card encryption capability.",
+        "c": "Iris scanning uses near-infrared wavelengths at 25–35 cm enrollment distance, not RF-based 125 kHz signaling.",
+        "d": "Fingerprint readers use optical or capacitive sensing technology, not RF-based transmission at 125 kHz.",
+        "correct": "Proximity cards (125 kHz LF RFID, e.g. HID Prox) operate at 125 kHz frequency with a 5–50 cm passive read distance. They are cost-effective (~₱50–120 per card) and widely deployed in condominium lobbies and office building entrances in the Philippines.",
+        "takeaway": "Proximity cards are legacy, cost-effective RF-based credentials vulnerable to cloning due to unencrypted transmission; smart cards and biometrics provide stronger authentication."
+      },
+      "explanation": null,
+      "code_citation": "ISO/IEC 14223-1:2013; Article content section 'Credential Technologies'",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed773909ed038d7fe778e74be09a5ded6bd2cee9d4baa0b8d63ddc11e6e28ed6"
+    },
+    {
+      "question_id": "4f56848f-2403-4e60-906d-3f2b4c8116c8",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A security integrator is designing an access control system for a 30-story mixed-use building in Makati with 150 doors. The design requires sub-second event reporting, centralized credential management across all floors, and remote unlock capability. Which architecture would best meet these requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Multiple standalone Wiegand-based panels (1 per 5 floors) with manual credential updates, which may lead to delays"
+        },
+        {
+          "id": "b",
+          "text": "B. Single legacy RS-485 OSDP controller managing all 150 doors with 1–10 second polling latency, potentially causing bottlenecks"
+        },
+        {
+          "id": "c",
+          "text": "C. IP-based cloud or on-premises system (e.g., Genetec, Salto) with centralized server, real-time event logging, and encrypted remote access"
+        },
+        {
+          "id": "d",
+          "text": "D. Hybrid system using proximity card readers with QR-code fallback for offline operation, providing flexibility but limited integration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wiegand-based panels have 500 m distance limitations and lack real-time reporting. Manual credential updates are operationally expensive and error-prone at 150-door scale.",
+        "b": "Legacy RS-485 OSDP controllers experience 1–10 second polling latency, insufficient for real-time event visibility. Scalability beyond 32–64 doors per controller becomes complex.",
+        "d": "Proximity cards are vulnerable to cloning and do not support centralized management or remote unlock capability. QR-code fallback does not address core design requirements.",
+        "correct": "IP-based systems (TCP/IP over Ethernet) provide centralized management across multiple buildings, real-time event reporting (< 1 second latency), multi-site scalability, and secure remote unlock with encrypted authentication. These systems meet enterprise requirements for large, distributed facilities.",
+        "takeaway": "Enterprise access control favors IP-based architectures for scalability, real-time reporting, and remote management; legacy protocols suited only for small, single-location deployments."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'IP-Based vs. Legacy Panel-Based Systems' comparison table",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3ea52fe4907b5971e96407e3933cc444ad4b9fb91d5028eaa28b409cd5f6a53d"
+    },
+    {
+      "question_id": "4a8de0d6-ec81-400f-8d88-67ad658a8a3e",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "In the Philippines, access control systems must comply with PD 1096 regarding emergency egress. What is the fail-safe design requirement for REX (request-to-exit) devices during power loss?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. REX devices must maintain lock state during power loss to prevent security breaches, ensuring unauthorized access is controlled"
+        },
+        {
+          "id": "b",
+          "text": "B. REX devices must unlock doors immediately on power loss to allow evacuation without credential presentation"
+        },
+        {
+          "id": "c",
+          "text": "C. REX devices require a 30-second delay before unlocking to alert occupants, providing time for orderly evacuation"
+        },
+        {
+          "id": "d",
+          "text": "D. REX devices should signal the fire alarm panel before unlocking any doors, integrating with the building's emergency systems"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Maintaining lock state during power loss violates fail-safe principles and traps occupants during evacuations.",
+        "c": "A 30-second delay increases evacuation time and violates PD 1096 requirements, which mandate immediate unlock (within 5 seconds of fire alarm).",
+        "d": "Signaling the fire alarm is done by the access control integration (hardwired relay or network signal), not by REX devices. REX unlocks doors independently.",
+        "correct": "PD 1096 Rule IV Sec. 407 & Rule VIII Sec. 810 require fail-safe egress (unlock on powePD 1096 Rule IV Sec. 407 (egress) & Rule VIII Sec. 810 require fail-safe: locks unlock on power loss for emergency egress to allow emergency evacuation. This is a life-safety requirement ensuring occupants can exit without relying on electronic systems or credential presentation during emergencies or power outages.",
+        "takeaway": "Fail-safe design for emergency egress is a regulatory requirement; access control systems must unlock (not lock) doors when power or systems fail."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Request-to-Exit (REX)' > 'Fail-safe design' definition",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4f6a7a7a2770da6738b93a61cc1ec63a671e0fc16b425f53facecc213fcd74c0"
+    },
+    {
+      "question_id": "5d78ef55-599b-4002-a8e8-aa31951ab9f0",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A financial services building integrates iris scanning for ultra-high-security vault access. The integrator observes that iris readers can process only one person per 2–3 seconds due to enrollment and recognition time. During peak shift changes, 200 staff are expected to access the vault area within 5 minutes. What is the operational implication, and what is the appropriate design solution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 200 users in 5 minutes exceeds iris reader throughput (20–30 per minute); use iris as secondary authentication (anti-tailgating) with smart card readers as primary entry to avoid bottlenecks"
+        },
+        {
+          "id": "b",
+          "text": "B. Install 8–10 iris readers in parallel to achieve 200 users in 5 minutes; iris scanning provides superior security that justifies the cost"
+        },
+        {
+          "id": "c",
+          "text": "C. Iris scanning is unsuitable for high-volume access; switch to fingerprint recognition which supports higher throughput"
+        },
+        {
+          "id": "d",
+          "text": "D. Schedule shift changes to occur in multiple windows (1 hour instead of 5 minutes) to accommodate iris reader throughput limitations"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Installing 8–10 iris readers is technically feasible but operationally expensive (~₱640,000–1,500,000) and creates a redundancy/maintenance burden. Hybrid design is more practical.",
+        "c": "Fingerprint readers (optical/capacitive) support higher throughput but still provide enrollment/match latency ~0.5–1 second per person. Fingerprint is lower cost than iris but still slower than smart cards.",
+        "d": "Scheduling shift changes to 1-hour windows is operationally disruptive and defeats the purpose of iris security for normal access.",
+        "correct": "Iris readers process one person per 2–3 seconds, yielding ~20–30 users per minute per reader. 200 users in 5 minutes requires ~7–8 readers (at 25 users/min/reader). Rather than install 8 expensive iris readers (₱80,000–150,000 each), a better design uses smart cards for primary entry (fast, high-volume) and iris scanning as secondary anti-tailgating at the vault entrance. This balances security (iris prevents unauthorized follow-through) with operational throughput.",
+        "takeaway": "Biometric throughput constraints necessitate hybrid authentication architectures combining fast primary credentials (card) with high-security secondary factors (biometric) at sensitive zones."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Biometric Systems' > 'Iris Scanning' throughput limitation",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f62778a336d00ee7f647eaf040cf2eada7adec04728086933a508758ae54a25"
+    },
+    {
+      "question_id": "fc215e71-0ee3-403f-a2cb-3b48d4109081",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A healthcare facility in Manila integrates a mobile credential system for staff to unlock hospital ward doors via BLE. The facility reports that BLE signal degrades significantly in basement-level storage areas. What is the most likely cause and how should the integrator address it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. BLE operates at 2.4 GHz; metal-reinforced facades and basement shielding degrade signal; add BLE repeaters or deploy wired access control in shielded areas"
+        },
+        {
+          "id": "b",
+          "text": "B. BLE readers have a 2–5 year battery life; replace all batteries and signal will be restored, although this does not address the root cause of signal degradation"
+        },
+        {
+          "id": "c",
+          "text": "C. Basement RF shielding is intentional; switch basement readers to NFC (13.56 MHz) which has the same range as BLE, but may not penetrate as effectively"
+        },
+        {
+          "id": "d",
+          "text": "D. BLE signal degradation indicates a firmware bug; update all readers to the latest software version, though this is unlikely to resolve physical signal barriers"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "BLE reader battery life (2–5 years) is separate from signal degradation. A dead battery stops the reader; it does not degrade signal strength.",
+        "c": "NFC operates at 13.56 MHz with a 1–10 cm read range, much shorter than BLE's 10–100 m. Switching to NFC in basements would reduce coverage, not improve it.",
+        "d": "Signal degradation due to environmental shielding is a physics issue, not a firmware bug. Software updates cannot overcome RF propagation losses.",
+        "correct": "BLE operates at 2.4 GHz with 10–100 m range depending on transmit power class and environmental factors. Metal-reinforced building structures (basement foundations, reinforced concrete) and RF shielding for sensitive areas degrade 2.4 GHz signal propagation. Mitigation includes BLE repeaters to extend range, deploying wired access control (Wiegand, OSDP, IP) in heavily shielded zones, or reducing BLE dependence in basement areas.",
+        "takeaway": "BLE mobile credentials require RF-friendly environments; metal structures and shielded zones necessitate hybrid architectures combining BLE with wired protocols or additional repeaters."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Mobile Credentials (BLE & NFC)' limitation paragraph",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:923d9d58f44bd129ddc957078fcace73c2556095c2c9c170cb1cafb7e4a0aedf"
+    },
+    {
+      "question_id": "8428e210-b245-4b16-be18-d482bda8f1bd",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A shopping mall's access control system uses OSDP readers on the main service entrance and legacy Wiegand readers on secondary loading dock doors. The integrator is planning a network upgrade and must decide whether to consolidate on a single protocol. What are the key considerations for consolidation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Keep both protocols; Wiegand is cheaper and OSDP requires expensive RS-485 cabling, which may not be feasible"
+        },
+        {
+          "id": "b",
+          "text": "B. Migrate to OSDP for all readers to gain bidirectional status feedback, real-time tamper alerts, and unified remote management across the facility"
+        },
+        {
+          "id": "c",
+          "text": "C. Migrate to Wiegand for all readers because it is a legacy standard with proven reliability, ensuring compatibility with existing systems"
+        },
+        {
+          "id": "d",
+          "text": "D. Replace both with IP-based readers only if the mall has budget for network switches and firewalls, which are necessary for integration"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wiegand is cheaper per reader but incurs higher operational costs (manual credential updates, no status feedback, requires repeaters for long runs). Mixed environments increase total cost of ownership.",
+        "c": "Legacy status does not equate to reliability for modern facilities. Wiegand's one-way design is a liability, not a benefit.",
+        "d": "IP-based readers are optimal for enterprise scale but may be overkill for a shopping mall with modest security requirements. OSDP is a practical intermediate upgrade.",
+        "correct": "Consolidating on OSDP (IEC 60839-11-5) provides bidirectional communication, real-time door lock/tamper status, secure credential transmission, and centralized management across all readers. Mixed Wiegand-OSDP environments require separate controllers and auxiliary modules, increasing complexity and maintenance costs. OSDP is increasingly mandated in enterprise deployments and is adopted by major manufacturers (HID, Salto, Honeywell).",
+        "takeaway": "Protocol consolidation on OSDP or IP-based systems reduces operational complexity, improves security posture, and lowers total cost of ownership versus maintaining mixed Wiegand-OSDP environments."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'IP-Based vs. Legacy Panel-Based Systems' and OSDP adoption discussion",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c1480ae46764ac2b8a7dd0dedffaeaad1fdf6fc49fda59e5577e99b7ed9fbded"
+    }
+  ]
+}

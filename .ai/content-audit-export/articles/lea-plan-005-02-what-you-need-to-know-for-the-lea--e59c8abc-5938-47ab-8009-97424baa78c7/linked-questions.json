@@ -8,38 +8,31 @@
       "question_id": "e19b9c3e-4e10-4e65-aa03-89b682e8090f",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "A coastal landscape restoration project faces competing goals: one stakeholder prefers calamansi (citrus) fruit trees for income generation; another prioritizes native mangrove and coastal forest restoration. Analyze how these goals reflect different but legitimate uses of exotic vs. native species, and recommend an integrated approach:",
+      "text": "What is the safest Batch 088 answer strategy for planting questions?",
       "options": [
         {
           "id": "a",
-          "text": "Native species should be eliminated because they have no economic value compared to exotic fruits, focusing solely on income generation"
+          "text": "Use source-checked site analysis, tree preservation, microclimate, hydrology, open-space function, habitat, and maintenance instead of naming unsupported species"
         },
         {
           "id": "b",
-          "text": "The site should be divided: fruit production in one zone, native restoration in an ecologically protected zone, with designed boundaries minimizing competition and supporting both objectives"
+          "text": "Choose a species name from memory"
         },
         {
           "id": "c",
-          "text": "Calamansi trees are native to the Philippines, so their use is identical to native species restoration, ensuring ecological balance"
+          "text": "Treat planting as only paint-like decoration"
         },
         {
           "id": "d",
-          "text": "Exotic species like calamansi are inherently invasive and should never be planted in the Philippines, prioritizing ecological integrity"
+          "text": "Ignore drainage and public access"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Native species provide irreplaceable ecological services and cultural values that economic crops cannot replicate.",
-        "b": "Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict.",
-        "c": "Calamansi is exotic to the Philippines historically, though now naturalized in Philippine culture and agriculture.",
-        "d": "Calamansi is not recognized as invasive in the Philippines; it is a productive agricultural species. Invasive designation applies to species with uncontrolled spread and ecosystem damage.",
-        "correct": "Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict.",
-        "takeaway": "Integrated landscape design can support both economic and ecological objectives through thoughtful zoning and species placement."
-      },
+      "rationale": "The checked sources support planting as a site, open-space, and environmental-performance issue.",
       "explanation": "Native species provide irreplaceable ecological services and cultural values that economic crops cannot replicate. Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict. Calamansi is exotic to the Philippines historically, though now naturalized in Philippine culture and agriculture. Calamansi is not recognized as invasive in the Philippines; it is a productive agricultural species. Invasive designation applies to species with uncontrolled spread and ecosystem damage. Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict. Integrated landscape design can support both economic and ecological objectives through thoughtful zoning and species placement.",
       "code_citation": "Native vs. Exotic Species section; Biodiversity Conservation section",
       "bloom_level": "analyze",
@@ -52,45 +45,38 @@
       "model_id": "ALE-PLAN-005-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-05-06T14:48:23.948564+00:00",
+      "updated_at": "2026-07-20T01:13:24.917094+00:00",
       "content_hash": "sha256:b12af9b7d50d674c262c78378362f8518f2f3b10a0d67306afad268166f84171"
     },
     {
       "question_id": "7734ead8-6601-44ee-ada1-f11845dae0ea",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "A landscape designer is planning a ecological restoration project in a secondary forest recovering on abandoned agricultural land. The site is currently dominated by pioneer species and exotic invasive shrubs. What successional planting strategy should guide the design?",
+      "text": "Which statement about existing trees is source-safe from BCI?",
       "options": [
         {
           "id": "a",
-          "text": "Remove all vegetation and start with monoculture planting of climax hardwood species, ensuring no pioneer species remain to compete"
+          "text": "Healthy existing trees and native plant materials should be located, considered, and protected where appropriate during site planning"
         },
         {
           "id": "b",
-          "text": "Leave the site alone because natural succession will eventually restore the forest without intervention, assuming no further human disturbance occurs"
+          "text": "All existing trees must be removed"
         },
         {
           "id": "c",
-          "text": "Remove invasive species, manage pioneer growth, and introduce shade-tolerant understory species to accelerate succession toward mature forest"
+          "text": "Species names can be invented"
         },
         {
           "id": "d",
-          "text": "Plant exotic fruit trees to generate income while the forest naturally restores, balancing economic and ecological goals"
+          "text": "Tree roots never affect site performance"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Removing all vegetation and monoculturing climax species is costly, less resilient, and ignores successional processes.",
-        "b": "While natural succession occurs, it is slow (30–50+ years for mature forest). Active management achieves restoration faster.",
-        "c": "Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity.",
-        "d": "Exotic fruit trees compete with native restoration goals and may become invasive.",
-        "correct": "Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity.",
-        "takeaway": "Active successional management combines natural processes with strategic interventions for faster, more diverse restoration."
-      },
+      "rationale": "BCI supports locating and preserving trees and native plant materials and protecting crown and root areas.",
       "explanation": "Removing all vegetation and monoculturing climax species is costly, less resilient, and ignores successional processes. While natural succession occurs, it is slow (30–50+ years for mature forest). Active management achieves restoration faster. Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity. Exotic fruit trees compete with native restoration goals and may become invasive. Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity. Active successional management combines natural processes with strategic interventions for faster, more diverse restoration.",
       "code_citation": "Successional Planting and Ecological Restoration section",
       "bloom_level": "apply",
@@ -103,45 +89,38 @@
       "model_id": "ALE-PLAN-005-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-05-06T14:48:24.318673+00:00",
+      "updated_at": "2026-07-20T01:13:24.919519+00:00",
       "content_hash": "sha256:0d124c95f88c5f71ba4c8365c6b050193dd9cf488461ab967d23ffb6ad162f9b"
     },
     {
       "question_id": "0e28044c-20d3-4ffe-889f-b59ab7ccbf88",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "Two Philippine plant species occupy the same habitat niche. One is endemic to the Philippines only; the other is native to the Philippines and several other Southeast Asian countries. What is the correct terminology for each?",
+      "text": "What does PD 1216 support for subdivision open spaces?",
       "options": [
         {
           "id": "a",
-          "text": "Both are endemic because they are found in the Philippines, which is a common misconception"
+          "text": "Tree planting and nonbuildable parks, playgrounds, and recreational open spaces with non-conversion controls after donation"
         },
         {
           "id": "b",
-          "text": "The first is native; the second is exotic and should be removed, as it poses a threat to local biodiversity"
+          "text": "Converting required parks into unrelated lots"
         },
         {
           "id": "c",
-          "text": "Both are native only; neither can be endemic, as endemic refers to species found only in one location"
+          "text": "Removing all open-space management responsibility"
         },
         {
           "id": "d",
-          "text": "The first is endemic to the Philippines; the second is native to the Philippines and other regions"
+          "text": "Treating playgrounds as private storage"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Endemic is more restrictive than native—a species must be found ONLY in the Philippines to be endemic to it.",
-        "b": "Native occurrence in multiple regions does not make a species exotic—exotic means human-introduced.",
-        "c": "Endemic species are a category of native species, so the first species is both native and endemic.",
-        "d": "Endemic means a species occurs only in one geographic area. The first species (Philippines only) is endemic to the Philippines. The second species is native to the Philippines (naturally occurs here) but also occurs in other Southeast Asian countries, so it is native but not endemic to the Philippines.",
-        "correct": "Endemic means a species occurs only in one geographic area. The first species (Philippines only) is endemic to the Philippines. The second species is native to the Philippines (naturally occurs here) but also occurs in other Southeast Asian countries, so it is native but not endemic to the Philippines.",
-        "takeaway": "Endemic = occurs only in one place; Native = naturally occurs there (but may occur elsewhere too)."
-      },
+      "rationale": "PD 1216 supports required open-space standards, tree planting, nonbuildable status, and non-conversion controls.",
       "explanation": null,
       "code_citation": "Philippine Biodiversity and Native Species Framework section",
       "bloom_level": "understand",
@@ -154,45 +133,38 @@
       "model_id": "ALE-PLAN-005-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.921934+00:00",
       "content_hash": "sha256:cbebec6c437dec1b6793d7783926d5a79c4af403e5b74f109a0036a19f6169bc"
     },
     {
       "question_id": "6adb27f8-39f1-43ea-9627-a9d06aa955af",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "A mangrove ecosystem and a tropical rainforest both occur in the Philippines but have entirely different species compositions, structures, and environmental conditions. Analyze why ecological restoration should use species appropriate to each ecosystem type rather than planting the same species in both:",
+      "text": "How should a native-species question be handled in this batch?",
       "options": [
         {
           "id": "a",
-          "text": "Species-specific restoration is unnecessary because all native species can survive in any Philippine habitat, regardless of ecosystem type or environmental conditions"
+          "text": "Avoid exact species claims and answer through checked general planting, preservation, habitat, microclimate, and open-space evidence"
         },
         {
           "id": "b",
-          "text": "Mangrove and rainforest species evolved for distinct salinity, waterlogging, and light conditions; mismatched planting fails and wastes resources"
+          "text": "Pick Narra because it sounds familiar"
         },
         {
           "id": "c",
-          "text": "Using only one set of species throughout the Philippines reduces overall biodiversity, which can lead to ecosystem instability and loss of unique habitats"
+          "text": "Pick calamansi because it is common"
         },
         {
           "id": "d",
-          "text": "Ecological restoration has no connection to ecosystem type or species appropriateness, as all ecosystems function similarly"
+          "text": "Use an unchecked invasive-species example"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Native species are adapted to specific conditions; transplanting outside those conditions fails.",
-        "b": "Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging.",
-        "c": "Using ecosystem-appropriate species (many species across multiple ecosystem types) maximizes biodiversity—not reduces it.",
-        "d": "Ecological restoration is fundamentally based on matching species to ecosystem conditions.",
-        "correct": "Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging.",
-        "takeaway": "Successful restoration matches species to ecosystem type, respecting evolved adaptations to environmental conditions."
-      },
+      "rationale": "The official species source was not locally available, so exact species choices were narrowed out.",
       "explanation": "Native species are adapted to specific conditions; transplanting outside those conditions fails. Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging. Using ecosystem-appropriate species (many species across multiple ecosystem types) maximizes biodiversity—not reduces it. Ecological restoration is fundamentally based on matching species to ecosystem conditions. Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging. Successful restoration matches species to ecosystem type, respecting evolved adaptations to environmental conditions.",
       "code_citation": "Ecological Systems and Successional Processes section",
       "bloom_level": "apply",
@@ -205,30 +177,30 @@
       "model_id": "ALE-PLAN-005-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-05-06T14:45:57.960239+00:00",
+      "updated_at": "2026-07-20T01:13:24.917914+00:00",
       "content_hash": "sha256:dc1aca6a5189a2cb02d8b241f83c5731cbdea4aff48bf0863c4cbfdd2e574555"
     },
     {
       "question_id": "6a4deba3-9824-427d-85e4-09dfd634223e",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "The Narra tree's nitrogen-fixing capacity is ecologically valuable because it:",
+      "text": "Which Green Building Illustrated factors support planting decisions?",
       "options": [
         {
           "id": "a",
-          "text": "Enriches soil with nitrogen through symbiotic bacteria, improving conditions for understory species establishment"
+          "text": "Microclimate, vegetation, local hydrology, site water, pervious surfaces, operations, and maintenance considerations"
         },
         {
           "id": "b",
-          "text": "Eliminates the need for all other tree species in reforestation projects, making it the sole focus of conservation efforts"
+          "text": "Only interior paint color"
         },
         {
           "id": "c",
-          "text": "Replaces all synthetic agricultural fertilizers in the Philippines, providing a natural alternative for all farming needs"
+          "text": "Only promotional branding"
         },
         {
           "id": "d",
-          "text": "Makes mangrove ecosystems unnecessary for conservation, as it provides all required ecological functions"
+          "text": "Only furniture procurement"
         }
       ],
       "correct_option_id": "a",
@@ -236,14 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Nitrogen-fixing trees form symbiotic relationships with bacteria that convert atmospheric nitrogen into bioavailable forms, enriching soil. This improves conditions for other species to establish in degraded soils, supporting ecological restoration.",
-        "b": "Narra is valuable in mixed plantings, not as a monoculture replacement for all other species.",
-        "c": "While nitrogen-fixing trees contribute to soil health, they support rather than replace agricultural systems.",
-        "d": "Mangroves have distinct ecological roles and cannot be replaced by upland forest species.",
-        "correct": "Nitrogen-fixing trees form symbiotic relationships with bacteria that convert atmospheric nitrogen into bioavailable forms, enriching soil. This improves conditions for other species to establish in degraded soils, supporting ecological restoration.",
-        "takeaway": "Nitrogen-fixing trees like Narra improve soil conditions that enable diverse species establishment, supporting ecological succession."
-      },
+      "rationale": "Green Building Illustrated supports site, water, vegetation, hydrology, and operational considerations.",
       "explanation": "Nitrogen-fixing trees form symbiotic relationships with bacteria that convert atmospheric nitrogen into bioavailable forms, enriching soil. This improves conditions for other species to establish in degraded soils, supporting ecological restoration. Narra is valuable in mixed plantings, not as a monoculture replacement for all other species. While nitrogen-fixing trees contribute to soil health, they support rather than replace agricultural systems. Mangroves have distinct ecological roles and cannot be replaced by upland forest species. Nitrogen-fixing trees form symbiotic relationships with bacteria that convert atmospheric nitrogen into bioavailable forms, enriching soil. This improves conditions for other species to establish in degraded soils, supporting ecological restoration. Nitrogen-fixing trees like Narra improve soil conditions that enable diverse species establishment, supporting ecological succession.",
       "code_citation": "Narra as National Tree and Ecological Reference section",
       "bloom_level": "remember",
@@ -256,45 +221,38 @@
       "model_id": "ALE-PLAN-005-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-05-06T14:48:23.538803+00:00",
+      "updated_at": "2026-07-20T01:13:24.915280+00:00",
       "content_hash": "sha256:76db59c137b3f15741aae22f5433e6e509505b36354141925c50dccfeefc600b"
     },
     {
       "question_id": "ee780da5-104e-4683-86de-d3c92ea9625f",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "A degraded grassland is converted to forest through successional planting. In Phase 1, fast-growing Albizia trees are planted at wide spacing. Which ecological outcome is expected during Phase 1?",
+      "text": "What should a fully paved plaza proposal be checked against?",
       "options": [
         {
           "id": "a",
-          "text": "Full forest establishment with all native species immediately present"
+          "text": "Shade, seating, pervious surfaces where appropriate, drainage, habitat, public-space use, and open-space controls"
         },
         {
           "id": "b",
-          "text": "Immediate loss of grassland species and ecosystem collapse"
+          "text": "Only the paving color"
         },
         {
           "id": "c",
-          "text": "Soil improvement through nitrogen fixation and canopy shade development"
+          "text": "No hydrology or comfort review"
         },
         {
           "id": "d",
-          "text": "Introduction of exotic invasive species that degrade the site"
+          "text": "Automatic removal of every tree"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Full forest doesn't establish in Phase 1; forest develops progressively through multiple phases over decades.",
-        "b": "Grassland species decline as shade increases, but this is part of natural successional transition, not ecosystem collapse.",
-        "c": "Phase 1 pioneer planting (Albizia and similar nitrogen-fixing species) rapidly creates canopy shade and enriches soil through nitrogen fixation. These conditions prepare the site for Phase 2 understory establishment and eventual Phase 3 mature forest transition.",
-        "d": "Albizia and other pioneers used in restoration are typically native or non-invasive exotics chosen for ecological restoration, not invasive species.",
-        "correct": "Phase 1 pioneer planting (Albizia and similar nitrogen-fixing species) rapidly creates canopy shade and enriches soil through nitrogen fixation. These conditions prepare the site for Phase 2 understory establishment and eventual Phase 3 mature forest transition.",
-        "takeaway": "Phase 1 pioneer planting creates conditions (soil improvement, shade) enabling subsequent successional phases."
-      },
+      "rationale": "The checked sources support shade, public-space use, drainage, hydrology, and vegetation considerations.",
       "explanation": "Full forest doesn't establish in Phase 1; forest develops progressively through multiple phases over decades. Grassland species decline as shade increases, but this is part of natural successional transition, not ecosystem collapse. Phase 1 pioneer planting (Albizia and similar nitrogen-fixing species) rapidly creates canopy shade and enriches soil through nitrogen fixation. These conditions prepare the site for Phase 2 understory establishment and eventual Phase 3 mature forest transition. Albizia and other pioneers used in restoration are typically native or non-invasive exotics chosen for ecological restoration, not invasive species. Phase 1 pioneer planting (Albizia and similar nitrogen-fixing species) rapidly creates canopy shade and enriches soil through nitrogen fixation. These conditions prepare the site for Phase 2 understory establishment and eventual Phase 3 mature forest transition. Phase 1 pioneer planting creates conditions (soil improvement, shade) enabling subsequent successional phases.",
       "code_citation": "Successional Planting and Ecological Restoration section",
       "bloom_level": "understand",
@@ -307,45 +265,38 @@
       "model_id": "ALE-PLAN-005-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-05-06T14:48:23.685795+00:00",
+      "updated_at": "2026-07-20T01:13:24.918706+00:00",
       "content_hash": "sha256:1de9815f651bb4370abacf0a804ed934943c25d47d79b70af04be0ebcd9e3704"
     },
     {
       "question_id": "9d9ec5e4-b493-4abf-b4eb-e9e5fe6c887b",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "Chromolaena odorata (devil weed) is spreading rapidly through a landscape restoration project, forming dense monocultures and preventing native species establishment. This species is invasive because it:",
+      "text": "Which source-safe use of planting supports user comfort?",
       "options": [
         {
           "id": "a",
-          "text": "Is an exotic species intentionally brought to the Philippines to help with ecological restoration, although it was not meant to spread uncontrollably"
+          "text": "Trees can provide shade, help define spaces, support privacy, and stabilize soil when coordinated with access and drainage"
         },
         {
           "id": "b",
-          "text": "Is native to the Philippines but grows faster than other natives, leading to its dominance in certain ecosystems"
+          "text": "Trees are never related to comfort"
         },
         {
           "id": "c",
-          "text": "Spreads rapidly, outcompetes natives, and degrades ecosystems despite not being intentionally cultivated"
+          "text": "Trees should block accessible routes"
         },
         {
           "id": "d",
-          "text": "Produces more seeds than typical vegetation, allowing it to quickly establish itself in new areas"
+          "text": "Planting eliminates the need for maintenance"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Chromolaena odorata is not intentionally used in restoration; it is recognized as a problem species.",
-        "b": "Chromolaena is not native to the Philippines; it is an introduced exotic.",
-        "c": "Invasive species are those that spread rapidly beyond their intended range, outcompete natives, degrade ecosystems, and are difficult to control. Chromolaena odorata (an introduced species) exhibits all these behaviors in Philippine ecosystems, blocking native regeneration.",
-        "d": "While seed production is a factor, the defining characteristic of invasive species is their ecosystem impact, not just reproductive rate.",
-        "correct": "Invasive species are those that spread rapidly beyond their intended range, outcompete natives, degrade ecosystems, and are difficult to control. Chromolaena odorata (an introduced species) exhibits all these behaviors in Philippine ecosystems, blocking native regeneration.",
-        "takeaway": "Invasive species harm ecosystems through uncontrolled spread and competitive displacement of natives."
-      },
+      "rationale": "BCI supports trees for shade, space definition, privacy support, and soil stabilization.",
       "explanation": "Chromolaena odorata is not intentionally used in restoration; it is recognized as a problem species. Chromolaena is not native to the Philippines; it is an introduced exotic. Invasive species are those that spread rapidly beyond their intended range, outcompete natives, degrade ecosystems, and are difficult to control. Chromolaena odorata (an introduced species) exhibits all these behaviors in Philippine ecosystems, blocking native regeneration. While seed production is a factor, the defining characteristic of invasive species is their ecosystem impact, not just reproductive rate. Invasive species are those that spread rapidly beyond their intended range, outcompete natives, degrade ecosystems, and are difficult to control. Chromolaena odorata (an introduced species) exhibits all these behaviors in Philippine ecosystems, blocking native regeneration. Invasive species harm ecosystems through uncontrolled spread and competitive displacement of natives.",
       "code_citation": "Native vs. Exotic Species section",
       "bloom_level": "apply",
@@ -358,45 +309,38 @@
       "model_id": "ALE-PLAN-005-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-05-06T14:48:23.82014+00:00",
+      "updated_at": "2026-07-20T01:13:24.913954+00:00",
       "content_hash": "sha256:635964e330ee3cf8978fe026f4f5c763ef826bfe3c936dc3363905ad0b56f62a"
     },
     {
       "question_id": "e7eed1b2-4d28-4ee2-bf85-abda02b11e88",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "A landscape project is designed with a habitat corridor connecting two native forest patches separated by a developed area. The corridor includes native tree canopy, shrubs, and herbaceous groundcover layered vertically. Analyze how this design supports biodiversity conservation in fragmented landscapes:",
+      "text": "What is the LEA trap in this article?",
       "options": [
         {
           "id": "a",
-          "text": "The corridor is ineffective because habitat patches should remain separated to prevent disease spread, which is a common concern in densely populated wildlife areas"
+          "text": "Answering with species-specific native or invasive plant names without a checked local raw source"
         },
         {
           "id": "b",
-          "text": "The corridor enables wildlife movement between patches, maintains genetic diversity, and supports species dependent on canopy, understory, and ground layers"
+          "text": "Using BCI for tree protection"
         },
         {
           "id": "c",
-          "text": "Only canopy trees are necessary for corridors; understory and groundcover layers are optional, as they do not significantly contribute to wildlife movement"
+          "text": "Using PD 1216 for open-space controls"
         },
         {
           "id": "d",
-          "text": "Habitat corridors eliminate the need for protected areas or ecosystem conservation, making them a standalone solution for biodiversity"
+          "text": "Using open-space guidance for public benefit"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While disease is a concern in densely connected populations, fragmentation is more destructive—habitat corridors enhance population viability.",
-        "b": "Habitat corridors allow wildlife movement between fragmented patches, preventing genetic isolation. Vertical layering (canopy, understory, ground) supports diverse species with different habitat requirements and creates microhabitats for insects, birds, and small animals.",
-        "c": "Different species use different vertical strata. Complete layering supports maximum diversity.",
-        "d": "Corridors support connectivity in fragmented landscapes but do not replace protected areas, which provide intact ecosystems and species refugia.",
-        "correct": "Habitat corridors allow wildlife movement between fragmented patches, preventing genetic isolation. Vertical layering (canopy, understory, ground) supports diverse species with different habitat requirements and creates microhabitats for insects, birds, and small animals.",
-        "takeaway": "Habitat corridors with layered vegetation support biodiversity in fragmented landscapes by enabling movement and diverse microhabitats."
-      },
+      "rationale": "Batch 088 deliberately removed exact species claims from the repaired content.",
       "explanation": null,
       "code_citation": "Biodiversity Conservation and Landscape Implications section",
       "bloom_level": "analyze",
@@ -409,45 +353,38 @@
       "model_id": "ALE-PLAN-005-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:24.920335+00:00",
       "content_hash": "sha256:1614c09cfe966fbee411c6fc91ea906a6f045582b73debce80a92544e9d4b22e"
     },
     {
       "question_id": "e841e37b-a250-41ab-973f-d7ff3b2a389b",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "Which statement best defines a native species in the Philippine context?",
+      "text": "How do open-space guidelines support ecological planting analysis?",
       "options": [
         {
           "id": "a",
-          "text": "Any plant species currently growing in the Philippines, regardless of origin, including those introduced by humans"
+          "text": "They connect open spaces to habitats, green networks, public access, well-being, character, safety, and management"
         },
         {
           "id": "b",
-          "text": "Agricultural crops that are economically important in the Philippines, even if they are not originally from the region"
+          "text": "They say open spaces have no ecological role"
         },
         {
           "id": "c",
-          "text": "Only endemic species found exclusively in the Philippines, without any external introduction"
+          "text": "They permit all donated open spaces to be converted"
         },
         {
           "id": "d",
-          "text": "A plant species that naturally occurs in the Philippines and has evolved here without human introduction"
+          "text": "They require all public spaces to be fully paved"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Current presence does not determine native status; some plants have been introduced and naturalized.",
-        "b": "Agricultural crops may be exotic and introduced by humans, not native.",
-        "c": "Endemic species are a subset of natives—all endemics are native, but not all natives are endemic.",
-        "d": "Native species naturally occur in a region through evolutionary processes and are adapted to local conditions. They have not been introduced by humans, distinguishing them from exotic species even if exotics are now common.",
-        "correct": "Native species naturally occur in a region through evolutionary processes and are adapted to local conditions. They have not been introduced by humans, distinguishing them from exotic species even if exotics are now common.",
-        "takeaway": "Native status is determined by natural evolutionary occurrence, not current distribution or economic value."
-      },
+      "rationale": "The checked open-space guidance supports habitat and public-realm functions.",
       "explanation": "Current presence does not determine native status; some plants have been introduced and naturalized. Agricultural crops may be exotic and introduced by humans, not native. Endemic species are a subset of natives—all endemics are native, but not all natives are endemic. Native species naturally occur in a region through evolutionary processes and are adapted to local conditions. They have not been introduced by humans, distinguishing them from exotic species even if exotics are now common. Native species naturally occur in a region through evolutionary processes and are adapted to local conditions. They have not been introduced by humans, distinguishing them from exotic species even if exotics are now common. Native status is determined by natural evolutionary occurrence, not current distribution or economic value.",
       "code_citation": "Philippine Biodiversity and Native Species Framework section",
       "bloom_level": "remember",
@@ -460,30 +397,30 @@
       "model_id": "ALE-PLAN-005-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-05-06T14:48:24.086798+00:00",
+      "updated_at": "2026-07-20T01:13:24.921146+00:00",
       "content_hash": "sha256:35be002f979851cce2713faaf21cae07320ab5bb9ae9f4ff92088a1f39db7c53"
     },
     {
       "question_id": "4ab9f3fc-dabd-446a-bca0-506fb581daa0",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
       "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "In ecological succession, pioneer species are ecologically important because they:",
+      "text": "In a campus landscape review, which answer is most source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "Establish rapidly, improve soil, and create conditions allowing shade-tolerant species to follow"
+          "text": "Preserve healthy existing trees, coordinate vegetation with microclimate and hydrology, maintain accessible public open-space function, and document maintenance needs"
         },
         {
           "id": "b",
-          "text": "Persist as the climax forest and never change, maintaining the ecosystem indefinitely"
+          "text": "Name an unsupported species as the only answer"
         },
         {
           "id": "c",
-          "text": "Are the only species that can survive in tropical climates, making them crucial for ecosystem stability"
+          "text": "Remove every shade tree to simplify paving"
         },
         {
           "id": "d",
-          "text": "Produce fruits and seeds that are more valuable than other species, providing essential resources for wildlife"
+          "text": "Ignore drainage and maintenance"
         }
       ],
       "correct_option_id": "a",
@@ -491,14 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Pioneer species are fast-growing, light-demanding, and often nitrogen-fixing. They rapidly colonize bare or disturbed land, improve soil, create shade, and establish conditions enabling slower-growing, shade-tolerant species to establish. They are transitional, not permanent.",
-        "b": "Pioneers are replaced during succession as shade-tolerant species establish.",
-        "c": "Many shade-tolerant and climax species also survive tropical climates; pioneers are distinguished by their role, not their climate tolerance.",
-        "d": "Seed productivity varies by species and context; pioneer value is their ecological role, not necessarily seed quality.",
-        "correct": "Pioneer species are fast-growing, light-demanding, and often nitrogen-fixing. They rapidly colonize bare or disturbed land, improve soil, create shade, and establish conditions enabling slower-growing, shade-tolerant species to establish. They are transitional, not permanent.",
-        "takeaway": "Pioneers transform conditions, making succession possible—they are essential stepping stones, not end states."
-      },
+      "rationale": "The combined local sources support a general planting and open-space evaluation path without unsupported species claims.",
       "explanation": "Pioneer species are fast-growing, light-demanding, and often nitrogen-fixing. They rapidly colonize bare or disturbed land, improve soil, create shade, and establish conditions enabling slower-growing, shade-tolerant species to establish. They are transitional, not permanent. Pioneers are replaced during succession as shade-tolerant species establish. Many shade-tolerant and climax species also survive tropical climates; pioneers are distinguished by their role, not their climate tolerance. Seed productivity varies by species and context; pioneer value is their ecological role, not necessarily seed quality. Pioneer species are fast-growing, light-demanding, and often nitrogen-fixing. They rapidly colonize bare or disturbed land, improve soil, create shade, and establish conditions enabling slower-growing, shade-tolerant species to establish. They are transitional, not permanent. Pioneers transform conditions, making succession possible—they are essential stepping stones, not end states.",
       "code_citation": "Ecological Systems and Successional Processes section",
       "bloom_level": "understand",
@@ -511,7 +441,7 @@
       "model_id": "ALE-PLAN-005-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-05-06T14:48:24.200335+00:00",
+      "updated_at": "2026-07-20T01:13:24.916224+00:00",
       "content_hash": "sha256:d88dfd1b1b6cf25e57b1496ffaaa08d4b64d98a7f99845215851da197bd56976"
     }
   ]

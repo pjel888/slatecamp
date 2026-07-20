@@ -2,50 +2,47 @@
   "question_id": "48bf5609-ed86-4af4-8175-a7fffc7bf979",
   "baseline_hash": "sha256:4082254477787a8bb9a6074fa40cacff340b29dfbc6bbf42830914d2d6cc766c",
   "action": "replace",
-  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
-  "approved_by": "codex-local-first-batch-040",
-  "approved_at": "2026-05-11T14:04:00+08:00",
+  "reason": "council-remediation-2026-07-20 (Agent H apply): corrects CONFIRMED_ERROR — accessible WC cubicle minimum area is 1800 mm x 1800 mm, not 1800 mm x 2250 mm. Source verbatim: 'A minimum area of 1800 mm x 1800 mm' (BP 344 2024 Revised IRR, PDF p.36, line 1143). The 2250 mm depth is not in the source. Also normalizes the bare 'Sec. 6' citation to Appendix form. Supersedes the prior batch-040 topic-swap placeholder which replaced this WC-cubicle question with an unrelated handrail-extension question.",
+  "approved_by": "agent-h-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+00:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-040-local-first",
+    "batch_id": "council-remediation-2026-07-20-bp344-numeric",
     "checked_sources": [
       {
-        "source_id": "bp-344-2024-rirr-ncda-local",
-        "label": "BP 344 2024 Revised IRR - NCDA",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_id": "bp-344-2024-revised-irr",
+        "label": "BP 344 2024 Revised IRR (supplementary verbatim text)",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/audit-evidence/bp344-accessible-washrooms/bp344-2024-revised-irr.txt",
         "checked_markdown_lines": [
-          "BP 344 2024 IRR refined markdown lines 36-70",
-          "BP 344 2024 IRR refined markdown lines 198-224",
-          "BP 344 2024 IRR refined markdown lines 228-305",
-          "BP 344 2024 IRR refined markdown lines 770-850"
+          "BP 344 2024 Revised IRR line 1143 (PDF p.36): 'A minimum area of 1800 mm x 1800 mm'",
+          "BP 344 2024 Revised IRR lines 1145-1154 (PDF p.36): L-type grab bar + flip-up bar geometry"
         ]
       }
     ],
-    "citation": "BP 344 2024 Revised IRR, Handrails"
+    "citation": "BP 344 2024 Revised IRR, Appendix A (Accessible Toilet Cubicles), item 1, PDF p.36 line 1143"
   },
   "proposed": {
-    "text": "What horizontal handrail extension is required at the start and end of ramps and stairs?",
+    "text": "The Right to Health (RA 7277 Sec. 23) requires accessible hospital toilets. What are the minimum clear internal dimensions of the accessible WC cubicle under BP 344 2024 Revised IRR?",
     "options": [
       {
-        "id": "b040-a7cb-06-a",
-        "text": "300 mm"
+        "id": "A",
+        "text": "2000 mm wide x 2000 mm deep, with a 900 mm door that slides only"
       },
       {
-        "id": "b040-a7cb-06-b",
-        "text": "100 mm"
+        "id": "B",
+        "text": "1500 mm wide x 1800 mm deep, with a 750 mm door that swings inward"
       },
       {
-        "id": "b040-a7cb-06-c",
-        "text": "600 mm"
+        "id": "C",
+        "text": "1800 mm wide x 1800 mm deep, with a 900 mm door that swings outward or slides"
       },
       {
-        "id": "b040-a7cb-06-d",
-        "text": "1200 mm"
+        "id": "D",
+        "text": "1800 mm wide x 2250 mm deep, with a 900 mm door that swings out or slides"
       }
     ],
-    "correct_option_id": "b040-a7cb-06-a",
-    "rationale": "Correct answer: 300 mm. This is directly supported by BP 344 2024 Revised IRR, Handrails.",
-    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Handrails.",
-    "code_citation": "BP 344 2024 Revised IRR, Handrails"
+    "correct_option_id": "C",
+    "rationale": "Correct answer: C — 1800 mm x 1800 mm minimum clear internal area with a 900 mm outward-swinging or sliding door. Source verbatim (BP 344 2024 Revised IRR, Appendix A, item 1, PDF p.36 line 1143): 'A minimum area of 1800 mm x 1800 mm.' The 2250 mm depth in option D is not in the source and is the documented error being corrected.",
+    "explanation": "BP 344 2024 Revised IRR specifies a minimum area of 1800 mm x 1800 mm for the accessible toilet cubicle (Appendix A, item 1, PDF p.36 line 1143). The door must be 900 mm clear width and swing outward (or slide) so it is not blocked if a wheelchair user falls against it. The 2250 mm depth is NOT in the source. Lavatories, if provided inside, must be installed outside the 1800 mm x 1800 mm clear area (PDF p.38 line 1207).",
+    "code_citation": "BP 344 2024 Revised IRR, Appendix A (Accessible Toilet Cubicles), item 1 (PDF p.36 line 1143)"
   }
 }

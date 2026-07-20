@@ -13,14 +13,6 @@ import { TrailPhaseMap } from '@/components/trails/TrailPhaseMap'
 import { TrailDetailEnroll } from '@/components/trails/TrailDetailEnroll'
 import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 
-const INTENSITY_LABELS: Record<string, string> = {
-  intensive: 'Intensive',
-  accelerated: 'Accelerated',
-  standard: 'Standard',
-  comprehensive: 'Comprehensive',
-  undergraduate: 'Undergraduate',
-}
-
 const TrailDetailPage = async ({
   params,
 }: {
@@ -41,7 +33,6 @@ const TrailDetailPage = async ({
     ? await getFullDayCompletions(enrollment.enrollment_id).catch(() => [])
     : []
 
-  const totalSteps = days.reduce((sum, d) => sum + (d.steps?.length ?? 0), 0)
   const weekGroups = days.reduce<Record<number, typeof days>>((acc, day) => {
     const week = Math.ceil(day.day_number / 7)
     if (!acc[week]) acc[week] = []

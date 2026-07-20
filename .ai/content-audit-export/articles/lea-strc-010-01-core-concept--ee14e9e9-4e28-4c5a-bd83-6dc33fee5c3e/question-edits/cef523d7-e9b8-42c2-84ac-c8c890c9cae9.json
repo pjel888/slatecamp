@@ -23,5 +23,53 @@
       "masonry-lecture-terms-chb",
       "bsi-masonry-walls"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "A masonry question asks for solid-grouting requirements in a seismic cavity wall. What is the source-safe answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approve every cavity wall without code review."
+      },
+      {
+        "id": "b",
+        "text": "Use the applicable code or project source; this batch only captured masonry terms, CHB notes, and general reinforcement concepts."
+      },
+      {
+        "id": "c",
+        "text": "Use steel beam flange width as the grouting rule."
+      },
+      {
+        "id": "d",
+        "text": "Assume all cells remain empty even when reinforcement is present."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Approve every cavity wall without code review. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "b": "Use the applicable code or project source; this batch only captured masonry terms, CHB notes, and general reinforcement concepts. This stays inside the Batch 147 local source boundary for Masonry Construction Terms and CHB Source Boundaries.",
+      "c": "Use steel beam flange width as the grouting rule. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "d": "Assume all cells remain empty even when reinforcement is present. is not the best answer because it changes the concept or adds a claim outside the Batch 147 local source boundary.",
+      "correct": "Use the applicable code or project source; this batch only captured masonry terms, CHB notes, and general reinforcement concepts. Supported by masonry-lecture-terms-chb; bsi-masonry-walls.",
+      "takeaway": "For Masonry Construction Terms and CHB Source Boundaries, classify the condition and source boundary before using memorized exact values.",
+      "source_boundary": "masonry-lecture-terms-chb; bsi-masonry-walls",
+      "checked_sources": [
+        "masonry-lecture-terms-chb",
+        "bsi-masonry-walls"
+      ]
+    },
+    "explanation": "Use the applicable code or project source; this batch only captured masonry terms, CHB notes, and general reinforcement concepts. Supported by the Batch 147 local source boundary: masonry-lecture-terms-chb; bsi-masonry-walls.",
+    "code_citation": "masonry-lecture-terms-chb; bsi-masonry-walls",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-010-01-007"
   }
 }

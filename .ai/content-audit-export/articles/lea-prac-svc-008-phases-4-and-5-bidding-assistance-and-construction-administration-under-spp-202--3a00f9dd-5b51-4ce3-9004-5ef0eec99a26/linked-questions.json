@@ -8,23 +8,23 @@
       "question_id": "80967b3d-891b-41f7-82f6-e347662868ea",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "According to SPP 202, what percentage of total design fees is earned during the Bidding or Negotiation Phase?",
+      "text": "Which SPP 202 phase prepares bid documents and helps analyze bid results?",
       "options": [
         {
           "id": "a",
-          "text": "5%"
+          "text": "Bidding or Negotiation Phase"
         },
         {
           "id": "b",
-          "text": "10%"
+          "text": "Design Development Phase"
         },
         {
           "id": "c",
-          "text": "15%"
+          "text": "Project Definition Phase"
         },
         {
           "id": "d",
-          "text": "20%"
+          "text": "Schematic Design Phase"
         }
       ],
       "correct_option_id": "a",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "10% is not a standard individual phase fee for Bidding or CA.",
-        "c": "15% is earned during Schematic Design.",
-        "d": "20% is not the standard for this phase; Design Development is 25%.",
-        "correct": "The Bidding or Negotiation Phase earns 5% of the architect's total design fees, representing the phase where the cumulative total reaches 95% (SPP Doc 202).",
-        "takeaway": "Bidding Assistance Phase earns 5% of total design fees."
-      },
+      "rationale": "Bidding or Negotiation covers bid documents and bid-result analysis.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "remember",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-SVC-008-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.229792+00:00",
       "content_hash": "sha256:1fb06b131d0586a6529c9047c3a959120ab9bf8c22fe2704c9eea9b3388d05d5"
     },
     {
       "question_id": "10a72635-a6d5-4b30-a11d-9d5910eba916",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "According to SPP 202, what does the architect furnish to bidders during the Bidding Assistance Phase?",
+      "text": "Which item is part of the Bid Documents described in SPP 202?",
       "options": [
         {
           "id": "a",
-          "text": "Recommendations for which bid to accept, including a detailed analysis of each bid's compliance with project specifications"
+          "text": "Forms for bidders' proposals"
         },
         {
           "id": "b",
-          "text": "Complete sets of Bid Documents covering direct and indirect costs"
+          "text": "Final certificate of payment"
         },
         {
           "id": "c",
-          "text": "Agreements to cover any bid shortfalls, ensuring that all financial gaps are addressed prior to contract award"
+          "text": "Owner's tax clearance only"
         },
         {
           "id": "d",
-          "text": "Financing arrangements for selected contractors, including interest rate negotiations and payment schedules"
+          "text": "Post-occupancy survey only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Bid recommendations are made after bids are analyzed, not furnished with documents.",
-        "c": "The architect does not provide financial guarantees.",
-        "d": "The architect does not arrange contractor financing.",
-        "correct": "For competitive bids, the architect furnishes complete sets of Bid Documents loaned to bidders covering direct and indirect costs (SPP Doc 202).",
-        "takeaway": "Architects furnish complete Bid Documents to prospective bidders."
-      },
+      "rationale": "The source lists forms for bidders' proposals among Bid Documents.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-SVC-008-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.231172+00:00",
       "content_hash": "sha256:804b553791f82e4507feac362b194676477b1ddfc6e494805e2162b9716ff9d4"
     },
     {
       "question_id": "f01d1826-6c0f-458d-ab4a-a09cb20830e2",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "What is the primary responsibility of the architect regarding bidder questions during the Bidding Assistance Phase?",
+      "text": "For competitive bids, how are complete bid-document sets treated?",
       "options": [
         {
           "id": "a",
-          "text": "Ignore bidder questions to maintain confidentiality"
+          "text": "They are loaned to bidders at an amount covering preparation, reproduction, and delivery costs."
         },
         {
           "id": "b",
-          "text": "Provide guidance to specific bidders to favor particular contractors"
+          "text": "They become the bidder's property permanently."
         },
         {
           "id": "c",
-          "text": "Respond to bidder questions to clarify contract documents"
+          "text": "They are never returned."
         },
         {
           "id": "d",
-          "text": "Require all questions to be submitted only in writing without response"
+          "text": "They replace all construction contracts."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Questions deserve professional responses for accurate bidding.",
-        "b": "Architects must treat all bidders equitably.",
-        "d": "Architects provide clarification through various appropriate means.",
-        "correct": "The architect assists in responding to bidder questions regarding contract documents (SPP Doc 202).",
-        "takeaway": "Architects respond to bidder questions on contract documents."
-      },
+      "rationale": "The source describes bid documents as loaned to bidders with costs covered.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -151,30 +133,30 @@
       "model_id": "ALE-PRAC-SVC-008-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.232450+00:00",
       "content_hash": "sha256:9c5a644b8ab674575d17688b98198f6e5f51cc7e69fe3332e396db92230dd98d"
     },
     {
       "question_id": "cb945d5e-f3ec-4ef9-ba04-ed67e864f597",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "What percentage of total design fees is earned during the Construction Administration Phase according to SPP 202?",
+      "text": "What intellectual-property rule does SPP 202 state for Bid Documents?",
       "options": [
         {
           "id": "a",
-          "text": "5%"
+          "text": "They remain the architect's intellectual property and must be returned."
         },
         {
           "id": "b",
-          "text": "10%"
+          "text": "They become public domain immediately."
         },
         {
           "id": "c",
-          "text": "15%"
+          "text": "They belong to every bidder."
         },
         {
           "id": "d",
-          "text": "20%"
+          "text": "They may be reproduced for any unrelated project."
         }
       ],
       "correct_option_id": "a",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "10% is the combined total of Bidding and CA, but CA alone is the 5% balance.",
-        "c": "15% is earned during Schematic Design.",
-        "d": "20% is not the standard for this phase.",
-        "correct": "Construction Administration earns the remaining 5% balance of the architect's total design fees under SPP 202 (SPP Doc 202).",
-        "takeaway": "Construction Administration Phase earns the final 5% balance of the total design fees."
-      },
+      "rationale": "SPP 202 states the Bid Documents are the architect's intellectual property and must be returned.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "remember",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-SVC-008-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.229100+00:00",
       "content_hash": "sha256:6b4b9d9c61e7a5b76fbb8fe3dd7492b12e3e38391807bf7d38e60a13bf519e47"
     },
     {
       "question_id": "af7d1dc9-1b9f-4a6a-9353-356f4c492392",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "What is the cumulative fee percentage earned upon completion of the Bidding Assistance Phase according to SPP 202?",
+      "text": "In a negotiated contract, how does the architect's role differ from competitive bidding?",
       "options": [
         {
           "id": "a",
-          "text": "85%"
+          "text": "The architect negotiates with one contractor instead of many bidders."
         },
         {
           "id": "b",
-          "text": "90%"
+          "text": "The architect stops providing procurement support."
         },
         {
           "id": "c",
-          "text": "95%"
+          "text": "The architect becomes the contractor."
         },
         {
           "id": "d",
-          "text": "100%"
+          "text": "The architect no longer works for the owner."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "85% is not a standard cumulative milestone in SPP 202.",
-        "b": "90% is the cumulative total through the Contract Documents phase.",
-        "d": "100% is reached only after the Construction Administration phase is completed.",
-        "correct": "Cumulative through Bidding: SD (15%) + DD (25%) + CD (50%) + Bidding (5%) = 95% of total fees (SPP Doc 202).",
-        "takeaway": "Bidding Assistance phase brings the cumulative fee to 95% of total design fees."
-      },
+      "rationale": "SPP 202 says negotiated contracts use similar functions but with one contractor.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-SVC-008-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.230505+00:00",
       "content_hash": "sha256:a93e532da1342dc21990025dfd2ccbcd3c6a63f16a9bd0d7c792c842156bad00"
     },
     {
       "question_id": "3e956600-a3c6-44c8-93cb-a8592cda9abc",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "Considering Bidding Assistance (5%) and Construction Administration (5%) phases together, what is the cumulative fee percentage for these two final phases?",
+      "text": "Which duty belongs to the Construction Phase?",
       "options": [
         {
           "id": "a",
-          "text": "5%"
+          "text": "Making decisions on claims related to execution, progress, or interpretation of Contract Documents"
         },
         {
           "id": "b",
-          "text": "10%"
+          "text": "Preparing only conceptual line drawings"
         },
         {
           "id": "c",
-          "text": "15%"
+          "text": "Refining the owner's space requirements into a program"
         },
         {
           "id": "d",
-          "text": "20%"
+          "text": "Preparing only outline specifications"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "5% is the fee for either Bidding or CA individually.",
-        "c": "15% was the previous calculation based on an incorrect 10% CA fee.",
-        "d": "20% does not correspond to these two phases combined.",
-        "correct": "Bidding Assistance (5%) + Construction Administration (5%) = 10% combined for the post-contract document stages (SPP Doc 202).",
-        "takeaway": "Final two phases earn a 10% combined fee percentage."
-      },
+      "rationale": "Construction Phase includes decisions on owner and contractor claims.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "apply",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-SVC-008-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.227749+00:00",
       "content_hash": "sha256:7b94f391d271cf15be34da98867ceca3f6bc1fcced3d0b3f94c674f34ff6895f"
     },
     {
       "question_id": "b3ed662e-83db-4ba3-929a-3ec6265a461a",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "Why does Construction Administration earn only the remaining 5% balance of total fees despite potentially extending over months or years according to SPP 202?",
+      "text": "What is the architect's default site-visit obligation in the Construction Phase?",
       "options": [
         {
           "id": "a",
-          "text": "Long timelines deserve high fees regardless of work scope, which is a common misconception among clients"
+          "text": "Periodic visits to become familiar with progress and quality"
         },
         {
           "id": "b",
-          "text": "By construction phase, major design work is complete; the role shifts from creator to administrator and inspector"
+          "text": "Continuous 8-hour supervision at all times"
         },
         {
           "id": "c",
-          "text": "Construction Administration requires minimal architect involvement, focusing primarily on oversight and coordination"
+          "text": "No site involvement at all"
         },
         {
           "id": "d",
-          "text": "The fee is arbitrary and should be negotiated for each project, reflecting the unique demands of each construction phase"
+          "text": "Daily contractor labor assignment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Fees reflect work scope and creativity, not duration.",
-        "c": "Construction Administration involves significant responsibility and oversight.",
-        "d": "SPP 202 establishes standard fee structures.",
-        "correct": "SPP 202 reflects that by construction, the major design work is complete; the architect's role shifts from creator to administrator and inspector, justifying the final 5% balance allocation (SPP Doc 202).",
-        "takeaway": "CA fee reflects administrative role; 95% of design work is already billed."
-      },
+      "rationale": "SPP 202 requires periodic visits, not default continuous 8-hour supervision.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "analyze",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-SVC-008-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.228438+00:00",
       "content_hash": "sha256:afad4740d1d09c9812a9008fe276a32bb9f2363877f6ab86c0f4ccb8ff957f49"
     },
     {
       "question_id": "3cf5fd4d-7db3-4f7d-ab91-eeb161133e42",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "What is a key responsibility of the architect during Construction Administration regarding contractor and owner claims?",
+      "text": "When is full-time 8-hour construction supervision required under the checked SPP 202 wording?",
       "options": [
         {
           "id": "a",
-          "text": "The architect automatically approves all claims without review, assuming all parties have acted in good faith and according to contract terms."
+          "text": "When separately required by the client and handled under the applicable full-time supervision arrangement"
         },
         {
           "id": "b",
-          "text": "The architect makes decisions on all owner and contractor claims relating to execution and contract document interpretation"
+          "text": "Always for every regular design service"
         },
         {
           "id": "c",
-          "text": "The architect ignores claims to avoid conflict, thereby maintaining neutrality and focusing on project completion."
+          "text": "Never under any condition"
         },
         {
           "id": "d",
-          "text": "The architect sides exclusively with either owner or contractor, depending on who has the stronger contractual position."
+          "text": "Only during Project Definition"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Claims require professional evaluation and decision-making.",
-        "c": "Architects must address claims professionally.",
-        "d": "Architects decide claims impartially based on contract documents.",
-        "correct": "The architect makes decisions on all owner and contractor claims relating to execution and progress of work or interpretation of Contract Documents (SPP Doc 202).",
-        "takeaway": "Architects adjudicate claims during construction administration."
-      },
+      "rationale": "The source states full-time supervision is separate when more extensive inspection is required.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -401,44 +353,38 @@
       "model_id": "ALE-PRAC-SVC-008-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.225972+00:00",
       "content_hash": "sha256:aa839c48c6d5e42ef3d614a3356c02fb5b677d70bb11bdb90e1587072cc4f59a"
     },
     {
       "question_id": "e8f935ed-abbd-4149-88a8-637e5df39466",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "Which of the following is NOT mentioned as an activity during the Bidding Assistance Phase according to SPP 202?",
+      "text": "Which Construction Phase duty relates to contractor payment?",
       "options": [
         {
           "id": "a",
-          "text": "Preparing bid documents and invitation to bidders"
+          "text": "Determining amounts due and issuing Certificates for Payment"
         },
         {
           "id": "b",
-          "text": "Assisting with establishing prospective contractor lists"
+          "text": "Preparing conceptual design studies"
         },
         {
           "id": "c",
-          "text": "Conducting construction work based on winning bids"
+          "text": "Preparing bid proposal forms only"
         },
         {
           "id": "d",
-          "text": "Helping organize pre-bid conferences"
+          "text": "Creating the owner's space program"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Bid documents preparation is an explicit Bidding Assistance activity.",
-        "b": "Assisting with contractor lists is an explicit Bidding Assistance activity.",
-        "d": "Pre-bid conferences are explicitly mentioned.",
-        "correct": "Construction work is performed by contractors, not the architect during Bidding Assistance. The architect prepares bid documents, assists with contractor lists, conducts conferences, and analyzes bids (SPP Doc 202).",
-        "takeaway": "Architects prepare bidding, not perform construction work."
-      },
+      "rationale": "The architect determines amounts due and issues Certificates for Payment.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-SVC-008-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.226998+00:00",
       "content_hash": "sha256:78905c0d30cacbfe51d1f4597b4449dc0685e180afcd48634538c6904cfa5ad6"
     },
     {
       "question_id": "231c5ff6-8548-4223-a286-88f5e15aefb7",
       "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
       "topic_id": "218d240a-5012-4fae-b2de-2e06ebeddba9",
-      "text": "According to SPP 202, when does Construction Administration begin?",
+      "text": "Which source-safe payment statement should replace a claim that bidding assistance has its own SPP 202 percentage?",
       "options": [
         {
           "id": "a",
-          "text": "During the Bidding Assistance phase, when the architect provides support in evaluating contractor bids and proposals"
+          "text": "The checked payment source keeps the award adjustment at 85% and handles the remaining 15% through progress billing/final balance."
         },
         {
           "id": "b",
-          "text": "After the contractor is selected and commences work"
+          "text": "SPP 202 says bidding assistance is always 25%."
         },
         {
           "id": "c",
-          "text": "During Design Development, as the architect begins to coordinate with consultants and contractors"
+          "text": "The architect is never paid after Contract Documents."
         },
         {
           "id": "d",
-          "text": "Before Contract Documents are completed, allowing for early input on construction feasibility"
+          "text": "Bidding assistance is outside regular design services."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "CA begins after bidding is complete.",
-        "c": "CA occurs after all design phases.",
-        "d": "CA begins after Contract Documents approval.",
-        "correct": "Construction Administration begins after the contractor commences work and continues until final project completion and turnover to the owner (SPP Doc 202).",
-        "takeaway": "Construction Administration begins when construction work starts."
-      },
+      "rationale": "The local payment source supports the 85% award adjustment and remaining 15% handling, not a standalone bidding percentage.",
       "explanation": null,
       "code_citation": "SPP Doc 202",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-SVC-008-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.231827+00:00",
       "content_hash": "sha256:0b6dadbb7da70ae3d5c8a7964e3b811827f8352dc80f29566e75052f3fef7dd7"
     }
   ]

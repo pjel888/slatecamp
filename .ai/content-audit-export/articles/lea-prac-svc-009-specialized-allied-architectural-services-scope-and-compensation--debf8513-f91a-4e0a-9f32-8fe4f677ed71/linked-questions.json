@@ -8,23 +8,23 @@
       "question_id": "83b47929-49b7-45e9-a822-13017f4574ea",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "Which SPP Doc 203 service category directly supports sustainability rating system compliance?",
+      "text": "What is the basic source role of SPP Document 203?",
       "options": [
         {
           "id": "a",
-          "text": "Environmental certification services address energy efficiency, water conservation, and material sourcing"
+          "text": "It anchors Specialized Architectural Services."
         },
         {
           "id": "b",
-          "text": "Facilities maintenance services ensure sustainable operations after project completion, focusing on long-term performance"
+          "text": "It replaces all Regular Design Services."
         },
         {
           "id": "c",
-          "text": "Building systems design services automatically achieve all sustainability standards, integrating advanced technologies"
+          "text": "It is only a contractor payment schedule."
         },
         {
           "id": "d",
-          "text": "Structural conceptualization services optimize environmental performance, considering load and material efficiency"
+          "text": "It applies only to occupancy permits."
         }
       ],
       "correct_option_id": "a",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Confuses facilities maintenance (post-occupancy operations) with sustainability rating compliance (design-phase certification guidance)—these are distinct service categories.",
-        "c": "Mistakes building systems design for sustainability certification—building systems design coordinates mechanical and electrical systems, while environmental certification guides sustainability rating compliance.",
-        "d": "Incorrectly identifies structural conceptualization as sustainability-focused—structural conceptualization optimizes structural efficiency and cost, not sustainability rating compliance.",
-        "correct": "SPP Doc 203 explicitly names 'environmental certification services' as the category that 'guide projects through sustainability rating systems such as LEED and BREEAM compliance.'",
-        "takeaway": "Environmental certification services specifically guide LEED and BREEAM compliance through energy efficiency, water conservation, and material sourcing strategies."
-      },
+      "rationale": "SPP Document 203 is the Standards of Professional Practice source for Specialized Architectural Services.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "understand",
@@ -51,44 +45,38 @@
       "model_id": "ALE-PRAC-SVC-009-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.820390+00:00",
       "content_hash": "sha256:a3e20841118182deb7cb7cecb33ba374e948320f7ad773dff4df8085a96e3eac"
     },
     {
       "question_id": "f2aebeb9-c887-4938-8b3d-a369287ca10e",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "How do security evaluation services in SPP Doc 203 contribute to building design?",
+      "text": "Which group of items is entirely made of SPP 203 specialized service categories?",
       "options": [
         {
           "id": "a",
-          "text": "They analyze vulnerabilities in building access, surveillance, emergency egress, and perimeter control to protect occupant safety and assets"
+          "text": "Occupancy permit, final payment, bid bond"
         },
         {
           "id": "b",
-          "text": "They design the architectural style to deter crime through aesthetic means only, focusing on visual deterrents"
+          "text": "Architectural Interiors, Acoustic Design, Building Environmental Certification"
         },
         {
           "id": "c",
-          "text": "They replace the need for building code compliance in security matters, offering an alternative approach"
+          "text": "Fire lane, easement, height limit"
         },
         {
           "id": "d",
-          "text": "They focus exclusively on establishing building insurance requirements, without addressing physical security"
+          "text": "Contractor payroll, retention money, sales tax"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Narrows security evaluation to aesthetic crime deterrence—SPP Doc 203 defines it as a comprehensive vulnerability analysis of access, surveillance, egress, and perimeter control.",
-        "c": "Confuses security evaluation with code compliance authority—SPP Doc 203 describes security evaluation as a specialized analysis service, not a substitute for code compliance requirements.",
-        "d": "Misidentifies the scope as insurance-focused—SPP Doc 203 defines security evaluation as occupant safety and asset protection through vulnerability analysis, not insurance requirement establishment.",
-        "correct": "SPP Doc 203 defines security evaluation as comprehensive risk assessment analyzing building access, surveillance, egress, and perimeter control—a technical analysis service.",
-        "takeaway": "Security evaluation services perform comprehensive risk assessment covering access, surveillance, egress, and perimeter control to protect both occupants and assets."
-      },
+      "rationale": "SPP 203 lists Architectural Interiors, Acoustic Design, and Building Environmental Certification as specialized services.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "understand",
@@ -101,44 +89,38 @@
       "model_id": "ALE-PRAC-SVC-009-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.823936+00:00",
       "content_hash": "sha256:2b8ad6f6ec0876ac33fae967f7986daa3878b3f21695405476303e59f7d787b8"
     },
     {
       "question_id": "a65ad0cb-7a3a-4656-a13d-0b05c7cefe0c",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "What distinguishes heritage conservation services from general architectural design in SPP Doc 203?",
+      "text": "What does Architectural Interiors cover under the compiled SPP?",
       "options": [
         {
           "id": "a",
-          "text": "Heritage conservation requires knowledge of historical documentation, material conservation, and cultural significance assessment"
+          "text": "Only furniture purchasing"
         },
         {
           "id": "b",
-          "text": "Heritage conservation is only applicable to buildings over fifty years old, as younger buildings do not qualify for such services"
+          "text": "Only exterior landscaping"
         },
         {
           "id": "c",
-          "text": "Heritage conservation services cost significantly less than new design services, due to reduced material and labor requirements"
+          "text": "Detailed planning and design of indoor or enclosed areas including architectural and utility aspects"
         },
         {
           "id": "d",
-          "text": "Heritage conservation eliminates the need for compliance with modern building codes, allowing for more flexible design approaches"
+          "text": "Only contractor bidding forms"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Incorrectly limits heritage conservation to buildings of a specific age—SPP Doc 203 defines it by the specialized expertise required, not by age thresholds.",
-        "c": "Misunderstands compensation structure—SPP Doc 203 addresses specialized services based on complexity and scope, not inherent cost relationships to new design.",
-        "d": "Confuses heritage conservation with code exemption—SPP Doc 203 explicitly states that heritage conservation addresses 'building codes compliance' as part of its scope, not avoidance of codes.",
-        "correct": "Heritage conservation in SPP Doc 203 is distinguished by specialized expertise in historical documentation, material conservation, building codes compliance, and cultural significance—a distinct service category.",
-        "takeaway": "Heritage conservation requires specialized knowledge of historical documentation, material conservation, and cultural significance that goes beyond general architectural design."
-      },
+      "rationale": "The compiled SPP defines Architectural Interiors as detailed planning and design of indoor/enclosed areas with architectural and utility aspects.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "remember",
@@ -151,44 +133,38 @@
       "model_id": "ALE-PRAC-SVC-009-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.821926+00:00",
       "content_hash": "sha256:c01ec9af4dafb22bb3f6cd77bc654978e51f097f3a5417edd50aeb0fee16ff5e"
     },
     {
       "question_id": "97123811-a6bc-49ba-8143-cf38d641cb2e",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "According to SPP Doc 203, what is the relationship between testing/commissioning services and building system performance?",
+      "text": "Which SPP 203 category most directly names sustainability certification work?",
       "options": [
         {
           "id": "a",
-          "text": "Testing and commissioning services verify that all building systems perform according to design specifications before occupancy through systematic protocols and documentation"
+          "text": "Bid Bulletin"
         },
         {
           "id": "b",
-          "text": "Testing and commissioning services are optional suggestions that owners can disregard without consequences, though this may affect system reliability"
+          "text": "Contract Price"
         },
         {
           "id": "c",
-          "text": "These services guarantee that no system failures will occur during the building's thirty-year lifespan, which is an unrealistic assurance"
+          "text": "Project Definition"
         },
         {
           "id": "d",
-          "text": "Testing and commissioning services are conducted only if the project budget allows additional funding, which may limit their implementation"
+          "text": "Building Environmental Certification"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Mischaracterizes testing/commissioning as optional—SPP Doc 203 establishes it as a defined service category with documented protocols, not a discretionary suggestion.",
-        "c": "Overstates the guarantee—SPP Doc 203 defines testing/commissioning as verification of design specification compliance, not a guarantee against all future failures.",
-        "d": "Incorrectly makes testing/commissioning budget-dependent—SPP Doc 203 establishes it as a documented service with specific protocols, not as discretionary work contingent on available budget.",
-        "correct": "SPP Doc 203 states testing and commissioning services 'verify that all building systems perform according to design specifications before occupancy' through systematic testing protocols and documentation.",
-        "takeaway": "Testing and commissioning services verify design specification compliance before occupancy using systematic protocols and documentation for all major systems."
-      },
+      "rationale": "SPP 203 lists Building Environmental Certification as a specialized architectural service.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "understand",
@@ -201,30 +177,30 @@
       "model_id": "ALE-PRAC-SVC-009-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.818871+00:00",
       "content_hash": "sha256:829066e3dbbf908aa2ecc5b2cb0a8545d8817eda576e08d9cc8bc74080778dcb"
     },
     {
       "question_id": "c6bcaa0d-5650-4e9c-828e-94cecc75fb59",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "How does forensic architecture service under SPP Doc 203 differ from typical post-construction services?",
+      "text": "Which SPP 203 category directly names investigation of building defects or failures?",
       "options": [
         {
           "id": "a",
-          "text": "Forensic architecture investigates building failures and material degradation through technical analysis to support legal proceedings and remediation strategies"
+          "text": "Forensic Architecture"
         },
         {
           "id": "b",
-          "text": "Forensic architecture is performed only on buildings constructed before 1980 and cannot be applied to modern structures, which is a misunderstanding of its applicability."
+          "text": "Schematic Design"
         },
         {
           "id": "c",
-          "text": "Forensic architecture requires more regulatory approvals than standard architectural services, often involving detailed documentation and expert testimony."
+          "text": "Bid Bond"
         },
         {
           "id": "d",
-          "text": "Forensic architecture services substitute for structural engineering consultants in all cases, which is incorrect as it complements rather than replaces engineering expertise."
+          "text": "Owner's Representative"
         }
       ],
       "correct_option_id": "a",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Incorrectly limits forensic architecture to pre-1980 buildings—SPP Doc 203 defines it by the investigative and analytical function, applicable to buildings of any age.",
-        "c": "Adds non-existent regulatory requirement—SPP Doc 203 does not establish special regulatory approvals for forensic architecture beyond standard service requirements.",
-        "d": "Confuses forensic architecture with structural engineering delegation—SPP Doc 203 defines forensic architecture as an investigative technical analysis service, not a substitute for consulting engineers.",
-        "correct": "SPP Doc 203 defines forensic architecture as investigation of 'building failures, material degradation, and structural damage through technical analysis and documentation' supporting legal proceedings.",
-        "takeaway": "Forensic architecture investigates failures and degradation through technical analysis to support legal proceedings and remediation—not routine post-construction administration."
-      },
+      "rationale": "SPP 203 lists Forensic Architecture as a specialized service.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-SVC-009-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.817981+00:00",
       "content_hash": "sha256:8a3fc41998ab3fe091aeb8e5fb9593228cdcfe39a8263e0cef69f2716a1496c7"
     },
     {
       "question_id": "e560b92a-8cde-4a59-b8bd-443225636027",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "What compensation methods for specialized services are established in SPP Doc 203?",
+      "text": "Which SPP 203 category names early structural design thinking as a specialized service?",
       "options": [
         {
           "id": "a",
-          "text": "Methods include percentage of project construction cost, hourly rates, fixed fees, or hybrid arrangements tailored to service complexity and scope"
+          "text": "General Conditions"
         },
         {
           "id": "b",
-          "text": "Specialized services are always compensated at a fixed percentage regardless of project complexity, with no room for negotiation"
+          "text": "Payment Bond"
         },
         {
           "id": "c",
-          "text": "SPP Doc 203 specifies a single mandatory compensation method that cannot be negotiated, ensuring uniformity across projects"
+          "text": "Structural Conceptualization"
         },
         {
           "id": "d",
-          "text": "Specialized services should be provided without separate compensation as part of general architectural services, which covers all necessary tasks"
+          "text": "Advertisement to Bid"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Incorrectly mandates fixed percentage—SPP Doc 203 explicitly allows multiple methods (percentage, hourly, fixed fee, hybrid) tailored to service complexity.",
-        "c": "Misrepresents inflexibility—SPP Doc 203 offers multiple compensation methods and explicitly allows hybrid arrangements, indicating negotiability based on scope.",
-        "d": "Confuses compensation for specialized services—SPP Doc 203 specifically establishes compensation frameworks for specialized services, indicating they are separately compensated, not bundled into general services.",
-        "correct": "SPP Doc 203 states compensation for specialized services 'vary[ies] according to service complexity, duration, and deliverable scope' with 'percentage of project construction cost, hourly rates, fixed fees, or hybrid arrangements.'",
-        "takeaway": "Specialized services compensation varies by complexity and scope, with options including percentage of construction cost, hourly rates, fixed fees, or hybrid arrangements."
-      },
+      "rationale": "SPP 203 lists Structural Conceptualization as a specialized service.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "analyze",
@@ -301,44 +265,38 @@
       "model_id": "ALE-PRAC-SVC-009-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.821144+00:00",
       "content_hash": "sha256:9b3f5723f06a4e9f1b17e7725e77e2361468e76a3989f8328e8319bdeea248c0"
     },
     {
       "question_id": "a7227ce7-7590-4a4f-afff-187200901095",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "In terms of structural conceptualization as defined in SPP Doc 203, when in the design process does this service provide the greatest value?",
+      "text": "What compensation basis does the compiled SPP give for some specialized architectural services?",
       "options": [
         {
           "id": "a",
-          "text": "During the conceptual design phase, when optimizing structural efficiency, cost, and constructability before detailed engineering begins"
+          "text": "Free preliminary service"
         },
         {
           "id": "b",
-          "text": "After construction completion, when structural repairs become necessary, which is typically not the ideal time for conceptualization"
+          "text": "Man-months multiplied by a factor for direct and indirect costs"
         },
         {
           "id": "c",
-          "text": "Only when the structural engineer is unavailable to perform traditional design, which is an unlikely scenario in most projects"
+          "text": "Contractor bid bond only"
         },
         {
           "id": "d",
-          "text": "During the bidding phase, when cost estimates are being finalized, although this is generally too late for effective conceptualization"
+          "text": "Supplier commission"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Misplaces structural conceptualization as post-construction repair—SPP Doc 203 positions it as an early-design phase service for optimizing initial structural systems, not post-occupancy repairs.",
-        "c": "Incorrectly makes it a fill-in service—SPP Doc 203 defines structural conceptualization as a proactive design service providing optimization value, not a contingency when engineers are unavailable.",
-        "d": "Places it at wrong project phase—SPP Doc 203 establishes structural conceptualization as an early-stage design service; bidding phase placement misses the optimization opportunity.",
-        "correct": "SPP Doc 203 describes structural conceptualization as a service that 'develop[s] early-stage structural systems before detailed engineering,' optimizing 'efficiency, cost, and constructability during the conceptual design phase.'",
-        "takeaway": "Structural conceptualization provides early-stage structural optimization for efficiency, cost, and constructability before detailed engineering—a design-phase service, not post-construction."
-      },
+      "rationale": "The compiled SPP states that specialized service compensation may be through man-months multiplied by a factor.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "apply",
@@ -351,44 +309,38 @@
       "model_id": "ALE-PRAC-SVC-009-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.816899+00:00",
       "content_hash": "sha256:82b2f3bb1aadab41f2a19294f8c37fb15a88d23fb24a35437a3aa6e365b92625"
     },
     {
       "question_id": "cfa28b8c-6ad3-4d2a-861d-03a9990b6948",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "Under SPP Doc 203, which of the following best describes the primary purpose of acoustic design services?",
+      "text": "How should specialized services be treated in relation to regular design services?",
       "options": [
         {
           "id": "a",
-          "text": "Planning and analyzing sound behavior within architectural spaces, including noise control and acoustic isolation"
+          "text": "Automatically free"
         },
         {
           "id": "b",
-          "text": "Determining the cost of soundproofing materials and construction methods, which is crucial for budgeting purposes"
+          "text": "Always performed by the contractor"
         },
         {
           "id": "c",
-          "text": "Installing and testing audio equipment in completed buildings, ensuring optimal performance and integration"
+          "text": "Excluded from written scope"
         },
         {
           "id": "d",
-          "text": "Supervising contractors during the acoustic construction phase, focusing on adherence to design specifications"
+          "text": "Defined separately when they are additional or extra services"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Confuses acoustic design services with quantity surveying or cost estimation work—acoustic design is about sound analysis and planning, not material pricing.",
-        "c": "Mistakes acoustic design (planning sound behavior) with audio system installation—acoustic design is a planning service, not equipment installation.",
-        "d": "Misidentifies acoustic design as a construction supervision role—SPP Doc 203 classifies acoustic design as a planning and analysis service, not on-site supervision.",
-        "correct": "Acoustic design in SPP Doc 203 focuses on planning and analyzing sound behavior—a specialized design service, not cost estimation or construction supervision.",
-        "takeaway": "Acoustic design services analyze sound behavior and develop solutions for noise control and isolation; they are not cost estimating or construction supervision activities."
-      },
+      "rationale": "The audited SPP language supports treating specialized services as additional or extra services when applicable and defining compensation separately.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "remember",
@@ -401,30 +353,30 @@
       "model_id": "ALE-PRAC-SVC-009-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.822618+00:00",
       "content_hash": "sha256:398c63f201d80095706c17acd963315e2aef57523dfe17e7b7a25bfece78fa57"
     },
     {
       "question_id": "fd825989-8614-4bd2-876d-757afc5cc693",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "Considering the full range of services in SPP Doc 203, which statement accurately reflects the professional responsibility framework for specialized services?",
+      "text": "Which source-safe service boundary is correct?",
       "options": [
         {
           "id": "a",
-          "text": "Architects assume liability for quality, accuracy, and completeness of technical work within their area of specialization, maintaining standard of care and schedule adherence"
+          "text": "Name the SPP 203 category, define the service boundary, and agree on compensation."
         },
         {
           "id": "b",
-          "text": "Specialized services carry no liability beyond that of general architectural services regardless of specialization claims, which is a misunderstanding"
+          "text": "Assume all specialized services are included in schematic design."
         },
         {
           "id": "c",
-          "text": "Professional responsibility for specialized services applies only to structural-related work and not to other categories, which is incorrect"
+          "text": "Use contractor gifts to pay for specialist work."
         },
         {
           "id": "d",
-          "text": "Architects providing specialized services are exempt from professional liability if they include a disclaimer in their contract, which is not legally valid"
+          "text": "Ignore service category because the same architect is involved."
         }
       ],
       "correct_option_id": "a",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Denies enhanced liability for specialized work—SPP Doc 203 explicitly states architects assume liability for specialized services, which carries professional responsibility equal to general services.",
-        "c": "Incorrectly narrows liability scope—SPP Doc 203 establishes the liability framework applies across all seventeen specialized service categories, not just structural work.",
-        "d": "Falsely suggests disclaimer protection—SPP Doc 203 establishes clear professional responsibility that cannot be escaped through contractual disclaimers; architects remain liable for specialized work quality.",
-        "correct": "SPP Doc 203 states 'Architects providing specialized services assume liability for the quality, accuracy, and completeness of technical work within their area of specialization' with responsibilities for standard of care, schedule adherence, and deliverable accuracy.",
-        "takeaway": "Architects providing specialized services assume full liability for quality, accuracy, and completeness of technical work in their area of specialization—disclaimers do not eliminate this responsibility."
-      },
+      "rationale": "SPP 203 names the categories, while the compiled SPP describes separate compensation methods for specialized services.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "analyze",
@@ -451,44 +397,38 @@
       "model_id": "ALE-PRAC-SVC-009-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.819651+00:00",
       "content_hash": "sha256:f45c5f547469fe8270cb7b264e65f7c6cd62d0eb747ae0efa6a4f51edac956a8"
     },
     {
       "question_id": "d0828f99-fbc3-4d94-9a4e-7e6fa687edb5",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
       "topic_id": "a33b3954-9798-44b5-b28d-cbade5bb9b1b",
-      "text": "According to SPP Doc 203, how do site development planning services address the relationship between buildings and their contexts?",
+      "text": "Which statement best reflects the professional responsibility framework for specialized services?",
       "options": [
         {
           "id": "a",
-          "text": "Site development planning integrates landscape design, grading, utilities coordination, and environmental assessment to shape the relationship between buildings and surrounding contexts"
+          "text": "They are unrelated to the SPP."
         },
         {
           "id": "b",
-          "text": "Site development planning is limited to parking lot design and sidewalk placement only, without consideration for broader environmental or contextual factors."
+          "text": "They require source-defined scope, qualified expertise, and compensation appropriate to the service."
         },
         {
           "id": "c",
-          "text": "This service is required only for rural projects and not applicable in urban settings, where different planning standards apply."
+          "text": "They exist only during final occupancy."
         },
         {
           "id": "d",
-          "text": "Site development planning addresses only aesthetic landscaping without functional utility coordination, focusing solely on visual appeal."
+          "text": "They are always part of the contractor's contract price."
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Overly narrows the scope to parking and sidewalks—SPP Doc 203 defines site development planning as a broad integration of landscape design, grading, utilities, and environmental assessment.",
-        "c": "Incorrectly limits applicability to rural projects—SPP Doc 203 establishes site development planning as a general specialized service applicable across project types.",
-        "d": "Separates aesthetics from function—SPP Doc 203 integrates landscape design (which includes aesthetics) with grading and utilities coordination (functional systems) as a unified service.",
-        "correct": "SPP Doc 203 defines site development planning as integrating 'landscape design, grading, utilities coordination, and environmental assessment' to shape building-context relationships.",
-        "takeaway": "Site development planning integrates landscape, grading, utilities, and environmental assessment to shape the building-context relationship comprehensively."
-      },
+      "rationale": "Specialized Architectural Services are source-defined SPP services and compensation should follow applicable SPP/Guidelines methods.",
       "explanation": null,
       "code_citation": "SPP Documents 201-210",
       "bloom_level": "apply",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-SVC-009-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.925465+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.823280+00:00",
       "content_hash": "sha256:4ee6a54f19388f2bc5d432f66e81003e9d9c964abc4f90cad6c6416cea24649a"
     }
   ]

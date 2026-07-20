@@ -1,0 +1,498 @@
+{
+  "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:52aadcedbdd9ce44779e7a17389adad0971917b399d166c33ea0fc8a38e3b64e",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "0805d254-76d0-46f7-98ea-7bb23781e089",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "NBRC standard ___ governs bamboo structural design in the Philippines. Bamboo is suited for sustainable/rural housing due to its ___ and climate ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "PNS 16:2019; renewable (rapid-growth), suitability to Philippine tropical climate"
+        },
+        {
+          "id": "b",
+          "text": "PNS 101:2020; rare material, limited local supply, making it less viable for widespread use"
+        },
+        {
+          "id": "c",
+          "text": "NSCP 2015 Chapter 22; experimental status, requiring further research and development for full integration"
+        },
+        {
+          "id": "d",
+          "text": "DPW Code; only heritage applications, which limits its use in modern construction projects"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "PNS 101:2020 is not the bamboo standard; NSCP 2015 does not address bamboo specifically.",
+        "c": "Bamboo is not rare in Philippines; it is abundant and renewable.",
+        "d": "Bamboo is no longer limited to heritage; modern structures are using NBRC standards.",
+        "correct": "NBRC PNS 16:2019 Code of Practice for Timber and Bamboo Structures establishes design criteria for bamboo. Advantages: renewable (grows in 3–5 years), local material (reduced cost/transportation), seismic-tolerant (flexibility), aesthetic appeal, sustainability. Emerging in Philippine modern commercial projects alongside heritage applications."
+      },
+      "explanation": null,
+      "code_citation": "NBRC PNS 16:2019",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7e288e0a6e8e7b6da8a4913a4356a5f76754352df2aa80273b5845de90255d68"
+    },
+    {
+      "question_id": "cb9fc36b-331f-456f-9887-b185de654aa9",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "Insulated Concrete Forms (ICF) are foam blocks that are stacked, reinforced, and concreted. The foam remains in place, providing ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "insulation (R-value: 15–20 per unit thickness)"
+        },
+        {
+          "id": "b",
+          "text": "temporary formwork (removed after curing, which is typically within 28 days)"
+        },
+        {
+          "id": "c",
+          "text": "acoustic dampening (primary benefit, reducing noise transmission by up to 50%)"
+        },
+        {
+          "id": "d",
+          "text": "fireproofing (concrete exterior, which can withstand temperatures up to 1000°C)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Foam is permanent; it is not temporary formwork.",
+        "c": "Foam provides some acoustic benefit but primary function is insulation.",
+        "d": "Fireproofing is provided by concrete cover; foam contributes little.",
+        "correct": "ICF (expanded polystyrene or polyurethane foam) is retained in place as thermal insulation after concrete cures. R-value: 15–20 per unit (depends on foam thickness/density). Advantages: integrated insulation, faster formwork assembly. Disadvantages: higher cost, less common in Philippines (tropical climate reduces insulation premium), reinforcement detailing complexity."
+      },
+      "explanation": null,
+      "code_citation": "ICF manufacturer standards; ASHRAE thermal design",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:faf916305f4d86e8284fa306bd24ed5608a7da5a08370985bbeb94dbaabbd56b"
+    },
+    {
+      "question_id": "401ab35f-c285-474c-b08c-9064999bf8c7",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "The DPWH Prefab Bridge Program manufactures ___ components nationally for rapid rural ___. The NHA uses ___ for mass affordable housing programs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "precast concrete bridge; road infrastructure; prefabricated wall panels/roof trusses"
+        },
+        {
+          "id": "b",
+          "text": "steel frame; commercial buildings; concrete decks, which is a common misconception"
+        },
+        {
+          "id": "c",
+          "text": "modular housing; infrastructure; proprietary units, which is often misunderstood"
+        },
+        {
+          "id": "d",
+          "text": "temporary bridges; urban areas; custom modules, which is an incorrect assumption"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "DPWH focuses on bridges/infrastructure, not commercial buildings.",
+        "c": "NHA uses prefab components, not proprietary modular units.",
+        "d": "These are permanent infrastructure programs, not temporary solutions.",
+        "correct": "DPWH: precast concrete bridge beams, deck slabs manufactured in central plants, delivered nationwide for rapid rural road infrastructure. NHA: prefabricated wall panels, roof trusses, and partially assembled components for mass socialized housing programs (affordability via reduced labor/on-site assembly)."
+      },
+      "explanation": null,
+      "code_citation": "DPWH; NHA program documentation",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c59147701d9cf15236cdb070ccc8d19cf31db4a1ae66b5722aac850fba96f62"
+    },
+    {
+      "question_id": "79f0e5b2-7b10-461c-baaa-5e6ce35908b6",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "A proposed modular housing project specifies 2.8 m wide × 4.2 m tall volumetric units. The site is in a provincial city accessible via (1) national highway (4.5 m overpass), (2) provincial road through commercial area (3.0 m clearance), (3) last-mile city street (2.5 m). Which route is feasible, and what is the consequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No standard route is feasible. Route 3 (2.5 m clearance) cannot fit 2.8 m wide modules. Routes 1–2 are also marginal (4.2 m height exceeds typical 4.0 m clearance). Special permits, police escorts, overpass reduction/modification, or helicopter transport is required—significant cost and delay. Module dimensions should be redesigned (<2.5 m width) before commitment."
+        },
+        {
+          "id": "b",
+          "text": "Route 1 (national highway 4.5 m) is clearly feasible; units fit without issue, but may require coordination with local authorities for smooth transport"
+        },
+        {
+          "id": "c",
+          "text": "Routes can be widened if needed; transportation is a minor logistics matter, though it may involve additional costs and planning permissions"
+        },
+        {
+          "id": "d",
+          "text": "Container-sized modules (2.5 m width) are always transportable via any route, assuming standard road conditions and no unforeseen obstacles"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "4.5 m overpass is marginal for 4.2 m tall module; only 30 cm clearance is risky.",
+        "c": "Route widening/overpass modification is extremely expensive and often politically unfeasible.",
+        "d": "2.5 m is standard container width; larger modules face constraints.",
+        "correct": "Module width (2.8 m) exceeds typical highway lane width (2.5 m) and narrowest city street clearance. Height (4.2 m) exceeds many overpass limits (4.0 m nominal). No standard route is feasible without special permits (expensive, time-consuming) or expensive alternatives (helicopter, module redesign, overpass modification—often cost-prohibitive). This is a fatal transportation constraint if not identified during design. Always verify dimensions and routes before proceeding."
+      },
+      "explanation": null,
+      "code_citation": "Philippine highway/road authority standards; MBI best practices",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:180d02526800346b82b6f6802fa40bafd28bcdaa06a7bda11439ede39702da67"
+    },
+    {
+      "question_id": "b138cb41-bdc6-4fe6-ba58-417f360780c2",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "A developer proposes modular construction for a 30-story residential tower with 200 units. Factory setup (design, tooling) requires ___ months; production of 200 modules requires ___–___ months; on-site assembly requires ___–___ months. Total project timeline is how much faster than traditional CIP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2–4 months; 4–6 months; 4–6 months total ~12–16 months; 30–50% faster than traditional (~24 months)"
+        },
+        {
+          "id": "b",
+          "text": "1 month setup; 1 month production; 1 month assembly (~3 months total), which is an overly optimistic estimate"
+        },
+        {
+          "id": "c",
+          "text": "Setup not required; immediate production; 1 month assembly only, which ignores necessary preparatory steps"
+        },
+        {
+          "id": "d",
+          "text": "Timeline is identical to traditional methods; no schedule advantage exists, which contradicts the benefits of modular construction"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Factory setup/tooling is not instantaneous; time must be budgeted.",
+        "c": "1 month production for 200 modules is unrealistic; factory capacity and logistics require longer.",
+        "d": "Modular provides measurable schedule advantage; timeline comparison is essential for economic justification.",
+        "correct": "Modular timeline: pre-production (design finalization, factory setup, tooling) 2–4 months; parallel site foundation work; factory module production 4–6 months; on-site assembly 4–6 months (1–2 days per floor × 30 floors, plus connections). Total ~12–16 months vs. traditional CIP ~24 months. Actual advantage: 30–50% schedule reduction amortizes higher modular capital cost."
+      },
+      "explanation": null,
+      "code_citation": "MBI Modular Construction; construction scheduling practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:68d82970f9294f56bd6ed6dd8d91b4f9ab991a0b68681166171e54b56e841c3b"
+    },
+    {
+      "question_id": "ea1ffe0e-1384-4cb6-a480-526fe10e934d",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "A project specifies modular construction for a 300-unit mixed-income residential tower in Metro Manila (schedule 24 months). Factory tooling: 3 months; module production 5 months (parallel to site foundation 4 months); on-site assembly 8 months; MEP/finishes 3 months. Total: 19 months (critical path via foundation + production). Discuss schedule feasibility and risks in Philippine context (rainy season June–October, holiday closures, city traffic for deliveries).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Critical path: 3 mo. setup + max(4 mo. foundation, 5 mo. production) + 8 mo. assembly + 3 mo. finish = ~16–19 months fits within 24-month target with 5–8 month margin. Risks: (1) Rainy season (June–Oct) can delay foundation work (wet soil, low crane efficiency); (2) Holiday closures (local/factory); (3) Metro traffic restricts module delivery windows (early morning, weekends); (4) Permit delays for modular inspection/approval (not standard in Philippines). Recommend schedule contingency buffer (2–3 months)."
+        },
+        {
+          "id": "b",
+          "text": "All tasks are sequential; parallel foundation work cannot occur, leading to potential delays in the overall project timeline"
+        },
+        {
+          "id": "c",
+          "text": "Modular schedule is immune to weather and logistics delays, ensuring timely completion regardless of external factors"
+        },
+        {
+          "id": "d",
+          "text": "Philippine tropical climate has no impact on modular construction, as the process is entirely controlled and unaffected by external conditions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Foundation and production are sequential in this calculation; they cannot be parallelized beyond the assumed timing.",
+        "c": "Modular is not immune; weather delays (foundation delays entire schedule if on critical path).",
+        "d": "Tropical climate impacts foundation, logistics, and equipment availability; these are real constraints.",
+        "correct": "Critical path analysis: parallel foundation and production phases run concurrently (key to schedule reduction). Total time is maximum of longest phases, not their sum. Calculated path (~16–19 months) fits within 24-month target. However, Philippine-specific risks are real: (1) Rainy season reduces excavation/piling progress; (2) Factory and site holiday closures (New Year, Holy Week, local fiestas) fragment schedules; (3) Metro traffic: module deliveries must be scheduled for early morning or weekends to avoid gridlock; (4) Regulatory approval: modular inspection procedures are not standardized in Philippines—delays occur. Recommendation: add 2–3 month contingency buffer, bringing total to ~21–22 months (still within 24-month target but with reduced margin)."
+      },
+      "explanation": null,
+      "code_citation": "Philippine construction scheduling practice; MBI best practices; DPWH/NHA project experience",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c2580172a6ef2f57a479f5cb70366aa19669c306315da5a4a5828a4280498bac"
+    },
+    {
+      "question_id": "47d0bcb1-4ebb-471a-bc29-8717f83a9f91",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "Volumetric modular units are constrained by highway transportation limits: typical width ___–___ m, height ___–___ m. If a proposed module exceeds these limits, what is the consequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2–2.5 m width; 3.5–4 m height. Oversized modules cannot use standard highway routes; special permits, police escorts, or reduced-route logistics increase cost dramatically. Always verify module dimensions against routes during design."
+        },
+        {
+          "id": "b",
+          "text": "3–4 m width; 5+ m height (no significant constraint), allowing for greater flexibility in design but potentially requiring alternative transportation methods."
+        },
+        {
+          "id": "c",
+          "text": "1–2 m width; 2–3 m height (undersized), which may not fully utilize available space and could lead to inefficiencies in module design."
+        },
+        {
+          "id": "d",
+          "text": "Transportation limits do not apply to modular systems, which can be transported without restriction, though this is rarely the case in practice."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Larger dimensions (3–4 m width, 5+ m height) exceed standard highway limits; special logistics required.",
+        "c": "1–2 m width is undersized; typical modules approach standard limits to maximize floor area.",
+        "d": "Highway limits are critical constraints; ignoring them causes project failure.",
+        "correct": "Shipping containers and modular units are constrained by highway infrastructure: overpasses (~4–4.5 m height), lane width (~2.5 m), bridge weight limits. Oversized modules require special permits, police escorts, non-standard routes (longer, more expensive), or even helicopter transport (prohibitively expensive). Transportation must be verified before design finalization or project becomes infeasible."
+      },
+      "explanation": null,
+      "code_citation": "MBI Modular Construction; Philippine highway authority guidelines",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c4bb69ab3100967be301db22db66dc7337e4326f60e9aa94daf0eceb27cd702a"
+    },
+    {
+      "question_id": "527bef1a-de90-4d7d-a3fc-d95340591b49",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "Modular construction manufactures fully ___ modules (bathrooms, kitchens, rooms) in a factory, then transports and ___ on-site. Advantages include factory quality and ___ assembly schedule.",
+      "options": [
+        {
+          "id": "a",
+          "text": "finished; stacks (bolts); rapid (1–2 days per floor)"
+        },
+        {
+          "id": "b",
+          "text": "designed; welds; extended, often requiring additional on-site adjustments"
+        },
+        {
+          "id": "c",
+          "text": "prefabricated; assembles over weeks; minimal, with significant delays expected"
+        },
+        {
+          "id": "d",
+          "text": "incomplete; finishes on-site; traditional, following conventional construction timelines"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Modules require on-site assembly connections (bolts/welds), not field welding of structural members.",
+        "c": "Modules are pre-designed; field customization is limited.",
+        "d": "Module completion in factory; on-site is assembly, not finishing.",
+        "correct": "Modular construction: factory completes modules (all finishes, MEP, fixtures), then on-site stacking/bolting creates building envelope in days. Assembly time: 1–2 days per floor for large buildings. Advantages: factory quality control, minimal weather dependency, rapid on-site progress, labor reduction."
+      },
+      "explanation": null,
+      "code_citation": "MBI Modular Construction standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59a1f8314c0f6da5334088c4a13707b7af7d95223218d2a5a7442b85d2c1892c"
+    },
+    {
+      "question_id": "577042d7-0e47-4d43-a52c-0e51698d175e",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "3D concrete printing deposits concrete layer-by-layer to build walls/structures. Why is this technology still experimental in construction, and when might it be justified?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Printing speed (weeks) is slower than traditional formwork (days). Material limitations (concrete only), unproven long-term durability, lack of regulatory standards, and high equipment cost make it uneconomical for most projects. Justified for custom/complex shapes where formwork would be expensive, or for research/demonstration projects."
+        },
+        {
+          "id": "b",
+          "text": "3D printing is faster than all traditional methods; it should replace formwork universally, which overlooks the current technological and regulatory limitations"
+        },
+        {
+          "id": "c",
+          "text": "Printing is economical for all projects; cost is minimal, ignoring the high initial investment and material constraints"
+        },
+        {
+          "id": "d",
+          "text": "No practical advantage; traditional formwork is always superior, which dismisses the potential benefits of 3D printing for specific applications"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Printing is slower, not faster, than traditional methods at current technology levels.",
+        "c": "Equipment cost ($500k+) is substantial; cost-effectiveness requires justified applications.",
+        "d": "Printing has advantages (design freedom) and disadvantages (speed, cost, durability); it will supplement, not replace, traditional methods.",
+        "correct": "3D printing research shows promise but faces real constraints: (1) print speed (weeks for multi-story building) exceeds traditional formwork (days); (2) material is concrete only (no advanced materials); (3) durability long-term is unproven; (4) equipment cost is high ($500k+); (5) regulatory acceptance is developing. Justified for design freedom (curved walls, organic shapes) where formwork would be cost-prohibitive, or research/landmark projects willing to invest in technology demonstration."
+      },
+      "explanation": null,
+      "code_citation": "3D construction printing research; industry adoption reports",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:003c7ea0148c52c219279162385c82ec90c1e8b9236ee13d28885bd94c626bcc"
+    },
+    {
+      "question_id": "e9185f45-86a2-41de-a707-2b5ca5fc18df",
+      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+      "topic_id": "e815236e-fe70-4319-8bb0-11c444c79d5d",
+      "text": "Container architecture repurposes ___ shipping containers into modular housing. Advantages include ___ assembly and aesthetic. Disadvantages include ___ floor space and ___ requirements.",
+      "options": [
+        {
+          "id": "a",
+          "text": "20–40 foot; rapid; limited; structural bracing/fireproofing"
+        },
+        {
+          "id": "b",
+          "text": "Standard 40-foot only; slow; expansive; minimal, often requiring additional support structures"
+        },
+        {
+          "id": "c",
+          "text": "Custom-built; very rapid; large; none, as they are designed to be self-supporting"
+        },
+        {
+          "id": "d",
+          "text": "Obsolete containers; medium speed; moderate; cosmetic only, with no structural modifications needed"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "20–40 foot containers are standard; custom containers are rare.",
+        "c": "Floor space is inherently limited; expansion via stacking increases complexity.",
+        "d": "Containers are typically reclaimed/obsolete, not newly built.",
+        "correct": "Container architecture: 20-foot containers (~2.3 m int. width × 2.7 m int. height × 5.9 m int. length; internal ~30 m³) or 40-foot (~60 m³) are stacked/modified. Advantages: reuses existing material, rapid assembly, iconic look. Disadvantages: limited floor area (small living units), requires structural welding modifications, thermal insulation (tropical climate), fireproofing (regulatory requirement), wind/seismic bracing. Niche applications: temporary housing, disaster relief, artist studios, affordable infill housing."
+      },
+      "explanation": null,
+      "code_citation": "Container architecture design guidelines; Philippine applications",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-10-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d20e9ed9d1a244f6c56f2545abbcaecc76403fa4c79e11aef22f07c261fd5f5b"
+    }
+  ]
+}

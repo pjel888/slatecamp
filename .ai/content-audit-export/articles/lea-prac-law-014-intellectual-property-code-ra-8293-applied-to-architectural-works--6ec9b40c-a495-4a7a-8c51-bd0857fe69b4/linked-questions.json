@@ -8,23 +8,23 @@
       "question_id": "0feacd82-8606-4dda-a116-df0ad69a0fc9",
       "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
       "topic_id": "a150520c-78d4-4e5e-b128-0b43cefc4f99",
-      "text": "Architect C's building design was widely photographed and published on architecture websites without authorization. The unauthorized use occurred for 5 years before the architect became aware. What remedy is most appropriate under RA 8293?",
+      "text": "Architect C's architectural drawings and design images were copied to a project website without permission and remain online. The unauthorized use began five years before discovery. What remedy framing is most source-safe under RA 8293?",
       "options": [
         {
           "id": "a",
-          "text": "The architect must accept the unauthorized use because publication occurred more than 3 years prior, and the statute of limitations may apply"
+          "text": "The architect must accept the use because any online infringement older than three years eliminates all remedies"
         },
         {
           "id": "b",
-          "text": "The architect can pursue injunctive relief to stop ongoing infringement and recover damages for past unauthorized use under RA 8293"
+          "text": "The architect may seek an injunction to stop continuing infringement and may seek damages subject to RA 8293 proof and timing rules"
         },
         {
           "id": "c",
-          "text": "The architect can only demand removal of the photographs; monetary damages are not available for web publication, as digital use is often considered fair use"
+          "text": "The architect can only demand removal because monetary remedies are never available for online publication"
         },
         {
           "id": "d",
-          "text": "The statute of limitations has expired, preventing any legal action after 5 years of use, unless continuous infringement can be proven"
+          "text": "All legal action is barred once the use has continued for five years, even if the material remains online"
         }
       ],
       "correct_option_id": "b",
@@ -33,11 +33,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely imposes a statute of limitations based on duration of use; no time bar eliminates rights to stop ongoing infringement.",
-        "c": "Incorrectly limits remedies to removal; copyright infringement includes the right to recover monetary damages for lost fees and profits.",
-        "d": "Misapplies statute of limitations; the architecture infringement can be remedied even after years of unauthorized use, and ongoing use remains actionable.",
-        "correct": "RA 8293 protects reproduction and public display rights, which extend to photographs and website publication of architectural works without authorization. The architect may pursue injunctive relief to halt ongoing infringement and recover damages for past unauthorized use. The length of prior unauthorized use does not eliminate the architect's remedies. Philippine intellectual property law provides generous damages provisions in infringement cases.",
-        "takeaway": "An architect can pursue injunctions and damages for unauthorized publication of architectural works regardless of how long the infringement continued."
+        "a": "This overstates the time issue; RA 8293 has a damages limit, not a blanket rule that erases every possible remedy.",
+        "c": "Section 216 includes monetary remedies; removal is not the only civil remedy.",
+        "d": "This treats the four-year damages limit as a total bar to all relief, which the local source does not support.",
+        "correct": "RA 8293 Section 177 protects economic rights such as reproduction, public display, and communication to the public. Section 216 allows injunction and damages/profits remedies. Section 226 limits damages recovery after four years from the time the cause of action arose, so the source-safe answer preserves prospective relief and treats damages as timing- and proof-dependent.",
+        "takeaway": "Long-running unauthorized use requires a remedies analysis: injunction may stop continuing infringement, while damages are subject to RA 8293 limits."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -51,7 +51,7 @@
       "model_id": "ALE-PRAC-LAW-014-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.309774+00:00",
       "content_hash": "sha256:736ae28e869aa348c76787dcab3a38e99b17d2903071760dcb934cf0d4d93535"
     },
     {
@@ -83,11 +83,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely assumes all buildings are unprotectable; copyright protects the creative expression embodied in the building, even though buildings are functional.",
-        "c": "Confuses evidentiary advantage with a requirement for infringement; copyright exists and infringement can be proven without registration.",
-        "d": "Overgeneralizes copyright limitations; code-mandated functional elements are unprotected, but distinctive creative choices are protected.",
-        "correct": "RA 8293 protects original creative expression in architectural works. The distinctive curved facade and innovative spatial arrangement are protectable creative elements. If the evidence shows copying of these specific creative features rather than independent design based on similar functional requirements, infringement remedies are available. Registration provides evidentiary advantage but is not required for infringement to exist.",
-        "takeaway": "Identical copying of distinctive creative design features (facade, spatial flow) constitutes infringement; functional similarity alone does not."
+        "a": "Buildings and architectural works are expressly included in RA 8293; the functional nature of a building does not remove all protection.",
+        "c": "RA 8293 Section 172.2 protects works by the sole fact of creation; registration is not stated as a condition for copyright to exist.",
+        "d": "Functional or code-required similarities are not enough, but distinctive copied expression can be protected.",
+        "correct": "RA 8293 protects works of architecture and plans or three-dimensional works relative to architecture, but Section 175 excludes ideas, systems, methods, concepts, principles, and mere data as such. Section 186 specifically covers erection of a building reproducing the whole or a substantial part of a protected architectural work. The claim depends on copying protected expression, not merely using the same functional concept.",
+        "takeaway": "Architectural copyright analysis asks whether protected expression was copied, not whether the buildings share a generic function."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -101,7 +101,7 @@
       "model_id": "ALE-PRAC-LAW-014-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.308270+00:00",
       "content_hash": "sha256:69eb2b749b17f4045de06aa8c93ec94b5920d60b31cc51585392131f733ba560"
     },
     {
@@ -133,11 +133,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Confuses copyright scope with building code compliance; functional requirements are not protected because they are dictated by code, not creative choice.",
-        "b": "Misunderstands copyrightability; standard construction methods are not protected because they are functional and not creative expression.",
-        "d": "Extends protection beyond copyright scope; costs and schedules are project management documents, not creative design subject to copyright.",
-        "correct": "RA 8293 copyright protects the original creative expression in architectural designs, including distinctive spatial arrangements, aesthetic treatments, facade proportions, and unique structural conceptualizations. It does not protect functional elements mandated by building codes or common construction methods used by many architects.",
-        "takeaway": "Copyright protects the architect's creative design choices and aesthetic expression, not purely functional or code-mandated elements."
+        "a": "Code-required functional arrangements are not the protected creative expression.",
+        "b": "Construction methods and structural systems as systems or methods are not protected by copyright as such.",
+        "d": "Cost estimates and schedules are not the architectural expression being tested here.",
+        "correct": "RA 8293 Section 172 includes works of architecture and plans, sketches, charts, and three-dimensional works relative to architecture. Section 175 excludes ideas, procedures, systems, methods, concepts, principles, discoveries, and mere data as such. The protected subject is original expression, not generic functional requirements or construction methods.",
+        "takeaway": "RA 8293 protects original architectural expression; it does not protect a bare idea, method, or code-mandated function."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -151,7 +151,7 @@
       "model_id": "ALE-PRAC-LAW-014-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.305954+00:00",
       "content_hash": "sha256:ce8a9a21fcaa7e7d8839f41ff55814e6dccf90521a92644b319d2206c526f7c2"
     },
     {
@@ -183,11 +183,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Drastically shortens the protection period and misdates the measurement from creation instead of death; RA 8293 provides much longer protection.",
-        "c": "Measures from building completion instead of the architect's death and provides only 50 years instead of life plus 50 years.",
-        "d": "Imposes an arbitrary short term and a false dependency on continuous building use; copyright term does not depend on building occupation.",
-        "correct": "RA 8293 provides copyright protection for architectural works for the life of the architect plus 70 years (RA 8293 Sec 213 as amended by RA 10372) following the architect's death. This extended protection period reflects the long-term value of architectural intellectual property. For corporate authors, protection runs for 50 years from first publication. The term does not depend on building completion or continuous use.",
-        "takeaway": "Copyright in architectural works extends for the architect's lifetime plus 50 years post-mortem, not limited by creation or completion dates."
+        "a": "This invents a 20-year registration-based term.",
+        "c": "This measures from building completion instead of the author's death.",
+        "d": "This invents a short renewable term tied to continued building use.",
+        "correct": "RA 8293 Section 213.1 protects works under Sections 172 and 173 during the life of the author and for fifty years after death. For an individual architect's architectural work, the exam-safe term is lifetime plus 50 years after death, not 70 years and not a term measured from registration, completion, or occupancy.",
+        "takeaway": "For individual architects, Section 213.1 uses life of the author plus 50 years."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -201,30 +201,30 @@
       "model_id": "ALE-PRAC-LAW-014-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.310525+00:00",
       "content_hash": "sha256:342abac778969bdce06da01a34515608ec18979dc792d0417ea162d81e1b131a"
     },
     {
       "question_id": "d27fd89f-fa52-40aa-92b9-0296f04fa0af",
       "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
       "topic_id": "a150520c-78d4-4e5e-b128-0b43cefc4f99",
-      "text": "Under RA 8293, when does copyright protection attach to an architectural design or building?",
+      "text": "Under RA 8293, when does copyright protection attach to an architectural work covered by Section 172?",
       "options": [
         {
           "id": "a",
-          "text": "Only after the architect registers the copyright with IPOPHL, ensuring that all legal documentation is properly filed and acknowledged"
+          "text": "Only after copyright registration is completed with the relevant government office"
         },
         {
           "id": "b",
-          "text": "Only after the building is completed and occupied, which signifies the practical realization of the design in a tangible form"
+          "text": "Only after the building is completed and occupied"
         },
         {
           "id": "c",
-          "text": "Automatically when the work is fixed in a tangible medium, without need for registration or notice"
+          "text": "By the sole fact of creation, regardless of the mode or form of expression"
         },
         {
           "id": "d",
-          "text": "Only if the architect publishes the design in a professional journal, thereby making it publicly accessible and recognized within the professional community"
+          "text": "Only after the design is published in a professional journal"
         }
       ],
       "correct_option_id": "c",
@@ -233,11 +233,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Confuses registration as an evidentiary aid with a requirement for copyright to exist; copyright arises by operation of law upon creation.",
-        "b": "Incorrectly requires building completion; copyright attaches to the design when fixed in drawings, regardless of whether construction ever occurs.",
-        "d": "Falsely requires publication; copyright exists automatically without any form of publication or notice.",
-        "correct": "RA 8293 provides automatic copyright protection upon fixation of the work in a tangible medium (drawings, specifications, constructed building). Registration with IPOPHL is not required for copyright to exist; however, registration provides evidentiary advantages in enforcing the copyright. No copyright notice is legally required.",
-        "takeaway": "Copyright in architectural works exists automatically upon creation and fixation in tangible form; registration is optional but provides evidentiary benefits."
+        "a": "Registration is not the condition stated in Section 172.2.",
+        "b": "A work may be protected before a building is completed or occupied.",
+        "d": "Publication in a professional journal is not the trigger under Section 172.2.",
+        "correct": "RA 8293 Section 172.2 states that works are protected by the sole fact of their creation, irrespective of mode or form of expression, content, quality, or purpose. Registration, completion, occupation, and publication are not stated as prerequisites for copyright protection to attach.",
+        "takeaway": "The source phrase to remember is protection by the sole fact of creation."
       },
       "explanation": null,
       "code_citation": "RA 8293",
@@ -251,7 +251,7 @@
       "model_id": "ALE-PRAC-LAW-014-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.311279+00:00",
       "content_hash": "sha256:36b699a3d7e0a6eb58e94fe6bc1ee79fcc347c8f49e23a43b5fcf32d11d9e2b2"
     },
     {
@@ -262,19 +262,19 @@
       "options": [
         {
           "id": "a",
-          "text": "In 2040 (25 years after creation), which is a common misconception about copyright duration"
+          "text": "In 2040 (25 years after creation), which confuses ordinary architectural works with the separate applied-art term"
         },
         {
           "id": "b",
-          "text": "In 2035 (20 years after creation), often confused with patent durations"
+          "text": "In 2035 (20 years after creation), which is not the RA 8293 copyright term for this work"
         },
         {
           "id": "c",
-          "text": "In 2085 (70 years after the architect's death per RA 8293 as amended by RA 10372 Sec 213.1)"
+          "text": "In 2065 (50 years after the architect's death under RA 8293 Section 213.1)"
         },
         {
           "id": "d",
-          "text": "Copyright in architectural works never expires under Philippine law, a misunderstanding of copyright principles"
+          "text": "Copyright in architectural works never expires under Philippine law"
         }
       ],
       "correct_option_id": "c",
@@ -283,11 +283,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrectly measures from creation date instead of death and provides only 25 years instead of life plus 50 years post-mortem.",
-        "b": "Measures from creation instead of death and provides only 20 years total; RA 8293 provides much longer protection.",
-        "d": "Falsely claims perpetual copyright; while protection is long (lifetime plus 50 years), it eventually expires.",
-        "correct": "RA 8293 provides that copyright extends for the life of the author plus 50 years after death. The architect created works in 1990 and died in 2015. Copyright protection continues for 50 years after 2015, expiring in 2065. The date of creation is relevant only for works by corporate authors; for individual authors, the death date determines the post-mortem protection period.",
-        "takeaway": "For individual architects, copyright expires 50 years after the architect's death, not based on creation or building completion dates."
+        "a": "This uses the 25-year applied-art rule instead of Section 213.1 for the stated individual architect.",
+        "b": "This invents a 20-year creation-date term.",
+        "d": "RA 8293 gives a long term, not perpetual copyright.",
+        "correct": "RA 8293 Section 213.1 protects works under Sections 172 and 173 during the life of the author and for fifty years after death. The architect died in 2015, so the 50-year post-mortem period runs to 2065. The date of creation does not control this individual-author term.",
+        "takeaway": "For individual architects, add 50 years to the author's death year."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -301,30 +301,30 @@
       "model_id": "ALE-PRAC-LAW-014-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.309024+00:00",
       "content_hash": "sha256:045cffc03e5a8d30c6232d4336517e7afc5e0bb1d73ffc7162ad495e34e8b46b"
     },
     {
       "question_id": "422f80c6-3cf5-4a4b-a779-2f9267b38d1c",
       "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
       "topic_id": "a150520c-78d4-4e5e-b128-0b43cefc4f99",
-      "text": "An architect's work is automatically protected by copyright under RA 8293, yet the architect chooses to register the work with IPOPHL. What is the primary advantage of registration?",
+      "text": "An architect knows copyright protection exists by creation under RA 8293, but records copyright-related documents after dissemination or assignment. What is the source-safe purpose of that recording/deposit step?",
       "options": [
         {
           "id": "a",
-          "text": "Registration extends the copyright protection period beyond 50 years post-mortem, allowing heirs to benefit from royalties indefinitely"
+          "text": "It extends the copyright term beyond the statutory period"
         },
         {
           "id": "b",
-          "text": "Registration creates a public record and provides prima facie evidence of authorship and ownership, strengthening enforcement in infringement disputes"
+          "text": "It creates an official record or notice for deposit, assignment, or exclusive license documents without making registration the source of copyright"
         },
         {
           "id": "c",
-          "text": "Registration allows the architect to sue for infringement; without registration, the architect cannot file suit, even if the work is widely copied"
+          "text": "It is the only way an architect can ever enforce a copyright claim"
         },
         {
           "id": "d",
-          "text": "Registration gives the architect exclusive rights to build projects based on the design, preventing others from using similar concepts"
+          "text": "It gives the architect a monopoly over all similar building concepts"
         }
       ],
       "correct_option_id": "b",
@@ -333,11 +333,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Falsely claims registration extends the protection term; the statutory term is the same whether registered or not.",
-        "c": "Incorrectly requires registration to sue; unregistered copyrights are still enforceable, though with heavier evidentiary burden.",
-        "d": "Confuses copyright protection with exclusive building rights; copyright gives reproduction rights, not exclusive construction authority.",
-        "correct": "Although copyright exists automatically, IPOPHL registration creates a public record of ownership and date of creation. The registered certificate constitutes prima facie evidence of the architect's authorship and copyright validity in Philippine courts, significantly strengthening the architect's position in enforcing copyright against infringers. Unregistered copyrights are still enforceable, but the burden of proof is heavier.",
-        "takeaway": "IPOPHL registration provides evidentiary advantages in court but is not required for copyright to exist or be enforceable."
+        "a": "Recording or deposit does not extend the statutory term.",
+        "c": "Section 172.2 contradicts the idea that registration is the source of copyright.",
+        "d": "Copyright does not protect all similar concepts or functional ideas.",
+        "correct": "RA 8293 Section 172.2 protects works by the sole fact of creation. Sections 182 and 191 address filing or deposit records for assignments, exclusive licenses, and disseminated works. Those record steps support documentation and notice; they do not create copyright, extend the term, or protect generic concepts.",
+        "takeaway": "Recording supports evidence and notice; creation is the source of copyright protection under Section 172.2."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -351,30 +351,30 @@
       "model_id": "ALE-PRAC-LAW-014-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.306737+00:00",
       "content_hash": "sha256:ec719175aef09a1f8886e838507a37e17805be7114b3054f12e3a24a9de65f55"
     },
     {
       "question_id": "a79a3fa1-7edf-49d7-b0a5-c1fdca16dc98",
       "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
       "topic_id": "a150520c-78d4-4e5e-b128-0b43cefc4f99",
-      "text": "An architect's moral rights under RA 8293 include the right to be credited as the author and the right to object to distortions of the work. Which scenario constitutes a violation of moral rights?",
+      "text": "An architect's moral rights under RA 8293 include attribution and objection to prejudicial distortion. Which scenario most clearly tests a moral-rights violation?",
       "options": [
         {
           "id": "a",
-          "text": "building owner performs routine maintenance that requires replacement of worn exterior wall finishes, which is generally considered acceptable under standard maintenance practices"
+          "text": "A building owner performs routine maintenance by replacing worn exterior wall finishes with matching materials"
         },
         {
           "id": "b",
-          "text": "building owner adds air conditioning systems to interior spaces by running conduits along original walls, potentially altering the aesthetic intent of the architect's design"
+          "text": "A building owner adds interior building services without changing the public attribution or distinctive design expression"
         },
         {
           "id": "c",
-          "text": "building owner removes the architect's name plaque from the entrance and sells the building without disclosing the original architect"
+          "text": "A building owner removes the architect's attribution from public use of the work and presents the design without credit"
         },
         {
           "id": "d",
-          "text": "building owner installs new windows to improve energy efficiency while maintaining the original mullion pattern, which is typically seen as an enhancement rather than a distortion"
+          "text": "A building owner replaces windows while maintaining the original mullion pattern and design character"
         }
       ],
       "correct_option_id": "c",
@@ -383,11 +383,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Represents routine maintenance necessary for building preservation; replacing worn finishes to the same specifications does not distort the design.",
-        "b": "Reflects necessary functional additions to accommodate modern systems; adding building systems without altering design character does not violate integrity rights.",
-        "d": "Demonstrates responsible maintenance for efficiency; upgrading windows while preserving the architectural mullion pattern maintains design integrity.",
-        "correct": "Removing attribution credit violates the architect's right of attribution. Routine maintenance, functional modifications to accommodate building systems, and energy efficiency upgrades that preserve design integrity do not violate moral rights. However, removing the architect's name without consent violates the right to be recognized as the author of the work.",
-        "takeaway": "The architect's right of attribution is violated when credit is removed or not given; routine maintenance and functional upgrades preserving design integrity do not infringe moral rights."
+        "a": "Routine like-for-like maintenance does not by itself show lack of attribution or prejudicial distortion.",
+        "b": "Interior services may be a functional change; more facts are needed before treating it as a Section 193 violation.",
+        "d": "Maintaining the original design character weakens, rather than proves, an integrity claim.",
+        "correct": "RA 8293 Section 193 gives the author the right to require attribution as far as practicable and to object to prejudicial distortion or mutilation. Removing the architect's attribution from public use of the work directly tests attribution. Routine maintenance or functional upgrades require separate facts before they become prejudicial distortion.",
+        "takeaway": "Moral-rights questions usually turn on attribution or prejudicial distortion, not ordinary maintenance."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -401,7 +401,7 @@
       "model_id": "ALE-PRAC-LAW-014-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.307506+00:00",
       "content_hash": "sha256:7908a5bf45c830e0a6f5c0d6909cf11c72a511eee07f141b5a0bb1fc0e78dc20"
     },
     {
@@ -412,19 +412,19 @@
       "options": [
         {
           "id": "a",
-          "text": "They are mutually exclusive; an architect must choose which statute to rely on in each case"
+          "text": "They are mutually exclusive; an architect must choose only one statute in every case"
         },
         {
           "id": "b",
-          "text": "RA 9266 is the exclusive legal basis for protecting architectural copyright in the Philippines"
+          "text": "RA 9266 IRR Section 33 gives the architecture-document consent rule, while RA 8293 supplies the broader copyright framework, assignment rules, moral rights, term, and remedies"
         },
         {
           "id": "c",
-          "text": "RA 9266 establishes that architects own copyright in their professional work; RA 8293 provides the substantive copyright framework, term of protection, moral rights, and enforcement remedies"
+          "text": "RA 9266 is the exclusive source of architectural copyright and RA 8293 is irrelevant to architects"
         },
         {
           "id": "d",
-          "text": "RA 8293 applies only to copyrighted literary works, not architectural designs"
+          "text": "RA 8293 applies only to literary works and excludes architectural designs"
         }
       ],
       "correct_option_id": "b",
@@ -433,11 +433,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Misunderstands the complementary relationship; the statutes work together, not exclusively.",
-        "b": "Overstates RA 9266's scope; it is profession-specific, while RA 8293 is the comprehensive IP law providing remedies and procedures.",
-        "d": "Incorrectly restricts RA 8293 to literary works; it explicitly protects architectural works and other creative expressions.",
-        "correct": "Both statutes protect architectural intellectual property but serve complementary functions. RA 9266 Section 33(1) requires architects to include copyright ownership notice in service agreements and states they retain ownership unless otherwise stipulated and include notice in service agreements. RA 8293 is the comprehensive IP statute providing the copyright framework, protection duration (life + 50 years), moral rights, and statutory remedies. An architect asserting rights typically relies on both statutes to establish ownership and pursue enforcement.",
-        "takeaway": "RA 9266 Section 33 establishes ownership; RA 8293 provides the substantive copyright law framework and enforcement mechanisms."
+        "a": "The statutes can operate together; they are not mutually exclusive.",
+        "c": "RA 8293 expressly includes architecture and plans relative to architecture.",
+        "d": "RA 8293 Section 172 includes works of architecture and plans, sketches, charts, and three-dimensional works relative to architecture.",
+        "correct": "RA 9266 IRR Section 33 treats signed, stamped, or sealed drawings, specifications, and other contract documents as the architect's intellectual property documents and requires written consent for duplication for repetition or other projects. RA 8293 supplies the broader copyright framework: protected architectural works and plans, ownership, assignment, moral rights, term, and remedies.",
+        "takeaway": "Use RA 9266 Section 33 for professional-document consent; use RA 8293 for the copyright framework."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -451,30 +451,30 @@
       "model_id": "ALE-PRAC-LAW-014-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.303500+00:00",
       "content_hash": "sha256:21f45e6b18f622334e22eb11019aed93bab99b75fa3b2e56aae731cf46d63310"
     },
     {
       "question_id": "f8926f7d-457f-4779-aa4a-600e214bb4b3",
       "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
       "topic_id": "a150520c-78d4-4e5e-b128-0b43cefc4f99",
-      "text": "An architectural firm designed a commercial complex and assigned all copyrights to the developer as part of the professional services agreement. Can the architectural firm still enforce copyright against the developer's unauthorized licensing of the design to competitors?",
+      "text": "An architectural firm assigned economic copyright in a commercial-complex design to the developer by written agreement. What rights may still remain with the architect-author under RA 8293?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, because architects always retain moral rights under RA 8293, even after copyright assignment"
+          "text": "The architect-author may still assert non-assignable moral rights such as attribution and integrity, but not the assigned economic licensing rights"
         },
         {
           "id": "b",
-          "text": "No, the firm assigned all rights and has no further standing to enforce copyright"
+          "text": "The architect-author keeps all economic copyright despite the written assignment"
         },
         {
           "id": "c",
-          "text": "Yes, if the unauthorized licensing constitutes a violation of the developer's contractual obligations to the firm"
+          "text": "The architect-author may enforce economic copyright against the developer whenever the developer licenses the design"
         },
         {
           "id": "d",
-          "text": "Only if the firm explicitly reserved enforcement rights in the copyright assignment agreement"
+          "text": "The architect-author retains moral rights only if the assignment agreement expressly reserved them"
         }
       ],
       "correct_option_id": "a",
@@ -483,11 +483,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Ignores the doctrine of inalienable moral rights; the architect retains moral rights even after copyright assignment.",
-        "c": "Confuses copyright enforcement with contract breach; after assignment, the developer controls economic copyright, though the architect retains moral rights.",
-        "d": "Incorrectly suggests moral rights depend on written reservation; moral rights are inalienable by law regardless of agreement terms.",
-        "correct": "Under RA 8293, moral rights (attribution and integrity) are inalienable and cannot be assigned or waived, even when the architect transfers economic copyright rights. The architect retains the right to claim authorship and object to distortions. However, the right to enforce economic copyright (reproduction, distribution) passes to the assignee. The firm cannot sue for infringement based on economic rights, but may assert retained moral rights.",
-        "takeaway": "Moral rights (attribution and integrity) are inalienable and remain with the architect even after assigning economic copyright."
+        "b": "This ignores Section 180 assignment.",
+        "c": "This treats assigned economic rights as if they remained with the assignor.",
+        "d": "Moral rights are statutory; they are not dependent on an express reservation in the assignment.",
+        "correct": "RA 8293 Section 180 allows economic copyright assignment in whole or in part. Sections 193 and 198 keep moral rights personal to the author and state that they are not assignable or subject to license. Section 195 allows waiver only within statutory limits. After assignment, the architect-author may still have moral-rights claims, but the assigned economic licensing rights belong to the assignee within the assignment scope.",
+        "takeaway": "Assignment transfers economic rights within its scope; moral rights remain personal and non-assignable."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -501,7 +501,7 @@
       "model_id": "ALE-PRAC-LAW-014-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.304883+00:00",
       "content_hash": "sha256:8843dbb27b4fcf352b796b2c0041b6dc880bd84d636d246e4575d782647f826e"
     }
   ]

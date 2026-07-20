@@ -1,0 +1,518 @@
+{
+  "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:c373e7fc0d72e0de26c0686e49394b985a05a4dcff43e06f78f83097d26ec703",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "36b6f184-c1f7-4061-b31d-d4a4c55fe0da",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "What is the comfortable height-to-width (H:W) ratio for urban streets according to urban design convention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2:1 (building is twice as tall as the street is wide)"
+        },
+        {
+          "id": "b",
+          "text": "1:4 (building is one-quarter as tall as the street is wide)"
+        },
+        {
+          "id": "c",
+          "text": "1:2 (building is half as tall as the street is wide)"
+        },
+        {
+          "id": "d",
+          "text": "3:1 (building is three times as tall as the street is wide)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "ERR-PLAN-031 inversion — student reverses the ratio for comfortable vs. oppressive enclosure",
+        "b": "Student chooses the most open ratio, missing the balance of comfortable enclosure",
+        "c": "H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle.",
+        "d": "Student selects an oppressive ratio as if it were ideal",
+        "correct": "H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle.",
+        "takeaway": "1:2 is comfortable enclosure; 2:1 is oppressive canyon-like feeling."
+      },
+      "explanation": "ERR-PLAN-031 inversion — student reverses the ratio for comfortable vs. oppressive enclosure Student chooses the most open ratio, missing the balance of comfortable enclosure H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle. Student selects an oppressive ratio as if it were ideal H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle. 1:2 is comfortable enclosure; 2:1 is oppressive canyon-like feeling.",
+      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Enclosure section; VERIFIED_REFERENCE.md PART 7",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-05-06T14:43:18.626551+00:00",
+      "content_hash": "sha256:208cdc0ead792cc49ef04c73f174f6c941d2e8a02acc6c07529feab03b85479f"
+    },
+    {
+      "question_id": "6378a29e-db42-4775-9145-3dccba0541f2",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A site planner analyzes a 5-hectare parcel in a mixed-income barangay. The site has multiple overlapping constraints: steep slopes (contours spaced closely together), west-facing orientation, proximity to an estero (stream), and moderate soil bearing capacity. When integrating these physical findings into a preliminary site planning strategy, which of the following represents the most comprehensive analysis approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Focus only on the steepest areas and recommend avoiding development there, leaving all other constraints for later permitting stages, which may lead to unforeseen issues"
+        },
+        {
+          "id": "b",
+          "text": "Map terrain constraints (steep slopes, soil), sun/wind exposure (west-facing, afternoon heat), and easement implications (estero proximity); identify feasible development zones and recommend building orientation strategies that account for multiple constraints simultaneously"
+        },
+        {
+          "id": "c",
+          "text": "Choose the flattest area for development, ignoring sun and wind exposure because topography is the dominant constraint, potentially overlooking critical environmental factors"
+        },
+        {
+          "id": "d",
+          "text": "List all constraints separately without attempting to integrate them, as each requires independent specialist assessment, which may not provide a holistic view"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student oversimplifies constraint integration and defers analysis prematurely",
+        "b": "Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits.",
+        "c": "Student prioritizes one constraint over others and ignores compounding effects",
+        "d": "Student treats site analysis as a collection of isolated data points rather than an integrated planning framework",
+        "correct": "Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits.",
+        "takeaway": "Site planning integrates all constraints simultaneously to find developable areas."
+      },
+      "explanation": "Student oversimplifies constraint integration and defers analysis prematurely Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits. Student prioritizes one constraint over others and ignores compounding effects Student treats site analysis as a collection of isolated data points rather than an integrated planning framework Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits. Site planning integrates all constraints simultaneously to find developable areas.",
+      "code_citation": "LEA-PLAN-004-01: Checklist section (item 8)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-05-06T14:43:18.747158+00:00",
+      "content_hash": "sha256:db2340b14d59601bc578e3db6ce9a9663209c5cf5730f603b3e1ef67f5f8caf1"
+    },
+    {
+      "question_id": "958e6b1f-6ace-4dbc-974c-0aa166d8c4c0",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A site plan shows buildings arranged at an H:W ratio of approximately 2:1 in a proposed mixed-use development. A planner reviews this and notes that the street will feel oppressive and canyon-like. What should the planner recommend to achieve a more comfortable enclosure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase the building height to 3:1 to create even more enclosure"
+        },
+        {
+          "id": "b",
+          "text": "Reduce the building height or widen the street to move the H:W ratio closer to 1:2"
+        },
+        {
+          "id": "c",
+          "text": "Leave the design as-is because 2:1 is the standard urban design ratio"
+        },
+        {
+          "id": "d",
+          "text": "Increase the street width to 4 times the building height to eliminate all enclosure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student moves in wrong direction—increasing the ratio makes oppression worse, not better",
+        "b": "Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response.",
+        "c": "ERR-PLAN-031 variant — student treats oppressive ratio as standard",
+        "d": "Student overcompensates by creating an open, uncomfortable plaza",
+        "correct": "Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response.",
+        "takeaway": "To improve uncomfortable 2:1, aim for 1:2 by adjusting height or width."
+      },
+      "explanation": "Student moves in wrong direction—increasing the ratio makes oppression worse, not better Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response. ERR-PLAN-031 variant — student treats oppressive ratio as standard Student overcompensates by creating an open, uncomfortable plaza Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response. To improve uncomfortable 2:1, aim for 1:2 by adjusting height or width.",
+      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Enclosure section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-05-06T14:43:18.864429+00:00",
+      "content_hash": "sha256:36962f422517f54943cf8a558585f3723a794c3f728e57da53faa18aacc5c70c"
+    },
+    {
+      "question_id": "6d78f957-75be-4148-b47f-3a2af938aea8",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A planning consultant prepares a site analysis for a proposed school on a corner lot in a residential district. The analysis documents shadow patterns (trees and buildings cast afternoon shadows across much of the site), view sightlines (the lot is across from a 20-year-old church that is a recognized neighborhood landmark), and H:W ratios of existing streetscape (ranging from 1:3 to 1:4 in the district). The consultant recommends a 10-story building to maximize land use. What is the primary flaw in this recommendation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The consultant failed to recognize that a 10-story building would create an H:W ratio far exceeding the district's existing pattern, resulting in visual discontinuity and an oppressive streetscape incompatible with neighborhood character"
+        },
+        {
+          "id": "b",
+          "text": "The consultant ignored shadow patterns, which is irrelevant for school site planning, as educational facilities prioritize interior space over exterior aesthetics"
+        },
+        {
+          "id": "c",
+          "text": "Schools cannot be built on corner lots with landmark views, so the site is inherently unsuitable for educational development"
+        },
+        {
+          "id": "d",
+          "text": "The recommendation is sound because maximizing land use always takes precedence over neighborhood visual compatibility, ensuring optimal use of available space"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context.",
+        "b": "Student discounts shadow analysis as unimportant for institutional use",
+        "c": "Student confuses site analysis findings with regulatory prohibition",
+        "d": "Student privileges density over site context and visual harmony",
+        "correct": "A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context.",
+        "takeaway": "Site planning respects neighborhood character and visual context, not just density maximization."
+      },
+      "explanation": "A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context. Student discounts shadow analysis as unimportant for institutional use Student confuses site analysis findings with regulatory prohibition Student privileges density over site context and visual harmony A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context. Site planning respects neighborhood character and visual context, not just density maximization.",
+      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Views sections; VERIFIED_REFERENCE.md PART 7",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-05-06T14:43:18.379177+00:00",
+      "content_hash": "sha256:ff3363107572604c85cdb6c137b93a77daf7adc8fb00a0613eb7a65a6c7a48f9"
+    },
+    {
+      "question_id": "1bb715b2-67b1-4d89-aa65-7a6982754930",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "In the context of Philippine site planning, why is documenting prevailing wind direction and seasonal monsoon patterns important during site analysis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To determine the aesthetic appearance of the site from neighboring buildings, considering the visual impact and harmony with the surrounding environment"
+        },
+        {
+          "id": "b",
+          "text": "To inform building orientation for natural ventilation, pedestrian comfort, and typhoon-resistant design"
+        },
+        {
+          "id": "c",
+          "text": "To calculate the structural capacity of the soil for deep foundations, ensuring stability and safety of the building structure"
+        },
+        {
+          "id": "d",
+          "text": "To establish the location of utilities and drainage patterns on the site, optimizing the layout for efficient water management and service access"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student confuses wind patterns with visual quality assessment",
+        "b": "Northeast monsoon (dry season) and southwest monsoon (wet season) inform orientation decisions and typhoon preparation—critical for site planning in the Philippines.",
+        "c": "Student confuses wind analysis with geotechnical assessment",
+        "d": "Student attributes wind analysis to infrastructure mapping",
+        "correct": "Northeast monsoon (dry season) and southwest monsoon (wet season) inform orientation decisions and typhoon preparation—critical for site planning in the Philippines.",
+        "takeaway": "Wind analysis directly informs building orientation and climate resilience."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Wind Patterns and Ventilation section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34109b27d7ae314bacffec110610a0a249faa12900074e9cd967dabb7111f5bc"
+    },
+    {
+      "question_id": "0d6486e2-500e-4a5f-8634-81b10d0973d5",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "During site analysis for a proposed mixed-use development in Makati, the planner documents views from the site and notes that two existing high-rise condominiums on the north boundary block views of the Sierra Madre mountains, which were previously visible from the site. What is the planner's appropriate action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Note the existing view obstruction in the site analysis and design the proposed development to frame alternative views or minimize additional obstruction of remaining sightlines"
+        },
+        {
+          "id": "b",
+          "text": "Require the neighboring high-rise condominiums to be demolished to restore mountain views, prioritizing aesthetic considerations"
+        },
+        {
+          "id": "c",
+          "text": "Ignore view analysis because the site is in the urban core and views are not a relevant consideration, focusing instead on maximizing floor area"
+        },
+        {
+          "id": "d",
+          "text": "Design the site with the tallest possible building to create a new focal point and compensate for lost mountain views, enhancing the skyline"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development.",
+        "b": "Student confuses view analysis with regulatory enforcement authority",
+        "c": "Student undervalues visual quality assessment in high-density urban sites",
+        "d": "Student confuses visual mitigation with height escalation",
+        "correct": "Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development.",
+        "takeaway": "Document views; adapt design to preserve or creatively reframe visual experience."
+      },
+      "explanation": "Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development. Student confuses view analysis with regulatory enforcement authority Student undervalues visual quality assessment in high-density urban sites Student confuses visual mitigation with height escalation Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development. Document views; adapt design to preserve or creatively reframe visual experience.",
+      "code_citation": "LEA-PLAN-004-01: Views and Visual Quality section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-05-06T14:43:18.499708+00:00",
+      "content_hash": "sha256:bff853635086e3b10294fc2f7b4c3b1b2a58e200406b36799f0b71d28b825cfb"
+    },
+    {
+      "question_id": "07770446-c75d-42dc-8453-c7cbc77642ea",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A proposed residential development is planned for a 2-hectare site on a hillside. The site planner has identified an adjacent river 150 meters away and must assess both physical site conditions and legal constraints. Based on PD 1067 (Water Code of the Philippines), which of the following best describes the site planner's responsibility at the site analysis stage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Document that the easement distance applies to the river and note this as a constraint—full easement law enforcement belongs to permitting, not site planning analysis"
+        },
+        {
+          "id": "b",
+          "text": "Conduct a full legal review of PD 1067 and determine the exact easement distance applicable to this river width before proceeding with any site analysis documentation"
+        },
+        {
+          "id": "c",
+          "text": "Since the river is 150 meters away, conclude that PD 1067 easements do not apply to this site and proceed with development planning without further water body assessment"
+        },
+        {
+          "id": "d",
+          "text": "Ignore water body easements as they are environmental considerations, not physical site constraints, and defer all riparian setback analysis to the environmental compliance officer"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Site planners note constraints; the detailed legal determination (river width classification and exact easement distance) belongs to ALE-PLAN-005-03 (legal/regulatory). Site analysis flags the issue.",
+        "b": "Student conflates site physical analysis with legal/regulatory content ownership (that is ALE-PLAN-005-03)",
+        "c": "Student misunderstands easement distance application without knowing river width classification",
+        "d": "Student separates regulatory constraints from physical site analysis inappropriately",
+        "correct": "Site planners note constraints; the detailed legal determination (river width classification and exact easement distance) belongs to ALE-PLAN-005-03 (legal/regulatory). Site analysis flags the issue.",
+        "takeaway": "Planners flag constraints; specialists determine exact legal requirements."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Legal and Regulatory Constraints; ERROR_REGISTRY.md ERR-PLAN-015 context",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d4f0c566c80efa23d671049a3c1a8c5f349194bdee66909da0639496bb8d114d"
+    },
+    {
+      "question_id": "0f0b1089-3832-4c59-836e-8ff1e31496fe",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A site planner is assessing a hillside lot in Quezon City. The contours show moderate spacing, and the site has west-facing frontage. What is the primary physical design constraint the planner should note?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The west-facing slope will experience intense afternoon sun exposure, requiring shade mitigation strategies"
+        },
+        {
+          "id": "b",
+          "text": "The moderate slope indicates the site is too flat for any construction, which is a misunderstanding of slope analysis"
+        },
+        {
+          "id": "c",
+          "text": "West-facing sites cannot accommodate any buildings due to regulatory restrictions, which inaccurately represents zoning laws"
+        },
+        {
+          "id": "d",
+          "text": "The site's elevation requires it to be used exclusively for agricultural purposes, which misinterprets land use regulations"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "West-facing orientation in tropical Philippines means afternoon sun is intense; shade design (overhangs, vegetation) becomes critical for comfort and energy efficiency.",
+        "b": "ERR-PLAN-028 variant — student misinterprets moderate spacing as prohibition to build",
+        "c": "Student confuses sun exposure with legal prohibition",
+        "d": "Student misunderstands the relationship between topography and land use",
+        "correct": "West-facing orientation in tropical Philippines means afternoon sun is intense; shade design (overhangs, vegetation) becomes critical for comfort and energy efficiency.",
+        "takeaway": "West-facing = afternoon heat; requires thermal design response."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Sun Orientation and Shadows section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d8c7675f401c7386e86049d70acb5f56880c1cafb1432ff3b1e46f063b3b4f04"
+    },
+    {
+      "question_id": "c2b8d09e-d8df-4c1b-80d2-a40b6b687f1f",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A site planner reads topographic contours on a survey map and needs to assess constructability. Contour lines are spaced approximately 2 centimeters apart on the 1:1000 scale map. What does this indicate about the site's slope characteristics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The terrain is very flat and well-suited for standard building construction with minimal earthwork"
+        },
+        {
+          "id": "b",
+          "text": "The terrain is steep and will require terracing, retaining walls, or extensive site preparation"
+        },
+        {
+          "id": "c",
+          "text": "The terrain has variable slopes that alternate between steep and flat sections"
+        },
+        {
+          "id": "d",
+          "text": "The contour spacing is too close to be read accurately and requires a different map scale"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "ERR-PLAN-028 — student reverses spacing-to-slope relationship; closer spacing = steeper, not flatter",
+        "b": "Close contour spacing on any map scale indicates steep terrain; the site planner must anticipate significant site preparation costs.",
+        "c": "Student misinterprets consistent contour spacing as indicating variable slopes",
+        "d": "Student confuses contour legibility with slope interpretation",
+        "correct": "Close contour spacing on any map scale indicates steep terrain; the site planner must anticipate significant site preparation costs.",
+        "takeaway": "Consistent close spacing = uniform steep slope requiring site work."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Reading Slope Percentage section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a085fee4790e1a62d5105e85d78aa5441571987b004d4d783f7df18f41d083f9"
+    },
+    {
+      "question_id": "c62ad1f7-8a15-4a90-bcbb-c17e1b674914",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "On a contour map, closely spaced contour lines indicate what type of terrain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flat terrain with gentle slopes"
+        },
+        {
+          "id": "b",
+          "text": "Steep terrain with rapid elevation change"
+        },
+        {
+          "id": "c",
+          "text": "A plateau with constant elevation"
+        },
+        {
+          "id": "d",
+          "text": "An area where contour mapping is not possible"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "ERR-PLAN-028 reversal — student inverts the relationship between spacing and slope",
+        "b": "Closely spaced contour lines indicate steep terrain because elevation changes rapidly over a short distance—this is a fundamental principle in topographic reading.",
+        "c": "Student confuses contour spacing with horizontal terrain features",
+        "d": "Student misunderstands the purpose of contour lines",
+        "correct": "Closely spaced contour lines indicate steep terrain because elevation changes rapidly over a short distance—this is a fundamental principle in topographic reading.",
+        "takeaway": "Close contours = steep; wide contours = flat."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Topography and Contours section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e790126f777fec522fa546bc3a98de2769e8550452fd8b14e327ec013ae4d7df"
+    }
+  ]
+}

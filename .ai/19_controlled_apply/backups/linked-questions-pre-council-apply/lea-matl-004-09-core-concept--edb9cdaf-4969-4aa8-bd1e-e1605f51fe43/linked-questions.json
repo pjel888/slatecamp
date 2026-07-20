@@ -1,0 +1,498 @@
+{
+  "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:96156bec480eafcbda593fadc6bd6713eacd7ecb6d3df8b54147272c219a1453",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "04163f39-6fe1-4a59-9e19-f0422e8742a7",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "Plate compactor, sheep's foot roller, and smooth drum roller are used for ___ compaction to achieve specified density. Which is best for cohesive (clay) soils?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Soil; Sheep's foot roller (feet penetrate and knead clay)"
+        },
+        {
+          "id": "b",
+          "text": "Site grading; Plate compactor (flat compression)"
+        },
+        {
+          "id": "c",
+          "text": "Asphalt; Smooth drum roller (final finish)"
+        },
+        {
+          "id": "d",
+          "text": "All rollers are equivalent for any soil type"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Plate compactors are better for granular soils, not clay.",
+        "c": "Sheep's foot rollers are for cohesive soils, not asphalt.",
+        "d": "Equipment characteristics determine suitability; selection by soil type is essential.",
+        "correct": "Soil compaction to required density (90–98%) uses specialized equipment. Sheep's foot rollers with protruding feet are ideal for cohesive (clay) soils: feet penetrate and knead material, achieving density. Plate compactors suit granular (sandy) soils. Smooth drum rollers provide finish work on granular materials and asphalt."
+      },
+      "explanation": "Plate compactors are better for granular soils, not clay. Sheep's foot rollers are for cohesive soils, not asphalt. Equipment characteristics determine suitability; selection by soil type is essential. Soil compaction to required density (90–98%) uses specialized equipment. Sheep's foot rollers with protruding feet are ideal for cohesive (clay) soils: feet penetrate and knead material, achieving density. Plate compactors suit granular (sandy) soils. Smooth drum rollers provide finish work on granular materials and asphalt.",
+      "code_citation": "Soil Mechanics manuals; NSCP 2015 Chapter 18",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T15:59:04.339764+00:00",
+      "content_hash": "sha256:47786ab37b8081ff727804ef63fdffdd72bf837e8b3d7f1c3776fa3135c9e385"
+    },
+    {
+      "question_id": "f4666fa4-7008-4481-bb75-9869864e7b07",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "Concrete is pumped from ground level to a 25-story building. What are the advantages of concrete pump over bucket/conveyor methods?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faster placement (30–100 m³/hour), reduced labor for lifting, improved worker safety, cleaner site"
+        },
+        {
+          "id": "b",
+          "text": "Pumps are always cheaper than bucket hoisting regardless of project scale or building height"
+        },
+        {
+          "id": "c",
+          "text": "Pumps work in all weather conditions without fail and require no maintenance during operation"
+        },
+        {
+          "id": "d",
+          "text": "Pumps eliminate need for vibration and curing of the placed concrete after delivery"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Pumps are often more expensive than simple bucket hoisting; justification is speed/labor savings.",
+        "c": "Weather and equipment failure affect pumps (hose blockage, pressure loss); reliability must be verified.",
+        "d": "Vibration and curing are independent of placement method; these are always required.",
+        "correct": "Concrete pumps deliver 30–100 m³/hour, eliminating bucket-hoist bottleneck (slower labor-intensive process). Safety improves: workers avoid heights of concrete buckets swinging overhead. Site remains cleaner: pump washout is managed vs. bucket spill. Pump cost (PHP 10,000–18,000/day) is justified by schedule acceleration and labor savings for buildings above 5–10 stories."
+      },
+      "explanation": null,
+      "code_citation": "Concrete placing manual; Philippine construction practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:78bc88ea4c950f3e8adf835abcef9ae3492a61cee1dbcedce92e38ea2e44d94d"
+    },
+    {
+      "question_id": "1f1db370-4c9f-4b1e-8773-2db27623e54d",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "A foundation pit excavation requires removal of 5,000 m³ of soil. A 0.5 m³ backhoe at ~200 m³/day output would require ___ days; a 2.0 m³ excavator at ~800 m³/day would require ___ days. What is the schedule impact of equipment selection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Backhoe: 25 days; Excavator: 6–8 days. Upgrading equipment reduces excavation by ~20 days, recovering upgrade costs and accelerating critical path."
+        },
+        {
+          "id": "b",
+          "text": "Backhoe: 10 days; Excavator: 5 days (minimal difference), suggesting that equipment choice has limited impact on overall project timeline"
+        },
+        {
+          "id": "c",
+          "text": "Backhoe: 50 days; Excavator: 30 days (not significant for large projects), indicating that other factors may be more critical in scheduling"
+        },
+        {
+          "id": "d",
+          "text": "Equipment choice is irrelevant; excavation time is fixed regardless of machine size, as labor availability is the primary constraint"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Production rates are more dramatically different; equipment choice has major schedule impact.",
+        "c": "50-day estimate is too conservative; excavators operate faster than 30 days for large pits.",
+        "d": "Equipment directly affects production rate; larger bucket and engine power increase output.",
+        "correct": "Production calculations: Backhoe (0.5 m³ × ~400 cycles/day) ≈ 200 m³/day → 5,000 m³ ÷ 200 = 25 days. Excavator (2.0 m³ × ~400 cycles/day) ≈ 800 m³/day → 5,000 m³ ÷ 800 = 6–8 days. Equipment upgrade saves ~17–19 days—significant for 18–24 month projects. Cost of equipment upgrade is typically recovered through schedule acceleration and reduced labor overhead."
+      },
+      "explanation": null,
+      "code_citation": "Equipment operator manuals; construction scheduling practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d428d0b7d0ceba72cf80f2c8dbe6e15f205aaea68916d6d09f95c674d6ef5361"
+    },
+    {
+      "question_id": "771edc08-2c52-45e6-8997-a5aaabf09aef",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "Which earthmoving equipment is best suited for bulk excavation of deep foundation pits: backhoe, excavator, bulldozer, or grader?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Excavator (hydraulic, 0.5–3.0 m³ bucket)"
+        },
+        {
+          "id": "b",
+          "text": "Backhoe (0.5–1.0 m³ bucket), suitable for smaller excavation tasks and trenching"
+        },
+        {
+          "id": "c",
+          "text": "Bulldozer (blade pushing), primarily used for surface clearing and leveling"
+        },
+        {
+          "id": "d",
+          "text": "Grader (fine grading only), designed for precision work on road surfaces"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Backhoes are slower for bulk excavation; excavators are superior for large pits.",
+        "c": "Bulldozers lack depth precision; not ideal for foundation excavation.",
+        "d": "Graders are for surface finishing, not excavation.",
+        "correct": "Hydraulic excavators are designed for vertical and deep excavation with large buckets (0.5–3.0 m³) and powerful hydraulic arms. Deep foundation pits require precise excavation depth and efficient bulk removal. Backhoes are versatile but slower for large volumes. Bulldozers excel at pushing but lack precise depth control. Graders are for finish work, not bulk excavation."
+      },
+      "explanation": null,
+      "code_citation": "Equipment operator manuals; Philippine construction practice",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:575bbf4e89c283d92c4c601cc8df0abac9b9e7650f5862401c234061b326066d"
+    },
+    {
+      "question_id": "85312744-7c3c-4f48-b92c-9ca5c974287d",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "Tower crane installation in a congested Metro Manila site requires 1–2 weeks setup. The crane must be removed before the building is handed over. How does this affect the critical path and project budget?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Setup/removal is fixed time independent of project duration. For projects <18 months, crane setup cost (PHP 50,000–100,000) is amortized favorably. For shorter projects, mobile cranes may be more economical. Budget and schedule crane installation/removal explicitly before project start."
+        },
+        {
+          "id": "b",
+          "text": "Tower crane setup is instant; no schedule impact, which is not feasible in practice."
+        },
+        {
+          "id": "c",
+          "text": "Crane removal occurs during project; setup/removal are concurrent with construction, which may not align with project timelines."
+        },
+        {
+          "id": "d",
+          "text": "Critical path is unaffected by crane logistics; treat crane as a minor detail, which underestimates the impact on scheduling."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Setup and removal are sequential, not instant; they consume critical path time.",
+        "c": "Removal occurs after project completion; it cannot be concurrent with active construction.",
+        "d": "Crane logistics directly affect schedule and budget; neglecting them is a planning failure.",
+        "correct": "Tower crane setup (foundation, mast assembly, electrical hookup) takes 1–2 weeks. Removal (dismantling, site restoration) takes another 1–2 weeks. Combined 2–4 weeks is fixed cost independent of project duration. For a 24-month high-rise, amortized cost (setup + removal ÷ 24 months) is negligible. For shorter projects (3–6 months), amortized cost is high; mobile cranes become competitive. Schedule and budget setup/removal explicitly or risk surprises."
+      },
+      "explanation": null,
+      "code_citation": "Crane rental company standards; construction planning practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e4db457bf1f3bb825f26bf864d1d6292b44cd4360c986337fbdefc613174763"
+    },
+    {
+      "question_id": "d9c0616b-a2e8-4c8e-b267-3ee42e7c05fa",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "Mobile cranes (truck-mounted) offer flexibility for ___ lifts and relocation between sites, but are more expensive per day than tower cranes for ___ projects. When is mobile crane preferred?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heavy single (25–500 tonnes); long-duration (high-rise construction). Mobile crane: temporary/short-term work. Tower crane: high-rise repetitive cycling."
+        },
+        {
+          "id": "b",
+          "text": "Light loads; tower crane repetitive work, where the crane's mobility is less critical than its lifting capacity"
+        },
+        {
+          "id": "c",
+          "text": "Tower cranes never used; mobile always preferred, regardless of project type or duration"
+        },
+        {
+          "id": "d",
+          "text": "Equipment choice is arbitrary; no difference between types, making selection based on personal preference"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Tower cranes are used in high-rise construction; mobile is not limited to short-term.",
+        "c": "Both crane types serve specific purposes; neither is universally preferred.",
+        "d": "Equipment selection directly impacts project cost and schedule.",
+        "correct": "Mobile cranes: capacity 25–500 tonnes, relocatable, suited for short-term heavy lifts (steel frame erection, bridge work, temporary installations). Tower cranes: fixed location, repetitive small lifts, cost-effective for 3–18 month high-rise projects. Mobile crane daily rental (PHP 20,000–50,000+) exceeds tower crane monthly cost for long durations; tower crane setup/dismantling (1–2 weeks) justifies commitment for high-rise."
+      },
+      "explanation": null,
+      "code_citation": "Equipment rental companies; construction planning practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:76c8b9a0d0a4c3e5ba3848ca7b23fc0f2d2ca8f4f450426525e5f0782ea4ac4c"
+    },
+    {
+      "question_id": "e82e5694-e0eb-4d69-8ea4-1007c8a9b08e",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "A 30-story residential tower in Metro Manila requires concrete placement for 100+ floors in 18 months. The project uses one 60 m³/hour concrete pump. At 40 m³ per floor average and 1 floor per week placement rate, calculate required daily ready-mix delivery (m³/day) and evaluate whether a single pump is adequate. What are the risks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculation: 40 m³/floor × 1 floor/week = 40 m³/week = 5.7 m³/day average. Single 60 m³/hour pump (≈480 m³/shift) is vastly over-capacity for 5.7 m³/day, creating idle pump time. Actual risk is slower placement (weather delays, holidays reducing cycling to 0.5–1 floor/week), requiring backup pump or extended schedule. Budget second pump (PHP 10,000–15,000/day rental) for schedule certainty."
+        },
+        {
+          "id": "b",
+          "text": "Single pump is excessive; the project can use manual bucket hoisting instead, which may lead to increased labor costs and slower progress"
+        },
+        {
+          "id": "c",
+          "text": "60 m³/hour pump is inadequate; three pumps are minimum to ensure timely completion of the project without delays"
+        },
+        {
+          "id": "d",
+          "text": "Pump capacity and placement rate are unrelated; no risk assessment is possible, which could lead to unforeseen scheduling issues"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Bucket hoisting is slower (labor-intensive) than pumping; 100+ floors would be impractical.",
+        "c": "Three pumps is excessive for 5.7 m³/day average; one with backup is sufficient.",
+        "d": "Pump and placement rates are interdependent; capacity must match production needs.",
+        "correct": "Daily calculation: 40 m³/floor ÷ 7 days = 5.7 m³/day average. Single 60 m³/hour pump has capacity of 480 m³/shift (8 hours), far exceeding need. Paradoxically, idle pump cost accumulates. The real risk is schedule delays from weather, holidays, or slower-than-planned cycling (0.5–1 floor/week instead of planned 1 floor/week). A second pump provides backup/flexibility. For 18-month schedule certainty, budget pump availability accordingly."
+      },
+      "explanation": null,
+      "code_citation": "Concrete construction scheduling; Philippine construction practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b6d6ce11d4f69b85f574dc6129c553adf83930c254e16e75cb33bfe63e60bfc"
+    },
+    {
+      "question_id": "4677fdb4-eac3-4c39-8511-0388a1dc1fbe",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "Ready-mix concrete delivered by transit mixer is standard in modern Philippine construction because it ensures ___ and eliminates the need for ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quality control (slump, strength testing), on-site batch plants (for most projects)"
+        },
+        {
+          "id": "b",
+          "text": "Speed of delivery, equipment maintenance and calibration, which are often costly and time-consuming"
+        },
+        {
+          "id": "c",
+          "text": "Worker training, safety compliance, and additional labor costs associated with manual mixing processes"
+        },
+        {
+          "id": "d",
+          "text": "Budget control, cost reduction, and the minimization of material wastage through precise batching"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Speed is an advantage, but the primary benefit is quality control; ready-mix does not eliminate all maintenance.",
+        "c": "Ready-mix does not simplify worker training; proper placement procedures are still required.",
+        "d": "Cost varies; transit mixer is often more economical than on-site batching for large projects.",
+        "correct": "Transit mixer (ready-mix) concrete is quality-controlled at central plants: slump tested, strength verified, water/cement ratio managed. On-site batch plants (if used) require labor, testing, and equipment maintenance. Ready-mix from suppliers (Golden Concrete, Lafarge) is standard in Metro Manila, Bulacan, Laguna for efficiency and quality. Remote sites may use on-site batching if ready-mix is unavailable."
+      },
+      "explanation": null,
+      "code_citation": "Philippine ready-mix producers; NSCP 2015 Chapter 4",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8607ccd8a063cd26dd7d84963339ea88e27abc07656f1143909396eda3c0ca6d"
+    },
+    {
+      "question_id": "66ff0abe-3693-465d-a0c8-47718afa3cca",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "Tower cranes are stationary during a project and can lift ___ tonnes at reach up to ___ m. They are standard for ___ buildings in Philippine cities.",
+      "options": [
+        {
+          "id": "a",
+          "text": "10–100; 60+; high-rise"
+        },
+        {
+          "id": "b",
+          "text": "1–10; 10; low-rise"
+        },
+        {
+          "id": "c",
+          "text": "100–500; 100; industrial"
+        },
+        {
+          "id": "d",
+          "text": "25–50; 30; residential"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "1–10 tonnes is too small; tower cranes lift much more.",
+        "c": "100–500 tonnes is mobile crane range, not tower crane.",
+        "d": "25–50 tonnes at 30 m is below typical tower crane capacity.",
+        "correct": "Tower cranes: capacity 10–100 tonnes, reach 60+ m horizontal, 200+ m vertical. Standard for high-rise residential/commercial (>15 stories) in Manila, Cebu, Davao where speed and repeated cycling are essential. Mobile cranes cover 25–500 tonnes, better for short-term, heavy single lifts."
+      },
+      "explanation": null,
+      "code_citation": "Equipment manufacturers; Philippine rental companies",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1635b65fbb93d64e08427750227b4fb95b9e36c8b1d415851b8e540f9295690c"
+    },
+    {
+      "question_id": "2b0f157b-c930-4847-8dbb-4383f2d02cea",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "A concrete pump is specified with 35 m horizontal reach for a 20-story office tower. The building has cantilever sections extending 40 m from the core. What is the access problem, and what is the solution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pump reach is insufficient for cantilever areas. Solutions: (1) relocate pump to closer position, (2) add concrete distribution lines (hoses) to extend reach, (3) use second pump at alternate location, or (4) revert to bucket hoisting for inaccessible areas."
+        },
+        {
+          "id": "b",
+          "text": "Pump reach is adequate; 35 m covers all areas, ensuring efficient concrete placement"
+        },
+        {
+          "id": "c",
+          "text": "Cantilever sections cannot be concreted with pumps; only CIP methods work, which may require additional planning"
+        },
+        {
+          "id": "d",
+          "text": "Pump reach limitation is not a real concern; ignore and proceed, assuming no impact on construction schedule"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "35 m reach is adequate for standard floor areas but not extended cantilevers.",
+        "c": "Cantilevers are routinely concreted with pumps if reach is adequate; inaccessible areas are the constraint.",
+        "d": "Ignoring reach limitations guarantees placement problems; planning prevents crises.",
+        "correct": "Concrete pump reach (35 m) is less than cantilever distance (40 m), creating an inaccessible zone requiring bucket hoisting or alternative placement. Solutions include repositioning pump at mid-point, adding hose extensions (reduces pressure/output), using a second pump, or reverting to bucket/conveyor (slower, more labor). This planning failure delays schedule and increases cost. Always verify pump reach against site geometry during specification."
+      },
+      "explanation": null,
+      "code_citation": "Concrete placing manual; Philippine construction practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22f517a5b2e139605368719c1562aac659d1611fafcbd7bec0a5313c091d1b45"
+    }
+  ]
+}

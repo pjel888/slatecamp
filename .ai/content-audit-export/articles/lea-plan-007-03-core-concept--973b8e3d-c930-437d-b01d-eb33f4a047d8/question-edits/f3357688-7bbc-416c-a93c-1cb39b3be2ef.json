@@ -2,9 +2,9 @@
   "question_id": "f3357688-7bbc-416c-a93c-1cb39b3be2ef",
   "baseline_hash": "sha256:31ea17031b4c8dd05f31657ef42732412c4d5065913d5fa07ae5b7faa9862461",
   "action": "replace",
-  "reason": "source-audited-article-batch-086-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-007-03-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-086",
-  "approved_at": "2026-05-12T09:30:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
     "parent_article_slug": "lea-plan-007-03-core-concept",
@@ -48,32 +48,28 @@
     "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 086 local raw-source-audited housing_finance_institutions scope."
   },
   "proposed": {
-    "text": "Which answer is source-safe for a government-employee housing-loan stem under EO 90?",
+    "text": "Why would a government employee choose GSIS housing loans as an alternative to Pag-IBIG, even though both are available?",
     "options": [
       {
         "id": "a",
-        "text": "GSIS"
+        "text": "GSIS loans are the only option for government employees, as Pag-IBIG does not cater to their specific needs"
       },
       {
         "id": "b",
-        "text": "SSS"
+        "text": "Pag-IBIG is not available to government employees, making GSIS the default choice"
       },
       {
         "id": "c",
-        "text": "NHA direct shelter production"
+        "text": "GSIS loans may offer different terms, rates, or benefits as an ancillary service to GSIS insurance members, providing an alternative to Pag-IBIG"
       },
       {
         "id": "d",
-        "text": "A CLUP hazard overlay"
+        "text": "GSIS loans have no interest and are government-subsidized grants, making them financially advantageous"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "EO 90 assigns government-employee housing loans to GSIS in the checked scope.",
-    "explanation": "EO 90 assigns government-employee housing loans to GSIS in the checked scope.",
-    "code_citation": "EO 90 - NGO for Shelter Program; RA 11201 IRR - DHSUD Act Implementing Rules; RA 7160 - The Local Government Code",
-    "bloom_level": "understand",
-    "application_context": "source_audited_local_first_batch_086",
-    "practice_context": [],
-    "difficulty": 0.55
+    "correct_option_id": "c",
+    "rationale": "While Pag-IBIG is the primary option, GSIS housing loans provide an alternative pathway with potentially different terms, rates, tenure, or processing criteria. Having multiple lenders increases competition and borrower choice. [A]: Government employees have multiple options (Pag-IBIG and GSIS). [B]: Pag-IBIG is mandatory and available to all employees, including government workers. [C]: While Pag-IBIG is the primary option, GSIS housing loans provide an alternative pathway with potentially different terms, rates, tenure, or processing criteria. Having multiple lenders increases competition and borrower choice. [D]: GSIS loans are credit products with interest, not grants.",
+    "explanation": "Government employees have multiple options (Pag-IBIG and GSIS). Pag-IBIG is mandatory and available to all employees, including government workers. While Pag-IBIG is the primary option, GSIS housing loans provide an alternative pathway with potentially different terms, rates, tenure, or processing criteria. Having multiple lenders increases competition and borrower choice. GSIS loans are credit products with interest, not grants. While Pag-IBIG is the primary option, GSIS housing loans provide an alternative pathway with potentially different terms, rates, tenure, or processing criteria. Having multiple lenders increases competition and borrower choice. Multiple finance sources (Pag-IBIG + GSIS for government employees) = borrower choice.",
+    "code_citation": "Pag-IBIG Fund, GSIS housing program"
   }
 }

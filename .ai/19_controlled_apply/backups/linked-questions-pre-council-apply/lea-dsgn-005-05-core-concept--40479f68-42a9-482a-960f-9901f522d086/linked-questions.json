@@ -1,0 +1,508 @@
+{
+  "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a871d40949d8221a6e43dc027ab81ffa14e8c38eeaf62424621df5927aa8be93",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "7b8bfa70-2c84-47b4-b837-c0ab044afd39",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "A rural health unit waiting area must accommodate 50 seated persons. According to DOH occupancy standards, what is the minimum required waiting area floor space?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 sqm"
+        },
+        {
+          "id": "b",
+          "text": "65 sqm"
+        },
+        {
+          "id": "c",
+          "text": "75 sqm"
+        },
+        {
+          "id": "d",
+          "text": "100 sqm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "50 sqm is based on 1 sqm/person, which is used for classrooms but not clinical waiting areas.",
+        "b": "65 sqm is below the 1.5 sqm requirement.",
+        "d": "100 sqm exceeds the minimum requirement of 75 sqm.",
+        "correct": "The DOH planning standard for waiting areas is 1.5 sqm per seat/person. Therefore, 50 persons × 1.5 sqm = 75 sqm.",
+        "takeaway": "Waiting area occupancy = 1.5 sqm per seat/person."
+      },
+      "explanation": null,
+      "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0334bede4d8cf19ba76974de49acab4af1f290e67820d1c868ce83c206dfbcb0"
+    },
+    {
+      "question_id": "7d4611ef-97fb-4cf3-95fb-7020d50f8748",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "A clinic serves 60 patients per day during peak hours. According to DOH Sentrong Sigla standards, what is the minimum number of water closets (toilet facilities) required for patient use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 WC"
+        },
+        {
+          "id": "b",
+          "text": "2 WC"
+        },
+        {
+          "id": "c",
+          "text": "3 WC"
+        },
+        {
+          "id": "d",
+          "text": "4 WC"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1 WC is only sufficient for up to 30 persons.",
+        "c": "3 WC would be required for 90 persons.",
+        "d": "4 WC exceeds the standard for 60 persons.",
+        "correct": "The DOH Sentrong Sigla Movement guidelines established a standard of 1 water closet per 30 persons for primary health facilities. 60 ÷ 30 = 2 WC.",
+        "takeaway": "Sanitary Ratio = 1 WC per 30 persons."
+      },
+      "explanation": null,
+      "code_citation": "DOH Sentrong Sigla Movement Guidelines",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e346587cc814b2ba476287a4f493839f27709ef4d9c9ecd45980304509094f7d"
+    },
+    {
+      "question_id": "b0f2a6ed-9886-4090-9675-94f321a2218a",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "A barangay health center has a peak occupancy of 85 persons (patients, visitors, and staff). According to PD 1096 Rule X (Exits), how many emergency exits are required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One exit (single occupancy under 100)"
+        },
+        {
+          "id": "b",
+          "text": "Two exits (required at 50+ persons)"
+        },
+        {
+          "id": "c",
+          "text": "Three exits (health facility requirement)"
+        },
+        {
+          "id": "d",
+          "text": "Four exits (per DOH minimum)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Single exits are only permitted for occupant loads less than 50.",
+        "c": "Three exits are required only when the load exceeds 500.",
+        "d": "Four exits are required when the load exceeds 1,000.",
+        "correct": "PD 1096 2004 IRR Rule X Section 1007.2 requires at least two exits for any floor or portion thereof with an occupant load of 50 to 500.",
+        "takeaway": "Egress threshold: 50 persons = 2 exits minimum."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 IRR Rule X Section 1007",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0ad806295c07a1097abe08ecb5b6804870a99fed30ef26c5dc6ebb8474c6a516"
+    },
+    {
+      "question_id": "c2e7ad69-62df-4d30-ac45-2938b63b340f",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "According to DOH standards, what is the minimum floor area required for a single consultation room in a primary care clinic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 sqm"
+        },
+        {
+          "id": "b",
+          "text": "9 sqm"
+        },
+        {
+          "id": "c",
+          "text": "10.5 sqm"
+        },
+        {
+          "id": "d",
+          "text": "12 sqm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6 sqm is insufficient for clinical privacy and movement.",
+        "c": "10.5 sqm is the standard for a single acute-care hospital bed per DOH hospital standards, not outpatient consultation.",
+        "d": "12 sqm is the standard for treatment/procedure rooms.",
+        "correct": "DOH standards specify 9 sqm minimum for consultation rooms in primary care facilities. This provides sufficient space for the physician, patient, and one companion.",
+        "takeaway": "Consultation = 9 sqm. Treatment = 12 sqm. Hospital bed = 10.5 sqm."
+      },
+      "explanation": null,
+      "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:47729ce7c90db6a69027d4493b9fa71baf174f52af5ce05b064b4a8a18013560"
+    },
+    {
+      "question_id": "18b772cf-4f68-4bef-9409-f9c6af82befe",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "An outpatient clinic design uses a ramp to connect the waiting area to the consultation corridor. According to BP 344, what is the maximum permitted ramp slope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:8 (12.5%)"
+        },
+        {
+          "id": "b",
+          "text": "1:10 (10%)"
+        },
+        {
+          "id": "c",
+          "text": "1:12 (8.3%)"
+        },
+        {
+          "id": "d",
+          "text": "1:15 (6.7%)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1:8 is too steep and dangerous for unassisted wheelchair users.",
+        "b": "1:10 is not allowed under BP 344; it exceeds the 1:12 limit.",
+        "d": "1:15 is a gentler slope and is encouraged, but 1:12 is the maximum legal limit.",
+        "correct": "BP 344 IRR Section 4.2.1 mandates that the maximum gradient for ramps shall be 1:12.",
+        "takeaway": "Maximum ramp slope = 1:12."
+      },
+      "explanation": null,
+      "code_citation": "BP 344 IRR Section 4.2.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:848526fb87686143ac490b2edec3b8dc11f48b97a67dd1e5add6b33792eea2a5"
+    },
+    {
+      "question_id": "2af215ff-c61d-4f31-8e99-47ffd00a11d6",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "A clinic consultation room must be accessible for wheelchair users. According to BP 344, what is the minimum door width required for accessible entry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "750 mm"
+        },
+        {
+          "id": "b",
+          "text": "800 mm"
+        },
+        {
+          "id": "c",
+          "text": "900 mm"
+        },
+        {
+          "id": "d",
+          "text": "1000 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "750 mm is a standard bedroom door but not accessible.",
+        "b": "800 mm was an older standard, but current ALE expectations and BP 344 IRR revisions point to 900 mm for clear passage.",
+        "d": "1000 mm is helpful but not the minimum required.",
+        "correct": "BP 344 IRR requires a minimum clear opening of 900 mm for doors to be considered accessible for wheelchairs.",
+        "takeaway": "Accessible door minimum clear width = 900 mm."
+      },
+      "explanation": null,
+      "code_citation": "BP 344 IRR Section 4.3.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2737544bb63d5878648653fa9389746c48eb1fa28010049d0cff9ac9d5774c06"
+    },
+    {
+      "question_id": "9c5b06bc-3c72-4e7a-bd2d-06da0e0e4c39",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "A BHC design includes consultation (9 sqm), treatment room (12 sqm), pharmacy (4 sqm), and waiting for 30 patients. When calculating total required waiting area, what is the minimum floor space needed to accommodate the 30-person waiting occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 sqm (1 sqm per seat)"
+        },
+        {
+          "id": "b",
+          "text": "45 sqm (1.5 sqm per seat)"
+        },
+        {
+          "id": "c",
+          "text": "60 sqm (2 sqm per seat)"
+        },
+        {
+          "id": "d",
+          "text": "75 sqm (2.5 sqm per seat)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "30 sqm uses a 1:1 ratio, which is incorrect for clinical waiting areas.",
+        "c": "60 sqm is based on 2 sqm/person, exceeding the minimum.",
+        "d": "75 sqm is based on 2.5 sqm/person, which is not the DOH standard.",
+        "correct": "Waiting area minimum space = 30 persons × 1.5 sqm/person = 45 sqm.",
+        "takeaway": "Total Area = Occupancy × 1.5 sqm/person standard."
+      },
+      "explanation": null,
+      "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9109dea295ccc8da9b370d1ca922d90bd493b36d64b6dc95161188d8c250de1d"
+    },
+    {
+      "question_id": "f98d92ca-84e5-4466-9e57-72bddfd21432",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "A primary care clinic is classified under which occupancy group according to PD 1096?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group C (Education/Recreation)"
+        },
+        {
+          "id": "b",
+          "text": "Group D (Institutional)"
+        },
+        {
+          "id": "c",
+          "text": "Group E (Business/Mercantile)"
+        },
+        {
+          "id": "d",
+          "text": "Group A (Residential)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group C is education/recreation (schools, churches), not healthcare.",
+        "c": "Group E is business/mercantile. While some private clinics are in office buildings, the occupancy classification for health facilities is institutional (Group D).",
+        "d": "Group A is residential. Clinics are not residential occupancies.",
+        "correct": "Primary care clinics and specialized health facilities are Group D (institutional) per PD 1096 Rule VII. This includes Health Centers, RHUs, and outpatient clinics providing healthcare services to non-ambulatory or semi-ambulatory patients.",
+        "takeaway": "All health facilities providing care = Group D institutional occupancy."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 701",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aa1395b330ddc144c045c4568d015c2a2e5a7b22d8cd960e5529598a920daf4c"
+    },
+    {
+      "question_id": "15ad7240-aff0-4172-bbed-33dad3a19c91",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "A clinic design must include a treatment/procedure room for minor surgery. According to DOH standards, what is the minimum required floor area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9 sqm"
+        },
+        {
+          "id": "b",
+          "text": "10.5 sqm"
+        },
+        {
+          "id": "c",
+          "text": "12 sqm"
+        },
+        {
+          "id": "d",
+          "text": "15 sqm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "9 sqm is the size for a standard consultation room.",
+        "b": "10.5 sqm is the area for an inpatient hospital bed space.",
+        "d": "15 sqm is excellent for larger clinics but exceeds the mandated minimum.",
+        "correct": "Treatment and procedure rooms for primary care require a minimum of 12 sqm to accommodate the procedure table, equipment, and medical team.",
+        "takeaway": "Treatment/Procedure Room = 12 sqm minimum."
+      },
+      "explanation": null,
+      "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:57d6a0549fdc5fa567520ac1ac4a7b0bd38cff05e7759b6f9b623cc7fa85989b"
+    },
+    {
+      "question_id": "040e6d8d-ac52-4024-88c5-ef1381861941",
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "topic_id": "f69a864b-cfa2-4b31-929a-fd835cae13f8",
+      "text": "A clinic pharmacy must dispense oral medications, injectables, and controlled substances. According to DOH standards, what is the minimum required pharmacy floor area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 sqm"
+        },
+        {
+          "id": "b",
+          "text": "4 sqm"
+        },
+        {
+          "id": "c",
+          "text": "6 sqm"
+        },
+        {
+          "id": "d",
+          "text": "8 sqm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2 sqm is insufficient for required storage cabinets and counter space.",
+        "c": "6 sqm is a higher-tier standard but not the minimum.",
+        "d": "8 sqm is typically for hospital-level pharmacies.",
+        "correct": "For primary care facilities, the dispensing area for the pharmacy requires a minimum of 4 sqm.",
+        "takeaway": "Primary care pharmacy dispensing area = 4 sqm minimum."
+      },
+      "explanation": null,
+      "code_citation": "DOH Manual on Technical Standards and Facilities for Primary Care",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:20.027426+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d35120c7157c12d2293679790bd86b0e46f4c72db662ecd42c257511a8b8e526"
+    }
+  ]
+}

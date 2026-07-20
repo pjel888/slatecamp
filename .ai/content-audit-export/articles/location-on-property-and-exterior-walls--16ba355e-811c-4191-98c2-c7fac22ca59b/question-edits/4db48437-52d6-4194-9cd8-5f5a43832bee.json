@@ -1,11 +1,45 @@
 {
   "question_id": "4db48437-52d6-4194-9cd8-5f5a43832bee",
   "baseline_hash": "sha256:902dd76933e56cc9a252c426f6c275b3d6383e3c94b52ed34993d57f47119c80",
-  "reason": "Batch 008 local source audit aligned linked question 4db48437-52d6-4194-9cd8-5f5a43832bee with the repaired Location on Property and Exterior Walls article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-008",
-  "approved_at": "2026-05-10T18:13:43+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited Rule XVII Sec. 1704 exhaust duct discharge clearances, which is off-scope for an article limited to PD 1096 Rule VII Sec. 704 (Location on Property and Exterior Walls). Replaced with a Sec. 704-grounded question on the one-third projection limit.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "chunk_id": "source-pack-pd-1096-irr-chunk-0001",
+        "section_locator": "Rule VII / Section 704.1 Location on Property"
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704"
+  },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
-    "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft."
+    "text": "Under PD 1096 Rule VII, Section 704, what is the maximum projection beyond an exterior wall, expressed as a fraction of the distance from the assumed vertical plane (where opening protection first becomes required) to the property line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One-fourth (1/4) of the distance"
+      },
+      {
+        "id": "b",
+        "text": "One-third (1/3) of the distance"
+      },
+      {
+        "id": "c",
+        "text": "One-half (1/2) of the distance"
+      },
+      {
+        "id": "d",
+        "text": "Two-thirds (2/3) of the distance"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Section 704 limits projections beyond the exterior wall to a maximum of one-third of the distance from the assumed vertical plane where opening protection first becomes required to the property line. The distance is measured at right angles from the property line.",
+    "explanation": "Measurement direction matters: do not measure diagonally or along the wall. The right-angle (perpendicular) measurement governs for fire-separation and setback distances.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704"
   }
 }

@@ -2,50 +2,47 @@
   "question_id": "59b07866-4510-4d33-b396-6aa60e484c77",
   "baseline_hash": "sha256:0c69d5c1e153b68e55ba6d258dd73ea7cf87b6b7021d37063bde1ee7bb48525b",
   "action": "replace",
-  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
-  "approved_by": "codex-local-first-batch-040",
-  "approved_at": "2026-05-11T14:04:00+08:00",
+  "reason": "council-remediation-2026-07-20 (Agent H apply): corrects CONFIRMED_ERROR — the access aisle is NOT a separate 1800 mm strip. BP 344 specifies a 4000 mm x 5000 mm accessible parking slot in which 'The additional 1500 mm width, in comparison to the average parking slot, is intended to ensure that the adjacent pathway adequately accommodates wheelchair passage.' (PDF p.7 lines 283-285). The 1800 mm aisle figure is not in the source. A separate 1200 mm clear walkway is required between the front ends of parked cars (PDF p.7 line 286). Normalizes citation to Appendix form. Supersedes the prior batch-040 topic-swap placeholder which replaced this parking question with an unrelated ramp-width question.",
+  "approved_by": "agent-h-council-remediation-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+00:00",
   "source_audit_support": {
-    "batch_id": "source-audited-article-batch-040-local-first",
+    "batch_id": "council-remediation-2026-07-20-bp344-numeric",
     "checked_sources": [
       {
-        "source_id": "bp-344-2024-rirr-ncda-local",
-        "label": "BP 344 2024 Revised IRR - NCDA",
-        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
-        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_id": "bp-344-2024-revised-irr",
+        "label": "BP 344 2024 Revised IRR (supplementary verbatim text)",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/audit-evidence/bp344-accessible-washrooms/bp344-2024-revised-irr.txt",
         "checked_markdown_lines": [
-          "BP 344 2024 IRR refined markdown lines 36-70",
-          "BP 344 2024 IRR refined markdown lines 198-224",
-          "BP 344 2024 IRR refined markdown lines 228-305",
-          "BP 344 2024 IRR refined markdown lines 770-850"
+          "BP 344 2024 Revised IRR lines 283-285 (PDF p.7): 'A minimum width of 4000 mm and a length of 5000 mm. The additional 1500 mm width, in comparison to the average parking slot, is intended to ensure that the adjacent pathway adequately accommodates wheelchair passage.'",
+          "BP 344 2024 Revised IRR line 286 (PDF p.7): 'A walkway with a minimum clear width of 1200 mm provided between the front ends of parked cars.'"
         ]
       }
     ],
-    "citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+    "citation": "BP 344 2024 Revised IRR, Appendix C (Accessible Parking), items 1-2, PDF p.7 lines 283-286"
   },
   "proposed": {
-    "text": "What minimum clear width is required for an accessible ramp?",
+    "text": "A senior architect reviews a transit terminal design and finds the accessible parking stalls are 3500 mm wide with a 1500 mm shared aisle, located at the far end of the lot. Which two non-compliances must be corrected under BP 344 2024 Revised IRR?",
     "options": [
       {
-        "id": "b040-a7cb-21-a",
-        "text": "1200 mm"
+        "id": "A",
+        "text": "Stall must be 4000 mm x 5000 mm (the extra 1500 mm width forms the access aisle, not a separate strip); stalls must be nearest the accessible entrance"
       },
       {
-        "id": "b040-a7cb-21-b",
-        "text": "900 mm"
+        "id": "B",
+        "text": "Stall must be 4000 mm wide with a separate 1800 mm access aisle; stalls must be nearest the accessible entrance"
       },
       {
-        "id": "b040-a7cb-21-c",
-        "text": "1500 mm"
+        "id": "C",
+        "text": "Stall must be 4000 mm wide with a separate 1800 mm access aisle; vertical clearance must be 2300 mm"
       },
       {
-        "id": "b040-a7cb-21-d",
-        "text": "1800 mm"
+        "id": "D",
+        "text": "Stall must be 5000 mm wide with a separate 1800 mm access aisle; stalls must be nearest the accessible entrance"
       }
     ],
-    "correct_option_id": "b040-a7cb-21-a",
-    "rationale": "Correct answer: 1200 mm. This is directly supported by BP 344 2024 Revised IRR, Accessible Ramps.",
-    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Accessible Ramps.",
-    "code_citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+    "correct_option_id": "A",
+    "rationale": "Correct answer: A. BP 344 specifies a single accessible parking slot of 4000 mm x 5000 mm; the additional 1500 mm width (versus an average slot) IS the access aisle that accommodates wheelchair passage — it is not a separate 1800 mm strip. Stalls must also be on the shortest accessible route to the accessible entrance, so the far-end location is a non-compliance. Source verbatim (BP 344 2024 Revised IRR, PDF p.7 lines 283-285): 'A minimum width of 4000 mm and a length of 5000 mm. The additional 1500 mm width, in comparison to the average parking slot, is intended to ensure that the adjacent pathway adequately accommodates wheelchair passage.'",
+    "explanation": "BP 344 2024 Revised IRR (Appendix C, PDF p.7) defines the accessible parking slot as 4000 mm x 5000 mm, where the 1500 mm additional width relative to an average slot forms the access aisle for wheelchair deployment — options citing a separate 1800 mm aisle (B, C, D) are not in the source. A separate 1200 mm clear walkway is required between the front ends of parked cars (PDF p.7 line 286). Stalls must be nearest the accessible entrance; placing them at the far end of the lot is a location non-compliance. The 3500 mm stall width in the stem is below the 4000 mm minimum and is the dimensional non-compliance.",
+    "code_citation": "BP 344 2024 Revised IRR, Appendix C (Accessible Parking), items 1-2 (PDF p.7 lines 283-286)"
   }
 }

@@ -8,23 +8,23 @@
       "question_id": "50cc5b35-126a-466c-83b9-5ae29ca35b33",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
       "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "A funeral home embalming room requires a specialized HVAC system. Which is the correct design approach?",
+      "text": "A funeral home embalming room requires mechanical coordination. Which source-safe design approach should be carried into the proposed answer?",
       "options": [
         {
           "id": "a",
-          "text": "Shared HVAC with the chapel to reduce costs, which may compromise air quality and odor control"
+          "text": "Share the chapel HVAC as a cost-saving default without checking odor, chemical, or health requirements"
         },
         {
           "id": "b",
-          "text": "Separate negative-pressure HVAC system to prevent odor transmission to public areas"
+          "text": "Provide a separately reviewed exhaust/ventilation strategy and confirm health, sanitation, and mechanical requirements before final sizing"
         },
         {
           "id": "c",
-          "text": "Natural ventilation through windows only, which is insufficient for maintaining necessary air quality standards"
+          "text": "Rely only on natural ventilation because PD 1096 lists a window-opening rule for ordinary rooms"
         },
         {
           "id": "d",
-          "text": "Standard commercial HVAC serving the entire building equally, which does not address specific needs of the embalming room"
+          "text": "Use one standard commercial HVAC system for all rooms regardless of service function"
         }
       ],
       "correct_option_id": "b",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Shared HVAC allows odor/chemical transmission to chapel; separate system required.",
-        "c": "Natural ventilation is insufficient for chemical handling and odor control.",
-        "d": "Standard building HVAC cannot control negative pressure needed for embalming room.",
-        "correct": "Embalming room HVAC must be separate and maintain negative pressure (exhaust > intake) to prevent odor and chemical vapor from migrating to public areas (chapel, viewing room). (Funeral Home Design Standards, HVAC Best Practice)",
-        "takeaway": "Embalming room requires separate negative-pressure HVAC system for odor/chemical control."
-      },
+      "rationale": "The local source packet supports building-code classification and egress, but not a universal numeric HVAC prescription for embalming rooms. The source-safe answer is to require a separately reviewed mechanical strategy and confirm the applicable health/mechanical requirements.",
       "explanation": "Shared HVAC allows odor/chemical transmission to chapel; separate system required. Natural ventilation is insufficient for chemical handling and odor control. Standard building HVAC cannot control negative pressure needed for embalming room. Embalming room HVAC must be separate and maintain negative pressure (exhaust > intake) to prevent odor and chemical vapor from migrating to public areas (chapel, viewing room). (Funeral Home Design Standards, HVAC Best Practice) Embalming room requires separate negative-pressure HVAC system for odor/chemical control.",
       "code_citation": "Funeral Home Design Standards; HVAC Best Practice",
       "bloom_level": "analyze",
@@ -54,30 +48,30 @@
       "model_id": "ALE-DSGN-005-11-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-05-06T13:20:03.032305+00:00",
+      "updated_at": "2026-07-20T01:13:23.522201+00:00",
       "content_hash": "sha256:5038e3b7752eb09e69b9c7d63a881a0846a22ae2609ce9ab1f929d21a9d57a20"
     },
     {
       "question_id": "7be94c15-2df0-4cf2-8d2f-1317f457c215",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
       "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "What regulation governs the licensing and operational standards for funeral homes and embalming practices in the Philippines?",
+      "text": "For a funeral home, which source-safe regulatory framing should the learner use?",
       "options": [
         {
           "id": "a",
-          "text": "RA 7160 (Local Government Code)"
+          "text": "Only PD 1096 applies, because funeral homes are ordinary commercial buildings"
         },
         {
           "id": "b",
-          "text": "RA 4167 (Funeral Services Board)"
+          "text": "Use PD 1096/RA 9514/BP 344 for building, fire, and accessibility checks, and verify separate health or professional operating rules from the applicable authority"
         },
         {
           "id": "c",
-          "text": "BP 344 (Accessibility Law)"
+          "text": "Only the Fire Code applies, because funeral chapels are assembly spaces"
         },
         {
           "id": "d",
-          "text": "RA 10066 (Cultural Heritage Act)"
+          "text": "Only the local zoning ordinance applies once the use is listed as commercial"
         }
       ],
       "correct_option_id": "b",
@@ -85,13 +79,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RA 7160 governs local government units; not specific to funeral homes.",
-        "c": "BP 344 addresses accessibility; not specific to funeral home operations.",
-        "d": "RA 10066 governs cultural heritage; not funeral service regulation.",
-        "correct": "Republic Act 4167 established the Funeral Services Board and governs licensing, operational standards, and regulatory compliance for funeral homes, embalming, and related services in the Philippines. (RA 4167, Funeral Services Board)",
-        "takeaway": "RA 4167 (Funeral Services Board) regulates funeral homes in the Philippines."
-      },
+      "rationale": "The local packet supports building, fire, accessibility, and funeral-use zoning checks. Operating/licensing claims need their own authority before being stated as exact requirements.",
       "explanation": null,
       "code_citation": "RA 4167; Funeral Services Board",
       "bloom_level": "analyze",
@@ -107,30 +95,30 @@
       "model_id": "ALE-DSGN-005-11-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.521345+00:00",
       "content_hash": "sha256:69845ff8cee3a8daf28784ed0bc52418fbd7c1b03eb03d332a79359702891180"
     },
     {
       "question_id": "b6597105-cd1d-48ae-a414-76c955af5d67",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
       "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "A funeral home cold storage (morgue) facility is designed to accommodate 3 bodies. What is the minimum area required?",
+      "text": "A funeral home cold-storage room is being programmed. What should the proposed answer emphasize?",
       "options": [
         {
           "id": "a",
-          "text": "4–5 sqm"
+          "text": "Use a universal room area from memory without checking the project capacity"
         },
         {
           "id": "b",
-          "text": "6–12 sqm"
+          "text": "Size the room from body capacity, equipment clearances, sanitation workflow, and the applicable health/mechanical requirements"
         },
         {
           "id": "c",
-          "text": "15–18 sqm"
+          "text": "Use the chapel occupant load factor to size cold storage"
         },
         {
           "id": "d",
-          "text": "20–25 sqm"
+          "text": "Place cold storage in public circulation because it is part of the viewing sequence"
         }
       ],
       "correct_option_id": "b",
@@ -138,13 +126,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "4–5 sqm is too small for equipment and operational access.",
-        "c": "15–18 sqm exceeds the standard for small-facility cold storage.",
-        "d": "20–25 sqm is larger than required for 3-body capacity.",
-        "correct": "Cold storage (morgue) minimum = 6–12 sqm for 2–4 body capacity. This accommodates refrigeration unit(s), access for loading/unloading, and compliance with sanitary standards. (Funeral Home Design Standards)",
-        "takeaway": "Cold storage (morgue) minimum area = 6–12 sqm for 2–4 body capacity."
-      },
+      "rationale": "No local source in the packet establishes a universal cold-storage area for a specific body count. The source-safe edit removes the exact area endorsement and anchors the answer to program, equipment, sanitation, and mechanical verification.",
       "explanation": null,
       "code_citation": "Funeral Home Design Standards",
       "bloom_level": "analyze",
@@ -160,30 +142,30 @@
       "model_id": "ALE-DSGN-005-11-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.524385+00:00",
       "content_hash": "sha256:72382e4707e3fcbc3e8dbcf58b3b928319b5409b6d452d8bd5175e3ea7099799"
     },
     {
       "question_id": "8c1258d5-8418-43bd-b42d-28acd94f3fef",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
       "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "What is the required temperature range for a funeral home cold storage (morgue) facility?",
+      "text": "A funeral home cold-storage room requires temperature control. What is the source-safe way to state the requirement?",
       "options": [
         {
           "id": "a",
-          "text": "10–15°C"
+          "text": "No temperature control is needed if the room is near the embalming room"
         },
         {
           "id": "b",
-          "text": "2–4°C"
+          "text": "Provide dedicated temperature-controlled storage and verify the exact operating range from the health/mechanical standard or project brief"
         },
         {
           "id": "c",
-          "text": "0–2°C"
+          "text": "Use ordinary comfort cooling because the room is inside a commercial occupancy"
         },
         {
           "id": "d",
-          "text": "Below 0°C (freezing)"
+          "text": "Use only passive ventilation because PD 1096 includes a window-opening rule"
         }
       ],
       "correct_option_id": "b",
@@ -191,13 +173,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "10–15°C is room temperature; insufficient preservation.",
-        "c": "0–2°C is near-freezing; 2–4°C is the standard refrigeration range.",
-        "d": "Below 0°C (freezing) is not necessary for short-term cold storage.",
-        "correct": "Cold storage for bodies requires 2–4°C (refrigeration temperature) to slow decomposition. (Funeral Home Design Standards, Mortuary Science Practice)",
-        "takeaway": "Funeral home cold storage temperature = 2–4°C per industry standards."
-      },
+      "rationale": "The local building-code packet supports classification and egress, but not the exact cold-storage temperature range. The proposed answer removes the unsupported exact numeric endorsement.",
       "explanation": null,
       "code_citation": "Funeral Home Design Standards; Mortuary Science Practice",
       "bloom_level": "understand",
@@ -213,30 +189,30 @@
       "model_id": "ALE-DSGN-005-11-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.523666+00:00",
       "content_hash": "sha256:0eba03441eee3515445c8855b752f0eb2af4c1f89522a50951c997ba399bc837"
     },
     {
       "question_id": "8f78cc91-4818-46f7-bd95-96ea1dccb762",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
       "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "A funeral home chapel is divided from the business office area (Group E). What minimum fire-resistance rating is required between the Group E and Group C zones per the National Building Code?",
+      "text": "A funeral home business office adjoins a chapel area. How should the fire-separation answer be framed?",
       "options": [
         {
           "id": "a",
-          "text": "30-minute rated wall"
+          "text": "No separation review is needed if both spaces are under one owner"
         },
         {
           "id": "b",
-          "text": "1-hour rated wall"
+          "text": "Verify the required separation from the exact occupancy, hazard, sprinkler, and egress condition under PD 1096/RA 9514"
         },
         {
           "id": "c",
-          "text": "2-hour rated wall"
+          "text": "Apply a fixed two-hour wall in all cases without checking the code condition"
         },
         {
           "id": "d",
-          "text": "3-hour rated wall"
+          "text": "Use only acoustic separation because the chapel is not a hazardous space"
         }
       ],
       "correct_option_id": "b",
@@ -244,13 +220,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "30-minute rating is insufficient; NBC specifies 1-hour minimum.",
-        "c": "2-hour rating exceeds the Group E–C separation requirement.",
-        "d": "3-hour rating is more restrictive than required.",
-        "correct": "PD 1096 requires 2-hr (non-sprinklered) or 1-hr (sprinklered) per Table 604/Rule VII occupancies to contain fire and protect public occupants. (NBC Fire Safety, Occupancy Separation)",
-        "takeaway": "Fire separation between Group E (office) and Group C (chapel) = 1-hour minimum per NBC."
-      },
+      "rationale": "The local evidence supports mixed-occupancy analysis but not a blanket fire-rating for every funeral-home office/chapel interface. The source-safe answer requires verifying the exact code condition.",
       "explanation": null,
       "code_citation": "NBC Fire Safety; Occupancy Separation",
       "bloom_level": "apply",
@@ -266,30 +236,30 @@
       "model_id": "ALE-DSGN-005-11-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.522934+00:00",
       "content_hash": "sha256:585750a4774c4c7e803e59938347dad952d6e35ef069eda8844d4879d734bb0a"
     },
     {
       "question_id": "b374e763-5a3b-4f9b-a01c-b751cd3f5849",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
       "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "The minimum area for an embalming room in a funeral home is approximately:",
+      "text": "The minimum area for an embalming room should be determined by:",
       "options": [
         {
           "id": "a",
-          "text": "6–8 sqm"
+          "text": "A universal NBC minimum area for all funeral homes"
         },
         {
           "id": "b",
-          "text": "10–11 sqm"
+          "text": "The chapel seating capacity only"
         },
         {
           "id": "c",
-          "text": "12–20 sqm"
+          "text": "Functional equipment layout, sanitary workflow, storage, drainage, ventilation, and applicable health/mechanical requirements"
         },
         {
           "id": "d",
-          "text": "25–30 sqm"
+          "text": "The reception-room area divided by the number of viewing rooms"
         }
       ],
       "correct_option_id": "c",
@@ -297,13 +267,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "6–8 sqm is insufficient for equipment and ventilation requirements.",
-        "b": "10–11 sqm is below the 12-sqm minimum.",
-        "d": "25–30 sqm exceeds typical requirements but may be used for larger facilities.",
-        "correct": "Embalming room minimum = 12–20 sqm to accommodate an embalming table, chemical storage, instrument trays, separate HVAC intake/exhaust, floor drain, and sanitary fixtures. (No specific code minimum; typical practice 12 sqm+)",
-        "takeaway": "Embalming room minimum area = 12–20 sqm per funeral industry standards."
-      },
+      "rationale": "The local source packet does not establish a universal NBC minimum area for embalming rooms. The source-safe answer removes the unsupported area range and uses functional and regulatory verification.",
       "explanation": null,
       "code_citation": "Industry practice (no code spec); RA 4167",
       "bloom_level": "remember",
@@ -319,7 +283,7 @@
       "model_id": "ALE-DSGN-005-11-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.520527+00:00",
       "content_hash": "sha256:35c0ea87d1d95471b4fe045959813d4f416f7a461aea82e7fe8e00499f5e0968"
     },
     {
@@ -350,13 +314,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1 exit is insufficient for 300 persons; maximum 1 exit at 49 persons.",
-        "c": "3 exits are not mandated solely by seating count; 2 exits satisfy 300 persons.",
-        "d": "Not all assembly venues require 4 exits; 2 exits meet the 300-person threshold.",
-        "correct": "PD 1096 requires 2 exits for assembly occupancies >50 persons (Rule III Sec 1004). For a 300-person chapel, 2 exits are mandatory. Additional exits may be required if the space exceeds certain dimensions or occupancy thresholds, but 2 is the minimum. (NBC Table 3, ERR-DSGN-021 inverse)",
-        "takeaway": "Chapel with 300 persons requires minimum 2 separate exits per NBC (required at 50+ persons)."
-      },
+      "rationale": "Use PD 1096 for occupancy classification and RA 9514/PD 1096 for egress. Treat embalming-room, cold-storage, viewing-room, and HVAC numbers as project-specific health/mechanical/programming requirements unless a local source is cited.",
       "explanation": null,
       "code_citation": "NBC Table 3; ERR-DSGN-021",
       "bloom_level": "apply",
@@ -372,7 +330,7 @@
       "model_id": "ALE-DSGN-005-11-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.518432+00:00",
       "content_hash": "sha256:c88920547f98aa67c8f17e98e72a5736b4ccf6f0f79b3744bdae4afd0ed98d7e"
     },
     {
@@ -403,13 +361,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.50 m uses 5 mm/person; NBC specifies 7.6 mm/person.",
-        "b": "1.80 m uses 6 mm/person; correct standard is 7.6 mm/person.",
-        "d": "3.0 m uses 10 mm/person; exceeds the required rate.",
-        "correct": "Exit width = Occupant load × 7.6 mm/person ÷ 1000 = 300 × 7.6 ÷ 1000 = 2.28 m. (NBC Table 3, ERR-DSGN-019 inverse)",
-        "takeaway": "Chapel exit width = 300 persons × 7.6 mm/person ÷ 1000 = 2.28 m."
-      },
+      "rationale": "Use PD 1096 for occupancy classification and RA 9514/PD 1096 for egress. Treat embalming-room, cold-storage, viewing-room, and HVAC numbers as project-specific health/mechanical/programming requirements unless a local source is cited.",
       "explanation": null,
       "code_citation": "NBC Table 3; ERR-DSGN-019",
       "bloom_level": "apply",
@@ -425,30 +377,30 @@
       "model_id": "ALE-DSGN-005-11-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.519567+00:00",
       "content_hash": "sha256:a70bfac27318fda5529df25f98093b6acf013ee258aba3bbd751c0a9bf5873e5"
     },
     {
       "question_id": "5c09446c-07d2-47b7-9a4f-ec833609d4b5",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
       "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "A funeral home viewing room expects 50 simultaneous visitors. Using a density of 1.1–1.5 sqm per visitor, calculate the minimum viewing room area.",
+      "text": "A funeral home viewing room expects 50 simultaneous visitors. What should a source-audited answer do before giving a final area?",
       "options": [
         {
           "id": "a",
-          "text": "25 sqm (50 × 0.5), which is insufficient for the expected visitor density and does not meet the minimum space requirements"
+          "text": "Use any remembered square-meter-per-visitor rule as if it were code"
         },
         {
           "id": "b",
-          "text": "45 sqm (50 × 0.9), which falls short of the recommended area for comfort and accessibility"
+          "text": "Ignore furniture and family circulation because only code occupant load matters"
         },
         {
           "id": "c",
-          "text": "55–75 sqm (50 × 1.1 to 50 × 1.5)"
+          "text": "Check the applicable occupant-load table and project brief, then size the room for furniture, circulation, and wake practice"
         },
         {
           "id": "d",
-          "text": "100 sqm (50 × 2.0), providing ample space but exceeding typical requirements for such a setting"
+          "text": "Use the chapel exit-width factor as the room-area factor"
         }
       ],
       "correct_option_id": "c",
@@ -456,13 +408,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "25 sqm uses 0.5 sqm/person; correct standard is 1.1–1.5 sqm/person.",
-        "b": "45 sqm uses 0.9 sqm/person; below the required minimum of 1.1 sqm/person.",
-        "d": "100 sqm at 2.0 sqm/person exceeds the standard requirement.",
-        "correct": "Viewing room area = Number of visitors × 1.1–1.5 sqm/person. For 50 visitors: 50 × 1.1 = 55 sqm (minimum), to 50 × 1.5 = 75 sqm (comfortable). (Funeral Home Design Standards)",
-        "takeaway": "Viewing room area = 50 visitors × 1.1–1.5 sqm/person = 55–75 sqm."
-      },
+      "rationale": "The local source packet does not support the old 1.1-1.5 sqm/visitor number as a code rule. The proposed answer removes that exact endorsement and frames the calculation as code plus project-program verification.",
       "explanation": null,
       "code_citation": "Funeral Home Design Standards",
       "bloom_level": "understand",
@@ -478,30 +424,30 @@
       "model_id": "ALE-DSGN-005-11-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.525156+00:00",
       "content_hash": "sha256:f21fb4c2e28e5dd6c50e5d0dab8520e4882f040223c97a91149f16467e608b42"
     },
     {
       "question_id": "9fce20e4-e5f8-477e-993c-f37525a875bb",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
       "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "A funeral home facility contains an administrative office, reception area, viewing room, chapel, and embalming room. How should the occupancy classification be structured?",
+      "text": "A funeral home facility contains administrative offices, reception, viewing rooms, a chapel, and embalming/service spaces. How should occupancy classification be structured?",
       "options": [
         {
           "id": "a",
-          "text": "Single Group A (Residential), which is typically used for living accommodations rather than commercial or institutional facilities"
+          "text": "Classify the entire facility as one assembly occupancy"
         },
         {
           "id": "b",
-          "text": "Single Group C (Education and Recreation), which is not applicable as the facility does not primarily serve educational or recreational purposes"
+          "text": "Classify the entire facility as industrial because cold storage may be present"
         },
         {
           "id": "c",
-          "text": "Mixed: Group D (business office, reception) + Group C (chapel)"
+          "text": "Use mixed-occupancy analysis: business/mercantile areas under Group E, chapel areas under the applicable assembly group, and service spaces checked by their hazard/use"
         },
         {
           "id": "d",
-          "text": "Single Group D (Institutional), which encompasses facilities providing care or supervision, but not applicable to funeral homes"
+          "text": "Classify the facility only by the largest room"
         }
       ],
       "correct_option_id": "c",
@@ -509,13 +455,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Group A is residential; funeral homes are commercial establishments.",
-        "b": "Group C applies to the chapel, but the office/reception area is Group E mercantile.",
-        "d": "Group D is institutional (hospitals, care facilities); funeral homes are commercial and assembly.",
-        "correct": "A funeral home is mixed-use: the business area (office, reception) is Group D (business), and the chapel (assembly) is Group C. Each zone has separate egress requirements and fire separation standards. (NBC Mixed-Occupancy Classification)",
-        "takeaway": "Funeral home classification = Group E (business area) + Group C (chapel). Separate egress and fire separation required."
-      },
+      "rationale": "PD 1096 supports occupancy classification by use/character and includes Group E business/mercantile and assembly group provisions. Funeral uses also appear in local zoning/use tables. Mixed-occupancy analysis is the source-safe answer.",
       "explanation": null,
       "code_citation": "NBC Mixed-Occupancy Classification",
       "bloom_level": "remember",
@@ -531,7 +471,7 @@
       "model_id": "ALE-DSGN-005-11-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.525860+00:00",
       "content_hash": "sha256:c9e4bb926f01c399bc6d38d2c35b4a8d15d930b05da608a1219add6fae685b35"
     }
   ]

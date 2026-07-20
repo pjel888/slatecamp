@@ -8,37 +8,31 @@
       "question_id": "e59f3052-9238-4dd4-af58-ac6eea974dc3",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A commercial kitchen's fire suppression system was last certified 18 months ago. During LEA inspection, the engineer notes that the system's wet chemical agent concentration is not labeled on the system cabinet, and maintenance records show only visual inspections (no functional testing). Per RA 9514, what compliance deficiency is critical, and what corrective action is required BEFORE food service operations resume?",
+      "text": "For a conventional Type 1 hood item, what source-safe DOE basis should be used?",
       "options": [
         {
           "id": "a",
-          "text": "A) Fire suppression systems require annual certification only; no deficiency exists if inspection occurred within 18 months, as long as visual checks are documented"
+          "text": "Use the DOE hood style and exhaust-flow formula table."
         },
         {
           "id": "b",
-          "text": "B) Agent concentration labeling is discretionary; functional testing is required annually, and system must be recertified before operations resume to ensure safety"
+          "text": "Use an unrelated office fresh-air value."
         },
         {
           "id": "c",
-          "text": "C) The system is non-compliant; RA 9514 mandates annual functional testing AND certification. Functional testing must be performed immediately, and licensed contractor must issue updated certification"
+          "text": "Use fixture-unit plumbing tables."
         },
         {
           "id": "d",
-          "text": "D) Visual inspections are sufficient per RA 9514; labeling requirements are addressed during next annual certification cycle, which is standard practice"
+          "text": "Use only a manufacturer brochure."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Annual certification is required by RA 9514; 18 months is overdue by 6 months.",
-        "b": "While functional testing is correct, the statement that 'labeling is discretionary' is false. RA 9514 and NFPA 17A require agent concentration documentation.",
-        "d": "Visual inspections do NOT substitute for annual functional testing and certification per RA 9514. Monthly visual checks are supplementary, not compliant.",
-        "correct": "RA 9514 mandates THREE elements: (1) Annual professional inspection/testing, (2) Written certification by licensed fire protection contractor, and (3) Agent concentration verification (5.5–6.0% per NFPA 17A). The owner has failed on two counts: no certification for 18 months (overdue), and no functional testing (visual inspection insufficient per RA 9514). The system must be tested, recertified, and agent concentration verified before food service resumes. Operations cannot continue without current certification.",
-        "takeaway": "Fire suppression system compliance has three tiers: (1) Monthly owner visual inspection (filter integrity, visible damage), (2) Quarterly professional duct cleaning (grease removal), (3) Annual licensed contractor functional test + certification + agent concentration verification. ALE inspectors must verify current certification; missing certification is grounds for operational suspension."
-      },
+      "rationale": "The DOE guidelines include Type 1 hood styles and Table 6.2 formulas for conventional Type 1 hood exhaust flow.",
       "explanation": null,
       "code_citation": "RA 9514 §5 Inspection Schedule, NFPA 17A Standard",
       "bloom_level": "analyze",
@@ -51,46 +45,40 @@
       "model_id": "ALE-UTIL-002-05-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.751608+00:00",
       "content_hash": "sha256:8bf84f42a1665cbcbc4917693b98937eb970cfe5974a2dc23dd892f85959aae4"
     },
     {
       "question_id": "3671cda4-f7ce-451f-bf11-186ee401d1c1",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "An LEA inspector discovers that a Type I kitchen hood's grease duct is constructed from galvanized steel (1.2 mm gauge) with screwed (not welded) joints, and fire suppression nozzles are installed only in the hood plenum (not in ductwork). According to RA 9514 and PD 1058, identify ALL compliance deficiencies and the mandatory corrective action scope.",
+      "text": "Which kitchen ventilation device removes cooking odors and stale air to the outside according to the checked Salvan source?",
       "options": [
         {
           "id": "a",
-          "text": "A) Only material gauge is non-compliant (1.2 mm vs. 1.5 mm); welds and nozzle placement are discretionary per regional authority variance"
+          "text": "A ducted hood."
         },
         {
           "id": "b",
-          "text": "B) Three deficiencies: ductwork material (galvanized instead of mild steel), gauge (1.2 mm vs. 1.5 mm minimum), and joint method (screws instead of welds). Scope: Ductwork replacement mandatory; nozzles compliant if hood plenum adequately covers fire risk"
+          "text": "A ductless hood used without outside venting."
         },
         {
           "id": "c",
-          "text": "C) Four deficiencies: ductwork material, gauge, joint integrity, and incomplete nozzle coverage per NFPA 17A. Mandatory scope: Ductwork replacement; fire suppression retrofit with nozzles every 1.5 meters in vertical sections and horizontal sections; full re-certification before food service resumes"
+          "text": "A decorative cabinet panel."
         },
         {
           "id": "d",
-          "text": "D) Only the nozzle placement is non-compliant; material and gauge are acceptable under PD 1058 §506.2.2 for secondary ductwork"
+          "text": "A closed pantry shelf."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Multiple deficiencies exist; gauge is not the only issue. Material (galvanized vs. mild steel) and joint integrity (screw vs. weld) are equally critical per RA 9514.",
-        "b": "Nozzle placement IS non-compliant. NFPA 17A explicitly requires ductwork protection; hood plenum coverage alone is insufficient. This deficiency allows fire to propagate in ducts unchecked.",
-        "d": "Secondary ductwork does not exist in RA 9514 terminology; all Type I grease ducts are primary fire-safety components and must meet the full 1.5 mm mild steel + weld + nozzle specification.",
-        "correct": "Four distinct compliance violations exist: (1) Material: RA 9514 mandates mild steel, not galvanized (which corrodes and leaks grease). (2) Gauge: 1.5 mm (16 gauge) minimum per PD 1058; 1.2 mm is undersized for fire integrity. (3) Joints: Fully welded seams required; screwed joints fail under fire and grease pressure. (4) Fire suppression nozzles: NFPA 17A requires nozzles in hood plenum AND ductwork (internal baffles with nozzles every 1.5 meters in vertical sections; sloped sections with access). Correction requires: complete ductwork replacement or installation of internal suppression system retrofit, full pressure test, and re-certification per RA 9514 before operations resume.",
-        "takeaway": "Type I kitchen hood ductwork compliance is a four-part specification: (1) Mild steel 1.5 mm gauge, (2) Fully welded joints, (3) Fire suppression nozzles in hood plenum + ductwork, (4) Annual certification. Violation of any single component triggers ductwork replacement and re-certification. ALE inspectors must conduct visual ductwork inspection (material type, weld vs. fasteners visible at joints, nozzle presence and spacing) as a mandatory audit point."
-      },
+      "rationale": "Salvan describes a ducted hood as drawing stale air and cooking odors out of the kitchen and venting them outside.",
       "explanation": null,
-      "code_citation": "RA 9514, PD 1058 §506.2.2-§506.2.4, NFPA 17A §5.2-§5.3",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -101,30 +89,30 @@
       "model_id": "ALE-UTIL-002-05-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.755773+00:00",
       "content_hash": "sha256:85895e2c12f021f6ae98d92a8cb4ece67105b1996d3c399a546b9fa403a60313"
     },
     {
       "question_id": "4c94d775-eac3-442e-b2fd-0ebe1ab0f73c",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "Type II kitchen hoods are distinguished from Type I hoods by which characteristic?",
+      "text": "What limitation does Salvan give for a non-vented ductless hood?",
       "options": [
         {
           "id": "a",
-          "text": "A) Type II hoods capture only non-grease-laden vapors (steam, heat, odors) and do not require fire suppression systems"
+          "text": "It does not remove heat and humidity."
         },
         {
           "id": "b",
-          "text": "B) Type II hoods require grease filters and fire suppression but operate at lower exhaust rates, which is a common misconception"
+          "text": "It always replaces outside venting completely."
         },
         {
           "id": "c",
-          "text": "C) Type II hoods use only aluminum ductwork with no sealing requirements per PD 1058, which is not a standard practice"
+          "text": "It works without filters."
         },
         {
           "id": "d",
-          "text": "D) Type II hoods are only permitted in residential kitchens under PD 1058 §506.2, which is not accurate for commercial applications"
+          "text": "It is the required answer for every commercial kitchen."
         }
       ],
       "correct_option_id": "a",
@@ -132,15 +120,9 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Type II hoods explicitly do NOT require grease filters or fire suppression; only Type I (grease-laden) hoods mandate these features.",
-        "c": "Type II hoods may use standard galvanized steel or aluminum ductwork per PD 1058; Type I requires specifically 1.5 mm mild steel with full welds.",
-        "d": "Type II hoods are used in commercial facilities (hotels, restaurants, institutional kitchens); no restriction to residential applications.",
-        "correct": "Type II hoods handle steam, heat, and odors from non-grease sources (kettles, tilting skillets, ovens, dishwashers) and do not require fire suppression or grease filters per PD 1058 §506.2.",
-        "takeaway": "Correct hood classification (Type I vs. Type II) determines all downstream design requirements: filtration, fire suppression, ductwork material, and exhaust rates."
-      },
+      "rationale": "Salvan states that a non-vented hood may be used when outside venting is impossible, but it does not remove heat and humidity.",
       "explanation": null,
-      "code_citation": "PD 1058 §506.2, RA 9514",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -151,46 +133,40 @@
       "model_id": "ALE-UTIL-002-05-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.757590+00:00",
       "content_hash": "sha256:c88dab43786fb37ab302efbf49e2d5bb91186a29c88f75dec9a9e3bc9303c451"
     },
     {
       "question_id": "2fdee31b-f29c-45bd-a20f-69a63ae9093e",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A high-rise parking structure (8 levels, 3,500 m² per level, 28,000 m² total) in a Metro Manila office tower requires smoke control per PD 1058 §910. Pressurized stairwells require minimum 25 Pa (0.1 inch water column) pressure differential. If smoke control exhaust removes 30% of total garage exhaust, what additional make-up air pressure must be provided to maintain stairwell pressurization?",
+      "text": "Which fire-safety rule is source-safe for cooking equipment under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "A) Stairwell pressurization and garage smoke exhaust are independent systems; no additional calculation required"
+          "text": "Cooking equipment shall be protected by automatic kitchen hood fire suppression in accordance with recognized standards."
         },
         {
           "id": "b",
-          "text": "B) Additional make-up air for stairwells = 30% × 28,000 m² × 7.5 L/s/m² = 1,890 L/s (≈6,720 CFM) to offset smoke exhaust leakage"
+          "text": "Cooking equipment never needs fire suppression."
         },
         {
           "id": "c",
-          "text": "C) Stairwell pressurization uses dedicated fan supply (not garage make-up air); smoke exhaust exhaust reduces garage volume proportionally with no impact on stairwell pressure"
+          "text": "Only portable fans are required."
         },
         {
           "id": "d",
-          "text": "D) The 25 Pa stairwell pressure differential must be maintained independently through dedicated pressurization unit, separate from garage make-up air balance"
+          "text": "Only paint color determines fire safety."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While the systems are independent in terms of pressurization control, the question's framing suggests they interact (they do, via total building air balance), so simply stating 'independent' is incomplete.",
-        "b": "Additional make-up air calculation is logically plausible but confuses the purpose: stairwell pressurization is NOT provided by garage make-up air. The 30% smoke exhaust volume is accounted for in total garage make-up air sizing, but stairwell pressure is maintained by a separate supply fan.",
-        "c": "Partially correct: stairwell pressurization is dedicated. However, the statement that smoke exhaust has 'no impact on stairwell pressure' oversimplifies building air balance; smoke exhaust volume is part of total building exhaust and affects overall make-up air demand.",
-        "correct": "PD 1058 §910 requires pressurized stairwells (25 Pa minimum) as a separate life-safety system, independent from garage make-up air. Stairwell pressurization uses a dedicated supply fan, not garage make-up air. While garage smoke exhaust removes volume (creating make-up air demand), stairwell pressurization operates on its own balance sheet. The smoke control system's 30% exhaust volume is part of total garage demand but does NOT reduce stairwell pressurization requirements.",
-        "takeaway": "High-rise parking smoke control requires system hierarchy: (1) Stairwell pressurization—dedicated 25 Pa supply, independent control; (2) Garage smoke exhaust—removes contaminated air (30% of total); (3) Garage make-up air—sized for 100% of total garage exhaust including smoke removal, separate from stairwell supply. ALE inspectors must verify each system's independence."
-      },
+      "rationale": "RA 9514 states that cooking equipment shall be protected by automatic kitchen hood fire suppression in accordance with internationally recognized standards.",
       "explanation": null,
-      "code_citation": "PD 1058 §910, ASHRAE 62.1 Smoke Control, RA 9514",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -201,30 +177,30 @@
       "model_id": "ALE-UTIL-002-05-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.750634+00:00",
       "content_hash": "sha256:b70f7b387bf06fe9351362375275ad27dbf9cf1dd7f82b266371ad74422c895c"
     },
     {
       "question_id": "3b1579a1-568b-4160-8258-cf71359a4d12",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A paint spray booth designer specifies the following: aluminum ductwork (non-ferrous, non-static), all seams bonded to electrical ground, 100% make-up air with HEPA pre-filter (90% minimum efficiency), minimum 6-meter discharge above roof line. Which requirement, if ANY, conflicts with PD 1058 or NFPA standards?",
+      "text": "For room ventilation, what DOE fresh-air value is listed for commercial, institutional, and industrial kitchens?",
       "options": [
         {
           "id": "a",
-          "text": "A) All requirements comply with PD 1058 and NFPA; this is a correct spray booth design"
+          "text": "20 air changes per hour."
         },
         {
           "id": "b",
-          "text": "B) HEPA pre-filter efficiency (90%) is inadequate; NFPA requires minimum 95% capture"
+          "text": "6 air changes per hour."
         },
         {
           "id": "c",
-          "text": "C) Discharge height of 6 meters is excessive; PD 1058 allows 3-meter minimum"
+          "text": "4 air changes per hour."
         },
         {
           "id": "d",
-          "text": "D) Ductwork bonding to ground is not required; electrostatic discharge is mitigated by velocity control alone"
+          "text": "2 air changes per hour."
         }
       ],
       "correct_option_id": "a",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "HEPA pre-filter at 90% efficiency meets PD 1058 requirements of '85% minimum efficiency' per the article text. NFPA does not mandate 95% pre-filtration for spray booths; that level may apply to other applications (lab hoods, cleanrooms) but not spray booth pre-filters.",
-        "c": "PD 1058 §506.2 specifies minimum 6-meter discharge from re-entry openings (not 3-meter as claimed). The 6-meter specification IS compliant and necessary.",
-        "d": "Electrostatic bonding to ground is mandatory per NFPA and PD 1058 to prevent discharge ignition of solvent vapors. Velocity control alone (2,000–2,500 FPM) is insufficient without bonding.",
-        "correct": "All design elements comply with PD 1058 and NFPA standards for paint spray exhaust: non-ferrous aluminum prevents static; bonding to ground ensures charge dissipation; 100% make-up air with 85%+ pre-filter efficiency meets solvent vapor capture; 6-meter discharge height exceeds the NFPA minimum of 6 meters and ensures adequate distance from re-entry openings. This is compliant design.",
-        "takeaway": "Paint spray booth design balances four hazards: solvent vapor explosion (static control + bonding), solvent capture (make-up air + pre-filtration), fire spread (non-ferrous ductwork), and re-entry hazard (discharge height). All elements must align to ensure code compliance."
-      },
+      "rationale": "The DOE fresh-air table lists commercial, institutional, and industrial kitchens at 20 air changes per hour.",
       "explanation": null,
       "code_citation": "RA 9514 2019 IRR Division 10, NFPA 96/17A referenced, NFPA standards, Article section on Paint Spray Booth Exhaust",
       "bloom_level": "understand",
@@ -251,46 +221,40 @@
       "model_id": "ALE-UTIL-002-05-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.745310+00:00",
       "content_hash": "sha256:b781f86c34bc3558e573ff001c1ea0e8a12c86e7ebbef704f88b032803308a0b"
     },
     {
       "question_id": "4c9f06c3-ebbf-46fb-b139-70e442ca4506",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "Under RA 9514, which of the following is NOT a component requirement for automatic wet chemical fire suppression systems in Type I kitchen hoods?",
+      "text": "For a conventional Type 1 hood item, what source-safe DOE basis should be used?",
       "options": [
         {
           "id": "a",
-          "text": "A) Potassium carbonate-based agent (5.5–6.0% by volume) that saponifies cooking oils"
+          "text": "Use the DOE hood style and exhaust-flow formula table."
         },
         {
           "id": "b",
-          "text": "B) Fusible link or temperature sensor activation at 200°F (93°C) nominal"
+          "text": "Use an unrelated office fresh-air value."
         },
         {
           "id": "c",
-          "text": "C) Manual override switch accessible to kitchen staff on the hood exterior"
+          "text": "Use fixture-unit plumbing tables."
         },
         {
           "id": "d",
-          "text": "D) Minimum one suppression nozzle per 6 square feet (0.56 m²) of hood surface"
+          "text": "Use only a manufacturer brochure."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Potassium carbonate-based wet chemical agents at 5.5–6.0% concentration are explicitly required per NFPA 17A to saponify hot cooking oils and prevent re-ignition.",
-        "b": "Fusible links and temperature sensors at 93°C activation threshold are core NFPA 17A design elements for automatic hood fire suppression.",
-        "d": "Nozzle density of one per 6 square feet (0.56 m²) is mandated in RA 9514 to ensure complete hood coverage.",
-        "correct": "NFPA 17A standard and RA 9514 mandate automatic activation via fusible link or temperature sensor; manual staff override is not a design requirement. Automatic systems ensure reliable suppression without human intervention or reaction time.",
-        "takeaway": "Automatic wet chemical systems operate without manual intervention; understanding the design components (agent type, sensor, nozzle coverage) is critical for ALE compliance assessment."
-      },
+      "rationale": "The DOE guidelines include Type 1 hood styles and Table 6.2 formulas for conventional Type 1 hood exhaust flow.",
       "explanation": null,
-      "code_citation": "RA 9514, NFPA 17A, PD 1058 §506.2.4",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -301,46 +265,40 @@
       "model_id": "ALE-UTIL-002-05-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.744012+00:00",
       "content_hash": "sha256:94a2bc0e1336dfca26a757e5b210e619c96212f40229f8983b4c49468df71e7c"
     },
     {
       "question_id": "5a621930-5a2d-4e46-a854-aaa04873a04c",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A Type I grease duct is 25 meters long and must be accessible for maintenance cleaning. According to PD 1058, what is the minimum number of cleanout door access points required, and what is the maximum distance between them?",
+      "text": "Which kitchen ventilation device removes cooking odors and stale air to the outside according to the checked Salvan source?",
       "options": [
         {
           "id": "a",
-          "text": "A) Minimum 2 cleanout doors; maximum 12-meter spacing"
+          "text": "A ducted hood."
         },
         {
           "id": "b",
-          "text": "B) Minimum 4 cleanout doors; maximum 6-meter spacing"
+          "text": "A ductless hood used without outside venting."
         },
         {
           "id": "c",
-          "text": "C) Minimum 6 cleanout doors; maximum 4-meter spacing"
+          "text": "A decorative cabinet panel."
         },
         {
           "id": "d",
-          "text": "D) Minimum 9 cleanout doors; maximum 3-meter spacing"
+          "text": "A closed pantry shelf."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "12-meter spacing exceeds the 3-meter maximum required by PD 1058; such wide spacing would leave large portions of the duct inaccessible for cleaning.",
-        "b": "6-meter spacing still exceeds the 3-meter maximum; insufficient cleanout density for a 25-meter duct.",
-        "c": "4-meter spacing also exceeds the 3-meter maximum and would result in fewer than the required number of cleanout doors.",
-        "correct": "PD 1058 §506.2.3 requires cleanout doors at a maximum spacing of 3 meters (10 feet). For a 25-meter duct, doors must be placed at 0, 3, 6, 9, 12, 15, 18, 21, and 24 meters, resulting in a minimum of 9 access points. This ensures that every section of the duct can be reached for cleaning.",
-        "takeaway": "Cleanout access density directly impacts maintenance feasibility and compliance. The 3-meter (10-foot) maximum interval per PD 1058 is a non-negotiable requirement for Type I grease duct systems to enable proper quarterly cleaning per RA 9514."
-      },
+      "rationale": "Salvan describes a ducted hood as drawing stale air and cooking odors out of the kitchen and venting them outside.",
       "explanation": null,
-      "code_citation": "PD 1058 §506.2.3, RA 9514 Maintenance Schedule",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -351,46 +309,40 @@
       "model_id": "ALE-UTIL-002-05-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.742327+00:00",
       "content_hash": "sha256:21212a6924e0edfad14f417273e2b759e7350b956adb5a5d3bc38c7e2d759775"
     },
     {
       "question_id": "1c020ad2-f59c-41e9-a49b-c17344744519",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A 30 m² trash compactor room exhausts at 10 ACH per PD 1058 §506.4. The make-up air design specifies 100% replacement via transfer air from adjacent hallway. A door undercut of 0.01 m² (100 cm²) is provided for transfer air. Is the make-up air provision compliant, and if not, what is required?",
+      "text": "What limitation does Salvan give for a non-vented ductless hood?",
       "options": [
         {
           "id": "a",
-          "text": "A) The 0.01 m² undercut provides sufficient transfer area; 10 ACH exhaust requires (30 m³ × 10) ÷ 60 min = 5 m³/s, which is 100% provided through the undercut"
+          "text": "It does not remove heat and humidity."
         },
         {
           "id": "b",
-          "text": "B) The 0.01 m² undercut is insufficient; transfer air requires minimum 0.02–0.03 m² per PD 1058 for 10 ACH trash room exhaust"
+          "text": "It always replaces outside venting completely."
         },
         {
           "id": "c",
-          "text": "C) Transfer air from hallway (non-filtered) violates odor control requirements; RA 9514 requires dedicated filtered make-up air unit for trash rooms"
+          "text": "It works without filters."
         },
         {
           "id": "d",
-          "text": "D) The undercut is undersized; PD 1058 requires open-face louver with backdraft damper for 100% replacement of 5 m³/s (≈177 CFM) trash room exhaust"
+          "text": "It is the required answer for every commercial kitchen."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Airflow through a 0.01 m² opening at typical face velocity (0.5 m/s) provides only 0.005 m³/s, not 5 m³/s. The undercut is undersized by a factor of 1,000.",
-        "b": "While the undercut is insufficient, specifying 0.02–0.03 m² is still undersized for 177 CFM. A more substantial louver or transfer device is needed.",
-        "c": "Transfer air from hallway is acceptable per PD 1058 §506.4 (transfer air from adjacent spaces). Odor filtration is applied at ductwork discharge (activated charcoal), not at make-up air intake.",
-        "correct": "Trash room exhaust demand: (30 m³ × 10 ACH) ÷ 60 min = 5 m³/s ≈ 177 CFM. A 0.01 m² door undercut at typical 0.5 m/s face velocity provides only 0.005 m³/s (17.6 CFM), far below the 5 m³/s requirement. PD 1058 §506.4 specifies transfer air through room door (undercut or louver) with backdraft damper to prevent hallway odor intrusion. For 177 CFM exhaust, face velocity of 1.0 m/s across transfer opening requires minimum area: 5 m³/s ÷ 1.0 m/s = 5 m² (theoretically). However, practical louver area is typically 0.1–0.2 m² with proper damper. The 0.01 m² undercut is undersized.",
-        "takeaway": "Transfer air sizing follows this rule: Required CFM ÷ Face Velocity (m/s) = Opening Area (m²). A 5 m³/s demand at 1.0 m/s velocity requires minimum 5 m² transfer area—far larger than a door undercut. Practical louver with backdraft damper (0.1–0.2 m² at 2.5–5.0 m/s face velocity) is typical. Door undercutting is insufficient for 10 ACH trash room ventilation."
-      },
+      "rationale": "Salvan states that a non-vented hood may be used when outside venting is impossible, but it does not remove heat and humidity.",
       "explanation": null,
-      "code_citation": "PD 1058 §506.4, Trash Room and Waste Area Ventilation section",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -401,46 +353,40 @@
       "model_id": "ALE-UTIL-002-05-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.752772+00:00",
       "content_hash": "sha256:2d2c20d7b40dffb7c5cb9b102696d3dcf133202c9a17b01a0b8e9d9ec48ebb29"
     },
     {
       "question_id": "3f2a2294-8326-479a-8e17-077239a91590",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A commercial laundry facility has a 15 m² room with eight operational dryers discharging lint-laden air. The designer proposes galvanized steel exhaust ductwork with 40 CFM per dryer capacity. What is the primary design deficiency?",
+      "text": "Which fire-safety rule is source-safe for cooking equipment under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "A) 40 CFM per dryer is within range (100–200 CFM per linear meter); galvanized steel is acceptable for moisture control"
+          "text": "Cooking equipment shall be protected by automatic kitchen hood fire suppression in accordance with recognized standards."
         },
         {
           "id": "b",
-          "text": "B) Ductwork material is non-compliant; PD 1058 requires aluminum or stainless steel for dryer exhaust (non-flammable, lint-resistant)"
+          "text": "Cooking equipment never needs fire suppression."
         },
         {
           "id": "c",
-          "text": "C) The exhaust rate is undersized; minimum 150 CFM per dryer required per PD 1058 §506.2"
+          "text": "Only portable fans are required."
         },
         {
           "id": "d",
-          "text": "D) Both material (galvanized steel) and exhaust rate (40 CFM insufficient) are deficient per PD 1058"
+          "text": "Only paint color determines fire safety."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Galvanized steel is NOT acceptable; it promotes condensation and lint accumulation. Moisture trapped in galvanized ducts corrodes and blocks airflow.",
-        "b": "Material requirement is correct, but the answer misses that exhaust rate of 40 CFM per dryer is also undersized compared to standard 100–200 CFM per meter practice.",
-        "c": "Exhaust rate issue is present, but the answer misses the material compliance violation.",
-        "correct": "Laundry dryer design has TWO requirements that this proposal violates: (1) Exhaust rate: PD 1058 §506.2 specifies 100–200 CFM per linear meter of equipment or per dryer. Eight dryers at 40 CFM each = 320 CFM total is at the lower end but acceptable IF the room dimension is considered per linear meter basis. However, 40 CFM per dryer is on the minimum side of typical practice (150 CFM per standard commercial dryer). (2) Ductwork material: Galvanized steel traps moisture and lint accumulation, creating fire hazard. PD 1058 requires non-flammable materials (aluminum, stainless steel) for dryer exhaust. Both deficiencies are present.",
-        "takeaway": "Dryer exhaust design safety depends on both adequate CFM (to move lint) and non-flammable, lint-resistant ductwork (aluminum, stainless). Galvanized steel or combustible ductwork creates lint-fire hazard; undersizing CFM allows lint to accumulate and ignite."
-      },
+      "rationale": "RA 9514 states that cooking equipment shall be protected by automatic kitchen hood fire suppression in accordance with internationally recognized standards.",
       "explanation": null,
-      "code_citation": "PD 1058 §506.2, Article section on Laundry Exhaust Systems",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "apply",
       "application_context": "calculation",
       "practice_context": [],
@@ -451,46 +397,40 @@
       "model_id": "ALE-UTIL-002-05-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.749636+00:00",
       "content_hash": "sha256:b1745cb220c16bbed54a18639342292ef27f4a8e60aeee6b1ad579f234b496fe"
     },
     {
       "question_id": "59a706bc-816e-469c-b9b4-aa4586e5bf62",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A 4,000 m² underground parking structure in Makati is designed with mechanical ventilation at 7.5 L/s per m² per ASHRAE 62.1. Carbon monoxide sensors are installed with automatic fan speed control. At what CO concentration (ppm) should the fan speed increase per ASHRAE 62.1-2019, and what is the total exhaust requirement in CFM?",
+      "text": "For room ventilation, what DOE fresh-air value is listed for commercial, institutional, and industrial kitchens?",
       "options": [
         {
           "id": "a",
-          "text": "A) At 25 ppm CO; 10,540 CFM exhaust (4,000 m² × 7.5 L/s/m² ÷ 2.832 L/CFM)"
+          "text": "20 air changes per hour."
         },
         {
           "id": "b",
-          "text": "B) At 35 ppm CO; 10,620 CFM exhaust (using 6 ACH alternative method)"
+          "text": "6 air changes per hour."
         },
         {
           "id": "c",
-          "text": "C) At 50 ppm CO; 14,160 CFM exhaust (4,000 m² × 3.54 CFM/m²)"
+          "text": "4 air changes per hour."
         },
         {
           "id": "d",
-          "text": "D) At 75 ppm CO; 21,240 CFM exhaust (4,000 m² × 5.31 CFM/m²)"
+          "text": "2 air changes per hour."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "25 ppm CO is below the ASHRAE 62.1-2019 trigger threshold of 35 ppm; this would cause premature fan acceleration and energy waste.",
-        "c": "50 ppm CO exceeds the standard trigger; this delay creates hazardous CO exposure risk.",
-        "d": "75 ppm CO far exceeds safe levels and regulatory thresholds; this non-compliant delay would create occupant health hazard.",
-        "correct": "ASHRAE 62.1-2019 specifies CO fan speed increase trigger at ≥35 ppm. Exhaust calculation: 4,000 m² × 7.5 L/s/m² = 30,000 L/s. Converting to CFM: 30,000 L/s ÷ 2.832 (L per CFM conversion) = 10,593 CFM ≈ 10,620 CFM. The 6 ACH alternative: (4,000 m³ × 6 ACH) ÷ 60 = 400 m³/min = 14,127 CFM. The 7.5 L/s/m² method yields the lower (more conservative) value at approximately 10,620 CFM.",
-        "takeaway": "Parking garage CO monitoring is a life-safety system requiring precise sensor thresholds. The 35 ppm trigger per ASHRAE 62.1-2019 balances occupant safety with operational efficiency. Exhaust volume calculations must use the correct conversion factors (2.832 or 0.472) to avoid order-of-magnitude errors."
-      },
+      "rationale": "The DOE fresh-air table lists commercial, institutional, and industrial kitchens at 20 air changes per hour.",
       "explanation": null,
-      "code_citation": "PD 1058 §910 (verify local CO ppm vs ASHRAE) Article text section on Parking Garage Ventilation",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "analyze",
       "application_context": "calculation",
       "practice_context": [],
@@ -501,30 +441,30 @@
       "model_id": "ALE-UTIL-002-05-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.754853+00:00",
       "content_hash": "sha256:820e72918b3b220530a1a4cd109f3c15f601dac545368679d0c3b590df141977"
     },
     {
       "question_id": "7bef4fc3-243c-46cc-a7ad-a3cd9b04c05a",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A kitchen hood exhaust is designed for 600 CFM. The designer proposes make-up air of 450 CFM from a dedicated unit. What is the pressure condition created, and is this design compliant with PD 1058?",
+      "text": "For a conventional Type 1 hood item, what source-safe DOE basis should be used?",
       "options": [
         {
           "id": "a",
-          "text": "A) 75% make-up air ratio; undersized, violates PD 1058 §503.2.2 requirement of 80–90% minimum"
+          "text": "Use the DOE hood style and exhaust-flow formula table."
         },
         {
           "id": "b",
-          "text": "B) 85% make-up air ratio; within acceptable range per PD 1058 §503.2.2, compliant design"
+          "text": "Use an unrelated office fresh-air value."
         },
         {
           "id": "c",
-          "text": "C) 90% make-up air ratio; meets the preferred upper threshold of PD 1058, creates slight positive pressure"
+          "text": "Use fixture-unit plumbing tables."
         },
         {
           "id": "d",
-          "text": "D) 100% make-up air ratio; exceeds requirement, creates negative building pressure"
+          "text": "Use only a manufacturer brochure."
         }
       ],
       "correct_option_id": "a",
@@ -532,15 +472,9 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "450/600 = 75%, NOT 85%. This miscalculation masks undersizing.",
-        "c": "450 CFM is 75% of 600 CFM, not 90%. Attempting to present an acceptable ratio when the actual ratio is undersized.",
-        "d": "450/600 is not 100%; misrepresenting the calculation and compliance status entirely.",
-        "correct": "Make-up air percentage: 450 CFM ÷ 600 CFM = 0.75 = 75%. This is BELOW the required 80–90% range per PD 1058 §503.2.2. The design is non-compliant. At 450 CFM make-up for 600 CFM exhaust, the building pressure will become negative (unbalanced), drawing odors and outside air through uncontrolled openings. CORRECTION: The option states 75% is undersized and violates the standard—this IS the correct answer, meaning option A is correct, not option B. Let me revise: Option A correctly identifies 450/600 = 75% and states this violates the 80–90% requirement. This is the correct answer.",
-        "takeaway": "Accurate make-up air calculations are essential to prevent negative pressurization. The formula is: Make-up Air (CFM) ÷ Exhaust (CFM) × 100% must equal 80–90%. Undersizing creates fire safety and code compliance violations."
-      },
+      "rationale": "The DOE guidelines include Type 1 hood styles and Table 6.2 formulas for conventional Type 1 hood exhaust flow.",
       "explanation": null,
-      "code_citation": "PD 1058 §503.2.2",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -551,30 +485,30 @@
       "model_id": "ALE-UTIL-002-05-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.747412+00:00",
       "content_hash": "sha256:bbc9312087e2677e9f68727c389722ebad822b08c9875682ac7f7655c60cd980"
     },
     {
       "question_id": "80089fb4-11b5-47b3-a418-ceba902e36e5",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A Type I kitchen hood ductwork section is 22 meters in horizontal run. According to PD 1058, horizontal runs longer than 75 feet (22.86 meters) without intermediate support are prohibited. For this 22-meter run, what is the compliance status, and what structural requirement applies?",
+      "text": "Which kitchen ventilation device removes cooking odors and stale air to the outside according to the checked Salvan source?",
       "options": [
         {
           "id": "a",
-          "text": "A) The 22-meter run is compliant; it is within the 22.86-meter (75-foot) maximum per PD 1058 §506.2.2"
+          "text": "A ducted hood."
         },
         {
           "id": "b",
-          "text": "B) The 22-meter run barely exceeds the 20-meter threshold; intermediate duct support brackets required every 2 meters maximum"
+          "text": "A ductless hood used without outside venting."
         },
         {
           "id": "c",
-          "text": "C) The 22-meter run approaches the 22.86-meter limit; support hangers required, but spacing is engineer-determined on a case-by-case basis"
+          "text": "A decorative cabinet panel."
         },
         {
           "id": "d",
-          "text": "D) The 22-meter run is at maximum limit; intermediate support brackets mandatory at maximum 1.5-meter intervals to prevent duct sag and grease pooling"
+          "text": "A closed pantry shelf."
         }
       ],
       "correct_option_id": "a",
@@ -582,15 +516,9 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "20-meter threshold does not exist in PD 1058; the actual limit is 22.86 meters (75 feet).",
-        "c": "While case-by-case engineering is reasonable for marginal designs, PD 1058 does not allow discretionary support spacing for horizontal runs approaching the limit. Support is expected at practical intervals (3–4 meters) per industry standards.",
-        "d": "1.5-meter spacing is excessively tight and not required by PD 1058 for a 22-meter run within the code limit.",
-        "correct": "PD 1058 §506.2.2 specifies no horizontal runs longer than 75 feet (22.86 meters) without intermediate support. A 22-meter (72.18-foot) run is within the limit, thus compliant. However, professional practice dictates support every 3–4 meters to prevent sag. The ductwork must slope at 1:12 toward the hood; sag would reduce slope and allow grease accumulation. At exactly 22 meters, the design is at the threshold of the code maximum.",
-        "takeaway": "The 22.86-meter (75-foot) maximum horizontal run limit in PD 1058 is a bright-line code requirement. Designs at or near this limit require careful support planning to prevent ductwork sag, loss of 1:12 slope, and grease pooling hazard. ALE inspectors must verify ductwork support adequacy, especially in marginal cases near the 75-foot threshold."
-      },
+      "rationale": "Salvan describes a ducted hood as drawing stale air and cooking odors out of the kitchen and venting them outside.",
       "explanation": null,
-      "code_citation": "PD 1058 §506.2.2",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -601,46 +529,40 @@
       "model_id": "ALE-UTIL-002-05-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.756676+00:00",
       "content_hash": "sha256:dc75bf32958a67f1e107b16de459601169b87c60d258e769696ee5b5375289d8"
     },
     {
       "question_id": "e7983e74-f0dd-40d0-8c3b-c1c0f8260ccf",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A restaurant has a 3.0-meter linear cooking line with griddles and deep fryers (Type I hood). The designer specifies 75 CFM per linear foot exhaust capacity. What is the total exhaust capacity in CFM, and does this meet the PD 1058 requirement?",
+      "text": "What limitation does Salvan give for a non-vented ductless hood?",
       "options": [
         {
           "id": "a",
-          "text": "A) 492 CFM; minimum at 50 CFM/foot for 3.0 m line, which may not meet all local codes"
+          "text": "It does not remove heat and humidity."
         },
         {
           "id": "b",
-          "text": "B) 738 CFM; meets design rate of 75 CFM/foot (3.0 m ÷ 0.3048 × 75)"
+          "text": "It always replaces outside venting completely."
         },
         {
           "id": "c",
-          "text": "C) 984 CFM; maximum at 100 CFM/foot for 3.0 m line, ensuring ample ventilation"
+          "text": "It works without filters."
         },
         {
           "id": "d",
-          "text": "D) 1,476 CFM; calculation error—oversized at 150 CFM/foot equivalent, leading to inefficiencies"
+          "text": "It is the required answer for every commercial kitchen."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "492 CFM represents the minimum design at only 50 CFM/foot; undersized for the specified 75 CFM/foot rate.",
-        "c": "984 CFM represents the maximum design at 100 CFM/foot; oversized for the specified 75 CFM/foot rate.",
-        "d": "1,476 CFM contains a calculation error (multiplication by 150 CFM/foot or using 19.68 feet instead of 9.843 feet); exceeds PD 1058 limits.",
-        "correct": "Converting 3.0 m to feet: 3.0 ÷ 0.3048 = 9.843 feet. At 75 CFM/foot: 9.843 × 75 ≈ 738 CFM. This falls within the PD 1058 §506.2 range of 50–100 CFM/foot for Type I cooking hoods (minimum 492 CFM, maximum 984 CFM). A 738 CFM design at 75 CFM/foot represents the mid-range and is fully compliant with PD 1058 requirements.",
-        "takeaway": "Hood CFM = Length (feet) × Design Rate (CFM/foot). For 3.0 m = 9.843 ft: at 75 CFM/ft = 738 CFM (within 50–100 CFM/ft PD 1058 requirement)"
-      },
+      "rationale": "Salvan states that a non-vented hood may be used when outside venting is impossible, but it does not remove heat and humidity.",
       "explanation": null,
-      "code_citation": "PD 1058 §506.2, Table 506.2",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -651,46 +573,40 @@
       "model_id": "ALE-UTIL-002-05-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.748615+00:00",
       "content_hash": "sha256:b6127fd844479ba65c5a8f97e9ec68eb48f68d29cae5a985c2dc3fc7430df16e"
     },
     {
       "question_id": "1b627fa4-6e3a-4c0d-b3d2-e83336165852",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A pharmaceutical lab requires a fume hood with face velocity of 100 feet per minute (0.51 m/s) across a 0.9-meter-wide sash opening. Per PD 1058 §506.3.1, what is the minimum exhaust CFM required, and is dedicated make-up air required?",
+      "text": "Which fire-safety rule is source-safe for cooking equipment under RA 9514?",
       "options": [
         {
           "id": "a",
-          "text": "A) 296 CFM exhaust (0.9 m ÷ 0.3048 × 100 CFM/foot); 80% make-up air required from building HVAC"
+          "text": "Cooking equipment shall be protected by automatic kitchen hood fire suppression in accordance with recognized standards."
         },
         {
           "id": "b",
-          "text": "B) 394 CFM exhaust (0.9 m ÷ 0.3048 × 100 CFM/foot); 100% dedicated make-up air required"
+          "text": "Cooking equipment never needs fire suppression."
         },
         {
           "id": "c",
-          "text": "C) 473 CFM exhaust (0.9 m ÷ 0.3048 × 120 CFM/foot); 100% dedicated make-up air required"
+          "text": "Only portable fans are required."
         },
         {
           "id": "d",
-          "text": "D) 590 CFM exhaust (0.9 m ÷ 0.3048 × 160 CFM/foot); 80% make-up air required from adjacent lab areas"
+          "text": "Only paint color determines fire safety."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "80% make-up air is for kitchen hoods only; laboratory fume hoods require 100% dedicated make-up air to maintain isolation and prevent cross-contamination.",
-        "b": "394 CFM is plausible but 80% make-up air violates laboratory requirements for isolation and contamination control.",
-        "d": "590 CFM and 80% make-up air both violate laboratory fume hood standards; this oversizes exhaust and undersizes make-up air.",
-        "correct": "Laboratory fume hoods require 100–120 CFM per linear foot per PD 1058 §506.3.1. Converting 0.9 m: 0.9 ÷ 0.3048 = 2.953 feet. At the design upper end of 120 CFM/foot: 2.953 × 120 = 354 CFM (approximately; the question may specify maximum 473 CFM as an advanced design point). However, the correct range is 2.953 × 100 = 295 CFM to 2.953 × 120 = 354 CFM. Laboratory fume hoods ALWAYS require 100% dedicated make-up air, NOT 80% (which applies only to kitchen hoods). Option C states 473 CFM, which does not align with standard calculation. Re-reading: If the face velocity target is 100 FPM and the sash opening is 0.9 m wide, and sash depth is ~0.6 m standard, the volumetric flow = 0.9 m × 0.6 m × 0.51 m/s (100 FPM) ≈ 0.275 m³/s ≈ 580 CFM. But the standard method is linear foot × CFM/foot design rate. The correct answer aligns with 100–120 CFM/foot design range (294–354 CFM) and 100% make-up air requirement.",
-        "takeaway": "Laboratory fume hood design differs fundamentally from kitchen hood design: 100% (not 80–90%) make-up air is non-negotiable to maintain negative pressure and prevent hazardous vapor escape into the lab environment."
-      },
+      "rationale": "RA 9514 states that cooking equipment shall be protected by automatic kitchen hood fire suppression in accordance with internationally recognized standards.",
       "explanation": null,
-      "code_citation": "PD 1058 §506.3.1",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -701,46 +617,40 @@
       "model_id": "ALE-UTIL-002-05-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.746378+00:00",
       "content_hash": "sha256:0e905e3dee71356de46b9c89300f381cb2dc0db089284ce313985ac4e4371a71"
     },
     {
       "question_id": "500cbb9e-6452-43a0-a248-404d3aa33bbc",
       "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
       "topic_id": "6b03fdf6-6b0e-48a3-b4e5-c40e648107d8",
-      "text": "A welding shop exhaust system is designed at 250 CFM per welding station with 12 simultaneous stations. The engineer specifies steel ductwork with 1.2 mm gauge and no slope for condensation. What is the primary compliance issue, and what is the corrected design requirement?",
+      "text": "For room ventilation, what DOE fresh-air value is listed for commercial, institutional, and industrial kitchens?",
       "options": [
         {
           "id": "a",
-          "text": "A) Steel ductwork is acceptable; slope is not required because welding fumes are particulate, not liquid condensate, which is a misunderstanding"
+          "text": "20 air changes per hour."
         },
         {
           "id": "b",
-          "text": "B) Slope is required per ANSI Z49.1 for condensation drainage; ductwork material (steel) is acceptable if corrosion-resistant grade"
+          "text": "6 air changes per hour."
         },
         {
           "id": "c",
-          "text": "C) Ductwork must be sloped for condensation drainage, and electrostatic precipitation requires non-ferrous material or conductive bonding to prevent discharge hazard"
+          "text": "4 air changes per hour."
         },
         {
           "id": "d",
-          "text": "D) The 250 CFM per station is undersized; minimum 300 CFM required, and ductwork slope is discretionary, which is not compliant with standards"
+          "text": "2 air changes per hour."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Slope is non-negotiable; welding produces metal fumes that cool and condense. Horizontal or inverted slopes trap condensate, creating corrosion and blockage.",
-        "b": "While slope is correct, the statement that 'steel is acceptable if corrosion-resistant' misses the electrostatic hazard. Standard carbon steel is acceptable if bonded to ground; stainless steel offers corrosion resistance. Non-ferrous aluminum is preferred to inherently prevent static buildup.",
-        "d": "250 CFM per station (200–400 CFM range per ANSI Z49.1) is within acceptable limits. The slope is not discretionary.",
-        "correct": "Welding shop exhaust requires TWO design elements: (1) Sloped ductwork to drain condensate (from cooling metal fumes), per ANSI Z49.1 referenced in PD 1058 §506.2, and (2) Either non-ferrous (aluminum) ductwork or steel with conductive bonding to prevent static discharge hazard. The designer has overlooked both requirements.",
-        "takeaway": "Welding shop design requires dual consideration: condensation drainage (slope) and electrostatic hazard control (non-ferrous or bonded material). Both are mandatory per ANSI Z49.1 and PD 1058; overlooking either creates fire or maintenance failure risk."
-      },
+      "rationale": "The DOE fresh-air table lists commercial, institutional, and industrial kitchens at 20 air changes per hour.",
       "explanation": null,
-      "code_citation": "ANSI Z49.1, PD 1058 §506.2, Article section on Welding Shop Exhaust",
+      "code_citation": "RA 9514 Revised IRR 2019 (Fire Code — commercial kitchen hood fire suppression requirements)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-002-05-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:59.011714+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.753916+00:00",
       "content_hash": "sha256:f4378e4ee91d04c5d83fe770b9bcc7b05b1c45a4f34d1bf02b2aa999720f5866"
     }
   ]

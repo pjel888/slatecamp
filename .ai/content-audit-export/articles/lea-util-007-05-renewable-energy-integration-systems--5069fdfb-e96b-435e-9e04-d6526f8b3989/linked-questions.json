@@ -8,23 +8,23 @@
       "question_id": "1102c25d-d45f-40e6-8fe1-11a7b4bce59c",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "A large commercial facility operates a reciprocating engine cogeneration system exhausting at 480°C with 55% heat recovery effectiveness. If the facility simultaneously implements absorption cooling integration (trigeneration), what primary technical advantage enables the 70-85% overall efficiency outcome compared to conventional generation at 45-55%?",
+      "text": "What is the best LEA framing for a building-integrated PV proposal?",
       "options": [
         {
           "id": "a",
-          "text": "Simultaneous generation of electricity, thermal energy (water heating), and cooling from single fuel input without thermal loss"
+          "text": "Treat it as an electrical system under PEC Article 6.90 coordinated with RA 11285, DOE energy design rules, and architectural siting."
         },
         {
           "id": "b",
-          "text": "Gas turbine design inherently produces higher thermal efficiency than reciprocating engines, especially when operating under variable load conditions"
+          "text": "Treat it only as a roof-finish selection because the power equipment is outside architectural scope."
         },
         {
           "id": "c",
-          "text": "Absorption chillers operate at higher coefficient of performance (COP) than mechanical refrigeration systems, particularly in climates with high ambient temperatures"
+          "text": "Treat it only as a mechanical equipment item because it reduces cooling load."
         },
         {
           "id": "d",
-          "text": "Heat recovery effectiveness increases to 80-90% when integrated with mechanical cooling systems, allowing for greater energy savings"
+          "text": "Treat it only as a procurement choice after construction documents are complete."
         }
       ],
       "correct_option_id": "a",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Article specifies reciprocating engines (480°C exhaust); gas turbines (500-650°C) are alternative but not the efficiency advantage mechanism here.",
-        "c": "Absorption chillers achieve ~0.7-0.8 COP (lower than mechanical systems at 3.0-5.0 COP). Advantage is that absorption cooling uses waste heat (free thermal input) rather than electrical input, not COP superiority.",
-        "d": "Heat recovery effectiveness (40-60%) remains constant; simultaneous productive use of heat (water heating + absorption cooling) is the efficiency mechanism, not increased recovery effectiveness.",
-        "correct": "Trigeneration achieves 70-85% efficiency by simultaneously producing three energy outputs from single fuel input: (1) electricity from engine, (2) thermal energy (water heating) from 480°C exhaust, (3) cooling from absorption chiller using recovered heat. Traditional generation wastes 70% of fuel as low-grade exhaust; trigeneration captures and productively uses this waste heat. The 70-85% vs. 45-55% difference (20-35 percentage-point improvement) represents elimination of three separate energy conversion steps (electricity generation, water heater, separate chiller) into one integrated system.",
-        "takeaway": "Trigeneration efficiency (70-85%) vs. conventional (45-55%) advantage: single fuel input simultaneously produces electricity, hot water, and cooling—eliminates waste heat and avoids three separate energy conversion systems."
-      },
+      "rationale": "Treat it as an electrical system under PEC Article 6.90 coordinated with RA 11285, DOE energy design rules, and architectural siting. PEC Article 6.90 plus RA 11285 and DOE Guidelines support this integrated reading.",
       "explanation": "Article specifies reciprocating engines (480°C exhaust); gas turbines (500-650°C) are alternative but not the efficiency advantage mechanism here. Absorption chillers achieve ~0.7-0.8 COP (lower than mechanical systems at 3.0-5.0 COP). Advantage is that absorption cooling uses waste heat (free thermal input) rather than electrical input, not COP superiority. Heat recovery effectiveness (40-60%) remains constant; simultaneous productive use of heat (water heating + absorption cooling) is the efficiency mechanism, not increased recovery effectiveness. Trigeneration achieves 70-85% efficiency by simultaneously producing three energy outputs from single fuel input: (1) electricity from engine, (2) thermal energy (water heating) from 480°C exhaust, (3) cooling from absorption chiller using recovered heat. Traditional generation wastes 70% of fuel as low-grade exhaust; trigeneration captures and productively uses this waste heat. The 70-85% vs. 45-55% difference (20-35 percentage-point improvement) represents elimination of three separate energy conversion steps (electricity generation, water heater, separate chiller) into one integrated system. Trigeneration efficiency (70-85%) vs. conventional (45-55%) advantage: single fuel input simultaneously produces electricity, hot water, and cooling—eliminates waste heat and avoids three separate energy conversion systems.",
       "code_citation": "Waste Heat Recovery section (LEA-UTIL-007-05)",
       "bloom_level": "analyze",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-007-05-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-05-06T15:00:17.939499+00:00",
+      "updated_at": "2026-07-20T01:13:25.330667+00:00",
       "content_hash": "sha256:3babcffda501bd1659b41c5ae5374807cdff0b732749ef556a8e9b1012e51f4e"
     },
     {
       "question_id": "1bbb69cf-3498-48aa-8266-ccccb2e3f839",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "LEED v4.1 water efficiency credits target low-flow fixtures establishing maximum flow rates (≤4.0 GPM lavatory faucets, ≤1.3 GPF toilets). How do these LEED specifications compare to Philippine Standard PS 1008:2015 requirements?",
+      "text": "Which set of items falls within the PEC Article 6.90 photovoltaic scope?",
       "options": [
         {
           "id": "a",
-          "text": "LEED specifications are more stringent; PS 1008 allows higher flow rates, which may lead to increased water consumption in comparison"
+          "text": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output."
         },
         {
           "id": "b",
-          "text": "PS 1008:2015 is more stringent (≤4.0 L/min faucets); LEED's 4.0 GPM equivalent to approximately 15.1 L/min—significantly higher allowance"
+          "text": "Only the visual appearance of solar panels on the roof surface."
         },
         {
           "id": "c",
-          "text": "Both standards are equivalent; LEED and PS 1008 specify identical flow rate targets, ensuring consistent water efficiency across different regions"
+          "text": "Only battery room ventilation and no electrical interconnection rules."
         },
         {
           "id": "d",
-          "text": "PS 1008:2015 applies only to commercial buildings; LEED applies universally to all building types, including residential and mixed-use developments"
+          "text": "Only renewable-energy policy incentives without wiring provisions."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "LEED specifications are LESS stringent (4.0 GPM = 15.1 L/min); PS 1008 more stringent.",
-        "c": "Standards differ; PS 1008 significantly stricter than LEED.",
-        "d": "PS 1008:2015 applies to fixtures regardless of building type; LEED water credits apply universally in v4.1.",
-        "correct": "LEED v4.1: 4.0 GPM (US gallons per minute) converts to 15.1 L/min; LEED 1.3 GPF (US gallons per flush) converts to 4.9 L/flush. PS 1008:2015 aligns with ~1.5 GPM (5.7 L/min) faucets; LEED 4.0 GPM (15.1 L/min) is less stringent. Correct option should be 'a'. This reflects Philippines' water scarcity context and RA 11285 water conservation emphasis.",
-        "takeaway": "Philippine PS 1008:2015 is MORE stringent than LEED v4.1: 4.0 L/min vs. 15.1 L/min faucets—reflecting water scarcity priority and RA 11285 conservation mandates."
-      },
+      "rationale": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output. PEC Article 6.90 defines PV systems as complete electrical energy systems.",
       "explanation": null,
       "code_citation": "Water Conservation Technologies and LEED Integration sections (LEA-UTIL-007-05)",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-007-05-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.319703+00:00",
       "content_hash": "sha256:7d087186327719e6af2a6d767abc723d4b1d0521857a4e6b3c2b5ab98685b734"
     },
     {
       "question_id": "68101518-19dd-48eb-b897-a802a67eb237",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "A vertical-axis wind turbine (VAWT) rated 8 kW operates on a Metro Manila commercial building rooftop. Based on article specifications, which operational characteristic makes VAWT suitable for dense urban environments compared to horizontal-axis wind turbine designs?",
+      "text": "What architectural condition improves active solar system performance in the checked utility source?",
       "options": [
         {
           "id": "a",
-          "text": "Higher power output per unit rooftop area"
+          "text": "A thermally efficient, insulated building with proper siting, orientation, collector placement, and no shading of collectors."
         },
         {
           "id": "b",
-          "text": "Lower noise profile (43-50 dB at 10m) reducing neighborhood acoustic impact"
+          "text": "A fully glazed east-west facade with collectors hidden from sunlight."
         },
         {
           "id": "c",
-          "text": "Reduced maintenance requirements due to simpler mechanical design"
+          "text": "A design that omits conventional backup systems for all active solar installations."
         },
         {
           "id": "d",
-          "text": "Ability to generate power from omnidirectional wind patterns regardless of seasonal shifts"
+          "text": "A collector layout chosen after roof framing and service access are fixed."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Power output per area is not compared; article focuses on rated capacity (5-15 kW) suitable for rooftop installation, not relative area efficiency.",
-        "c": "While VAWT may have simpler bearings, the article does not emphasize maintenance advantages as the rationale for urban suitability.",
-        "d": "Omnidirectional power generation is not mentioned; article addresses urban noise as the specific advantage enabling dense environment deployment.",
-        "correct": "VAWT units exhibit lower noise profiles (43-50 dB at 10m) compared to horizontal-axis designs, critical for dense urban siting where neighborhood noise restrictions apply. This acoustic advantage enables building-scale wind integration in populated areas.",
-        "takeaway": "VAWT acoustic performance (43-50 dB) enables rooftop installation in urban density zones; horizontal-axis designs create unacceptable noise in neighborhoods."
-      },
+      "rationale": "A thermally efficient, insulated building with proper siting, orientation, collector placement, and no shading of collectors. The Salvan utilities source links efficient solar systems to building thermal performance and collector exposure.",
       "explanation": null,
       "code_citation": "Wind Energy Considerations section (LEA-UTIL-007-05)",
       "bloom_level": "apply",
@@ -151,44 +133,38 @@
       "model_id": "ALE-UTIL-007-05-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.325468+00:00",
       "content_hash": "sha256:fb2b5244eaf7f26a28a3c47931db3363df0fd00785093b50fb1c035820406a92"
     },
     {
       "question_id": "a13c93a6-dc75-4a25-8164-32d2274c4fa4",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "District cooling systems serving multiple buildings from centralized plants in Metro Manila (Makati CBD, BGC) distribute chilled water at specific temperature ranges. What are the standard supply and return water temperatures for district cooling networks per article specifications?",
+      "text": "Which statement best describes the DOE energy-conserving design role?",
       "options": [
         {
           "id": "a",
-          "text": "4-6°C supply, 8-10°C return"
+          "text": "It gives minimum energy-conserving design guidance for new buildings and expansions or modifications, including lighting, controls, daylighting, and envelope OTTV."
         },
         {
           "id": "b",
-          "text": "6-8°C supply, 12-14°C return"
+          "text": "It replaces electrical and plumbing codes for all utility systems."
         },
         {
           "id": "c",
-          "text": "10-12°C supply, 16-18°C return"
+          "text": "It applies only to furniture selection after occupancy."
         },
         {
           "id": "d",
-          "text": "14-16°C supply, 20-22°C return"
+          "text": "It covers only renewable-energy equipment purchase incentives."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "4-6°C supply is excessively cold, requiring higher compressor lift and increased energy penalty; not standard practice.",
-        "c": "10-12°C/16-18°C represents warmer district system design found in colder climates; Philippine systems operate at lower temperatures due to hot outdoor conditions.",
-        "d": "14-16°C/20-22°C is too warm for effective chilled water cooling in tropical climate applications; insufficient thermal lift.",
-        "correct": "District cooling systems use 6-8°C supply and 12-14°C return water temperatures. These values optimize temperature differential for efficient heat rejection while managing piping insulation (50-75mm polyurethane) to limit thermal losses to ≤5% over 500-1,500m distribution distances typical in dense urban cores.",
-        "takeaway": "District cooling design: 6-8°C supply / 12-14°C return enables efficient ΔT for large-scale networks (Makati CBD, BGC), with insulation minimizing distribution losses to ≤5%."
-      },
+      "rationale": "It gives minimum energy-conserving design guidance for new buildings and expansions or modifications, including lighting, controls, daylighting, and envelope OTTV. The DOE Guidelines state their application to new buildings and expansions or modifications and set energy design requirements.",
       "explanation": null,
       "code_citation": "Advanced Building Systems - District Cooling Networks section (LEA-UTIL-007-05)",
       "bloom_level": "understand",
@@ -201,44 +177,38 @@
       "model_id": "ALE-UTIL-007-05-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.332796+00:00",
       "content_hash": "sha256:478ca7cd3870245becfa3e0725fe9e0abfc4f123dfae644178bd4e8417b39060"
     },
     {
       "question_id": "dd6dde75-770d-4fca-9bde-03c298386071",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "According to Department of Energy technical studies, what is the average annual solar irradiance range across major Philippine regions suitable for photovoltaic system design?",
+      "text": "What is the best LEA framing for a building-integrated PV proposal?",
       "options": [
         {
           "id": "a",
-          "text": "2.5-3.5 kWh/sqm/day"
+          "text": "Treat it as an electrical system under PEC Article 6.90 coordinated with RA 11285, DOE energy design rules, and architectural siting."
         },
         {
           "id": "b",
-          "text": "4.5-5.5 kWh/sqm/day"
+          "text": "Treat it only as a roof-finish selection because the power equipment is outside architectural scope."
         },
         {
           "id": "c",
-          "text": "6.5-7.5 kWh/sqm/day"
+          "text": "Treat it only as a mechanical equipment item because it reduces cooling load."
         },
         {
           "id": "d",
-          "text": "8.5-9.5 kWh/sqm/day"
+          "text": "Treat it only as a procurement choice after construction documents are complete."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "2.5-3.5 kWh/sqm/day represents sub-tropical lower-latitude solar potential, not applicable to Philippine equatorial/tropical climate zones.",
-        "c": "6.5-7.5 kWh/sqm/day exceeds typical Philippine values and would indicate desert or high-altitude equatorial locations.",
-        "d": "8.5-9.5 kWh/sqm/day represents extreme desert/high-altitude conditions incompatible with Philippine geographic and climatic characteristics.",
-        "correct": "4.0-5.0 kWh/sqm/day as the average annual solar irradiance across major Philippine regions, directly supporting 1 kWp installations generating 4.0-4.5 kWh daily and reducing grid consumption 30-50% in net-metering applications.",
-        "takeaway": "Philippine solar design baseline is 4.5-5.5 kWh/sqm/day; system sizing multiplies this value by installation capacity to project annual generation for renewable energy integration planning."
-      },
+      "rationale": "Treat it as an electrical system under PEC Article 6.90 coordinated with RA 11285, DOE energy design rules, and architectural siting. PEC Article 6.90 plus RA 11285 and DOE Guidelines support this integrated reading.",
       "explanation": "2.5-3.5 kWh/sqm/day represents sub-tropical lower-latitude solar potential, not applicable to Philippine equatorial/tropical climate zones. 6.5-7.5 kWh/sqm/day exceeds typical Philippine values and would indicate desert or high-altitude equatorial locations. 8.5-9.5 kWh/sqm/day represents extreme desert/high-altitude conditions incompatible with Philippine geographic and climatic characteristics. 4.0-5.0 kWh/sqm/day as the average annual solar irradiance across major Philippine regions, directly supporting 1 kWp installations generating 4.0-4.5 kWh daily and reducing grid consumption 30-50% in net-metering applications. Philippine solar design baseline is 4.5-5.5 kWh/sqm/day; system sizing multiplies this value by installation capacity to project annual generation for renewable energy integration planning.",
       "code_citation": "Department of Energy technical studies (LEA-UTIL-007-05 Renewable Energy Integration Systems)",
       "bloom_level": "remember",
@@ -251,30 +221,30 @@
       "model_id": "ALE-UTIL-007-05-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-05-06T15:00:17.769724+00:00",
+      "updated_at": "2026-07-20T01:13:25.326559+00:00",
       "content_hash": "sha256:9aaaee6511ad07e155d91e81efac90bfc17acf3bb0e8fa6dee33a45e8e4cd0b8"
     },
     {
       "question_id": "2acd59da-3aad-4f91-9e85-5797cad693f6",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "Thermal mass application in Philippine construction uses 150-200mm concrete slabs with 8-12 hour time-lag performance. What physical principle enables thermal mass to moderate diurnal temperature swings in tropical climates?",
+      "text": "Which set of items falls within the PEC Article 6.90 photovoltaic scope?",
       "options": [
         {
           "id": "a",
-          "text": "High specific heat capacity of concrete absorbs daytime solar gain; releases stored heat during cooler nighttime periods"
+          "text": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output."
         },
         {
           "id": "b",
-          "text": "Concrete density creates acoustic damping reducing thermal vibrations in building materials, which indirectly affects temperature regulation"
+          "text": "Only the visual appearance of solar panels on the roof surface."
         },
         {
           "id": "c",
-          "text": "Thick concrete sections minimize air infiltration pathways through building envelope, thereby stabilizing internal temperatures"
+          "text": "Only battery room ventilation and no electrical interconnection rules."
         },
         {
           "id": "d",
-          "text": "Concrete surface reflectance (albedo) reduces solar absorptance at material interface, which can contribute to lower heat gain"
+          "text": "Only renewable-energy policy incentives without wiring provisions."
         }
       ],
       "correct_option_id": "a",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Acoustic damping is not a thermal mass mechanism; thermal behavior is thermodynamic, not acoustic.",
-        "c": "Air infiltration control is air sealing function, not thermal mass; mass operates through heat storage capacity, not infiltration pathways.",
-        "d": "Reflectance (cool roof coating) reduces solar absorptance and heat gain, but this is SHGC reduction strategy, not thermal mass heat storage mechanism.",
-        "correct": "Thermal mass operates through specific heat capacity: concrete absorbs daytime solar heat (stored as temperature rise in material), then releases this heat during cooler nighttime hours via convection/radiation. The 8-12 hour time-lag represents the delay between peak outdoor temperature and maximum internal heat release, moderating 5-8°C diurnal swings.",
-        "takeaway": "Thermal mass moderates temperature swings via time-lag (heat absorbed during peak, released during cool period); integration with natural ventilation enables passive cooling in tropical climates."
-      },
+      "rationale": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output. PEC Article 6.90 defines PV systems as complete electrical energy systems.",
       "explanation": null,
       "code_citation": "Passive Design Strategies section (LEA-UTIL-007-05)",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-UTIL-007-05-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.320822+00:00",
       "content_hash": "sha256:807322f336b17f130bf9dc692859ff3fd92d6297868e96166e1e76e17d710354"
     },
     {
       "question_id": "9240460a-6552-4a59-9dbc-194144e04ff7",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "A multi-stage biological treatment greywater recycling system achieves 98% BOD reduction but requires 15-30 day retention time. For which non-potable end use is this high-performance treatment specifically appropriate compared to simpler sand filtration alternatives?",
+      "text": "What architectural condition improves active solar system performance in the checked utility source?",
       "options": [
         {
           "id": "a",
-          "text": "Landscape irrigation and exterior cleaning applications, where water quality is less critical than in other uses"
+          "text": "A thermally efficient, insulated building with proper siting, orientation, collector placement, and no shading of collectors."
         },
         {
           "id": "b",
-          "text": "Toilet flushing and cooling tower makeup water in commercial buildings"
+          "text": "A fully glazed east-west facade with collectors hidden from sunlight."
         },
         {
           "id": "c",
-          "text": "Toilet tank initial fill during building commissioning only, which is a limited and specific application"
+          "text": "A design that omits conventional backup systems for all active solar installations."
         },
         {
           "id": "d",
-          "text": "Roof runoff collection and storage without treatment, which does not typically require high-quality water"
+          "text": "A collector layout chosen after roof framing and service access are fixed."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Landscape irrigation and exterior cleaning require lower treatment intensity; sand filtration achieves adequate performance without retention time burden.",
-        "c": "Toilet initial fill is trivial volume; not a design driver for treatment system selection.",
-        "d": "Roof runoff is rainwater (not greywater) and follows separate harvesting design; biological treatment irrelevant to this source.",
-        "correct": "Multi-stage biological treatment (98% BOD reduction, 15-30 day retention) for toilet flushing and cooling tower makeup water—applications requiring highest water quality due to aerosol generation risk and circulation through mechanical equipment. Lower-stage sand filtration (10-15 micron, 90-95% suspended solid removal) suffices for non-contact uses.",
-        "takeaway": "Greywater treatment intensity (sand filtration vs. biological) matches end-use water quality risk: highest treatment (98% BOD) for recirculating mechanical systems; lower treatment for irrigation/exterior."
-      },
+      "rationale": "A thermally efficient, insulated building with proper siting, orientation, collector placement, and no shading of collectors. The Salvan utilities source links efficient solar systems to building thermal performance and collector exposure.",
       "explanation": null,
       "code_citation": "Greywater Recycling Systems section (LEA-UTIL-007-05)",
       "bloom_level": "analyze",
@@ -351,44 +309,38 @@
       "model_id": "ALE-UTIL-007-05-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.328681+00:00",
       "content_hash": "sha256:0adcf5e06846d9a92f7db718c71ffa1ee692675fb7ec45cf3b47705846ecf901"
     },
     {
       "question_id": "3db1b469-ab4a-491b-8e6d-fd42cd10fe80",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "Design integration sequencing for holistic sustainability systems is critical; that reverse sequencing (sizing active systems before optimizing passive envelope) increases equipment costs 20-30% while reducing performance 10-15%. Which approach represents CORRECT sequencing for Philippine climate applications?",
+      "text": "Which statement best describes the DOE energy-conserving design role?",
       "options": [
         {
           "id": "a",
-          "text": "Begin with mechanical HVAC sizing based on code minimum envelope U-values, then retrofit passive measures to meet additional performance requirements"
+          "text": "It gives minimum energy-conserving design guidance for new buildings and expansions or modifications, including lighting, controls, daylighting, and envelope OTTV."
         },
         {
           "id": "b",
-          "text": "Establish passive design envelope (OTTV optimization, daylighting, natural ventilation, thermal mass) first, then size active systems (HVAC, cooling) to remaining load"
+          "text": "It replaces electrical and plumbing codes for all utility systems."
         },
         {
           "id": "c",
-          "text": "Implement solar PV and renewable systems immediately regardless of envelope performance to meet RA 11285 targets, ensuring compliance with renewable energy mandates"
+          "text": "It applies only to furniture selection after occupancy."
         },
         {
           "id": "d",
-          "text": "Select equipment by lowest capital cost first; passive design enhancements as optional performance upgrades, considering budget constraints"
+          "text": "It covers only renewable-energy equipment purchase incentives."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Beginning with mechanical HVAC sizing to baseline envelope is reverse sequencing—produces oversized equipment and reduced performance.",
-        "c": "Solar PV is appropriate renewable integration but is independent of envelope/HVAC sequencing strategy; timing solar implementation separate from HVAC sequencing.",
-        "d": "Lowest-cost approach ignores performance and lifecycle costs; passive design investments have superior payback.",
-        "correct": "The article explicitly states: 'Design integration sequencing matters: establish passive design envelope first, then size active systems to remaining load. Reverse sequencing typically increases equipment costs 20-30% while reducing actual performance by 10-15%.' Correct sequence: (1) OTTV optimization/cool roofs/shading/natural ventilation/daylighting/thermal mass reduce baseline cooling demand, (2) then HVAC systems appropriately sized to remaining load. This minimizes equipment capacity (smaller, cheaper compressors) while maximizing performance through passive-first strategy.",
-        "takeaway": "Correct integration sequence: passive envelope optimization (OTTV, daylighting, ventilation, thermal mass) → remaining load quantification → right-sized HVAC systems; reverse sequence inflates costs 20-30% and reduces performance 10-15%."
-      },
+      "rationale": "It gives minimum energy-conserving design guidance for new buildings and expansions or modifications, including lighting, controls, daylighting, and envelope OTTV. The DOE Guidelines state their application to new buildings and expansions or modifications and set energy design requirements.",
       "explanation": null,
       "code_citation": "Integration Framework and Warning callout (LEA-UTIL-007-05)",
       "bloom_level": "apply",
@@ -401,44 +353,38 @@
       "model_id": "ALE-UTIL-007-05-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.324348+00:00",
       "content_hash": "sha256:27c24c39a1789ae51b0179131f83f3cfe000713aa5c3490234e15bf312e52e7c"
     },
     {
       "question_id": "49a4daf1-6200-4a82-ba96-f4fdf5f2ccb6",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "Article references 25% renewable target (verify against RA 11285 actual text; primarily energy intensity standards). How can a building achieve this target through dual pathways identified in the article?",
+      "text": "What is the best LEA framing for a building-integrated PV proposal?",
       "options": [
         {
           "id": "a",
-          "text": "On-site renewable energy generation only (solar PV, wind) sufficient for 25% coverage, which is a straightforward approach"
+          "text": "Treat it as an electrical system under PEC Article 6.90 coordinated with RA 11285, DOE energy design rules, and architectural siting."
         },
         {
           "id": "b",
-          "text": "Purchase renewable energy certificates from utilities; on-site generation not required, offering flexibility in compliance"
+          "text": "Treat it only as a roof-finish selection because the power equipment is outside architectural scope."
         },
         {
           "id": "c",
-          "text": "On-site renewable generation OR certified renewable power procurement; both pathways acceptable for 25% coverage"
+          "text": "Treat it only as a mechanical equipment item because it reduces cooling load."
         },
         {
           "id": "d",
-          "text": "Integration mandatory only for buildings exceeding 10,000 sqm; smaller buildings exempt, which simplifies compliance for smaller projects"
+          "text": "Treat it only as a procurement choice after construction documents are complete."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Article specifies on-site generation OR procurement; both are valid alternatives, not on-site only.",
-        "b": "Renewable certificates are one form of procurement; on-site generation also satisfies requirements.",
-        "d": "RA 11285 applies to buildings ≥5,000 sqm with baseline energy audit/management system requirements; renewable targets are facility-wide expectation under 2030 national commitment.",
-        "correct": "Renewable Energy Integration Targets: 25% of total facility energy consumption must derive from renewable sources by 2030 (either on-site generation or certified renewable power procurement).' This flexibility permits buildings to achieve targets through: (1) rooftop solar PV systems, (2) off-site renewable procurement contracts, or (3) hybrid combinations. The dual-pathway approach accommodates buildings with limited rooftop area while ensuring compliance universally.",
-        "takeaway": "RA 11285 renewable targets (25% by 2030): dual compliance pathways—on-site generation (solar PV, wind) or certified renewable power procurement; buildings select strategy based on site conditions and cost-effectiveness."
-      },
+      "rationale": "Treat it as an electrical system under PEC Article 6.90 coordinated with RA 11285, DOE energy design rules, and architectural siting. PEC Article 6.90 plus RA 11285 and DOE Guidelines support this integrated reading.",
       "explanation": null,
       "code_citation": "RA 11285 Implementation Requirements section (LEA-UTIL-007-05)",
       "bloom_level": "analyze",
@@ -451,44 +397,38 @@
       "model_id": "ALE-UTIL-007-05-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.321906+00:00",
       "content_hash": "sha256:ec1da8256e199b590c2db9096ed97bfe5e8401ad6a5a8ad4d2d7e2426334c10c"
     },
     {
       "question_id": "4870bacb-e978-4b63-98d9-56172aa9226d",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "Based on the 25,000 sqm integrated case study, if a building implements only 50% of the planned sustainability measures (envelope optimization + solar PV only, omitting water recycling and thermal storage), which consequence would MOST significantly impact RA 11285 compliance timeline?",
+      "text": "Which set of items falls within the PEC Article 6.90 photovoltaic scope?",
       "options": [
         {
           "id": "a",
-          "text": "Envelope optimization + solar PV achieves 75-85% RA 11285 compliance; water recycling/thermal storage are optional enhancements, not critical for initial compliance."
+          "text": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output."
         },
         {
           "id": "b",
-          "text": "Omitting water recycling systems prevents meeting ≤5.0 cubic meters per occupant per year baseline; omitting thermal storage reduces peak load reduction but does not prevent energy intensity compliance at 75 kWh/sqm/year"
+          "text": "Only the visual appearance of solar panels on the roof surface."
         },
         {
           "id": "c",
-          "text": "Partial implementation achieves proportional compliance; 50% of measures achieves ~50% of 13.5-22.2 million PHP annual savings (6.75-11.1 million PHP), extending simple payback from 8-10 months to 16-20 months"
+          "text": "Only battery room ventilation and no electrical interconnection rules."
         },
         {
           "id": "d",
-          "text": "Renewable energy targets (25% by 2030) are achievable through solar PV alone; water conservation and thermal storage are independent performance metrics, not affecting compliance directly."
+          "text": "Only renewable-energy policy incentives without wiring provisions."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Water recycling is mandatory per RA 11285 Section 5; not optional enhancement.",
-        "c": "Proportional payback extension is feasible estimate but misses the critical water conservation compliance violation.",
-        "d": "Water conservation and thermal storage are NOT independent of energy compliance; integrated framework addresses both simultaneously per article case study.",
-        "correct": "RA 11285 mandates TWO distinct compliance requirements: (1) Building performance standard: 75 kWh/sqm/year energy intensity (achievable through envelope + solar even without thermal storage), and (2) Water conservation: ≤5.0 cubic meters per occupant per year baseline with individual water meter circuits and recycling systems mandatory for all new buildings. Omitting water recycling directly violates mandate; omitting thermal storage reduces peak demand cost savings (800K-1.2M PHP/year elimination) but does not prevent energy intensity compliance. Water recycling is non-negotiable regulatory requirement; thermal storage is cost-optimization measure.",
-        "takeaway": "RA 11285 compliance bottleneck for partial implementation: water conservation/recycling is mandatory regulatory requirement; thermal storage is optional cost-optimization measure—omitting water systems violates law; omitting storage impacts economics but not energy intensity compliance."
-      },
+      "rationale": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output. PEC Article 6.90 defines PV systems as complete electrical energy systems.",
       "explanation": null,
       "code_citation": "RA 11285 Implementation Requirements and Integration Framework sections (LEA-UTIL-007-05)",
       "bloom_level": "evaluate",
@@ -501,30 +441,30 @@
       "model_id": "ALE-UTIL-007-05-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.323201+00:00",
       "content_hash": "sha256:ab4418cd7413076666902a789476010948501caab7117c8f76d36c7f0c033b59"
     },
     {
       "question_id": "2a3732bb-7017-4fcf-820a-904cbd5eb6af",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "The OTTV calculation formula incorporates solar absorptance (αₛ) values of 0.4 for light-colored finishes versus 0.9 for dark finishes. Explain how finish color selection directly impacts OTTV compliance strategy for non-residential buildings in Philippine climates.",
+      "text": "What architectural condition improves active solar system performance in the checked utility source?",
       "options": [
         {
           "id": "a",
-          "text": "Light finishes reflect solar radiation, reducing αₛ input and lowering calculated OTTV; dark finishes absorb radiation and increase OTTV calculations requiring enhanced glazing/insulation"
+          "text": "A thermally efficient, insulated building with proper siting, orientation, collector placement, and no shading of collectors."
         },
         {
           "id": "b",
-          "text": "Dark finishes increase exterior surface temperature, reducing indoor-outdoor temperature differentials and lowering OTTV calculations, which can lead to energy savings"
+          "text": "A fully glazed east-west facade with collectors hidden from sunlight."
         },
         {
           "id": "c",
-          "text": "Finish color determines maintenance requirements but does not affect thermal performance metrics in OTTV calculations, focusing on aesthetic considerations"
+          "text": "A design that omits conventional backup systems for all active solar installations."
         },
         {
           "id": "d",
-          "text": "Light finishes increase daylighting potential, automatically reducing electric lighting loads and lowering facility energy intensity independent of OTTV compliance, enhancing sustainability"
+          "text": "A collector layout chosen after roof framing and service access are fixed."
         }
       ],
       "correct_option_id": "a",
@@ -532,13 +472,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Higher surface temperature from dark finishes increases indoor-outdoor ΔT, actually raising OTTV rather than lowering it.",
-        "c": "Finish color directly affects αₛ (solar absorptance)—a primary OTTV formula variable; color has direct thermal performance impact, not maintenance alone.",
-        "d": "While light finishes may enhance daylighting potential, OTTV calculation does not include lighting energy. OTTV addresses thermal load only; daylighting is separate energy reduction strategy.",
-        "correct": "OTTV formula: [αₛ × Ac × (SHGC) + U × Aw × ΔT] / A_total. Light finishes (αₛ=0.4) reduce the solar absorptance term, lowering calculated OTTV. Dark finishes (αₛ=0.9) significantly increase solar heat absorption, raising OTTV calculations and requiring compensating measures (lower U-values, reduced window area, SHGC reduction) to maintain ≤45 W/sqm standard. This drives material specification and color selection as envelope compliance strategy.",
-        "takeaway": "OTTV compliance leverage: light finishes (αₛ=0.4) reduce solar absorptance term; dark finishes (αₛ=0.9) increase term, requiring glazing/insulation upgrades—color selection is primary envelope specification decision."
-      },
+      "rationale": "A thermally efficient, insulated building with proper siting, orientation, collector placement, and no shading of collectors. The Salvan utilities source links efficient solar systems to building thermal performance and collector exposure.",
       "explanation": null,
       "code_citation": "Building Envelope Performance - OTTV Calculation section (LEA-UTIL-007-05)",
       "bloom_level": "analyze",
@@ -551,44 +485,38 @@
       "model_id": "ALE-UTIL-007-05-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.318444+00:00",
       "content_hash": "sha256:a8d956c146e42eda95a22464f269c519fd42d840044f8b37a467a054f7ce4b04"
     },
     {
       "question_id": "2201bf50-63f2-4331-9bfd-f118b74f205e",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "Building-integrated photovoltaic (BIPV) systems combine energy generation with structural elements. Which of the following is NOT a typical BIPV application identified?",
+      "text": "Which statement best describes the DOE energy-conserving design role?",
       "options": [
         {
           "id": "a",
-          "text": "Solar canopies over parking or pedestrian zones"
+          "text": "It gives minimum energy-conserving design guidance for new buildings and expansions or modifications, including lighting, controls, daylighting, and envelope OTTV."
         },
         {
           "id": "b",
-          "text": "Facade-mounted photovoltaic arrays on vertical walls"
+          "text": "It replaces electrical and plumbing codes for all utility systems."
         },
         {
           "id": "c",
-          "text": "Underground geothermal exchanger coils"
+          "text": "It applies only to furniture selection after occupancy."
         },
         {
           "id": "d",
-          "text": "Solar glazing integration in window assemblies"
+          "text": "It covers only renewable-energy equipment purchase incentives."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Solar canopies are explicitly mentioned as BIPV applications providing dual functions: shading and electricity generation.",
-        "b": "Facade-mounted arrays are standard BIPV implementations on building exterior surfaces where solar exposure is maximized.",
-        "d": "Solar glazing integration (windows with embedded photovoltaic cells) represents architectural BIPV combining daylighting, thermal control, and power generation.",
-        "correct": "Underground geothermal exchanger coils are thermal energy systems, not photovoltaic applications. BIPV systems specifically integrate solar electricity generation with building structural and envelope elements.",
-        "takeaway": "BIPV integrates photovoltaic generation into building envelope and structural systems (canopies, facades, glazing); geothermal systems are separate thermal technologies not classified as BIPV."
-      },
+      "rationale": "It gives minimum energy-conserving design guidance for new buildings and expansions or modifications, including lighting, controls, daylighting, and envelope OTTV. The DOE Guidelines state their application to new buildings and expansions or modifications and set energy design requirements.",
       "explanation": null,
       "code_citation": "Building-Integrated Photovoltaic Systems section (LEA-UTIL-007-05)",
       "bloom_level": "understand",
@@ -601,30 +529,30 @@
       "model_id": "ALE-UTIL-007-05-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.327626+00:00",
       "content_hash": "sha256:836ec3a42e403f8f14c4666e44b92704b924f20313b43b8ad97bff3a5a48ed51"
     },
     {
       "question_id": "9a09c14e-2398-442e-b3ce-aa174e404db2",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "A 100-ton chilled water thermal energy storage (TES) system sized for 4-hour discharge cycle reduces peak cooling plant capacity by 30-40%. In a large commercial building context, what operational advantage drives the economic benefit of this TES implementation?",
+      "text": "What is the best LEA framing for a building-integrated PV proposal?",
       "options": [
         {
           "id": "a",
-          "text": "Off-peak electricity procurement at lower rates during nighttime hours enables charging TES; daytime discharge reduces reliance on higher-cost peak-demand electricity, lowering demand charges 20,000-35,000 PHP monthly"
+          "text": "Treat it as an electrical system under PEC Article 6.90 coordinated with RA 11285, DOE energy design rules, and architectural siting."
         },
         {
           "id": "b",
-          "text": "TES increases system coefficient of performance (COP) by 15-25%, directly reducing compressor energy consumption and improving overall system efficiency"
+          "text": "Treat it only as a roof-finish selection because the power equipment is outside architectural scope."
         },
         {
           "id": "c",
-          "text": "Water storage provides emergency backup cooling for 4 hours during grid outage conditions, ensuring continuous operation"
+          "text": "Treat it only as a mechanical equipment item because it reduces cooling load."
         },
         {
           "id": "d",
-          "text": "Thermal storage increases building occupant comfort by stabilizing indoor temperatures independent of mechanical system operation, enhancing tenant satisfaction"
+          "text": "Treat it only as a procurement choice after construction documents are complete."
         }
       ],
       "correct_option_id": "a",
@@ -632,13 +560,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "TES does not change compressor COP; same refrigeration equipment operates at different load profiles. COP remains constant; total energy input is reduced because off-peak charging often uses lower-cost generation or thermal storage avoids peak-period refrigeration entirely.",
-        "c": "While TES provides thermal inertia and could serve as emergency backup, the article emphasizes peak-demand cost reduction, not emergency capability, as primary economic driver.",
-        "d": "Comfort stabilization is operational benefit but not the economic driver; peak demand charge reduction (20,000-35,000 PHP/month) is explicit economic mechanism.",
-        "correct": "The article explicitly states: TES systems enable off-peak charging during nighttime low-electricity-rate periods, then discharge chilled water during high-demand daytime hours, reducing peak electrical load and demand charges (20,000-35,000 PHP monthly). Peak demand charges ($/kW/month) are significant for commercial facilities; reducing peak reduces both demand and energy charges. A 100-ton system with 4-hour discharge cycle achieves 30-40% peak cooling plant capacity reduction.",
-        "takeaway": "TES economic advantage: off-peak charging / peak discharge reduces demand charges 20,000-35,000 PHP/month; 100-ton system sized for 4-hour discharge achieves 30-40% plant capacity reduction."
-      },
+      "rationale": "Treat it as an electrical system under PEC Article 6.90 coordinated with RA 11285, DOE energy design rules, and architectural siting. PEC Article 6.90 plus RA 11285 and DOE Guidelines support this integrated reading.",
       "explanation": null,
       "code_citation": "Advanced Building Systems - Building-Integrated Storage Systems section (LEA-UTIL-007-05)",
       "bloom_level": "apply",
@@ -651,30 +573,30 @@
       "model_id": "ALE-UTIL-007-05-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.331844+00:00",
       "content_hash": "sha256:cca5425f63c618698aab40acd953820b213c9fc2cc10bd7caac21d429373017a"
     },
     {
       "question_id": "a1cad26e-643c-485e-b11a-5ff40f6936b1",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "BERDE v4.0 (Building for Ecologically Responsive Design Excellence) establishes nine credit categories for sustainability certification. Which category allocation represents the highest point value available under the BERDE rating framework?",
+      "text": "Which set of items falls within the PEC Article 6.90 photovoltaic scope?",
       "options": [
         {
           "id": "a",
-          "text": "Energy efficiency: 24 points"
+          "text": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output."
         },
         {
           "id": "b",
-          "text": "Water efficiency: 16 points"
+          "text": "Only the visual appearance of solar panels on the roof surface."
         },
         {
           "id": "c",
-          "text": "Site development and management: 18 points"
+          "text": "Only battery room ventilation and no electrical interconnection rules."
         },
         {
           "id": "d",
-          "text": "Materials and waste: 15 points"
+          "text": "Only renewable-energy policy incentives without wiring provisions."
         }
       ],
       "correct_option_id": "a",
@@ -682,13 +604,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Water efficiency (16 points) is significant but ranks below energy efficiency (24 points).",
-        "c": "Site development/management (18 points) ranks second to energy efficiency.",
-        "d": "Materials/waste (15 points) ranks below energy efficiency and water categories.",
-        "correct": "The article lists BERDE v4.0 categories with point allocations: Energy efficiency carries 24 points (highest), followed by Site development/management (18 points), Water efficiency (16 points), Materials/waste (15 points), Indoor environmental quality (15 points), Management/operations (6 points). Energy efficiency receives highest weighting, reflecting Philippine sustainability priorities for operational cost reduction and RA 11285 compliance.",
-        "takeaway": "BERDE v4.0 prioritization: Energy efficiency (24 pts) > Site development (18 pts) > Water efficiency (16 pts) > Materials/waste & Indoor quality (15 pts each) > Operations (6 pts)."
-      },
+      "rationale": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output. PEC Article 6.90 defines PV systems as complete electrical energy systems.",
       "explanation": null,
       "code_citation": "Green Building Rating Systems - BERDE section (LEA-UTIL-007-05)",
       "bloom_level": "understand",
@@ -701,44 +617,38 @@
       "model_id": "ALE-UTIL-007-05-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.329690+00:00",
       "content_hash": "sha256:0b269911a4d687eb60c71597268a75b4b367286f3917f555a7b50f96dc0eaade"
     },
     {
       "question_id": "9b2e0471-e56b-4065-b99d-6262d5933d90",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
       "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "External shading louver systems with depths of 500-750mm oriented perpendicular to solar noon azimuth block 60-80% of direct radiation. Which design objective is BEST supported by this shading strategy in Philippine building envelope design?",
+      "text": "What architectural condition improves active solar system performance in the checked utility source?",
       "options": [
         {
           "id": "a",
-          "text": "Reducing window U-values to achieve lower thermal transmittance, which is crucial for energy efficiency"
+          "text": "A thermally efficient, insulated building with proper siting, orientation, collector placement, and no shading of collectors."
         },
         {
           "id": "b",
-          "text": "Blocking direct solar heat gain coefficient (SHGC) reduction while maintaining interior daylighting penetration"
+          "text": "A fully glazed east-west facade with collectors hidden from sunlight."
         },
         {
           "id": "c",
-          "text": "Increasing concrete mass thermal capacity for nighttime heat release, which helps in passive cooling strategies"
+          "text": "A design that omits conventional backup systems for all active solar installations."
         },
         {
           "id": "d",
-          "text": "Minimizing mechanical ventilation requirements through increased air changes per hour, enhancing indoor air quality"
+          "text": "A collector layout chosen after roof framing and service access are fixed."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Louver shading does not change window U-value (thermal transmittance); U-value is a material property determined by glazing/frame composition, not external shading.",
-        "c": "Louver shading is dynamic solar control, not thermal mass; concrete integration is separate passive design layer working in parallel.",
-        "d": "Louver shading reduces cooling load demand, enabling lower HVAC airflow rates; it does not require increased ventilation.",
-        "correct": "Fixed/operable louver systems achieve 40-70% SHGC reduction by blocking 60-80% of direct radiation while diffuse glazing and light shelves maintain daylighting (300-500 lux target). This balances solar heat gain control with daylighting contribution—critical for tropical climates with intense direct radiation.",
-        "takeaway": "External louver design (500-750mm, perpendicular to solar noon) controls SHGC reduction (40-70%) while preserving daylighting—fundamental envelope optimization for tropical high-solar-gain climates."
-      },
+      "rationale": "A thermally efficient, insulated building with proper siting, orientation, collector placement, and no shading of collectors. The Salvan utilities source links efficient solar systems to building thermal performance and collector exposure.",
       "explanation": null,
       "code_citation": "External Shading and Passive Design Strategies section (LEA-UTIL-007-05)",
       "bloom_level": "apply",
@@ -751,7 +661,7 @@
       "model_id": "ALE-UTIL-007-05-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.316803+00:00",
       "content_hash": "sha256:3a2fdf9be2a675885df495274ff2477f3932a493200902a939598103857b2ced"
     }
   ]

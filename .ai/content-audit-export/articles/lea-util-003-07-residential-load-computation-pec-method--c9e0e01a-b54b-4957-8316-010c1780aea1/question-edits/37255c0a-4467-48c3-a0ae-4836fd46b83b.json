@@ -2,70 +2,48 @@
   "question_id": "37255c0a-4467-48c3-a0ae-4836fd46b83b",
   "baseline_hash": "sha256:f63268867b918a3153e59d7912299ea8cec816dc4eceea8e58fc009927472b64",
   "action": "replace",
-  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
-  "approved_by": "codex-local-first-batch-041",
-  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "reason": "council-fact-check-remediation-2026-07-20 (Agent G ERROR G1 / Q13): marked-correct '115.6 A' failed arithmetic; the original rationale computed the three-phase denominator as 537.0 when the correct value is sqrt(3)*380*0.87 = 572.6. Recomputed: I = P/(sqrt(3)*V*PF) = 62,000 / (1.732 x 380 x 0.87) = 62,000 / 572.6 = 108.3 A. Restores the original three-phase feeder-current question with the corrected answer.",
+  "approved_by": "council-agent-J-question-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "c9e0e01a-b54b-4957-8316-010c1780aea1",
     "parent_article_slug": "lea-util-003-07-residential-load-computation-pec-method",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358 | Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190",
-    "checked_markdown_lines": [
-      "Phil Electrical Code refined markdown lines 1721-1770",
-      "Phil Electrical Code refined markdown lines 2125-2138",
-      "Phil Electrical Code refined markdown lines 2202-2237",
-      "Phil Electrical Code refined markdown lines 2253-2311",
-      "Phil Electrical Code refined markdown lines 2337-2358",
-      "Electrical Layout and Estimate refined markdown lines 53-68",
-      "Electrical Layout and Estimate refined markdown lines 3260-3350",
-      "Electrical Layout and Estimate refined markdown lines 2153-2190"
-    ],
+    "support_status": "council_verified_fact_check",
+    "source_locator": "Three-phase current formula I = P/(sqrt(3)*V*PF). PEC adopts NEC-style service and feeder sizing provisions; Meralco bills on the highest 15-minute average demand.",
     "checked_sources": [
       {
         "source_id": "pec-2017-local-phil-electrical-code",
         "label": "Philippine Electrical Code local raw PDF",
         "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
-        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
-        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
-        "locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358"
-      },
-      {
-        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
-        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
-        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
-        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
-        "locator": "Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190"
+        "locator": "Three-phase current formula and service/feeder sizing provisions."
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+    "local_source_safe_action": "Corrected marked-correct option from '115.6 A' to '108.3 A' (council-recomputed value, matching Agent G); fixed the denominator arithmetic error in the original rationale."
   },
   "proposed": {
-    "text": "Why should unsupported demand shortcuts be avoided in this batch?",
+    "text": "A Meralco-billed commercial building has a measured monthly peak demand of 62 kW (recorded as 15-minute average). The service is 380V three-phase at 0.87 power factor. What is the approximate feeder current at peak demand?",
     "options": [
       {
         "id": "a",
-        "text": "The repair is limited to claims that can be tied to the checked local PEC and utility source families."
+        "text": "95.5 A"
       },
       {
         "id": "b",
-        "text": "Shortcuts always override Code text."
+        "text": "103.2 A"
       },
       {
         "id": "c",
-        "text": "Raw PDF source checks are optional for code claims."
+        "text": "108.3 A"
       },
       {
         "id": "d",
-        "text": "Derivative notes are the controlling source truth."
+        "text": "115.6 A"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "The local-first protocol requires raw PDF source support for content and question edits.",
-    "explanation": "The local-first protocol requires raw PDF source support for content and question edits.",
-    "code_citation": "Batch 041 local-first source audit"
+    "correct_option_id": "c",
+    "rationale": "Three-phase feeder current: I = P / (sqrt(3) * V * PF) = 62,000 / (1.732 x 380 x 0.87) = 62,000 / 572.6 = 108.3 A. The original '115.6 A' answer used an incorrect denominator of 537.0 instead of 572.6. Meralco bills on the highest 15-minute average power demand recorded each month. Source: Philippine Electrical Code three-phase current formula and service/feeder sizing provisions.",
+    "explanation": "I = 62,000 / (1.732 x 380 x 0.87) = 62,000 / 572.6 = 108.3 A.",
+    "code_citation": "PEC three-phase current formula (I = P/(sqrt(3)*V*PF))"
   }
 }

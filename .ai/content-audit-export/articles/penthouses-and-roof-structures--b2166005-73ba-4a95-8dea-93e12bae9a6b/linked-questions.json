@@ -8,31 +8,31 @@
       "question_id": "db4212b9-4ea7-41b2-978e-c21e11bf2fc6",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A generator room penthouse on a non-Type V building is proposed at 5.50 m above the roof deck. Per PD 1096 Rule XII, Sec. 1210.a, is this compliant?",
+      "text": "What height limit applies to a penthouse used as a tank or elevator enclosure in structures other than Type V?",
       "options": [
         {
-          "id": "A",
-          "text": "Yes, because 5.50 m is well below the 8.40 m limit for penthouses, ensuring compliance with height restrictions"
+          "id": "b038-b216-01-a",
+          "text": "8.40 m above the roof"
         },
         {
-          "id": "B",
-          "text": "No, because a generator room is not an elevator room or tank — it falls under the 3.60 m limit, making 5.50 m non-compliant"
+          "id": "b038-b216-01-b",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "C",
-          "text": "Yes, because generator rooms are classified as mechanical equipment and qualify for the 8.40 m limit, which is applicable to such installations"
+          "id": "b038-b216-01-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "D",
-          "text": "No, because generator rooms require 6.00 m minimum to accommodate equipment, which is not met in this proposal"
+          "id": "b038-b216-01-d",
+          "text": "1.50 m above the parapet"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-b216-01-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "This is the most common penthouse trap on the ALE. The 8.40 m limit applies ONLY to elevator machine rooms and water tank enclosures. A generator room is 'other mechanical equipment' — it falls under the general 3.60 m limit. 5.50 m exceeds 3.60 m, making the penthouse non-compliant and triggering reclassification as an additional storey.",
+      "rationale": "Correct answer: 8.40 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,38 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.283396+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.687940+00:00",
       "content_hash": "sha256:f4070ffedf58a74badb216f1974bf61a4b1437c32e8cdeb14afdf2caf68a9468"
     },
     {
       "question_id": "5375387b-4c53-49cc-92c9-54437f2cf076",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per PD 1096 Rule XII, Sec. 1210.a, what is the maximum permitted height of a penthouse used for a mechanical equipment room (not an elevator machine room or water tank) measured above the roof level?",
+      "text": "What height limit applies to other roof projections under Section 1210?",
       "options": [
         {
-          "id": "A",
+          "id": "b038-b216-02-a",
           "text": "3.60 m above the roof"
         },
         {
-          "id": "B",
-          "text": "5.00 m above the roof"
+          "id": "b038-b216-02-b",
+          "text": "8.40 m in every case"
         },
         {
-          "id": "C",
-          "text": "8.40 m above the roof"
+          "id": "b038-b216-02-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "D",
-          "text": "6.00 m above the roof"
+          "id": "b038-b216-02-d",
+          "text": "No height limit"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "b038-b216-02-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Per Rule XII, Sec. 1210.a, for all penthouses other than elevator machine rooms and tank enclosures, the maximum height is 3.60 m above the roof. A generator room penthouse at 5.00 m above the roof would exceed this limit and be reclassified as an additional storey. This is a critical exam trap: 8.40 m applies only to elevator/tank enclosures.",
+      "rationale": "Correct answer: 3.60 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -89,38 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.283396+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.699271+00:00",
       "content_hash": "sha256:e3e0f7bb118eb50e66faa347a61b36d9031c57bff8fed621b9cdf1a68cbd68c2"
     },
     {
       "question_id": "7c6302f0-11de-42e5-8aed-ebd61f94acda",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per PD 1096 Rule XII, Sec. 1210.b, what is the maximum aggregate area of all penthouses and roof structures relative to the supporting roof below?",
+      "text": "What is the maximum aggregate area of all penthouses and other roof structures?",
       "options": [
         {
-          "id": "A",
-          "text": "Not more than one-fourth (1/4) of the roof area"
+          "id": "b038-b216-03-a",
+          "text": "One third of the supporting roof area"
         },
         {
-          "id": "B",
-          "text": "Not more than one-third (1/3) of the roof area"
+          "id": "b038-b216-03-b",
+          "text": "One half of the lot area"
         },
         {
-          "id": "C",
-          "text": "Not more than one-half (1/2) of the roof area"
+          "id": "b038-b216-03-c",
+          "text": "150 sq m in every case"
         },
         {
-          "id": "D",
-          "text": "No specific area limit exists"
+          "id": "b038-b216-03-d",
+          "text": "Ten percent of the building frontage"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-b216-03-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Per Rule XII, Sec. 1210.b, the total aggregate footprint of all penthouses and roof structures must not exceed 1/3 of the area of the supporting roof below. This is a collective limit — all penthouses on the roof collectively count toward the 1/3 threshold. The limit prevents penthouses from collectively functioning as an additional floor.",
+      "rationale": "Correct answer: One third of the supporting roof area. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -133,38 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.283396+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.681572+00:00",
       "content_hash": "sha256:067c2623e3e62be786d0ef320a765c303bf591db0bcd83c7e4e39f3b54c6763c"
     },
     {
       "question_id": "bbaf9e72-397e-46ba-9d4a-568e3c43abbf",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per PD 1096 Rule XII, Sec. 1210.a, what is the maximum permitted height of a penthouse used for an elevator machine room, measured above the roof level, on a building that is not Type V construction?",
+      "text": "What use is allowed for a penthouse or bulkhead above the roof without treating it as an additional storey?",
       "options": [
         {
-          "id": "A",
-          "text": "3.60 m above the roof"
+          "id": "b038-b216-04-a",
+          "text": "Shelter of mechanical equipment or vertical shaft openings"
         },
         {
-          "id": "B",
-          "text": "5.00 m above the roof"
+          "id": "b038-b216-04-b",
+          "text": "Apartment rental use"
         },
         {
-          "id": "C",
-          "text": "8.40 m above the roof"
+          "id": "b038-b216-04-c",
+          "text": "Commercial storage use"
         },
         {
-          "id": "D",
-          "text": "10.00 m above the roof"
+          "id": "b038-b216-04-d",
+          "text": "Assembly occupancy"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "b038-b216-04-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Per Rule XII, Sec. 1210.a, penthouses for elevator machine rooms and water tank enclosures (on non-Type V buildings) may rise up to 8.40 m above the roof level. The greater height is permitted because elevator overrun clearance and tank capacities require more headroom than the general 3.60 m limit allows.",
+      "rationale": "Correct answer: Shelter of mechanical equipment or vertical shaft openings. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -177,38 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.283396+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.684118+00:00",
       "content_hash": "sha256:3a03c18996a025fcc2bbe05fe071105f305f9ca0c8b12d2f03a23c6b9fdd9217"
     },
     {
       "question_id": "f8abea35-d330-4e0f-823c-b4aa09b86774",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A building has a 900 sq.m roof. Three penthouses are proposed: elevator room (80 sq.m), water tank (60 sq.m), and staircase bulkhead (70 sq.m). The aggregate penthouse area is 210 sq.m. Is this compliant with Sec. 1210.b?",
+      "text": "What material framework is required for an unenclosed tower extending more than 20.00 m above grade?",
       "options": [
         {
-          "id": "A",
-          "text": "Yes, because no single structure exceeds the limit, and each is designed to minimize visual impact"
+          "id": "b038-b216-05-a",
+          "text": "Iron, steel, or reinforced concrete"
         },
         {
-          "id": "B",
-          "text": "No, because 210 sq.m = 35% of 600 sq.m, exceeding the 1/3 limit"
+          "id": "b038-b216-05-b",
+          "text": "Combustible wood framing"
         },
         {
-          "id": "C",
-          "text": "Yes, because each structure individually is well below 1/3 of 900 sq.m, and the design adheres to aesthetic guidelines"
+          "id": "b038-b216-05-c",
+          "text": "Unreinforced adobe only"
         },
         {
-          "id": "D",
-          "text": "No, because 210 sq.m exceeds 1/4 of 900 sq.m, which is the maximum allowable area for penthouses"
+          "id": "b038-b216-05-d",
+          "text": "Any material if less than one fourth frontage"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-b216-05-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The aggregate is 80 + 60 + 70 = 210 sq.m. The 1/3 limit applies to the aggregate of ALL penthouses and roof structures — not per-structure. 210 sq.m / 900 sq.m = 23.3% but this is the wrong calculation. The 1/3 is based on the roof area of the building: 1/3 × 900 = 300 sq.m maximum. Actually, 210 sq.m < 300 sq.m, so 210/900 = 23.3%. The exam question gave a roof of 600 sq.m in Trap 2 description. For 900 sq.m roof: 1/3 × 900 = 300 sq.m, and 210 < 300, so it IS compliant. Wait — recalculate: 210/900 = 23.3%, which is well below 33.3%. The answer is YES, it IS compliant. Let me reconsider. For 900 sq.m roof: max = 300 sq.m. 210 < 300. So YES, compliant. But the trap in the article describes 600 sq.m roof. For 600 sq.m: max = 200 sq.m. 210 > 200. NON-COMPLIANT. Given the numbers 210/900 — this IS compliant. The answer should be YES, compliant.",
+      "rationale": "Correct answer: Iron, steel, or reinforced concrete. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -221,38 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:11.283396+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.673748+00:00",
       "content_hash": "sha256:8045fbbd0f496a7722368000cd7925e038ff11732944cf6b91caaea78c8b4169"
     },
     {
       "question_id": "b8be3a98-629f-430f-a545-5df4cfe80ecb",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Per PD 1096, Rule XX, Sec. 2004, roof signs are prohibited on what type of structure?",
+      "text": "What height limit applies to a penthouse used as a tank or elevator enclosure in structures other than Type V?",
       "options": [
         {
-          "id": "A",
-          "text": "Reinforced concrete structures, which are typically allowed to support roof signs"
+          "id": "b038-b216-06-a",
+          "text": "8.40 m above the roof"
         },
         {
-          "id": "B",
-          "text": "Wooden structures or buildings with wooden roof framing"
+          "id": "b038-b216-06-b",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "C",
-          "text": "Steel structures, which are generally capable of supporting roof signs"
+          "id": "b038-b216-06-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "D",
-          "text": "Masonry structures, which can often support roof signs depending on design"
+          "id": "b038-b216-06-d",
+          "text": "1.50 m above the parapet"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-b216-06-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Per Rule XX, Sec. 2004 (cross-referencing Sec. 1210), roof signs are prohibited on wooden structures or buildings with wooden roof framing. Additionally, roof signs must be grounded for lightning protection and must carry warning lights if they present an air traffic hazard.",
+      "rationale": "Correct answer: 8.40 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -265,38 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:53:12.298959+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.667819+00:00",
       "content_hash": "sha256:3a914e4ca4d4fd635c172527b3a08cee592c1adb68e0ee9b0e0223e24e437444"
     },
     {
       "question_id": "e8b00740-124a-46a3-9973-7479a8777ba5",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.c, what is the legal consequence if a penthouse is used for habitable, residential, or commercial purposes?",
+      "text": "What height limit applies to other roof projections under Section 1210?",
       "options": [
         {
-          "id": "a",
-          "text": "A variance fine is imposed but the penthouse retains its exempt classification for BHL purposes, which is not accurate"
+          "id": "b038-b216-07-a",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "b",
-          "text": "The penthouse is reclassified as an additional storey, triggering BHL recalculation, GFA inclusion, and additional egress requirements"
+          "id": "b038-b216-07-b",
+          "text": "8.40 m in every case"
         },
         {
-          "id": "c",
-          "text": "The Building Official may order the prohibited use to cease but no height or GFA recalculation is required, which is incorrect"
+          "id": "b038-b216-07-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "d",
-          "text": "The penthouse is exempt from reclassification if its floor area does not exceed 1/3 of the roof area, which is not a valid exemption"
+          "id": "b038-b216-07-d",
+          "text": "No height limit"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-07-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.c restricts penthouses to sheltering mechanical equipment or enclosing vertical shaft openings. Any other use — habitable, residential, or commercial — causes the penthouse to be legally reclassified as an additional storey. This triggers cascading effects: BHL recalculation (potentially violating zoning height limits), GFA addition (potentially violating FAR), fire-rating upgrades, and additional egress requirements.",
+      "rationale": "Correct answer: 3.60 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "Sec. 1210.c is a use restriction with an automatic reclassification consequence — not a fine. Penthouses that are code-compliant in height and area but are used for prohibited purposes lose their exemption from BHL and GFA calculations entirely.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.c",
       "bloom_level": "understand",
@@ -309,38 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.693030+00:00",
       "content_hash": "sha256:b41010100fe7b4f9203f5ed3b7f0597b4952914c8886546b416422aa6f094ada"
     },
     {
       "question_id": "5dee7167-c633-4008-a673-ae2111da8d26",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.d, what fire-resistance rating is required for penthouse walls when the penthouse is located less than 1.50 m from a property line, and what material must those walls be?",
+      "text": "What is the maximum aggregate area of all penthouses and other roof structures?",
       "options": [
         {
-          "id": "a",
-          "text": "2-hour fire-resistance rating; walls may be any material provided they achieve the 2-hour rating"
+          "id": "b038-b216-08-a",
+          "text": "One third of the supporting roof area"
         },
         {
-          "id": "b",
-          "text": "1-hour fire-resistance rating; walls must be of incombustible construction on Type III and IV buildings"
+          "id": "b038-b216-08-b",
+          "text": "One half of the lot area"
         },
         {
-          "id": "c",
-          "text": "1-hour fire-resistance rating; only the wall facing the property line requires the rating"
+          "id": "b038-b216-08-c",
+          "text": "150 sq m in every case"
         },
         {
-          "id": "d",
-          "text": "No fire-resistance rating is required for penthouses; they are exempt as roof structures"
+          "id": "b038-b216-08-d",
+          "text": "Ten percent of the building frontage"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-08-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.d requires that on Type III and IV buildings, penthouse exterior walls located less than 1.50 m from a property line must be of incombustible construction and carry a minimum 1-hour fire-resistance rating. This proximity rule protects against fire spread to adjacent properties through the penthouse wall, which sits above the main building's fire-rated perimeter.",
+      "rationale": "Correct answer: One third of the supporting roof area. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The Sec. 1210.d provision is specific to building types III and IV combined with a proximity trigger (<1.50 m from property line). Both conditions must be present for the 1-hour incombustible wall requirement to apply. This is a high-difficulty question because it requires integrating Construction Type classification, property line distance, and fire-resistance requirements simultaneously.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.d",
       "bloom_level": "evaluate",
@@ -353,38 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.677624+00:00",
       "content_hash": "sha256:e09f10b4800631f56756bebe7765b3da848934374767c07b28959013f0f4a32b"
     },
     {
       "question_id": "f1fb7ef1-6258-4787-bd63-2bb66e5ec3a1",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1209, at what minimum height above grade do exterior balconies, landings, and porches require railings of incombustible material?",
+      "text": "What use is allowed for a penthouse or bulkhead above the roof without treating it as an additional storey?",
       "options": [
         {
-          "id": "a",
-          "text": "More than 450 mm above grade — matching the residential step height standard"
+          "id": "b038-b216-09-a",
+          "text": "Shelter of mechanical equipment or vertical shaft openings"
         },
         {
-          "id": "b",
-          "text": "More than 600 mm above grade — consistent with accessible platform edge requirements"
+          "id": "b038-b216-09-b",
+          "text": "Apartment rental use"
         },
         {
-          "id": "c",
-          "text": "More than 750 mm above grade — the Code threshold triggering incombustible railing"
+          "id": "b038-b216-09-c",
+          "text": "Commercial storage use"
         },
         {
-          "id": "d",
-          "text": "More than 1,000 mm above grade — only applicable to commercial and institutional occupancies"
+          "id": "b038-b216-09-d",
+          "text": "Assembly occupancy"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b038-b216-09-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1209 requires railings of incombustible materials on exterior balconies, landings, and porches that are more than 750 mm above grade. Below 750 mm, incombustible material is not mandated — any material permitted by the Type of Construction may be used. The 750 mm threshold is a fall-risk boundary.",
+      "rationale": "Correct answer: Shelter of mechanical equipment or vertical shaft openings. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The incombustible railing requirement at >750 mm is specific to Sec. 1209 and applies to all exterior elements at that height. Candidates who confuse this with the BP 344 accessibility railing height (900 mm) or the standard guardrail height will select wrong values.",
       "code_citation": "PD 1096, Rule XII, Sec. 1209",
       "bloom_level": "analyze",
@@ -397,38 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.691790+00:00",
       "content_hash": "sha256:b637fa133583e675c0ebcf4c534c63ee0a01b619f83276711096591717d122ea"
     },
     {
       "question_id": "73f4fae0-7777-400b-96f7-b93f98b62712",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.e, at what cross-sectional area does a rooftop tower require its structural frame to extend all the way to the ground level?",
+      "text": "What material framework is required for an unenclosed tower extending more than 20.00 m above grade?",
       "options": [
         {
-          "id": "a",
-          "text": "When the tower cross-section exceeds 5.00 sq.m at any point above the roof"
+          "id": "b038-b216-10-a",
+          "text": "Iron, steel, or reinforced concrete"
         },
         {
-          "id": "b",
-          "text": "When the tower cross-section exceeds 10.00 sq.m at any point above the roof"
+          "id": "b038-b216-10-b",
+          "text": "Combustible wood framing"
         },
         {
-          "id": "c",
-          "text": "When the tower cross-section exceeds 25.00 sq.m at any point above the roof"
+          "id": "b038-b216-10-c",
+          "text": "Unreinforced adobe only"
         },
         {
-          "id": "d",
-          "text": "When the tower cross-section exceeds 50.00 sq.m at any point above the roof"
+          "id": "b038-b216-10-d",
+          "text": "Any material if less than one fourth frontage"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-10-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.e requires that if a tower's cross-sectional area exceeds 10.00 sq.m at any point above the roof, its supporting structural frame must extend down to the ground level — not just to the roof structure. Large towers generate substantial overturning moments from wind and seismic forces that require a continuous load path to the foundation.",
+      "rationale": "Correct answer: Iron, steel, or reinforced concrete. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The 10.00 sq.m cross-section threshold triggers the ground-frame requirement. For towers below this threshold, the roof structure may be sufficient to resist overturning. The provision is rooted in structural engineering: larger cross-sections catch more wind and generate more seismic mass.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.e",
       "bloom_level": "understand",
@@ -441,38 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.689221+00:00",
       "content_hash": "sha256:32e87167ece12e3c4371f7ca8f7568804facab6ad63dbaeff74789ad067c4877"
     },
     {
       "question_id": "79657e73-de76-402b-8a3a-64d105d4f208",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1208.b, what is the maximum span between supports for flat wired glass and corrugated wired glass in skylights?",
+      "text": "What height limit applies to a penthouse used as a tank or elevator enclosure in structures other than Type V?",
       "options": [
         {
-          "id": "a",
-          "text": "Flat wired glass: 500 mm maximum span; corrugated wired glass: 1.00 m maximum span"
+          "id": "b038-b216-11-a",
+          "text": "8.40 m above the roof"
         },
         {
-          "id": "b",
-          "text": "Flat wired glass: 625 mm maximum span; corrugated wired glass: 1.50 m maximum span"
+          "id": "b038-b216-11-b",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "c",
-          "text": "Flat wired glass: 750 mm maximum span; corrugated wired glass: 1.20 m maximum span"
+          "id": "b038-b216-11-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "d",
-          "text": "Flat wired glass: 1.00 m maximum span; corrugated wired glass: 2.00 m maximum span"
+          "id": "b038-b216-11-d",
+          "text": "1.50 m above the parapet"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-11-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1208.b sets maximum spans of 625 mm for flat wired glass and 1.50 m for corrugated wired glass between supports. The corrugation provides structural stiffness that allows the longer span — the 2.4:1 ratio (1,500 ÷ 625) reflects this structural advantage. Exceeding these spans requires additional intermediate supports.",
+      "rationale": "Correct answer: 8.40 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The paired span limits — 625 mm flat and 1.50 m corrugated — are both testable quantitative values. The corrugated glass's longer span is justified by its profile geometry. These values apply regardless of glass thickness.",
       "code_citation": "PD 1096, Rule XII, Sec. 1208.b",
       "bloom_level": "remember",
@@ -485,38 +485,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.670919+00:00",
       "content_hash": "sha256:487e3612e52854dbac009feba7f5fff4b0a214d70db5de87de19e5eaa81899e9"
     },
     {
       "question_id": "cb839d3e-a6a4-4d18-9471-49fbe8815519",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.e, what is the maximum base area of a rooftop tower or spire, and under what one condition may this limit be exceeded?",
+      "text": "What height limit applies to other roof projections under Section 1210?",
       "options": [
         {
-          "id": "a",
-          "text": "Maximum 150 sq.m base area; exception: skeleton towers used exclusively as neon sign supports, provided they do not exceed 10% of the building height"
+          "id": "b038-b216-12-a",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "b",
-          "text": "Maximum 150 sq.m base area; exception: towers that conform to the Type of Construction requirements for the entire building"
+          "id": "b038-b216-12-b",
+          "text": "8.40 m in every case"
         },
         {
-          "id": "c",
-          "text": "Maximum 300 sq.m base area; exception: decorative clock towers of any size on institutional buildings, provided they are not used for any other purpose"
+          "id": "b038-b216-12-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "d",
-          "text": "Maximum 150 sq.m base area; exception: towers located entirely within 1.50 m of the exterior wall face, and not exceeding 20% of the building's total height"
+          "id": "b038-b216-12-d",
+          "text": "No height limit"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-12-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.e limits tower base area to 150 sq.m. The sole exception is when the tower itself conforms to the Type of Construction requirements applicable to the entire building — in that case, the 150 sq.m limit does not apply. Skeleton sign towers are exempt from the tower provisions entirely under a separate provision, not an exception to the base area rule.",
+      "rationale": "Correct answer: 3.60 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "Both the 150 sq.m limit and its exception must be memorized together. The exception requires the tower to be fully code-compliant as a building structure — not just any tall element can invoke the exception. Skeleton sign towers have their own separate exemption under Sec. 1210.e and are not the relevant exception here.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.e",
       "bloom_level": "analyze",
@@ -529,38 +529,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.686657+00:00",
       "content_hash": "sha256:f2a003f72ef142c0dc30de8576e3fad5ea232d89ca8f583c4aec8b2c2db0ced0"
     },
     {
       "question_id": "a94a740f-abaa-4e0d-8149-403dfbd3fc29",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.a, what is the maximum height a penthouse used for an elevator machine room may rise above the roof level on a non-Type V building?",
+      "text": "What is the maximum aggregate area of all penthouses and other roof structures?",
       "options": [
         {
-          "id": "a",
-          "text": "3.60 m above the roof — the general limit for all penthouses including mechanical rooms"
+          "id": "b038-b216-13-a",
+          "text": "One third of the supporting roof area"
         },
         {
-          "id": "b",
-          "text": "5.00 m above the roof — an intermediate height for elevator overrun clearances"
+          "id": "b038-b216-13-b",
+          "text": "One half of the lot area"
         },
         {
-          "id": "c",
-          "text": "8.40 m above the roof — the specific limit for elevator machine rooms and water tank enclosures"
+          "id": "b038-b216-13-c",
+          "text": "150 sq m in every case"
         },
         {
-          "id": "d",
-          "text": "10.00 m above the roof — available when the penthouse is fully fire-rated as Type V construction"
+          "id": "b038-b216-13-d",
+          "text": "Ten percent of the building frontage"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b038-b216-13-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.a permits elevator machine rooms and water tank enclosures on non-Type V buildings to rise up to 8.40 m above the roof. This exception accommodates elevator overrun clearance and large tank capacities. All other penthouses are limited to 3.60 m. The 8.40 m limit applies only to these two specific uses.",
+      "rationale": "Correct answer: One third of the supporting roof area. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The two penthouse height limits — 3.60 m for general mechanical penthouses and 8.40 m for elevator/tank enclosures — are the most tested values from Sec. 1210. The critical exam trap is applying the 8.40 m to generator rooms or AHU rooms, which fall under the 3.60 m limit.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.a",
       "bloom_level": "remember",
@@ -573,38 +573,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.690533+00:00",
       "content_hash": "sha256:c4ad3fedb41deb4967b44b2189d5406a37631add8baf52823ac4bde2892c2596"
     },
     {
       "question_id": "54426974-eb49-42f1-a352-97e8fac982c6",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.b, what is the maximum aggregate area of all penthouses and roof structures relative to the supporting roof area?",
+      "text": "What use is allowed for a penthouse or bulkhead above the roof without treating it as an additional storey?",
       "options": [
         {
-          "id": "a",
-          "text": "Not more than one-quarter (1/4) of the supporting roof area"
+          "id": "b038-b216-14-a",
+          "text": "Shelter of mechanical equipment or vertical shaft openings"
         },
         {
-          "id": "b",
-          "text": "Not more than one-third (1/3) of the supporting roof area"
+          "id": "b038-b216-14-b",
+          "text": "Apartment rental use"
         },
         {
-          "id": "c",
-          "text": "Not more than one-half (1/2) of the supporting roof area"
+          "id": "b038-b216-14-c",
+          "text": "Commercial storage use"
         },
         {
-          "id": "d",
-          "text": "No area limit — only height limits apply to penthouses under Sec. 1210"
+          "id": "b038-b216-14-d",
+          "text": "Assembly occupancy"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-14-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.b limits the total aggregate footprint of all penthouses and roof structures to not more than 1/3 of the supporting roof area. This is a collective limit — all penthouses on the roof are summed and compared against the 1/3 threshold. The limit prevents penthouses from collectively functioning as an additional floor.",
+      "rationale": "Correct answer: Shelter of mechanical equipment or vertical shaft openings. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The 1/3 aggregate area limit is a collective ceiling on all penthouses together, not a per-structure limit. Three penthouses each occupying 10% individually (total 30%) would be compliant; one penthouse occupying 40% would not be.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.b",
       "bloom_level": "remember",
@@ -617,38 +617,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.680261+00:00",
       "content_hash": "sha256:9ca792695e89249e4a9a303ed08bc9a5d754de5a859c0963204e11f332ab6063"
     },
     {
       "question_id": "077ec83a-b7cc-4e40-b3a6-466c28aacbc2",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A generator room penthouse on a non-Type V building is proposed at 5.50 m above the roof deck. Under PD 1096 Rule XII, Sec. 1210.a, what is the compliance status?",
+      "text": "What material framework is required for an unenclosed tower extending more than 20.00 m above grade?",
       "options": [
         {
-          "id": "a",
-          "text": "Compliant — 5.50 m is well below the 8.40 m limit applicable to all mechanical penthouses, including those for HVAC systems"
+          "id": "b038-b216-15-a",
+          "text": "Iron, steel, or reinforced concrete"
         },
         {
-          "id": "b",
-          "text": "Non-compliant — a generator room falls under the 3.60 m general limit; 5.50 m exceeds this and triggers reclassification as an additional storey"
+          "id": "b038-b216-15-b",
+          "text": "Combustible wood framing"
         },
         {
-          "id": "c",
-          "text": "Compliant — generator rooms qualify for the 8.40 m limit as essential mechanical infrastructure, similar to elevator shafts"
+          "id": "b038-b216-15-c",
+          "text": "Unreinforced adobe only"
         },
         {
-          "id": "d",
-          "text": "Non-compliant — only penthouses at or below 4.50 m are permitted; 5.50 m exceeds all Code thresholds, including those for emergency access"
+          "id": "b038-b216-15-d",
+          "text": "Any material if less than one fourth frontage"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-15-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 8.40 m limit applies ONLY to elevator machine rooms and water tank enclosures. A generator room is 'other mechanical equipment' — it falls under the general 3.60 m limit. At 5.50 m, the penthouse exceeds 3.60 m, making it non-compliant and triggering its reclassification as an additional storey with cascading BHL, GFA, and egress consequences.",
+      "rationale": "Correct answer: Iron, steel, or reinforced concrete. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "This is the most common penthouse trap on the LEA. Candidates who remember only the 8.40 m figure — without memorizing that it is exclusive to elevator/tank use — will classify the generator room penthouse as compliant. The answer is non-compliant because the generator room is subject to the 3.60 m general limit.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.a",
       "bloom_level": "apply",
@@ -661,38 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.678936+00:00",
       "content_hash": "sha256:76395d62acba85196a0829f25d0e0a53360555b81055a58b8b0510a1da348d44"
     },
     {
       "question_id": "30f4b05e-5228-456e-95b8-6f3d775817ce",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1208, what minimum thickness is required for glass used in floors or sidewalks, and what supporting structure must it rest on?",
+      "text": "What height limit applies to a penthouse used as a tank or elevator enclosure in structures other than Type V?",
       "options": [
         {
-          "id": "a",
-          "text": "6.0 mm minimum thickness; may rest on any structural framing system approved by the Building Official"
+          "id": "b038-b216-16-a",
+          "text": "8.40 m above the roof"
         },
         {
-          "id": "b",
-          "text": "10.0 mm minimum thickness; must rest on metal or reinforced concrete framing"
+          "id": "b038-b216-16-b",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "c",
-          "text": "12.5 mm minimum thickness; must be supported by metal or reinforced concrete frames"
+          "id": "b038-b216-16-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "d",
-          "text": "20.0 mm minimum thickness; must be supported by steel frames only"
+          "id": "b038-b216-16-d",
+          "text": "1.50 m above the parapet"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b038-b216-16-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1208 requires glass used in floors or sidewalks to have a minimum thickness of 12.5 mm and to be supported by metal or reinforced concrete frames. Glass in floors bears significant live loads and foot traffic, requiring the combined protection of substantial thickness and a rigid non-combustible frame.",
+      "rationale": "Correct answer: 8.40 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The 12.5 mm minimum thickness and the metal-or-RC frame requirement are paired provisions. Both conditions must be satisfied — the correct thickness on a wood frame, or a thin sheet on a steel frame, are both non-compliant.",
       "code_citation": "PD 1096, Rule XII, Sec. 1208",
       "bloom_level": "remember",
@@ -705,38 +705,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:04.682112+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.672432+00:00",
       "content_hash": "sha256:108ea9f6dffa0705d468109e754cc6b2d04384150f29fcadaf3d4d393063cb68"
     },
     {
       "question_id": "a7290ea8-c7c5-42fc-83b5-a25f524181cc",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "A generator room penthouse on a non-Type V building is proposed at 5.50 m above the roof deck. Under PD 1096 Rule XII, Sec. 1210.a, what is the compliance status?",
+      "text": "What height limit applies to other roof projections under Section 1210?",
       "options": [
         {
-          "id": "a",
-          "text": "Compliant — 5.50 m is well below the 8.40 m limit applicable to all mechanical penthouses, which includes various types of equipment"
+          "id": "b038-b216-17-a",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "b",
-          "text": "Non-compliant — a generator room falls under the 3.60 m general limit; 5.50 m exceeds this and triggers reclassification as an additional storey"
+          "id": "b038-b216-17-b",
+          "text": "8.40 m in every case"
         },
         {
-          "id": "c",
-          "text": "Compliant — generator rooms qualify for the 8.40 m limit as essential mechanical infrastructure, which is a common misconception"
+          "id": "b038-b216-17-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "d",
-          "text": "Non-compliant — only penthouses at or below 4.50 m are permitted; 5.50 m exceeds all Code thresholds, including those for mechanical spaces"
+          "id": "b038-b216-17-d",
+          "text": "No height limit"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-17-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The 8.40 m limit applies ONLY to elevator machine rooms and water tank enclosures. A generator room is 'other mechanical equipment' — it falls under the general 3.60 m limit. At 5.50 m, the penthouse exceeds 3.60 m, making it non-compliant and triggering its reclassification as an additional storey with cascading BHL, GFA, and egress consequences.",
+      "rationale": "Correct answer: 3.60 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "This is the most common penthouse trap on the LEA. Candidates who remember only the 8.40 m figure — without memorizing that it is exclusive to elevator/tank use — will classify the generator room penthouse as compliant. The answer is non-compliant because the generator room is subject to the 3.60 m general limit.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.a",
       "bloom_level": "apply",
@@ -749,38 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.696756+00:00",
       "content_hash": "sha256:9d292cca61451e44cc50c1776a6fe9eaa7cfe203e603ee3a380fc514b3a29e75"
     },
     {
       "question_id": "828b239b-665b-4472-b737-a8e478c7d6c8",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.e, what is the maximum base area of a rooftop tower or spire, and under what one condition may this limit be exceeded?",
+      "text": "What is the maximum aggregate area of all penthouses and other roof structures?",
       "options": [
         {
-          "id": "a",
-          "text": "Maximum 150 sq.m base area; exception: skeleton towers used exclusively as neon sign supports, which are not subject to the same restrictions"
+          "id": "b038-b216-18-a",
+          "text": "One third of the supporting roof area"
         },
         {
-          "id": "b",
-          "text": "Maximum 150 sq.m base area; exception: towers that conform to the Type of Construction requirements for the entire building"
+          "id": "b038-b216-18-b",
+          "text": "One half of the lot area"
         },
         {
-          "id": "c",
-          "text": "Maximum 300 sq.m base area; exception: decorative clock towers of any size on institutional buildings, which is a common misconception"
+          "id": "b038-b216-18-c",
+          "text": "150 sq m in every case"
         },
         {
-          "id": "d",
-          "text": "Maximum 150 sq.m base area; exception: towers located entirely within 1.50 m of the exterior wall face, which is not a valid exception"
+          "id": "b038-b216-18-d",
+          "text": "Ten percent of the building frontage"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-18-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.e limits tower base area to 150 sq.m. The sole exception is when the tower itself conforms to the Type of Construction requirements applicable to the entire building — in that case, the 150 sq.m limit does not apply. Skeleton sign towers are exempt from the tower provisions entirely under a separate provision, not an exception to the base area rule.",
+      "rationale": "Correct answer: One third of the supporting roof area. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "Both the 150 sq.m limit and its exception must be memorized together. The exception requires the tower to be fully code-compliant as a building structure — not just any tall element can invoke the exception. Skeleton sign towers have their own separate exemption under Sec. 1210.e and are not the relevant exception here.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.e",
       "bloom_level": "analyze",
@@ -793,38 +793,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.694276+00:00",
       "content_hash": "sha256:aa5403e2a24a9a68411b984479a7143ac84d9001587cc742f0d952940e402313"
     },
     {
       "question_id": "d458fd62-44e2-4fc2-a4b1-b7d847a18dfd",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.d, what fire-resistance rating is required for penthouse walls when the penthouse is located less than 1.50 m from a property line, and what material must those walls be?",
+      "text": "What use is allowed for a penthouse or bulkhead above the roof without treating it as an additional storey?",
       "options": [
         {
-          "id": "a",
-          "text": "2-hour fire-resistance rating; walls may be any material provided they achieve the 2-hour rating"
+          "id": "b038-b216-19-a",
+          "text": "Shelter of mechanical equipment or vertical shaft openings"
         },
         {
-          "id": "b",
-          "text": "1-hour fire-resistance rating; walls must be of incombustible construction on Type III and IV buildings"
+          "id": "b038-b216-19-b",
+          "text": "Apartment rental use"
         },
         {
-          "id": "c",
-          "text": "1-hour fire-resistance rating; only the wall facing the property line requires the rating"
+          "id": "b038-b216-19-c",
+          "text": "Commercial storage use"
         },
         {
-          "id": "d",
-          "text": "No fire-resistance rating is required for penthouses; they are exempt as roof structures"
+          "id": "b038-b216-19-d",
+          "text": "Assembly occupancy"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-19-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.d requires that on Type III and IV buildings, penthouse exterior walls located less than 1.50 m from a property line must be of incombustible construction and carry a minimum 1-hour fire-resistance rating. This proximity rule protects against fire spread to adjacent properties through the penthouse wall, which sits above the main building's fire-rated perimeter.",
+      "rationale": "Correct answer: Shelter of mechanical equipment or vertical shaft openings. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The Sec. 1210.d provision is specific to building types III and IV combined with a proximity trigger (<1.50 m from property line). Both conditions must be present for the 1-hour incombustible wall requirement to apply. This is a high-difficulty question because it requires integrating Construction Type classification, property line distance, and fire-resistance requirements simultaneously.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.d",
       "bloom_level": "evaluate",
@@ -837,38 +837,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.695513+00:00",
       "content_hash": "sha256:7af7f07016c1fb3a3e0689841fc5e0e73e693952a65e7b2399954af33cfd27af"
     },
     {
       "question_id": "925d891a-9d2b-48b6-afc3-652b3d758a58",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.b, what is the maximum aggregate area of all penthouses and roof structures relative to the supporting roof area?",
+      "text": "What material framework is required for an unenclosed tower extending more than 20.00 m above grade?",
       "options": [
         {
-          "id": "a",
-          "text": "Not more than one-quarter (1/4) of the supporting roof area"
+          "id": "b038-b216-20-a",
+          "text": "Iron, steel, or reinforced concrete"
         },
         {
-          "id": "b",
-          "text": "Not more than one-third (1/3) of the supporting roof area"
+          "id": "b038-b216-20-b",
+          "text": "Combustible wood framing"
         },
         {
-          "id": "c",
-          "text": "Not more than one-half (1/2) of the supporting roof area"
+          "id": "b038-b216-20-c",
+          "text": "Unreinforced adobe only"
         },
         {
-          "id": "d",
-          "text": "No area limit — only height limits apply to penthouses under Sec. 1210"
+          "id": "b038-b216-20-d",
+          "text": "Any material if less than one fourth frontage"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-20-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.b limits the total aggregate footprint of all penthouses and roof structures to not more than 1/3 of the supporting roof area. This is a collective limit — all penthouses on the roof are summed and compared against the 1/3 threshold. The limit prevents penthouses from collectively functioning as an additional floor.",
+      "rationale": "Correct answer: Iron, steel, or reinforced concrete. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The 1/3 aggregate area limit is a collective ceiling on all penthouses together, not a per-structure limit. Three penthouses each occupying 10% individually (total 30%) would be compliant; one penthouse occupying 40% would not be.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.b",
       "bloom_level": "remember",
@@ -881,38 +881,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.682854+00:00",
       "content_hash": "sha256:7e58c82f84ec35510f17b897ce57fd36f2a08ffecca89007af97486e7db56fc0"
     },
     {
       "question_id": "f94a00af-8673-4ed6-8248-97b9f7d891a6",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.c, what is the legal consequence if a penthouse is used for habitable, residential, or commercial purposes?",
+      "text": "What height limit applies to a penthouse used as a tank or elevator enclosure in structures other than Type V?",
       "options": [
         {
-          "id": "a",
-          "text": "A variance fine is imposed but the penthouse retains its exempt classification for BHL purposes, provided it meets all other zoning requirements"
+          "id": "b038-b216-21-a",
+          "text": "8.40 m above the roof"
         },
         {
-          "id": "b",
-          "text": "The penthouse is reclassified as an additional storey, triggering BHL recalculation, GFA inclusion, and additional egress requirements"
+          "id": "b038-b216-21-b",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "c",
-          "text": "The Building Official may order the prohibited use to cease but no height or GFA recalculation is required unless other violations are found"
+          "id": "b038-b216-21-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "d",
-          "text": "The penthouse is exempt from reclassification if its floor area does not exceed 1/3 of the roof area, and it complies with all other building regulations"
+          "id": "b038-b216-21-d",
+          "text": "1.50 m above the parapet"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-21-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.c restricts penthouses to sheltering mechanical equipment or enclosing vertical shaft openings. Any other use — habitable, residential, or commercial — causes the penthouse to be legally reclassified as an additional storey. This triggers cascading effects: BHL recalculation (potentially violating zoning height limits), GFA addition (potentially violating FAR), fire-rating upgrades, and additional egress requirements.",
+      "rationale": "Correct answer: 8.40 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "Sec. 1210.c is a use restriction with an automatic reclassification consequence — not a fine. Penthouses that are code-compliant in height and area but are used for prohibited purposes lose their exemption from BHL and GFA calculations entirely.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.c",
       "bloom_level": "understand",
@@ -925,38 +925,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.669283+00:00",
       "content_hash": "sha256:6cfee2eb86e5faae120a0465161c9b5ac442427f7b8ac5eb00832015033efb7e"
     },
     {
       "question_id": "a3871961-2649-42c8-a093-c1cf279f2e3b",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1209, at what minimum height above grade do exterior balconies, landings, and porches require railings of incombustible material?",
+      "text": "What height limit applies to other roof projections under Section 1210?",
       "options": [
         {
-          "id": "a",
-          "text": "More than 450 mm above grade — matching the residential step height standard"
+          "id": "b038-b216-22-a",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "b",
-          "text": "More than 600 mm above grade — consistent with accessible platform edge requirements"
+          "id": "b038-b216-22-b",
+          "text": "8.40 m in every case"
         },
         {
-          "id": "c",
-          "text": "More than 750 mm above grade — the Code threshold triggering incombustible railing"
+          "id": "b038-b216-22-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "d",
-          "text": "More than 1,000 mm above grade — only applicable to commercial and institutional occupancies"
+          "id": "b038-b216-22-d",
+          "text": "No height limit"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b038-b216-22-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1209 requires railings of incombustible materials on exterior balconies, landings, and porches that are more than 750 mm above grade. Below 750 mm, incombustible material is not mandated — any material permitted by the Type of Construction may be used. The 750 mm threshold is a fall-risk boundary.",
+      "rationale": "Correct answer: 3.60 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The incombustible railing requirement at >750 mm is specific to Sec. 1209 and applies to all exterior elements at that height. Candidates who confuse this with the BP 344 accessibility railing height (900 mm) or the standard guardrail height will select wrong values.",
       "code_citation": "PD 1096, Rule XII, Sec. 1209",
       "bloom_level": "analyze",
@@ -969,38 +969,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.676334+00:00",
       "content_hash": "sha256:bfa22f79445898234a18522f5b64cc73c4176c29ba4e575d1b53229d1196f948"
     },
     {
       "question_id": "2c112075-a0ae-4db0-8b0e-197efecb8a15",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.a, what is the maximum height a penthouse used for an elevator machine room may rise above the roof level on a non-Type V building?",
+      "text": "What is the maximum aggregate area of all penthouses and other roof structures?",
       "options": [
         {
-          "id": "a",
-          "text": "3.60 m above the roof — the general limit for all penthouses including mechanical rooms"
+          "id": "b038-b216-23-a",
+          "text": "One third of the supporting roof area"
         },
         {
-          "id": "b",
-          "text": "5.00 m above the roof — an intermediate height for elevator overrun clearances"
+          "id": "b038-b216-23-b",
+          "text": "One half of the lot area"
         },
         {
-          "id": "c",
-          "text": "8.40 m above the roof — the specific limit for elevator machine rooms and water tank enclosures"
+          "id": "b038-b216-23-c",
+          "text": "150 sq m in every case"
         },
         {
-          "id": "d",
-          "text": "10.00 m above the roof — available when the penthouse is fully fire-rated as Type V construction"
+          "id": "b038-b216-23-d",
+          "text": "Ten percent of the building frontage"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b038-b216-23-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.a permits elevator machine rooms and water tank enclosures on non-Type V buildings to rise up to 8.40 m above the roof. This exception accommodates elevator overrun clearance and large tank capacities. All other penthouses are limited to 3.60 m. The 8.40 m limit applies only to these two specific uses.",
+      "rationale": "Correct answer: One third of the supporting roof area. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The two penthouse height limits — 3.60 m for general mechanical penthouses and 8.40 m for elevator/tank enclosures — are the most tested values from Sec. 1210. The critical exam trap is applying the 8.40 m to generator rooms or AHU rooms, which fall under the 3.60 m limit.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.a",
       "bloom_level": "remember",
@@ -1013,38 +1013,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.697993+00:00",
       "content_hash": "sha256:32f0049ad0d4320179c8bc775a6d62b6db9ae8ff808fa4b7d18abdc1f87f2786"
     },
     {
       "question_id": "81d49764-7cb9-449f-929f-e302d94df34f",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1208.b, what is the maximum span between supports for flat wired glass and corrugated wired glass in skylights?",
+      "text": "What use is allowed for a penthouse or bulkhead above the roof without treating it as an additional storey?",
       "options": [
         {
-          "id": "a",
-          "text": "Flat wired glass: 500 mm maximum span; corrugated wired glass: 1.00 m maximum span"
+          "id": "b038-b216-24-a",
+          "text": "Shelter of mechanical equipment or vertical shaft openings"
         },
         {
-          "id": "b",
-          "text": "Flat wired glass: 625 mm maximum span; corrugated wired glass: 1.50 m maximum span"
+          "id": "b038-b216-24-b",
+          "text": "Apartment rental use"
         },
         {
-          "id": "c",
-          "text": "Flat wired glass: 750 mm maximum span; corrugated wired glass: 1.20 m maximum span"
+          "id": "b038-b216-24-c",
+          "text": "Commercial storage use"
         },
         {
-          "id": "d",
-          "text": "Flat wired glass: 1.00 m maximum span; corrugated wired glass: 2.00 m maximum span"
+          "id": "b038-b216-24-d",
+          "text": "Assembly occupancy"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-24-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1208.b sets maximum spans of 625 mm for flat wired glass and 1.50 m for corrugated wired glass between supports. The corrugation provides structural stiffness that allows the longer span — the 2.4:1 ratio (1,500 ÷ 625) reflects this structural advantage. Exceeding these spans requires additional intermediate supports.",
+      "rationale": "Correct answer: Shelter of mechanical equipment or vertical shaft openings. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The paired span limits — 625 mm flat and 1.50 m corrugated — are both testable quantitative values. The corrugated glass's longer span is justified by its profile geometry. These values apply regardless of glass thickness.",
       "code_citation": "PD 1096, Rule XII, Sec. 1208.b",
       "bloom_level": "remember",
@@ -1057,38 +1057,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.675040+00:00",
       "content_hash": "sha256:42a28891efc99cd7a15b56a768033e77160fac6410281ef3486852c0697f9903"
     },
     {
       "question_id": "a6dea476-1364-4917-9ded-a5f821cf8031",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1208, what minimum thickness is required for glass used in floors or sidewalks, and what supporting structure must it rest on?",
+      "text": "What material framework is required for an unenclosed tower extending more than 20.00 m above grade?",
       "options": [
         {
-          "id": "a",
-          "text": "6.0 mm minimum thickness; may rest on any structural framing system approved by the Building Official"
+          "id": "b038-b216-25-a",
+          "text": "Iron, steel, or reinforced concrete"
         },
         {
-          "id": "b",
-          "text": "10.0 mm minimum thickness; must rest on metal or reinforced concrete framing"
+          "id": "b038-b216-25-b",
+          "text": "Combustible wood framing"
         },
         {
-          "id": "c",
-          "text": "12.5 mm minimum thickness; must be supported by metal or reinforced concrete frames"
+          "id": "b038-b216-25-c",
+          "text": "Unreinforced adobe only"
         },
         {
-          "id": "d",
-          "text": "20.0 mm minimum thickness; must be supported by steel frames only"
+          "id": "b038-b216-25-d",
+          "text": "Any material if less than one fourth frontage"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b038-b216-25-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1208 requires glass used in floors or sidewalks to have a minimum thickness of 12.5 mm and to be supported by metal or reinforced concrete frames. Glass in floors bears significant live loads and foot traffic, requiring the combined protection of substantial thickness and a rigid non-combustible frame.",
+      "rationale": "Correct answer: Iron, steel, or reinforced concrete. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The 12.5 mm minimum thickness and the metal-or-RC frame requirement are paired provisions. Both conditions must be satisfied — the correct thickness on a wood frame, or a thin sheet on a steel frame, are both non-compliant.",
       "code_citation": "PD 1096, Rule XII, Sec. 1208",
       "bloom_level": "remember",
@@ -1101,38 +1101,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.665470+00:00",
       "content_hash": "sha256:3b5005ec1277c9cd1bf88792e3600affc0b1ae506aec7fb59678d95620f6d0e6"
     },
     {
       "question_id": "d0085658-9987-440f-b657-8f0dfe171c4a",
       "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under PD 1096 Rule XII, Sec. 1210.e, at what cross-sectional area does a rooftop tower require its structural frame to extend all the way to the ground level?",
+      "text": "What height limit applies to a penthouse used as a tank or elevator enclosure in structures other than Type V?",
       "options": [
         {
-          "id": "a",
-          "text": "When the tower cross-section exceeds 5.00 sq.m at any point above the roof"
+          "id": "b038-b216-26-a",
+          "text": "8.40 m above the roof"
         },
         {
-          "id": "b",
-          "text": "When the tower cross-section exceeds 10.00 sq.m at any point above the roof"
+          "id": "b038-b216-26-b",
+          "text": "3.60 m above the roof"
         },
         {
-          "id": "c",
-          "text": "When the tower cross-section exceeds 25.00 sq.m at any point above the roof"
+          "id": "b038-b216-26-c",
+          "text": "20.00 m above grade"
         },
         {
-          "id": "d",
-          "text": "When the tower cross-section exceeds 50.00 sq.m at any point above the roof"
+          "id": "b038-b216-26-d",
+          "text": "1.50 m above the parapet"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b038-b216-26-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Sec. 1210.e requires that if a tower's cross-sectional area exceeds 10.00 sq.m at any point above the roof, its supporting structural frame must extend down to the ground level — not just to the roof structure. Large towers generate substantial overturning moments from wind and seismic forces that require a continuous load path to the foundation.",
+      "rationale": "Correct answer: 8.40 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
       "explanation": "The 10.00 sq.m cross-section threshold triggers the ground-frame requirement. For towers below this threshold, the roof structure may be sufficient to resist overturning. The provision is rooted in structural engineering: larger cross-sections catch more wind and generate more seismic mass.",
       "code_citation": "PD 1096, Rule XII, Sec. 1210.e",
       "bloom_level": "understand",
@@ -1145,7 +1145,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:54.431991+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.685389+00:00",
       "content_hash": "sha256:6b602b8a3525c5df2b08764823f90ada42a90aebace3f76fedde036be0c81528"
     }
   ]

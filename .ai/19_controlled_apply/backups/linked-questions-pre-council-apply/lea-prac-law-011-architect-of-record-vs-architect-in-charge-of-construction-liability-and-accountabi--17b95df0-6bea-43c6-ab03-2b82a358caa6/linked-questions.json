@@ -1,0 +1,508 @@
+{
+  "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4eae17c2b95a1c527249fd6e22081ec98dca82a8fc6a80de81adba1bb9ce3327",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "7f2143ba-a7b7-4397-9c34-82ae0108bb9c",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "What is the nature of the Architect-in-Charge of Construction's liability for construction defects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Individual liability, separate from the contractor"
+        },
+        {
+          "id": "b",
+          "text": "Solidary (joint and several) liability with the contractor"
+        },
+        {
+          "id": "c",
+          "text": "Limited liability, capped at 50% of the contractor's share"
+        },
+        {
+          "id": "d",
+          "text": "No liability if the architect inspected the work periodically"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overstates independence; Article 1723 imposes joint liability, not separate individual liability.",
+        "c": "Invents proportional caps that don't exist; solidary liability is full and joint, not capped at 50%.",
+        "d": "Creates a false safe harbor; periodic inspections do not eliminate liability if defects are discoverable with reasonable diligence.",
+        "correct": "Civil Code Art. 1723 and RA 9266 IRR distinguish liabilities: AoR for design (plans), AiCC for construction supervision ensuring compliance.",
+        "takeaway": "AiCC construction defect liability: solidary (joint and several) with the contractor."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:99a3cf01f1d3ddc15cd5a4ec62a5a54f2fa2124a23ab8fd4636fd71f22aa24aa"
+    },
+    {
+      "question_id": "2cba8465-a4de-41ac-bd26-8451c590b071",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "Can the Architect-of-Record escape liability for design defects by claiming the contractor deviated from the plans?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the AoR has no liability if deviations occurred, provided they were documented and approved"
+        },
+        {
+          "id": "b",
+          "text": "No, the AoR is liable for design defects regardless of contractor performance"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only if the deviation was documented in writing and acknowledged by all parties involved"
+        },
+        {
+          "id": "d",
+          "text": "No, but liability is reduced by the percentage of deviation, reflecting shared responsibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely permits escape from strict liability; deviations do not absolve the AoR of liability for design flaws.",
+        "c": "Conditions liability on documentation; written deviation evidence may shift responsibility to the contractor, but does not eliminate AoR liability for design defects.",
+        "d": "Wrongly suggests proportional reduction; strict liability is fixed, not apportionable by degree of deviation.",
+        "correct": "Article 1723 establishes strict liability for design defects, meaning the AoR cannot escape liability by blaming contractor deviations. Design defects attach to the architect regardless of execution issues.",
+        "takeaway": "AoR design defect liability: strict; cannot be escaped by claiming contractor deviation; design failures are AoR's responsibility."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59cbc0c5653270a38e632323c87ebb48f411b9dfc1cbd551e3ca7f2c988bedbd"
+    },
+    {
+      "question_id": "fd64ffbe-960f-4ea3-9bb2-5a4feec61d14",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "An Architect-in-Charge of Construction failed to maintain adequate site presence and did not detect that structural steel had been substituted with inferior grade. The building experiences collapse. Is the AiCC liable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because the AiCC was not present at every moment of construction, which is not a requirement for liability"
+        },
+        {
+          "id": "b",
+          "text": "Yes, because a reasonably diligent architect should have detected the substitution during inspections"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if the AiCC was specifically contracted to inspect materials, which is often stipulated in contracts"
+        },
+        {
+          "id": "d",
+          "text": "No, if the contractor misrepresented the materials in the delivery documentation, which can complicate liability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misapplies the standard; continuous presence is not required; reasonable site inspections must catch detectable defects.",
+        "c": "Wrongly conditions liability on contract language; the AiCC's duty to detect defects is imposed by law, not negotiable by contract.",
+        "d": "Permits false documentation to escape liability; the AiCC's duty is to verify materials on-site, not blindly trust contractor documentation.",
+        "correct": "The AiCC's liability is measured against a standard of reasonable diligence: a competent architect exercising ordinary professional care should have detected the material substitution. Failure to maintain adequate site presence and perform inspections constitutes negligence.",
+        "takeaway": "AiCC supervision standard: reasonably diligent architect should detect material defects; inadequate site presence = liability for construction defects."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:414cc49a18a28b2d2ad975652361f140232e7b2ab1839e4019859478792a45d4"
+    },
+    {
+      "question_id": "b216f737-beb5-4e9f-95b0-7023c57dbfaf",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "Under Civil Code Article 1723, for what type of defects is the Architect-of-Record strictly liable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only those defects caused by contractor negligence"
+        },
+        {
+          "id": "b",
+          "text": "Defects in the plans, specifications, and design"
+        },
+        {
+          "id": "c",
+          "text": "All structural failures regardless of cause"
+        },
+        {
+          "id": "d",
+          "text": "Only defects discovered within the first 5 years"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Inverts responsibility; the AoR is liable for design defects regardless of contractor performance; contractor negligence is separate.",
+        "c": "Overstates scope; the AoR is liable only for design-based failures, not all structural failures caused by other factors.",
+        "d": "Adds a time limit that doesn't exist in Article 1723; the AoR is liable for design defects for the full 15-year period, not just 5 years.",
+        "correct": "Article 1723 imposes strict liability on the architect who drew the plans for defects in those plans and specifications, independent of contractor performance or timing of discovery.",
+        "takeaway": "AoR strict liability: defects in plans and specifications (design defects), regardless of contractor performance."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:afd0da1b94d5cc446a70cfaa97c6be75ad14e942710008f5a23e6699f5eb72c0"
+    },
+    {
+      "question_id": "216f9a84-8df2-4183-86e4-58279e229b60",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "How does the distinction between AoR and AiCC liability inform an architect's risk management strategy regarding professional liability insurance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A single liability policy is sufficient to cover both roles, simplifying the insurance process"
+        },
+        {
+          "id": "b",
+          "text": "Separate policies for design and construction supervision phases may be advisable, with different limits reflecting different risk profiles"
+        },
+        {
+          "id": "c",
+          "text": "Professional liability insurance is unnecessary if the architect limits site visits, reducing exposure to risk"
+        },
+        {
+          "id": "d",
+          "text": "Liability insurance covering only design phase is sufficient because construction liability rests solely with the contractor, minimizing the architect's responsibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Oversimplifies coverage; design and construction phases have different risk profiles; separate policies allow appropriate limits for each.",
+        "c": "Falsely permits bare-bones coverage; limiting site visits does not eliminate liability; supervisory presence is required, and insurance is essential.",
+        "d": "Wrongly absolves the AiCC; Article 1723 imposes solidary liability on the supervising architect; construction liability rests with both architect and contractor.",
+        "correct": "Design defects (AoR) and construction defects (AiCC) present different risk exposures and claim profiles. Liability distinction informs risk assessment; architects should ensure professional liability insurance covers both design and supervision exposures as per role assumptions.",
+        "takeaway": "Risk management: separate professional liability policies for design (AoR) and construction supervision (AiCC) phases may be advisable for risk differentiation."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:acd160468193add0bff96e5967af29b0ce9b74b439db1ab4bb3c2255abba8a16"
+    },
+    {
+      "question_id": "016fafea-7a8c-4720-b73a-aca8fd1488c0",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "How do the liability mechanisms of the AoR and AiCC roles protect building owners and the public?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By allowing architects to share liability equally with contractors, ensuring that all parties are accountable for their respective contributions"
+        },
+        {
+          "id": "b",
+          "text": "By clearly assigning accountability for design quality to the AoR and construction execution to the AiCC"
+        },
+        {
+          "id": "c",
+          "text": "By limiting architect liability to the amount of fees charged, which caps potential financial exposure and encourages careful planning"
+        },
+        {
+          "id": "d",
+          "text": "By requiring contractors alone to bear all construction risk, which shifts responsibility away from designers and onto builders"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misstates protection method; equal sharing reduces accountability; the structure assigns specific responsibility, not equal liability.",
+        "c": "Invents a false cap; liability is not limited to fees; professional liability reflects the potential damages from defects, not fee amounts.",
+        "d": "Abdicates professional responsibility; architects bear solidary liability with contractors for construction defects; responsibility is shared, not sole.",
+        "correct": "The AoR/AiCC distinction creates clear accountability: AoR is liable for design quality; AiCC is liable (solidarily with contractor) for construction execution. This dual accountability ensures professionals at each phase maintain high standards to protect public safety.",
+        "takeaway": "Liability protection mechanism: AoR accountable for design; AiCC accountable for construction execution; dual accountability protects public."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f01ed6b9b2dc8ee096b94fe2663bf33d7123987d1b4e13e86671b7c5f73a0d19"
+    },
+    {
+      "question_id": "96b17f48-0186-4a9a-8cf3-e2fa79120826",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "Can one architect serve as both Architect-of-Record and Architect-in-Charge of Construction on the same project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the law requires two different architects for these roles to ensure separation of responsibilities"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if the architect is willing to assume both design and construction supervision liability"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only for residential projects valued below 5 million pesos, as specified by local regulations"
+        },
+        {
+          "id": "d",
+          "text": "No, because the roles require different professional skills and expertise, which cannot be combined"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly forbids combination; RA 9266 does not require two separate architects; it permits flexibility.",
+        "c": "Invents project-type and value limits not in RA 9266; any architect may hold both roles regardless of project type or value.",
+        "d": "While roles require different skills, the law permits one skilled architect to manage both phases; prohibition is not based on skill requirements.",
+        "correct": "RA 9266 permits a single architect to hold both roles. The law does not prohibit this combination; the architect assumes the full liability exposure of both the AoR (design defects) and AiCC (construction defects) roles.",
+        "takeaway": "Dual roles permitted: single architect may serve as both AoR and AiCC if willing to assume both design and construction liability."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9e1722a5a4e7b3ac2120c4799100642b332c9f089e3af52671f06603e23dd353"
+    },
+    {
+      "question_id": "fc4a4042-8ab7-465a-a6f5-a224a45e0e88",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "Architect A prepared all design documents for a shopping mall and selead the plans (serving as AoR). Architect B supervised construction (serving as AiCC). During construction, the contractor used inferior concrete that was not detected during inspections. One year after completion, structural cracking appears. Who bears liability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only Architect B and the contractor, solidarily, as they were responsible for construction oversight and material quality"
+        },
+        {
+          "id": "b",
+          "text": "Only Architect A for approving inadequate specifications, although the issue arose from construction practices"
+        },
+        {
+          "id": "c",
+          "text": "Both Architect B and the contractor, solidarily (Architect A has no liability for this construction defect)"
+        },
+        {
+          "id": "d",
+          "text": "All three parties equally, which does not accurately reflect the roles and responsibilities during construction"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly requires both architects; only the supervising architect (B) shares liability for construction defects.",
+        "b": "Misattributes liability to AoR; concrete quality is a construction issue, not a design specification failure; the AoR is not liable.",
+        "d": "Wrongly distributes liability equally; responsibility depends on the defect type—design or construction—not equal shares.",
+        "correct": "The cracking is caused by inferior concrete (construction defect), not design defect. Architect B (AiCC) bears solidary liability with the contractor for failure to detect the inferior material. Both AoR (if specs inadequate) and AiCC/contractor (solidary for execution) may bear liability depending on spec details; primarily AiCC/contractor for undetected material substitution.",
+        "takeaway": "Role-specific liability: AoR liable for design defects; AiCC liable for construction defects in cooperation with contractor."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:62158b79b9dd6e45285c063fce4496c32505ac148bf7a531a57c03bf65b0f456"
+    },
+    {
+      "question_id": "56120d58-cee2-4daf-9cdc-5d91ff8a9233",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "What is the primary responsibility of the Architect-in-Charge of Construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prepare all architectural drawings for the client, ensuring they meet the design intent and regulatory requirements"
+        },
+        {
+          "id": "b",
+          "text": "Approve the contractor's budget and timeline, while coordinating with stakeholders to align project goals"
+        },
+        {
+          "id": "c",
+          "text": "Supervise construction and ensure contractor compliance with plans and specifications"
+        },
+        {
+          "id": "d",
+          "text": "Design structural systems and building systems, integrating them into the overall architectural concept"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Attributes design responsibilities to the AiCC; drawing preparation is the AoR's responsibility, not the AiCC's.",
+        "b": "Assigns budget/timeline control to the AiCC; these are owner and contractor responsibilities, not the supervising architect's authority.",
+        "d": "Conflates design with construction supervision; the AiCC does not design; the AiCC verifies that the AoR's design is executed correctly.",
+        "correct": "RA 9266 Section 3(b) defines the AiCC as the licensed architect directly and professionally responsible and liable for construction supervision, ensuring contractor work conforms to plans, specifications, and contract documents.",
+        "takeaway": "Architect-in-Charge of Construction: supervises construction and ensures contractor compliance with plans and specifications."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:416ba154fd25a78362e7dadd353c8bb5456f08e89d6441a3d401fbb47efe0e37"
+    },
+    {
+      "question_id": "487458a0-704b-46b4-9de1-1cd3bc85fbf6",
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "topic_id": "11962a82-45d5-42d9-a797-e8e7bb47450a",
+      "text": "Who is the Architect-of-Record under RA 9266 Section 3(a)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect who performs site inspections during construction, ensuring compliance with design intent and quality standards."
+        },
+        {
+          "id": "b",
+          "text": "The architect responsible for total design and liable for plans, specifications, and contract documents"
+        },
+        {
+          "id": "c",
+          "text": "The architect who approves the contractor's bid, ensuring it aligns with project budget and scope."
+        },
+        {
+          "id": "d",
+          "text": "The architect who handles client communications after construction, addressing any post-occupancy issues."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses AoR with construction supervision; site inspections are the AiCC's responsibility, not the AoR's primary function.",
+        "c": "Misplaces authority; the AoR prepares design documents, not contractor bids; bid approval is an owner/client function.",
+        "d": "Attributes post-project communication to the AoR role; the AoR's liability period extends 15 years, but client communication is not the defining responsibility.",
+        "correct": "RA 9266 Section 3(a) defines the Architect-of-Record as the licensed architect directly and professionally responsible for the total design of the project and who assumes civil liability for the plans, specifications, and contract documents she has signed and sealed.",
+        "takeaway": "Architect-of-Record: responsible for total design; assumes civil liability for plans and sealed documents."
+      },
+      "explanation": null,
+      "code_citation": "Civil Code Art. 1723",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-011-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:065695e1f41b672c016eb162d1388e81e637635a2d33e2387f4981a4a877f1d7"
+    }
+  ]
+}

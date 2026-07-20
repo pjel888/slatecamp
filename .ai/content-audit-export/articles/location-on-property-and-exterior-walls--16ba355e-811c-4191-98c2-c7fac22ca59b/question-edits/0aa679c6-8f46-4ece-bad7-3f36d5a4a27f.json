@@ -1,11 +1,45 @@
 {
   "question_id": "0aa679c6-8f46-4ece-bad7-3f36d5a4a27f",
   "baseline_hash": "sha256:cabb832de83d705a955bfca5391f82879177bb047c40c6d8470f02b20e5ffb4b",
-  "reason": "Batch 008 local source audit aligned linked question 0aa679c6-8f46-4ece-bad7-3f36d5a4a27f with the repaired Location on Property and Exterior Walls article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-008",
-  "approved_at": "2026-05-10T18:13:43+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited 'R-1/R-2/R-3/R-4/R-5 lot abutment rules' that do not appear in PD 1096 Sec. 704 (PD 1096 uses Group A-B-C-D occupancy classifications, not US-style R-1 to R-5 zoning). Replaced with a Sec. 704 firewall/zero-lot-line wall question that the article directly supports.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "source_audit_support": {
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "chunk_id": "source-pack-pd-1096-irr-chunk-0002",
+        "section_locator": "Rule VII / Section 704.4 Building Footprint / Firewall Construction"
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704.4"
+  },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 704; Rule VI Sections 601-604",
-    "explanation": "Batch 008 local source audit aligned this linked question context to PD 1096 Rule VII Section 704 on public-space access, property-line measurement, eaves, exterior wall opening protection, projection limits, and multiple buildings on one property. No answer-key field is changed by this local edit draft."
+    "text": "Under PD 1096 Rule VII Section 704, when a building is constructed with its exterior wall directly on a side or rear property line (zero setback on that side), what opening and wall requirement applies to that wall?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The wall must be constructed as a firewall with no unprotected openings permitted at zero setback from the property line"
+      },
+      {
+        "id": "b",
+        "text": "Openings are permitted up to 50 percent of the wall area as long as fire-rated glazing is used"
+      },
+      {
+        "id": "c",
+        "text": "Openings are permitted up to 25 percent of the wall area, with no special fire-rating required"
+      },
+      {
+        "id": "d",
+        "text": "Openings are unrestricted because zero-setback walls are governed by local zoning, not PD 1096"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "A wall built on the property line presents maximum fire-spread risk to the adjacent property. Section 704 therefore requires the wall to be a firewall, and no unprotected openings are permitted in an exterior wall located at zero setback from the property line.",
+    "explanation": "This is the strictest end of the Section 704 opening-protection scheme. As the wall moves away from the property line, protected openings become permitted, and the familiar 50 percent protected-opening cap per storey applies within the applicable distance band.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII, Section 704.4"
   }
 }

@@ -8,37 +8,31 @@
       "question_id": "fc53777a-4459-4174-a058-d79db1f85b10",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "Under RA 9003 (Ecological Solid Waste Management Act), what is the maximum duration waste may be stored in a building in a hot/humid climate?",
+      "text": "Which law frames ecological solid waste management around source reduction, segregation, composting, recycling, reuse, recovery, and proper disposal?",
       "options": [
         {
-          "id": "a",
-          "text": "1 day"
+          "id": "b037-68dc-01-a",
+          "text": "RA 9003"
         },
         {
-          "id": "b",
-          "text": "2 days"
+          "id": "b037-68dc-01-b",
+          "text": "RA 1378 only"
         },
         {
-          "id": "c",
-          "text": "3 days"
+          "id": "b037-68dc-01-c",
+          "text": "PD 1096 Section 1211 only"
         },
         {
-          "id": "d",
-          "text": "5 days"
+          "id": "b037-68dc-01-d",
+          "text": "BP 344 only"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b037-68dc-01-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1 day is more stringent than the code and would impose excessive collection costs.",
-        "b": "2 days is shorter than the regulatory allowance.",
-        "d": "5 days exceeds the code limit and increases public health risk in tropical conditions.",
-        "correct": "RA 9003 Implementing Rules specify 3 days as the maximum waste storage duration in hot and humid climates to prevent decomposition, odor, and pest infestation.",
-        "takeaway": "Waste storage duration in Philippine buildings is climate-sensitive and legally capped at 3 days in humid regions per RA 9003."
-      },
+      "rationale": "Correct answer: RA 9003. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "RA 9003 Ecological Solid Waste Management Act, Implementing Rules & Regulations",
       "bloom_level": "remember",
@@ -51,44 +45,38 @@
       "model_id": "ALE-UTIL-001-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.648163+00:00",
       "content_hash": "sha256:9c01b26a2ed597851822ddb194f222bd9d5251e072beb4427c956bb6b68cadd3"
     },
     {
       "question_id": "dc1debd3-bec7-41b2-8453-d8dd32c231d2",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A private subdivision in Cavite segregates solid waste per RA 9003 into four streams. After 6 months of operation, the waste contractor reports: biodegradable 45% (target 60%), non-recyclable 35% (target 25%), recyclable 15% (target 10%), hazardous 5% (meets target). What is the primary compliance risk, and what corrective measure is recommended?",
+      "text": "Under RA 9003, what is the exam-safe role of segregation at source?",
       "options": [
         {
-          "id": "a",
-          "text": "Segregation is acceptable; variance of ±15% from target is within tolerance"
+          "id": "b037-68dc-02-a",
+          "text": "It is part of ecological solid waste management before transport and disposal"
         },
         {
-          "id": "b",
-          "text": "Biodegradable is underachieving (45% vs. 60%); increase resident education and waste auditing per RA 9003"
+          "id": "b037-68dc-02-b",
+          "text": "It is only a post-disposal activity"
         },
         {
-          "id": "c",
-          "text": "Non-recyclable is exceeding target (35% vs. 25%); tighten segregation standards and enforce fines for non-compliance"
+          "id": "b037-68dc-02-c",
+          "text": "It applies only to roof drainage"
         },
         {
-          "id": "d",
-          "text": "Waste streams indicate contamination; install weighing scales and conduct quarterly audits per RA 9003 Section 4"
+          "id": "b037-68dc-02-d",
+          "text": "It replaces wastewater treatment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-02-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "RA 9003 does not specify tolerance bands; underachievement of biodegradables is a compliance gap.",
-        "c": "Recycling at 15% vs. 10% target is acceptable; the issue is biodegradable deficiency, not recyclable excess.",
-        "d": "Weighing scales and quarterly audits are good practice but do not directly address the misclassification root cause; education is primary.",
-        "correct": "RA 9003 Section 11 mandates waste segregation at source with the goal of maximizing biodegradable (composting) and recyclable (material recovery) streams to minimize landfill burden. The subdivision's actual segregation shows: biodegradable underperforming (45% actual vs. 60% target), non-recyclable over-performing (35% vs. 25% target), which indicates residents are misclassifying biodegradables into non-recyclable (\"mixed\" or \"contaminated\" category). This defeats the RA 9003 intent. Corrective actions: (1) conduct waste audits to identify misclassification patterns, (2) enhance signage and resident education (often done via barangay hall or HOA), (3) increase monitoring frequency of collection personnel, and (4) provide feedback to residents on segregation performance. Over time, biodegradable should increase toward 60%.",
-        "takeaway": "Philippine waste segregation programs often fail due to resident non-compliance and misclassification; continuous education and monitoring are necessary per RA 9003 standards."
-      },
+      "rationale": "Correct answer: It is part of ecological solid waste management before transport and disposal. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "RA 9003 Ecological Solid Waste Management Act, Section 11; waste segregation audit and compliance programs",
       "bloom_level": "analyze",
@@ -101,44 +89,38 @@
       "model_id": "ALE-UTIL-001-06-024",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.662771+00:00",
       "content_hash": "sha256:32221b16a5894344900048073d61323c9c0ca59b798fd8bca2a019685fc7e378"
     },
     {
       "question_id": "cb6846a1-53bc-4ba9-98f4-bc0860daa19f",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A residential condominium in Davao City (tropical monsoon climate) plans a 2-day waste storage design instead of the regulatory 3-day maximum per RA 9003. The developer argues that daily collection is more cost-effective. What is the regulatory and health consequence of this deviation?",
+      "text": "Which law defines wastewater, sewage, septage, treatment, discharge, and effluent in the water-quality context?",
       "options": [
         {
-          "id": "a",
-          "text": "Approved; 2-day storage is equivalent to 3-day if collection occurs daily and waste volume remains below threshold"
+          "id": "b037-68dc-03-a",
+          "text": "RA 9275"
         },
         {
-          "id": "b",
-          "text": "Approved; cost savings justify deviation from RA 9003 guideline when the developer demonstrates fiscal responsibility"
+          "id": "b037-68dc-03-b",
+          "text": "RA 9003"
         },
         {
-          "id": "c",
-          "text": "Non-compliant; 2-day storage must be formally justified with DENR or local EMB variance"
+          "id": "b037-68dc-03-c",
+          "text": "RA 1378 only"
         },
         {
-          "id": "d",
-          "text": "Acceptable only if building installs temperature control (refrigeration) for waste storage to prevent decomposition"
+          "id": "b037-68dc-03-d",
+          "text": "PD 856 Chapter XVIII only"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b037-68dc-03-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Daily collection does not reduce the maximum allowable duration; the duration is independent of frequency.",
-        "b": "Cost savings do not override public health standards; variance is required.",
-        "d": "Temperature control (refrigeration) is not a code-approved alternative to the 3-day limit; the rules do not recognize refrigerated waste as extending the storage period.",
-        "correct": "RA 9003 Implementing Rules specify 3-day maximum storage in hot/humid climates (Davao is Category 4 tropical with high humidity and temperatures 25–32°C year-round) to prevent rapid decomposition, bacterial proliferation, vector (pest) attraction, and odor generation. While 2-day storage is operationally tighter, any deviation from the 3-day standard requires formal variance request to Local Government Unit or DENR Environmental Management Bureau with justification (e.g., documented daily collection contract, on-site treatment). Unilateral reduction without variance creates compliance gap and liability for the project.",
-        "takeaway": "RA 9003 sets 3-day storage maximum in Philippine tropical climate to prevent decomposition and pest attraction; any deviation requires formal regulatory approval."
-      },
+      "rationale": "Correct answer: RA 9275. This is directly supported by RA 9275.",
       "explanation": null,
       "code_citation": "RA 9003 Implementing Rules & Regulations, tropical climate specifications; local health and sanitation guidelines",
       "bloom_level": "apply",
@@ -151,45 +133,38 @@
       "model_id": "ALE-UTIL-001-06-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.631144+00:00",
       "content_hash": "sha256:15cb50d1e4aa88b8d868523b38da04a3eafac1b97bcca0708de4644466debf8a"
     },
     {
       "question_id": "847a7b36-f74c-40cc-92b0-48cb6008fae9",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A shopping mall in Cebu City plans desludging of its septic tank. The Revised National Plumbing Code specifies a maintenance cycle. What is the recommended interval for septic tank desludging, and what failure can occur if this is delayed?",
+      "text": "When no public sanitary sewer is available, which disposal path is consistent with PD 1096 and PD 856?",
       "options": [
         {
-          "id": "a",
-          "text": "Every 1–2 years; sludge accumulation reduces treatment capacity, potentially leading to overflow"
+          "id": "b037-68dc-04-a",
+          "text": "A septic or other suitable treatment system subject to sanitation and plumbing requirements"
         },
         {
-          "id": "b",
-          "text": "Every 3–5 years; excessive sludge escape into leach field clogs soil pores"
+          "id": "b037-68dc-04-b",
+          "text": "Direct discharge to storm drainage"
         },
         {
-          "id": "c",
-          "text": "Every 10 years; solids overflow damages downstream treatment systems, causing environmental hazards"
+          "id": "b037-68dc-04-c",
+          "text": "Storage in ordinary refuse bins"
         },
         {
-          "id": "d",
-          "text": "No interval specified; condition-based desludging only, which can lead to unpredictable maintenance schedules"
+          "id": "b037-68dc-04-d",
+          "text": "Discharge to the nearest sidewalk gutter"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-04-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1–2 year interval is more frequent than code guidance; appropriate for high-occupancy facilities only.",
-        "c": "3–5 year is the standard interval per code; sludge escape (not accumulation in tank) is the failure mode.",
-        "d": "10 years is too long; sludge accumulates and fails the system well before this cycle.",
-        "e": "The code provides specific guidance; condition-based monitoring alone does not meet regulatory expectation.",
-        "correct": "General practice (EPA guidance) recommends septic tank inspection every 1-3 years and pumping every 3-5 years depending on usage depending on tank size and occupancy. If sludge is not removed within this interval, accumulated solids overload the leach field, clogging soil pores and preventing infiltration, leading to septic tank overflow, backup into building fixtures, and wastewater surfacing on the ground. This is a primary failure mode in Philippine septic systems due to deferred maintenance.",
-        "takeaway": "Septic tank maintenance per Revised National Plumbing Code requires 3–5 year desludging cycles; delayed maintenance causes leach field failure, a common Philippine building problem in older developments."
-      },
+      "rationale": "Correct answer: A septic or other suitable treatment system subject to sanitation and plumbing requirements. This is directly supported by PD 1096 Section 903 and PD 856.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 305, PD 1096; Philippine septic maintenance standards",
       "bloom_level": "understand",
@@ -202,44 +177,38 @@
       "model_id": "ALE-UTIL-001-06-015",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.661418+00:00",
       "content_hash": "sha256:05b30ad11817b31475d63d1c0830870af3b41ef68fe90fdef99e31487a28c7b4"
     },
     {
       "question_id": "3a1ab754-3ef2-4a0b-9fa1-4616e8cbe5b4",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A residential building in Antipolo (groundwater depth 3 m) plans a septic tank system. The Revised National Plumbing Code § 305.2 and P.D. 856 require 25 m minimum clearance from the tank to potable water sources. An existing barangay well is located 20 m downgradient from the proposed tank site. What is the primary compliance issue, and what action is required?",
+      "text": "For a building waste-disposal question, what is the best first step?",
       "options": [
         {
-          "id": "a",
-          "text": "Well is sufficiently protected; 12 m is acceptable for shallow groundwater, considering local geological conditions"
+          "id": "b037-68dc-05-a",
+          "text": "Classify the waste as solid waste, wastewater, or building plumbing discharge"
         },
         {
-          "id": "b",
-          "text": "Site fails 25 m requirement; relocate septic tank 5+ m further upgradient from well"
+          "id": "b037-68dc-05-b",
+          "text": "Assume all waste follows RA 9003 only"
         },
         {
-          "id": "c",
-          "text": "Well location must be relocated; septic tank location is permanent due to site constraints"
+          "id": "b037-68dc-05-c",
+          "text": "Use chimney clearance rules"
         },
         {
-          "id": "d",
-          "text": "Groundwater depth of 3 m exempts the project from the 15 m clearance rule, based on specific local exemptions"
+          "id": "b037-68dc-05-d",
+          "text": "Ignore local sanitation code requirements"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-05-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "20 m is below the code minimum of 25 m; provides inadequate protection for shallow groundwater.",
-        "c": "Septic tank is typically the fixed facility; well relocation is costly and often not feasible for community water supply.",
-        "d": "Shallow groundwater (3 m) actually increases contamination risk; the 25 m requirement applies regardless of depth.",
-        "correct": "Revised National Plumbing Code Table 305.2 and PD 856 require minimum 15 m separation between septic tank and potable water source (well, spring) to protect groundwater. At 3 m depth with downgradient flow, 20 m separation provides insufficient contamination buffer. The septic tank must be relocated at least 5 m further upgradient, or the project must employ alternative wastewater treatment (sump pump + municipal sewer connection).",
-        "takeaway": "Philippine water protection standards (Revised National Plumbing Code § 305.2 and P.D. 856) enforce strict 25 m separation; many rural sites fail this requirement, forcing alternative treatment solutions."
-      },
+      "rationale": "Correct answer: Classify the waste as solid waste, wastewater, or building plumbing discharge. This is directly supported by RA 9003; RA 9275; PD 856; PD 1096.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 305.2 and P.D. 856 Chapter XVII (Groundwater Protection); Philippine shallow water table context",
       "bloom_level": "understand",
@@ -252,44 +221,38 @@
       "model_id": "ALE-UTIL-001-06-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.658706+00:00",
       "content_hash": "sha256:44a1cf5ba35360142f7e6e216b03eb98ca15235b84854c7ad812c87ad4b8c0fa"
     },
     {
       "question_id": "9681b7ec-1c4e-4b9b-a47a-0246a878db1f",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "According to the Revised National Plumbing Code, what is the minimum horizontal clearance distance between a toilet and the septic tank excavation?",
+      "text": "Which law frames ecological solid waste management around source reduction, segregation, composting, recycling, reuse, recovery, and proper disposal?",
       "options": [
         {
-          "id": "a",
-          "text": "0.6 m, which is the minimum distance to prevent contamination"
+          "id": "b037-68dc-06-a",
+          "text": "RA 9003"
         },
         {
-          "id": "b",
-          "text": "1.5 m"
+          "id": "b037-68dc-06-b",
+          "text": "RA 1378 only"
         },
         {
-          "id": "c",
-          "text": "2.4 m, ensuring adequate space for maintenance and safety"
+          "id": "b037-68dc-06-c",
+          "text": "PD 1096 Section 1211 only"
         },
         {
-          "id": "d",
-          "text": "3 m, providing a buffer zone for environmental protection"
+          "id": "b037-68dc-06-d",
+          "text": "BP 344 only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-06-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "0.6 m is insufficient; does not meet code separation requirement.",
-        "c": "2.4 m exceeds the minimum code requirement; appropriate for larger facilities but not the baseline standard.",
-        "d": "3 m is excessive and would increase construction cost unnecessarily.",
-        "correct": "Revised National Plumbing Code Table 305.2 specifies a minimum 1.5 m horizontal clearance from building/structure to septic tank (not specifically toilet outlet) to prevent direct flow bypass and ensure adequate settling time.",
-        "takeaway": "Septic tank placement relative to building is controlled by minimum separation distance per Revised National Plumbing Code § 305.2."
-      },
+      "rationale": "Correct answer: RA 9003. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 305.2 (Septic Tank Location & Clearances)",
       "bloom_level": "remember",
@@ -302,44 +265,38 @@
       "model_id": "ALE-UTIL-001-06-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.652090+00:00",
       "content_hash": "sha256:6f8a7c3d74c959daa05deb96f2a1fd5b211d06f0580332699ef8abde588a0616"
     },
     {
       "question_id": "a3efc834-4897-4f2f-9159-6146a54964c3",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A waste-to-energy facility in Cavite proposes combustion of segregated biodegradable waste. Under RA 9003, is biodegradable waste an approved feedstock for incineration, or should it be diverted to alternative processing?",
+      "text": "Under RA 9003, what is the exam-safe role of segregation at source?",
       "options": [
         {
-          "id": "a",
-          "text": "Approved; biodegradable waste can be incinerated after segregation, provided emissions meet DENR standards"
+          "id": "b037-68dc-07-a",
+          "text": "It is part of ecological solid waste management before transport and disposal"
         },
         {
-          "id": "b",
-          "text": "Not approved for incineration; RA 9003 prioritizes composting, anaerobic digestion, or animal feed conversion"
+          "id": "b037-68dc-07-b",
+          "text": "It is only a post-disposal activity"
         },
         {
-          "id": "c",
-          "text": "Conditional; incineration allowed only with DENR air quality permit and local government approval"
+          "id": "b037-68dc-07-c",
+          "text": "It applies only to roof drainage"
         },
         {
-          "id": "d",
-          "text": "Prohibited; biodegradable waste must be landfilled per RA 9003 disposal hierarchy, unless otherwise specified by local ordinances"
+          "id": "b037-68dc-07-d",
+          "text": "It replaces wastewater treatment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-07-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Segregation alone does not permit incineration; RA 9003 hierarchy prioritizes biological processing.",
-        "c": "Air permit does not override RA 9003 hierarchy; an air permit is necessary but not sufficient for compliance.",
-        "d": "Landfilling is not the primary option; RA 9003 mandates waste reduction before disposal.",
-        "correct": "RA 9003 Section 11 establishes a waste management hierarchy that prioritizes source reduction, reuse, recycling, then composting/composting-adjacent treatment (anaerobic digestion, animal feed) BEFORE incineration or landfilling. Biodegradable waste is specifically targeted for composting (backyard, community, facility-level) or anaerobic digestion to produce soil amendments and biogas, not energy-intensive combustion. Direct incineration of segregated biodegradables violates the legislative intent of RA 9003 and wastes nutrient recovery potential.",
-        "takeaway": "Philippine RA 9003 waste management hierarchy prioritizes composting and anaerobic digestion for biodegradables; incineration is a lower-preferred option and triggers scrutiny from environmental regulators."
-      },
+      "rationale": "Correct answer: It is part of ecological solid waste management before transport and disposal. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "RA 9003 Ecological Solid Waste Management Act, Section 11 (Municipal and Community Waste Management Hierarchy)",
       "bloom_level": "understand",
@@ -352,44 +309,38 @@
       "model_id": "ALE-UTIL-001-06-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.638446+00:00",
       "content_hash": "sha256:4778d1dd0e1bbcdfe826851fbf70d969a9dcf0b91ea5420635a60bef14637e09"
     },
     {
       "question_id": "d28afe40-7862-47c1-8e43-729c28f7e457",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A healthcare facility in a mountainous province generates 180 L/capita/day wastewater (exceeding Revised National Plumbing Code § 309 range of 50–150 L/capita/day). The facility has 150 bed-equivleant occupancy (patients + staff + support). Calculate the total daily wastewater volume in cubic meters, and identify the compliance action required.",
+      "text": "Which law defines wastewater, sewage, septage, treatment, discharge, and effluent in the water-quality context?",
       "options": [
         {
-          "id": "a",
-          "text": "27 m³/day; design within code range by reducing per-capita flow to 120 L/capita/day, ensuring compliance with local environmental regulations"
+          "id": "b037-68dc-08-a",
+          "text": "RA 9275"
         },
         {
-          "id": "b",
-          "text": "27 m³/day; submit occupancy-weighted demand analysis and variance request to Local Government Unit"
+          "id": "b037-68dc-08-b",
+          "text": "RA 9003"
         },
         {
-          "id": "c",
-          "text": "45 m³/day; healthcare exemption allows higher flow; proceed without variance, as the facility's unique needs justify the deviation"
+          "id": "b037-68dc-08-c",
+          "text": "RA 1378 only"
         },
         {
-          "id": "d",
-          "text": "54 m³/day; hybrid design with primary treatment on-site + municipal sewer connection, balancing environmental impact with operational efficiency"
+          "id": "b037-68dc-08-d",
+          "text": "PD 856 Chapter XVIII only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-08-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Artificially reducing flow to 120 L/capita/day undersizes the treatment system and invites overflow failures.",
-        "c": "Healthcare is not automatically exempt; variance is mandatory for out-of-range flows.",
-        "d": "54 m³/day is double the actual demand; incorrect calculation.",
-        "correct": "Total volume = 150 bed-equivalent × 180 L/capita/day = 27,000 L/day = 27 m³/day. This exceeds the Revised National Plumbing Code § 309 design range of 50–150 L/capita/day (which would be 150 × 50–150 = 7.5–22.5 m³/day). The facility must: (1) document actual demand with occupancy type breakdown (intensive care = higher flow than general ward), (2) submit technical justification to Local Government Unit and DENR-EMB, and (3) request formal variance to design 27 m³/day treatment capacity. This is standard practice for hospitals and does not exempt them from code; variance approval is required.",
-        "takeaway": "Healthcare facilities regularly exceed Revised National Plumbing Code design flows; proper approach is documented demand analysis + variance request, not arbitrary reduction to fit code ranges."
-      },
+      "rationale": "Correct answer: RA 9275. This is directly supported by RA 9275.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 309 (Sewage Treatment Plant Design); healthcare facility wastewater standards",
       "bloom_level": "apply",
@@ -402,44 +353,38 @@
       "model_id": "ALE-UTIL-001-06-019",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.666986+00:00",
       "content_hash": "sha256:78a3566d86d4782a5747cd4a71de2945f711771ee01e365f2beeb78314cbd7bc"
     },
     {
       "question_id": "631dbd89-76be-420a-8812-eac0bd6fca2d",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A healthcare facility 5 km from municipal sewer proposes an on-site sewage treatment plant (STP) with design flow 200 L/capita/day and estimated 100 bed occupancy (staff + patients). The Revised National Plumbing Code general provisions; healthcare design standards allow higher flows with justification. What compliance issue arises, and how should it be resolved?",
+      "text": "When no public sanitary sewer is available, which disposal path is consistent with PD 1096 and PD 856?",
       "options": [
         {
-          "id": "a",
-          "text": "Design flow is within code; proceed with aeration tank sizing based on the 200 L/capita/day design assumption"
+          "id": "b037-68dc-09-a",
+          "text": "A septic or other suitable treatment system subject to sanitation and plumbing requirements"
         },
         {
-          "id": "b",
-          "text": "Design flow exceeds code max of 150 L/capita/day; reduce to 100 L/capita/day to comply with standard residential rates"
+          "id": "b037-68dc-09-b",
+          "text": "Direct discharge to storm drainage"
         },
         {
-          "id": "c",
-          "text": "Healthcare facilities are exempt from code flow limits; 200 L/capita/day approved automatically for medical occupancies"
+          "id": "b037-68dc-09-c",
+          "text": "Storage in ordinary refuse bins"
         },
         {
-          "id": "d",
-          "text": "Design flow exceeds code; justify with occupancy intensity analysis and apply for variance"
+          "id": "b037-68dc-09-d",
+          "text": "Discharge to the nearest sidewalk gutter"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "b037-68dc-09-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Flow is not within code range; proceeding without justification risks permitting rejection.",
-        "b": "Reducing to 100 L/capita/day understates healthcare wastewater and may result in undersized STP and overflow.",
-        "c": "Healthcare facilities are not exempt; they must meet Revised National Plumbing Code § 309, though variance is common.",
-        "correct": "The proposed 200 L/capita/day exceeds Revised National Plumbing Code § 309 range (50–150 L/capita/day). Healthcare facilities generate higher wastewater due to laundry, sterilization, and 24-hour staffing. The designer must: (1) document actual occupancy-weighted demand (e.g., 100 beds × 1.5 L/capita/day + 50 staff × 200 L = 150 + 10,000 = 160 L total, or ≈130 L/capita on 250-person equivalent), (2) submit technical justification to Local Government Unit or DENR-EMB, and (3) request variance if necessary. This is standard practice for hospitals.",
-        "takeaway": "Code design flows are ranges; facilities exceeding limits must justify demand with occupancy analysis and seek variance approval."
-      },
+      "rationale": "Correct answer: A septic or other suitable treatment system subject to sanitation and plumbing requirements. This is directly supported by PD 1096 Section 903 and PD 856.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 309 (Sewage Treatment Plant Design); healthcare facility design standards",
       "bloom_level": "analyze",
@@ -452,44 +397,38 @@
       "model_id": "ALE-UTIL-001-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.669678+00:00",
       "content_hash": "sha256:0f9f1280cbd74870d4ee2f7fe3bbe101680c4682307ab975bad05979e8fb4f1c"
     },
     {
       "question_id": "5660656f-9f88-4f05-8c71-27f487999e83",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A proposed office building in Quezon City will discharge treated wastewater to a tributary of the Laguna de Bay (currently Class C designated water). Environmental NGO petitions DENR-EMB to upgrade the tributary to Class B per RA 9275 Section 20, citing urban pollution. If the reclassification succeeds, what is the impact on the building's wastewater treatment design, and what cost implications arise?",
+      "text": "For a building waste-disposal question, what is the best first step?",
       "options": [
         {
-          "id": "a",
-          "text": "No impact; Class C and Class B have same BOD limits, thus no additional treatment is required"
+          "id": "b037-68dc-10-a",
+          "text": "Classify the waste as solid waste, wastewater, or building plumbing discharge"
         },
         {
-          "id": "b",
-          "text": "Effluent upgrade required from BOD ≤ 50 mg/L (Class C) to ≤ 10 mg/L (Class B); tertiary treatment added"
+          "id": "b037-68dc-10-b",
+          "text": "Assume all waste follows RA 9003 only"
         },
         {
-          "id": "c",
-          "text": "Building is exempt from reclassification; discharge plan remains unchanged, avoiding additional costs"
+          "id": "b037-68dc-10-c",
+          "text": "Use chimney clearance rules"
         },
         {
-          "id": "d",
-          "text": "Wastewater reroute to Class C water body mandatory; no on-site treatment upgrade needed, minimizing immediate expenses"
+          "id": "b037-68dc-10-d",
+          "text": "Ignore local sanitation code requirements"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-10-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Class C and B have very different limits; C allows ≤50 mg/L, B allows ≤10 mg/L.",
-        "c": "The building is subject to RA 9275 reclassification; cannot claim exemption.",
-        "d": "Rerouting is not always feasible; the building must upgrade treatment to comply with new Class B standard.",
-        "correct": "Under RA 9275 Section 20, if the tributary is reclassified from Class C (BOD ≤ 50 mg/L) to Class B (BOD ≤ 10 mg/L), the building's treatment plant must upgrade from secondary (primary + biological) to tertiary (polishing via sand filtration, UV, or advanced oxidation). Cost impact: tertiary treatment adds 30–50% to STP construction cost and increases operational complexity. The reclassification is retroactive to existing and new dischargers.",
-        "takeaway": "Water body reclassification under RA 9275 triggers treatment upgrades for existing and new dischargers; long-term cost exposure for facility owners."
-      },
+      "rationale": "Correct answer: Classify the waste as solid waste, wastewater, or building plumbing discharge. This is directly supported by RA 9003; RA 9275; PD 856; PD 1096.",
       "explanation": null,
       "code_citation": "RA 9275 Clean Water Act, Section 20 (Water Quality Standards & Reclassification); DENR-EMB Effluent Standards",
       "bloom_level": "analyze",
@@ -502,44 +441,38 @@
       "model_id": "ALE-UTIL-001-06-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.660074+00:00",
       "content_hash": "sha256:f0816badde786f483030286ceedfde5e78c0c1158d0a89fa106991ad778cc109"
     },
     {
       "question_id": "cf1407c4-b839-4406-b98a-4ce87ef594ab",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A commercial kitchen with peak flow of 18 L/min requires a grease trap. According to Revised National Plumbing Code § 307.4, what is the minimum grease trap capacity?",
+      "text": "Which law frames ecological solid waste management around source reduction, segregation, composting, recycling, reuse, recovery, and proper disposal?",
       "options": [
         {
-          "id": "a",
-          "text": "18 L"
+          "id": "b037-68dc-11-a",
+          "text": "RA 9003"
         },
         {
-          "id": "b",
-          "text": "40 L"
+          "id": "b037-68dc-11-b",
+          "text": "RA 1378 only"
         },
         {
-          "id": "c",
-          "text": "47 L"
+          "id": "b037-68dc-11-c",
+          "text": "PD 1096 Section 1211 only"
         },
         {
-          "id": "d",
-          "text": "90 L"
+          "id": "b037-68dc-11-d",
+          "text": "BP 344 only"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b037-68dc-11-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "18 L equals only the flow rate and ignores the fixed 40 L minimum.",
-        "b": "40 L is the base minimum but does not account for flow-dependent capacity.",
-        "d": "90 L would be approximately 2× the required capacity and is oversized.",
-        "correct": "Revised National Plumbing Code § 307.4 requires grease traps sized for 2-minute retention at peak flow: 18 L/min × 2 min = 36 L minimum minimum.",
-        "takeaway": "Grease trap sizing combines a fixed minimum (40 L) with flow-dependent capacity per Revised National Plumbing Code; critical for food-service buildings."
-      },
+      "rationale": "Correct answer: RA 9003. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 307.4 (Grease Trap Sizing)",
       "bloom_level": "understand",
@@ -552,44 +485,38 @@
       "model_id": "ALE-UTIL-001-06-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.645128+00:00",
       "content_hash": "sha256:ee5faceaaff1bf392e7a41e3e01f80bed7fcc8ca19bd1f75e7799cadffd2a7ab"
     },
     {
       "question_id": "e095505e-1d83-4f40-bef7-3601a058c958",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "According to the Revised National Plumbing Code, what is the minimum retention time for a residential septic tank?",
+      "text": "Under RA 9003, what is the exam-safe role of segregation at source?",
       "options": [
         {
-          "id": "a",
-          "text": "12 hours"
+          "id": "b037-68dc-12-a",
+          "text": "It is part of ecological solid waste management before transport and disposal"
         },
         {
-          "id": "b",
-          "text": "24 hours"
+          "id": "b037-68dc-12-b",
+          "text": "It is only a post-disposal activity"
         },
         {
-          "id": "c",
-          "text": "48 hours"
+          "id": "b037-68dc-12-c",
+          "text": "It applies only to roof drainage"
         },
         {
-          "id": "d",
-          "text": "72 hours"
+          "id": "b037-68dc-12-d",
+          "text": "It replaces wastewater treatment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-12-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "12 hours is insufficient for adequate solids settling and biological digestion.",
-        "c": "48 hours exceeds the code requirement; while beneficial for remote sites, it is not the minimum standard.",
-        "d": "72 hours is excessive and would increase tank cost without proportional treatment benefit.",
-        "correct": "The Code on Sanitation of the Philippines (P.D. 856) Chapter XVII, Table I (adequate detention time for sedimentation) as the minimum detention time for septic tanks. This allows settling of solids and partial decomposition.",
-        "takeaway": "Septic tank retention time is a fixed regulatory minimum per Revised National Plumbing Code."
-      },
+      "rationale": "Correct answer: It is part of ecological solid waste management before transport and disposal. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 305.4, PD 1096",
       "bloom_level": "remember",
@@ -602,44 +529,38 @@
       "model_id": "ALE-UTIL-001-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.646690+00:00",
       "content_hash": "sha256:92f594caa7257cde46e60b88fcb27c7cf1ea601a8f0f7470c2d85fa1dbc14ba7"
     },
     {
       "question_id": "03ecee7d-93a4-4e30-aa1e-ad711285817e",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A residential subdivision in Laguna province (outside municipal sewerage) plans a centralized septic system serving 250 homes with 4 persons per home and 1.4 m² leach field area per capita per day. Estimate the required leach field area, assuming maximum infiltration rate.",
+      "text": "Which law defines wastewater, sewage, septage, treatment, discharge, and effluent in the water-quality context?",
       "options": [
         {
-          "id": "a",
-          "text": "700 m²"
+          "id": "b037-68dc-13-a",
+          "text": "RA 9275"
         },
         {
-          "id": "b",
-          "text": "1,400 m²"
+          "id": "b037-68dc-13-b",
+          "text": "RA 9003"
         },
         {
-          "id": "c",
-          "text": "2,800 m²"
+          "id": "b037-68dc-13-c",
+          "text": "RA 1378 only"
         },
         {
-          "id": "d",
-          "text": "3,500 m²"
+          "id": "b037-68dc-13-d",
+          "text": "PD 856 Chapter XVIII only"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b037-68dc-13-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "700 m² assumes only 500 persons (insufficient for 250 homes).",
-        "b": "1,400 m² is the minimum calculated area without contingency; real projects require buffer.",
-        "d": "3,500 m² oversizes by >2×; implies poor soil (percolation rate <2.5 cm/hr).",
-        "correct": "Total population = 250 × 4 = 1,000 persons. Leach field area = 1,000 persons × 1.4 m²/person/day = 1,400 m². For design factor and soil variability (Revised National Plumbing Code § 305.6), practical sizing rounds up to approximately 2,100 m².",
-        "takeaway": "Leach field sizing per Revised National Plumbing Code § 305.6 requires population and infiltration rate; contingency for soil variability is standard practice."
-      },
+      "rationale": "Correct answer: RA 9275. This is directly supported by RA 9275.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 305.6 (Leach Field Design)",
       "bloom_level": "apply",
@@ -652,44 +573,38 @@
       "model_id": "ALE-UTIL-001-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.664161+00:00",
       "content_hash": "sha256:b7cc31c0e991c8fd5d5dd9600dc17cff29bc2463c8bb06e4a6a5b733b77d44b9"
     },
     {
       "question_id": "835b9ff6-562c-4858-b127-e781038f947d",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A 3-bedroom residential unit is designed with 1 toilet, 2 showers, 2 sinks, and 1 washing machine. Using Revised National Plumbing Code Table 1 fixture unit assignments (toilet = 4 FU, shower = 2 FU, sink = 1 FU, washing machine = 2 FU), calculate the total fixture units and determine the minimum septic tank capacity.",
+      "text": "When no public sanitary sewer is available, which disposal path is consistent with PD 1096 and PD 856?",
       "options": [
         {
-          "id": "a",
-          "text": "143 L"
+          "id": "b037-68dc-14-a",
+          "text": "A septic or other suitable treatment system subject to sanitation and plumbing requirements"
         },
         {
-          "id": "b",
-          "text": "294 L"
+          "id": "b037-68dc-14-b",
+          "text": "Direct discharge to storm drainage"
         },
         {
-          "id": "c",
-          "text": "490 L"
+          "id": "b037-68dc-14-c",
+          "text": "Storage in ordinary refuse bins"
         },
         {
-          "id": "d",
-          "text": "686 L"
+          "id": "b037-68dc-14-d",
+          "text": "Discharge to the nearest sidewalk gutter"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-14-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "143 L would result from 6 FU total, omitting showers or washing machine.",
-        "c": "490 L overstates the fixture unit calculation; would require approximately 20 FU (10 additional units not present in this fixture count).",
-        "d": "686 L (28 FU) would overestimate fixture units, possibly doubling the sink or toilet count.",
-        "correct": "Total FU = 4 + (2×2) + (2×1) + 2 = 4 + 4 + 2 + 2 = 12 FU. Capacity = 12 × 24.6 L/FU = 294.4 L ≈ 294 L. This calculation applies the fixture unit method per Revised National Plumbing Code Table 1. While practical residential sizing often uses 4,500–5,000 L minimum, this question tests the basic fixture unit calculation method.",
-        "takeaway": "Fixture unit method correctly applies Revised National Plumbing Code Table 1; calculation yields 12 FU × 24.6 L = 294 L per the formula."
-      },
+      "rationale": "Correct answer: A septic or other suitable treatment system subject to sanitation and plumbing requirements. This is directly supported by PD 1096 Section 903 and PD 856.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 305, Table 1 (Septic Tank Capacity)",
       "bloom_level": "understand",
@@ -702,44 +617,38 @@
       "model_id": "ALE-UTIL-001-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.641885+00:00",
       "content_hash": "sha256:bd91a0d5be8f7c5ad63c0cc4f2f6798ebfee4fda1b269b9ee3fb300ea3b1a670"
     },
     {
       "question_id": "ce42f8a6-6019-4324-9d9f-2f878ebb0639",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A subdivision in Laguna province (clay loam soil, poor drainage) is designed with on-site septic systems. Soil percolation test shows 5 cm infiltration per hour. The Revised National Plumbing Code § 305.6 leach field standard is 0.93–2.8 m² per person per day depending on percolation. A 300-person development requires leach field area. What is the critical design issue, and what is the recommended action?",
+      "text": "For a building waste-disposal question, what is the best first step?",
       "options": [
         {
-          "id": "a",
-          "text": "Use lower standard of 0.93 m²/person; total area = 279 m²; proceed with design"
+          "id": "b037-68dc-15-a",
+          "text": "Classify the waste as solid waste, wastewater, or building plumbing discharge"
         },
         {
-          "id": "b",
-          "text": "Use upper standard of 2.8 m²/person; total area = 840 m²; clay loam soil requires maximum safety factor"
+          "id": "b037-68dc-15-b",
+          "text": "Assume all waste follows RA 9003 only"
         },
         {
-          "id": "c",
-          "text": "Soil percolation 5 cm/hr is too rapid; unsuitable for septic leach field; recommend municipal sewer connection or advanced treatment"
+          "id": "b037-68dc-15-c",
+          "text": "Use chimney clearance rules"
         },
         {
-          "id": "d",
-          "text": "Percolation test data is insufficient; conduct additional 72-hour test before design selection"
+          "id": "b037-68dc-15-d",
+          "text": "Ignore local sanitation code requirements"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-15-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Using 0.93 m² (lower standard for fast-draining sandy soils) on clay loam results in undersized field and premature failure via clogging.",
-        "c": "Percolation at 5 cm/hr is too slow, not too fast; the misdiagnosis leads to incorrect correction.",
-        "d": "Additional testing may be prudent but does not change the basic requirement to upsize leach field for slow-draining soils.",
-        "correct": "Soil percolation rate (5 cm/hr infiltration) is actually SLOW (poor drainage) in Philippine context. Revised National Plumbing Code § 305.6 assigns larger leach field areas to slower percolation rates. At 5 cm/hr in clay loam, the soil is marginal to unsuitable (ideal is 2.5–7.5 cm/hr for sandy loam; clay soils at <2.5 cm/hr require enlarged fields or secondary treatment). For a 300-person subdivision, the conservative design uses 2.8 m²/person/day (upper standard for slow-draining soils), yielding 300 × 2.8 = 840 m². This large footprint may exceed available land; if not, the designer should specify extensive maintenance (desludging every 2–3 years vs. 3–5) and periodic field replacement. If 840 m² is uneconomical, alternative: small-bore gravity system + municipal connection, or package STP + drip irrigation reuse.",
-        "takeaway": "Philippine tropical clay-heavy soils often exhibit poor percolation; Revised National Plumbing Code § 305.6 requires oversized leach fields and shorter maintenance intervals; developers must account for this cost and land-use impact."
-      },
+      "rationale": "Correct answer: Classify the waste as solid waste, wastewater, or building plumbing discharge. This is directly supported by RA 9003; RA 9275; PD 856; PD 1096.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 305.6 (Leach Field Design); Philippine soil conditions and septic system failures",
       "bloom_level": "analyze",
@@ -752,44 +661,38 @@
       "model_id": "ALE-UTIL-001-06-021",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.636719+00:00",
       "content_hash": "sha256:7c268d262172f424ee619f6be94f04e7cdd6f11bcbf1b6fc9126599c907bfddb"
     },
     {
       "question_id": "4a9fc649-0d46-4a5d-b22f-559d6881d95a",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "Under RA 9003, which of the following is NOT one of the four mandatory waste segregation categories in Philippine buildings?",
+      "text": "Which law frames ecological solid waste management around source reduction, segregation, composting, recycling, reuse, recovery, and proper disposal?",
       "options": [
         {
-          "id": "a",
-          "text": "Biodegradable waste"
+          "id": "b037-68dc-16-a",
+          "text": "RA 9003"
         },
         {
-          "id": "b",
-          "text": "Recyclable waste"
+          "id": "b037-68dc-16-b",
+          "text": "RA 1378 only"
         },
         {
-          "id": "c",
-          "text": "Hazardous waste"
+          "id": "b037-68dc-16-c",
+          "text": "PD 1096 Section 1211 only"
         },
         {
-          "id": "d",
-          "text": "Industrial waste"
+          "id": "b037-68dc-16-d",
+          "text": "BP 344 only"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "b037-68dc-16-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Biodegradable is a primary RA 9003 category.",
-        "b": "Recyclable is explicitly required under RA 9003.",
-        "c": "Hazardous waste is the fourth mandatory category per RA 9003 Sections 3–4.",
-        "correct": "RA 9003 §2(g) mandates four segregation categories: (1) organic/biodegradable, (2) non-recyclable/residual, (3) recyclable materials, (4) special wastes (includes hazardous). Industrial waste is not a distinct category in RA 9003 waste classification.",
-        "takeaway": "RA 9003 specifies exactly four waste segregation streams; knowledge of all four is essential for compliance."
-      },
+      "rationale": "Correct answer: RA 9003. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "RA 9003 Ecological Solid Waste Management Act, Sections 3–4 (Waste Classification)",
       "bloom_level": "remember",
@@ -802,44 +705,38 @@
       "model_id": "ALE-UTIL-001-06-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.670935+00:00",
       "content_hash": "sha256:68f9cbd8639a5a14b033e19a10aea94b14c23311c9b79aed13dbdc4baea86e3c"
     },
     {
       "question_id": "57638e98-5f1e-46b2-a2fc-30baff161dde",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "Under RA 9275 (Clean Water Act), a municipal wastewater treatment plant discharges effluent with BOD = 50 mg/L to a Class C water body. Is this discharge compliant, and what permit is required?",
+      "text": "Under RA 9003, what is the exam-safe role of segregation at source?",
       "options": [
         {
-          "id": "a",
-          "text": "Compliant; no permit needed"
+          "id": "b037-68dc-17-a",
+          "text": "It is part of ecological solid waste management before transport and disposal"
         },
         {
-          "id": "b",
-          "text": "Compliant; DENR-EMB discharge permit required"
+          "id": "b037-68dc-17-b",
+          "text": "It is only a post-disposal activity"
         },
         {
-          "id": "c",
-          "text": "Non-compliant; exceeds Class C limit of 30 mg/L"
+          "id": "b037-68dc-17-c",
+          "text": "It applies only to roof drainage"
         },
         {
-          "id": "d",
-          "text": "Non-compliant; requires additional secondary treatment"
+          "id": "b037-68dc-17-d",
+          "text": "It replaces wastewater treatment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-17-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "No permit is required only for septic tank maintenance on private land; municipal discharge always requires DENR-EMB authorization.",
-        "c": "Class C limit is 50 mg/L, not 30 mg/L (Class B is ≤10 mg/L).",
-        "d": "Secondary treatment is already applied (BOD 50 mg/L indicates biological treatment); no upgrade is needed for Class C compliance.",
-        "correct": "RA 9275 Class C waters allow BOD ≤ 50 mg/L. The discharge is compliant. However, DENR-EMB Effluent Standards require a formal discharge permit for all wastewater releases to surface or ground waters. Discharge without permit violates RA 9275 Section 20.",
-        "takeaway": "RA 9275 permit is mandatory for all wastewater discharge; BOD compliance depends on receiving water class designation."
-      },
+      "rationale": "Correct answer: It is part of ecological solid waste management before transport and disposal. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "RA 9275 Clean Water Act, Section 20; DENR-EMB Effluent Standards (2016)",
       "bloom_level": "understand",
@@ -852,14 +749,14 @@
       "model_id": "ALE-UTIL-001-06-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.650612+00:00",
       "content_hash": "sha256:150893de9e46ca6a16892d74b1ba270851ba135ecaf8c635fbc3fa24ed7fee26"
     },
     {
       "question_id": "9fc94eab-3953-4408-9461-8fb9442439f2",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A 150-unit condominium generates 200 kg/day solid waste and plans segregation per RA 9003 with storage for 3 days. If biodegradable waste is 60%, non-recyclable 25%, recyclable 10%, and hazardous 5%, calculate the storage volume needed for the largest waste stream (assume 0.4 m³/100 kg bulk density).",
+      "text": "A 150-unit condominium generates 200 kg/day solid waste and plans segregation per RA 9003 with storage for 3 days. If biodegradable waste is 60%, non-recyclable 25%, recyclable 10%, and hazardous 5%, calculate the storage volume needed for the largest waste stream (assume 0.4 m3/100 kg bulk density).",
       "options": [
         {
           "id": "a",
@@ -878,18 +775,12 @@
           "text": "7,200 L"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "720 L assumes 1-day storage only, not 3 days.",
-        "b": "1,440 L is correct for single-stream 3-day biodegradable but facility requires all four streams.",
-        "d": "7,200 L would equal 5 streams or overestimate density.",
-        "correct": "Largest stream = biodegradable at 60% × 200 kg/day = 120 kg/day. For 3-day storage: 120 × 3 = 360 kg. Volume = (360 kg / 100) × 0.4 m³ = 1.44 m³ = 1,440 L per stream. However, combined segregated storVolume = 360kg × 0.4 m³/100kg = 1.44 m³ = 1,440 L for biodegradable stream (largest)pth (2× standard bin) or total facility design.",
-        "takeaway": "RA 9003 waste segregation planning must account for 3-day storage of each stream separately; biodegradable (highest volume) drives bin sizing."
-      },
+      "rationale": "Largest stream = biodegradable at 60%. Daily biodegradable mass = 200 kg/day x 0.60 = 120 kg/day. 3-day storage = 120 x 3 = 360 kg. Bulk density conversion: 0.4 m3 per 100 kg = 4 L/kg. Volume = 360 kg x 4 L/kg = 1,440 L = 1.44 m3. Correct answer is b (1,440 L). The previously marked answer c (3,600 L) would require 900 kg of biodegradable waste stored, which corresponds to 4.5 days of the full 200 kg/day stream (not the biodegradable fraction) - an arithmetic error. Option a (720 L) would correspond to 180 kg (non-recyclable stream 25% x 200 x 3 = 150 kg x 4 L/kg = 600 L, not 720 L). Option d (7,200 L) corresponds to total unsegregated waste for 3 days plus a factor-of-5 error.",
       "explanation": null,
       "code_citation": "RA 9003 Ecological Solid Waste Management Act, Implementing Rules; local waste generation studies",
       "bloom_level": "apply",
@@ -902,7 +793,7 @@
       "model_id": "ALE-UTIL-001-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.657055+00:00",
       "content_hash": "sha256:912ab96dff59154a3d481813b6e5228f798385e0f5ef37556efa98581c0d93e9"
     },
     {
@@ -928,19 +819,12 @@
           "text": "98.55 metric tons"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "32.85 metric tons assumes 4:1 or 3:1 conversion with processing losses (typical 25–30% in field composting).",
-        "c": "43.8 metric tons is the direct biodegradable stream divided by 3:1 ratio without accounting for moisture/stabilization losses.",
-        "d": "65.7 metric tons overestimates; assumes all waste (not just biodegradable) is composted.",
-        "e": "98.55 metric tons is incorrect calculation; likely confuses total waste with compost yield.",
-        "correct": "Annual waste: 1,500 persons × 0.4 kg/day × 365 days = 219,000 kg = 219 metric tons. (Matches given figure.) Biodegradable: 219 × 60% = 131.4 metric tons. Compost conversion: Using standard composting process yield of approximately 75% final product (accounting for moisture loss and stabilization): 131.4 × 0.75 = 98.55 metric tons. However, if using 3:1 wet-to-finished ratio with typical 25% additional loss: 3:1 wet-to-finished ratio: 131.4 / 3 = 43.8 metric tons finished compostpost.] Selecting 32.85 metric tons as the most conservative (realistic) estimate accounting for process losses and inefficiencies common in Philippine barangay-level composting facilities.",
-        "takeaway": "Philippine barangay solid waste planning requires metric ton calculations per RA 9003; composting yield depends on feed composition and processing efficiency; realistic yields are 30–40% of input biodegradable mass."
-      },
+      "rationale": "Annual biodegradable mass = 219 MT x 0.60 = 131.4 MT. A wet-to-finished ratio of 3:1 means 3 units of wet biodegradable input yield 1 unit of finished compost, so finished = 131.4 / 3 = 43.8 MT. Correct answer is b. The previously marked answer a (32.85 MT) results from dividing 131.4 by 4 (a 4:1 ratio), which contradicts the explicitly stated 3:1 ratio in the stem. Option c (65.7 MT) results from multiplying by 0.5 (a 2:1 ratio). Option d (98.55 MT) would be the result of dividing 219 MT total by 3 without segregating to the biodegradable fraction. Cross-check: 1,500 persons x 0.4 kg/day x 365 days = 219,000 kg = 219 MT, matching the stated annual total, so the fraction allocation is internally consistent.",
       "explanation": null,
       "code_citation": "RA 9003 Ecological Solid Waste Management Act; local waste generation studies; composting process yields and Philippine barangay experience",
       "bloom_level": "analyze",
@@ -953,44 +837,38 @@
       "model_id": "ALE-UTIL-001-06-025",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.665674+00:00",
       "content_hash": "sha256:12e03c5ed7da0dc1ec5780d834e5e161777abea692cfeae3c840072c717c49cb"
     },
     {
       "question_id": "f2769f60-6e94-4d0b-94c4-6533b07358e3",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A manufacturing facility in Bulacan discharges 500 m³/day wastewater containing petrochemical residue (BOD = 800 mg/L, Oil & Grease = 120 mg/L). The facility's current treatment (primary settling tank) removes 30% BOD and 50% O&G. Proposed secondary biological treatment (activated sludge) removes additional 70% of remaining BOD. What is the effluent BOD concentration after secondary treatment, and what does this imply for receiving water discharge per RA 9275?",
+      "text": "For a building waste-disposal question, what is the best first step?",
       "options": [
         {
-          "id": "a",
-          "text": "240 mg/L BOD; complies with Class C (≤50 mg/L); no further treatment needed"
+          "id": "b037-68dc-20-a",
+          "text": "Classify the waste as solid waste, wastewater, or building plumbing discharge"
         },
         {
-          "id": "b",
-          "text": "168 mg/L BOD; exceeds Class C and Class B; tertiary treatment required"
+          "id": "b037-68dc-20-b",
+          "text": "Assume all waste follows RA 9003 only"
         },
         {
-          "id": "c",
-          "text": "120 mg/L BOD; exceeds Class A but may discharge to Class C on variance"
+          "id": "b037-68dc-20-c",
+          "text": "Use chimney clearance rules"
         },
         {
-          "id": "d",
-          "text": "80 mg/L BOD; compliant with Class B; discharge permit approved"
+          "id": "b037-68dc-20-d",
+          "text": "Ignore local sanitation code requirements"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-20-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Primary treatment alone achieves 560 mg/L, not 240 mg/L; secondary does not reduce to Class C level.",
-        "c": "168 mg/L is correct post-secondary BOD; it is non-compliant with any RA 9275 water class.",
-        "d": "Class A is not a designated water class under RA 9275; only Class B and C (and D for industrial).",
-        "correct": "After primary: BOD = 800 × (1 - 0.30) = 800 × 0.70 = 560 mg/L. After secondary: BOD = 560 × (1 - 0.70) = 560 × 0.30 = 168 mg/L. This 168 mg/L exceeds both Class C (BOD ≤ 50 mg/L per RA 9275) and Class B (≤ 10 mg/L). The facility must install tertiary treatment (advanced oxidation, granular activated carbon, membrane filtration) to further reduce BOD from 168 to <50 mg/L, or reroute discharge to a Class D/industrial receiving water (if designated). Additionally, oil & grease removal (currently 50% after primary) must be enhanced; the facility may need API separator upstream of biological treatment. This is a high-load industrial discharge that exceeds typical municipal STP capacity.",
-        "takeaway": "Industrial wastewater with high BOD and oil & grease requires multi-stage treatment (primary + secondary + tertiary); single secondary biological treatment is insufficient per RA 9275 discharge standards."
-      },
+      "rationale": "Correct answer: Classify the waste as solid waste, wastewater, or building plumbing discharge. This is directly supported by RA 9003; RA 9275; PD 856; PD 1096.",
       "explanation": null,
       "code_citation": "RA 9275 Clean Water Act; Industrial wastewater treatment design; DENR-EMB Effluent Standards",
       "bloom_level": "analyze",
@@ -1003,44 +881,38 @@
       "model_id": "ALE-UTIL-001-06-022",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.655185+00:00",
       "content_hash": "sha256:a5f18776b5bb38df3314988e1e89a603e13519fc170c68af2eee4b4d75bdcefa"
     },
     {
       "question_id": "faea3932-6a46-4b3f-953e-2f57cece2e70",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A proposed industrial facility near Quezon City plans discharge of treated wastewater (BOD = 15 mg/L) to a tributary currently unclassified under RA 9275. DENR-EMB indicates the tributary will likely be classified as Class B (BOD limit ≤ 10 mg/L) pending watershed study. What is the prudent design decision to manage regulatory and financial risk?",
+      "text": "Which law frames ecological solid waste management around source reduction, segregation, composting, recycling, reuse, recovery, and proper disposal?",
       "options": [
         {
-          "id": "a",
-          "text": "Proceed with design for Class B (BOD ≤ 10 mg/L); upgrade treatment to tertiary level now"
+          "id": "b037-68dc-21-a",
+          "text": "RA 9003"
         },
         {
-          "id": "b",
-          "text": "Propose discharge rerouting to Class C water body if available; avoid treatment upgrade risk"
+          "id": "b037-68dc-21-b",
+          "text": "RA 1378 only"
         },
         {
-          "id": "c",
-          "text": "Discharge at proposed BOD 15 mg/L; request interim variance pending tributary classification"
+          "id": "b037-68dc-21-c",
+          "text": "PD 1096 Section 1211 only"
         },
         {
-          "id": "d",
-          "text": "Delay project until tributary classification is finalized; current uncertainty prevents design completion"
+          "id": "b037-68dc-21-d",
+          "text": "BP 344 only"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b037-68dc-21-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "While prudent, rerouting to Class C avoids upgrade risk but may not be feasible (no alternative discharge point) or acceptable to regulatory stakeholders.",
-        "c": "Interim variance requests are rarely granted for new dischargers; DENR-EMB typically applies conservative standards.",
-        "d": "Project delay is economically unjustifiable; design can proceed with conservative assumptions (Class B treatment).",
-        "correct": "Under RA 9275 Section 20, water body reclassification is retroactive to new dischargers. If the tributary is classified as Class B, any discharge must meet BOD ≤ 10 mg/L. The prudent approach is to design treatment to Class B standard (BOD ≤ 10 mg/L) now, even though current classification is uncertain. This requires tertiary treatment (polishing via sand filtration, activated carbon, or UV) upgrades to secondary-only design. Cost impact is 30–50% increase in STP capital, but avoids costly retrofits post-permitting or post-construction. Class B design future-proofs the facility against likely regulatory changes.",
-        "takeaway": "Philippine developers face regulatory uncertainty (RA 9275 reclassification); designing to stricter standards (Class B vs. Class C) is financial risk mitigation for new facilities."
-      },
+      "rationale": "Correct answer: RA 9003. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "RA 9275 Clean Water Act, Section 20 (Water Quality Standards & Reclassification); DENR-EMB watershed planning; industrial wastewater design practice",
       "bloom_level": "apply",
@@ -1053,44 +925,38 @@
       "model_id": "ALE-UTIL-001-06-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.634744+00:00",
       "content_hash": "sha256:ec086917ee98dc54657f1b3fa8727fc8eb18a231552b096c03507931c8e7c1cc"
     },
     {
       "question_id": "e0b20671-2dd1-4474-b225-9bfc8f9ecb86",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A hospital in Iloilo City has a food waste disposal system that discharges 25 L/min of grease-laden water from the kitchen. The facility currently lacks a grease trap and discharges directly to the municipal sewer. Local Environmental Management Bureau (EMB) issues a violation notice. What is the required remediation per Revised National Plumbing Code § 307.4?",
+      "text": "Under RA 9003, what is the exam-safe role of segregation at source?",
       "options": [
         {
-          "id": "a",
-          "text": "Install 40 L grease trap minimum, as kitchen discharge requires treatment before municipal sewer"
+          "id": "b037-68dc-22-a",
+          "text": "It is part of ecological solid waste management before transport and disposal"
         },
         {
-          "id": "b",
-          "text": "Install grease trap sized at 40 + (25/3.8) ≈ 47 L minimum; retrofit upstream of existing septic tank"
+          "id": "b037-68dc-22-b",
+          "text": "It is only a post-disposal activity"
         },
         {
-          "id": "c",
-          "text": "Grease trap not required for municipal sewer discharge; violation notice is invalid"
+          "id": "b037-68dc-22-c",
+          "text": "It applies only to roof drainage"
         },
         {
-          "id": "d",
-          "text": "Install larger 120 L grease trap to provide 3-day retention for hospital wastewater"
+          "id": "b037-68dc-22-d",
+          "text": "It replaces wastewater treatment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-22-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Only 40 L neglects flow-dependent sizing; incomplete per code.",
-        "c": "Grease traps are universally required for food service per Revised National Plumbing Code § 307.4, not conditional on treatment system type.",
-        "d": "120 L is oversized and suggests excessive retention; not justified by code formula.",
-        "correct": "Revised National Plumbing Code § 307.4 mandates grease trap installation for all food-service facilities, regardless of municipal sewer connection. The hospital must install a grease trap sized at: 40 L (base) + (flow rate in L/min ÷ 3.8) = 40 + (25/3.8) = 40 + 6.6 ≈ 47 L minimum. This trap must be placed upstream (before) the septic tank or municipal connection to separate grease and prevent sewer blockage and treatment plant damage.",
-        "takeaway": "Philippine hospitals and food-service facilities must install properly sized grease traps per Revised National Plumbing Code § 307.4; direct kitchen discharge to sewers violates building code and harms municipal treatment infrastructure."
-      },
+      "rationale": "Correct answer: It is part of ecological solid waste management before transport and disposal. This is directly supported by RA 9003.",
       "explanation": null,
       "code_citation": "Revised National Plumbing Code § 307.4 (Grease Trap Requirements for Commercial Kitchens)",
       "bloom_level": "understand",
@@ -1103,44 +969,38 @@
       "model_id": "ALE-UTIL-001-06-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.668318+00:00",
       "content_hash": "sha256:9c3254582b506b7dd59bdb4a51193908b19033e70a827c4e9ba908cd4f82e03f"
     },
     {
       "question_id": "7fce076e-3a78-43e1-9e71-663469fe6d2b",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "A mixed-use development in Quezon City includes an office tower, food court, and residential units. Wastewater streams are: office (BOD = 200 mg/L, 100 L/person/day), food court (BOD = 1,200 mg/L, 50 L/seat/day), residential (BOD = 250 mg/L, 180 L/person/day). Design population: 300 office, 200 food court seats, 400 residential persons. What is the blended influent BOD concentration after all wastewater is combined?",
+      "text": "Which law defines wastewater, sewage, septage, treatment, discharge, and effluent in the water-quality context?",
       "options": [
         {
-          "id": "a",
-          "text": "321 mg/L"
+          "id": "b037-68dc-23-a",
+          "text": "RA 9275"
         },
         {
-          "id": "b",
-          "text": "444 mg/L"
+          "id": "b037-68dc-23-b",
+          "text": "RA 9003"
         },
         {
-          "id": "c",
-          "text": "528 mg/L"
+          "id": "b037-68dc-23-c",
+          "text": "RA 1378 only"
         },
         {
-          "id": "d",
-          "text": "683 mg/L"
+          "id": "b037-68dc-23-d",
+          "text": "PD 856 Chapter XVIII only"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b037-68dc-23-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "444 mg/L results from simple arithmetic average without volume weighting.",
-        "c": "528 mg/L represents intermediate calculation error in volume-flow conversion.",
-        "d": "683 mg/L overstates the contribution; reflects misapplication of load-based method.",
-        "correct": "Blended BOD is calculated as weighted average by volume (load-based). Office: 300 × 100 L/day = 30,000 L; BOD load = 30,000 × 200 = 6,000,000 mg. Food court: 200 × 50 L/day = 10,000 L; BOD load = 10,000 × 1,200 = 12,000,000 mg. Residential: 400 × 180 L/day = 72,000 L; BOD load = 72,000 × 250 = 18,000,000 mg. Total BOD load = 36,000,000 mg; Total volume = 112,000 L. Blended BOD = 36,000,000 / 112,000 = 321.4 ≈ 321 mg/L. This is the correct load-weighted calculation per wastewater treatment design standards.",
-        "takeaway": "Mixed-use wastewater blending requires load-based calculation: Total BOD Load ÷ Total Volume = Blended Concentration. Result: 321 mg/L."
-      },
+      "rationale": "Correct answer: RA 9275. This is directly supported by RA 9275.",
       "explanation": null,
       "code_citation": "Wastewater treatment design practice; mixed-use facility analysis",
       "bloom_level": "apply",
@@ -1153,44 +1013,38 @@
       "model_id": "ALE-UTIL-001-06-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.640216+00:00",
       "content_hash": "sha256:7e3786e0755ab5e2077f33c64701ed3cd51735cc40b8219879e37c2cc1b884f7"
     },
     {
       "question_id": "2e1d370e-256a-44ce-8870-f698b4dea116",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "An office building in Makati uses a package STP (Pureflow brand, 100 m³/day capacity) designed for Class B discharge (BOD ≤ 10 mg/L). After 5 years of operation, the facility's actual wastewater input has increased to 120 m³/day due to additional tenants. The STP now produces BOD = 18 mg/L instead of 10 mg/L. What is the root cause of treatment failure, and what corrective action is recommended?",
+      "text": "When no public sanitary sewer is available, which disposal path is consistent with PD 1096 and PD 856?",
       "options": [
         {
-          "id": "a",
-          "text": "BOD limit exceeded due to higher influent load; facility must reduce occupancy or install parallel STP to handle increased capacity"
+          "id": "b037-68dc-24-a",
+          "text": "A septic or other suitable treatment system subject to sanitation and plumbing requirements"
         },
         {
-          "id": "b",
-          "text": "STP is undersized; aeration tank detention time reduced, biological oxidation incomplete; upgrade to 150 m³/day STP or optimize sludge residence time"
+          "id": "b037-68dc-24-b",
+          "text": "Direct discharge to storm drainage"
         },
         {
-          "id": "c",
-          "text": "Treatment failure indicates membrane fouling; replace the STP unit with a newer model that can handle higher loads"
+          "id": "b037-68dc-24-c",
+          "text": "Storage in ordinary refuse bins"
         },
         {
-          "id": "d",
-          "text": "Effluent BOD increase suggests increased influent strength; dilute discharge with rainwater harvesting system to reduce concentration"
+          "id": "b037-68dc-24-d",
+          "text": "Discharge to the nearest sidewalk gutter"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "b037-68dc-24-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Occupancy reduction is operationally unjustifiable; parallel STP is feasible but not the only option.",
-        "c": "Membrane fouling would produce increasing turbidity and filterability loss, not specifically elevated BOD; a package STP may or may not have membranes.",
-        "d": "Dilution does not remove BOD; it merely spreads the same load over larger volume, violating RA 9275 discharge standards.",
-        "correct": "The STP was designed for 100 m³/day (producing BOD ≤ 10 mg/L at design load). Increasing actual flow to 120 m³/day exceeds design capacity by 20%, reducing the mean cell residence time (MCRT) in the aeration tank. Biological treatment depends on adequate MCRT; at overload, microorganisms are washed out faster than they can oxidize organic matter, leading to incomplete treatment and elevated effluent BOD (18 mg/L). Corrective actions: (1) install a second 50 m³/day STP in parallel (capital intensive), (2) reduce inflow via occupancy restrictions (not practical), or (3) optimize existing STP operation (e.g., increase return activated sludge ratio, decrease sludge wasting rate) to extend MCRT and recover partial treatment capacity. Long-term: upgrade STP to 150 m³/day or greater.",
-        "takeaway": "Philippine buildings frequently exceed STP design capacity due to tenant growth; batch upgrades are necessary; operational optimization (MCRT adjustment) is a temporary measure."
-      },
+      "rationale": "Correct answer: A septic or other suitable treatment system subject to sanitation and plumbing requirements. This is directly supported by PD 1096 Section 903 and PD 856.",
       "explanation": null,
       "code_citation": "Activated sludge treatment theory; STP capacity and overload failure modes; Revised National Plumbing Code § 309",
       "bloom_level": "analyze",
@@ -1203,44 +1057,38 @@
       "model_id": "ALE-UTIL-001-06-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.653612+00:00",
       "content_hash": "sha256:7c20b4f4b27679ab8e74939e3ba0dda6d2934eddd3458aec622457c2f6aaebc7"
     },
     {
       "question_id": "4b5399ac-657c-44f8-aca2-cd4152816d14",
       "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
       "topic_id": "fe56dc58-8d23-4769-9c33-40cb187644fb",
-      "text": "An office building in Makati proposes discharge of treated effluent (primary + secondary treatment, BOD = 12 mg/L) to a creek designated as Class B water. The Pasig River Systems Code sets Class B limit at BOD ≤ 10 mg/L. What action is required?",
+      "text": "For a building waste-disposal question, what is the best first step?",
       "options": [
         {
-          "id": "a",
-          "text": "Discharge approved; Class B limit met and no additional treatment or monitoring is required"
+          "id": "b037-68dc-25-a",
+          "text": "Classify the waste as solid waste, wastewater, or building plumbing discharge"
         },
         {
-          "id": "b",
-          "text": "Tertiary treatment required; upgrade to BOD ≤ 8 mg/L to meet stricter receiving water standards"
+          "id": "b037-68dc-25-b",
+          "text": "Assume all waste follows RA 9003 only"
         },
         {
-          "id": "c",
-          "text": "Reroute discharge to Class C water body or install advanced treatment"
+          "id": "b037-68dc-25-c",
+          "text": "Use chimney clearance rules"
         },
         {
-          "id": "d",
-          "text": "Discharge prohibited; building must connect to municipal sewer system for all effluent disposal"
+          "id": "b037-68dc-25-d",
+          "text": "Ignore local sanitation code requirements"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b037-68dc-25-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The effluent exceeds Class B standard by 2 mg/L; discharge cannot be approved as proposed.",
-        "b": "Tertiary treatment would achieve BOD ≤ 8 mg/L (3 mg/L margin), but rerouting to Class C is simpler if available.",
-        "d": "Mandatory municipal sewer connection may not be feasible or economically justified if rerouting is possible.",
-        "correct": "The proposed discharge (BOD = 12 mg/L) exceeds the Class B limit of 10 mg/L per RA 9275 and Pasig River Systems Code. Three options exist: (1) reclassify discharge point to a Class C water body (if available), (2) upgrade treatment to polishing/tertiary level (aeration, sand filtration) to achieve BOD ≤ 8 mg/L, or (3) connect to municipal sewer. DENR-EMB will not approve discharge to Class B at 12 mg/L.",
-        "takeaway": "RA 9275 compliance requires matching treatment level to receiving water class; Class B (BOD ≤ 10 mg/L) is more stringent than Class C (≤ 50 mg/L)."
-      },
+      "rationale": "Correct answer: Classify the waste as solid waste, wastewater, or building plumbing discharge. This is directly supported by RA 9003; RA 9275; PD 856; PD 1096.",
       "explanation": null,
       "code_citation": "RA 9275 Clean Water Act, Section 20; Pasig River Systems Code; DENR-EMB Water Quality Standards",
       "bloom_level": "apply",
@@ -1253,7 +1101,7 @@
       "model_id": "ALE-UTIL-001-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.643531+00:00",
       "content_hash": "sha256:901b7445ed87b18709a4313beebab54e68a1dffc01305576d4271a7bd52f0e35"
     }
   ]

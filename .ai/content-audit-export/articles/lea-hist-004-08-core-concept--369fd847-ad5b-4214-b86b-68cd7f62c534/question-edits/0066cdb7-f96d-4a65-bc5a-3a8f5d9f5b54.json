@@ -2,9 +2,9 @@
   "question_id": "0066cdb7-f96d-4a65-bc5a-3a8f5d9f5b54",
   "baseline_hash": "sha256:cd70314287882ae5e2554af69925f2dcabf59024d0a1329dd7b8eecbee6b2f91",
   "action": "replace",
-  "reason": "source-audited-article-batch-121-local-first source-maps lea-hist-004-08-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
-  "approved_by": "codex-local-source-audit-batch-121",
-  "approved_at": "2026-05-13T15:55:13.115+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
     "parent_article_slug": "lea-hist-004-08-core-concept",
@@ -59,56 +59,28 @@
     "new_source_map_phase": true
   },
   "proposed": {
-    "question_id": "0066cdb7-f96d-4a65-bc5a-3a8f5d9f5b54",
-    "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
-    "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
-    "text": "For Islamic architecture in the Philippines, which option best matches the Batch 121 source-map anchor for this item?",
+    "text": "A decorative pattern features bold, angular, deeply carved geometric forms on wooden frames, door panels, and roof support brackets. It combines Islamic geometric principles with indigenous Southeast Asian aesthetics. Name this decorative tradition.",
     "options": [
       {
         "id": "a",
-        "text": "Arabesque"
+        "text": "Arabesque — interlocking Middle Eastern vegetal/geometric pattern"
       },
       {
         "id": "b",
-        "text": "Muqarnas"
+        "text": "Muqarnas — three-dimensional corbelled Islamic vaulting"
       },
       {
         "id": "c",
-        "text": "Okir"
+        "text": "Okir — the Maranao geometric relief carving on wood frames and panels"
       },
       {
         "id": "d",
-        "text": "Zellige"
+        "text": "Zellige — North African/Moroccan geometric tile work"
       }
     ],
     "correct_option_id": "c",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": {
-      "a": "Arabesque does not best match the Batch 121 source map for Islamic architecture in the Philippines. Use the local capture/refined map before relying on older broad wording.",
-      "b": "Muqarnas does not best match the Batch 121 source map for Islamic architecture in the Philippines. Use the local capture/refined map before relying on older broad wording.",
-      "c": "Okir is the source-safe answer for this Islamic architecture in the Philippines item under the Batch 121 local capture/refined map.",
-      "d": "Zellige does not best match the Batch 121 source map for Islamic architecture in the Philippines. Use the local capture/refined map before relying on older broad wording.",
-      "correct": "Okir matches the local source capture and refined source-map anchors for Islamic architecture in the Philippines.",
-      "takeaway": "Islamic architecture in the Philippines items should be answered from source-mapped architectural vocabulary, named monument anchors, and cautious claim limits."
-    },
-    "explanation": "Okir matches the local source capture and refined source-map anchors for Islamic architecture in the Philippines. Islamic architecture in the Philippines items should be answered from source-mapped architectural vocabulary, named monument anchors, and cautious claim limits.",
-    "code_citation": null,
-    "bloom_level": "apply",
-    "application_context": "recall",
-    "practice_context": [
-      "DESC"
-    ],
-    "difficulty": 0.5,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false,
-    "model_id": "ALE-HIST-004-08-004",
-    "prompt_image_url": null,
-    "created_at": "2026-03-23T19:27:24.126756+00:00",
-    "updated_at": "2026-05-06T14:40:16.67355+00:00",
-    "content_hash": "sha256:cd70314287882ae5e2554af69925f2dcabf59024d0a1329dd7b8eecbee6b2f91"
+    "rationale": "The article defines okir as 'Geometric relief carving pattern characteristic of Maranao decorative tradition; appears on door frames, roof brackets, wall panels; combines Islamic geometry with indigenous aesthetic.' [A]: Arabesque is interlocking vegetal/geometric patterns from Middle Eastern Islamic tradition. [B]: Muqarnas is three-dimensional corbelled vaulting, not relief carving. [D]: Zellige is geometric tile work from North Africa/Morocco.",
+    "explanation": "Arabesque is interlocking vegetal/geometric patterns from Middle Eastern Islamic tradition. Muqarnas is three-dimensional corbelled vaulting, not relief carving. Zellige is geometric tile work from North Africa/Morocco. The article defines okir as 'Geometric relief carving pattern characteristic of Maranao decorative tradition; appears on door frames, roof brackets, wall panels; combines Islamic geometry with indigenous aesthetic.' The article defines okir as 'Geometric relief carving pattern characteristic of Maranao decorative tradition; appears on door frames, roof brackets, wall panels; combines Islamic geometry with indigenous aesthetic.'.",
+    "code_citation": null
   }
 }

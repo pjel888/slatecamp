@@ -8,37 +8,31 @@
       "question_id": "ea4d3a09-5698-4720-a111-7425feb67ce6",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "Compare two office building designs in Quezon City, Philippines: Design X has a long axis North-South with no overhangs; Design Y has a long axis East-West with 60% overhangs on east/west facades. Both are 60 m × 30 m, 5-story buildings. Based on passive design principles, which design is expected to have significantly lower annual cooling energy consumption?",
+      "text": "What is passive design in the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Design X; North-South orientation maximizes passive ventilation."
+          "text": "Design that works with environment to reduce unwanted heat and use sun and breezes for comfort."
         },
         {
           "id": "b",
-          "text": "Design Y; East-West orientation + overhangs minimize solar heat gain."
+          "text": "A purely mechanical cooling system."
         },
         {
           "id": "c",
-          "text": "Both have equal energy consumption; other factors dominate."
+          "text": "A structural load combination."
         },
         {
           "id": "d",
-          "text": "Design X if the building is 10+ stories; Design Y if shorter."
+          "text": "A contract procurement method."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "N-S orientation does not maximize ventilation; wind paths are controlled by facade design (window placement, louvers), not cardinal orientation. Design X is thermally inferior for cooling.",
-        "c": "Orientation and shading are first-order factors in tropical cooling loads; they are not secondary concerns.",
-        "d": "Passive design principles apply equally to all building heights. The 5-story context does not change the passive superiority of E-W + overhangs.",
-        "correct": "Design Y will have significantly lower cooling loads (15–25% reduction per field studies in tropical climate). The E-W orientation reduces the exposed facade area facing peak morning/afternoon sun. The 60% overhangs block additional radiation. Design X exposes the 60 m sides to full east/west solar load, nearly doubling the affected facade area.",
-        "takeaway": "This is a comprehensive passive design comparison. Candidates should recognize that Design Y is the clear winner in tropical climate due to two compounding strategies: (1) reduced east/west facade area (E-W orientation), (2) solar blockage (overhangs). Together, these can save 20%+ in annual cooling energy—a major operating cost benefit."
-      },
+      "rationale": "Design that works with environment to reduce unwanted heat and use sun and breezes for comfort. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "analyze",
@@ -51,30 +45,30 @@
       "model_id": "ALE-DSGN-009-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.228892+00:00",
       "content_hash": "sha256:3c71aeaafc67c77039f7bc3ccb6b41ce13817840f11a5273d4676a44b923ed9b"
     },
     {
       "question_id": "4d14a17b-5205-42de-b1f0-21399470f6eb",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "A designer is deciding between two building orientations for a 60 m × 25 m commercial building in Manila. Design A has the 60 m side running East-West; Design B has the 60 m side running North-South. Based on passive design principles, which design minimizes solar heat gain?",
+      "text": "Which sequence is most source-aligned?",
       "options": [
         {
           "id": "a",
-          "text": "Design A (long axis E-W)"
+          "text": "Reduce heat gain, encourage ventilation, use shaded daylight, and create cooler outdoor areas."
         },
         {
           "id": "b",
-          "text": "Design B (long axis N-S)"
+          "text": "Add heat gain, seal openings, and ignore shade."
         },
         {
           "id": "c",
-          "text": "Both designs have equal solar heat gain."
+          "text": "Choose equipment first and ignore climate."
         },
         {
           "id": "d",
-          "text": "It depends on the building interior layout."
+          "text": "Select finishes before orientation."
         }
       ],
       "correct_option_id": "a",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Design B maximizes solar heat gain. The long 60 m sides are the primary solar targets in the tropics.",
-        "c": "The orientations are categorically different in their solar exposure. A ~3× difference in affected facade area translates to significant cooling load difference.",
-        "d": "Passive solar exposure is independent of interior layout. The exterior envelope's orientation is the controlling factor.",
-        "correct": "Design A is superior. By orienting the long (60 m) side East-West, only the 25 m short sides face direct morning and afternoon sun. Design B exposes the 60 m sides to intense east/west radiation, requiring much more cooling energy.",
-        "takeaway": "This test pattern directly assesses understanding of tropical passive design. Candidates must recognize that exposing a 60 m facade (vs. a 25 m facade) to east/west sun is a major design flaw in the Philippines. Always prefer to _narrow_ the building to the sun's path."
-      },
+      "rationale": "Reduce heat gain, encourage ventilation, use shaded daylight, and create cooler outdoor areas. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "apply",
@@ -101,44 +89,38 @@
       "model_id": "ALE-DSGN-009-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.225009+00:00",
       "content_hash": "sha256:5d940e5bf0f36272b7131cb016ccacc3efae6a13df13f1256fd7b7ba4b414095"
     },
     {
       "question_id": "a85b4f29-020b-4c4b-9ca2-534df7dac80d",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "For a west-facing facade of an office building in the Philippines, a 60% overhang ratio is specified. If the floor-to-ceiling height is 3.0 m, what is the minimum required depth of the overhang?",
+      "text": "Which architectural element handles sun control?",
       "options": [
         {
           "id": "a",
-          "text": "1.2 m"
+          "text": "Shade, orientation, glazing control, and reflective or light-colored surfaces."
         },
         {
           "id": "b",
-          "text": "1.5 m"
+          "text": "Only plumbing fixtures."
         },
         {
           "id": "c",
-          "text": "1.8 m"
+          "text": "Only structural columns."
         },
         {
           "id": "d",
-          "text": "2.4 m"
+          "text": "Only room names."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "1.2 m is 40% of floor height; insufficient for tropical west-facing exposure.",
-        "b": "1.5 m is 50% ratio; less than the recommended 60%.",
-        "d": "2.4 m is 80% ratio; excessive for a west facade (appropriate only for extreme orientations).",
-        "correct": "60% overhang ratio × 3.0 m floor-to-ceiling height = 1.8 m minimum overhang depth per tropical passive design guidelines (not codified in PD 1096). This depth effectively blocks direct solar radiation on the west facade during afternoon peak-load hours.",
-        "takeaway": "Overhang depth = floor height × 0.6. For a 3 m floor, multiply: 3 × 0.6 = 1.8 m. This is a straightforward calculation that appears frequently on the ALE in design scenarios."
-      },
+      "rationale": "Shade, orientation, glazing control, and reflective or light-colored surfaces. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "remember",
@@ -151,44 +133,38 @@
       "model_id": "ALE-DSGN-009-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.226275+00:00",
       "content_hash": "sha256:5c48cabeb076b0d43f46e1807264c934d7591dfe61c77ca364ae4538eefb5e7f"
     },
     {
       "question_id": "e13ea937-593d-4c9e-971d-26d689f54651",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "A building is designed with excellent passive features: E-W orientation, 60% overhangs on east/west facades, and 150 mm exposed concrete walls. However, the south facade has large unshaded glass windows facing the prevailing wind direction. From a passive design perspective, what is the primary concern?",
+      "text": "Which architectural element handles air paths?",
       "options": [
         {
           "id": "a",
-          "text": "The south facade is less important; this design is fully compliant with standard passive design principles."
+          "text": "Openings, vents, and building orientation toward prevailing winds."
         },
         {
           "id": "b",
-          "text": "The large south-facing windows compromise ventilation by blocking wind flow, which can lead to increased reliance on mechanical systems."
+          "text": "Unshaded glass only."
         },
         {
           "id": "c",
-          "text": "The south facade will transmit too much heat; it requires shading or operable louvered screens to balance thermal and ventilation goals."
+          "text": "Sealed partitions only."
         },
         {
           "id": "d",
-          "text": "South-facing windows are beneficial; they provide daylighting without solar heat gain in the tropics, which is a common misconception."
+          "text": "Paving color only."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The south facade cannot be ignored; it must balance multiple passive design goals (thermal control + wind capture).",
-        "b": "Large windows do not inherently block wind flow; wind passes through open windows. However, the concern is more subtle: fixed glass (not operable) prevents wind capture.",
-        "d": "Unshaded south-facing windows in the tropics transmit significant heat, especially in afternoon hours when global radiation is high. Daylighting must be balanced against thermal load.",
-        "correct": "While the south facade receives lower-angle solar radiation than east/west faces, unshaded large windows still transmit significant heat. Additionally, the south facade should be designed to capture prevailing monsoon winds (a key passive ventilation strategy in the Philippines). Large unshaded glass conflicts with both thermal and ventilation optimization. The solution is operable louvered screens or smaller, selectively shaded windows.",
-        "takeaway": "Passive design is a **system**. Individual features (orientation, overhangs, thermal mass) must coordinate. A south facade aligned with prevailing winds should be operable and semi-shaded to serve both ventilation and thermal goals. This is a sophisticated design pattern on the ALE."
-      },
+      "rationale": "Openings, vents, and building orientation toward prevailing winds. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "analyze",
@@ -201,44 +177,38 @@
       "model_id": "ALE-DSGN-009-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.227248+00:00",
       "content_hash": "sha256:c20126f6f814e10d11e15dec8557ea297e934204092881cb1da0090f93048a0f"
     },
     {
       "question_id": "b5c1e2a3-768f-4b97-9a0b-2ed0ffcafa7e",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "For passive design in the Philippines, thermal mass (exposed concrete walls) is integrated into the building envelope. At a 100 mm minimum thickness of exposed concrete, what is the primary thermal benefit?",
+      "text": "Why are verandas and deep balconies useful in this source scope?",
       "options": [
         {
           "id": "a",
-          "text": "Increased structural strength; no thermal benefit, as the primary purpose is load-bearing"
+          "text": "They can shade and cool incoming air."
         },
         {
           "id": "b",
-          "text": "Thermal lag: absorbs daytime heat and releases it at night, smoothing temperature swings."
+          "text": "They are unrelated to passive design."
         },
         {
           "id": "c",
-          "text": "Reduced window-to-wall ratio due to concrete wall area, which may impact natural lighting"
+          "text": "They always increase heat gain."
         },
         {
           "id": "d",
-          "text": "Improved fire rating; thermal mass is a fire-safety feature, enhancing building resilience"
+          "text": "They block every breeze by default."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "While concrete has structural benefits, the thermal mass function is distinct and critical for passive design.",
-        "c": "Reduced window-to-wall ratio is a separate design goal; thermal mass does not directly control it.",
-        "d": "Thermal mass is not a fire-safety feature; fire resistance depends on assembly rating, not thickness alone.",
-        "correct": "Thermal mass (exposed concrete, masonry) exhibits thermal lag: it absorbs solar heat during the day and releases it passively at night. A 100 mm minimum thickness provides 8–12 hours of lag, allowing nighttime ventilation to cool the building. This is a core passive design strategy per PD 1096 Section 808.",
-        "takeaway": "Thermal mass works by _time-shifting_ heat: store it by day, release it by night. Pair with nighttime cross-ventilation for maximum effect. In the Philippines, this can reduce peak indoor temperature by 3–5°C without air conditioning."
-      },
+      "rationale": "They can shade and cool incoming air. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-DSGN-009-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.229606+00:00",
       "content_hash": "sha256:cb6fd48df98e3cd8db3e5a5047e1b2c4bd12ca30bf2aa4117f1205e188783baa"
     },
     {
       "question_id": "fd405ab5-8836-4599-89e1-b7bdaa925192",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "A building has a 3.6 m floor-to-ceiling height. The architect proposes a 1.8 m deep overhang on the east and west facades. What is the effective overhang ratio?",
+      "text": "When should active cooling be the first answer?",
       "options": [
         {
           "id": "a",
-          "text": "40%"
+          "text": "Only when the item specifically asks for equipment-based cooling rather than passive design."
         },
         {
           "id": "b",
-          "text": "50%"
+          "text": "Every time passive design is mentioned."
         },
         {
           "id": "c",
-          "text": "60%"
+          "text": "Whenever shade is available."
         },
         {
           "id": "d",
-          "text": "75%"
+          "text": "Whenever natural ventilation is possible."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "40% would require a 1.44 m overhang for this floor height.",
-        "c": "60% would require a 2.16 m overhang for this floor height.",
-        "d": "75% would require a 2.7 m overhang for this floor height.",
-        "correct": "Overhang ratio = overhang depth ÷ floor-to-ceiling height = 1.8 m ÷ 3.6 m = 0.5 = 50% per passive design principles.",
-        "takeaway": "Reverse calculation: divide proposed depth by floor height to find ratio. A 50% ratio is acceptable but less aggressive than the recommended 60% for tropical east/west facades."
-      },
+      "rationale": "Only when the item specifically asks for equipment-based cooling rather than passive design. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "understand",
@@ -301,44 +265,38 @@
       "model_id": "ALE-DSGN-009-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.232116+00:00",
       "content_hash": "sha256:34edcbbe9588ec61c16d254cb0848094d53f923107fb06d6ced156f37128ebd0"
     },
     {
       "question_id": "614a0eb8-5f1a-4ccb-add0-cb226e4c8db6",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "A building footprint is 45 m (long dimension) × 18 m (short dimension). It is oriented with the 45 m side running North-South. Based on passive design principles for tropical climates, is this orientation recommended?",
+      "text": "What is the common trap in passive design questions?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, this orientation minimizes solar heat gain."
+          "text": "Treating strategies as isolated tricks instead of coordinated climate responses."
         },
         {
           "id": "b",
-          "text": "No, the long axis should be East-West to minimize heat gain."
+          "text": "Pairing shade with airflow."
         },
         {
           "id": "c",
-          "text": "No, but only if the building is taller than 10 stories."
+          "text": "Orienting for prevailing winds."
         },
         {
           "id": "d",
-          "text": "Yes, North-South orientation provides better cross-ventilation."
+          "text": "Using shaded daylight."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "This orientation maximizes, not minimizes, solar heat gain. The 45 m sides facing east/west receive peak afternoon radiation.",
-        "c": "Building height does not change the orientation principle; passive design applies equally to all heights.",
-        "d": "Cross-ventilation is determined by window and facade placement, not cardinal orientation. In fact, the ideal wind path in the Philippines (south-facing) is perpendicular to the long side in this design, reducing ventilation efficiency.",
-        "correct": "This is a non-compliant design per passive design best practices. Orienting the 45 m length North-South exposes both long sides to east/west radiation, creating intense solar heat gain. The long axis should be East-West.",
-        "takeaway": "This is a critical mistake pattern on the ALE. Candidates must instinctively recognize N-S orientation as sub-optimal for tropical Philippines. The large 45 m exposure to morning and afternoon sun is the diagnostic clue."
-      },
+      "rationale": "Treating strategies as isolated tricks instead of coordinated climate responses. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "understand",
@@ -351,44 +309,38 @@
       "model_id": "ALE-DSGN-009-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.230458+00:00",
       "content_hash": "sha256:9c3d953bdfdbcb5f0221b5cf640669f832d370d3911ed94330c8071641c97e7b"
     },
     {
       "question_id": "f9e1e302-7868-4921-aee9-2f797294f837",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "In tropical climate design for the Philippines, what is the recommended orientation for the long axis of a building?",
+      "text": "Which choice best supports hot-humid passive design?",
       "options": [
         {
           "id": "a",
-          "text": "North-South"
+          "text": "Minimum heat gain with useful air movement."
         },
         {
           "id": "b",
-          "text": "East-West"
+          "text": "Maximum heat gain with wind resistance."
         },
         {
           "id": "c",
-          "text": "It does not matter; orientation has no significant impact."
+          "text": "No openings and no shade."
         },
         {
           "id": "d",
-          "text": "Depends on the building occupancy type."
+          "text": "Dark exposed walls."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "North-South is INCORRECT for tropical climates. This orientation exposes the long sides (typically 50+ m) to direct east/west radiation, maximizing heat gain. This is ERR-DSGN-035.",
-        "c": "Orientation has profound impact on cooling loads—studies show 15–25% differences in annual cooling energy depending on alignment.",
-        "d": "Orientation is independent of occupancy; the thermal physics of the sun's path applies equally to all uses.",
-        "correct": "The long axis should be oriented East-West per Tropical passive design best practices (not inper Philippine Green Building Council guidelines and tropical design best practicess. This minimizes the footprint exposed to intense east/west sun radiation in the tropics.",
-        "takeaway": "**East-West is the tropical rule.** At 14.5°N latitude, the sun is nearly overhead at noon, making east/west facades the critical exposure. A N-S long axis is a costly design error in the Philippines."
-      },
+      "rationale": "Minimum heat gain with useful air movement. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808, ERR-DSGN-035",
       "bloom_level": "remember",
@@ -401,44 +353,38 @@
       "model_id": "ALE-DSGN-009-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.231160+00:00",
       "content_hash": "sha256:5381df44630bd5771ff9e1c8fd870f72d62875fb8114b74d9b6beb19604b7acc"
     },
     {
       "question_id": "73b403ab-fe9a-4984-ab7d-ad343f251a6f",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "An architect proposes a building orientation that deviates 25° from the ideal East-West alignment, rotated toward the northeast. According to PD 1096 passive design guidelines, is this orientation acceptable?",
+      "text": "How should daylight be admitted in passive design?",
       "options": [
         {
           "id": "a",
-          "text": "No, any deviation from cardinal directions is non-compliant, as strict adherence to cardinal orientations is required for optimal passive solar design."
+          "text": "Through shaded windows or other shaded daylighting strategies."
         },
         {
           "id": "b",
-          "text": "Yes, deviations up to ±15° are acceptable; this 25° deviation is non-compliant."
+          "text": "Through unprotected glass regardless of heat gain."
         },
         {
           "id": "c",
-          "text": "Yes, deviations up to ±30° are acceptable; this 25° deviation is within tolerance."
+          "text": "Only through sealed opaque walls."
         },
         {
           "id": "d",
-          "text": "It depends on the solar path and the building's latitude, which can influence the effectiveness of passive solar strategies."
+          "text": "Only by mechanical cooling."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Some deviation is tolerable; ±15° is the acceptable range.",
-        "c": "The guideline is ±15°, not ±30°. A 25° deviation is outside the comfort zone.",
-        "d": "While latitude and solar path inform the ratio, PD 1096 sets a clear tolerance for the Philippines: ±15°.",
-        "correct": "Deviations up to ±15° from cardinal (E-W) orientation are acceptable per PD 1096 Section 808. A 25° deviation exceeds this tolerance and is considered sub-optimal. Beyond 30°, the orientation becomes significantly misaligned with passive design intent.",
-        "takeaway": "Memorize the tolerance: ±15° deviation from cardinal is acceptable. Beyond that, cooling loads increase noticeably. A 25° deviation is explicitly non-compliant for passive design strategy in the code."
-      },
+      "rationale": "Through shaded windows or other shaded daylighting strategies. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "apply",
@@ -451,45 +397,38 @@
       "model_id": "ALE-DSGN-009-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.232769+00:00",
       "content_hash": "sha256:d7a6c28093e7819528d7e35685c6cf232657bf10a454b54864718d1c5da7f8e4"
     },
     {
       "question_id": "a4be99e9-1eea-413b-9d13-0f8cf7584854",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
       "topic_id": "31f336d6-7903-4fb8-96d8-9375c29c9b0a",
-      "text": "An architect is revising a building design to comply with passive design standards for the Philippines. The current design (Design A) has a 40 m × 35 m footprint with the 40 m side running North-South, 1.2 m overhangs on all facades, and lightweight aluminum frame (no thermal mass). Proposed revision (Design B): rotate to E-W orientation (40 m E-W), add 2.0 m overhangs on east/west facades (assuming 3.3 m floor height), and integrate 120 mm exposed concrete thermal mass. How many passive design improvements are made in Design B?",
+      "text": "Why is landscape part of passive design?",
       "options": [
         {
           "id": "a",
-          "text": "One improvement (orientation), which is the most significant change in terms of solar exposure."
+          "text": "It can shade, cool outdoor air, and support cooler microclimate around the building."
         },
         {
           "id": "b",
-          "text": "Two improvements (orientation + overhang depth), both of which contribute to better shading and thermal performance."
+          "text": "It is forbidden near passive buildings."
         },
         {
           "id": "c",
-          "text": "Three improvements (orientation + overhang depth + thermal mass)."
+          "text": "It replaces all windows."
         },
         {
           "id": "d",
-          "text": "No improvement; all three changes were already required in Design A, making the revisions redundant."
+          "text": "It is unrelated to comfort."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Orientation is one, but overhang and thermal mass improvements are also made.",
-        "b": "Orientation and overhang are two, but thermal mass is the third independent improvement.",
-        "c": "Correct. All three improvements are made, and each is a key passive design strategy.",
-        "d": "Design A fails on all three counts; all revisions are necessary improvements.",
-        "correct": "Design B addresses three distinct passive deficiencies in Design A: (1) Orientation: E-W is superior to N-S in tropics. (2) Overhang depth: 2.0 m ÷ 3.3 m ≈ 60% ratio, vs. Design A's 1.2 m (36% ratio). (3) Thermal mass: 120 mm exposed concrete vs. lightweight frame. Each is independently required per PD 1096 Section 808.",
-        "takeaway": "This is a holistic evaluation question. Passive design is not a single feature but a package of coordinated strategies. Candidates must audit all three domains (orientation, shading, thermal mass) and recognize deficiencies in each. This pattern tests synthesis and systems thinking."
-      },
+      "rationale": "It can shade, cool outdoor air, and support cooler microclimate around the building. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
       "explanation": null,
       "code_citation": "PD 1096 Section 808",
       "bloom_level": "analyze",
@@ -502,7 +441,7 @@
       "model_id": "ALE-DSGN-009-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:13.048059+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:27.228131+00:00",
       "content_hash": "sha256:ecac4be5de91744230a64cda7ceef71890c4556833d256a445f189a8410c4517"
     }
   ]

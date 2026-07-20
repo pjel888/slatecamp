@@ -23,5 +23,54 @@
       "detailing-precast-integrity",
       "detailing-cover"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "What is an exam-safe construction-joint answer for this batch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is a decorative line with no structural review."
+      },
+      {
+        "id": "b",
+        "text": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement."
+      },
+      {
+        "id": "c",
+        "text": "It automatically creates composite action without preparation."
+      },
+      {
+        "id": "d",
+        "text": "It cancels all connection and tie requirements."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It is a decorative line with no structural review. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "b": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement. This stays inside the Batch 145 local source boundary for Precast Concrete, Composite Topping, and Connection Integrity.",
+      "c": "It automatically creates composite action without preparation. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "d": "It cancels all connection and tie requirements. is not the best answer because it changes the structural concept or adds a claim outside the Batch 145 local source boundary.",
+      "correct": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement. Supported by detailing-precast-integrity.",
+      "takeaway": "For Precast Concrete, Composite Topping, and Connection Integrity, classify the structural condition and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-precast-integrity",
+      "checked_sources": [
+        "bsi-prestress-precast",
+        "detailing-precast-integrity",
+        "detailing-cover"
+      ]
+    },
+    "explanation": "It is a source-controlled contact condition where surface preparation and roughening must match the cited requirement. Supported by the Batch 145 local source boundary: detailing-precast-integrity.",
+    "code_citation": "detailing-precast-integrity",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-05-002"
   }
 }

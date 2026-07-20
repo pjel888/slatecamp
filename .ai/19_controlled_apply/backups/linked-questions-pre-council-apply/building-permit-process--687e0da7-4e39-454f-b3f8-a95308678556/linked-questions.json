@@ -1,0 +1,2516 @@
+{
+  "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b4ef4ec9fac10911d5950105ff4621daf5b7db0c4e24ee04f57b92285f2eec0b",
+  "question_count": 57,
+  "questions": [
+    {
+      "question_id": "c94382d9-f23d-4f83-a468-2825f8903f1c",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Compared to the Philippine Code's heat clearance of 600 mm, the US NFPA 40 standard requires a larger clearance. What is the NFPA 40 heat clearance distance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "450 mm"
+        },
+        {
+          "id": "B",
+          "text": "600 mm"
+        },
+        {
+          "id": "C",
+          "text": "750 mm"
+        },
+        {
+          "id": "D",
+          "text": "900 mm"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "NFPA 40 requires a minimum clearance of 900 mm (36 inches) from heating appliances — 50% more conservative than the Philippine Code's 600 mm. On this specific parameter, NFPA 40 is the more restrictive standard. The PH Code's shorter clearance may reflect different pipe operating temperature assumptions or different building typologies in Philippine practice.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1016931d7632c5184ed37e011c3e6cc50fc70ca43b37835d73d0e2d819afc322"
+    },
+    {
+      "question_id": "56071d4b-5a4d-461e-8859-8fce88f2b1dc",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Compared to the Philippine Code (110 kg per cabinet), the US NFPA 40 standard is more permissive. What is the NFPA 40 maximum per cabinet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "220 kg"
+        },
+        {
+          "id": "B",
+          "text": "340 kg"
+        },
+        {
+          "id": "C",
+          "text": "450 kg"
+        },
+        {
+          "id": "D",
+          "text": "500 kg"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "NFPA 40 permits up to 340 kg (750 lbs) per storage cabinet, which is more than three times the Philippine Code's 110 kg limit. This reflects the PH Code's greater conservatism, influenced by the tropical climate (higher ambient temperatures reduce the margin to film degradation and ignition) and the generally older building stock in which film storage typically occurs in the Philippines.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:79e38673f42602c54c75493c7995486a4b1ce0672aa09abf6ebfd7bbe932ff9e"
+    },
+    {
+      "question_id": "216faec4-026c-4436-a3c1-1d49a2218189",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building has a rectangular footprint 60 m long × 40 m wide. It fronts on a 10-meter-wide street on two long sides. What is the frontage increase factor (If) under IBC Section 506.2, assuming W = 30 ft (capped)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "If = 0.25"
+        },
+        {
+          "id": "b",
+          "text": "If = 0.35"
+        },
+        {
+          "id": "c",
+          "text": "If = 0.60"
+        },
+        {
+          "id": "d",
+          "text": "If = 0.75"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is a full step-by-step IBC frontage calculation. Candidates must convert meters to feet for W, apply the cap at 30 ft, calculate F/P correctly, and apply the simplified formula when W = 30 ft. Option A (0.25) is the threshold value — forgetting to subtract 0.25. Option C (0.60) is the raw F/P ratio — forgetting to subtract 0.25. Option D (0.75) is the maximum cap — forgetting the F/P and just using the cap.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5d543c3f548bdbb2ad1b4e143575182c71e3bc3fa7c513a204c023bcc7e6ab5e"
+    },
+    {
+      "question_id": "bbe87f0f-7267-4c71-aaf2-cd0c076afc6f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What happens under PD 1096 Section 706 when a building that received an area increase approval subsequently removes its required fire protection systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The original building permit automatically covers the reduction, negating the need for further compliance or adjustments."
+        },
+        {
+          "id": "b",
+          "text": "The Building Official may declare the building dangerous under Section 214 and initiate abatement proceedings, including revocation of the CO"
+        },
+        {
+          "id": "c",
+          "text": "The building owner must re-apply for Section 706 within 60 days, ensuring compliance with updated safety standards and regulations."
+        },
+        {
+          "id": "d",
+          "text": "No action can be taken since the area increase was already approved, leaving the building's status unchanged despite modifications."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This question tests the enforcement dimension of Section 706. A building permit and its associated approvals (including area increases) are not permanent exemptions from code compliance. The Building Official retains full enforcement authority over the life of the building. Removal of fire protection systems that were part of the Section 706 justification would constitute a material change in the conditions that supported the original approval.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e6517814a5c26341be5bed146ceb37219c7e377d2f73c1a43a7a48be10efbb6"
+    },
+    {
+      "question_id": "60457c0e-5663-4cbd-b035-410956eeeba0",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The design of a public school building in Quezon City was prepared by the DPWH. The building will be funded by a national government appropriation. Is a building permit required? Are permit fees required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No permit required; no fees required"
+        },
+        {
+          "id": "b",
+          "text": "Permit required; fees waived"
+        },
+        {
+          "id": "c",
+          "text": "No permit required; fees waived"
+        },
+        {
+          "id": "d",
+          "text": "Permit required; fees required"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 'no fee' does NOT mean 'no permit' distinction is the most important single rule in this topic. Option A applies fee exemption as permit exemption — a critical error. Option C incorrectly extends fee exemption to permit exemption. Option D applies both requirements when only the fee is at issue. Public buildings are among the most frequently tested fee exemption scenarios.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9a2f5f8ac2b1e94d5d6d65e1beacf5e716383b45cf62de890426deb52fcebb76"
+    },
+    {
+      "question_id": "34e7d6e5-84f1-4ca6-bfc7-02cdadca6286",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 301.2.b.ii of the Revised IRR, what type of permit is required for a fence that is 1.25 m in height?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full Building Permit (Group J-2 occupancy)"
+        },
+        {
+          "id": "b",
+          "text": "Accessory Permit"
+        },
+        {
+          "id": "c",
+          "text": "Full permit exemption (no permit required)"
+        },
+        {
+          "id": "d",
+          "text": "Fencing permit (separate from accessory permit)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The three-threshold fence rule: ≤1.20 m = exempt; 1.20m < fence ≤ 1.80m = Accessory Permit; >1.80m = Full Building Permit (Group J-2). At 1.25 m, the fence is above the garden masonry exemption threshold, so it requires an Accessory Permit. Option C is the trap — some candidates assume the 1.20 m threshold exempts all fences below 1.80 m.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d1998a713e8c21b18bbc5040e74a24e489c2abe2d62a656f32ab48e80ad1c410"
+    },
+    {
+      "question_id": "d1eb77ed-eec9-4f53-9eb2-75dd90539340",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 301.3.a.iv of the Revised IRR, what is the maximum depth for a garden pool for water plants or aquarium fish to be permit-exempt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 mm"
+        },
+        {
+          "id": "b",
+          "text": "500 mm"
+        },
+        {
+          "id": "c",
+          "text": "750 mm"
+        },
+        {
+          "id": "d",
+          "text": "1,000 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 500 mm depth threshold is an extremely specific detail — candidates must be precise. 300 mm (Option A) is the 1.20 m fence height converted to mm context — a distractor linking to the fence rules. 750 mm and 1,000 mm are larger thresholds with no basis in this provision.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f57d7e73f0a30c8964f394080cba9bfdd533b62898da66cd1c3f9019bdcb960c"
+    },
+    {
+      "question_id": "77fd460b-82bd-4524-bf37-cc99c6211cd7",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 212 of the Revised IRR, what are the administrative fine amounts for Light, Less Grave, and Grave violations respectively?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Light: P3,000; Less Grave: P5,000; Grave: P8,000"
+        },
+        {
+          "id": "b",
+          "text": "Light: P5,000; Less Grave: P8,000; Grave: P10,000"
+        },
+        {
+          "id": "c",
+          "text": "Light: P8,000; Less Grave: P10,000; Grave: P15,000"
+        },
+        {
+          "id": "d",
+          "text": "Light: P2,000; Less Grave: P5,000; Grave: P10,000"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mnemonic: '5-8-10' — think of it as a fragmented phone number. Light = P5,000; Less Grave = P8,000; Grave = P10,000. The graduated structure reflects proportionality: missing a posted sign (Light) has minimal safety impact; defying a stoppage order (Grave) directly endangers lives and warrants the maximum penalty.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e506dd224e49a297bfb359d07cadb11372b3151c7c2cd16277ed3954aa4917c7"
+    },
+    {
+      "question_id": "68e7f2d9-f300-4c08-bc60-34230015d439",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 209 of PD 1096, which of the following structures are EXEMPT from BUILDING PERMIT FEES (but NOT from the permit requirement itself)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any residential building with a floor area under 100 sq.m, provided it is not part of a commercial development"
+        },
+        {
+          "id": "b",
+          "text": "Public buildings AND traditional indigenous family dwellings costing P15,000 or less with native materials"
+        },
+        {
+          "id": "c",
+          "text": "All government-owned structures, regardless of cost or materials, unless specified otherwise by local ordinances"
+        },
+        {
+          "id": "d",
+          "text": "Structures built within subdivision developments approved by HLURB, subject to specific zoning regulations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A has no basis in Sec. 209 — there is no 'under 100 sq.m' fee exemption for residential buildings. Option C is overbroad — not all government-owned structures are fee-exempt; the structure must be funded by the government and be of the type contemplated (schools, hospitals, etc.). Option D has no basis in Sec. 209. The P15,000 threshold is specific and is a common exam detail.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:844cd15dc5991e437546b12ac226f2dcd5ff3e27668840f0653e159aab00c487"
+    },
+    {
+      "question_id": "50af96f9-cc07-4e6f-9cff-501a00778240",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An owner builds a residential house without any permit. Inspectors discover the violation when the superstructure is already 3.0 m above established grade. What surcharge applies, in addition to any administrative fines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10% of the building permit fees"
+        },
+        {
+          "id": "b",
+          "text": "25% of the building permit fees"
+        },
+        {
+          "id": "c",
+          "text": "50% of the building permit fees"
+        },
+        {
+          "id": "d",
+          "text": "100% of the building permit fees"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mnemonic: '10-25-50-100' as the surcharge escalator. The surcharge is separate from and in addition to administrative fines. The escalating structure is designed to deter owners from continuing illegal construction — each additional meter of work increases the financial penalty. The 100% surcharge at 2.00 m+ above grade eliminates any cost-savings rationale for building without a permit.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c1b877eacefdf5ee66944654666ec490741fa4bef95ca2aeda675252b2f751b4"
+    },
+    {
+      "question_id": "f8ccd35f-7773-4e7d-afe1-f38616759719",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 213 of PD 1096, what are the maximum criminal penalties for willful violations of the National Building Code?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fine of P10,000 and/or imprisonment up to 1 year"
+        },
+        {
+          "id": "b",
+          "text": "Fine of P20,000 and/or imprisonment up to 2 years"
+        },
+        {
+          "id": "c",
+          "text": "Fine of P50,000 and/or imprisonment up to 3 years"
+        },
+        {
+          "id": "d",
+          "text": "Fine of P100,000 and/or imprisonment up to 5 years"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mnemonic: '20-2' — P20,000 and 2 years. These are courts-only penalties, requiring criminal prosecution. They are separate from and more severe than administrative fines (P10,000 maximum). Option A applies the administrative fine cap to criminal sanctions. The 2-year maximum imprisonment reflects the serious life-safety implications of willful code violations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:beb5b05a7444d975a02144e1b7a606d6b4009c0069abe2e3b23ac2ce3eabb37e"
+    },
+    {
+      "question_id": "1fe94659-47ec-4231-87b6-6f1f2801f9ab",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building permit application is submitted on February 10. After a compliance review, the applicant pays all required fees on March 1. The Building Official is busy. By what date MUST the BO issue or formally deny the permit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "February 25 (15 days from submission)"
+        },
+        {
+          "id": "b",
+          "text": "March 16 (15 days from payment)"
+        },
+        {
+          "id": "c",
+          "text": "March 31 (30 days from payment)"
+        },
+        {
+          "id": "d",
+          "text": "Within a reasonable time, at the BO's discretion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "If denied, the BO must communicate the denial in writing within the same 15-day period, specifying which Code provisions were not met. This question combines the timeline rule with a calendar arithmetic problem — a common ALE question format.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:24a71fd761a74efcc37419cbe2ee186f679491ac6b6b2403f3ca574e6d07e45d"
+    },
+    {
+      "question_id": "2c52baa1-e3fc-445c-9a6e-e2e0f716bf60",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A homeowner builds a 1.60 m-high concrete perimeter fence around their property. Which of the following is the correct permitting requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No permit required — fences under 1.80 m are fully exempt"
+        },
+        {
+          "id": "b",
+          "text": "No permit required — only walls above 1.20 m need permits"
+        },
+        {
+          "id": "c",
+          "text": "Accessory Permit required"
+        },
+        {
+          "id": "d",
+          "text": "Full Building Permit required"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The most common error is assuming 1.80 m is the lower threshold — it is actually the upper threshold for the Accessory Permit bracket. Option A is the most common wrong answer. Option B misidentifies the 1.20 m threshold as applying to all fences, when it applies only to garden masonry walls. Option D applies the full Building Permit threshold incorrectly.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26cd96d096cc8f9dfc76dd791dec3242b16cf6726116c52f1400945fcfa1db87"
+    },
+    {
+      "question_id": "b24e34e7-4b7d-4970-afb0-0db40e7ef64d",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 305 of PD 1096, a building permit becomes NULL AND VOID if either condition occurs. What are these two conditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No work begins within 6 months OR work stops for 60 consecutive days, which could indicate a lack of commitment or unforeseen project delays"
+        },
+        {
+          "id": "b",
+          "text": "No work begins within 1 year from permit issuance OR work is abandoned for 120 consecutive days after commencement"
+        },
+        {
+          "id": "c",
+          "text": "No work begins within 2 years OR the building official does not conduct an inspection within 90 days, potentially leading to regulatory non-compliance"
+        },
+        {
+          "id": "d",
+          "text": "Fees are not paid within 30 days OR construction does not start within 6 months, reflecting financial or administrative oversight"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Mnemonic: '1 year to START; 120 days to NOT STOP.' The one-year commencement rule prevents landowners from hoarding approved permits. The 120-day abandonment rule ensures half-built structures — which are hazardous — cannot be left open-ended. Option A uses wrong time thresholds (6 months and 60 days). Option C uses 2 years and 90 days. Option D mixes fee payment with permit validity.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e2496ba525625c85ccd3907c9989c568c83ff4edc7c82424b0d947f89cb6a1ce"
+    },
+    {
+      "question_id": "2d8ada85-005f-47df-8797-ba2edf2fc41f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 304 of PD 1096, when does the 15-day clock for the Building Official to issue or deny a building permit START?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From the date of application submission"
+        },
+        {
+          "id": "b",
+          "text": "From the date of payment of the required fees"
+        },
+        {
+          "id": "c",
+          "text": "From the date of the first document review"
+        },
+        {
+          "id": "d",
+          "text": "From the date all plans are fully approved by the OBO"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is the most frequently tested trap in the permit timeline topic. Exam questions will give both a submission date and a payment date, then ask for the deadline. The correct answer always uses the payment date. Option A (submission date) is the most common wrong answer — candidates who use it will arrive at the wrong deadline.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8e2d80ecbf7ea5d1dfb051e66aa4ad1942428d6847f480d153486ef312134732"
+    },
+    {
+      "question_id": "ed2ba11e-d2e7-40cc-9003-1ebc8e8fcad6",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 301.3 of the Revised IRR, which of the following is NOT exempt from requiring a building permit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sheds not exceeding 6.00 sq.m, completely detached, for private use"
+        },
+        {
+          "id": "b",
+          "text": "Open terraces or patios resting directly on the ground not exceeding 20.00 sq.m"
+        },
+        {
+          "id": "c",
+          "text": "Garden masonry walls not exceeding 1.20 m in height"
+        },
+        {
+          "id": "d",
+          "text": "Any structural renovation that does not involve load-bearing members"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Options A, B, and C are all listed in Sec. 301.3 as permit-exempt minor constructions. Option D uses the word 'renovation' — structural or non-structural renovation that alters the building's structure requires a permit. Only non-structural REPAIR (replacement in kind) is exempt. The distinction between repair and renovation is critical.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ec49604683f269f9ccfea89f705eb92b2613ce6796002b51251a1a21d0f37b5"
+    },
+    {
+      "question_id": "fd589783-41bf-40e4-9396-46e3f39183af",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building permit was issued on January 15. The owner delays construction. When does the permit expire if no work has commenced at all?",
+      "options": [
+        {
+          "id": "a",
+          "text": "January 15 of the following year"
+        },
+        {
+          "id": "b",
+          "text": "120 days after January 15"
+        },
+        {
+          "id": "c",
+          "text": "6 months after January 15"
+        },
+        {
+          "id": "d",
+          "text": "The permit does not expire unless formally revoked by the Building Official"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The exam frequently tests whether candidates can distinguish the two permit-killing triggers: (1) Failure to start within 1 year → permit void; (2) Abandonment for 120 days after starting → permit void. These are independent. Option B (120 days) is the abandonment trigger — but abandonment can only occur AFTER construction has started.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:14.08678+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bc2b1794b657b90c55948f37b6382458b961e785f6d7dec5e79442de1cb49c42"
+    },
+    {
+      "question_id": "973890da-0e56-4e82-97f8-59800ff5c6dc",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the relationship between the construction logbook and the Certificate of Completion in the CO application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The logbook is submitted first; the Certificate of Completion is submitted as a summary of the logbook, detailing all major construction milestones"
+        },
+        {
+          "id": "b",
+          "text": "The logbook and Certificate of Completion are separate, simultaneous submissions — the logbook is the full record; the Certificate of Completion is the sworn declaration"
+        },
+        {
+          "id": "c",
+          "text": "The Certificate of Completion replaces the logbook in the CO application, serving as the sole document required for final approval"
+        },
+        {
+          "id": "d",
+          "text": "Only the logbook is required; the Certificate of Completion is optional unless specified by the local building authority"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A incorrectly frames one as a summary of the other. Option C eliminates the logbook as a separate required document. Option D eliminates the Certificate of Completion — both are mandatory under Sec. 309.2. The distinction matters because each serves a different evidentiary function in the CO process.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.005539+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ee099c18fb3c65ffd85c38375a092ea93cee15d804cc875b6f441d56bc1c56a5"
+    },
+    {
+      "question_id": "97b9c33c-0cc2-4d75-a38e-6af0c7bbbbf3",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A large mixed-use development has 12 floors. Floors 1–4 (commercial podium) are fully complete. Floors 5–12 are still under construction. The developer wants to open the commercial podium immediately. What is the correct mechanism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wait for all 12 floors to be completed before any occupancy is permitted, ensuring full compliance with building completion standards"
+        },
+        {
+          "id": "b",
+          "text": "The Building Official may issue a Partial Certificate of Occupancy covering Floors 1–4 only"
+        },
+        {
+          "id": "c",
+          "text": "Floors 1–4 may be occupied without a CO since only residential floors require a CO, according to local building regulations"
+        },
+        {
+          "id": "d",
+          "text": "Obtain a temporary building permit for the commercial floors, allowing for limited occupancy under specific conditions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This tests the Partial CO provision — a practical mechanism for large phased projects. Option A contradicts Sec. 309.8 directly. Option C violates the fundamental rule of Sec. 309.1 — no building may be occupied without a CO. Option D misidentifies the mechanism — a temporary permit does not authorize occupancy.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.005539+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:44dd8bc50a2b8d4606533af9f2d036f6565dd4a6c670120656652100d66c7384"
+    },
+    {
+      "question_id": "0fc93322-82f2-423d-9783-3428026e5ef5",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 309.5, the OBO final inspection is based on which documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Original building permit and fee receipt, including any amendments filed during construction"
+        },
+        {
+          "id": "b",
+          "text": "Certificate of Completion, logbook, inspection sheets, original approved plans, and as-built plans"
+        },
+        {
+          "id": "c",
+          "text": "Fire Safety Inspection Certificate only, as required by the local fire code"
+        },
+        {
+          "id": "d",
+          "text": "Structural engineer's certificate and geotechnical report, if applicable to the project scope"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The OBO inspection requires comparing BOTH the original approved plans (what was permitted) and the as-built plans (what was actually built). Any deviation between the as-built plans and the actual building — even if the deviation was necessitated by field conditions — can trigger a stop in the CO process until the discrepancy is documented and approved.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.005539+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:229912b3b658d3bf4e6ac04baf0d6d875caa2da4793a5768d949cc4cb51c3295"
+    },
+    {
+      "question_id": "ede73de3-0c53-420f-bdae-4fe11ff495a1",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the primary purpose of the construction logbook under Section 308.4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To record the owner's instructions to the contractor, including any changes to the original plans and specifications"
+        },
+        {
+          "id": "b",
+          "text": "To serve as the official contemporaneous record of construction, including daily progress, test results, and weather conditions"
+        },
+        {
+          "id": "c",
+          "text": "To document the building permit application process, ensuring all necessary approvals and inspections are recorded"
+        },
+        {
+          "id": "d",
+          "text": "To track material costs for the owner's accounting purposes, providing a detailed breakdown of expenses for financial auditing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The logbook is not a cost-tracking document (Option D), not a permit application record (Option C), and not an instruction log (Option A). Its legal significance stems from its role as the contemporaneous, on-site, professional record of what was actually built and under what conditions — essential for post-construction disputes, insurance claims, or regulatory inquiries.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.005539+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4615356a8ef035e16cc63a57ecb14d85f689330fce4517295b9f9460bb73ea66"
+    },
+    {
+      "question_id": "9bfdfa9f-2c5b-41ca-9baa-3104bc944b92",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1301, which licensed professional must sign and seal electrical attachment plans submitted as part of the building permit application?",
+      "options": [
+        {
+          "id": "em-017-a",
+          "text": "Registered Electrical Engineer (REE)"
+        },
+        {
+          "id": "em-017-b",
+          "text": "Professional Electrical Engineer (PEE)"
+        },
+        {
+          "id": "em-017-c",
+          "text": "Registered Master Electrician (RME)"
+        },
+        {
+          "id": "em-017-d",
+          "text": "Registered Mechanical Engineer (RME)"
+        }
+      ],
+      "correct_option_id": "em-017-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "RA 7920 establishes the Professional Electrical Engineer as the highest electrical engineering license in the Philippines, with authority to sign and seal electrical plans for building permit applications. Any electrical permit application not signed by a licensed PEE is automatically deficient. The architect coordinates the PEE's electrical work as part of the overall building permit package.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:53bd5e9d46ab0de2e06978a4313389487d10ce730b1b9d26d7c2dcfcdc4bbb49"
+    },
+    {
+      "question_id": "801f00d2-a4bf-452e-87b5-b172405abf94",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, what are the four ancillary permits required under Rule XIII, and which licensed professionals sign them?",
+      "options": [
+        {
+          "id": "em-018-a",
+          "text": "Electrical (PEE), Mechanical (RME), Sanitary/Plumbing (RSP), Electronics (PECE)"
+        },
+        {
+          "id": "em-018-b",
+          "text": "Electrical (PEE), Mechanical (RME), Sanitary/Plumbing (RSP), Electronics (REE)"
+        },
+        {
+          "id": "em-018-c",
+          "text": "Electrical (REE), Mechanical (RME), Structural (PSE), Electronics (PECE)"
+        },
+        {
+          "id": "em-018-d",
+          "text": "Electrical (PEE), Architectural (PA), Sanitary/Plumbing (RSP), Electronics (PECE)"
+        }
+      ],
+      "correct_option_id": "em-018-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The ancillary permit system ensures that each discipline's technical work is reviewed and certified by a licensed professional in that discipline. The architect, as the lead professional, integrates all four plans into the overall building permit application but does not sign the technical plans for other disciplines.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d439dbeaa06c8dce046ddaae5afa7f6a9522c044695c3a0cc034784ae308b997"
+    },
+    {
+      "question_id": "5c6c5d2b-d9e0-4e8c-88e1-a8e9d22218fa",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, the maximum permitted step-over gap for bridge cranes is:",
+      "options": [
+        {
+          "id": "em-015-a",
+          "text": "150 mm"
+        },
+        {
+          "id": "em-015-b",
+          "text": "300 mm"
+        },
+        {
+          "id": "em-015-c",
+          "text": "500 mm"
+        },
+        {
+          "id": "em-015-d",
+          "text": "600 mm"
+        }
+      ],
+      "correct_option_id": "em-015-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Bridge cranes in industrial buildings (warehouses, factories, workshops) must allow safe passage for operators who need to move along the crane span. The 300 mm limit represents the maximum gap that can be safely crossed without special access equipment. Larger gaps require catwalks, ladders, or other controlled access systems.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c26f16aa93b15002052670b99dd492f4b2c744a93ce135e6dcc878f73695ab21"
+    },
+    {
+      "question_id": "4ae85877-4383-4bfa-816d-6a4661349b0e",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1301, Table XIII.1, what is the minimum horizontal clearance required from an open supply conductor operating at 5 kV (750V–22kV) to a building wall?",
+      "options": [
+        {
+          "id": "em-001-a",
+          "text": "1,400 mm"
+        },
+        {
+          "id": "em-001-b",
+          "text": "1,500 mm"
+        },
+        {
+          "id": "em-001-c",
+          "text": "1,700 mm"
+        },
+        {
+          "id": "em-001-d",
+          "text": "2,300 mm"
+        }
+      ],
+      "correct_option_id": "em-001-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 1,500 mm clearance for 5 kV open supply conductors reflects the arc flash danger of medium-voltage lines. Higher voltages require progressively greater separation — the jump from 1,700 to 2,300 mm reflects the extreme danger of transmission-level voltages above 22kV.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:61168fbe67a2994ca998440a1de8a9ffb55baf4f1bc21d6666b1fb7267953900"
+    },
+    {
+      "question_id": "42321ed3-4bff-4083-9f24-05abe68e506a",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XII, Sec. 1202.2.e, what happens to the legal burden of responsibility when an adjoining property owner refuses access to their building after receiving the required 10-day written notice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The excavating party remains fully responsible regardless of the refusal"
+        },
+        {
+          "id": "b",
+          "text": "The legal burden shifts to the refusing adjoining owner for any resulting damage"
+        },
+        {
+          "id": "c",
+          "text": "The Building Official assumes shared responsibility with both parties"
+        },
+        {
+          "id": "d",
+          "text": "Responsibility is split equally between the excavating party and the refusing owner"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This provision protects the excavating party who has complied with notice requirements but is unable to access the adjacent structure for inspection or underpinning due to the neighbor's refusal.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.422029+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:73b4f46c502c30a3b305ffeb1fbdfd50f8591e8fb49b74eea68dd30a36647c24"
+    },
+    {
+      "question_id": "bf819825-3fe3-43b2-81b2-ecb94a7e8e2f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "In the TaPa-TAFB master formula chain, what is the formula for computing AMBF, and what table/section governs the PSO value used?",
+      "options": [
+        {
+          "id": "a",
+          "text": "AMBF = TLA × FLAR; governed by Table VII.G.1, which outlines the specific parameters for calculation"
+        },
+        {
+          "id": "b",
+          "text": "AMBF = TLA × PSO; governed by Rule VIII, Sec. 803 / Table VIII.1"
+        },
+        {
+          "id": "c",
+          "text": "AMBF = FLAR ÷ TLA; governed by Table VII.2, which provides guidelines for alternative calculations"
+        },
+        {
+          "id": "d",
+          "text": "AMBF = TLA ÷ PSO; governed by Rule VII, Sec. 705, detailing the procedural requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The TaPa-TAFB mnemonic (Total, Area, Floors, Building) sequences: TLA → PSO → AMBF → TOSL → FLAR → Max GFA → Max Floors → BHL. Each step feeds the next, and PSO at Step 2 determines the footprint constraint.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.852405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:df0cce088cced6f4b0a7452c8e7b0ebca34921fae941410632241671b440b837"
+    },
+    {
+      "question_id": "84f5330c-f6c0-4a1f-bcc0-70e89b7753c5",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "For R-2 Basic, how many sides may have abutments, and where are they NOT permitted?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 side only; not on the front or rear"
+        },
+        {
+          "id": "b",
+          "text": "2 sides; not on the front, which allows for more flexibility in design."
+        },
+        {
+          "id": "c",
+          "text": "3 sides; not on the front, providing maximum coverage except for the facade."
+        },
+        {
+          "id": "d",
+          "text": "No abutments permitted, which is a restrictive interpretation not typically applied."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The abutment rules by zone: R-1 = none; R-2 = 1 side only (no front/rear); R-3 = 2 sides OR 1+rear (no front); R-4 = 2 sides (no front/rear); R-5 = 2 sides OR 1+rear (no front).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.389139+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cb3bce79520c7d06d65388bbde215ded4c25d681b22c77d9c1f7d0d5e6b186a7"
+    },
+    {
+      "question_id": "5de519da-04c1-4f76-9b1a-b06da23bc47f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule X, Section 1008, when is a CHAFLAN (corner cut) required on a corner building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On all corner buildings, regardless of street width, to ensure uniformity in urban design"
+        },
+        {
+          "id": "b",
+          "text": "On buildings on streets or alleys less than 3.60 m wide, unless the building is arcaded"
+        },
+        {
+          "id": "c",
+          "text": "Only when the building height exceeds 15.00 m, to prevent obstruction of sightlines"
+        },
+        {
+          "id": "d",
+          "text": "Only when the building is used for commercial purposes, to facilitate pedestrian flow"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 3.60 m threshold reflects the minimum turning clearance for vehicles. Narrower streets with no chaflan create dangerous blind corners.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.389139+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4889b7ab60736d5910f8abcc5f66272028aeb58634985f713490c927ed3747d9"
+    },
+    {
+      "question_id": "81613624-0d0a-4b93-a855-99135c69e7a8",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "At what rate does the minimum rear or side court width increase for buildings more than 2 storeys tall, and at what storey does this increment cap?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 mm per storey above the 2nd, cap at the 12th storey"
+        },
+        {
+          "id": "b",
+          "text": "300 mm per storey above the 2nd, cap at the 14th storey"
+        },
+        {
+          "id": "c",
+          "text": "500 mm per storey above the 1st, cap at the 10th storey"
+        },
+        {
+          "id": "d",
+          "text": "250 mm per storey above the 2nd, cap at the 20th storey"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Worked example: 10-storey building, base side setback = 3.00 m. Additional storeys above 2nd = 8. Additional increment = 8 × 0.30 m = 2.40 m. Total side court width = 3.00 + 2.40 = 5.40 m.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.389139+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59ff4f9d5c10800012df4dfaf212b6eade9ce3c4d7dee683859a119a0d40d520"
+    },
+    {
+      "question_id": "84481f32-f190-4c8a-af63-c482aacdb392",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XI, Section 1108, what is required before a contractor may demolish an existing building, and what standards govern the demolition procedure?",
+      "options": [
+        {
+          "id": "pp-012-a",
+          "text": "A demolition permit from the Building Official is required, along with detailed demolition procedures ensuring the structural sequence does not cause uncontrolled collapse"
+        },
+        {
+          "id": "pp-012-b",
+          "text": "Demolition is covered under the original building permit; no separate permit is needed, simplifying the process"
+        },
+        {
+          "id": "pp-012-c",
+          "text": "Only a verbal notification to the Building Official is required before demolition begins, streamlining the procedure"
+        },
+        {
+          "id": "pp-012-d",
+          "text": "A demolition permit from the Fire Department is required, in addition to the building permit from the BO, ensuring compliance with fire safety standards"
+        }
+      ],
+      "correct_option_id": "pp-012-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The demolition permit is a separate authorization because demolition presents unique public safety hazards (falling debris, uncontrolled collapse, dust, asbestos). The permit must specify the sequence of structural removal to prevent sudden, uncontrolled collapse that could harm workers and the public.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.540429+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:550fd39f2b2a3b04a439a0af7b10d7fbc2b78cd64103299db4f9dee68de35abb"
+    },
+    {
+      "question_id": "f25d2e41-4996-4a87-8e99-aecf31a36019",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "On a commercial renovation project in Intramuros, the contractor sets up a drum mixer on the public street outside the building because the lot is too small for on-site mixing. The contractor argues this is acceptable because the mixing takes place only during off-peak hours. Under PD 1096 Rule XI, Section 1103, how should this be characterized?",
+      "options": [
+        {
+          "id": "pp-006-a",
+          "text": "Permitted if authorized by the Building Official for off-peak hours"
+        },
+        {
+          "id": "pp-006-b",
+          "text": "Permitted if the contractor posts adequate warning signs"
+        },
+        {
+          "id": "pp-006-c",
+          "text": "Prohibited under any circumstances"
+        },
+        {
+          "id": "pp-006-d",
+          "text": "Permitted provided the cement washout is disposed of properly after each batch"
+        }
+      ],
+      "correct_option_id": "pp-006-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The absolute prohibition on street mixing reflects two concerns: (1) cement slurry entering storm drains causes environmental contamination; (2) wet mixing areas create slip hazards. Contractors must design site logistics to keep all concrete/mortar production within the property boundary.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.540429+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:253e3640fd5242e474d1550efb4aaa24958466f388b33fecdb7b0f35e995e598"
+    },
+    {
+      "question_id": "584f7fdf-c74a-48fb-bc91-42fb80d4f56c",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Section 1607, what is the minimum lateral separation required between adjacent plastic skylights on a commercial building roof?",
+      "options": [
+        {
+          "id": "pl-007-a",
+          "text": "1.50 m"
+        },
+        {
+          "id": "pl-007-b",
+          "text": "2.50 m"
+        },
+        {
+          "id": "pl-007-c",
+          "text": "3.00 m"
+        },
+        {
+          "id": "pl-007-d",
+          "text": "5.00 m"
+        }
+      ],
+      "correct_option_id": "pl-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The '10-20-25-3-3' mnemonic covers the five key skylight numbers: 10 sq.m individual max, 20% aggregate cap, 2.5 m lateral separation, 3 m slope separation, 3 m property setback.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.702597+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:118d73cdc95fb49d8f1a667caf50d4903003e4e8358b1a8d1d5d22bfdc4624fd"
+    },
+    {
+      "question_id": "06028da1-bf09-4f25-a810-46e7616dfc6b",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, Rule XII, Section 1207, what is the correct formula for determining the occupant load of a building floor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Floor Area (sq.m) multiplied by Unit Area per Occupant from Table XII.1"
+        },
+        {
+          "id": "B",
+          "text": "Floor Area (sq.m) divided by Unit Area per Occupant from Table XII.1"
+        },
+        {
+          "id": "C",
+          "text": "Occupant load is determined solely by the Building Official's discretion"
+        },
+        {
+          "id": "D",
+          "text": "Number of rooms multiplied by the minimum unit area per occupant"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per PD 1096, Rule XII, Sec. 1207(1)(a), the occupant load is determined by dividing the floor area assigned to that use by the unit area per occupant as shown in Table XII.1. The formula is: Occupant Load = Floor Area ÷ Unit Area per Occupant.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:10.025015+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:525e1f12adc3c9a37cc124b550d90659e409ba55f71e1ac4d75cb7563c2e5f81"
+    },
+    {
+      "question_id": "67efb640-4b5f-453c-9879-48545884a312",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The 2004 Revised IRR of PD 1096 adds a provision allowing existing buildings constructed without permits to be legalized. What must happen for this legalization to occur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Payment of a nominal registration fee, which is a minimal cost compared to the potential penalties for non-compliance"
+        },
+        {
+          "id": "B",
+          "text": "Conformity to current code requirements plus payment of penalties, surcharges, and fines"
+        },
+        {
+          "id": "C",
+          "text": "Only structural upgrades are required, ignoring other potential code violations that may exist"
+        },
+        {
+          "id": "D",
+          "text": "The building must be demolished and rebuilt, which is often impractical and costly for most owners"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per IRR Sec. 103, existing buildings constructed without permits may be legalized if they are made to conform to all current code requirements, subject to corresponding penalties, surcharges, and fines. This is not an amnesty program — it requires full code compliance (not just the code at the time of original construction) plus all financial penalties.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.788686+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:adaf91d8ba67f85b27b1cfc85eb5cd760f93c72082645677e2a849119acafc03"
+    },
+    {
+      "question_id": "ff764a29-1325-4908-bb30-178acf3e50c9",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A commercial building connects roof drainage pipes to the sanitary drainage stack that discharges to the city's sanitary sewer main. Per Rule IX, Sec. 904, what is the compliance status?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compliant, because the building is connected to the public sewer, which is assumed to handle all types of wastewater."
+        },
+        {
+          "id": "B",
+          "text": "Non-compliant, because rainwater shall not discharge to the sanitary sewer"
+        },
+        {
+          "id": "C",
+          "text": "Compliant if the sewer main has sufficient capacity to handle additional rainwater without overflow."
+        },
+        {
+          "id": "D",
+          "text": "Compliant if a holding tank is installed before discharge to manage flow rates."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule IX, Sec. 904, rainwater drainage shall NOT discharge to the sanitary sewer system. This prohibition is absolute and unconditional — it applies regardless of sewer capacity or other code-compliant features. Sec. 903 (public sewer connection) and Sec. 904 (storm-separation prohibition) are independent requirements.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.033224+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d962a5b0f84ed8443aca75c3398523485495391ee5d8a402fb5e997001da1bc0"
+    },
+    {
+      "question_id": "9fa28879-658c-4c90-9bb7-20eaceea12e1",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, what occupancy classification do signs fall under, and is a separate building permit required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Group J-1; no separate permit required, as signs are considered part of the building's overall aesthetic and functional design"
+        },
+        {
+          "id": "B",
+          "text": "Group J-3; yes, a separate building permit is required for every sign"
+        },
+        {
+          "id": "C",
+          "text": "Group J-2; permit required only for signs above 5 m height, ensuring compliance with safety and structural integrity standards"
+        },
+        {
+          "id": "D",
+          "text": "Group J-4; a simplified permit process applies, streamlining the approval for minor signage installations"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, signs are classified as Group J-3 occupancy. A separate building permit is required for every sign, independent of any permit issued for the building itself. The Building Official has jurisdiction over approval, inspection, and enforcement of sign standards.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:839a0c4cbc512d08ace47056b741737bd2de002aa42d1d845311e8c063f032a3"
+    },
+    {
+      "question_id": "eff2f430-07f1-4733-83fa-5069ee2a90a7",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An owner begins construction before obtaining a permit and is caught when construction is already 60% complete. Under PD 1096, what is the applicable surcharge percentage on the building permit fees?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25% surcharge — construction has begun but the superstructure is not yet complete"
+        },
+        {
+          "id": "b",
+          "text": "100% surcharge — construction has passed the 50% completion stage"
+        },
+        {
+          "id": "c",
+          "text": "50% surcharge — construction has reached the roof level without a permit"
+        },
+        {
+          "id": "d",
+          "text": "10% surcharge — the standard penalty for any permit applied for after construction starts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 establishes a four-tier surcharge ladder: 10% (foundation stage), 25% (superstructure started), 50% (roofing stage), 100% (more than 50% complete). At 60% completion the work is past the 50% threshold, triggering the maximum 100% surcharge. Option C (50%) applies to the roofing stage, not to post-50%-completion.",
+      "explanation": "The surcharge ladder escalates with construction progress to deter owners from deferring permit applications. At 60% complete, the 100% surcharge doubles the permit cost as a punitive measure.",
+      "code_citation": "PD 1096, Rule III, Sec. 307",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4d222386d0669e2d6b32bef6c1ff9301ef7056f80a53302cf9fac07bad41f7f9"
+    },
+    {
+      "question_id": "d6dbfe45-93b9-472e-b1b1-4167f43f90d2",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 209 of PD 1096, which type of structure qualifies for an exemption from building permit FEES (not from the permit itself)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A 15 sq.m concrete garden shed with a concrete slab floor in a residential subdivision"
+        },
+        {
+          "id": "b",
+          "text": "A traditional indigenous dwelling of native materials costing P12,000 for exclusive family use"
+        },
+        {
+          "id": "c",
+          "text": "A detached garage of any size accessory to a single-family home outside flood zones"
+        },
+        {
+          "id": "d",
+          "text": "A fence wall of any material not exceeding 1.80 meters in height on private property"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 209 grants fee exemptions — not permit exemptions — to: (1) public buildings and (2) traditional indigenous dwellings meeting all three criteria: cost does not exceed P15,000, built of native materials, and for exclusive family use. Option A is a concrete structure (not native materials). Options C and D describe possible permit exemptions under Sec. 301.3, not fee exemptions under Sec. 209.",
+      "explanation": "Critical distinction: Sec. 209 governs FEE exemptions; Sec. 301.3 governs PERMIT exemptions. An indigenous dwelling under Sec. 209 still needs a building permit — it just doesn't pay for it. All three criteria must be met simultaneously.",
+      "code_citation": "PD 1096, Rule II, Sec. 209",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:03498ebca87a0586eb1b7200766434783181db596f8c1af3d52fad95bd2d8487"
+    },
+    {
+      "question_id": "ff36be49-816a-42fb-9ce2-73286caf4e89",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 301.3 of PD 1096, which structure is categorically EXEMPT from obtaining a building permit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A masonry garden wall 1.50 meters high enclosing a residential lot"
+        },
+        {
+          "id": "b",
+          "text": "A detached nipa tool shed of 5.00 sq.m in a residential backyard"
+        },
+        {
+          "id": "c",
+          "text": "A wooden garden terrace of 25 sq.m attached to the main house"
+        },
+        {
+          "id": "d",
+          "text": "A residential swimming pool 600 mm deep with a 12 sq.m footprint"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 301.3 exempts: sheds/outhouses ≤6.00 sq.m, open terraces ≤20.00 sq.m, garden/yard/perimeter walls ≤1.20 m, and garden pools ≤500 mm deep. A 5.00 sq.m shed is under the 6.00 sq.m threshold. Option A: wall is 1.50 m, exceeding the 1.20 m exemption threshold. Option C: 25 sq.m terrace exceeds the 20 sq.m limit. Option D: 600 mm pool exceeds the 500 mm depth exemption threshold.",
+      "explanation": "Each exemption has a hard numerical threshold. Garden pools ≤500 mm (not 600 mm). Open terraces ≤20 sq.m (not 25 sq.m). Walls ≤1.20 m (not 1.50 m). Sheds ≤6.00 sq.m.",
+      "code_citation": "PD 1096, Rule III, Sec. 301.3",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d783863f686184fe6f34ac07cb0cbaaa26be360c45ff1a30e1a15892d323ae3"
+    },
+    {
+      "question_id": "f1697646-3ea4-4821-ad99-e6be29f2101e",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A homeowner constructs a 2.10-meter perimeter fence without a permit. Under PD 1096, what type of permit was specifically required for this fence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No permit is required; perimeter fences are always exempt from the building permit process"
+        },
+        {
+          "id": "b",
+          "text": "A full building permit under Group J-2 is required because the fence exceeds 1.80 meters in height"
+        },
+        {
+          "id": "c",
+          "text": "Only an accessory permit is required because the fence exceeds 1.20 meters but not 1.80 meters"
+        },
+        {
+          "id": "d",
+          "text": "A zoning clearance only; fences are handled by the LGU zoning office, not the OBO"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Fence rules under PD 1096: ≤1.20 m = fully exempt; 1.21–1.80 m = accessory permit only; >1.80 m = full building permit required, classified under Group J-2 (Miscellaneous Structures). At 2.10 m the fence exceeds 1.80 m and therefore requires a full building permit. Option C incorrectly applies the accessory-permit threshold (which only covers 1.21–1.80 m). Options A and D have no legal basis.",
+      "explanation": "Three-tier fence rule: exempt → accessory → full permit, with cutoffs at exactly 1.20 m and 1.80 m. The 2.10 m fence in this question crosses both thresholds and lands in the full-permit tier.",
+      "code_citation": "PD 1096, Rule III, Sec. 301.3; Group J-2",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:64cb1650b39a603fd98a3bbf3df9869526bae1c69db7059ce3254aca84305b06"
+    },
+    {
+      "question_id": "e26a0311-558b-4833-90db-93a93339cc31",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, which body or official has exclusive jurisdiction to impose the criminal penalties of up to P20,000 fine and up to two years imprisonment for Code violations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Building Official acting under administrative authority granted by DPWH"
+        },
+        {
+          "id": "b",
+          "text": "The Secretary of DPWH upon recommendation of the Building Official"
+        },
+        {
+          "id": "c",
+          "text": "A court of competent jurisdiction after criminal prosecution under Sec. 213"
+        },
+        {
+          "id": "d",
+          "text": "The Office of the President acting on complaints from local executives"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 213 of PD 1096 establishes criminal penalties — a fine not exceeding P20,000 and/or imprisonment not exceeding two years — but these can only be imposed by a court of competent jurisdiction following criminal prosecution. The Building Official's administrative powers (fines of P5,000/P8,000/P10,000) are separate administrative remedies and do not require court proceedings.",
+      "explanation": "Critical separation: the BO imposes administrative fines (P5,000–P10,000) without court involvement; criminal penalties (P20,000 and/or 2 years) require formal prosecution in court. These are parallel, cumulative remedies — both can apply to the same violation.",
+      "code_citation": "PD 1096, Rule II, Sec. 213",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3aba6553a4ce2d0bd3dda6bd914c1612f53c82f0cdb5890c0010956b2bff6bd6"
+    },
+    {
+      "question_id": "7f4ad7eb-929c-4b95-b808-2e16c3b91928",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Building Official discovers an illegal structure during inspection. He can impose an administrative fine AND separately refer the owner for criminal prosecution. Which pair of maximum penalties correctly reflects these two independent remedies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Administrative: P5,000 fine; Criminal: P50,000 fine and 5 years imprisonment"
+        },
+        {
+          "id": "b",
+          "text": "Administrative: P10,000 fine; Criminal: P20,000 fine and/or 2 years imprisonment"
+        },
+        {
+          "id": "c",
+          "text": "Administrative: P20,000 fine; Criminal: P50,000 fine and 3 years imprisonment"
+        },
+        {
+          "id": "d",
+          "text": "Administrative: P8,000 fine; Criminal: P20,000 fine and 5 years imprisonment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 establishes: (1) administrative fines imposed by the BO at three levels — P5,000, P8,000, and P10,000 maximum; (2) criminal penalties under Sec. 213 — a fine not exceeding P20,000 and/or imprisonment not exceeding 2 years, imposed by a court. Option B correctly pairs the P10,000 administrative ceiling with the correct criminal penalty limits. Options A, C, and D use figures not found in the Code.",
+      "explanation": "Both penalty systems can apply simultaneously to the same violation — they are additive, not mutually exclusive. The administrative fines go to the local government; criminal penalties are imposed by courts and carry the possibility of imprisonment.",
+      "code_citation": "PD 1096, Rule II, Sec. 212–213",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e67a857389b33adbfc8b9d91e1fdd1bb33ae0928a983d071b929799bf02110df"
+    },
+    {
+      "question_id": "e44f9486-335d-43d6-ae2f-ca12b44cc3fd",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 304 of PD 1096, from what specific event does the 15-day clock for the Building Official to act on a permit application begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From the date all construction documents are submitted to the OBO"
+        },
+        {
+          "id": "b",
+          "text": "From the date of payment of all required building permit fees"
+        },
+        {
+          "id": "c",
+          "text": "From the date the BO schedules and completes the first plan review"
+        },
+        {
+          "id": "d",
+          "text": "From the date the applicant submits the duly accomplished application form"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 304 is explicit: the 15-calendar-day statutory deadline runs from the date of payment of fees, not from submission of the application. Payment signals that the application is deemed complete and that the BO's legal obligation to act has been triggered.",
+      "explanation": "The most common exam trap is substituting the submission date for the payment date. An application may be submitted and bounce back to the applicant for corrections multiple times before fees are paid; only payment finalizes the application.",
+      "code_citation": "PD 1096, Rule III, Sec. 304",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d9f8082534c647f73677e40cad5947729a569eb10614de9d6c53668bfda1893d"
+    },
+    {
+      "question_id": "9034de35-569f-4803-a447-072962ea49ec",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A contractor starts a permitted building on January 10 then halts all work on June 1 due to financing delays. If no work resumes, on what date does the permit become null and void under Sec. 305?",
+      "options": [
+        {
+          "id": "a",
+          "text": "August 31 — 90 days after the work stoppage on June 1"
+        },
+        {
+          "id": "b",
+          "text": "September 29 — 120 days after the work stoppage on June 1"
+        },
+        {
+          "id": "c",
+          "text": "January 10 next year — 1 year from construction commencement"
+        },
+        {
+          "id": "d",
+          "text": "December 1 — 6 months after the work stoppage on June 1"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Since construction had already commenced, the relevant trigger is the 120-day abandonment period. June 1 + 120 days: June has 30 days (29 remaining after June 1), July = 31, August = 31, September = 29 days needed → September 29. The 1-year commencement rule applies only when work has never started.",
+      "explanation": "Distinguish carefully: (a) 1-year rule applies when construction has NOT yet started; (b) 120-day abandonment rule applies after construction has commenced and is then suspended.",
+      "code_citation": "PD 1096, Rule III, Sec. 305",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:23916f4c0f46293d7cb70892c0b3fdf06a0fe99eac55a5212b93eb22411ae282"
+    },
+    {
+      "question_id": "6eb018e1-6e24-42f1-bf19-7430ca338024",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An applicant submits plans on April 5 and pays required fees on April 18. By what cleandar date must the Building Official issue or formally deny the permit under Sec. 304?",
+      "options": [
+        {
+          "id": "a",
+          "text": "April 20 — 15 days from submission of plans"
+        },
+        {
+          "id": "b",
+          "text": "May 3 — 15 days from payment of fees"
+        },
+        {
+          "id": "c",
+          "text": "May 18 — 30 days from payment of fees"
+        },
+        {
+          "id": "d",
+          "text": "May 5 — 30 days from plan submission date"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 15-day clock starts on April 18 (payment date). April has 30 days: 18 + 15 = May 3. Option A uses the wrong trigger event (plan submission). Options C and D use incorrect 30-day periods not found in Sec. 304.",
+      "explanation": "Cleandar arithmetic questions pairing submission date with payment date are a classic LEA format. Always identify the payment date first, then count 15 cleandar days forward.",
+      "code_citation": "PD 1096, Rule III, Sec. 304",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:44019f5991485aebc57d6719ae3e3317fd8b05b81bf67072dd90ec2133983a7c"
+    },
+    {
+      "question_id": "f73f4413-0bfd-48d6-9682-773ea0c9c974",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Sec. 305 of PD 1096 declares a building permit null and void under two independent conditions. What are the correct time thresholds for each?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No work starts within 6 months of issuance; or work is abandoned for 60 consecutive days"
+        },
+        {
+          "id": "b",
+          "text": "No work starts within 1 year of issuance; or work is abandoned for 120 consecutive days after commencement"
+        },
+        {
+          "id": "c",
+          "text": "No work starts within 2 years of issuance; or the BO fails to inspect within 90 days of commencement"
+        },
+        {
+          "id": "d",
+          "text": "No work starts within 1 year; or the building is not completed within 3 years from permit issuance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 305 sets two independent expiry triggers: (1) failure to commence within one year of permit issuance; (2) abandonment of commenced work for a continuous period of 120 days. Either condition alone voids the permit. Option A uses wrong durations (6 months / 60 days). Options C and D use entirely fabricated conditions.",
+      "explanation": "Mnemonic: '1 year to START, 120 days without a STOP.' The 1-year rule prevents permit hoarding; the 120-day abandonment rule forces resolution of hazardous incomplete structures.",
+      "code_citation": "PD 1096, Rule III, Sec. 305",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:01.258338+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d082cbdf0bf17ab2d2c0592b6bc397b614b39c6970f02c46326779ffc861ecd"
+    },
+    {
+      "question_id": "85b19263-4679-4357-ac48-f02ea53518bb",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Sec. 305 of PD 1096 declares a building permit null and void under two independent conditions. What are the correct time thresholds for each?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No work starts within 6 months of issuance; or work is abandoned for 60 consecutive days"
+        },
+        {
+          "id": "b",
+          "text": "No work starts within 1 year of issuance; or work is abandoned for 120 consecutive days after commencement"
+        },
+        {
+          "id": "c",
+          "text": "No work starts within 2 years of issuance; or the BO fails to inspect within 90 days of commencement"
+        },
+        {
+          "id": "d",
+          "text": "No work starts within 1 year; or the building is not completed within 3 years from permit issuance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 305 sets two independent expiry triggers: (1) failure to commence within one year of permit issuance; (2) abandonment of commenced work for a continuous period of 120 days. Either condition alone voids the permit. Option A uses wrong durations (6 months / 60 days). Options C and D use entirely fabricated conditions.",
+      "explanation": "Mnemonic: '1 year to START, 120 days without a STOP.' The 1-year rule prevents permit hoarding; the 120-day abandonment rule forces resolution of hazardous incomplete structures.",
+      "code_citation": "PD 1096, Rule III, Sec. 305",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3a04a08a84a44223c40e81935dbc5116418d941313849989c04fa9e9a6076344"
+    },
+    {
+      "question_id": "0901dd48-3e62-4b85-96a6-4f13cfe8ec8f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An applicant submits plans on April 5 and pays required fees on April 18. By what cleandar date must the Building Official issue or formally deny the permit under Sec. 304?",
+      "options": [
+        {
+          "id": "a",
+          "text": "April 20 — 15 days from submission of plans"
+        },
+        {
+          "id": "b",
+          "text": "May 3 — 15 days from payment of fees"
+        },
+        {
+          "id": "c",
+          "text": "May 18 — 30 days from payment of fees"
+        },
+        {
+          "id": "d",
+          "text": "May 5 — 30 days from plan submission date"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 15-day clock starts on April 18 (payment date). April has 30 days: 18 + 15 = May 3. Option A uses the wrong trigger event (plan submission). Options C and D use incorrect 30-day periods not found in Sec. 304.",
+      "explanation": "Cleandar arithmetic questions pairing submission date with payment date are a classic LEA format. Always identify the payment date first, then count 15 cleandar days forward.",
+      "code_citation": "PD 1096, Rule III, Sec. 304",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6ae385128e7a94173049706ae8138a9c0dddaf5ae311f069783efaffbf908f97"
+    },
+    {
+      "question_id": "50da45cd-3084-4208-b270-d236b38fdefd",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Building Official discovers an illegal structure during inspection. He can impose an administrative fine AND separately refer the owner for criminal prosecution. Which pair of maximum penalties correctly reflects these two independent remedies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Administrative: P5,000 fine; Criminal: P50,000 fine and 5 years imprisonment"
+        },
+        {
+          "id": "b",
+          "text": "Administrative: P10,000 fine; Criminal: P20,000 fine and/or 2 years imprisonment"
+        },
+        {
+          "id": "c",
+          "text": "Administrative: P20,000 fine; Criminal: P50,000 fine and 3 years imprisonment"
+        },
+        {
+          "id": "d",
+          "text": "Administrative: P8,000 fine; Criminal: P20,000 fine and 5 years imprisonment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 establishes: (1) administrative fines imposed by the BO at three levels — P5,000, P8,000, and P10,000 maximum; (2) criminal penalties under Sec. 213 — a fine not exceeding P20,000 and/or imprisonment not exceeding 2 years, imposed by a court. Option B correctly pairs the P10,000 administrative ceiling with the correct criminal penalty limits. Options A, C, and D use figures not found in the Code.",
+      "explanation": "Both penalty systems can apply simultaneously to the same violation — they are additive, not mutually exclusive. The administrative fines go to the local government; criminal penalties are imposed by courts and carry the possibility of imprisonment.",
+      "code_citation": "PD 1096, Rule II, Sec. 212–213",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2a53e4ac810d9b68f92e1ad2021323d01bf6454f1a59f45039674e64e5d75c8a"
+    },
+    {
+      "question_id": "7170509b-1cca-4bd5-ae52-91319fa16a0c",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 304 of PD 1096, from what specific event does the 15-day clock for the Building Official to act on a permit application begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From the date all construction documents are submitted to the OBO"
+        },
+        {
+          "id": "b",
+          "text": "From the date of payment of all required building permit fees"
+        },
+        {
+          "id": "c",
+          "text": "From the date the BO schedules and completes the first plan review"
+        },
+        {
+          "id": "d",
+          "text": "From the date the applicant submits the duly accomplished application form"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 304 is explicit: the 15-calendar-day statutory deadline runs from the date of payment of fees, not from submission of the application. Payment signals that the application is deemed complete and that the BO's legal obligation to act has been triggered.",
+      "explanation": "The most common exam trap is substituting the submission date for the payment date. An application may be submitted and bounce back to the applicant for corrections multiple times before fees are paid; only payment finalizes the application.",
+      "code_citation": "PD 1096, Rule III, Sec. 304",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e991da0fc2601e145372799857969fae8dfdbb38d29afe80fa0a73a7b40fe29b"
+    },
+    {
+      "question_id": "8d7a571e-83f6-4d50-a87a-39f85445b7b1",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, which body or official has exclusive jurisdiction to impose the criminal penalties of up to P20,000 fine and up to two years imprisonment for Code violations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Building Official acting under administrative authority granted by DPWH"
+        },
+        {
+          "id": "b",
+          "text": "The Secretary of DPWH upon recommendation of the Building Official"
+        },
+        {
+          "id": "c",
+          "text": "A court of competent jurisdiction after criminal prosecution under Sec. 213"
+        },
+        {
+          "id": "d",
+          "text": "The Office of the President acting on complaints from local executives"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 213 of PD 1096 establishes criminal penalties — a fine not exceeding P20,000 and/or imprisonment not exceeding two years — but these can only be imposed by a court of competent jurisdiction following criminal prosecution. The Building Official's administrative powers (fines of P5,000/P8,000/P10,000) are separate administrative remedies and do not require court proceedings.",
+      "explanation": "Critical separation: the BO imposes administrative fines (P5,000–P10,000) without court involvement; criminal penalties (P20,000 and/or 2 years) require formal prosecution in court. These are parallel, cumulative remedies — both can apply to the same violation.",
+      "code_citation": "PD 1096, Rule II, Sec. 213",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:650cc007e5a9ca901269c4153cf06661bb00434aff573d5b2438d2d1af354a02"
+    },
+    {
+      "question_id": "3917e78f-ed71-4032-a35f-0258f3f73cba",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An owner begins construction before obtaining a permit and is caught when construction is already 60% complete. Under PD 1096, what is the applicable surcharge percentage on the building permit fees?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25% surcharge — construction has begun but the superstructure is not yet complete"
+        },
+        {
+          "id": "b",
+          "text": "100% surcharge — construction has passed the 50% completion stage"
+        },
+        {
+          "id": "c",
+          "text": "50% surcharge — construction has reached the roof level without a permit"
+        },
+        {
+          "id": "d",
+          "text": "10% surcharge — the standard penalty for any permit applied for after construction starts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 establishes a four-tier surcharge ladder: 10% (foundation stage), 25% (superstructure started), 50% (roofing stage), 100% (more than 50% complete). At 60% completion the work is past the 50% threshold, triggering the maximum 100% surcharge. Option C (50%) applies to the roofing stage, not to post-50%-completion.",
+      "explanation": "The surcharge ladder escalates with construction progress to deter owners from deferring permit applications. At 60% complete, the 100% surcharge doubles the permit cost as a punitive measure.",
+      "code_citation": "PD 1096, Rule III, Sec. 307",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:960d23f16ed5ac83de6e94cbd8a07dd71cdefb1c992edf33f42596e92540ceda"
+    },
+    {
+      "question_id": "9700b56b-be57-4b24-84c0-f17a06a654a5",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 209 of PD 1096, which type of structure qualifies for an exemption from building permit FEES (not from the permit itself)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A 15 sq.m concrete garden shed with a concrete slab floor in a residential subdivision"
+        },
+        {
+          "id": "b",
+          "text": "A traditional indigenous dwelling of native materials costing P12,000 for exclusive family use"
+        },
+        {
+          "id": "c",
+          "text": "A detached garage of any size accessory to a single-family home outside flood zones"
+        },
+        {
+          "id": "d",
+          "text": "A fence wall of any material not exceeding 1.80 meters in height on private property"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 209 grants fee exemptions — not permit exemptions — to: (1) public buildings and (2) traditional indigenous dwellings meeting all three criteria: cost does not exceed P15,000, built of native materials, and for exclusive family use. Option A is a concrete structure (not native materials). Options C and D describe possible permit exemptions under Sec. 301.3, not fee exemptions under Sec. 209.",
+      "explanation": "Critical distinction: Sec. 209 governs FEE exemptions; Sec. 301.3 governs PERMIT exemptions. An indigenous dwelling under Sec. 209 still needs a building permit — it just doesn't pay for it. All three criteria must be met simultaneously.",
+      "code_citation": "PD 1096, Rule II, Sec. 209",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b1927e9f5fd7931a8cc5f2ffbe4fc8b62e7a30e99b591697c08f3ace834d664b"
+    },
+    {
+      "question_id": "1b89c7d0-3b82-472e-b92c-ae930772ae8b",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A homeowner constructs a 2.10-meter perimeter fence without a permit. Under PD 1096, what type of permit was specifically required for this fence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No permit is required; perimeter fences are always exempt from the building permit process"
+        },
+        {
+          "id": "b",
+          "text": "A full building permit under Group J-2 is required because the fence exceeds 1.80 meters in height"
+        },
+        {
+          "id": "c",
+          "text": "Only an accessory permit is required because the fence exceeds 1.20 meters but not 1.80 meters"
+        },
+        {
+          "id": "d",
+          "text": "A zoning clearance only; fences are handled by the LGU zoning office, not the OBO"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Fence rules under PD 1096: ≤1.20 m = fully exempt; 1.21–1.80 m = accessory permit only; >1.80 m = full building permit required, classified under Group J-2 (Miscellaneous Structures). At 2.10 m the fence exceeds 1.80 m and therefore requires a full building permit. Option C incorrectly applies the accessory-permit threshold (which only covers 1.21–1.80 m). Options A and D have no legal basis.",
+      "explanation": "Three-tier fence rule: exempt → accessory → full permit, with cutoffs at exactly 1.20 m and 1.80 m. The 2.10 m fence in this question crosses both thresholds and lands in the full-permit tier.",
+      "code_citation": "PD 1096, Rule III, Sec. 301.3; Group J-2",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7fbb44a56614aed83500885d2257b4a765d19d32374218074ba70bbc65b82e73"
+    },
+    {
+      "question_id": "ef8a3c44-d5f2-45b8-88b7-b4c9296137b0",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 301.3 of PD 1096, which structure is categorically EXEMPT from obtaining a building permit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A masonry garden wall 1.50 meters high enclosing a residential lot"
+        },
+        {
+          "id": "b",
+          "text": "A detached nipa tool shed of 5.00 sq.m in a residential backyard"
+        },
+        {
+          "id": "c",
+          "text": "A wooden garden terrace of 25 sq.m attached to the main house"
+        },
+        {
+          "id": "d",
+          "text": "A residential swimming pool 600 mm deep with a 12 sq.m footprint"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 301.3 exempts: sheds/outhouses ≤6.00 sq.m, open terraces ≤20.00 sq.m, garden/yard/perimeter walls ≤1.20 m, and garden pools ≤500 mm deep. A 5.00 sq.m shed is under the 6.00 sq.m threshold. Option A: wall is 1.50 m, exceeding the 1.20 m exemption threshold. Option C: 25 sq.m terrace exceeds the 20 sq.m limit. Option D: 600 mm pool exceeds the 500 mm depth exemption threshold.",
+      "explanation": "Each exemption has a hard numerical threshold. Garden pools ≤500 mm (not 600 mm). Open terraces ≤20 sq.m (not 25 sq.m). Walls ≤1.20 m (not 1.50 m). Sheds ≤6.00 sq.m.",
+      "code_citation": "PD 1096, Rule III, Sec. 301.3",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:57cb023589b9c6e54a1c85bf6b87f68ab0e13a6f89740b4d34777e3d21656d6d"
+    },
+    {
+      "question_id": "029253cc-5422-437e-9c07-0978827010b9",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A contractor starts a permitted building on January 10 then halts all work on June 1 due to financing delays. If no work resumes, on what date does the permit become null and void under Sec. 305?",
+      "options": [
+        {
+          "id": "a",
+          "text": "August 31 — 90 days after the work stoppage on June 1"
+        },
+        {
+          "id": "b",
+          "text": "September 29 — 120 days after the work stoppage on June 1"
+        },
+        {
+          "id": "c",
+          "text": "January 10 next year — 1 year from construction commencement"
+        },
+        {
+          "id": "d",
+          "text": "December 1 — 6 months after the work stoppage on June 1"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Since construction had already commenced, the relevant trigger is the 120-day abandonment period. June 1 + 120 days: June has 30 days (29 remaining after June 1), July = 31, August = 31, September = 29 days needed → September 29. The 1-year commencement rule applies only when work has never started.",
+      "explanation": "Distinguish carefully: (a) 1-year rule applies when construction has NOT yet started; (b) 120-day abandonment rule applies after construction has commenced and is then suspended.",
+      "code_citation": "PD 1096, Rule III, Sec. 305",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:51.196996+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7283f8094ec98a68a100b340f54a91a613cb87779d6d68cd16ce95c2a0819065"
+    }
+  ]
+}

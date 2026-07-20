@@ -23,5 +23,53 @@
       "fundamentals-strength",
       "bsi-design"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which habit best prevents capacity-check errors?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Memorize one answer format for every material."
+      },
+      {
+        "id": "b",
+        "text": "Label the method, units, demand, resistance, and comparison format before solving."
+      },
+      {
+        "id": "c",
+        "text": "Ignore support and connection behavior."
+      },
+      {
+        "id": "d",
+        "text": "Use the same value for all service and strength checks."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "Memorize one answer format for every material. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "Label the method, units, demand, resistance, and comparison format before solving. This stays inside the Batch 144 local source boundary for Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison.",
+      "c": "Ignore support and connection behavior. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "Use the same value for all service and strength checks. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "Label the method, units, demand, resistance, and comparison format before solving. Supported by fundamentals-strength; bsi-design.",
+      "takeaway": "For Structural Capacity Checks: Demand, Resistance, and Same-Format Comparison, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "fundamentals-strength; bsi-design",
+      "checked_sources": [
+        "fundamentals-strength",
+        "bsi-design"
+      ]
+    },
+    "explanation": "Label the method, units, demand, resistance, and comparison format before solving. Supported by the Batch 144 local source boundary: fundamentals-strength; bsi-design.",
+    "code_citation": "fundamentals-strength; bsi-design",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-005-02-009"
   }
 }

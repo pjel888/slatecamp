@@ -1,25 +1,44 @@
 {
   "question_id": "663ffde0-a298-476c-9449-0fd20ef1fbce",
   "baseline_hash": "sha256:a0e9be57bf99d7d40e8f47b2e83f22d591312bad665dce3db61c2a3526e9ce9c",
-  "reason": "Batch 010 local source audit aligned linked question 663ffde0-a298-476c-9449-0fd20ef1fbce with the repaired Minimum Requirements Group A Dwellings article and verified PD 1096 raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-010",
-  "approved_at": "2026-05-10T10:55:01.585+08:00",
+  "action": "replace",
+  "reason": "council-remediation-2026-07-20 agent-R: original question cited Rule V Sec. 507(b) fire-resistivity construction types, which is off-scope for a Group A dwellings article (Rule VII Sec. 708 and Rule VIII Sec. 805-811). Replaced with a Sec. 807 kitchen/bath room-size question directly supported by the article.",
+  "approved_by": "agent-R-code-standalone",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-    "source_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
-    "checked_markdown_lines": [
-      "2046-2108",
-      "2659-2693"
+    "batch_id": "council-remediation-2026-07-20-agent-R",
+    "checked_sources": [
+      {
+        "source_id": "source-pack-pd-1096-irr",
+        "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+        "section_locator": "Rule VIII / Section 807 Sizes of Rooms (kitchen, toilet and bath)"
+      }
     ],
-    "parent_article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
-    "parent_article_slug": "minimum-requirements-group-a-dwellings",
-    "answer_key_fields_changed": false
+    "citation": "PD 1096 2004 Revised IRR, Rule VIII, Section 807"
   },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
-    "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VII Section 708 with Rule VIII Sections 805 through 808 for light, ventilation, ceiling heights, room sizes, air space, and window openings. This local edit adds source context only and does not change answer-key fields."
+    "text": "Under PD 1096 Rule VIII Section 807, what are the minimum floor area requirements for a kitchen and for a combined toilet and bath in a Group A dwelling?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Kitchen: at least 3.00 sq.m with 1.50 m minimum dimension; toilet and bath: at least 1.20 sq.m with 0.90 m minimum dimension"
+      },
+      {
+        "id": "b",
+        "text": "Kitchen: at least 4.50 sq.m with 1.80 m minimum dimension; toilet and bath: at least 1.50 sq.m with 1.00 m minimum dimension"
+      },
+      {
+        "id": "c",
+        "text": "Kitchen: at least 6.00 sq.m with 2.00 m minimum dimension; toilet and bath: at least 2.00 sq.m with 1.20 m minimum dimension"
+      },
+      {
+        "id": "d",
+        "text": "Kitchen: at least 2.40 sq.m with 1.20 m minimum dimension; toilet and bath: at least 1.00 sq.m with 0.75 m minimum dimension"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Section 807 sets minimum floor areas for service spaces smaller than habitable rooms: kitchen at 3.00 sq.m with 1.50 m minimum horizontal dimension, and combined toilet and bath at 1.20 sq.m with 0.90 m minimum horizontal dimension.",
+    "explanation": "These service-space minimums are separate from the 6.00 sq.m / 2.00 m habitable-room rule and are commonly used as distractors in exam items mixing the two sets of values.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VIII, Section 807"
   }
 }

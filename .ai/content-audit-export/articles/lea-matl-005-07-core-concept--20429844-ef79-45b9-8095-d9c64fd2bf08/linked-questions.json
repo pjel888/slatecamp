@@ -8,23 +8,23 @@
       "question_id": "dfd24359-6cc3-4b09-8ba2-2a675d236c5c",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "A project achieves a 25% reduction in structural embodied carbon by using fly ash concrete and recycled steel reinforcement. Under BERDE green building rating system, what is the approximate impact on the project's sustainability points allocation?",
+      "text": "What does embodied energy mean in the audited green-building source?",
       "options": [
         {
           "id": "a",
-          "text": "8-9% of total project points are allocated to sustainable materials credits; the 25% reduction may qualify for additional embodied carbon reduction bonuses"
+          "text": "Energy used to harvest, manufacture, prepare, and transport materials to a construction site"
         },
         {
           "id": "b",
-          "text": "25% of total project points are awarded directly for any embodied carbon reduction claimed, which significantly boosts the project's overall rating"
+          "text": "Only the electricity used by occupants after move-in"
         },
         {
           "id": "c",
-          "text": "Embodied carbon is not evaluated under BERDE; only end-of-life waste management credits are available, limiting the impact of such reductions"
+          "text": "Only the cost of installing finishes"
         },
         {
           "id": "d",
-          "text": "The project automatically achieves BERDE 5-star certification with any measurable embodied carbon reduction, regardless of other criteria"
+          "text": "Only the number of workers on site"
         }
       ],
       "correct_option_id": "a",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "While 8-9% is the baseline allocation, a 25% reduction does not automatically equal 25% of all project points. Embodied carbon is one component within the materials credit.",
-        "c": "BERDE does evaluate embodied carbon and waste management as integrated factors within the materials and emissions categories, not as isolated credits.",
-        "d": "A 25% embodied carbon reduction is significant but does not guarantee BERDE 5-star certification, which requires overall scoring across all categories (energy, water, waste, indoor environment, innovation).",
-        "correct": "BERDE version 5 allocates 8-9% of total points to sustainable materials credits. A 25% embodied carbon reduction may qualify for additional bonuses within this credit category, though automatic certification is not guaranteed.",
-        "takeaway": "BERDE allocates 8-9% of points to sustainable materials. Embodied carbon reduction is recognized, but candidates must understand that it is one credit component within the broader green building evaluation framework."
-      },
+      "rationale": "Energy used to harvest, manufacture, prepare, and transport materials to a construction site. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": "While 8-9% is the baseline allocation, a 25% reduction does not automatically equal 25% of all project points. Embodied carbon is one component within the materials credit. BERDE does evaluate embodied carbon and waste management as integrated factors within the materials and emissions categories, not as isolated credits. A 25% embodied carbon reduction is significant but does not guarantee BERDE 5-star certification, which requires overall scoring across all categories (energy, water, waste, indoor environment, innovation). BERDE version 5 allocates 8-9% of total points to sustainable materials credits. A 25% embodied carbon reduction may qualify for additional bonuses within this credit category, though automatic certification is not guaranteed. BERDE allocates 8-9% of points to sustainable materials. Embodied carbon reduction is recognized, but candidates must understand that it is one credit component within the broader green building evaluation framework.",
       "code_citation": "BERDE Green Building Rating System - Philippine Green Building Council; BERDE Version 5.0 User Guide",
       "bloom_level": "apply",
@@ -51,30 +45,30 @@
       "model_id": "ALE-MATL-005-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T12:47:36.77568+00:00",
+      "updated_at": "2026-07-20T01:13:22.713396+00:00",
       "content_hash": "sha256:a7e09f02ba492e5da32baa0dc8aeec6488f100c4387ff11e7bbd522326022107"
     },
     {
       "question_id": "b5a74a76-7a2b-4b71-8864-dabe36cd7851",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "Ground granulated blast furnace slag (GGBS) meets which ASTM standard and is used as a cement replacement at what typical dosage range in structural concrete?",
+      "text": "Which concrete-related material strategy is supported by the audited source?",
       "options": [
         {
           "id": "a",
-          "text": "ASTM C989; 30-50% cement replacement with both pozzolanic and cementitious properties"
+          "text": "Using recycled aggregate, fly ash, or slag where suitable"
         },
         {
           "id": "b",
-          "text": "ASTM C618; 15-25% cement replacement as a pozzolanic admixture only, which limits its use in high-strength applications"
+          "text": "Claiming all concrete has zero impact"
         },
         {
           "id": "c",
-          "text": "ASTM C33; 20-40% replacement in aggregate gradation specifications, which is not applicable to GGBS"
+          "text": "Replacing design review with a marketing label"
         },
         {
           "id": "d",
-          "text": "ASTM C150; 25-35% replacement following Portland cement chemistry requirements, which is incorrect for GGBS"
+          "text": "Ignoring aggregate contamination"
         }
       ],
       "correct_option_id": "a",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "ASTM C618 covers fly ash, not GGBS. Fly ash replacement rates (15-25%) are lower than GGBS because fly ash lacks cementitious properties.",
-        "c": "ASTM C33 specifies fine and coarse aggregate gradation, not cement replacement materials.",
-        "d": "ASTM C150 defines Portland cement composition; GGBS is not a Portland cement product but a supplementary cementitious material meeting its own ASTM C989 standard.",
-        "correct": "GGBS is cooled byproduct slag from iron smelting meeting ASTM C989 specifications. It provides both pozzolanic (silica-based) and cementitious (calcium-based) reactions, allowing higher replacement rates of 30-50% compared to fly ash (15-25%).",
-        "takeaway": "GGBS (ASTM C989) allows higher cement replacement (30-50%) than fly ash (ASTM C618: 15-25%) because it combines pozzolanic and self-cementing properties. Candidates must match material type to the correct ASTM standard and dosage limits."
-      },
+      "rationale": "Using recycled aggregate, fly ash, or slag where suitable. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": "ASTM C618 covers fly ash, not GGBS. Fly ash replacement rates (15-25%) are lower than GGBS because fly ash lacks cementitious properties. ASTM C33 specifies fine and coarse aggregate gradation, not cement replacement materials. ASTM C150 defines Portland cement composition; GGBS is not a Portland cement product but a supplementary cementitious material meeting its own ASTM C989 standard. GGBS is cooled byproduct slag from iron smelting meeting ASTM C989 specifications. It provides both pozzolanic (silica-based) and cementitious (calcium-based) reactions, allowing higher replacement rates of 30-50% compared to fly ash (15-25%). GGBS (ASTM C989) allows higher cement replacement (30-50%) than fly ash (ASTM C618: 15-25%) because it combines pozzolanic and self-cementing properties. Candidates must match material type to the correct ASTM standard and dosage limits.",
       "code_citation": "ASTM C989 Standard Specification for Ground Granulated Blast-Furnace Slag; ASTM C618",
       "bloom_level": "understand",
@@ -101,30 +89,30 @@
       "model_id": "ALE-MATL-005-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T12:47:37.071022+00:00",
+      "updated_at": "2026-07-20T01:13:22.715730+00:00",
       "content_hash": "sha256:b4656f983a12a1910e03fa356a8ccb73dd937c2ac36fa5b97f8ee9db129a54c3"
     },
     {
       "question_id": "fb5705f7-2d95-4692-b0e8-803e63989e06",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "According to ASTM C618, what is the primary difference between Class F and Class C fly ash in terms of chemical composition and concrete application?",
+      "text": "Why should recycled content still be evaluated carefully?",
       "options": [
         {
           "id": "a",
-          "text": "Class F is high-silica and pozzolanic only; Class C is high-calcium with pozzolanic and self-cementing properties. Dosage is 15-25% for F and 20-35% for C."
+          "text": "Because chemical content, durability, and embodied energy tradeoffs can still matter"
         },
         {
           "id": "b",
-          "text": "Class C is derived from anthracite coal and contains 50-70% silica; Class F is derived from lignite and contains 20-40% calcium oxide, which affects its reactivity and application in concrete."
+          "text": "Because recycled content is always prohibited"
         },
         {
           "id": "c",
-          "text": "Both classes are chemically identical; the difference is only in particle size distribution and fineness per ASTM C618, which does not affect their application in concrete."
+          "text": "Because it removes all need for specifications"
         },
         {
           "id": "d",
-          "text": "Class F is unsuitable for structural concrete and limited to non-structural fill; Class C is required for all structural applications, especially in environments with high sulfate exposure."
+          "text": "Because it applies only to paint color"
         }
       ],
       "correct_option_id": "a",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "This reverses the coal source and chemical composition. Class F comes from anthracite/bituminous (not lignite), and Class C comes from lignite/subbituminous (not anthracite).",
-        "c": "ASTM C618 specifies chemical composition requirements and pozzolanic reactivity, not only particle size. While fineness is a specification, the chemical differences between Class F and C are fundamental.",
-        "d": "Both Class F and Class C are acceptable for structural concrete when dosed within ASTM C618 limits. The difference in dosage reflects their chemical reactivity, not structural suitability.",
-        "correct": "Class F fly ash (from anthracite/bituminous coal) is 50-70% silica and acts only as a pozzolan, replacing 15-25% cement. Class C (from lignite/subbituminous) contains 20-40% CaO, acts both as a pozzolan and self-cements, and is dosed at 20-35%. Both are suitable for structural concrete within their dosage limits.",
-        "takeaway": "Class F and C fly ash have different chemical compositions, reactivity rates, and optimal dosage ranges. Candidates must match fly ash type to concrete strength requirements and durability goals."
-      },
+      "rationale": "Because chemical content, durability, and embodied energy tradeoffs can still matter. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": "This reverses the coal source and chemical composition. Class F comes from anthracite/bituminous (not lignite), and Class C comes from lignite/subbituminous (not anthracite). ASTM C618 specifies chemical composition requirements and pozzolanic reactivity, not only particle size. While fineness is a specification, the chemical differences between Class F and C are fundamental. Both Class F and Class C are acceptable for structural concrete when dosed within ASTM C618 limits. The difference in dosage reflects their chemical reactivity, not structural suitability. Class F fly ash (from anthracite/bituminous coal) is 50-70% silica and acts only as a pozzolan, replacing 15-25% cement. Class C (from lignite/subbituminous) contains 20-40% CaO, acts both as a pozzolan and self-cements, and is dosed at 20-35%. Both are suitable for structural concrete within their dosage limits. Class F and C fly ash have different chemical compositions, reactivity rates, and optimal dosage ranges. Candidates must match fly ash type to concrete strength requirements and durability goals.",
       "code_citation": "ASTM C618 Standard Specification; Class C vs Class F Fly Ash Properties (Fahrenheit 2019)",
       "bloom_level": "understand",
@@ -151,30 +133,30 @@
       "model_id": "ALE-MATL-005-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T12:47:37.182196+00:00",
+      "updated_at": "2026-07-20T01:13:22.711689+00:00",
       "content_hash": "sha256:90b108a93d8f9f0d72de56935fac5ffc3fe08c7d4b22af891529a6271e88e33d"
     },
     {
       "question_id": "33c1a1ff-0207-454b-a331-5a0c9bfb3bc3",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "A structural concrete mix uses Portland cement with embodied carbon of 0.82 kg CO2e/kg. The cement content is 350 kg/m³. If 25% of the cement is replaced with Class F fly ash (embodied carbon 0.12 kg CO2e/kg), what is the approximate embodied carbon reduction for the cement binder component?",
+      "text": "What is the source-safe role of local or regional materials?",
       "options": [
         {
           "id": "a",
-          "text": "Approximately 21-23% reduction in binder embodied carbon"
+          "text": "They can reduce transportation-related embodied energy when suitable for the application"
         },
         {
           "id": "b",
-          "text": "Approximately 35-40% reduction due to the 25% replacement percentage"
+          "text": "They automatically satisfy every structural code requirement"
         },
         {
           "id": "c",
-          "text": "Approximately 15-18% reduction, accounting for fly ash having lower but non-zero embodied carbon"
+          "text": "They have no transport impact at all"
         },
         {
           "id": "d",
-          "text": "No reduction, because fly ash is a waste product and does not reduce overall material carbon"
+          "text": "They replace professional review"
         }
       ],
       "correct_option_id": "a",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "This incorrectly assumes the 25% replacement equals 25% carbon reduction by ignoring fly ash's embodied carbon contribution.",
-        "c": "This assumes fly ash has zero embodied carbon, which is incorrect. All materials have some embodied carbon from processing.",
-        "d": "Fly ash is a waste product from coal burning, but it has measurable embodied carbon from collection, processing, and transport. Its use reduces net carbon compared to 100% Portland cement.",
-        "correct": "Original binder carbon: 350 kg/m³ × 0.82 = 287 kg CO2e/m³. After 25% replacement: 262.5 kg cement (0.82) + 87.5 kg fly ash (0.12) = 221.1 kg CO2e/m³. Reduction: (287-221.1)/287 ≈ 23%. This accounts for fly ash's own embodied carbon (not zero).",
-        "takeaway": "Embodied carbon reduction from pozzolanic replacement is never equal to the percentage replacement, because the substitute material (fly ash, slag) has non-zero embodied carbon. Always account for both material carbon values when calculating reduction."
-      },
+      "rationale": "They can reduce transportation-related embodied energy when suitable for the application. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": "This incorrectly assumes the 25% replacement equals 25% carbon reduction by ignoring fly ash's embodied carbon contribution. This assumes fly ash has zero embodied carbon, which is incorrect. All materials have some embodied carbon from processing. Fly ash is a waste product from coal burning, but it has measurable embodied carbon from collection, processing, and transport. Its use reduces net carbon compared to 100% Portland cement. Original binder carbon: 350 kg/m³ × 0.82 = 287 kg CO2e/m³. After 25% replacement: 262.5 kg cement (0.82) + 87.5 kg fly ash (0.12) = 221.1 kg CO2e/m³. Reduction: (287-221.1)/287 ≈ 23%. This accounts for fly ash's own embodied carbon (not zero). Embodied carbon reduction from pozzolanic replacement is never equal to the percentage replacement, because the substitute material (fly ash, slag) has non-zero embodied carbon. Always account for both material carbon values when calculating reduction.",
       "code_citation": "ICE Embodied Carbon Database; ASTM C618; Embodied Carbon Reduction Guide (US DOE 2024)",
       "bloom_level": "apply",
@@ -201,30 +177,30 @@
       "model_id": "ALE-MATL-005-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T12:47:37.295932+00:00",
+      "updated_at": "2026-07-20T01:13:22.710762+00:00",
       "content_hash": "sha256:8e283e0168e0103becf48c8f390192b0ce5e2b1ff304181f1d8b95eb7bc96f13"
     },
     {
       "question_id": "12f6e4bd-8a17-4249-980d-c088256fe05f",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "Recycled concrete aggregates (RCA) are an appropriate choice for which applications in a construction project?",
+      "text": "Which statement is safest when a question gives no product declaration or carbon factor?",
       "options": [
         {
           "id": "a",
-          "text": "Non-structural fill and base courses where ASTM C33 gradation requirements are met; not for primary structural concrete without additional testing"
+          "text": "Avoid exact carbon-per-kilogram claims and answer from audited life-cycle principles"
         },
         {
           "id": "b",
-          "text": "All concrete applications including structural members, provided the RCA meets the same strength grade as virgin aggregate, ensuring no compromise in structural integrity"
+          "text": "Invent a carbon factor from memory"
         },
         {
           "id": "c",
-          "text": "Only in decorative non-load-bearing applications; unsuitable for any structural or fill use due to higher absorption, which may affect durability"
+          "text": "Assume all substitutes have zero embodied energy"
         },
         {
           "id": "d",
-          "text": "Any application where cost reduction is a priority, regardless of durability or strength verification, potentially leading to compromised structural performance"
+          "text": "Assume certification is automatic"
         }
       ],
       "correct_option_id": "a",
@@ -232,13 +208,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "While RCA can meet ASTM C33 gradation, assuming it meets structural concrete requirements without testing is incorrect. Strength and durability must be verified.",
-        "c": "RCA's higher absorption makes it unsuitable for many fill applications if water ingress is a concern. Its use is primarily limited to controlled fill and base courses.",
-        "d": "Cost reduction alone does not justify RCA specification. Applications must match durability, strength, and absorption characteristics to intended use.",
-        "correct": "RCA is acceptable for non-structural uses (fill, base course) when meeting ASTM C33 gradation. RCA exhibits higher absorption (3-8% vs 0.5-1% for virgin) and lower strength, limiting use in structural concrete without testing and strength verification.",
-        "takeaway": "Recycled concrete aggregates are limited to non-structural applications where absorption and strength losses are acceptable. Candidates must recognize RCA limitations and avoid over-specifying reuse in structural concrete without verification testing."
-      },
+      "rationale": "Avoid exact carbon-per-kilogram claims and answer from audited life-cycle principles. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": "While RCA can meet ASTM C33 gradation, assuming it meets structural concrete requirements without testing is incorrect. Strength and durability must be verified. RCA's higher absorption makes it unsuitable for many fill applications if water ingress is a concern. Its use is primarily limited to controlled fill and base courses. Cost reduction alone does not justify RCA specification. Applications must match durability, strength, and absorption characteristics to intended use. RCA is acceptable for non-structural uses (fill, base course) when meeting ASTM C33 gradation. RCA exhibits higher absorption (3-8% vs 0.5-1% for virgin) and lower strength, limiting use in structural concrete without testing and strength verification. Recycled concrete aggregates are limited to non-structural applications where absorption and strength losses are acceptable. Candidates must recognize RCA limitations and avoid over-specifying reuse in structural concrete without verification testing.",
       "code_citation": "ASTM C33 Standard Specification for Concrete Aggregates; ASTM C618",
       "bloom_level": "understand",
@@ -251,30 +221,30 @@
       "model_id": "ALE-MATL-005-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T12:47:36.667484+00:00",
+      "updated_at": "2026-07-20T01:13:22.709813+00:00",
       "content_hash": "sha256:06a2f6e66598a4a92cca2f837e498e0bae19c6696accd3e165338efb5e2121f4"
     },
     {
       "question_id": "a626f590-1d39-4c72-bf95-6316bc9e17df",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "In the Philippines, which organization operates fly ash processing facilities and supplies low-ignition fly ash for concrete applications?",
+      "text": "Which previously used materials does the audited source describe as sortable and processable for reuse?",
       "options": [
         {
           "id": "a",
-          "text": "Pozzolanic Philippines Inc., with a classifying plant at Calaca Power Plant (Batangas) producing approximately 2.78 Mt of fly ash annually"
+          "text": "Concrete and steel"
         },
         {
           "id": "b",
-          "text": "Philippine Steel Manufacturing Corporation (PSMC) at the Masinloc coal power plant in Zambales, focusing on steel production rather than fly ash"
+          "text": "Only office paper"
         },
         {
           "id": "c",
-          "text": "DENR Forest Products Division specializing in rice hull ash from milling operations, not fly ash"
+          "text": "Only water fixtures"
         },
         {
           "id": "d",
-          "text": "DPWH Materials Laboratory providing fly ash testing and certification only, not production, ensuring compliance with national standards"
+          "text": "Only paint cans"
         }
       ],
       "correct_option_id": "a",
@@ -282,13 +252,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "PSMC is a steelmaker, not a fly ash processor. The Masinloc plant burns coal for power, not steel production, though coal plants do generate fly ash.",
-        "c": "DENR's Forest Products Division focuses on timber and forest products, not coal byproducts. Rice hull ash is a separate pozzolan from fly ash.",
-        "d": "DPWH maintains material standards and testing, but does not operate fly ash processing plants. Production comes from coal power plant operators.",
-        "correct": "Pozzolanic Philippines Inc. erected and operates a classifying plant within the Calaca Power Plant site in Batangas to maintain supply of fine, low-ignition fly ash. Philippines generates ~2.78 Mt annually from coal plants.",
-        "takeaway": "Pozzolanic Philippines Inc. is the primary fly ash supplier in the Philippines, operating within the Calaca Power Plant facility. Candidates must recognize domestic fly ash sources and suppliers when specifying low-embodied-carbon concrete."
-      },
+      "rationale": "Concrete and steel. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": null,
       "code_citation": "Pozzolanic Philippines Inc. - About Us; Fly Ash Waste from Coal-Fired Power Plants in the Philippines (FOI)",
       "bloom_level": "understand",
@@ -301,30 +265,30 @@
       "model_id": "ALE-MATL-005-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.714222+00:00",
       "content_hash": "sha256:9040454d91f4a3afd6986d357a2f217dd3945b5f1ad37b54a4552c54726ccb34"
     },
     {
       "question_id": "dafd69c9-8cd4-4dcf-8caf-0392b9c32f52",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "A project team is selecting between virgin aluminum extrusions (8.24 kg CO2e/kg) and recycled aluminum extrusions (2.0 kg CO2e/kg) for building cladding. What is the approximate embodied carbon reduction by choosing recycled aluminum, and is aluminum suitable for structural reinforcement in concrete per ASTM standards?",
+      "text": "What is a good first step before selecting previously unused materials?",
       "options": [
         {
           "id": "a",
-          "text": "Approximately 76% reduction in embodied carbon; aluminum is not suitable for structural reinforcement in concrete and is used only for non-structural cladding and window framing"
+          "text": "Minimize material use and maximize reuse or recycling where appropriate"
         },
         {
           "id": "b",
-          "text": "Approximately 24% reduction in embodied carbon; aluminum can substitute for steel reinforcement in concrete with proper ASTM A496 certification, which is rarely achieved"
+          "text": "Maximize waste first"
         },
         {
           "id": "c",
-          "text": "Approximately 50% reduction; aluminum is preferred for structural reinforcement due to lower density and cost, although it requires special treatment"
+          "text": "Ignore product suitability"
         },
         {
           "id": "d",
-          "text": "Recycled and virgin aluminum have equal embodied carbon; the choice should be based solely on cost and availability, ignoring environmental impact"
+          "text": "Choose only the cheapest label"
         }
       ],
       "correct_option_id": "a",
@@ -332,13 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "24% is far lower than the actual 76% reduction. Confusing recycled and virgin embodied carbon values is a critical error.",
-        "c": "While aluminum is lighter and lower-cost than steel, ASTM A496 specifies steel wire reinforcement; aluminum does not meet structural reinforcement standards.",
-        "d": "Recycled aluminum (2.0 kg CO2e/kg) has significantly lower embodied carbon than virgin (8.24 kg CO2e/kg). Material selection must account for this substantial difference.",
-        "correct": "Reduction: (8.24-2.0)/8.24 ≈ 76%. Aluminum is not suitable for structural concrete reinforcement per ASTM standards. Its high cost and corrosion susceptibility in concrete limit use to non-structural cladding, window frames, and interior finish components.",
-        "takeaway": "Recycled aluminum reduces embodied carbon by 76% compared to virgin but is unsuitable for structural reinforcement. Candidates must understand material-specific embodied carbon and application limitations."
-      },
+      "rationale": "Minimize material use and maximize reuse or recycling where appropriate. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": "24% is far lower than the actual 76% reduction. Confusing recycled and virgin embodied carbon values is a critical error. While aluminum is lighter and lower-cost than steel, ASTM A496 specifies steel wire reinforcement; aluminum does not meet structural reinforcement standards. Recycled aluminum (2.0 kg CO2e/kg) has significantly lower embodied carbon than virgin (8.24 kg CO2e/kg). Material selection must account for this substantial difference. Reduction: (8.24-2.0)/8.24 ≈ 76%. Aluminum is not suitable for structural concrete reinforcement per ASTM standards. Its high cost and corrosion susceptibility in concrete limit use to non-structural cladding, window frames, and interior finish components. Recycled aluminum reduces embodied carbon by 76% compared to virgin but is unsuitable for structural reinforcement. Candidates must understand material-specific embodied carbon and application limitations.",
       "code_citation": "ICE Embodied Carbon Database; ASTM A496 Standard for Steel Wire Reinforcement",
       "bloom_level": "apply",
@@ -351,30 +309,30 @@
       "model_id": "ALE-MATL-005-07-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T12:47:36.958615+00:00",
+      "updated_at": "2026-07-20T01:13:22.708838+00:00",
       "content_hash": "sha256:390efd74f5443dbee71e16a0bc4c672e85039b4c9db728903d5793b5d907bc98"
     },
     {
       "question_id": "6d69ce92-72bf-41c3-a22b-ed0781262a06",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "Reclaimed wood from demolished structures is suitable for reuse in construction when which condition is verified?",
+      "text": "Why is fly ash or slag mentioned in source-safe concrete questions?",
       "options": [
         {
           "id": "a",
-          "text": "No chemical treatment (preservatives, pesticides, flame retardants) is detected; treated wood requires specialized processing to avoid contamination"
+          "text": "They are byproducts that can be specified in concrete as material-resource strategies"
         },
         {
           "id": "b",
-          "text": "The wood has aged more than 20 years, automatically rendering any previous treatment inert, making it safe for reuse"
+          "text": "They are occupancy permits"
         },
         {
           "id": "c",
-          "text": "The reclaimed wood comes from buildings built before 1970, before synthetic preservatives were in common use, ensuring minimal chemical exposure"
+          "text": "They are scaffold connectors"
         },
         {
           "id": "d",
-          "text": "Any reclaimed wood can be reused without testing, as environmental benefits of reuse outweigh contamination risk, regardless of treatment history"
+          "text": "They are roof flashing details"
         }
       ],
       "correct_option_id": "a",
@@ -382,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Age alone does not render chemical treatments inert. CCA-treated wood can leach arsenic for decades; age is not a safe criterion.",
-        "c": "Date of construction is a poor proxy for treatment type. Many buildings from the 1970s onward used synthetic preservatives; buildings before 1970 may have used CCA or creosote.",
-        "d": "Environmental benefits of reuse do not justify health hazards from contaminated wood. Candidates must recognize that treated wood reuse requires testing and safe handling.",
-        "correct": "Reclaimed untreated wood is directly reusable. Wood treated with chromated copper arsenate (CCA), creosote, or pentachlorophenol (PCP) requires specialized processing (removal or containment) before reuse to prevent health and environmental hazards.",
-        "takeaway": "Reclaimed wood is only suitable for reuse when chemical treatment is verified absent. Candidates must understand that treated wood reuse requires specialized processing or must be prohibited."
-      },
+      "rationale": "They are byproducts that can be specified in concrete as material-resource strategies. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": null,
       "code_citation": "ASTM D245 Standard for Structural Timber; Reclaimed Wood Reuse Guidelines",
       "bloom_level": "understand",
@@ -401,30 +353,30 @@
       "model_id": "ALE-MATL-005-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.712468+00:00",
       "content_hash": "sha256:72a44e0f6023a67766cb906a55b44f620fca3e4f20e03075604c32b699c3af7a"
     },
     {
       "question_id": "4cef8884-ae4e-4a34-a7f5-f701d5afc563",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "A construction project in Manila specifies recycled steel reinforcement to reduce embodied carbon. Which process produces recycled steel with the lowest embodied carbon emissions?",
+      "text": "What is wrong with saying recycled content always means the lowest-impact product?",
       "options": [
         {
           "id": "a",
-          "text": "Electric arc furnace (EAF) melting of scrap steel, producing 0.9-1.1 kg CO2e/kg"
+          "text": "It ignores tradeoffs such as embodied energy, chemical content, and durability"
         },
         {
           "id": "b",
-          "text": "Blast oxygen furnace (BOF) processing of iron ore, producing 1.8-2.0 kg CO2e/kg"
+          "text": "It is always required by every local code"
         },
         {
           "id": "c",
-          "text": "Oxygen-arc furnace (OAF) hybrid process, producing 1.4-1.6 kg CO2e/kg"
+          "text": "It is the definition of a rigid connection"
         },
         {
           "id": "d",
-          "text": "Basic oxygen process (BOP) with 50% scrap addition, producing 1.2-1.4 kg CO2e/kg"
+          "text": "It applies only to structural bolts"
         }
       ],
       "correct_option_id": "a",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "BOF processing of iron ore is the primary steelmaking process and generates significantly higher embodied carbon (1.8-2.0 kg CO2e/kg) due to energy-intensive ore reduction.",
-        "c": "OAF hybrid processes are not standard industrial production methods and do not represent a common recycled steel pathway.",
-        "d": "BOP with 50% scrap still relies on blast furnace operations and does not achieve the embodied carbon benefits of full EAF recycling.",
-        "correct": "Electric arc furnace (EAF) uses electrical melting of scrap steel, generating 0.9-1.1 kg CO2e/kg, roughly 50 percent lower than primary production via BOF.",
-        "takeaway": "EAF recycled steel is the lowest-embodied-carbon steel choice for structural reinforcement. Candidates must distinguish between recycled (EAF) and primary (BOF) steelmaking processes when specifying low-carbon materials."
-      },
+      "rationale": "It ignores tradeoffs such as embodied energy, chemical content, and durability. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": null,
       "code_citation": "ASTM A996 (Deformed Steel Bars); ICE Embodied Carbon Database; Embodied Carbon Reduction Guide (US DOE 2024)",
       "bloom_level": "understand",
@@ -451,30 +397,30 @@
       "model_id": "ALE-MATL-005-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.714994+00:00",
       "content_hash": "sha256:ac9a99c4f5a8f8817d66dd559a23c5fa407ce3a3960a3d828b85cdc0e761afc2"
     },
     {
       "question_id": "7cfe2e9f-aa79-4eea-8caa-4a806b69c86d",
       "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
       "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
-      "text": "Timber used in construction has an embodied carbon value of approximately -0.46 kg CO2e/kg, indicating a negative value. What does the negative sign represent in the context of embodied carbon?",
+      "text": "What should an LEA answer do if a green-rating point value is not locally audited?",
       "options": [
         {
           "id": "a",
-          "text": "Carbon sequestration: trees absorb CO2 during growth and store it in the wood fiber; harvesting and using timber retains this stored carbon, offsetting emissions"
+          "text": "Avoid the point value and answer from source-checked material principles"
         },
         {
           "id": "b",
-          "text": "An error in measurement: negative embodied carbon is impossible and indicates laboratory testing failure, suggesting a need for recalibration"
+          "text": "Treat the point value as automatically true"
         },
         {
           "id": "c",
-          "text": "Timber requires energy removal during processing, reducing net emissions compared to mineral materials, which typically have higher embodied carbon"
+          "text": "Convert it into a bolt grade"
         },
         {
           "id": "d",
-          "text": "The negative value means timber has no environmental impact and is perfectly sustainable regardless of harvest method, making it an ideal choice"
+          "text": "Ignore the question scope"
         }
       ],
       "correct_option_id": "a",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "b": "Laboratory testing of timber is accurate; negative embodied carbon is a valid concept reflecting carbon sequestration, not measurement error.",
-        "c": "Timber processing requires energy (drying, milling), which adds positive embodied carbon. The net embodied carbon remains negative because sequestration exceeds processing emissions.",
-        "d": "Timber sustainability depends on harvest method (sustainable forestry vs clear-cutting), replanting, and transport distance. A negative embodied carbon value does not guarantee ecological soundness.",
-        "correct": "Trees sequester atmospheric CO2 during growth through photosynthesis, storing carbon in cellulose and lignin. Timber retains this stored carbon for the duration of its service life. The negative value (carbon credit) offsets the manufacturing and transport emissions.",
-        "takeaway": "Negative embodied carbon represents carbon sequestration in organic materials. Candidates must understand that timber stores atmospheric CO2, making it a carbon sink if sustainably harvested and managed."
-      },
+      "rationale": "Avoid the point value and answer from source-checked material principles. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
       "explanation": "Laboratory testing of timber is accurate; negative embodied carbon is a valid concept reflecting carbon sequestration, not measurement error. Timber processing requires energy (drying, milling), which adds positive embodied carbon. The net embodied carbon remains negative because sequestration exceeds processing emissions. Timber sustainability depends on harvest method (sustainable forestry vs clear-cutting), replanting, and transport distance. A negative embodied carbon value does not guarantee ecological soundness. Trees sequester atmospheric CO2 during growth through photosynthesis, storing carbon in cellulose and lignin. Timber retains this stored carbon for the duration of its service life. The negative value (carbon credit) offsets the manufacturing and transport emissions. Negative embodied carbon represents carbon sequestration in organic materials. Candidates must understand that timber stores atmospheric CO2, making it a carbon sink if sustainably harvested and managed.",
       "code_citation": "ICE Embodied Carbon Database; Embodied Carbon Reduction in New Construction Reference Guide (US DOE 2024)",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-MATL-005-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-05-06T12:47:37.409512+00:00",
+      "updated_at": "2026-07-20T01:13:22.707646+00:00",
       "content_hash": "sha256:892f73921eecc445df11eabec8b3bca00ec741a240fb7150e61d125f92a8eaf5"
     }
   ]

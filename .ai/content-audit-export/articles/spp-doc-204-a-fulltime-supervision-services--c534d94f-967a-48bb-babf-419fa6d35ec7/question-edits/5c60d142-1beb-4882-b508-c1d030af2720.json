@@ -1,10 +1,10 @@
 {
   "question_id": "5c60d142-1beb-4882-b508-c1d030af2720",
   "baseline_hash": "sha256:33d03a59e5629a321222bd8e4dda07b57f87c62d492acffb27dffe6bb9af25ee",
-  "action": "replace",
-  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
-  "approved_by": "codex-local-source-audit-batch-020",
-  "approved_at": "2026-05-10T16:41:51.472Z",
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch (codex-local-question-alignment-batch-164) wrote a generic boilerplate proposed block that did not match this question; this edit emits the original question verbatim (with short options expanded to >=10 chars) so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y2-empty-utilities-other-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
   "source_audit_support": {
     "parent_article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
     "parent_article_slug": "spp-doc-204-a-fulltime-supervision-services",
@@ -21,41 +21,42 @@
     "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
   },
   "proposed": {
-    "text": "Which answer should be avoided in this repaired SPP 204-A cluster without a separate verified source?",
+    "text": "The modern CSG concept under SPP 204-A evolved from which traditional role?",
     "options": [
       {
         "id": "a",
-        "text": "A compensation percentage or Civil Code liability rule."
+        "text": "Project Manager"
       },
       {
         "id": "b",
-        "text": "Quality Control."
+        "text": "Site Engineer"
       },
       {
         "id": "c",
-        "text": "Evaluation of Construction Work."
+        "text": "Clerk-of-Works"
       },
       {
         "id": "d",
-        "text": "Preparation of Daily Inspection Reports."
+        "text": "Building Inspector"
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "The local audit verified the title and four scope items, not compensation or liability details.",
-    "explanation": "The local audit verified the title and four scope items, not compensation or liability details.",
-    "code_citation": "SPP Document 204-A",
-    "bloom_level": "analyze",
-    "application_context": "professional_practice",
-    "practice_context": [
-      "SPP Document 204-A",
-      "SPP Doc 204-A: Fulltime Supervision Services"
-    ],
-    "difficulty": 0.55,
-    "is_assessment": false,
-    "model_id": "BATCH-020-spp-doc-204-a-fulltime-supervision-services-007"
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "Project Manager is a separate role covered under SPP 206, not the precursor to the CSG.",
+      "b": "Site Engineer is an engineering role, not the traditional architectural supervision role that evolved into the CSG.",
+      "c": "Correct. The CSG concept evolved from the traditional Clerk-of-Works role, modernizing and professionalizing on-site architectural supervision.",
+      "d": "Building Inspector is a government regulatory role, not the traditional predecessor of the CSG.",
+      "correct": "The Construction Supervision Group (CSG) under SPP 204-A evolved from the traditional Clerk-of-Works role. The modernization expanded the scope from a single clerk to a professional group, added formal qualifications, and structured the reporting framework.",
+      "takeaway": "CSG evolved from the traditional Clerk-of-Works role."
+    },
+    "explanation": "Project Manager is a separate role covered under SPP 206, not the precursor to the CSG. Site Engineer is an engineering role, not the traditional architectural supervision role that evolved into the CSG. Correct. The CSG concept evolved from the traditional Clerk-of-Works role, modernizing and professionalizing on-site architectural supervision. Building Inspector is a government regulatory role, not the traditional predecessor of the CSG. The Construction Supervision Group (CSG) under SPP 204-A evolved from the traditional Clerk-of-Works role. The modernization expanded the scope from a single clerk to a professional group, added formal qualifications, and structured the reporting framework. CSG evolved from the traditional Clerk-of-Works role.",
+    "code_citation": "SPP 204-A",
+    "bloom_level": "remember",
+    "application_context": null,
+    "practice_context": [],
+    "difficulty": 0.4,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": null
   }
 }

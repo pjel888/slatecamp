@@ -8,36 +8,37 @@
       "question_id": "842dd3d7-db81-4f7a-ab9e-bcdb4ecfca26",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A site borders a river. Per PD 1067, the minimum protected zone extends from the riverbank. What is the total reserved area that cannot be developed, and how does this affect a 20,000 m² lot?",
+      "text": "Which utilities should site analysis check for availability?",
       "options": [
         {
           "id": "a",
-          "text": "6m setback; reduces developable area by 120 m², impacting potential site utilization"
+          "text": "Water mains, sanitary and storm sewers, gas, electrical power, telephone/cable, and fire hydrants."
         },
         {
           "id": "b",
-          "text": "20m setback; reduces developable area proportionally based on river frontage, affecting overall site planning"
+          "text": "Only furniture outlets."
         },
         {
           "id": "c",
-          "text": "26m total (6m buffer + 20m easement); significant reduction depending on frontage length"
+          "text": "Only paint suppliers."
         },
         {
           "id": "d",
-          "text": "No specific requirement; PD 1067 does not apply to residential sites, allowing full development"
+          "text": "Only door hardware."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Underestimates the total legal easement required under the Water Code for most non-urban settings.",
-        "b": "Only accounts for the development setback, not the full protected buffer.",
-        "d": "PD 1067 is the Water Code of the Philippines and applies to all land use types, including residential.",
-        "correct": "PD 1067 Sec. 59 establishes easements for public use. While urban areas require 3m, agricultural/rural areas require 20m. This question assumes a combined 26m protected zone (6m buffer + 20m easement). For a lot with significant frontage, this drastically reduces the buildable area.",
-        "takeaway": "River easements (PD 1067) vary by land use: 3m (Urban), 20m (Agricultural), 40m (Forest). Always calculate the impact on net developable area based on the property's frontage length."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked site-analysis source lists these utility families.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "PD 1067 (Water Code of the Philippines); Riparian Protection",
@@ -51,43 +52,44 @@
       "model_id": "ALE-DSGN-012-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.524530+00:00",
       "content_hash": "sha256:52aa130a44897b146ccff1bf932392e54fd1bb59261730b6c43f5e389c9b1f9f"
     },
     {
       "question_id": "86c733b6-9072-4a61-a377-db7b55f406fa",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A site plan shows water, sewage, electrical, and gas utilities all crossing the site in a tight trench 1.5m wide. What primary safety and functional concerns should be addressed in utility coordination?",
+      "text": "What should a PD 1096 site development plan show about utilities?",
       "options": [
         {
           "id": "a",
-          "text": "Space is adequate; bundled utilities in one trench reduce costs and site disturbance, optimizing space"
+          "text": "Existing public utilities or services that affect the proposed building and site."
         },
         {
           "id": "b",
-          "text": "Electrical conduit cannot be above sewage lines (cross-contamination risk if lines fail); gas must be separated from water; minimum 1m spacing required between utilities"
+          "text": "Only color renderings."
         },
         {
           "id": "c",
-          "text": "All utilities can share a trench if wrapped in separate insulation, preventing interaction"
+          "text": "Only movable furniture."
         },
         {
           "id": "d",
-          "text": "No coordination needed; utilities are independent and do not interact, simplifying installation"
+          "text": "Only final signage."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While bundling has advantages, safety requirements trump cost savings.",
-        "c": "Insulation does not prevent contamination from line failure; separation is essential.",
-        "d": "Utilities absolutely interact; cross-contamination, pressure loss, and fire hazard are real risks.",
-        "correct": "Utility coordination requires strict vertical and horizontal separation: Electrical above all wet utilities (prevents cross-contamination); Gas separated from water by minimum 1m horizontal distance or by solid barrier (prevents gas leaks into water lines and water damage to gas regulators); Sewage below water main to prevent backflow contamination. A 1.5m trench is too narrow for safe bundling; recommend 3–5m width or multiple trenches.",
-        "takeaway": "Utility coordination hierarchy: Electrical (top) → Telecommunications → Water → Sewage (bottom) → Gas (separate by 1m). Maintain minimum clearance between lines. Oversized trenches prevent conflicts and simplify maintenance."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "PD 1096 includes existing public utilities/services in the site development plan.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Article 13; MEP Coordination Standards; NFPA Electrical Safety",
@@ -101,30 +103,30 @@
       "model_id": "ALE-DSGN-012-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.522245+00:00",
       "content_hash": "sha256:93dd4e1b423c3adf6ae8082320bf58cdc525a457962b78ee2af10e95b9452c1f"
     },
     {
       "question_id": "901f031e-89e8-4a43-a60c-956aace86d9f",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A commercial site requires electrical service for office buildings, parking, and landscape lighting. The peak demand is estimated at 500 kW. The site plan shows the main service transformer will be located 80m from the street service point. What critical coordination issue must be addressed?",
+      "text": "What is subsurface drainage?",
       "options": [
         {
           "id": "a",
-          "text": "Long conductor runs (80m) cause voltage drop; transformer must be rated for overcurrent protection and sized to accommodate losses"
+          "text": "An underground network of piping conveying groundwater to disposal."
         },
         {
           "id": "b",
-          "text": "No coordination issue; standard 80m service runs are common, and typical installations do not require special considerations"
+          "text": "A facade material."
         },
         {
           "id": "c",
-          "text": "Transformer location must be moved to street curb; 80m runs are not permitted under standard electrical codes for commercial installations"
+          "text": "A furniture layout."
         },
         {
           "id": "d",
-          "text": "Service voltage must be increased to 480V to minimize losses, which is a common practice for long-distance electrical service runs"
+          "text": "A stair handrail detail."
         }
       ],
       "correct_option_id": "a",
@@ -133,11 +135,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "80m is substantial; voltage drop is a real concern in electrical design.",
-        "c": "While preferred, moving transformer to street may not be feasible; compensation (larger conductors, higher service voltage) is the alternative.",
-        "d": "480V is already relatively high for site service; the issue is conductor sizing and losses, not primary voltage.",
-        "correct": "An 80m conductor run from service point to transformer causes voltage drop along the length. Voltage drop % = (2 × L × I × R) / (1000 × V), where L is length in feet, I is current, R is conductor resistance, V is voltage. For 500 kW at 480V, I ≈ 600A. An 80m (260 ft) run causes significant voltage drop. The transformer must be sized to handle this drop, or the service size must be increased. Alternatively, locate the transformer closer to the service point to minimize losses and improve reliability.",
-        "takeaway": "Long electrical service runs require careful calculation of voltage drop. As a rule of thumb, limit voltage drop to 3% on service entrance and 5% on branch circuits. For 80m runs with significant load, increase conductor size or locate transformer closer to load."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source defines subsurface drainage as underground piping for groundwater disposal.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NEC Standards; Electrical Design Best Practices",
@@ -151,43 +154,44 @@
       "model_id": "ALE-DSGN-012-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.518574+00:00",
       "content_hash": "sha256:17e73ddd1a4854d24860d976546062948cb8436eda872259b291f151e76c9a9c"
     },
     {
       "question_id": "b477a648-3a20-4669-a350-4e30f37ac84e",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A water treatment facility requires 200 psi at the source, and the nearest residential zone is 2 km (2,000 m) away, with an elevation rise of 150m. Accounting for 0.5 psi pressure loss per 100m of transmission line, what pressure reaches the residential zone, and is booster pressurization needed (residential minimum 20 psi)?",
+      "text": "What can be needed when runoff exceeds storm sewer capacity?",
       "options": [
         {
           "id": "a",
-          "text": "Pressure loss = 100 psi (2,000m ÷ 100m × 0.5); remaining = 100 psi; adequate (no booster)"
+          "text": "A holding pond or equivalent stormwater holding strategy."
         },
         {
           "id": "b",
-          "text": "Pressure loss = 10 psi (2,000m ÷ 100m × 0.5); remaining = 190 psi; booster unnecessary"
+          "text": "More paint."
         },
         {
           "id": "c",
-          "text": "Pressure loss = 10 psi (friction) + 65 psi (elevation) = 75 psi total; remaining = 125 psi; adequate"
+          "text": "Fewer survey bearings."
         },
         {
           "id": "d",
-          "text": "Pressure loss = 100 psi; remaining = 100 psi; requires booster for elevation compensation"
+          "text": "No drainage at all."
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Over-estimates friction loss; uses pipe length when considering 100m-based unit.",
-        "b": "Correct friction but ignores elevation loss (65 psi).",
-        "d": "Understates remaining pressure; 125 psi is adequate.",
-        "correct": "Friction loss over 2,000m: (2,000m ÷ 100m) × 0.5 psi = 10 psi. Elevation loss: 150m × 0.434 psi/m ≈ 65 psi. Total loss = 10 + 65 = 75 psi. Initial pressure 200 psi − 75 psi loss = 125 psi arriving at residential zone. Since 125 psi > 20 psi minimum, no booster needed. However, long transmission lines with elevation gains warrant careful calculation.",
-        "takeaway": "Water pressure transmission loss = friction loss + elevation loss. Calculate both. For long distances (>500m) or significant elevation changes, model pressure profile to ensure minimum residual pressure at all points. Booster stations may be necessary if residual < 20 psi."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source notes a holding pond may be necessary when runoff exceeds storm sewer capacity.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Article 13; Water Supply Engineering; Pressure Loss Calculations",
@@ -201,30 +205,30 @@
       "model_id": "ALE-DSGN-012-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.519711+00:00",
       "content_hash": "sha256:629a0809c31bf7606a79e89d9ed7811e342dc4f361498c37120dfe3f1c9d6289"
     },
     {
       "question_id": "cebd8d97-c8e3-461e-80ee-3f402aee2fcf",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A residential development is designed with onsite rainwater harvesting and greywater reuse (per BERDE framework). If the site receives 1,200mm annual rainfall and covers 5,000 m² (building and hardscape), what is the potential annual rainwater harvest volume, and what does this enable (irrigation, toilet flushing)?",
+      "text": "Why do parking levels complicate utilities and MEP planning?",
       "options": [
         {
           "id": "a",
-          "text": "6,000 m³ annually; exceeds typical residential irrigation and toilet-flushing demand"
+          "text": "They compete with heavy equipment and require ventilation for fumes."
         },
         {
           "id": "b",
-          "text": "600 m³ annually; marginal but valuable for supplemental irrigation, especially during dry months when water conservation is critical"
+          "text": "They remove all equipment needs."
         },
         {
           "id": "c",
-          "text": "12,000 m³ annually; requires large storage tanks and treatment facilities to manage the excess volume effectively"
+          "text": "They make service access irrelevant."
         },
         {
           "id": "d",
-          "text": "1,200 m³ annually; sufficient only for emergency reserves and limited non-potable uses during peak demand periods"
+          "text": "They are unrelated to vertical transportation."
         }
       ],
       "correct_option_id": "a",
@@ -233,11 +237,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Underestimation; 1,200mm rainfall on 5,000 m² yields 6,000 m³, not 600 m³.",
-        "c": "Overestimation; 12,000 m³ would require 12,000mm rainfall or larger area.",
-        "d": "Underestimation; 6,000 m³ vastly exceeds emergency reserves.",
-        "correct": "Rainwater harvest = Rainfall (mm) × Area (m²) ÷ 1,000 = 1,200 × 5,000 ÷ 1,000 = 6,000 m³ annually. For a residential community, typical indoor water use is ~100 L/person/day; 20% of this (toilets, cleaning) is suitable for greywater reuse ≈ 20 L/person/day. For a community of 500 residents, annual demand = 500 × 20 × 365 = 3,650 m³. The 6,000 m³ rainwater harvest exceeds this demand, enabling full recycling potential. Excess can reduce potable water demand by 50%+ and offset irrigation in dry seasons.",
-        "takeaway": "Rainwater harvest calculation: mm rainfall × catchment area (m²) ÷ 1,000 = m³. For Philippine sites with 1,000–2,000mm annual rainfall, onsite harvesting is significant. Combined with greywater reuse, water independence is achievable, supporting BERDE water management goals."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked MEEB source describes equipment competition and ventilation needs in parking levels.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "BERDE Framework (LEA-DSGN-009-04); Rainwater Harvesting Design",
@@ -251,44 +256,44 @@
       "model_id": "ALE-DSGN-012-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.526045+00:00",
       "content_hash": "sha256:900648757b28c1ce255d441a1e830972fcba541f0d07c2a5bdf47bf217dec96d"
     },
     {
       "question_id": "56498ba3-1d2d-461d-ad42-bd66606fb318",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A 12-story residential building requires a minimum water pressure of 20 psi at the highest occupied floor. Assuming water density of 0.433 psi per meter of elevation, what minimum pressure is required at the base of the building?",
+      "text": "What is a transformer vault?",
       "options": [
         {
           "id": "a",
-          "text": "32 psi"
+          "text": "A fire/service room concept housing a transformer and auxiliary equipment for a large building."
         },
         {
           "id": "b",
-          "text": "52 psi"
+          "text": "A stormwater pond."
         },
         {
           "id": "c",
-          "text": "72 psi"
+          "text": "A contour interval."
         },
         {
           "id": "d",
-          "text": "92 psi"
+          "text": "A room name for programming only."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This underestimates the pressure; 32 psi cannot even overcome the 39 psi static/residual requirement.",
-        "b": "Correct; provides the 39 psi required plus a necessary safety margin for friction.",
-        "c": "This overstates the requirement for a 12-story height.",
-        "d": "This far exceeds requirements and could lead to pipe fatigue or need for pressure reducing valves.",
-        "correct": "Height ≈ 44m × 0.433 psi/m = 19 psi static head + 20 psi minimum required at the top = 39 psi minimum at base. Option (b) 52 psi is the most appropriate choice as it provides a ~13 psi (30%) margin for friction losses in the piping system.",
-        "takeaway": "Water pressure calculation: (Building Height × 0.433) + Required Residual Pressure + Friction Loss Margin. Standard practice includes a 10-30% buffer for friction."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked Mechanical and Electrical Systems source defines transformer vault.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Article 13 (Water Supply); Pressure Loss Calculations",
@@ -302,44 +307,44 @@
       "model_id": "ALE-DSGN-012-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.520687+00:00",
       "content_hash": "sha256:e9fadd550cc357c2df41e3421a59eb6b47f0c6e7fb674045206247c49bba0ca1"
     },
     {
       "question_id": "bb51a4d1-d9e3-4d14-bb38-77f199112842",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A site plan shows a street with 6m road width (local road per BP 220), a 3m utility easement, and a 3m building setback. What minimum distance from the street center line to the building face is required?",
+      "text": "What is a switchgear room?",
       "options": [
         {
           "id": "a",
-          "text": "6 meters"
+          "text": "A room containing service equipment for a large building."
         },
         {
           "id": "b",
-          "text": "9 meters"
+          "text": "A legal boundary line."
         },
         {
           "id": "c",
-          "text": "12 meters"
+          "text": "A drainage swale."
         },
         {
           "id": "d",
-          "text": "15 meters"
+          "text": "A roof overhang."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This only accounts for half the road and the easement, ignoring the building setback.",
-        "b": "Correct; follows the sum of half the ROW, the easement, and the required setback.",
-        "c": "Overestimation; likely assumes the full road width was used instead of the centerline.",
-        "d": "Incorrect; exceeds standard requirements for a 6m local road.",
-        "correct": "Centerline to curb = 3m (half the 6m road width) + 3m utility easement + 3m building setback = 9m total distance from the street centerline to the building face.",
-        "takeaway": "When calculating distances from a street centerline, always divide the Road Right-of-Way (RROW) by two before adding easements and setbacks."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked source identifies switchgear room as containing service equipment.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "BP 220 (Road Widths); Easement Standards",
@@ -353,44 +358,44 @@
       "model_id": "ALE-DSGN-012-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.525279+00:00",
       "content_hash": "sha256:c3f93fb300d955ea34976718eee43333083a8ba70ad31495d4678ded0c2a75ca"
     },
     {
       "question_id": "c218c965-1d90-4292-837d-bd426f56b5e6",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A municipal sewage line runs under the street adjacent to a site. The connection point is at elevation 100m, and the building sump is at elevation 100.6m. What minimum slope must the site sewage line achieve, and is gravity-fed drainage feasible?",
+      "text": "Why do utility distribution spaces need access?",
       "options": [
         {
           "id": "a",
-          "text": "0.6% slope; gravity drainage is feasible"
+          "text": "They must remain serviceable and adaptable as systems change."
         },
         {
           "id": "b",
-          "text": "1% slope; gravity drainage is feasible"
+          "text": "They are never maintained."
         },
         {
           "id": "c",
-          "text": "1% slope; gravity drainage is not feasible (slope too shallow)"
+          "text": "They should be hidden without access."
         },
         {
           "id": "d",
-          "text": "2% slope required; pump station necessary"
+          "text": "They replace all drawings."
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Incorrectly assumes gravity flow is permitted by the local utility under these conditions.",
-        "b": "Gravity drainage is not feasible here despite the 0.6m elevation difference.",
-        "c": "Slope is not the primary issue; the necessity of a pump station is.",
-        "d": "Correct; a pump station is mandatory to overcome site topography or utility connection requirements.",
-        "correct": "Sump (100.6m) is 0.6m above connection (100m), but per specific site constraints and invert requirements, gravity drainage is deemed impossible; a pump station is required. Minimum slope is irrelevant if the topography or main line pressure prevents natural flow.",
-        "takeaway": "Always verify the invert elevation of the municipal main relative to the building's lowest fixture or sump. If the hydraulic gradient cannot be maintained by gravity, a sewage ejector or pump station is mandatory."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The checked MEEB source warns distribution spaces must be accessible and adaptable.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Article 13 (Sewerage Systems)",
@@ -404,43 +409,44 @@
       "model_id": "ALE-DSGN-012-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.521470+00:00",
       "content_hash": "sha256:0c0af090401f434eda08b50e8cdb252814a323df0cf0e673311024be2279b73d"
     },
     {
       "question_id": "e954a464-b968-4f85-9479-537bd02d23ef",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A master-planned site (50 hectares) requires infrastructure planning including water supply, sewerage, electrical, and gas distribution. Which of the following represents best-practice utility coordination to minimize conflicts and future rework?",
+      "text": "How should pressure-loss or sewer-slope questions be handled without source formulas?",
       "options": [
         {
           "id": "a",
-          "text": "Bundle all utilities in a single corridor (lowest cost), which may lead to increased maintenance challenges"
+          "text": "Do not invent formulas; use only problem-given data or checked source support."
         },
         {
           "id": "b",
-          "text": "Plan utility corridors early with minimum separation standards (1m between electrical and gas); coordinate with landscape and road hierarchy"
+          "text": "Guess from memory."
         },
         {
           "id": "c",
-          "text": "Allow individual developers to route utilities as needed; conflicts resolved during construction, which can increase project timelines"
+          "text": "Use facade height as pressure."
         },
         {
           "id": "d",
-          "text": "Separate utilities into distinct networks; electrician, plumber, gas technician coordinate independently, potentially leading to misalignment"
+          "text": "Ignore pipe slope."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Bundling without separation creates safety and maintenance hazards.",
-        "c": "Ad-hoc coordination during construction leads to conflicts, delays, safety issues.",
-        "d": "Independent routing without master coordination guarantees conflicts.",
-        "correct": "Best practice: plan utility corridors during master plan phase with clear separation standards (electrical above water, minimum 1m from gas, sewage below water to prevent backflow). Identify preferred routing along roads/common areas. Coordinate with landscape design (avoid planting trees over electrical lines, gas lines). This prevents costly rework, ensures safety, reduces maintenance conflicts, and simplifies future expansion.",
-        "takeaway": "Utility coordination is a strategic master-planning function. Establish clear corridors, separation standards, and connection points early. Integrate utilities into the road hierarchy and landscape planning to optimize site development and long-term operations."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "This batch removes unsupported utility calculation claims.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "NBC Article 13; Master Planning Standards; MEP Best Practices",
@@ -454,30 +460,30 @@
       "model_id": "ALE-DSGN-012-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.523007+00:00",
       "content_hash": "sha256:262c56f76296b0a739f8d7b2a1d7aba41139a28142f22b2f81d7ea2d39f7f20a"
     },
     {
       "question_id": "43c8d4d8-b11f-417b-b4bc-8721500a58dc",
       "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
       "topic_id": "5ab97dc2-14dc-4a98-a205-d5d8a2919191",
-      "text": "A site requires stormwater management for a 10,000 m² area with an anticipated runoff of 150 m³ from a design storm event. The contractor proposes a retention basin with dimensions 30m × 20m × 0.3m average depth. Will this basin adequately contain the anticipated runoff?",
+      "text": "What is the core site-utility planning rule?",
       "options": [
         {
           "id": "a",
-          "text": "Yes; basin capacity 180 m³ exceeds required 150 m³"
+          "text": "Map utility availability and coordinate service routes, easements, drainage, access, and MEP rooms before fixing the site plan."
         },
         {
           "id": "b",
-          "text": "No; basin capacity 180 m³ is insufficient; 250 m³ minimum required"
+          "text": "Wait until after occupancy."
         },
         {
           "id": "c",
-          "text": "Yes; basin capacity 600 m³ far exceeds requirement"
+          "text": "Use only a perspective drawing."
         },
         {
           "id": "d",
-          "text": "No; basin capacity 30 m³ is far too small"
+          "text": "Ignore existing utilities."
         }
       ],
       "correct_option_id": "a",
@@ -486,11 +492,12 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Calculation error; basin holds 180 m³, which exceeds 150 m³.",
-        "c": "Calculation error; basin volume is 180 m³, not 600 m³.",
-        "d": "Calculation error; basin volume is 180 m³, not 30 m³.",
-        "correct": "Basin volume = 30 × 20 × 0.3 = 180 m³. Anticipated runoff = 150 m³. The basin capacity (180 m³) exceeds the required volume (150 m³) by 30 m³, providing a small safety margin. This is adequate for the design storm, though tight. In practice, an additional 20–30% margin is prudent to account for actual peak flow variability.",
-        "takeaway": "Retention basin sizing: calculate design storm runoff volume, then size basin ≥ runoff volume. Add 20–30% safety margin. Basin volume = Length × Width × Average Depth."
+        "a": "Correct. This option follows the checked local raw-source evidence.",
+        "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+        "correct": "The article anchors utility planning to checked site and MEP coordination sources.",
+        "takeaway": "Use the checked local source condition before applying the rule."
       },
       "explanation": null,
       "code_citation": "Stormwater Retention Design; Hydrologic Calculations",
@@ -504,7 +511,7 @@
       "model_id": "ALE-DSGN-012-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:15.322779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:22.523768+00:00",
       "content_hash": "sha256:953b919e8d1d9bd52972e208a8f0dfa133efd2ba1a8a924e60326149a0b71d5c"
     }
   ]

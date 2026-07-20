@@ -158,36 +158,32 @@
       "question_id": "02697f9f-da38-496a-b4d6-004091a7831a",
       "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
       "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
-      "text": "What is the primary purpose of the Professional Identification Card in an architect's professional practice?",
+      "text": "What information does the checked RA 9266 IRR definition require the Professional Identification Card to bear?",
       "options": [
         {
           "id": "a",
-          "text": "To serve as a discount card at architectural suppliers, offering financial benefits on purchases"
+          "text": "Registration number, date of issuance, and date of expiry."
         },
         {
           "id": "b",
-          "text": "To prove current registration status in all professional transactions and client communications"
+          "text": "Only the architect's school transcript."
         },
         {
           "id": "c",
-          "text": "To waive renewal fees for the Certificate of Registration, providing cost savings for architects"
+          "text": "Only the architect's tax identification number."
         },
         {
           "id": "d",
-          "text": "To grant exemption from continuing professional development, reducing the need for ongoing education"
+          "text": "Only a project list and client references."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Trivializes the credential; the PIC is a regulatory proof of licensed status, not a vendor discount card.",
-        "c": "Misunderstands renewal mechanics; the PIC itself is renewed, not replaced; renewal pays for the 3-year validity period, not waived.",
-        "d": "Invents exemptions; holding a valid PIC does not exempt architects from continuing professional development if required.",
-        "correct": "RA 9266 IRR Rule III Section 302 and Rule V Section 504 define the PIC as tangible proof of current registration status in all professional transactions and client communications, bearing the registration number, date of issuance, expiry date, and the architect's photograph.",
-        "takeaway": "PIC purpose: tangible proof of current registration status in all professional transactions and client communications."
+        "correct": "Section 3(37) defines the PIC as bearing the registration number, date of issuance, and date of expiry, and as due for periodic renewal."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -201,7 +197,7 @@
       "model_id": "ALE-PRAC-LAW-009-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.555700+00:00",
       "content_hash": "sha256:5efd51d2daf296a11b7fdf3e9e17bafe09a447cdf7211374ec95aad018680f95"
     },
     {
@@ -358,36 +354,32 @@
       "question_id": "f524a5bc-74aa-458c-8b03-326c1a9e30dc",
       "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
       "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
-      "text": "An architect requests cancellation of her Certificate of Registration to relocate to another country. After two years, she returns to the Philippines and wishes to practice again. What must she do?",
+      "text": "Under RA 9266 IRR Section 18, how long does a Certificate of Registration remain in force and effect?",
       "options": [
         {
           "id": "a",
-          "text": "Simply renew her old PIC at the PRC office without any additional requirements"
+          "text": "Until withdrawn, suspended, or revoked according to the Act."
         },
         {
           "id": "b",
-          "text": "Apply for reinstatement of her Certificate and obtain Board approval"
+          "text": "Only for one year after oath-taking."
         },
         {
           "id": "c",
-          "text": "Retake the Architect Licensure Examination as if she were a new applicant"
+          "text": "Only until the next LEA is administered."
         },
         {
           "id": "d",
-          "text": "Register with the CHED before PRC approval, ensuring compliance with educational standards"
+          "text": "Only while the architect remains in the Philippines."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mishandles cancellation mechanics; a cancelled registration cannot be merely renewed; reapplication and Board approval are required.",
-        "c": "Overstates the requirement; reinstatement does not necessitate re-examination; Board approval of reapplication suffices.",
-        "d": "Misorders authority; CHED accredits educational institutions, not practicing architects; the Board (under PRC) handles reinstatement.",
-        "correct": "The source document states that once a Certificate is cancelled, reinstatement requires reapplication and Board approval. Renewal of an old PIC is not possible because the registration was cancelled.",
-        "takeaway": "Cancelled certificate reinstatement: architect must reapply and obtain Board approval; renewal alone is insufficient."
+        "correct": "Section 18 states that the Certificate of Registration remains in full force and effect until withdrawn, suspended, or revoked according to RA 9266. The prior cancellation-and-return scenario was not supported by the checked source."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -401,43 +393,39 @@
       "model_id": "ALE-PRAC-LAW-009-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.554901+00:00",
       "content_hash": "sha256:aaf09d85df695544d80a94ebc2dd6705416c87d723ea814d23955607a08c9cf3"
     },
     {
       "question_id": "58c847f2-dbf7-4bae-8d06-2c230927d2f8",
       "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
       "topic_id": "07ce5663-d399-4a0a-a2d5-d9495bffa9e3",
-      "text": "What document signifies that a candidate has successfully passed the LEA and is legally authorized to practice architecture?",
+      "text": "Under RA 9266 IRR Section 18, what is issued to LEA passers subject to payment of prescribed fees?",
       "options": [
         {
           "id": "a",
-          "text": "ALE Passing Certificate, which is a preliminary document indicating successful completion of the exam but not sufficient for legal practice."
+          "text": "A Certificate of Registration and Professional Identification Card."
         },
         {
           "id": "b",
-          "text": "Certificate of Registration issued by the Professional Regulation Commission"
+          "text": "Only a school diploma."
         },
         {
           "id": "c",
-          "text": "Professional Identification Card, which serves as proof of identity and professional status but is issued after registration."
+          "text": "Only an IAPOA membership certificate."
         },
         {
           "id": "d",
-          "text": "Board Resolution of Qualification, which is an internal document used by the board to confirm eligibility but not a public certification."
+          "text": "A building permit."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Confuses examination passing with legal authorization; exam passing alone does not grant practice authority; the Certificate of Registration is required.",
-        "c": "Misidentifies purpose; the PIC proves current registration status but is issued after the Certificate; the Certificate comes first.",
-        "d": "Invents non-existent credential; the Board issues certificates under RA 9266, not Board Resolutions alone, to authorize practice.",
-        "correct": "RA 9266 Section 3 establishes that the Certificate of Registration, issued by the Professional Regulation Commission, represents the candidate's legal authorization to practice architecture and entry into the professional register.",
-        "takeaway": "Legal authority to practice: Certificate of Registration from the PRC, not exam score alone."
+        "correct": "Section 18 states that Certificates of Registration and Professional Identification Cards are issued to examinees who pass the LEA, subject to payment of prescribed fees."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -451,7 +439,7 @@
       "model_id": "ALE-PRAC-LAW-009-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.366479+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:25.553519+00:00",
       "content_hash": "sha256:5816edc822d5735b3c91e48742bbd5b89fd6674ddf925b6289c084f7120e4117"
     },
     {

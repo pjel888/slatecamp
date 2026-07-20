@@ -2,9 +2,9 @@
   "question_id": "91bab790-b581-4a89-9ebc-24647f21c440",
   "baseline_hash": "sha256:e412c820fd0a9f6417488091fa534c32c9307fd0b2799061af3906a91c93db04",
   "action": "replace",
-  "reason": "source-audited-article-batch-086-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-007-04-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-086",
-  "approved_at": "2026-05-12T09:30:00.000+08:00",
+  "reason": "council-degenerate-remediation-2026-07-20: prior edit (batch-048/local-first) wrote degenerate 1-character option text; this edit restores the substantive original content from the parent bundle's linked-questions.json. For change-of-use, also corrects \"Certificate of Use\" to \"Certificate of Occupancy\" per PD 1096 2004 Revised IRR Rule III Sec. 309(c).",
+  "approved_by": "agent-X2-council-degenerate-remediation",
+  "approved_at": "2026-07-20T00:00:00.000+08:00",
   "source_audit_support": {
     "parent_article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
     "parent_article_slug": "lea-plan-007-04-core-concept",
@@ -38,32 +38,28 @@
     "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 086 local raw-source-audited hudcc_to_dhsud_governance scope."
   },
   "proposed": {
-    "text": "Which body did EO 90 place under the Office of the President as a coordinating council?",
+    "text": "What was the key difference between HUDCC and HLURB in terms of their roles in Philippine housing governance?",
     "options": [
       {
         "id": "a",
-        "text": "HUDCC"
+        "text": "HUDCC regulated developers; HLURB coordinated agencies, focusing on policy implementation and oversight"
       },
       {
         "id": "b",
-        "text": "DHSUD"
+        "text": "HUDCC built housing; HLURB financed housing, with each agency having distinct operational mandates"
       },
       {
         "id": "c",
-        "text": "GSIS"
+        "text": "HUDCC and HLURB performed identical functions under different names, which often led to confusion in their roles"
       },
       {
         "id": "d",
-        "text": "SHFC"
+        "text": "HUDCC coordinated inter-agency programs; HLURB regulated private developers"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "EO 90 created the Housing and Urban Development Coordinating Council under the Office of the President.",
-    "explanation": "EO 90 created the Housing and Urban Development Coordinating Council under the Office of the President.",
-    "code_citation": "EO 90 - NGO for Shelter Program; RA 11201 IRR - DHSUD Act Implementing Rules",
-    "bloom_level": "understand",
-    "application_context": "source_audited_local_first_batch_086",
-    "practice_context": [],
-    "difficulty": 0.55
+    "correct_option_id": "d",
+    "rationale": "HUDCC was a coordinating council bringing agencies together. HLURB was the regulatory board overseeing developer compliance with PD 957. They had entirely different functions. [A]: This reverses their roles. [B]: Neither built or financed housing as their primary roles. [C]: They had distinct, complementary functions. [D]: HUDCC was a coordinating council bringing agencies together. HLURB was the regulatory board overseeing developer compliance with PD 957. They had entirely different functions.",
+    "explanation": null,
+    "code_citation": "RA 11201, HLURB/HUDCC history"
   }
 }

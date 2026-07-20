@@ -8,36 +8,33 @@
       "question_id": "0658f7fc-6b28-4f6e-a031-fc0ebabef8e5",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "What is the composition of the Professional Regulatory Board of Architecture?",
+      "text": "What is the composition of the PRBoA under Section 4?",
       "options": [
         {
           "id": "a",
-          "text": "1 Chairman and 1 Member (2 total), which is the minimum required for decision-making."
+          "text": "One chairman and two members"
         },
         {
           "id": "b",
-          "text": "1 Chairman and 2 Members (3 total)"
+          "text": "One chairman and four members"
         },
         {
           "id": "c",
-          "text": "3 Co-Chairmen, each responsible for different aspects of the board's functions."
+          "text": "Only the PRC chairperson"
         },
         {
           "id": "d",
-          "text": "1 Chairman and 4 Members (5 total), allowing for a broader range of expertise and opinions."
+          "text": "All UAP chapter presidents"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Two members would lack sufficient diversity and might produce 1-1 deadlock.",
-        "c": "Co-chair structure would dilute leadership clarity.",
-        "d": "Five members would be unnecessarily large for architecture regulation.",
-        "correct": "Section 4 explicitly establishes a chairman and two (2) members as the Board composition, creating a three-person collegial body.",
-        "takeaway": "The three-person structure balances diverse perspective against unwieldy committee size and prevents even-numbered deadlock."
+        "correct": "Section 4 creates a chairman and two members.",
+        "takeaway": "Section 4 creates a chairman and two members."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -51,43 +48,40 @@
       "model_id": "ALE-PRAC-LAW-004-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.493957+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.477035+00:00",
       "content_hash": "sha256:c4774e33d337f9d49a6d1e83acfc575e2ad05c5e5dbba33a7006a684cdba08e9"
     },
     {
       "question_id": "7ce02099-96a7-40ad-8faf-64f6a437a552",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "Under the staggered term system, what are the initial terms for the three first-appointed Board members?",
+      "text": "What were the initial staggered terms for the first Board under RA 9266?",
       "options": [
         {
           "id": "a",
-          "text": "All serve 3 years with simultaneous expiration dates"
+          "text": "Chairman three years, one member two years, one member one year"
         },
         {
           "id": "b",
-          "text": "Chairman: 3 years; Member 1: 2 years; Member 2: 1 year."
+          "text": "All members six years"
         },
         {
           "id": "c",
-          "text": "All serve 1 year with annual reappointment required"
+          "text": "All members one year"
         },
         {
           "id": "d",
-          "text": "Chairman: 1 year; Members: 3 years each with staggered renewal"
+          "text": "Chairman two years and members four years"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Equal terms would allow simultaneous replacement; staggered terms are required.",
-        "c": "Equal short terms would provide insufficient experience.",
-        "d": "The Chairman's term is longer, not shorter, than Members' terms.",
-        "correct": "Section 6 specifies that of the first-appointed members, one shall be appointed as Chairman for 3 years, one Member for 2 years, and one Member for 1 year.",
-        "takeaway": "Staggered terms ensure annual turnover, preventing wholesale Board replacement while guaranteeing continuity."
+        "correct": "Section 6 states the initial staggered terms.",
+        "takeaway": "Section 6 states the initial staggered terms."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -101,43 +95,40 @@
       "model_id": "ALE-PRAC-LAW-004-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.469859+00:00",
       "content_hash": "sha256:72a7aa3c7dc0205d04f186b9663d9dd7dcb9cdca4c3284b64a39733af69306d5"
     },
     {
       "question_id": "a2b5fcde-a74b-4d0b-b9c2-e772e671f512",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "How many years of active registered practice in architecture are required for a PRBoA member?",
+      "text": "How many years of active practice are required for a PRBoA member at appointment?",
       "options": [
         {
           "id": "a",
-          "text": "At least 5 years"
+          "text": "At least ten years"
         },
         {
           "id": "b",
-          "text": "At least 10 years"
+          "text": "Two years"
         },
         {
           "id": "c",
-          "text": "At least 15 years"
+          "text": "Five months"
         },
         {
           "id": "d",
-          "text": "No minimum required"
+          "text": "No practice requirement"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Five years is insufficient; the law mandates ten years minimum.",
-        "c": "Fifteen years exceeds the statutory threshold.",
-        "d": "A minimum practice requirement is mandatory.",
-        "correct": "Section 5(c) requires that the member be 'an architect with a valid Certificate of Registration and Professional Identification Card and active practitioner of architecture for at least ten (10) years on the date of his/her appointment.'",
-        "takeaway": "The 10-year minimum ensures hands-on field experience and understanding of contemporary practice challenges, not merely academic knowledge."
+        "correct": "Section 5(c) requires active practice for at least ten years.",
+        "takeaway": "Section 5(c) requires active practice for at least ten years."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -151,43 +142,40 @@
       "model_id": "ALE-PRAC-LAW-004-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.471367+00:00",
       "content_hash": "sha256:e8dacfb0e3d7ac75797613e4eb3b2f8881f3c3db503e39f57d2dd5dc585630a6"
     },
     {
       "question_id": "eb2c6186-152b-45f4-8c04-bef82f0a63b0",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "Analyze how the three-stage appointment process (nomination by IAPOA, screening by Commission, appointment by President) balances democratic accountability with professional self-regulation.",
+      "text": "Which appointment path is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "The President appoints alone; the other stages are irrelevant and do not contribute to the overall process of selection"
+          "text": "IAPOA submits five nominees for each position, the Commission chooses three recommendees, and the President appoints"
         },
         {
           "id": "b",
-          "text": "IAPOA nomination ensures professional input and rooting in practice realities; Commission screening provides institutional review; Presidential appointment ensures executive accountability. None dominates; each stage constrains the others."
+          "text": "The UAP president directly appoints all members"
         },
         {
           "id": "c",
-          "text": "The stages are redundant; only the President's choice matters, as the final decision rests solely with the executive branch"
+          "text": "The Court of Appeals appoints the Board"
         },
         {
           "id": "d",
-          "text": "The profession controls appointment; the President merely rubber-stamps IAPOA choices without any real influence or decision-making power"
+          "text": "The faculty of each school elects the Board"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The President's authority is constrained by the three-recommendation list; Presidents cannot freely choose.",
-        "c": "The stages are substantively meaningful, not ceremonial.",
-        "d": "The President retains final choice among three Commission-screened recommendations; this is meaningful authority.",
-        "correct": "Each stage serves a purpose: IAPOA provides professional expertise; Commission ensures quality of recommendations; President ensures democratic accountability. No single stage controls the process; each constrains the others.",
-        "takeaway": "This tripartite structure embodies sophisticated regulatory design balancing competing principles: professional competence, institutional quality assurance, and democratic legitimacy."
+        "correct": "Section 4 states the nomination, recommendation, and appointment path.",
+        "takeaway": "Section 4 states the nomination, recommendation, and appointment path."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -201,43 +189,40 @@
       "model_id": "ALE-PRAC-LAW-004-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.475449+00:00",
       "content_hash": "sha256:574651428838534cd3e92e85e61452d7c764463ff25e9e093717fcbbb58df555"
     },
     {
       "question_id": "f81a080d-b7f2-4d92-88a9-2332124cf7b1",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "What is the maximum tenure for each of the three Board positions, considering initial appointment and one reappointment?",
+      "text": "What maximum reappointment rule is stated in Section 6?",
       "options": [
         {
           "id": "a",
-          "text": "All positions: 6 years maximum, ensuring continuity and experience in leadership roles"
+          "text": "Each member may be reappointed for one full term of three years"
         },
         {
           "id": "b",
-          "text": "Chairman: 6 years maximum (3+3); Member 1: 4 years maximum (2+2); Member 2: 2 years maximum (1+1)."
+          "text": "Unlimited reappointments"
         },
         {
           "id": "c",
-          "text": "All positions: unlimited tenure, allowing for long-term strategic planning and implementation"
+          "text": "No reappointment under any circumstance"
         },
         {
           "id": "d",
-          "text": "Chairman: 3 years only; Members: 2 years only, which can lead to frequent changes in board composition"
+          "text": "Only a six-month reappointment"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "All positions have different maximum tenures based on initial term length.",
-        "c": "Tenure is limited; unlimited service is not permitted.",
-        "d": "Reappointment extends tenure beyond initial terms to the maxima stated.",
-        "correct": "The staggered initial terms combined with 'one full additional term only' reappointment create different maxima: Chairman gets 3+3=6; first Member gets 2+2=4; second Member gets 1+1=2.",
-        "takeaway": "Maximum tenure is asymmetrical by position; this reflects the different initial term lengths and ensures staggered rotation continues even after reappointments."
+        "correct": "Section 6 states one full three-year reappointment.",
+        "takeaway": "Section 6 states one full three-year reappointment."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -251,43 +236,40 @@
       "model_id": "ALE-PRAC-LAW-004-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.477697+00:00",
       "content_hash": "sha256:0dda5a814fb43836fcb99bd0446f1b0b9226f6ca0a36de5e0d6489d8bd78a6e9"
     },
     {
       "question_id": "729b292d-7855-41ff-b926-aae5ae91b777",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "How many times may a PRBoA member be reappointed after their initial term?",
+      "text": "How many times may a Board member be reappointed under the checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Unlimited reappointments"
+          "text": "Once, for one full term of three years"
         },
         {
           "id": "b",
-          "text": "One full additional term only"
+          "text": "Twice automatically"
         },
         {
           "id": "c",
-          "text": "Two full additional terms"
+          "text": "Every year indefinitely"
         },
         {
           "id": "d",
-          "text": "No reappointment is permitted"
+          "text": "Only after a court order"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Unlimited reappointments would create indefinite tenure contrary to democratic rotation.",
-        "c": "Two additional terms would exceed the statutory maximum of one.",
-        "d": "Reappointment is expressly permitted, but limited to one additional term.",
-        "correct": "Section 6 states: 'Each member of the Board may be reappointed for one full additional term only.'",
-        "takeaway": "A single reappointment allows reasonable tenure (6 years for Chairman, 4 years for Members) while preventing entrenched power and ensuring periodic renewal."
+        "correct": "The checked source allows one full three-year reappointment.",
+        "takeaway": "The checked source allows one full three-year reappointment."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -301,43 +283,40 @@
       "model_id": "ALE-PRAC-LAW-004-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.473827+00:00",
       "content_hash": "sha256:627e21fd7df60e82cfc5d415494f98994f4614820ebdccdfc058665ee09e42f8"
     },
     {
       "question_id": "a4aca274-c4bb-4f23-9188-9bceac28e9a6",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "Explain the significance of the qualification requirement that PRBoA members must not be convicted of 'any crime involving moral turpitude' and its implications for Board credibility.",
+      "text": "Which qualification addresses moral character for Board membership?",
       "options": [
         {
           "id": "a",
-          "text": "The requirement is a formality; prior convictions are not relevant to Board service, as long as they do not affect current duties."
+          "text": "The member must never have been convicted of any crime involving moral turpitude"
         },
         {
           "id": "b",
-          "text": "Moral turpitude crimes (dishonesty, violence, breach of trust) disqualify applicants; this reflects the principle that regulators must be of unblemished character. If Board members are themselves felons, public trust in the Board's judgment is undermined and the Board loses moral authority to enforce professional ethics."
+          "text": "The member must own a construction company"
         },
         {
           "id": "c",
-          "text": "Only violent crimes disqualify; fraud convictions are irrelevant unless they involve significant financial loss."
+          "text": "The member must be a current review lecturer"
         },
         {
           "id": "d",
-          "text": "Any criminal conviction, however minor, disqualifies, even if it occurred decades ago and was unrelated to professional conduct."
+          "text": "The member must be a foreign architect"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The requirement is substantive; prior convictions are disqualifying.",
-        "c": "Moral turpitude encompasses dishonesty crimes, which are disqualifying.",
-        "d": "The statute specifies moral turpitude crimes; minor traffic violations typically do not qualify.",
-        "correct": "Section 5(e) requires that members 'have never been convicted of any crime involving moral turpitude.' Moral turpitude encompasses dishonesty (fraud, forgery), violence (assault), and breach of trust (embezzlement). The requirement reflects the principle that regulators enforce ethical standards must themselves be ethically sound.",
-        "takeaway": "Regulatory credibility depends on personal integrity; a Board member convicted of fraud or dishonesty has lost the moral authority to judge others' professional conduct."
+        "correct": "Section 5(e) contains the moral turpitude qualification.",
+        "takeaway": "Section 5(e) contains the moral turpitude qualification."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -351,43 +330,40 @@
       "model_id": "ALE-PRAC-LAW-004-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.476275+00:00",
       "content_hash": "sha256:6d601a0ec023decfb82633a9ef4b2c9fb59f36ae3e8fe3d1c108c8948d24a853"
     },
     {
       "question_id": "5c083d41-aeca-4fa3-8910-df15564475fe",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "Explain why the statute prohibits members from being elected officers of the IAPOA or other architects' professional organizations.",
+      "text": "Which professional-organization role is barred for Board members?",
       "options": [
         {
           "id": "a",
-          "text": "The statute favors individual architects over organizations, ensuring that personal merit and professional capability are prioritized"
+          "text": "Elective officer of the IAPOA or other professional organization of architects"
         },
         {
           "id": "b",
-          "text": "To ensure the Board's independence from organizational politics and prevent perception that the Board is subject to organizational pressure or influence."
+          "text": "Ordinary membership in the IAPOA"
         },
         {
           "id": "c",
-          "text": "Elected officers are incompetent to regulate, as their focus is often divided between organizational duties and regulatory responsibilities"
+          "text": "Past client of an architect"
         },
         {
           "id": "d",
-          "text": "Organizations should not have influence on licensing, maintaining a clear separation between professional practice and regulatory oversight"
+          "text": "CHED graduate"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Organizations are legitimate; the concern is independence, not favoritism toward individuals.",
-        "c": "Elected officers may be highly qualified; the issue is conflict of interest.",
-        "d": "Organizations can advocate and provide input; the Board must remain independent of pressure.",
-        "correct": "Section 5(f) prohibits elective officer status in the IAPOA or other professional organizations. If the IAPOA president simultaneously served as Board Chairman, the Board might be perceived—or might actually be subject—to organizational pressure.",
-        "takeaway": "Independence from organizational office is essential to regulatory impartiality; the Board serves the public, not professional organizations' interests."
+        "correct": "Section 5(f) bars elective professional-organization office.",
+        "takeaway": "Section 5(f) bars elective professional-organization office."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -401,43 +377,40 @@
       "model_id": "ALE-PRAC-LAW-004-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.472886+00:00",
       "content_hash": "sha256:5a30bde4a026391f913d234a168085ee64bafe908d4c9b998eca26b295ab2da7"
     },
     {
       "question_id": "5d458084-7e5a-4dad-b26e-345108c54d0d",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "What is the purpose of the prohibition on faculty members serving on the PRBoA?",
+      "text": "What must a former architecture faculty or review-center instructor satisfy before nomination?",
       "options": [
         {
           "id": "a",
-          "text": "Faculty are incompetent to serve on regulatory boards, lacking the necessary practical experience"
+          "text": "Official resignation and complete stop from teaching, advising, or reviewing for at least five years"
         },
         {
           "id": "b",
-          "text": "To prevent conflicts of interest between Board-set standards and faculty curricula; a five-year cooling-off from resignation to appointment ensures disengagement."
+          "text": "Only one week of leave"
         },
         {
           "id": "c",
-          "text": "Faculty are too busy to serve, given their academic commitments and responsibilities"
+          "text": "No break if the school agrees"
         },
         {
           "id": "d",
-          "text": "The law favors practitioners over academics, ensuring that practical experience guides board decisions"
+          "text": "A contractor waiver"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Faculty members may be highly qualified; the issue is conflict of interest, not competence.",
-        "c": "Time constraints are not the basis; conflict of interest is.",
-        "d": "Practitioners are preferred, but for experience and impartiality reasons, not ideology.",
-        "correct": "Section 5(d) prohibits faculty membership or pecuniary interest in architecture teaching institutions. A faculty member on the Board would face conflicting incentives: setting licensure standards that affect student demand, potential bias toward their curricula, and institutional pressure from employers.",
-        "takeaway": "Conflict-of-interest provisions protect regulatory impartiality; they recognize that simultaneous institutional affiliation and regulatory authority create perverse incentives."
+        "correct": "Section 5(d) provides the five-year cooling-off rule.",
+        "takeaway": "Section 5(d) provides the five-year cooling-off rule."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -451,43 +424,40 @@
       "model_id": "ALE-PRAC-LAW-004-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.474648+00:00",
       "content_hash": "sha256:dbd81369f176a03d689361369f81f42134982fe187b716a6dac1616af746b035"
     },
     {
       "question_id": "bf893554-e3c1-486c-b99d-ad07c2b6ac23",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
       "topic_id": "01606b50-767c-403c-bc5e-5db2e60f238a",
-      "text": "What does the qualification requirement that members hold a valid Certificate of Registration and Professional Identification Card serve?",
+      "text": "Why does the valid COR/PIC qualification matter in source terms?",
       "options": [
         {
           "id": "a",
-          "text": "It is purely ceremonial; expired licenses are acceptable, as long as the member has prior experience"
+          "text": "The Board member must be an architect with valid registration and current professional identification authority"
         },
         {
           "id": "b",
-          "text": "It ensures that Board members are currently registered and licensed, maintaining compliance with their own profession's standards and understanding contemporary registration requirements."
+          "text": "It replaces the ten-year practice requirement"
         },
         {
           "id": "c",
-          "text": "It prevents new architects from serving; only retired architects qualify, ensuring experienced oversight"
+          "text": "It makes a foreign architect automatically eligible"
         },
         {
           "id": "d",
-          "text": "It has no practical purpose, serving only as a formality in the selection process"
+          "text": "It makes faculty status irrelevant"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Valid license is a standing requirement; expired licenses disqualify.",
-        "c": "The requirement applies to all members; retirement is not required.",
-        "d": "The requirement is practical: it ensures member standing and contemporary knowledge.",
-        "correct": "Section 5(c) requires a valid Certificate of Registration and Professional ID Card as a standing condition. An expired or suspended license renders a member ineligible. This ensures Board members remain in good professional standing.",
-        "takeaway": "Regulators must themselves comply with the standards they enforce; a Board member whose license expired or was suspended has lost credibility to regulate others."
+        "correct": "Section 5(c) requires a valid Certificate of Registration and Professional Identification Card.",
+        "takeaway": "Section 5(c) requires a valid Certificate of Registration and Professional Identification Card."
       },
       "explanation": null,
       "code_citation": "RA 9266",
@@ -501,7 +471,7 @@
       "model_id": "ALE-PRAC-LAW-004-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:43.821974+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.478351+00:00",
       "content_hash": "sha256:0c6942c5581e6da53080f7bb8d5ee9abbdbb1bab3685a441df119f0b7d81eee4"
     }
   ]

@@ -8,31 +8,31 @@
       "question_id": "e49ae35c-a772-4839-a6d4-07fb78085fd6",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Based on the specifications in \"BP 344 vs PD 1096 Conflicts\", if a project requires 1.10 m, what is the correct interpretation?",
+      "text": "What role does PD 1096 play in an accessibility-code problem?",
       "options": [
         {
-          "id": "A",
-          "text": "1.10 m is the minimum/standard requirement"
+          "id": "a",
+          "text": "It supplies the building-code and permit framework"
         },
         {
-          "id": "B",
-          "text": "1.10 m is the maximum permitted value"
+          "id": "b",
+          "text": "It erases BP 344 requirements"
         },
         {
-          "id": "C",
-          "text": "1.10 m applies only to specific conditions"
+          "id": "c",
+          "text": "It applies only to furniture color"
         },
         {
-          "id": "D",
-          "text": "1.10 m is an approximate value subject to interpretation"
+          "id": "d",
+          "text": "It replaces all accessibility details"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 1.10 m as the requirement. Context: *\r    - Your attachments for PD 1096 did not show a numeric corridor width (eg, ...",
+      "rationale": "PD 1096 provides the building-code and permit framework.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:08.446342+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.457845+00:00",
       "content_hash": "sha256:d4c0f48098fbf828f3a5f809579a8e20a21f06b0d092e17b445a8fd0c623c65d"
     },
     {
       "question_id": "475db967-5648-4617-94d4-3a5fa9cbc142",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR Appendix B, what is the minimum width for sidewalks and walkways serving as exterior accessible routes, and what wider dimension is required where two wheelchairs must pass each other?",
+      "text": "What role does BP 344 play when the question asks for an accessible feature dimension?",
       "options": [
         {
-          "id": "A",
-          "text": "Minimum width: 1200 mm; two-wheelchair passing: 1500 mm — the same widths as accessible ramps and accessible corridors respectively"
+          "id": "a",
+          "text": "It supplies the specific accessibility minimum requirements"
         },
         {
-          "id": "B",
-          "text": "Minimum width: 1200 mm; two-wheelchair passing: 1800 mm — exterior routes use the ramp minimum but require the full 1800 mm turning circle width for passing"
+          "id": "b",
+          "text": "It is ignored if PD 1096 exists"
         },
         {
-          "id": "C",
-          "text": "Minimum width: 1800 mm throughout — exterior sidewalks apply the turning circle width universally to accommodate any combination of users"
+          "id": "c",
+          "text": "It only applies to private homes with no public use"
         },
         {
-          "id": "D",
-          "text": "Minimum width: 1500 mm; two-wheelchair passing: 1800 mm — these exterior walkway dimensions are wider than the 1200 mm ramp minimum"
+          "id": "d",
+          "text": "It has no dimensions"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Sidewalks/walkways: 1500 mm minimum; 1800 mm where two wheelchairs must pass (BP 344 Appendix B)",
-        "explanation": "BP 344 Appendix B specifies that exterior sidewalks and walkways (which function as accessible routes) must be a minimum of 1500 mm wide. Where two wheelchairs must pass each other, 1800 mm minimum is required. These dimensions are wider than the 1200 mm accessible ramp minimum from Appendix A, reflecting the different spatial demands of open-path exterior circulation versus the constrained geometry of a ramp structure. A standard manual wheelchair is approximately 700 mm wide — two wheelchairs side by side require at least 1400 mm plus clearance, justifying the 1800 mm passing width.",
-        "common_misconceptions": [
-          "Using 1200 mm for exterior sidewalks — 1200 mm is the ramp width; exterior walkways require the wider 1500 mm minimum",
-          "Applying 1500 mm as the universal exterior width regardless of passing scenarios — 1800 mm is required where two wheelchairs must pass"
-        ]
-      },
+      "rationale": "BP 344 supplies the accessibility details and minimums.",
       "explanation": "Tests the Appendix B sidewalk/walkway width distinctions — a specific and frequently confused set of dimensions.",
       "code_citation": "BP 344 2024 IRR, Appendix B",
       "bloom_level": "remember",
@@ -96,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.452224+00:00",
       "content_hash": "sha256:df4ed1b363eb268a89239bde47094bc485441734b051c661532ef2905feb446e"
     },
     {
       "question_id": "85ac082a-dad7-401f-8525-07a6d5ebdc47",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A Building Official reviewing plans for a new public hospital notes that the accessible ramp slope is 1:15, the accessible ramp width is 1200 mm, and the exterior walkway serving the accessible entrance is 1200 mm wide. Which element is non-compliant under BP 344, and what correction is required?",
+      "text": "What does PD 1096 say about allied professional and government agency codes approved by DPWH?",
       "options": [
         {
-          "id": "A",
-          "text": "The ramp slope is non-compliant — the maximum accessible slope for new construction is 1:20; 1:15 is only permitted for renovation projects"
+          "id": "a",
+          "text": "Applicable and consistent provisions serve as referral codes"
         },
         {
-          "id": "B",
-          "text": "The ramp width is non-compliant — BP 344 requires a minimum 1500 mm clear width for accessible ramps in public buildings; 1200 mm is only for residential ramps"
+          "id": "b",
+          "text": "They are always void"
         },
         {
-          "id": "C",
-          "text": "The exterior walkway width is non-compliant — BP 344 Appendix B requires a minimum 1500 mm for sidewalks and walkways; 1200 mm meets only the ramp width minimum"
+          "id": "c",
+          "text": "They apply only to landscaping"
         },
         {
-          "id": "D",
-          "text": "Nothing is non-compliant — all three elements meet their respective BP 344 minimums: 1:15 ramp slope, 1200 mm ramp width, 1200 mm walkway width are all code-compliant"
+          "id": "d",
+          "text": "They are optional decorations"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The exterior walkway is non-compliant at 1200 mm — Appendix B requires 1500 mm minimum for sidewalks/walkways; 1200 mm is only the ramp width minimum",
-        "explanation": "The ramp slope of 1:15 is compliant — it is the maximum for new accessible ramps in the 2024 IRR (GOLD is 1:20 preferred; MAX is 1:15). The ramp width of 1200 mm is compliant per Appendix A Sec 1.2.a. However, the exterior walkway width of 1200 mm is non-compliant. Appendix B specifies that sidewalks and walkways must be at least 1500 mm wide. 1200 mm is the ramp width minimum — it is a different element from the sidewalk/walkway, and the wider 1500 mm requirement applies to exterior pedestrian routes. This is a common design error where the ramp width is correctly specified but then incorrectly carried over to the adjacent walkway.",
-        "common_misconceptions": [
-          "Flagging the 1:15 ramp slope as non-compliant — 1:15 is the permitted maximum for new construction",
-          "Using 1200 mm as the sidewalk minimum — 1200 mm is for ramps; sidewalks require 1500 mm minimum"
-        ]
-      },
+      "rationale": "PD 1096 recognizes applicable and consistent approved provisions as referral codes.",
       "explanation": "Scenario that requires distinguishing ramp width (1200 mm) from walkway width (1500 mm) — a common design error.",
       "code_citation": "BP 344 2024 IRR, Appendix A Sec 1.2.a; Appendix B",
       "bloom_level": "apply",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.450489+00:00",
       "content_hash": "sha256:6f5c80e6daa373c7ac3680fd1839b8ca3c4a31e1a4b261d1b86c0baccfad1cd1"
     },
     {
       "question_id": "28894b17-a900-4b71-a4f0-f8f687acfac3",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under BP 344 2024 IRR Appendix B, what is the minimum clear dimension of rest and passing spaces along lengthy accessible walkways, and at what maximum interval must these spaces be provided?",
+      "text": "Who is responsible for field enforcement and permit/certificate processing under PD 1096?",
       "options": [
         {
-          "id": "A",
-          "text": "Minimum 1500 mm clear; maximum interval of 10000 mm (10 m) — matching the landing interval trigger used for 1:15 accessible ramps, ensuring consistency in accessibility standards"
+          "id": "a",
+          "text": "The Building Official"
         },
         {
-          "id": "B",
-          "text": "Minimum 1200 mm clear; maximum interval of 10000 mm (10 m) — the ramp width applied to walkway rest areas for consistency across BP 344, facilitating ease of movement"
+          "id": "b",
+          "text": "Only the furniture supplier"
         },
         {
-          "id": "C",
-          "text": "Minimum 1800 mm clear; maximum interval of 12000 mm (12 m) — the turning circle dimension at intervals that prevent excessive continuous travel distances"
+          "id": "c",
+          "text": "Only the project owner"
         },
         {
-          "id": "D",
-          "text": "Minimum 1800 mm clear; maximum interval of 15000 mm (15 m) — matching the landing interval for 1:20 (GOLD) accessible ramps, providing enhanced accessibility for all users"
+          "id": "d",
+          "text": "Only the theater manager"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "1800 mm minimum clear dimension; every 12000 mm (12 m) maximum interval (Appendix B)",
-        "explanation": "BP 344 Appendix B requires passing and turnaround spaces of minimum 1800 mm clear dimension — the standard wheelchair turning circle — at maximum 12000 mm (12 m) intervals along lengthy or busy sidewalks and walkways. This allows wheelchair users to pass each other, turn around, or rest during long traverses. The 1800 mm dimension is consistent with the turning space used throughout BP 344 (roll-in showers, toilet cubicles, elevator lobbies). PD 1096 does not specify such spacing requirements for exterior routes.",
-        "common_misconceptions": [
-          "Using 15 m as the interval — 15 m is the GOLD ramp landing interval; walkway rest spaces are every 12 m",
-          "Using 1500 mm for rest space dimensions — 1500 mm is the minimum walkway width; rest spaces require the full 1800 mm turning circle"
-        ]
-      },
+      "rationale": "PD 1096 assigns these duties to the Building Official.",
       "explanation": "Tests the rest/passing space dimensions and interval from Appendix B — a frequently overlooked exterior route requirement.",
       "code_citation": "BP 344 2024 IRR, Appendix B",
       "bloom_level": "remember",
@@ -198,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.453291+00:00",
       "content_hash": "sha256:e81bad4efd48029dae4a1bb6e07a2f8bd6d693e437ddac059d051329077dd01d"
     },
     {
       "question_id": "6f2a932c-cc08-44c7-996d-2a18bd37fbee",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "Under the BP 344 2024 IRR approach to code conflicts, when both BP 344 and PD 1096 address the same building element but specify different values, what is the governing principle, and does this principle apply uniformly to all building elements or only to accessible routes?",
+      "text": "Which accessibility facility is listed in PD 1096 permit requirements?",
       "options": [
         {
-          "id": "A",
-          "text": "The stricter value always governs for all building elements, whether or not they serve as accessible routes — the more restrictive standard is always safer and therefore always preferred"
+          "id": "a",
+          "text": "Accessible lifts/elevators"
         },
         {
-          "id": "B",
-          "text": "The stricter, more specific BP 344 standard prevails specifically on accessible routes and PWD-specific features; PD 1096 still governs aspects BP 344 does not address regardless of route designation"
+          "id": "b",
+          "text": "Decorative murals only"
         },
         {
-          "id": "C",
-          "text": "PD 1096 always governs physical dimensions; BP 344 governs only social and legal obligations such as discounts and anti-discrimination provisions, which is a misinterpretation"
+          "id": "c",
+          "text": "Loose chairs only"
         },
         {
-          "id": "D",
-          "text": "The designer chooses whichever standard was most recently amended — the 2024 BP 344 IRR therefore governs all conflicts because it is newer than the PD 1096 IRR, which is not a valid approach"
+          "id": "d",
+          "text": "Private art collections"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The Golden Rule applies specifically to accessible routes and PWD features: stricter BP 344 prevails; PD 1096 remains in force for aspects BP 344 does not address",
-        "explanation": "The Golden Rule of Conflicts is expressly scoped: 'for accessible routes, the stricter, more specific BP 344 standard prevails over the more general PD 1096 rule.' BP 344 distinguishes elements (ramps vs sidewalks vs doors vs toilets) so its dimensions cannot be mixed across different elements. PD 1096 continues to govern aspects BP 344 does not address — travel distance, fire-resistive construction, occupancy load, ventilation requirements, etc. The principle is not a blanket 'newer law wins' or 'stricter always wins everywhere' — it is context-specific to accessible route elements.",
-        "common_misconceptions": [
-          "Applying 'stricter always wins' universally to all building elements — the principle applies specifically to accessible routes",
-          "Treating the 2024 amendment date as automatically making BP 344 govern all conflicts — recency alone does not determine governing standard"
-        ]
-      },
+      "rationale": "PD 1096 lists accessible lifts/elevators among accessibility facilities.",
       "explanation": "Tests precise understanding of the Golden Rule's scope — not universal, but specifically for accessible routes and PWD features.",
       "code_citation": "BP 344 2024 IRR; PD 1096 IRR",
       "bloom_level": "evaluate",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.456257+00:00",
       "content_hash": "sha256:9e1e0eae779db34778a59c5e3da02ffe1a55b2d2e1ff1962137a262b63850915"
     },
     {
       "question_id": "ce2cd9ce-eab2-4a15-916b-8f5ff4a78207",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A ramp landing in a building designed under both PD 1096 and BP 344 needs a landing. PD 1096 IRR states the landing dimension in the direction of travel need not exceed 1200 mm for straight stairs. BP 344 2024 IRR requires accessible ramp landings to be at least 1800 mm. Which applies and what is the governing minimum?",
+      "text": "Which alarm item is listed in PD 1096 accessibility facility requirements?",
       "options": [
         {
-          "id": "A",
-          "text": "PD 1096 governs at 1200 mm — the National Building Code takes precedence as the higher-level legislation over the implementing rules of BP 344"
+          "id": "a",
+          "text": "Accessible audio visual and automatic alarm system"
         },
         {
-          "id": "B",
-          "text": "The designer may choose either value — PD 1096's 1200 mm and BP 344's 1800 mm are both valid minimums that apply to different user populations using the same ramp"
+          "id": "b",
+          "text": "Only a manual bell with no accessibility function"
         },
         {
-          "id": "C",
-          "text": "Neither governs alone — the designer must use the average of 1500 mm as a compromise that satisfies both standards simultaneously"
+          "id": "c",
+          "text": "Only a printed notice"
         },
         {
-          "id": "D",
-          "text": "BP 344 governs at 1800 mm — as the stricter, PWD-specific requirement for accessible ramp landings; the PD 1096 stair landing dimension does not apply to accessible ramp landings"
+          "id": "d",
+          "text": "No alarm item"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344 governs at 1800 mm — the 1200 mm PD 1096 value is for stair landings, not accessible ramp landings; BP 344 is stricter and more specific",
-        "explanation": "The PD 1096 1200 mm value relates to stair landings, not ramp landings specifically. More importantly, the Golden Rule applies: on an accessible route, the stricter BP 344 standard prevails. BP 344 requires accessible ramp landings at a minimum of 1800 mm in the direction of travel at top, bottom, and intermediate points. The 1800 mm is necessary to accommodate the full wheelchair length plus a safety buffer, allowing the user to stop, rest, and maneuver before continuing. 1200 mm is insufficient for this purpose.",
-        "common_misconceptions": [
-          "Treating PD 1096 as 'higher-level legislation' that overrides BP 344 — both are law; BP 344 prevails when stricter on accessible elements",
-          "Using 1500 mm as a compromise — there is no averaging provision; the code minimums are absolute floors"
-        ]
-      },
+      "rationale": "PD 1096 lists accessible audio visual and automatic alarm system.",
       "explanation": "Tests the Golden Rule applied to the ramp landing conflict — a direct comparison between BP 344 and PD 1096 values.",
       "code_citation": "BP 344 2024 IRR, Appendix A Sec A.1.1; PD 1096 IRR",
       "bloom_level": "analyze",
@@ -300,45 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.459389+00:00",
       "content_hash": "sha256:0da2f2c825f750cc5d04e8cb88286f9271b97ccaddf679f2f8edb494e87c13c4"
     },
     {
       "question_id": "5c104848-9832-4059-b929-a09998361dd0",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "PD 1096 provisions on exits, travel distance, and fire-resistive construction remain binding even when BP 344 is the governing accessibility standard. Which of the following correctly describes an aspect that BP 344 does NOT address, leaving PD 1096 in control?",
+      "text": "What plan information does PD 1096 require for accessibility facilities?",
       "options": [
         {
-          "id": "A",
-          "text": "Ramp width on accessible routes — BP 344 Appendix A addresses this, setting 1200 mm minimum; PD 1096 yields to BP 344 on this element, ensuring compliance with accessibility standards"
+          "id": "a",
+          "text": "Plans, specific locations, and detailed design including safety requirements"
         },
         {
-          "id": "B",
-          "text": "Elevator voice synthesizer requirements — BP 344 Sec 8.8.b addresses this; PD 1096 does not prescribe voice synthesizers, so BP 344 governs, focusing on auditory accessibility"
+          "id": "b",
+          "text": "Only a verbal promise"
         },
         {
-          "id": "C",
-          "text": "Maximum exit travel distance from the farthest point of a floor to the nearest exit stair — BP 344 does not address travel distance; PD 1096 provisions govern this calculation"
+          "id": "c",
+          "text": "Only a final photograph"
         },
         {
-          "id": "D",
-          "text": "Accessible toilet grab bar heights — BP 344 Sec 6.3 addresses this fully; PD 1096 does not override or modify these dimensions, maintaining consistency in accessibility features"
+          "id": "d",
+          "text": "No documentation"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Exit travel distance is governed by PD 1096, not BP 344 — BP 344 does not address travel distance; it focuses on accessibility features, not fire egress calculations",
-        "explanation": "BP 344 is an accessibility overlay — it addresses the physical features that make buildings accessible to PWDs. It does not re-write PD 1096's fire and life-safety provisions such as maximum exit travel distance, required fire ratings, smokeproof enclosures, or occupant load calculations. These remain entirely within PD 1096's domain. Options A, B, and D describe elements that BP 344 does address directly; option C correctly identifies exit travel distance as an element BP 344 leaves untouched, preserving PD 1096 authority.",
-        "common_misconceptions": [
-          "Assuming BP 344 governs all aspects of accessible route design including fire egress calculations — BP 344 is an overlay on accessibility, not a replacement for fire codes",
-          "Thinking PD 1096 travel distance limits are modified by the requirement for accessible routes — the two requirements operate independently"
-        ]
-      },
+      "rationale": "PD 1096 requires plans/specific locations and detailed design of accessibility facilities.",
       "explanation": "Tests understanding of the scope boundary: what BP 344 addresses (accessibility features) vs what remains under PD 1096 (fire egress).",
       "code_citation": "BP 344 2024 IRR; PD 1096 IRR",
       "bloom_level": "analyze",
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.460152+00:00",
       "content_hash": "sha256:dea3e46f8eaadb86bc1ab33f4bef6f5a7ee177db983a7c7abf74e8156164854d"
     },
     {
       "question_id": "a6dbdb98-97cd-4636-a993-1ebef1e277b7",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "In the legal hierarchy governing accessible design in Philippine buildings, what is the relationship between PD 1096 (National Building Code) and BP 344 (Accessibility Law), and what does BP 344 add that PD 1096 does not provide?",
+      "text": "How should an exam answer handle an apparent overlap between PD 1096 and BP 344?",
       "options": [
         {
-          "id": "A",
-          "text": "PD 1096 and BP 344 are fully independent; either may be followed depending on the project type; conflicts are resolved by the Building Official's discretion, which may vary by jurisdiction"
+          "id": "a",
+          "text": "Use PD 1096 for permit framework and BP 344 for specific accessibility requirements"
         },
         {
-          "id": "B",
-          "text": "PD 1096 sets general minimum standards for life safety and egress; BP 344 overlays mandatory accessibility standards on those routes — stricter where it addresses the same element, and additive where it addresses PWD-specific requirements not in PD 1096"
+          "id": "b",
+          "text": "Ignore BP 344"
         },
         {
-          "id": "C",
-          "text": "BP 344 replaces PD 1096 for all building elements that PWDs might use; PD 1096 applies only to non-accessible areas such as utility rooms and service corridors, which are not intended for public use"
+          "id": "c",
+          "text": "Ignore PD 1096 permits"
         },
         {
-          "id": "D",
-          "text": "PD 1096 governs all physical dimensions; BP 344 governs only legal rights and financial discounts without imposing any physical design requirements beyond what PD 1096 already requires, focusing instead on policy aspects"
+          "id": "d",
+          "text": "Average unrelated dimensions"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 = general life-safety base; BP 344 = mandatory accessibility overlay — stricter where it overlaps, additive where it adds PWD-specific requirements PD 1096 lacks",
-        "explanation": "PD 1096 and its IRR establish the general building framework: occupancy classification, minimum room sizes, exits, stairs, ramps, and guardrails for life safety and egress. BP 344 operates as a mandatory overlay on top of that framework, imposing stricter or additional accessibility requirements. Where both address the same element (e.g., ramp width), the stricter BP 344 value governs. Where BP 344 addresses elements PD 1096 does not cover (e.g., voice synthesizers in elevators, tactile floor surfaces, PWD toilet compartment dimensions), BP 344 provisions are additive. PD 1096 still governs aspects BP 344 does not address (travel distance, fire-resistive construction, occupancy load).",
-        "common_misconceptions": [
-          "Treating BP 344 as replacing PD 1096 — both remain in force; BP 344 overlays, not replaces",
-          "Believing BP 344 is purely about legal rights and discounts — it has extensive physical design requirements enforced by building permits"
-        ]
-      },
+      "rationale": "The source-safe approach reads the framework and specific accessibility requirements together.",
       "explanation": "Tests the foundational legal hierarchy concept — the basis for all BP 344 vs PD 1096 conflict resolution.",
       "code_citation": "BP 344 2024 IRR; PD 1096 IRR",
       "bloom_level": "understand",
@@ -402,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.454255+00:00",
       "content_hash": "sha256:a38c36b4c546a0a0278833a3936c7daa6031b81d4ed3967807dc8b7fbc33ff57"
     },
     {
       "question_id": "ad84c467-24bd-407d-a316-3da1acdfbc16",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "A review identifies a building's accessible entrance approach with: exterior walkway at 1500 mm wide, rest spaces of 1800 mm clear every 12 m, accessible ramp at 1200 mm wide with 1:15 slope, and ramp landings at 1800 mm in the direction of travel. Which statement correctly assesses compliance?",
+      "text": "Which statement is not source-safe?",
       "options": [
         {
-          "id": "A",
-          "text": "All four elements are compliant with BP 344 2024 IRR — walkway meets 1500 mm minimum, rest spaces meet 1800 mm at 12 m intervals, ramp meets 1200 mm minimum at maximum 1:15 slope, and landings meet 1800 mm minimum"
+          "id": "a",
+          "text": "PD 1096 cancels BP 344 whenever both are mentioned"
         },
         {
-          "id": "B",
-          "text": "The ramp is non-compliant — the 1:15 slope is too steep; 1:20 is the only permitted slope for accessible ramps in the 2024 IRR for new construction, which ensures safety and usability"
+          "id": "b",
+          "text": "PD 1096 includes accessibility facilities in permit requirements"
         },
         {
-          "id": "C",
-          "text": "The rest spaces are non-compliant — 1800 mm clear is sufficient only for a single wheelchair; passing spaces must be 2400 mm to allow two wheelchairs simultaneously, ensuring accessibility"
+          "id": "c",
+          "text": "BP 344 gives specific accessibility minimums"
         },
         {
-          "id": "D",
-          "text": "The walkway is non-compliant — 1500 mm is the minimum only for renovation projects; new construction exterior walkways must be 1800 mm throughout to accommodate increased pedestrian traffic"
+          "id": "d",
+          "text": "The Building Official processes permits under PD 1096"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "All four elements are compliant — 1500 mm walkway (Appendix B min), 1800 mm rest spaces every 12 m (Appendix B), 1200 mm ramp at 1:15 (Appendix A), 1800 mm landings (Appendix A)",
-        "explanation": "Each element meets its respective BP 344 2024 IRR minimum exactly: walkway at 1500 mm satisfies Appendix B minimum; rest spaces at 1800 mm every 12 m satisfy Appendix B requirements; accessible ramp at 1200 mm clear width satisfies Appendix A Sec 1.2.a; 1:15 slope is the permitted maximum for new accessible ramps; landings at 1800 mm in the direction of travel satisfy Appendix A Sec A.1.2.d–e. Option B is wrong — 1:15 is the maximum for new construction, not prohibited. Option C is wrong — 1800 mm is the specified passing space dimension. Option D is wrong — 1500 mm is the standard minimum for all new walkways.",
-        "common_misconceptions": [
-          "Believing 1:15 is non-compliant for new construction — it is the maximum permitted slope; 1:20 is merely preferred",
-          "Treating 1800 mm rest spaces as insufficient — 1800 mm is exactly the required clear dimension for passing/turnaround spaces"
-        ]
-      },
+      "rationale": "The audited sources do not support treating PD 1096 as canceling BP 344.",
       "explanation": "Integrated compliance scenario requiring knowledge of four separate BP 344 dimensions across two appendices.",
       "code_citation": "BP 344 2024 IRR, Appendix A Sec 1.2.a, A.1.2.d; Appendix B",
       "bloom_level": "evaluate",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.455306+00:00",
       "content_hash": "sha256:a3348ee9147429679cd80c5408e7387049882a22f02b3b0a2e6c2c8846c46f7c"
     },
     {
       "question_id": "3d147ff0-ae13-44df-92f2-c0352f99e20b",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "PD 1096 states that ramps used as exits shall have the same width required for corridors. BP 344 2024 IRR Appendix A Section 1.2.a requires a minimum clear width for accessible ramps. When a ramp serves as both an exit and an accessible route, which standard governs the width and what is that value?",
+      "text": "When reviewing an accessible toilet, which source should provide the feature dimensions?",
       "options": [
         {
-          "id": "A",
-          "text": "BP 344 governs with 1200 mm minimum clear width — as the stricter, more specific standard for accessible ramps; it supersedes the PD 1096 general corridor reference on any accessible route"
+          "id": "a",
+          "text": "BP 344"
         },
         {
-          "id": "B",
-          "text": "PD 1096 governs because it is the general building code; the designer may use the corridor width specified in the occupancy's egress table without further adjustment"
+          "id": "b",
+          "text": "A generic comfort-room preference"
         },
         {
-          "id": "C",
-          "text": "The higher of the two values governs only when a formal conflict is declared by the Building Official; otherwise the designer may choose whichever is more convenient"
+          "id": "c",
+          "text": "Only a seat-count table"
         },
         {
-          "id": "D",
-          "text": "BP 344 governs with 1500 mm minimum clear width — the sidewalk/walkway dimension from Appendix B applies to all accessible routes including ramps when BP 344 takes precedence"
+          "id": "d",
+          "text": "Only a parking rule"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "BP 344's 1200 mm minimum clear width governs on accessible ramps — the Golden Rule: stricter, more specific standard prevails on accessible routes",
-        "explanation": "The Golden Rule of Conflicts states that for accessible routes, the stricter, more specific BP 344 standard prevails over the more general PD 1096 rule. BP 344 Appendix A Sec 1.2.a specifies 1200 mm minimum clear width for accessible ramps. PD 1096 references corridor width for ramps-as-exits but does not cite a specific numeric value in the general ramp section. When the accessible ramp overlaps with an exit ramp, both sets of requirements apply — BP 344 sets the floor at 1200 mm for accessibility, and any PD 1096 corridor requirement must also be met if it is stricter (which in most public occupancies it is not).",
-        "common_misconceptions": [
-          "Defaulting to PD 1096 because it is the 'base' building code — BP 344 as a mandatory overlay takes precedence where stricter",
-          "Applying the 1500 mm sidewalk/walkway width from Appendix B to ramps — the ramp width (1200 mm) and sidewalk width (1500 mm) are from different sections for different elements"
-        ]
-      },
+      "rationale": "The specific accessible toilet dimensions are in BP 344.",
       "explanation": "Tests the Golden Rule of Conflicts applied to ramp width — the core principle of the entire article.",
       "code_citation": "BP 344 2024 IRR, Appendix A Sec 1.2.a; PD 1096 IRR",
       "bloom_level": "apply",
@@ -504,45 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.458620+00:00",
       "content_hash": "sha256:cf654d3c531b536a21981d2165c552937917245db34e9ec6e5156d3873f2221c"
     },
     {
       "question_id": "0bafab5b-cd35-499d-b60f-4888e4caf8b6",
       "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
       "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
-      "text": "PD 1096 Rule XII requires guardrails at a minimum height of 1100 mm where ramps, balconies, or landings are more than a certain height above adjacent grade. How does BP 344 interact with this requirement?",
+      "text": "When reviewing whether accessibility drawings are part of a permit submission, which source frame is most relevant?",
       "options": [
         {
-          "id": "A",
-          "text": "BP 344 replaces PD 1096's 1100 mm guardrail with its own accessibility handrails at 700 mm and 900 mm — the two systems cannot coexist on the same ramp because they serve the same protective function"
+          "id": "a",
+          "text": "PD 1096 permit requirements"
         },
         {
-          "id": "B",
-          "text": "BP 344 supersedes PD 1096 guardrails entirely on accessible ramps because it is the more specific standard for PWD-related elements including fall protection and mobility assistance devices"
+          "id": "b",
+          "text": "Only theater seating rules"
         },
         {
-          "id": "C",
-          "text": "PD 1096 guardrails (1100 mm) alone are sufficient on elevated accessible ramps; the BP 344 dual handrails at 700/900 mm are only required on ground-level ramps with no fall hazard present"
+          "id": "c",
+          "text": "Only elevator car dimensions"
         },
         {
-          "id": "D",
-          "text": "BP 344 accessibility handrails (700 mm and 900 mm) and PD 1096 guardrails (1100 mm) both apply when a ramp is elevated more than 750 mm — they serve different functions and are complementary, not substitutes"
+          "id": "d",
+          "text": "Only washroom accessories"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Both apply simultaneously on elevated accessible ramps — BP 344 dual handrails (700/900 mm) for grip and PD 1096 guardrails (1100 mm) for fall protection; they are complementary, not substitutes",
-        "explanation": "The BP 344 2024 IRR amendments explicitly cross-reference PD 1096 Rule XII guardrail provisions for ramps elevated more than 750 mm above adjacent grade. The BP 344 accessibility handrails at 700 mm and 900 mm serve the grip and support function during walking/rolling. The PD 1096 guardrail at 1100 mm minimum serves the structural fall-protection function. Both must be present on elevated accessible ramps. The 100 mm edge curb (required by BP 344 Appendix A) handles low-level wheel/crutch-tip containment, the accessibility handrails handle functional grip, and the guardrail handles catastrophic fall prevention — each serves a distinct layer of safety.",
-        "common_misconceptions": [
-          "Thinking one system replaces the other — accessibility handrails and safety guardrails are independent, complementary requirements",
-          "Applying only the 700/900 mm BP 344 handrails and omitting the 1100 mm PD 1096 guardrail on elevated ramps"
-        ]
-      },
+      "rationale": "PD 1096 lists accessibility facilities in the permit submission framework.",
       "explanation": "Tests the complementary relationship between BP 344 accessibility handrails and PD 1096 guardrails on elevated ramps.",
       "code_citation": "BP 344 2024 IRR, Appendix A Sec 1.2.f; PD 1096 IRR, Rule XII",
       "bloom_level": "analyze",
@@ -555,7 +485,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:54.902915+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.457067+00:00",
       "content_hash": "sha256:db364400b4bd550da057587b4b3d67ff001426f461e1ddc8c280f4be4007d542"
     }
   ]

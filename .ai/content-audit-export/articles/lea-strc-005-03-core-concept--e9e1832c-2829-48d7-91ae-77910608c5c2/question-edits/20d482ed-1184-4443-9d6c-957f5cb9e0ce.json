@@ -24,5 +24,54 @@
       "bsi-design",
       "bsi-bending"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "Which statement correctly separates ASD from strength design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ASD and strength design are the same comparison with different labels only."
+      },
+      {
+        "id": "b",
+        "text": "ASD uses service stress versus allowable stress; strength design uses factored demand versus matching resistance."
+      },
+      {
+        "id": "c",
+        "text": "Strength design uses service stress only."
+      },
+      {
+        "id": "d",
+        "text": "ASD requires ignoring material behavior."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "ASD and strength design are the same comparison with different labels only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "ASD uses service stress versus allowable stress; strength design uses factored demand versus matching resistance. This stays inside the Batch 144 local source boundary for Allowable Stress Design and Working-Stress Checks.",
+      "c": "Strength design uses service stress only. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "ASD requires ignoring material behavior. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "ASD uses service stress versus allowable stress; strength design uses factored demand versus matching resistance. Supported by mechanics-allowable; fundamentals-strength.",
+      "takeaway": "For Allowable Stress Design and Working-Stress Checks, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "mechanics-allowable; fundamentals-strength",
+      "checked_sources": [
+        "mechanics-allowable",
+        "bsi-design",
+        "bsi-bending"
+      ]
+    },
+    "explanation": "ASD uses service stress versus allowable stress; strength design uses factored demand versus matching resistance. Supported by the Batch 144 local source boundary: mechanics-allowable; fundamentals-strength.",
+    "code_citation": "mechanics-allowable; fundamentals-strength",
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-005-03-003"
   }
 }

@@ -30,9 +30,6 @@ const buildOutcomeText = (title: string, nodeName?: string | null) => {
 
 export function WikiLearningJourney({
   title,
-  subject,
-  difficulty,
-  readTime,
   whyItMatters,
   nodeName,
   isMinimal = false,

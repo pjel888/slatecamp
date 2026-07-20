@@ -8,31 +8,31 @@
       "question_id": "5ea9cefa-8344-48ef-8fa6-08c9f92d3dfb",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "Based on the specifications in \"Residential Clearances\", if a project requires 153 cm, what is the correct interpretation?",
+      "text": "What front setback does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "153 cm is the minimum/standard requirement"
+          "id": "b038-5ba0-01-a",
+          "text": "4.50 m"
         },
         {
-          "id": "B",
-          "text": "153 cm is the maximum permitted value"
+          "id": "b038-5ba0-01-b",
+          "text": "3.00 m"
         },
         {
-          "id": "C",
-          "text": "153 cm applies only to specific conditions"
+          "id": "b038-5ba0-01-c",
+          "text": "6.00 m"
         },
         {
-          "id": "D",
-          "text": "153 cm is an approximate value subject to interpretation"
+          "id": "b038-5ba0-01-d",
+          "text": "8.00 m at all levels"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "b038-5ba0-01-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The article specifies 153 cm as the requirement. Context: er-statured populations. 🛑 **Stop & Think #5:** A Filipino female user stands 1...",
+      "rationale": "Correct answer: 4.50 m. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -45,45 +45,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:13.411456+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.153615+00:00",
       "content_hash": "sha256:40d8e32e0c9fe61f63bab3275d481b2c115e4e3d551ba94a65733139b0ad268e"
     },
     {
       "question_id": "ce8c2a60-ff13-4cfb-a8d5-ee136b354598",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "An architect argues that because the minimum bathroom under PD 1096 is 1.20 sqm with a 0.90 m least dimension, this space provides adequate clearance for a Filipino adult at the 95th percentile hip breadth of 54.8 cm. Which evaluation is most accurate?",
+      "text": "What side and rear setbacks does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "The argument is correct — a 0.90 m dimension easily accommodates a 54.8 cm hip breadth with 35 cm of bilateral clearance, assuming no additional fixtures are present"
+          "id": "b038-5ba0-02-a",
+          "text": "2.00 m side and 2.00 m rear"
         },
         {
-          "id": "B",
-          "text": "The argument overstates comfort — 0.90 m provides only 35 cm total lateral clearance for a 54.8 cm body width; PD 1096's 1.20 sqm is a code minimum, not a comfortable standard"
+          "id": "b038-5ba0-02-b",
+          "text": "3.00 m side and 3.00 m rear"
         },
         {
-          "id": "C",
-          "text": "The argument understates the problem — Filipino hip breadth at the 95th percentile (54.8 cm) exceeds the 0.90 m dimension, making the space physically impassable without considering fixture placement"
+          "id": "b038-5ba0-02-c",
+          "text": "Optional side and rear setbacks"
         },
         {
-          "id": "D",
-          "text": "The argument is irrelevant — bathroom clearance in PD 1096 is governed by plumbing fixture placement rules under NSCP, not anthropometric data, which may vary"
+          "id": "b038-5ba0-02-d",
+          "text": "No side or rear setback"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-5ba0-02-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The 0.90 m dimension does accommodate a 54.8 cm hip breadth (it exceeds it), but the resulting ~35 cm of combined lateral clearance makes the 1.20 sqm minimum a tight code floor, not a comfortable design standard.",
-        "explanation": "Filipino male 95th% hip breadth = 54.8 cm. The 0.90 m (90 cm) bathroom least dimension exceeds 54.8 cm, so the space is physically passable — Option C is wrong. However, 90 − 54.8 = 35.2 cm of combined lateral space (about 17.6 cm per side) is extremely tight for movement and use. The 1.20 sqm minimum is a code floor — it is the absolute minimum PD 1096 will allow, not a comfortable or accessible standard. BP 344 requires 1,500 × 1,500 mm turning radius for wheelchair users, making the 1.20 sqm minimum wholly inadequate for accessible bathrooms. The distinction between 'code minimum' and 'design standard' is central to this module.",
-        "common_misconceptions": [
-          "Assuming that a dimension larger than the body width automatically implies comfortable clearance for use",
-          "Treating the PD 1096 code minimum as equivalent to a good or comfortable design standard"
-        ]
-      },
+      "rationale": "Correct answer: 2.00 m side and 2.00 m rear. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": "This question tests evaluation of the difference between code minimum compliance and adequate anthropometric clearance in residential bathroom design.",
       "code_citation": "PD 1096 Rule VIII, Section 806",
       "bloom_level": "evaluate",
@@ -96,45 +89,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.145271+00:00",
       "content_hash": "sha256:0780e3648547144fbf03b68b34c27190dfc7b5438a7f88b5d6a1a601691dd9d0"
     },
     {
       "question_id": "6d49ac58-4d89-4956-ab81-f3a406f917ee",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A minimum 6 sqm bedroom in a Philippine rowhouse measures 2 m × 3 m and has a natural-ventilation ceiling height of 2.70 m. The developer argues this satisfies all PD 1096 requirements. Which analysis is correct?",
+      "text": "What abutment rule applies to R-1 lots under Rule VIII?",
       "options": [
         {
-          "id": "A",
-          "text": "The room is non-compliant — PD 1096 requires bedrooms to be at least 8 sqm regardless of ventilation type, ensuring adequate space for occupants"
+          "id": "b038-5ba0-03-a",
+          "text": "No abutments are allowed at any property line"
         },
         {
-          "id": "B",
-          "text": "The room is compliant on area but non-compliant on ceiling height — naturally ventilated rooms require 3.0 m under PD 1096 to ensure proper air circulation"
+          "id": "b038-5ba0-03-b",
+          "text": "Abutment is allowed on two sides"
         },
         {
-          "id": "C",
-          "text": "The room is non-compliant — the 2 m least dimension is below PD 1096's minimum of 2.13 m (7 ft) for habitable rooms, which is necessary for functional space"
+          "id": "b038-5ba0-03-c",
+          "text": "Abutment is allowed on the front property line"
         },
         {
-          "id": "D",
-          "text": "The room is compliant — 6.0 sqm area, 2.0 m minimum least dimension, and 2.70 m ceiling for natural ventilation all meet PD 1096 Sec. 805 and 806"
+          "id": "b038-5ba0-03-d",
+          "text": "Abutment is required at the rear line"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "b038-5ba0-03-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The room meets all PD 1096 requirements: 6.0 sqm area (Sec. 806), 2.0 m least dimension (Sec. 806), and 2.70 m ceiling for natural ventilation (Sec. 805).",
-        "explanation": "PD 1096 checklist for this room: Area = 2 × 3 = 6.0 sqm ≥ 6.0 sqm minimum (compliant). Least dimension = 2.0 m ≥ 2.0 m minimum (compliant). Ceiling height = 2.70 m — naturally ventilated rooms require ≥ 2.70 m (exactly compliant). All three requirements are met simultaneously. Option A fabricates an 8 sqm minimum. Option C incorrectly applies the US IRC 2.13 m (7 ft) dimension — PD 1096 requires 2.00 m. Option D fabricates a 3.0 m ceiling height requirement for natural ventilation — PD 1096 requires 2.70 m, which is exactly what is provided.",
-        "common_misconceptions": [
-          "Applying the US IRC 7-foot minimum horizontal dimension (2.13 m) to Philippine habitable room requirements (2.00 m)",
-          "Citing a 3.0 m minimum ceiling height for naturally ventilated rooms — PD 1096 requires 2.70 m, not 3.0 m"
-        ]
-      },
+      "rationale": "Correct answer: No abutments are allowed at any property line. This is directly supported by PD 1096 2004 Revised IRR, Section 804.",
       "explanation": "This question tests multi-standard analysis of a minimum-compliant Philippine bedroom against all applicable PD 1096 provisions.",
       "code_citation": "PD 1096 Rule VIII, Sections 805 and 806",
       "bloom_level": "analyze",
@@ -147,45 +133,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.137515+00:00",
       "content_hash": "sha256:24d4eb981bd1678691d4408e1c89402816ff8fc9d830b8fe125a565342a30fed"
     },
     {
       "question_id": "4e7e7ba5-857f-427d-80c1-8c409e41baee",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096, Section 806 of the Revised IRR specifies minimum dimensions for habitable rooms. Which set of values is correct for bedrooms in a Philippine residence?",
+      "text": "For basic R-2, what maximum PSO values appear in Table VIII.1 depending on the table condition?",
       "options": [
         {
-          "id": "A",
-          "text": "Minimum area 6.0 sqm; minimum least dimension 2.0 m; no distinction between single and master bedrooms"
+          "id": "b038-5ba0-04-a",
+          "text": "55 or 60 percent"
         },
         {
-          "id": "B",
-          "text": "Minimum area 6.0 sqm for single bedrooms; minimum area 12.0 sqm for master bedrooms; least dimension 2.0 m"
+          "id": "b038-5ba0-04-b",
+          "text": "70 or 80 percent"
         },
         {
-          "id": "C",
-          "text": "Minimum area 7.0 sqm (70 sq ft); minimum horizontal dimension 2.13 m (7 ft), per the IRC standard adopted by PD 1096"
+          "id": "b038-5ba0-04-c",
+          "text": "75 or 85 percent"
         },
         {
-          "id": "D",
-          "text": "Minimum area 5.5 sqm for secondary bedrooms; minimum area 9.0 sqm for master bedrooms; least dimension 1.80 m"
+          "id": "b038-5ba0-04-d",
+          "text": "80 or 90 percent"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "b038-5ba0-04-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Sec. 806 requires 6.0 sqm minimum area and 2.0 m minimum least dimension for ALL habitable rooms — no distinction exists between bedroom types.",
-        "explanation": "PD 1096 Rule VIII, Section 806, Revised IRR: 'Rooms for Human Habitations — 6.00 square meters with a least dimension of 2.00 meters.' This applies equally to single bedrooms, master bedrooms, and any other habitable sleeping or living room. There is NO 12 sqm master bedroom minimum anywhere in PD 1096 — that figure is a real estate convention, not a code requirement. Option C applies the US IRC standard (70 sq ft / 7 ft dimension), which is not PD 1096. Options B and D both cite non-existent PD 1096 provisions.",
-        "common_misconceptions": [
-          "Citing a 12 sqm master bedroom minimum — this does not exist in PD 1096",
-          "Applying IRC bedroom standards to Philippine code questions"
-        ]
-      },
+      "rationale": "Correct answer: 55 or 60 percent. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.1.",
       "explanation": "This question tests recall of the correct PD 1096 habitable room minimum dimensions.",
       "code_citation": "PD 1096 Rule VIII, Section 806",
       "bloom_level": "remember",
@@ -198,45 +177,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.142573+00:00",
       "content_hash": "sha256:b7a437cb7ce60a463496183648ec283c217ccafa1a7757457db851b207ec9baa"
     },
     {
       "question_id": "e5074970-112d-44a7-b518-e1fdfcaded18",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A homeowner in Quezon City replaces deteriorated roofing sheets, repaints the exterior, and replaces a rotted load-bearing column — all without a building permit. Which of these activities legally requires a permit under PD 1096 Revised IRR, Rule III, Section 301?",
+      "text": "What is the minimum clear ceiling height above and below mezzanine floors under Section 805?",
       "options": [
         {
-          "id": "A",
-          "text": "All three require permits — any modification to a residential building triggers the permit requirement, including minor repairs and aesthetic changes"
+          "id": "b038-5ba0-05-a",
+          "text": "1.80 m"
         },
         {
-          "id": "B",
-          "text": "Only the repainting requires a permit — exterior work visible from the street requires architectural review and compliance with local aesthetic guidelines"
+          "id": "b038-5ba0-05-b",
+          "text": "2.70 m"
         },
         {
-          "id": "C",
-          "text": "The roofing and column replacement require permits; repainting is exempt as cosmetic work unless it involves significant color changes"
+          "id": "b038-5ba0-05-c",
+          "text": "2.40 m"
         },
         {
-          "id": "D",
-          "text": "Only the load-bearing column replacement requires a permit — it involves a structural member, which is excluded from permit exemptions"
+          "id": "b038-5ba0-05-d",
+          "text": "800 mm"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "b038-5ba0-05-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Revised IRR, Rule III, Sec. 301(3) exempts non-structural repairs including roofing sheet replacement and repainting. Structural member replacement always requires a permit.",
-        "explanation": "PD 1096, 2004 Revised IRR, Rule III, Section 301(3)(b): exempt repairs include replacement of roofing sheets/tiles/gutters/fascias, repair/replacement of non-load-bearing partitions, replacement of doors and windows, flooring repair, and repainting. The exemption explicitly covers work 'not affecting or involving any structural member.' A load-bearing column replacement IS a structural member — the exemption does not apply. The permit requirement is mandatory regardless of whether the column is replaced with the same size and material.",
-        "common_misconceptions": [
-          "Thinking roofing replacement always requires a permit — non-structural roofing work is explicitly exempt",
-          "Assuming all repairs to a building without a permit violate PD 1096 — non-structural repairs are legally exempt"
-        ]
-      },
+      "rationale": "Correct answer: 1.80 m. This is directly supported by PD 1096 2004 Revised IRR, Section 805.",
       "explanation": "This question tests application of PD 1096 permit exemption rules to specific repair scenarios.",
       "code_citation": "PD 1096 Revised IRR, Rule III, Sec. 301(3)",
       "bloom_level": "apply",
@@ -249,45 +221,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.152355+00:00",
       "content_hash": "sha256:ce8b41e0a90db358da829d9763f856f32b2a14f5283f7cb2e9d99e9328118ca6"
     },
     {
       "question_id": "2e618da1-db41-4bca-95bc-5836aadc83f7",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "The NKBA specifies a maximum kitchen work triangle perimeter. What is this limit, and what is the correct response if an exam question asks 'What does PD 1096 require for kitchen work triangle dimensions?'",
+      "text": "What front setback does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "NKBA maximum is 26 ft (7.93 m); PD 1096 also mandates the NKBA triangle as a design requirement, which is a common misconception"
+          "id": "b038-5ba0-06-a",
+          "text": "4.50 m"
         },
         {
-          "id": "B",
-          "text": "NKBA maximum is 26 ft (7.93 m); PD 1096 has no kitchen work triangle provision — it is a design principle, not a code requirement"
+          "id": "b038-5ba0-06-b",
+          "text": "3.00 m"
         },
         {
-          "id": "C",
-          "text": "NKBA maximum is 8 m; PD 1096 limits the triangle to a maximum of 7 m for residential kitchens under Section 806, which is incorrect"
+          "id": "b038-5ba0-06-c",
+          "text": "6.00 m"
         },
         {
-          "id": "D",
-          "text": "NKBA maximum is 26 ft (7.93 m); BP 344 limits the kitchen triangle to 6 m for accessible kitchens in residential buildings, which is not accurate"
+          "id": "b038-5ba0-06-d",
+          "text": "8.00 m at all levels"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-5ba0-06-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The NKBA maximum work triangle perimeter is 26 ft (7.93 m). PD 1096 contains zero provisions for kitchen work triangle dimensions — it is a design guideline, not a code requirement.",
-        "explanation": "NKBA Design Guidelines: total triangle perimeter maximum ≤ 26 feet (7.93 m); each leg minimum 4 feet (1.22 m); each leg maximum 9 feet (2.74 m). PD 1096 does not mention kitchen work triangles anywhere. When a Philippine ALE exam question references 'what PD 1096 requires for kitchen triangles,' the correct answer is: PD 1096 has no such requirement. The triangle is a planning efficiency tool developed in the 1940s — a professional design standard, not a Philippine building code provision. Neither BP 344 nor any other Philippine law codifies kitchen triangle dimensions.",
-        "common_misconceptions": [
-          "Assuming the kitchen work triangle is a code requirement in the Philippines because it appears in study materials",
-          "Citing 8 m as the NKBA maximum — the correct value is 26 ft / 7.93 m"
-        ]
-      },
+      "rationale": "Correct answer: 4.50 m. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": "This question tests understanding of the distinction between code requirements (PD 1096) and design guidelines (NKBA) for kitchen planning.",
       "code_citation": null,
       "bloom_level": "understand",
@@ -300,45 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.150089+00:00",
       "content_hash": "sha256:1849c5f71c9407e3ed06cf85e85f4b6c24f33185fd0299be42fee48bdefb9d4e"
     },
     {
       "question_id": "c891c35c-b2ad-472f-ad71-177214823b79",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096 Section 806 specifies a minimum area and least dimension for kitchens. A kitchen measuring 1.50 m × 1.80 m is flagged by a building official. Which statement correctly explains the violation?",
+      "text": "What side and rear setbacks does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "The kitchen complies — its least dimension of 1.50 m meets the PD 1096 minimum; only the dimension, not area, is regulated"
+          "id": "b038-5ba0-07-a",
+          "text": "2.00 m side and 2.00 m rear"
         },
         {
-          "id": "B",
-          "text": "The kitchen fails — PD 1096 requires a minimum kitchen area of 3.6 sqm and the kitchen measures only 2.70 sqm"
+          "id": "b038-5ba0-07-b",
+          "text": "3.00 m side and 3.00 m rear"
         },
         {
-          "id": "C",
-          "text": "The kitchen fails — PD 1096 requires a minimum kitchen area of 3.0 sqm; 1.50 m × 1.80 m = 2.70 sqm falls short"
+          "id": "b038-5ba0-07-c",
+          "text": "Optional side and rear setbacks"
         },
         {
-          "id": "D",
-          "text": "The kitchen fails — the NKBA work triangle cannot be achieved in a 1.50 m × 1.80 m space and PD 1096 mandates NKBA compliance"
+          "id": "b038-5ba0-07-d",
+          "text": "No side or rear setback"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "b038-5ba0-07-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Sec. 806 requires kitchens to be at least 3.0 sqm with a least dimension of 1.50 m. The 1.50 m × 1.80 m kitchen = 2.70 sqm — 0.30 sqm below the minimum.",
-        "explanation": "PD 1096 Section 806, Item 2: 'Kitchens — 3.0 square meters with a least dimension of 1.50 meters.' Both area AND dimension must be satisfied simultaneously. This kitchen has the correct dimension (1.50 m) but insufficient area (2.70 sqm < 3.0 sqm). Option A incorrectly states only the dimension matters. Option B cites 3.6 sqm — this is a common error; the correct minimum is 3.0 sqm, not 3.6 sqm. Option D fabricates a PD 1096–NKBA link that does not exist; PD 1096 has no kitchen work triangle provision.",
-        "common_misconceptions": [
-          "Citing 3.6 sqm as the PD 1096 kitchen minimum — the correct minimum is 3.0 sqm",
-          "Assuming only the least dimension requirement needs to be met while ignoring the area minimum"
-        ]
-      },
+      "rationale": "Correct answer: 2.00 m side and 2.00 m rear. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": "This question tests application of PD 1096 kitchen minimum requirements to a specific non-compliant scenario.",
       "code_citation": "PD 1096 Rule VIII, Section 806",
       "bloom_level": "apply",
@@ -351,45 +309,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.128534+00:00",
       "content_hash": "sha256:f004c925ee7b72c327d7f40630ceea7fe3a3197d0062ed7d4634f16041b0ad36"
     },
     {
       "question_id": "ba081c35-aca3-45c9-ad75-a1ce13f4b44c",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096 Section 805 specifies ceiling height requirements based on ventilation type. What is the minimum ceiling height for a naturally ventilated single-storey residence in the Philippines?",
+      "text": "What abutment rule applies to R-1 lots under Rule VIII?",
       "options": [
         {
-          "id": "A",
-          "text": "2.40 m — the universal minimum regardless of ventilation type under PD 1096"
+          "id": "b038-5ba0-08-a",
+          "text": "No abutments are allowed at any property line"
         },
         {
-          "id": "B",
-          "text": "2.29 m (7 ft 6 in) — the US IRC residential ceiling height standard applicable in the Philippines"
+          "id": "b038-5ba0-08-b",
+          "text": "Abutment is allowed on two sides"
         },
         {
-          "id": "C",
-          "text": "2.70 m — the minimum for naturally ventilated habitable rooms per PD 1096 Section 805"
+          "id": "b038-5ba0-08-c",
+          "text": "Abutment is allowed on the front property line"
         },
         {
-          "id": "D",
-          "text": "1.80 m — the mezzanine clear height standard applied to all low-cost residential construction"
+          "id": "b038-5ba0-08-d",
+          "text": "Abutment is required at the rear line"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "b038-5ba0-08-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Section 805 sets 2.70 m as the minimum ceiling height for naturally ventilated habitable rooms. The lower 2.40 m applies only to artificially ventilated rooms.",
-        "explanation": "PD 1096 Section 805 Revised IRR ceiling height matrix: artificially ventilated habitable rooms = 2.40 m minimum; naturally ventilated habitable rooms = 2.70 m minimum; mezzanine = 1.80 m clear (above and below). A common exam trap is applying the 2.40 m figure universally — it only applies when mechanical ventilation is present. Without air conditioning or mechanical ventilation, the higher 2.70 m standard governs to facilitate natural airflow. Option B applies the US IRC standard. Option D incorrectly applies the mezzanine height to standard habitable rooms.",
-        "common_misconceptions": [
-          "Applying the 2.40 m artificially-ventilated minimum to naturally ventilated rooms — 2.70 m governs without AC",
-          "Using the US IRC 2.29 m ceiling minimum in Philippine code answers"
-        ]
-      },
+      "rationale": "Correct answer: No abutments are allowed at any property line. This is directly supported by PD 1096 2004 Revised IRR, Section 804.",
       "explanation": "This question tests recall of PD 1096 ceiling height requirements differentiated by ventilation type.",
       "code_citation": "PD 1096 Rule VIII, Section 805",
       "bloom_level": "remember",
@@ -402,45 +353,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.131900+00:00",
       "content_hash": "sha256:87fded5ad8d6f1561e48b7f8833b0b7f617d4f5e43cc66c27cc8ad7dc1a311aa"
     },
     {
       "question_id": "a66d1ca0-eb74-4196-9ae5-bc349420ec4e",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A US-trained contractor installs kitchen counters at 36 inches (91.4 cm) in a Manila condominium serving Filipino residents. A Filipino architect objects on ergonomic grounds. Which anthropometric data best supports the objection?",
+      "text": "For basic R-2, what maximum PSO values appear in Table VIII.1 depending on the table condition?",
       "options": [
         {
-          "id": "A",
-          "text": "Filipino female mean standing elbow height is ~96.3 cm; ergonomically optimal counter height is 96.3 − 8 = ~88 cm, making the 91.4 cm US counter 3–5 cm too high for the average Filipino woman"
+          "id": "b038-5ba0-09-a",
+          "text": "55 or 60 percent"
         },
         {
-          "id": "B",
-          "text": "PD 1096 Section 806 limits residential counter heights to a maximum of 85 cm; the 91.4 cm counter violates this provision"
+          "id": "b038-5ba0-09-b",
+          "text": "70 or 80 percent"
         },
         {
-          "id": "C",
-          "text": "BP 344 prohibits kitchen counters exceeding 86.4 cm (34 in) in residential buildings with more than 6 units; the counter is non-compliant"
+          "id": "b038-5ba0-09-c",
+          "text": "75 or 85 percent"
         },
         {
-          "id": "D",
-          "text": "The NKBA prohibits the use of 36-inch counters outside the United States and requires metric equivalents in all Philippine installations"
+          "id": "b038-5ba0-09-d",
+          "text": "80 or 90 percent"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "b038-5ba0-09-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Filipino female mean standing elbow height is ~96.3 cm (Del Prado-Lu, 2007). Optimal counter = elbow height − 7–9 cm ≈ 87–89 cm. The US 91.4 cm standard is 3–5 cm too high for the average Filipino woman.",
-        "explanation": "Counter height ergonomics: optimal work surface = elbow height − 7–10 cm working clearance. Filipino female mean elbow height = 96.3 cm → optimal counter ≈ 87–89 cm. The US 36 inch (91.4 cm) standard was derived from US female mean elbow height (~99.8 cm) → 91–92 cm, appropriate for US users. The gap between US and Filipino female mean elbow height is ~3.5 cm, resulting in a counter that is ~3–5 cm too high for the average Filipino woman. Neither PD 1096 (Option B) nor BP 344 (Option C) codifies residential counter heights — both citations are fabricated. Option D is false; NKBA guidelines are not jurisdictionally restricted.",
-        "common_misconceptions": [
-          "Citing PD 1096 as the authority for counter height limits — PD 1096 contains no counter height provisions",
-          "Assuming Filipino and US female elbow heights are similar enough that the 36-inch standard is universally appropriate"
-        ]
-      },
+      "rationale": "Correct answer: 55 or 60 percent. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.1.",
       "explanation": "This question tests analysis of Filipino anthropometric data applied to residential counter height design.",
       "code_citation": null,
       "bloom_level": "analyze",
@@ -453,45 +397,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.154696+00:00",
       "content_hash": "sha256:aa32a68bcd8c7152f38d340360b45993c83bbac2f4b4a980fd7094dd2504d79a"
     },
     {
       "question_id": "7a571eb1-2974-4d46-a785-fb14bc53c9df",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096 Section 808 requires windows in habitable rooms to provide a minimum total free opening area. What is this requirement, and what additional constraint applies even if the percentage calculation yields a smaller number?",
+      "text": "What is the minimum clear ceiling height above and below mezzanine floors under Section 805?",
       "options": [
         {
-          "id": "A",
-          "text": "Windows must have a free opening equal to at least 5% of the floor area; no absolute minimum applies"
+          "id": "b038-5ba0-10-a",
+          "text": "1.80 m"
         },
         {
-          "id": "B",
-          "text": "Windows must have a free opening of at least 10% of the floor area, with an absolute minimum of 1.00 sqm even if 10% calculates to less"
+          "id": "b038-5ba0-10-b",
+          "text": "2.70 m"
         },
         {
-          "id": "C",
-          "text": "Windows must have a free opening of at least 10% of the floor area; this requirement applies equally to mechanically ventilated rooms"
+          "id": "b038-5ba0-10-c",
+          "text": "2.40 m"
         },
         {
-          "id": "D",
-          "text": "Windows must have a free opening of at least 15% of the floor area in naturally ventilated rooms; 10% applies to mechanically ventilated rooms"
+          "id": "b038-5ba0-10-d",
+          "text": "800 mm"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-5ba0-10-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Sec. 808 requires window free opening ≥ 10% of floor area, with an absolute minimum of 1.00 sqm. The 10% requirement applies to rooms without artificial ventilation.",
-        "explanation": "PD 1096 Rule VIII, Section 808 Revised IRR: 'Windows in rooms...shall have a total free area of openings equal to at least ten percent of the floor area of the room.' Additionally, the IRR specifies a minimum of 1.00 sqm for room windows even if the 10% calculation yields a smaller number. This requirement applies to rooms WITHOUT artificial ventilation — rooms with mechanical ventilation have different standards. Option A uses 5% — incorrect. Option C incorrectly extends the requirement to mechanically ventilated rooms. Option D uses 15% for naturally ventilated rooms — incorrect.",
-        "common_misconceptions": [
-          "Omitting the absolute 1.00 sqm floor and applying only the percentage calculation",
-          "Applying the 10% window area requirement to mechanically ventilated rooms where it does not apply"
-        ]
-      },
+      "rationale": "Correct answer: 1.80 m. This is directly supported by PD 1096 2004 Revised IRR, Section 805.",
       "explanation": "This question tests recall of PD 1096 window area requirements including the absolute minimum.",
       "code_citation": "PD 1096 Rule VIII, Section 808",
       "bloom_level": "remember",
@@ -504,45 +441,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.138798+00:00",
       "content_hash": "sha256:e2c1c26447ebf92e46e210af511d7cbf70557cc173e7afe7ebd5790c900f553a"
     },
     {
       "question_id": "a7565c51-f303-4306-938a-b2db6046b806",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "Filipino femlea mean standing elbow height is 96.3 cm. A Filipino woman stands 153 cm tall (near population mean). What is the ergonomically optimal counter height for this user, and how does it compare to the US standard?",
+      "text": "What front setback does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "Optimal counter: 91 cm — the US 36-inch standard accounts for all population differences through its standardized clearance formula"
+          "id": "b038-5ba0-11-a",
+          "text": "4.50 m"
         },
         {
-          "id": "B",
-          "text": "Optimal counter: 82 cm — the minimum derived from the Filipino female 5th percentile elbow height (89 cm) minus 7 cm; this should be the standard for all Filipino women"
+          "id": "b038-5ba0-11-b",
+          "text": "3.00 m"
         },
         {
-          "id": "C",
-          "text": "Optimal counter: approximately 88–89 cm — elbow height (96 cm) minus 7–8 cm working clearance; 3–5 cm lower than the US 91.4 cm standard"
+          "id": "b038-5ba0-11-c",
+          "text": "6.00 m"
         },
         {
-          "id": "D",
-          "text": "Optimal counter: 96 cm — the counter should match elbow height exactly to eliminate any working clearance drop"
+          "id": "b038-5ba0-11-d",
+          "text": "8.00 m at all levels"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "b038-5ba0-11-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ergonomic counter height = elbow height − 7–10 cm. For this user: 96 − 8 = 88 cm. The US 91.4 cm standard is ~3 cm too high, causing slight shoulder elevation and strain over sustained use.",
-        "explanation": "The ergonomic formula: optimal counter height = standing elbow height − 7–10 cm working clearance. Filipino female at 153 cm stature, mean elbow height ≈ 96 cm → counter: 96 − 7 = 89 cm or 96 − 8 = 88 cm. The US standard of 91.4 cm was derived from US female mean elbow height (~99.8 cm) → 91–92 cm. The gap between US and Filipino female mean elbow heights is ~3.5 cm, producing a counter ~2–5 cm above the Filipino optimum. Option C applies the 5th percentile as if it should serve all Filipino women — the 5th percentile lower bound (82 cm) would be too low for average users. Option D eliminates the working clearance entirely, placing the surface at elbow height.",
-        "common_misconceptions": [
-          "Applying the US 36-inch standard universally and dismissing the anthropometric difference as negligible",
-          "Using the 5th percentile elbow height as the target for average users rather than the mean"
-        ]
-      },
+      "rationale": "Correct answer: 4.50 m. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": "This question tests application of the ergonomic counter height formula using Filipino femlea anthropometric data.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -555,45 +485,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:35:59.15039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.130418+00:00",
       "content_hash": "sha256:5c065c494022efde5f0c536b7ec5312ea7c47680f8a2e968586e2aa97ddefd59"
     },
     {
       "question_id": "44d98b9c-a2ff-4c96-b3ae-73dcf80cc76e",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096 Section 808 requires windows in habitable rooms to provide a minimum total free opening area. What is this requirement, and what additional constraint applies even if the percentage calculation yields a smaller number?",
+      "text": "What side and rear setbacks does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "Windows must have a free opening equal to at least 5% of the floor area; no absolute minimum applies"
+          "id": "b038-5ba0-12-a",
+          "text": "2.00 m side and 2.00 m rear"
         },
         {
-          "id": "B",
-          "text": "Windows must have a free opening of at least 10% of the floor area, with an absolute minimum of 1.00 sqm even if 10% calculates to less"
+          "id": "b038-5ba0-12-b",
+          "text": "3.00 m side and 3.00 m rear"
         },
         {
-          "id": "C",
-          "text": "Windows must have a free opening of at least 10% of the floor area; this requirement applies equally to mechanically ventilated rooms"
+          "id": "b038-5ba0-12-c",
+          "text": "Optional side and rear setbacks"
         },
         {
-          "id": "D",
-          "text": "Windows must have a free opening of at least 15% of the floor area in naturally ventilated rooms; 10% applies to mechanically ventilated rooms"
+          "id": "b038-5ba0-12-d",
+          "text": "No side or rear setback"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-5ba0-12-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Sec. 808 requires window free opening ≥ 10% of floor area, with an absolute minimum of 1.00 sqm. The 10% requirement applies to rooms without artificial ventilation.",
-        "explanation": "PD 1096 Rule VIII, Section 808 Revised IRR: 'Windows in rooms...shall have a total free area of openings equal to at least ten percent of the floor area of the room.' Additionally, the IRR specifies a minimum of 1.00 sqm for room windows even if the 10% calculation yields a smaller number. This requirement applies to rooms WITHOUT artificial ventilation — rooms with mechanical ventilation have different standards. Option A uses 5% — incorrect. Option C incorrectly extends the requirement to mechanically ventilated rooms. Option D uses 15% for naturally ventilated rooms — incorrect.",
-        "common_misconceptions": [
-          "Omitting the absolute 1.00 sqm floor and applying only the percentage calculation",
-          "Applying the 10% window area requirement to mechanically ventilated rooms where it does not apply"
-        ]
-      },
+      "rationale": "Correct answer: 2.00 m side and 2.00 m rear. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": "This question tests recall of PD 1096 window area requirements including the absolute minimum.",
       "code_citation": "PD 1096 Rule VIII, Section 808",
       "bloom_level": "remember",
@@ -606,45 +529,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.151236+00:00",
       "content_hash": "sha256:ee78058e0f748628a50cc6ca517a5c48c739902d88bac4c1b2ebc7aa732d0629"
     },
     {
       "question_id": "c9d100e9-0d31-4f97-a338-0d7046625948",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A US-trained contractor installs kitchen counters at 36 inches (91.4 cm) in a Manila condominium serving Filipino residents. A Filipino architect objects on ergonomic grounds. Which anthropometric data best supports the objection?",
+      "text": "What abutment rule applies to R-1 lots under Rule VIII?",
       "options": [
         {
-          "id": "A",
-          "text": "Filipino female mean standing elbow height is ~96.3 cm; ergonomically optimal counter height is 96.3 − 8 = ~88 cm, making the 91.4 cm US counter 3–5 cm too high for the average Filipino woman"
+          "id": "b038-5ba0-13-a",
+          "text": "No abutments are allowed at any property line"
         },
         {
-          "id": "B",
-          "text": "PD 1096 Section 806 limits residential counter heights to a maximum of 85 cm; the 91.4 cm counter violates this provision, potentially leading to non-compliance issues."
+          "id": "b038-5ba0-13-b",
+          "text": "Abutment is allowed on two sides"
         },
         {
-          "id": "C",
-          "text": "BP 344 prohibits kitchen counters exceeding 86.4 cm (34 in) in residential buildings with more than 6 units; the counter is non-compliant, which may require modification to meet accessibility standards."
+          "id": "b038-5ba0-13-c",
+          "text": "Abutment is allowed on the front property line"
         },
         {
-          "id": "D",
-          "text": "The NKBA prohibits the use of 36-inch counters outside the United States and requires metric equivalents in all Philippine installations, ensuring compatibility with local ergonomic standards."
+          "id": "b038-5ba0-13-d",
+          "text": "Abutment is required at the rear line"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "b038-5ba0-13-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Filipino female mean standing elbow height is ~96.3 cm (Del Prado-Lu, 2007). Optimal counter = elbow height − 7–9 cm ≈ 87–89 cm. The US 91.4 cm standard is 3–5 cm too high for the average Filipino woman.",
-        "explanation": "Counter height ergonomics: optimal work surface = elbow height − 7–10 cm working clearance. Filipino female mean elbow height = 96.3 cm → optimal counter ≈ 87–89 cm. The US 36 inch (91.4 cm) standard was derived from US female mean elbow height (~99.8 cm) → 91–92 cm, appropriate for US users. The gap between US and Filipino female mean elbow height is ~3.5 cm, resulting in a counter that is ~3–5 cm too high for the average Filipino woman. Neither PD 1096 (Option B) nor BP 344 (Option C) codifies residential counter heights — both citations are fabricated. Option D is false; NKBA guidelines are not jurisdictionally restricted.",
-        "common_misconceptions": [
-          "Citing PD 1096 as the authority for counter height limits — PD 1096 contains no counter height provisions",
-          "Assuming Filipino and US female elbow heights are similar enough that the 36-inch standard is universally appropriate"
-        ]
-      },
+      "rationale": "Correct answer: No abutments are allowed at any property line. This is directly supported by PD 1096 2004 Revised IRR, Section 804.",
       "explanation": "This question tests analysis of Filipino anthropometric data applied to residential counter height design.",
       "code_citation": null,
       "bloom_level": "analyze",
@@ -657,45 +573,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.146501+00:00",
       "content_hash": "sha256:dd7797fac1c063418b270c54092c9e71100dfc88fa0e63f4f7f178348e79be42"
     },
     {
       "question_id": "efe781da-0730-4754-8d97-064f57d34c79",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "The NKBA specifies a maximum kitchen work triangle perimeter. What is this limit, and what is the correct response if an exam question asks 'What does PD 1096 require for kitchen work triangle dimensions?'",
+      "text": "For basic R-2, what maximum PSO values appear in Table VIII.1 depending on the table condition?",
       "options": [
         {
-          "id": "A",
-          "text": "NKBA maximum is 26 ft (7.93 m); PD 1096 also mandates the NKBA triangle as a design requirement, ensuring compliance with international standards"
+          "id": "b038-5ba0-14-a",
+          "text": "55 or 60 percent"
         },
         {
-          "id": "B",
-          "text": "NKBA maximum is 26 ft (7.93 m); PD 1096 has no kitchen work triangle provision — it is a design principle, not a code requirement"
+          "id": "b038-5ba0-14-b",
+          "text": "70 or 80 percent"
         },
         {
-          "id": "C",
-          "text": "NKBA maximum is 8 m; PD 1096 limits the triangle to a maximum of 7 m for residential kitchens under Section 806, which is a common misconception"
+          "id": "b038-5ba0-14-c",
+          "text": "75 or 85 percent"
         },
         {
-          "id": "D",
-          "text": "NKBA maximum is 26 ft (7.93 m); BP 344 limits the kitchen triangle to 6 m for accessible kitchens in residential buildings, ensuring accessibility compliance"
+          "id": "b038-5ba0-14-d",
+          "text": "80 or 90 percent"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-5ba0-14-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The NKBA maximum work triangle perimeter is 26 ft (7.93 m). PD 1096 contains zero provisions for kitchen work triangle dimensions — it is a design guideline, not a code requirement.",
-        "explanation": "NKBA Design Guidelines: total triangle perimeter maximum ≤ 26 feet (7.93 m); each leg minimum 4 feet (1.22 m); each leg maximum 9 feet (2.74 m). PD 1096 does not mention kitchen work triangles anywhere. When a Philippine ALE exam question references 'what PD 1096 requires for kitchen triangles,' the correct answer is: PD 1096 has no such requirement. The triangle is a planning efficiency tool developed in the 1940s — a professional design standard, not a Philippine building code provision. Neither BP 344 nor any other Philippine law codifies kitchen triangle dimensions.",
-        "common_misconceptions": [
-          "Assuming the kitchen work triangle is a code requirement in the Philippines because it appears in study materials",
-          "Citing 8 m as the NKBA maximum — the correct value is 26 ft / 7.93 m"
-        ]
-      },
+      "rationale": "Correct answer: 55 or 60 percent. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.1.",
       "explanation": "This question tests understanding of the distinction between code requirements (PD 1096) and design guidelines (NKBA) for kitchen planning.",
       "code_citation": null,
       "bloom_level": "understand",
@@ -708,45 +617,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.144013+00:00",
       "content_hash": "sha256:769dc79abdab095fd861605020b5039c6ebffd3d4b3c575f46d05791013bd0c8"
     },
     {
       "question_id": "0e8f02a6-7593-40a3-9df4-60d16745ad58",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "An architect argues that because the minimum bathroom under PD 1096 is 1.20 sqm with a 0.90 m least dimension, this space provides adequate clearance for a Filipino adult at the 95th percentile hip breadth of 54.8 cm. Which evaluation is most accurate?",
+      "text": "What is the minimum clear ceiling height above and below mezzanine floors under Section 805?",
       "options": [
         {
-          "id": "A",
-          "text": "The argument is correct — a 0.90 m dimension easily accommodates a 54.8 cm hip breadth with 35 cm of bilateral clearance, ensuring comfort"
+          "id": "b038-5ba0-15-a",
+          "text": "1.80 m"
         },
         {
-          "id": "B",
-          "text": "The argument overstates comfort — 0.90 m provides only 35 cm total lateral clearance for a 54.8 cm body width; PD 1096's 1.20 sqm is a code minimum, not a comfortable standard"
+          "id": "b038-5ba0-15-b",
+          "text": "2.70 m"
         },
         {
-          "id": "C",
-          "text": "The argument understates the problem — Filipino hip breadth at the 95th percentile (54.8 cm) exceeds the 0.90 m dimension, making the space physically impassable, which is incorrect"
+          "id": "b038-5ba0-15-c",
+          "text": "2.40 m"
         },
         {
-          "id": "D",
-          "text": "The argument is irrelevant — bathroom clearance in PD 1096 is governed by plumbing fixture placement rules under NSCP, not anthropometric data, which is a misunderstanding"
+          "id": "b038-5ba0-15-d",
+          "text": "800 mm"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "b038-5ba0-15-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The 0.90 m dimension does accommodate a 54.8 cm hip breadth (it exceeds it), but the resulting ~35 cm of combined lateral clearance makes the 1.20 sqm minimum a tight code floor, not a comfortable design standard.",
-        "explanation": "Filipino male 95th% hip breadth = 54.8 cm. The 0.90 m (90 cm) bathroom least dimension exceeds 54.8 cm, so the space is physically passable — Option C is wrong. However, 90 − 54.8 = 35.2 cm of combined lateral space (about 17.6 cm per side) is extremely tight for movement and use. The 1.20 sqm minimum is a code floor — it is the absolute minimum PD 1096 will allow, not a comfortable or accessible standard. BP 344 requires 1,500 × 1,500 mm turning radius for wheelchair users, making the 1.20 sqm minimum wholly inadequate for accessible bathrooms. The distinction between 'code minimum' and 'design standard' is central to this module.",
-        "common_misconceptions": [
-          "Assuming that a dimension larger than the body width automatically implies comfortable clearance for use",
-          "Treating the PD 1096 code minimum as equivalent to a good or comfortable design standard"
-        ]
-      },
+      "rationale": "Correct answer: 1.80 m. This is directly supported by PD 1096 2004 Revised IRR, Section 805.",
       "explanation": "This question tests evaluation of the difference between code minimum compliance and adequate anthropometric clearance in residential bathroom design.",
       "code_citation": "PD 1096 Rule VIII, Section 806",
       "bloom_level": "evaluate",
@@ -759,45 +661,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.133414+00:00",
       "content_hash": "sha256:803434120b881dde73716f1ef3d5f5add57e40558bdbeb861556c1dc003143d6"
     },
     {
       "question_id": "46e11d80-576f-4318-8d54-f8c1deb2c76b",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "Filipino femlea mean standing elbow height is 96.3 cm. A Filipino woman stands 153 cm tall (near population mean). What is the ergonomically optimal counter height for this user, and how does it compare to the US standard?",
+      "text": "What front setback does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "Optimal counter: 91 cm — the US 36-inch standard accounts for all population differences through its standardized clearance formula"
+          "id": "b038-5ba0-16-a",
+          "text": "4.50 m"
         },
         {
-          "id": "B",
-          "text": "Optimal counter: 82 cm — the minimum derived from the Filipino female 5th percentile elbow height (89 cm) minus 7 cm; this should be the standard for all Filipino women"
+          "id": "b038-5ba0-16-b",
+          "text": "3.00 m"
         },
         {
-          "id": "C",
-          "text": "Optimal counter: approximately 88–89 cm — elbow height (96 cm) minus 7–8 cm working clearance; 3–5 cm lower than the US 91.4 cm standard"
+          "id": "b038-5ba0-16-c",
+          "text": "6.00 m"
         },
         {
-          "id": "D",
-          "text": "Optimal counter: 96 cm — the counter should match elbow height exactly to eliminate any working clearance drop"
+          "id": "b038-5ba0-16-d",
+          "text": "8.00 m at all levels"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "b038-5ba0-16-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "Ergonomic counter height = elbow height − 7–10 cm. For this user: 96 − 8 = 88 cm. The US 91.4 cm standard is ~3 cm too high, causing slight shoulder elevation and strain over sustained use.",
-        "explanation": "The ergonomic formula: optimal counter height = standing elbow height − 7–10 cm working clearance. Filipino female at 153 cm stature, mean elbow height ≈ 96 cm → counter: 96 − 7 = 89 cm or 96 − 8 = 88 cm. The US standard of 91.4 cm was derived from US female mean elbow height (~99.8 cm) → 91–92 cm. The gap between US and Filipino female mean elbow heights is ~3.5 cm, producing a counter ~2–5 cm above the Filipino optimum. Option C applies the 5th percentile as if it should serve all Filipino women — the 5th percentile lower bound (82 cm) would be too low for average users. Option D eliminates the working clearance entirely, placing the surface at elbow height.",
-        "common_misconceptions": [
-          "Applying the US 36-inch standard universally and dismissing the anthropometric difference as negligible",
-          "Using the 5th percentile elbow height as the target for average users rather than the mean"
-        ]
-      },
+      "rationale": "Correct answer: 4.50 m. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": "This question tests application of the ergonomic counter height formula using Filipino femlea anthropometric data.",
       "code_citation": null,
       "bloom_level": "apply",
@@ -810,45 +705,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.136230+00:00",
       "content_hash": "sha256:2dd02bd95fe956816c1bd5d93aaba7fe6896c68ca37a8c850bd04857f38169de"
     },
     {
       "question_id": "1fdc8b05-5cd7-4339-884b-cca23e0a8a5d",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A minimum 6 sqm bedroom in a Philippine rowhouse measures 2 m × 3 m and has a natural-ventilation ceiling height of 2.70 m. The developer argues this satisfies all PD 1096 requirements. Which analysis is correct?",
+      "text": "What side and rear setbacks does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "The room is non-compliant — PD 1096 requires bedrooms to be at least 8 sqm regardless of ventilation type, which is a common misinterpretation of the code"
+          "id": "b038-5ba0-17-a",
+          "text": "2.00 m side and 2.00 m rear"
         },
         {
-          "id": "B",
-          "text": "The room is compliant on area but non-compliant on ceiling height — naturally ventilated rooms require 3.0 m under PD 1096, which is often overlooked in design"
+          "id": "b038-5ba0-17-b",
+          "text": "3.00 m side and 3.00 m rear"
         },
         {
-          "id": "C",
-          "text": "The room is non-compliant — the 2 m least dimension is below PD 1096's minimum of 2.13 m (7 ft) for habitable rooms, which is a critical requirement for spatial adequacy"
+          "id": "b038-5ba0-17-c",
+          "text": "Optional side and rear setbacks"
         },
         {
-          "id": "D",
-          "text": "The room is compliant — 6.0 sqm area, 2.0 m minimum least dimension, and 2.70 m ceiling for natural ventilation all meet PD 1096 Sec. 805 and 806"
+          "id": "b038-5ba0-17-d",
+          "text": "No side or rear setback"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "b038-5ba0-17-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "The room meets all PD 1096 requirements: 6.0 sqm area (Sec. 806), 2.0 m least dimension (Sec. 806), and 2.70 m ceiling for natural ventilation (Sec. 805).",
-        "explanation": "PD 1096 checklist for this room: Area = 2 × 3 = 6.0 sqm ≥ 6.0 sqm minimum (compliant). Least dimension = 2.0 m ≥ 2.0 m minimum (compliant). Ceiling height = 2.70 m — naturally ventilated rooms require ≥ 2.70 m (exactly compliant). All three requirements are met simultaneously. Option A fabricates an 8 sqm minimum. Option C incorrectly applies the US IRC 2.13 m (7 ft) dimension — PD 1096 requires 2.00 m. Option D fabricates a 3.0 m ceiling height requirement for natural ventilation — PD 1096 requires 2.70 m, which is exactly what is provided.",
-        "common_misconceptions": [
-          "Applying the US IRC 7-foot minimum horizontal dimension (2.13 m) to Philippine habitable room requirements (2.00 m)",
-          "Citing a 3.0 m minimum ceiling height for naturally ventilated rooms — PD 1096 requires 2.70 m, not 3.0 m"
-        ]
-      },
+      "rationale": "Correct answer: 2.00 m side and 2.00 m rear. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": "This question tests multi-standard analysis of a minimum-compliant Philippine bedroom against all applicable PD 1096 provisions.",
       "code_citation": "PD 1096 Rule VIII, Sections 805 and 806",
       "bloom_level": "analyze",
@@ -861,45 +749,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.134910+00:00",
       "content_hash": "sha256:9ad1bfffc54c088c2101145b9dbdb9f279abb629a893d5b2ed757d1b8f3ae791"
     },
     {
       "question_id": "28156c37-da00-428d-8f90-10a98b440222",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096, Section 806 of the Revised IRR specifies minimum dimensions for habitable rooms. Which set of values is correct for bedrooms in a Philippine residence?",
+      "text": "What abutment rule applies to R-1 lots under Rule VIII?",
       "options": [
         {
-          "id": "A",
-          "text": "Minimum area 6.0 sqm; minimum least dimension 2.0 m; no distinction between single and master bedrooms"
+          "id": "b038-5ba0-18-a",
+          "text": "No abutments are allowed at any property line"
         },
         {
-          "id": "B",
-          "text": "Minimum area 6.0 sqm for single bedrooms; minimum area 12.0 sqm for master bedrooms; least dimension 2.0 m"
+          "id": "b038-5ba0-18-b",
+          "text": "Abutment is allowed on two sides"
         },
         {
-          "id": "C",
-          "text": "Minimum area 7.0 sqm (70 sq ft); minimum horizontal dimension 2.13 m (7 ft), per the IRC standard adopted by PD 1096"
+          "id": "b038-5ba0-18-c",
+          "text": "Abutment is allowed on the front property line"
         },
         {
-          "id": "D",
-          "text": "Minimum area 5.5 sqm for secondary bedrooms; minimum area 9.0 sqm for master bedrooms; least dimension 1.80 m"
+          "id": "b038-5ba0-18-d",
+          "text": "Abutment is required at the rear line"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "b038-5ba0-18-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Sec. 806 requires 6.0 sqm minimum area and 2.0 m minimum least dimension for ALL habitable rooms — no distinction exists between bedroom types.",
-        "explanation": "PD 1096 Rule VIII, Section 806, Revised IRR: 'Rooms for Human Habitations — 6.00 square meters with a least dimension of 2.00 meters.' This applies equally to single bedrooms, master bedrooms, and any other habitable sleeping or living room. There is NO 12 sqm master bedroom minimum anywhere in PD 1096 — that figure is a real estate convention, not a code requirement. Option C applies the US IRC standard (70 sq ft / 7 ft dimension), which is not PD 1096. Options B and D both cite non-existent PD 1096 provisions.",
-        "common_misconceptions": [
-          "Citing a 12 sqm master bedroom minimum — this does not exist in PD 1096",
-          "Applying IRC bedroom standards to Philippine code questions"
-        ]
-      },
+      "rationale": "Correct answer: No abutments are allowed at any property line. This is directly supported by PD 1096 2004 Revised IRR, Section 804.",
       "explanation": "This question tests recall of the correct PD 1096 habitable room minimum dimensions.",
       "code_citation": "PD 1096 Rule VIII, Section 806",
       "bloom_level": "remember",
@@ -912,45 +793,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.147664+00:00",
       "content_hash": "sha256:8b93b300bdf8c4a380168dc8ef225b38e5c0f0994ce7e0284d6e808acfef49ec"
     },
     {
       "question_id": "04d1ffff-19d1-4201-9e58-fb0af21c0817",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "A homeowner in Quezon City replaces deteriorated roofing sheets, repaints the exterior, and replaces a rotted load-bearing column — all without a building permit. Which of these activities legally requires a permit under PD 1096 Revised IRR, Rule III, Section 301?",
+      "text": "For basic R-2, what maximum PSO values appear in Table VIII.1 depending on the table condition?",
       "options": [
         {
-          "id": "A",
-          "text": "All three require permits — any modification to a residential building triggers the permit requirement"
+          "id": "b038-5ba0-19-a",
+          "text": "55 or 60 percent"
         },
         {
-          "id": "B",
-          "text": "Only the repainting requires a permit — exterior work visible from the street requires architectural review and compliance with aesthetic guidelines"
+          "id": "b038-5ba0-19-b",
+          "text": "70 or 80 percent"
         },
         {
-          "id": "C",
-          "text": "The roofing and column replacement require permits; repainting is exempt as cosmetic work unless it involves significant color change"
+          "id": "b038-5ba0-19-c",
+          "text": "75 or 85 percent"
         },
         {
-          "id": "D",
-          "text": "Only the load-bearing column replacement requires a permit — it involves a structural member, which is excluded from permit exemptions"
+          "id": "b038-5ba0-19-d",
+          "text": "80 or 90 percent"
         }
       ],
-      "correct_option_id": "D",
+      "correct_option_id": "b038-5ba0-19-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Revised IRR, Rule III, Sec. 301(3) exempts non-structural repairs including roofing sheet replacement and repainting. Structural member replacement always requires a permit.",
-        "explanation": "PD 1096, 2004 Revised IRR, Rule III, Section 301(3)(b): exempt repairs include replacement of roofing sheets/tiles/gutters/fascias, repair/replacement of non-load-bearing partitions, replacement of doors and windows, flooring repair, and repainting. The exemption explicitly covers work 'not affecting or involving any structural member.' A load-bearing column replacement IS a structural member — the exemption does not apply. The permit requirement is mandatory regardless of whether the column is replaced with the same size and material.",
-        "common_misconceptions": [
-          "Thinking roofing replacement always requires a permit — non-structural roofing work is explicitly exempt",
-          "Assuming all repairs to a building without a permit violate PD 1096 — non-structural repairs are legally exempt"
-        ]
-      },
+      "rationale": "Correct answer: 55 or 60 percent. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.1.",
       "explanation": "This question tests application of PD 1096 permit exemption rules to specific repair scenarios.",
       "code_citation": "PD 1096 Revised IRR, Rule III, Sec. 301(3)",
       "bloom_level": "apply",
@@ -963,45 +837,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.140075+00:00",
       "content_hash": "sha256:192b0e848d442a2d689e734cc6cbf71abcc549b336025cd9ac34e1c934bc614f"
     },
     {
       "question_id": "4632abed-016f-4e2b-99fd-5c958559b3e5",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096 Section 806 specifies a minimum area and least dimension for kitchens. A kitchen measuring 1.50 m × 1.80 m is flagged by a building official. Which statement correctly explains the violation?",
+      "text": "What is the minimum clear ceiling height above and below mezzanine floors under Section 805?",
       "options": [
         {
-          "id": "A",
-          "text": "The kitchen complies — its least dimension of 1.50 m meets the PD 1096 minimum; only the dimension, not area, is regulated"
+          "id": "b038-5ba0-20-a",
+          "text": "1.80 m"
         },
         {
-          "id": "B",
-          "text": "The kitchen fails — PD 1096 requires a minimum kitchen area of 3.6 sqm and the kitchen measures only 2.70 sqm"
+          "id": "b038-5ba0-20-b",
+          "text": "2.70 m"
         },
         {
-          "id": "C",
-          "text": "The kitchen fails — PD 1096 requires a minimum kitchen area of 3.0 sqm; 1.50 m × 1.80 m = 2.70 sqm falls short"
+          "id": "b038-5ba0-20-c",
+          "text": "2.40 m"
         },
         {
-          "id": "D",
-          "text": "The kitchen fails — the NKBA work triangle cannot be achieved in a 1.50 m × 1.80 m space and PD 1096 mandates NKBA compliance"
+          "id": "b038-5ba0-20-d",
+          "text": "800 mm"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "b038-5ba0-20-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Sec. 806 requires kitchens to be at least 3.0 sqm with a least dimension of 1.50 m. The 1.50 m × 1.80 m kitchen = 2.70 sqm — 0.30 sqm below the minimum.",
-        "explanation": "PD 1096 Section 806, Item 2: 'Kitchens — 3.0 square meters with a least dimension of 1.50 meters.' Both area AND dimension must be satisfied simultaneously. This kitchen has the correct dimension (1.50 m) but insufficient area (2.70 sqm < 3.0 sqm). Option A incorrectly states only the dimension matters. Option B cites 3.6 sqm — this is a common error; the correct minimum is 3.0 sqm, not 3.6 sqm. Option D fabricates a PD 1096–NKBA link that does not exist; PD 1096 has no kitchen work triangle provision.",
-        "common_misconceptions": [
-          "Citing 3.6 sqm as the PD 1096 kitchen minimum — the correct minimum is 3.0 sqm",
-          "Assuming only the least dimension requirement needs to be met while ignoring the area minimum"
-        ]
-      },
+      "rationale": "Correct answer: 1.80 m. This is directly supported by PD 1096 2004 Revised IRR, Section 805.",
       "explanation": "This question tests application of PD 1096 kitchen minimum requirements to a specific non-compliant scenario.",
       "code_citation": "PD 1096 Rule VIII, Section 806",
       "bloom_level": "apply",
@@ -1014,45 +881,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.141334+00:00",
       "content_hash": "sha256:948b8459a69792092d974ccf3fd39112f60d57a9c8d68512f2ed2a8afbee6cbf"
     },
     {
       "question_id": "d8882a53-f794-4177-9abb-032e9e5800d6",
       "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
       "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
-      "text": "PD 1096 Section 805 specifies ceiling height requirements based on ventilation type. What is the minimum ceiling height for a naturally ventilated single-storey residence in the Philippines?",
+      "text": "What front setback does Table VIII.2 list for R-1 residential buildings?",
       "options": [
         {
-          "id": "A",
-          "text": "2.40 m — the universal minimum regardless of ventilation type under PD 1096"
+          "id": "b038-5ba0-21-a",
+          "text": "4.50 m"
         },
         {
-          "id": "B",
-          "text": "2.29 m (7 ft 6 in) — the US IRC residential ceiling height standard applicable in the Philippines"
+          "id": "b038-5ba0-21-b",
+          "text": "3.00 m"
         },
         {
-          "id": "C",
-          "text": "2.70 m — the minimum for naturally ventilated habitable rooms per PD 1096 Section 805"
+          "id": "b038-5ba0-21-c",
+          "text": "6.00 m"
         },
         {
-          "id": "D",
-          "text": "1.80 m — the mezzanine clear height standard applied to all low-cost residential construction"
+          "id": "b038-5ba0-21-d",
+          "text": "8.00 m at all levels"
         }
       ],
-      "correct_option_id": "C",
+      "correct_option_id": "b038-5ba0-21-a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "summary": "PD 1096 Section 805 sets 2.70 m as the minimum ceiling height for naturally ventilated habitable rooms. The lower 2.40 m applies only to artificially ventilated rooms.",
-        "explanation": "PD 1096 Section 805 Revised IRR ceiling height matrix: artificially ventilated habitable rooms = 2.40 m minimum; naturally ventilated habitable rooms = 2.70 m minimum; mezzanine = 1.80 m clear (above and below). A common exam trap is applying the 2.40 m figure universally — it only applies when mechanical ventilation is present. Without air conditioning or mechanical ventilation, the higher 2.70 m standard governs to facilitate natural airflow. Option B applies the US IRC standard. Option D incorrectly applies the mezzanine height to standard habitable rooms.",
-        "common_misconceptions": [
-          "Applying the 2.40 m artificially-ventilated minimum to naturally ventilated rooms — 2.70 m governs without AC",
-          "Using the US IRC 2.29 m ceiling minimum in Philippine code answers"
-        ]
-      },
+      "rationale": "Correct answer: 4.50 m. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.2.",
       "explanation": "This question tests recall of PD 1096 ceiling height requirements differentiated by ventilation type.",
       "code_citation": "PD 1096 Rule VIII, Section 805",
       "bloom_level": "remember",
@@ -1065,7 +925,7 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:49.05802+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:28.148810+00:00",
       "content_hash": "sha256:0c99ebf08b66a4f523d2698a65191f2fc5fa4112888d14a422e0e8d20c6de6b1"
     }
   ]

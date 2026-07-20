@@ -8,23 +8,23 @@
       "question_id": "5956c799-0747-450a-a396-4764d5eb2c93",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "What organization was created in the Philippines to oversee MRA implementation?",
+      "text": "What is the safest Philippine-practice conclusion when a foreign architect has ASEAN or APEC registry status?",
       "options": [
         {
           "id": "a",
-          "text": "ASEAN Professional Services Board, which coordinates professional standards across member states"
+          "text": "Registry status automatically creates Philippine practice authority"
         },
         {
           "id": "b",
-          "text": "ASEAN Monitoring Committee on Architectural Services (AMCASP)"
+          "text": "Registry status does not by itself replace the RA 9266 temporary or special permit and Filipino counterpart checks"
         },
         {
           "id": "c",
-          "text": "Philippine Architects Council, responsible for local architectural advocacy and policy development"
+          "text": "Registry status makes the architect the Philippine AOR"
         },
         {
           "id": "d",
-          "text": "Board of Architecture International Division, tasked with managing international architectural collaborations and exchanges"
+          "text": "Registry status removes all local law requirements"
         }
       ],
       "correct_option_id": "b",
@@ -32,13 +32,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Misnames the organization—the correct body is AMCASP, not a general Professional Services Board.",
-        "c": "Confuses national coordination with MRA-specific oversight—the Philippine Architects Council is not the MRA implementation body.",
-        "d": "Attributes MRA oversight to a BOA division—AMCASP is the specific body, not a BOA internal division.",
-        "correct": "The ASEAN Monitoring Committee on Architectural Services (AMCASP) was created in the Philippines to serve the Monitoring Committee functions under the MRA.",
-        "takeaway": "The AMCASP oversees MRA implementation in the Philippines—it reviews ASEAN Architect conduct and reports to the international AAC."
-      },
+      "rationale": "The local sources treat registry status as application information while RA 9266 and PRBoA permit requirements still control practice authority.",
       "explanation": "Misnames the organization—the correct body is AMCASP, not a general Professional Services Board. Confuses national coordination with MRA-specific oversight—the Philippine Architects Council is not the MRA implementation body. Attributes MRA oversight to a BOA division—AMCASP is the specific body, not a BOA internal division. The ASEAN Monitoring Committee on Architectural Services (AMCASP) was created in the Philippines to serve the Monitoring Committee functions under the MRA. The AMCASP oversees MRA implementation in the Philippines—it reviews ASEAN Architect conduct and reports to the international AAC.",
       "code_citation": "2007 ASEAN MRA on Architectural Services, Appendix B (ASEAN Architects Guidelines)",
       "bloom_level": "understand",
@@ -51,30 +45,30 @@
       "model_id": "ALE-PRAC-FRM-006-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:22:18.284633+00:00",
+      "updated_at": "2026-07-20T01:13:23.691508+00:00",
       "content_hash": "sha256:ad2b4e178c7f402a119defe9729f80277d698c6bee6de7d18d2100f47f43cf2c"
     },
     {
       "question_id": "afc98bdc-30b4-497b-85a4-9931e7c34ed6",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "What is an ASEAN Architect (AA)?",
+      "text": "What does the PRBoA temporary-permit application ask about ASEAN or APEC status?",
       "options": [
         {
           "id": "a",
-          "text": "Any architect from ASEAN countries, regardless of certification status"
+          "text": "Whether the applicant wants to skip the permit process"
         },
         {
           "id": "b",
-          "text": "An architect certified by their country's PRA who meets MRA requirements"
+          "text": "Whether the applicant has ASEAN or APEC registry status"
         },
         {
           "id": "c",
-          "text": "An architect employed by ASEAN organizations, typically involved in regional projects"
+          "text": "Whether the applicant wants to replace the Filipino counterpart"
         },
         {
           "id": "d",
-          "text": "An architect who graduated from ASEAN schools, having completed relevant coursework"
+          "text": "Whether the applicant is exempt from Philippine law"
         }
       ],
       "correct_option_id": "b",
@@ -82,13 +76,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Falsely assumes all ASEAN architects qualify—only those meeting specific MRA requirements and registered in the AAR are ASEAN Architects.",
-        "c": "Confuses employment with credentials—institutional affiliation is irrelevant; professional certification matters.",
-        "d": "Mistakes education for status—graduation from ASEAN schools does not confer ASEAN Architect status; PRA certification and AAR registration do.",
-        "correct": "An ASEAN Architect is an architect certified by their country's Professional Regulatory Authority and registered in the ASEAN Architect Register meeting all MRA requirements.",
-        "takeaway": "ASEAN Architect status requires PRA certification from home country AND registration in the ASEAN Architect Register—not all ASEAN architects qualify."
-      },
+      "rationale": "The source-backed point is that the form asks about registry status as information in the permit file.",
       "explanation": "Falsely assumes all ASEAN architects qualify—only those meeting specific MRA requirements and registered in the AAR are ASEAN Architects. Confuses employment with credentials—institutional affiliation is irrelevant; professional certification matters. Mistakes education for status—graduation from ASEAN schools does not confer ASEAN Architect status; PRA certification and AAR registration do. An ASEAN Architect is an architect certified by their country's Professional Regulatory Authority and registered in the ASEAN Architect Register meeting all MRA requirements. ASEAN Architect status requires PRA certification from home country AND registration in the ASEAN Architect Register—not all ASEAN architects qualify.",
       "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
       "bloom_level": "remember",
@@ -101,30 +89,30 @@
       "model_id": "ALE-PRAC-FRM-006-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:22:18.439665+00:00",
+      "updated_at": "2026-07-20T01:13:23.693013+00:00",
       "content_hash": "sha256:2468873385c9449b026af436b333b7285746b78a74d6d8fb2995187165682e38"
     },
     {
       "question_id": "64ce72c7-62d6-4969-b8ab-16409dd34ea7",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "What is the primary purpose of the ASEAN Mutual Recognition Arrangement?",
+      "text": "If the ASEAN or APEC registry answer is no, what does the checked PRBoA form indicate?",
       "options": [
         {
           "id": "a",
-          "text": "To eliminate all national licensing requirements, thereby creating a unified regulatory framework across ASEAN member states"
+          "text": "The application is automatically void"
         },
         {
           "id": "b",
-          "text": "To facilitate mobility of architectural professionals within ASEAN"
+          "text": "The application may still proceed through the permit process"
         },
         {
           "id": "c",
-          "text": "To create a single ASEAN professional license, which would replace all existing national licenses"
+          "text": "The architect becomes Philippine registered"
         },
         {
           "id": "d",
-          "text": "To replace national professional regulations, ensuring uniformity in professional standards"
+          "text": "The Filipino counterpart is no longer needed"
         }
       ],
       "correct_option_id": "b",
@@ -132,13 +120,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Overstates MRA scope—national licensing remains; the MRA only recognizes equivalency.",
-        "c": "Misrepresents structure—the MRA does not create a unified license; individual countries maintain their own licensing.",
-        "d": "Falsely suggests replacement—the MRA complements national regulations rather than replacing them.",
-        "correct": "The MRA facilitates the mobility of architectural professionals within ASEAN and promotes adoption of best practices in standards and qualifications.",
-        "takeaway": "The ASEAN MRA enables architects to move between member countries while preserving national licensing—it harmonizes standards without eliminating them."
-      },
+      "rationale": "The form note permits proceeding even with a no answer, so registry status is not the entire gate.",
       "explanation": null,
       "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
       "bloom_level": "understand",
@@ -151,30 +133,30 @@
       "model_id": "ALE-PRAC-FRM-006-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.690678+00:00",
       "content_hash": "sha256:9ed1f999d043555dd876039aff23e785b6c4ebbf7876d28d8870ecd79c6ef117"
     },
     {
       "question_id": "074782b5-9b01-4bd7-82c4-112cd5fe3f5b",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "Does ASEAN Architect status eliminate the requirement for Filipino counterparts in joint ventures?",
+      "text": "Which Philippine rule remains central when a foreign architect will perform architectural consulting on Philippine soil?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, ASEAN Architects can practice independently in any member state without requiring local partnership or supervision"
+          "text": "A regional credential alone"
         },
         {
           "id": "b",
-          "text": "No, ASEAN Architects still must comply with local supervision requirements"
+          "text": "RA 9266 Section 38 temporary or special permit before duties are assumed"
         },
         {
           "id": "c",
-          "text": "Only for architectural design work that does not involve construction supervision or contract administration phases"
+          "text": "A client approval letter alone"
         },
         {
           "id": "d",
-          "text": "Only for consulting services such as feasibility studies, programming, and preliminary design recommendations"
+          "text": "A foreign design award alone"
         }
       ],
       "correct_option_id": "b",
@@ -182,13 +164,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrectly assumes MRA enables independence—ASEAN status does not override local supervision requirements.",
-        "c": "Creates false scope distinction—counterpart requirements apply to all architectural work, not just certain types.",
-        "d": "Creates false scope distinction—counterpart requirements apply to all services, not just consulting.",
-        "correct": "ASEAN Architect status does not exempt practitioners from local practice requirements including Filipino counterpart participation governed by Philippine procurement laws.",
-        "takeaway": "ASEAN Architect status provides recognition but not exemption—Filipino counterpart requirements remain for all foreign architects, including ASEAN members."
-      },
+      "rationale": "RA 9266 Section 38 is the local practice gate for foreign nationals performing architectural services as architects or consultants.",
       "explanation": null,
       "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
       "bloom_level": "analyze",
@@ -201,44 +177,38 @@
       "model_id": "ALE-PRAC-FRM-006-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.696361+00:00",
       "content_hash": "sha256:d927acc7a108b7855f31eb5a7ebf8eaa38113be0fe920c68d439ea50d24ad094"
     },
     {
       "question_id": "c3459509-ec68-4d54-9e8e-4bb8cf5a36c1",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "What professional conduct records disqualify an architect from ASEAN Architect registration?",
+      "text": "What architect-of-record rule should be applied to a foreign architect with a temporary or special permit?",
       "options": [
         {
           "id": "a",
-          "text": "Only criminal convictions, which are considered severe breaches of conduct"
+          "text": "The foreign architect automatically becomes AOR"
         },
         {
           "id": "b",
-          "text": "Any disciplinary record from professional practice, including minor infractions that may not directly relate to architectural work"
+          "text": "The foreign architect may consult within permit limits, but the Filipino counterpart remains architect of record"
         },
         {
           "id": "c",
-          "text": "Serious violations of technical, professional, or ethical standards"
+          "text": "The project owner becomes AOR"
         },
         {
           "id": "d",
-          "text": "All complaints filed against the architect, regardless of their validity or outcome"
+          "text": "No AOR is needed when a regional credential exists"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Limits disqualification too narrowly—professional violations (not just criminal) matter for architectural practice standards.",
-        "b": "Overreaches disqualification—any disciplinary record is too strict; serious violations specifically determine eligibility.",
-        "d": "Falsely equates complaints with violations—complaints alone do not disqualify; findings of serious violations do.",
-        "correct": "Architects must have no record of serious violations of technical, professional, or ethical standards in local and international practice to qualify for ASEAN Architect registration.",
-        "takeaway": "ASEAN Architect qualification requires clean record of serious violations—minor infractions or mere complaints do not automatically disqualify."
-      },
+      "rationale": "The PRBoA temporary-permit source keeps AOR authority with the Filipino counterpart.",
       "explanation": null,
       "code_citation": "2007 ASEAN MRA on Architectural Services; RA 9266",
       "bloom_level": "apply",
@@ -251,44 +221,38 @@
       "model_id": "ALE-PRAC-FRM-006-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.695419+00:00",
       "content_hash": "sha256:d3f8bbe3874e429601e9a7e9cacc9bdcc9a69edacc2bc79f6aa391553f86e83f"
     },
     {
       "question_id": "3218bb25-c953-42ee-9133-c8ff49db4a05",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "When was the ASEAN Mutual Recognition Arrangement on Architectural Services signed?",
+      "text": "What is the main exam trap in ASEAN MRA practice questions?",
       "options": [
         {
           "id": "a",
-          "text": "2000"
+          "text": "Checking the foreign architect's role"
         },
         {
           "id": "b",
-          "text": "2004"
+          "text": "Confusing recognition of qualifications with permission to bypass Philippine practice gates"
         },
         {
           "id": "c",
-          "text": "2007"
+          "text": "Checking whether a Filipino counterpart exists"
         },
         {
           "id": "d",
-          "text": "2012"
+          "text": "Checking permit timing"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Underestimates the MRA timeline—the arrangement was signed seven years after 2000.",
-        "b": "Misestimates the date—the MRA was signed three years after 2004.",
-        "d": "Overestimates the date—the MRA was established five years before 2012.",
-        "correct": "The ASEAN MRA on Architectural Services was signed by ASEAN Economic Ministers on 20 November 2007.",
-        "takeaway": "The ASEAN Mutual Recognition Arrangement was adopted in 2007 to facilitate architect mobility across Southeast Asia."
-      },
+      "rationale": "Recognition language does not cancel the RA 9266 and PRBoA practice pathway for Philippine projects.",
       "explanation": "Underestimates the MRA timeline—the arrangement was signed seven years after 2000. Misestimates the date—the MRA was signed three years after 2004. Overestimates the date—the MRA was established five years before 2012. The ASEAN MRA on Architectural Services was signed by ASEAN Economic Ministers on 20 November 2007. The ASEAN Mutual Recognition Arrangement was adopted in 2007 to facilitate architect mobility across Southeast Asia.",
       "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
       "bloom_level": "remember",
@@ -301,30 +265,30 @@
       "model_id": "ALE-PRAC-FRM-006-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:22:17.993331+00:00",
+      "updated_at": "2026-07-20T01:13:23.689523+00:00",
       "content_hash": "sha256:b802df79ed9391b1a87df4267b9f65f845ae00585857ebe8f07fcfdc76d60d63"
     },
     {
       "question_id": "151b2f8a-f828-4e00-a062-59902510e01a",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "What is required for continuing ASEAN Architect competence?",
+      "text": "Which answer is source-safe for an ASEAN architect invited to a Manila project?",
       "options": [
         {
           "id": "a",
-          "text": "Annual renewal fees only, without any additional professional development requirements"
+          "text": "The architect may sign and seal because ASEAN status exists"
         },
         {
           "id": "b",
-          "text": "Continuing professional development activities"
+          "text": "The architect must still satisfy the Philippine temporary-permit and counterpart framework before practice duties"
         },
         {
           "id": "c",
-          "text": "Passage of periodic examinations, which are conducted every five years to ensure up-to-date knowledge"
+          "text": "The architect may ignore PRBoA permit procedure"
         },
         {
           "id": "d",
-          "text": "No requirements after initial registration, as the initial certification is considered sufficient for lifetime practice"
+          "text": "The architect may practice without any Filipino counterpart"
         }
       ],
       "correct_option_id": "b",
@@ -332,13 +296,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Underestimates requirements—competence maintenance requires development activities, not only fees.",
-        "c": "Mistaken assessment approach—periodic exams are not the competence demonstration mechanism; development is.",
-        "d": "Falsely suggests permanence—registration requires continuous competence maintenance, not a one-time qualification.",
-        "correct": "ASEAN Architects must demonstrate continuing professional competence through ongoing development activities as part of MRA qualification maintenance.",
-        "takeaway": "ASEAN Architects must maintain competence through continuing professional development—ongoing education, not just fees or exams."
-      },
+      "rationale": "The Philippine project remains governed by the local foreign-architect gate.",
       "explanation": null,
       "code_citation": "2007 ASEAN MRA on Architectural Services, Appendix B (ASEAN Architects Guidelines)",
       "bloom_level": "apply",
@@ -351,30 +309,30 @@
       "model_id": "ALE-PRAC-FRM-006-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.693872+00:00",
       "content_hash": "sha256:2a452675768f662bcdcbde9791cc40fdc60ef3f5d09c389f71cbd088cadfdd11"
     },
     {
       "question_id": "16f14263-b5c6-4fe2-9540-40b9a28b2d11",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "How do national licensing requirements relate to ASEAN Architect registration?",
+      "text": "What evidence can the Board evaluate when no bilateral agreement is shown?",
       "options": [
         {
           "id": "a",
-          "text": "The MRA eliminates all national licensing, allowing architects to practice freely across ASEAN without any additional requirements"
+          "text": "Only a project brochure"
         },
         {
           "id": "b",
-          "text": "The MRA recognizes mutual equivalency without eliminating national requirements"
+          "text": "Documentary proof that Filipino architects may practice without limitation in the foreign jurisdiction"
         },
         {
           "id": "c",
-          "text": "National requirements only apply to non-ASEAN architects, ensuring that ASEAN architects have a streamlined process"
+          "text": "Only a client recommendation"
         },
         {
           "id": "d",
-          "text": "ASEAN Architects are exempt from national licensing procedures, provided they meet the ASEAN criteria and standards"
+          "text": "Only the foreign firm profile"
         }
       ],
       "correct_option_id": "b",
@@ -382,13 +340,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Overstates MRA reach—mutual recognition is not elimination; national procedures remain.",
-        "c": "Creates false carve-out—national requirements apply equally to all foreign architects, ASEAN or not.",
-        "d": "Grants false exemption—ASEAN status facilitates, not exempts, from national procedures.",
-        "correct": "The MRA recognizes mutual equivalency of qualifications but does not eliminate national licensing requirements; ASEAN professionals must still comply with host country procedures.",
-        "takeaway": "The ASEAN MRA harmonizes standards but does not replace national licensing—ASEAN Architects still must comply with host country procedures."
-      },
+      "rationale": "The PRBoA source calls for documentary proof for Board evaluation when a bilateral agreement is absent.",
       "explanation": "Overstates MRA reach—mutual recognition is not elimination; national procedures remain. Creates false carve-out—national requirements apply equally to all foreign architects, ASEAN or not. Grants false exemption—ASEAN status facilitates, not exempts, from national procedures. The MRA recognizes mutual equivalency of qualifications but does not eliminate national licensing requirements; ASEAN professionals must still comply with host country procedures. The ASEAN MRA harmonizes standards but does not replace national licensing—ASEAN Architects still must comply with host country procedures.",
       "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
       "bloom_level": "analyze",
@@ -401,30 +353,30 @@
       "model_id": "ALE-PRAC-FRM-006-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-05-06T13:22:18.138456+00:00",
+      "updated_at": "2026-07-20T01:13:23.692270+00:00",
       "content_hash": "sha256:ebe6330bfdc91d12d468ce8b5a5d725fa85d8a208ca3ca79753b16f30eefb24d"
     },
     {
       "question_id": "2449b969-ed4b-483c-925f-604484afcfb4",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "How does ASEAN Architect status in the Philippines differ from standard foreign temporary permits?",
+      "text": "How should reciprocity be treated in an ASEAN/APEC registry fact pattern?",
       "options": [
         {
           "id": "a",
-          "text": "ASEAN Architects are exempt from local professional regulations, allowing them to practice without the usual restrictions imposed on foreign professionals"
+          "text": "As irrelevant to any foreign architect"
         },
         {
           "id": "b",
-          "text": "ASEAN Architects receive enhanced recognition of equivalent qualifications"
+          "text": "As a separate Philippine law check, not as automatically satisfied by registry language"
         },
         {
           "id": "c",
-          "text": "ASEAN Architects do not need Filipino counterparts, enabling them to work independently without local collaboration"
+          "text": "As automatically satisfied by any regional credential"
         },
         {
           "id": "d",
-          "text": "ASEAN Architects can establish independent practices, unlike those with temporary permits who must work under local supervision"
+          "text": "As a private contract term"
         }
       ],
       "correct_option_id": "b",
@@ -432,13 +384,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Falsely promises exemptions—ASEAN status provides recognition, not regulatory exemption.",
-        "c": "Incorrectly assumes independence—ASEAN Architects may still need Filipino counterparts under procurement laws.",
-        "d": "Reverses foreign practice principles—independence is prohibited; ASEAN status facilitates qualified participation, not independent practice.",
-        "correct": "ASEAN Architect status provides enhanced recognition of equivalent qualifications based on mutual standards across member countries, though local regulations still apply.",
-        "takeaway": "ASEAN Architect status offers expedited recognition of equivalent qualifications compared to standard foreign permits—but local requirements still apply."
-      },
+      "rationale": "RA 9266 and PRBoA sources keep reciprocity and permit authority as local legal checks.",
       "explanation": null,
       "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
       "bloom_level": "apply",
@@ -451,30 +397,30 @@
       "model_id": "ALE-PRAC-FRM-006-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.697084+00:00",
       "content_hash": "sha256:775f7f90e807275c6322431024c7057c4c89e6401b83655f5ecdbae139831fc9"
     },
     {
       "question_id": "51d64838-d0e5-4899-83fc-2db2773cb321",
       "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
       "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
-      "text": "What organization coordinates MRA implementation across ASEAN member countries?",
+      "text": "Which statement should be rejected?",
       "options": [
         {
           "id": "a",
-          "text": "The Professional Regulatory Board of Architecture"
+          "text": "Registry status may appear in the permit application"
         },
         {
           "id": "b",
-          "text": "The ASEAN Architect Council (AAC)"
+          "text": "ASEAN or APEC registry status alone authorizes Philippine architectural practice"
         },
         {
           "id": "c",
-          "text": "The Professional Regulation Commission"
+          "text": "RA 9266 Section 38 still matters"
         },
         {
           "id": "d",
-          "text": "Individual country professional boards"
+          "text": "A Filipino counterpart can remain required"
         }
       ],
       "correct_option_id": "b",
@@ -482,13 +428,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "Attributes regional role to national body—PRBoA implements MRA in the Philippines, but AAC coordinates across all ASEAN members.",
-        "c": "Misattributes authority—PRC is national and does not coordinate ASEAN affairs.",
-        "d": "Attributes coordination to fragmented bodies—individual boards implement but do not coordinate the regional arrangement.",
-        "correct": "The ASEAN Architect Council (AAC) coordinates implementation of the MRA, establishing mutual standards and evaluating professional qualifications across member countries.",
-        "takeaway": "The ASEAN Architect Council is the central coordinating body for the MRA—it develops mutual standards and evaluates qualifications."
-      },
+      "rationale": "The local checked sources do not support automatic Philippine practice authority from registry status alone.",
       "explanation": null,
       "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
       "bloom_level": "understand",
@@ -501,7 +441,7 @@
       "model_id": "ALE-PRAC-FRM-006-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.694653+00:00",
       "content_hash": "sha256:ca8a35ee31c3796042c96abf359d185d218dfd7efce41f35f45365c59e14dc73"
     }
   ]

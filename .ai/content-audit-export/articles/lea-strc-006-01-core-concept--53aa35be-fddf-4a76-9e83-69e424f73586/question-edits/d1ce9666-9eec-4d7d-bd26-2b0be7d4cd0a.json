@@ -22,5 +22,53 @@
       "detailing-concrete",
       "bsi-concrete"
     ]
+  },
+  "action": "no_change",
+  "reason": "Original question verified source-correct; no change required. Prior batch wrote metadata/rationale but omitted the proposed block; this edit emits the original question verbatim so the apply pipeline can confirm 'no change needed'.",
+  "approved_by": "fact-check-council-agent-Y1-empty-structural-2026-07-20",
+  "approved_at": "2026-07-20T00:00:00+08:00",
+  "proposed": {
+    "text": "What is the problem with adding water casually at the site?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It changes the north arrow location."
+      },
+      {
+        "id": "b",
+        "text": "It can undermine the intended water-cement control and durability performance."
+      },
+      {
+        "id": "c",
+        "text": "It improves every durability requirement automatically."
+      },
+      {
+        "id": "d",
+        "text": "It removes the need for reinforcement support."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": {
+      "a": "It changes the north arrow location. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "b": "It can undermine the intended water-cement control and durability performance. This stays inside the Batch 144 local source boundary for Concrete Materials, Cover, and Exposure-Controlled Mix Limits.",
+      "c": "It improves every durability requirement automatically. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "d": "It removes the need for reinforcement support. is not the best answer because it changes the structural concept or adds a claim outside the Batch 144 local source boundary.",
+      "correct": "It can undermine the intended water-cement control and durability performance. Supported by detailing-concrete.",
+      "takeaway": "For Concrete Materials, Cover, and Exposure-Controlled Mix Limits, identify the structural behavior and source boundary before using memorized exact values.",
+      "source_boundary": "detailing-concrete",
+      "checked_sources": [
+        "detailing-concrete",
+        "bsi-concrete"
+      ]
+    },
+    "explanation": "It can undermine the intended water-cement control and durability performance. Supported by the Batch 144 local source boundary: detailing-concrete.",
+    "code_citation": "detailing-concrete",
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.9,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "model_id": "ALE-STRC-006-01-010"
   }
 }

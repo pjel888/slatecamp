@@ -8,23 +8,23 @@
       "question_id": "bb2edbf0-e1c1-4f52-b6f8-2443457aa01d",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "The Pantheon, built between 120–128 CE under Emperor Hadrian, features a hemispherical dome measuring approximately how much in diameter, with what as its sole light source?",
+      "text": "Which feature is the source-safe recognition anchor for the Roman Pantheon?",
       "options": [
         {
           "id": "a",
-          "text": "100 feet in diameter, with a small rectangular window as the light source, which was later modified"
+          "text": "A rectangular basilica nave lit mainly by side aisles"
         },
         {
           "id": "b",
-          "text": "142 feet in diameter, with an oculus (circular opening) approximately 27–28 feet in diameter as the sole light source"
+          "text": "A concrete domed rotunda lit by a central oculus"
         },
         {
           "id": "c",
-          "text": "200 feet in diameter, with clerestory windows around the drum providing light, a design unique to Roman architecture"
+          "text": "An open-air amphitheatre cavea with arena seating"
         },
         {
           "id": "d",
-          "text": "80 feet in diameter, with multiple skylights distributed across the dome, allowing for even light distribution"
+          "text": "A stone aqueduct bridge carrying a water channel"
         }
       ],
       "correct_option_id": "b",
@@ -33,11 +33,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The measurements are too small; 100 feet and a small window do not match the Pantheon's documented proportions.",
-        "c": "The 200-foot diameter is too large; clerestory windows are not the Pantheon's light source.",
-        "d": "The 80-foot diameter and multiple skylights do not match the Pantheon's documented design of a single 142-foot dome with one oculus.",
-        "correct": "Precise measurements: 'The Pantheon features a vast hemispherical dome measuring 142 feet (43.3 m) in diameter... At the apex is the oculus—a circular opening measuring approximately 27–28 feet (8.2–8.5 m) in diameter, the sole light source, and the only opening in the roof.'",
-        "takeaway": "At the apex is the oculus—a circular opening measuring approximately 27–28 feet (8.2–8.5 m) in diameter, the sole light source, and the only opening in the roof.'."
+        "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "The Pantheon is the Roman anchor for a unified domed interior and central oculus.",
+        "takeaway": "Use dome and oculus for Pantheon recognition."
       },
       "explanation": null,
       "code_citation": null,
@@ -53,30 +53,30 @@
       "model_id": "ALE-HIST-001-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.273820+00:00",
       "content_hash": "sha256:388ef2c10c50d07fd41c61f851293e559de53377089f94e1bd7c11b3628cd3ae"
     },
     {
       "question_id": "58573121-09b9-4f8e-b969-3f59e6f02f5f",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "The Colosseum (Flavian Amphitheatre), built 70–80 CE, measures approximately how much and held what capacity for spectators?",
+      "text": "Which description is source-safe for the Roman Colosseum?",
       "options": [
         {
           "id": "a",
-          "text": "400 × 300 feet, capacity 25,000 spectators"
+          "text": "A domed temple interior centered on an oculus"
         },
         {
           "id": "b",
-          "text": "620 × 513 feet, capacity 50,000+ spectators"
+          "text": "An elliptical amphitheatre organized by cavea seating, arched tiers, and public circulation"
         },
         {
           "id": "c",
-          "text": "800 × 600 feet, capacity 100,000 spectators"
+          "text": "A basilican law court converted directly into a Christian church"
         },
         {
           "id": "d",
-          "text": "500 × 400 feet, capacity 75,000 spectators"
+          "text": "A water bridge built only to decorate a road crossing"
         }
       ],
       "correct_option_id": "b",
@@ -85,11 +85,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "These dimensions are significantly smaller than the documented measurements.",
-        "c": "The 800 × 600 dimensions are too large, and 100,000 capacity exceeds the documented figure.",
-        "d": "These are approximations, but the exact documented measurements are 620 × 513 feet.",
-        "correct": "An elliptical structure measuring 620 feet long, 513 feet wide, and 159 feet high. Capacity: 50,000+ spectators.'",
-        "takeaway": "Capacity: 50,000+ spectators.'."
+        "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "The Colosseum is tested as an amphitheatre with seating, circulation, and arched facade organization.",
+        "takeaway": "Colosseum equals amphitheatre logic, not domed temple logic."
       },
       "explanation": null,
       "code_citation": null,
@@ -105,30 +105,30 @@
       "model_id": "ALE-HIST-001-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.276050+00:00",
       "content_hash": "sha256:e381b7c8e15551544d844c5e1fba26d46c24fb96a75b7f322db204532bf21b58"
     },
     {
       "question_id": "9a151564-b9e9-4eb1-9558-2650a3470c41",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "Roman architecture spans approximately which time period?",
+      "text": "For LEA history review, which time frame is the safest broad bracket for major Roman architectural development?",
       "options": [
         {
           "id": "a",
-          "text": "c. 500 BCE – 100 CE (Republican period only), focusing on the development of early Roman architectural forms"
+          "text": "Only the early Republic before Roman expansion"
         },
         {
           "id": "b",
-          "text": "c. 100 BCE – 400 CE (Late Republic through Late Empire)"
+          "text": "Late Republic through Imperial and Late Antique Roman building traditions"
         },
         {
           "id": "c",
-          "text": "c. 200 BCE – 200 CE (Imperial period only), highlighting the peak of Roman architectural innovation"
+          "text": "Only the reign of Augustus"
         },
         {
           "id": "d",
-          "text": "c. 27 BCE – 476 CE (Imperial period only), marking the expansion and eventual decline of Roman architectural influence"
+          "text": "Only the medieval period after the fall of Rome"
         }
       ],
       "correct_option_id": "b",
@@ -137,11 +137,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is too early and omits the Imperial period when most surviving Roman buildings were constructed.",
-        "c": "While this covers part of the period, it does not begin early enough to capture Republican architecture.",
-        "d": "While the Imperial period is correct, this omits the earlier Republican tradition.",
-        "correct": "Roman architecture (c. 100 BCE–400 CE) departed fundamentally from Greek tradition.' This span encompasses both the late Republican period and the Imperial period through the fall of the Western Roman Empire.",
-        "takeaway": "100 BCE–400 CE) departed fundamentally from Greek tradition.' This span encompasses both the late Republican period and the Imperial period through the fall of the Western Roman Empire."
+        "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "The article treats Roman architecture as a broad late Republican, imperial, and late antique tradition.",
+        "takeaway": "Do not reduce Roman architecture to one emperor or one decade."
       },
       "explanation": null,
       "code_citation": null,
@@ -157,30 +157,30 @@
       "model_id": "ALE-HIST-001-06-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.282237+00:00",
       "content_hash": "sha256:cfa00283df57846b685e1ea9496ba5c656248274a52454fa24bce619cb9008aa"
     },
     {
       "question_id": "32efcffa-bdfe-4bd9-871e-70bd8a294c73",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "The Roman arch is structurally more efficient than the post-and-lintel system because:",
+      "text": "Why is the Roman arch structurally important compared with a simple post-and-lintel span?",
       "options": [
         {
           "id": "a",
-          "text": "It allows for greater spans without collapsing, as it creates compression (not tension) in stones, which resist compression far better than tension"
+          "text": "It redirects load through compression into supports, allowing larger openings and repeated arcades"
         },
         {
           "id": "b",
-          "text": "It requires fewer stones and therefore less labor to construct, making it a more economical choice for large structures"
+          "text": "It removes the need for supports entirely"
         },
         {
           "id": "c",
-          "text": "It eliminates the need for any vertical supports beneath its span, allowing for more open and flexible interior spaces"
+          "text": "It works only as a painted decorative motif"
         },
         {
           "id": "d",
-          "text": "It was invented specifically to replace the post-and-lintel system used by earlier civilizations, offering improved structural integrity"
+          "text": "It depends on tensile steel reinforcement"
         }
       ],
       "correct_option_id": "a",
@@ -189,11 +189,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While arches may use stones efficiently, the efficiency comes from structural properties, not labor reduction.",
-        "c": "Arches actually transfer weight to abutments (vertical supports), not eliminate them.",
-        "d": "The arch is a Roman innovation, but the motivation was structural capability, not ideological replacement of earlier systems.",
-        "correct": "The arch is more efficient than the lintel because it creates compression (not tension) in its stones, and stone resists compression far better than tension. This allowed Romans to span distances impossible with lintels.'",
-        "takeaway": "This allowed Romans to span distances impossible with lintels.'."
+        "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "An arch works through compression along voussoirs into side supports.",
+        "takeaway": "Arch logic is compression logic."
       },
       "explanation": "While arches may use stones efficiently, the efficiency comes from structural properties, not labor reduction. Arches actually transfer weight to abutments (vertical supports), not eliminate them. The arch is a Roman innovation, but the motivation was structural capability, not ideological replacement of earlier systems. The arch is more efficient than the lintel because it creates compression (not tension) in its stones, and stone resists compression far better than tension. This allowed Romans to span distances impossible with lintels.' This allowed Romans to span distances impossible with lintels.'.",
       "code_citation": null,
@@ -209,30 +209,30 @@
       "model_id": "ALE-HIST-001-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-05-06T13:17:31.765063+00:00",
+      "updated_at": "2026-07-20T01:13:23.270049+00:00",
       "content_hash": "sha256:89e9a53be1b6e333df6075e9276d7245c5334cbbc76fdb921277230036605fd4"
     },
     {
       "question_id": "174a04ce-134e-4204-9a3b-bd63240a026e",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "How do the purposes and designs of the Pantheon and the Colosseum reflect different Roman architectural priorities?",
+      "text": "How do the Pantheon and Colosseum show different Roman architectural priorities?",
       "options": [
         {
           "id": "a",
-          "text": "Both structures served identical religious purposes and used identical architectural approaches, reflecting a unified Roman architectural style"
+          "text": "Both are identical temple types with the same plan and purpose"
         },
         {
           "id": "b",
-          "text": "The Pantheon, a temple and assembly space, prioritizes interior unified space and celestial symbolism (oculus), while the Colosseum, a public spectacle venue, prioritizes tiered seating, efficient circulation, and visual hierarchy in its facade"
+          "text": "The Pantheon emphasizes unified domed interior space, while the Colosseum emphasizes public spectacle, seating, and circulation"
         },
         {
           "id": "c",
-          "text": "The Colosseum was more important and better engineered than the Pantheon, showcasing superior Roman engineering capabilities"
+          "text": "The Pantheon is a water bridge, while the Colosseum is a basilica"
         },
         {
           "id": "d",
-          "text": "The Pantheon demonstrates concrete superiority, while the Colosseum demonstrates stone superiority, highlighting different material uses"
+          "text": "The Colosseum is defined by an oculus, while the Pantheon is defined by cavea seating"
         }
       ],
       "correct_option_id": "b",
@@ -241,11 +241,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The structures served different purposes: the Pantheon was a temple, the Colosseum was an entertainment venue.",
-        "c": "Both are masterworks; superiority is not a meaningful comparison.",
-        "d": "Both structures used concrete and stone; the material distribution differs based on functional needs.",
-        "correct": "The Pantheon: 'temple and assembly... hemispherical dome... oculus—the sole light source' and the Colosseum: 'elliptical structure... 50,000+ spectators... tiered arcaded openings... seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities.",
-        "takeaway": "seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities."
+        "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "The two buildings test different Roman capabilities: domed interior space and amphitheatre organization.",
+        "takeaway": "Match the Roman building to its function and spatial system."
       },
       "explanation": "The structures served different purposes: the Pantheon was a temple, the Colosseum was an entertainment venue. Both are masterworks; superiority is not a meaningful comparison. Both structures used concrete and stone; the material distribution differs based on functional needs. The Pantheon: 'temple and assembly... hemispherical dome... oculus—the sole light source' and the Colosseum: 'elliptical structure... 50,000+ spectators... tiered arcaded openings... seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities. seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities.",
       "code_citation": null,
@@ -261,14 +261,14 @@
       "model_id": "ALE-HIST-001-06-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-05-06T13:17:32.286169+00:00",
+      "updated_at": "2026-07-20T01:13:23.280080+00:00",
       "content_hash": "sha256:aa86ec3b60ed0b106a98ae82cbf4141330fdf846e881ef78192d59dce65cb232"
     },
     {
       "question_id": "887c93ce-4425-4b14-8fe4-01328a1f3d10",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "The wedge-shaped stones forming the curve of an arch are called:",
+      "text": "What are the wedge-shaped units forming the curve of a masonry arch called?",
       "options": [
         {
           "id": "a",
@@ -276,15 +276,15 @@
         },
         {
           "id": "b",
-          "text": "Intrados"
+          "text": "Triforia"
         },
         {
           "id": "c",
-          "text": "Keystones"
+          "text": "Pendentives"
         },
         {
           "id": "d",
-          "text": "Extrados"
+          "text": "Clerestories"
         }
       ],
       "correct_option_id": "a",
@@ -293,11 +293,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "The intrados is the 'inner curve' of an arch, not the stones forming it.",
-        "c": "The keystone is 'the central, uppermost voussoir,' a specific voussoir, not all voussoirs.",
-        "d": "The extrados is the 'outer curve' of an arch, not the stones themselves.",
-        "correct": "The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.'",
-        "takeaway": "The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.'."
+        "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "Voussoirs are the wedge-shaped stones or units that form an arch.",
+        "takeaway": "Voussoir is arch vocabulary."
       },
       "explanation": "The intrados is the 'inner curve' of an arch, not the stones forming it. The keystone is 'the central, uppermost voussoir,' a specific voussoir, not all voussoirs. The extrados is the 'outer curve' of an arch, not the stones themselves. The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.' The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.'.",
       "code_citation": null,
@@ -313,7 +313,7 @@
       "model_id": "ALE-HIST-001-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-05-06T13:17:32.408986+00:00",
+      "updated_at": "2026-07-20T01:13:23.277073+00:00",
       "content_hash": "sha256:aa1ec76b4ad75ea8c5ab08a196ec0cf28c56daf78e470f98f1edba5699d1d245"
     },
     {
@@ -324,19 +324,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Hypogeum"
+          "text": "Hypogeum — the underground substructure beneath an amphitheater"
         },
         {
           "id": "b",
-          "text": "Cavea"
+          "text": "Cavea — the tiered seating bowl of a Roman theater or amphitheater"
         },
         {
           "id": "c",
-          "text": "Naos"
+          "text": "Naos — the Greek temple inner sanctum, not seating"
         },
         {
           "id": "d",
-          "text": "Apadana"
+          "text": "Apadana — a Persian columned audience hall, not seating"
         }
       ],
       "correct_option_id": "b",
@@ -344,13 +344,7 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": {
-        "a": "The hypogeum is 'the underground substructure beneath an amphitheatre, housing equipment, cages, and mechanical systems.'",
-        "c": "A naos is a Greek temple's inner sanctum, not a seating arrangement.",
-        "d": "An apadana is a Persian columned hall, not a seating arrangement.",
-        "correct": "The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.'",
-        "takeaway": "The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.'."
-      },
+      "rationale": "The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.' [A]: The hypogeum is 'the underground substructure beneath an amphitheatre, housing equipment, cages, and mechanical systems.' [C]: A naos is a Greek temple's inner sanctum, not a seating arrangement. [D]: An apadana is a Persian columned hall, not a seating arrangement.",
       "explanation": "The hypogeum is 'the underground substructure beneath an amphitheatre, housing equipment, cages, and mechanical systems.' A naos is a Greek temple's inner sanctum, not a seating arrangement. An apadana is a Persian columned hall, not a seating arrangement. The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.' The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.'.",
       "code_citation": null,
       "bloom_level": "remember",
@@ -365,30 +359,30 @@
       "model_id": "ALE-HIST-001-06-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-05-06T13:17:31.902508+00:00",
+      "updated_at": "2026-07-20T01:13:23.272549+00:00",
       "content_hash": "sha256:a074e0efbe21eb088a7666bb7ed7bf8ecdaa203fc708db116435daf0765b9d28"
     },
     {
       "question_id": "c6e36770-f3a1-4fde-99d7-49edcd55356d",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "Roman architects designed the Pantheon's dome to decrease in density as it rose toward the apex, using lighter aggregate near the top. What structural advantage did this design accomplish?",
+      "text": "Why does the Pantheon dome become lighter toward the crown in source-safe structural explanations?",
       "options": [
         {
           "id": "a",
-          "text": "Reducing the weight of the dome at the crown to decrease the downward thrust on supporting walls"
+          "text": "To reduce dead load high in the dome and lessen stress on the supporting mass"
         },
         {
           "id": "b",
-          "text": "Creating a visual effect of greater height and spaciousness, which is a secondary benefit but not the primary structural advantage."
+          "text": "To make the oculus unnecessary"
         },
         {
           "id": "c",
-          "text": "Allowing faster construction by using less material in the upper portion, which is not the main reason for the design choice."
+          "text": "To convert the dome into a timber roof"
         },
         {
           "id": "d",
-          "text": "Reducing the cost of construction materials in the upper portion, which is not the primary structural consideration."
+          "text": "To imitate a Greek post-and-lintel ceiling"
         }
       ],
       "correct_option_id": "a",
@@ -397,11 +391,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While visual effects might result, the primary purpose was structural stress distribution.",
-        "c": "While less material was used, the primary advantage was structural, not merely economical.",
-        "d": "Material cost savings were secondary; the primary function was structural efficiency.",
-        "correct": "The Pantheon's engineering: the dome thins as it rises, decreasing from 20 feet thick at the base to 4 feet at the apex. The cylindrical drum had thick walls with internal chambers (relieving niches) to reduce weight. All materials worked together: stone at the base provided compression strength; concrete (lighter toward the top) distributed and transmitted thrust to the drum.'",
-        "takeaway": "All materials worked together: stone at the base provided compression strength; concrete (lighter toward the top) distributed and transmitted thrust to the drum.'."
+        "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "Reducing weight near the crown is a structural strategy for the dome.",
+        "takeaway": "Lighter upper dome means reduced load."
       },
       "explanation": null,
       "code_citation": null,
@@ -417,30 +411,30 @@
       "model_id": "ALE-HIST-001-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.278151+00:00",
       "content_hash": "sha256:44875533c88c9d5f0730f5ced89a5a35d090d5310bc19a57feca754d2b43e92f"
     },
     {
       "question_id": "5db9129a-6198-44b1-8282-2cdf67abbe47",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "The Pont du Gard aqueduct in France, built c. 50 CE entirely of stone without mortar, demonstrates which aspects of Roman engineering?",
+      "text": "What source-safe Roman engineering idea does Pont du Gard best demonstrate?",
       "options": [
         {
           "id": "a",
-          "text": "Purely aesthetic design with no practical function, serving only as a monumental testament to Roman artistry"
+          "text": "A decorative arcade with no infrastructure function"
         },
         {
           "id": "b",
-          "text": "Mastery of the arch at monumental scale, precision stone cutting without mortar, and the engineering discipline required for hydraulic systems spanning vast distances"
+          "text": "Aqueduct engineering using stacked arches to carry water across a valley"
         },
         {
           "id": "c",
-          "text": "Dependence on concrete technology to achieve structural spans, highlighting Roman innovation in material science"
+          "text": "A domed temple lit by an oculus"
         },
         {
           "id": "d",
-          "text": "Primarily decorative use of arches to create a visually impressive monument, with little regard for structural integrity"
+          "text": "A Greek theatre cut into a hillside"
         }
       ],
       "correct_option_id": "b",
@@ -449,11 +443,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The aqueduct served the essential practical function of water delivery across a vast distance.",
-        "c": "The Pont du Gard is built of stone, not concrete, demonstrating that stone arches (not merely concrete) achieved monumental spans.",
-        "d": "While visually impressive, the decoration is secondary to its function as a working hydraulic system.",
-        "correct": "The Pont du Gard (near Nîmes, France, c. 50 CE) is a three-tiered aqueduct spanning 900 feet, carrying water across a river valley. Built entirely of stone without mortar, it demonstrates Roman mastery of the arch at monumental scale and the engineering discipline required for hydraulic systems spanning vast distances.'",
-        "takeaway": "Built entirely of stone without mortar, it demonstrates Roman mastery of the arch at monumental scale and the engineering discipline required for hydraulic systems spanning vast distances.'."
+        "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "Pont du Gard is the source-map anchor for Roman aqueduct infrastructure and arch engineering.",
+        "takeaway": "Pont du Gard equals aqueduct plus arches."
       },
       "explanation": null,
       "code_citation": null,
@@ -469,30 +463,30 @@
       "model_id": "ALE-HIST-001-06-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.279090+00:00",
       "content_hash": "sha256:1b1671716dc83c32b211fdaa38c3b2c5ec844d4f268c2356e2008b4bf5216416"
     },
     {
       "question_id": "42db4fce-7aa2-4135-94e6-298c0dff32f6",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "Why did the Romans construct massive domed and vaulted structures like the Pantheon and basilicas, while Greek architects relied on post-and-lintel systems?",
+      "text": "Why did Romans develop massive vaulted and domed interiors more fully than the Greek temple tradition?",
       "options": [
         {
           "id": "a",
-          "text": "Roman culture was more advanced and intelligent than Greek culture, leading to superior architectural innovations"
+          "text": "Greek builders were incapable of any stone construction"
         },
         {
           "id": "b",
-          "text": "Roman civilization was imperial and practical, requiring large public structures for spectacles, assembly, and civic functions, which drove development of arch-vault technology and concrete"
+          "text": "Roman public, civic, and imperial programs benefited from concrete, arches, vaults, and domes for large interiors"
         },
         {
           "id": "c",
-          "text": "Greeks deliberately chose simpler systems for religious reasons, believing that simplicity was closer to the divine"
+          "text": "Roman buildings had no structural requirements"
         },
         {
           "id": "d",
-          "text": "Roman engineers discovered stone could be used to span greater distances, a technique Greeks never developed, allowing for larger and more open interior spaces"
+          "text": "Greek temples were all built with concrete domes"
         }
       ],
       "correct_option_id": "b",
@@ -501,11 +495,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Cultural advancement is not the determining factor; structural choices reflect different needs and values.",
-        "c": "The article does not suggest religious reasons; Greek city-states had different civic needs that the post-and-lintel system adequately served.",
-        "d": "Greeks and Romans used different materials and systems; Greeks had excellent stone technology applied to their post-and-lintel approach.",
-        "correct": "Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation.",
-        "takeaway": "The article explains: 'Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation."
+        "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "Roman building needs and materials supported large vaulted, domed, and public interiors.",
+        "takeaway": "Roman architecture is a civic infrastructure and large-interior system."
       },
       "explanation": "Cultural advancement is not the determining factor; structural choices reflect different needs and values. The article does not suggest religious reasons; Greek city-states had different civic needs that the post-and-lintel system adequately served. Greeks and Romans used different materials and systems; Greeks had excellent stone technology applied to their post-and-lintel approach. Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation. The article explains: 'Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation.",
       "code_citation": null,
@@ -521,30 +515,30 @@
       "model_id": "ALE-HIST-001-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-05-06T13:17:32.027421+00:00",
+      "updated_at": "2026-07-20T01:13:23.281271+00:00",
       "content_hash": "sha256:1d2be3f3a7f81a116504abc6dc3565175fc06fe32952f97ef517eee54f50f943"
     },
     {
       "question_id": "c69ead7e-e7f4-4561-9beb-8dcbcc65f5a0",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "A three-dimensional vault formed by the intersection of two barrel vaults at right angles, concentrating weight at four corner piers instead of continuous walls, is called:",
+      "text": "What is a groin vault?",
       "options": [
         {
           "id": "a",
-          "text": "Barrel vault, which is a simple and continuous arch form"
+          "text": "A single continuous semicircular tunnel vault"
         },
         {
           "id": "b",
-          "text": "Dome, a hemispherical structure often used in monumental architecture"
+          "text": "A hemispherical covering over a circular plan"
         },
         {
           "id": "c",
-          "text": "Groin vault"
+          "text": "The intersection of two barrel vaults at right angles"
         },
         {
           "id": "d",
-          "text": "Tunnel vault, characterized by its elongated and cylindrical shape"
+          "text": "A triangular curved surface under a dome"
         }
       ],
       "correct_option_id": "c",
@@ -553,11 +547,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "A barrel vault is a continuous semicircular vault spanning a space, not an intersection of two vaults.",
-        "b": "A dome is a vault rotated on all axes, not an intersection of barrel vaults.",
-        "d": "Tunnel vault is another name for barrel vault, not a groin vault.",
-        "correct": "The article defines: 'A groin vault (or cross vault) formed where two barrel vaults intersect at right angles, creating four arched surfaces. Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.'",
-        "takeaway": "Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.'."
+        "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "A groin vault is formed when two barrel vaults intersect.",
+        "takeaway": "Groin vault equals crossed barrel vaults."
       },
       "explanation": "A barrel vault is a continuous semicircular vault spanning a space, not an intersection of two vaults. A dome is a vault rotated on all axes, not an intersection of barrel vaults. Tunnel vault is another name for barrel vault, not a groin vault. The article defines: 'A groin vault (or cross vault) formed where two barrel vaults intersect at right angles, creating four arched surfaces. Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.' Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.'.",
       "code_citation": null,
@@ -573,30 +567,30 @@
       "model_id": "ALE-HIST-001-06-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-05-06T13:17:32.15849+00:00",
+      "updated_at": "2026-07-20T01:13:23.271515+00:00",
       "content_hash": "sha256:cbbf9f607e8157887d46db766613eeb7dc1850237cea0c97378ddd9029c5fb88"
     },
     {
       "question_id": "0ef8103b-d9a8-495c-88aa-487c8d88e883",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "How do Roman concrete (opus caementicium) and Greek stone masonry differ fundamentally in their structural properties and applications?",
+      "text": "What is the safest structural contrast between Roman concrete and Greek stone masonry?",
       "options": [
         {
           "id": "a",
-          "text": "Concrete is lighter but weaker than stone; Greek masonry is heavier but stronger, which oversimplifies the material properties"
+          "text": "Concrete and stone masonry behave identically in all conditions"
         },
         {
           "id": "b",
-          "text": "Concrete bonds chemically as it cures, creating monolithic masses capable of spanning vast distances without interior supports; stone masonry works by weight and compression but requires continuous walls or frequent supports"
+          "text": "Roman concrete can cure into monolithic masses, while cut stone masonry depends mainly on compression and precise assembly"
         },
         {
           "id": "c",
-          "text": "Both materials perform identically; the difference is merely in regional preference, which is a misconception of their distinct properties"
+          "text": "Greek stone masonry is always tensile and flexible"
         },
         {
           "id": "d",
-          "text": "Concrete allows for steeper angles than stone, enabling more acute arch construction, which inaccurately describes the structural capabilities"
+          "text": "Roman concrete was used only as paint over timber"
         }
       ],
       "correct_option_id": "b",
@@ -605,11 +599,11 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Concrete is actually stronger than stone when properly cured, not weaker.",
-        "c": "The materials have fundamentally different structural properties and enable different architectural possibilities.",
-        "d": "Arch angle is not determined by material type; both concrete and stone can be formed into arches.",
-        "correct": "Unlike stone masonry (which works by weight), concrete works by chemical adhesion as it cures—becoming a monolithic mass stronger than stone. Concrete allowed Romans to build walls of almost any thickness, fill vaults, and create interior volumes impossible in stone alone.'",
-        "takeaway": "Concrete allowed Romans to build walls of almost any thickness, fill vaults, and create interior volumes impossible in stone alone.'."
+        "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+        "correct": "Roman opus caementicium enabled mass vaults and domes; Greek temple masonry is trabeated and compression based.",
+        "takeaway": "Concrete supports Roman mass and vault flexibility."
       },
       "explanation": null,
       "code_citation": null,
@@ -625,7 +619,7 @@
       "model_id": "ALE-HIST-001-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "updated_at": "2026-07-20T01:13:23.275043+00:00",
       "content_hash": "sha256:e03479227239561c62745d459052b3cc7ea0166d11e2187cb2a832af4c447a42"
     }
   ]
